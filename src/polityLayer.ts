@@ -20,13 +20,15 @@ import {
   VerticalOrigin,
 } from "cesium";
 import type { Polity } from "./data";
-import { contextColor, featuredColor } from "./colors";
+import { MUTED } from "./colors";
 
 // Shapes float slightly above the globe surface so they never z-fight with it.
 const CONTEXT_HEIGHT = 2500;
 const FEATURED_HEIGHT = 5000;
 const FEATURED_FILL_ALPHA = 0.5;
-const CONTEXT_FILL_ALPHA = 0.32;
+const CONTEXT_FILL_ALPHA = 0.4;
+// A greyed realm under the pointer lights up to this.
+const HOVER_FILL_ALPHA = 0.62;
 // Width, in years, of the crossfade between two consecutive snapshots.
 const FADE = 0.6;
 // Context realms this large (km²) get a name on the globe.
@@ -44,6 +46,8 @@ interface ShapeGraphics {
   lineMaterial: Material;
   fillColor: Color;
   lineColor: Color;
+  /** Drawn in the highlight colours rather than greyed out. */
+  highlighted: boolean;
   label?: Label;
 }
 
@@ -74,6 +78,10 @@ export class PolityLayer {
   private polities = new Map<number, Polity>();
   private graphics = new Map<number, ShapeGraphics>();
   private labels: LabelCollection;
+  /** Colours of the highlighted realms, by Cliopatria name. Others are grey. */
+  private highlight = new Map<string, string>();
+  /** Name of the greyed realm under the pointer. */
+  private hovered: string | null = null;
   showContext = true;
 
   constructor(private scene: Scene) {
@@ -85,13 +93,33 @@ export class PolityLayer {
     for (const p of polities) if (!this.polities.has(p.id)) this.polities.set(p.id, p);
   }
 
+  isHighlighted(name: string): boolean {
+    return this.highlight.has(name);
+  }
+
+  /** Colours the given realms and greys out the rest. */
+  setHighlight(colors: Map<string, string>) {
+    const changed = new Set<string>();
+    for (const [name, color] of colors) if (this.highlight.get(name) !== color) changed.add(name);
+    for (const name of this.highlight.keys()) if (!colors.has(name)) changed.add(name);
+    this.highlight = new Map(colors);
+    // Shapes whose colour or height changes are rebuilt on the next update.
+    for (const [id, g] of this.graphics) if (changed.has(this.polities.get(id)!.name)) this.free(id, g);
+  }
+
+  /** Lights up a greyed realm under the pointer; null clears it. */
+  setHovered(name: string | null) {
+    this.hovered = name;
+  }
+
   /** Shows the shapes that exist at `year`. */
   update(year: number): LayerState {
     let pending = false;
     let visible = 0;
     let builds = 0;
     for (const p of this.polities.values()) {
-      const visibleKind = p.featured || this.showContext;
+      const highlighted = this.highlight.has(p.name);
+      const visibleKind = highlighted || this.showContext;
       const opacity = visibleKind ? shapeOpacity(p, year) : 0;
       if (opacity > 0.5) visible++;
       let g = this.graphics.get(p.id);
@@ -107,9 +135,11 @@ export class PolityLayer {
       g.fill.show = show;
       g.line.show = show;
       if (show) {
-        const fillAlpha = (p.featured ? FEATURED_FILL_ALPHA : CONTEXT_FILL_ALPHA) * opacity;
-        g.fillMaterial.uniforms.color = Color.fromAlpha(g.fillColor, fillAlpha, g.fillMaterial.uniforms.color);
-        g.lineMaterial.uniforms.color = Color.fromAlpha(g.lineColor, g.lineColor.alpha * opacity, g.lineMaterial.uniforms.color);
+        const hovered = !g.highlighted && p.name === this.hovered;
+        const base = g.highlighted ? FEATURED_FILL_ALPHA : hovered ? HOVER_FILL_ALPHA : CONTEXT_FILL_ALPHA;
+        const lineAlpha = hovered ? 0.95 : g.lineColor.alpha;
+        g.fillMaterial.uniforms.color = Color.fromAlpha(g.fillColor, base * opacity, g.fillMaterial.uniforms.color);
+        g.lineMaterial.uniforms.color = Color.fromAlpha(g.lineColor, lineAlpha * opacity, g.lineMaterial.uniforms.color);
         if (!g.fill.ready || !g.line.ready) pending = true;
       }
       // Labels switch at the midpoint of a fade. Changing a label's colour
@@ -126,19 +156,25 @@ export class PolityLayer {
       const p = this.polities.get(id)!;
       const distance = year < p.from ? p.from - year : year - p.to;
       if (distance <= KEEP_YEARS) continue;
-      this.scene.primitives.remove(g.fill);
-      this.scene.primitives.remove(g.line);
-      if (g.label) this.labels.remove(g.label);
-      this.graphics.delete(id);
+      this.free(id, g);
     }
   }
 
+  private free(id: number, g: ShapeGraphics) {
+    this.scene.primitives.remove(g.fill);
+    this.scene.primitives.remove(g.line);
+    if (g.label) this.labels.remove(g.label);
+    this.graphics.delete(id);
+  }
+
   private build(p: Polity): ShapeGraphics {
-    const height = p.featured ? FEATURED_HEIGHT : CONTEXT_HEIGHT;
-    const fillColor = Color.fromCssColorString(p.featured ? featuredColor(p.name) : contextColor(p.name));
-    const lineColor = p.featured
-      ? Color.fromCssColorString(featuredColor(p.name)).brighten(0.35, new Color()).withAlpha(0.95)
-      : Color.fromCssColorString("#f1f3f5").withAlpha(0.55);
+    const color = this.highlight.get(p.name);
+    const highlighted = color !== undefined;
+    const height = highlighted ? FEATURED_HEIGHT : CONTEXT_HEIGHT;
+    const fillColor = Color.fromCssColorString(color ?? MUTED);
+    const lineColor = highlighted
+      ? Color.fromCssColorString(color).brighten(0.35, new Color()).withAlpha(0.95)
+      : Color.fromCssColorString("#e4e7ea").withAlpha(0.45);
 
     const fillMaterial = Material.fromType("Color", { color: fillColor.withAlpha(0) });
     const fill = new Primitive({
@@ -175,7 +211,7 @@ export class PolityLayer {
           id: p,
           geometry: new PolylineGeometry({
             positions: Cartesian3.fromDegreesArrayHeights(positions),
-            width: p.featured ? 2 : 1,
+            width: highlighted ? 2 : 1,
             arcType: ArcType.GEODESIC,
             vertexFormat: PolylineMaterialAppearance.VERTEX_FORMAT,
           }),
@@ -190,13 +226,14 @@ export class PolityLayer {
     this.scene.primitives.add(line);
 
     let label: Label | undefined;
-    const labelColor = p.featured ? Color.fromCssColorString("#fbf6ec") : Color.fromCssColorString("#d5dae0");
-    if (p.label && (p.featured || p.area >= CONTEXT_LABEL_AREA)) {
+    const labelColor = highlighted ? Color.fromCssColorString("#fbf6ec") : Color.fromCssColorString("#b4bac1");
+    if (p.label && (highlighted || p.area >= CONTEXT_LABEL_AREA)) {
       label = this.labels.add({
         id: p,
         position: Cartesian3.fromDegrees(p.label[0], p.label[1], height + 2000),
-        text: p.name,
-        font: p.featured ? "600 15px 'Instrument Sans', sans-serif" : "500 12px 'Instrument Sans', sans-serif",
+        // Cliopatria writes a realm's overseas parts as "(Name)".
+        text: p.name.replace(/^\((.*)\)$/, "$1"),
+        font: highlighted ? "600 15px 'Instrument Sans', sans-serif" : "500 12px 'Instrument Sans', sans-serif",
         fillColor: labelColor,
         outlineColor: Color.BLACK.withAlpha(0.85),
         outlineWidth: 3,
@@ -208,7 +245,7 @@ export class PolityLayer {
       });
     }
 
-    const g: ShapeGraphics = { fill, line, fillMaterial, lineMaterial, fillColor, lineColor, label };
+    const g: ShapeGraphics = { fill, line, fillMaterial, lineMaterial, fillColor, lineColor, highlighted, label };
     this.graphics.set(p.id, g);
     return g;
   }
