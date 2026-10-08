@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>History Globe</title>
+    <link rel="icon" href="data:," />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <div id="globe" aria-label="3D globe showing the realms of the chosen year"></div>
+
+      <header class="masthead">
+        <p class="eyebrow">History Globe · prototype</p>
+        <h1>The Mongol Empire</h1>
+        <p class="sub">Rise, split and fall of the khanates, 1206 to 1500</p>
+      </header>
+
+      <div class="toolbar">
+        <label class="switch" for="context-toggle">
+          <input id="context-toggle" type="checkbox" checked />
+          <span class="switch-track" aria-hidden="true"></span>
+          <span>Other realms</span>
+        </label>
+        <button id="sources-button" class="ghost" type="button">Sources</button>
+      </div>
+
+      <aside id="info" class="info" hidden aria-live="polite">
+        <button id="info-close" class="icon-button" type="button" aria-label="Close">×</button>
+        <p class="eyebrow" id="info-kind"></p>
+        <h2 id="info-name"></h2>
+        <dl>
+          <div><dt>This border</dt><dd id="info-shape"></dd></div>
+          <div><dt>Realm in this view</dt><dd id="info-span"></dd></div>
+          <div><dt>Area</dt><dd id="info-area"></dd></div>
+        </dl>
+        <p class="links" id="info-links"></p>
+        <p class="fine">Borders from Cliopatria, approximate.</p>
+      </aside>
+
+      <section id="sources" class="sources" hidden>
+        <button id="sources-close" class="icon-button" type="button" aria-label="Close">×</button>
+        <h2>Sources</h2>
+        <ul>
+          <li>
+            Borders:
+            <a href="https://github.com/Seshat-Global-History-Databank/cliopatria" target="_blank" rel="noopener">Cliopatria</a>,
+            Seshat Global History Databank, CC BY 4.0. Simplified for display.
+          </li>
+          <li>
+            Globe imagery: Natural Earth II, public domain, as packaged with
+            <a href="https://cesium.com/platform/cesiumjs/" target="_blank" rel="noopener">CesiumJS</a> (Apache 2.0).
+          </li>
+        </ul>
+        <div id="credits" class="credits"></div>
+      </section>
+
+      <footer class="timeline">
+        <div class="year-readout" aria-live="off">
+          <span id="year-number" class="year-number">1206</span>
+          <span id="year-era" class="year-era">CE</span>
+        </div>
+        <div class="track">
+          <div id="lanes" class="lanes"></div>
+          <input id="year-slider" type="range" min="1100" max="1500" step="0.1" value="1206" aria-label="Year" />
+          <div id="ticks" class="ticks" aria-hidden="true"></div>
+        </div>
+        <div class="controls">
+          <button id="play" class="play" type="button" aria-label="Play">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path id="play-icon" d="M8 5v14l11-7z" /></svg>
+          </button>
+          <label class="speed" for="speed">
+            <span class="visually-hidden">Speed</span>
+            <select id="speed">
+              <option value="2">2 yrs/s</option>
+              <option value="8" selected>8 yrs/s</option>
+              <option value="25">25 yrs/s</option>
+            </select>
+          </label>
+        </div>
+      </footer>
+
+      <p id="status" class="status">Loading borders…</p>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+import { cpSync } from "node:fs";
+import { resolve } from "node:path";
+import { defineConfig, type Plugin } from "vite";
+
+const cesiumSource = "node_modules/cesium/Build/Cesium";
+// Only the Cesium runtime files the globe needs: web workers, the Natural Earth
+// imagery shipped with Cesium, the star field and a terrain height table.
+const cesiumAssets = [
+  "Workers",
+  "Assets/Textures/NaturalEarthII",
+  "Assets/Textures/SkyBox",
+  "Assets/Images",
+  "Assets/approximateTerrainHeights.json",
+];
+
+function copyCesiumAssets(): Plugin {
+  let outDir = "dist";
+  return {
+    name: "copy-cesium-assets",
+    configResolved(config) {
+      outDir = resolve(config.root, config.build.outDir);
+    },
+    // In development the files are served straight from node_modules (see `server` below).
+    closeBundle() {
+      for (const path of cesiumAssets) {
+        cpSync(`${cesiumSource}/${path}`, `${outDir}/cesium/${path}`, { recursive: true });
+      }
+    },
+  };
+}
+
+export default defineConfig(({ command }) => ({
+  base: "./",
+  define: {
+    CESIUM_BASE_URL: JSON.stringify(command === "serve" ? `/${cesiumSource}` : "./cesium"),
+  },
+  build: {
+    chunkSizeWarningLimit: 6000,
+  },
+  plugins: [copyCesiumAssets()],
+}));

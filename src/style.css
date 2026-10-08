@@ -1,0 +1,531 @@
+/* Layout: the globe fills the screen; a masthead, a toolbar, an info card and
+   the timeline float over it as quiet glass panels. One dark look: the globe
+   sits in space. */
+:root {
+  color-scheme: dark;
+  --space: #07090d;
+  --panel: rgba(13, 17, 23, 0.8);
+  --panel-solid: #11161d;
+  --line: rgba(214, 220, 228, 0.14);
+  --ink: #eef0f2;
+  --ink-soft: #a9b1bb;
+  --steppe: #e2742f; /* the Mongol Empire's own color, used as the accent */
+  --font-display: "Newsreader", "Iowan Old Style", Georgia, serif;
+  --font-ui: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --radius: 14px;
+  --gutter: 16px;
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: var(--space);
+  color: var(--ink);
+  font: 14px/1.45 var(--font-ui);
+  overflow: hidden;
+}
+
+#app {
+  position: relative;
+  height: 100%;
+}
+
+#globe {
+  position: absolute;
+  inset: 0;
+}
+
+#globe .cesium-widget,
+#globe .cesium-widget canvas {
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+}
+
+.cesium-widget-credits {
+  display: none !important;
+}
+
+button,
+select,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--steppe);
+  outline-offset: 2px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+/* Masthead */
+.masthead {
+  position: absolute;
+  top: calc(var(--safe-top) + var(--gutter));
+  left: var(--gutter);
+  max-width: min(420px, calc(100% - 2 * var(--gutter) - 170px));
+  pointer-events: none;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.7);
+}
+
+.masthead h1 {
+  margin: 4px 0 2px;
+  font: 600 clamp(26px, 4.4vw, 40px) / 1.05 var(--font-display);
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+.masthead .sub {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+/* Toolbar */
+.toolbar {
+  position: absolute;
+  top: calc(var(--safe-top) + var(--gutter));
+  right: var(--gutter);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.ghost,
+.switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 36px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--panel);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.ghost:hover,
+.switch:hover {
+  border-color: rgba(214, 220, 228, 0.32);
+}
+
+.switch input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.switch-track {
+  position: relative;
+  width: 28px;
+  height: 16px;
+  border-radius: 999px;
+  background: rgba(214, 220, 228, 0.25);
+  transition: background 0.2s;
+}
+
+.switch-track::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--ink);
+  transition: transform 0.2s;
+}
+
+.switch input:checked + .switch-track {
+  background: var(--steppe);
+}
+
+.switch input:checked + .switch-track::after {
+  transform: translateX(12px);
+}
+
+.switch input:focus-visible + .switch-track {
+  outline: 2px solid var(--steppe);
+  outline-offset: 2px;
+}
+
+/* Floating cards */
+.info,
+.sources {
+  position: absolute;
+  right: var(--gutter);
+  top: calc(var(--safe-top) + 72px);
+  width: min(340px, calc(100% - 2 * var(--gutter)));
+  box-sizing: border-box;
+  padding: 18px 18px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+}
+
+.info h2,
+.sources h2 {
+  margin: 4px 32px 12px 0;
+  font: 600 24px/1.15 var(--font-display);
+  text-wrap: balance;
+}
+
+.info dl {
+  display: grid;
+  gap: 8px;
+  margin: 0 0 12px;
+}
+
+.info dl div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 6px;
+}
+
+.info dt {
+  color: var(--ink-soft);
+}
+
+.info dd {
+  margin: 0;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.info .links {
+  display: flex;
+  gap: 14px;
+  margin: 0 0 8px;
+}
+
+a {
+  color: #f3a46e;
+}
+
+.fine {
+  margin: 0;
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+
+.sources ul {
+  margin: 0 0 12px;
+  padding-left: 18px;
+  display: grid;
+  gap: 8px;
+}
+
+.credits:empty {
+  display: none;
+}
+
+.credits img {
+  max-height: 24px;
+  opacity: 0.8;
+}
+
+.icon-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  font-size: 22px;
+  line-height: 1;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+
+.icon-button:hover {
+  background: rgba(214, 220, 228, 0.1);
+  color: var(--ink);
+}
+
+/* Timeline */
+.timeline {
+  position: absolute;
+  left: 50%;
+  bottom: calc(var(--safe-bottom) + var(--gutter));
+  transform: translateX(-50%);
+  width: min(1080px, calc(100% - 2 * var(--gutter)));
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-areas: "year track controls";
+  align-items: center;
+  gap: 20px;
+  padding: 14px 18px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+  backdrop-filter: blur(14px);
+}
+
+.year-readout {
+  grid-area: year;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  min-width: 118px;
+}
+
+.year-number {
+  font: 600 44px/1 var(--font-display);
+  font-variant-numeric: tabular-nums lining-nums;
+  letter-spacing: -0.02em;
+}
+
+.year-era {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--ink-soft);
+}
+
+.track {
+  grid-area: track;
+  position: relative;
+  min-width: 0;
+}
+
+.lanes {
+  position: relative;
+  display: grid;
+  gap: 3px;
+  margin-bottom: 6px;
+}
+
+.lane {
+  position: relative;
+  height: 14px;
+}
+
+.lane-bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+  border: 0;
+  border-radius: 4px;
+  font-size: 10.5px;
+  font-weight: 600;
+  line-height: 1;
+  color: #121418;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.lane-bar:hover {
+  opacity: 1;
+}
+
+.now-line {
+  position: absolute;
+  top: -4px;
+  bottom: 26px;
+  width: 2px;
+  margin-left: -1px;
+  background: var(--ink);
+  border-radius: 1px;
+  pointer-events: none;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+#year-slider {
+  display: block;
+  width: 100%;
+  margin: 0;
+  height: 24px;
+  background: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+#year-slider::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(214, 220, 228, 0.22);
+}
+
+#year-slider::-moz-range-track {
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(214, 220, 228, 0.22);
+}
+
+#year-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  margin-top: -7px;
+  border-radius: 50%;
+  background: var(--ink);
+  border: 3px solid var(--steppe);
+}
+
+#year-slider::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--ink);
+  border: 3px solid var(--steppe);
+}
+
+.ticks {
+  position: relative;
+  height: 14px;
+  font-size: 11px;
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+}
+
+.ticks span {
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.ticks span:first-child {
+  transform: none;
+}
+
+.ticks span:last-child {
+  transform: translateX(-100%);
+}
+
+.controls {
+  grid-area: controls;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.play {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--steppe);
+  color: #160c05;
+  cursor: pointer;
+}
+
+.play svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+.speed select {
+  min-height: 36px;
+  padding: 0 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel-solid);
+}
+
+.status {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: var(--panel);
+  color: var(--ink-soft);
+}
+
+.status:empty {
+  display: none;
+}
+
+/* Phones: timeline stacks, cards become bottom sheets above it. */
+@media (max-width: 640px) {
+  .masthead .sub {
+    display: none;
+  }
+
+  .masthead {
+    max-width: calc(100% - 2 * var(--gutter) - 160px);
+  }
+
+  .masthead h1 {
+    font-size: 26px;
+  }
+
+  .ticks span.minor {
+    display: none;
+  }
+
+  .toolbar {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .timeline {
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      "year controls"
+      "track track";
+    gap: 8px 12px;
+    padding: 12px 14px 8px;
+  }
+
+  .year-number {
+    font-size: 36px;
+  }
+
+  .info,
+  .sources {
+    top: auto;
+    right: var(--gutter);
+    bottom: calc(var(--safe-bottom) + var(--gutter) + var(--timeline-height, 190px) + 10px);
+    max-height: 45vh;
+    overflow-y: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .switch-track,
+  .switch-track::after {
+    transition: none;
+  }
+}

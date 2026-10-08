@@ -1,0 +1,21 @@
+{
+  "name": "history-globe",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "data": "node scripts/build-data.mjs",
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "cesium": "^1.146.0"
+  },
+  "devDependencies": {
+    "mapshaper": "^0.7.80",
+    "polylabel": "^2.1.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.3"
+  }
+}
