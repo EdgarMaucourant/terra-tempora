@@ -93,6 +93,19 @@ export class PolityLayer {
     for (const p of polities) if (!this.polities.has(p.id)) this.polities.set(p.id, p);
   }
 
+  /**
+   * Label point of the largest shape among these realm names that exists at
+   * `year`, or null when none of them is downloaded for that year.
+   */
+  labelAt(names: string[], year: number): [number, number] | null {
+    let best: Polity | null = null;
+    for (const p of this.polities.values()) {
+      if (!p.label || year < p.from || year > p.to || !names.includes(p.name)) continue;
+      if (!best || p.area > best.area) best = p;
+    }
+    return best?.label ?? null;
+  }
+
   isHighlighted(name: string): boolean {
     return this.highlight.has(name);
   }

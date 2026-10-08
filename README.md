@@ -32,9 +32,11 @@ in a timeline that runs from 10,000 BCE to today.
 - A band of the major eras of world history along the top of the timeline
   (prehistory, ancient, post-classical, early modern, late modern,
   contemporary). The boundaries are in `src/eras.ts`.
-- Lanes showing the lifespan of each highlighted realm (tap a lane to jump to
-  its first year); when they are out of view the lanes fold into a pointer
-  toward them.
+- Lanes showing the lifespan of each highlighted realm; tapping one flies the
+  globe to that realm and centres it (moving the year into its lifetime if
+  needed). When they are out of view the lanes fold into a pointer toward them.
+- A button on the left tilts the globe to Earth's axial tilt (23.5°, North Pole
+  to the right) or stands it upright again. The choice is remembered.
 - Drag the grip on the top edge of the timeline to make it taller (the lanes
   grow to fill it); double-click the grip to reset. The height is remembered.
 - Play and pause at 2 to 500 years per second.
