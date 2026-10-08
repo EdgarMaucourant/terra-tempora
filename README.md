@@ -22,8 +22,8 @@ in a timeline that runs from 10,000 BCE to today.
   into time windows that download only when the year needs them. Consecutive
   borders crossfade during playback.
 - A zoomable timeline from 10,000 BCE to the current year: drag to pan, scroll
-  or pinch to zoom, tap to jump, drag the playhead to scrub. "Its era" and
-  "All history" reset the view.
+  or pinch to zoom, tap to jump, drag the playhead to scrub. "Current
+  Civilization Era" and "All history" reset the view.
 - A band of the major eras of world history along the top of the timeline
   (prehistory, ancient, post-classical, early modern, late modern,
   contemporary). The boundaries are in `src/eras.ts`.

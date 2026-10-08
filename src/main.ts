@@ -398,7 +398,7 @@ function openCiv(c: Civilization, options: OpenOptions = {}) {
   if (switching) {
     $("civ-title").textContent = c.name;
     $("civ-sub").textContent = `${formatRange(c.from, c.to)} · ${civEraText(c)}`;
-    $("view-focus").textContent = "Its era";
+    $("view-focus").textContent = "Current Civilization Era";
     $("view-focus").setAttribute("aria-label", `Show the years of ${c.name}`);
     highlighted = list.family(c);
     showHighlight();
