@@ -375,10 +375,13 @@ a {
   width: min(1180px, calc(100% - 2 * var(--gutter)));
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr) auto;
-  grid-template-areas: "year track controls";
+  /* Year, era and playback stack on the left; the track takes the rest. */
+  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-areas:
+    "year track"
+    "controls track";
   align-items: center;
-  gap: 20px;
+  gap: 10px 20px;
   padding: 12px 18px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -630,6 +633,7 @@ a {
 
 .controls {
   grid-area: controls;
+  align-self: end;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -638,8 +642,9 @@ a {
 .play {
   display: grid;
   place-items: center;
-  width: 48px;
-  height: 48px;
+  flex: none;
+  width: 40px;
+  height: 40px;
   border: 0;
   border-radius: 50%;
   background: var(--steppe);
@@ -648,8 +653,8 @@ a {
 }
 
 .play svg {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   fill: currentColor;
 }
 
@@ -997,6 +1002,11 @@ a {
     grid-template-areas:
       "year controls"
       "track track";
+    align-items: center;
+  }
+
+  .controls {
+    align-self: center;
     gap: 8px 12px;
     padding: 12px 14px 8px;
   }
