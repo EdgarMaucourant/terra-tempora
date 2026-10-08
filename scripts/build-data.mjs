@@ -1,14 +1,12 @@
-// Builds the prototype dataset from Cliopatria (CC BY 4.0).
+// Builds the globe's border data from Cliopatria (CC BY 4.0).
 // Input:  data-raw/cliopatria.geojson (unzipped from the Cliopatria repository)
-// Output: public/data/polities.json, a compact list of time-stamped polity shapes.
-import { execFileSync } from "node:child_process";
-import { mkdirSync, readFileSync, writeFileSync, rmSync } from "node:fs";
+// Output: public/data/index.json plus public/data/borders-*.json, one file per
+//         time window, so the app only downloads the years it shows.
+import { mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import polylabel from "polylabel";
 
-const FROM = 1100;
-const TO = 1500;
 // Polities shown as the featured subject; the rest of the world is context.
-const MONGOL = new Set([
+const FEATURED = new Set([
   "Mongol Empire",
   "Yuan Dynasty",
   "Ilkhanate",
@@ -18,8 +16,17 @@ const MONGOL = new Set([
   "Eastern Chagatai Khanate",
   "Mongol Khanate",
 ]);
+// Douglas-Peucker tolerance in degrees (about 5 km at the equator).
+const TOLERANCE = 0.05;
+// Islands and exclaves smaller than this (km²) are dropped, except a shape's largest part.
+const MIN_PART_AREA = 300;
+// Target size of one window file before encoding, in coordinate pairs.
+const WINDOW_POINTS = 120_000;
+const MIN_WINDOW_YEARS = 25;
 
-// Approximate ring area in square degrees, corrected for latitude.
+const KM2_PER_SQ_DEGREE = 12_364;
+
+// Approximate ring area in km², corrected for latitude.
 function ringArea(ring) {
   let sum = 0;
   for (let i = 0; i < ring.length - 1; i++) {
@@ -27,12 +34,48 @@ function ringArea(ring) {
     const [x2, y2] = ring[i + 1];
     sum += (x2 - x1) * (y2 + y1) * Math.cos((((y1 + y2) / 2) * Math.PI) / 180);
   }
-  return Math.abs(sum / 2);
+  return (Math.abs(sum) / 2) * KM2_PER_SQ_DEGREE;
+}
+
+function simplify(points, tolerance) {
+  if (points.length < 4) return points;
+  const keep = new Uint8Array(points.length);
+  keep[0] = keep[points.length - 1] = 1;
+  const stack = [[0, points.length - 1]];
+  const t2 = tolerance * tolerance;
+  while (stack.length) {
+    const [a, b] = stack.pop();
+    const [ax, ay] = points[a];
+    const [bx, by] = points[b];
+    const dx = bx - ax;
+    const dy = by - ay;
+    const len = dx * dx + dy * dy;
+    let best = -1;
+    let index = -1;
+    for (let i = a + 1; i < b; i++) {
+      const [px, py] = points[i];
+      const t = len === 0 ? 0 : Math.max(0, Math.min(1, ((px - ax) * dx + (py - ay) * dy) / len));
+      const qx = ax + t * dx - px;
+      const qy = ay + t * dy - py;
+      const d = qx * qx + qy * qy;
+      if (d > best) {
+        best = d;
+        index = i;
+      }
+    }
+    if (best > t2) {
+      keep[index] = 1;
+      stack.push([a, index], [index, b]);
+    }
+  }
+  return points.filter((_, i) => keep[i]);
 }
 
 // Area-weighted centroid of a ring (planar, in degrees).
 function ringCentroid(ring) {
-  let a = 0, cx = 0, cy = 0;
+  let a = 0;
+  let cx = 0;
+  let cy = 0;
   for (let i = 0; i < ring.length - 1; i++) {
     const [x1, y1] = ring[i];
     const [x2, y2] = ring[i + 1];
@@ -56,58 +99,107 @@ function insideRing([x, y], ring) {
 
 // Label at the visual centre when it falls inside the shape, otherwise at the
 // point deepest inside it.
-function labelPoint(polygon) {
-  const c = ringCentroid(polygon[0]);
-  const point = c && insideRing(c, polygon[0]) ? c : polylabel(polygon, 0.1);
+function labelPoint(ring) {
+  const c = ringCentroid(ring);
+  const point = c && insideRing(c, ring) ? c : polylabel([ring], 0.1);
   return point.map((v) => Math.round(v * 100) / 100);
 }
 
+// Rings are stored as integers of 0.01°, delta-encoded: [x0, y0, dx1, dy1, …].
+function encodeRing(ring) {
+  const out = [];
+  let px = 0;
+  let py = 0;
+  for (let i = 0; i < ring.length - 1; i++) {
+    const x = Math.round(ring[i][0] * 100);
+    const y = Math.round(ring[i][1] * 100);
+    if (i > 0 && x === px && y === py) continue;
+    out.push(i === 0 ? x : x - px, i === 0 ? y : y - py);
+    px = x;
+    py = y;
+  }
+  return out;
+}
+
 const raw = JSON.parse(readFileSync("data-raw/cliopatria.geojson", "utf8"));
-const period = raw.features.filter(
-  (f) =>
-    f.properties.Type === "POLITY" &&
-    f.properties.ToYear >= FROM &&
-    f.properties.FromYear <= TO,
-);
-console.log(`${period.length} polity shapes between ${FROM} and ${TO}`);
+const shapes = [];
+const realms = {};
+for (const [id, f] of raw.features.entries()) {
+  const p = f.properties;
+  if (p.Type !== "POLITY" || !f.geometry) continue;
+  const polygons = f.geometry.type === "Polygon" ? [f.geometry.coordinates] : f.geometry.coordinates;
+  const outers = polygons.map((poly) => poly[0]).filter((ring) => ring.length >= 4);
+  if (!outers.length) continue;
+  const areas = outers.map(ringArea);
+  const largest = areas.indexOf(Math.max(...areas));
+  const rings = outers
+    .filter((_, i) => i === largest || areas[i] >= MIN_PART_AREA)
+    .map((ring) => simplify(ring, TOLERANCE))
+    .filter((ring) => ring.length >= 4)
+    .map(encodeRing)
+    .filter((ring) => ring.length >= 6);
+  if (!rings.length) continue;
+  shapes.push({
+    id,
+    name: p.Name,
+    from: p.FromYear,
+    to: p.ToYear,
+    wikipedia: p.Wikipedia || null,
+    wikidata: p.Wikidata || null,
+    area: Math.round(p.Area),
+    featured: FEATURED.has(p.Name),
+    label: labelPoint(outers[largest]),
+    rings,
+  });
+  const span = (realms[p.Name] ??= [p.FromYear, p.ToYear]);
+  span[0] = Math.min(span[0], p.FromYear);
+  span[1] = Math.max(span[1], p.ToYear);
+}
+console.log(`${shapes.length} border shapes from ${raw.features.length} Cliopatria records`);
 
-mkdirSync("tmp", { recursive: true });
-writeFileSync("tmp/period.geojson", JSON.stringify({ type: "FeatureCollection", features: period }));
-// Topology-aware simplification keeps shared borders aligned.
-execFileSync(
-  "npx",
-  ["mapshaper", "tmp/period.geojson", "-simplify", "3%", "keep-shapes", "-o", "precision=0.001", "tmp/simplified.geojson"],
-  { stdio: "inherit" },
-);
-const simplified = JSON.parse(readFileSync("tmp/simplified.geojson", "utf8"));
+// Cut time into windows of roughly equal size. A shape goes into every window
+// its years overlap, so one window file holds everything visible in its years.
+const first = Math.min(...shapes.map((s) => s.from));
+const last = Math.max(...shapes.map((s) => s.to));
+const points = (s) => s.rings.reduce((n, r) => n + r.length / 2, 0);
+const windows = [];
+let start = first;
+while (start <= last) {
+  let end = start + MIN_WINDOW_YEARS - 1;
+  const weight = (from, to) =>
+    shapes.filter((s) => s.from <= to && s.to >= from).reduce((n, s) => n + points(s), 0);
+  while (end < last && weight(start, end + MIN_WINDOW_YEARS) < WINDOW_POINTS) end += MIN_WINDOW_YEARS;
+  end = Math.min(end, last);
+  windows.push({ from: start, to: end });
+  start = end + 1;
+}
 
-const polities = simplified.features
-  .filter((f) => f.geometry)
-  .map((f, i) => {
-    const p = f.properties;
-    const polygons = (f.geometry.type === "Polygon" ? [f.geometry.coordinates] : f.geometry.coordinates)
-      // Drop degenerate rings left over by simplification.
-      .filter((poly) => poly[0].length >= 4);
-    const largest = polygons.reduce((a, b) => (ringArea(b[0]) > ringArea(a[0]) ? b : a), polygons[0]);
-    const label = largest ? labelPoint(largest) : null;
-    return {
-      id: i,
-      name: p.Name,
-      from: p.FromYear,
-      to: p.ToYear,
-      wikipedia: p.Wikipedia || null,
-      wikidata: p.Wikidata || null,
-      area: Math.round(p.Area),
-      featured: MONGOL.has(p.Name),
-      label,
-      // Outer rings only: holes are rare at this scale and cost triangulation time.
-      rings: polygons.map((poly) => poly[0].flat()),
-    };
-  })
-  .filter((p) => p.rings.length > 0);
-
+rmSync("public/data", { recursive: true, force: true });
 mkdirSync("public/data", { recursive: true });
-writeFileSync("public/data/polities.json", JSON.stringify({ source: "Cliopatria (Seshat Global History Databank), CC BY 4.0", from: FROM, to: TO, polities }));
-rmSync("tmp", { recursive: true, force: true });
-const featured = polities.filter((p) => p.featured).length;
-console.log(`wrote ${polities.length} shapes (${featured} featured)`);
+let total = 0;
+for (const w of windows) {
+  const inWindow = shapes.filter((s) => s.from <= w.to && s.to >= w.from);
+  w.file = `borders-${w.from}-${w.to}.json`;
+  w.count = inWindow.length;
+  const json = JSON.stringify(inWindow);
+  total += json.length;
+  writeFileSync(`public/data/${w.file}`, json);
+}
+
+const featured = Object.entries(realms)
+  .filter(([name]) => FEATURED.has(name))
+  .map(([name, [from, to]]) => ({ name, from, to }))
+  .sort((a, b) => a.from - b.from);
+
+writeFileSync(
+  "public/data/index.json",
+  JSON.stringify({
+    source: "Cliopatria (Seshat Global History Databank), CC BY 4.0",
+    from: first,
+    to: last,
+    windows,
+    featured,
+    realms,
+  }),
+);
+console.log(`${windows.length} window files, ${(total / 1e6).toFixed(1)} MB in all`);

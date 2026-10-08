@@ -26,11 +26,16 @@ import { contextColor, featuredColor } from "./colors";
 const CONTEXT_HEIGHT = 2500;
 const FEATURED_HEIGHT = 5000;
 const FEATURED_FILL_ALPHA = 0.5;
-const CONTEXT_FILL_ALPHA = 0.22;
+const CONTEXT_FILL_ALPHA = 0.32;
 // Width, in years, of the crossfade between two consecutive snapshots.
 const FADE = 0.6;
 // Context realms this large (km²) get a name on the globe.
 const CONTEXT_LABEL_AREA = 900_000;
+// Shapes built per frame, so a fast scrub never freezes the page.
+const BUILDS_PER_FRAME = 40;
+// Above this many built shapes, those far from the current year are freed.
+const MAX_BUILT = 1500;
+const KEEP_YEARS = 30;
 
 interface ShapeGraphics {
   fill: Primitive;
@@ -58,27 +63,45 @@ export function shapeOpacity(p: Polity, year: number): number {
   return smoothstep(start - FADE / 2, start + FADE / 2, year) * (1 - smoothstep(end - FADE / 2, end + FADE / 2, year));
 }
 
+export interface LayerState {
+  /** Shapes are still being built or downloaded; draw again next frame. */
+  pending: boolean;
+  /** Shapes visible at this year. */
+  visible: number;
+}
+
 export class PolityLayer {
+  private polities = new Map<number, Polity>();
   private graphics = new Map<number, ShapeGraphics>();
   private labels: LabelCollection;
   showContext = true;
 
-  constructor(
-    private scene: Scene,
-    private polities: Polity[],
-  ) {
+  constructor(private scene: Scene) {
     this.labels = scene.primitives.add(new LabelCollection({ scene }));
   }
 
-  /** Shows the shapes that exist at `year`. Returns true while shapes are still being built. */
-  update(year: number): boolean {
+  /** Adds downloaded shapes; shapes already known are skipped. */
+  add(polities: Polity[]) {
+    for (const p of polities) if (!this.polities.has(p.id)) this.polities.set(p.id, p);
+  }
+
+  /** Shows the shapes that exist at `year`. */
+  update(year: number): LayerState {
     let pending = false;
-    for (const p of this.polities) {
+    let visible = 0;
+    let builds = 0;
+    for (const p of this.polities.values()) {
       const visibleKind = p.featured || this.showContext;
       const opacity = visibleKind ? shapeOpacity(p, year) : 0;
+      if (opacity > 0.5) visible++;
       let g = this.graphics.get(p.id);
       // Build shapes shortly before they are needed so playback stays smooth.
-      if (!g && visibleKind && year >= p.from - 3 && year <= p.to + 1) g = this.build(p);
+      if (!g && visibleKind && year >= p.from - 3 && year <= p.to + 1) {
+        if (builds < BUILDS_PER_FRAME) {
+          g = this.build(p);
+          builds++;
+        } else pending = true;
+      }
       if (!g) continue;
       const show = opacity > 0.002;
       g.fill.show = show;
@@ -93,7 +116,21 @@ export class PolityLayer {
       // redraws its glyphs, which is too costly to do every frame.
       if (g.label) g.label.show = opacity > 0.5;
     }
-    return pending;
+    if (this.graphics.size > MAX_BUILT) this.release(year);
+    return { pending, visible };
+  }
+
+  /** Frees the shapes far from `year`; they are rebuilt if the year comes back. */
+  private release(year: number) {
+    for (const [id, g] of this.graphics) {
+      const p = this.polities.get(id)!;
+      const distance = year < p.from ? p.from - year : year - p.to;
+      if (distance <= KEEP_YEARS) continue;
+      this.scene.primitives.remove(g.fill);
+      this.scene.primitives.remove(g.line);
+      if (g.label) this.labels.remove(g.label);
+      this.graphics.delete(id);
+    }
   }
 
   private build(p: Polity): ShapeGraphics {
@@ -101,7 +138,7 @@ export class PolityLayer {
     const fillColor = Color.fromCssColorString(p.featured ? featuredColor(p.name) : contextColor(p.name));
     const lineColor = p.featured
       ? Color.fromCssColorString(featuredColor(p.name)).brighten(0.35, new Color()).withAlpha(0.95)
-      : Color.fromCssColorString("#d9dde3").withAlpha(0.35);
+      : Color.fromCssColorString("#f1f3f5").withAlpha(0.55);
 
     const fillMaterial = Material.fromType("Color", { color: fillColor.withAlpha(0) });
     const fill = new Primitive({

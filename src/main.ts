@@ -11,25 +11,28 @@ import {
 } from "cesium";
 import "cesium/Build/Cesium/Widgets/CesiumWidget/CesiumWidget.css";
 import "./style.css";
-import { featuredLifespans, loadDataset, type Polity } from "./data";
-import { featuredColor } from "./colors";
+import { BorderData, type Polity } from "./data";
+import { eraAt, ERAS, NOW } from "./eras";
 import { PolityLayer } from "./polityLayer";
-import { era, formatRange, yearNumber } from "./years";
+import { Timeline } from "./timeline";
+import { era, formatRange, formatYear, yearNumber } from "./years";
 
 const START_YEAR = 1206;
+const FIRST_YEAR = ERAS[0].from;
+// The view the timeline opens on, and the "Mongol era" button returns to.
+const FOCUS_VIEW: [number, number] = [1150, 1550];
 
 const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
 
-const slider = $<HTMLInputElement>("year-slider");
 const yearNumberEl = $("year-number");
 const yearEraEl = $("year-era");
+const yearPeriodEl = $("year-period");
 const playButton = $<HTMLButtonElement>("play");
 const playIcon = document.getElementById("play-icon")!;
 const speedSelect = $<HTMLSelectElement>("speed");
 const contextToggle = $<HTMLInputElement>("context-toggle");
 const statusEl = $("status");
-const lanesEl = $("lanes");
-const ticksEl = $("ticks");
+const hintEl = $("hint");
 const info = $("info");
 const sources = $("sources");
 
@@ -56,74 +59,16 @@ widget.camera.setView({
   destination: Cartesian3.fromDegrees(78, narrow ? 28 : 32, narrow ? 22_000_000 : 14_500_000),
 });
 
+const layer = new PolityLayer(scene);
+let data: BorderData | undefined;
+let timeline: Timeline | undefined;
 let year = readYearFromHash() ?? START_YEAR;
 let playing = false;
-let layer: PolityLayer | undefined;
-let polities: Polity[] = [];
-let minYear = 1100;
-let maxYear = 1500;
 
 function readYearFromHash(): number | undefined {
-  // Links can open on a year: …#y1241
-  const match = /^#y(-?\d{1,4})$/.exec(location.hash);
-  return match ? Number(match[1]) : undefined;
-}
-
-function setYear(next: number, { fromSlider = false } = {}) {
-  year = Math.min(maxYear, Math.max(minYear, next));
-  yearNumberEl.textContent = yearNumber(year);
-  yearEraEl.textContent = era(year);
-  if (!fromSlider) slider.value = String(year);
-  updateNowLine();
-  render();
-}
-
-let buildingFrames = 0;
-function render() {
-  if (!layer) return;
-  const pending = layer.update(year);
-  scene.requestRender();
-  // Shapes are triangulated in the background; keep drawing until they are in.
-  if (pending && buildingFrames === 0) {
-    const tick = () => {
-      buildingFrames++;
-      const stillPending = layer!.update(year);
-      scene.requestRender();
-      if (stillPending && buildingFrames < 600) requestAnimationFrame(tick);
-      else buildingFrames = 0;
-    };
-    requestAnimationFrame(tick);
-  }
-}
-
-// Playback
-let lastFrame = 0;
-function frame(now: number) {
-  if (!playing) return;
-  const dt = lastFrame ? Math.min(0.1, (now - lastFrame) / 1000) : 0;
-  lastFrame = now;
-  const next = year + dt * Number(speedSelect.value);
-  if (next >= maxYear) {
-    setYear(maxYear);
-    setPlaying(false);
-    return;
-  }
-  setYear(next);
-  requestAnimationFrame(frame);
-}
-
-function setPlaying(on: boolean) {
-  playing = on;
-  playButton.setAttribute("aria-label", on ? "Pause" : "Play");
-  playIcon.setAttribute("d", on ? "M7 5h4v14H7zM13 5h4v14h-4z" : "M8 5v14l11-7z");
-  if (on) {
-    if (year >= maxYear - 0.01) setYear(minYear);
-    lastFrame = 0;
-    requestAnimationFrame(frame);
-  } else {
-    setYear(Math.round(year));
-    writeHash();
-  }
+  // Links can open on a year: …#y1241, or #y-500 for 500 BCE
+  const match = /^#y(-?\d{1,5})$/.exec(location.hash);
+  return match ? Math.min(NOW, Math.max(FIRST_YEAR, Number(match[1]))) : undefined;
 }
 
 function writeHash() {
@@ -134,22 +79,111 @@ function writeHash() {
   }
 }
 
+function showYear() {
+  yearNumberEl.textContent = yearNumber(year);
+  yearEraEl.textContent = era(year);
+  yearPeriodEl.textContent = eraAt(year).name;
+}
+
+// Border downloads: fetch the years around the playhead, and further ahead while playing.
+let loading = 0;
+function ensureBorders() {
+  if (!data) return;
+  const ahead = playing ? Number(speedSelect.value) * 3 : 10;
+  const from = Math.max(data.from, Math.floor(year) - 10);
+  const to = Math.min(data.to, Math.ceil(year) + ahead);
+  if (from > to || data.hasYears(from, to)) return;
+  loading++;
+  updateHint();
+  data
+    .load(from, to)
+    .then((shapes) => {
+      layer.add(shapes);
+      render();
+    })
+    .catch((error: unknown) => console.error(error))
+    .finally(() => {
+      loading--;
+      updateHint();
+    });
+}
+
+let visible = 0;
+function updateHint() {
+  let text = "";
+  if (data && year < data.from) text = `No borders are mapped before ${formatYear(data.from)}.`;
+  else if (data && year > data.to + 0.5) text = `Borders are mapped up to ${formatYear(data.to)}.`;
+  else if (loading) text = "Loading borders…";
+  else if (data && visible === 0) text = "No borders are mapped for this year.";
+  hintEl.textContent = text;
+  hintEl.hidden = !text;
+}
+
+let drawing = false;
+function render() {
+  scene.requestRender();
+  if (drawing) return;
+  drawing = true;
+  // Shapes are triangulated in the background; keep drawing until they are in.
+  const tick = () => {
+    const state = layer.update(year);
+    visible = state.visible;
+    updateHint();
+    scene.requestRender();
+    if (state.pending) requestAnimationFrame(tick);
+    else drawing = false;
+  };
+  requestAnimationFrame(tick);
+}
+
+function setYear(next: number) {
+  year = Math.min(NOW, Math.max(FIRST_YEAR, next));
+  showYear();
+  ensureBorders();
+  render();
+}
+
+// Playback
+let lastFrame = 0;
+function frame(now: number) {
+  if (!playing) return;
+  const dt = lastFrame ? Math.min(0.1, (now - lastFrame) / 1000) : 0;
+  lastFrame = now;
+  const next = year + dt * Number(speedSelect.value);
+  if (next >= NOW) {
+    setYear(NOW);
+    timeline?.setYear(year);
+    setPlaying(false);
+    return;
+  }
+  setYear(next);
+  timeline?.setYear(year);
+  requestAnimationFrame(frame);
+}
+
+function setPlaying(on: boolean) {
+  playing = on;
+  playButton.setAttribute("aria-label", on ? "Pause" : "Play");
+  playIcon.setAttribute("d", on ? "M7 5h4v14H7zM13 5h4v14h-4z" : "M8 5v14l11-7z");
+  if (on) {
+    if (year >= NOW - 0.01) setYear(FIRST_YEAR);
+    lastFrame = 0;
+    requestAnimationFrame(frame);
+  } else {
+    setYear(Math.round(year));
+    timeline?.setYear(year);
+    writeHash();
+  }
+}
+
 playButton.addEventListener("click", () => setPlaying(!playing));
-slider.addEventListener("input", () => {
-  if (playing) setPlaying(false);
-  setYear(Number(slider.value), { fromSlider: true });
-});
-slider.addEventListener("change", () => {
-  setYear(Math.round(Number(slider.value)));
-  writeHash();
-});
 contextToggle.addEventListener("change", () => {
-  if (layer) layer.showContext = contextToggle.checked;
+  layer.showContext = contextToggle.checked;
   render();
 });
 document.addEventListener("keydown", (e) => {
   const target = e.target as HTMLElement;
-  if (e.code === "Space" && target.tagName !== "BUTTON" && target.tagName !== "SELECT") {
+  if (e.code === "Space" && !["BUTTON", "SELECT"].includes(target.tagName) && target.id !== "track") {
     e.preventDefault();
     setPlaying(!playing);
   }
@@ -159,61 +193,6 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
-// Timeline decorations
-const pct = (y: number) => ((y - minYear) / (maxYear - minYear)) * 100;
-let nowLine: HTMLDivElement | undefined;
-
-function updateNowLine() {
-  if (nowLine) nowLine.style.left = `${pct(year)}%`;
-}
-
-function buildTimeline() {
-  ticksEl.replaceChildren();
-  for (let y = minYear; y <= maxYear; y += 50) {
-    const tick = document.createElement("span");
-    tick.style.left = `${pct(y)}%`;
-    if (y % 100 !== 0) tick.className = "minor";
-    tick.textContent = String(y);
-    ticksEl.append(tick);
-  }
-
-  // One lane per featured realm, from its first to its last year here.
-  lanesEl.replaceChildren();
-  const spans = featuredLifespans(polities);
-  const rows: { to: number; el: HTMLDivElement }[] = [];
-  for (const span of spans) {
-    // Pack realms into as few lanes as possible without overlap.
-    let row = rows.find((r) => r.to < span.from - 4);
-    if (!row) {
-      const el = document.createElement("div");
-      el.className = "lane";
-      lanesEl.append(el);
-      row = { to: -Infinity, el };
-      rows.push(row);
-    }
-    row.to = span.to;
-    const bar = document.createElement("button");
-    bar.type = "button";
-    bar.className = "lane-bar";
-    bar.style.left = `${pct(span.from)}%`;
-    bar.style.width = `${pct(Math.min(span.to + 1, maxYear)) - pct(span.from)}%`;
-    bar.style.background = featuredColor(span.name);
-    bar.textContent = span.name;
-    bar.title = `${span.name}, ${formatRange(span.from, span.to)}`;
-    bar.addEventListener("click", () => {
-      setPlaying(false);
-      setYear(span.from);
-      writeHash();
-    });
-    row.el.append(bar);
-  }
-  nowLine = document.createElement("div");
-  nowLine.className = "now-line";
-  lanesEl.append(nowLine);
-  updateNowLine();
-  document.documentElement.style.setProperty("--timeline-height", `${$("year-slider").closest("footer")!.offsetHeight}px`);
-}
-
 // Tap or click a realm for its details.
 const nf = new Intl.NumberFormat("en");
 function showInfo(p: Polity) {
@@ -221,29 +200,21 @@ function showInfo(p: Polity) {
   $("info-kind").textContent = p.featured ? "Mongol realm" : "Realm";
   $("info-name").textContent = p.name;
   $("info-shape").textContent = formatRange(p.from, p.to);
-  const all = polities.filter((q) => q.name === p.name);
-  const from = Math.min(...all.map((q) => q.from));
-  const to = Math.max(...all.map((q) => q.to));
-  $("info-span").textContent = formatRange(from, to);
+  const span = data?.realmSpan(p.name) ?? [p.from, p.to];
+  $("info-span").textContent = formatRange(span[0], span[1]);
   $("info-area").textContent = `${nf.format(Math.round(p.area / 1000) * 1000)} km²`;
   const links = $("info-links");
   links.replaceChildren();
-  if (p.wikipedia) {
+  const link = (href: string, text: string) => {
     const a = document.createElement("a");
-    a.href = `https://en.wikipedia.org/wiki/${encodeURIComponent(p.wikipedia.replace(/ /g, "_"))}`;
+    a.href = href;
     a.target = "_blank";
     a.rel = "noopener";
-    a.textContent = "Wikipedia";
+    a.textContent = text;
     links.append(a);
-  }
-  if (p.wikidata) {
-    const a = document.createElement("a");
-    a.href = `https://www.wikidata.org/wiki/${encodeURIComponent(p.wikidata)}`;
-    a.target = "_blank";
-    a.rel = "noopener";
-    a.textContent = "Wikidata";
-    links.append(a);
-  }
+  };
+  if (p.wikipedia) link(`https://en.wikipedia.org/wiki/${encodeURIComponent(p.wikipedia.replace(/ /g, "_"))}`, "Wikipedia");
+  if (p.wikidata) link(`https://www.wikidata.org/wiki/${encodeURIComponent(p.wikidata)}`, "Wikidata");
   info.hidden = false;
 }
 
@@ -262,21 +233,46 @@ $("sources-button").addEventListener("click", () => {
 });
 $("sources-close").addEventListener("click", () => (sources.hidden = true));
 
-window.addEventListener("resize", () => {
-  document.documentElement.style.setProperty("--timeline-height", `${slider.closest("footer")!.offsetHeight}px`);
-});
+// Cards on phones sit just above the timeline, whose height changes as lanes fold.
+const footer = document.querySelector("footer")!;
+new ResizeObserver(() => {
+  document.documentElement.style.setProperty("--timeline-height", `${footer.offsetHeight}px`);
+}).observe(footer);
 
-// Load the borders and start.
-loadDataset(new URL("data/polities.json", document.baseURI).href)
-  .then((dataset) => {
-    polities = dataset.polities;
-    minYear = dataset.from;
-    maxYear = dataset.to;
-    slider.min = String(minYear);
-    slider.max = String(maxYear);
-    layer = new PolityLayer(scene, polities);
-    buildTimeline();
+showYear();
+
+// Load the border index and start.
+BorderData.open(new URL("data/", document.baseURI).href)
+  .then((borders) => {
+    data = borders;
     statusEl.textContent = "";
+    const startView: [number, number] =
+      year >= FOCUS_VIEW[0] && year <= FOCUS_VIEW[1] ? FOCUS_VIEW : [year - 200, year + 200];
+    timeline = new Timeline({
+      track: $("track"),
+      min: FIRST_YEAR,
+      max: NOW,
+      year,
+      view: startView,
+      featured: borders.featured,
+      onYear: (next, settled) => {
+        if (playing) setPlaying(false);
+        setYear(next);
+        if (settled) writeHash();
+      },
+    });
+    const t = timeline;
+    $("view-focus").addEventListener("click", () => {
+      t.setView(...FOCUS_VIEW);
+      if (year < FOCUS_VIEW[0] || year > FOCUS_VIEW[1]) {
+        setYear(START_YEAR);
+        t.setYear(year);
+        writeHash();
+      }
+    });
+    $("view-all").addEventListener("click", () => t.setView(FIRST_YEAR, NOW));
+    $("zoom-in").addEventListener("click", () => t.zoom(0.5));
+    $("zoom-out").addEventListener("click", () => t.zoom(2));
     setYear(year);
   })
   .catch((error: unknown) => {
@@ -284,8 +280,14 @@ loadDataset(new URL("data/polities.json", document.baseURI).href)
     console.error(error);
   });
 
-// Expose a hook for automated checks.
+// A hook for automated checks.
 (window as unknown as { historyGlobe: unknown }).historyGlobe = {
-  setYear: (y: number) => setYear(y),
+  setYear: (y: number) => {
+    setYear(y);
+    timeline?.setYear(year);
+  },
+  get timeline() {
+    return timeline;
+  },
   scene,
 };

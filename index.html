@@ -19,7 +19,7 @@
       <header class="masthead">
         <p class="eyebrow">History Globe · prototype</p>
         <h1>The Mongol Empire</h1>
-        <p class="sub">Rise, split and fall of the khanates, 1206 to 1500</p>
+        <p class="sub">Rise, split and fall of the khanates, set in 12,000 years of history</p>
       </header>
 
       <div class="toolbar">
@@ -37,7 +37,7 @@
         <h2 id="info-name"></h2>
         <dl>
           <div><dt>This border</dt><dd id="info-shape"></dd></div>
-          <div><dt>Realm in this view</dt><dd id="info-span"></dd></div>
+          <div><dt>Realm existed</dt><dd id="info-span"></dd></div>
           <div><dt>Area</dt><dd id="info-area"></dd></div>
         </dl>
         <p class="links" id="info-links"></p>
@@ -62,14 +62,21 @@
       </section>
 
       <footer class="timeline">
-        <div class="year-readout" aria-live="off">
-          <span id="year-number" class="year-number">1206</span>
-          <span id="year-era" class="year-era">CE</span>
+        <div class="year-readout">
+          <p class="year-line">
+            <span id="year-number" class="year-number">1206</span>
+            <span id="year-era" class="year-era">CE</span>
+          </p>
+          <p id="year-period" class="year-period">Post-classical (Middle Ages)</p>
         </div>
-        <div class="track">
-          <div id="lanes" class="lanes"></div>
-          <input id="year-slider" type="range" min="1100" max="1500" step="0.1" value="1206" aria-label="Year" />
-          <div id="ticks" class="ticks" aria-hidden="true"></div>
+        <div class="track-area">
+          <div class="views" role="group" aria-label="Timeline view">
+            <button id="view-focus" type="button" class="chip">Mongol era</button>
+            <button id="view-all" type="button" class="chip">All history</button>
+            <button id="zoom-out" type="button" class="chip square" aria-label="Zoom out">−</button>
+            <button id="zoom-in" type="button" class="chip square" aria-label="Zoom in">+</button>
+          </div>
+          <div id="track" class="track"></div>
         </div>
         <div class="controls">
           <button id="play" class="play" type="button" aria-label="Play">
@@ -81,12 +88,15 @@
               <option value="2">2 yrs/s</option>
               <option value="8" selected>8 yrs/s</option>
               <option value="25">25 yrs/s</option>
+              <option value="100">100 yrs/s</option>
+              <option value="500">500 yrs/s</option>
             </select>
           </label>
         </div>
       </footer>
 
       <p id="status" class="status">Loading borders…</p>
+      <p id="hint" class="hint" hidden></p>
     </div>
     <script type="module" src="/src/main.ts"></script>
   </body>

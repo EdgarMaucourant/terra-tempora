@@ -11,9 +11,10 @@ const FEATURED: Record<string, string> = {
   "Eastern Chagatai Khanate": "#6f9a48",
 };
 
-// Quiet tones for the rest of the world, picked per polity name so a realm
-// keeps its tone from one snapshot to the next.
-const CONTEXT = ["#8a95a3", "#9b9284", "#7f9a93", "#9a8a9a", "#8d9a7f", "#a0948c"];
+// Muted, distinct tones for the rest of the world, picked per polity name so a
+// realm keeps its tone from one snapshot to the next. They stay darker than the
+// khanate colours so they read on pale deserts and steppe as well as on forest.
+const CONTEXT = ["#5b7fa6", "#8a5e8f", "#4f8f86", "#7f8248", "#9a614a", "#5d65a6", "#a05d72", "#5f8a58"];
 
 export function featuredColor(name: string): string {
   return FEATURED[name] ?? "#e2742f";
