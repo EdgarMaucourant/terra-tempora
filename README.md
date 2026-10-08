@@ -1,20 +1,28 @@
 # History Globe
 
-Phase 0 prototype of the History Globe: a 3D globe that shows the Mongol Empire
-and its successor khanates growing, splitting and fading between 1100 and 1500,
-with the rest of the world's realms as quiet context.
+Prototype of the History Globe: a 3D globe that shows the Mongol Empire and its
+successor khanates growing, splitting and fading, set in a timeline that runs
+from 10,000 BCE to today with the rest of the world's realms as context.
 
 ## What it does
 
 - CesiumJS globe with the Natural Earth II imagery bundled in CesiumJS, served
   from our own files. No Cesium ion account or token.
-- 2,908 time-stamped border shapes from Cliopatria (1100 to 1500), 58 of them
-  Mongol realms. Consecutive borders crossfade during playback.
-- Year slider, play and pause, three speeds, and lanes showing each khanate's
-  lifespan (tap a lane to jump to its first year).
+- 13,408 time-stamped border shapes from Cliopatria, 3400 BCE to 2024 CE, split
+  into time windows that download only when the year needs them. Consecutive
+  borders crossfade during playback.
+- A zoomable timeline from 10,000 BCE to the current year: drag to pan, scroll
+  or pinch to zoom, tap to jump, drag the playhead to scrub. "Mongol era" and
+  "All history" reset the view.
+- A band of the major eras of world history along the top of the timeline
+  (prehistory, ancient, post-classical, early modern, late modern,
+  contemporary). The boundaries are in `src/eras.ts`.
+- Lanes showing each khanate's lifespan (tap a lane to jump to its first year);
+  when they are out of view the lanes fold into a pointer toward them.
+- Play and pause at 2 to 500 years per second.
 - Tap or click a realm for its dates, area and Wikipedia and Wikidata links.
 - Works on phones: the timeline stacks and the details card becomes a sheet.
-- A link can open on a year: `#y1241`.
+- A link can open on a year: `#y1241`, or `#y-500` for 500 BCE.
 
 ## Run it
 
@@ -23,7 +31,7 @@ npm install
 # Download cliopatria.geojson.zip from
 # https://github.com/Seshat-Global-History-Databank/cliopatria, unzip it, and
 # point data-raw/cliopatria.geojson at the .geojson file inside.
-npm run data      # builds public/data/polities.json (already committed)
+npm run data      # builds public/data/ (already committed)
 npm run dev       # http://localhost:5173
 npm run build     # static site in dist/
 ```
@@ -35,9 +43,12 @@ for the claude.ai preview.
 
 | Path | What it is |
 | --- | --- |
-| `scripts/build-data.mjs` | Filters Cliopatria to 1100 to 1500, simplifies borders, picks label points |
-| `src/polityLayer.ts` | Builds and fades the border shapes and labels on the globe |
-| `src/main.ts` | Globe setup, timeline, playback, details card |
+| `scripts/build-data.mjs` | Simplifies Cliopatria borders, picks label points, splits them into time windows |
+| `src/data.ts` | Downloads and decodes the time windows on demand |
+| `src/polityLayer.ts` | Builds, fades and frees the border shapes and labels on the globe |
+| `src/timeline.ts` | The zoomable time axis: eras, lanes, ticks, playhead and gestures |
+| `src/eras.ts` | The eras of world history and their boundary years |
+| `src/main.ts` | Globe setup, playback, details card |
 | `src/years.ts` | Year formatting (negative years are BCE) |
 | `src/colors.ts` | Khanate colours and context tones |
 
