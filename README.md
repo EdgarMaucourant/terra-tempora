@@ -28,13 +28,13 @@ from 10,000 BCE to today with the rest of the world's realms as context.
 
 ```sh
 npm install
-# Download cliopatria.geojson.zip from
-# https://github.com/Seshat-Global-History-Databank/cliopatria, unzip it, and
-# point data-raw/cliopatria.geojson at the .geojson file inside.
-npm run data      # builds public/data/ (already committed)
 npm run dev       # http://localhost:5173
 npm run build     # static site in dist/
 ```
+
+The border data in `public/data/` is already committed, so the app runs without
+rebuilding it. `npm run data` rebuilds it: the first run downloads the
+Cliopatria borders (about 46 MB, unzipped with `unzip`) into `data-raw/`.
 
 `node scripts/make-artifact.mjs` turns `dist/` into the page and file list used
 for the claude.ai preview.
