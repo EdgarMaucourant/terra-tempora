@@ -1,5 +1,4 @@
 import type { Span } from "./data";
-import { featuredColor } from "./colors";
 import { ERAS, type Era } from "./eras";
 import { formatRange, formatYear, tickLabel } from "./years";
 
@@ -16,7 +15,12 @@ export interface TimelineOptions {
   max: number;
   year: number;
   view: [number, number];
+  /** Lifespans of the highlighted realms, drawn as lanes under the eras. */
   featured: Span[];
+  /** What the highlighted realms are called on the pointer shown when they are out of view. */
+  featuredLabel: string;
+  /** Colour of a highlighted realm's lane. */
+  colorOf: (name: string) => string;
   /** Called when the person picks a year; `settled` is false while dragging. */
   onYear: (year: number, settled: boolean) => void;
   /** Called when the visible span changes. */
@@ -46,7 +50,9 @@ export class Timeline {
   private readonly lanesEl: HTMLElement;
   private readonly rulerEl: HTMLElement;
   private readonly playhead: HTMLElement;
-  private readonly featured: Span[];
+  private featured: Span[];
+  private featuredLabel: string;
+  private readonly colorOf: TimelineOptions["colorOf"];
   private readonly onYear: TimelineOptions["onYear"];
   private readonly onView?: TimelineOptions["onView"];
   private width = 1;
@@ -62,6 +68,8 @@ export class Timeline {
     this.year = options.year;
     [this.viewFrom, this.viewTo] = options.view;
     this.featured = options.featured;
+    this.featuredLabel = options.featuredLabel;
+    this.colorOf = options.colorOf;
     this.onYear = options.onYear;
     this.onView = options.onView;
 
@@ -97,6 +105,15 @@ export class Timeline {
     const margin = span * 0.04;
     if (this.year > this.viewTo - margin) this.setView(this.year - span * 0.2, this.year + span * 0.8);
     else if (this.year < this.viewFrom + margin) this.setView(this.year - span * 0.8, this.year + span * 0.2);
+    this.render();
+  }
+
+  /** Replaces the highlighted realms' lanes. */
+  setFeatured(featured: Span[], label: string) {
+    this.featured = featured;
+    this.featuredLabel = label;
+    this.laneOf.clear();
+    this.packLanes();
     this.render();
   }
 
@@ -148,7 +165,7 @@ export class Timeline {
   // Featured realms share as few lanes as possible without overlapping.
   private packLanes() {
     const ends: number[] = [];
-    for (const span of this.featured) {
+    for (const span of [...this.featured].sort((a, b) => a.from - b.from)) {
       let lane = ends.findIndex((end) => end < span.from - 4);
       if (lane < 0) lane = ends.push(0) - 1;
       ends[lane] = span.to;
@@ -186,7 +203,7 @@ export class Timeline {
       bar.style.left = `${left}px`;
       bar.style.width = `${width}px`;
       bar.style.top = `calc(${this.laneOf.get(s.name) ?? 0} * (var(--lane-height) + 3px))`;
-      bar.style.background = featuredColor(s.name);
+      bar.style.background = this.colorOf(s.name);
       bar.textContent = width > 40 ? s.name : "";
       bar.title = `${s.name}, ${formatRange(s.from, s.to)}`;
       bar.dataset.from = String(s.from);
@@ -229,7 +246,7 @@ export class Timeline {
     button.className = `lane-pointer ${after ? "after" : "before"}`;
     button.tabIndex = -1;
     button.dataset.from = String(from);
-    button.textContent = after ? `Mongol realms, ${formatRange(from, to)} →` : `← Mongol realms, ${formatRange(from, to)}`;
+    button.textContent = after ? `${this.featuredLabel}, ${formatRange(from, to)} →` : `← ${this.featuredLabel}, ${formatRange(from, to)}`;
     return button;
   }
 
