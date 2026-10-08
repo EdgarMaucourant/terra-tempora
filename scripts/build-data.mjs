@@ -1,8 +1,10 @@
 // Builds the globe's border data from Cliopatria (CC BY 4.0).
-// Input:  data-raw/cliopatria.geojson (unzipped from the Cliopatria repository)
+// Input:  data-raw/cliopatria.geojson, downloaded from the Cliopatria repository
+//         on the first run
 // Output: public/data/index.json plus public/data/borders-*.json, one file per
 //         time window, so the app only downloads the years it shows.
-import { mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { execFileSync } from "node:child_process";
+import { existsSync, mkdirSync, readdirSync, readFileSync, renameSync, rmSync, writeFileSync } from "node:fs";
 import polylabel from "polylabel";
 
 // Polities shown as the featured subject; the rest of the world is context.
@@ -25,6 +27,26 @@ const WINDOW_POINTS = 120_000;
 const MIN_WINDOW_YEARS = 25;
 
 const KM2_PER_SQ_DEGREE = 12_364;
+
+const SOURCE = "data-raw/cliopatria.geojson";
+const SOURCE_ZIP = "https://github.com/Seshat-Global-History-Databank/cliopatria/raw/main/cliopatria.geojson.zip";
+
+// Downloads and unzips the Cliopatria borders unless they are already here.
+async function ensureSource() {
+  if (existsSync(SOURCE)) return;
+  console.log(`Downloading ${SOURCE_ZIP}`);
+  const response = await fetch(SOURCE_ZIP);
+  if (!response.ok) throw new Error(`Could not download Cliopatria (${response.status})`);
+  mkdirSync("data-raw/unzipped", { recursive: true });
+  writeFileSync("data-raw/cliopatria.geojson.zip", Buffer.from(await response.arrayBuffer()));
+  execFileSync("unzip", ["-o", "-q", "data-raw/cliopatria.geojson.zip", "-d", "data-raw/unzipped"]);
+  // The file inside is named after the release, e.g. cliopatria_polities_only_v021.geojson.
+  const inside = readdirSync("data-raw/unzipped").find((name) => name.endsWith(".geojson"));
+  if (!inside) throw new Error("The Cliopatria download has no .geojson file in it");
+  renameSync(`data-raw/unzipped/${inside}`, SOURCE);
+  rmSync("data-raw/unzipped", { recursive: true });
+  rmSync("data-raw/cliopatria.geojson.zip");
+}
 
 // Approximate ring area in km², corrected for latitude.
 function ringArea(ring) {
@@ -121,7 +143,8 @@ function encodeRing(ring) {
   return out;
 }
 
-const raw = JSON.parse(readFileSync("data-raw/cliopatria.geojson", "utf8"));
+await ensureSource();
+const raw = JSON.parse(readFileSync(SOURCE, "utf8"));
 const shapes = [];
 const realms = {};
 for (const [id, f] of raw.features.entries()) {
