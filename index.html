@@ -67,6 +67,15 @@
       </section>
 
       <footer class="timeline">
+        <div
+          id="timeline-grip"
+          class="timeline-grip"
+          role="separator"
+          aria-orientation="horizontal"
+          aria-label="Resize the timeline: drag, or use the up and down arrows"
+          title="Drag to resize. Double-click to reset."
+          tabindex="0"
+        ></div>
         <div class="year-readout">
           <p class="year-line">
             <span id="year-number" class="year-number">1206</span>
@@ -76,7 +85,10 @@
         </div>
         <div class="track-area">
           <div class="views" role="group" aria-label="Timeline view">
-            <button id="view-focus" type="button" class="chip">Its era</button>
+            <button id="add-civs" type="button" class="chip add" title="Add civilizations to the globe">
+              <span aria-hidden="true">+</span> Add civilizations
+            </button>
+            <button id="view-focus" type="button" class="chip">Current Civilization Era</button>
             <button id="view-all" type="button" class="chip">All history</button>
             <button id="zoom-out" type="button" class="chip square" aria-label="Zoom out">−</button>
             <button id="zoom-in" type="button" class="chip square" aria-label="Zoom in">+</button>
@@ -103,6 +115,25 @@
       <p id="status" class="status">Loading borders…</p>
       <p id="hint" class="hint" hidden></p>
       <p id="tooltip" class="tooltip" hidden></p>
+
+      <div id="picker" class="picker" hidden>
+        <section class="picker-panel" role="dialog" aria-modal="true" aria-labelledby="picker-title">
+          <header class="picker-head">
+            <h2 id="picker-title">Add civilizations</h2>
+            <button class="icon-button" type="button" data-close aria-label="Close">×</button>
+            <label class="search">
+              <span class="visually-hidden">Search</span>
+              <input id="picker-search" type="search" autocomplete="off" />
+            </label>
+          </header>
+          <div id="picker-list" class="picker-list"></div>
+          <footer class="picker-foot">
+            <p id="picker-count" class="picker-count" aria-live="polite"></p>
+            <button class="ghost" type="button" data-close>Cancel</button>
+            <button id="picker-add" class="primary" type="button" disabled>Add to the globe</button>
+          </footer>
+        </section>
+      </div>
     </div>
 
     <main id="landing" class="landing" tabindex="-1" hidden>
@@ -127,11 +158,20 @@
               <option value="name">A to Z</option>
             </select>
           </label>
+          <button id="multi-toggle" class="multi-toggle" type="button" aria-pressed="false">Select several</button>
         </div>
         <div id="era-filter" class="era-filter" role="group" aria-label="Era"></div>
         <p id="civ-count" class="count" aria-live="polite"></p>
       </header>
       <div id="civ-grid" class="civ-grid"></div>
+      <div id="multi-bar" class="multi-bar" role="region" aria-label="Selected civilizations" hidden>
+        <p id="multi-count" class="multi-count" aria-live="polite"></p>
+        <div class="multi-actions">
+          <button id="multi-clear" class="ghost" type="button">Clear</button>
+          <button id="multi-cancel" class="ghost" type="button">Cancel</button>
+          <button id="multi-open" class="primary" type="button" disabled>Show on the globe</button>
+        </div>
+      </div>
       <footer class="landing-foot">
         Borders:
         <a href="https://github.com/Seshat-Global-History-Databank/cliopatria" target="_blank" rel="noopener">Cliopatria</a>,

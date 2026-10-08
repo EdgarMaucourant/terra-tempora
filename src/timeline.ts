@@ -8,6 +8,9 @@ const TICK_STEPS = [1, 2, 5, 10, 20, 25, 50, 100, 200, 250, 500, 1000, 2000, 250
 const TICK_SPACING = 84;
 // Pixels a press may move and still count as a tap.
 const TAP_SLOP = 6;
+// Lane heights, in pixels, when the timeline is resized taller.
+const MIN_LANE_HEIGHT = 13;
+const MAX_LANE_HEIGHT = 26;
 
 export interface TimelineOptions {
   track: HTMLElement;
@@ -60,6 +63,7 @@ export class Timeline {
   private pointers = new Map<number, number>();
   private gesture: Gesture = { kind: "none" };
   private laneOf = new Map<string, number>();
+  private laneCount = 1;
 
   constructor(options: TimelineOptions) {
     this.track = options.track;
@@ -88,6 +92,7 @@ export class Timeline {
 
     new ResizeObserver(() => {
       this.width = Math.max(1, this.track.clientWidth);
+      this.fitLanes();
       this.render();
     }).observe(this.track);
     this.track.addEventListener("pointerdown", (e) => this.pointerDown(e));
@@ -115,6 +120,27 @@ export class Timeline {
     this.laneOf.clear();
     this.packLanes();
     this.render();
+  }
+
+  /**
+   * Gives the track a fixed height in pixels, or null for its natural height.
+   * Extra height goes to the lanes, which grow taller to fill it.
+   */
+  setHeight(height: number | null) {
+    this.track.classList.toggle("sized", height !== null);
+    this.track.style.height = height === null ? "" : `${height}px`;
+    this.fitLanes();
+  }
+
+  // Lanes share the room the track has, within a readable range.
+  private fitLanes() {
+    let height = MIN_LANE_HEIGHT;
+    if (this.track.classList.contains("sized")) {
+      const room = this.lanesEl.clientHeight;
+      height = Math.floor((room + 3) / this.laneCount - 3);
+      height = Math.min(MAX_LANE_HEIGHT, Math.max(MIN_LANE_HEIGHT, height));
+    }
+    this.track.style.setProperty("--lane-height", `${height}px`);
   }
 
   setView(from: number, to: number) {
@@ -171,7 +197,9 @@ export class Timeline {
       ends[lane] = span.to;
       this.laneOf.set(span.name, lane);
     }
+    this.laneCount = Math.max(1, ends.length);
     this.lanesEl.style.setProperty("--lanes", String(ends.length));
+    this.fitLanes();
   }
 
   render() {

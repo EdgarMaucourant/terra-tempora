@@ -15,6 +15,11 @@ in a timeline that runs from 10,000 BCE to today.
   successors Wikidata records, plus hand-picked families such as the Mongol
   khanates (`FAMILIES` in `scripts/build-civilizations.mjs`). Every other realm
   is grey; hovering one names it, clicking it makes it the highlighted one.
+- "Select several" on the landing page ticks cards instead of opening them;
+  "Show on the globe" then highlights exactly the ticked civilizations, each in
+  its own colour, with a lane each on the timeline. On the globe, "+ Add
+  civilizations" in the timeline adds more from a searchable list, and the ×
+  beside a name in the legend removes it.
 
 - CesiumJS globe with the Natural Earth II imagery bundled in CesiumJS, served
   from our own files. No Cesium ion account or token.
@@ -22,19 +27,21 @@ in a timeline that runs from 10,000 BCE to today.
   into time windows that download only when the year needs them. Consecutive
   borders crossfade during playback.
 - A zoomable timeline from 10,000 BCE to the current year: drag to pan, scroll
-  or pinch to zoom, tap to jump, drag the playhead to scrub. "Its era" and
-  "All history" reset the view.
+  or pinch to zoom, tap to jump, drag the playhead to scrub. "Current
+  Civilization Era" and "All history" reset the view.
 - A band of the major eras of world history along the top of the timeline
   (prehistory, ancient, post-classical, early modern, late modern,
   contemporary). The boundaries are in `src/eras.ts`.
 - Lanes showing the lifespan of each highlighted realm (tap a lane to jump to
   its first year); when they are out of view the lanes fold into a pointer
   toward them.
+- Drag the grip on the top edge of the timeline to make it taller (the lanes
+  grow to fill it); double-click the grip to reset. The height is remembered.
 - Play and pause at 2 to 500 years per second.
 - Tap or click a realm for its dates, area and Wikipedia and Wikidata links.
 - Works on phones: the timeline stacks and the details card becomes a sheet.
 - Links open a civilization on a year: `#c=mongol-empire&y=1241`, or `y=-500`
-  for 500 BCE. An empty link opens the landing page; the older `#y1241` opens
+  for 500 BCE. Several civilizations: `#c=roman-empire,han-dynasty&y=100`. An empty link opens the landing page; the older `#y1241` opens
   the Mongol Empire.
 
 ## Run it
@@ -64,12 +71,14 @@ for the claude.ai preview.
 | --- | --- |
 | `scripts/build-data.mjs` | Simplifies Cliopatria borders, picks label points, splits them into time windows |
 | `scripts/build-civilizations.mjs` | One entry per civilization: dates, largest extent, outline, family |
-| `src/landing.ts` | The landing page of civilization cards |
+| `src/landing.ts` | The landing page of civilization cards, with multi-select |
+| `src/picker.ts` | The list for adding civilizations to the globe |
 | `src/civilizations.ts` | Loads the civilization list; era labels and outlines |
 | `src/wikidata.ts` | Pictures, key figures and predecessor/successor links from Wikimedia |
 | `src/data.ts` | Downloads and decodes the time windows on demand |
 | `src/polityLayer.ts` | Builds, fades and frees the border shapes and labels on the globe |
 | `src/timeline.ts` | The zoomable time axis: eras, lanes, ticks, playhead and gestures |
+| `src/timelineGrip.ts` | Resizing the timeline panel from its top edge |
 | `src/eras.ts` | The eras of world history and their boundary years |
 | `src/main.ts` | Links, globe setup, highlighting, hover and click, playback, details card |
 | `src/years.ts` | Year formatting (negative years are BCE) |

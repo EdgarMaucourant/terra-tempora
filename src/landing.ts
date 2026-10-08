@@ -23,7 +23,8 @@ function el<K extends keyof HTMLElementTagNameMap>(tag: K, className?: string, t
 
 /**
  * The landing page: a card per civilization with its era, dates, one or two
- * key figures and a picture, filtered by search and era.
+ * key figures and a picture, filtered by search and era. In multi mode,
+ * cards are ticked instead of opened, and the ticked ones open together.
  */
 export class Landing {
   private cards = new Map<string, HTMLElement>();
@@ -31,11 +32,14 @@ export class Landing {
   private query = "";
   private era: Era | null = null;
   private sort: Sort = "area";
+  private multi = false;
+  /** Ticked civilizations, in the order they were ticked. */
+  private selected: Civilization[] = [];
 
   constructor(
     private root: HTMLElement,
     private list: Civilization[],
-    private onOpen: (c: Civilization) => void,
+    private onOpen: (civs: Civilization[]) => void,
   ) {
     this.observer = new IntersectionObserver((entries) => this.reveal(entries), { root, rootMargin: "600px 0px" });
 
@@ -67,7 +71,64 @@ export class Landing {
     eras.append(chip("All eras", null));
     for (const e of ERAS) if (list.some((c) => this.inEra(c, e))) eras.append(chip(eraLabel(e), e));
 
+    const toggle = root.querySelector<HTMLButtonElement>("#multi-toggle")!;
+    toggle.addEventListener("click", () => this.setMulti(!this.multi));
+    root.querySelector("#multi-clear")!.addEventListener("click", () => {
+      for (const c of this.selected) this.mark(c, false);
+      this.selected = [];
+      this.updateBar();
+    });
+    root.querySelector("#multi-cancel")!.addEventListener("click", () => this.setMulti(false));
+    root.querySelector("#multi-open")!.addEventListener("click", () => {
+      if (!this.selected.length) return;
+      const picked = [...this.selected];
+      this.setMulti(false);
+      this.onOpen(picked);
+    });
+
     this.render();
+  }
+
+  /** Turns multi mode on or off; turning it off clears the ticks. */
+  setMulti(on: boolean) {
+    this.multi = on;
+    if (!on) {
+      for (const c of this.selected) this.mark(c, false);
+      this.selected = [];
+    }
+    this.root.classList.toggle("multi", on);
+    const toggle = this.root.querySelector<HTMLButtonElement>("#multi-toggle")!;
+    toggle.setAttribute("aria-pressed", String(on));
+    toggle.textContent = on ? "Cancel selection" : "Select several";
+    this.updateBar();
+  }
+
+  private toggleCard(c: Civilization) {
+    const at = this.selected.indexOf(c);
+    if (at >= 0) this.selected.splice(at, 1);
+    else this.selected.push(c);
+    this.mark(c, at < 0);
+    this.updateBar();
+  }
+
+  private mark(c: Civilization, on: boolean) {
+    const card = this.cards.get(c.id);
+    if (!card) return;
+    card.classList.toggle("selected", on);
+    card.querySelector(".civ-link")!.setAttribute("aria-pressed", String(on));
+  }
+
+  private updateBar() {
+    const bar = this.root.querySelector<HTMLElement>("#multi-bar")!;
+    bar.hidden = !this.multi;
+    const n = this.selected.length;
+    bar.querySelector("#multi-count")!.textContent = n
+      ? `${n} selected: ${this.selected.map((c) => c.name).join(", ")}`
+      : "Tick the civilizations to show together on the globe.";
+    const open = bar.querySelector<HTMLButtonElement>("#multi-open")!;
+    open.disabled = n === 0;
+    open.textContent = n > 1 ? `Show ${n} on the globe` : "Show on the globe";
+    bar.querySelector<HTMLButtonElement>("#multi-clear")!.hidden = n === 0;
   }
 
   private inEra(c: Civilization, e: Era) {
@@ -109,7 +170,8 @@ export class Landing {
     link.href = `#c=${c.id}`;
     link.addEventListener("click", (e) => {
       e.preventDefault();
-      this.onOpen(c);
+      if (this.multi) this.toggleCard(c);
+      else this.onOpen([c]);
     });
     title.append(link);
     const figures = el("p", "civ-figures loading");
@@ -121,7 +183,9 @@ export class Landing {
       figures,
     );
 
-    card.append(media, body);
+    const check = el("span", "civ-check");
+    check.setAttribute("aria-hidden", "true");
+    card.append(media, body, check);
     card.dataset.wikidata = c.wikidata ?? "";
     this.cards.set(c.id, card);
     this.observer.observe(card);
