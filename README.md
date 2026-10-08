@@ -15,6 +15,11 @@ in a timeline that runs from 10,000 BCE to today.
   successors Wikidata records, plus hand-picked families such as the Mongol
   khanates (`FAMILIES` in `scripts/build-civilizations.mjs`). Every other realm
   is grey; hovering one names it, clicking it makes it the highlighted one.
+- "Select several" on the landing page ticks cards instead of opening them;
+  "Show on the globe" then highlights exactly the ticked civilizations, each in
+  its own colour, with a lane each on the timeline. On the globe, "+ Add
+  civilizations" in the timeline adds more from a searchable list, and the ×
+  beside a name in the legend removes it.
 
 - CesiumJS globe with the Natural Earth II imagery bundled in CesiumJS, served
   from our own files. No Cesium ion account or token.
@@ -36,7 +41,7 @@ in a timeline that runs from 10,000 BCE to today.
 - Tap or click a realm for its dates, area and Wikipedia and Wikidata links.
 - Works on phones: the timeline stacks and the details card becomes a sheet.
 - Links open a civilization on a year: `#c=mongol-empire&y=1241`, or `y=-500`
-  for 500 BCE. An empty link opens the landing page; the older `#y1241` opens
+  for 500 BCE. Several civilizations: `#c=roman-empire,han-dynasty&y=100`. An empty link opens the landing page; the older `#y1241` opens
   the Mongol Empire.
 
 ## Run it
@@ -66,7 +71,8 @@ for the claude.ai preview.
 | --- | --- |
 | `scripts/build-data.mjs` | Simplifies Cliopatria borders, picks label points, splits them into time windows |
 | `scripts/build-civilizations.mjs` | One entry per civilization: dates, largest extent, outline, family |
-| `src/landing.ts` | The landing page of civilization cards |
+| `src/landing.ts` | The landing page of civilization cards, with multi-select |
+| `src/picker.ts` | The list for adding civilizations to the globe |
 | `src/civilizations.ts` | Loads the civilization list; era labels and outlines |
 | `src/wikidata.ts` | Pictures, key figures and predecessor/successor links from Wikimedia |
 | `src/data.ts` | Downloads and decodes the time windows on demand |

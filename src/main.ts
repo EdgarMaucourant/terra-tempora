@@ -16,6 +16,7 @@ import { highlightColors } from "./colors";
 import { BorderData, type Polity, type Span } from "./data";
 import { eraAt, ERAS, NOW } from "./eras";
 import { Landing } from "./landing";
+import { Picker } from "./picker";
 import { PolityLayer } from "./polityLayer";
 import { Timeline } from "./timeline";
 import { attachTimelineGrip } from "./timelineGrip";
@@ -72,29 +73,40 @@ let timeline: Timeline | undefined;
 let landing: Landing | undefined;
 let year = 1206;
 let playing = false;
-// The civilization shown on the globe and the realms related to it, highlighted first.
+// The civilizations highlighted on the globe. With one civilization picked,
+// the realms related to it join it (`expanded`); with several, exactly those.
 let active: Civilization | undefined;
 let highlighted: Civilization[] = [];
+let expanded = true;
 let colors = new Map<string, string>();
 
-// Links: #c=mongol-empire&y=1241 opens a civilization on a year, an empty hash
-// the landing page. #y1241 (and #y-500 for 500 BCE) still work.
+// Links: #c=mongol-empire&y=1241 opens a civilization on a year, with its
+// related realms; #c=a,b,c&m=1 opens exactly those civilizations. An empty hash
+// opens the landing page. #y1241 (and #y-500 for 500 BCE) still work.
 interface Route {
-  civ?: string;
+  civs?: string[];
+  /** Exactly these civilizations, without their related realms. */
+  multi?: boolean;
   year?: number;
 }
 
 function readHash(): Route {
   const legacy = /^#y(-?\d{1,5})$/.exec(location.hash);
-  if (legacy) return { civ: DEFAULT_CIV, year: Number(legacy[1]) };
+  if (legacy) return { civs: [DEFAULT_CIV], year: Number(legacy[1]) };
   const params = new URLSearchParams(location.hash.slice(1));
   const y = params.get("y");
-  return { civ: params.get("c") ?? undefined, year: y && /^-?\d{1,5}$/.test(y) ? Number(y) : undefined };
+  const ids = params.get("c")?.split(",").filter(Boolean);
+  return {
+    civs: ids?.length ? ids : undefined,
+    multi: params.get("m") === "1" || (ids?.length ?? 0) > 1,
+    year: y && /^-?\d{1,5}$/.test(y) ? Number(y) : undefined,
+  };
 }
 
 function hashFor(route: Route): string {
-  if (!route.civ) return location.pathname + location.search;
-  return `#c=${route.civ}${route.year !== undefined ? `&y=${Math.round(route.year)}` : ""}`;
+  if (!route.civs?.length) return location.pathname + location.search;
+  const multi = route.multi && route.civs.length === 1 ? "&m=1" : "";
+  return `#c=${route.civs.join(",")}${multi}${route.year !== undefined ? `&y=${Math.round(route.year)}` : ""}`;
 }
 
 function go(route: Route, push: boolean) {
@@ -106,8 +118,14 @@ function go(route: Route, push: boolean) {
   }
 }
 
+function currentRoute(): Route {
+  return expanded && active
+    ? { civs: [active.id], year }
+    : { civs: highlighted.map((c) => c.id), multi: true, year };
+}
+
 function writeHash() {
-  if (active) go({ civ: active.id, year }, false);
+  if (active) go(currentRoute(), false);
 }
 
 function showYear() {
@@ -230,7 +248,8 @@ const nf = new Intl.NumberFormat("en");
 function showInfo(p: Polity) {
   sources.hidden = true;
   const civ = civs?.ofRealm(p.name);
-  $("info-kind").textContent = civ === active ? "Highlighted realm" : civ && highlighted.includes(civ) ? "Related realm" : "Realm";
+  $("info-kind").textContent =
+    civ && highlighted.includes(civ) ? (civ === active || !expanded ? "Highlighted realm" : "Related realm") : "Realm";
   $("info-name").textContent = p.name;
   $("info-shape").textContent = formatRange(p.from, p.to);
   const span = data?.realmSpan(p.name) ?? [p.from, p.to];
@@ -335,10 +354,75 @@ function altitudeFor(area: number): number {
   return Math.min(22_000_000, Math.max(2_500_000, altitude));
 }
 
-function focusView(c: Civilization): [number, number] {
-  const pad = Math.max(60, (c.to - c.from) * 0.5);
-  return [c.from - pad, c.to + pad];
+/** Years that frame these civilizations on the timeline. */
+function focusView(list: Civilization[]): [number, number] {
+  const from = Math.min(...list.map((c) => c.from));
+  const to = Math.max(...list.map((c) => c.to));
+  const pad = Math.max(60, (to - from) * (list.length > 1 ? 0.1 : 0.5));
+  return [from - pad, to + pad];
 }
+
+/** The civilizations whose years the "Current Civilization Era" button frames. */
+function chosen(): Civilization[] {
+  return expanded && active ? [active] : highlighted;
+}
+
+function viewTitle(list: Civilization[]): string {
+  if (list.length === 1) return list[0].name;
+  if (list.length === 2) return `${list[0].name} & ${list[1].name}`;
+  return `${list[0].name}, ${list[1].name} & ${list.length - 2} more`;
+}
+
+function flyToCiv(c: Civilization, target: [number, number] | null = c.center, keepHeight = false) {
+  if (!target) return;
+  const height = keepHeight ? widget.camera.positionCartographic.height : altitudeFor(c.area);
+  widget.camera.flyTo({
+    destination: Cartesian3.fromDegrees(target[0], target[1] - (narrow ? 6 : 0), height),
+    duration: 1.4,
+  });
+}
+
+/** Points the camera so all these civilizations are in view at once. */
+function flyToAll(list: Civilization[]) {
+  const centers = list.map((c) => c.center).filter((p): p is [number, number] => !!p);
+  if (centers.length < 2) return flyToCiv(list[0]);
+  // Average on the sphere, so realms on either side of the antimeridian meet in the middle.
+  let x = 0;
+  let y = 0;
+  let z = 0;
+  for (const [lon, lat] of centers) {
+    const l = (lon * Math.PI) / 180;
+    const p = (lat * Math.PI) / 180;
+    x += Math.cos(p) * Math.cos(l);
+    y += Math.cos(p) * Math.sin(l);
+    z += Math.sin(p);
+  }
+  const lon = (Math.atan2(y, x) * 180) / Math.PI;
+  const lat = (Math.atan2(z, Math.hypot(x, y)) * 180) / Math.PI;
+  // Widest angle from the middle to any realm, in kilometres along the ground.
+  const spread = Math.max(
+    ...centers.map(([a, b]) => {
+      const cos =
+        Math.sin((lat * Math.PI) / 180) * Math.sin((b * Math.PI) / 180) +
+        Math.cos((lat * Math.PI) / 180) * Math.cos((b * Math.PI) / 180) * Math.cos(((a - lon) * Math.PI) / 180);
+      return Math.acos(Math.min(1, Math.max(-1, cos))) * 6371;
+    }),
+  );
+  const largest = Math.max(...list.map((c) => c.area));
+  const height = Math.min(22_000_000, Math.max(altitudeFor(largest), spread * 1000 * (narrow ? 3.2 : 2.2)));
+  widget.camera.flyTo({ destination: Cartesian3.fromDegrees(lon, lat - (narrow ? 6 : 0), height), duration: 1.4 });
+}
+
+/** Moves to a highlighted civilization: the camera to where it was largest, the year into its lifetime. */
+function focusCiv(c: Civilization) {
+  flyToCiv(c);
+  if (year < c.from || year > c.to) {
+    timeline?.setView(...focusView([c]));
+    setYearEverywhere(c.peakYear);
+  }
+}
+
+const LEGEND_LIMIT = 12;
 
 function showHighlight() {
   if (!active) return;
@@ -351,24 +435,50 @@ function showHighlight() {
   layer.setHighlight(byRealm);
 
   const spans: Span[] = highlighted.map((c) => ({ name: c.name, from: c.from, to: c.to }));
-  timeline?.setFeatured(spans, highlighted.length > 1 ? `${active.name} and related realms` : active.name);
+  const label = !expanded
+    ? `${highlighted.length} civilizations`
+    : highlighted.length > 1
+      ? `${active.name} and related realms`
+      : active.name;
+  timeline?.setFeatured(spans, label);
 
   const legend = $("legend");
-  legend.replaceChildren(
-    ...highlighted.slice(0, 9).map((c) => {
-      const item = document.createElement("li");
-      const button = document.createElement("button");
-      button.type = "button";
-      button.className = c === active ? "legend-item active" : "legend-item";
-      button.style.setProperty("--swatch", colors.get(c.name)!);
-      button.textContent = c.name;
-      button.title = `${c.name}, ${formatRange(c.from, c.to)}`;
-      if (c !== active) button.addEventListener("click", () => openCiv(c, { push: true }));
-      else button.addEventListener("click", () => setYearEverywhere(Math.min(c.to, Math.max(c.from, year))));
-      item.append(button);
-      return item;
-    }),
-  );
+  const items = highlighted.slice(0, LEGEND_LIMIT).map((c) => {
+    const item = document.createElement("li");
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = c === active && expanded ? "legend-item active" : "legend-item";
+    button.style.setProperty("--swatch", colors.get(c.name)!);
+    button.textContent = c.name;
+    button.title = `${c.name}, ${formatRange(c.from, c.to)}`;
+    // With several civilizations chosen, a name moves to that civilization;
+    // with one, a related realm's name opens it on its own.
+    if (!expanded || c === active) button.addEventListener("click", () => focusCiv(c));
+    else button.addEventListener("click", () => openCiv(c, { push: true }));
+    item.append(button);
+    if (!expanded && highlighted.length > 1) {
+      const remove = document.createElement("button");
+      remove.type = "button";
+      remove.className = "legend-remove";
+      remove.textContent = "×";
+      remove.setAttribute("aria-label", `Remove ${c.name} from the view`);
+      remove.addEventListener("click", () =>
+        openView(
+          highlighted.filter((o) => o !== c),
+          { year, push: true, fly: false },
+        ),
+      );
+      item.append(remove);
+    }
+    return item;
+  });
+  if (highlighted.length > LEGEND_LIMIT) {
+    const more = document.createElement("li");
+    more.className = "legend-more";
+    more.textContent = `+${highlighted.length - LEGEND_LIMIT} more`;
+    items.push(more);
+  }
+  legend.replaceChildren(...items);
   legend.hidden = highlighted.length < 2;
   render();
 }
@@ -386,27 +496,38 @@ interface OpenOptions {
   flyTo?: [number, number] | null;
 }
 
+function showMasthead() {
+  const list = chosen();
+  const from = Math.min(...list.map((c) => c.from));
+  const to = Math.max(...list.map((c) => c.to));
+  const title = viewTitle(list);
+  $("civ-title").textContent = title;
+  $("civ-sub").textContent =
+    list.length === 1
+      ? `${formatRange(from, to)} · ${civEraText(list[0])}`
+      : `${list.length} civilizations · ${formatRange(from, to)}`;
+  $("view-focus").setAttribute("aria-label", `Show the years of ${title}`);
+  document.title = `${title} · History Globe`;
+}
+
 /** Shows a civilization on the globe, with its related realms highlighted. */
 function openCiv(c: Civilization, options: OpenOptions = {}) {
   if (!civs) return;
   const list = civs;
-  const switching = active !== c;
+  const switching = active !== c || !expanded;
   active = c;
+  expanded = true;
   landingEl.hidden = true;
-  document.title = `${c.name} · History Globe`;
 
   if (switching) {
-    $("civ-title").textContent = c.name;
-    $("civ-sub").textContent = `${formatRange(c.from, c.to)} · ${civEraText(c)}`;
-    $("view-focus").textContent = "Current Civilization Era";
-    $("view-focus").setAttribute("aria-label", `Show the years of ${c.name}`);
     highlighted = list.family(c);
+    showMasthead();
     showHighlight();
 
     // Realms Wikidata records as this one's predecessors and successors join the highlight.
     if (c.wikidata) {
       realmFacts(c.wikidata).then((facts) => {
-        if (active !== c || !facts) return;
+        if (active !== c || !expanded || !facts) return;
         const sub = `${formatRange(c.from, c.to)} · ${civEraText(c)}`;
         $("civ-sub").textContent = facts.figures.length ? `${sub} · ${facts.figures.join(", ")}` : sub;
         const linked = [...facts.before, ...facts.after]
@@ -418,23 +539,56 @@ function openCiv(c: Civilization, options: OpenOptions = {}) {
       });
     }
 
-    const target = options.flyTo === undefined ? c.center : options.flyTo;
-    if (target) {
-      const height = options.flyTo ? widget.camera.positionCartographic.height : altitudeFor(c.area);
-      widget.camera.flyTo({
-        destination: Cartesian3.fromDegrees(target[0], target[1] - (narrow ? 6 : 0), height),
-        duration: 1.4,
-      });
-    }
+    if (options.flyTo === undefined) flyToCiv(c);
+    else flyToCiv(c, options.flyTo, true);
   }
 
   const next = Math.min(NOW, Math.max(FIRST_YEAR, options.year ?? c.peakYear));
   if (timeline && switching && (next < timeline.viewFrom || next > timeline.viewTo || options.year === undefined)) {
-    timeline.setView(...focusView(c));
+    timeline.setView(...focusView([c]));
   }
   setYear(next);
   timeline?.setYear(year);
-  go({ civ: c.id, year }, options.push ?? false);
+  go(currentRoute(), options.push ?? false);
+}
+
+interface ViewOptions {
+  year?: number;
+  push?: boolean;
+  /** Move the camera to the first civilization (default true). */
+  fly?: boolean;
+}
+
+/** Shows exactly these civilizations on the globe, each in its own colour. */
+function openView(list: Civilization[], options: ViewOptions = {}) {
+  const unique = [...new Set(list)];
+  if (!unique.length) return;
+  active = unique[0];
+  expanded = false;
+  highlighted = unique;
+  landingEl.hidden = true;
+  showMasthead();
+  showHighlight();
+  if (options.fly ?? true) flyToAll(unique);
+
+  // Stay on the year asked for if any of the civilizations existed then.
+  const wanted = options.year;
+  const fits = wanted !== undefined && unique.some((c) => wanted >= c.from && wanted <= c.to);
+  timeline?.setView(...focusView(unique));
+  setYear(Math.min(NOW, Math.max(FIRST_YEAR, fits ? wanted : active.peakYear)));
+  timeline?.setYear(year);
+  go(currentRoute(), options.push ?? false);
+}
+
+/** Adds civilizations to the ones on the globe, keeping those already shown. */
+function addToView(added: Civilization[]) {
+  const fresh = added.filter((c) => !highlighted.includes(c));
+  if (!fresh.length) return;
+  const list = [...highlighted, ...fresh];
+  // Jump to the first new civilization's heyday unless one of them is already alive this year.
+  const alive = fresh.some((c) => year >= c.from && year <= c.to);
+  openView(list, { year: alive ? year : fresh[0].peakYear, push: true, fly: false });
+  flyToCiv(fresh[0]);
 }
 
 function showLanding() {
@@ -449,10 +603,12 @@ function showLanding() {
 
 function route() {
   if (!civs) return;
+  const list = civs;
   const r = readHash();
-  const c = r.civ ? civs.get(r.civ) : undefined;
-  if (c) openCiv(c, { year: r.year });
-  else showLanding();
+  const found = (r.civs ?? []).map((id) => list.get(id)).filter((c): c is Civilization => !!c);
+  if (!found.length) showLanding();
+  else if (!r.multi) openCiv(found[0], { year: r.year });
+  else openView(found, { year: r.year });
 }
 
 $("back").addEventListener("click", (e) => {
@@ -472,7 +628,11 @@ Promise.all([Civilizations.load(base), BorderData.open(base)])
     civs = list;
     data = borders;
     statusEl.textContent = "";
-    landing = new Landing(landingEl, list.list, (c) => openCiv(c, { push: true }));
+    landing = new Landing(landingEl, list.list, (picked) =>
+      picked.length === 1 ? openCiv(picked[0], { push: true }) : openView(picked, { push: true }),
+    );
+    const picker = new Picker($("picker"), list.list, addToView);
+    $("add-civs").addEventListener("click", () => picker.open(new Set(highlighted)));
     timeline = new Timeline({
       track: $("track"),
       min: FIRST_YEAR,
@@ -492,8 +652,9 @@ Promise.all([Civilizations.load(base), BorderData.open(base)])
     attachTimelineGrip($("timeline-grip"), footer, $("track"), t);
     $("view-focus").addEventListener("click", () => {
       if (!active) return;
-      t.setView(...focusView(active));
-      if (year < active.from || year > active.to) setYearEverywhere(active.peakYear);
+      const list = chosen();
+      t.setView(...focusView(list));
+      if (!list.some((c) => year >= c.from && year <= c.to)) setYearEverywhere(list[0].peakYear);
     });
     $("view-all").addEventListener("click", () => t.setView(FIRST_YEAR, NOW));
     $("zoom-in").addEventListener("click", () => t.zoom(0.5));
