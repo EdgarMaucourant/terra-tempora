@@ -57,5 +57,5 @@ for the claude.ai preview.
 - Borders: Cliopatria, Seshat Global History Databank, CC BY 4.0. Attribution is
   shown in the Sources panel.
 - Imagery: Natural Earth II (public domain), as packaged with CesiumJS.
-- CesiumJS: Apache 2.0. Build tools only: Vite (MIT), mapshaper (MPL 2.0),
+- CesiumJS: Apache 2.0. Build tools only: Vite (MIT),
   polylabel (ISC).
