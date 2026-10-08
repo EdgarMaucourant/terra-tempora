@@ -18,6 +18,7 @@ import { eraAt, ERAS, NOW } from "./eras";
 import { Landing } from "./landing";
 import { PolityLayer } from "./polityLayer";
 import { Timeline } from "./timeline";
+import { attachTimelineGrip } from "./timelineGrip";
 import { realmFacts } from "./wikidata";
 import { era, formatRange, formatYear, yearNumber } from "./years";
 
@@ -488,6 +489,7 @@ Promise.all([Civilizations.load(base), BorderData.open(base)])
       },
     });
     const t = timeline;
+    attachTimelineGrip($("timeline-grip"), footer, $("track"), t);
     $("view-focus").addEventListener("click", () => {
       if (!active) return;
       t.setView(...focusView(active));

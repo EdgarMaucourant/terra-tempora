@@ -479,6 +479,50 @@ a {
   cursor: grabbing;
 }
 
+/* Resized taller: the lanes take the extra room. */
+.track.sized {
+  grid-template-rows: auto minmax(0, 1fr) auto;
+}
+
+.track.sized .lanes,
+.track.sized .lanes.folded {
+  height: auto;
+  min-height: calc(var(--lanes, 1) * 16px - 3px);
+}
+
+.timeline-grip {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 64px;
+  height: 14px;
+  transform: translateX(-50%);
+  cursor: ns-resize;
+  touch-action: none;
+}
+
+.timeline-grip::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 16px;
+  right: 16px;
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(214, 220, 228, 0.28);
+  transition: background 0.15s;
+}
+
+.timeline-grip:hover::before,
+.timeline-grip:focus-visible::before,
+.timeline-grip.dragging::before {
+  background: var(--ink);
+}
+
+.timeline-grip:focus-visible {
+  outline: none;
+}
+
 .eras {
   position: relative;
   height: 20px;
@@ -527,7 +571,7 @@ a {
   padding: 0 5px;
   border: 0;
   border-radius: 3px;
-  font-size: 10px;
+  font-size: min(13px, calc(var(--lane-height) - 3px));
   font-weight: 600;
   line-height: 1;
   color: #121418;

@@ -30,6 +30,8 @@ in a timeline that runs from 10,000 BCE to today.
 - Lanes showing the lifespan of each highlighted realm (tap a lane to jump to
   its first year); when they are out of view the lanes fold into a pointer
   toward them.
+- Drag the grip on the top edge of the timeline to make it taller (the lanes
+  grow to fill it); double-click the grip to reset. The height is remembered.
 - Play and pause at 2 to 500 years per second.
 - Tap or click a realm for its dates, area and Wikipedia and Wikidata links.
 - Works on phones: the timeline stacks and the details card becomes a sheet.
@@ -70,6 +72,7 @@ for the claude.ai preview.
 | `src/data.ts` | Downloads and decodes the time windows on demand |
 | `src/polityLayer.ts` | Builds, fades and frees the border shapes and labels on the globe |
 | `src/timeline.ts` | The zoomable time axis: eras, lanes, ticks, playhead and gestures |
+| `src/timelineGrip.ts` | Resizing the timeline panel from its top edge |
 | `src/eras.ts` | The eras of world history and their boundary years |
 | `src/main.ts` | Links, globe setup, highlighting, hover and click, playback, details card |
 | `src/years.ts` | Year formatting (negative years are BCE) |
