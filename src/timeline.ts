@@ -312,16 +312,78 @@ export class Timeline {
   }
 
   // Featured realms share as few lanes as possible without overlapping.
+  /**
+   * Assigns each lane a row, oldest first. A realm that follows one of its
+   * predecessors without overlapping it continues that predecessor's row, so
+   * a chain like Mongol Empire, Yuan, Ming reads along one line. Otherwise it
+   * goes in the free row nearest its relatives, or a new row next to them;
+   * unrelated realms take the first free row.
+   */
   private packLanes() {
-    const ends: number[] = [];
-    for (const span of [...this.featured].sort((a, b) => a.from - b.from)) {
-      let lane = ends.findIndex((end) => end < span.from - 4);
-      if (lane < 0) lane = ends.push(0) - 1;
-      ends[lane] = span.to;
-      this.laneOf.set(span.name, lane);
+    this.laneOf.clear();
+    const byName = new Map(this.featured.map((s) => [s.name, s]));
+    const related = new Map<string, { before: Set<string>; after: Set<string> }>();
+    const rel = (name: string) => {
+      let r = related.get(name);
+      if (!r) related.set(name, (r = { before: new Set(), after: new Set() }));
+      return r;
+    };
+    for (const s of this.featured) {
+      for (const link of s.after ?? []) {
+        if (!byName.has(link.name) || link.name === s.name) continue;
+        rel(s.name).after.add(link.name);
+        rel(link.name).before.add(s.name);
+      }
+      for (const link of s.before ?? []) {
+        if (!byName.has(link.name) || link.name === s.name) continue;
+        rel(s.name).before.add(link.name);
+        rel(link.name).after.add(s.name);
+      }
     }
-    this.laneCount = Math.max(1, ends.length);
-    this.lanesEl.style.setProperty("--lanes", String(ends.length));
+
+    interface Row {
+      end: number;
+      last: Lane;
+    }
+    const rows: Row[] = [];
+    const rowOf = new Map<string, Row>();
+    const free = (row: Row, span: Lane) => row.end < span.from - 4;
+    const ordered = [...this.featured].sort((a, b) => a.from - b.from || b.to - b.from - (a.to - a.from));
+    for (const span of ordered) {
+      const r = related.get(span.name);
+      const placed = [...(r?.before ?? []), ...(r?.after ?? [])]
+        .map((n) => rowOf.get(n))
+        .filter((row): row is Row => !!row);
+      let row: Row | undefined;
+      // Continue a predecessor's row when it ends just before this realm starts.
+      const chain = [...(r?.before ?? [])]
+        .map((n) => rowOf.get(n))
+        .filter((x): x is Row => !!x && r!.before.has(x.last.name) && x.end <= span.from)
+        .sort((a, b) => b.end - a.end)[0];
+      if (chain) row = chain;
+      else if (placed.length) {
+        // The free row closest to its relatives, or a new row just below them.
+        const target = placed.map((x) => rows.indexOf(x)).reduce((a, b) => a + b, 0) / placed.length;
+        const best = rows
+          .map((x, i) => ({ x, d: Math.abs(i - target) }))
+          .filter(({ x }) => free(x, span))
+          .sort((a, b) => a.d - b.d)[0];
+        if (best && best.d <= 1) row = best.x;
+        else {
+          row = { end: -Infinity, last: span };
+          rows.splice(Math.min(rows.length, Math.max(...placed.map((x) => rows.indexOf(x))) + 1), 0, row);
+        }
+      } else {
+        row = rows.find((x) => free(x, span));
+        if (!row) rows.push((row = { end: -Infinity, last: span }));
+      }
+      row.end = Math.max(row.end, span.to);
+      row.last = span;
+      rowOf.set(span.name, row);
+    }
+    for (const [name, row] of rowOf) this.laneOf.set(name, rows.indexOf(row));
+    this.laneCount = Math.max(1, rows.length);
+    this.lanesEl.style.setProperty("--lanes", String(rows.length));
     this.fitLanes();
   }
 
@@ -479,21 +541,29 @@ export class Timeline {
     svg.setAttribute("height", String(this.laneCount * rowHeight));
     const mid = (s: Lane) => (this.laneOf.get(s.name) ?? 0) * rowHeight + this.laneHeight / 2;
     for (const [a, b] of joins) {
-      const x1 = this.x(a.to + 1);
-      const x2 = this.x(b.from);
+      const end = this.x(a.to + 1);
+      const start = this.x(b.from);
       const y1 = mid(a);
       const y2 = mid(b);
-      // Out of the end of one lane and into the start of the other; when they
-      // overlap in time the line loops back.
-      const reach = Math.max(10, Math.abs(x2 - x1) / 2);
+      let d: string;
+      let from: [number, number];
+      if (start - end >= 6) {
+        // A gap between them: from the end of one lane forward to the start of the other.
+        const reach = (start - end) / 2;
+        d = `M${end} ${y1}C${end + reach} ${y1} ${start - reach} ${y2} ${start} ${y2}`;
+        from = [end, y1];
+      } else {
+        // They overlap in time: a straight drop from the earlier lane at the
+        // moment the later one begins, so lines never loop back and tangle.
+        const x = Math.min(end, Math.max(this.x(a.from), start));
+        d = `M${x} ${y1}L${x} ${y2}${x === start ? "" : `L${start} ${y2}`}`;
+        from = [x, y1];
+      }
       const path = document.createElementNS(NS, "path");
-      path.setAttribute("d", `M${x1} ${y1}C${x1 + reach} ${y1} ${x2 - reach} ${y2} ${x2} ${y2}`);
+      path.setAttribute("d", d);
       path.setAttribute("stroke", CONNECTOR);
       svg.append(path);
-      for (const [x, y] of [
-        [x1, y1],
-        [x2, y2],
-      ]) {
+      for (const [x, y] of [from, [start, y2]]) {
         const dot = document.createElementNS(NS, "circle");
         dot.setAttribute("cx", String(x));
         dot.setAttribute("cy", String(y));

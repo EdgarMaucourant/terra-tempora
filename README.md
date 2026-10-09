@@ -55,7 +55,12 @@ in a timeline that runs from 10,000 BCE to today.
   timeline lane has an arrow icon at that end. Hovering the icon names that
   civilization and its years; clicking it opens it. When that civilization
   has its own lane on the timeline, a red line joins the end of one lane to
-  the start of the other instead.
+  the start of the other instead. When the two overlap in time, the line
+  drops straight down (or up) from the earlier lane at the moment the later
+  one begins, so lines never loop back. Rows are arranged by lineage: a
+  realm that follows its predecessor without overlapping continues on the
+  same row (Mongol Empire, Yuan, Ming, Qing read along one line), and other
+  realms sit in the row nearest their relatives.
 - The row of event marks under the lanes can be made taller by dragging its
   top edge: the marks grow up to twice their size, then spread over more
   rows. Double-click the edge to reset; the size is remembered.
