@@ -743,7 +743,7 @@ function showEvents() {
   const wanted = highlighted.filter((c) => !curated.has(c.id));
   if (!wanted.length) return;
   const asked = highlighted;
-  wikidataEvents(wanted).then((events) => {
+  wikidataEvents(base, wanted).then((events) => {
     const byId = new Map(fetchedEvents.map((e) => [e.id, e]));
     for (const e of events) {
       const known = byId.get(e.id);
