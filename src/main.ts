@@ -15,13 +15,13 @@ import "cesium/Build/Cesium/Widgets/CesiumWidget/CesiumWidget.css";
 import "./style.css";
 import { civEraText, Civilizations, type Civilization } from "./civilizations";
 import { highlightColors } from "./colors";
-import { BorderData, type Polity, type Span } from "./data";
+import { BorderData, type Polity } from "./data";
 import { eraAt, ERAS, NOW } from "./eras";
 import { Landing } from "./landing";
 import { MapView, PROJECTIONS } from "./mapView";
 import { Picker } from "./picker";
 import { PolityLayer } from "./polityLayer";
-import { Timeline } from "./timeline";
+import { Timeline, type Lane, type LaneLink } from "./timeline";
 import { attachTimelineGrip } from "./timelineGrip";
 import { realmFacts } from "./wikidata";
 import { era, formatRange, formatYear, yearNumber } from "./years";
@@ -384,6 +384,26 @@ scene.canvas.addEventListener("pointerleave", () => {
   hideTooltip();
 });
 
+// Hovering a lane's before/after icon names that civilization and its years.
+const trackEl = $("track");
+trackEl.addEventListener("pointerover", (e) => {
+  const link = (e.target as HTMLElement).closest<HTMLElement>(".lane-link");
+  if (!link) return;
+  tooltip.replaceChildren(
+    Object.assign(document.createElement("span"), { textContent: link.dataset.side === "before" ? "Before" : "After" }),
+    Object.assign(document.createElement("strong"), { textContent: link.dataset.name }),
+    Object.assign(document.createElement("span"), { textContent: `${link.dataset.range} · click to open` }),
+  );
+  tooltip.hidden = false;
+  const icon = link.getBoundingClientRect();
+  const tip = tooltip.getBoundingClientRect();
+  const x = Math.min(window.innerWidth - tip.width - 8, Math.max(8, icon.left + icon.width / 2 - tip.width / 2));
+  tooltip.style.transform = `translate(${x}px, ${icon.top - tip.height - 8}px)`;
+});
+trackEl.addEventListener("pointerout", (e) => {
+  if ((e.target as HTMLElement).closest(".lane-link")) tooltip.hidden = true;
+});
+
 $("info-close").addEventListener("click", () => (info.hidden = true));
 $("sources-button").addEventListener("click", () => {
   info.hidden = true;
@@ -587,7 +607,31 @@ function setMapMode(on: boolean, sync = true) {
 $("view-globe").addEventListener("click", () => setMapMode(false));
 $("view-map").addEventListener("click", () => setMapMode(true));
 
-const LEGEND_LIMIT = 12;
+/** Civilizations Wikidata records before and after each one, by id. */
+const neighbours = new Map<string, { before: Civilization[]; after: Civilization[] }>();
+let neighbourFrame = 0;
+
+/** Looks up the civilizations before and after these; lanes gain icons as answers arrive. */
+function loadNeighbours(list: Civilization[]) {
+  for (const c of list) {
+    if (!c.wikidata || neighbours.has(c.id)) continue;
+    neighbours.set(c.id, { before: [], after: [] });
+    realmFacts(c.wikidata).then((facts) => {
+      if (!facts || !civs) return;
+      const known = civs;
+      const pick = (ids: string[]) =>
+        [...new Set(ids.map((q) => known.ofWikidata(q)).filter((o): o is Civilization => !!o && o !== c))].sort(
+          (a, b) => a.from - b.from,
+        );
+      neighbours.set(c.id, { before: pick(facts.before), after: pick(facts.after) });
+      if (!highlighted.includes(c)) return;
+      cancelAnimationFrame(neighbourFrame);
+      neighbourFrame = requestAnimationFrame(showHighlight);
+    });
+  }
+}
+
+const toLink = (c: Civilization): LaneLink => ({ id: c.id, name: c.name, from: c.from, to: c.to });
 
 function showHighlight() {
   if (!active) return;
@@ -600,52 +644,20 @@ function showHighlight() {
   layer.setHighlight(byRealm);
   map.setHighlight(byRealm);
 
-  const spans: Span[] = highlighted.map((c) => ({ name: c.name, from: c.from, to: c.to }));
+  loadNeighbours(highlighted);
+  const lanes: Lane[] = highlighted.map((c) => ({
+    name: c.name,
+    from: c.from,
+    to: c.to,
+    before: neighbours.get(c.id)?.before.map(toLink),
+    after: neighbours.get(c.id)?.after.map(toLink),
+  }));
   const label = !expanded
     ? `${highlighted.length} civilizations`
     : highlighted.length > 1
       ? `${active.name} and related realms`
       : active.name;
-  timeline?.setFeatured(spans, label);
-
-  const legend = $("legend");
-  const items = highlighted.slice(0, LEGEND_LIMIT).map((c) => {
-    const item = document.createElement("li");
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = c === active && expanded ? "legend-item active" : "legend-item";
-    button.style.setProperty("--swatch", colors.get(c.name)!);
-    button.textContent = c.name;
-    button.title = `${c.name}, ${formatRange(c.from, c.to)}`;
-    // With several civilizations chosen, a name moves to that civilization;
-    // with one, a related realm's name opens it on its own.
-    if (!expanded || c === active) button.addEventListener("click", () => focusCiv(c));
-    else button.addEventListener("click", () => openCiv(c, { push: true }));
-    item.append(button);
-    if (!expanded && highlighted.length > 1) {
-      const remove = document.createElement("button");
-      remove.type = "button";
-      remove.className = "legend-remove";
-      remove.textContent = "×";
-      remove.setAttribute("aria-label", `Remove ${c.name} from the view`);
-      remove.addEventListener("click", () =>
-        openView(
-          highlighted.filter((o) => o !== c),
-          { year, push: true, fly: false },
-        ),
-      );
-      item.append(remove);
-    }
-    return item;
-  });
-  if (highlighted.length > LEGEND_LIMIT) {
-    const more = document.createElement("li");
-    more.className = "legend-more";
-    more.textContent = `+${highlighted.length - LEGEND_LIMIT} more`;
-    items.push(more);
-  }
-  legend.replaceChildren(...items);
-  legend.hidden = highlighted.length < 2;
+  timeline?.setFeatured(lanes, label);
   render();
 }
 
@@ -746,11 +758,11 @@ function openView(list: Civilization[], options: ViewOptions = {}) {
   go(currentRoute(), options.push ?? false);
 }
 
-/** Adds civilizations to the ones on the globe, keeping those already shown. */
-function addToView(added: Civilization[]) {
-  const fresh = added.filter((c) => !highlighted.includes(c));
-  if (!fresh.length) return;
-  const list = [...highlighted, ...fresh];
+/** Shows the civilizations picked in the list: new ones join, unticked ones leave. */
+function applyPicked(list: Civilization[]) {
+  if (!list.length) return;
+  const fresh = list.filter((c) => !highlighted.includes(c));
+  if (!fresh.length) return openView(list, { year, push: true, fly: false });
   // Jump to the first new civilization's heyday unless one of them is already alive this year.
   const alive = fresh.some((c) => year >= c.from && year <= c.to);
   openView(list, { year: alive ? year : fresh[0].peakYear, push: true, fly: false });
@@ -797,7 +809,7 @@ Promise.all([Civilizations.load(base), BorderData.open(base)])
     landing = new Landing(landingEl, list.list, (picked) =>
       picked.length === 1 ? openCiv(picked[0], { push: true }) : openView(picked, { push: true }),
     );
-    const picker = new Picker($("picker"), list.list, addToView);
+    const picker = new Picker($("picker"), list.list, applyPicked);
     $("add-civs").addEventListener("click", () => picker.open(new Set(highlighted)));
     timeline = new Timeline({
       track: $("track"),
@@ -808,6 +820,12 @@ Promise.all([Civilizations.load(base), BorderData.open(base)])
       featured: [],
       featuredLabel: "",
       colorOf: (name) => colors.get(name) ?? "#9aa1a9",
+      onLink: (id) => {
+        if (playing) setPlaying(false);
+        hideTooltip();
+        const c = list.get(id);
+        if (c) openCiv(c, { push: true });
+      },
       onLane: (name) => {
         if (playing) setPlaying(false);
         const c = highlighted.find((h) => h.name === name);

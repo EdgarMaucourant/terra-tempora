@@ -19,8 +19,11 @@ in a timeline that runs from 10,000 BCE to today.
 - "Select several" on the landing page ticks cards instead of opening them;
   "Show on the globe" then highlights exactly the ticked civilizations, each in
   its own colour, with a lane each on the timeline. On the globe, "+ Add
-  civilizations" in the timeline adds more from a searchable list, and the ×
-  beside a name in the legend removes it.
+  civilizations" in the timeline opens a searchable list: tick civilizations
+  to add them, untick one already shown to remove it.
+- Where Wikidata records a civilization before or after a highlighted one, its
+  timeline lane has an arrow icon at that end. Hovering the icon names that
+  civilization and its years; clicking it opens it.
 
 - CesiumJS globe with the Natural Earth II imagery bundled in CesiumJS, served
   from our own files. No Cesium ion account or token.
@@ -81,7 +84,7 @@ for the claude.ai preview.
 | `scripts/build-data.mjs` | Simplifies Cliopatria borders, picks label points, splits them into time windows |
 | `scripts/build-civilizations.mjs` | One entry per civilization: dates, largest extent, outline, family |
 | `src/landing.ts` | The landing page of civilization cards, with multi-select |
-| `src/picker.ts` | The list for adding civilizations to the globe |
+| `src/picker.ts` | The list for adding civilizations to the globe and removing them |
 | `src/civilizations.ts` | Loads the civilization list; era labels and outlines |
 | `src/wikidata.ts` | Pictures, key figures and predecessor/successor links from Wikimedia |
 | `src/data.ts` | Downloads and decodes the time windows on demand |

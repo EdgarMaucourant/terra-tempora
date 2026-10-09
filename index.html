@@ -21,7 +21,6 @@
         <a id="back" class="back" href="#">← All civilizations</a>
         <h1 id="civ-title">History Globe</h1>
         <p id="civ-sub" class="sub"></p>
-        <ul id="legend" class="legend" aria-label="Highlighted realms"></ul>
       </header>
 
       <div class="globe-tools">
@@ -109,7 +108,7 @@
         </div>
         <div class="track-area">
           <div class="views" role="group" aria-label="Timeline view">
-            <button id="add-civs" type="button" class="chip add" title="Add civilizations to the globe">
+            <button id="add-civs" type="button" class="chip add" title="Add or remove civilizations on the globe">
               <span aria-hidden="true">+</span> Add civilizations
             </button>
             <button id="view-focus" type="button" class="chip">Current Civilization Era</button>
@@ -143,7 +142,7 @@
       <div id="picker" class="picker" hidden>
         <section class="picker-panel" role="dialog" aria-modal="true" aria-labelledby="picker-title">
           <header class="picker-head">
-            <h2 id="picker-title">Add civilizations</h2>
+            <h2 id="picker-title">Civilizations on the globe</h2>
             <button class="icon-button" type="button" data-close aria-label="Close">×</button>
             <label class="search">
               <span class="visually-hidden">Search</span>
@@ -154,7 +153,7 @@
           <footer class="picker-foot">
             <p id="picker-count" class="picker-count" aria-live="polite"></p>
             <button class="ghost" type="button" data-close>Cancel</button>
-            <button id="picker-add" class="primary" type="button" disabled>Add to the globe</button>
+            <button id="picker-add" class="primary" type="button" disabled>Update the globe</button>
           </footer>
         </section>
       </div>
