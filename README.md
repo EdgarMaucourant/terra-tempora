@@ -46,6 +46,16 @@ in a timeline that runs from 10,000 BCE to today.
   are hand-written in `public/data/events.json`; places marked approximate
   are best guesses (a traditional site, or a court for a treaty agreed
   between several).
+- Every other civilization gets its events from Wikidata, read in the browser
+  when it is highlighted (`src/wikiEvents.ts`): the battles, sieges, wars,
+  campaigns and treaties it took part in or signed, the births and deaths of
+  its rulers and founders, and the founding of its capitals. Only events with
+  an English Wikipedia article, a date within the realm's years and a place
+  are kept (a war without a place stands at the realm's heart), the 24
+  best-known per realm, ranked by how many Wikipedia editions cover them.
+  Their panel tells the story with the article's opening paragraph. Answers
+  are cached in localStorage; without Wikidata only the hand-written events
+  show.
 - "Select several" on the landing page ticks cards instead of opening them;
   "Show on the globe" then highlights exactly the ticked civilizations, each in
   its own colour, with a lane each on the timeline. On the globe, "+ Add
@@ -129,6 +139,7 @@ for the claude.ai preview.
 | `public/data/events.json` | Key events with places, dates, summaries and sources |
 | `src/events.ts` | Event kinds and icons, links and pictures for the panel |
 | `src/eventLayer.ts` | Event icons on the globe |
+| `src/wikiEvents.ts` | Events of every other civilization, from Wikidata |
 | `src/picker.ts` | The list for adding civilizations to the globe and removing them |
 | `src/civilizations.ts` | Loads the civilization list; era labels and outlines |
 | `src/wikidata.ts` | Pictures, key figures and predecessor/successor links from Wikimedia |
@@ -149,7 +160,9 @@ for the claude.ai preview.
 - Key figures and links between realms: Wikidata, CC0.
 - Card pictures: Wikimedia Commons, each under its own free licence; the card
   names the author and licence and links to the file page.
-- Events: written for this prototype from standard references. Event
+- Events: the Mongol ones written for this prototype from standard
+  references, the rest from Wikidata (CC0) with Wikipedia's opening
+  paragraphs (CC BY-SA). Event
   pictures come from Wikimedia Commons via the Wikipedia article, each under
   its own free licence, credited in the panel.
 - Imagery: Natural Earth II (public domain), as packaged with CesiumJS.

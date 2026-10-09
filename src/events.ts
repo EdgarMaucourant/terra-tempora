@@ -38,6 +38,8 @@ export interface HistoryEvent {
   search: string;
   /** Direct links to articles on other reference sites. */
   links?: { label: string; url: string }[];
+  /** Read from Wikidata rather than written by hand; its story comes from Wikipedia. */
+  fromWikidata?: boolean;
 }
 
 interface KindStyle {
@@ -158,26 +160,36 @@ export function eventLinks(e: HistoryEvent): { label: string; url: string; note?
   return links;
 }
 
-const pictures = new Map<string, Promise<Picture | null>>();
+interface Article {
+  picture: Picture | null;
+  /** The article's opening paragraph. */
+  extract: string;
+}
+
+const articles = new Map<string, Promise<Article | null>>();
 
 /**
- * The lead picture of the event's Wikipedia article, when it is a Commons
- * file (and so freely licensed), with its author and licence.
+ * The event's Wikipedia article: its opening paragraph, and its lead picture
+ * when that is a Commons file (and so freely licensed), with its author and licence.
  */
-export function eventPicture(e: HistoryEvent): Promise<Picture | null> {
-  let pending = pictures.get(e.wikipedia);
+export function eventArticle(e: HistoryEvent): Promise<Article | null> {
+  let pending = articles.get(e.wikipedia);
   if (!pending) {
     pending = fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(e.wikipedia)}`)
       .then((r) => (r.ok ? r.json() : null))
-      .then(async (summary: { originalimage?: { source: string } } | null) => {
-        const source = summary?.originalimage?.source;
+      .then(async (summary: { extract?: string; originalimage?: { source: string } } | null) => {
+        if (!summary) return null;
+        const source = summary.originalimage?.source;
+        let picture: Picture | null = null;
         // Files kept on Wikipedia itself may be non-free; only Commons files are used.
-        if (!source || !source.includes("/wikipedia/commons/")) return null;
-        const file = decodeURIComponent(source.split("/").pop()!);
-        return (await fetchPictures([file])).get(file) ?? null;
+        if (source && source.includes("/wikipedia/commons/")) {
+          const file = decodeURIComponent(source.split("/").pop()!);
+          picture = (await fetchPictures([file]).catch(() => new Map<string, Picture>())).get(file) ?? null;
+        }
+        return { picture, extract: summary.extract ?? "" };
       })
       .catch(() => null);
-    pictures.set(e.wikipedia, pending);
+    articles.set(e.wikipedia, pending);
   }
   return pending;
 }

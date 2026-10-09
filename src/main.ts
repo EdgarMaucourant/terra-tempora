@@ -19,7 +19,7 @@ import { countryCivIds, loadCountries, type Country, type CountryView } from "./
 import { BorderData, type Polity } from "./data";
 import { eraAt, ERAS, NOW } from "./eras";
 import { EventLayer } from "./eventLayer";
-import { badgeSvg, eventLinks, eventPicture, KINDS, loadEvents, type HistoryEvent } from "./events";
+import { badgeSvg, eventArticle, eventLinks, KINDS, loadEvents, type HistoryEvent } from "./events";
 import { Landing } from "./landing";
 import { MapView, PROJECTIONS } from "./mapView";
 import { Picker } from "./picker";
@@ -27,6 +27,7 @@ import { PolityLayer } from "./polityLayer";
 import { Timeline, type Lane, type LaneLink } from "./timeline";
 import { attachTimelineGrip } from "./timelineGrip";
 import { realmFacts } from "./wikidata";
+import { wikidataEvents } from "./wikiEvents";
 import { era, formatRange, formatYear, yearNumber } from "./years";
 
 const FIRST_YEAR = ERAS[0].from;
@@ -724,10 +725,40 @@ function eventWhen(e: HistoryEvent): string {
   return e.to && e.to !== e.year ? formatRange(e.year, e.to) : formatYear(e.year);
 }
 
-function showEvents() {
+// Events from Wikidata, for civilizations without hand-written ones.
+let fetchedEvents: HistoryEvent[] = [];
+
+/** The events of the highlighted civilizations; hand-written ones win over Wikidata's. */
+function highlightedEvents(): HistoryEvent[] {
   const ids = new Set(highlighted.map((c) => c.id));
-  shownEvents = allEvents.filter((e) => e.civs.some((id) => ids.has(id)));
+  const ours = (e: HistoryEvent) => e.civs.some((id) => ids.has(id));
+  const written = allEvents.filter(ours);
+  const titles = new Set(written.map((e) => e.wikipedia));
+  return [...written, ...fetchedEvents.filter((e) => ours(e) && !titles.has(e.wikipedia))];
+}
+
+function showEvents() {
+  renderEvents(highlightedEvents());
+  const curated = new Set(allEvents.flatMap((e) => e.civs));
+  const wanted = highlighted.filter((c) => !curated.has(c.id));
+  if (!wanted.length) return;
+  const asked = highlighted;
+  wikidataEvents(wanted).then((events) => {
+    const byId = new Map(fetchedEvents.map((e) => [e.id, e]));
+    for (const e of events) {
+      const known = byId.get(e.id);
+      // A battle between two realms is tied to both once both have been asked for.
+      if (known) known.civs = [...new Set([...known.civs, ...e.civs])];
+      else fetchedEvents.push(e);
+    }
+    if (asked === highlighted && events.length) renderEvents(highlightedEvents());
+  });
+}
+
+function renderEvents(events: HistoryEvent[]) {
+  shownEvents = events;
   eventLayer.set(shownEvents);
+  eventLayer.update(year);
   map.setEvents(shownEvents);
   timeline?.setMarks(
     shownEvents.map((e) => ({
@@ -774,8 +805,12 @@ function openEvent(e: HistoryEvent) {
   image.removeAttribute("src");
   eventPanel.hidden = false;
   eventPanel.scrollTop = 0;
-  eventPicture(e).then((picture) => {
-    if (openedEvent !== e || !picture) return;
+  eventArticle(e).then((article) => {
+    if (openedEvent !== e || !article) return;
+    // Wikidata only gives a one-line description; the article's opening tells the story.
+    if (e.fromWikidata && article.extract) $("event-summary").textContent = article.extract;
+    const picture = article.picture;
+    if (!picture) return;
     image.onload = () => {
       if (openedEvent === e) figure.hidden = false;
     };
