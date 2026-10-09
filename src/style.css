@@ -911,6 +911,7 @@ a {
 .civ-card {
   --tint: #e2742f;
   position: relative;
+  isolation: isolate;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -995,23 +996,20 @@ a {
   display: none;
 }
 
+/* No positioning here: the card's link covers the whole card, picture included. */
 .civ-body {
-  position: relative;
   display: flex;
   flex-direction: column;
   gap: 3px;
   flex: 1;
   padding: 10px 14px 12px;
-  overflow: hidden;
 }
 
-.civ-body > :not(.civ-shape) {
-  position: relative;
-}
-
-/* The realm's outline, small in the bottom-right corner behind the text. */
+/* The realm's outline, small in the bottom-right corner behind the text.
+   The card isolates its stacking, so z-index -1 sits above its background. */
 .civ-shape {
   position: absolute;
+  z-index: -1;
   right: -6px;
   bottom: -6px;
   width: 92px;
