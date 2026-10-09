@@ -10,21 +10,24 @@ in a timeline that runs from 10,000 BCE to today.
   data: a freely licensed picture on top (a photo of a monument, artwork or
   place, else its coat of arms or flag; maps are skipped), then its era, dates
   and one or two key figures, with the realm's outline at its largest drawn
-  small in the corner. Search by name, filter by era, sort by size, age or name.
+  small in the corner. Search by name, filter by era, sort by age (oldest first
+  by default), size or name.
+- Every section on the landing page shows nine cards, then a "Show all …" card
+  that lists the rest (and folds them back).
 - Picking a card opens the globe on that civilization at its largest extent.
   It is coloured together with its related realms: the predecessors and
   successors Wikidata records, plus hand-picked families such as the Mongol
   khanates (`FAMILIES` in `scripts/build-civilizations.mjs`). Every other realm
   is grey; hovering one names it, clicking it makes it the highlighted one.
 - Two sections at the top of the landing page, each with a card for each of
-  the 183 present-day countries in the data (the largest first; search or show
-  all). Both are computed by `npm run countries` (`scripts/build-countries.mjs`).
+  the 183 present-day countries in the data (A to Z by default; search, or sort
+  by size, oldest civilization or number of civilizations). Both are computed by `npm run countries` (`scripts/build-countries.mjs`).
   - "Countries" is about the land: a card centres the globe (or map) on the
     country, outlines today's border dashed, and shows every civilization whose
     borders ever crossed it, meaning the overlap was at least 3% of the
     country's present land or 10% of the civilization's own. Links look like
     `#t=france`.
-  - "Nationalities" is about the nation: a card opens every civilization that
+  - "Nations" is about the nation: a card opens every civilization that
     led to the country, wherever it stood. A civilization belongs when it once
     covered at least a tenth of the country's present land, or when most of
     its own land lay inside it. France's lineage is hand-picked instead, to take

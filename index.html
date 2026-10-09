@@ -173,29 +173,49 @@
               <h2 id="territory-title" class="section-title">Countries</h2>
               <p class="section-sub">Today&rsquo;s countries, with every civilization whose borders ever crossed them.</p>
             </div>
-            <label class="search country-search">
-              <span class="visually-hidden">Search countries</span>
-              <input type="search" autocomplete="off" placeholder="Search countries" />
-            </label>
+            <div class="section-tools">
+              <label class="search country-search">
+                <span class="visually-hidden">Search countries</span>
+                <input type="search" autocomplete="off" placeholder="Search countries" />
+              </label>
+              <label class="sort">
+                <span class="visually-hidden">Sort countries</span>
+                <select>
+                  <option value="name" selected>A to Z</option>
+                  <option value="area">Largest first</option>
+                  <option value="oldest">Oldest first</option>
+                  <option value="most">Most civilizations</option>
+                </select>
+              </label>
+            </div>
           </div>
           <div class="country-grid"></div>
-          <button class="ghost country-more" type="button"></button>
         </section>
         <section class="countries" data-kind="nationality" aria-labelledby="nationality-title">
           <div class="section-head">
             <div>
-              <h2 id="nationality-title" class="section-title">Nationalities</h2>
+              <h2 id="nationality-title" class="section-title">Nations</h2>
               <p class="section-sub">Every civilization that led to a nation of today, wherever it stood.</p>
             </div>
-            <label class="search country-search">
-              <span class="visually-hidden">Search nationalities</span>
-              <input type="search" autocomplete="off" placeholder="Search nationalities" />
-            </label>
+            <div class="section-tools">
+              <label class="search country-search">
+                <span class="visually-hidden">Search nations</span>
+                <input type="search" autocomplete="off" placeholder="Search nations" />
+              </label>
+              <label class="sort">
+                <span class="visually-hidden">Sort nations</span>
+                <select>
+                  <option value="name" selected>A to Z</option>
+                  <option value="area">Largest first</option>
+                  <option value="oldest">Oldest first</option>
+                  <option value="most">Most civilizations</option>
+                </select>
+              </label>
+            </div>
           </div>
           <div class="country-grid"></div>
-          <button class="ghost country-more" type="button"></button>
         </section>
-        <h2 class="section-title">All civilizations</h2>
+        <h2 class="section-title">Civilizations</h2>
         <div class="filters">
           <label class="search">
             <span class="visually-hidden">Search</span>
@@ -204,8 +224,8 @@
           <label class="sort">
             <span class="visually-hidden">Sort</span>
             <select id="civ-sort">
-              <option value="area" selected>Largest first</option>
-              <option value="oldest">Oldest first</option>
+              <option value="oldest" selected>Oldest first</option>
+              <option value="area">Largest first</option>
               <option value="newest">Most recent first</option>
               <option value="name">A to Z</option>
             </select>

@@ -13,9 +13,11 @@ const SORTS: Record<Sort, (a: Civilization, b: Civilization) => number> = {
   name: (a, b) => a.name.localeCompare(b.name),
 };
 
+type CountrySort = "name" | "area" | "oldest" | "most";
+
 const nf = new Intl.NumberFormat("en");
-// Countries shown before "Show all", largest first.
-const COUNTRIES_SHOWN = 12;
+// Cards each section shows before the "Show all" card, which makes a tenth.
+const SHOWN = 9;
 
 function el<K extends keyof HTMLElementTagNameMap>(tag: K, className?: string, text?: string): HTMLElementTagNameMap[K] {
   const node = document.createElement(tag);
@@ -34,7 +36,9 @@ export class Landing {
   private observer: IntersectionObserver;
   private query = "";
   private era: Era | null = null;
-  private sort: Sort = "area";
+  private sort: Sort = "oldest";
+  /** Whether the civilizations section shows every match. */
+  private all = false;
   private multi = false;
   /** Ticked civilizations, in the order they were ticked. */
   private selected: Civilization[] = [];
@@ -52,10 +56,12 @@ export class Landing {
     search.placeholder = `Search ${nf.format(list.length)} civilizations`;
     search.addEventListener("input", () => {
       this.query = search.value.trim().toLowerCase();
+      this.all = false;
       this.render();
     });
 
     const sort = root.querySelector<HTMLSelectElement>("#civ-sort")!;
+    sort.value = this.sort;
     sort.addEventListener("change", () => {
       this.sort = sort.value as Sort;
       this.render();
@@ -68,6 +74,7 @@ export class Landing {
       button.setAttribute("aria-pressed", String(era === this.era));
       button.addEventListener("click", () => {
         this.era = era;
+        this.all = false;
         for (const b of eras.querySelectorAll("button")) b.setAttribute("aria-pressed", String(b === button));
         this.render();
       });
@@ -96,45 +103,83 @@ export class Landing {
     this.render();
   }
 
-  /** A countries section: the largest few, or every match while searching. */
+  /** A countries or nations section: the first few, then a card to show the rest. */
   private setupCountries(view: CountryView, countries: Country[], onCountry?: (country: Country, view: CountryView) => void) {
     const section = this.root.querySelector<HTMLElement>(`.countries[data-kind="${view}"]`)!;
     section.hidden = !countries.length;
     if (!countries.length) return;
     const grid = section.querySelector<HTMLElement>(".country-grid")!;
     const search = section.querySelector<HTMLInputElement>("input")!;
-    const more = section.querySelector<HTMLButtonElement>(".country-more")!;
-    const noun = view === "territory" ? "countries" : "nationalities";
+    const sort = section.querySelector<HTMLSelectElement>("select")!;
+    const noun = view === "territory" ? "Countries" : "Nations";
     const byId = new Map(this.list.map((c) => [c.id, c]));
-    const cards = countries.map((country) => ({ country, card: this.countryCard(country, view, byId, onCountry) }));
+    const cards = countries.map((country) => {
+      const civs = countryCivIds(country, view)
+        .map((id) => byId.get(id))
+        .filter((c): c is Civilization => !!c);
+      const from = civs.length ? Math.min(...civs.map((c) => c.from)) : 0;
+      return { country, civs: civs.length, from, card: this.countryCard(country, view, civs, from, byId, onCountry) };
+    });
+    type Entry = (typeof cards)[number];
+    const sorts: Record<CountrySort, (a: Entry, b: Entry) => number> = {
+      name: (a, b) => a.country.name.localeCompare(b.country.name),
+      area: (a, b) => b.country.area - a.country.area,
+      oldest: (a, b) => a.from - b.from || a.country.name.localeCompare(b.country.name),
+      most: (a, b) => b.civs - a.civs || a.country.name.localeCompare(b.country.name),
+    };
     let all = false;
     const show = () => {
       const query = search.value.trim().toLowerCase();
-      const matches = cards.filter(({ country }) => !query || country.name.toLowerCase().includes(query));
-      const shown = all || query ? matches : matches.slice(0, COUNTRIES_SHOWN);
-      grid.replaceChildren(...shown.map((c) => c.card));
-      more.hidden = !!query || matches.length <= COUNTRIES_SHOWN;
-      more.textContent = all ? `Show fewer ${noun}` : `Show all ${nf.format(cards.length)} ${noun}`;
-      if (query && !matches.length) grid.replaceChildren(el("p", "country-meta", "No country matches."));
+      const matches = cards
+        .filter(({ country }) => !query || country.name.toLowerCase().includes(query))
+        .sort(sorts[sort.value as CountrySort] ?? sorts.name);
+      const toggle = () => {
+        all = !all;
+        show();
+      };
+      grid.replaceChildren(...this.limited(matches.map((c) => c.card), matches.length, all, noun, "country-card", toggle));
+      if (query && !matches.length) grid.replaceChildren(el("p", "country-meta", `No ${noun.toLowerCase()} match.`));
     };
-    search.addEventListener("input", show);
-    more.addEventListener("click", () => {
-      all = !all;
+    search.addEventListener("input", () => {
+      all = false;
       show();
     });
+    sort.addEventListener("change", show);
     show();
+  }
+
+  /**
+   * The first few cards and a last card that shows the rest ("Show all …"),
+   * or every card and a last card that folds them back. `total` counts every
+   * match; `cards` may hold only the ones shown.
+   */
+  private limited(cards: HTMLElement[], total: number, all: boolean, noun: string, kind: string, toggle: () => void): HTMLElement[] {
+    if (total <= SHOWN + 1) return cards.slice(0, total);
+    const more = el("button", `${kind} more-card`);
+    more.type = "button";
+    more.setAttribute("aria-expanded", String(all));
+    more.append(
+      el("span", "more-title", all ? "Show fewer" : `Show all ${noun}`),
+      el("span", "more-count", all ? `Back to the first ${SHOWN}` : `${nf.format(total)} in all`),
+    );
+    more.addEventListener("click", () => {
+      const section = more.parentElement;
+      toggle();
+      // Folding back would leave the reader far below the section.
+      if (all) section?.scrollIntoView({ block: "nearest" });
+    });
+    return [...(all ? cards : cards.slice(0, SHOWN)), more];
   }
 
   private countryCard(
     country: Country,
     view: CountryView,
+    civs: Civilization[],
+    from: number,
     byId: Map<string, Civilization>,
     onCountry?: (country: Country, view: CountryView) => void,
   ): HTMLElement {
     const card = el("article", "country-card");
-    const civs = countryCivIds(country, view)
-      .map((id) => byId.get(id))
-      .filter((c): c is Civilization => !!c);
     const today = byId.get(country.civ);
     const shape = el("div");
     if (today) {
@@ -149,7 +194,6 @@ export class Landing {
       onCountry?.(country, view);
     });
     title.append(link);
-    const from = civs.length ? Math.min(...civs.map((c) => c.from)) : 0;
     body.append(title, el("p", "country-meta", `${civs.length} civilizations since ${formatYear(from)}`));
     if (country.blurb && view === "nationality") card.title = country.blurb;
     card.append(shape, body);
@@ -211,7 +255,14 @@ export class Landing {
   private render() {
     const shown = this.list.filter((c) => this.matches(c)).sort(SORTS[this.sort]);
     const grid = this.root.querySelector<HTMLElement>("#civ-grid")!;
-    grid.replaceChildren(...shown.map((c) => this.card(c)));
+    // Cards are built only when shown: every picture is a download.
+    const cards = (this.all || shown.length <= SHOWN + 1 ? shown : shown.slice(0, SHOWN)).map((c) => this.card(c));
+    grid.replaceChildren(
+      ...this.limited(cards, shown.length, this.all, "Civilizations", "civ-card", () => {
+        this.all = !this.all;
+        this.render();
+      }),
+    );
     const count = this.root.querySelector<HTMLElement>("#civ-count")!;
     count.textContent =
       shown.length === this.list.length
