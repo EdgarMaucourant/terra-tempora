@@ -1,5 +1,6 @@
 import { civEraText, civEras, eraLabel, shapePath, type Civilization } from "./civilizations";
 import { ERAS, type Era } from "./eras";
+import type { Country } from "./countries";
 import { realmFacts, type RealmFacts } from "./wikidata";
 import { formatRange } from "./years";
 
@@ -40,6 +41,8 @@ export class Landing {
     private root: HTMLElement,
     private list: Civilization[],
     private onOpen: (civs: Civilization[]) => void,
+    countries: { country: Country; civs: Civilization[] }[] = [],
+    onCountry?: (country: Country) => void,
   ) {
     this.observer = new IntersectionObserver((entries) => this.reveal(entries), { root, rootMargin: "600px 0px" });
 
@@ -86,7 +89,40 @@ export class Landing {
       this.onOpen(picked);
     });
 
+    const countryGrid = root.querySelector<HTMLElement>("#country-grid");
+    countryGrid?.replaceChildren(...countries.map(({ country, civs }) => this.countryCard(country, civs, onCountry)));
+    root.querySelector<HTMLElement>(".countries")!.hidden = !countries.length;
+
     this.render();
+  }
+
+  private countryCard(country: Country, civs: Civilization[], onCountry?: (country: Country) => void): HTMLElement {
+    const card = el("article", "country-card");
+    const flag = el("div", "country-flag");
+    flag.setAttribute("aria-hidden", "true");
+    for (const colour of country.flag) {
+      const stripe = el("span");
+      stripe.style.background = colour;
+      flag.append(stripe);
+    }
+    const body = el("div");
+    const title = el("h3");
+    const link = el("a", "country-link", country.name);
+    link.href = `#k=${country.id}`;
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      onCountry?.(country);
+    });
+    title.append(link);
+    const from = Math.min(...civs.map((c) => c.from));
+    const to = Math.max(...civs.map((c) => c.to));
+    body.append(
+      title,
+      el("p", "country-meta", `${civs.length} civilizations · ${formatRange(from, to)}`),
+      el("p", "country-blurb", country.blurb),
+    );
+    card.append(flag, body);
+    return card;
   }
 
   /** Turns multi mode on or off; turning it off clears the ticks. */

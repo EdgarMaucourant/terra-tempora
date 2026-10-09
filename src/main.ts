@@ -15,6 +15,7 @@ import "cesium/Build/Cesium/Widgets/CesiumWidget/CesiumWidget.css";
 import "./style.css";
 import { civEraText, Civilizations, type Civilization } from "./civilizations";
 import { highlightColors } from "./colors";
+import { COUNTRIES, type Country } from "./countries";
 import { BorderData, type Polity } from "./data";
 import { eraAt, ERAS, NOW } from "./eras";
 import { Landing } from "./landing";
@@ -112,12 +113,16 @@ let playing = false;
 let active: Civilization | undefined;
 let highlighted: Civilization[] = [];
 let expanded = true;
+/** The country whose lineage is shown, when the view was opened from a country card. */
+let country: Country | null = null;
 let colors = new Map<string, string>();
 
 // Links: #c=mongol-empire&y=1241 opens a civilization on a year, with its
 // related realms; #c=a,b,c&m=1 opens exactly those civilizations. An empty hash
 // opens the landing page. #y1241 (and #y-500 for 500 BCE) still work.
 interface Route {
+  /** A country's lineage, by country id. */
+  country?: string;
   civs?: string[];
   /** Exactly these civilizations, without their related realms. */
   multi?: boolean;
@@ -131,6 +136,7 @@ function readHash(): Route {
   const y = params.get("y");
   const ids = params.get("c")?.split(",").filter(Boolean);
   return {
+    country: params.get("k") ?? undefined,
     civs: ids?.length ? ids : undefined,
     multi: params.get("m") === "1" || (ids?.length ?? 0) > 1,
     year: y && /^-?\d{1,5}$/.test(y) ? Number(y) : undefined,
@@ -138,6 +144,7 @@ function readHash(): Route {
 }
 
 function hashFor(route: Route): string {
+  if (route.country) return `#k=${route.country}${route.year !== undefined ? `&y=${Math.round(route.year)}` : ""}`;
   if (!route.civs?.length) return location.pathname + location.search;
   const multi = route.multi && route.civs.length === 1 ? "&m=1" : "";
   return `#c=${route.civs.join(",")}${multi}${route.year !== undefined ? `&y=${Math.round(route.year)}` : ""}`;
@@ -153,6 +160,7 @@ function go(route: Route, push: boolean) {
 }
 
 function currentRoute(): Route {
+  if (country) return { country: country.id, year };
   return expanded && active
     ? { civs: [active.id], year }
     : { civs: highlighted.map((c) => c.id), multi: true, year };
@@ -652,7 +660,9 @@ function showHighlight() {
     before: neighbours.get(c.id)?.before.map(toLink),
     after: neighbours.get(c.id)?.after.map(toLink),
   }));
-  const label = !expanded
+  const label = country
+    ? `Civilizations that led to ${country.name}`
+    : !expanded
     ? `${highlighted.length} civilizations`
     : highlighted.length > 1
       ? `${active.name} and related realms`
@@ -678,10 +688,11 @@ function showMasthead() {
   const list = chosen();
   const from = Math.min(...list.map((c) => c.from));
   const to = Math.max(...list.map((c) => c.to));
-  const title = viewTitle(list);
+  const title = country ? country.name : viewTitle(list);
   $("civ-title").textContent = title;
-  $("civ-sub").textContent =
-    list.length === 1
+  $("civ-sub").textContent = country
+    ? `${list.length} civilizations that led to ${country.name} · ${formatRange(from, to)}`
+    : list.length === 1
       ? `${formatRange(from, to)} · ${civEraText(list[0])}`
       : `${list.length} civilizations · ${formatRange(from, to)}`;
   $("view-focus").setAttribute("aria-label", `Show the years of ${title}`);
@@ -692,7 +703,8 @@ function showMasthead() {
 function openCiv(c: Civilization, options: OpenOptions = {}) {
   if (!civs) return;
   const list = civs;
-  const switching = active !== c || !expanded;
+  const switching = active !== c || !expanded || !!country;
+  country = null;
   active = c;
   expanded = true;
   landingEl.hidden = true;
@@ -735,6 +747,8 @@ interface ViewOptions {
   push?: boolean;
   /** Move the camera to the first civilization (default true). */
   fly?: boolean;
+  /** The country whose lineage this is. */
+  country?: Country;
 }
 
 /** Shows exactly these civilizations on the globe, each in its own colour. */
@@ -743,6 +757,7 @@ function openView(list: Civilization[], options: ViewOptions = {}) {
   if (!unique.length) return;
   active = unique[0];
   expanded = false;
+  country = options.country ?? null;
   highlighted = unique;
   landingEl.hidden = true;
   showMasthead();
@@ -769,6 +784,17 @@ function applyPicked(list: Civilization[]) {
   flyToCiv(fresh[0]);
 }
 
+/** Shows every civilization that led to a country, on the year the country picks. */
+function openCountry(k: Country, options: { year?: number; push?: boolean } = {}) {
+  if (!civs) return;
+  const known = civs;
+  const list = k.lineage.map((id) => known.get(id)).filter((c): c is Civilization => !!c);
+  if (!list.length) return;
+  openView(list, { year: options.year ?? k.startYear, push: options.push, fly: false, country: k });
+  const focus = known.get(k.focus);
+  if (focus) flyToCiv(focus);
+}
+
 function showLanding() {
   if (playing) setPlaying(false);
   info.hidden = true;
@@ -783,6 +809,8 @@ function route() {
   if (!civs) return;
   const list = civs;
   const r = readHash();
+  const k = r.country ? COUNTRIES.find((c) => c.id === r.country) : undefined;
+  if (k) return openCountry(k, { year: r.year });
   const found = (r.civs ?? []).map((id) => list.get(id)).filter((c): c is Civilization => !!c);
   if (!found.length) showLanding();
   else if (!r.multi) openCiv(found[0], { year: r.year });
@@ -806,8 +834,15 @@ Promise.all([Civilizations.load(base), BorderData.open(base)])
     civs = list;
     data = borders;
     statusEl.textContent = "";
-    landing = new Landing(landingEl, list.list, (picked) =>
-      picked.length === 1 ? openCiv(picked[0], { push: true }) : openView(picked, { push: true }),
+    landing = new Landing(
+      landingEl,
+      list.list,
+      (picked) => (picked.length === 1 ? openCiv(picked[0], { push: true }) : openView(picked, { push: true })),
+      COUNTRIES.map((k) => ({
+        country: k,
+        civs: k.lineage.map((id) => list.get(id)).filter((c): c is Civilization => !!c),
+      })),
+      (k) => openCountry(k, { push: true }),
     );
     const picker = new Picker($("picker"), list.list, applyPicked);
     $("add-civs").addEventListener("click", () => picker.open(new Set(highlighted)));
