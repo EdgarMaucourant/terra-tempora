@@ -15,7 +15,7 @@ import "cesium/Build/Cesium/Widgets/CesiumWidget/CesiumWidget.css";
 import "./style.css";
 import { civEraText, Civilizations, type Civilization } from "./civilizations";
 import { highlightColors } from "./colors";
-import { loadCountries, type Country } from "./countries";
+import { countryCivIds, loadCountries, type Country, type CountryView } from "./countries";
 import { BorderData, type Polity } from "./data";
 import { eraAt, ERAS, NOW } from "./eras";
 import { Landing } from "./landing";
@@ -115,6 +115,8 @@ let highlighted: Civilization[] = [];
 let expanded = true;
 /** The country whose lineage is shown, when the view was opened from a country card. */
 let country: Country | null = null;
+/** Whether the country is shown as a nation (its lineage) or as land (all that crossed it). */
+let countryView: CountryView = "nationality";
 let countries: Country[] = [];
 let colors = new Map<string, string>();
 
@@ -122,8 +124,9 @@ let colors = new Map<string, string>();
 // related realms; #c=a,b,c&m=1 opens exactly those civilizations. An empty hash
 // opens the landing page. #y1241 (and #y-500 for 500 BCE) still work.
 interface Route {
-  /** A country's lineage, by country id. */
+  /** A country, by id: its lineage (#k=) or its territory (#t=). */
   country?: string;
+  view?: CountryView;
   civs?: string[];
   /** Exactly these civilizations, without their related realms. */
   multi?: boolean;
@@ -137,7 +140,8 @@ function readHash(): Route {
   const y = params.get("y");
   const ids = params.get("c")?.split(",").filter(Boolean);
   return {
-    country: params.get("k") ?? undefined,
+    country: params.get("t") ?? params.get("k") ?? undefined,
+    view: params.has("t") ? "territory" : "nationality",
     civs: ids?.length ? ids : undefined,
     multi: params.get("m") === "1" || (ids?.length ?? 0) > 1,
     year: y && /^-?\d{1,5}$/.test(y) ? Number(y) : undefined,
@@ -145,7 +149,8 @@ function readHash(): Route {
 }
 
 function hashFor(route: Route): string {
-  if (route.country) return `#k=${route.country}${route.year !== undefined ? `&y=${Math.round(route.year)}` : ""}`;
+  if (route.country)
+    return `#${route.view === "territory" ? "t" : "k"}=${route.country}${route.year !== undefined ? `&y=${Math.round(route.year)}` : ""}`;
   if (!route.civs?.length) return location.pathname + location.search;
   const multi = route.multi && route.civs.length === 1 ? "&m=1" : "";
   return `#c=${route.civs.join(",")}${multi}${route.year !== undefined ? `&y=${Math.round(route.year)}` : ""}`;
@@ -161,7 +166,7 @@ function go(route: Route, push: boolean) {
 }
 
 function currentRoute(): Route {
-  if (country) return { country: country.id, year };
+  if (country) return { country: country.id, view: countryView, year };
   return expanded && active
     ? { civs: [active.id], year }
     : { civs: highlighted.map((c) => c.id), multi: true, year };
@@ -662,7 +667,9 @@ function showHighlight() {
     after: neighbours.get(c.id)?.after.map(toLink),
   }));
   const label = country
-    ? `Civilizations that led to ${country.name}`
+    ? countryView === "territory"
+      ? `Within today's ${country.name}`
+      : `Civilizations that led to ${country.name}`
     : !expanded
     ? `${highlighted.length} civilizations`
     : highlighted.length > 1
@@ -692,7 +699,9 @@ function showMasthead() {
   const title = country ? country.name : viewTitle(list);
   $("civ-title").textContent = title;
   $("civ-sub").textContent = country
-    ? `${list.length} civilizations that led to ${country.name} · ${formatRange(from, to)}`
+    ? countryView === "territory"
+      ? `${list.length} civilizations whose borders crossed today's ${country.name} · ${formatRange(from, to)}`
+      : `${list.length} civilizations that led to ${country.name} · ${formatRange(from, to)}`
     : list.length === 1
       ? `${formatRange(from, to)} · ${civEraText(list[0])}`
       : `${list.length} civilizations · ${formatRange(from, to)}`;
@@ -706,6 +715,7 @@ function openCiv(c: Civilization, options: OpenOptions = {}) {
   const list = civs;
   const switching = active !== c || !expanded || !!country;
   country = null;
+  showOutline(null);
   active = c;
   expanded = true;
   landingEl.hidden = true;
@@ -748,8 +758,9 @@ interface ViewOptions {
   push?: boolean;
   /** Move the camera to the first civilization (default true). */
   fly?: boolean;
-  /** The country whose lineage this is. */
+  /** The country whose lineage or territory this is. */
   country?: Country;
+  countryView?: CountryView;
 }
 
 /** Shows exactly these civilizations on the globe, each in its own colour. */
@@ -759,6 +770,8 @@ function openView(list: Civilization[], options: ViewOptions = {}) {
   active = unique[0];
   expanded = false;
   country = options.country ?? null;
+  countryView = options.countryView ?? "nationality";
+  showOutline(country && countryView === "territory" ? country : null);
   highlighted = unique;
   landingEl.hidden = true;
   showMasthead();
@@ -785,15 +798,58 @@ function applyPicked(list: Civilization[]) {
   flyToCiv(fresh[0]);
 }
 
-/** Shows every civilization that led to a country, on the year the country picks. */
-function openCountry(k: Country, options: { year?: number; push?: boolean } = {}) {
+/** Points the camera at a place, framing an area of so many km². */
+function flyToPlace([lon, lat]: [number, number], area: number) {
+  if (map.active) return map.focus(lon, lat, area);
+  widget.camera.flyTo({
+    destination: Cartesian3.fromDegrees(lon, lat - (narrow ? 6 : 0), altitudeFor(area)),
+    orientation: orientation(),
+    duration: 1.4,
+  });
+}
+
+/** Outlines a country's present border on the globe and map, or clears it. */
+let outlineFor: Country | null = null;
+function showOutline(k: Country | null) {
+  outlineFor = k;
+  layer.setOutline(null);
+  map.setOutline(null);
+  const modern = k && civs?.get(k.civ);
+  if (!k || !modern || !data) return;
+  const names = new Set(modern.names);
+  const last = data.to;
+  data
+    .load(last, last)
+    .then((shapes) => {
+      if (outlineFor !== k) return;
+      // Cliopatria writes overseas parts as "(Name)"; leave those out.
+      const rings = shapes
+        .filter((p) => p.to >= last && names.has(p.name) && !p.name.startsWith("("))
+        .flatMap((p) => p.rings);
+      layer.setOutline(rings);
+      map.setOutline(rings);
+    })
+    .catch((error: unknown) => console.error(error));
+}
+
+/**
+ * Shows a country: as a nationality, every civilization that led to it; as a
+ * territory, every civilization whose borders crossed its present land.
+ */
+function openCountry(k: Country, view: CountryView, options: { year?: number; push?: boolean } = {}) {
   if (!civs) return;
   const known = civs;
-  const list = k.lineage.map((id) => known.get(id)).filter((c): c is Civilization => !!c);
+  const list = countryCivIds(k, view)
+    .map((id) => known.get(id))
+    .filter((c): c is Civilization => !!c);
   if (!list.length) return;
-  openView(list, { year: options.year ?? k.startYear, push: options.push, fly: false, country: k });
-  const focus = known.get(k.focus);
+  const start = view === "territory" ? k.territoryYear : k.startYear;
+  openView(list, { year: options.year ?? start, push: options.push, fly: false, country: k, countryView: view });
+  // A territory is about the land, so it sits in the middle; a hand-picked
+  // lineage centres on the realm it is built around.
+  const focus = view === "nationality" && k.blurb ? known.get(k.focus) : undefined;
   if (focus) flyToCiv(focus);
+  else flyToPlace(k.centre, k.area);
 }
 
 function showLanding() {
@@ -811,7 +867,7 @@ function route() {
   const list = civs;
   const r = readHash();
   const k = r.country ? countries.find((c) => c.id === r.country) : undefined;
-  if (k) return openCountry(k, { year: r.year });
+  if (k) return openCountry(k, r.view ?? "nationality", { year: r.year });
   const found = (r.civs ?? []).map((id) => list.get(id)).filter((c): c is Civilization => !!c);
   if (!found.length) showLanding();
   else if (!r.multi) openCiv(found[0], { year: r.year });
@@ -845,11 +901,8 @@ Promise.all([
       landingEl,
       list.list,
       (picked) => (picked.length === 1 ? openCiv(picked[0], { push: true }) : openView(picked, { push: true })),
-      countries.map((k) => ({
-        country: k,
-        civs: k.lineage.map((id) => list.get(id)).filter((c): c is Civilization => !!c),
-      })),
-      (k) => openCountry(k, { push: true }),
+      countries,
+      (k, view) => openCountry(k, view, { push: true }),
     );
     const picker = new Picker($("picker"), list.list, applyPicked);
     $("add-civs").addEventListener("click", () => picker.open(new Set(highlighted)));

@@ -16,14 +16,20 @@ in a timeline that runs from 10,000 BCE to today.
   successors Wikidata records, plus hand-picked families such as the Mongol
   khanates (`FAMILIES` in `scripts/build-civilizations.mjs`). Every other realm
   is grey; hovering one names it, clicking it makes it the highlighted one.
-- A "Countries" section at the top of the landing page, with a card for each of
+- Two sections at the top of the landing page, each with a card for each of
   the 183 present-day countries in the data (the largest first; search or show
-  all). A card opens every civilization that led to that country. The
-  lineages are computed by `npm run countries` (`scripts/build-countries.mjs`):
-  a civilization belongs when it once covered at least a tenth of the country's
-  present land, or when most of its own land lay inside it. France's lineage is
-  hand-picked instead, to take in Rome from its start in Italy and the Franks
-  from beyond the Rhine. Links look like `#k=france&y=470`.
+  all). Both are computed by `npm run countries` (`scripts/build-countries.mjs`).
+  - "Countries" is about the land: a card centres the globe (or map) on the
+    country, outlines today's border dashed, and shows every civilization whose
+    borders ever crossed it, meaning the overlap was at least 3% of the
+    country's present land or 10% of the civilization's own. Links look like
+    `#t=france`.
+  - "Nationalities" is about the nation: a card opens every civilization that
+    led to the country, wherever it stood. A civilization belongs when it once
+    covered at least a tenth of the country's present land, or when most of
+    its own land lay inside it. France's lineage is hand-picked instead, to take
+    in Rome from its start in Italy and the Franks from beyond the Rhine. Links
+    look like `#k=france&y=470`.
 - When many civilizations share the timeline, the lanes scroll.
 - "Select several" on the landing page ticks cards instead of opening them;
   "Show on the globe" then highlights exactly the ticked civilizations, each in

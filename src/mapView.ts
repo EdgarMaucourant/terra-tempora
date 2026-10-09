@@ -74,6 +74,8 @@ export class MapView {
   private landLoading: Promise<void> | null = null;
   private highlight = new Map<string, string>();
   private hovered: string | null = null;
+  /** Today's border of the country being looked at, drawn dashed over everything. */
+  private outline: Shape | null = null;
   showContext = true;
 
   private choice = PROJECTIONS[0];
@@ -116,6 +118,12 @@ export class MapView {
 
   add(polities: Polity[]) {
     for (const p of polities) if (!this.polities.has(p.id)) this.polities.set(p.id, p);
+  }
+
+  /** Draws these rings as a dashed border on top of the realms, or none. */
+  setOutline(rings: number[][] | null) {
+    this.outline = rings?.length ? toFeature({ rings } as Polity) : null;
+    this.draw();
   }
 
   setHighlight(colors: Map<string, string>) {
@@ -337,6 +345,20 @@ export class MapView {
       ctx.stroke();
       ctx.globalAlpha = 1;
       if (opacity > 0.5) this.drawn.push({ p, shape });
+    }
+
+    // Today's border of the country being looked at.
+    if (this.outline) {
+      ctx.beginPath();
+      path(this.outline);
+      ctx.setLineDash([6, 4]);
+      ctx.strokeStyle = "rgba(0, 0, 0, 0.55)";
+      ctx.lineWidth = 3.5;
+      ctx.stroke();
+      ctx.strokeStyle = "#ffffff";
+      ctx.lineWidth = 1.8;
+      ctx.stroke();
+      ctx.setLineDash([]);
     }
 
     // The world's edge.

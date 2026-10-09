@@ -12,10 +12,23 @@ export interface Country {
   startYear: number;
   /** Civilization the globe centres on when the country opens. */
   focus: string;
+  /** [longitude, latitude] of the middle of the country's present land. */
+  centre: [number, number];
   /** Present-day land, in km². */
   area: number;
-  /** Civilization ids, oldest first. */
+  /** Civilizations that led to the nation, oldest first. */
   lineage: string[];
+  /** Civilizations whose borders crossed the country's present land, oldest first. */
+  territory: string[];
+  /** Year the territory view opens on. */
+  territoryYear: number;
+}
+
+/** A country seen as a nation (its lineage) or as land (everything that crossed it). */
+export type CountryView = "nationality" | "territory";
+
+export function countryCivIds(country: Country, view: CountryView): string[] {
+  return view === "territory" ? country.territory : country.lineage;
 }
 
 export async function loadCountries(base: string): Promise<Country[]> {

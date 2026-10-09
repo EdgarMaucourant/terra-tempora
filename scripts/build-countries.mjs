@@ -19,6 +19,12 @@ const MIN_SHARE_OF_COUNTRY = 0.1;
 const MIN_SHARE_OF_CIV = 0.6;
 const MIN_CIV_TO_COUNTRY = 0.01;
 const MAX_LINEAGE = 60;
+// For a country's territory: a civilization whose borders crossed it. Borders
+// drawn by different hands overlap a little along shared edges, so a crossing
+// counts when it is more than such a sliver: this share of the country's land,
+// or this share of the civilization's own.
+const MIN_CROSSING_OF_COUNTRY = 0.03;
+const MIN_CROSSING_OF_CIV = 0.1;
 
 // Realms standing in the last year that are not countries.
 const NOT_COUNTRIES = new Set([
@@ -214,7 +220,7 @@ const area = (cells) => {
 
 // Every cell each civilization ever held, and each country's cells today.
 const held = new Map();
-const today = new Map();
+const todayRings = new Map();
 const lastYear = index.to;
 for (const w of index.windows) {
   for (const shape of JSON.parse(readFileSync(`public/data/${w.file}`, "utf8"))) {
@@ -226,11 +232,43 @@ for (const w of index.windows) {
     for (const ring of rings) fillRing(ring, cells);
     // Today's land: the realm's own name, not its "(overseas)" parts.
     if (shape.to >= lastYear && !shape.name.startsWith("(")) {
-      let now = today.get(civ.id);
-      if (!now) today.set(civ.id, (now = new Set()));
-      for (const ring of rings) fillRing(ring, now);
+      if (!todayRings.has(civ.id)) todayRings.set(civ.id, []);
+      todayRings.get(civ.id).push(...rings);
     }
   }
+}
+
+// A country's land is its main body: parts far from the largest one (French
+// Guiana, Hawaii) are left out unless they are large themselves.
+const FAR_KM = 2500;
+const LARGE_PART = 0.25;
+function ringStats(ring) {
+  let a = 0;
+  let cx = 0;
+  let cy = 0;
+  for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+    const cross = ring[j][0] * ring[i][1] - ring[i][0] * ring[j][1];
+    a += cross;
+    cx += (ring[j][0] + ring[i][0]) * cross;
+    cy += (ring[j][1] + ring[i][1]) * cross;
+  }
+  const area = Math.abs(a / 2) * Math.cos((ring[0][1] * Math.PI) / 180);
+  return a ? { area, x: cx / (3 * a), y: cy / (3 * a) } : { area: 0, x: ring[0][0], y: ring[0][1] };
+}
+function kmBetween(a, b) {
+  const r = Math.PI / 180;
+  const cos = Math.sin(a.y * r) * Math.sin(b.y * r) + Math.cos(a.y * r) * Math.cos(b.y * r) * Math.cos((a.x - b.x) * r);
+  return Math.acos(Math.min(1, Math.max(-1, cos))) * 6371;
+}
+const today = new Map();
+for (const [id, rings] of todayRings) {
+  const stats = rings.map(ringStats);
+  const main = stats.reduce((best, s) => (s.area > best.area ? s : best), stats[0]);
+  const cells = new Set();
+  rings.forEach((ring, i) => {
+    if (stats[i].area >= main.area * LARGE_PART || kmBetween(stats[i], main) <= FAR_KM) fillRing(ring, cells);
+  });
+  today.set(id, cells);
 }
 
 const heldArea = new Map([...held].map(([id, cells]) => [id, area(cells)]));
@@ -258,6 +296,37 @@ for (const [id, land] of today) {
   const landArea = area(land);
   if (!landArea) continue;
   const curated = CURATED[id];
+
+  // Every civilization whose borders crossed the country's present land.
+  const crossing = [];
+  for (const [other, cells] of held) {
+    if (NOT_COUNTRIES.has(other)) continue;
+    let shared = 0;
+    for (const cell of cells) if (land.has(cell)) shared += weight[Math.floor(cell / COLS)];
+    if (!shared) continue;
+    if (other === id || shared / landArea >= MIN_CROSSING_OF_COUNTRY || shared / heldArea.get(other) >= MIN_CROSSING_OF_CIV) {
+      crossing.push(byId.get(other));
+    }
+  }
+  crossing.sort((a, b) => a.from - b.from || a.to - b.to);
+
+  // The middle of the country's land, averaged on the sphere.
+  let x = 0;
+  let y = 0;
+  let z = 0;
+  for (const cell of land) {
+    const lat = ((90 - (Math.floor(cell / COLS) + 0.5) * CELL) * Math.PI) / 180;
+    const lon = ((((cell % COLS) + 0.5) * CELL - 180) * Math.PI) / 180;
+    const w = Math.cos(lat);
+    x += w * Math.cos(lat) * Math.cos(lon);
+    y += w * Math.cos(lat) * Math.sin(lon);
+    z += w * Math.sin(lat);
+  }
+  const centre = [
+    Math.round(((Math.atan2(y, x) * 180) / Math.PI) * 100) / 100,
+    Math.round(((Math.atan2(z, Math.hypot(x, y)) * 180) / Math.PI) * 100) / 100,
+  ];
+
   let lineage;
   if (curated) lineage = curated.lineage.filter((l) => byId.has(l));
   else {
@@ -290,12 +359,15 @@ for (const [id, land] of today) {
     blurb: curated?.blurb ?? null,
     startYear: curated?.startYear ?? busiestYear(list),
     focus: curated?.focus ?? id,
+    centre,
     area: Math.round(landArea * (CELL * 111.32) ** 2),
     lineage: curated ? lineage : list.map((c) => c.id),
+    territoryYear: busiestYear(crossing),
+    territory: crossing.map((c) => c.id),
   });
 }
 countries.sort((a, b) => b.area - a.area);
 
 writeFileSync("public/data/countries.json", JSON.stringify({ countries }));
 console.log(`${countries.length} countries`);
-for (const c of countries.slice(0, 12)) console.log(`${c.name}: ${c.lineage.length}`);
+for (const c of countries.slice(0, 12)) console.log(`${c.name}: ${c.lineage.length} lineage, ${c.territory.length} territory`);

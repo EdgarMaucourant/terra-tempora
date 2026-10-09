@@ -82,6 +82,8 @@ export class PolityLayer {
   private highlight = new Map<string, string>();
   /** Name of the greyed realm under the pointer. */
   private hovered: string | null = null;
+  /** Today's border of the country being looked at. */
+  private outline: Primitive | null = null;
   showContext = true;
 
   constructor(private scene: Scene) {
@@ -111,6 +113,39 @@ export class PolityLayer {
   }
 
   /** Colours the given realms and greys out the rest. */
+  /** Draws these rings as a dashed white border above every realm, or none. */
+  setOutline(rings: number[][] | null) {
+    if (this.outline) this.scene.primitives.remove(this.outline);
+    this.outline = null;
+    if (!rings?.length) return;
+    const height = FEATURED_HEIGHT + 3000;
+    this.outline = this.scene.primitives.add(
+      new Primitive({
+        geometryInstances: rings.map((ring) => {
+          const positions: number[] = [];
+          for (let i = 0; i < ring.length; i += 2) positions.push(ring[i], ring[i + 1], height);
+          positions.push(ring[0], ring[1], height);
+          return new GeometryInstance({
+            geometry: new PolylineGeometry({
+              positions: Cartesian3.fromDegreesArrayHeights(positions),
+              width: 2.5,
+              arcType: ArcType.GEODESIC,
+              vertexFormat: PolylineMaterialAppearance.VERTEX_FORMAT,
+            }),
+          });
+        }),
+        appearance: new PolylineMaterialAppearance({
+          material: Material.fromType("PolylineDash", {
+            color: Color.WHITE,
+            gapColor: Color.BLACK.withAlpha(0.35),
+            dashLength: 14,
+          }),
+        }),
+        asynchronous: true,
+      }),
+    ) as Primitive;
+  }
+
   setHighlight(colors: Map<string, string>) {
     const changed = new Set<string>();
     for (const [name, color] of colors) if (this.highlight.get(name) !== color) changed.add(name);

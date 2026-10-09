@@ -1,6 +1,6 @@
 import { civEraText, civEras, eraLabel, shapePath, type Civilization } from "./civilizations";
 import { ERAS, type Era } from "./eras";
-import type { Country } from "./countries";
+import { countryCivIds, type Country, type CountryView } from "./countries";
 import { realmFacts, type RealmFacts } from "./wikidata";
 import { formatRange, formatYear } from "./years";
 
@@ -43,8 +43,8 @@ export class Landing {
     private root: HTMLElement,
     private list: Civilization[],
     private onOpen: (civs: Civilization[]) => void,
-    countries: { country: Country; civs: Civilization[] }[] = [],
-    onCountry?: (country: Country) => void,
+    countries: Country[] = [],
+    onCountry?: (country: Country, view: CountryView) => void,
   ) {
     this.observer = new IntersectionObserver((entries) => this.reveal(entries), { root, rootMargin: "600px 0px" });
 
@@ -91,20 +91,22 @@ export class Landing {
       this.onOpen(picked);
     });
 
-    this.setupCountries(countries, onCountry);
+    for (const view of ["territory", "nationality"] as const) this.setupCountries(view, countries, onCountry);
 
     this.render();
   }
 
-  /** The countries section: the largest few, or every match while searching. */
-  private setupCountries(countries: { country: Country; civs: Civilization[] }[], onCountry?: (country: Country) => void) {
-    const section = this.root.querySelector<HTMLElement>(".countries")!;
+  /** A countries section: the largest few, or every match while searching. */
+  private setupCountries(view: CountryView, countries: Country[], onCountry?: (country: Country, view: CountryView) => void) {
+    const section = this.root.querySelector<HTMLElement>(`.countries[data-kind="${view}"]`)!;
     section.hidden = !countries.length;
     if (!countries.length) return;
-    const grid = section.querySelector<HTMLElement>("#country-grid")!;
-    const search = section.querySelector<HTMLInputElement>("#country-search")!;
-    const more = section.querySelector<HTMLButtonElement>("#country-more")!;
-    const cards = countries.map(({ country, civs }) => ({ country, card: this.countryCard(country, civs, onCountry) }));
+    const grid = section.querySelector<HTMLElement>(".country-grid")!;
+    const search = section.querySelector<HTMLInputElement>("input")!;
+    const more = section.querySelector<HTMLButtonElement>(".country-more")!;
+    const noun = view === "territory" ? "countries" : "nationalities";
+    const byId = new Map(this.list.map((c) => [c.id, c]));
+    const cards = countries.map((country) => ({ country, card: this.countryCard(country, view, byId, onCountry) }));
     let all = false;
     const show = () => {
       const query = search.value.trim().toLowerCase();
@@ -112,7 +114,7 @@ export class Landing {
       const shown = all || query ? matches : matches.slice(0, COUNTRIES_SHOWN);
       grid.replaceChildren(...shown.map((c) => c.card));
       more.hidden = !!query || matches.length <= COUNTRIES_SHOWN;
-      more.textContent = all ? "Show fewer countries" : `Show all ${nf.format(cards.length)} countries`;
+      more.textContent = all ? `Show fewer ${noun}` : `Show all ${nf.format(cards.length)} ${noun}`;
       if (query && !matches.length) grid.replaceChildren(el("p", "country-meta", "No country matches."));
     };
     search.addEventListener("input", show);
@@ -123,9 +125,17 @@ export class Landing {
     show();
   }
 
-  private countryCard(country: Country, civs: Civilization[], onCountry?: (country: Country) => void): HTMLElement {
+  private countryCard(
+    country: Country,
+    view: CountryView,
+    byId: Map<string, Civilization>,
+    onCountry?: (country: Country, view: CountryView) => void,
+  ): HTMLElement {
     const card = el("article", "country-card");
-    const today = civs.find((c) => c.id === country.civ);
+    const civs = countryCivIds(country, view)
+      .map((id) => byId.get(id))
+      .filter((c): c is Civilization => !!c);
+    const today = byId.get(country.civ);
     const shape = el("div");
     if (today) {
       shape.innerHTML = `<svg class="country-shape" viewBox="-6 -6 112 112" aria-hidden="true"><path d="${shapePath(today)}"/></svg>`;
@@ -133,15 +143,15 @@ export class Landing {
     const body = el("div");
     const title = el("h3");
     const link = el("a", "country-link", country.name);
-    link.href = `#k=${country.id}`;
+    link.href = `#${view === "territory" ? "t" : "k"}=${country.id}`;
     link.addEventListener("click", (e) => {
       e.preventDefault();
-      onCountry?.(country);
+      onCountry?.(country, view);
     });
     title.append(link);
-    const from = Math.min(...civs.map((c) => c.from));
+    const from = civs.length ? Math.min(...civs.map((c) => c.from)) : 0;
     body.append(title, el("p", "country-meta", `${civs.length} civilizations since ${formatYear(from)}`));
-    if (country.blurb) card.title = country.blurb;
+    if (country.blurb && view === "nationality") card.title = country.blurb;
     card.append(shape, body);
     return card;
   }

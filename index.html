@@ -167,19 +167,33 @@
           Every realm mapped in the Cliopatria border data, from 3400 BCE to today. Pick one to see it on the globe,
           lit up with the realms it came from and the ones that followed.
         </p>
-        <section class="countries" aria-labelledby="countries-title">
+        <section class="countries" data-kind="territory" aria-labelledby="territory-title">
           <div class="section-head">
             <div>
-              <h2 id="countries-title" class="section-title">Countries</h2>
-              <p class="section-sub">Every civilization that led to a country of today.</p>
+              <h2 id="territory-title" class="section-title">Countries</h2>
+              <p class="section-sub">Today&rsquo;s countries, with every civilization whose borders ever crossed them.</p>
             </div>
             <label class="search country-search">
               <span class="visually-hidden">Search countries</span>
-              <input id="country-search" type="search" autocomplete="off" placeholder="Search countries" />
+              <input type="search" autocomplete="off" placeholder="Search countries" />
             </label>
           </div>
-          <div id="country-grid" class="country-grid"></div>
-          <button id="country-more" class="ghost country-more" type="button"></button>
+          <div class="country-grid"></div>
+          <button class="ghost country-more" type="button"></button>
+        </section>
+        <section class="countries" data-kind="nationality" aria-labelledby="nationality-title">
+          <div class="section-head">
+            <div>
+              <h2 id="nationality-title" class="section-title">Nationalities</h2>
+              <p class="section-sub">Every civilization that led to a nation of today, wherever it stood.</p>
+            </div>
+            <label class="search country-search">
+              <span class="visually-hidden">Search nationalities</span>
+              <input type="search" autocomplete="off" placeholder="Search nationalities" />
+            </label>
+          </div>
+          <div class="country-grid"></div>
+          <button class="ghost country-more" type="button"></button>
         </section>
         <h2 class="section-title">All civilizations</h2>
         <div class="filters">
