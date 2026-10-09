@@ -18,6 +18,7 @@ import { highlightColors } from "./colors";
 import { BorderData, type Polity, type Span } from "./data";
 import { eraAt, ERAS, NOW } from "./eras";
 import { Landing } from "./landing";
+import { MapView, PROJECTIONS } from "./mapView";
 import { Picker } from "./picker";
 import { PolityLayer } from "./polityLayer";
 import { Timeline } from "./timeline";
@@ -88,6 +89,18 @@ widget.camera.setView({
 });
 
 const layer = new PolityLayer(scene);
+
+// The flat map: the same borders in a choice of projections.
+const mapCanvas = $<HTMLCanvasElement>("map");
+let mapHover = 0;
+const map = new MapView(mapCanvas, {
+  onHover: (p, x, y) => {
+    cancelAnimationFrame(mapHover);
+    mapHover = requestAnimationFrame(() => (p ? hoverRealm(p, x, y) : !tooltip.hidden && hideTooltip()));
+  },
+  onClick: (p) => clickRealm(p),
+  bottomInset: () => (document.querySelector("footer")?.offsetHeight ?? 0) + 12,
+});
 let data: BorderData | undefined;
 let civs: Civilizations | undefined;
 let timeline: Timeline | undefined;
@@ -169,6 +182,7 @@ function ensureBorders() {
     .load(from, to)
     .then((shapes) => {
       layer.add(shapes);
+      map.add(shapes);
       render();
     })
     .catch((error: unknown) => console.error(error))
@@ -191,6 +205,11 @@ function updateHint() {
 
 let drawing = false;
 function render() {
+  if (map.active) {
+    map.setYear(year);
+    updateHint();
+    return;
+  }
   scene.requestRender();
   if (drawing) return;
   drawing = true;
@@ -249,6 +268,7 @@ function setPlaying(on: boolean) {
 playButton.addEventListener("click", () => setPlaying(!playing));
 contextToggle.addEventListener("change", () => {
   layer.showContext = contextToggle.checked;
+  map.showContext = contextToggle.checked;
   render();
 });
 document.addEventListener("keydown", (e) => {
@@ -298,9 +318,7 @@ function polityAt(position: { x: number; y: number }): Polity | undefined {
 }
 
 // Tap or click a highlighted realm for its details, a greyed one to switch to it.
-const handler = new ScreenSpaceEventHandler(scene.canvas);
-handler.setInputAction((event: ScreenSpaceEventHandler.PositionedEvent) => {
-  const p = polityAt(event.position);
+function clickRealm(p: Polity | null | undefined) {
   hideTooltip();
   if (!p) {
     info.hidden = true;
@@ -312,41 +330,53 @@ handler.setInputAction((event: ScreenSpaceEventHandler.PositionedEvent) => {
     info.hidden = true;
     openCiv(civ, { year, push: true, flyTo: p.label ?? civ.center });
   }
-}, ScreenSpaceEventType.LEFT_CLICK);
+}
 
 // Hovering a realm names it; a greyed realm also lights up.
-let hoverPosition: { x: number; y: number } | null = null;
-let hoverFrame = 0;
+function hoverRealm(p: Polity | null | undefined, x: number, y: number) {
+  const civ = p && civs?.ofRealm(p.name);
+  if (!p || !civ) {
+    if (!tooltip.hidden) hideTooltip();
+    return;
+  }
+  const greyed = !layer.isHighlighted(p.name);
+  layer.setHovered(greyed ? p.name : null);
+  map.setHovered(greyed ? p.name : null);
+  tooltip.replaceChildren(
+    Object.assign(document.createElement("strong"), { textContent: civ.name }),
+    Object.assign(document.createElement("span"), {
+      textContent: greyed ? `${formatRange(civ.from, civ.to)} · click to explore` : formatRange(civ.from, civ.to),
+    }),
+  );
+  tooltip.style.transform = `translate(${x + 14}px, ${y + 14}px)`;
+  tooltip.hidden = false;
+  scene.canvas.style.cursor = "pointer";
+  mapCanvas.style.cursor = "pointer";
+  render();
+}
+
 function hideTooltip() {
   tooltip.hidden = true;
   scene.canvas.style.cursor = "";
+  mapCanvas.style.cursor = "";
   layer.setHovered(null);
+  map.setHovered(null);
   render();
 }
+
+const handler = new ScreenSpaceEventHandler(scene.canvas);
+handler.setInputAction((event: ScreenSpaceEventHandler.PositionedEvent) => {
+  clickRealm(polityAt(event.position));
+}, ScreenSpaceEventType.LEFT_CLICK);
+
+let hoverPosition: { x: number; y: number } | null = null;
+let hoverFrame = 0;
 handler.setInputAction((event: ScreenSpaceEventHandler.MotionEvent) => {
   hoverPosition = { x: event.endPosition.x, y: event.endPosition.y };
   if (hoverFrame) return;
   hoverFrame = requestAnimationFrame(() => {
     hoverFrame = 0;
-    if (!hoverPosition) return;
-    const p = polityAt(hoverPosition);
-    const civ = p && civs?.ofRealm(p.name);
-    if (!p || !civ) {
-      if (!tooltip.hidden) hideTooltip();
-      return;
-    }
-    const greyed = !layer.isHighlighted(p.name);
-    layer.setHovered(greyed ? p.name : null);
-    tooltip.replaceChildren(
-      Object.assign(document.createElement("strong"), { textContent: civ.name }),
-      Object.assign(document.createElement("span"), {
-        textContent: greyed ? `${formatRange(civ.from, civ.to)} · click to explore` : formatRange(civ.from, civ.to),
-      }),
-    );
-    tooltip.style.transform = `translate(${hoverPosition.x + 14}px, ${hoverPosition.y + 14}px)`;
-    tooltip.hidden = false;
-    scene.canvas.style.cursor = "pointer";
-    render();
+    if (hoverPosition) hoverRealm(polityAt(hoverPosition), hoverPosition.x, hoverPosition.y);
   });
 }, ScreenSpaceEventType.MOUSE_MOVE);
 scene.canvas.addEventListener("pointerleave", () => {
@@ -396,6 +426,7 @@ function viewTitle(list: Civilization[]): string {
 
 function flyToCiv(c: Civilization, target: [number, number] | null = c.center, keepHeight = false) {
   if (!target) return;
+  if (map.active) return map.focus(target[0], target[1], keepHeight ? null : c.area);
   const height = keepHeight ? widget.camera.positionCartographic.height : altitudeFor(c.area);
   widget.camera.flyTo({
     destination: Cartesian3.fromDegrees(target[0], target[1] - (narrow ? 6 : 0), height),
@@ -431,6 +462,7 @@ function flyToAll(list: Civilization[]) {
     }),
   );
   const largest = Math.max(...list.map((c) => c.area));
+  if (map.active) return map.focus(lon, lat, Math.max(largest, (spread * 1.6) ** 2));
   const height = Math.min(22_000_000, Math.max(altitudeFor(largest), spread * 1000 * (narrow ? 3.2 : 2.2)));
   widget.camera.flyTo({
     destination: Cartesian3.fromDegrees(lon, lat - (narrow ? 6 : 0), height),
@@ -482,6 +514,79 @@ function setTilted(on: boolean, animate = true) {
 $("tilt").addEventListener("click", () => setTilted(!tilted));
 setTilted(tilted, false);
 
+// Globe or flat map. The map opens on the place the globe was looking at, and
+// the globe comes back to where the map was.
+const MAP_KEY = "history-globe:view";
+const PROJECTION_KEY = "history-globe:projection";
+function stored(key: string): string | null {
+  try {
+    return localStorage.getItem(key);
+  } catch {
+    return null;
+  }
+}
+function store(key: string, value: string) {
+  try {
+    localStorage.setItem(key, value);
+  } catch {
+    // Storage blocked; the choice lasts until the page reloads.
+  }
+}
+
+const projectionSelect = $<HTMLSelectElement>("projection");
+for (const p of PROJECTIONS) projectionSelect.append(new Option(p.name, p.id));
+projectionSelect.value = PROJECTIONS.some((p) => p.id === stored(PROJECTION_KEY)) ? stored(PROJECTION_KEY)! : PROJECTIONS[0].id;
+map.setProjection(projectionSelect.value);
+projectionSelect.addEventListener("change", () => {
+  const { lon, lat, zoom } = map.centre();
+  map.setProjection(projectionSelect.value);
+  store(PROJECTION_KEY, projectionSelect.value);
+  // Stay on the same place, at a comparable zoom.
+  if (zoom > 1) map.focus(lon, lat, (14_000 / zoom) ** 2);
+  else map.focus(lon, 0, null);
+});
+
+/** The point at the middle of the globe and the realm size its altitude frames. */
+function globeCentre(): { lon: number; lat: number; area: number } {
+  const camera = widget.camera;
+  const centre = camera.pickEllipsoid(
+    new Cartesian2(scene.canvas.clientWidth / 2, scene.canvas.clientHeight / 2),
+    scene.globe.ellipsoid,
+  );
+  const at = centre ? scene.globe.ellipsoid.cartesianToCartographic(centre) : camera.positionCartographic;
+  const side = camera.positionCartographic.height / 6000 / (narrow ? 1.5 : 1);
+  return { lon: CesiumMath.toDegrees(at.longitude), lat: CesiumMath.toDegrees(at.latitude), area: side * side };
+}
+
+function setMapMode(on: boolean, sync = true) {
+  if (on === map.active && sync) return;
+  hideTooltip();
+  $("view-globe").setAttribute("aria-pressed", String(!on));
+  $("view-map").setAttribute("aria-pressed", String(on));
+  $("projection-field").hidden = !on;
+  $("tilt").hidden = on;
+  $("globe").hidden = on;
+  store(MAP_KEY, on ? "map" : "globe");
+  if (on) {
+    const { lon, lat, area } = globeCentre();
+    map.show();
+    if (sync) map.focus(lon, lat, area);
+    render();
+  } else {
+    const { lon, lat, zoom } = map.centre();
+    map.hide();
+    if (sync) {
+      const side = Math.min(22_000_000, Math.max(2_500_000, (14_000 / zoom) * 6000 * (narrow ? 1.5 : 1)));
+      widget.camera.setView({ destination: Cartesian3.fromDegrees(lon, lat, side), orientation: orientation() });
+    }
+    widget.resize();
+    render();
+  }
+}
+
+$("view-globe").addEventListener("click", () => setMapMode(false));
+$("view-map").addEventListener("click", () => setMapMode(true));
+
 const LEGEND_LIMIT = 12;
 
 function showHighlight() {
@@ -493,6 +598,7 @@ function showHighlight() {
   const byRealm = new Map<string, string>();
   for (const c of highlighted) for (const n of c.names) byRealm.set(n, colors.get(c.name)!);
   layer.setHighlight(byRealm);
+  map.setHighlight(byRealm);
 
   const spans: Span[] = highlighted.map((c) => ({ name: c.name, from: c.from, to: c.to }));
   const label = !expanded
@@ -724,6 +830,7 @@ Promise.all([Civilizations.load(base), BorderData.open(base)])
     $("view-all").addEventListener("click", () => t.setView(FIRST_YEAR, NOW));
     $("zoom-in").addEventListener("click", () => t.zoom(0.5));
     $("zoom-out").addEventListener("click", () => t.zoom(2));
+    if (stored(MAP_KEY) === "map") setMapMode(true, false);
     route();
   })
   .catch((error: unknown) => {

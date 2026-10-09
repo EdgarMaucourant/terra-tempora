@@ -15,6 +15,7 @@
   <body>
     <div id="app">
       <div id="globe" aria-label="3D globe showing the realms of the chosen year"></div>
+      <canvas id="map" class="map" hidden aria-label="Flat map showing the realms of the chosen year"></canvas>
 
       <header class="masthead">
         <a id="back" class="back" href="#">← All civilizations</a>
@@ -24,6 +25,14 @@
       </header>
 
       <div class="globe-tools">
+        <div class="view-switch" role="group" aria-label="View">
+          <button id="view-globe" type="button" aria-pressed="true">Globe</button>
+          <button id="view-map" type="button" aria-pressed="false">Map</button>
+        </div>
+        <label id="projection-field" class="projection" for="projection" hidden>
+          <span>Projection</span>
+          <select id="projection"></select>
+        </label>
         <button id="tilt" class="tilt" type="button" aria-pressed="false">
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <circle cx="12" cy="12" r="7" />
@@ -71,6 +80,11 @@
           <li>
             Globe imagery: Natural Earth II, public domain, as packaged with
             <a href="https://cesium.com/platform/cesiumjs/" target="_blank" rel="noopener">CesiumJS</a> (Apache 2.0).
+          </li>
+          <li>
+            Map coastlines: Natural Earth 1:50m land, public domain, via
+            <a href="https://github.com/topojson/world-atlas" target="_blank" rel="noopener">world-atlas</a> (ISC).
+            Projections by <a href="https://d3js.org/d3-geo" target="_blank" rel="noopener">d3-geo</a> (ISC).
           </li>
         </ul>
         <div id="credits" class="credits"></div>
