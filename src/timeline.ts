@@ -13,9 +13,16 @@ const MIN_LANE_HEIGHT = 13;
 const MAX_LANE_HEIGHT = 26;
 // Gap between a lane and its before/after icons, in pixels.
 const LINK_GAP = 2;
-// Event marks are this wide, in pixels, in up to this many rows.
-const MARK_SIZE = 14;
-const MARK_ROWS = 2;
+// Event marks: their row is resizable, from two rows of small marks up to
+// marks twice as large, then more rows. Sizes in pixels.
+const MARK_MIN = 14;
+const MARK_MAX = 28;
+const MARK_GAP = 2;
+const MARKS_MIN_HEIGHT = 2 * MARK_MIN + MARK_GAP;
+const MARKS_MAX_HEIGHT = 4 * MARK_MAX + 3 * MARK_GAP;
+const MARKS_KEY = "history-globe:marks-height";
+// Lines joining a lane to a related lane that is on the timeline too.
+const CONNECTOR = "#e0533f";
 
 /** A civilization that came before or after a lane's, reached from an icon at the lane's end. */
 export interface LaneLink {
@@ -105,6 +112,11 @@ export class Timeline {
   private gesture: Gesture = { kind: "none" };
   private laneOf = new Map<string, number>();
   private laneCount = 1;
+  private laneHeight = MIN_LANE_HEIGHT;
+  private marksItems!: HTMLElement;
+  private marksHeight = MARKS_MIN_HEIGHT;
+  private markSize = MARK_MIN;
+  private markRows = 2;
 
   constructor(options: TimelineOptions) {
     this.track = options.track;
@@ -124,6 +136,7 @@ export class Timeline {
     this.erasEl = this.part("eras");
     this.lanesEl = this.part("lanes");
     this.marksEl = this.part("marks");
+    this.setupMarksResize();
     this.rulerEl = this.part("ruler");
     this.playhead = this.part("playhead");
     this.playhead.innerHTML = '<span class="playhead-knob"></span>';
@@ -178,6 +191,63 @@ export class Timeline {
     this.render();
   }
 
+  /**
+   * A grip on top of the marks row resizes it: marks grow up to twice their
+   * size, then fill more rows. Double-click resets it. Remembered in this browser.
+   */
+  private setupMarksResize() {
+    const grip = document.createElement("div");
+    grip.className = "marks-grip";
+    grip.title = "Drag to make the event icons bigger. Double-click to reset.";
+    grip.setAttribute("role", "separator");
+    grip.setAttribute("aria-label", "Resize the event icons");
+    this.marksItems = document.createElement("div");
+    this.marksItems.className = "marks-items";
+    this.marksEl.append(grip, this.marksItems);
+    let saved = MARKS_MIN_HEIGHT;
+    try {
+      saved = Number(localStorage.getItem(MARKS_KEY)) || MARKS_MIN_HEIGHT;
+    } catch {
+      // Storage may be unavailable; the default size stands.
+    }
+    this.setMarksHeight(saved, false);
+    let drag: { y: number; start: number } | null = null;
+    grip.addEventListener("pointerdown", (e) => {
+      // The track would take this as a pan or a tap.
+      e.stopPropagation();
+      grip.setPointerCapture(e.pointerId);
+      drag = { y: e.clientY, start: this.marksHeight };
+      grip.classList.add("dragging");
+    });
+    grip.addEventListener("pointermove", (e) => {
+      if (drag) this.setMarksHeight(drag.start + (drag.y - e.clientY));
+    });
+    const end = () => {
+      drag = null;
+      grip.classList.remove("dragging");
+    };
+    grip.addEventListener("pointerup", end);
+    grip.addEventListener("pointercancel", end);
+    grip.addEventListener("dblclick", () => this.setMarksHeight(MARKS_MIN_HEIGHT));
+  }
+
+  private setMarksHeight(height: number, save = true) {
+    this.marksHeight = Math.round(Math.min(MARKS_MAX_HEIGHT, Math.max(MARKS_MIN_HEIGHT, height)));
+    this.markSize = Math.min(MARK_MAX, Math.max(MARK_MIN, Math.floor((this.marksHeight - MARK_GAP) / 2)));
+    this.markRows = Math.max(2, Math.floor((this.marksHeight + MARK_GAP) / (this.markSize + MARK_GAP)));
+    this.marksEl.style.height = `${this.marksHeight}px`;
+    this.marksEl.style.setProperty("--mark-size", `${this.markSize}px`);
+    if (save) {
+      try {
+        localStorage.setItem(MARKS_KEY, String(this.marksHeight));
+      } catch {
+        // Not remembered, then.
+      }
+    }
+    this.fitLanes();
+    this.render();
+  }
+
   setHeight(height: number | null) {
     this.track.classList.toggle("sized", height !== null);
     this.track.style.height = height === null ? "" : `${height}px`;
@@ -192,6 +262,7 @@ export class Timeline {
       height = Math.floor((room + 3) / this.laneCount - 3);
       height = Math.min(MAX_LANE_HEIGHT, Math.max(MIN_LANE_HEIGHT, height));
     }
+    this.laneHeight = height;
     this.track.style.setProperty("--lane-height", `${height}px`);
   }
 
@@ -270,8 +341,21 @@ export class Timeline {
       ...ERAS.filter((e) => e.to > this.viewFrom && e.from < this.viewTo).map((e) => this.eraBlock(e)),
     );
 
-    // Featured realm lanes
-    const bars: HTMLElement[] = [];
+    // Featured realm lanes. A lane's before/after realm that has a lane too is
+    // joined to it by a line; the others get an icon at the lane's end.
+    const bars: Element[] = [];
+    const byName = new Map(this.featured.map((s) => [s.name, s]));
+    const joins = new Map<string, [Lane, Lane]>();
+    for (const s of this.featured) {
+      for (const link of s.after ?? []) {
+        const t = byName.get(link.name);
+        if (t && t !== s) joins.set(`${s.name}\u0000${t.name}`, [s, t]);
+      }
+      for (const link of s.before ?? []) {
+        const t = byName.get(link.name);
+        if (t && t !== s) joins.set(`${t.name}\u0000${s.name}`, [t, s]);
+      }
+    }
     for (const s of this.featured) {
       if (s.to + 1 < this.viewFrom || s.from > this.viewTo) continue;
       const left = this.x(s.from);
@@ -290,9 +374,14 @@ export class Timeline {
       bar.dataset.name = s.name;
       bars.push(bar);
       const lane = this.laneOf.get(s.name) ?? 0;
-      (s.before ?? []).forEach((link, i) => bars.push(this.linkIcon(link, "before", lane, left - (i + 1) * LINK_GAP, i)));
-      (s.after ?? []).forEach((link, i) => bars.push(this.linkIcon(link, "after", lane, left + width + (i + 1) * LINK_GAP, i)));
+      (s.before ?? [])
+        .filter((link) => !byName.has(link.name))
+        .forEach((link, i) => bars.push(this.linkIcon(link, "before", lane, left - (i + 1) * LINK_GAP, i)));
+      (s.after ?? [])
+        .filter((link) => !byName.has(link.name))
+        .forEach((link, i) => bars.push(this.linkIcon(link, "after", lane, left + width + (i + 1) * LINK_GAP, i)));
     }
+    if (bars.length && joins.size) bars.unshift(this.connectors([...joins.values()]));
     // When the featured realms are out of view, the lanes fold to one row
     // pointing at them, so the reader keeps a sense of where they sit in time.
     if (bars.length === 0 && this.featured.length) bars.push(this.pointer());
@@ -303,11 +392,12 @@ export class Timeline {
     // drops to the second row, and when both rows are taken it joins the
     // nearest mark as a numbered cluster that zooms in when tapped.
     const groups: { x: number; row: number; items: TimelineMark[] }[] = [];
-    const last: ((typeof groups)[number] | undefined)[] = Array(MARK_ROWS).fill(undefined);
+    const size = this.markSize;
+    const last: ((typeof groups)[number] | undefined)[] = Array(this.markRows).fill(undefined);
     for (const m of this.marks) {
       if (m.year < this.viewFrom - 1 || m.year > this.viewTo + 1) continue;
       // Zoomed in, a year is wide enough for several marks side by side.
-      const step = MARK_SIZE + 1;
+      const step = size + 1;
       const first = this.x(m.year) + step / 2;
       const room = this.x(m.year + 1) - step / 2 - first;
       const spots = room >= step ? Array.from({ length: Math.floor(room / step) + 1 }, (_, i) => first + i * step) : [this.x(m.year + 0.5)];
@@ -335,7 +425,7 @@ export class Timeline {
       button.className = "mark";
       button.tabIndex = -1;
       button.style.left = `${g.x}px`;
-      button.style.top = `${g.row * (MARK_SIZE + 2)}px`;
+      button.style.top = `${g.row * (size + MARK_GAP)}px`;
       if (g.items.length === 1) {
         const m = g.items[0];
         button.dataset.id = m.id;
@@ -355,7 +445,7 @@ export class Timeline {
       }
       return button;
     });
-    this.marksEl.replaceChildren(...marks);
+    this.marksItems.replaceChildren(...marks);
 
     // Ticks at a round step that leaves room for their labels
     const step = TICK_STEPS.find((s) => (span / s) * TICK_SPACING <= this.width) ?? 5000;
@@ -377,6 +467,42 @@ export class Timeline {
     this.playhead.hidden = px < -2 || px > this.width + 2;
     this.track.setAttribute("aria-valuenow", String(Math.round(this.year)));
     this.track.setAttribute("aria-valuetext", formatYear(this.year));
+  }
+
+  /** Red lines from the end of each lane to the start of the lane that followed it. */
+  private connectors(joins: [Lane, Lane][]): SVGSVGElement {
+    const NS = "http://www.w3.org/2000/svg";
+    const svg = document.createElementNS(NS, "svg");
+    svg.classList.add("lane-joins");
+    const rowHeight = this.laneHeight + 3;
+    svg.setAttribute("width", String(this.width));
+    svg.setAttribute("height", String(this.laneCount * rowHeight));
+    const mid = (s: Lane) => (this.laneOf.get(s.name) ?? 0) * rowHeight + this.laneHeight / 2;
+    for (const [a, b] of joins) {
+      const x1 = this.x(a.to + 1);
+      const x2 = this.x(b.from);
+      const y1 = mid(a);
+      const y2 = mid(b);
+      // Out of the end of one lane and into the start of the other; when they
+      // overlap in time the line loops back.
+      const reach = Math.max(10, Math.abs(x2 - x1) / 2);
+      const path = document.createElementNS(NS, "path");
+      path.setAttribute("d", `M${x1} ${y1}C${x1 + reach} ${y1} ${x2 - reach} ${y2} ${x2} ${y2}`);
+      path.setAttribute("stroke", CONNECTOR);
+      svg.append(path);
+      for (const [x, y] of [
+        [x1, y1],
+        [x2, y2],
+      ]) {
+        const dot = document.createElementNS(NS, "circle");
+        dot.setAttribute("cx", String(x));
+        dot.setAttribute("cy", String(y));
+        dot.setAttribute("r", "2.5");
+        dot.setAttribute("fill", CONNECTOR);
+        svg.append(dot);
+      }
+    }
+    return svg;
   }
 
   /** An arrow at a lane's end that opens the civilization before or after it. */

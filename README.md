@@ -53,7 +53,12 @@ in a timeline that runs from 10,000 BCE to today.
   to add them, untick one already shown to remove it.
 - Where Wikidata records a civilization before or after a highlighted one, its
   timeline lane has an arrow icon at that end. Hovering the icon names that
-  civilization and its years; clicking it opens it.
+  civilization and its years; clicking it opens it. When that civilization
+  has its own lane on the timeline, a red line joins the end of one lane to
+  the start of the other instead.
+- The row of event marks under the lanes can be made taller by dragging its
+  top edge: the marks grow up to twice their size, then spread over more
+  rows. Double-click the edge to reset; the size is remembered.
 
 - CesiumJS globe with the Natural Earth II imagery bundled in CesiumJS, served
   from our own files. No Cesium ion account or token.

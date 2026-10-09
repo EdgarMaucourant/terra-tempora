@@ -846,9 +846,60 @@ a {
 
 /* Events of the highlighted realms, as small badges above the ruler. */
 .marks {
+  --mark-size: 14px;
   position: relative;
   display: none;
   height: 30px;
+}
+
+.marks-items {
+  position: relative;
+  height: 100%;
+}
+
+/* Drag the top edge of the marks row to make the icons bigger. */
+.marks-grip {
+  position: absolute;
+  z-index: 2;
+  top: -6px;
+  left: 0;
+  right: 0;
+  height: 7px;
+  cursor: ns-resize;
+  touch-action: none;
+}
+
+.marks-grip::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  width: 36px;
+  height: 3px;
+  margin-left: -18px;
+  border-radius: 2px;
+  background: rgba(214, 220, 228, 0.22);
+  transition: background 0.15s;
+}
+
+.marks-grip:hover::before,
+.marks-grip.dragging::before {
+  background: var(--ink);
+}
+
+.lane-joins {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.lane-joins path {
+  fill: none;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  opacity: 0.9;
 }
 
 .has-marks .marks {
@@ -858,8 +909,8 @@ a {
 .mark {
   position: absolute;
   top: 0;
-  width: 14px;
-  height: 14px;
+  width: var(--mark-size);
+  height: var(--mark-size);
   padding: 0;
   border: 0;
   background: none;
@@ -869,8 +920,8 @@ a {
 
 .mark svg {
   display: block;
-  width: 14px;
-  height: 14px;
+  width: var(--mark-size);
+  height: var(--mark-size);
 }
 
 .mark.cluster {
@@ -879,7 +930,7 @@ a {
   box-sizing: border-box;
   background: #3a414b;
   color: #fbf6ec;
-  font-size: 9px;
+  font-size: calc(var(--mark-size) * 0.62);
   font-weight: 700;
   line-height: 1;
 }
