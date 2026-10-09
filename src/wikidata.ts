@@ -12,6 +12,8 @@ export interface Picture {
   page: string;
   artist: string;
   license: string;
+  /** A photo or painting fills the card; a coat of arms or flag is shown whole. */
+  kind?: "photo" | "emblem";
 }
 
 export interface RealmFacts {
@@ -26,7 +28,7 @@ export interface RealmFacts {
 
 const SPARQL = "https://query.wikidata.org/sparql";
 const COMMONS = "https://commons.wikimedia.org/w/api.php";
-const CACHE = "history-globe:facts:v1:";
+const CACHE = "history-globe:facts:v2:";
 const BATCH = 30;
 const THUMB_WIDTH = 480;
 
@@ -36,6 +38,14 @@ interface Binding {
   v: { value: string };
   vLabel?: { value: string };
   links?: { value: string };
+}
+
+// Maps already show on every card as the realm's outline, so a picture of a
+// place, monument or artefact is preferred to a map, then the coat of arms or flag.
+const MAP_LIKE = /\b(map|maps|locator|location|extent|territor|orthographic|borders?)\b|karte|carte|mapa/i;
+
+function chooseFile(d: { images: string[]; arms: string[]; flags: string[] }): string | undefined {
+  return d.images.find((f) => !MAP_LIKE.test(f.replace(/[_.-]/g, " "))) ?? d.arms[0] ?? d.flags[0];
 }
 
 const qidOf = (uri: string) => uri.slice(uri.lastIndexOf("/") + 1);
@@ -69,6 +79,7 @@ function query(ids: string[]): string {
   VALUES ?item { ${ids.map((id) => `wd:${id}`).join(" ")} }
   { ?item wdt:P18 ?v. BIND("image" AS ?kind) } UNION
   { ?item wdt:P41 ?v. BIND("flag" AS ?kind) } UNION
+  { ?item wdt:P94 ?v. BIND("arms" AS ?kind) } UNION
   ${people("P112", "founder")} UNION
   ${people("P35", "head")} UNION
   ${people("P6", "head")} UNION
@@ -128,6 +139,7 @@ async function fetchFacts(ids: string[]): Promise<Map<string, RealmFacts>> {
 
   interface Draft {
     images: string[];
+    arms: string[];
     flags: string[];
     founders: Map<string, number>;
     heads: Map<string, number>;
@@ -137,7 +149,7 @@ async function fetchFacts(ids: string[]): Promise<Map<string, RealmFacts>> {
   }
   const drafts = new Map<string, Draft>();
   for (const id of ids) {
-    drafts.set(id, { images: [], flags: [], founders: new Map(), heads: new Map(), notables: new Map(), before: new Set(), after: new Set() });
+    drafts.set(id, { images: [], arms: [], flags: [], founders: new Map(), heads: new Map(), notables: new Map(), before: new Set(), after: new Set() });
   }
   for (const b of bindings) {
     const d = drafts.get(qidOf(b.item.value));
@@ -146,9 +158,10 @@ async function fetchFacts(ids: string[]): Promise<Map<string, RealmFacts>> {
     const links = Number(b.links?.value ?? 0);
     switch (b.kind.value) {
       case "image":
+      case "arms":
       case "flag": {
         const file = decodeURIComponent(value.slice(value.lastIndexOf("/") + 1));
-        (b.kind.value === "image" ? d.images : d.flags).push(file);
+        (b.kind.value === "image" ? d.images : b.kind.value === "arms" ? d.arms : d.flags).push(file);
         break;
       }
       case "founder":
@@ -169,16 +182,17 @@ async function fetchFacts(ids: string[]): Promise<Map<string, RealmFacts>> {
     }
   }
 
-  const wanted = [...drafts.values()].map((d) => d.images[0] ?? d.flags[0]).filter((f): f is string => !!f);
+  const wanted = [...drafts.values()].map(chooseFile).filter((f): f is string => !!f);
   const pictures = wanted.length ? await fetchPictures(wanted) : new Map<string, Picture>();
 
   const byFame = (m: Map<string, number>) => [...m].sort((a, b) => b[1] - a[1]).map(([name]) => name);
   const facts = new Map<string, RealmFacts>();
   for (const [id, d] of drafts) {
-    const file = d.images[0] ?? d.flags[0];
+    const file = chooseFile(d);
     const figures = [...new Set([...byFame(d.founders), ...byFame(d.heads), ...byFame(d.notables)])].slice(0, 2);
+    const picture = (file && pictures.get(file.replace(/_/g, " "))) || (file && pictures.get(file)) || null;
     facts.set(id, {
-      picture: (file && pictures.get(file.replace(/_/g, " "))) || (file && pictures.get(file)) || null,
+      picture: picture && { ...picture, kind: d.images.includes(file!) ? "photo" : "emblem" },
       figures,
       before: [...d.before],
       after: [...d.after],

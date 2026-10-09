@@ -939,24 +939,24 @@ a {
 
 .civ-media {
   position: relative;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
-  background: radial-gradient(circle at 50% 40%, color-mix(in srgb, var(--tint) 22%, #161b22), #0d1117 75%);
+  background:
+    linear-gradient(160deg, color-mix(in srgb, var(--tint) 30%, #161b22), #0d1117 85%);
 }
 
-.civ-shape {
+.civ-monogram {
   position: absolute;
-  inset: 10% 18%;
-  width: 64%;
-  height: 80%;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font: 600 64px/1 var(--font-display);
+  color: color-mix(in srgb, var(--tint) 45%, transparent);
+  transition: opacity 0.35s ease;
 }
 
-.civ-shape path {
-  fill: color-mix(in srgb, var(--tint) 55%, transparent);
-  stroke: color-mix(in srgb, var(--tint) 80%, white);
-  stroke-width: 0.8;
-  stroke-linejoin: round;
-  vector-effect: non-scaling-stroke;
+.civ-media.has-picture .civ-monogram {
+  opacity: 0;
 }
 
 .civ-media img {
@@ -969,16 +969,68 @@ a {
   transition: opacity 0.35s ease;
 }
 
+/* Coats of arms and flags are shown whole rather than cropped. */
+.civ-media img.emblem {
+  inset: 12% 0;
+  height: 76%;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.5));
+}
+
 .civ-media.has-picture img {
   opacity: 1;
 }
 
+/* A soft fade from the picture into the card's text. */
+.civ-media::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 30%;
+  background: linear-gradient(transparent, var(--panel-solid));
+  pointer-events: none;
+}
+
+.civ-media:has(img.emblem)::after {
+  display: none;
+}
+
 .civ-body {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 3px;
   flex: 1;
-  padding: 12px 14px 12px;
+  padding: 10px 14px 12px;
+  overflow: hidden;
+}
+
+.civ-body > :not(.civ-shape) {
+  position: relative;
+}
+
+/* The realm's outline, small in the bottom-right corner behind the text. */
+.civ-shape {
+  position: absolute;
+  right: -6px;
+  bottom: -6px;
+  width: 92px;
+  height: 92px;
+  opacity: 0.32;
+  pointer-events: none;
+}
+
+.civ-shape path {
+  fill: color-mix(in srgb, var(--tint) 55%, transparent);
+  stroke: color-mix(in srgb, var(--tint) 80%, white);
+  stroke-width: 0.8;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.civ-card:hover .civ-shape,
+.civ-card:focus-within .civ-shape {
+  opacity: 0.5;
 }
 
 .civ-body p {
@@ -1334,7 +1386,12 @@ a {
   }
 
   .civ-body {
-    padding: 10px 11px;
+    padding: 8px 11px 10px;
+  }
+
+  .civ-shape {
+    width: 72px;
+    height: 72px;
   }
 
   .masthead {
@@ -1397,6 +1454,7 @@ a {
   .tilt .axis,
   .civ-card,
   .civ-media img,
+  .civ-monogram,
   .switch-track,
   .switch-track::after {
     transition: none;
