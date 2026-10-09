@@ -6,6 +6,10 @@ name: Fetch Wikidata events
 
 on:
   workflow_dispatch:
+    inputs:
+      minutes:
+        description: Minutes to spend fetching
+        default: "50"
   push:
     branches-ignore: [main]
     paths:
@@ -24,7 +28,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: node scripts/fetch-events.mjs --minutes 50
+      - run: node scripts/fetch-events.mjs --minutes ${{ inputs.minutes || 50 }}
       - name: Commit the events
         run: |
           git config user.name "github-actions[bot]"
