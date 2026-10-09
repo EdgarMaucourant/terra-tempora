@@ -312,16 +312,78 @@ export class Timeline {
   }
 
   // Featured realms share as few lanes as possible without overlapping.
+  /**
+   * Assigns each lane a row, oldest first. A realm that follows one of its
+   * predecessors without overlapping it continues that predecessor's row, so
+   * a chain like Mongol Empire, Yuan, Ming reads along one line. Otherwise it
+   * goes in the free row nearest its relatives, or a new row next to them;
+   * unrelated realms take the first free row.
+   */
   private packLanes() {
-    const ends: number[] = [];
-    for (const span of [...this.featured].sort((a, b) => a.from - b.from)) {
-      let lane = ends.findIndex((end) => end < span.from - 4);
-      if (lane < 0) lane = ends.push(0) - 1;
-      ends[lane] = span.to;
-      this.laneOf.set(span.name, lane);
+    this.laneOf.clear();
+    const byName = new Map(this.featured.map((s) => [s.name, s]));
+    const related = new Map<string, { before: Set<string>; after: Set<string> }>();
+    const rel = (name: string) => {
+      let r = related.get(name);
+      if (!r) related.set(name, (r = { before: new Set(), after: new Set() }));
+      return r;
+    };
+    for (const s of this.featured) {
+      for (const link of s.after ?? []) {
+        if (!byName.has(link.name) || link.name === s.name) continue;
+        rel(s.name).after.add(link.name);
+        rel(link.name).before.add(s.name);
+      }
+      for (const link of s.before ?? []) {
+        if (!byName.has(link.name) || link.name === s.name) continue;
+        rel(s.name).before.add(link.name);
+        rel(link.name).after.add(s.name);
+      }
     }
-    this.laneCount = Math.max(1, ends.length);
-    this.lanesEl.style.setProperty("--lanes", String(ends.length));
+
+    interface Row {
+      end: number;
+      last: Lane;
+    }
+    const rows: Row[] = [];
+    const rowOf = new Map<string, Row>();
+    const free = (row: Row, span: Lane) => row.end < span.from - 4;
+    const ordered = [...this.featured].sort((a, b) => a.from - b.from || b.to - b.from - (a.to - a.from));
+    for (const span of ordered) {
+      const r = related.get(span.name);
+      const placed = [...(r?.before ?? []), ...(r?.after ?? [])]
+        .map((n) => rowOf.get(n))
+        .filter((row): row is Row => !!row);
+      let row: Row | undefined;
+      // Continue a predecessor's row when it ends just before this realm starts.
+      const chain = [...(r?.before ?? [])]
+        .map((n) => rowOf.get(n))
+        .filter((x): x is Row => !!x && r!.before.has(x.last.name) && x.end <= span.from)
+        .sort((a, b) => b.end - a.end)[0];
+      if (chain) row = chain;
+      else if (placed.length) {
+        // The free row closest to its relatives, or a new row just below them.
+        const target = placed.map((x) => rows.indexOf(x)).reduce((a, b) => a + b, 0) / placed.length;
+        const best = rows
+          .map((x, i) => ({ x, d: Math.abs(i - target) }))
+          .filter(({ x }) => free(x, span))
+          .sort((a, b) => a.d - b.d)[0];
+        if (best && best.d <= 1) row = best.x;
+        else {
+          row = { end: -Infinity, last: span };
+          rows.splice(Math.min(rows.length, Math.max(...placed.map((x) => rows.indexOf(x))) + 1), 0, row);
+        }
+      } else {
+        row = rows.find((x) => free(x, span));
+        if (!row) rows.push((row = { end: -Infinity, last: span }));
+      }
+      row.end = Math.max(row.end, span.to);
+      row.last = span;
+      rowOf.set(span.name, row);
+    }
+    for (const [name, row] of rowOf) this.laneOf.set(name, rows.indexOf(row));
+    this.laneCount = Math.max(1, rows.length);
+    this.lanesEl.style.setProperty("--lanes", String(rows.length));
     this.fitLanes();
   }
 
