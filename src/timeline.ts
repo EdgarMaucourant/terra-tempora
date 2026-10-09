@@ -13,6 +13,9 @@ const MIN_LANE_HEIGHT = 13;
 const MAX_LANE_HEIGHT = 26;
 // Gap between a lane and its before/after icons, in pixels.
 const LINK_GAP = 2;
+// Event marks are this wide, in pixels, in up to this many rows.
+const MARK_SIZE = 14;
+const MARK_ROWS = 2;
 
 /** A civilization that came before or after a lane's, reached from an icon at the lane's end. */
 export interface LaneLink {
@@ -20,6 +23,17 @@ export interface LaneLink {
   name: string;
   from: number;
   to: number;
+}
+
+/** An event shown as a small icon above the ruler. */
+export interface TimelineMark {
+  id: string;
+  year: number;
+  /** Icon markup (SVG). */
+  icon: string;
+  label: string;
+  /** Kind and date, shown under the label on hover. */
+  detail: string;
 }
 
 /** A highlighted realm's lifespan, with the civilizations before and after it. */
@@ -46,14 +60,16 @@ export interface TimelineOptions {
   onLane?: (name: string) => void;
   /** Called when a before/after icon is tapped, with that civilization's id. */
   onLink?: (id: string) => void;
+  /** Called when an event mark is tapped, with its id. */
+  onMark?: (id: string) => void;
   /** Called when the visible span changes. */
   onView?: (from: number, to: number) => void;
 }
 
 type Gesture =
   | { kind: "none" }
-  | { kind: "press"; x: number; viewFrom: number; viewTo: number; target: HTMLElement }
-  | { kind: "pan"; x: number; viewFrom: number; viewTo: number }
+  | { kind: "press"; x: number; y: number; scroll: number; viewFrom: number; viewTo: number; target: HTMLElement }
+  | { kind: "pan"; x: number; y: number; scroll: number; viewFrom: number; viewTo: number }
   | { kind: "scrub" }
   | { kind: "pinch"; distance: number; anchor: number; span: number; mid: number };
 
@@ -72,6 +88,8 @@ export class Timeline {
   private readonly erasEl: HTMLElement;
   private readonly lanesEl: HTMLElement;
   private readonly rulerEl: HTMLElement;
+  private readonly marksEl: HTMLElement;
+  private marks: TimelineMark[] = [];
   private readonly playhead: HTMLElement;
   private featured: Lane[];
   private featuredLabel: string;
@@ -80,6 +98,7 @@ export class Timeline {
   private readonly onView?: TimelineOptions["onView"];
   private readonly onLane?: TimelineOptions["onLane"];
   private readonly onLink?: TimelineOptions["onLink"];
+  private readonly onMark?: TimelineOptions["onMark"];
   private width = 1;
   private frame = 0;
   private pointers = new Map<number, number>();
@@ -100,9 +119,11 @@ export class Timeline {
     this.onView = options.onView;
     this.onLane = options.onLane;
     this.onLink = options.onLink;
+    this.onMark = options.onMark;
 
     this.erasEl = this.part("eras");
     this.lanesEl = this.part("lanes");
+    this.marksEl = this.part("marks");
     this.rulerEl = this.part("ruler");
     this.playhead = this.part("playhead");
     this.playhead.innerHTML = '<span class="playhead-knob"></span>';
@@ -150,6 +171,13 @@ export class Timeline {
    * Gives the track a fixed height in pixels, or null for its natural height.
    * Extra height goes to the lanes, which grow taller to fill it.
    */
+  /** Events to mark above the ruler; an empty list hides the row. */
+  setMarks(marks: TimelineMark[]) {
+    this.marks = [...marks].sort((a, b) => a.year - b.year);
+    this.track.classList.toggle("has-marks", this.marks.length > 0);
+    this.render();
+  }
+
   setHeight(height: number | null) {
     this.track.classList.toggle("sized", height !== null);
     this.track.style.height = height === null ? "" : `${height}px`;
@@ -271,6 +299,64 @@ export class Timeline {
     this.lanesEl.classList.toggle("folded", bars.length === 1 && bars[0].classList.contains("lane-pointer"));
     this.lanesEl.replaceChildren(...bars);
 
+    // Event marks at their years; one that would overlap the mark before it
+    // drops to the second row, and when both rows are taken it joins the
+    // nearest mark as a numbered cluster that zooms in when tapped.
+    const groups: { x: number; row: number; items: TimelineMark[] }[] = [];
+    const last: ((typeof groups)[number] | undefined)[] = Array(MARK_ROWS).fill(undefined);
+    for (const m of this.marks) {
+      if (m.year < this.viewFrom - 1 || m.year > this.viewTo + 1) continue;
+      // Zoomed in, a year is wide enough for several marks side by side.
+      const step = MARK_SIZE + 1;
+      const first = this.x(m.year) + step / 2;
+      const room = this.x(m.year + 1) - step / 2 - first;
+      const spots = room >= step ? Array.from({ length: Math.floor(room / step) + 1 }, (_, i) => first + i * step) : [this.x(m.year + 0.5)];
+      let x = spots[0];
+      let row = -1;
+      for (const spot of spots) {
+        row = last.findIndex((g) => !g || spot - g.x >= step);
+        if (row >= 0) {
+          x = spot;
+          break;
+        }
+      }
+      if (row >= 0) {
+        const group = { x, row, items: [m] };
+        groups.push(group);
+        last[row] = group;
+      } else {
+        const nearest = last.reduce((a, b) => (b!.x > a!.x ? b : a))!;
+        nearest.items.push(m);
+      }
+    }
+    const marks = groups.map((g) => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "mark";
+      button.tabIndex = -1;
+      button.style.left = `${g.x}px`;
+      button.style.top = `${g.row * (MARK_SIZE + 2)}px`;
+      if (g.items.length === 1) {
+        const m = g.items[0];
+        button.dataset.id = m.id;
+        button.dataset.label = m.label;
+        button.dataset.detail = m.detail;
+        button.setAttribute("aria-label", `${m.label}, ${m.detail}`);
+        button.innerHTML = m.icon;
+      } else {
+        const years = g.items.map((m) => m.year);
+        button.classList.add("cluster");
+        button.dataset.from = String(Math.min(...years));
+        button.dataset.to = String(Math.max(...years));
+        button.dataset.label = `${g.items.length} events`;
+        button.dataset.detail = g.items.map((m) => m.label).join(", ");
+        button.setAttribute("aria-label", `${g.items.length} events: ${button.dataset.detail}. Zoom in to see them.`);
+        button.textContent = String(g.items.length);
+      }
+      return button;
+    });
+    this.marksEl.replaceChildren(...marks);
+
     // Ticks at a round step that leaves room for their labels
     const step = TICK_STEPS.find((s) => (span / s) * TICK_SPACING <= this.width) ?? 5000;
     const ticks: HTMLElement[] = [];
@@ -359,10 +445,20 @@ export class Timeline {
       };
       return;
     }
-    const nearPlayhead = Math.abs(this.yearAt(e.clientX) - this.year) * (this.width / (this.viewTo - this.viewFrom)) < 14;
+    // Marks and icons sit on the track; pressing one never grabs the playhead.
+    const onButton = (e.target as HTMLElement).closest(".mark, .lane-link");
+    const nearPlayhead = !onButton && Math.abs(this.yearAt(e.clientX) - this.year) * (this.width / (this.viewTo - this.viewFrom)) < 14;
     this.gesture = nearPlayhead
       ? { kind: "scrub" }
-      : { kind: "press", x: e.clientX, viewFrom: this.viewFrom, viewTo: this.viewTo, target: e.target as HTMLElement };
+      : {
+          kind: "press",
+          x: e.clientX,
+          y: e.clientY,
+          scroll: this.lanesEl.scrollTop,
+          viewFrom: this.viewFrom,
+          viewTo: this.viewTo,
+          target: e.target as HTMLElement,
+        };
   }
 
   private pointerMove(e: PointerEvent) {
@@ -379,8 +475,11 @@ export class Timeline {
       this.pick(this.yearAt(e.clientX), false);
     } else if (g.kind === "press" || g.kind === "pan") {
       const dx = e.clientX - g.x;
-      if (g.kind === "press" && Math.abs(dx) < TAP_SLOP) return;
+      const dy = e.clientY - g.y;
+      if (g.kind === "press" && Math.abs(dx) < TAP_SLOP && Math.abs(dy) < TAP_SLOP) return;
       this.gesture = { ...g, kind: "pan" };
+      // Dragging up and down scrolls the lanes when there are more than fit.
+      this.lanesEl.scrollTop = g.scroll - dy;
       const shift = (dx / this.width) * (g.viewTo - g.viewFrom);
       this.setView(g.viewFrom - shift, g.viewTo - shift);
     }
@@ -401,6 +500,18 @@ export class Timeline {
       const target = g.target;
       const bar = target.closest<HTMLElement>(".lane-bar");
       const link = target.closest<HTMLElement>(".lane-link");
+      const mark = target.closest<HTMLElement>(".mark");
+      if (mark?.classList.contains("cluster")) {
+        const from = Number(mark.dataset.from);
+        const to = Number(mark.dataset.to);
+        const pad = Math.max(4, (to - from) * 0.6);
+        this.setView(from - pad, to + pad + 1);
+        return this.endPointer();
+      }
+      if (mark && this.onMark) {
+        this.onMark(mark.dataset.id!);
+        return this.endPointer();
+      }
       if (link && this.onLink) {
         this.onLink(link.dataset.id!);
         return this.endPointer();
@@ -422,6 +533,17 @@ export class Timeline {
   }
 
   private wheel(e: WheelEvent) {
+    // Over lanes that scroll, a plain vertical wheel scrolls them.
+    const lanes = this.lanesEl;
+    if (
+      !e.ctrlKey &&
+      !e.shiftKey &&
+      Math.abs(e.deltaY) > Math.abs(e.deltaX) &&
+      lanes.scrollHeight > lanes.clientHeight + 1 &&
+      lanes.contains(e.target as Node)
+    ) {
+      return;
+    }
     e.preventDefault();
     const span = this.viewTo - this.viewFrom;
     const horizontal = Math.abs(e.deltaX) > Math.abs(e.deltaY) || e.shiftKey;

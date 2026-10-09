@@ -15,8 +15,11 @@ import "cesium/Build/Cesium/Widgets/CesiumWidget/CesiumWidget.css";
 import "./style.css";
 import { civEraText, Civilizations, type Civilization } from "./civilizations";
 import { highlightColors } from "./colors";
+import { countryCivIds, loadCountries, type Country, type CountryView } from "./countries";
 import { BorderData, type Polity } from "./data";
 import { eraAt, ERAS, NOW } from "./eras";
+import { EventLayer } from "./eventLayer";
+import { badgeSvg, eventLinks, eventPicture, KINDS, loadEvents, type HistoryEvent } from "./events";
 import { Landing } from "./landing";
 import { MapView, PROJECTIONS } from "./mapView";
 import { Picker } from "./picker";
@@ -89,6 +92,7 @@ widget.camera.setView({
 });
 
 const layer = new PolityLayer(scene);
+const eventLayer = new EventLayer(scene);
 
 // The flat map: the same borders in a choice of projections.
 const mapCanvas = $<HTMLCanvasElement>("map");
@@ -99,6 +103,13 @@ const map = new MapView(mapCanvas, {
     mapHover = requestAnimationFrame(() => (p ? hoverRealm(p, x, y) : !tooltip.hidden && hideTooltip()));
   },
   onClick: (p) => clickRealm(p),
+  onEventHover: (e, x, y) => {
+    if (e) {
+      cancelAnimationFrame(mapHover);
+      hoverEvent(e, x, y);
+    }
+  },
+  onEventClick: (e) => openEvent(e),
   bottomInset: () => (document.querySelector("footer")?.offsetHeight ?? 0) + 12,
 });
 let data: BorderData | undefined;
@@ -112,12 +123,20 @@ let playing = false;
 let active: Civilization | undefined;
 let highlighted: Civilization[] = [];
 let expanded = true;
+/** The country whose lineage is shown, when the view was opened from a country card. */
+let country: Country | null = null;
+/** Whether the country is shown as a nation (its lineage) or as land (all that crossed it). */
+let countryView: CountryView = "nationality";
+let countries: Country[] = [];
 let colors = new Map<string, string>();
 
 // Links: #c=mongol-empire&y=1241 opens a civilization on a year, with its
 // related realms; #c=a,b,c&m=1 opens exactly those civilizations. An empty hash
 // opens the landing page. #y1241 (and #y-500 for 500 BCE) still work.
 interface Route {
+  /** A country, by id: its lineage (#k=) or its territory (#t=). */
+  country?: string;
+  view?: CountryView;
   civs?: string[];
   /** Exactly these civilizations, without their related realms. */
   multi?: boolean;
@@ -131,6 +150,8 @@ function readHash(): Route {
   const y = params.get("y");
   const ids = params.get("c")?.split(",").filter(Boolean);
   return {
+    country: params.get("t") ?? params.get("k") ?? undefined,
+    view: params.has("t") ? "territory" : "nationality",
     civs: ids?.length ? ids : undefined,
     multi: params.get("m") === "1" || (ids?.length ?? 0) > 1,
     year: y && /^-?\d{1,5}$/.test(y) ? Number(y) : undefined,
@@ -138,6 +159,8 @@ function readHash(): Route {
 }
 
 function hashFor(route: Route): string {
+  if (route.country)
+    return `#${route.view === "territory" ? "t" : "k"}=${route.country}${route.year !== undefined ? `&y=${Math.round(route.year)}` : ""}`;
   if (!route.civs?.length) return location.pathname + location.search;
   const multi = route.multi && route.civs.length === 1 ? "&m=1" : "";
   return `#c=${route.civs.join(",")}${multi}${route.year !== undefined ? `&y=${Math.round(route.year)}` : ""}`;
@@ -153,6 +176,7 @@ function go(route: Route, push: boolean) {
 }
 
 function currentRoute(): Route {
+  if (country) return { country: country.id, view: countryView, year };
   return expanded && active
     ? { civs: [active.id], year }
     : { civs: highlighted.map((c) => c.id), multi: true, year };
@@ -210,6 +234,7 @@ function render() {
     updateHint();
     return;
   }
+  eventLayer.update(year);
   scene.requestRender();
   if (drawing) return;
   drawing = true;
@@ -280,6 +305,7 @@ document.addEventListener("keydown", (e) => {
   }
   if (e.key === "Escape") {
     info.hidden = true;
+    closeEvent();
     sources.hidden = true;
   }
 });
@@ -288,6 +314,7 @@ document.addEventListener("keydown", (e) => {
 const nf = new Intl.NumberFormat("en");
 function showInfo(p: Polity) {
   sources.hidden = true;
+  closeEvent();
   const civ = civs?.ofRealm(p.name);
   $("info-kind").textContent =
     civ && highlighted.includes(civ) ? (civ === active || !expanded ? "Highlighted realm" : "Related realm") : "Realm";
@@ -311,6 +338,12 @@ function showInfo(p: Polity) {
   info.hidden = false;
 }
 
+function eventAt(position: { x: number; y: number }): HistoryEvent | undefined {
+  const picked = scene.pick(position as never);
+  const e = defined(picked) ? (picked.id as HistoryEvent | undefined) : undefined;
+  return e && typeof e === "object" && "lonLat" in e ? e : undefined;
+}
+
 function polityAt(position: { x: number; y: number }): Polity | undefined {
   const picked = scene.pick(position as never);
   const p = defined(picked) ? (picked.id as Polity | undefined) : undefined;
@@ -322,6 +355,7 @@ function clickRealm(p: Polity | null | undefined) {
   hideTooltip();
   if (!p) {
     info.hidden = true;
+    closeEvent();
     return;
   }
   const civ = civs?.ofRealm(p.name);
@@ -366,7 +400,9 @@ function hideTooltip() {
 
 const handler = new ScreenSpaceEventHandler(scene.canvas);
 handler.setInputAction((event: ScreenSpaceEventHandler.PositionedEvent) => {
-  clickRealm(polityAt(event.position));
+  const e = eventAt(event.position);
+  if (e) openEvent(e);
+  else clickRealm(polityAt(event.position));
 }, ScreenSpaceEventType.LEFT_CLICK);
 
 let hoverPosition: { x: number; y: number } | null = null;
@@ -376,7 +412,10 @@ handler.setInputAction((event: ScreenSpaceEventHandler.MotionEvent) => {
   if (hoverFrame) return;
   hoverFrame = requestAnimationFrame(() => {
     hoverFrame = 0;
-    if (hoverPosition) hoverRealm(polityAt(hoverPosition), hoverPosition.x, hoverPosition.y);
+    if (!hoverPosition) return;
+    const e = eventAt(hoverPosition);
+    if (e) hoverEvent(e, hoverPosition.x, hoverPosition.y);
+    else hoverRealm(polityAt(hoverPosition), hoverPosition.x, hoverPosition.y);
   });
 }, ScreenSpaceEventType.MOUSE_MOVE);
 scene.canvas.addEventListener("pointerleave", () => {
@@ -387,13 +426,21 @@ scene.canvas.addEventListener("pointerleave", () => {
 // Hovering a lane's before/after icon names that civilization and its years.
 const trackEl = $("track");
 trackEl.addEventListener("pointerover", (e) => {
-  const link = (e.target as HTMLElement).closest<HTMLElement>(".lane-link");
+  const mark = (e.target as HTMLElement).closest<HTMLElement>(".mark");
+  const link = mark ?? (e.target as HTMLElement).closest<HTMLElement>(".lane-link");
   if (!link) return;
-  tooltip.replaceChildren(
-    Object.assign(document.createElement("span"), { textContent: link.dataset.side === "before" ? "Before" : "After" }),
-    Object.assign(document.createElement("strong"), { textContent: link.dataset.name }),
-    Object.assign(document.createElement("span"), { textContent: `${link.dataset.range} · click to open` }),
-  );
+  if (mark) {
+    tooltip.replaceChildren(
+      Object.assign(document.createElement("strong"), { textContent: mark.dataset.label }),
+      Object.assign(document.createElement("span"), { textContent: mark.classList.contains("cluster") ? `${mark.dataset.detail} · click to zoom in` : `${mark.dataset.detail} · click to see it` }),
+    );
+  } else {
+    tooltip.replaceChildren(
+      Object.assign(document.createElement("span"), { textContent: link.dataset.side === "before" ? "Before" : "After" }),
+      Object.assign(document.createElement("strong"), { textContent: link.dataset.name }),
+      Object.assign(document.createElement("span"), { textContent: `${link.dataset.range} · click to open` }),
+    );
+  }
   tooltip.hidden = false;
   const icon = link.getBoundingClientRect();
   const tip = tooltip.getBoundingClientRect();
@@ -401,13 +448,14 @@ trackEl.addEventListener("pointerover", (e) => {
   tooltip.style.transform = `translate(${x}px, ${icon.top - tip.height - 8}px)`;
 });
 trackEl.addEventListener("pointerout", (e) => {
-  if ((e.target as HTMLElement).closest(".lane-link")) tooltip.hidden = true;
+  if ((e.target as HTMLElement).closest(".lane-link, .mark")) tooltip.hidden = true;
 });
 
 $("info-close").addEventListener("click", () => (info.hidden = true));
 $("sources-button").addEventListener("click", () => {
   info.hidden = true;
   sources.hidden = !sources.hidden;
+  if (!sources.hidden) closeEvent();
 });
 $("sources-close").addEventListener("click", () => (sources.hidden = true));
 
@@ -652,14 +700,118 @@ function showHighlight() {
     before: neighbours.get(c.id)?.before.map(toLink),
     after: neighbours.get(c.id)?.after.map(toLink),
   }));
-  const label = !expanded
+  const label = country
+    ? countryView === "territory"
+      ? `Within today's ${country.name}`
+      : `Civilizations that led to ${country.name}`
+    : !expanded
     ? `${highlighted.length} civilizations`
     : highlighted.length > 1
       ? `${active.name} and related realms`
       : active.name;
   timeline?.setFeatured(lanes, label);
+  showEvents();
   render();
 }
+
+// Events: the badges of the highlighted civilizations' battles, treaties and
+// so on, on the globe, the map and the timeline.
+let allEvents: HistoryEvent[] = [];
+let shownEvents: HistoryEvent[] = [];
+let openedEvent: HistoryEvent | null = null;
+
+function eventWhen(e: HistoryEvent): string {
+  return e.to && e.to !== e.year ? formatRange(e.year, e.to) : formatYear(e.year);
+}
+
+function showEvents() {
+  const ids = new Set(highlighted.map((c) => c.id));
+  shownEvents = allEvents.filter((e) => e.civs.some((id) => ids.has(id)));
+  eventLayer.set(shownEvents);
+  map.setEvents(shownEvents);
+  timeline?.setMarks(
+    shownEvents.map((e) => ({
+      id: e.id,
+      year: e.year,
+      icon: badgeSvg(e.kind, 14),
+      label: e.title,
+      detail: `${KINDS[e.kind].label} · ${eventWhen(e)}`,
+    })),
+  );
+  if (openedEvent && !shownEvents.includes(openedEvent)) closeEvent();
+}
+
+const eventPanel = $("event");
+function closeEvent() {
+  openedEvent = null;
+  eventPanel.hidden = true;
+}
+
+/** Opens the panel with an event's story, picture and further reading. */
+function openEvent(e: HistoryEvent) {
+  hideTooltip();
+  info.hidden = true;
+  sources.hidden = true;
+  openedEvent = e;
+  $("event-badge").innerHTML = badgeSvg(e.kind, 22);
+  $("event-kind").textContent = KINDS[e.kind].label;
+  $("event-title").textContent = e.title;
+  const where = typeof e.approx === "string" ? e.approx : e.approx ? `${e.place} (approximate location)` : e.place;
+  $("event-when").textContent = `${eventWhen(e)} · ${where}`;
+  $("event-summary").textContent = e.summary;
+  $("event-links").replaceChildren(
+    ...eventLinks(e).map((l) => {
+      const item = document.createElement("li");
+      const a = Object.assign(document.createElement("a"), { href: l.url, target: "_blank", rel: "noopener", textContent: l.label });
+      item.append(a);
+      if (l.note) item.append(Object.assign(document.createElement("small"), { textContent: l.note }));
+      return item;
+    }),
+  );
+  const figure = $("event-figure");
+  const image = $<HTMLImageElement>("event-image");
+  figure.hidden = true;
+  image.removeAttribute("src");
+  eventPanel.hidden = false;
+  eventPanel.scrollTop = 0;
+  eventPicture(e).then((picture) => {
+    if (openedEvent !== e || !picture) return;
+    image.onload = () => {
+      if (openedEvent === e) figure.hidden = false;
+    };
+    image.src = picture.thumb;
+    const credit = $<HTMLAnchorElement>("event-credit");
+    credit.href = picture.page;
+    credit.textContent = `${picture.artist || "Wikimedia Commons"}${picture.license ? `, ${picture.license}` : ""}`;
+    credit.title = `Picture: ${picture.file}. Opens on Wikimedia Commons.`;
+  });
+}
+
+function hoverEvent(e: HistoryEvent, x: number, y: number) {
+  layer.setHovered(null);
+  map.setHovered(null);
+  tooltip.replaceChildren(
+    Object.assign(document.createElement("strong"), { textContent: e.title }),
+    Object.assign(document.createElement("span"), { textContent: `${KINDS[e.kind].label} · ${eventWhen(e)} · click for more` }),
+  );
+  tooltip.style.transform = `translate(${x + 14}px, ${y + 14}px)`;
+  tooltip.hidden = false;
+  scene.canvas.style.cursor = "pointer";
+  mapCanvas.style.cursor = "pointer";
+}
+
+/** Turns the globe or map to a place, keeping the zoom unless it is too far out. */
+function flyToPoint([lon, lat]: [number, number]) {
+  if (map.active) return map.focus(lon, lat, null);
+  const height = Math.min(widget.camera.positionCartographic.height, 9_000_000);
+  widget.camera.flyTo({
+    destination: Cartesian3.fromDegrees(lon, lat - (narrow ? 6 : 0), height),
+    orientation: orientation(),
+    duration: 1.2,
+  });
+}
+
+$("event-close").addEventListener("click", closeEvent);
 
 function setYearEverywhere(next: number) {
   setYear(next);
@@ -678,10 +830,13 @@ function showMasthead() {
   const list = chosen();
   const from = Math.min(...list.map((c) => c.from));
   const to = Math.max(...list.map((c) => c.to));
-  const title = viewTitle(list);
+  const title = country ? country.name : viewTitle(list);
   $("civ-title").textContent = title;
-  $("civ-sub").textContent =
-    list.length === 1
+  $("civ-sub").textContent = country
+    ? countryView === "territory"
+      ? `${list.length} civilizations whose borders crossed today's ${country.name} · ${formatRange(from, to)}`
+      : `${list.length} civilizations that led to ${country.name} · ${formatRange(from, to)}`
+    : list.length === 1
       ? `${formatRange(from, to)} · ${civEraText(list[0])}`
       : `${list.length} civilizations · ${formatRange(from, to)}`;
   $("view-focus").setAttribute("aria-label", `Show the years of ${title}`);
@@ -692,7 +847,9 @@ function showMasthead() {
 function openCiv(c: Civilization, options: OpenOptions = {}) {
   if (!civs) return;
   const list = civs;
-  const switching = active !== c || !expanded;
+  const switching = active !== c || !expanded || !!country;
+  country = null;
+  showOutline(null);
   active = c;
   expanded = true;
   landingEl.hidden = true;
@@ -735,6 +892,9 @@ interface ViewOptions {
   push?: boolean;
   /** Move the camera to the first civilization (default true). */
   fly?: boolean;
+  /** The country whose lineage or territory this is. */
+  country?: Country;
+  countryView?: CountryView;
 }
 
 /** Shows exactly these civilizations on the globe, each in its own colour. */
@@ -743,6 +903,9 @@ function openView(list: Civilization[], options: ViewOptions = {}) {
   if (!unique.length) return;
   active = unique[0];
   expanded = false;
+  country = options.country ?? null;
+  countryView = options.countryView ?? "nationality";
+  showOutline(country && countryView === "territory" ? country : null);
   highlighted = unique;
   landingEl.hidden = true;
   showMasthead();
@@ -769,6 +932,60 @@ function applyPicked(list: Civilization[]) {
   flyToCiv(fresh[0]);
 }
 
+/** Points the camera at a place, framing an area of so many km². */
+function flyToPlace([lon, lat]: [number, number], area: number) {
+  if (map.active) return map.focus(lon, lat, area);
+  widget.camera.flyTo({
+    destination: Cartesian3.fromDegrees(lon, lat - (narrow ? 6 : 0), altitudeFor(area)),
+    orientation: orientation(),
+    duration: 1.4,
+  });
+}
+
+/** Outlines a country's present border on the globe and map, or clears it. */
+let outlineFor: Country | null = null;
+function showOutline(k: Country | null) {
+  outlineFor = k;
+  layer.setOutline(null);
+  map.setOutline(null);
+  const modern = k && civs?.get(k.civ);
+  if (!k || !modern || !data) return;
+  const names = new Set(modern.names);
+  const last = data.to;
+  data
+    .load(last, last)
+    .then((shapes) => {
+      if (outlineFor !== k) return;
+      // Cliopatria writes overseas parts as "(Name)"; leave those out.
+      const rings = shapes
+        .filter((p) => p.to >= last && names.has(p.name) && !p.name.startsWith("("))
+        .flatMap((p) => p.rings);
+      layer.setOutline(rings);
+      map.setOutline(rings);
+    })
+    .catch((error: unknown) => console.error(error));
+}
+
+/**
+ * Shows a country: as a nationality, every civilization that led to it; as a
+ * territory, every civilization whose borders crossed its present land.
+ */
+function openCountry(k: Country, view: CountryView, options: { year?: number; push?: boolean } = {}) {
+  if (!civs) return;
+  const known = civs;
+  const list = countryCivIds(k, view)
+    .map((id) => known.get(id))
+    .filter((c): c is Civilization => !!c);
+  if (!list.length) return;
+  const start = view === "territory" ? k.territoryYear : k.startYear;
+  openView(list, { year: options.year ?? start, push: options.push, fly: false, country: k, countryView: view });
+  // A territory is about the land, so it sits in the middle; a hand-picked
+  // lineage centres on the realm it is built around.
+  const focus = view === "nationality" && k.blurb ? known.get(k.focus) : undefined;
+  if (focus) flyToCiv(focus);
+  else flyToPlace(k.centre, k.area);
+}
+
 function showLanding() {
   if (playing) setPlaying(false);
   info.hidden = true;
@@ -783,6 +1000,8 @@ function route() {
   if (!civs) return;
   const list = civs;
   const r = readHash();
+  const k = r.country ? countries.find((c) => c.id === r.country) : undefined;
+  if (k) return openCountry(k, r.view ?? "nationality", { year: r.year });
   const found = (r.civs ?? []).map((id) => list.get(id)).filter((c): c is Civilization => !!c);
   if (!found.length) showLanding();
   else if (!r.multi) openCiv(found[0], { year: r.year });
@@ -801,13 +1020,25 @@ showYear();
 
 // Load the civilizations and the border index, then start.
 const base = new URL("data/", document.baseURI).href;
-Promise.all([Civilizations.load(base), BorderData.open(base)])
-  .then(([list, borders]) => {
+Promise.all([
+  Civilizations.load(base),
+  BorderData.open(base),
+  // The countries are a bonus; the page works without them.
+  loadCountries(base).catch((error: unknown) => (console.error(error), [] as Country[])),
+  loadEvents(base).catch((error: unknown) => (console.error(error), [] as HistoryEvent[])),
+])
+  .then(([list, borders, loaded, events]) => {
     civs = list;
+    allEvents = events;
+    countries = loaded;
     data = borders;
     statusEl.textContent = "";
-    landing = new Landing(landingEl, list.list, (picked) =>
-      picked.length === 1 ? openCiv(picked[0], { push: true }) : openView(picked, { push: true }),
+    landing = new Landing(
+      landingEl,
+      list.list,
+      (picked) => (picked.length === 1 ? openCiv(picked[0], { push: true }) : openView(picked, { push: true })),
+      countries,
+      (k, view) => openCountry(k, view, { push: true }),
     );
     const picker = new Picker($("picker"), list.list, applyPicked);
     $("add-civs").addEventListener("click", () => picker.open(new Set(highlighted)));
@@ -820,6 +1051,15 @@ Promise.all([Civilizations.load(base), BorderData.open(base)])
       featured: [],
       featuredLabel: "",
       colorOf: (name) => colors.get(name) ?? "#9aa1a9",
+      onMark: (id) => {
+        const e = shownEvents.find((x) => x.id === id);
+        if (!e) return;
+        if (playing) setPlaying(false);
+        tooltip.hidden = true;
+        setYearEverywhere(e.year);
+        flyToPoint(e.lonLat);
+        openEvent(e);
+      },
       onLink: (id) => {
         if (playing) setPlaying(false);
         hideTooltip();
