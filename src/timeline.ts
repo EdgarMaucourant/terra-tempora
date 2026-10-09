@@ -479,21 +479,29 @@ export class Timeline {
     svg.setAttribute("height", String(this.laneCount * rowHeight));
     const mid = (s: Lane) => (this.laneOf.get(s.name) ?? 0) * rowHeight + this.laneHeight / 2;
     for (const [a, b] of joins) {
-      const x1 = this.x(a.to + 1);
-      const x2 = this.x(b.from);
+      const end = this.x(a.to + 1);
+      const start = this.x(b.from);
       const y1 = mid(a);
       const y2 = mid(b);
-      // Out of the end of one lane and into the start of the other; when they
-      // overlap in time the line loops back.
-      const reach = Math.max(10, Math.abs(x2 - x1) / 2);
+      let d: string;
+      let from: [number, number];
+      if (start - end >= 6) {
+        // A gap between them: from the end of one lane forward to the start of the other.
+        const reach = (start - end) / 2;
+        d = `M${end} ${y1}C${end + reach} ${y1} ${start - reach} ${y2} ${start} ${y2}`;
+        from = [end, y1];
+      } else {
+        // They overlap in time: a straight drop from the earlier lane at the
+        // moment the later one begins, so lines never loop back and tangle.
+        const x = Math.min(end, Math.max(this.x(a.from), start));
+        d = `M${x} ${y1}L${x} ${y2}${x === start ? "" : `L${start} ${y2}`}`;
+        from = [x, y1];
+      }
       const path = document.createElementNS(NS, "path");
-      path.setAttribute("d", `M${x1} ${y1}C${x1 + reach} ${y1} ${x2 - reach} ${y2} ${x2} ${y2}`);
+      path.setAttribute("d", d);
       path.setAttribute("stroke", CONNECTOR);
       svg.append(path);
-      for (const [x, y] of [
-        [x1, y1],
-        [x2, y2],
-      ]) {
+      for (const [x, y] of [from, [start, y2]]) {
         const dot = document.createElementNS(NS, "circle");
         dot.setAttribute("cx", String(x));
         dot.setAttribute("cy", String(y));
