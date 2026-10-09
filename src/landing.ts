@@ -2,7 +2,7 @@ import { civEraText, civEras, eraLabel, shapePath, type Civilization } from "./c
 import { ERAS, type Era } from "./eras";
 import type { Country } from "./countries";
 import { realmFacts, type RealmFacts } from "./wikidata";
-import { formatRange } from "./years";
+import { formatRange, formatYear } from "./years";
 
 type Sort = "area" | "oldest" | "newest" | "name";
 
@@ -14,6 +14,8 @@ const SORTS: Record<Sort, (a: Civilization, b: Civilization) => number> = {
 };
 
 const nf = new Intl.NumberFormat("en");
+// Countries shown before "Show all", largest first.
+const COUNTRIES_SHOWN = 12;
 
 function el<K extends keyof HTMLElementTagNameMap>(tag: K, className?: string, text?: string): HTMLElementTagNameMap[K] {
   const node = document.createElement(tag);
@@ -89,21 +91,44 @@ export class Landing {
       this.onOpen(picked);
     });
 
-    const countryGrid = root.querySelector<HTMLElement>("#country-grid");
-    countryGrid?.replaceChildren(...countries.map(({ country, civs }) => this.countryCard(country, civs, onCountry)));
-    root.querySelector<HTMLElement>(".countries")!.hidden = !countries.length;
+    this.setupCountries(countries, onCountry);
 
     this.render();
   }
 
+  /** The countries section: the largest few, or every match while searching. */
+  private setupCountries(countries: { country: Country; civs: Civilization[] }[], onCountry?: (country: Country) => void) {
+    const section = this.root.querySelector<HTMLElement>(".countries")!;
+    section.hidden = !countries.length;
+    if (!countries.length) return;
+    const grid = section.querySelector<HTMLElement>("#country-grid")!;
+    const search = section.querySelector<HTMLInputElement>("#country-search")!;
+    const more = section.querySelector<HTMLButtonElement>("#country-more")!;
+    const cards = countries.map(({ country, civs }) => ({ country, card: this.countryCard(country, civs, onCountry) }));
+    let all = false;
+    const show = () => {
+      const query = search.value.trim().toLowerCase();
+      const matches = cards.filter(({ country }) => !query || country.name.toLowerCase().includes(query));
+      const shown = all || query ? matches : matches.slice(0, COUNTRIES_SHOWN);
+      grid.replaceChildren(...shown.map((c) => c.card));
+      more.hidden = !!query || matches.length <= COUNTRIES_SHOWN;
+      more.textContent = all ? "Show fewer countries" : `Show all ${nf.format(cards.length)} countries`;
+      if (query && !matches.length) grid.replaceChildren(el("p", "country-meta", "No country matches."));
+    };
+    search.addEventListener("input", show);
+    more.addEventListener("click", () => {
+      all = !all;
+      show();
+    });
+    show();
+  }
+
   private countryCard(country: Country, civs: Civilization[], onCountry?: (country: Country) => void): HTMLElement {
     const card = el("article", "country-card");
-    const flag = el("div", "country-flag");
-    flag.setAttribute("aria-hidden", "true");
-    for (const colour of country.flag) {
-      const stripe = el("span");
-      stripe.style.background = colour;
-      flag.append(stripe);
+    const today = civs.find((c) => c.id === country.civ);
+    const shape = el("div");
+    if (today) {
+      shape.innerHTML = `<svg class="country-shape" viewBox="-6 -6 112 112" aria-hidden="true"><path d="${shapePath(today)}"/></svg>`;
     }
     const body = el("div");
     const title = el("h3");
@@ -115,13 +140,9 @@ export class Landing {
     });
     title.append(link);
     const from = Math.min(...civs.map((c) => c.from));
-    const to = Math.max(...civs.map((c) => c.to));
-    body.append(
-      title,
-      el("p", "country-meta", `${civs.length} civilizations · ${formatRange(from, to)}`),
-      el("p", "country-blurb", country.blurb),
-    );
-    card.append(flag, body);
+    body.append(title, el("p", "country-meta", `${civs.length} civilizations since ${formatYear(from)}`));
+    if (country.blurb) card.title = country.blurb;
+    card.append(shape, body);
     return card;
   }
 

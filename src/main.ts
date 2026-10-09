@@ -15,7 +15,7 @@ import "cesium/Build/Cesium/Widgets/CesiumWidget/CesiumWidget.css";
 import "./style.css";
 import { civEraText, Civilizations, type Civilization } from "./civilizations";
 import { highlightColors } from "./colors";
-import { COUNTRIES, type Country } from "./countries";
+import { loadCountries, type Country } from "./countries";
 import { BorderData, type Polity } from "./data";
 import { eraAt, ERAS, NOW } from "./eras";
 import { Landing } from "./landing";
@@ -115,6 +115,7 @@ let highlighted: Civilization[] = [];
 let expanded = true;
 /** The country whose lineage is shown, when the view was opened from a country card. */
 let country: Country | null = null;
+let countries: Country[] = [];
 let colors = new Map<string, string>();
 
 // Links: #c=mongol-empire&y=1241 opens a civilization on a year, with its
@@ -809,7 +810,7 @@ function route() {
   if (!civs) return;
   const list = civs;
   const r = readHash();
-  const k = r.country ? COUNTRIES.find((c) => c.id === r.country) : undefined;
+  const k = r.country ? countries.find((c) => c.id === r.country) : undefined;
   if (k) return openCountry(k, { year: r.year });
   const found = (r.civs ?? []).map((id) => list.get(id)).filter((c): c is Civilization => !!c);
   if (!found.length) showLanding();
@@ -829,16 +830,22 @@ showYear();
 
 // Load the civilizations and the border index, then start.
 const base = new URL("data/", document.baseURI).href;
-Promise.all([Civilizations.load(base), BorderData.open(base)])
-  .then(([list, borders]) => {
+Promise.all([
+  Civilizations.load(base),
+  BorderData.open(base),
+  // The countries are a bonus; the page works without them.
+  loadCountries(base).catch((error: unknown) => (console.error(error), [] as Country[])),
+])
+  .then(([list, borders, loaded]) => {
     civs = list;
+    countries = loaded;
     data = borders;
     statusEl.textContent = "";
     landing = new Landing(
       landingEl,
       list.list,
       (picked) => (picked.length === 1 ? openCiv(picked[0], { push: true }) : openView(picked, { push: true })),
-      COUNTRIES.map((k) => ({
+      countries.map((k) => ({
         country: k,
         civs: k.lineage.map((id) => list.get(id)).filter((c): c is Civilization => !!c),
       })),

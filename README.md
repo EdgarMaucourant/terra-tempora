@@ -16,11 +16,15 @@ in a timeline that runs from 10,000 BCE to today.
   successors Wikidata records, plus hand-picked families such as the Mongol
   khanates (`FAMILIES` in `scripts/build-civilizations.mjs`). Every other realm
   is grey; hovering one names it, clicking it makes it the highlighted one.
-- A "Countries" section at the top of the landing page. A country's card opens
-  every civilization that led to it, wherever it stood: France opens Rome, the
-  Frankish realms, the duchies and kingdoms France absorbed, and every regime
-  since the Revolution (44 in all). The lineages are hand-picked in
-  `src/countries.ts`; links look like `#k=france&y=470`.
+- A "Countries" section at the top of the landing page, with a card for each of
+  the 183 present-day countries in the data (the largest first; search or show
+  all). A card opens every civilization that led to that country. The
+  lineages are computed by `npm run countries` (`scripts/build-countries.mjs`):
+  a civilization belongs when it once covered at least a tenth of the country's
+  present land, or when most of its own land lay inside it. France's lineage is
+  hand-picked instead, to take in Rome from its start in Italy and the Franks
+  from beyond the Rhine. Links look like `#k=france&y=470`.
+- When many civilizations share the timeline, the lanes scroll.
 - "Select several" on the landing page ticks cards instead of opening them;
   "Show on the globe" then highlights exactly the ticked civilizations, each in
   its own colour, with a lane each on the timeline. On the globe, "+ Add
@@ -89,7 +93,8 @@ for the claude.ai preview.
 | `scripts/build-data.mjs` | Simplifies Cliopatria borders, picks label points, splits them into time windows |
 | `scripts/build-civilizations.mjs` | One entry per civilization: dates, largest extent, outline, family |
 | `src/landing.ts` | The landing page of civilization cards, with multi-select |
-| `src/countries.ts` | Countries of today and the civilizations that led to each |
+| `scripts/build-countries.mjs` | Countries of today and the civilizations that led to each, from the borders |
+| `src/countries.ts` | Loads the countries |
 | `src/picker.ts` | The list for adding civilizations to the globe and removing them |
 | `src/civilizations.ts` | Loads the civilization list; era labels and outlines |
 | `src/wikidata.ts` | Pictures, key figures and predecessor/successor links from Wikimedia |

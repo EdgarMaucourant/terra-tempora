@@ -168,9 +168,18 @@
           lit up with the realms it came from and the ones that followed.
         </p>
         <section class="countries" aria-labelledby="countries-title">
-          <h2 id="countries-title" class="section-title">Countries</h2>
-          <p class="section-sub">Every civilization that led to a country of today, wherever it stood on the map.</p>
+          <div class="section-head">
+            <div>
+              <h2 id="countries-title" class="section-title">Countries</h2>
+              <p class="section-sub">Every civilization that led to a country of today.</p>
+            </div>
+            <label class="search country-search">
+              <span class="visually-hidden">Search countries</span>
+              <input id="country-search" type="search" autocomplete="off" placeholder="Search countries" />
+            </label>
+          </div>
           <div id="country-grid" class="country-grid"></div>
+          <button id="country-more" class="ghost country-more" type="button"></button>
         </section>
         <h2 class="section-title">All civilizations</h2>
         <div class="filters">

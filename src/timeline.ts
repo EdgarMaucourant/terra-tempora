@@ -52,8 +52,8 @@ export interface TimelineOptions {
 
 type Gesture =
   | { kind: "none" }
-  | { kind: "press"; x: number; viewFrom: number; viewTo: number; target: HTMLElement }
-  | { kind: "pan"; x: number; viewFrom: number; viewTo: number }
+  | { kind: "press"; x: number; y: number; scroll: number; viewFrom: number; viewTo: number; target: HTMLElement }
+  | { kind: "pan"; x: number; y: number; scroll: number; viewFrom: number; viewTo: number }
   | { kind: "scrub" }
   | { kind: "pinch"; distance: number; anchor: number; span: number; mid: number };
 
@@ -362,7 +362,15 @@ export class Timeline {
     const nearPlayhead = Math.abs(this.yearAt(e.clientX) - this.year) * (this.width / (this.viewTo - this.viewFrom)) < 14;
     this.gesture = nearPlayhead
       ? { kind: "scrub" }
-      : { kind: "press", x: e.clientX, viewFrom: this.viewFrom, viewTo: this.viewTo, target: e.target as HTMLElement };
+      : {
+          kind: "press",
+          x: e.clientX,
+          y: e.clientY,
+          scroll: this.lanesEl.scrollTop,
+          viewFrom: this.viewFrom,
+          viewTo: this.viewTo,
+          target: e.target as HTMLElement,
+        };
   }
 
   private pointerMove(e: PointerEvent) {
@@ -379,8 +387,11 @@ export class Timeline {
       this.pick(this.yearAt(e.clientX), false);
     } else if (g.kind === "press" || g.kind === "pan") {
       const dx = e.clientX - g.x;
-      if (g.kind === "press" && Math.abs(dx) < TAP_SLOP) return;
+      const dy = e.clientY - g.y;
+      if (g.kind === "press" && Math.abs(dx) < TAP_SLOP && Math.abs(dy) < TAP_SLOP) return;
       this.gesture = { ...g, kind: "pan" };
+      // Dragging up and down scrolls the lanes when there are more than fit.
+      this.lanesEl.scrollTop = g.scroll - dy;
       const shift = (dx / this.width) * (g.viewTo - g.viewFrom);
       this.setView(g.viewFrom - shift, g.viewTo - shift);
     }
@@ -422,6 +433,17 @@ export class Timeline {
   }
 
   private wheel(e: WheelEvent) {
+    // Over lanes that scroll, a plain vertical wheel scrolls them.
+    const lanes = this.lanesEl;
+    if (
+      !e.ctrlKey &&
+      !e.shiftKey &&
+      Math.abs(e.deltaY) > Math.abs(e.deltaX) &&
+      lanes.scrollHeight > lanes.clientHeight + 1 &&
+      lanes.contains(e.target as Node)
+    ) {
+      return;
+    }
     e.preventDefault();
     const span = this.viewTo - this.viewFrom;
     const horizontal = Math.abs(e.deltaX) > Math.abs(e.deltaY) || e.shiftKey;

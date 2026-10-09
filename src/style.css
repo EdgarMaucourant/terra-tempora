@@ -595,7 +595,8 @@ a {
 .track.sized .lanes,
 .track.sized .lanes.folded {
   height: auto;
-  min-height: calc(var(--lanes, 1) * 16px - 3px);
+  max-height: none;
+  min-height: min(calc(var(--lanes, 1) * 16px - 3px), 24vh);
 }
 
 .timeline-grip {
@@ -668,6 +669,11 @@ a {
 .lanes {
   position: relative;
   height: calc(var(--lanes, 1) * (var(--lane-height) + 3px) - 3px);
+  /* Many lanes at once scroll rather than push the timeline up the screen. */
+  max-height: 24vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: thin;
 }
 
 .lane-bar {
@@ -934,21 +940,38 @@ a {
   margin-bottom: 34px;
 }
 
+.section-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 4px 16px;
+  margin-bottom: 12px;
+}
+
+.section-head .section-sub {
+  margin-bottom: 0;
+}
+
+.country-search {
+  flex: 0 1 260px;
+}
+
 .country-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 14px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
 }
 
 .country-card {
   position: relative;
   display: grid;
-  grid-template-columns: 76px 1fr;
-  gap: 16px;
+  grid-template-columns: 48px 1fr;
+  gap: 12px;
   align-items: center;
-  padding: 16px;
+  padding: 10px 12px;
   border: 1px solid var(--line);
-  border-radius: var(--radius);
+  border-radius: 12px;
   background: var(--panel-solid);
   transition:
     transform 0.18s ease,
@@ -966,21 +989,22 @@ a {
   outline-offset: 2px;
 }
 
-.country-flag {
-  display: flex;
-  height: 50px;
-  overflow: hidden;
-  border-radius: 6px;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.12);
+.country-shape {
+  width: 48px;
+  height: 48px;
 }
 
-.country-flag span {
-  flex: 1;
+.country-shape path {
+  fill: color-mix(in srgb, var(--steppe) 45%, transparent);
+  stroke: color-mix(in srgb, var(--steppe) 80%, white);
+  stroke-width: 0.8;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
 }
 
 .country-card h3 {
   margin: 0 0 2px;
-  font: 600 22px/1.15 var(--font-display);
+  font: 600 17px/1.15 var(--font-display);
 }
 
 .country-link {
@@ -1000,17 +1024,18 @@ a {
 }
 
 .country-meta {
-  margin: 0 0 6px;
-  font-size: 13px;
-  color: var(--steppe);
+  margin: 0;
+  font-size: 12px;
+  color: var(--ink-soft);
   font-variant-numeric: tabular-nums;
 }
 
-.country-blurb {
-  margin: 0;
-  font-size: 13px;
-  color: var(--ink-soft);
-  text-wrap: pretty;
+.country-more {
+  margin-top: 12px;
+}
+
+.country-more[hidden] {
+  display: none;
 }
 
 .filters {
