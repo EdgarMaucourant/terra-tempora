@@ -1,6 +1,7 @@
 # Reads every civilization's key events from Wikidata (scripts/fetch-events.mjs)
 # and commits them to public/data/wd-events/. Run it by hand from the Actions
-# tab; it also runs when the script changes on a branch.
+# tab; it also runs when the script changes on a branch. Each run fetches for
+# up to 50 minutes and saves its progress; the next run carries on from there.
 name: Fetch Wikidata events
 
 on:
@@ -17,13 +18,13 @@ permissions:
 jobs:
   fetch:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: node scripts/fetch-events.mjs
+      - run: node scripts/fetch-events.mjs --minutes 50
       - name: Commit the events
         run: |
           git config user.name "github-actions[bot]"

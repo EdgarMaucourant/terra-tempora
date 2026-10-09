@@ -6,9 +6,11 @@
 // years and (except wars) a place. The best-known events of each realm are
 // kept, ranked by how many Wikipedia editions cover them.
 //
-//   node scripts/fetch-events.mjs [civ-id …]
+//   node scripts/fetch-events.mjs [--minutes N] [--again] [civ-id …]
 //
-// With civilization ids, only those are fetched and merged into the files.
+// Civilizations already in the files are skipped, unless --again is given or
+// they are named, so a run stopped by --minutes (default 50) picks up where
+// it left off next time. The files are saved after every batch.
 
 import { mkdirSync, readFileSync, writeFileSync, existsSync } from "node:fs";
 
@@ -17,35 +19,44 @@ const AGENT = "history-globe/0.1 (https://github.com/EdgarMaucourant/history-glo
 const OUT = "public/data/wd-events";
 // Kept in step with src/wikiEvents.ts.
 const SHARDS = 16;
-const BATCH = 6;
+const BATCH = 8;
+// Queries run at once; Wikidata allows five per client.
+const PARALLEL = 3;
 const PER_CIV = 24;
 const PER_CIV_PEOPLE = 8;
 
-function query(qids) {
-  return `SELECT ?civ ?e ?kind ?eLabel ?desc ?date ?end ?coord ?placeLabel ?title ?links WHERE {
-  VALUES ?civ { ${qids.map((q) => `wd:${q}`).join(" ")} }
-  {
-    { ?e wdt:P710 ?civ } UNION { ?e wdt:P1891 ?civ }
-    ?e wdt:P31 ?class.
-    ?class wdt:P279* ?type.
-    VALUES (?type ?kind) {
-      (wd:Q178561 "battle") (wd:Q188055 "siege") (wd:Q198 "war") (wd:Q831663 "war") (wd:Q131569 "treaty")
-    }
-    OPTIONAL { ?e wdt:P585 ?d1 }
+// The kinds of conflict and agreement looked for, by their Wikidata class.
+// Their subclasses are listed once up front, so the per-realm queries need
+// no costly subclass walk.
+const TYPES = { Q178561: "battle", Q188055: "siege", Q198: "war", Q831663: "war", Q131569: "treaty" };
+
+function classesQuery(type) {
+  return `SELECT ?c WHERE { ?c wdt:P279* wd:${type} }`;
+}
+
+// Three light queries per batch of realms rather than one heavy one.
+const PARTS = {
+  conflicts: `
+    ?e wdt:P710|wdt:P1891 ?civ; wdt:P31 ?class.
+    BIND("conflict" AS ?kind)
+    OPTIONAL { ?e wdt:P585 ?date }
     OPTIONAL { ?e wdt:P580 ?d2 }
     OPTIONAL { ?e wdt:P582 ?end }
-    BIND(COALESCE(?d1, ?d2) AS ?date)
-    OPTIONAL { ?e wdt:P625 ?c1 }
-    OPTIONAL { ?e wdt:P276 ?place. ?place wdt:P625 ?c2 }
-    BIND(COALESCE(?c1, ?c2) AS ?coord)
-  } UNION {
+    OPTIONAL { ?e wdt:P625 ?coord }
+    OPTIONAL { ?e wdt:P276 ?place. ?place wdt:P625 ?c2 }`,
+  people: `
     ?civ wdt:P35|wdt:P6|wdt:P112 ?e. ?e wdt:P31 wd:Q5.
     { ?e wdt:P569 ?date; wdt:P19 ?place. BIND("birth" AS ?kind) } UNION
     { ?e wdt:P570 ?date; wdt:P20 ?place. BIND("death" AS ?kind) }
-    ?place wdt:P625 ?coord.
-  } UNION {
-    ?civ wdt:P36 ?e. ?e wdt:P571 ?date; wdt:P625 ?coord. BIND("city" AS ?kind)
-  }
+    ?place wdt:P625 ?coord.`,
+  capitals: `
+    ?civ wdt:P36 ?e. ?e wdt:P571 ?date; wdt:P625 ?coord. BIND("city" AS ?kind)`,
+};
+
+function query(part, qids) {
+  return `SELECT ?civ ?e ?kind ?class ?eLabel ?desc ?date ?d2 ?end ?coord ?c2 ?placeLabel ?title ?links WHERE {
+  VALUES ?civ { ${qids.map((q) => `wd:${q}`).join(" ")} }
+  ${PARTS[part].trim()}
   ?article schema:about ?e; schema:isPartOf <https://en.wikipedia.org/>; schema:name ?title.
   ?e wikibase:sitelinks ?links.
   OPTIONAL { ?e rdfs:label ?eLabel. FILTER(LANG(?eLabel) = "en") }
@@ -80,13 +91,20 @@ function titleOf(kind, label) {
   return label;
 }
 
+// Wikidata class → kind of event, filled in before the realms are fetched.
+const kindOfClass = new Map();
+
 function parse(bindings) {
   const found = new Map();
   for (const b of bindings) {
-    const year = yearOf(b.date?.value);
+    const year = yearOf(b.date?.value ?? b.d2?.value);
     if (year == null) continue;
+    let kind = b.kind.value;
+    if (kind === "conflict") {
+      kind = kindOfClass.get(qidOf(b.class.value));
+      if (!kind) continue;
+    }
     const civ = qidOf(b.civ.value);
-    const kind = b.kind.value;
     const people = kind === "birth" || kind === "death";
     const key = `${civ} ${qidOf(b.e.value)} ${people ? kind : "event"}`;
     const known = found.get(key);
@@ -98,9 +116,9 @@ function parse(bindings) {
       kind,
       year,
       to: end != null && end > year ? end : undefined,
-      title: titleOf(kind, b.eLabel?.value ?? b.title.value),
-      place: b.placeLabel?.value ?? "",
-      lonLat: pointOf(b.coord?.value) ?? known?.lonLat ?? null,
+      title: titleOf(kind, b.eLabel?.value ?? b.title.value.replace(/_/g, " ")),
+      place: b.placeLabel?.value ?? known?.place ?? "",
+      lonLat: pointOf(b.coord?.value) ?? pointOf(b.c2?.value) ?? known?.lonLat ?? null,
       summary: desc && desc[0].toUpperCase() + desc.slice(1) + (/[.!?]$/.test(desc) ? "" : "."),
       wikipedia: b.title.value.replace(/ /g, "_"),
       links: Number(b.links.value),
@@ -113,7 +131,6 @@ function parse(bindings) {
   }
   return byCiv;
 }
-
 /** The realm's best-known events within its own years. */
 function pick(c, raw) {
   const inSpan = raw.filter((e) => {
@@ -148,39 +165,54 @@ function pick(c, raw) {
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-async function ask(qids) {
+class Timeout extends Error {}
+
+async function sparql(text) {
   for (let attempt = 0; ; attempt++) {
-    const response = await fetch(SPARQL, {
-      method: "POST",
-      headers: {
-        Accept: "application/sparql-results+json",
-        "Content-Type": "application/x-www-form-urlencoded",
-        "User-Agent": AGENT,
-      },
-      body: new URLSearchParams({ query: query(qids) }),
-    });
+    let response;
+    try {
+      response = await fetch(SPARQL, {
+        method: "POST",
+        headers: {
+          Accept: "application/sparql-results+json",
+          "Content-Type": "application/x-www-form-urlencoded",
+          "User-Agent": AGENT,
+        },
+        body: new URLSearchParams({ query: text }),
+        signal: AbortSignal.timeout(75_000),
+      });
+    } catch (error) {
+      if (attempt >= 2) throw error;
+      await sleep(5000);
+      continue;
+    }
     if (response.ok) return (await response.json()).results.bindings;
+    // Wikidata stops a query after 60 s and answers 500 or 504; retrying won't help.
+    if ([500, 502, 504].includes(response.status)) throw new Timeout(`Wikidata answered ${response.status}`);
+    if (attempt >= 4) throw new Error(`Wikidata answered ${response.status}`);
     const retryAfter = Number(response.headers.get("retry-after")) || 0;
-    // 500 is usually the 60 s timeout; the caller splits the batch.
-    if (response.status === 500 || attempt >= 4) throw new Error(`Wikidata answered ${response.status}`);
     await sleep(Math.max(retryAfter * 1000, 5000 * (attempt + 1)));
   }
 }
 
-async function fetchCivs(civs) {
+/** The events of these realms from one part of the query; a batch that times out is split. */
+async function fetchPart(part, civs) {
   try {
-    return parse(await ask(civs.map((c) => c.wikidata)));
+    return await sparql(query(part, civs.map((c) => c.wikidata)));
   } catch (error) {
     if (civs.length === 1) {
-      console.warn(`  ${civs[0].id}: ${error.message}`);
-      return new Map();
+      console.warn(`  ${civs[0].id} (${part}): ${error.message}`);
+      return [];
     }
-    // Split a batch that timed out, so one large realm does not sink the others.
     const half = Math.ceil(civs.length / 2);
-    const a = await fetchCivs(civs.slice(0, half));
-    const b = await fetchCivs(civs.slice(half));
-    return new Map([...a, ...b]);
+    return [...(await fetchPart(part, civs.slice(0, half))), ...(await fetchPart(part, civs.slice(half)))];
   }
+}
+
+async function fetchCivs(civs) {
+  const bindings = [];
+  for (const part of Object.keys(PARTS)) bindings.push(...(await fetchPart(part, civs)));
+  return parse(bindings);
 }
 
 function shardOf(id) {
@@ -189,30 +221,61 @@ function shardOf(id) {
   return h % SHARDS;
 }
 
+const args = process.argv.slice(2);
+const flag = (name) => args.includes(name);
+const minutesAt = args.indexOf("--minutes");
+const minutes = minutesAt >= 0 ? Number(args[minutesAt + 1]) : 50;
+const named = new Set(args.filter((a, i) => !a.startsWith("--") && args[i - 1] !== "--minutes"));
+
 const { civilizations } = JSON.parse(readFileSync("public/data/civilizations.json", "utf8"));
-const only = new Set(process.argv.slice(2));
-const wanted = civilizations.filter((c) => c.wikidata && (!only.size || only.has(c.id)));
+// Realms with hand-written events (public/data/events.json) don't need these.
+const curated = new Set(JSON.parse(readFileSync("public/data/events.json", "utf8")).events.flatMap((e) => e.civs));
 
 mkdirSync(OUT, { recursive: true });
 const shards = Array.from({ length: SHARDS }, (_, i) => {
   const file = `${OUT}/${i}.json`;
-  return only.size && existsSync(file) ? JSON.parse(readFileSync(file, "utf8")) : {};
+  return existsSync(file) ? JSON.parse(readFileSync(file, "utf8")) : {};
 });
+const done = (c) => c.id in shards[shardOf(c.id)];
+const wanted = civilizations.filter(
+  (c) => c.wikidata && !curated.has(c.id) && (named.size ? named.has(c.id) : flag("--again") || !done(c)),
+);
+console.log(`${wanted.length} civilizations to fetch.`);
 
-let total = 0;
-const started = Date.now();
-for (let i = 0; i < wanted.length; i += BATCH) {
-  const batch = wanted.slice(i, i + BATCH);
-  const byQid = await fetchCivs(batch);
-  for (const c of batch) {
-    const events = pick(c, byQid.get(c.wikidata) ?? []);
-    total += events.length;
-    if (events.length) shards[shardOf(c.id)][c.id] = events;
-    else delete shards[shardOf(c.id)][c.id];
+for (const [type, kind] of Object.entries(TYPES)) {
+  const classes = await sparql(classesQuery(type));
+  for (const b of classes) {
+    const c = qidOf(b.c.value);
+    const had = kindOfClass.get(c);
+    if (!had || RANK[kind] > RANK[had]) kindOfClass.set(c, kind);
   }
-  console.log(`${Math.min(i + BATCH, wanted.length)}/${wanted.length} civilizations, ${total} events, ${Math.round((Date.now() - started) / 1000)} s`);
-  await sleep(1000);
+  console.log(`${classes.length} kinds of ${kind}`);
 }
 
-shards.forEach((s, i) => writeFileSync(`${OUT}/${i}.json`, JSON.stringify(s)));
-console.log(`Saved ${total} events for ${wanted.length} civilizations in ${OUT}/.`);
+const save = () => shards.forEach((s, i) => writeFileSync(`${OUT}/${i}.json`, JSON.stringify(s)));
+const started = Date.now();
+const deadline = started + minutes * 60_000;
+let next = 0;
+let fetched = 0;
+let total = 0;
+
+async function worker() {
+  while (next < wanted.length && Date.now() < deadline) {
+    const batch = wanted.slice(next, next + BATCH);
+    next += BATCH;
+    const byQid = await fetchCivs(batch);
+    for (const c of batch) {
+      // Realms with no events are kept too, as done.
+      const events = pick(c, byQid.get(c.wikidata) ?? []);
+      shards[shardOf(c.id)][c.id] = events;
+      total += events.length;
+    }
+    fetched += batch.length;
+    save();
+    console.log(`${fetched}/${wanted.length} civilizations, ${total} events, ${Math.round((Date.now() - started) / 1000)} s`);
+  }
+}
+await Promise.all(Array.from({ length: PARALLEL }, worker));
+
+const left = civilizations.filter((c) => c.wikidata && !curated.has(c.id) && !done(c)).length;
+console.log(`Saved ${total} events for ${fetched} civilizations in ${OUT}/. ${left} left for another run.`);
