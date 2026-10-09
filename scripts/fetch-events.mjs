@@ -38,6 +38,7 @@ function classesQuery(type) {
 const PARTS = {
   conflicts: `
     ?e wdt:P710|wdt:P1891 ?civ; wdt:P31 ?class.
+    VALUES ?class { CLASSES }
     BIND("conflict" AS ?kind)
     OPTIONAL { ?e wdt:P585 ?date }
     OPTIONAL { ?e wdt:P580 ?d2 }
@@ -56,7 +57,7 @@ const PARTS = {
 function query(part, qids) {
   return `SELECT ?civ ?e ?kind ?class ?eLabel ?desc ?date ?d2 ?end ?coord ?c2 ?placeLabel ?title ?links WHERE {
   VALUES ?civ { ${qids.map((q) => `wd:${q}`).join(" ")} }
-  ${PARTS[part].trim()}
+  ${PARTS[part].trim().replace("CLASSES", [...kindOfClass.keys()].map((c) => `wd:${c}`).join(" "))}
   ?article schema:about ?e; schema:isPartOf <https://en.wikipedia.org/>; schema:name ?title.
   ?e wikibase:sitelinks ?links.
   OPTIONAL { ?e rdfs:label ?eLabel. FILTER(LANG(?eLabel) = "en") }
