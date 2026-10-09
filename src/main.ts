@@ -1,10 +1,12 @@
 import {
   buildModuleUrl,
+  Cartesian2,
   Cartesian3,
   CesiumWidget,
   defined,
   EllipsoidTerrainProvider,
   ImageryLayer,
+  Math as CesiumMath,
   ScreenSpaceEventHandler,
   ScreenSpaceEventType,
   TileMapServiceImageryProvider,
@@ -62,8 +64,27 @@ camera.minimumZoomDistance = 700_000;
 camera.maximumZoomDistance = 45_000_000;
 
 const narrow = window.matchMedia("(max-width: 640px)").matches;
+
+// The globe can be drawn upright or leaning on Earth's axial tilt, 23.5°,
+// with the North Pole to the right as on a classroom globe. The camera looks
+// straight down, so its heading turns the picture about the screen's centre.
+const AXIAL_TILT = 23.5;
+const TILT_KEY = "history-globe:tilted";
+let tilted = (() => {
+  try {
+    return localStorage.getItem(TILT_KEY) === "1";
+  } catch {
+    return false;
+  }
+})();
+
+function orientation() {
+  return { heading: tilted ? CesiumMath.toRadians(-AXIAL_TILT) : 0, pitch: -CesiumMath.PI_OVER_TWO, roll: 0 };
+}
+
 widget.camera.setView({
   destination: Cartesian3.fromDegrees(78, narrow ? 28 : 32, narrow ? 22_000_000 : 14_500_000),
+  orientation: orientation(),
 });
 
 const layer = new PolityLayer(scene);
@@ -378,6 +399,7 @@ function flyToCiv(c: Civilization, target: [number, number] | null = c.center, k
   const height = keepHeight ? widget.camera.positionCartographic.height : altitudeFor(c.area);
   widget.camera.flyTo({
     destination: Cartesian3.fromDegrees(target[0], target[1] - (narrow ? 6 : 0), height),
+    orientation: orientation(),
     duration: 1.4,
   });
 }
@@ -410,17 +432,55 @@ function flyToAll(list: Civilization[]) {
   );
   const largest = Math.max(...list.map((c) => c.area));
   const height = Math.min(22_000_000, Math.max(altitudeFor(largest), spread * 1000 * (narrow ? 3.2 : 2.2)));
-  widget.camera.flyTo({ destination: Cartesian3.fromDegrees(lon, lat - (narrow ? 6 : 0), height), duration: 1.4 });
+  widget.camera.flyTo({
+    destination: Cartesian3.fromDegrees(lon, lat - (narrow ? 6 : 0), height),
+    orientation: orientation(),
+    duration: 1.4,
+  });
 }
 
-/** Moves to a highlighted civilization: the camera to where it was largest, the year into its lifetime. */
+/**
+ * Puts a highlighted civilization in the middle of the screen: the year moves
+ * into its lifetime if needed (to its largest extent), and the camera flies to
+ * where it stands that year.
+ */
 function focusCiv(c: Civilization) {
-  flyToCiv(c);
   if (year < c.from || year > c.to) {
     timeline?.setView(...focusView([c]));
     setYearEverywhere(c.peakYear);
   }
+  flyToCiv(c, layer.labelAt(c.names, year) ?? c.center);
 }
+
+function setTilted(on: boolean, animate = true) {
+  tilted = on;
+  try {
+    localStorage.setItem(TILT_KEY, on ? "1" : "0");
+  } catch {
+    // Storage blocked; the choice lasts until the page reloads.
+  }
+  const button = $("tilt");
+  button.setAttribute("aria-pressed", String(on));
+  button.title = on ? "Stand the globe upright" : `Tilt the globe ${AXIAL_TILT}° like Earth's axis`;
+  $("tilt-label").textContent = on ? "Upright" : `Tilt ${AXIAL_TILT}°`;
+  if (!animate) return;
+  // Turn the picture about the point at the centre of the screen.
+  const camera = widget.camera;
+  const centre = camera.pickEllipsoid(
+    new Cartesian2(scene.canvas.clientWidth / 2, scene.canvas.clientHeight / 2),
+    scene.globe.ellipsoid,
+  );
+  const height = camera.positionCartographic.height;
+  const target = centre ? scene.globe.ellipsoid.cartesianToCartographic(centre) : camera.positionCartographic;
+  camera.flyTo({
+    destination: Cartesian3.fromRadians(target.longitude, target.latitude, height),
+    orientation: orientation(),
+    duration: 0.8,
+  });
+}
+
+$("tilt").addEventListener("click", () => setTilted(!tilted));
+setTilted(tilted, false);
 
 const LEGEND_LIMIT = 12;
 
@@ -642,6 +702,11 @@ Promise.all([Civilizations.load(base), BorderData.open(base)])
       featured: [],
       featuredLabel: "",
       colorOf: (name) => colors.get(name) ?? "#9aa1a9",
+      onLane: (name) => {
+        if (playing) setPlaying(false);
+        const c = highlighted.find((h) => h.name === name);
+        if (c) focusCiv(c);
+      },
       onYear: (next, settled) => {
         if (playing) setPlaying(false);
         setYear(next);

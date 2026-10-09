@@ -161,10 +161,15 @@ export class Landing {
     const card = el("article", "civ-card");
     card.dataset.era = String(ERAS.indexOf(civEras(c)[0]));
 
+    // The picture goes on top; until it loads (or when there is none) the
+    // space shows the era's colour and the realm's initial.
     const media = el("div", "civ-media");
-    media.innerHTML = `<svg class="civ-shape" viewBox="-6 -6 112 112" aria-hidden="true"><path d="${shapePath(c)}"/></svg>`;
+    media.append(el("span", "civ-monogram", c.name.replace(/^(the|al|el)\s+/i, "").charAt(0)));
+    media.firstElementChild!.setAttribute("aria-hidden", "true");
 
     const body = el("div", "civ-body");
+    // The realm's outline at its largest sits small in the corner, behind the text.
+    body.innerHTML = `<svg class="civ-shape" viewBox="-6 -6 112 112" aria-hidden="true"><path d="${shapePath(c)}"/></svg>`;
     const title = el("h3", "civ-name");
     const link = el("a", "civ-link", c.name);
     link.href = `#c=${c.id}`;
@@ -218,6 +223,7 @@ export class Landing {
     const img = el("img");
     img.alt = "";
     img.decoding = "async";
+    img.className = picture.kind === "emblem" ? "emblem" : "photo";
     img.addEventListener("load", () => media.classList.add("has-picture"));
     img.addEventListener("error", () => img.remove());
     img.src = picture.thumb;

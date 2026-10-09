@@ -7,9 +7,10 @@ in a timeline that runs from 10,000 BCE to today.
 ## What it does
 
 - A landing page with a card for each of the 1,554 civilizations in the border
-  data: its era, dates, one or two key figures and a picture. Search by name,
-  filter by era, sort by size, age or name. Cards without a picture show the
-  realm's outline at its largest.
+  data: a freely licensed picture on top (a photo of a monument, artwork or
+  place, else its coat of arms or flag; maps are skipped), then its era, dates
+  and one or two key figures, with the realm's outline at its largest drawn
+  small in the corner. Search by name, filter by era, sort by size, age or name.
 - Picking a card opens the globe on that civilization at its largest extent.
   It is coloured together with its related realms: the predecessors and
   successors Wikidata records, plus hand-picked families such as the Mongol
@@ -32,9 +33,11 @@ in a timeline that runs from 10,000 BCE to today.
 - A band of the major eras of world history along the top of the timeline
   (prehistory, ancient, post-classical, early modern, late modern,
   contemporary). The boundaries are in `src/eras.ts`.
-- Lanes showing the lifespan of each highlighted realm (tap a lane to jump to
-  its first year); when they are out of view the lanes fold into a pointer
-  toward them.
+- Lanes showing the lifespan of each highlighted realm; tapping one flies the
+  globe to that realm and centres it (moving the year into its lifetime if
+  needed). When they are out of view the lanes fold into a pointer toward them.
+- A button on the left tilts the globe to Earth's axial tilt (23.5°, North Pole
+  to the right) or stands it upright again. The choice is remembered.
 - Drag the grip on the top edge of the timeline to make it taller (the lanes
   grow to fill it); double-click the grip to reset. The height is remembered.
 - Play and pause at 2 to 500 years per second.
@@ -59,7 +62,7 @@ Cliopatria borders (about 46 MB, unzipped with `unzip`) into `data-raw/`.
 
 Pictures, key figures and the links between realms are read from Wikidata and
 Wikimedia Commons in the browser as cards scroll into view, and cached in
-`localStorage`. Where Wikimedia cannot be reached, cards show outlines only and
+`localStorage`. Where Wikimedia cannot be reached, cards show their era colour and initial instead of a picture, and
 a civilization is highlighted with its hand-picked family alone.
 
 `node scripts/make-artifact.mjs` turns `dist/` into the page and file list used

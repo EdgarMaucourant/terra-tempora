@@ -26,6 +26,8 @@ export interface TimelineOptions {
   colorOf: (name: string) => string;
   /** Called when the person picks a year; `settled` is false while dragging. */
   onYear: (year: number, settled: boolean) => void;
+  /** Called when a highlighted realm's lane is tapped; the year is left to the caller. */
+  onLane?: (name: string) => void;
   /** Called when the visible span changes. */
   onView?: (from: number, to: number) => void;
 }
@@ -58,6 +60,7 @@ export class Timeline {
   private readonly colorOf: TimelineOptions["colorOf"];
   private readonly onYear: TimelineOptions["onYear"];
   private readonly onView?: TimelineOptions["onView"];
+  private readonly onLane?: TimelineOptions["onLane"];
   private width = 1;
   private frame = 0;
   private pointers = new Map<number, number>();
@@ -76,6 +79,7 @@ export class Timeline {
     this.colorOf = options.colorOf;
     this.onYear = options.onYear;
     this.onView = options.onView;
+    this.onLane = options.onLane;
 
     this.erasEl = this.part("eras");
     this.lanesEl = this.part("lanes");
@@ -235,6 +239,7 @@ export class Timeline {
       bar.textContent = width > 40 ? s.name : "";
       bar.title = `${s.name}, ${formatRange(s.from, s.to)}`;
       bar.dataset.from = String(s.from);
+      bar.dataset.name = s.name;
       bars.push(bar);
     }
     // When the featured realms are out of view, the lanes fold to one row
@@ -356,7 +361,8 @@ export class Timeline {
         this.pick(from, true);
         return this.endPointer();
       }
-      this.pick(bar ? Number(bar.dataset.from) : this.yearAt(e.clientX), true);
+      if (bar && this.onLane) this.onLane(bar.dataset.name!);
+      else this.pick(bar ? Number(bar.dataset.from) : this.yearAt(e.clientX), true);
     }
     this.endPointer();
   }
