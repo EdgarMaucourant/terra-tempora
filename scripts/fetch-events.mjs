@@ -44,12 +44,16 @@ const PARTS = {
     OPTIONAL { ?e wdt:P580 ?d2 }
     OPTIONAL { ?e wdt:P582 ?end }
     OPTIONAL { ?e wdt:P625 ?coord }
-    OPTIONAL { ?e wdt:P276 ?place. ?place wdt:P625 ?c2 }`,
+    OPTIONAL {
+      ?e wdt:P276 ?place. ?place wdt:P625 ?c2.
+      OPTIONAL { ?place rdfs:label ?placeLabel. FILTER(LANG(?placeLabel) = "en") }
+    }`,
   people: `
     ?civ wdt:P35|wdt:P6|wdt:P112 ?e. ?e wdt:P31 wd:Q5.
     { ?e wdt:P569 ?date; wdt:P19 ?place. BIND("birth" AS ?kind) } UNION
     { ?e wdt:P570 ?date; wdt:P20 ?place. BIND("death" AS ?kind) }
-    ?place wdt:P625 ?coord.`,
+    ?place wdt:P625 ?coord.
+    OPTIONAL { ?place rdfs:label ?placeLabel. FILTER(LANG(?placeLabel) = "en") }`,
   capitals: `
     ?civ wdt:P36 ?e. ?e wdt:P571 ?date; wdt:P625 ?coord. BIND("city" AS ?kind)`,
 };
@@ -62,7 +66,6 @@ function query(part, qids) {
   ?e wikibase:sitelinks ?links.
   OPTIONAL { ?e rdfs:label ?eLabel. FILTER(LANG(?eLabel) = "en") }
   OPTIONAL { ?e schema:description ?desc. FILTER(LANG(?desc) = "en") }
-  OPTIONAL { ?place rdfs:label ?placeLabel. FILTER(LANG(?placeLabel) = "en") }
 }`;
 }
 
