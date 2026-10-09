@@ -38,6 +38,11 @@ body {
   inset: 0;
 }
 
+#globe[hidden],
+.map[hidden] {
+  display: none;
+}
+
 #globe .cesium-widget,
 #globe .cesium-widget canvas {
   width: 100%;
@@ -122,50 +127,10 @@ input {
   border-color: rgba(214, 220, 228, 0.32);
 }
 
-.legend {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px 6px;
-  margin: 10px 0 0;
-  padding: 0;
-  list-style: none;
-  pointer-events: auto;
-}
 
-.legend[hidden] {
-  display: none;
-}
 
-.legend-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  min-height: 26px;
-  padding: 0 9px 0 7px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: var(--panel);
-  backdrop-filter: blur(10px);
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--ink-soft);
-  text-shadow: none;
-  cursor: pointer;
-}
 
-.legend-item::before {
-  content: "";
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: var(--swatch);
-}
 
-.legend-item:hover,
-.legend-item.active {
-  color: var(--ink);
-  border-color: rgba(214, 220, 228, 0.32);
-}
 
 .tooltip {
   position: absolute;
@@ -275,6 +240,81 @@ input {
   transform: translateY(-50%);
   display: grid;
   gap: 8px;
+}
+
+.map {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: #070a0e;
+  touch-action: none;
+  cursor: grab;
+}
+
+.map:active {
+  cursor: grabbing;
+}
+
+.view-switch {
+  display: grid;
+  width: 64px;
+  padding: 3px;
+  gap: 2px;
+  box-sizing: border-box;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+  backdrop-filter: blur(10px);
+}
+
+.view-switch button {
+  padding: 6px 0;
+  border: 0;
+  border-radius: 9px;
+  background: none;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+
+.view-switch button:hover {
+  color: var(--ink);
+}
+
+.view-switch button[aria-pressed="true"] {
+  background: rgba(214, 220, 228, 0.14);
+  color: var(--ink);
+}
+
+.projection {
+  display: grid;
+  gap: 4px;
+  width: 64px;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+
+.projection[hidden] {
+  display: none;
+}
+
+.projection select {
+  width: 136px;
+  padding: 7px 8px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel-solid);
+  font: inherit;
+  font-size: 12px;
+  color: var(--ink);
+}
+
+.tilt[hidden] {
+  display: none;
 }
 
 .tilt {
@@ -653,6 +693,37 @@ a {
   opacity: 1;
 }
 
+.lane-link {
+  position: absolute;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: var(--lane-height);
+  height: var(--lane-height);
+  padding: 0;
+  border: 1px solid rgba(214, 220, 228, 0.3);
+  border-radius: 50%;
+  box-sizing: border-box;
+  background: var(--panel-solid);
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+
+.lane-link:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+.lane-link svg {
+  width: 80%;
+  height: 80%;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .lanes.folded {
   height: var(--lane-height);
 }
@@ -911,6 +982,7 @@ a {
 .civ-card {
   --tint: #e2742f;
   position: relative;
+  isolation: isolate;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -995,23 +1067,20 @@ a {
   display: none;
 }
 
+/* No positioning here: the card's link covers the whole card, picture included. */
 .civ-body {
-  position: relative;
   display: flex;
   flex-direction: column;
   gap: 3px;
   flex: 1;
   padding: 10px 14px 12px;
-  overflow: hidden;
 }
 
-.civ-body > :not(.civ-shape) {
-  position: relative;
-}
-
-/* The realm's outline, small in the bottom-right corner behind the text. */
+/* The realm's outline, small in the bottom-right corner behind the text.
+   The card isolates its stacking, so z-index -1 sits above its background. */
 .civ-shape {
   position: absolute;
+  z-index: -1;
   right: -6px;
   bottom: -6px;
   width: 92px;
@@ -1233,36 +1302,10 @@ a {
     center / 16px no-repeat;
 }
 
-.legend li {
-  display: inline-flex;
-}
 
-.legend-remove {
-  margin-left: -4px;
-  width: 26px;
-  min-height: 26px;
-  border: 1px solid var(--line);
-  border-left: 0;
-  border-radius: 0 999px 999px 0;
-  background: var(--panel);
-  backdrop-filter: blur(10px);
-  color: var(--ink-soft);
-  cursor: pointer;
-}
 
-.legend li:has(.legend-remove) .legend-item {
-  border-radius: 999px 0 0 999px;
-}
 
-.legend-remove:hover {
-  color: var(--ink);
-}
 
-.legend-more {
-  align-self: center;
-  font-size: 12px;
-  color: var(--ink-soft);
-}
 
 .picker {
   position: absolute;
@@ -1347,9 +1390,8 @@ a {
   color: var(--ink-soft);
 }
 
-.picker-row.on-globe {
-  cursor: default;
-  opacity: 0.55;
+.picker-row.on-globe .picker-name {
+  color: var(--steppe);
 }
 
 .picker-foot {
@@ -1372,9 +1414,6 @@ a {
 /* Phones: timeline stacks, cards become bottom sheets above it. */
 @media (max-width: 640px) {
   .masthead .sub,
-  .legend {
-    display: none;
-  }
 
   .civ-grid {
     grid-template-columns: repeat(auto-fill, minmax(156px, 1fr));

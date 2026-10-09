@@ -4,8 +4,8 @@ import { formatRange } from "./years";
 const nf = new Intl.NumberFormat("en");
 
 /**
- * A dialog listing every civilization, to tick one or more and add them to
- * the globe. Civilizations already on the globe are shown ticked and locked.
+ * A dialog listing every civilization, to choose which ones the globe shows.
+ * Those already shown start ticked and come first; untick one to remove it.
  */
 export class Picker {
   private rows = new Map<string, { row: HTMLElement; box: HTMLInputElement; text: string }>();
@@ -19,7 +19,7 @@ export class Picker {
   constructor(
     private root: HTMLElement,
     private list: Civilization[],
-    private onAdd: (civs: Civilization[]) => void,
+    private onApply: (civs: Civilization[]) => void,
   ) {
     this.search = root.querySelector<HTMLInputElement>("#picker-search")!;
     this.count = root.querySelector<HTMLElement>("#picker-count")!;
@@ -27,9 +27,11 @@ export class Picker {
     this.search.placeholder = `Search ${nf.format(list.length)} civilizations`;
     this.search.addEventListener("input", () => this.filter());
     this.addButton.addEventListener("click", () => {
-      const added = this.list.filter((c) => this.picked.has(c));
+      // Civilizations already shown keep their order; new ones follow.
+      const kept = [...this.shown].filter((c) => this.picked.has(c));
+      const added = this.list.filter((c) => this.picked.has(c) && !this.shown.has(c));
       this.close();
-      this.onAdd(added);
+      this.onApply([...kept, ...added]);
     });
     for (const button of root.querySelectorAll("[data-close]")) button.addEventListener("click", () => this.close());
     root.addEventListener("keydown", (e) => {
@@ -48,14 +50,18 @@ export class Picker {
     this.returnFocus = document.activeElement as HTMLElement | null;
     if (!this.rows.size) this.build();
     this.shown = onGlobe;
-    this.picked.clear();
+    this.picked = new Set(onGlobe);
     for (const c of this.list) {
       const r = this.rows.get(c.id)!;
       const there = onGlobe.has(c);
       r.box.checked = there;
-      r.box.disabled = there;
       r.row.classList.toggle("on-globe", there);
     }
+    // The civilizations on the globe head the list.
+    const listEl = this.root.querySelector<HTMLElement>("#picker-list")!;
+    listEl.replaceChildren(
+      ...[...this.list.filter((c) => onGlobe.has(c)), ...this.list.filter((c) => !onGlobe.has(c))].map((c) => this.rows.get(c.id)!.row),
+    );
     this.search.value = "";
     this.filter();
     this.update();
@@ -99,11 +105,15 @@ export class Picker {
   }
 
   private update() {
-    const n = this.picked.size;
-    this.count.textContent = n
-      ? `${n} selected`
-      : `${this.shown.size} on the globe. Tick the civilizations to add.`;
-    this.addButton.disabled = n === 0;
-    this.addButton.textContent = n > 1 ? `Add ${n} civilizations` : "Add to the globe";
+    const added = [...this.picked].filter((c) => !this.shown.has(c)).length;
+    const removed = [...this.shown].filter((c) => !this.picked.has(c)).length;
+    const parts = [added && `${added} to add`, removed && `${removed} to remove`].filter(Boolean);
+    this.count.textContent = this.picked.size
+      ? parts.length
+        ? parts.join(", ")
+        : `${this.shown.size} on the globe. Tick to add, untick to remove.`
+      : "Keep at least one civilization.";
+    this.addButton.disabled = this.picked.size === 0 || (!added && !removed);
+    this.addButton.textContent = "Update the globe";
   }
 }

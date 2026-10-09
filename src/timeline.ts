@@ -11,6 +11,22 @@ const TAP_SLOP = 6;
 // Lane heights, in pixels, when the timeline is resized taller.
 const MIN_LANE_HEIGHT = 13;
 const MAX_LANE_HEIGHT = 26;
+// Gap between a lane and its before/after icons, in pixels.
+const LINK_GAP = 2;
+
+/** A civilization that came before or after a lane's, reached from an icon at the lane's end. */
+export interface LaneLink {
+  id: string;
+  name: string;
+  from: number;
+  to: number;
+}
+
+/** A highlighted realm's lifespan, with the civilizations before and after it. */
+export interface Lane extends Span {
+  before?: LaneLink[];
+  after?: LaneLink[];
+}
 
 export interface TimelineOptions {
   track: HTMLElement;
@@ -19,7 +35,7 @@ export interface TimelineOptions {
   year: number;
   view: [number, number];
   /** Lifespans of the highlighted realms, drawn as lanes under the eras. */
-  featured: Span[];
+  featured: Lane[];
   /** What the highlighted realms are called on the pointer shown when they are out of view. */
   featuredLabel: string;
   /** Colour of a highlighted realm's lane. */
@@ -28,6 +44,8 @@ export interface TimelineOptions {
   onYear: (year: number, settled: boolean) => void;
   /** Called when a highlighted realm's lane is tapped; the year is left to the caller. */
   onLane?: (name: string) => void;
+  /** Called when a before/after icon is tapped, with that civilization's id. */
+  onLink?: (id: string) => void;
   /** Called when the visible span changes. */
   onView?: (from: number, to: number) => void;
 }
@@ -55,12 +73,13 @@ export class Timeline {
   private readonly lanesEl: HTMLElement;
   private readonly rulerEl: HTMLElement;
   private readonly playhead: HTMLElement;
-  private featured: Span[];
+  private featured: Lane[];
   private featuredLabel: string;
   private readonly colorOf: TimelineOptions["colorOf"];
   private readonly onYear: TimelineOptions["onYear"];
   private readonly onView?: TimelineOptions["onView"];
   private readonly onLane?: TimelineOptions["onLane"];
+  private readonly onLink?: TimelineOptions["onLink"];
   private width = 1;
   private frame = 0;
   private pointers = new Map<number, number>();
@@ -80,6 +99,7 @@ export class Timeline {
     this.onYear = options.onYear;
     this.onView = options.onView;
     this.onLane = options.onLane;
+    this.onLink = options.onLink;
 
     this.erasEl = this.part("eras");
     this.lanesEl = this.part("lanes");
@@ -118,7 +138,7 @@ export class Timeline {
   }
 
   /** Replaces the highlighted realms' lanes. */
-  setFeatured(featured: Span[], label: string) {
+  setFeatured(featured: Lane[], label: string) {
     this.featured = featured;
     this.featuredLabel = label;
     this.laneOf.clear();
@@ -241,6 +261,9 @@ export class Timeline {
       bar.dataset.from = String(s.from);
       bar.dataset.name = s.name;
       bars.push(bar);
+      const lane = this.laneOf.get(s.name) ?? 0;
+      (s.before ?? []).forEach((link, i) => bars.push(this.linkIcon(link, "before", lane, left - (i + 1) * LINK_GAP, i)));
+      (s.after ?? []).forEach((link, i) => bars.push(this.linkIcon(link, "after", lane, left + width + (i + 1) * LINK_GAP, i)));
     }
     // When the featured realms are out of view, the lanes fold to one row
     // pointing at them, so the reader keeps a sense of where they sit in time.
@@ -268,6 +291,28 @@ export class Timeline {
     this.playhead.hidden = px < -2 || px > this.width + 2;
     this.track.setAttribute("aria-valuenow", String(Math.round(this.year)));
     this.track.setAttribute("aria-valuetext", formatYear(this.year));
+  }
+
+  /** An arrow at a lane's end that opens the civilization before or after it. */
+  private linkIcon(link: LaneLink, side: "before" | "after", lane: number, x: number, index: number): HTMLElement {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = `lane-link ${side}`;
+    button.tabIndex = -1;
+    // Icons are as wide as the lane is tall, so they stack outward from the lane's end.
+    const offset = `${index} * var(--lane-height)`;
+    button.style.left = side === "before" ? `calc(${x}px - var(--lane-height) - ${offset})` : `calc(${x}px + ${offset})`;
+    button.style.top = `calc(${lane} * (var(--lane-height) + 3px))`;
+    button.dataset.id = link.id;
+    button.dataset.side = side;
+    button.dataset.name = link.name;
+    button.dataset.range = formatRange(link.from, link.to);
+    button.setAttribute("aria-label", `${side === "before" ? "Before" : "After"}: ${link.name}, ${formatRange(link.from, link.to)}`);
+    button.innerHTML =
+      side === "before"
+        ? '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3.5 5.5 8l4.5 4.5"/></svg>'
+        : '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5 10.5 8 6 12.5"/></svg>';
+    return button;
   }
 
   private pointer(): HTMLElement {
@@ -355,6 +400,11 @@ export class Timeline {
       // Pointer capture retargets pointerup to the track, so use where the press began.
       const target = g.target;
       const bar = target.closest<HTMLElement>(".lane-bar");
+      const link = target.closest<HTMLElement>(".lane-link");
+      if (link && this.onLink) {
+        this.onLink(link.dataset.id!);
+        return this.endPointer();
+      }
       if (target.closest(".lane-pointer")) {
         const from = Math.min(...this.featured.map((s) => s.from));
         this.setView(from - 60, from + 340);

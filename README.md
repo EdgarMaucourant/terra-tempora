@@ -19,8 +19,11 @@ in a timeline that runs from 10,000 BCE to today.
 - "Select several" on the landing page ticks cards instead of opening them;
   "Show on the globe" then highlights exactly the ticked civilizations, each in
   its own colour, with a lane each on the timeline. On the globe, "+ Add
-  civilizations" in the timeline adds more from a searchable list, and the ×
-  beside a name in the legend removes it.
+  civilizations" in the timeline opens a searchable list: tick civilizations
+  to add them, untick one already shown to remove it.
+- Where Wikidata records a civilization before or after a highlighted one, its
+  timeline lane has an arrow icon at that end. Hovering the icon names that
+  civilization and its years; clicking it opens it.
 
 - CesiumJS globe with the Natural Earth II imagery bundled in CesiumJS, served
   from our own files. No Cesium ion account or token.
@@ -38,6 +41,12 @@ in a timeline that runs from 10,000 BCE to today.
   needed). When they are out of view the lanes fold into a pointer toward them.
 - A button on the left tilts the globe to Earth's axial tilt (23.5°, North Pole
   to the right) or stands it upright again. The choice is remembered.
+- A Globe / Map switch on the left turns the globe into a flat map of the same
+  borders, with a choice of projection: Equal Earth, Mercator, Gall–Peters,
+  Eckert IV, Robinson, Winkel tripel, Mollweide, Natural Earth, Miller and
+  equirectangular. Drag sideways to spin the world, up and down to pan, and
+  scroll or pinch to zoom. The map opens where the globe was looking, and the
+  choice of view and projection is remembered in this browser.
 - Drag the grip on the top edge of the timeline to make it taller (the lanes
   grow to fill it); double-click the grip to reset. The height is remembered.
 - Play and pause at 2 to 500 years per second.
@@ -75,13 +84,14 @@ for the claude.ai preview.
 | `scripts/build-data.mjs` | Simplifies Cliopatria borders, picks label points, splits them into time windows |
 | `scripts/build-civilizations.mjs` | One entry per civilization: dates, largest extent, outline, family |
 | `src/landing.ts` | The landing page of civilization cards, with multi-select |
-| `src/picker.ts` | The list for adding civilizations to the globe |
+| `src/picker.ts` | The list for adding civilizations to the globe and removing them |
 | `src/civilizations.ts` | Loads the civilization list; era labels and outlines |
 | `src/wikidata.ts` | Pictures, key figures and predecessor/successor links from Wikimedia |
 | `src/data.ts` | Downloads and decodes the time windows on demand |
 | `src/polityLayer.ts` | Builds, fades and frees the border shapes and labels on the globe |
 | `src/timeline.ts` | The zoomable time axis: eras, lanes, ticks, playhead and gestures |
 | `src/timelineGrip.ts` | Resizing the timeline panel from its top edge |
+| `src/mapView.ts` | The flat map: projections, drawing, pan, zoom and hit testing |
 | `src/eras.ts` | The eras of world history and their boundary years |
 | `src/main.ts` | Links, globe setup, highlighting, hover and click, playback, details card |
 | `src/years.ts` | Year formatting (negative years are BCE) |
@@ -95,5 +105,7 @@ for the claude.ai preview.
 - Card pictures: Wikimedia Commons, each under its own free licence; the card
   names the author and licence and links to the file page.
 - Imagery: Natural Earth II (public domain), as packaged with CesiumJS.
+- Map coastlines: Natural Earth 1:50m land (public domain), via the
+  `world-atlas` package (ISC). Projections: `d3-geo` and `d3-geo-projection` (ISC).
 - CesiumJS: Apache 2.0. Build tools only: Vite (MIT),
   polylabel (ISC).
