@@ -10,6 +10,10 @@ on:
       minutes:
         description: Minutes to spend fetching
         default: "50"
+      again:
+        description: Fetch every civilization again, not only the missing ones
+        type: boolean
+        default: false
   push:
     branches-ignore: [main]
     paths:
@@ -28,7 +32,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: node scripts/fetch-events.mjs --minutes ${{ inputs.minutes || 50 }}
+      - run: node scripts/fetch-events.mjs --minutes ${{ inputs.minutes || 50 }} ${{ inputs.again && '--again' || '' }}
       - name: Commit the events
         run: |
           git config user.name "github-actions[bot]"

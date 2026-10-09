@@ -135,6 +135,18 @@ function parse(bindings) {
   }
   return byCiv;
 }
+/** Events found under both of a realm's items, once. */
+function unique(events) {
+  const seen = new Map();
+  for (const e of events) {
+    const people = e.kind === "birth" || e.kind === "death";
+    const key = `${e.wikipedia} ${people ? e.kind : "event"}`;
+    const known = seen.get(key);
+    if (!known || RANK[e.kind] > RANK[known.kind]) seen.set(key, e);
+  }
+  return [...seen.values()];
+}
+
 /** The realm's best-known events within its own years. */
 function pick(c, raw) {
   const inSpan = raw.filter((e) => {
@@ -202,7 +214,7 @@ async function sparql(text) {
 /** The events of these realms from one part of the query; a batch that times out is split. */
 async function fetchPart(part, civs) {
   try {
-    return await sparql(query(part, civs.map((c) => c.wikidata)));
+    return await sparql(query(part, [...new Set(civs.flatMap((c) => c.qids))]));
   } catch (error) {
     if (civs.length === 1) {
       console.warn(`  ${civs[0].id} (${part}): ${error.message}`);
@@ -246,6 +258,22 @@ const wanted = civilizations.filter(
 );
 console.log(`${wanted.length} civilizations to fetch.`);
 
+// Cliopatria's Wikidata item is sometimes a neighbour of the realm's own (a
+// period or a successor), so the item of its English Wikipedia article is
+// asked for too.
+const titles = [...new Set(wanted.map((c) => c.wikipedia).filter(Boolean))];
+const qidOfTitle = new Map();
+for (let i = 0; i < titles.length; i += 200) {
+  const values = titles.slice(i, i + 200).map((t) => JSON.stringify(t) + "@en").join(" ");
+  const rows = await sparql(`SELECT ?title ?item WHERE {
+  VALUES ?title { ${values} }
+  ?article schema:about ?item; schema:isPartOf <https://en.wikipedia.org/>; schema:name ?title.
+}`);
+  for (const b of rows) qidOfTitle.set(b.title.value, qidOf(b.item.value));
+}
+for (const c of wanted) c.qids = [...new Set([c.wikidata, qidOfTitle.get(c.wikipedia)].filter(Boolean))];
+console.log(`${wanted.filter((c) => c.qids.length > 1).length} realms also asked for under their article's item.`);
+
 for (const [type, kind] of Object.entries(TYPES)) {
   const classes = await sparql(classesQuery(type));
   for (const b of classes) {
@@ -270,7 +298,7 @@ async function worker() {
     const byQid = await fetchCivs(batch);
     for (const c of batch) {
       // Realms with no events are kept too, as done.
-      const events = pick(c, byQid.get(c.wikidata) ?? []);
+      const events = pick(c, unique(c.qids.flatMap((q) => byQid.get(q) ?? [])));
       shards[shardOf(c.id)][c.id] = events;
       total += events.length;
     }
@@ -280,6 +308,23 @@ async function worker() {
   }
 }
 await Promise.all(Array.from({ length: PARALLEL }, worker));
+
+// Treaties signed by much of the world (copyright conventions, the Paris
+// Agreement) say little about any one realm. Those shared by many realms are
+// dropped, more strictly after 1945, when such conventions multiplied.
+const tooShared = (e) => signers.get(e.wikipedia) > (e.year >= 1945 ? 8 : 22);
+const signers = new Map();
+for (const shard of shards) {
+  for (const events of Object.values(shard)) {
+    for (const e of events) if (e.kind === "treaty") signers.set(e.wikipedia, (signers.get(e.wikipedia) ?? 0) + 1);
+  }
+}
+for (const shard of shards) {
+  for (const [id, events] of Object.entries(shard)) {
+    shard[id] = events.filter((e) => e.kind !== "treaty" || !tooShared(e));
+  }
+}
+save();
 
 const left = civilizations.filter((c) => c.wikidata && !curated.has(c.id) && !done(c)).length;
 console.log(`Saved ${total} events for ${fetched} civilizations in ${OUT}/. ${left} left for another run.`);
