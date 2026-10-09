@@ -7,6 +7,10 @@ import landUrl from "world-atlas/land-50m.json?url";
 import { MUTED } from "./colors";
 import type { Polity } from "./data";
 import { shapeOpacity } from "./polityLayer";
+import { badgeUrl, eventOpacity, type EventKind, type HistoryEvent } from "./events";
+
+// Event badges, in CSS pixels.
+const BADGE = 26;
 
 export interface ProjectionChoice {
   id: string;
@@ -57,6 +61,9 @@ interface MapEvents {
   /** The pointer is over a realm (or none) at these canvas coordinates. */
   onHover: (p: Polity | null, x: number, y: number) => void;
   onClick: (p: Polity | null) => void;
+  /** The pointer is over an event badge (or none). */
+  onEventHover: (e: HistoryEvent | null, x: number, y: number) => void;
+  onEventClick: (e: HistoryEvent) => void;
   /** Pixels at the bottom of the canvas covered by the timeline. */
   bottomInset: () => number;
 }
@@ -76,6 +83,10 @@ export class MapView {
   private hovered: string | null = null;
   /** Today's border of the country being looked at, drawn dashed over everything. */
   private outline: Shape | null = null;
+  private events: HistoryEvent[] = [];
+  private badgeImages = new Map<EventKind, HTMLImageElement>();
+  /** Badges drawn last frame, for hit-testing. */
+  private drawnBadges: { e: HistoryEvent; x: number; y: number }[] = [];
   showContext = true;
 
   private choice = PROJECTIONS[0];
@@ -98,7 +109,7 @@ export class MapView {
 
   constructor(
     private canvas: HTMLCanvasElement,
-    private events: MapEvents,
+    private handlers: MapEvents,
   ) {
     this.ctx = canvas.getContext("2d")!;
     new ResizeObserver(() => this.resize()).observe(canvas);
@@ -124,6 +135,32 @@ export class MapView {
   setOutline(rings: number[][] | null) {
     this.outline = rings?.length ? toFeature({ rings } as Polity) : null;
     this.draw();
+  }
+
+  /** The events that may show: those of the highlighted civilizations. */
+  setEvents(events: HistoryEvent[]) {
+    this.events = events;
+    this.draw();
+  }
+
+  /** The event badge under these canvas coordinates, drawn on top. */
+  eventAt(x: number, y: number): HistoryEvent | null {
+    for (let i = this.drawnBadges.length - 1; i >= 0; i--) {
+      const b = this.drawnBadges[i];
+      if (Math.hypot(b.x - x, b.y - y) <= BADGE / 2 + 3) return b.e;
+    }
+    return null;
+  }
+
+  private badge(kind: EventKind): HTMLImageElement | null {
+    let img = this.badgeImages.get(kind);
+    if (!img) {
+      img = new Image();
+      img.addEventListener("load", () => this.draw());
+      img.src = badgeUrl(kind);
+      this.badgeImages.set(kind, img);
+    }
+    return img.complete && img.naturalWidth ? img : null;
   }
 
   setHighlight(colors: Map<string, string>) {
@@ -214,7 +251,7 @@ export class MapView {
   }
 
   private viewCentreY() {
-    return (this.height - this.events.bottomInset()) / 2;
+    return (this.height - this.handlers.bottomInset()) / 2;
   }
 
   private resize() {
@@ -240,7 +277,7 @@ export class MapView {
   private fit() {
     if (!this.width) return;
     const pad = 16;
-    const bottom = this.height - this.events.bottomInset() - pad;
+    const bottom = this.height - this.handlers.bottomInset() - pad;
     const target: GeoPermissibleObjects = this.choice.band
       ? {
           type: "MultiPoint",
@@ -399,6 +436,21 @@ export class MapView {
       ctx.fillText(text, at[0], at[1]);
     }
 
+    // Event badges, on top of everything but the title shade.
+    this.drawnBadges = [];
+    for (const e of this.events) {
+      const opacity = eventOpacity(e, this.year);
+      if (opacity <= 0) continue;
+      const at = this.projection(e.lonLat);
+      const img = this.badge(e.kind);
+      if (!at || !img) continue;
+      const size = opacity === 1 ? BADGE : BADGE * 0.8;
+      ctx.globalAlpha = opacity;
+      ctx.drawImage(img, at[0] - size / 2, at[1] - size / 2, size, size);
+      ctx.globalAlpha = 1;
+      this.drawnBadges.push({ e, x: at[0], y: at[1] });
+    }
+
     // A shade behind the title so it stays readable over the map.
     const shade = ctx.createLinearGradient(0, 0, 0, 200);
     shade.addColorStop(0, "rgba(7, 10, 14, 0.78)");
@@ -431,7 +483,9 @@ export class MapView {
       const at = local(e);
       const last = pointers.get(e.pointerId);
       if (!last) {
-        this.events.onHover(this.polityAt(at.x, at.y), at.x, at.y);
+        const event = this.eventAt(at.x, at.y);
+        this.handlers.onEventHover(event, at.x, at.y);
+        if (!event) this.handlers.onHover(this.polityAt(at.x, at.y), at.x, at.y);
         return;
       }
       pointers.set(e.pointerId, at);
@@ -456,7 +510,9 @@ export class MapView {
       pinch = 0;
       if (pointers.size === 0 && moved < 5) {
         const at = local(e);
-        this.events.onClick(this.polityAt(at.x, at.y));
+        const event = this.eventAt(at.x, at.y);
+        if (event) this.handlers.onEventClick(event);
+        else this.handlers.onClick(this.polityAt(at.x, at.y));
       }
     };
     canvas.addEventListener("pointerup", end);
@@ -465,7 +521,7 @@ export class MapView {
       pinch = 0;
     });
     canvas.addEventListener("pointerleave", () => {
-      if (!pointers.size) this.events.onHover(null, 0, 0);
+      if (!pointers.size) this.handlers.onHover(null, 0, 0);
     });
     canvas.addEventListener(
       "wheel",

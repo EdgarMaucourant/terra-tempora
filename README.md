@@ -34,6 +34,18 @@ in a timeline that runs from 10,000 BCE to today.
     in Rome from its start in Italy and the Franks from beyond the Rhine. Links
     look like `#k=france&y=470`.
 - When many civilizations share the timeline, the lanes scroll.
+- Key events of the Mongol Empire and its khanates (40 of them, from
+  Temüjin's birth in 1162 to the fall of Dadu in 1368): battles, sieges,
+  wars, rulers, deaths, capitals, travellers, a treaty and the plague at
+  Caffa. Each shows as an icon on the globe and the map in its year, fading
+  over the next eight, and as a mark on the timeline (crowded marks group
+  into a number; tapping it zooms in). Tapping an icon or mark opens a panel
+  with what happened, the place, the lead picture of its Wikipedia article
+  (only when the file is on Wikimedia Commons, with author and licence), and
+  links to Wikipedia, Britannica and World History Encyclopedia. The events
+  are hand-written in `public/data/events.json`; places marked approximate
+  are best guesses (a traditional site, or a court for a treaty agreed
+  between several).
 - "Select several" on the landing page ticks cards instead of opening them;
   "Show on the globe" then highlights exactly the ticked civilizations, each in
   its own colour, with a lane each on the timeline. On the globe, "+ Add
@@ -104,6 +116,9 @@ for the claude.ai preview.
 | `src/landing.ts` | The landing page of civilization cards, with multi-select |
 | `scripts/build-countries.mjs` | Countries of today and the civilizations that led to each, from the borders |
 | `src/countries.ts` | Loads the countries |
+| `public/data/events.json` | Key events with places, dates, summaries and sources |
+| `src/events.ts` | Event kinds and icons, links and pictures for the panel |
+| `src/eventLayer.ts` | Event icons on the globe |
 | `src/picker.ts` | The list for adding civilizations to the globe and removing them |
 | `src/civilizations.ts` | Loads the civilization list; era labels and outlines |
 | `src/wikidata.ts` | Pictures, key figures and predecessor/successor links from Wikimedia |
@@ -124,6 +139,9 @@ for the claude.ai preview.
 - Key figures and links between realms: Wikidata, CC0.
 - Card pictures: Wikimedia Commons, each under its own free licence; the card
   names the author and licence and links to the file page.
+- Events: written for this prototype from standard references. Event
+  pictures come from Wikimedia Commons via the Wikipedia article, each under
+  its own free licence, credited in the panel.
 - Imagery: Natural Earth II (public domain), as packaged with CesiumJS.
 - Map coastlines: Natural Earth 1:50m land (public domain), via the
   `world-atlas` package (ISC). Projections: `d3-geo` and `d3-geo-projection` (ISC).

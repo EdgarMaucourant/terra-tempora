@@ -91,7 +91,7 @@ function query(ids: string[]): string {
 }`;
 }
 
-async function fetchPictures(files: string[]): Promise<Map<string, Picture>> {
+export async function fetchPictures(files: string[]): Promise<Map<string, Picture>> {
   const pictures = new Map<string, Picture>();
   for (let i = 0; i < files.length; i += 50) {
     const titles = files.slice(i, i + 50).map((f) => `File:${f}`);

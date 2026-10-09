@@ -18,6 +18,8 @@ import { highlightColors } from "./colors";
 import { countryCivIds, loadCountries, type Country, type CountryView } from "./countries";
 import { BorderData, type Polity } from "./data";
 import { eraAt, ERAS, NOW } from "./eras";
+import { EventLayer } from "./eventLayer";
+import { badgeSvg, eventLinks, eventPicture, KINDS, loadEvents, type HistoryEvent } from "./events";
 import { Landing } from "./landing";
 import { MapView, PROJECTIONS } from "./mapView";
 import { Picker } from "./picker";
@@ -90,6 +92,7 @@ widget.camera.setView({
 });
 
 const layer = new PolityLayer(scene);
+const eventLayer = new EventLayer(scene);
 
 // The flat map: the same borders in a choice of projections.
 const mapCanvas = $<HTMLCanvasElement>("map");
@@ -100,6 +103,13 @@ const map = new MapView(mapCanvas, {
     mapHover = requestAnimationFrame(() => (p ? hoverRealm(p, x, y) : !tooltip.hidden && hideTooltip()));
   },
   onClick: (p) => clickRealm(p),
+  onEventHover: (e, x, y) => {
+    if (e) {
+      cancelAnimationFrame(mapHover);
+      hoverEvent(e, x, y);
+    }
+  },
+  onEventClick: (e) => openEvent(e),
   bottomInset: () => (document.querySelector("footer")?.offsetHeight ?? 0) + 12,
 });
 let data: BorderData | undefined;
@@ -224,6 +234,7 @@ function render() {
     updateHint();
     return;
   }
+  eventLayer.update(year);
   scene.requestRender();
   if (drawing) return;
   drawing = true;
@@ -294,6 +305,7 @@ document.addEventListener("keydown", (e) => {
   }
   if (e.key === "Escape") {
     info.hidden = true;
+    closeEvent();
     sources.hidden = true;
   }
 });
@@ -302,6 +314,7 @@ document.addEventListener("keydown", (e) => {
 const nf = new Intl.NumberFormat("en");
 function showInfo(p: Polity) {
   sources.hidden = true;
+  closeEvent();
   const civ = civs?.ofRealm(p.name);
   $("info-kind").textContent =
     civ && highlighted.includes(civ) ? (civ === active || !expanded ? "Highlighted realm" : "Related realm") : "Realm";
@@ -325,6 +338,12 @@ function showInfo(p: Polity) {
   info.hidden = false;
 }
 
+function eventAt(position: { x: number; y: number }): HistoryEvent | undefined {
+  const picked = scene.pick(position as never);
+  const e = defined(picked) ? (picked.id as HistoryEvent | undefined) : undefined;
+  return e && typeof e === "object" && "lonLat" in e ? e : undefined;
+}
+
 function polityAt(position: { x: number; y: number }): Polity | undefined {
   const picked = scene.pick(position as never);
   const p = defined(picked) ? (picked.id as Polity | undefined) : undefined;
@@ -336,6 +355,7 @@ function clickRealm(p: Polity | null | undefined) {
   hideTooltip();
   if (!p) {
     info.hidden = true;
+    closeEvent();
     return;
   }
   const civ = civs?.ofRealm(p.name);
@@ -380,7 +400,9 @@ function hideTooltip() {
 
 const handler = new ScreenSpaceEventHandler(scene.canvas);
 handler.setInputAction((event: ScreenSpaceEventHandler.PositionedEvent) => {
-  clickRealm(polityAt(event.position));
+  const e = eventAt(event.position);
+  if (e) openEvent(e);
+  else clickRealm(polityAt(event.position));
 }, ScreenSpaceEventType.LEFT_CLICK);
 
 let hoverPosition: { x: number; y: number } | null = null;
@@ -390,7 +412,10 @@ handler.setInputAction((event: ScreenSpaceEventHandler.MotionEvent) => {
   if (hoverFrame) return;
   hoverFrame = requestAnimationFrame(() => {
     hoverFrame = 0;
-    if (hoverPosition) hoverRealm(polityAt(hoverPosition), hoverPosition.x, hoverPosition.y);
+    if (!hoverPosition) return;
+    const e = eventAt(hoverPosition);
+    if (e) hoverEvent(e, hoverPosition.x, hoverPosition.y);
+    else hoverRealm(polityAt(hoverPosition), hoverPosition.x, hoverPosition.y);
   });
 }, ScreenSpaceEventType.MOUSE_MOVE);
 scene.canvas.addEventListener("pointerleave", () => {
@@ -401,13 +426,21 @@ scene.canvas.addEventListener("pointerleave", () => {
 // Hovering a lane's before/after icon names that civilization and its years.
 const trackEl = $("track");
 trackEl.addEventListener("pointerover", (e) => {
-  const link = (e.target as HTMLElement).closest<HTMLElement>(".lane-link");
+  const mark = (e.target as HTMLElement).closest<HTMLElement>(".mark");
+  const link = mark ?? (e.target as HTMLElement).closest<HTMLElement>(".lane-link");
   if (!link) return;
-  tooltip.replaceChildren(
-    Object.assign(document.createElement("span"), { textContent: link.dataset.side === "before" ? "Before" : "After" }),
-    Object.assign(document.createElement("strong"), { textContent: link.dataset.name }),
-    Object.assign(document.createElement("span"), { textContent: `${link.dataset.range} · click to open` }),
-  );
+  if (mark) {
+    tooltip.replaceChildren(
+      Object.assign(document.createElement("strong"), { textContent: mark.dataset.label }),
+      Object.assign(document.createElement("span"), { textContent: mark.classList.contains("cluster") ? `${mark.dataset.detail} · click to zoom in` : `${mark.dataset.detail} · click to see it` }),
+    );
+  } else {
+    tooltip.replaceChildren(
+      Object.assign(document.createElement("span"), { textContent: link.dataset.side === "before" ? "Before" : "After" }),
+      Object.assign(document.createElement("strong"), { textContent: link.dataset.name }),
+      Object.assign(document.createElement("span"), { textContent: `${link.dataset.range} · click to open` }),
+    );
+  }
   tooltip.hidden = false;
   const icon = link.getBoundingClientRect();
   const tip = tooltip.getBoundingClientRect();
@@ -415,13 +448,14 @@ trackEl.addEventListener("pointerover", (e) => {
   tooltip.style.transform = `translate(${x}px, ${icon.top - tip.height - 8}px)`;
 });
 trackEl.addEventListener("pointerout", (e) => {
-  if ((e.target as HTMLElement).closest(".lane-link")) tooltip.hidden = true;
+  if ((e.target as HTMLElement).closest(".lane-link, .mark")) tooltip.hidden = true;
 });
 
 $("info-close").addEventListener("click", () => (info.hidden = true));
 $("sources-button").addEventListener("click", () => {
   info.hidden = true;
   sources.hidden = !sources.hidden;
+  if (!sources.hidden) closeEvent();
 });
 $("sources-close").addEventListener("click", () => (sources.hidden = true));
 
@@ -676,8 +710,108 @@ function showHighlight() {
       ? `${active.name} and related realms`
       : active.name;
   timeline?.setFeatured(lanes, label);
+  showEvents();
   render();
 }
+
+// Events: the badges of the highlighted civilizations' battles, treaties and
+// so on, on the globe, the map and the timeline.
+let allEvents: HistoryEvent[] = [];
+let shownEvents: HistoryEvent[] = [];
+let openedEvent: HistoryEvent | null = null;
+
+function eventWhen(e: HistoryEvent): string {
+  return e.to && e.to !== e.year ? formatRange(e.year, e.to) : formatYear(e.year);
+}
+
+function showEvents() {
+  const ids = new Set(highlighted.map((c) => c.id));
+  shownEvents = allEvents.filter((e) => e.civs.some((id) => ids.has(id)));
+  eventLayer.set(shownEvents);
+  map.setEvents(shownEvents);
+  timeline?.setMarks(
+    shownEvents.map((e) => ({
+      id: e.id,
+      year: e.year,
+      icon: badgeSvg(e.kind, 14),
+      label: e.title,
+      detail: `${KINDS[e.kind].label} · ${eventWhen(e)}`,
+    })),
+  );
+  if (openedEvent && !shownEvents.includes(openedEvent)) closeEvent();
+}
+
+const eventPanel = $("event");
+function closeEvent() {
+  openedEvent = null;
+  eventPanel.hidden = true;
+}
+
+/** Opens the panel with an event's story, picture and further reading. */
+function openEvent(e: HistoryEvent) {
+  hideTooltip();
+  info.hidden = true;
+  sources.hidden = true;
+  openedEvent = e;
+  $("event-badge").innerHTML = badgeSvg(e.kind, 22);
+  $("event-kind").textContent = KINDS[e.kind].label;
+  $("event-title").textContent = e.title;
+  const where = typeof e.approx === "string" ? e.approx : e.approx ? `${e.place} (approximate location)` : e.place;
+  $("event-when").textContent = `${eventWhen(e)} · ${where}`;
+  $("event-summary").textContent = e.summary;
+  $("event-links").replaceChildren(
+    ...eventLinks(e).map((l) => {
+      const item = document.createElement("li");
+      const a = Object.assign(document.createElement("a"), { href: l.url, target: "_blank", rel: "noopener", textContent: l.label });
+      item.append(a);
+      if (l.note) item.append(Object.assign(document.createElement("small"), { textContent: l.note }));
+      return item;
+    }),
+  );
+  const figure = $("event-figure");
+  const image = $<HTMLImageElement>("event-image");
+  figure.hidden = true;
+  image.removeAttribute("src");
+  eventPanel.hidden = false;
+  eventPanel.scrollTop = 0;
+  eventPicture(e).then((picture) => {
+    if (openedEvent !== e || !picture) return;
+    image.onload = () => {
+      if (openedEvent === e) figure.hidden = false;
+    };
+    image.src = picture.thumb;
+    const credit = $<HTMLAnchorElement>("event-credit");
+    credit.href = picture.page;
+    credit.textContent = `${picture.artist || "Wikimedia Commons"}${picture.license ? `, ${picture.license}` : ""}`;
+    credit.title = `Picture: ${picture.file}. Opens on Wikimedia Commons.`;
+  });
+}
+
+function hoverEvent(e: HistoryEvent, x: number, y: number) {
+  layer.setHovered(null);
+  map.setHovered(null);
+  tooltip.replaceChildren(
+    Object.assign(document.createElement("strong"), { textContent: e.title }),
+    Object.assign(document.createElement("span"), { textContent: `${KINDS[e.kind].label} · ${eventWhen(e)} · click for more` }),
+  );
+  tooltip.style.transform = `translate(${x + 14}px, ${y + 14}px)`;
+  tooltip.hidden = false;
+  scene.canvas.style.cursor = "pointer";
+  mapCanvas.style.cursor = "pointer";
+}
+
+/** Turns the globe or map to a place, keeping the zoom unless it is too far out. */
+function flyToPoint([lon, lat]: [number, number]) {
+  if (map.active) return map.focus(lon, lat, null);
+  const height = Math.min(widget.camera.positionCartographic.height, 9_000_000);
+  widget.camera.flyTo({
+    destination: Cartesian3.fromDegrees(lon, lat - (narrow ? 6 : 0), height),
+    orientation: orientation(),
+    duration: 1.2,
+  });
+}
+
+$("event-close").addEventListener("click", closeEvent);
 
 function setYearEverywhere(next: number) {
   setYear(next);
@@ -891,9 +1025,11 @@ Promise.all([
   BorderData.open(base),
   // The countries are a bonus; the page works without them.
   loadCountries(base).catch((error: unknown) => (console.error(error), [] as Country[])),
+  loadEvents(base).catch((error: unknown) => (console.error(error), [] as HistoryEvent[])),
 ])
-  .then(([list, borders, loaded]) => {
+  .then(([list, borders, loaded, events]) => {
     civs = list;
+    allEvents = events;
     countries = loaded;
     data = borders;
     statusEl.textContent = "";
@@ -915,6 +1051,15 @@ Promise.all([
       featured: [],
       featuredLabel: "",
       colorOf: (name) => colors.get(name) ?? "#9aa1a9",
+      onMark: (id) => {
+        const e = shownEvents.find((x) => x.id === id);
+        if (!e) return;
+        if (playing) setPlaying(false);
+        tooltip.hidden = true;
+        setYearEverywhere(e.year);
+        flyToPoint(e.lonLat);
+        openEvent(e);
+      },
       onLink: (id) => {
         if (playing) setPlaying(false);
         hideTooltip();
