@@ -46,16 +46,22 @@ in a timeline that runs from 10,000 BCE to today.
   are hand-written in `public/data/events.json`; places marked approximate
   are best guesses (a traditional site, or a court for a treaty agreed
   between several).
-- Every other civilization gets its events from Wikidata, read in the browser
-  when it is highlighted (`src/wikiEvents.ts`): the battles, sieges, wars,
-  campaigns and treaties it took part in or signed, the births and deaths of
-  its rulers and founders, and the founding of its capitals. Only events with
-  an English Wikipedia article, a date within the realm's years and a place
-  are kept (a war without a place stands at the realm's heart), the 24
-  best-known per realm, ranked by how many Wikipedia editions cover them.
-  Their panel tells the story with the article's opening paragraph. Answers
-  are cached in localStorage; without Wikidata only the hand-written events
-  show.
+- Every other civilization gets its events from Wikidata, fetched ahead of
+  time by `scripts/fetch-events.mjs` and saved in `public/data/wd-events/`
+  (the app makes no live Wikidata query for them): the battles, sieges,
+  wars, campaigns and treaties it took part in or signed, the births and
+  deaths of its rulers and founders, and the founding of its capitals. Only
+  events with an English Wikipedia article, a date within the realm's years
+  and a place are kept (a war without a place stands at the realm's heart),
+  the 24 best-known per realm, ranked by how many Wikipedia editions cover
+  them. Treaties signed by much of the world are left out. A realm is looked
+  up under both its Cliopatria item and its Wikipedia article's item, as
+  the two sometimes differ. About half the realms have events this way; the
+  rest have nothing usable on Wikidata. The panel shows the Wikidata
+  description, or the article's opening paragraph when Wikipedia can be
+  reached. To refresh the events, run the "Fetch Wikidata events" workflow
+  from the Actions tab (tick "again" to fetch every realm, not only new
+  ones), or `node scripts/fetch-events.mjs` where Wikidata is reachable.
 - "Select several" on the landing page ticks cards instead of opening them;
   "Show on the globe" then highlights exactly the ticked civilizations, each in
   its own colour, with a lane each on the timeline. On the globe, "+ Add
@@ -139,7 +145,8 @@ for the claude.ai preview.
 | `public/data/events.json` | Key events with places, dates, summaries and sources |
 | `src/events.ts` | Event kinds and icons, links and pictures for the panel |
 | `src/eventLayer.ts` | Event icons on the globe |
-| `src/wikiEvents.ts` | Events of every other civilization, from Wikidata |
+| `src/wikiEvents.ts` | Loads the saved Wikidata events of every other civilization |
+| `scripts/fetch-events.mjs` | Fetches those events from Wikidata (run by `.github/workflows/fetch-events.yml`) |
 | `src/picker.ts` | The list for adding civilizations to the globe and removing them |
 | `src/civilizations.ts` | Loads the civilization list; era labels and outlines |
 | `src/wikidata.ts` | Pictures, key figures and predecessor/successor links from Wikimedia |
