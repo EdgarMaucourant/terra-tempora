@@ -62,6 +62,19 @@ in a timeline that runs from 10,000 BCE to today.
   reached. To refresh the events, run the "Fetch Wikidata events" workflow
   from the Actions tab (tick "again" to fetch every realm, not only new
   ones), or `node scripts/fetch-events.mjs` where Wikidata is reachable.
+- "History travel", at the top of the landing page and by the globe (links
+  look like `#travel`), plays world history on its own, starting just before
+  Göbekli Tepe (9500 BCE). As each of 141 turning points comes, the globe turns
+  smoothly to put it in the middle, with its icon, a one-line summary and the
+  realm it happened in lit up. Time cruises at the chosen speed, crosses long
+  quiet stretches quickly, and slows down where turning points crowd together
+  so each card can be read, then speeds back up. Hovering a card or its badge
+  (or tapping it) stops time and opens the full story: the place, what
+  happened, why it matters then and now, and links to Wikipedia, Britannica
+  and World History Encyclopedia. The turning points were chosen for their
+  impact on how civilizations developed, from every continent (farming in New
+  Guinea and Mexico as well as the Fertile Crescent; Caral, the Olmec and
+  Cahokia alongside Rome), and are written in `public/data/travel.json`.
 - "Select several" on the landing page ticks cards instead of opening them;
   "Show on the globe" then highlights exactly the ticked civilizations, each in
   its own colour, with a lane each on the timeline. On the globe, "+ Add
@@ -145,6 +158,8 @@ for the claude.ai preview.
 | `public/data/events.json` | Key events with places, dates, summaries and sources |
 | `src/events.ts` | Event kinds and icons, links and pictures for the panel |
 | `src/eventLayer.ts` | Event icons on the globe |
+| `src/travel.ts` | The history travel: pacing, camera turns, cards |
+| `public/data/travel.json` | Its turning points, with places, dates, stories and sources |
 | `src/wikiEvents.ts` | Loads the saved Wikidata events of every other civilization |
 | `scripts/fetch-events.mjs` | Fetches those events from Wikidata (run by `.github/workflows/fetch-events.yml`) |
 | `src/picker.ts` | The list for adding civilizations to the globe and removing them |

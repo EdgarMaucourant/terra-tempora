@@ -16,7 +16,17 @@ export type EventKind =
   | "city"
   | "treaty"
   | "journey"
-  | "plague";
+  | "plague"
+  | "farming"
+  | "monument"
+  | "writing"
+  | "faith"
+  | "idea"
+  | "science"
+  | "empire"
+  | "trade"
+  | "revolution"
+  | "town";
 
 export interface HistoryEvent {
   id: string;
@@ -99,6 +109,57 @@ export const KINDS: Record<EventKind, KindStyle> = {
     label: "Plague",
     color: "#8c5aa8",
     path: "M12 3a7 7 0 0 0-7 7c0 2.6 1.3 4.3 3 5.3V19h8v-3.7c1.7-1 3-2.7 3-5.3a7 7 0 0 0-7-7zM9.5 10.5h.01M14.5 10.5h.01M11 19v-2M13 19v-2",
+  },
+  // The kinds below are used by the history travel's turning points.
+  farming: {
+    label: "Farming",
+    color: "#7a9e45",
+    path: "M12 21V8M12 12c-3 0-5-2-5-5 3 0 5 2 5 5zM12 16c3 0 5-2 5-5-3 0-5 2-5 5zM12 8c0-2 1-3.5 3-5",
+  },
+  monument: {
+    label: "Monument",
+    color: "#b5894a",
+    path: "M3 20h18L12 4zM12 4l3 16M7.6 12.5h8.8",
+  },
+  writing: {
+    label: "Writing",
+    color: "#8d7458",
+    path: "M5 4h11l3 3v13H5zM8 9h8M8 13h8M8 17h5",
+  },
+  faith: {
+    label: "Faith",
+    color: "#c56f98",
+    path: "M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z",
+  },
+  idea: {
+    label: "Ideas",
+    color: "#d9a92e",
+    path: "M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z",
+  },
+  science: {
+    label: "Invention",
+    color: "#2f86c9",
+    path: "M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.8 3h10.4a2 2 0 0 0 1.8-3l-5-9V3M7.4 15h9.2",
+  },
+  empire: {
+    label: "Empire",
+    color: "#9a573a",
+    path: "M3 20h18M5 17h14M6.5 17v-6M10 17v-6M14 17v-6M17.5 17v-6M3.5 11h17L12 4.5z",
+  },
+  trade: {
+    label: "Trade",
+    color: "#2f9a72",
+    path: "M3 15h18l-3 5H6zM12 3v12M12 4.5l6 8h-6",
+  },
+  town: {
+    label: "City",
+    color: "#3f9a96",
+    path: "M4 20V10l4-3 4 3v10M12 20V6l4-3 4 3v14M3 20h18M8 14v2M16 10v2M16 15v2",
+  },
+  revolution: {
+    label: "Revolution",
+    color: "#cc4a68",
+    path: "M9.5 14.5l-2 2a3 3 0 0 1-4.2-4.2l3-3a3 3 0 0 1 4.2 0M14.5 9.5l2-2a3 3 0 0 1 4.2 4.2l-3 3a3 3 0 0 1-4.2 0M8 3.5l1 2M3.5 8l2 1M16 20.5l-1-2M20.5 16l-2-1",
   },
 };
 
