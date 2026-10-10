@@ -175,18 +175,33 @@ export class Travel {
     this.host.showBadges(new Map());
   }
 
-  /** Jumps to just before a turning point, so it arrives straight away. */
+  /**
+   * Jumps to a turning point and stops there with its card open, as a click on
+   * its badge does; "Continue" or Play carries on from it.
+   */
   seekTo(e: TravelEvent) {
-    this.seek(e.year - 0.01);
-    this.aim(e);
-    this.setPlaying(true);
+    this.seek(e.year);
+    this.next = this.events.indexOf(e) + 1;
+    this.arrive(e);
+    this.refresh();
+    this.pin(e);
+  }
+
+  /** Time is moving: playing, and no card is held open. */
+  get running(): boolean {
+    return this.playing && !this.opened;
   }
 
   setPlaying(on: boolean) {
     if (on && this.year >= this.host.end - 0.01) this.seek(this.events[0].year - 400);
-    if (on) this.pinned = null;
     this.playing = on;
-    this.host.onPlaying(on);
+    if (on) {
+      // Play closes any card held open and lets time run again.
+      clearTimeout(this.resumeTimer);
+      this.pinned = this.hoverCard = this.hoverBadge = null;
+      this.open(null);
+    }
+    this.host.onPlaying(this.running);
   }
 
   /** The pointer is over a badge on the globe, or left it (null). */
@@ -226,6 +241,8 @@ export class Travel {
     const was = this.opened;
     this.opened = e;
     if (was) this.cards.get(was)?.classList.remove("open");
+    // The play button shows time as stopped while a card is open.
+    this.host.onPlaying(this.running);
     if (!e) return;
     const card = this.cardFor(e);
     card.classList.add("open");
@@ -469,7 +486,7 @@ export class Travel {
     }
     const resume = el("button", "travel-resume", "Continue ▸");
     resume.type = "button";
-    resume.addEventListener("click", () => this.release());
+    resume.addEventListener("click", () => this.setPlaying(true));
     more.append(
       el("p", "travel-place", where),
       figure,
