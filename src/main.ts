@@ -26,6 +26,7 @@ import { Picker } from "./picker";
 import { PolityLayer } from "./polityLayer";
 import { Timeline, type Lane, type LaneLink } from "./timeline";
 import { attachTimelineGrip } from "./timelineGrip";
+import { loadTravel, Travel, travelWhen, type TravelEvent } from "./travel";
 import { realmFacts } from "./wikidata";
 import { wikidataEvents } from "./wikiEvents";
 import { era, formatRange, formatYear, yearNumber } from "./years";
@@ -142,6 +143,8 @@ interface Route {
   /** Exactly these civilizations, without their related realms. */
   multi?: boolean;
   year?: number;
+  /** The history travel. */
+  travel?: boolean;
 }
 
 function readHash(): Route {
@@ -149,6 +152,7 @@ function readHash(): Route {
   if (legacy) return { civs: [DEFAULT_CIV], year: Number(legacy[1]) };
   const params = new URLSearchParams(location.hash.slice(1));
   const y = params.get("y");
+  if (params.has("travel")) return { travel: true, year: y && /^-?\d{1,5}$/.test(y) ? Number(y) : undefined };
   const ids = params.get("c")?.split(",").filter(Boolean);
   return {
     country: params.get("t") ?? params.get("k") ?? undefined,
@@ -160,6 +164,7 @@ function readHash(): Route {
 }
 
 function hashFor(route: Route): string {
+  if (route.travel) return "#travel";
   if (route.country)
     return `#${route.view === "territory" ? "t" : "k"}=${route.country}${route.year !== undefined ? `&y=${Math.round(route.year)}` : ""}`;
   if (!route.civs?.length) return location.pathname + location.search;
@@ -197,7 +202,7 @@ function showYear() {
 let loading = 0;
 function ensureBorders() {
   if (!data) return;
-  const ahead = playing ? Number(speedSelect.value) * 3 : 10;
+  const ahead = travel?.active ? Math.max(10, travel.speed * 4) : playing ? Number(speedSelect.value) * 3 : 10;
   const from = Math.max(data.from, Math.floor(year) - 10);
   const to = Math.min(data.to, Math.ceil(year) + ahead);
   if (from > to || data.hasYears(from, to)) return;
@@ -235,7 +240,8 @@ function render() {
     updateHint();
     return;
   }
-  eventLayer.update(year);
+  if (travel?.active) eventLayer.update(year, (e) => travelBadges.get(e as TravelEvent) ?? 0);
+  else eventLayer.update(year);
   scene.requestRender();
   if (drawing) return;
   drawing = true;
@@ -291,7 +297,12 @@ function setPlaying(on: boolean) {
   }
 }
 
-playButton.addEventListener("click", () => setPlaying(!playing));
+function togglePlay() {
+  if (travel?.active) travel.setPlaying(!travel.playing);
+  else setPlaying(!playing);
+}
+
+playButton.addEventListener("click", togglePlay);
 contextToggle.addEventListener("change", () => {
   layer.showContext = contextToggle.checked;
   map.showContext = contextToggle.checked;
@@ -302,9 +313,10 @@ document.addEventListener("keydown", (e) => {
   if (!landingEl.hidden) return;
   if (e.code === "Space" && !["BUTTON", "SELECT", "INPUT", "A"].includes(target.tagName) && target.id !== "track") {
     e.preventDefault();
-    setPlaying(!playing);
+    togglePlay();
   }
   if (e.key === "Escape") {
+    travel?.release();
     info.hidden = true;
     closeEvent();
     sources.hidden = true;
@@ -402,7 +414,8 @@ function hideTooltip() {
 const handler = new ScreenSpaceEventHandler(scene.canvas);
 handler.setInputAction((event: ScreenSpaceEventHandler.PositionedEvent) => {
   const e = eventAt(event.position);
-  if (e) openEvent(e);
+  if (e && travel?.active) travel.pin(e as TravelEvent);
+  else if (e) openEvent(e);
   else clickRealm(polityAt(event.position));
 }, ScreenSpaceEventType.LEFT_CLICK);
 
@@ -415,12 +428,22 @@ handler.setInputAction((event: ScreenSpaceEventHandler.MotionEvent) => {
     hoverFrame = 0;
     if (!hoverPosition) return;
     const e = eventAt(hoverPosition);
+    if (travel?.active) {
+      // In the history travel, a badge opens its card rather than a tooltip.
+      travel.hoverOnBadge((e as TravelEvent | undefined) ?? null);
+      if (e) {
+        hideTooltip();
+        scene.canvas.style.cursor = "pointer";
+        return;
+      }
+    }
     if (e) hoverEvent(e, hoverPosition.x, hoverPosition.y);
     else hoverRealm(polityAt(hoverPosition), hoverPosition.x, hoverPosition.y);
   });
 }, ScreenSpaceEventType.MOUSE_MOVE);
 scene.canvas.addEventListener("pointerleave", () => {
   hoverPosition = null;
+  travel?.hoverOnBadge(null);
   hideTooltip();
 });
 
@@ -882,6 +905,7 @@ function showMasthead() {
 function openCiv(c: Civilization, options: OpenOptions = {}) {
   if (!civs) return;
   const list = civs;
+  leaveTravel();
   const switching = active !== c || !expanded || !!country;
   country = null;
   showOutline(null);
@@ -936,6 +960,7 @@ interface ViewOptions {
 function openView(list: Civilization[], options: ViewOptions = {}) {
   const unique = [...new Set(list)];
   if (!unique.length) return;
+  leaveTravel();
   active = unique[0];
   expanded = false;
   country = options.country ?? null;
@@ -1022,6 +1047,7 @@ function openCountry(k: Country, view: CountryView, options: { year?: number; pu
 }
 
 function showLanding() {
+  leaveTravel();
   if (playing) setPlaying(false);
   info.hidden = true;
   sources.hidden = true;
@@ -1031,10 +1057,122 @@ function showLanding() {
   landingEl.focus({ preventScroll: true });
 }
 
+// The history travel: time plays on its own through the turning points of
+// world history, the globe turning to each as it comes.
+let travel: Travel | undefined;
+let travelEvents: TravelEvent[] = [];
+let travelBadges = new Map<TravelEvent, number>();
+const travelLayer = $("travel-layer");
+let travelRealms = "";
+let travelRealmsAt = 0;
+
+function startTravel(at?: number) {
+  if (!travelEvents.length || !timeline) return;
+  if (playing) setPlaying(false);
+  const t = timeline;
+  if (!travel) {
+    travel = new Travel(
+      travelEvents,
+      {
+        scene,
+        end: NOW,
+        setYear: (y) => {
+          setYear(y);
+          t.setYear(year);
+        },
+        baseSpeed: () => Number(speedSelect.value),
+        showBadges: (opacity) => {
+          travelBadges = opacity;
+          eventLayer.update(year, (e) => opacity.get(e as TravelEvent) ?? 0);
+          scene.requestRender();
+        },
+        showRealms: (events) => showTravelRealms(events),
+        onPlaying: (on) => {
+          playButton.setAttribute("aria-label", on ? "Pause" : "Play");
+          playIcon.setAttribute("d", on ? "M7 5h4v14H7zM13 5h4v14h-4z" : "M8 5v14l11-7z");
+        },
+        orientation,
+        centre: () => {
+          const { lon, lat } = globeCentre();
+          return [lon, lat];
+        },
+        latOffset: narrow ? 8 : 0,
+        narrow,
+      },
+      travelLayer,
+    );
+  }
+  info.hidden = true;
+  sources.hidden = true;
+  closeEvent();
+  hideTooltip();
+  showOutline(null);
+  if (map.active) setMapMode(false);
+  landingEl.hidden = true;
+  document.body.classList.add("traveling");
+  active = undefined;
+  country = null;
+  highlighted = [];
+  travelRealms = "";
+  layer.setHighlight(new Map());
+  map.setHighlight(new Map());
+  $("civ-title").textContent = "History travel";
+  $("civ-sub").textContent = `${travelEvents.length} turning points of world history, from Göbekli Tepe to today. Hover or tap a card to stop and read more.`;
+  document.title = "History travel · History Globe";
+  t.setFeatured([], "");
+  t.setView(FIRST_YEAR, NOW);
+  shownEvents = travelEvents;
+  eventLayer.set(travelEvents);
+  t.setMarks(
+    travelEvents.map((e) => ({
+      id: e.id,
+      year: e.year,
+      icon: badgeSvg(e.kind, 14),
+      label: e.title,
+      detail: `${KINDS[e.kind].label} · ${travelWhen(e)}`,
+    })),
+  );
+  // Cruise at 25 years a second; the travel slows down by itself where history crowds.
+  speedSelect.value = "25";
+  // Pull back so whole regions show around each turning point.
+  const { lon, lat } = globeCentre();
+  widget.camera.setView({
+    destination: Cartesian3.fromDegrees(lon, lat, narrow ? 18_000_000 : 13_000_000),
+    orientation: orientation(),
+  });
+  go({ travel: true }, false);
+  travel.start(at);
+}
+
+function leaveTravel() {
+  if (!travel?.active) return;
+  travel.stop();
+  document.body.classList.remove("traveling");
+  shownEvents = [];
+  eventLayer.set([]);
+  timeline?.setMarks([]);
+}
+
+/** Lights up the realms each turning point on screen happened in, newest in the accent colour. */
+function showTravelRealms(events: TravelEvent[]) {
+  const now = performance.now();
+  if (now - travelRealmsAt < 300 && events.length) return;
+  travelRealmsAt = now;
+  const names = [...new Set(events.map((e) => layer.realmAt(e.lonLat[0], e.lonLat[1], year)).filter((n): n is string => !!n))];
+  const key = names.join("|");
+  if (key === travelRealms) return;
+  travelRealms = key;
+  const byRealm = names.length ? highlightColors(names[0], names.slice(1)) : new Map<string, string>();
+  layer.setHighlight(byRealm);
+  map.setHighlight(byRealm);
+  render();
+}
+
 function route() {
   if (!civs) return;
   const list = civs;
   const r = readHash();
+  if (r.travel) return startTravel(r.year);
   const k = r.country ? countries.find((c) => c.id === r.country) : undefined;
   if (k) return openCountry(k, r.view ?? "nationality", { year: r.year });
   const found = (r.civs ?? []).map((id) => list.get(id)).filter((c): c is Civilization => !!c);
@@ -1061,8 +1199,10 @@ Promise.all([
   // The countries are a bonus; the page works without them.
   loadCountries(base).catch((error: unknown) => (console.error(error), [] as Country[])),
   loadEvents(base).catch((error: unknown) => (console.error(error), [] as HistoryEvent[])),
+  loadTravel(base).catch((error: unknown) => (console.error(error), [] as TravelEvent[])),
 ])
-  .then(([list, borders, loaded, events]) => {
+  .then(([list, borders, loaded, events, turningPoints]) => {
+    travelEvents = turningPoints;
     civs = list;
     allEvents = events;
     countries = loaded;
@@ -1089,6 +1229,10 @@ Promise.all([
       onMark: (id) => {
         const e = shownEvents.find((x) => x.id === id);
         if (!e) return;
+        if (travel?.active) {
+          tooltip.hidden = true;
+          return travel.seekTo(e as TravelEvent);
+        }
         if (playing) setPlaying(false);
         tooltip.hidden = true;
         setYearEverywhere(e.year);
@@ -1107,6 +1251,10 @@ Promise.all([
         if (c) focusCiv(c);
       },
       onYear: (next, settled) => {
+        if (travel?.active) {
+          travel.setPlaying(false);
+          return travel.seek(next);
+        }
         if (playing) setPlaying(false);
         setYear(next);
         if (settled) writeHash();
@@ -1121,6 +1269,11 @@ Promise.all([
       if (!list.some((c) => year >= c.from && year <= c.to)) setYearEverywhere(list[0].peakYear);
     });
     $("view-all").addEventListener("click", () => t.setView(FIRST_YEAR, NOW));
+    for (const id of ["travel-start", "travel-button"])
+      $(id).addEventListener("click", () => {
+        go({ travel: true }, true);
+        startTravel();
+      });
     $("zoom-in").addEventListener("click", () => t.zoom(0.5));
     $("zoom-out").addEventListener("click", () => t.zoom(2));
     if (stored(MAP_KEY) === "map") setMapMode(true, false);
@@ -1142,6 +1295,9 @@ Promise.all([
   },
   get landing() {
     return landing;
+  },
+  get travel() {
+    return travel;
   },
   open: (id: string) => {
     const c = civs?.get(id);

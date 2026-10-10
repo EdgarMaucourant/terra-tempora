@@ -67,6 +67,17 @@ export function shapeOpacity(p: Polity, year: number): number {
   return smoothstep(start - FADE / 2, start + FADE / 2, year) * (1 - smoothstep(end - FADE / 2, end + FADE / 2, year));
 }
 
+/** Whether a point lies inside a flat [lon, lat, …] ring (even-odd rule). */
+function inRing(ring: number[], x: number, y: number): boolean {
+  let inside = false;
+  for (let i = 0, j = ring.length - 2; i < ring.length; j = i, i += 2) {
+    const yi = ring[i + 1];
+    const yj = ring[j + 1];
+    if (yi > y !== yj > y && x < ((ring[j] - ring[i]) * (y - yi)) / (yj - yi) + ring[i]) inside = !inside;
+  }
+  return inside;
+}
+
 export interface LayerState {
   /** Shapes are still being built or downloaded; draw again next frame. */
   pending: boolean;
@@ -106,6 +117,19 @@ export class PolityLayer {
       if (!best || p.area > best.area) best = p;
     }
     return best?.label ?? null;
+  }
+
+  /**
+   * Name of the realm that covers a point at `year`, the smallest when several
+   * overlap, or null when none of the downloaded shapes covers it.
+   */
+  realmAt(lon: number, lat: number, year: number): string | null {
+    let best: Polity | null = null;
+    for (const p of this.polities.values()) {
+      if (year < p.from || year > p.to || (best && p.area >= best.area)) continue;
+      if (p.rings.some((ring) => inRing(ring, lon, lat))) best = p;
+    }
+    return best?.name ?? null;
   }
 
   isHighlighted(name: string): boolean {

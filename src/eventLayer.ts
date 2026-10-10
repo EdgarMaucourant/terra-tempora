@@ -33,9 +33,10 @@ export class EventLayer {
     }
   }
 
-  update(year: number) {
+  /** Shows each badge at its opacity for this year, or as `opacityOf` says. */
+  update(year: number, opacityOf: (e: HistoryEvent) => number = (e) => eventOpacity(e, year)) {
     for (const [e, badge] of this.badges) {
-      const opacity = eventOpacity(e, year);
+      const opacity = opacityOf(e);
       badge.show = opacity > 0;
       if (!badge.show) continue;
       badge.color = Color.WHITE.withAlpha(opacity);

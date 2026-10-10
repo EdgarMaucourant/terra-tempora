@@ -32,6 +32,13 @@
           <span>Projection</span>
           <select id="projection"></select>
         </label>
+        <button id="travel-button" class="tilt travel-button" type="button" title="Travel through world history">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="7" />
+            <path class="axis" d="M10 9v6l5-3z" />
+          </svg>
+          <span>History travel</span>
+        </button>
         <button id="tilt" class="tilt" type="button" aria-pressed="false">
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <circle cx="12" cy="12" r="7" />
@@ -156,6 +163,8 @@
         </div>
       </footer>
 
+      <div id="travel-layer" class="travel-layer" hidden></div>
+
       <p id="status" class="status">Loading borders…</p>
       <p id="hint" class="hint" hidden></p>
       <p id="tooltip" class="tooltip" hidden></p>
@@ -188,6 +197,16 @@
           Every realm mapped in the Cliopatria border data, from 3400 BCE to today. Pick one to see it on the globe,
           lit up with the realms it came from and the ones that followed.
         </p>
+        <button id="travel-start" class="travel-cta" type="button">
+          <span class="travel-cta-play" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
+          </span>
+          <span class="travel-cta-text">
+            <strong>History travel</strong>
+            <span>Fly through 12,000 years of world history on the globe, from the first temples to today, stopping at
+              each turning point on every continent.</span>
+          </span>
+        </button>
         <section class="countries" data-kind="territory" aria-labelledby="territory-title">
           <div class="section-head">
             <div>

@@ -1838,3 +1838,349 @@ a {
     transition: none;
   }
 }
+
+/* History travel: a call to action on the landing page, a button by the globe,
+   and cards that sit beside each turning point's badge on the globe. */
+.travel-cta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 640px;
+  margin: 0 0 30px;
+  padding: 14px 20px 14px 14px;
+  border: 1px solid rgba(226, 116, 47, 0.45);
+  border-radius: var(--radius);
+  background: linear-gradient(110deg, rgba(226, 116, 47, 0.2), rgba(226, 116, 47, 0.04) 70%);
+  font: inherit;
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.travel-cta:hover {
+  border-color: var(--steppe);
+  background-color: rgba(226, 116, 47, 0.08);
+}
+
+.travel-cta:focus-visible {
+  outline: 2px solid var(--steppe);
+  outline-offset: 3px;
+}
+
+.travel-cta-play {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--steppe);
+}
+
+.travel-cta-play svg {
+  width: 22px;
+  height: 22px;
+  margin-left: 3px;
+  fill: #fff;
+}
+
+.travel-cta-text {
+  display: grid;
+  gap: 2px;
+  color: var(--ink-soft);
+  text-wrap: pretty;
+}
+
+.travel-cta-text strong {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.travel-button .axis {
+  fill: var(--steppe);
+  stroke: none;
+}
+
+/* While travelling, the tools for picking civilizations step aside. */
+.traveling .view-switch,
+.traveling #projection-field,
+.traveling .travel-button,
+.traveling #add-civs,
+.traveling #view-focus {
+  display: none;
+}
+
+.travel-layer {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.travel-layer[hidden] {
+  display: none;
+}
+
+.travel-card {
+  --kind: var(--steppe);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  max-height: calc(100vh - var(--timeline-height, 190px) - 40px);
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 12px 14px 12px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--kind);
+  border-radius: 12px;
+  background: rgba(13, 17, 23, 0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  pointer-events: auto;
+  cursor: pointer;
+  will-change: transform;
+  transition: width 0.25s ease, padding 0.25s ease, opacity 0.3s ease;
+}
+
+.travel-card[hidden] {
+  display: none;
+}
+
+.travel-card.left {
+  border-left: 1px solid var(--line);
+  border-right: 3px solid var(--kind);
+}
+
+.travel-card.enter {
+  animation: travel-in 0.5s ease both;
+}
+
+@keyframes travel-in {
+  from {
+    opacity: 0;
+    filter: blur(4px);
+  }
+}
+
+.travel-head {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.travel-badge {
+  flex: none;
+  line-height: 0;
+}
+
+.travel-text {
+  min-width: 0;
+}
+
+.travel-meta {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--kind);
+  filter: brightness(1.25);
+}
+
+.travel-title {
+  margin: 1px 0 0;
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+.travel-when {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+
+.travel-short {
+  margin: 8px 0 0;
+  font-size: 14px;
+  text-wrap: pretty;
+}
+
+.travel-hint {
+  margin: 6px 0 0;
+  font-size: 11px;
+  color: var(--ink-soft);
+  opacity: 0.75;
+}
+
+.travel-more {
+  display: none;
+}
+
+.travel-card.open {
+  width: 360px;
+  cursor: auto;
+  border-color: rgba(214, 220, 228, 0.3);
+  border-left-color: var(--kind);
+}
+
+.travel-card.open.left {
+  border-left-color: rgba(214, 220, 228, 0.3);
+  border-right-color: var(--kind);
+}
+
+.travel-card.open .travel-hint {
+  display: none;
+}
+
+.travel-card.open .travel-more {
+  display: block;
+}
+
+.travel-place {
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+
+.travel-figure {
+  margin: 10px 0 0;
+}
+
+.travel-figure[hidden] {
+  display: none;
+}
+
+.travel-figure img {
+  display: block;
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.travel-figure figcaption {
+  margin-top: 4px;
+  font-size: 11px;
+}
+
+.travel-figure figcaption a {
+  color: var(--ink-soft);
+}
+
+.travel-summary,
+.travel-legacy {
+  margin: 8px 0 0;
+  text-wrap: pretty;
+}
+
+.travel-more h4 {
+  margin: 12px 0 0;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.travel-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  margin: 6px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.travel-links a {
+  color: var(--ink);
+  text-decoration-color: var(--kind);
+  text-underline-offset: 3px;
+}
+
+.travel-links small {
+  margin-left: 4px;
+  color: var(--ink-soft);
+}
+
+.travel-resume {
+  display: block;
+  margin: 14px 0 2px auto;
+  padding: 7px 14px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--steppe);
+  font: inherit;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Earlier turning points shrink to a label beside their badge. */
+.travel-card.label {
+  width: auto;
+  max-width: 220px;
+  padding: 4px 10px 4px 6px;
+  border-radius: 999px;
+  opacity: 0.85;
+}
+
+.travel-card.label .travel-badge svg {
+  width: 20px;
+  height: 20px;
+}
+
+.travel-card.label .travel-head {
+  align-items: center;
+  gap: 6px;
+}
+
+.travel-card.label .travel-title {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.travel-card.label .travel-meta,
+.travel-card.label .travel-when,
+.travel-card.label .travel-short,
+.travel-card.label .travel-hint {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .traveling .globe-tools {
+    display: none;
+  }
+}
+
+/* On phones the current card docks above the timeline. */
+.travel-card.docked {
+  top: auto;
+  left: var(--gutter);
+  right: var(--gutter);
+  bottom: calc(var(--safe-bottom) + var(--gutter) + var(--timeline-height, 190px) + 10px);
+  width: auto;
+  max-height: 46vh;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .travel-card,
+  .travel-cta {
+    transition: none;
+  }
+
+  .travel-card.enter {
+    animation: none;
+  }
+}
