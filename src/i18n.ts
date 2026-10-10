@@ -22,7 +22,7 @@ export const LANGUAGES: Language[] = [
   { code: "fr", name: "Français" },
 ];
 
-const LANGUAGE_KEY = "history-globe:language";
+const LANGUAGE_KEY = "terra-tempora:language";
 const others = import.meta.glob<{ default: Record<string, Message> }>(["./locales/*.json", "!./locales/en.json"]);
 
 let messages: Record<string, Message> = en;

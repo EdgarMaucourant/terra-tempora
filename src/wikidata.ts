@@ -40,7 +40,7 @@ export interface RealmFacts {
 
 const SPARQL = "https://query.wikidata.org/sparql";
 const COMMONS = "https://commons.wikimedia.org/w/api.php";
-const CACHE = "history-globe:facts:v2:";
+const CACHE = "terra-tempora:facts:v2:";
 const BATCH = 30;
 const THUMB_WIDTH = 480;
 

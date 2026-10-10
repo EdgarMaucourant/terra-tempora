@@ -38,6 +38,21 @@ const DEFAULT_CIV = "mongol-empire";
 
 const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
 
+// Choices saved before the app was renamed from History Globe move to the new
+// names; cached Wikidata answers are dropped and fetched again.
+try {
+  for (const key of Object.keys(localStorage)) {
+    if (!key.startsWith("history-globe:")) continue;
+    const value = localStorage.getItem(key);
+    if (value !== null && !key.startsWith("history-globe:facts:")) {
+      localStorage.setItem(key.replace("history-globe:", "terra-tempora:"), value);
+    }
+    localStorage.removeItem(key);
+  }
+} catch {
+  // Storage blocked; nothing was saved.
+}
+
 // The interface text comes first: everything below writes it.
 await initLanguage();
 translatePage();
@@ -82,7 +97,7 @@ const narrow = window.matchMedia("(max-width: 640px)").matches;
 // with the North Pole to the right as on a classroom globe. The camera looks
 // straight down, so its heading turns the picture about the screen's centre.
 const AXIAL_TILT = 23.5;
-const TILT_KEY = "history-globe:tilted";
+const TILT_KEY = "terra-tempora:tilted";
 let tilted = (() => {
   try {
     return localStorage.getItem(TILT_KEY) === "1";
@@ -616,8 +631,8 @@ setTilted(tilted, false);
 
 // Globe or flat map. The map opens on the place the globe was looking at, and
 // the globe comes back to where the map was.
-const MAP_KEY = "history-globe:view";
-const PROJECTION_KEY = "history-globe:projection";
+const MAP_KEY = "terra-tempora:view";
+const PROJECTION_KEY = "terra-tempora:projection";
 function stored(key: string): string | null {
   try {
     return localStorage.getItem(key);
@@ -1298,7 +1313,7 @@ Promise.all([
   });
 
 // A hook for automated checks.
-(window as unknown as { historyGlobe: unknown }).historyGlobe = {
+(window as unknown as { terraTempora: unknown }).terraTempora = {
   setYear: (y: number) => {
     setYear(y);
     timeline?.setYear(year);

@@ -15,7 +15,7 @@
 import { mkdirSync, readFileSync, writeFileSync, existsSync } from "node:fs";
 
 const SPARQL = "https://query.wikidata.org/sparql";
-const AGENT = "history-globe/0.1 (https://github.com/EdgarMaucourant/history-globe)";
+const AGENT = "terra-tempora/0.1 (https://github.com/EdgarMaucourant/terra-tempora)";
 const OUT = "public/data/wd-events";
 // Kept in step with src/wikiEvents.ts.
 const SHARDS = 16;
