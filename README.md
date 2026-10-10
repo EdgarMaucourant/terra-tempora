@@ -201,6 +201,29 @@ Branches, add a rule for `main`: require a pull request with one approval,
 require review from Code Owners (`.github/CODEOWNERS`), and require the
 "Check" status to pass.
 
+## Feedback
+
+Visitors can report an error, missing data or an idea from the "Report a
+problem" links (on a realm, an event, a turning point, the sources panel and
+the landing page) or by right-clicking any spot on the globe or map. Each
+report becomes a GitHub issue labelled `feedback` plus its type, with the
+year, place, language and a link back to what the visitor was looking at.
+
+`worker/index.js` receives the reports at `/api/feedback` and files them; it
+limits each visitor to 5 reports a minute and ignores bots that fill a hidden
+field. To turn it on, in Cloudflare → Workers → terra-tempora → Settings →
+Variables and Secrets:
+
+1. Add the secret `GITHUB_TOKEN`: a fine-grained GitHub token for this
+   repository only, with "Issues: Read and write" permission.
+2. Optionally, against spam: create a Turnstile widget (Cloudflare →
+   Turnstile) for the site's domain, add its secret key as the secret
+   `TURNSTILE_SECRET`, and its site key as the build variable
+   `VITE_TURNSTILE_SITE_KEY` (Settings → Build → Variables), then redeploy.
+
+Until `GITHUB_TOKEN` is set, sending a report shows an error. To try it
+locally, run `npm run build` then `npx wrangler dev --var GITHUB_TOKEN:<token>`.
+
 ## Layout
 
 | Path | What it is |
@@ -228,6 +251,8 @@ require review from Code Owners (`.github/CODEOWNERS`), and require the
 | `src/eras.ts` | The eras of world history and their boundary years |
 | `src/main.ts` | Links, globe setup, highlighting, hover and click, playback, details card |
 | `src/years.ts` | Year formatting (negative years are BCE) |
+| `src/feedback.ts` | The report form and what it sends |
+| `worker/index.js` | The Cloudflare Worker: serves the site and files reports as GitHub issues |
 | `src/i18n.ts` | Languages: picks one, loads its text, fills in messages and translated data |
 | `src/locales/` | Interface text, one file per language |
 | `scripts/check-data.mjs` | Checks the data and translations (`npm run check`) |

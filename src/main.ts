@@ -20,6 +20,7 @@ import { countryCivIds, loadCountries, type Country, type CountryView } from "./
 import { BorderData, type Polity } from "./data";
 import { eraAt, eraName, ERAS, NOW } from "./eras";
 import { EventLayer } from "./eventLayer";
+import { Feedback } from "./feedback";
 import { badgeSvg, eventArticle, eventLinks, kindLabel, loadEvents, type HistoryEvent } from "./events";
 import { Landing } from "./landing";
 import { MapView, PROJECTIONS } from "./mapView";
@@ -346,7 +347,9 @@ document.addEventListener("keydown", (e) => {
 });
 
 // Tap or click a realm for its details.
+let shownRealm: Polity | null = null;
 function showInfo(p: Polity) {
+  shownRealm = p;
   sources.hidden = true;
   closeEvent();
   const civ = civs?.ofRealm(p.name);
@@ -462,6 +465,57 @@ handler.setInputAction((event: ScreenSpaceEventHandler.MotionEvent) => {
     else hoverRealm(polityAt(hoverPosition), hoverPosition.x, hoverPosition.y);
   });
 }, ScreenSpaceEventType.MOUSE_MOVE);
+// Visitors' reports, from the panels, the Sources list, the landing page, or
+// "Report something here" on a right-click on the globe or map.
+const feedback = new Feedback($("feedback"));
+const hereButton = $<HTMLButtonElement>("here-report");
+let hereContext: Parameters<Feedback["open"]>[0] | null = null;
+
+function offerReportHere(x: number, y: number, lonLat: [number, number] | null, p: Polity | null | undefined) {
+  if (!lonLat) return;
+  hideTooltip();
+  const civ = p ? civs?.ofRealm(p.name) : undefined;
+  hereContext = { kind: "place", id: civ?.id, name: p?.name, year: Math.round(year), lonLat };
+  hereButton.style.transform = `translate(${x + 8}px, ${y + 8}px)`;
+  hereButton.hidden = false;
+  hereButton.focus();
+}
+
+hereButton.addEventListener("click", () => {
+  hereButton.hidden = true;
+  if (hereContext) feedback.open(hereContext);
+});
+hereButton.addEventListener("blur", () => window.setTimeout(() => (hereButton.hidden = true), 150));
+
+handler.setInputAction((event: ScreenSpaceEventHandler.PositionedEvent) => {
+  const at = widget.camera.pickEllipsoid(new Cartesian2(event.position.x, event.position.y), scene.globe.ellipsoid);
+  const place = at ? scene.globe.ellipsoid.cartesianToCartographic(at) : undefined;
+  const lonLat: [number, number] | null = place
+    ? [CesiumMath.toDegrees(place.longitude), CesiumMath.toDegrees(place.latitude)]
+    : null;
+  offerReportHere(event.position.x, event.position.y, lonLat, polityAt(event.position));
+}, ScreenSpaceEventType.RIGHT_CLICK);
+scene.canvas.addEventListener("contextmenu", (e) => e.preventDefault());
+mapCanvas.addEventListener("contextmenu", (e) => {
+  e.preventDefault();
+  const box = mapCanvas.getBoundingClientRect();
+  const x = e.clientX - box.left;
+  const y = e.clientY - box.top;
+  offerReportHere(e.clientX, e.clientY, map.lonLatAt(x, y), map.polityAt(x, y));
+});
+
+$("info-report").addEventListener("click", () => {
+  const p = shownRealm;
+  if (!p) return;
+  const civ = civs?.ofRealm(p.name);
+  feedback.open({ kind: "realm", id: civ?.id, name: p.name, year: Math.round(year), lonLat: p.label });
+});
+$("event-report").addEventListener("click", () => {
+  const e = openedEvent;
+  if (e) feedback.open({ kind: "event", id: e.id, name: e.title, year: e.year, lonLat: e.lonLat });
+});
+for (const id of ["sources-report", "landing-report"]) $(id).addEventListener("click", () => feedback.open({ kind: "app" }));
+
 scene.canvas.addEventListener("pointerleave", () => {
   hoverPosition = null;
   travel?.hoverOnBadge(null);
@@ -1123,6 +1177,7 @@ function startTravel(at?: number) {
         },
         latOffset: narrow ? 8 : 0,
         narrow,
+        report: (e) => feedback.open({ kind: "turning-point", id: e.id, name: e.title, year: e.year, lonLat: e.lonLat }),
       },
       travelLayer,
     );
