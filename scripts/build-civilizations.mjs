@@ -1,6 +1,7 @@
 // Builds the list of civilizations shown on the landing page from the border
 // files in public/data (run `npm run data` first if they are missing).
-// Output: public/data/civilizations.json
+// Output: public/data/civilizations.json, and public/data/civilization-shapes.json
+//         with each one's outline, which only the landing page's cards need
 //
 // One civilization per Cliopatria realm name. Cliopatria writes a realm's
 // overseas or subordinate parts as "(Name)"; those are folded into "Name".
@@ -145,6 +146,7 @@ for (const s of shapes.values()) {
 }
 
 const civilizations = [];
+const outlines = {};
 const slugs = new Set();
 for (const g of groups.values()) {
   // The realm's own shapes, not its overseas parts, give its dates, link and silhouette.
@@ -173,11 +175,16 @@ for (const g of groups.values()) {
     area: peak.area,
     center: peak.label,
     family: familyOf.get(g.name) ?? null,
-    shape: silhouette(peak),
   });
+  outlines[slug] = silhouette(peak);
 }
 civilizations.sort((a, b) => b.area - a.area);
 
 const json = JSON.stringify({ source: index.source, families: FAMILIES, civilizations });
 writeFileSync("public/data/civilizations.json", json);
-console.log(`${civilizations.length} civilizations, ${(json.length / 1e3).toFixed(0)} kB`);
+// Outlines in the same order as the list.
+const shapesJson = JSON.stringify(Object.fromEntries(civilizations.map((c) => [c.id, outlines[c.id]])));
+writeFileSync("public/data/civilization-shapes.json", shapesJson);
+console.log(
+  `${civilizations.length} civilizations, ${(json.length / 1e3).toFixed(0)} kB, outlines ${(shapesJson.length / 1e3).toFixed(0)} kB`,
+);

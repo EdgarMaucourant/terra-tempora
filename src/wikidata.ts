@@ -4,6 +4,8 @@
 // for the credit line. Answers are cached in localStorage. When Wikimedia
 // cannot be reached, cards fall back to the realm's outline.
 
+import { t } from "./i18n";
+
 export interface Picture {
   /** Commons file name, without "File:". */
   file: string;
@@ -14,6 +16,16 @@ export interface Picture {
   license: string;
   /** A photo or painting fills the card; a coat of arms or flag is shown whole. */
   kind?: "photo" | "emblem";
+}
+
+/** Author and licence for a credit line, e.g. "Jane Doe, CC BY-SA 4.0". */
+export function pictureCredit(picture: Picture): string {
+  return [picture.artist || "Wikimedia Commons", picture.license].filter(Boolean).join(", ");
+}
+
+/** Tooltip for a credit line: the file, author and licence, and where the link goes. */
+export function pictureTitle(picture: Picture): string {
+  return t("picture.title", { file: picture.file, credit: [picture.artist, picture.license].filter(Boolean).join(", ") || "Wikimedia Commons" });
 }
 
 export interface RealmFacts {

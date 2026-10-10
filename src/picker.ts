@@ -1,7 +1,6 @@
 import { civEraText, type Civilization } from "./civilizations";
+import { lang, t } from "./i18n";
 import { formatRange } from "./years";
-
-const nf = new Intl.NumberFormat("en");
 
 /**
  * A dialog listing every civilization, to choose which ones the globe shows.
@@ -24,7 +23,7 @@ export class Picker {
     this.search = root.querySelector<HTMLInputElement>("#picker-search")!;
     this.count = root.querySelector<HTMLElement>("#picker-count")!;
     this.addButton = root.querySelector<HTMLButtonElement>("#picker-add")!;
-    this.search.placeholder = `Search ${nf.format(list.length)} civilizations`;
+    this.search.placeholder = t("landing.searchCivs", { count: list.length });
     this.search.addEventListener("input", () => this.filter());
     this.addButton.addEventListener("click", () => {
       // Civilizations already shown keep their order; new ones follow.
@@ -93,27 +92,26 @@ export class Picker {
       meta.className = "picker-meta";
       meta.textContent = `${formatRange(c.from, c.to)} · ${civEraText(c)}`;
       row.append(box, name, meta);
-      this.rows.set(c.id, { row, box, text: c.names.join(" ").toLowerCase() });
+      this.rows.set(c.id, { row, box, text: c.names.join(" ").toLocaleLowerCase(lang) });
       return row;
     });
     listEl.replaceChildren(...rows);
   }
 
   private filter() {
-    const query = this.search.value.trim().toLowerCase();
+    const query = this.search.value.trim().toLocaleLowerCase(lang);
     for (const { row, text } of this.rows.values()) row.hidden = !!query && !text.includes(query);
   }
 
   private update() {
     const added = [...this.picked].filter((c) => !this.shown.has(c)).length;
     const removed = [...this.shown].filter((c) => !this.picked.has(c)).length;
-    const parts = [added && `${added} to add`, removed && `${removed} to remove`].filter(Boolean);
+    const parts = [added && t("picker.toAdd", { count: added }), removed && t("picker.toRemove", { count: removed })].filter(Boolean);
     this.count.textContent = this.picked.size
       ? parts.length
         ? parts.join(", ")
-        : `${this.shown.size} on the globe. Tick to add, untick to remove.`
-      : "Keep at least one civilization.";
+        : t("picker.onGlobe", { count: this.shown.size })
+      : t("picker.keepOne");
     this.addButton.disabled = this.picked.size === 0 || (!added && !removed);
-    this.addButton.textContent = "Update the globe";
   }
 }

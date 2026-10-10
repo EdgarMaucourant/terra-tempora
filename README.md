@@ -137,6 +137,14 @@ The border data in `public/data/` is already committed, so the app runs without
 rebuilding it. `npm run data` rebuilds it: the first run downloads the
 Cliopatria borders (about 46 MB, unzipped with `unzip`) into `data-raw/`.
 `npm run civs` rebuilds only the civilization list from the border files.
+The list (`civilizations.json`) carries no outlines: the landing page's card
+outlines are in `civilization-shapes.json`, downloaded only once the landing
+page shows, so a link straight to the globe skips them.
+
+`npm run check` checks the data files and the translations (ids unique and
+known, years and places in range, event kinds known, translations matching the
+English). It runs on every pull request with the build
+(`.github/workflows/check.yml`).
 
 Pictures, key figures and the links between realms are read from Wikidata and
 Wikimedia Commons in the browser as cards scroll into view, and cached in
@@ -145,6 +153,52 @@ a civilization is highlighted with its hand-picked family alone.
 
 `node scripts/make-artifact.mjs` turns `dist/` into the page and file list used
 for the claude.ai preview.
+
+## Languages
+
+The interface is in English and French. The language is, in order: `?lang=fr`
+in the address, the reader's earlier choice from the language menu (top right),
+the browser's languages, then English.
+
+- Interface text is in `src/locales/<code>.json`, one message per key. English
+  (`en.json`) is bundled; another language's file is downloaded only by readers
+  using it. `{name}` marks a value filled in by the app; a message that depends
+  on a number gives its plural forms (`"one"`, `"other"`, and `"few"` or
+  `"many"` where the language has them). A key missing from a translation shows
+  in English. Fixed text in `index.html` names its key with `data-i18n` (text),
+  `data-i18n-html` (markup), `data-i18n-label`, `-title` or `-placeholder`.
+- Data text (events, turning points, country names) stays in English in the
+  data files. A translation is a file of the same name under
+  `public/data/i18n/<code>/`, holding only the text by item id, for example
+  `public/data/i18n/fr/events.json`:
+  `{"temujin-born": {"title": "Naissance de Temüjin", "summary": "…"}}`.
+  Untranslated items stay in English. Translatable: `events.json`,
+  `travel.json`, `countries.json` and `wd-events/<n>.json` (ids look like
+  `wd:<Wikipedia article>:<kind>`). Civilization and realm names come from
+  Cliopatria and are English for now.
+- To add a language: copy `src/locales/en.json` to `<code>.json`, translate it,
+  and add the language to `LANGUAGES` in `src/i18n.ts`.
+
+## Hosting
+
+The site is static: `npm run build` writes it to `dist/` (about 170 files,
+33 MB, none over 2 MB), and every data file downloads only when needed. It is
+set up for Cloudflare Pages, which has no bandwidth charge on its free plan:
+
+1. In Cloudflare, Workers & Pages → Create → Pages → Connect to Git, and pick
+   this repository.
+2. Framework preset: none. Build command: `npm run build`. Output directory:
+   `dist`. Node is read from `.node-version`.
+3. Every push to `main` publishes the site; every other branch and pull
+   request gets its own preview address to test before publishing.
+
+`public/_headers` sets how long browsers keep files: built scripts forever
+(their names change with their content), data files an hour.
+
+To require a review before anything is published, in GitHub's Settings →
+Branches, add a rule for `main`: require a pull request with one approval,
+require review from Code Owners (`.github/CODEOWNERS`), and require the
+"Check" status to pass.
 
 ## Layout
 
@@ -173,6 +227,9 @@ for the claude.ai preview.
 | `src/eras.ts` | The eras of world history and their boundary years |
 | `src/main.ts` | Links, globe setup, highlighting, hover and click, playback, details card |
 | `src/years.ts` | Year formatting (negative years are BCE) |
+| `src/i18n.ts` | Languages: picks one, loads its text, fills in messages and translated data |
+| `src/locales/` | Interface text, one file per language |
+| `scripts/check-data.mjs` | Checks the data and translations (`npm run check`) |
 | `src/colors.ts` | Highlight colours and the grey for other realms |
 
 ## Sources and licenses

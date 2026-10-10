@@ -5,7 +5,9 @@
 // speeds up. Hovering a card or its badge stops time and opens the full story.
 
 import { Cartesian3, Ellipsoid, EllipsoidalOccluder, SceneTransforms, type Scene } from "cesium";
-import { badgeSvg, eventArticle, eventLinks, KINDS, type HistoryEvent } from "./events";
+import { badgeSvg, eventArticle, eventLinks, KINDS, kindLabel, type HistoryEvent } from "./events";
+import { t, withText } from "./i18n";
+import { pictureCredit } from "./wikidata";
 import { formatRange, formatYear } from "./years";
 
 export interface TravelEvent extends HistoryEvent {
@@ -23,12 +25,13 @@ export async function loadTravel(base: string): Promise<TravelEvent[]> {
   const response = await fetch(new URL("travel.json", base));
   if (!response.ok) throw new Error(`Could not load the history travel (${response.status})`);
   const { events } = (await response.json()) as { events: TravelEvent[] };
-  return events.map((e) => ({ ...e, civs: [] })).sort((a, b) => a.year - b.year);
+  const translated = await withText(base, "travel.json", events);
+  return translated.map((e) => ({ ...e, civs: [] })).sort((a, b) => a.year - b.year);
 }
 
 export function travelWhen(e: TravelEvent): string {
   const when = e.to && e.to !== e.year ? formatRange(e.year, e.to) : formatYear(e.year);
-  return e.circa ? `c. ${when}` : when;
+  return e.circa ? t("travel.circa", { when }) : when;
 }
 
 export interface TravelHost {
@@ -442,13 +445,13 @@ export class Travel {
     const head = el("header", "travel-head");
     const badge = el("span", "travel-badge");
     badge.innerHTML = badgeSvg(e.kind, 30);
-    const meta = el("p", "travel-meta", `${KINDS[e.kind].label} · ${e.region}`);
+    const meta = el("p", "travel-meta", `${kindLabel(e.kind)} · ${e.region}`);
     const when = el("p", "travel-when", travelWhen(e));
     const text = el("div", "travel-text");
     text.append(meta, el("h3", "travel-title", e.title), when);
     head.append(badge, text);
     const short = el("p", "travel-short", e.short);
-    const hint = el("p", "travel-hint", "Hover or tap for the full story");
+    const hint = el("p", "travel-hint", t("travel.hint"));
     const more = el("div", "travel-more");
     card.append(head, short, hint, more);
     card.addEventListener("pointerenter", (ev) => {
@@ -474,7 +477,7 @@ export class Travel {
   private fillDetails(e: TravelEvent, card: HTMLElement) {
     const more = card.querySelector<HTMLElement>(".travel-more")!;
     if (more.childElementCount) return;
-    const where = typeof e.approx === "string" ? e.approx : e.approx ? `${e.place} (approximate)` : e.place;
+    const where = typeof e.approx === "string" ? e.approx : e.approx ? t("travel.approximate", { place: e.place }) : e.place;
     const figure = el("figure", "travel-figure");
     figure.hidden = true;
     const links = el("ul", "travel-links");
@@ -484,16 +487,16 @@ export class Travel {
       if (l.note) item.append(el("small", undefined, l.note));
       links.append(item);
     }
-    const resume = el("button", "travel-resume", "Continue ▸");
+    const resume = el("button", "travel-resume", t("travel.continue"));
     resume.type = "button";
     resume.addEventListener("click", () => this.setPlaying(true));
     more.append(
       el("p", "travel-place", where),
       figure,
       el("p", "travel-summary", e.summary),
-      el("h4", undefined, "Why it matters"),
+      el("h4", undefined, t("travel.whyItMatters")),
       el("p", "travel-legacy", e.legacy),
-      el("h4", undefined, "Learn more"),
+      el("h4", undefined, t("event.learnMore")),
       links,
       resume,
     );
@@ -502,7 +505,7 @@ export class Travel {
       const picture = article?.picture;
       if (!picture) return;
       const image = Object.assign(el("img"), { alt: "", decoding: "async" as const, src: picture.thumb });
-      const credit = Object.assign(el("a", undefined, `${picture.artist || "Wikimedia Commons"}${picture.license ? `, ${picture.license}` : ""}`), {
+      const credit = Object.assign(el("a", undefined, pictureCredit(picture)), {
         href: picture.page,
         target: "_blank",
         rel: "noopener",

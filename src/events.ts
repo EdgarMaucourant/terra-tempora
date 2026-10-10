@@ -4,6 +4,7 @@
 // Pictures come from the event's Wikipedia article in the browser, and only
 // when the file is on Wikimedia Commons, so it is freely licensed.
 
+import { t, withText, type MessageKey } from "./i18n";
 import { fetchPictures, type Picture } from "./wikidata";
 
 export type EventKind =
@@ -48,12 +49,11 @@ export interface HistoryEvent {
   search: string;
   /** Direct links to articles on other reference sites. */
   links?: { label: string; url: string }[];
-  /** Read from Wikidata rather than written by hand; its story comes from Wikipedia. */
+  /** Read from Wikidata with no written story: the panel tells it with the Wikipedia article's opening. */
   fromWikidata?: boolean;
 }
 
 interface KindStyle {
-  label: string;
   color: string;
   /** Icon drawn in white on a 24×24 grid. */
   path: string;
@@ -61,103 +61,83 @@ interface KindStyle {
 
 export const KINDS: Record<EventKind, KindStyle> = {
   battle: {
-    label: "Battle",
     color: "#c8483c",
     path: "M5 5l12 12M14 20l6-6M17 17l3 3M19 5L7 17M4 14l6 6M7 17l-3 3",
   },
   siege: {
-    label: "Siege",
     color: "#d0742c",
     path: "M6 20V9h2V6h2v3h4V6h2v3h2v11zM10 20v-4h4v4",
   },
   war: {
-    label: "War",
     color: "#a8433f",
     path: "M6 21V4M6 4h11l-2.5 3.5L17 11H6",
   },
   crown: {
-    label: "Rulers",
     color: "#c9a13b",
     path: "M4 17L3 7l5 4 4-6 4 6 5-4-1 10zM4 20h16",
   },
   birth: {
-    label: "Birth",
     color: "#5d9c6c",
     path: "M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.5l-5.3 2.9 1.2-6-4.5-4.1 6-.7z",
   },
   death: {
-    label: "Death",
     color: "#6f7681",
     path: "M7 20v-9a5 5 0 0 1 10 0v9zM12 9v6M10 11h4M4 20h16",
   },
   city: {
-    label: "Capital",
     color: "#3f9a96",
     path: "M4 20V10l4-3 4 3v10M12 20V6l4-3 4 3v14M3 20h18M8 14v2M16 10v2M16 15v2",
   },
   treaty: {
-    label: "Treaty",
     color: "#4f8fc0",
     path: "M8 4h10v12a4 4 0 0 1-4 4H7a3 3 0 0 1-3-3v-1h10v1a3 3 0 0 0 3 3M8 4a2 2 0 0 0-2 2v10M11 8h4M11 11h4",
   },
   journey: {
-    label: "Travellers",
     color: "#6d7fd0",
     path: "M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zM15.5 8.5l-2 5-5 2 2-5z",
   },
   plague: {
-    label: "Plague",
     color: "#8c5aa8",
     path: "M12 3a7 7 0 0 0-7 7c0 2.6 1.3 4.3 3 5.3V19h8v-3.7c1.7-1 3-2.7 3-5.3a7 7 0 0 0-7-7zM9.5 10.5h.01M14.5 10.5h.01M11 19v-2M13 19v-2",
   },
   // The kinds below are used by the history travel's turning points.
   farming: {
-    label: "Farming",
     color: "#7a9e45",
     path: "M12 21V8M12 12c-3 0-5-2-5-5 3 0 5 2 5 5zM12 16c3 0 5-2 5-5-3 0-5 2-5 5zM12 8c0-2 1-3.5 3-5",
   },
   monument: {
-    label: "Monument",
     color: "#b5894a",
     path: "M3 20h18L12 4zM12 4l3 16M7.6 12.5h8.8",
   },
   writing: {
-    label: "Writing",
     color: "#8d7458",
     path: "M5 4h11l3 3v13H5zM8 9h8M8 13h8M8 17h5",
   },
   faith: {
-    label: "Faith",
     color: "#c56f98",
     path: "M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z",
   },
   idea: {
-    label: "Ideas",
     color: "#d9a92e",
     path: "M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z",
   },
   science: {
-    label: "Invention",
     color: "#2f86c9",
     path: "M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.8 3h10.4a2 2 0 0 0 1.8-3l-5-9V3M7.4 15h9.2",
   },
   empire: {
-    label: "Empire",
     color: "#9a573a",
     path: "M3 20h18M5 17h14M6.5 17v-6M10 17v-6M14 17v-6M17.5 17v-6M3.5 11h17L12 4.5z",
   },
   trade: {
-    label: "Trade",
     color: "#2f9a72",
     path: "M3 15h18l-3 5H6zM12 3v12M12 4.5l6 8h-6",
   },
   town: {
-    label: "City",
     color: "#3f9a96",
     path: "M4 20V10l4-3 4 3v10M12 20V6l4-3 4 3v14M3 20h18M8 14v2M16 10v2M16 15v2",
   },
   revolution: {
-    label: "Revolution",
     color: "#cc4a68",
     path: "M9.5 14.5l-2 2a3 3 0 0 1-4.2-4.2l3-3a3 3 0 0 1 4.2 0M14.5 9.5l2-2a3 3 0 0 1 4.2 4.2l-3 3a3 3 0 0 1-4.2 0M8 3.5l1 2M3.5 8l2 1M16 20.5l-1-2M20.5 16l-2-1",
   },
@@ -197,13 +177,20 @@ export function eventYears(e: HistoryEvent): [number, number] {
   return [e.year, e.to ?? e.year];
 }
 
+/** The hand-written events, in the reader's language where translated. */
 export async function loadEvents(base: string): Promise<HistoryEvent[]> {
   const response = await fetch(new URL("events.json", base));
   if (!response.ok) throw new Error(`Could not load the events (${response.status})`);
-  return ((await response.json()) as { events: HistoryEvent[] }).events;
+  const { events } = (await response.json()) as { events: HistoryEvent[] };
+  return withText(base, "events.json", events);
 }
 
 /** Further reading: the Wikipedia article, the event's own links, then searches on reference sites. */
+/** The kind's name, e.g. "Battle". */
+export function kindLabel(kind: EventKind): string {
+  return t(`kind.${kind}` as MessageKey);
+}
+
 export function eventLinks(e: HistoryEvent): { label: string; url: string; note?: string }[] {
   const links: { label: string; url: string; note?: string }[] = [
     { label: "Wikipedia", url: `https://en.wikipedia.org/wiki/${encodeURIComponent(e.wikipedia)}` },
@@ -211,12 +198,12 @@ export function eventLinks(e: HistoryEvent): { label: string; url: string; note?
   ];
   const query = encodeURIComponent(e.search);
   if (!links.some((l) => l.label === "Britannica")) {
-    links.push({ label: "Britannica", url: `https://www.britannica.com/search?query=${query}`, note: "search" });
+    links.push({ label: "Britannica", url: `https://www.britannica.com/search?query=${query}`, note: t("event.searchNote") });
   }
   links.push({
     label: "World History Encyclopedia",
     url: `https://www.worldhistory.org/search/?q=${query}`,
-    note: "search",
+    note: t("event.searchNote"),
   });
   return links;
 }

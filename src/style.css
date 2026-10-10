@@ -1093,6 +1093,34 @@ a {
   padding: calc(var(--safe-top) + 40px) var(--gutter) 8px;
 }
 
+.landing-head {
+  position: relative;
+}
+
+/* Language menus: in the toolbar on the globe, top right on the landing page. */
+.language select {
+  min-height: 36px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--panel);
+  backdrop-filter: blur(10px);
+  font: inherit;
+  font-weight: 500;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.language select:hover {
+  border-color: rgba(214, 220, 228, 0.32);
+}
+
+.landing-language {
+  position: absolute;
+  top: calc(var(--safe-top) + 16px);
+  right: var(--gutter);
+}
+
 .landing-head h1 {
   margin: 6px 0 8px;
   font: 600 clamp(32px, 5.4vw, 56px) / 1.02 var(--font-display);

@@ -1,7 +1,8 @@
-import { civEraText, civEras, eraLabel, shapePath, type Civilization } from "./civilizations";
-import { ERAS, type Era } from "./eras";
+import { civEraText, civEras, shapePath, type Civilization, type Outlines } from "./civilizations";
+import { ERAS, eraLabel, type Era } from "./eras";
 import { countryCivIds, type Country, type CountryView } from "./countries";
-import { realmFacts, type RealmFacts } from "./wikidata";
+import { formatNumber, lang, t } from "./i18n";
+import { pictureTitle, realmFacts, type RealmFacts } from "./wikidata";
 import { formatRange, formatYear } from "./years";
 
 type Sort = "area" | "oldest" | "newest" | "name";
@@ -10,12 +11,11 @@ const SORTS: Record<Sort, (a: Civilization, b: Civilization) => number> = {
   area: (a, b) => b.area - a.area,
   oldest: (a, b) => a.from - b.from || b.area - a.area,
   newest: (a, b) => b.to - a.to || b.from - a.from,
-  name: (a, b) => a.name.localeCompare(b.name),
+  name: (a, b) => a.name.localeCompare(b.name, lang),
 };
 
 type CountrySort = "name" | "area" | "oldest" | "most";
 
-const nf = new Intl.NumberFormat("en");
 // Cards each section shows before the "Show all" card, which makes a tenth.
 const SHOWN = 9;
 
@@ -42,6 +42,7 @@ export class Landing {
   private multi = false;
   /** Ticked civilizations, in the order they were ticked. */
   private selected: Civilization[] = [];
+  private outlines: Outlines | null = null;
 
   constructor(
     private root: HTMLElement,
@@ -49,13 +50,15 @@ export class Landing {
     private onOpen: (civs: Civilization[]) => void,
     countries: Country[] = [],
     onCountry?: (country: Country, view: CountryView) => void,
+    /** Downloads the cards' outlines; asked for only once the page is shown. */
+    private loadOutlines: () => Promise<Outlines> = async () => ({}),
   ) {
     this.observer = new IntersectionObserver((entries) => this.reveal(entries), { root, rootMargin: "600px 0px" });
 
     const search = root.querySelector<HTMLInputElement>("#civ-search")!;
-    search.placeholder = `Search ${nf.format(list.length)} civilizations`;
+    search.placeholder = t("landing.searchCivs", { count: list.length });
     search.addEventListener("input", () => {
-      this.query = search.value.trim().toLowerCase();
+      this.query = search.value.trim().toLocaleLowerCase(lang);
       this.all = false;
       this.render();
     });
@@ -80,7 +83,7 @@ export class Landing {
       });
       return button;
     };
-    eras.append(chip("All eras", null));
+    eras.append(chip(t("landing.allEras"), null));
     for (const e of ERAS) if (list.some((c) => this.inEra(c, e))) eras.append(chip(eraLabel(e), e));
 
     const toggle = root.querySelector<HTMLButtonElement>("#multi-toggle")!;
@@ -103,6 +106,30 @@ export class Landing {
     this.render();
   }
 
+  /** The page is on screen: the cards' outlines are worth downloading now. */
+  show() {
+    if (this.outlines) return;
+    this.loadOutlines().then((outlines) => {
+      this.outlines = outlines;
+      this.drawOutlines();
+    });
+  }
+
+  /** Draws the outline of every card that has none yet, once they have arrived. */
+  private drawOutlines() {
+    if (!this.outlines) return;
+    for (const path of this.root.querySelectorAll<SVGPathElement>("path[data-outline]")) {
+      const rings = this.outlines[path.dataset.outline!];
+      if (rings) path.setAttribute("d", shapePath(rings));
+      path.removeAttribute("data-outline");
+    }
+  }
+
+  /** An outline in the card's corner, drawn once the outlines are in. */
+  private outline(className: string, id: string): string {
+    return `<svg class="${className}" viewBox="-6 -6 112 112" aria-hidden="true"><path data-outline="${id}"/></svg>`;
+  }
+
   /** A countries or nations section: the first few, then a card to show the rest. */
   private setupCountries(view: CountryView, countries: Country[], onCountry?: (country: Country, view: CountryView) => void) {
     const section = this.root.querySelector<HTMLElement>(`.countries[data-kind="${view}"]`)!;
@@ -111,7 +138,7 @@ export class Landing {
     const grid = section.querySelector<HTMLElement>(".country-grid")!;
     const search = section.querySelector<HTMLInputElement>("input")!;
     const sort = section.querySelector<HTMLSelectElement>("select")!;
-    const noun = view === "territory" ? "Countries" : "Nations";
+
     const byId = new Map(this.list.map((c) => [c.id, c]));
     const cards = countries.map((country) => {
       const civs = countryCivIds(country, view)
@@ -122,23 +149,27 @@ export class Landing {
     });
     type Entry = (typeof cards)[number];
     const sorts: Record<CountrySort, (a: Entry, b: Entry) => number> = {
-      name: (a, b) => a.country.name.localeCompare(b.country.name),
+      name: (a, b) => a.country.name.localeCompare(b.country.name, lang),
       area: (a, b) => b.country.area - a.country.area,
-      oldest: (a, b) => a.from - b.from || a.country.name.localeCompare(b.country.name),
-      most: (a, b) => b.civs - a.civs || a.country.name.localeCompare(b.country.name),
+      oldest: (a, b) => a.from - b.from || a.country.name.localeCompare(b.country.name, lang),
+      most: (a, b) => b.civs - a.civs || a.country.name.localeCompare(b.country.name, lang),
     };
     let all = false;
     const show = () => {
-      const query = search.value.trim().toLowerCase();
+      const query = search.value.trim().toLocaleLowerCase(lang);
       const matches = cards
-        .filter(({ country }) => !query || country.name.toLowerCase().includes(query))
+        .filter(({ country }) => !query || country.name.toLocaleLowerCase(lang).includes(query))
         .sort(sorts[sort.value as CountrySort] ?? sorts.name);
       const toggle = () => {
         all = !all;
         show();
       };
-      grid.replaceChildren(...this.limited(matches.map((c) => c.card), matches.length, all, noun, "country-card", toggle));
-      if (query && !matches.length) grid.replaceChildren(el("p", "country-meta", `No ${noun.toLowerCase()} match.`));
+      const showAll = view === "territory" ? t("landing.showAllCountries") : t("landing.showAllNations");
+      grid.replaceChildren(...this.limited(matches.map((c) => c.card), matches.length, all, showAll, "country-card", toggle));
+      if (query && !matches.length) {
+        grid.replaceChildren(el("p", "country-meta", view === "territory" ? t("landing.noCountries") : t("landing.noNations")));
+      }
+      this.drawOutlines();
     };
     search.addEventListener("input", () => {
       all = false;
@@ -149,18 +180,18 @@ export class Landing {
   }
 
   /**
-   * The first few cards and a last card that shows the rest ("Show all …"),
+   * The first few cards and a last card that shows the rest (`showAll`),
    * or every card and a last card that folds them back. `total` counts every
    * match; `cards` may hold only the ones shown.
    */
-  private limited(cards: HTMLElement[], total: number, all: boolean, noun: string, kind: string, toggle: () => void): HTMLElement[] {
+  private limited(cards: HTMLElement[], total: number, all: boolean, showAll: string, kind: string, toggle: () => void): HTMLElement[] {
     if (total <= SHOWN + 1) return cards.slice(0, total);
     const more = el("button", `${kind} more-card`);
     more.type = "button";
     more.setAttribute("aria-expanded", String(all));
     more.append(
-      el("span", "more-title", all ? "Show fewer" : `Show all ${noun}`),
-      el("span", "more-count", all ? `Back to the first ${SHOWN}` : `${nf.format(total)} in all`),
+      el("span", "more-title", all ? t("landing.showFewer") : showAll),
+      el("span", "more-count", all ? t("landing.backToFirst", { count: SHOWN }) : t("landing.inAll", { count: total })),
     );
     more.addEventListener("click", () => {
       const section = more.parentElement;
@@ -183,7 +214,7 @@ export class Landing {
     const today = byId.get(country.civ);
     const shape = el("div");
     if (today) {
-      shape.innerHTML = `<svg class="country-shape" viewBox="-6 -6 112 112" aria-hidden="true"><path d="${shapePath(today)}"/></svg>`;
+      shape.innerHTML = this.outline("country-shape", today.id);
     }
     const body = el("div");
     const title = el("h3");
@@ -194,7 +225,7 @@ export class Landing {
       onCountry?.(country, view);
     });
     title.append(link);
-    body.append(title, el("p", "country-meta", `${civs.length} civilizations since ${formatYear(from)}`));
+    body.append(title, el("p", "country-meta", t("landing.countryMeta", { count: civs.length, year: formatYear(from) })));
     if (country.blurb && view === "nationality") card.title = country.blurb;
     card.append(shape, body);
     return card;
@@ -210,7 +241,7 @@ export class Landing {
     this.root.classList.toggle("multi", on);
     const toggle = this.root.querySelector<HTMLButtonElement>("#multi-toggle")!;
     toggle.setAttribute("aria-pressed", String(on));
-    toggle.textContent = on ? "Cancel selection" : "Select several";
+    toggle.textContent = on ? t("landing.cancelSelection") : t("landing.selectSeveral");
     this.updateBar();
   }
 
@@ -234,11 +265,11 @@ export class Landing {
     bar.hidden = !this.multi;
     const n = this.selected.length;
     bar.querySelector("#multi-count")!.textContent = n
-      ? `${n} selected: ${this.selected.map((c) => c.name).join(", ")}`
-      : "Tick the civilizations to show together on the globe.";
+      ? t("landing.selected", { count: n, names: this.selected.map((c) => c.name).join(", ") })
+      : t("landing.tickHint");
     const open = bar.querySelector<HTMLButtonElement>("#multi-open")!;
     open.disabled = n === 0;
-    open.textContent = n > 1 ? `Show ${n} on the globe` : "Show on the globe";
+    open.textContent = n > 1 ? t("landing.showSelected", { count: n }) : t("landing.showOnGlobe");
     bar.querySelector<HTMLButtonElement>("#multi-clear")!.hidden = n === 0;
   }
 
@@ -249,7 +280,7 @@ export class Landing {
   private matches(c: Civilization) {
     if (this.era && !this.inEra(c, this.era)) return false;
     if (!this.query) return true;
-    return c.names.some((n) => n.toLowerCase().includes(this.query));
+    return c.names.some((n) => n.toLocaleLowerCase(lang).includes(this.query));
   }
 
   private render() {
@@ -258,18 +289,19 @@ export class Landing {
     // Cards are built only when shown: every picture is a download.
     const cards = (this.all || shown.length <= SHOWN + 1 ? shown : shown.slice(0, SHOWN)).map((c) => this.card(c));
     grid.replaceChildren(
-      ...this.limited(cards, shown.length, this.all, "Civilizations", "civ-card", () => {
+      ...this.limited(cards, shown.length, this.all, t("landing.showAllCivs"), "civ-card", () => {
         this.all = !this.all;
         this.render();
       }),
     );
+    this.drawOutlines();
     const count = this.root.querySelector<HTMLElement>("#civ-count")!;
     count.textContent =
       shown.length === this.list.length
-        ? `${nf.format(shown.length)} civilizations`
+        ? t("landing.civCount", { count: shown.length })
         : shown.length
-          ? `${nf.format(shown.length)} of ${nf.format(this.list.length)} civilizations`
-          : "No civilization matches. Try another name or era.";
+          ? t("landing.civCountOf", { count: shown.length, total: formatNumber(this.list.length) })
+          : t("landing.noCivs");
   }
 
   private card(c: Civilization): HTMLElement {
@@ -287,7 +319,7 @@ export class Landing {
 
     const body = el("div", "civ-body");
     // The realm's outline at its largest sits small in the corner, behind the text.
-    body.innerHTML = `<svg class="civ-shape" viewBox="-6 -6 112 112" aria-hidden="true"><path d="${shapePath(c)}"/></svg>`;
+    body.innerHTML = this.outline("civ-shape", c.id);
     const title = el("h3", "civ-name");
     const link = el("a", "civ-link", c.name);
     link.href = `#c=${c.id}`;
@@ -298,7 +330,7 @@ export class Landing {
     });
     title.append(link);
     const figures = el("p", "civ-figures loading");
-    figures.setAttribute("aria-label", "Key figures");
+    figures.setAttribute("aria-label", t("landing.keyFigures"));
     body.append(
       el("p", "civ-era", civEraText(c)),
       title,
@@ -353,7 +385,7 @@ export class Landing {
     credit.rel = "noopener";
     const who = picture.artist ? (picture.artist.length > 48 ? `${picture.artist.slice(0, 46)}…` : picture.artist) : "Wikimedia Commons";
     credit.textContent = [who, picture.license].filter(Boolean).join(", ");
-    credit.title = `Picture: ${picture.file}${picture.artist ? ` by ${picture.artist}` : ""}${picture.license ? `, ${picture.license}` : ""}. Opens on Wikimedia Commons.`;
+    credit.title = pictureTitle(picture);
     card.querySelector(".civ-body")!.append(credit);
   }
 }
