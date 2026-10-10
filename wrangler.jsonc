@@ -1,11 +1,13 @@
 // Cloudflare Workers settings: the site is static, so the Worker only serves
 // the built files in dist/ (no script). Cloudflare builds it with
-// `npm run build` and publishes it with `npx wrangler deploy`.
+// `npm run build` and publishes it with `npx wrangler deploy` (main) or
+// `npx wrangler preview` (other branches, which needs the `previews` block).
 {
   "name": "terra-tempora",
   "compatibility_date": "2025-09-01",
   "assets": {
     "directory": "./dist",
     "not_found_handling": "single-page-application"
-  }
+  },
+  "previews": {}
 }
