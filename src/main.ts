@@ -333,8 +333,9 @@ contextToggle.addEventListener("change", () => {
 });
 document.addEventListener("keydown", (e) => {
   const target = e.target as HTMLElement;
-  if (!landingEl.hidden) return;
-  if (e.code === "Space" && !["BUTTON", "SELECT", "INPUT", "A"].includes(target.tagName) && target.id !== "track") {
+  // Leave keys alone on the landing page, in the report form and wherever text is typed.
+  if (!landingEl.hidden || !$("feedback").hidden || target.isContentEditable) return;
+  if (e.code === "Space" && !["BUTTON", "SELECT", "INPUT", "TEXTAREA", "A"].includes(target.tagName) && target.id !== "track") {
     e.preventDefault();
     togglePlay();
   }
