@@ -221,6 +221,10 @@ Variables and Secrets:
    `TURNSTILE_SECRET`, and its site key as the build variable
    `VITE_TURNSTILE_SITE_KEY` (Settings → Build → Variables), then redeploy.
 
+Branch previews have their own secrets: to try reports on a preview address,
+also add `GITHUB_TOKEN` under Variables and Secrets → Previews Base. It
+reaches previews built after you add it, so push again (or re-run the build).
+
 Until `GITHUB_TOKEN` is set, sending a report shows an error. To try it
 locally, run `npm run build` then `npx wrangler dev --var GITHUB_TOKEN:<token>`.
 

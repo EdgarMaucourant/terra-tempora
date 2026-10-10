@@ -19,5 +19,10 @@
   },
   // At most 5 reports a minute from one address.
   "ratelimits": [{ "name": "FEEDBACK_LIMIT", "namespace_id": "1001", "simple": { "limit": 5, "period": 60 } }],
-  "previews": {}
+  // Branch previews don't inherit the settings above: variables are repeated
+  // here, and secrets are set once under Settings → Variables and Secrets →
+  // Previews Base (they reach previews built after that).
+  "previews": {
+    "vars": { "GITHUB_REPO": "EdgarMaucourant/terra-tempora" }
+  }
 }
