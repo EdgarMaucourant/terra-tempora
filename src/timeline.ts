@@ -21,7 +21,7 @@ const MARK_MAX = 28;
 const MARK_GAP = 2;
 const MARKS_MIN_HEIGHT = 2 * MARK_MIN + MARK_GAP;
 const MARKS_MAX_HEIGHT = 4 * MARK_MAX + 3 * MARK_GAP;
-const MARKS_KEY = "history-globe:marks-height";
+const MARKS_KEY = "terra-tempora:marks-height";
 // Lines joining a lane to a related lane that is on the timeline too.
 const CONNECTOR = "#e0533f";
 

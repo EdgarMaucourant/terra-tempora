@@ -1,5 +1,5 @@
 {
- "source": "Chosen and written for History Globe's history travel from standard references; each event links to its Wikipedia article and to searches on Britannica and World History Encyclopedia. Dates marked circa are scholarly estimates.",
+ "source": "Chosen and written for Terra Tempora's history travel from standard references; each event links to its Wikipedia article and to searches on Britannica and World History Encyclopedia. Dates marked circa are scholarly estimates.",
  "events": [
   {"id": "gobekli-tepe", "year": -9500, "circa": true, "kind": "monument", "region": "Western Asia", "title": "Göbekli Tepe is raised", "place": "Göbekli Tepe, south-east Anatolia", "lonLat": [38.92, 37.22],
    "short": "Hunter-gatherers carve and raise giant T-shaped stone pillars, the oldest known monumental site.",

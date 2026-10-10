@@ -1,6 +1,6 @@
 import type { Timeline } from "./timeline";
 
-const STORAGE_KEY = "history-globe:timeline-track-height";
+const STORAGE_KEY = "terra-tempora:timeline-track-height";
 // The timeline can grow to this share of the window's height.
 const MAX_SHARE = 0.6;
 const KEY_STEP = 24;

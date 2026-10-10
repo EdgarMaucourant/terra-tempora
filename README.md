@@ -1,6 +1,6 @@
-# History Globe
+# Terra Tempora
 
-Prototype of the History Globe: pick a civilization from a landing page of
+Prototype of Terra Tempora: pick a civilization from a landing page of
 cards and see it on a 3D globe, highlighted with the realms related to it, set
 in a timeline that runs from 10,000 BCE to today.
 

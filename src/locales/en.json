@@ -88,7 +88,7 @@
   "other": "{count} civilizations since {year}"
  },
  "landing.era": "Era",
- "landing.eyebrow": "History Globe · prototype",
+ "landing.eyebrow": "Terra Tempora · prototype",
  "landing.footer": "Borders: <a href=\"https://github.com/Seshat-Global-History-Databank/cliopatria\" target=\"_blank\" rel=\"noopener\">Cliopatria</a>, Seshat Global History Databank, CC BY 4.0. Key figures and links between realms: <a href=\"https://www.wikidata.org/\" target=\"_blank\" rel=\"noopener\">Wikidata</a> (CC0). Pictures: <a href=\"https://commons.wikimedia.org/\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>, freely licensed; each card names the author and licence and links to the file. The small shape in each card’s corner is the realm’s outline at its largest.",
  "landing.inAll": {
   "one": "{count} in all",
@@ -156,8 +156,8 @@
   "other": "{count} civilizations whose borders crossed today’s {name} · {years}"
  },
  "masthead.two": "{first} & {second}",
- "page.title": "History Globe",
- "page.titleOf": "{name} · History Globe",
+ "page.title": "Terra Tempora",
+ "page.titleOf": "{name} · Terra Tempora",
  "picker.keepOne": "Keep at least one civilization.",
  "picker.onGlobe": {
   "one": "{count} on the globe. Tick to add, untick to remove.",
