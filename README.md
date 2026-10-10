@@ -183,14 +183,15 @@ the browser's languages, then English.
 
 The site is static: `npm run build` writes it to `dist/` (about 170 files,
 33 MB, none over 2 MB), and every data file downloads only when needed. It is
-set up for Cloudflare Pages, which has no bandwidth charge on its free plan:
+served by Cloudflare Workers as static files (`wrangler.jsonc`), which costs
+nothing on the free plan:
 
-1. In Cloudflare, Workers & Pages → Create → Pages → Connect to Git, and pick
+1. In Cloudflare, Workers & Pages → Create → Import a repository, and pick
    this repository.
-2. Framework preset: none. Build command: `npm run build`. Output directory:
-   `dist`. Node is read from `.node-version`.
-3. Every push to `main` publishes the site; every other branch and pull
-   request gets its own preview address to test before publishing.
+2. Build command: `npm run build`. Deploy command: `npx wrangler deploy`.
+   Node is read from `.node-version`.
+3. Every push to `main` publishes the site; other branches get a preview
+   address to test before publishing.
 
 `public/_headers` sets how long browsers keep files: built scripts forever
 (their names change with their content), data files an hour.
