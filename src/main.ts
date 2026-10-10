@@ -298,7 +298,7 @@ function setPlaying(on: boolean) {
 }
 
 function togglePlay() {
-  if (travel?.active) travel.setPlaying(!travel.playing);
+  if (travel?.active) travel.setPlaying(!travel.running);
   else setPlaying(!playing);
 }
 
