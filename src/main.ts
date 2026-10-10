@@ -14,12 +14,13 @@ import {
 import "cesium/Build/Cesium/Widgets/CesiumWidget/CesiumWidget.css";
 import "./style.css";
 import { civEraText, Civilizations, type Civilization } from "./civilizations";
+import { formatNumber, initLanguage, languageMenu, t, translatePage, withText, type MessageKey } from "./i18n";
 import { highlightColors } from "./colors";
 import { countryCivIds, loadCountries, type Country, type CountryView } from "./countries";
 import { BorderData, type Polity } from "./data";
-import { eraAt, ERAS, NOW } from "./eras";
+import { eraAt, eraName, ERAS, NOW } from "./eras";
 import { EventLayer } from "./eventLayer";
-import { badgeSvg, eventArticle, eventLinks, KINDS, loadEvents, type HistoryEvent } from "./events";
+import { badgeSvg, eventArticle, eventLinks, kindLabel, loadEvents, type HistoryEvent } from "./events";
 import { Landing } from "./landing";
 import { MapView, PROJECTIONS } from "./mapView";
 import { Picker } from "./picker";
@@ -27,7 +28,7 @@ import { PolityLayer } from "./polityLayer";
 import { Timeline, type Lane, type LaneLink } from "./timeline";
 import { attachTimelineGrip } from "./timelineGrip";
 import { loadTravel, Travel, travelWhen, type TravelEvent } from "./travel";
-import { realmFacts } from "./wikidata";
+import { pictureCredit, pictureTitle, realmFacts } from "./wikidata";
 import { wikidataEvents } from "./wikiEvents";
 import { era, formatRange, formatYear, yearNumber } from "./years";
 
@@ -36,6 +37,12 @@ const FIRST_YEAR = ERAS[0].from;
 const DEFAULT_CIV = "mongol-empire";
 
 const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
+
+// The interface text comes first: everything below writes it.
+await initLanguage();
+translatePage();
+document.querySelector(".toolbar")!.append(languageMenu("language toolbar-language"));
+document.querySelector(".landing-head")!.prepend(languageMenu("language landing-language"));
 
 const yearNumberEl = $("year-number");
 const yearEraEl = $("year-era");
@@ -195,7 +202,7 @@ function writeHash() {
 function showYear() {
   yearNumberEl.textContent = yearNumber(year);
   yearEraEl.textContent = era(year);
-  yearPeriodEl.textContent = eraAt(year).name;
+  yearPeriodEl.textContent = eraName(eraAt(year));
 }
 
 // Border downloads: fetch the years around the playhead, and further ahead while playing.
@@ -225,10 +232,10 @@ function ensureBorders() {
 let visible = 0;
 function updateHint() {
   let text = "";
-  if (data && year < data.from) text = `No borders are mapped before ${formatYear(data.from)}.`;
-  else if (data && year > data.to + 0.5) text = `Borders are mapped up to ${formatYear(data.to)}.`;
-  else if (loading) text = "Loading borders…";
-  else if (data && visible === 0) text = "No borders are mapped for this year.";
+  if (data && year < data.from) text = t("hint.before", { year: formatYear(data.from) });
+  else if (data && year > data.to + 0.5) text = t("hint.after", { year: formatYear(data.to) });
+  else if (loading) text = t("status.loading");
+  else if (data && visible === 0) text = t("hint.none");
   hintEl.textContent = text;
   hintEl.hidden = !text;
 }
@@ -284,7 +291,7 @@ function frame(now: number) {
 
 function setPlaying(on: boolean) {
   playing = on;
-  playButton.setAttribute("aria-label", on ? "Pause" : "Play");
+  playButton.setAttribute("aria-label", on ? t("controls.pause") : t("controls.play"));
   playIcon.setAttribute("d", on ? "M7 5h4v14H7zM13 5h4v14h-4z" : "M8 5v14l11-7z");
   if (on) {
     if (year >= NOW - 0.01) setYear(FIRST_YEAR);
@@ -324,18 +331,17 @@ document.addEventListener("keydown", (e) => {
 });
 
 // Tap or click a realm for its details.
-const nf = new Intl.NumberFormat("en");
 function showInfo(p: Polity) {
   sources.hidden = true;
   closeEvent();
   const civ = civs?.ofRealm(p.name);
   $("info-kind").textContent =
-    civ && highlighted.includes(civ) ? (civ === active || !expanded ? "Highlighted realm" : "Related realm") : "Realm";
+    civ && highlighted.includes(civ) ? (civ === active || !expanded ? t("info.highlighted") : t("info.related")) : t("info.realm");
   $("info-name").textContent = p.name;
   $("info-shape").textContent = formatRange(p.from, p.to);
   const span = data?.realmSpan(p.name) ?? [p.from, p.to];
   $("info-span").textContent = formatRange(span[0], span[1]);
-  $("info-area").textContent = `${nf.format(Math.round(p.area / 1000) * 1000)} km²`;
+  $("info-area").textContent = t("info.area", { area: formatNumber(Math.round(p.area / 1000) * 1000) });
   const links = $("info-links");
   links.replaceChildren();
   const link = (href: string, text: string) => {
@@ -392,7 +398,7 @@ function hoverRealm(p: Polity | null | undefined, x: number, y: number) {
   tooltip.replaceChildren(
     Object.assign(document.createElement("strong"), { textContent: civ.name }),
     Object.assign(document.createElement("span"), {
-      textContent: greyed ? `${formatRange(civ.from, civ.to)} · click to explore` : formatRange(civ.from, civ.to),
+      textContent: greyed ? t("tooltip.explore", { years: formatRange(civ.from, civ.to) }) : formatRange(civ.from, civ.to),
     }),
   );
   tooltip.style.transform = `translate(${x + 14}px, ${y + 14}px)`;
@@ -456,13 +462,15 @@ trackEl.addEventListener("pointerover", (e) => {
   if (mark) {
     tooltip.replaceChildren(
       Object.assign(document.createElement("strong"), { textContent: mark.dataset.label }),
-      Object.assign(document.createElement("span"), { textContent: mark.classList.contains("cluster") ? `${mark.dataset.detail} · click to zoom in` : `${mark.dataset.detail} · click to see it` }),
+      Object.assign(document.createElement("span"), {
+        textContent: t(mark.classList.contains("cluster") ? "tooltip.zoomIn" : "tooltip.see", { detail: mark.dataset.detail ?? "" }),
+      }),
     );
   } else {
     tooltip.replaceChildren(
-      Object.assign(document.createElement("span"), { textContent: link.dataset.side === "before" ? "Before" : "After" }),
+      Object.assign(document.createElement("span"), { textContent: link.dataset.side === "before" ? t("tooltip.before") : t("tooltip.after") }),
       Object.assign(document.createElement("strong"), { textContent: link.dataset.name }),
-      Object.assign(document.createElement("span"), { textContent: `${link.dataset.range} · click to open` }),
+      Object.assign(document.createElement("span"), { textContent: t("tooltip.open", { years: link.dataset.range ?? "" }) }),
     );
   }
   tooltip.hidden = false;
@@ -512,8 +520,8 @@ function chosen(): Civilization[] {
 
 function viewTitle(list: Civilization[]): string {
   if (list.length === 1) return list[0].name;
-  if (list.length === 2) return `${list[0].name} & ${list[1].name}`;
-  return `${list[0].name}, ${list[1].name} & ${list.length - 2} more`;
+  if (list.length === 2) return t("masthead.two", { first: list[0].name, second: list[1].name });
+  return t("masthead.more", { first: list[0].name, second: list[1].name, count: list.length - 2 });
 }
 
 function flyToCiv(c: Civilization, target: [number, number] | null = c.center, keepHeight = false) {
@@ -585,8 +593,8 @@ function setTilted(on: boolean, animate = true) {
   }
   const button = $("tilt");
   button.setAttribute("aria-pressed", String(on));
-  button.title = on ? "Stand the globe upright" : `Tilt the globe ${AXIAL_TILT}° like Earth's axis`;
-  $("tilt-label").textContent = on ? "Upright" : `Tilt ${AXIAL_TILT}°`;
+  button.title = on ? t("tilt.uprightTitle") : t("tilt.tiltTitle", { degrees: formatNumber(AXIAL_TILT) });
+  $("tilt-label").textContent = on ? t("tilt.upright") : t("tilt.tilt", { degrees: formatNumber(AXIAL_TILT) });
   if (!animate) return;
   // Turn the picture about the point at the centre of the screen.
   const camera = widget.camera;
@@ -626,7 +634,7 @@ function store(key: string, value: string) {
 }
 
 const projectionSelect = $<HTMLSelectElement>("projection");
-for (const p of PROJECTIONS) projectionSelect.append(new Option(p.name, p.id));
+for (const p of PROJECTIONS) projectionSelect.append(new Option(t(`projection.${p.id}` as MessageKey), p.id));
 projectionSelect.value = PROJECTIONS.some((p) => p.id === stored(PROJECTION_KEY)) ? stored(PROJECTION_KEY)! : PROJECTIONS[0].id;
 map.setProjection(projectionSelect.value);
 projectionSelect.addEventListener("change", () => {
@@ -726,12 +734,12 @@ function showHighlight() {
   }));
   const label = country
     ? countryView === "territory"
-      ? `Within today's ${country.name}`
-      : `Civilizations that led to ${country.name}`
+      ? t("lanes.territory", { name: country.name })
+      : t("lanes.nationality", { name: country.name })
     : !expanded
-    ? `${highlighted.length} civilizations`
+    ? t("lanes.count", { count: highlighted.length })
     : highlighted.length > 1
-      ? `${active.name} and related realms`
+      ? t("lanes.related", { name: active.name })
       : active.name;
   timeline?.setFeatured(lanes, label);
   showEvents();
@@ -789,7 +797,7 @@ function renderEvents(events: HistoryEvent[]) {
       year: e.year,
       icon: badgeSvg(e.kind, 14),
       label: e.title,
-      detail: `${KINDS[e.kind].label} · ${eventWhen(e)}`,
+      detail: `${kindLabel(e.kind)} · ${eventWhen(e)}`,
     })),
   );
   if (openedEvent && !shownEvents.includes(openedEvent)) closeEvent();
@@ -808,9 +816,9 @@ function openEvent(e: HistoryEvent) {
   sources.hidden = true;
   openedEvent = e;
   $("event-badge").innerHTML = badgeSvg(e.kind, 22);
-  $("event-kind").textContent = KINDS[e.kind].label;
+  $("event-kind").textContent = kindLabel(e.kind);
   $("event-title").textContent = e.title;
-  const where = typeof e.approx === "string" ? e.approx : e.approx ? `${e.place} (approximate location)` : e.place;
+  const where = typeof e.approx === "string" ? e.approx : e.approx ? t("event.approximate", { place: e.place }) : e.place;
   $("event-when").textContent = `${eventWhen(e)} · ${where}`;
   $("event-summary").textContent = e.summary;
   $("event-links").replaceChildren(
@@ -840,8 +848,8 @@ function openEvent(e: HistoryEvent) {
     image.src = picture.thumb;
     const credit = $<HTMLAnchorElement>("event-credit");
     credit.href = picture.page;
-    credit.textContent = `${picture.artist || "Wikimedia Commons"}${picture.license ? `, ${picture.license}` : ""}`;
-    credit.title = `Picture: ${picture.file}. Opens on Wikimedia Commons.`;
+    credit.textContent = pictureCredit(picture);
+    credit.title = pictureTitle(picture);
   });
 }
 
@@ -850,7 +858,7 @@ function hoverEvent(e: HistoryEvent, x: number, y: number) {
   map.setHovered(null);
   tooltip.replaceChildren(
     Object.assign(document.createElement("strong"), { textContent: e.title }),
-    Object.assign(document.createElement("span"), { textContent: `${KINDS[e.kind].label} · ${eventWhen(e)} · click for more` }),
+    Object.assign(document.createElement("span"), { textContent: t("tooltip.event", { kind: kindLabel(e.kind), when: eventWhen(e) }) }),
   );
   tooltip.style.transform = `translate(${x + 14}px, ${y + 14}px)`;
   tooltip.hidden = false;
@@ -890,15 +898,16 @@ function showMasthead() {
   const to = Math.max(...list.map((c) => c.to));
   const title = country ? country.name : viewTitle(list);
   $("civ-title").textContent = title;
+  const years = formatRange(from, to);
   $("civ-sub").textContent = country
     ? countryView === "territory"
-      ? `${list.length} civilizations whose borders crossed today's ${country.name} · ${formatRange(from, to)}`
-      : `${list.length} civilizations that led to ${country.name} · ${formatRange(from, to)}`
+      ? t("masthead.territory", { count: list.length, name: country.name, years })
+      : t("masthead.nationality", { count: list.length, name: country.name, years })
     : list.length === 1
-      ? `${formatRange(from, to)} · ${civEraText(list[0])}`
-      : `${list.length} civilizations · ${formatRange(from, to)}`;
-  $("view-focus").setAttribute("aria-label", `Show the years of ${title}`);
-  document.title = `${title} · History Globe`;
+      ? `${years} · ${civEraText(list[0])}`
+      : t("masthead.several", { count: list.length, years });
+  $("view-focus").setAttribute("aria-label", t("masthead.focusLabel", { name: title }));
+  document.title = t("page.titleOf", { name: title });
 }
 
 /** Shows a civilization on the globe, with its related realms highlighted. */
@@ -1053,7 +1062,8 @@ function showLanding() {
   sources.hidden = true;
   hideTooltip();
   landingEl.hidden = false;
-  document.title = "History Globe";
+  landing?.show();
+  document.title = t("page.title");
   landingEl.focus({ preventScroll: true });
 }
 
@@ -1069,7 +1079,7 @@ let travelRealmsAt = 0;
 function startTravel(at?: number) {
   if (!travelEvents.length || !timeline) return;
   if (playing) setPlaying(false);
-  const t = timeline;
+  const line = timeline;
   if (!travel) {
     travel = new Travel(
       travelEvents,
@@ -1078,7 +1088,7 @@ function startTravel(at?: number) {
         end: NOW,
         setYear: (y) => {
           setYear(y);
-          t.setYear(year);
+          line.setYear(year);
         },
         baseSpeed: () => Number(speedSelect.value),
         showBadges: (opacity) => {
@@ -1088,7 +1098,7 @@ function startTravel(at?: number) {
         },
         showRealms: (events) => showTravelRealms(events),
         onPlaying: (on) => {
-          playButton.setAttribute("aria-label", on ? "Pause" : "Play");
+          playButton.setAttribute("aria-label", on ? t("controls.pause") : t("controls.play"));
           playIcon.setAttribute("d", on ? "M7 5h4v14H7zM13 5h4v14h-4z" : "M8 5v14l11-7z");
         },
         orientation,
@@ -1116,20 +1126,20 @@ function startTravel(at?: number) {
   travelRealms = "";
   layer.setHighlight(new Map());
   map.setHighlight(new Map());
-  $("civ-title").textContent = "History travel";
-  $("civ-sub").textContent = `${travelEvents.length} turning points of world history, from Göbekli Tepe to today. Hover or tap a card to stop and read more.`;
-  document.title = "History travel · History Globe";
-  t.setFeatured([], "");
-  t.setView(FIRST_YEAR, NOW);
+  $("civ-title").textContent = t("travel.title");
+  $("civ-sub").textContent = t("travel.sub", { count: travelEvents.length });
+  document.title = t("page.titleOf", { name: t("travel.title") });
+  line.setFeatured([], "");
+  line.setView(FIRST_YEAR, NOW);
   shownEvents = travelEvents;
   eventLayer.set(travelEvents);
-  t.setMarks(
+  line.setMarks(
     travelEvents.map((e) => ({
       id: e.id,
       year: e.year,
       icon: badgeSvg(e.kind, 14),
       label: e.title,
-      detail: `${KINDS[e.kind].label} · ${travelWhen(e)}`,
+      detail: `${kindLabel(e.kind)} · ${travelWhen(e)}`,
     })),
   );
   // Cruise at 25 years a second; the travel slows down by itself where history crowds.
@@ -1197,7 +1207,9 @@ Promise.all([
   Civilizations.load(base),
   BorderData.open(base),
   // The countries are a bonus; the page works without them.
-  loadCountries(base).catch((error: unknown) => (console.error(error), [] as Country[])),
+  loadCountries(base)
+    .then((list) => withText(base, "countries.json", list))
+    .catch((error: unknown) => (console.error(error), [] as Country[])),
   loadEvents(base).catch((error: unknown) => (console.error(error), [] as HistoryEvent[])),
   loadTravel(base).catch((error: unknown) => (console.error(error), [] as TravelEvent[])),
 ])
@@ -1214,6 +1226,7 @@ Promise.all([
       (picked) => (picked.length === 1 ? openCiv(picked[0], { push: true }) : openView(picked, { push: true })),
       countries,
       (k, view) => openCountry(k, view, { push: true }),
+      () => Civilizations.outlines(base),
     );
     const picker = new Picker($("picker"), list.list, applyPicked);
     $("add-civs").addEventListener("click", () => picker.open(new Set(highlighted)));
@@ -1260,27 +1273,27 @@ Promise.all([
         if (settled) writeHash();
       },
     });
-    const t = timeline;
-    attachTimelineGrip($("timeline-grip"), footer, $("track"), t);
+    const line = timeline;
+    attachTimelineGrip($("timeline-grip"), footer, $("track"), line);
     $("view-focus").addEventListener("click", () => {
       if (!active) return;
       const list = chosen();
-      t.setView(...focusView(list));
+      line.setView(...focusView(list));
       if (!list.some((c) => year >= c.from && year <= c.to)) setYearEverywhere(list[0].peakYear);
     });
-    $("view-all").addEventListener("click", () => t.setView(FIRST_YEAR, NOW));
+    $("view-all").addEventListener("click", () => line.setView(FIRST_YEAR, NOW));
     for (const id of ["travel-start", "travel-button"])
       $(id).addEventListener("click", () => {
         go({ travel: true }, true);
         startTravel();
       });
-    $("zoom-in").addEventListener("click", () => t.zoom(0.5));
-    $("zoom-out").addEventListener("click", () => t.zoom(2));
+    $("zoom-in").addEventListener("click", () => line.zoom(0.5));
+    $("zoom-out").addEventListener("click", () => line.zoom(2));
     if (stored(MAP_KEY) === "map") setMapMode(true, false);
     route();
   })
   .catch((error: unknown) => {
-    statusEl.textContent = "The borders could not load. Reload the page to try again.";
+    statusEl.textContent = t("status.failed");
     console.error(error);
   });
 

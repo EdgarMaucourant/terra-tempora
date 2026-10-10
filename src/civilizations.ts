@@ -1,4 +1,5 @@
-import { eraAt, type Era } from "./eras";
+import { eraAt, eraLabel, type Era } from "./eras";
+import { t } from "./i18n";
 
 export interface Civilization {
   /** Stable id used in links, e.g. "mongol-empire". */
@@ -18,22 +19,10 @@ export interface Civilization {
   center: [number, number] | null;
   /** Hand-picked group of realms that belong together, e.g. "mongol". */
   family: string | null;
-  /** Outline at its largest, as rings of [x, y, …] in a 100 × 100 box. */
-  shape: number[][];
 }
 
-const ERA_LABELS: Record<string, string> = {
-  Prehistory: "Prehistory",
-  "Ancient history": "Ancient",
-  "Post-classical (Middle Ages)": "Post-classical",
-  "Early modern": "Early modern",
-  "Late modern": "Late modern",
-  Contemporary: "Contemporary",
-};
-
-export function eraLabel(e: Era): string {
-  return ERA_LABELS[e.name] ?? e.short;
-}
+/** Outlines at their largest, by civilization id, as rings of [x, y, …] in a 100 × 100 box. */
+export type Outlines = Record<string, number[][]>;
 
 /** The eras a civilization lived through, first and last. */
 export function civEras(c: Civilization): [Era, Era] {
@@ -42,12 +31,12 @@ export function civEras(c: Civilization): [Era, Era] {
 
 export function civEraText(c: Civilization): string {
   const [first, last] = civEras(c);
-  return first === last ? eraLabel(first) : `${eraLabel(first)} to ${eraLabel(last)}`;
+  return first === last ? eraLabel(first) : t("era.span", { from: eraLabel(first), to: eraLabel(last) });
 }
 
-/** SVG path of a civilization's outline in its 100 × 100 box. */
-export function shapePath(c: Civilization): string {
-  return c.shape
+/** SVG path of an outline in its 100 × 100 box. */
+export function shapePath(rings: number[][]): string {
+  return rings
     .map((ring) => {
       let d = "";
       for (let i = 0; i < ring.length; i += 2) d += `${i ? "L" : "M"}${ring[i]} ${ring[i + 1]}`;
@@ -55,6 +44,8 @@ export function shapePath(c: Civilization): string {
     })
     .join("");
 }
+
+let outlinesLoading: Promise<Outlines> | undefined;
 
 export class Civilizations {
   readonly list: Civilization[];
@@ -77,6 +68,17 @@ export class Civilizations {
     if (!response.ok) throw new Error(`Could not load the civilizations (${response.status})`);
     const json = (await response.json()) as { civilizations: Civilization[] };
     return new Civilizations(json.civilizations);
+  }
+
+  /**
+   * The outlines, downloaded the first time they are asked for: only the
+   * landing page's cards draw them, so a link straight to the globe skips them.
+   */
+  static outlines(base: string): Promise<Outlines> {
+    outlinesLoading ??= fetch(new URL("civilization-shapes.json", base))
+      .then((r) => (r.ok ? (r.json() as Promise<Outlines>) : {}))
+      .catch((error: unknown) => (console.error(error), {}));
+    return outlinesLoading;
   }
 
   get(id: string): Civilization | undefined {

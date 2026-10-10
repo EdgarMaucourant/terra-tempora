@@ -5,6 +5,7 @@
 
 import type { Civilization } from "./civilizations";
 import type { EventKind, HistoryEvent } from "./events";
+import { t, textFor } from "./i18n";
 
 // Kept in step with scripts/fetch-events.mjs.
 const SHARDS = 16;
@@ -40,11 +41,17 @@ function loadShard(base: string, n: number): Promise<Record<string, SavedEvent[]
 }
 
 /**
- * The saved events of the given civilizations. An event shared by several of
- * them (a battle between two realms) comes once, tied to all of them.
+ * The saved events of the given civilizations, in the reader's language where
+ * translated (public/data/i18n/<lang>/wd-events/<n>.json, by event id). An
+ * event shared by several of them (a battle between two realms) comes once,
+ * tied to all of them.
  */
 export async function wikidataEvents(base: string, civs: Civilization[]): Promise<HistoryEvent[]> {
-  const files = await Promise.all(civs.map((c) => loadShard(base, shardOf(c.id))));
+  const shardsOf = civs.map((c) => shardOf(c.id));
+  const [files, texts] = await Promise.all([
+    Promise.all(shardsOf.map((n) => loadShard(base, n))),
+    Promise.all(shardsOf.map((n) => textFor(base, `wd-events/${n}.json`))),
+  ]);
   const events = new Map<string, HistoryEvent>();
   civs.forEach((c, i) => {
     for (const r of files[i][c.id] ?? []) {
@@ -57,20 +64,23 @@ export async function wikidataEvents(base: string, civs: Civilization[]): Promis
       // A war saved without a place stands at the realm's heart.
       const atHeart = !r.lonLat;
       if (atHeart && !c.center) continue;
+      const text = texts[i][id] ?? {};
       events.set(id, {
         id,
         kind: r.kind,
         year: r.year,
         to: r.to,
-        title: r.title,
-        place: atHeart ? c.name : r.place || c.name,
+        title: text.title ?? r.title,
+        place: atHeart ? c.name : text.place ?? (r.place || c.name),
         lonLat: r.lonLat ?? c.center!,
-        approx: atHeart ? `Fought across ${c.name}; shown at its heart` : undefined,
+        approx: atHeart ? t("event.foughtAcross", { name: c.name }) : undefined,
         civs: [c.id],
-        summary: r.summary ?? "",
+        summary: text.summary ?? r.summary ?? "",
         wikipedia: r.wikipedia,
+        // Reference sites are searched in English, the language of their articles.
         search: r.title,
-        fromWikidata: true,
+        // A translated summary is the story; otherwise Wikipedia's opening tells it.
+        fromWikidata: !text.summary,
       });
     }
   });

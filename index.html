@@ -14,30 +14,30 @@
   </head>
   <body>
     <div id="app">
-      <div id="globe" aria-label="3D globe showing the realms of the chosen year"></div>
-      <canvas id="map" class="map" hidden aria-label="Flat map showing the realms of the chosen year"></canvas>
+      <div id="globe" aria-label="3D globe showing the realms of the chosen year" data-i18n-label="globe.label"></div>
+      <canvas id="map" class="map" hidden aria-label="Flat map showing the realms of the chosen year" data-i18n-label="map.label"></canvas>
 
       <header class="masthead">
-        <a id="back" class="back" href="#">← All civilizations</a>
-        <h1 id="civ-title">History Globe</h1>
+        <a id="back" class="back" href="#" data-i18n="masthead.back">← All civilizations</a>
+        <h1 id="civ-title" data-i18n="page.title">History Globe</h1>
         <p id="civ-sub" class="sub"></p>
       </header>
 
       <div class="globe-tools">
-        <div class="view-switch" role="group" aria-label="View">
-          <button id="view-globe" type="button" aria-pressed="true">Globe</button>
-          <button id="view-map" type="button" aria-pressed="false">Map</button>
+        <div class="view-switch" role="group" aria-label="View" data-i18n-label="view.label">
+          <button id="view-globe" type="button" aria-pressed="true" data-i18n="view.globe">Globe</button>
+          <button id="view-map" type="button" aria-pressed="false" data-i18n="view.map">Map</button>
         </div>
         <label id="projection-field" class="projection" for="projection" hidden>
-          <span>Projection</span>
+          <span data-i18n="view.projection">Projection</span>
           <select id="projection"></select>
         </label>
-        <button id="travel-button" class="tilt travel-button" type="button" title="Travel through world history">
+        <button id="travel-button" class="tilt travel-button" type="button" title="Travel through world history" data-i18n-title="travel.buttonTitle">
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <circle cx="12" cy="12" r="7" />
             <path class="axis" d="M10 9v6l5-3z" />
           </svg>
-          <span>History travel</span>
+          <span data-i18n="travel.title">History travel</span>
         </button>
         <button id="tilt" class="tilt" type="button" aria-pressed="false">
           <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -52,26 +52,26 @@
         <label class="switch" for="context-toggle">
           <input id="context-toggle" type="checkbox" checked />
           <span class="switch-track" aria-hidden="true"></span>
-          <span>Other realms</span>
+          <span data-i18n="toolbar.otherRealms">Other realms</span>
         </label>
-        <button id="sources-button" class="ghost" type="button">Sources</button>
+        <button id="sources-button" class="ghost" type="button" data-i18n="sources.title">Sources</button>
       </div>
 
       <aside id="info" class="info" hidden aria-live="polite">
-        <button id="info-close" class="icon-button" type="button" aria-label="Close">×</button>
+        <button id="info-close" class="icon-button" type="button" aria-label="Close" data-i18n-label="common.close">×</button>
         <p class="eyebrow" id="info-kind"></p>
         <h2 id="info-name"></h2>
         <dl>
-          <div><dt>This border</dt><dd id="info-shape"></dd></div>
-          <div><dt>Realm existed</dt><dd id="info-span"></dd></div>
-          <div><dt>Area</dt><dd id="info-area"></dd></div>
+          <div><dt data-i18n="info.thisBorder">This border</dt><dd id="info-shape"></dd></div>
+          <div><dt data-i18n="info.existed">Realm existed</dt><dd id="info-span"></dd></div>
+          <div><dt data-i18n="info.areaLabel">Area</dt><dd id="info-area"></dd></div>
         </dl>
         <p class="links" id="info-links"></p>
-        <p class="fine">Borders from Cliopatria, approximate.</p>
+        <p class="fine" data-i18n="info.fine">Borders from Cliopatria, approximate.</p>
       </aside>
 
       <aside id="event" class="info event-panel" hidden aria-live="polite" aria-labelledby="event-title">
-        <button id="event-close" class="icon-button" type="button" aria-label="Close">×</button>
+        <button id="event-close" class="icon-button" type="button" aria-label="Close" data-i18n-label="common.close">×</button>
         <figure id="event-figure" class="event-figure" hidden>
           <img id="event-image" alt="" decoding="async" />
           <figcaption><a id="event-credit" target="_blank" rel="noopener"></a></figcaption>
@@ -80,14 +80,14 @@
         <h2 id="event-title"></h2>
         <p id="event-when" class="event-when"></p>
         <p id="event-summary" class="event-summary"></p>
-        <h3 class="event-more">Learn more</h3>
+        <h3 class="event-more" data-i18n="event.learnMore">Learn more</h3>
         <ul id="event-links" class="event-links"></ul>
       </aside>
 
       <section id="sources" class="sources" hidden>
-        <button id="sources-close" class="icon-button" type="button" aria-label="Close">×</button>
-        <h2>Sources</h2>
-        <ul>
+        <button id="sources-close" class="icon-button" type="button" aria-label="Close" data-i18n-label="common.close">×</button>
+        <h2 data-i18n="sources.title">Sources</h2>
+        <ul data-i18n-html="sources.list">
           <li>
             Borders:
             <a href="https://github.com/Seshat-Global-History-Databank/cliopatria" target="_blank" rel="noopener">Cliopatria</a>,
@@ -124,7 +124,9 @@
           role="separator"
           aria-orientation="horizontal"
           aria-label="Resize the timeline: drag, or use the up and down arrows"
+          data-i18n-label="timeline.gripLabel"
           title="Drag to resize. Double-click to reset."
+          data-i18n-title="timeline.gripTitle"
           tabindex="0"
         ></div>
         <div class="year-readout">
@@ -135,29 +137,29 @@
           <p id="year-period" class="year-period">Post-classical (Middle Ages)</p>
         </div>
         <div class="track-area">
-          <div class="views" role="group" aria-label="Timeline view">
-            <button id="add-civs" type="button" class="chip add" title="Add or remove civilizations on the globe">
-              <span aria-hidden="true">+</span> Add civilizations
+          <div class="views" role="group" aria-label="Timeline view" data-i18n-label="timeline.viewLabel">
+            <button id="add-civs" type="button" class="chip add" title="Add or remove civilizations on the globe" data-i18n-title="timeline.addTitle">
+              <span aria-hidden="true">+</span> <span data-i18n="timeline.add">Add civilizations</span>
             </button>
-            <button id="view-focus" type="button" class="chip">Current Civilization Era</button>
-            <button id="view-all" type="button" class="chip">All history</button>
-            <button id="zoom-out" type="button" class="chip square" aria-label="Zoom out">−</button>
-            <button id="zoom-in" type="button" class="chip square" aria-label="Zoom in">+</button>
+            <button id="view-focus" type="button" class="chip" data-i18n="timeline.focus">Current Civilization Era</button>
+            <button id="view-all" type="button" class="chip" data-i18n="timeline.all">All history</button>
+            <button id="zoom-out" type="button" class="chip square" aria-label="Zoom out" data-i18n-label="timeline.zoomOut">−</button>
+            <button id="zoom-in" type="button" class="chip square" aria-label="Zoom in" data-i18n-label="timeline.zoomIn">+</button>
           </div>
           <div id="track" class="track"></div>
         </div>
         <div class="controls">
-          <button id="play" class="play" type="button" aria-label="Play">
+          <button id="play" class="play" type="button" aria-label="Play" data-i18n-label="controls.play">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path id="play-icon" d="M8 5v14l11-7z" /></svg>
           </button>
           <label class="speed" for="speed">
-            <span class="visually-hidden">Speed</span>
+            <span class="visually-hidden" data-i18n="controls.speed">Speed</span>
             <select id="speed">
-              <option value="2">2 yrs/s</option>
-              <option value="8" selected>8 yrs/s</option>
-              <option value="25">25 yrs/s</option>
-              <option value="100">100 yrs/s</option>
-              <option value="500">500 yrs/s</option>
+              <option value="2" data-i18n="controls.speed2">2 yrs/s</option>
+              <option value="8" selected data-i18n="controls.speed8">8 yrs/s</option>
+              <option value="25" data-i18n="controls.speed25">25 yrs/s</option>
+              <option value="100" data-i18n="controls.speed100">100 yrs/s</option>
+              <option value="500" data-i18n="controls.speed500">500 yrs/s</option>
             </select>
           </label>
         </div>
@@ -165,25 +167,25 @@
 
       <div id="travel-layer" class="travel-layer" hidden></div>
 
-      <p id="status" class="status">Loading borders…</p>
+      <p id="status" class="status" data-i18n="status.loading">Loading borders…</p>
       <p id="hint" class="hint" hidden></p>
       <p id="tooltip" class="tooltip" hidden></p>
 
       <div id="picker" class="picker" hidden>
         <section class="picker-panel" role="dialog" aria-modal="true" aria-labelledby="picker-title">
           <header class="picker-head">
-            <h2 id="picker-title">Civilizations on the globe</h2>
-            <button class="icon-button" type="button" data-close aria-label="Close">×</button>
+            <h2 id="picker-title" data-i18n="picker.title">Civilizations on the globe</h2>
+            <button class="icon-button" type="button" data-close aria-label="Close" data-i18n-label="common.close">×</button>
             <label class="search">
-              <span class="visually-hidden">Search</span>
+              <span class="visually-hidden" data-i18n="common.search">Search</span>
               <input id="picker-search" type="search" autocomplete="off" />
             </label>
           </header>
           <div id="picker-list" class="picker-list"></div>
           <footer class="picker-foot">
             <p id="picker-count" class="picker-count" aria-live="polite"></p>
-            <button class="ghost" type="button" data-close>Cancel</button>
-            <button id="picker-add" class="primary" type="button" disabled>Update the globe</button>
+            <button class="ghost" type="button" data-close data-i18n="common.cancel">Cancel</button>
+            <button id="picker-add" class="primary" type="button" disabled data-i18n="picker.update">Update the globe</button>
           </footer>
         </section>
       </div>
@@ -191,9 +193,9 @@
 
     <main id="landing" class="landing" tabindex="-1" hidden>
       <header class="landing-head">
-        <p class="eyebrow">History Globe · prototype</p>
-        <h1>Civilizations on the globe</h1>
-        <p class="lede">
+        <p class="eyebrow" data-i18n="landing.eyebrow">History Globe · prototype</p>
+        <h1 data-i18n="landing.title">Civilizations on the globe</h1>
+        <p class="lede" data-i18n="landing.lede">
           Every realm mapped in the Cliopatria border data, from 3400 BCE to today. Pick one to see it on the globe,
           lit up with the realms it came from and the ones that followed.
         </p>
@@ -202,29 +204,29 @@
             <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
           </span>
           <span class="travel-cta-text">
-            <strong>History travel</strong>
-            <span>Fly through 12,000 years of world history on the globe, from the first temples to today, stopping at
+            <strong data-i18n="travel.title">History travel</strong>
+            <span data-i18n="landing.travelText">Fly through 12,000 years of world history on the globe, from the first temples to today, stopping at
               each turning point on every continent.</span>
           </span>
         </button>
         <section class="countries" data-kind="territory" aria-labelledby="territory-title">
           <div class="section-head">
             <div>
-              <h2 id="territory-title" class="section-title">Countries</h2>
-              <p class="section-sub">Today&rsquo;s countries, with every civilization whose borders ever crossed them.</p>
+              <h2 id="territory-title" class="section-title" data-i18n="landing.countries">Countries</h2>
+              <p class="section-sub" data-i18n="landing.countriesSub">Today&rsquo;s countries, with every civilization whose borders ever crossed them.</p>
             </div>
             <div class="section-tools">
               <label class="search country-search">
-                <span class="visually-hidden">Search countries</span>
-                <input type="search" autocomplete="off" placeholder="Search countries" />
+                <span class="visually-hidden" data-i18n="landing.searchCountries">Search countries</span>
+                <input type="search" autocomplete="off" placeholder="Search countries" data-i18n-placeholder="landing.searchCountries" />
               </label>
               <label class="sort">
-                <span class="visually-hidden">Sort countries</span>
+                <span class="visually-hidden" data-i18n="landing.sortCountries">Sort countries</span>
                 <select>
-                  <option value="name" selected>A to Z</option>
-                  <option value="area">Largest first</option>
-                  <option value="oldest">Oldest first</option>
-                  <option value="most">Most civilizations</option>
+                  <option value="name" selected data-i18n="sort.name">A to Z</option>
+                  <option value="area" data-i18n="sort.largest">Largest first</option>
+                  <option value="oldest" data-i18n="sort.oldest">Oldest first</option>
+                  <option value="most" data-i18n="sort.most">Most civilizations</option>
                 </select>
               </label>
             </div>
@@ -234,57 +236,57 @@
         <section class="countries" data-kind="nationality" aria-labelledby="nationality-title">
           <div class="section-head">
             <div>
-              <h2 id="nationality-title" class="section-title">Nations</h2>
-              <p class="section-sub">Every civilization that led to a nation of today, wherever it stood.</p>
+              <h2 id="nationality-title" class="section-title" data-i18n="landing.nations">Nations</h2>
+              <p class="section-sub" data-i18n="landing.nationsSub">Every civilization that led to a nation of today, wherever it stood.</p>
             </div>
             <div class="section-tools">
               <label class="search country-search">
-                <span class="visually-hidden">Search nations</span>
-                <input type="search" autocomplete="off" placeholder="Search nations" />
+                <span class="visually-hidden" data-i18n="landing.searchNations">Search nations</span>
+                <input type="search" autocomplete="off" placeholder="Search nations" data-i18n-placeholder="landing.searchNations" />
               </label>
               <label class="sort">
-                <span class="visually-hidden">Sort nations</span>
+                <span class="visually-hidden" data-i18n="landing.sortNations">Sort nations</span>
                 <select>
-                  <option value="name" selected>A to Z</option>
-                  <option value="area">Largest first</option>
-                  <option value="oldest">Oldest first</option>
-                  <option value="most">Most civilizations</option>
+                  <option value="name" selected data-i18n="sort.name">A to Z</option>
+                  <option value="area" data-i18n="sort.largest">Largest first</option>
+                  <option value="oldest" data-i18n="sort.oldest">Oldest first</option>
+                  <option value="most" data-i18n="sort.most">Most civilizations</option>
                 </select>
               </label>
             </div>
           </div>
           <div class="country-grid"></div>
         </section>
-        <h2 class="section-title">Civilizations</h2>
+        <h2 class="section-title" data-i18n="landing.civilizations">Civilizations</h2>
         <div class="filters">
           <label class="search">
-            <span class="visually-hidden">Search</span>
+            <span class="visually-hidden" data-i18n="common.search">Search</span>
             <input id="civ-search" type="search" autocomplete="off" placeholder="Search civilizations" />
           </label>
           <label class="sort">
-            <span class="visually-hidden">Sort</span>
+            <span class="visually-hidden" data-i18n="landing.sort">Sort</span>
             <select id="civ-sort">
-              <option value="oldest" selected>Oldest first</option>
-              <option value="area">Largest first</option>
-              <option value="newest">Most recent first</option>
-              <option value="name">A to Z</option>
+              <option value="oldest" selected data-i18n="sort.oldest">Oldest first</option>
+              <option value="area" data-i18n="sort.largest">Largest first</option>
+              <option value="newest" data-i18n="sort.newest">Most recent first</option>
+              <option value="name" data-i18n="sort.name">A to Z</option>
             </select>
           </label>
-          <button id="multi-toggle" class="multi-toggle" type="button" aria-pressed="false">Select several</button>
+          <button id="multi-toggle" class="multi-toggle" type="button" aria-pressed="false" data-i18n="landing.selectSeveral">Select several</button>
         </div>
-        <div id="era-filter" class="era-filter" role="group" aria-label="Era"></div>
+        <div id="era-filter" class="era-filter" role="group" aria-label="Era" data-i18n-label="landing.era"></div>
         <p id="civ-count" class="count" aria-live="polite"></p>
       </header>
       <div id="civ-grid" class="civ-grid"></div>
-      <div id="multi-bar" class="multi-bar" role="region" aria-label="Selected civilizations" hidden>
+      <div id="multi-bar" class="multi-bar" role="region" aria-label="Selected civilizations" data-i18n-label="landing.selectedRegion" hidden>
         <p id="multi-count" class="multi-count" aria-live="polite"></p>
         <div class="multi-actions">
-          <button id="multi-clear" class="ghost" type="button">Clear</button>
-          <button id="multi-cancel" class="ghost" type="button">Cancel</button>
-          <button id="multi-open" class="primary" type="button" disabled>Show on the globe</button>
+          <button id="multi-clear" class="ghost" type="button" data-i18n="landing.clear">Clear</button>
+          <button id="multi-cancel" class="ghost" type="button" data-i18n="common.cancel">Cancel</button>
+          <button id="multi-open" class="primary" type="button" disabled data-i18n="landing.showOnGlobe">Show on the globe</button>
         </div>
       </div>
-      <footer class="landing-foot">
+      <footer class="landing-foot" data-i18n-html="landing.footer">
         Borders:
         <a href="https://github.com/Seshat-Global-History-Databank/cliopatria" target="_blank" rel="noopener">Cliopatria</a>,
         Seshat Global History Databank, CC BY 4.0. Key figures and links between realms:

@@ -1,5 +1,6 @@
 import type { Span } from "./data";
-import { ERAS, type Era } from "./eras";
+import { ERAS, eraName, eraShort, type Era } from "./eras";
+import { t } from "./i18n";
 import { formatRange, formatYear, tickLabel } from "./years";
 
 const MIN_SPAN = 10;
@@ -144,7 +145,7 @@ export class Timeline {
 
     this.track.tabIndex = 0;
     this.track.setAttribute("role", "slider");
-    this.track.setAttribute("aria-label", "Year");
+    this.track.setAttribute("aria-label", t("timeline.year"));
     this.track.setAttribute("aria-valuemin", String(this.min));
     this.track.setAttribute("aria-valuemax", String(this.max));
 
@@ -198,9 +199,9 @@ export class Timeline {
   private setupMarksResize() {
     const grip = document.createElement("div");
     grip.className = "marks-grip";
-    grip.title = "Drag to make the event icons bigger. Double-click to reset.";
+    grip.title = t("timeline.marksGripTitle");
     grip.setAttribute("role", "separator");
-    grip.setAttribute("aria-label", "Resize the event icons");
+    grip.setAttribute("aria-label", t("timeline.marksGripLabel"));
     this.marksItems = document.createElement("div");
     this.marksItems.className = "marks-items";
     this.marksEl.append(grip, this.marksItems);
@@ -500,9 +501,9 @@ export class Timeline {
         button.classList.add("cluster");
         button.dataset.from = String(Math.min(...years));
         button.dataset.to = String(Math.max(...years));
-        button.dataset.label = `${g.items.length} events`;
+        button.dataset.label = t("timeline.events", { count: g.items.length });
         button.dataset.detail = g.items.map((m) => m.label).join(", ");
-        button.setAttribute("aria-label", `${g.items.length} events: ${button.dataset.detail}. Zoom in to see them.`);
+        button.setAttribute("aria-label", t("timeline.clusterLabel", { count: g.items.length, names: button.dataset.detail }));
         button.textContent = String(g.items.length);
       }
       return button;
@@ -589,7 +590,10 @@ export class Timeline {
     button.dataset.side = side;
     button.dataset.name = link.name;
     button.dataset.range = formatRange(link.from, link.to);
-    button.setAttribute("aria-label", `${side === "before" ? "Before" : "After"}: ${link.name}, ${formatRange(link.from, link.to)}`);
+    button.setAttribute(
+      "aria-label",
+      t(side === "before" ? "timeline.beforeLabel" : "timeline.afterLabel", { name: link.name, years: formatRange(link.from, link.to) }),
+    );
     button.innerHTML =
       side === "before"
         ? '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3.5 5.5 8l4.5 4.5"/></svg>'
@@ -618,9 +622,11 @@ export class Timeline {
     el.dataset.era = String(ERAS.indexOf(e));
     el.style.left = `${left}px`;
     el.style.width = `${right - left}px`;
-    el.title = `${e.name}, ${formatRange(e.from, e.to)}`;
+    const name = eraName(e);
+    const short = eraShort(e);
+    el.title = `${name}, ${formatRange(e.from, e.to)}`;
     const width = right - left;
-    el.textContent = width > e.name.length * 6.6 + 16 ? e.name : width > e.short.length * 6.6 + 12 ? e.short : "";
+    el.textContent = width > name.length * 6.6 + 16 ? name : width > short.length * 6.6 + 12 ? short : "";
     return el;
   }
 
