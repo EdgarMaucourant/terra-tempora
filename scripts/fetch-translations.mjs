@@ -104,6 +104,8 @@ const langs = asked.length ? asked : locales;
 const shardFiles = readdirSync(EVENTS).filter((f) => /^\d+\.json$/.test(f));
 const shards = shardFiles.map((f) => ({ file: f, data: JSON.parse(readFileSync(`${EVENTS}/${f}`, "utf8")) }));
 const { civilizations } = JSON.parse(readFileSync("public/data/civilizations.json", "utf8"));
+// Hand corrections where Wikidata's name is wrong for the realm, by language and civilization id.
+const fixes = JSON.parse(readFileSync("scripts/name-fixes.json", "utf8"));
 const titles = [...new Set(shards.flatMap((s) => Object.values(s.data).flat().map((e) => e.wikipedia.replace(/_/g, " "))))];
 console.log(`${titles.length} articles in ${shards.length} files.`);
 
@@ -135,25 +137,40 @@ for (const lang of langs) {
     const articles = [...new Set(civilizations.map((c) => c.wikipedia?.replace(/_/g, " ")).filter(Boolean))];
     const items = [...new Set(civilizations.map((c) => c.wikidata).filter(Boolean))];
     const { byArticle, byItem } = await labels(lang, articles, items);
-    // An article shared by several realms (the Yuan dynasty, Great Yuan…) names
-    // none of them; their own items do.
-    const shared = new Map();
-    for (const c of civilizations) shared.set(c.wikipedia, (shared.get(c.wikipedia) ?? 0) + 1);
-    const named = civilizations
-      .map((c) => {
-        const own = shared.get(c.wikipedia) > 1 ? undefined : byArticle.get(c.wikipedia?.replace(/_/g, " "));
-        const name = own ?? byItem.get(c.wikidata);
-        return [c, name && (name[0].toUpperCase() + name.slice(1)).replace(/'/g, "’")];
-      })
-      .filter(([, name]) => name);
-    // Names must stay unique: the app tells realms apart by name. Clashing ones stay in English.
-    const uses = new Map();
-    for (const [, name] of named) uses.set(name, (uses.get(name) ?? 0) + 1);
-    const english = new Set(civilizations.map((c) => c.name));
-    const out = {};
-    for (const [c, name] of named) {
-      if (uses.get(name) === 1 && (name === c.name || !english.has(name))) out[c.id] = { name };
+    // An article shared by several realms (the Yuan dynasty, Great Yuan…)
+    // names the largest of them; the others take their own item's name.
+    const largest = new Map();
+    for (const c of civilizations) {
+      const known = largest.get(c.wikipedia);
+      if (!known || c.area > known.area) largest.set(c.wikipedia, c);
     }
+    const tidy = (name) => name && (name[0].toUpperCase() + name.slice(1)).replace(/'/g, "’");
+    const shown = new Map();
+    for (const c of civilizations) {
+      const article = largest.get(c.wikipedia) === c ? byArticle.get(c.wikipedia?.replace(/_/g, " ")) : undefined;
+      shown.set(c, tidy(fixes[lang]?.[c.id] ?? article ?? byItem.get(c.wikidata)) ?? c.name);
+    }
+    // Names must stay unique: the app tells realms apart by name. On a clash
+    // the largest realm keeps the name and the others go back to English.
+    for (let changed = true; changed; ) {
+      changed = false;
+      const owner = new Map();
+      for (const c of [...civilizations].sort((x, y) => y.area - x.area)) {
+        const name = shown.get(c);
+        if (!owner.has(name)) owner.set(name, c);
+        else if (name !== c.name) {
+          shown.set(c, c.name);
+          changed = true;
+        } else {
+          // This one is already in English: the other gives the name up.
+          const other = owner.get(name);
+          shown.set(other, other.name);
+          changed = true;
+        }
+      }
+    }
+    const out = {};
+    for (const c of civilizations) if (shown.get(c) !== c.name) out[c.id] = { name: shown.get(c) };
     mkdirSync(`${OUT}/${lang}`, { recursive: true });
     writeFileSync(`${OUT}/${lang}/civilizations.json`, JSON.stringify(out, null, 1) + "\n");
     console.log(`${lang}: saved ${Object.keys(out).length} of ${civilizations.length} civilization names.`);
