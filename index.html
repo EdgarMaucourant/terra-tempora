@@ -68,6 +68,7 @@
         </dl>
         <p class="links" id="info-links"></p>
         <p class="fine" data-i18n="info.fine">Borders from Cliopatria, approximate.</p>
+        <button id="info-report" class="report-link" type="button" data-i18n="feedback.link">Report a problem or suggest something</button>
       </aside>
 
       <aside id="event" class="info event-panel" hidden aria-live="polite" aria-labelledby="event-title">
@@ -82,6 +83,7 @@
         <p id="event-summary" class="event-summary"></p>
         <h3 class="event-more" data-i18n="event.learnMore">Learn more</h3>
         <ul id="event-links" class="event-links"></ul>
+        <button id="event-report" class="report-link" type="button" data-i18n="feedback.link">Report a problem or suggest something</button>
       </aside>
 
       <section id="sources" class="sources" hidden>
@@ -114,6 +116,7 @@
             Projections by <a href="https://d3js.org/d3-geo" target="_blank" rel="noopener">d3-geo</a> (ISC).
           </li>
         </ul>
+        <button id="sources-report" class="report-link" type="button" data-i18n="feedback.linkApp">Report a problem or suggest an improvement</button>
         <div id="credits" class="credits"></div>
       </section>
 
@@ -170,6 +173,7 @@
       <p id="status" class="status" data-i18n="status.loading">Loading borders…</p>
       <p id="hint" class="hint" hidden></p>
       <p id="tooltip" class="tooltip" hidden></p>
+      <button id="here-report" class="here-report" type="button" hidden data-i18n="feedback.here">Report something here</button>
 
       <div id="picker" class="picker" hidden>
         <section class="picker-panel" role="dialog" aria-modal="true" aria-labelledby="picker-title">
@@ -189,6 +193,36 @@
           </footer>
         </section>
       </div>
+    </div>
+
+    <div id="feedback" class="picker feedback" hidden>
+      <form class="picker-panel feedback-panel" role="dialog" aria-modal="true" aria-labelledby="feedback-title" novalidate>
+        <header class="picker-head">
+          <h2 id="feedback-title" data-i18n="feedback.title">Report or suggest</h2>
+          <button class="icon-button" type="button" data-close aria-label="Close" data-i18n-label="common.close">×</button>
+          <p id="feedback-about" class="feedback-about"></p>
+        </header>
+        <div class="feedback-body">
+          <fieldset class="feedback-types">
+            <legend data-i18n="feedback.typeLegend">What is it?</legend>
+            <label><input type="radio" name="type" value="error" checked /> <span data-i18n="feedback.typeError">Something is wrong</span></label>
+            <label><input type="radio" name="type" value="missing" /> <span data-i18n="feedback.typeMissing">Something is missing</span></label>
+            <label><input type="radio" name="type" value="idea" /> <span data-i18n="feedback.typeIdea">An idea to make it better</span></label>
+          </fieldset>
+          <label class="feedback-message">
+            <span data-i18n="feedback.messageLabel">Your message</span>
+            <textarea name="message" rows="6" maxlength="3000" required data-i18n-placeholder="feedback.placeholder"></textarea>
+          </label>
+          <p class="fine" data-i18n="feedback.privacy">Reviewers read every report. Please leave out personal details such as your email.</p>
+          <label class="feedback-trap" aria-hidden="true">Website <input name="website" tabindex="-1" autocomplete="off" /></label>
+          <div id="feedback-turnstile"></div>
+        </div>
+        <footer class="picker-foot">
+          <p id="feedback-status" class="picker-count" aria-live="polite"></p>
+          <button class="ghost" type="button" data-close data-i18n="common.cancel">Cancel</button>
+          <button id="feedback-send" class="primary" type="submit" data-i18n="feedback.send">Send</button>
+        </footer>
+      </form>
     </div>
 
     <main id="landing" class="landing" tabindex="-1" hidden>
@@ -295,6 +329,9 @@
         each card names the author and licence and links to the file. The small shape in each card's corner is the realm's
         outline at its largest.
       </footer>
+      <p class="landing-report">
+        <button id="landing-report" class="report-link" type="button" data-i18n="feedback.linkApp">Report a problem or suggest an improvement</button>
+      </p>
     </main>
     <script type="module" src="/src/main.ts"></script>
   </body>

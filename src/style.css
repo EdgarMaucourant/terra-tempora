@@ -2212,3 +2212,123 @@ a {
     animation: none;
   }
 }
+
+/* Visitors' reports */
+.report-link {
+  display: block;
+  margin: 12px 0 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-size: 13px;
+  color: var(--ink-soft);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.report-link:hover {
+  color: var(--ink);
+}
+
+.landing-report {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 var(--gutter) calc(var(--safe-bottom) + 32px);
+}
+
+.landing-report .report-link {
+  margin: 0;
+}
+
+.here-report {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 6;
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel-solid);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.here-report[hidden] {
+  display: none;
+}
+
+.feedback {
+  position: fixed;
+  z-index: 40;
+}
+
+.feedback-about {
+  margin: 0;
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+.feedback-body {
+  display: grid;
+  gap: 14px;
+  padding: 16px 18px;
+  overflow-y: auto;
+}
+
+.feedback-types {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.feedback-types legend {
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.feedback-types label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.feedback-types input {
+  accent-color: var(--steppe);
+}
+
+.feedback-message {
+  display: grid;
+  gap: 6px;
+  font-weight: 500;
+}
+
+.feedback-message textarea {
+  min-height: 120px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(214, 220, 228, 0.04);
+  font: inherit;
+  font-weight: 400;
+  color: var(--ink);
+  resize: vertical;
+}
+
+/* A field for bots only, kept out of sight and out of the tab order. */
+.feedback-trap {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

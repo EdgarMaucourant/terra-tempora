@@ -55,6 +55,8 @@ export interface TravelHost {
   latOffset: number;
   /** Phones: the open card docks above the timeline instead of beside its badge. */
   narrow: boolean;
+  /** Opens the report form about a turning point. */
+  report(e: TravelEvent): void;
 }
 
 // Seconds before a turning point that the globe starts to turn towards it.
@@ -490,6 +492,13 @@ export class Travel {
     const resume = el("button", "travel-resume", t("travel.continue"));
     resume.type = "button";
     resume.addEventListener("click", () => this.setPlaying(true));
+    const report = el("button", "report-link", t("feedback.link"));
+    report.type = "button";
+    report.addEventListener("click", () => {
+      // The card stays open while the form is.
+      this.pin(e);
+      this.host.report(e);
+    });
     more.append(
       el("p", "travel-place", where),
       figure,
@@ -498,6 +507,7 @@ export class Travel {
       el("p", "travel-legacy", e.legacy),
       el("h4", undefined, t("event.learnMore")),
       links,
+      report,
       resume,
     );
     // The lead picture of its Wikipedia article, when Wikipedia can be reached.

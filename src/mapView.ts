@@ -232,6 +232,12 @@ export class MapView {
     this.tween = requestAnimationFrame(step);
   }
 
+  /** [longitude, latitude] under these canvas coordinates, or null off the map. */
+  lonLatAt(x: number, y: number): [number, number] | null {
+    const point = this.projection.invert?.([x, y]);
+    return point && Number.isFinite(point[0]) && Number.isFinite(point[1]) ? [point[0], point[1]] : null;
+  }
+
   /** The realm under these canvas coordinates, drawn on top. */
   polityAt(x: number, y: number): Polity | null {
     const point = this.projection.invert?.([x, y]);
