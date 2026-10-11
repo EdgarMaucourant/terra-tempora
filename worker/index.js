@@ -53,7 +53,9 @@ function quote(text) {
 }
 
 async function feedback(request, env) {
-  if (!env.GITHUB_TOKEN || !env.GITHUB_REPO) return json({ error: "not-configured" }, 503);
+  // Names the missing settings (never their values) so a misconfigured deploy is easy to spot.
+  const missing = ["GITHUB_TOKEN", "GITHUB_REPO"].filter((name) => !env[name]);
+  if (missing.length) return json({ error: "not-configured", missing }, 503);
   // Reports come from our own pages only.
   const origin = request.headers.get("Origin");
   if (origin && origin !== new URL(request.url).origin) return json({ error: "origin" }, 403);
