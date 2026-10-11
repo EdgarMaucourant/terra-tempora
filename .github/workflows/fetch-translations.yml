@@ -1,16 +1,12 @@
 # Reads the Wikidata events' titles, places and descriptions in every
 # interface language (scripts/fetch-translations.mjs) and commits them to
 # public/data/i18n/<lang>/wd-events/. Run it by hand from the Actions tab
-# after new events are fetched; it also runs when the script changes on a branch.
+# after new events are fetched. It doesn't run on pushes: its own commit
+# would not get the "check" run a pull request needs, so run it on main.
 name: Fetch event translations
 
 on:
   workflow_dispatch:
-  push:
-    branches-ignore: [main]
-    paths:
-      - scripts/fetch-translations.mjs
-      - .github/workflows/fetch-translations.yml
 
 permissions:
   contents: write
