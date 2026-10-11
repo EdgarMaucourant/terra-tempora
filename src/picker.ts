@@ -92,7 +92,7 @@ export class Picker {
       meta.className = "picker-meta";
       meta.textContent = `${formatRange(c.from, c.to)} · ${civEraText(c)}`;
       row.append(box, name, meta);
-      this.rows.set(c.id, { row, box, text: c.names.join(" ").toLocaleLowerCase(lang) });
+      this.rows.set(c.id, { row, box, text: [c.name, ...c.names].join(" ").toLocaleLowerCase(lang) });
       return row;
     });
     listEl.replaceChildren(...rows);

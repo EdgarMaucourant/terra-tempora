@@ -150,6 +150,19 @@ if (existsSync(`${DATA}/i18n`)) {
   }
 }
 
+// Civilization names must stay unique in every language: the app tells realms apart by name.
+for (const lang of existsSync(`${DATA}/i18n`) ? readdirSync(`${DATA}/i18n`) : []) {
+  const file = `${DATA}/i18n/${lang}/civilizations.json`;
+  if (!existsSync(file)) continue;
+  const names = read(file) ?? {};
+  const seen = new Map();
+  for (const c of civs) {
+    const name = names[c.id]?.name ?? c.name;
+    if (seen.has(name)) fail(`i18n/${lang}/civilizations.json`, `"${c.id}" and "${seen.get(name)}" are both named "${name}"`);
+    seen.set(name, c.id);
+  }
+}
+
 // Interface translations: src/locales/<lang>.json against English
 const placeholders = (s) => [...s.matchAll(/\{(\w+)\}/g)].map((m) => m[1]);
 const forms = (m) => (typeof m === "string" ? [m] : Object.values(m));

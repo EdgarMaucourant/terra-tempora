@@ -21,10 +21,10 @@
   "name": "Tsarat de Moscou"
  },
  "yuan-dynasty": {
-  "name": "Dynastie Yuan en Chine"
+  "name": "Dynastie Yuan"
  },
  "british-colonial-empire": {
-  "name": "Empire britannique"
+  "name": "Empire colonial britannique"
  },
  "qing-dynasty": {
   "name": "Dynastie Qing"
@@ -55,6 +55,15 @@
  },
  "brazilian-republic": {
   "name": "Brésil"
+ },
+ "unitary-state-of-brazil": {
+  "name": "État unitaire du Brésil"
+ },
+ "federated-republic-of-brazil": {
+  "name": "République fédérée du Brésil"
+ },
+ "republic-of-brazil": {
+  "name": "République du Brésil"
  },
  "empire-of-brazil": {
   "name": "Empire du Brésil"
@@ -130,6 +139,9 @@
  },
  "western-gokturks": {
   "name": "Göktürks"
+ },
+ "british-empire": {
+  "name": "Empire britannique"
  },
  "great-seljuk-empire": {
   "name": "Empire seldjoukide"
@@ -243,7 +255,7 @@
   "name": "Toumètes"
  },
  "eastern-roman-empire": {
-  "name": "Empire byzantin"
+  "name": "Empire romain d’Orient"
  },
  "white-horde": {
   "name": "Horde blanche"
@@ -286,6 +298,9 @@
  },
  "roman-republic": {
   "name": "République romaine"
+ },
+ "byzantine-empire": {
+  "name": "Empire byzantin"
  },
  "mahdist-state": {
   "name": "Soudan mahdiste"
@@ -433,6 +448,9 @@
  },
  "mongolian-people-s-republic": {
   "name": "République populaire mongole"
+ },
+ "great-mongol-state": {
+  "name": "Grand État mongol"
  },
  "mongolia": {
   "name": "Mongolie"
@@ -772,6 +790,9 @@
  },
  "kingdom-of-germany": {
   "name": "Royaume de Germanie"
+ },
+ "abbasid-caliphate-buyid-dynasty": {
+  "name": "Califat abbasside sous les Bouyides"
  },
  "kingdom-of-sweden": {
   "name": "Suède"
@@ -1661,6 +1682,9 @@
  "republic-of-syria": {
   "name": "Syrie"
  },
+ "southern-xiongnu": {
+  "name": "Xiongnu du Sud"
+ },
  "serbian-empire": {
   "name": "Empire serbe"
  },
@@ -2081,6 +2105,9 @@
  "republic-of-liberia": {
   "name": "Liberia"
  },
+ "portuguese-colonies": {
+  "name": "Colonies portugaises"
+ },
  "kingdom-of-aragon": {
   "name": "Royaume d’Aragon"
  },
@@ -2476,6 +2503,9 @@
  },
  "kingdom-of-bosnia": {
   "name": "Royaume de Bosnie"
+ },
+ "great-yuan": {
+  "name": "Grand Yuan"
  },
  "bosnia-and-herzegovina": {
   "name": "Bosnie-Herzégovine"

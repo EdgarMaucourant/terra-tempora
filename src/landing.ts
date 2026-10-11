@@ -280,7 +280,8 @@ export class Landing {
   private matches(c: Civilization) {
     if (this.era && !this.inEra(c, this.era)) return false;
     if (!this.query) return true;
-    return c.names.some((n) => n.toLocaleLowerCase(lang).includes(this.query));
+    // The shown name and the English realm names both match.
+    return [c.name, ...c.names].some((n) => n.toLocaleLowerCase(lang).includes(this.query));
   }
 
   private render() {

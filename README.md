@@ -173,13 +173,18 @@ the browser's languages, then English.
   `public/data/i18n/fr/events.json`:
   `{"temujin-born": {"title": "Naissance de Temüjin", "summary": "…"}}`.
   Untranslated items stay in English. Translatable: `events.json`,
-  `travel.json`, `countries.json` and `wd-events/<n>.json` (ids look like
+  `travel.json`, `countries.json`, `civilizations.json` (names) and `wd-events/<n>.json` (ids look like
   `wd:<Wikipedia article>:<kind>`). The `wd-events` translations are not
   written by hand: `scripts/fetch-translations.mjs` reads them from Wikidata
   for every language in `src/locales/` (run by the "Fetch event translations"
   workflow; run it again after fetching new events). Wikipedia links and
   article extracts open the reader's language edition when there is one.
-  Civilization and realm names come from Cliopatria and are English for now.
+  Civilization names (`civilizations.json`, by id) are fetched the same way,
+  from the item of each civilization's English Wikipedia article; realms that
+  share an article, or names that would clash, keep their English name. Check
+  them after a fetch: Cliopatria sometimes links a realm to a neighbouring
+  article. To correct a name, edit the file; the next fetch overwrites it, so
+  fix the Wikidata label too.
 - To add a language: copy `src/locales/en.json` to `<code>.json`, translate it,
   add the language to `LANGUAGES` in `src/i18n.ts`, translate the data files
   above, and run the "Fetch event translations" workflow.
