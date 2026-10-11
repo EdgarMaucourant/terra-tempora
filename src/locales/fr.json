@@ -15,6 +15,8 @@
  "controls.speed25": "25 ans/s",
  "controls.speed500": "500 ans/s",
  "controls.speed8": "8 ans/s",
+ "docs.allAges": "Tous publics",
+ "docs.ratingTitle": "Signalétique en France : {rating}",
  "docs.seeMore": "En voir plus sur {platform} :",
  "docs.title": "Documentaires",
  "era.ancient.label": "Antiquité",

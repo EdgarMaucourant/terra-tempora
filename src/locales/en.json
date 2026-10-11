@@ -15,6 +15,8 @@
  "controls.speed25": "25 yrs/s",
  "controls.speed500": "500 yrs/s",
  "controls.speed8": "8 yrs/s",
+ "docs.allAges": "All ages",
+ "docs.ratingTitle": "Age rating in the United States: {rating}",
  "docs.seeMore": "See more on {platform}:",
  "docs.title": "Documentaries",
  "era.ancient.label": "Ancient",

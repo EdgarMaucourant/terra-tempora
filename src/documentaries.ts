@@ -3,7 +3,7 @@
 // each tied to the civilizations, events, turning points or countries it is
 // about, and linked to its page on the platform.
 
-import { t } from "./i18n";
+import { lang, t } from "./i18n";
 
 export type Platform = "Netflix" | "National Geographic" | "Discovery Channel" | "History Channel";
 
@@ -16,6 +16,16 @@ export interface Documentary {
   civs?: string[];
   events?: string[];
   countries?: string[];
+  /** Age ratings by country: the US TV or film rating, and France's signalétique. */
+  ratings?: { us?: string; fr?: string };
+}
+
+/** Whose age ratings each language reads: France's for French, the US's for English. */
+const RATING_REGION: Record<string, "us" | "fr"> = { en: "us", fr: "fr" };
+
+/** Ratings show as each country writes them; France's "TP" is spelled out. */
+function ratingLabel(rating: string): string {
+  return rating === "TP" ? t("docs.allAges") : rating;
 }
 
 export interface DocumentaryQuery {
@@ -62,6 +72,17 @@ export function renderDocumentaries(container: HTMLElement, list: Documentary[])
       Object.assign(document.createElement("cite"), { textContent: d.year ? `${d.title} (${d.year})` : d.title }),
     );
     item.append(a);
+    const rating = d.ratings?.[RATING_REGION[lang] ?? "us"];
+    if (rating) {
+      item.append(
+        " ",
+        Object.assign(document.createElement("span"), {
+          className: "docs-rating",
+          textContent: ratingLabel(rating),
+          title: t("docs.ratingTitle", { rating }),
+        }),
+      );
+    }
     items.append(item);
   }
   container.append(heading, items);

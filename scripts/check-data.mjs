@@ -93,6 +93,8 @@ for (const k of countries) {
 
 // Documentaries, each on a known platform and about things that exist
 const PLATFORMS = new Set([...readFileSync("src/documentaries.ts", "utf8").match(/export type Platform =([^;]+);/)[1].matchAll(/"([^"]+)"/g)].map((m) => m[1]));
+// US TV Parental Guidelines or MPA film ratings; France's signalétique (or the ages Netflix and Disney+ show in France).
+const RATINGS = { us: /^(TV-(Y|Y7|G|PG|14|MA)|G|PG|PG-13|R|NC-17|NR)$/, fr: /^(TP|-10|-12|-16|-18|\d{1,2}\+)$/ };
 const documentaries = read(`${DATA}/documentaries.json`)?.documentaries ?? [];
 uniqueIds("documentaries.json", documentaries);
 for (const d of documentaries) {
@@ -104,6 +106,10 @@ for (const d of documentaries) {
   for (const id of d.civs ?? []) if (!civIds.has(id)) fail(where, `"${d.id}" names unknown civilization "${id}"`);
   for (const id of d.events ?? []) if (!eventIds.has(id) && !travelIds.has(id)) fail(where, `"${d.id}" names unknown event "${id}"`);
   for (const id of d.countries ?? []) if (!countryIds.has(id)) fail(where, `"${d.id}" names unknown country "${id}"`);
+  for (const [region, rating] of Object.entries(d.ratings ?? {})) {
+    if (!RATINGS[region]) fail(where, `"${d.id}" has a rating for unknown country "${region}"`);
+    else if (!RATINGS[region].test(rating)) fail(where, `"${d.id}" has an unknown ${region} rating "${rating}"`);
+  }
   if (!d.civs?.length && !d.events?.length && !d.countries?.length) fail(where, `"${d.id}" is not tied to anything`);
 }
 

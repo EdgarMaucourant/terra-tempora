@@ -593,6 +593,19 @@ input {
   text-decoration: underline;
 }
 
+.docs-rating {
+  display: inline-block;
+  padding: 0 5px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 16px;
+  color: var(--ink-soft);
+  vertical-align: 1px;
+  white-space: nowrap;
+}
+
 .docs-list cite {
   font-style: normal;
   color: #f3a46e;

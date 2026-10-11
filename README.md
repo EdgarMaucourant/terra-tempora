@@ -142,7 +142,10 @@ in a timeline that runs from 10,000 BCE to today.
   Channel, History Channel) links in the panel, for the civilization, event,
   turning point or country shown. They are hand-picked in
   `public/data/documentaries.json`, each checked to exist on that platform and
-  linked to its page there; `npm run check` checks their ids.
+  linked to its page there; `npm run check` checks their ids. Each shows its
+  age rating where one was found: France's for French readers, the US's for
+  English readers (`ratings.fr`, `ratings.us`). A series whose episodes are
+  rated differently carries its highest rating.
 - Works on phones: the timeline stacks and the text panel becomes a sheet.
 - Links open a civilization on a year: `#c=mongol-empire&y=1241`, or `y=-500`
   for 500 BCE. Several civilizations: `#c=roman-empire,han-dynasty&y=100`. An empty link opens the landing page; the older `#y1241` opens
