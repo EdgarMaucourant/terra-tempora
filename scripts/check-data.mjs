@@ -91,6 +91,22 @@ for (const k of countries) {
   }
 }
 
+// Documentaries, each on a known platform and about things that exist
+const PLATFORMS = new Set([...readFileSync("src/documentaries.ts", "utf8").match(/export type Platform =([^;]+);/)[1].matchAll(/"([^"]+)"/g)].map((m) => m[1]));
+const documentaries = read(`${DATA}/documentaries.json`)?.documentaries ?? [];
+uniqueIds("documentaries.json", documentaries);
+for (const d of documentaries) {
+  const where = "documentaries.json";
+  if (!PLATFORMS.has(d.platform)) fail(where, `"${d.id}" is on unknown platform "${d.platform}"`);
+  if (!isText(d.title)) fail(where, `"${d.id}" has no title`);
+  if (!/^https:\/\//.test(d.url ?? "")) fail(where, `"${d.id}" needs an https link`);
+  if (d.year !== undefined && !isYear(d.year)) fail(where, `"${d.id}" has a bad year`);
+  for (const id of d.civs ?? []) if (!civIds.has(id)) fail(where, `"${d.id}" names unknown civilization "${id}"`);
+  for (const id of d.events ?? []) if (!eventIds.has(id) && !travelIds.has(id)) fail(where, `"${d.id}" names unknown event "${id}"`);
+  for (const id of d.countries ?? []) if (!countryIds.has(id)) fail(where, `"${d.id}" names unknown country "${id}"`);
+  if (!d.civs?.length && !d.events?.length && !d.countries?.length) fail(where, `"${d.id}" is not tied to anything`);
+}
+
 // Events saved from Wikidata, in shards by civilization id (as in src/wikiEvents.ts)
 const SHARDS = 16;
 function shardOf(id) {

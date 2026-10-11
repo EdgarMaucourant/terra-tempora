@@ -24,7 +24,7 @@
       </header>
 
       <div class="globe-tools">
-        <div class="view-switch" role="group" aria-label="View" data-i18n-label="view.label">
+        <div class="view-switch view-mode" role="group" aria-label="View" data-i18n-label="view.label">
           <button id="view-globe" type="button" aria-pressed="true" data-i18n="view.globe">Globe</button>
           <button id="view-map" type="button" aria-pressed="false" data-i18n="view.map">Map</button>
         </div>
@@ -32,20 +32,10 @@
           <span data-i18n="view.projection">Projection</span>
           <select id="projection"></select>
         </label>
-        <button id="travel-button" class="tilt travel-button" type="button" title="Travel through world history" data-i18n-title="travel.buttonTitle">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="12" cy="12" r="7" />
-            <path class="axis" d="M10 9v6l5-3z" />
-          </svg>
-          <span data-i18n="travel.title">History travel</span>
-        </button>
-        <button id="tilt" class="tilt" type="button" aria-pressed="false">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="12" cy="12" r="7" />
-            <path class="axis" d="M12 2.5v19" />
-          </svg>
-          <span id="tilt-label">Tilt 23.5°</span>
-        </button>
+        <div class="view-switch axis-switch" role="group" id="axis-switch" aria-label="Globe axis" data-i18n-label="axis.label">
+          <button id="axis-natural" type="button" aria-pressed="false" title="Lean the globe 23.5° on Earth’s axis; dragging spins it on that axis" data-i18n="axis.natural" data-i18n-title="axis.naturalTitle">Natural axis</button>
+          <button id="axis-free" type="button" aria-pressed="true" title="Stand the globe upright and turn it freely" data-i18n="axis.free" data-i18n-title="axis.freeTitle">Free movement</button>
+        </div>
       </div>
 
       <div class="toolbar">
@@ -57,70 +47,90 @@
         <button id="sources-button" class="ghost" type="button" data-i18n="sources.title">Sources</button>
       </div>
 
-      <aside id="info" class="info" hidden aria-live="polite">
-        <button id="info-close" class="icon-button" type="button" aria-label="Close" data-i18n-label="common.close">×</button>
-        <p class="eyebrow" id="info-kind"></p>
-        <h2 id="info-name"></h2>
-        <dl>
-          <div><dt data-i18n="info.thisBorder">This border</dt><dd id="info-shape"></dd></div>
-          <div><dt data-i18n="info.existed">Realm existed</dt><dd id="info-span"></dd></div>
-          <div><dt data-i18n="info.areaLabel">Area</dt><dd id="info-area"></dd></div>
-        </dl>
-        <p class="links" id="info-links"></p>
-        <p class="fine" data-i18n="info.fine">Borders from Cliopatria, approximate.</p>
-        <button id="info-report" class="report-link" type="button" data-i18n="feedback.link">Report a problem or suggest something</button>
-      </aside>
+      <aside id="panel" class="side-panel" aria-label="Details" data-i18n-label="panel.label">
+        <div
+          id="panel-grip"
+          class="panel-grip"
+          role="separator"
+          aria-orientation="vertical"
+          aria-label="Resize the panel: drag, or use the left and right arrows"
+          data-i18n-label="panel.gripLabel"
+          title="Drag to resize. Double-click to reset."
+          data-i18n-title="panel.gripTitle"
+          tabindex="0"
+        ></div>
+        <div class="panel-bar">
+          <button id="panel-back" class="panel-back" type="button" hidden data-i18n="panel.back">← Overview</button>
+          <button id="panel-close" class="icon-button" type="button" aria-label="Close the panel" data-i18n-label="panel.close">×</button>
+        </div>
+        <div id="panel-body" class="panel-body">
+          <section id="overview" class="panel-section overview" aria-live="polite"></section>
+          <section id="info" class="panel-section info" hidden aria-live="polite">
+            <p class="eyebrow" id="info-kind"></p>
+            <h2 id="info-name"></h2>
+            <dl>
+              <div><dt data-i18n="info.thisBorder">This border</dt><dd id="info-shape"></dd></div>
+              <div><dt data-i18n="info.existed">Realm existed</dt><dd id="info-span"></dd></div>
+              <div><dt data-i18n="info.areaLabel">Area</dt><dd id="info-area"></dd></div>
+            </dl>
+            <p class="links" id="info-links"></p>
+            <p class="fine" data-i18n="info.fine">Borders from Cliopatria, approximate.</p>
+            <button id="info-report" class="report-link" type="button" data-i18n="feedback.link">Report a problem or suggest something</button>
+          </section>
 
-      <aside id="event" class="info event-panel" hidden aria-live="polite" aria-labelledby="event-title">
-        <button id="event-close" class="icon-button" type="button" aria-label="Close" data-i18n-label="common.close">×</button>
-        <figure id="event-figure" class="event-figure" hidden>
-          <img id="event-image" alt="" decoding="async" />
-          <figcaption><a id="event-credit" target="_blank" rel="noopener"></a></figcaption>
-        </figure>
-        <p class="eyebrow event-kind"><span id="event-badge" aria-hidden="true"></span><span id="event-kind"></span></p>
-        <h2 id="event-title"></h2>
-        <p id="event-when" class="event-when"></p>
-        <p id="event-summary" class="event-summary"></p>
-        <h3 class="event-more" data-i18n="event.learnMore">Learn more</h3>
-        <ul id="event-links" class="event-links"></ul>
-        <button id="event-report" class="report-link" type="button" data-i18n="feedback.link">Report a problem or suggest something</button>
-      </aside>
+          <section id="event" class="panel-section info event-panel" hidden aria-live="polite" aria-labelledby="event-title">
+            <div id="event-gallery" class="gallery" hidden></div>
+            <p class="eyebrow event-kind"><span id="event-badge" aria-hidden="true"></span><span id="event-kind"></span></p>
+            <h2 id="event-title"></h2>
+            <p id="event-when" class="event-when"></p>
+            <p id="event-summary" class="event-summary"></p>
+            <h3 class="event-more" data-i18n="event.learnMore">Learn more</h3>
+            <ul id="event-links" class="event-links"></ul>
+            <div id="event-docs" class="docs" hidden></div>
+            <button id="event-report" class="report-link" type="button" data-i18n="feedback.link">Report a problem or suggest something</button>
+          </section>
 
-      <section id="sources" class="sources" hidden>
-        <button id="sources-close" class="icon-button" type="button" aria-label="Close" data-i18n-label="common.close">×</button>
-        <h2 data-i18n="sources.title">Sources</h2>
-        <ul data-i18n-html="sources.list">
-          <li>
-            Borders:
-            <a href="https://github.com/Seshat-Global-History-Databank/cliopatria" target="_blank" rel="noopener">Cliopatria</a>,
-            Seshat Global History Databank, CC BY 4.0. Simplified for display.
-          </li>
-          <li>
-            Key figures and links between realms:
-            <a href="https://www.wikidata.org/" target="_blank" rel="noopener">Wikidata</a>, CC0.
-          </li>
-          <li>
-            Globe imagery: Natural Earth II, public domain, as packaged with
-            <a href="https://cesium.com/platform/cesiumjs/" target="_blank" rel="noopener">CesiumJS</a> (Apache 2.0).
-          </li>
-          <li>
-            Events: the Mongol ones written for this prototype from standard references, the others from
-            <a href="https://www.wikidata.org/" target="_blank" rel="noopener">Wikidata</a> (CC0) with the opening
-            paragraph of their Wikipedia article (CC BY-SA); pictures from the events&rsquo;
-            <a href="https://en.wikipedia.org/" target="_blank" rel="noopener">Wikipedia</a> articles, shown only when the
-            file is on Wikimedia Commons, with its author and licence.
-          </li>
-          <li>
-            Map coastlines: Natural Earth 1:50m land, public domain, via
-            <a href="https://github.com/topojson/world-atlas" target="_blank" rel="noopener">world-atlas</a> (ISC).
-            Projections by <a href="https://d3js.org/d3-geo" target="_blank" rel="noopener">d3-geo</a> (ISC).
-          </li>
-        </ul>
-        <button id="sources-report" class="report-link" type="button" data-i18n="feedback.linkApp">Report a problem or suggest an improvement</button>
-        <div id="credits" class="credits"></div>
-      </section>
+          <section id="sources" class="panel-section sources" hidden>
+            <h2 data-i18n="sources.title">Sources</h2>
+            <ul data-i18n-html="sources.list">
+              <li>
+                Borders:
+                <a href="https://github.com/Seshat-Global-History-Databank/cliopatria" target="_blank" rel="noopener">Cliopatria</a>,
+                Seshat Global History Databank, CC BY 4.0. Simplified for display.
+              </li>
+              <li>
+                Key figures and links between realms:
+                <a href="https://www.wikidata.org/" target="_blank" rel="noopener">Wikidata</a>, CC0.
+              </li>
+              <li>
+                Globe imagery: Natural Earth II, public domain, as packaged with
+                <a href="https://cesium.com/platform/cesiumjs/" target="_blank" rel="noopener">CesiumJS</a> (Apache 2.0).
+              </li>
+              <li>
+                Events: the Mongol ones written for this prototype from standard references, the others from
+                <a href="https://www.wikidata.org/" target="_blank" rel="noopener">Wikidata</a> (CC0) with the opening
+                paragraph of their Wikipedia article (CC BY-SA); pictures from the events&rsquo;
+                <a href="https://en.wikipedia.org/" target="_blank" rel="noopener">Wikipedia</a> articles, shown only when the
+                file is on Wikimedia Commons, with its author and licence.
+              </li>
+              <li>
+                Map coastlines: Natural Earth 1:50m land, public domain, via
+                <a href="https://github.com/topojson/world-atlas" target="_blank" rel="noopener">world-atlas</a> (ISC).
+                Projections by <a href="https://d3js.org/d3-geo" target="_blank" rel="noopener">d3-geo</a> (ISC).
+              </li>
+            </ul>
+            <button id="sources-report" class="report-link" type="button" data-i18n="feedback.linkApp">Report a problem or suggest an improvement</button>
+            <div id="credits" class="credits"></div>
+          </section>
+        </div>
+      </aside>
+      <button id="panel-open" class="panel-open" type="button" hidden title="Show the text panel" data-i18n-title="panel.openTitle">
+        <span aria-hidden="true">‹</span> <span data-i18n="panel.open">Details</span>
+      </button>
 
       <footer class="timeline">
+        <div id="timeline-left" class="timeline-edge left" role="separator" aria-orientation="vertical" aria-label="Resize the timeline from the left" data-i18n-label="timeline.leftLabel" title="Drag to resize. Double-click to reset." data-i18n-title="timeline.gripTitle" tabindex="0"></div>
+        <div id="timeline-right" class="timeline-edge right" role="separator" aria-orientation="vertical" aria-label="Resize the timeline from the right" data-i18n-label="timeline.rightLabel" title="Drag to resize. Double-click to reset." data-i18n-title="timeline.gripTitle" tabindex="0"></div>
         <div
           id="timeline-grip"
           class="timeline-grip"
@@ -329,6 +339,7 @@
         each card names the author and licence and links to the file. The small shape in each card's corner is the realm's
         outline at its largest.
       </footer>
+      <p class="landing-credit" data-i18n="landing.credit">Proudly prompted with ❤️ in Claude Opus 5.5</p>
       <p class="landing-report">
         <button id="landing-report" class="report-link" type="button" data-i18n="feedback.linkApp">Report a problem or suggest an improvement</button>
       </p>

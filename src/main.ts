@@ -13,23 +13,29 @@ import {
 } from "cesium";
 import "cesium/Build/Cesium/Widgets/CesiumWidget/CesiumWidget.css";
 import "./style.css";
+import { AxisLock } from "./axisLock";
 import { civEraText, Civilizations, type Civilization } from "./civilizations";
 import { formatNumber, initLanguage, languageMenu, t, translatePage, withText, type MessageKey } from "./i18n";
 import { highlightColors } from "./colors";
+import { Documentaries, renderDocumentaries } from "./documentaries";
 import { countryCivIds, loadCountries, type Country, type CountryView } from "./countries";
 import { BorderData, type Polity } from "./data";
 import { eraAt, eraName, ERAS, NOW } from "./eras";
 import { EventLayer } from "./eventLayer";
 import { Feedback } from "./feedback";
-import { badgeSvg, eventArticle, eventLinks, kindLabel, loadEvents, localPage, pageUrl, type HistoryEvent } from "./events";
+import { badgeSvg, eventLinks, kindLabel, loadEvents, localPage, pageUrl, type HistoryEvent } from "./events";
 import { Landing } from "./landing";
 import { MapView, PROJECTIONS } from "./mapView";
+import { articleMedia, renderGallery } from "./media";
+import { Overview } from "./overview";
 import { Picker } from "./picker";
 import { PolityLayer } from "./polityLayer";
 import { Timeline, type Lane, type LaneLink } from "./timeline";
+import { attachTimelineEdges } from "./timelineEdges";
 import { attachTimelineGrip } from "./timelineGrip";
+import { SidePanel } from "./sidePanel";
 import { loadTravel, Travel, travelWhen, type TravelEvent } from "./travel";
-import { pictureCredit, pictureTitle, realmFacts } from "./wikidata";
+import { realmFacts } from "./wikidata";
 import { wikidataEvents } from "./wikiEvents";
 import { era, formatRange, formatYear, yearNumber } from "./years";
 
@@ -94,9 +100,10 @@ camera.maximumZoomDistance = 45_000_000;
 
 const narrow = window.matchMedia("(max-width: 640px)").matches;
 
-// The globe can be drawn upright or leaning on Earth's axial tilt, 23.5°,
-// with the North Pole to the right as on a classroom globe. The camera looks
-// straight down, so its heading turns the picture about the screen's centre.
+// "Natural axis" leans the globe on Earth's axial tilt, 23.5°, with the North
+// Pole to the right as on a classroom globe, and lets it turn only about that
+// axis; "Free movement" stands it upright and lets it turn any way. The camera
+// looks straight down, so its heading turns the picture about the screen's centre.
 const AXIAL_TILT = 23.5;
 const TILT_KEY = "terra-tempora:tilted";
 let tilted = (() => {
@@ -115,6 +122,8 @@ widget.camera.setView({
   destination: Cartesian3.fromDegrees(78, narrow ? 28 : 32, narrow ? 22_000_000 : 14_500_000),
   orientation: orientation(),
 });
+
+const axisLock = new AxisLock(scene, widget.camera, orientation);
 
 const layer = new PolityLayer(scene);
 const eventLayer = new EventLayer(scene);
@@ -557,13 +566,36 @@ trackEl.addEventListener("pointerout", (e) => {
   if ((e.target as HTMLElement).closest(".lane-link, .mark")) tooltip.hidden = true;
 });
 
-$("info-close").addEventListener("click", () => (info.hidden = true));
 $("sources-button").addEventListener("click", () => {
   info.hidden = true;
   sources.hidden = !sources.hidden;
   if (!sources.hidden) closeEvent();
 });
-$("sources-close").addEventListener("click", () => (sources.hidden = true));
+
+// The text panel on the right: the view's overview, or the realm, event or
+// sources picked.
+const panel = new SidePanel({
+  panel: $("panel"),
+  opener: $("panel-open"),
+  grip: $("panel-grip"),
+  close: $("panel-close"),
+  back: $("panel-back"),
+  body: $("panel-body"),
+  overview: $("overview"),
+  details: [info, $("event"), sources],
+  onBack: () => {
+    info.hidden = true;
+    sources.hidden = true;
+    closeEvent();
+  },
+});
+const overview = new Overview($("overview"), (c) => {
+  if (playing) setPlaying(false);
+  focusCiv(c);
+});
+let documentaries: Documentaries | null = null;
+/** English country names, for their Wikipedia articles. */
+const englishCountry = new Map<string, string>();
 
 // Cards on phones sit just above the timeline, whose height changes as lanes fold.
 const footer = document.querySelector("footer")!;
@@ -665,10 +697,9 @@ function setTilted(on: boolean, animate = true) {
   } catch {
     // Storage blocked; the choice lasts until the page reloads.
   }
-  const button = $("tilt");
-  button.setAttribute("aria-pressed", String(on));
-  button.title = on ? t("tilt.uprightTitle") : t("tilt.tiltTitle", { degrees: formatNumber(AXIAL_TILT) });
-  $("tilt-label").textContent = on ? t("tilt.upright") : t("tilt.tilt", { degrees: formatNumber(AXIAL_TILT) });
+  $("axis-natural").setAttribute("aria-pressed", String(on));
+  $("axis-free").setAttribute("aria-pressed", String(!on));
+  axisLock.enabled = on;
   if (!animate) return;
   // Turn the picture about the point at the centre of the screen.
   const camera = widget.camera;
@@ -685,7 +716,8 @@ function setTilted(on: boolean, animate = true) {
   });
 }
 
-$("tilt").addEventListener("click", () => setTilted(!tilted));
+$("axis-natural").addEventListener("click", () => tilted || setTilted(true));
+$("axis-free").addEventListener("click", () => tilted && setTilted(false));
 setTilted(tilted, false);
 
 // Globe or flat map. The map opens on the place the globe was looking at, and
@@ -738,7 +770,7 @@ function setMapMode(on: boolean, sync = true) {
   $("view-globe").setAttribute("aria-pressed", String(!on));
   $("view-map").setAttribute("aria-pressed", String(on));
   $("projection-field").hidden = !on;
-  $("tilt").hidden = on;
+  $("axis-switch").hidden = on;
   $("globe").hidden = on;
   store(MAP_KEY, on ? "map" : "globe");
   if (on) {
@@ -904,28 +936,18 @@ function openEvent(e: HistoryEvent) {
       return item;
     }),
   );
-  const figure = $("event-figure");
-  const image = $<HTMLImageElement>("event-image");
-  figure.hidden = true;
-  image.removeAttribute("src");
+  renderDocumentaries($("event-docs"), documentaries?.about({ events: [e.id], civs: e.civs }) ?? []);
+  const gallery = $("event-gallery");
+  renderGallery(gallery, []);
   eventPanel.hidden = false;
-  eventPanel.scrollTop = 0;
-  eventArticle(e).then((article) => {
+  panel.toTop();
+  articleMedia(e.wikipedia).then((article) => {
     if (openedEvent !== e || !article) return;
     // The first link is the Wikipedia article; point it at the reader's language.
     $("event-links").querySelector("a")!.href = article.url;
     // Wikidata only gives a one-line description; the article's opening tells the story.
     if (e.fromWikidata && article.extract) $("event-summary").textContent = article.extract;
-    const picture = article.picture;
-    if (!picture) return;
-    image.onload = () => {
-      if (openedEvent === e) figure.hidden = false;
-    };
-    image.src = picture.thumb;
-    const credit = $<HTMLAnchorElement>("event-credit");
-    credit.href = picture.page;
-    credit.textContent = pictureCredit(picture);
-    credit.title = pictureTitle(picture);
+    renderGallery(gallery, article.media);
   });
 }
 
@@ -953,7 +975,6 @@ function flyToPoint([lon, lat]: [number, number]) {
   });
 }
 
-$("event-close").addEventListener("click", closeEvent);
 
 function setYearEverywhere(next: number) {
   setYear(next);
@@ -984,6 +1005,22 @@ function showMasthead() {
       : t("masthead.several", { count: list.length, years });
   $("view-focus").setAttribute("aria-label", t("masthead.focusLabel", { name: title }));
   document.title = t("page.titleOf", { name: title });
+  if (country) {
+    const english = englishCountry.get(country.id) ?? country.name;
+    const history = `History of ${english}`;
+    overview.render({
+      kind: "country",
+      country,
+      view: countryView,
+      civs: list,
+      sub: $("civ-sub").textContent ?? "",
+      articles: countryView === "territory" ? [english, history] : [history, english],
+    });
+  } else if (list.length === 1) overview.render({ kind: "civ", civ: list[0] });
+  else overview.render({ kind: "several", civs: list, title, sub: $("civ-sub").textContent ?? "" });
+  info.hidden = true;
+  sources.hidden = true;
+  closeEvent();
 }
 
 /** Shows a civilization on the globe, with its related realms highlighted. */
@@ -1205,6 +1242,7 @@ function startTravel(at?: number) {
   map.setHighlight(new Map());
   $("civ-title").textContent = t("travel.title");
   $("civ-sub").textContent = t("travel.sub", { count: travelEvents.length });
+  overview.render({ kind: "travel", sub: $("civ-sub").textContent });
   document.title = t("page.titleOf", { name: t("travel.title") });
   line.setFeatured([], "");
   line.setView(FIRST_YEAR, NOW);
@@ -1287,12 +1325,18 @@ Promise.all([
   BorderData.open(base),
   // The countries are a bonus; the page works without them.
   loadCountries(base)
-    .then((list) => withText(base, "countries.json", list))
+    .then((list) => {
+      for (const k of list) englishCountry.set(k.id, k.name);
+      return withText(base, "countries.json", list);
+    })
     .catch((error: unknown) => (console.error(error), [] as Country[])),
   loadEvents(base).catch((error: unknown) => (console.error(error), [] as HistoryEvent[])),
   loadTravel(base).catch((error: unknown) => (console.error(error), [] as TravelEvent[])),
+  // Documentaries are a bonus too.
+  Documentaries.load(base).catch((error: unknown) => (console.error(error), null)),
 ])
-  .then(([list, borders, loaded, events, turningPoints]) => {
+  .then(([list, borders, loaded, events, turningPoints, docs]) => {
+    documentaries = overview.documentaries = docs;
     travelEvents = turningPoints;
     civs = list;
     layer.nameOf = map.nameOf = (realm) => list.realmName(realm);
@@ -1355,6 +1399,7 @@ Promise.all([
     });
     const line = timeline;
     attachTimelineGrip($("timeline-grip"), footer, $("track"), line);
+    attachTimelineEdges($("timeline-left"), $("timeline-right"));
     $("view-focus").addEventListener("click", () => {
       if (!active) return;
       const list = chosen();
@@ -1362,11 +1407,10 @@ Promise.all([
       if (!list.some((c) => year >= c.from && year <= c.to)) setYearEverywhere(list[0].peakYear);
     });
     $("view-all").addEventListener("click", () => line.setView(FIRST_YEAR, NOW));
-    for (const id of ["travel-start", "travel-button"])
-      $(id).addEventListener("click", () => {
-        go({ travel: true }, true);
-        startTravel();
-      });
+    $("travel-start").addEventListener("click", () => {
+      go({ travel: true }, true);
+      startTravel();
+    });
     $("zoom-in").addEventListener("click", () => line.zoom(0.5));
     $("zoom-out").addEventListener("click", () => line.zoom(2));
     if (stored(MAP_KEY) === "map") setMapMode(true, false);

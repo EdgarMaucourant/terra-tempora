@@ -216,7 +216,7 @@ interface Article {
   url: string;
 }
 
-interface Page {
+export interface Page {
   wiki: string;
   title: string;
 }

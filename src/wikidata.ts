@@ -54,7 +54,7 @@ interface Binding {
 
 // Maps already show on every card as the realm's outline, so a picture of a
 // place, monument or artefact is preferred to a map, then the coat of arms or flag.
-const MAP_LIKE = /\b(map|maps|locator|location|extent|territor|orthographic|borders?)\b|karte|carte|mapa/i;
+export const MAP_LIKE = /\b(map|maps|locator|location|extent|territor|orthographic|borders?)\b|karte|carte|mapa/i;
 
 function chooseFile(d: { images: string[]; arms: string[]; flags: string[] }): string | undefined {
   return d.images.find((f) => !MAP_LIKE.test(f.replace(/[_.-]/g, " "))) ?? d.arms[0] ?? d.flags[0];
@@ -62,7 +62,7 @@ function chooseFile(d: { images: string[]; arms: string[]; flags: string[] }): s
 
 const qidOf = (uri: string) => uri.slice(uri.lastIndexOf("/") + 1);
 
-function stripHtml(html: string): string {
+export function stripHtml(html: string): string {
   const doc = new DOMParser().parseFromString(html, "text/html");
   return (doc.body.textContent ?? "").replace(/\s+/g, " ").trim();
 }

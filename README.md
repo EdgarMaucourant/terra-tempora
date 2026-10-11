@@ -62,8 +62,8 @@ in a timeline that runs from 10,000 BCE to today.
   reached. To refresh the events, run the "Fetch Wikidata events" workflow
   from the Actions tab (tick "again" to fetch every realm, not only new
   ones), or `node scripts/fetch-events.mjs` where Wikidata is reachable.
-- "History travel", at the top of the landing page and by the globe (links
-  look like `#travel`), plays world history on its own, starting just before
+- "History travel", at the top of the landing page (links look like
+  `#travel`), plays world history on its own, starting just before
   Göbekli Tepe (9500 BCE). As each of 141 turning points comes, the globe turns
   smoothly to put it in the middle, with its icon, a one-line summary and the
   realm it happened in lit up. Time cruises at the chosen speed, crosses long
@@ -108,19 +108,42 @@ in a timeline that runs from 10,000 BCE to today.
 - Lanes showing the lifespan of each highlighted realm; tapping one flies the
   globe to that realm and centres it (moving the year into its lifetime if
   needed). When they are out of view the lanes fold into a pointer toward them.
-- A button on the left tilts the globe to Earth's axial tilt (23.5°, North Pole
-  to the right) or stands it upright again. The choice is remembered.
+- A switch on the left picks "Natural axis" or "Free movement". Natural axis
+  leans the globe on Earth's axial tilt (23.5°, North Pole to the right) and
+  lets it turn only about that axis: dragging spins it east or west, scrolling
+  or pinching zooms straight in and out. Free movement stands it upright and
+  turns it any way. The choice is remembered.
 - A Globe / Map switch on the left turns the globe into a flat map of the same
   borders, with a choice of projection: Equal Earth, Mercator, Gall–Peters,
   Eckert IV, Robinson, Winkel tripel, Mollweide, Natural Earth, Miller and
   equirectangular. Drag sideways to spin the world, up and down to pan, and
   scroll or pinch to zoom. The map opens where the globe was looking, and the
   choice of view and projection is remembered in this browser.
+- The timeline spans the window, a margin in from each side. Drag its left or
+  right edge to narrow it from that side; double-click an edge to reset it.
+  The margins are remembered.
 - Drag the grip on the top edge of the timeline to make it taller (the lanes
   grow to fill it); double-click the grip to reset. The height is remembered.
 - Play and pause at 2 to 500 years per second.
-- Tap or click a realm for its dates, area and Wikipedia and Wikidata links.
-- Works on phones: the timeline stacks and the details card becomes a sheet.
+- A text panel on the right holds the words. It opens on an overview of the
+  view: for a civilization, the opening of its Wikipedia article with its
+  photos and videos; for a country, the history of the nation (or, for
+  "Countries", of the land) with the civilizations shown; for several
+  civilizations, their list; for the history travel, what it is. Tapping a
+  realm (its dates, area and links) or an event, or Sources, shows that
+  instead; "Overview" goes back. Drag its left edge to resize it (remembered;
+  double-click to reset), or close it; "Details" brings it back, as does
+  picking a realm or an event.
+- Photos and videos in the panel are the files the Wikipedia article shows,
+  read in the browser, kept only when they are on Wikimedia Commons (so freely
+  licensed), each credited with its author and licence. Maps come after other
+  pictures; logos and icons are left out.
+- Documentaries: "See more on Netflix: …" (or National Geographic, Discovery
+  Channel, History Channel) links in the panel, for the civilization, event,
+  turning point or country shown. They are hand-picked in
+  `public/data/documentaries.json`, each checked to exist on that platform and
+  linked to its page there; `npm run check` checks their ids.
+- Works on phones: the timeline stacks and the text panel becomes a sheet.
 - Links open a civilization on a year: `#c=mongol-empire&y=1241`, or `y=-500`
   for 500 BCE. Several civilizations: `#c=roman-empire,han-dynasty&y=100`. An empty link opens the landing page; the older `#y1241` opens
   the Mongol Empire.
