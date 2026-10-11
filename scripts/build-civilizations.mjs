@@ -27,6 +27,9 @@ const SILHOUETTE_TOLERANCE = 0.9;
 // Parts smaller than this share of the largest part are left out of the silhouette.
 const SILHOUETTE_MIN_PART = 0.04;
 const SILHOUETTE_MAX_PARTS = 8;
+// Hand corrections to a civilization's years where its borders don't span its
+// history, by id: [from, to].
+const DATE_FIXES = JSON.parse(readFileSync("scripts/date-fixes.json", "utf8"));
 
 const index = JSON.parse(readFileSync("public/data/index.json", "utf8"));
 const shapes = new Map();
@@ -177,6 +180,16 @@ for (const g of groups.values()) {
     family: familyOf.get(g.name) ?? null,
   });
   outlines[slug] = silhouette(peak);
+}
+for (const c of civilizations) {
+  const fix = DATE_FIXES[c.id];
+  if (!fix) continue;
+  [c.from, c.to] = fix;
+  // Opening the realm goes to its peak year, so keep that within its years.
+  c.peakYear = Math.min(c.to, Math.max(c.from, c.peakYear));
+}
+for (const id of Object.keys(DATE_FIXES)) {
+  if (!civilizations.some((c) => c.id === id)) console.warn(`date-fixes.json: no civilization "${id}"`);
 }
 civilizations.sort((a, b) => b.area - a.area);
 

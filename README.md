@@ -245,7 +245,7 @@ locally, run `npm run build` then `npx wrangler dev --var GITHUB_TOKEN:<token>`.
 | Path | What it is |
 | --- | --- |
 | `scripts/build-data.mjs` | Simplifies Cliopatria borders, picks label points, splits them into time windows |
-| `scripts/build-civilizations.mjs` | One entry per civilization: dates, largest extent, outline, family |
+| `scripts/build-civilizations.mjs` | One entry per civilization: dates, largest extent, outline, family. Years corrected by hand where the borders don't span the realm's history are in `scripts/date-fixes.json` |
 | `src/landing.ts` | The landing page of civilization cards, with multi-select |
 | `scripts/build-countries.mjs` | Countries of today and the civilizations that led to each, from the borders |
 | `src/countries.ts` | Loads the countries |

@@ -68,6 +68,9 @@
  "empire-of-brazil": {
   "name": "Empire du Brésil"
  },
+ "republic-of-china": {
+  "name": "République de Chine"
+ },
  "empire-of-china": {
   "name": "Restauration impériale chinoise"
  },
@@ -239,6 +242,9 @@
  "communist-party-of-china": {
   "name": "Parti communiste chinois"
  },
+ "eastern-gokturks": {
+  "name": "Göktürks de l’Est"
+ },
  "liu-song-dynasty": {
   "name": "Dynastie Song du Sud"
  },
@@ -247,6 +253,9 @@
  },
  "british-east-africa": {
   "name": "Afrique orientale britannique"
+ },
+ "german-africa": {
+  "name": "Afrique allemande"
  },
  "kazakh-khanate": {
   "name": "Khanat kazakh"
@@ -323,8 +332,14 @@
  "kushan-empire": {
   "name": "Empire kouchan"
  },
+ "median-kingdom": {
+  "name": "Royaume mède"
+ },
  "greenland": {
   "name": "Groenland"
+ },
+ "portuguese-republic": {
+  "name": "République portugaise"
  },
  "durrani-empire": {
   "name": "Empire Durrani"
@@ -344,11 +359,17 @@
  "qin-dynasty": {
   "name": "Dynastie Qin"
  },
+ "great-jin": {
+  "name": "Grande dynastie Jin"
+ },
  "inca-empire": {
   "name": "Empire inca"
  },
  "south-africa": {
   "name": "Afrique du Sud"
+ },
+ "southern-song": {
+  "name": "Song du Sud"
  },
  "republic-of-indonesia": {
   "name": "Indonésie"
@@ -382,6 +403,9 @@
  },
  "hotaki-dynasty": {
   "name": "Hotaki"
+ },
+ "hunnic-empire": {
+  "name": "Empire hunnique"
  },
  "tibetans": {
   "name": "Tibétains"
@@ -430,6 +454,9 @@
  },
  "pahlavi-dynasty": {
   "name": "Dynastie Pahlavi"
+ },
+ "libyan-arab-republic": {
+  "name": "République arabe libyenne"
  },
  "kingdom-of-libya": {
   "name": "Royaume de Libye"
@@ -605,6 +632,9 @@
  "palmyrene-empire": {
   "name": "Empire palmyrénien"
  },
+ "polish-lithuania-kingdom": {
+  "name": "Royaume de Pologne-Lituanie"
+ },
  "swedish-empire": {
   "name": "Empire suédois"
  },
@@ -619,6 +649,9 @@
  },
  "republic-of-egypt": {
   "name": "Égypte"
+ },
+ "arab-republic-of-egypt": {
+  "name": "République arabe d’Égypte"
  },
  "spring-and-autumn-states": {
   "name": "Période des Printemps et Automnes"
@@ -830,6 +863,9 @@
  "thirtieth-dynasty-of-egypt": {
   "name": "XXXe dynastie égyptienne"
  },
+ "union-of-myanmar": {
+  "name": "Union du Myanmar"
+ },
  "konbaung-dynasty": {
   "name": "Dynastie Konbaung"
  },
@@ -965,6 +1001,9 @@
  "anti-kuomintang-coalition": {
   "name": "Coalition anti-Kuomintang"
  },
+ "holy-roman-empire-minor-states": {
+  "name": "Petits États du Saint-Empire romain germanique"
+ },
  "arab-federation": {
   "name": "Fédération arabe d’Irak et de Jordanie"
  },
@@ -1091,6 +1130,9 @@
  "pagan-kingdom": {
   "name": "Royaume de Pagan"
  },
+ "republic-of-iraq": {
+  "name": "République d’Irak"
+ },
  "kingdom-of-hejaz": {
   "name": "Royaume du Hedjaz"
  },
@@ -1144,6 +1186,9 @@
  },
  "morocco": {
   "name": "Maroc"
+ },
+ "republic-of-venezuela": {
+  "name": "République du Venezuela"
  },
  "sikh-empire": {
   "name": "Empire sikh"
@@ -1369,6 +1414,9 @@
  },
  "dutch-cape-colony": {
   "name": "Colonie néerlandaise du Cap"
+ },
+ "napoleonic-batavia-republic": {
+  "name": "République batave napoléonienne"
  },
  "salian-franks": {
   "name": "Francs saliens"
@@ -1940,6 +1988,9 @@
  "communist-cuba": {
   "name": "Cuba"
  },
+ "republic-of-cuba": {
+  "name": "République de Cuba"
+ },
  "alodia": {
   "name": "Alodie"
  },
@@ -2053,6 +2104,9 @@
  },
  "despotate-of-epirus": {
   "name": "Despotat d’Épire"
+ },
+ "french-louisiana": {
+  "name": "Louisiane française"
  },
  "pro-habsburg-spain": {
   "name": "Maison de Habsbourg en Espagne"
@@ -2184,7 +2238,7 @@
   "name": "Royaume d’Écosse"
  },
  "kingdom-of-naples-napoleonic": {
-  "name": "Royaume de Naples"
+  "name": "Royaume de Naples (napoléonien)"
  },
  "hungarian-people-s-republic": {
   "name": "République populaire de Hongrie"
@@ -2255,6 +2309,9 @@
  "kingdom-of-alba": {
   "name": "Alba"
  },
+ "italian-republic": {
+  "name": "République italienne"
+ },
  "sultanate-of-banten": {
   "name": "Sultanat de Banten"
  },
@@ -2293,6 +2350,9 @@
  },
  "hanthawaddy-kingdom": {
   "name": "Royaume d’Hanthawaddy"
+ },
+ "republic-of-azerbaijan": {
+  "name": "République d’Azerbaïdjan"
  },
  "singhasari": {
   "name": "Royaume de Singasari"
@@ -2371,6 +2431,9 @@
  },
  "principality-of-turov-and-pinsk": {
   "name": "Principauté de Tourov et Pinsk"
+ },
+ "kingdom-of-naples": {
+  "name": "Royaume de Naples"
  },
  "sultanate-of-sulu": {
   "name": "Sultanat de Soulou"
@@ -2534,6 +2597,9 @@
  "estonia": {
   "name": "Estonie"
  },
+ "republic-of-estonia": {
+  "name": "République d’Estonie"
+ },
  "nayaks-of-madurai": {
   "name": "Dynastie Nayak de Madurai"
  },
@@ -2693,11 +2759,17 @@
  "sovereign-principality-of-the-united-netherlands": {
   "name": "Pays-Bas unis"
  },
+ "portuguese-africa": {
+  "name": "Afrique portugaise"
+ },
  "electorate-of-saxony": {
   "name": "Électorat de Saxe"
  },
  "phoenicia": {
   "name": "Phénicie"
+ },
+ "phoenician-empire": {
+  "name": "Empire phénicien"
  },
  "second-athenian-league": {
   "name": "Seconde confédération athénienne"
@@ -2750,6 +2822,12 @@
  "judea": {
   "name": "Judée"
  },
+ "merovingian-empire": {
+  "name": "Empire mérovingien"
+ },
+ "carolingian-empire": {
+  "name": "Empire carolingien"
+ },
  "dong-okjeo": {
   "name": "Okcho"
  },
@@ -2758,6 +2836,9 @@
  },
  "haiti": {
   "name": "Haïti"
+ },
+ "republic-of-haiti": {
+  "name": "République d’Haïti"
  },
  "beylik-of-dulkadir": {
   "name": "Dulkadir"
@@ -3074,6 +3155,9 @@
  "kuwait": {
   "name": "Koweït"
  },
+ "state-of-kuwait": {
+  "name": "État du Koweït"
+ },
  "ryazan": {
   "name": "Riazan"
  },
@@ -3179,6 +3263,9 @@
  "principality-of-mingrelia": {
   "name": "Principauté de Mingrélie"
  },
+ "state-of-qatar": {
+  "name": "État du Qatar"
+ },
  "kingdom-of-cyprus": {
   "name": "Royaume de Chypre"
  },
@@ -3205,6 +3292,9 @@
  },
  "cyprus-condominium": {
   "name": "Chypre"
+ },
+ "republic-of-cyprus": {
+  "name": "République de Chypre"
  },
  "duchy-of-mecklenburg": {
   "name": "Duché de Mecklembourg"
@@ -3752,6 +3842,9 @@
  "micronesia": {
   "name": "Micronésie"
  },
+ "first-french-colonial-empire": {
+  "name": "Premier empire colonial français"
+ },
  "principality-of-andorra": {
   "name": "Andorre"
  },
@@ -3772,6 +3865,9 @@
  },
  "principality-of-monaco": {
   "name": "Monaco"
+ },
+ "kingdom-of-monaco": {
+  "name": "Principauté de Monaco"
  },
  "principality-of-liechtenstein": {
   "name": "Liechtenstein"
