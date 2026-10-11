@@ -21,7 +21,7 @@ import { BorderData, type Polity } from "./data";
 import { eraAt, eraName, ERAS, NOW } from "./eras";
 import { EventLayer } from "./eventLayer";
 import { Feedback } from "./feedback";
-import { badgeSvg, eventArticle, eventLinks, kindLabel, loadEvents, type HistoryEvent } from "./events";
+import { badgeSvg, eventArticle, eventLinks, kindLabel, loadEvents, localPage, pageUrl, type HistoryEvent } from "./events";
 import { Landing } from "./landing";
 import { MapView, PROJECTIONS } from "./mapView";
 import { Picker } from "./picker";
@@ -370,8 +370,12 @@ function showInfo(p: Polity) {
     a.rel = "noopener";
     a.textContent = text;
     links.append(a);
+    return a;
   };
-  if (p.wikipedia) link(`https://en.wikipedia.org/wiki/${encodeURIComponent(p.wikipedia.replace(/ /g, "_"))}`, "Wikipedia");
+  if (p.wikipedia) {
+    const a = link(pageUrl({ wiki: "en", title: p.wikipedia.replace(/ /g, "_") }), "Wikipedia");
+    void localPage(p.wikipedia).then((page) => (a.href = pageUrl(page)));
+  }
   if (p.wikidata) link(`https://www.wikidata.org/wiki/${encodeURIComponent(p.wikidata)}`, "Wikidata");
   info.hidden = false;
 }
@@ -908,6 +912,8 @@ function openEvent(e: HistoryEvent) {
   eventPanel.scrollTop = 0;
   eventArticle(e).then((article) => {
     if (openedEvent !== e || !article) return;
+    // The first link is the Wikipedia article; point it at the reader's language.
+    $("event-links").querySelector("a")!.href = article.url;
     // Wikidata only gives a one-line description; the article's opening tells the story.
     if (e.fromWikidata && article.extract) $("event-summary").textContent = article.extract;
     const picture = article.picture;

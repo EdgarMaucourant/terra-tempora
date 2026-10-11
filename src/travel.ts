@@ -512,6 +512,8 @@ export class Travel {
     );
     // The lead picture of its Wikipedia article, when Wikipedia can be reached.
     eventArticle(e).then((article) => {
+      // The first link is the Wikipedia article; point it at the reader's language.
+      if (article) links.querySelector("a")!.href = article.url;
       const picture = article?.picture;
       if (!picture) return;
       const image = Object.assign(el("img"), { alt: "", decoding: "async" as const, src: picture.thumb });

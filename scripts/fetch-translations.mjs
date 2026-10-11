@@ -15,7 +15,9 @@ const SPARQL = "https://query.wikidata.org/sparql";
 const AGENT = "terra-tempora/0.1 (https://github.com/EdgarMaucourant/terra-tempora)";
 const EVENTS = "public/data/wd-events";
 const OUT = "public/data/i18n";
-const BATCH = 150;
+const BATCH = 60;
+// Queries run at once; Wikidata allows five per client.
+const PARALLEL = 3;
 
 // Titles of the events named after a person or a city, as in fetch-events.mjs.
 const TITLES = {
@@ -36,6 +38,8 @@ function de(name) {
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
+class Timeout extends Error {}
+
 async function sparql(text) {
   for (let attempt = 0; ; attempt++) {
     let response;
@@ -55,10 +59,34 @@ async function sparql(text) {
       await sleep(5000);
       continue;
     }
-    if (response.ok) return (await response.json()).results.bindings;
+    if (response.ok) {
+      // A query stopped after 60 s can still answer 200, with an error in place of the end of the JSON.
+      const body = await response.text();
+      try {
+        return JSON.parse(body).results.bindings;
+      } catch {
+        throw new Timeout("Wikidata stopped the query");
+      }
+    }
+    if ([500, 502, 504].includes(response.status)) throw new Timeout(`Wikidata answered ${response.status}`);
     if (attempt >= 4) throw new Error(`Wikidata answered ${response.status}`);
     const retryAfter = Number(response.headers.get("retry-after")) || 0;
     await sleep(Math.max(retryAfter * 1000, 5000 * (attempt + 1)));
+  }
+}
+
+/** Runs a query over a list of articles; a list that times out is split in two. */
+async function perArticles(articles, make) {
+  try {
+    return await sparql(make(articles));
+  } catch (error) {
+    if (!(error instanceof Timeout)) throw error;
+    if (articles.length === 1) {
+      console.warn(`  skipped ${articles[0]}: ${error.message}`);
+      return [];
+    }
+    const half = Math.ceil(articles.length / 2);
+    return [...(await perArticles(articles.slice(0, half), make)), ...(await perArticles(articles.slice(half), make))];
   }
 }
 
@@ -80,34 +108,45 @@ for (const lang of langs) {
   const description = new Map();
   // English place name → name in this language, by article.
   const places = new Map();
-  for (let i = 0; i < titles.length; i += BATCH) {
-    const values = titles
-      .slice(i, i + BATCH)
-      .map((t) => `${JSON.stringify(t)}@en`)
-      .join(" ");
-    const item = `VALUES ?title { ${values} }
+  const item = (articles) => `VALUES ?title { ${articles.map((t) => `${JSON.stringify(t)}@en`).join(" ")} }
   ?article schema:about ?item; schema:isPartOf <https://en.wikipedia.org/>; schema:name ?title.`;
-    for (const b of await sparql(`SELECT ?title ?label ?desc WHERE {
-  ${item}
+  let next = 0;
+  let done = 0;
+  async function worker() {
+    while (next < titles.length) {
+      const batch = titles.slice(next, next + BATCH);
+      next += BATCH;
+      const names = await perArticles(
+        batch,
+        (articles) => `SELECT ?title ?label ?desc WHERE {
+  ${item(articles)}
   OPTIONAL { ?item rdfs:label ?label. FILTER(LANG(?label) = "${lang}") }
   OPTIONAL { ?item schema:description ?desc. FILTER(LANG(?desc) = "${lang}") }
-}`)) {
-      if (b.label) label.set(b.title.value, b.label.value);
-      if (b.desc) description.set(b.title.value, b.desc.value);
+}`,
+      );
+      for (const b of names) {
+        if (b.label) label.set(b.title.value, b.label.value);
+        if (b.desc) description.set(b.title.value, b.desc.value);
+      }
+      // Birthplace, place of death, or where it happened.
+      const where = await perArticles(
+        batch,
+        (articles) => `SELECT ?title ?en ?local WHERE {
+  ${item(articles)}
+  ?item wdt:P19|wdt:P20|wdt:P276 ?place.
+  ?place rdfs:label ?en. FILTER(LANG(?en) = "en")
+  ?place rdfs:label ?local. FILTER(LANG(?local) = "${lang}")
+}`,
+      );
+      for (const b of where) {
+        if (!places.has(b.title.value)) places.set(b.title.value, new Map());
+        places.get(b.title.value).set(b.en.value, b.local.value);
+      }
+      done += batch.length;
+      console.log(`${lang}: ${done}/${titles.length}`);
     }
-    // Birthplace, place of death, or where it happened.
-    for (const b of await sparql(`SELECT ?title ?en ?local WHERE {
-  ${item}
-  VALUES ?where { wdt:P19 wdt:P20 wdt:P276 }
-  ?item ?where ?place.
-  ?place rdfs:label ?en, ?local.
-  FILTER(LANG(?en) = "en" && LANG(?local) = "${lang}")
-}`)) {
-      if (!places.has(b.title.value)) places.set(b.title.value, new Map());
-      places.get(b.title.value).set(b.en.value, b.local.value);
-    }
-    console.log(`${lang}: ${Math.min(i + BATCH, titles.length)}/${titles.length}`);
   }
+  await Promise.all(Array.from({ length: PARALLEL }, worker));
 
   mkdirSync(`${OUT}/${lang}/wd-events`, { recursive: true });
   let count = 0;
