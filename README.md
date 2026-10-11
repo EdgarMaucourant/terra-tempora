@@ -174,10 +174,15 @@ the browser's languages, then English.
   `{"temujin-born": {"title": "Naissance de Temüjin", "summary": "…"}}`.
   Untranslated items stay in English. Translatable: `events.json`,
   `travel.json`, `countries.json` and `wd-events/<n>.json` (ids look like
-  `wd:<Wikipedia article>:<kind>`). Civilization and realm names come from
-  Cliopatria and are English for now.
+  `wd:<Wikipedia article>:<kind>`). The `wd-events` translations are not
+  written by hand: `scripts/fetch-translations.mjs` reads them from Wikidata
+  for every language in `src/locales/` (run by the "Fetch event translations"
+  workflow; run it again after fetching new events). Wikipedia links and
+  article extracts open the reader's language edition when there is one.
+  Civilization and realm names come from Cliopatria and are English for now.
 - To add a language: copy `src/locales/en.json` to `<code>.json`, translate it,
-  and add the language to `LANGUAGES` in `src/i18n.ts`.
+  add the language to `LANGUAGES` in `src/i18n.ts`, translate the data files
+  above, and run the "Fetch event translations" workflow.
 
 ## Hosting
 

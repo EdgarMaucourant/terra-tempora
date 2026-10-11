@@ -165,6 +165,8 @@ for (const lang of langs) {
         if (desc) text.summary = sentence(desc);
         // Named after a person or city but Wikidata lacks the name: English throughout.
         if (template && !name) continue;
+        // Typographic apostrophes, as in the rest of the translations.
+        for (const [field, value] of Object.entries(text)) text[field] = value.replace(/'/g, "’");
         if (Object.keys(text).length) out[`wd:${e.wikipedia}:${e.kind}`] = text;
       }
     }
