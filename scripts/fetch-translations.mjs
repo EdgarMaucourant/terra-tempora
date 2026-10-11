@@ -31,6 +31,29 @@ const TITLES = {
   },
 };
 
+// Titles Wikidata has no name for in a language, built from the English
+// "Battle of X" when X is the place and its name in the language is known.
+const PATTERNS = {
+  fr: {
+    Battle: (place) => `Bataille ${de(place)}`,
+    Siege: (place) => `Siège ${de(place)}`,
+    Sack: (place) => `Sac ${de(place)}`,
+    Fall: (place) => `Chute ${de(place)}`,
+    Capture: (place) => `Prise ${de(place)}`,
+    Treaty: (place) => `Traité ${de(place)}`,
+    Peace: (place) => `Paix ${de(place)}`,
+  },
+};
+
+/** The title from PATTERNS, or undefined. */
+function patterned(lang, title, places) {
+  const match = title.match(/^(\w+) of (.+)$/);
+  const make = match && PATTERNS[lang]?.[match[1]];
+  if (!make) return undefined;
+  const place = places?.get(match[2]);
+  return place && make(place);
+}
+
 /** French "de", elided or contracted: d’Alexandre, du Havre, des Baux, de Paris. */
 function de(name) {
   if (/^Le /.test(name)) return `du ${name.slice(3)}`;
@@ -231,6 +254,10 @@ for (const lang of langs) {
         const template = TITLES[lang]?.[e.kind];
         const text = {};
         if (name) text.title = template ? template(name) : name[0].toUpperCase() + name.slice(1);
+        else if (!template) {
+          const title = patterned(lang, e.title, places.get(article));
+          if (title) text.title = title;
+        }
         const place = e.place && places.get(article)?.get(e.place);
         if (place) text.place = place;
         const desc = description.get(article);
