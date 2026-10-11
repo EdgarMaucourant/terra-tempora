@@ -123,6 +123,7 @@ const TRANSLATABLE = {
   "events.json": { ids: eventIds, fields: ["title", "place", "summary", "approx"] },
   "travel.json": { ids: travelIds, fields: ["title", "place", "region", "short", "summary", "legacy", "approx"] },
   "countries.json": { ids: countryIds, fields: ["name", "blurb"] },
+  "civilizations.json": { ids: civIds, fields: ["name"] },
 };
 for (const [file, ids] of wdIds) TRANSLATABLE[file] = { ids, fields: ["title", "place", "summary"] };
 

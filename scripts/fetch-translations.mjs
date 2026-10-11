@@ -1,7 +1,10 @@
-// Reads the Wikidata events' titles, places and descriptions in other
-// languages and saves them as translations: public/data/i18n/<lang>/wd-events/,
-// one file per shard of public/data/wd-events/, by event id (see
-// src/wikiEvents.ts). Run after scripts/fetch-events.mjs.
+// Reads names and text in other languages from Wikidata and saves them as
+// translations under public/data/i18n/<lang>/:
+// - civilizations.json: each civilization's name, from the item of its English
+//   Wikipedia article, else from Cliopatria's own Wikidata item;
+// - wd-events/: the Wikidata events' titles, places and descriptions, one file
+//   per shard of public/data/wd-events/, by event id (see src/wikiEvents.ts).
+// Run after scripts/fetch-events.mjs.
 //
 //   node scripts/fetch-translations.mjs [lang …]     (default: every language but English)
 //
@@ -100,10 +103,62 @@ const langs = asked.length ? asked : locales;
 
 const shardFiles = readdirSync(EVENTS).filter((f) => /^\d+\.json$/.test(f));
 const shards = shardFiles.map((f) => ({ file: f, data: JSON.parse(readFileSync(`${EVENTS}/${f}`, "utf8")) }));
+const { civilizations } = JSON.parse(readFileSync("public/data/civilizations.json", "utf8"));
 const titles = [...new Set(shards.flatMap((s) => Object.values(s.data).flat().map((e) => e.wikipedia.replace(/_/g, " "))))];
 console.log(`${titles.length} articles in ${shards.length} files.`);
 
+/** Labels in a language, by English article title and by item id. */
+async function labels(lang, articles, items) {
+  const byArticle = new Map();
+  const byItem = new Map();
+  for (let i = 0; i < articles.length; i += BATCH) {
+    for (const b of await perArticles(
+      articles.slice(i, i + BATCH),
+      (some) => `SELECT ?title ?label WHERE {
+  VALUES ?title { ${some.map((t) => `${JSON.stringify(t)}@en`).join(" ")} }
+  ?article schema:about ?item; schema:isPartOf <https://en.wikipedia.org/>; schema:name ?title.
+  ?item rdfs:label ?label. FILTER(LANG(?label) = "${lang}")
+}`,
+    )) byArticle.set(b.title.value, b.label.value);
+  }
+  for (let i = 0; i < items.length; i += BATCH) {
+    for (const b of await sparql(`SELECT ?item ?label WHERE {
+  VALUES ?item { ${items.slice(i, i + BATCH).map((q) => `wd:${q}`).join(" ")} }
+  ?item rdfs:label ?label. FILTER(LANG(?label) = "${lang}")
+}`)) byItem.set(b.item.value.slice(b.item.value.lastIndexOf("/") + 1), b.label.value);
+  }
+  return { byArticle, byItem };
+}
+
 for (const lang of langs) {
+  {
+    const articles = [...new Set(civilizations.map((c) => c.wikipedia?.replace(/_/g, " ")).filter(Boolean))];
+    const items = [...new Set(civilizations.map((c) => c.wikidata).filter(Boolean))];
+    const { byArticle, byItem } = await labels(lang, articles, items);
+    // An article shared by several realms (the Yuan dynasty, Great Yuan…) names
+    // none of them; their own items do.
+    const shared = new Map();
+    for (const c of civilizations) shared.set(c.wikipedia, (shared.get(c.wikipedia) ?? 0) + 1);
+    const named = civilizations
+      .map((c) => {
+        const own = shared.get(c.wikipedia) > 1 ? undefined : byArticle.get(c.wikipedia?.replace(/_/g, " "));
+        const name = own ?? byItem.get(c.wikidata);
+        return [c, name && (name[0].toUpperCase() + name.slice(1)).replace(/'/g, "’")];
+      })
+      .filter(([, name]) => name);
+    // Names must stay unique: the app tells realms apart by name. Clashing ones stay in English.
+    const uses = new Map();
+    for (const [, name] of named) uses.set(name, (uses.get(name) ?? 0) + 1);
+    const english = new Set(civilizations.map((c) => c.name));
+    const out = {};
+    for (const [c, name] of named) {
+      if (uses.get(name) === 1 && (name === c.name || !english.has(name))) out[c.id] = { name };
+    }
+    mkdirSync(`${OUT}/${lang}`, { recursive: true });
+    writeFileSync(`${OUT}/${lang}/civilizations.json`, JSON.stringify(out, null, 1) + "\n");
+    console.log(`${lang}: saved ${Object.keys(out).length} of ${civilizations.length} civilization names.`);
+  }
+
   const label = new Map();
   const description = new Map();
   // English place name → name in this language, by article.
