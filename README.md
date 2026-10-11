@@ -173,11 +173,21 @@ the browser's languages, then English.
   `public/data/i18n/fr/events.json`:
   `{"temujin-born": {"title": "Naissance de Temüjin", "summary": "…"}}`.
   Untranslated items stay in English. Translatable: `events.json`,
-  `travel.json`, `countries.json` and `wd-events/<n>.json` (ids look like
-  `wd:<Wikipedia article>:<kind>`). Civilization and realm names come from
-  Cliopatria and are English for now.
+  `travel.json`, `countries.json`, `civilizations.json` (names) and `wd-events/<n>.json` (ids look like
+  `wd:<Wikipedia article>:<kind>`). The `wd-events` translations are not
+  written by hand: `scripts/fetch-translations.mjs` reads them from Wikidata
+  for every language in `src/locales/` (run by the "Fetch event translations"
+  workflow; run it again after fetching new events). Wikipedia links and
+  article extracts open the reader's language edition when there is one.
+  Civilization names (`civilizations.json`, by id) are fetched the same way,
+  from the item of each civilization's English Wikipedia article; realms that
+  share an article, or names that would clash, keep their English name. Check
+  them after a fetch: Cliopatria sometimes links a realm to a neighbouring
+  article. To correct a name, edit the file; the next fetch overwrites it, so
+  fix the Wikidata label too.
 - To add a language: copy `src/locales/en.json` to `<code>.json`, translate it,
-  and add the language to `LANGUAGES` in `src/i18n.ts`.
+  add the language to `LANGUAGES` in `src/i18n.ts`, translate the data files
+  above, and run the "Fetch event translations" workflow.
 
 ## Hosting
 
@@ -211,19 +221,21 @@ year, place, language and a link back to what the visitor was looking at.
 
 `worker/index.js` receives the reports at `/api/feedback` and files them; it
 limits each visitor to 5 reports a minute and ignores bots that fill a hidden
-field. To turn it on, in Cloudflare → Workers → terra-tempora → Settings →
-Variables and Secrets:
+field. To turn it on, set its secrets with Wrangler from the project folder
+(the dashboard may refuse, saying the Worker only has static assets):
 
-1. Add the secret `GITHUB_TOKEN`: a fine-grained GitHub token for this
-   repository only, with "Issues: Read and write" permission.
+1. `npx wrangler login`, then `npx wrangler secret put GITHUB_TOKEN` and paste
+   a fine-grained GitHub token for this repository only, with "Issues: Read
+   and write" permission. Deploys keep it; don't add it as a plain variable,
+   which every deploy would wipe.
 2. Optionally, against spam: create a Turnstile widget (Cloudflare →
-   Turnstile) for the site's domain, add its secret key as the secret
-   `TURNSTILE_SECRET`, and its site key as the build variable
+   Turnstile) for the site's domain, `npx wrangler secret put TURNSTILE_SECRET`
+   with its secret key, and add its site key as the build variable
    `VITE_TURNSTILE_SITE_KEY` (Settings → Build → Variables), then redeploy.
 
-Branch previews have their own secrets: to try reports on a preview address,
-also add `GITHUB_TOKEN` under Variables and Secrets → Previews Base. It
-reaches previews built after you add it, so push again (or re-run the build).
+Branch previews don't get these secrets. Previews created after you set one
+under Variables and Secrets → Previews Base get it; for an existing preview,
+run `npx wrangler preview secret put GITHUB_TOKEN --name <branch>`.
 
 Until `GITHUB_TOKEN` is set, sending a report shows an error. To try it
 locally, run `npm run build` then `npx wrangler dev --var GITHUB_TOKEN:<token>`.
@@ -233,7 +245,7 @@ locally, run `npm run build` then `npx wrangler dev --var GITHUB_TOKEN:<token>`.
 | Path | What it is |
 | --- | --- |
 | `scripts/build-data.mjs` | Simplifies Cliopatria borders, picks label points, splits them into time windows |
-| `scripts/build-civilizations.mjs` | One entry per civilization: dates, largest extent, outline, family |
+| `scripts/build-civilizations.mjs` | One entry per civilization: dates, largest extent, outline, family. Years corrected by hand where the borders don't span the realm's history are in `scripts/date-fixes.json` |
 | `src/landing.ts` | The landing page of civilization cards, with multi-select |
 | `scripts/build-countries.mjs` | Countries of today and the civilizations that led to each, from the borders |
 | `src/countries.ts` | Loads the countries |

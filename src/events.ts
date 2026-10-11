@@ -4,7 +4,7 @@
 // Pictures come from the event's Wikipedia article in the browser, and only
 // when the file is on Wikimedia Commons, so it is freely licensed.
 
-import { t, withText, type MessageKey } from "./i18n";
+import { lang, t, withText, type MessageKey } from "./i18n";
 import { fetchPictures, type Picture } from "./wikidata";
 
 export type EventKind =
@@ -212,20 +212,68 @@ interface Article {
   picture: Picture | null;
   /** The article's opening paragraph. */
   extract: string;
+  /** The article, in the reader's language when Wikipedia has it. */
+  url: string;
+}
+
+interface Page {
+  wiki: string;
+  title: string;
+}
+
+const pages = new Map<string, Promise<Page>>();
+
+/**
+ * The reader's-language edition of an English Wikipedia article, found
+ * through its language links; the English one when there is none or
+ * Wikipedia can't be reached.
+ */
+export function localPage(english: string): Promise<Page> {
+  const title = english.replace(/ /g, "_");
+  if (lang === "en") return Promise.resolve({ wiki: "en", title });
+  let pending = pages.get(title);
+  if (!pending) {
+    const api = new URL("https://en.wikipedia.org/w/api.php");
+    api.search = new URLSearchParams({
+      action: "query",
+      titles: title,
+      prop: "langlinks",
+      lllang: lang,
+      redirects: "1",
+      format: "json",
+      formatversion: "2",
+      origin: "*",
+    }).toString();
+    pending = fetch(api)
+      .then((r) => r.json())
+      .then((data: { query?: { pages?: { langlinks?: { title: string }[] }[] } }) => {
+        const local = data.query?.pages?.[0]?.langlinks?.[0]?.title;
+        return local ? { wiki: lang, title: local.replace(/ /g, "_") } : { wiki: "en", title };
+      })
+      .catch(() => ({ wiki: "en", title }));
+    pages.set(title, pending);
+  }
+  return pending;
+}
+
+export function pageUrl(page: Page): string {
+  return `https://${page.wiki}.wikipedia.org/wiki/${encodeURIComponent(page.title)}`;
 }
 
 const articles = new Map<string, Promise<Article | null>>();
 
 /**
- * The event's Wikipedia article: its opening paragraph, and its lead picture
- * when that is a Commons file (and so freely licensed), with its author and licence.
+ * The event's Wikipedia article, in the reader's language when there is one:
+ * its opening paragraph, and its lead picture when that is a Commons file
+ * (and so freely licensed), with its author and licence.
  */
 export function eventArticle(e: HistoryEvent): Promise<Article | null> {
   let pending = articles.get(e.wikipedia);
   if (!pending) {
-    pending = fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(e.wikipedia)}`)
-      .then((r) => (r.ok ? r.json() : null))
-      .then(async (summary: { extract?: string; originalimage?: { source: string } } | null) => {
+    pending = localPage(e.wikipedia)
+      .then(async (page) => {
+        const r = await fetch(`https://${page.wiki}.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(page.title)}`);
+        const summary: { extract?: string; originalimage?: { source: string } } | null = r.ok ? await r.json() : null;
         if (!summary) return null;
         const source = summary.originalimage?.source;
         let picture: Picture | null = null;
@@ -234,7 +282,7 @@ export function eventArticle(e: HistoryEvent): Promise<Article | null> {
           const file = decodeURIComponent(source.split("/").pop()!);
           picture = (await fetchPictures([file]).catch(() => new Map<string, Picture>())).get(file) ?? null;
         }
-        return { picture, extract: summary.extract ?? "" };
+        return { picture, extract: summary.extract ?? "", url: pageUrl(page) };
       })
       .catch(() => null);
     articles.set(e.wikipedia, pending);

@@ -88,6 +88,8 @@ export class MapView {
   /** Badges drawn last frame, for hit-testing. */
   private drawnBadges: { e: HistoryEvent; x: number; y: number }[] = [];
   showContext = true;
+  /** A realm's name as shown on its label. */
+  nameOf = (realm: string) => realm;
 
   private choice = PROJECTIONS[0];
   private projection: GeoProjection = PROJECTIONS[0].make();
@@ -428,7 +430,7 @@ export class MapView {
       if (!at || at[0] < 0 || at[0] > this.width || at[1] < 0 || at[1] > this.height) continue;
       const highlighted = this.highlight.has(p.name);
       ctx.font = highlighted ? "600 14px 'Instrument Sans', sans-serif" : "500 11px 'Instrument Sans', sans-serif";
-      const text = p.name.replace(/^\((.*)\)$/, "$1");
+      const text = this.nameOf(p.name).replace(/^\((.*)\)$/, "$1");
       const w = ctx.measureText(text).width / 2 + 3;
       const h = highlighted ? 10 : 8;
       const box: [number, number, number, number] = [at[0] - w, at[1] - h, at[0] + w, at[1] + h];

@@ -117,7 +117,7 @@
   "other": "{count} en tout"
  },
  "landing.keyFigures": "Personnages clés",
- "landing.lede": "Tous les États cartographiés dans les données de frontières de Cliopatria, de 3400 av. J.-C. à nos jours. Choisissez-en un pour le voir sur le globe, mis en lumière avec les États dont il est issu et ceux qui lui ont succédé.",
+ "landing.lede": "Tous les États cartographiés dans les données de frontières de Cliopatria, de 3400 av. J.‑C. à nos jours. Choisissez-en un pour le voir sur le globe, mis en lumière avec les États dont il est issu et ceux qui lui ont succédé.",
  "landing.nations": "Nations",
  "landing.nationsSub": "Toutes les civilisations à l’origine d’une nation d’aujourd’hui, où qu’elles se soient trouvées.",
  "landing.noCivs": "Aucune civilisation ne correspond. Essayez un autre nom ou une autre époque.",
@@ -264,9 +264,9 @@
  "view.label": "Vue",
  "view.map": "Carte",
  "view.projection": "Projection",
- "year.bce": "{year} av. J.-C.",
- "year.ce": "{year} apr. J.-C.",
- "year.eraBce": "av. J.-C.",
- "year.eraCe": "apr. J.-C.",
+ "year.bce": "{year} av. J.‑C.",
+ "year.ce": "{year} apr. J.‑C.",
+ "year.eraBce": "av. J.‑C.",
+ "year.eraCe": "apr. J.‑C.",
  "year.range": "{from} – {to}"
 }

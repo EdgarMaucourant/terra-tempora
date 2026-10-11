@@ -96,6 +96,8 @@ export class PolityLayer {
   /** Today's border of the country being looked at. */
   private outline: Primitive | null = null;
   showContext = true;
+  /** A realm's name as shown on its label. */
+  nameOf = (realm: string) => realm;
 
   constructor(private scene: Scene) {
     this.labels = scene.primitives.add(new LabelCollection({ scene }));
@@ -304,7 +306,7 @@ export class PolityLayer {
         id: p,
         position: Cartesian3.fromDegrees(p.label[0], p.label[1], height + 2000),
         // Cliopatria writes a realm's overseas parts as "(Name)".
-        text: p.name.replace(/^\((.*)\)$/, "$1"),
+        text: this.nameOf(p.name).replace(/^\((.*)\)$/, "$1"),
         font: highlighted ? "600 15px 'Instrument Sans', sans-serif" : "500 12px 'Instrument Sans', sans-serif",
         fillColor: labelColor,
         outlineColor: Color.BLACK.withAlpha(0.85),

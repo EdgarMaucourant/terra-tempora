@@ -123,6 +123,7 @@ const TRANSLATABLE = {
   "events.json": { ids: eventIds, fields: ["title", "place", "summary", "approx"] },
   "travel.json": { ids: travelIds, fields: ["title", "place", "region", "short", "summary", "legacy", "approx"] },
   "countries.json": { ids: countryIds, fields: ["name", "blurb"] },
+  "civilizations.json": { ids: civIds, fields: ["name"] },
 };
 for (const [file, ids] of wdIds) TRANSLATABLE[file] = { ids, fields: ["title", "place", "summary"] };
 
@@ -146,6 +147,19 @@ if (existsSync(`${DATA}/i18n`)) {
         }
       }
     }
+  }
+}
+
+// Civilization names must stay unique in every language: the app tells realms apart by name.
+for (const lang of existsSync(`${DATA}/i18n`) ? readdirSync(`${DATA}/i18n`) : []) {
+  const file = `${DATA}/i18n/${lang}/civilizations.json`;
+  if (!existsSync(file)) continue;
+  const names = read(file) ?? {};
+  const seen = new Map();
+  for (const c of civs) {
+    const name = names[c.id]?.name ?? c.name;
+    if (seen.has(name)) fail(`i18n/${lang}/civilizations.json`, `"${c.id}" and "${seen.get(name)}" are both named "${name}"`);
+    seen.set(name, c.id);
   }
 }
 

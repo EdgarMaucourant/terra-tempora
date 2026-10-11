@@ -21,7 +21,7 @@ import { BorderData, type Polity } from "./data";
 import { eraAt, eraName, ERAS, NOW } from "./eras";
 import { EventLayer } from "./eventLayer";
 import { Feedback } from "./feedback";
-import { badgeSvg, eventArticle, eventLinks, kindLabel, loadEvents, type HistoryEvent } from "./events";
+import { badgeSvg, eventArticle, eventLinks, kindLabel, loadEvents, localPage, pageUrl, type HistoryEvent } from "./events";
 import { Landing } from "./landing";
 import { MapView, PROJECTIONS } from "./mapView";
 import { Picker } from "./picker";
@@ -356,7 +356,7 @@ function showInfo(p: Polity) {
   const civ = civs?.ofRealm(p.name);
   $("info-kind").textContent =
     civ && highlighted.includes(civ) ? (civ === active || !expanded ? t("info.highlighted") : t("info.related")) : t("info.realm");
-  $("info-name").textContent = p.name;
+  $("info-name").textContent = civs?.realmName(p.name) ?? p.name;
   $("info-shape").textContent = formatRange(p.from, p.to);
   const span = data?.realmSpan(p.name) ?? [p.from, p.to];
   $("info-span").textContent = formatRange(span[0], span[1]);
@@ -370,8 +370,12 @@ function showInfo(p: Polity) {
     a.rel = "noopener";
     a.textContent = text;
     links.append(a);
+    return a;
   };
-  if (p.wikipedia) link(`https://en.wikipedia.org/wiki/${encodeURIComponent(p.wikipedia.replace(/ /g, "_"))}`, "Wikipedia");
+  if (p.wikipedia) {
+    const a = link(pageUrl({ wiki: "en", title: p.wikipedia.replace(/ /g, "_") }), "Wikipedia");
+    void localPage(p.wikipedia).then((page) => (a.href = pageUrl(page)));
+  }
   if (p.wikidata) link(`https://www.wikidata.org/wiki/${encodeURIComponent(p.wikidata)}`, "Wikidata");
   info.hidden = false;
 }
@@ -786,8 +790,8 @@ const toLink = (c: Civilization): LaneLink => ({ id: c.id, name: c.name, from: c
 function showHighlight() {
   if (!active) return;
   colors = highlightColors(
-    active.name,
-    highlighted.filter((c) => c !== active).map((c) => c.name),
+    active,
+    highlighted.filter((c) => c !== active),
   );
   const byRealm = new Map<string, string>();
   for (const c of highlighted) for (const n of c.names) byRealm.set(n, colors.get(c.name)!);
@@ -908,6 +912,8 @@ function openEvent(e: HistoryEvent) {
   eventPanel.scrollTop = 0;
   eventArticle(e).then((article) => {
     if (openedEvent !== e || !article) return;
+    // The first link is the Wikipedia article; point it at the reader's language.
+    $("event-links").querySelector("a")!.href = article.url;
     // Wikidata only gives a one-line description; the article's opening tells the story.
     if (e.fromWikidata && article.extract) $("event-summary").textContent = article.extract;
     const picture = article.picture;
@@ -1243,7 +1249,9 @@ function showTravelRealms(events: TravelEvent[]) {
   const key = names.join("|");
   if (key === travelRealms) return;
   travelRealms = key;
-  const byRealm = names.length ? highlightColors(names[0], names.slice(1)) : new Map<string, string>();
+  // Keyed by realm name; no realm here has a set colour.
+  const realms = names.map((name) => ({ id: name, name }));
+  const byRealm = names.length ? highlightColors(realms[0], realms.slice(1)) : new Map<string, string>();
   layer.setHighlight(byRealm);
   map.setHighlight(byRealm);
   render();
@@ -1287,6 +1295,7 @@ Promise.all([
   .then(([list, borders, loaded, events, turningPoints]) => {
     travelEvents = turningPoints;
     civs = list;
+    layer.nameOf = map.nameOf = (realm) => list.realmName(realm);
     allEvents = events;
     countries = loaded;
     data = borders;

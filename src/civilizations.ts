@@ -1,5 +1,5 @@
 import { eraAt, eraLabel, type Era } from "./eras";
-import { t } from "./i18n";
+import { t, withText } from "./i18n";
 
 export interface Civilization {
   /** Stable id used in links, e.g. "mongol-empire". */
@@ -67,7 +67,8 @@ export class Civilizations {
     const response = await fetch(new URL("civilizations.json", base));
     if (!response.ok) throw new Error(`Could not load the civilizations (${response.status})`);
     const json = (await response.json()) as { civilizations: Civilization[] };
-    return new Civilizations(json.civilizations);
+    // Names in the reader's language; the realm names in `names` stay as in the border data.
+    return new Civilizations(await withText(base, "civilizations.json", json.civilizations));
   }
 
   /**
@@ -88,6 +89,13 @@ export class Civilizations {
   /** The civilization a Cliopatria realm name belongs to. */
   ofRealm(name: string): Civilization | undefined {
     return this.byRealm.get(name);
+  }
+
+  /** A Cliopatria realm's name as shown, in the reader's language; "(Name)" marks overseas parts. */
+  realmName(realm: string): string {
+    const c = this.byRealm.get(realm);
+    if (!c) return realm;
+    return realm.startsWith("(") ? `(${c.name})` : c.name;
   }
 
   ofWikidata(qid: string): Civilization | undefined {
