@@ -96,6 +96,11 @@ export class PolityLayer {
   /** Today's border of the country being looked at. */
   private outline: Primitive | null = null;
   showContext = true;
+  /**
+   * Whether every highlighted realm is named; when false (today's map, where
+   * every country is coloured), only the large ones are, like greyed realms.
+   */
+  labelAll = true;
   /** A realm's name as shown on its label. */
   nameOf = (realm: string) => realm;
 
@@ -301,7 +306,7 @@ export class PolityLayer {
 
     let label: Label | undefined;
     const labelColor = highlighted ? Color.fromCssColorString("#fbf6ec") : Color.fromCssColorString("#b4bac1");
-    if (p.label && (highlighted || p.area >= CONTEXT_LABEL_AREA)) {
+    if (p.label && ((highlighted && this.labelAll) || p.area >= CONTEXT_LABEL_AREA)) {
       label = this.labels.add({
         id: p,
         position: Cartesian3.fromDegrees(p.label[0], p.label[1], height + 2000),
