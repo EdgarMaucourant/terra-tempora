@@ -2,7 +2,7 @@ import { civEraText, civEras, shapePath, type Civilization, type Outlines } from
 import { ERAS, eraLabel, type Era } from "./eras";
 import { countryCivIds, type Country, type CountryView } from "./countries";
 import { formatNumber, lang, t } from "./i18n";
-import { pictureTitle, realmFacts, type RealmFacts } from "./wikidata";
+import { nationFlags, pictureTitle, realmFacts, type RealmFacts } from "./wikidata";
 import { formatRange, formatYear } from "./years";
 
 type Sort = "area" | "oldest" | "newest" | "name";
@@ -16,8 +16,8 @@ const SORTS: Record<Sort, (a: Civilization, b: Civilization) => number> = {
 
 type CountrySort = "name" | "area" | "oldest" | "most";
 
-// Cards each section shows before the "Show all" card, which makes a tenth.
-const SHOWN = 9;
+// Cards each section shows before the "Show all" card, which makes a sixth.
+const SHOWN = 5;
 
 function el<K extends keyof HTMLElementTagNameMap>(tag: K, className?: string, text?: string): HTMLElementTagNameMap[K] {
   const node = document.createElement(tag);
@@ -43,6 +43,9 @@ export class Landing {
   /** Ticked civilizations, in the order they were ticked. */
   private selected: Civilization[] = [];
   private outlines: Outlines | null = null;
+  /** Each nation card's picture slot, by the Wikidata item of the nation's state today. */
+  private flagSlots = new Map<string, HTMLElement[]>();
+  private flagsAsked = false;
 
   constructor(
     private root: HTMLElement,
@@ -108,10 +111,33 @@ export class Landing {
 
   /** The page is on screen: the cards' outlines are worth downloading now. */
   show() {
+    this.showFlags();
     if (this.outlines) return;
     this.loadOutlines().then((outlines) => {
       this.outlines = outlines;
       this.drawOutlines();
+    });
+  }
+
+  /** Puts each nation's flag on its card; a nation without one keeps its outline. */
+  private showFlags() {
+    if (this.flagsAsked || !this.flagSlots.size) return;
+    this.flagsAsked = true;
+    nationFlags([...this.flagSlots.keys()]).then((flags) => {
+      for (const [qid, slots] of this.flagSlots) {
+        const src = flags.get(qid);
+        if (!src) continue;
+        for (const slot of slots) {
+          const img = el("img", "country-flag");
+          img.alt = "";
+          img.decoding = "async";
+          img.loading = "lazy";
+          img.addEventListener("load", () => slot.classList.add("has-flag"));
+          img.addEventListener("error", () => img.remove());
+          img.src = src;
+          slot.append(img);
+        }
+      }
     });
   }
 
@@ -212,9 +238,14 @@ export class Landing {
   ): HTMLElement {
     const card = el("article", "country-card");
     const today = byId.get(country.civ);
-    const shape = el("div");
+    // Countries show their land's outline; nations show their flag once it
+    // has loaded, and the outline until then or when there is none.
+    const shape = el("div", "country-picture");
     if (today) {
       shape.innerHTML = this.outline("country-shape", today.id);
+      if (view === "nationality" && today.wikidata) {
+        this.flagSlots.set(today.wikidata, [...(this.flagSlots.get(today.wikidata) ?? []), shape]);
+      }
     }
     const body = el("div");
     const title = el("h3");
