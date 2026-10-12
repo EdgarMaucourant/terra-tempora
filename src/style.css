@@ -1323,6 +1323,8 @@ a {
 
 /* Landing page: a grid of civilization cards over the dark of space. */
 .landing {
+  /* The landing page's content spans most of the window. */
+  --landing-width: 90%;
   position: fixed;
   inset: 0;
   z-index: 10;
@@ -1339,7 +1341,7 @@ a {
 }
 
 .landing-head {
-  max-width: 1240px;
+  max-width: var(--landing-width);
   margin: 0 auto;
   padding: calc(var(--safe-top) + 40px) var(--gutter) 8px;
 }
@@ -1399,7 +1401,28 @@ a {
 }
 
 .countries {
-  margin-bottom: 34px;
+  min-width: 0;
+}
+
+/* Countries and nations sit side by side below the civilizations. */
+.nation-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 34px 28px;
+  max-width: var(--landing-width);
+  margin: 0 auto;
+  padding: 8px var(--gutter) 34px;
+}
+
+@media (max-width: 1000px) {
+  .nation-row {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Six cards a section: two rows of three side by side. */
+.nation-row .country-grid {
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
 }
 
 .section-head {
@@ -1461,9 +1484,35 @@ a {
   outline-offset: 2px;
 }
 
+.country-picture {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+}
+
 .country-shape {
   width: 48px;
   height: 48px;
+}
+
+/* A nation's flag takes the outline's place once it has loaded. */
+.country-flag {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+}
+
+.country-picture.has-flag .country-flag {
+  opacity: 1;
+}
+
+.country-picture.has-flag .country-shape {
+  visibility: hidden;
 }
 
 .country-shape path {
@@ -1592,9 +1641,16 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(232px, 1fr));
   gap: 14px;
-  max-width: 1240px;
+  max-width: var(--landing-width);
   margin: 0 auto;
   padding: 10px var(--gutter) 32px;
+}
+
+/* Wide windows fit the six civilization cards on one row. */
+@media (min-width: 1700px) {
+  .civ-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
 }
 
 .civ-card {
@@ -1806,7 +1862,7 @@ a {
 }
 
 .landing-foot {
-  max-width: 1240px;
+  max-width: var(--landing-width);
   margin: 0 auto;
   padding: 8px var(--gutter) calc(var(--safe-bottom) + 32px);
   font-size: 12px;
@@ -1858,7 +1914,7 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 10px 16px;
-  max-width: 1240px;
+  max-width: var(--landing-width);
   box-sizing: border-box;
   margin: 0 auto;
   padding: 12px var(--gutter) calc(var(--safe-bottom) + 12px);
@@ -2031,6 +2087,10 @@ a {
 
 /* Phones: timeline stacks, cards become bottom sheets above it. */
 @media (max-width: 640px) {
+  .landing {
+    --landing-width: 100%;
+  }
+
   .masthead .sub,
 
   .civ-grid {
@@ -2502,7 +2562,7 @@ a {
 }
 
 .landing-credit {
-  max-width: 1240px;
+  max-width: var(--landing-width);
   margin: 0 auto;
   padding: 0 var(--gutter) 12px;
   font-size: 13px;
@@ -2510,7 +2570,7 @@ a {
 }
 
 .landing-report {
-  max-width: 1240px;
+  max-width: var(--landing-width);
   margin: 0 auto;
   padding: 0 var(--gutter) calc(var(--safe-bottom) + 32px);
 }

@@ -237,11 +237,10 @@
 
     <main id="landing" class="landing" tabindex="-1" hidden>
       <header class="landing-head">
-        <p class="eyebrow" data-i18n="landing.eyebrow">Terra Tempora · prototype</p>
+        <p class="eyebrow" data-i18n="landing.eyebrow">Terra Tempora</p>
         <h1 data-i18n="landing.title">Civilizations on the globe</h1>
         <p class="lede" data-i18n="landing.lede">
-          Every realm mapped in the Cliopatria border data, from 3400 BCE to today. Pick one to see it on the globe,
-          lit up with the realms it came from and the ones that followed.
+          Experience 5000 years of world history mapped on Earth, with borders, events and civilizations.
         </p>
         <button id="travel-start" class="travel-cta" type="button">
           <span class="travel-cta-play" aria-hidden="true">
@@ -253,6 +252,36 @@
               each turning point on every continent.</span>
           </span>
         </button>
+        <h2 class="section-title" data-i18n="landing.civilizations">Civilizations</h2>
+        <div class="filters">
+          <label class="search">
+            <span class="visually-hidden" data-i18n="common.search">Search</span>
+            <input id="civ-search" type="search" autocomplete="off" placeholder="Search civilizations" />
+          </label>
+          <label class="sort">
+            <span class="visually-hidden" data-i18n="landing.sort">Sort</span>
+            <select id="civ-sort">
+              <option value="oldest" selected data-i18n="sort.oldest">Oldest first</option>
+              <option value="area" data-i18n="sort.largest">Largest first</option>
+              <option value="newest" data-i18n="sort.newest">Most recent first</option>
+              <option value="name" data-i18n="sort.name">A to Z</option>
+            </select>
+          </label>
+          <button id="multi-toggle" class="multi-toggle" type="button" aria-pressed="false" data-i18n="landing.selectSeveral">Select several</button>
+        </div>
+        <div id="era-filter" class="era-filter" role="group" aria-label="Era" data-i18n-label="landing.era"></div>
+        <p id="civ-count" class="count" aria-live="polite"></p>
+      </header>
+      <div id="civ-grid" class="civ-grid"></div>
+      <div id="multi-bar" class="multi-bar" role="region" aria-label="Selected civilizations" data-i18n-label="landing.selectedRegion" hidden>
+        <p id="multi-count" class="multi-count" aria-live="polite"></p>
+        <div class="multi-actions">
+          <button id="multi-clear" class="ghost" type="button" data-i18n="landing.clear">Clear</button>
+          <button id="multi-cancel" class="ghost" type="button" data-i18n="common.cancel">Cancel</button>
+          <button id="multi-open" class="primary" type="button" disabled data-i18n="landing.showOnGlobe">Show on the globe</button>
+        </div>
+      </div>
+      <div class="nation-row">
         <section class="countries" data-kind="territory" aria-labelledby="territory-title">
           <div class="section-head">
             <div>
@@ -301,34 +330,6 @@
           </div>
           <div class="country-grid"></div>
         </section>
-        <h2 class="section-title" data-i18n="landing.civilizations">Civilizations</h2>
-        <div class="filters">
-          <label class="search">
-            <span class="visually-hidden" data-i18n="common.search">Search</span>
-            <input id="civ-search" type="search" autocomplete="off" placeholder="Search civilizations" />
-          </label>
-          <label class="sort">
-            <span class="visually-hidden" data-i18n="landing.sort">Sort</span>
-            <select id="civ-sort">
-              <option value="oldest" selected data-i18n="sort.oldest">Oldest first</option>
-              <option value="area" data-i18n="sort.largest">Largest first</option>
-              <option value="newest" data-i18n="sort.newest">Most recent first</option>
-              <option value="name" data-i18n="sort.name">A to Z</option>
-            </select>
-          </label>
-          <button id="multi-toggle" class="multi-toggle" type="button" aria-pressed="false" data-i18n="landing.selectSeveral">Select several</button>
-        </div>
-        <div id="era-filter" class="era-filter" role="group" aria-label="Era" data-i18n-label="landing.era"></div>
-        <p id="civ-count" class="count" aria-live="polite"></p>
-      </header>
-      <div id="civ-grid" class="civ-grid"></div>
-      <div id="multi-bar" class="multi-bar" role="region" aria-label="Selected civilizations" data-i18n-label="landing.selectedRegion" hidden>
-        <p id="multi-count" class="multi-count" aria-live="polite"></p>
-        <div class="multi-actions">
-          <button id="multi-clear" class="ghost" type="button" data-i18n="landing.clear">Clear</button>
-          <button id="multi-cancel" class="ghost" type="button" data-i18n="common.cancel">Cancel</button>
-          <button id="multi-open" class="primary" type="button" disabled data-i18n="landing.showOnGlobe">Show on the globe</button>
-        </div>
       </div>
       <footer class="landing-foot" data-i18n-html="landing.footer">
         Borders:
