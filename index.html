@@ -18,9 +18,15 @@
       <canvas id="map" class="map" hidden aria-label="Flat map showing the realms of the chosen year" data-i18n-label="map.label"></canvas>
 
       <header class="masthead">
-        <a id="back" class="back" href="#" data-i18n="masthead.back">← All civilizations</a>
+        <a id="back" class="back" href="#" data-i18n="masthead.back">← Today’s world</a>
         <h1 id="civ-title" data-i18n="page.title">Terra Tempora</h1>
         <p id="civ-sub" class="sub"></p>
+        <nav class="explore-bar" aria-label="Explore" data-i18n-label="home.explore">
+          <button type="button" class="chip" data-explore="civs" data-i18n="landing.civilizations">Civilizations</button>
+          <button type="button" class="chip" data-explore="countries" data-i18n="landing.countries">Countries</button>
+          <button type="button" class="chip" data-explore="nations" data-i18n="landing.nations">Nations</button>
+          <button type="button" class="chip" data-explore="travel" data-i18n="travel.title">History travel</button>
+        </nav>
       </header>
 
       <div class="globe-tools">
@@ -236,6 +242,9 @@
     </div>
 
     <main id="landing" class="landing" tabindex="-1" hidden>
+      <button id="landing-close" class="ghost landing-close" type="button" aria-label="Close and go back to the globe" data-i18n-label="home.closeLabel">
+        <span data-i18n="home.close">← Back to the globe</span>
+      </button>
       <header class="landing-head">
         <p class="eyebrow" data-i18n="landing.eyebrow">Terra Tempora</p>
         <h1 data-i18n="landing.title">Civilizations on the globe</h1>
@@ -252,7 +261,7 @@
               each turning point on every continent.</span>
           </span>
         </button>
-        <h2 class="section-title" data-i18n="landing.civilizations">Civilizations</h2>
+        <h2 class="section-title landing-civs" data-i18n="landing.civilizations">Civilizations</h2>
         <div class="filters">
           <label class="search">
             <span class="visually-hidden" data-i18n="common.search">Search</span>

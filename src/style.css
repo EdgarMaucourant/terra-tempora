@@ -2669,3 +2669,84 @@ a {
   height: 1px;
   overflow: hidden;
 }
+
+/* Globe-first home: the globe opens on today's world; the explore bar under
+   the masthead and the panel lead to the civilizations, countries, nations
+   and the history travel, which open in the explore page over the globe. */
+.explore-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+  pointer-events: auto;
+  text-shadow: none;
+}
+
+.explore-bar .chip {
+  min-height: 32px;
+  padding: 0 13px;
+  background: var(--panel);
+  backdrop-filter: blur(10px);
+  font-size: 13px;
+  color: var(--ink);
+}
+
+.explore-bar .chip:hover {
+  border-color: var(--steppe);
+}
+
+.home .back,
+.home #view-focus,
+.traveling .explore-bar {
+  display: none;
+}
+
+.landing-close {
+  position: sticky;
+  top: calc(var(--safe-top) + 14px);
+  z-index: 2;
+  margin: calc(var(--safe-top) + 14px) 0 0 max(var(--gutter), 5%);
+  background: var(--panel-solid);
+}
+
+.landing-close + .landing-head {
+  padding-top: 18px;
+}
+
+@media (max-width: 640px) {
+  .explore-bar .chip {
+    min-height: 30px;
+    padding: 0 10px;
+    font-size: 12px;
+  }
+
+  .landing-close {
+    margin-left: var(--gutter);
+  }
+}
+
+/* The home panel's ways in: a name over a line on what it holds. */
+.overview-actions {
+  gap: 6px;
+}
+
+.overview-action {
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.overview-action:hover {
+  border-color: var(--steppe);
+}
+
+.overview-action strong {
+  font-weight: 600;
+}
+
+.overview-action span {
+  flex: initial;
+  font-size: 13px;
+}

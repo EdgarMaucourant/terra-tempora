@@ -6,6 +6,12 @@ in a timeline that runs from 10,000 BCE to today.
 
 ## What it does
 
+- The globe opens on today's world: every present-day country in its own
+  colour, named, with the timeline on the latest year in the border data.
+  Clicking a country opens the civilizations that led to it. Buttons under the
+  title and the side panel open the explore page (the landing page described
+  below) on its Civilizations, Countries or Nations section, or start the
+  history travel; "← Back to the globe" or Escape closes it.
 - A landing page with a card for each of the 1,554 civilizations in the border
   data: a freely licensed picture on top (a photo of a monument, artwork or
   place, else its coat of arms or flag; maps are skipped), then its era, dates

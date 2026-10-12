@@ -2,7 +2,8 @@
 // realm or an event is picked. For a civilization, the opening of its Wikipedia
 // article with its photos and videos; for a country, the history of the nation
 // or the land; for several civilizations, the list of them; for the history
-// travel, what it is. Documentaries about the subject close it.
+// travel, what it is; on the home view, the ways in. Documentaries about the
+// subject close it.
 
 import { civEraText, type Civilization } from "./civilizations";
 import type { Country, CountryView } from "./countries";
@@ -17,7 +18,8 @@ export type Subject =
   | { kind: "civ"; civ: Civilization }
   | { kind: "several"; civs: Civilization[]; title: string; sub: string }
   | { kind: "country"; country: Country; view: CountryView; civs: Civilization[]; sub: string; articles: string[] }
-  | { kind: "travel"; sub: string };
+  | { kind: "travel"; sub: string }
+  | { kind: "home"; sub: string; actions: { label: string; text: string; run: () => void }[] };
 
 function el<K extends keyof HTMLElementTagNameMap>(tag: K, className?: string, text?: string): HTMLElementTagNameMap[K] {
   const node = document.createElement(tag);
@@ -139,6 +141,25 @@ export class Overview {
         meta.textContent = subject.sub;
         lede.textContent = t("landing.travelText");
         lede.hidden = false;
+        break;
+      }
+      case "home": {
+        eyebrow.textContent = t("overview.home");
+        title.textContent = t("home.title");
+        meta.textContent = subject.sub;
+        lede.textContent = t("landing.lede");
+        lede.hidden = false;
+        const items = el("ul", "overview-civs overview-actions");
+        for (const action of subject.actions) {
+          const item = el("li");
+          const button = el("button", "overview-civ overview-action");
+          button.type = "button";
+          button.append(el("strong", undefined, action.label), el("span", undefined, action.text));
+          button.addEventListener("click", action.run);
+          item.append(button);
+          items.append(item);
+        }
+        extra.append(el("h3", "event-more", t("home.explore")), items);
         break;
       }
     }
