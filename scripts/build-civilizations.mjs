@@ -20,6 +20,16 @@ const FAMILIES = {
     "Eastern Chagatai Khanate",
     "Mongol Khanate",
   ],
+  // Magadha and the dynasties that grew it into an empire, as traced in
+  // scripts/border-overrides/magadha.geojson.
+  magadha: [
+    "Janapada of Magadha",
+    "Magadha - Haryanka dynasty",
+    "Magadha - Shaishunaga dynasty",
+    "Nanda Empire",
+    "Maurya Empire",
+    "Shunga Empire",
+  ],
 };
 // Silhouettes are drawn in a 100 × 100 box; this is the simplification
 // tolerance in box units.
