@@ -1,10 +1,12 @@
 // Builds the globe's border data from Cliopatria (CC BY 4.0).
 // Input:  data-raw/cliopatria.geojson, downloaded from the Cliopatria repository
-//         on the first run
+//         on the first run, and scripts/border-overrides/*.geojson, hand-traced
+//         borders that replace Cliopatria's for the realms and years they cover
 // Output: public/data/index.json plus public/data/borders-*.json, one file per
 //         time window, so the app only downloads the years it shows.
 import { execFileSync } from "node:child_process";
 import { existsSync, mkdirSync, readdirSync, readFileSync, renameSync, rmSync, writeFileSync } from "node:fs";
+import polygonClipping from "polygon-clipping";
 import polylabel from "polylabel";
 
 // Polities shown as the featured subject; the rest of the world is context.
@@ -29,6 +31,7 @@ const MIN_WINDOW_YEARS = 25;
 const KM2_PER_SQ_DEGREE = 12_364;
 
 const SOURCE = "data-raw/cliopatria.geojson";
+const OVERRIDES = "scripts/border-overrides";
 const SOURCE_ZIP = "https://github.com/Seshat-Global-History-Databank/cliopatria/raw/main/cliopatria.geojson.zip";
 
 // Downloads and unzips the Cliopatria borders unless they are already here.
@@ -143,16 +146,12 @@ function encodeRing(ring) {
   return out;
 }
 
-await ensureSource();
-const raw = JSON.parse(readFileSync(SOURCE, "utf8"));
-const shapes = [];
-const realms = {};
-for (const [id, f] of raw.features.entries()) {
-  const p = f.properties;
-  if (p.Type !== "POLITY" || !f.geometry) continue;
-  const polygons = f.geometry.type === "Polygon" ? [f.geometry.coordinates] : f.geometry.coordinates;
+// One Cliopatria-style feature as a display shape, or null when nothing is left
+// of it after dropping specks.
+function toShape(id, p, geometry) {
+  const polygons = geometry.type === "Polygon" ? [geometry.coordinates] : geometry.coordinates;
   const outers = polygons.map((poly) => poly[0]).filter((ring) => ring.length >= 4);
-  if (!outers.length) continue;
+  if (!outers.length) return null;
   const areas = outers.map(ringArea);
   const largest = areas.indexOf(Math.max(...areas));
   const rings = outers
@@ -161,24 +160,124 @@ for (const [id, f] of raw.features.entries()) {
     .filter((ring) => ring.length >= 4)
     .map(encodeRing)
     .filter((ring) => ring.length >= 6);
-  if (!rings.length) continue;
-  shapes.push({
+  if (!rings.length) return null;
+  return {
     id,
     name: p.Name,
     from: p.FromYear,
     to: p.ToYear,
     wikipedia: p.Wikipedia || null,
     wikidata: p.Wikidata || null,
-    area: Math.round(p.Area),
+    area: Math.round(p.Area ?? areas.reduce((a, b) => a + b, 0)),
     featured: FEATURED.has(p.Name),
     label: labelPoint(outers[largest]),
     rings,
-  });
-  const span = (realms[p.Name] ??= [p.FromYear, p.ToYear]);
-  span[0] = Math.min(span[0], p.FromYear);
-  span[1] = Math.max(span[1], p.ToYear);
+  };
+}
+
+// Years [from, to] minus the years in `cut`, as zero, one or two ranges.
+function cutYears([from, to], [cutFrom, cutTo]) {
+  if (cutTo < from || cutFrom > to) return [[from, to]];
+  const left = cutFrom > from ? [[from, cutFrom - 1]] : [];
+  const right = cutTo < to ? [[cutTo + 1, to]] : [];
+  return [...left, ...right];
+}
+
+// An encoded ring back to closed [lon, lat] points.
+function decodeRing(encoded) {
+  const out = [];
+  let x = 0;
+  let y = 0;
+  for (let i = 0; i < encoded.length; i += 2) {
+    x += encoded[i];
+    y += encoded[i + 1];
+    out.push([x / 100, y / 100]);
+  }
+  out.push(out[0]);
+  return out;
+}
+
+// A display shape with the area of `geometry` taken out, or null when nothing
+// is left. Holes are not kept: shapes only have outer rings.
+function clipShape(shape, geometry) {
+  const polygons = shape.rings.map((ring) => [decodeRing(ring)]);
+  const cutter = geometry.type === "Polygon" ? [geometry.coordinates] : geometry.coordinates;
+  const outers = polygonClipping.difference(polygons, cutter).map((poly) => poly[0]);
+  if (!outers.length) return null;
+  const areas = outers.map(ringArea);
+  const largest = areas.indexOf(Math.max(...areas));
+  const rings = outers
+    .filter((_, i) => i === largest || areas[i] >= MIN_PART_AREA)
+    .map(encodeRing)
+    .filter((ring) => ring.length >= 6);
+  if (!rings.length) return null;
+  const before = shape.rings.map(decodeRing).map(ringArea).reduce((a, b) => a + b, 0);
+  const after = areas.reduce((a, b) => a + b, 0);
+  return { ...shape, area: Math.round((shape.area * after) / before), label: labelPoint(outers[largest]), rings };
+}
+
+await ensureSource();
+const raw = JSON.parse(readFileSync(SOURCE, "utf8"));
+let shapes = [];
+for (const [id, f] of raw.features.entries()) {
+  if (f.properties.Type !== "POLITY" || !f.geometry) continue;
+  const shape = toShape(id, f.properties, f.geometry);
+  if (shape) shapes.push(shape);
 }
 console.log(`${shapes.length} border shapes from ${raw.features.length} Cliopatria records`);
+
+// Each override feature takes its realm's place for its years: Cliopatria's
+// shapes of that name, and of any realm listed in its Replaces (one it
+// conquered, or the dynasty it overthrew), are cut out of those years; realms
+// listed in its Clips (neighbours it took land from) lose the traced area for
+// those years. Then the traced shape goes in. New shapes get ids after
+// Cliopatria's.
+let nextId = raw.features.length;
+const credits = [];
+for (const file of existsSync(OVERRIDES) ? readdirSync(OVERRIDES).filter((f) => f.endsWith(".geojson")).sort() : []) {
+  const overrides = JSON.parse(readFileSync(`${OVERRIDES}/${file}`, "utf8"));
+  for (const f of overrides.features) {
+    const p = f.properties;
+    const before = shapes.find((s) => s.name === p.Name);
+    const replaced = new Set([p.Name, ...(p.Replaces ?? [])]);
+    shapes = shapes.flatMap((s) =>
+      !replaced.has(s.name)
+        ? [s]
+        : cutYears([s.from, s.to], [p.FromYear, p.ToYear]).map(([from, to], i) => ({
+            ...s,
+            id: i === 0 ? s.id : nextId++,
+            from,
+            to,
+          })),
+    );
+    const clipped = new Set(p.Clips ?? []);
+    shapes = shapes.flatMap((s) => {
+      if (!clipped.has(s.name) || s.to < p.FromYear || s.from > p.ToYear) return [s];
+      const outside = cutYears([s.from, s.to], [p.FromYear, p.ToYear]).map(([from, to], i) => ({
+        ...s,
+        id: i === 0 ? s.id : nextId++,
+        from,
+        to,
+      }));
+      const inside = clipShape(
+        { ...s, id: outside.length ? nextId++ : s.id, from: Math.max(s.from, p.FromYear), to: Math.min(s.to, p.ToYear) },
+        f.geometry,
+      );
+      return inside ? [...outside, inside] : outside;
+    });
+    const shape = toShape(nextId++, { Wikipedia: before?.wikipedia, Wikidata: before?.wikidata, ...p }, f.geometry);
+    if (shape) shapes.push(shape);
+  }
+  if (overrides.credit) credits.push(overrides.credit);
+  console.log(`${overrides.features.length} hand-traced shapes from ${file}`);
+}
+
+const realms = {};
+for (const s of shapes) {
+  const span = (realms[s.name] ??= [s.from, s.to]);
+  span[0] = Math.min(span[0], s.from);
+  span[1] = Math.max(span[1], s.to);
+}
 
 // Cut time into windows of roughly equal size. A shape goes into every window
 // its years overlap, so one window file holds everything visible in its years.
@@ -218,6 +317,7 @@ writeFileSync(
   "public/data/index.json",
   JSON.stringify({
     source: "Cliopatria (Seshat Global History Databank), CC BY 4.0",
+    credits,
     from: first,
     to: last,
     windows,
