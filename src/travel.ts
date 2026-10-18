@@ -103,7 +103,7 @@ interface Arrival {
 }
 
 /** The travel starts here, so the first turning point comes within seconds. */
-const TRAVEL_START = -9650;
+const TRAVEL_START = -9550;
 
 export class Travel {
   active = false;
@@ -127,6 +127,8 @@ export class Travel {
   private resumeTimer = 0;
   /** Invites the reader to press Play again after a drag stopped time. */
   private toast: HTMLElement;
+  /** How visible each badge is now, so faint or hidden ones can't be touched. */
+  private badgeOpacity = new Map<TravelEvent, number>();
   private frame = 0;
   private last = 0;
   // Camera: the point it looks at (P) eases on a spring after a guide (F)
@@ -213,6 +215,7 @@ export class Travel {
     this.clearCards();
     this.host.setYear(this.year);
     this.host.showRealms([]);
+    this.badgeOpacity = new Map();
     this.host.showBadges(new Map());
   }
 
@@ -258,6 +261,7 @@ export class Travel {
 
   /** The pointer is over a badge on the globe, or left it (null). */
   hoverOnBadge(e: TravelEvent | null) {
+    if (e && !this.touchable(e)) e = null;
     if (e === this.hoverBadge) return;
     this.hoverBadge = e;
     this.hoverChanged();
@@ -265,8 +269,20 @@ export class Travel {
 
   /** A tap or click on a badge holds its card open until "Close". */
   pin(e: TravelEvent) {
+    if (!this.touchable(e)) return;
     this.pinned = e;
     this.hoverChanged();
+  }
+
+  /**
+   * A badge only stops time when it can be seen: faded in, and on this side of
+   * the globe. Picking goes by screen position, so a badge behind the globe or
+   * still invisible could otherwise catch the pointer.
+   */
+  private touchable(e: TravelEvent): boolean {
+    if ((this.badgeOpacity.get(e) ?? 0) < 0.3) return false;
+    this.occluder.cameraPosition = this.host.scene.camera.positionWC;
+    return this.occluder.isPointVisible(Cartesian3.fromDegrees(e.lonLat[0], e.lonLat[1], BADGE_HEIGHT));
   }
 
   /** Lets time run again after a card was held open. */
@@ -406,6 +422,7 @@ export class Travel {
     }
     const focus = this.arrivals[0]?.e;
     for (const [e, card] of this.cards) card.classList.toggle("label", e !== focus && e !== this.opened);
+    this.badgeOpacity = badges;
     this.host.showBadges(badges);
     this.host.showRealms(onScreen);
   }

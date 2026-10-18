@@ -2882,6 +2882,7 @@ a {
 
 .home .back,
 .home #view-focus,
+.home .switch[for="context-toggle"],
 .traveling .explore-menu {
   display: none;
 }

@@ -87,7 +87,7 @@ export class MapView {
   private badgeImages = new Map<EventKind, HTMLImageElement>();
   /** Badges drawn last frame, for hit-testing. */
   private drawnBadges: { e: HistoryEvent; x: number; y: number }[] = [];
-  showContext = true;
+  showContext = false;
   /** A realm's name as shown on its label. */
   nameOf = (realm: string) => realm;
 

@@ -95,7 +95,7 @@ export class PolityLayer {
   private hovered: string | null = null;
   /** Today's border of the country being looked at. */
   private outline: Primitive | null = null;
-  showContext = true;
+  showContext = false;
   /**
    * Whether every highlighted realm is named; when false (today's map, where
    * every country is coloured), only the large ones are, like greyed realms.
