@@ -23,7 +23,7 @@ in a timeline that runs from 10,000 BCE to today.
 - Picking a card opens the globe on that civilization at its largest extent.
   It is coloured together with its related realms: the predecessors and
   successors Wikidata records, plus hand-picked families such as the Mongol
-  khanates (`FAMILIES` in `scripts/build-civilizations.mjs`). Every other realm
+  khanates or the dynasties of Magadha (`FAMILIES` in `scripts/build-civilizations.mjs`). Every other realm
   is grey; hovering one names it, clicking it makes it the highlighted one.
 - Two sections at the top of the landing page, each with a card for each of
   the 183 present-day countries in the data (A to Z by default; search, or sort
@@ -104,7 +104,9 @@ in a timeline that runs from 10,000 BCE to today.
   from our own files. No Cesium ion account or token.
 - 13,408 time-stamped border shapes from Cliopatria, 3400 BCE to 2024 CE, split
   into time windows that download only when the year needs them. Consecutive
-  borders crossfade during playback.
+  borders crossfade during playback. Where Cliopatria's borders are wrong or too
+  coarse, hand-traced ones replace them (see "Border overrides" below); so far
+  Magadha and its successors, 600 to 171 BCE, in 12 steps.
 - A zoomable timeline from 10,000 BCE to the current year: drag to pan, scroll
   or pinch to zoom, tap to jump, drag the playhead to scrub. "Current
   Civilization Era" and "All history" reset the view.
@@ -169,6 +171,27 @@ The border data in `public/data/` is already committed, so the app runs without
 rebuilding it. `npm run data` rebuilds it: the first run downloads the
 Cliopatria borders (about 46 MB, unzipped with `unzip`) into `data-raw/`.
 `npm run civs` rebuilds only the civilization list from the border files.
+
+### Border overrides
+
+Each `scripts/border-overrides/*.geojson` file holds hand-traced borders that
+`npm run data` puts in place of Cliopatria's. Each feature has these properties:
+
+- `Name`, `FromYear`, `ToYear`: the realm, under its Cliopatria name, and the
+  years the shape applies to (negative for BCE). Cliopatria's shapes of that
+  name are cut out of those years.
+- `Replaces` (optional): other realms whose shapes are cut out of those years
+  as well, such as a kingdom it conquered or the dynasty it overthrew.
+- `Clips` (optional): neighbours that only lose the traced area for those
+  years.
+
+A top-level `credit` names the source map, its author and licence; it is
+copied into `index.json`, and should also go in the Sources panel
+(`sources.list` in `src/locales/`, and `index.html`). `magadha.geojson` was
+traced from the 11 frames of the animated map
+[Magadha Expansion](https://commons.wikimedia.org/wiki/File:Magadha_Expansion_1.gif)
+(CC BY-SA 4.0), georeferenced with 14 of the cities it marks; each feature's
+`Frame` says which frame it comes from.
 The list (`civilizations.json`) carries no outlines: the landing page's card
 outlines are in `civilization-shapes.json`, downloaded only once the landing
 page shows, so a link straight to the globe skips them.
@@ -276,7 +299,8 @@ locally, run `npm run build` then `npx wrangler dev --var GITHUB_TOKEN:<token>`.
 
 | Path | What it is |
 | --- | --- |
-| `scripts/build-data.mjs` | Simplifies Cliopatria borders, picks label points, splits them into time windows |
+| `scripts/build-data.mjs` | Simplifies Cliopatria borders, puts the border overrides in, picks label points, splits them into time windows |
+| `scripts/border-overrides/` | Hand-traced borders that replace Cliopatria's where it is wrong |
 | `scripts/build-civilizations.mjs` | One entry per civilization: dates, largest extent, outline, family. Years corrected by hand where the borders don't span the realm's history are in `scripts/date-fixes.json` |
 | `src/landing.ts` | The landing page of civilization cards, with multi-select |
 | `scripts/build-countries.mjs` | Countries of today and the civilizations that led to each, from the borders |
@@ -310,6 +334,11 @@ locally, run `npm run build` then `npx wrangler dev --var GITHUB_TOKEN:<token>`.
 
 - Borders: Cliopatria, Seshat Global History Databank, CC BY 4.0. Attribution is
   shown in the Sources panel.
+- Borders of Magadha and its successors, 600 to 171 BCE: traced from
+  "Magadha Expansion" by Avantiputra7 on Wikimedia Commons (after Schwartzberg,
+  A Historical Atlas of South Asia, 1992), CC BY-SA 4.0. The traced borders
+  (`scripts/border-overrides/magadha.geojson` and the shapes built from it) are
+  shared under the same licence.
 - Key figures and links between realms: Wikidata, CC0.
 - Card pictures: Wikimedia Commons, each under its own free licence; the card
   names the author and licence and links to the file page.

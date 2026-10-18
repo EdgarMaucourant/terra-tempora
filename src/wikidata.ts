@@ -32,7 +32,11 @@ export interface RealmFacts {
   picture: Picture | null;
   /** One or two notable people: founders first, then heads of state, then other significant people. */
   figures: string[];
-  /** Wikidata items this realm replaced or followed. */
+  /**
+   * Wikidata items this realm replaced or followed. Links are read from both
+   * ends, since Wikidata often records them on one side only: an item that
+   * says it replaced this realm counts as after it, and the other way round.
+   */
   before: string[];
   /** Wikidata items that replaced or followed this realm. */
   after: string[];
@@ -40,7 +44,7 @@ export interface RealmFacts {
 
 const SPARQL = "https://query.wikidata.org/sparql";
 const COMMONS = "https://commons.wikimedia.org/w/api.php";
-const CACHE = "terra-tempora:facts:v2:";
+const CACHE = "terra-tempora:facts:v3:";
 const BATCH = 30;
 const THUMB_WIDTH = 480;
 
@@ -97,7 +101,9 @@ function query(ids: string[]): string {
   ${people("P6", "head")} UNION
   ${people("P3342", "notable")} UNION
   { ?item wdt:P1365|wdt:P155 ?v. BIND("before" AS ?kind) } UNION
-  { ?item wdt:P1366|wdt:P156 ?v. BIND("after" AS ?kind) }
+  { ?item wdt:P1366|wdt:P156 ?v. BIND("after" AS ?kind) } UNION
+  { ?v wdt:P1366|wdt:P156 ?item. BIND("before" AS ?kind) } UNION
+  { ?v wdt:P1365|wdt:P155 ?item. BIND("after" AS ?kind) }
   OPTIONAL { ?v wikibase:sitelinks ?links }
   OPTIONAL { ?v rdfs:label ?vLabel. FILTER(LANG(?vLabel) = "en") }
 }`;

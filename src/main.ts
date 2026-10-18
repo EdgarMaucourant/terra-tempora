@@ -834,6 +834,21 @@ function loadNeighbours(list: Civilization[]) {
 
 const toLink = (c: Civilization): LaneLink => ({ id: c.id, name: c.name, from: c.from, to: c.to });
 
+/**
+ * The civilizations on one side of this one: those it names, plus any already
+ * looked up that name it on the other side, so a link always works both ways.
+ */
+function neighboursOf(c: Civilization, side: "before" | "after"): Civilization[] | undefined {
+  const own = neighbours.get(c.id);
+  if (!own || !civs) return own?.[side];
+  const other = side === "before" ? "after" : "before";
+  const back = [...neighbours]
+    .filter(([id, n]) => id !== c.id && n[other].includes(c))
+    .map(([id]) => civs!.get(id))
+    .filter((o): o is Civilization => !!o);
+  return [...new Set([...own[side], ...back])].sort((a, b) => a.from - b.from);
+}
+
 function showHighlight() {
   if (!active) return;
   colors = highlightColors(
@@ -850,8 +865,8 @@ function showHighlight() {
     name: c.name,
     from: c.from,
     to: c.to,
-    before: neighbours.get(c.id)?.before.map(toLink),
-    after: neighbours.get(c.id)?.after.map(toLink),
+    before: neighboursOf(c, "before")?.map(toLink),
+    after: neighboursOf(c, "after")?.map(toLink),
   }));
   const label = country
     ? countryView === "territory"
