@@ -19,7 +19,7 @@ export type Subject =
   | { kind: "several"; civs: Civilization[]; title: string; sub: string }
   | { kind: "country"; country: Country; view: CountryView; civs: Civilization[]; sub: string; articles: string[] }
   | { kind: "travel"; sub: string }
-  | { kind: "home"; sub: string; actions: { label: string; text: string; run: () => void }[] };
+  | { kind: "home"; actions: { label: string; text: string; run: () => void }[] };
 
 function el<K extends keyof HTMLElementTagNameMap>(tag: K, className?: string, text?: string): HTMLElementTagNameMap[K] {
   const node = document.createElement(tag);
@@ -146,7 +146,7 @@ export class Overview {
       case "home": {
         eyebrow.textContent = t("overview.home");
         title.textContent = t("home.title");
-        meta.textContent = subject.sub;
+        meta.hidden = true;
         lede.textContent = t("landing.lede");
         lede.hidden = false;
         const items = el("ul", "overview-civs overview-actions");

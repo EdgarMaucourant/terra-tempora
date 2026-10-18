@@ -64,7 +64,6 @@ try {
 await initLanguage();
 translatePage();
 document.querySelector(".toolbar")!.append(languageMenu("language toolbar-language"));
-document.querySelector(".landing-head")!.prepend(languageMenu("language landing-language"));
 
 const yearNumberEl = $("year-number");
 const yearEraEl = $("year-era");
@@ -104,11 +103,13 @@ const narrow = window.matchMedia("(max-width: 640px)").matches;
 // Pole to the right as on a classroom globe, and lets it turn only about that
 // axis; "Free movement" stands it upright and lets it turn any way. The camera
 // looks straight down, so its heading turns the picture about the screen's centre.
+// Free movement is the default; a reader's choice is remembered. (The key was
+// renamed when free movement became the default, so earlier choices reset.)
 const AXIAL_TILT = 23.5;
-const TILT_KEY = "terra-tempora:tilted";
+const TILT_KEY = "terra-tempora:axis";
 let tilted = (() => {
   try {
-    return localStorage.getItem(TILT_KEY) === "1";
+    return localStorage.getItem(TILT_KEY) === "natural";
   } catch {
     return false;
   }
@@ -124,6 +125,63 @@ widget.camera.setView({
 });
 
 const axisLock = new AxisLock(scene, widget.camera, orientation);
+
+// Opening on today's world, the globe turns from the far side of the Earth to
+// the visitor's part of it. Where they are comes from Cloudflare's reading of
+// their connection (/api/where, no permission asked), else from their time
+// zone's offset, which gives a longitude.
+async function visitorPlace(): Promise<[number, number]> {
+  try {
+    const response = await fetch("/api/where", { cache: "no-store", signal: AbortSignal.timeout(3000) });
+    const body = response.ok ? ((await response.json()) as { lonLat?: [number, number] | null }) : null;
+    if (body?.lonLat?.every(Number.isFinite)) return body.lonLat;
+  } catch {
+    // No Worker in front (local development) or no answer in time.
+  }
+  return [-new Date().getTimezoneOffset() / 4, 30];
+}
+
+let spinFrame = 0;
+/** The camera over a longitude, at a latitude that keeps the poles and the far south out of the middle. */
+function spinView(lon: number, lat: number) {
+  widget.camera.setView({
+    destination: Cartesian3.fromDegrees(lon, Math.min(55, Math.max(-35, lat)) - (narrow ? 6 : 0), narrow ? 22_000_000 : 14_500_000),
+    orientation: orientation(),
+  });
+  scene.requestRender();
+}
+
+/** Turns the globe half a turn, from the opposite side of the world to this place. */
+function spinTo([lon, lat]: [number, number]) {
+  const canvas = scene.canvas;
+  const stop = () => {
+    cancelAnimationFrame(spinFrame);
+    spinFrame = 0;
+    for (const type of ["pointerdown", "wheel", "touchstart"]) canvas.removeEventListener(type, stop);
+  };
+  for (const type of ["pointerdown", "wheel", "touchstart"]) canvas.addEventListener(type, stop, { passive: true });
+  let last = 0;
+  let elapsed = 0;
+  const duration = 6000;
+  const step = (now: number) => {
+    // A slow frame (shapes being built) doesn't skip part of the turn.
+    elapsed += last ? Math.min(100, now - last) : 0;
+    last = now;
+    const k = Math.min(1, elapsed / duration);
+    // Slow to start and to settle.
+    const eased = k < 0.5 ? 4 * k ** 3 : 1 - (-2 * k + 2) ** 3 / 2;
+    spinView(lon - 180 + 180 * eased, lat);
+    if (k < 1) spinFrame = requestAnimationFrame(step);
+    else stop();
+  };
+  spinFrame = requestAnimationFrame(step);
+}
+
+// Asked at once, so the globe already faces the far side while the borders load.
+const placeAsked = location.hash ? null : visitorPlace();
+void placeAsked?.then(([lon, lat]) => {
+  if (!spinFrame && !location.hash) spinView(lon - 180, lat);
+});
 
 const layer = new PolityLayer(scene);
 const eventLayer = new EventLayer(scene);
@@ -708,7 +766,7 @@ function focusCiv(c: Civilization) {
 function setTilted(on: boolean, animate = true) {
   tilted = on;
   try {
-    localStorage.setItem(TILT_KEY, on ? "1" : "0");
+    localStorage.setItem(TILT_KEY, on ? "natural" : "free");
   } catch {
     // Storage blocked; the choice lasts until the page reloads.
   }
@@ -731,8 +789,14 @@ function setTilted(on: boolean, animate = true) {
   });
 }
 
-$("axis-natural").addEventListener("click", () => tilted || setTilted(true));
-$("axis-free").addEventListener("click", () => tilted && setTilted(false));
+$("axis-natural").addEventListener("click", () => {
+  openViewMenu(null);
+  if (!tilted) setTilted(true);
+});
+$("axis-free").addEventListener("click", () => {
+  openViewMenu(null);
+  if (tilted) setTilted(false);
+});
 setTilted(tilted, false);
 
 // Globe or flat map. The map opens on the place the globe was looking at, and
@@ -762,6 +826,7 @@ projectionSelect.addEventListener("change", () => {
   const { lon, lat, zoom } = map.centre();
   map.setProjection(projectionSelect.value);
   store(PROJECTION_KEY, projectionSelect.value);
+  openViewMenu(null);
   // Stay on the same place, at a comparable zoom.
   if (zoom > 1) map.focus(lon, lat, (14_000 / zoom) ** 2);
   else map.focus(lon, 0, null);
@@ -784,8 +849,7 @@ function setMapMode(on: boolean, sync = true) {
   hideTooltip();
   $("view-globe").setAttribute("aria-pressed", String(!on));
   $("view-map").setAttribute("aria-pressed", String(on));
-  $("projection-field").hidden = !on;
-  $("axis-switch").hidden = on;
+  openViewMenu(null);
   $("globe").hidden = on;
   store(MAP_KEY, on ? "map" : "globe");
   if (on) {
@@ -805,8 +869,32 @@ function setMapMode(on: boolean, sync = true) {
   }
 }
 
-$("view-globe").addEventListener("click", () => setMapMode(false));
-$("view-map").addEventListener("click", () => setMapMode(true));
+// Each view's settings sit in a submenu beside its button: the axis for the
+// globe, the projection for the map. A click on the other view switches to
+// it; a click on the current one opens or closes its submenu.
+const viewMenus = {
+  globe: { button: $("view-globe"), menu: $("axis-switch") },
+  map: { button: $("view-map"), menu: $("projection-field") },
+};
+function openViewMenu(which: keyof typeof viewMenus | null) {
+  for (const [key, { button, menu }] of Object.entries(viewMenus)) {
+    menu.hidden = key !== which;
+    button.setAttribute("aria-expanded", String(key === which));
+  }
+}
+for (const [key, { button, menu }] of Object.entries(viewMenus) as [keyof typeof viewMenus, (typeof viewMenus)["globe"]][]) {
+  button.addEventListener("click", () => {
+    const current = (key === "map") === map.active;
+    if (!current) return setMapMode(key === "map");
+    openViewMenu(menu.hidden ? key : null);
+  });
+}
+document.addEventListener("click", (e) => {
+  if (!(e.target as Element).closest(".view-item")) openViewMenu(null);
+});
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") openViewMenu(null);
+});
 
 /** Civilizations Wikidata records before and after each one, by id. */
 const neighbours = new Map<string, { before: Civilization[]; after: Civilization[] }>();
@@ -1213,9 +1301,9 @@ function countryOf(c: Civilization): Country | undefined {
 }
 
 /** Colours every realm standing in this year, neighbours apart where it can. */
-function colourWorld(at: number) {
-  if (!data) return;
-  data
+function colourWorld(at: number): Promise<void> {
+  if (!data) return Promise.resolve();
+  return data
     .load(at, at)
     .then((shapes) => {
       if (!home) return;
@@ -1280,12 +1368,11 @@ function showHome() {
   timeline?.setView(today - 400, NOW + 20);
   setYear(today);
   timeline?.setYear(year);
-  colourWorld(today);
+  const coloured = colourWorld(today);
   $("civ-title").textContent = t("page.title");
-  $("civ-sub").textContent = t("home.sub", { year: formatYear(today) });
+  $("civ-sub").textContent = t("landing.lede");
   overview.render({
     kind: "home",
-    sub: $("civ-sub").textContent ?? "",
     actions: [
       { label: t("landing.civilizations"), text: t("home.civsText"), run: () => openExplore("civs") },
       { label: t("landing.countries"), text: t("home.countriesText"), run: () => openExplore("countries") },
@@ -1294,8 +1381,20 @@ function showHome() {
     ],
   });
   document.title = t("page.title");
-  // Coming back from a view, pull out to see the whole world again.
-  if (homeVisited && !map.active) {
+  // The first time, the globe turns to the visitor's part of the world once
+  // the borders are in; coming back from a view, it pulls out to see the
+  // whole world again.
+  if (!homeVisited && placeAsked && !map.active) {
+    void Promise.all([placeAsked, coloured]).then(([place]) => {
+      // Wait until today's shapes are drawn, so the turn runs smoothly.
+      const ready = () => {
+        if (!home || !landingEl.hidden) return;
+        if (drawing) requestAnimationFrame(ready);
+        else spinTo(place);
+      };
+      requestAnimationFrame(ready);
+    });
+  } else if (homeVisited && !map.active) {
     const { lon, lat } = globeCentre();
     widget.camera.flyTo({
       destination: Cartesian3.fromDegrees(lon, lat, narrow ? 22_000_000 : 14_500_000),
@@ -1315,7 +1414,16 @@ function leaveHome() {
 
 type ExploreSection = "civs" | "countries" | "nations" | "travel";
 
-/** Opens the explore page (the former landing page) on one of its sections. */
+const EXPLORE_TITLES: Record<Exclude<ExploreSection, "travel">, MessageKey> = {
+  civs: "landing.civilizations",
+  countries: "landing.countries",
+  nations: "landing.nations",
+};
+
+/**
+ * Opens one list (civilizations, countries or nations) in a popup over the
+ * globe, with its search, sort and filters; the history travel starts at once.
+ */
 function openExplore(section: ExploreSection) {
   if (section === "travel") {
     go({ travel: true }, true);
@@ -1323,16 +1431,17 @@ function openExplore(section: ExploreSection) {
   }
   if (playing) setPlaying(false);
   hideTooltip();
+  for (const part of landingEl.querySelectorAll<HTMLElement>(".explore-section")) {
+    part.hidden = part.dataset.section !== section;
+  }
+  $("landing-title").textContent = t(EXPLORE_TITLES[section]);
   landingEl.hidden = false;
   landing?.show();
-  const target =
-    section === "civs"
-      ? landingEl.querySelector<HTMLElement>(".landing-civs")
-      : landingEl.querySelector<HTMLElement>(`.countries[data-kind="${section === "countries" ? "territory" : "nationality"}"]`);
-  landingEl.focus({ preventScroll: true });
-  landingEl.scrollTop = target
-    ? Math.max(0, target.getBoundingClientRect().top - landingEl.getBoundingClientRect().top + landingEl.scrollTop - 70)
-    : 0;
+  landingEl.querySelector(".landing-scroll")!.scrollTop = 0;
+  // Ready to type a name, except on phones, where the keyboard would cover the list.
+  const search = landingEl.querySelector<HTMLInputElement>(`.explore-section[data-section="${section}"] input[type="search"]`);
+  if (search && !narrow) search.focus({ preventScroll: true });
+  else landingEl.querySelector<HTMLElement>(".landing-dialog")!.focus({ preventScroll: true });
 }
 
 function closeExplore() {
@@ -1342,8 +1451,31 @@ function closeExplore() {
 }
 
 $("landing-close").addEventListener("click", closeExplore);
+// A click on the dimmed globe around the popup closes it.
+landingEl.addEventListener("click", (e) => {
+  if (e.target === landingEl) closeExplore();
+});
+// The menu by the title: the explore page's sections and the history travel.
+const exploreToggle = $<HTMLButtonElement>("explore-toggle");
+const exploreList = $("explore-list");
+function setMenu(open: boolean) {
+  exploreList.hidden = !open;
+  exploreToggle.setAttribute("aria-expanded", String(open));
+}
+exploreToggle.addEventListener("click", () => setMenu(exploreToggle.getAttribute("aria-expanded") !== "true"));
+document.addEventListener("click", (e) => {
+  if (!exploreList.hidden && !(e.target as Element).closest(".explore-menu")) setMenu(false);
+});
+exploreList.addEventListener("keydown", (e) => {
+  if (e.key !== "Escape") return;
+  setMenu(false);
+  exploreToggle.focus();
+});
 for (const button of document.querySelectorAll<HTMLButtonElement>("[data-explore]")) {
-  button.addEventListener("click", () => openExplore(button.dataset.explore as ExploreSection));
+  button.addEventListener("click", () => {
+    setMenu(false);
+    openExplore(button.dataset.explore as ExploreSection);
+  });
 }
 
 // The history travel: time plays on its own through the turning points of
@@ -1578,10 +1710,7 @@ Promise.all([
       if (!list.some((c) => year >= c.from && year <= c.to)) setYearEverywhere(list[0].peakYear);
     });
     $("view-all").addEventListener("click", () => line.setView(FIRST_YEAR, NOW));
-    $("travel-start").addEventListener("click", () => {
-      go({ travel: true }, true);
-      startTravel();
-    });
+
     $("zoom-in").addEventListener("click", () => line.zoom(0.5));
     $("zoom-out").addEventListener("click", () => line.zoom(2));
     if (stored(MAP_KEY) === "map") setMapMode(true, false);

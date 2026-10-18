@@ -19,29 +19,45 @@
 
       <header class="masthead">
         <a id="back" class="back" href="#" data-i18n="masthead.back">← Today’s world</a>
-        <h1 id="civ-title" data-i18n="page.title">Terra Tempora</h1>
+        <div class="title-row">
+          <div class="explore-menu">
+            <button id="explore-toggle" class="burger" type="button" aria-expanded="false" aria-controls="explore-list" aria-label="Menu" data-i18n-label="home.menu">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+            </button>
+            <ul id="explore-list" class="explore-list" hidden>
+              <li><button type="button" data-explore="civs" data-i18n="landing.civilizations">Civilizations</button></li>
+              <li><button type="button" data-explore="countries" data-i18n="landing.countries">Countries</button></li>
+              <li><button type="button" data-explore="nations" data-i18n="landing.nations">Nations</button></li>
+              <li><button type="button" data-explore="travel" data-i18n="travel.title">History travel</button></li>
+            </ul>
+          </div>
+          <h1 id="civ-title" data-i18n="page.title">Terra Tempora</h1>
+        </div>
         <p id="civ-sub" class="sub"></p>
-        <nav class="explore-bar" aria-label="Explore" data-i18n-label="home.explore">
-          <button type="button" class="chip" data-explore="civs" data-i18n="landing.civilizations">Civilizations</button>
-          <button type="button" class="chip" data-explore="countries" data-i18n="landing.countries">Countries</button>
-          <button type="button" class="chip" data-explore="nations" data-i18n="landing.nations">Nations</button>
-          <button type="button" class="chip" data-explore="travel" data-i18n="travel.title">History travel</button>
-        </nav>
       </header>
 
       <div class="globe-tools">
         <div class="view-switch view-mode" role="group" aria-label="View" data-i18n-label="view.label">
-          <button id="view-globe" type="button" aria-pressed="true" data-i18n="view.globe">Globe</button>
-          <button id="view-map" type="button" aria-pressed="false" data-i18n="view.map">Map</button>
+          <div class="view-item">
+            <button id="view-globe" type="button" aria-pressed="true" aria-expanded="false" aria-controls="axis-switch" title="Globe; click again for its settings" data-i18n-title="view.globeTitle">
+              <span data-i18n="view.globe">Globe</span><span class="view-more" aria-hidden="true">›</span>
+            </button>
+            <div class="view-switch axis-switch view-sub" role="group" id="axis-switch" aria-label="Globe axis" data-i18n-label="axis.label" hidden>
+              <button id="axis-natural" type="button" aria-pressed="false" title="Lean the globe 23.5° on Earth’s axis; dragging spins it on that axis" data-i18n="axis.natural" data-i18n-title="axis.naturalTitle">Natural axis</button>
+              <button id="axis-free" type="button" aria-pressed="true" title="Stand the globe upright and turn it freely" data-i18n="axis.free" data-i18n-title="axis.freeTitle">Free movement</button>
+            </div>
+          </div>
+          <div class="view-item">
+            <button id="view-map" type="button" aria-pressed="false" aria-expanded="false" aria-controls="projection-field" title="Flat map; click again for its projection" data-i18n-title="view.mapTitle">
+              <span data-i18n="view.map">Map</span><span class="view-more" aria-hidden="true">›</span>
+            </button>
+            <label id="projection-field" class="projection view-sub" for="projection" hidden>
+              <span data-i18n="view.projection">Projection</span>
+              <select id="projection"></select>
+            </label>
+          </div>
         </div>
-        <label id="projection-field" class="projection" for="projection" hidden>
-          <span data-i18n="view.projection">Projection</span>
-          <select id="projection"></select>
-        </label>
-        <div class="view-switch axis-switch" role="group" id="axis-switch" aria-label="Globe axis" data-i18n-label="axis.label">
-          <button id="axis-natural" type="button" aria-pressed="false" title="Lean the globe 23.5° on Earth’s axis; dragging spins it on that axis" data-i18n="axis.natural" data-i18n-title="axis.naturalTitle">Natural axis</button>
-          <button id="axis-free" type="button" aria-pressed="true" title="Stand the globe upright and turn it freely" data-i18n="axis.free" data-i18n-title="axis.freeTitle">Free movement</button>
-        </div>
+      </div>
       </div>
 
       <div class="toolbar">
@@ -248,119 +264,106 @@
       </form>
     </div>
 
-    <main id="landing" class="landing" tabindex="-1" hidden>
-      <button id="landing-close" class="ghost landing-close" type="button" aria-label="Close and go back to the globe" data-i18n-label="home.closeLabel">
-        <span data-i18n="home.close">← Back to the globe</span>
-      </button>
-      <header class="landing-head">
-        <p class="eyebrow" data-i18n="landing.eyebrow">Terra Tempora</p>
-        <h1 data-i18n="landing.title">Civilizations on the globe</h1>
-        <p class="lede" data-i18n="landing.lede">
-          Experience 5000 years of world history mapped on Earth, with borders, events and civilizations.
-        </p>
-        <button id="travel-start" class="travel-cta" type="button">
-          <span class="travel-cta-play" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
-          </span>
-          <span class="travel-cta-text">
-            <strong data-i18n="travel.title">History travel</strong>
-            <span data-i18n="landing.travelText">Fly through 12,000 years of world history on the globe, from the first temples to today, stopping at
-              each turning point on every continent.</span>
-          </span>
-        </button>
-        <h2 class="section-title landing-civs" data-i18n="landing.civilizations">Civilizations</h2>
-        <div class="filters">
-          <label class="search">
-            <span class="visually-hidden" data-i18n="common.search">Search</span>
-            <input id="civ-search" type="search" autocomplete="off" placeholder="Search civilizations" />
-          </label>
-          <label class="sort">
-            <span class="visually-hidden" data-i18n="landing.sort">Sort</span>
-            <select id="civ-sort">
-              <option value="oldest" selected data-i18n="sort.oldest">Oldest first</option>
-              <option value="area" data-i18n="sort.largest">Largest first</option>
-              <option value="newest" data-i18n="sort.newest">Most recent first</option>
-              <option value="name" data-i18n="sort.name">A to Z</option>
-            </select>
-          </label>
-          <button id="multi-toggle" class="multi-toggle" type="button" aria-pressed="false" data-i18n="landing.selectSeveral">Select several</button>
+    <div id="landing" class="landing" hidden>
+      <main class="landing-dialog" role="dialog" aria-modal="true" aria-labelledby="landing-title" tabindex="-1">
+        <header class="dialog-bar">
+          <h2 id="landing-title" class="dialog-title"></h2>
+          <button id="landing-close" class="icon-button" type="button" aria-label="Close and go back to the globe" data-i18n-label="home.closeLabel">×</button>
+        </header>
+        <div class="landing-scroll">
+          <section class="explore-section" data-section="civs">
+            <div class="landing-head">
+              <div class="filters">
+                <label class="search">
+                  <span class="visually-hidden" data-i18n="common.search">Search</span>
+                  <input id="civ-search" type="search" autocomplete="off" placeholder="Search civilizations" />
+                </label>
+                <label class="sort">
+                  <span class="visually-hidden" data-i18n="landing.sort">Sort</span>
+                  <select id="civ-sort">
+                    <option value="oldest" selected data-i18n="sort.oldest">Oldest first</option>
+                    <option value="area" data-i18n="sort.largest">Largest first</option>
+                    <option value="newest" data-i18n="sort.newest">Most recent first</option>
+                    <option value="name" data-i18n="sort.name">A to Z</option>
+                  </select>
+                </label>
+                <button id="multi-toggle" class="multi-toggle" type="button" aria-pressed="false" data-i18n="landing.selectSeveral">Select several</button>
+              </div>
+              <div id="era-filter" class="era-filter" role="group" aria-label="Era" data-i18n-label="landing.era"></div>
+              <p id="civ-count" class="count" aria-live="polite"></p>
+            </div>
+            <div id="civ-grid" class="civ-grid"></div>
+            <div id="multi-bar" class="multi-bar" role="region" aria-label="Selected civilizations" data-i18n-label="landing.selectedRegion" hidden>
+              <p id="multi-count" class="multi-count" aria-live="polite"></p>
+              <div class="multi-actions">
+                <button id="multi-clear" class="ghost" type="button" data-i18n="landing.clear">Clear</button>
+                <button id="multi-cancel" class="ghost" type="button" data-i18n="common.cancel">Cancel</button>
+                <button id="multi-open" class="primary" type="button" disabled data-i18n="landing.showOnGlobe">Show on the globe</button>
+              </div>
+            </div>
+          </section>
+          <section class="countries explore-section" data-section="countries" data-kind="territory">
+            <div class="section-head">
+              <div>
+                <p class="section-sub" data-i18n="landing.countriesSub">Today&rsquo;s countries, with every civilization whose borders ever crossed them.</p>
+              </div>
+              <div class="section-tools">
+                <label class="search country-search">
+                  <span class="visually-hidden" data-i18n="landing.searchCountries">Search countries</span>
+                  <input type="search" autocomplete="off" placeholder="Search countries" data-i18n-placeholder="landing.searchCountries" />
+                </label>
+                <label class="sort">
+                  <span class="visually-hidden" data-i18n="landing.sortCountries">Sort countries</span>
+                  <select>
+                    <option value="name" selected data-i18n="sort.name">A to Z</option>
+                    <option value="area" data-i18n="sort.largest">Largest first</option>
+                    <option value="oldest" data-i18n="sort.oldest">Oldest first</option>
+                    <option value="most" data-i18n="sort.most">Most civilizations</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+            <div class="country-grid"></div>
+          </section>
+          <section class="countries explore-section" data-section="nations" data-kind="nationality">
+            <div class="section-head">
+              <div>
+                <p class="section-sub" data-i18n="landing.nationsSub">Every civilization that led to a nation of today, wherever it stood.</p>
+              </div>
+              <div class="section-tools">
+                <label class="search country-search">
+                  <span class="visually-hidden" data-i18n="landing.searchNations">Search nations</span>
+                  <input type="search" autocomplete="off" placeholder="Search nations" data-i18n-placeholder="landing.searchNations" />
+                </label>
+                <label class="sort">
+                  <span class="visually-hidden" data-i18n="landing.sortNations">Sort nations</span>
+                  <select>
+                    <option value="name" selected data-i18n="sort.name">A to Z</option>
+                    <option value="area" data-i18n="sort.largest">Largest first</option>
+                    <option value="oldest" data-i18n="sort.oldest">Oldest first</option>
+                    <option value="most" data-i18n="sort.most">Most civilizations</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+            <div class="country-grid"></div>
+          </section>
+          <footer class="landing-foot" data-i18n-html="landing.footer">
+            Borders:
+            <a href="https://github.com/Seshat-Global-History-Databank/cliopatria" target="_blank" rel="noopener">Cliopatria</a>,
+            Seshat Global History Databank, CC BY 4.0. Key figures and links between realms:
+            <a href="https://www.wikidata.org/" target="_blank" rel="noopener">Wikidata</a> (CC0). Pictures:
+            <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">Wikimedia Commons</a>, freely licensed;
+            each card names the author and licence and links to the file. The small shape in each card's corner is the realm's
+            outline at its largest.
+          </footer>
+          <p class="landing-credit" data-i18n="landing.credit">Proudly prompted with ❤️ in Claude Opus 5.5</p>
+          <p class="landing-report">
+            <button id="landing-report" class="report-link" type="button" data-i18n="feedback.linkApp">Report a problem or suggest an improvement</button>
+          </p>
         </div>
-        <div id="era-filter" class="era-filter" role="group" aria-label="Era" data-i18n-label="landing.era"></div>
-        <p id="civ-count" class="count" aria-live="polite"></p>
-      </header>
-      <div id="civ-grid" class="civ-grid"></div>
-      <div id="multi-bar" class="multi-bar" role="region" aria-label="Selected civilizations" data-i18n-label="landing.selectedRegion" hidden>
-        <p id="multi-count" class="multi-count" aria-live="polite"></p>
-        <div class="multi-actions">
-          <button id="multi-clear" class="ghost" type="button" data-i18n="landing.clear">Clear</button>
-          <button id="multi-cancel" class="ghost" type="button" data-i18n="common.cancel">Cancel</button>
-          <button id="multi-open" class="primary" type="button" disabled data-i18n="landing.showOnGlobe">Show on the globe</button>
-        </div>
-      </div>
-      <div class="nation-row">
-        <section class="countries" data-kind="territory" aria-labelledby="territory-title">
-          <div class="section-head">
-            <div>
-              <h2 id="territory-title" class="section-title" data-i18n="landing.countries">Countries</h2>
-              <p class="section-sub" data-i18n="landing.countriesSub">Today&rsquo;s countries, with every civilization whose borders ever crossed them.</p>
-            </div>
-            <div class="section-tools">
-              <label class="search country-search">
-                <span class="visually-hidden" data-i18n="landing.searchCountries">Search countries</span>
-                <input type="search" autocomplete="off" placeholder="Search countries" data-i18n-placeholder="landing.searchCountries" />
-              </label>
-              <label class="sort">
-                <span class="visually-hidden" data-i18n="landing.sortCountries">Sort countries</span>
-                <select>
-                  <option value="name" selected data-i18n="sort.name">A to Z</option>
-                  <option value="area" data-i18n="sort.largest">Largest first</option>
-                  <option value="oldest" data-i18n="sort.oldest">Oldest first</option>
-                  <option value="most" data-i18n="sort.most">Most civilizations</option>
-                </select>
-              </label>
-            </div>
-          </div>
-          <div class="country-grid"></div>
-        </section>
-        <section class="countries" data-kind="nationality" aria-labelledby="nationality-title">
-          <div class="section-head">
-            <div>
-              <h2 id="nationality-title" class="section-title" data-i18n="landing.nations">Nations</h2>
-              <p class="section-sub" data-i18n="landing.nationsSub">Every civilization that led to a nation of today, wherever it stood.</p>
-            </div>
-            <div class="section-tools">
-              <label class="search country-search">
-                <span class="visually-hidden" data-i18n="landing.searchNations">Search nations</span>
-                <input type="search" autocomplete="off" placeholder="Search nations" data-i18n-placeholder="landing.searchNations" />
-              </label>
-              <label class="sort">
-                <span class="visually-hidden" data-i18n="landing.sortNations">Sort nations</span>
-                <select>
-                  <option value="name" selected data-i18n="sort.name">A to Z</option>
-                  <option value="area" data-i18n="sort.largest">Largest first</option>
-                  <option value="oldest" data-i18n="sort.oldest">Oldest first</option>
-                  <option value="most" data-i18n="sort.most">Most civilizations</option>
-                </select>
-              </label>
-            </div>
-          </div>
-          <div class="country-grid"></div>
-        </section>
-      </div>
-      <footer class="landing-foot" data-i18n-html="landing.footer">
-        Borders:
-        <a href="https://github.com/Seshat-Global-History-Databank/cliopatria" target="_blank" rel="noopener">Cliopatria</a>,
-        Seshat Global History Databank, CC BY 4.0. Key figures and links between realms:
-        <a href="https://www.wikidata.org/" target="_blank" rel="noopener">Wikidata</a> (CC0). Pictures:
-        <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">Wikimedia Commons</a>, freely licensed;
-        each card names the author and licence and links to the file. The small shape in each card's corner is the realm's
-        outline at its largest.
-      </footer>
-      <p class="landing-credit" data-i18n="landing.credit">Proudly prompted with ❤️ in Claude Opus 5.5</p>
-      <p class="landing-report">
-        <button id="landing-report" class="report-link" type="button" data-i18n="feedback.linkApp">Report a problem or suggest an improvement</button>
-      </p>
-    </main>
+      </main>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

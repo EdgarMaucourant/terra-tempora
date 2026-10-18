@@ -1,6 +1,6 @@
 # Terra Tempora
 
-Prototype of Terra Tempora: pick a civilization from a landing page of
+Prototype of Terra Tempora: pick a civilization from a popup of
 cards and see it on a 3D globe, highlighted with the realms related to it, set
 in a timeline that runs from 10,000 BCE to today.
 
@@ -8,24 +8,30 @@ in a timeline that runs from 10,000 BCE to today.
 
 - The globe opens on today's world: every present-day country in its own
   colour, named, with the timeline on the latest year in the border data.
-  Clicking a country opens the civilizations that led to it. Buttons under the
-  title and the side panel open the explore page (the landing page described
-  below) on its Civilizations, Countries or Nations section, or start the
-  history travel; "← Back to the globe" or Escape closes it.
-- A landing page with a card for each of the 1,554 civilizations in the border
+  Once the borders are drawn it turns half a turn, from the far side of the
+  Earth to the visitor's part of it. Where they are comes from Cloudflare's
+  reading of their connection (`GET /api/where` in the Worker), so no
+  permission is asked; without the Worker (local development) the time zone
+  gives the longitude. Clicking a country opens the civilizations that led to
+  it. The menu by the title and the side panel open Civilizations, Countries
+  or Nations, each in its own popup over the globe listing every entry with
+  its search and sort (and era filter and multi-select for civilizations), or
+  start the history travel; ×, Escape or a click outside closes the popup. The globe starts in free movement; the natural axis is a choice
+  that is remembered. It sits in a submenu of the Globe button, and the map's
+  projection in a submenu of the Map button: a click on the current view's
+  button opens its submenu.
+- A Civilizations popup with a card for each of the 1,554 civilizations in the border
   data: a freely licensed picture on top (a photo of a monument, artwork or
   place, else its coat of arms or flag; maps are skipped), then its era, dates
   and one or two key figures, with the realm's outline at its largest drawn
   small in the corner. Search by name, filter by era, sort by age (oldest first
   by default), size or name.
-- Every section on the landing page shows nine cards, then a "Show all …" card
-  that lists the rest (and folds them back).
 - Picking a card opens the globe on that civilization at its largest extent.
   It is coloured together with its related realms: the predecessors and
   successors Wikidata records, plus hand-picked families such as the Mongol
   khanates or the dynasties of Magadha (`FAMILIES` in `scripts/build-civilizations.mjs`). Every other realm
   is grey; hovering one names it, clicking it makes it the highlighted one.
-- Two sections at the top of the landing page, each with a card for each of
+- Two popups, Countries and Nations, each with a card for each of
   the 183 present-day countries in the data (A to Z by default; search, or sort
   by size, oldest civilization or number of civilizations). Both are computed by `npm run countries` (`scripts/build-countries.mjs`).
   - "Countries" is about the land: a card centres the globe (or map) on the
@@ -68,7 +74,7 @@ in a timeline that runs from 10,000 BCE to today.
   reached. To refresh the events, run the "Fetch Wikidata events" workflow
   from the Actions tab (tick "again" to fetch every realm, not only new
   ones), or `node scripts/fetch-events.mjs` where Wikidata is reachable.
-- "History travel", at the top of the landing page (links look like
+- "History travel", in the menu by the title (links look like
   `#travel`), plays world history on its own, starting just before
   Göbekli Tepe (9500 BCE). As each of 141 turning points comes, the globe turns
   smoothly to put it in the middle, with its icon, a one-line summary and the
@@ -81,7 +87,7 @@ in a timeline that runs from 10,000 BCE to today.
   impact on how civilizations developed, from every continent (farming in New
   Guinea and Mexico as well as the Fertile Crescent; Caral, the Olmec and
   Cahokia alongside Rome), and are written in `public/data/travel.json`.
-- "Select several" on the landing page ticks cards instead of opening them;
+- "Select several" in the Civilizations popup ticks cards instead of opening them;
   "Show on the globe" then highlights exactly the ticked civilizations, each in
   its own colour, with a lane each on the timeline. On the globe, "+ Add
   civilizations" in the timeline opens a searchable list: tick civilizations
@@ -156,7 +162,7 @@ in a timeline that runs from 10,000 BCE to today.
   rated differently carries its highest rating.
 - Works on phones: the timeline stacks and the text panel becomes a sheet.
 - Links open a civilization on a year: `#c=mongol-empire&y=1241`, or `y=-500`
-  for 500 BCE. Several civilizations: `#c=roman-empire,han-dynasty&y=100`. An empty link opens the landing page; the older `#y1241` opens
+  for 500 BCE. Several civilizations: `#c=roman-empire,han-dynasty&y=100`. An empty link opens today's world on the globe; the older `#y1241` opens
   the Mongol Empire.
 
 ## Run it
@@ -192,7 +198,7 @@ traced from the 11 frames of the animated map
 [Magadha Expansion](https://commons.wikimedia.org/wiki/File:Magadha_Expansion_1.gif)
 (CC BY-SA 4.0), georeferenced with 14 of the cities it marks; each feature's
 `Frame` says which frame it comes from.
-The list (`civilizations.json`) carries no outlines: the landing page's card
+The list (`civilizations.json`) carries no outlines: the Civilizations popup's card
 outlines are in `civilization-shapes.json`, downloaded only once the landing
 page shows, so a link straight to the globe skips them.
 
@@ -270,7 +276,7 @@ require review from Code Owners (`.github/CODEOWNERS`), and require the
 
 Visitors can report an error, missing data or an idea from the "Report a
 problem" links (on a realm, an event, a turning point, the sources panel and
-the landing page) or by right-clicking any spot on the globe or map. Each
+the Civilizations popup) or by right-clicking any spot on the globe or map. Each
 report becomes a GitHub issue labelled `feedback` plus its type, with the
 year, place, language and a link back to what the visitor was looking at.
 
@@ -302,7 +308,7 @@ locally, run `npm run build` then `npx wrangler dev --var GITHUB_TOKEN:<token>`.
 | `scripts/build-data.mjs` | Simplifies Cliopatria borders, puts the border overrides in, picks label points, splits them into time windows |
 | `scripts/border-overrides/` | Hand-traced borders that replace Cliopatria's where it is wrong |
 | `scripts/build-civilizations.mjs` | One entry per civilization: dates, largest extent, outline, family. Years corrected by hand where the borders don't span the realm's history are in `scripts/date-fixes.json` |
-| `src/landing.ts` | The landing page of civilization cards, with multi-select |
+| `src/landing.ts` | The Civilizations, Countries and Nations popups, with multi-select |
 | `scripts/build-countries.mjs` | Countries of today and the civilizations that led to each, from the borders |
 | `src/countries.ts` | Loads the countries |
 | `public/data/events.json` | Key events with places, dates, summaries and sources |

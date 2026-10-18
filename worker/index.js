@@ -5,6 +5,11 @@
 // POST /api/feedback files a visitor's report as a GitHub issue, with what
 // they were looking at, so reviewers can triage it where they already work.
 //
+// GET /api/where gives the visitor's rough whereabouts as Cloudflare reads
+// them from their connection (country and the city's coordinates), so the
+// globe can turn to their part of the world without asking for their
+// location. Nothing is stored.
+//
 // Settings (Cloudflare → Workers → terra-tempora → Settings → Variables and Secrets):
 //   GITHUB_TOKEN      secret: a fine-grained token allowed to write issues on GITHUB_REPO
 //   GITHUB_REPO       e.g. "EdgarMaucourant/terra-tempora" (set in wrangler.jsonc)
@@ -25,10 +30,21 @@ export default {
       if (request.method !== "POST") return json({ error: "method" }, 405, { Allow: "POST" });
       return feedback(request, env);
     }
+    if (url.pathname === "/api/where") return where(request);
     if (url.pathname.startsWith("/api/")) return json({ error: "not-found" }, 404);
     return env.ASSETS.fetch(request);
   },
 };
+
+function where(request) {
+  const cf = request.cf ?? {};
+  const lat = Number(cf.latitude);
+  const lon = Number(cf.longitude);
+  return json({
+    country: typeof cf.country === "string" ? cf.country : null,
+    lonLat: Number.isFinite(lat) && Number.isFinite(lon) ? [lon, lat] : null,
+  });
+}
 
 function json(body, status = 200, headers = {}) {
   return new Response(JSON.stringify(body), {

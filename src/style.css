@@ -289,21 +289,64 @@ input {
   color: var(--ink);
 }
 
+/* A view's settings: a submenu that opens beside its button. */
+.view-item {
+  position: relative;
+  display: grid;
+}
+
+.view-mode {
+  width: 76px;
+}
+
+.view-mode > .view-item > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.view-more {
+  font-size: 14px;
+  line-height: 1;
+  opacity: 0;
+  transition: transform 0.15s;
+}
+
+.view-mode button[aria-pressed="true"] .view-more {
+  opacity: 0.7;
+}
+
+.view-mode button[aria-expanded="true"] .view-more {
+  transform: rotate(180deg);
+}
+
+.view-sub {
+  position: absolute;
+  top: -4px;
+  left: calc(100% + 12px);
+  z-index: 4;
+  background: var(--panel-solid);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+}
+
+.view-sub[hidden] {
+  display: none;
+}
+
 .projection {
   display: grid;
-  gap: 4px;
-  width: 64px;
+  gap: 6px;
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
   font-size: 11px;
   font-weight: 500;
   color: var(--ink-soft);
 }
 
-.projection[hidden] {
-  display: none;
-}
-
 .projection select {
-  width: 136px;
+  width: 160px;
   padding: 7px 8px;
   border: 1px solid var(--line);
   border-radius: 10px;
@@ -314,11 +357,7 @@ input {
 }
 
 .axis-switch {
-  width: 112px;
-}
-
-.axis-switch[hidden] {
-  display: none;
+  width: 124px;
 }
 
 /* The text panel on the right, from under the toolbar to the timeline. Its
@@ -1321,19 +1360,94 @@ a {
   display: none;
 }
 
-/* Landing page: a grid of civilization cards over the dark of space. */
+/* The explore popup: one list (civilizations, countries or nations) over
+   the dimmed globe, with its own search, sort and filters. */
 .landing {
-  /* The landing page's content spans most of the window. */
-  --landing-width: 90%;
+  --landing-width: 100%;
   position: fixed;
   inset: 0;
   z-index: 10;
-  overflow-y: auto;
+  display: grid;
+  place-items: center;
+  padding: calc(var(--safe-top) + 24px) var(--gutter) calc(var(--safe-bottom) + 24px);
+  background: rgba(4, 6, 9, 0.62);
+  backdrop-filter: blur(3px);
+}
+
+.landing-dialog {
+  display: flex;
+  flex-direction: column;
+  width: min(1240px, 100%);
+  height: 100%;
+  max-height: 900px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px;
   background:
-    radial-gradient(1200px 600px at 80% -10%, rgba(226, 116, 47, 0.12), transparent 60%),
-    radial-gradient(900px 500px at -10% 10%, rgba(63, 167, 164, 0.08), transparent 60%),
+    radial-gradient(1000px 500px at 85% -15%, rgba(226, 116, 47, 0.1), transparent 60%),
     var(--space);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
   outline: none;
+}
+
+.dialog-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px var(--gutter) 8px;
+}
+
+.dialog-title {
+  margin: 0;
+  font: 600 26px/1.15 var(--font-display);
+}
+
+.landing-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.explore-section[hidden] {
+  display: none;
+}
+
+.landing .countries {
+  padding: 4px var(--gutter) 24px;
+}
+
+.dialog-bar .icon-button {
+  position: static;
+  flex: none;
+  width: 40px;
+  height: 40px;
+  font-size: 26px;
+}
+
+.landing .country-grid {
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+@media (max-width: 640px) {
+  .landing {
+    padding: 0;
+  }
+
+  .landing-dialog {
+    max-height: none;
+    border: 0;
+    border-radius: 0;
+  }
+
+  .dialog-bar {
+    padding-top: calc(var(--safe-top) + 12px);
+  }
+
+  .landing .section-tools {
+    flex: 1 1 100%;
+  }
 }
 
 .landing[hidden] {
@@ -1343,7 +1457,7 @@ a {
 .landing-head {
   max-width: var(--landing-width);
   margin: 0 auto;
-  padding: calc(var(--safe-top) + 40px) var(--gutter) 8px;
+  padding: 4px var(--gutter) 8px;
 }
 
 .landing-head {
@@ -1368,11 +1482,6 @@ a {
   border-color: rgba(214, 220, 228, 0.32);
 }
 
-.landing-language {
-  position: absolute;
-  top: calc(var(--safe-top) + 16px);
-  right: var(--gutter);
-}
 
 .landing-head h1 {
   margin: 6px 0 8px;
@@ -1549,41 +1658,6 @@ a {
   font-size: 12px;
   color: var(--ink-soft);
   font-variant-numeric: tabular-nums;
-}
-
-/* The last card in a section: "Show all …" or "Show fewer". */
-.more-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2px;
-  min-height: 70px;
-  border-style: dashed;
-  color: var(--ink);
-  font: inherit;
-  text-align: center;
-  cursor: pointer;
-}
-
-.more-card.civ-card {
-  min-height: 160px;
-  border-style: dashed;
-  contain-intrinsic-size: none;
-}
-
-.more-card:focus-visible {
-  outline: 2px solid var(--steppe);
-  outline-offset: 2px;
-}
-
-.more-title {
-  font: 600 17px/1.15 var(--font-display);
-}
-
-.more-count {
-  font-size: 12px;
-  color: var(--ink-soft);
 }
 
 .filters {
@@ -2203,65 +2277,7 @@ a {
   }
 }
 
-/* History travel: a call to action on the landing page and cards that sit beside each turning point's badge on the globe. */
-.travel-cta {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  max-width: 640px;
-  margin: 0 0 30px;
-  padding: 14px 20px 14px 14px;
-  border: 1px solid rgba(226, 116, 47, 0.45);
-  border-radius: var(--radius);
-  background: linear-gradient(110deg, rgba(226, 116, 47, 0.2), rgba(226, 116, 47, 0.04) 70%);
-  font: inherit;
-  color: var(--ink);
-  text-align: left;
-  cursor: pointer;
-  transition: border-color 0.2s ease, background-color 0.2s ease;
-}
-
-.travel-cta:hover {
-  border-color: var(--steppe);
-  background-color: rgba(226, 116, 47, 0.08);
-}
-
-.travel-cta:focus-visible {
-  outline: 2px solid var(--steppe);
-  outline-offset: 3px;
-}
-
-.travel-cta-play {
-  display: grid;
-  place-items: center;
-  flex: none;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: var(--steppe);
-}
-
-.travel-cta-play svg {
-  width: 22px;
-  height: 22px;
-  margin-left: 3px;
-  fill: #fff;
-}
-
-.travel-cta-text {
-  display: grid;
-  gap: 2px;
-  color: var(--ink-soft);
-  text-wrap: pretty;
-}
-
-.travel-cta-text strong {
-  font-family: var(--font-display);
-  font-size: 22px;
-  font-weight: 600;
-  color: var(--ink);
-}
-
+/* History travel: cards that sit beside each turning point's badge on the globe. */
 /* While travelling, the tools for picking civilizations step aside. */
 .traveling .view-mode,
 .traveling #projection-field,
@@ -2532,8 +2548,7 @@ a {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .travel-card,
-  .travel-cta {
+  .travel-card {
     transition: none;
   }
 
@@ -2673,57 +2688,93 @@ a {
 /* Globe-first home: the globe opens on today's world; the explore bar under
    the masthead and the panel lead to the civilizations, countries, nations
    and the history travel, which open in the explore page over the globe. */
-.explore-bar {
+.title-row {
   display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-top: 10px;
+  align-items: center;
+  gap: 12px;
+}
+
+.explore-menu {
+  position: relative;
+  flex: none;
   pointer-events: auto;
   text-shadow: none;
 }
 
-.explore-bar .chip {
-  min-height: 32px;
-  padding: 0 13px;
+.burger {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
   background: var(--panel);
   backdrop-filter: blur(10px);
-  font-size: 13px;
   color: var(--ink);
+  cursor: pointer;
 }
 
-.explore-bar .chip:hover {
+.burger:hover,
+.burger[aria-expanded="true"] {
   border-color: var(--steppe);
+}
+
+.burger svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.explore-list {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  z-index: 6;
+  min-width: 220px;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel-solid);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+
+.explore-list[hidden] {
+  display: none;
+}
+
+.explore-list button {
+  display: block;
+  width: 100%;
+  padding: 9px 12px;
+  border: 0;
+  border-radius: 8px;
+  background: none;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+}
+
+.explore-list button:hover,
+.explore-list button:focus-visible {
+  background: rgba(214, 220, 228, 0.08);
 }
 
 .home .back,
 .home #view-focus,
-.traveling .explore-bar {
+.traveling .explore-menu {
   display: none;
 }
 
-.landing-close {
-  position: sticky;
-  top: calc(var(--safe-top) + 14px);
-  z-index: 2;
-  margin: calc(var(--safe-top) + 14px) 0 0 max(var(--gutter), 5%);
-  background: var(--panel-solid);
-}
 
-.landing-close + .landing-head {
-  padding-top: 18px;
-}
 
-@media (max-width: 640px) {
-  .explore-bar .chip {
-    min-height: 30px;
-    padding: 0 10px;
-    font-size: 12px;
-  }
-
-  .landing-close {
-    margin-left: var(--gutter);
-  }
-}
 
 /* The home panel's ways in: a name over a line on what it holds. */
 .overview-actions {

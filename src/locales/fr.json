@@ -69,13 +69,12 @@
  "hint.before": "Aucune frontière n’est cartographiée avant {year}.",
  "hint.none": "Aucune frontière n’est cartographiée pour cette année.",
  "home.civsText": "Tous les royaumes des données de frontières, de 3400 av. J.-C. à nos jours.",
- "home.close": "← Retour au globe",
  "home.closeLabel": "Fermer et revenir au globe",
  "home.countriesText": "Toutes les civilisations dont les frontières ont traversé un pays d’aujourd’hui.",
  "home.explore": "Explorer",
  "home.hoverNation": "cliquez pour les civilisations qui l’ont précédé",
+ "home.menu": "Menu",
  "home.nationsText": "Toutes les civilisations qui ont mené à une nation d’aujourd’hui.",
- "home.sub": "Frontières actuelles ({year}). Cliquez sur un pays pour voir les civilisations qui l’ont précédé.",
  "home.title": "Le monde aujourd’hui",
  "home.travelShort": "Survolez 12 000 ans de tournants de l’histoire.",
  "info.area": "{area} km²",
@@ -107,10 +106,6 @@
  "kind.war": "Guerre",
  "kind.writing": "Écriture",
  "landing.allEras": "Toutes les époques",
- "landing.backToFirst": {
-  "one": "Revenir à la première fiche",
-  "other": "Revenir aux {count} premières fiches"
- },
  "landing.cancelSelection": "Annuler la sélection",
  "landing.civCount": {
   "one": "{count} civilisation",
@@ -130,12 +125,7 @@
  },
  "landing.credit": "Fièrement prompté avec ❤️ dans Claude Opus 5.5",
  "landing.era": "Époque",
- "landing.eyebrow": "Terra Tempora",
  "landing.footer": "Frontières : <a href=\"https://github.com/Seshat-Global-History-Databank/cliopatria\" target=\"_blank\" rel=\"noopener\">Cliopatria</a>, Seshat Global History Databank, CC BY 4.0. Personnages clés et liens entre États : <a href=\"https://www.wikidata.org/\" target=\"_blank\" rel=\"noopener\">Wikidata</a> (CC0). Images : <a href=\"https://commons.wikimedia.org/\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>, sous licence libre ; chaque fiche nomme l’auteur et la licence et renvoie au fichier. La petite forme dans le coin de chaque fiche est le contour de l’État à son extension maximale.",
- "landing.inAll": {
-  "one": "{count} en tout",
-  "other": "{count} en tout"
- },
  "landing.keyFigures": "Personnages clés",
  "landing.lede": "Découvrez 5000 ans d’histoire du monde cartographiés sur la Terre, avec les frontières, les événements et les civilisations.",
  "landing.nations": "Nations",
@@ -155,10 +145,6 @@
   "other": "{count} choisies : {names}"
  },
  "landing.selectedRegion": "Civilisations choisies",
- "landing.showAllCivs": "Voir toutes les civilisations",
- "landing.showAllCountries": "Voir tous les pays",
- "landing.showAllNations": "Voir toutes les nations",
- "landing.showFewer": "En voir moins",
  "landing.showOnGlobe": "Afficher sur le globe",
  "landing.showSelected": {
   "one": "Afficher {count} civilisation sur le globe",
@@ -168,7 +154,6 @@
  "landing.sortCountries": "Trier les pays",
  "landing.sortNations": "Trier les nations",
  "landing.tickHint": "Cochez les civilisations à afficher ensemble sur le globe.",
- "landing.title": "Les civilisations sur le globe",
  "landing.travelText": "Survolez 12 000 ans d’histoire du monde sur le globe, des premiers temples à nos jours, en vous arrêtant à chaque tournant, sur tous les continents.",
  "lanes.count": {
   "one": "{count} civilisation",
@@ -299,8 +284,10 @@
  "travel.title": "Voyage dans l’histoire",
  "travel.whyItMatters": "Pourquoi c’est important",
  "view.globe": "Globe",
+ "view.globeTitle": "Globe ; cliquez à nouveau pour ses réglages",
  "view.label": "Vue",
  "view.map": "Carte",
+ "view.mapTitle": "Carte plane ; cliquez à nouveau pour sa projection",
  "view.projection": "Projection",
  "year.bce": "{year} av. J.‑C.",
  "year.ce": "{year} apr. J.‑C.",
