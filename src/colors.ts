@@ -36,5 +36,9 @@ export function highlightColors(chosen: Realm, related: Realm[]): Map<string, st
   return colors;
 }
 
-/** Colours for the countries of today on the home view, told apart from their neighbours. */
-export const TODAY_COLOURS = ["#e2742f", "#3fa7a4", "#e6bc3f", "#6d9fd8", "#b07cc6", "#8bb158", "#d0668f", "#c98a5a"];
+/**
+ * Colours for the countries of today on the home view, told apart from their
+ * neighbours. The first goes to the largest country (Russia), so it is a soft
+ * clay rather than the accent: across that much land a strong colour shouts.
+ */
+export const TODAY_COLOURS = ["#b59782", "#3fa7a4", "#e6bc3f", "#6d9fd8", "#b07cc6", "#8bb158", "#d0668f", "#c98a5a"];

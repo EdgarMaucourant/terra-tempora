@@ -102,6 +102,9 @@ interface Arrival {
   read: number;
 }
 
+/** The travel starts here, so the first turning point comes within seconds. */
+const TRAVEL_START = -9550;
+
 export class Travel {
   active = false;
   playing = false;
@@ -122,6 +125,10 @@ export class Travel {
   private pinned: TravelEvent | null = null;
   private opened: TravelEvent | null = null;
   private resumeTimer = 0;
+  /** Invites the reader to press Play again after a drag stopped time. */
+  private toast: HTMLElement;
+  /** How visible each badge is now, so faint or hidden ones can't be touched. */
+  private badgeOpacity = new Map<TravelEvent, number>();
   private frame = 0;
   private last = 0;
   // Camera: the point it looks at (P) eases on a spring after a guide (F)
@@ -139,17 +146,47 @@ export class Travel {
     private host: TravelHost,
     private overlay: HTMLElement,
   ) {
-    // Dragging the globe hands the camera to the reader until the next turning point.
-    host.scene.canvas.addEventListener("pointerdown", () => {
-      if (this.active) this.steering = false;
+    this.toast = document.createElement("div");
+    this.toast.className = "travel-toast";
+    this.toast.setAttribute("role", "status");
+    this.toast.hidden = true;
+    const toastText = document.createElement("span");
+    const toastClose = document.createElement("button");
+    toastClose.type = "button";
+    toastClose.className = "travel-toast-close";
+    toastClose.textContent = "×";
+    toastClose.addEventListener("click", () => this.showToast(false));
+    this.toast.append(toastText, toastClose);
+    overlay.append(this.toast);
+
+    // Dragging the globe hands the camera to the reader and stops time; Play
+    // carries on. A press without a drag (a tap on a badge) does neither.
+    const canvas = host.scene.canvas;
+    let down: { x: number; y: number } | null = null;
+    canvas.addEventListener("pointerdown", (e) => {
+      down = this.active ? { x: e.clientX, y: e.clientY } : null;
     });
+    canvas.addEventListener("pointermove", (e) => {
+      if (!down || Math.hypot(e.clientX - down.x, e.clientY - down.y) < 6) return;
+      down = null;
+      this.steering = false;
+      if (!this.playing) return;
+      this.setPlaying(false);
+      this.showToast(true);
+    });
+    window.addEventListener("pointerup", () => (down = null));
   }
 
-  /** Starts a bit before the first turning point, or at `year`. */
+  /** Where the travel begins: shortly before the first turning point (Göbekli Tepe). */
+  private get startYear(): number {
+    return Math.min(TRAVEL_START, this.events[0].year - 50);
+  }
+
+  /** Starts shortly before the first turning point, or at `year`. */
   start(year?: number) {
     this.active = true;
     this.overlay.hidden = false;
-    this.seek(year ?? this.events[0].year - 400);
+    this.seek(year ?? this.startYear);
     this.setPlaying(true);
     this.last = 0;
     cancelAnimationFrame(this.frame);
@@ -160,6 +197,7 @@ export class Travel {
     if (!this.active) return;
     this.active = false;
     this.setPlaying(false);
+    this.showToast(false);
     cancelAnimationFrame(this.frame);
     this.clearCards();
     this.overlay.hidden = true;
@@ -177,12 +215,13 @@ export class Travel {
     this.clearCards();
     this.host.setYear(this.year);
     this.host.showRealms([]);
+    this.badgeOpacity = new Map();
     this.host.showBadges(new Map());
   }
 
   /**
    * Jumps to a turning point and stops there with its card open, as a click on
-   * its badge does; "Continue" or Play carries on from it.
+   * its badge does; "Close" or Play carries on from it.
    */
   seekTo(e: TravelEvent) {
     this.seek(e.year);
@@ -198,9 +237,10 @@ export class Travel {
   }
 
   setPlaying(on: boolean) {
-    if (on && this.year >= this.host.end - 0.01) this.seek(this.events[0].year - 400);
+    if (on && this.year >= this.host.end - 0.01) this.seek(this.startYear);
     this.playing = on;
     if (on) {
+      this.showToast(false);
       // Play closes any card held open and lets time run again.
       clearTimeout(this.resumeTimer);
       this.pinned = this.hoverCard = this.hoverBadge = null;
@@ -209,17 +249,40 @@ export class Travel {
     this.host.onPlaying(this.running);
   }
 
+  /** Shows the invitation to resume (until Play or ×), or hides it. */
+  private showToast(on: boolean) {
+    if (on) {
+      const [text, close] = this.toast.children as unknown as [HTMLElement, HTMLElement];
+      text.textContent = t("travel.paused");
+      close.setAttribute("aria-label", t("travel.close"));
+    }
+    this.toast.hidden = !on;
+  }
+
   /** The pointer is over a badge on the globe, or left it (null). */
   hoverOnBadge(e: TravelEvent | null) {
+    if (e && !this.touchable(e)) e = null;
     if (e === this.hoverBadge) return;
     this.hoverBadge = e;
     this.hoverChanged();
   }
 
-  /** A tap or click on a badge holds its card open until "Continue". */
+  /** A tap or click on a badge holds its card open until "Close". */
   pin(e: TravelEvent) {
+    if (!this.touchable(e)) return;
     this.pinned = e;
     this.hoverChanged();
+  }
+
+  /**
+   * A badge only stops time when it can be seen: faded in, and on this side of
+   * the globe. Picking goes by screen position, so a badge behind the globe or
+   * still invisible could otherwise catch the pointer.
+   */
+  private touchable(e: TravelEvent): boolean {
+    if ((this.badgeOpacity.get(e) ?? 0) < 0.3) return false;
+    this.occluder.cameraPosition = this.host.scene.camera.positionWC;
+    return this.occluder.isPointVisible(Cartesian3.fromDegrees(e.lonLat[0], e.lonLat[1], BADGE_HEIGHT));
   }
 
   /** Lets time run again after a card was held open. */
@@ -248,9 +311,12 @@ export class Travel {
     if (was) this.cards.get(was)?.classList.remove("open");
     // The play button shows time as stopped while a card is open.
     this.host.onPlaying(this.running);
+    if (e) this.cardFor(e).classList.add("open");
+    // Time stands still while a card is open, so the labels are set here too:
+    // an open card that kept its label styling would be squeezed into a pill.
+    this.relabel();
     if (!e) return;
-    const card = this.cardFor(e);
-    card.classList.add("open");
+    const card = this.cards.get(e)!;
     this.fillDetails(e, card);
   }
 
@@ -357,8 +423,8 @@ export class Travel {
         this.cards.delete(e);
       }
     }
-    const focus = this.arrivals[0]?.e;
-    for (const [e, card] of this.cards) card.classList.toggle("label", e !== focus && e !== this.opened);
+    this.relabel();
+    this.badgeOpacity = badges;
     this.host.showBadges(badges);
     this.host.showRealms(onScreen);
   }
@@ -433,6 +499,12 @@ export class Travel {
     }
   }
 
+  /** The latest card and the open one show in full; the others shrink to labels. */
+  private relabel() {
+    const focus = this.arrivals[0]?.e;
+    for (const [e, card] of this.cards) card.classList.toggle("label", e !== focus && e !== this.opened);
+  }
+
   private clearCards() {
     for (const card of this.cards.values()) card.remove();
     this.cards.clear();
@@ -489,7 +561,8 @@ export class Travel {
       if (l.note) item.append(el("small", undefined, l.note));
       links.append(item);
     }
-    const resume = el("button", "travel-resume", t("travel.continue"));
+    // Closing the card lets time run on.
+    const resume = el("button", "travel-resume", t("travel.close"));
     resume.type = "button";
     resume.addEventListener("click", () => this.setPlaying(true));
     const report = el("button", "report-link", t("feedback.link"));
