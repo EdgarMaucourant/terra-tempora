@@ -8,7 +8,7 @@ in a timeline that runs from 10,000 BCE to today.
 
 - The globe opens on today's world: every present-day country in its own
   colour, named, with the timeline on the latest year in the border data.
-  Once the borders are drawn it turns half a turn, from the far side of the
+  Once the borders are drawn it turns half a turn in three seconds, from the far side of the
   Earth to the visitor's part of it. Where they are comes from Cloudflare's
   reading of their connection (`GET /api/where` in the Worker), so no
   permission is asked; without the Worker (local development) the time zone
@@ -75,15 +75,17 @@ in a timeline that runs from 10,000 BCE to today.
   from the Actions tab (tick "again" to fetch every realm, not only new
   ones), or `node scripts/fetch-events.mjs` where Wikidata is reachable.
 - "History travel", in the menu by the title (links look like
-  `#travel`), plays world history on its own, starting just before
-  Göbekli Tepe (9500 BCE). As each of 141 turning points comes, the globe turns
+  `#travel`), plays world history on its own at 50 years a second, starting
+  in 9750 BCE, just before Göbekli Tepe (9500 BCE). The side panel steps aside
+  while it plays; dragging the globe stops time, and Play carries on. As each
+  of 141 turning points comes, the globe turns
   smoothly to put it in the middle, with its icon, a one-line summary and the
   realm it happened in lit up. Time cruises at the chosen speed, crosses long
   quiet stretches quickly, and slows down where turning points crowd together
   so each card can be read, then speeds back up. Hovering a card or its badge
   (or tapping it) stops time and opens the full story: the place, what
   happened, why it matters then and now, and links to Wikipedia, Britannica
-  and World History Encyclopedia. The turning points were chosen for their
+  and World History Encyclopedia; "Close" closes it and time runs on. The turning points were chosen for their
   impact on how civilizations developed, from every continent (farming in New
   Guinea and Mexico as well as the Fertile Crescent; Caral, the Olmec and
   Cahokia alongside Rome), and are written in `public/data/travel.json`.

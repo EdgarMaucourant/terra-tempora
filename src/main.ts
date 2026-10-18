@@ -162,7 +162,7 @@ function spinTo([lon, lat]: [number, number]) {
   for (const type of ["pointerdown", "wheel", "touchstart"]) canvas.addEventListener(type, stop, { passive: true });
   let last = 0;
   let elapsed = 0;
-  const duration = 6000;
+  const duration = 3000;
   const step = (now: number) => {
     // A slow frame (shapes being built) doesn't skip part of the turn.
     elapsed += last ? Math.min(100, now - last) : 0;
@@ -1556,8 +1556,8 @@ function startTravel(at?: number) {
       detail: `${kindLabel(e.kind)} · ${travelWhen(e)}`,
     })),
   );
-  // Cruise at 25 years a second; the travel slows down by itself where history crowds.
-  speedSelect.value = "25";
+  // Cruise at 50 years a second; the travel slows down by itself where history crowds.
+  speedSelect.value = "50";
   // Pull back so whole regions show around each turning point.
   const { lon, lat } = globeCentre();
   widget.camera.setView({

@@ -102,6 +102,9 @@ interface Arrival {
   read: number;
 }
 
+/** The travel starts here, so the first turning point comes within seconds. */
+const TRAVEL_START = -9750;
+
 export class Travel {
   active = false;
   playing = false;
@@ -139,17 +142,32 @@ export class Travel {
     private host: TravelHost,
     private overlay: HTMLElement,
   ) {
-    // Dragging the globe hands the camera to the reader until the next turning point.
-    host.scene.canvas.addEventListener("pointerdown", () => {
-      if (this.active) this.steering = false;
+    // Dragging the globe hands the camera to the reader and stops time; Play
+    // carries on. A press without a drag (a tap on a badge) does neither.
+    const canvas = host.scene.canvas;
+    let down: { x: number; y: number } | null = null;
+    canvas.addEventListener("pointerdown", (e) => {
+      down = this.active ? { x: e.clientX, y: e.clientY } : null;
     });
+    canvas.addEventListener("pointermove", (e) => {
+      if (!down || Math.hypot(e.clientX - down.x, e.clientY - down.y) < 6) return;
+      down = null;
+      this.steering = false;
+      if (this.playing) this.setPlaying(false);
+    });
+    window.addEventListener("pointerup", () => (down = null));
   }
 
-  /** Starts a bit before the first turning point, or at `year`. */
+  /** Where the travel begins: shortly before the first turning point (Göbekli Tepe). */
+  private get startYear(): number {
+    return Math.min(TRAVEL_START, this.events[0].year - 50);
+  }
+
+  /** Starts shortly before the first turning point, or at `year`. */
   start(year?: number) {
     this.active = true;
     this.overlay.hidden = false;
-    this.seek(year ?? this.events[0].year - 400);
+    this.seek(year ?? this.startYear);
     this.setPlaying(true);
     this.last = 0;
     cancelAnimationFrame(this.frame);
@@ -182,7 +200,7 @@ export class Travel {
 
   /**
    * Jumps to a turning point and stops there with its card open, as a click on
-   * its badge does; "Continue" or Play carries on from it.
+   * its badge does; "Close" or Play carries on from it.
    */
   seekTo(e: TravelEvent) {
     this.seek(e.year);
@@ -198,7 +216,7 @@ export class Travel {
   }
 
   setPlaying(on: boolean) {
-    if (on && this.year >= this.host.end - 0.01) this.seek(this.events[0].year - 400);
+    if (on && this.year >= this.host.end - 0.01) this.seek(this.startYear);
     this.playing = on;
     if (on) {
       // Play closes any card held open and lets time run again.
@@ -216,7 +234,7 @@ export class Travel {
     this.hoverChanged();
   }
 
-  /** A tap or click on a badge holds its card open until "Continue". */
+  /** A tap or click on a badge holds its card open until "Close". */
   pin(e: TravelEvent) {
     this.pinned = e;
     this.hoverChanged();
@@ -489,7 +507,8 @@ export class Travel {
       if (l.note) item.append(el("small", undefined, l.note));
       links.append(item);
     }
-    const resume = el("button", "travel-resume", t("travel.continue"));
+    // Closing the card lets time run on.
+    const resume = el("button", "travel-resume", t("travel.close"));
     resume.type = "button";
     resume.addEventListener("click", () => this.setPlaying(true));
     const report = el("button", "report-link", t("feedback.link"));
