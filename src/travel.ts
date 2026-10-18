@@ -311,9 +311,12 @@ export class Travel {
     if (was) this.cards.get(was)?.classList.remove("open");
     // The play button shows time as stopped while a card is open.
     this.host.onPlaying(this.running);
+    if (e) this.cardFor(e).classList.add("open");
+    // Time stands still while a card is open, so the labels are set here too:
+    // an open card that kept its label styling would be squeezed into a pill.
+    this.relabel();
     if (!e) return;
-    const card = this.cardFor(e);
-    card.classList.add("open");
+    const card = this.cards.get(e)!;
     this.fillDetails(e, card);
   }
 
@@ -420,8 +423,7 @@ export class Travel {
         this.cards.delete(e);
       }
     }
-    const focus = this.arrivals[0]?.e;
-    for (const [e, card] of this.cards) card.classList.toggle("label", e !== focus && e !== this.opened);
+    this.relabel();
     this.badgeOpacity = badges;
     this.host.showBadges(badges);
     this.host.showRealms(onScreen);
@@ -495,6 +497,12 @@ export class Travel {
       card.classList.toggle("left", !right);
       card.style.transform = `translate(${Math.round(x)}px, ${Math.round(y)}px)`;
     }
+  }
+
+  /** The latest card and the open one show in full; the others shrink to labels. */
+  private relabel() {
+    const focus = this.arrivals[0]?.e;
+    for (const [e, card] of this.cards) card.classList.toggle("label", e !== focus && e !== this.opened);
   }
 
   private clearCards() {
