@@ -8,10 +8,16 @@ in a timeline that runs from 10,000 BCE to today.
 
 - The globe opens on today's world: every present-day country in its own
   colour, named, with the timeline on the latest year in the border data.
-  Clicking a country opens the civilizations that led to it. Buttons under the
-  title and the side panel open the explore page (the landing page described
-  below) on its Civilizations, Countries or Nations section, or start the
-  history travel; "← Back to the globe" or Escape closes it.
+  Once the borders are drawn it turns half a turn, from the far side of the
+  Earth to the visitor's part of it. Where they are comes from Cloudflare's
+  reading of their connection (`GET /api/where` in the Worker), so no
+  permission is asked; without the Worker (local development) the time zone
+  gives the longitude. Clicking a country opens the civilizations that led to
+  it. The menu by the title and the side panel open the explore page (the
+  landing page described below) on its Civilizations, Countries or Nations
+  section, or start the history travel; "← Back to the globe" or Escape
+  closes it. The globe starts in free movement; the natural axis is a choice
+  that is remembered.
 - A landing page with a card for each of the 1,554 civilizations in the border
   data: a freely licensed picture on top (a photo of a monument, artwork or
   place, else its coat of arms or flag; maps are skipped), then its era, dates

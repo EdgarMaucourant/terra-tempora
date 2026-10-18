@@ -2673,31 +2673,88 @@ a {
 /* Globe-first home: the globe opens on today's world; the explore bar under
    the masthead and the panel lead to the civilizations, countries, nations
    and the history travel, which open in the explore page over the globe. */
-.explore-bar {
+.title-row {
   display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-top: 10px;
+  align-items: center;
+  gap: 12px;
+}
+
+.explore-menu {
+  position: relative;
+  flex: none;
   pointer-events: auto;
   text-shadow: none;
 }
 
-.explore-bar .chip {
-  min-height: 32px;
-  padding: 0 13px;
+.burger {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
   background: var(--panel);
   backdrop-filter: blur(10px);
-  font-size: 13px;
   color: var(--ink);
+  cursor: pointer;
 }
 
-.explore-bar .chip:hover {
+.burger:hover,
+.burger[aria-expanded="true"] {
   border-color: var(--steppe);
+}
+
+.burger svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.explore-list {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  z-index: 6;
+  min-width: 220px;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel-solid);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+
+.explore-list[hidden] {
+  display: none;
+}
+
+.explore-list button {
+  display: block;
+  width: 100%;
+  padding: 9px 12px;
+  border: 0;
+  border-radius: 8px;
+  background: none;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+}
+
+.explore-list button:hover,
+.explore-list button:focus-visible {
+  background: rgba(214, 220, 228, 0.08);
 }
 
 .home .back,
 .home #view-focus,
-.traveling .explore-bar {
+.traveling .explore-menu {
   display: none;
 }
 
@@ -2714,12 +2771,6 @@ a {
 }
 
 @media (max-width: 640px) {
-  .explore-bar .chip {
-    min-height: 30px;
-    padding: 0 10px;
-    font-size: 12px;
-  }
-
   .landing-close {
     margin-left: var(--gutter);
   }

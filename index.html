@@ -19,14 +19,21 @@
 
       <header class="masthead">
         <a id="back" class="back" href="#" data-i18n="masthead.back">← Today’s world</a>
-        <h1 id="civ-title" data-i18n="page.title">Terra Tempora</h1>
+        <div class="title-row">
+          <div class="explore-menu">
+            <button id="explore-toggle" class="burger" type="button" aria-expanded="false" aria-controls="explore-list" aria-label="Menu" data-i18n-label="home.menu">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+            </button>
+            <ul id="explore-list" class="explore-list" hidden>
+              <li><button type="button" data-explore="civs" data-i18n="landing.civilizations">Civilizations</button></li>
+              <li><button type="button" data-explore="countries" data-i18n="landing.countries">Countries</button></li>
+              <li><button type="button" data-explore="nations" data-i18n="landing.nations">Nations</button></li>
+              <li><button type="button" data-explore="travel" data-i18n="travel.title">History travel</button></li>
+            </ul>
+          </div>
+          <h1 id="civ-title" data-i18n="page.title">Terra Tempora</h1>
+        </div>
         <p id="civ-sub" class="sub"></p>
-        <nav class="explore-bar" aria-label="Explore" data-i18n-label="home.explore">
-          <button type="button" class="chip" data-explore="civs" data-i18n="landing.civilizations">Civilizations</button>
-          <button type="button" class="chip" data-explore="countries" data-i18n="landing.countries">Countries</button>
-          <button type="button" class="chip" data-explore="nations" data-i18n="landing.nations">Nations</button>
-          <button type="button" class="chip" data-explore="travel" data-i18n="travel.title">History travel</button>
-        </nav>
       </header>
 
       <div class="globe-tools">
