@@ -38,17 +38,26 @@
 
       <div class="globe-tools">
         <div class="view-switch view-mode" role="group" aria-label="View" data-i18n-label="view.label">
-          <button id="view-globe" type="button" aria-pressed="true" data-i18n="view.globe">Globe</button>
-          <button id="view-map" type="button" aria-pressed="false" data-i18n="view.map">Map</button>
+          <div class="view-item">
+            <button id="view-globe" type="button" aria-pressed="true" aria-expanded="false" aria-controls="axis-switch" title="Globe; click again for its settings" data-i18n-title="view.globeTitle">
+              <span data-i18n="view.globe">Globe</span><span class="view-more" aria-hidden="true">›</span>
+            </button>
+            <div class="view-switch axis-switch view-sub" role="group" id="axis-switch" aria-label="Globe axis" data-i18n-label="axis.label" hidden>
+              <button id="axis-natural" type="button" aria-pressed="false" title="Lean the globe 23.5° on Earth’s axis; dragging spins it on that axis" data-i18n="axis.natural" data-i18n-title="axis.naturalTitle">Natural axis</button>
+              <button id="axis-free" type="button" aria-pressed="true" title="Stand the globe upright and turn it freely" data-i18n="axis.free" data-i18n-title="axis.freeTitle">Free movement</button>
+            </div>
+          </div>
+          <div class="view-item">
+            <button id="view-map" type="button" aria-pressed="false" aria-expanded="false" aria-controls="projection-field" title="Flat map; click again for its projection" data-i18n-title="view.mapTitle">
+              <span data-i18n="view.map">Map</span><span class="view-more" aria-hidden="true">›</span>
+            </button>
+            <label id="projection-field" class="projection view-sub" for="projection" hidden>
+              <span data-i18n="view.projection">Projection</span>
+              <select id="projection"></select>
+            </label>
+          </div>
         </div>
-        <label id="projection-field" class="projection" for="projection" hidden>
-          <span data-i18n="view.projection">Projection</span>
-          <select id="projection"></select>
-        </label>
-        <div class="view-switch axis-switch" role="group" id="axis-switch" aria-label="Globe axis" data-i18n-label="axis.label">
-          <button id="axis-natural" type="button" aria-pressed="false" title="Lean the globe 23.5° on Earth’s axis; dragging spins it on that axis" data-i18n="axis.natural" data-i18n-title="axis.naturalTitle">Natural axis</button>
-          <button id="axis-free" type="button" aria-pressed="true" title="Stand the globe upright and turn it freely" data-i18n="axis.free" data-i18n-title="axis.freeTitle">Free movement</button>
-        </div>
+      </div>
       </div>
 
       <div class="toolbar">

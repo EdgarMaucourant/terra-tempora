@@ -17,7 +17,9 @@ in a timeline that runs from 10,000 BCE to today.
   landing page described below) on its Civilizations, Countries or Nations
   section, or start the history travel; "← Back to the globe" or Escape
   closes it. The globe starts in free movement; the natural axis is a choice
-  that is remembered.
+  that is remembered. It sits in a submenu of the Globe button, and the map's
+  projection in a submenu of the Map button: a click on the current view's
+  button opens its submenu.
 - A landing page with a card for each of the 1,554 civilizations in the border
   data: a freely licensed picture on top (a photo of a monument, artwork or
   place, else its coat of arms or flag; maps are skipped), then its era, dates

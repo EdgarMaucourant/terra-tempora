@@ -790,8 +790,14 @@ function setTilted(on: boolean, animate = true) {
   });
 }
 
-$("axis-natural").addEventListener("click", () => tilted || setTilted(true));
-$("axis-free").addEventListener("click", () => tilted && setTilted(false));
+$("axis-natural").addEventListener("click", () => {
+  openViewMenu(null);
+  if (!tilted) setTilted(true);
+});
+$("axis-free").addEventListener("click", () => {
+  openViewMenu(null);
+  if (tilted) setTilted(false);
+});
 setTilted(tilted, false);
 
 // Globe or flat map. The map opens on the place the globe was looking at, and
@@ -821,6 +827,7 @@ projectionSelect.addEventListener("change", () => {
   const { lon, lat, zoom } = map.centre();
   map.setProjection(projectionSelect.value);
   store(PROJECTION_KEY, projectionSelect.value);
+  openViewMenu(null);
   // Stay on the same place, at a comparable zoom.
   if (zoom > 1) map.focus(lon, lat, (14_000 / zoom) ** 2);
   else map.focus(lon, 0, null);
@@ -843,8 +850,7 @@ function setMapMode(on: boolean, sync = true) {
   hideTooltip();
   $("view-globe").setAttribute("aria-pressed", String(!on));
   $("view-map").setAttribute("aria-pressed", String(on));
-  $("projection-field").hidden = !on;
-  $("axis-switch").hidden = on;
+  openViewMenu(null);
   $("globe").hidden = on;
   store(MAP_KEY, on ? "map" : "globe");
   if (on) {
@@ -864,8 +870,32 @@ function setMapMode(on: boolean, sync = true) {
   }
 }
 
-$("view-globe").addEventListener("click", () => setMapMode(false));
-$("view-map").addEventListener("click", () => setMapMode(true));
+// Each view's settings sit in a submenu beside its button: the axis for the
+// globe, the projection for the map. A click on the other view switches to
+// it; a click on the current one opens or closes its submenu.
+const viewMenus = {
+  globe: { button: $("view-globe"), menu: $("axis-switch") },
+  map: { button: $("view-map"), menu: $("projection-field") },
+};
+function openViewMenu(which: keyof typeof viewMenus | null) {
+  for (const [key, { button, menu }] of Object.entries(viewMenus)) {
+    menu.hidden = key !== which;
+    button.setAttribute("aria-expanded", String(key === which));
+  }
+}
+for (const [key, { button, menu }] of Object.entries(viewMenus) as [keyof typeof viewMenus, (typeof viewMenus)["globe"]][]) {
+  button.addEventListener("click", () => {
+    const current = (key === "map") === map.active;
+    if (!current) return setMapMode(key === "map");
+    openViewMenu(menu.hidden ? key : null);
+  });
+}
+document.addEventListener("click", (e) => {
+  if (!(e.target as Element).closest(".view-item")) openViewMenu(null);
+});
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") openViewMenu(null);
+});
 
 /** Civilizations Wikidata records before and after each one, by id. */
 const neighbours = new Map<string, { before: Civilization[]; after: Civilization[] }>();
