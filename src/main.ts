@@ -16,7 +16,7 @@ import "./style.css";
 import { AxisLock } from "./axisLock";
 import { civEraText, Civilizations, type Civilization } from "./civilizations";
 import { formatNumber, initLanguage, languageMenu, t, translatePage, withText, type MessageKey } from "./i18n";
-import { highlightColors } from "./colors";
+import { highlightColors, TODAY_COLOURS } from "./colors";
 import { Documentaries, renderDocumentaries } from "./documentaries";
 import { countryCivIds, loadCountries, type Country, type CountryView } from "./countries";
 import { BorderData, type Polity } from "./data";
@@ -342,7 +342,9 @@ contextToggle.addEventListener("change", () => {
 });
 document.addEventListener("keydown", (e) => {
   const target = e.target as HTMLElement;
-  // Leave keys alone on the landing page, in the report form and wherever text is typed.
+  // Escape closes the explore page; other keys are left alone there, in the
+  // report form and wherever text is typed.
+  if (!landingEl.hidden && $("feedback").hidden && e.key === "Escape") return closeExplore();
   if (!landingEl.hidden || !$("feedback").hidden || target.isContentEditable) return;
   if (e.code === "Space" && !["BUTTON", "SELECT", "INPUT", "TEXTAREA", "A"].includes(target.tagName) && target.id !== "track") {
     e.preventDefault();
@@ -410,6 +412,12 @@ function clickRealm(p: Polity | null | undefined) {
     return;
   }
   const civ = civs?.ofRealm(p.name);
+  if (home && civ) {
+    // On today's map, a country opens the civilizations that led to it.
+    const k = countryOf(civ);
+    if (k) return openCountry(k, "nationality", { push: true });
+    return openCiv(civ, { year, push: true, flyTo: p.label ?? civ.center });
+  }
   if (layer.isHighlighted(p.name) || !civ) showInfo(p);
   else {
     info.hidden = true;
@@ -427,10 +435,17 @@ function hoverRealm(p: Polity | null | undefined, x: number, y: number) {
   const greyed = !layer.isHighlighted(p.name);
   layer.setHovered(greyed ? p.name : null);
   map.setHovered(greyed ? p.name : null);
+  const years = formatRange(civ.from, civ.to);
   tooltip.replaceChildren(
     Object.assign(document.createElement("strong"), { textContent: civ.name }),
     Object.assign(document.createElement("span"), {
-      textContent: greyed ? t("tooltip.explore", { years: formatRange(civ.from, civ.to) }) : formatRange(civ.from, civ.to),
+      textContent: home
+        ? countryOf(civ)
+          ? `${years} · ${t("home.hoverNation")}`
+          : t("tooltip.explore", { years })
+        : greyed
+          ? t("tooltip.explore", { years })
+          : years,
     }),
   );
   tooltip.style.transform = `translate(${x + 14}px, ${y + 14}px)`;
@@ -1028,7 +1043,8 @@ function openCiv(c: Civilization, options: OpenOptions = {}) {
   if (!civs) return;
   const list = civs;
   leaveTravel();
-  const switching = active !== c || !expanded || !!country;
+  const switching = active !== c || !expanded || !!country || home;
+  leaveHome();
   country = null;
   showOutline(null);
   active = c;
@@ -1083,6 +1099,7 @@ function openView(list: Civilization[], options: ViewOptions = {}) {
   const unique = [...new Set(list)];
   if (!unique.length) return;
   leaveTravel();
+  leaveHome();
   active = unique[0];
   expanded = false;
   country = options.country ?? null;
@@ -1168,16 +1185,150 @@ function openCountry(k: Country, view: CountryView, options: { year?: number; pu
   else flyToPlace(k.centre, k.area);
 }
 
-function showLanding() {
+// Home: the globe opens on today's world, every country in its own colour,
+// the timeline on the present. The old landing page is the explore page, a
+// layer opened from the masthead's buttons or the panel and closed back onto
+// the globe.
+let home = false;
+let homeVisited = false;
+
+/** The country of today whose state this civilization is, if any. */
+function countryOf(c: Civilization): Country | undefined {
+  return countries.find((k) => k.civ === c.id);
+}
+
+/** Colours every realm standing in this year, neighbours apart where it can. */
+function colourWorld(at: number) {
+  if (!data) return;
+  data
+    .load(at, at)
+    .then((shapes) => {
+      if (!home) return;
+      const standing = shapes.filter((p) => p.from <= at && p.to >= at);
+      // Overseas parts, written "(Name)", take their country's colour.
+      const base = (name: string) => name.replace(/^\((.*)\)$/, "$1");
+      const seats = new Map<string, [number, number]>();
+      const areas = new Map<string, number>();
+      for (const p of standing) {
+        const name = base(p.name);
+        areas.set(name, (areas.get(name) ?? 0) + p.area);
+        if (p.label && p.name === name) seats.set(name, p.label);
+      }
+      const palette = TODAY_COLOURS;
+      const byName = new Map<string, string>();
+      const placed: { at: [number, number]; colour: string }[] = [];
+      const distance = ([a, b]: [number, number], [c, d]: [number, number]) =>
+        Math.hypot((a - c) * Math.cos((((b + d) / 2) * Math.PI) / 180), b - d);
+      // Largest first; each takes the colour its nearest coloured neighbours use least.
+      for (const name of [...areas.keys()].sort((a, b) => areas.get(b)! - areas.get(a)!)) {
+        const at = seats.get(name);
+        let colour = palette[byName.size % palette.length];
+        if (at) {
+          const near = placed
+            .map((x) => ({ colour: x.colour, d: distance(at, x.at) }))
+            .sort((a, b) => a.d - b.d)
+            .slice(0, 8);
+          const score = (c: string) => near.reduce((sum, n, i) => sum + (n.colour === c ? 8 - i : 0), 0);
+          colour = palette.reduce((best, c) => (score(c) < score(best) ? c : best), palette[0]);
+          placed.push({ at, colour });
+        }
+        byName.set(name, colour);
+      }
+      const byRealm = new Map<string, string>();
+      for (const p of standing) byRealm.set(p.name, byName.get(base(p.name))!);
+      layer.setHighlight(byRealm);
+      map.setHighlight(byRealm);
+      render();
+    })
+    .catch((error: unknown) => console.error(error));
+}
+
+function showHome() {
   leaveTravel();
   if (playing) setPlaying(false);
   info.hidden = true;
   sources.hidden = true;
+  closeEvent();
+  hideTooltip();
+  landingEl.hidden = true;
+  home = true;
+  layer.labelAll = false;
+  document.body.classList.add("home");
+  active = undefined;
+  country = null;
+  highlighted = [];
+  expanded = true;
+  showOutline(null);
+  const today = Math.min(NOW, data?.to ?? NOW);
+  renderEvents([]);
+  timeline?.setFeatured([], t("lanes.today"));
+  timeline?.setView(today - 400, NOW + 20);
+  setYear(today);
+  timeline?.setYear(year);
+  colourWorld(today);
+  $("civ-title").textContent = t("page.title");
+  $("civ-sub").textContent = t("home.sub", { year: formatYear(today) });
+  overview.render({
+    kind: "home",
+    sub: $("civ-sub").textContent ?? "",
+    actions: [
+      { label: t("landing.civilizations"), text: t("home.civsText"), run: () => openExplore("civs") },
+      { label: t("landing.countries"), text: t("home.countriesText"), run: () => openExplore("countries") },
+      { label: t("landing.nations"), text: t("home.nationsText"), run: () => openExplore("nations") },
+      { label: t("travel.title"), text: t("home.travelShort"), run: () => openExplore("travel") },
+    ],
+  });
+  document.title = t("page.title");
+  // Coming back from a view, pull out to see the whole world again.
+  if (homeVisited && !map.active) {
+    const { lon, lat } = globeCentre();
+    widget.camera.flyTo({
+      destination: Cartesian3.fromDegrees(lon, lat, narrow ? 22_000_000 : 14_500_000),
+      orientation: orientation(),
+      duration: 1.2,
+    });
+  }
+  homeVisited = true;
+}
+
+function leaveHome() {
+  if (!home) return;
+  home = false;
+  layer.labelAll = true;
+  document.body.classList.remove("home");
+}
+
+type ExploreSection = "civs" | "countries" | "nations" | "travel";
+
+/** Opens the explore page (the former landing page) on one of its sections. */
+function openExplore(section: ExploreSection) {
+  if (section === "travel") {
+    go({ travel: true }, true);
+    return startTravel();
+  }
+  if (playing) setPlaying(false);
   hideTooltip();
   landingEl.hidden = false;
   landing?.show();
-  document.title = t("page.title");
+  const target =
+    section === "civs"
+      ? landingEl.querySelector<HTMLElement>(".landing-civs")
+      : landingEl.querySelector<HTMLElement>(`.countries[data-kind="${section === "countries" ? "territory" : "nationality"}"]`);
   landingEl.focus({ preventScroll: true });
+  landingEl.scrollTop = target
+    ? Math.max(0, target.getBoundingClientRect().top - landingEl.getBoundingClientRect().top + landingEl.scrollTop - 70)
+    : 0;
+}
+
+function closeExplore() {
+  if (landingEl.hidden) return;
+  if (landing) landing.setMulti(false);
+  landingEl.hidden = true;
+}
+
+$("landing-close").addEventListener("click", closeExplore);
+for (const button of document.querySelectorAll<HTMLButtonElement>("[data-explore]")) {
+  button.addEventListener("click", () => openExplore(button.dataset.explore as ExploreSection));
 }
 
 // The history travel: time plays on its own through the turning points of
@@ -1192,6 +1343,7 @@ let travelRealmsAt = 0;
 function startTravel(at?: number) {
   if (!travelEvents.length || !timeline) return;
   if (playing) setPlaying(false);
+  leaveHome();
   const line = timeline;
   if (!travel) {
     travel = new Travel(
@@ -1303,7 +1455,7 @@ function route() {
   const k = r.country ? countries.find((c) => c.id === r.country) : undefined;
   if (k) return openCountry(k, r.view ?? "nationality", { year: r.year });
   const found = (r.civs ?? []).map((id) => list.get(id)).filter((c): c is Civilization => !!c);
-  if (!found.length) showLanding();
+  if (!found.length) showHome();
   else if (!r.multi) openCiv(found[0], { year: r.year });
   else openView(found, { year: r.year });
 }
@@ -1311,7 +1463,7 @@ function route() {
 $("back").addEventListener("click", (e) => {
   e.preventDefault();
   go({}, true);
-  showLanding();
+  showHome();
 });
 window.addEventListener("popstate", route);
 window.addEventListener("hashchange", route);
@@ -1339,7 +1491,11 @@ Promise.all([
     documentaries = overview.documentaries = docs;
     travelEvents = turningPoints;
     civs = list;
-    layer.nameOf = map.nameOf = (realm) => list.realmName(realm);
+    // On today's map, countries go by their everyday names.
+    layer.nameOf = map.nameOf = (realm) => {
+      const civ = home ? list.ofRealm(realm.replace(/^\((.*)\)$/, "$1")) : undefined;
+      return (civ && countryOf(civ)?.name) ?? list.realmName(realm);
+    };
     allEvents = events;
     countries = loaded;
     data = borders;

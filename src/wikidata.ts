@@ -258,3 +258,44 @@ export function realmFacts(qid: string): Promise<RealmFacts | null> {
   timer = window.setTimeout(drain, 120);
   return promise;
 }
+
+const FLAGS = "terra-tempora:flags:v1";
+
+/**
+ * Today's flag of each Wikidata item, as a small Commons picture, keyed by
+ * item. One request covers every nation; the answer is cached. Empty when
+ * Wikimedia cannot be reached.
+ */
+export async function nationFlags(qids: string[]): Promise<Map<string, string>> {
+  try {
+    const raw = localStorage.getItem(FLAGS);
+    if (raw) return new Map(Object.entries(JSON.parse(raw) as Record<string, string>));
+  } catch {
+    // Blocked storage: ask Wikidata again.
+  }
+  // wdt:P41 keeps only the best-ranked flag, which is the one flown today.
+  const sparql = `SELECT ?item ?flag WHERE { VALUES ?item { ${qids.map((id) => `wd:${id}`).join(" ")} } ?item wdt:P41 ?flag. }`;
+  const flags = new Map<string, string>();
+  try {
+    const response = await fetch(`${SPARQL}?format=json&query=${encodeURIComponent(sparql)}`, {
+      headers: { Accept: "application/sparql-results+json" },
+    });
+    if (!response.ok) throw new Error(`Wikidata answered ${response.status}`);
+    const bindings: { item: { value: string }; flag: { value: string } }[] = (await response.json()).results.bindings;
+    for (const b of bindings) {
+      const qid = qidOf(b.item.value);
+      if (flags.has(qid)) continue;
+      // The value is a Special:FilePath URL; asking for a width gets a thumbnail.
+      flags.set(qid, `${b.flag.value.replace(/^http:/, "https:")}?width=120`);
+    }
+  } catch (error) {
+    console.warn("Wikidata could not be reached; nations show outlines instead.", error);
+    return flags;
+  }
+  try {
+    localStorage.setItem(FLAGS, JSON.stringify(Object.fromEntries(flags)));
+  } catch {
+    // Storage full or blocked; the flags are fetched again next visit.
+  }
+  return flags;
+}
