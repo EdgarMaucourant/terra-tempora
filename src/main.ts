@@ -64,7 +64,6 @@ try {
 await initLanguage();
 translatePage();
 document.querySelector(".toolbar")!.append(languageMenu("language toolbar-language"));
-document.querySelector(".landing-head")!.prepend(languageMenu("language landing-language"));
 
 const yearNumberEl = $("year-number");
 const yearEraEl = $("year-era");
@@ -1415,7 +1414,16 @@ function leaveHome() {
 
 type ExploreSection = "civs" | "countries" | "nations" | "travel";
 
-/** Opens the explore page (the former landing page) on one of its sections. */
+const EXPLORE_TITLES: Record<Exclude<ExploreSection, "travel">, MessageKey> = {
+  civs: "landing.civilizations",
+  countries: "landing.countries",
+  nations: "landing.nations",
+};
+
+/**
+ * Opens one list (civilizations, countries or nations) in a popup over the
+ * globe, with its search, sort and filters; the history travel starts at once.
+ */
 function openExplore(section: ExploreSection) {
   if (section === "travel") {
     go({ travel: true }, true);
@@ -1423,16 +1431,17 @@ function openExplore(section: ExploreSection) {
   }
   if (playing) setPlaying(false);
   hideTooltip();
+  for (const part of landingEl.querySelectorAll<HTMLElement>(".explore-section")) {
+    part.hidden = part.dataset.section !== section;
+  }
+  $("landing-title").textContent = t(EXPLORE_TITLES[section]);
   landingEl.hidden = false;
   landing?.show();
-  const target =
-    section === "civs"
-      ? landingEl.querySelector<HTMLElement>(".landing-civs")
-      : landingEl.querySelector<HTMLElement>(`.countries[data-kind="${section === "countries" ? "territory" : "nationality"}"]`);
-  landingEl.focus({ preventScroll: true });
-  landingEl.scrollTop = target
-    ? Math.max(0, target.getBoundingClientRect().top - landingEl.getBoundingClientRect().top + landingEl.scrollTop - 70)
-    : 0;
+  landingEl.querySelector(".landing-scroll")!.scrollTop = 0;
+  // Ready to type a name, except on phones, where the keyboard would cover the list.
+  const search = landingEl.querySelector<HTMLInputElement>(`.explore-section[data-section="${section}"] input[type="search"]`);
+  if (search && !narrow) search.focus({ preventScroll: true });
+  else landingEl.querySelector<HTMLElement>(".landing-dialog")!.focus({ preventScroll: true });
 }
 
 function closeExplore() {
@@ -1442,6 +1451,10 @@ function closeExplore() {
 }
 
 $("landing-close").addEventListener("click", closeExplore);
+// A click on the dimmed globe around the popup closes it.
+landingEl.addEventListener("click", (e) => {
+  if (e.target === landingEl) closeExplore();
+});
 // The menu by the title: the explore page's sections and the history travel.
 const exploreToggle = $<HTMLButtonElement>("explore-toggle");
 const exploreList = $("explore-list");
@@ -1697,10 +1710,7 @@ Promise.all([
       if (!list.some((c) => year >= c.from && year <= c.to)) setYearEverywhere(list[0].peakYear);
     });
     $("view-all").addEventListener("click", () => line.setView(FIRST_YEAR, NOW));
-    $("travel-start").addEventListener("click", () => {
-      go({ travel: true }, true);
-      startTravel();
-    });
+
     $("zoom-in").addEventListener("click", () => line.zoom(0.5));
     $("zoom-out").addEventListener("click", () => line.zoom(2));
     if (stored(MAP_KEY) === "map") setMapMode(true, false);

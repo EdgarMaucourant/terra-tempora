@@ -69,7 +69,6 @@
  "hint.before": "No borders are mapped before {year}.",
  "hint.none": "No borders are mapped for this year.",
  "home.civsText": "Every realm in the border data, from 3400 BCE to today.",
- "home.close": "← Back to the globe",
  "home.closeLabel": "Close and go back to the globe",
  "home.countriesText": "Every civilization whose borders crossed a country of today.",
  "home.explore": "Explore",
@@ -107,10 +106,6 @@
  "kind.war": "War",
  "kind.writing": "Writing",
  "landing.allEras": "All eras",
- "landing.backToFirst": {
-  "one": "Back to the first {count}",
-  "other": "Back to the first {count}"
- },
  "landing.cancelSelection": "Cancel selection",
  "landing.civCount": {
   "one": "{count} civilization",
@@ -130,12 +125,7 @@
  },
  "landing.credit": "Proudly prompted with ❤️ in Claude Opus 5.5",
  "landing.era": "Era",
- "landing.eyebrow": "Terra Tempora",
  "landing.footer": "Borders: <a href=\"https://github.com/Seshat-Global-History-Databank/cliopatria\" target=\"_blank\" rel=\"noopener\">Cliopatria</a>, Seshat Global History Databank, CC BY 4.0. Key figures and links between realms: <a href=\"https://www.wikidata.org/\" target=\"_blank\" rel=\"noopener\">Wikidata</a> (CC0). Pictures: <a href=\"https://commons.wikimedia.org/\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>, freely licensed; each card names the author and licence and links to the file. The small shape in each card’s corner is the realm’s outline at its largest.",
- "landing.inAll": {
-  "one": "{count} in all",
-  "other": "{count} in all"
- },
  "landing.keyFigures": "Key figures",
  "landing.lede": "Experience 5000 years of world history mapped on Earth, with borders, events and civilizations.",
  "landing.nations": "Nations",
@@ -155,10 +145,6 @@
   "other": "{count} selected: {names}"
  },
  "landing.selectedRegion": "Selected civilizations",
- "landing.showAllCivs": "Show all Civilizations",
- "landing.showAllCountries": "Show all Countries",
- "landing.showAllNations": "Show all Nations",
- "landing.showFewer": "Show fewer",
  "landing.showOnGlobe": "Show on the globe",
  "landing.showSelected": {
   "one": "Show {count} on the globe",
@@ -168,7 +154,6 @@
  "landing.sortCountries": "Sort countries",
  "landing.sortNations": "Sort nations",
  "landing.tickHint": "Tick the civilizations to show together on the globe.",
- "landing.title": "Civilizations on the globe",
  "landing.travelText": "Fly through 12,000 years of world history on the globe, from the first temples to today, stopping at each turning point on every continent.",
  "lanes.count": {
   "one": "{count} civilization",
