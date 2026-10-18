@@ -55,6 +55,22 @@ async function sealEmail(email: string): Promise<string> {
   return `tt1:${key.id}:${btoa(String.fromCharCode(...new Uint8Array(sealed)))}`;
 }
 
+/**
+ * The link back to what the visitor saw. For a spot they pointed at, it
+ * carries the spot (p=<lon>,<lat>) and the year, so the app pins it.
+ */
+function viewUrl(c: FeedbackContext): string {
+  const url = new URL(location.href);
+  if (c.kind !== "place" || !c.lonLat) return url.href;
+  // An old-style #y1241 link becomes #y=1241.
+  const params = new URLSearchParams(url.hash.replace(/^#y(-?\d)/, "#y=$1").slice(1));
+  params.delete("travel");
+  params.set("p", c.lonLat.map((n) => n.toFixed(3)).join(","));
+  if (c.year !== undefined) params.set("y", String(Math.round(c.year)));
+  url.hash = params.toString().replace(/%2C/g, ",");
+  return url.href;
+}
+
 /** The report dialog. */
 export class Feedback {
   private form: HTMLFormElement;
@@ -177,7 +193,7 @@ export class Feedback {
         name: c.name,
         year: c.year,
         lonLat: c.lonLat ?? undefined,
-        url: location.href,
+        url: viewUrl(c),
         lang,
         screen: `${window.innerWidth}×${window.innerHeight}`,
         version: __APP_VERSION__,

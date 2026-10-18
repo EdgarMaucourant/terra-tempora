@@ -29,6 +29,7 @@ import { MapView, PROJECTIONS } from "./mapView";
 import { articleMedia, renderGallery } from "./media";
 import { Overview } from "./overview";
 import { Picker } from "./picker";
+import { parsePin, PinLayer } from "./pin";
 import { PolityLayer } from "./polityLayer";
 import { Timeline, type Lane, type LaneLink } from "./timeline";
 import { attachTimelineEdges } from "./timelineEdges";
@@ -185,6 +186,7 @@ void placeAsked?.then(([lon, lat]) => {
 
 const layer = new PolityLayer(scene);
 const eventLayer = new EventLayer(scene);
+const pinLayer = new PinLayer(scene);
 
 // The flat map: the same borders in a choice of projections.
 const mapCanvas = $<HTMLCanvasElement>("map");
@@ -235,7 +237,12 @@ interface Route {
   year?: number;
   /** The history travel. */
   travel?: boolean;
+  /** A spot to mark with a pin (#…&p=<lon>,<lat>), as in a report's link. */
+  pin?: [number, number] | null;
 }
+
+/** The reported spot, kept in the link while it is shown. */
+let pinned: [number, number] | null = null;
 
 function readHash(): Route {
   const legacy = /^#y(-?\d{1,5})$/.exec(location.hash);
@@ -245,6 +252,7 @@ function readHash(): Route {
   if (params.has("travel")) return { travel: true, year: y && /^-?\d{1,5}$/.test(y) ? Number(y) : undefined };
   const ids = params.get("c")?.split(",").filter(Boolean);
   return {
+    pin: parsePin(params.get("p")),
     country: params.get("t") ?? params.get("k") ?? undefined,
     view: params.has("t") ? "territory" : "nationality",
     civs: ids?.length ? ids : undefined,
@@ -254,6 +262,11 @@ function readHash(): Route {
 }
 
 function hashFor(route: Route): string {
+  const hash = routeHash(route);
+  return route.pin && hash.startsWith("#") ? `${hash}&p=${route.pin.map((n) => n.toFixed(3)).join(",")}` : hash;
+}
+
+function routeHash(route: Route): string {
   if (route.travel) return "#travel";
   if (route.country)
     return `#${route.view === "territory" ? "t" : "k"}=${route.country}${route.year !== undefined ? `&y=${Math.round(route.year)}` : ""}`;
@@ -272,10 +285,11 @@ function go(route: Route, push: boolean) {
 }
 
 function currentRoute(): Route {
-  if (country) return { country: country.id, view: countryView, year };
+  const pin = pinned;
+  if (country) return { country: country.id, view: countryView, year, pin };
   return expanded && active
-    ? { civs: [active.id], year }
-    : { civs: highlighted.map((c) => c.id), multi: true, year };
+    ? { civs: [active.id], year, pin }
+    : { civs: highlighted.map((c) => c.id), multi: true, year, pin };
 }
 
 function writeHash() {
@@ -1143,6 +1157,7 @@ function showMasthead() {
 
 /** Shows a civilization on the globe, with its related realms highlighted. */
 function openCiv(c: Civilization, options: OpenOptions = {}) {
+  showPin(null);
   if (!civs) return;
   const list = civs;
   leaveTravel();
@@ -1199,6 +1214,7 @@ interface ViewOptions {
 
 /** Shows exactly these civilizations on the globe, each in its own colour. */
 function openView(list: Civilization[], options: ViewOptions = {}) {
+  showPin(null);
   const unique = [...new Set(list)];
   if (!unique.length) return;
   leaveTravel();
@@ -1347,6 +1363,7 @@ function colourWorld(at: number): Promise<void> {
 }
 
 function showHome() {
+  showPin(null);
   leaveTravel();
   if (playing) setPlaying(false);
   info.hidden = true;
@@ -1600,11 +1617,29 @@ function route() {
   const r = readHash();
   if (r.travel) return startTravel(r.year);
   const k = r.country ? countries.find((c) => c.id === r.country) : undefined;
-  if (k) return openCountry(k, r.view ?? "nationality", { year: r.year });
   const found = (r.civs ?? []).map((id) => list.get(id)).filter((c): c is Civilization => !!c);
-  if (!found.length) showHome();
+  if (k) openCountry(k, r.view ?? "nationality", { year: r.year });
+  else if (!found.length) showHome();
   else if (!r.multi) openCiv(found[0], { year: r.year });
   else openView(found, { year: r.year });
+  // A report's link: the spot the visitor pointed at, pinned and in view.
+  if (r.pin) {
+    if (home && r.year !== undefined) {
+      setYear(r.year);
+      timeline?.setYear(year);
+    }
+    showPin(r.pin);
+    writeHash();
+    // Close enough to see the spot among its neighbours.
+    flyToPlace(r.pin, 300_000);
+  }
+}
+
+/** Marks the reported spot on the globe and the map, or clears it. */
+function showPin(lonLat: [number, number] | null) {
+  pinned = lonLat;
+  pinLayer.set(lonLat);
+  map.setPin(lonLat);
 }
 
 $("back").addEventListener("click", (e) => {

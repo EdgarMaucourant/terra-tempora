@@ -125,7 +125,8 @@ async function feedback(request, env) {
     ["Language", line(c.lang, 10)],
     ["Screen", line(c.screen, 20)],
     ["Version", line(c.version, 40)],
-    ["Wants to help", contact ? "Yes, see their encrypted email below" : ""],
+    // Sealed text only: `npm run read-contact` turns it back into their email.
+    ["Issuer offered to help", contact ? `\`${contact}\`` : ""],
   ].filter(([, v]) => v);
   const issue = {
     title: `${TYPES[type].title}: ${subject} · ${line(message, 60)}`.replace(/@/g, "@\u200b"),
@@ -136,16 +137,6 @@ async function feedback(request, env) {
       "| --- | --- |",
       ...rows.map(([k, v]) => `| ${k} | ${v.replace(/\|/g, "\\|")} |`),
       "",
-      ...(contact
-        ? [
-            "The visitor offered to help fix this. Their email, encrypted (run `npm run read-contact` and paste it):",
-            "",
-            "```",
-            contact,
-            "```",
-            "",
-          ]
-        : []),
       "_Sent from the Report link in Terra Tempora._",
     ].join("\n"),
     labels: ["feedback", TYPES[type].label],

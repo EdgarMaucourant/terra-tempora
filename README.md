@@ -282,6 +282,9 @@ problem" links (on a realm, an event, a turning point, the sources panel and
 the Civilizations popup) or by right-clicking any spot on the globe or map. Each
 report becomes a GitHub issue labelled `feedback` plus its type, with the
 year, place, language and a link back to what the visitor was looking at.
+For a report made by right-clicking a spot, the link carries that spot
+(`&p=<lon>,<lat>`) and its year, and opening it pins the spot on the globe
+or map.
 
 `worker/index.js` receives the reports at `/api/feedback` and files them; it
 limits each visitor to 5 reports a minute and ignores bots that fill a hidden
@@ -306,8 +309,9 @@ run `npx wrangler preview secret put GITHUB_TOKEN --name <branch>`.
 The form has a box "I want to help fix the issue I reported"; ticking it asks
 for an email. The page encrypts that email with a public key before sending
 (RSA-OAEP with SHA-256, 4096-bit), so only sealed text reaches the Worker and
-the GitHub issue, where robots scanning for addresses find nothing. The issue
-says "Wants to help" and shows the sealed email, starting `tt1:`. The box stays
+the GitHub issue, where robots scanning for addresses find nothing. The
+issue's table gets an "Issuer offered to help" row holding the sealed email,
+starting `tt1:`. The box stays
 hidden until a key is set up:
 
 1. On your own computer, run `npm run contact-key`. It asks for a passphrase,
