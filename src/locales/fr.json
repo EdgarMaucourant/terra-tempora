@@ -278,6 +278,7 @@
  "travel.circa": "vers {when}",
  "travel.close": "Fermer",
  "travel.hint": "Survolez ou touchez pour lire toute l’histoire",
+ "travel.paused": "Voyage en pause. Appuyez sur Lecture dans la frise pour continuer.",
  "travel.sub": {
   "one": "{count} tournant de l’histoire du monde, de Göbekli Tepe à nos jours. Survolez ou touchez une fiche pour vous arrêter et en lire plus.",
   "other": "{count} tournants de l’histoire du monde, de Göbekli Tepe à nos jours. Survolez ou touchez une fiche pour vous arrêter et en lire plus."

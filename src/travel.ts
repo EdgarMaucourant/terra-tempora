@@ -103,7 +103,7 @@ interface Arrival {
 }
 
 /** The travel starts here, so the first turning point comes within seconds. */
-const TRAVEL_START = -9750;
+const TRAVEL_START = -9650;
 
 export class Travel {
   active = false;
@@ -125,6 +125,8 @@ export class Travel {
   private pinned: TravelEvent | null = null;
   private opened: TravelEvent | null = null;
   private resumeTimer = 0;
+  /** Invites the reader to press Play again after a drag stopped time. */
+  private toast: HTMLElement;
   private frame = 0;
   private last = 0;
   // Camera: the point it looks at (P) eases on a spring after a guide (F)
@@ -142,6 +144,19 @@ export class Travel {
     private host: TravelHost,
     private overlay: HTMLElement,
   ) {
+    this.toast = document.createElement("div");
+    this.toast.className = "travel-toast";
+    this.toast.setAttribute("role", "status");
+    this.toast.hidden = true;
+    const toastText = document.createElement("span");
+    const toastClose = document.createElement("button");
+    toastClose.type = "button";
+    toastClose.className = "travel-toast-close";
+    toastClose.textContent = "×";
+    toastClose.addEventListener("click", () => this.showToast(false));
+    this.toast.append(toastText, toastClose);
+    overlay.append(this.toast);
+
     // Dragging the globe hands the camera to the reader and stops time; Play
     // carries on. A press without a drag (a tap on a badge) does neither.
     const canvas = host.scene.canvas;
@@ -153,7 +168,9 @@ export class Travel {
       if (!down || Math.hypot(e.clientX - down.x, e.clientY - down.y) < 6) return;
       down = null;
       this.steering = false;
-      if (this.playing) this.setPlaying(false);
+      if (!this.playing) return;
+      this.setPlaying(false);
+      this.showToast(true);
     });
     window.addEventListener("pointerup", () => (down = null));
   }
@@ -178,6 +195,7 @@ export class Travel {
     if (!this.active) return;
     this.active = false;
     this.setPlaying(false);
+    this.showToast(false);
     cancelAnimationFrame(this.frame);
     this.clearCards();
     this.overlay.hidden = true;
@@ -219,12 +237,23 @@ export class Travel {
     if (on && this.year >= this.host.end - 0.01) this.seek(this.startYear);
     this.playing = on;
     if (on) {
+      this.showToast(false);
       // Play closes any card held open and lets time run again.
       clearTimeout(this.resumeTimer);
       this.pinned = this.hoverCard = this.hoverBadge = null;
       this.open(null);
     }
     this.host.onPlaying(this.running);
+  }
+
+  /** Shows the invitation to resume (until Play or ×), or hides it. */
+  private showToast(on: boolean) {
+    if (on) {
+      const [text, close] = this.toast.children as unknown as [HTMLElement, HTMLElement];
+      text.textContent = t("travel.paused");
+      close.setAttribute("aria-label", t("travel.close"));
+    }
+    this.toast.hidden = !on;
   }
 
   /** The pointer is over a badge on the globe, or left it (null). */

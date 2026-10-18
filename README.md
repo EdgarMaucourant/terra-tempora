@@ -76,8 +76,9 @@ in a timeline that runs from 10,000 BCE to today.
   ones), or `node scripts/fetch-events.mjs` where Wikidata is reachable.
 - "History travel", in the menu by the title (links look like
   `#travel`), plays world history on its own at 50 years a second, starting
-  in 9750 BCE, just before Göbekli Tepe (9500 BCE). The side panel steps aside
-  while it plays; dragging the globe stops time, and Play carries on. As each
+  in 9650 BCE, just before Göbekli Tepe (9500 BCE). The side panel steps aside
+  while it plays; dragging the globe stops time, and a note at the top right says that
+  Play carries on. As each
   of 141 turning points comes, the globe turns
   smoothly to put it in the middle, with its icon, a one-line summary and the
   realm it happened in lit up. Time cruises at the chosen speed, crosses long

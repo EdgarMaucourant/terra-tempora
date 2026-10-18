@@ -278,6 +278,7 @@
  "travel.circa": "c. {when}",
  "travel.close": "Close",
  "travel.hint": "Hover or tap for the full story",
+ "travel.paused": "Travel paused. Press Play on the timeline to carry on.",
  "travel.sub": {
   "one": "{count} turning point of world history, from Göbekli Tepe to today. Hover or tap a card to stop and read more.",
   "other": "{count} turning points of world history, from Göbekli Tepe to today. Hover or tap a card to stop and read more."

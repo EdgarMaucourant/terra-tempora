@@ -2304,6 +2304,57 @@ a {
   display: none;
 }
 
+.travel-toast {
+  position: absolute;
+  top: calc(var(--safe-top) + 68px);
+  right: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: min(340px, calc(100% - 32px));
+  box-sizing: border-box;
+  padding: 10px 10px 10px 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 1.4;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 0.35);
+  pointer-events: auto;
+  animation: travel-toast-in 0.25s ease-out;
+}
+
+.travel-toast[hidden] {
+  display: none;
+}
+
+.travel-toast-close {
+  flex: none;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ink-soft);
+  font: inherit;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.travel-toast-close:hover {
+  background: var(--line);
+  color: var(--ink);
+}
+
+@keyframes travel-toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+}
+
 .travel-card {
   --kind: var(--steppe);
   position: absolute;
@@ -2559,7 +2610,8 @@ a {
     transition: none;
   }
 
-  .travel-card.enter {
+  .travel-card.enter,
+  .travel-toast {
     animation: none;
   }
 }
