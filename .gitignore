@@ -3,3 +3,4 @@ dist/
 data-raw/
 package-lock.json
 .wrangler/
+.keys/

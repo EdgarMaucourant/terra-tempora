@@ -1,7 +1,11 @@
 // Visitors' reports: an error, missing data or an idea, about whatever they
 // were looking at. The form sends the message with that context to the
-// Worker (worker/index.js), which files it as a GitHub issue.
+// Worker (worker/index.js), which files it as a GitHub issue. Visitors who
+// offer to help leave an email, encrypted here with the maintainers' public
+// key (src/contactKey.ts) so that only the sealed text reaches the Worker and
+// GitHub; `npm run read-contact` opens it.
 
+import { CONTACT_KEY } from "./contactKey";
 import { lang, t } from "./i18n";
 import { formatYear } from "./years";
 
@@ -39,11 +43,25 @@ function loadTurnstile(): Promise<Turnstile> {
   return turnstileLoading;
 }
 
+/**
+ * Seals an email with the maintainers' public key (RSA-OAEP, SHA-256), as
+ * "tt1:<key id>:<base64>". scripts/read-contact.mjs opens it.
+ */
+async function sealEmail(email: string): Promise<string> {
+  const key = CONTACT_KEY!;
+  const der = Uint8Array.from(atob(key.spki), (c) => c.charCodeAt(0));
+  const publicKey = await crypto.subtle.importKey("spki", der, { name: "RSA-OAEP", hash: "SHA-256" }, false, ["encrypt"]);
+  const sealed = await crypto.subtle.encrypt({ name: "RSA-OAEP" }, publicKey, new TextEncoder().encode(email));
+  return `tt1:${key.id}:${btoa(String.fromCharCode(...new Uint8Array(sealed)))}`;
+}
+
 /** The report dialog. */
 export class Feedback {
   private form: HTMLFormElement;
   private status: HTMLElement;
   private send: HTMLButtonElement;
+  private help: HTMLInputElement;
+  private email: HTMLInputElement;
   private context: FeedbackContext = { kind: "app" };
   private returnFocus: HTMLElement | null = null;
   private token = "";
@@ -53,6 +71,11 @@ export class Feedback {
     this.form = root.querySelector("form")!;
     this.status = root.querySelector("#feedback-status")!;
     this.send = root.querySelector("#feedback-send")!;
+    this.help = root.querySelector("input[name=help]")!;
+    this.email = root.querySelector("input[name=email]")!;
+    // The offer to help needs a key to seal the email with, and a browser that can.
+    root.querySelector<HTMLElement>("#feedback-help")!.hidden = !CONTACT_KEY || !crypto.subtle;
+    this.help.addEventListener("change", () => this.showEmail());
     for (const button of root.querySelectorAll("[data-close]")) button.addEventListener("click", () => this.close());
     root.addEventListener("keydown", (e) => {
       if (e.key === "Escape") {
@@ -79,11 +102,17 @@ export class Feedback {
         ? t("feedback.aboutPlace", { year: formatYear(context.year) })
         : t("feedback.aboutApp");
     this.form.reset();
+    this.showEmail();
     this.status.textContent = "";
     this.send.disabled = false;
     this.root.hidden = false;
     this.form.querySelector("textarea")!.focus();
     if (TURNSTILE_KEY) void this.showTurnstile();
+  }
+
+  private showEmail() {
+    this.email.closest("label")!.hidden = !this.help.checked;
+    this.email.required = this.help.checked;
   }
 
   close() {
@@ -114,6 +143,12 @@ export class Feedback {
       this.status.textContent = t("feedback.tooShort");
       return;
     }
+    const email = this.help.checked ? this.email.value.trim() : "";
+    if (this.help.checked && !this.email.checkValidity()) {
+      this.status.textContent = t("feedback.emailInvalid");
+      this.email.focus();
+      return;
+    }
     if (TURNSTILE_KEY && !this.token) {
       this.status.textContent = t("feedback.waitCheck");
       return;
@@ -121,9 +156,19 @@ export class Feedback {
     this.send.disabled = true;
     this.status.textContent = t("feedback.sending");
     const c = this.context;
+    let contact: string | undefined;
+    try {
+      contact = email ? await sealEmail(email) : undefined;
+    } catch (error) {
+      console.error("The email could not be encrypted.", error);
+      this.status.textContent = t("feedback.failed");
+      this.send.disabled = false;
+      return;
+    }
     const body = {
       type: data.get("type"),
       message,
+      contact,
       website: data.get("website"),
       turnstile: this.token,
       context: {

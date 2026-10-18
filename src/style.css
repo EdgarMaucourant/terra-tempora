@@ -2736,6 +2736,47 @@ a {
   resize: vertical;
 }
 
+.feedback-help {
+  display: grid;
+  gap: 10px;
+}
+
+.feedback-help[hidden],
+.feedback-email[hidden] {
+  display: none;
+}
+
+.feedback-help-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.feedback-help-toggle input {
+  accent-color: var(--steppe);
+}
+
+.feedback-email {
+  display: grid;
+  gap: 6px;
+  font-weight: 500;
+}
+
+.feedback-email input {
+  padding: 9px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(214, 220, 228, 0.04);
+  font: inherit;
+  font-weight: 400;
+  color: var(--ink);
+}
+
+.feedback-email .fine {
+  font-weight: 400;
+}
+
 /* A field for bots only, kept out of sight and out of the tab order. */
 .feedback-trap {
   position: absolute;

@@ -4,6 +4,9 @@
 //
 // POST /api/feedback files a visitor's report as a GitHub issue, with what
 // they were looking at, so reviewers can triage it where they already work.
+// A visitor who offers to help sends their email already encrypted by the
+// page (src/feedback.ts); it is filed as that sealed text, which only the
+// maintainers' private key opens (`npm run read-contact`).
 //
 // GET /api/where gives the visitor's rough whereabouts as Cloudflare reads
 // them from their connection (country and the city's coordinates), so the
@@ -22,6 +25,8 @@ const TYPES = {
 };
 const MIN_MESSAGE = 10;
 const MAX_MESSAGE = 3000;
+// An email sealed by the page: "tt1:<key id>:<base64 of 512 bytes>".
+const SEALED_CONTACT = /^tt1:[0-9a-f]{12}:[A-Za-z0-9+/]{680,690}={0,2}$/;
 
 export default {
   async fetch(request, env) {
@@ -93,6 +98,8 @@ async function feedback(request, env) {
   const type = TYPES[body.type] ? body.type : null;
   const message = typeof body.message === "string" ? body.message.trim() : "";
   if (!type || message.length < MIN_MESSAGE || message.length > MAX_MESSAGE) return json({ error: "invalid" }, 400);
+  const contact = typeof body.contact === "string" ? body.contact : "";
+  if (contact && !SEALED_CONTACT.test(contact)) return json({ error: "invalid" }, 400);
 
   if (env.TURNSTILE_SECRET) {
     const form = new FormData();
@@ -118,6 +125,7 @@ async function feedback(request, env) {
     ["Language", line(c.lang, 10)],
     ["Screen", line(c.screen, 20)],
     ["Version", line(c.version, 40)],
+    ["Wants to help", contact ? "Yes, see their encrypted email below" : ""],
   ].filter(([, v]) => v);
   const issue = {
     title: `${TYPES[type].title}: ${subject} · ${line(message, 60)}`.replace(/@/g, "@\u200b"),
@@ -128,6 +136,16 @@ async function feedback(request, env) {
       "| --- | --- |",
       ...rows.map(([k, v]) => `| ${k} | ${v.replace(/\|/g, "\\|")} |`),
       "",
+      ...(contact
+        ? [
+            "The visitor offered to help fix this. Their email, encrypted (run `npm run read-contact` and paste it):",
+            "",
+            "```",
+            contact,
+            "```",
+            "",
+          ]
+        : []),
       "_Sent from the Report link in Terra Tempora._",
     ].join("\n"),
     labels: ["feedback", TYPES[type].label],
