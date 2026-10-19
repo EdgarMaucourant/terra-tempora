@@ -26,7 +26,11 @@ in a timeline that runs from 10,000 BCE to today.
   and one or two key figures, with the realm's outline at its largest drawn
   small in the corner. Search by name, filter by era, sort by age (oldest first
   by default), size or name.
-- Picking a card opens the globe on that civilization at its largest extent.
+- Picking a card opens the globe on that civilization at its largest extent,
+  framed on its heartland (the land it held longest, worked out by
+  `scripts/build-civilizations.mjs`) and the holdings near it: France with
+  North and West Africa for the French Third Republic, not French Guiana;
+  Britain for the British Empire, not India.
   It is coloured together with its related realms: the predecessors and
   successors Wikidata records, plus hand-picked families such as the Mongol
   khanates or the dynasties of Magadha (`FAMILIES` in `scripts/build-civilizations.mjs`). Every other realm

@@ -21,6 +21,7 @@ import { Documentaries, renderDocumentaries } from "./documentaries";
 import { countryCivIds, loadCountries, type Country, type CountryView } from "./countries";
 import { BorderData, type Polity } from "./data";
 import { eraAt, eraName, ERAS, NOW } from "./eras";
+import { frameRealm } from "./frame";
 import { EventLayer } from "./eventLayer";
 import { Feedback } from "./feedback";
 import { badgeSvg, eventLinks, kindLabel, loadEvents, localPage, pageUrl, type HistoryEvent } from "./events";
@@ -717,7 +718,12 @@ function viewTitle(list: Civilization[]): string {
   return t("masthead.more", { first: list[0].name, second: list[1].name, count: list.length - 2 });
 }
 
-function flyToCiv(c: Civilization, target: [number, number] | null = c.center, keepHeight = false) {
+// Bumped by each camera flight, so a realm's frame still waiting on its
+// borders doesn't pull the camera away from a newer one.
+let flight = 0;
+
+function flyToCiv(c: Civilization, target: [number, number] | null = c.home ?? c.center, keepHeight = false) {
+  flight++;
   if (!target) return;
   if (map.active) return map.focus(target[0], target[1], keepHeight ? null : c.area);
   const height = keepHeight ? widget.camera.positionCartographic.height : altitudeFor(c.area);
@@ -728,9 +734,31 @@ function flyToCiv(c: Civilization, target: [number, number] | null = c.center, k
   });
 }
 
+/**
+ * Flies to a civilization as it stands this year: its heartland and the
+ * holdings near it, once the year's borders are downloaded. Call it after
+ * setYear(), which starts that download and draws what arrives.
+ */
+function flyToRealm(c: Civilization) {
+  const mine = ++flight;
+  const at = year;
+  if (!data) return flyToCiv(c);
+  data.load(at, at).then(
+    (shapes) => {
+      if (mine !== flight) return;
+      const rings = shapes.filter((p) => at >= p.from && at <= p.to && c.names.includes(p.name)).flatMap((p) => p.rings);
+      const frame = frameRealm(rings, c.home);
+      if (frame) flyToPlace(frame.center, frame.area);
+      else flyToCiv(c);
+    },
+    () => mine === flight && flyToCiv(c),
+  );
+}
+
 /** Points the camera so all these civilizations are in view at once. */
 function flyToAll(list: Civilization[]) {
-  const centers = list.map((c) => c.center).filter((p): p is [number, number] => !!p);
+  flight++;
+  const centers = list.map((c) => c.home ?? c.center).filter((p): p is [number, number] => !!p);
   if (centers.length < 2) return flyToCiv(list[0]);
   // Average on the sphere, so realms on either side of the antimeridian meet in the middle.
   let x = 0;
@@ -774,7 +802,7 @@ function focusCiv(c: Civilization) {
     timeline?.setView(...focusView([c]));
     setYearEverywhere(c.peakYear);
   }
-  flyToCiv(c, layer.labelAt(c.names, year) ?? c.center);
+  flyToRealm(c);
 }
 
 function setTilted(on: boolean, animate = true) {
@@ -1098,6 +1126,7 @@ function hoverEvent(e: HistoryEvent, x: number, y: number) {
 
 /** Turns the globe or map to a place, keeping the zoom unless it is too far out. */
 function flyToPoint([lon, lat]: [number, number]) {
+  flight++;
   if (map.active) return map.focus(lon, lat, null);
   const height = Math.min(widget.camera.positionCartographic.height, 9_000_000);
   widget.camera.flyTo({
@@ -1189,8 +1218,7 @@ function openCiv(c: Civilization, options: OpenOptions = {}) {
       });
     }
 
-    if (options.flyTo === undefined) flyToCiv(c);
-    else flyToCiv(c, options.flyTo, true);
+    if (options.flyTo !== undefined) flyToCiv(c, options.flyTo, true);
   }
 
   const next = Math.min(NOW, Math.max(FIRST_YEAR, options.year ?? c.peakYear));
@@ -1199,6 +1227,7 @@ function openCiv(c: Civilization, options: OpenOptions = {}) {
   }
   setYear(next);
   timeline?.setYear(year);
+  if (switching && options.flyTo === undefined) flyToRealm(c);
   go(currentRoute(), options.push ?? false);
 }
 
@@ -1247,11 +1276,12 @@ function applyPicked(list: Civilization[]) {
   // Jump to the first new civilization's heyday unless one of them is already alive this year.
   const alive = fresh.some((c) => year >= c.from && year <= c.to);
   openView(list, { year: alive ? year : fresh[0].peakYear, push: true, fly: false });
-  flyToCiv(fresh[0]);
+  flyToRealm(fresh[0]);
 }
 
 /** Points the camera at a place, framing an area of so many km². */
 function flyToPlace([lon, lat]: [number, number], area: number) {
+  flight++;
   if (map.active) return map.focus(lon, lat, area);
   widget.camera.flyTo({
     destination: Cartesian3.fromDegrees(lon, lat - (narrow ? 6 : 0), altitudeFor(area)),
@@ -1300,7 +1330,7 @@ function openCountry(k: Country, view: CountryView, options: { year?: number; pu
   // A territory is about the land, so it sits in the middle; a hand-picked
   // lineage centres on the realm it is built around.
   const focus = view === "nationality" && k.blurb ? known.get(k.focus) : undefined;
-  if (focus) flyToCiv(focus);
+  if (focus) flyToRealm(focus);
   else flyToPlace(k.centre, k.area);
 }
 

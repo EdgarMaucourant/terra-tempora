@@ -63,7 +63,7 @@ export async function wikidataEvents(base: string, civs: Civilization[]): Promis
       }
       // A war saved without a place stands at the realm's heart.
       const atHeart = !r.lonLat;
-      if (atHeart && !c.center) continue;
+      if (atHeart && !(c.home ?? c.center)) continue;
       const text = texts[i][id] ?? {};
       events.set(id, {
         id,
@@ -72,7 +72,7 @@ export async function wikidataEvents(base: string, civs: Civilization[]): Promis
         to: r.to,
         title: text.title ?? r.title,
         place: atHeart ? c.name : text.place ?? (r.place || c.name),
-        lonLat: r.lonLat ?? c.center!,
+        lonLat: r.lonLat ?? (c.home ?? c.center)!,
         approx: atHeart ? t("event.foughtAcross", { name: c.name }) : undefined,
         civs: [c.id],
         summary: text.summary ?? r.summary ?? "",

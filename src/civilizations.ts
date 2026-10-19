@@ -17,6 +17,8 @@ export interface Civilization {
   area: number;
   /** [longitude, latitude] of the realm at its largest. */
   center: [number, number] | null;
+  /** [longitude, latitude] in the land it held longest, which the camera frames it around. */
+  home: [number, number] | null;
   /** Hand-picked group of realms that belong together, e.g. "mongol". */
   family: string | null;
 }
