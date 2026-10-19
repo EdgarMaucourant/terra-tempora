@@ -6,6 +6,7 @@
 // One civilization per Cliopatria realm name. Cliopatria writes a realm's
 // overseas or subordinate parts as "(Name)"; those are folded into "Name".
 import { readFileSync, writeFileSync } from "node:fs";
+import polylabel from "polylabel";
 
 // Realms that belong together beyond what Wikidata records as predecessors and
 // successors. Any member opens the globe with the whole family highlighted.
@@ -37,6 +38,13 @@ const SILHOUETTE_TOLERANCE = 0.9;
 // Parts smaller than this share of the largest part are left out of the silhouette.
 const SILHOUETTE_MIN_PART = 0.04;
 const SILHOUETTE_MAX_PARTS = 8;
+// Parts smaller than this (km²) can't be a realm's heartland, unless the realm
+// has nothing larger.
+const HOME_MIN_AREA = 10_000;
+// Parts held for at least this share of the longest-held part's years count as
+// held as long.
+const HOME_TIE = 0.95;
+const KM2_PER_SQ_DEGREE = 111.32 * 111.32;
 // Hand corrections to a civilization's years where its borders don't span its
 // history, by id: [from, to].
 const DATE_FIXES = JSON.parse(readFileSync("scripts/date-fixes.json", "utf8"));
@@ -138,6 +146,58 @@ function silhouette(shape) {
     .map((r) => r.slice(0, -1).flatMap(([x, y]) => [Math.round(x), Math.round(y)]));
 }
 
+function inRing([x, y], ring) {
+  let inside = false;
+  for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+    const [xi, yi] = ring[i];
+    const [xj, yj] = ring[j];
+    if (yi > y !== yj > y && x < ((xj - xi) * (y - yi)) / (yj - yi) + xi) inside = !inside;
+  }
+  return inside;
+}
+
+/**
+ * The realm's heartland: a point inside the part of its land it held for the
+ * most years, the largest such part on a tie. That is Great Britain for the
+ * British Empire rather than India, and France and Algeria for the French
+ * Third Republic rather than French Guiana. The camera frames a realm around it.
+ */
+function heartland(shapes) {
+  const parts = shapes.map((s) =>
+    s.rings.map(decodeRing).map((ring) => {
+      const xs = ring.map(([x]) => x);
+      const ys = ring.map(([, y]) => y);
+      const midY = (Math.min(...ys) + Math.max(...ys)) / 2;
+      const area = ringArea(ring) * KM2_PER_SQ_DEGREE * Math.cos((midY * Math.PI) / 180);
+      return { ring, area, box: [Math.min(...xs), Math.min(...ys), Math.max(...xs), Math.max(...ys)] };
+    }),
+  );
+  const largest = Math.max(...parts.flat().map((p) => p.area));
+  const seen = new Set();
+  const held = [];
+  for (const part of parts.flat()) {
+    if (part.area < Math.min(HOME_MIN_AREA, largest)) continue;
+    const point = polylabel([part.ring], 0.05).map((v) => Math.round(v * 100) / 100);
+    const key = `${Math.round(point[0])},${Math.round(point[1])}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    const years = new Set();
+    shapes.forEach((s, i) => {
+      const holds = parts[i].some(
+        ({ ring, box }) =>
+          point[0] >= box[0] && point[0] <= box[2] && point[1] >= box[1] && point[1] <= box[3] && inRing(point, ring),
+      );
+      if (holds) for (let y = s.from; y <= s.to; y++) years.add(y);
+    });
+    held.push({ point, years: years.size, area: part.area });
+  }
+  // A few years less is a tie: borders redrawn at the edges shouldn't make
+  // Sri Lanka the heart of the British Raj.
+  const most = Math.max(...held.map((h) => h.years));
+  const best = held.filter((h) => h.years >= most * HOME_TIE).sort((p, q) => q.area - p.area)[0];
+  return best?.point ?? null;
+}
+
 const slugify = (name) =>
   name
     .normalize("NFKD")
@@ -187,6 +247,8 @@ for (const g of groups.values()) {
     peakYear: Math.round((peak.from + peak.to) / 2),
     area: peak.area,
     center: peak.label,
+    // Where the camera frames the realm from (see heartland()).
+    home: heartland(g.shapes),
     family: familyOf.get(g.name) ?? null,
   });
   outlines[slug] = silhouette(peak);

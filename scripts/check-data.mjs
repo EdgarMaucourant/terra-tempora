@@ -60,6 +60,7 @@ for (const c of civs) {
   if (!isText(c.name)) fail("civilizations.json", `"${c.id}" has no name`);
   if (!Number.isInteger(c.from) || !Number.isInteger(c.to) || c.from > c.to) fail("civilizations.json", `"${c.id}" has bad years`);
   if (c.center !== null && !isLonLat(c.center)) fail("civilizations.json", `"${c.id}" has a bad centre`);
+  if (c.home !== null && !isLonLat(c.home)) fail("civilizations.json", `"${c.id}" has a bad home`);
 }
 const outlines = read(`${DATA}/civilization-shapes.json`) ?? {};
 for (const id of civIds) if (!outlines[id]) fail("civilization-shapes.json", `no outline for "${id}"`);
