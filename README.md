@@ -282,6 +282,9 @@ problem" links (on a realm, an event, a turning point, the sources panel and
 the Civilizations popup) or by right-clicking any spot on the globe or map. Each
 report becomes a GitHub issue labelled `feedback` plus its type, with the
 year, place, language and a link back to what the visitor was looking at.
+For a report made by right-clicking a spot, the link carries that spot
+(`&p=<lon>,<lat>`) and its year, and opening it pins the spot on the globe
+or map.
 
 `worker/index.js` receives the reports at `/api/feedback` and files them; it
 limits each visitor to 5 reports a minute and ignores bots that fill a hidden
@@ -300,6 +303,30 @@ field. To turn it on, set its secrets with Wrangler from the project folder
 Branch previews don't get these secrets. Previews created after you set one
 under Variables and Secrets → Previews Base get it; for an existing preview,
 run `npx wrangler preview secret put GITHUB_TOKEN --name <branch>`.
+
+### Visitors who offer to help
+
+The form has a box "I want to help fix the issue I reported"; ticking it asks
+for an email. The page encrypts that email with a public key before sending
+(RSA-OAEP with SHA-256, 4096-bit), so only sealed text reaches the Worker and
+the GitHub issue, where robots scanning for addresses find nothing. The
+issue's table gets an "Issuer offered to help" row holding the sealed email,
+starting `tt1:`. The box stays
+hidden until a key is set up:
+
+1. On your own computer, run `npm run contact-key`. It asks for a passphrase,
+   writes the private key to `.keys/contact-private.pem` (ignored by git; the
+   script refuses to write it anywhere git would commit) and the public key to
+   `src/contactKey.ts`. Commit that file and deploy. Keep a copy of the
+   private key and its passphrase somewhere safe, such as a password
+   manager: without them, sealed emails can't be read.
+2. To read an email, run `npm run read-contact`, paste the `tt1:…` text (or
+   the whole issue) and press Enter on an empty line; it prints the email.
+   Nothing is sent anywhere. Set `CONTACT_PRIVATE_KEY` to read the key from
+   another path.
+
+A new key (`npm run contact-key -- --replace`) only opens emails sealed after
+it is deployed; keep the old file to read older ones.
 
 Until `GITHUB_TOKEN` is set, sending a report shows an error. To try it
 locally, run `npm run build` then `npx wrangler dev --var GITHUB_TOKEN:<token>`.
@@ -333,6 +360,8 @@ locally, run `npm run build` then `npx wrangler dev --var GITHUB_TOKEN:<token>`.
 | `src/main.ts` | Links, globe setup, highlighting, hover and click, playback, details card |
 | `src/years.ts` | Year formatting (negative years are BCE) |
 | `src/feedback.ts` | The report form and what it sends |
+| `src/contactKey.ts` | The public key that encrypts the email of visitors who offer to help |
+| `scripts/contact-key.mjs`, `scripts/read-contact.mjs` | Make that key pair; read an encrypted email from an issue |
 | `worker/index.js` | The Cloudflare Worker: serves the site and files reports as GitHub issues |
 | `src/i18n.ts` | Languages: picks one, loads its text, fills in messages and translated data |
 | `src/locales/` | Interface text, one file per language |

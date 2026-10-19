@@ -8,6 +8,7 @@ import { MUTED } from "./colors";
 import type { Polity } from "./data";
 import { shapeOpacity } from "./polityLayer";
 import { badgeUrl, eventOpacity, type EventKind, type HistoryEvent } from "./events";
+import { PIN_HEIGHT, PIN_URL, PIN_WIDTH } from "./pin";
 
 // Event badges, in CSS pixels.
 const BADGE = 26;
@@ -84,6 +85,9 @@ export class MapView {
   /** Today's border of the country being looked at, drawn dashed over everything. */
   private outline: Shape | null = null;
   private events: HistoryEvent[] = [];
+  /** The reported spot, from a report's link. */
+  private pin: [number, number] | null = null;
+  private pinImage: HTMLImageElement | null = null;
   private badgeImages = new Map<EventKind, HTMLImageElement>();
   /** Badges drawn last frame, for hit-testing. */
   private drawnBadges: { e: HistoryEvent; x: number; y: number }[] = [];
@@ -140,6 +144,17 @@ export class MapView {
   }
 
   /** The events that may show: those of the highlighted civilizations. */
+  /** Marks a spot with a pin, or removes it. */
+  setPin(lonLat: [number, number] | null) {
+    this.pin = lonLat;
+    if (lonLat && !this.pinImage) {
+      this.pinImage = new Image();
+      this.pinImage.onload = () => this.draw();
+      this.pinImage.src = PIN_URL;
+    }
+    this.draw();
+  }
+
   setEvents(events: HistoryEvent[]) {
     this.events = events;
     this.draw();
@@ -457,6 +472,12 @@ export class MapView {
       ctx.drawImage(img, at[0] - size / 2, at[1] - size / 2, size, size);
       ctx.globalAlpha = 1;
       this.drawnBadges.push({ e, x: at[0], y: at[1] });
+    }
+
+    // The reported spot, its tip on the place.
+    const pinAt = this.pin && this.projection(this.pin);
+    if (pinAt && this.pinImage?.complete) {
+      ctx.drawImage(this.pinImage, pinAt[0] - PIN_WIDTH / 2, pinAt[1] - PIN_HEIGHT, PIN_WIDTH, PIN_HEIGHT);
     }
 
     // A shade behind the title so it stays readable over the map.

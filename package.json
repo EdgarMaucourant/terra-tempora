@@ -10,7 +10,9 @@
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
-    "check": "node scripts/check-data.mjs"
+    "check": "node scripts/check-data.mjs",
+    "contact-key": "node scripts/contact-key.mjs",
+    "read-contact": "node scripts/read-contact.mjs"
   },
   "dependencies": {
     "cesium": "^1.146.0",

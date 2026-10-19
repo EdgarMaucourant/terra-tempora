@@ -303,7 +303,15 @@
             <span data-i18n="feedback.messageLabel">Your message</span>
             <textarea name="message" rows="6" maxlength="3000" required data-i18n-placeholder="feedback.placeholder"></textarea>
           </label>
-          <p class="fine" data-i18n="feedback.privacy">Reviewers read every report. Please leave out personal details such as your email.</p>
+          <p class="fine" data-i18n="feedback.privacy">Reviewers read every report. Please leave out personal details such as your email from the message.</p>
+          <div id="feedback-help" class="feedback-help" hidden>
+            <label class="feedback-help-toggle"><input type="checkbox" name="help" /> <span data-i18n="feedback.helpToggle">I want to help fix the issue I reported</span></label>
+            <label class="feedback-email" hidden>
+              <span data-i18n="feedback.emailLabel">Your email, so we can contact you</span>
+              <input type="email" name="email" maxlength="254" autocomplete="email" />
+              <span class="fine" data-i18n="feedback.emailPrivacy">Your email is encrypted before it leaves your browser. It is never made public or sent to anyone except the authors of Terra Tempora.</span>
+            </label>
+          </div>
           <label class="feedback-trap" aria-hidden="true">Website <input name="website" tabindex="-1" autocomplete="off" /></label>
           <div id="feedback-turnstile"></div>
         </div>
