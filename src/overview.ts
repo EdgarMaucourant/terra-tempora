@@ -144,10 +144,10 @@ export class Overview {
         break;
       }
       case "home": {
-        eyebrow.textContent = t("overview.home");
-        title.textContent = t("home.title");
+        eyebrow.textContent = t("home.welcome");
+        title.textContent = t("page.title");
         meta.hidden = true;
-        lede.textContent = t("landing.lede");
+        lede.textContent = t("home.intro");
         lede.hidden = false;
         const items = el("ul", "overview-civs overview-actions");
         for (const action of subject.actions) {

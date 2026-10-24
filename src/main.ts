@@ -1438,10 +1438,10 @@ function showHome() {
   overview.render({
     kind: "home",
     actions: [
-      { label: t("landing.civilizations"), text: t("home.civsText"), run: () => openExplore("civs") },
-      { label: t("landing.countries"), text: t("home.countriesText"), run: () => openExplore("countries") },
-      { label: t("landing.nations"), text: t("home.nationsText"), run: () => openExplore("nations") },
-      { label: t("travel.title"), text: t("home.travelShort"), run: () => openExplore("travel") },
+      { label: t("travel.title"), text: t("home.travelIntro"), run: () => openExplore("travel") },
+      { label: t("landing.civilizations"), text: t("home.civsIntro"), run: () => openExplore("civs") },
+      { label: t("landing.countries"), text: t("home.countriesIntro"), run: () => openExplore("countries") },
+      { label: t("landing.nations"), text: t("home.nationsIntro"), run: () => openExplore("nations") },
     ],
   });
   document.title = t("page.title");
