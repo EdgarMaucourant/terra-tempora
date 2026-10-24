@@ -311,12 +311,8 @@ input {
 .view-more {
   font-size: 14px;
   line-height: 1;
-  opacity: 0;
-  transition: transform 0.15s;
-}
-
-.view-mode button[aria-pressed="true"] .view-more {
   opacity: 0.7;
+  transition: transform 0.15s;
 }
 
 .view-mode button[aria-expanded="true"] .view-more {
@@ -336,26 +332,14 @@ input {
   display: none;
 }
 
-.projection {
-  display: grid;
-  gap: 6px;
-  padding: 8px;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  font-size: 11px;
-  font-weight: 500;
-  color: var(--ink-soft);
+.projection-switch {
+  width: 264px;
+  grid-template-columns: 1fr 1fr;
 }
 
-.projection select {
-  width: 160px;
-  padding: 7px 8px;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  background: var(--panel-solid);
-  font: inherit;
-  font-size: 12px;
-  color: var(--ink);
+.view-sub button {
+  padding: 6px 10px;
+  text-align: left;
 }
 
 .axis-switch {
