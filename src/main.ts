@@ -831,14 +831,16 @@ function setTilted(on: boolean, animate = true) {
   });
 }
 
-$("axis-natural").addEventListener("click", () => {
+/** Picks an axis from the globe's submenu, bringing the globe back if the map is up. */
+function chooseAxis(on: boolean) {
   openViewMenu(null);
-  if (!tilted) setTilted(true);
-});
-$("axis-free").addEventListener("click", () => {
-  openViewMenu(null);
-  if (tilted) setTilted(false);
-});
+  if (map.active) {
+    setTilted(on, false);
+    setMapMode(false);
+  } else if (tilted !== on) setTilted(on);
+}
+$("axis-natural").addEventListener("click", () => chooseAxis(true));
+$("axis-free").addEventListener("click", () => chooseAxis(false));
 setTilted(tilted, false);
 
 // Globe or flat map. The map opens on the place the globe was looking at, and
@@ -860,19 +862,38 @@ function store(key: string, value: string) {
   }
 }
 
-const projectionSelect = $<HTMLSelectElement>("projection");
-for (const p of PROJECTIONS) projectionSelect.append(new Option(t(`projection.${p.id}` as MessageKey), p.id));
-projectionSelect.value = PROJECTIONS.some((p) => p.id === stored(PROJECTION_KEY)) ? stored(PROJECTION_KEY)! : PROJECTIONS[0].id;
-map.setProjection(projectionSelect.value);
-projectionSelect.addEventListener("change", () => {
-  const { lon, lat, zoom } = map.centre();
-  map.setProjection(projectionSelect.value);
-  store(PROJECTION_KEY, projectionSelect.value);
+let projection = PROJECTIONS.some((p) => p.id === stored(PROJECTION_KEY)) ? stored(PROJECTION_KEY)! : PROJECTIONS[0].id;
+const projectionButtons = PROJECTIONS.map((p) => {
+  const button = document.createElement("button");
+  button.type = "button";
+  button.textContent = t(`projection.${p.id}` as MessageKey);
+  button.addEventListener("click", () => chooseProjection(p.id));
+  return button;
+});
+$("projection-field").append(...projectionButtons);
+function setProjection(id: string) {
+  projection = id;
+  map.setProjection(id);
+  store(PROJECTION_KEY, id);
+  PROJECTIONS.forEach((p, i) => projectionButtons[i].setAttribute("aria-pressed", String(p.id === id)));
+}
+setProjection(projection);
+
+/** Picks a projection from the map's submenu, opening the map if the globe is up. */
+function chooseProjection(id: string) {
   openViewMenu(null);
+  if (!map.active) {
+    setProjection(id);
+    setMapMode(true);
+    return;
+  }
+  if (id === projection) return;
+  const { lon, lat, zoom } = map.centre();
+  setProjection(id);
   // Stay on the same place, at a comparable zoom.
   if (zoom > 1) map.focus(lon, lat, (14_000 / zoom) ** 2);
   else map.focus(lon, 0, null);
-});
+}
 
 /** The point at the middle of the globe and the realm size its altitude frames. */
 function globeCentre(): { lon: number; lat: number; area: number } {
@@ -912,8 +933,8 @@ function setMapMode(on: boolean, sync = true) {
 }
 
 // Each view's settings sit in a submenu beside its button: the axis for the
-// globe, the projection for the map. A click on the other view switches to
-// it; a click on the current one opens or closes its submenu.
+// globe, the projection for the map. The buttons only open or close their
+// submenu; picking an entry in it is what switches the view.
 const viewMenus = {
   globe: { button: $("view-globe"), menu: $("axis-switch") },
   map: { button: $("view-map"), menu: $("projection-field") },
@@ -925,11 +946,7 @@ function openViewMenu(which: keyof typeof viewMenus | null) {
   }
 }
 for (const [key, { button, menu }] of Object.entries(viewMenus) as [keyof typeof viewMenus, (typeof viewMenus)["globe"]][]) {
-  button.addEventListener("click", () => {
-    const current = (key === "map") === map.active;
-    if (!current) return setMapMode(key === "map");
-    openViewMenu(menu.hidden ? key : null);
-  });
+  button.addEventListener("click", () => openViewMenu(menu.hidden ? key : null));
 }
 document.addEventListener("click", (e) => {
   if (!(e.target as Element).closest(".view-item")) openViewMenu(null);
