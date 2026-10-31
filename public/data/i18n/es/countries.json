@@ -1,0 +1,365 @@
+{
+ "russia": {
+  "name": "Rusia"
+ },
+ "canada": {
+  "name": "Canadá"
+ },
+ "china": {
+  "name": "China"
+ },
+ "brazil": {
+  "name": "Brasil"
+ },
+ "united-states": {
+  "name": "Estados Unidos"
+ },
+ "kazakhstan": {
+  "name": "Kazajistán"
+ },
+ "algeria": {
+  "name": "Argelia"
+ },
+ "democratic-republic-of-the-congo": {
+  "name": "República Democrática del Congo"
+ },
+ "denmark": {
+  "name": "Dinamarca"
+ },
+ "mexico": {
+  "name": "México"
+ },
+ "saudi-arabia": {
+  "name": "Arabia Saudita"
+ },
+ "sudan": {
+  "name": "Sudán"
+ },
+ "iran": {
+  "name": "Irán"
+ },
+ "libya": {
+  "name": "Libia"
+ },
+ "peru": {
+  "name": "Perú"
+ },
+ "south-africa": {
+  "name": "Sudáfrica"
+ },
+ "mali": {
+  "name": "Malí"
+ },
+ "niger": {
+  "name": "Níger"
+ },
+ "ethiopia": {
+  "name": "Etiopía"
+ },
+ "egypt": {
+  "name": "Egipto"
+ },
+ "pakistan": {
+  "name": "Pakistán"
+ },
+ "turkey": {
+  "name": "Turquía"
+ },
+ "myanmar": {
+  "name": "Birmania"
+ },
+ "afghanistan": {
+  "name": "Afganistán"
+ },
+ "central-african-republic": {
+  "name": "República Centroafricana"
+ },
+ "south-sudan": {
+  "name": "Sudán del Sur"
+ },
+ "kenya": {
+  "name": "Kenia"
+ },
+ "botswana": {
+  "name": "Botsuana"
+ },
+ "ukraine": {
+  "name": "Ucrania"
+ },
+ "france": {
+  "name": "Francia"
+ },
+ "thailand": {
+  "name": "Tailandia"
+ },
+ "spain": {
+  "name": "España"
+ },
+ "papua-new-guinea": {
+  "name": "Papúa Nueva Guinea"
+ },
+ "turkmenistan": {
+  "name": "Turkmenistán"
+ },
+ "cameroon": {
+  "name": "Camerún"
+ },
+ "sweden": {
+  "name": "Suecia"
+ },
+ "iraq": {
+  "name": "Irak"
+ },
+ "norway": {
+  "name": "Noruega"
+ },
+ "uzbekistan": {
+  "name": "Uzbekistán"
+ },
+ "japan": {
+  "name": "Japón"
+ },
+ "morocco": {
+  "name": "Marruecos"
+ },
+ "zimbabwe": {
+  "name": "Zimbabue"
+ },
+ "germany": {
+  "name": "Alemania"
+ },
+ "republic-of-the-congo": {
+  "name": "República del Congo"
+ },
+ "philippines": {
+  "name": "Filipinas"
+ },
+ "malaysia": {
+  "name": "Malasia"
+ },
+ "finland": {
+  "name": "Finlandia"
+ },
+ "cote-d-ivoire": {
+  "name": "Costa de Marfil"
+ },
+ "oman": {
+  "name": "Omán"
+ },
+ "poland": {
+  "name": "Polonia"
+ },
+ "new-zealand": {
+  "name": "Nueva Zelanda"
+ },
+ "italy": {
+  "name": "Italia"
+ },
+ "united-kingdom": {
+  "name": "Reino Unido"
+ },
+ "gabon": {
+  "name": "Gabón"
+ },
+ "romania": {
+  "name": "Rumania"
+ },
+ "belarus": {
+  "name": "Bielorrusia"
+ },
+ "kyrgyzstan": {
+  "name": "Kirguistán"
+ },
+ "cambodia": {
+  "name": "Camboya"
+ },
+ "tunisia": {
+  "name": "Túnez"
+ },
+ "suriname": {
+  "name": "Surinam"
+ },
+ "bangladesh": {
+  "name": "Bangladés"
+ },
+ "tajikistan": {
+  "name": "Tayikistán"
+ },
+ "north-korea": {
+  "name": "Corea del Norte"
+ },
+ "syria": {
+  "name": "Siria"
+ },
+ "greece": {
+  "name": "Grecia"
+ },
+ "benin": {
+  "name": "Benín"
+ },
+ "iceland": {
+  "name": "Islandia"
+ },
+ "south-korea": {
+  "name": "Corea del Sur"
+ },
+ "hungary": {
+  "name": "Hungría"
+ },
+ "malawi": {
+  "name": "Malaui"
+ },
+ "jordan": {
+  "name": "Jordania"
+ },
+ "panama": {
+  "name": "Panamá"
+ },
+ "czech-republic": {
+  "name": "República Checa"
+ },
+ "united-arab-emirates": {
+  "name": "Emiratos Árabes Unidos"
+ },
+ "ireland": {
+  "name": "Irlanda"
+ },
+ "sierra-leone": {
+  "name": "Sierra Leona"
+ },
+ "azerbaijan": {
+  "name": "Azerbaiyán"
+ },
+ "latvia": {
+  "name": "Letonia"
+ },
+ "lithuania": {
+  "name": "Lituania"
+ },
+ "dominican-republic": {
+  "name": "República Dominicana"
+ },
+ "bosnia-and-herzegovina": {
+  "name": "Bosnia y Herzegovina"
+ },
+ "slovakia": {
+  "name": "Eslovaquia"
+ },
+ "croatia": {
+  "name": "Croacia"
+ },
+ "bhutan": {
+  "name": "Bután"
+ },
+ "netherlands": {
+  "name": "Países Bajos"
+ },
+ "taiwan": {
+  "name": "Taiwán"
+ },
+ "switzerland": {
+  "name": "Suiza"
+ },
+ "guinea-bissau": {
+  "name": "Guinea-Bisáu"
+ },
+ "solomon-islands": {
+  "name": "Islas Salomón"
+ },
+ "belgium": {
+  "name": "Bélgica"
+ },
+ "lesotho": {
+  "name": "Lesoto"
+ },
+ "equatorial-guinea": {
+  "name": "Guinea Ecuatorial"
+ },
+ "haiti": {
+  "name": "Haití"
+ },
+ "moldova": {
+  "name": "Moldavia"
+ },
+ "rwanda": {
+  "name": "Ruanda"
+ },
+ "north-macedonia": {
+  "name": "Macedonia del Norte"
+ },
+ "djibouti": {
+  "name": "Yibuti"
+ },
+ "slovenia": {
+  "name": "Eslovenia"
+ },
+ "belize": {
+  "name": "Belice"
+ },
+ "fiji": {
+  "name": "Fiyi"
+ },
+ "the-bahamas": {
+  "name": "Bahamas"
+ },
+ "timor-leste": {
+  "name": "Timor Oriental"
+ },
+ "eswatini": {
+  "name": "Esuatini"
+ },
+ "qatar": {
+  "name": "Catar"
+ },
+ "the-gambia": {
+  "name": "Gambia"
+ },
+ "lebanon": {
+  "name": "Líbano"
+ },
+ "brunei": {
+  "name": "Brunéi"
+ },
+ "cyprus": {
+  "name": "Chipre"
+ },
+ "trinidad-and-tobago": {
+  "name": "Trinidad y Tobago"
+ },
+ "mauritius": {
+  "name": "Mauricio"
+ },
+ "luxembourg": {
+  "name": "Luxemburgo"
+ },
+ "singapore": {
+  "name": "Singapur"
+ },
+ "sao-tome-and-principe": {
+  "name": "Santo Tomé y Príncipe"
+ },
+ "saint-vincent-and-the-grenadines": {
+  "name": "San Vicente y las Granadinas"
+ },
+ "palau": {
+  "name": "Palaos"
+ },
+ "grenada": {
+  "name": "Granada"
+ },
+ "saint-lucia": {
+  "name": "Santa Lucía"
+ },
+ "antigua-and-barbuda": {
+  "name": "Antigua y Barbuda"
+ },
+ "saint-kitts-and-nevis": {
+  "name": "San Cristóbal y Nieves"
+ },
+ "bahrain": {
+  "name": "Baréin"
+ },
+ "monaco": {
+  "name": "Mónaco"
+ }
+}

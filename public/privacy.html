@@ -1,0 +1,75 @@
+<!doctype html>
+<!-- Privacy policy and legal notice, in English (privacy.html) and French
+     (privacy-fr.html, "mentions légales") and Spanish (privacy-es.html): change all three together. Linked from the About pop-up and from the note under the report
+     form's email field. Keep it in step with what the code does: the report
+     form (src/feedback.ts, worker/index.js), the usage counts
+     (src/analytics.ts) and /api/where. -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy and legal notice · Terra Tempora</title>
+    <link rel="icon" href="data:," />
+    <style>
+      :root { color-scheme: dark; }
+      body {
+        margin: 0;
+        padding: 32px 16px 64px;
+        background: #07090d;
+        color: #eef0f2;
+        font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+      }
+      main { max-width: 720px; margin: 0 auto; }
+      nav { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 24px; font-size: 15px; }
+      h1 { font: 400 2rem/1.2 "Iowan Old Style", Georgia, serif; margin: 0 0 0.5rem; }
+      h2 { font: 400 1.4rem/1.3 "Iowan Old Style", Georgia, serif; margin: 2rem 0 0.5rem; }
+      p, li { color: #c9d0d8; }
+      ul { padding-left: 1.2rem; }
+      a { color: #e2742f; }
+      .muted { color: #8a939e; font-size: 14px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <a href="./">Back to the globe</a>
+        <a href="privacy-fr.html" lang="fr" hreflang="fr">Version française</a>
+        <a href="privacy-es.html" lang="es" hreflang="es">Versión en español</a>
+      </nav>
+      <h1>Privacy and legal notice</h1>
+      <p class="muted">Last updated: 31 October 2026</p>
+
+      <h2>Legal notice</h2>
+      <ul>
+        <li>Publisher and director of publication: Edgar Maucourant, as a private individual. Terra Tempora is a non-commercial, amateur project.</li>
+        <li>Contact: <a href="mailto:privacy@terra-tempora.com">privacy@terra-tempora.com</a></li>
+        <li>Host: Cloudflare, Inc., 101 Townsend St, San Francisco, CA 94107, United States. Phone: +1 (650) 319-8930.</li>
+        <li>The code is public on <a href="https://github.com/EdgarMaucourant/terra-tempora" target="_blank" rel="noopener">GitHub</a>. The sources of the maps and pictures, and their licences, are listed under Sources on the site.</li>
+      </ul>
+
+      <h2>What we collect, and why</h2>
+      <p>Terra Tempora has no account, no advertising and no cookies. It collects as little as it can:</p>
+      <ul>
+        <li><strong>Anonymous usage counts.</strong> To learn which parts of the site are used, the page sends counts such as the realms and periods viewed, searches that found nothing, the language, the kind of device and the country. There is no cookie, no visitor id and no IP address, so nothing identifies you. The counts are kept by Cloudflare for about 3 months.</li>
+        <li><strong>Your rough location.</strong> When the site opens, it asks Cloudflare which country and city your connection comes from, only to turn the globe towards you. Nothing is stored.</li>
+        <li><strong>Reports.</strong> When you report a problem, your message and what you were looking at are published as a public issue on GitHub, so the fix can be discussed in the open. Please keep personal details out of the message. Reports go through Cloudflare's anti-spam check (Turnstile) and are limited per connection to stop abuse; your IP address is used for this but not stored by us.</li>
+        <li><strong>Your email, if you offer to help.</strong> It is optional and only asked for if you tick "I want to help". It is encrypted in your browser before it is sent, and only the encrypted copy is kept, in the GitHub issue. Only the authors of Terra Tempora hold the key to read it. We use it only to contact you about your report, based on your consent, and delete it once the fix is done, after 2 years at most.</li>
+        <li><strong>Kind words.</strong> When you send a message from the Support pop-up, your message, the name and email you choose to give (both optional) and the site's language are emailed privately to the publisher through Cloudflare. They are not published. They stay in the publisher's mailbox (Gmail, by Google), and we delete one on request. Your email is used only to answer you. Like reports, they go through the anti-spam check and the limit per connection.</li>
+        <li><strong>Donations.</strong> The Ko-fi and GitHub Sponsors buttons are plain links: nothing loads from those sites until you follow one. A donation is handled entirely by Ko-fi or GitHub, under their own privacy policies; we only learn what they show us, such as the name you give them.</li>
+        <li><strong>In your browser.</strong> Your browser keeps your language and a few display choices, and a cache of Wikidata answers to load faster. They stay on your device and are never sent to us.</li>
+      </ul>
+
+      <h2>Who else is involved</h2>
+      <ul>
+        <li>Cloudflare, Inc. serves the site, counts the visits and checks reports for spam.</li>
+        <li>GitHub, Inc. stores the reports.</li>
+        <li>Google LLC hosts the publisher's mailbox, where kind words and emails to the address above arrive.</li>
+        <li>The Wikimedia Foundation serves the pictures and texts from Wikipedia, Wikidata and Wikimedia Commons, which your browser loads directly. See <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" target="_blank" rel="noopener">their privacy policy</a>.</li>
+      </ul>
+      <p>These companies are based in the United States. Cloudflare, GitHub and Google are certified under the EU–US Data Privacy Framework.</p>
+
+      <h2>Your rights</h2>
+      <p>You can ask to see, correct or delete your data, or withdraw your consent, at any time by writing to <a href="mailto:privacy@terra-tempora.com">privacy@terra-tempora.com</a>. If it is about a report, give its number or link so we can find it. If you think your rights are not respected, you can complain to the <a href="https://www.cnil.fr/en" target="_blank" rel="noopener">CNIL</a>, the French data protection authority.</p>
+    </main>
+  </body>
+</html>

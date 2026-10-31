@@ -1,0 +1,4 @@
+# Who must approve changes before they are published, once "Require review
+# from Code Owners" is on for main. Later lines win: give a language to its
+# reviewer, e.g. `/public/data/i18n/fr/ @someone` and `/src/locales/fr.json @someone`.
+*                       @EdgarMaucourant

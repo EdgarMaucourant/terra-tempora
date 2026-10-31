@@ -1,0 +1,755 @@
+{
+ "source": "Hand-written for Terra Tempora; places and dates from standard references (see each event's links).",
+ "events": [
+  {
+   "id": "temujin-born",
+   "kind": "birth",
+   "year": 1162,
+   "title": "Temüjin is born",
+   "place": "Delüün Boldog, on the Onon River (traditional site)",
+   "lonLat": [
+    111.6,
+    49.0
+   ],
+   "approx": true,
+   "civs": [
+    "mongol-empire"
+   ],
+   "summary": "The future Genghis Khan is born into the Borjigin clan, son of the chieftain Yesügei. The year is traditionally 1162, though 1155 and 1167 are also given. His father's murder when he was about nine left the family outcast, a hardship that shaped his rise.",
+   "wikipedia": "Genghis_Khan",
+   "search": "Genghis Khan",
+   "links": [
+    {
+     "label": "Britannica",
+     "url": "https://www.britannica.com/biography/Genghis-Khan"
+    }
+   ]
+  },
+  {
+   "id": "kurultai-1206",
+   "kind": "crown",
+   "year": 1206,
+   "title": "Temüjin proclaimed Genghis Khan",
+   "place": "Great assembly at the source of the Onon River",
+   "lonLat": [
+    108.9,
+    48.7
+   ],
+   "approx": true,
+   "civs": [
+    "mongol-empire"
+   ],
+   "summary": "Having united the Mongol and Turkic tribes of the steppe, Temüjin is proclaimed Genghis Khan at a great assembly, a kurultai. He reorganises his people into units of ten, a hundred, a thousand and ten thousand, and lays down the laws later known as the Yassa. The Mongol Empire dates from this moment.",
+   "wikipedia": "Mongol_Empire",
+   "search": "Mongol empire",
+   "links": [
+    {
+     "label": "Britannica",
+     "url": "https://www.britannica.com/topic/Mongol-empire"
+    }
+   ]
+  },
+  {
+   "id": "yinchuan-1209",
+   "kind": "siege",
+   "year": 1209,
+   "title": "Siege of Yinchuan",
+   "place": "Zhongxing (Yinchuan), capital of the Western Xia",
+   "lonLat": [
+    106.27,
+    38.47
+   ],
+   "civs": [
+    "mongol-empire"
+   ],
+   "summary": "The Mongols besiege the Western Xia capital and try to flood it by diverting the Yellow River, but the dyke breaks and floods their own camp. Emperor Li Anquan submits all the same, paying tribute and giving a daughter in marriage. It is the Mongols' first conquest of a settled state.",
+   "wikipedia": "Siege_of_Yinchuan",
+   "search": "Western Xia"
+  },
+  {
+   "id": "yehuling-1211",
+   "kind": "battle",
+   "year": 1211,
+   "title": "Battle of Yehuling",
+   "place": "Badger's Mouth pass, north-west of Zhangjiakou",
+   "lonLat": [
+    114.7,
+    40.9
+   ],
+   "approx": true,
+   "civs": [
+    "mongol-empire"
+   ],
+   "summary": "At the Badger's Mouth pass, Genghis Khan's army destroys a much larger army of the Jin dynasty. The defeat opens northern China to the Mongols and is remembered as one of the bloodiest battles of the age.",
+   "wikipedia": "Battle_of_Yehuling",
+   "search": "Jin dynasty Mongol"
+  },
+  {
+   "id": "zhongdu-1215",
+   "kind": "siege",
+   "year": 1215,
+   "title": "Fall of Zhongdu",
+   "place": "Zhongdu, the Jin capital (today's Beijing)",
+   "lonLat": [
+    116.35,
+    39.88
+   ],
+   "civs": [
+    "mongol-empire"
+   ],
+   "summary": "After the Jin court flees south to Kaifeng, the Mongols take and sack Zhongdu, the Jin capital on the site of today's Beijing. The Jin hold out in the south for almost twenty more years.",
+   "wikipedia": "Battle_of_Zhongdu",
+   "search": "Zhongdu"
+  },
+  {
+   "id": "otrar-1219",
+   "kind": "siege",
+   "year": 1219,
+   "to": 1220,
+   "title": "Siege of Otrar",
+   "place": "Otrar, on the Syr Darya",
+   "lonLat": [
+    68.3,
+    42.85
+   ],
+   "civs": [
+    "mongol-empire"
+   ],
+   "summary": "The governor of Otrar had massacred a Mongol trade caravan, and the Khwarazm Shah had killed Genghis Khan's envoys. In revenge the Mongols invade Khwarazm and besiege Otrar, which falls after months; its governor is put to death.",
+   "wikipedia": "Siege_of_Otrar",
+   "search": "Khwarezmian Empire Mongol invasion"
+  },
+  {
+   "id": "bukhara-1220",
+   "kind": "siege",
+   "year": 1220,
+   "title": "Fall of Bukhara",
+   "place": "Bukhara",
+   "lonLat": [
+    64.42,
+    39.77
+   ],
+   "civs": [
+    "mongol-empire"
+   ],
+   "summary": "Genghis Khan crosses the Kyzylkum desert to appear behind the Khwarazmian lines and takes Bukhara. The city is sacked and burned; the Persian historian Juvayni has him tell its people that he is the punishment of God.",
+   "wikipedia": "Siege_of_Bukhara",
+   "search": "Bukhara"
+  },
+  {
+   "id": "samarkand-1220",
+   "kind": "siege",
+   "year": 1220,
+   "title": "Fall of Samarkand",
+   "place": "Samarkand, capital of the Khwarazm Shah",
+   "lonLat": [
+    66.97,
+    39.65
+   ],
+   "civs": [
+    "mongol-empire"
+   ],
+   "summary": "Samarkand, the richest city of the Khwarazmian empire, surrenders after a short siege. Much of its garrison is killed and thousands of craftsmen are sent east to work for the Mongols.",
+   "wikipedia": "Siege_of_Samarkand_(1220)",
+   "search": "Samarkand"
+  },
+  {
+   "id": "gurganj-1221",
+   "kind": "siege",
+   "year": 1221,
+   "title": "Fall of Gurganj",
+   "place": "Gurganj (Konye-Urgench), on the Amu Darya",
+   "lonLat": [
+    59.15,
+    42.33
+   ],
+   "civs": [
+    "mongol-empire"
+   ],
+   "summary": "Gurganj, the old Khwarazmian capital, resists for months until the Mongols flood it by breaking the dams of the Amu Darya. Its fall is often counted among the bloodiest massacres in history.",
+   "wikipedia": "Siege_of_Gurganj",
+   "search": "Urgench"
+  },
+  {
+   "id": "indus-1221",
+   "kind": "battle",
+   "year": 1221,
+   "title": "Battle of the Indus",
+   "place": "Banks of the Indus River",
+   "lonLat": [
+    71.6,
+    33.0
+   ],
+   "approx": true,
+   "civs": [
+    "mongol-empire"
+   ],
+   "summary": "Genghis Khan catches Jalal al-Din, the last Khwarazmian prince, against the Indus and destroys his army. Jalal al-Din escapes by riding his horse off the bank into the river, a feat Genghis Khan is said to have admired.",
+   "wikipedia": "Battle_of_the_Indus",
+   "search": "Jalal al-Din Mingburnu"
+  },
+  {
+   "id": "kalka-1223",
+   "kind": "battle",
+   "year": 1223,
+   "title": "Battle of the Kalka River",
+   "place": "Kalka River, north of the Sea of Azov",
+   "lonLat": [
+    37.6,
+    47.3
+   ],
+   "approx": true,
+   "civs": [
+    "mongol-empire"
+   ],
+   "summary": "On a long scouting raid around the Caspian, the generals Jebe and Subutai defeat an alliance of Rus princes and Cumans. The captured princes are crushed beneath a wooden platform on which the victors feast.",
+   "wikipedia": "Battle_of_the_Kalka_River",
+   "search": "Battle of the Kalka River"
+  },
+  {
+   "id": "genghis-dies-1227",
+   "kind": "death",
+   "year": 1227,
+   "title": "Death of Genghis Khan",
+   "place": "Liupan Mountains, during the war on the Western Xia",
+   "lonLat": [
+    106.2,
+    35.6
+   ],
+   "approx": true,
+   "civs": [
+    "mongol-empire"
+   ],
+   "summary": "Genghis Khan dies while his armies are destroying the Western Xia; whether from a fall from his horse, illness or a wound is unknown. He is buried in secret in Mongolia, and his grave has never been found.",
+   "wikipedia": "Genghis_Khan",
+   "search": "Genghis Khan",
+   "links": [
+    {
+     "label": "Britannica",
+     "url": "https://www.britannica.com/biography/Genghis-Khan"
+    }
+   ]
+  },
+  {
+   "id": "ogedei-1229",
+   "kind": "crown",
+   "year": 1229,
+   "title": "Ögedei elected Great Khan",
+   "place": "Kurultai on the Kherlen River",
+   "lonLat": [
+    109.5,
+    47.3
+   ],
+   "approx": true,
+   "civs": [
+    "mongol-empire"
+   ],
+   "summary": "At an assembly on the Kherlen River, Genghis Khan's third son Ögedei is confirmed as his successor. Under him the empire builds a capital and a network of relay stations, the yam, and resumes its wars in China, Persia and Europe.",
+   "wikipedia": "Ögedei_Khan",
+   "search": "Ögödei"
+  },
+  {
+   "id": "caizhou-1234",
+   "kind": "siege",
+   "year": 1234,
+   "title": "Fall of the Jin at Caizhou",
+   "place": "Caizhou (Runan, Henan)",
+   "lonLat": [
+    114.36,
+    33.0
+   ],
+   "civs": [
+    "mongol-empire"
+   ],
+   "summary": "Mongol and Southern Song armies besiege the last Jin emperor at Caizhou. Emperor Aizong hands the throne to a general and takes his own life, and the Jin dynasty ends in 1234.",
+   "wikipedia": "Siege_of_Caizhou",
+   "search": "Jin dynasty"
+  },
+  {
+   "id": "karakorum-1235",
+   "kind": "city",
+   "year": 1235,
+   "title": "Karakorum becomes the capital",
+   "place": "Karakorum, in the Orkhon valley",
+   "lonLat": [
+    102.82,
+    47.2
+   ],
+   "civs": [
+    "mongol-empire"
+   ],
+   "summary": "Ögedei walls Karakorum in the Orkhon valley and makes it the capital. Merchants, envoys and craftsmen from across Eurasia gather there; William of Rubruck later describes its silver tree, a fountain that poured four drinks.",
+   "wikipedia": "Karakorum",
+   "search": "Karakorum"
+  },
+  {
+   "id": "ryazan-1237",
+   "kind": "siege",
+   "year": 1237,
+   "title": "Sack of Ryazan",
+   "place": "Old Ryazan, on the Oka River",
+   "lonLat": [
+    40.4,
+    54.4
+   ],
+   "approx": true,
+   "civs": [
+    "mongol-empire"
+   ],
+   "summary": "Batu and Subutai open the invasion of the Rus principalities by storming Ryazan in December 1237. The city is destroyed and never rebuilt on that site.",
+   "wikipedia": "Siege_of_Ryazan",
+   "search": "Mongol invasion of Kievan Rus"
+  },
+  {
+   "id": "vladimir-1238",
+   "kind": "siege",
+   "year": 1238,
+   "title": "Fall of Vladimir",
+   "place": "Vladimir, capital of Vladimir-Suzdal",
+   "lonLat": [
+    40.4,
+    56.13
+   ],
+   "civs": [
+    "mongol-empire"
+   ],
+   "summary": "The Mongols take Vladimir, the leading city of north-eastern Rus, in February 1238; the grand prince's family dies in the burning cathedral. A month later Grand Prince Yuri II is killed at the Sit River.",
+   "wikipedia": "Siege_of_Vladimir",
+   "search": "Vladimir-Suzdal"
+  },
+  {
+   "id": "kyiv-1240",
+   "kind": "siege",
+   "year": 1240,
+   "title": "Fall of Kyiv",
+   "place": "Kyiv",
+   "lonLat": [
+    30.52,
+    50.45
+   ],
+   "civs": [
+    "mongol-empire"
+   ],
+   "summary": "Kyiv, the old capital of the Rus, falls in December 1240 after a short siege. Most of the city is destroyed, and the Mongols move on into Poland and Hungary.",
+   "wikipedia": "Siege_of_Kiev_(1240)",
+   "search": "Kyiv Mongol 1240"
+  },
+  {
+   "id": "legnica-1241",
+   "kind": "battle",
+   "year": 1241,
+   "title": "Battle of Legnica",
+   "place": "Legnickie Pole, Silesia",
+   "lonLat": [
+    16.25,
+    51.15
+   ],
+   "civs": [
+    "mongol-empire"
+   ],
+   "summary": "On 9 April 1241 a Mongol force sent to guard the flank defeats the Polish and Moravian knights of Duke Henry II the Pious, who is killed. Two days later the main army fights at Mohi.",
+   "wikipedia": "Battle_of_Legnica",
+   "search": "Battle of Legnica"
+  },
+  {
+   "id": "mohi-1241",
+   "kind": "battle",
+   "year": 1241,
+   "title": "Battle of Mohi",
+   "place": "Mohi, on the Sajó River, Hungary",
+   "lonLat": [
+    20.93,
+    47.98
+   ],
+   "civs": [
+    "mongol-empire"
+   ],
+   "summary": "On the Sajó River, Batu and Subutai crush the army of King Béla IV of Hungary on 11 April 1241. Much of Hungary is ravaged over the following year.",
+   "wikipedia": "Battle_of_Mohi",
+   "search": "Battle of Mohi"
+  },
+  {
+   "id": "ogedei-dies-1241",
+   "kind": "death",
+   "year": 1241,
+   "title": "Death of Ögedei",
+   "place": "Near Karakorum",
+   "lonLat": [
+    103.4,
+    47.0
+   ],
+   "approx": true,
+   "civs": [
+    "mongol-empire"
+   ],
+   "summary": "Ögedei dies in December 1241, reportedly after a night of heavy drinking. The princes leading the European campaign turn back for the succession, and the Mongols leave Hungary in 1242.",
+   "wikipedia": "Ögedei_Khan",
+   "search": "Ögödei"
+  },
+  {
+   "id": "kosedag-1243",
+   "kind": "battle",
+   "year": 1243,
+   "title": "Battle of Köse Dağ",
+   "place": "Köse Dağ, between Sivas and Erzincan",
+   "lonLat": [
+    38.75,
+    40.05
+   ],
+   "approx": true,
+   "civs": [
+    "mongol-empire"
+   ],
+   "summary": "The general Baiju defeats the Seljuk Sultanate of Rum in eastern Anatolia. The Seljuks become Mongol vassals, paying tribute.",
+   "wikipedia": "Battle_of_Köse_Dağ",
+   "search": "Seljuks of Rum Mongol"
+  },
+  {
+   "id": "carpini-1246",
+   "kind": "journey",
+   "year": 1246,
+   "title": "A papal envoy at Güyük's enthronement",
+   "place": "Sira Ordo, the khan's camp near Karakorum",
+   "lonLat": [
+    102.3,
+    47.5
+   ],
+   "approx": true,
+   "civs": [
+    "mongol-empire"
+   ],
+   "summary": "Giovanni da Pian del Carpine, sent by Pope Innocent IV, witnesses Güyük's enthronement as Great Khan. Güyük's reply orders the Pope to come and submit; Carpini's report is one of the first European accounts of the Mongols.",
+   "wikipedia": "Giovanni_da_Pian_del_Carpine",
+   "search": "Giovanni da Pian del Carpine"
+  },
+  {
+   "id": "rubruck-1254",
+   "kind": "journey",
+   "year": 1254,
+   "title": "William of Rubruck at Karakorum",
+   "place": "Karakorum",
+   "lonLat": [
+    102.82,
+    47.2
+   ],
+   "civs": [
+    "mongol-empire"
+   ],
+   "summary": "The Flemish friar William of Rubruck reaches Möngke's court and spends months at Karakorum. He takes part in a debate between Christians, Muslims and Buddhists held before the khan, and leaves a vivid account of the city.",
+   "wikipedia": "William_of_Rubruck",
+   "search": "William of Rubruck"
+  },
+  {
+   "id": "baghdad-1258",
+   "kind": "siege",
+   "year": 1258,
+   "title": "Sack of Baghdad",
+   "place": "Baghdad",
+   "lonLat": [
+    44.37,
+    33.31
+   ],
+   "civs": [
+    "mongol-empire"
+   ],
+   "summary": "Hülegü, Möngke's brother, besieges and sacks Baghdad. The caliph al-Musta'sim is put to death and the Abbasid caliphate ends, a blow long remembered across the Islamic world.",
+   "wikipedia": "Siege_of_Baghdad_(1258)",
+   "search": "Siege of Baghdad 1258"
+  },
+  {
+   "id": "diaoyu-1259",
+   "kind": "death",
+   "year": 1259,
+   "title": "Möngke dies at Diaoyu Fortress",
+   "place": "Diaoyu Fortress, Hechuan (Chongqing)",
+   "lonLat": [
+    106.28,
+    30.0
+   ],
+   "civs": [
+    "mongol-empire"
+   ],
+   "summary": "Möngke dies while besieging the Song fortress of Diaoyu, of disease or a wound. His death halts the campaigns in China and the Middle East as the princes go home to fight over the succession.",
+   "wikipedia": "Siege_of_Diaoyu_Castle",
+   "search": "Möngke"
+  },
+  {
+   "id": "ain-jalut-1260",
+   "kind": "battle",
+   "year": 1260,
+   "title": "Battle of Ain Jalut",
+   "place": "Ain Jalut, Galilee",
+   "lonLat": [
+    35.37,
+    32.55
+   ],
+   "civs": [
+    "mongol-empire"
+   ],
+   "summary": "With most of Hülegü's army withdrawn after Möngke's death, the Mamluks of Egypt under Qutuz and Baybars defeat the Mongol force left in Syria. It is the first major Mongol defeat and stops their advance towards Egypt.",
+   "wikipedia": "Battle_of_Ain_Jalut",
+   "search": "Battle of Ain Jalut"
+  },
+  {
+   "id": "toluid-war-1260",
+   "kind": "war",
+   "year": 1260,
+   "to": 1264,
+   "title": "Kublai proclaimed khan; civil war",
+   "place": "Shangdu (Kaiping), Kublai's capital",
+   "lonLat": [
+    116.18,
+    42.36
+   ],
+   "civs": [
+    "mongol-empire"
+   ],
+   "summary": "Kublai is proclaimed Great Khan at Shangdu while his brother Ariq Böke claims the title at Karakorum. Kublai wins the four-year war, but the western khans no longer fully obey him: the empire splits into the Yuan, the Ilkhanate, the Golden Horde and the Chagatai Khanate.",
+   "wikipedia": "Toluid_Civil_War",
+   "search": "Kublai Khan Ariq Böke"
+  },
+  {
+   "id": "berke-hulegu-1262",
+   "kind": "war",
+   "year": 1262,
+   "to": 1263,
+   "title": "War between the Golden Horde and the Ilkhanate",
+   "place": "Terek River, North Caucasus",
+   "lonLat": [
+    46.0,
+    43.6
+   ],
+   "approx": true,
+   "civs": [
+    "mongol-empire",
+    "golden-horde",
+    "ilkhanate"
+   ],
+   "summary": "The first open war between Mongol khanates: Berke of the Golden Horde, a convert to Islam, fights Hülegü of the Ilkhanate over the Caucasus and the sack of Baghdad. Berke allies with the Mamluks, and Hülegü's army is defeated on the frozen Terek River in 1263.",
+   "wikipedia": "Berke–Hulagu_war",
+   "search": "Berke Hülegü"
+  },
+  {
+   "id": "xiangyang-1268",
+   "kind": "siege",
+   "year": 1268,
+   "to": 1273,
+   "title": "Siege of Xiangyang",
+   "place": "Xiangyang and Fancheng, on the Han River",
+   "lonLat": [
+    112.12,
+    32.01
+   ],
+   "civs": [
+    "mongol-empire",
+    "yuan-dynasty"
+   ],
+   "summary": "The Mongols besiege the twin Song cities of Xiangyang and Fancheng for five years. Counterweight trebuchets built by engineers from the Ilkhanate finally break the walls, opening the Yangtze valley to the Mongols.",
+   "wikipedia": "Battle_of_Xiangyang",
+   "search": "Xiangyang siege"
+  },
+  {
+   "id": "yuan-1271",
+   "kind": "crown",
+   "year": 1271,
+   "title": "Kublai founds the Yuan dynasty",
+   "place": "Dadu (Khanbaliq), today's Beijing",
+   "lonLat": [
+    116.39,
+    39.93
+   ],
+   "civs": [
+    "mongol-empire",
+    "yuan-dynasty"
+   ],
+   "summary": "Kublai takes the Chinese dynastic name Yuan and rules from Dadu, his new capital on the site of today's Beijing. The Great Khans are now Chinese emperors as well.",
+   "wikipedia": "Yuan_dynasty",
+   "search": "Yuan dynasty",
+   "links": [
+    {
+     "label": "Britannica",
+     "url": "https://www.britannica.com/biography/Kublai-Khan"
+    }
+   ]
+  },
+  {
+   "id": "bunei-1274",
+   "kind": "battle",
+   "year": 1274,
+   "title": "First Mongol invasion of Japan",
+   "place": "Hakata Bay, Kyushu",
+   "lonLat": [
+    130.38,
+    33.62
+   ],
+   "civs": [
+    "mongol-empire",
+    "yuan-dynasty"
+   ],
+   "summary": "A Mongol and Korean fleet lands at Hakata Bay. After a day of fighting the invaders return to their ships, and a storm wrecks much of the fleet on the way home.",
+   "wikipedia": "Battle_of_Bun'ei",
+   "search": "Mongol invasions of Japan"
+  },
+  {
+   "id": "polo-1275",
+   "kind": "journey",
+   "year": 1275,
+   "title": "Marco Polo reaches Kublai's court",
+   "place": "Shangdu (Xanadu)",
+   "lonLat": [
+    116.18,
+    42.36
+   ],
+   "civs": [
+    "mongol-empire",
+    "yuan-dynasty"
+   ],
+   "summary": "The Venetian Marco Polo arrives at Shangdu with his father and uncle and stays in Kublai's service for about seventeen years. The book of his travels made the Mongol court famous in Europe.",
+   "wikipedia": "Marco_Polo",
+   "search": "Marco Polo",
+   "links": [
+    {
+     "label": "Britannica",
+     "url": "https://www.britannica.com/biography/Marco-Polo"
+    }
+   ]
+  },
+  {
+   "id": "yamen-1279",
+   "kind": "battle",
+   "year": 1279,
+   "title": "Battle of Yamen",
+   "place": "Yamen, at the mouth of the Pearl River",
+   "lonLat": [
+    113.07,
+    22.3
+   ],
+   "civs": [
+    "mongol-empire",
+    "yuan-dynasty"
+   ],
+   "summary": "In a naval battle in the Pearl River delta the Yuan fleet destroys the last Song forces. A Song minister leaps into the sea with the child emperor, ending the Song dynasty; for the first time all of China is under Mongol rule.",
+   "wikipedia": "Battle_of_Yamen",
+   "search": "Song dynasty fall Yamen"
+  },
+  {
+   "id": "koan-1281",
+   "kind": "battle",
+   "year": 1281,
+   "title": "Second Mongol invasion of Japan",
+   "place": "Takashima, Imari Bay",
+   "lonLat": [
+    129.85,
+    33.37
+   ],
+   "civs": [
+    "mongol-empire",
+    "yuan-dynasty"
+   ],
+   "summary": "A far larger invasion, with fleets from Korea and southern China, is held off by Japanese coastal walls around Hakata. A typhoon, later called the kamikaze or divine wind, then destroys much of the fleet off Takashima.",
+   "wikipedia": "Battle_of_Kōan",
+   "search": "Mongol invasions of Japan kamikaze"
+  },
+  {
+   "id": "bachdang-1288",
+   "kind": "battle",
+   "year": 1288,
+   "title": "Battle of Bạch Đằng",
+   "place": "Bạch Đằng River, Đại Việt",
+   "lonLat": [
+    106.75,
+    20.9
+   ],
+   "civs": [
+    "mongol-empire",
+    "yuan-dynasty"
+   ],
+   "summary": "On the Bạch Đằng River, the general Trần Hưng Đạo lures the Yuan fleet onto iron-tipped stakes hidden in the riverbed at low tide. The third Mongol invasion of Đại Việt ends in defeat.",
+   "wikipedia": "Battle_of_Bạch_Đằng_(1288)",
+   "search": "Tran Hung Dao"
+  },
+  {
+   "id": "kublai-dies-1294",
+   "kind": "death",
+   "year": 1294,
+   "title": "Death of Kublai Khan",
+   "place": "Dadu (Khanbaliq), today's Beijing",
+   "lonLat": [
+    116.39,
+    39.93
+   ],
+   "civs": [
+    "mongol-empire",
+    "yuan-dynasty"
+   ],
+   "summary": "Kublai dies at Dadu, aged 78, and is succeeded by his grandson Temür. He is the last Great Khan whose authority reached, at least in name, across the whole empire.",
+   "wikipedia": "Kublai_Khan",
+   "search": "Kublai Khan",
+   "links": [
+    {
+     "label": "Britannica",
+     "url": "https://www.britannica.com/biography/Kublai-Khan"
+    }
+   ]
+  },
+  {
+   "id": "peace-1304",
+   "kind": "treaty",
+   "year": 1304,
+   "title": "Peace among the khanates",
+   "place": "Agreed between the khans' courts; shown at the Yuan capital, Dadu",
+   "lonLat": [
+    116.39,
+    39.93
+   ],
+   "approx": true,
+   "civs": [
+    "mongol-empire",
+    "yuan-dynasty",
+    "golden-horde",
+    "ilkhanate",
+    "chagatai-khanate"
+   ],
+   "summary": "The khans Temür of the Yuan, Duwa of the Chagatai Khanate, Toqta of the Golden Horde and Öljaitü of the Ilkhanate make peace and recognise the Yuan emperor as their nominal overlord. The truce eases trade and travel along the Silk Road, the period often called the Pax Mongolica.",
+   "wikipedia": "Pax_Mongolica",
+   "search": "Pax Mongolica"
+  },
+  {
+   "id": "caffa-1346",
+   "kind": "plague",
+   "year": 1346,
+   "title": "Siege of Caffa and the Black Death",
+   "place": "Caffa (Feodosia), Crimea",
+   "lonLat": [
+    35.38,
+    45.03
+   ],
+   "civs": [
+    "mongol-empire",
+    "golden-horde"
+   ],
+   "summary": "The Golden Horde under Jani Beg besieges the Genoese port of Caffa. Plague breaks out among the besiegers, and the notary Gabriele de' Mussi wrote that corpses were thrown over the walls. Ships leaving Caffa are thought to have helped carry the Black Death to Europe.",
+   "wikipedia": "Black_Death",
+   "search": "Black Death"
+  },
+  {
+   "id": "dadu-1368",
+   "kind": "war",
+   "year": 1368,
+   "title": "The Ming take Dadu",
+   "place": "Dadu (Khanbaliq), today's Beijing",
+   "lonLat": [
+    116.39,
+    39.93
+   ],
+   "civs": [
+    "mongol-empire",
+    "yuan-dynasty",
+    "northern-yuan"
+   ],
+   "summary": "Ming armies take Dadu, and the last Yuan emperor, Toghon Temür, flees to the steppe. Mongol rule in China ends, though the Northern Yuan keep the title in Mongolia.",
+   "wikipedia": "Yuan_dynasty",
+   "search": "Ming dynasty founding"
+  }
+ ]
+}

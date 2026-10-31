@@ -1,0 +1,15 @@
+{
+ "type": "FeatureCollection",
+ "credit": {
+  "realms": "The Luba kingdoms, around 1850",
+  "title": "Lunda Empire.png",
+  "author": "Library of Congress, Zaire: A Country Study (1994), after Jan Vansina, Kingdoms of the Savanna (1968)",
+  "url": "https://commons.wikimedia.org/wiki/File:Lunda_Empire.png",
+  "license": "Public domain",
+  "licenseUrl": "https://commons.wikimedia.org/wiki/File:Lunda_Empire.png",
+  "changes": "Traced and georeferenced with the present-day border of the Democratic Republic of the Congo that it draws"
+ },
+ "features": [
+  {"type":"Feature","properties":{"Name":"Luba Empire","FromYear":1780,"ToYear":1889,"Wikipedia":"Luba Empire","Wikidata":"Q1768252","Map":"Luba kingdoms"},"geometry":{"type":"Polygon","coordinates":[[[22.46,-5.46],[22.63,-5.23],[22.98,-5.16],[23.38,-5.29],[23.69,-5.55],[24.0,-5.92],[24.36,-5.99],[24.83,-5.94],[25.35,-5.78],[25.75,-5.51],[26.1,-5.34],[26.47,-5.17],[26.81,-5.16],[26.87,-5.33],[26.91,-5.93],[27.58,-5.97],[27.72,-6.23],[27.78,-6.83],[27.82,-7.52],[27.78,-8.09],[27.59,-8.46],[27.26,-8.78],[26.92,-9.1],[26.51,-9.33],[25.88,-9.3],[25.07,-9.15],[24.14,-9.02],[23.56,-8.79],[23.1,-8.43],[22.73,-7.88],[22.52,-7.21],[22.4,-6.5],[22.4,-5.81],[22.46,-5.46]]]}}
+ ]
+}

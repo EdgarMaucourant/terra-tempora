@@ -1,0 +1,552 @@
+{
+ "russia": {
+  "name": "Russie"
+ },
+ "canada": {
+  "name": "Canada"
+ },
+ "china": {
+  "name": "Chine"
+ },
+ "brazil": {
+  "name": "Brésil"
+ },
+ "united-states": {
+  "name": "États-Unis"
+ },
+ "australia": {
+  "name": "Australie"
+ },
+ "india": {
+  "name": "Inde"
+ },
+ "argentina": {
+  "name": "Argentine"
+ },
+ "kazakhstan": {
+  "name": "Kazakhstan"
+ },
+ "algeria": {
+  "name": "Algérie"
+ },
+ "democratic-republic-of-the-congo": {
+  "name": "République démocratique du Congo"
+ },
+ "denmark": {
+  "name": "Danemark"
+ },
+ "indonesia": {
+  "name": "Indonésie"
+ },
+ "mexico": {
+  "name": "Mexique"
+ },
+ "saudi-arabia": {
+  "name": "Arabie saoudite"
+ },
+ "sudan": {
+  "name": "Soudan"
+ },
+ "iran": {
+  "name": "Iran"
+ },
+ "libya": {
+  "name": "Libye"
+ },
+ "mongolia": {
+  "name": "Mongolie"
+ },
+ "peru": {
+  "name": "Pérou"
+ },
+ "chad": {
+  "name": "Tchad"
+ },
+ "south-africa": {
+  "name": "Afrique du Sud"
+ },
+ "angola": {
+  "name": "Angola"
+ },
+ "mali": {
+  "name": "Mali"
+ },
+ "niger": {
+  "name": "Niger"
+ },
+ "colombia": {
+  "name": "Colombie"
+ },
+ "ethiopia": {
+  "name": "Éthiopie"
+ },
+ "bolivia": {
+  "name": "Bolivie"
+ },
+ "mauritania": {
+  "name": "Mauritanie"
+ },
+ "egypt": {
+  "name": "Égypte"
+ },
+ "venezuela": {
+  "name": "Venezuela"
+ },
+ "nigeria": {
+  "name": "Nigeria"
+ },
+ "tanzania": {
+  "name": "Tanzanie"
+ },
+ "pakistan": {
+  "name": "Pakistan"
+ },
+ "namibia": {
+  "name": "Namibie"
+ },
+ "chile": {
+  "name": "Chili"
+ },
+ "mozambique": {
+  "name": "Mozambique"
+ },
+ "turkey": {
+  "name": "Turquie"
+ },
+ "zambia": {
+  "name": "Zambie"
+ },
+ "myanmar": {
+  "name": "Birmanie"
+ },
+ "somalia": {
+  "name": "Somalie"
+ },
+ "afghanistan": {
+  "name": "Afghanistan"
+ },
+ "central-african-republic": {
+  "name": "République centrafricaine"
+ },
+ "south-sudan": {
+  "name": "Soudan du Sud"
+ },
+ "madagascar": {
+  "name": "Madagascar"
+ },
+ "kenya": {
+  "name": "Kenya"
+ },
+ "botswana": {
+  "name": "Botswana"
+ },
+ "ukraine": {
+  "name": "Ukraine"
+ },
+ "france": {
+  "name": "France",
+  "blurb": "De Rome et des Francs à la Ve République, avec les duchés, royaumes et comtés que la France a absorbés."
+ },
+ "thailand": {
+  "name": "Thaïlande"
+ },
+ "spain": {
+  "name": "Espagne"
+ },
+ "papua-new-guinea": {
+  "name": "Papouasie-Nouvelle-Guinée"
+ },
+ "turkmenistan": {
+  "name": "Turkménistan"
+ },
+ "cameroon": {
+  "name": "Cameroun"
+ },
+ "yemen": {
+  "name": "Yémen"
+ },
+ "sweden": {
+  "name": "Suède"
+ },
+ "iraq": {
+  "name": "Irak"
+ },
+ "norway": {
+  "name": "Norvège"
+ },
+ "uzbekistan": {
+  "name": "Ouzbékistan"
+ },
+ "japan": {
+  "name": "Japon"
+ },
+ "paraguay": {
+  "name": "Paraguay"
+ },
+ "morocco": {
+  "name": "Maroc"
+ },
+ "zimbabwe": {
+  "name": "Zimbabwe"
+ },
+ "germany": {
+  "name": "Allemagne"
+ },
+ "republic-of-the-congo": {
+  "name": "République du Congo"
+ },
+ "philippines": {
+  "name": "Philippines"
+ },
+ "malaysia": {
+  "name": "Malaisie"
+ },
+ "finland": {
+  "name": "Finlande"
+ },
+ "vietnam": {
+  "name": "Viêt Nam"
+ },
+ "cote-d-ivoire": {
+  "name": "Côte d’Ivoire"
+ },
+ "oman": {
+  "name": "Oman"
+ },
+ "poland": {
+  "name": "Pologne"
+ },
+ "new-zealand": {
+  "name": "Nouvelle-Zélande"
+ },
+ "italy": {
+  "name": "Italie"
+ },
+ "burkina-faso": {
+  "name": "Burkina Faso"
+ },
+ "united-kingdom": {
+  "name": "Royaume-Uni"
+ },
+ "gabon": {
+  "name": "Gabon"
+ },
+ "ecuador": {
+  "name": "Équateur"
+ },
+ "guinea": {
+  "name": "Guinée"
+ },
+ "ghana": {
+  "name": "Ghana"
+ },
+ "romania": {
+  "name": "Roumanie"
+ },
+ "laos": {
+  "name": "Laos"
+ },
+ "guyana": {
+  "name": "Guyana"
+ },
+ "uganda": {
+  "name": "Ouganda"
+ },
+ "belarus": {
+  "name": "Biélorussie"
+ },
+ "kyrgyzstan": {
+  "name": "Kirghizistan"
+ },
+ "senegal": {
+  "name": "Sénégal"
+ },
+ "cambodia": {
+  "name": "Cambodge"
+ },
+ "uruguay": {
+  "name": "Uruguay"
+ },
+ "tunisia": {
+  "name": "Tunisie"
+ },
+ "suriname": {
+  "name": "Suriname"
+ },
+ "bangladesh": {
+  "name": "Bangladesh"
+ },
+ "nepal": {
+  "name": "Népal"
+ },
+ "tajikistan": {
+  "name": "Tadjikistan"
+ },
+ "nicaragua": {
+  "name": "Nicaragua"
+ },
+ "north-korea": {
+  "name": "Corée du Nord"
+ },
+ "eritrea": {
+  "name": "Érythrée"
+ },
+ "cuba": {
+  "name": "Cuba"
+ },
+ "syria": {
+  "name": "Syrie"
+ },
+ "greece": {
+  "name": "Grèce"
+ },
+ "benin": {
+  "name": "Bénin"
+ },
+ "honduras": {
+  "name": "Honduras"
+ },
+ "guatemala": {
+  "name": "Guatemala"
+ },
+ "iceland": {
+  "name": "Islande"
+ },
+ "bulgaria": {
+  "name": "Bulgarie"
+ },
+ "south-korea": {
+  "name": "Corée du Sud"
+ },
+ "liberia": {
+  "name": "Liberia"
+ },
+ "portugal": {
+  "name": "Portugal"
+ },
+ "hungary": {
+  "name": "Hongrie"
+ },
+ "malawi": {
+  "name": "Malawi"
+ },
+ "jordan": {
+  "name": "Jordanie"
+ },
+ "austria": {
+  "name": "Autriche"
+ },
+ "panama": {
+  "name": "Panama"
+ },
+ "czech-republic": {
+  "name": "Tchéquie"
+ },
+ "united-arab-emirates": {
+  "name": "Émirats arabes unis"
+ },
+ "serbia": {
+  "name": "Serbie"
+ },
+ "sri-lanka": {
+  "name": "Sri Lanka"
+ },
+ "ireland": {
+  "name": "Irlande"
+ },
+ "sierra-leone": {
+  "name": "Sierra Leone"
+ },
+ "georgia": {
+  "name": "Géorgie"
+ },
+ "azerbaijan": {
+  "name": "Azerbaïdjan"
+ },
+ "latvia": {
+  "name": "Lettonie"
+ },
+ "lithuania": {
+  "name": "Lituanie"
+ },
+ "togo": {
+  "name": "Togo"
+ },
+ "dominican-republic": {
+  "name": "République dominicaine"
+ },
+ "costa-rica": {
+  "name": "Costa Rica"
+ },
+ "bosnia-and-herzegovina": {
+  "name": "Bosnie-Herzégovine"
+ },
+ "slovakia": {
+  "name": "Slovaquie"
+ },
+ "croatia": {
+  "name": "Croatie"
+ },
+ "estonia": {
+  "name": "Estonie"
+ },
+ "armenia": {
+  "name": "Arménie"
+ },
+ "bhutan": {
+  "name": "Bhoutan"
+ },
+ "netherlands": {
+  "name": "Pays-Bas"
+ },
+ "taiwan": {
+  "name": "Taïwan"
+ },
+ "switzerland": {
+  "name": "Suisse"
+ },
+ "guinea-bissau": {
+  "name": "Guinée-Bissau"
+ },
+ "solomon-islands": {
+  "name": "Îles Salomon"
+ },
+ "belgium": {
+  "name": "Belgique"
+ },
+ "lesotho": {
+  "name": "Lesotho"
+ },
+ "equatorial-guinea": {
+  "name": "Guinée équatoriale"
+ },
+ "haiti": {
+  "name": "Haïti"
+ },
+ "israel": {
+  "name": "Israël"
+ },
+ "moldova": {
+  "name": "Moldavie"
+ },
+ "burundi": {
+  "name": "Burundi"
+ },
+ "albania": {
+  "name": "Albanie"
+ },
+ "rwanda": {
+  "name": "Rwanda"
+ },
+ "north-macedonia": {
+  "name": "Macédoine du Nord"
+ },
+ "djibouti": {
+  "name": "Djibouti"
+ },
+ "el-salvador": {
+  "name": "Salvador"
+ },
+ "slovenia": {
+  "name": "Slovénie"
+ },
+ "belize": {
+  "name": "Belize"
+ },
+ "fiji": {
+  "name": "Fidji"
+ },
+ "the-bahamas": {
+  "name": "Bahamas"
+ },
+ "timor-leste": {
+  "name": "Timor oriental"
+ },
+ "kuwait": {
+  "name": "Koweït"
+ },
+ "vanuatu": {
+  "name": "Vanuatu"
+ },
+ "eswatini": {
+  "name": "Eswatini"
+ },
+ "montenegro": {
+  "name": "Monténégro"
+ },
+ "qatar": {
+  "name": "Qatar"
+ },
+ "jamaica": {
+  "name": "Jamaïque"
+ },
+ "kosovo": {
+  "name": "Kosovo"
+ },
+ "the-gambia": {
+  "name": "Gambie"
+ },
+ "cabo-verde": {
+  "name": "Cap-Vert"
+ },
+ "lebanon": {
+  "name": "Liban"
+ },
+ "brunei": {
+  "name": "Brunei"
+ },
+ "cyprus": {
+  "name": "Chypre"
+ },
+ "trinidad-and-tobago": {
+  "name": "Trinité-et-Tobago"
+ },
+ "mauritius": {
+  "name": "Maurice"
+ },
+ "luxembourg": {
+  "name": "Luxembourg"
+ },
+ "singapore": {
+  "name": "Singapour"
+ },
+ "sao-tome-and-principe": {
+  "name": "Sao Tomé-et-Principe"
+ },
+ "saint-vincent-and-the-grenadines": {
+  "name": "Saint-Vincent-et-les-Grenadines"
+ },
+ "dominica": {
+  "name": "Dominique"
+ },
+ "seychelles": {
+  "name": "Seychelles"
+ },
+ "palau": {
+  "name": "Palaos"
+ },
+ "grenada": {
+  "name": "Grenade"
+ },
+ "barbados": {
+  "name": "Barbade"
+ },
+ "saint-lucia": {
+  "name": "Sainte-Lucie"
+ },
+ "antigua-and-barbuda": {
+  "name": "Antigua-et-Barbuda"
+ },
+ "saint-kitts-and-nevis": {
+  "name": "Saint-Christophe-et-Niévès"
+ },
+ "bahrain": {
+  "name": "Bahreïn"
+ },
+ "andorra": {
+  "name": "Andorre"
+ },
+ "monaco": {
+  "name": "Monaco"
+ }
+}

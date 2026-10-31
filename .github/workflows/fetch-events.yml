@@ -1,0 +1,49 @@
+# Reads every civilization's key events from Wikidata (scripts/fetch-events.mjs)
+# and commits them to public/data/wd-events/. Run it by hand from the Actions
+# tab; it also runs when the script changes on a branch. Each run fetches for
+# up to 50 minutes and saves its progress; the next run carries on from there.
+name: Fetch Wikidata events
+
+on:
+  workflow_dispatch:
+    inputs:
+      minutes:
+        description: Minutes to spend fetching
+        default: "50"
+      again:
+        description: Fetch every civilization again, not only the missing ones
+        type: boolean
+        default: false
+  push:
+    branches-ignore: [main]
+    paths:
+      - scripts/fetch-events.mjs
+      - .github/workflows/fetch-events.yml
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      # The inputs reach the script as variables, never pasted into the command.
+      - env:
+          MINUTES: ${{ inputs.minutes || '50' }}
+          AGAIN: ${{ inputs.again && '--again' || '' }}
+        run: |
+          [[ "$MINUTES" =~ ^[0-9]+$ ]] || { echo "minutes must be a number"; exit 1; }
+          node scripts/fetch-events.mjs --minutes "$MINUTES" $AGAIN
+      - name: Commit the events
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898295+github-actions[bot]@users.noreply.github.com"
+          git add public/data/wd-events
+          git diff --cached --quiet && exit 0
+          git commit -m "Refresh the Wikidata events"
+          git push

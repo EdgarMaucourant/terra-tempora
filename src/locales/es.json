@@ -1,0 +1,485 @@
+{
+  "page": {
+    "title": "Terra Tempora",
+    "titleOf": "{name} · Terra Tempora"
+  },
+  "language": {
+    "label": "Idioma"
+  },
+  "common": {
+    "cancel": "Cancelar",
+    "close": "Cerrar",
+    "search": "Buscar"
+  },
+  "about": {
+    "button": "Acerca de este sitio web",
+    "menu": "Acerca de este sitio",
+    "title": "Acerca de Terra Tempora",
+    "whyTitle": "Por qué existe este sitio",
+    "why1": "Los libros de historia suelen mostrar un mapa cada vez: el Imperio romano en su apogeo, Europa en 1815, las conquistas mongolas. Cada mapa es claro por sí solo, pero cuesta ver lo que vino antes, lo que vino después y quién más vivía en el planeta en ese mismo momento.",
+    "why2": "Terra Tempora nació para llenar ese vacío. Reúne las fronteras de más de 1500 civilizaciones en un solo globo y permite recorrer libremente el tiempo, desde los primeros Estados hasta hoy. Puedes ver cómo los reinos surgen, se extienden, se encuentran y caen, y cómo fue tomando forma el mundo en que vivimos.",
+    "why3": "Es un proyecto amateur, hecho por curiosidad y amor a la historia, para quien quiera entender un poco mejor el pasado: estudiantes, docentes, viajeros o simples curiosos.",
+    "dataTitle": "De dónde viene el conocimiento",
+    "data": "Las fronteras proceden de Cliopatria, el conjunto de datos abierto del Seshat Global History Databank. Los personajes clave, los vínculos entre reinos y los acontecimientos proceden de Wikidata y Wikipedia, y las imágenes de Wikimedia Commons. Todo ello es obra de investigadores y voluntarios que lo comparten libremente; el botón Fuentes los enumera por completo.",
+    "careTitle": "Lee los mapas con cautela",
+    "care": "En el pasado, las fronteras rara vez eran líneas nítidas: muchos reinos tenían límites cambiantes, vasallos o tierras que reclamaban pero apenas controlaban. Las formas que se muestran aquí son aproximaciones, y algunas fechas y nombres siguen siendo debatidos por los historiadores. Si ves un error o algo que falta, avísanos: leemos todos los avisos.",
+    "privacyTitle": "Tu privacidad",
+    "privacy": "Terra Tempora no tiene cuentas, ni publicidad, ni cookies. Cuenta las visitas de forma anónima, sin dirección IP ni nada que te identifique, para saber qué partes del sitio se usan. El <a href=\"privacy-es.html\" target=\"_blank\" rel=\"noopener\">aviso legal y de privacidad</a> explica qué se recoge y por qué, y cómo contactarnos en <a href=\"mailto:privacy@terra-tempora.com\">privacy@terra-tempora.com</a>.",
+    "credit": "Este proyecto se hizo con IA, con instrucciones escritas con ❤️ para Claude Opus 5.5."
+  },
+  "status": {
+    "failed": "No se pudieron cargar las fronteras. Recarga la página para volver a intentarlo.",
+    "loading": "Cargando fronteras…"
+  },
+  "hint": {
+    "after": "Las fronteras están trazadas hasta {year}.",
+    "before": "No hay fronteras trazadas antes de {year}.",
+    "none": "No hay fronteras trazadas para este año."
+  },
+  "home": {
+    "panel": {
+      "welcome": "Bienvenido a",
+      "intro": "Este es un sitio web amateur para conocer la historia de las civilizaciones, trazada directamente sobre la Tierra. Usa la línea de tiempo de abajo para viajar en el tiempo; además, hay cuatro modos disponibles en el menú de arriba a la izquierda y aquí debajo:"
+    },
+    "modes": {
+      "travel": "Sobrevuela casi 12 000 años de historia, de Göbekli Tepe a la COVID-19, con las pirámides, las grandes guerras, los tratados y los descubrimientos situados en el planeta a lo largo del camino.",
+      "civilizations": "Observa cómo las civilizaciones surgen, se expanden y caen en el mapa, con los reinos relacionados a su alrededor, para entender cómo se influyeron.",
+      "countries": "¿Alguna vez te has preguntado qué civilizaciones vivieron hace mucho dentro de las fronteras de un país actual? Este modo te muestra todas las naciones que alguna vez cruzaron las fronteras de un país.",
+      "nations": "En este modo, descubre todas las civilizaciones que dieron origen a una nación actual, desde sus raíces más antiguas hasta hoy, incluso las que estuvieron lejos de sus fronteras actuales."
+    },
+    "civsText": "Todos los reinos de los datos de fronteras, desde el 3400 a. C. hasta hoy.",
+    "closeLabel": "Cerrar y volver al globo",
+    "countriesText": "Todas las civilizaciones cuyas fronteras cruzaron un país actual.",
+    "explore": "Explorar",
+    "hoverNation": "haz clic para ver las civilizaciones que le dieron origen",
+    "menu": "Menú",
+    "nationsText": "Todas las civilizaciones que dieron origen a una nación actual.",
+    "travelShort": "Sobrevuela 12 000 años de momentos decisivos."
+  },
+  "landing": {
+    "allEras": "Todas las épocas",
+    "cancelSelection": "Cancelar selección",
+    "civCount": {
+      "one": "{count} civilización",
+      "other": "{count} civilizaciones"
+    },
+    "civCountOf": {
+      "one": "{count} de {total} civilizaciones",
+      "other": "{count} de {total} civilizaciones"
+    },
+    "civilizations": "Civilizaciones",
+    "clear": "Borrar",
+    "countries": "Países",
+    "countriesSub": "Los países de hoy, con todas las civilizaciones cuyas fronteras los cruzaron alguna vez.",
+    "countryMeta": {
+      "one": "{count} civilización desde {year}",
+      "other": "{count} civilizaciones desde {year}"
+    },
+    "credit": "Creado con ❤️ y Claude Opus 5.5",
+    "era": "Época",
+    "footer": "Fronteras: <a href=\"https://github.com/Seshat-Global-History-Databank/cliopatria\" target=\"_blank\" rel=\"noopener\">Cliopatria</a>, Seshat Global History Databank, CC BY 4.0. Personajes clave y vínculos entre reinos: <a href=\"https://www.wikidata.org/\" target=\"_blank\" rel=\"noopener\">Wikidata</a> (CC0). Imágenes: <a href=\"https://commons.wikimedia.org/\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>, con licencia libre; cada ficha indica el autor y la licencia y enlaza al archivo. La pequeña silueta en la esquina de cada ficha es el contorno del reino en su máxima extensión.",
+    "keyFigures": "Personajes clave",
+    "lede": "Vive 5000 años de historia mundial trazados sobre la Tierra,\ncon fronteras, acontecimientos y civilizaciones.",
+    "nations": "Naciones",
+    "nationsSub": "Todas las civilizaciones que dieron origen a una nación actual, estuvieran donde estuvieran.",
+    "noCivs": "Ninguna civilización coincide. Prueba con otro nombre u otra época.",
+    "noCountries": "Ningún país coincide.",
+    "noNations": "Ninguna nación coincide.",
+    "searchCivs": {
+      "one": "Buscar entre {count} civilización",
+      "other": "Buscar entre {count} civilizaciones"
+    },
+    "searchCountries": "Buscar países",
+    "searchNations": "Buscar naciones",
+    "selectSeveral": "Seleccionar varias",
+    "selected": {
+      "one": "{count} seleccionada: {names}",
+      "other": "{count} seleccionadas: {names}"
+    },
+    "selectedRegion": "Civilizaciones seleccionadas",
+    "showOnGlobe": "Mostrar en el globo",
+    "showSelected": {
+      "one": "Mostrar {count} en el globo",
+      "other": "Mostrar {count} en el globo"
+    },
+    "sort": "Ordenar",
+    "sortCountries": "Ordenar países",
+    "sortNations": "Ordenar naciones",
+    "tickHint": "Marca las civilizaciones que quieras ver juntas en el globo.",
+    "travelText": "Sobrevuela 12 000 años de historia mundial en el globo, de los primeros templos a hoy, deteniéndote en cada momento decisivo de cada continente."
+  },
+  "sort": {
+    "largest": "Más grandes primero",
+    "most": "Más civilizaciones",
+    "name": "De la A a la Z",
+    "newest": "Más recientes primero",
+    "oldest": "Más antiguas primero"
+  },
+  "travel": {
+    "approximate": "{place} (aproximado)",
+    "circa": "h. {when}",
+    "close": "Cerrar",
+    "hint": "Pasa el cursor o toca para leer la historia completa",
+    "paused": "Viaje en pausa. Pulsa Reproducir en la línea de tiempo para continuar.",
+    "sub": {
+      "one": "{count} momento decisivo de la historia mundial, de Göbekli Tepe a hoy. Pasa el cursor o toca una ficha para detenerte y leer más.",
+      "other": "{count} momentos decisivos de la historia mundial, de Göbekli Tepe a hoy. Pasa el cursor o toca una ficha para detenerte y leer más."
+    },
+    "title": "Viaje por la historia",
+    "whyItMatters": "Por qué importa"
+  },
+  "masthead": {
+    "back": "← El mundo de hoy",
+    "backShort": "← Hoy",
+    "focusLabel": "Mostrar los años de {name}",
+    "more": {
+      "one": "{first}, {second} y {count} más",
+      "other": "{first}, {second} y {count} más"
+    },
+    "nationality": {
+      "one": "{count} civilización que dio origen a {name} · {years}",
+      "other": "{count} civilizaciones que dieron origen a {name} · {years}"
+    },
+    "several": {
+      "one": "{count} civilización · {years}",
+      "other": "{count} civilizaciones · {years}"
+    },
+    "territory": {
+      "one": "{count} civilización cuyas fronteras cruzaron el actual territorio de {name} · {years}",
+      "other": "{count} civilizaciones cuyas fronteras cruzaron el actual territorio de {name} · {years}"
+    },
+    "two": "{first} y {second}"
+  },
+  "toolbar": {
+    "otherRealms": "Otros reinos"
+  },
+  "view": {
+    "globe": "Globo",
+    "globeTitle": "El globo y su eje",
+    "label": "Vista",
+    "map": "Mapa",
+    "mapTitle": "Mapa plano y su proyección",
+    "projection": "Proyección"
+  },
+  "axis": {
+    "free": "Movimiento libre",
+    "freeTitle": "Poner el globo derecho y girarlo libremente",
+    "label": "Eje del globo",
+    "natural": "Eje natural",
+    "naturalTitle": "Inclinar el globo 23,5° sobre el eje terrestre; al arrastrarlo gira sobre ese eje"
+  },
+  "projection": {
+    "eckert4": "Eckert IV",
+    "equal-earth": "Equal Earth",
+    "equirectangular": "Equirrectangular",
+    "gall-peters": "Gall-Peters",
+    "mercator": "Mercator",
+    "miller": "Miller",
+    "mollweide": "Mollweide",
+    "natural-earth": "Natural Earth",
+    "robinson": "Robinson",
+    "winkel3": "Winkel-Tripel"
+  },
+  "globe": {
+    "label": "Globo en 3D con los reinos del año elegido. Las flechas lo giran, + y − hacen zoom."
+  },
+  "map": {
+    "label": "Mapa plano con los reinos del año elegido. Las flechas lo mueven."
+  },
+  "realms": {
+    "title": "Reinos en {year} ({count})",
+    "hint": "Elige uno para ver sus detalles; el globo gira hacia él.",
+    "highlighted": "en color en el globo"
+  },
+  "panel": {
+    "shown": "{name}: detalles en el panel lateral",
+    "back": "← Resumen",
+    "close": "Cerrar el panel",
+    "gripLabel": "Cambiar el tamaño del panel: arrastra o usa las flechas izquierda y derecha",
+    "gripTitle": "Arrastra para cambiar el tamaño. Doble clic para restablecerlo.",
+    "label": "Detalles",
+    "open": "Detalles",
+    "openTitle": "Mostrar el panel de texto"
+  },
+  "welcome": {
+    "no": "No, gracias, exploraré por mi cuenta",
+    "off": "No volver a mostrar",
+    "text": "¿Quieres una breve presentación del sitio?",
+    "title": "¿Eres nuevo?",
+    "yes": "Sí, enséñamelo"
+  },
+  "tour": {
+    "open": "Abrir la visita guiada",
+    "count": "{step} de {total}",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "done": "Entendido",
+    "close": "Cerrar la visita guiada",
+    "view": {
+      "title": "El mundo, año a año",
+      "text": "El globo muestra los reinos que existían en el año elegido, cada uno con su color. Arrastra para girarlo, usa la rueda para acercarte y haz clic en un reino o en la insignia de un acontecimiento para saber más.",
+      "phone": "El globo muestra los reinos que existían en el año elegido, cada uno con su color. Arrastra para girarlo, pellizca para acercarte y toca un reino o la insignia de un acontecimiento para saber más."
+    },
+    "timeline": {
+      "title": "La línea de tiempo",
+      "text": "Arrastra el cursor a lo largo de la regla, o haz clic en un año, para viajar en el tiempo, y pulsa reproducir para ver la historia desplegarse. Acerca o aleja con − y +, y arrastra el borde superior de la línea de tiempo para agrandarla y ver más reinos y acontecimientos.",
+      "phone": "Arrastra el cursor a lo largo de la regla para viajar en el tiempo, y pulsa reproducir para ver la historia desplegarse. Toca la pestaña con la flecha de arriba para desplegar los reinos y acontecimientos, y arrástrala hacia arriba para agrandar la línea de tiempo. El botón ⋯ contiene el zoom, la velocidad y más."
+    },
+    "menu": {
+      "title": "El menú",
+      "text": "Cuatro formas de explorar: Civilizaciones, Países, Naciones y Viaje por la historia, un vuelo a través de 12 000 años de momentos decisivos.",
+      "phone": "Cuatro formas de explorar: Civilizaciones, Países, Naciones y Viaje por la historia, un vuelo a través de 12 000 años de momentos decisivos. Las fuentes y la página Acerca de también están ahí."
+    },
+    "views": {
+      "title": "Globo o mapa",
+      "text": "Cambia entre el globo y un mapa plano. Cada botón abre además sus propios ajustes: cómo gira el globo o la proyección del mapa.",
+      "phone": "Esta pestaña del borde izquierdo despliega los botones Globo y Mapa. Cambia entre el globo y un mapa plano; cada botón abre además sus propios ajustes, como la proyección del mapa."
+    },
+    "panel": {
+      "title": "Los detalles",
+      "text": "Este panel te cuenta lo que hay en pantalla, o el reino o acontecimiento en el que hiciste clic. Arrastra su borde izquierdo para ensancharlo, ciérralo con × y recupéralo con Detalles.",
+      "phone": "Esta pestaña del borde derecho abre los detalles: un resumen de lo que hay en pantalla, o el reino o acontecimiento que tocaste."
+    }
+  },
+  "overview": {
+    "civilization": "Civilización",
+    "civilizations": {
+      "one": "{count} civilización",
+      "other": "{count} civilizaciones"
+    },
+    "loading": "Cargando el artículo…",
+    "nation": "Nación",
+    "several": "Civilizaciones en el globo",
+    "territory": "País",
+    "travel": "Historia mundial"
+  },
+  "info": {
+    "area": "{area} km²",
+    "areaLabel": "Superficie",
+    "existed": "El reino existió",
+    "fine": "Fronteras de Cliopatria, aproximadas.",
+    "highlighted": "Reino resaltado",
+    "realm": "Reino",
+    "related": "Reino relacionado",
+    "thisBorder": "Esta frontera"
+  },
+  "event": {
+    "approximate": "{place} (ubicación aproximada)",
+    "foughtAcross": "Librada en todo {name}; se muestra en su centro",
+    "learnMore": "Saber más",
+    "searchNote": "búsqueda"
+  },
+  "kind": {
+    "battle": "Batalla",
+    "birth": "Nacimiento",
+    "city": "Capital",
+    "crown": "Gobernantes",
+    "death": "Muerte",
+    "empire": "Imperio",
+    "faith": "Religión",
+    "farming": "Agricultura",
+    "idea": "Ideas",
+    "journey": "Viajeros",
+    "monument": "Monumento",
+    "plague": "Epidemia",
+    "revolution": "Revolución",
+    "science": "Invención",
+    "siege": "Asedio",
+    "town": "Ciudad",
+    "trade": "Comercio",
+    "treaty": "Tratado",
+    "war": "Guerra",
+    "writing": "Escritura"
+  },
+  "docs": {
+    "allAges": "Todos los públicos",
+    "ratingTitle": "Clasificación por edades en Estados Unidos: {rating}",
+    "seeMore": "Ver más en {platform}:",
+    "title": "Documentales"
+  },
+  "media": {
+    "photo": "Mostrar la foto {file}",
+    "video": "Mostrar el vídeo {file}"
+  },
+  "picture": {
+    "title": "Imagen: {file} ({credit}). Se abre en Wikimedia Commons."
+  },
+  "timeline": {
+    "add": "Añadir civilizaciones",
+    "addTitle": "Añadir o quitar civilizaciones del globo",
+    "afterLabel": "Después: {name}, {years}",
+    "all": "Toda la historia",
+    "beforeLabel": "Antes: {name}, {years}",
+    "clusterLabel": {
+      "one": "{count} acontecimiento: {names}. Acércate para verlo.",
+      "other": "{count} acontecimientos: {names}. Acércate para verlos."
+    },
+    "events": {
+      "one": "{count} acontecimiento",
+      "other": "{count} acontecimientos"
+    },
+    "focus": "Época de la civilización actual",
+    "fold": "Ocultar los reinos y acontecimientos",
+    "gripLabel": "Cambiar el tamaño de la línea de tiempo: arrastra o usa las flechas arriba y abajo",
+    "gripTitle": "Arrastra para cambiar el tamaño. Doble clic para restablecerlo.",
+    "leftLabel": "Cambiar el tamaño de la línea de tiempo desde la izquierda: arrastra o usa las flechas izquierda y derecha",
+    "marksGripLabel": "Cambiar el tamaño de los iconos de acontecimientos",
+    "marksGripTitle": "Arrastra para agrandar los iconos de acontecimientos. Doble clic para restablecerlos.",
+    "more": "Más opciones de la línea de tiempo",
+    "rightLabel": "Cambiar el tamaño de la línea de tiempo desde la derecha: arrastra o usa las flechas izquierda y derecha",
+    "unfold": "Mostrar los reinos y acontecimientos",
+    "itemsLabel": "Reinos y eventos de la línea de tiempo: las flechas pasan de uno a otro",
+    "viewLabel": "Vista de la línea de tiempo",
+    "year": "Año",
+    "zoomIn": "Acercar",
+    "zoomOut": "Alejar"
+  },
+  "controls": {
+    "pause": "Pausa",
+    "play": "Reproducir",
+    "speed": "Velocidad",
+    "speed100": "100 años/s",
+    "speed2": "2 años/s",
+    "speed25": "25 años/s",
+    "speed50": "50 años/s",
+    "speed500": "500 años/s",
+    "speed8": "8 años/s"
+  },
+  "lanes": {
+    "count": {
+      "one": "{count} civilización",
+      "other": "{count} civilizaciones"
+    },
+    "nationality": "Civilizaciones que dieron origen a {name}",
+    "related": "{name} y reinos relacionados",
+    "territory": "Dentro del actual territorio de {name}",
+    "today": "Países actuales"
+  },
+  "era": {
+    "ancient": {
+      "label": "Antigüedad",
+      "name": "Edad Antigua",
+      "short": "Antigua"
+    },
+    "contemporary": {
+      "label": "Mundo actual",
+      "name": "Mundo actual",
+      "short": "Hoy"
+    },
+    "earlyModern": {
+      "label": "Edad Moderna",
+      "name": "Edad Moderna",
+      "short": "Moderna"
+    },
+    "lateModern": {
+      "label": "Edad Contemporánea",
+      "name": "Edad Contemporánea",
+      "short": "Contemp."
+    },
+    "postclassical": {
+      "label": "Edad Media",
+      "name": "Edad Media",
+      "short": "Media"
+    },
+    "prehistory": {
+      "label": "Prehistoria",
+      "name": "Prehistoria",
+      "short": "Prehistoria"
+    },
+    "span": "{from} a {to}"
+  },
+  "year": {
+    "bce": "{year} a. C.",
+    "ce": "{year} d. C.",
+    "eraBce": "a. C.",
+    "eraCe": "d. C.",
+    "range": "{from} – {to}"
+  },
+  "tooltip": {
+    "after": "Después",
+    "before": "Antes",
+    "event": "{kind} · {when} · haz clic para saber más",
+    "explore": "{years} · haz clic para explorar",
+    "open": "{years} · haz clic para abrir",
+    "partOf": "Parte de: {group}",
+    "see": "{detail} · haz clic para verlo",
+    "zoomIn": "{detail} · haz clic para acercar"
+  },
+  "picker": {
+    "keepOne": "Deja al menos una civilización.",
+    "onGlobe": {
+      "one": "{count} en el globo. Marca para añadir, desmarca para quitar.",
+      "other": "{count} en el globo. Marca para añadir, desmarca para quitar."
+    },
+    "title": "Civilizaciones en el globo",
+    "toAdd": {
+      "one": "{count} por añadir",
+      "other": "{count} por añadir"
+    },
+    "toRemove": {
+      "one": "{count} por quitar",
+      "other": "{count} por quitar"
+    },
+    "update": "Actualizar el globo"
+  },
+  "sources": {
+    "list": "<li>Fronteras: <a href=\"https://github.com/Seshat-Global-History-Databank/cliopatria\" target=\"_blank\" rel=\"noopener\">Cliopatria</a>, Seshat Global History Databank, <a href=\"https://creativecommons.org/licenses/by/4.0/\" target=\"_blank\" rel=\"noopener\">CC BY 4.0</a>: los reinos del 3400 a. C. a 2024, simplificados para su visualización. Los países actuales son sus reinos de 2024, dibujados hasta el año en curso.</li><li>Fronteras de Magadha y sus sucesores (los imperios Nanda, Maurya y Shunga, del 600 al 171 a. C.): trazadas a partir de <a href=\"https://commons.wikimedia.org/wiki/File:Magadha_Expansion_1.gif\" target=\"_blank\" rel=\"noopener\">Magadha Expansion</a> de Avantiputra7, según el <i>Historical Atlas of South Asia</i> de Schwartzberg, <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" target=\"_blank\" rel=\"noopener\">CC BY-SA 4.0</a>; las fronteras trazadas se comparten con la misma licencia.</li><li>Fronteras del Imperio bambara de Ségou (1766 a 1802), Kaarta, Kong y los reinos mossi y hausa: trazadas a partir de <a href=\"https://commons.wikimedia.org/wiki/File:Africa_de_l%27O%C3%A8st_(fin_s%C3%A8gle_XVIII).png\" target=\"_blank\" rel=\"noopener\">Africa de l&rsquo;Oèst (fin sègle XVIII)</a> de Nicolas Eynaud, <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" target=\"_blank\" rel=\"noopener\">CC BY-SA 4.0</a>; las fronteras trazadas se comparten con la misma licencia.</li><li>Fronteras del Imperio luba: trazadas a partir de <a href=\"https://commons.wikimedia.org/wiki/File:Lunda_Empire.png\" target=\"_blank\" rel=\"noopener\">Lunda Empire</a>, Biblioteca del Congreso (<i>Zaire: A Country Study</i>, 1994, según <i>Kingdoms of the Savanna</i> de Jan Vansina), dominio público.</li><li>Fronteras del Reino del Gran Zimbabue: tomadas de <a href=\"https://commons.wikimedia.org/wiki/File:African-civilizations-map-pre-colonial.svg\" target=\"_blank\" rel=\"noopener\">African civilizations map (pre-colonial)</a> de Jeff Israel, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/\" target=\"_blank\" rel=\"noopener\">CC BY-SA 3.0</a>; las fronteras se comparten con la misma licencia.</li><li>Nombres de las civilizaciones en otros idiomas, personajes clave y vínculos entre reinos: <a href=\"https://www.wikidata.org/\" target=\"_blank\" rel=\"noopener\">Wikidata</a>, CC0; en español, también los títulos de los artículos de <a href=\"https://es.wikipedia.org/\" target=\"_blank\" rel=\"noopener\">Wikipedia en español</a>.</li><li>Imágenes de las fichas: la imagen, el escudo o la bandera del reino en <a href=\"https://www.wikidata.org/\" target=\"_blank\" rel=\"noopener\">Wikidata</a>, o si no, la imagen principal de su artículo de <a href=\"https://en.wikipedia.org/\" target=\"_blank\" rel=\"noopener\">Wikipedia</a> en inglés; todos los archivos están en <a href=\"https://commons.wikimedia.org/\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a> y se citan con su autor y su licencia.</li><li>Resúmenes de los reinos: el primer párrafo del artículo de <a href=\"https://es.wikipedia.org/\" target=\"_blank\" rel=\"noopener\">Wikipedia</a> sobre el reino, en el idioma del lector cuando existe (<a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" target=\"_blank\" rel=\"noopener\">CC BY-SA 4.0</a>), con las fotos y vídeos que muestra el artículo, conservados solo si están en <a href=\"https://commons.wikimedia.org/\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>, cada uno con su autor y su licencia.</li><li>Acontecimientos: los mongoles, escritos para este sitio a partir de obras de referencia; los demás, de <a href=\"https://www.wikidata.org/\" target=\"_blank\" rel=\"noopener\">Wikidata</a> (CC0), con el primer párrafo de su artículo de Wikipedia (<a href=\"https://creativecommons.org/licenses/by-sa/4.0/\" target=\"_blank\" rel=\"noopener\">CC BY-SA 4.0</a>); imágenes de los artículos de <a href=\"https://en.wikipedia.org/\" target=\"_blank\" rel=\"noopener\">Wikipedia</a> de los acontecimientos, mostradas solo si el archivo está en <a href=\"https://commons.wikimedia.org/\" target=\"_blank\" rel=\"noopener\">Wikimedia Commons</a>, con su autor y su licencia.</li><li>Viaje por la historia: los momentos decisivos se eligieron y redactaron para este sitio a partir de obras de referencia; cada uno enlaza a su artículo de Wikipedia y a búsquedas en Britannica y World History Encyclopedia.</li><li>Documentales: seleccionados a mano, cada uno enlazado a su página en Netflix, National Geographic, Discovery Channel o History Channel.</li><li>Imágenes del globo: Natural Earth II, dominio público, tal como se distribuye con <a href=\"https://cesium.com/platform/cesiumjs/\" target=\"_blank\" rel=\"noopener\">CesiumJS</a> (Apache 2.0).</li><li>Costas del mapa: Natural Earth 1:50m land, dominio público, mediante <a href=\"https://github.com/topojson/world-atlas\" target=\"_blank\" rel=\"noopener\">world-atlas</a> (ISC), leído con <a href=\"https://github.com/topojson/topojson-client\" target=\"_blank\" rel=\"noopener\">topojson-client</a> (ISC). Proyecciones de <a href=\"https://d3js.org/d3-geo\" target=\"_blank\" rel=\"noopener\">d3-geo</a> y <a href=\"https://github.com/d3/d3-geo-projection\" target=\"_blank\" rel=\"noopener\">d3-geo-projection</a> (ISC).</li><li>Tipografías: <a href=\"https://github.com/productiontype/Newsreader\" target=\"_blank\" rel=\"noopener\">Newsreader</a> (Production Type) e <a href=\"https://github.com/Instrument/instrument-sans\" target=\"_blank\" rel=\"noopener\">Instrument Sans</a> (Instrument), <a href=\"https://openfontlicense.org/\" target=\"_blank\" rel=\"noopener\">SIL Open Font License 1.1</a>, servidas con el sitio a través de <a href=\"https://fontsource.org/\" target=\"_blank\" rel=\"noopener\">Fontsource</a>.</li><li>Alojamiento: <a href=\"https://workers.cloudflare.com/\" target=\"_blank\" rel=\"noopener\">Cloudflare Workers</a>, que también guarda los recuentos anónimos de uso y filtra el spam de los avisos (Turnstile). El <a href=\"privacy-es.html\" target=\"_blank\" rel=\"noopener\">aviso legal y de privacidad</a> da los detalles.</li>",
+    "title": "Fuentes"
+  },
+  "github": {
+    "menu": "Código en GitHub",
+    "title": "Ver el código de Terra Tempora en GitHub"
+  },
+  "support": {
+    "back": "Atrás",
+    "button": "Apoyar",
+    "emailInvalid": "Introduce un correo válido o déjalo vacío.",
+    "emailLabel": "Tu correo, si quieres una respuesta (opcional)",
+    "failed": "No se pudo enviar el mensaje. Inténtalo de nuevo más tarde.",
+    "github": "Patrocinar en GitHub",
+    "githubText": "Mensual o puntual, con tu cuenta de GitHub.",
+    "intro": "Terra Tempora es gratuito y sin publicidad. Si te gusta, así puedes ayudar a que crezca.",
+    "kofi": "Invítame a un café en Ko-fi",
+    "kofiText": "Una propina puntual, con tarjeta o PayPal, sin cuenta.",
+    "menu": "Apoyar Terra Tempora",
+    "message": "Enviar unas palabras amables",
+    "messageLabel": "Tu mensaje",
+    "messageText": "Sin dinero: unas palabras al autor también significan mucho.",
+    "nameLabel": "Tu nombre o apodo (opcional)",
+    "placeholder": "¿Qué te gusta de Terra Tempora? ¿Cómo lo usas?",
+    "privacy": "Tu mensaje se envía en privado al autor por correo. No se publica. Si das tu correo, solo se usa para responderte y se borra si lo pides.",
+    "thanks": "¡Muchísimas gracias! Tu mensaje se ha enviado.",
+    "title": "Apoyar Terra Tempora",
+    "tooMany": "Demasiados mensajes desde aquí en este momento. Inténtalo de nuevo en un minuto.",
+    "tooShort": "Escribe unas palabras más (al menos 10 caracteres)."
+  },
+  "feedback": {
+    "about": "Sobre: {name}",
+    "aboutApp": "Sobre Terra Tempora en general",
+    "aboutPlace": "Sobre: este lugar del mapa en {year}",
+    "checkFailed": "No se pudo cargar la comprobación antispam. Inténtalo de nuevo más tarde.",
+    "failed": "No se pudo enviar el aviso. Inténtalo de nuevo más tarde.",
+    "here": "Avisar de algo aquí",
+    "link": "Avisar de un problema o sugerir algo",
+    "linkApp": "Avisar de un problema o sugerir una mejora",
+    "messageLabel": "Tu mensaje",
+    "placeholder": "¿Qué está mal o qué falta, y cómo lo sabes? Una fuente ayuda.",
+    "privacy": "Los revisores leen todos los avisos. No incluyas datos personales, como tu correo, en el mensaje.",
+    "send": "Enviar",
+    "sending": "Enviando…",
+    "seeIssue": "Ver tu aviso en GitHub",
+    "thanks": "¡Gracias! Tu aviso se ha enviado.",
+    "title": "Avisar o sugerir",
+    "tooMany": "Demasiados avisos desde aquí en este momento. Inténtalo de nuevo en un minuto.",
+    "tooShort": "Escribe unas palabras más (al menos 10 caracteres).",
+    "typeError": "Algo está mal",
+    "typeIdea": "Una idea para mejorarlo",
+    "typeLegend": "¿De qué se trata?",
+    "typeMissing": "Falta algo",
+    "waitCheck": "Espera a que termine la comprobación de abajo.",
+    "emailInvalid": "Introduce un correo válido o desmarca el ofrecimiento de ayuda.",
+    "emailLabel": "Tu correo, para que podamos contactarte",
+    "emailPrivacy": "Opcional. Tu correo se cifra en tu navegador y solo los autores de Terra Tempora pueden leerlo. Solo lo usamos para contactarte sobre este aviso, con tu consentimiento, y lo borramos una vez hecha la corrección (como máximo a los 2 años). Para consultarlo, borrarlo o retirar tu consentimiento, escribe a <a href=\"mailto:privacy@terra-tempora.com\">privacy@terra-tempora.com</a>. Más información en el <a href=\"privacy-es.html\" target=\"_blank\" rel=\"noopener\">aviso de privacidad</a>.",
+    "helpToggle": "Quiero ayudar a corregir el problema que he señalado"
+  }
+}

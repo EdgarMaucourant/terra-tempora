@@ -1,0 +1,3527 @@
+{
+ "mongol-empire": {
+  "name": "Imperio mongol"
+ },
+ "union-of-soviet-socialist-republics": {
+  "name": "Unión Soviética"
+ },
+ "russian-empire": {
+  "name": "Imperio ruso"
+ },
+ "russian-republic": {
+  "name": "República Rusa"
+ },
+ "republics-of-the-soviet-union": {
+  "name": "Repúblicas de la Unión Soviética"
+ },
+ "russian-federation": {
+  "name": "Rusia"
+ },
+ "tsardom-of-russia": {
+  "name": "Zarato ruso"
+ },
+ "yuan-dynasty": {
+  "name": "Dinastía Yuan"
+ },
+ "british-colonial-empire": {
+  "name": "Imperio británico"
+ },
+ "qing-dynasty": {
+  "name": "Dinastía Qing"
+ },
+ "united-states-of-america": {
+  "name": "Estados Unidos"
+ },
+ "french-africa": {
+  "name": "África francesa"
+ },
+ "spanish-empire": {
+  "name": "Imperio español"
+ },
+ "french-fifth-republic": {
+  "name": "Quinta República francesa"
+ },
+ "british-africa": {
+  "name": "África británica"
+ },
+ "canada": {
+  "name": "Canadá"
+ },
+ "umayyad-caliphate": {
+  "name": "Califato omeya"
+ },
+ "people-s-republic-of-china": {
+  "name": "República Popular China"
+ },
+ "tang-dynasty": {
+  "name": "Dinastía Tang"
+ },
+ "brazilian-republic": {
+  "name": "Brasil"
+ },
+ "empire-of-brazil": {
+  "name": "Imperio del Brasil"
+ },
+ "republic-of-china": {
+  "name": "República de China"
+ },
+ "empire-of-china": {
+  "name": "Imperio de China"
+ },
+ "abbasid-caliphate": {
+  "name": "Califato abasí"
+ },
+ "portuguese-empire": {
+  "name": "Imperio portugués"
+ },
+ "commonwealth-of-australia": {
+  "name": "Australia"
+ },
+ "rashidun-caliphate": {
+  "name": "Califato ortodoxo"
+ },
+ "empire-of-japan": {
+  "name": "Imperio del Japón"
+ },
+ "gokturk-khaganate": {
+  "name": "Kanato túrquico"
+ },
+ "ming-dynasty": {
+  "name": "Dinastía Ming"
+ },
+ "achaemenid-empire": {
+  "name": "Imperio aqueménida"
+ },
+ "roman-empire": {
+  "name": "Imperio romano"
+ },
+ "timurid-empire": {
+  "name": "Imperio timúrida"
+ },
+ "sasanian-empire": {
+  "name": "Imperio sasánida"
+ },
+ "british-raj": {
+  "name": "India británica"
+ },
+ "golden-horde": {
+  "name": "Horda de Oro"
+ },
+ "ptolemaic-kingdom": {
+  "name": "Egipto ptolemaico"
+ },
+ "macedonian-empire": {
+  "name": "Reino de Macedonia"
+ },
+ "han-dynasty": {
+  "name": "Dinastía Han"
+ },
+ "xin-dynasty": {
+  "name": "Dinastía Xin"
+ },
+ "khanate-of-sibir": {
+  "name": "Kanato de Siberia"
+ },
+ "western-jin": {
+  "name": "Dinastía Jin"
+ },
+ "ottoman-empire": {
+  "name": "Imperio otomano"
+ },
+ "western-gokturks": {
+  "name": "Köktürk"
+ },
+ "great-seljuk-empire": {
+  "name": "Imperio selyúcida"
+ },
+ "turgesh": {
+  "name": "Turgueses"
+ },
+ "khwarezmid-empire": {
+  "name": "Imperio jorezmita"
+ },
+ "four-oirats": {
+  "name": "Cuatro Oirates"
+ },
+ "ilkhanate": {
+  "name": "Ilkanato"
+ },
+ "uyghur-khaganate": {
+  "name": "Kanato uigur"
+ },
+ "rouran-khaganate": {
+  "name": "Rouran"
+ },
+ "tibetan-empire": {
+  "name": "Imperio tibetano"
+ },
+ "mughal-empire": {
+  "name": "Imperio mogol"
+ },
+ "dzungar-khanate": {
+  "name": "Kanato de Zungaria"
+ },
+ "first-mexican-empire": {
+  "name": "Primer Imperio mexicano"
+ },
+ "italian-africa": {
+  "name": "Imperio colonial italiano"
+ },
+ "afsharid-iran": {
+  "name": "Imperio afsárida"
+ },
+ "northern-yuan": {
+  "name": "Yuan del Norte"
+ },
+ "sui-dynasty": {
+  "name": "Dinastía Sui"
+ },
+ "nazi-germany": {
+  "name": "Alemania nazi"
+ },
+ "white-huns": {
+  "name": "Heftalita"
+ },
+ "peru-bolivian-confederation": {
+  "name": "Confederación Perú-Boliviana"
+ },
+ "federated-republic-of-mexico": {
+  "name": "Primera República Federal"
+ },
+ "republic-of-india": {
+  "name": "India"
+ },
+ "parthian-empire": {
+  "name": "Imperio parto"
+ },
+ "kimek-kipchak-confederation": {
+  "name": "Confederación Kimek-Kipchak"
+ },
+ "ghaznavid-empire": {
+  "name": "Imperio gaznávida"
+ },
+ "khedivate-of-egypt": {
+  "name": "Jedivato de Egipto"
+ },
+ "five-dynasties-and-ten-kingdoms": {
+  "name": "Cinco dinastías"
+ },
+ "cao-wei": {
+  "name": "Wei"
+ },
+ "safavid-dynasty": {
+  "name": "Dinastía safávida"
+ },
+ "northern-song": {
+  "name": "Dinastía Song"
+ },
+ "argentine-confederation": {
+  "name": "Confederación Argentina"
+ },
+ "argentine-republic": {
+  "name": "Argentina"
+ },
+ "communist-party-of-china": {
+  "name": "Partido Comunista de China"
+ },
+ "liu-song-dynasty": {
+  "name": "Dinastía Liu Song"
+ },
+ "maurya-empire": {
+  "name": "Imperio Maurya"
+ },
+ "german-africa": {
+  "name": "África alemana"
+ },
+ "kazakh-khanate": {
+  "name": "Kanato kazajo"
+ },
+ "british-east-africa": {
+  "name": "África Oriental Británica"
+ },
+ "kazakhstan": {
+  "name": "Kazajistán"
+ },
+ "eastern-roman-empire": {
+  "name": "Imperio bizantino"
+ },
+ "kara-khitans": {
+  "name": "Kanato de Jara-Jitai"
+ },
+ "white-horde": {
+  "name": "Horda Blanca"
+ },
+ "later-jin-dynasty": {
+  "name": "Jin Posterior"
+ },
+ "gupta-empire": {
+  "name": "Imperio gupta"
+ },
+ "republic-of-sudan": {
+  "name": "Sudán"
+ },
+ "chagatai-khanate": {
+  "name": "Kanato de Chagatai"
+ },
+ "delhi-sultanate": {
+  "name": "Sultanato de Delhi"
+ },
+ "tughlaq-dynasty": {
+  "name": "Dinastía tughlaq"
+ },
+ "saffarid-dynasty": {
+  "name": "Dinastía saffarí"
+ },
+ "grand-principality-of-moscow": {
+  "name": "Principado de Moscú"
+ },
+ "free-french": {
+  "name": "Francia Libre"
+ },
+ "liang-dynasty": {
+  "name": "Dinastía Liang"
+ },
+ "southern-qi": {
+  "name": "Dinastía Qi del Sur"
+ },
+ "belgian-congo": {
+  "name": "Congo Belga"
+ },
+ "roman-republic": {
+  "name": "República romana"
+ },
+ "mahdist-state": {
+  "name": "Estado mahdista"
+ },
+ "people-s-democratic-republic-of-algeria": {
+  "name": "Argelia"
+ },
+ "democratic-republic-of-the-congo": {
+  "name": "República Democrática del Congo"
+ },
+ "emirate-of-diriyah": {
+  "name": "Emirato de Diriyah"
+ },
+ "denmark": {
+  "name": "Dinamarca"
+ },
+ "kushan-empire": {
+  "name": "Imperio kushán"
+ },
+ "greenland": {
+  "name": "Groenlandia"
+ },
+ "estado-novo": {
+  "name": "Estado Nuevo"
+ },
+ "durrani-empire": {
+  "name": "Imperio durrani"
+ },
+ "southern-ming": {
+  "name": "Dinastía Ming del Sur"
+ },
+ "centralist-mexico": {
+  "name": "República Centralista"
+ },
+ "ghurid-dynasty": {
+  "name": "Imperio gúrida"
+ },
+ "western-roman-empire": {
+  "name": "Imperio romano de Occidente"
+ },
+ "qin-dynasty": {
+  "name": "Dinastía Qin"
+ },
+ "inca-empire": {
+  "name": "Imperio incaico"
+ },
+ "south-africa": {
+  "name": "Sudáfrica"
+ },
+ "republic-of-indonesia": {
+  "name": "Indonesia"
+ },
+ "ayyubid-sultanate": {
+  "name": "Dinastía ayubí"
+ },
+ "dutch-east-indies": {
+  "name": "Indias Orientales Neerlandesas"
+ },
+ "mexico": {
+  "name": "México"
+ },
+ "second-mexican-empire": {
+  "name": "Segundo Imperio mexicano"
+ },
+ "fatimid-caliphate": {
+  "name": "Califato fatimí"
+ },
+ "kingdom-of-portugal": {
+  "name": "Reino de Portugal"
+ },
+ "kingdom-of-saudi-arabia": {
+  "name": "Arabia Saudita"
+ },
+ "liao-dynasty": {
+  "name": "Dinastía Liao"
+ },
+ "almoravid-dynasty": {
+  "name": "Almorávides"
+ },
+ "hotaki-dynasty": {
+  "name": "Dinastía hotaki"
+ },
+ "hunnic-empire": {
+  "name": "Imperio huno"
+ },
+ "tibetans": {
+  "name": "Tibetanos"
+ },
+ "mamluk-sultanate": {
+  "name": "Sultanato mameluco de Egipto"
+ },
+ "blue-horde": {
+  "name": "Horda Azul"
+ },
+ "former-qin": {
+  "name": "Qin Anterior"
+ },
+ "qajar-dynasty": {
+  "name": "Dinastía kayar"
+ },
+ "northern-zhou": {
+  "name": "Zhou del Norte"
+ },
+ "shaybanids": {
+  "name": "Shaybánidas"
+ },
+ "confederate-states-of-america": {
+  "name": "Estados Confederados de América"
+ },
+ "khalji-dynasty": {
+  "name": "Dinastía Khilji"
+ },
+ "aq-qoyunlu": {
+  "name": "Ak Koyunlu"
+ },
+ "scythia": {
+  "name": "Escitia"
+ },
+ "mahameghavahana-dynasty": {
+  "name": "Dinastía Mahameghavahana"
+ },
+ "kingdom-of-hejaz-and-nejd": {
+  "name": "Tercer Estado saudita"
+ },
+ "warring-states-china": {
+  "name": "Reinos combatientes"
+ },
+ "islamic-republic-of-iran": {
+  "name": "Irán"
+ },
+ "libyan-arab-republic": {
+  "name": "República Árabe Libia"
+ },
+ "kingdom-of-libya": {
+  "name": "Reino de Libia"
+ },
+ "state-of-libya": {
+  "name": "Libia"
+ },
+ "tibet": {
+  "name": "Tíbet"
+ },
+ "novgorod-republic": {
+  "name": "República de Nóvgorod"
+ },
+ "mongolian-people-s-republic": {
+  "name": "República Popular de Mongolia"
+ },
+ "later-tang": {
+  "name": "Dinastía Tang posterior"
+ },
+ "qin": {
+  "name": "Estado Qin"
+ },
+ "indo-scythians": {
+  "name": "Indoescitas"
+ },
+ "republic-of-peru": {
+  "name": "Perú"
+ },
+ "mali-federation": {
+  "name": "Federación de Mali"
+ },
+ "republic-of-new-granada": {
+  "name": "República de la Nueva Granada"
+ },
+ "german-empire": {
+  "name": "Imperio alemán"
+ },
+ "neo-assyrian-empire": {
+  "name": "Imperio neoasirio"
+ },
+ "eastern-wu": {
+  "name": "Wu"
+ },
+ "moghulistan": {
+  "name": "Mogolistán"
+ },
+ "greco-bactrian-kingdom": {
+  "name": "Reino grecobactriano"
+ },
+ "pala-empire": {
+  "name": "Dinastía Pala"
+ },
+ "mamluk-dynasty": {
+  "name": "Mamelucos de Delhi"
+ },
+ "kingdom-of-the-franks": {
+  "name": "Reino de los francos en la época merovingia"
+ },
+ "kara-khanids": {
+  "name": "Kanato karajánida"
+ },
+ "buyid-dynasty": {
+  "name": "Dinastía búyida"
+ },
+ "kingdom-of-spain": {
+  "name": "España"
+ },
+ "kalmar-union": {
+  "name": "Unión de Kalmar"
+ },
+ "maratha-empire": {
+  "name": "Imperio maratha"
+ },
+ "republic-of-chad": {
+  "name": "Chad"
+ },
+ "people-s-republic-of-angola": {
+  "name": "Angola"
+ },
+ "assyrian-egypt": {
+  "name": "Egipto asirio"
+ },
+ "ethiopia": {
+  "name": "Etiopía"
+ },
+ "sur-empire": {
+  "name": "Imperio suri"
+ },
+ "granadine-confederation": {
+  "name": "Confederación Granadina"
+ },
+ "united-states-of-colombia": {
+  "name": "Estados Unidos de Colombia"
+ },
+ "republic-of-colombia": {
+  "name": "Colombia"
+ },
+ "first-french-empire": {
+  "name": "Primer Imperio francés"
+ },
+ "kievan-rus": {
+  "name": "Rus de Kiev"
+ },
+ "united-arab-republic": {
+  "name": "República Árabe Unida"
+ },
+ "british-gold-coast": {
+  "name": "Costa de Oro británica"
+ },
+ "west-franks": {
+  "name": "Francia Occidental"
+ },
+ "house-of-oldenburg": {
+  "name": "Casa de Oldemburgo"
+ },
+ "republic-of-the-niger": {
+  "name": "Níger"
+ },
+ "northern-wei": {
+  "name": "Dinastía Wei del Norte"
+ },
+ "zengid-dynasty": {
+  "name": "Zanguíes"
+ },
+ "shunga-empire": {
+  "name": "Imperio Śuṅga"
+ },
+ "kanva-dynasty": {
+  "name": "Dinastía Kanva"
+ },
+ "rashtrakuta-dynasty": {
+  "name": "Imperio rashtrakuta"
+ },
+ "ethiopian-empire": {
+  "name": "Imperio etíope"
+ },
+ "emirate-of-nejd": {
+  "name": "Emirato de Néyed"
+ },
+ "mali-empire": {
+  "name": "Imperio de Mali"
+ },
+ "hamdanid-emirates": {
+  "name": "Dinastía hamdánida"
+ },
+ "east-turkestan": {
+  "name": "Turquestán Oriental"
+ },
+ "harsha-s-empire": {
+  "name": "Jarsha Vardhana"
+ },
+ "house-of-jagiellon": {
+  "name": "Dinastía Jagellón"
+ },
+ "palmyrene-empire": {
+  "name": "Imperio de Palmira"
+ },
+ "swedish-empire": {
+  "name": "Imperio sueco"
+ },
+ "avar-khaganate": {
+  "name": "Kanato ávaro"
+ },
+ "islamic-republic-of-pakistan": {
+  "name": "Pakistán"
+ },
+ "chen-dynasty": {
+  "name": "Dinastía Chen"
+ },
+ "republic-of-egypt": {
+  "name": "Egipto"
+ },
+ "spring-and-autumn-states": {
+  "name": "Primaveras y otoños"
+ },
+ "kingdom-of-egypt": {
+  "name": "Reino de Egipto"
+ },
+ "kingdom-of-great-britain": {
+  "name": "Gran Bretaña"
+ },
+ "majapahit": {
+  "name": "Imperio mayapajit"
+ },
+ "first-spanish-republic": {
+  "name": "Primera República española"
+ },
+ "british-cape-colony": {
+  "name": "Colonia del Cabo"
+ },
+ "tulunids": {
+  "name": "Tuluníes"
+ },
+ "kidarites": {
+  "name": "Reino kidarita"
+ },
+ "khmer-empire": {
+  "name": "Imperio jemer"
+ },
+ "polish-lithuanian-commonwealth": {
+  "name": "República de las Dos Naciones"
+ },
+ "almohad-caliphate": {
+  "name": "Imperio almohade"
+ },
+ "austria-hungary": {
+  "name": "Imperio austrohúngaro"
+ },
+ "chalukya-dynasty": {
+  "name": "Dinastía chalukya"
+ },
+ "gurjara-pratihara-dynasty": {
+  "name": "Gurjara-Pratihara"
+ },
+ "holy-roman-empire": {
+  "name": "Sacro Imperio Romano Germánico"
+ },
+ "federal-republic-of-nigeria": {
+  "name": "Nigeria"
+ },
+ "later-zhou": {
+  "name": "Dinastía Zhou Tardía"
+ },
+ "ottoman-tripolitania": {
+  "name": "Tripolitania otomana"
+ },
+ "satavahana-dynasty": {
+  "name": "Dinastía Satavájana"
+ },
+ "emirate-of-afghanistan": {
+  "name": "Emirato de Afganistán"
+ },
+ "shu-han": {
+  "name": "Shu"
+ },
+ "western-wei": {
+  "name": "Dinastía Wei del Oeste"
+ },
+ "francoist-spain": {
+  "name": "Dictadura de Francisco Franco"
+ },
+ "second-spanish-republic": {
+  "name": "Segunda República española"
+ },
+ "khanate-of-khiva": {
+  "name": "Kanato de Jiva"
+ },
+ "western-satraps": {
+  "name": "Sátrapas occidentales"
+ },
+ "saadi-sultanate": {
+  "name": "Sultanato saadí"
+ },
+ "northern-qi": {
+  "name": "Dinastía Qi del Norte"
+ },
+ "seljuk-dynasty": {
+  "name": "Dinastía selyúcida"
+ },
+ "republic-of-chile": {
+  "name": "Chile"
+ },
+ "grand-duchy-of-lithuania": {
+  "name": "Gran Ducado de Lituania"
+ },
+ "iberian-union": {
+  "name": "Portugal bajo la casa de Austria"
+ },
+ "austrian-empire": {
+  "name": "Imperio austríaco"
+ },
+ "united-kingdoms-of-sweden-and-norway": {
+  "name": "Unión entre Suecia y Noruega"
+ },
+ "khazaria": {
+  "name": "Jázaros"
+ },
+ "sokoto-caliphate": {
+  "name": "Califato de Sokoto"
+ },
+ "burma": {
+  "name": "Birmania"
+ },
+ "later-liang-dynasty": {
+  "name": "Dinastía Liang posterior"
+ },
+ "nanzhao": {
+  "name": "Reino de Nanzhao"
+ },
+ "french-indochina": {
+  "name": "Indochina francesa"
+ },
+ "indo-greeks": {
+  "name": "Reino indogriego"
+ },
+ "former-yan": {
+  "name": "Yan Anterior"
+ },
+ "republic-of-turkey": {
+  "name": "Turquía"
+ },
+ "khanate-of-bukhara": {
+  "name": "Kanato de Bujará"
+ },
+ "indus-valley-civilization": {
+  "name": "Civilización del valle del Indo"
+ },
+ "western-chalukya-empire": {
+  "name": "Imperio chalukya de Occidente"
+ },
+ "french-directory": {
+  "name": "Directorio francés"
+ },
+ "habsburg-monarchy": {
+  "name": "Imperio Habsburgo"
+ },
+ "indo-sasanian-empire": {
+  "name": "Reino kushano-sasánida"
+ },
+ "marinid-sultanate": {
+  "name": "Sultanato meriní"
+ },
+ "kingdom-of-germany": {
+  "name": "Reino de Germania"
+ },
+ "kingdom-of-sweden": {
+  "name": "Suecia"
+ },
+ "east-franks": {
+  "name": "Francia Oriental"
+ },
+ "gallic-empire": {
+  "name": "Imperio galo"
+ },
+ "jalayirid-sultanate": {
+  "name": "Dinastía yalayerí"
+ },
+ "french-fourth-republic": {
+  "name": "Cuarta República francesa"
+ },
+ "new-kingdom-of-egypt": {
+  "name": "Imperio Nuevo de Egipto"
+ },
+ "nogai-horde": {
+  "name": "Horda de Nogái"
+ },
+ "neo-babylonian-empire": {
+  "name": "Imperio neobabilónico"
+ },
+ "zhou-dynasty": {
+  "name": "Dinastía Zhou"
+ },
+ "visigothic-kingdom": {
+  "name": "Reino visigodo"
+ },
+ "thirtieth-dynasty-of-egypt": {
+  "name": "Dinastía XXX de Egipto"
+ },
+ "konbaung-dynasty": {
+  "name": "Dinastía Konbaung"
+ },
+ "emirate-of-jabal-shammar": {
+  "name": "Emirato de Yabal Shammar"
+ },
+ "french-third-republic": {
+  "name": "Tercera República francesa"
+ },
+ "rattanakosin-kingdom": {
+  "name": "Reino de Rattanakosin"
+ },
+ "vakataka-kingdom": {
+  "name": "Dinastía Vakataka"
+ },
+ "second-french-empire": {
+  "name": "Segundo Imperio francés"
+ },
+ "songhai-empire": {
+  "name": "Imperio songhai"
+ },
+ "durrani-dynasty": {
+  "name": "Dinastía Durrani"
+ },
+ "qocho-kingdom": {
+  "name": "Reino Uigur de Qocho"
+ },
+ "aquitaine": {
+  "name": "Aquitania"
+ },
+ "former-zhao": {
+  "name": "Han-Zhao"
+ },
+ "federal-republic-of-somalia": {
+  "name": "Somalia"
+ },
+ "french-first-republic": {
+  "name": "Primera República francesa"
+ },
+ "kingdom-of-afghanistan": {
+  "name": "Reino de Afganistán"
+ },
+ "republic-of-afghanistan": {
+  "name": "República de Afganistán"
+ },
+ "mujahideen": {
+  "name": "Muyahidín"
+ },
+ "afghanistan": {
+  "name": "Afganistán"
+ },
+ "french-consulate": {
+  "name": "Consulado francés"
+ },
+ "denmark-norway": {
+  "name": "Reino de Dinamarca y Noruega"
+ },
+ "bourbon-kingdom-of-france": {
+  "name": "Restauración borbónica en Francia"
+ },
+ "funj-sultanate": {
+  "name": "Sultanato de Sennar"
+ },
+ "french-second-republic": {
+  "name": "Segunda República francesa"
+ },
+ "central-african-republic": {
+  "name": "República Centroafricana"
+ },
+ "south-sudan": {
+  "name": "Sudán del Sur"
+ },
+ "later-shu": {
+  "name": "Shu posterior"
+ },
+ "federal-league": {
+  "name": "Liga Federal"
+ },
+ "assyria": {
+  "name": "Asiria"
+ },
+ "ukraine": {
+  "name": "Ucrania"
+ },
+ "chu": {
+  "name": "Estado Chu"
+ },
+ "republic-of-kenya": {
+  "name": "Kenia"
+ },
+ "kingdom-of-pontus": {
+  "name": "Reino del Ponto"
+ },
+ "burgundian-kingdom": {
+  "name": "Reinos de los burgundios"
+ },
+ "kingdom-of-france": {
+  "name": "Reino de Francia"
+ },
+ "republic-of-botswana": {
+  "name": "Botsuana"
+ },
+ "ostrogothic-kingdom": {
+  "name": "Reino ostrogodo de Italia"
+ },
+ "kannauj-varman-dynasty": {
+  "name": "Kannauj"
+ },
+ "haudenosaunee": {
+  "name": "Iroqués"
+ },
+ "vijayanagara-empire": {
+  "name": "Imperio vijayanagara"
+ },
+ "caliphate-of-cordoba": {
+  "name": "Emirato de Córdoba"
+ },
+ "kingdom-of-kush": {
+  "name": "Reino de Kush"
+ },
+ "house-of-habsburg": {
+  "name": "Casa de Habsburgo"
+ },
+ "taliban": {
+  "name": "Talibán"
+ },
+ "anti-kuomintang-coalition": {
+  "name": "Coalición anti-Kuomintang"
+ },
+ "arab-federation": {
+  "name": "Federación Árabe de Irak y Jordania"
+ },
+ "crown-of-castile": {
+  "name": "Corona de Castilla"
+ },
+ "akkadian-empire": {
+  "name": "Imperio acadio"
+ },
+ "ukrainian-people-s-republic": {
+  "name": "Hetmanato"
+ },
+ "kingdom-of-thailand": {
+  "name": "Tailandia"
+ },
+ "old-kingdom-of-norway": {
+  "name": "Noruega"
+ },
+ "kingdom-of-armenia": {
+  "name": "Reino de Armenia"
+ },
+ "qara-qoyunlu": {
+  "name": "Kara Koyunlu"
+ },
+ "kingdom-of-lysimachus": {
+  "name": "Reino de Lisímaco"
+ },
+ "xionites": {
+  "name": "Quionitas"
+ },
+ "adal-sultanate": {
+  "name": "Sultanato de Adel"
+ },
+ "indo-parthians": {
+  "name": "Reino indo-parto"
+ },
+ "rus": {
+  "name": "Rus"
+ },
+ "north-sea-empire": {
+  "name": "Imperio del Mar del Norte"
+ },
+ "yadava-dynasty": {
+  "name": "Dinastía Seuna"
+ },
+ "papua-new-guinea": {
+  "name": "Papúa Nueva Guinea"
+ },
+ "weimar-republic": {
+  "name": "República de Weimar"
+ },
+ "khanate-of-kokand": {
+  "name": "Kanato de Kokand"
+ },
+ "western-xia": {
+  "name": "Imperio tangut"
+ },
+ "bahmani-sultanate": {
+  "name": "Sultanato bahmaní"
+ },
+ "rustamid-dynasty": {
+  "name": "Rostomitas"
+ },
+ "turkmenistan": {
+  "name": "Turkmenistán"
+ },
+ "kingdom-of-hungary": {
+  "name": "Reino de Hungría"
+ },
+ "republic-of-cameroon": {
+  "name": "Camerún"
+ },
+ "twenty-sixth-dynasty-of-egypt": {
+  "name": "Dinastía XXVI de Egipto"
+ },
+ "republic-of-yemen": {
+  "name": "Yemen"
+ },
+ "tokugawa-shogunate": {
+  "name": "Shogunato Tokugawa"
+ },
+ "iraqi-republic": {
+  "name": "Irak"
+ },
+ "kingdom-of-italy": {
+  "name": "Reino de Italia"
+ },
+ "carthage": {
+  "name": "Estado púnico"
+ },
+ "halych-volhynia-occupation": {
+  "name": "Reino de Galicia-Volinia"
+ },
+ "ayutthaya-kingdom": {
+  "name": "Reino de Ayutthaya"
+ },
+ "north-german-confederation": {
+  "name": "Confederación Alemana del Norte"
+ },
+ "republic-of-finland": {
+  "name": "Finlandia"
+ },
+ "german-confederation": {
+  "name": "Confederación Germánica"
+ },
+ "united-provinces-of-central-america": {
+  "name": "República Federal de Centroamérica"
+ },
+ "lodi-dynasty": {
+  "name": "Dinastía Lodi"
+ },
+ "pagan-kingdom": {
+  "name": "Reino de Pagan"
+ },
+ "kingdom-of-hejaz": {
+  "name": "Reino del Hiyaz"
+ },
+ "kingdom-of-iraq": {
+  "name": "Reino de Irak"
+ },
+ "middle-kingdom-of-egypt": {
+  "name": "Imperio Medio de Egipto"
+ },
+ "first-bulgarian-empire": {
+  "name": "Primer Imperio búlgaro"
+ },
+ "chenla": {
+  "name": "Reino de Chenla"
+ },
+ "merina-kingdom": {
+  "name": "Reino de Imerina"
+ },
+ "scandinavian-minor-kingdoms": {
+  "name": "Pequeños reinos escandinavos"
+ },
+ "angevin-empire": {
+  "name": "Imperio angevino"
+ },
+ "vandals": {
+  "name": "Vándalos"
+ },
+ "magyars": {
+  "name": "Magiares"
+ },
+ "ostrogoths": {
+  "name": "Ostrogodos"
+ },
+ "republic-of-uzbekistan": {
+  "name": "Uzbekistán"
+ },
+ "japan": {
+  "name": "Japón"
+ },
+ "panthay-rebellion": {
+  "name": "Rebelión de los panthay"
+ },
+ "qarlugs": {
+  "name": "Karlukos"
+ },
+ "morocco": {
+  "name": "Marruecos"
+ },
+ "magadha-shaishunaga-dynasty": {
+  "name": "Dinastía Shishunaga"
+ },
+ "sikh-empire": {
+  "name": "Imperio sij"
+ },
+ "bijapur-sultanate": {
+  "name": "Sultanato de Bijapur"
+ },
+ "sukhothai-kingdom": {
+  "name": "Reino de Sujotai"
+ },
+ "kingdom-of-axum": {
+  "name": "Reino de Axum"
+ },
+ "rhodesia": {
+  "name": "República de Rodesia"
+ },
+ "zimbabwe-rhodesia": {
+  "name": "Zimbabue Rodesia"
+ },
+ "republic-of-zimbabwe": {
+  "name": "Zimbabue"
+ },
+ "taifas-of-iberia": {
+  "name": "Taifas de la península ibérica"
+ },
+ "wattasid-dynasty": {
+  "name": "Sultanato wattásida"
+ },
+ "middle-franks": {
+  "name": "Lotaringia"
+ },
+ "mayan-city-states": {
+  "name": "Cultura maya"
+ },
+ "tahirid-sultanate": {
+  "name": "Dinastía tahirí"
+ },
+ "republic-of-texas": {
+  "name": "República de Texas"
+ },
+ "second-polish-republic": {
+  "name": "Segunda República polaca"
+ },
+ "emirate-of-bukhara": {
+  "name": "Emirato de Bujará"
+ },
+ "sultanate-of-rum": {
+  "name": "Sultanato de Rum"
+ },
+ "sultanate-of-bengal": {
+  "name": "Sultanato de Bengala"
+ },
+ "kingdom-of-dali": {
+  "name": "Reino de Dali"
+ },
+ "federated-republic-of-germany": {
+  "name": "Alemania"
+ },
+ "thonburi-kingdom": {
+  "name": "Reino de Thonburi"
+ },
+ "vichy-france": {
+  "name": "Francia de Vichy"
+ },
+ "warring-states-japan": {
+  "name": "Japón del período Sengoku"
+ },
+ "western-chu": {
+  "name": "Chu Occidental"
+ },
+ "taiping-heavenly-kingdom": {
+  "name": "Reino Celestial Taiping"
+ },
+ "malaysia": {
+  "name": "Malasia"
+ },
+ "kingdom-of-england": {
+  "name": "Reino de Inglaterra"
+ },
+ "republic-of-the-congo": {
+  "name": "República del Congo"
+ },
+ "kingdom-of-prussia": {
+  "name": "Reino de Prusia"
+ },
+ "provisional-priamurye-government": {
+  "name": "Gobierno provisional de Priamurye"
+ },
+ "new-netherland": {
+  "name": "Nuevos Países Bajos"
+ },
+ "republic-of-the-philippines": {
+  "name": "Filipinas"
+ },
+ "commonwealth-of-england": {
+  "name": "Mancomunidad de Inglaterra"
+ },
+ "bornu-empire": {
+  "name": "Imperio Kanem-Bornu"
+ },
+ "spanish-nationalists": {
+  "name": "Bando sublevado"
+ },
+ "socialist-republic-of-vietnam": {
+  "name": "Vietnam"
+ },
+ "himyarite-kingdom": {
+  "name": "Himyar"
+ },
+ "dutch-republic": {
+  "name": "Provincias Unidas de los Países Bajos"
+ },
+ "sultanate-of-muscat-and-oman": {
+  "name": "Sultanato de Mascate y Omán"
+ },
+ "ashikaga-shogunate": {
+  "name": "Shogunato Ashikaga"
+ },
+ "republic-of-cote-d-ivoire": {
+  "name": "Costa de Marfil"
+ },
+ "hittites": {
+  "name": "Hititas"
+ },
+ "kamakura-shogunate": {
+  "name": "Shogunato Kamakura"
+ },
+ "kenmu-restoration": {
+  "name": "Restauración Kenmu"
+ },
+ "south-african-republic": {
+  "name": "República Sudafricana"
+ },
+ "republic-of-poland": {
+  "name": "Polonia"
+ },
+ "sultanate-of-oman": {
+  "name": "Omán"
+ },
+ "people-s-democratic-republic-of-yemen": {
+  "name": "Yemen del Sur"
+ },
+ "second-bulgarian-empire": {
+  "name": "Segundo Imperio búlgaro"
+ },
+ "mexicans": {
+  "name": "Mexicanos"
+ },
+ "qatar-protectorate": {
+  "name": "Protectorado de Catar"
+ },
+ "kingdom-of-numidia": {
+  "name": "Reino de Numidia"
+ },
+ "late-pallava-empire": {
+  "name": "Dinastía Pallava"
+ },
+ "kingdom-of-romania": {
+  "name": "Reino de Rumania"
+ },
+ "kingdom-of-khotan": {
+  "name": "Reino de Jotán"
+ },
+ "old-great-bulgaria": {
+  "name": "Antigua Gran Bulgaria"
+ },
+ "nguyen-dynasty": {
+  "name": "Dinastía Nguyễn"
+ },
+ "republic-of-the-rio-grande": {
+  "name": "República del Río Grande"
+ },
+ "sultanate-of-darfur": {
+  "name": "Sultanato de Darfur"
+ },
+ "new-zealand": {
+  "name": "Nueva Zelanda"
+ },
+ "khoshut-khanate": {
+  "name": "Kanato de Khoshut"
+ },
+ "republic-of-italy": {
+  "name": "Italia"
+ },
+ "riograndense-republic": {
+  "name": "República Riograndense"
+ },
+ "commonwealth-of-nations": {
+  "name": "Mancomunidad de Naciones"
+ },
+ "great-moravia": {
+  "name": "Gran Moravia"
+ },
+ "principality-of-hungary": {
+  "name": "Gran Principado de Hungría"
+ },
+ "wadai-empire": {
+  "name": "Imperio uadai"
+ },
+ "napoleonic-batavia-republic": {
+  "name": "Colonia neerlandesa del Cabo"
+ },
+ "salian-franks": {
+  "name": "Francos salios"
+ },
+ "vandal-kingdom": {
+  "name": "Reino vándalo"
+ },
+ "principality-of-chernigov": {
+  "name": "Principado de Chernígov"
+ },
+ "ghassanids": {
+  "name": "Gasánidas"
+ },
+ "gabon": {
+  "name": "Gabón"
+ },
+ "republic-of-ecuador": {
+  "name": "Ecuador"
+ },
+ "jesuit-reducciones": {
+  "name": "Misiones jesuíticas guaraníes"
+ },
+ "hyderabad-state": {
+  "name": "Estado de Hyderabad"
+ },
+ "batavian-republic": {
+  "name": "República Bátava"
+ },
+ "lakhmid-kingdom": {
+  "name": "Lájmidas"
+ },
+ "confederation-of-the-rhine": {
+  "name": "Confederación del Rin"
+ },
+ "sena-dynasty": {
+  "name": "Dinastía Sena"
+ },
+ "kingdom-of-castile": {
+  "name": "Reino de Castilla"
+ },
+ "principality-of-moldavia": {
+  "name": "Principado de Moldavia"
+ },
+ "lydia": {
+  "name": "Lidia"
+ },
+ "aghlabid-dynasty": {
+  "name": "Aglabí"
+ },
+ "kharijites": {
+  "name": "Jariyíes"
+ },
+ "principality-of-rostov-suzdal": {
+  "name": "Principado de Vladímir-Súzdal"
+ },
+ "socialist-federal-republic-of-yugoslavia": {
+  "name": "República Federativa Socialista de Yugoslavia"
+ },
+ "new-france": {
+  "name": "Nueva Francia"
+ },
+ "kingdom-of-the-suebi": {
+  "name": "Reino suevo"
+ },
+ "federal-republic-of-germany": {
+  "name": "Alemania Occidental"
+ },
+ "funan": {
+  "name": "Reino de Funan"
+ },
+ "heian-japan": {
+  "name": "Japón del período Heian"
+ },
+ "crown-of-aragon": {
+  "name": "Corona de Aragón"
+ },
+ "kingdom-of-lower-burgundy": {
+  "name": "Reino de la Baja Borgoña"
+ },
+ "nicaean-empire": {
+  "name": "Imperio de Nicea"
+ },
+ "state-of-buenos-aires": {
+  "name": "Estado de Buenos Aires"
+ },
+ "socialist-republic-of-romania": {
+  "name": "República Socialista de Rumania"
+ },
+ "romania": {
+  "name": "Rumania"
+ },
+ "kingdom-of-sardinia": {
+  "name": "Reino de Cerdeña"
+ },
+ "joseon": {
+  "name": "Dinastía Joseon"
+ },
+ "chaulukya-dynasty": {
+  "name": "Dinastía Chaulukya"
+ },
+ "korean-empire": {
+  "name": "Imperio de Corea"
+ },
+ "sultanate-of-brunei": {
+  "name": "Imperio de Brunéi"
+ },
+ "sultanate-of-malacca": {
+  "name": "Sultanato de Malaca"
+ },
+ "asuka-japan": {
+  "name": "Japón del período Asuka"
+ },
+ "nara-japan": {
+  "name": "Japón del período Nara"
+ },
+ "communist-laos": {
+  "name": "Laos"
+ },
+ "kingdom-of-laos": {
+  "name": "Reino de Laos"
+ },
+ "english-colonial-empire": {
+  "name": "Posesiones inglesas de ultramar"
+ },
+ "babylonia": {
+  "name": "Babilonia"
+ },
+ "alans": {
+  "name": "Alanos"
+ },
+ "hafsid-dynasty": {
+  "name": "Dinastía hafsí"
+ },
+ "crimean-khanate": {
+  "name": "Kanato de Crimea"
+ },
+ "pandya-empire": {
+  "name": "Dinastía Pandya"
+ },
+ "germiyanids": {
+  "name": "Beylicato de Germiyan"
+ },
+ "paramara-dynasty": {
+  "name": "Dinastía Paramara"
+ },
+ "mauretania": {
+  "name": "Reino de Mauritania"
+ },
+ "minaeans": {
+  "name": "Mineos"
+ },
+ "tay-son-dynasty": {
+  "name": "Dinastía Tây Sơn"
+ },
+ "upper-burgundy-and-italy": {
+  "name": "Reino de la Alta Borgoña"
+ },
+ "nabhani-dynasty": {
+  "name": "Dinastía nabhaní"
+ },
+ "regency-of-algiers": {
+  "name": "Regencia de Argel"
+ },
+ "french-algeria": {
+  "name": "Argelia francesa"
+ },
+ "aztec-triple-alliance": {
+  "name": "Imperio azteca"
+ },
+ "samo-s-empire": {
+  "name": "Samo"
+ },
+ "french-mandate-for-syria-and-lebanon": {
+  "name": "Mandato francés de Siria y el Líbano"
+ },
+ "republic-of-uganda": {
+  "name": "Uganda"
+ },
+ "luba-empire": {
+  "name": "Imperio luba"
+ },
+ "karkota-dynasty": {
+  "name": "Imperio Karkota"
+ },
+ "republic-of-belarus": {
+  "name": "Bielorrusia"
+ },
+ "goryeo": {
+  "name": "Koryo"
+ },
+ "sultanate-of-johor": {
+  "name": "Sultanato de Johor"
+ },
+ "chobanids": {
+  "name": "Dinastía chupánida"
+ },
+ "brythons": {
+  "name": "Britanos"
+ },
+ "first-hellenic-republic": {
+  "name": "Primera República helénica"
+ },
+ "greek-city-states": {
+  "name": "Ciudades-Estado griegas"
+ },
+ "eastern-ganga-kingdom": {
+  "name": "Dinastía Ganga Oriental"
+ },
+ "mexican-monarchists": {
+  "name": "Monárquicos mexicanos"
+ },
+ "ghana-empire": {
+  "name": "Imperio de Ghana"
+ },
+ "sosso-empire": {
+  "name": "Reino de Sosso"
+ },
+ "lombards": {
+  "name": "Lombardos"
+ },
+ "kadamba-empire": {
+  "name": "Dinastía Kadamba"
+ },
+ "kashmir": {
+  "name": "Cachemira"
+ },
+ "republic-of-senegal": {
+  "name": "Senegal"
+ },
+ "norman-england": {
+  "name": "Inglaterra normanda"
+ },
+ "kingdom-of-georgia": {
+  "name": "Reino de Georgia"
+ },
+ "idrisids": {
+  "name": "Dinastía idrisí"
+ },
+ "myinsaing-kingdom": {
+  "name": "Reino de Myinsaing"
+ },
+ "kingdom-of-pinya": {
+  "name": "Reino de Pinya"
+ },
+ "ava-kingdom": {
+  "name": "Reino de Ava"
+ },
+ "wu": {
+  "name": "Estado Wu"
+ },
+ "kyrgyzstan": {
+  "name": "Kirguistán"
+ },
+ "kingdom-of-leon": {
+  "name": "Reino de León"
+ },
+ "teutonic-order": {
+  "name": "Orden Teutónica"
+ },
+ "ai-viet": {
+  "name": "Dai Viet"
+ },
+ "le-dynasty": {
+  "name": "Dinastía Lê"
+ },
+ "mitanni": {
+  "name": "Mitani"
+ },
+ "yue": {
+  "name": "Estado Yue"
+ },
+ "phrygia": {
+  "name": "Frigia"
+ },
+ "second-syrian-republic": {
+  "name": "Segunda República Siria"
+ },
+ "republic-of-syria": {
+  "name": "Siria"
+ },
+ "serbian-empire": {
+  "name": "Imperio serbio"
+ },
+ "ashanti-empire": {
+  "name": "Imperio asante"
+ },
+ "democratic-republic-of-vietnam": {
+  "name": "Vietnam del Norte"
+ },
+ "arab-socialist-ba-ath-party": {
+  "name": "Partido Baaz Árabe Socialista"
+ },
+ "kingdom-of-cambodia": {
+  "name": "Camboya"
+ },
+ "khmer-rouge": {
+  "name": "Jemeres Rojos"
+ },
+ "people-s-republic-of-kampuchea": {
+  "name": "República Popular de Kampuchea"
+ },
+ "kashmir-and-jammu": {
+  "name": "Principado de Jammu y Cachemira"
+ },
+ "oriental-republic-of-uruguay": {
+  "name": "Uruguay"
+ },
+ "republic-of-vietnam": {
+  "name": "Vietnam del Sur"
+ },
+ "ankhwennefer": {
+  "name": "Anjunnefer"
+ },
+ "kingdom-of-pergamon": {
+  "name": "Reino de Pérgamo"
+ },
+ "kalmyk-khanate": {
+  "name": "Kanato calmuco"
+ },
+ "hungarian-republic": {
+  "name": "Hungría"
+ },
+ "vientiane": {
+  "name": "Vientián"
+ },
+ "khanate-of-kazan": {
+  "name": "Kanato de Kazán"
+ },
+ "county-of-ribagorza": {
+  "name": "Condado de Ribagorza"
+ },
+ "principality-of-bulgaria": {
+  "name": "Principado de Bulgaria"
+ },
+ "kingdom-of-bohemia": {
+  "name": "Reino de Bohemia"
+ },
+ "duchy-of-masovia": {
+  "name": "Ducado de Mazovia"
+ },
+ "twenty-second-dynasty-of-egypt": {
+  "name": "Dinastía XXII de Egipto"
+ },
+ "hammadid-dynasty": {
+  "name": "Hamaditas"
+ },
+ "kingdom-of-denmark": {
+  "name": "Reino de Dinamarca"
+ },
+ "kingdom-of-kaarta": {
+  "name": "Kaarta"
+ },
+ "astrakhan-khanate": {
+  "name": "Kanato de Astracán"
+ },
+ "kingdom-of-urartu": {
+  "name": "Urartu"
+ },
+ "kingdom-of-luang-phrabang": {
+  "name": "Luang Prabang"
+ },
+ "republic-of-baja-california": {
+  "name": "República de Baja California"
+ },
+ "kingdom-of-soissons": {
+  "name": "Reino de Soissons"
+ },
+ "united-principalities-of-moldavia-and-wallachia": {
+  "name": "Principado de Rumania"
+ },
+ "hausa-kingdoms": {
+  "name": "Estados hausa"
+ },
+ "shang-dynasty": {
+  "name": "Dinastía Shang"
+ },
+ "ahmadnagar-sultanate": {
+  "name": "Sultanato de Ahmednagar"
+ },
+ "jin": {
+  "name": "Estado Jin"
+ },
+ "kingdom-of-the-gepids": {
+  "name": "Gépidos"
+ },
+ "republic-of-tunisia": {
+  "name": "Túnez"
+ },
+ "principality-of-smolensk": {
+  "name": "Principado de Smolensk"
+ },
+ "unified-silla": {
+  "name": "Silla unificada"
+ },
+ "gorkha-kingdom": {
+  "name": "Reino Gorkha"
+ },
+ "netherlands-antilles": {
+  "name": "Antillas Neerlandesas"
+ },
+ "serbia-montenegro": {
+  "name": "Serbia y Montenegro"
+ },
+ "principality-of-kiev": {
+  "name": "Principado de Kiev"
+ },
+ "duchy-of-warsaw": {
+  "name": "Gran Ducado de Varsovia"
+ },
+ "republic-of-suriname": {
+  "name": "Surinam"
+ },
+ "czechoslovakia": {
+  "name": "Checoslovaquia"
+ },
+ "people-s-republic-of-bangladesh": {
+  "name": "Bangladés"
+ },
+ "eastern-hungarian-kingdom": {
+  "name": "Reino de Hungría del Este"
+ },
+ "lavo-kingdom": {
+  "name": "Reino de Lavo"
+ },
+ "haripunjaya": {
+  "name": "Haripunchai"
+ },
+ "duchy-of-sandomierz": {
+  "name": "Ducado de Sandomierz"
+ },
+ "republic-of-tajikistan": {
+  "name": "Tayikistán"
+ },
+ "duchy-of-aquitaine": {
+  "name": "Ducado de Aquitania"
+ },
+ "guayaquil-junta": {
+  "name": "Junta de Guayaquil"
+ },
+ "federation-of-malaya": {
+  "name": "Federación Malaya"
+ },
+ "carnatic-sultanate": {
+  "name": "Principado de Arcot"
+ },
+ "antigonid-macedonia": {
+  "name": "Dinastía antigónida"
+ },
+ "sultanate-of-hobyo": {
+  "name": "Sultanato de Hobyo"
+ },
+ "viking-settlements": {
+  "name": "Asentamientos vikingos"
+ },
+ "hyksos": {
+  "name": "Hicsos"
+ },
+ "free-orange-state": {
+  "name": "Estado Libre de Orange"
+ },
+ "principality-of-polotsky": {
+  "name": "Pólotsk"
+ },
+ "republic-of-nicaragua": {
+  "name": "Nicaragua"
+ },
+ "bamana-empire": {
+  "name": "Imperio de Bamana"
+ },
+ "kingdom-of-kongo": {
+  "name": "Reino del Congo"
+ },
+ "kingdom-of-neustria": {
+  "name": "Neustria"
+ },
+ "kingdom-of-great-zimbabwe": {
+  "name": "Reino de Zimbabue"
+ },
+ "champa": {
+  "name": "Champa"
+ },
+ "kingdom-of-kartli": {
+  "name": "Reino de Kartli"
+ },
+ "qi": {
+  "name": "Estado Qi"
+ },
+ "democratic-people-s-republic-of-korea": {
+  "name": "Corea del Norte"
+ },
+ "kingdom-of-asturias": {
+  "name": "Reino de Asturias"
+ },
+ "duchy-of-bohemia": {
+  "name": "Ducado de Bohemia"
+ },
+ "kingdom-of-sarawak": {
+  "name": "Reino de Sarawak"
+ },
+ "sultanate-of-aceh": {
+  "name": "Sultanato de Aceh"
+ },
+ "state-of-eritrea": {
+  "name": "Eritrea"
+ },
+ "don-cossacks": {
+  "name": "Cosacos del Don"
+ },
+ "nabataeans": {
+  "name": "Nabateos"
+ },
+ "brandenburg-prussia": {
+  "name": "Brandeburgo-Prusia"
+ },
+ "communist-cuba": {
+  "name": "Cuba"
+ },
+ "alodia": {
+  "name": "Aloa"
+ },
+ "greek-junta": {
+  "name": "Dictadura de los Coroneles"
+ },
+ "laomedon": {
+  "name": "Laomedonte de Mitilene"
+ },
+ "kingdom-of-greece": {
+  "name": "Reino de Grecia"
+ },
+ "duchy-of-silesia": {
+  "name": "Ducado de Silesia"
+ },
+ "ifat-sultanate": {
+  "name": "Ifat"
+ },
+ "sunda-kingdom": {
+  "name": "Reino de la Sonda"
+ },
+ "zaporozhian-cossacks": {
+  "name": "Cosacos de Zaporiyia"
+ },
+ "duchy-of-spoleto": {
+  "name": "Ducado de Spoleto"
+ },
+ "duchy-of-burgundy": {
+  "name": "Ducado de Borgoña"
+ },
+ "goths": {
+  "name": "Godos"
+ },
+ "republic-of-benin": {
+  "name": "Benín"
+ },
+ "kingdom-of-arles": {
+  "name": "Reino de Arlés"
+ },
+ "perdiccas": {
+  "name": "Pérdicas"
+ },
+ "duchy-of-greater-poland": {
+  "name": "Ducado de Gran Polonia"
+ },
+ "livonian-conference": {
+  "name": "Confederación Livona"
+ },
+ "cyrenaica": {
+  "name": "Cirenaica"
+ },
+ "pyu-city-states": {
+  "name": "Civilización pyu"
+ },
+ "zirid-dynasty": {
+  "name": "Ziríes"
+ },
+ "poles": {
+  "name": "Polacos"
+ },
+ "german-democratic-republic": {
+  "name": "República Democrática Alemana"
+ },
+ "shirvan": {
+  "name": "Shirván"
+ },
+ "kingdom-of-lunda": {
+  "name": "Imperio lunda"
+ },
+ "icelandic-commonwealth": {
+  "name": "Mancomunidad Islandesa"
+ },
+ "kingdom-of-iceland": {
+  "name": "Reino de Islandia"
+ },
+ "republic-of-iceland": {
+  "name": "Islandia"
+ },
+ "principality-of-transylvania": {
+  "name": "Principado de Transilvania"
+ },
+ "kingdom-of-alamannia": {
+  "name": "Alamania"
+ },
+ "hoysala-kingdom": {
+  "name": "Hoysala"
+ },
+ "kingdom-of-bulgaria": {
+  "name": "Reino de Bulgaria"
+ },
+ "republic-of-bulgaria": {
+  "name": "Bulgaria"
+ },
+ "people-s-republic-of-bulgaria": {
+  "name": "República Popular de Bulgaria"
+ },
+ "despotate-of-epirus": {
+  "name": "Despotado de Epiro"
+ },
+ "pro-habsburg-spain": {
+  "name": "Casa de Austria"
+ },
+ "taifa-of-badajoz": {
+  "name": "Taifa de Badajoz"
+ },
+ "sultanate-of-maguindanao": {
+  "name": "Sultanato de Maguindánao"
+ },
+ "principality-of-halych": {
+  "name": "Principado de Galicia"
+ },
+ "odrysian-kingdom": {
+  "name": "Reino odrisio"
+ },
+ "yan": {
+  "name": "Estado Yan"
+ },
+ "republic-of-korea": {
+  "name": "Corea del Sur"
+ },
+ "massina-empire": {
+  "name": "Imperio de Masina"
+ },
+ "imamate-of-oman": {
+  "name": "Imanato de Omán"
+ },
+ "kingdom-of-jordan": {
+  "name": "Jordania"
+ },
+ "kingdom-of-serbia": {
+  "name": "Reino de Serbia"
+ },
+ "grand-duchy-of-berg": {
+  "name": "Gran Ducado de Berg"
+ },
+ "kingdom-of-mrauk-u": {
+  "name": "Reino de Mrauk U"
+ },
+ "nguyen-lords": {
+  "name": "Señorío Nguyễn"
+ },
+ "republic-of-liberia": {
+  "name": "Liberia"
+ },
+ "kingdom-of-aragon": {
+  "name": "Reino de Aragón"
+ },
+ "beylik-of-karaman": {
+  "name": "Karamánidas"
+ },
+ "burgundians": {
+  "name": "Burgundios"
+ },
+ "trung-sisters": {
+  "name": "Hermanas Trưng"
+ },
+ "bagratid-armenia": {
+  "name": "Armenia bagrátida"
+ },
+ "principality-of-minsk": {
+  "name": "Principado de Minsk"
+ },
+ "sloboda-ukraine": {
+  "name": "Ucrania Libre"
+ },
+ "hadhramaut": {
+  "name": "Hadramaut"
+ },
+ "chimu-empire": {
+  "name": "Reino chimú"
+ },
+ "wei": {
+  "name": "Estado Wei"
+ },
+ "duchy-of-bavaria": {
+  "name": "Ducado de Baviera"
+ },
+ "kingdom-of-wessex": {
+  "name": "Reino de Wessex"
+ },
+ "kingdom-of-mercia": {
+  "name": "Reino de Mercia"
+ },
+ "independent-state-of-croatia": {
+  "name": "Estado Independiente de Croacia"
+ },
+ "asir": {
+  "name": "Provincia de Asir"
+ },
+ "duchy-of-opole": {
+  "name": "Ducado de Opole"
+ },
+ "principality-of-pereyaslavl": {
+  "name": "Principado de Pereyáslav"
+ },
+ "new-caledonia": {
+  "name": "Nueva Caledonia"
+ },
+ "early-dynastic-period-of-egypt": {
+  "name": "Periodo arcaico de Egipto"
+ },
+ "old-kingdom-of-egypt": {
+  "name": "Imperio Antiguo de Egipto"
+ },
+ "malawi": {
+  "name": "Malaui"
+ },
+ "kingdom-of-croatia": {
+  "name": "Reino de Croacia"
+ },
+ "latin-empire": {
+  "name": "Imperio latino"
+ },
+ "taifa-of-seville": {
+  "name": "Taifa de Sevilla"
+ },
+ "kingdom-of-scotland": {
+  "name": "Reino de Escocia"
+ },
+ "kingdom-of-naples-napoleonic": {
+  "name": "Reino de Nápoles"
+ },
+ "hungarian-people-s-republic": {
+  "name": "República Popular Húngara"
+ },
+ "kingdom-of-sicily": {
+  "name": "Reino de Sicilia"
+ },
+ "kingdom-of-cappadocia": {
+  "name": "Reino de Capadocia"
+ },
+ "majeerteen-sultanate": {
+  "name": "Sultanato de Majeerteen"
+ },
+ "kingdom-of-the-two-sicilies": {
+  "name": "Reino de las Dos Sicilias"
+ },
+ "kingdom-of-mysore": {
+  "name": "Reino de Mysore"
+ },
+ "serbs": {
+  "name": "Serbios"
+ },
+ "gauda-kingdom": {
+  "name": "Reino de Gauda"
+ },
+ "state-of-israel": {
+  "name": "Israel"
+ },
+ "kingdom-of-galicia": {
+  "name": "Reino de Galicia"
+ },
+ "taifa-of-toledo": {
+  "name": "Taifa de Toledo"
+ },
+ "kingdom-of-bavaria": {
+  "name": "Reino de Baviera"
+ },
+ "sayyid-dynasty": {
+  "name": "Dinastía sayyida"
+ },
+ "beylik-of-tunis": {
+  "name": "Beylicato de Túnez"
+ },
+ "oyo-empire": {
+  "name": "Imperio oyo"
+ },
+ "azerbaijan-democratic-republic": {
+  "name": "Azerbaiyán"
+ },
+ "republic-of-austria": {
+  "name": "Austria"
+ },
+ "danishmendids": {
+  "name": "Danisméndidas"
+ },
+ "galatia": {
+  "name": "Galacia"
+ },
+ "karamanli-dynasty": {
+  "name": "Dinastía Karamanli"
+ },
+ "kingdom-of-northumbria": {
+  "name": "Reino de Northumbria"
+ },
+ "second-republic-of-austria": {
+  "name": "Segunda República de Austria"
+ },
+ "kingdom-of-alba": {
+  "name": "Reino de Alba"
+ },
+ "sultanate-of-banten": {
+  "name": "Sultanato de Bantén"
+ },
+ "empire-of-haiti": {
+  "name": "Primer Imperio de Haití"
+ },
+ "republic-of-panama": {
+  "name": "Panamá"
+ },
+ "saxons": {
+  "name": "Sajones"
+ },
+ "greek-colonies": {
+  "name": "Colonias griegas"
+ },
+ "principality-of-volhynia": {
+  "name": "Principado de Volinia"
+ },
+ "chandela-kingdom": {
+  "name": "Chandela"
+ },
+ "margraviate-of-brandenburg": {
+  "name": "Margraviato de Brandeburgo"
+ },
+ "czech-republic": {
+  "name": "República Checa"
+ },
+ "berar-sultanate": {
+  "name": "Sultanato de Berar"
+ },
+ "norman-italy": {
+  "name": "Italia normanda"
+ },
+ "lan-na-kingdom": {
+  "name": "Lanna"
+ },
+ "taifa-of-murcia": {
+  "name": "Taifa de Murcia"
+ },
+ "united-arab-emirates": {
+  "name": "Emiratos Árabes Unidos"
+ },
+ "anglo-saxon-england": {
+  "name": "Inglaterra anglosajona"
+ },
+ "sultanate-of-palembang": {
+  "name": "Sultanato de Palembang"
+ },
+ "caucasian-albania": {
+  "name": "Albania caucásica"
+ },
+ "irish-free-state": {
+  "name": "Estado Libre Irlandés"
+ },
+ "principality-of-wallachia": {
+  "name": "Valaquia"
+ },
+ "house-of-bourbon": {
+  "name": "Casa de Borbón"
+ },
+ "sierra-leone": {
+  "name": "Sierra Leona"
+ },
+ "bahrani-dynasty": {
+  "name": "Al-Hasa"
+ },
+ "anuradhapura": {
+  "name": "Anuradhapura"
+ },
+ "kingdom-of-polonnaruwa": {
+  "name": "Reino de Polonnaruwa"
+ },
+ "trucial-states": {
+  "name": "Estados de la Tregua"
+ },
+ "kediri-kingdom": {
+  "name": "Reino de Kediri"
+ },
+ "mossi-kingdoms": {
+  "name": "Reinos mossi"
+ },
+ "bahrain": {
+  "name": "Baréin"
+ },
+ "kingdom-of-bhutan": {
+  "name": "Bután"
+ },
+ "netherlands": {
+  "name": "Países Bajos"
+ },
+ "mycenaean-greece": {
+  "name": "Civilización micénica"
+ },
+ "polyperchon": {
+  "name": "Poliperconte"
+ },
+ "zapotec-civilization": {
+  "name": "Cultura zapoteca"
+ },
+ "principality-of-turov-and-pinsk": {
+  "name": "Principado de Túrov y Pinsk"
+ },
+ "sultanate-of-sulu": {
+  "name": "Sultanato de Joló"
+ },
+ "republic-of-latvia": {
+  "name": "Letonia"
+ },
+ "livonian-brothers-of-the-sword": {
+  "name": "Hermanos Livonios de la Espada"
+ },
+ "house-of-savoy": {
+  "name": "Casa de Saboya"
+ },
+ "zhao": {
+  "name": "Estado Zhao"
+ },
+ "principality-of-upper-hungary": {
+  "name": "Principado de la Alta Hungría"
+ },
+ "etruscans": {
+  "name": "Etruscos"
+ },
+ "mataram-sultanate": {
+  "name": "Sultanato de Mataram"
+ },
+ "principality-of-ryazan": {
+  "name": "Principado de Riazán"
+ },
+ "republic-of-lithuania": {
+  "name": "Lituania"
+ },
+ "republic-of-venice": {
+  "name": "República de Venecia"
+ },
+ "chiangmai": {
+  "name": "Chiang Mai"
+ },
+ "puebloans-chaco-regional-system": {
+  "name": "Ancestrales indígenas pueblo (sistema regional de Chaco)"
+ },
+ "qarmatians": {
+  "name": "Cármatas"
+ },
+ "dabuyid-dynasty": {
+  "name": "Dinastía dabuyí"
+ },
+ "sabaeans": {
+  "name": "Reino de Saba"
+ },
+ "bidar-sultanate": {
+  "name": "Sultanato de Bidar"
+ },
+ "house-of-valois-anjou": {
+  "name": "Casa de Anjou-Valois"
+ },
+ "sikh-confederacy": {
+  "name": "Confederación sij"
+ },
+ "principality-of-peremyshl": {
+  "name": "Principado de Peremyshl"
+ },
+ "kingdom-of-lithuania": {
+  "name": "Reino de Lituania"
+ },
+ "natalia-republic": {
+  "name": "República de Natal"
+ },
+ "twenty-third-dynasty-of-egypt": {
+  "name": "Dinastía XXIII de Egipto"
+ },
+ "irish-catholic-confederation": {
+  "name": "Irlanda confederada"
+ },
+ "principality-of-serbia": {
+  "name": "Principado de Serbia"
+ },
+ "portuguese-ceylon": {
+  "name": "Ceilán portugués"
+ },
+ "greek-dark-ages": {
+  "name": "Edad Oscura griega"
+ },
+ "armenian-kingdom-of-cilicia": {
+  "name": "Reino armenio de Cilicia"
+ },
+ "dal-riata": {
+  "name": "Reino de Dalriada"
+ },
+ "capetian-house-of-anjou": {
+  "name": "Casa de Anjou-Sicilia"
+ },
+ "mataram-kingdom": {
+  "name": "Reino de Medang"
+ },
+ "sajid-dynasty": {
+  "name": "Dinastía sayí"
+ },
+ "principality-of-terebovlia": {
+  "name": "Principado de Terebovlia"
+ },
+ "cuban-nationalists": {
+  "name": "Nacionalistas cubanos"
+ },
+ "duchy-of-gascony": {
+  "name": "Ducado de Vasconia"
+ },
+ "republic-of-costa-rica": {
+  "name": "Costa Rica"
+ },
+ "kingdom-of-jerusalem": {
+  "name": "Reino de Jerusalén"
+ },
+ "taifa-of-valencia": {
+  "name": "Taifa de Valencia"
+ },
+ "county-of-toulouse": {
+  "name": "Condado de Tolosa"
+ },
+ "dominican-republic": {
+  "name": "República Dominicana"
+ },
+ "republic-of-croatia": {
+  "name": "Croacia"
+ },
+ "kingdom-of-bosnia": {
+  "name": "Reino de Bosnia"
+ },
+ "great-yuan": {
+  "name": "Dayuan"
+ },
+ "bosnia-and-herzegovina": {
+  "name": "Bosnia y Herzegovina"
+ },
+ "house-of-hohenstaufen": {
+  "name": "Dinastía Hohenstaufen"
+ },
+ "polish-armed-forces": {
+  "name": "Fuerzas Armadas polacas"
+ },
+ "kingdom-of-osroene": {
+  "name": "Osroena"
+ },
+ "kingdom-of-duklja": {
+  "name": "Doclea"
+ },
+ "illyrian-kingdom": {
+  "name": "Reino ilirio"
+ },
+ "slovakia": {
+  "name": "Eslovaquia"
+ },
+ "beylik-of-isfendiyar": {
+  "name": "Dinastía Candar"
+ },
+ "banate-of-bosnia": {
+  "name": "Banato de Bosnia"
+ },
+ "nayaks-of-madurai": {
+  "name": "Nayakas de Madurai"
+ },
+ "taifa-of-denia": {
+  "name": "Taifa de Denia"
+ },
+ "electorate-of-hanover": {
+  "name": "Electorado de Brunswick-Luneburgo"
+ },
+ "kingdom-of-brittany": {
+  "name": "Reino de Bretaña"
+ },
+ "duchy-of-benevento": {
+  "name": "Ducado de Benevento"
+ },
+ "swiss-confederation": {
+  "name": "Suiza"
+ },
+ "kingdom-of-belgium": {
+  "name": "Bélgica"
+ },
+ "county-of-portugal": {
+  "name": "Condado Portucalense"
+ },
+ "zaydi-alid-dynasties": {
+  "name": "Dinastía alávida"
+ },
+ "county-of-foix": {
+  "name": "Condado de Foix"
+ },
+ "visigoths": {
+  "name": "Visigodos"
+ },
+ "ripuarian-franks": {
+  "name": "Francos ripuarios"
+ },
+ "colchis": {
+  "name": "Cólquida"
+ },
+ "volga-bulgaria": {
+  "name": "Bulgaria del Volga"
+ },
+ "dutch-ceylon": {
+  "name": "Ceilán neerlandés"
+ },
+ "lu": {
+  "name": "Estado Lu"
+ },
+ "kingdom-of-westphalia": {
+  "name": "Reino de Westfalia"
+ },
+ "duchy-of-milan": {
+  "name": "Ducado de Milán"
+ },
+ "samtskhe-saatabago": {
+  "name": "Principado de Mesjetia"
+ },
+ "kingdom-of-champasak": {
+  "name": "Champasak"
+ },
+ "cisalpine-republic": {
+  "name": "República Cisalpina"
+ },
+ "bessarabia": {
+  "name": "Besarabia"
+ },
+ "kingdom-of-vaspurakan": {
+  "name": "Reino de Vaspurakan"
+ },
+ "papal-states": {
+  "name": "Estados Pontificios"
+ },
+ "ziyarid-dynasty": {
+  "name": "Dinastía ziyárida"
+ },
+ "county-of-edessa": {
+  "name": "Condado de Edesa"
+ },
+ "pahang-sultanate": {
+  "name": "Reino del Pahang"
+ },
+ "kingdom-of-thuringia": {
+  "name": "Basina de Turingia"
+ },
+ "duchy-of-thuringia": {
+  "name": "Ducado de Turingia"
+ },
+ "cimmerian-bosporus": {
+  "name": "Reino del Bósforo"
+ },
+ "helvetic-republic": {
+  "name": "República Helvética"
+ },
+ "kingdom-of-africa": {
+  "name": "Reino de África"
+ },
+ "duchy-of-normandy": {
+  "name": "Ducado de Normandía"
+ },
+ "sultanate-of-banjar": {
+  "name": "Sultanato de Banjar"
+ },
+ "taifa-of-zaragoza": {
+  "name": "Taifa de Zaragoza"
+ },
+ "county-of-blois": {
+  "name": "Condado de Blois"
+ },
+ "union-of-utrecht": {
+  "name": "Unión de Utrecht"
+ },
+ "tabal-kingdom": {
+  "name": "Tabal"
+ },
+ "duchy-of-prussia": {
+  "name": "Ducado de Prusia"
+ },
+ "kingdom-of-hanover": {
+  "name": "Reino de Hannover"
+ },
+ "caucasian-imamate": {
+  "name": "Imanato del Cáucaso"
+ },
+ "barghawata-conference": {
+  "name": "Confederación barghawata"
+ },
+ "solomon-islands": {
+  "name": "Islas Salomón"
+ },
+ "duchy-of-brittany": {
+  "name": "Ducado de Bretaña"
+ },
+ "county-of-flanders": {
+  "name": "Condado de Flandes"
+ },
+ "italian-city-states": {
+  "name": "Ciudades-Estado italianas"
+ },
+ "county-of-savoy": {
+  "name": "Condado de Saboya"
+ },
+ "caucasian-iberia": {
+  "name": "Reino de Iberia"
+ },
+ "sovereign-principality-of-the-united-netherlands": {
+  "name": "Soberano Principado de los Países Bajos Unidos"
+ },
+ "los-altos": {
+  "name": "Estado de Los Altos"
+ },
+ "electorate-of-saxony": {
+  "name": "Electorado de Sajonia"
+ },
+ "phoenicia": {
+  "name": "Fenicia"
+ },
+ "second-athenian-league": {
+  "name": "Segunda Liga ateniense"
+ },
+ "house-of-ascania": {
+  "name": "Casa de Ascania"
+ },
+ "seventeenth-dynasty-of-egypt": {
+  "name": "Dinastía XVII de Egipto"
+ },
+ "song": {
+  "name": "Estado Song"
+ },
+ "principality-of-iberia": {
+  "name": "Principado de Iberia"
+ },
+ "fifteenth-dynasty-of-egypt": {
+  "name": "Dinastía XV de Egipto"
+ },
+ "kingdom-of-janggala": {
+  "name": "Reino de Janggala"
+ },
+ "kingdom-of-saxony": {
+  "name": "Reino de Sajonia"
+ },
+ "sacred-band-of-thebes": {
+  "name": "Batallón Sagrado de Tebas"
+ },
+ "yugoslav-partisans": {
+  "name": "Partisanos yugoslavos"
+ },
+ "catalonia": {
+  "name": "Cataluña"
+ },
+ "itza-mayans": {
+  "name": "Mayas itzaes"
+ },
+ "empire-of-trebizond": {
+  "name": "Imperio de Trebisonda"
+ },
+ "kingdom-of-thessalonica": {
+  "name": "Reino de Tesalónica"
+ },
+ "republic-of-guinea-bissau": {
+  "name": "Guinea-Bisáu"
+ },
+ "dong-okjeo": {
+  "name": "Okjeo"
+ },
+ "lesotho": {
+  "name": "Lesoto"
+ },
+ "emirate-of-granada": {
+  "name": "Reino nazarí de Granada"
+ },
+ "haiti": {
+  "name": "Haití"
+ },
+ "janapada-of-magadha": {
+  "name": "Magadha"
+ },
+ "beylik-of-dulkadir": {
+  "name": "Beylicato de Dulkadir"
+ },
+ "sultanate-of-cirebon": {
+  "name": "Sultanato de Cirebon"
+ },
+ "beylik-of-karasi": {
+  "name": "Beylicato de Karasi"
+ },
+ "revolutionary-roman-republic": {
+  "name": "República Romana"
+ },
+ "ambrosian-republic": {
+  "name": "República Ambrosiana"
+ },
+ "serbian-despots": {
+  "name": "Despotado de Serbia"
+ },
+ "grand-principality-of-serbia": {
+  "name": "Rascia"
+ },
+ "british-ceylon": {
+  "name": "Ceilán británico"
+ },
+ "equatorial-guinea": {
+  "name": "Guinea Ecuatorial"
+ },
+ "lazica": {
+  "name": "Lázica"
+ },
+ "people-s-republic-of-zanzibar": {
+  "name": "República Popular de Zanzíbar"
+ },
+ "duchy-of-courland": {
+  "name": "Ducado de Curlandia y Semigalia"
+ },
+ "vermont-republic": {
+  "name": "República de Vermont"
+ },
+ "republic-of-genoa": {
+  "name": "República de Génova"
+ },
+ "county-of-rouergue": {
+  "name": "Rouergue"
+ },
+ "people-s-socialist-republic-of-albania": {
+  "name": "República Popular Socialista de Albania"
+ },
+ "republic-of-pisa": {
+  "name": "República de Pisa"
+ },
+ "county-of-champagne": {
+  "name": "Condado de Champaña"
+ },
+ "republic-of-moldova": {
+  "name": "Moldavia"
+ },
+ "grand-duchy-of-krakow": {
+  "name": "Gran Ducado de Cracovia"
+ },
+ "mosquito-kingdom": {
+  "name": "Costa de Mosquitos"
+ },
+ "principality-of-nitra": {
+  "name": "Principado de Nitra"
+ },
+ "giudicato-of-arborea": {
+  "name": "Juzgado de Arborea"
+ },
+ "norse-greenland": {
+  "name": "Asentamientos vikingos en Groenlandia y Terranova"
+ },
+ "zululand": {
+  "name": "Zululandia"
+ },
+ "jaemtland": {
+  "name": "Jemtia"
+ },
+ "rhodes": {
+  "name": "Rodas"
+ },
+ "republic-of-rwanda": {
+  "name": "Ruanda"
+ },
+ "former-yugoslav-republic-of-macedonia": {
+  "name": "Macedonia del Norte"
+ },
+ "early-cheras": {
+  "name": "Dinastía Chera"
+ },
+ "neo-hittite-states": {
+  "name": "Reinos luvio-arameos"
+ },
+ "kingdom-of-hawai-i": {
+  "name": "Reino de Hawái"
+ },
+ "republic-of-hawai-i": {
+  "name": "República de Hawái"
+ },
+ "republic-of-burundi": {
+  "name": "Burundi"
+ },
+ "qasim-khanate": {
+  "name": "Kanato de Qasim"
+ },
+ "sikhs": {
+  "name": "Sijes"
+ },
+ "grand-duchy-of-tuscany": {
+  "name": "Gran Ducado de Toscana"
+ },
+ "taifa-of-granada": {
+  "name": "Taifa de Granada"
+ },
+ "kingdom-of-the-iberians": {
+  "name": "Reino de los iberos"
+ },
+ "qatar-dynasty": {
+  "name": "Catar"
+ },
+ "sixteenth-dynasty-of-egypt": {
+  "name": "Dinastía XVI de Egipto"
+ },
+ "ramadanid-emirate": {
+  "name": "Ramázanidas"
+ },
+ "breton-kingdoms": {
+  "name": "Reinos bretones"
+ },
+ "kingdom-of-syrmia": {
+  "name": "Sirmia"
+ },
+ "sultanate-of-perak": {
+  "name": "Sultán de Perak"
+ },
+ "county-of-armagnac": {
+  "name": "Armañac"
+ },
+ "kingdom-of-kakheti": {
+  "name": "Reino de Kajetia"
+ },
+ "county-of-brabant": {
+  "name": "Landgraviato de Brabante"
+ },
+ "athenian-coalition": {
+  "name": "Coalición ateniense"
+ },
+ "kingdom-of-gwynedd": {
+  "name": "Reino de Gwynedd"
+ },
+ "kingdom-of-etruria": {
+  "name": "Reino de Etruria"
+ },
+ "paphlagonia": {
+  "name": "Paflagonia"
+ },
+ "belize": {
+  "name": "Belice"
+ },
+ "margraviate-of-moravia": {
+  "name": "Marca de Moravia"
+ },
+ "jaffna-kingdom": {
+  "name": "Reino de Jaffna"
+ },
+ "pskov-republic": {
+  "name": "República de Pskov"
+ },
+ "free-county-of-burgundy": {
+  "name": "Franco Condado de Borgoña"
+ },
+ "emirate-of-sicily": {
+  "name": "Emirato de Sicilia"
+ },
+ "peloponnesian-league": {
+  "name": "Liga del Peloponeso"
+ },
+ "republic-of-djibouti": {
+  "name": "Yibuti"
+ },
+ "kingdom-of-navarre": {
+  "name": "Reino de Navarra"
+ },
+ "balinese-kingdom": {
+  "name": "Reino de Bali"
+ },
+ "empire-of-thessalonica": {
+  "name": "Imperio de Tesalónica"
+ },
+ "magna-frisia": {
+  "name": "Reino frisio"
+ },
+ "italian-nationalists": {
+  "name": "Nacionalistas italianos"
+ },
+ "republic-of-el-salvador": {
+  "name": "El Salvador"
+ },
+ "kingdom-of-fiji": {
+  "name": "Reino de Fiyi"
+ },
+ "republic-of-fiji": {
+  "name": "Fiyi"
+ },
+ "despotate-of-dobruja": {
+  "name": "Despotado de Dobruja"
+ },
+ "duchy-of-croatia": {
+  "name": "Principado de Dalmacia"
+ },
+ "taifa-of-almeria": {
+  "name": "Taifa de Almería"
+ },
+ "british-overseas-territories": {
+  "name": "Territorios británicos de ultramar"
+ },
+ "county-of-auvergne": {
+  "name": "Auvernia"
+ },
+ "kingdom-of-bulungan": {
+  "name": "Sultanato de Bulungan"
+ },
+ "earldom-of-desmond": {
+  "name": "Conde de Desmond"
+ },
+ "republic-of-florence": {
+  "name": "República de Florencia"
+ },
+ "duchy-of-holstein": {
+  "name": "Ducado de Holstein"
+ },
+ "kingdom-of-israel": {
+  "name": "Reino de Israel"
+ },
+ "grand-duchy-of-hesse": {
+  "name": "Hesse-Darmstadt"
+ },
+ "principality-of-achaea": {
+  "name": "Principado de Acaya"
+ },
+ "patani-kingdom": {
+  "name": "Reino de Patani"
+ },
+ "republic-of-slovenia": {
+  "name": "Eslovenia"
+ },
+ "french-colony-of-guiana": {
+  "name": "Guayana Francesa"
+ },
+ "county-of-vermandois": {
+  "name": "Vermandois"
+ },
+ "county-of-barcelona": {
+  "name": "Condado de Barcelona"
+ },
+ "commonwealth-of-the-bahamas": {
+  "name": "Bahamas"
+ },
+ "east-timor": {
+  "name": "Timor Oriental"
+ },
+ "classic-veracruz-culture": {
+  "name": "Cultura del centro de Veracruz"
+ },
+ "kingdom-of-deira": {
+  "name": "Reino de Deira"
+ },
+ "kingdom-of-seisyllwg": {
+  "name": "Seisyllwg"
+ },
+ "house-of-wittelsbach": {
+  "name": "Casa de Wittelsbach"
+ },
+ "french-india": {
+  "name": "India francesa"
+ },
+ "principality-of-salerno": {
+  "name": "Principado de Salerno"
+ },
+ "republic-of-baden": {
+  "name": "República de Baden"
+ },
+ "duchy-of-lorraine": {
+  "name": "Ducado de Lorena"
+ },
+ "olmec-civilization": {
+  "name": "Cultura olmeca"
+ },
+ "chechen-republic": {
+  "name": "Chechenia"
+ },
+ "ryazan": {
+  "name": "Riazán"
+ },
+ "eswatini": {
+  "name": "Suazilandia"
+ },
+ "duchy-of-tuscia": {
+  "name": "Ducado de Tuscia"
+ },
+ "electorate-of-trier": {
+  "name": "Electorado de Tréveris"
+ },
+ "despotate-of-vidin": {
+  "name": "Zarato de Vidin"
+ },
+ "kingdom-of-wurttemberg": {
+  "name": "Reino de Wurtemberg"
+ },
+ "duchy-of-styria": {
+  "name": "Ducado de Estiria"
+ },
+ "new-hebrides": {
+  "name": "Nuevas Hébridas"
+ },
+ "duchy-of-nassau": {
+  "name": "Ducado de Nassau"
+ },
+ "duchy-of-g-ogow": {
+  "name": "Ducado de Glogovia"
+ },
+ "dutch-gold-coast": {
+  "name": "Costa de Oro neerlandesa"
+ },
+ "principality-of-antioch": {
+  "name": "Principado de Antioquía"
+ },
+ "california-republic": {
+  "name": "República de California"
+ },
+ "obotrites": {
+  "name": "Abodritas"
+ },
+ "county-of-urgell": {
+  "name": "Condado de Urgel"
+ },
+ "first-sealand-dynasty": {
+  "name": "I Dinastía del País del Mar"
+ },
+ "taifa-of-cordoba": {
+  "name": "Taifa de Córdoba"
+ },
+ "phoenician-colonies": {
+  "name": "Colonias fenicias"
+ },
+ "county-of-nevers": {
+  "name": "Condado de Névers"
+ },
+ "nayaks-of-thanjavur": {
+  "name": "Nayakas de Tanjore"
+ },
+ "thanjavur-maratha-kingdom": {
+  "name": "Reino Maratha de Thanjavur"
+ },
+ "kingdom-of-the-isles": {
+  "name": "Reino de Mann y las Islas"
+ },
+ "beylik-of-saruhan": {
+  "name": "Beylicato de Saruhan"
+ },
+ "zagwe-dynasty": {
+  "name": "Dinastía Zagüe"
+ },
+ "thessaly": {
+  "name": "Tesalia"
+ },
+ "grand-duchy-of-baden": {
+  "name": "Gran Ducado de Baden"
+ },
+ "kingdom-of-gordyene": {
+  "name": "Corduena"
+ },
+ "electorate-of-hesse": {
+  "name": "Electorado de Hesse"
+ },
+ "danish-magnates": {
+  "name": "Magnates daneses"
+ },
+ "kingdom-of-adiabene": {
+  "name": "Adiabene"
+ },
+ "county-of-maine": {
+  "name": "Condado de Maine"
+ },
+ "kingdom-of-majorca": {
+  "name": "Reino de Mallorca"
+ },
+ "principality-of-mingrelia": {
+  "name": "Principado de Mingrelia"
+ },
+ "kingdom-of-cyprus": {
+  "name": "Reino de Chipre"
+ },
+ "kingdom-of-east-anglia": {
+  "name": "Reino de Estanglia"
+ },
+ "france-antarctique": {
+  "name": "Francia Antártica"
+ },
+ "kingdom-of-rheged": {
+  "name": "Reino de Rheged"
+ },
+ "achaean-league": {
+  "name": "Liga Aquea"
+ },
+ "aetolian-league": {
+  "name": "Liga Etolia"
+ },
+ "county-of-holland": {
+  "name": "Condado de Holanda"
+ },
+ "kingdom-of-imereti": {
+  "name": "Reino de Imericia"
+ },
+ "cyprus-condominium": {
+  "name": "Chipre"
+ },
+ "taifa-of-carmona": {
+  "name": "Taifa de Carmona"
+ },
+ "corsican-republic": {
+  "name": "República Corsa"
+ },
+ "republic-of-the-gambia": {
+  "name": "Gambia"
+ },
+ "despotate-of-arta": {
+  "name": "Despotado de Arta"
+ },
+ "philistia": {
+  "name": "Filistea"
+ },
+ "kingdom-of-bernicia": {
+  "name": "Reino de Bernicia"
+ },
+ "zheng": {
+  "name": "Estado Zheng"
+ },
+ "county-of-touraine": {
+  "name": "Turena"
+ },
+ "catalan-company": {
+  "name": "Gran Compañía catalana"
+ },
+ "giudicato-of-cagliari": {
+  "name": "Juzgado de Cagliari"
+ },
+ "duchy-of-luxembourg": {
+  "name": "Ducado de Luxemburgo"
+ },
+ "principality-of-abkhazia": {
+  "name": "Principado de Abjasia"
+ },
+ "house-of-luxembourg": {
+  "name": "Casa de Luxemburgo"
+ },
+ "taifa-of-tortosa": {
+  "name": "Taifa de Tortosa"
+ },
+ "electorate-of-wurttemberg": {
+  "name": "Electorado de Wurtemberg"
+ },
+ "principality-of-beloozero": {
+  "name": "Principado de Beloózero"
+ },
+ "lebanon": {
+  "name": "Líbano"
+ },
+ "grand-duchy-of-wurzburg": {
+  "name": "Gran Ducado de Wurzburgo"
+ },
+ "kingdom-of-commagene": {
+  "name": "Reino de Comagene"
+ },
+ "republic-of-the-rif": {
+  "name": "República del Rif"
+ },
+ "republic-of-cabo-verde": {
+  "name": "Cabo Verde"
+ },
+ "dauphine": {
+  "name": "Delfinado"
+ },
+ "county-of-berga": {
+  "name": "Condado de Berga"
+ },
+ "patriarchate-of-aquileia": {
+  "name": "Patriarcado de Aquilea"
+ },
+ "taifa-of-albarracin": {
+  "name": "Taifa de Albarracín"
+ },
+ "duchy-of-athens": {
+  "name": "Ducado de Atenas"
+ },
+ "duchy-of-eczyca": {
+  "name": "Voivodato de Łęczyca"
+ },
+ "frisians": {
+  "name": "Frisones"
+ },
+ "cuzco": {
+  "name": "Cusco"
+ },
+ "taifa-of-algeciras": {
+  "name": "Taifa de Algeciras"
+ },
+ "samudera-pasai-sultanate": {
+  "name": "Reino de Samudra Pasai"
+ },
+ "electorate-of-salzburg": {
+  "name": "Electorado de Salzburgo"
+ },
+ "giudicato-of-logudoro": {
+  "name": "Juzgado de Torres"
+ },
+ "beylik-of-aydin": {
+  "name": "Beylicato de Aydın"
+ },
+ "bali": {
+  "name": "Provincia de Bali"
+ },
+ "county-of-artois": {
+  "name": "Condado de Artois"
+ },
+ "duchy-of-parma-and-piacenza": {
+  "name": "Ducado de Parma"
+ },
+ "electorate-of-baden": {
+  "name": "Electorado de Baden"
+ },
+ "emirate-of-nekor": {
+  "name": "Emirato de Nekor"
+ },
+ "cispadane-republic": {
+  "name": "República Cispadana"
+ },
+ "duchy-of-modena-and-reggio": {
+  "name": "Ducado de Módena"
+ },
+ "rajahnate-of-cebu": {
+  "name": "Rajanato de Cebú"
+ },
+ "zhu": {
+  "name": "Estado Zou"
+ },
+ "county-of-besalu": {
+  "name": "Condado de Besalú"
+ },
+ "county-of-tripoli": {
+  "name": "Condado de Trípoli"
+ },
+ "taifa-of-silves": {
+  "name": "Taifa de Silves"
+ },
+ "republic-of-trinidad-and-tobago": {
+  "name": "Trinidad y Tobago"
+ },
+ "principality-of-regensberg": {
+  "name": "Principado de Ratisbona"
+ },
+ "principality-of-valona-and-kanina": {
+  "name": "Principado de Valona"
+ },
+ "kingdom-of-powys": {
+  "name": "Reino de Powys"
+ },
+ "beylik-of-menteshe": {
+  "name": "Beylicato de Menteşe"
+ },
+ "kampili-kingdom": {
+  "name": "Kampili"
+ },
+ "kingdom-of-sussex": {
+  "name": "Reino de Sussex"
+ },
+ "teotihuacan": {
+  "name": "Teotihuacán"
+ },
+ "toltec": {
+  "name": "Cultura tolteca"
+ },
+ "janapada-of-anga": {
+  "name": "Reino de Anga"
+ },
+ "minoan-civilization": {
+  "name": "Civilización minoica"
+ },
+ "emirate-of-crete": {
+  "name": "Emirato de Creta"
+ },
+ "cretan-state": {
+  "name": "Estado de Creta"
+ },
+ "janapada-of-malla": {
+  "name": "Malla"
+ },
+ "palestinians": {
+  "name": "Pueblo palestino"
+ },
+ "nizhny-novgorod": {
+  "name": "Nizhni Nóvgorod"
+ },
+ "janapada-of-kuru": {
+  "name": "Reino de Kuru"
+ },
+ "janapada-of-matsya": {
+  "name": "Matsia"
+ },
+ "janapada-of-surasena": {
+  "name": "Surasena"
+ },
+ "janapada-of-vajji": {
+  "name": "Vajji"
+ },
+ "duchy-of-legnica": {
+  "name": "Ducado de Legnica"
+ },
+ "janapada-of-avanti": {
+  "name": "Reino de Avanti"
+ },
+ "chen": {
+  "name": "Estado de Chen"
+ },
+ "taifa-of-arcos": {
+  "name": "Taifa de Arcos"
+ },
+ "janapada-of-kosala": {
+  "name": "Kosala"
+ },
+ "janapada-of-pancala": {
+  "name": "Panchala"
+ },
+ "kingdom-of-brycheiniog": {
+  "name": "Brycheiniog"
+ },
+ "tondo": {
+  "name": "Reino de Tondó"
+ },
+ "free-city-of-danzig": {
+  "name": "Ciudad Libre de Dánzig"
+ },
+ "duchy-of-oldenburg": {
+  "name": "Ducado de Oldemburgo"
+ },
+ "duchy-of-brunswick": {
+  "name": "Ducado de Brunswick"
+ },
+ "county-of-pallars": {
+  "name": "Condado de Pallars"
+ },
+ "hwicce": {
+  "name": "Reino de Hwicce"
+ },
+ "principality-of-guria": {
+  "name": "Principado de Guria"
+ },
+ "molossians": {
+  "name": "Molosos"
+ },
+ "county-of-rosellon": {
+  "name": "Condado de Rosellón"
+ },
+ "giudicato-of-gallura": {
+  "name": "Juzgado de Gallura"
+ },
+ "cornwall": {
+  "name": "Cornualles"
+ },
+ "taifa-of-saltes-and-huelva": {
+  "name": "Taifa de Huelva"
+ },
+ "maynila": {
+  "name": "Reino de Manila"
+ },
+ "kingdom-of-kent": {
+  "name": "Reino de Kent"
+ },
+ "turkish-republic-of-northern-cyprus": {
+  "name": "Chipre del Norte"
+ },
+ "teng": {
+  "name": "Estado Teng"
+ },
+ "kingdom-of-judah": {
+  "name": "Reino de Judá"
+ },
+ "sultanate-of-zanzibar": {
+  "name": "Sultanato de Zanzíbar"
+ },
+ "county-of-vexin": {
+  "name": "Vexin"
+ },
+ "grand-duchy-of-saxe-weimar-eisenach": {
+  "name": "Ducado de Sajonia-Weimar-Eisenach"
+ },
+ "kingdom-of-essex": {
+  "name": "Reino de Essex"
+ },
+ "cao": {
+  "name": "Estado Cao"
+ },
+ "kingdom-of-lindsey": {
+  "name": "Reino de Lindsey"
+ },
+ "county-of-bearn": {
+  "name": "Bearne"
+ },
+ "surakarta-sunanate": {
+  "name": "Sunanato de Surakarta"
+ },
+ "cai": {
+  "name": "Estado de Cai"
+ },
+ "county-of-aragon": {
+  "name": "Condado de Aragón"
+ },
+ "duchy-of-jawor": {
+  "name": "Ducado de Jawor"
+ },
+ "kingdom-of-sobrarbe": {
+  "name": "Reino de Sobrarbe"
+ },
+ "ligurian-republic": {
+  "name": "República Ligur"
+ },
+ "freetown-colony": {
+  "name": "Colonia de Freetown"
+ },
+ "duchy-of-raciborz": {
+  "name": "Ducado de Racibórz"
+ },
+ "saxe-meiningen": {
+  "name": "Ducado de Sajonia-Meiningen"
+ },
+ "saxe-altenburg": {
+  "name": "Ducado de Sajonia-Altemburgo"
+ },
+ "principality-of-reuss-gera": {
+  "name": "Principado de Reuss-Gera"
+ },
+ "cuban-communists": {
+  "name": "Comunistas cubanos"
+ },
+ "kingdom-of-powys-wenwynwyn": {
+  "name": "Powys Wenwynwyn"
+ },
+ "county-of-pallars-sobira": {
+  "name": "El Pallars Sobirá"
+ },
+ "septinsular-republic": {
+  "name": "República de las Islas Jónicas"
+ },
+ "saxe-coburg-and-gotha": {
+  "name": "Ducado de Sajonia-Coburgo y Gotha"
+ },
+ "taifa-of-alpuente": {
+  "name": "Taifa de Alpuente"
+ },
+ "new-sweden": {
+  "name": "Nueva Suecia"
+ },
+ "duchy-of-saint-sava": {
+  "name": "Ducado de San Sava"
+ },
+ "free-city-of-lubeck": {
+  "name": "Ciudad Libre de Lübeck"
+ },
+ "ryukyu-kingdom": {
+  "name": "Reino de Ryūkyū"
+ },
+ "mauritius": {
+  "name": "Mauricio"
+ },
+ "comtat-venaissin": {
+  "name": "Condado Venaissin"
+ },
+ "luxembourg": {
+  "name": "Luxemburgo"
+ },
+ "tenochtitlan": {
+  "name": "México-Tenochtitlan"
+ },
+ "county-of-osona": {
+  "name": "Condado de Osona"
+ },
+ "taifa-of-santa-maria-do-algarve": {
+  "name": "Taifa de Santa María del Algarve"
+ },
+ "taifa-of-tejada": {
+  "name": "Taifa de Tejada"
+ },
+ "danish-india": {
+  "name": "India danesa"
+ },
+ "house-of-tocco": {
+  "name": "Condado Palatino de Cefalonia y Zacinto"
+ },
+ "sultanate-of-bone": {
+  "name": "Sultanato de Bone"
+ },
+ "kedah-perlis-district": {
+  "name": "Perlis"
+ },
+ "duchy-of-bytom": {
+  "name": "Ducado de Bytom"
+ },
+ "duchy-of-anhalt": {
+  "name": "Anhalt"
+ },
+ "huguenots": {
+  "name": "Hugonotes"
+ },
+ "kamerun": {
+  "name": "Camerún alemán"
+ },
+ "commune-of-the-zealots": {
+  "name": "Comuna de los zelotes"
+ },
+ "free-city-of-krakow": {
+  "name": "República de Cracovia"
+ },
+ "county-of-pallars-jussa": {
+  "name": "Pallars Jussá"
+ },
+ "house-of-khalifa": {
+  "name": "Al Jalifa"
+ },
+ "taifa-of-niebla": {
+  "name": "Taifa de Niebla"
+ },
+ "republic-of-ragusa": {
+  "name": "República de Ragusa"
+ },
+ "sao-tome-and-principe": {
+  "name": "Santo Tomé y Príncipe"
+ },
+ "free-city-of-hamburg": {
+  "name": "Ciudad Libre de Hamburgo"
+ },
+ "taifa-of-ceuta": {
+  "name": "Taifa de Ceuta"
+ },
+ "kingdom-of-gwent": {
+  "name": "Reino de Gwent"
+ },
+ "danish-gold-coast": {
+  "name": "Costa de Oro danesa"
+ },
+ "principality-of-theodoro": {
+  "name": "Principado de Teodoro"
+ },
+ "principality-of-hohenzollern-sigmaringen": {
+  "name": "Hohenzollern-Sigmaringen"
+ },
+ "kingdom-of-powys-fadog": {
+  "name": "Powys Fadog"
+ },
+ "taifa-of-moron": {
+  "name": "Taifa de Morón"
+ },
+ "commonwealth-of-dominica": {
+  "name": "Dominica"
+ },
+ "duchy-of-the-archipelago": {
+  "name": "Ducado de Naxos"
+ },
+ "principality-of-schwarzburg-sonderhausen": {
+  "name": "Casa de Schwarzburgo"
+ },
+ "principality-of-capua": {
+  "name": "Principado de Capua"
+ },
+ "taifa-of-ronda": {
+  "name": "Taifa de Ronda"
+ },
+ "namayan": {
+  "name": "Reino de Namayan"
+ },
+ "duchy-of-naples": {
+  "name": "Ducado de Nápoles"
+ },
+ "principality-of-waldeck-and-pyrmont": {
+  "name": "Principado de Waldeck"
+ },
+ "mamertines": {
+  "name": "Mamertinos"
+ },
+ "county-of-ampuria": {
+  "name": "Condado de Ampurias"
+ },
+ "roman-kingdom": {
+  "name": "Monarquía romana"
+ },
+ "principality-of-lippe": {
+  "name": "Principado de Lippe"
+ },
+ "saint-lucia": {
+  "name": "Santa Lucía"
+ },
+ "isle-of-man": {
+  "name": "Isla de Man"
+ },
+ "kathmandu": {
+  "name": "Katmandú"
+ },
+ "kingdom-of-singapura": {
+  "name": "Reino de Singapura"
+ },
+ "republic-of-singapore": {
+  "name": "Singapur"
+ },
+ "county-of-boulogne": {
+  "name": "Condado de Boulogne"
+ },
+ "palau": {
+  "name": "Palaos"
+ },
+ "antigua-and-barbuda": {
+  "name": "Antigua y Barbuda"
+ },
+ "saint-vincent": {
+  "name": "San Vicente y las Granadinas"
+ },
+ "free-city-of-bremen": {
+  "name": "Ciudad Libre de Bremen"
+ },
+ "saint-kitts": {
+  "name": "San Cristóbal"
+ },
+ "grenada": {
+  "name": "Granada"
+ },
+ "first-french-colonial-empire": {
+  "name": "Imperio colonial francés"
+ },
+ "principality-of-andorra": {
+  "name": "Andorra"
+ },
+ "cuman-kipchak-confederation": {
+  "name": "Cumania"
+ },
+ "tangier-international-zone": {
+  "name": "Zona Internacional de Tánger"
+ },
+ "principality-of-orange": {
+  "name": "Principado de Orange"
+ },
+ "principality-of-lichtenberg": {
+  "name": "Principado de Lichtenberg"
+ },
+ "free-city-of-frankfurt": {
+  "name": "Ciudad Libre de Fráncfort"
+ },
+ "principality-of-monaco": {
+  "name": "Mónaco"
+ },
+ "gaza-hamas": {
+  "name": "Franja de Gaza bajo Hamás"
+ },
+ "principality-of-liechtenstein": {
+  "name": "Liechtenstein"
+ },
+ "republic-of-amalfi": {
+  "name": "República amalfitana"
+ },
+ "republic-of-san-marino": {
+  "name": "San Marino"
+ }
+}
