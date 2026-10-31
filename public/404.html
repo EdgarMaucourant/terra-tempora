@@ -1,0 +1,38 @@
+<!doctype html>
+<!-- Served with a 404 status for any path that is not a file of the site
+     (see `not_found_handling` in wrangler.jsonc). The app's own views live
+     after the # in the address, so a real link never lands here. -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Page not found · Terra Tempora</title>
+    <link rel="icon" href="data:," />
+    <style>
+      :root { color-scheme: dark; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 16px;
+        box-sizing: border-box;
+        background: #07090d;
+        color: #eef0f2;
+        font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+        text-align: center;
+      }
+      h1 { font: 400 2rem/1.2 "Iowan Old Style", Georgia, serif; margin: 0 0 0.5rem; }
+      p { margin: 0.25rem 0; color: #a9b1bb; }
+      a { color: #e2742f; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Page not found</h1>
+      <p>There is nothing at this address. <a href="/">Back to the globe</a></p>
+      <p lang="fr">Cette page n’existe pas. <a href="/?lang=fr">Retour au globe</a></p>
+    </main>
+  </body>
+</html>

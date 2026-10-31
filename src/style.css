@@ -1,0 +1,3836 @@
+/* Layout: the globe fills the screen beside the text panel on the right; a
+   masthead, a toolbar and the timeline float over it as quiet glass panels. One dark look: the globe
+   sits in space. */
+:root {
+  color-scheme: dark;
+  --space: #07090d;
+  --panel: rgba(13, 17, 23, 0.8);
+  --panel-solid: #11161d;
+  --line: rgba(214, 220, 228, 0.14);
+  --ink: #eef0f2;
+  --ink-soft: #a9b1bb;
+  --steppe: #e2742f; /* the Mongol Empire's own color, used as the accent */
+  --font-display: "Newsreader Variable", "Iowan Old Style", Georgia, serif;
+  --font-ui: "Instrument Sans Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --radius: 14px;
+  --gutter: 16px;
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: var(--space);
+  color: var(--ink);
+  font: 14px/1.45 var(--font-ui);
+  overflow: hidden;
+}
+
+#app {
+  position: relative;
+  height: 100%;
+}
+
+#globe {
+  position: absolute;
+  inset: 0 var(--panel-space, 0px) 0 0;
+}
+
+#globe[hidden],
+.map[hidden] {
+  display: none;
+}
+
+#globe .cesium-widget,
+#globe .cesium-widget canvas {
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+}
+
+/* The globe and map take the keyboard; their focus ring sits inside the screen's edge. */
+#globe:focus-visible,
+.map:focus-visible {
+  outline: 2px solid var(--steppe);
+  outline-offset: -4px;
+}
+
+.cesium-widget-credits {
+  display: none !important;
+}
+
+button,
+select,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--steppe);
+  outline-offset: 2px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+/* Masthead */
+.masthead {
+  position: absolute;
+  top: calc(var(--safe-top) + var(--gutter));
+  left: var(--gutter);
+  max-width: min(560px, calc(100% - 2 * var(--gutter) - 200px));
+  pointer-events: none;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.7);
+}
+
+.masthead h1 {
+  margin: 4px 0 2px;
+  font: 600 clamp(26px, 4.4vw, 40px) / 1.05 var(--font-display);
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+.masthead .sub {
+  margin: 0;
+  color: var(--ink-soft);
+  /* The home subtitle breaks where its text has a line break. */
+  white-space: pre-line;
+}
+
+/* The short label is for phones, where the way back shares a row with the toolbar. */
+.back-short {
+  display: none;
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--panel);
+  backdrop-filter: blur(10px);
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  text-shadow: none;
+  pointer-events: auto;
+}
+
+.back:hover {
+  border-color: rgba(214, 220, 228, 0.32);
+}
+
+
+
+
+
+
+.tooltip {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  display: grid;
+  gap: 1px;
+  margin: 0;
+  padding: 7px 11px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel-solid);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  font-size: 12px;
+  color: var(--ink-soft);
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.tooltip strong {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.tooltip[hidden] {
+  display: none;
+}
+
+/* Toolbar */
+.toolbar {
+  position: absolute;
+  top: calc(var(--safe-top) + var(--gutter));
+  right: var(--gutter);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.ghost,
+.switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 36px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--panel);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* The GitHub link looks like the toolbar's other buttons. */
+a.ghost {
+  color: inherit;
+  text-decoration: none;
+}
+
+.ghost:hover,
+.switch:hover {
+  border-color: rgba(214, 220, 228, 0.32);
+}
+
+.switch input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.switch-track {
+  position: relative;
+  width: 28px;
+  height: 16px;
+  border-radius: 999px;
+  background: rgba(214, 220, 228, 0.25);
+  transition: background 0.2s;
+}
+
+.switch-track::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--ink);
+  transition: transform 0.2s;
+}
+
+.switch input:checked + .switch-track {
+  background: var(--steppe);
+}
+
+.switch input:checked + .switch-track::after {
+  transform: translateX(12px);
+}
+
+.switch input:focus-visible + .switch-track {
+  outline: 2px solid var(--steppe);
+  outline-offset: 2px;
+}
+
+/* Globe tools, on the left edge */
+.globe-tools {
+  position: absolute;
+  left: var(--gutter);
+  top: 50%;
+  transform: translateY(-50%);
+  display: grid;
+  gap: 8px;
+}
+
+.map {
+  position: absolute;
+  inset: 0 var(--panel-space, 0px) 0 0;
+  width: calc(100% - var(--panel-space, 0px));
+  height: 100%;
+  background: #070a0e;
+  touch-action: none;
+  cursor: grab;
+}
+
+.map:active {
+  cursor: grabbing;
+}
+
+.view-switch {
+  display: grid;
+  width: 64px;
+  padding: 3px;
+  gap: 2px;
+  box-sizing: border-box;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+  backdrop-filter: blur(10px);
+}
+
+.view-switch button {
+  padding: 6px 0;
+  border: 0;
+  border-radius: 9px;
+  background: none;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+
+.view-switch button:hover {
+  color: var(--ink);
+}
+
+.view-switch button[aria-pressed="true"] {
+  background: rgba(214, 220, 228, 0.14);
+  color: var(--ink);
+}
+
+/* A view's settings: a submenu that opens beside its button. */
+.view-item {
+  position: relative;
+  display: grid;
+}
+
+.view-mode {
+  width: 76px;
+}
+
+.view-mode > .view-item > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.view-more {
+  font-size: 14px;
+  line-height: 1;
+  opacity: 0.7;
+  transition: transform 0.15s;
+}
+
+.view-mode button[aria-expanded="true"] .view-more {
+  transform: rotate(180deg);
+}
+
+.view-sub {
+  position: absolute;
+  top: -4px;
+  left: calc(100% + 12px);
+  z-index: 4;
+  background: var(--panel-solid);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+}
+
+.view-sub[hidden] {
+  display: none;
+}
+
+.projection-switch {
+  width: 264px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.view-sub button {
+  padding: 6px 10px;
+  text-align: left;
+}
+
+.axis-switch {
+  width: 124px;
+}
+
+/* The text panel on the right, from under the toolbar to the timeline. Its
+   left edge resizes it. */
+.side-panel {
+  position: absolute;
+  right: var(--gutter);
+  top: calc(var(--safe-top) + 64px);
+  bottom: calc(var(--safe-bottom) + 2 * var(--gutter) + var(--timeline-height, 190px));
+  width: calc(var(--panel-width, 380px) - var(--gutter));
+  max-width: calc(100% - 2 * var(--gutter));
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+}
+
+.side-panel[hidden] {
+  display: none;
+}
+
+.panel-grip {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -6px;
+  width: 12px;
+  cursor: ew-resize;
+  touch-action: none;
+  z-index: 1;
+}
+
+.panel-grip::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  width: 4px;
+  height: 48px;
+  transform: translateY(-50%);
+  border-radius: 2px;
+  background: rgba(214, 220, 228, 0.28);
+  transition: background 0.15s;
+}
+
+.panel-grip:hover::before,
+.panel-grip:focus-visible::before,
+.panel-grip.dragging::before {
+  background: var(--ink);
+}
+
+.panel-grip:focus-visible {
+  outline: none;
+}
+
+.panel-bar {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 6px 48px 0 12px;
+}
+
+.panel-back {
+  min-height: 28px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.panel-back:hover {
+  border-color: rgba(214, 220, 228, 0.32);
+}
+
+.panel-back[hidden] {
+  display: none;
+}
+
+.panel-body {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  padding: 0 18px 16px;
+}
+
+.panel-section[hidden] {
+  display: none;
+}
+
+/* The popup's backdrop is for phones only. */
+.panel-backdrop {
+  display: none;
+}
+
+/* A small card above the timeline, in the middle of the globe, asking
+   newcomers if they want the guided tour. */
+.welcome[hidden] {
+  display: none;
+}
+
+.welcome {
+  position: absolute;
+  z-index: 7;
+  left: calc((100% - var(--panel-space, 0px) - 340px) / 2);
+  bottom: calc(var(--safe-bottom) + var(--gutter) + var(--timeline-height, 190px) + 16px);
+  width: 340px;
+  box-sizing: border-box;
+  padding: 16px 18px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel-solid);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.5);
+  animation: welcome-in 0.3s ease-out;
+}
+
+.welcome h2 {
+  margin: 0 36px 4px 0;
+  font-size: 20px;
+}
+
+.welcome p {
+  margin: 0 0 14px;
+  color: var(--ink-soft);
+}
+
+.welcome-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.welcome-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.welcome-actions button {
+  min-height: 40px;
+}
+
+.welcome-off {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+
+.welcome-off input {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  flex: none;
+  accent-color: var(--steppe);
+}
+
+.panel-open {
+  position: absolute;
+  right: var(--gutter);
+  top: calc(var(--safe-top) + 64px);
+  min-height: 32px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--panel);
+  backdrop-filter: blur(10px);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.panel-open:hover {
+  border-color: rgba(214, 220, 228, 0.32);
+}
+
+.panel-open[hidden] {
+  display: none;
+}
+
+/* Phones only: the arrow tabs on the screen's sides. */
+.edge-tab {
+  display: none;
+}
+
+.panel-section h2 {
+  margin: 4px 0 12px;
+  font: 600 24px/1.15 var(--font-display);
+  text-wrap: balance;
+}
+
+.info dl {
+  display: grid;
+  gap: 8px;
+  margin: 0 0 12px;
+}
+
+.info dl div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 6px;
+}
+
+.info dt {
+  color: var(--ink-soft);
+}
+
+.info dd {
+  margin: 0;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.panel-section .links {
+  display: flex;
+  gap: 14px;
+  margin: 0 0 8px;
+}
+
+/* Photos and videos: the chosen one large, the others as a row of thumbnails. */
+.gallery {
+  margin: 0 -18px 14px;
+}
+
+.gallery[hidden] {
+  display: none;
+}
+
+.gallery-stage {
+  margin: 0;
+  background: rgba(214, 220, 228, 0.06);
+}
+
+.gallery-stage img,
+.gallery-stage video {
+  display: block;
+  width: 100%;
+  max-height: 260px;
+  object-fit: cover;
+  background: #000;
+}
+
+.gallery-stage video {
+  object-fit: contain;
+}
+
+.gallery-stage figcaption {
+  padding: 4px 18px 0;
+  font-size: 11px;
+  line-height: 1.3;
+}
+
+.gallery-stage figcaption a {
+  color: var(--ink-soft);
+  text-decoration: none;
+}
+
+.gallery-stage figcaption a:hover {
+  text-decoration: underline;
+}
+
+.gallery-thumbs {
+  display: flex;
+  gap: 6px;
+  padding: 8px 18px 0;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.gallery-thumb {
+  position: relative;
+  flex: none;
+  width: 64px;
+  height: 48px;
+  padding: 0;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  overflow: hidden;
+  background: rgba(214, 220, 228, 0.06);
+  cursor: pointer;
+}
+
+.gallery-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-thumb[aria-pressed="true"] {
+  border-color: var(--steppe);
+}
+
+/* A play mark on video thumbnails. */
+.gallery-thumb.video::after {
+  content: "";
+  position: absolute;
+  inset: 50% auto auto 50%;
+  transform: translate(-40%, -50%);
+  border-style: solid;
+  border-width: 8px 0 8px 13px;
+  border-color: transparent transparent transparent #fff;
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.8));
+}
+
+/* Documentaries: "See more on Netflix: …". */
+.docs {
+  margin: 14px 0 0;
+}
+
+.docs[hidden] {
+  display: none;
+}
+
+.docs-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.docs-platform {
+  color: var(--ink-soft);
+}
+
+.docs-list a {
+  text-decoration: none;
+}
+
+.docs-list a:hover cite {
+  text-decoration: underline;
+}
+
+.docs-rating {
+  display: inline-block;
+  padding: 0 5px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 16px;
+  color: var(--ink-soft);
+  vertical-align: 1px;
+  white-space: nowrap;
+}
+
+.docs-list cite {
+  font-style: normal;
+  color: #f3a46e;
+}
+
+/* The overview: the civilizations on screen, each a button that centres it. */
+.overview-civs {
+  margin: 0 0 12px;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 2px;
+}
+
+.overview-civ {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  padding: 5px 8px;
+  border: 0;
+  border-radius: 6px;
+  background: none;
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+}
+
+.overview-civ:hover {
+  background: rgba(214, 220, 228, 0.08);
+}
+
+.overview-civ strong {
+  font-weight: 500;
+}
+
+.overview-civ span {
+  flex: none;
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+}
+
+.event-summary.loading {
+  color: var(--ink-soft);
+}
+
+.event-kind {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.event-kind svg {
+  display: block;
+  width: 22px;
+  height: 22px;
+}
+
+.event-when {
+  margin: 0 0 10px;
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+.event-summary {
+  margin: 0 0 14px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.event-more {
+  margin: 0 0 6px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.event-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.event-links small {
+  margin-left: 6px;
+  color: var(--ink-soft);
+}
+
+a {
+  color: #f3a46e;
+}
+
+.fine {
+  margin: 0;
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+
+/* "Realms in <year>": the globe's realms as a list, folded under the overview. */
+.realms-now {
+  margin: 18px 0 0;
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+}
+
+.realms-now summary {
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  padding: 4px 0;
+}
+
+.realms-now summary:hover {
+  color: var(--ink);
+}
+
+.realms-now .fine {
+  margin: 6px 0 8px;
+}
+
+.realms-now-list {
+  list-style: none;
+  margin: 0 -8px;
+  padding: 0;
+}
+
+.realms-now-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 32px;
+  padding: 4px 8px;
+  border: 0;
+  border-radius: 6px;
+  background: none;
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+}
+
+.realms-now-item:hover {
+  background: rgba(214, 220, 228, 0.08);
+}
+
+.realms-now-swatch {
+  flex: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  background: #5d636b;
+}
+
+.realms-now-none {
+  padding: 4px 8px;
+  color: var(--ink-soft);
+}
+
+.sources ul {
+  margin: 0 0 12px;
+  padding-left: 18px;
+  display: grid;
+  gap: 8px;
+}
+
+.credits:empty {
+  display: none;
+}
+
+.credits img {
+  max-height: 24px;
+  opacity: 0.8;
+}
+
+.icon-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  font-size: 22px;
+  line-height: 1;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+
+.icon-button:hover {
+  background: rgba(214, 220, 228, 0.1);
+  color: var(--ink);
+}
+
+/* Timeline */
+.timeline {
+  position: absolute;
+  left: var(--timeline-left, var(--gutter));
+  right: var(--timeline-right, var(--gutter));
+  bottom: calc(var(--safe-bottom) + var(--gutter));
+  box-sizing: border-box;
+  display: grid;
+  /* Year, era and playback stack on the left; the track takes the rest. */
+  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-areas:
+    "year track"
+    "controls track";
+  align-items: center;
+  gap: 10px 20px;
+  padding: 12px 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+  backdrop-filter: blur(14px);
+}
+
+.year-readout {
+  grid-area: year;
+  min-width: 128px;
+}
+
+.year-readout p {
+  margin: 0;
+}
+
+.year-line {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.year-number {
+  font: 600 44px/1 var(--font-display);
+  font-variant-numeric: tabular-nums lining-nums;
+  letter-spacing: -0.02em;
+}
+
+.year-era {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--ink-soft);
+}
+
+.year-period {
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--ink-soft);
+  max-width: 150px;
+}
+
+.track-area {
+  grid-area: track;
+  min-width: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.views {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.chip {
+  min-height: 26px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+
+.chip:hover {
+  color: var(--ink);
+  border-color: rgba(214, 220, 228, 0.32);
+}
+
+.chip.add {
+  margin-right: auto;
+  border-color: color-mix(in srgb, var(--steppe) 60%, transparent);
+  color: var(--ink);
+}
+
+.chip.add span {
+  color: var(--steppe);
+  font-weight: 600;
+}
+
+.chip.add:hover {
+  border-color: var(--steppe);
+}
+
+.chip.square {
+  width: 26px;
+  padding: 0;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.track {
+  --lane-height: 13px;
+  position: relative;
+  display: grid;
+  gap: 5px;
+  padding-top: 2px;
+  /* Not clipped, so the playhead knob shows whole at the ends of the track;
+     the rows clip their own contents instead. */
+  touch-action: none;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+  border-radius: 6px;
+}
+
+.track:active {
+  cursor: grabbing;
+}
+
+/* Resized taller: the lanes take the extra room. */
+.track.sized {
+  grid-template-rows: auto minmax(0, 1fr) auto;
+}
+
+.track.sized.has-marks {
+  grid-template-rows: auto minmax(0, 1fr) auto auto;
+}
+
+.track.sized .lanes,
+.track.sized .lanes.folded {
+  height: auto;
+  max-height: none;
+  min-height: min(calc(var(--lanes, 1) * 16px - 3px), 24vh);
+}
+
+/* The left and right edges resize the timeline from that side. */
+.timeline-edge {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 12px;
+  cursor: ew-resize;
+  touch-action: none;
+  z-index: 1;
+}
+
+.timeline-edge.left {
+  left: -6px;
+}
+
+.timeline-edge.right {
+  right: -6px;
+}
+
+.timeline-edge::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  width: 4px;
+  height: 40px;
+  transform: translateY(-50%);
+  border-radius: 2px;
+  background: rgba(214, 220, 228, 0.28);
+  opacity: 0;
+  transition: opacity 0.15s, background 0.15s;
+}
+
+.timeline:hover .timeline-edge::before {
+  opacity: 1;
+}
+
+.timeline-edge:hover::before,
+.timeline-edge:focus-visible::before,
+.timeline-edge.dragging::before {
+  opacity: 1;
+  background: var(--ink);
+}
+
+.timeline-edge:focus-visible {
+  outline: none;
+}
+
+.timeline-grip {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 64px;
+  height: 14px;
+  transform: translateX(-50%);
+  cursor: ns-resize;
+  touch-action: none;
+}
+
+.timeline-grip::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 16px;
+  right: 16px;
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(214, 220, 228, 0.28);
+  transition: background 0.15s;
+}
+
+.timeline-grip:hover::before,
+.timeline-grip:focus-visible::before,
+.timeline-grip.dragging::before {
+  background: var(--ink);
+}
+
+.timeline-grip:focus-visible {
+  outline: none;
+}
+
+.eras {
+  position: relative;
+  height: 20px;
+  overflow-x: clip;
+}
+
+.era {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  padding: 0 8px;
+  border-left: 1px solid rgba(214, 220, 228, 0.35);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 20px;
+  color: var(--ink-soft);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.era[data-era="0"],
+.era[data-era="2"],
+.era[data-era="4"] {
+  background: rgba(214, 220, 228, 0.07);
+}
+
+.era[data-era="1"],
+.era[data-era="3"],
+.era[data-era="5"] {
+  background: rgba(214, 220, 228, 0.13);
+}
+
+.lanes {
+  position: relative;
+  height: calc(var(--lanes, 1) * (var(--lane-height) + 3px) - 3px);
+  /* Many lanes at once scroll rather than push the timeline up the screen. */
+  max-height: 24vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.lane-bar {
+  position: absolute;
+  height: var(--lane-height);
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 5px;
+  border: 0;
+  border-radius: 3px;
+  font-size: min(13px, calc(var(--lane-height) - 3px));
+  font-weight: 600;
+  line-height: 1;
+  /* Black on full colour keeps every palette colour above 4.5:1. */
+  color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.lane-bar:hover {
+  filter: brightness(1.12);
+}
+
+.lane-link {
+  position: absolute;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: var(--lane-height);
+  height: var(--lane-height);
+  padding: 0;
+  border: 1px solid rgba(214, 220, 228, 0.3);
+  border-radius: 50%;
+  box-sizing: border-box;
+  background: var(--panel-solid);
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+
+.lane-link:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+.lane-link svg {
+  width: 80%;
+  height: 80%;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.lanes.folded {
+  height: var(--lane-height);
+}
+
+.lane-pointer {
+  position: absolute;
+  top: 0;
+  height: var(--lane-height);
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: var(--lane-height);
+  color: var(--steppe);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.lane-pointer.after {
+  right: 0;
+}
+
+.lane-pointer.before {
+  left: 0;
+}
+
+/* Events of the highlighted realms, as small badges above the ruler. */
+.marks {
+  --mark-size: 14px;
+  position: relative;
+  display: none;
+  height: 30px;
+}
+
+.marks-items {
+  position: relative;
+  height: 100%;
+  overflow-x: clip;
+}
+
+/* Drag the top edge of the marks row to make the icons bigger. */
+.marks-grip {
+  position: absolute;
+  z-index: 2;
+  top: -6px;
+  left: 0;
+  right: 0;
+  height: 7px;
+  cursor: ns-resize;
+  touch-action: none;
+}
+
+.marks-grip::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  width: 36px;
+  height: 3px;
+  margin-left: -18px;
+  border-radius: 2px;
+  background: rgba(214, 220, 228, 0.22);
+  transition: background 0.15s;
+}
+
+.marks-grip:hover::before,
+.marks-grip.dragging::before {
+  background: var(--ink);
+}
+
+.lane-joins {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.lane-joins path {
+  fill: none;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  opacity: 0.9;
+}
+
+.has-marks .marks {
+  display: block;
+}
+
+.mark {
+  position: absolute;
+  top: 0;
+  width: var(--mark-size);
+  height: var(--mark-size);
+  padding: 0;
+  border: 0;
+  background: none;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.mark svg {
+  display: block;
+  width: var(--mark-size);
+  height: var(--mark-size);
+}
+
+.mark.cluster {
+  border: 1.5px solid #fbf6ec;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background: #3a414b;
+  color: #fbf6ec;
+  font-size: calc(var(--mark-size) * 0.62);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.mark:hover {
+  z-index: 1;
+  transform: translateX(-50%) scale(1.25);
+}
+
+.ruler {
+  position: relative;
+  height: 22px;
+  border-top: 1px solid rgba(214, 220, 228, 0.28);
+  font-size: 11px;
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+  overflow-x: clip;
+}
+
+.tick {
+  position: absolute;
+  top: 0;
+  padding-top: 6px;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.tick::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 4px;
+  border-left: 1px solid rgba(214, 220, 228, 0.4);
+}
+
+.playhead {
+  position: absolute;
+  top: 0;
+  bottom: 18px;
+  left: 0;
+  width: 0;
+  pointer-events: none;
+}
+
+.playhead::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -1px;
+  width: 2px;
+  background: var(--ink);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.45);
+}
+
+.playhead-knob {
+  position: absolute;
+  bottom: -7px;
+  left: -8px;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: var(--ink);
+  border: 3px solid var(--steppe);
+  /* The knob takes presses itself, so it can be grabbed where it sticks out
+     past the track. */
+  pointer-events: auto;
+  cursor: ew-resize;
+}
+
+/* A wider invisible area around the knob, easier to grab. */
+.playhead-knob::after {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+}
+
+/* Out of view, the playhead stays in the page so Tab still reaches its knob. */
+.playhead.off {
+  opacity: 0;
+}
+
+.playhead.off .playhead-knob {
+  pointer-events: none;
+}
+
+.playhead-knob:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+}
+
+.lane-bar:focus-visible,
+.lane-link:focus-visible,
+.lane-pointer:focus-visible,
+.mark:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 1px;
+  z-index: 2;
+}
+
+/* On touch screens, event marks take taps a little beyond their drawn edge. */
+@media (pointer: coarse) {
+  .mark::after {
+    content: "";
+    position: absolute;
+    inset: -4px;
+  }
+}
+
+.controls {
+  grid-area: controls;
+  align-self: end;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Phones only: opens the menu of the timeline's view buttons. */
+.timeline-more {
+  display: none;
+  place-items: center;
+  flex: none;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ink);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.timeline-more[aria-expanded="true"] {
+  border-color: var(--steppe);
+}
+
+/* Phones only: the tab on the timeline's top edge that unfolds its lanes. */
+.timeline-fold {
+  display: none;
+}
+
+.play {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--steppe);
+  color: #160c05;
+  cursor: pointer;
+}
+
+.play svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.speed select {
+  min-height: 36px;
+  padding: 0 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel-solid);
+}
+
+.hint {
+  position: absolute;
+  left: calc((100% - var(--panel-space, 0px)) / 2);
+  top: calc(var(--safe-top) + 112px);
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 8px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--panel);
+  color: var(--ink-soft);
+  font-size: 13px;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.status {
+  position: absolute;
+  left: calc((100% - var(--panel-space, 0px)) / 2);
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: var(--panel);
+  color: var(--ink-soft);
+}
+
+.status:empty {
+  display: none;
+}
+
+/* The explore popup: one list (civilizations, countries or nations) over
+   the dimmed globe, with its own search, sort and filters. */
+.landing {
+  --landing-width: 100%;
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  padding: calc(var(--safe-top) + 24px) var(--gutter) calc(var(--safe-bottom) + 24px);
+  background: rgba(4, 6, 9, 0.62);
+  backdrop-filter: blur(3px);
+}
+
+.landing-dialog {
+  display: flex;
+  flex-direction: column;
+  width: min(1240px, 100%);
+  height: 100%;
+  max-height: 900px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background:
+    radial-gradient(1000px 500px at 85% -15%, rgba(226, 116, 47, 0.1), transparent 60%),
+    var(--space);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+  outline: none;
+}
+
+.dialog-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px var(--gutter) 8px;
+}
+
+.dialog-title {
+  margin: 0;
+  font: 600 26px/1.15 var(--font-display);
+}
+
+.landing-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.explore-section[hidden] {
+  display: none;
+}
+
+.landing .countries {
+  padding: 4px var(--gutter) 24px;
+}
+
+.dialog-bar .icon-button {
+  position: static;
+  flex: none;
+  width: 40px;
+  height: 40px;
+  font-size: 26px;
+}
+
+.landing .country-grid {
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+@media (max-width: 640px), (hover: none) and (pointer: coarse) {
+  .landing {
+    padding: 0;
+  }
+
+  .landing-dialog {
+    max-height: none;
+    border: 0;
+    border-radius: 0;
+  }
+
+  .dialog-bar {
+    padding-top: calc(var(--safe-top) + 12px);
+  }
+
+  .landing .section-tools {
+    flex: 1 1 100%;
+  }
+}
+
+.landing[hidden] {
+  display: none;
+}
+
+.landing-head {
+  max-width: var(--landing-width);
+  margin: 0 auto;
+  padding: 4px var(--gutter) 8px;
+}
+
+.landing-head {
+  position: relative;
+}
+
+/* Language menus: in the toolbar on the globe, top right on the landing page. */
+.language select {
+  min-height: 36px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--panel);
+  backdrop-filter: blur(10px);
+  font: inherit;
+  font-weight: 500;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.language select:hover {
+  border-color: rgba(214, 220, 228, 0.32);
+}
+
+
+.landing-head h1 {
+  margin: 6px 0 8px;
+  font: 600 clamp(32px, 5.4vw, 56px) / 1.02 var(--font-display);
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+
+.lede {
+  max-width: 640px;
+  margin: 0 0 22px;
+  font-size: 16px;
+  color: var(--ink-soft);
+  text-wrap: pretty;
+}
+
+.section-sub {
+  margin: 0 0 14px;
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+
+.countries {
+  min-width: 0;
+}
+
+.section-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 4px 16px;
+  margin-bottom: 12px;
+}
+
+.section-head .section-sub {
+  margin-bottom: 0;
+}
+
+.section-tools {
+  display: flex;
+  flex: 0 1 440px;
+  gap: 8px;
+}
+
+.country-search {
+  flex: 1 1 200px;
+}
+
+.section-tools .sort {
+  flex: 0 0 auto;
+}
+
+.country-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.country-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 12px;
+  align-items: center;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel-solid);
+  transition:
+    transform 0.18s ease,
+    border-color 0.18s ease;
+}
+
+.country-card:hover,
+.country-card:focus-within {
+  transform: translateY(-2px);
+  border-color: rgba(214, 220, 228, 0.34);
+}
+
+.country-card:has(.country-link:focus-visible) {
+  outline: 2px solid var(--steppe);
+  outline-offset: 2px;
+}
+
+.country-picture {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+}
+
+.country-shape {
+  width: 48px;
+  height: 48px;
+}
+
+/* A nation's flag takes the outline's place once it has loaded. */
+.country-flag {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+}
+
+.country-picture.has-flag .country-flag {
+  opacity: 1;
+}
+
+.country-picture.has-flag .country-shape {
+  visibility: hidden;
+}
+
+.country-shape path {
+  fill: color-mix(in srgb, var(--steppe) 45%, transparent);
+  stroke: color-mix(in srgb, var(--steppe) 80%, white);
+  stroke-width: 0.8;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.country-card h3 {
+  margin: 0 0 2px;
+  font: 600 17px/1.15 var(--font-display);
+}
+
+.country-link {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.country-link:focus-visible {
+  outline: none;
+}
+
+/* The whole card opens the country. */
+.country-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.country-meta {
+  margin: 0;
+  font-size: 12px;
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.search {
+  flex: 1 1 260px;
+  max-width: 440px;
+}
+
+.search input,
+.sort select {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 40px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel-solid);
+}
+
+.search input::placeholder {
+  color: var(--ink-soft);
+}
+
+.era-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.era-filter .chip {
+  min-height: 30px;
+  padding: 0 12px;
+  font-size: 13px;
+}
+
+.era-filter .chip[aria-pressed="true"] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: #121418;
+}
+
+.count {
+  margin: 14px 0 0;
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+.civ-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(232px, 1fr));
+  gap: 14px;
+  max-width: var(--landing-width);
+  margin: 0 auto;
+  padding: 10px var(--gutter) 32px;
+}
+
+/* Wide windows fit the six civilization cards on one row. */
+@media (min-width: 1700px) {
+  .civ-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+
+.civ-card {
+  --tint: #e2742f;
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel-solid);
+  content-visibility: auto;
+  contain-intrinsic-size: auto 300px;
+  transition:
+    transform 0.18s ease,
+    border-color 0.18s ease;
+}
+
+.civ-card[data-era="0"] { --tint: #b49a74; }
+.civ-card[data-era="1"] { --tint: #d4a94e; }
+.civ-card[data-era="2"] { --tint: #e2742f; }
+.civ-card[data-era="3"] { --tint: #3fa7a4; }
+.civ-card[data-era="4"] { --tint: #6d9fd8; }
+.civ-card[data-era="5"] { --tint: #b07cc6; }
+
+.civ-card:hover,
+.civ-card:focus-within {
+  transform: translateY(-2px);
+  border-color: rgba(214, 220, 228, 0.34);
+}
+
+.civ-media {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background:
+    linear-gradient(160deg, color-mix(in srgb, var(--tint) 30%, #161b22), #0d1117 85%);
+}
+
+.civ-monogram {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font: 600 64px/1 var(--font-display);
+  color: color-mix(in srgb, var(--tint) 45%, transparent);
+  transition: opacity 0.35s ease;
+}
+
+.civ-media.has-picture .civ-monogram {
+  opacity: 0;
+}
+
+.civ-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+/* Coats of arms and flags are shown whole rather than cropped. */
+.civ-media img.emblem {
+  inset: 12% 0;
+  height: 76%;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.5));
+}
+
+.civ-media.has-picture img {
+  opacity: 1;
+}
+
+/* A soft fade from the picture into the card's text. */
+.civ-media::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 30%;
+  background: linear-gradient(transparent, var(--panel-solid));
+  pointer-events: none;
+}
+
+.civ-media:has(img.emblem)::after {
+  display: none;
+}
+
+/* No positioning here: the card's link covers the whole card, picture included. */
+.civ-body {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+  padding: 10px 14px 12px;
+}
+
+/* The realm's outline, small in the bottom-right corner behind the text.
+   The card isolates its stacking, so z-index -1 sits above its background. */
+.civ-shape {
+  position: absolute;
+  z-index: -1;
+  right: -6px;
+  bottom: -6px;
+  width: 92px;
+  height: 92px;
+  opacity: 0.32;
+  pointer-events: none;
+}
+
+.civ-shape path {
+  fill: color-mix(in srgb, var(--tint) 55%, transparent);
+  stroke: color-mix(in srgb, var(--tint) 80%, white);
+  stroke-width: 0.8;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.civ-card:hover .civ-shape,
+.civ-card:focus-within .civ-shape {
+  opacity: 0.5;
+}
+
+.civ-body p {
+  margin: 0;
+}
+
+.civ-era {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--tint);
+}
+
+.civ-name {
+  margin: 0;
+  font: 600 20px/1.15 var(--font-display);
+  text-wrap: balance;
+}
+
+.civ-link {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+/* The whole card opens the civilization. */
+.civ-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.civ-link:focus-visible {
+  outline: none;
+}
+
+.civ-card:has(.civ-link:focus-visible) {
+  outline: 2px solid var(--steppe);
+  outline-offset: 2px;
+}
+
+.civ-dates {
+  font-size: 13px;
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+}
+
+.civ-figures {
+  margin-top: 4px !important;
+  font-size: 13px;
+  color: var(--ink);
+}
+
+.civ-figures.loading {
+  width: 70%;
+  height: 12px;
+  margin-top: 7px !important;
+  border-radius: 4px;
+  background: rgba(214, 220, 228, 0.08);
+}
+
+.civ-figures[hidden] {
+  display: none;
+}
+
+.civ-credit {
+  position: relative;
+  z-index: 1;
+  margin-top: auto;
+  padding-top: 8px;
+  overflow: hidden;
+  font-size: 11px;
+  color: var(--ink-soft);
+  text-decoration: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.civ-credit::before {
+  content: "Picture: ";
+}
+
+.civ-credit:hover {
+  color: var(--ink);
+  text-decoration: underline;
+}
+
+.landing-foot {
+  max-width: var(--landing-width);
+  margin: 0 auto;
+  padding: 8px var(--gutter) calc(var(--safe-bottom) + 32px);
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+
+/* Picking several civilizations */
+.primary {
+  min-height: 36px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--steppe);
+  color: #160c05;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.primary:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.multi-toggle {
+  min-height: 40px;
+  padding: 0 16px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel-solid);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.multi-toggle:hover {
+  border-color: rgba(214, 220, 228, 0.32);
+}
+
+.multi-toggle[aria-pressed="true"] {
+  border-color: var(--steppe);
+  color: var(--steppe);
+}
+
+.multi-bar {
+  position: sticky;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 16px;
+  max-width: var(--landing-width);
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 12px var(--gutter) calc(var(--safe-bottom) + 12px);
+  border-top: 1px solid var(--line);
+  background: rgba(13, 17, 23, 0.94);
+  backdrop-filter: blur(14px);
+}
+
+.multi-bar[hidden] {
+  display: none;
+}
+
+.multi-count {
+  flex: 1 1 240px;
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  color: var(--ink-soft);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.multi-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.multi-actions .ghost[hidden] {
+  display: none;
+}
+
+.civ-check {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 26px;
+  height: 26px;
+  box-sizing: border-box;
+  border: 2px solid rgba(255, 255, 255, 0.75);
+  border-radius: 50%;
+  background: rgba(7, 9, 13, 0.55);
+  pointer-events: none;
+}
+
+.landing.multi .civ-check {
+  display: block;
+}
+
+.civ-card.selected {
+  border-color: var(--steppe);
+  box-shadow: 0 0 0 1px var(--steppe);
+}
+
+.civ-card.selected .civ-check {
+  border-color: var(--steppe);
+  background: var(--steppe)
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5' fill='none' stroke='%23160c05' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+    center / 16px no-repeat;
+}
+
+
+
+
+
+
+.picker {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  padding: var(--gutter);
+  background: rgba(4, 6, 9, 0.6);
+}
+
+.picker[hidden] {
+  display: none;
+}
+
+.picker-panel {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  width: min(560px, 100%);
+  max-height: min(720px, calc(100vh - 2 * var(--gutter)));
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel-solid);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+
+.picker-head {
+  position: relative;
+  display: grid;
+  gap: 12px;
+  padding: 18px 18px 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.picker-head h2 {
+  margin: 0;
+  font: 600 24px/1.15 var(--font-display);
+}
+
+.picker-head .search {
+  max-width: none;
+}
+
+.picker-list {
+  overflow-y: auto;
+  padding: 6px 8px;
+}
+
+.picker-row {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  column-gap: 12px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.picker-row[hidden] {
+  display: none;
+}
+
+.picker-row:hover {
+  background: rgba(214, 220, 228, 0.06);
+}
+
+.picker-row input {
+  grid-row: span 2;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  accent-color: var(--steppe);
+}
+
+.picker-name {
+  font-weight: 500;
+}
+
+.picker-meta {
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+
+.picker-row.on-globe .picker-name {
+  color: var(--steppe);
+}
+
+.picker-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 12px 18px calc(var(--safe-bottom) + 12px);
+  border-top: 1px solid var(--line);
+}
+
+.picker-count {
+  flex: 1 1 200px;
+  margin: 0;
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+/* Phones: timeline stacks, cards become bottom sheets above it. */
+@media (max-width: 640px), (hover: none) and (pointer: coarse) {
+  .landing {
+    --landing-width: 100%;
+  }
+
+  .masthead .sub,
+
+  .civ-grid {
+    grid-template-columns: repeat(auto-fill, minmax(156px, 1fr));
+    gap: 10px;
+  }
+
+  .civ-name {
+    font-size: 17px;
+  }
+
+  .civ-body {
+    padding: 8px 11px 10px;
+  }
+
+  .civ-shape {
+    width: 72px;
+    height: 72px;
+  }
+
+  /* The top bar: the way back on the left, Other realms and the language on
+     the right, all on one row; the menu and the title sit under it. */
+  .masthead {
+    right: var(--gutter);
+    max-width: none;
+  }
+
+  /* At home there is no way back, so the title shares the row with the language. */
+  .home .masthead {
+    right: calc(var(--gutter) + 116px);
+  }
+
+  .title-row {
+    min-width: 0;
+    margin-top: 8px;
+  }
+
+  .home .title-row {
+    margin-top: 0;
+  }
+
+  /* The title stays on one line; fitTitle shrinks it when it is long. */
+  .masthead h1 {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    font-size: 26px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .toolbar {
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .back-long {
+    display: none;
+  }
+
+  .back-short {
+    display: inline;
+  }
+
+  .back,
+  .toolbar .switch,
+  .toolbar .language select {
+    min-height: 34px;
+    font-size: 13px;
+  }
+
+  .back,
+  .toolbar .switch {
+    padding: 0 10px;
+  }
+
+  .toolbar .switch {
+    gap: 6px;
+  }
+
+  .timeline {
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      "year controls"
+      "track track";
+    align-items: center;
+  }
+
+  .controls {
+    align-self: center;
+    gap: 8px 12px;
+    padding: 12px 14px 8px;
+  }
+
+  /* A compact timeline: the year and the playback on one row, the track
+     under it, and the view buttons in a small menu behind ⋯. */
+  .timeline {
+    gap: 4px 8px;
+    /* Room at the sides for the playhead knob at either end of the track. */
+    padding: 8px 18px 6px;
+  }
+
+  .year-readout {
+    min-width: 0;
+  }
+
+  .year-number {
+    font-size: 28px;
+  }
+
+  .year-era {
+    font-size: 10px;
+  }
+
+  .year-period {
+    margin-top: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .controls {
+    flex-wrap: nowrap;
+    gap: 6px;
+    padding: 0;
+  }
+
+  .timeline-more {
+    display: grid;
+  }
+
+  /* A bigger knob for fingers, with the same centre. */
+  .playhead-knob {
+    bottom: -9px;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .playhead-knob::after {
+    inset: -12px;
+  }
+
+  .play {
+    width: 36px;
+    height: 36px;
+  }
+
+  .play svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .timeline-grip {
+    display: none;
+  }
+
+  .timeline-fold {
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    width: 52px;
+    height: 24px;
+    padding: 0;
+    transform: translateX(-50%);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--panel-solid);
+    color: var(--ink);
+    cursor: pointer;
+    touch-action: none;
+  }
+
+  /* Open, the tab also resizes the timeline: drag it up or down. */
+  .timeline-fold[aria-expanded="true"] {
+    cursor: ns-resize;
+  }
+
+  .timeline-fold.dragging {
+    border-color: var(--steppe);
+  }
+
+  .timeline-fold svg {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: transform 0.2s;
+  }
+
+  .timeline-fold[aria-expanded="true"] svg {
+    transform: rotate(180deg);
+  }
+
+  /* Folded: only the ruler under the year and play. */
+  .timeline.folded .eras,
+  .timeline.folded .lanes,
+  .timeline.folded .marks {
+    display: none;
+  }
+
+  /* A height chosen by dragging applies only while it is open. */
+  .timeline.folded .track {
+    height: auto !important;
+    grid-template-rows: none;
+  }
+
+  .views {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: calc(100% + 8px);
+    z-index: 7;
+    justify-content: flex-start;
+    gap: 8px;
+    padding: 12px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--panel-solid);
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.5);
+  }
+
+  .timeline:not(.more-open) .views {
+    display: none;
+  }
+
+  .views .chip {
+    min-height: 40px;
+    padding: 0 14px;
+    font-size: 14px;
+  }
+
+  .views .chip.square {
+    width: 40px;
+    padding: 0;
+  }
+
+  /* Three lanes show; more scroll, or the grip makes the track taller. */
+  .lanes {
+    max-height: calc(3 * (var(--lane-height) + 3px) - 3px);
+  }
+
+  .hint {
+    top: calc(var(--safe-top) + 120px);
+    white-space: normal;
+    width: max-content;
+    max-width: calc(100% - 2 * var(--gutter));
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  /* The text panel is a popup in the middle of the screen, over a dimmed globe. */
+  .panel-backdrop:not([hidden]) {
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: 8;
+    background: rgba(4, 6, 9, 0.6);
+  }
+
+  .side-panel {
+    z-index: 9;
+    top: calc(var(--safe-top) + var(--gutter));
+    bottom: calc(var(--safe-bottom) + var(--gutter));
+    left: var(--gutter);
+    width: auto;
+    height: fit-content;
+    max-height: calc(100% - var(--safe-top) - var(--safe-bottom) - 2 * var(--gutter));
+    margin: auto 0;
+    background: var(--panel-solid);
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.6);
+  }
+
+  /* On phones it spans the width, just above the timeline. */
+  .welcome {
+    left: var(--gutter);
+    right: var(--gutter);
+    bottom: calc(var(--safe-bottom) + var(--gutter) + var(--timeline-height, 190px) + 10px);
+    width: auto;
+  }
+
+  .panel-bar {
+    min-height: 36px;
+    padding-top: 2px;
+  }
+
+  .panel-grip,
+  .timeline-edge {
+    display: none;
+  }
+
+  /* The view buttons wait off screen on the left; the arrow tab slides them in. */
+  .globe-tools {
+    left: 0;
+    top: var(--side-tabs-top, 140px);
+    padding-left: var(--gutter);
+    transform: none;
+    transition: transform 0.25s ease;
+  }
+
+  .globe-tools:not(.out) {
+    transform: translateX(-100%);
+  }
+
+  /* An open submenu covers the tab rather than slipping under it. */
+  .globe-tools .view-mode {
+    position: relative;
+    z-index: 1;
+  }
+
+  .edge-tab,
+  .panel-open {
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 64px;
+    padding: 0;
+    border: 1px solid var(--line);
+    background: var(--panel);
+    backdrop-filter: blur(10px);
+    font: inherit;
+    font-size: 22px;
+    line-height: 1;
+    color: var(--ink);
+    cursor: pointer;
+  }
+
+  .view-tab {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    border-left: 0;
+    border-radius: 0 12px 12px 0;
+  }
+
+  .globe-tools.out .view-tab {
+    margin-left: 6px;
+    border-left: 1px solid var(--line);
+    border-radius: 12px;
+  }
+
+  .view-tab span {
+    display: inline-block;
+    transition: transform 0.25s ease;
+  }
+
+  .globe-tools.out .view-tab span {
+    transform: rotate(180deg);
+  }
+
+  /* Details is an arrow tab on the right, under the top bar; it opens the popup. */
+  .panel-open {
+    top: var(--side-tabs-top, 140px);
+    right: 0;
+    border-right: 0;
+    border-radius: 12px 0 0 12px;
+  }
+
+  .panel-open-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .timeline {
+    left: var(--gutter);
+    right: var(--gutter);
+  }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .civ-card,
+  .civ-media img,
+  .civ-monogram,
+  .switch-track,
+  .switch-track::after {
+    transition: none;
+  }
+
+  .welcome:not([hidden]) {
+    animation: none;
+  }
+}
+
+@keyframes welcome-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+/* History travel: cards that sit beside each turning point's badge on the globe. */
+/* While travelling, the cards carry the text: the side panel steps aside. */
+.traveling {
+  --panel-space: 0px;
+}
+
+.traveling .side-panel,
+.traveling .panel-backdrop,
+.traveling .welcome,
+.traveling .panel-open {
+  display: none;
+}
+
+/* While travelling, the tools for picking civilizations step aside. */
+.traveling .view-mode,
+.traveling #projection-field,
+.traveling #add-civs,
+.traveling #view-focus {
+  display: none;
+}
+
+.travel-layer {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.travel-layer[hidden] {
+  display: none;
+}
+
+.travel-toast {
+  position: absolute;
+  top: calc(var(--safe-top) + 68px);
+  right: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: min(340px, calc(100% - 32px));
+  box-sizing: border-box;
+  padding: 10px 10px 10px 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 1.4;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 0.35);
+  pointer-events: auto;
+  animation: travel-toast-in 0.25s ease-out;
+}
+
+.travel-toast[hidden] {
+  display: none;
+}
+
+.travel-toast-close {
+  flex: none;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ink-soft);
+  font: inherit;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.travel-toast-close:hover {
+  background: var(--line);
+  color: var(--ink);
+}
+
+@keyframes travel-toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+}
+
+.travel-card {
+  --kind: var(--steppe);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  max-height: calc(100vh - var(--timeline-height, 190px) - 40px);
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 12px 14px 12px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--kind);
+  border-radius: 12px;
+  background: rgba(13, 17, 23, 0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  pointer-events: auto;
+  cursor: pointer;
+  will-change: transform;
+  transition: width 0.25s ease, padding 0.25s ease, opacity 0.3s ease;
+}
+
+.travel-card[hidden] {
+  display: none;
+}
+
+.travel-card.left {
+  border-left: 1px solid var(--line);
+  border-right: 3px solid var(--kind);
+}
+
+.travel-card.enter {
+  animation: travel-in 0.5s ease both;
+}
+
+@keyframes travel-in {
+  from {
+    opacity: 0;
+    filter: blur(4px);
+  }
+}
+
+.travel-head {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.travel-badge {
+  flex: none;
+  line-height: 0;
+}
+
+.travel-text {
+  min-width: 0;
+}
+
+.travel-meta {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--kind);
+  filter: brightness(1.25);
+}
+
+.travel-title {
+  margin: 1px 0 0;
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+.travel-when {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+
+.travel-short {
+  margin: 8px 0 0;
+  font-size: 14px;
+  text-wrap: pretty;
+}
+
+.travel-hint {
+  margin: 6px 0 0;
+  font-size: 11px;
+  color: var(--ink-soft);
+  opacity: 0.75;
+}
+
+.travel-more {
+  display: none;
+}
+
+.travel-card.open {
+  z-index: 1;
+  width: 360px;
+  cursor: auto;
+  border-color: rgba(214, 220, 228, 0.3);
+  border-left-color: var(--kind);
+}
+
+.travel-card.open.left {
+  border-left-color: rgba(214, 220, 228, 0.3);
+  border-right-color: var(--kind);
+}
+
+.travel-card.open .travel-hint {
+  display: none;
+}
+
+.travel-card.open .travel-more {
+  display: block;
+}
+
+.travel-place {
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+
+.travel-figure {
+  margin: 10px 0 0;
+}
+
+.travel-figure[hidden] {
+  display: none;
+}
+
+.travel-figure img {
+  display: block;
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.travel-figure figcaption {
+  margin-top: 4px;
+  font-size: 11px;
+}
+
+.travel-figure figcaption a {
+  color: var(--ink-soft);
+}
+
+.travel-summary,
+.travel-legacy {
+  margin: 8px 0 0;
+  text-wrap: pretty;
+}
+
+.travel-more h4 {
+  margin: 12px 0 0;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.travel-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  margin: 6px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.travel-links a {
+  color: var(--ink);
+  text-decoration-color: var(--kind);
+  text-underline-offset: 3px;
+}
+
+.travel-links small {
+  margin-left: 4px;
+  color: var(--ink-soft);
+}
+
+.travel-resume {
+  display: block;
+  margin: 14px 0 2px auto;
+  padding: 7px 14px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--steppe);
+  font: inherit;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Earlier turning points shrink to a label beside their badge. */
+.travel-card.label {
+  width: auto;
+  max-width: 220px;
+  padding: 4px 10px 4px 6px;
+  border-radius: 999px;
+  opacity: 0.85;
+}
+
+.travel-card.label .travel-badge svg {
+  width: 20px;
+  height: 20px;
+}
+
+.travel-card.label .travel-head {
+  align-items: center;
+  gap: 6px;
+}
+
+.travel-card.label .travel-title {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.travel-card.label .travel-meta,
+.travel-card.label .travel-when,
+.travel-card.label .travel-short,
+.travel-card.label .travel-hint {
+  display: none;
+}
+
+@media (max-width: 640px), (hover: none) and (pointer: coarse) {
+  .traveling .globe-tools {
+    display: none;
+  }
+}
+
+/* On phones the current card docks above the timeline. */
+.travel-card.docked {
+  top: auto;
+  left: var(--gutter);
+  right: var(--gutter);
+  bottom: calc(var(--safe-bottom) + var(--gutter) + var(--timeline-height, 190px) + 10px);
+  width: auto;
+  max-height: 46vh;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .travel-card {
+    transition: none;
+  }
+
+  .travel-card.enter,
+  .travel-toast {
+    animation: none;
+  }
+}
+
+/* Visitors' reports */
+.report-link {
+  display: block;
+  margin: 12px 0 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-size: 13px;
+  color: var(--ink-soft);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.report-link:hover {
+  color: var(--ink);
+}
+
+.landing-credit {
+  max-width: var(--landing-width);
+  margin: 0 auto;
+  padding: 0 var(--gutter) 12px;
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+.landing-report {
+  max-width: var(--landing-width);
+  margin: 0 auto;
+  padding: 0 var(--gutter) calc(var(--safe-bottom) + 32px);
+}
+
+.landing-report .report-link {
+  margin: 0;
+}
+
+.here-report {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 6;
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel-solid);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.here-report[hidden] {
+  display: none;
+}
+
+.feedback {
+  position: fixed;
+  z-index: 40;
+}
+
+.feedback-about {
+  margin: 0;
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+.feedback-body {
+  display: grid;
+  gap: 14px;
+  padding: 16px 18px;
+  overflow-y: auto;
+}
+
+.feedback-types {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.feedback-types legend {
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.feedback-types label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.feedback-types input {
+  accent-color: var(--steppe);
+}
+
+.feedback-message {
+  display: grid;
+  gap: 6px;
+  font-weight: 500;
+}
+
+.feedback-message textarea {
+  min-height: 120px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(214, 220, 228, 0.04);
+  font: inherit;
+  font-weight: 400;
+  color: var(--ink);
+  resize: vertical;
+}
+
+.feedback-help {
+  display: grid;
+  gap: 10px;
+}
+
+.feedback-help[hidden],
+.feedback-email[hidden] {
+  display: none;
+}
+
+.feedback-help-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.feedback-help-toggle input {
+  accent-color: var(--steppe);
+}
+
+.feedback-email {
+  display: grid;
+  gap: 6px;
+  font-weight: 500;
+}
+
+.feedback-email input {
+  padding: 9px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(214, 220, 228, 0.04);
+  font: inherit;
+  font-weight: 400;
+  color: var(--ink);
+}
+
+.feedback-email .fine {
+  font-weight: 400;
+}
+
+/* A field for bots only, kept out of sight and out of the tab order. */
+.feedback-trap {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* Globe-first home: the globe opens on today's world; the explore bar under
+   the masthead and the panel lead to the civilizations, countries, nations
+   and the history travel, which open in the explore page over the globe. */
+.title-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.explore-menu {
+  position: relative;
+  flex: none;
+  pointer-events: auto;
+  text-shadow: none;
+}
+
+.burger {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+  backdrop-filter: blur(10px);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.burger:hover,
+.burger[aria-expanded="true"] {
+  border-color: var(--steppe);
+}
+
+.burger svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+/* The menu by the title: a mega menu, one illustrated card per way in, side by side. */
+.explore-list {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  z-index: 6;
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  gap: 10px;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--panel-solid);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55);
+}
+
+.explore-list[hidden] {
+  display: none;
+}
+
+.mega-item {
+  display: grid;
+  align-content: start;
+  gap: 4px;
+  width: 100%;
+  height: 100%;
+  padding: 0 0 12px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(214, 220, 228, 0.03);
+  color: var(--ink);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.15s, transform 0.15s;
+}
+
+.mega-item:hover,
+.mega-item:focus-visible {
+  border-color: var(--steppe);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+.mega-art svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 6px;
+}
+
+.mega-item strong {
+  padding: 0 12px;
+  font: 600 17px/1.2 var(--font-display);
+}
+
+.mega-text {
+  padding: 0 12px;
+  font-size: 12.5px;
+  line-height: 1.4;
+  color: var(--ink-soft);
+  text-wrap: pretty;
+}
+
+@media (max-width: 960px) {
+  .explore-list {
+    grid-template-columns: repeat(2, 180px);
+  }
+}
+
+/* Sources and About sit in the menu on phones only; desktop keeps them in the toolbar. */
+.menu-links {
+  display: none;
+}
+
+@media (max-width: 640px), (hover: none) and (pointer: coarse) {
+  .explore-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: calc(100vw - 2 * var(--gutter));
+    box-sizing: border-box;
+  }
+
+  .mega-text {
+    display: none;
+  }
+
+  .menu-links {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-top: 6px;
+    border-top: 1px solid var(--line);
+  }
+
+  .menu-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    min-height: 44px;
+    padding: 0 12px;
+    border: 0;
+    border-radius: 10px;
+    background: transparent;
+    color: var(--ink);
+    font: 500 15px/1.2 var(--font-ui);
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .menu-link:hover,
+  .menu-link:focus-visible {
+    background: rgba(214, 220, 228, 0.08);
+    outline: none;
+  }
+
+  #sources-button,
+  .github-button,
+  .support-button,
+  .tour-button,
+  .about-button,
+  .masthead .sub {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mega-item {
+    transition: none;
+  }
+}
+
+.home .back,
+.home #view-focus,
+.home .switch[for="context-toggle"],
+.traveling .explore-menu {
+  display: none;
+}
+
+
+
+
+/* The home panel's ways in: a name over a line on what it holds. */
+.overview-actions {
+  gap: 6px;
+}
+
+.overview-action {
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.overview-action:hover {
+  border-color: var(--steppe);
+}
+
+.overview-action strong {
+  font-weight: 600;
+}
+
+.overview-action span {
+  flex: initial;
+  font-size: 13px;
+}
+
+/* The ? button beside the language menu, and the About pop-up it opens. */
+.toolbar-end {
+  display: flex;
+  gap: 8px;
+}
+
+.about-button {
+  justify-content: center;
+  width: 36px;
+  padding: 0;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.about {
+  position: fixed;
+  z-index: 40;
+}
+
+.about-panel {
+  width: min(760px, 100%);
+  max-height: min(820px, calc(100vh - 2 * var(--gutter)));
+}
+
+.about-panel:focus {
+  outline: none;
+}
+
+.about-body {
+  padding: 8px 24px 20px;
+  overflow-y: auto;
+  line-height: 1.6;
+}
+
+.about-body h3 {
+  margin: 20px 0 6px;
+  font: 600 19px/1.25 var(--font-display);
+  color: var(--steppe);
+}
+
+.about-body p {
+  margin: 0 0 12px;
+  max-width: 68ch;
+}
+
+/* The line on how the site was made, closing the About pop-up and the home panel. */
+.ai-credit {
+  margin: 14px 0 0;
+  font-size: 13px;
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
+.about-body .ai-credit {
+  margin-top: 20px;
+}
+
+.about-panel .report-link {
+  flex: 1 1 200px;
+  margin: 0;
+  text-align: left;
+}
+
+/* The Support pop-up: Ko-fi, GitHub Sponsors or a kind word. */
+.support {
+  position: fixed;
+  z-index: 40;
+}
+
+.support-panel {
+  width: min(520px, 100%);
+}
+
+.support-panel:focus {
+  outline: none;
+}
+
+.support-body {
+  padding: 14px 18px 16px;
+  overflow-y: auto;
+}
+
+.support-choices {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.support-choice {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr);
+  column-gap: 14px;
+  row-gap: 2px;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(214, 220, 228, 0.04);
+  color: var(--ink);
+  font: inherit;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.support-choice:hover,
+.support-choice:focus-visible {
+  border-color: rgba(214, 220, 228, 0.32);
+  background: rgba(214, 220, 228, 0.08);
+  outline: none;
+}
+
+.support-icon {
+  grid-row: span 2;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.support-icon-kofi {
+  background: rgba(41, 171, 224, 0.16);
+  color: #5cc3ea;
+}
+
+.support-icon-github {
+  background: rgba(219, 97, 162, 0.16);
+  color: #e472b0;
+}
+
+.support-icon-message {
+  background: rgba(226, 116, 47, 0.16);
+  color: var(--steppe);
+}
+
+.support-choice strong {
+  font-weight: 600;
+}
+
+.support-choice span:not(.support-icon) {
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+.support-write {
+  display: grid;
+  gap: 14px;
+}
+
+.support-choices[hidden],
+.support-write[hidden],
+.support-panel .picker-foot button[hidden] {
+  display: none;
+}
+
+/* With no status to show, Back and Send share one row on phones. */
+.support-panel .picker-count:empty {
+  display: none;
+}
+
+/* The heart takes the Sponsors pink, so the button reads as "support" at a glance. */
+.support-button svg {
+  color: #e472b0;
+}
+
+/* The guided tour: the page dims around the part a card is explaining. */
+.tour {
+  position: absolute;
+  inset: 0;
+  z-index: 30;
+}
+
+.tour-button[hidden],
+.tour[hidden],
+.tour-spot[hidden],
+.tour-back[hidden] {
+  display: none;
+}
+
+/* The first card is about the whole view: a light veil, no spotlight. */
+.tour.whole {
+  background: rgba(4, 6, 9, 0.35);
+}
+
+.tour-spot {
+  position: absolute;
+  border-radius: var(--radius);
+  box-shadow:
+    0 0 0 2px var(--steppe),
+    0 0 0 100vmax rgba(4, 6, 9, 0.62);
+  pointer-events: none;
+  transition:
+    left 0.25s ease,
+    top 0.25s ease,
+    width 0.25s ease,
+    height 0.25s ease;
+}
+
+.tour-card {
+  position: absolute;
+  width: min(340px, calc(100vw - 2 * var(--gutter)));
+  box-sizing: border-box;
+  padding: 16px 18px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel-solid);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+
+.tour-count {
+  margin: 0 0 4px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--steppe);
+}
+
+.tour-title {
+  margin: 0 36px 6px 0;
+  font-size: 20px;
+}
+
+.tour-text {
+  margin: 0 0 14px;
+  color: var(--ink-soft);
+}
+
+.tour-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.tour-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.tour-actions button {
+  min-height: 38px;
+  padding-inline: 16px;
+}
+
+/* A copy of the prompt or the tour's card, shrinking into the "Open tour" button. */
+.tour-ghost {
+  position: fixed;
+  z-index: 35;
+  right: auto;
+  bottom: auto;
+  margin: 0;
+  overflow: hidden;
+  transform-origin: 0 0;
+  pointer-events: none;
+  animation: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tour-spot {
+    transition: none;
+  }
+}
+
+/* Tablets and phones held sideways use the compact layout too (the touch
+   screen half of the compact query), but they have more width than a phone
+   held upright: the popups keep a readable width, centred, instead of
+   spanning the screen, and the menu keeps its four cards in one row. */
+@media (hover: none) and (pointer: coarse) and (min-width: 641px) {
+  .welcome {
+    left: calc(50% - 190px);
+    right: auto;
+    width: 380px;
+  }
+
+  .side-panel {
+    left: 0;
+    right: 0;
+    width: min(640px, calc(100% - 2 * var(--gutter)));
+    margin: auto;
+  }
+
+  .explore-list {
+    grid-template-columns: repeat(4, 180px);
+    width: max-content;
+    max-width: calc(100vw - 2 * var(--gutter));
+  }
+
+  /* In the history travel, the docked card keeps to the left. */
+  .travel-card.docked {
+    right: auto;
+    width: min(520px, calc(100% - 2 * var(--gutter)));
+  }
+}
+
+/* Phones held sideways: little height. The menu and the tour card scroll if
+   they still don't fit, the menu's art and links are flatter, and the tour
+   card is wider so it is shorter. */
+@media (hover: none) and (pointer: coarse) and (max-height: 500px) {
+  .explore-list {
+    max-height: calc(100vh - var(--safe-top) - 80px);
+    overflow-y: auto;
+  }
+
+  /* The art is cropped to a band through its middle. */
+  .explore-list .mega-art {
+    display: flex;
+    align-items: center;
+    aspect-ratio: 5 / 2;
+    margin-bottom: 6px;
+    overflow: hidden;
+  }
+
+  .explore-list .mega-art svg {
+    flex: none;
+    margin-bottom: 0;
+  }
+
+  .menu-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .tour-card {
+    width: min(460px, calc(100vw - 2 * var(--gutter)));
+    max-height: calc(100vh - 24px);
+    overflow-y: auto;
+  }
+
+  .year-number {
+    font-size: 24px;
+  }
+}
+
+/* Less motion, when the device asks for it: transitions and animations end at
+   once, and the camera is set in place instead of flown (src/motion.ts). */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

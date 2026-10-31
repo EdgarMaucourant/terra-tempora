@@ -1,0 +1,36 @@
+{
+  "name": "terra-tempora",
+  "license": "MIT",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "data": "node scripts/build-data.mjs && node scripts/build-civilizations.mjs && node scripts/build-countries.mjs",
+    "civs": "node scripts/build-civilizations.mjs",
+    "countries": "node scripts/build-countries.mjs",
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "check": "node scripts/check-data.mjs",
+    "contact-key": "node scripts/contact-key.mjs",
+    "read-contact": "node scripts/read-contact.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/instrument-sans": "^5.3.0",
+    "@fontsource-variable/newsreader": "^5.3.0",
+    "cesium": "^1.146.0",
+    "d3-geo": "^3.1.1",
+    "d3-geo-projection": "^4.0.0",
+    "topojson-client": "^3.1.0",
+    "world-atlas": "^2.0.2"
+  },
+  "devDependencies": {
+    "@types/d3-geo": "^3.1.1",
+    "@types/geojson": "^7946.0.16",
+    "@types/topojson-client": "^3.1.5",
+    "polygon-clipping": "^0.15.7",
+    "polylabel": "^2.1.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.3"
+  }
+}

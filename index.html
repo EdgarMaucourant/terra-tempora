@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Terra Tempora</title>
+    <link rel="icon" href="data:," />
+    <!-- Asked for before the app's code arrives: nothing is drawn without them. -->
+    <link rel="preload" href="data/index.json" as="fetch" crossorigin />
+    <link rel="preload" href="data/civilizations.json" as="fetch" crossorigin />
+  </head>
+  <body>
+    <div id="app">
+      <div id="globe" role="region" aria-label="3D globe showing the realms of the chosen year" data-i18n-label="globe.label"></div>
+      <canvas id="map" class="map" hidden role="img" aria-label="Flat map showing the realms of the chosen year" data-i18n-label="map.label"></canvas>
+
+      <header class="masthead">
+        <a id="back" class="back" href="#"><span class="back-long" data-i18n="masthead.back">← Today’s world</span><span class="back-short" data-i18n="masthead.backShort">← Today</span></a>
+        <div class="title-row">
+          <div class="explore-menu">
+            <button id="explore-toggle" class="burger" type="button" aria-expanded="false" aria-controls="explore-list" aria-label="Menu" data-i18n-label="home.menu">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+            </button>
+            <ul id="explore-list" class="explore-list mega-menu" hidden>
+              <li>
+                <button type="button" class="mega-item" data-explore="civs">
+                  <span class="mega-art"><svg viewBox="0 0 160 90" aria-hidden="true">
+                    <defs><linearGradient id="mega-sun" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2a35e" /><stop offset="1" stop-color="#7a3a1c" /></linearGradient></defs>
+                    <rect width="160" height="90" fill="url(#mega-sun)" />
+                    <circle cx="118" cy="30" r="14" fill="#ffd9a0" opacity="0.8" />
+                    <path d="M0 78 Q40 66 80 74 T160 70 V90 H0Z" fill="#4a2414" opacity="0.6" />
+                    <g fill="#2a140b"><path d="M44 36 L80 20 L116 36Z" /><rect x="46" y="37" width="68" height="5" /><rect x="50" y="44" width="7" height="28" /><rect x="63" y="44" width="7" height="28" /><rect x="76" y="44" width="7" height="28" /><rect x="89" y="44" width="7" height="28" /><rect x="102" y="44" width="7" height="28" /><rect x="42" y="72" width="76" height="6" /></g>
+                  </svg></span>
+                  <strong data-i18n="landing.civilizations">Civilizations</strong>
+                  <span class="mega-text" data-i18n="home.civsText">Every realm in the border data, from 3400 BCE to today.</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="mega-item" data-explore="countries">
+                  <span class="mega-art"><svg viewBox="0 0 160 90" aria-hidden="true">
+                    <rect width="160" height="90" fill="#16384a" />
+                    <circle cx="80" cy="45" r="34" fill="#2f6f86" />
+                    <path d="M58 30 q10 -8 20 -2 q8 6 18 0 q8 6 4 16 q-6 4 -2 12 q-10 10 -20 4 q-8 -8 -16 -2 q-10 -6 -6 -16 q-6 -6 2 -12Z" fill="#8bb158" stroke="#f3f0e6" stroke-width="1.6" stroke-dasharray="4 3" />
+                    <path d="M80 45 m-34 0 a34 34 0 1 0 68 0 a34 34 0 1 0 -68 0" fill="none" stroke="#9fd0df" stroke-width="1.2" opacity="0.6" />
+                    <path d="M98 22 c0 -7 10 -7 10 0 c0 6 -5 11 -5 11 s-5 -5 -5 -11Z" fill="#e2742f" /><circle cx="103" cy="22" r="2" fill="#16384a" />
+                  </svg></span>
+                  <strong data-i18n="landing.countries">Countries</strong>
+                  <span class="mega-text" data-i18n="home.countriesText">Every civilization whose borders crossed a country of today.</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="mega-item" data-explore="nations">
+                  <span class="mega-art"><svg viewBox="0 0 160 90" aria-hidden="true">
+                    <rect width="160" height="90" fill="#2a2140" />
+                    <path d="M0 70 L40 52 L70 62 L110 44 L160 58 V90 H0Z" fill="#43355f" />
+                    <path d="M0 80 L50 66 L90 74 L130 60 L160 68 V90 H0Z" fill="#5b4880" />
+                    <rect x="62" y="16" width="3" height="58" fill="#e8e1d0" />
+                    <path d="M65 18 q14 -6 26 0 t26 0 v24 q-14 -6 -26 0 t-26 0Z" fill="#d0668f" />
+                    <path d="M65 26 q14 -6 26 0 t26 0 v8 q-14 -6 -26 0 t-26 0Z" fill="#e6bc3f" />
+                  </svg></span>
+                  <strong data-i18n="landing.nations">Nations</strong>
+                  <span class="mega-text" data-i18n="home.nationsText">Every civilization that led to a nation of today.</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="mega-item" data-explore="travel">
+                  <span class="mega-art"><svg viewBox="0 0 160 90" aria-hidden="true">
+                    <rect width="160" height="90" fill="#0f1a2b" />
+                    <circle cx="30" cy="16" r="1.2" fill="#fff" /><circle cx="132" cy="12" r="1" fill="#fff" /><circle cx="146" cy="40" r="1.2" fill="#fff" /><circle cx="14" cy="60" r="1" fill="#fff" />
+                    <circle cx="80" cy="47" r="26" fill="#3fa7a4" />
+                    <path d="M62 38 q8 -6 14 0 q6 8 -2 12 q-8 4 -12 -4Z M86 52 q10 -4 14 4 q-4 8 -12 6Z" fill="#8bb158" />
+                    <ellipse cx="80" cy="47" rx="52" ry="14" fill="none" stroke="#e2742f" stroke-width="2" stroke-dasharray="3 5" transform="rotate(-14 80 47)" />
+                    <circle cx="128" cy="34" r="9" fill="#e2742f" /><path d="M125 29 v10 l8 -5Z" fill="#fff" />
+                  </svg></span>
+                  <strong data-i18n="travel.title">History travel</strong>
+                  <span class="mega-text" data-i18n="home.travelShort">Fly through 12,000 years of turning points.</span>
+                </button>
+              </li>
+              <li class="menu-links">
+                <button type="button" class="menu-link" data-menu="tour" data-i18n="tour.open">Open tour</button>
+                <a class="menu-link" href="https://github.com/EdgarMaucourant/terra-tempora" target="_blank" rel="noopener" data-i18n="github.menu">Code on GitHub</a>
+                <button type="button" class="menu-link" data-menu="sources" data-i18n="sources.title">Sources</button>
+                <button type="button" class="menu-link" data-menu="support" data-i18n="support.menu">Support Terra Tempora</button>
+                <button type="button" class="menu-link" data-menu="about" data-i18n="about.menu">About this site</button>
+              </li>
+            </ul>
+          </div>
+          <h1 id="civ-title" data-i18n="page.title">Terra Tempora</h1>
+        </div>
+        <p id="civ-sub" class="sub"></p>
+      </header>
+
+      <div class="globe-tools">
+        <div class="view-switch view-mode" role="group" aria-label="View" data-i18n-label="view.label">
+          <div class="view-item">
+            <button id="view-globe" type="button" aria-pressed="true" aria-expanded="false" aria-controls="axis-switch" title="Globe and its axis" data-i18n-title="view.globeTitle">
+              <span data-i18n="view.globe">Globe</span><span class="view-more" aria-hidden="true">›</span>
+            </button>
+            <div class="view-switch axis-switch view-sub" role="group" id="axis-switch" aria-label="Globe axis" data-i18n-label="axis.label" hidden>
+              <button id="axis-natural" type="button" aria-pressed="false" title="Lean the globe 23.5° on Earth’s axis; dragging spins it on that axis" data-i18n="axis.natural" data-i18n-title="axis.naturalTitle">Natural axis</button>
+              <button id="axis-free" type="button" aria-pressed="true" title="Stand the globe upright and turn it freely" data-i18n="axis.free" data-i18n-title="axis.freeTitle">Free movement</button>
+            </div>
+          </div>
+          <div class="view-item">
+            <button id="view-map" type="button" aria-pressed="false" aria-expanded="false" aria-controls="projection-field" title="Flat map and its projection" data-i18n-title="view.mapTitle">
+              <span data-i18n="view.map">Map</span><span class="view-more" aria-hidden="true">›</span>
+            </button>
+            <div class="view-switch projection-switch view-sub" role="group" id="projection-field" aria-label="Projection" data-i18n-label="view.projection" hidden></div>
+          </div>
+        </div>
+        <button id="view-tab" class="edge-tab view-tab" type="button" aria-expanded="false" aria-label="View" data-i18n-label="view.label">
+          <span aria-hidden="true">›</span>
+        </button>
+      </div>
+      </div>
+
+      <div class="toolbar">
+        <label class="switch" for="context-toggle">
+          <input id="context-toggle" type="checkbox" checked />
+          <span class="switch-track" aria-hidden="true"></span>
+          <span data-i18n="toolbar.otherRealms">Other realms</span>
+        </label>
+        <button id="tour-button" class="ghost tour-button" type="button" hidden data-i18n="tour.open">Open tour</button>
+        <a id="github-button" class="ghost github-button" href="https://github.com/EdgarMaucourant/terra-tempora" target="_blank" rel="noopener" title="See the code of Terra Tempora on GitHub" data-i18n-title="github.title">
+          <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+          <span>GitHub</span>
+        </a>
+        <button id="sources-button" class="ghost" type="button" data-i18n="sources.title">Sources</button>
+        <button id="support-button" class="ghost support-button" type="button" aria-haspopup="dialog" title="Support Terra Tempora" data-i18n-title="support.menu">
+          <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M8 14.2 6.9 13.2C3 9.7.5 7.4.5 4.6.5 2.4 2.2.7 4.4.7c1.2 0 2.4.6 3.1 1.5h1C9.2 1.3 10.4.7 11.6.7c2.2 0 3.9 1.7 3.9 3.9 0 2.8-2.5 5.1-6.4 8.6L8 14.2Z"/></svg>
+          <span data-i18n="support.button">Support</span>
+        </button>
+        <div class="toolbar-end">
+          <button id="about-button" class="ghost about-button" type="button" aria-haspopup="dialog" aria-label="About this website" title="About this website" data-i18n-label="about.button" data-i18n-title="about.button">?</button>
+        </div>
+      </div>
+
+      <div id="panel-backdrop" class="panel-backdrop" hidden></div>
+      <aside id="panel" class="side-panel" aria-label="Details" data-i18n-label="panel.label">
+        <div
+          id="panel-grip"
+          class="panel-grip"
+          role="separator"
+          aria-orientation="vertical"
+          aria-label="Resize the panel: drag, or use the left and right arrows"
+          data-i18n-label="panel.gripLabel"
+          title="Drag to resize. Double-click to reset."
+          data-i18n-title="panel.gripTitle"
+          tabindex="0"
+        ></div>
+        <div class="panel-bar">
+          <button id="panel-back" class="panel-back" type="button" hidden data-i18n="panel.back">← Overview</button>
+          <button id="panel-close" class="icon-button" type="button" aria-label="Close the panel" data-i18n-label="panel.close">×</button>
+        </div>
+        <div id="panel-body" class="panel-body">
+          <div id="overview-wrap" class="panel-section">
+            <section id="overview" class="overview"></section>
+            <details id="realms-now" class="realms-now">
+              <summary><span class="realms-now-title">Realms</span></summary>
+              <p class="fine" data-i18n="realms.hint">Choose one for its details; the globe turns to it.</p>
+              <ul class="realms-now-list"></ul>
+            </details>
+          </div>
+          <section id="info" class="panel-section info" hidden aria-labelledby="info-name">
+            <div id="info-gallery" class="gallery" hidden></div>
+            <p class="eyebrow" id="info-kind"></p>
+            <h2 id="info-name" tabindex="-1"></h2>
+            <dl>
+              <div><dt data-i18n="info.thisBorder">This border</dt><dd id="info-shape"></dd></div>
+              <div><dt data-i18n="info.existed">Realm existed</dt><dd id="info-span"></dd></div>
+              <div><dt data-i18n="info.areaLabel">Area</dt><dd id="info-area"></dd></div>
+            </dl>
+            <p id="info-summary" class="event-summary" hidden></p>
+            <p class="links" id="info-links"></p>
+            <p class="fine" data-i18n="info.fine">Borders from Cliopatria, approximate.</p>
+            <button id="info-report" class="report-link" type="button" data-i18n="feedback.link">Report a problem or suggest something</button>
+          </section>
+
+          <section id="event" class="panel-section info event-panel" hidden aria-labelledby="event-title">
+            <div id="event-gallery" class="gallery" hidden></div>
+            <p class="eyebrow event-kind"><span id="event-badge" aria-hidden="true"></span><span id="event-kind"></span></p>
+            <h2 id="event-title"></h2>
+            <p id="event-when" class="event-when"></p>
+            <p id="event-summary" class="event-summary"></p>
+            <h3 class="event-more" data-i18n="event.learnMore">Learn more</h3>
+            <ul id="event-links" class="event-links"></ul>
+            <div id="event-docs" class="docs" hidden></div>
+            <button id="event-report" class="report-link" type="button" data-i18n="feedback.link">Report a problem or suggest something</button>
+          </section>
+
+          <section id="sources" class="panel-section sources" hidden>
+            <h2 data-i18n="sources.title">Sources</h2>
+            <ul data-i18n-html="sources.list">
+              <li>
+                Borders: <a href="https://github.com/Seshat-Global-History-Databank/cliopatria" target="_blank" rel="noopener">Cliopatria</a>, Seshat Global History Databank, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>: the realms of 3400 BCE to 2024, simplified for display. Today&rsquo;s countries are its realms of 2024, drawn until the current year.
+              </li>
+              <li>
+                Borders of Magadha and its successors (the Nanda, Maurya and Shunga empires, 600 to 171 BCE): traced from <a href="https://commons.wikimedia.org/wiki/File:Magadha_Expansion_1.gif" target="_blank" rel="noopener">Magadha Expansion</a> by Avantiputra7, after Schwartzberg&rsquo;s <i>Historical Atlas of South Asia</i>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>; the traced borders are shared under the same licence.
+              </li>
+              <li>
+                Borders of the Bamana Empire of Ségou (1766 to 1802), Kaarta, Kong and the Mossi and Hausa kingdoms: traced from <a href="https://commons.wikimedia.org/wiki/File:Africa_de_l%27O%C3%A8st_(fin_s%C3%A8gle_XVIII).png" target="_blank" rel="noopener">Africa de l&rsquo;Oèst (fin sègle XVIII)</a> by Nicolas Eynaud, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>; the traced borders are shared under the same licence.
+              </li>
+              <li>
+                Borders of the Luba Empire: traced from <a href="https://commons.wikimedia.org/wiki/File:Lunda_Empire.png" target="_blank" rel="noopener">Lunda Empire</a>, Library of Congress (<i>Zaire: A Country Study</i>, 1994, after Jan Vansina&rsquo;s <i>Kingdoms of the Savanna</i>), public domain.
+              </li>
+              <li>
+                Borders of the Kingdom of Great Zimbabwe: taken from <a href="https://commons.wikimedia.org/wiki/File:African-civilizations-map-pre-colonial.svg" target="_blank" rel="noopener">African civilizations map (pre-colonial)</a> by Jeff Israel, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>; the borders are shared under the same licence.
+              </li>
+              <li>
+                Civilization names in other languages, key figures and links between realms: <a href="https://www.wikidata.org/" target="_blank" rel="noopener">Wikidata</a>, CC0.
+              </li>
+              <li>
+                Card pictures: the realm&rsquo;s picture, coat of arms or flag on <a href="https://www.wikidata.org/" target="_blank" rel="noopener">Wikidata</a>, or else the lead picture of its English <a href="https://en.wikipedia.org/" target="_blank" rel="noopener">Wikipedia</a> article; every file is on <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">Wikimedia Commons</a> and is credited with its author and licence.
+              </li>
+              <li>
+                Realm overviews: the opening paragraph of the realm&rsquo;s <a href="https://en.wikipedia.org/" target="_blank" rel="noopener">Wikipedia</a> article, in the reader&rsquo;s language when there is one (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>), with the photos and videos the article shows, kept only when they are on <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">Wikimedia Commons</a>, each credited with its author and licence.
+              </li>
+              <li>
+                Events: the Mongol ones written for this site from standard references; the others from <a href="https://www.wikidata.org/" target="_blank" rel="noopener">Wikidata</a> (CC0), with the opening paragraph of their Wikipedia article (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>); pictures from the events&rsquo; <a href="https://en.wikipedia.org/" target="_blank" rel="noopener">Wikipedia</a> articles, shown only when the file is on <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">Wikimedia Commons</a>, with its author and licence.
+              </li>
+              <li>
+                History travel: the turning points were chosen and written for this site from standard references; each links to its Wikipedia article and to searches on Britannica and World History Encyclopedia.
+              </li>
+              <li>
+                Documentaries: hand-picked, each linked to its page on Netflix, National Geographic, Discovery Channel or History Channel.
+              </li>
+              <li>
+                Globe imagery: Natural Earth II, public domain, as packaged with <a href="https://cesium.com/platform/cesiumjs/" target="_blank" rel="noopener">CesiumJS</a> (Apache 2.0).
+              </li>
+              <li>
+                Map coastlines: Natural Earth 1:50m land, public domain, via <a href="https://github.com/topojson/world-atlas" target="_blank" rel="noopener">world-atlas</a> (ISC), read with <a href="https://github.com/topojson/topojson-client" target="_blank" rel="noopener">topojson-client</a> (ISC). Projections by <a href="https://d3js.org/d3-geo" target="_blank" rel="noopener">d3-geo</a> and <a href="https://github.com/d3/d3-geo-projection" target="_blank" rel="noopener">d3-geo-projection</a> (ISC).
+              </li>
+              <li>
+                Fonts: <a href="https://github.com/productiontype/Newsreader" target="_blank" rel="noopener">Newsreader</a> (Production Type) and <a href="https://github.com/Instrument/instrument-sans" target="_blank" rel="noopener">Instrument Sans</a> (Instrument), <a href="https://openfontlicense.org/" target="_blank" rel="noopener">SIL Open Font License 1.1</a>, served with the site through <a href="https://fontsource.org/" target="_blank" rel="noopener">Fontsource</a>.
+              </li>
+              <li>
+                Hosting: <a href="https://workers.cloudflare.com/" target="_blank" rel="noopener">Cloudflare Workers</a>, which also keeps the anonymous usage counts and checks reports for spam (Turnstile). The <a href="privacy.html" target="_blank" rel="noopener">privacy and legal notice</a> has the details.
+              </li>
+            </ul>
+            <button id="sources-report" class="report-link" type="button" data-i18n="feedback.linkApp">Report a problem or suggest an improvement</button>
+            <div id="credits" class="credits"></div>
+          </section>
+        </div>
+      </aside>
+      <section id="welcome" class="welcome" hidden role="dialog" aria-labelledby="welcome-title">
+        <button class="icon-button welcome-close" type="button" data-close aria-label="Close" data-i18n-label="common.close">×</button>
+        <h2 id="welcome-title" data-i18n="welcome.title">New here?</h2>
+        <p data-i18n="welcome.text">Would you like a quick introduction to the site?</p>
+        <div class="welcome-actions">
+          <button class="primary" type="button" data-guide data-i18n="welcome.yes">Yes, show me around</button>
+          <button class="ghost" type="button" data-close data-i18n="welcome.no">No thanks, I’ll explore on my own</button>
+        </div>
+        <label class="welcome-off"><input type="checkbox" /> <span data-i18n="welcome.off">Don’t show this again</span></label>
+      </section>
+      <button id="panel-open" class="panel-open" type="button" hidden title="Show the text panel" data-i18n-title="panel.openTitle">
+        <span class="panel-open-arrow" aria-hidden="true">‹</span> <span class="panel-open-text" data-i18n="panel.open">Details</span>
+      </button>
+
+      <footer class="timeline">
+        <div id="timeline-left" class="timeline-edge left" role="separator" aria-orientation="vertical" aria-label="Resize the timeline from the left" data-i18n-label="timeline.leftLabel" title="Drag to resize. Double-click to reset." data-i18n-title="timeline.gripTitle" tabindex="0"></div>
+        <div id="timeline-right" class="timeline-edge right" role="separator" aria-orientation="vertical" aria-label="Resize the timeline from the right" data-i18n-label="timeline.rightLabel" title="Drag to resize. Double-click to reset." data-i18n-title="timeline.gripTitle" tabindex="0"></div>
+        <div
+          id="timeline-grip"
+          class="timeline-grip"
+          role="separator"
+          aria-orientation="horizontal"
+          aria-label="Resize the timeline: drag, or use the up and down arrows"
+          data-i18n-label="timeline.gripLabel"
+          title="Drag to resize. Double-click to reset."
+          data-i18n-title="timeline.gripTitle"
+          tabindex="0"
+        ></div>
+        <button id="timeline-fold" class="timeline-fold" type="button" aria-expanded="false" aria-label="Show the realms and events" data-i18n-label="timeline.unfold">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 15l6-6 6 6" /></svg>
+        </button>
+        <div class="year-readout">
+          <p class="year-line">
+            <span id="year-number" class="year-number">1206</span>
+            <span id="year-era" class="year-era">CE</span>
+          </p>
+          <p id="year-period" class="year-period">Post-classical (Middle Ages)</p>
+        </div>
+        <div class="track-area">
+          <div id="timeline-views" class="views" role="group" aria-label="Timeline view" data-i18n-label="timeline.viewLabel">
+            <button id="add-civs" type="button" class="chip add" title="Add or remove civilizations on the globe" data-i18n-title="timeline.addTitle">
+              <span aria-hidden="true">+</span> <span data-i18n="timeline.add">Add civilizations</span>
+            </button>
+            <button id="view-focus" type="button" class="chip" data-i18n="timeline.focus">Current Civilization Era</button>
+            <button id="view-all" type="button" class="chip" data-i18n="timeline.all">All history</button>
+            <button id="zoom-out" type="button" class="chip square zoom-chip" aria-label="Zoom out" data-i18n-label="timeline.zoomOut">−</button>
+            <button id="zoom-in" type="button" class="chip square zoom-chip" aria-label="Zoom in" data-i18n-label="timeline.zoomIn">+</button>
+          </div>
+          <div id="track" class="track"></div>
+        </div>
+        <div class="controls">
+          <button id="play" class="play" type="button" aria-label="Play" data-i18n-label="controls.play">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path id="play-icon" d="M8 5v14l11-7z" /></svg>
+          </button>
+          <label class="speed" for="speed">
+            <span class="visually-hidden" data-i18n="controls.speed">Speed</span>
+            <select id="speed">
+              <option value="2" data-i18n="controls.speed2">2 yrs/s</option>
+              <option value="8" selected data-i18n="controls.speed8">8 yrs/s</option>
+              <option value="25" data-i18n="controls.speed25">25 yrs/s</option>
+              <option value="50" data-i18n="controls.speed50">50 yrs/s</option>
+              <option value="100" data-i18n="controls.speed100">100 yrs/s</option>
+              <option value="500" data-i18n="controls.speed500">500 yrs/s</option>
+            </select>
+          </label>
+          <button id="timeline-more" class="timeline-more" type="button" aria-expanded="false" aria-controls="timeline-views" aria-label="More timeline options" title="More timeline options" data-i18n-label="timeline.more" data-i18n-title="timeline.more">⋯</button>
+        </div>
+      </footer>
+
+      <div id="travel-layer" class="travel-layer" hidden></div>
+
+      <p id="announce" class="visually-hidden" aria-live="polite"></p>
+      <p id="status" class="status" data-i18n="status.loading">Loading borders…</p>
+      <p id="hint" class="hint" hidden></p>
+      <p id="tooltip" class="tooltip" hidden></p>
+      <button id="here-report" class="here-report" type="button" hidden data-i18n="feedback.here">Report something here</button>
+
+      <div id="picker" class="picker" hidden>
+        <section class="picker-panel" role="dialog" aria-modal="true" aria-labelledby="picker-title">
+          <div class="picker-head">
+            <h2 id="picker-title" data-i18n="picker.title">Civilizations on the globe</h2>
+            <button class="icon-button" type="button" data-close aria-label="Close" data-i18n-label="common.close">×</button>
+            <label class="search">
+              <span class="visually-hidden" data-i18n="common.search">Search</span>
+              <input id="picker-search" type="search" autocomplete="off" />
+            </label>
+          </div>
+          <div id="picker-list" class="picker-list"></div>
+          <div class="picker-foot">
+            <p id="picker-count" class="picker-count" aria-live="polite"></p>
+            <button class="ghost" type="button" data-close data-i18n="common.cancel">Cancel</button>
+            <button id="picker-add" class="primary" type="button" disabled data-i18n="picker.update">Update the globe</button>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div id="feedback" class="picker feedback" hidden>
+      <form class="picker-panel feedback-panel" role="dialog" aria-modal="true" aria-labelledby="feedback-title" novalidate>
+        <div class="picker-head">
+          <h2 id="feedback-title" data-i18n="feedback.title">Report or suggest</h2>
+          <button class="icon-button" type="button" data-close aria-label="Close" data-i18n-label="common.close">×</button>
+          <p id="feedback-about" class="feedback-about"></p>
+        </div>
+        <div class="feedback-body">
+          <fieldset class="feedback-types">
+            <legend data-i18n="feedback.typeLegend">What is it?</legend>
+            <label><input type="radio" name="type" value="error" checked /> <span data-i18n="feedback.typeError">Something is wrong</span></label>
+            <label><input type="radio" name="type" value="missing" /> <span data-i18n="feedback.typeMissing">Something is missing</span></label>
+            <label><input type="radio" name="type" value="idea" /> <span data-i18n="feedback.typeIdea">An idea to make it better</span></label>
+          </fieldset>
+          <label class="feedback-message">
+            <span data-i18n="feedback.messageLabel">Your message</span>
+            <textarea name="message" rows="6" maxlength="3000" required data-i18n-placeholder="feedback.placeholder"></textarea>
+          </label>
+          <p class="fine" data-i18n="feedback.privacy">Reviewers read every report. Please leave out personal details such as your email from the message.</p>
+          <div id="feedback-help" class="feedback-help" hidden>
+            <label class="feedback-help-toggle"><input type="checkbox" name="help" /> <span data-i18n="feedback.helpToggle">I want to help fix the issue I reported</span></label>
+            <label class="feedback-email" hidden>
+              <span data-i18n="feedback.emailLabel">Your email, so we can contact you</span>
+              <input type="email" name="email" maxlength="254" autocomplete="email" />
+              <span class="fine" data-i18n-html="feedback.emailPrivacy"></span>
+            </label>
+          </div>
+          <label class="feedback-trap" aria-hidden="true">Website <input name="website" tabindex="-1" autocomplete="off" /></label>
+          <div id="feedback-turnstile"></div>
+        </div>
+        <div class="picker-foot">
+          <p id="feedback-status" class="picker-count" aria-live="polite"></p>
+          <button class="ghost" type="button" data-close data-i18n="common.cancel">Cancel</button>
+          <button id="feedback-send" class="primary" type="submit" data-i18n="feedback.send">Send</button>
+        </div>
+      </form>
+    </div>
+
+    <div id="support" class="picker support" hidden>
+      <form class="picker-panel support-panel" role="dialog" aria-modal="true" aria-labelledby="support-title" tabindex="-1" novalidate>
+        <div class="picker-head">
+          <h2 id="support-title" data-i18n="support.title">Support Terra Tempora</h2>
+          <button class="icon-button" type="button" data-close aria-label="Close" data-i18n-label="common.close">×</button>
+          <p class="feedback-about" data-i18n="support.intro">Terra Tempora is free, with no ads. If you enjoy it, here is how you can help it grow.</p>
+        </div>
+        <div class="support-body">
+          <ul class="support-choices">
+            <li>
+              <a id="support-kofi" class="support-choice" href="https://ko-fi.com/edgarmaucourant" target="_blank" rel="noopener">
+                <span class="support-icon support-icon-kofi" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M4 6h12v7a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V6Zm12 1.5h1.5a2.5 2.5 0 0 1 0 5H16v-1.6h1.5a.9.9 0 0 0 0-1.8H16V7.5ZM3 19.5h14V21H3v-1.5Z"/></svg></span>
+                <strong data-i18n="support.kofi">Buy me a coffee on Ko-fi</strong>
+                <span data-i18n="support.kofiText">A one-off tip, by card or PayPal, without an account.</span>
+              </a>
+            </li>
+            <li>
+              <a id="support-github" class="support-choice" href="https://github.com/sponsors/EdgarMaucourant" target="_blank" rel="noopener">
+                <span class="support-icon support-icon-github" aria-hidden="true"><svg viewBox="0 0 16 16" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M8 14.2 6.9 13.2C3 9.7.5 7.4.5 4.6.5 2.4 2.2.7 4.4.7c1.2 0 2.4.6 3.1 1.5h1C9.2 1.3 10.4.7 11.6.7c2.2 0 3.9 1.7 3.9 3.9 0 2.8-2.5 5.1-6.4 8.6L8 14.2Z"/></svg></span>
+                <strong data-i18n="support.github">Sponsor on GitHub</strong>
+                <span data-i18n="support.githubText">Monthly or one-time, with your GitHub account.</span>
+              </a>
+            </li>
+            <li>
+              <button id="support-message" class="support-choice" type="button">
+                <span class="support-icon support-icon-message" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4v-4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm3 5v1.6h10V9H7Zm0 3.4V14h7v-1.6H7Z"/></svg></span>
+                <strong data-i18n="support.message">Send a kind word</strong>
+                <span data-i18n="support.messageText">No money needed: a few words to the author mean a lot too.</span>
+              </button>
+            </li>
+          </ul>
+          <div class="support-write" hidden>
+            <label class="feedback-message">
+              <span data-i18n="support.messageLabel">Your message</span>
+              <textarea name="message" rows="5" maxlength="2000" data-i18n-placeholder="support.placeholder"></textarea>
+            </label>
+            <label class="feedback-email">
+              <span data-i18n="support.nameLabel">Your name or nickname (optional)</span>
+              <input type="text" name="name" maxlength="60" autocomplete="nickname" />
+            </label>
+            <label class="feedback-email">
+              <span data-i18n="support.emailLabel">Your email, if you'd like an answer (optional)</span>
+              <input type="email" name="email" maxlength="254" autocomplete="email" />
+            </label>
+            <p class="fine" data-i18n="support.privacy">Your message is sent privately to the author by email. It is not published. As we don't ask for your email, we can't reply.</p>
+            <label class="feedback-trap" aria-hidden="true">Website <input name="website" tabindex="-1" autocomplete="off" /></label>
+            <div id="support-turnstile"></div>
+          </div>
+        </div>
+        <div class="picker-foot">
+          <p id="support-status" class="picker-count" aria-live="polite"></p>
+          <button id="support-back" class="ghost" type="button" hidden data-i18n="support.back">Back</button>
+          <button id="support-send" class="primary" type="submit" hidden data-i18n="feedback.send">Send</button>
+          <button id="support-close" class="primary" type="button" data-close data-i18n="common.close">Close</button>
+        </div>
+      </form>
+    </div>
+
+    <div id="about" class="picker about" hidden>
+      <section class="picker-panel about-panel" role="dialog" aria-modal="true" aria-labelledby="about-title" tabindex="-1">
+        <div class="picker-head">
+          <h2 id="about-title" data-i18n="about.title">About Terra Tempora</h2>
+          <button class="icon-button" type="button" data-close aria-label="Close" data-i18n-label="common.close">×</button>
+        </div>
+        <div class="about-body">
+          <h3 data-i18n="about.whyTitle">Why this website exists</h3>
+          <p data-i18n="about.why1"></p>
+          <p data-i18n="about.why2"></p>
+          <p data-i18n="about.why3"></p>
+          <h3 data-i18n="about.dataTitle">Where the knowledge comes from</h3>
+          <p data-i18n="about.data"></p>
+          <h3 data-i18n="about.careTitle">Read the maps with care</h3>
+          <p data-i18n="about.care"></p>
+          <h3 data-i18n="about.privacyTitle">Your privacy</h3>
+          <p data-i18n-html="about.privacy"></p>
+          <p class="ai-credit" data-i18n="about.credit"></p>
+        </div>
+        <div class="picker-foot">
+          <button id="about-report" class="report-link" type="button" data-i18n="feedback.linkApp">Report a problem or suggest an improvement</button>
+          <button class="primary" type="button" data-close data-i18n="common.close">Close</button>
+        </div>
+      </section>
+    </div>
+
+    <div id="landing" class="landing" hidden>
+      <div class="landing-dialog" role="dialog" aria-modal="true" aria-labelledby="landing-title" tabindex="-1">
+        <div class="dialog-bar">
+          <h2 id="landing-title" class="dialog-title"></h2>
+          <button id="landing-close" class="icon-button" type="button" aria-label="Close and go back to the globe" data-i18n-label="home.closeLabel">×</button>
+        </div>
+        <div class="landing-scroll">
+          <section class="explore-section" data-section="civs">
+            <div class="landing-head">
+              <div class="filters">
+                <label class="search">
+                  <span class="visually-hidden" data-i18n="common.search">Search</span>
+                  <input id="civ-search" type="search" autocomplete="off" placeholder="Search civilizations" />
+                </label>
+                <label class="sort">
+                  <span class="visually-hidden" data-i18n="landing.sort">Sort</span>
+                  <select id="civ-sort">
+                    <option value="oldest" selected data-i18n="sort.oldest">Oldest first</option>
+                    <option value="area" data-i18n="sort.largest">Largest first</option>
+                    <option value="newest" data-i18n="sort.newest">Most recent first</option>
+                    <option value="name" data-i18n="sort.name">A to Z</option>
+                  </select>
+                </label>
+                <button id="multi-toggle" class="multi-toggle" type="button" aria-pressed="false" data-i18n="landing.selectSeveral">Select several</button>
+              </div>
+              <div id="era-filter" class="era-filter" role="group" aria-label="Era" data-i18n-label="landing.era"></div>
+              <p id="civ-count" class="count" aria-live="polite"></p>
+            </div>
+            <div id="civ-grid" class="civ-grid"></div>
+            <div id="multi-bar" class="multi-bar" role="region" aria-label="Selected civilizations" data-i18n-label="landing.selectedRegion" hidden>
+              <p id="multi-count" class="multi-count" aria-live="polite"></p>
+              <div class="multi-actions">
+                <button id="multi-clear" class="ghost" type="button" data-i18n="landing.clear">Clear</button>
+                <button id="multi-cancel" class="ghost" type="button" data-i18n="common.cancel">Cancel</button>
+                <button id="multi-open" class="primary" type="button" disabled data-i18n="landing.showOnGlobe">Show on the globe</button>
+              </div>
+            </div>
+          </section>
+          <section class="countries explore-section" data-section="countries" data-kind="territory">
+            <div class="section-head">
+              <div>
+                <p class="section-sub" data-i18n="landing.countriesSub">Today&rsquo;s countries, with every civilization whose borders ever crossed them.</p>
+              </div>
+              <div class="section-tools">
+                <label class="search country-search">
+                  <span class="visually-hidden" data-i18n="landing.searchCountries">Search countries</span>
+                  <input type="search" autocomplete="off" placeholder="Search countries" data-i18n-placeholder="landing.searchCountries" />
+                </label>
+                <label class="sort">
+                  <span class="visually-hidden" data-i18n="landing.sortCountries">Sort countries</span>
+                  <select>
+                    <option value="name" selected data-i18n="sort.name">A to Z</option>
+                    <option value="area" data-i18n="sort.largest">Largest first</option>
+                    <option value="oldest" data-i18n="sort.oldest">Oldest first</option>
+                    <option value="most" data-i18n="sort.most">Most civilizations</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+            <div class="country-grid"></div>
+          </section>
+          <section class="countries explore-section" data-section="nations" data-kind="nationality">
+            <div class="section-head">
+              <div>
+                <p class="section-sub" data-i18n="landing.nationsSub">Every civilization that led to a nation of today, wherever it stood.</p>
+              </div>
+              <div class="section-tools">
+                <label class="search country-search">
+                  <span class="visually-hidden" data-i18n="landing.searchNations">Search nations</span>
+                  <input type="search" autocomplete="off" placeholder="Search nations" data-i18n-placeholder="landing.searchNations" />
+                </label>
+                <label class="sort">
+                  <span class="visually-hidden" data-i18n="landing.sortNations">Sort nations</span>
+                  <select>
+                    <option value="name" selected data-i18n="sort.name">A to Z</option>
+                    <option value="area" data-i18n="sort.largest">Largest first</option>
+                    <option value="oldest" data-i18n="sort.oldest">Oldest first</option>
+                    <option value="most" data-i18n="sort.most">Most civilizations</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+            <div class="country-grid"></div>
+          </section>
+          <div class="landing-foot" data-i18n-html="landing.footer">
+            Borders:
+            <a href="https://github.com/Seshat-Global-History-Databank/cliopatria" target="_blank" rel="noopener">Cliopatria</a>,
+            Seshat Global History Databank, CC BY 4.0. Key figures and links between realms:
+            <a href="https://www.wikidata.org/" target="_blank" rel="noopener">Wikidata</a> (CC0). Pictures:
+            <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">Wikimedia Commons</a>, freely licensed;
+            each card names the author and licence and links to the file. The small shape in each card's corner is the realm's
+            outline at its largest.
+          </div>
+          <p class="landing-credit" data-i18n="landing.credit">Proudly prompted with ❤️ in Claude Opus 5.5</p>
+          <p class="landing-report">
+            <button id="landing-report" class="report-link" type="button" data-i18n="feedback.linkApp">Report a problem or suggest an improvement</button>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

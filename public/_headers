@@ -1,0 +1,42 @@
+# Response headers for Cloudflare's static assets (Netlify reads this file too).
+
+# Security for every page and file. The Content Security Policy lists every
+# place the app loads from: its own files, Wikipedia, Wikidata and Wikimedia
+# Commons (text, pictures and videos), and Cloudflare Turnstile (the report
+# form's bot check, when it is turned on). Nothing else can run or be loaded,
+# so text from the data or from Wikimedia can never become a script. Pictures
+# and videos may come from any *.wikimedia.org host: Commons moves thumbnails
+# between them (upload., thumb.).
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'wasm-unsafe-eval' https://challenges.cloudflare.com; worker-src 'self' blob:; connect-src 'self' data: blob: https://*.wikipedia.org https://query.wikidata.org https://commons.wikimedia.org https://challenges.cloudflare.com; img-src 'self' data: blob: https://*.wikimedia.org; media-src 'self' https://*.wikimedia.org; style-src 'self' 'unsafe-inline'; font-src 'self'; frame-src https://challenges.cloudflare.com; object-src 'none'; base-uri 'self'; form-action 'self'
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+  Cross-Origin-Opener-Policy: same-origin
+
+# Cache rules. Built scripts and styles have a hash in their name, so they never change.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Data files keep their names between releases: browsers reuse them for an
+# hour, then check for a newer copy while showing the one they have.
+/data/*
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+# Border windows have a hash of their content in their name, so they never
+# change: browsers keep them for good. The "!" drops the rule above, which
+# would otherwise be joined to this one.
+/data/borders-*
+  ! Cache-Control
+  Cache-Control: public, max-age=31536000, immutable
+
+# The border index names the windows of this release, so browsers check it on
+# every visit (a quick "not modified" when nothing changed): a stale copy would
+# point at windows that are gone.
+/data/index.json
+  ! Cache-Control
+  Cache-Control: no-cache
+
+# CesiumJS runtime files change only when the library is upgraded.
+/cesium/*
+  Cache-Control: public, max-age=604800

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Terra Tempora · Usage</title>
+    <link rel="icon" href="data:," />
+  </head>
+  <body>
+    <!--
+      The maintainers' view of the anonymous usage counts (src/analytics.ts).
+      The counts come from GET /api/stats, which answers only to someone signed
+      in through Cloudflare Access; the README says how to set it up.
+    -->
+    <header class="stats-head">
+      <div>
+        <h1>Terra Tempora · Usage</h1>
+        <p id="stats-note" class="muted">Anonymous counts: no cookies, no visitor ids.</p>
+      </div>
+      <div class="range" role="group" aria-label="Period">
+        <button type="button" data-days="7">7 days</button>
+        <button type="button" data-days="30" aria-pressed="true">30 days</button>
+        <button type="button" data-days="90">90 days</button>
+      </div>
+    </header>
+    <main id="stats" aria-live="polite">
+      <p class="muted">Loading…</p>
+    </main>
+    <script type="module" src="/src/stats.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+[
+  {
+    "from": "Kingdom of Spain",
+    "to": "Habsburg Monarchy",
+    "years": [1529, 1555],
+    "box": [11, 46.5, 25, 52],
+    "note": "Austria and Bohemia were Ferdinand's, not Spain's; Cliopatria swaps them with the Low Countries under Charles V"
+  },
+  {
+    "from": "Habsburg Monarchy",
+    "to": "Kingdom of Spain",
+    "years": [1529, 1555],
+    "box": [2, 49, 8, 54],
+    "note": "The Low Countries were Charles V's, inherited by Philip II of Spain"
+  }
+]

@@ -1,0 +1,15 @@
+{
+ "type": "FeatureCollection",
+ "credit": {
+  "realms": "The Kingdom of Great Zimbabwe",
+  "title": "African-civilizations-map-pre-colonial.svg",
+  "author": "Jeff Israel (ZyMOS)",
+  "url": "https://commons.wikimedia.org/wiki/File:African-civilizations-map-pre-colonial.svg",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "changes": "Taken from the map's vector outline and georeferenced by fitting its coastline to Natural Earth's; the map calls itself an artistic interpretation and gives no dates, so the years are the kingdom's"
+ },
+ "features": [
+  {"type":"Feature","properties":{"Name":"Kingdom of Great Zimbabwe","FromYear":1220,"ToYear":1450,"Wikipedia":"Kingdom of Great Zimbabwe","Wikidata":"Q596092","Map":"Great Zimbabwe Empire"},"geometry":{"type":"Polygon","coordinates":[[[31.47,-22.11],[30.94,-22.1],[30.48,-21.69],[30.03,-20.95],[29.82,-19.8],[29.92,-18.75],[30.17,-17.63],[30.68,-16.96],[31.32,-16.75],[32.01,-16.92],[32.51,-17.65],[32.79,-18.72],[32.86,-19.64],[32.77,-20.52],[32.47,-21.29],[32.01,-21.77],[31.47,-22.11]]]}}
+ ]
+}

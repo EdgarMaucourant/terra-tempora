@@ -1,0 +1,49 @@
+// Cloudflare Workers settings. The site is static: the built files in dist/
+// are served as they are, and the Worker script (worker/index.js) answers
+// only /api/*, such as the visitors' feedback form. Cloudflare builds it with
+// `npm run build` and publishes it with `npx wrangler deploy` (main) or
+// `npx wrangler preview` (other branches, which needs the `previews` block).
+{
+  "name": "terra-tempora",
+  "main": "worker/index.js",
+  "compatibility_date": "2025-09-01",
+  // Keeps the Worker's logs (console.error lines, such as why a kind word
+  // could not be emailed) for the dashboard: Workers → terra-tempora → Logs.
+  "observability": { "enabled": true },
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    // An address that is no file of the site gets public/404.html with a 404
+    // status, not the globe: the app's views live after the #, so only
+    // scanners probing for /.env, /wp-config.php and the like end up there.
+    "not_found_handling": "404-page",
+    "run_worker_first": ["/api/*"]
+  },
+  "vars": {
+    // Where reports are filed. The token that writes them is the GITHUB_TOKEN secret.
+    "GITHUB_REPO": "EdgarMaucourant/terra-tempora",
+    // The usage counts /api/stats reads (the dataset EVENTS writes to).
+    "STATS_DATASET": "terra_tempora_events",
+    // The sender of the kind words from the Support pop-up (POST /api/message).
+    // Their recipient is the MESSAGE_TO secret, kept out of this public file.
+    "MESSAGE_FROM": "kind-words@terra-tempora.com"
+  },
+  // Sends those kind words, through Email Routing on terra-tempora.com.
+  "send_email": [{ "name": "MESSAGES" }],
+  // The page's anonymous usage counts (POST /api/track), read back by /stats.
+  "analytics_engine_datasets": [{ "binding": "EVENTS", "dataset": "terra_tempora_events" }],
+  // At most 5 reports a minute from one address, and 30 batches of usage counts.
+  "ratelimits": [
+    { "name": "FEEDBACK_LIMIT", "namespace_id": "1001", "simple": { "limit": 5, "period": 60 } },
+    { "name": "TRACK_LIMIT", "namespace_id": "1002", "simple": { "limit": 30, "period": 60 } }
+  ],
+  // Branch previews don't inherit the settings above: variables are repeated
+  // here, and secrets are set once under Settings → Variables and Secrets →
+  // Previews Base (they reach previews built after that).
+  "previews": {
+    // No usage counts here (no EVENTS dataset), so testing never mixes with real visits.
+    "vars": { "GITHUB_REPO": "EdgarMaucourant/terra-tempora", "MESSAGE_FROM": "kind-words@terra-tempora.com" },
+    "send_email": [{ "name": "MESSAGES" }],
+    "observability": { "enabled": true }
+  }
+}

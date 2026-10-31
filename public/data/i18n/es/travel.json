@@ -1,0 +1,1145 @@
+{
+ "gobekli-tepe": {
+  "title": "Se levanta Göbekli Tepe",
+  "place": "Göbekli Tepe, sudeste de Anatolia",
+  "region": "Asia occidental",
+  "short": "Cazadores-recolectores tallan y levantan enormes pilares de piedra en forma de T: el sitio monumental más antiguo conocido.",
+  "summary": "En una colina de la actual Turquía, gentes que aún no cultivaban la tierra tallaron pilares de piedra de hasta cinco metros de altura, decorados con zorros, jabalíes y buitres, y los dispusieron en círculos. Construir a esta escala exigía reunir y alimentar a cientos de personas.",
+  "legacy": "Echó por tierra la idea de que primero llegó la agricultura y después los templos: el ritual compartido pudo ayudar a atraer a la gente hacia la vida sedentaria."
+ },
+ "neolithic-revolution": {
+  "title": "Nace la agricultura en el Creciente Fértil",
+  "place": "Alta Mesopotamia y el Levante",
+  "region": "Asia occidental",
+  "short": "Se domestican el trigo, la cebada, las lentejas, las ovejas y las cabras. La gente se asienta en aldeas.",
+  "summary": "A lo largo de unos pocos miles de años, comunidades de todo el arco que va del Levante a los montes Zagros domesticaron el trigo almidonero y la escaña, la cebada, los guisantes y las lentejas, y luego ovejas, cabras, vacas y cerdos. Las cosechas podían almacenarse, las aldeas crecieron y la población aumentó.",
+  "legacy": "Casi todo lo que vino después, desde las ciudades y la escritura hasta los Estados y los ejércitos, se apoya en el excedente de alimentos que hizo posible la agricultura.",
+  "approx": "El arco del Creciente Fértil; la agricultura surgió en muchos lugares"
+ },
+ "kuk-swamp": {
+  "title": "Nace la agricultura en Nueva Guinea",
+  "place": "Pantano de Kuk, valle de Wahgi, Papúa Nueva Guinea",
+  "region": "Oceanía",
+  "short": "Los habitantes de las tierras altas drenan humedales para cultivar taro y plátanos, uno de los nacimientos independientes de la agricultura en el mundo.",
+  "summary": "Las zanjas y los montículos de cultivo de Kuk muestran que los habitantes de las tierras altas de Nueva Guinea cultivaban taro, ñame y plátanos hace unos 9000 años, sin ningún contacto con los agricultores de Asia ni de Oriente Medio.",
+  "legacy": "La agricultura se inventó varias veces, en distintos continentes, y el plátano que hoy se come en todas partes se domesticó primero aquí."
+ },
+ "rice": {
+  "title": "Se domestica el arroz junto al Yangtsé",
+  "place": "Valle del bajo Yangtsé, China",
+  "region": "Asia oriental",
+  "short": "Los aldeanos del bajo Yangtsé empiezan a cultivar arroz silvestre, que poco a poco se convierte en alimento básico.",
+  "summary": "En Shangshan y en sitios posteriores, la gente cosechaba y replantaba arroz silvestre, seleccionando poco a poco las plantas cuyos granos se quedaban en la espiga. El cultivo en arrozales se extendió por el sur de China y más tarde por el Sudeste Asiático.",
+  "legacy": "El arroz alimenta hoy a más de la mitad de la humanidad.",
+  "approx": "Shangshan y otros sitios arroceros antiguos"
+ },
+ "catalhoyuk": {
+  "title": "Çatalhöyük, un pueblo de agricultores",
+  "place": "Çatalhöyük, llanura de Konya, Anatolia",
+  "region": "Asia occidental",
+  "short": "Miles de personas viven en casas de adobe apiñadas, con paredes pintadas, a las que se entra por el tejado.",
+  "summary": "Çatalhöyük tenía quizá entre 5000 y 7000 habitantes, que vivían en casas construidas pared con pared, sin calles, y se desplazaban por los tejados. Sus muros conservan algunos de los murales más antiguos conocidos, y bajo sus suelos se enterraba a los difuntos de la familia.",
+  "legacy": "Uno de los primeros lugares donde vivió junta tanta gente, muestra cómo la agricultura transformó la familia, el ritual y la vida cotidiana."
+ },
+ "maize": {
+  "title": "Se domestica el maíz en México",
+  "place": "Valle del río Balsas, suroeste de México",
+  "region": "Mesoamérica",
+  "short": "Los agricultores convierten el teosinte, una gramínea silvestre con unos pocos granos duros, en maíz.",
+  "summary": "Tras miles de años de selección, las pequeñas espigas del teosinte se convirtieron en las grandes mazorcas del maíz. Junto con el frijol y la calabaza, las «tres hermanas», fue la base de la agricultura en toda América.",
+  "legacy": "El maíz alimentó a olmecas, mayas, aztecas y a muchos pueblos de Norteamérica, y hoy es el cereal más cultivado del planeta."
+ },
+ "wheel": {
+  "title": "La rueda y el arado",
+  "place": "Mesopotamia y la estepa al norte del mar Negro",
+  "region": "Asia occidental",
+  "short": "Los carros con ruedas y los arados tirados por bueyes aparecen con pocos siglos de diferencia.",
+  "summary": "Las ruedas macizas de madera en carros tirados por bueyes aparecen hacia mediados del IV milenio a. C., de Mesopotamia a Europa central. El arado tirado por bueyes permitió a un agricultor trabajar mucha más tierra.",
+  "legacy": "El transporte, la agricultura y más tarde la guerra se transformaron; la rueda sigue siendo la imagen misma de la invención.",
+  "approx": "Las ruedas más antiguas aparecen casi al mismo tiempo en Mesopotamia, el Cáucaso y Europa central"
+ },
+ "cuneiform": {
+  "title": "Se inventa la escritura en Sumer",
+  "place": "Uruk, sur de Mesopotamia",
+  "region": "Asia occidental",
+  "short": "Los contables de los templos de Uruk imprimen signos en tablillas de arcilla: nace la escritura.",
+  "summary": "Lo que empezó como fichas y dibujos para contar grano, cerveza y ovejas se convirtió en la escritura cuneiforme, signos en forma de cuña capaces de registrar la propia lengua. Egipto desarrolló los jeroglíficos más o menos al mismo tiempo.",
+  "legacy": "La escritura marca el final de la prehistoria: leyes, cartas, literatura y ciencia pueden conservarse y transmitirse."
+ },
+ "narmer": {
+  "title": "Egipto se unifica",
+  "place": "Menfis, en el vértice del delta del Nilo",
+  "region": "África",
+  "short": "El Alto y el Bajo Egipto se unen bajo un solo rey: comienzan 3000 años de faraones.",
+  "summary": "La tradición atribuye a Narmer (o Menes) la unión del valle y el delta del Nilo en un solo reino, con capital en Menfis. La Paleta de Narmer lo muestra con las dos coronas.",
+  "legacy": "Uno de los primeros Estados territoriales, el antiguo Egipto duró más que cualquier civilización posterior."
+ },
+ "stonehenge": {
+  "title": "Se empieza Stonehenge",
+  "place": "Llanura de Salisbury, Inglaterra",
+  "region": "Europa",
+  "short": "Se excava un foso circular en la llanura de Salisbury; las grandes piedras llegarán durante los mil años siguientes.",
+  "summary": "Stonehenge se construyó por etapas: primero un terraplén, después piedras azules arrastradas unos 200 km desde Gales, y luego el gran círculo de sarsen hacia el 2500 a. C., alineado con la salida del sol en el solsticio de verano y su puesta en el de invierno.",
+  "legacy": "Muestra a comunidades agrícolas de Europa organizando enormes obras colectivas, y aún hoy atrae multitudes en el solsticio."
+ },
+ "caral": {
+  "title": "Caral, la primera ciudad de América",
+  "place": "Caral, valle de Supe, Perú",
+  "region": "Sudamérica",
+  "short": "En la costa peruana, el pueblo de Norte Chico construye pirámides y plazas sin cerámica ni escritura.",
+  "summary": "Los seis grandes montículos de plataforma de Caral, sus plazas hundidas y sus viviendas albergaban a varios miles de personas. Sus constructores cultivaban algodón para las redes de pesca y lo intercambiaban por pescado de la costa.",
+  "legacy": "Es tan antigua como las pirámides de Egipto, un recordatorio de que la civilización surgió de forma independiente en América."
+ },
+ "great-pyramid": {
+  "title": "La Gran Pirámide de Guiza",
+  "place": "Guiza, Egipto",
+  "region": "África",
+  "short": "La pirámide del faraón Keops se eleva 146 m: el edificio más alto de la Tierra durante casi 4000 años.",
+  "summary": "Construida con unos 2,3 millones de bloques por una mano de obra bien organizada, pagada y alimentada, la pirámide fue la tumba de Keops. Su precisión muestra el alcance del Estado egipcio, de sus escribas y de sus ingenieros.",
+  "legacy": "La última de las siete maravillas del mundo antiguo que sigue en pie."
+ },
+ "mohenjo-daro": {
+  "title": "Las ciudades del Indo",
+  "place": "Mohenjo-Daro, Sindh, Pakistán",
+  "region": "Asia meridional",
+  "short": "Mohenjo-Daro y Harappa trazan calles en cuadrícula, desagües y una escritura aún sin descifrar.",
+  "summary": "La civilización del valle del Indo abarcaba más territorio que Egipto y Mesopotamia juntos. Sus ciudades tenían calles planificadas, desagües cubiertos, pesos estandarizados y ladrillos cocidos de las mismas proporciones en todas partes, y comerciaban con Mesopotamia.",
+  "legacy": "Su urbanismo y su saneamiento no tuvieron rival durante milenios; su escritura sigue sin leerse."
+ },
+ "sargon": {
+  "title": "Sargón construye el primer imperio",
+  "place": "Acad, Mesopotamia central (lugar no hallado)",
+  "region": "Asia occidental",
+  "short": "Sargón de Acad conquista las ciudades sumerias y gobierna desde el golfo Pérsico hasta el Mediterráneo.",
+  "summary": "Copero que tomó el poder, Sargón unió por la conquista las ciudades-Estado de Sumer y Acad y gobernó a muchos pueblos desde una sola corte, con gobernadores, un ejército permanente y una lengua común para la administración.",
+  "legacy": "El modelo de imperio que gobierna a muchos pueblos, imitado de Babilonia a Roma.",
+  "approx": "La ciudad de Acad nunca se ha localizado"
+ },
+ "domestic-horse": {
+  "title": "Se doma el caballo",
+  "place": "Estepa del bajo Volga y el Don",
+  "region": "Europa",
+  "short": "El ADN antiguo sitúa el origen de los caballos modernos en la estepa occidental; en pocos siglos se extienden por Eurasia.",
+  "summary": "Los caballos se cazaban desde hacía mucho, pero el linaje de todos los caballos domésticos actuales surgió en la estepa póntico-caspia hacia el 2200 a. C. y se difundió rápidamente, junto con el carro de ruedas con radios.",
+  "legacy": "Hasta los motores, el caballo marcó la velocidad de los viajes, el comercio, las noticias y la guerra en toda Eurasia."
+ },
+ "erlitou": {
+  "title": "Erlitou, el primer Estado de China",
+  "place": "Erlitou, Yanshi, Henan",
+  "region": "Asia oriental",
+  "short": "Surgen palacios y talleres de bronce junto al río Amarillo, a menudo asociados a la dinastía Xia.",
+  "summary": "Erlitou tenía recintos palaciegos, calzadas y talleres donde se fundieron las primeras vasijas rituales de bronce de China. Muchos historiadores lo relacionan con los Xia, la primera dinastía de la tradición china.",
+  "legacy": "El comienzo de la Edad del Bronce china y de la cultura cortesana sobre la que se apoyaron las dinastías posteriores."
+ },
+ "hammurabi": {
+  "title": "El Código de Hammurabi",
+  "place": "Babilonia",
+  "region": "Asia occidental",
+  "short": "El rey Hammurabi de Babilonia manda grabar 282 leyes en piedra para que todos las vean.",
+  "summary": "Las leyes tratan del comercio, los salarios, la familia, la propiedad y las lesiones, con castigos que dependen del rango social, incluido el famoso «ojo por ojo». La estela, hoy en el Louvre, presenta al rey como un gobernante justo elegido por los dioses.",
+  "legacy": "Uno de los códigos legales escritos más antiguos, y una primera idea de que las leyes deben ser públicas."
+ },
+ "rigveda": {
+  "title": "Se compone el Rigveda",
+  "place": "Panyab, noroeste de la India",
+  "region": "Asia meridional",
+  "short": "Se componen himnos en sánscrito a Agni, Indra y otros dioses, transmitidos de memoria.",
+  "summary": "Los 1028 himnos del Rigveda se compusieron a lo largo de siglos y se transmitieron oralmente con una precisión extraordinaria mucho antes de ponerse por escrito. Son los textos más antiguos de la religión védica.",
+  "legacy": "La raíz del hinduismo y de la literatura sánscrita, y aún hoy se recita."
+ },
+ "lapita": {
+  "title": "Los lapita se adentran en el Pacífico",
+  "place": "Archipiélago Bismarck, Papúa Nueva Guinea",
+  "region": "Oceanía",
+  "short": "Navegantes austronesios con cerámica decorada empiezan a poblar las islas remotas del Pacífico.",
+  "summary": "Desde el archipiélago Bismarck, los lapita navegaron en canoas con balancín hasta Vanuatu, Nueva Caledonia, Fiyi, Tonga y Samoa en pocos siglos, cruzando mar abierto hacia islas que nadie había visto.",
+  "legacy": "Fueron los antepasados de los polinesios, cuyos viajes llegarían a Hawái, Rapa Nui y Nueva Zelanda."
+ },
+ "kadesh": {
+  "title": "La batalla de Qadesh y el primer tratado de paz",
+  "place": "Qadesh, a orillas del Orontes, Siria",
+  "region": "Asia occidental",
+  "short": "Egipto y los hititas libran la mayor batalla de carros conocida y más tarde firman un tratado de paz.",
+  "summary": "Ramsés II y el rey hitita Muwatalli II se enfrentaron en Qadesh con miles de carros; ambos se proclamaron vencedores. Dieciséis años después, sus sucesores firmaron un tratado de paz y alianza, del que se conservan copias en ambas lenguas.",
+  "legacy": "El tratado de paz más antiguo que se conserva; una copia cuelga en la sede de las Naciones Unidas en Nueva York."
+ },
+ "oracle-bones": {
+  "title": "La escritura china en huesos oraculares",
+  "place": "Yin, cerca de Anyang, Henan",
+  "region": "Asia oriental",
+  "short": "Los reyes Shang consultan a sus antepasados con preguntas grabadas en huesos de buey y caparazones de tortuga.",
+  "summary": "Los adivinos de la capital Shang calentaban huesos hasta que se agrietaban y escribían la pregunta y la respuesta junto a las grietas. Se conservan más de 150 000 piezas así, el conjunto más antiguo de escritura china.",
+  "legacy": "Los caracteres chinos actuales descienden directamente de esta escritura, el sistema de escritura en uso continuo más antiguo."
+ },
+ "olmec": {
+  "title": "Los olmecas de San Lorenzo",
+  "place": "San Lorenzo Tenochtitlán, Veracruz",
+  "region": "Mesoamérica",
+  "short": "Los olmecas tallan cabezas colosales de piedra, el primer gran estilo artístico de Mesoamérica.",
+  "summary": "En la costa del golfo de México, los olmecas construyeron centros ceremoniales, tallaron cabezas de basalto de hasta tres metros de altura y difundieron su arte y sus creencias por Mesoamérica a través del comercio.",
+  "legacy": "A menudo llamada la «cultura madre» de Mesoamérica: el juego de pelota, los calendarios y los dioses de pueblos posteriores tienen raíces olmecas."
+ },
+ "bronze-collapse": {
+  "title": "El colapso de la Edad del Bronce",
+  "place": "Mediterráneo oriental",
+  "region": "Mediterráneo",
+  "short": "En pocas décadas caen los reinos hitita, micénico y de Ugarit; Egipto apenas resiste.",
+  "summary": "Sequías, terremotos, revueltas, rutas comerciales rotas y las incursiones de los «Pueblos del Mar» derribaron los reinos palaciegos interconectados del Mediterráneo oriental. Las ciudades ardieron y la escritura desapareció de Grecia durante siglos.",
+  "legacy": "Una advertencia sobre cómo las sociedades conectadas pueden caer juntas; de las ruinas surgieron el hierro, el alfabeto y las ciudades-Estado griegas.",
+  "approx": "En todo el Mediterráneo oriental"
+ },
+ "zhou": {
+  "title": "Los Zhou y el Mandato del Cielo",
+  "place": "Muye, cerca de la capital Shang",
+  "region": "Asia oriental",
+  "short": "Los Zhou derrocan a los Shang y afirman que el Cielo les ha dado el derecho a gobernar.",
+  "summary": "Tras la batalla de Muye, los Zhou justificaron su conquista con el Mandato del Cielo: un gobernante que gobierna mal pierde el apoyo del Cielo y puede ser sustituido con razón. Los Zhou reinaron, al menos nominalmente, casi 800 años.",
+  "legacy": "El Mandato del Cielo enmarcó cada cambio de dinastía en la historia de China."
+ },
+ "phoenician-alphabet": {
+  "title": "El alfabeto fenicio",
+  "place": "Biblos, Líbano",
+  "region": "Asia occidental",
+  "short": "Los comerciantes fenicios usan 22 letras para los sonidos, una escritura que cualquiera puede aprender.",
+  "summary": "En lugar de cientos de signos, el alfabeto fenicio usaba una letra para cada consonante. Llevado por los mercaderes fenicios por todo el Mediterráneo, lo adoptaron los griegos, que añadieron las vocales.",
+  "legacy": "Las letras griegas, latinas, cirílicas, hebreas y árabes descienden todas de él."
+ },
+ "bantu": {
+  "title": "La expansión bantú",
+  "place": "Praderas de Camerún y Nigeria",
+  "region": "África",
+  "short": "Agricultores de lenguas bantúes empiezan a desplazarse hacia el sur y el este de África, llevando la agricultura y el hierro.",
+  "summary": "A lo largo de unos 2500 años, agricultores de habla bantú se extendieron desde el centro-oeste de África, a través de la selva, hasta el este y el sur del continente, llevando cultivos, ganado y el trabajo del hierro.",
+  "legacy": "Una de las mayores migraciones de la historia: unos 350 millones de personas hablan hoy lenguas bantúes, del suajili al zulú.",
+  "approx": "Donde comenzaron las migraciones"
+ },
+ "chavin": {
+  "title": "Chavín de Huántar",
+  "place": "Chavín de Huántar, Áncash, Perú",
+  "region": "Sudamérica",
+  "short": "Un templo en los Andes atrae peregrinos y difunde un arte y una religión comunes por todo Perú.",
+  "summary": "El templo de piedra de Chavín, con su laberinto de galerías y sus dioses tallados de jaguar y serpiente, se convirtió en un centro de peregrinación cuyo estilo se extendió por la costa y la sierra de Perú.",
+  "legacy": "La primera cultura que unió gran parte de los Andes, sentando las bases sobre las que luego construyeron los mochicas, los wari y los incas."
+ },
+ "carthage": {
+  "title": "Se funda Cartago",
+  "place": "Cartago, Túnez",
+  "region": "África",
+  "short": "Colonos fenicios de Tiro fundan Cartago, futura capital de un imperio comercial marítimo.",
+  "summary": "Según la tradición, la reina Dido fundó Cartago. Llegó a ser la primera potencia del Mediterráneo occidental, con colonias en Hispania, Sicilia y Cerdeña, y se enfrentó a Roma en tres guerras púnicas.",
+  "legacy": "Su rivalidad con Roma decidió quién dominaría el Mediterráneo."
+ },
+ "olympics": {
+  "title": "Los primeros Juegos Olímpicos",
+  "place": "Olimpia, Grecia",
+  "region": "Europa",
+  "short": "Griegos de ciudades rivales se reúnen en Olimpia para competir en honor de Zeus, bajo una tregua sagrada.",
+  "summary": "Celebrados cada cuatro años durante más de mil años, los Juegos reunían a gentes de habla griega de todo el Mediterráneo. La lista de vencedores desde el 776 a. C. se convirtió en una forma de contar los años.",
+  "legacy": "Recuperados en 1896, los Juegos Olímpicos son el mayor acontecimiento deportivo del mundo."
+ },
+ "rome-founded": {
+  "title": "Se funda Roma",
+  "place": "El monte Palatino, Roma",
+  "region": "Europa",
+  "short": "Según la leyenda, Rómulo funda Roma en el Palatino; las aldeas de sus colinas se convierten en una ciudad.",
+  "summary": "La fecha tradicional, el 21 de abril del 753 a. C., procede de escritores romanos posteriores; la arqueología muestra que por entonces las aldeas de las colinas se unieron en un núcleo urbano. Roma fue gobernada por reyes hasta el 509 a. C. y luego se convirtió en república.",
+  "legacy": "Roma acabaría moldeando el derecho, las lenguas, las calzadas y la religión de buena parte del mundo."
+ },
+ "kush": {
+  "title": "Kush gobierna Egipto",
+  "place": "Napata, Sudán",
+  "region": "África",
+  "short": "Los reyes de Kush, en el actual Sudán, conquistan Egipto y lo gobiernan como su dinastía XXV.",
+  "summary": "Piye marchó hacia el norte desde Napata y tomó Egipto; sus sucesores gobernaron desde el delta del Nilo hasta la quinta catarata y construyeron sus propias pirámides. Más tarde, en Meroe, Kush se convirtió en un gran centro del trabajo del hierro.",
+  "legacy": "Un recordatorio de que las civilizaciones del Nilo no fueron solo egipcias; hoy Sudán tiene más pirámides que Egipto."
+ },
+ "cyrus": {
+  "title": "Ciro funda el Imperio persa",
+  "place": "Pasargada, Irán",
+  "region": "Asia occidental",
+  "short": "Ciro el Grande construye el mayor imperio conocido hasta entonces, del Egeo al Indo.",
+  "summary": "Ciro venció a los medos, a Lidia y a Babilonia, donde permitió a los judíos exiliados volver a su tierra. El Imperio aqueménida gobernaba a sus muchos pueblos mediante sátrapas, caminos reales y un servicio de correos, respetando las costumbres locales.",
+  "legacy": "Un modelo de gobierno imperial tolerante, admirado desde la antigua Grecia hasta los fundadores de los Estados modernos."
+ },
+ "athenian-democracy": {
+  "title": "La democracia en Atenas",
+  "place": "Atenas",
+  "region": "Europa",
+  "short": "Las reformas de Clístenes permiten a los ciudadanos atenienses votar las leyes en su asamblea.",
+  "summary": "Todos los ciudadanos varones adultos podían hablar y votar en la asamblea, y los cargos se elegían por sorteo. Las mujeres, los esclavos y los extranjeros quedaban excluidos, pero nació la idea del gobierno del pueblo.",
+  "legacy": "La palabra y la idea de democracia vienen de aquí."
+ },
+ "buddha": {
+  "title": "Enseña el Buda",
+  "place": "Bodh Gaya, Bihar",
+  "region": "Asia meridional",
+  "short": "Siddhartha Gautama alcanza la iluminación y enseña un camino para salir del sufrimiento.",
+  "summary": "Príncipe que dejó su hogar para buscar la causa del sufrimiento, el Buda enseñó las Cuatro Nobles Verdades y el Noble Óctuple Sendero en la llanura del Ganges. Sus fechas exactas se discuten; hacia el siglo V a. C.",
+  "legacy": "El budismo se extendió por Asia y hoy tiene unos 500 millones de seguidores."
+ },
+ "confucius": {
+  "title": "Enseña Confucio",
+  "place": "Qufu, Estado de Lu",
+  "region": "Asia oriental",
+  "short": "Confucio enseña que el orden nace de la virtud, el estudio y el respeto dentro de la familia y del Estado.",
+  "summary": "Maestro y ministro en el Estado de Lu, Confucio (551-479 a. C.) enseñó que los gobernantes deben gobernar con el ejemplo moral y que cada uno debe cumplir sus deberes hacia la familia y la comunidad. Sus dichos se reunieron en las Analectas.",
+  "legacy": "El confucianismo moldeó el gobierno, la educación y la vida familiar en China, Corea, Japón y Vietnam durante más de 2000 años."
+ },
+ "monte-alban": {
+  "title": "Monte Albán y la escritura zapoteca",
+  "place": "Monte Albán, Oaxaca",
+  "region": "Mesoamérica",
+  "short": "Los zapotecos allanan la cima de una montaña para su capital y tallan una de las escrituras más antiguas de América.",
+  "summary": "Monte Albán dominó el valle de Oaxaca durante más de mil años. Sus piedras talladas llevan glifos zapotecos y fechas de calendario, entre la escritura más antigua de Mesoamérica.",
+  "legacy": "El zapoteco todavía se habla hoy en Oaxaca."
+ },
+ "nok": {
+  "title": "Terracotas y hierro de Nok",
+  "place": "Nok, centro de Nigeria",
+  "region": "África",
+  "short": "La cultura Nok funde hierro y esculpe cabezas de terracota de gran realismo.",
+  "summary": "En el centro de Nigeria, el pueblo nok fue de los primeros de África occidental en fundir hierro, y creó llamativas figuras de terracota con peinados elaborados.",
+  "legacy": "La tradición escultórica más antigua conocida del África subsahariana, antecesora del arte posterior de Ife y Benín."
+ },
+ "salamis": {
+  "title": "Batalla de Salamina",
+  "place": "Estrecho de Salamina, Grecia",
+  "region": "Europa",
+  "short": "La flota griega derrota a la armada de Jerjes y detiene la invasión persa de Grecia.",
+  "summary": "Tras las Termópilas y el incendio de Atenas, la flota griega dirigida por Temístocles atrajo a la flota persa, más numerosa, a un estrecho angosto y la aplastó. Al año siguiente los persas abandonaron Grecia.",
+  "legacy": "Le siguió la edad de oro de Atenas, con su teatro, su filosofía y el Partenón."
+ },
+ "academy": {
+  "title": "Platón funda la Academia",
+  "place": "Atenas",
+  "region": "Europa",
+  "short": "Platón, discípulo de Sócrates, abre una escuela de filosofía; Aristóteles estudiará en ella.",
+  "summary": "La Academia de Platón enseñó filosofía, matemáticas y política durante siglos. Su discípulo Aristóteles escribió después sobre lógica, biología, ética y política, y fue preceptor de Alejandro Magno.",
+  "legacy": "La filosofía y la ciencia occidentales, y la propia palabra «academia», nacen de aquí."
+ },
+ "alexander": {
+  "title": "Alejandro conquista Persia",
+  "place": "Gaugamela, norte de Irak",
+  "region": "Asia occidental",
+  "short": "Alejandro de Macedonia derrota a Persia y llega hasta el Indo.",
+  "summary": "En once años, Alejandro tomó Egipto, Mesopotamia, Persia y Asia central y llegó a la India, fundando por el camino ciudades llamadas Alejandría. Su imperio se dividió a su muerte, pero reinos griegos gobernaron de Egipto a Afganistán.",
+  "legacy": "La época helenística mezcló las culturas griega, egipcia, persa e india, y el griego se convirtió en la lengua común del Mediterráneo oriental.",
+  "approx": "Gaugamela, su victoria decisiva del 331 a. C."
+ },
+ "maurya": {
+  "title": "El Imperio maurya",
+  "place": "Pataliputra (Patna), India",
+  "region": "Asia meridional",
+  "short": "Chandragupta Maurya une por primera vez la mayor parte del subcontinente indio.",
+  "summary": "Aconsejado por el estratega Chanakia, Chandragupta derrocó a los reyes Nanda y expulsó a los sucesores de Alejandro. Pataliputra se convirtió en una de las mayores ciudades del mundo.",
+  "legacy": "El primer imperio que unió la mayor parte del sur de Asia."
+ },
+ "alexandria-library": {
+  "title": "La Biblioteca de Alejandría",
+  "place": "Alejandría, Egipto",
+  "region": "África",
+  "short": "Los Ptolomeos reúnen en Alejandría a sabios y cientos de miles de rollos.",
+  "summary": "En el Museo y la Biblioteca de Alejandría, Euclides escribió su geometría, Eratóstenes midió la circunferencia de la Tierra y Herófilo estudió anatomía. Los libros de los barcos que hacían escala en el puerto se copiaban.",
+  "legacy": "El ideal de una biblioteca universal de todo el saber, que hoy revive en internet."
+ },
+ "ashoka": {
+  "title": "Ashoka se convierte al budismo",
+  "place": "Kalinga (Dhauli, Odisha)",
+  "region": "Asia meridional",
+  "short": "Horrorizado por la matanza de la guerra de Kalinga, el emperador Ashoka abraza el budismo y la no violencia.",
+  "summary": "Ashoka mandó grabar en rocas y columnas de todo su imperio edictos sobre la tolerancia, el cuidado de los enfermos y la bondad con los animales, y envió misiones budistas a Sri Lanka y más allá.",
+  "legacy": "El budismo se convirtió en una religión mundial; el capitel de los leones de Ashoka es hoy el emblema nacional de la India."
+ },
+ "qin": {
+  "title": "Qin unifica China",
+  "place": "Xianyang, Shaanxi",
+  "region": "Asia oriental",
+  "short": "Qin Shi Huang conquista los reinos combatientes y se convierte en el primer emperador de China.",
+  "summary": "Los Qin unificaron la escritura, los pesos, las monedas y el ancho de los ejes, construyeron caminos y los primeros tramos de la Gran Muralla, y su emperador fue enterrado con un ejército de soldados de terracota. La dinastía cayó en 15 años, pero los Han conservaron su Estado unificado.",
+  "legacy": "Desde entonces, China ha sido casi siempre un solo Estado con una sola escritura; el nombre «China» probablemente viene de Qin."
+ },
+ "nazca": {
+  "title": "Las líneas de Nazca",
+  "place": "Desierto de Nazca, Perú",
+  "region": "Sudamérica",
+  "short": "Los nazcas trazan figuras gigantes en el desierto: un colibrí, un mono, una araña.",
+  "summary": "Retirando piedras oscuras del suelo claro, los nazcas trazaron cientos de líneas y figuras, algunas de cientos de metros, que se ven mejor desde el aire, probablemente ligadas al agua y a recorridos rituales.",
+  "legacy": "Uno de los grandes enigmas arqueológicos del mundo, y un recordatorio de la habilidad de los agricultores del desierto de la costa peruana."
+ },
+ "silk-road": {
+  "title": "Se abre la Ruta de la Seda",
+  "place": "Chang'an (Xi'an), China",
+  "region": "Asia oriental",
+  "short": "Los viajes al oeste del enviado Han Zhang Qian abren rutas comerciales que unen China con Persia y Roma.",
+  "summary": "Después de que Zhang Qian volviera con noticias de los reinos de Asia central y de sus caballos, los Han se expandieron hacia el oeste y las caravanas empezaron a llevar seda, especias, caballos, vidrio e ideas por rutas que cruzaban Eurasia.",
+  "legacy": "El budismo, el papel, la pólvora y también la peste viajaron por estas rutas; la «Franja y la Ruta» china toma hoy prestada su imagen."
+ },
+ "augustus": {
+  "title": "Augusto, primer emperador romano",
+  "place": "Roma",
+  "region": "Europa",
+  "short": "Tras la guerra civil, Octavio se convierte en Augusto y la República romana en un imperio.",
+  "summary": "Augusto mantuvo las formas de la República pero tuvo el poder real, e inició dos siglos de relativa paz, la Pax Romana, en un imperio que iba de Britania a Egipto.",
+  "legacy": "El derecho romano, el latín y las calzadas romanas moldearon Europa; el mes de agosto lleva su nombre."
+ },
+ "jesus": {
+  "title": "Jesús es crucificado",
+  "place": "Jerusalén",
+  "region": "Asia occidental",
+  "short": "Jesús de Nazaret, un predicador judío, es crucificado; sus seguidores proclaman su resurrección.",
+  "summary": "Jesús predicó en Galilea y Judea y fue ejecutado por el gobernador romano Poncio Pilato. Sus seguidores, encabezados por apóstoles como Pedro y Pablo, difundieron su enseñanza por todo el mundo romano.",
+  "legacy": "El cristianismo se convirtió en la mayor religión del mundo, con más de dos mil millones de fieles."
+ },
+ "aksum": {
+  "title": "El Reino de Aksum",
+  "place": "Aksum, Etiopía",
+  "region": "África",
+  "short": "Aksum comercia entre Roma y la India y levanta gigantescas estelas de piedra.",
+  "summary": "Desde las tierras altas de Etiopía, Aksum controlaba el comercio del mar Rojo, acuñaba su propia moneda y tenía su propia escritura, el ge'ez. Hacia el 330, su rey Ezana se hizo cristiano, uno de los primeros gobernantes en hacerlo.",
+  "legacy": "La Iglesia ortodoxa etíope y la escritura ge'ez siguen hoy sus tradiciones."
+ },
+ "teotihuacan": {
+  "title": "Teotihuacán, la ciudad de los dioses",
+  "place": "Teotihuacán, valle de México",
+  "region": "Mesoamérica",
+  "short": "La Pirámide del Sol se alza sobre una ciudad planificada que llegará a 100 000 habitantes.",
+  "summary": "Teotihuacán se trazó en cuadrícula en torno a la Calzada de los Muertos, con conjuntos de viviendas para gentes de toda Mesoamérica. Su influencia llegó hasta las ciudades mayas, muy al sur.",
+  "legacy": "Siglos después de su caída, los aztecas veneraban sus ruinas como el lugar donde los dioses crearon el mundo."
+ },
+ "paper": {
+  "title": "Se perfecciona el papel",
+  "place": "Luoyang, China de los Han",
+  "region": "Asia oriental",
+  "short": "El funcionario de la corte Cai Lun presenta una forma barata de hacer papel con corteza, cáñamo y trapos.",
+  "summary": "El papel ya existía en China, pero el método de Cai Lun lo hizo práctico y barato. Se extendió a Corea y Japón, y mil años después, a través del mundo islámico, a Europa.",
+  "legacy": "Sin papel no habría imprenta, ni libros para todos, ni trámites."
+ },
+ "tikal": {
+  "title": "Los mayas del periodo clásico",
+  "place": "Tikal, Guatemala",
+  "region": "Mesoamérica",
+  "short": "Ciudades-Estado mayas como Tikal florecen, con escritura, astronomía y un calendario de gran precisión.",
+  "summary": "En el periodo clásico, decenas de reinos mayas construyeron templos piramidales, registraron su historia con un sistema de escritura completo y usaron una numeración con el cero para seguir los movimientos de Venus y del Sol.",
+  "legacy": "Unos seis millones de mayas viven hoy en México y Centroamérica y hablan una treintena de lenguas mayas."
+ },
+ "constantinople": {
+  "title": "Constantinopla, la nueva Roma",
+  "place": "Constantinopla (Estambul)",
+  "region": "Europa",
+  "short": "Constantino, el primer emperador cristiano, traslada la capital de Roma al Bósforo.",
+  "summary": "Constantino legalizó el cristianismo en el 313 y reconstruyó Bizancio como Constantinopla. El Imperio romano de Oriente que gobernó desde allí duró mil años más.",
+  "legacy": "Como Estambul, sigue siendo una encrucijada entre Europa y Asia."
+ },
+ "fall-of-rome": {
+  "title": "La caída del Imperio romano de Occidente",
+  "place": "Rávena, Italia",
+  "region": "Europa",
+  "short": "El general germano Odoacro depone al último emperador de Occidente, Rómulo Augústulo.",
+  "summary": "Tras décadas de invasiones, guerras civiles y provincias perdidas, el imperio de Occidente terminó sin una batalla. Los reinos germánicos ocuparon su lugar, mientras el imperio de Oriente continuaba desde Constantinopla.",
+  "legacy": "Suele tomarse como el final de la Antigüedad y el comienzo de la Edad Media europea."
+ },
+ "aryabhata": {
+  "title": "Los números indios y el cero",
+  "place": "Kusumapura (Patna), India de los Gupta",
+  "region": "Asia meridional",
+  "short": "Aryabhata escribe su tratado durante la edad de oro Gupta; los matemáticos indios usan cifras posicionales y el cero.",
+  "summary": "Aryabhata calculó pi con cuatro decimales y explicó los eclipses. Poco después, Brahmagupta estableció las reglas para calcular con el cero. Estas cifras llegaron a Europa a través de Bagdad como «números arábigos».",
+  "legacy": "Todos los números que se escriben hoy usan este sistema."
+ },
+ "hagia-sophia": {
+  "title": "Santa Sofía",
+  "place": "Constantinopla (Estambul)",
+  "region": "Europa",
+  "short": "Justiniano consagra Santa Sofía, cuya cúpula parece flotar sobre la mayor iglesia del mundo.",
+  "summary": "Construida en menos de seis años, Santa Sofía fue la mayor catedral durante casi mil años. Se convirtió en mezquita en 1453, en museo en 1935 y de nuevo en mezquita en 2020.",
+  "legacy": "Su arquitectura inspiró tanto las iglesias ortodoxas como las mezquitas otomanas."
+ },
+ "justinian-plague": {
+  "title": "La plaga de Justiniano",
+  "place": "Constantinopla",
+  "region": "Mediterráneo",
+  "short": "La primera pandemia conocida de peste bubónica golpea el mundo mediterráneo.",
+  "summary": "Llegada desde Egipto, la peste mató a gran parte de la población de Constantinopla y volvió en oleadas durante dos siglos, debilitando a los imperios bizantino y persa.",
+  "legacy": "Los estudios genéticos de las víctimas confirmaron que fue la misma bacteria que la posterior peste negra."
+ },
+ "hijra": {
+  "title": "La Hégira y el nacimiento del islam",
+  "place": "Medina, Arabia",
+  "region": "Asia occidental",
+  "short": "El profeta Mahoma y sus seguidores se trasladan de La Meca a Medina: el año uno del calendario islámico.",
+  "summary": "En Medina, Mahoma dirigió una comunidad creciente y regresó a La Meca en el 630. En el siglo que siguió a su muerte, el islam se extendió de Hispania a Asia central.",
+  "legacy": "El islam es la fe de casi dos mil millones de personas; el calendario islámico sigue contando desde el 622."
+ },
+ "baghdad": {
+  "title": "Bagdad y la Casa de la Sabiduría",
+  "place": "Bagdad",
+  "region": "Asia occidental",
+  "short": "Los abasíes fundan Bagdad; allí los sabios traducen y amplían el saber griego, persa e indio.",
+  "summary": "En la Ciudad Redonda y su Casa de la Sabiduría, sabios como al-Juarismi escribieron sobre álgebra (del título de su libro, al-yabr) y algoritmos (de su nombre), junto a trabajos de medicina, astronomía y óptica.",
+  "legacy": "La edad de oro islámica conservó e hizo avanzar las ciencias que Europa redescubriría después."
+ },
+ "borobudur": {
+  "title": "Borobudur",
+  "place": "Borobudur, Java",
+  "region": "Sudeste Asiático",
+  "short": "Los reyes Sailendra de Java construyen Borobudur, el mayor monumento budista del mundo.",
+  "summary": "Los peregrinos suben sus terrazas pasando junto a 2672 relieves y 504 estatuas de Buda, un camino del mundo del deseo a la iluminación.",
+  "legacy": "Una muestra de los reinos marítimos del Sudeste Asiático que unían por mar la India y China."
+ },
+ "charlemagne": {
+  "title": "Carlomagno coronado emperador",
+  "place": "Roma",
+  "region": "Europa",
+  "short": "El papa León III corona emperador al rey franco Carlomagno el día de Navidad.",
+  "summary": "Carlomagno gobernó gran parte de Europa occidental e impulsó el saber, haciendo copiar textos clásicos en una escritura nueva y clara. Su imperio se repartió entre sus nietos en el 843.",
+  "legacy": "Llamado el «padre de Europa»; Francia y Alemania remontan sus orígenes a su imperio."
+ },
+ "maya-collapse": {
+  "title": "El colapso maya clásico",
+  "place": "Tierras bajas mayas del sur",
+  "region": "Mesoamérica",
+  "short": "Una tras otra, las grandes ciudades mayas de las tierras bajas del sur son abandonadas.",
+  "summary": "Sequías, guerras, superpoblación y la pérdida de confianza en los reyes se sumaron; los monumentos fechados cesan a lo largo del siglo IX. La vida maya continuó en el norte, en Chichén Itzá, y en las tierras altas.",
+  "legacy": "Hoy se estudia como ejemplo de cómo el estrés climático puede derribar una civilización."
+ },
+ "diamond-sutra": {
+  "title": "El libro impreso fechado más antiguo",
+  "place": "Dunhuang, China de los Tang",
+  "region": "Asia oriental",
+  "short": "Se imprime una copia del Sutra del diamante con planchas de madera grabadas, fechada el 11 de mayo de 868.",
+  "summary": "Hallado sellado en una cueva cerca de Dunhuang, la dedicatoria del rollo dice que se hizo «para su distribución universal y gratuita». La xilografía hizo comunes los libros y el papel moneda en la China de los Tang y los Song.",
+  "legacy": "La imprenta nació en Asia oriental seis siglos antes que Gutenberg."
+ },
+ "rus-baptism": {
+  "title": "El bautismo de la Rus de Kiev",
+  "place": "Kiev",
+  "region": "Europa",
+  "short": "El príncipe Vladímir de Kiev adopta el cristianismo ortodoxo de Bizancio.",
+  "summary": "La elección de Vladímir unió a la Rus con la Iglesia, el alfabeto y el arte de Constantinopla. Le siguieron iglesias, monasterios y la escritura cirílica.",
+  "legacy": "La raíz del cristianismo ortodoxo en Ucrania, Rusia y Bielorrusia."
+ },
+ "genji": {
+  "title": "La historia de Genji",
+  "place": "Heian-kyō (Kioto)",
+  "region": "Asia oriental",
+  "short": "Murasaki Shikibu, dama de compañía de la corte de Heian, escribe lo que a menudo se considera la primera novela.",
+  "summary": "Escrita en kana japonés y no en chino, La historia de Genji sigue los amores y las pérdidas de un príncipe en la corte, con gran profundidad psicológica.",
+  "legacy": "Un clásico de la literatura universal y de la cultura japonesa."
+ },
+ "vinland": {
+  "title": "Vikingos en América",
+  "place": "L'Anse aux Meadows, Terranova",
+  "region": "Norteamérica",
+  "short": "Navegantes nórdicos de Groenlandia acampan en Terranova: los primeros europeos en América.",
+  "summary": "Los anillos de los árboles muestran que los nórdicos cortaron madera en L'Anse aux Meadows exactamente en 1021. Su estancia fue breve, pero las sagas recordaron esa tierra como Vinland.",
+  "legacy": "La primera vez que los seres humanos rodearon todo el globo: América había sido alcanzada desde el este y desde el oeste."
+ },
+ "gunpowder": {
+  "title": "La fórmula de la pólvora",
+  "place": "Kaifeng, China de los Song",
+  "region": "Asia oriental",
+  "short": "Un manual militar Song da las primeras recetas conocidas de la pólvora.",
+  "summary": "Descubierta por alquimistas que buscaban el elixir de la vida, la pólvora fue usada por los Song en flechas incendiarias y bombas. Los Song también inventaron los tipos móviles y usaron la brújula magnética en el mar.",
+  "legacy": "La pólvora cambió la guerra en todo el mundo y ayudó a poner fin a la era de los castillos."
+ },
+ "cahokia": {
+  "title": "Cahokia",
+  "place": "Cahokia, cerca de San Luis",
+  "region": "Norteamérica",
+  "short": "La mayor ciudad al norte de México se alza junto al Misisipi, con una pirámide de tierra de 30 m de altura.",
+  "summary": "En su apogeo, Cahokia tenía quizá 15 000 habitantes, una gran plaza y más de cien túmulos; era el centro de la cultura del Misisipi, que se extendió por el sudeste de Norteamérica.",
+  "legacy": "En su apogeo rivalizaba en tamaño con Londres."
+ },
+ "bologna": {
+  "title": "La primera universidad",
+  "place": "Bolonia, Italia",
+  "region": "Europa",
+  "short": "Los estudiantes de Bolonia se organizan para estudiar derecho y fundan la universidad en funcionamiento continuo más antigua.",
+  "summary": "Los estudiantes contrataban a sus maestros y estudiaban derecho romano. Le siguieron París, Oxford y otras, con facultades, títulos y clases. Instituciones similares, como al-Qarawiyyin en Fez y al-Azhar en El Cairo, ya enseñaban.",
+  "legacy": "El modelo de universidad, con títulos y facultades, se extendió por todo el mundo."
+ },
+ "first-crusade": {
+  "title": "La primera cruzada",
+  "place": "Jerusalén",
+  "region": "Asia occidental",
+  "short": "Respondiendo al llamamiento del papa, caballeros europeos marchan hacia el este y toman Jerusalén.",
+  "summary": "Los cruzados tomaron Jerusalén en 1099 con una gran matanza y fundaron Estados cruzados que duraron dos siglos. Siguieron otras cruzadas, y se intensificaron los contactos con el mundo islámico y con Bizancio.",
+  "legacy": "Las cruzadas aún tiñen las relaciones entre Occidente y Oriente Medio."
+ },
+ "great-zimbabwe": {
+  "title": "El Gran Zimbabue",
+  "place": "Gran Zimbabue, Masvingo",
+  "region": "África",
+  "short": "Constructores shona levantan una ciudad de piedra cuyo comercio de oro y marfil llega hasta China.",
+  "summary": "Los muros de piedra seca del Gran Zimbabue, de hasta 11 m de altura, se construyeron sin argamasa. Sus gobernantes comerciaban oro a través de la costa suajili; allí se han encontrado porcelana china y vidrio persa.",
+  "legacy": "El país de Zimbabue lleva su nombre, y sus aves de esteatita figuran en la bandera nacional."
+ },
+ "angkor-wat": {
+  "title": "Angkor Wat",
+  "place": "Angkor, Camboya",
+  "region": "Sudeste Asiático",
+  "short": "El rey jemer Suryavarman II construye Angkor Wat, el mayor monumento religioso de la Tierra.",
+  "summary": "Construido como templo hindú dedicado a Visnú y más tarde budista, Angkor Wat se encuentra en una ciudad de quizá 700 000 habitantes, alimentada por una vasta red de embalses y canales.",
+  "legacy": "Figura en la bandera de Camboya."
+ },
+ "lalibela": {
+  "title": "Las iglesias de Lalibela",
+  "place": "Lalibela, Etiopía",
+  "region": "África",
+  "short": "El rey Lalibela manda excavar once iglesias en la roca viva, una «nueva Jerusalén».",
+  "summary": "Cada iglesia se talló en un solo bloque de roca volcánica, con puertas, ventanas y pilares, y se unió a las demás por zanjas y túneles.",
+  "legacy": "Siguen en uso y son uno de los lugares más sagrados de la Iglesia ortodoxa etíope."
+ },
+ "rapa-nui": {
+  "title": "Los polinesios pueblan Rapa Nui",
+  "place": "Rapa Nui (isla de Pascua)",
+  "region": "Oceanía",
+  "short": "Navegantes polinesios llegan a la isla habitada más remota de la Tierra y más tarde tallan los moáis.",
+  "summary": "Orientándose por las estrellas, el oleaje y las aves, los polinesios poblaron el triángulo que va de Hawái a Nueva Zelanda y a Rapa Nui. En Rapa Nui tallaron cerca de mil estatuas moái.",
+  "legacy": "Algunas de las mayores hazañas de navegación anteriores a los instrumentos modernos."
+ },
+ "genghis": {
+  "title": "Gengis Kan y los mongoles",
+  "place": "Fuentes del río Onón, Mongolia",
+  "region": "Asia central",
+  "short": "Temuyín une a las tribus de la estepa como Gengis Kan; sus herederos construyen el mayor imperio terrestre de la historia.",
+  "summary": "Los ejércitos mongoles conquistaron el norte de China, Asia central, Persia y Rusia, a un coste terrible. Bajo el dominio mongol, el comercio y los viajes por Eurasia fluyeron como nunca antes.",
+  "legacy": "Los mongoles conectaron Oriente y Occidente y redibujaron el mapa de Asia y de Europa oriental."
+ },
+ "magna-carta": {
+  "title": "La Carta Magna",
+  "place": "Runnymede, Inglaterra",
+  "region": "Europa",
+  "short": "Los barones ingleses obligan al rey Juan a aceptar que incluso el rey está sometido a la ley.",
+  "summary": "La carta protegía a los barones de encarcelamientos ilegales e impuestos abusivos. Pronto fue anulada, luego reeditada, y más tarde se leyó como una carta de libertades para todos.",
+  "legacy": "Inspiró la Carta de Derechos de Estados Unidos y la Declaración Universal de los Derechos Humanos."
+ },
+ "mali": {
+  "title": "El Imperio de Malí",
+  "place": "Niani, alto Níger",
+  "region": "África",
+  "short": "Sundiata Keita derrota a los sosso y funda Malí, rico en el oro de África occidental.",
+  "summary": "La Carta del Mandé, proclamada en Kurukan Fuga, fijó las reglas del nuevo imperio. Malí controlaba los yacimientos de oro y las rutas comerciales transaharianas.",
+  "legacy": "Los griots aún cantan la epopeya de Sundiata en toda África occidental.",
+  "approx": "El emplazamiento de la primera capital se discute"
+ },
+ "baghdad-1258": {
+  "title": "Los mongoles saquean Bagdad",
+  "place": "Bagdad",
+  "region": "Asia occidental",
+  "short": "El ejército de Hulagu destruye la capital abasí y sus bibliotecas; el último califa es ejecutado.",
+  "summary": "Murieron decenas de miles de personas, y la leyenda cuenta que el Tigris corrió negro por la tinta de los libros arrojados a él. El califato abasí de Bagdad terminó tras cinco siglos.",
+  "legacy": "Suele considerarse el final de la edad de oro islámica."
+ },
+ "aotearoa": {
+  "title": "Los polinesios llegan a Aotearoa",
+  "place": "Aotearoa (Nueva Zelanda)",
+  "region": "Oceanía",
+  "short": "Canoas de la Polinesia oriental llegan a Nueva Zelanda, la última gran masa de tierra en ser poblada.",
+  "summary": "Los antepasados de los maoríes llegaron en varios viajes y se adaptaron a una tierra más fría, cazando el moa gigante y desarrollando una cultura propia.",
+  "legacy": "La lengua y la cultura maoríes forman hoy parte de la identidad de Nueva Zelanda."
+ },
+ "mansa-musa": {
+  "title": "La peregrinación de Mansa Musa",
+  "place": "Tombuctú, Malí",
+  "region": "África",
+  "short": "El rey de Malí cruza el Sahara hasta La Meca con tanto oro que su precio cae en El Cairo.",
+  "summary": "La fastuosa peregrinación de Mansa Musa puso a Malí en los mapas europeos. Regresó con sabios y arquitectos que ayudaron a hacer de Tombuctú un centro del saber islámico y de los libros.",
+  "legacy": "A menudo se le considera la persona más rica de la historia."
+ },
+ "tenochtitlan": {
+  "title": "Se funda Tenochtitlan",
+  "place": "Lago de Texcoco, valle de México",
+  "region": "Mesoamérica",
+  "short": "Los mexicas fundan su capital en una isla, donde ven un águila sobre un nopal.",
+  "summary": "Tenochtitlan llegó a ser una ciudad de unos 200 000 habitantes, con calzadas, canales y chinampas, capital del Imperio azteca.",
+  "legacy": "La Ciudad de México se alza sobre ella, y el águila sobre el nopal figura en la bandera de México."
+ },
+ "black-death": {
+  "title": "La peste negra",
+  "place": "Mesina, Sicilia",
+  "region": "Europa",
+  "short": "La peste llega a Europa por barco y mata a un tercio o más de su población en cinco años.",
+  "summary": "Llevada por las rutas comerciales desde Asia central, la peste mató a decenas de millones de personas en Asia, Oriente Medio, el norte de África y Europa. Con menos trabajadores, los salarios subieron y la servidumbre declinó en Occidente.",
+  "legacy": "La pandemia más mortífera registrada; transformó las economías, y de ella data la palabra «cuarentena»."
+ },
+ "zheng-he": {
+  "title": "Los viajes del tesoro de Zheng He",
+  "place": "Nankín, China de los Ming",
+  "region": "Asia oriental",
+  "short": "El almirante Zheng He dirige flotas Ming de cientos de barcos hasta la India, Arabia y África oriental.",
+  "summary": "Siete viajes llevaron a decenas de miles de hombres y trajeron embajadores y una jirafa de África. Después, los Ming los suspendieron y se replegaron sobre sí mismos.",
+  "legacy": "Un famoso «¿y si…?»: China tenía los barcos para explorar el mundo antes que Europa."
+ },
+ "inca": {
+  "title": "El Imperio inca",
+  "place": "Cuzco, Perú",
+  "region": "Sudamérica",
+  "short": "Pachacútec convierte el reino de Cuzco en el mayor imperio de América.",
+  "summary": "Los incas gobernaban a unos diez millones de personas a lo largo de los Andes, unidas por 40 000 km de caminos, puentes colgantes y corredores de relevo, y llevaban registros en cuerdas anudadas, los quipus. Machu Picchu se construyó para Pachacútec.",
+  "legacy": "El quechua, la lengua de los incas, lo hablan todavía unos ocho millones de personas."
+ },
+ "hangul": {
+  "title": "El rey Sejong crea el hangul",
+  "place": "Hanseong (Seúl)",
+  "region": "Asia oriental",
+  "short": "El rey Sejong de Corea inventa un alfabeto sencillo para que la gente común pueda leer y escribir.",
+  "summary": "Sus letras imitan la posición de la boca al pronunciar cada sonido. Los letrados se resistieron, pero se fue extendiendo y en el siglo XX se convirtió en la escritura nacional de Corea.",
+  "legacy": "Corea tiene una de las tasas de alfabetización más altas del mundo; el Día del Hangul es fiesta nacional."
+ },
+ "printing-press": {
+  "title": "La imprenta de Gutenberg",
+  "place": "Maguncia, Alemania",
+  "region": "Europa",
+  "short": "Johannes Gutenberg combina tipos metálicos, tinta al aceite y una prensa para imprimir libros rápido y barato.",
+  "summary": "Su Biblia apareció hacia 1455. En cincuenta años, los impresores de toda Europa habían producido millones de libros, difundiendo noticias, saberes y nuevas ideas religiosas.",
+  "legacy": "La revolución de la imprenta hizo posibles la Reforma, la Revolución científica y la alfabetización masiva."
+ },
+ "fall-constantinople": {
+  "title": "La caída de Constantinopla",
+  "place": "Constantinopla (Estambul)",
+  "region": "Europa",
+  "short": "El sultán otomano Mehmed II toma Constantinopla con cañones gigantes y pone fin al Imperio bizantino.",
+  "summary": "Tras un asedio de 53 días, la ciudad cayó y se convirtió en la capital otomana. Los sabios griegos huyeron a Italia con sus manuscritos.",
+  "legacy": "Acabó con el último vestigio del Imperio romano y empujó a los europeos a buscar rutas marítimas hacia Asia."
+ },
+ "columbus": {
+  "title": "Colón cruza el Atlántico",
+  "place": "Guanahaní, Bahamas",
+  "region": "Caribe",
+  "short": "Buscando Asia, Colón llega al Caribe y une para siempre Europa y América.",
+  "summary": "El viaje inició el «intercambio colombino» de cultivos, animales y personas: maíz, patatas y tomates para el mundo; caballos, trigo y enfermedades devastadoras para América, donde murió la mayor parte de la población indígena.",
+  "legacy": "Los continentes del mundo quedaron conectados; aquí comienza la economía global moderna.",
+  "approx": "La isla exacta del desembarco se discute"
+ },
+ "da-gama": {
+  "title": "Vasco da Gama llega a la India",
+  "place": "Calicut (Kozhikode), India",
+  "region": "Asia meridional",
+  "short": "Rodeando África, los portugueses abren una ruta marítima de Europa al océano Índico.",
+  "summary": "Guiado a través del océano Índico por un piloto local de Malindi, da Gama llegó a Calicut, un centro del comercio de especias. Portugal levantó pronto una cadena de puertos fortificados de Mozambique a Macao.",
+  "legacy": "El comienzo de los imperios marítimos europeos en Asia."
+ },
+ "renaissance": {
+  "title": "El Alto Renacimiento",
+  "place": "Florencia, Italia",
+  "region": "Europa",
+  "short": "Leonardo pinta la Gioconda y Miguel Ángel esculpe el David: el Renacimiento en su apogeo.",
+  "summary": "Redescubriendo la Grecia y la Roma antiguas, artistas y pensadores de las ciudades italianas pusieron en el centro al ser humano y la naturaleza, con la perspectiva, la anatomía y un nuevo interés por el individuo.",
+  "legacy": "Su arte llena los museos del mundo, y su humanismo moldeó la educación moderna."
+ },
+ "reformation": {
+  "title": "La Reforma protestante",
+  "place": "Wittenberg, Alemania",
+  "region": "Europa",
+  "short": "Martín Lutero desafía a la Iglesia con sus 95 tesis, difundidas por todas partes gracias a la imprenta.",
+  "summary": "La protesta de Lutero contra la venta de indulgencias dividió el cristianismo occidental. Siguieron guerras de religión, pero también Biblias en lenguas vernáculas y nuevas ideas sobre la conciencia.",
+  "legacy": "Las Iglesias protestantes cuentan hoy unos 900 millones de fieles."
+ },
+ "atlantic-slave-trade": {
+  "title": "La trata atlántica de esclavos",
+  "place": "Elmina, Costa de Oro (Ghana)",
+  "region": "África",
+  "short": "Comienzan los primeros viajes negreros directos de África a América; unos 12,5 millones de personas serán embarcadas.",
+  "summary": "Durante tres siglos, comerciantes europeos compraron africanos esclavizados en la costa y los enviaron a través del Atlántico para trabajar en plantaciones de Brasil, el Caribe y Norteamérica. Unos dos millones murieron en la travesía.",
+  "legacy": "Sus consecuencias marcan hoy África, América y Europa, de la diáspora africana a la desigualdad y el racismo.",
+  "approx": "El castillo de Elmina, uno de los muchos fuertes negreros de la costa de África occidental"
+ },
+ "tenochtitlan-falls": {
+  "title": "La caída de Tenochtitlan",
+  "place": "Tenochtitlan (Ciudad de México)",
+  "region": "Mesoamérica",
+  "short": "Cortés y sus aliados indígenas asedian y destruyen la capital azteca, debilitada por la viruela.",
+  "summary": "Decenas de miles de tlaxcaltecas y otros enemigos de los aztecas combatieron junto a unos pocos cientos de españoles. La viruela ya había matado a buena parte de la ciudad. Sobre sus ruinas se construyó la Nueva España.",
+  "legacy": "El comienzo del México colonial y del mestizaje de pueblos y culturas que moldeó América Latina."
+ },
+ "magellan": {
+  "title": "La primera vuelta al mundo",
+  "place": "Sanlúcar de Barrameda, España",
+  "region": "Mundo",
+  "short": "La expedición de Magallanes navega hacia el oeste y, al mando de Elcano, regresa tras dar la vuelta al globo.",
+  "summary": "De cinco naves y unos 270 hombres, regresaron una nave y 18 hombres. Magallanes murió en Filipinas. El viaje reveló el verdadero tamaño del Pacífico.",
+  "legacy": "Demostró que se podía dar la vuelta a la Tierra navegando, y lo grande que es en realidad."
+ },
+ "mughal": {
+  "title": "Babur funda el Imperio mogol",
+  "place": "Panipat, India",
+  "region": "Asia meridional",
+  "short": "Los cañones y la caballería de Babur derrotan al sultán de Delhi en Panipat.",
+  "summary": "Los mogoles llegaron a gobernar la mayor parte del subcontinente. Bajo Akbar fueron conocidos por su tolerancia religiosa y por una brillante mezcla de cultura persa e india.",
+  "legacy": "La arquitectura, la cocina, la pintura mogolas y la lengua urdu forman parte del patrimonio del sur de Asia."
+ },
+ "cajamarca": {
+  "title": "La conquista española del Imperio inca",
+  "place": "Cajamarca, Perú",
+  "region": "Sudamérica",
+  "short": "Pizarro captura al emperador inca Atahualpa en Cajamarca, tras una guerra civil y varias epidemias.",
+  "summary": "Atahualpa pagó como rescate una sala llena de oro y plata y aun así fue ejecutado. La resistencia continuó hasta 1572, pero los Andes pasaron a formar parte del imperio español.",
+  "legacy": "La plata andina pronto circuló por todo el mundo."
+ },
+ "copernicus": {
+  "title": "Copérnico pone la Tierra en movimiento",
+  "place": "Frombork, Polonia",
+  "region": "Europa",
+  "short": "Copérnico publica su libro, que sitúa en el centro al Sol y no a la Tierra.",
+  "summary": "Publicado cuando agonizaba, Sobre las revoluciones de las esferas celestes inició la Revolución científica, continuada por Galileo, Kepler y Newton.",
+  "legacy": "Hoy, un «giro copernicano» designa cualquier cambio completo de perspectiva."
+ },
+ "manila-galleon": {
+  "title": "Manila y el primer comercio mundial",
+  "place": "Manila, Filipinas",
+  "region": "Sudeste Asiático",
+  "short": "España funda Manila; desde entonces los galeones unen América y China a través del Pacífico.",
+  "summary": "La plata extraída en Potosí y en México cruzaba el Pacífico hasta Manila para comprar seda y porcelana chinas. Por primera vez, el comercio daba la vuelta al mundo entero.",
+  "legacy": "A menudo se considera el nacimiento de la globalización."
+ },
+ "tokugawa": {
+  "title": "El shogunato Tokugawa",
+  "place": "Edo (Tokio)",
+  "region": "Asia oriental",
+  "short": "Tokugawa Ieyasu unifica Japón y gobierna desde Edo, iniciando 250 años de paz.",
+  "summary": "Los sogunes mantuvieron a raya a los daimios, restringieron el contacto con el extranjero y dejaron que Edo creciera hasta ser una de las mayores ciudades del mundo, con una viva cultura de kabuki y grabados en madera.",
+  "legacy": "Edo se convirtió en Tokio."
+ },
+ "taj-mahal": {
+  "title": "El Taj Mahal",
+  "place": "Agra, India",
+  "region": "Asia meridional",
+  "short": "El emperador mogol Sha Jahan construye una tumba de mármol blanco para su esposa Mumtaz Mahal.",
+  "summary": "Unos 20 000 trabajadores de todo el imperio y de más allá construyeron la tumba, sus jardines y su mezquita durante dos décadas.",
+  "legacy": "Un símbolo de la India y uno de los edificios más visitados del mundo."
+ },
+ "qing": {
+  "title": "Los Qing toman Pekín",
+  "place": "Pekín",
+  "region": "Asia oriental",
+  "short": "Los manchúes toman Pekín y fundan los Qing, la última dinastía imperial de China.",
+  "summary": "Los Qing duplicaron el territorio de China, añadiendo el Tíbet, Xinjiang, Mongolia y Taiwán, y la población china llegó a unos 400 millones.",
+  "legacy": "Las fronteras de la China actual siguen en gran parte las de los Qing."
+ },
+ "westphalia": {
+  "title": "La Paz de Westfalia",
+  "place": "Münster y Osnabrück",
+  "region": "Europa",
+  "short": "Los tratados ponen fin a la guerra de los Treinta Años y reconocen la soberanía de cada Estado sobre su propio territorio.",
+  "summary": "Tras una guerra que mató a millones de personas en Europa central, los tratados permitieron a cada gobernante elegir la religión de su Estado y establecieron un sistema de Estados iguales e independientes.",
+  "legacy": "La idea de Estado soberano en la que se basa el derecho internacional actual."
+ },
+ "newton": {
+  "title": "Los Principia de Newton",
+  "place": "Londres",
+  "region": "Europa",
+  "short": "Isaac Newton formula las leyes del movimiento y de la gravitación universal.",
+  "summary": "Las mismas leyes explican la caída de una manzana y la órbita de la Luna. Los Principia mostraron que la naturaleza podía describirse con las matemáticas.",
+  "legacy": "Siguen siendo la base de la ingeniería y de los vuelos espaciales."
+ },
+ "plassey": {
+  "title": "Batalla de Plassey",
+  "place": "Plassey (Palashi), Bengala",
+  "region": "Asia meridional",
+  "short": "La Compañía Británica de las Indias Orientales derrota al nabab de Bengala: comienza el dominio británico en la India.",
+  "summary": "Mediante sobornos y una breve batalla, Robert Clive se hizo con el control de las riquezas de Bengala. En un siglo, la Compañía gobernaba la mayor parte de la India.",
+  "legacy": "El inicio de casi dos siglos de dominio británico en la India."
+ },
+ "steam-engine": {
+  "title": "La máquina de vapor de Watt",
+  "place": "Soho Manufactory, Birmingham",
+  "region": "Europa",
+  "short": "Boulton y Watt venden sus primeras máquinas de vapor eficientes: la Revolución industrial se acelera.",
+  "summary": "El condensador separado de Watt hizo las máquinas de vapor mucho más eficientes. El vapor movió molinos, minas y luego ferrocarriles y barcos, y la industria británica transformó la economía mundial.",
+  "legacy": "Comenzó la era de los combustibles fósiles, con su prosperidad y su cambio climático."
+ },
+ "us-independence": {
+  "title": "La independencia de Estados Unidos",
+  "place": "Filadelfia",
+  "region": "Norteamérica",
+  "short": "Trece colonias declaran que «todos los hombres son creados iguales» y rompen con Gran Bretaña.",
+  "summary": "La Declaración de Independencia proclamó el derecho a «la vida, la libertad y la búsqueda de la felicidad». Estados Unidos ganó la guerra y en 1787 redactó una constitución, aunque la esclavitud se mantuvo.",
+  "legacy": "La primera república moderna de ese tamaño, y un modelo para las revoluciones posteriores."
+ },
+ "first-fleet": {
+  "title": "La Primera Flota en Australia",
+  "place": "Sydney Cove",
+  "region": "Oceanía",
+  "short": "Barcos británicos desembarcan presos en Sydney Cove e inician la colonización de un continente habitado por los pueblos aborígenes desde hacía 60 000 años.",
+  "summary": "La colonia se extendió por una tierra cuyos cientos de naciones aborígenes tenían las culturas vivas más antiguas del planeta. Siguieron las enfermedades, la violencia y el despojo.",
+  "legacy": "El 26 de enero es el Día de Australia para unos y el Día de la Invasión para otros."
+ },
+ "french-revolution": {
+  "title": "La Revolución francesa",
+  "place": "París",
+  "region": "Europa",
+  "short": "Los parisinos toman la Bastilla; le sigue la Declaración de los Derechos del Hombre.",
+  "summary": "La Revolución abolió los privilegios feudales y la monarquía, cayó después en el Terror y la guerra, y Napoleón extendió luego sus leyes por Europa.",
+  "legacy": "La libertad, la igualdad y la fraternidad, la izquierda y la derecha en política, y el sistema métrico proceden de ella."
+ },
+ "haiti": {
+  "title": "La Revolución haitiana",
+  "place": "Saint-Domingue (Haití)",
+  "region": "Caribe",
+  "short": "Los esclavizados se sublevan en Saint-Domingue; dirigidos por Toussaint Louverture, conquistan la libertad.",
+  "summary": "La colonia más rica del Caribe se convirtió en Haití en 1804, el primer país fundado por antiguos esclavos, tras derrotar a los ejércitos de Napoleón.",
+  "legacy": "La única gran revuelta de esclavos triunfante de la historia; inspiró a los abolicionistas de todo el mundo."
+ },
+ "latin-independence": {
+  "title": "La independencia de América Latina",
+  "place": "Caracas, Venezuela",
+  "region": "Sudamérica",
+  "short": "De México a Argentina, las colonias españolas se sublevan; Bolívar y San Martín cruzan los Andes al frente de sus ejércitos.",
+  "summary": "En quince años, España perdió casi todo su imperio americano. Brasil declaró su independencia de Portugal en 1822.",
+  "legacy": "La mayoría de las naciones de América Latina nacen de estas guerras.",
+  "approx": "Uno de los muchos focos de los levantamientos"
+ },
+ "opium-war": {
+  "title": "La primera guerra del opio",
+  "place": "Cantón (Guangzhou)",
+  "region": "Asia oriental",
+  "short": "Gran Bretaña va a la guerra para seguir vendiendo opio a China y obtiene Hong Kong.",
+  "summary": "Después de que China destruyera las reservas británicas de opio, las cañoneras británicas impusieron el Tratado de Nankín: puertos abiertos, cesión de Hong Kong y el primero de los «tratados desiguales».",
+  "legacy": "China recuerda el «siglo de la humillación» que siguió."
+ },
+ "darwin": {
+  "title": "El origen de las especies",
+  "place": "Londres",
+  "region": "Europa",
+  "short": "Charles Darwin explica cómo evolucionan las especies por selección natural.",
+  "summary": "A partir de sus observaciones del viaje del Beagle, Darwin sostuvo que todos los seres vivos tienen antepasados comunes y cambian a lo largo de las generaciones. Alfred Russel Wallace llegó a la misma idea por su cuenta.",
+  "legacy": "La evolución es la base de la biología y la medicina modernas."
+ },
+ "us-civil-war": {
+  "title": "La guerra de Secesión",
+  "place": "Washington D. C.",
+  "region": "Norteamérica",
+  "short": "Estados Unidos se divide por la esclavitud; la victoria de la Unión libera a cuatro millones de esclavos.",
+  "summary": "Murieron unos 700 000 soldados. La Proclamación de Emancipación de Lincoln de 1863 y la 13.ª enmienda de 1865 pusieron fin a la esclavitud en Estados Unidos.",
+  "legacy": "La lucha por la igualdad de derechos que inició continuó con el movimiento por los derechos civiles.",
+  "approx": "Librada en todo el sur y el este de Estados Unidos"
+ },
+ "meiji": {
+  "title": "La Restauración Meiji",
+  "place": "Tokio",
+  "region": "Asia oriental",
+  "short": "El emperador de Japón recupera el poder y el país se lanza a modernizarse.",
+  "summary": "Se abolió la clase samurái, se construyeron ferrocarriles, fábricas y escuelas, y se creó un ejército moderno. En cuarenta años, Japón era una potencia industrial.",
+  "legacy": "La primera nación no occidental en industrializarse."
+ },
+ "suez": {
+  "title": "Se abre el canal de Suez",
+  "place": "Canal de Suez, Egipto",
+  "region": "África",
+  "short": "Un canal a través del istmo de Suez une el Mediterráneo y el mar Rojo.",
+  "summary": "Los barcos entre Europa y Asia ya no tenían que rodear África, lo que acortaba el viaje en miles de kilómetros.",
+  "legacy": "Por él pasa todavía alrededor de una décima parte del comercio mundial."
+ },
+ "berlin-conference": {
+  "title": "El reparto de África",
+  "place": "Berlín",
+  "region": "África",
+  "short": "Las potencias europeas se reúnen en Berlín para fijar las reglas del reparto de África.",
+  "summary": "No se invitó a ningún africano. En 1914, casi toda África estaba gobernada por potencias europeas, con fronteras trazadas sin tener en cuenta a sus pueblos.",
+  "legacy": "Muchas de las fronteras actuales de África son las que trazaron las potencias coloniales."
+ },
+ "adwa": {
+  "title": "Batalla de Adua",
+  "place": "Adua, Etiopía",
+  "region": "África",
+  "short": "El ejército etíope del emperador Menelik II derrota una invasión italiana.",
+  "summary": "Etiopía conservó su independencia: uno de los dos únicos Estados africanos que nunca fueron colonizados durante el reparto de África.",
+  "legacy": "Un símbolo de la resistencia africana; los colores de la bandera etíope fueron adoptados por muchas naciones africanas."
+ },
+ "wright": {
+  "title": "El primer vuelo propulsado",
+  "place": "Kitty Hawk, Carolina del Norte",
+  "region": "Norteamérica",
+  "short": "Los hermanos Wright vuelan 12 segundos en un aeroplano con motor.",
+  "summary": "El Flyer de Orville y Wilbur Wright hizo cuatro vuelos el 17 de diciembre de 1903, el más largo de 260 m. 66 años después, el ser humano pisaba la Luna.",
+  "legacy": "El transporte aéreo empequeñeció el mundo."
+ },
+ "xinhai": {
+  "title": "El fin de la China imperial",
+  "place": "Wuchang (Wuhan)",
+  "region": "Asia oriental",
+  "short": "Un levantamiento en Wuchang derriba a los Qing; terminan más de 2000 años de emperadores.",
+  "summary": "La República de China se proclamó en 1912 con Sun Yat-sen como primer presidente, aunque los señores de la guerra pronto dividieron el país.",
+  "legacy": "Tanto la República Popular como Taiwán honran a Sun Yat-sen como fundador de la China moderna."
+ },
+ "ww1": {
+  "title": "La Primera Guerra Mundial",
+  "place": "Sarajevo",
+  "region": "Europa",
+  "short": "Un atentado en Sarajevo desencadena una guerra mundial que mata a unos 17 millones de personas.",
+  "summary": "La guerra de trincheras, las ametralladoras, el gas y los tanques causaron una matanza de una escala nueva. Cayeron cuatro imperios: el alemán, el austrohúngaro, el ruso y el otomano.",
+  "legacy": "El mapa de Europa y de Oriente Medio se redibujó, y sus disputas sin resolver llevaron a la Segunda Guerra Mundial.",
+  "approx": "Donde tuvo lugar el atentado que la desencadenó"
+ },
+ "russian-revolution": {
+  "title": "La Revolución rusa",
+  "place": "Petrogrado (San Petersburgo)",
+  "region": "Europa",
+  "short": "Cae el zar; los bolcheviques de Lenin toman el poder y fundan el primer Estado comunista.",
+  "summary": "Siguió una guerra civil, y en 1922 se formó la Unión Soviética. Bajo Stalin se industrializó a un coste humano enorme.",
+  "legacy": "El comunismo marcó buena parte del siglo XX, y su rivalidad con Occidente se convirtió en la Guerra Fría."
+ },
+ "spanish-flu": {
+  "title": "La pandemia de gripe de 1918",
+  "place": "Registrada por primera vez en Camp Funston, Kansas",
+  "region": "Mundo",
+  "short": "Una pandemia de gripe infecta a un tercio de la humanidad y mata a decenas de millones de personas.",
+  "summary": "Propagada por los movimientos de tropas al final de la guerra, la gripe mató a más personas que la propia guerra, muchas de ellas adultos jóvenes.",
+  "legacy": "Sus lecciones sobre mascarillas, distancia y cierres se volvieron a aprender en 2020.",
+  "approx": "Su origen es incierto"
+ },
+ "penicillin": {
+  "title": "Se descubre la penicilina",
+  "place": "Hospital de St Mary, Londres",
+  "region": "Europa",
+  "short": "Alexander Fleming observa que un moho mata las bacterias en una placa olvidada.",
+  "summary": "Convertida en medicamento por Florey, Chain y Heatley en la década de 1940, la penicilina fue el primer antibiótico fabricado a gran escala.",
+  "legacy": "Los antibióticos han salvado cientos de millones de vidas; la resistencia a ellos es una amenaza creciente."
+ },
+ "great-depression": {
+  "title": "El crac de Wall Street",
+  "place": "Bolsa de Nueva York",
+  "region": "Norteamérica",
+  "short": "Las acciones se desploman en Nueva York y desencadenan la Gran Depresión en todo el mundo.",
+  "summary": "Quebraron bancos, el comercio se contrajo y el desempleo se disparó en todo el mundo, abriendo el camino a movimientos extremistas en Europa.",
+  "legacy": "Moldeó la política económica moderna, los bancos centrales y las redes de protección social."
+ },
+ "ww2": {
+  "title": "La Segunda Guerra Mundial",
+  "place": "Westerplatte, Gdansk",
+  "region": "Mundo",
+  "short": "Alemania invade Polonia; la guerra más mortífera de la historia mata a entre 70 y 85 millones de personas.",
+  "summary": "Librada en Europa, Asia, África y los océanos, la guerra incluyó el Holocausto, el asesinato de seis millones de judíos y de millones de personas más, y terminó con bombas atómicas sobre Japón.",
+  "legacy": "Creó el orden mundial actual: las Naciones Unidas, la Guerra Fría, la descolonización y una Europa unida.",
+  "approx": "Donde comenzó la invasión alemana de Polonia; la guerra había empezado en China en 1937"
+ },
+ "hiroshima": {
+  "title": "Hiroshima y Nagasaki",
+  "place": "Hiroshima, Japón",
+  "region": "Asia oriental",
+  "short": "Estados Unidos lanza bombas atómicas sobre dos ciudades japonesas; Japón se rinde.",
+  "summary": "Las bombas mataron a mucho más de 100 000 personas, muchas de ellas civiles, en un instante o por quemaduras y radiación. Japón se rindió días después.",
+  "legacy": "Comenzó la era nuclear; desde entonces nunca se han vuelto a usar en una guerra."
+ },
+ "united-nations": {
+  "title": "Las Naciones Unidas",
+  "place": "San Francisco",
+  "region": "Norteamérica",
+  "short": "Cincuenta naciones firman la Carta de la ONU para mantener la paz y proteger los derechos humanos.",
+  "summary": "La ONU sustituyó a la fracasada Sociedad de Naciones. En 1948 adoptó la Declaración Universal de los Derechos Humanos.",
+  "legacy": "Hoy son miembros casi todos los países del mundo, 193."
+ },
+ "india-independence": {
+  "title": "La independencia y la partición de la India",
+  "place": "Nueva Delhi",
+  "region": "Asia meridional",
+  "short": "India y Pakistán obtienen la independencia de Gran Bretaña; la partición desarraiga a unos 15 millones de personas.",
+  "summary": "El movimiento no violento de Gandhi condujo a la independencia. La división precipitada entre una India de mayoría hindú y un Pakistán de mayoría musulmana provocó migraciones masivas y una violencia que mató a cientos de miles de personas.",
+  "legacy": "La India se convirtió en la mayor democracia del mundo; los métodos de Gandhi inspiraron movimientos por los derechos civiles en todo el mundo."
+ },
+ "prc": {
+  "title": "La República Popular China",
+  "place": "Tiananmén, Pekín",
+  "region": "Asia oriental",
+  "short": "Mao Zedong proclama la República Popular tras la victoria comunista en la guerra civil.",
+  "summary": "Los nacionalistas se replegaron a Taiwán. Las campañas de Mao, incluida la hambruna del Gran Salto Adelante, costaron decenas de millones de vidas.",
+  "legacy": "China y Taiwán siguen gobernadas por separado."
+ },
+ "ghana": {
+  "title": "La independencia de África",
+  "place": "Acra, Ghana",
+  "region": "África",
+  "short": "Ghana es la primera colonia subsahariana en lograr la independencia; en 1960 la siguen diecisiete más.",
+  "summary": "Kwame Nkrumah llevó a Ghana a la independencia, y la mayor parte de África se liberó del dominio colonial en veinte años, a veces tras largas guerras.",
+  "legacy": "Las 54 naciones de la África actual."
+ },
+ "sputnik": {
+  "title": "El Sputnik y la era espacial",
+  "place": "Cosmódromo de Baikonur, Kazajistán",
+  "region": "Asia central",
+  "short": "La Unión Soviética lanza el Sputnik 1, el primer satélite artificial.",
+  "summary": "Sus pitidos de radio se oyeron en todo el mundo y dieron comienzo a la carrera espacial. En 1961, Yuri Gagarin fue el primer ser humano en el espacio.",
+  "legacy": "Hoy los satélites hacen funcionar la navegación, las previsiones meteorológicas y las comunicaciones."
+ },
+ "green-revolution": {
+  "title": "La Revolución verde",
+  "place": "Panyab, India",
+  "region": "Asia meridional",
+  "short": "Variedades de trigo y arroz de alto rendimiento salvan del hambre a la India y a México.",
+  "summary": "Nuevas variedades obtenidas por Norman Borlaug y otros, con fertilizantes y riego, duplicaron las cosechas en muchos países, aunque con costes para los suelos y el agua.",
+  "legacy": "Ayudó a alimentar a una población mundial que se ha duplicado desde 1960."
+ },
+ "apollo-11": {
+  "title": "El ser humano pisa la Luna",
+  "place": "Lanzado desde el Centro Espacial Kennedy, Florida",
+  "region": "Norteamérica",
+  "short": "El Apolo 11 se posa en la Luna; Neil Armstrong y Buzz Aldrin caminan sobre su superficie.",
+  "summary": "Unos 600 millones de personas lo vieron por televisión. Doce astronautas caminaron sobre la Luna entre 1969 y 1972.",
+  "legacy": "Las fotos de la Tierra vista desde el espacio cambiaron la forma en que vemos nuestro planeta."
+ },
+ "arpanet": {
+  "title": "El primer mensaje de internet",
+  "place": "UCLA, Los Ángeles",
+  "region": "Norteamérica",
+  "short": "ARPANET envía su primer mensaje entre UCLA y Stanford: «lo», antes de bloquearse.",
+  "summary": "La red de la agencia de investigación de defensa de Estados Unidos se convirtió en internet, con TCP/IP desde 1983.",
+  "legacy": "Hoy más de cinco mil millones de personas están conectadas."
+ },
+ "china-reform": {
+  "title": "China se abre",
+  "place": "Shenzhen, Cantón",
+  "region": "Asia oriental",
+  "short": "Deng Xiaoping lanza las reformas; China se abre al mercado y al comercio exterior.",
+  "summary": "Zonas económicas especiales como Shenzhen, un pueblo de pescadores convertido en megaciudad, impulsaron el crecimiento de China hasta hacerla la fábrica del mundo.",
+  "legacy": "Unos 800 millones de personas salieron de la pobreza extrema, la mayor reducción de la historia."
+ },
+ "berlin-wall": {
+  "title": "La caída del Muro de Berlín",
+  "place": "Berlín",
+  "region": "Europa",
+  "short": "Los alemanes del Este cruzan el Muro; los regímenes comunistas se derrumban en toda Europa del Este.",
+  "summary": "Alemania se reunificó en 1990 y la Unión Soviética se disolvió en 1991 en quince países, poniendo fin a la Guerra Fría.",
+  "legacy": "Muchos antiguos países comunistas entraron en la Unión Europea y en la OTAN."
+ },
+ "www": {
+  "title": "La World Wide Web",
+  "place": "CERN, Ginebra",
+  "region": "Europa",
+  "short": "Tim Berners-Lee pone en línea el primer sitio web en el CERN.",
+  "summary": "Los enlaces, las direcciones web y los navegadores hicieron fácil el uso de internet. El CERN liberó la web para todos en 1993.",
+  "legacy": "La estás usando ahora mismo."
+ },
+ "south-africa-1994": {
+  "title": "El fin del apartheid",
+  "place": "Pretoria",
+  "region": "África",
+  "short": "Sudáfrica celebra sus primeras elecciones abiertas a todos; Nelson Mandela es elegido presidente.",
+  "summary": "Tras décadas de resistencia y 27 años de cárcel para Mandela, el apartheid se desmanteló mediante la negociación.",
+  "legacy": "Una Comisión de la Verdad y la Reconciliación se convirtió en un modelo para sanar después de un conflicto."
+ },
+ "september-11": {
+  "title": "Los atentados del 11 de septiembre",
+  "place": "Nueva York",
+  "region": "Norteamérica",
+  "short": "Secuestradores de Al Qaeda estrellan aviones contra el World Trade Center y el Pentágono.",
+  "summary": "Murieron casi 3000 personas. Estados Unidos y sus aliados entraron en guerra en Afganistán y más tarde en Irak.",
+  "legacy": "La «guerra contra el terrorismo» transformó la seguridad, los viajes y la política en todo el mundo."
+ },
+ "paris-agreement": {
+  "title": "El Acuerdo de París sobre el clima",
+  "place": "Le Bourget, París",
+  "region": "Europa",
+  "short": "Casi todas las naciones acuerdan limitar el calentamiento global muy por debajo de 2 °C.",
+  "summary": "Cada país fija sus propios objetivos de reducción de emisiones de gases de efecto invernadero, revisados cada cinco años.",
+  "legacy": "El cambio climático, impulsado por los combustibles fósiles de la era industrial, es un desafío decisivo de este siglo."
+ },
+ "covid": {
+  "title": "La pandemia de COVID-19",
+  "place": "Wuhan, China",
+  "region": "Mundo",
+  "short": "Un nuevo coronavirus se extiende por el mundo; miles de millones de personas viven confinadas.",
+  "summary": "Identificada por primera vez en Wuhan a finales de 2019, la COVID-19 mató a millones de personas. Las vacunas se desarrollaron en menos de un año, algunas con la nueva técnica del ARN mensajero.",
+  "legacy": "Cambió cómo y dónde trabaja mucha gente, y mostró lo conectado que está el mundo."
+ }
+}
