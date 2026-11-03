@@ -57,15 +57,16 @@ Branch previews don't get these secrets. Previews created after you set one
 under Variables and Secrets → Previews Base get it; for an existing preview,
 run `npx wrangler preview secret put GITHUB_TOKEN --name <branch>`.
 
-### Visitors who offer to help
+### Visitors' emails
 
-The form has a box "I want to help fix the issue I reported"; ticking it asks
-for an email. The page encrypts that email with a public key before sending
-(RSA-OAEP with SHA-256, 4096-bit), so only sealed text reaches the Worker and
-the GitHub issue, where robots scanning for addresses find nothing. The
-issue's table gets an "Issuer offered to help" row holding the sealed email,
-starting `tt1:`. The box stays
-hidden until a key is set up:
+The form has an optional email field, so the visitor can hear about the fix,
+and a box "I want to help fix the issue I reported". The page encrypts the
+email with a public key before sending (RSA-OAEP with SHA-256, 4096-bit), so
+only sealed text reaches the Worker and the GitHub issue, where robots
+scanning for addresses find nothing. The issue's table gets an "Issuer offered
+to help" row (Yes or No) and, when an email was given, an "Issuer email" row
+holding the sealed email, starting `tt1:`. The email field stays hidden until
+a key is set up:
 
 1. On your own computer, run `npm run contact-key`. It asks for a passphrase,
    writes the private key to `.keys/contact-private.pem` (ignored by git; the

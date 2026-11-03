@@ -135,7 +135,7 @@ the browser's languages, then English.
 | `src/main.ts` | Links, globe setup, highlighting, hover and click, playback, details card |
 | `src/years.ts` | Year formatting (negative years are BCE) |
 | `src/feedback.ts` | The report form and what it sends |
-| `src/contactKey.ts` | The public key that encrypts the email of visitors who offer to help |
+| `src/contactKey.ts` | The public key that encrypts the email visitors leave with a report |
 | `scripts/contact-key.mjs`, `scripts/read-contact.mjs` | Make that key pair; read an encrypted email from an issue |
 | `worker/index.js` | The Cloudflare Worker: serves the site, files reports as GitHub issues, records and reads the usage counts |
 | `src/analytics.ts` | The anonymous usage counts the page sends |

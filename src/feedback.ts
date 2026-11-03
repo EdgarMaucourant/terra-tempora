@@ -1,9 +1,9 @@
 // Visitors' reports: an error, missing data or an idea, about whatever they
 // were looking at. The form sends the message with that context to the
-// Worker (worker/index.js), which files it as a GitHub issue. Visitors who
-// offer to help leave an email, encrypted here with the maintainers' public
-// key (src/contactKey.ts) so that only the sealed text reaches the Worker and
-// GitHub; `npm run read-contact` opens it.
+// Worker (worker/index.js), which files it as a GitHub issue. Visitors may
+// leave an email to hear about the fix, encrypted here with the maintainers'
+// public key (src/contactKey.ts) so that only the sealed text reaches the
+// Worker and GitHub; `npm run read-contact` opens it.
 
 import { CONTACT_KEY } from "./contactKey";
 import { externalLink } from "./dom";
@@ -92,9 +92,8 @@ export class Feedback {
     this.cancel = root.querySelector(".picker-foot [data-close]")!;
     this.help = root.querySelector("input[name=help]")!;
     this.email = root.querySelector("input[name=email]")!;
-    // The offer to help needs a key to seal the email with, and a browser that can.
-    root.querySelector<HTMLElement>("#feedback-help")!.hidden = !CONTACT_KEY || !crypto.subtle;
-    this.help.addEventListener("change", () => this.showEmail());
+    // The email field needs a key to seal the email with, and a browser that can.
+    root.querySelector<HTMLElement>("#feedback-email")!.hidden = !CONTACT_KEY || !crypto.subtle;
     for (const button of root.querySelectorAll("[data-close]")) button.addEventListener("click", () => this.close());
     root.addEventListener("keydown", (e) => {
       if (e.key === "Escape") {
@@ -121,7 +120,6 @@ export class Feedback {
         ? t("feedback.aboutPlace", { year: formatYear(context.year) })
         : t("feedback.aboutApp");
     this.form.reset();
-    this.showEmail();
     this.status.textContent = "";
     this.send.disabled = false;
     this.send.hidden = false;
@@ -129,11 +127,6 @@ export class Feedback {
     this.root.hidden = false;
     this.form.querySelector("textarea")!.focus();
     if (TURNSTILE_KEY) void this.showTurnstile();
-  }
-
-  private showEmail() {
-    this.email.closest("label")!.hidden = !this.help.checked;
-    this.email.required = this.help.checked;
   }
 
   close() {
@@ -164,8 +157,8 @@ export class Feedback {
       this.status.textContent = t("feedback.tooShort");
       return;
     }
-    const email = this.help.checked ? this.email.value.trim() : "";
-    if (this.help.checked && !this.email.checkValidity()) {
+    const email = this.email.closest("label")!.hidden ? "" : this.email.value.trim();
+    if (email && !this.email.checkValidity()) {
       this.status.textContent = t("feedback.emailInvalid");
       this.email.focus();
       return;
@@ -190,6 +183,7 @@ export class Feedback {
       type: data.get("type"),
       message,
       contact,
+      help: this.help.checked,
       website: data.get("website"),
       turnstile: this.token,
       context: {
