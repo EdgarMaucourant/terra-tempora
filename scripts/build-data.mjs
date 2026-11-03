@@ -181,6 +181,25 @@ function clipShape(shape, geometry) {
   return { ...shape, area: Math.round((shape.area * after) / before), label: labelPoint(outers[largest]), rings };
 }
 
+// A display shape with the area of `geometry` added. Holes are not kept, so
+// land the two leave between them is filled in too.
+function growShape(shape, geometry) {
+  const polygons = shape.rings.map((ring) => [decodeRing(ring)]);
+  const extra = geometry.type === "Polygon" ? [geometry.coordinates] : geometry.coordinates;
+  const outers = polygonClipping.union(polygons, extra).map((poly) => poly[0]);
+  const areas = outers.map(ringArea);
+  const largest = areas.indexOf(Math.max(...areas));
+  const rings = outers
+    .filter((_, i) => i === largest || areas[i] >= MIN_PART_AREA)
+    .map((ring) => simplify(ring, TOLERANCE))
+    .filter((ring) => ring.length >= 4)
+    .map(encodeRing)
+    .filter((ring) => ring.length >= 6);
+  const before = shape.rings.map(decodeRing).map(ringArea).reduce((a, b) => a + b, 0);
+  const after = areas.reduce((a, b) => a + b, 0);
+  return { ...shape, area: Math.round((shape.area * after) / before), label: labelPoint(outers[largest]), rings };
+}
+
 await ensureSource();
 const raw = JSON.parse(readFileSync(SOURCE, "utf8"));
 
@@ -247,10 +266,15 @@ console.log(`${shapes.length} border shapes from ${raw.features.length} Cliopatr
 // Cliopatria's.
 let nextId = raw.features.length;
 const credits = [];
+const additions = [];
 for (const file of existsSync(OVERRIDES) ? readdirSync(OVERRIDES).filter((f) => f.endsWith(".geojson")).sort() : []) {
   const overrides = JSON.parse(readFileSync(`${OVERRIDES}/${file}`, "utf8"));
   for (const f of overrides.features) {
     const p = f.properties;
+    if (p.Adds) {
+      additions.push({ file, ...f });
+      continue;
+    }
     const before = shapes.find((s) => s.name === p.Name);
     const replaced = new Set([p.Name, ...(p.Replaces ?? [])]);
     shapes = shapes.flatMap((s) =>
@@ -428,6 +452,33 @@ shapes = shapes.flatMap((s) => {
   for (const cut of twinCuts.get(s.id) ?? []) spans = spans.flatMap((span) => cutYears(span, cut));
   return spans.map(([from, to], i) => ({ ...s, id: i === 0 ? s.id : nextId++, from, to }));
 });
+
+// Land added to a realm (override features with Adds, such as the land the
+// United States bought or was ceded, where Cliopatria only draws what it
+// settled): it joins the realm's own shapes for the feature's years. This
+// comes after the twins and before the overlaps below, so the shapes of other
+// years keep their ids, and a smaller realm still keeps land it holds there
+// (the Confederate States in 1861-1865).
+for (const { file, properties: p, geometry } of additions) {
+  let added = 0;
+  shapes = shapes.flatMap((s) => {
+    if (s.name !== p.Name || s.to < p.FromYear || s.from > p.ToYear) return [s];
+    const outside = cutYears([s.from, s.to], [p.FromYear, p.ToYear]).map(([from, to], i) => ({
+      ...s,
+      id: i === 0 ? s.id : nextId++,
+      from,
+      to,
+    }));
+    const inside = { ...s, id: outside.length ? nextId++ : s.id, from: Math.max(s.from, p.FromYear), to: Math.min(s.to, p.ToYear) };
+    added++;
+    return [...outside, growShape(inside, geometry)];
+  });
+  if (!added) console.warn(`${file}: no shape of ${p.Name} in ${p.FromYear}-${p.ToYear} to add land to`);
+}
+if (additions.length) console.log(`${additions.length} areas of land added to realms`);
+// Shapes kept their ids as they grew.
+sizes.clear();
+boxes.clear();
 
 // From 1800 on, Cliopatria often keeps a colony inside its empire's shape
 // after it has a shape of its own, sometimes for decades after independence
