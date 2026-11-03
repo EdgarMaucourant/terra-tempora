@@ -1,3 +1,4 @@
+import { reloadForNewRelease } from "./newRelease";
 import { NOW } from "./eras";
 
 export interface Polity {
@@ -175,6 +176,20 @@ export class BorderData {
     return this.index.windows.filter((w) => w.from <= Math.min(to, last) && w.to >= Math.min(from, last));
   }
 
+  /**
+   * A window that is gone usually means a new release was published since
+   * this page opened: when the current index no longer names the file, the
+   * page reloads to get the new release.
+   */
+  private checkRelease(file: string) {
+    fetch(new URL("index.json", this.base), { cache: "no-store" })
+      .then((r) => (r.ok ? (r.json() as Promise<Index>) : null))
+      .then((index) => {
+        if (index && !index.windows.some((w) => w.file === file || w.coarse === file)) reloadForNewRelease();
+      })
+      .catch(() => {});
+  }
+
   private loadWindow(w: DataWindow): Promise<Polity[]> {
     const file = this.fileOf(w);
     const coarse = !this.detailed;
@@ -182,6 +197,7 @@ export class BorderData {
     if (!pending) {
       pending = fetch(new URL(file, this.base))
         .then((r) => {
+          if (r.status === 404) this.checkRelease(file);
           if (!r.ok) throw new Error(`Could not load ${file} (${r.status})`);
           return r.json() as Promise<WindowFile>;
         })

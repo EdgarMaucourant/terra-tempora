@@ -27,6 +27,12 @@
           "fr": "Nouveaux événements : la Confédération canadienne et l’entrée de chaque province, la fédération de l’Australie, l’Union d’Afrique du Sud, les nouveaux dominions de 1907, le traité de Guadalupe Hidalgo, la Compagnie russe d’Amérique et la revendication danoise sur tout le Groenland.",
           "es": "Nuevos acontecimientos: la Confederación canadiense y la entrada de cada provincia, la federación de Australia, la Unión Sudafricana, los nuevos dominios de 1907, el Tratado de Guadalupe Hidalgo, la Compañía Ruso-Americana y la reclamación danesa de toda Groenlandia.",
           "links": [3, 9]
+        },
+        {
+          "en": "A page left open while the site is updated now reloads itself, where it was, instead of failing to load borders.",
+          "fr": "Une page restée ouverte pendant une mise à jour du site se recharge désormais d’elle-même, au même endroit, au lieu de ne plus charger les frontières.",
+          "es": "Una página que sigue abierta mientras se actualiza el sitio ahora se recarga sola, en el mismo lugar, en vez de dejar de cargar las fronteras.",
+          "links": [9]
         }
       ]
     },
