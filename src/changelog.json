@@ -33,7 +33,8 @@
         {
           "en": "A version number in the About pop-up, this list of versions, and a short “What’s new” note for returning visitors.",
           "fr": "Un numéro de version dans la fenêtre À propos, cette liste des versions, et une courte note « Quoi de neuf » pour les visiteurs qui reviennent.",
-          "es": "Un número de versión en la ventana Acerca de, esta lista de versiones y una breve nota «Novedades» para quienes vuelven."
+          "es": "Un número de versión en la ventana Acerca de, esta lista de versiones y una breve nota «Novedades» para quienes vuelven.",
+          "links": [6]
         }
       ]
     }
