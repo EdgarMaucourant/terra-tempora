@@ -34,6 +34,14 @@ Each `scripts/border-overrides/*.geojson` file holds hand-traced borders that
   the Treaty of Paris (1783) to the Alaska Purchase (1867), until 1889. A
   smaller realm still keeps land it holds in those years, such as the
   Confederate States in 1861-1865.
+  `claimed-land.geojson` does the same for Mexico's north (1822 to 1853),
+  Russian America (1799 to 1866) and the whole of Greenland (from 1921), and
+  `british-dominions.geojson` for Australia before 1901 (`Claim` says what
+  each feature adds). Added land counts towards the realm's area as measured
+  on the sphere.
+- `Area` (optional): the shape's area in km². Give it for a large shape far
+  from the equator: worked out from the shape, it can be off by tens of
+  percent.
 - `Wikipedia`, `Wikidata`: the realm's English Wikipedia article and Wikidata
   item. Needed for a realm Cliopatria doesn't have; one it has keeps its own.
   Give a new realm its French name in `scripts/name-fixes.json` and
@@ -62,6 +70,18 @@ large lakes) and rivers, public domain, cut along the treaty lines: the
 Mississippi, the 1819 Adams-Onís line (the Sabine and Red rivers, 100°W, the
 Arkansas River and 42°N), the Continental Divide (followed through its passes
 and peaks, to within about 20 km), the Isle of Orleans and the Gila River.
+`british-dominions.geojson` draws the dominions Cliopatria leaves inside the
+British Empire until 1932 (Canada, South Africa), 1948 (New Zealand) or for
+good (Newfoundland), from Natural Earth's 1:10m countries and provinces (without
+the large lakes), public domain. Canada grows with each province or territory
+that joined it (`Joins` names it): Ontario and Quebec are cut back to their
+1867 limits along the Hudson Bay watershed, followed roughly (to within about
+100 km). From 1949 it also takes in Newfoundland and Labrador, which Cliopatria
+leaves British until 1957. South Africa takes in South West Africa (Namibia)
+from 1920, as Cliopatria does from 1932. `claimed-land.geojson` reuses the
+Texas, Mexican Cession, Gadsden Purchase and Alaska Purchase areas of
+`united-states.geojson`, and Natural Earth's Greenland. Both files were made
+with a script outside the repository from those sources.
 The list (`civilizations.json`) carries no outlines: the Civilizations popup's card
 outlines are in `civilization-shapes.json`, downloaded only once the landing
 page shows, so a link straight to the globe skips them.
