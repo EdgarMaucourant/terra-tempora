@@ -1,0 +1,41 @@
+{
+  "releases": [
+    {
+      "version": "1.0.0",
+      "date": "2026-11-03",
+      "changes": [
+        {
+          "en": "Terra Tempora goes public: the borders of more than 5,000 years of history on a globe or a flat map, with a timeline to travel through time.",
+          "fr": "Terra Tempora ouvre au public : les frontières de plus de 5 000 ans d’histoire sur un globe ou une carte plane, avec une frise pour voyager dans le temps.",
+          "es": "Terra Tempora abre al público: las fronteras de más de 5000 años de historia en un globo o un mapa plano, con una línea de tiempo para viajar por la historia."
+        },
+        {
+          "en": "Explore civilizations, today’s countries and nations, with their story, pictures and documentaries from Wikipedia and Wikimedia Commons.",
+          "fr": "Explorez les civilisations, les pays et les nations d’aujourd’hui, avec leur histoire, des images et des documentaires tirés de Wikipédia et de Wikimedia Commons.",
+          "es": "Explora las civilizaciones, los países y las naciones de hoy, con su historia, imágenes y documentales de Wikipedia y Wikimedia Commons."
+        },
+        {
+          "en": "History travel plays through the turning points of world history, and a guided tour shows newcomers around.",
+          "fr": "Le voyage dans l’histoire parcourt les grands tournants de l’histoire du monde, et une visite guidée fait découvrir le site aux nouveaux venus.",
+          "es": "El viaje por la historia recorre los grandes momentos de la historia del mundo, y una visita guiada enseña el sitio a quienes llegan por primera vez."
+        },
+        {
+          "en": "The site is in English, French and Spanish, and works on phones and tablets.",
+          "fr": "Le site est en anglais, en français et en espagnol, et fonctionne sur téléphone et tablette.",
+          "es": "El sitio está en inglés, francés y español, y funciona en teléfonos y tabletas."
+        },
+        {
+          "en": "Report a problem or suggest an improvement from the site, and leave your email if you want to hear when it is fixed.",
+          "fr": "Signalez un problème ou proposez une amélioration depuis le site, et laissez votre e-mail si vous voulez savoir quand c’est corrigé.",
+          "es": "Informa de un problema o sugiere una mejora desde el sitio, y deja tu correo si quieres saber cuándo se corrige.",
+          "links": [5]
+        },
+        {
+          "en": "A version number in the About pop-up, this list of versions, and a short “What’s new” note for returning visitors.",
+          "fr": "Un numéro de version dans la fenêtre À propos, cette liste des versions, et une courte note « Quoi de neuf » pour les visiteurs qui reviennent.",
+          "es": "Un número de versión en la ventana Acerca de, esta lista de versiones y una breve nota «Novedades» para quienes vuelven."
+        }
+      ]
+    }
+  ]
+}

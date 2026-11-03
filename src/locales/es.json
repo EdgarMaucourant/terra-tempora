@@ -25,7 +25,9 @@
     "care": "En el pasado, las fronteras rara vez eran líneas nítidas: muchos reinos tenían límites cambiantes, vasallos o tierras que reclamaban pero apenas controlaban. Las formas que se muestran aquí son aproximaciones, y algunas fechas y nombres siguen siendo debatidos por los historiadores. Si ves un error o algo que falta, avísanos: leemos todos los avisos.",
     "privacyTitle": "Tu privacidad",
     "privacy": "Terra Tempora no tiene cuentas, ni publicidad, ni cookies. Cuenta las visitas de forma anónima, sin dirección IP ni nada que te identifique, para saber qué partes del sitio se usan. El <a href=\"privacy-es.html\" target=\"_blank\" rel=\"noopener\">aviso legal y de privacidad</a> explica qué se recoge y por qué, y cómo contactarnos en <a href=\"mailto:privacy@terra-tempora.com\">privacy@terra-tempora.com</a>.",
-    "credit": "Este proyecto se hizo con IA, con instrucciones escritas con ❤️ para Claude Opus 5.5."
+    "credit": "Este proyecto se hizo con IA, con instrucciones escritas con ❤️ para Claude Opus 5.5.",
+    "version": "Versión {version}",
+    "versions": "Novedades"
   },
   "status": {
     "failed": "No se pudieron cargar las fronteras. Recarga la página para volver a intentarlo.",
@@ -481,5 +483,23 @@
     "emailLabel": "Tu correo, para saber cuándo se corrige (opcional)",
     "emailPrivacy": "O sigue la incidencia en GitHub, para lo que necesitas una cuenta de GitHub. Tu correo se cifra en tu navegador y solo los autores de Terra Tempora pueden leerlo. Solo lo usamos para avisarte de la corrección, o para contactarte sobre ella si te ofreces a ayudar, y lo borramos una vez hecha la corrección (como máximo a los 2 años). Para consultarlo, borrarlo o retirar tu consentimiento, escribe a <a href=\"mailto:privacy@terra-tempora.com\">privacy@terra-tempora.com</a>. Más información en el <a href=\"privacy-es.html\" target=\"_blank\" rel=\"noopener\">aviso de privacidad</a>.",
     "helpToggle": "Quiero ayudar a corregir el problema que he señalado"
+  },
+  "versions": {
+    "release": "Versión {version}",
+    "news": {
+      "title": "Novedades",
+      "intro": "Desde tu última visita:",
+      "all": "Ver todas las versiones",
+      "ok": "Entendido"
+    },
+    "page": {
+      "tab": "Versiones · Terra Tempora",
+      "title": "Versiones",
+      "back": "Volver al globo",
+      "intro": "Cada versión de Terra Tempora tiene un número como 1.2.3. El primer número cambia con las grandes etapas, el segundo con las nuevas funciones y contenidos, y el último con las correcciones de errores.",
+      "current": "La versión que estás usando",
+      "changes": "Solicitudes de cambios e incidencias en GitHub",
+      "failed": "No se pudo cargar la lista de versiones. Inténtalo de nuevo más tarde."
+    }
   }
 }

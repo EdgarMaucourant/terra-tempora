@@ -52,6 +52,8 @@ import { lessMotion } from "./motion";
 import { RealmList } from "./realmList";
 import { wikidataEvents } from "./wikiEvents";
 import { era, formatRange, formatYear, yearNumber } from "./years";
+import { VERSION } from "./version";
+import { setupWhatsNew } from "./whatsNew";
 
 const FIRST_YEAR = ERAS[0].from;
 // Old links (#y1241) open on the Mongol Empire, the first prototype's subject.
@@ -682,6 +684,7 @@ for (const id of ["sources-report", "landing-report"]) $(id).addEventListener("c
 
 // The About pop-up, from the ? button beside the language menu.
 const aboutButton = $("about-button");
+$("about-version").textContent = t("about.version", { version: VERSION });
 
 function closeAbout() {
   aboutEl.hidden = true;
@@ -1826,15 +1829,19 @@ const tour = new Tour({
     setViewTools(false);
     setTimelineMore(false);
     aboutEl.hidden = true;
+    whatsNew.hidden = true;
     // On phones the text panel is a popup that would hide the page.
     if (compactQuery.matches) panel.setOpen(false, false);
   },
 });
 const welcome = $("welcome");
-setupWelcome(welcome, tour, () => (compactQuery.matches && panel.isOpen) || !landingEl.hidden || !aboutEl.hidden || document.body.classList.contains("traveling"));
-// On phones the prompt steps aside when the text panel opens over it.
+const whatsNew = $("whats-new");
+const startBusy = () => (compactQuery.matches && panel.isOpen) || !landingEl.hidden || !aboutEl.hidden || document.body.classList.contains("traveling");
+// Returning visitors may get "What's new" instead of the "New here?" prompt.
+setupWelcome(welcome, tour, startBusy, setupWhatsNew(whatsNew, startBusy));
+// On phones the prompts step aside when the text panel opens over them.
 new MutationObserver(() => {
-  if (compactQuery.matches && panel.isOpen) welcome.hidden = true;
+  if (compactQuery.matches && panel.isOpen) welcome.hidden = whatsNew.hidden = true;
 }).observe($("panel"), { attributes: true, attributeFilter: ["hidden"] });
 $("tour-button").addEventListener("click", () => tour.start());
 
