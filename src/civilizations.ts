@@ -1,6 +1,9 @@
 import { eraAt, eraLabel, NOW, type Era } from "./eras";
 import { t, withText } from "./i18n";
 
+export type Continent = "af" | "as" | "eu" | "na" | "sa" | "oc";
+export const CONTINENTS: Continent[] = ["af", "na", "sa", "as", "eu", "oc"];
+
 export interface Civilization {
   /** Stable id used in links, e.g. "mongol-empire". */
   id: string;
@@ -19,6 +22,8 @@ export interface Civilization {
   center: [number, number] | null;
   /** [longitude, latitude] in the land it held longest, which the camera frames it around. */
   home: [number, number] | null;
+  /** Continents of all the land it ever held, most of it first: "af", "as", "eu", "na", "sa", "oc". */
+  continents: Continent[];
   /** Hand-picked group of realms that belong together, e.g. "mongol". */
   family: string | null;
   /** Commons file from the realm's Wikipedia article, shown when Wikidata has no picture for it. */

@@ -1,3 +1,5 @@
+import type { Continent } from "./civilizations";
+
 // Countries of today, each with the civilizations that led to it. The list is
 // built by scripts/build-countries.mjs into public/data/countries.json.
 
@@ -14,6 +16,8 @@ export interface Country {
   focus: string;
   /** [longitude, latitude] of the middle of the country's present land. */
   centre: [number, number];
+  /** Continents of its present land. */
+  continents: Continent[];
   /** Present-day land, in km². */
   area: number;
   /** Civilizations that led to the nation, oldest first. */
