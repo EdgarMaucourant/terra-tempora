@@ -1208,7 +1208,7 @@ function highlightedEvents(): HistoryEvent[] {
 
 function showEvents() {
   renderEvents(highlightedEvents());
-  const curated = new Set(allEvents.flatMap((e) => e.civs));
+  const curated = new Set(allEvents.filter((e) => !e.alongside).flatMap((e) => e.civs));
   const wanted = highlighted.filter((c) => !curated.has(c.id));
   if (!wanted.length) return;
   const asked = highlighted;

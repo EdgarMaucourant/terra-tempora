@@ -27,6 +27,13 @@ Each `scripts/border-overrides/*.geojson` file holds hand-traced borders that
   as well, such as a kingdom it conquered or the dynasty it overthrew.
 - `Clips` (optional): neighbours that only lose the traced area for those
   years.
+- `Adds` (optional): `true` when the traced area is added to the realm's
+  own shapes for those years instead of replacing them. Cliopatria draws the
+  United States only where it had settled, so `united-states.geojson` adds the
+  land it owned after each treaty or purchase (`Acquisition` names it), from
+  the Treaty of Paris (1783) to the Alaska Purchase (1867), until 1889. A
+  smaller realm still keeps land it holds in those years, such as the
+  Confederate States in 1861-1865.
 - `Wikipedia`, `Wikidata`: the realm's English Wikipedia article and Wikidata
   item. Needed for a realm Cliopatria doesn't have; one it has keeps its own.
   Give a new realm its French name in `scripts/name-fixes.json` and
@@ -50,6 +57,11 @@ pre-colonial African civilizations (with its coastline, to within about 10 km;
 the map gives no dates and calls itself an artistic interpretation). A map of
 one moment stands for a span of years: Mossi and Hausa borders of about 1790
 are shown from 1500, for instance.
+`united-states.geojson` is drawn from Natural Earth's 1:10m states (without the
+large lakes) and rivers, public domain, cut along the treaty lines: the
+Mississippi, the 1819 Adams-Onís line (the Sabine and Red rivers, 100°W, the
+Arkansas River and 42°N), the Continental Divide (followed through its passes
+and peaks, to within about 20 km), the Isle of Orleans and the Gila River.
 The list (`civilizations.json`) carries no outlines: the Civilizations popup's card
 outlines are in `civilization-shapes.json`, downloaded only once the landing
 page shows, so a link straight to the globe skips them.

@@ -750,6 +750,31 @@
    "summary": "Ming armies take Dadu, and the last Yuan emperor, Toghon Temür, flees to the steppe. Mongol rule in China ends, though the Northern Yuan keep the title in Mongolia.",
    "wikipedia": "Yuan_dynasty",
    "search": "Ming dynasty founding"
+  },
+  {
+   "id": "louisiana-purchase-1803",
+   "kind": "treaty",
+   "year": 1803,
+   "title": "The Louisiana Purchase",
+   "place": "New Orleans, where the territory was handed over",
+   "lonLat": [
+    -90.06,
+    29.96
+   ],
+   "civs": [
+    "united-states-of-america",
+    "french-consulate"
+   ],
+   "alongside": true,
+   "summary": "The United States buys Louisiana from Napoleon's France for 15 million dollars: about 2.1 million km² between the Mississippi and the Rocky Mountains, which roughly doubles the country. The treaty is signed in Paris on 30 April and the land is handed over at New Orleans in December. Most of it is still the home of Native American nations, whose land the United States takes over in the following decades.",
+   "wikipedia": "Louisiana_Purchase",
+   "search": "Louisiana Purchase",
+   "links": [
+    {
+     "label": "Britannica",
+     "url": "https://www.britannica.com/event/Louisiana-Purchase"
+    }
+   ]
   }
  ]
 }
