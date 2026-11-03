@@ -1,6 +1,8 @@
 // Key events (battles, sieges, treaties, births and deaths) pinned to the
 // globe, hand-written in public/data/events.json. Each one is tied to the
 // civilizations it belongs to and shows while one of them is highlighted.
+// A civilization with hand-written events shows only those, unless they are
+// marked `alongside` (a single event added to the ones read from Wikidata).
 // Pictures come from the event's Wikipedia article in the browser (src/media.ts).
 
 import { lang, t, withText, type MessageKey } from "./i18n";
@@ -49,6 +51,8 @@ export interface HistoryEvent {
   links?: { label: string; url: string }[];
   /** Read from Wikidata with no written story: the panel tells it with the Wikipedia article's opening. */
   fromWikidata?: boolean;
+  /** Hand-written, but shown alongside its civilizations' Wikidata events rather than in place of them. */
+  alongside?: boolean;
 }
 
 interface KindStyle {

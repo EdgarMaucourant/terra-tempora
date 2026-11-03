@@ -244,8 +244,13 @@ const minutes = minutesAt >= 0 ? Number(args[minutesAt + 1]) : 50;
 const named = new Set(args.filter((a, i) => !a.startsWith("--") && args[i - 1] !== "--minutes"));
 
 const { civilizations } = JSON.parse(readFileSync("public/data/civilizations.json", "utf8"));
-// Realms with hand-written events (public/data/events.json) don't need these.
-const curated = new Set(JSON.parse(readFileSync("public/data/events.json", "utf8")).events.flatMap((e) => e.civs));
+// Realms with hand-written events (public/data/events.json) don't need these,
+// unless the events are only added alongside Wikidata's.
+const curated = new Set(
+  JSON.parse(readFileSync("public/data/events.json", "utf8"))
+    .events.filter((e) => !e.alongside)
+    .flatMap((e) => e.civs),
+);
 
 mkdirSync(OUT, { recursive: true });
 const shards = Array.from({ length: SHARDS }, (_, i) => {

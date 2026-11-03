@@ -72,6 +72,9 @@ under CC BY-SA 4.0.
     (1994), after Jan Vansina, public domain.
   - Great Zimbabwe: "African civilizations map (pre-colonial)" by Jeff Israel
     on Wikimedia Commons, CC BY-SA 3.0.
+  - The United States, 1783 to 1889 (the land it owned after each treaty or
+    purchase): today's states and rivers from Natural Earth 1:10m, cut along
+    the treaty lines, public domain.
 - Key figures, links between realms and most events: Wikidata, CC0, with
   Wikipedia's opening paragraphs (CC BY-SA).
 - Pictures: Wikimedia Commons, each under its own free licence, credited with

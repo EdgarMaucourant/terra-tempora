@@ -1,6 +1,24 @@
 {
   "releases": [
     {
+      "version": "1.1.0",
+      "date": "2026-11-03",
+      "changes": [
+        {
+          "en": "The United States now shows all the land it owned from 1783 to 1889, not only the land it had settled: watch it double with the Louisiana Purchase in 1803, then grow with Florida, Texas, Oregon, the Mexican Cession and Alaska.",
+          "fr": "Les États-Unis montrent désormais toutes les terres qu’ils possédaient de 1783 à 1889, et non plus seulement celles déjà colonisées : voyez-les doubler avec la vente de la Louisiane en 1803, puis s’agrandir avec la Floride, le Texas, l’Oregon, la cession mexicaine et l’Alaska.",
+          "es": "Estados Unidos muestra ahora todas las tierras que poseía de 1783 a 1889, y no solo las ya colonizadas: míralo duplicarse con la compra de Luisiana en 1803 y crecer después con Florida, Texas, Oregón, la cesión mexicana y Alaska.",
+          "links": [2]
+        },
+        {
+          "en": "The Louisiana Purchase is now an event on the globe and the timeline.",
+          "fr": "La vente de la Louisiane est désormais un événement sur le globe et la frise.",
+          "es": "La compra de Luisiana es ahora un acontecimiento en el globo y la línea de tiempo.",
+          "links": [2]
+        }
+      ]
+    },
+    {
       "version": "1.0.0",
       "date": "2026-11-03",
       "changes": [
