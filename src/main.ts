@@ -458,6 +458,11 @@ document.addEventListener("keydown", (e) => {
   if (!landingEl.hidden || !$("feedback").hidden || !aboutEl.hidden || target.isContentEditable) return;
   // The guided tour keeps the keys to itself.
   if (document.documentElement.classList.contains("touring")) return;
+  // "/" opens the search, as on many sites.
+  if (e.key === "/" && !["INPUT", "TEXTAREA", "SELECT"].includes(target.tagName) && !document.body.classList.contains("traveling")) {
+    e.preventDefault();
+    return openExplore("search");
+  }
   if (e.code === "Space" && !["BUTTON", "SELECT", "INPUT", "TEXTAREA", "A"].includes(target.tagName) && !target.classList.contains("playhead-knob")) {
     e.preventDefault();
     togglePlay();
@@ -1709,9 +1714,10 @@ function leaveHome() {
   document.body.classList.remove("home");
 }
 
-type ExploreSection = "civs" | "countries" | "nations" | "travel";
+type ExploreSection = "search" | "civs" | "countries" | "nations" | "travel";
 
 const EXPLORE_TITLES: Record<Exclude<ExploreSection, "travel">, MessageKey> = {
+  search: "search.title",
   civs: "landing.civilizations",
   countries: "landing.countries",
   nations: "landing.nations",
@@ -1733,12 +1739,14 @@ function openExplore(section: ExploreSection) {
     part.hidden = part.dataset.section !== section;
   }
   $("landing-title").textContent = t(EXPLORE_TITLES[section]);
+  landingEl.dataset.section = section;
   landingEl.hidden = false;
   landing?.show();
   landingEl.querySelector(".landing-scroll")!.scrollTop = 0;
-  // Ready to type a name, except on phones, where the keyboard would cover the list.
+  // Ready to type a name, except on phones, where the keyboard would cover the
+  // list; the search pop-up is for typing, so it takes the keyboard there too.
   const search = landingEl.querySelector<HTMLInputElement>(`.explore-section[data-section="${section}"] input[type="search"]`);
-  if (search && !compactQuery.matches) search.focus({ preventScroll: true });
+  if (search && (section === "search" || !compactQuery.matches)) search.focus({ preventScroll: true });
   else landingEl.querySelector<HTMLElement>(".landing-dialog")!.focus({ preventScroll: true });
 }
 
@@ -1807,6 +1815,13 @@ exploreList.addEventListener("keydown", (e) => {
   setMenu(false);
   exploreToggle.focus();
 });
+// The search: in the toolbar on wide screens, by the menu on phones.
+for (const id of ["search-button", "search-open"]) {
+  $(id).addEventListener("click", () => {
+    setMenu(false);
+    openExplore("search");
+  });
+}
 for (const button of document.querySelectorAll<HTMLButtonElement>("[data-explore]")) {
   button.addEventListener("click", () => {
     setMenu(false);

@@ -1,6 +1,24 @@
 {
   "releases": [
     {
+      "version": "1.3.0",
+      "date": "2026-11-03",
+      "changes": [
+        {
+          "en": "A new search, opened by the Search button at the top right (the magnifying glass by the menu on phones) or the / key, looks through civilizations, countries and nations at once. You can narrow the results by type, by continent and by period, for example every civilization of South America between 1 and 1000 CE.",
+          "fr": "Une nouvelle recherche, ouverte par le bouton Rechercher en haut à droite (la loupe à côté du menu sur téléphone) ou la touche /, parcourt à la fois les civilisations, les pays et les nations. Vous pouvez filtrer les résultats par type, par continent et par période, par exemple toutes les civilisations d’Amérique du Sud entre l’an 1 et l’an 1000.",
+          "es": "Una nueva búsqueda, que se abre con el botón Buscar arriba a la derecha (la lupa junto al menú en el móvil) o la tecla /, recorre a la vez civilizaciones, países y naciones. Puedes filtrar los resultados por tipo, por continente y por período, por ejemplo todas las civilizaciones de América del Sur entre el año 1 y el 1000.",
+          "links": [4, 10]
+        },
+        {
+          "en": "The search boxes in the civilizations, countries and nations lists now show a magnifying glass.",
+          "fr": "Les champs de recherche des listes de civilisations, de pays et de nations affichent désormais une loupe.",
+          "es": "Los campos de búsqueda de las listas de civilizaciones, países y naciones muestran ahora una lupa.",
+          "links": [4, 10]
+        }
+      ]
+    },
+    {
       "version": "1.2.0",
       "date": "2026-11-03",
       "changes": [

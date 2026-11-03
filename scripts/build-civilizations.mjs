@@ -10,6 +10,7 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import polylabel from "polylabel";
 import { readWindow } from "./border-files.mjs";
+import { loadContinents } from "./grid.mjs";
 
 // Realms that belong together beyond what Wikidata records as predecessors and
 // successors. Any member opens the globe with the whole family highlighted.
@@ -48,6 +49,10 @@ const HOME_MIN_AREA = 10_000;
 // held as long.
 const HOME_TIE = 0.95;
 const KM2_PER_SQ_DEGREE = 111.32 * 111.32;
+// A realm stood on a continent when this share of all the land it ever held
+// lay there, or this much of it (km²): the Russian Empire's Alaska counts.
+const CONTINENT_SHARE = 0.05;
+const CONTINENT_KM2 = 100_000;
 // Hand corrections to a civilization's years where its borders don't span its
 // history, by id: [from, to].
 const DATE_FIXES = JSON.parse(readFileSync("scripts/date-fixes.json", "utf8"));
@@ -241,6 +246,15 @@ function snapshots(members, links) {
   });
 }
 
+const continents = loadContinents(readFileSync);
+
+/** The continents of all the land the realm ever held, most of it first. */
+function continentsOf(shapes) {
+  const cells = new Set();
+  for (const s of shapes) for (const ring of s.rings) continents.grid.fillRing(decodeRing(ring), cells);
+  return continents.continentsOf(cells, { share: CONTINENT_SHARE, km2: CONTINENT_KM2 });
+}
+
 const civilizations = [];
 const outlines = {};
 const slugs = new Set();
@@ -273,6 +287,7 @@ for (const g of groups.values()) {
     // Where the camera frames the realm from (see heartland()).
     home: heartland(g.shapes),
     family: familyOf.get(g.name) ?? null,
+    continents: continentsOf(g.shapes),
     ...(PICTURES[wikipedia] && { picture: PICTURES[wikipedia] }),
   });
   outlines[slug] = silhouette(peak);
