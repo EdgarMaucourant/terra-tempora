@@ -477,9 +477,9 @@
     "typeLegend": "De quoi s’agit-il ?",
     "typeMissing": "Il manque quelque chose",
     "waitCheck": "Merci d’attendre la fin de la vérification ci-dessous.",
-    "emailInvalid": "Merci d’indiquer un e-mail valide, ou de décocher l’offre d’aide.",
-    "emailLabel": "Votre e-mail, pour que nous puissions vous contacter",
-    "emailPrivacy": "Facultatif. Votre e-mail est chiffré dans votre navigateur et seuls les auteurs de Terra Tempora peuvent le lire. Nous l’utilisons uniquement pour vous recontacter au sujet de ce signalement, avec votre consentement, et le supprimons une fois la correction faite (au plus tard après 2 ans). Pour le consulter, le supprimer ou retirer votre consentement, écrivez à <a href=\"mailto:privacy@terra-tempora.com\">privacy@terra-tempora.com</a>. En savoir plus : <a href=\"privacy-fr.html\" target=\"_blank\" rel=\"noopener\">données personnelles</a>.",
+    "emailInvalid": "Merci d’indiquer un e-mail valide, ou de laisser le champ vide.",
+    "emailLabel": "Votre e-mail, pour être prévenu de la correction (facultatif)",
+    "emailPrivacy": "Ou suivez le ticket sur GitHub, ce qui demande un compte GitHub. Votre e-mail est chiffré dans votre navigateur et seuls les auteurs de Terra Tempora peuvent le lire. Nous l’utilisons uniquement pour vous prévenir de la correction, ou pour vous recontacter à son sujet si vous proposez votre aide, et le supprimons une fois la correction faite (au plus tard après 2 ans). Pour le consulter, le supprimer ou retirer votre consentement, écrivez à <a href=\"mailto:privacy@terra-tempora.com\">privacy@terra-tempora.com</a>. En savoir plus : <a href=\"privacy-fr.html\" target=\"_blank\" rel=\"noopener\">données personnelles</a>.",
     "helpToggle": "Je veux aider à corriger le problème signalé"
   }
 }
