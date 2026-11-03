@@ -121,6 +121,7 @@
     "allContinents": "Todos los continentes",
     "allTypes": "Todo",
     "button": "Buscar",
+    "buttonTitle": "Buscar (/)",
     "clear": "Borrar filtros",
     "continent": "Continente",
     "continents": {
