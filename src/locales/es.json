@@ -117,6 +117,37 @@
     "newest": "Más recientes primero",
     "oldest": "Más antiguas primero"
   },
+  "search": {
+    "allContinents": "Todos los continentes",
+    "allTypes": "Todo",
+    "button": "Buscar",
+    "clear": "Borrar filtros",
+    "continent": "Continente",
+    "continents": {
+      "af": "África",
+      "as": "Asia",
+      "eu": "Europa",
+      "na": "América del Norte",
+      "oc": "Oceanía",
+      "sa": "América del Sur"
+    },
+    "count": {
+      "one": "{count} resultado",
+      "other": "{count} resultados"
+    },
+    "countryMeta": "País actual · {continents}",
+    "from": "Desde el año",
+    "nationMeta": "Nación actual · {continents}",
+    "none": "Nada coincide. Prueba otro nombre, continente o período.",
+    "placeholder": "Buscar civilizaciones, países y naciones",
+    "showAll": "Ver los {count}",
+    "showMore": "Ver más",
+    "title": "Buscar",
+    "to": "Hasta el año",
+    "type": "Tipo",
+    "years": "Presente entre",
+    "yearsHint": "Para países y naciones, los años eligen los que tienen una civilización presente en esa época."
+  },
   "travel": {
     "approximate": "{place} (aproximado)",
     "circa": "h. {when}",

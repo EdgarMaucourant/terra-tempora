@@ -85,6 +85,9 @@
               </li>
             </ul>
           </div>
+          <button id="search-open" class="burger search-open" type="button" aria-label="Search" title="Search (/)" data-i18n-label="search.button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6" /><path d="m15 15 5 5" /></svg>
+          </button>
           <h1 id="civ-title" data-i18n="page.title">Terra Tempora</h1>
         </div>
         <p id="civ-sub" class="sub"></p>
@@ -486,6 +489,36 @@
           <button id="landing-close" class="icon-button" type="button" aria-label="Close and go back to the globe" data-i18n-label="home.closeLabel">×</button>
         </div>
         <div class="landing-scroll">
+          <section class="explore-section search-section" data-section="search">
+            <div class="landing-head">
+              <div class="filters">
+                <label class="search search-all">
+                  <span class="visually-hidden" data-i18n="common.search">Search</span>
+                  <input id="all-search" type="search" autocomplete="off" placeholder="Search civilizations, countries and nations" data-i18n-placeholder="search.placeholder" />
+                </label>
+              </div>
+              <div id="search-types" class="era-filter search-types" role="group" aria-label="Type" data-i18n-label="search.type"></div>
+              <div id="search-continents" class="era-filter search-continents" role="group" aria-label="Continent" data-i18n-label="search.continent"></div>
+              <fieldset class="search-years">
+                <legend data-i18n="search.years">Stood between</legend>
+                <label class="search-year">
+                  <span class="visually-hidden" data-i18n="search.from">From year</span>
+                  <input id="search-from" type="number" placeholder="From year" data-i18n-placeholder="search.from" inputmode="numeric" min="1" max="10000" step="1" />
+                  <select id="search-from-era"><option value="bce" data-i18n="year.eraBce">BCE</option><option value="ce" selected data-i18n="year.eraCe">CE</option></select>
+                </label>
+                <span aria-hidden="true">–</span>
+                <label class="search-year">
+                  <span class="visually-hidden" data-i18n="search.to">To year</span>
+                  <input id="search-to" type="number" placeholder="To year" data-i18n-placeholder="search.to" inputmode="numeric" min="1" max="10000" step="1" />
+                  <select id="search-to-era"><option value="bce" data-i18n="year.eraBce">BCE</option><option value="ce" selected data-i18n="year.eraCe">CE</option></select>
+                </label>
+                <button id="search-clear" class="ghost search-clear" type="button" hidden data-i18n="search.clear">Clear filters</button>
+              </fieldset>
+              <p id="search-years-hint" class="search-hint" hidden data-i18n="search.yearsHint"></p>
+              <p id="search-count" class="count" aria-live="polite"></p>
+            </div>
+            <div id="search-results" class="search-results"></div>
+          </section>
           <section class="explore-section" data-section="civs">
             <div class="landing-head">
               <div class="filters">

@@ -1935,6 +1935,177 @@ a {
   color: var(--ink-soft);
 }
 
+/* A magnifying glass in every search box, so it reads as one. */
+.search {
+  position: relative;
+}
+
+.search::before {
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  margin-top: -8px;
+  background: var(--ink-soft);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round'%3E%3Ccircle cx='10.5' cy='10.5' r='6'/%3E%3Cpath d='m15 15 5 5'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round'%3E%3Ccircle cx='10.5' cy='10.5' r='6'/%3E%3Cpath d='m15 15 5 5'/%3E%3C/svg%3E") center / contain no-repeat;
+  pointer-events: none;
+}
+
+.search input {
+  padding-left: 38px;
+}
+
+/* The search pop-up: one box over every list, then type, continent and years. */
+.search-all {
+  flex-basis: 100%;
+  max-width: 620px;
+}
+
+.search-all input {
+  min-height: 46px;
+  font-size: 16px;
+}
+
+.search-types,
+.search-continents {
+  margin-bottom: 8px;
+}
+
+.search-years {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 8px;
+  margin: 4px 0 0;
+  padding: 0;
+  border: 0;
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+.search-years legend {
+  float: left;
+  margin-right: 4px;
+  padding: 0;
+}
+
+.search-year {
+  display: flex;
+  gap: 4px;
+}
+
+.search-year input,
+.search-year select {
+  box-sizing: border-box;
+  min-height: 34px;
+  padding: 0 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel-solid);
+  color: var(--ink);
+  font: inherit;
+}
+
+.search-year input {
+  width: 7.5em;
+}
+
+.search-clear {
+  min-height: 34px;
+}
+
+.search-clear[hidden] {
+  display: none;
+}
+
+.search-hint {
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+
+.search-results {
+  max-width: var(--landing-width);
+  margin: 0 auto;
+  padding: 10px var(--gutter) 32px;
+}
+
+.search-group + .search-group {
+  margin-top: 22px;
+}
+
+.search-group-title {
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.search-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.search-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel-solid);
+  color: inherit;
+  text-decoration: none;
+}
+
+.search-row:hover,
+.search-row:focus-visible {
+  border-color: var(--steppe);
+}
+
+.search-shape {
+  flex: none;
+  width: 38px;
+  height: 38px;
+}
+
+.search-shape path {
+  fill: color-mix(in srgb, var(--steppe) 45%, transparent);
+  stroke: color-mix(in srgb, var(--steppe) 80%, white);
+  stroke-width: 0.8;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.search-text {
+  display: grid;
+  min-width: 0;
+}
+
+.search-name {
+  font-weight: 600;
+}
+
+.search-meta {
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+
+.search-more {
+  margin-top: 10px;
+}
+
 .era-filter {
   display: flex;
   flex-wrap: wrap;
@@ -3359,6 +3530,11 @@ a {
   cursor: pointer;
 }
 
+.search-open {
+  flex: none;
+  pointer-events: auto;
+}
+
 .burger:hover,
 .burger[aria-expanded="true"] {
   border-color: var(--steppe);
@@ -3512,7 +3688,8 @@ a {
 .home .back,
 .home #view-focus,
 .home .switch[for="context-toggle"],
-.traveling .explore-menu {
+.traveling .explore-menu,
+.traveling .search-open {
   display: none;
 }
 
@@ -3895,5 +4072,43 @@ a {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* Phones: the type and continent chips scroll sideways on one line each, and
+   the two years share a line under their label. */
+@media (max-width: 640px) {
+  .search-types,
+  .search-continents {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-inline: calc(-1 * var(--gutter));
+    padding-inline: var(--gutter);
+  }
+
+  .search-types .chip,
+  .search-continents .chip {
+    flex: none;
+  }
+
+  .search-years legend {
+    float: none;
+    width: 100%;
+    margin-bottom: 2px;
+  }
+
+  .search-year input {
+    width: 5.5em;
+  }
+
+  /* 16px keeps iOS from zooming in on the field. */
+  .search-year input,
+  .search-year select {
+    font-size: 16px;
+  }
+
+  .search-list {
+    grid-template-columns: 1fr;
   }
 }

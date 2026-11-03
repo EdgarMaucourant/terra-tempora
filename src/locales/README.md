@@ -42,6 +42,7 @@ move a key unless you change the code that uses it too.
 | `home` | The welcome panel at start (`home.panel`, and `home.modes` for its four modes) and the short texts of the left menu |
 | `landing` | The Explore page: civilizations, countries and nations lists |
 | `sort` | Sort menus on the Explore page |
+| `search` | The search pop-up, opened by the magnifying glass by the menu: one search over civilizations, countries and nations, with type, continent and year filters |
 | `travel` | History travel |
 | `masthead`, `toolbar` | Title at the top left and the tools under it |
 | `view`, `axis`, `projection`, `globe`, `map` | Globe and map views and their settings |
