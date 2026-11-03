@@ -160,6 +160,13 @@ one after several have been merged):
    version in `package.json`, when versions are out of order, or when a change
    has no English text.
 
+Publishing a release removes the previous one's border windows and script
+chunks, whose names carry a hash. A page left open across a release asks for
+them and gets a 404: it then reloads itself (`src/newRelease.ts`), at most
+once a minute, when the border index no longer names the missing window or
+when Vite reports a missing chunk (`vite:preloadError`). The view is in the
+address, so the visitor stays where they were.
+
 Every entry shows on the versions page (`versions.html`, linked from the About
 pop-up). Returning visitors also get a "What's new" card (`src/whatsNew.ts`)
 listing the releases since their last visit, at most the last two, skipping
