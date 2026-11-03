@@ -1,6 +1,42 @@
 {
   "releases": [
     {
+      "version": "1.2.0",
+      "date": "2026-11-03",
+      "changes": [
+        {
+          "en": "Canada now appears in 1867, at Confederation, instead of 1931, and grows as provinces and territories join: Manitoba and the North-West in 1870, British Columbia in 1871, Prince Edward Island in 1873, the Arctic islands in 1880 and Newfoundland in 1949.",
+          "fr": "Le Canada apparaît désormais en 1867, à la Confédération, et non plus en 1931, et s’agrandit à mesure que provinces et territoires le rejoignent : le Manitoba et le Nord-Ouest en 1870, la Colombie-Britannique en 1871, l’Île-du-Prince-Édouard en 1873, les îles arctiques en 1880 et Terre-Neuve en 1949.",
+          "es": "Canadá aparece ahora en 1867, con la Confederación, y no en 1931, y crece a medida que se unen provincias y territorios: Manitoba y el Noroeste en 1870, Columbia Británica en 1871, la Isla del Príncipe Eduardo en 1873, las islas árticas en 1880 y Terranova en 1949.",
+          "links": [3, 9]
+        },
+        {
+          "en": "The other British dominions also appear when they were founded: Australia in 1901, New Zealand and Newfoundland in 1907, South Africa in 1910.",
+          "fr": "Les autres dominions britanniques apparaissent aussi à leur fondation : l’Australie en 1901, la Nouvelle-Zélande et Terre-Neuve en 1907, l’Afrique du Sud en 1910.",
+          "es": "Los demás dominios británicos aparecen también al fundarse: Australia en 1901, Nueva Zelanda y Terranova en 1907, Sudáfrica en 1910.",
+          "links": [3, 9]
+        },
+        {
+          "en": "Land that was owned before it was settled now shows: all of Australia under Britain from 1829, Mexico's north before 1848, Russian America (Alaska) from 1799 and the whole of Greenland from 1921.",
+          "fr": "Les terres possédées avant d’être colonisées apparaissent désormais : toute l’Australie britannique dès 1829, le nord du Mexique avant 1848, l’Amérique russe (l’Alaska) dès 1799 et tout le Groenland dès 1921.",
+          "es": "Las tierras poseídas antes de ser colonizadas aparecen ahora: toda Australia bajo dominio británico desde 1829, el norte de México antes de 1848, la América rusa (Alaska) desde 1799 y toda Groenlandia desde 1921.",
+          "links": [3, 9]
+        },
+        {
+          "en": "New events: Canada's Confederation and each province joining, the Federation of Australia, the Union of South Africa, the new dominions of 1907, the Treaty of Guadalupe Hidalgo, the Russian-American Company and Denmark's claim to all of Greenland.",
+          "fr": "Nouveaux événements : la Confédération canadienne et l’entrée de chaque province, la fédération de l’Australie, l’Union d’Afrique du Sud, les nouveaux dominions de 1907, le traité de Guadalupe Hidalgo, la Compagnie russe d’Amérique et la revendication danoise sur tout le Groenland.",
+          "es": "Nuevos acontecimientos: la Confederación canadiense y la entrada de cada provincia, la federación de Australia, la Unión Sudafricana, los nuevos dominios de 1907, el Tratado de Guadalupe Hidalgo, la Compañía Ruso-Americana y la reclamación danesa de toda Groenlandia.",
+          "links": [3, 9]
+        },
+        {
+          "en": "A page left open while the site is updated now reloads itself, where it was, instead of failing to load borders.",
+          "fr": "Une page restée ouverte pendant une mise à jour du site se recharge désormais d’elle-même, au même endroit, au lieu de ne plus charger les frontières.",
+          "es": "Una página que sigue abierta mientras se actualiza el sitio ahora se recarga sola, en el mismo lugar, en vez de dejar de cargar las fronteras.",
+          "links": [9]
+        }
+      ]
+    },
+    {
       "version": "1.1.0",
       "date": "2026-11-03",
       "changes": [

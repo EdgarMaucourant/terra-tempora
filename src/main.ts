@@ -49,6 +49,7 @@ import { loadTravel, Travel, travelWhen, type TravelEvent } from "./travel";
 import { compactQuery } from "./layout";
 import { realmFacts } from "./wikidata";
 import { lessMotion } from "./motion";
+import { reloadOnMissingChunks } from "./newRelease";
 import { RealmList } from "./realmList";
 import { wikidataEvents } from "./wikiEvents";
 import { era, formatRange, formatYear, yearNumber } from "./years";
@@ -60,6 +61,9 @@ const FIRST_YEAR = ERAS[0].from;
 const DEFAULT_CIV = "mongol-empire";
 
 const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
+
+// A page left open across a release reloads when its files are gone.
+reloadOnMissingChunks();
 
 // The borders are asked for first, before the globe is set up: the index, and
 // the window of the year the page opens on when the link alone tells it.
