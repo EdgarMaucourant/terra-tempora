@@ -9,10 +9,10 @@
 // instead (CURATED), to take in realms that shaped a country from elsewhere.
 import { readFileSync, writeFileSync } from "node:fs";
 import { readWindow } from "./border-files.mjs";
+import { decodeRing, loadContinents, makeGrid } from "./grid.mjs";
 
 const CELL = 0.25;
-const COLS = 360 / CELL;
-const ROWS = 180 / CELL;
+const { COLS, weight, fillRing } = makeGrid(CELL);
 // A civilization joins a country's lineage when it covered this share of the
 // country's land at some point…
 const MIN_SHARE_OF_COUNTRY = 0.1;
@@ -160,59 +160,6 @@ const civOfRealm = new Map();
 for (const c of civilizations) for (const n of c.names) civOfRealm.set(n, c);
 const byId = new Map(civilizations.map((c) => [c.id, c]));
 
-function decodeRing(encoded) {
-  const out = [];
-  let x = 0;
-  let y = 0;
-  for (let i = 0; i < encoded.length; i += 2) {
-    x += encoded[i];
-    y += encoded[i + 1];
-    out.push([x / 100, y / 100]);
-  }
-  return out;
-}
-
-const weight = new Float64Array(ROWS);
-for (let r = 0; r < ROWS; r++) weight[r] = Math.cos(((90 - (r + 0.5) * CELL) * Math.PI) / 180);
-
-/** Adds the cells whose centres fall inside a ring to `cells` (scanline fill). */
-function fillRing(ring, cells) {
-  let minY = 90;
-  let maxY = -90;
-  for (const [, y] of ring) {
-    minY = Math.min(minY, y);
-    maxY = Math.max(maxY, y);
-  }
-  const r0 = Math.max(0, Math.floor((90 - maxY) / CELL));
-  const r1 = Math.min(ROWS - 1, Math.floor((90 - minY) / CELL));
-  let any = false;
-  for (let r = r0; r <= r1; r++) {
-    const lat = 90 - (r + 0.5) * CELL;
-    const xs = [];
-    for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
-      const [xi, yi] = ring[i];
-      const [xj, yj] = ring[j];
-      if (yi > lat !== yj > lat) xs.push(xi + ((lat - yi) / (yj - yi)) * (xj - xi));
-    }
-    xs.sort((a, b) => a - b);
-    for (let k = 0; k + 1 < xs.length; k += 2) {
-      const c0 = Math.ceil((xs[k] + 180) / CELL - 0.5);
-      const c1 = Math.floor((xs[k + 1] + 180) / CELL - 0.5);
-      for (let c = Math.max(0, c0); c <= Math.min(COLS - 1, c1); c++) {
-        cells.add(r * COLS + c);
-        any = true;
-      }
-    }
-  }
-  // A ring smaller than a cell still claims the cell it sits in.
-  if (!any && ring.length) {
-    const [x, y] = ring[0];
-    const r = Math.min(ROWS - 1, Math.max(0, Math.floor((90 - y) / CELL)));
-    const c = Math.min(COLS - 1, Math.max(0, Math.floor((x + 180) / CELL)));
-    cells.add(r * COLS + c);
-  }
-}
-
 const area = (cells) => {
   let sum = 0;
   for (const cell of cells) sum += weight[Math.floor(cell / COLS)];
@@ -264,15 +211,26 @@ function kmBetween(a, b) {
   const cos = Math.sin(a.y * r) * Math.sin(b.y * r) + Math.cos(a.y * r) * Math.cos(b.y * r) * Math.cos((a.x - b.x) * r);
   return Math.acos(Math.min(1, Math.max(-1, cos))) * 6371;
 }
+// A country lies on every continent holding this share of its land (Russia in
+// Europe and Asia). Denmark is mostly Greenland, so it is set by hand.
+const CONTINENT_SHARE = 0.2;
+const CONTINENT_FIXES = { denmark: ["eu", "na"] };
+const continents = loadContinents(readFileSync);
 const today = new Map();
+const continentsOfCountry = new Map();
 for (const [id, rings] of todayRings) {
   const stats = rings.map(ringStats);
   const main = stats.reduce((best, s) => (s.area > best.area ? s : best), stats[0]);
   const cells = new Set();
+  const coarse = new Set();
   rings.forEach((ring, i) => {
-    if (stats[i].area >= main.area * LARGE_PART || kmBetween(stats[i], main) <= FAR_KM) fillRing(ring, cells);
+    if (stats[i].area >= main.area * LARGE_PART || kmBetween(stats[i], main) <= FAR_KM) {
+      fillRing(ring, cells);
+      continents.grid.fillRing(ring, coarse);
+    }
   });
   today.set(id, cells);
+  continentsOfCountry.set(id, CONTINENT_FIXES[id] ?? continents.continentsOf(coarse, { share: CONTINENT_SHARE, km2: Infinity }));
 }
 
 const heldArea = new Map([...held].map(([id, cells]) => [id, area(cells)]));
@@ -364,6 +322,7 @@ for (const [id, land] of today) {
     startYear: curated?.startYear ?? busiestYear(list),
     focus: curated?.focus ?? id,
     centre,
+    continents: continentsOfCountry.get(id),
     area: Math.round(landArea * (CELL * 111.32) ** 2),
     lineage: curated ? lineage : list.map((c) => c.id),
     territoryYear: busiestYear(crossing),

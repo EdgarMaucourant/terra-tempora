@@ -4,6 +4,7 @@ import { ERAS, eraLabel, type Era } from "./eras";
 import { countryCivIds, type Country, type CountryView } from "./countries";
 import { el, externalLink } from "./dom";
 import { formatNumber, lang, t } from "./i18n";
+import { Search } from "./search";
 import { nationFlags, pictureTitle, realmFacts, type RealmFacts } from "./wikidata";
 import { formatRange, formatYear } from "./years";
 
@@ -97,6 +98,16 @@ export class Landing {
     });
 
     for (const view of ["territory", "nationality"] as const) this.setupCountries(view, countries, onCountry);
+
+    new Search(
+      root.querySelector<HTMLElement>('.explore-section[data-section="search"]')!,
+      list,
+      countries,
+      (c) => onOpen([c]),
+      (country, view) => onCountry?.(country, view),
+      (className, id) => this.outline(className, id),
+      () => this.drawOutlines(),
+    );
 
     this.render();
   }

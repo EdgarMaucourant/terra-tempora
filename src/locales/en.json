@@ -117,6 +117,38 @@
     "newest": "Most recent first",
     "oldest": "Oldest first"
   },
+  "search": {
+    "allContinents": "All continents",
+    "allTypes": "All",
+    "button": "Search",
+    "buttonTitle": "Search (/)",
+    "clear": "Clear filters",
+    "continent": "Continent",
+    "continents": {
+      "af": "Africa",
+      "as": "Asia",
+      "eu": "Europe",
+      "na": "North America",
+      "oc": "Oceania",
+      "sa": "South America"
+    },
+    "count": {
+      "one": "{count} result",
+      "other": "{count} results"
+    },
+    "countryMeta": "Today’s country · {continents}",
+    "from": "From year",
+    "nationMeta": "Nation of today · {continents}",
+    "none": "Nothing matches. Try another name, continent or period.",
+    "placeholder": "Search civilizations, countries and nations",
+    "showAll": "Show all {count}",
+    "showMore": "Show more",
+    "title": "Search",
+    "to": "To year",
+    "type": "Type",
+    "years": "Stood between",
+    "yearsHint": "For countries and nations, the years pick those with a civilization standing then."
+  },
   "travel": {
     "approximate": "{place} (approximate)",
     "circa": "c. {when}",
