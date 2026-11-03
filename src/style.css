@@ -2027,6 +2027,11 @@ a {
   color: var(--ink-soft);
 }
 
+/* The lists' sources and credit stay off the search; the report link stays. */
+.landing[data-section="search"] :is(.landing-foot, .landing-credit) {
+  display: none;
+}
+
 .search-results {
   max-width: var(--landing-width);
   margin: 0 auto;

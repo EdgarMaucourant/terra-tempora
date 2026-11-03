@@ -1739,6 +1739,7 @@ function openExplore(section: ExploreSection) {
     part.hidden = part.dataset.section !== section;
   }
   $("landing-title").textContent = t(EXPLORE_TITLES[section]);
+  landingEl.dataset.section = section;
   landingEl.hidden = false;
   landing?.show();
   landingEl.querySelector(".landing-scroll")!.scrollTop = 0;
