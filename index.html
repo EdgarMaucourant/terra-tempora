@@ -252,6 +252,17 @@
         </div>
         <label class="welcome-off"><input type="checkbox" /> <span data-i18n="welcome.off">Don’t show this again</span></label>
       </section>
+      <section id="whats-new" class="welcome whats-new" hidden role="dialog" aria-labelledby="whats-new-title">
+        <button class="icon-button welcome-close" type="button" data-close aria-label="Close" data-i18n-label="common.close">×</button>
+        <h2 id="whats-new-title" data-i18n="versions.news.title">What’s new</h2>
+        <p data-i18n="versions.news.intro">Since your last visit:</p>
+        <div class="whats-new-list"></div>
+        <p class="whats-new-all"><a href="versions.html" target="_blank" rel="noopener" data-i18n="versions.news.all">See every version</a></p>
+        <div class="welcome-actions">
+          <button class="primary" type="button" data-close data-i18n="versions.news.ok">Got it</button>
+        </div>
+        <label class="welcome-off"><input type="checkbox" /> <span data-i18n="welcome.off">Don’t show this again</span></label>
+      </section>
       <button id="panel-open" class="panel-open" type="button" hidden title="Show the text panel" data-i18n-title="panel.openTitle">
         <span class="panel-open-arrow" aria-hidden="true">‹</span> <span class="panel-open-text" data-i18n="panel.open">Details</span>
       </button>
@@ -453,6 +464,7 @@
           <h3 data-i18n="about.privacyTitle">Your privacy</h3>
           <p data-i18n-html="about.privacy"></p>
           <p class="ai-credit" data-i18n="about.credit"></p>
+          <p class="about-version"><span id="about-version"></span> · <a href="versions.html" target="_blank" rel="noopener" data-i18n="about.versions">What’s new</a></p>
         </div>
         <div class="picker-foot">
           <button id="about-report" class="report-link" type="button" data-i18n="feedback.linkApp">Report a problem or suggest an improvement</button>

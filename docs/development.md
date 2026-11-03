@@ -104,6 +104,38 @@ the browser's languages, then English.
   above, and run the "Fetch event translations" workflow.
 
 
+## Versions
+
+The site has a version number, x.y.z, written in one place: `version` in
+`package.json`. The build puts it in the page (`src/version.ts`), where it
+shows at the end of the About pop-up and goes with every report (with the
+commit, e.g. `1.2.0 (abc1234)`) and the usage counts.
+
+- **x** moves for a big milestone, such as a redesign (2.0.0).
+- **y** moves for new features or new content (1.3.0).
+- **z** moves for bug fixes only (1.3.1).
+
+Releasing a version means, in the pull request that ships it (or in a small
+one after several have been merged):
+
+1. Set the new number in `package.json` and run `npm install` so
+   `package-lock.json` follows.
+2. Add an entry at the top of `src/changelog.json`: the version, the date
+   (YYYY-MM-DD) and the changes, each written in English, French and Spanish
+   (`en`, `fr`, `es`), with the numbers of the pull requests or issues it
+   comes from in `links`. Write for visitors, not developers.
+3. Run `npm run check`: it fails when the newest changelog entry isn't the
+   version in `package.json`, when versions are out of order, or when a change
+   has no English text.
+
+Every entry shows on the versions page (`versions.html`, linked from the About
+pop-up). Returning visitors also get a "What's new" card (`src/whatsNew.ts`)
+listing the releases since their last visit, at most the last two, skipping
+bug-fix releases (z only); first visits get the "New here?" prompt instead.
+The browser remembers the last version shown in `terra-tempora:version-seen`,
+and `terra-tempora:whats-new-off` when the visitor asked not to see the card
+again.
+
 ## Layout
 
 | Path | What it is |

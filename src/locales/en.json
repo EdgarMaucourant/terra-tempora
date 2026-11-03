@@ -25,7 +25,9 @@
     "care": "In the past, borders were rarely sharp lines: many realms had shifting frontiers, vassals, or lands they claimed but barely controlled. The shapes shown here are approximations, and some dates and names are still debated by historians. If you spot a mistake or something missing, please tell us: every report is read.",
     "privacyTitle": "Your privacy",
     "privacy": "Terra Tempora has no account, no advertising and no cookies. It counts visits anonymously, with no IP address and nothing that identifies you, to learn which parts of the site are used. The <a href=\"privacy.html\" target=\"_blank\" rel=\"noopener\">privacy and legal notice</a> says what is collected and why, and how to reach us at <a href=\"mailto:privacy@terra-tempora.com\">privacy@terra-tempora.com</a>.",
-    "credit": "This project was built with AI, carefully prompted with ❤️ using Claude Opus 5.5."
+    "credit": "This project was built with AI, carefully prompted with ❤️ using Claude Opus 5.5.",
+    "version": "Version {version}",
+    "versions": "What’s new"
   },
   "status": {
     "failed": "The borders could not load. Reload the page to try again.",
@@ -481,5 +483,23 @@
     "emailLabel": "Your email, to hear when it's fixed (optional)",
     "emailPrivacy": "Or follow the issue on GitHub, which needs a GitHub account. Your email is encrypted in your browser, and only the authors of Terra Tempora can read it. We use it only to tell you about the fix, or to contact you about it if you offer to help, and delete it once the fix is done (after 2 years at most). To see it, delete it or withdraw your consent, write to <a href=\"mailto:privacy@terra-tempora.com\">privacy@terra-tempora.com</a>. More in the <a href=\"privacy.html\" target=\"_blank\" rel=\"noopener\">privacy notice</a>.",
     "helpToggle": "I want to help fix the issue I reported"
+  },
+  "versions": {
+    "release": "Version {version}",
+    "news": {
+      "title": "What’s new",
+      "intro": "Since your last visit:",
+      "all": "See every version",
+      "ok": "Got it"
+    },
+    "page": {
+      "tab": "Versions · Terra Tempora",
+      "title": "Versions",
+      "back": "Back to the globe",
+      "intro": "Each version of Terra Tempora has a number like 1.2.3. The first number moves for big milestones, the second for new features and content, and the last for bug fixes.",
+      "current": "The version you are using",
+      "changes": "Pull requests and issues on GitHub",
+      "failed": "The list of versions could not load. Please try again later."
+    }
   }
 }
