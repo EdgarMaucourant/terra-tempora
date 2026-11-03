@@ -203,5 +203,85 @@
   "title": "La vente de la Louisiane",
   "place": "La Nouvelle-Orléans, où le territoire est remis",
   "summary": "Les États-Unis achètent la Louisiane à la France de Napoléon pour 15 millions de dollars : environ 2,1 millions de km² entre le Mississippi et les montagnes Rocheuses, ce qui double à peu près la taille du pays. Le traité est signé à Paris le 30 avril et le territoire est remis à La Nouvelle-Orléans en décembre. La plus grande partie reste le pays de nations amérindiennes, dont les États-Unis prennent les terres dans les décennies suivantes."
+ },
+ "russian-american-company-1799": {
+  "title": "La Compagnie russe d’Amérique",
+  "place": "Sitka, fondée cette année-là comme fort Saint-Michel",
+  "summary": "Le tsar Paul Iᵉʳ accorde à la Compagnie russe d’Amérique le monopole de l’Amérique russe, des Aléoutiennes et des côtes de l’Alaska, où les trappeurs russes chassent la loutre de mer pour sa fourrure. Son fort de Sitka, détruit par les Tlingits en 1802, est rebâti sous le nom de Novo-Arkhangelsk, capitale de la colonie à partir de 1808. La Russie garde ces terres jusqu’à leur vente aux États-Unis en 1867."
+ },
+ "guadalupe-hidalgo-1848": {
+  "title": "Le traité de Guadalupe Hidalgo",
+  "place": "Guadalupe Hidalgo, juste au nord de Mexico",
+  "summary": "Le traité met fin à la guerre américano-mexicaine. Le Mexique cède environ 1,36 million de km², ses terres du nord, la Haute-Californie et le Nouveau-Mexique (l’actuelle Californie, le Nevada et l’Utah, l’essentiel de l’Arizona et une partie du Nouveau-Mexique, du Colorado et du Wyoming), et reconnaît le Rio Grande comme frontière du Texas. Les États-Unis paient 15 millions de dollars. Avec le Texas, le Mexique a perdu environ la moitié de son territoire depuis 1836."
+ },
+ "canadian-confederation-1867": {
+  "title": "La Confédération canadienne",
+  "place": "Ottawa, capitale du nouveau dominion",
+  "summary": "Le 1ᵉʳ juillet, l’Acte de l’Amérique du Nord britannique unit la province du Canada, partagée entre l’Ontario et le Québec, à la Nouvelle-Écosse et au Nouveau-Brunswick dans une fédération, le Dominion du Canada. Il gère ses propres affaires, mais le Royaume-Uni garde sa politique étrangère. John A. Macdonald en est le premier Premier ministre, et les Canadiens fêtent ce jour comme la fête du Canada."
+ },
+ "rupert-s-land-1870": {
+  "title": "Le Canada acquiert la Terre de Rupert",
+  "place": "Fort Garry, sur la rivière Rouge (l’actuelle Winnipeg)",
+  "summary": "Le 15 juillet, la Terre de Rupert de la Compagnie de la baie d’Hudson et le Territoire du Nord-Ouest passent au Canada, qui verse 300 000 livres à la compagnie. Après la résistance de la rivière Rouge menée par Louis Riel et les Métis, la Loi sur le Manitoba fait du Manitoba la cinquième province. Le reste forme les Territoires du Nord-Ouest, et le Canada s’étend désormais de l’Atlantique aux Rocheuses."
+ },
+ "british-columbia-joins-1871": {
+  "title": "La Colombie-Britannique rejoint le Canada",
+  "place": "Victoria, capitale de la colonie",
+  "summary": "Le 20 juillet, la colonie de la Colombie-Britannique devient la sixième province du Canada. En échange, le Canada promet un chemin de fer jusqu’au Pacifique en moins de dix ans : le Canadien Pacifique atteint la côte en 1885. Le Canada s’étend désormais d’un océan à l’autre."
+ },
+ "prince-edward-island-joins-1873": {
+  "title": "L’Île-du-Prince-Édouard rejoint le Canada",
+  "place": "Charlottetown, où s’ouvrent en 1864 les discussions qui mènent à la Confédération",
+  "summary": "Le 1ᵉʳ juillet, l’île, restée à l’écart en 1867, devient la septième province du Canada. Endettée par la construction de son chemin de fer, elle entre dans la Confédération quand le Canada accepte de reprendre sa dette et d’aider à racheter les terres des propriétaires absents qui possédaient l’essentiel de l’île."
+ },
+ "arctic-islands-1880": {
+  "title": "Le Royaume-Uni cède au Canada les îles arctiques",
+  "place": "L’archipel Arctique",
+  "summary": "Le 1ᵉʳ septembre, un décret britannique transfère au Canada toutes les terres et îles britanniques d’Amérique du Nord qui n’en font pas encore partie, surtout l’archipel Arctique. La plupart de ces îles avaient été cartographiées par des explorateurs britanniques en quête du passage du Nord-Ouest, et les Inuits vivaient sur leurs côtes."
+ },
+ "yukon-territory-1898": {
+  "title": "Le Yukon devient un territoire",
+  "place": "Dawson City, sa première capitale",
+  "summary": "Le 13 juin, au plus fort de la ruée vers l’or du Klondike, le Canada fait du Yukon un territoire distinct, détaché des Territoires du Nord-Ouest. Des dizaines de milliers de prospecteurs y sont arrivés, et Dawson City est devenue l’une des plus grandes villes de l’Ouest canadien."
+ },
+ "alberta-saskatchewan-1905": {
+  "title": "L’Alberta et la Saskatchewan deviennent des provinces",
+  "place": "Edmonton et Regina, les nouvelles capitales",
+  "summary": "Le 1ᵉʳ septembre, le Canada découpe deux provinces dans les Territoires du Nord-Ouest, où les colons affluent dans les prairies le long des nouveaux chemins de fer. L’Alberta et la Saskatchewan deviennent les huitième et neuvième provinces, avec Edmonton et Regina pour capitales."
+ },
+ "newfoundland-joins-1949": {
+  "title": "Terre-Neuve rejoint le Canada",
+  "place": "Saint-Jean, capitale de l’île",
+  "summary": "Le 31 mars, Terre-Neuve-et-Labrador devient la dixième province du Canada. Gouvernée par une commission britannique depuis que ses dettes l’ont forcée à renoncer à l’autonomie en 1934, Terre-Neuve a choisi de rejoindre le Canada par 52 % des voix lors du second des deux référendums de 1948."
+ },
+ "nunavut-1999": {
+  "title": "Création du Nunavut",
+  "place": "Iqaluit, sa capitale",
+  "summary": "Le 1ᵉʳ avril, la moitié est des Territoires du Nord-Ouest devient le Nunavut, « notre terre » en inuktitut, un territoire peuplé surtout d’Inuits. Il naît de l’Accord sur les revendications territoriales du Nunavut de 1993, le plus grand règlement de revendication territoriale de l’histoire du Canada."
+ },
+ "australian-federation-1901": {
+  "title": "La fédération de l’Australie",
+  "place": "Centennial Park, à Sydney, où le Commonwealth est proclamé",
+  "summary": "Le 1ᵉʳ janvier, les six colonies britanniques d’Australie s’unissent dans le Commonwealth d’Australie, une fédération autonome sous la Couronne britannique. Edmund Barton en est le premier Premier ministre. Le Parlement siège à Melbourne jusqu’à l’ouverture en 1927 de Canberra, la nouvelle capitale bâtie pour lui."
+ },
+ "new-zealand-dominion-1907": {
+  "title": "La Nouvelle-Zélande devient un dominion",
+  "place": "Wellington, la capitale",
+  "summary": "Le 26 septembre, la colonie de Nouvelle-Zélande, autonome depuis les années 1850, prend le titre de dominion, à égalité avec le Canada et l’Australie. Le Royaume-Uni répond encore de sa politique étrangère, et la Nouvelle-Zélande n’adopte la pleine indépendance juridique qu’en 1947."
+ },
+ "newfoundland-dominion-1907": {
+  "title": "Terre-Neuve devient un dominion",
+  "place": "Saint-Jean, la capitale",
+  "summary": "Le 26 septembre, Terre-Neuve et le Labrador, autonomes depuis 1855, deviennent un dominion de l’Empire britannique, comme la Nouvelle-Zélande le même jour. Écrasée de dettes pendant la Grande Dépression, Terre-Neuve confie son gouvernement à une commission britannique en 1934, jusqu’à son entrée dans le Canada en 1949."
+ },
+ "union-of-south-africa-1910": {
+  "title": "L’Union d’Afrique du Sud",
+  "place": "Le Cap, où siège le nouveau Parlement",
+  "summary": "Le 31 mai, huit ans après la guerre des Boers, le Cap, le Natal, le Transvaal et la colonie de la rivière Orange s’unissent dans l’Union d’Afrique du Sud, un dominion autonome dont Louis Botha est le Premier ministre. Pretoria, Le Cap et Bloemfontein se partagent le rôle de capitale. Les Sud-Africains noirs sont presque entièrement tenus à l’écart de la vie politique. À partir de 1920, l’Union gouverne aussi le Sud-Ouest africain, l’actuelle Namibie, sous mandat de la Société des Nations."
+ },
+ "greenland-sovereignty-1921": {
+  "title": "Le Danemark revendique tout le Groenland",
+  "place": "Godthåb (l’actuelle Nuuk), capitale de la colonie",
+  "summary": "Le Danemark, dont les colonies bordaient les côtes ouest et sud du Groenland, proclame sa souveraineté sur toute l’île. La Norvège la conteste et occupe une partie de la côte est en 1931, mais en 1933 la Cour permanente de justice internationale donne raison au Danemark."
  }
 }
