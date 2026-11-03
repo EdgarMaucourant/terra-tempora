@@ -8,6 +8,7 @@
 import { CONTACT_KEY } from "./contactKey";
 import { externalLink } from "./dom";
 import { lang, t } from "./i18n";
+import { COMMIT, VERSION } from "./version";
 import { formatYear } from "./years";
 
 interface FeedbackContext {
@@ -20,8 +21,6 @@ interface FeedbackContext {
   year?: number;
   lonLat?: [number, number] | null;
 }
-
-declare const __APP_VERSION__: string;
 
 // A Cloudflare Turnstile site key, set at build time, turns on the bot check.
 export const TURNSTILE_KEY = import.meta.env.VITE_TURNSTILE_SITE_KEY as string | undefined;
@@ -195,7 +194,7 @@ export class Feedback {
         url: viewUrl(c),
         lang,
         screen: `${window.innerWidth}×${window.innerHeight}`,
-        version: __APP_VERSION__,
+        version: `${VERSION} (${COMMIT})`,
       },
     };
     try {

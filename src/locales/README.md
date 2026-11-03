@@ -52,6 +52,7 @@ move a key unless you change the code that uses it too.
 | `era`, `year` | Era names and how years are written |
 | `tooltip`, `picker` | Hover labels and the civilization picker |
 | `sources`, `github`, `support`, `feedback` | The Sources panel, the GitHub link, the Support pop-up (Ko-fi, GitHub Sponsors and the kind-word form) and the feedback form |
+| `versions` | The "What's new" card shown to returning visitors (`versions.news`) and the versions page, versions.html (`versions.page`). The changes themselves are in `src/changelog.json` |
 
 ## Checking your edits
 

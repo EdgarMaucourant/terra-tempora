@@ -1,5 +1,5 @@
 import { execFileSync } from "node:child_process";
-import { cpSync } from "node:fs";
+import { cpSync, readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { defineConfig, type Plugin } from "vite";
 
@@ -30,9 +30,13 @@ function copyCesiumAssets(): Plugin {
   };
 }
 
+// The site's version, x.y.z: the one place it is written is package.json
+// (docs/development.md says how to release one).
+const version: string = JSON.parse(readFileSync("package.json", "utf8")).version;
+
 // The commit being built, sent with visitors' reports: Cloudflare's build gives
 // it; elsewhere git does.
-function version(): string {
+function commit(): string {
   if (process.env.WORKERS_CI_COMMIT_SHA) return process.env.WORKERS_CI_COMMIT_SHA.slice(0, 7);
   try {
     return execFileSync("git", ["rev-parse", "--short", "HEAD"]).toString().trim();
@@ -45,12 +49,13 @@ export default defineConfig(({ command }) => ({
   base: "./",
   define: {
     CESIUM_BASE_URL: JSON.stringify(command === "serve" ? `/${cesiumSource}` : "./cesium"),
-    __APP_VERSION__: JSON.stringify(version()),
+    __APP_VERSION__: JSON.stringify(version),
+    __APP_COMMIT__: JSON.stringify(commit()),
   },
   build: {
     chunkSizeWarningLimit: 6000,
-    // The globe, and the maintainers' /stats page.
-    rollupOptions: { input: { main: "index.html", stats: "stats.html" } },
+    // The globe, the list of versions, and the maintainers' /stats page.
+    rollupOptions: { input: { main: "index.html", versions: "versions.html", stats: "stats.html" } },
   },
   plugins: [copyCesiumAssets()],
 }));

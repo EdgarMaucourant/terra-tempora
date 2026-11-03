@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Versions · Terra Tempora</title>
+    <link rel="icon" href="data:," />
+  </head>
+  <body>
+    <!--
+      Every version of the site and what it brought, from src/changelog.json
+      (src/versions.ts draws it), in the reader's language. Linked from the
+      About pop-up and the "What's new" card.
+    -->
+    <main id="versions">
+      <nav class="versions-nav"></nav>
+      <h1>Versions</h1>
+      <p class="muted" id="versions-intro"></p>
+      <div id="versions-list" aria-live="polite"></div>
+    </main>
+    <script type="module" src="/src/versions.ts"></script>
+  </body>
+</html>

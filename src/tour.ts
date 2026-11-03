@@ -270,9 +270,10 @@ export class Tour {
 /**
  * Shortly after the site opens, asks newcomers whether they want the tour,
  * unless they asked not to see the prompt again. `busy` says when the page is
- * showing something else that the prompt would cover.
+ * showing something else that the prompt would cover; `news` resolves to true
+ * when the "What's new" card took its place.
  */
-export function setupWelcome(welcome: HTMLElement, tour: Tour, busy: () => boolean) {
+export function setupWelcome(welcome: HTMLElement, tour: Tour, busy: () => boolean, news: Promise<boolean>) {
   const off = welcome.querySelector<HTMLInputElement>("input[type=checkbox]")!;
   off.addEventListener("change", () => store(WELCOME_OFF_KEY, off.checked ? "1" : null));
   // Turned down: the prompt shrinks into the "Open tour" button.
@@ -294,8 +295,8 @@ export function setupWelcome(welcome: HTMLElement, tour: Tour, busy: () => boole
     button.hidden = false;
     return;
   }
-  setTimeout(() => {
-    if (!busy() && !tour.running) welcome.hidden = false;
+  setTimeout(async () => {
+    if (!(await news) && !busy() && !tour.running) welcome.hidden = false;
     else button.hidden = false;
   }, WELCOME_DELAY);
 }

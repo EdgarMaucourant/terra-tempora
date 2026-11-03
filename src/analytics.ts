@@ -9,7 +9,7 @@
 // Not Track, Global Privacy Control) send nothing, and neither do automated
 // browsers or local development.
 
-declare const __APP_VERSION__: string;
+import { VERSION } from "./version";
 
 export type EventName =
   | "visit"
@@ -117,7 +117,7 @@ function flush(final: boolean) {
     lang: document.documentElement.lang || "en",
     device: device(),
     source,
-    version: __APP_VERSION__,
+    version: VERSION,
     events: queue,
   });
   sent += queue.length;
