@@ -477,9 +477,9 @@
     "typeLegend": "What is it?",
     "typeMissing": "Something is missing",
     "waitCheck": "Please wait for the check below to finish.",
-    "emailInvalid": "Please enter a valid email, or untick the offer to help.",
-    "emailLabel": "Your email, so we can contact you",
-    "emailPrivacy": "Optional. Your email is encrypted in your browser, and only the authors of Terra Tempora can read it. We use it only to contact you about this report, with your consent, and delete it once the fix is done (after 2 years at most). To see it, delete it or withdraw your consent, write to <a href=\"mailto:privacy@terra-tempora.com\">privacy@terra-tempora.com</a>. More in the <a href=\"privacy.html\" target=\"_blank\" rel=\"noopener\">privacy notice</a>.",
+    "emailInvalid": "Please enter a valid email, or leave the field empty.",
+    "emailLabel": "Your email, to hear when it's fixed (optional)",
+    "emailPrivacy": "Or follow the issue on GitHub, which needs a GitHub account. Your email is encrypted in your browser, and only the authors of Terra Tempora can read it. We use it only to tell you about the fix, or to contact you about it if you offer to help, and delete it once the fix is done (after 2 years at most). To see it, delete it or withdraw your consent, write to <a href=\"mailto:privacy@terra-tempora.com\">privacy@terra-tempora.com</a>. More in the <a href=\"privacy.html\" target=\"_blank\" rel=\"noopener\">privacy notice</a>.",
     "helpToggle": "I want to help fix the issue I reported"
   }
 }

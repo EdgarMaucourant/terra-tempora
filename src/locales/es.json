@@ -477,9 +477,9 @@
     "typeLegend": "¿De qué se trata?",
     "typeMissing": "Falta algo",
     "waitCheck": "Espera a que termine la comprobación de abajo.",
-    "emailInvalid": "Introduce un correo válido o desmarca el ofrecimiento de ayuda.",
-    "emailLabel": "Tu correo, para que podamos contactarte",
-    "emailPrivacy": "Opcional. Tu correo se cifra en tu navegador y solo los autores de Terra Tempora pueden leerlo. Solo lo usamos para contactarte sobre este aviso, con tu consentimiento, y lo borramos una vez hecha la corrección (como máximo a los 2 años). Para consultarlo, borrarlo o retirar tu consentimiento, escribe a <a href=\"mailto:privacy@terra-tempora.com\">privacy@terra-tempora.com</a>. Más información en el <a href=\"privacy-es.html\" target=\"_blank\" rel=\"noopener\">aviso de privacidad</a>.",
+    "emailInvalid": "Introduce un correo válido o deja el campo vacío.",
+    "emailLabel": "Tu correo, para saber cuándo se corrige (opcional)",
+    "emailPrivacy": "O sigue la incidencia en GitHub, para lo que necesitas una cuenta de GitHub. Tu correo se cifra en tu navegador y solo los autores de Terra Tempora pueden leerlo. Solo lo usamos para avisarte de la corrección, o para contactarte sobre ella si te ofreces a ayudar, y lo borramos una vez hecha la corrección (como máximo a los 2 años). Para consultarlo, borrarlo o retirar tu consentimiento, escribe a <a href=\"mailto:privacy@terra-tempora.com\">privacy@terra-tempora.com</a>. Más información en el <a href=\"privacy-es.html\" target=\"_blank\" rel=\"noopener\">aviso de privacidad</a>.",
     "helpToggle": "Quiero ayudar a corregir el problema que he señalado"
   }
 }

@@ -5,9 +5,10 @@
 //
 // POST /api/feedback files a visitor's report as a GitHub issue, with what
 // they were looking at, so reviewers can triage it where they already work.
-// A visitor who offers to help sends their email already encrypted by the
-// page (src/feedback.ts); it is filed as that sealed text, which only the
-// maintainers' private key opens (`npm run read-contact`).
+// A visitor who wants to hear about the fix sends their email already
+// encrypted by the page (src/feedback.ts); it is filed as that sealed text,
+// which only the maintainers' private key opens (`npm run read-contact`).
+// Whether they offered to help is filed too.
 //
 // POST /api/message emails a visitor's kind word (from the Support pop-up,
 // src/support.ts) privately to the author, through Cloudflare Email Routing.
@@ -209,8 +210,9 @@ async function feedback(request, env) {
     ["Language", code(c.lang, 10)],
     ["Screen", code(c.screen, 20)],
     ["Version", code(c.version, 40)],
+    ["Issuer offered to help", body.help === true ? "Yes" : "No"],
     // Sealed text only: `npm run read-contact` turns it back into their email.
-    ["Issuer offered to help", contact ? `\`${contact}\`` : ""],
+    ["Issuer email", contact ? `\`${contact}\`` : ""],
   ].filter(([, v]) => v);
   const issue = {
     title: `${TYPES[type].title}: ${subject} · ${line(message, 60)}`.replace(/@/g, "@\u200b"),

@@ -1,4 +1,4 @@
-// Reads the email of a visitor who offered to help with their report.
+// Reads the email a visitor left with their report.
 // `npm run read-contact`, then paste the sealed text from the issue
 // (it starts with "tt1:"; pasting the whole issue works too) and press
 // Enter on an empty line. Or pass it as an argument, or pipe it in.
