@@ -3530,7 +3530,9 @@ a {
   cursor: pointer;
 }
 
+/* The search button by the menu is for phones; wide screens have it in the toolbar. */
 .search-open {
+  display: none;
   flex: none;
   pointer-events: auto;
 }
@@ -3669,7 +3671,12 @@ a {
     outline: none;
   }
 
+  .search-open {
+    display: grid;
+  }
+
   #sources-button,
+  .search-button,
   .github-button,
   .support-button,
   .tour-button,
@@ -3689,7 +3696,8 @@ a {
 .home #view-focus,
 .home .switch[for="context-toggle"],
 .traveling .explore-menu,
-.traveling .search-open {
+.traveling .search-open,
+.traveling .search-button {
   display: none;
 }
 

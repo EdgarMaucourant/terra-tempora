@@ -1814,10 +1814,13 @@ exploreList.addEventListener("keydown", (e) => {
   setMenu(false);
   exploreToggle.focus();
 });
-$("search-open").addEventListener("click", () => {
-  setMenu(false);
-  openExplore("search");
-});
+// The search: in the toolbar on wide screens, by the menu on phones.
+for (const id of ["search-button", "search-open"]) {
+  $(id).addEventListener("click", () => {
+    setMenu(false);
+    openExplore("search");
+  });
+}
 for (const button of document.querySelectorAll<HTMLButtonElement>("[data-explore]")) {
   button.addEventListener("click", () => {
     setMenu(false);
