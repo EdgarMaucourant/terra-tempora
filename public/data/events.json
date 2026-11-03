@@ -775,6 +775,306 @@
      "url": "https://www.britannica.com/event/Louisiana-Purchase"
     }
    ]
+  },
+  {
+   "id": "russian-american-company-1799",
+   "kind": "trade",
+   "year": 1799,
+   "title": "The Russian-American Company",
+   "place": "Sitka, founded that year as the fort of Saint Michael",
+   "lonLat": [
+    -135.33,
+    57.05
+   ],
+   "civs": [
+    "russian-empire"
+   ],
+   "alongside": true,
+   "summary": "Tsar Paul I gives the Russian-American Company a monopoly over Russian America, the Aleutians and the Alaskan coast, where Russian traders hunt sea otters for their fur. Its fort at Sitka is destroyed by the Tlingit in 1802 and rebuilt as New Archangel, the colony's capital from 1808. Russia rules the land until it sells it to the United States in 1867.",
+   "wikipedia": "Russian-American_Company",
+   "search": "Russian-American Company"
+  },
+  {
+   "id": "guadalupe-hidalgo-1848",
+   "kind": "treaty",
+   "year": 1848,
+   "title": "The Treaty of Guadalupe Hidalgo",
+   "place": "Guadalupe Hidalgo, just north of Mexico City",
+   "lonLat": [
+    -99.12,
+    19.48
+   ],
+   "civs": [
+    "federated-republic-of-mexico",
+    "united-states-of-america"
+   ],
+   "alongside": true,
+   "summary": "The treaty ends the Mexican–American War. Mexico gives up about 1.36 million km², its northern lands of Alta California and Nuevo México (today's California, Nevada and Utah, most of Arizona and parts of New Mexico, Colorado and Wyoming), and accepts the Rio Grande as the border of Texas. The United States pays 15 million dollars. With Texas, Mexico has lost about half of its territory since 1836.",
+   "wikipedia": "Treaty_of_Guadalupe_Hidalgo",
+   "search": "Treaty of Guadalupe Hidalgo"
+  },
+  {
+   "id": "canadian-confederation-1867",
+   "kind": "treaty",
+   "year": 1867,
+   "title": "Canadian Confederation",
+   "place": "Ottawa, the capital of the new Dominion",
+   "lonLat": [
+    -75.7,
+    45.42
+   ],
+   "civs": [
+    "canada",
+    "british-colonial-empire"
+   ],
+   "alongside": true,
+   "summary": "On 1 July the British North America Act unites the Province of Canada, split into Ontario and Quebec, with Nova Scotia and New Brunswick in a federation, the Dominion of Canada. It runs its own affairs while Britain keeps its foreign policy. John A. Macdonald is the first prime minister, and Canadians celebrate the day as Canada Day.",
+   "wikipedia": "Canadian_Confederation",
+   "search": "Canadian Confederation"
+  },
+  {
+   "id": "rupert-s-land-1870",
+   "kind": "treaty",
+   "year": 1870,
+   "title": "Canada takes over Rupert's Land",
+   "place": "Fort Garry, on the Red River (today's Winnipeg)",
+   "lonLat": [
+    -97.13,
+    49.89
+   ],
+   "civs": [
+    "canada"
+   ],
+   "alongside": true,
+   "summary": "On 15 July the Hudson's Bay Company's Rupert's Land and the North-Western Territory pass to Canada, which pays the company 300,000 pounds. After the Red River Resistance led by Louis Riel and the Métis, the Manitoba Act makes Manitoba the fifth province. The rest becomes the North-West Territories, and Canada now reaches from the Atlantic to the Rocky Mountains.",
+   "wikipedia": "Rupert's_Land",
+   "search": "Rupert's Land transfer"
+  },
+  {
+   "id": "british-columbia-joins-1871",
+   "kind": "treaty",
+   "year": 1871,
+   "title": "British Columbia joins Canada",
+   "place": "Victoria, the colony's capital",
+   "lonLat": [
+    -123.37,
+    48.43
+   ],
+   "civs": [
+    "canada",
+    "british-colonial-empire"
+   ],
+   "alongside": true,
+   "summary": "On 20 July the colony of British Columbia becomes Canada's sixth province. In return Canada promises a railway to the Pacific within ten years: the Canadian Pacific Railway reaches the coast in 1885. Canada now stretches from ocean to ocean.",
+   "wikipedia": "History_of_British_Columbia",
+   "search": "British Columbia joins Confederation 1871"
+  },
+  {
+   "id": "prince-edward-island-joins-1873",
+   "kind": "treaty",
+   "year": 1873,
+   "title": "Prince Edward Island joins Canada",
+   "place": "Charlottetown, where the talks that led to Confederation began in 1864",
+   "lonLat": [
+    -63.13,
+    46.24
+   ],
+   "civs": [
+    "canada",
+    "british-colonial-empire"
+   ],
+   "alongside": true,
+   "summary": "On 1 July the island, which had stayed out in 1867, becomes Canada's seventh province. Deep in debt from building its railway, it joins once Canada agrees to take over the debt and to help buy out the absentee landlords who owned most of its land.",
+   "wikipedia": "Prince_Edward_Island",
+   "search": "Prince Edward Island joins Confederation 1873"
+  },
+  {
+   "id": "arctic-islands-1880",
+   "kind": "treaty",
+   "year": 1880,
+   "title": "Britain hands Canada the Arctic islands",
+   "place": "The Arctic Archipelago",
+   "lonLat": [
+    -95.0,
+    74.0
+   ],
+   "approx": true,
+   "civs": [
+    "canada",
+    "british-colonial-empire"
+   ],
+   "alongside": true,
+   "summary": "On 1 September a British order in council transfers to Canada all of Britain's lands and islands in North America not yet part of it, chiefly the Arctic Archipelago. Most of the islands had been charted by British explorers searching for the Northwest Passage, and the Inuit lived along their coasts.",
+   "wikipedia": "Arctic_Archipelago",
+   "search": "Adjacent Territories Order 1880"
+  },
+  {
+   "id": "yukon-territory-1898",
+   "kind": "treaty",
+   "year": 1898,
+   "title": "Yukon becomes a territory",
+   "place": "Dawson City, its first capital",
+   "lonLat": [
+    -139.43,
+    64.06
+   ],
+   "civs": [
+    "canada"
+   ],
+   "alongside": true,
+   "summary": "On 13 June, at the height of the Klondike Gold Rush, Canada makes the Yukon a territory of its own, split from the North-West Territories. Tens of thousands of prospectors have poured in, and Dawson City has grown into one of the largest towns in western Canada.",
+   "wikipedia": "Yukon",
+   "search": "Yukon Territory Act 1898"
+  },
+  {
+   "id": "alberta-saskatchewan-1905",
+   "kind": "treaty",
+   "year": 1905,
+   "title": "Alberta and Saskatchewan become provinces",
+   "place": "Edmonton and Regina, the new capitals",
+   "lonLat": [
+    -113.49,
+    53.55
+   ],
+   "civs": [
+    "canada"
+   ],
+   "alongside": true,
+   "summary": "On 1 September Canada carves two provinces out of the North-West Territories, where settlers have flooded onto the prairies along the new railways. Alberta and Saskatchewan become the eighth and ninth provinces, with Edmonton and Regina as their capitals.",
+   "wikipedia": "Alberta_Act",
+   "search": "Alberta and Saskatchewan become provinces 1905"
+  },
+  {
+   "id": "newfoundland-joins-1949",
+   "kind": "treaty",
+   "year": 1949,
+   "title": "Newfoundland joins Canada",
+   "place": "St. John's, the island's capital",
+   "lonLat": [
+    -52.71,
+    47.56
+   ],
+   "civs": [
+    "canada",
+    "dominion-of-newfoundland"
+   ],
+   "alongside": true,
+   "summary": "On 31 March Newfoundland and Labrador becomes Canada's tenth province. Ruled by a British commission since its debts forced it to give up self-government in 1934, Newfoundland chose to join Canada by 52 percent of the vote in the second of two referendums in 1948.",
+   "wikipedia": "Newfoundland_and_Labrador",
+   "search": "Newfoundland joins Confederation 1949"
+  },
+  {
+   "id": "nunavut-1999",
+   "kind": "treaty",
+   "year": 1999,
+   "title": "Nunavut is created",
+   "place": "Iqaluit, its capital",
+   "lonLat": [
+    -68.52,
+    63.75
+   ],
+   "civs": [
+    "canada"
+   ],
+   "alongside": true,
+   "summary": "On 1 April the eastern half of the Northwest Territories becomes Nunavut, \"our land\" in Inuktitut, a territory where most people are Inuit. It comes out of the Nunavut Land Claims Agreement of 1993, the largest land claim settled in Canada's history.",
+   "wikipedia": "Nunavut",
+   "search": "Nunavut 1999"
+  },
+  {
+   "id": "australian-federation-1901",
+   "kind": "treaty",
+   "year": 1901,
+   "title": "The Federation of Australia",
+   "place": "Centennial Park, Sydney, where the Commonwealth was proclaimed",
+   "lonLat": [
+    151.23,
+    -33.9
+   ],
+   "civs": [
+    "commonwealth-of-australia",
+    "british-colonial-empire"
+   ],
+   "alongside": true,
+   "summary": "On 1 January the six British colonies of Australia unite as the Commonwealth of Australia, a self-governing federation under the British Crown. Edmund Barton is the first prime minister. Parliament sits in Melbourne until Canberra, the new capital built for it, opens in 1927.",
+   "wikipedia": "Federation_of_Australia",
+   "search": "Federation of Australia"
+  },
+  {
+   "id": "new-zealand-dominion-1907",
+   "kind": "treaty",
+   "year": 1907,
+   "title": "New Zealand becomes a dominion",
+   "place": "Wellington, the capital",
+   "lonLat": [
+    174.78,
+    -41.29
+   ],
+   "civs": [
+    "new-zealand",
+    "british-colonial-empire"
+   ],
+   "alongside": true,
+   "summary": "On 26 September the colony of New Zealand, self-governing since the 1850s, takes the title of Dominion, on the same footing as Canada and Australia. Britain still answers for its foreign affairs, and New Zealand only takes up full independence in law in 1947.",
+   "wikipedia": "Dominion_of_New_Zealand",
+   "search": "Dominion of New Zealand 1907"
+  },
+  {
+   "id": "newfoundland-dominion-1907",
+   "kind": "treaty",
+   "year": 1907,
+   "title": "Newfoundland becomes a dominion",
+   "place": "St. John's, the capital",
+   "lonLat": [
+    -52.71,
+    47.56
+   ],
+   "civs": [
+    "dominion-of-newfoundland",
+    "british-colonial-empire"
+   ],
+   "alongside": true,
+   "summary": "On 26 September Newfoundland, with Labrador, self-governing since 1855, becomes a dominion of the British Empire, like New Zealand the same day. Crushing debts in the Great Depression lead it to hand its government to a British commission in 1934, until it joins Canada in 1949.",
+   "wikipedia": "Dominion_of_Newfoundland",
+   "search": "Dominion of Newfoundland"
+  },
+  {
+   "id": "union-of-south-africa-1910",
+   "kind": "treaty",
+   "year": 1910,
+   "title": "The Union of South Africa",
+   "place": "Cape Town, where the new parliament sits",
+   "lonLat": [
+    18.42,
+    -33.93
+   ],
+   "civs": [
+    "south-africa",
+    "british-africa"
+   ],
+   "alongside": true,
+   "summary": "On 31 May, eight years after the Boer War, the Cape, Natal, the Transvaal and the Orange River Colony unite as the Union of South Africa, a self-governing dominion with Louis Botha as prime minister. Pretoria, Cape Town and Bloemfontein share the role of capital. Black South Africans are kept almost entirely out of its politics. From 1920 it also rules South West Africa, today's Namibia, under a League of Nations mandate.",
+   "wikipedia": "Union_of_South_Africa",
+   "search": "Union of South Africa 1910"
+  },
+  {
+   "id": "greenland-sovereignty-1921",
+   "kind": "treaty",
+   "year": 1921,
+   "title": "Denmark claims all of Greenland",
+   "place": "Godthåb (today's Nuuk), the colony's capital",
+   "lonLat": [
+    -51.72,
+    64.18
+   ],
+   "civs": [
+    "greenland",
+    "denmark-norway"
+   ],
+   "alongside": true,
+   "summary": "Denmark, whose colonies lay along Greenland's west and south coasts, declares its sovereignty over the whole island. Norway contests it and occupies part of the east coast in 1931, but in 1933 the Permanent Court of International Justice rules for Denmark.",
+   "wikipedia": "Legal_Status_of_Eastern_Greenland",
+   "search": "Danish sovereignty over Greenland 1921"
   }
  ]
 }

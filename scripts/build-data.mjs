@@ -58,6 +58,21 @@ function ringArea(ring) {
   return (Math.abs(sum) / 2) * KM2_PER_SQ_DEGREE;
 }
 
+// Ring area in km² on the sphere, for land added to a realm (growShape):
+// ringArea above is only a rough guide, off by tens of percent far from the
+// equator.
+function sphereArea(ring) {
+  const R = 6371;
+  const rad = Math.PI / 180;
+  let sum = 0;
+  for (let i = 0; i < ring.length - 1; i++) {
+    const [x1, y1] = ring[i];
+    const [x2, y2] = ring[i + 1];
+    sum += (x2 - x1) * rad * (Math.sin(y1 * rad) + Math.sin(y2 * rad));
+  }
+  return (Math.abs(sum) / 2) * R * R;
+}
+
 // Area-weighted centroid of a ring (planar, in degrees).
 function ringCentroid(ring) {
   let a = 0;
@@ -195,9 +210,11 @@ function growShape(shape, geometry) {
     .filter((ring) => ring.length >= 4)
     .map(encodeRing)
     .filter((ring) => ring.length >= 6);
-  const before = shape.rings.map(decodeRing).map(ringArea).reduce((a, b) => a + b, 0);
-  const after = areas.reduce((a, b) => a + b, 0);
-  return { ...shape, area: Math.round((shape.area * after) / before), label: labelPoint(outers[largest]), rings };
+  // The area grows by the land added. (Scaling it by the drawn areas instead
+  // would multiply Cliopatria's area for a realm it draws only in part.)
+  const before = shape.rings.map(decodeRing).map(sphereArea).reduce((a, b) => a + b, 0);
+  const after = rings.map(decodeRing).map(sphereArea).reduce((a, b) => a + b, 0);
+  return { ...shape, area: Math.round(shape.area + Math.max(0, after - before)), label: labelPoint(outers[largest]), rings };
 }
 
 await ensureSource();
