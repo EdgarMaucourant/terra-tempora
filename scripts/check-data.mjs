@@ -203,6 +203,37 @@ for (const lang of existsSync(`${DATA}/i18n`) ? readdirSync(`${DATA}/i18n`) : []
   }
 }
 
+// The changelog: one entry per version, newest first, the newest being the
+// version in package.json, each change written in every interface language.
+{
+  const where = "src/changelog.json";
+  const releases = read(where)?.releases ?? [];
+  const version = JSON.parse(readFileSync("package.json", "utf8")).version;
+  const semver = (v) => /^\d+\.\d+\.\d+$/.test(v ?? "");
+  const newer = (a, b) => {
+    const [x, y] = [a, b].map((v) => v.split(".").map(Number));
+    return x[0] - y[0] || x[1] - y[1] || x[2] - y[2];
+  };
+  if (!semver(version)) fail("package.json", `version "${version}" is not x.y.z`);
+  if (releases[0]?.version !== version) fail(where, `the newest entry must be ${version}, the version in package.json`);
+  releases.forEach((r, i) => {
+    if (!semver(r.version)) return fail(where, `version "${r.version}" is not x.y.z`);
+    if (i && semver(releases[i - 1].version) && newer(releases[i - 1].version, r.version) <= 0) {
+      fail(where, `${r.version} is not older than the entry above it`);
+    }
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(r.date ?? "")) fail(where, `${r.version} needs a date written YYYY-MM-DD`);
+    if (!r.changes?.length) fail(where, `${r.version} lists no change`);
+    for (const c of r.changes ?? []) {
+      for (const code of localeCodes) {
+        if (!isText(c[code])) (code === "en" ? fail : warn)(where, `${r.version} has a change with no "${code}" text`);
+      }
+      if (c.links !== undefined && !(Array.isArray(c.links) && c.links.every((n) => Number.isInteger(n) && n > 0))) {
+        fail(where, `${r.version} has links that are not pull request or issue numbers`);
+      }
+    }
+  });
+}
+
 // Interface translations: src/locales/<lang>.json against English
 const placeholders = (s) => [...s.matchAll(/\{(\w+)\}/g)].map((m) => m[1]);
 const forms = (m) => (typeof m === "string" ? [m] : Object.values(m));
