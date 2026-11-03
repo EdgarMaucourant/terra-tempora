@@ -57,6 +57,7 @@ const LISTS: Record<string, string> = {
   civs: "Civilizations",
   countries: "Countries",
   nations: "Nations",
+  search: "Search",
   travel: "History travel",
 };
 const PAUSES: Record<string, string> = {
