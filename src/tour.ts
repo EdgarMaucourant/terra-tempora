@@ -46,14 +46,12 @@ const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
 /**
  * Shows the "Open tour" button, with a copy of `card` (the prompt or the
- * tour's card, still on screen) shrinking into it, or into the menu button
- * on phones, where the tour waits in the menu.
+ * tour's card, still on screen) shrinking into the toolbar's "Info" menu
+ * that holds it, or into the menu button on phones.
  */
 function dock(card: HTMLElement) {
-  const button = $("#tour-button")!;
-  const appearing = button.hidden;
-  button.hidden = false;
-  const target = narrow.matches ? $("#explore-toggle") : button;
+  $("#tour-button")!.hidden = false;
+  const target = narrow.matches ? $("#explore-toggle") : $("#more-button");
   if (!visible(target) || !visible(card) || reducedMotion.matches || !card.animate) return;
   const from = card.getBoundingClientRect();
   const to = target.getBoundingClientRect();
@@ -81,11 +79,8 @@ function dock(card: HTMLElement) {
     ],
     { duration: 520, easing: "cubic-bezier(0.55, 0, 0.2, 1)" },
   );
-  // A newly shown button waits for the card to land; the menu button stays.
-  if (target === button && appearing) target.style.opacity = "0";
   const land = () => {
     ghost.remove();
-    target.style.opacity = "";
     target.animate([{ transform: "scale(1.12)" }, { transform: "none" }], { duration: 220, easing: "ease-out" });
   };
   flight.finished.then(land, land);

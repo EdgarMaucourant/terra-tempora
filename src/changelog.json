@@ -1,6 +1,18 @@
 {
   "releases": [
     {
+      "version": "1.4.0",
+      "date": "2026-11-04",
+      "changes": [
+        {
+          "en": "A tidier toolbar at the top right on computers: Open tour, Sources and Code on GitHub are now together in a new Info menu, and Search shrinks to its magnifying glass when the Other realms switch is shown.",
+          "fr": "Une barre d’outils plus claire en haut à droite sur ordinateur : Ouvrir la visite, Sources et Le code sur GitHub sont désormais réunis dans un nouveau menu Infos, et Rechercher se réduit à sa loupe quand l’interrupteur Autres États est affiché.",
+          "es": "Una barra de herramientas más ordenada arriba a la derecha en el ordenador: Abrir la visita guiada, Fuentes y Código en GitHub están ahora juntos en un nuevo menú Info, y Buscar se reduce a su lupa cuando se muestra el interruptor Otros reinos.",
+          "links": []
+        }
+      ]
+    },
+    {
       "version": "1.3.2",
       "date": "2026-11-04",
       "changes": [
