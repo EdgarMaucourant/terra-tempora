@@ -73,6 +73,13 @@ function sphereArea(ring) {
   return (Math.abs(sum) / 2) * R * R;
 }
 
+// The index of a shape's main part, by its true area: ringArea makes French
+// Guiana outweigh mainland France.
+const mainPart = (outers) => {
+  const areas = outers.map(sphereArea);
+  return areas.indexOf(Math.max(...areas));
+};
+
 // Area-weighted centroid of a ring (planar, in degrees).
 function ringCentroid(ring) {
   let a = 0;
@@ -132,7 +139,7 @@ function toShape(id, p, geometry) {
   const outers = polygons.map((poly) => poly[0]).filter((ring) => ring.length >= 4);
   if (!outers.length) return null;
   const areas = outers.map(ringArea);
-  const largest = areas.indexOf(Math.max(...areas));
+  const largest = mainPart(outers);
   const rings = outers
     .filter((_, i) => p.KeepSmall || i === largest || areas[i] >= MIN_PART_AREA)
     .map((ring) => {
@@ -190,7 +197,7 @@ function clipShape(shape, geometry) {
   const outers = polygonClipping.difference(polygons, cutter).map((poly) => poly[0]);
   if (!outers.length) return null;
   const areas = outers.map(ringArea);
-  const largest = areas.indexOf(Math.max(...areas));
+  const largest = mainPart(outers);
   const rings = outers
     .filter((_, i) => i === largest || areas[i] >= MIN_PART_AREA)
     .map(encodeRing)
@@ -208,7 +215,7 @@ function growShape(shape, geometry) {
   const extra = geometry.type === "Polygon" ? [geometry.coordinates] : geometry.coordinates;
   const outers = polygonClipping.union(polygons, extra).map((poly) => poly[0]);
   const areas = outers.map(ringArea);
-  const largest = areas.indexOf(Math.max(...areas));
+  const largest = mainPart(outers);
   const rings = outers
     .filter((_, i) => i === largest || areas[i] >= MIN_PART_AREA)
     .map((ring) => simplify(ring, TOLERANCE))
