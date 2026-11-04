@@ -29,6 +29,7 @@ import { announce, externalLink } from "./dom";
 import { eraAt, eraName, ERAS, NOW } from "./eras";
 import { frameRealm } from "./frame";
 import { EventLayer } from "./eventLayer";
+import { makeDraggable } from "./drag";
 import { Feedback } from "./feedback";
 import { badgeSvg, eventLinks, kindLabel, loadEvents, localPage, pageUrl, type HistoryEvent } from "./events";
 import { Landing } from "./landing";
@@ -1876,6 +1877,12 @@ const tour = new Tour({
 const welcome = $("welcome");
 const whatsNew = $("whats-new");
 const startBusy = () => (compactQuery.matches && panel.isOpen) || !landingEl.hidden || !aboutEl.hidden || document.body.classList.contains("traveling");
+// On computers every pop-up moves by its header, to see the map behind it.
+for (const panel of document.querySelectorAll<HTMLElement>(".picker-panel")) {
+  makeDraggable(panel, panel.querySelector(".picker-head")!, panel.closest<HTMLElement>(".picker")!);
+}
+makeDraggable(landingEl.querySelector(".landing-dialog")!, landingEl.querySelector(".dialog-bar")!, landingEl);
+for (const card of [welcome, whatsNew]) makeDraggable(card, card);
 // Returning visitors may get "What's new" instead of the "New here?" prompt.
 setupWelcome(welcome, tour, startBusy, setupWhatsNew(whatsNew, startBusy));
 // On phones the prompts step aside when the text panel opens over them.
