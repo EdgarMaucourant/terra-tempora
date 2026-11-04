@@ -1,6 +1,18 @@
 {
   "releases": [
     {
+      "version": "1.3.1",
+      "date": "2026-11-04",
+      "changes": [
+        {
+          "en": "French India now shows its five trading posts in India (Pondicherry, Karikal, Mahé, Yanam and Chandernagore), in the years France held them, until 1954. Réunion and Mauritius, which it used to show instead, are now the French Mascarene Islands, and the Comoros and parts of Madagascar it wrongly included are gone.",
+          "fr": "Les Établissements français de l’Inde montrent désormais leurs cinq comptoirs en Inde (Pondichéry, Karikal, Mahé, Yanaon et Chandernagor), les années où la France les tenait, jusqu’en 1954. La Réunion et l’île Maurice, qu’ils montraient à la place, forment maintenant les Mascareignes françaises, et les Comores et les morceaux de Madagascar ajoutés à tort ont disparu.",
+          "es": "La India francesa muestra ahora sus cinco enclaves en la India (Pondicherry, Karikal, Mahé, Yanam y Chandernagor), en los años en que Francia los tenía, hasta 1954. La Reunión y Mauricio, que mostraba en su lugar, son ahora las Mascareñas francesas, y las Comoras y las partes de Madagascar que incluía por error han desaparecido.",
+          "links": [11, 12]
+        }
+      ]
+    },
+    {
       "version": "1.3.0",
       "date": "2026-11-03",
       "changes": [

@@ -80,6 +80,9 @@ under CC BY-SA 4.0.
     not yet settled (Australia before 1901, Mexico's north before 1848, Russian
     America, Greenland from 1921): today's countries and provinces from
     Natural Earth 1:10m, public domain.
+  - French India's trading posts: Pondicherry, Karikal and Yanam from
+    today's Puducherry in Natural Earth 1:10m, public domain; Mahé and
+    Chandernagore drawn as squares of their area around the town.
 - Key figures, links between realms and most events: Wikidata, CC0, with
   Wikipedia's opening paragraphs (CC BY-SA).
 - Pictures: Wikimedia Commons, each under its own free licence, credited with
