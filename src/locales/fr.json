@@ -185,7 +185,8 @@
     "two": "{first} et {second}"
   },
   "toolbar": {
-    "otherRealms": "Autres États"
+    "otherRealms": "Autres États",
+    "more": "Infos"
   },
   "view": {
     "globe": "Globe",
