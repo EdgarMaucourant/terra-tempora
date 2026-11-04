@@ -1,6 +1,18 @@
 {
   "releases": [
     {
+      "version": "1.3.2",
+      "date": "2026-11-04",
+      "changes": [
+        {
+          "en": "Clicking a realm with land overseas now turns the globe to its homeland: the French Second Republic goes to France rather than French Guiana, and Spain, Belgium and New France no longer open on a far-off colony.",
+          "fr": "Cliquer sur un royaume qui a des terres outre-mer tourne désormais le globe vers sa métropole : la Deuxième République française mène à la France et non plus à la Guyane, et l’Espagne, la Belgique et la Nouvelle-France ne s’ouvrent plus sur une colonie lointaine.",
+          "es": "Al hacer clic en un reino con tierras de ultramar, el globo gira ahora hacia su metrópoli: la Segunda República francesa lleva a Francia y no a la Guayana Francesa, y España, Bélgica y Nueva Francia ya no se abren sobre una colonia lejana.",
+          "links": [13, 14]
+        }
+      ]
+    },
+    {
       "version": "1.3.1",
       "date": "2026-11-04",
       "changes": [
