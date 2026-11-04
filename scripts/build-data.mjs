@@ -124,7 +124,9 @@ function encodeRing(ring) {
 }
 
 // One Cliopatria-style feature as a display shape, or null when nothing is left
-// of it after dropping specks.
+// of it after dropping specks. An override feature with KeepSmall keeps every
+// part, however small, unsimplified when simplifying would erase it: a realm
+// made only of small parts, such as French India's trading posts.
 function toShape(id, p, geometry) {
   const polygons = geometry.type === "Polygon" ? [geometry.coordinates] : geometry.coordinates;
   const outers = polygons.map((poly) => poly[0]).filter((ring) => ring.length >= 4);
@@ -132,8 +134,11 @@ function toShape(id, p, geometry) {
   const areas = outers.map(ringArea);
   const largest = areas.indexOf(Math.max(...areas));
   const rings = outers
-    .filter((_, i) => i === largest || areas[i] >= MIN_PART_AREA)
-    .map((ring) => simplify(ring, TOLERANCE))
+    .filter((_, i) => p.KeepSmall || i === largest || areas[i] >= MIN_PART_AREA)
+    .map((ring) => {
+      const simple = simplify(ring, TOLERANCE);
+      return p.KeepSmall && simple.length < 4 ? ring : simple;
+    })
     .filter((ring) => ring.length >= 4)
     .map(encodeRing)
     .filter((ring) => ring.length >= 6);
