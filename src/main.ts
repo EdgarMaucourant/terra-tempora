@@ -759,6 +759,26 @@ trackEl.addEventListener("pointerout", (e) => {
   if ((e.target as HTMLElement).closest(".lane-link, .mark")) tooltip.hidden = true;
 });
 
+// The toolbar's "Info" menu: the tour, the sources and the code on GitHub.
+const moreButton = $<HTMLButtonElement>("more-button");
+const moreList = $("more-list");
+function setMoreMenu(open: boolean) {
+  moreList.hidden = !open;
+  moreButton.setAttribute("aria-expanded", String(open));
+}
+moreButton.addEventListener("click", () => setMoreMenu(moreButton.getAttribute("aria-expanded") !== "true"));
+moreList.addEventListener("click", (e) => {
+  if ((e.target as Element).closest(".more-item")) setMoreMenu(false);
+});
+document.addEventListener("click", (e) => {
+  if (!moreList.hidden && !(e.target as Element).closest(".toolbar-more")) setMoreMenu(false);
+});
+moreList.parentElement!.addEventListener("keydown", (e) => {
+  if (e.key !== "Escape" || moreList.hidden) return;
+  setMoreMenu(false);
+  moreButton.focus();
+});
+
 $("sources-button").addEventListener("click", () => {
   info.hidden = true;
   sources.hidden = !sources.hidden;
