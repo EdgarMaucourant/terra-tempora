@@ -39,6 +39,9 @@ Each `scripts/border-overrides/*.geojson` file holds hand-traced borders that
   `british-dominions.geojson` for Australia before 1901 (`Claim` says what
   each feature adds). Added land counts towards the realm's area as measured
   on the sphere.
+- `KeepSmall` (optional): `true` keeps every part of the shape, however
+  small. Parts under 300 km² are otherwise dropped (all but the largest), so
+  `french-india.geojson` needs it for French India's trading posts.
 - `Area` (optional): the shape's area in km². Give it for a large shape far
   from the equator: worked out from the shape, it can be off by tens of
   percent.
@@ -65,6 +68,14 @@ pre-colonial African civilizations (with its coastline, to within about 10 km;
 the map gives no dates and calls itself an artistic interpretation). A map of
 one moment stands for a span of years: Mossi and Hausa borders of about 1790
 are shown from 1500, for instance.
+`french-india.geojson` replaces Cliopatria's French India, which lumps the
+French East India Company's islands (Réunion, Mauritius, the Comoros, parts of
+Madagascar) in with its Indian posts and then loses the posts to the size cut:
+it draws the five posts only in the years France held them (`Held` names
+them each time), Pondicherry, Karikal and Yanam from today's Puducherry in
+Natural Earth 1:10m, Mahé and Chandernagore as squares of their area around
+the town, and moves Réunion and Mauritius to a realm of their own, the French
+Mascarene Islands, with Cliopatria's outlines.
 `united-states.geojson` is drawn from Natural Earth's 1:10m states (without the
 large lakes) and rivers, public domain, cut along the treaty lines: the
 Mississippi, the 1819 Adams-Onís line (the Sabine and Red rivers, 100°W, the
