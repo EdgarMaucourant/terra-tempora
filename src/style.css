@@ -4191,3 +4191,21 @@ body:not(.home) .search-button span {
     grid-template-columns: 1fr;
   }
 }
+
+/* Pop-ups move by their header on computers (src/drag.ts). Once one has
+   moved, its backdrop lightens so the map behind shows through. */
+.drag-handle {
+  cursor: grab;
+  user-select: none;
+  touch-action: none;
+}
+
+.drag-handle.dragging {
+  cursor: grabbing;
+}
+
+.picker.moved,
+.landing.moved {
+  background: rgba(4, 6, 9, 0.18);
+  backdrop-filter: none;
+}
