@@ -1,14 +1,21 @@
 import { searched } from "./analytics";
 import { CONTINENTS, type Civilization, type Continent } from "./civilizations";
+import { continentFinder } from "./continentAt";
 import { countryCivIds, type Country, type CountryView } from "./countries";
 import { el } from "./dom";
+import { badgeSvg, kindLabel, type HistoryEvent } from "./events";
 import { formatNumber, lang, t } from "./i18n";
-import { formatRange } from "./years";
+import { formatRange, formatYear } from "./years";
 
-type Kind = "civs" | "countries" | "nations";
-const KINDS: Kind[] = ["civs", "countries", "nations"];
-const VIEW: Record<Exclude<Kind, "civs">, CountryView> = { countries: "territory", nations: "nationality" };
-const KIND_LABEL = { civs: "landing.civilizations", countries: "landing.countries", nations: "landing.nations" } as const;
+type Kind = "civs" | "countries" | "nations" | "events";
+const KINDS: Kind[] = ["civs", "countries", "nations", "events"];
+const VIEW: Record<"countries" | "nations", CountryView> = { countries: "territory", nations: "nationality" };
+const KIND_LABEL = {
+  civs: "landing.civilizations",
+  countries: "landing.countries",
+  nations: "landing.nations",
+  events: "search.events",
+} as const;
 // Rows shown per type when all types are listed, and per page for one type.
 const PREVIEW = 6;
 const PAGE = 60;
@@ -20,8 +27,22 @@ interface Hit {
   meta: string;
   href: string;
   /** Civilization whose outline the row shows. */
-  shape: string;
+  shape?: string;
+  /** Or the event's badge, as SVG markup. */
+  badge?: string;
   open: () => void;
+}
+
+/** An event the search can find: a realm's event, or a turning point of the history travel. */
+export interface FoundEvent {
+  event: HistoryEvent;
+  /** A turning point of the history travel, opened there. */
+  travel: boolean;
+}
+
+interface Indexed extends FoundEvent {
+  names: string[];
+  continents: Continent[];
 }
 
 /** Lower case, without accents, so "egypte" finds "Égypte". */
@@ -32,11 +53,13 @@ const fold = (s: string) =>
     .toLocaleLowerCase(lang);
 
 /**
- * One search over the civilizations, today's countries and nations, filtered
- * by type, continent and years: "every civilization of South America between
- * 1 and 1000 CE". A civilization matches the years when it stood at some point
- * between them; a country or nation when one of its civilizations did, on
- * the country's continent.
+ * One search over the civilizations, today's countries and nations, and the
+ * events (realms' battles, treaties and so on, and the history travel's
+ * turning points), filtered by type, continent and years: "every
+ * civilization of South America between 1 and 1000 CE". A civilization
+ * matches the years when it stood at some point between them; a country or
+ * nation when one of its civilizations did, on the country's continent; an
+ * event when it happened then, and on the continent where it took place.
  */
 export class Search {
   private kind: Kind | null = null;
@@ -44,6 +67,9 @@ export class Search {
   private limit = PAGE;
   private input: HTMLInputElement;
   private names = new Map<Civilization, string[]>();
+  /** The events, once downloaded: they are asked for when the search is first used. */
+  private events: Indexed[] = [];
+  private eventsAsked = false;
 
   constructor(
     private root: HTMLElement,
@@ -53,10 +79,15 @@ export class Search {
     private onCountry: (country: Country, view: CountryView) => void,
     private outline: (className: string, id: string) => SVGSVGElement,
     private drawOutlines: () => void,
+    /** Every event that can be found, with the history travel's turning points. */
+    private loadEvents: () => Promise<FoundEvent[]>,
+    private onEvent: (found: FoundEvent) => void,
   ) {
     this.input = root.querySelector<HTMLInputElement>("#all-search")!;
     for (const c of list) this.names.set(c, [c.name, ...c.names].map(fold));
     this.input.addEventListener("input", () => this.update(true));
+    // The search pop-up focuses its box as it opens: the events download then.
+    this.input.addEventListener("focus", () => this.fetchEvents());
 
     const continents = root.querySelector<HTMLElement>("#search-continents")!;
     const chip = (label: string, continent: Continent | null) => {
@@ -77,6 +108,24 @@ export class Search {
     }
     root.querySelector("#search-clear")!.addEventListener("click", () => this.clear());
     this.update();
+  }
+
+  private fetchEvents() {
+    if (this.eventsAsked) return;
+    this.eventsAsked = true;
+    const civs = new Map(this.list.map((c) => [c.id, c]));
+    Promise.all([this.loadEvents(), continentFinder()])
+      .then(([found, continentAt]) => {
+        this.events = found.map((f) => {
+          const e = f.event;
+          // Out at sea, an event takes its realms' continents.
+          const here = continentAt(e.lonLat[0], e.lonLat[1]);
+          const continents = here ? [here] : [...new Set(e.civs.flatMap((id) => civs.get(id)?.continents ?? []))];
+          return { ...f, names: [e.title, e.place].map(fold), continents };
+        });
+        this.update();
+      })
+      .catch((error: unknown) => console.error(error));
   }
 
   /** The search box, to focus when the pop-up opens. */
@@ -139,7 +188,7 @@ export class Search {
       }));
 
     const byId = new Map(this.list.map((c) => [c.id, c]));
-    const places = (kind: Exclude<Kind, "civs">) => {
+    const places = (kind: "countries" | "nations") => {
       const view = VIEW[kind];
       return this.countries
         .map((k) => ({ k, r: rank([fold(k.name)]) }))
@@ -160,7 +209,26 @@ export class Search {
           open: () => this.onCountry(k, view),
         }));
     };
-    return { civs, countries: places("countries"), nations: places("nations") };
+    const events = this.events
+      .map((f) => ({ f, r: rank(f.names) }))
+      .filter(({ f, r }) => r >= 0 && onContinent(f.continents) && f.event.year <= to && (f.event.to ?? f.event.year) >= from)
+      .sort((a, b) => a.r - b.r || a.f.event.year - b.f.event.year)
+      .map(({ f }) => {
+        const e = f.event;
+        const when = e.to && e.to !== e.year ? formatRange(e.year, e.to) : formatYear(e.year);
+        const meta = [kindLabel(e.kind), when, e.place];
+        if (f.travel) meta.push(t("travel.title"));
+        return {
+          kind: "events" as const,
+          id: e.id,
+          name: e.title,
+          meta: meta.filter(Boolean).join(" · "),
+          href: f.travel ? `#travel&y=${e.year}` : `#c=${e.civs[0]}&y=${e.year}`,
+          badge: badgeSvg(e.kind, 38),
+          open: () => this.onEvent(f),
+        };
+      });
+    return { civs, countries: places("countries"), nations: places("nations"), events };
   }
 
   private update(typed = false) {
@@ -173,7 +241,7 @@ export class Search {
     }
     const [from, to] = this.years();
     const years = from !== -Infinity || to !== Infinity;
-    this.root.querySelector<HTMLElement>("#search-years-hint")!.hidden = !years || this.kind === "civs";
+    this.root.querySelector<HTMLElement>("#search-years-hint")!.hidden = !years || this.kind === "civs" || this.kind === "events";
     this.root.querySelector<HTMLElement>("#search-clear")!.hidden = !years && !this.continent && !this.kind;
 
     // Type chips, each with how many it holds.
@@ -237,7 +305,11 @@ export class Search {
       });
       const text = el("span", "search-text");
       text.append(el("strong", "search-name", hit.name), el("span", "search-meta", hit.meta));
-      link.append(this.outline("search-shape", hit.shape), text);
+      if (hit.badge) {
+        const badge = el("span", "search-shape search-badge");
+        badge.innerHTML = hit.badge;
+        link.append(badge, text);
+      } else link.append(this.outline("search-shape", hit.shape!), text);
       item.append(link);
       list.append(item);
     }

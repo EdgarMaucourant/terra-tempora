@@ -1,6 +1,18 @@
 {
   "releases": [
     {
+      "version": "1.6.0",
+      "date": "2026-11-05",
+      "changes": [
+        {
+          "en": "The search now finds events too: battles, treaties, births and deaths of rulers, new capitals and the history travel’s turning points. Filter them by continent and years, and pick one to jump straight to it on the globe, in its year, with its story open.",
+          "fr": "La recherche trouve désormais aussi les événements : batailles, traités, naissances et morts de souverains, nouvelles capitales et étapes du voyage dans l’histoire. Filtrez-les par continent et par années, puis choisissez-en un pour vous y rendre directement sur le globe, à son année, avec son récit ouvert.",
+          "es": "La búsqueda encuentra ahora también acontecimientos: batallas, tratados, nacimientos y muertes de soberanos, nuevas capitales y las etapas del viaje por la historia. Fíltralos por continente y por años, y elige uno para ir directamente a él en el globo, en su año, con su relato abierto.",
+          "links": [20]
+        }
+      ]
+    },
+    {
       "version": "1.5.2",
       "date": "2026-11-05",
       "changes": [
