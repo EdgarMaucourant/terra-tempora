@@ -1,6 +1,18 @@
 {
   "releases": [
     {
+      "version": "1.5.2",
+      "date": "2026-11-05",
+      "changes": [
+        {
+          "en": "Borders keep up with the timeline when it plays: the globe now prepares them ahead of time, keeps the borders that don’t change from one year to the next instead of drawing them again, draws the largest realms first, and briefly waits for big borders instead of running past them.",
+          "fr": "Les frontières suivent désormais la frise quand elle défile : le globe les prépare à l’avance, garde les frontières qui ne changent pas d’une année à l’autre au lieu de les redessiner, dessine d’abord les plus grands États et attend un instant les grandes frontières au lieu de passer sans elles.",
+          "es": "Las fronteras siguen ahora el ritmo de la línea de tiempo cuando avanza: el globo las prepara con antelación, conserva las fronteras que no cambian de un año a otro en lugar de dibujarlas de nuevo, dibuja primero los reinos más grandes y espera un momento a las fronteras grandes en lugar de pasar sin ellas.",
+          "links": [19]
+        }
+      ]
+    },
+    {
       "version": "1.5.1",
       "date": "2026-11-04",
       "changes": [
