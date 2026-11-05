@@ -132,6 +132,7 @@
       "oc": "Oceania",
       "sa": "South America"
     },
+    "events": "Events",
     "count": {
       "one": "{count} result",
       "other": "{count} results"
@@ -140,7 +141,7 @@
     "from": "From year",
     "nationMeta": "Nation of today · {continents}",
     "none": "Nothing matches. Try another name, continent or period.",
-    "placeholder": "Search civilizations, countries and nations",
+    "placeholder": "Search civilizations, countries, nations and events",
     "showAll": "Show all {count}",
     "showMore": "Show more",
     "title": "Search",

@@ -33,6 +33,7 @@ import { makeDraggable } from "./drag";
 import { Feedback } from "./feedback";
 import { badgeSvg, eventLinks, kindLabel, loadEvents, localPage, pageUrl, type HistoryEvent } from "./events";
 import { Landing } from "./landing";
+import type { FoundEvent } from "./search";
 import { Tour, setupWelcome } from "./tour";
 import { MapView, PROJECTIONS } from "./mapView";
 import { articleMedia, renderGallery } from "./media";
@@ -1296,15 +1297,68 @@ function showEvents() {
   if (!wanted.length) return;
   const asked = highlighted;
   wikidataEvents(base, wanted).then((events) => {
-    const byId = new Map(fetchedEvents.map((e) => [e.id, e]));
-    for (const e of events) {
-      const known = byId.get(e.id);
-      // A battle between two realms is tied to both once both have been asked for.
-      if (known) known.civs = [...new Set([...known.civs, ...e.civs])];
-      else fetchedEvents.push(e);
-    }
+    keepFetched(events);
     if (asked === highlighted && events.length) renderEvents(highlightedEvents());
   });
+}
+
+/** Adds Wikidata events to the ones already read, keeping those already shown; gives the kept ones. */
+function keepFetched(events: HistoryEvent[]): HistoryEvent[] {
+  const byId = new Map(fetchedEvents.map((e) => [e.id, e]));
+  return events.map((e) => {
+    const known = byId.get(e.id);
+    // A battle between two realms is tied to both once both have been asked for.
+    if (known) {
+      known.civs = [...new Set([...known.civs, ...e.civs])];
+      return known;
+    }
+    fetchedEvents.push(e);
+    byId.set(e.id, e);
+    return e;
+  });
+}
+
+// Every event, for the search: the hand-written ones, Wikidata's for the
+// realms without them, then the history travel's turning points not already
+// among them. Downloaded once, when the search is first used.
+let findable: Promise<FoundEvent[]> | undefined;
+function findableEvents(): Promise<FoundEvent[]> {
+  findable ??= (async () => {
+    const curated = new Set(allEvents.filter((e) => !e.alongside).flatMap((e) => e.civs));
+    const wanted = civs ? civs.list.filter((c) => !curated.has(c.id)) : [];
+    const read = keepFetched(await wikidataEvents(base, wanted));
+    const written = new Set(allEvents.map((e) => e.wikipedia));
+    const realms = [...allEvents, ...read.filter((e) => !written.has(e.wikipedia))];
+    const known = new Set(realms.map((e) => e.wikipedia));
+    return [
+      ...realms.map((event) => ({ event, travel: false })),
+      ...travelEvents.filter((e) => !known.has(e.wikipedia)).map((event) => ({ event, travel: true })),
+    ];
+  })();
+  return findable;
+}
+
+/**
+ * Opens an event found by the search: a realm's event with its realm on show,
+ * in its year, the globe turned to it and its story open; a turning point in
+ * the history travel, stopped on its card.
+ */
+function openFound({ event: e, travel: inTravel }: FoundEvent) {
+  if (playing) setPlaying(false);
+  hideTooltip();
+  if (inTravel) {
+    go({ travel: true }, true);
+    startTravel(e.year);
+    travel?.seekTo(e as TravelEvent);
+    return;
+  }
+  const realms = e.civs.map((id) => civs?.get(id)).filter((c): c is Civilization => !!c);
+  // The realm that stood that year, if one did.
+  const civ = realms.find((c) => c.from <= e.year && c.to >= e.year) ?? realms[0];
+  if (!civ) return;
+  openCiv(civ, { year: e.year, push: true, flyTo: null });
+  flyToPoint(e.lonLat);
+  openEvent(e);
 }
 
 function renderEvents(events: HistoryEvent[]) {
@@ -2178,6 +2232,8 @@ Promise.all([
       countries,
       (k, view) => openCountry(k, view, { push: true }),
       () => Civilizations.outlines(base),
+      findableEvents,
+      openFound,
     );
     const picker = new Picker($("picker"), list.list, applyPicked);
     $("add-civs").addEventListener("click", () => picker.open(new Set(highlighted)));

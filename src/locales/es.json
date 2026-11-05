@@ -132,6 +132,7 @@
       "oc": "Oceanía",
       "sa": "América del Sur"
     },
+    "events": "Acontecimientos",
     "count": {
       "one": "{count} resultado",
       "other": "{count} resultados"
@@ -140,7 +141,7 @@
     "from": "Desde el año",
     "nationMeta": "Nación actual · {continents}",
     "none": "Nada coincide. Prueba otro nombre, continente o período.",
-    "placeholder": "Buscar civilizaciones, países y naciones",
+    "placeholder": "Buscar civilizaciones, países, naciones y acontecimientos",
     "showAll": "Ver los {count}",
     "showMore": "Ver más",
     "title": "Buscar",

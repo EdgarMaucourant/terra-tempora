@@ -4,7 +4,7 @@ import { ERAS, eraLabel, type Era } from "./eras";
 import { countryCivIds, type Country, type CountryView } from "./countries";
 import { el, externalLink } from "./dom";
 import { formatNumber, lang, t } from "./i18n";
-import { Search } from "./search";
+import { Search, type FoundEvent } from "./search";
 import { nationFlags, pictureTitle, realmFacts, type RealmFacts } from "./wikidata";
 import { formatRange, formatYear } from "./years";
 
@@ -46,6 +46,9 @@ export class Landing {
     onCountry?: (country: Country, view: CountryView) => void,
     /** Downloads the cards' outlines; asked for only once the page is shown. */
     private loadOutlines: () => Promise<Outlines> = async () => ({}),
+    /** Every event the search can find, downloaded when the search is first used. */
+    loadEvents: () => Promise<FoundEvent[]> = async () => [],
+    onEvent: (found: FoundEvent) => void = () => {},
   ) {
     // Cards load their pictures as they scroll into the popup's view.
     this.observer = new IntersectionObserver((entries) => this.reveal(entries), {
@@ -107,6 +110,8 @@ export class Landing {
       (country, view) => onCountry?.(country, view),
       (className, id) => this.outline(className, id),
       () => this.drawOutlines(),
+      loadEvents,
+      onEvent,
     );
 
     this.render();

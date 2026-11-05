@@ -4209,3 +4209,8 @@ body:not(.home) .search-button span {
   background: rgba(4, 6, 9, 0.18);
   backdrop-filter: none;
 }
+
+.search-badge {
+  display: grid;
+  place-items: center;
+}
