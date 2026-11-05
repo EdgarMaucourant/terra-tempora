@@ -1,6 +1,18 @@
 {
   "releases": [
     {
+      "version": "1.5.1",
+      "date": "2026-11-04",
+      "changes": [
+        {
+          "en": "When a realm's details are open, tapping another realm's bar on the timeline now shows that realm's details too, instead of leaving the first one's.",
+          "fr": "Quand les détails d’un État sont ouverts, toucher la barre d’un autre État dans la frise affiche désormais ses détails, au lieu de laisser ceux du premier.",
+          "es": "Cuando los detalles de un reino están abiertos, tocar la barra de otro reino en la línea de tiempo muestra ahora sus detalles, en lugar de dejar los del primero.",
+          "links": [16, 18]
+        }
+      ]
+    },
+    {
       "version": "1.5.0",
       "date": "2026-11-04",
       "changes": [

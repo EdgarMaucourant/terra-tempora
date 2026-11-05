@@ -946,6 +946,28 @@ function focusCiv(c: Civilization) {
     setYearEverywhere(c.peakYear);
   }
   flyToRealm(c);
+  // A realm's details left open would still describe the one tapped before.
+  if (!info.hidden) showRealmOf(c);
+}
+
+let realmAsked = 0;
+/** Opens the details of a civilization's realm as it stands this year, as a tap on it would. */
+function showRealmOf(c: Civilization) {
+  if (!data) return;
+  const mine = ++realmAsked;
+  const at = year;
+  data.load(at, at).then(
+    (shapes) => {
+      if (mine !== realmAsked || at !== year) return;
+      const alive = shapes.filter((p) => at >= p.from && at <= p.to);
+      // The realm itself first, else a member of it: Spain stands for the Spanish Empire.
+      const own = alive.filter((p) => c.names.includes(p.name));
+      const pool = own.length ? own : alive.filter((p) => p.groups?.some((g) => c.names.includes(g)));
+      const p = pool.reduce<Polity | null>((best, q) => (!best || q.area > best.area ? q : best), null);
+      if (p) showInfo(p);
+    },
+    () => {},
+  );
 }
 
 function setTilted(on: boolean, animate = true) {
