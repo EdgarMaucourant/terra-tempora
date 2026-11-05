@@ -394,9 +394,16 @@ function render() {
   requestAnimationFrame(tick);
 }
 
+/** Builds shapes about ¾ of a second of playback ahead, so they are ready in time. */
+function updateLookahead() {
+  const speed = travel?.active ? travel.speed : playing ? Number(speedSelect.value) : 0;
+  layer.lookahead = Math.min(60, Math.max(3, speed * 0.75));
+}
+
 function setYear(next: number) {
   year = Math.min(NOW, Math.max(FIRST_YEAR, next));
   showYear();
+  updateLookahead();
   ensureBorders();
   if (home) colourAround(year);
   render();
@@ -404,6 +411,17 @@ function setYear(next: number) {
 
 // Playback
 let lastFrame = 0;
+// The longest the playhead waits for borders before moving on regardless,
+// so a failed download never stops playback for good.
+const MAX_HOLD_MS = 3000;
+let holdSince = 0;
+
+/** True when the large realms showing at this year are downloaded and drawn. */
+function bordersReady(at: number): boolean {
+  if (!data || map.active || at < data.from || at > data.to) return true;
+  return data.hasArrived(Math.floor(at), Math.ceil(at)) && layer.readyAt(at);
+}
+
 function frame(now: number) {
   if (!playing) return;
   const dt = lastFrame ? Math.min(0.1, (now - lastFrame) / 1000) : 0;
@@ -413,6 +431,16 @@ function frame(now: number) {
     setYear(NOW);
     timeline?.setYear(year);
     setPlaying(false);
+    return;
+  }
+  // Like a video buffering, the playhead holds while big borders it is about
+  // to show are still being built, so they never pop in after their year.
+  if (bordersReady(next)) holdSince = 0;
+  else if (!holdSince || now - holdSince < MAX_HOLD_MS) {
+    holdSince ||= now;
+    ensureBorders();
+    render();
+    requestAnimationFrame(frame);
     return;
   }
   setYear(next);
@@ -428,6 +456,7 @@ function showPlaying(on: boolean) {
 
 function setPlaying(on: boolean) {
   playing = on;
+  holdSince = 0;
   showPlaying(on);
   if (on) {
     if (year >= NOW - 0.01) setYear(FIRST_YEAR);

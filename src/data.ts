@@ -89,6 +89,8 @@ function decodeRing(encoded: number[]): number[] {
  */
 export class BorderData {
   private loaded = new Map<string, Promise<Polity[]>>();
+  /** Files whose shapes have arrived, not just been asked for. */
+  private arrivedFiles = new Set<string>();
   private detailed = false;
   /** Windows that arrived before anyone listened for them. */
   private arrived: Polity[][] = [];
@@ -146,6 +148,11 @@ export class BorderData {
   /** True when every window covering these years has arrived. */
   hasYears(from: number, to: number): boolean {
     return this.windowsFor(from, to).every((w) => this.loaded.has(this.fileOf(w)));
+  }
+
+  /** True when the shapes of every window covering these years are here. */
+  hasArrived(from: number, to: number): boolean {
+    return this.windowsFor(from, to).every((w) => this.arrivedFiles.has(w.coarse) || this.arrivedFiles.has(w.file));
   }
 
   /**
@@ -206,7 +213,7 @@ export class BorderData {
           const rings = data.rings.map(decodeRing);
           return data.shapes.map((p) => ({ ...p, to: this.until(p.to), rings: p.rings.map((i) => rings[i]), coarse }));
         })
-        .then((shapes) => (this.arrive(shapes), shapes));
+        .then((shapes) => (this.arrivedFiles.add(file), this.arrive(shapes), shapes));
       // A failed download can be retried on the next request.
       pending.catch(() => this.loaded.delete(file));
       this.loaded.set(file, pending);

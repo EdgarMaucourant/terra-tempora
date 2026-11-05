@@ -39,6 +39,12 @@ const BUILDS_PER_FRAME = 40;
 // Above this many built shapes, those far from the current year are freed.
 const MAX_BUILT = 1500;
 const KEEP_YEARS = 30;
+// Realms this large (km²) catch the eye when they appear late: they are built
+// first, and playback waits for them (see readyAt). Smaller ones may follow.
+const BIG_AREA = 100_000;
+// Coarse outlines are seen from afar, where triangles this large (degrees)
+// look the same as 1° ones and take about half the time to cut.
+const COARSE_GRANULARITY = 2;
 
 interface ShapeGraphics {
   fill: Primitive;
@@ -133,6 +139,26 @@ export class PolityLayer {
   }
 
   /**
+   * Years ahead of the current one whose shapes are built in advance; raised
+   * while playing so shapes are ready by the time their year comes.
+   */
+  lookahead = 3;
+
+  /**
+   * True when every large realm showing at `year` is built and ready to draw,
+   * so playback can move on without big borders popping in late.
+   */
+  readyAt(year: number): boolean {
+    for (const p of this.polities.values()) {
+      if (p.area < BIG_AREA || shapeOpacity(p, year) <= 0.002) continue;
+      if (!(this.showContext || this.isHighlighted(p))) continue;
+      const g = this.graphics.get(p.id);
+      if (!g || !g.fill.ready || !g.line.ready) return false;
+    }
+    return true;
+  }
+
+  /**
    * Name of the realm that covers a point at `year`, the smallest when several
    * overlap, or null when none of the downloaded shapes covers it.
    */
@@ -211,20 +237,27 @@ export class PolityLayer {
     let pending = false;
     let visible = 0;
     let builds = 0;
+    // Build shapes before they are needed so playback stays smooth: those due
+    // within a year first, largest first, as a big realm appearing late is
+    // seen at once while a small one goes unnoticed; then those further ahead.
+    const due: Polity[] = [];
+    for (const p of this.polities.values()) {
+      if (this.graphics.has(p.id) || !(this.showContext || this.isHighlighted(p))) continue;
+      if (year >= p.from - this.lookahead && year <= p.to + 1) due.push(p);
+    }
+    if (due.length) {
+      const later = (p: Polity) => (p.from <= year + 1 ? 0 : 1);
+      due.sort((a, b) => later(a) - later(b) || (later(a) ? a.from - b.from : 0) || b.area - a.area);
+      for (const p of due.slice(0, BUILDS_PER_FRAME)) this.graphics.set(p.id, this.build(p));
+      builds = Math.min(due.length, BUILDS_PER_FRAME);
+      if (due.length > BUILDS_PER_FRAME) pending = true;
+    }
     for (const p of this.polities.values()) {
       const highlighted = this.isHighlighted(p);
       const visibleKind = highlighted || this.showContext;
       const opacity = visibleKind ? shapeOpacity(p, year) : 0;
       if (opacity > 0.5) visible++;
       let g = this.graphics.get(p.id);
-      // Build shapes shortly before they are needed so playback stays smooth.
-      if (!g && visibleKind && year >= p.from - 3 && year <= p.to + 1) {
-        if (builds < BUILDS_PER_FRAME) {
-          g = this.build(p);
-          this.graphics.set(p.id, g);
-          builds++;
-        } else pending = true;
-      }
       if (!g) continue;
       if (this.stale.has(p.id) && opacity <= 0.002) {
         // Not on screen: rebuilt from the detailed outline when it next is.
@@ -257,7 +290,7 @@ export class PolityLayer {
         g.fillMaterial.uniforms.color = Color.fromAlpha(g.fillColor, base * opacity, g.fillMaterial.uniforms.color);
         g.lineMaterial.uniforms.color = Color.fromAlpha(g.lineColor, lineAlpha * opacity, g.lineMaterial.uniforms.color);
         if (!g.fill.ready || !g.line.ready) pending = true;
-      }
+      } else if (!g.fill.ready || !g.line.ready) pending = true;
       // Labels switch at the midpoint of a fade. Changing a label's colour
       // redraws its glyphs, which is too costly to do every frame.
       if (g.label) g.label.show = opacity > 0.5;
@@ -271,7 +304,8 @@ export class PolityLayer {
     for (const [id, g] of this.graphics) {
       const p = this.polities.get(id)!;
       const distance = year < p.from ? p.from - year : year - p.to;
-      if (distance <= KEEP_YEARS) continue;
+      // Shapes built ahead for playback are kept too.
+      if (distance <= KEEP_YEARS || (year < p.from && distance <= this.lookahead + 1)) continue;
       this.free(id, g);
     }
   }
@@ -304,7 +338,7 @@ export class PolityLayer {
             geometry: new PolygonGeometry({
               polygonHierarchy: new PolygonHierarchy(Cartesian3.fromDegreesArray(ring)),
               height,
-              granularity: CesiumMath.RADIANS_PER_DEGREE,
+              granularity: CesiumMath.RADIANS_PER_DEGREE * (p.coarse ? COARSE_GRANULARITY : 1),
               vertexFormat: MaterialAppearance.MaterialSupport.BASIC.vertexFormat,
             }),
           }),
