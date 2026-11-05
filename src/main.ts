@@ -557,7 +557,9 @@ function eventAt(position: { x: number; y: number }): HistoryEvent | undefined {
 
 function polityAt(position: { x: number; y: number }): Polity | undefined {
   const picked = scene.pick(position as never);
-  const p = defined(picked) ? (picked.id as Polity | undefined) : undefined;
+  if (!defined(picked)) return undefined;
+  // Borders are shared between years: the layer knows which realm a piece shows now.
+  const p = layer.polityOf(picked.id) ?? (picked.id as Polity | undefined);
   return p && typeof p === "object" && "rings" in p ? p : undefined;
 }
 
