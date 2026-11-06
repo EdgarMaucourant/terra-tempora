@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The pages of the site. The globe is one page in three languages; its
+     views (a civilization, a year, a turning point) live after the # and are
+     not separate pages. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://terra-tempora.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://terra-tempora.com/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://terra-tempora.com/?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://terra-tempora.com/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://terra-tempora.com/" />
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://terra-tempora.com/?lang=fr</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://terra-tempora.com/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://terra-tempora.com/?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://terra-tempora.com/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://terra-tempora.com/" />
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://terra-tempora.com/?lang=es</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://terra-tempora.com/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://terra-tempora.com/?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://terra-tempora.com/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://terra-tempora.com/" />
+    <priority>0.9</priority>
+  </url>
+  <url><loc>https://terra-tempora.com/versions</loc><priority>0.4</priority></url>
+  <url>
+    <loc>https://terra-tempora.com/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://terra-tempora.com/privacy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://terra-tempora.com/privacy-fr" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://terra-tempora.com/privacy-es" />
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://terra-tempora.com/privacy-fr</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://terra-tempora.com/privacy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://terra-tempora.com/privacy-fr" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://terra-tempora.com/privacy-es" />
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://terra-tempora.com/privacy-es</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://terra-tempora.com/privacy" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://terra-tempora.com/privacy-fr" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://terra-tempora.com/privacy-es" />
+    <priority>0.2</priority>
+  </url>
+</urlset>

@@ -1,0 +1,45 @@
+# Terra Tempora
+
+> Terra Tempora (https://terra-tempora.com) is a free interactive atlas of world history. It draws the borders of more than 1,500 civilizations, from 3400 BCE to today, on a 3D globe or a flat map, with a timeline, key events and a guided flight through 141 turning points of history. It is available in English, French and Spanish, with no account, no ads and no cookies.
+
+Terra Tempora is a non-commercial, amateur project by Edgar Maucourant, made for students, teachers, travellers and anyone curious about history. It runs in any recent web browser with WebGL, on computers and phones. The code is open (MIT licence) and the data keeps the open licences of its sources.
+
+## What you can do on it
+
+- See the world in any year: move the timeline from 10,000 BCE to today, or play time at 2 to 500 years a second, and watch realms rise, spread, meet and fall.
+- Civilizations: open any of about 1,560 states and empires (the Mongol Empire, the Roman Empire, the Han dynasty, the Inca Empire…) at its largest extent, coloured together with its predecessors and successors, with its opening paragraph, pictures and key figures from Wikipedia and Wikidata.
+- Countries: for each of the 183 countries of today, every civilization whose borders crossed its land.
+- Nations: for each country of today, the chain of civilizations that led to the nation.
+- Events: battles, treaties, rulers and capitals placed on the globe and the timeline, with links to Wikipedia, Britannica and World History Encyclopedia.
+- History travel: a flight around the globe through 141 turning points, from Göbekli Tepe (about 9500 BCE) to today.
+- Search: find a civilization, a country or an event by name, with filters by type, continent and year.
+- Ten map projections on the flat map, and a "Report a problem" form for mistakes or missing data.
+
+## Linking to a view
+
+Every view has its own address, after the #, so you can link to it directly:
+
+- A civilization in a year: https://terra-tempora.com/#c=mongol-empire&y=1241 (a negative year is BCE: #c=roman-empire&y=-44)
+- The civilizations behind a country of today: https://terra-tempora.com/#k=russia
+- The realms that held a country's land: https://terra-tempora.com/#t=russia
+- History travel: https://terra-tempora.com/#travel
+- In French or Spanish: add ?lang=fr or ?lang=es before the #, for example https://terra-tempora.com/?lang=fr#c=roman-empire
+
+Civilization ids are lower-case English names with dashes (roman-empire, ottoman-empire, han-dynasty, inca-empire); the list is in https://terra-tempora.com/data/civilizations.json.
+
+## Where the knowledge comes from
+
+- Borders: Cliopatria, the open dataset of the Seshat Global History Databank (CC BY 4.0), simplified for display, with some borders hand-traced from maps on Wikimedia Commons (CC BY-SA). The built border files are shared under CC BY-SA 4.0.
+- Names, key figures, links between realms and events: Wikidata (CC0).
+- Texts, pictures and videos: Wikipedia (CC BY-SA 4.0) and Wikimedia Commons, each credited with its author and licence.
+- Turning points of the History travel: written for the site from reference works, each linked to Wikipedia, Britannica and World History Encyclopedia.
+
+Borders in the past were rarely sharp lines, so the shapes are approximations, and some dates and names are still debated by historians.
+
+## Pages
+
+- [The globe](https://terra-tempora.com/): the app itself, in English ([French](https://terra-tempora.com/?lang=fr), [Spanish](https://terra-tempora.com/?lang=es))
+- [Versions](https://terra-tempora.com/versions): what changed in each release
+- [Privacy and legal notice](https://terra-tempora.com/privacy): what is collected (anonymous visit counts only) and who publishes the site
+- [Source code and data](https://github.com/EdgarMaucourant/terra-tempora): GitHub repository, with the sources and licences in the README
+- [Mastodon](https://mastodon.social/@terratempora): news about the site

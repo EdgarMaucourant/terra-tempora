@@ -20,7 +20,7 @@ timeline that runs from 10,000 BCE to today.
 - Plays a "history travel" through 141 turning points, from Göbekli Tepe to
   today, turning the globe to each one.
 - Plays time at 2 to 500 years a second, works on phones, and is available in
-  English and French.
+  English, French and Spanish.
 
 Links open a view directly, for example `#c=mongol-empire&y=1241` (use a
 negative year for BCE).

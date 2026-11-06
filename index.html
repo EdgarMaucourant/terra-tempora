@@ -3,8 +3,102 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>Terra Tempora</title>
-    <link rel="icon" href="data:," />
+    <title>Terra Tempora · 5,000 years of world history on a globe</title>
+    <!-- What search engines, AI assistants and link previews show. The Worker
+         (worker/index.js) swaps the language-dependent lines for ?lang=fr and
+         ?lang=es, so a shared French or Spanish link previews in its language. -->
+    <meta name="description" content="Watch 5,000 years of world history on an interactive globe: the borders of 1,500+ civilizations from 3400 BCE to today, key events and 141 turning points. Free, no ads." />
+    <meta name="author" content="Edgar Maucourant" />
+    <meta name="theme-color" content="#07090d" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="canonical" href="https://terra-tempora.com/" />
+    <link rel="alternate" hreflang="en" href="https://terra-tempora.com/" />
+    <link rel="alternate" hreflang="fr" href="https://terra-tempora.com/?lang=fr" />
+    <link rel="alternate" hreflang="es" href="https://terra-tempora.com/?lang=es" />
+    <link rel="alternate" hreflang="x-default" href="https://terra-tempora.com/" />
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Terra Tempora" />
+    <meta property="og:url" content="https://terra-tempora.com/" />
+    <meta property="og:title" content="Terra Tempora · 5,000 years of world history on a globe" />
+    <meta property="og:description" content="The borders of 1,500+ civilizations from 3400 BCE to today, key events and a flight through 141 turning points, on an interactive globe. Free, no ads, no cookies." />
+    <meta property="og:image" content="https://terra-tempora.com/social/og-en.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Terra Tempora: a globe with the Mongol Empire drawn in orange, and the words 5,000 years of world history on one globe." />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:locale:alternate" content="es_ES" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="fediverse:creator" content="@terratempora@mastodon.social" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://terra-tempora.com/#website",
+            "url": "https://terra-tempora.com/",
+            "name": "Terra Tempora",
+            "description": "An interactive globe of world history: the borders of 1,500+ civilizations from 3400 BCE to today, key events and turning points.",
+            "inLanguage": ["en", "fr", "es"],
+            "publisher": { "@id": "https://terra-tempora.com/#publisher" }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://terra-tempora.com/#publisher",
+            "name": "Edgar Maucourant",
+            "url": "https://github.com/EdgarMaucourant"
+          },
+          {
+            "@type": "WebApplication",
+            "@id": "https://terra-tempora.com/#app",
+            "name": "Terra Tempora",
+            "url": "https://terra-tempora.com/",
+            "image": "https://terra-tempora.com/social/og-en.jpg",
+            "description": "Explore world history on a 3D globe or a flat map. Pick a civilization, a country or a year to see the realms of that time, with a timeline from 10,000 BCE to today, key events (battles, treaties, rulers, capitals) with links to Wikipedia, and a guided flight through 141 turning points.",
+            "applicationCategory": "EducationalApplication",
+            "applicationSubCategory": "Historical atlas",
+            "operatingSystem": "Any (web browser with WebGL)",
+            "browserRequirements": "Requires JavaScript and WebGL",
+            "inLanguage": ["en", "fr", "es"],
+            "isAccessibleForFree": true,
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+            "author": { "@id": "https://terra-tempora.com/#publisher" },
+            "publisher": { "@id": "https://terra-tempora.com/#publisher" },
+            "license": "https://opensource.org/licenses/MIT",
+            "codeRepository": "https://github.com/EdgarMaucourant/terra-tempora",
+            "sameAs": ["https://github.com/EdgarMaucourant/terra-tempora", "https://mastodon.social/@terratempora"],
+            "about": [
+              { "@type": "Thing", "name": "World history" },
+              { "@type": "Thing", "name": "Historical geography" },
+              { "@type": "Thing", "name": "Historical borders" }
+            ],
+            "audience": { "@type": "EducationalAudience", "educationalRole": ["student", "teacher"] }
+          },
+          {
+            "@type": "Dataset",
+            "@id": "https://terra-tempora.com/#borders",
+            "name": "Terra Tempora historical borders",
+            "description": "Simplified borders of about 1,560 states and civilizations from 3400 BCE to 2024, year by year, built from the Cliopatria dataset of the Seshat Global History Databank with hand-traced additions, plus names, links between realms and events from Wikidata. Used by the Terra Tempora globe.",
+            "url": "https://github.com/EdgarMaucourant/terra-tempora/tree/main/public/data",
+            "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "isAccessibleForFree": true,
+            "creator": { "@id": "https://terra-tempora.com/#publisher" },
+            "isBasedOn": "https://github.com/Seshat-Global-History-Databank/cliopatria",
+            "temporalCoverage": "-3400/2024",
+            "spatialCoverage": { "@type": "Place", "name": "World" },
+            "keywords": ["historical borders", "polities", "empires", "civilizations", "world history"],
+            "distribution": [
+              { "@type": "DataDownload", "name": "List of civilizations and their years", "encodingFormat": "application/json", "contentUrl": "https://terra-tempora.com/data/civilizations.json" }
+            ]
+          }
+        ]
+      }
+    </script>
     <!-- Lets Mastodon verify the site on the Terra Tempora profile. -->
     <link rel="me" href="https://mastodon.social/@terratempora" />
     <!-- Asked for before the app's code arrives: nothing is drawn without them. -->
@@ -12,6 +106,15 @@
     <link rel="preload" href="data/civilizations.json" as="fetch" crossorigin />
   </head>
   <body>
+    <!-- For readers and crawlers that don't run scripts: what the site is. -->
+    <noscript>
+      <section class="noscript" style="max-width: 40rem; margin: 2rem auto; padding: 0 1rem; background: #07090d; color: #f3f1ec; font: 1rem/1.5 sans-serif">
+        <h1>Terra Tempora: 5,000 years of world history on a globe</h1>
+        <p>Terra Tempora is a free interactive atlas of world history. It draws the borders of more than 1,500 civilizations, from 3400 BCE to today, on a 3D globe or a flat map. Pick a civilization, a country or a year to see the realms of that time, follow the key events (battles, treaties, rulers, capitals) with links to Wikipedia, or take the History travel, a flight through 141 turning points from Göbekli Tepe to today.</p>
+        <p>The borders come from Cliopatria, the open dataset of the Seshat Global History Databank; names, events and pictures come from Wikidata, Wikipedia and Wikimedia Commons. No account, no ads, no cookies.</p>
+        <p>The globe needs JavaScript and WebGL. Also in <a href="/?lang=fr">French</a> and <a href="/?lang=es">Spanish</a>. <a href="/llms.txt">About this site in plain text</a> · <a href="https://github.com/EdgarMaucourant/terra-tempora">Code on GitHub</a></p>
+      </section>
+    </noscript>
     <div id="app">
       <div id="globe" role="region" aria-label="3D globe showing the realms of the chosen year" data-i18n-label="globe.label"></div>
       <canvas id="map" class="map" hidden role="img" aria-label="Flat map showing the realms of the chosen year" data-i18n-label="map.label"></canvas>
