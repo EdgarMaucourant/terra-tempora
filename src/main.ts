@@ -1636,8 +1636,11 @@ function openCountry(k: Country, view: CountryView, options: { year?: number; pu
     .map((id) => known.get(id))
     .filter((c): c is Civilization => !!c);
   if (!list.length) return;
+  // The timeline stays on the year shown when one of the realms stood then;
+  // otherwise it goes to the year the most of them stood at once.
   const start = view === "territory" ? k.territoryYear : k.startYear;
-  openView(list, { year: options.year ?? start, push: options.push, fly: false, country: k, countryView: view });
+  const now = list.some((c) => c.from <= year && c.to >= year) ? year : start;
+  openView(list, { year: options.year ?? now, push: options.push, fly: false, country: k, countryView: view });
   // A territory is about the land, so it sits in the middle; a hand-picked
   // lineage centres on the realm it is built around.
   const focus = view === "nationality" && k.blurb ? known.get(k.focus) : undefined;
@@ -1950,6 +1953,20 @@ for (const id of ["search-button", "search-open"]) {
     openExplore("search");
   });
 }
+// The timeline's "Find an event": the search, listing the events.
+// Filtered on the realms on show and the period of the year shown, as
+// named under it (e.g. Antiquity).
+$("find-event").addEventListener("click", () => {
+  const { from, to } = eraAt(year);
+  const realms = home ? [] : highlighted;
+  openExplore("search");
+  landing?.search.showEvents({
+    name: country?.name ?? $("civ-title").textContent ?? undefined,
+    civs: realms.map((c) => c.id),
+    from: Math.max(FIRST_YEAR, from),
+    to: Math.min(NOW, to),
+  });
+});
 for (const button of document.querySelectorAll<HTMLButtonElement>("[data-explore]")) {
   button.addEventListener("click", () => {
     setMenu(false);

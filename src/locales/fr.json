@@ -142,6 +142,9 @@
     "nationMeta": "Nation actuelle · {continents}",
     "none": "Aucun résultat. Essayez un autre nom, continent ou période.",
     "placeholder": "Rechercher civilisations, pays, nations et événements",
+    "scope": "Événements de {name}",
+    "scopeLabel": "États",
+    "scopeRemove": "Afficher les événements de tous les États",
     "showAll": "Voir les {count}",
     "showMore": "Voir plus",
     "suggestEvent": "Un événement manque ? Proposez-le",
@@ -355,6 +358,8 @@
       "one": "{count} événement",
       "other": "{count} événements"
     },
+    "findEvent": "Trouver un événement",
+    "findEventTitle": "Rechercher les événements : batailles, traités, souverains et grandes étapes",
     "focus": "Époque de la civilisation",
     "fold": "Masquer les États et les événements",
     "gripLabel": "Redimensionner la frise : faites glisser, ou utilisez les flèches haut et bas",
