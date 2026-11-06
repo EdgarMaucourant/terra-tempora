@@ -134,8 +134,6 @@ export class Overview {
         eyebrow.textContent = t("home.panel.welcome");
         title.textContent = t("page.title");
         meta.hidden = true;
-        lede.textContent = t("home.panel.intro");
-        lede.hidden = false;
         const items = el("ul", "overview-civs overview-actions");
         for (const action of subject.actions) {
           const item = el("li");

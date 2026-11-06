@@ -41,8 +41,7 @@
   },
   "home": {
     "panel": {
-      "welcome": "Bienvenue sur",
-      "intro": "Ceci est un site amateur pour découvrir l’histoire des civilisations, visibles directement sur la Terre. Utilisez la zone en bas de page pour voyager à travers le temps. Le menu en haut à gauche vous permet de choisir entre quatre modes qui sont également disponibles ci-dessous :"
+      "welcome": "Bienvenue sur"
     },
     "modes": {
       "travel": "Survolez près de 12 000 ans d’histoire, de Göbekli Tepe au COVID-19, et voyez les pyramides, les grandes guerres, les traités et les découvertes cartographiés sur la planète.",

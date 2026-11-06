@@ -41,8 +41,7 @@
   },
   "home": {
     "panel": {
-      "welcome": "Welcome to",
-      "intro": "This is an amateur website to learn about the history of civilizations, mapped directly onto the Earth. Use the timeline at the bottom to travel through time, also four modes are available from the burger menu at the top left and below:"
+      "welcome": "Welcome to"
     },
     "modes": {
       "travel": "Fly through almost 12,000 years of history, from Göbekli Tepe to COVID-19, with the pyramids, great wars, treaties and discoveries mapped on the planet along the way.",
