@@ -12,7 +12,7 @@ timeline that runs from 10,000 BCE to today.
   or on a map in ten projections.
 - Opens a civilization at its largest extent, coloured together with its
   predecessors and successors, each with its own lane on the timeline.
-- Lists the 183 present-day countries, either by the land ("Countries") or by
+- Lists the 184 present-day countries, either by the land ("Countries") or by
   the civilizations that led to the nation ("Nations").
 - Places key events (battles, treaties, rulers, capitals) on the globe and the
   timeline, with pictures and links to Wikipedia, Britannica and World History
