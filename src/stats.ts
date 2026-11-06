@@ -39,6 +39,7 @@ const FEATURES: Record<string, string> = {
   "more-button": "Info menu",
   "sources-button": "Sources",
   "github-button": "GitHub",
+  "mastodon-button": "Mastodon",
   "tour-button": "Open tour",
   "about-button": "About",
   "panel-open": "Open side panel",

@@ -472,6 +472,10 @@
     "menu": "Code on GitHub",
     "title": "See the code of Terra Tempora on GitHub"
   },
+  "mastodon": {
+    "menu": "Follow on Mastodon",
+    "title": "Follow Terra Tempora on Mastodon"
+  },
   "support": {
     "back": "Back",
     "button": "Support",
