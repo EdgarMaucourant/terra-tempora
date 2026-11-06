@@ -283,5 +283,15 @@
   "title": "Le Danemark revendique tout le Groenland",
   "place": "Godthåb (l’actuelle Nuuk), capitale de la colonie",
   "summary": "Le Danemark, dont les colonies bordaient les côtes ouest et sud du Groenland, proclame sa souveraineté sur toute l’île. La Norvège la conteste et occupe une partie de la côte est en 1931, mais en 1933 la Cour permanente de justice internationale donne raison au Danemark."
+ },
+ "armistice-1918": {
+  "title": "L’armistice du 11 novembre",
+  "place": "Le wagon du maréchal Foch, en forêt de Compiègne, près de Rethondes",
+  "summary": "À l’aube du 11 novembre, dans le wagon du maréchal Foch en forêt de Compiègne, les envoyés allemands signent l’armistice avec les Alliés. Les canons se taisent à 11 heures, après quatre ans de guerre et quelque 17 millions de morts. L’Allemagne doit évacuer les territoires qu’elle occupe, Alsace et Lorraine comprises, livrer ses armes lourdes et sa flotte et laisser les Alliés occuper la rive gauche du Rhin. La paix elle-même vient avec le traité de Versailles en 1919. En juin 1940, Hitler fera signer à la France son propre armistice dans ce même wagon."
+ },
+ "german-surrender-1945": {
+  "title": "La capitulation allemande du 8 mai",
+  "place": "Berlin-Karlshorst, après une première signature à Reims",
+  "summary": "Une semaine après le suicide de Hitler, l’Allemagne capitule sans conditions. Le général Jodl signe un premier acte à Reims le 7 mai, au quartier général d’Eisenhower ; à la demande de Staline, un second est signé à Berlin-Karlshorst tard le 8 mai par le maréchal Keitel, devant le maréchal Joukov et les Alliés occidentaux, avec le général de Lattre de Tassigny pour la France. Les combats cessent à 23 h 01 ce soir-là, déjà le 9 mai à Moscou, d’où le jour de la Victoire fêté un jour plus tard en Russie. C’était une capitulation, non un armistice : l’Allemagne fut occupée et partagée entre les quatre Alliés. La guerre contre le Japon dura jusqu’en septembre."
  }
 }
