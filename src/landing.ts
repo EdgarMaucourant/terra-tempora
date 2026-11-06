@@ -49,6 +49,7 @@ export class Landing {
     /** Every event the search can find, downloaded when the search is first used. */
     loadEvents: () => Promise<FoundEvent[]> = async () => [],
     onEvent: (found: FoundEvent) => void = () => {},
+    onSuggest: (query: string) => void = () => {},
   ) {
     // Cards load their pictures as they scroll into the popup's view.
     this.observer = new IntersectionObserver((entries) => this.reveal(entries), {
@@ -112,6 +113,7 @@ export class Landing {
       () => this.drawOutlines(),
       loadEvents,
       onEvent,
+      onSuggest,
     );
 
     this.render();

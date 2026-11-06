@@ -2234,6 +2234,11 @@ Promise.all([
       () => Civilizations.outlines(base),
       findableEvents,
       openFound,
+      (query) =>
+        feedback.open(
+          { kind: "missing-event", name: query || undefined },
+          { type: "missing", message: t("feedback.missingEvent", { name: query }) },
+        ),
     );
     const picker = new Picker($("picker"), list.list, applyPicked);
     $("add-civs").addEventListener("click", () => picker.open(new Set(highlighted)));

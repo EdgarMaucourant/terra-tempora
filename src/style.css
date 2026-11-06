@@ -4214,3 +4214,11 @@ body:not(.home) .search-button span {
   display: grid;
   place-items: center;
 }
+
+.search-suggest {
+  margin: 16px 0 0;
+}
+
+.search-suggest .report-link {
+  margin: 0;
+}
