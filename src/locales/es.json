@@ -548,5 +548,10 @@
       "changes": "Solicitudes de cambios e incidencias en GitHub",
       "failed": "No se pudo cargar la lista de versiones. Inténtalo de nuevo más tarde."
     }
+  },
+  "disclaimer": {
+    "text": "Terra Tempora es un proyecto aficionado e independiente. Las fronteras son aproximaciones trazadas a partir de datos abiertos, y un mapa no siempre puede reflejar la complejidad de la historia: fechas, reivindicaciones y control del territorio a menudo fueron disputados. Aún quedan errores, y los corregimos continuamente a medida que se detectan. ¿Has visto alguno? {report}, así el mapa mejora para todos.",
+    "report": "Avísanos",
+    "label": "Sobre la precisión del mapa"
   }
 }

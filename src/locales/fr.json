@@ -548,5 +548,10 @@
       "changes": "Demandes de fusion et tickets sur GitHub",
       "failed": "La liste des versions n’a pas pu se charger. Merci de réessayer plus tard."
     }
+  },
+  "disclaimer": {
+    "text": "Terra Tempora est un projet amateur et indépendant. Les frontières sont des approximations tirées de données ouvertes, et une carte ne peut pas toujours rendre la complexité de l’histoire : dates, revendications et contrôle des territoires ont souvent été contestés. Des erreurs subsistent, et nous les corrigeons en continu au fil des signalements. Vous en repérez une ? {report}, cela améliore la carte pour tout le monde.",
+    "report": "Signalez-la",
+    "label": "À propos de la précision de la carte"
   }
 }
