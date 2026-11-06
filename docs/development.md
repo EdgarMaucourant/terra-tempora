@@ -26,7 +26,8 @@ Each `scripts/border-overrides/*.geojson` file holds hand-traced borders that
 - `Replaces` (optional): other realms whose shapes are cut out of those years
   as well, such as a kingdom it conquered or the dynasty it overthrew.
 - `Clips` (optional): neighbours that only lose the traced area for those
-  years.
+  years. With `Adds`, the realms that lose the land added (needed before
+  1800, when two realms may both draw the same land).
 - `Adds` (optional): `true` when the traced area is added to the realm's
   own shapes for those years instead of replacing them. Cliopatria draws the
   United States only where it had settled, so `united-states.geojson` adds the
@@ -39,6 +40,9 @@ Each `scripts/border-overrides/*.geojson` file holds hand-traced borders that
   `british-dominions.geojson` for Australia before 1901 (`Claim` says what
   each feature adds). Added land counts towards the realm's area as measured
   on the sphere.
+- `Removes` (optional): `true` with no outline takes the realm off the map
+  for those years (`russian-backed-regions.geojson`); with an outline, it only
+  takes that land off the realm, leaving it blank where no other realm has it.
 - `KeepSmall` (optional): `true` keeps every part of the shape, however
   small. Parts under 300 km² are otherwise dropped (all but the largest), so
   `french-india.geojson` needs it for French India's trading posts.
@@ -116,6 +120,30 @@ Marino, which Cliopatria places as a square about 15 km off, is drawn from
 today's border, by hand. Before 1800 the neighbour that held the land is
 listed in `Clips`. An enclave such as San Marino can't be cut out of the realm
 around it (shapes have no holes), so it is drawn over it, as Lesotho is.
+`russia-ussr.geojson` fixes land Cliopatria draws as Russian (Muscovy, the
+Tsardom, the Russian Empire, the USSR) in years it was not: states that kept
+their own rulers under a Russian occupation or protectorate (Moldavia and
+Wallachia during the occupations of 1769-1856, Bulgaria in 1878-1879, Romania
+in 1917-1918, Bukhara and Khiva, Uryankhay and the Tuvan People's Republic
+until 1944), land Russia had handed back or not yet taken (Livonia after 1582,
+Courland and Polish Livonia in 1713-1733, Gilan and Baku after 1732, Adjara
+until 1878, Kraków in 1915, the Turkmen lands until 1881-1884, the Pamirs
+until 1895), occupations that left the country in place (the Ili valley in
+1871-1884, Manchuria in 1900-1904 and 1946-1947, northern Iran in 1942-1946,
+Afghanistan in 1979-1989, extended in `independent-states.geojson`), and the
+Allied occupation zones, drawn as Germany (1945-1948), West Germany (1949),
+Austria (1945-1946) and Korea (1946-1947) instead of their occupiers. Each
+feature's `Note` or `Claim` says why and `Outline` which shape it reuses:
+Cliopatria's own outline of the nearest year it draws the state right,
+Natural Earth's Turkmenistan and Tajikistan (public domain) for the Turkmen
+lands and the Pamirs, and a hand-traced Khorezm oasis for Khiva (to within
+about 50 km). Occupations during a war are left as Cliopatria draws them, as
+for other countries, and so are annexations: the Baltic states from 1940,
+Finland (1809-1917) and Congress Poland (1815-1915), which were part of the
+Russian Empire with their own institutions. Cliopatria's Bessarabia of
+1812-1813 is in fact Moldavia west of the Prut, so it is taken off the map and
+drawn as Moldavia. The file was made with a script outside the repository
+from those sources.
 The list (`civilizations.json`) carries no outlines: the Civilizations popup's card
 outlines are in `civilization-shapes.json`, downloaded only once the landing
 page shows, so a link straight to the globe skips them.
