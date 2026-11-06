@@ -550,7 +550,7 @@
     }
   },
   "disclaimer": {
-    "text": "Terra Tempora is an amateur, independent project. Borders are approximations drawn from open data, and a map can’t always capture the complexity of history: dates, claims and control were often contested. Some errors remain, and we fix them continuously as they’re found. Spotted one? {report}, it makes the map better for everyone.",
+    "text": "Terra Tempora is an amateur, independent project. Borders are approximations drawn from open data, and a map can’t always capture the complexity of history: dates, claims and control were often contested. Large parts of history are still missing, such as the Americas or Australia before colonization; we’ll add them once we have good sources. Some errors remain, and we fix them continuously as they’re found. Spotted one? {report}, it makes the map better for everyone.",
     "report": "Please report it",
     "label": "About the map’s accuracy"
   }
