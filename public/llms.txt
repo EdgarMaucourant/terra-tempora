@@ -8,7 +8,7 @@ Terra Tempora is a non-commercial, amateur project by Edgar Maucourant, made for
 
 - See the world in any year: move the timeline from 10,000 BCE to today, or play time at 2 to 500 years a second, and watch realms rise, spread, meet and fall.
 - Civilizations: open any of about 1,560 states and empires (the Mongol Empire, the Roman Empire, the Han dynasty, the Inca Empire…) at its largest extent, coloured together with its predecessors and successors, with its opening paragraph, pictures and key figures from Wikipedia and Wikidata.
-- Countries: for each of the 183 countries of today, every civilization whose borders crossed its land.
+- Countries: for each of the 184 countries of today, every civilization whose borders crossed its land.
 - Nations: for each country of today, the chain of civilizations that led to the nation.
 - Events: battles, treaties, rulers and capitals placed on the globe and the timeline, with links to Wikipedia, Britannica and World History Encyclopedia.
 - History travel: a flight around the globe through 141 turning points, from Göbekli Tepe (about 9500 BCE) to today.

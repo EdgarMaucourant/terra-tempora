@@ -102,6 +102,20 @@ both draw goes to the smaller one). The outline is
 Cliopatria's own (the part Russia gains in 2024), so it fits its neighbours
 exactly. The other Ukrainian land Russia has occupied since 2022 is in Ukraine
 in Cliopatria too.
+`independent-states.geojson` draws states that Cliopatria leaves out for some
+years and folds into a larger neighbour: allies, satellites and personal unions
+drawn as if they were its own land, such as Czechoslovakia inside the USSR
+from 1969 to 1990, South Vietnam inside the United States from 1967 to 1972,
+Scotland inside England between the Union of the Crowns (1603) and the Acts
+of Union (1707), or Saxony inside Poland-Lithuania while its electors were
+kings of Poland. It also fills years Cliopatria leaves blank (Mexico
+1913-1919, El Salvador 1979-1991) and keeps San Marino from 1631 to today.
+Each feature's `Note` says why, and `Outline` which of Cliopatria's own
+outlines of the realm it reuses (the nearest year it does draw it); San
+Marino, which Cliopatria places as a square about 15 km off, is drawn from
+today's border, by hand. Before 1800 the neighbour that held the land is
+listed in `Clips`. An enclave such as San Marino can't be cut out of the realm
+around it (shapes have no holes), so it is drawn over it, as Lesotho is.
 The list (`civilizations.json`) carries no outlines: the Civilizations popup's card
 outlines are in `civilization-shapes.json`, downloaded only once the landing
 page shows, so a link straight to the globe skips them.
