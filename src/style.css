@@ -3008,6 +3008,7 @@ a {
 .traveling .view-mode,
 .traveling #projection-field,
 .traveling #add-civs,
+.traveling #find-event,
 .traveling #view-focus {
   display: none;
 }
@@ -4220,4 +4221,14 @@ body:not(.home) .search-button span {
   max-width: var(--landing-width);
   margin: -12px auto 0;
   padding: 0 var(--gutter) 20px;
+}
+
+.find-event {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.search-scope[hidden] {
+  display: none;
 }

@@ -142,6 +142,9 @@
     "nationMeta": "Nación actual · {continents}",
     "none": "Nada coincide. Prueba otro nombre, continente o período.",
     "placeholder": "Buscar civilizaciones, países, naciones y acontecimientos",
+    "scope": "Acontecimientos de {name}",
+    "scopeLabel": "Reinos",
+    "scopeRemove": "Mostrar los acontecimientos de todos los reinos",
     "showAll": "Ver los {count}",
     "showMore": "Ver más",
     "suggestEvent": "¿Falta un acontecimiento? Propónlo",
@@ -355,6 +358,8 @@
       "one": "{count} acontecimiento",
       "other": "{count} acontecimientos"
     },
+    "findEvent": "Buscar un acontecimiento",
+    "findEventTitle": "Buscar acontecimientos: batallas, tratados, soberanos y grandes etapas",
     "focus": "Época de la civilización actual",
     "fold": "Ocultar los reinos y acontecimientos",
     "gripLabel": "Cambiar el tamaño de la línea de tiempo: arrastra o usa las flechas arriba y abajo",

@@ -37,6 +37,8 @@ export class Landing {
   /** Each nation card's picture slot, by the Wikidata item of the nation's state today. */
   private flagSlots = new Map<string, HTMLElement[]>();
   private flagsAsked = false;
+  /** The search pop-up's search. */
+  search: Search;
 
   constructor(
     private root: HTMLElement,
@@ -103,7 +105,7 @@ export class Landing {
 
     for (const view of ["territory", "nationality"] as const) this.setupCountries(view, countries, onCountry);
 
-    new Search(
+    this.search = new Search(
       root.querySelector<HTMLElement>('.explore-section[data-section="search"]')!,
       list,
       countries,

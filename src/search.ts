@@ -65,6 +65,8 @@ const fold = (s: string) =>
  */
 export class Search {
   private kind: Kind | null = null;
+  /** Events limited to these realms' (the view the timeline showed), and their name. */
+  private scope: { name: string; civs: Set<string> } | null = null;
   private continent: Continent | null = null;
   private limit = PAGE;
   private input: HTMLInputElement;
@@ -137,6 +139,25 @@ export class Search {
       .catch((error: unknown) => console.error(error));
   }
 
+  /**
+   * Lists the events only, as the timeline's "Find an event" asks: those of
+   * the realms on show (when given) and of the given years.
+   */
+  showEvents(view: { name?: string; civs?: string[]; from: number; to: number }) {
+    this.continent = null;
+    for (const b of this.root.querySelectorAll("#search-continents button")) b.setAttribute("aria-pressed", String(b === b.parentElement!.firstElementChild));
+    this.scope = view.name && view.civs?.length ? { name: view.name, civs: new Set(view.civs) } : null;
+    const set = (id: string, year: number) => {
+      // Year 0 does not exist; 1 BCE is the nearest.
+      const y = Math.round(year) || -1;
+      this.root.querySelector<HTMLInputElement>(`#${id}`)!.value = String(Math.abs(y));
+      this.root.querySelector<HTMLSelectElement>(`#${id}-era`)!.value = y < 0 ? "bce" : "ce";
+    };
+    set("search-from", view.from);
+    set("search-to", view.to);
+    this.pick("events");
+  }
+
   /** The search box, to focus when the pop-up opens. */
   get field() {
     return this.input;
@@ -145,6 +166,7 @@ export class Search {
   private clear() {
     this.kind = null;
     this.continent = null;
+    this.scope = null;
     for (const id of ["search-from", "search-to"]) this.root.querySelector<HTMLInputElement>(`#${id}`)!.value = "";
     for (const b of this.root.querySelectorAll("#search-continents button")) b.setAttribute("aria-pressed", String(b === b.parentElement!.firstElementChild));
     this.update();
@@ -222,7 +244,14 @@ export class Search {
     };
     const events = this.events
       .map((f) => ({ f, r: rank(f) }))
-      .filter(({ f, r }) => r >= 0 && onContinent(f.continents) && f.event.year <= to && (f.event.to ?? f.event.year) >= from)
+      .filter(
+        ({ f, r }) =>
+          r >= 0 &&
+          onContinent(f.continents) &&
+          f.event.year <= to &&
+          (f.event.to ?? f.event.year) >= from &&
+          (!this.scope || f.event.civs.some((id) => this.scope!.civs.has(id))),
+      )
       .sort((a, b) => a.r - b.r || a.f.event.year - b.f.event.year)
       .map(({ f }) => {
         const e = f.event;
@@ -253,7 +282,22 @@ export class Search {
     const [from, to] = this.years();
     const years = from !== -Infinity || to !== Infinity;
     this.root.querySelector<HTMLElement>("#search-years-hint")!.hidden = !years || this.kind === "civs" || this.kind === "events";
-    this.root.querySelector<HTMLElement>("#search-clear")!.hidden = !years && !this.continent && !this.kind;
+    this.root.querySelector<HTMLElement>("#search-clear")!.hidden = !years && !this.continent && !this.kind && !this.scope;
+
+    // The realms the events are limited to, as a chip that lifts the limit.
+    const scope = this.root.querySelector<HTMLElement>("#search-scope")!;
+    scope.hidden = !this.scope;
+    if (this.scope) {
+      const button = el("button", "chip", `${t("search.scope", { name: this.scope.name })} ×`);
+      button.type = "button";
+      button.setAttribute("aria-pressed", "true");
+      button.title = t("search.scopeRemove");
+      button.addEventListener("click", () => {
+        this.scope = null;
+        this.update();
+      });
+      scope.replaceChildren(button);
+    }
 
     // Type chips, each with how many it holds.
     const types = this.root.querySelector<HTMLElement>("#search-types")!;
