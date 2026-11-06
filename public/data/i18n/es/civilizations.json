@@ -62,6 +62,9 @@
  "empire-of-brazil": {
   "name": "Imperio del Brasil"
  },
+ "republic-of-china": {
+  "name": "República de China"
+ },
  "empire-of-china": {
   "name": "Imperio de China"
  },
@@ -468,7 +471,7 @@
   "name": "Hunos"
  },
  "mali-federation": {
-  "name": "Federación de Malí"
+  "name": "Mali"
  },
  "republic-of-new-granada": {
   "name": "República de la Nueva Granada"
@@ -1443,7 +1446,7 @@
   "name": "Imperio de Corea"
  },
  "sultanate-of-brunei": {
-  "name": "Imperio de Brunéi"
+  "name": "Brunéi"
  },
  "sultanate-of-malacca": {
   "name": "Sultanato de Malaca"
@@ -2246,6 +2249,9 @@
  "irish-free-state": {
   "name": "Estado Libre Irlandés"
  },
+ "eire": {
+  "name": "Irlanda"
+ },
  "principality-of-wallachia": {
   "name": "Valaquia"
  },
@@ -2729,7 +2735,7 @@
  "county-of-rouergue": {
   "name": "Rouergue"
  },
- "republic-of-albania": {
+ "people-s-socialist-republic-of-albania": {
   "name": "República Popular de Albania"
  },
  "republic-of-pisa": {
@@ -3631,6 +3637,9 @@
  },
  "grenada": {
   "name": "Granada"
+ },
+ "micronesia": {
+  "name": "Estados Federados de Micronesia"
  },
  "french-india": {
   "name": "India francesa"
