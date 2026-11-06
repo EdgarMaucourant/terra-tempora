@@ -495,7 +495,7 @@
   "name": "Pérou"
  },
  "mali-federation": {
-  "name": "Fédération du Mali"
+  "name": "Mali"
  },
  "republic-of-new-granada": {
   "name": "République de Nouvelle-Grenade"
@@ -1536,7 +1536,7 @@
   "name": "Empire de Corée"
  },
  "sultanate-of-brunei": {
-  "name": "Empire de Brunei"
+  "name": "Brunei"
  },
  "kamarupa-kingdom": {
   "name": "Kamarupa"
@@ -2405,6 +2405,9 @@
  "irish-free-state": {
   "name": "État libre d’Irlande"
  },
+ "eire": {
+  "name": "Irlande"
+ },
  "principality-of-wallachia": {
   "name": "Valachie"
  },
@@ -2930,7 +2933,7 @@
  "albania": {
   "name": "Albanie"
  },
- "republic-of-albania": {
+ "people-s-socialist-republic-of-albania": {
   "name": "République populaire socialiste d’Albanie"
  },
  "republic-of-pisa": {
@@ -3867,7 +3870,7 @@
   "name": "Malte"
  },
  "micronesia": {
-  "name": "Micronésie"
+  "name": "États fédérés de Micronésie"
  },
  "first-french-colonial-empire": {
   "name": "Premier empire colonial français"
