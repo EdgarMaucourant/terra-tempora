@@ -1,18 +1,6 @@
 {
   "releases": [
     {
-      "version": "1.8.1",
-      "date": "2026-11-06",
-      "changes": [
-        {
-          "en": "Crimea is shown as part of Ukraine again from 2024 to today, within Ukraine’s internationally recognised borders, although Russia has occupied it since 2014. It was wrongly drawn as part of Russia.",
-          "fr": "La Crimée apparaît de nouveau comme une partie de l’Ukraine de 2024 à aujourd’hui, dans les frontières de l’Ukraine reconnues internationalement, bien que la Russie l’occupe depuis 2014. Elle était dessinée à tort comme une partie de la Russie.",
-          "es": "Crimea vuelve a mostrarse como parte de Ucrania de 2024 a hoy, dentro de las fronteras de Ucrania reconocidas internacionalmente, aunque Rusia la ocupa desde 2014. Se dibujaba por error como parte de Rusia.",
-          "links": [27]
-        }
-      ]
-    },
-    {
       "version": "1.8.0",
       "date": "2026-11-06",
       "changes": [
