@@ -1,6 +1,18 @@
 {
   "releases": [
     {
+      "version": "1.8.2",
+      "date": "2026-11-06",
+      "changes": [
+        {
+          "en": "Fixed land drawn as part of Russia or the Soviet Union in years it was not: Moldavia and Wallachia during the Russian occupations, Bulgaria in 1878-1879, Romania in 1917-1918, Bukhara and Khiva, Tuva before 1944, Manchuria, northern Iran in 1942-1946, all of Afghanistan in 1979-1989, and lands Russia had given back or not yet taken, from Livonia and Courland to Batumi, the Turkmen lands and the Pamirs. Germany, Austria and Korea under Allied occupation now show as themselves, not as their occupiers.",
+          "fr": "Correction de terres dessinées comme russes ou soviétiques les années où elles ne l’étaient pas : la Moldavie et la Valachie pendant les occupations russes, la Bulgarie en 1878-1879, la Roumanie en 1917-1918, Boukhara et Khiva, Touva avant 1944, la Mandchourie, le nord de l’Iran en 1942-1946, tout l’Afghanistan en 1979-1989, et des terres que la Russie avait rendues ou pas encore prises, de la Livonie et la Courlande à Batoumi, aux terres turkmènes et au Pamir. L’Allemagne, l’Autriche et la Corée sous occupation alliée apparaissent désormais sous leur propre nom, et non comme leurs occupants.",
+          "es": "Corrección de tierras dibujadas como rusas o soviéticas en años en que no lo eran: Moldavia y Valaquia durante las ocupaciones rusas, Bulgaria en 1878-1879, Rumanía en 1917-1918, Bujará y Jiva, Tuvá antes de 1944, Manchuria, el norte de Irán en 1942-1946, todo Afganistán en 1979-1989, y tierras que Rusia había devuelto o aún no había tomado, desde Livonia y Curlandia hasta Batumi, las tierras turcomanas y el Pamir. Alemania, Austria y Corea bajo ocupación aliada aparecen ahora con su propio nombre, y no como sus ocupantes.",
+          "links": [30]
+        }
+      ]
+    },
+    {
       "version": "1.8.1",
       "date": "2026-11-06",
       "changes": [
