@@ -144,6 +144,7 @@
     "placeholder": "Buscar civilizaciones, países, naciones y acontecimientos",
     "showAll": "Ver los {count}",
     "showMore": "Ver más",
+    "suggestEvent": "¿Falta un acontecimiento? Propónlo",
     "title": "Buscar",
     "to": "Hasta el año",
     "type": "Tipo",
@@ -492,6 +493,7 @@
   "feedback": {
     "about": "Sobre: {name}",
     "aboutApp": "Sobre Terra Tempora en general",
+    "aboutMissingEvent": "Sobre: un acontecimiento que falta",
     "aboutPlace": "Sobre: este lugar del mapa en {year}",
     "checkFailed": "No se pudo cargar la comprobación antispam. Inténtalo de nuevo más tarde.",
     "failed": "No se pudo enviar el aviso. Inténtalo de nuevo más tarde.",
@@ -499,6 +501,7 @@
     "link": "Avisar de un problema o sugerir algo",
     "linkApp": "Avisar de un problema o sugerir una mejora",
     "messageLabel": "Tu mensaje",
+    "missingEvent": "Acontecimiento que falta: {name}\nCuándo: \nDónde: \nUna fuente (un enlace ayuda): ",
     "placeholder": "¿Qué está mal o qué falta, y cómo lo sabes? Una fuente ayuda.",
     "privacy": "Los revisores leen todos los avisos. No incluyas datos personales, como tu correo, en el mensaje.",
     "send": "Enviar",

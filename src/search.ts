@@ -4,6 +4,7 @@ import { continentFinder } from "./continentAt";
 import { countryCivIds, type Country, type CountryView } from "./countries";
 import { el } from "./dom";
 import { badgeSvg, kindLabel, type HistoryEvent } from "./events";
+import { queryWords, rank as matchRank, wordsOf } from "./fuzzy";
 import { formatNumber, lang, t } from "./i18n";
 import { formatRange, formatYear } from "./years";
 
@@ -42,6 +43,7 @@ export interface FoundEvent {
 
 interface Indexed extends FoundEvent {
   names: string[];
+  words: string[];
   continents: Continent[];
 }
 
@@ -66,7 +68,8 @@ export class Search {
   private continent: Continent | null = null;
   private limit = PAGE;
   private input: HTMLInputElement;
-  private names = new Map<Civilization, string[]>();
+  private names = new Map<Civilization, { names: string[]; words: string[] }>();
+  private countryNames = new Map<Country, { names: string[]; words: string[] }>();
   /** The events, once downloaded: they are asked for when the search is first used. */
   private events: Indexed[] = [];
   private eventsAsked = false;
@@ -82,9 +85,13 @@ export class Search {
     /** Every event that can be found, with the history travel's turning points. */
     private loadEvents: () => Promise<FoundEvent[]>,
     private onEvent: (found: FoundEvent) => void,
+    /** Opens the report form to suggest a missing event, with what was typed. */
+    onSuggest: (query: string) => void,
   ) {
     this.input = root.querySelector<HTMLInputElement>("#all-search")!;
-    for (const c of list) this.names.set(c, [c.name, ...c.names].map(fold));
+    const indexed = (names: string[]) => ({ names, words: wordsOf(names) });
+    for (const c of list) this.names.set(c, indexed([c.name, ...c.names].map(fold)));
+    for (const k of countries) this.countryNames.set(k, indexed([fold(k.name)]));
     this.input.addEventListener("input", () => this.update(true));
     // The search pop-up focuses its box as it opens: the events download then.
     this.input.addEventListener("focus", () => this.fetchEvents());
@@ -107,6 +114,7 @@ export class Search {
       root.querySelector(`#${id}`)!.addEventListener(id.endsWith("era") ? "change" : "input", () => this.update());
     }
     root.querySelector("#search-clear")!.addEventListener("click", () => this.clear());
+    root.querySelector("#search-suggest")!.addEventListener("click", () => onSuggest(this.input.value.trim()));
     this.update();
   }
 
@@ -121,7 +129,8 @@ export class Search {
           // Out at sea, an event takes its realms' continents.
           const here = continentAt(e.lonLat[0], e.lonLat[1]);
           const continents = here ? [here] : [...new Set(e.civs.flatMap((id) => civs.get(id)?.continents ?? []))];
-          return { ...f, names: [e.title, e.place].map(fold), continents };
+          const names = [e.title, e.place].map(fold);
+          return { ...f, names, words: wordsOf(names), continents };
         });
         this.update();
       })
@@ -171,7 +180,9 @@ export class Search {
     const stood = (c: Civilization) => c.from <= to && c.to >= from;
     const onContinent = (list: Continent[]) => !this.continent || list.includes(this.continent);
     // Names that start with the words come first.
-    const rank = (names: string[]) => (!query ? 0 : names.some((n) => n.startsWith(query)) ? 0 : names.some((n) => n.includes(query)) ? 1 : -1);
+    // Names that hold the words come next, then those that match them despite a typo.
+    const words = queryWords(query);
+    const rank = ({ names, words: nameWords }: { names: string[]; words: string[] }) => matchRank(query, words, names, nameWords);
 
     const civs = this.list
       .map((c) => ({ c, r: rank(this.names.get(c)!) }))
@@ -191,7 +202,7 @@ export class Search {
     const places = (kind: "countries" | "nations") => {
       const view = VIEW[kind];
       return this.countries
-        .map((k) => ({ k, r: rank([fold(k.name)]) }))
+        .map((k) => ({ k, r: rank(this.countryNames.get(k)!) }))
         .filter(
           ({ k, r }) =>
             r >= 0 &&
@@ -210,7 +221,7 @@ export class Search {
         }));
     };
     const events = this.events
-      .map((f) => ({ f, r: rank(f.names) }))
+      .map((f) => ({ f, r: rank(f) }))
       .filter(({ f, r }) => r >= 0 && onContinent(f.continents) && f.event.year <= to && (f.event.to ?? f.event.year) >= from)
       .sort((a, b) => a.r - b.r || a.f.event.year - b.f.event.year)
       .map(({ f }) => {
