@@ -292,7 +292,9 @@ console.log(`${shapes.length} border shapes from ${raw.features.length} Cliopatr
 // conquered, or the dynasty it overthrew), are cut out of those years; realms
 // listed in its Clips (neighbours it took land from) lose the traced area for
 // those years. Then the traced shape goes in. New shapes get ids after
-// Cliopatria's.
+// Cliopatria's. A feature with Removes (and no outline) only takes its realm
+// off the map for its years: land Cliopatria gives a realm that should not be
+// drawn, which other override features then give back to its owner.
 let nextId = raw.features.length;
 const credits = [];
 const additions = [];
@@ -302,6 +304,19 @@ for (const file of existsSync(OVERRIDES) ? readdirSync(OVERRIDES).filter((f) => 
     const p = f.properties;
     if (p.Adds) {
       additions.push({ file, ...f });
+      continue;
+    }
+    if (p.Removes) {
+      shapes = shapes.flatMap((s) =>
+        s.name !== p.Name
+          ? [s]
+          : cutYears([s.from, s.to], [p.FromYear, p.ToYear]).map(([from, to], i) => ({
+              ...s,
+              id: i === 0 ? s.id : nextId++,
+              from,
+              to,
+            })),
+      );
       continue;
     }
     const before = shapes.find((s) => s.name === p.Name);
