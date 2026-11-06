@@ -551,5 +551,41 @@
  },
  "san-marino": {
   "name": "Saint-Marin"
+ },
+ "palestine": {
+  "name": "Palestine"
+ },
+ "comoros": {
+  "name": "Comores"
+ },
+ "kiribati": {
+  "name": "Kiribati"
+ },
+ "liechtenstein": {
+  "name": "Liechtenstein"
+ },
+ "maldives": {
+  "name": "Maldives"
+ },
+ "malta": {
+  "name": "Malte"
+ },
+ "marshall-islands": {
+  "name": "Îles Marshall"
+ },
+ "micronesia": {
+  "name": "Micronésie"
+ },
+ "nauru": {
+  "name": "Nauru"
+ },
+ "samoa": {
+  "name": "Samoa"
+ },
+ "tonga": {
+  "name": "Tonga"
+ },
+ "tuvalu": {
+  "name": "Tuvalu"
  }
 }
