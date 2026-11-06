@@ -1951,9 +1951,18 @@ for (const id of ["search-button", "search-open"]) {
   });
 }
 // The timeline's "Find an event": the search, listing the events.
+// Filtered on the realms on show and the period of the year shown, as
+// named under it (e.g. Antiquity).
 $("find-event").addEventListener("click", () => {
+  const { from, to } = eraAt(year);
+  const realms = home ? [] : highlighted;
   openExplore("search");
-  landing?.search.showEvents();
+  landing?.search.showEvents({
+    name: country?.name ?? $("civ-title").textContent ?? undefined,
+    civs: realms.map((c) => c.id),
+    from: Math.max(FIRST_YEAR, from),
+    to: Math.min(NOW, to),
+  });
 });
 for (const button of document.querySelectorAll<HTMLButtonElement>("[data-explore]")) {
   button.addEventListener("click", () => {
