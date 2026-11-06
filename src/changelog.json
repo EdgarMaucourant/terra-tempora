@@ -1,6 +1,18 @@
 {
   "releases": [
     {
+      "version": "1.8.1",
+      "date": "2026-11-06",
+      "changes": [
+        {
+          "en": "Fixed states drawn as part of a larger neighbour in years the border data had left out: Czechoslovakia after 1968 and Poland, Hungary, Romania and Bulgaria just after 1945 (no longer inside the Soviet Union), South Vietnam (no longer inside the United States), Scotland before the 1707 union with England, Saxony, Hanover, Luxembourg, Japan, Iraq, Afghanistan and Brunei. San Marino now shows from 1631 to today, and Mexico and El Salvador no longer vanish for a few years.",
+          "fr": "Correction d’États dessinés comme une partie d’un voisin plus grand, les années où les données de frontières les omettaient : la Tchécoslovaquie après 1968 ainsi que la Pologne, la Hongrie, la Roumanie et la Bulgarie juste après 1945 (qui ne sont plus dans l’Union soviétique), le Sud-Vietnam (qui n’est plus dans les États-Unis), l’Écosse avant son union avec l’Angleterre en 1707, la Saxe, le Hanovre, le Luxembourg, le Japon, l’Irak, l’Afghanistan et Brunei. Saint-Marin apparaît désormais de 1631 à aujourd’hui, et le Mexique et le Salvador ne disparaissent plus pendant quelques années.",
+          "es": "Corrección de Estados dibujados como parte de un vecino mayor en los años que los datos de fronteras omitían: Checoslovaquia después de 1968 y Polonia, Hungría, Rumanía y Bulgaria justo después de 1945 (que ya no están dentro de la Unión Soviética), Vietnam del Sur (que ya no está dentro de Estados Unidos), Escocia antes de su unión con Inglaterra en 1707, Sajonia, Hannover, Luxemburgo, Japón, Irak, Afganistán y Brunéi. San Marino aparece ahora desde 1631 hasta hoy, y México y El Salvador ya no desaparecen durante algunos años.",
+          "links": [29]
+        }
+      ]
+    },
+    {
       "version": "1.8.0",
       "date": "2026-11-06",
       "changes": [
