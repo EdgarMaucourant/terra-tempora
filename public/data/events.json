@@ -1075,6 +1075,49 @@
    "summary": "Denmark, whose colonies lay along Greenland's west and south coasts, declares its sovereignty over the whole island. Norway contests it and occupies part of the east coast in 1931, but in 1933 the Permanent Court of International Justice rules for Denmark.",
    "wikipedia": "Legal_Status_of_Eastern_Greenland",
    "search": "Danish sovereignty over Greenland 1921"
+  },
+  {
+   "id": "armistice-1918",
+   "kind": "treaty",
+   "year": 1918,
+   "title": "The Armistice of 11 November",
+   "place": "Marshal Foch's railway carriage in the forest of Compiègne, near Rethondes",
+   "lonLat": [
+    2.906,
+    49.427
+   ],
+   "civs": [
+    "french-third-republic",
+    "german-empire",
+    "kingdom-of-great-britain",
+    "united-states-of-america"
+   ],
+   "alongside": true,
+   "summary": "At dawn on 11 November, in Marshal Foch's railway carriage in the forest of Compiègne, German envoys sign the armistice with the Allies. The guns fall silent at 11 o'clock, after four years of war and some 17 million dead. Germany must leave the lands it occupies, Alsace and Lorraine included, hand over its heavy weapons and fleet and let the Allies occupy the left bank of the Rhine. Peace itself comes with the Treaty of Versailles in 1919. In June 1940 Hitler had France sign its own armistice in the same carriage.",
+   "wikipedia": "Armistice_of_11_November_1918",
+   "search": "Armistice 11 November 1918"
+  },
+  {
+   "id": "german-surrender-1945",
+   "kind": "treaty",
+   "year": 1945,
+   "title": "Germany surrenders on 8 May",
+   "place": "Berlin-Karlshorst, after a first signing in Reims",
+   "lonLat": [
+    13.592,
+    52.487
+   ],
+   "civs": [
+    "french-fourth-republic",
+    "nazi-germany",
+    "union-of-soviet-socialist-republics",
+    "kingdom-of-great-britain",
+    "united-states-of-america"
+   ],
+   "alongside": true,
+   "summary": "A week after Hitler's suicide, Germany surrenders without conditions. General Jodl signs a first act in Reims on 7 May, at Eisenhower's headquarters; at Stalin's demand a second is signed in Berlin-Karlshorst late on 8 May by Marshal Keitel, before Marshal Zhukov and the Western Allies, with General de Lattre de Tassigny for France. The fighting stops at 23:01 that night, already 9 May in Moscow, which is why Russia marks Victory Day a day later. This was a surrender, not an armistice: Germany was occupied and divided by the four Allies. The war went on against Japan until September.",
+   "wikipedia": "German_Instrument_of_Surrender",
+   "search": "German surrender 1945 V-E Day"
   }
  ]
 }

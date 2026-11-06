@@ -1,6 +1,18 @@
 {
   "releases": [
     {
+      "version": "1.8.0",
+      "date": "2026-11-06",
+      "changes": [
+        {
+          "en": "Two new events, suggested through the search: the Armistice of 11 November 1918, signed in the forest of Compiègne, and Germany’s surrender on 8 May 1945, which ended the Second World War in Europe. They show with France, Germany, Britain and the United States (and the Soviet Union for 1945), and the search finds them.",
+          "fr": "Deux nouveaux événements, proposés depuis la recherche : l’armistice du 11 novembre 1918, signé en forêt de Compiègne, et la capitulation allemande du 8 mai 1945, qui met fin à la Seconde Guerre mondiale en Europe. Ils s’affichent avec la France, l’Allemagne, le Royaume-Uni et les États-Unis (et l’Union soviétique pour 1945), et la recherche les trouve.",
+          "es": "Dos nuevos acontecimientos, propuestos desde la búsqueda: el armisticio del 11 de noviembre de 1918, firmado en el bosque de Compiègne, y la capitulación de Alemania el 8 de mayo de 1945, que puso fin a la Segunda Guerra Mundial en Europa. Aparecen con Francia, Alemania, el Reino Unido y Estados Unidos (y la Unión Soviética para 1945), y la búsqueda los encuentra.",
+          "links": [23]
+        }
+      ]
+    },
+    {
       "version": "1.7.0",
       "date": "2026-11-06",
       "changes": [
