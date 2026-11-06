@@ -1813,7 +1813,7 @@ function showHome() {
       { label: t("landing.nations"), text: t("home.modes.nations"), run: () => openExplore("nations") },
     ],
   });
-  document.title = t("page.title");
+  document.title = t("page.home");
   // The first time, the globe turns to the visitor's part of the world once
   // the borders are in; coming back from a view, it pulls out to see the
   // whole world again.

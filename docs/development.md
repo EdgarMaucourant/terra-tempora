@@ -111,7 +111,7 @@ a civilization is highlighted with its hand-picked family alone.
 
 ## Languages
 
-The interface is in English and French. The language is, in order: `?lang=fr`
+The interface is in English, French and Spanish. The language is, in order: `?lang=fr`
 in the address, the reader's earlier choice from the language menu (top right),
 the browser's languages, then English.
 

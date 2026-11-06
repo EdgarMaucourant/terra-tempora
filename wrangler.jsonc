@@ -17,7 +17,9 @@
     // status, not the globe: the app's views live after the #, so only
     // scanners probing for /.env, /wp-config.php and the like end up there.
     "not_found_handling": "404-page",
-    "run_worker_first": ["/api/*"]
+    // The Worker answers /api/* and serves the home page in the language
+    // ?lang= asks for (its title and link previews); see worker/index.js.
+    "run_worker_first": ["/api/*", "/"]
   },
   "vars": {
     // Where reports are filed. The token that writes them is the GITHUB_TOKEN secret.

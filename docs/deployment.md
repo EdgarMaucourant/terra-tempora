@@ -28,6 +28,43 @@ Branches, add a rule for `main`: require a pull request with one approval,
 require review from Code Owners (`.github/CODEOWNERS`), and require the
 "Check" status to pass.
 
+## Search engines and link previews
+
+What search engines, AI assistants and social sites read about the site:
+
+- `index.html` head: title, description, canonical address, the three
+  languages (`hreflang`: `/`, `/?lang=fr`, `/?lang=es`), Open Graph and
+  Twitter/Mastodon preview lines, and JSON-LD (the website, the app, its
+  publisher and the border dataset). A `<noscript>` block describes the site
+  for crawlers that don't run scripts.
+- `worker/index.js` swaps the language lines (title, description, canonical,
+  preview text and picture) for `/?lang=fr` and `/?lang=es`, which is why
+  `run_worker_first` in `wrangler.jsonc` includes `/`. When the English text
+  in `index.html` changes, change `HOME_TEXT` there and `page.home` in the
+  locales too.
+- `public/robots.txt` (everything open but `/api/` and `/stats`),
+  `public/sitemap.xml` and `public/llms.txt` (a plain summary of the site and
+  its link format for AI assistants).
+- Icons: `public/favicon.svg` (the TT monogram on a globe) and
+  `favicon.ico` (16, 32, 48 px) for browser tabs; `apple-touch-icon.png`
+  (180 px) and `icons/icon-192.png`, `icons/icon-512.png` (the TT monogram on
+  the globe from the launch pictures) for phones and `site.webmanifest`.
+- Link previews: `public/social/og-en.jpg`, `og-fr.jpg`, `og-es.jpg`
+  (1200 × 630). They quote the counts of civilizations and turning points, so
+  remake them if those change a lot.
+
+After publishing, a few things are done outside the repository:
+
+1. In Cloudflare, Security → Bots (or AI Crawl Control): leave "Block AI
+   bots" off and don't turn on Cloudflare's managed `robots.txt`, or AI
+   assistants won't be able to read the site.
+2. Add the site to [Google Search Console](https://search.google.com/search-console)
+   and [Bing Webmaster Tools](https://www.bing.com/webmasters) (Bing also
+   feeds ChatGPT search and DuckDuckGo), and submit
+   `https://terra-tempora.com/sitemap.xml` in both.
+3. Check the previews with the [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/)
+   and Mastodon (paste the link in a draft post).
+
 ## Feedback
 
 Visitors can report an error, missing data or an idea from the "Report a
