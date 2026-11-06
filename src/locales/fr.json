@@ -132,6 +132,7 @@
       "oc": "Océanie",
       "sa": "Amérique du Sud"
     },
+    "events": "Événements",
     "count": {
       "one": "{count} résultat",
       "other": "{count} résultats"
@@ -140,9 +141,10 @@
     "from": "De l’an",
     "nationMeta": "Nation actuelle · {continents}",
     "none": "Aucun résultat. Essayez un autre nom, continent ou période.",
-    "placeholder": "Rechercher civilisations, pays et nations",
+    "placeholder": "Rechercher civilisations, pays, nations et événements",
     "showAll": "Voir les {count}",
     "showMore": "Voir plus",
+    "suggestEvent": "Un événement manque ? Proposez-le",
     "title": "Rechercher",
     "to": "À l’an",
     "type": "Type",
@@ -491,6 +493,7 @@
   "feedback": {
     "about": "À propos de : {name}",
     "aboutApp": "À propos de Terra Tempora en général",
+    "aboutMissingEvent": "À propos : un événement manquant",
     "aboutPlace": "À propos : cet endroit de la carte en {year}",
     "checkFailed": "La vérification anti-spam n’a pas pu se charger. Merci de réessayer plus tard.",
     "failed": "Le signalement n’a pas pu être envoyé. Merci de réessayer plus tard.",
@@ -498,6 +501,7 @@
     "link": "Signaler un problème ou suggérer quelque chose",
     "linkApp": "Signaler un problème ou suggérer une amélioration",
     "messageLabel": "Votre message",
+    "missingEvent": "Événement manquant : {name}\nQuand : \nOù : \nUne source (un lien aide) : ",
     "placeholder": "Qu’est-ce qui est faux ou manque, et comment le savez-vous ? Une source aide.",
     "privacy": "Chaque signalement est lu par un relecteur. Merci de ne pas mettre d’informations personnelles dans le message, comme votre e-mail.",
     "send": "Envoyer",

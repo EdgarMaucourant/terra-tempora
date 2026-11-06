@@ -514,7 +514,7 @@
               <div class="filters">
                 <label class="search search-all">
                   <span class="visually-hidden" data-i18n="common.search">Search</span>
-                  <input id="all-search" type="search" autocomplete="off" placeholder="Search civilizations, countries and nations" data-i18n-placeholder="search.placeholder" />
+                  <input id="all-search" type="search" autocomplete="off" placeholder="Search civilizations, countries, nations and events" data-i18n-placeholder="search.placeholder" />
                 </label>
               </div>
               <div id="search-types" class="era-filter search-types" role="group" aria-label="Type" data-i18n-label="search.type"></div>
@@ -538,6 +538,12 @@
               <p id="search-count" class="count" aria-live="polite"></p>
             </div>
             <div id="search-results" class="search-results"></div>
+            <p class="search-suggest">
+              <button id="search-suggest" class="ghost" type="button">
+                <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg>
+                <span data-i18n="search.suggestEvent">Can’t find an event? Suggest it</span>
+              </button>
+            </p>
           </section>
           <section class="explore-section" data-section="civs">
             <div class="landing-head">

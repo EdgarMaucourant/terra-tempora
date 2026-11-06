@@ -13,7 +13,7 @@ import { formatYear } from "./years";
 
 interface FeedbackContext {
   /** What the report is about. */
-  kind: "realm" | "event" | "turning-point" | "place" | "app";
+  kind: "realm" | "event" | "turning-point" | "place" | "app" | "missing-event";
   /** The item's id, e.g. a civilization or event id. */
   id?: string;
   /** Its name as shown, e.g. "Battle of Mohi". */
@@ -83,6 +83,8 @@ export class Feedback {
   private returnFocus: HTMLElement | null = null;
   private token = "";
   private widget: string | null = null;
+  /** Text the form opened with, which alone is not a report. */
+  private preset = "";
 
   constructor(private root: HTMLElement) {
     this.form = root.querySelector("form")!;
@@ -109,22 +111,35 @@ export class Feedback {
     });
   }
 
-  open(context: FeedbackContext) {
+  /** Opens the form; `preset` picks the kind of report and starts the message. */
+  open(context: FeedbackContext, preset?: { type: "error" | "missing" | "idea"; message: string }) {
     this.context = context;
     this.returnFocus = document.activeElement as HTMLElement | null;
     const about = this.root.querySelector<HTMLElement>("#feedback-about")!;
-    about.textContent = context.name
-      ? t("feedback.about", { name: context.name })
-      : context.kind === "place" && context.year !== undefined
-        ? t("feedback.aboutPlace", { year: formatYear(context.year) })
-        : t("feedback.aboutApp");
+    about.textContent =
+      context.kind === "missing-event"
+        ? t("feedback.aboutMissingEvent")
+        : context.name
+          ? t("feedback.about", { name: context.name })
+          : context.kind === "place" && context.year !== undefined
+            ? t("feedback.aboutPlace", { year: formatYear(context.year) })
+            : t("feedback.aboutApp");
     this.form.reset();
     this.status.textContent = "";
     this.send.disabled = false;
     this.send.hidden = false;
     this.cancel.textContent = t("common.cancel");
     this.root.hidden = false;
-    this.form.querySelector("textarea")!.focus();
+    const text = this.form.querySelector("textarea")!;
+    this.preset = preset?.message ?? "";
+    if (preset) {
+      this.form.querySelector<HTMLInputElement>(`input[name=type][value=${preset.type}]`)!.checked = true;
+      text.value = preset.message;
+    }
+    text.focus();
+    // The caret waits at the end of the first line, ready for the name.
+    const firstLine = this.preset.indexOf("\n");
+    if (firstLine >= 0) text.setSelectionRange(firstLine, firstLine);
     if (TURNSTILE_KEY) void this.showTurnstile();
   }
 
@@ -152,7 +167,7 @@ export class Feedback {
   private async submit() {
     const data = new FormData(this.form);
     const message = String(data.get("message") ?? "").trim();
-    if (message.length < 10) {
+    if (message.length < 10 || message === this.preset.trim()) {
       this.status.textContent = t("feedback.tooShort");
       return;
     }
