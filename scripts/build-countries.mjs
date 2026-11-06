@@ -31,11 +31,8 @@ const MIN_CROSSING_OF_CIV = 0.1;
 const NOT_COUNTRIES = new Set([
   "british-overseas-territories",
   "commonwealth-of-nations",
-  "gaza-hamas",
-  "mujahideen",
-  "netherlands-antilles",
-  "turkish-republic-of-northern-cyprus",
-  "estado-novo",
+  // A non-self-governing territory on the UN list, not a state.
+  "western-sahara",
 ]);
 
 // Everyday names, where stripping "Republic of" and the like is not enough.
@@ -45,7 +42,7 @@ const NAMES = {
   "kingdom-of-great-britain": "United Kingdom",
   "russian-federation": "Russia",
   "people-s-republic-of-china": "China",
-  "republic-of-china": "Taiwan",
+  "taiwan-republic-of-china": "Taiwan",
   "republic-of-korea": "South Korea",
   "democratic-people-s-republic-of-korea": "North Korea",
   "united-states-of-america": "United States",
@@ -78,7 +75,6 @@ const NAMES = {
   "federal-republic-of-nigeria": "Nigeria",
   "federal-republic-of-somalia": "Somalia",
   "republic-of-brazil": "Brazil",
-  "saint-kitts": "Saint Kitts and Nevis",
   "saint-vincent": "Saint Vincent and the Grenadines",
   "eire": "Ireland",
   "east-timor": "Timor-Leste",
@@ -94,7 +90,7 @@ const NAMES = {
 
 function everydayName(civ) {
   if (NAMES[civ.id]) return NAMES[civ.id];
-  return civ.name.replace(/^(Republic|Kingdom|State|Federal Republic) of (the )?/, "");
+  return civ.name.replace(/^(Republic|Kingdom|State|Federal Republic|Principality) of (the )?/, "");
 }
 
 // Hand-picked lineages, oldest first. France takes in Rome from its beginnings
@@ -307,7 +303,7 @@ for (const [id, land] of today) {
     lineage = [id, ...scored.sort((a, b) => b.score - a.score).slice(0, MAX_LINEAGE - 1).map((s) => s.id)];
   }
   const list = lineage.map((l) => byId.get(l)).sort((a, b) => a.from - b.from || a.to - b.to);
-  if (list.length < 2) continue;
+  if (!list.length) continue;
   countries.push({
     id: everydayName(civ)
       .toLowerCase()

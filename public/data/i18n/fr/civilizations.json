@@ -3575,9 +3575,6 @@
  "kingdom-of-kent": {
   "name": "Royaume de Kent"
  },
- "turkish-republic-of-northern-cyprus": {
-  "name": "Chypre du Nord"
- },
  "kingdom-of-judah": {
   "name": "Royaume de Juda"
  },
@@ -3827,9 +3824,6 @@
  "wihtgar": {
   "name": "Wihtware"
  },
- "saint-kitts": {
-  "name": "Saint-Christophe"
- },
  "grenada": {
   "name": "Grenade"
  },
@@ -3904,5 +3898,41 @@
  },
  "korea": {
   "name": "Corée"
+ },
+ "palestine": {
+  "name": "Palestine"
+ },
+ "western-sahara": {
+  "name": "Sahara occidental"
+ },
+ "comoros": {
+  "name": "Comores"
+ },
+ "saint-kitts-and-nevis": {
+  "name": "Saint-Christophe-et-Niévès"
+ },
+ "taiwan-republic-of-china": {
+  "name": "Taïwan (république de Chine)"
+ },
+ "maldives": {
+  "name": "Maldives"
+ },
+ "samoa": {
+  "name": "Samoa"
+ },
+ "nauru": {
+  "name": "Nauru"
+ },
+ "tonga": {
+  "name": "Tonga"
+ },
+ "tuvalu": {
+  "name": "Tuvalu"
+ },
+ "kiribati": {
+  "name": "Kiribati"
+ },
+ "marshall-islands": {
+  "name": "Îles Marshall"
  }
 }
