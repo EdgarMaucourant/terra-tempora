@@ -9,6 +9,12 @@
           "fr": "La frise a un bouton « Trouver un événement », à côté de « Toute l’histoire », qui ouvre la recherche sur les événements des États affichés et de la période en cours, sous forme de filtres que l’on peut retirer. Sur téléphone, il se trouve dans le menu ⋯ de la frise.",
           "es": "La línea de tiempo tiene un botón «Buscar un acontecimiento», junto a «Toda la historia», que abre la búsqueda en los acontecimientos de los reinos mostrados y del periodo actual, como filtros que se pueden quitar. En el móvil está en el menú ⋯ de la línea de tiempo.",
           "links": [20, 22]
+        },
+        {
+          "en": "Opening a country now keeps the timeline on the year you were looking at, as long as one of its realms stood then, instead of jumping to the year the most of them stood at once.",
+          "fr": "Ouvrir un pays garde désormais la frise sur l’année que vous regardiez, si l’un de ses États existait alors, au lieu de sauter à l’année où le plus grand nombre d’entre eux coexistaient.",
+          "es": "Abrir un país mantiene ahora la línea de tiempo en el año que estabas mirando, siempre que uno de sus reinos existiera entonces, en lugar de saltar al año en que más de ellos coexistían.",
+          "links": [22]
         }
       ]
     },
