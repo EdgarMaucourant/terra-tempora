@@ -1,6 +1,20 @@
 {
   "releases": [
     {
+      "version": "1.8.1",
+      "date": "2026-11-06",
+      "changes": [
+        {
+          "en": "Crimea is shown as part of Ukraine again from 2024 to today, within Ukraine’s internationally recognised borders, although Russia has occupied it since 2014. It was wrongly drawn as part of Russia.",
+          "fr": "La Crimée apparaît de nouveau comme une partie de l’Ukraine de 2024 à aujourd’hui, dans les frontières de l’Ukraine reconnues internationalement, bien que la Russie l’occupe depuis 2014. Elle était dessinée à tort comme une partie de la Russie.",
+          "es": "Crimea vuelve a mostrarse como parte de Ucrania de 2024 a hoy, dentro de las fronteras de Ucrania reconocidas internacionalmente, aunque Rusia la ocupa desde 2014. Se dibujaba por error como parte de Rusia.",
+          "links": [
+            27
+          ]
+        }
+      ]
+    },
+    {
       "version": "1.8.0",
       "date": "2026-11-06",
       "changes": [
@@ -8,7 +22,10 @@
           "en": "Two new events, suggested through the search: the Armistice of 11 November 1918, signed in the forest of Compiègne, and Germany’s surrender on 8 May 1945, which ended the Second World War in Europe. They show with France, Germany, Britain and the United States (and the Soviet Union for 1945), and the search finds them.",
           "fr": "Deux nouveaux événements, proposés depuis la recherche : l’armistice du 11 novembre 1918, signé en forêt de Compiègne, et la capitulation allemande du 8 mai 1945, qui met fin à la Seconde Guerre mondiale en Europe. Ils s’affichent avec la France, l’Allemagne, le Royaume-Uni et les États-Unis (et l’Union soviétique pour 1945), et la recherche les trouve.",
           "es": "Dos nuevos acontecimientos, propuestos desde la búsqueda: el armisticio del 11 de noviembre de 1918, firmado en el bosque de Compiègne, y la capitulación de Alemania el 8 de mayo de 1945, que puso fin a la Segunda Guerra Mundial en Europa. Aparecen con Francia, Alemania, el Reino Unido y Estados Unidos (y la Unión Soviética para 1945), y la búsqueda los encuentra.",
-          "links": [23, 24]
+          "links": [
+            23,
+            24
+          ]
         }
       ]
     },
@@ -20,13 +37,18 @@
           "en": "The timeline has a “Find an event” button, next to “All history”, that opens the search on the events of the realms on show and of the current period, as filters you can lift. On phones it is in the timeline’s ⋯ menu.",
           "fr": "La frise a un bouton « Trouver un événement », à côté de « Toute l’histoire », qui ouvre la recherche sur les événements des États affichés et de la période en cours, sous forme de filtres que l’on peut retirer. Sur téléphone, il se trouve dans le menu ⋯ de la frise.",
           "es": "La línea de tiempo tiene un botón «Buscar un acontecimiento», junto a «Toda la historia», que abre la búsqueda en los acontecimientos de los reinos mostrados y del periodo actual, como filtros que se pueden quitar. En el móvil está en el menú ⋯ de la línea de tiempo.",
-          "links": [20, 22]
+          "links": [
+            20,
+            22
+          ]
         },
         {
           "en": "Opening a country now keeps the timeline on the year you were looking at, as long as one of its realms stood then, instead of jumping to the year the most of them stood at once.",
           "fr": "Ouvrir un pays garde désormais la frise sur l’année que vous regardiez, si l’un de ses États existait alors, au lieu de sauter à l’année où le plus grand nombre d’entre eux coexistaient.",
           "es": "Abrir un país mantiene ahora la línea de tiempo en el año que estabas mirando, siempre que uno de sus reinos existiera entonces, en lugar de saltar al año en que más de ellos coexistían.",
-          "links": [22]
+          "links": [
+            22
+          ]
         }
       ]
     },
@@ -38,7 +60,10 @@
           "en": "The search now finds events too: battles, treaties, births and deaths of rulers, new capitals and the history travel’s turning points. Filter them by continent and years, and pick one to jump straight to it on the globe, in its year, with its story open. If an event is missing, a link under the results lets you suggest it. The search also forgives typos and words in any order: “stalingard” finds Stalingrad.",
           "fr": "La recherche trouve désormais aussi les événements : batailles, traités, naissances et morts de souverains, nouvelles capitales et étapes du voyage dans l’histoire. Filtrez-les par continent et par années, puis choisissez-en un pour vous y rendre directement sur le globe, à son année, avec son récit ouvert. S’il manque un événement, un lien sous les résultats permet de le proposer. La recherche tolère aussi les fautes de frappe et les mots dans le désordre : « stalingard » trouve Stalingrad.",
           "es": "La búsqueda encuentra ahora también acontecimientos: batallas, tratados, nacimientos y muertes de soberanos, nuevas capitales y las etapas del viaje por la historia. Fíltralos por continente y por años, y elige uno para ir directamente a él en el globo, en su año, con su relato abierto. Si falta un acontecimiento, un enlace bajo los resultados permite proponerlo. La búsqueda también tolera erratas y palabras en cualquier orden: «stalingard» encuentra Stalingrado.",
-          "links": [20, 21]
+          "links": [
+            20,
+            21
+          ]
         }
       ]
     },
@@ -50,7 +75,9 @@
           "en": "Borders keep up with the timeline when it plays: the globe now prepares them ahead of time, keeps the borders that don’t change from one year to the next instead of drawing them again, draws the largest realms first, and briefly waits for big borders instead of running past them.",
           "fr": "Les frontières suivent désormais la frise quand elle défile : le globe les prépare à l’avance, garde les frontières qui ne changent pas d’une année à l’autre au lieu de les redessiner, dessine d’abord les plus grands États et attend un instant les grandes frontières au lieu de passer sans elles.",
           "es": "Las fronteras siguen ahora el ritmo de la línea de tiempo cuando avanza: el globo las prepara con antelación, conserva las fronteras que no cambian de un año a otro en lugar de dibujarlas de nuevo, dibuja primero los reinos más grandes y espera un momento a las fronteras grandes en lugar de pasar sin ellas.",
-          "links": [19]
+          "links": [
+            19
+          ]
         }
       ]
     },
@@ -62,7 +89,10 @@
           "en": "When a realm's details are open, tapping another realm's bar on the timeline now shows that realm's details too, instead of leaving the first one's.",
           "fr": "Quand les détails d’un État sont ouverts, toucher la barre d’un autre État dans la frise affiche désormais ses détails, au lieu de laisser ceux du premier.",
           "es": "Cuando los detalles de un reino están abiertos, tocar la barra de otro reino en la línea de tiempo muestra ahora sus detalles, en lugar de dejar los del primero.",
-          "links": [16, 18]
+          "links": [
+            16,
+            18
+          ]
         }
       ]
     },
@@ -74,7 +104,9 @@
           "en": "On computers, pop-ups such as the report form, About and the lists can now be moved by dragging their title bar, to see the map behind them. The map shows through more once a pop-up is moved, and a double-click on the title bar puts it back.",
           "fr": "Sur ordinateur, les fenêtres comme le formulaire de signalement, À propos et les listes se déplacent désormais en faisant glisser leur barre de titre, pour voir la carte derrière. La carte apparaît plus nettement dès qu’une fenêtre est déplacée, et un double-clic sur la barre de titre la remet en place.",
           "es": "En el ordenador, las ventanas como el formulario de aviso, Acerca de y las listas se pueden mover ahora arrastrando su barra de título, para ver el mapa que hay detrás. El mapa se ve mejor en cuanto se mueve una ventana, y un doble clic en la barra de título la devuelve a su sitio.",
-          "links": [17]
+          "links": [
+            17
+          ]
         }
       ]
     },
@@ -86,7 +118,9 @@
           "en": "A tidier toolbar at the top right on computers: Open tour, Sources and Code on GitHub are now together in a new Info menu, and Search shrinks to its magnifying glass when the Other realms switch is shown.",
           "fr": "Une barre d’outils plus claire en haut à droite sur ordinateur : Ouvrir la visite, Sources et Le code sur GitHub sont désormais réunis dans un nouveau menu Infos, et Rechercher se réduit à sa loupe quand l’interrupteur Autres États est affiché.",
           "es": "Una barra de herramientas más ordenada arriba a la derecha en el ordenador: Abrir la visita guiada, Fuentes y Código en GitHub están ahora juntos en un nuevo menú Info, y Buscar se reduce a su lupa cuando se muestra el interruptor Otros reinos.",
-          "links": [15]
+          "links": [
+            15
+          ]
         }
       ]
     },
@@ -98,7 +132,10 @@
           "en": "Clicking a realm with land overseas now turns the globe to its homeland: the French Second Republic goes to France rather than French Guiana, and Spain, Belgium and New France no longer open on a far-off colony.",
           "fr": "Cliquer sur un royaume qui a des terres outre-mer tourne désormais le globe vers sa métropole : la Deuxième République française mène à la France et non plus à la Guyane, et l’Espagne, la Belgique et la Nouvelle-France ne s’ouvrent plus sur une colonie lointaine.",
           "es": "Al hacer clic en un reino con tierras de ultramar, el globo gira ahora hacia su metrópoli: la Segunda República francesa lleva a Francia y no a la Guayana Francesa, y España, Bélgica y Nueva Francia ya no se abren sobre una colonia lejana.",
-          "links": [13, 14]
+          "links": [
+            13,
+            14
+          ]
         }
       ]
     },
@@ -110,7 +147,10 @@
           "en": "French India now shows its five trading posts in India (Pondicherry, Karikal, Mahé, Yanam and Chandernagore), in the years France held them, until 1954. Réunion and Mauritius, which it used to show instead, are now the French Mascarene Islands, and the Comoros and parts of Madagascar it wrongly included are gone.",
           "fr": "Les Établissements français de l’Inde montrent désormais leurs cinq comptoirs en Inde (Pondichéry, Karikal, Mahé, Yanaon et Chandernagor), les années où la France les tenait, jusqu’en 1954. La Réunion et l’île Maurice, qu’ils montraient à la place, forment maintenant les Mascareignes françaises, et les Comores et les morceaux de Madagascar ajoutés à tort ont disparu.",
           "es": "La India francesa muestra ahora sus cinco enclaves en la India (Pondicherry, Karikal, Mahé, Yanam y Chandernagor), en los años en que Francia los tenía, hasta 1954. La Reunión y Mauricio, que mostraba en su lugar, son ahora las Mascareñas francesas, y las Comoras y las partes de Madagascar que incluía por error han desaparecido.",
-          "links": [11, 12]
+          "links": [
+            11,
+            12
+          ]
         }
       ]
     },
@@ -122,13 +162,19 @@
           "en": "A new search, opened by the Search button at the top right (the magnifying glass by the menu on phones) or the / key, looks through civilizations, countries and nations at once. You can narrow the results by type, by continent and by period, for example every civilization of South America between 1 and 1000 CE.",
           "fr": "Une nouvelle recherche, ouverte par le bouton Rechercher en haut à droite (la loupe à côté du menu sur téléphone) ou la touche /, parcourt à la fois les civilisations, les pays et les nations. Vous pouvez filtrer les résultats par type, par continent et par période, par exemple toutes les civilisations d’Amérique du Sud entre l’an 1 et l’an 1000.",
           "es": "Una nueva búsqueda, que se abre con el botón Buscar arriba a la derecha (la lupa junto al menú en el móvil) o la tecla /, recorre a la vez civilizaciones, países y naciones. Puedes filtrar los resultados por tipo, por continente y por período, por ejemplo todas las civilizaciones de América del Sur entre el año 1 y el 1000.",
-          "links": [4, 10]
+          "links": [
+            4,
+            10
+          ]
         },
         {
           "en": "The search boxes in the civilizations, countries and nations lists now show a magnifying glass.",
           "fr": "Les champs de recherche des listes de civilisations, de pays et de nations affichent désormais une loupe.",
           "es": "Los campos de búsqueda de las listas de civilizaciones, países y naciones muestran ahora una lupa.",
-          "links": [4, 10]
+          "links": [
+            4,
+            10
+          ]
         }
       ]
     },
@@ -140,31 +186,45 @@
           "en": "Canada now appears in 1867, at Confederation, instead of 1931, and grows as provinces and territories join: Manitoba and the North-West in 1870, British Columbia in 1871, Prince Edward Island in 1873, the Arctic islands in 1880 and Newfoundland in 1949.",
           "fr": "Le Canada apparaît désormais en 1867, à la Confédération, et non plus en 1931, et s’agrandit à mesure que provinces et territoires le rejoignent : le Manitoba et le Nord-Ouest en 1870, la Colombie-Britannique en 1871, l’Île-du-Prince-Édouard en 1873, les îles arctiques en 1880 et Terre-Neuve en 1949.",
           "es": "Canadá aparece ahora en 1867, con la Confederación, y no en 1931, y crece a medida que se unen provincias y territorios: Manitoba y el Noroeste en 1870, Columbia Británica en 1871, la Isla del Príncipe Eduardo en 1873, las islas árticas en 1880 y Terranova en 1949.",
-          "links": [3, 9]
+          "links": [
+            3,
+            9
+          ]
         },
         {
           "en": "The other British dominions also appear when they were founded: Australia in 1901, New Zealand and Newfoundland in 1907, South Africa in 1910.",
           "fr": "Les autres dominions britanniques apparaissent aussi à leur fondation : l’Australie en 1901, la Nouvelle-Zélande et Terre-Neuve en 1907, l’Afrique du Sud en 1910.",
           "es": "Los demás dominios británicos aparecen también al fundarse: Australia en 1901, Nueva Zelanda y Terranova en 1907, Sudáfrica en 1910.",
-          "links": [3, 9]
+          "links": [
+            3,
+            9
+          ]
         },
         {
           "en": "Land that was owned before it was settled now shows: all of Australia under Britain from 1829, Mexico's north before 1848, Russian America (Alaska) from 1799 and the whole of Greenland from 1921.",
           "fr": "Les terres possédées avant d’être colonisées apparaissent désormais : toute l’Australie britannique dès 1829, le nord du Mexique avant 1848, l’Amérique russe (l’Alaska) dès 1799 et tout le Groenland dès 1921.",
           "es": "Las tierras poseídas antes de ser colonizadas aparecen ahora: toda Australia bajo dominio británico desde 1829, el norte de México antes de 1848, la América rusa (Alaska) desde 1799 y toda Groenlandia desde 1921.",
-          "links": [3, 9]
+          "links": [
+            3,
+            9
+          ]
         },
         {
           "en": "New events: Canada's Confederation and each province joining, the Federation of Australia, the Union of South Africa, the new dominions of 1907, the Treaty of Guadalupe Hidalgo, the Russian-American Company and Denmark's claim to all of Greenland.",
           "fr": "Nouveaux événements : la Confédération canadienne et l’entrée de chaque province, la fédération de l’Australie, l’Union d’Afrique du Sud, les nouveaux dominions de 1907, le traité de Guadalupe Hidalgo, la Compagnie russe d’Amérique et la revendication danoise sur tout le Groenland.",
           "es": "Nuevos acontecimientos: la Confederación canadiense y la entrada de cada provincia, la federación de Australia, la Unión Sudafricana, los nuevos dominios de 1907, el Tratado de Guadalupe Hidalgo, la Compañía Ruso-Americana y la reclamación danesa de toda Groenlandia.",
-          "links": [3, 9]
+          "links": [
+            3,
+            9
+          ]
         },
         {
           "en": "A page left open while the site is updated now reloads itself, where it was, instead of failing to load borders.",
           "fr": "Une page restée ouverte pendant une mise à jour du site se recharge désormais d’elle-même, au même endroit, au lieu de ne plus charger les frontières.",
           "es": "Una página que sigue abierta mientras se actualiza el sitio ahora se recarga sola, en el mismo lugar, en vez de dejar de cargar las fronteras.",
-          "links": [9]
+          "links": [
+            9
+          ]
         }
       ]
     },
@@ -176,13 +236,19 @@
           "en": "The United States now shows all the land it owned from 1783 to 1889, not only the land it had settled: watch it double with the Louisiana Purchase in 1803, then grow with Florida, Texas, Oregon, the Mexican Cession and Alaska.",
           "fr": "Les États-Unis montrent désormais toutes les terres qu’ils possédaient de 1783 à 1889, et non plus seulement celles déjà colonisées : voyez-les doubler avec la vente de la Louisiane en 1803, puis s’agrandir avec la Floride, le Texas, l’Oregon, la cession mexicaine et l’Alaska.",
           "es": "Estados Unidos muestra ahora todas las tierras que poseía de 1783 a 1889, y no solo las ya colonizadas: míralo duplicarse con la compra de Luisiana en 1803 y crecer después con Florida, Texas, Oregón, la cesión mexicana y Alaska.",
-          "links": [2, 8]
+          "links": [
+            2,
+            8
+          ]
         },
         {
           "en": "The Louisiana Purchase is now an event on the globe and the timeline.",
           "fr": "La vente de la Louisiane est désormais un événement sur le globe et la frise.",
           "es": "La compra de Luisiana es ahora un acontecimiento en el globo y la línea de tiempo.",
-          "links": [2, 8]
+          "links": [
+            2,
+            8
+          ]
         }
       ]
     },
@@ -214,13 +280,17 @@
           "en": "Report a problem or suggest an improvement from the site, and leave your email if you want to hear when it is fixed.",
           "fr": "Signalez un problème ou proposez une amélioration depuis le site, et laissez votre e-mail si vous voulez savoir quand c’est corrigé.",
           "es": "Informa de un problema o sugiere una mejora desde el sitio, y deja tu correo si quieres saber cuándo se corrige.",
-          "links": [5]
+          "links": [
+            5
+          ]
         },
         {
           "en": "A version number in the About pop-up, this list of versions, and a short “What’s new” note for returning visitors.",
           "fr": "Un numéro de version dans la fenêtre À propos, cette liste des versions, et une courte note « Quoi de neuf » pour les visiteurs qui reviennent.",
           "es": "Un número de versión en la ventana Acerca de, esta lista de versiones y una breve nota «Novedades» para quienes vuelven.",
-          "links": [6]
+          "links": [
+            6
+          ]
         }
       ]
     }
