@@ -1636,8 +1636,11 @@ function openCountry(k: Country, view: CountryView, options: { year?: number; pu
     .map((id) => known.get(id))
     .filter((c): c is Civilization => !!c);
   if (!list.length) return;
+  // The timeline stays on the year shown when one of the realms stood then;
+  // otherwise it goes to the year the most of them stood at once.
   const start = view === "territory" ? k.territoryYear : k.startYear;
-  openView(list, { year: options.year ?? start, push: options.push, fly: false, country: k, countryView: view });
+  const now = list.some((c) => c.from <= year && c.to >= year) ? year : start;
+  openView(list, { year: options.year ?? now, push: options.push, fly: false, country: k, countryView: view });
   // A territory is about the land, so it sits in the middle; a hand-picked
   // lineage centres on the realm it is built around.
   const focus = view === "nationality" && k.blurb ? known.get(k.focus) : undefined;
