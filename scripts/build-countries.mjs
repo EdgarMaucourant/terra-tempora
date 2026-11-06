@@ -34,7 +34,6 @@ const NOT_COUNTRIES = new Set([
   "gaza-hamas",
   "mujahideen",
   "netherlands-antilles",
-  "russian-occupied-territories",
   "turkish-republic-of-northern-cyprus",
   "estado-novo",
 ]);
