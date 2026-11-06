@@ -364,5 +364,17 @@
  },
  "san-marino": {
   "name": "San Marino"
+ },
+ "palestine": {
+  "name": "Palestina"
+ },
+ "comoros": {
+  "name": "Comoras"
+ },
+ "maldives": {
+  "name": "Maldivas"
+ },
+ "marshall-islands": {
+  "name": "Islas Marshall"
  }
 }

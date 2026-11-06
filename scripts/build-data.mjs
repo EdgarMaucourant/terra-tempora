@@ -189,6 +189,11 @@ function decodeRing(encoded) {
   return out;
 }
 
+// Realms drawn by an override feature with KeepSmall: their small parts stay
+// when land is taken out of them too (Kiribati's atolls around a smaller
+// neighbour's land).
+const keepSmall = new Set();
+
 // A display shape with the area of `geometry` taken out, or null when nothing
 // is left. Holes are not kept: shapes only have outer rings.
 function clipShape(shape, geometry) {
@@ -199,7 +204,7 @@ function clipShape(shape, geometry) {
   const areas = outers.map(ringArea);
   const largest = mainPart(outers);
   const rings = outers
-    .filter((_, i) => i === largest || areas[i] >= MIN_PART_AREA)
+    .filter((_, i) => keepSmall.has(shape.name) || i === largest || areas[i] >= MIN_PART_AREA)
     .map(encodeRing)
     .filter((ring) => ring.length >= 6);
   if (!rings.length) return null;
@@ -321,6 +326,7 @@ for (const file of existsSync(OVERRIDES) ? readdirSync(OVERRIDES).filter((f) => 
       );
       continue;
     }
+    if (p.KeepSmall) keepSmall.add(p.Name);
     const before = shapes.find((s) => s.name === p.Name);
     const replaced = new Set([p.Name, ...(p.Replaces ?? [])]);
     shapes = shapes.flatMap((s) =>
