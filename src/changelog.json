@@ -1,6 +1,18 @@
 {
   "releases": [
     {
+      "version": "1.9.0",
+      "date": "2026-11-06",
+      "changes": [
+        {
+          "en": "Today's borders now follow those the United Nations recognises, back to the first year each border was the same. Syria is one state again from 1967, with the Golan Heights; Palestine is drawn on the 1967 lines; Western Sahara has its own shape; Northern Cyprus is part of Cyprus, Nagorno-Karabakh part of Azerbaijan and Cabinda part of Angola. Taiwan shows as Taiwan (Republic of China) from 1950. The Comoros, Liechtenstein, Saint Kitts and Nevis, the Maldives, Samoa, Nauru, Tonga, Tuvalu, Kiribati and the Marshall Islands now appear, and the countries list has every UN member. Cards that linked to the wrong country, such as South Korea's, now link to the right one.",
+          "fr": "Les frontières actuelles suivent désormais celles que reconnaissent les Nations unies, en remontant jusqu’à la première année où chaque frontière était la même. La Syrie redevient un seul État dès 1967, avec le plateau du Golan ; la Palestine est dessinée sur les lignes de 1967 ; le Sahara occidental a son propre tracé ; Chypre du Nord fait partie de Chypre, le Haut-Karabagh de l’Azerbaïdjan et le Cabinda de l’Angola. Taïwan apparaît comme Taïwan (république de Chine) dès 1950. Les Comores, le Liechtenstein, Saint-Christophe-et-Niévès, les Maldives, les Samoa, Nauru, les Tonga, les Tuvalu, les Kiribati et les îles Marshall apparaissent désormais, et la liste des pays compte tous les membres de l’ONU. Les fiches qui renvoyaient au mauvais pays, comme celle de la Corée du Sud, renvoient désormais au bon.",
+          "es": "Las fronteras actuales siguen ahora las que reconocen las Naciones Unidas, desde el primer año en que cada frontera era la misma. Siria vuelve a ser un solo Estado desde 1967, con los Altos del Golán; Palestina se dibuja sobre las líneas de 1967; el Sáhara Occidental tiene su propio trazado; el norte de Chipre forma parte de Chipre, el Alto Karabaj de Azerbaiyán y Cabinda de Angola. Taiwán aparece como Taiwán (República de China) desde 1950. Las Comoras, Liechtenstein, San Cristóbal y Nieves, las Maldivas, Samoa, Nauru, Tonga, Tuvalu, Kiribati y las Islas Marshall aparecen ahora, y la lista de países incluye a todos los miembros de la ONU. Las fichas que enlazaban con el país equivocado, como la de Corea del Sur, enlazan ahora con el correcto.",
+          "links": [32]
+        }
+      ]
+    },
+    {
       "version": "1.8.2",
       "date": "2026-11-06",
       "changes": [
