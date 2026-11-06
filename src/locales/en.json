@@ -132,6 +132,7 @@
       "oc": "Oceania",
       "sa": "South America"
     },
+    "events": "Events",
     "count": {
       "one": "{count} result",
       "other": "{count} results"
@@ -140,9 +141,10 @@
     "from": "From year",
     "nationMeta": "Nation of today · {continents}",
     "none": "Nothing matches. Try another name, continent or period.",
-    "placeholder": "Search civilizations, countries and nations",
+    "placeholder": "Search civilizations, countries, nations and events",
     "showAll": "Show all {count}",
     "showMore": "Show more",
+    "suggestEvent": "Can’t find an event? Suggest it",
     "title": "Search",
     "to": "To year",
     "type": "Type",
@@ -491,6 +493,7 @@
   "feedback": {
     "about": "About: {name}",
     "aboutApp": "About Terra Tempora in general",
+    "aboutMissingEvent": "About: a missing event",
     "aboutPlace": "About: this spot on the map in {year}",
     "checkFailed": "The anti-spam check could not load. Please try again later.",
     "failed": "The report could not be sent. Please try again later.",
@@ -498,6 +501,7 @@
     "link": "Report a problem or suggest something",
     "linkApp": "Report a problem or suggest an improvement",
     "messageLabel": "Your message",
+    "missingEvent": "Missing event: {name}\nWhen: \nWhere: \nA source (a link helps): ",
     "placeholder": "What is wrong or missing, and how do you know? A source helps.",
     "privacy": "Reviewers read every report. Please leave out personal details such as your email from the message.",
     "send": "Send",
