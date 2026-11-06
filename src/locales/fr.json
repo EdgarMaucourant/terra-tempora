@@ -355,6 +355,8 @@
       "one": "{count} événement",
       "other": "{count} événements"
     },
+    "findEvent": "Trouver un événement",
+    "findEventTitle": "Rechercher les événements : batailles, traités, souverains et grandes étapes",
     "focus": "Époque de la civilisation",
     "fold": "Masquer les États et les événements",
     "gripLabel": "Redimensionner la frise : faites glisser, ou utilisez les flèches haut et bas",

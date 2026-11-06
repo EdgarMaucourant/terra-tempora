@@ -1950,6 +1950,11 @@ for (const id of ["search-button", "search-open"]) {
     openExplore("search");
   });
 }
+// The timeline's "Find an event": the search, listing the events.
+$("find-event").addEventListener("click", () => {
+  openExplore("search");
+  landing?.search.showEvents();
+});
 for (const button of document.querySelectorAll<HTMLButtonElement>("[data-explore]")) {
   button.addEventListener("click", () => {
     setMenu(false);

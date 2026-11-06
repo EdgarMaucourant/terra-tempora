@@ -1,6 +1,18 @@
 {
   "releases": [
     {
+      "version": "1.7.0",
+      "date": "2026-11-06",
+      "changes": [
+        {
+          "en": "The timeline has a “Find an event” button, next to “All history”, that opens the search on the events. On phones it is in the timeline’s ⋯ menu.",
+          "fr": "La frise a un bouton « Trouver un événement », à côté de « Toute l’histoire », qui ouvre la recherche sur les événements. Sur téléphone, il se trouve dans le menu ⋯ de la frise.",
+          "es": "La línea de tiempo tiene un botón «Buscar un acontecimiento», junto a «Toda la historia», que abre la búsqueda en los acontecimientos. En el móvil está en el menú ⋯ de la línea de tiempo.",
+          "links": [20]
+        }
+      ]
+    },
+    {
       "version": "1.6.0",
       "date": "2026-11-05",
       "changes": [

@@ -355,6 +355,8 @@
       "one": "{count} acontecimiento",
       "other": "{count} acontecimientos"
     },
+    "findEvent": "Buscar un acontecimiento",
+    "findEventTitle": "Buscar acontecimientos: batallas, tratados, soberanos y grandes etapas",
     "focus": "Época de la civilización actual",
     "fold": "Ocultar los reinos y acontecimientos",
     "gripLabel": "Cambiar el tamaño de la línea de tiempo: arrastra o usa las flechas arriba y abajo",
