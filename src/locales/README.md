@@ -12,8 +12,7 @@ Messages are grouped in sections, and a section can hold smaller sections:
 ```json
 "home": {
   "panel": {
-    "welcome": "Welcome to",
-    "intro": "This is an amateur website…"
+    "welcome": "Welcome to"
   }
 }
 ```

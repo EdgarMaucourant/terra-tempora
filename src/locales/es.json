@@ -41,8 +41,7 @@
   },
   "home": {
     "panel": {
-      "welcome": "Bienvenido a",
-      "intro": "Este es un sitio web amateur para conocer la historia de las civilizaciones, trazada directamente sobre la Tierra. Usa la línea de tiempo de abajo para viajar en el tiempo; además, hay cuatro modos disponibles en el menú de arriba a la izquierda y aquí debajo:"
+      "welcome": "Bienvenido a"
     },
     "modes": {
       "travel": "Sobrevuela casi 12 000 años de historia, de Göbekli Tepe a la COVID-19, con las pirámides, las grandes guerras, los tratados y los descubrimientos situados en el planeta a lo largo del camino.",
