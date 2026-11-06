@@ -93,6 +93,15 @@ from 1920, as Cliopatria does from 1932. `claimed-land.geojson` reuses the
 Texas, Mexican Cession, Gadsden Purchase and Alaska Purchase areas of
 `united-states.geojson`, and Natural Earth's Greenland. Both files were made
 with a script outside the repository from those sources.
+`crimea.geojson` adds Crimea (the Autonomous Republic of Crimea and
+Sevastopol) to Ukraine in 2024, the year Cliopatria moves it to Russia, so it is
+drawn as Ukraine, its internationally recognised border (UN General Assembly
+resolution 68/262), from 2014 to today. Until 2023 Cliopatria has it in both
+realms, and the build already gives it to Ukraine (from 1800, land two realms
+both draw goes to the smaller one). The outline is
+Cliopatria's own (the part Russia gains in 2024), so it fits its neighbours
+exactly. The other Ukrainian land Russia has occupied since 2022 is in Ukraine
+in Cliopatria too.
 The list (`civilizations.json`) carries no outlines: the Civilizations popup's card
 outlines are in `civilization-shapes.json`, downloaded only once the landing
 page shows, so a link straight to the globe skips them.
