@@ -2672,9 +2672,6 @@
  "cisalpine-republic": {
   "name": "République cisalpine"
  },
- "bessarabia": {
-  "name": "Bessarabie"
- },
  "kingdom-of-vaspurakan": {
   "name": "Royaume de Vaspurakan"
  },
@@ -3898,5 +3895,14 @@
  },
  "french-mascarene-islands": {
   "name": "Mascareignes françaises"
+ },
+ "tuvan-people-s-republic": {
+  "name": "République populaire de Touva"
+ },
+ "allied-occupied-germany": {
+  "name": "Allemagne occupée"
+ },
+ "korea": {
+  "name": "Corée"
  }
 }

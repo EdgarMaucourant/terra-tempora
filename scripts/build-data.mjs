@@ -294,7 +294,9 @@ console.log(`${shapes.length} border shapes from ${raw.features.length} Cliopatr
 // those years. Then the traced shape goes in. New shapes get ids after
 // Cliopatria's. A feature with Removes (and no outline) only takes its realm
 // off the map for its years: land Cliopatria gives a realm that should not be
-// drawn, which other override features then give back to its owner.
+// drawn, which other override features then give back to its owner. Features
+// with Adds, or with Removes and an outline, change a realm's own shapes
+// instead (see "Land added to a realm" below).
 let nextId = raw.features.length;
 const credits = [];
 const additions = [];
@@ -302,7 +304,7 @@ for (const file of existsSync(OVERRIDES) ? readdirSync(OVERRIDES).filter((f) => 
   const overrides = JSON.parse(readFileSync(`${OVERRIDES}/${file}`, "utf8"));
   for (const f of overrides.features) {
     const p = f.properties;
-    if (p.Adds) {
+    if (p.Adds || (p.Removes && f.geometry)) {
       additions.push({ file, ...f });
       continue;
     }
@@ -499,14 +501,18 @@ shapes = shapes.flatMap((s) => {
 
 // Land added to a realm (override features with Adds, such as the land the
 // United States bought or was ceded, where Cliopatria only draws what it
-// settled): it joins the realm's own shapes for the feature's years. This
-// comes after the twins and before the overlaps below, so the shapes of other
-// years keep their ids, and a smaller realm still keeps land it holds there
-// (the Confederate States in 1861-1865).
-for (const { file, properties: p, geometry } of additions) {
-  let added = 0;
+// settled): it joins the realm's own shapes for the feature's years, and the
+// realms listed in its Clips lose it (needed before 1800, when overlaps are
+// kept). A feature with Removes and an outline takes that land off its realm
+// instead, leaving it blank where no other realm has it (land Cliopatria
+// gives a realm before it held it). This comes after the twins and before the
+// overlaps below, so the shapes of other years keep their ids, and a smaller
+// realm still keeps land it holds there (the Confederate States in 1861-1865).
+// Returns how many shapes of the named realms were in the feature's years.
+function reshapeYears(names, p, change) {
+  let found = 0;
   shapes = shapes.flatMap((s) => {
-    if (s.name !== p.Name || s.to < p.FromYear || s.from > p.ToYear) return [s];
+    if (!names.has(s.name) || s.to < p.FromYear || s.from > p.ToYear) return [s];
     const outside = cutYears([s.from, s.to], [p.FromYear, p.ToYear]).map(([from, to], i) => ({
       ...s,
       id: i === 0 ? s.id : nextId++,
@@ -514,12 +520,23 @@ for (const { file, properties: p, geometry } of additions) {
       to,
     }));
     const inside = { ...s, id: outside.length ? nextId++ : s.id, from: Math.max(s.from, p.FromYear), to: Math.min(s.to, p.ToYear) };
-    added++;
-    return [...outside, growShape(inside, geometry)];
+    found++;
+    const changed = change(inside);
+    return changed ? [...outside, changed] : outside;
   });
-  if (!added) console.warn(`${file}: no shape of ${p.Name} in ${p.FromYear}-${p.ToYear} to add land to`);
+  return found;
 }
-if (additions.length) console.log(`${additions.length} areas of land added to realms`);
+for (const { file, properties: p, geometry } of additions) {
+  if (p.Removes) {
+    if (!reshapeYears(new Set([p.Name]), p, (s) => clipShape(s, geometry)))
+      console.warn(`${file}: no shape of ${p.Name} in ${p.FromYear}-${p.ToYear} to take land from`);
+    continue;
+  }
+  if (p.Clips) reshapeYears(new Set(p.Clips), p, (s) => clipShape(s, geometry));
+  if (!reshapeYears(new Set([p.Name]), p, (s) => growShape(s, geometry)))
+    console.warn(`${file}: no shape of ${p.Name} in ${p.FromYear}-${p.ToYear} to add land to`);
+}
+if (additions.length) console.log(`${additions.length} areas of land added to or taken from realms`);
 // Shapes kept their ids as they grew.
 sizes.clear();
 boxes.clear();
