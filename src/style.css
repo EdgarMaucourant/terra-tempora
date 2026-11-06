@@ -2869,12 +2869,15 @@ a {
     box-shadow: 0 24px 70px rgba(0, 0, 0, 0.6);
   }
 
-  /* On phones it spans the width, just above the timeline. */
+  /* On phones it spans the width, just above the timeline, and scrolls when
+     it is taller than the room left under the top bar (phones held sideways). */
   .welcome {
     left: var(--gutter);
     right: var(--gutter);
     bottom: calc(var(--safe-bottom) + var(--gutter) + var(--timeline-height, 190px) + 10px);
     width: auto;
+    max-height: calc(100% - var(--safe-top) - var(--safe-bottom) - 2 * var(--gutter) - var(--timeline-height, 190px) - 70px);
+    overflow-y: auto;
   }
 
   .panel-bar {
@@ -3845,6 +3848,37 @@ body:not(.home) .search-button span {
 .about-body p {
   margin: 0 0 12px;
   max-width: 68ch;
+}
+
+/* The note on the map's accuracy, in the "New here?" prompt and on the home
+   panel: small and quiet, set off by a thin rule on its left. */
+.disclaimer {
+  margin: 12px 0 14px;
+  padding: 2px 0 2px 10px;
+  border-left: 2px solid var(--line);
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--ink-soft);
+}
+
+.welcome p.disclaimer {
+  margin: 0 0 14px;
+}
+
+.disclaimer-report {
+  display: inline;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.disclaimer-report:hover {
+  color: var(--steppe);
 }
 
 /* The line on how the site was made, closing the About pop-up and the home panel. */

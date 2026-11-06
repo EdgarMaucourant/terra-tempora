@@ -41,8 +41,7 @@
   },
   "home": {
     "panel": {
-      "welcome": "Welcome to",
-      "intro": "This is an amateur website to learn about the history of civilizations, mapped directly onto the Earth. Use the timeline at the bottom to travel through time, also four modes are available from the burger menu at the top left and below:"
+      "welcome": "Welcome to"
     },
     "modes": {
       "travel": "Fly through almost 12,000 years of history, from Göbekli Tepe to COVID-19, with the pyramids, great wars, treaties and discoveries mapped on the planet along the way.",
@@ -548,5 +547,10 @@
       "changes": "Pull requests and issues on GitHub",
       "failed": "The list of versions could not load. Please try again later."
     }
+  },
+  "disclaimer": {
+    "text": "Terra Tempora is an amateur, independent project. Borders are approximations drawn from open data, and a map can’t always capture the complexity of history: dates, claims and control were often contested. Large parts of history are still missing, such as the Americas or Australia before colonization; we’ll add them once we have good sources. Some errors remain, and we fix them continuously as they’re found. Spotted one? {report}, it makes the map better for everyone.",
+    "report": "Please report it",
+    "label": "About the map’s accuracy"
   }
 }

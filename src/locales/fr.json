@@ -41,8 +41,7 @@
   },
   "home": {
     "panel": {
-      "welcome": "Bienvenue sur",
-      "intro": "Ceci est un site amateur pour découvrir l’histoire des civilisations, visibles directement sur la Terre. Utilisez la zone en bas de page pour voyager à travers le temps. Le menu en haut à gauche vous permet de choisir entre quatre modes qui sont également disponibles ci-dessous :"
+      "welcome": "Bienvenue sur"
     },
     "modes": {
       "travel": "Survolez près de 12 000 ans d’histoire, de Göbekli Tepe au COVID-19, et voyez les pyramides, les grandes guerres, les traités et les découvertes cartographiés sur la planète.",
@@ -548,5 +547,10 @@
       "changes": "Demandes de fusion et tickets sur GitHub",
       "failed": "La liste des versions n’a pas pu se charger. Merci de réessayer plus tard."
     }
+  },
+  "disclaimer": {
+    "text": "Terra Tempora est un projet amateur et indépendant. Les frontières sont des approximations tirées de données ouvertes, et une carte ne peut pas toujours rendre la complexité de l’histoire : dates, revendications et contrôle des territoires ont souvent été contestés. De grands pans de l’histoire manquent encore, comme les Amériques ou l’Australie avant la colonisation ; nous les ajouterons dès que nous aurons de bonnes sources. Des erreurs subsistent, et nous les corrigeons en continu au fil des signalements. Vous en repérez une ? {report}, cela améliore la carte pour tout le monde.",
+    "report": "Signalez-la",
+    "label": "À propos de la précision de la carte"
   }
 }
