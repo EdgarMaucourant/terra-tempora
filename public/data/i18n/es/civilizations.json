@@ -12,7 +12,7 @@
   "name": "República Rusa"
  },
  "republics-of-the-soviet-union": {
-  "name": "Repúblicas de la Unión Soviética"
+  "name": "República de la Unión Soviética"
  },
  "russian-federation": {
   "name": "Rusia"
@@ -21,16 +21,13 @@
   "name": "Zarato ruso"
  },
  "yuan-dynasty": {
-  "name": "Dinastía Yuan"
- },
- "british-colonial-empire": {
-  "name": "Imperio británico"
+  "name": "Yuan"
  },
  "qing-dynasty": {
   "name": "Dinastía Qing"
  },
- "united-states-of-america": {
-  "name": "Estados Unidos"
+ "british-colonial-empire": {
+  "name": "Imperio británico"
  },
  "french-africa": {
   "name": "África francesa"
@@ -39,19 +36,22 @@
   "name": "Imperio español"
  },
  "french-fifth-republic": {
-  "name": "Quinta República francesa"
- },
- "british-africa": {
-  "name": "África británica"
+  "name": "Quinta República Francesa"
  },
  "canada": {
   "name": "Canadá"
  },
+ "united-states-of-america": {
+  "name": "Estados Unidos"
+ },
  "umayyad-caliphate": {
-  "name": "Califato omeya"
+  "name": "Califato Omeya"
  },
  "people-s-republic-of-china": {
   "name": "República Popular China"
+ },
+ "british-africa": {
+  "name": "África británica"
  },
  "tang-dynasty": {
   "name": "Dinastía Tang"
@@ -61,9 +61,6 @@
  },
  "empire-of-brazil": {
   "name": "Imperio del Brasil"
- },
- "republic-of-china": {
-  "name": "República de China"
  },
  "empire-of-china": {
   "name": "Imperio de China"
@@ -84,7 +81,7 @@
   "name": "Imperio del Japón"
  },
  "gokturk-khaganate": {
-  "name": "Kanato túrquico"
+  "name": "Kaganato göktürk"
  },
  "ming-dynasty": {
   "name": "Dinastía Ming"
@@ -98,17 +95,23 @@
  "timurid-empire": {
   "name": "Imperio timúrida"
  },
+ "mongol-khanate": {
+  "name": "Mongol khanate"
+ },
  "sasanian-empire": {
   "name": "Imperio sasánida"
  },
  "british-raj": {
-  "name": "India británica"
+  "name": "Raj británico"
  },
  "golden-horde": {
   "name": "Horda de Oro"
  },
+ "first-mexican-empire": {
+  "name": "Primer Imperio Mexicano"
+ },
  "ptolemaic-kingdom": {
-  "name": "Egipto ptolemaico"
+  "name": "Período tolemaico de Egipto"
  },
  "macedonian-empire": {
   "name": "Reino de Macedonia"
@@ -118,6 +121,9 @@
  },
  "xin-dynasty": {
   "name": "Dinastía Xin"
+ },
+ "federated-republic-of-mexico": {
+  "name": "Primera República Federal"
  },
  "khanate-of-sibir": {
   "name": "Kanato de Siberia"
@@ -129,7 +135,7 @@
   "name": "Imperio otomano"
  },
  "western-gokturks": {
-  "name": "Köktürk"
+  "name": "Köktürks"
  },
  "great-seljuk-empire": {
   "name": "Imperio selyúcida"
@@ -161,9 +167,6 @@
  "dzungar-khanate": {
   "name": "Kanato de Zungaria"
  },
- "first-mexican-empire": {
-  "name": "Primer Imperio mexicano"
- },
  "italian-africa": {
   "name": "Imperio colonial italiano"
  },
@@ -179,17 +182,14 @@
  "nazi-germany": {
   "name": "Alemania nazi"
  },
- "white-huns": {
-  "name": "Heftalita"
- },
  "peru-bolivian-confederation": {
   "name": "Confederación Perú-Boliviana"
  },
- "federated-republic-of-mexico": {
-  "name": "Primera República Federal"
- },
  "republic-of-india": {
   "name": "India"
+ },
+ "samanid-empire": {
+  "name": "Imperio samánida"
  },
  "parthian-empire": {
   "name": "Imperio parto"
@@ -198,19 +198,22 @@
   "name": "Confederación Kimek-Kipchak"
  },
  "ghaznavid-empire": {
-  "name": "Imperio gaznávida"
+  "name": "Dinastía gaznávida"
  },
  "khedivate-of-egypt": {
   "name": "Jedivato de Egipto"
  },
  "five-dynasties-and-ten-kingdoms": {
-  "name": "Cinco dinastías"
+  "name": "Cinco Dinastías"
  },
  "cao-wei": {
   "name": "Wei"
  },
  "safavid-dynasty": {
   "name": "Dinastía safávida"
+ },
+ "seleucid-empire": {
+  "name": "Seléucidas"
  },
  "northern-song": {
   "name": "Dinastía Song"
@@ -237,7 +240,7 @@
   "name": "Kanato kazajo"
  },
  "british-east-africa": {
-  "name": "África Oriental Británica"
+  "name": "África Oriental británica"
  },
  "kazakhstan": {
   "name": "Kazajistán"
@@ -246,16 +249,16 @@
   "name": "Imperio bizantino"
  },
  "kara-khitans": {
-  "name": "Kanato de Jara-Jitai"
+  "name": "Kanato de Kara-Kitai"
  },
  "white-horde": {
   "name": "Horda Blanca"
  },
  "later-jin-dynasty": {
-  "name": "Jin Posterior"
+  "name": "Jin Posterior (1616-1636)"
  },
  "gupta-empire": {
-  "name": "Imperio gupta"
+  "name": "Imperio Gupta"
  },
  "republic-of-sudan": {
   "name": "Sudán"
@@ -290,6 +293,9 @@
  "roman-republic": {
   "name": "República romana"
  },
+ "byzantine-empire": {
+  "name": "Relaciones exteriores del Imperio bizantino"
+ },
  "mahdist-state": {
   "name": "Estado mahdista"
  },
@@ -308,6 +314,9 @@
  "kushan-empire": {
   "name": "Imperio kushán"
  },
+ "median-kingdom": {
+  "name": "Anexo:Reyes de Media"
+ },
  "greenland": {
   "name": "Groenlandia"
  },
@@ -318,10 +327,7 @@
   "name": "Imperio durrani"
  },
  "southern-ming": {
-  "name": "Dinastía Ming del Sur"
- },
- "centralist-mexico": {
-  "name": "República Centralista"
+  "name": "Dinastía de los Ming del Sur"
  },
  "ghurid-dynasty": {
   "name": "Imperio gúrida"
@@ -344,6 +350,9 @@
  "ayyubid-sultanate": {
   "name": "Dinastía ayubí"
  },
+ "centralist-mexico": {
+  "name": "República Centralista"
+ },
  "dutch-east-indies": {
   "name": "Indias Orientales Neerlandesas"
  },
@@ -351,7 +360,7 @@
   "name": "México"
  },
  "second-mexican-empire": {
-  "name": "Segundo Imperio mexicano"
+  "name": "Segundo Imperio Mexicano"
  },
  "fatimid-caliphate": {
   "name": "Califato fatimí"
@@ -360,13 +369,13 @@
   "name": "Reino de Portugal"
  },
  "kingdom-of-saudi-arabia": {
-  "name": "Arabia Saudita"
+  "name": "Arabia Saudí"
  },
  "liao-dynasty": {
   "name": "Dinastía Liao"
  },
  "almoravid-dynasty": {
-  "name": "Almorávides"
+  "name": "Imperio almorávide"
  },
  "hotaki-dynasty": {
   "name": "Dinastía hotaki"
@@ -387,7 +396,7 @@
   "name": "Qin Anterior"
  },
  "qajar-dynasty": {
-  "name": "Dinastía kayar"
+  "name": "Dinastía Kayar"
  },
  "northern-zhou": {
   "name": "Zhou del Norte"
@@ -411,13 +420,16 @@
   "name": "Dinastía Mahameghavahana"
  },
  "kingdom-of-hejaz-and-nejd": {
-  "name": "Tercer Estado saudita"
+  "name": "Reino del Nejd y del Hiyaz"
  },
  "warring-states-china": {
-  "name": "Reinos combatientes"
+  "name": "Reinos Combatientes"
  },
  "islamic-republic-of-iran": {
   "name": "Irán"
+ },
+ "pahlavi-dynasty": {
+  "name": "Dinastía Pahlaví"
  },
  "libyan-arab-republic": {
   "name": "República Árabe Libia"
@@ -434,23 +446,29 @@
  "novgorod-republic": {
   "name": "República de Nóvgorod"
  },
+ "zand-dynasty": {
+  "name": "Dinastía Zand"
+ },
  "mongolian-people-s-republic": {
   "name": "República Popular de Mongolia"
  },
  "later-tang": {
   "name": "Dinastía Tang posterior"
  },
- "qin": {
-  "name": "Estado Qin"
- },
  "indo-scythians": {
   "name": "Indoescitas"
+ },
+ "first-toungoo-empire": {
+  "name": "Primer Imperio Toungoo"
  },
  "republic-of-peru": {
   "name": "Perú"
  },
+ "huns": {
+  "name": "Hunos"
+ },
  "mali-federation": {
-  "name": "Federación de Mali"
+  "name": "Federación de Malí"
  },
  "republic-of-new-granada": {
   "name": "República de la Nueva Granada"
@@ -476,11 +494,17 @@
  "mamluk-dynasty": {
   "name": "Mamelucos de Delhi"
  },
+ "new-granada": {
+  "name": "Nueva Granada (multilingüismo)"
+ },
  "kingdom-of-the-franks": {
   "name": "Reino de los francos en la época merovingia"
  },
  "kara-khanids": {
-  "name": "Kanato karajánida"
+  "name": "Karajánidas"
+ },
+ "han": {
+  "name": "Beylicato de Saruhanoğlu"
  },
  "buyid-dynasty": {
   "name": "Dinastía búyida"
@@ -546,22 +570,22 @@
   "name": "Zanguíes"
  },
  "shunga-empire": {
-  "name": "Imperio Śuṅga"
+  "name": "Imperio Sunga"
  },
  "kanva-dynasty": {
   "name": "Dinastía Kanva"
  },
  "rashtrakuta-dynasty": {
-  "name": "Imperio rashtrakuta"
+  "name": "Rashtrakuta"
  },
  "ethiopian-empire": {
   "name": "Imperio etíope"
  },
  "emirate-of-nejd": {
-  "name": "Emirato de Néyed"
+  "name": "Emirato de Nechd"
  },
  "mali-empire": {
-  "name": "Imperio de Mali"
+  "name": "Imperio de Malí"
  },
  "hamdanid-emirates": {
   "name": "Dinastía hamdánida"
@@ -570,13 +594,13 @@
   "name": "Turquestán Oriental"
  },
  "harsha-s-empire": {
-  "name": "Jarsha Vardhana"
+  "name": "Harsha Vardhana"
  },
  "house-of-jagiellon": {
   "name": "Dinastía Jagellón"
  },
  "palmyrene-empire": {
-  "name": "Imperio de Palmira"
+  "name": "Reino de Palmira"
  },
  "swedish-empire": {
   "name": "Imperio sueco"
@@ -594,7 +618,7 @@
   "name": "Egipto"
  },
  "spring-and-autumn-states": {
-  "name": "Primaveras y otoños"
+  "name": "Primaveras y Otoños"
  },
  "kingdom-of-egypt": {
   "name": "Reino de Egipto"
@@ -614,8 +638,11 @@
  "tulunids": {
   "name": "Tuluníes"
  },
+ "turks": {
+  "name": "Turk"
+ },
  "kidarites": {
-  "name": "Reino kidarita"
+  "name": "Reino Kidarita"
  },
  "khmer-empire": {
   "name": "Imperio jemer"
@@ -626,11 +653,11 @@
  "almohad-caliphate": {
   "name": "Imperio almohade"
  },
- "austria-hungary": {
-  "name": "Imperio austrohúngaro"
+ "nanda-empire": {
+  "name": "Imperio Nanda"
  },
  "chalukya-dynasty": {
-  "name": "Dinastía chalukya"
+  "name": "Dinastía Chalukya"
  },
  "gurjara-pratihara-dynasty": {
   "name": "Gurjara-Pratihara"
@@ -642,7 +669,7 @@
   "name": "Nigeria"
  },
  "later-zhou": {
-  "name": "Dinastía Zhou Tardía"
+  "name": "Dinastía Zhou tardía"
  },
  "ottoman-tripolitania": {
   "name": "Tripolitania otomana"
@@ -657,16 +684,16 @@
   "name": "Shu"
  },
  "western-wei": {
-  "name": "Dinastía Wei del Oeste"
+  "name": "Wei Occidental"
  },
  "francoist-spain": {
-  "name": "Dictadura de Francisco Franco"
+  "name": "España franquista"
  },
  "second-spanish-republic": {
-  "name": "Segunda República española"
+  "name": "Segunda República Española"
  },
  "khanate-of-khiva": {
-  "name": "Kanato de Jiva"
+  "name": "Kanato de Jarazm"
  },
  "western-satraps": {
   "name": "Sátrapas occidentales"
@@ -687,10 +714,7 @@
   "name": "Gran Ducado de Lituania"
  },
  "iberian-union": {
-  "name": "Portugal bajo la casa de Austria"
- },
- "austrian-empire": {
-  "name": "Imperio austríaco"
+  "name": "Unión Ibérica"
  },
  "united-kingdoms-of-sweden-and-norway": {
   "name": "Unión entre Suecia y Noruega"
@@ -713,11 +737,17 @@
  "french-indochina": {
   "name": "Indochina francesa"
  },
+ "later-jin": {
+  "name": "Jin Posterior (Cinco dinastías)"
+ },
  "indo-greeks": {
   "name": "Reino indogriego"
  },
+ "southern-tang": {
+  "name": "Tang del Sur"
+ },
  "former-yan": {
-  "name": "Yan Anterior"
+  "name": "Mujong"
  },
  "republic-of-turkey": {
   "name": "Turquía"
@@ -725,17 +755,20 @@
  "khanate-of-bukhara": {
   "name": "Kanato de Bujará"
  },
+ "pro-swedish-poland": {
+  "name": "Invasión sueca de Polonia (1701-1706)"
+ },
  "indus-valley-civilization": {
   "name": "Civilización del valle del Indo"
  },
  "western-chalukya-empire": {
-  "name": "Imperio chalukya de Occidente"
+  "name": "Imperio de Chalukya Occidental"
  },
  "french-directory": {
   "name": "Directorio francés"
  },
  "habsburg-monarchy": {
-  "name": "Imperio Habsburgo"
+  "name": "Monarquía Habsburgo"
  },
  "indo-sasanian-empire": {
   "name": "Reino kushano-sasánida"
@@ -752,14 +785,14 @@
  "east-franks": {
   "name": "Francia Oriental"
  },
+ "austria-hungary": {
+  "name": "Imperio austrohúngaro"
+ },
  "gallic-empire": {
   "name": "Imperio galo"
  },
  "jalayirid-sultanate": {
   "name": "Dinastía yalayerí"
- },
- "french-fourth-republic": {
-  "name": "Cuarta República francesa"
  },
  "new-kingdom-of-egypt": {
   "name": "Imperio Nuevo de Egipto"
@@ -770,8 +803,17 @@
  "neo-babylonian-empire": {
   "name": "Imperio neobabilónico"
  },
+ "french-fourth-republic": {
+  "name": "Cuarta República francesa"
+ },
  "zhou-dynasty": {
   "name": "Dinastía Zhou"
+ },
+ "protectorate-of-the-western-regions": {
+  "name": "Protectorado de las regiones occidentales"
+ },
+ "austrian-empire": {
+  "name": "Imperio austríaco"
  },
  "visigothic-kingdom": {
   "name": "Reino visigodo"
@@ -783,16 +825,16 @@
   "name": "Dinastía Konbaung"
  },
  "emirate-of-jabal-shammar": {
-  "name": "Emirato de Yabal Shammar"
+  "name": "Emirato de Jabal Shammar"
  },
  "french-third-republic": {
-  "name": "Tercera República francesa"
+  "name": "Tercera República Francesa"
  },
  "rattanakosin-kingdom": {
   "name": "Reino de Rattanakosin"
  },
  "vakataka-kingdom": {
-  "name": "Dinastía Vakataka"
+  "name": "Dinastia Vakataka"
  },
  "second-french-empire": {
   "name": "Segundo Imperio francés"
@@ -809,20 +851,20 @@
  "aquitaine": {
   "name": "Aquitania"
  },
- "former-zhao": {
-  "name": "Han-Zhao"
- },
  "federal-republic-of-somalia": {
   "name": "Somalia"
  },
+ "bourbon-kingdom-of-france": {
+  "name": "Restauración borbónica en Francia"
+ },
  "french-first-republic": {
-  "name": "Primera República francesa"
+  "name": "Primera República Francesa"
  },
  "kingdom-of-afghanistan": {
   "name": "Reino de Afganistán"
  },
  "republic-of-afghanistan": {
-  "name": "República de Afganistán"
+  "name": "República de Daud"
  },
  "mujahideen": {
   "name": "Muyahidín"
@@ -833,11 +875,11 @@
  "french-consulate": {
   "name": "Consulado francés"
  },
+ "gothia": {
+  "name": "Gotia"
+ },
  "denmark-norway": {
   "name": "Reino de Dinamarca y Noruega"
- },
- "bourbon-kingdom-of-france": {
-  "name": "Restauración borbónica en Francia"
  },
  "funj-sultanate": {
   "name": "Sultanato de Sennar"
@@ -851,8 +893,14 @@
  "south-sudan": {
   "name": "Sudán del Sur"
  },
+ "khwarezmid-dynasty": {
+  "name": "Dinastía anushtegínida"
+ },
  "later-shu": {
   "name": "Shu posterior"
+ },
+ "former-shu": {
+  "name": "Shu anterior"
  },
  "federal-league": {
   "name": "Liga Federal"
@@ -862,9 +910,6 @@
  },
  "ukraine": {
   "name": "Ucrania"
- },
- "chu": {
-  "name": "Estado Chu"
  },
  "republic-of-kenya": {
   "name": "Kenia"
@@ -884,17 +929,20 @@
  "ostrogothic-kingdom": {
   "name": "Reino ostrogodo de Italia"
  },
+ "kartids": {
+  "name": "Kartíes"
+ },
  "kannauj-varman-dynasty": {
   "name": "Kannauj"
  },
  "haudenosaunee": {
-  "name": "Iroqués"
+  "name": "Iroqueses"
  },
  "vijayanagara-empire": {
-  "name": "Imperio vijayanagara"
+  "name": "Imperio Vijayanagara"
  },
  "caliphate-of-cordoba": {
-  "name": "Emirato de Córdoba"
+  "name": "Califato de Córdoba"
  },
  "kingdom-of-kush": {
   "name": "Reino de Kush"
@@ -923,6 +971,9 @@
  "kingdom-of-thailand": {
   "name": "Tailandia"
  },
+ "chola-empire": {
+  "name": "Imperio Chola"
+ },
  "old-kingdom-of-norway": {
   "name": "Noruega"
  },
@@ -948,10 +999,10 @@
   "name": "Rus"
  },
  "north-sea-empire": {
-  "name": "Imperio del Mar del Norte"
+  "name": "Imperio del mar del Norte"
  },
  "yadava-dynasty": {
-  "name": "Dinastía Seuna"
+  "name": "Seuna"
  },
  "papua-new-guinea": {
   "name": "Papúa Nueva Guinea"
@@ -966,7 +1017,7 @@
   "name": "Imperio tangut"
  },
  "bahmani-sultanate": {
-  "name": "Sultanato bahmaní"
+  "name": "Sultanato Bahmani"
  },
  "rustamid-dynasty": {
   "name": "Rostomitas"
@@ -999,7 +1050,7 @@
   "name": "Estado púnico"
  },
  "halych-volhynia-occupation": {
-  "name": "Reino de Galicia-Volinia"
+  "name": "Principado de Galicia-Volynia"
  },
  "ayutthaya-kingdom": {
   "name": "Reino de Ayutthaya"
@@ -1012,6 +1063,9 @@
  },
  "german-confederation": {
   "name": "Confederación Germánica"
+ },
+ "emirate-of-cordoba": {
+  "name": "Emirato de Córdoba"
  },
  "united-provinces-of-central-america": {
   "name": "República Federal de Centroamérica"
@@ -1046,6 +1100,9 @@
  "angevin-empire": {
   "name": "Imperio angevino"
  },
+ "kingdom-of-poland": {
+  "name": "Reino de Polonia (1025-1795)"
+ },
  "vandals": {
   "name": "Vándalos"
  },
@@ -1071,10 +1128,10 @@
   "name": "Marruecos"
  },
  "magadha-shaishunaga-dynasty": {
-  "name": "Dinastía Shishunaga"
+  "name": "Dinastía sísunaga"
  },
  "sikh-empire": {
-  "name": "Imperio sij"
+  "name": "Reino Sij"
  },
  "dominion-of-newfoundland": {
   "name": "Dominio de Terranova"
@@ -1086,10 +1143,10 @@
   "name": "Reino de Sujotai"
  },
  "kingdom-of-axum": {
-  "name": "Reino de Axum"
+  "name": "Reino de Aksum"
  },
  "rhodesia": {
-  "name": "República de Rodesia"
+  "name": "Rodesia"
  },
  "zimbabwe-rhodesia": {
   "name": "Zimbabue Rodesia"
@@ -1103,11 +1160,17 @@
  "wattasid-dynasty": {
   "name": "Sultanato wattásida"
  },
+ "nawabs-of-bengal": {
+  "name": "Nawab de Bengala"
+ },
  "middle-franks": {
   "name": "Lotaringia"
  },
  "mayan-city-states": {
   "name": "Cultura maya"
+ },
+ "rasulid-dynasty": {
+  "name": "Dinastía rasúlida"
  },
  "tahirid-sultanate": {
   "name": "Dinastía tahirí"
@@ -1122,7 +1185,7 @@
   "name": "Emirato de Bujará"
  },
  "sultanate-of-rum": {
-  "name": "Sultanato de Rum"
+  "name": "Sultanato de Rüm"
  },
  "sultanate-of-bengal": {
   "name": "Sultanato de Bengala"
@@ -1155,7 +1218,7 @@
   "name": "Reino de Inglaterra"
  },
  "republic-of-the-congo": {
-  "name": "República del Congo"
+  "name": "Congo"
  },
  "kingdom-of-prussia": {
   "name": "Reino de Prusia"
@@ -1230,7 +1293,7 @@
   "name": "Reino de Numidia"
  },
  "late-pallava-empire": {
-  "name": "Dinastía Pallava"
+  "name": "Pallava"
  },
  "kingdom-of-romania": {
   "name": "Reino de Rumania"
@@ -1239,7 +1302,7 @@
   "name": "Reino de Jotán"
  },
  "old-great-bulgaria": {
-  "name": "Antigua Gran Bulgaria"
+  "name": "Primitiva Gran Bulgaria"
  },
  "nguyen-dynasty": {
   "name": "Dinastía Nguyễn"
@@ -1274,7 +1337,7 @@
  "wadai-empire": {
   "name": "Imperio uadai"
  },
- "napoleonic-batavia-republic": {
+ "dutch-cape-colony": {
   "name": "Colonia neerlandesa del Cabo"
  },
  "salian-franks": {
@@ -1284,7 +1347,7 @@
   "name": "Reino vándalo"
  },
  "principality-of-chernigov": {
-  "name": "Principado de Chernígov"
+  "name": "Principado de Chernigov"
  },
  "ghassanids": {
   "name": "Gasánidas"
@@ -1299,16 +1362,13 @@
   "name": "Misiones jesuíticas guaraníes"
  },
  "hyderabad-state": {
-  "name": "Estado de Hyderabad"
+  "name": "Hyderabad"
  },
  "batavian-republic": {
   "name": "República Bátava"
  },
  "lakhmid-kingdom": {
   "name": "Lájmidas"
- },
- "confederation-of-the-rhine": {
-  "name": "Confederación del Rin"
  },
  "sena-dynasty": {
   "name": "Dinastía Sena"
@@ -1324,6 +1384,9 @@
  },
  "aghlabid-dynasty": {
   "name": "Aglabí"
+ },
+ "fihrids": {
+  "name": "Fihríes"
  },
  "kharijites": {
   "name": "Jariyíes"
@@ -1368,7 +1431,7 @@
   "name": "Rumania"
  },
  "kingdom-of-sardinia": {
-  "name": "Reino de Cerdeña"
+  "name": "Reino de Cerdeña-Piamonte"
  },
  "joseon": {
   "name": "Dinastía Joseon"
@@ -1394,6 +1457,9 @@
  "communist-laos": {
   "name": "Laos"
  },
+ "western-qin": {
+  "name": "Qin Occidental"
+ },
  "kingdom-of-laos": {
   "name": "Reino de Laos"
  },
@@ -1401,7 +1467,7 @@
   "name": "Posesiones inglesas de ultramar"
  },
  "babylonia": {
-  "name": "Babilonia"
+  "name": "Imperio babilónico"
  },
  "alans": {
   "name": "Alanos"
@@ -1409,11 +1475,17 @@
  "hafsid-dynasty": {
   "name": "Dinastía hafsí"
  },
+ "hashemite-arab-federation": {
+  "name": "Irak árabe"
+ },
  "crimean-khanate": {
   "name": "Kanato de Crimea"
  },
  "pandya-empire": {
   "name": "Dinastía Pandya"
+ },
+ "confederation-of-the-rhine": {
+  "name": "Confederación del Rin"
  },
  "germiyanids": {
   "name": "Beylicato de Germiyan"
@@ -1421,14 +1493,20 @@
  "paramara-dynasty": {
   "name": "Dinastía Paramara"
  },
- "mauretania": {
-  "name": "Reino de Mauritania"
+ "denmark-england": {
+  "name": "Ataques daneses a la Inglaterra normanda"
+ },
+ "western-sahara": {
+  "name": "Sáhara Occidental"
+ },
+ "elam": {
+  "name": "Imperio elamita"
  },
  "minaeans": {
   "name": "Mineos"
  },
  "tay-son-dynasty": {
-  "name": "Dinastía Tây Sơn"
+  "name": "Dinastía Tay Son"
  },
  "upper-burgundy-and-italy": {
   "name": "Reino de la Alta Borgoña"
@@ -1446,10 +1524,10 @@
   "name": "Imperio azteca"
  },
  "samo-s-empire": {
-  "name": "Samo"
+  "name": "Imperio de Samo"
  },
  "french-mandate-for-syria-and-lebanon": {
-  "name": "Mandato francés de Siria y el Líbano"
+  "name": "Mandato francés de Siria"
  },
  "republic-of-uganda": {
   "name": "Uganda"
@@ -1463,9 +1541,6 @@
  "republic-of-belarus": {
   "name": "Bielorrusia"
  },
- "goryeo": {
-  "name": "Koryo"
- },
  "sultanate-of-johor": {
   "name": "Sultanato de Johor"
  },
@@ -1473,7 +1548,7 @@
   "name": "Dinastía chupánida"
  },
  "brythons": {
-  "name": "Britanos"
+  "name": "Britanos celtas"
  },
  "first-hellenic-republic": {
   "name": "Primera República helénica"
@@ -1493,6 +1568,9 @@
  "sosso-empire": {
   "name": "Reino de Sosso"
  },
+ "golconda-sultanate": {
+  "name": "Dinastía Qutb Shahi"
+ },
  "lombards": {
   "name": "Lombardos"
  },
@@ -1501,6 +1579,9 @@
  },
  "kashmir": {
   "name": "Cachemira"
+ },
+ "kashmiri-sultanate": {
+  "name": "Sultanato de Cachemira"
  },
  "republic-of-senegal": {
   "name": "Senegal"
@@ -1512,10 +1593,10 @@
   "name": "Reino de Georgia"
  },
  "idrisids": {
-  "name": "Dinastía idrisí"
+  "name": "Dinastía idrísida"
  },
  "myinsaing-kingdom": {
-  "name": "Reino de Myinsaing"
+  "name": "Reino Myinsaing"
  },
  "kingdom-of-pinya": {
   "name": "Reino de Pinya"
@@ -1535,6 +1616,12 @@
  "teutonic-order": {
   "name": "Orden Teutónica"
  },
+ "syria": {
+  "name": "Siria"
+ },
+ "arab-socialist-ba-ath-party": {
+  "name": "Partido Baaz Árabe Socialista"
+ },
  "ai-viet": {
   "name": "Dai Viet"
  },
@@ -1551,10 +1638,7 @@
   "name": "Frigia"
  },
  "second-syrian-republic": {
-  "name": "Segunda República Siria"
- },
- "republic-of-syria": {
-  "name": "Siria"
+  "name": "República de Siria"
  },
  "serbian-empire": {
   "name": "Imperio serbio"
@@ -1565,8 +1649,8 @@
  "democratic-republic-of-vietnam": {
   "name": "Vietnam del Norte"
  },
- "arab-socialist-ba-ath-party": {
-  "name": "Partido Baaz Árabe Socialista"
+ "omani-slave-coast": {
+  "name": "Omaníes"
  },
  "kingdom-of-cambodia": {
   "name": "Camboya"
@@ -1579,6 +1663,9 @@
  },
  "kashmir-and-jammu": {
   "name": "Principado de Jammu y Cachemira"
+ },
+ "north-yemen": {
+  "name": "Yemen del Norte"
  },
  "oriental-republic-of-uruguay": {
   "name": "Uruguay"
@@ -1607,9 +1694,6 @@
  "county-of-ribagorza": {
   "name": "Condado de Ribagorza"
  },
- "principality-of-bulgaria": {
-  "name": "Principado de Bulgaria"
- },
  "kingdom-of-bohemia": {
   "name": "Reino de Bohemia"
  },
@@ -1634,8 +1718,11 @@
  "kingdom-of-urartu": {
   "name": "Urartu"
  },
+ "principality-of-bulgaria": {
+  "name": "Principado autónomo de Bulgaria"
+ },
  "kingdom-of-luang-phrabang": {
-  "name": "Luang Prabang"
+  "name": "Lūang Phabāng"
  },
  "republic-of-baja-california": {
   "name": "República de Baja California"
@@ -1644,7 +1731,7 @@
   "name": "Reino de Soissons"
  },
  "united-principalities-of-moldavia-and-wallachia": {
-  "name": "Principado de Rumania"
+  "name": "Principado de Rumanía"
  },
  "hausa-kingdoms": {
   "name": "Estados hausa"
@@ -1657,6 +1744,9 @@
  },
  "jin": {
   "name": "Estado Jin"
+ },
+ "ngo-dynasty": {
+  "name": "Dinastía Ngô"
  },
  "kingdom-of-the-gepids": {
   "name": "Gépidos"
@@ -1675,6 +1765,9 @@
  },
  "netherlands-antilles": {
   "name": "Antillas Neerlandesas"
+ },
+ "republic-of-uryankhay": {
+  "name": "República de Uriankhai"
  },
  "serbia-montenegro": {
   "name": "Serbia y Montenegro"
@@ -1784,6 +1877,9 @@
  "don-cossacks": {
   "name": "Cosacos del Don"
  },
+ "zayyanid-dynasty": {
+  "name": "Ziyánidas"
+ },
  "nabataeans": {
   "name": "Nabateos"
  },
@@ -1802,6 +1898,9 @@
  "laomedon": {
   "name": "Laomedonte de Mitilene"
  },
+ "bavarians": {
+  "name": "Bávaros"
+ },
  "kingdom-of-greece": {
   "name": "Reino de Grecia"
  },
@@ -1815,7 +1914,7 @@
   "name": "Reino de la Sonda"
  },
  "zaporozhian-cossacks": {
-  "name": "Cosacos de Zaporiyia"
+  "name": "Cosacos zapórogos"
  },
  "duchy-of-spoleto": {
   "name": "Ducado de Spoleto"
@@ -1854,7 +1953,7 @@
   "name": "Polacos"
  },
  "german-democratic-republic": {
-  "name": "República Democrática Alemana"
+  "name": "Alemania Oriental"
  },
  "shirvan": {
   "name": "Shirván"
@@ -1875,7 +1974,7 @@
   "name": "Principado de Transilvania"
  },
  "kingdom-of-alamannia": {
-  "name": "Alamania"
+  "name": "Alemannia"
  },
  "hoysala-kingdom": {
   "name": "Hoysala"
@@ -1892,6 +1991,9 @@
  "despotate-of-epirus": {
   "name": "Despotado de Epiro"
  },
+ "korea": {
+  "name": "Corea"
+ },
  "pro-habsburg-spain": {
   "name": "Casa de Austria"
  },
@@ -1901,8 +2003,11 @@
  "sultanate-of-maguindanao": {
   "name": "Sultanato de Maguindánao"
  },
+ "kong-empire": {
+  "name": "Imperio Kong"
+ },
  "principality-of-halych": {
-  "name": "Principado de Galicia"
+  "name": "Principado de Galitzia"
  },
  "odrysian-kingdom": {
   "name": "Reino odrisio"
@@ -1919,6 +2024,9 @@
  "imamate-of-oman": {
   "name": "Imanato de Omán"
  },
+ "riau-lingga-sultanate": {
+  "name": "Sultanato de Riua-Lingga"
+ },
  "kingdom-of-jordan": {
   "name": "Jordania"
  },
@@ -1932,7 +2040,7 @@
   "name": "Reino de Mrauk U"
  },
  "nguyen-lords": {
-  "name": "Señorío Nguyễn"
+  "name": "Señorío Nguyen"
  },
  "republic-of-liberia": {
   "name": "Liberia"
@@ -1947,7 +2055,7 @@
   "name": "Burgundios"
  },
  "trung-sisters": {
-  "name": "Hermanas Trưng"
+  "name": "Hermanas Trung"
  },
  "bagratid-armenia": {
   "name": "Armenia bagrátida"
@@ -1956,7 +2064,7 @@
   "name": "Principado de Minsk"
  },
  "sloboda-ukraine": {
-  "name": "Ucrania Libre"
+  "name": "Ucrania Sloboda"
  },
  "hadhramaut": {
   "name": "Hadramaut"
@@ -1979,14 +2087,14 @@
  "independent-state-of-croatia": {
   "name": "Estado Independiente de Croacia"
  },
- "asir": {
-  "name": "Provincia de Asir"
+ "imamate-of-yemen": {
+  "name": "Imanes de Yemen"
  },
  "duchy-of-opole": {
   "name": "Ducado de Opole"
  },
  "principality-of-pereyaslavl": {
-  "name": "Principado de Pereyáslav"
+  "name": "Principado de Pereyáslavl"
  },
  "new-caledonia": {
   "name": "Nueva Caledonia"
@@ -2039,9 +2147,6 @@
  "gauda-kingdom": {
   "name": "Reino de Gauda"
  },
- "state-of-israel": {
-  "name": "Israel"
- },
  "kingdom-of-galicia": {
   "name": "Reino de Galicia"
  },
@@ -2060,7 +2165,7 @@
  "oyo-empire": {
   "name": "Imperio oyo"
  },
- "azerbaijan-democratic-republic": {
+ "republic-of-azerbaijan": {
   "name": "Azerbaiyán"
  },
  "republic-of-austria": {
@@ -2092,6 +2197,9 @@
  },
  "republic-of-panama": {
   "name": "Panamá"
+ },
+ "state-of-israel": {
+  "name": "Israel"
  },
  "saxons": {
   "name": "Sajones"
@@ -2141,6 +2249,9 @@
  "principality-of-wallachia": {
   "name": "Valaquia"
  },
+ "lower-egypt": {
+  "name": "Bajo Egipto"
+ },
  "house-of-bourbon": {
   "name": "Casa de Borbón"
  },
@@ -2149,6 +2260,9 @@
  },
  "bahrani-dynasty": {
   "name": "Al-Hasa"
+ },
+ "uyunid-emirate": {
+  "name": "Dinastía uyúnida"
  },
  "anuradhapura": {
   "name": "Anuradhapura"
@@ -2163,7 +2277,7 @@
   "name": "Reino de Kediri"
  },
  "mossi-kingdoms": {
-  "name": "Reinos mossi"
+  "name": "Reinos Mossi"
  },
  "bahrain": {
   "name": "Baréin"
@@ -2171,11 +2285,11 @@
  "kingdom-of-bhutan": {
   "name": "Bután"
  },
- "netherlands": {
-  "name": "Países Bajos"
- },
  "mycenaean-greece": {
   "name": "Civilización micénica"
+ },
+ "netherlands": {
+  "name": "Países Bajos"
  },
  "polyperchon": {
   "name": "Poliperconte"
@@ -2183,8 +2297,11 @@
  "zapotec-civilization": {
   "name": "Cultura zapoteca"
  },
+ "albanian-principalities": {
+  "name": "Principados albaneses"
+ },
  "principality-of-turov-and-pinsk": {
-  "name": "Principado de Túrov y Pinsk"
+  "name": "Principado de Turov y Pinsk"
  },
  "sultanate-of-sulu": {
   "name": "Sultanato de Joló"
@@ -2198,11 +2315,8 @@
  "house-of-savoy": {
   "name": "Casa de Saboya"
  },
- "zhao": {
-  "name": "Estado Zhao"
- },
  "principality-of-upper-hungary": {
-  "name": "Principado de la Alta Hungría"
+  "name": "Principado de Alta Hungría"
  },
  "etruscans": {
   "name": "Etruscos"
@@ -2229,10 +2343,10 @@
   "name": "Cármatas"
  },
  "dabuyid-dynasty": {
-  "name": "Dinastía dabuyí"
+  "name": "Dinastía dabúyida"
  },
  "sabaeans": {
-  "name": "Reino de Saba"
+  "name": "Sabeos"
  },
  "bidar-sultanate": {
   "name": "Sultanato de Bidar"
@@ -2262,7 +2376,7 @@
   "name": "Principado de Serbia"
  },
  "portuguese-ceylon": {
-  "name": "Ceilán portugués"
+  "name": "Ceilán portuguesa"
  },
  "greek-dark-ages": {
   "name": "Edad Oscura griega"
@@ -2277,7 +2391,7 @@
   "name": "Casa de Anjou-Sicilia"
  },
  "mataram-kingdom": {
-  "name": "Reino de Medang"
+  "name": "Reino de Mataram"
  },
  "sajid-dynasty": {
   "name": "Dinastía sayí"
@@ -2343,7 +2457,7 @@
   "name": "Banato de Bosnia"
  },
  "nayaks-of-madurai": {
-  "name": "Nayakas de Madurai"
+  "name": "Madurai Nayak"
  },
  "taifa-of-denia": {
   "name": "Taifa de Denia"
@@ -2369,6 +2483,9 @@
  "zaydi-alid-dynasties": {
   "name": "Dinastía alávida"
  },
+ "demak-sultanate": {
+  "name": "Sultanato de Demak"
+ },
  "county-of-foix": {
   "name": "Condado de Foix"
  },
@@ -2386,9 +2503,6 @@
  },
  "dutch-ceylon": {
   "name": "Ceilán neerlandés"
- },
- "lu": {
-  "name": "Estado Lu"
  },
  "kingdom-of-westphalia": {
   "name": "Reino de Westfalia"
@@ -2420,6 +2534,9 @@
  "pahang-sultanate": {
   "name": "Reino del Pahang"
  },
+ "thuringian-states": {
+  "name": "Estados Turingios"
+ },
  "kingdom-of-thuringia": {
   "name": "Basina de Turingia"
  },
@@ -2434,6 +2551,9 @@
  },
  "kingdom-of-africa": {
   "name": "Reino de África"
+ },
+ "allied-occupied-germany": {
+  "name": "Alemania ocupada por los Aliados"
  },
  "duchy-of-normandy": {
   "name": "Ducado de Normandía"
@@ -2457,7 +2577,7 @@
   "name": "Ducado de Prusia"
  },
  "kingdom-of-hanover": {
-  "name": "Reino de Hannover"
+  "name": "Reino de Hanóver"
  },
  "caucasian-imamate": {
   "name": "Imanato del Cáucaso"
@@ -2475,7 +2595,7 @@
   "name": "Condado de Flandes"
  },
  "italian-city-states": {
-  "name": "Ciudades-Estado italianas"
+  "name": "Ciudad-estado italiana"
  },
  "county-of-savoy": {
   "name": "Condado de Saboya"
@@ -2528,6 +2648,9 @@
  "catalonia": {
   "name": "Cataluña"
  },
+ "taiwan-republic-of-china": {
+  "name": "Taiwán (República de China)"
+ },
  "itza-mayans": {
   "name": "Mayas itzaes"
  },
@@ -2539,6 +2662,9 @@
  },
  "republic-of-guinea-bissau": {
   "name": "Guinea-Bisáu"
+ },
+ "republic-of-moldova": {
+  "name": "Moldavia"
  },
  "dong-okjeo": {
   "name": "Okjeo"
@@ -2564,6 +2690,9 @@
  "beylik-of-karasi": {
   "name": "Beylicato de Karasi"
  },
+ "kingdom-of-bithynia": {
+  "name": "Reino de Bitinia"
+ },
  "revolutionary-roman-republic": {
   "name": "República Romana"
  },
@@ -2577,7 +2706,7 @@
   "name": "Rascia"
  },
  "british-ceylon": {
-  "name": "Ceilán británico"
+  "name": "Ceilán británica"
  },
  "equatorial-guinea": {
   "name": "Guinea Ecuatorial"
@@ -2600,23 +2729,26 @@
  "county-of-rouergue": {
   "name": "Rouergue"
  },
- "people-s-socialist-republic-of-albania": {
-  "name": "República Popular Socialista de Albania"
+ "republic-of-albania": {
+  "name": "República Popular de Albania"
  },
  "republic-of-pisa": {
   "name": "República de Pisa"
  },
+ "sultanate-of-jambi": {
+  "name": "Sultanato de Jambi"
+ },
  "county-of-champagne": {
   "name": "Condado de Champaña"
- },
- "republic-of-moldova": {
-  "name": "Moldavia"
  },
  "grand-duchy-of-krakow": {
   "name": "Gran Ducado de Cracovia"
  },
  "mosquito-kingdom": {
-  "name": "Costa de Mosquitos"
+  "name": "Mosquítia"
+ },
+ "county-of-anjou": {
+  "name": "Condado de Anjou"
  },
  "principality-of-nitra": {
   "name": "Principado de Nitra"
@@ -2631,7 +2763,7 @@
   "name": "Zululandia"
  },
  "jaemtland": {
-  "name": "Jemtia"
+  "name": "Jämtland"
  },
  "rhodes": {
   "name": "Rodas"
@@ -2670,7 +2802,7 @@
   "name": "Taifa de Granada"
  },
  "kingdom-of-the-iberians": {
-  "name": "Reino de los iberos"
+  "name": "Reino de los kartvelianos"
  },
  "qatar-dynasty": {
   "name": "Catar"
@@ -2679,7 +2811,7 @@
   "name": "Dinastía XVI de Egipto"
  },
  "ramadanid-emirate": {
-  "name": "Ramázanidas"
+  "name": "Beylicato de Adana"
  },
  "breton-kingdoms": {
   "name": "Reinos bretones"
@@ -2689,6 +2821,12 @@
  },
  "sultanate-of-perak": {
   "name": "Sultán de Perak"
+ },
+ "kingdom-of-sophene": {
+  "name": "Reino de Sofene"
+ },
+ "county-of-poitou": {
+  "name": "Condado de Poitiers"
  },
  "county-of-armagnac": {
   "name": "Armañac"
@@ -2715,7 +2853,7 @@
   "name": "Belice"
  },
  "margraviate-of-moravia": {
-  "name": "Marca de Moravia"
+  "name": "Marquesado de Moravia"
  },
  "jaffna-kingdom": {
   "name": "Reino de Jaffna"
@@ -2725,9 +2863,6 @@
  },
  "free-county-of-burgundy": {
   "name": "Franco Condado de Borgoña"
- },
- "emirate-of-sicily": {
-  "name": "Emirato de Sicilia"
  },
  "peloponnesian-league": {
   "name": "Liga del Peloponeso"
@@ -2760,7 +2895,7 @@
   "name": "Fiyi"
  },
  "despotate-of-dobruja": {
-  "name": "Despotado de Dobruja"
+  "name": "Principado de Karvuna"
  },
  "duchy-of-croatia": {
   "name": "Principado de Dalmacia"
@@ -2798,6 +2933,9 @@
  "patani-kingdom": {
   "name": "Reino de Patani"
  },
+ "upper-egypt": {
+  "name": "Alto Egipto"
+ },
  "republic-of-slovenia": {
   "name": "Eslovenia"
  },
@@ -2809,6 +2947,9 @@
  },
  "county-of-barcelona": {
   "name": "Condado de Barcelona"
+ },
+ "tuvan-people-s-republic": {
+  "name": "República Popular de Tannu Tuvá"
  },
  "commonwealth-of-the-bahamas": {
   "name": "Bahamas"
@@ -2828,9 +2969,6 @@
  "house-of-wittelsbach": {
   "name": "Casa de Wittelsbach"
  },
- "french-india": {
-  "name": "India francesa"
- },
  "principality-of-salerno": {
   "name": "Principado de Salerno"
  },
@@ -2841,7 +2979,7 @@
   "name": "Ducado de Lorena"
  },
  "olmec-civilization": {
-  "name": "Cultura olmeca"
+  "name": "Olmeca"
  },
  "chechen-republic": {
   "name": "Chechenia"
@@ -2901,7 +3039,7 @@
   "name": "Colonias fenicias"
  },
  "county-of-nevers": {
-  "name": "Condado de Névers"
+  "name": "Condado de Nevers"
  },
  "nayaks-of-thanjavur": {
   "name": "Nayakas de Tanjore"
@@ -2911,9 +3049,6 @@
  },
  "kingdom-of-the-isles": {
   "name": "Reino de Mann y las Islas"
- },
- "beylik-of-saruhan": {
-  "name": "Beylicato de Saruhan"
  },
  "zagwe-dynasty": {
   "name": "Dinastía Zagüe"
@@ -3032,9 +3167,6 @@
  "republic-of-the-rif": {
   "name": "República del Rif"
  },
- "republic-of-cabo-verde": {
-  "name": "Cabo Verde"
- },
  "dauphine": {
   "name": "Delfinado"
  },
@@ -3059,6 +3191,9 @@
  "cuzco": {
   "name": "Cusco"
  },
+ "puebloans-aztec-regional-system": {
+  "name": "Anasazi"
+ },
  "taifa-of-algeciras": {
   "name": "Taifa de Algeciras"
  },
@@ -3072,7 +3207,7 @@
   "name": "Juzgado de Torres"
  },
  "beylik-of-aydin": {
-  "name": "Beylicato de Aydın"
+  "name": "Beylicato de Aydınoğlu"
  },
  "bali": {
   "name": "Provincia de Bali"
@@ -3096,10 +3231,10 @@
   "name": "Ducado de Módena"
  },
  "rajahnate-of-cebu": {
-  "name": "Rajanato de Cebú"
+  "name": "Reino de Cebu"
  },
  "zhu": {
-  "name": "Estado Zou"
+  "name": "Zou"
  },
  "county-of-besalu": {
   "name": "Condado de Besalú"
@@ -3113,8 +3248,11 @@
  "republic-of-trinidad-and-tobago": {
   "name": "Trinidad y Tobago"
  },
+ "republic-of-cabo-verde": {
+  "name": "Cabo Verde"
+ },
  "principality-of-regensberg": {
-  "name": "Principado de Ratisbona"
+  "name": "Principado de Regensburg"
  },
  "principality-of-valona-and-kanina": {
   "name": "Principado de Valona"
@@ -3130,9 +3268,6 @@
  },
  "kingdom-of-sussex": {
   "name": "Reino de Sussex"
- },
- "teotihuacan": {
-  "name": "Teotihuacán"
  },
  "toltec": {
   "name": "Cultura tolteca"
@@ -3153,7 +3288,7 @@
   "name": "Malla"
  },
  "palestinians": {
-  "name": "Pueblo palestino"
+  "name": "Palestinos"
  },
  "nizhny-novgorod": {
   "name": "Nizhni Nóvgorod"
@@ -3162,10 +3297,13 @@
   "name": "Reino de Kuru"
  },
  "janapada-of-matsya": {
-  "name": "Matsia"
+  "name": "Matsia (reino)"
  },
  "janapada-of-surasena": {
   "name": "Surasena"
+ },
+ "thebans": {
+  "name": "Theban"
  },
  "janapada-of-vajji": {
   "name": "Vajji"
@@ -3173,11 +3311,17 @@
  "duchy-of-legnica": {
   "name": "Ducado de Legnica"
  },
+ "french-mascarene-islands": {
+  "name": "Islas Mascareñas francesas"
+ },
  "janapada-of-avanti": {
   "name": "Reino de Avanti"
  },
+ "janapada-of-kamboja": {
+  "name": "Kamboja"
+ },
  "chen": {
-  "name": "Estado de Chen"
+  "name": "Chen (estado)"
  },
  "taifa-of-arcos": {
   "name": "Taifa de Arcos"
@@ -3195,10 +3339,10 @@
   "name": "Reino de Tondó"
  },
  "free-city-of-danzig": {
-  "name": "Ciudad Libre de Dánzig"
+  "name": "Ciudad libre de Dánzig"
  },
  "duchy-of-oldenburg": {
-  "name": "Ducado de Oldemburgo"
+  "name": "Oldemburgo"
  },
  "duchy-of-brunswick": {
   "name": "Ducado de Brunswick"
@@ -3213,10 +3357,13 @@
   "name": "Principado de Guria"
  },
  "molossians": {
-  "name": "Molosos"
+  "name": "Molosia"
  },
  "county-of-rosellon": {
   "name": "Condado de Rosellón"
+ },
+ "xu": {
+  "name": "Xu (estado)"
  },
  "giudicato-of-gallura": {
   "name": "Juzgado de Gallura"
@@ -3226,6 +3373,9 @@
  },
  "taifa-of-saltes-and-huelva": {
   "name": "Taifa de Huelva"
+ },
+ "ahi-republic": {
+  "name": "Ahis"
  },
  "maynila": {
   "name": "Reino de Manila"
@@ -3248,11 +3398,11 @@
  "grand-duchy-of-saxe-weimar-eisenach": {
   "name": "Ducado de Sajonia-Weimar-Eisenach"
  },
+ "palestine": {
+  "name": "Palestina"
+ },
  "kingdom-of-essex": {
   "name": "Reino de Essex"
- },
- "cao": {
-  "name": "Estado Cao"
  },
  "kingdom-of-lindsey": {
   "name": "Reino de Lindsey"
@@ -3291,7 +3441,7 @@
   "name": "Ducado de Sajonia-Altemburgo"
  },
  "principality-of-reuss-gera": {
-  "name": "Principado de Reuss-Gera"
+  "name": "Reuss (línea menor)"
  },
  "cuban-communists": {
   "name": "Comunistas cubanos"
@@ -3300,13 +3450,13 @@
   "name": "Powys Wenwynwyn"
  },
  "county-of-pallars-sobira": {
-  "name": "El Pallars Sobirá"
+  "name": "Pallars Sobirá"
  },
  "septinsular-republic": {
   "name": "República de las Islas Jónicas"
  },
  "saxe-coburg-and-gotha": {
-  "name": "Ducado de Sajonia-Coburgo y Gotha"
+  "name": "Ducado de Sajonia-Coburgo-Gotha"
  },
  "taifa-of-alpuente": {
   "name": "Taifa de Alpuente"
@@ -3333,7 +3483,7 @@
   "name": "Luxemburgo"
  },
  "tenochtitlan": {
-  "name": "México-Tenochtitlan"
+  "name": "Tenochtitlán"
  },
  "county-of-osona": {
   "name": "Condado de Osona"
@@ -3348,7 +3498,7 @@
   "name": "India danesa"
  },
  "house-of-tocco": {
-  "name": "Condado Palatino de Cefalonia y Zacinto"
+  "name": "Condado palatino de Cefalonia y Zante"
  },
  "sultanate-of-bone": {
   "name": "Sultanato de Bone"
@@ -3360,19 +3510,19 @@
   "name": "Ducado de Bytom"
  },
  "duchy-of-anhalt": {
-  "name": "Anhalt"
+  "name": "Ducado de Anhalt"
  },
  "huguenots": {
   "name": "Hugonotes"
- },
- "kamerun": {
-  "name": "Camerún alemán"
  },
  "commune-of-the-zealots": {
   "name": "Comuna de los zelotes"
  },
  "free-city-of-krakow": {
   "name": "República de Cracovia"
+ },
+ "comoros": {
+  "name": "Comoras"
  },
  "county-of-pallars-jussa": {
   "name": "Pallars Jussá"
@@ -3393,7 +3543,7 @@
   "name": "Ciudad Libre de Hamburgo"
  },
  "taifa-of-ceuta": {
-  "name": "Taifa de Ceuta"
+  "name": "Taifa de Ceuta (1061-1084)"
  },
  "kingdom-of-gwent": {
   "name": "Reino de Gwent"
@@ -3482,8 +3632,8 @@
  "grenada": {
   "name": "Granada"
  },
- "first-french-colonial-empire": {
-  "name": "Imperio colonial francés"
+ "french-india": {
+  "name": "India francesa"
  },
  "principality-of-andorra": {
   "name": "Andorra"
@@ -3491,11 +3641,20 @@
  "cuman-kipchak-confederation": {
   "name": "Cumania"
  },
+ "maldives": {
+  "name": "Maldivas"
+ },
  "tangier-international-zone": {
   "name": "Zona Internacional de Tánger"
  },
+ "saint-kitts-and-nevis": {
+  "name": "San Cristóbal y Nieves"
+ },
  "principality-of-orange": {
   "name": "Principado de Orange"
+ },
+ "marshall-islands": {
+  "name": "Islas Marshall"
  },
  "principality-of-lichtenberg": {
   "name": "Principado de Lichtenberg"
@@ -3514,41 +3673,5 @@
  },
  "republic-of-san-marino": {
   "name": "San Marino"
- },
- "french-mascarene-islands": {
-  "name": "Islas Mascareñas francesas"
- },
- "tuvan-people-s-republic": {
-  "name": "República Popular de Tannu Tuvá"
- },
- "allied-occupied-germany": {
-  "name": "Alemania ocupada por los Aliados"
- },
- "korea": {
-  "name": "Corea"
- },
- "republic-of-uryankhay": {
-  "name": "República de Uriankhai"
- },
- "palestine": {
-  "name": "Palestina"
- },
- "western-sahara": {
-  "name": "Sáhara Occidental"
- },
- "comoros": {
-  "name": "Comoras"
- },
- "saint-kitts-and-nevis": {
-  "name": "San Cristóbal y Nieves"
- },
- "taiwan-republic-of-china": {
-  "name": "Taiwán (República de China)"
- },
- "maldives": {
-  "name": "Maldivas"
- },
- "marshall-islands": {
-  "name": "Islas Marshall"
  }
 }
