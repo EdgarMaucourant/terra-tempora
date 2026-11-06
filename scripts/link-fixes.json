@@ -1,3 +1,98 @@
 {
- "Great Yuan": { "wikipedia": "Dayuan", "wikidata": null }
+ "Great Yuan": {
+  "wikipedia": "Dayuan",
+  "wikidata": null
+ },
+ "Mujahideen": {
+  "wikipedia": "Afghan mujahideen",
+  "wikidata": "Q21000730"
+ },
+ "Syria": {
+  "wikipedia": "Syria",
+  "wikidata": "Q858"
+ },
+ "Republic of Korea": {
+  "wikipedia": "South Korea",
+  "wikidata": "Q884"
+ },
+ "Republic of China": {
+  "wikipedia": "Republic of China (1912-1949)",
+  "wikidata": "Q13426199"
+ },
+ "Republic of the Congo": {
+  "wikipedia": "Republic of the Congo",
+  "wikidata": "Q971"
+ },
+ "Guinea": {
+  "wikipedia": "Guinea",
+  "wikidata": "Q1006"
+ },
+ "Slovakia": {
+  "wikipedia": "Slovakia",
+  "wikidata": "Q214"
+ },
+ "Mexico": {
+  "wikipedia": "Mexico",
+  "wikidata": "Q96"
+ },
+ "Ukraine": {
+  "wikipedia": "Ukraine",
+  "wikidata": "Q212"
+ },
+ "Denmark": {
+  "wikipedia": "Denmark",
+  "wikidata": "Q35"
+ },
+ "Hungary": {
+  "wikipedia": "Hungary",
+  "wikidata": "Q28"
+ },
+ "Japan": {
+  "wikipedia": "Japan",
+  "wikidata": "Q17"
+ },
+ "Luxembourg": {
+  "wikipedia": "Luxembourg",
+  "wikidata": "Q32"
+ },
+ "Lebanon": {
+  "wikipedia": "Lebanon",
+  "wikidata": "Q822"
+ },
+ "Republic of Bulgaria": {
+  "wikipedia": "Bulgaria",
+  "wikidata": "Q219"
+ },
+ "Romania": {
+  "wikipedia": "Romania",
+  "wikidata": "Q218"
+ },
+ "Republic of Albania": {
+  "wikipedia": "Albania",
+  "wikidata": "Q222"
+ },
+ "Republic of Yemen": {
+  "wikipedia": "Yemen",
+  "wikidata": "Q805"
+ },
+ "Mali Federation": {
+  "wikipedia": "Mali",
+  "wikidata": "Q912"
+ },
+ "Éire": {
+  "wikipedia": "Republic of Ireland",
+  "wikidata": "Q27"
+ },
+ "Second Republic of Austria": {
+  "wikipedia": "Austria",
+  "wikidata": "Q40"
+ },
+ "Sultanate of Brunei": {
+  "wikipedia": "Brunei",
+  "wikidata": "Q921"
+ },
+ "Micronesia": {
+  "wikipedia": "Federated States of Micronesia",
+  "wikidata": "Q702"
+ }
 }

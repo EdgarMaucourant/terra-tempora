@@ -46,6 +46,8 @@ Each `scripts/border-overrides/*.geojson` file holds hand-traced borders that
 - `KeepSmall` (optional): `true` keeps every part of the shape, however
   small. Parts under 300 km² are otherwise dropped (all but the largest), so
   `french-india.geojson` needs it for French India's trading posts.
+  The realm also keeps its small parts when a smaller neighbour's land is cut
+  out of it (Kiribati's atolls).
 - `Area` (optional): the shape's area in km². Give it for a large shape far
   from the equator: worked out from the shape, it can be off by tens of
   percent.
@@ -144,6 +146,27 @@ Russian Empire with their own institutions. Cliopatria's Bessarabia of
 1812-1813 is in fact Moldavia west of the Prut, so it is taken off the map and
 drawn as Moldavia. The file was made with a script outside the repository
 from those sources.
+`un-borders.geojson` draws today's borders as the UN recognises them, and
+carries each fix back to the first year the border was the same. Syria is one
+state from 1967 on, within its Natural Earth border plus the Golan Heights
+(Cliopatria's "Mujahideen" realm of 2014 on, rebel-held Syria named after the
+Afghan mujahideen, is taken off the map). Palestine is drawn on the 1967 lines
+(the West Bank, East Jerusalem and Gaza) from 1967, in place of Israel and
+Cliopatria's small "Gaza/Hamas" realm. Western Sahara is a realm of its own
+from 1976, left out of the home globe's countries as a non-self-governing
+territory. Northern Cyprus goes back to Cyprus (1976 on), Nagorno-Karabakh
+and the districts around it to Azerbaijan (1992 on), and Cabinda to Angola
+(Cliopatria draws it as Portugal's Estado Novo from 1979). Taiwan is the
+"Taiwan (Republic of China)" realm from 1950, so the Republic of China ends
+in 1949. UN members Cliopatria leaves out or misplaces are added: the Comoros
+(drawn inside Cabo Verde, with Mayotte, which goes to France), Saint Kitts and
+Nevis (placed on St Croix), Liechtenstein (1721 on, as a sovereign state from
+1806), the Maldives, Samoa, Nauru, Tonga, Tuvalu, Kiribati and the Marshall
+Islands; atolls are widened by about 1 km so they survive the 0.01° grid. The
+Netherlands Antilles end in 2010, their islands going to the Netherlands.
+Outlines are Natural Earth 1:10m countries and disputed areas (public domain),
+or Cliopatria's own for Taiwan and the Antilles. Each feature's `Claim` says
+why. The file was made with a script outside the repository.
 The list (`civilizations.json`) carries no outlines: the Civilizations popup's card
 outlines are in `civilization-shapes.json`, downloaded only once the landing
 page shows, so a link straight to the globe skips them.

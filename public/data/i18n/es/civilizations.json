@@ -3233,9 +3233,6 @@
  "kingdom-of-kent": {
   "name": "Reino de Kent"
  },
- "turkish-republic-of-northern-cyprus": {
-  "name": "Chipre del Norte"
- },
  "teng": {
   "name": "Estado Teng"
  },
@@ -3482,9 +3479,6 @@
  "free-city-of-bremen": {
   "name": "Ciudad Libre de Bremen"
  },
- "saint-kitts": {
-  "name": "San Cristóbal"
- },
  "grenada": {
   "name": "Granada"
  },
@@ -3512,9 +3506,6 @@
  "principality-of-monaco": {
   "name": "Mónaco"
  },
- "gaza-hamas": {
-  "name": "Franja de Gaza bajo Hamás"
- },
  "principality-of-liechtenstein": {
   "name": "Liechtenstein"
  },
@@ -3538,5 +3529,26 @@
  },
  "republic-of-uryankhay": {
   "name": "República de Uriankhai"
+ },
+ "palestine": {
+  "name": "Palestina"
+ },
+ "western-sahara": {
+  "name": "Sáhara Occidental"
+ },
+ "comoros": {
+  "name": "Comoras"
+ },
+ "saint-kitts-and-nevis": {
+  "name": "San Cristóbal y Nieves"
+ },
+ "taiwan-republic-of-china": {
+  "name": "Taiwán (República de China)"
+ },
+ "maldives": {
+  "name": "Maldivas"
+ },
+ "marshall-islands": {
+  "name": "Islas Marshall"
  }
 }
