@@ -1,0 +1,9 @@
+# Terra Tempora welcomes search engines and AI assistants: everything public
+# may be read. /api/ is the site's own back end and /stats the maintainers'
+# private page, so there is nothing to read there.
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /stats
+
+Sitemap: https://terra-tempora.com/sitemap.xml

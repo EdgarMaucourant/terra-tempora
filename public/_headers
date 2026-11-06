@@ -40,3 +40,10 @@
 # CesiumJS runtime files change only when the library is upgraded.
 /cesium/*
   Cache-Control: public, max-age=604800
+
+# The site's icons and link-preview pictures: browsers and social sites may
+# keep them a week.
+/icons/*
+  Cache-Control: public, max-age=604800
+/social/*
+  Cache-Control: public, max-age=604800
