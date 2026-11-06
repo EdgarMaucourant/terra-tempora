@@ -472,6 +472,10 @@
     "menu": "Código en GitHub",
     "title": "Ver el código de Terra Tempora en GitHub"
   },
+  "mastodon": {
+    "menu": "Seguir en Mastodon",
+    "title": "Seguir a Terra Tempora en Mastodon"
+  },
   "support": {
     "back": "Atrás",
     "button": "Apoyar",
