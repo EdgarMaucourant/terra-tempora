@@ -137,6 +137,11 @@ export class Search {
       .catch((error: unknown) => console.error(error));
   }
 
+  /** Lists the events only, as the timeline's "Find an event" asks. */
+  showEvents() {
+    this.pick("events");
+  }
+
   /** The search box, to focus when the pop-up opens. */
   get field() {
     return this.input;

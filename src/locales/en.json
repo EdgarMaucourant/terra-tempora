@@ -355,6 +355,8 @@
       "one": "{count} event",
       "other": "{count} events"
     },
+    "findEvent": "Find an event",
+    "findEventTitle": "Search the events: battles, treaties, rulers and turning points",
     "focus": "Current Civilization Era",
     "fold": "Hide the realms and events",
     "gripLabel": "Resize the timeline: drag, or use the up and down arrows",
