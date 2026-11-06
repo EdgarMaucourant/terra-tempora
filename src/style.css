@@ -4215,10 +4215,9 @@ body:not(.home) .search-button span {
   place-items: center;
 }
 
+/* In line with the results above and the report link below. */
 .search-suggest {
-  margin: 16px 0 0;
-}
-
-.search-suggest .report-link {
-  margin: 0;
+  max-width: var(--landing-width);
+  margin: -12px auto 0;
+  padding: 0 var(--gutter) 20px;
 }
