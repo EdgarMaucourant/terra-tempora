@@ -3,6 +3,12 @@
 // (see `run_worker_first` in wrangler.jsonc), and a path that matches no file
 // gets the site's 404 page.
 //
+// The home page (/) passes through here too: for /?lang=fr and /?lang=es it
+// swaps the page's title, description and link-preview lines for that
+// language, so search engines index each language and a shared French or
+// Spanish link previews in French or Spanish. Any other address gets the page
+// as it is.
+//
 // POST /api/feedback files a visitor's report as a GitHub issue, with what
 // they were looking at, so reviewers can triage it where they already work.
 // A visitor who wants to hear about the fix sends their email already
@@ -72,9 +78,64 @@ export default {
     }
     if (url.pathname === "/api/stats") return stats(request, env, url);
     if (url.pathname.startsWith("/api/")) return json({ error: "not-found" }, 404);
+    if (url.pathname === "/") return homePage(request, env, url);
     return env.ASSETS.fetch(request);
   },
 };
+
+// The home page's lines that change with the language (index.html holds the
+// English ones). Keep them in step with index.html and src/locales/*.json
+// (page.home).
+const HOME_TEXT = {
+  fr: {
+    locale: "fr_FR",
+    title: "Terra Tempora · 5000 ans d’histoire du monde sur un globe",
+    description:
+      "Revivez 5000 ans d’histoire du monde sur un globe interactif : les frontières de plus de 1 500 civilisations de 3400 av. J.-C. à nos jours, les événements clés et 141 tournants. Gratuit, sans pub.",
+    preview:
+      "Les frontières de plus de 1 500 civilisations de 3400 av. J.-C. à nos jours, les événements clés et un voyage à travers 141 tournants de l’histoire, sur un globe interactif. Gratuit, sans pub ni cookies.",
+    imageAlt:
+      "Terra Tempora : un globe où l’Empire mongol est dessiné en orange, et les mots 5 000 ans d’histoire du monde sur un seul globe.",
+  },
+  es: {
+    locale: "es_ES",
+    title: "Terra Tempora · 5000 años de historia mundial en un globo",
+    description:
+      "Recorre 5000 años de historia mundial en un globo interactivo: las fronteras de más de 1500 civilizaciones desde el 3400 a. C. hasta hoy, acontecimientos clave y 141 momentos decisivos. Gratis, sin anuncios.",
+    preview:
+      "Las fronteras de más de 1500 civilizaciones desde el 3400 a. C. hasta hoy, acontecimientos clave y un viaje por 141 momentos decisivos de la historia, en un globo interactivo. Gratis, sin anuncios ni cookies.",
+    imageAlt:
+      "Terra Tempora: un globo con el Imperio mongol dibujado en naranja y las palabras 5000 años de historia mundial en un solo globo.",
+  },
+};
+
+/** The home page, with its title, description and preview in the language ?lang= asks for. */
+async function homePage(request, env, url) {
+  const response = await env.ASSETS.fetch(request);
+  const lang = url.searchParams.get("lang");
+  const text = Object.hasOwn(HOME_TEXT, lang ?? "") ? HOME_TEXT[lang] : null;
+  if (!text || response.status !== 200 || !response.headers.get("Content-Type")?.includes("text/html")) return response;
+  const address = `https://terra-tempora.com/?lang=${lang}`;
+  const set = (name, value) => ({ element: (el) => el.setAttribute(name, value) });
+  return new HTMLRewriter()
+    .on("html", set("lang", lang))
+    .on("title", { element: (el) => el.setInnerContent(text.title) })
+    .on('meta[name="description"]', set("content", text.description))
+    .on('link[rel="canonical"]', set("href", address))
+    .on('meta[property="og:url"]', set("content", address))
+    .on('meta[property="og:title"]', set("content", text.title))
+    .on('meta[property="og:description"]', set("content", text.preview))
+    .on('meta[property="og:image"]', set("content", `https://terra-tempora.com/social/og-${lang}.jpg`))
+    .on('meta[property="og:image:alt"]', set("content", text.imageAlt))
+    .on('meta[property="og:locale"]', set("content", text.locale))
+    .on('meta[property="og:locale:alternate"]', {
+      element: (el) => {
+        // The other two languages: English takes the place of this one.
+        if (el.getAttribute("content") === text.locale) el.setAttribute("content", "en_US");
+      },
+    })
+    .transform(response);
+}
 
 function where(request) {
   const cf = request.cf ?? {};
