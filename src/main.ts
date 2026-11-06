@@ -22,6 +22,7 @@ import { setView, track, watchTime } from "./analytics";
 import { civEraText, Civilizations, type Civilization } from "./civilizations";
 import { formatNumber, initLanguage, languageMenu, t, translatePage, withText, type MessageKey } from "./i18n";
 import { highlightColors, TODAY_COLOURS } from "./colors";
+import { disclaimer } from "./disclaimer";
 import { Documentaries, renderDocumentaries } from "./documentaries";
 import { countryCivIds, loadCountries, type Country, type CountryView } from "./countries";
 import { BorderData, type Polity } from "./data";
@@ -1812,6 +1813,7 @@ function showHome() {
       { label: t("landing.countries"), text: t("home.modes.countries"), run: () => openExplore("countries") },
       { label: t("landing.nations"), text: t("home.modes.nations"), run: () => openExplore("nations") },
     ],
+    report: () => feedback.open({ kind: "app" }),
   });
   document.title = t("page.home");
   // The first time, the globe turns to the visitor's part of the world once
@@ -1999,6 +2001,7 @@ const tour = new Tour({
   },
 });
 const welcome = $("welcome");
+welcome.querySelector(".welcome-actions")!.before(disclaimer(() => feedback.open({ kind: "app" })));
 const whatsNew = $("whats-new");
 const startBusy = () => (compactQuery.matches && panel.isOpen) || !landingEl.hidden || !aboutEl.hidden || document.body.classList.contains("traveling");
 // On computers every pop-up moves by its header, to see the map behind it.

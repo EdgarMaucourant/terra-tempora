@@ -2,11 +2,12 @@
 // realm or an event is picked. For a civilization, the opening of its Wikipedia
 // article with its photos and videos; for a country, the history of the nation
 // or the land; for several civilizations, the list of them; for the history
-// travel, what it is; on the home view, the ways in. Documentaries about the
-// subject close it.
+// travel, what it is; on the home view, the note on the map's accuracy and
+// the ways in. Documentaries about the subject close it.
 
 import { civEraText, type Civilization } from "./civilizations";
 import type { Country, CountryView } from "./countries";
+import { disclaimer } from "./disclaimer";
 import { renderDocumentaries, type Documentaries } from "./documentaries";
 import { el, externalLink } from "./dom";
 import { localPage, pageUrl } from "./events";
@@ -20,7 +21,7 @@ type Subject =
   | { kind: "several"; civs: Civilization[]; title: string; sub: string }
   | { kind: "country"; country: Country; view: CountryView; civs: Civilization[]; sub: string; articles: string[] }
   | { kind: "travel"; sub: string }
-  | { kind: "home"; actions: { label: string; text: string; run: () => void }[] };
+  | { kind: "home"; actions: { label: string; text: string; run: () => void }[]; report: () => void };
 
 export class Overview {
   /** Bumped on every render, so late answers for an earlier subject are dropped. */
@@ -133,8 +134,6 @@ export class Overview {
         eyebrow.textContent = t("home.panel.welcome");
         title.textContent = t("page.title");
         meta.hidden = true;
-        lede.textContent = t("home.panel.intro");
-        lede.hidden = false;
         const items = el("ul", "overview-civs overview-actions");
         for (const action of subject.actions) {
           const item = el("li");
@@ -145,6 +144,7 @@ export class Overview {
           item.append(button);
           items.append(item);
         }
+        lede.before(disclaimer(subject.report));
         extra.append(el("h3", "event-more", t("home.explore")), items, el("p", "ai-credit", t("about.credit")));
         break;
       }
