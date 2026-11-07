@@ -556,8 +556,9 @@
     }
   },
   "disclaimer": {
-    "text": "Terra Tempora is an independent, amateur website made for fun, to watch the borders of the world change across the ages on a globe. Borders are approximations drawn from open data, and a map can’t capture all the complexity of history. It certainly contains mistakes, and large parts of history are still missing, such as the Americas or Australia before colonization. We fix errors continuously and will add what’s missing once we have good sources. For now, please don’t use it as an educational resource. Spotted a mistake? {report}, it helps us improve the map.",
+    "text": "Terra Tempora is a free, amateur project built with AI help and still under construction. Some borders are wrong and I’m fixing them every day. Large parts of history are still missing, such as the Americas and Australia before colonisation, and I’m looking for good sources to add them. It’s made for entertainment, so please don’t use it as an educational resource without checking the sources. But if you enjoy watching borders change over time and don’t mind the odd mistake, welcome!",
+    "reportLine": "Spotted a mistake? {report}.",
     "report": "Please report it",
-    "label": "About the map’s accuracy"
+    "label": "About Terra Tempora"
   }
 }
