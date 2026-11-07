@@ -13,7 +13,7 @@ import { readFileSync, writeFileSync } from "node:fs";
 const SPARQL = "https://query.wikidata.org/sparql";
 const AGENT = "terra-tempora/0.1 (https://github.com/EdgarMaucourant/terra-tempora)";
 const OUT = "scripts/wikidata-facts.json";
-const BATCH = 60;
+const BATCH = 40;
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const qidOf = (uri) => uri.slice(uri.lastIndexOf("/") + 1);
@@ -26,6 +26,7 @@ function yearOf(date) {
   return y <= 0 ? y - 1 : y;
 }
 
+/** Runs a query; null when Wikidata ran out of time or cut its answer short. */
 async function sparql(text) {
   for (let attempt = 0; ; attempt++) {
     let response;
@@ -45,27 +46,63 @@ async function sparql(text) {
       await sleep(5000);
       continue;
     }
-    if (response.ok) return (await response.json()).results.bindings;
+    if (response.ok) {
+      // A query that runs out of time can still answer 200, with the error
+      // written in the middle of the JSON.
+      try {
+        return JSON.parse(await response.text()).results.bindings;
+      } catch {
+        return null;
+      }
+    }
+    if (response.status === 500 || response.status === 504) return null;
     if (attempt >= 4) throw new Error(`Wikidata answered ${response.status}`);
     const retryAfter = Number(response.headers.get("retry-after")) || 0;
     await sleep(Math.max(retryAfter * 1000, 5000 * (attempt + 1)));
   }
 }
 
-const QUERY = (ids) => `SELECT ?item ?kind ?v ?vLabel ?label ?desc ?title WHERE {
-  VALUES ?item { ${ids.map((id) => `wd:${id}`).join(" ")} }
+/** Runs a query over some items, halving the list while Wikidata can't cope. */
+async function query(make, ids) {
+  const rows = await sparql(make(ids));
+  if (rows) return rows;
+  if (ids.length === 1) {
+    console.warn(`\nWikidata could not answer for ${ids[0]}; skipped.`);
+    return [];
+  }
+  await sleep(2000);
+  const half = Math.ceil(ids.length / 2);
+  return [...(await query(make, ids.slice(0, half))), ...(await query(make, ids.slice(half)))];
+}
+
+const values = (ids) => `VALUES ?item { ${ids.map((id) => `wd:${id}`).join(" ")} }`;
+
+const ABOUT = (ids) => `SELECT ?item ?label ?desc ?title WHERE {
+  ${values(ids)}
   OPTIONAL { ?item rdfs:label ?label. FILTER(LANG(?label) = "en") }
   OPTIONAL { ?item schema:description ?desc. FILTER(LANG(?desc) = "en") }
   OPTIONAL { ?article schema:about ?item; schema:isPartOf <https://en.wikipedia.org/>; schema:name ?title. }
-  OPTIONAL {
-    { ?item wdt:P31 ?v. BIND("type" AS ?kind) } UNION
-    { ?item wdt:P571|wdt:P580 ?v. BIND("from" AS ?kind) } UNION
-    { ?item wdt:P576|wdt:P582 ?v. BIND("to" AS ?kind) } UNION
-    { ?item wdt:P1365|wdt:P155 ?v. BIND("before" AS ?kind) } UNION
-    { ?item wdt:P1366|wdt:P156 ?v. BIND("after" AS ?kind) } UNION
-    { ?v wdt:P1366|wdt:P156 ?item. BIND("before" AS ?kind) } UNION
-    { ?v wdt:P1365|wdt:P155 ?item. BIND("after" AS ?kind) }
-  }
+}`;
+
+// What the item says itself: its types, its dates, what it replaces or follows.
+const OWN = (ids) => `SELECT ?item ?kind ?v ?vLabel WHERE {
+  ${values(ids)}
+  { ?item wdt:P31 ?v. BIND("type" AS ?kind) } UNION
+  { ?item wdt:P571|wdt:P580 ?v. BIND("from" AS ?kind) } UNION
+  { ?item wdt:P576|wdt:P582 ?v. BIND("to" AS ?kind) } UNION
+  { ?item wdt:P1365|wdt:P155 ?v. BIND("before" AS ?kind) } UNION
+  { ?item wdt:P1366|wdt:P156 ?v. BIND("after" AS ?kind) }
+  OPTIONAL { ?v rdfs:label ?vLabel. FILTER(LANG(?vLabel) = "en") }
+}`;
+
+// What other items say of it. "Follows" and "followed by" also chain series
+// (elections, seasons, editions...) that can point at a country, so only items
+// with a start or an end date of their own, as realms have, are kept.
+const OTHERS = (ids) => `SELECT ?item ?kind ?v ?vLabel WHERE {
+  ${values(ids)}
+  { ?v wdt:P1366|wdt:P156 ?item. BIND("before" AS ?kind) } UNION
+  { ?v wdt:P1365|wdt:P155 ?item. BIND("after" AS ?kind) }
+  FILTER EXISTS { ?v wdt:P571|wdt:P576 [] }
   OPTIONAL { ?v rdfs:label ?vLabel. FILTER(LANG(?vLabel) = "en") }
 }`;
 
@@ -77,15 +114,17 @@ ids.sort();
 const facts = {};
 for (let i = 0; i < ids.length; i += BATCH) {
   const batch = ids.slice(i, i + BATCH);
-  const rows = await sparql(QUERY(batch));
   for (const id of batch) facts[id] = { label: null, description: null, wikipedia: null, types: {}, from: null, to: null, before: {}, after: {} };
-  for (const b of rows) {
+  for (const b of await query(ABOUT, batch)) {
     const f = facts[qidOf(b.item.value)];
     if (!f) continue;
     if (b.label) f.label = b.label.value;
     if (b.desc) f.description = b.desc.value;
     if (b.title) f.wikipedia = b.title.value;
-    if (!b.kind) continue;
+  }
+  for (const b of [...(await query(OWN, batch)), ...(await query(OTHERS, batch))]) {
+    const f = facts[qidOf(b.item.value)];
+    if (!f) continue;
     const kind = b.kind.value;
     const value = b.v.value;
     if (kind === "from" || kind === "to") {
