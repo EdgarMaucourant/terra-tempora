@@ -549,7 +549,7 @@
     }
   },
   "disclaimer": {
-    "text": "Terra Tempora est un projet amateur et indépendant. Les frontières sont des approximations tirées de données ouvertes, et une carte ne peut pas toujours rendre la complexité de l’histoire : dates, revendications et contrôle des territoires ont souvent été contestés. De grands pans de l’histoire manquent encore, comme les Amériques ou l’Australie avant la colonisation ; nous les ajouterons dès que nous aurons de bonnes sources. Des erreurs subsistent, et nous les corrigeons en continu au fil des signalements. Vous en repérez une ? {report}, cela améliore la carte pour tout le monde.",
+    "text": "Terra Tempora est un site amateur, indépendant et ludique, pour voir les frontières du monde évoluer au fil des époques sur un globe. Les frontières sont des approximations tirées de données ouvertes, et une carte ne peut pas rendre toute la complexité de l’histoire. Le site contient certainement des erreurs, et de grands pans de l’histoire manquent encore, comme les Amériques ou l’Australie avant la colonisation. Nous corrigeons les erreurs en continu et ajouterons ce qui manque dès que nous aurons de bonnes sources. Pour l’instant, merci de ne pas l’utiliser comme outil pédagogique. Vous repérez une erreur ? {report}, cela nous aide à améliorer la carte.",
     "report": "Signalez-la",
     "label": "À propos de la précision de la carte"
   }
