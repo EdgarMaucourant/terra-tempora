@@ -59,7 +59,8 @@ function toFeature(p: Polity): Shape {
 interface MapEvents {
   /** The pointer is over a realm (or none) at these canvas coordinates. */
   onHover: (p: Polity | null, x: number, y: number) => void;
-  onClick: (p: Polity | null) => void;
+  /** A click or tap on a realm (or none) at these canvas coordinates. */
+  onClick: (p: Polity | null, x: number, y: number) => void;
   /** The pointer is over an event badge (or none). */
   onEventHover: (e: HistoryEvent | null, x: number, y: number) => void;
   onEventClick: (e: HistoryEvent) => void;
@@ -544,7 +545,7 @@ export class MapView {
         const at = local(e);
         const event = this.eventAt(at.x, at.y);
         if (event) this.handlers.onEventClick(event);
-        else this.handlers.onClick(this.polityAt(at.x, at.y));
+        else this.handlers.onClick(this.polityAt(at.x, at.y), at.x, at.y);
       }
     };
     canvas.addEventListener("pointerup", end);
