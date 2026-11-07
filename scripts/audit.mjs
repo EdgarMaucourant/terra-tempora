@@ -8,12 +8,15 @@
 // The checks that need Wikidata (what a realm's item is, its dates, its
 // predecessors and successors) read scripts/wikidata-facts.json, made by
 // `node scripts/fetch-wikidata-facts.mjs`; without that file they are skipped.
+// The item each realm's Wikipedia article belongs to is in
+// scripts/article-items.json, made by `node scripts/fetch-article-items.mjs`.
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { makeGrid } from "./grid.mjs";
 import { loadShapes } from "./shapes.mjs";
 
 const OUT = "docs/audit/report.md";
 const FACTS = "scripts/wikidata-facts.json";
+const ARTICLES = "scripts/article-items.json";
 // A shape counts as the same land as another when its area is within this share…
 const SAME_AREA = 0.1;
 // …and its label point within this distance (km).
@@ -60,6 +63,17 @@ const NOT_A_STATE_TYPE =
 const { index, shapes } = loadShapes();
 const civs = JSON.parse(readFileSync("public/data/civilizations.json", "utf8")).civilizations;
 const facts = existsSync(FACTS) ? JSON.parse(readFileSync(FACTS, "utf8")).items : null;
+const articles = existsSync(ARTICLES) ? JSON.parse(readFileSync(ARTICLES, "utf8")).articles : null;
+/** A realm's article as a page title, as article-items.json keys it. */
+const articleTitle = (article) =>
+  (/^https?:\/\//.test(article) ? decodeURIComponent(article.replace(/^.*\/wiki\//, "")) : article).replace(/_/g, " ").trim();
+/** An article as a page title, so "Kanem-Bornu Empire" and "Kanem–Bornu Empire" or a link to it match. */
+const titleOf = (article) =>
+  decodeURIComponent(article.replace(/^https?:\/\/en\.wikipedia\.org\/wiki\//, ""))
+    .replace(/_/g, " ")
+    .replace(/[‐-―]/g, "-")
+    .trim()
+    .toLowerCase();
 
 const civOfName = new Map();
 for (const c of civs) for (const n of c.names ?? [c.name]) civOfName.set(n, c);
@@ -185,12 +199,19 @@ if (facts) {
     const f = c.wikidata && facts[c.wikidata];
     if (!f) continue;
 
-    // The item's label and article against the realm's name and article.
+    // The item's label and article against the realm's name and article, and
+    // the item Wikipedia gives the realm's article.
     const mine = norm(`${c.name} ${c.wikipedia ?? ""}`);
     const theirs = norm(`${f.label ?? ""} ${f.wikipedia ?? ""}`);
-    if (mine.size && theirs.size && ![...mine].some((w) => theirs.has(w))) {
+    const article = c.wikipedia && articles?.[articleTitle(c.wikipedia)];
+    const articleItem = article && !article.section && !article.disambiguation ? article.item : null;
+    if (articleItem && articleItem !== c.wikidata) {
+      flag("identity", "high", c.from, c.name, `${c.name}'s article "${c.wikipedia}" is item ${articleItem}, but it links to ${c.wikidata} "${f.label}"`);
+    } else if (articleItem) {
+      // The article's own item.
+    } else if (mine.size && theirs.size && ![...mine].some((w) => theirs.has(w))) {
       flag("identity", "high", c.from, c.name, `${c.name} links to ${c.wikidata} "${f.label}"${f.description ? ` (${f.description})` : ""}`);
-    } else if (f.wikipedia && c.wikipedia && f.wikipedia.replace(/_/g, " ") !== c.wikipedia.replace(/_/g, " ")) {
+    } else if (f.wikipedia && c.wikipedia && titleOf(f.wikipedia) !== titleOf(c.wikipedia)) {
       flag("identity", "low", c.from, c.name, `${c.name}'s article is "${c.wikipedia}" but its item ${c.wikidata} has "${f.wikipedia}"`);
     }
     const odd = Object.values(f.types).filter((t) => t && NOT_A_STATE_TYPE.test(t));
@@ -246,6 +267,9 @@ const lines = [
   facts
     ? "Wikidata checks: on (scripts/wikidata-facts.json)."
     : "Wikidata checks: off. Run `node scripts/fetch-wikidata-facts.mjs` where Wikidata can be reached to turn them on.",
+  articles
+    ? "Articles' own items: on (scripts/article-items.json)."
+    : "Articles' own items: off. Run `node scripts/fetch-article-items.mjs` to turn them on.",
   "",
   `| Kind | ${ERAS.map((e) => e[2]).join(" | ")} | All |`,
   `| --- | ${ERAS.map(() => "---:").join(" | ")} | ---: |`,

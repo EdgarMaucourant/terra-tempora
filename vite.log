@@ -1,0 +1,8 @@
+
+  VITE v8.3.3  ready in 1919 ms
+
+  ➜  Local:   http://localhost:5199/
+  ➜  Network: use --host to expose
+5:22:22 PM [vite] (client) [console.warn] Wikimedia could not be reached; cards show outlines instead. TypeError: Failed to fetch
+    at fetchFacts (http://localhost:5199/src/wikidata.ts:103:25)
+    at drain (http://localhost:5199/src/wikidata.ts:192:24)
