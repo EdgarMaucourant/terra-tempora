@@ -50,6 +50,7 @@ const FEATURES: Record<string, string> = {
   "zoom-in": "Timeline: zoom in",
   "zoom-out": "Timeline: zoom out",
   "here-report": "Report this spot",
+  "blank-source": "Share a source (land with no borders)",
   "feedback-send": "Send report",
   "multi-toggle": "Multi-select",
   "multi-open": "Open selected",

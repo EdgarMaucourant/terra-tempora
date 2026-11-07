@@ -3399,6 +3399,49 @@ a {
   display: none;
 }
 
+/* The note on land with no borders yet, asking for a source. */
+.blank-note {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 6;
+  width: min(280px, calc(100vw - 32px));
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel-solid);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  font-size: 13px;
+  color: var(--ink);
+}
+
+.blank-note[hidden] {
+  display: none;
+}
+
+.blank-note p {
+  margin: 6px 0 10px;
+  color: var(--ink-soft);
+  line-height: 1.4;
+}
+
+.blank-note button {
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: transparent;
+  font: inherit;
+  font-weight: 500;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.blank-note button:hover,
+.blank-note button:focus-visible {
+  background: var(--line);
+}
+
 .feedback {
   position: fixed;
   z-index: 40;

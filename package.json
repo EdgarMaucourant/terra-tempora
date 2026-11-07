@@ -12,6 +12,7 @@
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "check": "node scripts/check-data.mjs",
+    "audit": "node scripts/audit.mjs",
     "contact-key": "node scripts/contact-key.mjs",
     "read-contact": "node scripts/read-contact.mjs"
   },

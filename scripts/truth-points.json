@@ -1,0 +1,29 @@
+{
+ "about": "Places whose realm has been checked against a source, so a rebuild or a Cliopatria update can't quietly undo a fix. `npm run check` fails when the map no longer draws `realm` there in every year of `years` (a realm drawn on top of it, such as an enclave's neighbour, is allowed). `realm: null` means the land must be blank. Use `node scripts/who.mjs <lon>,<lat> <from> <to>` to see what the map draws.",
+ "points": [
+  { "place": "Simferopol", "lonLat": [34.1, 44.95], "years": [2014, 2024], "realm": "Ukraine", "why": "Crimea is Ukraine's (UN General Assembly resolution 68/262)" },
+  { "place": "Tiraspol", "lonLat": [29.63, 46.84], "years": [1992, 2024], "realm": "Republic of Moldova", "why": "Transnistria is drawn as Moldova" },
+  { "place": "Tskhinvali", "lonLat": [43.96, 42.23], "years": [1992, 2024], "realm": "Georgia", "why": "South Ossetia is drawn as Georgia" },
+  { "place": "Prague", "lonLat": [14.42, 50.08], "years": [1969, 1990], "realm": "Czechoslovakia", "why": "A Soviet satellite, not Soviet land" },
+  { "place": "Saigon", "lonLat": [106.7, 10.78], "years": [1956, 1975], "realm": "Republic of Vietnam", "why": "South Vietnam until the fall of Saigon" },
+  { "place": "Edinburgh", "lonLat": [-3.19, 55.95], "years": [1603, 1652], "realm": "Kingdom of Scotland", "why": "The Union of the Crowns left Scotland a kingdom of its own" },
+  { "place": "San Marino", "lonLat": [12.45, 43.94], "years": [1631, 2024], "realm": "Republic of San Marino", "why": "Independent throughout" },
+  { "place": "St. Louis", "lonLat": [-90.2, 38.63], "years": [1803, 1889], "realm": "United States of America", "why": "Louisiana Purchase (1803)" },
+  { "place": "Ramallah", "lonLat": [35.2, 31.9], "years": [1967, 2024], "realm": "Palestine", "why": "Drawn on the 1967 lines" },
+  { "place": "Quneitra", "lonLat": [35.82, 33.13], "years": [1973, 2024], "realm": "Syria", "why": "The Golan Heights are Syrian land under occupation" },
+  { "place": "Stepanakert", "lonLat": [46.75, 39.82], "years": [1992, 2024], "realm": "Republic of Azerbaijan", "why": "Nagorno-Karabakh is Azerbaijan's" },
+  { "place": "Cabinda", "lonLat": [12.2, -5.55], "years": [1976, 2024], "realm": "People's Republic of Angola", "why": "Cabinda is Angola's" },
+  { "place": "Bukhara", "lonLat": [64.42, 39.77], "years": [1860, 1919], "realm": "Emirate of Bukhara", "why": "A Russian protectorate that kept its emir" },
+  { "place": "Berlin", "lonLat": [13.4, 52.52], "years": [1945, 1948], "realm": "Allied-occupied Germany", "why": "Occupation zones drawn as Germany" },
+  { "place": "Moroni", "lonLat": [43.26, -11.7], "years": [1975, 2024], "realm": "Comoros", "why": "A UN member, once drawn inside Cabo Verde" },
+  { "place": "Laayoune", "lonLat": [-13.2, 27.15], "years": [1976, 2024], "realm": "Western Sahara", "why": "A non-self-governing territory, its own realm" },
+  { "place": "North Nicosia", "lonLat": [33.36, 35.19], "years": [1976, 2024], "realm": "Republic of Cyprus", "why": "Northern Cyprus is drawn as Cyprus" },
+  { "place": "Idlib", "lonLat": [36.63, 35.93], "years": [2011, 2024], "realm": "Syria", "why": "Syria is one state, without rebel realms" },
+  { "place": "Vaduz", "lonLat": [9.52, 47.14], "years": [1806, 2024], "realm": "Principality of Liechtenstein", "why": "Sovereign since 1806" },
+  { "place": "Kyzyl", "lonLat": [94.45, 51.72], "years": [1921, 1943], "realm": "Tuvan People's Republic", "why": "Independent until annexed by the USSR in 1944" },
+  { "place": "Basseterre", "lonLat": [-62.72, 17.3], "years": [1983, 2024], "realm": "Saint Kitts and Nevis", "why": "Once placed on St Croix" },
+  { "place": "Dresden", "lonLat": [13.74, 51.05], "years": [1700, 1762], "realm": "Electorate of Saxony", "why": "Its electors were kings of Poland, but Saxony stayed its own" },
+  { "place": "Iasi", "lonLat": [27.6, 47.16], "years": [1769, 1856], "realm": "Principality of Moldavia", "why": "Russian occupations left Moldavia in place" },
+  { "place": "Tabriz", "lonLat": [46.29, 38.08], "years": [1942, 1946], "realm": "Pahlavi Dynasty", "why": "The Soviet occupation of northern Iran left Iran in place" }
+ ]
+}

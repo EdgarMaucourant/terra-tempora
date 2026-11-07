@@ -174,8 +174,13 @@ page shows, so a link straight to the globe skips them.
 `npm run check` checks the data files and the translations (ids unique and
 known, years and places in range, event kinds known, links https, translations
 matching the English, and markup only in the messages shown as markup, limited
-to simple tags and https links). It runs on every pull request with the build
-(`.github/workflows/check.yml`).
+to simple tags and https links), and that the map still draws the checked
+realm at each truth point (`scripts/truth-points.json`). It runs on every pull
+request with the build (`.github/workflows/check.yml`).
+
+`npm run audit` looks over the whole map for likely mistakes and writes them to
+`docs/audit/report.md`; [data-review.md](data-review.md) explains how the
+review of the borders, names and lineages uses it.
 
 Pictures, key figures and the links between realms are read from Wikidata and
 Wikimedia Commons in the browser as cards scroll into view, and cached in
@@ -299,5 +304,7 @@ again.
 | `src/i18n.ts` | Languages: picks one, loads its text, fills in messages and translated data |
 | `src/locales/` | Interface text, one file per language |
 | `scripts/check-data.mjs` | Checks the data and translations (`npm run check`) |
+| `scripts/audit.mjs`, `scripts/who.mjs`, `scripts/shapes.mjs` | The data audit (`npm run audit`), what the map draws at a place, and the shape reader they share |
+| `scripts/fetch-wikidata-facts.mjs` | Saves the Wikidata facts the audit compares the realms with |
 | `src/colors.ts` | Highlight colours and the grey for other realms |
 

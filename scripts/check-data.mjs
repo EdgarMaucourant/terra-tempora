@@ -2,9 +2,11 @@
 // published: ids are unique and point at things that exist, years and places
 // are numbers in range, every event has a known kind, links are https, and
 // translations match the English they translate, with markup only where the
-// page expects it. Run by `npm run check` and on every pull request.
+// page expects it, and the map still draws the checked realm at each truth
+// point (scripts/truth-points.json). Run by `npm run check` and on every pull request.
 // Prints each problem and exits with an error if there is any.
 import { existsSync, readdirSync, readFileSync } from "node:fs";
+import { loadShapes, realmsAt } from "./shapes.mjs";
 
 const DATA = "public/data";
 const errors = [];
@@ -58,6 +60,29 @@ for (const w of index?.windows ?? []) {
   if (!file) continue;
   for (const s of file.shapes ?? []) {
     if (!s.rings.every((i) => Number.isInteger(i) && i >= 0 && i < file.rings.length)) fail(w.file, `"${s.name}" points at a ring that isn't there`);
+  }
+}
+
+// Truth points: places whose realm was checked against a source.
+const truth = read("scripts/truth-points.json")?.points ?? [];
+if (truth.length && index) {
+  const { shapes } = loadShapes(DATA);
+  for (const t of truth) {
+    const where = `truth-points.json (${t.place})`;
+    const [from, to] = t.years ?? [];
+    if (!isLonLat(t.lonLat) || !isYear(from) || !isYear(to) || to < from || !(t.realm === null || isText(t.realm))) {
+      fail(where, "needs a [longitude, latitude], years [from, to] and a realm (or null)");
+      continue;
+    }
+    for (let year = from; year <= Math.min(to, index.to); year++) {
+      if (year === 0) continue;
+      const drawn = realmsAt(shapes, t.lonLat, year);
+      const ok = t.realm === null ? !drawn.length : drawn.includes(t.realm);
+      if (!ok) {
+        fail(where, `in ${year} the map draws ${drawn.join(", ") || "nothing"}, not ${t.realm ?? "blank land"} (${t.why})`);
+        break;
+      }
+    }
   }
 }
 

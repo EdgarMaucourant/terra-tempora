@@ -32,6 +32,7 @@ import { frameRealm } from "./frame";
 import { EventLayer } from "./eventLayer";
 import { makeDraggable } from "./drag";
 import { Feedback } from "./feedback";
+import { continentFinder } from "./continentAt";
 import { badgeSvg, eventLinks, kindLabel, loadEvents, localPage, pageUrl, type HistoryEvent } from "./events";
 import { Landing } from "./landing";
 import type { FoundEvent } from "./search";
@@ -231,9 +232,15 @@ scene.postRender.addEventListener(() => {
 const map = new MapView(mapCanvas, {
   onHover: (p, x, y) => {
     cancelAnimationFrame(mapHover);
-    mapHover = requestAnimationFrame(() => (p ? hoverRealm(p, x, y) : !tooltip.hidden && hideTooltip()));
+    mapHover = requestAnimationFrame(() => (p ? hoverRealm(p, x, y) : hoverEmpty(map.lonLatAt(x, y), x, y)));
   },
-  onClick: (p) => clickRealm(p),
+  onClick: (p, x, y) => {
+    clickRealm(p);
+    if (!p) {
+      const box = mapCanvas.getBoundingClientRect();
+      offerSource(map.lonLatAt(x, y), box.left + x, box.top + y);
+    }
+  },
   onEventHover: (e, x, y) => {
     if (e) {
       cancelAnimationFrame(mapHover);
@@ -644,12 +651,96 @@ function hideTooltip() {
   render();
 }
 
+/** The [lon, lat] under a point of the globe's canvas, or null off the globe. */
+function globeLonLat(position: { x: number; y: number }): [number, number] | null {
+  const at = widget.camera.pickEllipsoid(new Cartesian2(position.x, position.y), scene.globe.ellipsoid);
+  const place = at ? scene.globe.ellipsoid.cartesianToCartographic(at) : undefined;
+  return place ? [CesiumMath.toDegrees(place.longitude), CesiumMath.toDegrees(place.latitude)] : null;
+}
+
+// Land with no realm drawn (the Americas and Australia before the colonists,
+// for instance) asks visitors for reputable sources to fill it.
+let continentAt: ((lon: number, lat: number) => unknown) | null = null;
+let continentLoading = false;
+/** Whether a point is land (not sea) on the continents grid, which loads on first use. */
+function isLand(lonLat: [number, number] | null): boolean {
+  if (!lonLat) return false;
+  if (!continentAt) {
+    if (!continentLoading) {
+      continentLoading = true;
+      continentFinder()
+        .then((f) => (continentAt = f))
+        .catch(() => (continentLoading = false));
+    }
+    return false;
+  }
+  return continentAt(lonLat[0], lonLat[1]) !== null;
+}
+// The grid is small (6 kB); fetch it once the page has settled, before the first hover.
+window.setTimeout(() => isLand([0, 0]), 3000);
+
+/** The pointer is over no realm: on land, a tooltip says why it is empty. */
+function hoverEmpty(lonLat: [number, number] | null, x: number, y: number) {
+  // While the note is open, it says it already.
+  if (!isLand(lonLat) || travel?.active || !blankNote.hidden) {
+    if (!tooltip.hidden) hideTooltip();
+    return;
+  }
+  layer.setHovered(null);
+  map.setHovered(null);
+  tooltip.replaceChildren(
+    Object.assign(document.createElement("strong"), { textContent: t("globe.blank.title") }),
+    Object.assign(document.createElement("span"), { textContent: t("globe.blank.hover") }),
+  );
+  tooltip.style.transform = `translate(${x + 14}px, ${y + 14}px)`;
+  tooltip.hidden = false;
+  scene.canvas.style.cursor = "pointer";
+  mapCanvas.style.cursor = "pointer";
+  render();
+}
+
+const blankNote = $("blank-note");
+let blankPlace: [number, number] | null = null;
+/** A click on empty land shows a note there asking for a source, with a button to share one. */
+function offerSource(lonLat: [number, number] | null, x: number, y: number) {
+  if (!isLand(lonLat) || travel?.active) return;
+  hideTooltip();
+  blankPlace = lonLat;
+  blankNote.hidden = false;
+  const left = Math.max(8, Math.min(x + 8, innerWidth - blankNote.offsetWidth - 8));
+  const top = Math.max(8, Math.min(y + 8, innerHeight - blankNote.offsetHeight - 8));
+  blankNote.style.transform = `translate(${left}px, ${top}px)`;
+  $("blank-source").focus({ preventScroll: true });
+}
+function hideBlankNote() {
+  blankNote.hidden = true;
+}
+$("blank-source").addEventListener("click", () => {
+  hideBlankNote();
+  if (blankPlace) {
+    feedback.open(
+      { kind: "place", year: Math.round(year), lonLat: blankPlace },
+      { type: "missing", message: t("globe.blank.message") },
+    );
+  }
+});
+blankNote.addEventListener("focusout", (e) => {
+  if (!blankNote.contains(e.relatedTarget as Node | null)) window.setTimeout(hideBlankNote, 150);
+});
+blankNote.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") hideBlankNote();
+});
+
 const handler = new ScreenSpaceEventHandler(scene.canvas);
 handler.setInputAction((event: ScreenSpaceEventHandler.PositionedEvent) => {
   const e = eventAt(event.position);
   if (e && travel?.active) travel.pin(e as TravelEvent);
   else if (e) openEvent(e);
-  else clickRealm(polityAt(event.position));
+  else {
+    const p = polityAt(event.position);
+    clickRealm(p);
+    if (!p) offerSource(globeLonLat(event.position), event.position.x, event.position.y);
+  }
 }, ScreenSpaceEventType.LEFT_CLICK);
 
 let hoverPosition: { x: number; y: number } | null = null;
@@ -671,7 +762,11 @@ handler.setInputAction((event: ScreenSpaceEventHandler.MotionEvent) => {
       }
     }
     if (e) hoverEvent(e, hoverPosition.x, hoverPosition.y);
-    else hoverRealm(polityAt(hoverPosition), hoverPosition.x, hoverPosition.y);
+    else {
+      const p = polityAt(hoverPosition);
+      if (p) hoverRealm(p, hoverPosition.x, hoverPosition.y);
+      else hoverEmpty(globeLonLat(hoverPosition), hoverPosition.x, hoverPosition.y);
+    }
   });
 }, ScreenSpaceEventType.MOUSE_MOVE);
 // Visitors' reports, from the panels, the Sources list, the landing page, or
@@ -697,12 +792,7 @@ hereButton.addEventListener("click", () => {
 hereButton.addEventListener("blur", () => window.setTimeout(() => (hereButton.hidden = true), 150));
 
 handler.setInputAction((event: ScreenSpaceEventHandler.PositionedEvent) => {
-  const at = widget.camera.pickEllipsoid(new Cartesian2(event.position.x, event.position.y), scene.globe.ellipsoid);
-  const place = at ? scene.globe.ellipsoid.cartesianToCartographic(at) : undefined;
-  const lonLat: [number, number] | null = place
-    ? [CesiumMath.toDegrees(place.longitude), CesiumMath.toDegrees(place.latitude)]
-    : null;
-  offerReportHere(event.position.x, event.position.y, lonLat, polityAt(event.position));
+  offerReportHere(event.position.x, event.position.y, globeLonLat(event.position), polityAt(event.position));
 }, ScreenSpaceEventType.RIGHT_CLICK);
 scene.canvas.addEventListener("contextmenu", (e) => e.preventDefault());
 mapCanvas.addEventListener("contextmenu", (e) => {

@@ -221,7 +221,14 @@
     "winkel3": "Winkel-Tripel"
   },
   "globe": {
-    "label": "Globe en 3D montrant les États de l’année choisie. Les flèches le tournent, + et − zooment."
+    "label": "Globe en 3D montrant les États de l’année choisie. Les flèches le tournent, + et − zooment.",
+    "blank": {
+      "title": "Pas encore de frontières ici",
+      "text": "Nous travaillons sur ces régions du monde, mais il nous faut d’abord des sources fiables. En connaissez-vous une ?",
+      "share": "Proposer une source",
+      "hover": "Cliquez si vous connaissez une source",
+      "message": "Une source pour cette région du monde (un lien aide) : "
+    }
   },
   "map": {
     "label": "Carte plane montrant les États de l’année choisie. Les flèches la déplacent."
