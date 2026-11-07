@@ -6,13 +6,13 @@ Wikidata checks: off. Run `node scripts/fetch-wikidata-facts.mjs` where Wikidata
 
 | Kind | Before 500 | 500 to 999 | 1000 to 1499 | 1500 to 1799 | 1800 to 1899 | 1900 to today | All |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Another realm's land under this name | 21 | 19 | 24 | 23 | 31 | 47 | 165 |
+| Another realm's land under this name | 21 | 19 | 24 | 23 | 30 | 46 | 163 |
 | Wikidata item shared with another realm | 33 | 19 | 23 | 9 | 8 | 13 | 105 |
 | Not a state (party, army, people) | 2 | 1 |  |  | 5 | 13 | 21 |
-| Missing from the map for some years | 41 | 55 | 75 | 36 | 37 | 19 | 263 |
+| Missing from the map for some years | 41 | 55 | 75 | 36 | 37 | 20 | 264 |
 | Shape shrinks or grows for a year or two | 4 |  |  | 4 | 1 | 1 | 10 |
-| Centre jumps far away | 15 | 5 | 8 | 58 | 30 | 31 | 147 |
-| **All** | 116 | 99 | 130 | 130 | 112 | 124 | 711 |
+| Centre jumps far away | 15 | 5 | 8 | 58 | 28 | 33 | 147 |
+| **All** | 116 | 99 | 130 | 130 | 109 | 126 | 710 |
 
 ## Before 500
 
@@ -548,10 +548,10 @@ Wikidata checks: off. Run `node scripts/fetch-wikidata-facts.mjs` where Wikidata
 
 - **medium** · Wikidata item shared with another realm: Q8680 is the item of British Colonial Empire (1706 to 1999), British Empire (1607 to 1997)
 - **low** · Centre jumps far away: British Colonial Empire's centre moves 5907 km in 1709
-- **low** · Centre jumps far away: British Colonial Empire's centre moves 2453 km in 1776
-- **low** · Centre jumps far away: British Colonial Empire's centre moves 2453 km in 1778
-- **low** · Centre jumps far away: British Colonial Empire's centre moves 2068 km in 1780
-- **low** · Centre jumps far away: British Colonial Empire's centre moves 2068 km in 1781
+- **low** · Centre jumps far away: British Colonial Empire's centre moves 2455 km in 1776
+- **low** · Centre jumps far away: British Colonial Empire's centre moves 2455 km in 1778
+- **low** · Centre jumps far away: British Colonial Empire's centre moves 2069 km in 1780
+- **low** · Centre jumps far away: British Colonial Empire's centre moves 2069 km in 1781
 - **low** · Centre jumps far away: British Colonial Empire's centre moves 16546 km in 1788
 
 ## 1800 to 1899
@@ -614,8 +614,6 @@ Wikidata checks: off. Run `node scripts/fetch-wikidata-facts.mjs` where Wikidata
 - **medium** · Missing from the map for some years: Emirate of Jabal Shammar is not drawn 1846 to 1865 (20 years), then comes back
 - **low** · Another realm's land under this name: Durrani Dynasty's outline is named Emirate of Afghanistan from 1846; Emirate of Afghanistan was drawn nearby before (1828 to 1839)
 - **medium** · Missing from the map for some years: Trucial States is not drawn 1853 to 1855 (3 years), then comes back
-- **low** · Centre jumps far away: New Caledonia's centre moves 7370 km in 1859
-- **low** · Another realm's land under this name: New Caledonia becomes French Indochina in 1860 with the same outline
 - **low** · Centre jumps far away: Dutch East Indies's centre moves 3939 km in 1873
 - **low** · Centre jumps far away: Kingdom of Great Britain's centre moves 6114 km in 1890
 - **medium** · Missing from the map for some years: Emirate of Nejd is not drawn 1895 to 1904 (10 years), then comes back
@@ -662,7 +660,6 @@ Wikidata checks: off. Run `node scripts/fetch-wikidata-facts.mjs` where Wikidata
 
 ### South America
 
-- **low** · Centre jumps far away: New Netherland's centre moves 1609 km in 1800
 - **medium** · Wikidata item shared with another realm: Q717 is the item of Venezuela (1834 to 2024), Republic of Venezuela (1811 to 1814)
 - **medium** · Not a state (party, army, people): Guayaquil Junta (1812 to 1813) reads like a party, army or people
 - **medium** · Missing from the map for some years: Republic of Venezuela is not drawn 1812 to 1813 (2 years), then comes back
@@ -751,7 +748,7 @@ Wikidata checks: off. Run `node scripts/fetch-wikidata-facts.mjs` where Wikidata
 - **high** · Another realm's land under this name: Dutch East Indies's outline is named Republic of Indonesia from 1950; Republic of Indonesia was last drawn 1323 km away (1949)
 - **medium** · Missing from the map for some years: Sultanate of Aceh is not drawn 1950 to 1952 (3 years), then comes back
 - **medium** · Wikidata item shared with another realm: Q172640 is the item of Democratic Republic of Vietnam (1956 to 1975), Republic of Vietnam (1956 to 1975)
-- **low** · Centre jumps far away: French Indochina's centre moves 7768 km in 1956
+- **low** · Centre jumps far away: French Indochina's centre moves 6838 km in 1956
 - **medium** · Missing from the map for some years: Kingdom of Jordan is not drawn 1958 to 1959 (2 years), then comes back
 - **medium** · Wikidata item shared with another realm: Q796 is the item of Iraqi Republic (1960 to 2005), Republic of Iraq (2014 to 2024)
 - **medium** · Wikidata item shared with another realm: Q858 is the item of Syria (1973 to 2024), Republic of Syria (1961 to 1962), Ba'athist Syria (1963 to 1966)
@@ -805,10 +802,10 @@ Wikidata checks: off. Run `node scripts/fetch-wikidata-facts.mjs` where Wikidata
 - **medium** · Wikidata item shared with another realm: Q241 is the item of Communist Cuba (1960 to 2024), Republic of Cuba (1905 to 1959)
 - **medium** · Missing from the map for some years: Republic of Cuba is not drawn 1908 to 1910 (3 years), then comes back
 - **medium** · Missing from the map for some years: Dominican Republic is not drawn 1916 to 1923 (8 years), then comes back
-- **high** · Another realm's land under this name: Greenland's outline is named Denmark from 1946; Denmark was last drawn 2962 km away (1945)
 - **low** · Centre jumps far away: Denmark's centre moves 2962 km in 1946
 - **medium** · Not a state (party, army, people): Cuban Communists (1958 to 1959) reads like a party, army or people
 - **medium** · Not a state (party, army, people): Communist Cuba (1960 to 2024) reads like a party, army or people
+- **low** · Centre jumps far away: Denmark's centre moves 2962 km in 1979
 
 ### South America
 
@@ -820,9 +817,11 @@ Wikidata checks: off. Run `node scripts/fetch-wikidata-facts.mjs` where Wikidata
 
 - **low** · Centre jumps far away: British Colonial Empire's centre moves 16563 km in 1901
 - **low** · Centre jumps far away: British Colonial Empire's centre moves 14331 km in 1907
+- **medium** · Missing from the map for some years: Guam is not drawn 1942 to 1943 (2 years), then comes back
 - **low** · Centre jumps far away: British Colonial Empire's centre moves 17435 km in 1946
 - **low** · Centre jumps far away: British Colonial Empire's centre moves 18840 km in 1947
 - **low** · Centre jumps far away: British Colonial Empire's centre moves 18840 km in 1963
 - **low** · Centre jumps far away: British Colonial Empire's centre moves 3506 km in 1967
-- **low** · Centre jumps far away: British Colonial Empire's centre moves 8199 km in 1983
+- **low** · Centre jumps far away: British Colonial Empire's centre moves 16492 km in 1983
 - **low** · Another realm's land under this name: New Hebrides becomes Vanuatu in 1983 with the same outline
+- **low** · Centre jumps far away: British Colonial Empire's centre moves 13901 km in 1984

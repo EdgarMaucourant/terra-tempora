@@ -48,6 +48,12 @@ Each `scripts/border-overrides/*.geojson` file holds hand-traced borders that
   `french-india.geojson` needs it for French India's trading posts.
   The realm also keeps its small parts when a smaller neighbour's land is cut
   out of it (Kiribati's atolls).
+- `PartOf` (optional): for a dependency, the realm of the state it belongs
+  to. Hovering it says "Part of" that state, and highlighting the state colours
+  it too. A realm with `PartOf` today is not one of the home globe's countries.
+- `ClipOutline` (optional): with `Clips`, a wider outline the neighbours lose
+  instead of the traced one, to take the slivers left along a coast that
+  Cliopatria draws a little differently (Greenland's coast in Denmark's shape).
 - `Area` (optional): the shape's area in km². Give it for a large shape far
   from the equator: worked out from the shape, it can be off by tens of
   percent.
@@ -163,10 +169,26 @@ in 1949. UN members Cliopatria leaves out or misplaces are added: the Comoros
 Nevis (placed on St Croix), Liechtenstein (1721 on, as a sovereign state from
 1806), the Maldives, Samoa, Nauru, Tonga, Tuvalu, Kiribati and the Marshall
 Islands; atolls are widened by about 1 km so they survive the 0.01° grid. The
-Netherlands Antilles end in 2010, their islands going to the Netherlands.
-Outlines are Natural Earth 1:10m countries and disputed areas (public domain),
-or Cliopatria's own for Taiwan and the Antilles. Each feature's `Claim` says
-why. The file was made with a script outside the repository.
+Netherlands Antilles end in 2010: Bonaire, Sint Eustatius and Saba go to the
+Netherlands, while Aruba, Curaçao and Sint Maarten are drawn on their own
+(`dependencies.geojson`). Outlines are Natural Earth 1:10m countries and
+disputed areas (public domain), or Cliopatria's own for Taiwan and the
+Antilles. Each feature's `Claim` says why. The file was made with a script
+outside the repository.
+`dependencies.geojson` draws territories with a government of their own that
+belong to another state as realms of their own, from the year they took that
+status, with `PartOf` naming the state they belong to: Greenland (home rule,
+1979) and the Faroe Islands (1948) under Denmark, Hong Kong (1997) and Macau
+(1999) under China, the United States' territories (Puerto Rico, Guam, the
+Northern Mariana Islands, American Samoa, the US Virgin Islands), France's
+overseas collectivities and New Caledonia (from 1853, which Cliopatria names
+French Indochina before 1887), Aruba, Curaçao and Sint Maarten, the Crown
+dependencies and British overseas territories, the Cook Islands, Niue and
+Tokelau, and Australia's Norfolk, Christmas and Cocos Islands. Regions that
+are part of their state proper (Hawaii, the French overseas departments) stay
+in it. Outlines are Natural Earth 1:10m countries (public domain); islands
+under 20 km² are widened by about 1 km. The file was made with a script
+outside the repository.
 The list (`civilizations.json`) carries no outlines: the Civilizations popup's card
 outlines are in `civilization-shapes.json`, downloaded only once the landing
 page shows, so a link straight to the globe skips them.

@@ -3916,5 +3916,107 @@
  },
  "republic-of-san-marino": {
   "name": "Saint-Marin"
+ },
+ "falkland-islands": {
+  "name": "Îles Malouines"
+ },
+ "puerto-rico": {
+  "name": "Porto Rico"
+ },
+ "french-polynesia": {
+  "name": "Polynésie française"
+ },
+ "faroe-islands": {
+  "name": "Îles Féroé"
+ },
+ "hong-kong": {
+  "name": "Hong Kong"
+ },
+ "northern-mariana-islands": {
+  "name": "Îles Mariannes du Nord"
+ },
+ "guam": {
+  "name": "Guam"
+ },
+ "curacao": {
+  "name": "Curaçao"
+ },
+ "turks-and-caicos-islands": {
+  "name": "Îles Turques-et-Caïques"
+ },
+ "saint-helena-ascension-and-tristan-da-cunha": {
+  "name": "Sainte-Hélène, Ascension et Tristan da Cunha"
+ },
+ "united-states-virgin-islands": {
+  "name": "Îles Vierges des États-Unis"
+ },
+ "cayman-islands": {
+  "name": "Îles Caïmans"
+ },
+ "saint-pierre-and-miquelon": {
+  "name": "Saint-Pierre-et-Miquelon"
+ },
+ "niue": {
+  "name": "Niue"
+ },
+ "cook-islands": {
+  "name": "Îles Cook"
+ },
+ "american-samoa": {
+  "name": "Samoa américaines"
+ },
+ "aruba": {
+  "name": "Aruba"
+ },
+ "british-virgin-islands": {
+  "name": "Îles Vierges britanniques"
+ },
+ "wallis-and-futuna": {
+  "name": "Wallis-et-Futuna"
+ },
+ "jersey": {
+  "name": "Jersey"
+ },
+ "montserrat": {
+  "name": "Montserrat"
+ },
+ "christmas-island": {
+  "name": "Île Christmas"
+ },
+ "anguilla": {
+  "name": "Anguilla"
+ },
+ "guernsey": {
+  "name": "Guernesey"
+ },
+ "collectivity-of-saint-martin": {
+  "name": "Saint-Martin"
+ },
+ "bermuda": {
+  "name": "Bermudes"
+ },
+ "pitcairn-islands": {
+  "name": "Îles Pitcairn"
+ },
+ "norfolk-island": {
+  "name": "Île Norfolk"
+ },
+ "macau": {
+  "name": "Macao"
+ },
+ "saint-barthelemy": {
+  "name": "Saint-Barthélemy"
+ },
+ "sint-maarten": {
+  "name": "Saint-Martin (Pays-Bas)"
+ },
+ "cocos-keeling-islands": {
+  "name": "Îles Cocos"
+ },
+ "gibraltar": {
+  "name": "Gibraltar"
+ },
+ "tokelau": {
+  "name": "Tokelau"
  }
 }

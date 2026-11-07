@@ -284,7 +284,9 @@ export class PolityLayer {
     this.highlight = new Map(colors);
     // Shapes whose colour or height changes are rebuilt on the next update.
     for (const p of [...this.drawn.keys()]) {
-      if (changed.has(p.name) || p.groups?.some((name) => changed.has(name))) this.detach(p);
+      if (changed.has(p.name) || p.groups?.some((name) => changed.has(name)) || (p.partOf && changed.has(p.partOf))) {
+        this.detach(p);
+      }
     }
   }
 
