@@ -27,7 +27,8 @@ const MAX_LINEAGE = 60;
 const MIN_CROSSING_OF_COUNTRY = 0.03;
 const MIN_CROSSING_OF_CIV = 0.1;
 
-// Realms standing in the last year that are not countries.
+// Realms standing in the last year that are not countries (with the
+// dependencies, found below by their sovereign state).
 const NOT_COUNTRIES = new Set([
   "british-overseas-territories",
   "commonwealth-of-nations",
@@ -177,6 +178,8 @@ for (const w of index.windows) {
       for (const ring of rings) fillRing(ring, cells);
     }
     // Today's land: the realm's own shapes, not its group's other members.
+    // A dependency (Greenland, Puerto Rico) is not a country of its own.
+    if (shape.to >= lastYear && shape.partOf) NOT_COUNTRIES.add(civ.id);
     if (shape.to >= lastYear) {
       if (!todayRings.has(civ.id)) todayRings.set(civ.id, []);
       todayRings.get(civ.id).push(...rings);

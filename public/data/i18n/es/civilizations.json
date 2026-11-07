@@ -3682,5 +3682,107 @@
  },
  "republic-of-san-marino": {
   "name": "San Marino"
+ },
+ "falkland-islands": {
+  "name": "Islas Malvinas"
+ },
+ "puerto-rico": {
+  "name": "Puerto Rico"
+ },
+ "french-polynesia": {
+  "name": "Polinesia Francesa"
+ },
+ "faroe-islands": {
+  "name": "Islas Feroe"
+ },
+ "hong-kong": {
+  "name": "Hong Kong"
+ },
+ "northern-mariana-islands": {
+  "name": "Islas Marianas del Norte"
+ },
+ "guam": {
+  "name": "Guam"
+ },
+ "curacao": {
+  "name": "Curazao"
+ },
+ "turks-and-caicos-islands": {
+  "name": "Islas Turcas y Caicos"
+ },
+ "saint-helena-ascension-and-tristan-da-cunha": {
+  "name": "Santa Elena, Ascensión y Tristán de Acuña"
+ },
+ "united-states-virgin-islands": {
+  "name": "Islas Vírgenes de los Estados Unidos"
+ },
+ "cayman-islands": {
+  "name": "Islas Caimán"
+ },
+ "saint-pierre-and-miquelon": {
+  "name": "San Pedro y Miquelón"
+ },
+ "niue": {
+  "name": "Niue"
+ },
+ "cook-islands": {
+  "name": "Islas Cook"
+ },
+ "american-samoa": {
+  "name": "Samoa Americana"
+ },
+ "aruba": {
+  "name": "Aruba"
+ },
+ "british-virgin-islands": {
+  "name": "Islas Vírgenes Británicas"
+ },
+ "wallis-and-futuna": {
+  "name": "Wallis y Futuna"
+ },
+ "jersey": {
+  "name": "Jersey"
+ },
+ "montserrat": {
+  "name": "Montserrat"
+ },
+ "christmas-island": {
+  "name": "Isla de Navidad"
+ },
+ "anguilla": {
+  "name": "Anguila"
+ },
+ "guernsey": {
+  "name": "Guernsey"
+ },
+ "collectivity-of-saint-martin": {
+  "name": "San Martín (Francia)"
+ },
+ "bermuda": {
+  "name": "Bermudas"
+ },
+ "pitcairn-islands": {
+  "name": "Islas Pitcairn"
+ },
+ "norfolk-island": {
+  "name": "Isla Norfolk"
+ },
+ "macau": {
+  "name": "Macao"
+ },
+ "saint-barthelemy": {
+  "name": "San Bartolomé"
+ },
+ "sint-maarten": {
+  "name": "San Martín (Países Bajos)"
+ },
+ "cocos-keeling-islands": {
+  "name": "Islas Cocos"
+ },
+ "gibraltar": {
+  "name": "Gibraltar"
+ },
+ "tokelau": {
+  "name": "Tokelau"
  }
 }
