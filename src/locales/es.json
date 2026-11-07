@@ -221,7 +221,14 @@
     "winkel3": "Winkel-Tripel"
   },
   "globe": {
-    "label": "Globo en 3D con los reinos del año elegido. Las flechas lo giran, + y − hacen zoom."
+    "label": "Globo en 3D con los reinos del año elegido. Las flechas lo giran, + y − hacen zoom.",
+    "blank": {
+      "title": "Aún no hay fronteras aquí",
+      "text": "Estamos trabajando en estas partes del mundo, pero primero necesitamos fuentes fiables. ¿Conoces alguna?",
+      "share": "Proponer una fuente",
+      "hover": "Haz clic si conoces una fuente",
+      "message": "Una fuente para esta parte del mundo (un enlace ayuda): "
+    }
   },
   "map": {
     "label": "Mapa plano con los reinos del año elegido. Las flechas lo mueven."
