@@ -221,7 +221,14 @@
     "winkel3": "Winkel tripel"
   },
   "globe": {
-    "label": "3D globe showing the realms of the chosen year. Arrow keys turn it, + and − zoom."
+    "label": "3D globe showing the realms of the chosen year. Arrow keys turn it, + and − zoom.",
+    "blank": {
+      "title": "No borders here yet",
+      "text": "We’re working on these parts of the world, but we need reputable sources first. Do you know one?",
+      "share": "Share a source",
+      "hover": "Click if you know a source",
+      "message": "A source for this part of the world (a link helps): "
+    }
   },
   "map": {
     "label": "Flat map showing the realms of the chosen year. Arrow keys move it."

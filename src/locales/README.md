@@ -44,7 +44,7 @@ move a key unless you change the code that uses it too.
 | `search` | The search pop-up, opened by the Search button in the toolbar (the magnifying glass by the menu on phones): one search over civilizations, countries and nations, with type, continent and year filters |
 | `travel` | History travel |
 | `masthead`, `toolbar` | Title at the top left and the tools under it |
-| `view`, `axis`, `projection`, `globe`, `map` | Globe and map views and their settings |
+| `view`, `axis`, `projection`, `globe`, `map` | Globe and map views and their settings (`globe.blank`: the note on land with no borders yet, asking for a source) |
 | `panel`, `welcome`, `tour`, `overview` | The side panel on the right, the small "New here?" prompt shown at start, and the guided tour it offers (`tour.*.phone` are the phone versions of its texts) |
 | `info`, `event`, `kind` | Realm details, event cards and the kinds of events |
 | `docs`, `media`, `picture` | Documentaries, photos and videos |
