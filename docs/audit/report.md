@@ -14,9 +14,9 @@ Articles' own items: on (scripts/article-items.json).
 | Years differ from Wikidata | 186 | 150 | 276 | 122 | 98 | 80 | 912 |
 | Predecessor or successor never near it | 22 | 33 | 44 | 15 | 26 | 39 | 179 |
 | Missing from the map for some years | 41 | 55 | 75 | 36 | 37 | 20 | 264 |
-| Shape shrinks or grows for a year or two | 4 |  |  | 4 | 1 | 1 | 10 |
+| Shape shrinks or grows for a year or two | 4 |  |  | 4 | 1 | 2 | 11 |
 | Centre jumps far away | 15 | 5 | 8 | 58 | 28 | 33 | 147 |
-| **All** | 332 | 289 | 463 | 270 | 226 | 232 | 1812 |
+| **All** | 332 | 289 | 463 | 270 | 226 | 233 | 1813 |
 
 ## Before 500
 
@@ -1937,3 +1937,4 @@ Articles' own items: on (scripts/article-items.json).
 - **medium** · Years differ from Wikidata: Northern Mariana Islands starts in 1978 on the map, 1898 on Wikidata
 - **low** · Centre jumps far away: British Colonial Empire's centre moves 16492 km in 1983
 - **low** · Centre jumps far away: British Colonial Empire's centre moves 13901 km in 1984
+- **low** · Shape shrinks or grows for a year or two: British Colonial Empire is 269% of its size in 1996, then back

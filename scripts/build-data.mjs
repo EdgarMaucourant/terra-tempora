@@ -142,8 +142,11 @@ function toShape(id, p, geometry) {
   const largest = mainPart(outers);
   const rings = outers
     .filter((_, i) => p.KeepSmall || i === largest || areas[i] >= MIN_PART_AREA)
-    .map((ring) => {
-      const simple = simplify(ring, TOLERANCE);
+    .map((ring, i) => {
+      // A small part keeps its shape: about 30 points across instead of 5 km
+      // steps, which would turn Hong Kong or Macau into a few spikes.
+      const tolerance = p.KeepSmall ? Math.min(TOLERANCE, Math.sqrt(areas[i] / KM2_PER_SQ_DEGREE) / 30) : TOLERANCE;
+      const simple = simplify(ring, tolerance);
       return p.KeepSmall && simple.length < 4 ? ring : simple;
     })
     .filter((ring) => ring.length >= 4)
@@ -542,7 +545,7 @@ for (const { file, properties: p, geometry } of additions) {
       console.warn(`${file}: no shape of ${p.Name} in ${p.FromYear}-${p.ToYear} to take land from`);
     continue;
   }
-  if (p.Clips) reshapeYears(new Set(p.Clips), p, (s) => clipShape(s, geometry));
+  if (p.Clips) reshapeYears(new Set(p.Clips), p, (s) => clipShape(s, p.ClipOutline ?? geometry));
   if (!reshapeYears(new Set([p.Name]), p, (s) => growShape(s, geometry)))
     console.warn(`${file}: no shape of ${p.Name} in ${p.FromYear}-${p.ToYear} to add land to`);
 }
