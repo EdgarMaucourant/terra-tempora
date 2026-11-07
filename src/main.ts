@@ -619,7 +619,9 @@ function hoverRealm(p: Polity | null | undefined, x: number, y: number) {
   map.setHovered(greyed ? p.name : null);
   const years = formatRange(civ.from, civ.to);
   // A member of a group says so: the Kingdom of Spain in 1530 is part of the Spanish Empire.
-  const groups = home ? [] : (p.groups ?? []).filter((g) => g !== p.name).map((g) => civs!.realmName(g));
+  const groups = [...(home ? [] : (p.groups ?? [])), ...(p.partOf ? [p.partOf] : [])]
+    .filter((g) => g !== p.name)
+    .map((g) => civs!.realmName(g));
   tooltip.replaceChildren(
     Object.assign(document.createElement("strong"), { textContent: civ.name }),
     ...groups.map((group) =>

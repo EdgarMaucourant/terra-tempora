@@ -164,6 +164,8 @@ function toShape(id, p, geometry) {
     // Group records (see "Groups" below), dropped before writing.
     ...(p.Components && { members: p.Components.split(";") }),
     ...(p.MemberOf && { memberOf: p.MemberOf.split(";") }),
+    // A dependency's sovereign state (override files only, see development.md).
+    ...(p.PartOf && { partOf: p.PartOf }),
   };
 }
 
@@ -348,9 +350,11 @@ for (const file of existsSync(OVERRIDES) ? readdirSync(OVERRIDES).filter((f) => 
         from,
         to,
       }));
+      // ClipOutline, a wider outline, also takes the slivers left along a
+      // coast that Cliopatria draws a little differently.
       const inside = clipShape(
         { ...s, id: outside.length ? nextId++ : s.id, from: Math.max(s.from, p.FromYear), to: Math.min(s.to, p.ToYear) },
-        f.geometry,
+        p.ClipOutline ?? f.geometry,
       );
       return inside ? [...outside, inside] : outside;
     });

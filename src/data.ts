@@ -17,6 +17,12 @@ export interface Polity {
    * Spain is part of the Spanish Empire until 1931, Bohemia of the Holy Roman Empire.
    */
   groups?: string[];
+  /**
+   * The state a dependency or autonomous territory belongs to in these years
+   * (Greenland, Denmark): drawn on its own, it takes that state's colour when
+   * the state is highlighted and it is not.
+   */
+  partOf?: string;
   /** [longitude, latitude] of the label. */
   label: [number, number] | null;
   /** Outer rings as flat [lon, lat, lon, lat, …] arrays in degrees. */
@@ -27,10 +33,15 @@ export interface Polity {
 
 /**
  * A shape's highlight colour: its group's, when that is highlighted, so an
- * empire shows in one colour with its homeland, or else its own realm's.
+ * empire shows in one colour with its homeland, or else its own realm's, or
+ * else the colour of the state it is a dependency of.
  */
 export function highlightOf(colors: Map<string, string>, p: Polity): string | undefined {
-  return p.groups?.map((g) => colors.get(g)).find((c) => c !== undefined) ?? colors.get(p.name);
+  return (
+    p.groups?.map((g) => colors.get(g)).find((c) => c !== undefined) ??
+    colors.get(p.name) ??
+    (p.partOf ? colors.get(p.partOf) : undefined)
+  );
 }
 
 /** A realm's first and last year. */
