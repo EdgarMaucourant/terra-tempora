@@ -3,19 +3,20 @@
 Leads for the review in [data-review.md](../data-review.md), made by `npm run audit` (scripts/audit.mjs). Each is a place to look, not a proven mistake: most relabels, for instance, are real changes of regime.
 
 Wikidata checks: on (scripts/wikidata-facts.json).
+Articles' own items: on (scripts/article-items.json).
 
 | Kind | Before 500 | 500 to 999 | 1000 to 1499 | 1500 to 1799 | 1800 to 1899 | 1900 to today | All |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Another realm's land under this name | 13 | 9 | 18 | 16 | 18 | 25 | 99 |
-| Wikidata item shared with another realm | 33 | 19 | 23 | 9 | 8 | 13 | 105 |
-| Wikidata item doesn't look like this realm | 42 | 27 | 33 | 23 | 6 | 11 | 142 |
-| Not a state (party, army, people) | 35 | 22 | 17 | 8 | 13 | 22 | 117 |
-| Years differ from Wikidata | 215 | 157 | 279 | 123 | 100 | 82 | 956 |
-| Predecessor or successor never near it | 38 | 46 | 53 | 15 | 30 | 39 | 221 |
+| Another realm's land under this name | 12 | 7 | 17 | 16 | 16 | 26 | 94 |
+| Wikidata item shared with another realm | 16 | 16 | 24 | 9 | 7 | 11 | 83 |
+| Wikidata item doesn't look like this realm | 2 | 2 | 2 | 2 |  |  | 8 |
+| Not a state (party, army, people) | 34 | 21 | 17 | 8 | 13 | 22 | 115 |
+| Years differ from Wikidata | 186 | 150 | 276 | 122 | 98 | 80 | 912 |
+| Predecessor or successor never near it | 22 | 33 | 44 | 15 | 26 | 39 | 179 |
 | Missing from the map for some years | 41 | 55 | 75 | 36 | 37 | 20 | 264 |
 | Shape shrinks or grows for a year or two | 4 |  |  | 4 | 1 | 1 | 10 |
 | Centre jumps far away | 15 | 5 | 8 | 58 | 28 | 33 | 147 |
-| **All** | 436 | 340 | 506 | 292 | 241 | 246 | 2061 |
+| **All** | 332 | 289 | 463 | 270 | 226 | 232 | 1812 |
 
 ## Before 500
 
@@ -29,9 +30,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Years differ from Wikidata: Greek Dark Ages ends in 801 BCE on the map, 851 BCE on Wikidata
 - **medium** · Another realm's land under this name: Greek Dark Ages becomes Greek City-States in 800 BCE with the same outline; Wikidata doesn't link them
 - **high** · Years differ from Wikidata: Carthage starts in 650 BCE on the map, 814 BCE on Wikidata
-- **high** · Years differ from Wikidata: Roman Republic starts in 500 BCE on the map, 1798 on Wikidata
-- **medium** · Wikidata item shared with another realm: Q175881 (Roman Republic) is the item of Roman Republic (500 BCE to 32 BCE), Revolutionary Roman Republic (1799)
-- **low** · Wikidata item doesn't look like this realm: Roman Republic's article is "Roman Republic" but its item Q175881 has "Roman Republic (1798–1799)"
 - **medium** · Years differ from Wikidata: Roman Kingdom ends in 481 BCE on the map, 509 BCE on Wikidata
 - **medium** · Missing from the map for some years: Peloponnesian League is not drawn 480 BCE to 451 BCE (30 years), then comes back
 - **high** · Predecessor or successor never near it: Greek Colonies is followed by Cimmerian Bosporus on Wikidata, but they never held the same land
@@ -56,29 +54,15 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **low** · Centre jumps far away: Greek City-States's centre moves 1547 km in 197 BCE
 - **low** · Centre jumps far away: Roman Republic's centre moves 2147 km in 126 BCE
 - **medium** · Missing from the map for some years: Cimmerian Bosporus is not drawn 91 BCE to 64 BCE (28 years), then comes back
-- **high** · Years differ from Wikidata: Roman Republic ends in 32 BCE on the map, 1799 on Wikidata
-- **high** · Wikidata item doesn't look like this realm: Roman Empire links to Q12544 "Byzantine Empire" (Roman Empire during Late Antiquity and the Middle Ages)
-- **high** · Years differ from Wikidata: Roman Empire starts in 31 BCE on the map, 395 on Wikidata
-- **high** · Predecessor or successor never near it: Republic of Amalfi is followed by Roman Empire on Wikidata, but they never held the same land
-- **medium** · Wikidata item shared with another realm: Q12544 (Byzantine Empire) is the item of Roman Empire (31 BCE to 394), Eastern Roman Empire (395 to 1453)
-- **medium** · Predecessor or successor never near it: Western Roman Empire (395 to 475) is followed by Roman Empire (31 BCE to 394) on Wikidata
-- **medium** · Predecessor or successor never near it: Nicaean Empire (1206 to 1278) is followed by Roman Empire (31 BCE to 394) on Wikidata
-- **medium** · Predecessor or successor never near it: Latin Empire (1206 to 1278) is followed by Roman Empire (31 BCE to 394) on Wikidata
-- **medium** · Predecessor or successor never near it: Kingdom of Vaspurakan (911 to 1027) is followed by Roman Empire (31 BCE to 394) on Wikidata
 - **medium** · Years differ from Wikidata: Goths starts in 30 on the map, 100 on Wikidata
 - **medium** · Missing from the map for some years: Cimmerian Bosporus is not drawn 68 to 77 (10 years), then comes back
 - **medium** · Wikidata item shared with another realm: Q45813 (Huns) is the item of Hunnic Empire (426 to 673), Huns (106 to 425)
 - **medium** · Not a state (party, army, people): Huns (106 to 425) reads like a party, army or people
-- **high** · Years differ from Wikidata: Burgundians starts in 154 on the map, 411 on Wikidata
-- **medium** · Wikidata item shared with another realm: Q13590051 (Kingdom of the Burgundians) is the item of Burgundian Kingdom (414 to 660), Burgundians (154 to 409)
-- **low** · Wikidata item doesn't look like this realm: Burgundians's article is "Burgundians" but its item Q13590051 has "Kingdom of the Burgundians"
 - **high** · Years differ from Wikidata: Goths ends in 206 on the map, 1475 on Wikidata
 - **medium** · Not a state (party, army, people): Ripuarian Franks's item Q316860 is a ethnic group, tribe
 - **low** · Centre jumps far away: Roman Empire's centre moves 2117 km in 270
 - **high** · Years differ from Wikidata: Saxons starts in 283 on the map, 500 on Wikidata
 - **low** · Centre jumps far away: Roman Empire's centre moves 3317 km in 283
-- **high** · Years differ from Wikidata: Roman Empire ends in 394 on the map, 1453 on Wikidata
-- **high** · Years differ from Wikidata: Burgundians ends in 409 on the map, 534 on Wikidata
 - **low** · Centre jumps far away: Vandals's centre moves 1508 km in 410
 - **medium** · Another realm's land under this name: Visigoths becomes Visigothic Kingdom in 426 with the same outline; Wikidata doesn't link them
 - **medium** · Years differ from Wikidata: Visigothic Kingdom starts in 426 on the map, 476 on Wikidata
@@ -118,48 +102,17 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **high** · Years differ from Wikidata: Tabal Kingdom starts in 900 BCE on the map, 1001 BCE on Wikidata
 - **medium** · Years differ from Wikidata: Kingdom of Judah starts in 900 BCE on the map, 930 BCE on Wikidata
 - **medium** · Years differ from Wikidata: Neo-Hittite states ends in 801 BCE on the map, 701 BCE on Wikidata
-- **high** · Years differ from Wikidata: Sabaeans starts in 800 BCE on the map, 1200 BCE on Wikidata
 - **medium** · Years differ from Wikidata: Kingdom of Urartu starts in 800 BCE on the map, 861 BCE on Wikidata
 - **high** · Years differ from Wikidata: Zhou Dynasty ends in 751 BCE on the map, 256 BCE on Wikidata
 - **high** · Years differ from Wikidata: Cai starts in 750 BCE on the map, 1045 BCE on Wikidata
 - **high** · Years differ from Wikidata: Chen starts in 750 BCE on the map, 901 BCE on Wikidata
-- **high** · Years differ from Wikidata: Jin starts in 750 BCE on the map, 896 on Wikidata
 - **high** · Years differ from Wikidata: Later Zhou starts in 750 BCE on the map, 951 on Wikidata
-- **high** · Years differ from Wikidata: Lu starts in 750 BCE on the map, 1378 on Wikidata
-- **high** · Years differ from Wikidata: Qi starts in 750 BCE on the map, 550 on Wikidata
-- **high** · Years differ from Wikidata: Qin starts in 750 BCE on the map, 350 on Wikidata
-- **high** · Years differ from Wikidata: Song starts in 750 BCE on the map, 960 on Wikidata
 - **high** · Years differ from Wikidata: Teng starts in 750 BCE on the map, 1046 BCE on Wikidata
 - **high** · Years differ from Wikidata: Wey starts in 750 BCE on the map, 1041 BCE on Wikidata
-- **high** · Years differ from Wikidata: Wu starts in 750 BCE on the map, 198 on Wikidata
-- **high** · Years differ from Wikidata: Yan starts in 750 BCE on the map, 337 on Wikidata
-- **medium** · Wikidata item shared with another realm: Q555994 (Aq Qoyunlu) is the item of Aq Qoyunlu (1407 to 1511), Lu (750 BCE to 248 BCE)
-- **medium** · Not a state (party, army, people): Cao's item Q204077 is a human
-- **medium** · Wikidata item shared with another realm: Q204077 (Cao Cao) is the item of Cao Cao (197 to 223), Cao (750 BCE to 451 BCE)
 - **medium** · Years differ from Wikidata: Chu starts in 750 BCE on the map, 722 BCE on Wikidata
-- **medium** · Wikidata item shared with another realm: Q274488 (Eastern Wu) is the item of Eastern Wu (207 to 282), Wu (750 BCE to 451 BCE)
-- **medium** · Wikidata item shared with another realm: Q1471995 (Former Qin) is the item of Former Qin (353 to 393), Qin (750 BCE to 219 BCE)
-- **medium** · Wikidata item shared with another realm: Q1472004 (Former Yan) is the item of Former Yan (337 to 370), Yan (750 BCE to 204 BCE)
-- **medium** · Wikidata item shared with another realm: Q6201794 (Jin) is the item of Jin (750 BCE to 405 BCE), Former Jin (922 to 925)
-- **medium** · Wikidata item shared with another realm: Q1143524 (Northern Qi) is the item of Northern Qi (555 to 576), Qi (750 BCE to 204 BCE)
-- **medium** · Wikidata item shared with another realm: Q7462 (Song dynasty) is the item of Northern Song (961 to 1138), Southern Song (1139 to 1278), Song (750 BCE to 285 BCE)
-- **medium** · Predecessor or successor never near it: Eastern Wei (534 to 554) is followed by Qi (750 BCE to 204 BCE) on Wikidata
-- **medium** · Predecessor or successor never near it: Former Yan (337 to 370) is followed by Qin (750 BCE to 219 BCE) on Wikidata
-- **medium** · Predecessor or successor never near it: Former Liang (324 to 377) is followed by Qin (750 BCE to 219 BCE) on Wikidata
-- **medium** · Predecessor or successor never near it: Five Dynasties and Ten Kingdoms (911 to 979) is followed by Song (750 BCE to 285 BCE) on Wikidata
 - **medium** · Not a state (party, army, people): Spring and Autumn States's item Q185047 is a historical period
 - **medium** · Years differ from Wikidata: Zheng starts in 750 BCE on the map, 806 BCE on Wikidata
 - **medium** · Years differ from Wikidata: Zhu starts in 750 BCE on the map, 700 BCE on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Cao's article is "Cao (state)" but its item Q204077 has "Cao Cao"
-- **low** · Wikidata item doesn't look like this realm: Jin's article is "Jin (Chinese state)" but its item Q6201794 has "Jin (Later Tang precursor)"
-- **low** · Wikidata item doesn't look like this realm: Lu's article is "Lu (state)" but its item Q555994 has "Aq Qoyunlu"
-- **low** · Wikidata item doesn't look like this realm: Qi's article is "Qi (state)" but its item Q1143524 has "Northern Qi"
-- **low** · Wikidata item doesn't look like this realm: Qin's article is "Qin (state)" but its item Q1471995 has "Former Qin"
-- **low** · Wikidata item doesn't look like this realm: Song's article is "Song (state)" but its item Q7462 has "Song dynasty"
-- **low** · Wikidata item doesn't look like this realm: Spring and Autumn States's article is "Spring and Autumn Period" but its item Q185047 has "Spring and Autumn period"
-- **low** · Wikidata item doesn't look like this realm: Wu's article is "Wu (state)" but its item Q274488 has "Eastern Wu"
-- **low** · Wikidata item doesn't look like this realm: Yan's article is "Yan (state)" but its item Q1472004 has "Former Yan"
-- **low** · Wikidata item doesn't look like this realm: Zhu's article is "Zhu (state)" but its item Q227007 has "Zou (state)"
 - **high** · Years differ from Wikidata: Kingdom of Judah ends in 701 BCE on the map, 586 BCE on Wikidata
 - **medium** · Years differ from Wikidata: Philistia ends in 701 BCE on the map, 604 BCE on Wikidata
 - **medium** · Years differ from Wikidata: Tabal Kingdom ends in 701 BCE on the map, 801 BCE on Wikidata
@@ -189,48 +142,29 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Not a state (party, army, people): Janapada of Cedī's item Q124207979 is a ethnic group
 - **medium** · Not a state (party, army, people): Janapada of Kamboja's item Q2586782 is a people
 - **medium** · Years differ from Wikidata: Neo-Babylonian Empire starts in 600 BCE on the map, 626 BCE on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Janapada of Gandhāra's article is "Gandhāra (kingdom)" but its item Q112980583 has "Gandhāra Kingdom"
-- **low** · Wikidata item doesn't look like this realm: Janapada of Kuru's article is "Kuru Kingdom" but its item Q1068408 has "Kuru kingdom"
-- **low** · Wikidata item doesn't look like this realm: Janapada of Pañcāla's article is "Pañcāla" but its item Q558603 has "Panchala"
 - **medium** · Years differ from Wikidata: Kingdom of Urartu ends in 551 BCE on the map, 590 BCE on Wikidata
 - **medium** · Predecessor or successor never near it: Elam (3200 BCE to 601 BCE) is followed by Achaemenid Empire (550 BCE to 327 BCE) on Wikidata
 - **medium** · Years differ from Wikidata: Janapada of Anga ends in 545 BCE on the map, 501 BCE on Wikidata
 - **high** · Years differ from Wikidata: Janapada of Magadha ends in 501 BCE on the map, 345 BCE on Wikidata
 - **medium** · Years differ from Wikidata: Janapada of Gandhāra ends in 501 BCE on the map, 535 BCE on Wikidata
-- **high** · Wikidata item doesn't look like this realm: Yue links to Q1936158 "Minyue" (Ancient kingdom in current southern China)
-- **high** · Years differ from Wikidata: Yue starts in 500 BCE on the map, 334 BCE on Wikidata
 - **medium** · Another realm's land under this name: Janapada of Magadha becomes Magadha - Haryanka dynasty in 500 BCE with the same outline; Wikidata doesn't link them
 - **medium** · Years differ from Wikidata: Magadha - Haryanka dynasty starts in 500 BCE on the map, 544 BCE on Wikidata
-- **medium** · Wikidata item shared with another realm: Q1936158 (Minyue) is the item of Minyue (333 BCE to 111 BCE), Yue (500 BCE to 334 BCE)
 - **medium** · Years differ from Wikidata: Janapada of Vajji ends in 481 BCE on the map, 401 BCE on Wikidata
 - **high** · Years differ from Wikidata: Mahajanapadas starts in 480 BCE on the map, 600 BCE on Wikidata
 - **medium** · Another realm's land under this name: Janapada of Vajji becomes Mahajanapadas in 480 BCE with the same outline; Wikidata doesn't link them
 - **medium** · Not a state (party, army, people): Warring States China's item Q185063 is a historical period
-- **low** · Wikidata item doesn't look like this realm: Warring States China's article is "Warring States Period" but its item Q185063 has "Warring States period"
 - **high** · Years differ from Wikidata: Janapada of Kāśī ends in 461 BCE on the map, 601 BCE on Wikidata
 - **high** · Years differ from Wikidata: Janapada of Malla ends in 461 BCE on the map, 301 BCE on Wikidata
 - **high** · Years differ from Wikidata: Janapada of Vatsa ends in 461 BCE on the map, 301 BCE on Wikidata
 - **medium** · Years differ from Wikidata: Janapada of Kosala ends in 461 BCE on the map, 501 BCE on Wikidata
 - **high** · Years differ from Wikidata: Mahajanapadas ends in 451 BCE on the map, 345 BCE on Wikidata
-- **high** · Years differ from Wikidata: Wu ends in 451 BCE on the map, 280 on Wikidata
 - **medium** · Years differ from Wikidata: Chen ends in 451 BCE on the map, 479 BCE on Wikidata
 - **medium** · Years differ from Wikidata: Teng ends in 451 BCE on the map, 414 BCE on Wikidata
 - **high** · Years differ from Wikidata: Janapada of Avanti ends in 405 BCE on the map, 301 BCE on Wikidata
 - **high** · Years differ from Wikidata: Janapada of Kuru ends in 405 BCE on the map, 901 BCE on Wikidata
 - **high** · Years differ from Wikidata: Janapada of Matsya ends in 405 BCE on the map, 301 BCE on Wikidata
 - **high** · Years differ from Wikidata: Janapada of Surasena ends in 405 BCE on the map, 301 BCE on Wikidata
-- **high** · Years differ from Wikidata: Jin ends in 405 BCE on the map, 923 on Wikidata
-- **high** · Wikidata item doesn't look like this realm: Han links to Q1968654 "Beylik of Saruhan" (Anatolian beylik)
-- **high** · Years differ from Wikidata: Han starts in 404 BCE on the map, 1313 on Wikidata
-- **high** · Predecessor or successor never near it: Shu Han is followed by Wei on Wikidata, but they never held the same land
-- **high** · Years differ from Wikidata: Wei starts in 404 BCE on the map, 220 on Wikidata
-- **high** · Years differ from Wikidata: Zhao starts in 404 BCE on the map, 304 on Wikidata
-- **medium** · Wikidata item shared with another realm: Q320930 (Cao Wei) is the item of Cao Wei (224 to 264), Wei (404 BCE to 204 BCE)
-- **medium** · Wikidata item shared with another realm: Q1574107 (Han Zhao) is the item of Former Zhao (306 to 336), Zhao (404 BCE to 226 BCE)
-- **medium** · Wikidata item shared with another realm: Q1968654 (Beylik of Saruhan) is the item of Han (404 BCE to 203 BCE), Beylik of Saruhan (1314 to 1414)
 - **medium** · Not a state (party, army, people): Yuezhi's item Q467985 is a ethnic group
-- **low** · Wikidata item doesn't look like this realm: Wei's article is "Wei (state)" but its item Q320930 has "Cao Wei"
-- **low** · Wikidata item doesn't look like this realm: Zhao's article is "Zhao (state)" but its item Q1574107 has "Han-Zhao"
 - **high** · Years differ from Wikidata: Minaeans starts in 383 BCE on the map, 1001 BCE on Wikidata
 - **medium** · Not a state (party, army, people): Minaeans's item Q1177379 is a tribe
 - **low** · Wikidata item doesn't look like this realm: Minaeans's article is "Minaeans" but its item Q1177379 has "Ma'in"
@@ -238,7 +172,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **high** · Years differ from Wikidata: Qataban starts in 350 BCE on the map, 801 BCE on Wikidata
 - **medium** · Predecessor or successor never near it: Janapada of Magadha (600 BCE to 501 BCE) is followed by Nanda Empire (345 BCE to 322 BCE) on Wikidata
 - **medium** · Predecessor or successor never near it: Mahajanapadas (480 BCE to 451 BCE) is followed by Nanda Empire (345 BCE to 322 BCE) on Wikidata
-- **high** · Years differ from Wikidata: Yue ends in 334 BCE on the map, 110 BCE on Wikidata
 - **low** · Shape shrinks or grows for a year or two: Macedonian Empire is 268% of its size in 333 BCE to 332 BCE, then back
 - **medium** · Years differ from Wikidata: Ptolemaic Kingdom starts in 331 BCE on the map, 305 BCE on Wikidata
 - **high** · Years differ from Wikidata: Kingdom of Armenia starts in 326 BCE on the map, 553 BCE on Wikidata
@@ -247,7 +180,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Not a state (party, army, people): Laomedon's item Q977461 is a human
 - **medium** · Not a state (party, army, people): Perdiccas's item Q202113 is a human
 - **medium** · Missing from the map for some years: Ptolemaic Kingdom is not drawn 323 BCE to 308 BCE (16 years), then comes back
-- **low** · Wikidata item doesn't look like this realm: Kingdom of Lysimachus's article is "Lysimachian Empire" but its item Q32133 has "Lysimachus"
 - **low** · Centre jumps far away: Macedonian Empire's centre moves 2995 km in 323 BCE
 - **medium** · Predecessor or successor never near it: Mahajanapadas (480 BCE to 451 BCE) is followed by Maurya Empire (321 BCE to 186 BCE) on Wikidata
 - **medium** · Another realm's land under this name: Perdiccas becomes Seleucid Empire in 318 BCE with the same outline; Wikidata doesn't link them
@@ -258,22 +190,15 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **high** · Years differ from Wikidata: Macedonian Empire ends in 292 BCE on the map, 167 BCE on Wikidata
 - **high** · Years differ from Wikidata: Early Cheras starts in 291 BCE on the map, 800 on Wikidata
 - **medium** · Not a state (party, army, people): Anurādhapura's item Q5724 is a city
-- **low** · Wikidata item doesn't look like this realm: Anurādhapura's article is "Anurādhapura" but its item Q5724 has "Anuradhapura"
-- **low** · Wikidata item doesn't look like this realm: Early Pandyas's article is "Early Pandyas" but its item Q3532152 has "Early Pandyan kingdom"
-- **high** · Years differ from Wikidata: Song ends in 285 BCE on the map, 1279 on Wikidata
 - **high** · Years differ from Wikidata: Xu ends in 285 BCE on the map, 512 BCE on Wikidata
 - **medium** · Years differ from Wikidata: Kingdom of Sophene starts in 256 BCE on the map, 202 BCE on Wikidata
-- **high** · Years differ from Wikidata: Lu ends in 248 BCE on the map, 1508 on Wikidata
 - **medium** · Years differ from Wikidata: Wey ends in 248 BCE on the map, 209 BCE on Wikidata
 - **medium** · Years differ from Wikidata: Kingdom of Cappadocia starts in 239 BCE on the map, 321 BCE on Wikidata
 - **medium** · Years differ from Wikidata: Colchis ends in 231 BCE on the map, 164 BCE on Wikidata
 - **medium** · Missing from the map for some years: Han is not drawn 230 BCE to 209 BCE (22 years), then comes back
-- **high** · Years differ from Wikidata: Zhao ends in 226 BCE on the map, 329 on Wikidata
 - **medium** · Missing from the map for some years: Wei is not drawn 222 BCE to 209 BCE (14 years), then comes back
 - **medium** · Missing from the map for some years: Yan is not drawn 222 BCE to 209 BCE (14 years), then comes back
-- **high** · Years differ from Wikidata: Qin ends in 219 BCE on the map, 394 on Wikidata
 - **medium** · Missing from the map for some years: Qi is not drawn 218 BCE to 207 BCE (12 years), then comes back
-- **medium** · Another realm's land under this name: Qin becomes Qin Dynasty in 218 BCE with the same outline; Wikidata doesn't link them
 - **medium** · Wikidata item shared with another realm: Q7183 (Qin dynasty) is the item of Qin Dynasty (218 BCE to 209 BCE), Zhai (208 BCE to 204 BCE)
 - **medium** · Predecessor or successor never near it: Zhou Dynasty (1000 BCE to 751 BCE) is followed by Qin Dynasty (218 BCE to 209 BCE) on Wikidata
 - **medium** · Missing from the map for some years: Kingdom of Armenia is not drawn 210 BCE to 209 BCE (2 years), then comes back
@@ -283,18 +208,9 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Wikidata item shared with another realm: Q188836 (Xiongnu) is the item of Xiongnu (208 BCE to 153), Southern Xiongnu (51 to 105)
 - **medium** · Years differ from Wikidata: Xiongnu starts in 208 BCE on the map, 301 BCE on Wikidata
 - **medium** · Predecessor or successor never near it: Zhou Dynasty (1000 BCE to 751 BCE) is followed by Zhai (208 BCE to 204 BCE) on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Western Chu's article is "Chu-Han Contention" but its item Q1151705 has "Chu–Han Contention"
 - **medium** · Missing from the map for some years: Kingdom of Armenia is not drawn 206 BCE to 189 BCE (18 years), then comes back
-- **high** · Years differ from Wikidata: Qi ends in 204 BCE on the map, 577 on Wikidata
-- **high** · Years differ from Wikidata: Wei ends in 204 BCE on the map, 265 on Wikidata
-- **high** · Years differ from Wikidata: Yan ends in 204 BCE on the map, 370 on Wikidata
-- **high** · Years differ from Wikidata: Han ends in 203 BCE on the map, 1412 on Wikidata
-- **high** · Wikidata item doesn't look like this realm: Han Dynasty links to Q1068371 "Chauhan" (clan that ruled parts of northern India in the medieval period)
-- **medium** · Wikidata item shared with another realm: Q1068371 (Chauhan) is the item of Han Dynasty (202 BCE to 237), Chauhan Dynasty (980 to 1201)
 - **high** · Years differ from Wikidata: Gojoseon starts in 197 BCE on the map, 2333 BCE on Wikidata
 - **high** · Years differ from Wikidata: Korean Jin starts in 197 BCE on the map, 301 BCE on Wikidata
-- **medium** · Wikidata item shared with another realm: Q28405 (Gojoseon) is the item of Joseon (1395 to 1897), Gojoseon (197 BCE to 92 BCE)
-- **low** · Wikidata item doesn't look like this realm: Gojoseon's article is "Gojoseon" but its item Q28405 has "Old Chosŏn"
 - **high** · Years differ from Wikidata: Rhodes starts in 188 BCE on the map, 1601 BCE on Wikidata
 - **medium** · Wikidata item shared with another realm: Q43048 (Rhodes) is the item of Rhodes (188 BCE to 165 BCE), Domain of Rhodes (1206 to 1249)
 - **medium** · Years differ from Wikidata: Mahameghavahana Dynasty starts in 170 BCE on the map, 250 BCE on Wikidata
@@ -302,9 +218,7 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **high** · Years differ from Wikidata: Atropatene ends in 165 BCE on the map, 226 on Wikidata
 - **high** · Years differ from Wikidata: Mahameghavahana Dynasty ends in 165 BCE on the map, 500 on Wikidata
 - **medium** · Years differ from Wikidata: Indo-Scythians starts in 144 BCE on the map, 200 BCE on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Indo-Scythians's article is "Indo-Scythians" but its item Q240123 has "Indo-Scythian Kingdom"
 - **medium** · Years differ from Wikidata: Indo-Greeks starts in 126 BCE on the map, 180 BCE on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Himyarite Kingdom's article is "Himyarite Kingdom" but its item Q289577 has "Himyar"
 - **high** · Years differ from Wikidata: Byeonhan starts in 91 BCE on the map, 201 BCE on Wikidata
 - **medium** · Missing from the map for some years: Kingdom of Bithynia is not drawn 87 BCE to 78 BCE (10 years), then comes back
 - **medium** · Missing from the map for some years: Kingdom of Cappadocia is not drawn 87 BCE to 78 BCE (10 years), then comes back
@@ -319,7 +233,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Years differ from Wikidata: Kingdom of Osroene starts in 63 BCE on the map, 132 BCE on Wikidata
 - **medium** · Wikidata item shared with another realm: Q136884 (Lazica) is the item of Lazica (63 BCE to 545), Kingdom of Lazica (638 to 777)
 - **medium** · Years differ from Wikidata: Lazica starts in 63 BCE on the map, 101 BCE on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Kingdom of Gordyene's article is "Corduene" but its item Q29237 has "Gordyene"
 - **high** · Years differ from Wikidata: Kingdom of Axum starts in 50 BCE on the map, 401 BCE on Wikidata
 - **high** · Years differ from Wikidata: Dong-okjeo starts in 36 BCE on the map, 301 BCE on Wikidata
 - **medium** · Not a state (party, army, people): Dong-okjeo's item Q713393 is a tribe
@@ -327,7 +240,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **high** · Years differ from Wikidata: Minaeans ends in 26 BCE on the map, 1001 BCE on Wikidata
 - **high** · Another realm's land under this name: Minaeans's outline is named Himyarite Kingdom from 25 BCE; Himyarite Kingdom was last drawn 806 km away (31 BCE to 26 BCE)
 - **medium** · Missing from the map for some years: Nabataeans is not drawn 25 BCE to 20 BCE (6 years), then comes back
-- **low** · Wikidata item doesn't look like this realm: Indo-Parthians's article is "Indo-Parthian Kingdom" but its item Q1255614 has "Indo-Parthian kingdom"
 - **low** · Centre jumps far away: Han Dynasty's centre moves 2517 km in 6
 - **medium** · Missing from the map for some years: Han Dynasty is not drawn 14 to 29 (16 years), then comes back
 - **medium** · Missing from the map for some years: Kingdom of Commagene is not drawn 23 to 42 (20 years), then comes back
@@ -352,8 +264,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Missing from the map for some years: Kingdom of Osroene is not drawn 161 to 164 (4 years), then comes back
 - **medium** · Years differ from Wikidata: Qataban ends in 183 on the map, 150 on Wikidata
 - **medium** · Not a state (party, army, people): Cao Cao's item Q204077 is a human
-- **medium** · Wikidata item shared with another realm: Q1661685 (Indo-Sassanids) is the item of Sasanian Empire (215 to 643), Indo-Sasanian Empire (260 to 357)
-- **low** · Wikidata item doesn't look like this realm: Sasanian Empire's article is "Sasanian Empire" but its item Q1661685 has "Kushano-Sasanian Kingdom"
 - **high** · Years differ from Wikidata: Kushan Empire ends in 237 on the map, 375 on Wikidata
 - **high** · Years differ from Wikidata: Xianbei ends in 237 on the map, 670 on Wikidata
 - **high** · Years differ from Wikidata: Eastern Kushans starts in 238 on the map, 30 on Wikidata
@@ -366,7 +276,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Missing from the map for some years: Kingdom of Armenia is not drawn 260 to 286 (27 years), then comes back
 - **high** · Years differ from Wikidata: Tamna starts in 263 on the map, 2337 BCE on Wikidata
 - **medium** · Another realm's land under this name: Cao Wei becomes Western Jin in 265 with the same outline; Wikidata doesn't link them
-- **low** · Wikidata item doesn't look like this realm: Western Jin's article is "Jin dynasty (266-420)" but its item Q7352 has "Jin dynasty (266–420)"
 - **medium** · Not a state (party, army, people): Lakhmid Kingdom's item Q943191 is a tribe, noble family
 - **high** · Years differ from Wikidata: Indo-Scythians ends in 282 on the map, 400 on Wikidata
 - **medium** · Predecessor or successor never near it: Satavahana Dynasty (225 BCE to 223) is followed by Late Pallava Empire (283 to 805) on Wikidata
@@ -376,15 +285,11 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Predecessor or successor never near it: Kushan Empire (43 to 237) is followed by Gupta Empire (324 to 554) on Wikidata
 - **medium** · Predecessor or successor never near it: Mahameghavahana Dynasty (170 BCE to 165 BCE) is followed by Gupta Empire (324 to 554) on Wikidata
 - **medium** · Predecessor or successor never near it: Kanva Dynasty (66 BCE to 28 BCE) is followed by Gupta Empire (324 to 554) on Wikidata
-- **medium** · Predecessor or successor never near it: Zhao (404 BCE to 226 BCE) is followed by Later Zhao (337 to 352) on Wikidata
 - **medium** · Years differ from Wikidata: Eastern Kushans ends in 346 on the map, 375 on Wikidata
 - **high** · Years differ from Wikidata: Baekje starts in 347 on the map, 18 BCE on Wikidata
 - **medium** · Another realm's land under this name: Mahan becomes Baekje in 347 with the same outline; Wikidata doesn't link them
-- **low** · Wikidata item doesn't look like this realm: Baekje's article is "Baekje" but its item Q28428 has "Paekche"
 - **high** · Years differ from Wikidata: Kalabhra Dynasty starts in 353 on the map, 250 on Wikidata
-- **medium** · Predecessor or successor never near it: Yan (750 BCE to 204 BCE) is followed by Former Qin (353 to 393) on Wikidata
 - **medium** · Predecessor or successor never near it: Pandya Empire (1216 to 1325) is followed by Kalabhra Dynasty (353 to 601) on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Kadamba Empire's article is "Kadamba Empire" but its item Q1479952 has "Kadamba dynasty"
 - **medium** · Predecessor or successor never near it: Kushan Empire (43 to 237) is followed by Kidarites (358 to 450) on Wikidata
 - **medium** · Years differ from Wikidata: Kidarites starts in 358 on the map, 301 on Wikidata
 - **medium** · Predecessor or successor never near it: Western Kushans (238 to 259) is followed by Kidarites (358 to 450) on Wikidata
@@ -392,20 +297,15 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Missing from the map for some years: Kingdom of Armenia is not drawn 371 to 386 (16 years), then comes back
 - **high** · Years differ from Wikidata: Silla starts in 378 on the map, 57 BCE on Wikidata
 - **medium** · Predecessor or successor never near it: Unified Silla (682 to 935) is followed by Silla (378 to 681) on Wikidata
-- **high** · Predecessor or successor never near it: Qin is followed by Later Liang on Wikidata, but they never held the same land
-- **medium** · Predecessor or successor never near it: Qin (750 BCE to 219 BCE) is followed by Later Qin (387 to 416) on Wikidata
-- **medium** · Predecessor or successor never near it: Qin (750 BCE to 219 BCE) is followed by Later Yan (387 to 409) on Wikidata
-- **medium** · Predecessor or successor never near it: Qin (750 BCE to 219 BCE) is followed by Western Qin (387 to 438) on Wikidata
-- **medium** · Predecessor or successor never near it: Qin (750 BCE to 219 BCE) is followed by Western Yan (387 to 393) on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Byzantine Empire's article is "Byzantine Empire" but its item Q112039853 has "Foreign relations of the Byzantine Empire"
+- **medium** · Wikidata item shared with another realm: Q12544 (Byzantine Empire) is the item of Eastern Roman Empire (395 to 1453), Byzantine Empire (395 to 1453)
 - **medium** · Missing from the map for some years: Kingdom of Armenia is not drawn 396 to 401 (6 years), then comes back
 - **high** · Predecessor or successor never near it: Southern Qi is followed by Southern Liang on Wikidata, but they never held the same land
 - **high** · Years differ from Wikidata: Southern Liang starts in 397 on the map, 502 on Wikidata
+- **medium** · Wikidata item shared with another realm: Q1069868 (Liang dynasty) is the item of Liang Dynasty (510 to 560), Southern Liang (397 to 413)
 - **medium** · Years differ from Wikidata: Rouran Khaganate starts in 402 on the map, 330 on Wikidata
 - **medium** · Missing from the map for some years: Western Qin is not drawn 402 to 409 (8 years), then comes back
-- **medium** · Wikidata item shared with another realm: Q4186404 (Western Liang) is the item of Western Liang (407 to 409), Later Western Liang (561 to 586)
-- **low** · Wikidata item doesn't look like this realm: Western Liang's article is "Western Liang (Sixteen Kingdoms)" but its item Q4186404 has "Western Liang"
 - **high** · Years differ from Wikidata: Xia starts in 410 on the map, 1038 on Wikidata
+- **high** · Predecessor or successor never near it: Song is followed by Xia on Wikidata, but they never held the same land
 - **medium** · Wikidata item shared with another realm: Q7427 (Western Xia) is the item of Western Xia (990 to 1226), Xia (410 to 438)
 - **low** · Wikidata item doesn't look like this realm: Xia's article is "Xia" but its item Q7427 has "Western Xia"
 - **high** · Years differ from Wikidata: Southern Liang ends in 413 on the map, 587 on Wikidata
@@ -417,13 +317,10 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 
 - **medium** · Not a state (party, army, people): Early Dynastic Period of Egypt's item Q187979 is a historical period
 - **medium** · Years differ from Wikidata: Early Dynastic Period of Egypt starts in 3000 BCE on the map, 3100 BCE on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Early Dynastic Period of Egypt's article is "Early Dynastic Period (Egypt)" but its item Q187979 has "Early Dynastic Period of Egypt"
 - **high** · Years differ from Wikidata: Early Dynastic Period of Egypt ends in 2501 BCE on the map, 2686 BCE on Wikidata
 - **high** · Years differ from Wikidata: Old Kingdom of Egypt starts in 2500 BCE on the map, 2707 BCE on Wikidata
 - **medium** · Not a state (party, army, people): Lower Egypt's item Q463871 is a region
 - **medium** · Not a state (party, army, people): Upper Egypt's item Q203751 is a region
-- **low** · Wikidata item doesn't look like this realm: Lower Egypt's article is "Old Kingdom of Egypt" but its item Q463871 has "Lower Egypt"
-- **low** · Wikidata item doesn't look like this realm: Upper Egypt's article is "Old Kingdom of Egypt" but its item Q203751 has "Upper Egypt"
 - **medium** · Years differ from Wikidata: Middle Kingdom of Egypt starts in 2000 BCE on the map, 2040 BCE on Wikidata
 - **high** · Years differ from Wikidata: Middle Kingdom of Egypt ends in 1601 BCE on the map, 1782 BCE on Wikidata
 - **high** · Predecessor or successor never near it: Sixteenth Dynasty of Egypt is followed by Seventeenth Dynasty of Egypt on Wikidata, but they never held the same land
@@ -541,12 +438,8 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Years differ from Wikidata: Carantania ends in 749 on the map, 828 on Wikidata
 - **medium** · Missing from the map for some years: Duchy of Benevento is not drawn 750 to 774 (25 years), then comes back
 - **medium** · Missing from the map for some years: Duchy of Spoleto is not drawn 750 to 774 (25 years), then comes back
-- **low** · Wikidata item doesn't look like this realm: Emirate of Córdoba's article is "Emirate of Córdoba" but its item Q1337854 has "Umayyad state of Córdoba"
 - **high** · Years differ from Wikidata: Kingdom of Kent ends in 762 on the map, 871 on Wikidata
 - **high** · Years differ from Wikidata: Duchy of Gascony starts in 768 on the map, 602 on Wikidata
-- **high** · Years differ from Wikidata: Principality of Serbia starts in 768 on the map, 1084 on Wikidata
-- **medium** · Wikidata item shared with another realm: Q1311990 (Grand Principality of Serbia) is the item of Principality of Serbia (768 to 961), Grand Principality of Serbia (1094 to 1168), Serbia (1918)
-- **low** · Wikidata item doesn't look like this realm: Principality of Serbia's article is "Principality of Serbia" but its item Q1311990 has "Grand Principality of Serbia"
 - **medium** · Years differ from Wikidata: Kingdom of Sussex ends in 771 on the map, 825 on Wikidata
 - **medium** · Years differ from Wikidata: Magna Frisia ends in 771 on the map, 734 on Wikidata
 - **medium** · Missing from the map for some years: Duchy of Benevento is not drawn 788 to 792 (5 years), then comes back
@@ -564,7 +457,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Wikidata item shared with another realm: Q200262 (Kingdom of Navarre) is the item of Kingdom of Navarre (1139 to 1428), Kingdom of Pamplona (825 to 865)
 - **medium** · Another realm's land under this name: Kingdom of Sobrarbe becomes County of Aragon in 830 with the same outline; Wikidata doesn't link them
 - **medium** · Years differ from Wikidata: County of Aragon starts in 830 on the map, 802 on Wikidata
-- **medium** · Predecessor or successor never near it: Roman Empire (31 BCE to 394) is followed by Emirate of Crete (830 to 960) on Wikidata
 - **medium** · Missing from the map for some years: Kingdom of Mercia is not drawn 830 to 839 (10 years), then comes back
 - **high** · Years differ from Wikidata: Principality of Nitra ends in 839 on the map, 1100 on Wikidata
 - **high** · Years differ from Wikidata: Magyars starts in 840 on the map, 4001 BCE on Wikidata
@@ -579,14 +471,12 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Missing from the map for some years: Kingdom of Powys is not drawn 860 to 877 (18 years), then comes back
 - **high** · Years differ from Wikidata: Kingdom of Pamplona ends in 865 on the map, 1841 on Wikidata
 - **high** · Years differ from Wikidata: Giudicato of Cagliari starts in 866 on the map, 1000 on Wikidata
-- **high** · Wikidata item doesn't look like this realm: Old Kingdom of Norway links to Q202266 "Margaret I of Denmark" (Queen of Denmark, Norway, and Sweden)
 - **medium** · Another realm's land under this name: Kingdom of Pamplona becomes County of Ribagorza in 866 with the same outline; Wikidata doesn't link them
 - **medium** · Years differ from Wikidata: County of Ribagorza starts in 866 on the map, 900 on Wikidata
 - **medium** · Missing from the map for some years: Duchy of Spoleto is not drawn 866 to 874 (9 years), then comes back
 - **medium** · Years differ from Wikidata: Giudicato of Arborea starts in 866 on the map, 800 on Wikidata
 - **medium** · Years differ from Wikidata: Giudicato of Gallura starts in 866 on the map, 800 on Wikidata
 - **medium** · Years differ from Wikidata: Giudicato of Logudoro starts in 866 on the map, 800 on Wikidata
-- **medium** · Not a state (party, army, people): Old Kingdom of Norway's item Q202266 is a human
 - **medium** · Missing from the map for some years: Principality of Capua is not drawn 866 to 874 (9 years), then comes back
 - **medium** · Years differ from Wikidata: Kingdom of East Anglia ends in 869 on the map, 917 on Wikidata
 - **medium** · Years differ from Wikidata: County of Urgell starts in 870 on the map, 785 on Wikidata
@@ -625,6 +515,7 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Years differ from Wikidata: Upper Burgundy and Italy starts in 922 on the map, 888 on Wikidata
 - **low** · Centre jumps far away: Viking settlements's centre moves 2096 km in 922
 - **medium** · Missing from the map for some years: Principality of Serbia is not drawn 926 to 935 (10 years), then comes back
+- **high** · Wikidata item doesn't look like this realm: Caliphate of Córdoba's article "Caliphate of Córdoba" is item Q1337854, but it links to Q171740 "Caliphate of Córdoba"
 - **medium** · Years differ from Wikidata: Kingdom of Denmark starts in 936 on the map, 965 on Wikidata
 - **medium** · Missing from the map for some years: Kingdom of Gwent is not drawn 947 to 959 (13 years), then comes back
 - **medium** · Missing from the map for some years: Kingdom of Powys is not drawn 947 to 959 (13 years), then comes back
@@ -636,10 +527,8 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Missing from the map for some years: County of Urgell is not drawn 960 (1 year), then comes back
 - **high** · Years differ from Wikidata: Kingdom of Castile starts in 961 on the map, 1065 on Wikidata
 - **high** · Years differ from Wikidata: Kingdom of Germany ends in 961 on the map, 1806 on Wikidata
-- **high** · Years differ from Wikidata: Principality of Serbia ends in 961 on the map, 1217 on Wikidata
 - **medium** · Wikidata item shared with another realm: Q12548 (Holy Roman Empire) is the item of Holy Roman Empire (962 to 1621), Holy Roman Empire Minor States (1260 to 1806)
 - **medium** · Predecessor or successor never near it: East Franks (850 to 910) is followed by Holy Roman Empire (962 to 1621) on Wikidata
-- **medium** · Years differ from Wikidata: Kingdom of Poland starts in 962 on the map, 1025 on Wikidata
 - **medium** · Missing from the map for some years: County of Urgell is not drawn 970 to 999 (30 years), then comes back
 - **medium** · Years differ from Wikidata: Khazaria ends in 979 on the map, 1048 on Wikidata
 - **medium** · Years differ from Wikidata: Kingdom of Sweden starts in 980 on the map, 900 on Wikidata
@@ -650,22 +539,13 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **high** · Years differ from Wikidata: County of Osona starts in 990 on the map, 798 on Wikidata
 - **high** · Years differ from Wikidata: County of Toulouse starts in 990 on the map, 778 on Wikidata
 - **high** · Years differ from Wikidata: Duchy of Aquitaine starts in 990 on the map, 841 on Wikidata
-- **high** · Years differ from Wikidata: Kingdom of France starts in 990 on the map, 1815 on Wikidata
-- **medium** · Wikidata item shared with another realm: Q207162 (Bourbon Restoration in France) is the item of Bourbon Kingdom of France (1814 to 1830), Kingdom of France (990 to 1791)
 - **medium** · Years differ from Wikidata: County of Anjou starts in 990 on the map, 930 on Wikidata
-- **medium** · Predecessor or successor never near it: First French Empire (1805 to 1814) is followed by Kingdom of France (990 to 1791) on Wikidata
-- **medium** · Predecessor or successor never near it: First French colonial empire (1805 to 1814) is followed by Kingdom of France (990 to 1791) on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Kingdom of France's article is "Kingdom of France" but its item Q207162 has "Bourbon Restoration in France"
+- **medium** · Predecessor or successor never near it: Kingdom of Neustria (724 to 731) is followed by Kingdom of France (990 to 1791) on Wikidata
 
 ### Asia
 
 - **medium** · Years differ from Wikidata: Caucasian Albania ends in 509 on the map, 461 on Wikidata
 - **high** · Years differ from Wikidata: Ghassanids starts in 510 on the map, 220 on Wikidata
-- **high** · Years differ from Wikidata: Liang Dynasty starts in 510 on the map, 907 on Wikidata
-- **medium** · Another realm's land under this name: Southern Qi becomes Liang Dynasty in 510 with the same outline; Wikidata doesn't link them
-- **medium** · Wikidata item shared with another realm: Q783489 (Later Liang dynasty) is the item of Liang Dynasty (510 to 560), Later Liang Dynasty (911 to 925)
-- **medium** · Predecessor or successor never near it: Tang Dynasty (623 to 910) is followed by Liang Dynasty (510 to 560) on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Liang Dynasty's article is "Liang dynasty" but its item Q783489 has "Later Liang (Five Dynasties)"
 - **medium** · Years differ from Wikidata: Caucasian Iberia ends in 533 on the map, 580 on Wikidata
 - **medium** · Not a state (party, army, people): Asuka Japan's item Q210688 is a historical period
 - **high** · Years differ from Wikidata: Lazica ends in 545 on the map, 700 on Wikidata
@@ -674,11 +554,8 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Wikidata item shared with another realm: Q1057118 (Zhenla) is the item of Chenla (555 to 717), Water Chenla (718 to 805), Land Chenla (718 to 805)
 - **medium** · Years differ from Wikidata: Maukhari Dynasty starts in 555 on the map, 510 on Wikidata
 - **medium** · Not a state (party, army, people): Yenisei Kyrgyz's item Q83142 is a ethnic group
-- **low** · Wikidata item doesn't look like this realm: Maukhari Dynasty's article is "Maukhari dynasty" but its item Q12448145 has "Maukharis of Kannauj"
-- **high** · Years differ from Wikidata: Liang Dynasty ends in 560 on the map, 923 on Wikidata
+- **medium** · Years differ from Wikidata: Liang Dynasty ends in 560 on the map, 587 on Wikidata
 - **high** · Predecessor or successor never near it: Southern Liang is followed by Chen Dynasty on Wikidata, but they never held the same land
-- **medium** · Predecessor or successor never near it: Qi (750 BCE to 204 BCE) is followed by Northern Zhou (561 to 586) on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Later Western Liang's article is "Western Liang (555–587)" but its item Q4186404 has "Western Liang"
 - **high** · Years differ from Wikidata: Byeonhan ends in 566 on the map, 400 on Wikidata
 - **medium** · Years differ from Wikidata: Eastern Göktürks starts in 587 on the map, 552 on Wikidata
 - **medium** · Wikidata item shared with another realm: Q205466 (Göktürks) is the item of Western Göktürks (587 to 660), Eastern Göktürks (587 to 632)
@@ -689,28 +566,20 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Years differ from Wikidata: Himyarite Kingdom ends in 601 on the map, 525 on Wikidata
 - **high** · Years differ from Wikidata: Gauda Kingdom starts in 602 on the map, 400 on Wikidata
 - **medium** · Missing from the map for some years: Lakhmid Kingdom is not drawn 602 to 628 (27 years), then comes back
-- **low** · Wikidata item doesn't look like this realm: Gauda Kingdom's article is "Gauda Kingdom" but its item Q17076645 has "Kingdom of Gauda"
 - **medium** · Not a state (party, army, people): Harsha's Empire's item Q216895 is a human
 - **medium** · Missing from the map for some years: Ghassanids is not drawn 617 to 628 (12 years), then comes back
 - **medium** · Not a state (party, army, people): Gao Kaidao's item Q712564 is a human
-- **medium** · Another realm's land under this name: Eastern Roman Empire becomes Byzantine Empire in 633 with the same outline; Wikidata doesn't link them
 - **medium** · Years differ from Wikidata: Lakhmid Kingdom ends in 633 on the map, 602 on Wikidata
-- **medium** · Predecessor or successor never near it: Roman Empire (31 BCE to 394) is followed by Rashidun Caliphate (633 to 665) on Wikidata
 - **high** · Years differ from Wikidata: Kingdom of Lazica starts in 638 on the map, 101 BCE on Wikidata
 - **medium** · Years differ from Wikidata: Lavo Kingdom starts in 638 on the map, 700 on Wikidata
 - **medium** · Years differ from Wikidata: Funan ends in 640 on the map, 550 on Wikidata
 - **high** · Years differ from Wikidata: Kingdom of Armenia ends in 646 on the map, 428 on Wikidata
 - **high** · Predecessor or successor never near it: Türgesh is followed by Umayyad Caliphate on Wikidata, but they never held the same land
-- **medium** · Predecessor or successor never near it: Roman Empire (31 BCE to 394) is followed by Umayyad Caliphate (656 to 756) on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Khadga Dynasty's article is "Khadga Dynasty" but its item Q6398879 has "Khadga dynasty"
-- **high** · Wikidata item doesn't look like this realm: Turks links to Q2118293 "Oghuz Khagan" (legendary khan of the Turkic people, eponymous ancestor of Oghuz Turks)
-- **medium** · Wikidata item shared with another realm: Q2118293 (Oghuz Khagan) is the item of Turks (666 to 756), Oghuz Turks (750 to 1055)
 - **high** · Years differ from Wikidata: Silla ends in 681 on the map, 892 on Wikidata
 - **medium** · Years differ from Wikidata: Principality of Iberia starts in 682 on the map, 588 on Wikidata
 - **high** · Years differ from Wikidata: Cyprus Condominium starts in 692 on the map, 1960 on Wikidata
 - **medium** · Wikidata item shared with another realm: Q229 (Cyprus) is the item of Cyprus Condominium (692 to 959), Republic of Cyprus (1961 to 2024)
 - **low** · Centre jumps far away: Umayyad Caliphate's centre moves 1756 km in 692
-- **low** · Wikidata item doesn't look like this realm: Balhae's article is "Balhae" but its item Q28322 has "Parhae"
 - **medium** · Not a state (party, army, people): Nara Japan's item Q189178 is a historical period
 - **high** · Years differ from Wikidata: Land Chenla starts in 718 on the map, 550 on Wikidata
 - **high** · Years differ from Wikidata: Water Chenla starts in 718 on the map, 550 on Wikidata
@@ -719,22 +588,17 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Predecessor or successor never near it: Gupta Empire (324 to 554) is followed by Gurjara-Pratihara Dynasty (732 to 1039) on Wikidata
 - **medium** · Years differ from Wikidata: Gurjara-Pratihara Dynasty starts in 732 on the map, 800 on Wikidata
 - **medium** · Not a state (party, army, people): Kannauj-Varman Dynasty's item Q614890 is a human settlement
-- **low** · Wikidata item doesn't look like this realm: Gurjara-Pratihara Dynasty's article is "Gurjara-Pratihara dynasty" but its item Q5324 has "Pratihara dynasty"
 - **high** · Years differ from Wikidata: Principality of Iberia ends in 740 on the map, 888 on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Mataram Kingdom's article is "Mataram Kingdom" but its item Q402580 has "Mataram kingdom"
-- **medium** · Wikidata item shared with another realm: Q12536 (Abbasid Caliphate) is the item of Abbasid Caliphate (750 to 1259), Buyid Dynasty (936 to 1055), Abbasid Caliphate/Buyid Dynasty (947 to 969)
+- **medium** · Wikidata item shared with another realm: Q12536 (Abbasid Caliphate) is the item of Abbasid Caliphate (750 to 1259), Abbasid Caliphate/Buyid Dynasty (947 to 969)
 - **medium** · Predecessor or successor never near it: Gupta Empire (324 to 554) is followed by Pala Empire (750 to 1168) on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Kimek-Kipchak confederation's article is "Kimek-Kipchak confederation" but its item Q2477776 has "Kimak–Kipchak confederation"
 - **low** · Centre jumps far away: Umayyad Caliphate's centre moves 4451 km in 751
 - **medium** · Predecessor or successor never near it: Gupta Empire (324 to 554) is followed by Rashtrakuta Dynasty (755 to 989) on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Rashtrakuta Dynasty's article is "Rashtrakuta dynasty" but its item Q856691 has "Rashtrakuta Empire"
 - **high** · Years differ from Wikidata: Chalukya Dynasty ends in 756 on the map, 1200 on Wikidata
 - **medium** · Missing from the map for some years: Yenisei Kyrgyz is not drawn 763 to 792 (30 years), then comes back
 - **medium** · Years differ from Wikidata: Kingdom of Lazica ends in 777 on the map, 700 on Wikidata
 - **high** · Years differ from Wikidata: Qarlugs starts in 793 on the map, 1216 on Wikidata
 - **medium** · Not a state (party, army, people): Heian Japan's item Q193292 is a historical period
 - **medium** · Not a state (party, army, people): Qarlugs's item Q2330335 is a war
-- **low** · Wikidata item doesn't look like this realm: Qarlugs's article is "Mongol invasion of Central Asia" but its item Q2330335 has "Mongol campaigns in Central Asia"
 - **medium** · Years differ from Wikidata: Land Chenla ends in 805 on the map, 706 on Wikidata
 - **medium** · Years differ from Wikidata: Late Pallava Empire ends in 805 on the map, 897 on Wikidata
 - **medium** · Years differ from Wikidata: Water Chenla ends in 805 on the map, 706 on Wikidata
@@ -746,16 +610,10 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Wikidata item shared with another realm: Q494354 (Karakhanid Khanate) is the item of Kara-Khanids (850 to 1045), Eastern Kara-Khanids (1046 to 1138), Western Karakhanid Khanate (1046 to 1084)
 - **medium** · Not a state (party, army, people): Tibetans (850 to 1259) reads like a party, army or people
 - **medium** · Not a state (party, army, people): Tibetans's item Q187985 is a ethnic group
-- **low** · Wikidata item doesn't look like this realm: Tibetans's article is "Tibetan people" but its item Q187985 has "Tibetans"
 - **medium** · Years differ from Wikidata: Karkota Dynasty ends in 859 on the map, 885 on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Sind-Habbari Dynasty's article is "Habbari dynasty" but its item Q5636647 has "Habbari Emirate"
 - **medium** · Missing from the map for some years: Cyprus Condominium is not drawn 875 to 883 (9 years), then comes back
-- **medium** · Years differ from Wikidata: Samanid Empire starts in 886 on the map, 819 on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Samanid Empire's article is "Samanid Empire" but its item Q486181 has "Samanid dynasty"
 - **high** · Years differ from Wikidata: Kingdom of Khotan starts in 888 on the map, 56 on Wikidata
 - **medium** · Missing from the map for some years: Zaydi Alid dynasties is not drawn 892 to 895 (4 years), then comes back
-- **low** · Wikidata item doesn't look like this realm: Hubaekje's article is "Later Baekje" but its item Q698239 has "Later Paekche"
-- **high** · Predecessor or successor never near it: Buyid Dynasty is followed by Qarmatians on Wikidata, but they never held the same land
 - **high** · Predecessor or successor never near it: Abbasid Caliphate/Buyid Dynasty is followed by Qarmatians on Wikidata, but they never held the same land
 - **high** · Years differ from Wikidata: Saffarid Dynasty ends in 899 on the map, 1003 on Wikidata
 - **medium** · Years differ from Wikidata: Qarmatians starts in 899 on the map, 800 on Wikidata
@@ -763,21 +621,12 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **high** · Predecessor or successor never near it: Later Liang Dynasty is followed by Southern Chu on Wikidata, but they never held the same land
 - **high** · Predecessor or successor never near it: Later Liang Dynasty is followed by Southern Han on Wikidata, but they never held the same land
 - **high** · Predecessor or successor never near it: Later Liang Dynasty is followed by Wuyue on Wikidata, but they never held the same land
-- **medium** · Predecessor or successor never near it: Liang Dynasty (510 to 560) is followed by Former Shu (911 to 925) on Wikidata
-- **medium** · Predecessor or successor never near it: Liang Dynasty (510 to 560) is followed by Southern Chu (911 to 959) on Wikidata
-- **medium** · Predecessor or successor never near it: Liang Dynasty (510 to 560) is followed by Southern Han (911 to 979) on Wikidata
-- **medium** · Predecessor or successor never near it: Liang Dynasty (510 to 560) is followed by Wuyue (911 to 979) on Wikidata
 - **medium** · Missing from the map for some years: Zaydi Alid dynasties is not drawn 911 to 921 (11 years), then comes back
-- **low** · Wikidata item doesn't look like this realm: Taebong's article is "Taebong" but its item Q699871 has "T'aebong"
 - **high** · Years differ from Wikidata: Pandya Dynasty ends in 921 on the map, 1650 on Wikidata
 - **medium** · Wikidata item shared with another realm: Q12491027 (Bali Kingdom) is the item of Balinese Kingdom (1519 to 1686), Early Balinese Kingdoms (922 to 1343)
 - **medium** · Years differ from Wikidata: Former Jin starts in 922 on the map, 896 on Wikidata
 - **medium** · Missing from the map for some years: Later Jin is not drawn 922 to 935 (14 years), then comes back
-- **medium** · Predecessor or successor never near it: Liang Dynasty (510 to 560) is followed by Later Tang (926 to 935) on Wikidata
 - **medium** · Years differ from Wikidata: Unified Silla ends in 935 on the map, 892 on Wikidata
-- **high** · Wikidata item doesn't look like this realm: Buyid Dynasty links to Q12536 "Abbasid Caliphate" (third Islamic caliphate (750–1258))
-- **high** · Years differ from Wikidata: Buyid Dynasty starts in 936 on the map, 750 on Wikidata
-- **medium** · Predecessor or successor never near it: Umayyad Caliphate (656 to 756) is followed by Buyid Dynasty (936 to 1055) on Wikidata
 - **medium** · Years differ from Wikidata: Hamdanid Emirates starts in 936 on the map, 890 on Wikidata
 - **medium** · Another realm's land under this name: Zaydi Alid dynasties becomes Ziyarid dynasty in 936 with the same outline; Wikidata doesn't link them
 - **high** · Years differ from Wikidata: Abbasid Caliphate/Buyid Dynasty starts in 947 on the map, 750 on Wikidata
@@ -786,10 +635,10 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Another realm's land under this name: Later Jin becomes Later Han in 947 with the same outline; Wikidata doesn't link them
 - **high** · Years differ from Wikidata: Chandela Kingdom starts in 960 on the map, 831 on Wikidata
 - **high** · Years differ from Wikidata: Utpala Dynasty starts in 960 on the map, 855 on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Chandela Kingdom's article is "Chandelas of Jejakabhukti" but its item Q2039087 has "Chandela Empire"
+- **medium** · Wikidata item shared with another realm: Q7462 (Song dynasty) is the item of Northern Song (961 to 1138), Southern Song (1139 to 1278)
 - **high** · Years differ from Wikidata: Abbasid Caliphate/Buyid Dynasty ends in 969 on the map, 1258 on Wikidata
 - **high** · Years differ from Wikidata: Ziyarid dynasty ends in 979 on the map, 1090 on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Chauhan Dynasty's article is "Chauhan Dynasty" but its item Q1068371 has "Chauhan dynasty"
+- **high** · Predecessor or successor never near it: Song is followed by Western Xia on Wikidata, but they never held the same land
 - **medium** · Years differ from Wikidata: Western Xia starts in 990 on the map, 1038 on Wikidata
 
 ### Africa
@@ -801,13 +650,10 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **high** · Another realm's land under this name: Fihrids's outline is named Kharijites from 757; Kharijites was last drawn 680 km away (751 to 754)
 - **high** · Years differ from Wikidata: Ghana Empire starts in 793 on the map, 100 on Wikidata
 - **medium** · Not a state (party, army, people): Barghawata Conference's item Q7903 is a city
-- **low** · Wikidata item doesn't look like this realm: Aghlabid Dynasty's article is "Aghlabids" but its item Q207600 has "Aghlabid dynasty"
-- **high** · Predecessor or successor never near it: Buyid Dynasty is followed by Fatimid Caliphate on Wikidata, but they never held the same land
 - **high** · Predecessor or successor never near it: Abbasid Caliphate/Buyid Dynasty is followed by Fatimid Caliphate on Wikidata, but they never held the same land
 - **medium** · Missing from the map for some years: Idrisids is not drawn 922 to 925 (4 years), then comes back
 - **medium** · Missing from the map for some years: Idrisids is not drawn 936 to 946 (11 years), then comes back
 - **medium** · Years differ from Wikidata: Zagwe dynasty starts in 947 on the map, 900 on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Zagwe dynasty's article is "Zagwe kingdom" but its item Q140446 has "Zagwe dynasty"
 
 ### North America
 
@@ -834,7 +680,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Years differ from Wikidata: Scandinavian minor kingdoms ends in 1002 on the map, 1066 on Wikidata
 - **high** · Years differ from Wikidata: Duchy of Burgundy starts in 1003 on the map, 880 on Wikidata
 - **high** · Years differ from Wikidata: County of Nevers starts in 1010 on the map, 801 on Wikidata
-- **high** · Predecessor or successor never near it: First French colonial empire is followed by Republic of Genoa on Wikidata, but they never held the same land
 - **medium** · Missing from the map for some years: Principality of Capua is not drawn 1010 to 1014 (5 years), then comes back
 - **medium** · Predecessor or successor never near it: First French Empire (1805 to 1814) is followed by Republic of Genoa (1010 to 1795) on Wikidata
 - **high** · Predecessor or successor never near it: Almohad Caliphate is followed by Kingdom of Aragon on Wikidata, but they never held the same land
@@ -866,7 +711,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Missing from the map for some years: Kingdom of León is not drawn 1046 to 1065 (20 years), then comes back
 - **medium** · Predecessor or successor never near it: Kalmar Union (1402 to 1525) is followed by Norway-Denmark (1046 to 1055) on Wikidata
 - **medium** · Missing from the map for some years: Old Kingdom of Norway is not drawn 1046 to 1055 (10 years), then comes back
-- **low** · Wikidata item doesn't look like this realm: Norway-Denmark's article is "Denmark-Norway" but its item Q62651 has "Denmark–Norway"
 - **high** · Years differ from Wikidata: Kingdom of Gwent ends in 1055 on the map, 950 on Wikidata
 - **high** · Years differ from Wikidata: Norway-Denmark ends in 1055 on the map, 1814 on Wikidata
 - **medium** · Years differ from Wikidata: Kingdom of Morgannwg ends in 1055 on the map, 1093 on Wikidata
@@ -886,7 +730,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Years differ from Wikidata: Principality of Rostov-Suzdal starts in 1056 on the map, 1125 on Wikidata
 - **medium** · Years differ from Wikidata: Principality of Smolensk starts in 1056 on the map, 1010 on Wikidata
 - **medium** · Years differ from Wikidata: Principality of Volhynia starts in 1056 on the map, 987 on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Halych-Volhynia occupation's article is "Kingdom of Galicia-Volhynia" but its item Q239502 has "Kingdom of Galicia–Volhynia"
 - **high** · Years differ from Wikidata: Cuman-Kipchak Confederation ends in 1065 on the map, 1241 on Wikidata
 - **high** · Years differ from Wikidata: Duchy of Gascony ends in 1065 on the map, 1453 on Wikidata
 - **medium** · Years differ from Wikidata: Principality of Capua ends in 1065 on the map, 1156 on Wikidata
@@ -927,21 +770,17 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **high** · Years differ from Wikidata: Duchy of Łęczyca ends in 1146 on the map, 1793 on Wikidata
 - **high** · Years differ from Wikidata: Taifa of Córdoba starts in 1147 on the map, 1031 on Wikidata
 - **medium** · Missing from the map for some years: Duchy of Silesia is not drawn 1147 to 1168 (22 years), then comes back
-- **low** · Wikidata item doesn't look like this realm: Principality of Halych's article is "Principality of Halych" but its item Q3403551 has "Principality of Galicia"
 - **medium** · Years differ from Wikidata: Taifa of Saltés and Huelva ends in 1151 on the map, 1051 on Wikidata
 - **high** · Years differ from Wikidata: Kingdom of Aragon ends in 1168 on the map, 1707 on Wikidata
 - **high** · Years differ from Wikidata: Taifa of Algeciras ends in 1168 on the map, 1058 on Wikidata
 - **high** · Years differ from Wikidata: Taifa of Silves ends in 1168 on the map, 1063 on Wikidata
 - **medium** · Years differ from Wikidata: Grand Principality of Serbia ends in 1168 on the map, 1217 on Wikidata
 - **medium** · Years differ from Wikidata: Norman England ends in 1168 on the map, 1075 on Wikidata
-- **high** · Wikidata item doesn't look like this realm: Duchy of Wrocław links to Q568638 "Duchy of Silesia" (Medieval duchy in the historic region of Silesia (1138-1249/1335/1742))
 - **high** · Predecessor or successor never near it: Kingdom of Powys is followed by Kingdom of Powys Fadog on Wikidata, but they never held the same land
 - **medium** · Missing from the map for some years: County of Vermandois is not drawn 1169 to 1187 (19 years), then comes back
 - **medium** · Years differ from Wikidata: Crown of Aragon starts in 1169 on the map, 1137 on Wikidata
 - **medium** · Missing from the map for some years: Duchy of Sandomierz is not drawn 1169 to 1176 (8 years), then comes back
 - **medium** · Years differ from Wikidata: Duchy of Wrocław starts in 1169 on the map, 1138 on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Kingdom of Powys Fadog's article is "Powys Fadog" but its item Q2564694 has "Northern Powys (medieval)"
-- **low** · Wikidata item doesn't look like this realm: Kingdom of Powys Wenwynwyn's article is "Powys Wenwynwyn" but its item Q2670639 has "Southern Powys (medieval)"
 - **high** · Years differ from Wikidata: County of Rosellón ends in 1176 on the map, 1790 on Wikidata
 - **medium** · Years differ from Wikidata: Kingdom of the Isles ends in 1176 on the map, 1266 on Wikidata
 - **high** · Years differ from Wikidata: Kingdom of Mann starts in 1177 on the map, 900 on Wikidata
@@ -953,12 +792,12 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Years differ from Wikidata: Banate of Bosnia starts in 1188 on the map, 1136 on Wikidata
 - **medium** · Missing from the map for some years: Duchy of Brittany is not drawn 1188 to 1205 (18 years), then comes back
 - **medium** · Missing from the map for some years: Duchy of Masovia is not drawn 1188 to 1201 (14 years), then comes back
+- **medium** · Wikidata item shared with another realm: Q241748 (Kingdom of Serbia) is the item of Kingdom of Serbia (1188 to 1884), Serbia (1918)
 - **medium** · Missing from the map for some years: Principality of Halych is not drawn 1188 to 1191 (4 years), then comes back
 - **medium** · Wikidata item shared with another realm: Q671362 (Principality of Turov and Pinsk) is the item of Principality of Turov and Pinsk (1188 to 1240), Principality of Pinsk (1294 to 1325), Principality of Turov (1294 to 1325)
 - **high** · Years differ from Wikidata: Duchy of Wrocław ends in 1201 on the map, 1742 on Wikidata
 - **high** · Years differ from Wikidata: Principality of Volhynia ends in 1201 on the map, 1452 on Wikidata
 - **medium** · Predecessor or successor never near it: Duchy of Bohemia (896 to 1002) is followed by Kingdom of Bohemia (1202 to 1528) on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Principality of Galicia-Volhynia's article is "Kingdom of Galicia-Volhynia" but its item Q239502 has "Kingdom of Galicia–Volhynia"
 - **high** · Years differ from Wikidata: Jersey starts in 1204 on the map, 1651 on Wikidata
 - **high** · Years differ from Wikidata: County of Poitou starts in 1206 on the map, 778 on Wikidata
 - **high** · Years differ from Wikidata: County of Touraine starts in 1206 on the map, 1584 on Wikidata
@@ -1042,8 +881,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Another realm's land under this name: Kingdom of Alba becomes Kingdom of Scotland in 1294 with the same outline; Wikidata doesn't link them
 - **medium** · Years differ from Wikidata: Nizhny Novgorod starts in 1294 on the map, 1221 on Wikidata
 - **medium** · Years differ from Wikidata: Principality of Beloozero starts in 1294 on the map, 1238 on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Galicia-Volhynia's article is "Kingdom of Galicia-Volhynia" but its item Q239502 has "Kingdom of Galicia–Volhynia"
-- **low** · Wikidata item doesn't look like this realm: Grand Principality of Moscow's article is "Principality of Moscow" but its item Q170770 has "Grand Principality of Moscow"
 - **high** · Years differ from Wikidata: Duchy of Bytom ends in 1304 on the map, 1498 on Wikidata
 - **high** · Years differ from Wikidata: Duchy of Opole ends in 1304 on the map, 1532 on Wikidata
 - **high** · Years differ from Wikidata: Duchy of Racibórz ends in 1304 on the map, 1521 on Wikidata
@@ -1085,7 +922,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Missing from the map for some years: County of Périgord is not drawn 1363 to 1384 (22 years), then comes back
 - **medium** · Years differ from Wikidata: Despotate of Dobruja starts in 1363 on the map, 1322 on Wikidata
 - **medium** · Missing from the map for some years: Duchy of Aquitaine is not drawn 1363 to 1374 (12 years), then comes back
-- **medium** · Predecessor or successor never near it: Roman Empire (31 BCE to 394) is followed by House of Tocco (1363 to 1414) on Wikidata
 - **medium** · Not a state (party, army, people): House of Valois-Anjou's item Q1716871 is a noble family
 - **medium** · Years differ from Wikidata: Principality of Valona ends in 1374 on the map, 1417 on Wikidata
 - **medium** · Years differ from Wikidata: Serbian Despots starts in 1375 on the map, 1402 on Wikidata
@@ -1120,21 +956,18 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **high** · Years differ from Wikidata: Grand Duchy of Lithuania ends in 1449 on the map, 1795 on Wikidata
 - **high** · Years differ from Wikidata: Patriarchate of Aquileia ends in 1449 on the map, 1751 on Wikidata
 - **high** · Years differ from Wikidata: Polish-Lithuania Kingdom ends in 1449 on the map, 1572 on Wikidata
-- **medium** · Years differ from Wikidata: Kingdom of Poland ends in 1449 on the map, 1385 on Wikidata
 - **medium** · Missing from the map for some years: Duchy of Milan is not drawn 1450 to 1452 (3 years), then comes back
 - **medium** · Missing from the map for some years: Kingdom of Hungary is not drawn 1450 to 1458 (9 years), then comes back
 - **medium** · Missing from the map for some years: Kingdom of Naples is not drawn 1450 to 1458 (9 years), then comes back
 - **high** · Years differ from Wikidata: County of Béarn ends in 1452 on the map, 1790 on Wikidata
 - **high** · Years differ from Wikidata: Ryazan starts in 1453 on the map, 1097 on Wikidata
 - **medium** · Missing from the map for some years: Kingdom of Bohemia is not drawn 1453 to 1458 (6 years), then comes back
-- **low** · Wikidata item doesn't look like this realm: Ryazan's article is "Ryazan" but its item Q269109 has "Principality of Ryazan"
 - **medium** · Years differ from Wikidata: Serbian Empire ends in 1458 on the map, 1371 on Wikidata
 - **medium** · Missing from the map for some years: Duchy of Lorraine is not drawn 1475 to 1481 (7 years), then comes back
 - **high** · Years differ from Wikidata: County of Maine ends in 1481 on the map, 1790 on Wikidata
 - **high** · Years differ from Wikidata: House of Ascania ends in 1486 on the map, 1918 on Wikidata
 - **medium** · Years differ from Wikidata: Principality of Vladimir-Suzdal ends in 1486 on the map, 1389 on Wikidata
 - **low** · Another realm's land under this name: House of Ascania's outline is named Electorate of Saxony from 1487; Electorate of Saxony was drawn nearby before (1363 to 1428)
-- **low** · Wikidata item doesn't look like this realm: Habsburg Monarchy's article is "Habsburg monarchy" but its item Q66504140 has "Habsburg Austria"
 - **high** · Years differ from Wikidata: County of Touraine ends in 1491 on the map, 1790 on Wikidata
 - **medium** · Years differ from Wikidata: Duchy of Brittany ends in 1491 on the map, 1547 on Wikidata
 
@@ -1147,20 +980,15 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **high** · Years differ from Wikidata: Eastern Kara-Khanids starts in 1046 on the map, 840 on Wikidata
 - **high** · Years differ from Wikidata: Western Karakhanid Khanate starts in 1046 on the map, 840 on Wikidata
 - **medium** · Years differ from Wikidata: Kingdom of Janggala starts in 1046 on the map, 1100 on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Kediri Kingdom's article is "Kediri Kingdom" but its item Q756895 has "Kediri kingdom"
-- **high** · Years differ from Wikidata: Buyid Dynasty ends in 1055 on the map, 1258 on Wikidata
 - **medium** · Years differ from Wikidata: Sulayhid Dynasty ends in 1065 on the map, 1138 on Wikidata
 - **medium** · Missing from the map for some years: Ziyadid dynasty is not drawn 1066 to 1071 (6 years), then comes back
 - **medium** · Years differ from Wikidata: Kingdom of Polonnaruwa starts in 1072 on the map, 1017 on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Sena Dynasty's article is "Sena Dynasty" but its item Q2428714 has "Sena dynasty"
 - **high** · Years differ from Wikidata: Western Karakhanid Khanate ends in 1084 on the map, 1212 on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Zurayid dynasty's article is "Zurayids" but its item Q230385 has "Zurayid dynasty"
 - **medium** · Not a state (party, army, people): Northern Fujiwara's item Q1050942 is a noble family
 - **high** · Predecessor or successor never near it: Fatimid Caliphate is followed by County of Edessa on Wikidata, but they never held the same land
 - **high** · Predecessor or successor never near it: Fatimid Caliphate is followed by Principality of Antioch on Wikidata, but they never held the same land
 - **medium** · Years differ from Wikidata: Hoysala Kingdom starts in 1111 on the map, 1026 on Wikidata
 - **high** · Predecessor or successor never near it: Liao Dynasty is followed by Kara-Khitans on Wikidata, but they never held the same land
-- **low** · Wikidata item doesn't look like this realm: Great Jin's article is "Jin dynasty (1115-1234)" but its item Q5066 has "Jin dynasty (1115–1234)"
 - **high** · Years differ from Wikidata: Northern Song ends in 1138 on the map, 1279 on Wikidata
 - **high** · Years differ from Wikidata: Qocho Kingdom ends in 1138 on the map, 1335 on Wikidata
 - **medium** · Years differ from Wikidata: Eastern Kara-Khanids ends in 1138 on the map, 1212 on Wikidata
@@ -1172,72 +1000,57 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **high** · Years differ from Wikidata: Ghurid Dynasty starts in 1152 on the map, 1011 on Wikidata
 - **medium** · Another realm's land under this name: Najahid Dynasty becomes Nabhani Dynasty in 1169 with the same outline; Wikidata doesn't link them
 - **high** · Years differ from Wikidata: Nabhani Dynasty ends in 1176 on the map, 1624 on Wikidata
-- **high** · Wikidata item doesn't look like this realm: Yadava Dynasty links to Q5790 "Seuna Dynasty" (Indian dynasty (c. 1187–1317))
 - **medium** · Missing from the map for some years: Ghaznavid Empire is not drawn 1192 to 1201 (10 years), then comes back
 - **medium** · Years differ from Wikidata: Khwarezmid Dynasty ends in 1201 on the map, 1260 on Wikidata
 - **high** · Years differ from Wikidata: Kathmandu starts in 1202 on the map, 723 on Wikidata
 - **high** · Years differ from Wikidata: Khwarezmid Empire starts in 1202 on the map, 1077 on Wikidata
 - **medium** · Not a state (party, army, people): Kathmandu's item Q3037 is a city
 - **medium** · Missing from the map for some years: Chámpa is not drawn 1206 to 1219 (14 years), then comes back
-- **medium** · Predecessor or successor never near it: Roman Empire (31 BCE to 394) is followed by Empire of Trebizond (1206 to 1462) on Wikidata
-- **medium** · Predecessor or successor never near it: Roman Empire (31 BCE to 394) is followed by Latin Empire (1206 to 1278) on Wikidata
 - **medium** · Predecessor or successor never near it: Xia (410 to 438) is followed by Mongol Empire (1206 to 1293) on Wikidata
-- **medium** · Predecessor or successor never near it: Roman Empire (31 BCE to 394) is followed by Nicaean Empire (1206 to 1278) on Wikidata
 - **high** · Predecessor or successor never near it: Pandya Dynasty is followed by Delhi Sultanate on Wikidata, but they never held the same land
 - **low** · Centre jumps far away: Hamdanid Emirates's centre moves 2277 km in 1210
 - **high** · Years differ from Wikidata: Pandya Empire starts in 1216 on the map, 300 BCE on Wikidata
 - **medium** · Predecessor or successor never near it: Kalabhra Dynasty (353 to 601) is followed by Pandya Empire (1216 to 1325) on Wikidata
 - **low** · Centre jumps far away: Hamdanid Emirates's centre moves 2467 km in 1216
-- **low** · Wikidata item doesn't look like this realm: Pandya Empire's article is "Pandya Empire" but its item Q844910 has "Pandya dynasty"
 - **low** · Centre jumps far away: Hamdanid Emirates's centre moves 2364 km in 1220
 - **medium** · Another realm's land under this name: Kediri Kingdom becomes Singhasari in 1227 with the same outline; Wikidata doesn't link them
 - **medium** · Years differ from Wikidata: Paramara Dynasty ends in 1235 on the map, 1305 on Wikidata
+- **high** · Wikidata item doesn't look like this realm: Ceylon's article "Sri Lanka" is item Q854, but it links to Q918153 "British Ceylon"
 - **high** · Years differ from Wikidata: Ceylon starts in 1236 on the map, 1815 on Wikidata
 - **medium** · Wikidata item shared with another realm: Q918153 (British Ceylon) is the item of Ceylon (1236 to 1506), British Ceylon (1796 to 1814)
-- **low** · Wikidata item doesn't look like this realm: Ceylon's article is "Sri Lanka" but its item Q918153 has "British Ceylon"
 - **high** · Predecessor or successor never near it: Abbasid Caliphate/Buyid Dynasty is followed by Mamluk Sultanate on Wikidata, but they never held the same land
-- **medium** · Predecessor or successor never near it: Buyid Dynasty (936 to 1055) is followed by Mamluk Sultanate (1241 to 1518) on Wikidata
 - **medium** · Years differ from Wikidata: Ayyubid Sultanate ends in 1249 on the map, 1341 on Wikidata
 - **high** · Years differ from Wikidata: Hamdanid Emirates ends in 1259 on the map, 1004 on Wikidata
 - **medium** · Years differ from Wikidata: Lohara Dynasty ends in 1259 on the map, 1320 on Wikidata
 - **medium** · Another realm's land under this name: Hamdanid Emirates becomes Bahrani Dynasty in 1260 with the same outline; Wikidata doesn't link them
 - **medium** · Wikidata item shared with another realm: Q7313 (Yuan dynasty) is the item of Yuan Dynasty (1271 to 1368), Great Mongol State (1912 to 1925)
 - **medium** · Predecessor or successor never near it: Northern Song (961 to 1138) is followed by Yuan Dynasty (1271 to 1368) on Wikidata
-- **medium** · Predecessor or successor never near it: Song (750 BCE to 285 BCE) is followed by Yuan Dynasty (1271 to 1368) on Wikidata
 - **high** · Years differ from Wikidata: Tamna ends in 1278 on the map, 1404 on Wikidata
 - **high** · Another realm's land under this name: Nicaean Empire's outline is named Byzantine Empire from 1279; Byzantine Empire was last drawn 683 km away (1206 to 1226)
-- **low** · Wikidata item doesn't look like this realm: Kampili Kingdom's article is "Kampili Kingdom" but its item Q1446192 has "Kampili kingdom"
 - **medium** · Years differ from Wikidata: Kingdom of Dambadeniya ends in 1293 on the map, 1345 on Wikidata
 - **medium** · Years differ from Wikidata: Mongol Empire ends in 1293 on the map, 1368 on Wikidata
 - **medium** · Years differ from Wikidata: Srivijaya ends in 1293 on the map, 1377 on Wikidata
-- **high** · Wikidata item doesn't look like this realm: Lan Na Kingdom links to Q1059707 "Lanna" (Indianized state centered in present-day Northern Thailand from the 13th to 18th centuries)
 - **high** · Years differ from Wikidata: Malaya starts in 1294 on the map, 1948 on Wikidata
 - **medium** · Years differ from Wikidata: Chagatai Khanate starts in 1294 on the map, 1225 on Wikidata
 - **medium** · Years differ from Wikidata: Golden Horde starts in 1294 on the map, 1243 on Wikidata
 - **medium** · Years differ from Wikidata: Ilkhanate starts in 1294 on the map, 1256 on Wikidata
-- **medium** · Predecessor or successor never near it: Buyid Dynasty (936 to 1055) is followed by Ilkhanate (1294 to 1343) on Wikidata
 - **medium** · Predecessor or successor never near it: Abbasid Caliphate/Buyid Dynasty (947 to 969) is followed by Ilkhanate (1294 to 1343) on Wikidata
 - **medium** · Wikidata item shared with another realm: Q1059707 (Lanna) is the item of Lan Na Kingdom (1294 to 1563), Lan Na (1600 to 1761)
 - **medium** · Wikidata item shared with another realm: Q1479726 (Federation of Malaya) is the item of Malaya (1294 to 1351), Federation of Malaya (1958 to 1962)
 - **medium** · Years differ from Wikidata: Shan States starts in 1294 on the map, 1215 on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Hanthawaddy Kingdom's article is "Hanthawaddy Kingdom" but its item Q1572529 has "Hanthawaddy kingdom"
 - **low** · Wikidata item doesn't look like this realm: Malaya's article is "Malaya" but its item Q1479726 has "Federation of Malaya"
 - **medium** · Wikidata item shared with another realm: Q2096678 (Candar dynasty) is the item of Beylik of Isfendiyar (1305 to 1462), Beylik of Sinop (1305 to 1332)
 - **medium** · Years differ from Wikidata: Beylik of Karaman starts in 1305 on the map, 1250 on Wikidata
 - **medium** · Years differ from Wikidata: Beylik of Menteshe starts in 1305 on the map, 1261 on Wikidata
 - **medium** · Not a state (party, army, people): Kastamonu's item Q155915 is a city
-- **medium** · Predecessor or successor never near it: Roman Empire (31 BCE to 394) is followed by Ottoman Empire (1305 to 1923) on Wikidata
-- **medium** · Predecessor or successor never near it: Buyid Dynasty (936 to 1055) is followed by Ottoman Empire (1305 to 1923) on Wikidata
 - **medium** · Predecessor or successor never near it: Abbasid Caliphate/Buyid Dynasty (947 to 969) is followed by Ottoman Empire (1305 to 1923) on Wikidata
 - **medium** · Years differ from Wikidata: Shunten Dynasty ends in 1313 on the map, 1259 on Wikidata
 - **high** · Predecessor or successor never near it: Pandya Empire is followed by Jaffna kingdom on Wikidata, but they never held the same land
 - **high** · Predecessor or successor never near it: Pandya Dynasty is followed by Jaffna kingdom on Wikidata, but they never held the same land
 - **medium** · Years differ from Wikidata: Jaffna kingdom starts in 1314 on the map, 1215 on Wikidata
 - **medium** · Another realm's land under this name: Myinsaing Kingdom becomes Kingdom of Pinya in 1314 with the same outline; Wikidata doesn't link them
-- **low** · Wikidata item doesn't look like this realm: Kingdom of Pinya's article is "Pinya Kingdom" but its item Q3446213 has "Pinya kingdom"
 - **high** · Years differ from Wikidata: Pandya Empire ends in 1325 on the map, 1650 on Wikidata
 - **medium** · Predecessor or successor never near it: Sayyid Dynasty (1415 to 1452) is followed by Tughlaq Dynasty (1326 to 1414) on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Sagaing Kingdom's article is "Sagaing Kingdom" but its item Q3446223 has "Sagaing kingdom"
 - **high** · Years differ from Wikidata: Beylik of Sinop ends in 1332 on the map, 1461 on Wikidata
 - **high** · Years differ from Wikidata: Early Balinese Kingdoms ends in 1343 on the map, 1908 on Wikidata
 - **medium** · Years differ from Wikidata: Beylik of Hamid ends in 1343 on the map, 1391 on Wikidata
@@ -1247,7 +1060,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **high** · Years differ from Wikidata: Malaya ends in 1351 on the map, 1963 on Wikidata
 - **medium** · Years differ from Wikidata: Eastern Ganga Kingdom ends in 1351 on the map, 1434 on Wikidata
 - **medium** · Missing from the map for some years: Samudera Pasai Sultanate is not drawn 1352 to 1362 (11 years), then comes back
-- **low** · Wikidata item doesn't look like this realm: Bahmani Sultanate's article is "Bahmani Sultanate" but its item Q374521 has "Bahmani Kingdom"
 - **high** · Years differ from Wikidata: White Horde starts in 1363 on the map, 1227 on Wikidata
 - **medium** · Missing from the map for some years: Golden Horde is not drawn 1363 to 1384 (22 years), then comes back
 - **high** · Years differ from Wikidata: Tondo starts in 1375 on the map, 900 on Wikidata
@@ -1258,9 +1070,7 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **high** · Predecessor or successor never near it: Sultanate of Rum is followed by Ramadanid Emirate on Wikidata, but they never held the same land
 - **medium** · Years differ from Wikidata: Ramadanid Emirate starts in 1385 on the map, 1352 on Wikidata
 - **medium** · Missing from the map for some years: Shirvan is not drawn 1385 to 1414 (30 years), then comes back
-- **high** · Wikidata item doesn't look like this realm: Joseon links to Q28405 "Gojoseon" (ancient state, based in northern Korean peninsula and Manchuria)
-- **high** · Years differ from Wikidata: Joseon starts in 1395 on the map, 2333 BCE on Wikidata
-- **medium** · Another realm's land under this name: Goryeo becomes Joseon in 1395 with the same outline; Wikidata doesn't link them
+- **medium** · Predecessor or successor never near it: Tamna (263 to 1278) is followed by Joseon (1395 to 1897) on Wikidata
 - **medium** · Years differ from Wikidata: Jalayirid Sultanate ends in 1401 on the map, 1432 on Wikidata
 - **medium** · Years differ from Wikidata: Nanzan ends in 1401 on the map, 1429 on Wikidata
 - **medium** · Missing from the map for some years: Byzantine Empire is not drawn 1402 to 1406 (5 years), then comes back
@@ -1292,11 +1102,9 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Not a state (party, army, people): Warring States Japan's item Q204023 is a historical period
 - **high** · Years differ from Wikidata: Four Oirats ends in 1474 on the map, 1628 on Wikidata
 - **medium** · Years differ from Wikidata: Sultanate of Cirebon starts in 1482 on the map, 1447 on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Prome Kingdom's article is "Prome Kingdom" but its item Q13576027 has "Prome kingdom"
 - **medium** · Years differ from Wikidata: Bahmani Sultanate ends in 1491 on the map, 1527 on Wikidata
 - **high** · Years differ from Wikidata: Eastern Chagatai Khanate starts in 1492 on the map, 1347 on Wikidata
 - **medium** · Years differ from Wikidata: Bidar Sultanate starts in 1492 on the map, 1527 on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Bijapur Sultanate's article is "Adil Shahi dynasty" but its item Q83821 has "Bijapur Sultanate"
 - **medium** · Years differ from Wikidata: Rajahnate of Cebu starts in 1497 on the map, 1450 on Wikidata
 
 ### Africa
@@ -1304,7 +1112,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Years differ from Wikidata: Zirid dynasty starts in 1056 on the map, 972 on Wikidata
 - **medium** · Wikidata item shared with another realm: Q1139762 (Kanem-Bornu Empire) is the item of Bornu Empire (1385 to 1894), Empire of Kanem (1072 to 1384)
 - **medium** · Years differ from Wikidata: Empire of Kanem starts in 1072 on the map, 1100 on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Empire of Kanem's article is "Kanem-Bornu Empire" but its item Q1139762 has "Kanem–Bornu Empire"
 - **low** · Centre jumps far away: Almoravid Dynasty's centre moves 1529 km in 1139
 - **medium** · Missing from the map for some years: Zengid dynasty is not drawn 1192 to 1201 (10 years), then comes back
 - **medium** · Another realm's land under this name: Ghana Empire becomes Sosso Empire in 1202 with the same outline; Wikidata doesn't link them
@@ -1312,14 +1119,12 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Years differ from Wikidata: Sosso Empire ends in 1235 on the map, 1300 on Wikidata
 - **medium** · Years differ from Wikidata: Takrur ends in 1235 on the map, 1285 on Wikidata
 - **medium** · Years differ from Wikidata: Marinid Sultanate starts in 1250 on the map, 1215 on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Marinid Sultanate's article is "Marinid Sultanate" but its item Q582861 has "Marinid dynasty"
 - **medium** · Missing from the map for some years: Makuria is not drawn 1279 to 1293 (15 years), then comes back
 - **medium** · Years differ from Wikidata: Almohad Caliphate ends in 1343 on the map, 1269 on Wikidata
 - **medium** · Missing from the map for some years: Zayyanid dynasty is not drawn 1344 to 1362 (19 years), then comes back
 - **medium** · Missing from the map for some years: Hafsid Dynasty is not drawn 1352 to 1362 (11 years), then comes back
 - **high** · Years differ from Wikidata: Empire of Kanem ends in 1384 on the map, 1900 on Wikidata
 - **high** · Years differ from Wikidata: Bornu Empire starts in 1385 on the map, 1100 on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Bornu Empire's article is "Kanem-Bornu Empire" but its item Q1139762 has "Kanem–Bornu Empire"
 - **high** · Years differ from Wikidata: Makuria ends in 1414 on the map, 1518 on Wikidata
 - **high** · Years differ from Wikidata: Makuria Kingdom starts in 1415 on the map, 500 on Wikidata
 - **medium** · Wikidata item shared with another realm: Q2365048 (Adal Sultanate) is the item of Adal Sultanate (1415 to 1546), Sultanate of Harar (1547 to 1578)
@@ -1330,13 +1135,11 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 
 - **high** · Years differ from Wikidata: Norse Greenland starts in 1072 on the map, 900 on Wikidata
 - **medium** · Not a state (party, army, people): Norse Greenland's item Q582948 is a historical period
-- **low** · Wikidata item doesn't look like this realm: Norse Greenland's article is "Norse colonization of North America" but its item Q582948 has "Norse settlement of North America"
 - **medium** · Not a state (party, army, people): Puebloans - Aztec Regional System's item Q478805 is a archaeological culture
 - **high** · Years differ from Wikidata: Michoacán starts in 1305 on the map, 1823 on Wikidata
 - **medium** · Years differ from Wikidata: Tenochtitlan ends in 1428 on the map, 1521 on Wikidata
 - **high** · Years differ from Wikidata: Aztec Triple Alliance starts in 1429 on the map, 1325 on Wikidata
 - **medium** · Not a state (party, army, people): Haudenosaunee's item Q68518 is a nation
-- **low** · Wikidata item doesn't look like this realm: Haudenosaunee's article is "Iroquois" but its item Q68518 has "Haudenosaunee"
 
 ### South America
 
@@ -1363,7 +1166,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **high** · Years differ from Wikidata: County of Nevers ends in 1520 on the map, 1789 on Wikidata
 - **medium** · Missing from the map for some years: Kingdom of Sweden is not drawn 1521 to 1525 (5 years), then comes back
 - **medium** · Another realm's land under this name: Teutonic Order becomes Duchy of Prussia in 1526 with the same outline; Wikidata doesn't link them
-- **low** · Wikidata item doesn't look like this realm: Denmark-Norway's article is "Denmark-Norway" but its item Q62651 has "Denmark–Norway"
 - **high** · Years differ from Wikidata: Kingdom of Bohemia ends in 1528 on the map, 1918 on Wikidata
 - **high** · Years differ from Wikidata: County of Savoy ends in 1539 on the map, 1416 on Wikidata
 - **high** · Years differ from Wikidata: Duchy of Milan ends in 1539 on the map, 1797 on Wikidata
@@ -1377,14 +1179,11 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **high** · Years differ from Wikidata: Principality of Orange ends in 1571 on the map, 1713 on Wikidata
 - **high** · Years differ from Wikidata: Principality of Transylvania starts in 1572 on the map, 1111 on Wikidata
 - **medium** · Another realm's land under this name: House of Jagiellon becomes Polish-Lithuanian Commonwealth in 1572 with the same outline; Wikidata doesn't link them
-- **low** · Wikidata item doesn't look like this realm: Polish-Lithuanian Commonwealth's article is "Polish-Lithuanian Commonwealth" but its item Q172107 has "Polish–Lithuanian Commonwealth"
-- **low** · Wikidata item doesn't look like this realm: Principality of Transylvania's article is "Principality of Transylvania (1570-1711)" but its item Q655621 has "Principality of Transylvania (1570–1711)"
 - **medium** · Missing from the map for some years: Principality of Transylvania is not drawn 1600 to 1601 (2 years), then comes back
 - **medium** · Missing from the map for some years: Principality of Wallachia is not drawn 1600 to 1601 (2 years), then comes back
 - **low** · Shape shrinks or grows for a year or two: Principality of Moldavia is 315% of its size in 1600 to 1601, then back
 - **high** · Years differ from Wikidata: Electorate of Brandenburg ends in 1618 on the map, 1806 on Wikidata
 - **high** · Years differ from Wikidata: Electorate of Trier ends in 1618 on the map, 1801 on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Brandenburg-Prussia's article is "Brandenburg-Prussia" but its item Q157367 has "Brandenburg–Prussia"
 - **high** · Years differ from Wikidata: Holy Roman Empire ends in 1621 on the map, 1806 on Wikidata
 - **high** · Years differ from Wikidata: Republic of San Marino starts in 1631 on the map, 301 on Wikidata
 - **medium** · Missing from the map for some years: Electorate of Saxony is not drawn 1632 to 1635 (4 years), then comes back
@@ -1405,7 +1204,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Missing from the map for some years: Duchy of Lorraine is not drawn 1702 to 1712 (11 years), then comes back
 - **medium** · Predecessor or successor never near it: Holy Roman Empire (962 to 1621) is followed by Kingdom of Prussia (1702 to 1863) on Wikidata
 - **medium** · Predecessor or successor never near it: Duchy of Prussia (1526 to 1618) is followed by Kingdom of Prussia (1702 to 1863) on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Pro-Swedish Poland's article is "Swedish invasion of Poland (1701-1706)" but its item Q10543737 has "Swedish invasion of Poland (1701–1706)"
 - **high** · Years differ from Wikidata: Duchy of Courland starts in 1713 on the map, 1561 on Wikidata
 - **high** · Another realm's land under this name: Pro-Swedish Poland's outline is named Polish-Lithuanian Commonwealth from 1713; Polish-Lithuanian Commonwealth was last drawn 881 km away (1709 to 1712)
 - **low** · Centre jumps far away: Brandenburg-Prussia's centre moves 5555 km in 1718
@@ -1413,7 +1211,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **high** · Predecessor or successor never near it: German Confederation is followed by Principality of Liechtenstein on Wikidata, but they never held the same land
 - **high** · Years differ from Wikidata: Principality of Svaneti starts in 1721 on the map, 1463 on Wikidata
 - **medium** · Years differ from Wikidata: Principality of Liechtenstein starts in 1721 on the map, 1806 on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Kingdom of Sardinia's article is "Kingdom of Sardinia (1720-1861)" but its item Q2577303 has "Kingdom of Sardinia (1720–1861)"
 - **medium** · Missing from the map for some years: Duchy of Lorraine is not drawn 1734 to 1747 (14 years), then comes back
 - **high** · Years differ from Wikidata: Republic of Florence ends in 1737 on the map, 1569 on Wikidata
 - **high** · Years differ from Wikidata: Small Horde ends in 1737 on the map, 1634 on Wikidata
@@ -1424,7 +1221,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **high** · Years differ from Wikidata: Astrakhan Khanate ends in 1768 on the map, 1556 on Wikidata
 - **medium** · Missing from the map for some years: Duchy of Bavaria is not drawn 1778 to 1779 (2 years), then comes back
 - **high** · Years differ from Wikidata: French Colony of Guiana starts in 1791 on the map, 1946 on Wikidata
-- **medium** · Years differ from Wikidata: Kingdom of France ends in 1791 on the map, 1830 on Wikidata
 - **low** · Shape shrinks or grows for a year or two: Principality of Moldavia is 12% of its size in 1791, then back
 - **low** · Shape shrinks or grows for a year or two: Principality of Wallachia is 23% of its size in 1791, then back
 - **medium** · Another realm's land under this name: Kingdom of France becomes French First Republic in 1792 with the same outline; Wikidata doesn't link them
@@ -1438,7 +1234,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Missing from the map for some years: Grand Duchy of Tuscany is not drawn 1799 (1 year), then comes back
 - **medium** · Missing from the map for some years: Papal States is not drawn 1799 (1 year), then comes back
 - **medium** · Missing from the map for some years: Swiss Confederation is not drawn 1799 to 1814 (16 years), then comes back
-- **low** · Wikidata item doesn't look like this realm: Revolutionary Roman Republic's article is "Roman Republic (1798-1799)" but its item Q175881 has "Roman Republic (1798–1799)"
 
 ### Asia
 
@@ -1457,7 +1252,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **low** · Centre jumps far away: Ottoman Empire's centre moves 1561 km in 1519
 - **high** · Years differ from Wikidata: Ryukyu Kingdom ends in 1520 on the map, 1879 on Wikidata
 - **medium** · Years differ from Wikidata: Ava Kingdom ends in 1528 on the map, 1555 on Wikidata
-- **high** · Wikidata item doesn't look like this realm: Đại Việt links to Q1317991 "Mạc dynasty" (Vietnamese northern dynasty ruled from 1527 to 1677)
 - **medium** · Missing from the map for some years: Lê Dynasty is not drawn 1529 to 1533 (5 years), then comes back
 - **medium** · Predecessor or successor never near it: Pandya Empire (1216 to 1325) is followed by Nayaks of Madurai (1529 to 1737) on Wikidata
 - **medium** · Predecessor or successor never near it: Pandya Dynasty (592 to 921) is followed by Nayaks of Madurai (1529 to 1737) on Wikidata
@@ -1480,16 +1274,13 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **low** · Centre jumps far away: Portuguese Colonies's centre moves 1549 km in 1582
 - **medium** · Years differ from Wikidata: Gorkha Kingdom starts in 1588 on the map, 1559 on Wikidata
 - **medium** · Another realm's land under this name: Kingdom of Pajana becomes Mataram Sultanate in 1588 with the same outline; Wikidata doesn't link them
-- **low** · Wikidata item doesn't look like this realm: Gorkha Kingdom's article is "Gorkha Kingdom" but its item Q3332217 has "Gorkha kingdom"
 - **medium** · Years differ from Wikidata: Jaffna kingdom ends in 1594 on the map, 1624 on Wikidata
 - **medium** · Years differ from Wikidata: Sur Empire ends in 1594 on the map, 1556 on Wikidata
 - **medium** · Years differ from Wikidata: Maynila ends in 1599 on the map, 1571 on Wikidata
-- **high** · Wikidata item doesn't look like this realm: Lan Na links to Q1059707 "Lanna" (Indianized state centered in present-day Northern Thailand from the 13th to 18th centuries)
 - **high** · Years differ from Wikidata: Lan Na starts in 1600 on the map, 1292 on Wikidata
 - **medium** · Missing from the map for some years: Sultanate of Maguindanao is not drawn 1609 to 1611 (3 years), then comes back
 - **high** · Years differ from Wikidata: Oirat Confederation starts in 1619 on the map, 1399 on Wikidata
 - **high** · Years differ from Wikidata: Sultanate of Mempawah starts in 1619 on the map, 1740 on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Later Jin Dynasty's article is "Later Jin (1616-1636)" but its item Q1062546 has "Later Jin (1616–1636)"
 - **medium** · Not a state (party, army, people): Li Zicheng's item Q333567 is a human
 - **medium** · Years differ from Wikidata: Western Moghulistan ends in 1635 on the map, 1570 on Wikidata
 - **high** · Years differ from Wikidata: Kingdom of Bhutan starts in 1636 on the map, 1949 on Wikidata
@@ -1511,7 +1302,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Missing from the map for some years: Mataram Sultanate is not drawn 1677 to 1682 (6 years), then comes back
 - **low** · Centre jumps far away: Dutch Republic's centre moves 12516 km in 1677
 - **low** · Centre jumps far away: Sultanate of Malacca's centre moves 1696 km in 1677
-- **low** · Wikidata item doesn't look like this realm: Thanjavur Maratha Kingdom's article is "Thanjavur Maratha Kingdom" but its item Q3530610 has "Thanjavur Maratha kingdom"
 - **low** · Centre jumps far away: Dutch Republic's centre moves 11473 km in 1683
 - **low** · Centre jumps far away: Sultanate of Malacca's centre moves 1696 km in 1683
 - **high** · Years differ from Wikidata: Balinese Kingdom ends in 1686 on the map, 1908 on Wikidata
@@ -1541,7 +1331,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Missing from the map for some years: Kingdom of Georgia is not drawn 1738 to 1743 (6 years), then comes back
 - **medium** · Missing from the map for some years: Kingdom of Kakheti is not drawn 1738 to 1743 (6 years), then comes back
 - **low** · Centre jumps far away: Yarubid dynasty's centre moves 3864 km in 1741
-- **high** · Wikidata item doesn't look like this realm: Emirate of Diriyah links to Q146871 "First Saudi State" (1727–1818 included most of Arabian Peninsula)
 - **high** · Years differ from Wikidata: Sultanate of Oman starts in 1744 on the map, 1970 on Wikidata
 - **high** · Years differ from Wikidata: Kingdom of Bulungan ends in 1747 on the map, 1964 on Wikidata
 - **high** · Years differ from Wikidata: First Toungoo Empire ends in 1756 on the map, 1599 on Wikidata
@@ -1552,13 +1341,11 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Wikidata item shared with another realm: Q398 (Bahrain) is the item of Bahrain (1757 to 1845), Kingdom of Bahrain (1973 to 2024)
 - **medium** · Wikidata item shared with another realm: Q817 (Kuwait) is the item of Kuwait (1757 to 2024), State of Kuwait (1961 to 1989)
 - **high** · Years differ from Wikidata: Nawabs of Bengal ends in 1761 on the map, 1880 on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Sikh Confederacy's article is "Misl" but its item Q2578028 has "Sikh Confederacy"
 - **medium** · Missing from the map for some years: Sikh Confederacy is not drawn 1763 to 1768 (6 years), then comes back
 - **high** · Years differ from Wikidata: Chiangmai starts in 1775 on the map, 1201 on Wikidata
 - **high** · Years differ from Wikidata: Nepal starts in 1775 on the map, 2008 on Wikidata
 - **medium** · Years differ from Wikidata: Nguyễn lords ends in 1775 on the map, 1802 on Wikidata
 - **medium** · Predecessor or successor never near it: Patani Kingdom (1572 to 1690) is followed by Rattanakosin Kingdom (1783 to 1931) on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Nguyễn dynasty's article is "Nguyen dynasty" but its item Q6500483 has "Nguyễn dynasty"
 - **medium** · Missing from the map for some years: French India is not drawn 1793 to 1815 (23 years), then comes back
 - **medium** · Another realm's land under this name: Dutch Ceylon becomes British Ceylon in 1796 with the same outline; Wikidata doesn't link them
 - **high** · Years differ from Wikidata: Kingdom of Mysore ends in 1799 on the map, 1950 on Wikidata
@@ -1573,27 +1360,21 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **low** · Centre jumps far away: Portuguese Africa's centre moves 3724 km in 1547
 - **high** · Years differ from Wikidata: Oyo Empire starts in 1609 on the map, 1400 on Wikidata
 - **medium** · Years differ from Wikidata: Mali Empire ends in 1611 on the map, 1670 on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Wadai Empire's article is "Wadai Empire" but its item Q1132786 has "Wadai Sultanate"
 - **medium** · Wikidata item shared with another realm: Q4807130 (Dutch Cape Colony) is the item of Dutch Cape Colony (1653 to 1795), Napoleonic Batavia Republic (1803 to 1805)
 - **medium** · Years differ from Wikidata: Dutch Gold Coast starts in 1653 on the map, 1598 on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Dutch Cape Colony's article is "Dutch Cape Coast" but its item Q4807130 has "Dutch Cape Colony"
 - **high** · Years differ from Wikidata: Saint Helena, Ascension and Tristan da Cunha starts in 1659 on the map, 1833 on Wikidata
 - **high** · Years differ from Wikidata: Kingdom of Kongo ends in 1669 on the map, 1888 on Wikidata
 - **high** · Years differ from Wikidata: Morocco starts in 1670 on the map, 789 on Wikidata
 - **medium** · Years differ from Wikidata: Ashanti Empire starts in 1702 on the map, 1670 on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Ashanti Empire's article is "Ashanti Empire" but its item Q722071 has "Asante Empire"
 - **high** · Years differ from Wikidata: Regency of Algiers starts in 1706 on the map, 1516 on Wikidata
 - **medium** · Years differ from Wikidata: Kingdom of Lunda starts in 1709 on the map, 1665 on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Kingdom of Lunda's article is "Kingdom of Lunda" but its item Q1796223 has "Lunda Empire"
 - **medium** · Not a state (party, army, people): Karamanli Dynasty's item Q1929987 is a family
-- **low** · Wikidata item doesn't look like this realm: Bamana Empire's article is "Bamana Empire" but its item Q762084 has "Ségou Empire"
 - **medium** · Years differ from Wikidata: Saadi Sultanate ends in 1740 on the map, 1659 on Wikidata
 - **medium** · Missing from the map for some years: Bamana Empire is not drawn 1757 to 1765 (9 years), then comes back
 - **low** · Another realm's land under this name: Nawabs of Bengal's outline is named British Empire from 1762; British Empire was drawn nearby before (1757 to 1761)
 - **high** · Years differ from Wikidata: Luba Empire starts in 1780 on the map, 1585 on Wikidata
 - **medium** · Not a state (party, army, people): Freetown Colony's item Q3780 is a city
 - **high** · Years differ from Wikidata: Merina Kingdom starts in 1792 on the map, 1540 on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Merina Kingdom's article is "Merina Kingdom" but its item Q1071439 has "Imerina"
 - **medium** · Another realm's land under this name: Dutch Cape Colony becomes British Cape Colony in 1796 with the same outline; Wikidata doesn't link them
 
 ### North America
@@ -1620,8 +1401,8 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **low** · Centre jumps far away: New France's centre moves 2166 km in 1763
 - **medium** · Years differ from Wikidata: New France ends in 1791 on the map, 1763 on Wikidata
 - **low** · Centre jumps far away: New France's centre moves 3458 km in 1791
+- **high** · Wikidata item doesn't look like this realm: Haiti's article "Haiti" is item Q790, but it links to Q2006756 "First Empire of Haiti"
 - **medium** · Wikidata item shared with another realm: Q2006756 (First Empire of Haiti) is the item of Empire of Haiti (1805 to 1915), Haiti (1792 to 1802)
-- **low** · Wikidata item doesn't look like this realm: Haiti's article is "Haiti" but its item Q2006756 has "First Empire of Haiti"
 - **high** · Years differ from Wikidata: Turks and Caicos Islands starts in 1799 on the map, 1973 on Wikidata
 
 ### South America
@@ -1667,7 +1448,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **high** · Years differ from Wikidata: Italian Republic starts in 1803 on the map, 476 on Wikidata
 - **medium** · Predecessor or successor never near it: Holy Roman Empire (962 to 1621) is followed by Electorate of Hesse (1803 to 1867) on Wikidata
 - **medium** · Wikidata item shared with another realm: Q38 (Italy) is the item of Republic of Italy (1946 to 2024), Italian Republic (1803 to 1813)
-- **medium** · Wikidata item shared with another realm: Q71084 (First French Empire) is the item of First French Empire (1805 to 1814), First French colonial empire (1805 to 1814)
 - **medium** · Missing from the map for some years: Kingdom of Hanover is not drawn 1805 to 1813 (9 years), then comes back
 - **medium** · Missing from the map for some years: Ligurian Republic is not drawn 1805 to 1813 (9 years), then comes back
 - **medium** · Not a state (party, army, people): Serbs (1805 to 1915) reads like a party, army or people
@@ -1680,7 +1460,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **high** · Years differ from Wikidata: Principality of Hohenzollern-Sigmaringen starts in 1806 on the map, 1576 on Wikidata
 - **high** · Years differ from Wikidata: Principality of Waldeck and Pyrmont starts in 1806 on the map, 1180 on Wikidata
 - **high** · Years differ from Wikidata: Saxe-Altenburg starts in 1806 on the map, 1603 on Wikidata
-- **medium** · Another realm's land under this name: Habsburg Monarchy becomes Austrian Empire in 1806 with the same outline; Wikidata doesn't link them
 - **medium** · Predecessor or successor never near it: Holy Roman Empire (962 to 1621) is followed by Austrian Empire (1806 to 1867) on Wikidata
 - **medium** · Predecessor or successor never near it: Kingdom of Bohemia (1202 to 1528) is followed by Austrian Empire (1806 to 1867) on Wikidata
 - **medium** · Years differ from Wikidata: Duchy of Anhalt starts in 1806 on the map, 1863 on Wikidata
@@ -1692,20 +1471,18 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Predecessor or successor never near it: Holy Roman Empire (962 to 1621) is followed by Kingdom of Saxony (1806 to 1870) on Wikidata
 - **medium** · Predecessor or successor never near it: Holy Roman Empire (962 to 1621) is followed by Kingdom of Württemberg (1806 to 1870) on Wikidata
 - **medium** · Predecessor or successor never near it: Holy Roman Empire (962 to 1621) is followed by Principality of Waldeck and Pyrmont (1806 to 1870) on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Free City of Bremen's article is "History of Bremen (city)" but its item Q474779 has "History of Bremen"
 - **medium** · Missing from the map for some years: Free City of Bremen is not drawn 1807 to 1813 (7 years), then comes back
 - **low** · Shape shrinks or grows for a year or two: Grand Duchy of Saxe-Weimar-Eisenach is 50% of its size in 1807 to 1808, then back
 - **high** · Years differ from Wikidata: County of Urgell ends in 1808 on the map, 1413 on Wikidata
 - **high** · Predecessor or successor never near it: Weimar Republic is followed by Free City of Danzig on Wikidata, but they never held the same land
 - **high** · Years differ from Wikidata: Free City of Danzig starts in 1809 on the map, 1920 on Wikidata
 - **medium** · Predecessor or successor never near it: Holy Roman Empire (962 to 1621) is followed by Confederation of the Rhine (1809 to 1814) on Wikidata
+- **medium** · Predecessor or successor never near it: Kingdom of Poland (962 to 1449) is followed by Duchy of Warsaw (1809 to 1813) on Wikidata
 - **medium** · Missing from the map for some years: Kingdom of Prussia is not drawn 1809 to 1813 (5 years), then comes back
 - **medium** · Missing from the map for some years: Duchy of Oldenburg is not drawn 1811 to 1813 (3 years), then comes back
 - **medium** · Missing from the map for some years: French Mascarene Islands is not drawn 1811 to 1814 (4 years), then comes back
 - **medium** · Missing from the map for some years: Papal States is not drawn 1811 to 1813 (3 years), then comes back
-- **high** · Predecessor or successor never near it: First French colonial empire is followed by Bourbon Kingdom of France on Wikidata, but they never held the same land
 - **high** · Years differ from Wikidata: Kingdom of Norway starts in 1814 on the map, 900 on Wikidata
-- **high** · Predecessor or successor never near it: First French colonial empire is followed by Sovereign Principality of the United Netherlands on Wikidata, but they never held the same land
 - **medium** · Predecessor or successor never near it: Holy Roman Empire (962 to 1621) is followed by Free City of Hamburg (1814 to 1870) on Wikidata
 - **medium** · Missing from the map for some years: Grand Duchy of Tuscany is not drawn 1814 (1 year), then comes back
 - **medium** · Missing from the map for some years: Serbs is not drawn 1814 (1 year), then comes back
@@ -1786,14 +1563,12 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Years differ from Wikidata: Talpur Dynasty starts in 1820 on the map, 1783 on Wikidata
 - **high** · Years differ from Wikidata: Sultanate of Sambas ends in 1821 on the map, 1956 on Wikidata
 - **medium** · Missing from the map for some years: Sultanate of Kedah is not drawn 1822 to 1841 (20 years), then comes back
-- **high** · Wikidata item doesn't look like this realm: Emirate of Nejd links to Q146862 "Second Saudi State" (1818– 1891 country in Arabian Peninsula)
 - **high** · Years differ from Wikidata: Pontianak Kadriyah Sultanate ends in 1827 on the map, 1950 on Wikidata
 - **high** · Years differ from Wikidata: Sultanate of Mempawah ends in 1827 on the map, 1945 on Wikidata
 - **medium** · Another realm's land under this name: Durrani Empire becomes Emirate of Afghanistan in 1828 with the same outline; Wikidata doesn't link them
 - **medium** · Missing from the map for some years: Emirate of Jabal Shammar is not drawn 1828 to 1839 (12 years), then comes back
 - **high** · Years differ from Wikidata: Surakarta Sunanate ends in 1829 on the map, 1946 on Wikidata
 - **medium** · Missing from the map for some years: Bahrain is not drawn 1830 to 1839 (10 years), then comes back
-- **high** · Years differ from Wikidata: Đại Việt ends in 1833 on the map, 1677 on Wikidata
 - **medium** · Missing from the map for some years: Emirate of Afghanistan is not drawn 1840 to 1845 (6 years), then comes back
 - **medium** · Years differ from Wikidata: Maratha Empire ends in 1845 on the map, 1818 on Wikidata
 - **medium** · Missing from the map for some years: Emirate of Jabal Shammar is not drawn 1846 to 1865 (20 years), then comes back
@@ -1816,8 +1591,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Missing from the map for some years: Emirate of Nejd is not drawn 1895 to 1904 (10 years), then comes back
 - **low** · Centre jumps far away: Dutch East Indies's centre moves 9594 km in 1895
 - **low** · Centre jumps far away: Qajar Dynasty's centre moves 7214 km in 1895
-- **high** · Years differ from Wikidata: Joseon ends in 1897 on the map, 108 BCE on Wikidata
-- **medium** · Another realm's land under this name: Joseon becomes Korean Empire in 1898 with the same outline; Wikidata doesn't link them
 - **low** · Centre jumps far away: Dutch East Indies's centre moves 7214 km in 1898
 - **low** · Centre jumps far away: Qajar Dynasty's centre moves 7214 km in 1898
 
@@ -1827,7 +1600,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **low** · Centre jumps far away: British Cape Colony's centre moves 5873 km in 1803
 - **high** · Another realm's land under this name: Napoleonic Batavia Republic's outline is named British Cape Colony from 1806; British Cape Colony was last drawn 5873 km away (1805)
 - **low** · Centre jumps far away: British Cape Colony's centre moves 5873 km in 1806
-- **low** · Wikidata item doesn't look like this realm: Massina Empire's article is "Massina Empire" but its item Q635394 has "Caliphate of Hamdullahi"
 - **medium** · Years differ from Wikidata: Bamana Empire ends in 1821 on the map, 1861 on Wikidata
 - **medium** · Years differ from Wikidata: Oyo Empire ends in 1835 on the map, 1905 on Wikidata
 - **low** · Centre jumps far away: Omani Slave Coast's centre moves 2449 km in 1840
@@ -1863,10 +1635,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 ### North America
 
 - **low** · Centre jumps far away: French Louisiana's centre moves 2320 km in 1803
-- **high** · Predecessor or successor never near it: French First Republic is followed by First French colonial empire on Wikidata, but they never held the same land
-- **high** · Predecessor or successor never near it: French Consulate is followed by First French colonial empire on Wikidata, but they never held the same land
-- **high** · Predecessor or successor never near it: Ligurian Republic is followed by First French colonial empire on Wikidata, but they never held the same land
-- **low** · Wikidata item doesn't look like this realm: First French colonial empire's article is "French colonial empire " but its item Q71084 has "First French Empire"
 - **high** · Years differ from Wikidata: Saint Pierre and Miquelon starts in 1816 on the map, 1700 on Wikidata
 - **high** · Predecessor or successor never near it: Gran Colombia is followed by United Provinces of Central America on Wikidata, but they never held the same land
 - **high** · Predecessor or successor never near it: Centralist Mexico is followed by Republic of Texas on Wikidata, but they never held the same land
@@ -1893,7 +1661,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Wikidata item shared with another realm: Q717 (Venezuela) is the item of Venezuela (1834 to 2024), Republic of Venezuela (1811 to 1814)
 - **medium** · Not a state (party, army, people): Guayaquil Junta (1812 to 1813) reads like a party, army or people
 - **medium** · Missing from the map for some years: Republic of Venezuela is not drawn 1812 to 1813 (2 years), then comes back
-- **low** · Wikidata item doesn't look like this realm: Federal League's article is "Federal League (1815-1820)" but its item Q2625228 has "Federal League (1815–1820)"
 - **high** · Years differ from Wikidata: Netherlands Antilles starts in 1815 on the map, 1954 on Wikidata
 - **medium** · Missing from the map for some years: Republic of Chile is not drawn 1815 to 1819 (5 years), then comes back
 - **low** · Centre jumps far away: Netherlands Antilles's centre moves 1679 km in 1820
@@ -1904,7 +1671,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Not a state (party, army, people): Argentine Confederation's item Q832554 is a historical period
 - **medium** · Missing from the map for some years: Bolivia is not drawn 1836 to 1839 (4 years), then comes back
 - **medium** · Missing from the map for some years: Republic of Peru is not drawn 1836 to 1839 (4 years), then comes back
-- **low** · Wikidata item doesn't look like this realm: Peru-Bolivian Confederation's article is "Peru-Bolivian Confederation" but its item Q899706 has "Peru–Bolivian Confederation"
 - **medium** · Years differ from Wikidata: Republic of Colombia starts in 1866 on the map, 1810 on Wikidata
 - **medium** · Missing from the map for some years: Paraguay is not drawn 1870 to 1876 (7 years), then comes back
 - **medium** · Missing from the map for some years: Spanish Empire is not drawn 1873 to 1876 (4 years), then comes back
@@ -1926,11 +1692,9 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 
 - **medium** · Wikidata item shared with another realm: Q222 (Albania) is the item of Albania (1912 to 1945), Republic of Albania (1991 to 2024)
 - **medium** · Predecessor or successor never near it: People's Socialist Republic of Albania (1946 to 1990) is followed by Albania (1912 to 1945) on Wikidata
-- **high** · Years differ from Wikidata: Serbia starts in 1918 on the map, 1084 on Wikidata
-- **high** · Years differ from Wikidata: Serbia ends in 1918 on the map, 1217 on Wikidata
+- **medium** · Years differ from Wikidata: Serbia starts in 1918 on the map, 1882 on Wikidata
 - **medium** · Years differ from Wikidata: United Principalities of Moldavia and Wallachia ends in 1918 on the map, 1881 on Wikidata
 - **low** · Centre jumps far away: Denmark-Norway's centre moves 1796 km in 1918
-- **low** · Wikidata item doesn't look like this realm: Serbia's article is "Serbia" but its item Q1311990 has "Grand Principality of Serbia"
 - **high** · Years differ from Wikidata: Hungarian Republic starts in 1919 on the map, 1000 on Wikidata
 - **high** · Years differ from Wikidata: Kingdom of Lithuania starts in 1919 on the map, 1251 on Wikidata
 - **high** · Predecessor or successor never near it: Kingdom of Bulgaria is followed by Kingdom of Romania on Wikidata, but they never held the same land
@@ -1942,8 +1706,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Years differ from Wikidata: Kingdom of Romania starts in 1919 on the map, 1881 on Wikidata
 - **medium** · Wikidata item shared with another realm: Q40 (Austria) is the item of Republic of Austria (1919 to 1937), Second Republic of Austria (1945 to 2024)
 - **medium** · Predecessor or successor never near it: Grand Duchy of Kraków (1279 to 1293) is followed by Second Polish Republic (1919 to 1939) on Wikidata
-- **medium** · Wikidata item shared with another realm: Q83286 (Socialist Federal Republic of Yugoslavia) is the item of Socialist Federal Republic of Yugoslavia (1946 to 1991), Yugoslavia (1919 to 1945)
-- **low** · Wikidata item doesn't look like this realm: Yugoslavia's article is "Yugoslavia" but its item Q83286 has "Socialist Federal Republic of Yugoslavia"
 - **medium** · Predecessor or successor never near it: First Spanish Republic (1873 to 1876) is followed by Second Spanish Republic (1932 to 1938) on Wikidata
 - **medium** · Not a state (party, army, people): Spanish Nationalists (1936 to 1938) reads like a party, army or people
 - **low** · Centre jumps far away: Second Spanish Republic's centre moves 1927 km in 1936
@@ -1966,11 +1728,10 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Years differ from Wikidata: Republic of Poland starts in 1945 on the map, 1918 on Wikidata
 - **medium** · Predecessor or successor never near it: Samo's Empire (623 to 660) is followed by Republic of Poland (1945 to 2024) on Wikidata
 - **medium** · Years differ from Wikidata: Second Republic of Austria starts in 1945 on the map, 1918 on Wikidata
-- **medium** · Years differ from Wikidata: Yugoslavia ends in 1945 on the map, 1992 on Wikidata
-- **low** · Wikidata item doesn't look like this realm: Allied-occupied Germany's article is "https://en.wikipedia.org/wiki/Allied-occupied_Germany" but its item Q2415901 has "Allied-occupied Germany"
 - **low** · Centre jumps far away: Kingdom of Italy's centre moves 8131 km in 1945
 - **high** · Years differ from Wikidata: Republic of Italy starts in 1946 on the map, 476 on Wikidata
 - **medium** · Another realm's land under this name: Albania becomes People's Socialist Republic of Albania in 1946 with the same outline; Wikidata doesn't link them
+- **medium** · Another realm's land under this name: Yugoslavia becomes Socialist Federal Republic of Yugoslavia in 1946 with the same outline; Wikidata doesn't link them
 - **low** · Centre jumps far away: Kingdom of Italy's centre moves 8129 km in 1946
 - **medium** · Another realm's land under this name: Kingdom of Romania becomes Socialist Republic of Romania in 1948 with the same outline; Wikidata doesn't link them
 - **medium** · Missing from the map for some years: Hungarian People's Republic is not drawn 1956 to 1957 (2 years), then comes back
@@ -2000,8 +1761,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **high** · Predecessor or successor never near it: Northern Song is followed by Great Mongol State on Wikidata, but they never held the same land
 - **high** · Predecessor or successor never near it: Southern Song is followed by Great Mongol State on Wikidata, but they never held the same land
 - **high** · Years differ from Wikidata: Great Mongol State starts in 1912 on the map, 1271 on Wikidata
-- **high** · Predecessor or successor never near it: Song is followed by Great Mongol State on Wikidata, but they never held the same land
-- **low** · Wikidata item doesn't look like this realm: Republic of China's article is "Republic of China (1912-1949)" but its item Q13426199 has "Republic of China (1912–1949)"
 - **high** · Years differ from Wikidata: Imamate of Oman starts in 1913 on the map, 751 on Wikidata
 - **medium** · Years differ from Wikidata: Qatar starts in 1913 on the map, 1870 on Wikidata
 - **medium** · Missing from the map for some years: Republic of China is not drawn 1916 to 1929 (14 years), then comes back
@@ -2016,7 +1775,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Years differ from Wikidata: Imamate of Oman ends in 1919 on the map, 1970 on Wikidata
 - **medium** · Missing from the map for some years: Great Mongol State is not drawn 1920 to 1921 (2 years), then comes back
 - **medium** · Another realm's land under this name: Republic of Uryankhay becomes Tuvan People's Republic in 1921 with the same outline; Wikidata doesn't link them
-- **low** · Wikidata item doesn't look like this realm: Tuvan People's Republic's article is "https://en.wikipedia.org/wiki/Tuvan_People%27s_Republic" but its item Q816709 has "Tuvan People's Republic"
 - **medium** · Another realm's land under this name: Republics of the Soviet Union becomes Union of Soviet Socialist Republics in 1922 with the same outline; Wikidata doesn't link them
 - **high** · Years differ from Wikidata: Great Mongol State ends in 1925 on the map, 1368 on Wikidata
 - **medium** · Years differ from Wikidata: Emirate of Nejd ends in 1925 on the map, 1891 on Wikidata
@@ -2038,7 +1796,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Another realm's land under this name: French Mandate for Syria and Lebanon becomes Second Syrian Republic in 1946 with the same outline; Wikidata doesn't link them
 - **medium** · Predecessor or successor never near it: United Arab Republic (1958 to 1972) is followed by Second Syrian Republic (1946 to 1957) on Wikidata
 - **low** · Centre jumps far away: Communist Party of China's centre moves 2096 km in 1946
-- **low** · Wikidata item doesn't look like this realm: Korea's article is "https://en.wikipedia.org/wiki/Division_of_Korea" but its item Q498735 has "Division of Korea"
 - **high** · Years differ from Wikidata: Republic of the Philippines starts in 1947 on the map, 1565 on Wikidata
 - **medium** · Another realm's land under this name: Sultanate of Muscat and Oman becomes Qatar Protectorate in 1947 with the same outline; Wikidata doesn't link them
 - **medium** · Predecessor or successor never near it: Carnatic Sultanate (1713 to 1802) is followed by Republic of India (1947 to 2024) on Wikidata
@@ -2050,11 +1807,9 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **high** · Another realm's land under this name: Dutch East Indies's outline is named Republic of Indonesia from 1950; Republic of Indonesia was last drawn 1323 km away (1949)
 - **medium** · Missing from the map for some years: Sultanate of Aceh is not drawn 1950 to 1952 (3 years), then comes back
 - **medium** · Years differ from Wikidata: Taiwan (Republic of China) starts in 1950 on the map, 1912 on Wikidata
-- **medium** · Wikidata item shared with another realm: Q172640 (North Vietnam) is the item of Democratic Republic of Vietnam (1956 to 1975), Republic of Vietnam (1956 to 1975)
 - **medium** · Predecessor or successor never near it: Nguyễn dynasty (1791 to 1884) is followed by Democratic Republic of Vietnam (1956 to 1975) on Wikidata
 - **medium** · Predecessor or successor never near it: Nguyễn dynasty (1791 to 1884) is followed by Republic of Vietnam (1956 to 1975) on Wikidata
 - **low** · Centre jumps far away: French Indochina's centre moves 6838 km in 1956
-- **low** · Wikidata item doesn't look like this realm: Republic of Vietnam's article is "South Vietnam" but its item Q172640 has "North Vietnam"
 - **medium** · Missing from the map for some years: Kingdom of Jordan is not drawn 1958 to 1959 (2 years), then comes back
 - **medium** · Years differ from Wikidata: Sultanate of Aceh ends in 1959 on the map, 1903 on Wikidata
 - **medium** · Wikidata item shared with another realm: Q796 (Iraq) is the item of Iraqi Republic (1960 to 2005), Republic of Iraq (2014 to 2024)
@@ -2067,8 +1822,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Another realm's land under this name: Ba'athist Syria becomes Arab Socialist Ba'ath Party in 1967 with the same outline; Wikidata doesn't link them
 - **medium** · Not a state (party, army, people): Arab Socialist Ba'ath Party (1967 to 1972) reads like a party, army or people
 - **medium** · Not a state (party, army, people): Arab Socialist Ba'ath Party's item Q16243030 is a political party
-- **low** · Wikidata item doesn't look like this realm: Arab Socialist Ba'ath Party's article is "Arab Socialist Ba'ath Party - Syria Region" but its item Q16243030 has "Arab Socialist Ba'ath Party – Syria Region"
-- **low** · Wikidata item doesn't look like this realm: Palestine's article is "State of Palestine" but its item Q219060 has "Palestine"
 - **medium** · Years differ from Wikidata: Arab Socialist Ba'ath Party ends in 1972 on the map, 2024 on Wikidata
 - **high** · Years differ from Wikidata: State of Qatar starts in 1973 on the map, 1870 on Wikidata
 - **medium** · Another realm's land under this name: Arab Socialist Ba'ath Party becomes Syria in 1973 with the same outline; Wikidata doesn't link them
@@ -2080,6 +1833,7 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **medium** · Not a state (party, army, people): Communist Laos (1976 to 2024) reads like a party, army or people
 - **medium** · Years differ from Wikidata: Communist Laos starts in 1976 on the map, 1949 on Wikidata
 - **medium** · Missing from the map for some years: Kingdom of Cambodia is not drawn 1976 to 1995 (20 years), then comes back
+- **medium** · Predecessor or successor never near it: Đại Việt (1529 to 1833) is followed by Socialist Republic of Vietnam (1976 to 2024) on Wikidata
 - **medium** · Predecessor or successor never near it: Nguyễn dynasty (1791 to 1884) is followed by Socialist Republic of Vietnam (1976 to 2024) on Wikidata
 - **high** · Years differ from Wikidata: Afghanistan starts in 1979 on the map, 1709 on Wikidata
 - **medium** · Another realm's land under this name: Khmer Rouge becomes People's Republic of Kampuchea in 1979 with the same outline; Wikidata doesn't link them
@@ -2094,7 +1848,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **low** · Another realm's land under this name: People's Republic of Kampuchea's outline is named Kingdom of Cambodia from 1996; Kingdom of Cambodia was drawn nearby before (1956 to 1975)
 - **high** · Years differ from Wikidata: Macau starts in 1999 on the map, 1557 on Wikidata
 - **medium** · Years differ from Wikidata: East Timor starts in 2006 on the map, 1975 on Wikidata
-- **low** · Wikidata item doesn't look like this realm: East Timor's article is "East Timor" but its item Q574 has "Timor-Leste"
 - **medium** · Years differ from Wikidata: Republic of Iraq starts in 2014 on the map, 1932 on Wikidata
 - **medium** · Predecessor or successor never near it: Kingdom of Iraq (1932 to 1957) is followed by Republic of Iraq (2014 to 2024) on Wikidata
 
@@ -2104,7 +1857,6 @@ Wikidata checks: on (scripts/wikidata-facts.json).
 - **low** · Centre jumps far away: French Africa's centre moves 2235 km in 1905
 - **medium** · Years differ from Wikidata: Natalia Republic ends in 1910 on the map, 1843 on Wikidata
 - **low** · Centre jumps far away: Kingdom of Portugal's centre moves 5312 km in 1911
-- **low** · Wikidata item doesn't look like this realm: Portuguese Republic's article is "Portugal" but its item Q167360 has "First Portuguese Republic"
 - **low** · Centre jumps far away: Italian Africa's centre moves 4070 km in 1912
 - **medium** · Another realm's land under this name: Portuguese Republic becomes Estado Novo in 1926 with the same outline; Wikidata doesn't link them
 - **low** · Centre jumps far away: British Africa's centre moves 1778 km in 1930

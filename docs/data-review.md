@@ -24,7 +24,10 @@ development.md), never in the built files.
 - The audit's Wikidata checks (what each realm's item is, its dates, its
   predecessors and successors, its article) need `scripts/wikidata-facts.json`.
   Make it with `node scripts/fetch-wikidata-facts.mjs` on a computer that can
-  reach Wikidata, and commit it.
+  reach Wikidata, and commit it. `node scripts/fetch-article-items.mjs`
+  makes `scripts/article-items.json`, the item Wikipedia gives each realm's
+  article, so the audit can tell a realm linked to the wrong item; it reaches
+  only Wikipedia, so it runs anywhere.
 - `node scripts/who.mjs <lon>,<lat> <from> [<to>]` prints which realms the map
   draws at a place, year by year.
 - `scripts/truth-points.json` lists places whose realm was checked against a
