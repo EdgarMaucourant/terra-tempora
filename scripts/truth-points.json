@@ -29,6 +29,7 @@
   { "place": "Faroe Islands", "lonLat": [-6.9, 62.1], "years": [1948, 2024], "realm": "Faroe Islands", "why": "Self-governing within the Kingdom of Denmark since 1948" },
   { "place": "Jutland", "lonLat": [9.5, 56], "years": [1979, 2024], "realm": "Denmark", "why": "Denmark keeps its own land once Greenland and the Faroes are drawn apart" },
   { "place": "Kowloon", "lonLat": [114.18, 22.33], "years": [1997, 2024], "realm": "Hong Kong", "why": "A special administrative region of China since 1997" },
+  { "place": "Zhuhai", "lonLat": [113.58, 22.27], "years": [1999, 2024], "realm": "People's Republic of China", "why": "Chinese land around Macau, which Cliopatria kept Portuguese after 1999" },
   { "place": "Macau", "lonLat": [113.55, 22.16], "years": [1999, 2024], "realm": "Macau", "why": "A special administrative region of China since 1999" },
   { "place": "San Juan", "lonLat": [-66.1, 18.4], "years": [1899, 2024], "realm": "Puerto Rico", "why": "A territory of the United States since 1898" },
   { "place": "New Caledonia", "lonLat": [165.5, -21.4], "years": [1853, 2024], "realm": "New Caledonia", "why": "French since 1853, once drawn as French Indochina" },
