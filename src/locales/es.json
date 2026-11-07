@@ -549,7 +549,7 @@
     }
   },
   "disclaimer": {
-    "text": "Terra Tempora es un proyecto aficionado e independiente. Las fronteras son aproximaciones trazadas a partir de datos abiertos, y un mapa no siempre puede reflejar la complejidad de la historia: fechas, reivindicaciones y control del territorio a menudo fueron disputados. Aún faltan grandes partes de la historia, como América o Australia antes de la colonización; las añadiremos cuando tengamos buenas fuentes. Aún quedan errores, y los corregimos continuamente a medida que se detectan. ¿Has visto alguno? {report}, así el mapa mejora para todos.",
+    "text": "Terra Tempora es un sitio aficionado, independiente y de entretenimiento, para ver cómo cambian las fronteras del mundo a lo largo de las épocas sobre un globo. Las fronteras son aproximaciones trazadas a partir de datos abiertos, y un mapa no puede reflejar toda la complejidad de la historia. Seguramente contiene errores, y aún faltan grandes partes de la historia, como América o Australia antes de la colonización. Corregimos los errores continuamente y añadiremos lo que falta cuando tengamos buenas fuentes. Por ahora, te pedimos que no lo uses como herramienta educativa. ¿Has visto un error? {report}, así nos ayudas a mejorar el mapa.",
     "report": "Avísanos",
     "label": "Sobre la precisión del mapa"
   }
