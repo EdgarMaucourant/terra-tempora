@@ -78,7 +78,10 @@ export default {
     }
     if (url.pathname === "/api/stats") return stats(request, env, url);
     if (url.pathname.startsWith("/api/")) return json({ error: "not-found" }, 404);
-    if (url.pathname === "/") return homePage(request, env, url);
+    if (url.pathname === "/") {
+      if (env.MAINTENANCE === "on") return maintenancePage(request, env, url);
+      return homePage(request, env, url);
+    }
     return env.ASSETS.fetch(request);
   },
 };
@@ -108,6 +111,21 @@ const HOME_TEXT = {
       "Terra Tempora: un globo con el Imperio mongol dibujado en naranja y las palabras 5000 años de historia mundial en un solo globo.",
   },
 };
+
+/**
+ * The "back soon" page shown instead of the globe while MAINTENANCE is "on".
+ * A 503 with Retry-After tells search engines the break is temporary, so
+ * they keep the site listed.
+ */
+async function maintenancePage(request, env, url) {
+  const page = await env.ASSETS.fetch(new Request(new URL("/maintenance", url), request));
+  // Keeps the security headers public/_headers gives every page.
+  const headers = new Headers(page.headers);
+  headers.delete("ETag");
+  headers.set("Cache-Control", "no-store");
+  headers.set("Retry-After", "86400");
+  return new Response(page.body, { status: 503, headers });
+}
 
 /** The home page, with its title, description and preview in the language ?lang= asks for. */
 async function homePage(request, env, url) {
