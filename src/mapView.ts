@@ -140,6 +140,15 @@ export class MapView {
     }
   }
 
+  private shapeOf(p: Polity): Shape {
+    let shape = this.shapes.get(p.id);
+    if (!shape) {
+      shape = toFeature(p);
+      this.shapes.set(p.id, shape);
+    }
+    return shape;
+  }
+
   /** Draws these rings as a dashed border on top of the realms, or none. */
   setOutline(rings: number[][] | null) {
     this.outline = rings?.length ? toFeature({ rings } as Polity) : null;
@@ -379,10 +388,18 @@ export class MapView {
       ctx.stroke();
     }
 
-    // Realms: greyed ones first, highlighted on top.
+    // Land not reviewed yet, then the realms (greyed ones first, highlighted
+    // on top), then the hatching of land held by another state than its owner.
+    const unreviewed: { p: Polity; opacity: number }[] = [];
     const context: { p: Polity; opacity: number }[] = [];
     const featured: { p: Polity; opacity: number }[] = [];
+    const hatched: { p: Polity; opacity: number }[] = [];
     for (const p of this.polities.values()) {
+      if (p.kind) {
+        const opacity = shapeOpacity(p, this.year);
+        if (opacity > 0.002 && (this.showContext || p.kind === "hatch")) (p.kind === "hatch" ? hatched : unreviewed).push({ p, opacity });
+        continue;
+      }
       const highlighted = highlightOf(this.highlight, p) !== undefined;
       if (!highlighted && !this.showContext) continue;
       const opacity = shapeOpacity(p, this.year);
@@ -390,12 +407,18 @@ export class MapView {
       (highlighted ? featured : context).push({ p, opacity });
     }
     this.drawn = [];
+    for (const { p, opacity } of unreviewed) {
+      const shape = this.shapeOf(p);
+      ctx.beginPath();
+      path(shape);
+      ctx.globalAlpha = 0.22 * opacity;
+      ctx.fillStyle = "#8a9099";
+      ctx.fill();
+      ctx.globalAlpha = 1;
+      if (opacity > 0.5) this.drawn.push({ p, shape });
+    }
     for (const { p, opacity } of [...context, ...featured]) {
-      let shape = this.shapes.get(p.id);
-      if (!shape) {
-        shape = toFeature(p);
-        this.shapes.set(p.id, shape);
-      }
+      const shape = this.shapeOf(p);
       const color = highlightOf(this.highlight, p);
       const hovered = !color && p.name === this.hovered;
       ctx.beginPath();
@@ -406,6 +429,33 @@ export class MapView {
       ctx.globalAlpha = (color || hovered ? 0.95 : 0.45) * opacity;
       ctx.strokeStyle = color ? lighten(color) : "#e4e7ea";
       ctx.lineWidth = color ? 1.6 : 0.8;
+      ctx.stroke();
+      ctx.globalAlpha = 1;
+      if (opacity > 0.5) this.drawn.push({ p, shape });
+    }
+    for (const { p, opacity } of hatched) {
+      const shape = this.shapeOf(p);
+      const color = (p.by && this.highlight.get(p.by)) ?? "#e4e7ea";
+      ctx.save();
+      ctx.beginPath();
+      path(shape);
+      ctx.clip();
+      ctx.globalAlpha = 0.85 * opacity;
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 1.5;
+      ctx.beginPath();
+      // Diagonal lines 6 px apart across the screen, kept to the shape by the clip.
+      for (let x = -this.height; x < this.width; x += 6) {
+        ctx.moveTo(x, this.height);
+        ctx.lineTo(x + this.height, 0);
+      }
+      ctx.stroke();
+      ctx.restore();
+      ctx.beginPath();
+      path(shape);
+      ctx.globalAlpha = 0.7 * opacity;
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 1;
       ctx.stroke();
       ctx.globalAlpha = 1;
       if (opacity > 0.5) this.drawn.push({ p, shape });
@@ -436,7 +486,7 @@ export class MapView {
     // any that would overlap a name already placed.
     const minArea = CONTEXT_LABEL_AREA / Math.min(this.zoom, 8) ** 1.6;
     const candidates = this.drawn
-      .filter(({ p }) => p.label && (highlightOf(this.highlight, p) || p.area >= minArea))
+      .filter(({ p }) => !p.kind && p.label && (highlightOf(this.highlight, p) || p.area >= minArea))
       .sort((a, b) => Number(!!highlightOf(this.highlight, b.p)) - Number(!!highlightOf(this.highlight, a.p)) || b.p.area - a.p.area);
     const placed: [number, number, number, number][] = [];
     const named = new Set<string>();
@@ -449,7 +499,7 @@ export class MapView {
       if (!at || at[0] < 0 || at[0] > this.width || at[1] < 0 || at[1] > this.height) continue;
       const highlighted = highlightOf(this.highlight, p) !== undefined;
       ctx.font = highlighted ? "600 14px 'Instrument Sans Variable', sans-serif" : "500 11px 'Instrument Sans Variable', sans-serif";
-      const text = this.nameOf(p.name);
+      const text = this.nameOf(p.display ?? p.name);
       const w = ctx.measureText(text).width / 2 + 3;
       const h = highlighted ? 10 : 8;
       const box: [number, number, number, number] = [at[0] - w, at[1] - h, at[0] + w, at[1] + h];

@@ -20,7 +20,7 @@ import {
   VerticalOrigin,
 } from "cesium";
 import { MUTED } from "./colors";
-import { highlightOf, type Polity } from "./data";
+import { highlightOf, isOverlay, type Polity } from "./data";
 import { inRing } from "./frame";
 
 // Shapes float slightly above the globe surface so they never z-fight with it.
@@ -48,6 +48,35 @@ const COARSE_GRANULARITY = 2;
 // Outlines with fewer points than this are drawn together, a realm's small
 // islands in one piece, to keep the number of pieces on the globe down.
 const SMALL_RING = 16;
+// Hatching: land held by another state than its owner, drawn over the owner.
+const HATCH_HEIGHT = FEATURED_HEIGHT + 1500;
+const HATCH_ALPHA = 0.85;
+// The hatch lines' spacing, in km: the pattern repeats across the shape's extent.
+const HATCH_SPACING_KM = 12;
+// Land not reviewed yet: a faint flat grey, under the realms.
+const UNREVIEWED_COLOR = "#3a3f46";
+const UNREVIEWED_ALPHA = 0.72;
+const HATCH_SOURCE = `
+uniform vec4 color;
+uniform float repeat;
+czm_material czm_getMaterial(czm_materialInput materialInput) {
+  czm_material material = czm_getDefaultMaterial(materialInput);
+  float v = fract((materialInput.st.s + materialInput.st.t) * repeat);
+  material.diffuse = color.rgb;
+  material.alpha = color.a * step(0.55, v);
+  return material;
+}`;
+
+/** A diagonal hatch, lines about HATCH_SPACING_KM apart across a shape of `extentKm`. */
+function hatchMaterial(color: Color, extentKm: number): Material {
+  return new Material({
+    fabric: {
+      uniforms: { color, repeat: Math.min(400, Math.max(3, extentKm / HATCH_SPACING_KM)) },
+      source: HATCH_SOURCE,
+    },
+    translucent: true,
+  });
+}
 
 
 
@@ -72,6 +101,21 @@ interface LayerState {
   pending: boolean;
   /** Shapes visible at this year. */
   visible: number;
+}
+
+/** The larger side of the rings' box, in km. */
+function extentKm(rings: number[][]): number {
+  let [x0, y0, x1, y1] = [180, 90, -180, -90];
+  for (const ring of rings) {
+    for (let i = 0; i < ring.length; i += 2) {
+      x0 = Math.min(x0, ring[i]);
+      x1 = Math.max(x1, ring[i]);
+      y0 = Math.min(y0, ring[i + 1]);
+      y1 = Math.max(y1, ring[i + 1]);
+    }
+  }
+  const cos = Math.cos((((y0 + y1) / 2) * Math.PI) / 180);
+  return Math.max((x1 - x0) * cos, y1 - y0) * 111;
 }
 
 /** A ring's closed border line at a height, for picking as `id`. */
@@ -104,6 +148,7 @@ class Piece {
   hovered = false;
   owner: Polity | null = null;
   private ownerOpacity = 0;
+  kind: Polity["kind"];
   fill!: Primitive;
   line!: Primitive;
 
@@ -223,10 +268,22 @@ export class PolityLayer {
   realmAt(lon: number, lat: number, year: number): string | null {
     let best: Polity | null = null;
     for (const p of this.polities.values()) {
-      if (year < p.from || year > p.to || (best && p.area >= best.area)) continue;
+      if (isOverlay(p) || year < p.from || year > p.to || (best && p.area >= best.area)) continue;
       if (p.rings.some((ring) => inRing(ring, lon, lat))) best = p;
     }
     return best?.name ?? null;
+  }
+
+  /**
+   * The hatching over a point at `year`, if any: picking passes through the
+   * gaps between its lines, so a pick on its owner is checked against it.
+   */
+  hatchAt(lon: number, lat: number, year: number): Polity | undefined {
+    const y = Math.round(year);
+    for (const p of this.polities.values()) {
+      if (p.kind === "hatch" && y >= p.from && y <= p.to && p.rings.some((ring) => inRing(ring, lon, lat))) return p;
+    }
+    return undefined;
   }
 
   /** The realms drawn at `year`, coloured or greyed, one shape per realm name. */
@@ -234,7 +291,7 @@ export class PolityLayer {
     const y = Math.round(year);
     const byName = new Map<string, Polity>();
     for (const p of this.polities.values()) {
-      if (y < p.from || y > p.to || !this.visibleKind(p)) continue;
+      if (isOverlay(p) || y < p.from || y > p.to || !this.visibleKind(p)) continue;
       const seen = byName.get(p.name);
       // The detailed shape over the coarse one, and the one with a label.
       if (!seen || (seen.coarse && !p.coarse) || (!seen.label && p.label)) byName.set(p.name, p);
@@ -252,7 +309,13 @@ export class PolityLayer {
   }
 
   private visibleKind(p: Polity): boolean {
+    if (p.kind === "unreviewed") return this.showContext;
     return this.showContext || this.isHighlighted(p);
+  }
+
+  /** The colour of a hatch: the holder's when it is highlighted, else a light grey. */
+  private hatchColor(p: Polity): string {
+    return (p.by && this.highlight.get(p.by)) ?? "#e4e7ea";
   }
 
   /** Draws these rings as a dashed white border above every realm, or none. */
@@ -284,7 +347,12 @@ export class PolityLayer {
     this.highlight = new Map(colors);
     // Shapes whose colour or height changes are rebuilt on the next update.
     for (const p of [...this.drawn.keys()]) {
-      if (changed.has(p.name) || p.groups?.some((name) => changed.has(name)) || (p.partOf && changed.has(p.partOf))) {
+      if (
+        changed.has(p.name) ||
+        p.groups?.some((name) => changed.has(name)) ||
+        (p.partOf && changed.has(p.partOf)) ||
+        (p.by && changed.has(p.by))
+      ) {
         this.detach(p);
       }
     }
@@ -355,7 +423,16 @@ export class PolityLayer {
       piece.fill.show = show;
       piece.line.show = show;
       if (!show) continue;
-      const base = piece.highlighted ? FEATURED_FILL_ALPHA : piece.hovered ? HOVER_FILL_ALPHA : CONTEXT_FILL_ALPHA;
+      const base =
+        piece.kind === "hatch"
+          ? HATCH_ALPHA
+          : piece.kind === "unreviewed"
+            ? UNREVIEWED_ALPHA
+            : piece.highlighted
+              ? FEATURED_FILL_ALPHA
+              : piece.hovered
+                ? HOVER_FILL_ALPHA
+                : CONTEXT_FILL_ALPHA;
       const lineAlpha = piece.hovered ? 0.95 : piece.lineColor.alpha;
       piece.fillMaterial.uniforms.color = Color.fromAlpha(piece.fillColor, base * opacity, piece.fillMaterial.uniforms.color);
       piece.lineMaterial.uniforms.color = Color.fromAlpha(piece.lineColor, lineAlpha * opacity, piece.lineMaterial.uniforms.color);
@@ -386,9 +463,9 @@ export class PolityLayer {
    * than `budget` (unless `force`), in which case nothing is done.
    */
   private attach(p: Polity, budget: number, force: boolean): number {
-    const color = highlightOf(this.highlight, p);
-    const highlighted = color !== undefined;
-    const style = color ?? "";
+    const color = p.kind === "hatch" ? this.hatchColor(p) : p.kind === "unreviewed" ? UNREVIEWED_COLOR : highlightOf(this.highlight, p);
+    const highlighted = !p.kind && color !== undefined;
+    const style = `${p.kind ?? ""}:${color ?? ""}`;
     // Each sizeable outline is its own piece; the small ones go together.
     const groups: number[][][] = [];
     const small: number[][] = [];
@@ -400,18 +477,18 @@ export class PolityLayer {
 
     const pieces = groups.map((rings, i) => {
       let piece = this.pieces.get(keys[i]);
-      if (!piece) this.pieces.set(keys[i], (piece = this.build(keys[i], rings, color, p.coarse)));
+      if (!piece) this.pieces.set(keys[i], (piece = this.build(keys[i], rings, color, p.coarse, p.kind)));
       piece.users.add(p);
       return piece;
     });
 
     let label: Label | undefined;
-    if (p.label && ((highlighted && this.labelAll) || p.area >= CONTEXT_LABEL_AREA)) {
+    if (!p.kind && p.label && ((highlighted && this.labelAll) || p.area >= CONTEXT_LABEL_AREA)) {
       const height = highlighted ? FEATURED_HEIGHT : CONTEXT_HEIGHT;
       label = this.labels.add({
         id: p,
         position: Cartesian3.fromDegrees(p.label[0], p.label[1], height + 2000),
-        text: this.nameOf(p.name),
+        text: this.nameOf(p.display ?? p.name),
         font: highlighted ? "600 15px 'Instrument Sans Variable', sans-serif" : "500 12px 'Instrument Sans Variable', sans-serif",
         fillColor: highlighted ? Color.fromCssColorString("#fbf6ec") : Color.fromCssColorString("#b4bac1"),
         outlineColor: Color.BLACK.withAlpha(0.85),
@@ -443,16 +520,21 @@ export class PolityLayer {
     if (this.retiring.get(p.id) === p) this.retiring.delete(p.id);
   }
 
-  private build(key: string, rings: number[][], color: string | undefined, coarse?: boolean): Piece {
-    const highlighted = color !== undefined;
-    const height = highlighted ? FEATURED_HEIGHT : CONTEXT_HEIGHT;
+  private build(key: string, rings: number[][], color: string | undefined, coarse?: boolean, kind?: Polity["kind"]): Piece {
+    const highlighted = !kind && color !== undefined;
+    const height = kind === "hatch" ? HATCH_HEIGHT : highlighted ? FEATURED_HEIGHT : CONTEXT_HEIGHT - (kind ? 500 : 0);
     const fillColor = Color.fromCssColorString(color ?? MUTED);
-    const lineColor = highlighted
-      ? Color.fromCssColorString(color).brighten(0.35, new Color()).withAlpha(0.95)
-      : Color.fromCssColorString("#e4e7ea").withAlpha(0.45);
-    const fillMaterial = Material.fromType("Color", { color: fillColor.withAlpha(0) });
+    const lineColor = kind
+      ? fillColor.withAlpha(kind === "hatch" ? 0.7 : 0)
+      : highlighted
+        ? Color.fromCssColorString(color!).brighten(0.35, new Color()).withAlpha(0.95)
+        : Color.fromCssColorString("#e4e7ea").withAlpha(0.45);
+    const fillMaterial =
+      kind === "hatch" ? hatchMaterial(fillColor.withAlpha(0), extentKm(rings)) : Material.fromType("Color", { color: fillColor.withAlpha(0) });
     const lineMaterial = Material.fromType("Color", { color: lineColor.withAlpha(0) });
     const piece = new Piece(key, fillMaterial, lineMaterial, fillColor, lineColor, highlighted);
+    piece.kind = kind;
+    const vertexFormat = (kind === "hatch" ? MaterialAppearance.MaterialSupport.TEXTURED : MaterialAppearance.MaterialSupport.BASIC).vertexFormat;
     // Picking a piece finds the snapshot it is drawn for (see polityOf).
     piece.fill = new Primitive({
       geometryInstances: rings.map(
@@ -463,13 +545,13 @@ export class PolityLayer {
               polygonHierarchy: new PolygonHierarchy(Cartesian3.fromDegreesArray(ring)),
               height,
               granularity: CesiumMath.RADIANS_PER_DEGREE * (coarse ? COARSE_GRANULARITY : 1),
-              vertexFormat: MaterialAppearance.MaterialSupport.BASIC.vertexFormat,
+              vertexFormat,
             }),
           }),
       ),
       appearance: new MaterialAppearance({
         material: fillMaterial,
-        materialSupport: MaterialAppearance.MaterialSupport.BASIC,
+        materialSupport: kind === "hatch" ? MaterialAppearance.MaterialSupport.TEXTURED : MaterialAppearance.MaterialSupport.BASIC,
         translucent: true,
         flat: true,
         faceForward: true,

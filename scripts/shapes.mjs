@@ -35,7 +35,17 @@ export function shapeHas(shape, point) {
 /** The names of the realms drawn at a point in a year, smallest first (the one on top). */
 export function realmsAt(shapes, point, year) {
   return shapes
-    .filter((s) => s.from <= year && year <= s.to && shapeHas(s, point))
+    .filter((s) => !s.kind && s.from <= year && year <= s.to && shapeHas(s, point))
     .sort((a, b) => a.area - b.area)
     .map((s) => s.name);
+}
+
+/** The states drawn as holding a point in a year (hatched over its owner). */
+export function holdersAt(shapes, point, year) {
+  return shapes.filter((s) => s.kind === "hatch" && s.from <= year && year <= s.to && shapeHas(s, point)).map((s) => s.by);
+}
+
+/** Whether a point is drawn as not yet reviewed in a year. */
+export function unreviewedAt(shapes, point, year) {
+  return shapes.some((s) => s.kind === "unreviewed" && s.from <= year && year <= s.to && shapeHas(s, point));
 }

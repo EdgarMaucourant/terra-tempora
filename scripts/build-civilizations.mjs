@@ -55,7 +55,8 @@ const CONTINENT_SHARE = 0.05;
 const CONTINENT_KM2 = 100_000;
 // Hand corrections to a civilization's years where its borders don't span its
 // history, by id: [from, to].
-const DATE_FIXES = JSON.parse(readFileSync("scripts/date-fixes.json", "utf8"));
+// They belong to the old borders, so the rebuilt ones (borders/) go without.
+const DATE_FIXES = existsSync("borders/2026.json") ? {} : JSON.parse(readFileSync("scripts/date-fixes.json", "utf8"));
 // Pictures from each realm's Wikipedia article, by article (see fetch-pictures.mjs).
 const PICTURES = existsSync("scripts/civ-pictures.json") ? JSON.parse(readFileSync("scripts/civ-pictures.json", "utf8")) : {};
 
@@ -220,8 +221,19 @@ const familyOf = new Map(Object.entries(FAMILIES).flatMap(([key, names]) => name
 
 // Group the shapes by realm, a group's members going to the group too.
 const groups = new Map();
-const realm = (key) => groups.get(key) ?? groups.set(key, { name: key, own: [], shapes: [] }).get(key);
+const realm = (key) => groups.get(key) ?? groups.set(key, { name: key, own: [], territory: [], shapes: [] }).get(key);
+// A territory (Portuguese Angola, Greenland) is part of the state that owns
+// it: it counts as that realm's land and opens it, with no civilization of its
+// own. Hatching and land not yet reviewed are not realms at all.
+const territories = new Map();
 for (const s of shapes.values()) {
+  if (s.kind) continue;
+  if (s.partOf) {
+    territories.set(s.name, s.partOf);
+    realm(s.partOf).territory.push(s);
+    realm(s.partOf).shapes.push(s);
+    continue;
+  }
   realm(s.name).own.push(s);
   realm(s.name).shapes.push(s);
   for (const key of s.groups ?? []) realm(key).shapes.push(s);
@@ -231,10 +243,15 @@ for (const s of shapes.values()) {
 // is measured by its members together, year by year: one shape for each set
 // of members standing at once.
 function snapshots(members, links) {
-  const starts = [...new Set(members.map((s) => s.from))].sort((a, b) => a - b);
+  // A new snapshot starts whenever a member comes or goes.
+  const starts = [...new Set(members.flatMap((s) => [s.from, s.to + 1]))]
+    .filter((year) => members.some((s) => s.from <= year && s.to >= year))
+    .sort((a, b) => a - b);
   return starts.map((from, i) => {
     const standing = members.filter((s) => s.from <= from && s.to >= from);
-    const largest = standing.reduce((best, s) => (s.area > best.area ? s : best));
+    // The realm's own land names it, rather than a larger territory of it.
+    const own = standing.filter((s) => !s.partOf);
+    const largest = (own.length ? own : standing).reduce((best, s) => (s.area > best.area ? s : best));
     return {
       from,
       to: Math.min(...standing.map((s) => s.to), (starts[i + 1] ?? Infinity) - 1),
@@ -260,7 +277,12 @@ const outlines = {};
 const slugs = new Set();
 for (const g of groups.values()) {
   // The realm's own shapes, not its group's other members, give its dates, link and silhouette.
-  const main = g.own.length ? g.own : snapshots(g.shapes, index.groups?.[g.name]);
+  const links = g.own[0] && { wikipedia: g.own[0].wikipedia, wikidata: g.own[0].wikidata };
+  const main = !g.own.length
+    ? snapshots(g.shapes, index.groups?.[g.name])
+    : g.territory.length
+      ? snapshots([...g.own, ...g.territory], links)
+      : g.own;
   const peak = main.reduce((best, s) => (s.area > best.area ? s : best));
   const count = (key) => {
     const tally = new Map();
@@ -274,8 +296,8 @@ for (const g of groups.values()) {
   civilizations.push({
     id: slug,
     name: g.name,
-    // The Cliopatria realm or group it shows.
-    names: [g.name],
+    // The realm or group it shows, then the territories it owned.
+    names: [g.name, ...[...territories].filter(([, owner]) => owner === g.name).map(([name]) => name)],
     wikidata: count("wikidata"),
     wikipedia,
     from: Math.min(...main.map((s) => s.from)),
@@ -306,6 +328,13 @@ civilizations.sort((a, b) => b.area - a.area);
 
 const json = JSON.stringify({ source: index.source, families: FAMILIES, civilizations });
 writeFileSync("public/data/civilizations.json", json);
+// The names in French and Spanish, from borders/realms.json by way of the index.
+if (index.names) {
+  for (const l of ["fr", "es"]) {
+    const text = Object.fromEntries(civilizations.map((c) => [c.id, { name: index.names[c.name]?.[l] ?? c.name }]));
+    writeFileSync(`public/data/i18n/${l}/civilizations.json`, JSON.stringify(text, null, 1) + "\n");
+  }
+}
 // Outlines in the same order as the list.
 const shapesJson = JSON.stringify(Object.fromEntries(civilizations.map((c) => [c.id, outlines[c.id]])));
 writeFileSync("public/data/civilization-shapes.json", shapesJson);

@@ -3,10 +3,10 @@
 // are numbers in range, every event has a known kind, links are https, and
 // translations match the English they translate, with markup only where the
 // page expects it, and the map still draws the checked realm at each truth
-// point (scripts/truth-points.json). Run by `npm run check` and on every pull request.
+// point (borders/truth-points.json). Run by `npm run check` and on every pull request.
 // Prints each problem and exits with an error if there is any.
 import { existsSync, readdirSync, readFileSync } from "node:fs";
-import { loadShapes, realmsAt } from "./shapes.mjs";
+import { holdersAt, loadShapes, realmsAt, unreviewedAt } from "./shapes.mjs";
 
 const DATA = "public/data";
 const errors = [];
@@ -52,6 +52,16 @@ function checkYears(where, item) {
 
 // Border windows
 const index = read(`${DATA}/index.json`);
+// While the borders are rebuilt (borders/), the realms change names, so events,
+// documentaries and translations still name realms not rebuilt yet: those are
+// counted, not errors.
+const rebuilding = index?.reviewedFrom !== undefined;
+const stale = new Map();
+const staleRef = (where, message) => {
+  if (!rebuilding) return fail(where, message);
+  const file = where.replace(/ \(.*$/, "");
+  stale.set(file, (stale.get(file) ?? 0) + 1);
+};
 for (const w of index?.windows ?? []) {
   if (!existsSync(`${DATA}/${w.file}`)) fail("index.json", `window file ${w.file} is missing`);
   if (!w.coarse || !existsSync(`${DATA}/${w.coarse}`)) fail("index.json", `the coarse copy of ${w.file} is missing`);
@@ -64,7 +74,7 @@ for (const w of index?.windows ?? []) {
 }
 
 // Truth points: places whose realm was checked against a source.
-const truth = read("scripts/truth-points.json")?.points ?? [];
+const truth = read("borders/truth-points.json")?.points ?? [];
 if (truth.length && index) {
   const { shapes } = loadShapes(DATA);
   for (const t of truth) {
@@ -79,7 +89,15 @@ if (truth.length && index) {
       const drawn = realmsAt(shapes, t.lonLat, year);
       const ok = t.realm === null ? !drawn.length : drawn.includes(t.realm);
       if (!ok) {
-        fail(where, `in ${year} the map draws ${drawn.join(", ") || "nothing"}, not ${t.realm ?? "blank land"} (${t.why})`);
+        const unreviewed = unreviewedAt(shapes, t.lonLat, year) ? " (not yet reviewed)" : "";
+        fail(where, `in ${year} the map draws ${drawn.join(", ") || "nothing"}${unreviewed}, not ${t.realm ?? "blank land"} (${t.why})`);
+        break;
+      }
+      // Land held by another state than its owner is hatched as that state's, and only then.
+      const holders = holdersAt(shapes, t.lonLat, year);
+      const held = t.heldBy?.find((h) => h.years[0] <= year && year <= h.years[1])?.by ?? null;
+      if (held ? !holders.includes(held) : holders.length) {
+        fail(where, `in ${year} the map hatches ${holders.join(", ") || "nothing"}, not ${held ?? "nothing"} (${t.why})`);
         break;
       }
     }
@@ -113,7 +131,7 @@ function checkEvents(file, fields, needCivs) {
     if (!isLonLat(e.lonLat)) fail(file, `"${e.id}" has no valid place [longitude, latitude]`);
     for (const f of fields) if (!isText(e[f])) fail(file, `"${e.id}" has no ${f}`);
     if (needCivs && !e.civs?.length) fail(file, `"${e.id}" belongs to no civilization`);
-    for (const id of e.civs ?? []) if (!civIds.has(id)) fail(file, `"${e.id}" names unknown civilization "${id}"`);
+    for (const id of e.civs ?? []) if (!civIds.has(id)) staleRef(file, `"${e.id}" names unknown civilization "${id}"`);
     for (const l of e.links ?? []) {
       if (!isText(l.label) || !isHttps(l.url)) fail(file, `"${e.id}" has a link without a label or an https address`);
     }
@@ -146,9 +164,9 @@ for (const d of documentaries) {
   if (!isText(d.title)) fail(where, `"${d.id}" has no title`);
   if (!isHttps(d.url)) fail(where, `"${d.id}" needs an https link`);
   if (d.year !== undefined && !isYear(d.year)) fail(where, `"${d.id}" has a bad year`);
-  for (const id of d.civs ?? []) if (!civIds.has(id)) fail(where, `"${d.id}" names unknown civilization "${id}"`);
+  for (const id of d.civs ?? []) if (!civIds.has(id)) staleRef(where, `"${d.id}" names unknown civilization "${id}"`);
   for (const id of d.events ?? []) if (!eventIds.has(id) && !travelIds.has(id)) fail(where, `"${d.id}" names unknown event "${id}"`);
-  for (const id of d.countries ?? []) if (!countryIds.has(id)) fail(where, `"${d.id}" names unknown country "${id}"`);
+  for (const id of d.countries ?? []) if (!countryIds.has(id)) staleRef(where, `"${d.id}" names unknown country "${id}"`);
   for (const [region, rating] of Object.entries(d.ratings ?? {})) {
     if (!RATINGS[region]) fail(where, `"${d.id}" has a rating for unknown country "${region}"`);
     else if (!RATINGS[region].test(rating)) fail(where, `"${d.id}" has an unknown ${region} rating "${rating}"`);
@@ -170,7 +188,7 @@ for (let n = 0; n < SHARDS; n++) {
   const ids = new Set();
   wdIds.set(file, ids);
   for (const [civ, events] of Object.entries(read(`${DATA}/${file}`) ?? {})) {
-    if (!civIds.has(civ)) fail(file, `unknown civilization "${civ}"`);
+    if (!civIds.has(civ)) staleRef(file, `unknown civilization "${civ}"`);
     else if (shardOf(civ) !== n) fail(file, `"${civ}" belongs in wd-events/${shardOf(civ)}.json`);
     for (const e of events) {
       const id = `wd:${e.wikipedia}:${e.kind}`;
@@ -205,7 +223,7 @@ if (existsSync(`${DATA}/i18n`)) {
         continue;
       }
       for (const [id, text] of Object.entries(read(`${DATA}/${where}`) ?? {})) {
-        if (!rule.ids.has(id)) fail(where, `translates unknown item "${id}"`);
+        if (!rule.ids.has(id)) staleRef(where, `translates unknown item "${id}"`);
         for (const [field, value] of Object.entries(text)) {
           if (!rule.fields.includes(field)) fail(where, `"${id}" translates "${field}", which is not text (${rule.fields.join(", ")})`);
           else if (!isText(value)) fail(where, `"${id}" has an empty ${field}`);
@@ -332,6 +350,7 @@ for (const code of localeCodes) {
   }
 }
 
+for (const [file, count] of stale) warn(file, `${count} references to realms or countries not rebuilt yet`);
 for (const w of warnings) console.warn(`warning  ${w}`);
 for (const e of errors) console.error(`error    ${e}`);
 console.log(`${errors.length} errors, ${warnings.length} warnings`);

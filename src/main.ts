@@ -20,12 +20,13 @@ import "./style.css";
 import { AxisLock } from "./axisLock";
 import { setView, track, watchTime } from "./analytics";
 import { civEraText, Civilizations, type Civilization } from "./civilizations";
-import { formatNumber, initLanguage, languageMenu, t, translatePage, withText, type MessageKey } from "./i18n";
+import { formatNumber, initLanguage, lang, languageMenu, t, translatePage, withText, type MessageKey } from "./i18n";
 import { highlightColors, TODAY_COLOURS } from "./colors";
 import { disclaimer } from "./disclaimer";
 import { Documentaries, renderDocumentaries } from "./documentaries";
 import { countryCivIds, loadCountries, type Country, type CountryView } from "./countries";
-import { BorderData, type Polity } from "./data";
+import { BorderData, type BorderSource, type Polity } from "./data";
+import { formatDate } from "./changelog";
 import { announce, externalLink } from "./dom";
 import { eraAt, eraName, ERAS, NOW } from "./eras";
 import { frameRealm } from "./frame";
@@ -527,7 +528,7 @@ function showInfo(p: Polity) {
   const civ = civs?.ofRealm(p.name);
   $("info-kind").textContent =
     civ && highlighted.includes(civ) ? (civ === active || !expanded ? t("info.highlighted") : t("info.related")) : t("info.realm");
-  $("info-name").textContent = civs?.realmName(p.name) ?? p.name;
+  $("info-name").textContent = shownName(p);
   $("info-shape").textContent = formatRange(p.from, p.to);
   const span = data?.realmSpan(p.name) ?? [p.from, p.to];
   $("info-span").textContent = formatRange(span[0], span[1]);
@@ -540,6 +541,7 @@ function showInfo(p: Polity) {
     void localPage(p.wikipedia).then((page) => (a.href = pageUrl(page)));
   }
   if (p.wikidata) links.append(externalLink(`https://www.wikidata.org/wiki/${encodeURIComponent(p.wikidata)}`, "Wikidata"));
+  showSource(p);
   // The opening of the realm's Wikipedia article, with its photos, as a civilization's overview has.
   const summary = $("info-summary");
   const gallery = $("info-gallery");
@@ -569,7 +571,10 @@ function polityAt(position: { x: number; y: number }): Polity | undefined {
   if (!defined(picked)) return undefined;
   // Borders are shared between years: the layer knows which realm a piece shows now.
   const p = layer.polityOf(picked.id) ?? (picked.id as Polity | undefined);
-  return p && typeof p === "object" && "rings" in p ? p : undefined;
+  if (!p || typeof p !== "object" || !("rings" in p)) return undefined;
+  // Land hatched over its owner (Crimea over Ukraine) is the hatching's.
+  const at = p.kind ? null : globeLonLat(position);
+  return (at && layer.hatchAt(at[0], at[1], year)) || p;
 }
 
 /** A realm picked from the list: as a click on it, turning the globe to it when it stays in view. */
@@ -587,7 +592,7 @@ function pickRealm(p: Polity) {
 // Tap or click a highlighted realm for its details, a greyed one to switch to it.
 function clickRealm(p: Polity | null | undefined) {
   hideTooltip();
-  if (!p) {
+  if (!p || p.kind === "unreviewed") {
     info.hidden = true;
     closeEvent();
     return;
@@ -607,8 +612,70 @@ function clickRealm(p: Polity | null | undefined) {
   }
 }
 
+/**
+ * A realm, territory or period name in the reader's language: a realm goes by
+ * its civilization's name, a territory or a period by its own.
+ */
+function placeName(name: string): string {
+  const own = lang === "en" ? undefined : data?.index.names?.[name]?.[lang];
+  if (own) return own;
+  const civ = civs?.ofRealm(name);
+  return civ && civ.names[0] === name ? civ.name : name;
+}
+
+/** The name a shape is shown under: its period's, its territory's or its realm's. */
+const shownName = (p: Polity) => placeName(p.display ?? p.name);
+
+/** "Natural Earth" or "Angola becomes independent, 11 November 1975 (Portuguese Angola, Wikipedia)". */
+function sourceLine(s: BorderSource): string {
+  if (!s.date) return t("info.today");
+  return `${s.what ?? s.title}, ${formatDate(s.date)}`;
+}
+
+/** "Portuguese Angola (Wikipedia), until 11 November 1975", for the tooltip. */
+function shortSource(s: BorderSource): string {
+  // Today's borders (Natural Earth), or the source of a hatching.
+  if (!s.date) return s.what ? t("info.today") : s.title;
+  return t(s.until ? "tooltip.until" : "tooltip.since", { source: s.title, date: formatDate(s.date) });
+}
+
+/** The panel's line on where the shown border comes from, with links to the map and the source. */
+function showSource(p: Polity) {
+  const el = $("info-source");
+  const s = p.source;
+  el.replaceChildren();
+  el.hidden = !s && !p.by;
+  if (p.by) {
+    el.append(t("info.heldBy", { by: placeName(p.by), date: p.since ? formatDate(p.since) : "" }), " ");
+    if (p.note) el.append(`${p.note}. `);
+  }
+  if (!s) return;
+  if (!s.date) return el.append(`${t(s.what ? "info.border" : "info.source")}: `, externalLink(s.url, s.what ? t("info.today") : s.title));
+  el.append(`${t("info.border")}: ${sourceLine(s)}`);
+  if (s.confidence) el.append(` (${t(`info.${s.confidence}` as MessageKey)})`);
+  el.append(". ");
+  if (s.map) el.append(externalLink(s.map, t("info.map")), " · ");
+  el.append(externalLink(s.url, s.title));
+}
+
+/** Land whose borders are not rebuilt yet for this year: the tooltip says so. */
+function hoverUnreviewed(x: number, y: number) {
+  layer.setHovered(null);
+  map.setHovered(null);
+  tooltip.replaceChildren(
+    Object.assign(document.createElement("strong"), { textContent: t("tooltip.unreviewed") }),
+    Object.assign(document.createElement("span"), { textContent: t("tooltip.unreviewedText") }),
+  );
+  tooltip.style.transform = `translate(${x + 14}px, ${y + 14}px)`;
+  tooltip.hidden = false;
+  scene.canvas.style.cursor = "";
+  mapCanvas.style.cursor = "";
+  render();
+}
+
 // Hovering a realm names it; a greyed realm also lights up.
 function hoverRealm(p: Polity | null | undefined, x: number, y: number) {
+  if (p?.kind === "unreviewed") return hoverUnreviewed(x, y);
   const civ = p && civs?.ofRealm(home ? realmOf(p) : p.name);
   if (!p || !civ) {
     if (!tooltip.hidden) hideTooltip();
@@ -621,12 +688,13 @@ function hoverRealm(p: Polity | null | undefined, x: number, y: number) {
   // A member of a group says so: the Kingdom of Spain in 1530 is part of the Spanish Empire.
   const groups = [...(home ? [] : (p.groups ?? [])), ...(p.partOf ? [p.partOf] : [])]
     .filter((g) => g !== p.name)
-    .map((g) => civs!.realmName(g));
+    .map((g) => placeName(g));
+  const line = (textContent: string) => Object.assign(document.createElement("span"), { textContent });
   tooltip.replaceChildren(
-    Object.assign(document.createElement("strong"), { textContent: civ.name }),
-    ...groups.map((group) =>
-      Object.assign(document.createElement("span"), { textContent: t("tooltip.partOf", { group }) }),
-    ),
+    Object.assign(document.createElement("strong"), { textContent: p.partOf || p.display || p.kind ? shownName(p) : civ.name }),
+    ...groups.map((group) => line(t("tooltip.partOf", { group }))),
+    ...(p.by ? [line(t("tooltip.heldBy", { by: placeName(p.by), year: p.since?.slice(0, 4) ?? "" }))] : []),
+    ...(p.source ? [line(t("tooltip.border", { source: shortSource(p.source) })), line(t("tooltip.borderHint"))] : []),
     Object.assign(document.createElement("span"), {
       textContent: home
         ? countryOf(civ)
@@ -1766,7 +1834,7 @@ const homeDecades = new Set<number>();
 let homeColoured: Promise<void> = Promise.resolve();
 
 /** The realm a shape is coloured as on the home globe: its largest group, or itself. */
-const realmOf = (p: Polity) => p.groups?.[0] ?? p.name;
+const realmOf = (p: Polity) => p.groups?.[0] ?? p.partOf ?? p.name;
 
 /** Colours the realms of these shapes that have none yet, neighbours apart where it can. */
 function colourRealms(shapes: Polity[]) {
@@ -1781,7 +1849,7 @@ function colourRealms(shapes: Polity[]) {
   const spans = new Map<string, [number, number]>();
   for (const p of shapes) {
     const name = realmOf(p);
-    if (homeColours.has(name)) continue;
+    if (p.kind || homeColours.has(name)) continue;
     const key = `${name}|${p.from}`;
     const area = (snapshots.get(key) ?? 0) + p.area;
     snapshots.set(key, area);
@@ -1821,6 +1889,7 @@ function colourRealms(shapes: Polity[]) {
 /** Highlights the coloured realms among these shapes. */
 function showHomeColours(shapes: Polity[]) {
   for (const p of shapes) {
+    if (p.kind) continue;
     const colour = homeColours.get(realmOf(p));
     if (colour) homeRealms.set(realmOf(p), colour);
   }
@@ -2324,7 +2393,7 @@ Promise.all([
     // On today's map, countries go by their everyday names.
     layer.nameOf = map.nameOf = (realm) => {
       const civ = home ? list.ofRealm(realm) : undefined;
-      return (civ && countryOf(civ)?.name) ?? list.realmName(realm);
+      return (civ && civ.names[0] === realm && countryOf(civ)?.name) || placeName(realm);
     };
     allEvents = events;
     countries = loaded;

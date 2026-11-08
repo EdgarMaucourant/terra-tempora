@@ -303,12 +303,20 @@
   "info": {
     "area": "{area} km²",
     "areaLabel": "Superficie",
+    "border": "Frontière",
+    "close": "relevé sur une carte",
+    "exact": "tracé exact",
     "existed": "Période d’existence",
-    "fine": "Frontières tirées de Cliopatria, approximatives.",
+    "heldBy": "Tenu par {by} depuis le {date}.",
     "highlighted": "État mis en avant",
+    "map": "carte source",
+    "page": "source",
     "realm": "État",
     "related": "État apparenté",
-    "thisBorder": "Ce tracé"
+    "rough": "approximatif",
+    "source": "Source",
+    "thisBorder": "Ce tracé",
+    "today": "Natural Earth, frontières actuelles"
   },
   "event": {
     "approximate": "{place} (emplacement approximatif)",
@@ -447,11 +455,18 @@
   "tooltip": {
     "after": "Après",
     "before": "Avant",
+    "border": "Frontière : {source}",
+    "borderHint": "Sélectionnez-le pour ouvrir la carte source",
     "event": "{kind} · {when} · cliquez pour en savoir plus",
     "explore": "{years} · cliquez pour explorer",
+    "heldBy": "Tenu par {by} depuis {year}",
     "open": "{years} · cliquez pour ouvrir",
     "partOf": "Fait partie de : {group}",
     "see": "{detail} · cliquez pour le voir",
+    "since": "{source}, depuis le {date}",
+    "unreviewed": "Pas encore vérifié",
+    "unreviewedText": "Les frontières sont en cours de reconstruction ; cette terre n’est pas encore faite pour cette année",
+    "until": "{source}, jusqu’au {date}",
     "zoomIn": "{detail} · cliquez pour zoomer"
   },
   "picker": {

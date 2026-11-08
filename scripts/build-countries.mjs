@@ -151,6 +151,15 @@ const CURATED = {
 };
 
 const index = JSON.parse(readFileSync("public/data/index.json", "utf8"));
+// Realms that are not countries (Western Sahara), by their civilization's id.
+const slugify = (name) =>
+  name
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+for (const name of index.notCountries ?? []) NOT_COUNTRIES.add(slugify(name));
 const { civilizations } = JSON.parse(readFileSync("public/data/civilizations.json", "utf8"));
 const civOfRealm = new Map();
 for (const c of civilizations) for (const n of c.names) civOfRealm.set(n, c);
@@ -168,6 +177,7 @@ const todayRings = new Map();
 const lastYear = index.to;
 for (const w of index.windows) {
   for (const shape of readWindow("public/data", w.file)) {
+    if (shape.kind) continue;
     const civ = civOfRealm.get(shape.name);
     if (!civ) continue;
     const rings = shape.rings.map(decodeRing);
@@ -179,8 +189,8 @@ for (const w of index.windows) {
     }
     // Today's land: the realm's own shapes, not its group's other members.
     // A dependency (Greenland, Puerto Rico) is not a country of its own.
-    if (shape.to >= lastYear && shape.partOf) NOT_COUNTRIES.add(civ.id);
-    if (shape.to >= lastYear) {
+    // A territory (Greenland, Puerto Rico) is its owner's, outside its main land.
+    if (shape.to >= lastYear && !shape.partOf) {
       if (!todayRings.has(civ.id)) todayRings.set(civ.id, []);
       todayRings.get(civ.id).push(...rings);
     }
