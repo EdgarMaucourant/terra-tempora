@@ -38,10 +38,18 @@ Russia).
   {
     "date": "1975-11-11",
     "what": "Angola, with Cabinda, becomes independent",
-    "source": { "title": "Portuguese Angola (Wikipedia)", "url": "https://…" },
+    "source": { "title": "Angola (Wikipedia)", "url": "https://…" },
     "map": "https://commons.wikimedia.org/wiki/File:…",
     "confidence": "exact",
-    "before": [{ "pieces": ["AGO"], "owner": "Portugal", "territory": "Portuguese Angola" }]
+    "before": [
+      {
+        "pieces": ["AGO"],
+        "owner": "Portugal",
+        "territory": "Portuguese Angola",
+        "source": { "title": "Portuguese Angola (Wikipedia)", "url": "https://…" },
+        "map": "https://commons.wikimedia.org/wiki/File:…"
+      }
+    ]
   }
   ```
 
@@ -49,6 +57,13 @@ Russia).
   back from today). `confidence` is `exact` (a treaty or official line),
   `close` (traced from a map) or `rough` (an estimate). `map` is the map the
   line was drawn from, when there is one.
+
+  **A border's source is about the realm drawn.** The change's `source` and
+  `map` are about the land as it is after the change (Angola, from 1975); each
+  `before` entry has its own `source` and `map` about the land as it was
+  (Portuguese Angola, until 1975). A change that only starts or ends a
+  hatching (Indonesia invading Portuguese Timor) leaves the land's own border
+  as it was: its source is about the occupation, as the hatch's is.
 - `realms.json`: every owner, territory and holder by its English name, with
   its Wikipedia article, Wikidata item and French and Spanish names.
   `periods` name a realm differently from a date (one realm per state, its
