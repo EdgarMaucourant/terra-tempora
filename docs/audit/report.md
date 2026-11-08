@@ -1318,7 +1318,7 @@ Articles' own items: on (scripts/article-items.json).
 - **medium** · Years differ from Wikidata: Khoshut Khanate ends in 1695 on the map, 1724 on Wikidata
 - **low** · Centre jumps far away: French India's centre moves 1522 km in 1699
 - **high** · Years differ from Wikidata: Cambodia starts in 1700 on the map, 1953 on Wikidata
-- **medium** · Wikidata item shared with another realm: Q424 (Cambodia) is the item of Kingdom of Cambodia (1956 to 2024), Cambodia (1700 to 1802)
+- **medium** · Wikidata item shared with another realm: Q424 (Cambodia) is the item of Kingdom of Cambodia (1953 to 2024), Cambodia (1700 to 1802)
 - **low** · Wikidata item doesn't look like this realm: Cambodia's article is "Cambodia Middle Period" but its item Q424 has "Cambodia"
 - **medium** · Years differ from Wikidata: Kingdom of Kartli ends in 1705 on the map, 1762 on Wikidata
 - **low** · Centre jumps far away: Portuguese Colonies's centre moves 6042 km in 1706
@@ -1807,9 +1807,10 @@ Articles' own items: on (scripts/article-items.json).
 - **high** · Another realm's land under this name: Dutch East Indies's outline is named Republic of Indonesia from 1950; Republic of Indonesia was last drawn 1323 km away (1949)
 - **medium** · Missing from the map for some years: Sultanate of Aceh is not drawn 1950 to 1952 (3 years), then comes back
 - **medium** · Years differ from Wikidata: Taiwan (Republic of China) starts in 1950 on the map, 1912 on Wikidata
-- **medium** · Predecessor or successor never near it: Nguyễn dynasty (1791 to 1884) is followed by Democratic Republic of Vietnam (1956 to 1975) on Wikidata
+- **medium** · Predecessor or successor never near it: Nguyễn dynasty (1791 to 1884) is followed by Democratic Republic of Vietnam (1954 to 1975) on Wikidata
+- **low** · Centre jumps far away: French Indochina's centre moves 7224 km in 1954
+- **medium** · Another realm's land under this name: State of Vietnam becomes Republic of Vietnam in 1956 with the same outline; Wikidata doesn't link them
 - **medium** · Predecessor or successor never near it: Nguyễn dynasty (1791 to 1884) is followed by Republic of Vietnam (1956 to 1975) on Wikidata
-- **low** · Centre jumps far away: French Indochina's centre moves 6838 km in 1956
 - **medium** · Missing from the map for some years: Kingdom of Jordan is not drawn 1958 to 1959 (2 years), then comes back
 - **medium** · Years differ from Wikidata: Sultanate of Aceh ends in 1959 on the map, 1903 on Wikidata
 - **medium** · Wikidata item shared with another realm: Q796 (Iraq) is the item of Iraqi Republic (1960 to 2005), Republic of Iraq (2014 to 2024)
@@ -1829,7 +1830,6 @@ Articles' own items: on (scripts/article-items.json).
 - **medium** · Predecessor or successor never near it: Trucial States (1820 to 1894) is followed by United Arab Emirates (1973 to 2024) on Wikidata
 - **low** · Centre jumps far away: Kingdom of Great Britain's centre moves 6071 km in 1973
 - **high** · Years differ from Wikidata: Socialist Republic of Vietnam starts in 1976 on the map, 1804 on Wikidata
-- **medium** · Another realm's land under this name: Kingdom of Laos becomes Communist Laos in 1976 with the same outline; Wikidata doesn't link them
 - **medium** · Not a state (party, army, people): Communist Laos (1976 to 2024) reads like a party, army or people
 - **medium** · Years differ from Wikidata: Communist Laos starts in 1976 on the map, 1949 on Wikidata
 - **medium** · Missing from the map for some years: Kingdom of Cambodia is not drawn 1976 to 1995 (20 years), then comes back
@@ -1845,7 +1845,7 @@ Articles' own items: on (scripts/article-items.json).
 - **medium** · Another realm's land under this name: Mongolian People's Republic becomes Mongolia in 1992 with the same outline; Wikidata doesn't link them
 - **medium** · Not a state (party, army, people): Taliban (1996 to 2005) reads like a party, army or people
 - **medium** · Not a state (party, army, people): Taliban's item Q42418 is a political movement
-- **low** · Another realm's land under this name: People's Republic of Kampuchea's outline is named Kingdom of Cambodia from 1996; Kingdom of Cambodia was drawn nearby before (1956 to 1975)
+- **low** · Another realm's land under this name: People's Republic of Kampuchea's outline is named Kingdom of Cambodia from 1996; Kingdom of Cambodia was drawn nearby before (1953 to 1975)
 - **high** · Years differ from Wikidata: Macau starts in 1999 on the map, 1557 on Wikidata
 - **medium** · Years differ from Wikidata: East Timor starts in 2006 on the map, 1975 on Wikidata
 - **medium** · Years differ from Wikidata: Republic of Iraq starts in 2014 on the map, 1932 on Wikidata

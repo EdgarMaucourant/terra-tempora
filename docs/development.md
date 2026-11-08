@@ -117,7 +117,7 @@ in Cliopatria too.
 `independent-states.geojson` draws states that Cliopatria leaves out for some
 years and folds into a larger neighbour: allies, satellites and personal unions
 drawn as if they were its own land, such as Czechoslovakia inside the USSR
-from 1969 to 1990, South Vietnam inside the United States from 1967 to 1972,
+from 1969 to 1990,
 Scotland inside England between the Union of the Crowns (1603) and the Acts
 of Union (1707), or Saxony inside Poland-Lithuania while its electors were
 kings of Poland. It also fills years Cliopatria leaves blank (Mexico
@@ -175,6 +175,15 @@ Netherlands, while Aruba, Curaçao and Sint Maarten are drawn on their own
 disputed areas (public domain), or Cliopatria's own for Taiwan and the
 Antilles. Each feature's `Claim` says why. The file was made with a script
 outside the repository.
+`indochina.geojson` draws Laos and Cambodia from their independence (1953)
+and North and South Vietnam from the Geneva Accords (1954, the State of
+Vietnam until the Republic of 1955) to 1975, in place of Cliopatria's, which
+keeps all four in French Indochina until 1955, draws South Vietnam inside the
+United States in 1967-1972 and gives the Ho Chi Minh trail in Laos and
+Cambodia to North Vietnam in 1973-1975. Their borders are the French colonial
+ones, unchanged since, so the outlines are today's from Natural Earth 1:10m
+(public domain), with Vietnam split along 17°N for the demarcation line of
+the Geneva Accords. The file was made with a script outside the repository.
 `dependencies.geojson` draws territories with a government of their own that
 belong to another state as realms of their own, from the year they took that
 status, with `PartOf` naming the state they belong to: Greenland (home rule,
