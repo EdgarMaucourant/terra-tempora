@@ -303,12 +303,20 @@
   "info": {
     "area": "{area} km²",
     "areaLabel": "Area",
+    "border": "Border",
+    "close": "traced from a map",
+    "exact": "exact line",
     "existed": "Realm existed",
-    "fine": "Borders from Cliopatria, approximate.",
+    "heldBy": "Held by {by} since {date}.",
     "highlighted": "Highlighted realm",
+    "map": "source map",
+    "page": "source",
     "realm": "Realm",
     "related": "Related realm",
-    "thisBorder": "This border"
+    "rough": "approximate",
+    "source": "Source",
+    "thisBorder": "This border",
+    "today": "Natural Earth, today's borders"
   },
   "event": {
     "approximate": "{place} (approximate location)",
@@ -447,11 +455,18 @@
   "tooltip": {
     "after": "After",
     "before": "Before",
+    "border": "Border: {source}",
+    "borderHint": "Select it to open the source map",
     "event": "{kind} · {when} · click for more",
     "explore": "{years} · click to explore",
+    "heldBy": "Held by {by} since {year}",
     "open": "{years} · click to open",
     "partOf": "Part of: {group}",
     "see": "{detail} · click to see it",
+    "since": "{source}, since {date}",
+    "unreviewed": "Not yet reviewed",
+    "unreviewedText": "The borders are being rebuilt; this land is not done for this year yet",
+    "until": "{source}, until {date}",
     "zoomIn": "{detail} · click to zoom in"
   },
   "picker": {

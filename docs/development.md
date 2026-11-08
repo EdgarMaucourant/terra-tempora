@@ -11,11 +11,17 @@ npm run build     # static site in dist/
 ```
 
 The border data in `public/data/` is already committed, so the app runs without
-rebuilding it. `npm run data` rebuilds it: the first run downloads the
-Cliopatria borders (about 46 MB, unzipped with `unzip`) into `data-raw/`.
+rebuilding it. `npm run data` rebuilds it from the rebuilt borders in
+`borders/` (see [borders/README.md](../borders/README.md)): the first run
+downloads Natural Earth's 1:10m provinces (about 40 MB) into `data-raw/`.
 `npm run civs` rebuilds only the civilization list from the border files.
 
-## Border overrides
+## Border overrides (the old Cliopatria build)
+
+The borders are being rebuilt from scratch in `borders/`. Until that is done,
+the old build below (`scripts/build-data.mjs`, Cliopatria with hand-traced
+overrides) stays in the repository for reference, but `npm run data` no longer
+runs it.
 
 Each `scripts/border-overrides/*.geojson` file holds hand-traced borders that
 `npm run data` puts in place of Cliopatria's. Each feature has these properties:

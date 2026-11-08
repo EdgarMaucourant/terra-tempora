@@ -1,0 +1,554 @@
+{
+ "note": "Places whose owner was checked against a source, for every year in `years` (each year is the map on 31 December). `heldBy` lists the years the place is drawn hatched as held by another state; in all other years it must not be hatched. Checked by npm run check.",
+ "points": [
+  {
+   "place": "Lisbon",
+   "lonLat": [
+    -9.14,
+    38.72
+   ],
+   "years": [
+    1974,
+    2026
+   ],
+   "realm": "Portugal",
+   "why": "Capital of Portugal"
+  },
+  {
+   "place": "Funchal",
+   "lonLat": [
+    -16.91,
+    32.65
+   ],
+   "years": [
+    1974,
+    2026
+   ],
+   "realm": "Portugal",
+   "why": "Madeira, part of Portugal (an autonomous region since 1976)"
+  },
+  {
+   "place": "Ponta Delgada",
+   "lonLat": [
+    -25.67,
+    37.75
+   ],
+   "years": [
+    1974,
+    2026
+   ],
+   "realm": "Portugal",
+   "why": "The Azores, part of Portugal (an autonomous region since 1976)"
+  },
+  {
+   "place": "Olivenza",
+   "lonLat": [
+    -7.1,
+    38.68
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "realm": "Spain",
+   "why": "Held by Spain since 1801; Portugal still claims it"
+  },
+  {
+   "place": "Bissau",
+   "lonLat": [
+    -15.6,
+    11.86
+   ],
+   "years": [
+    1974,
+    2026
+   ],
+   "realm": "Guinea-Bissau",
+   "why": "Independence recognised by Portugal on 10 September 1974"
+  },
+  {
+   "place": "Maputo",
+   "lonLat": [
+    32.57,
+    -25.95
+   ],
+   "years": [
+    1974,
+    1974
+   ],
+   "realm": "Portuguese Mozambique",
+   "why": "Portuguese until independence on 25 June 1975"
+  },
+  {
+   "place": "Maputo",
+   "lonLat": [
+    32.57,
+    -25.95
+   ],
+   "years": [
+    1975,
+    2026
+   ],
+   "realm": "Mozambique",
+   "why": "Independent since 25 June 1975"
+  },
+  {
+   "place": "Praia",
+   "lonLat": [
+    -23.51,
+    14.93
+   ],
+   "years": [
+    1974,
+    1974
+   ],
+   "realm": "Portuguese Cape Verde",
+   "why": "Portuguese until independence on 5 July 1975"
+  },
+  {
+   "place": "Praia",
+   "lonLat": [
+    -23.51,
+    14.93
+   ],
+   "years": [
+    1975,
+    2026
+   ],
+   "realm": "Cape Verde",
+   "why": "Independent since 5 July 1975"
+  },
+  {
+   "place": "São Tomé",
+   "lonLat": [
+    6.7,
+    0.3
+   ],
+   "years": [
+    1974,
+    1974
+   ],
+   "realm": "Portuguese São Tomé and Príncipe",
+   "why": "Portuguese until independence on 12 July 1975"
+  },
+  {
+   "place": "São Tomé",
+   "lonLat": [
+    6.7,
+    0.3
+   ],
+   "years": [
+    1975,
+    2026
+   ],
+   "realm": "São Tomé and Príncipe",
+   "why": "Independent since 12 July 1975"
+  },
+  {
+   "place": "Luanda",
+   "lonLat": [
+    13.25,
+    -8.85
+   ],
+   "years": [
+    1974,
+    1974
+   ],
+   "realm": "Portuguese Angola",
+   "why": "Portuguese until independence on 11 November 1975"
+  },
+  {
+   "place": "Luanda",
+   "lonLat": [
+    13.25,
+    -8.85
+   ],
+   "years": [
+    1975,
+    2026
+   ],
+   "realm": "Angola",
+   "why": "Independent since 11 November 1975"
+  },
+  {
+   "place": "Cabinda",
+   "lonLat": [
+    12.25,
+    -5.4
+   ],
+   "years": [
+    1975,
+    2026
+   ],
+   "realm": "Angola",
+   "why": "Part of Angola since independence"
+  },
+  {
+   "place": "Dili",
+   "lonLat": [
+    125.6,
+    -8.6
+   ],
+   "years": [
+    1974,
+    1998
+   ],
+   "realm": "Portuguese Timor",
+   "heldBy": [
+    {
+     "years": [
+      1975,
+      1998
+     ],
+     "by": "Indonesia"
+    }
+   ],
+   "why": "Portuguese under UN law until 1999; held by Indonesia from 7 December 1975"
+  },
+  {
+   "place": "Dili",
+   "lonLat": [
+    125.6,
+    -8.6
+   ],
+   "years": [
+    1999,
+    2001
+   ],
+   "realm": "East Timor under UN administration",
+   "why": "UN transitional administration from 25 October 1999"
+  },
+  {
+   "place": "Dili",
+   "lonLat": [
+    125.6,
+    -8.6
+   ],
+   "years": [
+    2002,
+    2026
+   ],
+   "realm": "Timor-Leste",
+   "why": "Independent since 20 May 2002"
+  },
+  {
+   "place": "Macau",
+   "lonLat": [
+    113.56,
+    22.14
+   ],
+   "years": [
+    1974,
+    1998
+   ],
+   "realm": "Portuguese Macau",
+   "why": "Under Portuguese administration until the handover of 20 December 1999"
+  },
+  {
+   "place": "Macau",
+   "lonLat": [
+    113.56,
+    22.14
+   ],
+   "years": [
+    1999,
+    2026
+   ],
+   "realm": "Macau",
+   "why": "A special administrative region of China since 20 December 1999"
+  },
+  {
+   "place": "Simferopol",
+   "lonLat": [
+    34.1,
+    44.95
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "realm": "Ukraine",
+   "heldBy": [
+    {
+     "years": [
+      2026,
+      2026
+     ],
+     "by": "Russia"
+    }
+   ],
+   "why": "Ukraine's, annexed by Russia in 2014 (UN General Assembly resolution 68/262)"
+  },
+  {
+   "place": "Tiraspol",
+   "lonLat": [
+    29.62,
+    46.84
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "realm": "Moldova",
+   "heldBy": [
+    {
+     "years": [
+      2026,
+      2026
+     ],
+     "by": "Transnistria"
+    }
+   ],
+   "why": "Moldova's, held by Transnistria"
+  },
+  {
+   "place": "Sukhumi",
+   "lonLat": [
+    41.02,
+    43
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "realm": "Georgia",
+   "heldBy": [
+    {
+     "years": [
+      2026,
+      2026
+     ],
+     "by": "Abkhazia"
+    }
+   ],
+   "why": "Georgia's, held by Abkhazia"
+  },
+  {
+   "place": "North Nicosia",
+   "lonLat": [
+    33.37,
+    35.2
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "realm": "Cyprus",
+   "heldBy": [
+    {
+     "years": [
+      2026,
+      2026
+     ],
+     "by": "Northern Cyprus"
+    }
+   ],
+   "why": "Cyprus's (UN Security Council resolution 541)"
+  },
+  {
+   "place": "Hargeisa",
+   "lonLat": [
+    44.06,
+    9.56
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "realm": "Somalia",
+   "heldBy": [
+    {
+     "years": [
+      2026,
+      2026
+     ],
+     "by": "Somaliland"
+    }
+   ],
+   "why": "Somalia's, held by Somaliland"
+  },
+  {
+   "place": "Golan Heights",
+   "lonLat": [
+    35.75,
+    33
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "realm": "Syria",
+   "heldBy": [
+    {
+     "years": [
+      2026,
+      2026
+     ],
+     "by": "Israel"
+    }
+   ],
+   "why": "Syria's, occupied by Israel since 1967 (UN Security Council resolution 497)"
+  },
+  {
+   "place": "East Jerusalem",
+   "lonLat": [
+    35.235,
+    31.785
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "realm": "Palestine",
+   "heldBy": [
+    {
+     "years": [
+      2026,
+      2026
+     ],
+     "by": "Israel"
+    }
+   ],
+   "why": "Beyond the 1949 armistice line"
+  },
+  {
+   "place": "West Jerusalem",
+   "lonLat": [
+    35.2,
+    31.78
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "realm": "Israel",
+   "why": "Inside the 1949 armistice line"
+  },
+  {
+   "place": "Laayoune",
+   "lonLat": [
+    -13.2,
+    27.15
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "realm": "Western Sahara",
+   "why": "A non-self-governing territory on the UN list",
+   "heldBy": [
+    {
+     "years": [
+      2026,
+      2026
+     ],
+     "by": "Morocco"
+    }
+   ]
+  },
+  {
+   "place": "Nuuk",
+   "lonLat": [
+    -51.7,
+    64.18
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "realm": "Greenland",
+   "why": "Part of the Kingdom of Denmark"
+  },
+  {
+   "place": "Copenhagen",
+   "lonLat": [
+    12.5,
+    55.68
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "realm": "Denmark",
+   "why": "Capital of Denmark"
+  },
+  {
+   "place": "Taipei",
+   "lonLat": [
+    121.56,
+    25.03
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "realm": "Taiwan (Republic of China)",
+   "why": "Governed by the Republic of China"
+  },
+  {
+   "place": "Pristina",
+   "lonLat": [
+    21.17,
+    42.66
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "realm": "Kosovo",
+   "why": "Recognised by most EU members"
+  },
+  {
+   "place": "Stepanakert",
+   "lonLat": [
+    46.75,
+    39.82
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "realm": "Azerbaijan",
+   "why": "Azerbaijan's"
+  },
+  {
+   "place": "Antarctica",
+   "lonLat": [
+    0,
+    -80
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "realm": null,
+   "why": "No state's (Antarctic Treaty)"
+  },
+  {
+   "place": "Bir Lehlou",
+   "lonLat": [
+    -9.6,
+    26.35
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "realm": "Western Sahara",
+   "why": "East of Morocco’s sand wall, not held by Morocco"
+  },
+  {
+   "place": "Tan-Tan",
+   "lonLat": [
+    -11.1,
+    28.44
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "realm": "Morocco",
+   "why": "North of Western Sahara’s border"
+  }
+ ]
+}
