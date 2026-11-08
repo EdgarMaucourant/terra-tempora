@@ -1808,7 +1808,7 @@ Articles' own items: on (scripts/article-items.json).
 - **medium** · Missing from the map for some years: Sultanate of Aceh is not drawn 1950 to 1952 (3 years), then comes back
 - **medium** · Years differ from Wikidata: Taiwan (Republic of China) starts in 1950 on the map, 1912 on Wikidata
 - **medium** · Predecessor or successor never near it: Nguyễn dynasty (1791 to 1884) is followed by Democratic Republic of Vietnam (1954 to 1975) on Wikidata
-- **low** · Centre jumps far away: French Indochina's centre moves 7240 km in 1954
+- **low** · Centre jumps far away: French Indochina's centre moves 7215 km in 1954
 - **medium** · Another realm's land under this name: State of Vietnam becomes Republic of Vietnam in 1956 with the same outline; Wikidata doesn't link them
 - **medium** · Predecessor or successor never near it: Nguyễn dynasty (1791 to 1884) is followed by Republic of Vietnam (1956 to 1975) on Wikidata
 - **medium** · Missing from the map for some years: Kingdom of Jordan is not drawn 1958 to 1959 (2 years), then comes back
