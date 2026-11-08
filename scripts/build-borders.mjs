@@ -164,7 +164,7 @@ for (const f of families) {
 }
 const firstReviewed = Math.min(...[...reviewedFrom.values()].filter(Number.isFinite));
 
-// Problems that stop the build: a change with no source, an owner with no realm.
+// Problems that stop the build: a change or a former owner with no source, an owner with no realm.
 const problems = [];
 const knownRealm = (name, where) => {
   if (!realms[name]) problems.push(`${where}: "${name}" is not in borders/realms.json`);
@@ -181,6 +181,9 @@ for (const c of changes) {
   if (!c.what || !c.source?.title || !/^https:\/\//.test(c.source?.url ?? "")) problems.push(`${where}: needs what, and a source with a title and an https url`);
   if (!["exact", "close", "rough"].includes(c.confidence)) problems.push(`${where}: confidence must be exact, close or rough`);
   for (const b of c.before) {
+    if (b.owner && (!b.source?.title || !/^https:\/\//.test(b.source?.url ?? ""))) {
+      problems.push(`${where}: each "before" needs a source about the land as it was, with a title and an https url`);
+    }
     if (b.owner) knownRealm(b.owner, where);
     if (b.territory) knownRealm(b.territory, where);
     if (b.hatch) knownRealm(b.hatch.by, where);
@@ -213,31 +216,56 @@ function addYear(year, groups) {
 /** The change that explains a group of pieces at a year: the latest one up to it, else the next one after. */
 function changeFor(ids, year) {
   const set = new Set(ids);
-  const touching = changes.filter((c) => c.before.some((b) => b.ids.some((id) => set.has(id))));
+  // Only changes of owner or territory: a hatching beginning (Indonesia
+  // invading Portuguese Timor) leaves the land's own border as it was.
+  const touching = changes.filter((c) => !c.hatchOnly && c.before.some((b) => b.ids.some((id) => set.has(id))));
   return touching.find((c) => c.year <= year) ?? touching.findLast((c) => c.year > year) ?? null;
 }
 
 const baseSource = { title: "Natural Earth", url: today.source.url, what: `Borders of ${TODAY}` };
-// A change after the year documents what the land was until then (Portuguese
-// Angola until 1975); one before it, what the land has been since.
-const sourceOf = (c, year) =>
-  c
-    ? {
-        title: c.source.title,
-        url: c.source.url,
-        ...(c.map && { map: c.map }),
-        what: c.what,
-        date: c.date,
-        ...(c.year > year && { until: true }),
-        confidence: c.confidence,
-      }
-    : baseSource;
+/**
+ * The source of a border is about the realm drawn: after a change, the
+ * change's own source (Angola, since 1975); before it, the source of what the
+ * land was (Portuguese Angola, until 1975).
+ */
+function sourceOf(c, year, ids) {
+  if (!c) return baseSource;
+  const until = c.year > year;
+  const set = new Set(ids);
+  const from = until ? c.before.find((b) => b.ids.some((id) => set.has(id))) : c;
+  return {
+    title: from.source.title,
+    url: from.source.url,
+    ...(from.map && { map: from.map }),
+    what: c.what,
+    date: c.date,
+    ...(until && { until: true }),
+    confidence: c.confidence,
+  };
+}
 
 /** A realm's name for a year, when one of its periods names it differently. */
 function periodName(name, year) {
   const periods = (realms[name]?.periods ?? []).filter((p) => Number(p.from.slice(0, 4)) <= year);
   const period = periods.sort((a, b) => b.from.localeCompare(a.from))[0];
   return period && period.name !== name ? period.name : undefined;
+}
+
+// Changes that only begin or end a hatching, found by walking back once.
+{
+  const walk = new Map(state);
+  for (const c of changes) {
+    c.hatchOnly = c.before.every((b) =>
+      b.ids.every((id) => {
+        const after = walk.get(id);
+        return after && b.owner === after.owner && (b.territory ?? null) === (after.territory ?? null);
+      }),
+    );
+    for (const b of c.before) {
+      const value = b.owner ? { owner: b.owner, ...(b.territory && { territory: b.territory }), ...(b.hatch && { hatch: b.hatch }) } : null;
+      for (const id of b.ids) walk.set(id, value);
+    }
+  }
 }
 
 const current = new Map(state);
@@ -277,7 +305,7 @@ for (let year = TODAY; year >= firstReviewed; year--) {
   for (const [key, g] of groups) {
     if (g.meta.kind) continue;
     const display = periodName(g.meta.name, year);
-    g.meta = { ...g.meta, ...(display && { display }), source: sourceOf(changeFor(g.ids, year), year) };
+    g.meta = { ...g.meta, ...(display && { display }), source: sourceOf(changeFor(g.ids, year), year, g.ids) };
     groups.set(key, g);
   }
   addYear(year, groups);
