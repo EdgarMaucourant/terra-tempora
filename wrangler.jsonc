@@ -22,6 +22,10 @@
     "run_worker_first": ["/api/*", "/"]
   },
   "vars": {
+    // "on" shows the "back soon" page (public/maintenance.html) instead of the
+    // globe on the live site; anything else shows the globe. Branch previews
+    // don't set it, so they keep showing the globe.
+    "MAINTENANCE": "on",
     // Where reports are filed. The token that writes them is the GITHUB_TOKEN secret.
     "GITHUB_REPO": "EdgarMaucourant/terra-tempora",
     // The usage counts /api/stats reads (the dataset EVENTS writes to).
