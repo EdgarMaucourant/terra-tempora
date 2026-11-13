@@ -27,7 +27,7 @@ import { Documentaries, renderDocumentaries } from "./documentaries";
 import { countryCivIds, loadCountries, type Country, type CountryView } from "./countries";
 import { BorderData, type BorderSource, type Polity } from "./data";
 import { formatDate } from "./changelog";
-import { announce, externalLink } from "./dom";
+import { announce, el, externalLink } from "./dom";
 import { eraAt, eraName, ERAS, NOW } from "./eras";
 import { frameRealm } from "./frame";
 import { EventLayer } from "./eventLayer";
@@ -410,12 +410,18 @@ function updateLookahead() {
   layer.lookahead = Math.min(60, Math.max(3, speed * 0.75));
 }
 
+// The place panel's "what is drawn this year" block (showPlaceNow).
+const placeNow = $("place-now");
+let placeNowAsked = 0;
+let placeTimer = 0;
+
 function setYear(next: number) {
   year = Math.min(NOW, Math.max(FIRST_YEAR, next));
   showYear();
   updateLookahead();
   ensureBorders();
   if (home) colourAround(year);
+  schedulePlaceNow();
   render();
 }
 
@@ -527,7 +533,7 @@ function showInfo(p: Polity) {
   closeEvent();
   const civ = civs?.ofRealm(p.name);
   $("info-kind").textContent =
-    civ && highlighted.includes(civ) ? (civ === active || !expanded ? t("info.highlighted") : t("info.related")) : t("info.realm");
+    civ && countryOf(civ) ? t("overview.nation") : civ && highlighted.includes(civ) ? (civ === active || !expanded ? t("info.highlighted") : t("info.related")) : t("info.realm");
   $("info-name").textContent = shownName(p);
   $("info-shape").textContent = formatRange(p.from, p.to);
   const span = data?.realmSpan(p.name) ?? [p.from, p.to];
@@ -598,6 +604,67 @@ function placeOf(name: string): Country | undefined {
   return civ ? countryOf(civ) : undefined;
 }
 
+/** The history of the place open, when its land is rebuilt: Portuguese Timor, then Timor-Leste. */
+function placeHistory(): { name: string; from: number; to: number }[] | undefined {
+  const places = data?.index.places;
+  const c = country && civs?.get(country.civ);
+  return c && places ? c.names.map((n) => places[n]).find((h) => !!h) : undefined;
+}
+
+/** Shows the place's panel (its overview, with what is drawn this year), as the panel of every tap on its land. */
+function showPlace() {
+  hideTooltip();
+  sources.hidden = true;
+  closeEvent();
+  info.hidden = true;
+  if (!panel.isOpen) panel.setOpen(true, false);
+  showPlaceNow();
+}
+
+// Under the place's overview: what is drawn on its land in the year shown,
+// with the border's dates and source. It follows the playhead.
+function schedulePlaceNow() {
+  if (placeNow.hidden && !placeHistory()) return;
+  clearTimeout(placeTimer);
+  placeTimer = window.setTimeout(showPlaceNow, playing ? 400 : 120);
+}
+
+function showPlaceNow() {
+  const history = placeHistory();
+  const mine = ++placeNowAsked;
+  if (!history || !data) {
+    placeNow.hidden = true;
+    return;
+  }
+  const at = Math.round(year);
+  const entry = history.find((h) => h.from <= at && at <= h.to);
+  const head = el("h3", "event-more", t("place.inYear", { year: formatYear(at) }));
+  if (!entry) {
+    placeNow.replaceChildren(head, el("p", "fine", t("tooltip.unreviewedText")));
+    placeNow.hidden = false;
+    return;
+  }
+  data.load(at, at).then(
+    (shapes) => {
+      if (mine !== placeNowAsked) return;
+      const own = shapes.filter((p) => !p.kind && p.name === entry.name && at >= p.from && at <= p.to);
+      const p = own.reduce<Polity | null>((best, q) => (!best || q.area > best.area ? q : best), null);
+      // Land held by another state (Indonesia over Portuguese Timor) says so.
+      const held = p?.label ? layer.hatchAt(p.label[0], p.label[1], at) : undefined;
+      const name = el("p", "place-now-name");
+      name.append(el("strong", undefined, p ? shownName(p) : placeName(entry.name)));
+      if (p) name.append(` · ${t("info.thisBorder")} ${formatRange(p.from, p.to)}`);
+      const source = el("p", "fine");
+      if (held) showSource(held, source);
+      const border = el("p", "fine");
+      if (p) showSource(p, border);
+      placeNow.replaceChildren(head, name, ...(held ? [source] : []), border);
+      placeNow.hidden = false;
+    },
+    () => {},
+  );
+}
+
 // Tap or click a highlighted realm for its details, a greyed one to switch to it.
 function clickRealm(p: Polity | null | undefined) {
   hideTooltip();
@@ -616,6 +683,9 @@ function clickRealm(p: Polity | null | undefined) {
     info.hidden = true;
     return openCountry(place, "nationality", { push: true });
   }
+  // The place's own land, whatever the year, shows the place's panel: the
+  // same text every time, with what is drawn this year under it.
+  if (place) return showPlace();
   // The home globe colours a group's members as the group, so they open it;
   // a territory (Macau) opens its own history.
   const civ = civs?.ofRealm(home && !p.partOf ? realmOf(p) : p.name);
@@ -660,8 +730,7 @@ function shortSource(s: BorderSource): string {
 }
 
 /** The panel's line on where the shown border comes from, with links to the map and the source. */
-function showSource(p: Polity) {
-  const el = $("info-source");
+function showSource(p: Polity, el = $("info-source")) {
   const s = p.source;
   el.replaceChildren();
   el.hidden = !s && !p.by;
@@ -1162,6 +1231,8 @@ function focusCiv(c: Civilization) {
     setYearEverywhere(c.peakYear);
   }
   flyToRealm(c);
+  // In a place's history every lane is the place: its panel, as a tap on the map shows.
+  if (placeHistory()) return showPlace();
   // A realm's details left open would still describe the one tapped before.
   if (!info.hidden) showRealmOf(c);
 }
@@ -1676,6 +1747,7 @@ function showMasthead() {
     });
   } else if (list.length === 1) overview.render({ kind: "civ", civ: list[0] });
   else overview.render({ kind: "several", civs: list, title, sub: $("civ-sub").textContent ?? "" });
+  showPlaceNow();
   info.hidden = true;
   sources.hidden = true;
   closeEvent();
