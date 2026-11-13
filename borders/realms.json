@@ -488,6 +488,12 @@
   "fr": "France",
   "es": "Francia"
  },
+ "Free Dadra and Nagar Haveli": {
+  "wikipedia": "Free Dadra and Nagar Haveli",
+  "wikidata": "Q86750256",
+  "fr": "Dadra et Nagar Haveli libres",
+  "es": "Dadra y Nagar Haveli libres"
+ },
  "French Polynesia": {
   "wikipedia": "French Polynesia",
   "wikidata": "Q30971",
@@ -514,11 +520,35 @@
   "fr": "Géorgie",
   "es": "Georgia"
  },
+ "German East Africa": {
+  "wikipedia": "German East Africa",
+  "wikidata": "Q153963",
+  "fr": "Afrique orientale allemande",
+  "es": "África Oriental Alemana",
+  "withOwner": false
+ },
  "Germany": {
   "wikipedia": "Germany",
   "wikidata": "Q183",
   "fr": "Allemagne",
-  "es": "Alemania"
+  "es": "Alemania",
+  "periods": [
+   {
+    "from": "1871-01-18",
+    "name": "German Empire",
+    "wikipedia": "German Empire",
+    "fr": "Empire allemand",
+    "es": "Imperio alemán",
+    "note": "Proclaimed at Versailles; only named here for German East Africa until the Germany family is reviewed"
+   },
+   {
+    "from": "1918-11-09",
+    "name": "Weimar Republic",
+    "wikipedia": "Weimar Republic",
+    "fr": "République de Weimar",
+    "es": "República de Weimar"
+   }
+  ]
  },
  "Ghana": {
   "wikipedia": "Ghana",
@@ -1086,6 +1116,38 @@
   "es": "Portugal",
   "periods": [
    {
+    "from": "1143-10-05",
+    "name": "Kingdom of Portugal",
+    "wikipedia": "Kingdom of Portugal",
+    "fr": "Royaume de Portugal",
+    "es": "Reino de Portugal",
+    "note": "The kingdom, a constitutional monarchy from 1822"
+   },
+   {
+    "from": "1910-10-05",
+    "name": "First Portuguese Republic",
+    "wikipedia": "First Portuguese Republic",
+    "fr": "Première République portugaise",
+    "es": "Primera República Portuguesa",
+    "note": "Republic proclaimed by the 5 October 1910 revolution"
+   },
+   {
+    "from": "1926-05-28",
+    "name": "Ditadura Nacional",
+    "wikipedia": "Ditadura Nacional",
+    "fr": "Dictature nationale (Portugal)",
+    "es": "Dictadura Nacional (Portugal)",
+    "note": "Military dictatorship after the 28 May 1926 coup"
+   },
+   {
+    "from": "1933-04-11",
+    "name": "Estado Novo",
+    "wikipedia": "Estado Novo (Portugal)",
+    "fr": "Estado Novo (Portugal)",
+    "es": "Estado Novo (Portugal)",
+    "note": "Salazar's regime, from the 1933 Constitution"
+   },
+   {
     "from": "1974-04-25",
     "name": "Portugal",
     "wikipedia": "Portugal",
@@ -1105,6 +1167,20 @@
   "wikidata": "Q3023340",
   "fr": "Cap-Vert portugais",
   "es": "Cabo Verde portugués",
+  "withOwner": false
+ },
+ "Portuguese Guinea": {
+  "wikipedia": "Portuguese Guinea",
+  "wikidata": "Q2002279",
+  "fr": "Guinée portugaise",
+  "es": "Guinea portuguesa",
+  "withOwner": false
+ },
+ "Portuguese India": {
+  "wikipedia": "Portuguese India",
+  "wikidata": "Q323904",
+  "fr": "Inde portugaise",
+  "es": "India portuguesa",
   "withOwner": false
  },
  "Portuguese Macau": {
@@ -1224,6 +1300,12 @@
   "wikidata": "Q238",
   "fr": "Saint-Marin",
   "es": "San Marino"
+ },
+ "São Tomé and Príncipe": {
+  "wikipedia": "São Tomé and Príncipe",
+  "wikidata": "Q1039",
+  "fr": "Sao Tomé-et-Principe",
+  "es": "Santo Tomé y Príncipe"
  },
  "Saudi Arabia": {
   "wikipedia": "Saudi Arabia",
@@ -1363,12 +1445,6 @@
   "wikidata": "Q858",
   "fr": "Syrie",
   "es": "Siria"
- },
- "São Tomé and Príncipe": {
-  "wikipedia": "São Tomé and Príncipe",
-  "wikidata": "Q1039",
-  "fr": "Sao Tomé-et-Principe",
-  "es": "Santo Tomé y Príncipe"
  },
  "Taiwan (Republic of China)": {
   "wikipedia": "Taiwan",
