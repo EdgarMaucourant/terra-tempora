@@ -1120,6 +1120,197 @@
    "search": "German surrender 1945 V-E Day"
   },
   {
+   "id": "lisbon-regicide-1908",
+   "kind": "death",
+   "year": 1908,
+   "title": "King Carlos is killed in Lisbon, 1 February 1908",
+   "place": "Terreiro do Paço, Lisbon",
+   "lonLat": [
+    -9.1365,
+    38.7075
+   ],
+   "civs": [
+    "portugal"
+   ],
+   "summary": "Republican gunmen shoot King Carlos I and his heir Luís Filipe as the royal carriage crosses the Terreiro do Paço. The young Manuel II takes the throne, but the monarchy never recovers and falls two years later.",
+   "wikipedia": "Lisbon_Regicide",
+   "search": "Lisbon Regicide King Carlos"
+  },
+  {
+   "id": "portuguese-republic-1910",
+   "kind": "revolution",
+   "year": 1910,
+   "title": "Portugal becomes a republic, 5 October 1910",
+   "place": "Lisbon City Hall",
+   "lonLat": [
+    -9.1395,
+    38.7078
+   ],
+   "civs": [
+    "portugal"
+   ],
+   "summary": "After two days of fighting in Lisbon, the republic is proclaimed from the balcony of the City Hall. King Manuel II sails into exile in England, ending almost eight centuries of monarchy.",
+   "wikipedia": "5_October_1910_revolution",
+   "search": "5 October 1910 revolution Portuguese Republic"
+  },
+  {
+   "id": "portugal-enters-ww1-1916",
+   "kind": "war",
+   "year": 1916,
+   "title": "Portugal enters the First World War, 9 March 1916",
+   "place": "Lisbon",
+   "lonLat": [
+    -9.139,
+    38.722
+   ],
+   "civs": [
+    "portugal"
+   ],
+   "summary": "At Britain's request Portugal seizes the German ships in its harbours, and Germany declares war. Portugal was already fighting the Germans on the borders of Angola and Mozambique. It sends an expeditionary corps to Flanders, which is broken at the Battle of La Lys in April 1918.",
+   "wikipedia": "Portugal_during_World_War_I",
+   "search": "Portugal First World War 1916"
+  },
+  {
+   "id": "coup-28-may-1926",
+   "kind": "revolution",
+   "year": 1926,
+   "title": "The 28 May coup ends the First Republic, 1926",
+   "place": "Braga",
+   "lonLat": [
+    -8.4265,
+    41.5503
+   ],
+   "civs": [
+    "portugal"
+   ],
+   "summary": "General Gomes da Costa marches on Lisbon from Braga and the army takes power without a fight. Sixteen years of unstable republic, with dozens of governments, give way to a military dictatorship, the Ditadura Nacional.",
+   "wikipedia": "28_May_1926_coup_d'état",
+   "search": "28 May 1926 coup Portugal"
+  },
+  {
+   "id": "estado-novo-constitution-1933",
+   "kind": "crown",
+   "year": 1933,
+   "title": "Salazar's Estado Novo constitution, 11 April 1933",
+   "place": "Lisbon",
+   "lonLat": [
+    -9.139,
+    38.722
+   ],
+   "civs": [
+    "portugal"
+   ],
+   "summary": "A new constitution, approved in a plebiscite, founds the Estado Novo. António de Oliveira Salazar, prime minister since 1932, rules a single-party, corporatist state with censorship and a political police, the PVDE, later PIDE. The regime lasts 41 years.",
+   "wikipedia": "Estado_Novo_(Portugal)",
+   "search": "Estado Novo constitution 1933 Salazar"
+  },
+  {
+   "id": "japan-invades-timor-1942",
+   "kind": "battle",
+   "year": 1942,
+   "title": "Japan invades Portuguese Timor, 20 February 1942",
+   "place": "Dili",
+   "lonLat": [
+    125.578,
+    -8.556
+   ],
+   "civs": [
+    "portugal",
+    "portuguese-timor"
+   ],
+   "summary": "Japanese troops land at Dili, although Portugal is neutral. Australian and Dutch commandos, helped by Timorese, fight on in the mountains for a year. The occupation lasts until Japan's surrender in 1945, and tens of thousands of Timorese die.",
+   "wikipedia": "Battle_of_Timor",
+   "search": "Battle of Timor Japanese invasion 1942"
+  },
+  {
+   "id": "dadra-nagar-haveli-1954",
+   "kind": "empire",
+   "year": 1954,
+   "title": "Volunteers seize Dadra and Nagar Haveli, 2 August 1954",
+   "place": "Silvassa",
+   "lonLat": [
+    73.008,
+    20.274
+   ],
+   "civs": [
+    "portugal",
+    "portuguese-india"
+   ],
+   "summary": "Indian volunteers take Dadra and then Nagar Haveli, two Portuguese enclaves cut off from the coast. India blocks Portuguese troops from crossing its land, and the enclaves govern themselves as Free Dadra and Nagar Haveli until India annexes them in 1961.",
+   "wikipedia": "Indian_annexation_of_Dadra_and_Nagar_Haveli",
+   "search": "Dadra and Nagar Haveli 1954 liberation"
+  },
+  {
+   "id": "delgado-campaign-1958",
+   "kind": "revolution",
+   "year": 1958,
+   "title": "General Delgado challenges the regime, 1958",
+   "place": "Porto",
+   "lonLat": [
+    -8.611,
+    41.149
+   ],
+   "civs": [
+    "portugal"
+   ],
+   "summary": "Humberto Delgado runs for president against the Estado Novo's candidate and promises to dismiss Salazar. Huge crowds greet him in Porto and Lisbon, but the vote of 8 June is rigged and he is credited with only a quarter of it. He goes into exile and is murdered by the PIDE in 1965.",
+   "wikipedia": "Humberto_Delgado",
+   "search": "Humberto Delgado 1958 election"
+  },
+  {
+   "id": "colonial-war-1961",
+   "kind": "war",
+   "year": 1961,
+   "title": "The colonial war begins in Angola, 4 February 1961",
+   "place": "Luanda",
+   "lonLat": [
+    13.234,
+    -8.839
+   ],
+   "civs": [
+    "portugal",
+    "portuguese-angola"
+   ],
+   "summary": "Nationalists attack Luanda's prisons, and in March a large uprising breaks out in the north. The war spreads to Guinea in 1963 and Mozambique in 1964. For thirteen years Portugal fights on three fronts, until the army itself overthrows the regime in 1974.",
+   "wikipedia": "Portuguese_Colonial_War",
+   "search": "Portuguese Colonial War Angola 1961"
+  },
+  {
+   "id": "india-takes-goa-1961",
+   "kind": "battle",
+   "year": 1961,
+   "title": "India takes Goa, Daman and Diu, 19 December 1961",
+   "place": "Panaji, Goa",
+   "lonLat": [
+    73.828,
+    15.498
+   ],
+   "civs": [
+    "portugal",
+    "portuguese-india"
+   ],
+   "summary": "After years of failed talks, the Indian army moves into Portugal's last enclaves in India. Salazar orders a fight to the death, but Governor Vassalo e Silva surrenders after 36 hours. Portugal recognises the loss only after the Carnation Revolution, in 1974.",
+   "wikipedia": "Indian_annexation_of_Goa",
+   "search": "Indian annexation of Goa 1961"
+  },
+  {
+   "id": "caetano-replaces-salazar-1968",
+   "kind": "crown",
+   "year": 1968,
+   "title": "Caetano replaces Salazar, 27 September 1968",
+   "place": "São Bento Palace, Lisbon",
+   "lonLat": [
+    -9.1535,
+    38.7135
+   ],
+   "civs": [
+    "portugal"
+   ],
+   "summary": "After a stroke leaves Salazar unable to rule, Marcello Caetano takes over as head of government. His promise of a cautious opening, the 'Marcelist spring', soon fades, and the colonial wars go on. Salazar dies in 1970, still believing he was in charge.",
+   "wikipedia": "Marcello_Caetano",
+   "search": "Marcello Caetano Salazar 1968"
+  },
+  {
    "id": "carnation-revolution-1974",
    "kind": "revolution",
    "year": 1974,
