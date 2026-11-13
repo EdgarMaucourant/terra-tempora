@@ -315,8 +315,9 @@ for (let year = TODAY; year >= firstReviewed; year--) {
   }
   for (const [key, g] of groups) {
     if (g.meta.kind) continue;
-    // Some territories carry their state's name on the map: "Azores (Portugal)".
-    const owner = g.meta.partOf && realms[g.meta.name]?.withOwner ? periodName(g.meta.partOf, year) ?? g.meta.partOf : null;
+    // A territory carries its state's name on the map, "Azores (Portugal)",
+    // unless its own name already says it (Portuguese Angola: withOwner false).
+    const owner = g.meta.partOf && realms[g.meta.name]?.withOwner !== false ? periodName(g.meta.partOf, year) ?? g.meta.partOf : null;
     const display = periodName(g.meta.name, year) ?? (owner ? `${g.meta.name} (${owner})` : undefined);
     g.meta = { ...g.meta, ...(display && { display }), source: sourceOf(changeFor(g.ids, year), year, g.ids) };
     groups.set(key, g);
@@ -464,7 +465,9 @@ for (const s of shapes) {
   if (!s.display || names[s.display] || !s.partOf) continue;
   const own = realms[s.name];
   const owner = names[s.display.slice(s.name.length + 2, -1)] ?? {};
-  names[s.display] = { fr: `${own?.fr ?? s.name} (${owner.fr ?? s.partOf})`, es: `${own?.es ?? s.name} (${owner.es ?? s.partOf})` };
+  // A name that already says its owner (San Martín (Francia)) is kept as it is.
+  const label = (name, of) => (name.endsWith(`(${of})`) ? name : `${name} (${of})`);
+  names[s.display] = { fr: label(own?.fr ?? s.name, owner.fr ?? s.partOf), es: label(own?.es ?? s.name, owner.es ?? s.partOf) };
 }
 // Every place of today (a country, or a territory such as Macau) with the
 // realms and territories that held its land, oldest first.
