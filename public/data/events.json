@@ -1118,6 +1118,285 @@
    "summary": "A week after Hitler's suicide, Germany surrenders without conditions. General Jodl signs a first act in Reims on 7 May, at Eisenhower's headquarters; at Stalin's demand a second is signed in Berlin-Karlshorst late on 8 May by Marshal Keitel, before Marshal Zhukov and the Western Allies, with General de Lattre de Tassigny for France. The fighting stops at 23:01 that night, already 9 May in Moscow, which is why Russia marks Victory Day a day later. This was a surrender, not an armistice: Germany was occupied and divided by the four Allies. The war went on against Japan until September.",
    "wikipedia": "German_Instrument_of_Surrender",
    "search": "German surrender 1945 V-E Day"
+  },
+  {
+   "id": "carnation-revolution-1974",
+   "kind": "revolution",
+   "year": 1974,
+   "title": "The Carnation Revolution, 25 April 1974",
+   "place": "Largo do Carmo, Lisbon",
+   "lonLat": [
+    -9.14,
+    38.712
+   ],
+   "civs": [
+    "portugal"
+   ],
+   "summary": "Young officers of the Armed Forces Movement overthrow the Estado Novo dictatorship in an almost bloodless coup. Crowds fill the streets of Lisbon and put carnations in the soldiers' rifles. The revolution opens the way to democracy and to the end of the colonial wars in Africa.",
+   "wikipedia": "Carnation_Revolution",
+   "search": "Carnation Revolution"
+  },
+  {
+   "id": "guinea-bissau-independence-1974",
+   "kind": "empire",
+   "year": 1974,
+   "title": "Portugal recognises Guinea-Bissau, 10 September 1974",
+   "place": "Bissau",
+   "lonLat": [
+    -15.598,
+    11.864
+   ],
+   "civs": [
+    "portugal"
+   ],
+   "summary": "After eleven years of war against the PAIGC, Portugal recognises the independence Guinea-Bissau had declared in 1973. It is the first of Portugal's African colonies to become independent.",
+   "wikipedia": "Guinea-Bissau",
+   "search": "Guinea-Bissau"
+  },
+  {
+   "id": "mozambique-independence-1975",
+   "kind": "empire",
+   "year": 1975,
+   "title": "Independence of Mozambique, 25 June 1975",
+   "place": "Lourenço Marques (now Maputo)",
+   "lonLat": [
+    32.573,
+    -25.966
+   ],
+   "civs": [
+    "portugal",
+    "portuguese-mozambique"
+   ],
+   "summary": "Mozambique becomes independent under FRELIMO, which had fought Portuguese rule since 1964. Samora Machel is its first president.",
+   "wikipedia": "Mozambique",
+   "search": "Mozambique"
+  },
+  {
+   "id": "cape-verde-independence-1975",
+   "kind": "empire",
+   "year": 1975,
+   "title": "Independence of Cape Verde, 5 July 1975",
+   "place": "Praia",
+   "lonLat": [
+    -23.513,
+    14.933
+   ],
+   "civs": [
+    "portugal",
+    "portuguese-cape-verde"
+   ],
+   "summary": "The islands of Cape Verde become independent, led by the PAIGC, the party that also freed Guinea-Bissau.",
+   "wikipedia": "Cape_Verde",
+   "search": "Cape Verde"
+  },
+  {
+   "id": "sao-tome-independence-1975",
+   "kind": "empire",
+   "year": 1975,
+   "title": "Independence of São Tomé and Príncipe, 12 July 1975",
+   "place": "São Tomé",
+   "lonLat": [
+    6.727,
+    0.336
+   ],
+   "civs": [
+    "portugal",
+    "portuguese-sao-tome-and-principe"
+   ],
+   "summary": "The islands of São Tomé and Príncipe, in the Gulf of Guinea, become independent, with Manuel Pinto da Costa as their first president.",
+   "wikipedia": "São_Tomé_and_Príncipe",
+   "search": "São Tomé and Príncipe"
+  },
+  {
+   "id": "angola-independence-1975",
+   "kind": "empire",
+   "year": 1975,
+   "title": "Independence of Angola, 11 November 1975",
+   "place": "Luanda",
+   "lonLat": [
+    13.234,
+    -8.838
+   ],
+   "civs": [
+    "portugal",
+    "portuguese-angola"
+   ],
+   "summary": "Portugal leaves Angola as its three liberation movements fight for power. The MPLA proclaims independence in Luanda, and the civil war that follows lasts until 2002. Hundreds of thousands of Portuguese settlers return to Portugal.",
+   "wikipedia": "Angola",
+   "search": "Angola"
+  },
+  {
+   "id": "coup-25-november-1975",
+   "kind": "revolution",
+   "year": 1975,
+   "title": "The 25 November 1975 coup attempt",
+   "place": "Lisbon",
+   "lonLat": [
+    -9.14,
+    38.72
+   ],
+   "civs": [
+    "portugal"
+   ],
+   "summary": "Radical left-wing military units try to take power and are stopped by moderate officers. The failed coup ends the revolutionary period that followed 1974 and sets Portugal on the path to a parliamentary democracy.",
+   "wikipedia": "Coup_of_25_November_1975",
+   "search": "Coup of 25 November 1975"
+  },
+  {
+   "id": "east-timor-invasion-1975",
+   "kind": "war",
+   "year": 1975,
+   "title": "Indonesia invades East Timor, 7 December 1975",
+   "place": "Dili",
+   "lonLat": [
+    125.578,
+    -8.556
+   ],
+   "civs": [
+    "portugal",
+    "portuguese-timor"
+   ],
+   "summary": "Nine days after East Timor declared its independence from Portugal, Indonesia invades it and annexes it the next year. The United Nations never recognises the annexation and goes on listing the land as a territory under Portuguese administration, until the Timorese vote for independence in 1999.",
+   "wikipedia": "Indonesian_invasion_of_East_Timor",
+   "search": "Indonesian invasion of East Timor"
+  },
+  {
+   "id": "portuguese-constitution-1976",
+   "kind": "crown",
+   "year": 1976,
+   "title": "The Constitution of 2 April 1976",
+   "place": "Assembly of the Republic, São Bento Palace, Lisbon",
+   "lonLat": [
+    -9.153,
+    38.713
+   ],
+   "civs": [
+    "portugal"
+   ],
+   "summary": "The Constituent Assembly elected in 1975 adopts the Constitution that still governs Portugal. It founds the democratic republic and makes the Azores and Madeira autonomous regions, each with its own government and assembly.",
+   "wikipedia": "Constitution_of_Portugal",
+   "search": "Constitution of Portugal"
+  },
+  {
+   "id": "sa-carneiro-death-1980",
+   "kind": "death",
+   "year": 1980,
+   "title": "Prime Minister Sá Carneiro dies, 4 December 1980",
+   "place": "Camarate, near Lisbon",
+   "lonLat": [
+    -9.128,
+    38.803
+   ],
+   "civs": [
+    "portugal"
+   ],
+   "summary": "Francisco Sá Carneiro, prime minister for less than a year, is killed with his defence minister when their small plane crashes just after take-off, three days before the presidential election. Whether it was an accident or an attack is still debated.",
+   "wikipedia": "1980_Camarate_air_crash",
+   "search": "1980 Camarate air crash"
+  },
+  {
+   "id": "portugal-joins-eec-1986",
+   "kind": "treaty",
+   "year": 1986,
+   "title": "Portugal joins the European Community, 1 January 1986",
+   "place": "Jerónimos Monastery, Lisbon, where the treaty was signed",
+   "lonLat": [
+    -9.206,
+    38.698
+   ],
+   "civs": [
+    "portugal"
+   ],
+   "summary": "Portugal and Spain join the European Economic Community. The accession treaty was signed at the Jerónimos Monastery in June 1985. European funds help transform the country's roads, schools and economy in the years that follow.",
+   "wikipedia": "1986_enlargement_of_the_European_Communities",
+   "search": "1986 enlargement of the European Communities"
+  },
+  {
+   "id": "expo-98",
+   "kind": "trade",
+   "year": 1998,
+   "title": "Expo 98, the Lisbon World's Fair",
+   "place": "Parque das Nações, Lisbon",
+   "lonLat": [
+    -9.094,
+    38.768
+   ],
+   "civs": [
+    "portugal"
+   ],
+   "summary": "From May to September, Lisbon hosts a World's Fair on the theme of the oceans, five hundred years after Vasco da Gama reached India. Some eleven million visits are made, and the old industrial riverside becomes a new district, the Parque das Nações, with the Vasco da Gama Bridge.",
+   "wikipedia": "Expo_98",
+   "search": "Expo 98"
+  },
+  {
+   "id": "macau-handover-1999",
+   "kind": "treaty",
+   "year": 1999,
+   "title": "Macau is handed over to China, 20 December 1999",
+   "place": "Macau",
+   "lonLat": [
+    113.543,
+    22.199
+   ],
+   "civs": [
+    "portugal",
+    "portuguese-macau",
+    "macau"
+   ],
+   "summary": "At midnight Portugal hands Macau back to China, as agreed in 1987, ending more than four centuries of Portuguese presence. Macau becomes a special administrative region that keeps its own laws and system for fifty years. It is the last of Portugal's overseas territories.",
+   "wikipedia": "Transfer_of_sovereignty_over_Macau",
+   "search": "Transfer of sovereignty over Macau"
+  },
+  {
+   "id": "euro-portugal-2002",
+   "kind": "trade",
+   "year": 2002,
+   "title": "The euro replaces the escudo, 1 January 2002",
+   "place": "Lisbon",
+   "lonLat": [
+    -9.139,
+    38.708
+   ],
+   "civs": [
+    "portugal"
+   ],
+   "summary": "Euro notes and coins come into use and the escudo, Portugal's currency since 1911, is withdrawn two months later. The euro had been Portugal's currency on paper since 1999.",
+   "wikipedia": "Portuguese_euro_coins",
+   "search": "Portuguese euro coins"
+  },
+  {
+   "id": "treaty-of-lisbon-2007",
+   "kind": "treaty",
+   "year": 2007,
+   "title": "The Treaty of Lisbon, 13 December 2007",
+   "place": "Jerónimos Monastery, Lisbon",
+   "lonLat": [
+    -9.206,
+    38.698
+   ],
+   "civs": [
+    "portugal"
+   ],
+   "summary": "The leaders of the European Union sign the treaty that reforms how the Union works, during Portugal's presidency. It comes into force in December 2009.",
+   "wikipedia": "Treaty_of_Lisbon",
+   "search": "Treaty of Lisbon"
+  },
+  {
+   "id": "portugal-bailout-2011",
+   "kind": "trade",
+   "year": 2011,
+   "title": "The EU and IMF bailout, May 2011",
+   "place": "Lisbon",
+   "lonLat": [
+    -9.139,
+    38.708
+   ],
+   "civs": [
+    "portugal"
+   ],
+   "summary": "Unable to borrow on the markets, Portugal receives a 78-billion-euro rescue from the European Union and the International Monetary Fund. Three years of austerity follow, and Portugal leaves the programme in 2014.",
+   "wikipedia": "2010–2014_Portuguese_financial_crisis",
+   "search": "2010–2014 Portuguese financial crisis"
   }
  ]
 }
