@@ -1,5 +1,5 @@
 // Events for every civilization without hand-written ones: battles, sieges,
-// wars and treaties, rulers' births and deaths, and capitals founded, read
+// wars and treaties, rulers' deaths, and capitals founded, read
 // from Wikidata by scripts/fetch-events.mjs and saved in public/data/wd-events/
 // in 16 files, so only the files of the civilizations on show are loaded.
 

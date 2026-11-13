@@ -23,6 +23,20 @@ export interface Polity {
    * the state is highlighted and it is not.
    */
   partOf?: string;
+  /** The realm's name in these years, when a period of it goes by another (Estado Novo for Portugal). */
+  display?: string;
+  /**
+   * Not a realm's land: "hatch" is land held by another state than its owner
+   * (`name`), drawn hatched over it; "unreviewed" is land whose borders for
+   * these years are not rebuilt yet.
+   */
+  kind?: "hatch" | "unreviewed";
+  /** For "hatch": the state that holds the land, since when, and why it is not its owner. */
+  by?: string;
+  since?: string;
+  note?: string;
+  /** Where this border comes from, and the change that made it. */
+  source?: BorderSource;
   /** [longitude, latitude] of the label. */
   label: [number, number] | null;
   /** Outer rings as flat [lon, lat, lon, lat, …] arrays in degrees. */
@@ -30,6 +44,22 @@ export interface Polity {
   /** Drawn from the coarse window: simpler rings, for the globe seen from afar. */
   coarse?: boolean;
 }
+
+export interface BorderSource {
+  title: string;
+  url: string;
+  /** The map the border was drawn from, when there is one. */
+  map?: string;
+  /** What happened, and when (YYYY-MM-DD). */
+  what?: string;
+  date?: string;
+  /** The change came after these years: the border stood until it. */
+  until?: boolean;
+  confidence?: "exact" | "close" | "rough";
+}
+
+/** Shapes drawn over the realms, never a realm themselves. */
+export const isOverlay = (p: Polity) => p.kind !== undefined;
 
 /**
  * A shape's highlight colour: its group's, when that is highlighted, so an
@@ -68,6 +98,13 @@ interface Index {
   windows: DataWindow[];
   /** Every realm's first and last year in the whole dataset. */
   realms: Record<string, [number, number]>;
+  /** Names of realms, territories and periods in other languages. */
+  names?: Record<string, Partial<Record<string, string>>>;
+  /**
+   * Each place of today (a country, or a territory such as Macau) with the
+   * realms and territories that held its land, oldest first.
+   */
+  places?: Record<string, { name: string; from: number; to: number }[]>;
 }
 
 /**

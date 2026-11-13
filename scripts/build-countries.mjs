@@ -151,9 +151,21 @@ const CURATED = {
 };
 
 const index = JSON.parse(readFileSync("public/data/index.json", "utf8"));
+// Realms that are not countries (Western Sahara), by their civilization's id.
+const slugify = (name) =>
+  name
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+for (const name of index.notCountries ?? []) NOT_COUNTRIES.add(slugify(name));
 const { civilizations } = JSON.parse(readFileSync("public/data/civilizations.json", "utf8"));
+// A name goes to the civilization it is the main name of (Macau to Macau, not
+// to China, which counts it among its territories).
 const civOfRealm = new Map();
-for (const c of civilizations) for (const n of c.names) civOfRealm.set(n, c);
+for (const c of civilizations) for (const n of c.names.slice(1)) if (!civOfRealm.has(n)) civOfRealm.set(n, c);
+for (const c of civilizations) civOfRealm.set(c.names[0], c);
 const byId = new Map(civilizations.map((c) => [c.id, c]));
 
 const area = (cells) => {
@@ -168,6 +180,7 @@ const todayRings = new Map();
 const lastYear = index.to;
 for (const w of index.windows) {
   for (const shape of readWindow("public/data", w.file)) {
+    if (shape.kind) continue;
     const civ = civOfRealm.get(shape.name);
     if (!civ) continue;
     const rings = shape.rings.map(decodeRing);
@@ -179,8 +192,8 @@ for (const w of index.windows) {
     }
     // Today's land: the realm's own shapes, not its group's other members.
     // A dependency (Greenland, Puerto Rico) is not a country of its own.
-    if (shape.to >= lastYear && shape.partOf) NOT_COUNTRIES.add(civ.id);
-    if (shape.to >= lastYear) {
+    // A territory (Greenland, Puerto Rico) is its owner's, outside its main land.
+    if (shape.to >= lastYear && (!shape.partOf || civ.partOf)) {
       if (!todayRings.has(civ.id)) todayRings.set(civ.id, []);
       todayRings.get(civ.id).push(...rings);
     }
@@ -287,8 +300,12 @@ for (const [id, land] of today) {
     Math.round(((Math.atan2(z, Math.hypot(x, y)) * 180) / Math.PI) * 100) / 100,
   ];
 
+  // Rebuilt borders say exactly who held each place (index.places).
+  const history = index.places?.[civ.names[0]]?.map((h) => civOfRealm.get(h.name)?.id).filter((h) => h && byId.has(h));
+  if (history) crossing.splice(0, crossing.length, ...history.map((h) => byId.get(h)));
   let lineage;
-  if (curated) lineage = curated.lineage.filter((l) => byId.has(l));
+  if (history) lineage = history;
+  else if (curated) lineage = curated.lineage.filter((l) => byId.has(l));
   else {
     const scored = [];
     for (const [other, cells] of held) {
@@ -316,13 +333,15 @@ for (const [id, land] of today) {
       .replace(/^-|-$/g, ""),
     name: everydayName(civ),
     civ: id,
+    // A territory (Macau, Greenland) is a place of its own, part of this state.
+    ...(civ.partOf && { partOf: civ.partOf }),
     blurb: curated?.blurb ?? null,
     startYear: curated?.startYear ?? busiestYear(list),
     focus: curated?.focus ?? id,
     centre,
     continents: continentsOfCountry.get(id),
     area: Math.round(landArea * (CELL * 111.32) ** 2),
-    lineage: curated ? lineage : list.map((c) => c.id),
+    lineage: curated && !history ? lineage : list.map((c) => c.id),
     territoryYear: busiestYear(crossing),
     territory: crossing.map((c) => c.id),
   });

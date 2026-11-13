@@ -19,7 +19,16 @@ import { formatRange } from "./years";
 type Subject =
   | { kind: "civ"; civ: Civilization }
   | { kind: "several"; civs: Civilization[]; title: string; sub: string }
-  | { kind: "country"; country: Country; view: CountryView; civs: Civilization[]; sub: string; articles: string[] }
+  | {
+      kind: "country";
+      country: Country;
+      view: CountryView;
+      civs: Civilization[];
+      sub: string;
+      articles: string[];
+      /** The realm drawn on the place in the year shown (Portuguese Timor in 1986), told instead of the country. */
+      drawn?: string;
+    }
   | { kind: "travel"; sub: string }
   | { kind: "home"; actions: { label: string; text: string; run: () => void }[]; report: () => void };
 
@@ -111,9 +120,9 @@ export class Overview {
       case "country": {
         const k = subject.country;
         eyebrow.textContent = subject.view === "territory" ? t("overview.territory") : t("overview.nation");
-        title.textContent = k.name;
+        title.textContent = subject.drawn ?? k.name;
         meta.textContent = subject.sub;
-        if (k.blurb && subject.view === "nationality") {
+        if (k.blurb && subject.view === "nationality" && !subject.drawn) {
           lede.textContent = k.blurb;
           lede.hidden = false;
         }
