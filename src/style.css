@@ -890,6 +890,14 @@ a {
   color: var(--ink-soft);
 }
 
+/* Under a place's overview: what is drawn on its land in the year shown. */
+.place-now {
+  margin-top: 1rem;
+}
+.place-now .place-now-name {
+  margin: 0.25rem 0;
+}
+
 /* "Realms in <year>": the globe's realms as a list, folded under the overview. */
 .realms-now {
   margin: 18px 0 0;

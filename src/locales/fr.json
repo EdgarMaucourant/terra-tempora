@@ -295,10 +295,13 @@
       "other": "{count} civilisations"
     },
     "loading": "Chargement de l’article…",
-    "nation": "Nation",
+    "nation": "Pays",
     "several": "Civilisations sur le globe",
     "territory": "Pays",
     "travel": "Histoire du monde"
+  },
+  "place": {
+    "inYear": "Sur la carte en {year}"
   },
   "info": {
     "area": "{area} km²",
