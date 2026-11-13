@@ -638,6 +638,7 @@ function showPlaceNow() {
   }
   const at = Math.round(year);
   const entry = history.find((h) => h.from <= at && at <= h.to);
+  if (entry?.name !== toldRealm) renderCountryOverview(chosen());
   const head = el("h3", "event-more", t("place.inYear", { year: formatYear(at) }));
   if (!entry) {
     placeNow.replaceChildren(head, el("p", "fine", t("tooltip.unreviewedText")));
@@ -1711,6 +1712,38 @@ function setYearEverywhere(next: number) {
   writeHash();
 }
 
+/** The realm drawn on the open place in the year shown, from the place's history. */
+function drawnOnPlace(): string | undefined {
+  const at = Math.round(year);
+  return placeHistory()?.find((h) => h.from <= at && at <= h.to)?.name;
+}
+
+// The realm the place's overview tells about, so it is told again only when it changes.
+let toldRealm: string | undefined;
+
+/**
+ * A country's overview. A place whose land is rebuilt tells about the realm
+ * drawn on it in the year shown, with that realm's own article: Portugal, or
+ * Portuguese Timor in 1986.
+ */
+function renderCountryOverview(list: Civilization[]) {
+  if (!country) return;
+  const english = englishCountry.get(country.id) ?? country.name;
+  const history = `History of ${english}`;
+  const drawn = drawnOnPlace();
+  toldRealm = drawn;
+  const own = drawn ? civs?.ofRealm(drawn)?.wikipedia : undefined;
+  overview.render({
+    kind: "country",
+    country,
+    view: countryView,
+    civs: list,
+    sub: $("civ-sub").textContent ?? "",
+    articles: drawn ? [own ?? english, english] : countryView === "territory" ? [english, history] : [history, english],
+    drawn: drawn ? placeName(drawn) : undefined,
+  });
+}
+
 interface OpenOptions {
   year?: number;
   push?: boolean;
@@ -1734,18 +1767,8 @@ function showMasthead() {
       : t("masthead.several", { count: list.length, years });
   $("view-focus").title = t("masthead.focusLabel", { name: title });
   document.title = t("page.titleOf", { name: title });
-  if (country) {
-    const english = englishCountry.get(country.id) ?? country.name;
-    const history = `History of ${english}`;
-    overview.render({
-      kind: "country",
-      country,
-      view: countryView,
-      civs: list,
-      sub: $("civ-sub").textContent ?? "",
-      articles: countryView === "territory" ? [english, history] : [history, english],
-    });
-  } else if (list.length === 1) overview.render({ kind: "civ", civ: list[0] });
+  if (country) renderCountryOverview(list);
+  else if (list.length === 1) overview.render({ kind: "civ", civ: list[0] });
   else overview.render({ kind: "several", civs: list, title, sub: $("civ-sub").textContent ?? "" });
   showPlaceNow();
   info.hidden = true;
