@@ -274,6 +274,17 @@ export class PolityLayer {
     return best?.name ?? null;
   }
 
+  /** The realm or territory whose own land is at a point at `year`, under any hatching. */
+  landAt(lon: number, lat: number, year: number): Polity | undefined {
+    const y = Math.round(year);
+    let best: Polity | undefined;
+    for (const p of this.polities.values()) {
+      if (isOverlay(p) || y < p.from || y > p.to || (best && p.area >= best.area)) continue;
+      if (p.rings.some((ring) => inRing(ring, lon, lat))) best = p;
+    }
+    return best;
+  }
+
   /**
    * The hatching over a point at `year`, if any: picking passes through the
    * gaps between its lines, so a pick on its owner is checked against it.

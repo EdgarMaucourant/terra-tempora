@@ -589,6 +589,15 @@ function pickRealm(p: Polity) {
   else if (opensView) announce(t("panel.shown", { name: $("civ-title").textContent ?? "" }));
 }
 
+/** The place of today whose land this realm or territory held (Timor-Leste for Portuguese Timor). */
+function placeOf(name: string): Country | undefined {
+  const places = data?.index.places;
+  if (!places || !civs) return undefined;
+  const found = places[name] ? name : Object.keys(places).find((k) => places[k].some((h) => h.name === name));
+  const civ = found && civs.ofRealm(found);
+  return civ ? countryOf(civ) : undefined;
+}
+
 // Tap or click a highlighted realm for its details, a greyed one to switch to it.
 function clickRealm(p: Polity | null | undefined) {
   hideTooltip();
@@ -596,6 +605,16 @@ function clickRealm(p: Polity | null | undefined) {
     info.hidden = true;
     closeEvent();
     return;
+  }
+  // A hatching (Indonesia over Portuguese Timor) stands for the land under it.
+  if (p.kind === "hatch" && p.label) p = layer.landAt(p.label[0], p.label[1], year) ?? p;
+  // Rebuilt land opens the history of its place of today, whatever the year:
+  // Portuguese Timor in 1995 and Timor-Leste in 2017 both open Timor-Leste.
+  // Clicking it again in that view shows the details of what is drawn.
+  const place = placeOf(p.name);
+  if (place && (home || place !== country)) {
+    info.hidden = true;
+    return openCountry(place, "nationality", { push: true });
   }
   // The home globe colours a group's members as the group, so they open it;
   // a territory (Macau) opens its own history.
@@ -682,17 +701,20 @@ function hoverRealm(p: Polity | null | undefined, x: number, y: number) {
     if (!tooltip.hidden) hideTooltip();
     return;
   }
+  // A hatching is named after the land under it (Portuguese Timor, not Portugal).
+  const under = p.kind === "hatch" && p.label ? layer.landAt(p.label[0], p.label[1], year) : undefined;
   const greyed = !layer.isHighlighted(p);
   layer.setHovered(greyed ? p.name : null);
   map.setHovered(greyed ? p.name : null);
-  const years = formatRange(civ.from, civ.to);
+  const own = under && civs?.ofRealm(under.name);
+  const years = own ? formatRange(own.from, own.to) : formatRange(civ.from, civ.to);
   // A member of a group says so: the Kingdom of Spain in 1530 is part of the Spanish Empire.
   const groups = [...(home ? [] : (p.groups ?? [])), ...(p.partOf ? [p.partOf] : [])]
     .filter((g) => g !== p.name)
     .map((g) => placeName(g));
   const line = (textContent: string) => Object.assign(document.createElement("span"), { textContent });
   tooltip.replaceChildren(
-    Object.assign(document.createElement("strong"), { textContent: p.partOf || p.display || p.kind ? shownName(p) : civ.name }),
+    Object.assign(document.createElement("strong"), { textContent: p.partOf || p.display || p.kind ? shownName(under ?? p) : civ.name }),
     ...groups.map((group) => line(t("tooltip.partOf", { group }))),
     ...(p.by ? [line(t("tooltip.heldBy", { by: placeName(p.by), year: p.since?.slice(0, 4) ?? "" }))] : []),
     ...(p.source ? [line(t("tooltip.border", { source: shortSource(p.source) })), line(t("tooltip.borderHint"))] : []),

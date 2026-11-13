@@ -100,6 +100,11 @@ interface Index {
   realms: Record<string, [number, number]>;
   /** Names of realms, territories and periods in other languages. */
   names?: Record<string, Partial<Record<string, string>>>;
+  /**
+   * Each place of today (a country, or a territory such as Macau) with the
+   * realms and territories that held its land, oldest first.
+   */
+  places?: Record<string, { name: string; from: number; to: number }[]>;
 }
 
 /**
