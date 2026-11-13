@@ -1,7 +1,8 @@
 // Reads the key events of every civilization from Wikidata and saves them in
 // public/data/wd-events/, so the app needs no live Wikidata query: the battles,
 // sieges, wars, campaigns and treaties a realm took part in or signed, the
-// births and deaths of its rulers and founders, and the founding of its
+// deaths of its rulers and founders (births are left out: they rarely
+// change a country), and the founding of its
 // capitals. Each needs an English Wikipedia article, a date within the realm's
 // years and (except wars) a place. The best-known events of each realm are
 // kept, ranked by how many Wikipedia editions cover them.
@@ -50,8 +51,7 @@ const PARTS = {
     }`,
   people: `
     ?civ wdt:P35|wdt:P6|wdt:P112 ?e. ?e wdt:P31 wd:Q5.
-    { ?e wdt:P569 ?date; wdt:P19 ?place. BIND("birth" AS ?kind) } UNION
-    { ?e wdt:P570 ?date; wdt:P20 ?place. BIND("death" AS ?kind) }
+    ?e wdt:P570 ?date; wdt:P20 ?place. BIND("death" AS ?kind)
     ?place wdt:P625 ?coord.
     OPTIONAL { ?place rdfs:label ?placeLabel. FILTER(LANG(?placeLabel) = "en") }`,
   capitals: `

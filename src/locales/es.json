@@ -295,20 +295,31 @@
       "other": "{count} civilizaciones"
     },
     "loading": "Cargando el artículo…",
-    "nation": "Nación",
+    "nation": "País",
     "several": "Civilizaciones en el globo",
     "territory": "País",
     "travel": "Historia mundial"
   },
+  "place": {
+    "inYear": "En el mapa en {year}"
+  },
   "info": {
     "area": "{area} km²",
     "areaLabel": "Superficie",
+    "border": "Frontera",
+    "close": "calcado de un mapa",
+    "exact": "trazado exacto",
     "existed": "El reino existió",
-    "fine": "Fronteras de Cliopatria, aproximadas.",
+    "heldBy": "En manos de {by} desde el {date}.",
     "highlighted": "Reino resaltado",
+    "map": "mapa de origen",
+    "page": "fuente",
     "realm": "Reino",
     "related": "Reino relacionado",
-    "thisBorder": "Esta frontera"
+    "rough": "aproximado",
+    "source": "Fuente",
+    "thisBorder": "Esta frontera",
+    "today": "Natural Earth, fronteras actuales"
   },
   "event": {
     "approximate": "{place} (ubicación aproximada)",
@@ -400,6 +411,7 @@
       "other": "{count} civilizaciones"
     },
     "nationality": "Civilizaciones que dieron origen a {name}",
+    "partOf": "{name} ({owner})",
     "related": "{name} y reinos relacionados",
     "territory": "Dentro del actual territorio de {name}",
     "today": "Países actuales"
@@ -447,11 +459,18 @@
   "tooltip": {
     "after": "Después",
     "before": "Antes",
+    "border": "Frontera: {source}",
+    "borderHint": "Selecciónelo para abrir el mapa de origen",
     "event": "{kind} · {when} · haz clic para saber más",
     "explore": "{years} · haz clic para explorar",
+    "heldBy": "En manos de {by} desde {year}",
     "open": "{years} · haz clic para abrir",
     "partOf": "Parte de: {group}",
     "see": "{detail} · haz clic para verlo",
+    "since": "{source}, desde el {date}",
+    "unreviewed": "Aún sin revisar",
+    "unreviewedText": "Las fronteras se están reconstruyendo; esta tierra aún no está hecha para este año",
+    "until": "{source}, hasta el {date}",
     "zoomIn": "{detail} · haz clic para acercar"
   },
   "picker": {

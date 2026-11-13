@@ -1,0 +1,1593 @@
+{
+ "Abkhazia": {
+  "wikipedia": "Abkhazia",
+  "wikidata": "Q31354462",
+  "fr": "Abkhazie",
+  "es": "Abjasia",
+  "hatchOnly": true
+ },
+ "Afghanistan": {
+  "wikipedia": "Afghanistan",
+  "wikidata": "Q889",
+  "fr": "Afghanistan",
+  "es": "Afganistán"
+ },
+ "Akrotiri and Dhekelia": {
+  "wikipedia": "Akrotiri and Dhekelia",
+  "wikidata": "Q37362",
+  "fr": "Akrotiri et Dhekelia",
+  "es": "Acrotiri y Dekelia"
+ },
+ "Albania": {
+  "wikipedia": "Albania",
+  "wikidata": "Q222",
+  "fr": "Albanie",
+  "es": "Albania"
+ },
+ "Algeria": {
+  "wikipedia": "Algeria",
+  "wikidata": "Q262",
+  "fr": "Algérie",
+  "es": "Argelia"
+ },
+ "American Samoa": {
+  "wikipedia": "American Samoa",
+  "wikidata": "Q16641",
+  "fr": "Samoa américaines",
+  "es": "Samoa Estadounidense"
+ },
+ "Andorra": {
+  "wikipedia": "Andorra",
+  "wikidata": "Q228",
+  "fr": "Andorre",
+  "es": "Andorra"
+ },
+ "Angola": {
+  "wikipedia": "Angola",
+  "wikidata": "Q916",
+  "fr": "Angola",
+  "es": "Angola"
+ },
+ "Anguilla": {
+  "wikipedia": "Anguilla",
+  "wikidata": "Q25228",
+  "fr": "Anguilla",
+  "es": "Anguila"
+ },
+ "Antigua and Barbuda": {
+  "wikipedia": "Antigua and Barbuda",
+  "wikidata": "Q781",
+  "fr": "Antigua-et-Barbuda",
+  "es": "Antigua y Barbuda"
+ },
+ "Argentina": {
+  "wikipedia": "Argentina",
+  "wikidata": "Q414",
+  "fr": "Argentine",
+  "es": "Argentina"
+ },
+ "Armenia": {
+  "wikipedia": "Armenia",
+  "wikidata": "Q399",
+  "fr": "Arménie",
+  "es": "Armenia"
+ },
+ "Aruba": {
+  "wikipedia": "Aruba",
+  "wikidata": "Q21203",
+  "fr": "Aruba",
+  "es": "Aruba"
+ },
+ "Ashmore and Cartier Islands": {
+  "wikipedia": "Ashmore and Cartier Islands",
+  "wikidata": "Q133888",
+  "fr": "Îles Ashmore-et-Cartier",
+  "es": "Islas Ashmore y Cartier"
+ },
+ "Australia": {
+  "wikipedia": "Australia",
+  "wikidata": "Q408",
+  "fr": "Australie",
+  "es": "Australia"
+ },
+ "Austria": {
+  "wikipedia": "Austria",
+  "wikidata": "Q40",
+  "fr": "Autriche",
+  "es": "Austria"
+ },
+ "Azerbaijan": {
+  "wikipedia": "Azerbaijan",
+  "wikidata": "Q227",
+  "fr": "Azerbaïdjan",
+  "es": "Azerbaiyán"
+ },
+ "Azores": {
+  "wikipedia": "Azores",
+  "wikidata": "Q25263",
+  "fr": "Açores",
+  "es": "Azores"
+ },
+ "Bahrain": {
+  "wikipedia": "Bahrain",
+  "wikidata": "Q398",
+  "fr": "Bahreïn",
+  "es": "Baréin"
+ },
+ "Baikonur": {
+  "wikipedia": "Baikonur",
+  "wikidata": "Q165413",
+  "fr": "Baïkonour",
+  "es": "Baikonur"
+ },
+ "Bangladesh": {
+  "wikipedia": "Bangladesh",
+  "wikidata": "Q902",
+  "fr": "Bangladesh",
+  "es": "Bangladés"
+ },
+ "Barbados": {
+  "wikipedia": "Barbados",
+  "wikidata": "Q244",
+  "fr": "Barbade",
+  "es": "Barbados"
+ },
+ "Belarus": {
+  "wikipedia": "Belarus",
+  "wikidata": "Q184",
+  "fr": "Biélorussie",
+  "es": "Bielorrusia"
+ },
+ "Belgium": {
+  "wikipedia": "Belgium",
+  "wikidata": "Q31",
+  "fr": "Belgique",
+  "es": "Bélgica"
+ },
+ "Belize": {
+  "wikipedia": "Belize",
+  "wikidata": "Q242",
+  "fr": "Belize",
+  "es": "Belice"
+ },
+ "Benin": {
+  "wikipedia": "Benin",
+  "wikidata": "Q962",
+  "fr": "Bénin",
+  "es": "Benín"
+ },
+ "Bermuda": {
+  "wikipedia": "Bermuda",
+  "wikidata": "Q23635",
+  "fr": "Bermudes",
+  "es": "Bermudas"
+ },
+ "Bhutan": {
+  "wikipedia": "Bhutan",
+  "wikidata": "Q917",
+  "fr": "Bhoutan",
+  "es": "Bután"
+ },
+ "Bolivia": {
+  "wikipedia": "Bolivia",
+  "wikidata": "Q750",
+  "fr": "Bolivie",
+  "es": "Bolivia"
+ },
+ "Bosnia and Herzegovina": {
+  "wikipedia": "Bosnia and Herzegovina",
+  "wikidata": "Q225",
+  "fr": "Bosnie-Herzégovine",
+  "es": "Bosnia y Herzegovina"
+ },
+ "Botswana": {
+  "wikipedia": "Botswana",
+  "wikidata": "Q963",
+  "fr": "Botswana",
+  "es": "Botsuana"
+ },
+ "Bouvet Island": {
+  "wikipedia": "Bouvet Island",
+  "wikidata": "Q23408",
+  "fr": "Île Bouvet",
+  "es": "Isla Bouvet"
+ },
+ "Brazil": {
+  "wikipedia": "Brazil",
+  "wikidata": "Q155",
+  "fr": "Brésil",
+  "es": "Brasil"
+ },
+ "British Virgin Islands": {
+  "wikipedia": "British Virgin Islands",
+  "wikidata": "Q25305",
+  "fr": "îles Vierges britanniques",
+  "es": "Islas Vírgenes Británicas",
+  "withOwner": false
+ },
+ "Brunei": {
+  "wikipedia": "Brunei",
+  "wikidata": "Q921",
+  "fr": "Brunei",
+  "es": "Brunéi"
+ },
+ "Bulgaria": {
+  "wikipedia": "Bulgaria",
+  "wikidata": "Q219",
+  "fr": "Bulgarie",
+  "es": "Bulgaria"
+ },
+ "Burkina Faso": {
+  "wikipedia": "Burkina Faso",
+  "wikidata": "Q965",
+  "fr": "Burkina Faso",
+  "es": "Burkina Faso"
+ },
+ "Burundi": {
+  "wikipedia": "Burundi",
+  "wikidata": "Q967",
+  "fr": "Burundi",
+  "es": "Burundi"
+ },
+ "Cambodia": {
+  "wikipedia": "Cambodia",
+  "wikidata": "Q424",
+  "fr": "Cambodge",
+  "es": "Camboya"
+ },
+ "Cameroon": {
+  "wikipedia": "Cameroon",
+  "wikidata": "Q1009",
+  "fr": "Cameroun",
+  "es": "Camerún"
+ },
+ "Canada": {
+  "wikipedia": "Canada",
+  "wikidata": "Q16",
+  "fr": "Canada",
+  "es": "Canadá"
+ },
+ "Cape Verde": {
+  "wikipedia": "Cape Verde",
+  "wikidata": "Q1011",
+  "fr": "Cap-Vert",
+  "es": "Cabo Verde"
+ },
+ "Cayman Islands": {
+  "wikipedia": "Cayman Islands",
+  "wikidata": "Q5785",
+  "fr": "îles Caïmans",
+  "es": "Islas Caimán"
+ },
+ "Central African Republic": {
+  "wikipedia": "Central African Republic",
+  "wikidata": "Q929",
+  "fr": "République centrafricaine",
+  "es": "República Centroafricana"
+ },
+ "Chad": {
+  "wikipedia": "Chad",
+  "wikidata": "Q657",
+  "fr": "Tchad",
+  "es": "Chad"
+ },
+ "Chagos Archipelago": {
+  "wikipedia": "Chagos Archipelago",
+  "wikidata": "Q192188",
+  "fr": "Archipel des Chagos",
+  "es": "Archipiélago de Chagos"
+ },
+ "Chile": {
+  "wikipedia": "Chile",
+  "wikidata": "Q298",
+  "fr": "Chili",
+  "es": "Chile"
+ },
+ "China": {
+  "wikipedia": "China",
+  "wikidata": "Q148",
+  "fr": "Chine",
+  "es": "China"
+ },
+ "Christmas Island": {
+  "wikipedia": "Christmas Island",
+  "wikidata": "Q31063",
+  "fr": "Île Christmas",
+  "es": "Isla de Navidad"
+ },
+ "Clipperton Island": {
+  "wikipedia": "Clipperton Island",
+  "wikidata": "Q161258",
+  "fr": "île Clipperton",
+  "es": "Isla Clipperton"
+ },
+ "Cocos (Keeling) Islands": {
+  "wikipedia": "Cocos (Keeling) Islands",
+  "wikidata": "Q36004",
+  "fr": "Îles Cocos",
+  "es": "Islas Cocos"
+ },
+ "Colombia": {
+  "wikipedia": "Colombia",
+  "wikidata": "Q739",
+  "fr": "Colombie",
+  "es": "Colombia"
+ },
+ "Comoros": {
+  "wikipedia": "Comoros",
+  "wikidata": "Q970",
+  "fr": "Comores",
+  "es": "Comoras"
+ },
+ "Cook Islands": {
+  "wikipedia": "Cook Islands",
+  "wikidata": "Q26988",
+  "fr": "Îles Cook",
+  "es": "Islas Cook"
+ },
+ "Coral Sea Islands": {
+  "wikipedia": "Coral Sea Islands",
+  "wikidata": "Q172216",
+  "fr": "Îles de la mer de Corail",
+  "es": "islas del mar del Coral"
+ },
+ "Costa Rica": {
+  "wikipedia": "Costa Rica",
+  "wikidata": "Q800",
+  "fr": "Costa Rica",
+  "es": "Costa Rica"
+ },
+ "Croatia": {
+  "wikipedia": "Croatia",
+  "wikidata": "Q224",
+  "fr": "Croatie",
+  "es": "Croacia"
+ },
+ "Cuba": {
+  "wikipedia": "Cuba",
+  "wikidata": "Q241",
+  "fr": "Cuba",
+  "es": "Cuba"
+ },
+ "Curaçao": {
+  "wikipedia": "Curaçao",
+  "wikidata": "Q25279",
+  "fr": "Curaçao",
+  "es": "Curazao"
+ },
+ "Cyprus": {
+  "wikipedia": "Cyprus",
+  "wikidata": "Q229",
+  "fr": "Chypre",
+  "es": "Chipre"
+ },
+ "Czech Republic": {
+  "wikipedia": "Czech Republic",
+  "wikidata": "Q213",
+  "fr": "Tchéquie",
+  "es": "República Checa"
+ },
+ "Democratic Republic of the Congo": {
+  "wikipedia": "Democratic Republic of the Congo",
+  "wikidata": "Q974",
+  "fr": "République démocratique du Congo",
+  "es": "República Democrática del Congo"
+ },
+ "Denmark": {
+  "wikipedia": "Denmark",
+  "wikidata": "Q35",
+  "fr": "Danemark",
+  "es": "Dinamarca"
+ },
+ "Djibouti": {
+  "wikipedia": "Djibouti",
+  "wikidata": "Q977",
+  "fr": "Djibouti",
+  "es": "Yibuti"
+ },
+ "Dominica": {
+  "wikipedia": "Dominica",
+  "wikidata": "Q784",
+  "fr": "Dominique",
+  "es": "Dominica"
+ },
+ "Dominican Republic": {
+  "wikipedia": "Dominican Republic",
+  "wikidata": "Q786",
+  "fr": "République dominicaine",
+  "es": "República Dominicana"
+ },
+ "East Timor under UN administration": {
+  "wikipedia": "United Nations Transitional Administration in East Timor",
+  "wikidata": "Q332358",
+  "fr": "Timor oriental sous administration de l’ONU",
+  "es": "Timor Oriental bajo administración de la ONU",
+  "notACountry": true
+ },
+ "Ecuador": {
+  "wikipedia": "Ecuador",
+  "wikidata": "Q736",
+  "fr": "Équateur",
+  "es": "Ecuador"
+ },
+ "Egypt": {
+  "wikipedia": "Egypt",
+  "wikidata": "Q79",
+  "fr": "Égypte",
+  "es": "Egipto"
+ },
+ "El Salvador": {
+  "wikipedia": "El Salvador",
+  "wikidata": "Q792",
+  "fr": "Salvador",
+  "es": "El Salvador"
+ },
+ "Equatorial Guinea": {
+  "wikipedia": "Equatorial Guinea",
+  "wikidata": "Q983",
+  "fr": "Guinée équatoriale",
+  "es": "Guinea Ecuatorial"
+ },
+ "Eritrea": {
+  "wikipedia": "Eritrea",
+  "wikidata": "Q986",
+  "fr": "Érythrée",
+  "es": "Eritrea"
+ },
+ "Estonia": {
+  "wikipedia": "Estonia",
+  "wikidata": "Q191",
+  "fr": "Estonie",
+  "es": "Estonia"
+ },
+ "Eswatini": {
+  "wikipedia": "Eswatini",
+  "wikidata": "Q1050",
+  "fr": "Eswatini",
+  "es": "Suazilandia"
+ },
+ "Ethiopia": {
+  "wikipedia": "Ethiopia",
+  "wikidata": "Q115",
+  "fr": "Éthiopie",
+  "es": "Etiopía"
+ },
+ "Falkland Islands": {
+  "wikipedia": "Falkland Islands",
+  "wikidata": "Q9648",
+  "fr": "îles Malouines",
+  "es": "Islas Malvinas"
+ },
+ "Faroe Islands": {
+  "wikipedia": "Faroe Islands",
+  "wikidata": "Q4628",
+  "fr": "îles Féroé",
+  "es": "Islas Feroe"
+ },
+ "Federated States of Micronesia": {
+  "wikipedia": "Federated States of Micronesia",
+  "wikidata": "Q702",
+  "fr": "États fédérés de Micronésie",
+  "es": "Estados Federados de Micronesia"
+ },
+ "Fiji": {
+  "wikipedia": "Fiji",
+  "wikidata": "Q712",
+  "fr": "Fidji",
+  "es": "Fiyi"
+ },
+ "Finland": {
+  "wikipedia": "Finland",
+  "wikidata": "Q33",
+  "fr": "Finlande",
+  "es": "Finlandia"
+ },
+ "France": {
+  "wikipedia": "France",
+  "wikidata": "Q142",
+  "fr": "France",
+  "es": "Francia"
+ },
+ "French Polynesia": {
+  "wikipedia": "French Polynesia",
+  "wikidata": "Q30971",
+  "fr": "Polynésie française",
+  "es": "Polinesia Francesa",
+  "withOwner": false
+ },
+ "French Southern and Antarctic Lands": {
+  "wikipedia": "French Southern and Antarctic Lands",
+  "wikidata": "Q129003",
+  "fr": "Terres australes et antarctiques françaises",
+  "es": "Tierras Australes y Antárticas Francesas",
+  "withOwner": false
+ },
+ "Gabon": {
+  "wikipedia": "Gabon",
+  "wikidata": "Q1000",
+  "fr": "Gabon",
+  "es": "Gabón"
+ },
+ "Georgia": {
+  "wikipedia": "Georgia (country)",
+  "wikidata": "Q230",
+  "fr": "Géorgie",
+  "es": "Georgia"
+ },
+ "Germany": {
+  "wikipedia": "Germany",
+  "wikidata": "Q183",
+  "fr": "Allemagne",
+  "es": "Alemania"
+ },
+ "Ghana": {
+  "wikipedia": "Ghana",
+  "wikidata": "Q117",
+  "fr": "Ghana",
+  "es": "Ghana"
+ },
+ "Gibraltar": {
+  "wikipedia": "Gibraltar",
+  "wikidata": "Q1410",
+  "fr": "Gibraltar",
+  "es": "Gibraltar"
+ },
+ "Greece": {
+  "wikipedia": "Greece",
+  "wikidata": "Q41",
+  "fr": "Grèce",
+  "es": "Grecia"
+ },
+ "Greenland": {
+  "wikipedia": "Greenland",
+  "wikidata": "Q223",
+  "fr": "Groenland",
+  "es": "Groenlandia"
+ },
+ "Grenada": {
+  "wikipedia": "Grenada",
+  "wikidata": "Q769",
+  "fr": "Grenade",
+  "es": "Granada"
+ },
+ "Guam": {
+  "wikipedia": "Guam",
+  "wikidata": "Q16635",
+  "fr": "Guam",
+  "es": "Guam"
+ },
+ "Guantanamo Bay Naval Base": {
+  "wikipedia": "Guantanamo Bay Naval Base",
+  "wikidata": "Q762570",
+  "fr": "base navale de la baie de Guantánamo",
+  "es": "Base Naval de la Bahía de Guantánamo"
+ },
+ "Guatemala": {
+  "wikipedia": "Guatemala",
+  "wikidata": "Q774",
+  "fr": "Guatemala",
+  "es": "Guatemala"
+ },
+ "Guernsey": {
+  "wikipedia": "Bailiwick of Guernsey",
+  "wikidata": "Q25230",
+  "fr": "Guernesey",
+  "es": "Guernsey"
+ },
+ "Guinea": {
+  "wikipedia": "Guinea",
+  "wikidata": "Q1006",
+  "fr": "Guinée",
+  "es": "Guinea"
+ },
+ "Guinea-Bissau": {
+  "wikipedia": "Guinea-Bissau",
+  "wikidata": "Q1007",
+  "fr": "Guinée-Bissau",
+  "es": "Guinea-Bisáu"
+ },
+ "Guyana": {
+  "wikipedia": "Guyana",
+  "wikidata": "Q734",
+  "fr": "Guyana",
+  "es": "Guyana"
+ },
+ "Haiti": {
+  "wikipedia": "Haiti",
+  "wikidata": "Q790",
+  "fr": "Haïti",
+  "es": "Haití"
+ },
+ "Heard Island and McDonald Islands": {
+  "wikipedia": "Heard Island and McDonald Islands",
+  "wikidata": "Q131198",
+  "fr": "îles Heard-et-MacDonald",
+  "es": "Islas Heard y McDonald"
+ },
+ "Honduras": {
+  "wikipedia": "Honduras",
+  "wikidata": "Q783",
+  "fr": "Honduras",
+  "es": "Honduras"
+ },
+ "Hong Kong": {
+  "wikipedia": "Hong Kong",
+  "wikidata": "Q8646",
+  "fr": "Hong Kong",
+  "es": "Hong Kong"
+ },
+ "Hungary": {
+  "wikipedia": "Hungary",
+  "wikidata": "Q28",
+  "fr": "Hongrie",
+  "es": "Hungría"
+ },
+ "Iceland": {
+  "wikipedia": "Iceland",
+  "wikidata": "Q189",
+  "fr": "Islande",
+  "es": "Islandia"
+ },
+ "India": {
+  "wikipedia": "India",
+  "wikidata": "Q668",
+  "fr": "Inde",
+  "es": "India"
+ },
+ "Indonesia": {
+  "wikipedia": "Indonesia",
+  "wikidata": "Q252",
+  "fr": "Indonésie",
+  "es": "Indonesia"
+ },
+ "Iran": {
+  "wikipedia": "Iran",
+  "wikidata": "Q794",
+  "fr": "Iran",
+  "es": "Irán"
+ },
+ "Iraq": {
+  "wikipedia": "Iraq",
+  "wikidata": "Q796",
+  "fr": "Irak",
+  "es": "Irak"
+ },
+ "Ireland": {
+  "wikipedia": "Republic of Ireland",
+  "wikidata": "Q27",
+  "fr": "Irlande",
+  "es": "Irlanda"
+ },
+ "Isle of Man": {
+  "wikipedia": "Isle of Man",
+  "wikidata": "Q9676",
+  "fr": "île de Man",
+  "es": "Isla de Man"
+ },
+ "Israel": {
+  "wikipedia": "Israel",
+  "wikidata": "Q801",
+  "fr": "Israël",
+  "es": "Israel"
+ },
+ "Italy": {
+  "wikipedia": "Italy",
+  "wikidata": "Q38",
+  "fr": "Italie",
+  "es": "Italia"
+ },
+ "Ivory Coast": {
+  "wikipedia": "Ivory Coast",
+  "wikidata": "Q1008",
+  "fr": "Côte d'Ivoire",
+  "es": "Costa de Marfil"
+ },
+ "Jamaica": {
+  "wikipedia": "Jamaica",
+  "wikidata": "Q766",
+  "fr": "Jamaïque",
+  "es": "Jamaica"
+ },
+ "Japan": {
+  "wikipedia": "Japan",
+  "wikidata": "Q17",
+  "fr": "Japon",
+  "es": "Japón"
+ },
+ "Jersey": {
+  "wikipedia": "Jersey",
+  "wikidata": "Q785",
+  "fr": "Jersey",
+  "es": "Jersey"
+ },
+ "Jordan": {
+  "wikipedia": "Jordan",
+  "wikidata": "Q810",
+  "fr": "Jordanie",
+  "es": "Jordania"
+ },
+ "Kazakhstan": {
+  "wikipedia": "Kazakhstan",
+  "wikidata": "Q232",
+  "fr": "Kazakhstan",
+  "es": "Kazajistán"
+ },
+ "Kenya": {
+  "wikipedia": "Kenya",
+  "wikidata": "Q114",
+  "fr": "Kenya",
+  "es": "Kenia"
+ },
+ "Kiribati": {
+  "wikipedia": "Kiribati",
+  "wikidata": "Q710",
+  "fr": "Kiribati",
+  "es": "Kiribati"
+ },
+ "Kosovo": {
+  "wikipedia": "Kosovo",
+  "wikidata": "Q1246",
+  "fr": "Kosovo",
+  "es": "Kosovo"
+ },
+ "Kuwait": {
+  "wikipedia": "Kuwait",
+  "wikidata": "Q817",
+  "fr": "Koweït",
+  "es": "Kuwait"
+ },
+ "Kyrgyzstan": {
+  "wikipedia": "Kyrgyzstan",
+  "wikidata": "Q813",
+  "fr": "Kirghizistan",
+  "es": "Kirguistán"
+ },
+ "Laos": {
+  "wikipedia": "Laos",
+  "wikidata": "Q819",
+  "fr": "Laos",
+  "es": "Laos"
+ },
+ "Latvia": {
+  "wikipedia": "Latvia",
+  "wikidata": "Q211",
+  "fr": "Lettonie",
+  "es": "Letonia"
+ },
+ "Lebanon": {
+  "wikipedia": "Lebanon",
+  "wikidata": "Q822",
+  "fr": "Liban",
+  "es": "Líbano"
+ },
+ "Lesotho": {
+  "wikipedia": "Lesotho",
+  "wikidata": "Q1013",
+  "fr": "Lesotho",
+  "es": "Lesoto"
+ },
+ "Liberia": {
+  "wikipedia": "Liberia",
+  "wikidata": "Q1014",
+  "fr": "Liberia",
+  "es": "Liberia"
+ },
+ "Libya": {
+  "wikipedia": "Libya",
+  "wikidata": "Q1016",
+  "fr": "Libye",
+  "es": "Libia"
+ },
+ "Liechtenstein": {
+  "wikipedia": "Liechtenstein",
+  "wikidata": "Q347",
+  "fr": "Liechtenstein",
+  "es": "Liechtenstein"
+ },
+ "Lithuania": {
+  "wikipedia": "Lithuania",
+  "wikidata": "Q37",
+  "fr": "Lituanie",
+  "es": "Lituania"
+ },
+ "Luxembourg": {
+  "wikipedia": "Luxembourg",
+  "wikidata": "Q32",
+  "fr": "Luxembourg",
+  "es": "Luxemburgo"
+ },
+ "Macau": {
+  "wikipedia": "Macau",
+  "wikidata": "Q14773",
+  "fr": "Macao",
+  "es": "Macao"
+ },
+ "Madagascar": {
+  "wikipedia": "Madagascar",
+  "wikidata": "Q1019",
+  "fr": "Madagascar",
+  "es": "Madagascar"
+ },
+ "Madeira": {
+  "wikipedia": "Madeira",
+  "wikidata": "Q26253",
+  "fr": "Madère",
+  "es": "Madeira"
+ },
+ "Malawi": {
+  "wikipedia": "Malawi",
+  "wikidata": "Q1020",
+  "fr": "Malawi",
+  "es": "Malaui"
+ },
+ "Malaysia": {
+  "wikipedia": "Malaysia",
+  "wikidata": "Q833",
+  "fr": "Malaisie",
+  "es": "Malasia"
+ },
+ "Maldives": {
+  "wikipedia": "Maldives",
+  "wikidata": "Q826",
+  "fr": "Maldives",
+  "es": "Maldivas"
+ },
+ "Mali": {
+  "wikipedia": "Mali",
+  "wikidata": "Q912",
+  "fr": "Mali",
+  "es": "Malí"
+ },
+ "Malta": {
+  "wikipedia": "Malta",
+  "wikidata": "Q233",
+  "fr": "Malte",
+  "es": "Malta"
+ },
+ "Marshall Islands": {
+  "wikipedia": "Marshall Islands",
+  "wikidata": "Q709",
+  "fr": "Îles Marshall",
+  "es": "Islas Marshall"
+ },
+ "Mauritania": {
+  "wikipedia": "Mauritania",
+  "wikidata": "Q1025",
+  "fr": "Mauritanie",
+  "es": "Mauritania"
+ },
+ "Mauritius": {
+  "wikipedia": "Mauritius",
+  "wikidata": "Q1027",
+  "fr": "Maurice",
+  "es": "Mauricio"
+ },
+ "Mexico": {
+  "wikipedia": "Mexico",
+  "wikidata": "Q96",
+  "fr": "Mexique",
+  "es": "México"
+ },
+ "Moldova": {
+  "wikipedia": "Moldova",
+  "wikidata": "Q217",
+  "fr": "Moldavie",
+  "es": "Moldavia"
+ },
+ "Monaco": {
+  "wikipedia": "Monaco",
+  "wikidata": "Q235",
+  "fr": "Monaco",
+  "es": "Mónaco"
+ },
+ "Mongolia": {
+  "wikipedia": "Mongolia",
+  "wikidata": "Q711",
+  "fr": "Mongolie",
+  "es": "Mongolia"
+ },
+ "Montenegro": {
+  "wikipedia": "Montenegro",
+  "wikidata": "Q236",
+  "fr": "Monténégro",
+  "es": "Montenegro"
+ },
+ "Montserrat": {
+  "wikipedia": "Montserrat",
+  "wikidata": "Q13353",
+  "fr": "Montserrat",
+  "es": "Montserrat"
+ },
+ "Morocco": {
+  "wikipedia": "Morocco",
+  "wikidata": "Q1028",
+  "fr": "Maroc",
+  "es": "Marruecos"
+ },
+ "Mozambique": {
+  "wikipedia": "Mozambique",
+  "wikidata": "Q1029",
+  "fr": "Mozambique",
+  "es": "Mozambique"
+ },
+ "Myanmar": {
+  "wikipedia": "Myanmar",
+  "wikidata": "Q836",
+  "fr": "Birmanie",
+  "es": "Birmania"
+ },
+ "Namibia": {
+  "wikipedia": "Namibia",
+  "wikidata": "Q1030",
+  "fr": "Namibie",
+  "es": "Namibia"
+ },
+ "Nauru": {
+  "wikipedia": "Nauru",
+  "wikidata": "Q697",
+  "fr": "Nauru",
+  "es": "Nauru"
+ },
+ "Nepal": {
+  "wikipedia": "Nepal",
+  "wikidata": "Q837",
+  "fr": "Népal",
+  "es": "Nepal"
+ },
+ "Netherlands": {
+  "wikipedia": "Netherlands",
+  "wikidata": "Q55",
+  "fr": "Pays-Bas",
+  "es": "Países Bajos"
+ },
+ "New Caledonia": {
+  "wikipedia": "New Caledonia",
+  "wikidata": "Q33788",
+  "fr": "Nouvelle-Calédonie",
+  "es": "Nueva Caledonia"
+ },
+ "New Zealand": {
+  "wikipedia": "New Zealand",
+  "wikidata": "Q664",
+  "fr": "Nouvelle-Zélande",
+  "es": "Nueva Zelanda"
+ },
+ "Nicaragua": {
+  "wikipedia": "Nicaragua",
+  "wikidata": "Q811",
+  "fr": "Nicaragua",
+  "es": "Nicaragua"
+ },
+ "Niger": {
+  "wikipedia": "Niger",
+  "wikidata": "Q1032",
+  "fr": "Niger",
+  "es": "Níger"
+ },
+ "Nigeria": {
+  "wikipedia": "Nigeria",
+  "wikidata": "Q1033",
+  "fr": "Nigeria",
+  "es": "Nigeria"
+ },
+ "Niue": {
+  "wikipedia": "Niue",
+  "wikidata": "Q34020",
+  "fr": "Niue",
+  "es": "Niue"
+ },
+ "Norfolk Island": {
+  "wikipedia": "Norfolk Island",
+  "wikidata": "Q31057",
+  "fr": "Île Norfolk",
+  "es": "Isla Norfolk"
+ },
+ "North Korea": {
+  "wikipedia": "North Korea",
+  "wikidata": "Q423",
+  "fr": "Corée du Nord",
+  "es": "Corea del Norte"
+ },
+ "North Macedonia": {
+  "wikipedia": "North Macedonia",
+  "wikidata": "Q221",
+  "fr": "Macédoine du Nord",
+  "es": "Macedonia del Norte"
+ },
+ "Northern Cyprus": {
+  "wikipedia": "Northern Cyprus",
+  "wikidata": "Q23681",
+  "fr": "Chypre du Nord",
+  "es": "Chipre del Norte",
+  "hatchOnly": true
+ },
+ "Northern Mariana Islands": {
+  "wikipedia": "Northern Mariana Islands",
+  "wikidata": "Q16644",
+  "fr": "îles Mariannes du Nord",
+  "es": "Islas Marianas del Norte"
+ },
+ "Norway": {
+  "wikipedia": "Norway",
+  "wikidata": "Q20",
+  "fr": "Norvège",
+  "es": "Noruega"
+ },
+ "Oman": {
+  "wikipedia": "Oman",
+  "wikidata": "Q842",
+  "fr": "Oman",
+  "es": "Omán"
+ },
+ "Pakistan": {
+  "wikipedia": "Pakistan",
+  "wikidata": "Q843",
+  "fr": "Pakistan",
+  "es": "Pakistán"
+ },
+ "Palau": {
+  "wikipedia": "Palau",
+  "wikidata": "Q695",
+  "fr": "Palaos",
+  "es": "Palaos"
+ },
+ "Palestine": {
+  "wikipedia": "Palestine",
+  "wikidata": "Q219060",
+  "fr": "Palestine",
+  "es": "Palestina"
+ },
+ "Panama": {
+  "wikipedia": "Panama",
+  "wikidata": "Q804",
+  "fr": "Panama",
+  "es": "Panamá"
+ },
+ "Papua New Guinea": {
+  "wikipedia": "Papua New Guinea",
+  "wikidata": "Q691",
+  "fr": "Papouasie-Nouvelle-Guinée",
+  "es": "Papúa Nueva Guinea"
+ },
+ "Paraguay": {
+  "wikipedia": "Paraguay",
+  "wikidata": "Q733",
+  "fr": "Paraguay",
+  "es": "Paraguay"
+ },
+ "Peru": {
+  "wikipedia": "Peru",
+  "wikidata": "Q419",
+  "fr": "Pérou",
+  "es": "Perú"
+ },
+ "Philippines": {
+  "wikipedia": "Philippines",
+  "wikidata": "Q928",
+  "fr": "Philippines",
+  "es": "Filipinas"
+ },
+ "Pitcairn Islands": {
+  "wikipedia": "Pitcairn Islands",
+  "wikidata": "Q35672",
+  "fr": "Iles Pitcairn",
+  "es": "Islas Pitcairn"
+ },
+ "Poland": {
+  "wikipedia": "Poland",
+  "wikidata": "Q36",
+  "fr": "Pologne",
+  "es": "Polonia"
+ },
+ "Portugal": {
+  "wikipedia": "Portugal",
+  "wikidata": "Q45",
+  "fr": "Portugal",
+  "es": "Portugal",
+  "periods": [
+   {
+    "from": "1974-04-25",
+    "name": "Portugal",
+    "wikipedia": "Portugal",
+    "note": "Third Portuguese Republic, after the Carnation Revolution"
+   }
+  ]
+ },
+ "Portuguese Angola": {
+  "wikipedia": "Portuguese Angola",
+  "wikidata": "Q2826232",
+  "fr": "Angola portugais",
+  "es": "Angola portuguesa",
+  "withOwner": false
+ },
+ "Portuguese Cape Verde": {
+  "wikipedia": "Portuguese Cape Verde",
+  "wikidata": "Q3023340",
+  "fr": "Cap-Vert portugais",
+  "es": "Cabo Verde portugués",
+  "withOwner": false
+ },
+ "Portuguese Macau": {
+  "wikipedia": "Portuguese Macau",
+  "wikidata": "Q3916279",
+  "fr": "Macao portugais",
+  "es": "Macao portugués",
+  "withOwner": false
+ },
+ "Portuguese Mozambique": {
+  "wikipedia": "Portuguese Mozambique",
+  "wikidata": "Q889394",
+  "fr": "Mozambique portugais",
+  "es": "Mozambique portugués",
+  "withOwner": false
+ },
+ "Portuguese São Tomé and Príncipe": {
+  "wikipedia": "Portuguese São Tomé and Príncipe",
+  "wikidata": "Q7232692",
+  "fr": "Sao Tomé-et-Principe portugais",
+  "es": "Santo Tomé y Príncipe portugués",
+  "withOwner": false
+ },
+ "Portuguese Timor": {
+  "wikipedia": "Portuguese Timor",
+  "wikidata": "Q142965",
+  "fr": "Timor portugais",
+  "es": "Timor portugués",
+  "withOwner": false
+ },
+ "Puerto Rico": {
+  "wikipedia": "Puerto Rico",
+  "wikidata": "Q1183",
+  "fr": "Porto Rico",
+  "es": "Puerto Rico"
+ },
+ "Qatar": {
+  "wikipedia": "Qatar",
+  "wikidata": "Q846",
+  "fr": "Qatar",
+  "es": "Catar"
+ },
+ "Republic of the Congo": {
+  "wikipedia": "Republic of the Congo",
+  "wikidata": "Q971",
+  "fr": "République du Congo",
+  "es": "República del Congo"
+ },
+ "Romania": {
+  "wikipedia": "Romania",
+  "wikidata": "Q218",
+  "fr": "Roumanie",
+  "es": "Rumania"
+ },
+ "Russia": {
+  "wikipedia": "Russia",
+  "wikidata": "Q159",
+  "fr": "Russie",
+  "es": "Rusia"
+ },
+ "Rwanda": {
+  "wikipedia": "Rwanda",
+  "wikidata": "Q1037",
+  "fr": "Rwanda",
+  "es": "Ruanda"
+ },
+ "Saint Barthélemy": {
+  "wikipedia": "Saint Barthélemy",
+  "wikidata": "Q25362",
+  "fr": "Saint-Barthélemy",
+  "es": "San Bartolomé"
+ },
+ "Saint Helena, Ascension and Tristan da Cunha": {
+  "wikipedia": "Saint Helena, Ascension and Tristan da Cunha",
+  "wikidata": "Q192184",
+  "fr": "Sainte-Hélène, Ascension et Tristan da Cunha",
+  "es": "Santa Elena, Ascensión y Tristán de Acuña"
+ },
+ "Saint Kitts and Nevis": {
+  "wikipedia": "Saint Kitts and Nevis",
+  "wikidata": "Q763",
+  "fr": "Saint-Christophe-et-Niévès",
+  "es": "San Cristóbal y Nieves"
+ },
+ "Saint Lucia": {
+  "wikipedia": "Saint Lucia",
+  "wikidata": "Q760",
+  "fr": "Sainte-Lucie",
+  "es": "Santa Lucía"
+ },
+ "Saint Martin": {
+  "wikipedia": "Collectivity of Saint Martin",
+  "wikidata": "Q126125",
+  "fr": "Saint-Martin",
+  "es": "San Martín (Francia)"
+ },
+ "Saint Pierre and Miquelon": {
+  "wikipedia": "Saint Pierre and Miquelon",
+  "wikidata": "Q34617",
+  "fr": "Saint-Pierre-et-Miquelon",
+  "es": "San Pedro y Miquelón"
+ },
+ "Saint Vincent and the Grenadines": {
+  "wikipedia": "Saint Vincent and the Grenadines",
+  "wikidata": "Q757",
+  "fr": "Saint-Vincent-et-les-Grenadines",
+  "es": "San Vicente y las Granadinas"
+ },
+ "Samoa": {
+  "wikipedia": "Samoa",
+  "wikidata": "Q683",
+  "fr": "Samoa",
+  "es": "Samoa"
+ },
+ "San Marino": {
+  "wikipedia": "San Marino",
+  "wikidata": "Q238",
+  "fr": "Saint-Marin",
+  "es": "San Marino"
+ },
+ "Saudi Arabia": {
+  "wikipedia": "Saudi Arabia",
+  "wikidata": "Q851",
+  "fr": "Arabie saoudite",
+  "es": "Arabia Saudita"
+ },
+ "Senegal": {
+  "wikipedia": "Senegal",
+  "wikidata": "Q1041",
+  "fr": "Sénégal",
+  "es": "Senegal"
+ },
+ "Serbia": {
+  "wikipedia": "Serbia",
+  "wikidata": "Q403",
+  "fr": "Serbie",
+  "es": "Serbia"
+ },
+ "Seychelles": {
+  "wikipedia": "Seychelles",
+  "wikidata": "Q1042",
+  "fr": "Seychelles",
+  "es": "Seychelles"
+ },
+ "Sierra Leone": {
+  "wikipedia": "Sierra Leone",
+  "wikidata": "Q1044",
+  "fr": "Sierra Leone",
+  "es": "Sierra Leona"
+ },
+ "Singapore": {
+  "wikipedia": "Singapore",
+  "wikidata": "Q334",
+  "fr": "Singapour",
+  "es": "Singapur"
+ },
+ "Sint Maarten": {
+  "wikipedia": "Sint Maarten",
+  "wikidata": "Q26273",
+  "fr": "Sint Maarten",
+  "es": "San Martín (Países Bajos)"
+ },
+ "Slovakia": {
+  "wikipedia": "Slovakia",
+  "wikidata": "Q214",
+  "fr": "Slovaquie",
+  "es": "Eslovaquia"
+ },
+ "Slovenia": {
+  "wikipedia": "Slovenia",
+  "wikidata": "Q215",
+  "fr": "Slovénie",
+  "es": "Eslovenia"
+ },
+ "Solomon Islands": {
+  "wikipedia": "Solomon Islands",
+  "wikidata": "Q685",
+  "fr": "Îles Salomon",
+  "es": "Islas Salomón"
+ },
+ "Somalia": {
+  "wikipedia": "Somalia",
+  "wikidata": "Q1045",
+  "fr": "Somalie",
+  "es": "Somalia"
+ },
+ "Somaliland": {
+  "wikipedia": "Somaliland",
+  "wikidata": "Q34754",
+  "fr": "Somaliland",
+  "es": "Somalilandia",
+  "hatchOnly": true
+ },
+ "South Africa": {
+  "wikipedia": "South Africa",
+  "wikidata": "Q258",
+  "fr": "Afrique du Sud",
+  "es": "Sudáfrica"
+ },
+ "South Georgia and the South Sandwich Islands": {
+  "wikipedia": "South Georgia and the South Sandwich Islands",
+  "wikidata": "Q35086",
+  "fr": "Géorgie du Sud-et-les Îles Sandwich du Sud",
+  "es": "Islas Georgias del Sur y Sandwich del Sur"
+ },
+ "South Korea": {
+  "wikipedia": "South Korea",
+  "wikidata": "Q884",
+  "fr": "Corée du Sud",
+  "es": "Corea del Sur"
+ },
+ "South Sudan": {
+  "wikipedia": "South Sudan",
+  "wikidata": "Q958",
+  "fr": "Soudan du Sud",
+  "es": "Sudán del Sur"
+ },
+ "Spain": {
+  "wikipedia": "Spain",
+  "wikidata": "Q29",
+  "fr": "Espagne",
+  "es": "España"
+ },
+ "Sri Lanka": {
+  "wikipedia": "Sri Lanka",
+  "wikidata": "Q854",
+  "fr": "Sri Lanka",
+  "es": "Sri Lanka"
+ },
+ "Sudan": {
+  "wikipedia": "Sudan",
+  "wikidata": "Q1049",
+  "fr": "Soudan",
+  "es": "Sudán"
+ },
+ "Suriname": {
+  "wikipedia": "Suriname",
+  "wikidata": "Q730",
+  "fr": "Suriname",
+  "es": "Surinam"
+ },
+ "Sweden": {
+  "wikipedia": "Sweden",
+  "wikidata": "Q34",
+  "fr": "Suède",
+  "es": "Suecia"
+ },
+ "Switzerland": {
+  "wikipedia": "Switzerland",
+  "wikidata": "Q39",
+  "fr": "Suisse",
+  "es": "Suiza"
+ },
+ "Syria": {
+  "wikipedia": "Syria",
+  "wikidata": "Q858",
+  "fr": "Syrie",
+  "es": "Siria"
+ },
+ "São Tomé and Príncipe": {
+  "wikipedia": "São Tomé and Príncipe",
+  "wikidata": "Q1039",
+  "fr": "Sao Tomé-et-Principe",
+  "es": "Santo Tomé y Príncipe"
+ },
+ "Taiwan (Republic of China)": {
+  "wikipedia": "Taiwan",
+  "wikidata": "Q865",
+  "fr": "Taïwan",
+  "es": "República de China"
+ },
+ "Tajikistan": {
+  "wikipedia": "Tajikistan",
+  "wikidata": "Q863",
+  "fr": "Tadjikistan",
+  "es": "Tayikistán"
+ },
+ "Tanzania": {
+  "wikipedia": "Tanzania",
+  "wikidata": "Q924",
+  "fr": "Tanzanie",
+  "es": "Tanzania"
+ },
+ "Thailand": {
+  "wikipedia": "Thailand",
+  "wikidata": "Q869",
+  "fr": "Thaïlande",
+  "es": "Tailandia"
+ },
+ "The Bahamas": {
+  "wikipedia": "The Bahamas",
+  "wikidata": "Q778",
+  "fr": "Bahamas",
+  "es": "Bahamas"
+ },
+ "The Gambia": {
+  "wikipedia": "The Gambia",
+  "wikidata": "Q1005",
+  "fr": "Gambie",
+  "es": "Gambia"
+ },
+ "Timor-Leste": {
+  "wikipedia": "Timor-Leste",
+  "wikidata": "Q574",
+  "fr": "Timor oriental",
+  "es": "Timor Oriental"
+ },
+ "Togo": {
+  "wikipedia": "Togo",
+  "wikidata": "Q945",
+  "fr": "Togo",
+  "es": "Togo"
+ },
+ "Tokelau": {
+  "wikipedia": "Tokelau",
+  "wikidata": "Q36823",
+  "fr": "Tokelau",
+  "es": "Tokelau"
+ },
+ "Tonga": {
+  "wikipedia": "Tonga",
+  "wikidata": "Q678",
+  "fr": "Tonga",
+  "es": "Tonga"
+ },
+ "Transnistria": {
+  "wikipedia": "Transnistria",
+  "wikidata": "Q907112",
+  "fr": "Transnistrie",
+  "es": "Transnistria",
+  "hatchOnly": true
+ },
+ "Trinidad and Tobago": {
+  "wikipedia": "Trinidad and Tobago",
+  "wikidata": "Q754",
+  "fr": "Trinité-et-Tobago",
+  "es": "Trinidad y Tobago"
+ },
+ "Tunisia": {
+  "wikipedia": "Tunisia",
+  "wikidata": "Q948",
+  "fr": "Tunisie",
+  "es": "Túnez"
+ },
+ "Turkey": {
+  "wikipedia": "Turkey",
+  "wikidata": "Q43",
+  "fr": "Turquie",
+  "es": "Turquía"
+ },
+ "Turkmenistan": {
+  "wikipedia": "Turkmenistan",
+  "wikidata": "Q874",
+  "fr": "Turkménistan",
+  "es": "Turkmenistán"
+ },
+ "Turks and Caicos Islands": {
+  "wikipedia": "Turks and Caicos Islands",
+  "wikidata": "Q18221",
+  "fr": "îles Turques-et-Caïques",
+  "es": "Islas Turcas y Caicos"
+ },
+ "Tuvalu": {
+  "wikipedia": "Tuvalu",
+  "wikidata": "Q672",
+  "fr": "Tuvalu",
+  "es": "Tuvalu"
+ },
+ "Uganda": {
+  "wikipedia": "Uganda",
+  "wikidata": "Q1036",
+  "fr": "Ouganda",
+  "es": "Uganda"
+ },
+ "Ukraine": {
+  "wikipedia": "Ukraine",
+  "wikidata": "Q212",
+  "fr": "Ukraine",
+  "es": "Ucrania"
+ },
+ "United Arab Emirates": {
+  "wikipedia": "United Arab Emirates",
+  "wikidata": "Q878",
+  "fr": "Émirats arabes unis",
+  "es": "Emiratos Árabes Unidos"
+ },
+ "United Kingdom": {
+  "wikipedia": "United Kingdom",
+  "wikidata": "Q145",
+  "fr": "Royaume-Uni",
+  "es": "Reino Unido"
+ },
+ "United States": {
+  "wikipedia": "United States",
+  "wikidata": "Q30",
+  "fr": "États-Unis",
+  "es": "Estados Unidos"
+ },
+ "United States Minor Outlying Islands": {
+  "wikipedia": "United States Minor Outlying Islands",
+  "wikidata": "Q16645",
+  "fr": "Îles mineures éloignées des États-Unis",
+  "es": "Islas ultramarinas de Estados Unidos",
+  "withOwner": false
+ },
+ "United States Virgin Islands": {
+  "wikipedia": "United States Virgin Islands",
+  "wikidata": "Q11703",
+  "fr": "îles Vierges des États-Unis",
+  "es": "Islas Vírgenes de los Estados Unidos",
+  "withOwner": false
+ },
+ "Uruguay": {
+  "wikipedia": "Uruguay",
+  "wikidata": "Q77",
+  "fr": "Uruguay",
+  "es": "Uruguay"
+ },
+ "Uzbekistan": {
+  "wikipedia": "Uzbekistan",
+  "wikidata": "Q265",
+  "fr": "Ouzbékistan",
+  "es": "Uzbekistán"
+ },
+ "Vanuatu": {
+  "wikipedia": "Vanuatu",
+  "wikidata": "Q686",
+  "fr": "Vanuatu",
+  "es": "Vanuatu"
+ },
+ "Vatican City": {
+  "wikipedia": "Vatican City",
+  "wikidata": "Q237",
+  "fr": "Cité du Vatican",
+  "es": "Ciudad del Vaticano"
+ },
+ "Venezuela": {
+  "wikipedia": "Venezuela",
+  "wikidata": "Q717",
+  "fr": "Venezuela",
+  "es": "Venezuela"
+ },
+ "Vietnam": {
+  "wikipedia": "Vietnam",
+  "wikidata": "Q881",
+  "fr": "Viêt Nam",
+  "es": "Vietnam"
+ },
+ "Wake Island": {
+  "wikipedia": "Wake Island",
+  "wikidata": "Q43296",
+  "fr": "Wake",
+  "es": "Isla Wake"
+ },
+ "Wallis and Futuna": {
+  "wikipedia": "Wallis and Futuna",
+  "wikidata": "Q35555",
+  "fr": "Wallis-et-Futuna",
+  "es": "Wallis y Futuna"
+ },
+ "Western Sahara": {
+  "wikipedia": "Western Sahara",
+  "wikidata": "Q6250",
+  "fr": "Sahara occidental",
+  "es": "Sahara Occidental",
+  "notACountry": true
+ },
+ "Yemen": {
+  "wikipedia": "Yemen",
+  "wikidata": "Q805",
+  "fr": "Yémen",
+  "es": "Yemen"
+ },
+ "Zambia": {
+  "wikipedia": "Zambia",
+  "wikidata": "Q953",
+  "fr": "Zambie",
+  "es": "Zambia"
+ },
+ "Zimbabwe": {
+  "wikipedia": "Zimbabwe",
+  "wikidata": "Q954",
+  "fr": "Zimbabwe",
+  "es": "Zimbabue"
+ }
+}

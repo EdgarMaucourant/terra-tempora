@@ -1,0 +1,223 @@
+{
+ "family": "Portugal",
+ "note": "Portugal with the Azores and Madeira, and the land it held overseas. Reviewed from 2026 back to 1974 (the map on 31 December 1974). Next stop: Guinea-Bissau (1973-1974) and Goa (1961).",
+ "reviewed": [
+  {
+   "pieces": [
+    "PRT",
+    "MAC",
+    "AGO",
+    "MOZ",
+    "CPV",
+    "STP",
+    "TLS",
+    "GNB"
+   ],
+   "from": 1974,
+   "why": "Portugal and every land it held between 1974 and today, through the year each left it"
+  }
+ ],
+ "changes": [
+  {
+   "date": "2002-05-20",
+   "what": "East Timor becomes independent as Timor-Leste",
+   "source": {
+    "title": "Timor-Leste (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Timor-Leste"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:East_Timor_(orthographic_projection).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TLS"
+     ],
+     "owner": "East Timor under UN administration",
+     "source": {
+      "title": "United Nations Transitional Administration in East Timor (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/United_Nations_Transitional_Administration_in_East_Timor"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:TimorEast.png"
+    }
+   ]
+  },
+  {
+   "date": "1999-12-20",
+   "what": "Macau handed over to China",
+   "source": {
+    "title": "Macau (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Macau"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Macau_in_China_(zoomed)_(+all_claims_hatched).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MAC"
+     ],
+     "owner": "Portugal",
+     "territory": "Portuguese Macau",
+     "source": {
+      "title": "Portuguese Macau (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Portuguese_Macau"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Macau_on_the_globe_(Macau_centered_with_inset).svg"
+    }
+   ]
+  },
+  {
+   "date": "1999-10-25",
+   "what": "Indonesia leaves East Timor, which passes to a UN transitional administration (UN Security Council resolution 1272)",
+   "source": {
+    "title": "United Nations Transitional Administration in East Timor (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/United_Nations_Transitional_Administration_in_East_Timor"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:TimorEast.png",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TLS"
+     ],
+     "owner": "Portugal",
+     "territory": "Portuguese Timor",
+     "source": {
+      "title": "Portuguese Timor (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Portuguese_Timor"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Timor_-_Indonesian_Invasion.png",
+     "hatch": {
+      "by": "Indonesia",
+      "since": "1975-12-07",
+      "note": "Invaded by Indonesia in December 1975 and annexed in 1976; the UN went on listing it as a territory under Portuguese administration (UN Security Council resolution 384)",
+      "source": {
+       "title": "Indonesian occupation of East Timor (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Indonesian_occupation_of_East_Timor"
+      },
+      "map": "https://commons.wikimedia.org/wiki/File:Timor_-_Indonesian_Invasion.png"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1975-12-07",
+   "what": "Indonesia invades Portuguese Timor (annexation in 1976 recognised by almost no state)",
+   "source": {
+    "title": "Indonesian invasion of East Timor (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Indonesian_invasion_of_East_Timor"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Timor_-_Indonesian_Invasion.png",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TLS"
+     ],
+     "owner": "Portugal",
+     "territory": "Portuguese Timor",
+     "source": {
+      "title": "Portuguese Timor (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Portuguese_Timor"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Portuguese_Empire_20th_century.png"
+    }
+   ]
+  },
+  {
+   "date": "1975-11-11",
+   "what": "Angola, with Cabinda, becomes independent",
+   "source": {
+    "title": "Angola (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Angola"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Angola_(orthographic_projection).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "AGO"
+     ],
+     "owner": "Portugal",
+     "territory": "Portuguese Angola",
+     "source": {
+      "title": "Portuguese Angola (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Portuguese_Angola"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Portuguese_Empire_20th_century.png"
+    }
+   ]
+  },
+  {
+   "date": "1975-07-12",
+   "what": "São Tomé and Príncipe becomes independent",
+   "source": {
+    "title": "São Tomé and Príncipe (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/São_Tomé_and_Príncipe"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:São_Tomé_and_Príncipe_(orthographic_projection).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "STP"
+     ],
+     "owner": "Portugal",
+     "territory": "Portuguese São Tomé and Príncipe",
+     "source": {
+      "title": "Portuguese São Tomé and Príncipe (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Portuguese_São_Tomé_and_Príncipe"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Portuguese_Empire_20th_century.png"
+    }
+   ]
+  },
+  {
+   "date": "1975-07-05",
+   "what": "Cape Verde becomes independent",
+   "source": {
+    "title": "Cape Verde (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Cape_Verde"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Cape_Verde_(orthographic_projection).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "CPV"
+     ],
+     "owner": "Portugal",
+     "territory": "Portuguese Cape Verde",
+     "source": {
+      "title": "Portuguese Cape Verde (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Portuguese_Cape_Verde"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Portuguese_Empire_20th_century.png"
+    }
+   ]
+  },
+  {
+   "date": "1975-06-25",
+   "what": "Mozambique becomes independent",
+   "source": {
+    "title": "Mozambique (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Mozambique"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Mozambique_(orthographic_projection).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MOZ"
+     ],
+     "owner": "Portugal",
+     "territory": "Portuguese Mozambique",
+     "source": {
+      "title": "Portuguese Mozambique (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Portuguese_Mozambique"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Portuguese_Empire_20th_century.png"
+    }
+   ]
+  }
+ ]
+}

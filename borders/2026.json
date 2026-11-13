@@ -1,0 +1,1032 @@
+{
+ "date": "2026-12-31",
+ "source": {
+  "title": "Natural Earth 1:10m Admin 1 – States, Provinces",
+  "url": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/",
+  "license": "Public domain"
+ },
+ "units": {
+  "ABW": {
+   "owner": "Netherlands",
+   "territory": "Aruba"
+  },
+  "AFG": {
+   "owner": "Afghanistan"
+  },
+  "AGO": {
+   "owner": "Angola"
+  },
+  "AIA": {
+   "owner": "United Kingdom",
+   "territory": "Anguilla"
+  },
+  "ALB": {
+   "owner": "Albania"
+  },
+  "ALD": {
+   "owner": "Finland"
+  },
+  "AND": {
+   "owner": "Andorra"
+  },
+  "ARE": {
+   "owner": "United Arab Emirates"
+  },
+  "ARG": {
+   "owner": "Argentina"
+  },
+  "ARM": {
+   "owner": "Armenia"
+  },
+  "ASM": {
+   "owner": "United States",
+   "territory": "American Samoa"
+  },
+  "ATA": null,
+  "ATC": {
+   "owner": "Australia",
+   "territory": "Ashmore and Cartier Islands"
+  },
+  "ATF": {
+   "owner": "France",
+   "territory": "French Southern and Antarctic Lands"
+  },
+  "ATG": {
+   "owner": "Antigua and Barbuda"
+  },
+  "AUS": {
+   "owner": "Australia"
+  },
+  "AUT": {
+   "owner": "Austria"
+  },
+  "AZE": {
+   "owner": "Azerbaijan"
+  },
+  "BDI": {
+   "owner": "Burundi"
+  },
+  "BEL": {
+   "owner": "Belgium"
+  },
+  "BEN": {
+   "owner": "Benin"
+  },
+  "BFA": {
+   "owner": "Burkina Faso"
+  },
+  "BGD": {
+   "owner": "Bangladesh"
+  },
+  "BGR": {
+   "owner": "Bulgaria"
+  },
+  "BHR": {
+   "owner": "Bahrain"
+  },
+  "BHS": {
+   "owner": "The Bahamas"
+  },
+  "BIH": {
+   "owner": "Bosnia and Herzegovina"
+  },
+  "BLM": {
+   "owner": "France",
+   "territory": "Saint Barthélemy"
+  },
+  "BLR": {
+   "owner": "Belarus"
+  },
+  "BLZ": {
+   "owner": "Belize"
+  },
+  "BMU": {
+   "owner": "United Kingdom",
+   "territory": "Bermuda"
+  },
+  "BOL": {
+   "owner": "Bolivia"
+  },
+  "BRA": {
+   "owner": "Brazil"
+  },
+  "BRB": {
+   "owner": "Barbados"
+  },
+  "BRN": {
+   "owner": "Brunei"
+  },
+  "BTN": {
+   "owner": "Bhutan"
+  },
+  "BWA": {
+   "owner": "Botswana"
+  },
+  "CAF": {
+   "owner": "Central African Republic"
+  },
+  "CAN": {
+   "owner": "Canada"
+  },
+  "CHE": {
+   "owner": "Switzerland"
+  },
+  "CHL": {
+   "owner": "Chile"
+  },
+  "CHN": {
+   "owner": "China"
+  },
+  "CIV": {
+   "owner": "Ivory Coast"
+  },
+  "CLP": {
+   "owner": "France",
+   "territory": "Clipperton Island"
+  },
+  "CMR": {
+   "owner": "Cameroon"
+  },
+  "COD": {
+   "owner": "Democratic Republic of the Congo"
+  },
+  "COG": {
+   "owner": "Republic of the Congo"
+  },
+  "COK": {
+   "owner": "New Zealand",
+   "territory": "Cook Islands"
+  },
+  "COL": {
+   "owner": "Colombia"
+  },
+  "COM": {
+   "owner": "Comoros"
+  },
+  "CPV": {
+   "owner": "Cape Verde"
+  },
+  "CRI": {
+   "owner": "Costa Rica"
+  },
+  "CSI": {
+   "owner": "Australia",
+   "territory": "Coral Sea Islands"
+  },
+  "CUB": {
+   "owner": "Cuba"
+  },
+  "CUW": {
+   "owner": "Netherlands",
+   "territory": "Curaçao"
+  },
+  "CYM": {
+   "owner": "United Kingdom",
+   "territory": "Cayman Islands"
+  },
+  "CYN": {
+   "owner": "Cyprus",
+   "hatch": {
+    "by": "Northern Cyprus",
+    "since": "1974-08-16",
+    "note": "Held by Turkish forces since 1974; declared independent in 1983, recognised only by Turkey (UN Security Council resolutions 541 and 550)",
+    "source": {
+     "title": "UN Security Council resolution 541 (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_541"
+    }
+   }
+  },
+  "CYP": {
+   "owner": "Cyprus"
+  },
+  "CZE": {
+   "owner": "Czech Republic"
+  },
+  "DEU": {
+   "owner": "Germany"
+  },
+  "DJI": {
+   "owner": "Djibouti"
+  },
+  "DMA": {
+   "owner": "Dominica"
+  },
+  "DNK": {
+   "owner": "Denmark"
+  },
+  "DOM": {
+   "owner": "Dominican Republic"
+  },
+  "DZA": {
+   "owner": "Algeria"
+  },
+  "ECU": {
+   "owner": "Ecuador"
+  },
+  "EGY": {
+   "owner": "Egypt"
+  },
+  "ERI": {
+   "owner": "Eritrea"
+  },
+  "ESB": {
+   "owner": "United Kingdom",
+   "territory": "Akrotiri and Dhekelia"
+  },
+  "ESP": {
+   "owner": "Spain"
+  },
+  "EST": {
+   "owner": "Estonia"
+  },
+  "ETH": {
+   "owner": "Ethiopia"
+  },
+  "FIN": {
+   "owner": "Finland"
+  },
+  "FJI": {
+   "owner": "Fiji"
+  },
+  "FLK": {
+   "owner": "United Kingdom",
+   "territory": "Falkland Islands"
+  },
+  "FRA": {
+   "owner": "France"
+  },
+  "FRO": {
+   "owner": "Denmark",
+   "territory": "Faroe Islands"
+  },
+  "FSM": {
+   "owner": "Federated States of Micronesia"
+  },
+  "GAB": {
+   "owner": "Gabon"
+  },
+  "GBR": {
+   "owner": "United Kingdom"
+  },
+  "GEO": {
+   "owner": "Georgia"
+  },
+  "GGY": {
+   "owner": "United Kingdom",
+   "territory": "Guernsey"
+  },
+  "GHA": {
+   "owner": "Ghana"
+  },
+  "GIB": {
+   "owner": "United Kingdom",
+   "territory": "Gibraltar"
+  },
+  "GIN": {
+   "owner": "Guinea"
+  },
+  "GMB": {
+   "owner": "The Gambia"
+  },
+  "GNB": {
+   "owner": "Guinea-Bissau"
+  },
+  "GNQ": {
+   "owner": "Equatorial Guinea"
+  },
+  "GRC": {
+   "owner": "Greece"
+  },
+  "GRD": {
+   "owner": "Grenada"
+  },
+  "GRL": {
+   "owner": "Denmark",
+   "territory": "Greenland"
+  },
+  "GTM": {
+   "owner": "Guatemala"
+  },
+  "GUM": {
+   "owner": "United States",
+   "territory": "Guam"
+  },
+  "GUY": {
+   "owner": "Guyana"
+  },
+  "HKG": {
+   "owner": "China",
+   "territory": "Hong Kong"
+  },
+  "HMD": {
+   "owner": "Australia",
+   "territory": "Heard Island and McDonald Islands"
+  },
+  "HND": {
+   "owner": "Honduras"
+  },
+  "HRV": {
+   "owner": "Croatia"
+  },
+  "HTI": {
+   "owner": "Haiti"
+  },
+  "HUN": {
+   "owner": "Hungary"
+  },
+  "IDN": {
+   "owner": "Indonesia"
+  },
+  "IMN": {
+   "owner": "United Kingdom",
+   "territory": "Isle of Man"
+  },
+  "IND": {
+   "owner": "India"
+  },
+  "IOT": {
+   "owner": "Mauritius",
+   "territory": "Chagos Archipelago",
+   "hatch": {
+    "by": "United Kingdom",
+    "since": "1965-11-08",
+    "note": "Held by the United Kingdom as the British Indian Ocean Territory; the UN General Assembly (resolution 73/295, 2019) recognises it as part of Mauritius",
+    "source": {
+     "title": "Chagos Archipelago sovereignty dispute (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Chagos_Archipelago_sovereignty_dispute"
+    }
+   }
+  },
+  "IRL": {
+   "owner": "Ireland"
+  },
+  "IRN": {
+   "owner": "Iran"
+  },
+  "IRQ": {
+   "owner": "Iraq"
+  },
+  "ISL": {
+   "owner": "Iceland"
+  },
+  "ISR": {
+   "owner": "Israel"
+  },
+  "ITA": {
+   "owner": "Italy"
+  },
+  "JAM": {
+   "owner": "Jamaica"
+  },
+  "JEY": {
+   "owner": "United Kingdom",
+   "territory": "Jersey"
+  },
+  "JOR": {
+   "owner": "Jordan"
+  },
+  "JPN": {
+   "owner": "Japan"
+  },
+  "KAB": {
+   "owner": "Kazakhstan"
+  },
+  "KAS": {
+   "owner": "India"
+  },
+  "KAZ": {
+   "owner": "Kazakhstan"
+  },
+  "KEN": {
+   "owner": "Kenya"
+  },
+  "KGZ": {
+   "owner": "Kyrgyzstan"
+  },
+  "KHM": {
+   "owner": "Cambodia"
+  },
+  "KIR": {
+   "owner": "Kiribati"
+  },
+  "KNA": {
+   "owner": "Saint Kitts and Nevis"
+  },
+  "KOR": {
+   "owner": "South Korea"
+  },
+  "KOS": {
+   "owner": "Kosovo"
+  },
+  "KWT": {
+   "owner": "Kuwait"
+  },
+  "LAO": {
+   "owner": "Laos"
+  },
+  "LBN": {
+   "owner": "Lebanon"
+  },
+  "LBR": {
+   "owner": "Liberia"
+  },
+  "LBY": {
+   "owner": "Libya"
+  },
+  "LCA": {
+   "owner": "Saint Lucia"
+  },
+  "LIE": {
+   "owner": "Liechtenstein"
+  },
+  "LKA": {
+   "owner": "Sri Lanka"
+  },
+  "LSO": {
+   "owner": "Lesotho"
+  },
+  "LTU": {
+   "owner": "Lithuania"
+  },
+  "LUX": {
+   "owner": "Luxembourg"
+  },
+  "LVA": {
+   "owner": "Latvia"
+  },
+  "MAC": {
+   "owner": "China",
+   "territory": "Macau"
+  },
+  "MAF": {
+   "owner": "France",
+   "territory": "Saint Martin"
+  },
+  "MAR": {
+   "owner": "Morocco"
+  },
+  "MCO": {
+   "owner": "Monaco"
+  },
+  "MDA": {
+   "owner": "Moldova"
+  },
+  "MDG": {
+   "owner": "Madagascar"
+  },
+  "MDV": {
+   "owner": "Maldives"
+  },
+  "MEX": {
+   "owner": "Mexico"
+  },
+  "MHL": {
+   "owner": "Marshall Islands"
+  },
+  "MKD": {
+   "owner": "North Macedonia"
+  },
+  "MLI": {
+   "owner": "Mali"
+  },
+  "MLT": {
+   "owner": "Malta"
+  },
+  "MMR": {
+   "owner": "Myanmar"
+  },
+  "MNE": {
+   "owner": "Montenegro"
+  },
+  "MNG": {
+   "owner": "Mongolia"
+  },
+  "MNP": {
+   "owner": "United States",
+   "territory": "Northern Mariana Islands"
+  },
+  "MOZ": {
+   "owner": "Mozambique"
+  },
+  "MRT": {
+   "owner": "Mauritania"
+  },
+  "MSR": {
+   "owner": "United Kingdom",
+   "territory": "Montserrat"
+  },
+  "MUS": {
+   "owner": "Mauritius"
+  },
+  "MWI": {
+   "owner": "Malawi"
+  },
+  "MYS": {
+   "owner": "Malaysia"
+  },
+  "NAM": {
+   "owner": "Namibia"
+  },
+  "NCL": {
+   "owner": "France",
+   "territory": "New Caledonia"
+  },
+  "NER": {
+   "owner": "Niger"
+  },
+  "NFK": {
+   "owner": "Australia",
+   "territory": "Norfolk Island"
+  },
+  "NGA": {
+   "owner": "Nigeria"
+  },
+  "NIC": {
+   "owner": "Nicaragua"
+  },
+  "NIU": {
+   "owner": "New Zealand",
+   "territory": "Niue"
+  },
+  "NLD": {
+   "owner": "Netherlands"
+  },
+  "NOR": {
+   "owner": "Norway"
+  },
+  "NPL": {
+   "owner": "Nepal"
+  },
+  "NRU": {
+   "owner": "Nauru"
+  },
+  "NZL": {
+   "owner": "New Zealand"
+  },
+  "OMN": {
+   "owner": "Oman"
+  },
+  "PAK": {
+   "owner": "Pakistan"
+  },
+  "PAN": {
+   "owner": "Panama"
+  },
+  "PCN": {
+   "owner": "United Kingdom",
+   "territory": "Pitcairn Islands"
+  },
+  "PER": {
+   "owner": "Peru"
+  },
+  "PGA": null,
+  "PHL": {
+   "owner": "Philippines"
+  },
+  "PLW": {
+   "owner": "Palau"
+  },
+  "PNG": {
+   "owner": "Papua New Guinea"
+  },
+  "POL": {
+   "owner": "Poland"
+  },
+  "PRI": {
+   "owner": "United States",
+   "territory": "Puerto Rico"
+  },
+  "PRK": {
+   "owner": "North Korea"
+  },
+  "PRT": {
+   "owner": "Portugal"
+  },
+  "PRY": {
+   "owner": "Paraguay"
+  },
+  "PSX": {
+   "owner": "Palestine",
+   "hatch": {
+    "by": "Israel",
+    "since": "1967-06-10",
+    "note": "Occupied by Israel since 1967 (International Court of Justice advisory opinion, 19 July 2024)",
+    "source": {
+     "title": "Israeli-occupied territories (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Israeli-occupied_territories"
+    }
+   }
+  },
+  "PYF": {
+   "owner": "France",
+   "territory": "French Polynesia"
+  },
+  "QAT": {
+   "owner": "Qatar"
+  },
+  "ROU": {
+   "owner": "Romania"
+  },
+  "RUS": {
+   "owner": "Russia"
+  },
+  "RWA": {
+   "owner": "Rwanda"
+  },
+  "SAH": {
+   "owner": "Western Sahara"
+  },
+  "SAU": {
+   "owner": "Saudi Arabia"
+  },
+  "SDN": {
+   "owner": "Sudan"
+  },
+  "SDS": {
+   "owner": "South Sudan"
+  },
+  "SEN": {
+   "owner": "Senegal"
+  },
+  "SGP": {
+   "owner": "Singapore"
+  },
+  "SGS": {
+   "owner": "United Kingdom",
+   "territory": "South Georgia and the South Sandwich Islands"
+  },
+  "SHN": {
+   "owner": "United Kingdom",
+   "territory": "Saint Helena, Ascension and Tristan da Cunha"
+  },
+  "SLB": {
+   "owner": "Solomon Islands"
+  },
+  "SLE": {
+   "owner": "Sierra Leone"
+  },
+  "SLV": {
+   "owner": "El Salvador"
+  },
+  "SMR": {
+   "owner": "San Marino"
+  },
+  "SOL": {
+   "owner": "Somalia",
+   "hatch": {
+    "by": "Somaliland",
+    "since": "1991-05-18",
+    "note": "Self-declared independent since 1991, not recognised by any UN member",
+    "source": {
+     "title": "Somaliland (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Somaliland"
+    }
+   }
+  },
+  "SOM": {
+   "owner": "Somalia"
+  },
+  "SPM": {
+   "owner": "France",
+   "territory": "Saint Pierre and Miquelon"
+  },
+  "SRB": {
+   "owner": "Serbia"
+  },
+  "STP": {
+   "owner": "São Tomé and Príncipe"
+  },
+  "SUR": {
+   "owner": "Suriname"
+  },
+  "SVK": {
+   "owner": "Slovakia"
+  },
+  "SVN": {
+   "owner": "Slovenia"
+  },
+  "SWE": {
+   "owner": "Sweden"
+  },
+  "SWZ": {
+   "owner": "Eswatini"
+  },
+  "SXM": {
+   "owner": "Netherlands",
+   "territory": "Sint Maarten"
+  },
+  "SYC": {
+   "owner": "Seychelles"
+  },
+  "SYR": {
+   "owner": "Syria"
+  },
+  "TCA": {
+   "owner": "United Kingdom",
+   "territory": "Turks and Caicos Islands"
+  },
+  "TCD": {
+   "owner": "Chad"
+  },
+  "TGO": {
+   "owner": "Togo"
+  },
+  "THA": {
+   "owner": "Thailand"
+  },
+  "TJK": {
+   "owner": "Tajikistan"
+  },
+  "TKM": {
+   "owner": "Turkmenistan"
+  },
+  "TLS": {
+   "owner": "Timor-Leste"
+  },
+  "TON": {
+   "owner": "Tonga"
+  },
+  "TTO": {
+   "owner": "Trinidad and Tobago"
+  },
+  "TUN": {
+   "owner": "Tunisia"
+  },
+  "TUR": {
+   "owner": "Turkey"
+  },
+  "TUV": {
+   "owner": "Tuvalu"
+  },
+  "TWN": {
+   "owner": "Taiwan (Republic of China)"
+  },
+  "TZA": {
+   "owner": "Tanzania"
+  },
+  "UGA": {
+   "owner": "Uganda"
+  },
+  "UKR": {
+   "owner": "Ukraine"
+  },
+  "UMI": {
+   "owner": "United States",
+   "territory": "United States Minor Outlying Islands"
+  },
+  "URY": {
+   "owner": "Uruguay"
+  },
+  "USA": {
+   "owner": "United States"
+  },
+  "USG": {
+   "owner": "Cuba"
+  },
+  "UZB": {
+   "owner": "Uzbekistan"
+  },
+  "VAT": {
+   "owner": "Vatican City"
+  },
+  "VCT": {
+   "owner": "Saint Vincent and the Grenadines"
+  },
+  "VEN": {
+   "owner": "Venezuela"
+  },
+  "VGB": {
+   "owner": "United Kingdom",
+   "territory": "British Virgin Islands"
+  },
+  "VIR": {
+   "owner": "United States",
+   "territory": "United States Virgin Islands"
+  },
+  "VNM": {
+   "owner": "Vietnam"
+  },
+  "VUT": {
+   "owner": "Vanuatu"
+  },
+  "WLF": {
+   "owner": "France",
+   "territory": "Wallis and Futuna"
+  },
+  "WSB": {
+   "owner": "United Kingdom",
+   "territory": "Akrotiri and Dhekelia"
+  },
+  "WSM": {
+   "owner": "Samoa"
+  },
+  "YEM": {
+   "owner": "Yemen"
+  },
+  "ZAF": {
+   "owner": "South Africa"
+  },
+  "ZMB": {
+   "owner": "Zambia"
+  },
+  "ZWE": {
+   "owner": "Zimbabwe"
+  }
+ },
+ "groundUnits": {
+  "CXR": {
+   "owner": "Australia",
+   "territory": "Christmas Island"
+  },
+  "CCK": {
+   "owner": "Australia",
+   "territory": "Cocos (Keeling) Islands"
+  },
+  "TKL": {
+   "owner": "New Zealand",
+   "territory": "Tokelau"
+  },
+  "BVT": {
+   "owner": "Norway",
+   "territory": "Bouvet Island"
+  },
+  "PAZ": {
+   "owner": "Portugal",
+   "territory": "Azores"
+  },
+  "PMD": {
+   "owner": "Portugal",
+   "territory": "Madeira"
+  }
+ },
+ "pieces": {
+  "RUS-283": {
+   "owner": "Ukraine",
+   "hatch": {
+    "by": "Russia",
+    "since": "2014-03-18",
+    "note": "Annexed by Russia in 2014, not recognised (UN General Assembly resolution 68/262)",
+    "source": {
+     "title": "UN General Assembly resolution 68/262 (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/United_Nations_General_Assembly_Resolution_68/262"
+    }
+   }
+  },
+  "RUS-5482": {
+   "owner": "Ukraine",
+   "hatch": {
+    "by": "Russia",
+    "since": "2014-03-18",
+    "note": "Annexed by Russia in 2014, not recognised (UN General Assembly resolution 68/262)",
+    "source": {
+     "title": "UN General Assembly resolution 68/262 (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/United_Nations_General_Assembly_Resolution_68/262"
+    }
+   }
+  },
+  "MDA-1638": {
+   "owner": "Moldova",
+   "hatch": {
+    "by": "Transnistria",
+    "since": "1992-07-21",
+    "note": "Self-declared state since 1990, held with Russian troops since the 1992 war, recognised by no UN member. Drawn from the Natural Earth districts east of the Dniester and Bender, which it holds",
+    "source": {
+     "title": "Transnistria (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Transnistria"
+    }
+   }
+  },
+  "GEO-3015": {
+   "owner": "Georgia",
+   "hatch": {
+    "by": "Abkhazia",
+    "since": "1993-09-30",
+    "note": "Out of Georgia's control since the 1992-1993 war; recognised by Russia and a few states only",
+    "source": {
+     "title": "Abkhazia (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Abkhazia"
+    }
+   }
+  },
+  "golan": {
+   "owner": "Syria",
+   "hatch": {
+    "by": "Israel",
+    "since": "1967-06-10",
+    "note": "Occupied by Israel since 1967 and annexed in 1981, not recognised (UN Security Council resolution 497)",
+    "source": {
+     "title": "Golan Heights (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Golan_Heights"
+    }
+   }
+  },
+  "east-jerusalem": {
+   "owner": "Palestine",
+   "hatch": {
+    "by": "Israel",
+    "since": "1967-06-10",
+    "note": "Occupied by Israel since 1967 and annexed, not recognised (UN Security Council resolution 478)",
+    "source": {
+     "title": "East Jerusalem (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/East_Jerusalem"
+    }
+   }
+  },
+  "MDA-1652": {
+   "owner": "Moldova",
+   "hatch": {
+    "by": "Transnistria",
+    "since": "1992-07-21",
+    "note": "Self-declared state since 1990, held with Russian troops since the 1992 war, recognised by no UN member. Drawn from the Natural Earth districts east of the Dniester and Bender, which it holds",
+    "source": {
+     "title": "Transnistria (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Transnistria"
+    }
+   }
+  },
+  "MDA-1645": {
+   "owner": "Moldova",
+   "hatch": {
+    "by": "Transnistria",
+    "since": "1992-07-21",
+    "note": "Self-declared state since 1990, held with Russian troops since the 1992 war, recognised by no UN member. Drawn from the Natural Earth districts east of the Dniester and Bender, which it holds",
+    "source": {
+     "title": "Transnistria (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Transnistria"
+    }
+   }
+  },
+  "MDA-1628": {
+   "owner": "Moldova",
+   "hatch": {
+    "by": "Transnistria",
+    "since": "1992-07-21",
+    "note": "Self-declared state since 1990, held with Russian troops since the 1992 war, recognised by no UN member. Drawn from the Natural Earth districts east of the Dniester and Bender, which it holds",
+    "source": {
+     "title": "Transnistria (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Transnistria"
+    }
+   }
+  },
+  "MDA-1637": {
+   "owner": "Moldova",
+   "hatch": {
+    "by": "Transnistria",
+    "since": "1992-07-21",
+    "note": "Self-declared state since 1990, held with Russian troops since the 1992 war, recognised by no UN member. Drawn from the Natural Earth districts east of the Dniester and Bender, which it holds",
+    "source": {
+     "title": "Transnistria (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Transnistria"
+    }
+   }
+  },
+  "MDA-1650": {
+   "owner": "Moldova",
+   "hatch": {
+    "by": "Transnistria",
+    "since": "1992-07-21",
+    "note": "Self-declared state since 1990, held with Russian troops since the 1992 war, recognised by no UN member. Drawn from the Natural Earth districts east of the Dniester and Bender, which it holds",
+    "source": {
+     "title": "Transnistria (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Transnistria"
+    }
+   }
+  },
+  "western-sahara-3456": {
+   "owner": "Western Sahara",
+   "hatch": {
+    "by": "Morocco",
+    "since": "1976-02-26",
+    "note": "Held by Morocco west of its sand wall since Spain left in 1976; a non-self-governing territory on the UN list, its status still to be settled",
+    "source": {
+     "title": "Western Sahara (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Western_Sahara"
+    }
+   }
+  },
+  "western-sahara-3457": {
+   "owner": "Western Sahara",
+   "hatch": {
+    "by": "Morocco",
+    "since": "1976-02-26",
+    "note": "Held by Morocco west of its sand wall since Spain left in 1976; a non-self-governing territory on the UN list, its status still to be settled",
+    "source": {
+     "title": "Western Sahara (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Western_Sahara"
+    }
+   }
+  },
+  "western-sahara-3469": {
+   "owner": "Western Sahara",
+   "hatch": {
+    "by": "Morocco",
+    "since": "1976-02-26",
+    "note": "Held by Morocco west of its sand wall since Spain left in 1976; a non-self-governing territory on the UN list, its status still to be settled",
+    "source": {
+     "title": "Western Sahara (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Western_Sahara"
+    }
+   }
+  }
+ }
+}
