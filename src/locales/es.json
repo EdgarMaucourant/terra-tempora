@@ -408,6 +408,7 @@
       "other": "{count} civilizaciones"
     },
     "nationality": "Civilizaciones que dieron origen a {name}",
+    "partOf": "{name} ({owner})",
     "related": "{name} y reinos relacionados",
     "territory": "Dentro del actual territorio de {name}",
     "today": "Países actuales"

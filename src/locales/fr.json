@@ -408,6 +408,7 @@
       "other": "{count} civilisations"
     },
     "nationality": "{name} : civilisations d’origine",
+    "partOf": "{name} ({owner})",
     "related": "{name} et États apparentés",
     "territory": "{name} : territoire actuel",
     "today": "Pays d’aujourd’hui"

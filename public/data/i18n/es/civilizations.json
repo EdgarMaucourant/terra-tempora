@@ -38,6 +38,9 @@
  "portugal": {
   "name": "Portugal"
  },
+ "greenland": {
+  "name": "Groenlandia"
+ },
  "mexico": {
   "name": "México"
  },
@@ -70,6 +73,9 @@
  },
  "angola": {
   "name": "Angola"
+ },
+ "portuguese-angola": {
+  "name": "Angola portuguesa"
  },
  "south-africa": {
   "name": "Sudáfrica"
@@ -109,6 +115,9 @@
  },
  "mozambique": {
   "name": "Mozambique"
+ },
+ "portuguese-mozambique": {
+  "name": "Mozambique portugués"
  },
  "turkey": {
   "name": "Turquía"
@@ -458,6 +467,9 @@
  "fiji": {
   "name": "Fiyi"
  },
+ "new-caledonia": {
+  "name": "Nueva Caledonia"
+ },
  "kuwait": {
   "name": "Kuwait"
  },
@@ -470,6 +482,9 @@
  "east-timor-under-un-administration": {
   "name": "Timor Oriental bajo administración de la ONU"
  },
+ "portuguese-timor": {
+  "name": "Timor portugués"
+ },
  "montenegro": {
   "name": "Montenegro"
  },
@@ -478,6 +493,9 @@
  },
  "vanuatu": {
   "name": "Vanuatu"
+ },
+ "falkland-islands": {
+  "name": "Islas Malvinas"
  },
  "qatar": {
   "name": "Catar"
@@ -497,6 +515,12 @@
  "cyprus": {
   "name": "Chipre"
  },
+ "puerto-rico": {
+  "name": "Puerto Rico"
+ },
+ "french-southern-and-antarctic-lands": {
+  "name": "Tierras Australes y Antárticas Francesas"
+ },
  "palestine": {
   "name": "Palestina"
  },
@@ -506,8 +530,17 @@
  "trinidad-and-tobago": {
   "name": "Trinidad y Tobago"
  },
+ "south-georgia-and-the-south-sandwich-islands": {
+  "name": "Islas Georgias del Sur y Sandwich del Sur"
+ },
  "cape-verde": {
   "name": "Cabo Verde"
+ },
+ "portuguese-cape-verde": {
+  "name": "Cabo Verde portugués"
+ },
+ "french-polynesia": {
+  "name": "Polinesia Francesa"
  },
  "samoa": {
   "name": "Samoa"
@@ -521,8 +554,17 @@
  "comoros": {
   "name": "Comoras"
  },
+ "faroe-islands": {
+  "name": "Islas Feroe"
+ },
  "sao-tome-and-principe": {
   "name": "Santo Tomé y Príncipe"
+ },
+ "portuguese-sao-tome-and-principe": {
+  "name": "Santo Tomé y Príncipe portugués"
+ },
+ "hong-kong": {
+  "name": "Hong Kong"
  },
  "kiribati": {
   "name": "Kiribati"
@@ -542,11 +584,23 @@
  "saint-lucia": {
   "name": "Santa Lucía"
  },
+ "northern-mariana-islands": {
+  "name": "Islas Marianas del Norte"
+ },
+ "isle-of-man": {
+  "name": "Isla de Man"
+ },
+ "guam": {
+  "name": "Guam"
+ },
  "singapore": {
   "name": "Singapur"
  },
  "palau": {
   "name": "Palaos"
+ },
+ "curacao": {
+  "name": "Curazao"
  },
  "antigua-and-barbuda": {
   "name": "Antigua y Barbuda"
@@ -554,14 +608,26 @@
  "andorra": {
   "name": "Andorra"
  },
+ "turks-and-caicos-islands": {
+  "name": "Islas Turcas y Caicos"
+ },
  "barbados": {
   "name": "Barbados"
  },
  "seychelles": {
   "name": "Seychelles"
  },
+ "heard-island-and-mcdonald-islands": {
+  "name": "Islas Heard y McDonald"
+ },
  "saint-vincent-and-the-grenadines": {
   "name": "San Vicente y las Granadinas"
+ },
+ "saint-helena-ascension-and-tristan-da-cunha": {
+  "name": "Santa Elena, Ascensión y Tristán de Acuña"
+ },
+ "united-states-virgin-islands": {
+  "name": "Islas Vírgenes de los Estados Unidos"
  },
  "grenada": {
   "name": "Granada"
@@ -569,29 +635,122 @@
  "malta": {
   "name": "Malta"
  },
+ "cayman-islands": {
+  "name": "Islas Caimán"
+ },
  "saint-kitts-and-nevis": {
   "name": "San Cristóbal y Nieves"
+ },
+ "saint-pierre-and-miquelon": {
+  "name": "San Pedro y Miquelón"
+ },
+ "akrotiri-and-dhekelia": {
+  "name": "Acrotiri y Dekelia"
+ },
+ "niue": {
+  "name": "Niue"
+ },
+ "cook-islands": {
+  "name": "Islas Cook"
+ },
+ "american-samoa": {
+  "name": "Samoa Estadounidense"
+ },
+ "aruba": {
+  "name": "Aruba"
+ },
+ "wallis-and-futuna": {
+  "name": "Wallis y Futuna"
  },
  "marshall-islands": {
   "name": "Islas Marshall"
  },
+ "british-virgin-islands": {
+  "name": "Islas Vírgenes Británicas"
+ },
  "liechtenstein": {
   "name": "Liechtenstein"
+ },
+ "jersey": {
+  "name": "Jersey"
  },
  "maldives": {
   "name": "Maldivas"
  },
+ "montserrat": {
+  "name": "Montserrat"
+ },
+ "christmas-island": {
+  "name": "Isla de Navidad"
+ },
+ "anguilla": {
+  "name": "Anguila"
+ },
+ "guernsey": {
+  "name": "Guernsey"
+ },
+ "saint-martin": {
+  "name": "San Martín (Francia)"
+ },
+ "bermuda": {
+  "name": "Bermudas"
+ },
  "san-marino": {
   "name": "San Marino"
  },
+ "bouvet-island": {
+  "name": "Isla Bouvet"
+ },
+ "chagos-archipelago": {
+  "name": "Archipiélago de Chagos"
+ },
+ "pitcairn-islands": {
+  "name": "Islas Pitcairn"
+ },
+ "norfolk-island": {
+  "name": "Isla Norfolk"
+ },
+ "macau": {
+  "name": "Macao"
+ },
+ "portuguese-macau": {
+  "name": "Macao portugués"
+ },
  "nauru": {
   "name": "Nauru"
+ },
+ "united-states-minor-outlying-islands": {
+  "name": "Islas ultramarinas de Estados Unidos"
+ },
+ "saint-barthelemy": {
+  "name": "San Bartolomé"
+ },
+ "sint-maarten": {
+  "name": "San Martín (Países Bajos)"
  },
  "tuvalu": {
   "name": "Tuvalu"
  },
  "monaco": {
   "name": "Mónaco"
+ },
+ "cocos-keeling-islands": {
+  "name": "Islas Cocos"
+ },
+ "clipperton-island": {
+  "name": "Isla Clipperton"
+ },
+ "gibraltar": {
+  "name": "Gibraltar"
+ },
+ "tokelau": {
+  "name": "Tokelau"
+ },
+ "ashmore-and-cartier-islands": {
+  "name": "Islas Ashmore y Cartier"
+ },
+ "coral-sea-islands": {
+  "name": "islas del mar del Coral"
  },
  "vatican-city": {
   "name": "Ciudad del Vaticano"

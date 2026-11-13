@@ -28,6 +28,8 @@ export interface Civilization {
   family: string | null;
   /** Commons file from the realm's Wikipedia article, shown when Wikidata has no picture for it. */
   picture?: string;
+  /** For a territory (Portuguese Angola, Macau), the realm name of the state it is part of. */
+  partOf?: string;
 }
 
 /** Outlines at their largest, by civilization id, as rings of [x, y, …] in a 100 × 100 box. */
@@ -69,10 +71,13 @@ export class Civilizations {
     for (const c of list) {
       if (c.to === last) c.to = Math.max(last, NOW);
       this.byId.set(c.id, c);
-      for (const n of c.names) this.byRealm.set(n, c);
+      // A name opens the civilization it is the main name of (Macau opens
+      // Macau, not China, which lists it among its territories).
+      for (const n of c.names.slice(1)) if (!this.byRealm.has(n)) this.byRealm.set(n, c);
       // The largest realm wins when several share a Wikidata item; the list is sorted by area.
       if (c.wikidata && !this.byWikidata.has(c.wikidata)) this.byWikidata.set(c.wikidata, c);
     }
+    for (const c of list) this.byRealm.set(c.names[0], c);
   }
 
   static async load(base: string): Promise<Civilizations> {

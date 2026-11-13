@@ -597,8 +597,9 @@ function clickRealm(p: Polity | null | undefined) {
     closeEvent();
     return;
   }
-  // The home globe colours a group's members as the group, so they open it.
-  const civ = civs?.ofRealm(home ? realmOf(p) : p.name);
+  // The home globe colours a group's members as the group, so they open it;
+  // a territory (Macau) opens its own history.
+  const civ = civs?.ofRealm(home && !p.partOf ? realmOf(p) : p.name);
   if (home && civ) {
     // On today's map, a country opens the civilizations that led to it.
     const k = countryOf(civ);
@@ -1379,7 +1380,7 @@ function loadNeighbours(list: Civilization[]) {
   }
 }
 
-const toLink = (c: Civilization): LaneLink => ({ id: c.id, name: c.name, from: c.from, to: c.to });
+const toLink = (c: Civilization): LaneLink => ({ id: c.id, name: laneName(c), from: c.from, to: c.to });
 
 /**
  * The civilizations on one side of this one: those it names, plus any already
@@ -1396,6 +1397,9 @@ function neighboursOf(c: Civilization, side: "before" | "after"): Civilization[]
   return [...new Set([...own[side], ...back])].sort((a, b) => a.from - b.from);
 }
 
+/** A civilization's name on its timeline lane, with the state a territory belonged to. */
+const laneName = (c: Civilization) => (c.partOf ? t("lanes.partOf", { name: c.name, owner: placeName(c.partOf) }) : c.name);
+
 function showHighlight() {
   if (!active) return;
   colors = highlightColors(
@@ -1408,8 +1412,10 @@ function showHighlight() {
   map.setHighlight(byRealm);
 
   loadNeighbours(highlighted);
+  // A territory's lane says whose it was: "Macau (part of China)".
+  for (const c of highlighted) colors.set(laneName(c), colors.get(c.name)!);
   const lanes: Lane[] = highlighted.map((c) => ({
-    name: c.name,
+    name: laneName(c),
     from: c.from,
     to: c.to,
     before: neighboursOf(c, "before")?.map(toLink),
@@ -2453,7 +2459,7 @@ Promise.all([
       },
       onLane: (name) => {
         if (playing) setPlaying(false);
-        const c = highlighted.find((h) => h.name === name);
+        const c = highlighted.find((h) => laneName(h) === name);
         if (c) focusCiv(c);
       },
       onYear: (next, settled) => {

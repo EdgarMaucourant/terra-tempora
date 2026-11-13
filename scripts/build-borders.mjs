@@ -268,6 +268,10 @@ function periodName(name, year) {
   }
 }
 
+// Who held each piece, by the name shown on it (a territory's, else its
+// owner's), with the years: for the history of each place of today.
+const heldBy = new Map(); // piece id -> Map(name -> [from, to])
+
 const current = new Map(state);
 let pendingChanges = [...changes];
 for (let year = TODAY; year >= firstReviewed; year--) {
@@ -301,6 +305,13 @@ for (let year = TODAY; year >= firstReviewed; year--) {
         });
       }
     }
+  }
+  for (const [id, s] of current) {
+    if (!s || reviewedFrom.get(id) > year) continue;
+    const name = s.territory ?? s.owner;
+    const seen = heldBy.get(id) ?? heldBy.set(id, new Map()).get(id);
+    const span = seen.get(name);
+    seen.set(name, span ? [year, span[1]] : [year, year]);
   }
   for (const [key, g] of groups) {
     if (g.meta.kind) continue;
@@ -446,6 +457,24 @@ for (const [name, r] of Object.entries(realms)) {
   names[name] = { fr: r.fr, es: r.es };
   for (const p of r.periods ?? []) if (p.name !== name) names[p.name] = { fr: p.fr ?? p.name, es: p.es ?? p.name };
 }
+// Every place of today (a country, or a territory such as Macau) with the
+// realms and territories that held its land, oldest first.
+const places = {};
+for (const [id, s] of state) {
+  if (!s) continue;
+  const place = s.territory ?? s.owner;
+  const spans = places[place] ?? (places[place] = {});
+  for (const [name, [from, to]] of heldBy.get(id) ?? []) {
+    const span = spans[name];
+    spans[name] = span ? [Math.min(span[0], from), Math.max(span[1], to)] : [from, to];
+  }
+}
+for (const [place, spans] of Object.entries(places)) {
+  places[place] = Object.entries(spans)
+    .sort((a, b) => a[1][0] - b[1][0] || a[1][1] - b[1][1])
+    .map(([name, [from, to]]) => ({ name, from, to }));
+}
+
 writeFileSync(
   `${OUT}/index.json`,
   JSON.stringify({
@@ -466,6 +495,7 @@ writeFileSync(
     realms: spans,
     names,
     notCountries: Object.keys(realms).filter((n) => realms[n].notACountry),
+    places,
   }),
 );
 console.log(`${shapes.length} shapes in ${windows.length} windows`);

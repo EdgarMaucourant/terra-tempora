@@ -37,7 +37,10 @@ const CONTEXT_FILL_ALPHA = 0.4;
 const HOVER_FILL_ALPHA = 0.62;
 const CONTEXT_LABEL_AREA = 900_000;
 const MIN_ZOOM = 0.8;
-const MAX_ZOOM = 14;
+// Close enough to see Macau or Gibraltar on the flat map, as on the globe.
+const MAX_ZOOM = 160;
+// The closest a realm is framed when it opens, so a tiny one keeps some context.
+const MAX_FRAME_ZOOM = 40;
 
 type Shape = Feature<Polygon | MultiPolygon, null>;
 
@@ -637,7 +640,7 @@ export class MapView {
 
 /** Zoom that frames a realm of this many km². */
 function zoomFor(area: number): number {
-  return Math.min(MAX_ZOOM, Math.max(1, 14_000 / Math.sqrt(Math.max(area, 1))));
+  return Math.min(MAX_FRAME_ZOOM, Math.max(1, 14_000 / Math.sqrt(Math.max(area, 1))));
 }
 
 function lighten(hex: string): string {
