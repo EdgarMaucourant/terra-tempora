@@ -37,7 +37,8 @@ export function realmsAt(shapes, point, year) {
   return shapes
     .filter((s) => !s.kind && s.from <= year && year <= s.to && shapeHas(s, point))
     .sort((a, b) => a.area - b.area)
-    .map((s) => s.name);
+    // A territory (the Azores) is drawn as itself and as its state's land.
+    .flatMap((s) => (s.partOf ? [s.name, s.partOf] : [s.name]));
 }
 
 /** The states drawn as holding a point in a year (hatched over its owner). */
