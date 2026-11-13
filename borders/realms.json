@@ -102,6 +102,13 @@
   "fr": "Azerbaïdjan",
   "es": "Azerbaiyán"
  },
+ "Azores": {
+  "wikipedia": "Azores",
+  "wikidata": "Q25263",
+  "fr": "Açores",
+  "es": "Azores",
+  "withOwner": true
+ },
  "Bahrain": {
   "wikipedia": "Bahrain",
   "wikidata": "Q398",
@@ -799,6 +806,13 @@
   "fr": "Madagascar",
   "es": "Madagascar"
  },
+ "Madeira": {
+  "wikipedia": "Madeira",
+  "wikidata": "Q26253",
+  "fr": "Madère",
+  "es": "Madeira",
+  "withOwner": true
+ },
  "Malawi": {
   "wikipedia": "Malawi",
   "wikidata": "Q1020",
@@ -1204,12 +1218,6 @@
   "fr": "Saint-Marin",
   "es": "San Marino"
  },
- "São Tomé and Príncipe": {
-  "wikipedia": "São Tomé and Príncipe",
-  "wikidata": "Q1039",
-  "fr": "Sao Tomé-et-Principe",
-  "es": "Santo Tomé y Príncipe"
- },
  "Saudi Arabia": {
   "wikipedia": "Saudi Arabia",
   "wikidata": "Q851",
@@ -1348,6 +1356,12 @@
   "wikidata": "Q858",
   "fr": "Syrie",
   "es": "Siria"
+ },
+ "São Tomé and Príncipe": {
+  "wikipedia": "São Tomé and Príncipe",
+  "wikidata": "Q1039",
+  "fr": "Sao Tomé-et-Principe",
+  "es": "Santo Tomé y Príncipe"
  },
  "Taiwan (Republic of China)": {
   "wikipedia": "Taiwan",

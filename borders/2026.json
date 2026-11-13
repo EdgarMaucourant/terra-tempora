@@ -849,6 +849,14 @@
   "BVT": {
    "owner": "Norway",
    "territory": "Bouvet Island"
+  },
+  "PAZ": {
+   "owner": "Portugal",
+   "territory": "Azores"
+  },
+  "PMD": {
+   "owner": "Portugal",
+   "territory": "Madeira"
   }
  },
  "pieces": {

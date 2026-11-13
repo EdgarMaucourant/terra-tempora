@@ -545,6 +545,9 @@
  "samoa": {
   "name": "Samoa"
  },
+ "azores": {
+  "name": "Azores"
+ },
  "luxembourg": {
   "name": "Luxemburgo"
  },
@@ -568,6 +571,9 @@
  },
  "kiribati": {
   "name": "Kiribati"
+ },
+ "madeira": {
+  "name": "Madeira"
  },
  "dominica": {
   "name": "Dominica"
