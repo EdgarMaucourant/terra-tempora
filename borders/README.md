@@ -15,7 +15,9 @@ A year shows the map as it stood on **31 December** of that year.
 
 Every piece has one **owner**, the state that held sovereignty over it, or
 none. On top of the owner a piece can belong to a **territory** (Portuguese
-Angola, Greenland), drawn under its own name as part of its owner, and be
+Angola, Greenland), drawn under its own name as part of its owner and
+labelled with the owner's name, "Greenland (Denmark)", unless its name already
+says it (`"withOwner": false` in realms.json, for Portuguese Angola), and be
 **hatched** in the colour of another state that holds it (Crimea, held by
 Russia).
 

@@ -106,8 +106,7 @@
   "wikipedia": "Azores",
   "wikidata": "Q25263",
   "fr": "Açores",
-  "es": "Azores",
-  "withOwner": true
+  "es": "Azores"
  },
  "Bahrain": {
   "wikipedia": "Bahrain",
@@ -203,7 +202,8 @@
   "wikipedia": "British Virgin Islands",
   "wikidata": "Q25305",
   "fr": "îles Vierges britanniques",
-  "es": "Islas Vírgenes Británicas"
+  "es": "Islas Vírgenes Británicas",
+  "withOwner": false
  },
  "Brunei": {
   "wikipedia": "Brunei",
@@ -286,7 +286,7 @@
  "China": {
   "wikipedia": "China",
   "wikidata": "Q148",
-  "fr": "République populaire de Chine",
+  "fr": "Chine",
   "es": "China"
  },
  "Christmas Island": {
@@ -492,13 +492,15 @@
   "wikipedia": "French Polynesia",
   "wikidata": "Q30971",
   "fr": "Polynésie française",
-  "es": "Polinesia Francesa"
+  "es": "Polinesia Francesa",
+  "withOwner": false
  },
  "French Southern and Antarctic Lands": {
   "wikipedia": "French Southern and Antarctic Lands",
   "wikidata": "Q129003",
   "fr": "Terres australes et antarctiques françaises",
-  "es": "Tierras Australes y Antárticas Francesas"
+  "es": "Tierras Australes y Antárticas Francesas",
+  "withOwner": false
  },
  "Gabon": {
   "wikipedia": "Gabon",
@@ -810,8 +812,7 @@
   "wikipedia": "Madeira",
   "wikidata": "Q26253",
   "fr": "Madère",
-  "es": "Madeira",
-  "withOwner": true
+  "es": "Madeira"
  },
  "Malawi": {
   "wikipedia": "Malawi",
@@ -1096,37 +1097,43 @@
   "wikipedia": "Portuguese Angola",
   "wikidata": "Q2826232",
   "fr": "Angola portugais",
-  "es": "Angola portuguesa"
+  "es": "Angola portuguesa",
+  "withOwner": false
  },
  "Portuguese Cape Verde": {
   "wikipedia": "Portuguese Cape Verde",
   "wikidata": "Q3023340",
   "fr": "Cap-Vert portugais",
-  "es": "Cabo Verde portugués"
+  "es": "Cabo Verde portugués",
+  "withOwner": false
  },
  "Portuguese Macau": {
   "wikipedia": "Portuguese Macau",
   "wikidata": "Q3916279",
   "fr": "Macao portugais",
-  "es": "Macao portugués"
+  "es": "Macao portugués",
+  "withOwner": false
  },
  "Portuguese Mozambique": {
   "wikipedia": "Portuguese Mozambique",
   "wikidata": "Q889394",
   "fr": "Mozambique portugais",
-  "es": "Mozambique portugués"
+  "es": "Mozambique portugués",
+  "withOwner": false
  },
  "Portuguese São Tomé and Príncipe": {
   "wikipedia": "Portuguese São Tomé and Príncipe",
   "wikidata": "Q7232692",
   "fr": "Sao Tomé-et-Principe portugais",
-  "es": "Santo Tomé y Príncipe portugués"
+  "es": "Santo Tomé y Príncipe portugués",
+  "withOwner": false
  },
  "Portuguese Timor": {
   "wikipedia": "Portuguese Timor",
   "wikidata": "Q142965",
   "fr": "Timor portugais",
-  "es": "Timor portugués"
+  "es": "Timor portugués",
+  "withOwner": false
  },
  "Puerto Rico": {
   "wikipedia": "Puerto Rico",
@@ -1500,13 +1507,15 @@
   "wikipedia": "United States Minor Outlying Islands",
   "wikidata": "Q16645",
   "fr": "Îles mineures éloignées des États-Unis",
-  "es": "Islas ultramarinas de Estados Unidos"
+  "es": "Islas ultramarinas de Estados Unidos",
+  "withOwner": false
  },
  "United States Virgin Islands": {
   "wikipedia": "United States Virgin Islands",
   "wikidata": "Q11703",
   "fr": "îles Vierges des États-Unis",
-  "es": "Islas Vírgenes de los Estados Unidos"
+  "es": "Islas Vírgenes de los Estados Unidos",
+  "withOwner": false
  },
  "Uruguay": {
   "wikipedia": "Uruguay",
