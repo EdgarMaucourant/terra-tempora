@@ -103,7 +103,9 @@ export class Landing {
       this.onOpen(picked);
     });
 
-    for (const view of ["territory", "nationality"] as const) this.setupCountries(view, countries, onCountry);
+    // Territories (Macau, Greenland) open from the globe, not from these lists of countries.
+    const states = countries.filter((k) => !k.partOf);
+    for (const view of ["territory", "nationality"] as const) this.setupCountries(view, states, onCountry);
 
     this.search = new Search(
       root.querySelector<HTMLElement>('.explore-section[data-section="search"]')!,

@@ -223,8 +223,9 @@ const familyOf = new Map(Object.entries(FAMILIES).flatMap(([key, names]) => name
 const groups = new Map();
 const realm = (key) => groups.get(key) ?? groups.set(key, { name: key, own: [], territory: [], shapes: [] }).get(key);
 // A territory (Portuguese Angola, Greenland) is part of the state that owns
-// it: it counts as that realm's land and opens it, with no civilization of its
-// own. Hatching and land not yet reviewed are not realms at all.
+// it: it counts as that realm's land too. It is also a civilization of its
+// own, marked as part of its owner, so the history of a place such as Macau
+// can show it. Hatching and land not yet reviewed are not realms at all.
 const territories = new Map();
 for (const s of shapes.values()) {
   if (s.kind) continue;
@@ -232,6 +233,9 @@ for (const s of shapes.values()) {
     territories.set(s.name, s.partOf);
     realm(s.partOf).territory.push(s);
     realm(s.partOf).shapes.push(s);
+    realm(s.name).own.push(s);
+    realm(s.name).shapes.push(s);
+    realm(s.name).partOf = s.partOf;
     continue;
   }
   realm(s.name).own.push(s);
@@ -296,6 +300,8 @@ for (const g of groups.values()) {
   civilizations.push({
     id: slug,
     name: g.name,
+    // The state a territory belongs to, by its realm name.
+    ...(g.partOf && { partOf: g.partOf }),
     // The realm or group it shows, then the territories it owned.
     names: [g.name, ...[...territories].filter(([, owner]) => owner === g.name).map(([name]) => name)],
     wikidata: count("wikidata"),

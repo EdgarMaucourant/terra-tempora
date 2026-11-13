@@ -8,6 +8,8 @@ export interface Country {
   name: string;
   /** The present-day state's civilization id. */
   civ: string;
+  /** For a territory of a state (Macau, Greenland), that state's realm name. */
+  partOf?: string;
   /** One line on what the lineage covers, for hand-picked lineages. */
   blurb: string | null;
   /** Year the globe opens on: when the most of these realms stood at once. */

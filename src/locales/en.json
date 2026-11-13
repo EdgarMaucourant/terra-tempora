@@ -408,6 +408,7 @@
       "other": "{count} civilizations"
     },
     "nationality": "Civilizations that led to {name}",
+    "partOf": "{name} (part of {owner})",
     "related": "{name} and related realms",
     "territory": "Within today’s {name}",
     "today": "Today’s countries"
