@@ -1014,7 +1014,7 @@
     48.86
    ],
    "years": [
-    1961,
+    1957,
     2026
    ],
    "realm": "France",
@@ -1027,7 +1027,7 @@
     41.93
    ],
    "years": [
-    1961,
+    1957,
     2026
    ],
    "realm": "France",
@@ -1040,7 +1040,7 @@
     48.58
    ],
    "years": [
-    1961,
+    1957,
     2026
    ],
    "realm": "France",
@@ -1053,7 +1053,7 @@
     14.61
    ],
    "years": [
-    1961,
+    1957,
     2026
    ],
    "realm": "Martinique",
@@ -1066,7 +1066,7 @@
     16.15
    ],
    "years": [
-    1961,
+    1957,
     2026
    ],
    "realm": "Guadeloupe",
@@ -1079,7 +1079,7 @@
     4.94
    ],
    "years": [
-    1961,
+    1957,
     2026
    ],
    "realm": "French Guiana",
@@ -1092,7 +1092,7 @@
     -20.88
    ],
    "years": [
-    1961,
+    1957,
     2026
    ],
    "realm": "Réunion",
@@ -1105,7 +1105,7 @@
     18.07
    ],
    "years": [
-    1961,
+    1957,
     2006
    ],
    "realm": "Guadeloupe",
@@ -1131,7 +1131,7 @@
     17.9
    ],
    "years": [
-    1961,
+    1957,
     2006
    ],
    "realm": "Guadeloupe",
@@ -1157,7 +1157,7 @@
     -12.8
    ],
    "years": [
-    1961,
+    1957,
     1974
    ],
    "realm": "Territory of the Comoros",
@@ -1183,7 +1183,7 @@
     -11.7
    ],
    "years": [
-    1961,
+    1957,
     1974
    ],
    "realm": "Territory of the Comoros",
@@ -1209,7 +1209,7 @@
     11.59
    ],
    "years": [
-    1961,
+    1957,
     1976
    ],
    "realm": "French Somaliland",
@@ -1235,7 +1235,7 @@
     -17.73
    ],
    "years": [
-    1961,
+    1957,
     1979
    ],
    "realm": "New Hebrides",
@@ -1261,7 +1261,7 @@
     36.75
    ],
    "years": [
-    1961,
+    1957,
     1961
    ],
    "realm": "French Algeria",
@@ -1287,7 +1287,7 @@
     22.79
    ],
    "years": [
-    1961,
+    1957,
     1961
    ],
    "realm": "French Algeria",
@@ -1313,7 +1313,7 @@
     -22.27
    ],
    "years": [
-    1961,
+    1957,
     2026
    ],
    "realm": "New Caledonia",
@@ -1326,7 +1326,7 @@
     -17.53
    ],
    "years": [
-    1961,
+    1957,
     2026
    ],
    "realm": "French Polynesia",
@@ -1339,7 +1339,7 @@
     46.78
    ],
    "years": [
-    1961,
+    1957,
     2026
    ],
    "realm": "Saint Pierre and Miquelon",
@@ -1352,7 +1352,7 @@
     -13.28
    ],
    "years": [
-    1961,
+    1957,
     2026
    ],
    "realm": "Wallis and Futuna",
@@ -1365,11 +1365,427 @@
     -49.35
    ],
    "years": [
-    1961,
+    1957,
     2026
    ],
    "realm": "French Southern and Antarctic Lands",
    "why": "Kerguelen Islands, French"
+  },
+  {
+   "place": "Conakry (Kindia)",
+   "lonLat": [
+    -12.86,
+    10.06
+   ],
+   "years": [
+    1957,
+    1957
+   ],
+   "realm": "French Guinea",
+   "why": "French until 1958"
+  },
+  {
+   "place": "Conakry (Kindia)",
+   "lonLat": [
+    -12.86,
+    10.06
+   ],
+   "years": [
+    1958,
+    2026
+   ],
+   "realm": "Guinea",
+   "why": "Independent since 2 October 1958"
+  },
+  {
+   "place": "Thiès",
+   "lonLat": [
+    -16.93,
+    14.79
+   ],
+   "years": [
+    1957,
+    1959
+   ],
+   "realm": "French Senegal",
+   "why": "French until 1960"
+  },
+  {
+   "place": "Thiès",
+   "lonLat": [
+    -16.93,
+    14.79
+   ],
+   "years": [
+    1960,
+    2026
+   ],
+   "realm": "Senegal",
+   "why": "Independent since 1960 (in the Mali Federation until 20 August)"
+  },
+  {
+   "place": "Bamako",
+   "lonLat": [
+    -8.0,
+    12.64
+   ],
+   "years": [
+    1957,
+    1959
+   ],
+   "realm": "French Sudan",
+   "why": "French until 1960"
+  },
+  {
+   "place": "Bamako",
+   "lonLat": [
+    -8.0,
+    12.64
+   ],
+   "years": [
+    1960,
+    2026
+   ],
+   "realm": "Mali",
+   "why": "Independent since 1960 (in the Mali Federation until 20 August)"
+  },
+  {
+   "place": "Abomey",
+   "lonLat": [
+    1.99,
+    7.18
+   ],
+   "years": [
+    1957,
+    1959
+   ],
+   "realm": "French Dahomey",
+   "why": "French until 1960"
+  },
+  {
+   "place": "Abomey",
+   "lonLat": [
+    1.99,
+    7.18
+   ],
+   "years": [
+    1960,
+    2026
+   ],
+   "realm": "Benin",
+   "why": "Independent since 1 August 1960"
+  },
+  {
+   "place": "Niamey",
+   "lonLat": [
+    2.11,
+    13.51
+   ],
+   "years": [
+    1957,
+    1959
+   ],
+   "realm": "Colony of Niger",
+   "why": "French until 1960"
+  },
+  {
+   "place": "Niamey",
+   "lonLat": [
+    2.11,
+    13.51
+   ],
+   "years": [
+    1960,
+    2026
+   ],
+   "realm": "Niger",
+   "why": "Independent since 3 August 1960"
+  },
+  {
+   "place": "Ouagadougou",
+   "lonLat": [
+    -1.52,
+    12.37
+   ],
+   "years": [
+    1957,
+    1959
+   ],
+   "realm": "French Upper Volta",
+   "why": "French until 1960"
+  },
+  {
+   "place": "Ouagadougou",
+   "lonLat": [
+    -1.52,
+    12.37
+   ],
+   "years": [
+    1960,
+    2026
+   ],
+   "realm": "Burkina Faso",
+   "why": "Independent since 5 August 1960"
+  },
+  {
+   "place": "Yamoussoukro",
+   "lonLat": [
+    -5.28,
+    6.82
+   ],
+   "years": [
+    1957,
+    1959
+   ],
+   "realm": "French Ivory Coast",
+   "why": "French until 1960"
+  },
+  {
+   "place": "Yamoussoukro",
+   "lonLat": [
+    -5.28,
+    6.82
+   ],
+   "years": [
+    1960,
+    2026
+   ],
+   "realm": "Ivory Coast",
+   "why": "Independent since 7 August 1960"
+  },
+  {
+   "place": "N'Djamena",
+   "lonLat": [
+    15.05,
+    12.11
+   ],
+   "years": [
+    1957,
+    1959
+   ],
+   "realm": "French Chad",
+   "why": "French until 1960"
+  },
+  {
+   "place": "N'Djamena",
+   "lonLat": [
+    15.05,
+    12.11
+   ],
+   "years": [
+    1960,
+    2026
+   ],
+   "realm": "Chad",
+   "why": "Independent since 11 August 1960"
+  },
+  {
+   "place": "Bangui",
+   "lonLat": [
+    18.56,
+    4.37
+   ],
+   "years": [
+    1957,
+    1959
+   ],
+   "realm": "Ubangi-Shari",
+   "why": "French until 1960"
+  },
+  {
+   "place": "Bangui",
+   "lonLat": [
+    18.56,
+    4.37
+   ],
+   "years": [
+    1960,
+    2026
+   ],
+   "realm": "Central African Republic",
+   "why": "Independent since 13 August 1960"
+  },
+  {
+   "place": "Brazzaville",
+   "lonLat": [
+    15.27,
+    -4.26
+   ],
+   "years": [
+    1957,
+    1959
+   ],
+   "realm": "French Congo",
+   "why": "French until 1960"
+  },
+  {
+   "place": "Brazzaville",
+   "lonLat": [
+    15.27,
+    -4.26
+   ],
+   "years": [
+    1960,
+    2026
+   ],
+   "realm": "Republic of the Congo",
+   "why": "Independent since 15 August 1960"
+  },
+  {
+   "place": "Lambaréné",
+   "lonLat": [
+    10.24,
+    -0.7
+   ],
+   "years": [
+    1957,
+    1959
+   ],
+   "realm": "French Gabon",
+   "why": "French until 1960"
+  },
+  {
+   "place": "Lambaréné",
+   "lonLat": [
+    10.24,
+    -0.7
+   ],
+   "years": [
+    1960,
+    2026
+   ],
+   "realm": "Gabon",
+   "why": "Independent since 17 August 1960"
+  },
+  {
+   "place": "Atar",
+   "lonLat": [
+    -13.05,
+    20.52
+   ],
+   "years": [
+    1957,
+    1959
+   ],
+   "realm": "Colonial Mauritania",
+   "why": "French until 1960"
+  },
+  {
+   "place": "Atar",
+   "lonLat": [
+    -13.05,
+    20.52
+   ],
+   "years": [
+    1960,
+    2026
+   ],
+   "realm": "Mauritania",
+   "why": "Independent since 28 November 1960"
+  },
+  {
+   "place": "Kpalimé",
+   "lonLat": [
+    0.63,
+    6.9
+   ],
+   "years": [
+    1957,
+    1959
+   ],
+   "realm": "French Togoland",
+   "why": "UN trust territory under French administration until 1960"
+  },
+  {
+   "place": "Kpalimé",
+   "lonLat": [
+    0.63,
+    6.9
+   ],
+   "years": [
+    1960,
+    2026
+   ],
+   "realm": "Togo",
+   "why": "Independent since 27 April 1960"
+  },
+  {
+   "place": "Yaoundé",
+   "lonLat": [
+    11.52,
+    3.87
+   ],
+   "years": [
+    1957,
+    1959
+   ],
+   "realm": "French Cameroon",
+   "why": "UN trust territory under French administration until 1960"
+  },
+  {
+   "place": "Yaoundé",
+   "lonLat": [
+    11.52,
+    3.87
+   ],
+   "years": [
+    1960,
+    2026
+   ],
+   "realm": "Cameroon",
+   "why": "Independent since 1 January 1960"
+  },
+  {
+   "place": "Bamenda",
+   "lonLat": [
+    10.15,
+    5.96
+   ],
+   "years": [
+    1957,
+    1960
+   ],
+   "realm": "Southern Cameroons",
+   "why": "British trust territory until 1 October 1961"
+  },
+  {
+   "place": "Bamenda",
+   "lonLat": [
+    10.15,
+    5.96
+   ],
+   "years": [
+    1961,
+    2026
+   ],
+   "realm": "Cameroon",
+   "why": "Part of Cameroon since 1 October 1961"
+  },
+  {
+   "place": "Antananarivo",
+   "lonLat": [
+    47.52,
+    -18.91
+   ],
+   "years": [
+    1957,
+    1959
+   ],
+   "realm": "French Madagascar",
+   "why": "French until 1960"
+  },
+  {
+   "place": "Antananarivo",
+   "lonLat": [
+    47.52,
+    -18.91
+   ],
+   "years": [
+    1960,
+    2026
+   ],
+   "realm": "Madagascar",
+   "why": "Independent since 26 June 1960"
   }
  ]
 }
