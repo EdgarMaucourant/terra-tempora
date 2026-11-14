@@ -1468,28 +1468,44 @@ let neighbourFrame = 0;
 /** Looks up the civilizations before and after these; lanes gain icons as answers arrive. */
 function loadNeighbours(list: Civilization[]) {
   for (const c of list) {
-    if (!c.wikidata || neighbours.has(c.id)) continue;
-    neighbours.set(c.id, { before: [], after: [] });
+    if (neighbours.has(c.id)) continue;
+    neighbours.set(c.id, linkedCivs(c, { before: [], after: [] }));
+    if (!c.wikidata) continue;
     realmFacts(c.wikidata, c.picture).then((facts) => {
       if (!facts || !civs) return;
-      const known = civs;
-      const pick = (ids: string[]) =>
-        [...new Set(ids.map((q) => known.ofWikidata(q)).filter((o): o is Civilization => !!o && o !== c))].sort(
-          (a, b) => a.from - b.from,
-        );
-      // On rebuilt land, the realms that held the same land come first: a
-      // colony leads to the country it became, not to everything Wikidata
-      // lists after it (French Madagascar and its old dependencies).
-      const land = landNeighbours(c);
-      neighbours.set(c.id, {
-        before: land.before.length ? land.before : pick(facts.before),
-        after: land.after.length ? land.after : pick(facts.after),
-      });
+      neighbours.set(c.id, linkedCivs(c, facts));
       if (!highlighted.includes(c)) return;
       cancelAnimationFrame(neighbourFrame);
       neighbourFrame = requestAnimationFrame(showHighlight);
     });
   }
+}
+
+/** Names of the realms and territories that held rebuilt land. */
+let rebuiltNames: Set<string> | undefined;
+function isRebuilt(c: Civilization): boolean {
+  const places = data?.index.places;
+  if (!places) return false;
+  rebuiltNames ??= new Set(Object.values(places).flatMap((held) => held.map((h) => h.name)));
+  return c.names.some((n) => rebuiltNames!.has(n));
+}
+
+/**
+ * The civilizations before and after this one: on rebuilt land, those that
+ * held the same land; otherwise those Wikidata names, leaving out rebuilt
+ * realms the borders don't link to it (the Comoros were governed from
+ * Madagascar, but never drawn as one with it).
+ */
+function linkedCivs(c: Civilization, facts: { before: string[]; after: string[] }) {
+  const land = landNeighbours(c);
+  const pick = (ids: string[]) =>
+    [...new Set(ids.map((q) => civs?.ofWikidata(q)).filter((o): o is Civilization => !!o && o !== c && !isRebuilt(o)))].sort(
+      (a, b) => a.from - b.from,
+    );
+  return {
+    before: land.before.length ? land.before : pick(facts.before),
+    after: land.after.length ? land.after : pick(facts.after),
+  };
 }
 
 /** The civilizations before and after this one on the same land, from the rebuilt borders. */
@@ -1833,9 +1849,8 @@ function openCiv(c: Civilization, options: OpenOptions = {}) {
         if (active !== c || !expanded || !facts) return;
         const sub = `${formatRange(c.from, c.to)} · ${civEraText(c)}`;
         $("civ-sub").textContent = facts.figures.length ? `${sub} · ${facts.figures.join(", ")}` : sub;
-        const linked = [...facts.before, ...facts.after]
-          .map((q) => list.ofWikidata(q))
-          .filter((o): o is Civilization => !!o && !highlighted.includes(o));
+        const near = linkedCivs(c, facts);
+        const linked = [...near.before, ...near.after].filter((o) => !highlighted.includes(o));
         if (!linked.length) return;
         highlighted = [...highlighted, ...linked];
         showHighlight();
