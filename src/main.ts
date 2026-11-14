@@ -1523,6 +1523,7 @@ function showHighlight() {
     name: laneName(c),
     from: c.from,
     to: c.to,
+    periods: c.periods?.map((p) => ({ ...p, name: placeName(p.name) })),
     before: neighboursOf(c, "before")?.map(toLink),
     after: neighboursOf(c, "after")?.map(toLink),
   }));
