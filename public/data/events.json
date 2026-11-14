@@ -1249,10 +1249,10 @@
    "kind": "treaty",
    "year": 1891,
    "title": "The Anglo-Portuguese Treaty, 11 June 1891",
-   "place": "London",
+   "place": "Manica, Mozambique (signed in London)",
    "lonLat": [
-    -0.128,
-    51.503
+    32.88,
+    -18.94
    ],
    "civs": [
     "portugal",
@@ -2193,8 +2193,8 @@
    "title": "The Year of Africa, 1960",
    "place": "French West and Equatorial Africa, Cameroon, Togo and Madagascar",
    "lonLat": [
-    11.5,
-    8.0
+    12.0,
+    16.0
    ],
    "approx": true,
    "civs": [

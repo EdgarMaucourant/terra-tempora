@@ -6,7 +6,7 @@ import landUrl from "world-atlas/land-50m.json?url";
 import { MUTED } from "./colors";
 import { highlightOf, type Polity } from "./data";
 import { shapeOpacity } from "./polityLayer";
-import { badgeUrl, eventOpacity, type EventKind, type HistoryEvent } from "./events";
+import { badgeUrl, eventOpacity, supersededYears, type EventKind, type HistoryEvent } from "./events";
 import { PIN_HEIGHT, PIN_URL, PIN_WIDTH } from "./pin";
 
 // Event badges, in CSS pixels.
@@ -91,6 +91,7 @@ export class MapView {
   /** Today's border of the country being looked at, drawn dashed over everything. */
   private outline: Shape | null = null;
   private events: HistoryEvent[] = [];
+  private eventsUntil = new Map<HistoryEvent, number>();
   /** The reported spot, from a report's link. */
   private pin: [number, number] | null = null;
   private pinImage: HTMLImageElement | null = null;
@@ -174,6 +175,7 @@ export class MapView {
   /** The events that may show: those of the highlighted civilizations. */
   setEvents(events: HistoryEvent[]) {
     this.events = events;
+    this.eventsUntil = supersededYears(events);
     this.draw();
   }
 
@@ -566,7 +568,7 @@ export class MapView {
     // Event badges, on top of everything but the title shade.
     this.drawnBadges = [];
     for (const e of this.events) {
-      const opacity = eventOpacity(e, this.year);
+      const opacity = eventOpacity(e, this.year, this.eventsUntil.get(e));
       if (opacity <= 0) continue;
       const at = this.projection(e.lonLat);
       const img = this.badge(e.kind);
