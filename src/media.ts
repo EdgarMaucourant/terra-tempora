@@ -135,14 +135,22 @@ export function articleMedia(english: string): Promise<ArticleMedia | null> {
           formatversion: "2",
           origin: "*",
         }).toString();
-        const [summary, list] = await Promise.all([
+        // The article's own pictures, without those of its navigation boxes
+        // and portal links (a US cent on the French euro coins page).
+        const shown = fetch(`${host}/api/rest_v1/page/media-list/${encodeURIComponent(page.title)}`)
+          .then((r) => (r.ok ? (r.json() as Promise<{ items?: { title?: string }[] }>) : null))
+          .then((d) => (d?.items ? new Set(d.items.map((i) => (i.title ?? "").replace(/_/g, " "))) : null))
+          .catch(() => null);
+        const [summary, list, inArticle] = await Promise.all([
           articleSummary(host, page.title),
           fetch(files)
             .then((r) => (r.ok ? (r.json() as Promise<{ query?: { pages?: { title: string; imageinfo?: ImageInfo[] }[] } }>) : null))
             .catch(() => null),
+          shown,
         ]);
         if (!summary && !list) return null;
         const all = (list?.query?.pages ?? [])
+          .filter((p) => !inArticle?.size || inArticle.has(p.title.replace(/_/g, " ")))
           .map((p) => (p.imageinfo?.[0] ? toMedia(p.title, p.imageinfo[0]) : null))
           .filter((m): m is Media => !!m);
         const leadFile = summary?.originalimage?.source
