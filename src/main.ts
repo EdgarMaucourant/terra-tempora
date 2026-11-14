@@ -1477,12 +1477,30 @@ function loadNeighbours(list: Civilization[]) {
         [...new Set(ids.map((q) => known.ofWikidata(q)).filter((o): o is Civilization => !!o && o !== c))].sort(
           (a, b) => a.from - b.from,
         );
-      neighbours.set(c.id, { before: pick(facts.before), after: pick(facts.after) });
+      // On rebuilt land, the realms that held the same land come first: a
+      // colony leads to the country it became, not to everything Wikidata
+      // lists after it (French Madagascar and its old dependencies).
+      const land = landNeighbours(c);
+      neighbours.set(c.id, {
+        before: land.before.length ? land.before : pick(facts.before),
+        after: land.after.length ? land.after : pick(facts.after),
+      });
       if (!highlighted.includes(c)) return;
       cancelAnimationFrame(neighbourFrame);
       neighbourFrame = requestAnimationFrame(showHighlight);
     });
   }
+}
+
+/** The civilizations before and after this one on the same land, from the rebuilt borders. */
+function landNeighbours(c: Civilization): { before: Civilization[]; after: Civilization[] } {
+  const lineage = data?.index.lineage;
+  const side = (key: "before" | "after") => {
+    if (!lineage || !civs) return [];
+    const found = c.names.flatMap((n) => lineage[n]?.[key] ?? []).map((n) => civs!.ofRealm(n));
+    return [...new Set(found)].filter((o): o is Civilization => !!o && o !== c).sort((a, b) => a.from - b.from);
+  };
+  return { before: side("before"), after: side("after") };
 }
 
 const toLink = (c: Civilization): LaneLink => ({ id: c.id, name: laneName(c), from: c.from, to: c.to });
