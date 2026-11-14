@@ -32,11 +32,11 @@
  "algeria": {
   "name": "Argelia"
  },
- "denmark": {
-  "name": "Dinamarca"
- },
  "portugal": {
   "name": "Portugal"
+ },
+ "denmark": {
+  "name": "Dinamarca"
  },
  "greenland": {
   "name": "Groenlandia"
@@ -419,6 +419,9 @@
  "guinea-bissau": {
   "name": "Guinea-Bisáu"
  },
+ "portuguese-guinea": {
+  "name": "Guinea portuguesa"
+ },
  "belgium": {
   "name": "Bélgica"
  },
@@ -530,6 +533,9 @@
  "trinidad-and-tobago": {
   "name": "Trinidad y Tobago"
  },
+ "portuguese-india": {
+  "name": "India portuguesa"
+ },
  "south-georgia-and-the-south-sandwich-islands": {
   "name": "Islas Georgias del Sur y Sandwich del Sur"
  },
@@ -598,6 +604,9 @@
  },
  "guam": {
   "name": "Guam"
+ },
+ "german-east-africa": {
+  "name": "África Oriental Alemana"
  },
  "singapore": {
   "name": "Singapur"

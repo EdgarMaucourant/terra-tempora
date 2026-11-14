@@ -1,20 +1,37 @@
 {
  "family": "Portugal",
- "note": "Portugal with the Azores and Madeira, and the land it held overseas. Reviewed from 2026 back to 1974 (the map on 31 December 1974). Next stop: Guinea-Bissau (1973-1974) and Goa (1961).",
+ "note": "Portugal with the Azores and Madeira, and the land it held overseas. Reviewed from 2026 back to 1891 (the map on 31 December 1891), Portuguese Timor back to 1916 and Angola back to 1926. Next stop: the African colonies before their treaty borders (Angola before 1926, Guinea before 1886, Mozambique before 1891), Timor before the 1914 award, Macau before 1887.",
  "reviewed": [
   {
    "pieces": [
     "PRT",
     "MAC",
-    "AGO",
     "MOZ",
+    "kionga",
     "CPV",
     "STP",
-    "TLS",
-    "GNB"
+    "GNB",
+    "IND-3265",
+    "daman",
+    "diu",
+    "IND-2445"
    ],
-   "from": 1974,
-   "why": "Portugal and every land it held between 1974 and today, through the year each left it"
+   "from": 1891,
+   "why": "Portugal, its islands and the land it held overseas whose borders have not moved since 1891"
+  },
+  {
+   "pieces": [
+    "TLS"
+   ],
+   "from": 1916,
+   "why": "Portuguese Timor, within the border drawn by the Permanent Court of Arbitration in 1914 and ratified in 1916 (the Maucatar and Noimuti enclaves were exchanged then)"
+  },
+  {
+   "pieces": [
+    "AGO"
+   ],
+   "from": 1926,
+   "why": "Angola, with today's borders, back to 1926 only for now: its eastern border dates from the 1905 Barotse award, and its southern border with South West Africa before 1926 still has to be checked"
   }
  ],
  "changes": [
@@ -208,6 +225,247 @@
     {
      "pieces": [
       "MOZ"
+     ],
+     "owner": "Portugal",
+     "territory": "Portuguese Mozambique",
+     "source": {
+      "title": "Portuguese Mozambique (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Portuguese_Mozambique"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Portuguese_Empire_20th_century.png"
+    }
+   ]
+  },
+  {
+   "date": "1974-09-10",
+   "what": "Portugal recognises Guinea-Bissau, whose independence the PAIGC had declared on 24 September 1973",
+   "source": {
+    "title": "Guinea-Bissau (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Guinea-Bissau"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Guinea-Bissau_(orthographic_projection).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "GNB"
+     ],
+     "owner": "Portugal",
+     "territory": "Portuguese Guinea",
+     "source": {
+      "title": "Portuguese Guinea (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Portuguese_Guinea"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Portuguese_Empire_20th_century.png"
+    }
+   ]
+  },
+  {
+   "date": "1961-12-19",
+   "what": "India takes Goa, Daman and Diu (Portugal recognised Indian sovereignty in the treaty of 31 December 1974)",
+   "source": {
+    "title": "Annexation of Goa (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Annexation_of_Goa"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Goa_in_India_(claimed_and_disputed_hatched).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "IND-3265",
+      "daman",
+      "diu"
+     ],
+     "owner": "Portugal",
+     "territory": "Portuguese India",
+     "source": {
+      "title": "Portuguese India (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Portuguese_India"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Portuguese_Empire_20th_century.png"
+    }
+   ]
+  },
+  {
+   "date": "1961-08-11",
+   "what": "India annexes Dadra and Nagar Haveli (Tenth Amendment of the Constitution of India; recognised by Portugal on 31 December 1974)",
+   "source": {
+    "title": "Free Dadra and Nagar Haveli (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Free_Dadra_and_Nagar_Haveli"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Dadra_Nagar_Haveli_Locator_Map.svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "IND-2445"
+     ],
+     "owner": "Portugal",
+     "territory": "Portuguese India",
+     "source": {
+      "title": "Portuguese India (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Portuguese_India"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Portuguese_Empire_20th_century.png",
+     "hatch": {
+      "by": "Free Dadra and Nagar Haveli",
+      "since": "1954-08-02",
+      "note": "Taken from Portugal by pro-Indian forces in July and August 1954; the International Court of Justice upheld Portugal's sovereignty in 1960",
+      "source": {
+       "title": "Free Dadra and Nagar Haveli (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Free_Dadra_and_Nagar_Haveli"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1954-08-02",
+   "what": "Pro-Indian forces take Dadra and Nagar Haveli and declare it free of Portuguese rule",
+   "source": {
+    "title": "Free Dadra and Nagar Haveli (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Free_Dadra_and_Nagar_Haveli"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "IND-2445"
+     ],
+     "owner": "Portugal",
+     "territory": "Portuguese India",
+     "source": {
+      "title": "Portuguese India (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Portuguese_India"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Portuguese_Empire_20th_century.png"
+    }
+   ]
+  },
+  {
+   "date": "1945-09-05",
+   "what": "The Japanese commander hands power in Portuguese Timor back to the Portuguese governor",
+   "source": {
+    "title": "Battle of Timor (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Timor"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TLS"
+     ],
+     "owner": "Portugal",
+     "territory": "Portuguese Timor",
+     "source": {
+      "title": "Portuguese Timor (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Portuguese_Timor"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Portuguese_Empire_20th_century.png",
+     "hatch": {
+      "by": "Japan",
+      "since": "1942-02-20",
+      "note": "Occupied by Japan from February 1942 to September 1945, although Portugal stayed neutral; the Portuguese governor stayed in Dili",
+      "source": {
+       "title": "Japanese occupation of Portuguese Timor (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Portuguese_Timor"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1942-02-20",
+   "what": "Japan invades Portuguese Timor",
+   "source": {
+    "title": "Battle of Timor (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Timor"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TLS"
+     ],
+     "owner": "Portugal",
+     "territory": "Portuguese Timor",
+     "source": {
+      "title": "Portuguese Timor (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Portuguese_Timor"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Portuguese_Empire_20th_century.png"
+    }
+   ]
+  },
+  {
+   "date": "1920-01-10",
+   "what": "The Treaty of Versailles comes into force and gives the Kionga Triangle to Portugal",
+   "source": {
+    "title": "Kionga Triangle (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kionga_Triangle"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Portuguese_Empire_20th_century.png",
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "kionga"
+     ],
+     "owner": "Germany",
+     "territory": "German East Africa",
+     "source": {
+      "title": "German East Africa (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/German_East_Africa"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:German_East_Africa_1914.svg",
+     "hatch": {
+      "by": "Portugal",
+      "since": "1916-04-10",
+      "note": "Taken by Portuguese forces in April 1916, during the First World War",
+      "source": {
+       "title": "Kionga Triangle (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Kionga_Triangle"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1916-04-10",
+   "what": "Portuguese forces take the Kionga Triangle from German East Africa",
+   "source": {
+    "title": "Kionga Triangle (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kionga_Triangle"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "kionga"
+     ],
+     "owner": "Germany",
+     "territory": "German East Africa",
+     "source": {
+      "title": "German East Africa (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/German_East_Africa"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:German_East_Africa_1914.svg"
+    }
+   ]
+  },
+  {
+   "date": "1894-06-16",
+   "what": "A German naval force occupies Kionga, south of the Rovuma, and Portugal has to give it up",
+   "source": {
+    "title": "Triângulo de Quionga (Wikipedia, Portuguese)",
+    "url": "https://pt.wikipedia.org/wiki/Triângulo_de_Quionga"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:German_East_Africa_1914.svg",
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "kionga"
      ],
      "owner": "Portugal",
      "territory": "Portuguese Mozambique",
