@@ -1160,10 +1160,15 @@ function flyCamera(lon: number, lat: number, height: number, duration = 1.4) {
   });
 }
 
+/** How long the map's flights take, in milliseconds: none when motion is reduced. */
+function flightMs(seconds = 1.4): number {
+  return lessMotion() ? 0 : seconds * 1000;
+}
+
 function flyToCiv(c: Civilization, target: [number, number] | null = c.home ?? c.center, keepHeight = false) {
   flight++;
   if (!target) return;
-  if (map.active) return map.focus(target[0], target[1], keepHeight ? null : c.area);
+  if (map.active) return map.focus(target[0], target[1], keepHeight ? null : altitudeFor(c.area), flightMs());
   flyCamera(target[0], target[1], keepHeight ? widget.camera.positionCartographic.height : altitudeFor(c.area));
 }
 
@@ -1218,8 +1223,9 @@ function flyToAll(list: Civilization[]) {
     }),
   );
   const largest = Math.max(...list.map((c) => c.area));
-  if (map.active) return map.focus(lon, lat, Math.max(largest, (spread * 1.6) ** 2));
-  flyCamera(lon, lat, Math.min(22_000_000, Math.max(altitudeFor(largest), spread * 1000 * (narrow ? 3.2 : 2.2))));
+  const height = Math.min(22_000_000, Math.max(altitudeFor(largest), spread * 1000 * (narrow ? 3.2 : 2.2)));
+  if (map.active) return map.focus(lon, lat, height, flightMs());
+  flyCamera(lon, lat, height);
 }
 
 /**
@@ -1320,10 +1326,11 @@ function chooseProjection(id: string) {
   }
   if (id === projection) return;
   const { lon, lat, zoom } = map.centre();
+  const height = map.altitude();
   setProjection(id);
   // Stay on the same place, at a comparable zoom.
-  if (zoom > 1) map.focus(lon, lat, (14_000 / zoom) ** 2);
-  else map.focus(lon, 0, null);
+  if (zoom > 1) map.focus(lon, lat, height, flightMs(0.7));
+  else map.focus(lon, 0, null, flightMs(0.7));
 }
 
 /** The point at the middle of the globe and the realm size its altitude frames. */
@@ -1352,7 +1359,7 @@ function globeKey(e: KeyboardEvent) {
     if (!turn) return;
     const { lon, lat, zoom: z } = map.centre();
     const step = (e.shiftKey ? 30 : 10) / Math.max(1, z);
-    map.focus(lon + turn[0] * step, Math.max(-80, Math.min(80, lat + turn[1] * step)), null);
+    map.focus(lon + turn[0] * step, Math.max(-80, Math.min(80, lat + turn[1] * step)), null, flightMs(0.7));
     return;
   }
   widget.camera.cancelFlight();
@@ -1386,15 +1393,15 @@ function setMapMode(on: boolean, sync = true) {
   store(MAP_KEY, on ? "map" : "globe");
   setView(on ? "map" : "globe");
   if (on) {
-    const { lon, lat, area } = globeCentre();
+    const { lon, lat } = globeCentre();
     map.show();
-    if (sync) map.focus(lon, lat, area);
+    if (sync) map.focus(lon, lat, widget.camera.positionCartographic.height, flightMs(0.7));
     render();
   } else {
-    const { lon, lat, zoom } = map.centre();
+    const { lon, lat } = map.centre();
     map.hide();
     if (sync) {
-      const side = Math.min(22_000_000, Math.max(2_500_000, (14_000 / zoom) * 6000 * (narrow ? 1.5 : 1)));
+      const side = Math.min(22_000_000, Math.max(2_500_000, map.altitude()));
       widget.camera.setView({ destination: Cartesian3.fromDegrees(lon, lat, side), orientation: orientation() });
     }
     widget.resize();
@@ -1703,7 +1710,7 @@ function hoverEvent(e: HistoryEvent, x: number, y: number) {
 /** Turns the globe or map to a place, keeping the zoom unless it is too far out. */
 function flyToPoint([lon, lat]: [number, number]) {
   flight++;
-  if (map.active) return map.focus(lon, lat, null);
+  if (map.active) return map.focus(lon, lat, null, flightMs(1.2));
   flyCamera(lon, lat, Math.min(widget.camera.positionCartographic.height, 9_000_000), 1.2);
 }
 
@@ -1886,7 +1893,7 @@ function applyPicked(list: Civilization[]) {
 /** Points the camera at a place, framing an area of so many km². */
 function flyToPlace([lon, lat]: [number, number], area: number) {
   flight++;
-  if (map.active) return map.focus(lon, lat, area);
+  if (map.active) return map.focus(lon, lat, altitudeFor(area), flightMs());
   flyCamera(lon, lat, altitudeFor(area));
 }
 
