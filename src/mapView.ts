@@ -41,6 +41,8 @@ const MIN_ZOOM = 0.8;
 const MAX_ZOOM = 160;
 // The closest a realm is framed when it opens, so a tiny one keeps some context.
 const MAX_FRAME_ZOOM = 40;
+// The globe camera's field of view across the wider side of the screen (Cesium's default).
+const FOV = Math.PI / 3;
 
 type Shape = Feature<Polygon | MultiPolygon, null>;
 
@@ -237,31 +239,76 @@ export class MapView {
     this.draw();
   }
 
-  /** Centres the map on a point, zoomed to frame a realm of `area` km² (null keeps the zoom). */
-  focus(lon: number, lat: number, area: number | null) {
+  /**
+   * Flies to a point, showing as much land around it as the globe's camera
+   * would from `altitude` metres up (null keeps the zoom). Like the globe, a
+   * long trip pulls back a little on the way and comes in at the end.
+   */
+  focus(lon: number, lat: number, altitude: number | null, duration = 1400) {
     if (!this.width) return;
-    const zoom = area === null ? this.zoom : zoomFor(area);
-    const from = { lambda: this.lambda, zoom: this.zoom, ty: this.ty };
-    // Where the point lands with the target rotation and zoom decides the target pan.
-    this.apply(lon, zoom, 0);
-    const [, y] = this.projection([lon, lat]) ?? [0, this.height / 2];
-    const to = { lambda: lon, zoom, ty: this.viewCentreY() - y };
-    // Turn the short way round.
-    let dl = ((to.lambda - from.lambda + 540) % 360) - 180;
-    if (!Number.isFinite(dl)) dl = 0;
     cancelAnimationFrame(this.tween);
+    const here = this.centre();
+    const zoom = altitude === null ? this.zoom : this.zoomFor(lat, altitude);
+    // Positions in pixels of the map at zoom 1, along the middle meridian.
+    const unit = this.pixelsPerDegree();
+    const y = (at: number) => {
+      this.apply(this.lambda, 1, 0);
+      return this.projection([this.lambda, at])?.[1] ?? 0;
+    };
+    // Turn the short way round.
+    let dl = ((lon - this.lambda + 540) % 360) - 180;
+    if (!Number.isFinite(dl)) dl = 0;
+    const from: View = [this.lambda * unit, y(here.lat), this.width / this.zoom];
+    const to: View = [(this.lambda + dl) * unit, y(lat), this.width / zoom];
+    this.apply(this.lambda, this.zoom, this.ty);
+    const path = flightPath(from, to);
+    const show = ([x, cy, w]: View) => {
+      this.lambda = x / unit;
+      this.zoom = this.width / w;
+      this.ty = this.viewCentreY() - cy * this.zoom;
+      this.drawNow();
+    };
+    if (duration <= 0) return show(to);
     const start = performance.now();
     const step = (now: number) => {
-      const t = Math.min(1, (now - start) / 700);
-      const e = t < 0.5 ? 2 * t * t : 1 - (-2 * t + 2) ** 2 / 2;
-      this.lambda = from.lambda + dl * e;
-      this.zoom = from.zoom * (to.zoom / from.zoom) ** e;
-      this.ty = from.ty + (to.ty - from.ty) * e;
-      this.drawNow();
+      const t = Math.min(1, (now - start) / duration);
+      show(path(t < 0.5 ? 4 * t * t * t : 1 - (-2 * t + 2) ** 3 / 2));
       if (t < 1) this.tween = requestAnimationFrame(step);
     };
-    this.apply(from.lambda, from.zoom, from.ty);
     this.tween = requestAnimationFrame(step);
+  }
+
+  /** The globe camera's altitude, in metres, that shows as much land as the map shows now. */
+  altitude(): number {
+    const { lat } = this.centre();
+    return (Math.max(this.width, this.height) / (this.zoom * this.pixelsPerKm(lat))) / (2 * Math.tan(FOV / 2)) * 1000;
+  }
+
+  /** Map zoom that shows as much land around this latitude as the globe from `altitude` metres. */
+  private zoomFor(lat: number, altitude: number): number {
+    const across = 2 * Math.tan(FOV / 2) * (altitude / 1000);
+    const zoom = Math.max(this.width, this.height) / (across * this.pixelsPerKm(lat));
+    return Math.min(MAX_FRAME_ZOOM, Math.max(1, zoom));
+  }
+
+  /** Pixels per degree of longitude along the equator, at zoom 1. */
+  private pixelsPerDegree(): number {
+    this.apply(this.lambda, 1, 0);
+    const a = this.projection([this.lambda - 0.5, 0]);
+    const b = this.projection([this.lambda + 0.5, 0]);
+    this.apply(this.lambda, this.zoom, this.ty);
+    return a && b ? Math.abs(b[0] - a[0]) : (this.baseScale * Math.PI) / 180;
+  }
+
+  /** Pixels per kilometre east-west at this latitude, at zoom 1: Miller stretches the north. */
+  private pixelsPerKm(lat: number): number {
+    const at = Math.max(-80, Math.min(80, lat));
+    this.apply(this.lambda, 1, 0);
+    const a = this.projection([this.lambda - 0.5, at]);
+    const b = this.projection([this.lambda + 0.5, at]);
+    this.apply(this.lambda, this.zoom, this.ty);
+    const px = a && b ? Math.hypot(b[0] - a[0], b[1] - a[1]) : (this.baseScale * Math.PI) / 180;
+    return px / (111.32 * Math.cos((at * Math.PI) / 180));
   }
 
   /** [longitude, latitude] under these canvas coordinates, or null off the map. */
@@ -638,9 +685,35 @@ export class MapView {
   }
 }
 
-/** Zoom that frames a realm of this many km². */
-function zoomFor(area: number): number {
-  return Math.min(MAX_FRAME_ZOOM, Math.max(1, 14_000 / Math.sqrt(Math.max(area, 1))));
+/** A view of the map: middle point in pixels at zoom 1, and the width it shows. */
+type View = [number, number, number];
+
+/**
+ * The smooth pan and zoom between two views (van Wijk and Nuij), which zooms
+ * out on a long trip and back in at the end, as the globe's camera flies.
+ * Takes 0..1 along the way.
+ */
+function flightPath([x0, y0, w0]: View, [x1, y1, w1]: View): (t: number) => View {
+  const rho = Math.SQRT2;
+  const dx = x1 - x0;
+  const dy = y1 - y0;
+  const d2 = dx * dx + dy * dy;
+  if (d2 < 1e-6) {
+    const s = Math.log(w1 / w0);
+    return (t) => [x0, y0, w0 * Math.exp(s * t)];
+  }
+  const d = Math.sqrt(d2);
+  const b0 = (w1 * w1 - w0 * w0 + rho ** 4 * d2) / (2 * w0 * rho * rho * d);
+  const b1 = (w1 * w1 - w0 * w0 - rho ** 4 * d2) / (2 * w1 * rho * rho * d);
+  const r0 = Math.log(Math.sqrt(b0 * b0 + 1) - b0);
+  const r1 = Math.log(Math.sqrt(b1 * b1 + 1) - b1);
+  const S = (r1 - r0) / rho;
+  return (t) => {
+    const s = t * S;
+    const c0 = Math.cosh(r0);
+    const u = (w0 / (rho * rho * d)) * (c0 * Math.tanh(rho * s + r0) - Math.sinh(r0));
+    return [x0 + u * dx, y0 + u * dy, (w0 * c0) / Math.cosh(rho * s + r0)];
+  };
 }
 
 function lighten(hex: string): string {
