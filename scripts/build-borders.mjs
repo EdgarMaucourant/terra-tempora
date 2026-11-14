@@ -294,7 +294,12 @@ for (let year = TODAY; year >= firstReviewed; year--) {
     // Unreviewed land goes by today's country: one shape for all of it would
     // be too large for the globe to draw.
     if (reviewedFrom.get(id) > year) add(`unreviewed|${state.get(id).owner}`, id, { kind: "unreviewed" });
-    else if (!s) continue;
+    // Reviewed land no state held that year (inland Angola before the
+    // treaties): not drawn, but kept to tell visitors that its borders are
+    // missing. Land no state owns today (Antarctica) is not missing any.
+    else if (!s) {
+      if (state.get(id)) add("blank", id, { kind: "blank" });
+    }
     else {
       if (s.territory) add(`territory|${s.owner}|${s.territory}`, id, { name: s.territory, partOf: s.owner });
       else add(`realm|${s.owner}`, id, { name: s.owner });
@@ -416,6 +421,7 @@ function outline(ids, { bands = false } = {}) {
 
 const pieceArea = new Map(pieceList.map((p) => [p.id, polygonsOf(p.geometry).reduce((s, poly) => s + sphereArea(poly[0]), 0)]));
 const shapes = [];
+const blank = [];
 let nextId = 1;
 const outlineCache = new Map();
 for (const [key, list] of runs) {
@@ -427,6 +433,10 @@ for (const [key, list] of runs) {
     const cacheKey2 = `${bands}|${cacheKey}`;
     const o = outlineCache.get(cacheKey2) ?? outlineCache.set(cacheKey2, outline(ids, { bands })).get(cacheKey2);
     if (!o) continue;
+    if (m.kind === "blank") {
+      blank.push({ from: run.from, to: run.to, rings: o.rings });
+      continue;
+    }
     const realm = m.kind === "unreviewed" ? null : realms[m.name];
     shapes.push({
       id: nextId++,
@@ -487,6 +497,10 @@ for (const w of WINDOWS) {
   console.log(`${w.from}..${w.to}: ${inside.length} shapes, ${(full.size / 1e6).toFixed(2)} MB (coarse ${(coarse.size / 1e6).toFixed(2)} MB)`);
 }
 
+// Land with no border drawn, in a file of its own: only the pointer needs it,
+// to tell land from sea along the real coast.
+const blankFile = blank.length ? writeWindow(OUT, { from: firstReviewed, to: TODAY }, blank, "blank").file : null;
+
 const spans = {};
 for (const s of shapes) {
   if (s.kind) continue;
@@ -543,6 +557,7 @@ writeFileSync(
     to: TODAY,
     reviewedFrom: firstReviewed,
     windows,
+    ...(blankFile && { blank: blankFile }),
     realms: spans,
     names,
     notCountries: Object.keys(realms).filter((n) => realms[n].notACountry),
