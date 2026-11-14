@@ -1,37 +1,125 @@
 {
  "family": "Portugal",
- "note": "Portugal with the Azores and Madeira, and the land it held overseas. Reviewed from 2026 back to 1891 (the map on 31 December 1891), Portuguese Timor back to 1916 and Angola back to 1926. Next stop: the African colonies before their treaty borders (Angola before 1926, Guinea before 1886, Mozambique before 1891), Timor before the 1914 award, Macau before 1887.",
+ "note": "Portugal with the Azores and Madeira, and the land it held overseas. Reviewed from 2026 back to 1822 (the map on 31 December 1822, after Brazil's independence). Before their treaty borders (1885 to 1891), Angola, Mozambique and Guinea are drawn as the land Portugal actually held, growing with each treaty; the rest of today's countries is left not reviewed until the African states there are drawn. Not drawn yet: Ziguinchor (Portuguese until 1888, in today's Senegal), São João Baptista de Ajudá (a fort in today's Benin), the Portuguese posts on Flores and Solor (given to the Netherlands in 1859), the Dutch enclave of Maucatar in Portuguese Timor and the Portuguese enclave of Noimuti in Dutch Timor (exchanged in 1916).",
  "reviewed": [
   {
    "pieces": [
     "PRT",
     "MAC",
-    "MOZ",
-    "kionga",
     "CPV",
     "STP",
-    "GNB",
     "IND-3265",
     "daman",
     "diu",
     "IND-2445"
    ],
+   "from": 1822,
+   "why": "Portugal with the Azores and Madeira, Macau, Cape Verde, São Tomé and Príncipe, and Goa, Daman, Diu, Dadra and Nagar Haveli, whose borders have not moved since 1822 (Macau took in Taipa in 1851 and Coloane in 1864, and China recognised Portuguese rule there only in the 1887 Treaty of Peking)"
+  },
+  {
+   "pieces": [
+    "AGO-1880",
+    "AGO-1877",
+    "AGO-1878",
+    "AGO-1879",
+    "AGO-1887",
+    "moz-coast-cabo-delgado",
+    "moz-coast-nampula",
+    "moz-coast-zambezia",
+    "moz-coast-sofala",
+    "moz-coast-tete",
+    "moz-coast-manica",
+    "moz-coast-inhambane",
+    "moz-coast-gaza",
+    "MOZ-5854",
+    "GNB-771",
+    "GNB-769",
+    "GNB-5500"
+   ],
+   "from": 1822,
+   "why": "The land Portugal held in Africa in 1822: Luanda and the Cuanza valley, Benguela, the coast of Mozambique and the lower Zambezi, Cacheu and Bissau (rough, from the 1885 Petermann map)"
+  },
+  {
+   "pieces": [
+    "TLS-541",
+    "TLS-543",
+    "TLS-544",
+    "TLS-545",
+    "TLS-546",
+    "TLS-547",
+    "TLS-548",
+    "TLS-549",
+    "TLS-550",
+    "TLS-551",
+    "TLS-552",
+    "TLS-553"
+   ],
+   "from": 1822,
+   "why": "Portuguese Timor: the east of the island and Oecusse, with today's border (rough before the 1914 award)"
+  },
+  {
+   "pieces": [
+    "AGO-1893"
+   ],
+   "from": 1840,
+   "why": "Moçâmedes, founded in 1840"
+  },
+  {
+   "pieces": [
+    "TLS-542"
+   ],
+   "from": 1860,
+   "why": "Maubara (Liquiçá), Dutch until the 1859 Treaty of Lisbon"
+  },
+  {
+   "pieces": [
+    "GNB-770"
+   ],
+   "from": 1870,
+   "why": "Bolama and the Bijagós, claimed by Britain until the 1870 award"
+  },
+  {
+   "pieces": [
+    "moz-coast-maputo"
+   ],
+   "from": 1875,
+   "why": "Delagoa Bay, claimed by Britain until the 1875 MacMahon award"
+  },
+  {
+   "pieces": [
+    "AGO-1885",
+    "AGO-1882",
+    "AGO-1881",
+    "AGO-1876"
+   ],
+   "from": 1885,
+   "why": "Cabinda and the north of Angola, Portuguese by the 1885 Treaty of Simulambuco and the 1885 convention with the Congo"
+  },
+  {
+   "pieces": [
+    "AGO-1891",
+    "AGO-1889",
+    "AGO-1890",
+    "AGO-1886",
+    "MOZ-1198",
+    "kionga",
+    "GNB-772",
+    "GNB-776",
+    "GNB-777",
+    "GNB-773",
+    "GNB-778"
+   ],
+   "from": 1886,
+   "why": "The south of Angola, the north of Mozambique to the Rovuma and the whole of Portuguese Guinea, Portuguese by the 1886 conventions with Germany and France"
+  },
+  {
+   "pieces": [
+    "AGO",
+    "MOZ",
+    "GNB"
+   ],
    "from": 1891,
-   "why": "Portugal, its islands and the land it held overseas whose borders have not moved since 1891"
-  },
-  {
-   "pieces": [
-    "TLS"
-   ],
-   "from": 1916,
-   "why": "Portuguese Timor, within the border drawn by the Permanent Court of Arbitration in 1914 and ratified in 1916 (the Maucatar and Noimuti enclaves were exchanged then)"
-  },
-  {
-   "pieces": [
-    "AGO"
-   ],
-   "from": 1926,
-   "why": "Angola, with today's borders, back to 1926 only for now: its eastern border dates from the 1905 Barotse award, and its southern border with South West Africa before 1926 still has to be checked"
+   "why": "Angola, Mozambique and Portuguese Guinea within today's borders, fixed by the 1891 treaties (Angola's border with Barotseland was settled by the 1905 award, its border with South West Africa by the 1926 agreement: both moved only a little)"
   }
  ],
  "changes": [
@@ -474,6 +562,448 @@
       "url": "https://en.wikipedia.org/wiki/Portuguese_Mozambique"
      },
      "map": "https://commons.wikimedia.org/wiki/File:Portuguese_Empire_20th_century.png"
+    }
+   ]
+  },
+  {
+   "date": "1891-06-11",
+   "what": "The Anglo-Portuguese Treaty gives Portugal the interior of Mozambique and the east of Angola, ending Portugal's claim to the land between them (the Pink Map)",
+   "source": {
+    "title": "Anglo-Portuguese Treaty of 1891 (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Anglo-Portuguese_Treaty_of_1891"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Mapa_Cor-de-Rosa.svg",
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "AGO-1880",
+      "AGO-1877",
+      "AGO-1878",
+      "AGO-1879",
+      "AGO-1887",
+      "AGO-1893",
+      "AGO-1885",
+      "AGO-1882",
+      "AGO-1881",
+      "AGO-1876",
+      "AGO-1891",
+      "AGO-1889",
+      "AGO-1890",
+      "AGO-1886",
+      "AGO-1874",
+      "AGO-1875"
+     ],
+     "owner": "Portugal",
+     "territory": "Portuguese Angola",
+     "source": {
+      "title": "Portuguese Angola (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Portuguese_Angola"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Mapa_Cor-de-Rosa.svg"
+    },
+    {
+     "pieces": [
+      "moz-coast-cabo-delgado",
+      "moz-coast-nampula",
+      "moz-coast-zambezia",
+      "moz-coast-sofala",
+      "moz-coast-tete",
+      "moz-coast-manica",
+      "moz-coast-inhambane",
+      "moz-coast-gaza",
+      "moz-coast-maputo",
+      "MOZ-5854",
+      "MOZ-1198",
+      "kionga"
+     ],
+     "owner": "Portugal",
+     "territory": "Portuguese Mozambique",
+     "source": {
+      "title": "Portuguese Mozambique (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Portuguese_Mozambique"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Mapa_Cor-de-Rosa.svg"
+    },
+    {
+     "pieces": [
+      "AGO-1892",
+      "AGO-1888",
+      "MOZ-1199",
+      "MOZ-1200",
+      "MOZ-1906",
+      "MOZ-1905",
+      "MOZ-1190",
+      "MOZ-1192",
+      "MOZ-1925",
+      "MOZ-1207",
+      "MOZ-1927"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1891-05-25",
+   "what": "A treaty with the Congo Free State gives Portugal the Lunda country, in the north-east of Angola",
+   "source": {
+    "title": "Angola–Democratic Republic of the Congo border (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Angola–Democratic_Republic_of_the_Congo_border"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Mapa_Cor-de-Rosa.svg",
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "AGO-1880",
+      "AGO-1877",
+      "AGO-1878",
+      "AGO-1879",
+      "AGO-1887",
+      "AGO-1893",
+      "AGO-1885",
+      "AGO-1882",
+      "AGO-1881",
+      "AGO-1876",
+      "AGO-1891",
+      "AGO-1889",
+      "AGO-1890",
+      "AGO-1886"
+     ],
+     "owner": "Portugal",
+     "territory": "Portuguese Angola",
+     "source": {
+      "title": "Portuguese Angola (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Portuguese_Angola"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Mapa_Cor-de-Rosa.svg"
+    },
+    {
+     "pieces": [
+      "AGO-1874",
+      "AGO-1875"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1886-12-30",
+   "what": "A convention with Germany fixes the southern border of Angola on the Kunene and the northern border of Mozambique on the Rovuma",
+   "source": {
+    "title": "Pink Map (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Pink_Map"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Mapa_Cor-de-Rosa.svg",
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "AGO-1880",
+      "AGO-1877",
+      "AGO-1878",
+      "AGO-1879",
+      "AGO-1887",
+      "AGO-1893",
+      "AGO-1885",
+      "AGO-1882",
+      "AGO-1881",
+      "AGO-1876"
+     ],
+     "owner": "Portugal",
+     "territory": "Portuguese Angola",
+     "source": {
+      "title": "Portuguese Angola (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Portuguese_Angola"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Afrika_Politische_Uebersicht_Maerz_1885.jpg"
+    },
+    {
+     "pieces": [
+      "moz-coast-cabo-delgado",
+      "moz-coast-nampula",
+      "moz-coast-zambezia",
+      "moz-coast-sofala",
+      "moz-coast-tete",
+      "moz-coast-manica",
+      "moz-coast-inhambane",
+      "moz-coast-gaza",
+      "moz-coast-maputo",
+      "MOZ-5854"
+     ],
+     "owner": "Portugal",
+     "territory": "Portuguese Mozambique",
+     "source": {
+      "title": "Portuguese Mozambique (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Portuguese_Mozambique"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Afrika_Politische_Uebersicht_Maerz_1885.jpg"
+    },
+    {
+     "pieces": [
+      "AGO-1891",
+      "AGO-1889",
+      "AGO-1890",
+      "AGO-1886",
+      "MOZ-1198",
+      "kionga"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1886-05-12",
+   "what": "A convention with France fixes the borders of Portuguese Guinea; Portugal gives up Ziguinchor and the Casamance",
+   "source": {
+    "title": "Guinea-Bissau–Senegal border (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Guinea-Bissau–Senegal_border"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Carte_de_la_d%C3%A9limitation_franco-portugaise_en_Guin%C3%A9e_-_par_E._Desbuissons_-_btv1b53022896z.jpg",
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GNB-771",
+      "GNB-769",
+      "GNB-5500",
+      "GNB-770"
+     ],
+     "owner": "Portugal",
+     "territory": "Portuguese Guinea",
+     "source": {
+      "title": "Portuguese Guinea (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Portuguese_Guinea"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Afrika_Politische_Uebersicht_Maerz_1885.jpg"
+    },
+    {
+     "pieces": [
+      "GNB-772",
+      "GNB-776",
+      "GNB-777",
+      "GNB-773",
+      "GNB-778"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1885-02-14",
+   "what": "A convention with the International Association of the Congo gives Portugal the south bank of the lower Congo and the land east to the Kwango",
+   "source": {
+    "title": "Angola–Democratic Republic of the Congo border (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Angola–Democratic_Republic_of_the_Congo_border"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Afrika_Politische_Uebersicht_Maerz_1885.jpg",
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "AGO-1880",
+      "AGO-1877",
+      "AGO-1878",
+      "AGO-1879",
+      "AGO-1887",
+      "AGO-1893",
+      "AGO-1885"
+     ],
+     "owner": "Portugal",
+     "territory": "Portuguese Angola",
+     "source": {
+      "title": "Portuguese Angola (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Portuguese_Angola"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Afrika_Politische_Uebersicht_Maerz_1885.jpg"
+    },
+    {
+     "pieces": [
+      "AGO-1882",
+      "AGO-1881",
+      "AGO-1876"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1885-02-01",
+   "what": "By the Treaty of Simulambuco the princes of Cabinda place their land under Portuguese protection",
+   "source": {
+    "title": "Treaty of Simulambuco (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Simulambuco"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Afrika_Politische_Uebersicht_Maerz_1885.jpg",
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "AGO-1880",
+      "AGO-1877",
+      "AGO-1878",
+      "AGO-1879",
+      "AGO-1887",
+      "AGO-1893"
+     ],
+     "owner": "Portugal",
+     "territory": "Portuguese Angola",
+     "source": {
+      "title": "Portuguese Angola (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Portuguese_Angola"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Afrika_Politische_Uebersicht_Maerz_1885.jpg"
+    },
+    {
+     "pieces": [
+      "AGO-1885"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1875-07-24",
+   "what": "Marshal MacMahon's arbitration gives the whole of Delagoa Bay to Portugal, against Britain's claim to its southern shore",
+   "source": {
+    "title": "Delagoa Bay (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Maputo_Bay"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Afrika_Politische_Uebersicht_Maerz_1885.jpg",
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "moz-coast-cabo-delgado",
+      "moz-coast-nampula",
+      "moz-coast-zambezia",
+      "moz-coast-sofala",
+      "moz-coast-tete",
+      "moz-coast-manica",
+      "moz-coast-inhambane",
+      "moz-coast-gaza",
+      "MOZ-5854"
+     ],
+     "owner": "Portugal",
+     "territory": "Portuguese Mozambique",
+     "source": {
+      "title": "Portuguese Mozambique (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Portuguese_Mozambique"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Afrika_Politische_Uebersicht_Maerz_1885.jpg"
+    },
+    {
+     "pieces": [
+      "moz-coast-maputo"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1870-04-21",
+   "what": "President Grant's arbitration gives Bolama to Portugal, against Britain's claim",
+   "source": {
+    "title": "Portuguese Guinea (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Portuguese_Guinea"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Afrika_Politische_Uebersicht_Maerz_1885.jpg",
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "GNB-771",
+      "GNB-769",
+      "GNB-5500"
+     ],
+     "owner": "Portugal",
+     "territory": "Portuguese Guinea",
+     "source": {
+      "title": "Portuguese Guinea (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Portuguese_Guinea"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Afrika_Politische_Uebersicht_Maerz_1885.jpg"
+    },
+    {
+     "pieces": [
+      "GNB-770"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1860-08-18",
+   "what": "The Treaty of Lisbon (1859) comes into force: the Netherlands give Maubara, Ambeno and Ataúro on Timor to Portugal, which gives up its posts on Flores and Solor",
+   "source": {
+    "title": "Portuguese Timor (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Portuguese_Timor"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Oecusse_1859.jpg",
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TLS-541",
+      "TLS-543",
+      "TLS-544",
+      "TLS-545",
+      "TLS-546",
+      "TLS-547",
+      "TLS-548",
+      "TLS-549",
+      "TLS-550",
+      "TLS-551",
+      "TLS-552",
+      "TLS-553"
+     ],
+     "owner": "Portugal",
+     "territory": "Portuguese Timor",
+     "source": {
+      "title": "Portuguese Timor (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Portuguese_Timor"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Afrika_Politische_Uebersicht_Maerz_1885.jpg"
+    },
+    {
+     "pieces": [
+      "TLS-542"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1840-08-13",
+   "what": "Portugal founds Moçâmedes, on the coast south of Benguela",
+   "source": {
+    "title": "Moçâmedes (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Mo%C3%A7%C3%A2medes"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Afrika_Politische_Uebersicht_Maerz_1885.jpg",
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "AGO-1880",
+      "AGO-1877",
+      "AGO-1878",
+      "AGO-1879",
+      "AGO-1887"
+     ],
+     "owner": "Portugal",
+     "territory": "Portuguese Angola",
+     "source": {
+      "title": "Portuguese Angola (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Portuguese_Angola"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Afrika_Politische_Uebersicht_Maerz_1885.jpg"
+    },
+    {
+     "pieces": [
+      "AGO-1893"
+     ],
+     "owner": null
     }
    ]
   }
