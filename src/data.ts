@@ -1,5 +1,6 @@
 import { reloadForNewRelease } from "./newRelease";
 import { NOW } from "./eras";
+import { inRing } from "./frame";
 
 export interface Polity {
   id: number;
@@ -96,6 +97,8 @@ interface Index {
   from: number;
   to: number;
   windows: DataWindow[];
+  /** Reviewed land no state held, year by year: no border is drawn there. */
+  blank?: string;
   /** Every realm's first and last year in the whole dataset. */
   realms: Record<string, [number, number]>;
   /** Names of realms, territories and periods in other languages. */
@@ -217,6 +220,35 @@ export class BorderData {
 
   private fileOf(w: DataWindow): string {
     return this.detailed ? w.file : w.coarse;
+  }
+
+  private blank?: Promise<(lon: number, lat: number, year: number) => boolean>;
+
+  /**
+   * Whether a point is land with no border drawn at a year: reviewed land no
+   * state held then, along the real coast, so the sea next to it is not.
+   * The file is small and only downloaded on first use.
+   */
+  blankLand(): Promise<(lon: number, lat: number, year: number) => boolean> {
+    const file = this.index.blank;
+    this.blank ??= !file
+      ? Promise.resolve(() => false)
+      : fetch(new URL(file, this.base))
+          .then((r) => {
+            if (!r.ok) throw new Error(`Could not load ${file} (${r.status})`);
+            return r.json() as Promise<WindowFile>;
+          })
+          .then((data) => {
+            const rings = data.rings.map(decodeRing);
+            const shapes = data.shapes.map((s) => ({ from: s.from, to: s.to, rings: s.rings.map((i) => rings[i]) }));
+            return (lon: number, lat: number, year: number) => {
+              const y = Math.round(year);
+              return shapes.some((s) => y >= s.from && y <= s.to && s.rings.some((ring) => inRing(ring, lon, lat)));
+            };
+          });
+    // A failed download can be retried on the next hover.
+    this.blank.catch(() => (this.blank = undefined));
+    return this.blank;
   }
 
   /** Downloads the windows covering these years; resolves with their shapes. */

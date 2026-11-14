@@ -33,7 +33,6 @@ import { frameRealm } from "./frame";
 import { EventLayer } from "./eventLayer";
 import { makeDraggable } from "./drag";
 import { Feedback } from "./feedback";
-import { continentFinder } from "./continentAt";
 import { badgeSvg, eventLinks, kindLabel, loadEvents, localPage, pageUrl, type HistoryEvent } from "./events";
 import { Landing } from "./landing";
 import type { FoundEvent } from "./search";
@@ -822,31 +821,32 @@ function globeLonLat(position: { x: number; y: number }): [number, number] | nul
   return place ? [CesiumMath.toDegrees(place.longitude), CesiumMath.toDegrees(place.latitude)] : null;
 }
 
-// Land with no realm drawn (the Americas and Australia before the colonists,
-// for instance) asks visitors for reputable sources to fill it.
-let continentAt: ((lon: number, lat: number) => unknown) | null = null;
-let continentLoading = false;
-/** Whether a point is land (not sea) on the continents grid, which loads on first use. */
-function isLand(lonLat: [number, number] | null): boolean {
+// Reviewed land with no realm drawn (inland Angola before the treaties) asks
+// visitors for reputable sources to fill it. The sea is never asked about.
+let blankAt: ((lon: number, lat: number, year: number) => boolean) | null = null;
+let blankLoading = false;
+/** Whether a point is land with no border drawn this year; the shapes load on first use. */
+function isBlankLand(lonLat: [number, number] | null): boolean {
   if (!lonLat) return false;
-  if (!continentAt) {
-    if (!continentLoading) {
-      continentLoading = true;
-      continentFinder()
-        .then((f) => (continentAt = f))
-        .catch(() => (continentLoading = false));
+  if (!blankAt) {
+    if (!blankLoading && data) {
+      blankLoading = true;
+      data
+        .blankLand()
+        .then((f) => (blankAt = f))
+        .catch(() => (blankLoading = false));
     }
     return false;
   }
-  return continentAt(lonLat[0], lonLat[1]) !== null;
+  return blankAt(lonLat[0], lonLat[1], year);
 }
-// The grid is small (6 kB); fetch it once the page has settled, before the first hover.
-window.setTimeout(() => isLand([0, 0]), 3000);
+// The shapes are small; fetch them once the page has settled, before the first hover.
+window.setTimeout(() => isBlankLand([0, 0]), 3000);
 
 /** The pointer is over no realm: on land, a tooltip says why it is empty. */
 function hoverEmpty(lonLat: [number, number] | null, x: number, y: number) {
   // While the note is open, it says it already.
-  if (!isLand(lonLat) || travel?.active || !blankNote.hidden) {
+  if (!isBlankLand(lonLat) || travel?.active || !blankNote.hidden) {
     if (!tooltip.hidden) hideTooltip();
     return;
   }
@@ -867,7 +867,7 @@ const blankNote = $("blank-note");
 let blankPlace: [number, number] | null = null;
 /** A click on empty land shows a note there asking for a source, with a button to share one. */
 function offerSource(lonLat: [number, number] | null, x: number, y: number) {
-  if (!isLand(lonLat) || travel?.active) return;
+  if (!isBlankLand(lonLat) || travel?.active) return;
   hideTooltip();
   blankPlace = lonLat;
   blankNote.hidden = false;
