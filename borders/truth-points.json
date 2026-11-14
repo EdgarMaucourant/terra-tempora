@@ -8,7 +8,7 @@
     38.72
    ],
    "years": [
-    1891,
+    1822,
     2026
    ],
    "realm": "Portugal",
@@ -21,7 +21,7 @@
     32.65
    ],
    "years": [
-    1891,
+    1822,
     2026
    ],
    "realm": "Portugal",
@@ -34,7 +34,7 @@
     37.75
    ],
    "years": [
-    1891,
+    1822,
     2026
    ],
    "realm": "Portugal",
@@ -73,7 +73,7 @@
     -25.92
    ],
    "years": [
-    1974,
+    1822,
     1974
    ],
    "realm": "Portuguese Mozambique",
@@ -99,7 +99,7 @@
     14.93
    ],
    "years": [
-    1974,
+    1822,
     1974
    ],
    "realm": "Portuguese Cape Verde",
@@ -125,7 +125,7 @@
     0.3
    ],
    "years": [
-    1974,
+    1822,
     1974
    ],
    "realm": "Portuguese São Tomé and Príncipe",
@@ -151,7 +151,7 @@
     -8.85
    ],
    "years": [
-    1926,
+    1822,
     1974
    ],
    "realm": "Portuguese Angola",
@@ -190,7 +190,7 @@
     -8.6
    ],
    "years": [
-    1916,
+    1822,
     1998
    ],
    "realm": "Portuguese Timor",
@@ -245,7 +245,7 @@
     22.14
    ],
    "years": [
-    1891,
+    1822,
     1998
    ],
    "realm": "Portuguese Macau",
@@ -564,24 +564,11 @@
     11.86
    ],
    "years": [
-    1891,
+    1822,
     1973
    ],
    "realm": "Portuguese Guinea",
    "why": "Portuguese until Portugal recognised Guinea-Bissau on 10 September 1974"
-  },
-  {
-   "place": "Bissau",
-   "lonLat": [
-    -15.6,
-    11.86
-   ],
-   "years": [
-    1974,
-    2026
-   ],
-   "realm": "Guinea-Bissau",
-   "why": "Independent, recognised by Portugal on 10 September 1974"
   },
   {
    "place": "Panaji",
@@ -590,7 +577,7 @@
     15.49
    ],
    "years": [
-    1891,
+    1822,
     1960
    ],
    "realm": "Portuguese India",
@@ -616,7 +603,7 @@
     20.41
    ],
    "years": [
-    1891,
+    1822,
     1960
    ],
    "realm": "Portuguese India",
@@ -642,7 +629,7 @@
     20.727
    ],
    "years": [
-    1891,
+    1822,
     1960
    ],
    "realm": "Portuguese India",
@@ -668,7 +655,7 @@
     20.27
    ],
    "years": [
-    1891,
+    1822,
     1960
    ],
    "realm": "Portuguese India",
@@ -758,43 +745,267 @@
    "why": "Part of Mozambique since independence"
   },
   {
-   "place": "Maputo",
+   "place": "Moçâmedes",
    "lonLat": [
-    32.57,
-    -25.92
+    12.15,
+    -15.19
+   ],
+   "years": [
+    1840,
+    1974
+   ],
+   "realm": "Portuguese Angola",
+   "why": "Founded by Portugal in 1840"
+  },
+  {
+   "place": "Moçâmedes",
+   "lonLat": [
+    12.15,
+    -15.19
+   ],
+   "years": [
+    1822,
+    1839
+   ],
+   "realm": null,
+   "why": "Not Portuguese before the town was founded in 1840"
+  },
+  {
+   "place": "Cabinda",
+   "lonLat": [
+    12.2,
+    -5.56
+   ],
+   "years": [
+    1885,
+    1974
+   ],
+   "realm": "Portuguese Angola",
+   "why": "Portuguese protectorate by the Treaty of Simulambuco, 1 February 1885"
+  },
+  {
+   "place": "Cabinda",
+   "lonLat": [
+    12.2,
+    -5.56
+   ],
+   "years": [
+    1822,
+    1884
+   ],
+   "realm": null,
+   "why": "Claimed by Portugal but not held before 1885"
+  },
+  {
+   "place": "M'banza Kongo",
+   "lonLat": [
+    14.24,
+    -6.27
+   ],
+   "years": [
+    1885,
+    1974
+   ],
+   "realm": "Portuguese Angola",
+   "why": "South of the 1885 line with the Congo"
+  },
+  {
+   "place": "Huambo",
+   "lonLat": [
+    15.74,
+    -12.77
+   ],
+   "years": [
+    1886,
+    1974
+   ],
+   "realm": "Portuguese Angola",
+   "why": "Inside the border fixed with Germany in 1886"
+  },
+  {
+   "place": "Huambo",
+   "lonLat": [
+    15.74,
+    -12.77
+   ],
+   "years": [
+    1822,
+    1885
+   ],
+   "realm": null,
+   "why": "The Ovimbundu kingdoms of the highlands, not held by Portugal before 1886"
+  },
+  {
+   "place": "Luena",
+   "lonLat": [
+    19.91,
+    -11.78
+   ],
+   "years": [
+    1891,
+    1974
+   ],
+   "realm": "Portuguese Angola",
+   "why": "Portuguese by the 1891 Anglo-Portuguese Treaty"
+  },
+  {
+   "place": "Luena",
+   "lonLat": [
+    19.91,
+    -11.78
+   ],
+   "years": [
+    1822,
+    1890
+   ],
+   "realm": null,
+   "why": "Not held by Portugal before 1891"
+  },
+  {
+   "place": "Mossuril",
+   "lonLat": [
+    40.5,
+    -15.0
+   ],
+   "years": [
+    1822,
+    1974
+   ],
+   "realm": "Portuguese Mozambique",
+   "why": "On the mainland facing Mozambique Island, capital of Portuguese Mozambique until 1898"
+  },
+  {
+   "place": "Tete",
+   "lonLat": [
+    33.59,
+    -16.16
+   ],
+   "years": [
+    1822,
+    1974
+   ],
+   "realm": "Portuguese Mozambique",
+   "why": "Portuguese post on the Zambezi since the 16th century"
+  },
+  {
+   "place": "Inhambane",
+   "lonLat": [
+    35.38,
+    -23.86
+   ],
+   "years": [
+    1822,
+    1974
+   ],
+   "realm": "Portuguese Mozambique",
+   "why": "Portuguese post on the coast"
+  },
+  {
+   "place": "Lichinga",
+   "lonLat": [
+    35.24,
+    -13.31
    ],
    "years": [
     1891,
     1974
    ],
    "realm": "Portuguese Mozambique",
-   "why": "Lourenço Marques, capital of Portuguese Mozambique until independence on 25 June 1975"
+   "why": "Portuguese by the 1891 Anglo-Portuguese Treaty"
   },
   {
-   "place": "Praia",
+   "place": "Lichinga",
    "lonLat": [
-    -23.51,
-    14.93
+    35.24,
+    -13.31
    ],
    "years": [
-    1891,
-    1974
+    1822,
+    1890
    ],
-   "realm": "Portuguese Cape Verde",
-   "why": "Portuguese until independence on 5 July 1975"
+   "realm": null,
+   "why": "Not held by Portugal before 1891"
   },
   {
-   "place": "São Tomé",
+   "place": "Chimoio",
    "lonLat": [
-    6.73,
-    0.34
+    33.48,
+    -19.12
    ],
    "years": [
-    1891,
-    1974
+    1822,
+    1890
    ],
-   "realm": "Portuguese São Tomé and Príncipe",
-   "why": "Portuguese until independence on 12 July 1975"
+   "realm": null,
+   "why": "Inland, in the Gaza and Manica country, not held by Portugal before 1891"
+  },
+  {
+   "place": "Bolama",
+   "lonLat": [
+    -15.5,
+    11.6
+   ],
+   "years": [
+    1870,
+    1973
+   ],
+   "realm": "Portuguese Guinea",
+   "why": "Given to Portugal by President Grant's arbitration in 1870"
+  },
+  {
+   "place": "Bafatá",
+   "lonLat": [
+    -14.66,
+    12.17
+   ],
+   "years": [
+    1886,
+    1973
+   ],
+   "realm": "Portuguese Guinea",
+   "why": "Inside the border fixed with France in 1886"
+  },
+  {
+   "place": "Bafatá",
+   "lonLat": [
+    -14.66,
+    12.17
+   ],
+   "years": [
+    1822,
+    1885
+   ],
+   "realm": null,
+   "why": "Inland, not held by Portugal before 1886"
+  },
+  {
+   "place": "Maubara",
+   "lonLat": [
+    125.2,
+    -8.65
+   ],
+   "years": [
+    1860,
+    1998
+   ],
+   "realm": "Portuguese Timor",
+   "why": "Given to Portugal by the Treaty of Lisbon (1859), ratified in 1860",
+   "heldBy": [
+    {
+     "years": [
+      1942,
+      1944
+     ],
+     "by": "Japan"
+    },
+    {
+     "years": [
+      1975,
+      1998
+     ],
+     "by": "Indonesia"
+    }
+   ]
   }
  ]
 }
