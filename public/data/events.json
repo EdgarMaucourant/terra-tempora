@@ -1120,6 +1120,150 @@
    "search": "German surrender 1945 V-E Day"
   },
   {
+   "id": "brazil-independence-1822",
+   "kind": "empire",
+   "year": 1822,
+   "title": "Brazil declares its independence, 7 September 1822",
+   "place": "Ipiranga brook, São Paulo",
+   "lonLat": [
+    -46.609,
+    -23.585
+   ],
+   "civs": [
+    "portugal"
+   ],
+   "summary": "Prince Pedro, left behind in Brazil as regent, refuses to return to Lisbon and declares Brazil independent on the banks of the Ipiranga. Crowned Emperor Pedro I in December, he wins a short war against Portuguese garrisons; Portugal recognises the Empire of Brazil in 1825.",
+   "wikipedia": "Independence_of_Brazil",
+   "search": "Independence of Brazil Ipiranga"
+  },
+  {
+   "id": "liberal-wars-end-1834",
+   "kind": "war",
+   "year": 1834,
+   "title": "The Liberal Wars end at Évoramonte, 26 May 1834",
+   "place": "Évoramonte",
+   "lonLat": [
+    -7.714,
+    38.774
+   ],
+   "civs": [
+    "portugal"
+   ],
+   "summary": "In 1828 Dom Miguel seized the throne from his niece Maria II and ruled as an absolute king. Her father Pedro, the former Emperor of Brazil, landed near Porto with a liberal army in 1832; after two years of civil war Miguel surrenders at Évoramonte and leaves for exile, and Maria II reigns as a constitutional queen.",
+   "wikipedia": "Liberal_Wars",
+   "search": "Liberal Wars Concession of Evoramonte"
+  },
+  {
+   "id": "mocamedes-founded-1840",
+   "kind": "city",
+   "year": 1840,
+   "title": "Portugal founds Moçâmedes, 1840",
+   "place": "Moçâmedes",
+   "lonLat": [
+    12.152,
+    -15.196
+   ],
+   "civs": [
+    "portugal",
+    "portuguese-angola"
+   ],
+   "summary": "A Portuguese expedition from Luanda builds a fort and trading posts on the bay of Moçâmedes, far south of Benguela, after a pact with the local Herero chiefs. Settlers from Madeira and Brazil follow, and the town becomes the base of Portugal's push into the south of Angola.",
+   "wikipedia": "Moçâmedes",
+   "search": "Moçâmedes Namibe founded"
+  },
+  {
+   "id": "bolama-award-1870",
+   "kind": "treaty",
+   "year": 1870,
+   "title": "President Grant awards Bolama to Portugal, 21 April 1870",
+   "place": "Bolama",
+   "lonLat": [
+    -15.479,
+    11.578
+   ],
+   "civs": [
+    "portugal",
+    "portuguese-guinea"
+   ],
+   "summary": "Britain and Portugal had both claimed the island of Bolama, off the coast of Guinea, since the 1790s. Asked to arbitrate, United States President Ulysses S. Grant rules for Portugal; Bolama becomes the capital of Portuguese Guinea when it is separated from Cape Verde in 1879.",
+   "wikipedia": "Portuguese_Guinea",
+   "search": "Bolama arbitration Grant"
+  },
+  {
+   "id": "delagoa-bay-award-1875",
+   "kind": "treaty",
+   "year": 1875,
+   "title": "MacMahon's award gives Delagoa Bay to Portugal, 1875",
+   "place": "Lourenço Marques (Maputo)",
+   "lonLat": [
+    32.573,
+    -25.966
+   ],
+   "civs": [
+    "portugal",
+    "portuguese-mozambique"
+   ],
+   "summary": "Britain claimed the southern shore of Delagoa Bay and its islands, the best harbour between Natal and Mozambique. The French president, Marshal MacMahon, arbitrates and gives the whole bay to Portugal; Lourenço Marques grows into the port of the Transvaal and later the capital of Mozambique.",
+   "wikipedia": "Maputo_Bay",
+   "search": "Delagoa Bay arbitration MacMahon"
+  },
+  {
+   "id": "simulambuco-1885",
+   "kind": "treaty",
+   "year": 1885,
+   "title": "Treaty of Simulambuco, 1 February 1885",
+   "place": "Simulambuco, Cabinda",
+   "lonLat": [
+    12.19,
+    -5.55
+   ],
+   "civs": [
+    "portugal",
+    "portuguese-angola"
+   ],
+   "summary": "While the Berlin Conference divides Africa, the princes and chiefs of Cabinda sign a treaty placing their land under Portuguese protection. It gives Portugal the coast north of the Congo, which a strip handed to the Congo Free State soon cuts off from the rest of Angola.",
+   "wikipedia": "Treaty_of_Simulambuco",
+   "search": "Treaty of Simulambuco Cabinda"
+  },
+  {
+   "id": "british-ultimatum-1890",
+   "kind": "empire",
+   "year": 1890,
+   "title": "The British Ultimatum, 11 January 1890",
+   "place": "Lisbon",
+   "lonLat": [
+    -9.139,
+    38.722
+   ],
+   "civs": [
+    "portugal",
+    "portuguese-angola",
+    "portuguese-mozambique"
+   ],
+   "summary": "Portugal's Pink Map claimed all the land between Angola and Mozambique, across Britain's route from the Cape to Cairo. Britain orders Portuguese troops out of the Shire highlands and Mashonaland under threat of war, and Lisbon gives in. The humiliation feeds the republican movement that overthrows the monarchy twenty years later.",
+   "wikipedia": "1890_British_Ultimatum",
+   "search": "British Ultimatum 1890 Pink Map"
+  },
+  {
+   "id": "anglo-portuguese-treaty-1891",
+   "kind": "treaty",
+   "year": 1891,
+   "title": "The Anglo-Portuguese Treaty, 11 June 1891",
+   "place": "London",
+   "lonLat": [
+    -0.128,
+    51.503
+   ],
+   "civs": [
+    "portugal",
+    "portuguese-angola",
+    "portuguese-mozambique"
+   ],
+   "summary": "Signed in London after the Ultimatum, the treaty fixes the borders of Angola and Mozambique with British Central Africa and Rhodesia. Portugal keeps the interior of Mozambique, including Manica, but gives up the land between its two colonies.",
+   "wikipedia": "Anglo-Portuguese_Treaty_of_1891",
+   "search": "Anglo-Portuguese Treaty 1891"
+  },
+  {
    "id": "lisbon-regicide-1908",
    "kind": "death",
    "year": 1908,
