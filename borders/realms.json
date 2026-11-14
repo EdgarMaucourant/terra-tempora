@@ -1893,6 +1893,13 @@
   "fr": "Royaume-Uni",
   "es": "Reino Unido"
  },
+ "United Nations": {
+  "wikipedia": "United Nations",
+  "wikidata": "Q1065",
+  "fr": "Organisation des Nations unies",
+  "es": "Organización de las Naciones Unidas",
+  "notACountry": true
+ },
  "United States": {
   "wikipedia": "United States",
   "wikidata": "Q30",

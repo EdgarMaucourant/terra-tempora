@@ -2058,6 +2058,202 @@
    "summary": "As the Nouméa Accord provided, New Caledonians vote three times on independence. No wins with 57 per cent in 2018 and 53 per cent in 2020. The third vote, in December 2021, held during the COVID-19 epidemic, is boycotted by the independence parties and gives 96 per cent no. The territory's future status is still under negotiation.",
    "wikipedia": "2018_New_Caledonian_independence_referendum",
    "search": "New Caledonia independence referendum"
+  },
+  {
+   "id": "treaty-of-rome-1957",
+   "kind": "treaty",
+   "year": 1957,
+   "title": "The Treaty of Rome, 25 March 1957",
+   "place": "Capitoline Hill, Rome",
+   "lonLat": [
+    12.482,
+    41.893
+   ],
+   "civs": [
+    "france",
+    "germany",
+    "italy"
+   ],
+   "summary": "France, West Germany, Italy, Belgium, the Netherlands and Luxembourg sign the treaties that found the European Economic Community and Euratom. They come into force on 1 January 1958 and open a common market that grows into today's European Union.",
+   "wikipedia": "Treaty_of_Rome",
+   "search": "Treaty of Rome EEC"
+  },
+  {
+   "id": "battle-of-algiers-1957",
+   "kind": "battle",
+   "year": 1957,
+   "title": "The Battle of Algiers, 1957",
+   "place": "The Casbah, Algiers",
+   "lonLat": [
+    3.06,
+    36.785
+   ],
+   "civs": [
+    "france",
+    "french-algeria"
+   ],
+   "summary": "Given police powers in Algiers in January 1957, General Massu's paratroopers break the National Liberation Front's bombing network in the Casbah by October. They win through mass arrests and the systematic use of torture, which, once revealed, turns much of French opinion against the war.",
+   "wikipedia": "Battle_of_Algiers_(1956–1957)",
+   "search": "Battle of Algiers 1957"
+  },
+  {
+   "id": "may-1958-crisis",
+   "kind": "revolution",
+   "year": 1958,
+   "title": "The 13 May 1958 crisis and de Gaulle's return",
+   "place": "Government General building, Algiers",
+   "lonLat": [
+    3.06,
+    36.776
+   ],
+   "civs": [
+    "france",
+    "french-algeria"
+   ],
+   "summary": "Settlers and army officers seize the Government General in Algiers and set up a Committee of Public Safety under General Massu, calling for Charles de Gaulle. Paratroopers take Corsica and a landing on Paris is planned. To avoid civil war, the National Assembly makes de Gaulle head of government on 1 June, with powers to write a new constitution.",
+   "wikipedia": "May_1958_crisis_in_France",
+   "search": "May 1958 crisis"
+  },
+  {
+   "id": "fifth-republic-1958",
+   "kind": "crown",
+   "year": 1958,
+   "title": "The Fifth Republic's constitution, 4 October 1958",
+   "place": "Paris",
+   "lonLat": [
+    2.317,
+    48.87
+   ],
+   "civs": [
+    "france"
+   ],
+   "summary": "Approved by four out of five voters in the referendum of 28 September, the new constitution gives a strong president the upper hand over Parliament and creates the French Community for the colonies. It is promulgated on 4 October, and de Gaulle is elected the first president of the Fifth Republic in December.",
+   "wikipedia": "Constitution_of_France",
+   "search": "Fifth Republic constitution 1958"
+  },
+  {
+   "id": "guinea-independence-1958",
+   "kind": "empire",
+   "year": 1958,
+   "title": "Guinea says no and becomes independent, 2 October 1958",
+   "place": "Conakry",
+   "lonLat": [
+    -13.7,
+    9.53
+   ],
+   "civs": [
+    "france",
+    "french-guinea",
+    "guinea"
+   ],
+   "summary": "\"We prefer poverty in freedom to riches in slavery,\" Sékou Touré tells de Gaulle in Conakry in August. In the referendum of 28 September, 95 per cent of Guineans reject the French Community, the only colony to do so, and Guinea declares its independence four days later. France withdraws its officials and aid at once.",
+   "wikipedia": "1958_Guinean_constitutional_referendum",
+   "search": "Guinea independence 1958"
+  },
+  {
+   "id": "barricades-week-1960",
+   "kind": "revolution",
+   "year": 1960,
+   "title": "Barricades Week in Algiers, 24 January – 1 February 1960",
+   "place": "Algiers",
+   "lonLat": [
+    3.058,
+    36.773
+   ],
+   "civs": [
+    "france",
+    "french-algeria"
+   ],
+   "summary": "Angered by de Gaulle's offer of self-determination to Algeria and the recall of General Massu, settler activists raise barricades in the centre of Algiers. On the first day, shooting kills 14 gendarmes and 8 demonstrators. After de Gaulle appeals on television to the army's loyalty, the insurgents surrender a week later.",
+   "wikipedia": "Algerian_War",
+   "search": "Barricades Week Algiers 1960"
+  },
+  {
+   "id": "gerboise-bleue-1960",
+   "kind": "war",
+   "year": 1960,
+   "title": "Gerboise bleue, France's first atomic bomb, 13 February 1960",
+   "place": "Reggane, Algerian Sahara",
+   "lonLat": [
+    0.06,
+    26.31
+   ],
+   "civs": [
+    "france",
+    "french-algeria"
+   ],
+   "summary": "France sets off a 70-kiloton atomic bomb on a tower in the desert near Reggane and becomes the world's fourth nuclear power. Sixteen more tests follow in the Algerian Sahara until 1966, at Reggane and then underground at In Ekker, under a clause of the Évian Accords, before testing moves to French Polynesia.",
+   "wikipedia": "Gerboise_Bleue_(nuclear_test)",
+   "search": "Gerboise Bleue nuclear test"
+  },
+  {
+   "id": "year-of-africa-1960",
+   "kind": "empire",
+   "year": 1960,
+   "title": "The Year of Africa, 1960",
+   "place": "French West and Equatorial Africa, Cameroon, Togo and Madagascar",
+   "lonLat": [
+    11.5,
+    8.0
+   ],
+   "approx": true,
+   "civs": [
+    "france",
+    "cameroon",
+    "togo",
+    "madagascar",
+    "benin",
+    "niger",
+    "burkina-faso",
+    "ivory-coast",
+    "chad",
+    "central-african-republic",
+    "republic-of-the-congo",
+    "gabon",
+    "senegal",
+    "mali",
+    "mauritania"
+   ],
+   "summary": "Fourteen of France's African colonies and trust territories become independent in a single year, from Cameroon in January to Mauritania in November, most of them peacefully and by agreement. Most sign cooperation and defence agreements with France and keep the CFA franc, ties that last for decades.",
+   "wikipedia": "Year_of_Africa",
+   "search": "Year of Africa 1960"
+  },
+  {
+   "id": "mali-federation-split-1960",
+   "kind": "empire",
+   "year": 1960,
+   "title": "The Mali Federation splits, 20 August 1960",
+   "place": "Dakar",
+   "lonLat": [
+    -17.44,
+    14.69
+   ],
+   "civs": [
+    "france",
+    "senegal",
+    "mali"
+   ],
+   "summary": "Two months after independence, Senegal and the Sudanese Republic fall out over who should lead their federation. In the night of 19–20 August, Senegal withdraws and sends Modibo Keïta and his ministers back to Bamako by sealed train. Léopold Sédar Senghor becomes president of Senegal, and the Sudanese Republic takes the name Mali on 22 September.",
+   "wikipedia": "Mali_Federation",
+   "search": "Mali Federation breakup"
+  },
+  {
+   "id": "paris-massacre-1961",
+   "kind": "war",
+   "year": 1961,
+   "title": "The Paris massacre, 17 October 1961",
+   "place": "Pont Saint-Michel, Paris",
+   "lonLat": [
+    2.3445,
+    48.853
+   ],
+   "civs": [
+    "france",
+    "french-algeria"
+   ],
+   "summary": "Tens of thousands of Algerians march peacefully in Paris against a curfew imposed on them alone. The police of prefect Maurice Papon charge them; some 11,000 are arrested and dozens, perhaps more than a hundred, are killed, some thrown into the Seine. Long denied, the massacre was acknowledged by the French state in 2012.",
+   "wikipedia": "1961_Paris_massacre",
+   "search": "Paris massacre 17 October 1961"
   }
  ]
 }

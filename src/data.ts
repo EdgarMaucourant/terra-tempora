@@ -36,6 +36,8 @@ export interface Polity {
   by?: string;
   since?: string;
   note?: string;
+  /** For "hatch": a UN trust territory, run by its owner for the United Nations (`by`). */
+  trust?: boolean;
   /** Where this border comes from, and the change that made it. */
   source?: BorderSource;
   /** [longitude, latitude] of the label. */

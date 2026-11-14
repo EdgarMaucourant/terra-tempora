@@ -1694,7 +1694,16 @@
     1959
    ],
    "realm": "French Togoland",
-   "why": "UN trust territory under French administration until 1960"
+   "why": "UN trust territory under French administration until 1960",
+   "heldBy": [
+    {
+     "years": [
+      1957,
+      1959
+     ],
+     "by": "United Nations"
+    }
+   ]
   },
   {
    "place": "Kpalimé",
@@ -1720,7 +1729,16 @@
     1959
    ],
    "realm": "French Cameroon",
-   "why": "UN trust territory under French administration until 1960"
+   "why": "UN trust territory under French administration until 1960",
+   "heldBy": [
+    {
+     "years": [
+      1957,
+      1959
+     ],
+     "by": "United Nations"
+    }
+   ]
   },
   {
    "place": "Yaoundé",
