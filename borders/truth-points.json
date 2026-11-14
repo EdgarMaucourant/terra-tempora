@@ -1006,6 +1006,383 @@
      "by": "Indonesia"
     }
    ]
+  },
+  {
+   "place": "Paris",
+   "lonLat": [
+    2.35,
+    48.86
+   ],
+   "years": [
+    1961,
+    2026
+   ],
+   "realm": "France",
+   "why": "Capital of France"
+  },
+  {
+   "place": "Ajaccio",
+   "lonLat": [
+    8.74,
+    41.93
+   ],
+   "years": [
+    1961,
+    2026
+   ],
+   "realm": "France",
+   "why": "Corsica, part of France"
+  },
+  {
+   "place": "Strasbourg",
+   "lonLat": [
+    7.75,
+    48.58
+   ],
+   "years": [
+    1961,
+    2026
+   ],
+   "realm": "France",
+   "why": "Alsace, part of France"
+  },
+  {
+   "place": "Fort-de-France",
+   "lonLat": [
+    -61.07,
+    14.61
+   ],
+   "years": [
+    1961,
+    2026
+   ],
+   "realm": "France",
+   "why": "Martinique, an overseas department of France since 1946"
+  },
+  {
+   "place": "Basse-Terre (Guadeloupe)",
+   "lonLat": [
+    -61.66,
+    16.15
+   ],
+   "years": [
+    1961,
+    2026
+   ],
+   "realm": "France",
+   "why": "Guadeloupe, an overseas department of France since 1946"
+  },
+  {
+   "place": "Cayenne",
+   "lonLat": [
+    -52.33,
+    4.94
+   ],
+   "years": [
+    1961,
+    2026
+   ],
+   "realm": "France",
+   "why": "French Guiana, an overseas department of France since 1946"
+  },
+  {
+   "place": "Saint-Denis (Réunion)",
+   "lonLat": [
+    55.45,
+    -20.88
+   ],
+   "years": [
+    1961,
+    2026
+   ],
+   "realm": "France",
+   "why": "Réunion, an overseas department of France since 1946"
+  },
+  {
+   "place": "Marigot",
+   "lonLat": [
+    -63.08,
+    18.07
+   ],
+   "years": [
+    1961,
+    2006
+   ],
+   "realm": "France",
+   "why": "Saint Martin, part of Guadeloupe until 2007"
+  },
+  {
+   "place": "Marigot",
+   "lonLat": [
+    -63.08,
+    18.07
+   ],
+   "years": [
+    2007,
+    2026
+   ],
+   "realm": "Saint Martin",
+   "why": "An overseas collectivity of France since 15 July 2007"
+  },
+  {
+   "place": "Saint Barthélemy",
+   "lonLat": [
+    -62.83,
+    17.9
+   ],
+   "years": [
+    1961,
+    2006
+   ],
+   "realm": "France",
+   "why": "Saint Barthélemy, part of Guadeloupe until 2007"
+  },
+  {
+   "place": "Saint Barthélemy",
+   "lonLat": [
+    -62.83,
+    17.9
+   ],
+   "years": [
+    2007,
+    2026
+   ],
+   "realm": "Saint Barthélemy",
+   "why": "An overseas collectivity of France since 15 July 2007"
+  },
+  {
+   "place": "Mayotte (Combani)",
+   "lonLat": [
+    45.14,
+    -12.8
+   ],
+   "years": [
+    1961,
+    1974
+   ],
+   "realm": "Territory of the Comoros",
+   "why": "Mayotte, part of the Territory of the Comoros until 1975"
+  },
+  {
+   "place": "Mayotte (Combani)",
+   "lonLat": [
+    45.14,
+    -12.8
+   ],
+   "years": [
+    1975,
+    2010
+   ],
+   "realm": "Mayotte",
+   "why": "Mayotte stayed French in 1975, a territorial collectivity until 2011"
+  },
+  {
+   "place": "Mayotte (Combani)",
+   "lonLat": [
+    45.14,
+    -12.8
+   ],
+   "years": [
+    2011,
+    2026
+   ],
+   "realm": "France",
+   "why": "An overseas department of France since 31 March 2011"
+  },
+  {
+   "place": "Moroni",
+   "lonLat": [
+    43.26,
+    -11.7
+   ],
+   "years": [
+    1961,
+    1974
+   ],
+   "realm": "Territory of the Comoros",
+   "why": "French overseas territory until 1975"
+  },
+  {
+   "place": "Moroni",
+   "lonLat": [
+    43.26,
+    -11.7
+   ],
+   "years": [
+    1975,
+    2026
+   ],
+   "realm": "Comoros",
+   "why": "Independent since 6 July 1975"
+  },
+  {
+   "place": "Djibouti",
+   "lonLat": [
+    43.15,
+    11.59
+   ],
+   "years": [
+    1961,
+    1976
+   ],
+   "realm": "French Somaliland",
+   "why": "French overseas territory (the French Territory of the Afars and the Issas from 1967) until 1977"
+  },
+  {
+   "place": "Djibouti",
+   "lonLat": [
+    43.15,
+    11.59
+   ],
+   "years": [
+    1977,
+    2026
+   ],
+   "realm": "Djibouti",
+   "why": "Independent since 27 June 1977"
+  },
+  {
+   "place": "Port Vila",
+   "lonLat": [
+    168.32,
+    -17.73
+   ],
+   "years": [
+    1961,
+    1979
+   ],
+   "realm": "New Hebrides",
+   "why": "Anglo-French condominium until 1980"
+  },
+  {
+   "place": "Port Vila",
+   "lonLat": [
+    168.32,
+    -17.73
+   ],
+   "years": [
+    1980,
+    2026
+   ],
+   "realm": "Vanuatu",
+   "why": "Independent since 30 July 1980"
+  },
+  {
+   "place": "Algiers",
+   "lonLat": [
+    3.06,
+    36.75
+   ],
+   "years": [
+    1961,
+    1961
+   ],
+   "realm": "French Algeria",
+   "why": "French until 1962"
+  },
+  {
+   "place": "Algiers",
+   "lonLat": [
+    3.06,
+    36.75
+   ],
+   "years": [
+    1962,
+    2026
+   ],
+   "realm": "Algeria",
+   "why": "Independent since 5 July 1962"
+  },
+  {
+   "place": "Tamanrasset",
+   "lonLat": [
+    5.52,
+    22.79
+   ],
+   "years": [
+    1961,
+    1961
+   ],
+   "realm": "French Algeria",
+   "why": "The Algerian Sahara, French until 1962"
+  },
+  {
+   "place": "Tamanrasset",
+   "lonLat": [
+    5.52,
+    22.79
+   ],
+   "years": [
+    1962,
+    2026
+   ],
+   "realm": "Algeria",
+   "why": "Independent since 5 July 1962"
+  },
+  {
+   "place": "Nouméa",
+   "lonLat": [
+    166.45,
+    -22.27
+   ],
+   "years": [
+    1961,
+    2026
+   ],
+   "realm": "New Caledonia",
+   "why": "French overseas territory, a sui generis collectivity since 1999"
+  },
+  {
+   "place": "Papeete",
+   "lonLat": [
+    -149.57,
+    -17.53
+   ],
+   "years": [
+    1961,
+    2026
+   ],
+   "realm": "French Polynesia",
+   "why": "French overseas territory, named French Polynesia since 1957"
+  },
+  {
+   "place": "Saint-Pierre",
+   "lonLat": [
+    -56.18,
+    46.78
+   ],
+   "years": [
+    1961,
+    2026
+   ],
+   "realm": "Saint Pierre and Miquelon",
+   "why": "French since 1816"
+  },
+  {
+   "place": "Mata-Utu",
+   "lonLat": [
+    -176.17,
+    -13.28
+   ],
+   "years": [
+    1961,
+    2026
+   ],
+   "realm": "Wallis and Futuna",
+   "why": "French overseas territory since 1961"
+  },
+  {
+   "place": "Port-aux-Français",
+   "lonLat": [
+    70.22,
+    -49.35
+   ],
+   "years": [
+    1961,
+    2026
+   ],
+   "realm": "French Southern and Antarctic Lands",
+   "why": "Kerguelen Islands, French"
   }
  ]
 }
