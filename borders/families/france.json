@@ -1,0 +1,177 @@
+{
+ "family": "France",
+ "note": "France with its overseas departments, territories and colonies, walked back from 2026.",
+ "reviewed": [
+  {
+   "pieces": [
+    "FRA",
+    "ATF",
+    "BLM",
+    "CLP",
+    "MAF",
+    "NCL",
+    "PYF",
+    "SPM",
+    "WLF"
+   ],
+   "from": 1961,
+   "why": "Metropolitan France with Corsica, the overseas departments (Guadeloupe, Martinique, French Guiana, Réunion, Mayotte) and the overseas territories (Saint Pierre and Miquelon, Saint Barthélemy, Saint Martin, New Caledonia, French Polynesia, Wallis and Futuna, the French Southern and Antarctic Lands, Clipperton), whose borders have not moved since 1961"
+  },
+  {
+   "pieces": [
+    "DZA",
+    "DJI",
+    "COM",
+    "VUT"
+   ],
+   "from": 1961,
+   "why": "Algeria, Djibouti, the Comoros and Vanuatu, French (Vanuatu Anglo-French) until their independence, with today's borders"
+  }
+ ],
+ "changes": [
+  {
+   "date": "2011-03-31",
+   "what": "Mayotte becomes an overseas department of France",
+   "source": {
+    "title": "Mayotte (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Mayotte"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Département 976 in France (zoom).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "FRA-4602"
+     ],
+     "owner": "France",
+     "territory": "Mayotte",
+     "source": {
+      "title": "Mayotte (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mayotte"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Mayotte in its political environment.png"
+    }
+   ]
+  },
+  {
+   "date": "2007-07-15",
+   "what": "Saint Barthélemy and Saint Martin leave Guadeloupe and become overseas collectivities of France",
+   "source": {
+    "title": "Collectivity of Saint Martin (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Collectivity_of_Saint_Martin"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Saint Martin in France.svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MAF",
+      "BLM"
+     ],
+     "owner": "France",
+     "source": {
+      "title": "Guadeloupe (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Guadeloupe"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Guadeloupe in France.svg"
+    }
+   ]
+  },
+  {
+   "date": "1980-07-30",
+   "what": "The New Hebrides, an Anglo-French condominium, become independent as Vanuatu",
+   "source": {
+    "title": "Vanuatu (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Vanuatu"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Vanuatu on the globe (Polynesia centered).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "VUT"
+     ],
+     "owner": "New Hebrides",
+     "source": {
+      "title": "New Hebrides (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/New_Hebrides"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Neue Hebriden 140543a.jpg"
+    }
+   ]
+  },
+  {
+   "date": "1977-06-27",
+   "what": "The French Territory of the Afars and the Issas becomes independent as Djibouti",
+   "source": {
+    "title": "Djibouti (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Djibouti"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Djibouti (orthographic projection).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "DJI"
+     ],
+     "owner": "France",
+     "territory": "French Somaliland",
+     "source": {
+      "title": "French Territory of the Afars and the Issas (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Territory_of_the_Afars_and_the_Issas"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Djibouti-Ethiopia border (and Eritrea).png"
+    }
+   ]
+  },
+  {
+   "date": "1975-07-06",
+   "what": "Grande Comore, Anjouan and Mohéli declare independence as the Comoros; Mayotte stays French",
+   "source": {
+    "title": "Comoros (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Comoros"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Mahoré in Comoros (hatched).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "COM",
+      "FRA-4602"
+     ],
+     "owner": "France",
+     "territory": "Territory of the Comoros",
+     "source": {
+      "title": "Territory of the Comoros (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Territory_of_the_Comoros"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Comoros-CIA WFB Map.png"
+    }
+   ]
+  },
+  {
+   "date": "1962-07-05",
+   "what": "Algeria becomes independent after the Évian Accords and the referendum of 1 July 1962",
+   "source": {
+    "title": "Algeria (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Algeria"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Algeria (orthographic projection).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "DZA"
+     ],
+     "owner": "France",
+     "territory": "French Algeria",
+     "source": {
+      "title": "French Algeria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Algeria"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:French Algeria evolution 1830-1962 map-fr.svg"
+    }
+   ]
+  }
+ ]
+}

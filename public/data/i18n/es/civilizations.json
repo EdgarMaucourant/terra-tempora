@@ -20,6 +20,9 @@
  "india": {
   "name": "India"
  },
+ "france": {
+  "name": "Francia"
+ },
  "argentina": {
   "name": "Argentina"
  },
@@ -31,6 +34,9 @@
  },
  "algeria": {
   "name": "Argelia"
+ },
+ "french-algeria": {
+  "name": "Argelia francesa"
  },
  "portugal": {
   "name": "Portugal"
@@ -127,9 +133,6 @@
  },
  "chile": {
   "name": "Chile"
- },
- "france": {
-  "name": "Francia"
  },
  "myanmar": {
   "name": "Birmania"
@@ -458,6 +461,9 @@
  "djibouti": {
   "name": "Yibuti"
  },
+ "french-somaliland": {
+  "name": "Somalia francesa"
+ },
  "israel": {
   "name": "Israel"
  },
@@ -496,6 +502,9 @@
  },
  "vanuatu": {
   "name": "Vanuatu"
+ },
+ "new-hebrides": {
+  "name": "Nuevas Hébridas"
  },
  "falkland-islands": {
   "name": "Islas Malvinas"
@@ -556,6 +565,9 @@
  },
  "luxembourg": {
   "name": "Luxemburgo"
+ },
+ "territory-of-the-comoros": {
+  "name": "Territorio de las Comoras"
  },
  "mauritius": {
   "name": "Mauricio"
@@ -632,6 +644,9 @@
  "seychelles": {
   "name": "Seychelles"
  },
+ "mayotte": {
+  "name": "Mayotte"
+ },
  "heard-island-and-mcdonald-islands": {
   "name": "Islas Heard y McDonald"
  },
@@ -671,11 +686,11 @@
  "american-samoa": {
   "name": "Samoa Estadounidense"
  },
- "aruba": {
-  "name": "Aruba"
- },
  "wallis-and-futuna": {
   "name": "Wallis y Futuna"
+ },
+ "aruba": {
+  "name": "Aruba"
  },
  "marshall-islands": {
   "name": "Islas Marshall"
@@ -734,11 +749,11 @@
  "nauru": {
   "name": "Nauru"
  },
- "united-states-minor-outlying-islands": {
-  "name": "Islas ultramarinas de Estados Unidos"
- },
  "saint-barthelemy": {
   "name": "San Bartolomé"
+ },
+ "united-states-minor-outlying-islands": {
+  "name": "Islas ultramarinas de Estados Unidos"
  },
  "sint-maarten": {
   "name": "San Martín (Países Bajos)"
