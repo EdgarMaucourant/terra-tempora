@@ -2223,15 +2223,15 @@
    "kind": "empire",
    "year": 1960,
    "title": "The Mali Federation splits, 20 August 1960",
-   "place": "Dakar",
+   "place": "Bamako",
    "lonLat": [
-    -17.44,
-    14.69
+    -8.0,
+    12.64
    ],
    "civs": [
-    "france",
+    "mali",
     "senegal",
-    "mali"
+    "france"
    ],
    "summary": "Two months after independence, Senegal and the Sudanese Republic fall out over who should lead their federation. In the night of 19–20 August, Senegal withdraws and sends Modibo Keïta and his ministers back to Bamako by sealed train. Léopold Sédar Senghor becomes president of Senegal, and the Sudanese Republic takes the name Mali on 22 September.",
    "wikipedia": "Mali_Federation",
