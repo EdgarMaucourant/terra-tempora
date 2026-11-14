@@ -857,6 +857,26 @@
   "PMD": {
    "owner": "Portugal",
    "territory": "Madeira"
+  },
+  "GLP": {
+   "owner": "France",
+   "territory": "Guadeloupe"
+  },
+  "MTQ": {
+   "owner": "France",
+   "territory": "Martinique"
+  },
+  "GUF": {
+   "owner": "France",
+   "territory": "French Guiana"
+  },
+  "REU": {
+   "owner": "France",
+   "territory": "Réunion"
+  },
+  "MYT": {
+   "owner": "France",
+   "territory": "Mayotte"
   }
  },
  "pieces": {

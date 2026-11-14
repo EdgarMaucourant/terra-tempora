@@ -213,12 +213,18 @@ function addYear(year, groups) {
   }
 }
 
+const pieceArea = new Map([...pieces.values()].map((p) => [p.id, polygonsOf(p.geometry).reduce((s, poly) => s + sphereArea(poly[0]), 0)]));
+
 /** The change that explains a group of pieces at a year: the latest one up to it, else the next one after. */
 function changeFor(ids, year) {
   const set = new Set(ids);
+  const total = ids.reduce((s, id) => s + pieceArea.get(id), 0);
   // Only changes of owner or territory: a hatching beginning (Indonesia
-  // invading Portuguese Timor) leaves the land's own border as it was.
-  const touching = changes.filter((c) => !c.hatchOnly && c.before.some((b) => b.ids.some((id) => set.has(id))));
+  // invading Portuguese Timor) leaves the land's own border as it was. A
+  // change to a sliver of the group (Mayotte joining France in 2011) does not
+  // explain the rest of it.
+  const touched = (c) => c.before.reduce((s, b) => s + b.ids.filter((id) => set.has(id)).reduce((t, id) => t + pieceArea.get(id), 0), 0);
+  const touching = changes.filter((c) => !c.hatchOnly && touched(c) >= total * 0.01);
   return touching.find((c) => c.year <= year) ?? touching.findLast((c) => c.year > year) ?? null;
 }
 
@@ -362,10 +368,16 @@ function banded(ring) {
   return out;
 }
 
-/** An inner point of each piece cut with "keep", to find its part once merged. */
+/**
+ * An inner point of each small place of its own, to find its part once
+ * merged: a piece cut with "keep" (Diu), or a whole territory of today made of
+ * one piece (Saint Barthélemy, drawn as part of France before 2007).
+ */
+const unitSize = new Map();
+for (const p of pieces.values()) unitSize.set(p.unit, (unitSize.get(p.unit) ?? 0) + 1);
 const keptPoint = new Map(
   [...pieces.values()]
-    .filter((p) => p.keep)
+    .filter((p) => p.keep || (today.units[p.unit]?.territory && unitSize.get(p.unit) === 1))
     .map((p) => [p.id, polylabel(polygonsOf(p.geometry).sort((a, b) => sphereArea(b[0]) - sphereArea(a[0]))[0], 0.001)]),
 );
 
@@ -396,7 +408,7 @@ function outline(ids, { bands = false } = {}) {
     .map((ring) => ({ ring, area: sphereArea(ring) }));
   if (!outers.length) return null;
   const largest = outers.reduce((a, b) => (b.area > a.area ? b : a));
-  // A small place of its own (Diu, cut with "keep") stays however small.
+  // A small place of its own (Diu, Saint Barthélemy) stays however small.
   const marks = ids.map((id) => keptPoint.get(id)).filter(Boolean);
   const kept = outers.filter(
     (o) => o === largest || o.area >= Math.min(MIN_PART_AREA, largest.area) || marks.find((m) => atRing(m, o.ring)),
@@ -419,7 +431,6 @@ function outline(ids, { bands = false } = {}) {
   return { rings, label: labelPoint(largest.ring), area: kept.reduce((s, o) => s + o.area, 0) };
 }
 
-const pieceArea = new Map(pieceList.map((p) => [p.id, polygonsOf(p.geometry).reduce((s, poly) => s + sphereArea(poly[0]), 0)]));
 const shapes = [];
 const blank = [];
 let nextId = 1;

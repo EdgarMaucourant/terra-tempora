@@ -20,6 +20,9 @@
  "india": {
   "name": "Inde"
  },
+ "france": {
+  "name": "France"
+ },
  "argentina": {
   "name": "Argentine"
  },
@@ -31,6 +34,9 @@
  },
  "algeria": {
   "name": "Algérie"
+ },
+ "french-algeria": {
+  "name": "Algérie française"
  },
  "portugal": {
   "name": "Portugal"
@@ -127,9 +133,6 @@
  },
  "chile": {
   "name": "Chili"
- },
- "france": {
-  "name": "France"
  },
  "myanmar": {
   "name": "Birmanie"
@@ -350,6 +353,9 @@
  "austria": {
   "name": "Autriche"
  },
+ "french-guiana": {
+  "name": "Guyane"
+ },
  "czech-republic": {
   "name": "Tchéquie"
  },
@@ -458,6 +464,9 @@
  "djibouti": {
   "name": "Djibouti"
  },
+ "french-somaliland": {
+  "name": "Côte française des Somalis"
+ },
  "israel": {
   "name": "Israël"
  },
@@ -496,6 +505,9 @@
  },
  "vanuatu": {
   "name": "Vanuatu"
+ },
+ "new-hebrides": {
+  "name": "Nouvelles-Hébrides"
  },
  "falkland-islands": {
   "name": "îles Malouines"
@@ -557,14 +569,26 @@
  "luxembourg": {
   "name": "Luxembourg"
  },
+ "reunion": {
+  "name": "La Réunion"
+ },
+ "territory-of-the-comoros": {
+  "name": "Territoire des Comores"
+ },
  "mauritius": {
   "name": "Maurice"
+ },
+ "guadeloupe": {
+  "name": "Guadeloupe"
  },
  "comoros": {
   "name": "Comores"
  },
  "faroe-islands": {
   "name": "îles Féroé"
+ },
+ "martinique": {
+  "name": "Martinique"
  },
  "sao-tome-and-principe": {
   "name": "Sao Tomé-et-Principe"
@@ -632,6 +656,9 @@
  "seychelles": {
   "name": "Seychelles"
  },
+ "mayotte": {
+  "name": "Mayotte"
+ },
  "heard-island-and-mcdonald-islands": {
   "name": "îles Heard-et-MacDonald"
  },
@@ -671,11 +698,11 @@
  "american-samoa": {
   "name": "Samoa américaines"
  },
- "aruba": {
-  "name": "Aruba"
- },
  "wallis-and-futuna": {
   "name": "Wallis-et-Futuna"
+ },
+ "aruba": {
+  "name": "Aruba"
  },
  "marshall-islands": {
   "name": "Îles Marshall"
@@ -734,11 +761,11 @@
  "nauru": {
   "name": "Nauru"
  },
- "united-states-minor-outlying-islands": {
-  "name": "Îles mineures éloignées des États-Unis"
- },
  "saint-barthelemy": {
   "name": "Saint-Barthélemy"
+ },
+ "united-states-minor-outlying-islands": {
+  "name": "Îles mineures éloignées des États-Unis"
  },
  "sint-maarten": {
   "name": "Sint Maarten"

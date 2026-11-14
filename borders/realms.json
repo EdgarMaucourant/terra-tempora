@@ -494,12 +494,51 @@
   "fr": "Dadra et Nagar Haveli libres",
   "es": "Dadra y Nagar Haveli libres"
  },
+ "French Algeria": {
+  "wikipedia": "French Algeria",
+  "wikidata": "Q218272",
+  "fr": "Algérie française",
+  "es": "Argelia francesa",
+  "withOwner": false
+ },
+ "French Guiana": {
+  "wikipedia": "French Guiana",
+  "wikidata": "Q3769",
+  "fr": "Guyane",
+  "es": "Guayana Francesa",
+  "withOwner": false
+ },
  "French Polynesia": {
   "wikipedia": "French Polynesia",
   "wikidata": "Q30971",
   "fr": "Polynésie française",
   "es": "Polinesia Francesa",
   "withOwner": false
+ },
+ "French Somaliland": {
+  "wikipedia": "French Somaliland",
+  "wikidata": "Q333126",
+  "fr": "Côte française des Somalis",
+  "es": "Somalia francesa",
+  "withOwner": false,
+  "periods": [
+   {
+    "from": "1896-05-20",
+    "name": "French Somaliland",
+    "wikipedia": "French Somaliland",
+    "fr": "Côte française des Somalis",
+    "es": "Somalia francesa",
+    "note": "The colony, an overseas territory from 1946"
+   },
+   {
+    "from": "1967-07-05",
+    "name": "French Territory of the Afars and the Issas",
+    "wikipedia": "French Territory of the Afars and the Issas",
+    "fr": "Territoire français des Afars et des Issas",
+    "es": "Territorio Francés de los Afars y de los Issas",
+    "note": "Renamed after the 1967 referendum"
+   }
+  ]
  },
  "French Southern and Antarctic Lands": {
   "wikipedia": "French Southern and Antarctic Lands",
@@ -579,6 +618,12 @@
   "wikidata": "Q769",
   "fr": "Grenade",
   "es": "Granada"
+ },
+ "Guadeloupe": {
+  "wikipedia": "Guadeloupe",
+  "wikidata": "Q17012",
+  "fr": "Guadeloupe",
+  "es": "Guadalupe"
  },
  "Guam": {
   "wikipedia": "Guam",
@@ -880,6 +925,12 @@
   "fr": "Îles Marshall",
   "es": "Islas Marshall"
  },
+ "Martinique": {
+  "wikipedia": "Martinique",
+  "wikidata": "Q17054",
+  "fr": "Martinique",
+  "es": "Martinica"
+ },
  "Mauritania": {
   "wikipedia": "Mauritania",
   "wikidata": "Q1025",
@@ -891,6 +942,12 @@
   "wikidata": "Q1027",
   "fr": "Maurice",
   "es": "Mauricio"
+ },
+ "Mayotte": {
+  "wikipedia": "Mayotte",
+  "wikidata": "Q17063",
+  "fr": "Mayotte",
+  "es": "Mayotte"
  },
  "Mexico": {
   "wikipedia": "Mexico",
@@ -975,6 +1032,13 @@
   "wikidata": "Q33788",
   "fr": "Nouvelle-Calédonie",
   "es": "Nueva Caledonia"
+ },
+ "New Hebrides": {
+  "wikipedia": "New Hebrides",
+  "wikidata": "Q752431",
+  "fr": "Nouvelles-Hébrides",
+  "es": "Nuevas Hébridas",
+  "notACountry": true
  },
  "New Zealand": {
   "wikipedia": "New Zealand",
@@ -1229,6 +1293,12 @@
   "fr": "République du Congo",
   "es": "República del Congo"
  },
+ "Réunion": {
+  "wikipedia": "Réunion",
+  "wikidata": "Q17070",
+  "fr": "La Réunion",
+  "es": "Reunión"
+ },
  "Romania": {
   "wikipedia": "Romania",
   "wikidata": "Q218",
@@ -1463,6 +1533,12 @@
   "wikidata": "Q924",
   "fr": "Tanzanie",
   "es": "Tanzania"
+ },
+ "Territory of the Comoros": {
+  "wikipedia": "Territory of the Comoros",
+  "wikidata": "Q16679352",
+  "fr": "Territoire des Comores",
+  "es": "Territorio de las Comoras"
  },
  "Thailand": {
   "wikipedia": "Thailand",

@@ -1732,6 +1732,332 @@
    "summary": "Unable to borrow on the markets, Portugal receives a 78-billion-euro rescue from the European Union and the International Monetary Fund. Three years of austerity follow, and Portugal leaves the programme in 2014.",
    "wikipedia": "2010–2014_Portuguese_financial_crisis",
    "search": "2010–2014 Portuguese financial crisis"
+  },
+  {
+   "id": "algiers-putsch-1961",
+   "kind": "revolution",
+   "year": 1961,
+   "title": "The generals' putsch in Algiers, 21–26 April 1961",
+   "place": "Algiers",
+   "lonLat": [
+    3.059,
+    36.776
+   ],
+   "civs": [
+    "france",
+    "french-algeria"
+   ],
+   "summary": "Four retired generals, Challe, Jouhaud, Salan and Zeller, seize Algiers with paratroopers to stop de Gaulle from giving Algeria its independence. De Gaulle takes emergency powers and calls on soldiers and citizens by radio and television to refuse to follow them. Conscripts stay loyal and the putsch collapses in four days.",
+   "wikipedia": "Algiers_putsch_of_1961",
+   "search": "Algiers putsch 1961"
+  },
+  {
+   "id": "algeria-independence-1962",
+   "kind": "empire",
+   "year": 1962,
+   "title": "Algeria becomes independent, 5 July 1962",
+   "place": "Algiers",
+   "lonLat": [
+    3.059,
+    36.776
+   ],
+   "civs": [
+    "france",
+    "french-algeria",
+    "algeria"
+   ],
+   "summary": "The Évian Accords of 18 March 1962 end almost eight years of war between France and the Algerian National Liberation Front. On 1 July Algerians vote for independence by an overwhelming majority, and Algeria becomes independent on 5 July, 132 years after the French landing of 1830. Nearly a million European settlers, the pieds-noirs, and tens of thousands of harkis leave for France.",
+   "wikipedia": "Évian_Accords",
+   "search": "Évian Accords Algerian independence"
+  },
+  {
+   "id": "elysee-treaty-1963",
+   "kind": "treaty",
+   "year": 1963,
+   "title": "The Élysée Treaty, 22 January 1963",
+   "place": "Élysée Palace, Paris",
+   "lonLat": [
+    2.317,
+    48.87
+   ],
+   "civs": [
+    "france",
+    "germany"
+   ],
+   "summary": "Charles de Gaulle and Konrad Adenauer sign a treaty of friendship between France and West Germany, enemies in three wars in seventy years. Their governments agree to meet regularly and to consult each other on foreign policy, and a youth office brings millions of young French and Germans together in the decades that follow.",
+   "wikipedia": "Élysée_Treaty",
+   "search": "Élysée Treaty"
+  },
+  {
+   "id": "france-leaves-nato-command-1966",
+   "kind": "treaty",
+   "year": 1966,
+   "title": "France leaves NATO's integrated command, 1966",
+   "place": "Élysée Palace, Paris",
+   "lonLat": [
+    2.317,
+    48.87
+   ],
+   "civs": [
+    "france"
+   ],
+   "summary": "In a letter to President Johnson on 7 March 1966, de Gaulle announces that France is leaving NATO's integrated military command while staying in the Alliance. Allied troops and bases leave French soil, and NATO's headquarters move from near Paris to Belgium in 1967. France returns to the integrated command in 2009.",
+   "wikipedia": "France_and_NATO",
+   "search": "France NATO 1966"
+  },
+  {
+   "id": "moruroa-first-test-1966",
+   "kind": "war",
+   "year": 1966,
+   "title": "First nuclear test at Moruroa, 2 July 1966",
+   "place": "Moruroa atoll, French Polynesia",
+   "lonLat": [
+    -138.9,
+    -21.83
+   ],
+   "civs": [
+    "france",
+    "french-polynesia"
+   ],
+   "summary": "Having left the Algerian Sahara, France sets off its first nuclear bomb in the Pacific over the atoll of Moruroa. Some 190 tests follow at Moruroa and Fangataufa, in the air until 1974 and then underground. The last series, in 1995–1996, sets off protests around the world before France stops testing for good.",
+   "wikipedia": "Moruroa",
+   "search": "Moruroa nuclear test"
+  },
+  {
+   "id": "may-68",
+   "kind": "revolution",
+   "year": 1968,
+   "title": "May 68",
+   "place": "Latin Quarter, Paris",
+   "lonLat": [
+    2.343,
+    48.849
+   ],
+   "civs": [
+    "france"
+   ],
+   "summary": "Student protests in Nanterre and at the Sorbonne turn into street battles in the Latin Quarter, then into the largest general strike in French history, with some ten million workers out. De Gaulle dissolves the National Assembly on 30 May and his supporters win the June elections, but the crisis changes French society, from universities to the workplace.",
+   "wikipedia": "May_68",
+   "search": "May 68"
+  },
+  {
+   "id": "de-gaulle-resigns-1969",
+   "kind": "crown",
+   "year": 1969,
+   "title": "De Gaulle resigns, 28 April 1969",
+   "place": "Élysée Palace, Paris",
+   "lonLat": [
+    2.317,
+    48.87
+   ],
+   "civs": [
+    "france"
+   ],
+   "summary": "De Gaulle had staked his office on a referendum to create regions and reform the Senate. When 52 per cent vote no on 27 April, he resigns the next day and retires to Colombey-les-Deux-Églises, where he dies the following year. Georges Pompidou is elected president in June.",
+   "wikipedia": "1969_French_constitutional_referendum",
+   "search": "de Gaulle resigns 1969 referendum"
+  },
+  {
+   "id": "comoros-independence-1975",
+   "kind": "empire",
+   "year": 1975,
+   "title": "The Comoros declare independence, 6 July 1975",
+   "place": "Moroni, Grande Comore",
+   "lonLat": [
+    43.256,
+    -11.703
+   ],
+   "civs": [
+    "france",
+    "territory-of-the-comoros",
+    "comoros",
+    "mayotte"
+   ],
+   "summary": "In a referendum in December 1974, Grande Comore, Anjouan and Mohéli vote for independence, but Mayotte votes to stay French. When France insists on counting the islands one by one, the Comorian parliament declares the whole archipelago independent. Mayotte stays French after another vote in 1976, and the Comoros still claim it.",
+   "wikipedia": "Comoros",
+   "search": "Comoros independence Mayotte"
+  },
+  {
+   "id": "djibouti-independence-1977",
+   "kind": "empire",
+   "year": 1977,
+   "title": "Djibouti becomes independent, 27 June 1977",
+   "place": "Djibouti",
+   "lonLat": [
+    43.145,
+    11.588
+   ],
+   "civs": [
+    "france",
+    "french-somaliland",
+    "djibouti"
+   ],
+   "summary": "After a referendum in May in which almost all voters choose independence, the French Territory of the Afars and the Issas becomes the Republic of Djibouti, with Hassan Gouled Aptidon as its first president. It is the last French colony in Africa to become independent. France keeps a large military base there.",
+   "wikipedia": "French_Territory_of_the_Afars_and_the_Issas",
+   "search": "Djibouti independence 1977"
+  },
+  {
+   "id": "vanuatu-independence-1980",
+   "kind": "empire",
+   "year": 1980,
+   "title": "The New Hebrides become Vanuatu, 30 July 1980",
+   "place": "Port Vila",
+   "lonLat": [
+    168.32,
+    -17.734
+   ],
+   "civs": [
+    "france",
+    "new-hebrides",
+    "vanuatu"
+   ],
+   "summary": "Ruled jointly by France and Britain since 1906, with two of everything from police to schools, the New Hebrides become independent as Vanuatu under Prime Minister Walter Lini. A French-speaking rebellion on Espiritu Santo, the Coconut War, is put down within weeks with the help of troops from Papua New Guinea.",
+   "wikipedia": "New_Hebrides",
+   "search": "Vanuatu independence New Hebrides"
+  },
+  {
+   "id": "death-penalty-abolished-1981",
+   "kind": "crown",
+   "year": 1981,
+   "title": "France abolishes the death penalty, 9 October 1981",
+   "place": "National Assembly, Paris",
+   "lonLat": [
+    2.318,
+    48.862
+   ],
+   "civs": [
+    "france"
+   ],
+   "summary": "Months after François Mitterrand's election, Justice Minister Robert Badinter carries the law abolishing the death penalty through Parliament, against the majority of public opinion. The guillotine, last used in 1977, is retired. Abolition was written into the Constitution in 2007.",
+   "wikipedia": "Capital_punishment_in_France",
+   "search": "death penalty abolished France 1981"
+  },
+  {
+   "id": "matignon-accords-1988",
+   "kind": "treaty",
+   "year": 1988,
+   "title": "The Ouvéa crisis and the Matignon Accords, 1988",
+   "place": "Ouvéa, New Caledonia",
+   "lonLat": [
+    166.55,
+    -20.6
+   ],
+   "civs": [
+    "france",
+    "new-caledonia"
+   ],
+   "summary": "After years of violence between Kanak independence fighters and loyalists, militants take gendarmes hostage in a cave on Ouvéa in April 1988. The army's assault on 5 May leaves nineteen Kanaks and two soldiers dead. Shocked, the two sides sign the Matignon Accords on 26 June with Prime Minister Michel Rocard, promising development and a vote on independence in ten years.",
+   "wikipedia": "Matignon_Agreements_(1988)",
+   "search": "Matignon Accords Ouvéa 1988"
+  },
+  {
+   "id": "channel-tunnel-1994",
+   "kind": "trade",
+   "year": 1994,
+   "title": "The Channel Tunnel opens, 6 May 1994",
+   "place": "Coquelles, near Calais",
+   "lonLat": [
+    1.814,
+    50.922
+   ],
+   "civs": [
+    "france",
+    "united-kingdom"
+   ],
+   "summary": "Queen Elizabeth II and President Mitterrand open the tunnel under the Channel between Coquelles and Folkestone, 50 kilometres long, 38 of them under the sea. For the first time since the Ice Age, Britain is joined to the Continent by land, and trains link London to Paris and Brussels in about three hours.",
+   "wikipedia": "Channel_Tunnel",
+   "search": "Channel Tunnel"
+  },
+  {
+   "id": "noumea-accord-1998",
+   "kind": "treaty",
+   "year": 1998,
+   "title": "The Nouméa Accord, 5 May 1998",
+   "place": "Nouméa",
+   "lonLat": [
+    166.458,
+    -22.276
+   ],
+   "civs": [
+    "france",
+    "new-caledonia"
+   ],
+   "summary": "Ten years after Matignon, the State, the independence movement and the loyalists agree on a path for New Caledonia: powers handed over step by step, a New Caledonian citizenship, recognition of Kanak identity, and up to three referendums on independence. The Constitution is amended to make room for this unique status.",
+   "wikipedia": "Nouméa_Accord",
+   "search": "Nouméa Accord"
+  },
+  {
+   "id": "euro-france-2002",
+   "kind": "trade",
+   "year": 2002,
+   "title": "The euro replaces the franc, 1 January 2002",
+   "place": "Paris",
+   "lonLat": [
+    2.339,
+    48.865
+   ],
+   "civs": [
+    "france"
+   ],
+   "summary": "Euro notes and coins come into use, and the franc, France's currency since 1795, is withdrawn on 17 February. The euro had been France's currency on paper since 1999.",
+   "wikipedia": "French_euro_coins",
+   "search": "French euro coins"
+  },
+  {
+   "id": "saint-martin-barthelemy-2007",
+   "kind": "crown",
+   "year": 2007,
+   "title": "Saint Martin and Saint Barthélemy leave Guadeloupe, 15 July 2007",
+   "place": "Marigot, Saint Martin",
+   "lonLat": [
+    -63.085,
+    18.068
+   ],
+   "civs": [
+    "france",
+    "guadeloupe",
+    "saint-martin",
+    "saint-barthelemy"
+   ],
+   "summary": "After voting for it in 2003, the two small islands, governed from Guadeloupe until then, become overseas collectivities of France, each with its own elected council. Saint Martin shares its island with Sint Maarten, a part of the Kingdom of the Netherlands.",
+   "wikipedia": "Collectivity_of_Saint_Martin",
+   "search": "Saint Martin Saint Barthélemy collectivity 2007"
+  },
+  {
+   "id": "mayotte-department-2011",
+   "kind": "crown",
+   "year": 2011,
+   "title": "Mayotte becomes the 101st department, 31 March 2011",
+   "place": "Mamoudzou, Mayotte",
+   "lonLat": [
+    45.227,
+    -12.78
+   ],
+   "civs": [
+    "france",
+    "mayotte"
+   ],
+   "summary": "After a referendum in 2009 in which 95 per cent voted yes, Mayotte becomes an overseas department of France, and in 2014 a part of the European Union. The Comoros, which have claimed the island since 1975, protest.",
+   "wikipedia": "Mayotte",
+   "search": "Mayotte department 2011"
+  },
+  {
+   "id": "new-caledonia-referendums-2018",
+   "kind": "crown",
+   "year": 2018,
+   "title": "New Caledonia votes on independence, 2018–2021",
+   "place": "Nouméa",
+   "lonLat": [
+    166.458,
+    -22.276
+   ],
+   "civs": [
+    "france",
+    "new-caledonia"
+   ],
+   "summary": "As the Nouméa Accord provided, New Caledonians vote three times on independence. No wins with 57 per cent in 2018 and 53 per cent in 2020. The third vote, in December 2021, held during the COVID-19 epidemic, is boycotted by the independence parties and gives 96 per cent no. The territory's future status is still under negotiation.",
+   "wikipedia": "2018_New_Caledonian_independence_referendum",
+   "search": "New Caledonia independence referendum"
   }
  ]
 }
