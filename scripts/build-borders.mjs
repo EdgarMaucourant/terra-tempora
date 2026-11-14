@@ -317,6 +317,7 @@ for (let year = TODAY; year >= firstReviewed; year--) {
           by: h.by,
           since: h.since,
           note: h.note,
+          ...(h.trust && { trust: true }),
           source: { title: h.source.title, url: h.source.url, ...(h.map && { map: h.map }) },
         });
       }
@@ -462,6 +463,7 @@ for (const [key, list] of runs) {
       ...(m.display && { display: m.display }),
       ...(m.kind && { kind: m.kind }),
       ...(m.by && { by: m.by, since: m.since, note: m.note }),
+      ...(m.trust && { trust: true }),
       ...(m.source && { source: m.source }),
       label: o.label,
       rings: o.rings,

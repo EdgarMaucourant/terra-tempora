@@ -736,7 +736,8 @@ function showSource(p: Polity, el = $("info-source")) {
   el.replaceChildren();
   el.hidden = !s && !p.by;
   if (p.by) {
-    el.append(t("info.heldBy", { by: placeName(p.by), date: p.since ? formatDate(p.since) : "" }), " ");
+    const date = p.since ? formatDate(p.since) : "";
+    el.append(p.trust ? t("info.trust", { date }) : t("info.heldBy", { by: placeName(p.by), date }), " ");
     if (p.note) el.append(`${p.note}. `);
   }
   if (!s) return;
@@ -786,7 +787,9 @@ function hoverRealm(p: Polity | null | undefined, x: number, y: number) {
   tooltip.replaceChildren(
     Object.assign(document.createElement("strong"), { textContent: p.partOf || p.display || p.kind ? shownName(under ?? p) : civ.name }),
     ...groups.map((group) => line(t("tooltip.partOf", { group }))),
-    ...(p.by ? [line(t("tooltip.heldBy", { by: placeName(p.by), year: p.since?.slice(0, 4) ?? "" }))] : []),
+    ...(p.by
+      ? [line(t(p.trust ? "tooltip.trust" : "tooltip.heldBy", { by: placeName(p.by), year: p.since?.slice(0, 4) ?? "" }))]
+      : []),
     ...(p.source ? [line(t("tooltip.border", { source: shortSource(p.source) })), line(t("tooltip.borderHint"))] : []),
     Object.assign(document.createElement("span"), {
       textContent: home

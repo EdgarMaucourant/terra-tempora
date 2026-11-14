@@ -543,6 +543,16 @@
      "source": {
       "title": "French Togoland (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/French_Togoland"
+     },
+     "hatch": {
+      "by": "United Nations",
+      "since": "1946-12-13",
+      "trust": true,
+      "note": "Administered by France, under a League of Nations mandate from 1922",
+      "source": {
+       "title": "United Nations Trust Territories (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/United_Nations_trust_territories"
+      }
      }
     }
    ]
@@ -595,6 +605,16 @@
      "source": {
       "title": "French Cameroon (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/French_Cameroon"
+     },
+     "hatch": {
+      "by": "United Nations",
+      "since": "1946-12-13",
+      "trust": true,
+      "note": "Administered by France, under a League of Nations mandate from 1922",
+      "source": {
+       "title": "United Nations Trust Territories (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/United_Nations_trust_territories"
+      }
      }
     }
    ]
