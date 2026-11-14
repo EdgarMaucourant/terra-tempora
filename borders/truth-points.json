@@ -1056,7 +1056,7 @@
     1961,
     2026
    ],
-   "realm": "France",
+   "realm": "Martinique",
    "why": "Martinique, an overseas department of France since 1946"
   },
   {
@@ -1069,7 +1069,7 @@
     1961,
     2026
    ],
-   "realm": "France",
+   "realm": "Guadeloupe",
    "why": "Guadeloupe, an overseas department of France since 1946"
   },
   {
@@ -1082,7 +1082,7 @@
     1961,
     2026
    ],
-   "realm": "France",
+   "realm": "French Guiana",
    "why": "French Guiana, an overseas department of France since 1946"
   },
   {
@@ -1095,7 +1095,7 @@
     1961,
     2026
    ],
-   "realm": "France",
+   "realm": "Réunion",
    "why": "Réunion, an overseas department of France since 1946"
   },
   {
@@ -1108,7 +1108,7 @@
     1961,
     2006
    ],
-   "realm": "France",
+   "realm": "Guadeloupe",
    "why": "Saint Martin, part of Guadeloupe until 2007"
   },
   {
@@ -1134,7 +1134,7 @@
     1961,
     2006
    ],
-   "realm": "France",
+   "realm": "Guadeloupe",
    "why": "Saint Barthélemy, part of Guadeloupe until 2007"
   },
   {
@@ -1171,23 +1171,10 @@
    ],
    "years": [
     1975,
-    2010
-   ],
-   "realm": "Mayotte",
-   "why": "Mayotte stayed French in 1975, a territorial collectivity until 2011"
-  },
-  {
-   "place": "Mayotte (Combani)",
-   "lonLat": [
-    45.14,
-    -12.8
-   ],
-   "years": [
-    2011,
     2026
    ],
-   "realm": "France",
-   "why": "An overseas department of France since 31 March 2011"
+   "realm": "Mayotte",
+   "why": "Mayotte stayed French in 1975, an overseas department since 2011"
   },
   {
    "place": "Moroni",

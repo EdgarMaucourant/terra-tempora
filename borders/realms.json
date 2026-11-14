@@ -501,6 +501,13 @@
   "es": "Argelia francesa",
   "withOwner": false
  },
+ "French Guiana": {
+  "wikipedia": "French Guiana",
+  "wikidata": "Q3769",
+  "fr": "Guyane",
+  "es": "Guayana Francesa",
+  "withOwner": false
+ },
  "French Polynesia": {
   "wikipedia": "French Polynesia",
   "wikidata": "Q30971",
@@ -611,6 +618,12 @@
   "wikidata": "Q769",
   "fr": "Grenade",
   "es": "Granada"
+ },
+ "Guadeloupe": {
+  "wikipedia": "Guadeloupe",
+  "wikidata": "Q17012",
+  "fr": "Guadeloupe",
+  "es": "Guadalupe"
  },
  "Guam": {
   "wikipedia": "Guam",
@@ -911,6 +924,12 @@
   "wikidata": "Q709",
   "fr": "Îles Marshall",
   "es": "Islas Marshall"
+ },
+ "Martinique": {
+  "wikipedia": "Martinique",
+  "wikidata": "Q17054",
+  "fr": "Martinique",
+  "es": "Martinica"
  },
  "Mauritania": {
   "wikipedia": "Mauritania",
@@ -1273,6 +1292,12 @@
   "wikidata": "Q971",
   "fr": "République du Congo",
   "es": "República del Congo"
+ },
+ "Réunion": {
+  "wikipedia": "Réunion",
+  "wikidata": "Q17070",
+  "fr": "La Réunion",
+  "es": "Reunión"
  },
  "Romania": {
   "wikipedia": "Romania",
