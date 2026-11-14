@@ -154,7 +154,31 @@
   "wikipedia": "Benin",
   "wikidata": "Q962",
   "fr": "Bénin",
-  "es": "Benín"
+  "es": "Benín",
+  "periods": [
+   {
+    "from": "1960-08-01",
+    "name": "Republic of Dahomey",
+    "wikipedia": "Republic of Dahomey",
+    "fr": "République du Dahomey",
+    "es": "República de Dahomey",
+    "note": "Independent Dahomey"
+   },
+   {
+    "from": "1975-11-30",
+    "name": "People's Republic of Benin",
+    "wikipedia": "People's Republic of Benin",
+    "fr": "République populaire du Bénin",
+    "es": "República Popular de Benín",
+    "note": "Marxist-Leninist state under Mathieu Kérékou"
+   },
+   {
+    "from": "1990-03-01",
+    "name": "Benin",
+    "wikipedia": "Benin",
+    "note": "Republic of Benin, after the 1990 National Conference"
+   }
+  ]
  },
  "Bermuda": {
   "wikipedia": "Bermuda",
@@ -221,7 +245,23 @@
   "wikipedia": "Burkina Faso",
   "wikidata": "Q965",
   "fr": "Burkina Faso",
-  "es": "Burkina Faso"
+  "es": "Burkina Faso",
+  "periods": [
+   {
+    "from": "1960-08-05",
+    "name": "Republic of Upper Volta",
+    "wikipedia": "Republic of Upper Volta",
+    "fr": "République de Haute-Volta",
+    "es": "República del Alto Volta",
+    "note": "Independent Upper Volta"
+   },
+   {
+    "from": "1984-08-04",
+    "name": "Burkina Faso",
+    "wikipedia": "Burkina Faso",
+    "note": "Renamed by Thomas Sankara"
+   }
+  ]
  },
  "Burundi": {
   "wikipedia": "Burundi",
@@ -263,7 +303,29 @@
   "wikipedia": "Central African Republic",
   "wikidata": "Q929",
   "fr": "République centrafricaine",
-  "es": "República Centroafricana"
+  "es": "República Centroafricana",
+  "periods": [
+   {
+    "from": "1960-08-13",
+    "name": "Central African Republic",
+    "wikipedia": "Central African Republic",
+    "note": "Independent"
+   },
+   {
+    "from": "1976-12-04",
+    "name": "Central African Empire",
+    "wikipedia": "Central African Empire",
+    "fr": "Empire centrafricain",
+    "es": "Imperio Centroafricano",
+    "note": "Bokassa's empire"
+   },
+   {
+    "from": "1979-09-21",
+    "name": "Central African Republic",
+    "wikipedia": "Central African Republic",
+    "note": "Republic restored"
+   }
+  ]
  },
  "Chad": {
   "wikipedia": "Chad",
@@ -312,6 +374,18 @@
   "wikidata": "Q739",
   "fr": "Colombie",
   "es": "Colombia"
+ },
+ "Colonial Mauritania": {
+  "wikipedia": "Colonial Mauritania",
+  "wikidata": "Q5148343",
+  "fr": "Colonie de la Mauritanie",
+  "es": "Colonia de Mauritania"
+ },
+ "Colony of Niger": {
+  "wikipedia": "Colony of Niger",
+  "wikidata": "Q5148520",
+  "fr": "Colonie du Niger",
+  "es": "Colonia de Níger"
  },
  "Comoros": {
   "wikipedia": "Comoros",
@@ -486,7 +560,23 @@
   "wikipedia": "France",
   "wikidata": "Q142",
   "fr": "France",
-  "es": "Francia"
+  "es": "Francia",
+  "periods": [
+   {
+    "from": "1946-10-27",
+    "name": "French Fourth Republic",
+    "wikipedia": "French Fourth Republic",
+    "fr": "Quatrième République",
+    "es": "Cuarta República Francesa",
+    "note": "From the constitution of 27 October 1946"
+   },
+   {
+    "from": "1958-10-04",
+    "name": "France",
+    "wikipedia": "France",
+    "note": "Fifth Republic, from the constitution of 4 October 1958"
+   }
+  ]
  },
  "Free Dadra and Nagar Haveli": {
   "wikipedia": "Free Dadra and Nagar Haveli",
@@ -501,6 +591,41 @@
   "es": "Argelia francesa",
   "withOwner": false
  },
+ "French Cameroon": {
+  "wikipedia": "French Cameroon",
+  "wikidata": "Q1028848",
+  "fr": "Cameroun français",
+  "es": "Camerún francés",
+  "withOwner": false
+ },
+ "French Chad": {
+  "wikipedia": "French Chad",
+  "wikidata": "Q5501708",
+  "fr": "Territoire du Tchad",
+  "es": "Chad francés",
+  "withOwner": false
+ },
+ "French Congo": {
+  "wikipedia": "French Congo",
+  "wikidata": "Q265319",
+  "fr": "Congo français",
+  "es": "Congo francés",
+  "withOwner": false
+ },
+ "French Dahomey": {
+  "wikipedia": "French Dahomey",
+  "wikidata": "Q797505",
+  "fr": "Colonie du Dahomey",
+  "es": "Dahomey francés",
+  "withOwner": false
+ },
+ "French Gabon": {
+  "wikipedia": "French Equatorial Africa",
+  "wikidata": "Q271894",
+  "fr": "Colonie du Gabon",
+  "es": "Gabón francés",
+  "withOwner": false
+ },
  "French Guiana": {
   "wikipedia": "French Guiana",
   "wikidata": "Q3769",
@@ -508,11 +633,39 @@
   "es": "Guayana Francesa",
   "withOwner": false
  },
+ "French Guinea": {
+  "wikipedia": "French Guinea",
+  "wikidata": "Q797433",
+  "fr": "Guinée française",
+  "es": "Guinea francesa",
+  "withOwner": false
+ },
+ "French Ivory Coast": {
+  "wikipedia": "French West Africa",
+  "wikidata": "Q210682",
+  "fr": "Colonie de Côte d'Ivoire",
+  "es": "Costa de Marfil francesa",
+  "withOwner": false
+ },
+ "French Madagascar": {
+  "wikipedia": "French Madagascar",
+  "wikidata": "Q5501842",
+  "fr": "Colonie de Madagascar et dépendances",
+  "es": "Madagascar francés",
+  "withOwner": false
+ },
  "French Polynesia": {
   "wikipedia": "French Polynesia",
   "wikidata": "Q30971",
   "fr": "Polynésie française",
   "es": "Polinesia Francesa",
+  "withOwner": false
+ },
+ "French Senegal": {
+  "wikipedia": "French West Africa",
+  "wikidata": "Q210682",
+  "fr": "Colonie du Sénégal",
+  "es": "Senegal francés",
   "withOwner": false
  },
  "French Somaliland": {
@@ -545,6 +698,27 @@
   "wikidata": "Q129003",
   "fr": "Terres australes et antarctiques françaises",
   "es": "Tierras Australes y Antárticas Francesas",
+  "withOwner": false
+ },
+ "French Sudan": {
+  "wikipedia": "French Sudan",
+  "wikidata": "Q508014",
+  "fr": "Soudan français",
+  "es": "Sudán francés",
+  "withOwner": false
+ },
+ "French Togoland": {
+  "wikipedia": "French Togoland",
+  "wikidata": "Q797214",
+  "fr": "Togo français",
+  "es": "Togolandia francesa",
+  "withOwner": false
+ },
+ "French Upper Volta": {
+  "wikipedia": "French Upper Volta",
+  "wikidata": "Q797440",
+  "fr": "Colonie de la Haute-Volta",
+  "es": "Alto Volta francés",
   "withOwner": false
  },
  "Gabon": {
@@ -881,7 +1055,31 @@
   "wikipedia": "Madagascar",
   "wikidata": "Q1019",
   "fr": "Madagascar",
-  "es": "Madagascar"
+  "es": "Madagascar",
+  "periods": [
+   {
+    "from": "1960-06-26",
+    "name": "Malagasy Republic",
+    "wikipedia": "Malagasy Republic",
+    "fr": "République malgache",
+    "es": "República Malgache",
+    "note": "First Republic"
+   },
+   {
+    "from": "1975-12-21",
+    "name": "Democratic Republic of Madagascar",
+    "wikipedia": "Democratic Republic of Madagascar",
+    "fr": "République démocratique de Madagascar",
+    "es": "República Democrática de Madagascar",
+    "note": "Socialist state under Didier Ratsiraka"
+   },
+   {
+    "from": "1992-09-12",
+    "name": "Madagascar",
+    "wikipedia": "Madagascar",
+    "note": "Third Republic"
+   }
+  ]
  },
  "Madeira": {
   "wikipedia": "Madeira",
@@ -912,6 +1110,12 @@
   "wikidata": "Q912",
   "fr": "Mali",
   "es": "Malí"
+ },
+ "Mali Federation": {
+  "wikipedia": "Mali Federation",
+  "wikidata": "Q216632",
+  "fr": "Fédération du Mali",
+  "es": "Federación de Malí"
  },
  "Malta": {
   "wikipedia": "Malta",
@@ -1291,7 +1495,29 @@
   "wikipedia": "Republic of the Congo",
   "wikidata": "Q971",
   "fr": "République du Congo",
-  "es": "República del Congo"
+  "es": "República del Congo",
+  "periods": [
+   {
+    "from": "1960-08-15",
+    "name": "Republic of the Congo",
+    "wikipedia": "Republic of the Congo",
+    "note": "Independent Congo-Brazzaville"
+   },
+   {
+    "from": "1969-12-31",
+    "name": "People's Republic of the Congo",
+    "wikipedia": "People's Republic of the Congo",
+    "fr": "République populaire du Congo",
+    "es": "República Popular del Congo",
+    "note": "Marxist-Leninist state"
+   },
+   {
+    "from": "1992-03-15",
+    "name": "Republic of the Congo",
+    "wikipedia": "Republic of the Congo",
+    "note": "Multi-party republic"
+   }
+  ]
  },
  "Réunion": {
   "wikipedia": "Réunion",
@@ -1383,6 +1609,12 @@
   "fr": "Arabie saoudite",
   "es": "Arabia Saudita"
  },
+ "Scattered Islands in the Indian Ocean": {
+  "wikipedia": "Scattered Islands in the Indian Ocean",
+  "wikidata": "Q190571",
+  "fr": "Îles Éparses de l'océan Indien",
+  "es": "Islas Dispersas del Océano Índico"
+ },
  "Senegal": {
   "wikipedia": "Senegal",
   "wikidata": "Q1041",
@@ -1473,6 +1705,12 @@
   "wikidata": "Q958",
   "fr": "Soudan du Sud",
   "es": "Sudán del Sur"
+ },
+ "Southern Cameroons": {
+  "wikipedia": "Southern Cameroons",
+  "wikidata": "Q1542471",
+  "fr": "Cameroun méridional",
+  "es": "Camerún Meridional"
  },
  "Spain": {
   "wikipedia": "Spain",
@@ -1624,6 +1862,12 @@
   "wikidata": "Q672",
   "fr": "Tuvalu",
   "es": "Tuvalu"
+ },
+ "Ubangi-Shari": {
+  "wikipedia": "Ubangi-Shari",
+  "wikidata": "Q1421888",
+  "fr": "Oubangui-Chari",
+  "es": "Ubangui-Chari"
  },
  "Uganda": {
   "wikipedia": "Uganda",

@@ -14,8 +14,8 @@
     "SPM",
     "WLF"
    ],
-   "from": 1961,
-   "why": "Metropolitan France with Corsica, the overseas departments (Guadeloupe, Martinique, French Guiana, Réunion, and Mayotte since 2011) and the overseas territories (Saint Pierre and Miquelon, Saint Barthélemy, Saint Martin, New Caledonia, French Polynesia, Wallis and Futuna, the French Southern and Antarctic Lands, Clipperton), whose borders have not moved since 1961"
+   "from": 1957,
+   "why": "Metropolitan France with Corsica, the overseas departments (Guadeloupe, Martinique, French Guiana, Réunion, and Mayotte since 2011) and the overseas territories (Saint Pierre and Miquelon, Saint Barthélemy, Saint Martin, New Caledonia, French Polynesia, Wallis and Futuna, the French Southern and Antarctic Lands, Clipperton), whose borders have not moved since 1957"
   },
   {
    "pieces": [
@@ -24,8 +24,29 @@
     "COM",
     "VUT"
    ],
-   "from": 1961,
+   "from": 1957,
    "why": "Algeria, Djibouti, the Comoros and Vanuatu, French (Vanuatu Anglo-French) until their independence, with today's borders"
+  },
+  {
+   "pieces": [
+    "GIN",
+    "SEN",
+    "MLI",
+    "BEN",
+    "NER",
+    "BFA",
+    "CIV",
+    "TCD",
+    "CAF",
+    "COG",
+    "GAB",
+    "MRT",
+    "TGO",
+    "CMR",
+    "MDG"
+   ],
+   "from": 1957,
+   "why": "French West Africa, French Equatorial Africa, French Togoland, French Cameroon and Madagascar, with today's borders, from French rule to independence, and the British Southern Cameroons (Northwest and Southwest of today's Cameroon) until they join Cameroon in 1961"
   }
  ],
  "changes": [
@@ -51,6 +72,28 @@
      },
      "map": "https://commons.wikimedia.org/wiki/File:Guadeloupe in France.svg",
      "territory": "Guadeloupe"
+    }
+   ]
+  },
+  {
+   "date": "2007-02-21",
+   "what": "The Scattered Islands become a district of the French Southern and Antarctic Lands",
+   "source": {
+    "title": "Scattered Islands in the Indian Ocean (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Scattered_Islands_in_the_Indian_Ocean"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ATF-5919"
+     ],
+     "owner": "France",
+     "territory": "Scattered Islands in the Indian Ocean",
+     "source": {
+      "title": "Scattered Islands in the Indian Ocean (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Scattered_Islands_in_the_Indian_Ocean"
+     }
     }
    ]
   },
@@ -147,6 +190,435 @@
       "url": "https://en.wikipedia.org/wiki/French_Algeria"
      },
      "map": "https://commons.wikimedia.org/wiki/File:French Algeria evolution 1830-1962 map-fr.svg"
+    }
+   ]
+  },
+  {
+   "date": "1961-10-01",
+   "what": "The British Southern Cameroons join Cameroon after the February 1961 plebiscite",
+   "source": {
+    "title": "Cameroon (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Cameroon"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Cameroon (orthographic projection).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "CMR-1477",
+      "CMR-799"
+     ],
+     "owner": "United Kingdom",
+     "territory": "Southern Cameroons",
+     "source": {
+      "title": "Southern Cameroons (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Southern_Cameroons"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1960-11-28",
+   "what": "Mauritania becomes independent",
+   "source": {
+    "title": "Mauritania (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Mauritania"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Mauritania (orthographic projection).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MRT"
+     ],
+     "owner": "France",
+     "territory": "Colonial Mauritania",
+     "source": {
+      "title": "Colonial Mauritania (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Colonial_Mauritania"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1960-09-22",
+   "what": "The Sudanese Republic, left alone in the Mali Federation, proclaims itself the Republic of Mali",
+   "source": {
+    "title": "Mali (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Mali"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Mali (orthographic projection).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MLI"
+     ],
+     "owner": "Mali Federation",
+     "source": {
+      "title": "Mali Federation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mali_Federation"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1960-08-20",
+   "what": "Senegal leaves the Mali Federation",
+   "source": {
+    "title": "Senegal (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Senegal"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Senegal (orthographic projection).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SEN"
+     ],
+     "owner": "Mali Federation",
+     "source": {
+      "title": "Mali Federation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mali_Federation"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1960-08-17",
+   "what": "Gabon becomes independent",
+   "source": {
+    "title": "Gabon (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Gabon"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Gabon (orthographic projection).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "GAB"
+     ],
+     "owner": "France",
+     "territory": "French Gabon",
+     "source": {
+      "title": "French Equatorial Africa (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Equatorial_Africa"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1960-08-15",
+   "what": "The Republic of the Congo (Brazzaville) becomes independent",
+   "source": {
+    "title": "Republic of the Congo (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Republic_of_the_Congo"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Republic of the Congo (orthographic projection).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "COG"
+     ],
+     "owner": "France",
+     "territory": "French Congo",
+     "source": {
+      "title": "French Congo (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Congo"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1960-08-13",
+   "what": "The Central African Republic becomes independent",
+   "source": {
+    "title": "Central African Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Central_African_Republic"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Central African Republic (orthographic projection).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "CAF"
+     ],
+     "owner": "France",
+     "territory": "Ubangi-Shari",
+     "source": {
+      "title": "Ubangi-Shari (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ubangi-Shari"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1960-08-11",
+   "what": "Chad becomes independent",
+   "source": {
+    "title": "Chad (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Chad"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Chad (orthographic projection).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TCD"
+     ],
+     "owner": "France",
+     "territory": "French Chad",
+     "source": {
+      "title": "French Chad (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Chad"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1960-08-07",
+   "what": "Ivory Coast becomes independent",
+   "source": {
+    "title": "Ivory Coast (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Ivory_Coast"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Côte d'Ivoire (orthographic projection).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "CIV"
+     ],
+     "owner": "France",
+     "territory": "French Ivory Coast",
+     "source": {
+      "title": "French West Africa (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_West_Africa"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1960-08-05",
+   "what": "Upper Volta becomes independent",
+   "source": {
+    "title": "Burkina Faso (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Burkina_Faso"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Burkina Faso (orthographic projection).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "BFA"
+     ],
+     "owner": "France",
+     "territory": "French Upper Volta",
+     "source": {
+      "title": "French Upper Volta (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Upper_Volta"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1960-08-03",
+   "what": "Niger becomes independent",
+   "source": {
+    "title": "Niger (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Niger"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Niger (orthographic projection).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "NER"
+     ],
+     "owner": "France",
+     "territory": "Colony of Niger",
+     "source": {
+      "title": "Colony of Niger (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Colony_of_Niger"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1960-08-01",
+   "what": "Dahomey becomes independent",
+   "source": {
+    "title": "Benin (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Benin"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Benin (orthographic projection).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "BEN"
+     ],
+     "owner": "France",
+     "territory": "French Dahomey",
+     "source": {
+      "title": "French Dahomey (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Dahomey"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1960-06-26",
+   "what": "Madagascar becomes independent as the Malagasy Republic",
+   "source": {
+    "title": "Madagascar (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Madagascar"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Madagascar (orthographic projection).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MDG"
+     ],
+     "owner": "France",
+     "territory": "French Madagascar",
+     "source": {
+      "title": "French Madagascar (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Madagascar"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1960-06-20",
+   "what": "The Mali Federation of Senegal and the Sudanese Republic becomes independent",
+   "source": {
+    "title": "Mali Federation (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Mali_Federation"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SEN"
+     ],
+     "owner": "France",
+     "territory": "French Senegal",
+     "source": {
+      "title": "French West Africa (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_West_Africa"
+     }
+    },
+    {
+     "pieces": [
+      "MLI"
+     ],
+     "owner": "France",
+     "territory": "French Sudan",
+     "source": {
+      "title": "French Sudan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Sudan"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1960-04-27",
+   "what": "Togo, a UN trust territory under French administration, becomes independent",
+   "source": {
+    "title": "Togo (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Togo"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Togo (orthographic projection).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TGO"
+     ],
+     "owner": "France",
+     "territory": "French Togoland",
+     "source": {
+      "title": "French Togoland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Togoland"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1960-04-01",
+   "what": "The Scattered Islands are separated from Madagascar and placed under the French government",
+   "source": {
+    "title": "Scattered Islands in the Indian Ocean (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Scattered_Islands_in_the_Indian_Ocean"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ATF-5919"
+     ],
+     "owner": "France",
+     "territory": "French Madagascar",
+     "source": {
+      "title": "French Madagascar (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Madagascar"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1960-01-01",
+   "what": "Cameroon, a UN trust territory under French administration, becomes independent",
+   "source": {
+    "title": "Cameroon (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Cameroon"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Cameroon (orthographic projection).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "CMR-803",
+      "CMR-1462",
+      "CMR-1483",
+      "CMR-1482",
+      "CMR-1481",
+      "CMR-1476",
+      "CMR-798",
+      "CMR-1480"
+     ],
+     "owner": "France",
+     "territory": "French Cameroon",
+     "source": {
+      "title": "French Cameroon (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Cameroon"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1958-10-02",
+   "what": "Guinea votes no to the French Community and becomes independent",
+   "source": {
+    "title": "Guinea (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Guinea"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Guinea (orthographic projection).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "GIN"
+     ],
+     "owner": "France",
+     "territory": "French Guinea",
+     "source": {
+      "title": "French Guinea (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Guinea"
+     }
     }
    ]
   }
