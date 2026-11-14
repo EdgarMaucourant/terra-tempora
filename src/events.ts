@@ -168,11 +168,34 @@ const LINGER = 8;
  * How strongly an event shows in a (fractional) year: 1 while it happens,
  * fading over the following years, 0 before it and once it has faded.
  */
-export function eventOpacity(e: HistoryEvent, year: number): number {
+export function eventOpacity(e: HistoryEvent, year: number, until = Infinity): number {
   const end = (e.to ?? e.year) + 1;
   if (year < e.year || year >= end + LINGER) return 0;
+  // A later event on the same spot takes its place (Algiers, 1957 to 1962).
+  if (year >= end && year >= until) return 0;
   if (year < end) return 1;
   return 1 - (0.65 * (year - end)) / LINGER;
+}
+
+// Badges closer than this, in degrees, cover each other on the globe and the map.
+const SAME_SPOT = 1.5;
+
+/**
+ * For each event, the year a later event starts on about the same spot: its
+ * badge stops lingering then, so the newer one is not hidden under it.
+ */
+export function supersededYears(events: HistoryEvent[]): Map<HistoryEvent, number> {
+  const until = new Map<HistoryEvent, number>();
+  for (const e of events) {
+    const end = (e.to ?? e.year) + 1;
+    for (const other of events) {
+      if (other === e || other.year < end || other.year >= end + LINGER) continue;
+      const dLon = Math.abs(other.lonLat[0] - e.lonLat[0]) * Math.cos((e.lonLat[1] * Math.PI) / 180);
+      if (dLon > SAME_SPOT || Math.abs(other.lonLat[1] - e.lonLat[1]) > SAME_SPOT) continue;
+      until.set(e, Math.min(until.get(e) ?? Infinity, other.year));
+    }
+  }
+  return until;
 }
 
 /** The hand-written events, in the reader's language where translated. */
