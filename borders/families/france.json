@@ -15,7 +15,7 @@
     "WLF"
    ],
    "from": 1961,
-   "why": "Metropolitan France with Corsica, the overseas departments (Guadeloupe, Martinique, French Guiana, Réunion, Mayotte) and the overseas territories (Saint Pierre and Miquelon, Saint Barthélemy, Saint Martin, New Caledonia, French Polynesia, Wallis and Futuna, the French Southern and Antarctic Lands, Clipperton), whose borders have not moved since 1961"
+   "why": "Metropolitan France with Corsica, the overseas departments (Guadeloupe, Martinique, French Guiana, Réunion, and Mayotte since 2011) and the overseas territories (Saint Pierre and Miquelon, Saint Barthélemy, Saint Martin, New Caledonia, French Polynesia, Wallis and Futuna, the French Southern and Antarctic Lands, Clipperton), whose borders have not moved since 1961"
   },
   {
    "pieces": [
@@ -29,30 +29,6 @@
   }
  ],
  "changes": [
-  {
-   "date": "2011-03-31",
-   "what": "Mayotte becomes an overseas department of France",
-   "source": {
-    "title": "Mayotte (Wikipedia)",
-    "url": "https://en.wikipedia.org/wiki/Mayotte"
-   },
-   "map": "https://commons.wikimedia.org/wiki/File:Département 976 in France (zoom).svg",
-   "confidence": "exact",
-   "before": [
-    {
-     "pieces": [
-      "FRA-4602"
-     ],
-     "owner": "France",
-     "territory": "Mayotte",
-     "source": {
-      "title": "Mayotte (Wikipedia)",
-      "url": "https://en.wikipedia.org/wiki/Mayotte"
-     },
-     "map": "https://commons.wikimedia.org/wiki/File:Mayotte in its political environment.png"
-    }
-   ]
-  },
   {
    "date": "2007-07-15",
    "what": "Saint Barthélemy and Saint Martin leave Guadeloupe and become overseas collectivities of France",
@@ -73,7 +49,8 @@
       "title": "Guadeloupe (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Guadeloupe"
      },
-     "map": "https://commons.wikimedia.org/wiki/File:Guadeloupe in France.svg"
+     "map": "https://commons.wikimedia.org/wiki/File:Guadeloupe in France.svg",
+     "territory": "Guadeloupe"
     }
    ]
   },

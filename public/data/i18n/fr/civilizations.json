@@ -353,6 +353,9 @@
  "austria": {
   "name": "Autriche"
  },
+ "french-guiana": {
+  "name": "Guyane"
+ },
  "czech-republic": {
   "name": "Tchéquie"
  },
@@ -566,17 +569,26 @@
  "luxembourg": {
   "name": "Luxembourg"
  },
+ "reunion": {
+  "name": "La Réunion"
+ },
  "territory-of-the-comoros": {
   "name": "Territoire des Comores"
  },
  "mauritius": {
   "name": "Maurice"
  },
+ "guadeloupe": {
+  "name": "Guadeloupe"
+ },
  "comoros": {
   "name": "Comores"
  },
  "faroe-islands": {
   "name": "îles Féroé"
+ },
+ "martinique": {
+  "name": "Martinique"
  },
  "sao-tome-and-principe": {
   "name": "Sao Tomé-et-Principe"
