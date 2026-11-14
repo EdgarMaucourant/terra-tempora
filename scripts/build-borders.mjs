@@ -311,7 +311,9 @@ for (let year = TODAY; year >= firstReviewed; year--) {
       else add(`realm|${s.owner}`, id, { name: s.owner });
       if (s.hatch) {
         const h = s.hatch;
-        add(`hatch|${s.owner}|${h.by}|${h.since}`, id, {
+        // One hatching per territory under it, so that each one stands for its
+        // own land (French Togoland, not French Cameroon).
+        add(`hatch|${s.owner}|${s.territory ?? ""}|${h.by}|${h.since}`, id, {
           kind: "hatch",
           name: s.owner,
           by: h.by,
