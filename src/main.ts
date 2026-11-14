@@ -638,7 +638,7 @@ function showPlaceNow() {
   }
   const at = Math.round(year);
   const entry = history.find((h) => h.from <= at && at <= h.to);
-  if (entry?.name !== toldRealm) renderCountryOverview(chosen());
+  if (!entry && toldRealm) renderCountryOverview(chosen());
   const head = el("h3", "event-more", t("place.inYear", { year: formatYear(at) }));
   if (!entry) {
     placeNow.replaceChildren(head, el("p", "fine", t("tooltip.unreviewedText")));
@@ -650,6 +650,7 @@ function showPlaceNow() {
       if (mine !== placeNowAsked) return;
       const own = shapes.filter((p) => !p.kind && p.name === entry.name && at >= p.from && at <= p.to);
       const p = own.reduce<Polity | null>((best, q) => (!best || q.area > best.area ? q : best), null);
+      if ((p ? (p.display ?? p.name) : entry.name) !== toldRealm) renderCountryOverview(chosen(), p);
       // Land held by another state (Indonesia over Portuguese Timor) says so.
       const held = p?.label ? layer.hatchAt(p.label[0], p.label[1], at) : undefined;
       const name = el("p", "place-now-name");
@@ -1726,13 +1727,14 @@ let toldRealm: string | undefined;
  * drawn on it in the year shown, with that realm's own article: Portugal, or
  * Portuguese Timor in 1986.
  */
-function renderCountryOverview(list: Civilization[]) {
+function renderCountryOverview(list: Civilization[], shape?: Polity | null) {
   if (!country) return;
   const english = englishCountry.get(country.id) ?? country.name;
   const history = `History of ${english}`;
-  const drawn = drawnOnPlace();
+  // The shape drawn, once loaded, names the period too: Estado Novo in 1950.
+  const drawn = shape ? (shape.display ?? shape.name) : drawnOnPlace();
   toldRealm = drawn;
-  const own = drawn ? civs?.ofRealm(drawn)?.wikipedia : undefined;
+  const own = shape?.wikipedia ?? (drawn ? civs?.ofRealm(drawn)?.wikipedia : undefined);
   overview.render({
     kind: "country",
     country,

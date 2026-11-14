@@ -105,7 +105,7 @@ for (const cut of cuts.features) {
   const outline = polygonsOf(cut.geometry);
   const inside = orient(polygonClipping.intersection(polygonsOf(from.geometry), outline));
   const outside = orient(polygonClipping.difference(polygonsOf(from.geometry), outline));
-  pieces.set(cut.properties.id, { ...from, id: cut.properties.id, name: cut.properties.note, geometry: { type: "MultiPolygon", coordinates: inside } });
+  pieces.set(cut.properties.id, { ...from, id: cut.properties.id, name: cut.properties.note, keep: !!cut.properties.keep, geometry: { type: "MultiPolygon", coordinates: inside } });
   from.geometry = { type: "MultiPolygon", coordinates: outside };
 }
 
@@ -246,9 +246,14 @@ function sourceOf(c, year, ids) {
 
 /** A realm's name for a year, when one of its periods names it differently. */
 function periodName(name, year) {
-  const periods = (realms[name]?.periods ?? []).filter((p) => Number(p.from.slice(0, 4)) <= year);
-  const period = periods.sort((a, b) => b.from.localeCompare(a.from))[0];
+  const period = periodOf(name, year);
   return period && period.name !== name ? period.name : undefined;
+}
+
+/** The period of a realm a year falls in, if it has periods. */
+function periodOf(name, year) {
+  const periods = (realms[name]?.periods ?? []).filter((p) => Number(p.from.slice(0, 4)) <= year);
+  return periods.sort((a, b) => b.from.localeCompare(a.from))[0];
 }
 
 // Changes that only begin or end a hatching, found by walking back once.
@@ -317,7 +322,7 @@ for (let year = TODAY; year >= firstReviewed; year--) {
     if (g.meta.kind) continue;
     // A territory carries its state's name on the map, "Azores (Portugal)",
     // unless its own name already says it (Portuguese Angola: withOwner false).
-    const owner = g.meta.partOf && realms[g.meta.name]?.withOwner !== false ? periodName(g.meta.partOf, year) ?? g.meta.partOf : null;
+    const owner = g.meta.partOf && realms[g.meta.name]?.withOwner !== false ? g.meta.partOf : null;
     const display = periodName(g.meta.name, year) ?? (owner ? `${g.meta.name} (${owner})` : undefined);
     g.meta = { ...g.meta, ...(display && { display }), source: sourceOf(changeFor(g.ids, year), year, g.ids) };
     groups.set(key, g);
@@ -352,6 +357,30 @@ function banded(ring) {
   return out;
 }
 
+/** An inner point of each piece cut with "keep", to find its part once merged. */
+const keptPoint = new Map(
+  [...pieces.values()]
+    .filter((p) => p.keep)
+    .map((p) => [p.id, polylabel(polygonsOf(p.geometry).sort((a, b) => sphereArea(b[0]) - sphereArea(a[0]))[0], 0.001)]),
+);
+
+/** Whether a point lies in a ring, or by it when the ring is a few points only (Diu once simplified). */
+function atRing(point, ring) {
+  if (inRing(point, ring)) return true;
+  const near = (v, i) => Math.abs(v - point[i]) < 0.05;
+  return ring.every(([x, y]) => near(x, 0) && near(y, 1));
+}
+
+function inRing([x, y], ring) {
+  let inside = false;
+  for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+    const [xi, yi] = ring[i];
+    const [xj, yj] = ring[j];
+    if (yi > y !== yj > y && x < xi + ((y - yi) / (yj - yi)) * (xj - xi)) inside = !inside;
+  }
+  return inside;
+}
+
 /** The outer rings of a group of pieces merged into one shape, small parts dropped. */
 function outline(ids, { bands = false } = {}) {
   const geoms = ids.map((id) => topo.objects.pieces.geometries[indexOf.get(id)]).filter((g) => g.type);
@@ -362,16 +391,25 @@ function outline(ids, { bands = false } = {}) {
     .map((ring) => ({ ring, area: sphereArea(ring) }));
   if (!outers.length) return null;
   const largest = outers.reduce((a, b) => (b.area > a.area ? b : a));
-  const kept = outers.filter((o) => o === largest || o.area >= Math.min(MIN_PART_AREA, largest.area));
+  // A small place of its own (Diu, cut with "keep") stays however small.
+  const marks = ids.map((id) => keptPoint.get(id)).filter(Boolean);
+  const kept = outers.filter(
+    (o) => o === largest || o.area >= Math.min(MIN_PART_AREA, largest.area) || marks.find((m) => atRing(m, o.ring)),
+  );
+  const square = (ring) => {
+    const [x, y] = ring[0].map((v) => Math.round(v * 100));
+    return [x - 1, y - 1, 2, 0, 0, 2, -2, 0];
+  };
   const rings = kept
-    .flatMap((o) => (bands ? banded(o.ring) : [o.ring]))
-    .map(encodeRing)
+    .flatMap((o) => (bands ? banded(o.ring) : [o.ring]).map((ring) => ({ ring, mark: o !== largest && marks.find((m) => atRing(m, o.ring)) })))
+    // A kept small place that simplifying has worn away is a small square.
+    .map(({ ring, mark }) => {
+      const r = encodeRing(ring);
+      return mark && (r.length < 6 || !inRing(mark, ring)) ? square([mark]) : r;
+    })
     .filter((r) => r.length >= 6);
   // A part too small to keep three points at 0.01° is drawn as a small square.
-  if (!rings.length) {
-    const [x, y] = largest.ring[0].map((v) => Math.round(v * 100));
-    rings.push([x - 1, y - 1, 2, 0, 0, 2, -2, 0]);
-  }
+  if (!rings.length) rings.push(square(largest.ring));
   // True areas, from the unsimplified pieces, sum over the group.
   return { rings, label: labelPoint(largest.ring), area: kept.reduce((s, o) => s + o.area, 0) };
 }
@@ -395,7 +433,8 @@ for (const [key, list] of runs) {
       name: m.kind === "unreviewed" ? "" : m.name,
       from: run.from,
       to: run.to,
-      wikipedia: realm?.wikipedia ?? null,
+      // A period has its own article (Estado Novo), the realm's otherwise.
+      wikipedia: (realm && periodOf(m.name, run.from)?.wikipedia) ?? realm?.wikipedia ?? null,
       wikidata: realm?.wikidata ?? null,
       area: Math.round(ids.reduce((s, id) => s + pieceArea.get(id), 0)),
       ...(m.partOf && { partOf: m.partOf }),
