@@ -752,7 +752,7 @@
     "wikipedia": "German Empire",
     "fr": "Empire allemand",
     "es": "Imperio alemán",
-    "note": "Proclaimed at Versailles; only named here for German East Africa until the Germany family is reviewed"
+    "note": "Proclaimed at Versailles"
    },
    {
     "from": "1918-11-09",
@@ -760,6 +760,36 @@
     "wikipedia": "Weimar Republic",
     "fr": "République de Weimar",
     "es": "República de Weimar"
+   },
+   {
+    "from": "1933-01-30",
+    "name": "Nazi Germany",
+    "wikipedia": "Nazi Germany",
+    "fr": "Allemagne nazie",
+    "es": "Alemania nazi",
+    "note": "Hitler appointed chancellor"
+   },
+   {
+    "from": "1945-06-05",
+    "name": "Allied-occupied Germany",
+    "wikipedia": "Allied-occupied Germany",
+    "fr": "Allemagne occupée",
+    "es": "Alemania ocupada por los Aliados",
+    "note": "The four Allies take over the government"
+   },
+   {
+    "from": "1949-05-23",
+    "name": "West Germany",
+    "wikipedia": "West Germany",
+    "fr": "Allemagne de l'Ouest",
+    "es": "Alemania Occidental",
+    "note": "Federal Republic of Germany, from its Basic Law"
+   },
+   {
+    "from": "1990-10-03",
+    "name": "Germany",
+    "wikipedia": "Germany",
+    "note": "Reunified Germany"
    }
   ]
  },

@@ -1291,6 +1291,22 @@ a {
   filter: brightness(1.12);
 }
 
+/* A name the realm went by, over its own years along the bar. */
+.lane-period {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 5px;
+  overflow: hidden;
+}
+
+.lane-period + .lane-period {
+  border-left: 1px solid rgb(0 0 0 / 0.45);
+}
+
 .lane-link {
   position: absolute;
   z-index: 1;

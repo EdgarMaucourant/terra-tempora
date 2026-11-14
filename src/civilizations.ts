@@ -28,6 +28,8 @@ export interface Civilization {
   family: string | null;
   /** Commons file from the realm's Wikipedia article, shown when Wikidata has no picture for it. */
   picture?: string;
+  /** The names it went by over its years, when they changed (Republic of Upper Volta, then Burkina Faso). */
+  periods?: { from: number; to: number; name: string }[];
   /** For a territory (Portuguese Angola, Macau), the realm name of the state it is part of. */
   partOf?: string;
 }
