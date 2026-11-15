@@ -14,7 +14,7 @@
     "SPM",
     "WLF"
    ],
-   "from": 1946,
+   "from": 1939,
    "why": "Metropolitan France with Corsica, the overseas departments (Guadeloupe, Martinique, French Guiana, Réunion, and Mayotte since 2011) and the overseas territories (Saint Pierre and Miquelon, Saint Barthélemy, Saint Martin, New Caledonia, French Polynesia, Wallis and Futuna, the French Southern and Antarctic Lands, Clipperton), whose borders have not moved since 1957"
   },
   {
@@ -24,7 +24,7 @@
     "COM",
     "VUT"
    ],
-   "from": 1946,
+   "from": 1939,
    "why": "Algeria, Djibouti, the Comoros and Vanuatu, French (Vanuatu Anglo-French) until their independence, with today's borders"
   },
   {
@@ -45,7 +45,7 @@
     "CMR",
     "MDG"
    ],
-   "from": 1946,
+   "from": 1939,
    "why": "French West Africa, French Equatorial Africa, French Togoland, French Cameroon and Madagascar, with today's borders, from French rule to independence, and the British Southern Cameroons (Northwest and Southwest of today's Cameroon) until they join Cameroon in 1961"
   },
   {
@@ -73,7 +73,7 @@
     "MAR-3456",
     "TUN"
    ],
-   "from": 1946,
+   "from": 1939,
    "why": "Morocco (without Western Sahara) and Tunisia: the French protectorates until 1956, with Spain's northern zone, the Tangier International Zone, Cape Juby (Spanish until 1958) and Ifni (Spanish until 1969)"
   },
   {
@@ -82,7 +82,7 @@
     "LAO",
     "KHM"
    ],
-   "from": 1946,
+   "from": 1939,
    "why": "French Indochina: Vietnam (Tonkin, Annam and Cochinchina, then the State of Vietnam), Laos and Cambodia, with today's borders, until independence in 1953 and 1954, then North and South Vietnam until 1976"
   },
   {
@@ -91,7 +91,7 @@
     "mahe",
     "chandernagore"
    ],
-   "from": 1946,
+   "from": 1939,
    "why": "French India: Pondichéry, Karikal, Mahé and Yanaon (today's Puducherry, with Mahé drawn where it is, not where Natural Earth puts it) and Chandernagore, until they pass to India"
   },
   {
@@ -100,6 +100,22 @@
    ],
    "from": 1947,
    "why": "The Saar, a protectorate of France from 1947 until it joins West Germany in 1957, with today's Saarland borders"
+  },
+  {
+   "pieces": [
+    "SYR",
+    "golan",
+    "LBN"
+   ],
+   "from": 1939,
+   "why": "Syria (with the Golan Heights) and Lebanon: French mandates under the League of Nations until their independence, with today's borders (Hatay went to Turkey in June 1939)"
+  },
+  {
+   "pieces": [
+    "guangzhouwan"
+   ],
+   "from": 1939,
+   "why": "Guangzhouwan, leased to France until 1945, then part of China"
   }
  ],
  "changes": [
@@ -341,6 +357,27 @@
    ]
   },
   {
+   "date": "1967-06-10",
+   "what": "Israel occupies the Golan Heights",
+   "source": {
+    "title": "Golan Heights (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Golan_Heights"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "golan"
+     ],
+     "owner": "Syria",
+     "source": {
+      "title": "Syria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Syria"
+     }
+    }
+   ]
+  },
+  {
    "date": "1962-07-05",
    "what": "Algeria becomes independent after the Évian Accords and the referendum of 1 July 1962",
    "source": {
@@ -394,6 +431,28 @@
        "title": "United Nations Trust Territories (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/United_Nations_trust_territories"
       }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1961-09-28",
+   "what": "Syria leaves the United Arab Republic",
+   "source": {
+    "title": "United Arab Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/United_Arab_Republic"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SYR",
+      "golan"
+     ],
+     "owner": "United Arab Republic",
+     "source": {
+      "title": "United Arab Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/United_Arab_Republic"
      }
     }
    ]
@@ -845,6 +904,28 @@
       "url": "https://en.wikipedia.org/wiki/Cape_Juby"
      },
      "map": "https://commons.wikimedia.org/wiki/File:Protectorado español en Marruecos.svg"
+    }
+   ]
+  },
+  {
+   "date": "1958-02-22",
+   "what": "Syria and Egypt unite as the United Arab Republic",
+   "source": {
+    "title": "United Arab Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/United_Arab_Republic"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SYR",
+      "golan"
+     ],
+     "owner": "Syria",
+     "source": {
+      "title": "Syria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Syria"
+     }
     }
    ]
   },
@@ -1417,6 +1498,1575 @@
      "source": {
       "title": "Colony of Niger (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Colony_of_Niger"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1946-12-13",
+   "what": "The UN General Assembly approves the trusteeship agreements: French Togoland, French Cameroon and the British Cameroons become UN trust territories",
+   "source": {
+    "title": "United Nations trust territories (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/United_Nations_trust_territories"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TGO"
+     ],
+     "owner": "France",
+     "territory": "French Togoland",
+     "source": {
+      "title": "French Togoland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Togoland"
+     },
+     "hatch": {
+      "by": "League of Nations",
+      "since": "1922-07-20",
+      "trust": true,
+      "note": "Administered by France under a League of Nations mandate from 1922",
+      "source": {
+       "title": "League of Nations mandate (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/League_of_Nations_mandate"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "CMR-803",
+      "CMR-1462",
+      "CMR-1483",
+      "CMR-1482",
+      "CMR-1481",
+      "CMR-1476",
+      "CMR-798",
+      "CMR-1480"
+     ],
+     "owner": "France",
+     "territory": "French Cameroon",
+     "source": {
+      "title": "French Cameroon (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Cameroon"
+     },
+     "hatch": {
+      "by": "League of Nations",
+      "since": "1922-07-20",
+      "trust": true,
+      "note": "Administered by France under a League of Nations mandate from 1922",
+      "source": {
+       "title": "League of Nations mandate (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/League_of_Nations_mandate"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "CMR-1477",
+      "CMR-799"
+     ],
+     "owner": "United Kingdom",
+     "territory": "British Cameroons",
+     "source": {
+      "title": "British Cameroons (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Cameroons"
+     },
+     "hatch": {
+      "by": "League of Nations",
+      "since": "1922-07-20",
+      "trust": true,
+      "note": "Administered by the United Kingdom under a League of Nations mandate from 1922",
+      "source": {
+       "title": "League of Nations mandate (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/League_of_Nations_mandate"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1946-11-17",
+   "what": "By the Washington Accord, Thailand gives back the land it annexed in 1941 in Cambodia and Laos",
+   "source": {
+    "title": "Franco-Thai War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Franco-Thai_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "KHM-1778",
+      "KHM-1783",
+      "KHM-1777",
+      "KHM-1782",
+      "KHM-1781",
+      "KHM-1791",
+      "stung-treng-west",
+      "LAO-3278",
+      "champasak-west"
+     ],
+     "owner": "Thailand",
+     "source": {
+      "title": "Franco-Thai War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Franco-Thai_War"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1946-05-09",
+   "what": "The Comoros are separated from Madagascar as a territory of their own",
+   "source": {
+    "title": "Territory of the Comoros (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Territory_of_the_Comoros"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "COM",
+      "FRA-4602"
+     ],
+     "owner": "France",
+     "territory": "French Madagascar",
+     "source": {
+      "title": "French Madagascar (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Madagascar"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1946-02-28",
+   "what": "By the Sino-French agreement of Chongqing, China agrees to withdraw its troops from northern Indochina; they leave by the summer of 1946",
+   "source": {
+    "title": "French Indochina in World War II (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_Indochina_in_World_War_II"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "VNM-450",
+      "VNM-455",
+      "VNM-512",
+      "VNM-511",
+      "VNM-5483",
+      "VNM-453",
+      "VNM-454",
+      "VNM-429",
+      "VNM-466",
+      "VNM-468",
+      "VNM-471",
+      "VNM-4600",
+      "VNM-459",
+      "VNM-457",
+      "VNM-458",
+      "VNM-464",
+      "VNM-469",
+      "VNM-462",
+      "VNM-451",
+      "VNM-461",
+      "VNM-463",
+      "VNM-470",
+      "VNM-452",
+      "VNM-460",
+      "VNM-467"
+     ],
+     "owner": "France",
+     "territory": "Tonkin",
+     "source": {
+      "title": "Tonkin (French protectorate) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tonkin_(French_protectorate)"
+     },
+     "hatch": {
+      "by": "China",
+      "since": "1945-09-09",
+      "note": "North of the 16th parallel, Chinese troops take the Japanese surrender and occupy the land until the summer of 1946",
+      "source": {
+       "title": "French Indochina in World War II (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/French_Indochina_in_World_War_II"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "VNM-456",
+      "VNM-475",
+      "VNM-474",
+      "VNM-476",
+      "quang-tri-north",
+      "VNM-489",
+      "VNM-490",
+      "VNM-491"
+     ],
+     "owner": "France",
+     "territory": "Annam",
+     "source": {
+      "title": "Annam (French protectorate) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Annam_(French_protectorate)"
+     },
+     "hatch": {
+      "by": "China",
+      "since": "1945-09-09",
+      "note": "North of the 16th parallel, Chinese troops take the Japanese surrender and occupy the land until the summer of 1946",
+      "source": {
+       "title": "French Indochina in World War II (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/French_Indochina_in_World_War_II"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "LAO-3291",
+      "LAO-3290",
+      "LAO-3272",
+      "LAO-3271",
+      "LAO-3292",
+      "LAO-3293",
+      "LAO-3282",
+      "LAO-3283",
+      "LAO-3284",
+      "LAO-3289",
+      "LAO-3288",
+      "LAO-3286",
+      "saravan-north"
+     ],
+     "owner": "France",
+     "territory": "French Laos",
+     "source": {
+      "title": "French protectorate of Laos (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_protectorate_of_Laos"
+     },
+     "hatch": {
+      "by": "China",
+      "since": "1945-09-09",
+      "note": "North of the 16th parallel, Chinese troops take the Japanese surrender and occupy the land until the summer of 1946",
+      "source": {
+       "title": "French Indochina in World War II (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/French_Indochina_in_World_War_II"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1945-10-11",
+   "what": "Spanish troops leave Tangier and the international zone is restored",
+   "source": {
+    "title": "Tangier International Zone (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tangier_International_Zone"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "tangier-zone"
+     ],
+     "owner": "Tangier International Zone",
+     "source": {
+      "title": "Tangier International Zone (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tangier_International_Zone"
+     },
+     "hatch": {
+      "by": "Spain",
+      "since": "1940-06-14",
+      "note": "Occupied by Spain from 14 June 1940 to 11 October 1945",
+      "source": {
+       "title": "Tangier International Zone (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Tangier_International_Zone"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1945-09-09",
+   "what": "Chinese troops occupy Indochina north of the 16th parallel to take the Japanese surrender",
+   "source": {
+    "title": "French Indochina in World War II (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_Indochina_in_World_War_II"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "VNM-450",
+      "VNM-455",
+      "VNM-512",
+      "VNM-511",
+      "VNM-5483",
+      "VNM-453",
+      "VNM-454",
+      "VNM-429",
+      "VNM-466",
+      "VNM-468",
+      "VNM-471",
+      "VNM-4600",
+      "VNM-459",
+      "VNM-457",
+      "VNM-458",
+      "VNM-464",
+      "VNM-469",
+      "VNM-462",
+      "VNM-451",
+      "VNM-461",
+      "VNM-463",
+      "VNM-470",
+      "VNM-452",
+      "VNM-460",
+      "VNM-467"
+     ],
+     "owner": "France",
+     "territory": "Tonkin",
+     "source": {
+      "title": "Tonkin (French protectorate) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tonkin_(French_protectorate)"
+     }
+    },
+    {
+     "pieces": [
+      "VNM-456",
+      "VNM-475",
+      "VNM-474",
+      "VNM-476",
+      "quang-tri-north",
+      "VNM-489",
+      "VNM-490",
+      "VNM-491"
+     ],
+     "owner": "France",
+     "territory": "Annam",
+     "source": {
+      "title": "Annam (French protectorate) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Annam_(French_protectorate)"
+     }
+    },
+    {
+     "pieces": [
+      "LAO-3291",
+      "LAO-3290",
+      "LAO-3272",
+      "LAO-3271",
+      "LAO-3292",
+      "LAO-3293",
+      "LAO-3282",
+      "LAO-3283",
+      "LAO-3284",
+      "LAO-3289",
+      "LAO-3288",
+      "LAO-3286",
+      "saravan-north"
+     ],
+     "owner": "France",
+     "territory": "French Laos",
+     "source": {
+      "title": "French protectorate of Laos (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_protectorate_of_Laos"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1945-09-02",
+   "what": "Japan surrenders; its troops leave the government of French Indochina",
+   "source": {
+    "title": "French Indochina in World War II (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_Indochina_in_World_War_II"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "VNM-450",
+      "VNM-455",
+      "VNM-512",
+      "VNM-511",
+      "VNM-5483",
+      "VNM-453",
+      "VNM-454",
+      "VNM-429",
+      "VNM-466",
+      "VNM-468",
+      "VNM-471",
+      "VNM-4600",
+      "VNM-459",
+      "VNM-457",
+      "VNM-458",
+      "VNM-464",
+      "VNM-469",
+      "VNM-462",
+      "VNM-451",
+      "VNM-461",
+      "VNM-463",
+      "VNM-470",
+      "VNM-452",
+      "VNM-460",
+      "VNM-467"
+     ],
+     "owner": "France",
+     "territory": "Tonkin",
+     "source": {
+      "title": "Tonkin (French protectorate) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tonkin_(French_protectorate)"
+     },
+     "hatch": {
+      "by": "Japan",
+      "since": "1940-09-22",
+      "note": "Japanese troops stationed in Tonkin from September 1940, under the French administration; Japan takes full control on 9 March 1945",
+      "source": {
+       "title": "French Indochina in World War II (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/French_Indochina_in_World_War_II"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "VNM-456",
+      "VNM-475",
+      "VNM-474",
+      "VNM-476",
+      "quang-tri-north",
+      "VNM-489",
+      "VNM-490",
+      "VNM-491"
+     ],
+     "owner": "France",
+     "territory": "Annam",
+     "source": {
+      "title": "Annam (French protectorate) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Annam_(French_protectorate)"
+     },
+     "hatch": {
+      "by": "Japan",
+      "since": "1941-07-28",
+      "note": "Japanese troops stationed in all of French Indochina from July 1941, under the French administration; Japan takes full control on 9 March 1945",
+      "source": {
+       "title": "French Indochina in World War II (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/French_Indochina_in_World_War_II"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "LAO-3291",
+      "LAO-3290",
+      "LAO-3272",
+      "LAO-3271",
+      "LAO-3292",
+      "LAO-3293",
+      "LAO-3282",
+      "LAO-3283",
+      "LAO-3284",
+      "LAO-3289",
+      "LAO-3288",
+      "LAO-3286",
+      "saravan-north"
+     ],
+     "owner": "France",
+     "territory": "French Laos",
+     "source": {
+      "title": "French protectorate of Laos (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_protectorate_of_Laos"
+     },
+     "hatch": {
+      "by": "Japan",
+      "since": "1941-07-28",
+      "note": "Japanese troops stationed in all of French Indochina from July 1941, under the French administration; Japan takes full control on 9 March 1945",
+      "source": {
+       "title": "French Indochina in World War II (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/French_Indochina_in_World_War_II"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "VNM-487",
+      "VNM-488",
+      "VNM-485",
+      "VNM-482",
+      "VNM-479",
+      "VNM-481",
+      "VNM-496",
+      "VNM-486",
+      "VNM-478",
+      "VNM-477",
+      "VNM-4835",
+      "VNM-480"
+     ],
+     "owner": "France",
+     "territory": "Annam",
+     "source": {
+      "title": "Annam (French protectorate) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Annam_(French_protectorate)"
+     },
+     "hatch": {
+      "by": "Japan",
+      "since": "1941-07-28",
+      "note": "Japanese troops stationed in all of French Indochina from July 1941, under the French administration; Japan takes full control on 9 March 1945",
+      "source": {
+       "title": "French Indochina in World War II (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/French_Indochina_in_World_War_II"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "VNM-484",
+      "VNM-444",
+      "VNM-503",
+      "VNM-500",
+      "VNM-498",
+      "VNM-502",
+      "VNM-508",
+      "VNM-4834",
+      "VNM-495",
+      "VNM-501",
+      "VNM-507",
+      "VNM-506",
+      "VNM-505",
+      "VNM-510",
+      "VNM-509",
+      "VNM-504",
+      "VNM-497",
+      "VNM-483",
+      "VNM-499"
+     ],
+     "owner": "France",
+     "territory": "French Cochinchina",
+     "source": {
+      "title": "French Cochinchina (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Cochinchina"
+     },
+     "hatch": {
+      "by": "Japan",
+      "since": "1941-07-28",
+      "note": "Japanese troops stationed in all of French Indochina from July 1941, under the French administration; Japan takes full control on 9 March 1945",
+      "source": {
+       "title": "French Indochina in World War II (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/French_Indochina_in_World_War_II"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "LAO-3281",
+      "LAO-3280",
+      "LAO-3295",
+      "LAO-3294"
+     ],
+     "owner": "France",
+     "territory": "French Laos",
+     "source": {
+      "title": "French protectorate of Laos (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_protectorate_of_Laos"
+     },
+     "hatch": {
+      "by": "Japan",
+      "since": "1941-07-28",
+      "note": "Japanese troops stationed in all of French Indochina from July 1941, under the French administration; Japan takes full control on 9 March 1945",
+      "source": {
+       "title": "French Indochina in World War II (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/French_Indochina_in_World_War_II"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "KHM-1795",
+      "KHM-1794",
+      "KHM-1793",
+      "KHM-1784",
+      "KHM-1801",
+      "KHM-1790",
+      "KHM-1786",
+      "KHM-1802",
+      "KHM-1797",
+      "KHM-1779",
+      "KHM-1780",
+      "KHM-1792",
+      "KHM-1800",
+      "KHM-1798",
+      "KHM-1785",
+      "KHM-1788",
+      "KHM-1787",
+      "KHM-1789",
+      "angkor"
+     ],
+     "owner": "France",
+     "territory": "French Cambodia",
+     "source": {
+      "title": "French protectorate of Cambodia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_protectorate_of_Cambodia"
+     },
+     "hatch": {
+      "by": "Japan",
+      "since": "1941-07-28",
+      "note": "Japanese troops stationed in all of French Indochina from July 1941, under the French administration; Japan takes full control on 9 March 1945",
+      "source": {
+       "title": "French Indochina in World War II (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/French_Indochina_in_World_War_II"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1945-08-18",
+   "what": "France gives Guangzhouwan back to China",
+   "source": {
+    "title": "Guangzhouwan (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Guangzhouwan"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "guangzhouwan"
+     ],
+     "owner": "France",
+     "territory": "Guangzhouwan",
+     "source": {
+      "title": "Guangzhouwan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Guangzhouwan"
+     },
+     "hatch": {
+      "by": "Japan",
+      "since": "1943-02-21",
+      "note": "Occupied by Japan from February 1943 to August 1945",
+      "source": {
+       "title": "Guangzhouwan (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Guangzhouwan"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-08-25",
+   "what": "Paris is liberated; by the autumn of 1944 nearly all of France is free (the last German pockets on the Atlantic coast hold out until May 1945)",
+   "source": {
+    "title": "Liberation of France (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Liberation_of_France"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "FRA-5330",
+      "FRA-5268",
+      "FRA-5263",
+      "FRA-5326",
+      "FRA-5325",
+      "FRA-5348",
+      "FRA-5287",
+      "FRA-5278",
+      "FRA-5353",
+      "FRA-5316",
+      "FRA-5327",
+      "FRA-5292",
+      "FRA-5283",
+      "FRA-5308",
+      "FRA-5322",
+      "FRA-5275",
+      "FRA-5290",
+      "FRA-5343",
+      "FRA-5345",
+      "FRA-5334",
+      "FRA-5324",
+      "FRA-5340",
+      "FRA-5300",
+      "FRA-5323",
+      "FRA-5355",
+      "FRA-5317",
+      "FRA-5321",
+      "FRA-5270",
+      "FRA-5333",
+      "FRA-5306",
+      "FRA-5344",
+      "FRA-5349",
+      "FRA-5357",
+      "FRA-5291",
+      "FRA-5329",
+      "FRA-5282",
+      "FRA-5331",
+      "FRA-5332",
+      "FRA-5301",
+      "FRA-5285",
+      "FRA-5356",
+      "FRA-5289",
+      "FRA-5342",
+      "FRA-5350",
+      "pyrenees-atlantiques-occupied",
+      "jura-occupied",
+      "landes-occupied",
+      "gironde-occupied",
+      "indre-et-loire-occupied",
+      "loir-et-cher-occupied",
+      "dordogne-occupied",
+      "allier-occupied",
+      "charente-occupied",
+      "cher-occupied",
+      "saone-et-loire-occupied",
+      "vienne-occupied"
+     ],
+     "owner": "France",
+     "source": {
+      "title": "Vichy France (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Vichy_France"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1940-06-22",
+      "note": "The occupied zone of the armistice of 22 June 1940, north and west of the demarcation line",
+      "source": {
+       "title": "Zone d'occupation allemande en France (Wikipédia)",
+       "url": "https://fr.wikipedia.org/wiki/Zone_d%27occupation_allemande_en_France"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "FRA-5273",
+      "FRA-5296",
+      "FRA-5328"
+     ],
+     "owner": "France",
+     "source": {
+      "title": "Vichy France (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Vichy_France"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1940-08-07",
+      "note": "Annexed de facto by Germany in 1940, never recognised in law",
+      "source": {
+       "title": "Annexion de l'Alsace-Moselle (1940) (Wikipédia)",
+       "url": "https://fr.wikipedia.org/wiki/Annexion_de_l%27Alsace-Moselle_(1940)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "FRA-5298",
+      "FRA-5305",
+      "FRA-5269",
+      "FRA-5337",
+      "FRA-5262",
+      "FRA-5274",
+      "FRA-5293",
+      "FRA-5307",
+      "FRA-5271",
+      "FRA-5294",
+      "FRA-5303",
+      "FRA-5280",
+      "FRA-5347",
+      "FRA-5346",
+      "FRA-5272",
+      "FRA-5318",
+      "FRA-5309",
+      "FRA-5284",
+      "FRA-5352",
+      "FRA-5338",
+      "FRA-5267",
+      "FRA-5315",
+      "FRA-5335",
+      "FRA-5299",
+      "FRA-5276",
+      "FRA-5319",
+      "FRA-5320",
+      "FRA-5336",
+      "FRA-5312",
+      "FRA-5313",
+      "FRA-5295",
+      "FRA-5310",
+      "FRA-5314",
+      "FRA-5286",
+      "FRA-5264",
+      "FRA-5277",
+      "FRA-5279",
+      "FRA-5339",
+      "FRA-5354"
+     ],
+     "owner": "France",
+     "source": {
+      "title": "Vichy France (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Vichy_France"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1942-11-11",
+      "note": "The free zone, occupied by Germany from 11 November 1942",
+      "source": {
+       "title": "Zone libre (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Zone_libre"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "FRA-5266",
+      "FRA-5265",
+      "FRA-5304",
+      "FRA-5341",
+      "FRA-5302",
+      "FRA-5351",
+      "FRA-5288",
+      "FRA-5311"
+     ],
+     "owner": "France",
+     "source": {
+      "title": "Vichy France (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Vichy_France"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1943-09-08",
+      "note": "The Italian zone, occupied by Germany after Italy's armistice of 8 September 1943",
+      "source": {
+       "title": "Italian occupation of France (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Italian_occupation_of_France"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-01-01",
+   "what": "France hands its powers to the Syrian government: Syria is independent",
+   "source": {
+    "title": "Syria (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Syria"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "SYR",
+      "golan"
+     ],
+     "owner": "France",
+     "territory": "Mandatory Syria",
+     "source": {
+      "title": "First Syrian Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/First_Syrian_Republic"
+     },
+     "hatch": {
+      "by": "League of Nations",
+      "since": "1923-09-29",
+      "trust": true,
+      "note": "Administered by France under a League of Nations mandate from 1923",
+      "source": {
+       "title": "Mandate for Syria and the Lebanon (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Mandate_for_Syria_and_the_Lebanon"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-11-22",
+   "what": "Lebanon becomes independent",
+   "source": {
+    "title": "Lebanon (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Lebanon"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "LBN"
+     ],
+     "owner": "France",
+     "territory": "Mandatory Lebanon",
+     "source": {
+      "title": "Greater Lebanon (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Greater_Lebanon"
+     },
+     "hatch": {
+      "by": "League of Nations",
+      "since": "1923-09-29",
+      "trust": true,
+      "note": "Administered by France under a League of Nations mandate from 1923",
+      "source": {
+       "title": "Mandate for Syria and the Lebanon (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Mandate_for_Syria_and_the_Lebanon"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-10-04",
+   "what": "Corsica is liberated",
+   "source": {
+    "title": "Liberation of Corsica (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Liberation_of_Corsica"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "FRA-5297",
+      "FRA-5281"
+     ],
+     "owner": "France",
+     "source": {
+      "title": "Vichy France (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Vichy_France"
+     },
+     "hatch": {
+      "by": "Italy",
+      "since": "1942-11-11",
+      "note": "Corsica, occupied by Italy from 11 November 1942 until its liberation in October 1943",
+      "source": {
+       "title": "Italian occupation of France (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Italian_occupation_of_France"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-09-08",
+   "what": "Italy's armistice: Germany takes over the Italian occupation zone",
+   "source": {
+    "title": "Italian occupation of France (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Italian_occupation_of_France"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "FRA-5266",
+      "FRA-5265",
+      "FRA-5304",
+      "FRA-5341",
+      "FRA-5302",
+      "FRA-5351",
+      "FRA-5288",
+      "FRA-5311"
+     ],
+     "owner": "France",
+     "source": {
+      "title": "Vichy France (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Vichy_France"
+     },
+     "hatch": {
+      "by": "Italy",
+      "since": "1942-11-11",
+      "note": "The Italian occupation zone east of the Rhône, from 11 November 1942 to Italy's armistice of 8 September 1943",
+      "source": {
+       "title": "Italian occupation of France (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Italian_occupation_of_France"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-05-13",
+   "what": "The Axis forces in Tunisia surrender",
+   "source": {
+    "title": "Tunisian campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tunisian_campaign"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TUN-108",
+      "TUN-104",
+      "TUN-102",
+      "TUN-105",
+      "TUN-107",
+      "TUN-120",
+      "TUN-119",
+      "TUN-117",
+      "TUN-116",
+      "TUN-114",
+      "TUN-118",
+      "TUN-111",
+      "TUN-96"
+     ],
+     "owner": "France",
+     "territory": "French Tunisia",
+     "source": {
+      "title": "French protectorate of Tunisia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_protectorate_of_Tunisia"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1942-11-09",
+      "note": "Held by German and Italian forces from November 1942 to May 1943",
+      "source": {
+       "title": "Tunisian campaign (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Tunisian_campaign"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-02-21",
+   "what": "Japan occupies Guangzhouwan",
+   "source": {
+    "title": "Guangzhouwan (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Guangzhouwan"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "guangzhouwan"
+     ],
+     "owner": "France",
+     "territory": "Guangzhouwan",
+     "source": {
+      "title": "Guangzhouwan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Guangzhouwan"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-01-08",
+   "what": "The British hand Madagascar over to the Free French",
+   "source": {
+    "title": "Battle of Madagascar (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Madagascar"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MDG",
+      "COM",
+      "FRA-4602"
+     ],
+     "owner": "France",
+     "territory": "French Madagascar",
+     "source": {
+      "title": "French Madagascar (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Madagascar"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1942-05-05",
+      "note": "Taken by British forces from May to November 1942",
+      "source": {
+       "title": "Battle of Madagascar (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Battle_of_Madagascar"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1942-11-11",
+   "what": "Germany and Italy occupy the free zone",
+   "source": {
+    "title": "Zone libre (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Zone_libre"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "FRA-5298",
+      "FRA-5305",
+      "FRA-5269",
+      "FRA-5337",
+      "FRA-5262",
+      "FRA-5274",
+      "FRA-5293",
+      "FRA-5307",
+      "FRA-5271",
+      "FRA-5294",
+      "FRA-5303",
+      "FRA-5280",
+      "FRA-5347",
+      "FRA-5346",
+      "FRA-5272",
+      "FRA-5318",
+      "FRA-5309",
+      "FRA-5284",
+      "FRA-5352",
+      "FRA-5338",
+      "FRA-5267",
+      "FRA-5315",
+      "FRA-5335",
+      "FRA-5299",
+      "FRA-5276",
+      "FRA-5319",
+      "FRA-5320",
+      "FRA-5336",
+      "FRA-5312",
+      "FRA-5313",
+      "FRA-5295",
+      "FRA-5310",
+      "FRA-5314",
+      "FRA-5286",
+      "FRA-5264",
+      "FRA-5277",
+      "FRA-5279",
+      "FRA-5339",
+      "FRA-5354"
+     ],
+     "owner": "France",
+     "source": {
+      "title": "Vichy France (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Vichy_France"
+     }
+    },
+    {
+     "pieces": [
+      "FRA-5266",
+      "FRA-5265",
+      "FRA-5304",
+      "FRA-5341",
+      "FRA-5302",
+      "FRA-5351",
+      "FRA-5288",
+      "FRA-5311"
+     ],
+     "owner": "France",
+     "source": {
+      "title": "Vichy France (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Vichy_France"
+     }
+    },
+    {
+     "pieces": [
+      "FRA-5297",
+      "FRA-5281"
+     ],
+     "owner": "France",
+     "source": {
+      "title": "Vichy France (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Vichy_France"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1942-11-09",
+   "what": "German and Italian forces land in Tunisia",
+   "source": {
+    "title": "Tunisian campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tunisian_campaign"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "TUN-108",
+      "TUN-104",
+      "TUN-102",
+      "TUN-105",
+      "TUN-107",
+      "TUN-120",
+      "TUN-119",
+      "TUN-117",
+      "TUN-116",
+      "TUN-114",
+      "TUN-118",
+      "TUN-111",
+      "TUN-96"
+     ],
+     "owner": "France",
+     "territory": "French Tunisia",
+     "source": {
+      "title": "French protectorate of Tunisia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_protectorate_of_Tunisia"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1942-05-05",
+   "what": "British forces land in Madagascar",
+   "source": {
+    "title": "Battle of Madagascar (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Madagascar"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MDG",
+      "COM",
+      "FRA-4602"
+     ],
+     "owner": "France",
+     "territory": "French Madagascar",
+     "source": {
+      "title": "French Madagascar (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Madagascar"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-07-28",
+   "what": "Japanese troops enter southern Indochina",
+   "source": {
+    "title": "French Indochina in World War II (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_Indochina_in_World_War_II"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "VNM-487",
+      "VNM-488",
+      "VNM-485",
+      "VNM-482",
+      "VNM-479",
+      "VNM-481",
+      "VNM-496",
+      "VNM-486",
+      "VNM-478",
+      "VNM-477",
+      "VNM-4835",
+      "VNM-480"
+     ],
+     "owner": "France",
+     "territory": "Annam",
+     "source": {
+      "title": "Annam (French protectorate) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Annam_(French_protectorate)"
+     }
+    },
+    {
+     "pieces": [
+      "VNM-484",
+      "VNM-444",
+      "VNM-503",
+      "VNM-500",
+      "VNM-498",
+      "VNM-502",
+      "VNM-508",
+      "VNM-4834",
+      "VNM-495",
+      "VNM-501",
+      "VNM-507",
+      "VNM-506",
+      "VNM-505",
+      "VNM-510",
+      "VNM-509",
+      "VNM-504",
+      "VNM-497",
+      "VNM-483",
+      "VNM-499"
+     ],
+     "owner": "France",
+     "territory": "French Cochinchina",
+     "source": {
+      "title": "French Cochinchina (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Cochinchina"
+     }
+    },
+    {
+     "pieces": [
+      "LAO-3281",
+      "LAO-3280",
+      "LAO-3295",
+      "LAO-3294"
+     ],
+     "owner": "France",
+     "territory": "French Laos",
+     "source": {
+      "title": "French protectorate of Laos (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_protectorate_of_Laos"
+     }
+    },
+    {
+     "pieces": [
+      "KHM-1795",
+      "KHM-1794",
+      "KHM-1793",
+      "KHM-1784",
+      "KHM-1801",
+      "KHM-1790",
+      "KHM-1786",
+      "KHM-1802",
+      "KHM-1797",
+      "KHM-1779",
+      "KHM-1780",
+      "KHM-1792",
+      "KHM-1800",
+      "KHM-1798",
+      "KHM-1785",
+      "KHM-1788",
+      "KHM-1787",
+      "KHM-1789",
+      "angkor"
+     ],
+     "owner": "France",
+     "territory": "French Cambodia",
+     "source": {
+      "title": "French protectorate of Cambodia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_protectorate_of_Cambodia"
+     }
+    },
+    {
+     "pieces": [
+      "VNM-456",
+      "VNM-475",
+      "VNM-474",
+      "VNM-476",
+      "quang-tri-north",
+      "VNM-489",
+      "VNM-490",
+      "VNM-491"
+     ],
+     "owner": "France",
+     "territory": "Annam",
+     "source": {
+      "title": "Annam (French protectorate) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Annam_(French_protectorate)"
+     }
+    },
+    {
+     "pieces": [
+      "LAO-3291",
+      "LAO-3290",
+      "LAO-3272",
+      "LAO-3271",
+      "LAO-3292",
+      "LAO-3293",
+      "LAO-3282",
+      "LAO-3283",
+      "LAO-3284",
+      "LAO-3289",
+      "LAO-3288",
+      "LAO-3286",
+      "saravan-north"
+     ],
+     "owner": "France",
+     "territory": "French Laos",
+     "source": {
+      "title": "French protectorate of Laos (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_protectorate_of_Laos"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-05-09",
+   "what": "By the Treaty of Tokyo, France cedes to Thailand Battambang, most of Siem Reap and the land west of the Mekong in Laos and Cambodia",
+   "source": {
+    "title": "Franco-Thai War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Franco-Thai_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "KHM-1778",
+      "KHM-1783",
+      "KHM-1777",
+      "KHM-1782",
+      "KHM-1781",
+      "KHM-1791",
+      "stung-treng-west"
+     ],
+     "owner": "France",
+     "territory": "French Cambodia",
+     "source": {
+      "title": "French protectorate of Cambodia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_protectorate_of_Cambodia"
+     }
+    },
+    {
+     "pieces": [
+      "LAO-3278",
+      "champasak-west"
+     ],
+     "owner": "France",
+     "territory": "French Laos",
+     "source": {
+      "title": "French protectorate of Laos (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_protectorate_of_Laos"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1940-09-22",
+   "what": "Japanese troops enter Tonkin",
+   "source": {
+    "title": "French Indochina in World War II (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_Indochina_in_World_War_II"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "VNM-450",
+      "VNM-455",
+      "VNM-512",
+      "VNM-511",
+      "VNM-5483",
+      "VNM-453",
+      "VNM-454",
+      "VNM-429",
+      "VNM-466",
+      "VNM-468",
+      "VNM-471",
+      "VNM-4600",
+      "VNM-459",
+      "VNM-457",
+      "VNM-458",
+      "VNM-464",
+      "VNM-469",
+      "VNM-462",
+      "VNM-451",
+      "VNM-461",
+      "VNM-463",
+      "VNM-470",
+      "VNM-452",
+      "VNM-460",
+      "VNM-467"
+     ],
+     "owner": "France",
+     "territory": "Tonkin",
+     "source": {
+      "title": "Tonkin (French protectorate) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tonkin_(French_protectorate)"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1940-08-07",
+   "what": "Germany annexes Alsace and Moselle de facto",
+   "source": {
+    "title": "Annexion de l'Alsace-Moselle (1940) (Wikipédia)",
+    "url": "https://fr.wikipedia.org/wiki/Annexion_de_l%27Alsace-Moselle_(1940)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "FRA-5273",
+      "FRA-5296",
+      "FRA-5328"
+     ],
+     "owner": "France",
+     "source": {
+      "title": "Vichy France (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Vichy_France"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1940-06-22",
+      "note": "The occupied zone of the armistice of 22 June 1940, north and west of the demarcation line",
+      "source": {
+       "title": "Zone d'occupation allemande en France (Wikipédia)",
+       "url": "https://fr.wikipedia.org/wiki/Zone_d%27occupation_allemande_en_France"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1940-06-22",
+   "what": "The armistice of 22 June 1940 divides France",
+   "source": {
+    "title": "Zone d'occupation allemande en France (Wikipédia)",
+    "url": "https://fr.wikipedia.org/wiki/Zone_d%27occupation_allemande_en_France"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "FRA-5330",
+      "FRA-5268",
+      "FRA-5263",
+      "FRA-5326",
+      "FRA-5325",
+      "FRA-5348",
+      "FRA-5287",
+      "FRA-5278",
+      "FRA-5353",
+      "FRA-5316",
+      "FRA-5327",
+      "FRA-5292",
+      "FRA-5283",
+      "FRA-5308",
+      "FRA-5322",
+      "FRA-5275",
+      "FRA-5290",
+      "FRA-5343",
+      "FRA-5345",
+      "FRA-5334",
+      "FRA-5324",
+      "FRA-5340",
+      "FRA-5300",
+      "FRA-5323",
+      "FRA-5355",
+      "FRA-5317",
+      "FRA-5321",
+      "FRA-5270",
+      "FRA-5333",
+      "FRA-5306",
+      "FRA-5344",
+      "FRA-5349",
+      "FRA-5357",
+      "FRA-5291",
+      "FRA-5329",
+      "FRA-5282",
+      "FRA-5331",
+      "FRA-5332",
+      "FRA-5301",
+      "FRA-5285",
+      "FRA-5356",
+      "FRA-5289",
+      "FRA-5342",
+      "FRA-5350",
+      "pyrenees-atlantiques-occupied",
+      "jura-occupied",
+      "landes-occupied",
+      "gironde-occupied",
+      "indre-et-loire-occupied",
+      "loir-et-cher-occupied",
+      "dordogne-occupied",
+      "allier-occupied",
+      "charente-occupied",
+      "cher-occupied",
+      "saone-et-loire-occupied",
+      "vienne-occupied",
+      "FRA-5273",
+      "FRA-5296",
+      "FRA-5328"
+     ],
+     "owner": "France",
+     "source": {
+      "title": "French Third Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Third_Republic"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1940-06-14",
+   "what": "Spain occupies Tangier",
+   "source": {
+    "title": "Tangier International Zone (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tangier_International_Zone"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "tangier-zone"
+     ],
+     "owner": "Tangier International Zone",
+     "source": {
+      "title": "Tangier International Zone (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tangier_International_Zone"
      }
     }
    ]

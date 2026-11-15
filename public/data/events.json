@@ -1108,7 +1108,7 @@
     52.487
    ],
    "civs": [
-    "french-fourth-republic",
+    "france",
     "nazi-germany",
     "union-of-soviet-socialist-republics",
     "kingdom-of-great-britain",
@@ -2725,6 +2725,406 @@
    "summary": "Fourteen months after the fall of Saigon, North and South become one country again: the Socialist Republic of Vietnam, with Hanoi as its capital. Saigon is renamed Ho Chi Minh City. Hundreds of thousands of South Vietnamese are sent to re-education camps, and many flee by sea in the following years.",
    "wikipedia": "Vietnam",
    "search": "Vietnam reunification 2 July 1976 Socialist Republic of Vietnam"
+  },
+  {
+   "id": "france-declares-war-1939",
+   "kind": "war",
+   "year": 1939,
+   "title": "France declares war on Germany, 3 September 1939",
+   "place": "Paris",
+   "lonLat": [
+    2.32,
+    48.86
+   ],
+   "civs": [
+    "france",
+    "germany",
+    "united-kingdom"
+   ],
+   "summary": "Two days after Germany invades Poland, France and the United Kingdom, bound to Poland by their guarantees, declare war on Germany. Apart from a short offensive in the Saar, the French army waits behind the Maginot Line: months of \"phoney war\" follow.",
+   "wikipedia": "Phoney_War",
+   "search": "France declares war on Germany 1939 Second World War"
+  },
+  {
+   "id": "battle-of-france-1940",
+   "kind": "war",
+   "year": 1940,
+   "title": "The Battle of France, 10 May – 25 June 1940",
+   "place": "From the Meuse to Dunkirk",
+   "lonLat": [
+    2.37,
+    51.03
+   ],
+   "civs": [
+    "france",
+    "germany",
+    "united-kingdom"
+   ],
+   "summary": "Germany attacks the Netherlands, Belgium and France. Its tanks cross the Ardennes and break through at Sedan on 13 May, then race to the Channel and trap the Allied armies in the north; more than 300,000 soldiers are evacuated from Dunkirk. Paris falls on 14 June, and in six weeks the French army is beaten.",
+   "wikipedia": "Battle_of_France",
+   "search": "Battle of France 1940 Sedan Dunkirk"
+  },
+  {
+   "id": "appeal-of-18-june-1940",
+   "kind": "revolution",
+   "year": 1940,
+   "title": "The Appeal of 18 June 1940",
+   "place": "Broadcast from London; heard in Brittany and Île de Sein",
+   "lonLat": [
+    -4.4,
+    48.05
+   ],
+   "civs": [
+    "france",
+    "united-kingdom"
+   ],
+   "summary": "The day after Marshal Pétain asks for an armistice, General Charles de Gaulle speaks on the BBC from London: \"Whatever happens, the flame of French resistance must not and shall not go out.\" Few hear it, but it founds Free France. Among the first to answer are the fishermen of the Île de Sein, who sail to England.",
+   "wikipedia": "Appeal_of_18_June",
+   "search": "Appeal of 18 June de Gaulle BBC Free France"
+  },
+  {
+   "id": "armistice-22-june-1940",
+   "kind": "treaty",
+   "year": 1940,
+   "title": "The Armistice of 22 June 1940 divides France",
+   "place": "Rethondes, Compiègne forest",
+   "lonLat": [
+    2.906,
+    49.427
+   ],
+   "civs": [
+    "france",
+    "germany"
+   ],
+   "summary": "Hitler has the armistice signed in the same railway carriage as the German defeat of 1918. Germany occupies the north and the Atlantic coast, three fifths of the country, behind a demarcation line; the south stays a \"free zone\" under the French government. France keeps its empire and its fleet, and pays the costs of the occupation.",
+   "wikipedia": "Armistice_of_22_June_1940",
+   "search": "Armistice of 22 June 1940 Compiègne Rethondes demarcation line"
+  },
+  {
+   "id": "vichy-full-powers-1940",
+   "kind": "crown",
+   "year": 1940,
+   "title": "Pétain is given full powers: Vichy France, 10 July 1940",
+   "place": "Vichy",
+   "lonLat": [
+    3.426,
+    46.127
+   ],
+   "civs": [
+    "france"
+   ],
+   "summary": "Meeting in the spa town of Vichy, the National Assembly gives Marshal Philippe Pétain full powers to write a new constitution. The next day he makes himself head of the \"French State\": the Third Republic ends, and the Vichy regime, authoritarian and soon collaborating with Germany, governs France until 1944.",
+   "wikipedia": "Vichy_France",
+   "search": "Vichy France Pétain full powers 10 July 1940 French State"
+  },
+  {
+   "id": "japan-enters-tonkin-1940",
+   "kind": "war",
+   "year": 1940,
+   "title": "Japan enters Tonkin, 22 September 1940",
+   "place": "Lạng Sơn",
+   "lonLat": [
+    106.76,
+    21.85
+   ],
+   "civs": [
+    "tonkin",
+    "japan",
+    "france"
+   ],
+   "summary": "To cut the supply route to China, Japan forces the French authorities in Indochina to let it station troops in Tonkin. Japanese troops attack the border post of Lạng Sơn the same day before the fighting stops. In July 1941 they spread to all of Indochina, which the French still govern under Japan's watch.",
+   "wikipedia": "Japanese_invasion_of_French_Indochina",
+   "search": "Japanese invasion of French Indochina 1940 Lang Son"
+  },
+  {
+   "id": "franco-thai-war-1940",
+   "kind": "war",
+   "year": 1940,
+   "to": 1941,
+   "title": "The Franco-Thai War and the Treaty of Tokyo, 1940 – 1941",
+   "place": "Battambang",
+   "lonLat": [
+    103.2,
+    13.1
+   ],
+   "civs": [
+    "french-cambodia",
+    "thailand",
+    "french-laos",
+    "france"
+   ],
+   "summary": "Thailand seizes on France's defeat to claim the lands it lost in 1904 and 1907. After border fights, its army enters Laos and Cambodia in January 1941; the French navy wins at Koh Chang, but Japan imposes a ceasefire. By the Treaty of Tokyo of 9 May 1941, France cedes Battambang, most of Siem Reap and the land west of the Mekong. Thailand gives them back in 1946.",
+   "wikipedia": "Franco-Thai_War",
+   "search": "Franco-Thai War 1940 1941 Treaty of Tokyo Battambang"
+  },
+  {
+   "id": "syria-lebanon-campaign-1941",
+   "kind": "war",
+   "year": 1941,
+   "title": "The Syria–Lebanon campaign, 8 June – 14 July 1941",
+   "place": "Damascus",
+   "lonLat": [
+    36.29,
+    33.51
+   ],
+   "civs": [
+    "mandatory-syria",
+    "mandatory-lebanon",
+    "france",
+    "united-kingdom"
+   ],
+   "summary": "Vichy France lets German planes refuel in Syria to help a revolt in Iraq. British, Australian, Indian and Free French troops invade the mandate, and French fight French; Damascus falls on 21 June. By the armistice of Saint-Jean-d'Acre, Syria and Lebanon pass to the Free French, who promise them independence.",
+   "wikipedia": "Syria–Lebanon_campaign",
+   "search": "Syria Lebanon campaign 1941 Vichy Free French"
+  },
+  {
+   "id": "battle-of-madagascar-1942",
+   "kind": "battle",
+   "year": 1942,
+   "title": "The Battle of Madagascar, 5 May – 6 November 1942",
+   "place": "Diego-Suarez",
+   "lonLat": [
+    49.29,
+    -12.28
+   ],
+   "civs": [
+    "french-madagascar",
+    "united-kingdom",
+    "france"
+   ],
+   "summary": "Fearing that Vichy France would let Japanese submarines use the naval base of Diego-Suarez, British forces land in the north of Madagascar. After a long campaign across the island, the Vichy governor surrenders in November. The British hand Madagascar over to the Free French in January 1943.",
+   "wikipedia": "Battle_of_Madagascar",
+   "search": "Battle of Madagascar 1942 Diego-Suarez Operation Ironclad"
+  },
+  {
+   "id": "operation-torch-1942",
+   "kind": "battle",
+   "year": 1942,
+   "title": "Operation Torch: the Allies land in North Africa, 8 November 1942",
+   "place": "Algiers, Oran and Casablanca",
+   "lonLat": [
+    3.06,
+    36.75
+   ],
+   "civs": [
+    "french-algeria",
+    "united-states",
+    "united-kingdom",
+    "france"
+   ],
+   "summary": "American and British troops land in Morocco and Algeria. Vichy's forces fight for a few days, then Admiral Darlan, in Algiers, orders a ceasefire and French North Africa joins the Allies. The French army of Africa returns to the war, in Tunisia, then in Italy and France.",
+   "wikipedia": "Operation_Torch",
+   "search": "Operation Torch 1942 Allied landings North Africa Algiers Casablanca Oran"
+  },
+  {
+   "id": "free-zone-occupied-1942",
+   "kind": "war",
+   "year": 1942,
+   "title": "Germany and Italy occupy the free zone, 11 November 1942",
+   "place": "Lyon",
+   "lonLat": [
+    4.84,
+    45.76
+   ],
+   "civs": [
+    "france",
+    "germany",
+    "italy"
+   ],
+   "summary": "In answer to the Allied landings in North Africa, German troops cross the demarcation line and occupy the south of France, while Italy takes the land east of the Rhône and Corsica. The Vichy government stays in place, but all of France is now occupied.",
+   "wikipedia": "Case_Anton",
+   "search": "Case Anton occupation of the free zone November 1942"
+  },
+  {
+   "id": "scuttling-toulon-1942",
+   "kind": "battle",
+   "year": 1942,
+   "title": "The scuttling of the French fleet at Toulon, 27 November 1942",
+   "place": "Toulon",
+   "lonLat": [
+    5.95,
+    43.16
+   ],
+   "civs": [
+    "france",
+    "germany"
+   ],
+   "summary": "As German troops enter the naval base to seize it, the French navy sinks its own ships so that neither Germany nor the Allies can have them. Seventy-seven vessels, among them three battleships and seven cruisers, go down in the harbour.",
+   "wikipedia": "Scuttling_of_the_French_fleet_at_Toulon",
+   "search": "Scuttling of the French fleet at Toulon 1942"
+  },
+  {
+   "id": "liberation-of-corsica-1943",
+   "kind": "battle",
+   "year": 1943,
+   "title": "The liberation of Corsica, September – October 1943",
+   "place": "Ajaccio",
+   "lonLat": [
+    8.82,
+    41.96
+   ],
+   "civs": [
+    "france",
+    "italy",
+    "germany"
+   ],
+   "summary": "After Italy's armistice, the Corsican resistance rises and Free French troops land from Algiers, helped by Italian units now on the Allied side. The German troops withdraw to Bastia and leave on 4 October 1943: Corsica is the first French department to be liberated.",
+   "wikipedia": "Liberation_of_Corsica",
+   "search": "Liberation of Corsica 1943"
+  },
+  {
+   "id": "lebanon-independence-1943",
+   "kind": "empire",
+   "year": 1943,
+   "title": "Lebanon becomes independent, 22 November 1943",
+   "place": "Beirut",
+   "lonLat": [
+    35.5,
+    33.89
+   ],
+   "civs": [
+    "lebanon",
+    "mandatory-lebanon",
+    "france"
+   ],
+   "summary": "Lebanon's new parliament removes the French mandate from the constitution. The Free French authorities arrest the president, Bechara El Khoury, and his ministers; strikes and protests, and pressure from Britain, force their release eleven days later. 22 November is Lebanon's Independence Day; the last French troops leave in 1946.",
+   "wikipedia": "Lebanese_Independence_Day",
+   "search": "Lebanon independence 22 November 1943"
+  },
+  {
+   "id": "d-day-1944",
+   "kind": "battle",
+   "year": 1944,
+   "title": "D-Day: the Normandy landings, 6 June 1944",
+   "place": "Normandy beaches",
+   "lonLat": [
+    -0.57,
+    49.34
+   ],
+   "civs": [
+    "france",
+    "united-states",
+    "united-kingdom",
+    "germany"
+   ],
+   "summary": "More than 150,000 American, British, Canadian and Free French soldiers land on five beaches of Normandy, after paratroopers have dropped behind them during the night. The Battle of Normandy lasts until the end of August and opens the way to Paris and the liberation of western Europe.",
+   "wikipedia": "Normandy_landings",
+   "search": "D-Day Normandy landings 6 June 1944 Overlord"
+  },
+  {
+   "id": "operation-dragoon-1944",
+   "kind": "battle",
+   "year": 1944,
+   "title": "Operation Dragoon: the Provence landings, 15 August 1944",
+   "place": "Coast of Provence, near Saint-Tropez",
+   "lonLat": [
+    6.55,
+    43.32
+   ],
+   "civs": [
+    "france",
+    "united-states",
+    "germany"
+   ],
+   "summary": "American troops and the French First Army, largely from North Africa, land between Toulon and Cannes. They free Toulon and Marseille by the end of August and race up the Rhône valley, meeting the troops from Normandy in Burgundy in September.",
+   "wikipedia": "Operation_Dragoon",
+   "search": "Operation Dragoon Provence landings 15 August 1944"
+  },
+  {
+   "id": "liberation-of-paris-1944",
+   "kind": "battle",
+   "year": 1944,
+   "title": "The liberation of Paris, 19 – 25 August 1944",
+   "place": "Paris",
+   "lonLat": [
+    2.35,
+    48.85
+   ],
+   "civs": [
+    "france",
+    "germany"
+   ],
+   "summary": "The Paris resistance rises on 19 August. General Leclerc's 2nd Armoured Division enters the city on the 24th, and the next day the German commander, General von Choltitz, surrenders without carrying out Hitler's order to destroy it. Charles de Gaulle walks down the Champs-Élysées on 26 August.",
+   "wikipedia": "Liberation_of_Paris",
+   "search": "Liberation of Paris 25 August 1944"
+  },
+  {
+   "id": "japanese-coup-indochina-1945",
+   "kind": "war",
+   "year": 1945,
+   "title": "The Japanese coup in Indochina, 9 March 1945",
+   "place": "Huế and the whole of Indochina",
+   "lonLat": [
+    107.58,
+    16.47
+   ],
+   "civs": [
+    "france",
+    "japan",
+    "annam",
+    "tonkin"
+   ],
+   "summary": "Expecting an Allied landing, Japan overthrows the French administration in one night and attacks French garrisons across Indochina; thousands of French soldiers and civilians are killed or interned. Japan has Emperor Bảo Đại proclaim an \"Empire of Vietnam\" in Huế, and the kings of Cambodia and Laos declare independence.",
+   "wikipedia": "Japanese_coup_d'état_in_French_Indochina",
+   "search": "Japanese coup d'etat French Indochina 9 March 1945 Empire of Vietnam"
+  },
+  {
+   "id": "levant-crisis-1945",
+   "kind": "war",
+   "year": 1945,
+   "title": "The Levant crisis, May – June 1945",
+   "place": "Damascus",
+   "lonLat": [
+    36.29,
+    33.51
+   ],
+   "civs": [
+    "syria",
+    "lebanon",
+    "france",
+    "united-kingdom"
+   ],
+   "summary": "France lands more troops in Syria and Lebanon to keep its influence there. Protests turn into fighting, and on 29 May French artillery and planes shell Damascus, killing hundreds. Churchill threatens to intervene, British troops step in and the French are confined to their barracks; the last French troops leave Syria in April 1946 and Lebanon in December 1946.",
+   "wikipedia": "Levant_Crisis",
+   "search": "Levant Crisis 1945 Damascus bombardment"
+  },
+  {
+   "id": "guangzhouwan-returned-1945",
+   "kind": "treaty",
+   "year": 1945,
+   "title": "Guangzhouwan returns to China, 18 August 1945",
+   "place": "Fort-Bayard (Zhanjiang)",
+   "lonLat": [
+    110.4,
+    21.2
+   ],
+   "civs": [
+    "guangzhouwan",
+    "china",
+    "france"
+   ],
+   "summary": "Leased to France in 1898 and run from Hanoi as part of French Indochina, the territory around Zhanjiang bay was occupied by Japan in February 1943. Three days after Japan's surrender, France agrees to give it back to the Republic of China. The town of Fort-Bayard becomes Zhanjiang.",
+   "wikipedia": "Guangzhouwan",
+   "search": "Guangzhouwan Kouang-Tcheou-Wan returned to China 1945"
+  },
+  {
+   "id": "vietnam-independence-1945",
+   "kind": "revolution",
+   "year": 1945,
+   "title": "Hồ Chí Minh declares Vietnam's independence, 2 September 1945",
+   "place": "Ba Đình Square, Hanoi",
+   "lonLat": [
+    105.835,
+    21.037
+   ],
+   "civs": [
+    "tonkin",
+    "vietnam",
+    "france"
+   ],
+   "summary": "After the Viet Minh's August Revolution and the abdication of Emperor Bảo Đại, Hồ Chí Minh reads the declaration of independence of the Democratic Republic of Vietnam before a huge crowd in Hanoi. France does not accept it: Chinese troops occupy the north, French troops retake the south, and war breaks out at the end of 1946.",
+   "wikipedia": "Declaration_of_independence_of_the_Democratic_Republic_of_Vietnam",
+   "search": "Ho Chi Minh declaration of independence Vietnam 2 September 1945 Ba Dinh"
   }
  ]
 }

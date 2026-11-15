@@ -733,5 +733,110 @@
   "title": "Le Viêt Nam est réunifié, 2 juillet 1976",
   "place": "Hanoï",
   "summary": "Quatorze mois après la chute de Saïgon, le Nord et le Sud ne forment plus qu’un seul pays : la République socialiste du Viêt Nam, avec Hanoï pour capitale. Saïgon est rebaptisée Hô-Chi-Minh-Ville. Des centaines de milliers de Sud-Vietnamiens sont envoyés en camps de rééducation, et beaucoup fuient par la mer dans les années suivantes."
+ },
+ "france-declares-war-1939": {
+  "title": "La France déclare la guerre à l’Allemagne, 3 septembre 1939",
+  "place": "Paris",
+  "summary": "Deux jours après l’invasion de la Pologne par l’Allemagne, la France et le Royaume-Uni, liés à la Pologne par leurs garanties, déclarent la guerre à l’Allemagne. Hormis une courte offensive en Sarre, l’armée française attend derrière la ligne Maginot : suivent des mois de « drôle de guerre »."
+ },
+ "battle-of-france-1940": {
+  "title": "La bataille de France, 10 mai – 25 juin 1940",
+  "place": "De la Meuse à Dunkerque",
+  "summary": "L’Allemagne attaque les Pays-Bas, la Belgique et la France. Ses blindés traversent les Ardennes et percent à Sedan le 13 mai, puis foncent vers la Manche et encerclent les armées alliées du Nord ; plus de 300 000 soldats sont évacués de Dunkerque. Paris tombe le 14 juin et, en six semaines, l’armée française est vaincue."
+ },
+ "appeal-of-18-june-1940": {
+  "title": "L’appel du 18 juin 1940",
+  "place": "Diffusé depuis Londres ; entendu en Bretagne et à l’île de Sein",
+  "summary": "Au lendemain de la demande d’armistice du maréchal Pétain, le général Charles de Gaulle parle à la BBC depuis Londres : « Quoi qu’il arrive, la flamme de la résistance française ne doit pas s’éteindre et ne s’éteindra pas. » Peu l’entendent, mais il fonde la France libre. Parmi les premiers à répondre, les pêcheurs de l’île de Sein partent pour l’Angleterre."
+ },
+ "armistice-22-june-1940": {
+  "title": "L’armistice du 22 juin 1940 coupe la France en deux",
+  "place": "Rethondes, forêt de Compiègne",
+  "summary": "Hitler fait signer l’armistice dans le wagon même de la défaite allemande de 1918. L’Allemagne occupe le Nord et la côte atlantique, les trois cinquièmes du pays, derrière une ligne de démarcation ; le Sud reste une « zone libre » sous le gouvernement français. La France garde son empire et sa flotte, et paie les frais d’occupation."
+ },
+ "vichy-full-powers-1940": {
+  "title": "Pétain reçoit les pleins pouvoirs : le régime de Vichy, 10 juillet 1940",
+  "place": "Vichy",
+  "summary": "Réunie dans la ville thermale de Vichy, l’Assemblée nationale donne au maréchal Philippe Pétain les pleins pouvoirs pour rédiger une nouvelle constitution. Le lendemain, il se fait chef de l’« État français » : la Troisième République prend fin, et le régime de Vichy, autoritaire et bientôt collaborateur, gouverne la France jusqu’en 1944."
+ },
+ "japan-enters-tonkin-1940": {
+  "title": "Le Japon entre au Tonkin, 22 septembre 1940",
+  "place": "Lạng Sơn",
+  "summary": "Pour couper la route de ravitaillement de la Chine, le Japon impose aux autorités françaises d’Indochine le stationnement de ses troupes au Tonkin. Les Japonais attaquent le jour même le poste frontière de Lạng Sơn avant l’arrêt des combats. En juillet 1941, ils s’étendent à toute l’Indochine, que les Français continuent de gouverner sous la surveillance japonaise."
+ },
+ "franco-thai-war-1940": {
+  "title": "La guerre franco-thaïlandaise et le traité de Tokyo, 1940 – 1941",
+  "place": "Battambang",
+  "summary": "La Thaïlande profite de la défaite française pour réclamer les terres perdues en 1904 et 1907. Après des combats frontaliers, son armée entre au Laos et au Cambodge en janvier 1941 ; la marine française l’emporte à Koh Chang, mais le Japon impose un cessez-le-feu. Par le traité de Tokyo du 9 mai 1941, la France cède Battambang, l’essentiel de Siem Reap et les terres à l’ouest du Mékong. La Thaïlande les rend en 1946."
+ },
+ "syria-lebanon-campaign-1941": {
+  "title": "La campagne de Syrie, 8 juin – 14 juillet 1941",
+  "place": "Damas",
+  "summary": "Le régime de Vichy laisse des avions allemands faire escale en Syrie pour aider une révolte en Irak. Des troupes britanniques, australiennes, indiennes et de la France libre envahissent le mandat, et des Français combattent des Français ; Damas tombe le 21 juin. Par l’armistice de Saint-Jean-d’Acre, la Syrie et le Liban passent à la France libre, qui leur promet l’indépendance."
+ },
+ "battle-of-madagascar-1942": {
+  "title": "La bataille de Madagascar, 5 mai – 6 novembre 1942",
+  "place": "Diego-Suarez",
+  "summary": "Craignant que Vichy ne laisse des sous-marins japonais utiliser la base navale de Diego-Suarez, les Britanniques débarquent dans le nord de Madagascar. Après une longue campagne à travers l’île, le gouverneur vichyste capitule en novembre. Les Britanniques remettent Madagascar à la France libre en janvier 1943."
+ },
+ "operation-torch-1942": {
+  "title": "L’opération Torch : les Alliés débarquent en Afrique du Nord, 8 novembre 1942",
+  "place": "Alger, Oran et Casablanca",
+  "summary": "Des troupes américaines et britanniques débarquent au Maroc et en Algérie. Les forces de Vichy combattent quelques jours, puis l’amiral Darlan, à Alger, ordonne le cessez-le-feu et l’Afrique du Nord française rejoint les Alliés. L’armée française d’Afrique reprend la guerre, en Tunisie, puis en Italie et en France."
+ },
+ "free-zone-occupied-1942": {
+  "title": "L’Allemagne et l’Italie occupent la zone libre, 11 novembre 1942",
+  "place": "Lyon",
+  "summary": "En réponse aux débarquements alliés en Afrique du Nord, les troupes allemandes franchissent la ligne de démarcation et occupent le sud de la France, tandis que l’Italie prend les terres à l’est du Rhône et la Corse. Le gouvernement de Vichy reste en place, mais toute la France est désormais occupée."
+ },
+ "scuttling-toulon-1942": {
+  "title": "Le sabordage de la flotte française à Toulon, 27 novembre 1942",
+  "place": "Toulon",
+  "summary": "Alors que les troupes allemandes entrent dans la base navale pour s’en emparer, la marine française saborde ses propres navires pour que ni l’Allemagne ni les Alliés ne puissent les avoir. Soixante-dix-sept bâtiments, dont trois cuirassés et sept croiseurs, coulent dans la rade."
+ },
+ "liberation-of-corsica-1943": {
+  "title": "La libération de la Corse, septembre – octobre 1943",
+  "place": "Ajaccio",
+  "summary": "Après l’armistice italien, la résistance corse se soulève et des troupes de la France libre débarquent depuis Alger, aidées par des unités italiennes passées du côté allié. Les Allemands se replient sur Bastia et partent le 4 octobre 1943 : la Corse est le premier département français libéré."
+ },
+ "lebanon-independence-1943": {
+  "title": "Le Liban devient indépendant, 22 novembre 1943",
+  "place": "Beyrouth",
+  "summary": "Le nouveau Parlement libanais supprime le mandat français de la Constitution. Les autorités de la France libre arrêtent le président Béchara el-Khoury et ses ministres ; grèves, manifestations et pression britannique imposent leur libération onze jours plus tard. Le 22 novembre est la fête de l’indépendance du Liban ; les dernières troupes françaises partent en 1946."
+ },
+ "d-day-1944": {
+  "title": "Le débarquement de Normandie, 6 juin 1944",
+  "place": "Plages de Normandie",
+  "summary": "Plus de 150 000 soldats américains, britanniques, canadiens et français libres débarquent sur cinq plages de Normandie, après que des parachutistes ont été largués derrière elles dans la nuit. La bataille de Normandie dure jusqu’à fin août et ouvre la route de Paris et de la libération de l’Europe de l’Ouest."
+ },
+ "operation-dragoon-1944": {
+  "title": "Le débarquement de Provence, 15 août 1944",
+  "place": "Côte de Provence, près de Saint-Tropez",
+  "summary": "Les troupes américaines et la 1re armée française, venue en grande partie d’Afrique du Nord, débarquent entre Toulon et Cannes. Elles libèrent Toulon et Marseille à la fin d’août et remontent la vallée du Rhône, rejoignant en Bourgogne en septembre les troupes venues de Normandie."
+ },
+ "liberation-of-paris-1944": {
+  "title": "La libération de Paris, 19 – 25 août 1944",
+  "place": "Paris",
+  "summary": "La résistance parisienne se soulève le 19 août. La 2e division blindée du général Leclerc entre dans la ville le 24, et le lendemain le commandant allemand, le général von Choltitz, capitule sans exécuter l’ordre d’Hitler de la détruire. Charles de Gaulle descend les Champs-Élysées le 26 août."
+ },
+ "japanese-coup-indochina-1945": {
+  "title": "Le coup de force japonais en Indochine, 9 mars 1945",
+  "place": "Huế et toute l’Indochine",
+  "summary": "S’attendant à un débarquement allié, le Japon renverse en une nuit l’administration française et attaque les garnisons françaises dans toute l’Indochine ; des milliers de soldats et de civils français sont tués ou internés. Le Japon fait proclamer à Huế par l’empereur Bảo Đại un « Empire du Viêt Nam », et les rois du Cambodge et du Laos déclarent l’indépendance."
+ },
+ "levant-crisis-1945": {
+  "title": "La crise du Levant, mai – juin 1945",
+  "place": "Damas",
+  "summary": "La France débarque de nouvelles troupes en Syrie et au Liban pour y garder son influence. Les manifestations tournent aux combats et, le 29 mai, l’artillerie et l’aviation françaises bombardent Damas, faisant des centaines de morts. Churchill menace d’intervenir, les troupes britanniques s’interposent et les Français sont consignés dans leurs casernes ; les dernières troupes françaises quittent la Syrie en avril 1946 et le Liban en décembre 1946."
+ },
+ "guangzhouwan-returned-1945": {
+  "title": "Kouang-Tchéou-Wan revient à la Chine, 18 août 1945",
+  "place": "Fort-Bayard (Zhanjiang)",
+  "summary": "Cédé à bail à la France en 1898 et administré depuis Hanoï au sein de l’Indochine française, le territoire autour de la baie de Zhanjiang est occupé par le Japon en février 1943. Trois jours après la capitulation japonaise, la France accepte de le rendre à la République de Chine. La ville de Fort-Bayard devient Zhanjiang."
+ },
+ "vietnam-independence-1945": {
+  "title": "Hô Chi Minh proclame l’indépendance du Viêt Nam, 2 septembre 1945",
+  "place": "Place Ba Đình, Hanoï",
+  "summary": "Après la révolution d’Août du Viêt Minh et l’abdication de l’empereur Bảo Đại, Hô Chi Minh lit la déclaration d’indépendance de la République démocratique du Viêt Nam devant une foule immense à Hanoï. La France ne l’accepte pas : les troupes chinoises occupent le Nord, les troupes françaises reprennent le Sud, et la guerre éclate fin 1946."
  }
 }
