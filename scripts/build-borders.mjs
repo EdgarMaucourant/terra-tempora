@@ -551,39 +551,56 @@ for (const s of shapes) {
 }
 // Every place of today (a country, or a territory such as Macau) with the
 // realms and territories that held its land, oldest first.
+// `share` is how much of the place's land the realm ever held (Italy held
+// Tende, a sliver of France), so the timeline can leave the slivers out.
 const places = {};
+const placeArea = {};
 for (const [id, s] of state) {
   if (!s) continue;
   const place = s.territory ?? s.owner;
   const spans = places[place] ?? (places[place] = {});
+  placeArea[place] = (placeArea[place] ?? 0) + pieceArea.get(id);
   for (const [name, [from, to]] of heldBy.get(id) ?? []) {
     const span = spans[name];
-    spans[name] = span ? [Math.min(span[0], from), Math.max(span[1], to)] : [from, to];
+    spans[name] = span ? [Math.min(span[0], from), Math.max(span[1], to), span[2] + pieceArea.get(id)] : [from, to, pieceArea.get(id)];
   }
 }
 for (const [place, spans] of Object.entries(places)) {
   places[place] = Object.entries(spans)
     .sort((a, b) => a[1][0] - b[1][0] || a[1][1] - b[1][1])
-    .map(([name, [from, to]]) => ({ name, from, to }));
+    .map(([name, [from, to, area]]) => ({ name, from, to, share: Math.round((area / placeArea[place]) * 1000) / 1000 }));
 }
 
 // Which realm or territory followed which on the same land, from the pieces
 // each one held: the timeline links a colony to the country it became, not
-// to everything Wikidata says came after it.
-const lineage = {};
-const link = (name, side, other) => {
-  const entry = (lineage[name] ??= { before: [], after: [] });
-  if (!entry[side].includes(other)) entry[side].push(other);
-};
-for (const held of heldBy.values()) {
+// to everything Wikidata says came after it. A realm links to another only
+// when the land handed over is a real share of its own: France gets no link
+// to Italy for Tende, while Tangier keeps its link to Morocco. A realm's own
+// land is its place today (Italy) or else all it held in the rebuilt years.
+const MIN_LINK_SHARE = 0.01;
+const heldArea = {};
+const handovers = new Map();
+for (const [id, held] of heldBy) {
+  for (const name of new Set([...held].map(([n]) => n))) heldArea[name] = (heldArea[name] ?? 0) + pieceArea.get(id);
   const order = [...held].sort((a, b) => a[1][0] - b[1][0] || a[1][1] - b[1][1]);
   for (let i = 1; i < order.length; i++) {
     const [before] = order[i - 1];
     const [after] = order[i];
     if (before === after) continue;
-    link(before, "after", after);
-    link(after, "before", before);
+    const key = JSON.stringify([before, after]);
+    handovers.set(key, (handovers.get(key) ?? 0) + pieceArea.get(id));
   }
+}
+const ownLand = (name) => placeArea[name] ?? heldArea[name];
+const lineage = {};
+const link = (name, side, other) => {
+  const entry = (lineage[name] ??= { before: [], after: [] });
+  if (!entry[side].includes(other)) entry[side].push(other);
+};
+for (const [key, area] of handovers) {
+  const [before, after] = JSON.parse(key);
+  if (area / ownLand(before) >= MIN_LINK_SHARE) link(before, "after", after);
+  if (area / ownLand(after) >= MIN_LINK_SHARE) link(after, "before", before);
 }
 
 writeFileSync(

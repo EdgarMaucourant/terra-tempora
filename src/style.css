@@ -4334,7 +4334,8 @@ body:not(.home) .search-button span {
   display: none;
 }
 
-/* A country's masthead has no subtitle. */
-.masthead .sub:empty {
+/* The masthead shows the name only, in every view: years, eras and the
+   people of the day are left to the panel. */
+.masthead .sub {
   display: none;
 }
