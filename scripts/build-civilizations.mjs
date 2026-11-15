@@ -261,6 +261,7 @@ for (const s of shapes.values()) {
     realm(s.name).own.push(s);
     realm(s.name).shapes.push(s);
     realm(s.name).partOf = s.partOf;
+    for (const key of s.groups ?? []) realm(key).shapes.push(s);
     continue;
   }
   realm(s.name).own.push(s);
