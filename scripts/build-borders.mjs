@@ -313,6 +313,8 @@ for (let year = TODAY; year >= firstReviewed; year--) {
         const r = realms[s.territory];
         const group = r?.group && !(r.groupUntil && r.groupUntil <= `${year}-12-31`) ? r.group : null;
         add(`territory|${s.owner}|${s.territory}`, id, { name: s.territory, partOf: s.owner, ...(group && { groups: [group] }) });
+        // The group's own outline, drawn over its members with its name.
+        if (group) add(`group|${group}`, id, { kind: "group", name: group });
       }
       else add(`realm|${s.owner}`, id, { name: s.owner });
       if (s.hatch) {
