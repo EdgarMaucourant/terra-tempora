@@ -110,6 +110,8 @@ interface Index {
    * realms and territories that held its land, oldest first.
    */
   places?: Record<string, { name: string; from: number; to: number }[]>;
+  /** Realms that are not countries (the Tangier International Zone). */
+  notCountries?: string[];
   /** Realms and territories before and after each one on the same land, from the rebuilt borders. */
   lineage?: Record<string, { before: string[]; after: string[] }>;
 }

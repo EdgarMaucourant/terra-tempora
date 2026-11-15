@@ -29,7 +29,7 @@ import { BorderData, type BorderSource, type Polity } from "./data";
 import { formatDate } from "./changelog";
 import { announce, el, externalLink } from "./dom";
 import { eraAt, eraName, ERAS, NOW } from "./eras";
-import { frameRealm } from "./frame";
+import { frameRealm, inRing } from "./frame";
 import { EventLayer } from "./eventLayer";
 import { makeDraggable } from "./drag";
 import { Feedback } from "./feedback";
@@ -636,7 +636,8 @@ function showPlaceNow() {
     return;
   }
   const at = Math.round(year);
-  const entry = history.find((h) => h.from <= at && at <= h.to);
+  const covering = history.filter((h) => h.from <= at && at <= h.to);
+  let entry = covering[0];
   if (!entry && toldRealm) renderCountryOverview(chosen());
   const head = el("h3", "event-more", t("place.inYear", { year: formatYear(at) }));
   if (!entry) {
@@ -647,6 +648,14 @@ function showPlaceNow() {
   data.load(at, at).then(
     (shapes) => {
       if (mine !== placeNowAsked) return;
+      // Several realms can share the place's land in a year (French and
+      // Spanish Morocco, Tangier): the one at the spot clicked is told.
+      const spot = placeSpot;
+      const here =
+        spot &&
+        covering.length > 1 &&
+        shapes.find((q) => !q.kind && at >= q.from && at <= q.to && covering.some((h) => h.name === q.name) && q.rings.some((r) => inRing(r, spot[0], spot[1])));
+      if (here) entry = covering.find((h) => h.name === here.name) ?? entry;
       const own = shapes.filter((p) => !p.kind && p.name === entry.name && at >= p.from && at <= p.to);
       const p = own.reduce<Polity | null>((best, q) => (!best || q.area > best.area ? q : best), null);
       if ((p ? (p.display ?? p.name) : entry.name) !== toldRealm) renderCountryOverview(chosen(), p);
@@ -680,6 +689,7 @@ function clickRealm(p: Polity | null | undefined) {
   // Portuguese Timor in 1995 and Timor-Leste in 2017 both open Timor-Leste.
   // Clicking it again in that view shows the details of what is drawn.
   const place = placeOf(p.name);
+  placeSpot = place ? (p.label ?? undefined) : undefined;
   if (place && (home || place !== country)) {
     info.hidden = true;
     return openCountry(place, "nationality", { push: true });
@@ -1766,6 +1776,8 @@ function drawnOnPlace(): string | undefined {
 
 // The realm the place's overview tells about, so it is told again only when it changes.
 let toldRealm: string | undefined;
+/** The spot of the place's land last clicked (Tangier in Morocco), so its panel tells what is drawn there. */
+let placeSpot: [number, number] | undefined;
 
 /**
  * A country's overview. A place whose land is rebuilt tells about the realm
@@ -1788,6 +1800,7 @@ function renderCountryOverview(list: Civilization[], shape?: Polity | null) {
     sub: $("civ-sub").textContent ?? "",
     articles: drawn ? [own ?? english, english] : countryView === "territory" ? [english, history] : [history, english],
     drawn: drawn ? placeName(drawn) : undefined,
+    part: !!drawn && (!!(shape ? shape.partOf : civs?.ofRealm(drawn)?.partOf) || !!data?.index.notCountries?.includes(drawn)),
   });
 }
 
@@ -1805,10 +1818,9 @@ function showMasthead() {
   const title = country ? country.name : viewTitle(list);
   $("civ-title").textContent = title;
   const years = formatRange(from, to);
+  // A country's masthead has its name only; its panel tells the rest.
   $("civ-sub").textContent = country
-    ? countryView === "territory"
-      ? t("masthead.territory", { count: list.length, name: country.name, years })
-      : t("masthead.nationality", { count: list.length, name: country.name, years })
+    ? ""
     : list.length === 1
       ? `${years} · ${civEraText(list[0])}`
       : t("masthead.several", { count: list.length, years });

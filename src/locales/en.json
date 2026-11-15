@@ -175,17 +175,9 @@
       "one": "{first}, {second} & {count} more",
       "other": "{first}, {second} & {count} more"
     },
-    "nationality": {
-      "one": "{count} civilization that led to {name} · {years}",
-      "other": "{count} civilizations that led to {name} · {years}"
-    },
     "several": {
       "one": "{count} civilization · {years}",
       "other": "{count} civilizations · {years}"
-    },
-    "territory": {
-      "one": "{count} civilization whose borders crossed today’s {name} · {years}",
-      "other": "{count} civilizations whose borders crossed today’s {name} · {years}"
     },
     "two": "{first} & {second}"
   },
@@ -296,6 +288,7 @@
     },
     "loading": "Loading the article…",
     "nation": "Country",
+    "part": "Territory",
     "several": "Civilizations on the globe",
     "territory": "Country",
     "travel": "World history"
