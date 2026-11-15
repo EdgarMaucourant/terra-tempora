@@ -1818,10 +1818,9 @@ function showMasthead() {
   const title = country ? country.name : viewTitle(list);
   $("civ-title").textContent = title;
   const years = formatRange(from, to);
+  // A country's masthead has its name only; its panel tells the rest.
   $("civ-sub").textContent = country
-    ? countryView === "territory"
-      ? t("masthead.territory", { count: list.length, name: country.name, years })
-      : t("masthead.nationality", { count: list.length, name: country.name, years })
+    ? ""
     : list.length === 1
       ? `${years} · ${civEraText(list[0])}`
       : t("masthead.several", { count: list.length, years });

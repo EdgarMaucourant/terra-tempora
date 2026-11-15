@@ -175,17 +175,9 @@
       "one": "{first}, {second} y {count} más",
       "other": "{first}, {second} y {count} más"
     },
-    "nationality": {
-      "one": "{count} civilización que dio origen a {name} · {years}",
-      "other": "{count} civilizaciones que dieron origen a {name} · {years}"
-    },
     "several": {
       "one": "{count} civilización · {years}",
       "other": "{count} civilizaciones · {years}"
-    },
-    "territory": {
-      "one": "{count} civilización cuyas fronteras cruzaron el actual territorio de {name} · {years}",
-      "other": "{count} civilizaciones cuyas fronteras cruzaron el actual territorio de {name} · {years}"
     },
     "two": "{first} y {second}"
   },
