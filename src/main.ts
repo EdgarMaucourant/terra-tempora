@@ -656,6 +656,12 @@ function showPlaceNow() {
         covering.length > 1 &&
         shapes.find((q) => !q.kind && at >= q.from && at <= q.to && covering.some((h) => h.name === q.name) && q.rings.some((r) => inRing(r, spot[0], spot[1])));
       if (here) entry = covering.find((h) => h.name === here.name) ?? entry;
+      // With no spot clicked, the realm holding most of the land is told
+      // (France in 1941, not Italy's Tende).
+      else if (covering.length > 1) {
+        const area = (name: string) => shapes.filter((q) => !q.kind && q.name === name && at >= q.from && at <= q.to).reduce((s, q) => s + q.area, 0);
+        entry = covering.reduce((best, h) => (area(h.name) > area(best.name) ? h : best), entry);
+      }
       const own = shapes.filter((p) => !p.kind && p.name === entry.name && at >= p.from && at <= p.to);
       const p = own.reduce<Polity | null>((best, q) => (!best || q.area > best.area ? q : best), null);
       if ((p ? (p.display ?? p.name) : entry.name) !== toldRealm) renderCountryOverview(chosen(), p);
@@ -1546,6 +1552,19 @@ function neighboursOf(c: Civilization, side: "before" | "after"): Civilization[]
   return [...new Set([...own[side], ...back])].sort((a, b) => a.from - b.from);
 }
 
+/**
+ * A lane's years: in a rebuilt country, another realm's lane covers only the
+ * years it held part of the country's land (Thailand in Cambodia, 1941 to 1946).
+ */
+function heldYears(c: Civilization): { from: number; to: number } {
+  const own = country && civs?.get(country.civ);
+  const history = placeHistory();
+  if (!own || own === c || !history) return { from: c.from, to: c.to };
+  const spans = history.filter((h) => c.names.includes(h.name));
+  if (!spans.length) return { from: c.from, to: c.to };
+  return { from: Math.max(c.from, Math.min(...spans.map((h) => h.from))), to: Math.min(c.to, Math.max(...spans.map((h) => h.to))) };
+}
+
 /** A civilization's name on its timeline lane, with the state a territory belonged to. */
 const laneName = (c: Civilization) => (c.partOf ? t("lanes.partOf", { name: c.name, owner: placeName(c.partOf) }) : c.name);
 
@@ -1565,8 +1584,7 @@ function showHighlight() {
   for (const c of highlighted) colors.set(laneName(c), colors.get(c.name)!);
   const lanes: Lane[] = highlighted.map((c) => ({
     name: laneName(c),
-    from: c.from,
-    to: c.to,
+    ...heldYears(c),
     periods: c.periods?.map((p) => ({ ...p, name: placeName(p.name) })),
     before: neighboursOf(c, "before")?.map(toLink),
     after: neighboursOf(c, "after")?.map(toLink),

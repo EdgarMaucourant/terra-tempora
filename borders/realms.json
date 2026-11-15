@@ -638,6 +638,29 @@
   "es": "Francia",
   "periods": [
    {
+    "from": "1870-09-04",
+    "name": "French Third Republic",
+    "wikipedia": "French Third Republic",
+    "fr": "Troisième République",
+    "es": "Tercera República Francesa"
+   },
+   {
+    "from": "1940-07-10",
+    "name": "Vichy France",
+    "wikipedia": "Vichy France",
+    "fr": "Régime de Vichy",
+    "es": "Francia de Vichy",
+    "note": "Pétain is given full powers; the French State"
+   },
+   {
+    "from": "1944-06-03",
+    "name": "Provisional Government of the French Republic",
+    "wikipedia": "Provisional Government of the French Republic",
+    "fr": "Gouvernement provisoire de la République française",
+    "es": "Gobierno provisional de la República Francesa",
+    "note": "Proclaimed by the Free French in Algiers, in Paris from August 1944"
+   },
+   {
     "from": "1946-10-27",
     "name": "French Fourth Republic",
     "wikipedia": "French Fourth Republic",
@@ -1015,6 +1038,14 @@
   "fr": "Guam",
   "es": "Guam"
  },
+ "Guangzhouwan": {
+  "wikipedia": "Guangzhouwan",
+  "wikidata": "Q1506615",
+  "fr": "Kouang-Tchéou-Wan",
+  "es": "Guangzhouwan",
+  "group": "French Indochina",
+  "groupUntil": "1945-08-18"
+ },
  "Guantanamo Bay Naval Base": {
   "wikipedia": "Guantanamo Bay Naval Base",
   "wikidata": "Q762570",
@@ -1239,6 +1270,13 @@
   "fr": "Lettonie",
   "es": "Letonia"
  },
+ "League of Nations": {
+  "wikipedia": "League of Nations",
+  "wikidata": "Q38130",
+  "fr": "Société des Nations",
+  "es": "Sociedad de las Naciones",
+  "notACountry": true
+ },
  "Lebanon": {
   "wikipedia": "Lebanon",
   "wikidata": "Q822",
@@ -1358,6 +1396,29 @@
   "wikidata": "Q233",
   "fr": "Malte",
   "es": "Malta"
+ },
+ "Mandate for Syria and the Lebanon": {
+  "wikipedia": "Mandate for Syria and the Lebanon",
+  "wikidata": "Q139708",
+  "fr": "Mandat français en Syrie et au Liban",
+  "es": "Mandato francés de Siria y el Líbano",
+  "notACountry": true
+ },
+ "Mandatory Lebanon": {
+  "wikipedia": "Greater Lebanon",
+  "wikidata": "Q130842",
+  "fr": "Liban mandataire",
+  "es": "Líbano bajo mandato francés",
+  "group": "Mandate for Syria and the Lebanon",
+  "groupUntil": "1943-11-22"
+ },
+ "Mandatory Syria": {
+  "wikipedia": "First Syrian Republic",
+  "wikidata": "Q26234937",
+  "fr": "Syrie mandataire",
+  "es": "Siria bajo mandato francés",
+  "group": "Mandate for Syria and the Lebanon",
+  "groupUntil": "1944-01-01"
  },
  "Marshall Islands": {
   "wikipedia": "Marshall Islands",
@@ -2223,6 +2284,12 @@
   "wikidata": "Q878",
   "fr": "Émirats arabes unis",
   "es": "Emiratos Árabes Unidos"
+ },
+ "United Arab Republic": {
+  "wikipedia": "United Arab Republic",
+  "wikidata": "Q170468",
+  "fr": "République arabe unie",
+  "es": "República Árabe Unida"
  },
  "United Kingdom": {
   "wikipedia": "United Kingdom",

@@ -1014,11 +1014,20 @@
     48.86
    ],
    "years": [
-    1946,
+    1939,
     2026
    ],
    "realm": "France",
-   "why": "Capital of France"
+   "why": "Capital of France",
+   "heldBy": [
+    {
+     "years": [
+      1940,
+      1943
+     ],
+     "by": "Germany"
+    }
+   ]
   },
   {
    "place": "Ajaccio",
@@ -1027,11 +1036,20 @@
     41.93
    ],
    "years": [
-    1946,
+    1939,
     2026
    ],
    "realm": "France",
-   "why": "Corsica, part of France"
+   "why": "Corsica, part of France",
+   "heldBy": [
+    {
+     "years": [
+      1942,
+      1942
+     ],
+     "by": "Italy"
+    }
+   ]
   },
   {
    "place": "Strasbourg",
@@ -1040,11 +1058,20 @@
     48.58
    ],
    "years": [
-    1946,
+    1939,
     2026
    ],
    "realm": "France",
-   "why": "Alsace, part of France"
+   "why": "Alsace, part of France",
+   "heldBy": [
+    {
+     "years": [
+      1940,
+      1943
+     ],
+     "by": "Germany"
+    }
+   ]
   },
   {
    "place": "Fort-de-France",
@@ -1053,7 +1080,7 @@
     14.61
    ],
    "years": [
-    1946,
+    1939,
     2026
    ],
    "realm": "Martinique",
@@ -1066,7 +1093,7 @@
     16.15
    ],
    "years": [
-    1946,
+    1939,
     2026
    ],
    "realm": "Guadeloupe",
@@ -1079,7 +1106,7 @@
     4.94
    ],
    "years": [
-    1946,
+    1939,
     2026
    ],
    "realm": "French Guiana",
@@ -1092,7 +1119,7 @@
     -20.88
    ],
    "years": [
-    1946,
+    1939,
     2026
    ],
    "realm": "Réunion",
@@ -1105,7 +1132,7 @@
     18.07
    ],
    "years": [
-    1946,
+    1939,
     2006
    ],
    "realm": "Guadeloupe",
@@ -1131,7 +1158,7 @@
     17.9
    ],
    "years": [
-    1946,
+    1939,
     2006
    ],
    "realm": "Guadeloupe",
@@ -1209,7 +1236,7 @@
     11.59
    ],
    "years": [
-    1946,
+    1939,
     1976
    ],
    "realm": "French Somaliland",
@@ -1235,7 +1262,7 @@
     -17.73
    ],
    "years": [
-    1946,
+    1939,
     1979
    ],
    "realm": "New Hebrides",
@@ -1261,7 +1288,7 @@
     36.75
    ],
    "years": [
-    1946,
+    1939,
     1961
    ],
    "realm": "French Algeria",
@@ -1287,7 +1314,7 @@
     22.79
    ],
    "years": [
-    1946,
+    1939,
     1961
    ],
    "realm": "French Algeria",
@@ -1313,7 +1340,7 @@
     -22.27
    ],
    "years": [
-    1946,
+    1939,
     2026
    ],
    "realm": "New Caledonia",
@@ -1326,7 +1353,7 @@
     -17.53
    ],
    "years": [
-    1946,
+    1939,
     2026
    ],
    "realm": "French Polynesia",
@@ -1339,7 +1366,7 @@
     46.78
    ],
    "years": [
-    1946,
+    1939,
     2026
    ],
    "realm": "Saint Pierre and Miquelon",
@@ -1352,7 +1379,7 @@
     -13.28
    ],
    "years": [
-    1946,
+    1939,
     2026
    ],
    "realm": "Wallis and Futuna",
@@ -1378,7 +1405,7 @@
     10.06
    ],
    "years": [
-    1946,
+    1939,
     1957
    ],
    "realm": "French Guinea",
@@ -1404,7 +1431,7 @@
     14.79
    ],
    "years": [
-    1946,
+    1939,
     1959
    ],
    "realm": "French Senegal",
@@ -1430,7 +1457,7 @@
     12.64
    ],
    "years": [
-    1946,
+    1939,
     1959
    ],
    "realm": "French Sudan",
@@ -1456,7 +1483,7 @@
     7.18
    ],
    "years": [
-    1946,
+    1939,
     1959
    ],
    "realm": "French Dahomey",
@@ -1482,7 +1509,7 @@
     13.51
    ],
    "years": [
-    1946,
+    1939,
     1959
    ],
    "realm": "Colony of Niger",
@@ -1534,7 +1561,7 @@
     6.82
    ],
    "years": [
-    1946,
+    1939,
     1959
    ],
    "realm": "French Ivory Coast",
@@ -1560,7 +1587,7 @@
     12.11
    ],
    "years": [
-    1946,
+    1939,
     1959
    ],
    "realm": "French Chad",
@@ -1586,7 +1613,7 @@
     4.37
    ],
    "years": [
-    1946,
+    1939,
     1959
    ],
    "realm": "Ubangi-Shari",
@@ -1612,7 +1639,7 @@
     -4.26
    ],
    "years": [
-    1946,
+    1939,
     1959
    ],
    "realm": "French Congo",
@@ -1638,7 +1665,7 @@
     -0.7
    ],
    "years": [
-    1946,
+    1939,
     1959
    ],
    "realm": "French Gabon",
@@ -1664,7 +1691,7 @@
     20.52
    ],
    "years": [
-    1946,
+    1939,
     1959
    ],
    "realm": "Colonial Mauritania",
@@ -1690,12 +1717,19 @@
     6.9
    ],
    "years": [
-    1946,
+    1939,
     1959
    ],
    "realm": "French Togoland",
    "why": "UN trust territory under French administration until 1960",
    "heldBy": [
+    {
+     "years": [
+      1939,
+      1945
+     ],
+     "by": "League of Nations"
+    },
     {
      "years": [
       1946,
@@ -1725,12 +1759,19 @@
     3.87
    ],
    "years": [
-    1946,
+    1939,
     1959
    ],
    "realm": "French Cameroon",
    "why": "UN trust territory under French administration until 1960",
    "heldBy": [
+    {
+     "years": [
+      1939,
+      1945
+     ],
+     "by": "League of Nations"
+    },
     {
      "years": [
       1946,
@@ -1795,11 +1836,20 @@
     -18.91
    ],
    "years": [
-    1946,
+    1939,
     1959
    ],
    "realm": "French Madagascar",
-   "why": "French until 1960"
+   "why": "French until 1960",
+   "heldBy": [
+    {
+     "years": [
+      1942,
+      1942
+     ],
+     "by": "United Kingdom"
+    }
+   ]
   },
   {
    "place": "Antananarivo",
@@ -1821,7 +1871,7 @@
     12.37
    ],
    "years": [
-    1946,
+    1939,
     1946
    ],
    "realm": "French Ivory Coast",
@@ -1834,7 +1884,7 @@
     13.58
    ],
    "years": [
-    1946,
+    1939,
     1946
    ],
    "realm": "French Sudan",
@@ -1847,7 +1897,7 @@
     12.06
    ],
    "years": [
-    1946,
+    1939,
     1946
    ],
    "realm": "Colony of Niger",
@@ -1873,12 +1923,19 @@
     5.96
    ],
    "years": [
-    1946,
+    1939,
     1953
    ],
    "realm": "British Cameroons",
    "why": "UN trust territory administered with Nigeria until 1954",
    "heldBy": [
+    {
+     "years": [
+      1939,
+      1945
+     ],
+     "by": "League of Nations"
+    },
     {
      "years": [
       1946,
@@ -1895,7 +1952,7 @@
     -49.35
    ],
    "years": [
-    1946,
+    1939,
     1954
    ],
    "realm": "French Madagascar",
@@ -1908,7 +1965,7 @@
     34.0
    ],
    "years": [
-    1946,
+    1939,
     1955
    ],
    "realm": "French Morocco",
@@ -1934,7 +1991,7 @@
     31.63
    ],
    "years": [
-    1946,
+    1939,
     1955
    ],
    "realm": "French Morocco",
@@ -1960,7 +2017,7 @@
     35.57
    ],
    "years": [
-    1946,
+    1939,
     1955
    ],
    "realm": "Spanish Morocco",
@@ -1986,7 +2043,7 @@
     35.17
    ],
    "years": [
-    1946,
+    1939,
     1955
    ],
    "realm": "Spanish Morocco",
@@ -2012,11 +2069,20 @@
     35.76
    ],
    "years": [
-    1946,
+    1939,
     1955
    ],
    "realm": "Tangier International Zone",
-   "why": "International zone until 29 October 1956"
+   "why": "International zone until 29 October 1956",
+   "heldBy": [
+    {
+     "years": [
+      1940,
+      1944
+     ],
+     "by": "Spain"
+    }
+   ]
   },
   {
    "place": "Tangier",
@@ -2038,7 +2104,7 @@
     27.94
    ],
    "years": [
-    1946,
+    1939,
     1957
    ],
    "realm": "Cape Juby",
@@ -2064,7 +2130,7 @@
     29.36
    ],
    "years": [
-    1946,
+    1939,
     1968
    ],
    "realm": "Ifni",
@@ -2090,11 +2156,20 @@
     36.8
    ],
    "years": [
-    1946,
+    1939,
     1955
    ],
    "realm": "French Tunisia",
-   "why": "French protectorate until 20 March 1956"
+   "why": "French protectorate until 20 March 1956",
+   "heldBy": [
+    {
+     "years": [
+      1942,
+      1942
+     ],
+     "by": "Germany"
+    }
+   ]
   },
   {
    "place": "Tunis",
@@ -2116,7 +2191,7 @@
     44.09
    ],
    "years": [
-    1946,
+    1939,
     1946
    ],
    "realm": "Italy",
@@ -2142,11 +2217,27 @@
     21.03
    ],
    "years": [
-    1946,
+    1939,
     1948
    ],
    "realm": "France",
-   "why": "Capital of the French protectorate of Tonkin"
+   "why": "Capital of the French protectorate of Tonkin",
+   "heldBy": [
+    {
+     "years": [
+      1940,
+      1944
+     ],
+     "by": "Japan"
+    },
+    {
+     "years": [
+      1945,
+      1945
+     ],
+     "by": "China"
+    }
+   ]
   },
   {
    "place": "Hanoi",
@@ -2194,11 +2285,27 @@
     16.46
    ],
    "years": [
-    1946,
+    1939,
     1948
    ],
    "realm": "France",
-   "why": "Seat of the French protectorate of Annam"
+   "why": "Seat of the French protectorate of Annam",
+   "heldBy": [
+    {
+     "years": [
+      1941,
+      1944
+     ],
+     "by": "Japan"
+    },
+    {
+     "years": [
+      1945,
+      1945
+     ],
+     "by": "China"
+    }
+   ]
   },
   {
    "place": "Huế",
@@ -2233,11 +2340,20 @@
     10.78
    ],
    "years": [
-    1946,
+    1939,
     1948
    ],
    "realm": "France",
-   "why": "Capital of the colony of Cochinchina"
+   "why": "Capital of the colony of Cochinchina",
+   "heldBy": [
+    {
+     "years": [
+      1941,
+      1944
+     ],
+     "by": "Japan"
+    }
+   ]
   },
   {
    "place": "Ho Chi Minh City (Saigon)",
@@ -2259,11 +2375,27 @@
     17.97
    ],
    "years": [
-    1946,
+    1939,
     1952
    ],
    "realm": "France",
-   "why": "French protectorate of Laos"
+   "why": "French protectorate of Laos",
+   "heldBy": [
+    {
+     "years": [
+      1941,
+      1944
+     ],
+     "by": "Japan"
+    },
+    {
+     "years": [
+      1945,
+      1945
+     ],
+     "by": "China"
+    }
+   ]
   },
   {
    "place": "Vientiane",
@@ -2285,11 +2417,20 @@
     11.56
    ],
    "years": [
-    1946,
+    1939,
     1952
    ],
    "realm": "France",
-   "why": "French protectorate of Cambodia"
+   "why": "French protectorate of Cambodia",
+   "heldBy": [
+    {
+     "years": [
+      1941,
+      1944
+     ],
+     "by": "Japan"
+    }
+   ]
   },
   {
    "place": "Phnom Penh",
@@ -2324,7 +2465,7 @@
     11.93
    ],
    "years": [
-    1946,
+    1939,
     1953
    ],
    "realm": "France",
@@ -2350,7 +2491,7 @@
     11.701
    ],
    "years": [
-    1946,
+    1939,
     1953
    ],
    "realm": "France",
@@ -2363,7 +2504,7 @@
     22.865
    ],
    "years": [
-    1946,
+    1939,
     1949
    ],
    "realm": "France",
@@ -2420,6 +2561,407 @@
    ],
    "realm": "India",
    "why": "Handed to India on 1 November 1954"
+  },
+  {
+   "place": "Battambang",
+   "lonLat": [
+    103.2,
+    13.1
+   ],
+   "years": [
+    1941,
+    1945
+   ],
+   "realm": "Thailand",
+   "why": "Annexed by Thailand by the Treaty of Tokyo (1941), given back in November 1946"
+  },
+  {
+   "place": "Battambang",
+   "lonLat": [
+    103.2,
+    13.1
+   ],
+   "years": [
+    1939,
+    1940
+   ],
+   "realm": "French Cambodia",
+   "why": "French Cambodia's until the Treaty of Tokyo"
+  },
+  {
+   "place": "Sainyabuli",
+   "lonLat": [
+    101.75,
+    19.25
+   ],
+   "years": [
+    1941,
+    1945
+   ],
+   "realm": "Thailand",
+   "why": "Lan Chang province of Thailand from 1941 to 1946"
+  },
+  {
+   "place": "Champasak (west bank)",
+   "lonLat": [
+    105.87,
+    14.89
+   ],
+   "years": [
+    1941,
+    1945
+   ],
+   "realm": "Thailand",
+   "why": "West of the Mekong, part of Thailand's Nakhon Champassak from 1941 to 1946"
+  },
+  {
+   "place": "Pakse",
+   "lonLat": [
+    105.8,
+    15.15
+   ],
+   "years": [
+    1939,
+    1946
+   ],
+   "realm": "French Laos",
+   "why": "East of the Mekong, French throughout",
+   "heldBy": [
+    {
+     "years": [
+      1941,
+      1944
+     ],
+     "by": "Japan"
+    }
+   ]
+  },
+  {
+   "place": "Siem Reap",
+   "lonLat": [
+    103.86,
+    13.36
+   ],
+   "years": [
+    1939,
+    1946
+   ],
+   "realm": "French Cambodia",
+   "why": "Siem Reap town and Angkor stayed French in 1941",
+   "heldBy": [
+    {
+     "years": [
+      1941,
+      1944
+     ],
+     "by": "Japan"
+    }
+   ]
+  },
+  {
+   "place": "Sisophon",
+   "lonLat": [
+    102.98,
+    13.59
+   ],
+   "years": [
+    1941,
+    1945
+   ],
+   "realm": "Thailand",
+   "why": "Part of Thailand's Phibunsongkhram province from 1941 to 1946"
+  },
+  {
+   "place": "Mayotte (Combani)",
+   "lonLat": [
+    45.15,
+    -12.78
+   ],
+   "years": [
+    1939,
+    1945
+   ],
+   "realm": "French Madagascar",
+   "why": "Part of the colony of Madagascar until 1946",
+   "heldBy": [
+    {
+     "years": [
+      1942,
+      1942
+     ],
+     "by": "United Kingdom"
+    }
+   ]
+  },
+  {
+   "place": "Moroni",
+   "lonLat": [
+    43.26,
+    -11.7
+   ],
+   "years": [
+    1939,
+    1945
+   ],
+   "realm": "French Madagascar",
+   "why": "Part of the colony of Madagascar until 1946",
+   "heldBy": [
+    {
+     "years": [
+      1942,
+      1942
+     ],
+     "by": "United Kingdom"
+    }
+   ]
+  },
+  {
+   "place": "Fort-Bayard (Zhanjiang)",
+   "lonLat": [
+    110.4,
+    21.2
+   ],
+   "years": [
+    1939,
+    1944
+   ],
+   "realm": "Guangzhouwan",
+   "why": "Capital of the French leased territory",
+   "heldBy": [
+    {
+     "years": [
+      1943,
+      1944
+     ],
+     "by": "Japan"
+    }
+   ]
+  },
+  {
+   "place": "Fort-Bayard (Zhanjiang)",
+   "lonLat": [
+    110.4,
+    21.2
+   ],
+   "years": [
+    1945,
+    2026
+   ],
+   "realm": "China",
+   "why": "Given back to China on 18 August 1945"
+  },
+  {
+   "place": "Damascus",
+   "lonLat": [
+    36.29,
+    33.51
+   ],
+   "years": [
+    1939,
+    1943
+   ],
+   "realm": "Mandatory Syria",
+   "why": "Under French mandate until Syria's independence",
+   "heldBy": [
+    {
+     "years": [
+      1939,
+      1943
+     ],
+     "by": "League of Nations"
+    }
+   ]
+  },
+  {
+   "place": "Damascus",
+   "lonLat": [
+    36.29,
+    33.51
+   ],
+   "years": [
+    1944,
+    1957
+   ],
+   "realm": "Syria",
+   "why": "Independent from 1944"
+  },
+  {
+   "place": "Damascus",
+   "lonLat": [
+    36.29,
+    33.51
+   ],
+   "years": [
+    1958,
+    1960
+   ],
+   "realm": "United Arab Republic",
+   "why": "Syria and Egypt united from February 1958 to September 1961"
+  },
+  {
+   "place": "Damascus",
+   "lonLat": [
+    36.29,
+    33.51
+   ],
+   "years": [
+    1961,
+    2026
+   ],
+   "realm": "Syria",
+   "why": "Out of the United Arab Republic"
+  },
+  {
+   "place": "Beirut",
+   "lonLat": [
+    35.5,
+    33.89
+   ],
+   "years": [
+    1939,
+    1942
+   ],
+   "realm": "Mandatory Lebanon",
+   "why": "Under French mandate until 22 November 1943",
+   "heldBy": [
+    {
+     "years": [
+      1939,
+      1942
+     ],
+     "by": "League of Nations"
+    }
+   ]
+  },
+  {
+   "place": "Beirut",
+   "lonLat": [
+    35.5,
+    33.89
+   ],
+   "years": [
+    1943,
+    2026
+   ],
+   "realm": "Lebanon",
+   "why": "Independent from 22 November 1943"
+  },
+  {
+   "place": "Vichy",
+   "lonLat": [
+    3.43,
+    46.13
+   ],
+   "years": [
+    1939,
+    2026
+   ],
+   "realm": "France",
+   "why": "Free zone; occupied from November 1942",
+   "heldBy": [
+    {
+     "years": [
+      1942,
+      1943
+     ],
+     "by": "Germany"
+    }
+   ]
+  },
+  {
+   "place": "Bordeaux",
+   "lonLat": [
+    -0.58,
+    44.84
+   ],
+   "years": [
+    1939,
+    2026
+   ],
+   "realm": "France",
+   "why": "Occupied zone from June 1940",
+   "heldBy": [
+    {
+     "years": [
+      1940,
+      1943
+     ],
+     "by": "Germany"
+    }
+   ]
+  },
+  {
+   "place": "Nice",
+   "lonLat": [
+    7.27,
+    43.7
+   ],
+   "years": [
+    1939,
+    2026
+   ],
+   "realm": "France",
+   "why": "Italian zone from November 1942, German from September 1943",
+   "heldBy": [
+    {
+     "years": [
+      1942,
+      1942
+     ],
+     "by": "Italy"
+    },
+    {
+     "years": [
+      1943,
+      1943
+     ],
+     "by": "Germany"
+    }
+   ]
+  },
+  {
+   "place": "Loches",
+   "lonLat": [
+    1.0,
+    47.12
+   ],
+   "years": [
+    1939,
+    2026
+   ],
+   "realm": "France",
+   "why": "Just south of the demarcation line, in the free zone",
+   "heldBy": [
+    {
+     "years": [
+      1942,
+      1943
+     ],
+     "by": "Germany"
+    }
+   ]
+  },
+  {
+   "place": "Moulins",
+   "lonLat": [
+    3.33,
+    46.57
+   ],
+   "years": [
+    1939,
+    2026
+   ],
+   "realm": "France",
+   "why": "North of the Allier, in the occupied zone",
+   "heldBy": [
+    {
+     "years": [
+      1940,
+      1943
+     ],
+     "by": "Germany"
+    }
+   ]
   }
  ]
 }

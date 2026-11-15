@@ -14,6 +14,7 @@ const TAP_SLOP = 6;
 const MIN_LANE_HEIGHT = 13;
 const MAX_LANE_HEIGHT = 26;
 // Gap between a lane and its before/after icons, in pixels.
+const SHOW_LINKS = false;
 const LINK_GAP = 2;
 // Event marks: their row is resizable, from two rows of small marks up to
 // marks twice as large, then more rows. Sizes in pixels.
@@ -460,12 +461,16 @@ export class Timeline {
       bar.dataset.name = s.name;
       bars.push(bar);
       const lane = this.laneOf.get(s.name) ?? 0;
-      (s.before ?? [])
-        .filter((link) => !byName.has(link.name))
-        .forEach((link, i) => bars.push(this.linkIcon(link, "before", lane, left - (i + 1) * LINK_GAP, i)));
-      (s.after ?? [])
-        .filter((link) => !byName.has(link.name))
-        .forEach((link, i) => bars.push(this.linkIcon(link, "after", lane, left + width + (i + 1) * LINK_GAP, i)));
+      // The arrows to realms before and after a lane are off for now: they
+      // opened realms out of the view the visitor was in.
+      if (SHOW_LINKS) {
+        (s.before ?? [])
+          .filter((link) => !byName.has(link.name))
+          .forEach((link, i) => bars.push(this.linkIcon(link, "before", lane, left - (i + 1) * LINK_GAP, i)));
+        (s.after ?? [])
+          .filter((link) => !byName.has(link.name))
+          .forEach((link, i) => bars.push(this.linkIcon(link, "after", lane, left + width + (i + 1) * LINK_GAP, i)));
+      }
     }
     if (bars.length && joins.size) bars.unshift(this.connectors([...joins.values()]));
     // When the featured realms are out of view, the lanes fold to one row
