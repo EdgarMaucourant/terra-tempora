@@ -2383,6 +2383,141 @@
    "summary": "After years of armed resistance and negotiations led by Habib Bourguiba, internal autonomy in 1955 is followed by full independence on 20 March 1956, under the Bey. On 25 July 1957 the Constituent Assembly abolishes the monarchy and makes Bourguiba president of the Republic.",
    "wikipedia": "Tunisian_independence",
    "search": "Tunisia independence 1956"
+  },
+  {
+   "id": "indochina-war-1946",
+   "kind": "war",
+   "year": 1946,
+   "title": "The Indochina War begins, 19 December 1946",
+   "place": "Hanoi",
+   "lonLat": [
+    105.85,
+    21.03
+   ],
+   "civs": [
+    "france",
+    "tonkin",
+    "vietnam"
+   ],
+   "summary": "Talks between France and Ho Chi Minh's Democratic Republic of Vietnam, proclaimed in September 1945, break down. After the French navy shells Haiphong in November, the Viet Minh attack the French in Hanoi on 19 December 1946. The war lasts nearly eight years and ends with the French defeat at Dien Bien Phu.",
+   "wikipedia": "First_Indochina_War",
+   "search": "First Indochina War 1946 Haiphong Hanoi"
+  },
+  {
+   "id": "laos-independence-1953",
+   "kind": "empire",
+   "year": 1953,
+   "title": "Laos becomes independent, 22 October 1953",
+   "place": "Vientiane",
+   "lonLat": [
+    102.63,
+    17.97
+   ],
+   "civs": [
+    "laos",
+    "french-laos",
+    "france"
+   ],
+   "summary": "A kingdom under French protection since 1947, Laos gains full sovereignty by the Franco-Lao Treaty of Amity and Association, signed in Paris on 22 October 1953, while Viet Minh troops and the Pathet Lao hold the north-east. The Geneva Accords confirm its independence the next year.",
+   "wikipedia": "Kingdom_of_Laos",
+   "search": "Laos independence 1953 Franco-Lao treaty"
+  },
+  {
+   "id": "cambodia-independence-1953",
+   "kind": "empire",
+   "year": 1953,
+   "title": "Cambodia becomes independent, 9 November 1953",
+   "place": "Phnom Penh",
+   "lonLat": [
+    104.92,
+    11.56
+   ],
+   "civs": [
+    "cambodia",
+    "french-cambodia",
+    "france"
+   ],
+   "summary": "King Norodom Sihanouk's \"royal crusade for independence\" takes him to France, the United States and into self-imposed exile. France gives way and hands over the army, the police and the courts; the last French troops leave and Cambodia celebrates its independence on 9 November 1953.",
+   "wikipedia": "Kingdom_of_Cambodia_(1953–1970)",
+   "search": "Cambodia independence 9 November 1953 Sihanouk"
+  },
+  {
+   "id": "dien-bien-phu-1954",
+   "kind": "battle",
+   "year": 1954,
+   "title": "The Battle of Dien Bien Phu, 13 March – 7 May 1954",
+   "place": "Dien Bien Phu",
+   "lonLat": [
+    103.02,
+    21.39
+   ],
+   "civs": [
+    "france",
+    "state-of-vietnam",
+    "north-vietnam"
+   ],
+   "summary": "The French army builds an entrenched camp in a remote valley of north-west Tonkin to draw the Viet Minh into a pitched battle. General Võ Nguyên Giáp surrounds it with artillery hauled over the mountains, and after 56 days of siege the camp falls on 7 May 1954. The defeat brings France to accept peace at Geneva.",
+   "wikipedia": "Battle_of_Dien_Bien_Phu",
+   "search": "Battle of Dien Bien Phu 1954"
+  },
+  {
+   "id": "geneva-accords-1954",
+   "kind": "treaty",
+   "year": 1954,
+   "title": "The Geneva Accords divide Vietnam, 21 July 1954",
+   "place": "Bến Hải river, Vietnam (signed in Geneva)",
+   "lonLat": [
+    107.05,
+    17.0
+   ],
+   "civs": [
+    "france",
+    "north-vietnam",
+    "south-vietnam",
+    "laos",
+    "cambodia"
+   ],
+   "summary": "The conference in Geneva ends the Indochina War. Vietnam is split at the Bến Hải river, near the 17th parallel: the Viet Minh's Democratic Republic of Vietnam in the north, the State of Vietnam in the south, until elections promised for 1956 that are never held. The independence of Laos and Cambodia is confirmed, and French troops leave.",
+   "wikipedia": "1954_Geneva_Conference",
+   "search": "Geneva Accords 1954 Indochina 17th parallel"
+  },
+  {
+   "id": "french-india-1954",
+   "kind": "treaty",
+   "year": 1954,
+   "title": "French India passes to India, 1 November 1954",
+   "place": "Pondichéry",
+   "lonLat": [
+    79.83,
+    11.93
+   ],
+   "civs": [
+    "french-india",
+    "india",
+    "france"
+   ],
+   "summary": "After Chandernagore joined India in 1950, the councillors of Pondichéry, Karikal, Mahé and Yanaon vote in October 1954 to join India too. France hands over their administration on 1 November 1954; the treaty of cession, signed in 1956, is ratified by France only in 1962. The four towns form today's Puducherry.",
+   "wikipedia": "French_India",
+   "search": "French India transfer to India 1954 Pondicherry"
+  },
+  {
+   "id": "saar-referendum-1955",
+   "kind": "crown",
+   "year": 1955,
+   "title": "The Saar rejects the Saar Statute, 23 October 1955",
+   "place": "Saarbrücken",
+   "lonLat": [
+    6.99,
+    49.24
+   ],
+   "civs": [
+    "saar-protectorate",
+    "germany",
+    "france"
+   ],
+   "summary": "France and West Germany agree to give the Saar, a French protectorate since 1947, a European status under the Western European Union. In a referendum on 23 October 1955, two thirds of the Saarlanders vote no. France accepts the result, and the Saar joins West Germany on 1 January 1957.",
+   "wikipedia": "1955_Saar_Statute_referendum",
+   "search": "Saar Statute referendum 1955"
   }
  ]
 }
