@@ -608,5 +608,40 @@
   "title": "Le massacre du 17 octobre 1961",
   "place": "Pont Saint-Michel, Paris",
   "summary": "Des dizaines de milliers d’Algériens manifestent pacifiquement à Paris contre un couvre-feu qui ne vise qu’eux. La police du préfet Maurice Papon les charge ; quelque 11 000 sont arrêtés et des dizaines, peut-être plus d’une centaine, sont tués, certains jetés dans la Seine. Longtemps nié, le massacre a été reconnu par l’État français en 2012."
+ },
+ "fourth-republic-1946": {
+  "title": "La Quatrième République et l’Union française, 27 octobre 1946",
+  "place": "Palais Bourbon, Paris",
+  "summary": "Après le rejet d’un premier projet en mai, une seconde Constitution est approuvée par référendum le 13 octobre et promulguée le 27 octobre 1946. Elle fonde la Quatrième République, un régime parlementaire, et remplace l’empire colonial par l’Union française : les colonies deviennent des territoires et départements d’outre-mer, et leurs habitants des citoyens."
+ },
+ "tende-la-brigue-1947": {
+  "title": "Tende et La Brigue deviennent françaises, 1947",
+  "place": "Tende",
+  "summary": "Le traité de paix signé avec l’Italie à Paris le 10 février 1947 déplace la frontière dans les Alpes : Tende et La Brigue, dans la haute vallée de la Roya, ainsi que quelques cols, passent à la France. Un référendum local confirme le rattachement en octobre 1947, un mois après l’entrée en vigueur du traité le 15 septembre."
+ },
+ "malagasy-uprising-1947": {
+  "title": "L’insurrection malgache, 29 mars 1947",
+  "place": "Moramanga",
+  "summary": "Des insurgés nationalistes attaquent des postes et des plantations françaises dans l’est de Madagascar, à commencer par Moramanga. La révolte gagne un tiers de l’île avant d’être écrasée par l’armée française en 1948. Des dizaines de milliers de Malgaches meurent dans les combats, la répression et la famine qui suit, et les députés de l’île sont jugés et condamnés."
+ },
+ "ecsc-treaty-1951": {
+  "title": "La Communauté européenne du charbon et de l’acier, 18 avril 1951",
+  "place": "Quai d’Orsay, Paris",
+  "summary": "Un an après la déclaration de Robert Schuman du 9 mai 1950, la France, l’Allemagne de l’Ouest, l’Italie, la Belgique, les Pays-Bas et le Luxembourg signent à Paris le traité qui place leur charbon et leur acier sous une Haute Autorité commune. Pensée pour rendre impossible une nouvelle guerre entre la France et l’Allemagne, c’est le premier pas vers l’Union européenne."
+ },
+ "toussaint-rouge-1954": {
+  "title": "La Toussaint rouge déclenche la guerre d’Algérie, 1er novembre 1954",
+  "place": "Massif des Aurès",
+  "summary": "Dans la nuit de la Toussaint, le Front de libération nationale, tout juste fondé, lance une trentaine d’attaques en Algérie, la plupart dans les Aurès, et appelle à l’indépendance. Le gouvernement français répond que l’Algérie, c’est la France. C’est le début d’une guerre de huit ans qui s’achève par l’indépendance de l’Algérie en 1962."
+ },
+ "morocco-independence-1956": {
+  "title": "Le Maroc devient indépendant, 2 mars 1956",
+  "place": "Rabat",
+  "summary": "Déposé et exilé par la France en 1953, le sultan Mohammed V revient triomphalement en novembre 1955. Le 2 mars 1956, la France met fin à son protectorat ; l’Espagne renonce à sa zone nord le 7 avril, et la zone internationale de Tanger rejoint le Maroc en octobre. L’Espagne garde le cap Juby jusqu’en 1958 et Ifni jusqu’en 1969."
+ },
+ "tunisia-independence-1956": {
+  "title": "La Tunisie devient indépendante, 20 mars 1956",
+  "place": "Tunis",
+  "summary": "Après des années de résistance armée et de négociations menées par Habib Bourguiba, l’autonomie interne de 1955 est suivie de l’indépendance complète le 20 mars 1956, sous l’autorité du bey. Le 25 juillet 1957, l’Assemblée constituante abolit la monarchie et fait de Bourguiba le président de la République."
  }
 }

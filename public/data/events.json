@@ -2254,6 +2254,135 @@
    "summary": "Tens of thousands of Algerians march peacefully in Paris against a curfew imposed on them alone. The police of prefect Maurice Papon charge them; some 11,000 are arrested and dozens, perhaps more than a hundred, are killed, some thrown into the Seine. Long denied, the massacre was acknowledged by the French state in 2012.",
    "wikipedia": "1961_Paris_massacre",
    "search": "Paris massacre 17 October 1961"
+  },
+  {
+   "id": "fourth-republic-1946",
+   "kind": "crown",
+   "year": 1946,
+   "title": "The Fourth Republic and the French Union, 27 October 1946",
+   "place": "Palais Bourbon, Paris",
+   "lonLat": [
+    2.3175,
+    48.862
+   ],
+   "civs": [
+    "france"
+   ],
+   "summary": "After a first draft was rejected in May, a second constitution is approved by referendum on 13 October and promulgated on 27 October 1946. It founds the Fourth Republic, a parliamentary regime, and replaces the colonial empire with the French Union: the colonies become overseas territories and departments, and their peoples become citizens.",
+   "wikipedia": "French_Constitution_of_27_October_1946",
+   "search": "French Fourth Republic constitution 1946"
+  },
+  {
+   "id": "tende-la-brigue-1947",
+   "kind": "treaty",
+   "year": 1947,
+   "title": "Tende and La Brigue become French, 1947",
+   "place": "Tende",
+   "lonLat": [
+    7.59,
+    44.09
+   ],
+   "civs": [
+    "france",
+    "italy"
+   ],
+   "summary": "The peace treaty signed with Italy in Paris on 10 February 1947 moves the border in the Alps: Tende and La Brigue, in the upper Roya valley, and a few mountain passes pass to France. A local referendum confirms the change in October 1947, a month after the treaty comes into force on 15 September.",
+   "wikipedia": "Paris_Peace_Treaties,_1947",
+   "search": "Paris Peace Treaty 1947 Tende La Brigue"
+  },
+  {
+   "id": "malagasy-uprising-1947",
+   "kind": "war",
+   "year": 1947,
+   "title": "The Malagasy Uprising, 29 March 1947",
+   "place": "Moramanga",
+   "lonLat": [
+    48.22,
+    -18.95
+   ],
+   "civs": [
+    "france",
+    "french-madagascar"
+   ],
+   "summary": "Nationalist insurgents attack French posts and plantations in eastern Madagascar, starting at Moramanga. The revolt spreads over a third of the island before French troops crush it by 1948. Tens of thousands of Malagasy die in the fighting, the reprisals and the famine that follows, and the island's deputies are tried and condemned.",
+   "wikipedia": "Malagasy_Uprising",
+   "search": "Malagasy Uprising 1947"
+  },
+  {
+   "id": "ecsc-treaty-1951",
+   "kind": "treaty",
+   "year": 1951,
+   "title": "The European Coal and Steel Community, 18 April 1951",
+   "place": "Quai d’Orsay, Paris",
+   "lonLat": [
+    2.3125,
+    48.8625
+   ],
+   "civs": [
+    "france",
+    "germany",
+    "italy"
+   ],
+   "summary": "A year after Robert Schuman's declaration of 9 May 1950, France, West Germany, Italy, Belgium, the Netherlands and Luxembourg sign in Paris the treaty that puts their coal and steel under a common High Authority. Meant to make another war between France and Germany impossible, it is the first step towards the European Union.",
+   "wikipedia": "Treaty_of_Paris_(1951)",
+   "search": "Treaty of Paris 1951 European Coal and Steel Community"
+  },
+  {
+   "id": "toussaint-rouge-1954",
+   "kind": "war",
+   "year": 1954,
+   "title": "The Toussaint Rouge starts the Algerian War, 1 November 1954",
+   "place": "Aurès mountains",
+   "lonLat": [
+    6.35,
+    35.26
+   ],
+   "civs": [
+    "france",
+    "french-algeria"
+   ],
+   "summary": "In the night of All Saints' Day, the newly founded National Liberation Front sets off some thirty attacks across Algeria, most of them in the Aurès, and calls for independence. The French government answers that Algeria is France. It is the start of an eight-year war that ends with Algeria's independence in 1962.",
+   "wikipedia": "Toussaint_Rouge",
+   "search": "Toussaint Rouge 1 November 1954 Algerian War"
+  },
+  {
+   "id": "morocco-independence-1956",
+   "kind": "empire",
+   "year": 1956,
+   "title": "Morocco becomes independent, 2 March 1956",
+   "place": "Rabat",
+   "lonLat": [
+    -6.84,
+    34.02
+   ],
+   "civs": [
+    "morocco",
+    "french-morocco",
+    "spanish-morocco",
+    "france"
+   ],
+   "summary": "Sultan Mohammed V, deposed and exiled by France in 1953, returns in triumph in November 1955. On 2 March 1956 France ends its protectorate; Spain gives up its northern zone on 7 April, and the Tangier International Zone joins Morocco in October. Spain keeps Cape Juby until 1958 and Ifni until 1969.",
+   "wikipedia": "French_protectorate_in_Morocco",
+   "search": "Morocco independence 1956"
+  },
+  {
+   "id": "tunisia-independence-1956",
+   "kind": "empire",
+   "year": 1956,
+   "title": "Tunisia becomes independent, 20 March 1956",
+   "place": "Tunis",
+   "lonLat": [
+    10.17,
+    36.8
+   ],
+   "civs": [
+    "tunisia",
+    "french-tunisia",
+    "france"
+   ],
+   "summary": "After years of armed resistance and negotiations led by Habib Bourguiba, internal autonomy in 1955 is followed by full independence on 20 March 1956, under the Bey. On 25 July 1957 the Constituent Assembly abolishes the monarchy and makes Bourguiba president of the Republic.",
+   "wikipedia": "Tunisian_independence",
+   "search": "Tunisia independence 1956"
   }
  ]
 }
