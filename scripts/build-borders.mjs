@@ -309,7 +309,9 @@ for (let year = TODAY; year >= firstReviewed; year--) {
     else {
       if (s.territory) {
         // A territory can belong to a group of territories too (Tonkin in French Indochina).
-        const group = realms[s.territory]?.group;
+        // The group ends at its "groupUntil" date (French West Africa in 1958).
+        const r = realms[s.territory];
+        const group = r?.group && !(r.groupUntil && r.groupUntil <= `${year}-12-31`) ? r.group : null;
         add(`territory|${s.owner}|${s.territory}`, id, { name: s.territory, partOf: s.owner, ...(group && { groups: [group] }) });
       }
       else add(`realm|${s.owner}`, id, { name: s.owner });
