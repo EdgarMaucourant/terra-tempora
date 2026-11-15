@@ -388,8 +388,11 @@ const unitSize = new Map();
 for (const p of pieces.values()) unitSize.set(p.unit, (unitSize.get(p.unit) ?? 0) + 1);
 const keptPoint = new Map(
   [...pieces.values()]
-    .filter((p) => p.keep || (today.units[p.unit]?.territory && unitSize.get(p.unit) === 1))
-    .map((p) => [p.id, polylabel(polygonsOf(p.geometry).sort((a, b) => sphereArea(b[0]) - sphereArea(a[0]))[0], 0.001)]),
+    .map((p) => ({ p, polys: polygonsOf(p.geometry).sort((a, b) => sphereArea(b[0]) - sphereArea(a[0])) }))
+    // A piece made of small islands only (the Scattered Islands) keeps them all.
+    .map(({ p, polys }) => ({ p, polys, tiny: polys.length > 1 && polys.every((poly) => sphereArea(poly[0]) < MIN_PART_AREA) }))
+    .filter(({ p, tiny }) => tiny || p.keep || (today.units[p.unit]?.territory && unitSize.get(p.unit) === 1))
+    .map(({ p, polys, tiny }) => [p.id, (tiny ? polys : polys.slice(0, 1)).map((poly) => polylabel(poly, 0.001))]),
 );
 
 /** Whether a point lies in a ring, or by it when the ring is a few points only (Diu once simplified). */
@@ -420,7 +423,7 @@ function outline(ids, { bands = false } = {}) {
   if (!outers.length) return null;
   const largest = outers.reduce((a, b) => (b.area > a.area ? b : a));
   // A small place of its own (Diu, Saint Barthélemy) stays however small.
-  const marks = ids.map((id) => keptPoint.get(id)).filter(Boolean);
+  const marks = ids.flatMap((id) => keptPoint.get(id) ?? []);
   const kept = outers.filter(
     (o) => o === largest || o.area >= Math.min(MIN_PART_AREA, largest.area) || marks.find((m) => atRing(m, o.ring)),
   );
