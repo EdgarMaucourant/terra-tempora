@@ -1800,6 +1800,7 @@ function renderCountryOverview(list: Civilization[], shape?: Polity | null) {
     sub: $("civ-sub").textContent ?? "",
     articles: drawn ? [own ?? english, english] : countryView === "territory" ? [english, history] : [history, english],
     drawn: drawn ? placeName(drawn) : undefined,
+    part: !!drawn && (!!(shape ? shape.partOf : civs?.ofRealm(drawn)?.partOf) || !!data?.index.notCountries?.includes(drawn)),
   });
 }
 
