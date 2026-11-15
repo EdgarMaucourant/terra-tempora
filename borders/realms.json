@@ -222,6 +222,13 @@
   "fr": "Brésil",
   "es": "Brasil"
  },
+ "British Cameroons": {
+  "wikipedia": "British Cameroons",
+  "wikidata": "Q1028835",
+  "fr": "Cameroun britannique",
+  "es": "Camerún británico",
+  "withOwner": false
+ },
  "British Virgin Islands": {
   "wikipedia": "British Virgin Islands",
   "wikidata": "Q25305",
@@ -286,6 +293,12 @@
   "wikidata": "Q16",
   "fr": "Canada",
   "es": "Canadá"
+ },
+ "Cape Juby": {
+  "wikipedia": "Cape Juby",
+  "wikidata": "Q1538846",
+  "fr": "Cap Juby",
+  "es": "Cabo Juby"
  },
  "Cape Verde": {
   "wikipedia": "Cape Verde",
@@ -654,12 +667,37 @@
   "es": "Madagascar francés",
   "withOwner": false
  },
+ "French Morocco": {
+  "wikipedia": "French protectorate in Morocco",
+  "wikidata": "Q907234",
+  "fr": "Protectorat français au Maroc",
+  "es": "Protectorado francés de Marruecos",
+  "withOwner": false
+ },
  "French Polynesia": {
   "wikipedia": "French Polynesia",
   "wikidata": "Q30971",
   "fr": "Polynésie française",
   "es": "Polinesia Francesa",
-  "withOwner": false
+  "withOwner": false,
+  "periods": [
+   {
+    "from": "1880-06-29",
+    "name": "French Establishments in Oceania",
+    "wikipedia": "French Polynesia",
+    "fr": "Établissements français de l'Océanie",
+    "es": "Establecimientos Franceses de Oceanía",
+    "note": "Named French Polynesia in 1957"
+   },
+   {
+    "from": "1957-07-23",
+    "name": "French Polynesia",
+    "wikipedia": "French Polynesia",
+    "fr": "Polynésie française",
+    "es": "Polinesia Francesa",
+    "note": "Renamed in 1957"
+   }
+  ]
  },
  "French Senegal": {
   "wikipedia": "French West Africa",
@@ -712,6 +750,13 @@
   "wikidata": "Q797214",
   "fr": "Togo français",
   "es": "Togolandia francesa",
+  "withOwner": false
+ },
+ "French Tunisia": {
+  "wikipedia": "French protectorate of Tunisia",
+  "wikidata": "Q2017684",
+  "fr": "Protectorat français de Tunisie",
+  "es": "Protectorado francés de Túnez",
   "withOwner": false
  },
  "French Upper Volta": {
@@ -906,6 +951,12 @@
   "wikidata": "Q189",
   "fr": "Islande",
   "es": "Islandia"
+ },
+ "Ifni": {
+  "wikipedia": "Ifni",
+  "wikidata": "Q763141",
+  "fr": "Ifni",
+  "es": "Ifni"
  },
  "India": {
   "wikipedia": "India",
@@ -1748,6 +1799,13 @@
   "fr": "Espagne",
   "es": "España"
  },
+ "Spanish Morocco": {
+  "wikipedia": "Spanish protectorate in Morocco",
+  "wikidata": "Q457242",
+  "fr": "Protectorat espagnol au Maroc",
+  "es": "Protectorado español de Marruecos",
+  "withOwner": false
+ },
  "Sri Lanka": {
   "wikipedia": "Sri Lanka",
   "wikidata": "Q854",
@@ -1795,6 +1853,13 @@
   "wikidata": "Q863",
   "fr": "Tadjikistan",
   "es": "Tayikistán"
+ },
+ "Tangier International Zone": {
+  "wikipedia": "Tangier International Zone",
+  "wikidata": "Q3497642",
+  "fr": "Zone internationale de Tanger",
+  "es": "Zona Internacional de Tánger",
+  "notACountry": true
  },
  "Tanzania": {
   "wikipedia": "Tanzania",
@@ -1867,7 +1932,25 @@
   "wikipedia": "Tunisia",
   "wikidata": "Q948",
   "fr": "Tunisie",
-  "es": "Túnez"
+  "es": "Túnez",
+  "periods": [
+   {
+    "from": "1956-03-20",
+    "name": "Kingdom of Tunisia",
+    "wikipedia": "Kingdom of Tunisia",
+    "fr": "Royaume de Tunisie",
+    "es": "Reino de Túnez",
+    "note": "Independent under the Bey from 20 March 1956"
+   },
+   {
+    "from": "1957-07-25",
+    "name": "Tunisia",
+    "wikipedia": "Tunisia",
+    "fr": "Tunisie",
+    "es": "Túnez",
+    "note": "A republic from 25 July 1957"
+   }
+  ]
  },
  "Turkey": {
   "wikipedia": "Turkey",

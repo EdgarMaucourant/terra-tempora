@@ -14,7 +14,7 @@
     "SPM",
     "WLF"
    ],
-   "from": 1957,
+   "from": 1946,
    "why": "Metropolitan France with Corsica, the overseas departments (Guadeloupe, Martinique, French Guiana, Réunion, and Mayotte since 2011) and the overseas territories (Saint Pierre and Miquelon, Saint Barthélemy, Saint Martin, New Caledonia, French Polynesia, Wallis and Futuna, the French Southern and Antarctic Lands, Clipperton), whose borders have not moved since 1957"
   },
   {
@@ -24,7 +24,7 @@
     "COM",
     "VUT"
    ],
-   "from": 1957,
+   "from": 1946,
    "why": "Algeria, Djibouti, the Comoros and Vanuatu, French (Vanuatu Anglo-French) until their independence, with today's borders"
   },
   {
@@ -45,8 +45,36 @@
     "CMR",
     "MDG"
    ],
-   "from": 1957,
+   "from": 1946,
    "why": "French West Africa, French Equatorial Africa, French Togoland, French Cameroon and Madagascar, with today's borders, from French rule to independence, and the British Southern Cameroons (Northwest and Southwest of today's Cameroon) until they join Cameroon in 1961"
+  },
+  {
+   "pieces": [
+    "MAR-1446",
+    "MAR-1447",
+    "MAR-1448",
+    "MAR-1449",
+    "MAR-1450",
+    "MAR-1451",
+    "MAR-1452",
+    "MAR-1453",
+    "MAR-1454",
+    "MAR-1455",
+    "MAR-1456",
+    "MAR-1457",
+    "MAR-3457",
+    "MAR-1445",
+    "spanish-morocco-taza",
+    "spanish-morocco-oriental",
+    "tangier-zone",
+    "ifni-guelmim",
+    "ifni-souss",
+    "cape-juby-guelmim",
+    "MAR-3456",
+    "TUN"
+   ],
+   "from": 1946,
+   "why": "Morocco (without Western Sahara) and Tunisia: the French protectorates until 1956, with Spain's northern zone, the Tangier International Zone, Cape Juby (Spanish until 1958) and Ifni (Spanish until 1969)"
   }
  ],
  "changes": [
@@ -170,6 +198,31 @@
    ]
   },
   {
+   "date": "1969-06-30",
+   "what": "Spain hands Ifni back to Morocco",
+   "source": {
+    "title": "Ifni (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Ifni"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Mapa-Territorio-Ifni-57-58.svg",
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ifni-guelmim",
+      "ifni-souss"
+     ],
+     "owner": "Spain",
+     "territory": "Ifni",
+     "source": {
+      "title": "Ifni (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ifni"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Ifni txu-oclc-6949452-nh29-10.jpg"
+    }
+   ]
+  },
+  {
    "date": "1962-07-05",
    "what": "Algeria becomes independent after the Évian Accords and the referendum of 1 July 1962",
    "source": {
@@ -213,6 +266,16 @@
      "source": {
       "title": "Southern Cameroons (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Southern_Cameroons"
+     },
+     "hatch": {
+      "by": "United Nations",
+      "since": "1946-12-13",
+      "trust": true,
+      "note": "Administered by the United Kingdom, under a League of Nations mandate from 1922",
+      "source": {
+       "title": "United Nations Trust Territories (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/United_Nations_trust_territories"
+      }
      }
     }
    ]
@@ -638,6 +701,302 @@
      "source": {
       "title": "French Guinea (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/French_Guinea"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1958-04-10",
+   "what": "Spain hands the Cape Juby Strip, the southern zone of its protectorate, to Morocco (Angra de Cintra agreement)",
+   "source": {
+    "title": "Cape Juby (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Cape_Juby"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Protectorado español en Marruecos.svg",
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "cape-juby-guelmim",
+      "MAR-3456"
+     ],
+     "owner": "Spain",
+     "territory": "Cape Juby",
+     "source": {
+      "title": "Cape Juby (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cape_Juby"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Protectorado español en Marruecos.svg"
+    }
+   ]
+  },
+  {
+   "date": "1956-10-29",
+   "what": "The Tangier International Zone ends and Tangier joins Morocco",
+   "source": {
+    "title": "Tangier (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tangier"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "tangier-zone"
+     ],
+     "owner": "Tangier International Zone",
+     "source": {
+      "title": "Tangier International Zone (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tangier_International_Zone"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Tangier Zone txu-oclc-6949452-ni30-1.jpg"
+    }
+   ]
+  },
+  {
+   "date": "1956-04-07",
+   "what": "Spain recognises Morocco's independence and ends its northern protectorate",
+   "source": {
+    "title": "Morocco (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Morocco"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Morocco-spanish-protectorate-1955-a.svg",
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "MAR-1445",
+      "spanish-morocco-taza",
+      "spanish-morocco-oriental"
+     ],
+     "owner": "Spain",
+     "territory": "Spanish Morocco",
+     "source": {
+      "title": "Spanish protectorate in Morocco (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_protectorate_in_Morocco"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Morocco-spanish-protectorate-1955-a.svg"
+    }
+   ]
+  },
+  {
+   "date": "1956-03-20",
+   "what": "Tunisia becomes independent",
+   "source": {
+    "title": "Tunisia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tunisia"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Tunisia (orthographic projection).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TUN"
+     ],
+     "owner": "France",
+     "territory": "French Tunisia",
+     "source": {
+      "title": "French protectorate of Tunisia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_protectorate_of_Tunisia"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1956-03-02",
+   "what": "Morocco becomes independent from France",
+   "source": {
+    "title": "Morocco (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Morocco"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Morocco-spanish-protectorate-1955-a.svg",
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "MAR-1446",
+      "MAR-1447",
+      "MAR-1448",
+      "MAR-1449",
+      "MAR-1450",
+      "MAR-1451",
+      "MAR-1452",
+      "MAR-1453",
+      "MAR-1454",
+      "MAR-1455",
+      "MAR-1456",
+      "MAR-1457",
+      "MAR-3457"
+     ],
+     "owner": "France",
+     "territory": "French Morocco",
+     "source": {
+      "title": "French protectorate in Morocco (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_protectorate_in_Morocco"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1955-08-06",
+   "what": "Kerguelen, Crozet, Saint-Paul and Amsterdam are separated from Madagascar to form the French Southern and Antarctic Lands",
+   "source": {
+    "title": "French Southern and Antarctic Lands (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_Southern_and_Antarctic_Lands"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ATF-5916",
+      "ATF-5917",
+      "ATF-5918"
+     ],
+     "owner": "France",
+     "territory": "French Madagascar",
+     "source": {
+      "title": "French Madagascar (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Madagascar"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1954-10-01",
+   "what": "The Southern Cameroons are separated from Nigeria's Eastern Region as a territory of their own",
+   "source": {
+    "title": "Southern Cameroons (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Southern_Cameroons"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "CMR-1477",
+      "CMR-799"
+     ],
+     "owner": "United Kingdom",
+     "territory": "British Cameroons",
+     "source": {
+      "title": "British Cameroons (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Cameroons"
+     },
+     "hatch": {
+      "by": "United Nations",
+      "since": "1946-12-13",
+      "trust": true,
+      "note": "Administered by the United Kingdom, under a League of Nations mandate from 1922",
+      "source": {
+       "title": "United Nations Trust Territories (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/United_Nations_trust_territories"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1947-09-15",
+   "what": "The Treaty of Paris gives Tende and La Brigue to France",
+   "source": {
+    "title": "Paris Peace Treaties, 1947 (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Paris_Peace_Treaties,_1947"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "tende-la-brigue"
+     ],
+     "owner": "Italy",
+     "source": {
+      "title": "Italy (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Italy"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1947-09-04",
+   "what": "Upper Volta is re-created with its 1932 borders",
+   "source": {
+    "title": "French Upper Volta (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_Upper_Volta"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Haute-Volta (Afrique-Occidentale française).png",
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "BFA-2835",
+      "BFA-2836",
+      "BFA-2837",
+      "BFA-5989",
+      "BFA-2799",
+      "BFA-2800",
+      "BFA-2827",
+      "BFA-2826",
+      "BFA-2830",
+      "BFA-2820",
+      "BFA-2833",
+      "BFA-2819",
+      "BFA-2834",
+      "BFA-2832",
+      "BFA-2829",
+      "BFA-2828",
+      "BFA-2831",
+      "BFA-2821",
+      "BFA-2812",
+      "BFA-2815",
+      "BFA-2816",
+      "BFA-2814",
+      "BFA-2813",
+      "BFA-2824",
+      "BFA-2825",
+      "BFA-2811"
+     ],
+     "owner": "France",
+     "territory": "French Ivory Coast",
+     "source": {
+      "title": "French West Africa (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_West_Africa"
+     }
+    },
+    {
+     "pieces": [
+      "BFA-2822",
+      "BFA-2823",
+      "BFA-2817",
+      "BFA-2818",
+      "BFA-2808",
+      "BFA-2802",
+      "BFA-2801",
+      "BFA-2803",
+      "BFA-2804",
+      "BFA-2807"
+     ],
+     "owner": "France",
+     "territory": "French Sudan",
+     "source": {
+      "title": "French Sudan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Sudan"
+     }
+    },
+    {
+     "pieces": [
+      "BFA-2878",
+      "BFA-2183",
+      "BFA-2875",
+      "BFA-2184",
+      "BFA-2874",
+      "BFA-2805",
+      "BFA-2806",
+      "BFA-2876",
+      "BFA-2877"
+     ],
+     "owner": "France",
+     "territory": "Colony of Niger",
+     "source": {
+      "title": "Colony of Niger (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Colony_of_Niger"
      }
     }
    ]
