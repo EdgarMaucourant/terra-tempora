@@ -4333,3 +4333,8 @@ body:not(.home) .search-button span {
 .search-scope[hidden] {
   display: none;
 }
+
+/* A country's masthead has no subtitle. */
+.masthead .sub:empty {
+  display: none;
+}

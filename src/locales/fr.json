@@ -175,17 +175,9 @@
       "one": "{first}, {second} et {count} autre",
       "other": "{first}, {second} et {count} autres"
     },
-    "nationality": {
-      "one": "{count} civilisation à l’origine du pays · {years}",
-      "other": "{count} civilisations à l’origine du pays · {years}"
-    },
     "several": {
       "one": "{count} civilisation · {years}",
       "other": "{count} civilisations · {years}"
-    },
-    "territory": {
-      "one": "{count} civilisation présente sur le territoire actuel du pays · {years}",
-      "other": "{count} civilisations présentes sur le territoire actuel du pays · {years}"
     },
     "two": "{first} et {second}"
   },
