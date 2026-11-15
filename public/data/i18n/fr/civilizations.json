@@ -329,6 +329,9 @@
  "kyrgyzstan": {
   "name": "Kirghizistan"
  },
+ "mandate-for-syria-and-the-lebanon": {
+  "name": "Mandat français en Syrie et au Liban"
+ },
  "senegal": {
   "name": "Sénégal"
  },
@@ -337,6 +340,12 @@
  },
  "syria": {
   "name": "Syrie"
+ },
+ "united-arab-republic": {
+  "name": "République arabe unie"
+ },
+ "mandatory-syria": {
+  "name": "Syrie mandataire"
  },
  "cambodia": {
   "name": "Cambodge"
@@ -626,6 +635,9 @@
  "lebanon": {
   "name": "Liban"
  },
+ "mandatory-lebanon": {
+  "name": "Liban mandataire"
+ },
  "cyprus": {
   "name": "Chypre"
  },
@@ -688,6 +700,9 @@
  },
  "ifni": {
   "name": "Ifni"
+ },
+ "guangzhouwan": {
+  "name": "Kouang-Tchéou-Wan"
  },
  "faroe-islands": {
   "name": "îles Féroé"

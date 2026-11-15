@@ -656,6 +656,12 @@ function showPlaceNow() {
         covering.length > 1 &&
         shapes.find((q) => !q.kind && at >= q.from && at <= q.to && covering.some((h) => h.name === q.name) && q.rings.some((r) => inRing(r, spot[0], spot[1])));
       if (here) entry = covering.find((h) => h.name === here.name) ?? entry;
+      // With no spot clicked, the realm holding most of the land is told
+      // (France in 1941, not Italy's Tende).
+      else if (covering.length > 1) {
+        const area = (name: string) => shapes.filter((q) => !q.kind && q.name === name && at >= q.from && at <= q.to).reduce((s, q) => s + q.area, 0);
+        entry = covering.reduce((best, h) => (area(h.name) > area(best.name) ? h : best), entry);
+      }
       const own = shapes.filter((p) => !p.kind && p.name === entry.name && at >= p.from && at <= p.to);
       const p = own.reduce<Polity | null>((best, q) => (!best || q.area > best.area ? q : best), null);
       if ((p ? (p.display ?? p.name) : entry.name) !== toldRealm) renderCountryOverview(chosen(), p);
