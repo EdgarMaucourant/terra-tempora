@@ -14,7 +14,7 @@
     "SPM",
     "WLF"
    ],
-   "from": 1939,
+   "from": 1920,
    "why": "Metropolitan France with Corsica, the overseas departments (Guadeloupe, Martinique, French Guiana, Réunion, and Mayotte since 2011) and the overseas territories (Saint Pierre and Miquelon, Saint Barthélemy, Saint Martin, New Caledonia, French Polynesia, Wallis and Futuna, the French Southern and Antarctic Lands, Clipperton), whose borders have not moved since 1957"
   },
   {
@@ -24,7 +24,7 @@
     "COM",
     "VUT"
    ],
-   "from": 1939,
+   "from": 1920,
    "why": "Algeria, Djibouti, the Comoros and Vanuatu, French (Vanuatu Anglo-French) until their independence, with today's borders"
   },
   {
@@ -45,7 +45,7 @@
     "CMR",
     "MDG"
    ],
-   "from": 1939,
+   "from": 1920,
    "why": "French West Africa, French Equatorial Africa, French Togoland, French Cameroon and Madagascar, with today's borders, from French rule to independence, and the British Southern Cameroons (Northwest and Southwest of today's Cameroon) until they join Cameroon in 1961"
   },
   {
@@ -73,7 +73,7 @@
     "MAR-3456",
     "TUN"
    ],
-   "from": 1939,
+   "from": 1920,
    "why": "Morocco (without Western Sahara) and Tunisia: the French protectorates until 1956, with Spain's northern zone, the Tangier International Zone, Cape Juby (Spanish until 1958) and Ifni (Spanish until 1969)"
   },
   {
@@ -82,7 +82,7 @@
     "LAO",
     "KHM"
    ],
-   "from": 1939,
+   "from": 1920,
    "why": "French Indochina: Vietnam (Tonkin, Annam and Cochinchina, then the State of Vietnam), Laos and Cambodia, with today's borders, until independence in 1953 and 1954, then North and South Vietnam until 1976"
   },
   {
@@ -91,30 +91,31 @@
     "mahe",
     "chandernagore"
    ],
-   "from": 1939,
+   "from": 1920,
    "why": "French India: Pondichéry, Karikal, Mahé and Yanaon (today's Puducherry, with Mahé drawn where it is, not where Natural Earth puts it) and Chandernagore, until they pass to India"
   },
   {
    "pieces": [
     "DEU-1581"
    ],
-   "from": 1947,
-   "why": "The Saar, a protectorate of France from 1947 until it joins West Germany in 1957, with today's Saarland borders"
+   "from": 1920,
+   "why": "The Saar: a League of Nations territory from 1920 to 1935, German again until 1945, occupied by France, a protectorate of France from 1946 until it joins West Germany in 1957, with today's Saarland borders"
   },
   {
    "pieces": [
     "SYR",
     "golan",
-    "LBN"
+    "LBN",
+    "TUR-2289"
    ],
-   "from": 1939,
-   "why": "Syria (with the Golan Heights) and Lebanon: French mandates under the League of Nations until their independence, with today's borders (Hatay went to Turkey in June 1939)"
+   "from": 1920,
+   "why": "Syria (with the Golan Heights), Lebanon and the Sanjak of Alexandretta (Hatay): French mandates under the League of Nations, with the states France set up in Syria (Aleppo, Damascus, the Alawites, Jabal Druze) until their union, with today's borders; Hatay State in 1938, Turkish from June 1939"
   },
   {
    "pieces": [
     "guangzhouwan"
    ],
-   "from": 1939,
+   "from": 1920,
    "why": "Guangzhouwan, leased to France until 1945, then part of China"
   }
  ],
@@ -1751,6 +1752,58 @@
    ]
   },
   {
+   "date": "1946-02-16",
+   "what": "France separates the Saar from its occupation zone as a protectorate",
+   "source": {
+    "title": "Saar Protectorate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Saar_Protectorate"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "DEU-1581"
+     ],
+     "owner": "Germany",
+     "source": {
+      "title": "Allied-occupied Germany (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Allied-occupied_Germany"
+     },
+     "hatch": {
+      "by": "France",
+      "since": "1945-07-10",
+      "note": "French occupation zone",
+      "source": {
+       "title": "Saar Protectorate (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Saar_Protectorate"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1946-01-01",
+   "what": "Haut-Ogooué returns from Middle Congo to Gabon",
+   "source": {
+    "title": "Haut-Ogooué Province (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Haut-Ogooué_Province"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "GAB-2627"
+     ],
+     "owner": "France",
+     "territory": "French Congo",
+     "source": {
+      "title": "French Congo (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Congo"
+     }
+    }
+   ]
+  },
+  {
    "date": "1945-10-11",
    "what": "Spanish troops leave Tangier and the international zone is restored",
    "source": {
@@ -2138,6 +2191,57 @@
        "title": "Guangzhouwan (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Guangzhouwan"
       }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1945-07-10",
+   "what": "US troops hand the Saar over to the French occupation zone",
+   "source": {
+    "title": "Saar Protectorate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Saar_Protectorate"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "DEU-1581"
+     ],
+     "owner": "Germany",
+     "source": {
+      "title": "Allied-occupied Germany (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Allied-occupied_Germany"
+     },
+     "hatch": {
+      "by": "United States",
+      "since": "1945-03-21",
+      "note": "Taken by US forces in March 1945",
+      "source": {
+       "title": "Saar Protectorate (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Saar_Protectorate"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1945-03-21",
+   "what": "US forces take the Saar",
+   "source": {
+    "title": "Western Allied invasion of Germany (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Western_Allied_invasion_of_Germany"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "DEU-1581"
+     ],
+     "owner": "Germany",
+     "source": {
+      "title": "Nazi Germany (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Nazi_Germany"
      }
     }
    ]
@@ -3067,6 +3171,506 @@
      "source": {
       "title": "Tangier International Zone (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Tangier_International_Zone"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1939-06-29",
+   "what": "Turkey annexes Hatay State",
+   "source": {
+    "title": "Hatay State (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Hatay_State"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TUR-2289"
+     ],
+     "owner": "Hatay State",
+     "source": {
+      "title": "Hatay State (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hatay_State"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1938-09-02",
+   "what": "The Sanjak of Alexandretta's assembly proclaims Hatay State, under joint French and Turkish military supervision",
+   "source": {
+    "title": "Sanjak of Alexandretta (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Sanjak_of_Alexandretta"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TUR-2289"
+     ],
+     "owner": "France",
+     "territory": "Sanjak of Alexandretta",
+     "source": {
+      "title": "Sanjak of Alexandretta (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sanjak_of_Alexandretta"
+     },
+     "hatch": {
+      "by": "League of Nations",
+      "since": "1923-09-29",
+      "trust": true,
+      "note": "Administered by France under a League of Nations mandate from 1923",
+      "source": {
+       "title": "Mandate for Syria and the Lebanon (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Mandate_for_Syria_and_the_Lebanon"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1937-11-29",
+   "what": "The Sanjak of Alexandretta is made autonomous, distinct from Syria, under a League of Nations statute",
+   "source": {
+    "title": "Sanjak of Alexandretta (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Sanjak_of_Alexandretta"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "TUR-2289"
+     ],
+     "owner": "France",
+     "territory": "Mandatory Syria",
+     "source": {
+      "title": "First Syrian Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/First_Syrian_Republic"
+     },
+     "hatch": {
+      "by": "League of Nations",
+      "since": "1923-09-29",
+      "trust": true,
+      "note": "Administered by France under a League of Nations mandate from 1923",
+      "source": {
+       "title": "Mandate for Syria and the Lebanon (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Mandate_for_Syria_and_the_Lebanon"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1936-12-05",
+   "what": "The Alawite State is joined to Syria after the Franco-Syrian Treaty of 1936",
+   "source": {
+    "title": "Alawite State (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Alawite_State"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "SYR-134",
+      "SYR-135"
+     ],
+     "owner": "France",
+     "territory": "Alawite State",
+     "source": {
+      "title": "Alawite State (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Alawite_State"
+     },
+     "hatch": {
+      "by": "League of Nations",
+      "since": "1923-09-29",
+      "trust": true,
+      "note": "Administered by France under a League of Nations mandate from 1923",
+      "source": {
+       "title": "Mandate for Syria and the Lebanon (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Mandate_for_Syria_and_the_Lebanon"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1936-12-02",
+   "what": "Jabal Druze is joined to Syria after the Franco-Syrian Treaty of 1936",
+   "source": {
+    "title": "Jabal Druze State (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Jabal_Druze_State"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "SYR-143"
+     ],
+     "owner": "France",
+     "territory": "Jabal Druze State",
+     "source": {
+      "title": "Jabal Druze State (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Jabal_Druze_State"
+     },
+     "hatch": {
+      "by": "League of Nations",
+      "since": "1923-09-29",
+      "trust": true,
+      "note": "Administered by France under a League of Nations mandate from 1923",
+      "source": {
+       "title": "Mandate for Syria and the Lebanon (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Mandate_for_Syria_and_the_Lebanon"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1935-03-01",
+   "what": "The Saar returns to Germany after the plebiscite of 13 January 1935",
+   "source": {
+    "title": "Territory of the Saar Basin (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Territory_of_the_Saar_Basin"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "DEU-1581"
+     ],
+     "owner": "Territory of the Saar Basin",
+     "source": {
+      "title": "Territory of the Saar Basin (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Territory_of_the_Saar_Basin"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1934-04-06",
+   "what": "Spain takes possession of Ifni, assigned to it in 1912",
+   "source": {
+    "title": "Ifni (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Ifni"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "ifni-guelmim",
+      "ifni-souss"
+     ],
+     "owner": "France",
+     "territory": "French Morocco",
+     "source": {
+      "title": "French protectorate in Morocco (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_protectorate_in_Morocco"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1932-09-05",
+   "what": "Upper Volta is dissolved and shared out between Ivory Coast, French Sudan and Niger",
+   "source": {
+    "title": "French Upper Volta (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_Upper_Volta"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "BFA"
+     ],
+     "owner": "France",
+     "territory": "French Upper Volta",
+     "source": {
+      "title": "French Upper Volta (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Upper_Volta"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1930-01-01",
+   "what": "The Tibesti is transferred from Niger to Chad (1930 or 1931 depending on the source)",
+   "source": {
+    "title": "Colony of Niger (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Colony_of_Niger"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TCD-5578"
+     ],
+     "owner": "France",
+     "territory": "Colony of Niger",
+     "source": {
+      "title": "Colony of Niger (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Colony_of_Niger"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1925-06-01",
+   "what": "The Tangier Convention of 1923 comes into force: Tangier becomes an international zone",
+   "source": {
+    "title": "Tangier International Zone (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tangier_International_Zone"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "tangier-zone"
+     ],
+     "owner": "France",
+     "territory": "French Morocco",
+     "source": {
+      "title": "French protectorate in Morocco (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_protectorate_in_Morocco"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1925-01-01",
+   "what": "The State of Aleppo and the State of Damascus are united as the State of Syria",
+   "source": {
+    "title": "State of Syria (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/State_of_Syria"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SYR-137",
+      "SYR-140",
+      "SYR-136",
+      "SYR-141",
+      "SYR-142",
+      "TUR-2289"
+     ],
+     "owner": "France",
+     "territory": "State of Aleppo",
+     "source": {
+      "title": "State of Aleppo (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/State_of_Aleppo"
+     },
+     "hatch": {
+      "by": "League of Nations",
+      "since": "1923-09-29",
+      "trust": true,
+      "note": "Administered by France under a League of Nations mandate from 1923",
+      "source": {
+       "title": "Mandate for Syria and the Lebanon (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Mandate_for_Syria_and_the_Lebanon"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "SYR-4843",
+      "SYR-144",
+      "SYR-139",
+      "SYR-138",
+      "SYR-146",
+      "SYR-145",
+      "SYR-5261",
+      "golan"
+     ],
+     "owner": "France",
+     "territory": "State of Damascus",
+     "source": {
+      "title": "State of Damascus (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/State_of_Damascus"
+     },
+     "hatch": {
+      "by": "League of Nations",
+      "since": "1923-09-29",
+      "trust": true,
+      "note": "Administered by France under a League of Nations mandate from 1923",
+      "source": {
+       "title": "Mandate for Syria and the Lebanon (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Mandate_for_Syria_and_the_Lebanon"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1925-01-01",
+   "what": "Haut-Ogooué is transferred from Gabon to Middle Congo",
+   "source": {
+    "title": "Haut-Ogooué Province (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Haut-Ogooué_Province"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "GAB-2627"
+     ],
+     "owner": "France",
+     "territory": "French Gabon",
+     "source": {
+      "title": "Haut-Ogooué Province (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Haut-Ogooué_Province"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1923-09-29",
+   "what": "The League of Nations mandate for Syria and the Lebanon comes into force",
+   "source": {
+    "title": "Mandate for Syria and the Lebanon (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Mandate_for_Syria_and_the_Lebanon"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SYR-137",
+      "SYR-140",
+      "SYR-136",
+      "SYR-141",
+      "SYR-142",
+      "TUR-2289"
+     ],
+     "owner": "France",
+     "territory": "State of Aleppo",
+     "source": {
+      "title": "State of Aleppo (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/State_of_Aleppo"
+     }
+    },
+    {
+     "pieces": [
+      "SYR-4843",
+      "SYR-144",
+      "SYR-139",
+      "SYR-138",
+      "SYR-146",
+      "SYR-145",
+      "SYR-5261",
+      "golan"
+     ],
+     "owner": "France",
+     "territory": "State of Damascus",
+     "source": {
+      "title": "State of Damascus (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/State_of_Damascus"
+     }
+    },
+    {
+     "pieces": [
+      "SYR-134",
+      "SYR-135"
+     ],
+     "owner": "France",
+     "territory": "Alawite State",
+     "source": {
+      "title": "Alawite State (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Alawite_State"
+     }
+    },
+    {
+     "pieces": [
+      "SYR-143"
+     ],
+     "owner": "France",
+     "territory": "Jabal Druze State",
+     "source": {
+      "title": "Jabal Druze State (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Jabal_Druze_State"
+     }
+    },
+    {
+     "pieces": [
+      "LBN"
+     ],
+     "owner": "France",
+     "territory": "Mandatory Lebanon",
+     "source": {
+      "title": "Greater Lebanon (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Greater_Lebanon"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1922-07-20",
+   "what": "The League of Nations confirms the mandates for Togo and Cameroon",
+   "source": {
+    "title": "League of Nations mandate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/League_of_Nations_mandate"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TGO"
+     ],
+     "owner": "France",
+     "territory": "French Togoland",
+     "source": {
+      "title": "French Togoland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Togoland"
+     }
+    },
+    {
+     "pieces": [
+      "CMR-803",
+      "CMR-1462",
+      "CMR-1483",
+      "CMR-1482",
+      "CMR-1481",
+      "CMR-1476",
+      "CMR-798",
+      "CMR-1480"
+     ],
+     "owner": "France",
+     "territory": "French Cameroon",
+     "source": {
+      "title": "French Cameroon (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Cameroon"
+     }
+    },
+    {
+     "pieces": [
+      "CMR-1477",
+      "CMR-799"
+     ],
+     "owner": "United Kingdom",
+     "territory": "British Cameroons",
+     "source": {
+      "title": "British Cameroons (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Cameroons"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1921-05-01",
+   "what": "The Druze state is formed out of the State of Damascus",
+   "source": {
+    "title": "Jabal Druze State (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Jabal_Druze_State"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SYR-143"
+     ],
+     "owner": "France",
+     "territory": "State of Damascus",
+     "source": {
+      "title": "State of Damascus (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/State_of_Damascus"
      }
     }
    ]
