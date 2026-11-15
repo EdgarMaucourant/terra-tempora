@@ -110,7 +110,7 @@ interface Index {
    * Each place of today (a country, or a territory such as Macau) with the
    * realms and territories that held its land, oldest first.
    */
-  places?: Record<string, { name: string; from: number; to: number }[]>;
+  places?: Record<string, { name: string; from: number; to: number; share?: number }[]>;
   /** Realms that are not countries (the Tangier International Zone). */
   notCountries?: string[];
   /** Realms and territories before and after each one on the same land, from the rebuilt borders. */

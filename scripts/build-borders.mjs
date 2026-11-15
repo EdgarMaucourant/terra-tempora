@@ -551,20 +551,24 @@ for (const s of shapes) {
 }
 // Every place of today (a country, or a territory such as Macau) with the
 // realms and territories that held its land, oldest first.
+// `share` is how much of the place's land the realm ever held (Italy held
+// Tende, a sliver of France), so the timeline can leave the slivers out.
 const places = {};
+const placeArea = {};
 for (const [id, s] of state) {
   if (!s) continue;
   const place = s.territory ?? s.owner;
   const spans = places[place] ?? (places[place] = {});
+  placeArea[place] = (placeArea[place] ?? 0) + pieceArea.get(id);
   for (const [name, [from, to]] of heldBy.get(id) ?? []) {
     const span = spans[name];
-    spans[name] = span ? [Math.min(span[0], from), Math.max(span[1], to)] : [from, to];
+    spans[name] = span ? [Math.min(span[0], from), Math.max(span[1], to), span[2] + pieceArea.get(id)] : [from, to, pieceArea.get(id)];
   }
 }
 for (const [place, spans] of Object.entries(places)) {
   places[place] = Object.entries(spans)
     .sort((a, b) => a[1][0] - b[1][0] || a[1][1] - b[1][1])
-    .map(([name, [from, to]]) => ({ name, from, to }));
+    .map(([name, [from, to, area]]) => ({ name, from, to, share: Math.round((area / placeArea[place]) * 1000) / 1000 }));
 }
 
 // Which realm or territory followed which on the same land, from the pieces
