@@ -2,6 +2,9 @@
  "russia": {
   "name": "Rusia"
  },
+ "france": {
+  "name": "Francia"
+ },
  "canada": {
   "name": "Canadá"
  },
@@ -19,9 +22,6 @@
  },
  "india": {
   "name": "India"
- },
- "france": {
-  "name": "Francia"
  },
  "argentina": {
   "name": "Argentina"
@@ -74,8 +74,14 @@
  "chad": {
   "name": "Chad"
  },
+ "french-chad": {
+  "name": "Chad francés"
+ },
  "mali": {
   "name": "Malí"
+ },
+ "french-sudan": {
+  "name": "Sudán francés"
  },
  "angola": {
   "name": "Angola"
@@ -89,6 +95,9 @@
  "niger": {
   "name": "Níger"
  },
+ "colony-of-niger": {
+  "name": "Colonia de Níger"
+ },
  "colombia": {
   "name": "Colombia"
  },
@@ -100,6 +109,9 @@
  },
  "mauritania": {
   "name": "Mauritania"
+ },
+ "colonial-mauritania": {
+  "name": "Colonia de Mauritania"
  },
  "egypt": {
   "name": "Egipto"
@@ -149,8 +161,14 @@
  "central-african-republic": {
   "name": "República Centroafricana"
  },
+ "ubangi-shari": {
+  "name": "Ubangui-Chari"
+ },
  "ukraine": {
   "name": "Ucrania"
+ },
+ "french-madagascar": {
+  "name": "Madagascar francés"
  },
  "madagascar": {
   "name": "Madagascar"
@@ -188,6 +206,9 @@
  "iraq": {
   "name": "Irak"
  },
+ "french-cameroon": {
+  "name": "Camerún francés"
+ },
  "morocco": {
   "name": "Marruecos"
  },
@@ -209,6 +230,9 @@
  "republic-of-the-congo": {
   "name": "República del Congo"
  },
+ "french-congo": {
+  "name": "Congo francés"
+ },
  "finland": {
   "name": "Finlandia"
  },
@@ -220,6 +244,9 @@
  },
  "ivory-coast": {
   "name": "Costa de Marfil"
+ },
+ "french-ivory-coast": {
+  "name": "Costa de Marfil francesa"
  },
  "poland": {
   "name": "Polonia"
@@ -236,6 +263,9 @@
  "burkina-faso": {
   "name": "Burkina Faso"
  },
+ "french-upper-volta": {
+  "name": "Alto Volta francés"
+ },
  "western-sahara": {
   "name": "Sahara Occidental"
  },
@@ -245,6 +275,9 @@
  "gabon": {
   "name": "Gabón"
  },
+ "french-gabon": {
+  "name": "Gabón francés"
+ },
  "united-kingdom": {
   "name": "Reino Unido"
  },
@@ -253,6 +286,9 @@
  },
  "guinea": {
   "name": "Guinea"
+ },
+ "french-guinea": {
+  "name": "Guinea francesa"
  },
  "uganda": {
   "name": "Uganda"
@@ -277,6 +313,9 @@
  },
  "senegal": {
   "name": "Senegal"
+ },
+ "french-senegal": {
+  "name": "Senegal francés"
  },
  "syria": {
   "name": "Siria"
@@ -319,6 +358,9 @@
  },
  "benin": {
   "name": "Benín"
+ },
+ "french-dahomey": {
+  "name": "Dahomey francés"
  },
  "honduras": {
   "name": "Honduras"
@@ -389,6 +431,9 @@
  "togo": {
   "name": "Togo"
  },
+ "french-togoland": {
+  "name": "Togolandia francesa"
+ },
  "croatia": {
   "name": "Croacia"
  },
@@ -406,6 +451,9 @@
  },
  "estonia": {
   "name": "Estonia"
+ },
+ "southern-cameroons": {
+  "name": "Camerún Meridional"
  },
  "switzerland": {
   "name": "Suiza"
@@ -763,6 +811,9 @@
  },
  "saint-barthelemy": {
   "name": "San Bartolomé"
+ },
+ "scattered-islands-in-the-indian-ocean": {
+  "name": "Islas Dispersas del Océano Índico"
  },
  "united-states-minor-outlying-islands": {
   "name": "Islas ultramarinas de Estados Unidos"

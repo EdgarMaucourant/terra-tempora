@@ -331,7 +331,7 @@
  },
  "anglo-portuguese-treaty-1891": {
   "title": "Le traité anglo-portugais, 11 juin 1891",
-  "place": "Londres",
+  "place": "Manica, Mozambique (signé à Londres)",
   "summary": "Signé à Londres après l’ultimatum, le traité fixe les frontières de l’Angola et du Mozambique avec l’Afrique centrale britannique et la Rhodésie. Le Portugal garde l’intérieur du Mozambique, dont le Manica, mais renonce aux terres entre ses deux colonies."
  },
  "lisbon-regicide-1908": {
@@ -558,5 +558,55 @@
   "title": "La Nouvelle-Calédonie vote sur son indépendance, 2018-2021",
   "place": "Nouméa",
   "summary": "Comme le prévoyait l’accord de Nouméa, les Calédoniens votent trois fois sur l’indépendance. Le non l’emporte avec 57 % en 2018 et 53 % en 2020. Le troisième vote, en décembre 2021, en pleine épidémie de Covid-19, est boycotté par les indépendantistes et donne 96 % de non. Le statut futur du territoire est toujours en négociation."
+ },
+ "treaty-of-rome-1957": {
+  "title": "Le traité de Rome, 25 mars 1957",
+  "place": "Capitole, Rome",
+  "summary": "La France, l’Allemagne de l’Ouest, l’Italie, la Belgique, les Pays-Bas et le Luxembourg signent les traités qui fondent la Communauté économique européenne et l’Euratom. Ils entrent en vigueur le 1er janvier 1958 et ouvrent un marché commun qui deviendra l’Union européenne."
+ },
+ "battle-of-algiers-1957": {
+  "title": "La bataille d’Alger, 1957",
+  "place": "La Casbah, Alger",
+  "summary": "Investis des pouvoirs de police à Alger en janvier 1957, les parachutistes du général Massu démantèlent d’ici octobre les réseaux d’attentats du Front de libération nationale dans la Casbah. Ils l’emportent par des arrestations massives et l’usage systématique de la torture, dont la révélation retourne une grande partie de l’opinion française contre la guerre."
+ },
+ "may-1958-crisis": {
+  "title": "La crise du 13 mai 1958 et le retour de De Gaulle",
+  "place": "Gouvernement général, Alger",
+  "summary": "Des pieds-noirs et des officiers s’emparent du Gouvernement général à Alger et forment un Comité de salut public présidé par le général Massu, qui en appelle à Charles de Gaulle. Les parachutistes prennent la Corse et un débarquement sur Paris se prépare. Pour éviter la guerre civile, l’Assemblée nationale investit de Gaulle le 1er juin, avec le pouvoir d’écrire une nouvelle Constitution."
+ },
+ "fifth-republic-1958": {
+  "title": "La Constitution de la Ve République, 4 octobre 1958",
+  "place": "Paris",
+  "summary": "Approuvée par quatre votants sur cinq au référendum du 28 septembre, la nouvelle Constitution donne à un président fort l’ascendant sur le Parlement et crée la Communauté française pour les colonies. Elle est promulguée le 4 octobre, et de Gaulle est élu en décembre premier président de la Ve République."
+ },
+ "guinea-independence-1958": {
+  "title": "La Guinée dit non et devient indépendante, 2 octobre 1958",
+  "place": "Conakry",
+  "summary": "« Nous préférons la pauvreté dans la liberté à la richesse dans l’esclavage », lance Sékou Touré à de Gaulle à Conakry en août. Au référendum du 28 septembre, 95 % des Guinéens rejettent la Communauté française, seule colonie à le faire, et la Guinée proclame son indépendance quatre jours plus tard. La France retire aussitôt ses fonctionnaires et son aide."
+ },
+ "barricades-week-1960": {
+  "title": "La semaine des barricades à Alger, 24 janvier – 1er février 1960",
+  "place": "Alger",
+  "summary": "Révoltés par l’autodétermination proposée par de Gaulle à l’Algérie et par le rappel du général Massu, des activistes pieds-noirs dressent des barricades au centre d’Alger. Le premier jour, une fusillade tue 14 gendarmes et 8 manifestants. Après l’appel de De Gaulle à la loyauté de l’armée, à la télévision, les insurgés se rendent une semaine plus tard."
+ },
+ "gerboise-bleue-1960": {
+  "title": "Gerboise bleue, la première bombe atomique française, 13 février 1960",
+  "place": "Reggane, Sahara algérien",
+  "summary": "La France fait exploser une bombe atomique de 70 kilotonnes sur une tour dans le désert près de Reggane et devient la quatrième puissance nucléaire du monde. Seize autres essais suivent au Sahara algérien jusqu’en 1966, à Reggane puis sous terre à In Ekker, en vertu d’une clause des accords d’Évian, avant que les essais ne passent en Polynésie française."
+ },
+ "year-of-africa-1960": {
+  "title": "L’année de l’Afrique, 1960",
+  "place": "Afrique-Occidentale et Afrique-Équatoriale françaises, Cameroun, Togo et Madagascar",
+  "summary": "Quatorze colonies et territoires sous tutelle français d’Afrique deviennent indépendants en une seule année, du Cameroun en janvier à la Mauritanie en novembre, la plupart pacifiquement et par accord. La plupart signent avec la France des accords de coopération et de défense et gardent le franc CFA, des liens qui durent des décennies."
+ },
+ "mali-federation-split-1960": {
+  "title": "La Fédération du Mali éclate, 20 août 1960",
+  "place": "Bamako",
+  "summary": "Deux mois après l’indépendance, le Sénégal et la République soudanaise se brouillent sur la direction de leur fédération. Dans la nuit du 19 au 20 août, le Sénégal se retire et renvoie Modibo Keïta et ses ministres à Bamako en train plombé. Léopold Sédar Senghor devient président du Sénégal, et la République soudanaise prend le nom de Mali le 22 septembre."
+ },
+ "paris-massacre-1961": {
+  "title": "Le massacre du 17 octobre 1961",
+  "place": "Pont Saint-Michel, Paris",
+  "summary": "Des dizaines de milliers d’Algériens manifestent pacifiquement à Paris contre un couvre-feu qui ne vise qu’eux. La police du préfet Maurice Papon les charge ; quelque 11 000 sont arrêtés et des dizaines, peut-être plus d’une centaine, sont tués, certains jetés dans la Seine. Longtemps nié, le massacre a été reconnu par l’État français en 2012."
  }
 }

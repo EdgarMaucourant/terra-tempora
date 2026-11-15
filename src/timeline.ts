@@ -47,6 +47,8 @@ interface TimelineMark {
 
 /** A highlighted realm's lifespan, with the civilizations before and after it. */
 export interface Lane extends Span {
+  /** The names the realm went by, each over its years, shown along the bar. */
+  periods?: { from: number; to: number; name: string }[];
   before?: LaneLink[];
   after?: LaneLink[];
 }
@@ -436,8 +438,23 @@ export class Timeline {
       bar.style.width = `${width}px`;
       bar.style.top = `calc(${this.laneOf.get(s.name) ?? 0} * (var(--lane-height) + 3px))`;
       bar.style.background = this.colorOf(s.name);
-      bar.textContent = width > 40 ? s.name : "";
-      bar.title = `${s.name}, ${formatRange(s.from, s.to)}`;
+      if (s.periods?.length) {
+        // One label per name the realm went by, each over its own years.
+        for (const p of s.periods) {
+          if (p.to + 1 < this.viewFrom || p.from > this.viewTo) continue;
+          const from = Math.max(left, this.x(p.from));
+          const part = document.createElement("span");
+          part.className = "lane-period";
+          part.style.left = `${from - left}px`;
+          part.style.width = `${Math.max(0, Math.min(left + width, this.x(p.to + 1)) - from)}px`;
+          part.textContent = this.x(p.to + 1) - from > 40 ? p.name : "";
+          bar.append(part);
+        }
+        bar.title = s.periods.map((p) => `${p.name}, ${formatRange(p.from, p.to)}`).join("\n");
+      } else {
+        bar.textContent = width > 40 ? s.name : "";
+        bar.title = `${s.name}, ${formatRange(s.from, s.to)}`;
+      }
       bar.setAttribute("aria-label", bar.title);
       bar.dataset.from = String(s.from);
       bar.dataset.name = s.name;
