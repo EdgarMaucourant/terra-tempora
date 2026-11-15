@@ -77,6 +77,9 @@
  "french-sudan": {
   "name": "Sudán francés"
  },
+ "colony-of-niger": {
+  "name": "Colonia de Níger"
+ },
  "peru": {
   "name": "Perú"
  },
@@ -85,9 +88,6 @@
  },
  "french-chad": {
   "name": "Chad francés"
- },
- "colony-of-niger": {
-  "name": "Colonia de Níger"
  },
  "mali": {
   "name": "Malí"
@@ -230,23 +230,23 @@
  "zimbabwe": {
   "name": "Zimbabue"
  },
+ "french-congo": {
+  "name": "Congo francés"
+ },
  "norway": {
   "name": "Noruega"
  },
  "japan": {
   "name": "Japón"
  },
- "germany": {
-  "name": "Alemania"
- },
  "french-morocco": {
   "name": "Protectorado francés de Marruecos"
  },
+ "germany": {
+  "name": "Alemania"
+ },
  "republic-of-the-congo": {
   "name": "República del Congo"
- },
- "french-congo": {
-  "name": "Congo francés"
  },
  "finland": {
   "name": "Finlandia"
@@ -326,11 +326,11 @@
  "belarus": {
   "name": "Bielorrusia"
  },
- "kyrgyzstan": {
-  "name": "Kirguistán"
- },
  "mandate-for-syria-and-the-lebanon": {
   "name": "Mandato francés de Siria y el Líbano"
+ },
+ "kyrgyzstan": {
+  "name": "Kirguistán"
  },
  "senegal": {
   "name": "Senegal"
@@ -338,14 +338,14 @@
  "french-senegal": {
   "name": "Senegal francés"
  },
+ "mandatory-syria": {
+  "name": "Siria bajo mandato francés"
+ },
  "syria": {
   "name": "Siria"
  },
  "united-arab-republic": {
   "name": "República Árabe Unida"
- },
- "mandatory-syria": {
-  "name": "Siria bajo mandato francés"
  },
  "cambodia": {
   "name": "Camboya"
@@ -425,11 +425,17 @@
  "south-korea": {
   "name": "Corea del Sur"
  },
+ "state-of-aleppo": {
+  "name": "Estado de Alepo"
+ },
  "hungary": {
   "name": "Hungría"
  },
  "liberia": {
   "name": "Liberia"
+ },
+ "state-of-damascus": {
+  "name": "Estado de Damasco"
  },
  "jordan": {
   "name": "Jordania"
@@ -647,14 +653,26 @@
  "french-southern-and-antarctic-lands": {
   "name": "Tierras Australes y Antárticas Francesas"
  },
+ "jabal-druze-state": {
+  "name": "Estado de Yábal al-Druz"
+ },
  "palestine": {
   "name": "Palestina"
  },
  "brunei": {
   "name": "Brunéi"
  },
+ "hatay-state": {
+  "name": "Estado de Hatay"
+ },
+ "sanjak-of-alexandretta": {
+  "name": "Sanjacado de Alejandreta"
+ },
  "trinidad-and-tobago": {
   "name": "Trinidad y Tobago"
+ },
+ "alawite-state": {
+  "name": "Estado alauita"
  },
  "portuguese-india": {
   "name": "India portuguesa"
@@ -676,6 +694,9 @@
  },
  "saar-protectorate": {
   "name": "Protectorado del Sarre"
+ },
+ "territory-of-the-saar-basin": {
+  "name": "Territorio de la Cuenca del Sarre"
  },
  "azores": {
   "name": "Azores"

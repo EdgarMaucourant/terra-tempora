@@ -77,6 +77,9 @@
  "french-sudan": {
   "name": "Soudan français"
  },
+ "colony-of-niger": {
+  "name": "Colonie du Niger"
+ },
  "peru": {
   "name": "Pérou"
  },
@@ -85,9 +88,6 @@
  },
  "french-chad": {
   "name": "Territoire du Tchad"
- },
- "colony-of-niger": {
-  "name": "Colonie du Niger"
  },
  "mali": {
   "name": "Mali"
@@ -230,23 +230,23 @@
  "zimbabwe": {
   "name": "Zimbabwe"
  },
+ "french-congo": {
+  "name": "Congo français"
+ },
  "norway": {
   "name": "Norvège"
  },
  "japan": {
   "name": "Japon"
  },
- "germany": {
-  "name": "Allemagne"
- },
  "french-morocco": {
   "name": "Protectorat français au Maroc"
  },
+ "germany": {
+  "name": "Allemagne"
+ },
  "republic-of-the-congo": {
   "name": "République du Congo"
- },
- "french-congo": {
-  "name": "Congo français"
  },
  "finland": {
   "name": "Finlande"
@@ -326,11 +326,11 @@
  "belarus": {
   "name": "Biélorussie"
  },
- "kyrgyzstan": {
-  "name": "Kirghizistan"
- },
  "mandate-for-syria-and-the-lebanon": {
   "name": "Mandat français en Syrie et au Liban"
+ },
+ "kyrgyzstan": {
+  "name": "Kirghizistan"
  },
  "senegal": {
   "name": "Sénégal"
@@ -338,14 +338,14 @@
  "french-senegal": {
   "name": "Colonie du Sénégal"
  },
+ "mandatory-syria": {
+  "name": "Syrie mandataire"
+ },
  "syria": {
   "name": "Syrie"
  },
  "united-arab-republic": {
   "name": "République arabe unie"
- },
- "mandatory-syria": {
-  "name": "Syrie mandataire"
  },
  "cambodia": {
   "name": "Cambodge"
@@ -425,11 +425,17 @@
  "south-korea": {
   "name": "Corée du Sud"
  },
+ "state-of-aleppo": {
+  "name": "État d'Alep"
+ },
  "hungary": {
   "name": "Hongrie"
  },
  "liberia": {
   "name": "Liberia"
+ },
+ "state-of-damascus": {
+  "name": "État de Damas"
  },
  "jordan": {
   "name": "Jordanie"
@@ -647,14 +653,26 @@
  "french-southern-and-antarctic-lands": {
   "name": "Terres australes et antarctiques françaises"
  },
+ "jabal-druze-state": {
+  "name": "État du Djebel druze"
+ },
  "palestine": {
   "name": "Palestine"
  },
  "brunei": {
   "name": "Brunei"
  },
+ "hatay-state": {
+  "name": "État du Hatay"
+ },
+ "sanjak-of-alexandretta": {
+  "name": "Sandjak d'Alexandrette"
+ },
  "trinidad-and-tobago": {
   "name": "Trinité-et-Tobago"
+ },
+ "alawite-state": {
+  "name": "État des Alaouites"
  },
  "portuguese-india": {
   "name": "Inde portugaise"
@@ -676,6 +694,9 @@
  },
  "saar-protectorate": {
   "name": "Protectorat de la Sarre"
+ },
+ "territory-of-the-saar-basin": {
+  "name": "Territoire du bassin de la Sarre"
  },
  "azores": {
   "name": "Açores"

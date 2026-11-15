@@ -18,6 +18,14 @@
   "fr": "Akrotiri et Dhekelia",
   "es": "Acrotiri y Dekelia"
  },
+ "Alawite State": {
+  "wikipedia": "Alawite State",
+  "wikidata": "Q130802",
+  "fr": "État des Alaouites",
+  "es": "Estado alauita",
+  "group": "Mandate for Syria and the Lebanon",
+  "groupUntil": "1936-12-05"
+ },
  "Albania": {
   "wikipedia": "Albania",
   "wikidata": "Q222",
@@ -460,7 +468,23 @@
   "fr": "Colonie du Niger",
   "es": "Colonia de Níger",
   "group": "French West Africa",
-  "groupUntil": "1958-10-05"
+  "groupUntil": "1958-10-05",
+  "periods": [
+   {
+    "from": "1900-07-23",
+    "name": "Military Territory of Niger",
+    "wikipedia": "Colony of Niger",
+    "fr": "Territoire militaire du Niger",
+    "es": "Territorio militar de Níger",
+    "note": "Under military rule"
+   },
+   {
+    "from": "1922-10-13",
+    "name": "Colony of Niger",
+    "wikipedia": "Colony of Niger",
+    "note": "A civilian colony from 13 October 1922"
+   }
+  ]
  },
  "Comoros": {
   "wikipedia": "Comoros",
@@ -1088,6 +1112,12 @@
   "fr": "Haïti",
   "es": "Haití"
  },
+ "Hatay State": {
+  "wikipedia": "Hatay State",
+  "wikidata": "Q146761",
+  "fr": "État du Hatay",
+  "es": "Estado de Hatay"
+ },
  "Heard Island and McDonald Islands": {
   "wikipedia": "Heard Island and McDonald Islands",
   "wikidata": "Q131198",
@@ -1179,6 +1209,14 @@
   "wikidata": "Q1008",
   "fr": "Côte d'Ivoire",
   "es": "Costa de Marfil"
+ },
+ "Jabal Druze State": {
+  "wikipedia": "Jabal Druze State",
+  "wikidata": "Q146740",
+  "fr": "État du Djebel druze",
+  "es": "Estado de Yábal al-Druz",
+  "group": "Mandate for Syria and the Lebanon",
+  "groupUntil": "1936-12-02"
  },
  "Jamaica": {
   "wikipedia": "Jamaica",
@@ -1410,7 +1448,23 @@
   "fr": "Liban mandataire",
   "es": "Líbano bajo mandato francés",
   "group": "Mandate for Syria and the Lebanon",
-  "groupUntil": "1943-11-22"
+  "groupUntil": "1943-11-22",
+  "periods": [
+   {
+    "from": "1920-09-01",
+    "name": "State of Greater Lebanon",
+    "wikipedia": "Greater Lebanon",
+    "fr": "État du Grand Liban",
+    "es": "Estado del Gran Líbano",
+    "note": "Proclaimed by General Gouraud"
+   },
+   {
+    "from": "1926-05-23",
+    "name": "Mandatory Lebanon",
+    "wikipedia": "Greater Lebanon",
+    "note": "The Lebanese Republic, from its constitution of 23 May 1926"
+   }
+  ]
  },
  "Mandatory Syria": {
   "wikipedia": "First Syrian Republic",
@@ -1418,7 +1472,23 @@
   "fr": "Syrie mandataire",
   "es": "Siria bajo mandato francés",
   "group": "Mandate for Syria and the Lebanon",
-  "groupUntil": "1944-01-01"
+  "groupUntil": "1944-01-01",
+  "periods": [
+   {
+    "from": "1925-01-01",
+    "name": "State of Syria",
+    "wikipedia": "State of Syria",
+    "fr": "État de Syrie",
+    "es": "Estado de Siria",
+    "note": "The union of the State of Aleppo and the State of Damascus"
+   },
+   {
+    "from": "1930-05-14",
+    "name": "Mandatory Syria",
+    "wikipedia": "First Syrian Republic",
+    "note": "The Syrian Republic, from its constitution of 14 May 1930"
+   }
+  ]
  },
  "Marshall Islands": {
   "wikipedia": "Marshall Islands",
@@ -1906,6 +1976,14 @@
   "fr": "Saint-Marin",
   "es": "San Marino"
  },
+ "Sanjak of Alexandretta": {
+  "wikipedia": "Sanjak of Alexandretta",
+  "wikidata": "Q1657225",
+  "fr": "Sandjak d'Alexandrette",
+  "es": "Sanjacado de Alejandreta",
+  "group": "Mandate for Syria and the Lebanon",
+  "groupUntil": "1938-09-02"
+ },
  "São Tomé and Príncipe": {
   "wikipedia": "São Tomé and Príncipe",
   "wikidata": "Q1039",
@@ -2079,6 +2157,22 @@
   "fr": "Sri Lanka",
   "es": "Sri Lanka"
  },
+ "State of Aleppo": {
+  "wikipedia": "State of Aleppo",
+  "wikidata": "Q146872",
+  "fr": "État d'Alep",
+  "es": "Estado de Alepo",
+  "group": "Mandate for Syria and the Lebanon",
+  "groupUntil": "1925-01-01"
+ },
+ "State of Damascus": {
+  "wikipedia": "State of Damascus",
+  "wikidata": "Q146562",
+  "fr": "État de Damas",
+  "es": "Estado de Damasco",
+  "group": "Mandate for Syria and the Lebanon",
+  "groupUntil": "1925-01-01"
+ },
  "State of Vietnam": {
   "wikipedia": "State of Vietnam",
   "wikidata": "Q1193879",
@@ -2147,6 +2241,13 @@
   "wikidata": "Q16679352",
   "fr": "Territoire des Comores",
   "es": "Territorio de las Comoras"
+ },
+ "Territory of the Saar Basin": {
+  "wikipedia": "Territory of the Saar Basin",
+  "wikidata": "Q170361",
+  "fr": "Territoire du bassin de la Sarre",
+  "es": "Territorio de la Cuenca del Sarre",
+  "notACountry": true
  },
  "Thailand": {
   "wikipedia": "Thailand",
