@@ -36,6 +36,8 @@ const FEATURED_FILL_ALPHA = 0.55;
 const CONTEXT_FILL_ALPHA = 0.4;
 const HOVER_FILL_ALPHA = 0.62;
 const CONTEXT_LABEL_AREA = 900_000;
+/** The outline and name of a group of territories (French West Africa). */
+const GROUP_COLOR = "#f2d48a";
 const MIN_ZOOM = 0.8;
 // Close enough to see Macau or Gibraltar on the flat map, as on the globe.
 const MAX_ZOOM = 160;
@@ -446,7 +448,13 @@ export class MapView {
     const context: { p: Polity; opacity: number }[] = [];
     const featured: { p: Polity; opacity: number }[] = [];
     const hatched: { p: Polity; opacity: number }[] = [];
+    const grouped: { p: Polity; opacity: number }[] = [];
     for (const p of this.polities.values()) {
+      if (p.kind === "group") {
+        const opacity = shapeOpacity(p, this.year);
+        if (opacity > 0.002 && (this.showContext || highlightOf(this.highlight, p) !== undefined)) grouped.push({ p, opacity });
+        continue;
+      }
       if (p.kind) {
         const opacity = shapeOpacity(p, this.year);
         if (opacity > 0.002 && (this.showContext || p.kind === "hatch")) (p.kind === "hatch" ? hatched : unreviewed).push({ p, opacity });
@@ -513,6 +521,21 @@ export class MapView {
       if (opacity > 0.5) this.drawn.push({ p, shape });
     }
 
+    // Groups of territories (French West Africa): an outline over their
+    // members, which clicks pass through.
+    for (const { p, opacity } of grouped) {
+      ctx.beginPath();
+      path(this.shapeOf(p));
+      ctx.globalAlpha = opacity;
+      ctx.strokeStyle = "rgba(0, 0, 0, 0.5)";
+      ctx.lineWidth = 4.5;
+      ctx.stroke();
+      ctx.strokeStyle = GROUP_COLOR;
+      ctx.lineWidth = 2;
+      ctx.stroke();
+      ctx.globalAlpha = 1;
+    }
+
     // Today's border of the country being looked at.
     if (this.outline) {
       ctx.beginPath();
@@ -563,6 +586,28 @@ export class MapView {
       ctx.strokeText(text, at[0], at[1]);
       ctx.fillStyle = highlighted ? "#fbf6ec" : "#b4bac1";
       ctx.fillText(text, at[0], at[1]);
+    }
+
+    // Group names, in capitals, just above or below their members' names.
+    ctx.font = "italic 600 12px 'Instrument Sans Variable', sans-serif";
+    for (const { p, opacity } of grouped) {
+      if (!p.label || opacity <= 0.5) continue;
+      const at = this.projection(p.label);
+      if (!at || at[0] < 0 || at[0] > this.width || at[1] < 0 || at[1] > this.height) continue;
+      const text = this.nameOf(p.name).toUpperCase();
+      const w = ctx.measureText(text).width / 2 + 3;
+      for (const dy of [-22, 22, -44, 44, 0]) {
+        const y = at[1] + dy;
+        const box: [number, number, number, number] = [at[0] - w, y - 9, at[0] + w, y + 9];
+        if (placed.some((b) => box[0] < b[2] && box[2] > b[0] && box[1] < b[3] && box[3] > b[1])) continue;
+        placed.push(box);
+        ctx.strokeStyle = "rgba(0, 0, 0, 0.85)";
+        ctx.lineWidth = 3;
+        ctx.strokeText(text, at[0], y);
+        ctx.fillStyle = GROUP_COLOR;
+        ctx.fillText(text, at[0], y);
+        break;
+      }
     }
 
     // Event badges, on top of everything but the title shade.
