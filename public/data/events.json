@@ -1087,10 +1087,10 @@
     49.427
    ],
    "civs": [
-    "french-third-republic",
-    "german-empire",
-    "kingdom-of-great-britain",
-    "united-states-of-america"
+    "france",
+    "germany",
+    "united-kingdom",
+    "united-states"
    ],
    "alongside": true,
    "summary": "At dawn on 11 November, in Marshal Foch's railway carriage in the forest of Compiègne, German envoys sign the armistice with the Allies. The guns fall silent at 11 o'clock, after four years of war and some 17 million dead. Germany must leave the lands it occupies, Alsace and Lorraine included, hand over its heavy weapons and fleet and let the Allies occupy the left bank of the Rhine. Peace itself comes with the Treaty of Versailles in 1919. In June 1940 Hitler had France sign its own armistice in the same carriage.",
@@ -3419,6 +3419,248 @@
    "summary": "The Sanjak of Alexandretta, part of Syria with many Turks, is made autonomous in 1937. Turkish troops enter it alongside the French, and on 2 September 1938 its assembly proclaims Hatay State. To keep Turkey on its side against Germany, France lets it annex Hatay on 29 June 1939. Syria has never recognised the loss.",
    "wikipedia": "Hatay_State",
    "search": "Hatay State 1938 1939 Sanjak of Alexandretta annexed by Turkey"
+  },
+  {
+   "id": "first-battle-of-the-marne-1914",
+   "kind": "battle",
+   "year": 1914,
+   "title": "The First Battle of the Marne, 5 – 12 September 1914",
+   "place": "The Marne valley, east of Paris",
+   "lonLat": [
+    3.9,
+    48.88
+   ],
+   "civs": [
+    "france",
+    "germany",
+    "united-kingdom"
+   ],
+   "summary": "A month into the war, the German armies have crossed Belgium and northern France and come within 50 km of Paris. General Joffre turns the retreating French and British armies around and strikes their flank on the Marne, helped by troops rushed from Paris, some of them in the city's taxis. The Germans fall back to the Aisne. Both sides then dig in, and the front freezes into trenches from the North Sea to Switzerland for four years.",
+   "wikipedia": "First_Battle_of_the_Marne",
+   "search": "First Battle of the Marne 1914 Joffre Gallieni taxis"
+  },
+  {
+   "id": "togoland-campaign-1914",
+   "kind": "war",
+   "year": 1914,
+   "title": "The Togoland campaign, August 1914",
+   "place": "Kamina, near Atakpamé",
+   "lonLat": [
+    1.2,
+    7.5
+   ],
+   "civs": [
+    "togoland",
+    "togo",
+    "france",
+    "united-kingdom",
+    "germany"
+   ],
+   "summary": "German Togoland is surrounded by the British Gold Coast and French Dahomey. British and French troops invade it from both sides in the first days of the war. The Germans blow up their great radio station at Kamina, which linked Berlin to its colonies, and surrender on 26 August 1914: it is the first Allied victory of the war. France and the United Kingdom share the colony, and in 1919 France keeps the eastern part with Lomé, today's Togo.",
+   "wikipedia": "Togoland_campaign",
+   "search": "Togoland campaign 1914 Kamina radio station British French invasion"
+  },
+  {
+   "id": "kamerun-campaign-1914",
+   "kind": "war",
+   "year": 1914,
+   "to": 1916,
+   "title": "The Kamerun campaign, 1914 – 1916",
+   "place": "Yaoundé",
+   "lonLat": [
+    11.52,
+    3.87
+   ],
+   "civs": [
+    "kamerun",
+    "cameroon",
+    "french-cameroon",
+    "france",
+    "united-kingdom",
+    "germany"
+   ],
+   "summary": "British, French and Belgian troops attack German Kamerun from Nigeria, Chad and French Equatorial Africa. Douala falls in September 1914, and France takes back New Cameroon, the lands it had given Germany in 1911. After a long war in the forest, the Germans leave Yaoundé in January 1916 and cross into Spanish Guinea; the last fort, Mora, surrenders in February. France and the United Kingdom share Kamerun, France taking the larger eastern part.",
+   "wikipedia": "Kamerun_campaign",
+   "search": "Kamerun campaign 1914 1916 Douala Yaounde Mora Neukamerun"
+  },
+  {
+   "id": "zaian-war-1914",
+   "kind": "war",
+   "year": 1914,
+   "to": 1921,
+   "title": "The Zaian War, 1914 – 1921",
+   "place": "Khénifra, in the Middle Atlas",
+   "lonLat": [
+    -5.67,
+    32.94
+   ],
+   "civs": [
+    "french-morocco",
+    "morocco",
+    "france"
+   ],
+   "summary": "In 1914 France takes Khénifra, the stronghold of the Zayanes, a Berber confederation of the Middle Atlas led by Mouha ou Hammou Zayani. In November, at El Herri, the Berbers kill over 600 French soldiers. Although France needs its troops in Europe, General Lyautey holds on to his posts in Morocco throughout the world war. Mouha ou Hammou is killed in 1921, and most Zayanes then submit.",
+   "wikipedia": "Zaian_War",
+   "search": "Zaian War 1914 1921 Mouha ou Hammou Zayani Khenifra El Herri Lyautey"
+  },
+  {
+   "id": "volta-bani-war-1915",
+   "kind": "war",
+   "year": 1915,
+   "to": 1916,
+   "title": "The Volta-Bani War, 1915 – 1916",
+   "place": "Around Dédougou, between the Volta and the Bani",
+   "lonLat": [
+    -3.46,
+    12.47
+   ],
+   "civs": [
+    "upper-senegal-and-niger",
+    "burkina-faso",
+    "mali",
+    "france"
+   ],
+   "summary": "In November 1915, villages of the Marka and Bwa peoples rise against French rule, its taxes and the forced recruitment of soldiers for the war in Europe. The revolt spreads over the land between the Black Volta and the Bani rivers, in today's Burkina Faso and Mali. It is the largest uprising French West Africa ever saw: France needs a year and several columns to crush it, burning villages, and tens of thousands die. To rule the region more closely, France creates the colony of Upper Volta in 1919.",
+   "wikipedia": "Volta-Bani_War",
+   "search": "Volta-Bani War 1915 1916 anti-colonial uprising conscription Bona Dedougou"
+  },
+  {
+   "id": "battle-of-verdun-1916",
+   "kind": "battle",
+   "year": 1916,
+   "title": "The Battle of Verdun, 21 February – 18 December 1916",
+   "place": "Verdun",
+   "lonLat": [
+    5.39,
+    49.2
+   ],
+   "civs": [
+    "france",
+    "germany"
+   ],
+   "summary": "The German army attacks the fortress city of Verdun, hoping to bleed the French army white. Under General Pétain, France holds on, feeding the battle along a single road from Bar-le-Duc, the Sacred Way, and rotating almost all its divisions through it. After ten months, the French retake the forts of Douaumont and Vaux and the front is back almost where it started. About 300,000 soldiers are dead. Verdun becomes the symbol of the war in France.",
+   "wikipedia": "Battle_of_Verdun",
+   "search": "Battle of Verdun 1916 Douaumont Petain Voie Sacree"
+  },
+  {
+   "id": "battle-of-the-somme-1916",
+   "kind": "battle",
+   "year": 1916,
+   "title": "The Battle of the Somme, 1 July – 18 November 1916",
+   "place": "The Somme, between Albert and Péronne",
+   "lonLat": [
+    2.75,
+    50.0
+   ],
+   "civs": [
+    "france",
+    "united-kingdom",
+    "germany"
+   ],
+   "summary": "British and French armies attack astride the Somme to break the German front and relieve Verdun. On the first day alone, the British army loses about 57,000 men, nearly 20,000 of them killed. The offensive goes on for four and a half months, and tanks are used for the first time in September. The Allies gain only about ten kilometres, and the battle costs over a million soldiers killed, wounded or captured.",
+   "wikipedia": "Battle_of_the_Somme",
+   "search": "Battle of the Somme 1916 first day tanks Haig"
+  },
+  {
+   "id": "sykes-picot-agreement-1916",
+   "kind": "treaty",
+   "year": 1916,
+   "title": "The Sykes–Picot Agreement, May 1916",
+   "place": "The Arab lands of the Ottoman Empire",
+   "lonLat": [
+    38.0,
+    35.3
+   ],
+   "civs": [
+    "ottoman-empire",
+    "syria",
+    "mandatory-syria",
+    "mandatory-lebanon",
+    "france",
+    "united-kingdom"
+   ],
+   "summary": "In secret, the British diplomat Mark Sykes and the French diplomat François Georges-Picot agree how to share the Arab provinces of the Ottoman Empire after the war. France is to get the coast of Syria and Lebanon, Cilicia and influence over inland Syria up to Mosul; Britain gets Mesopotamia and the land down to the Gulf. The Bolsheviks make the deal public in 1917, to the anger of the Arabs, who had been promised independence. It shapes the mandates of 1920 and today's borders of Syria and Lebanon.",
+   "wikipedia": "Sykes–Picot_Agreement",
+   "search": "Sykes-Picot Agreement 1916 Ottoman Arab provinces partition"
+  },
+  {
+   "id": "kaocen-revolt-1916",
+   "kind": "war",
+   "year": 1916,
+   "to": 1917,
+   "title": "The Kaocen revolt, 1916 – 1917",
+   "place": "Agadez",
+   "lonLat": [
+    7.99,
+    16.97
+   ],
+   "civs": [
+    "colony-of-niger",
+    "niger",
+    "france"
+   ],
+   "summary": "With the help of the Senussi brotherhood of Libya, which is backed by the Ottomans and Germany, the Tuareg leader Kaocen ag Mohammed rises against the French in the Aïr mountains. In December 1916 his men besiege the French garrison in Agadez. A relief column breaks the siege in March 1917 and takes back the Aïr, with harsh reprisals against the population. Kaocen flees north and is caught and hanged in Fezzan in 1919.",
+   "wikipedia": "Kaocen_revolt",
+   "search": "Kaocen revolt 1916 1917 Tuareg siege of Agadez Senussi"
+  },
+  {
+   "id": "chemin-des-dames-1917",
+   "kind": "battle",
+   "year": 1917,
+   "title": "The Chemin des Dames and the mutinies, April – June 1917",
+   "place": "The Chemin des Dames ridge, on the Aisne",
+   "lonLat": [
+    3.65,
+    49.44
+   ],
+   "civs": [
+    "france",
+    "germany"
+   ],
+   "summary": "General Nivelle promises to break the German front in two days. On 16 April 1917, French troops attack up the Chemin des Dames ridge, into machine guns that the shelling has left intact. The offensive fails, with over 100,000 French casualties in two weeks. In May and June, soldiers in dozens of divisions refuse to go back to the attack. Pétain replaces Nivelle, gives more leave and better food, waits for the Americans and tanks, and has a few dozen mutineers shot.",
+   "wikipedia": "Second_Battle_of_the_Aisne",
+   "search": "Chemin des Dames Nivelle offensive 1917 French army mutinies"
+  },
+  {
+   "id": "second-battle-of-the-marne-1918",
+   "kind": "battle",
+   "year": 1918,
+   "title": "The Second Battle of the Marne, 15 July – 6 August 1918",
+   "place": "Between Château-Thierry and Reims",
+   "lonLat": [
+    3.4,
+    49.1
+   ],
+   "civs": [
+    "france",
+    "germany",
+    "united-states",
+    "united-kingdom",
+    "italy"
+   ],
+   "summary": "In the spring of 1918, Germany throws its last forces at the Allied lines and comes back to the Marne. On 15 July it attacks around Reims, but the French are ready. On 18 July, French and American troops led by General Mangin counter-attack from the forest of Villers-Cotterêts with hundreds of tanks. The Germans have to retreat beyond the Vesle. Marshal Foch keeps up the pressure: from now on the Allies advance until the armistice.",
+   "wikipedia": "Second_Battle_of_the_Marne",
+   "search": "Second Battle of the Marne 1918 Villers-Cotterets counter-attack Foch Chateau-Thierry"
+  },
+  {
+   "id": "alsace-lorraine-returns-1918",
+   "kind": "treaty",
+   "year": 1918,
+   "to": 1920,
+   "title": "Alsace–Lorraine returns to France, 1918 – 1920",
+   "place": "Strasbourg",
+   "lonLat": [
+    7.75,
+    48.58
+   ],
+   "civs": [
+    "alsace-lorraine",
+    "france",
+    "germany"
+   ],
+   "summary": "Germany had taken Alsace and part of Lorraine from France in 1871. After the armistice, French troops enter Metz on 19 November and Strasbourg on 22 November 1918, to cheering crowds. The Treaty of Versailles returns the land to France on 10 January 1920, and it becomes the departments of Bas-Rhin, Haut-Rhin and Moselle. They keep some of their German-era laws, such as the Concordat on religion, to this day.",
+   "wikipedia": "Alsace–Lorraine",
+   "search": "Alsace-Lorraine returns to France 1918 1920 Strasbourg Metz Versailles"
   }
  ]
 }

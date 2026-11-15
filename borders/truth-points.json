@@ -1014,7 +1014,7 @@
     48.86
    ],
    "years": [
-    1920,
+    1914,
     2026
    ],
    "realm": "France",
@@ -1036,7 +1036,7 @@
     41.93
    ],
    "years": [
-    1920,
+    1914,
     2026
    ],
    "realm": "France",
@@ -1048,6 +1048,28 @@
       1942
      ],
      "by": "Italy"
+    }
+   ]
+  },
+  {
+   "place": "Strasbourg",
+   "lonLat": [
+    7.75,
+    48.58
+   ],
+   "years": [
+    1914,
+    1919
+   ],
+   "realm": "Alsace–Lorraine",
+   "why": "Part of the German Alsace-Lorraine from 1871 until the Treaty of Versailles came into force in January 1920, under French occupation from November 1918",
+   "heldBy": [
+    {
+     "years": [
+      1918,
+      1919
+     ],
+     "by": "France"
     }
    ]
   },
@@ -1080,7 +1102,7 @@
     14.61
    ],
    "years": [
-    1920,
+    1914,
     2026
    ],
    "realm": "Martinique",
@@ -1093,7 +1115,7 @@
     16.15
    ],
    "years": [
-    1920,
+    1914,
     2026
    ],
    "realm": "Guadeloupe",
@@ -1106,7 +1128,7 @@
     4.94
    ],
    "years": [
-    1920,
+    1914,
     2026
    ],
    "realm": "French Guiana",
@@ -1119,7 +1141,7 @@
     -20.88
    ],
    "years": [
-    1920,
+    1914,
     2026
    ],
    "realm": "Réunion",
@@ -1132,7 +1154,7 @@
     18.07
    ],
    "years": [
-    1920,
+    1914,
     2006
    ],
    "realm": "Guadeloupe",
@@ -1158,7 +1180,7 @@
     17.9
    ],
    "years": [
-    1920,
+    1914,
     2006
    ],
    "realm": "Guadeloupe",
@@ -1236,7 +1258,7 @@
     11.59
    ],
    "years": [
-    1920,
+    1914,
     1976
    ],
    "realm": "French Somaliland",
@@ -1262,7 +1284,7 @@
     -17.73
    ],
    "years": [
-    1920,
+    1914,
     1979
    ],
    "realm": "New Hebrides",
@@ -1288,7 +1310,7 @@
     36.75
    ],
    "years": [
-    1920,
+    1914,
     1961
    ],
    "realm": "French Algeria",
@@ -1314,7 +1336,7 @@
     22.79
    ],
    "years": [
-    1920,
+    1914,
     1961
    ],
    "realm": "French Algeria",
@@ -1340,7 +1362,7 @@
     -22.27
    ],
    "years": [
-    1920,
+    1914,
     2026
    ],
    "realm": "New Caledonia",
@@ -1353,7 +1375,7 @@
     -17.53
    ],
    "years": [
-    1920,
+    1914,
     2026
    ],
    "realm": "French Polynesia",
@@ -1366,7 +1388,7 @@
     46.78
    ],
    "years": [
-    1920,
+    1914,
     2026
    ],
    "realm": "Saint Pierre and Miquelon",
@@ -1379,7 +1401,7 @@
     -13.28
    ],
    "years": [
-    1920,
+    1914,
     2026
    ],
    "realm": "Wallis and Futuna",
@@ -1405,7 +1427,7 @@
     10.06
    ],
    "years": [
-    1920,
+    1914,
     1957
    ],
    "realm": "French Guinea",
@@ -1431,7 +1453,7 @@
     14.79
    ],
    "years": [
-    1920,
+    1914,
     1959
    ],
    "realm": "French Senegal",
@@ -1449,6 +1471,19 @@
    ],
    "realm": "Senegal",
    "why": "Independent since 1960 (in the Mali Federation until 20 August)"
+  },
+  {
+   "place": "Bamako",
+   "lonLat": [
+    -8.0,
+    12.64
+   ],
+   "years": [
+    1914,
+    1919
+   ],
+   "realm": "Upper Senegal and Niger",
+   "why": "Capital of Upper Senegal and Niger, renamed French Sudan in December 1920"
   },
   {
    "place": "Bamako",
@@ -1483,7 +1518,7 @@
     7.18
    ],
    "years": [
-    1920,
+    1914,
     1959
    ],
    "realm": "French Dahomey",
@@ -1509,7 +1544,7 @@
     13.51
    ],
    "years": [
-    1920,
+    1914,
     1959
    ],
    "realm": "Colony of Niger",
@@ -1561,7 +1596,7 @@
     6.82
    ],
    "years": [
-    1920,
+    1914,
     1959
    ],
    "realm": "French Ivory Coast",
@@ -1579,6 +1614,19 @@
    ],
    "realm": "Ivory Coast",
    "why": "Independent since 7 August 1960"
+  },
+  {
+   "place": "N'Djamena",
+   "lonLat": [
+    15.05,
+    12.11
+   ],
+   "years": [
+    1914,
+    1919
+   ],
+   "realm": "Ubangi-Shari",
+   "why": "Part of Ubangi-Shari-Chad until Chad became a colony in March 1920"
   },
   {
    "place": "N'Djamena",
@@ -1613,7 +1661,7 @@
     4.37
    ],
    "years": [
-    1920,
+    1914,
     1959
    ],
    "realm": "Ubangi-Shari",
@@ -1639,7 +1687,7 @@
     -4.26
    ],
    "years": [
-    1920,
+    1914,
     1959
    ],
    "realm": "French Congo",
@@ -1665,7 +1713,7 @@
     -0.7
    ],
    "years": [
-    1920,
+    1914,
     1959
    ],
    "realm": "French Gabon",
@@ -1691,7 +1739,7 @@
     20.52
    ],
    "years": [
-    1920,
+    1914,
     1959
    ],
    "realm": "Colonial Mauritania",
@@ -1709,6 +1757,28 @@
    ],
    "realm": "Mauritania",
    "why": "Independent since 28 November 1960"
+  },
+  {
+   "place": "Kpalimé",
+   "lonLat": [
+    0.63,
+    6.9
+   ],
+   "years": [
+    1914,
+    1919
+   ],
+   "realm": "Togoland",
+   "why": "German Togoland, taken by British and French troops in August 1914, until the Treaty of Versailles",
+   "heldBy": [
+    {
+     "years": [
+      1914,
+      1919
+     ],
+     "by": "France"
+    }
+   ]
   },
   {
    "place": "Kpalimé",
@@ -1751,6 +1821,28 @@
    ],
    "realm": "Togo",
    "why": "Independent since 27 April 1960"
+  },
+  {
+   "place": "Yaoundé",
+   "lonLat": [
+    11.52,
+    3.87
+   ],
+   "years": [
+    1914,
+    1919
+   ],
+   "realm": "Kamerun",
+   "why": "German Kamerun, taken by French and British troops by February 1916, until the Treaty of Versailles",
+   "heldBy": [
+    {
+     "years": [
+      1916,
+      1919
+     ],
+     "by": "France"
+    }
+   ]
   },
   {
    "place": "Yaoundé",
@@ -1836,7 +1928,7 @@
     -18.91
    ],
    "years": [
-    1920,
+    1914,
     1959
    ],
    "realm": "French Madagascar",
@@ -1884,7 +1976,20 @@
     12.37
    ],
    "years": [
-    1920,
+    1914,
+    1918
+   ],
+   "realm": "Upper Senegal and Niger",
+   "why": "Part of Upper Senegal and Niger until Upper Volta was made a colony in March 1919"
+  },
+  {
+   "place": "Ouagadougou",
+   "lonLat": [
+    -1.52,
+    12.37
+   ],
+   "years": [
+    1919,
     1931
    ],
    "realm": "French Upper Volta",
@@ -1910,7 +2015,20 @@
     13.58
    ],
    "years": [
-    1920,
+    1914,
+    1918
+   ],
+   "realm": "Upper Senegal and Niger",
+   "why": "Part of Upper Senegal and Niger until March 1919"
+  },
+  {
+   "place": "Ouahigouya",
+   "lonLat": [
+    -2.42,
+    13.58
+   ],
+   "years": [
+    1919,
     1931
    ],
    "realm": "French Upper Volta",
@@ -1936,7 +2054,20 @@
     12.06
    ],
    "years": [
-    1920,
+    1914,
+    1918
+   ],
+   "realm": "Upper Senegal and Niger",
+   "why": "Part of Upper Senegal and Niger until March 1919"
+  },
+  {
+   "place": "Fada N'Gourma",
+   "lonLat": [
+    0.35,
+    12.06
+   ],
+   "years": [
+    1919,
     1931
    ],
    "realm": "French Upper Volta",
@@ -1954,6 +2085,28 @@
    ],
    "realm": "French Upper Volta",
    "why": "Upper Volta re-created on 4 September 1947"
+  },
+  {
+   "place": "Bamenda",
+   "lonLat": [
+    10.15,
+    5.96
+   ],
+   "years": [
+    1914,
+    1919
+   ],
+   "realm": "Kamerun",
+   "why": "German Kamerun, taken by British troops by 1916, until the Treaty of Versailles",
+   "heldBy": [
+    {
+     "years": [
+      1916,
+      1919
+     ],
+     "by": "United Kingdom"
+    }
+   ]
   },
   {
    "place": "Bamenda",
@@ -1991,7 +2144,7 @@
     -49.35
    ],
    "years": [
-    1920,
+    1914,
     1954
    ],
    "realm": "French Madagascar",
@@ -2004,7 +2157,7 @@
     34.0
    ],
    "years": [
-    1920,
+    1914,
     1955
    ],
    "realm": "French Morocco",
@@ -2030,7 +2183,7 @@
     31.63
    ],
    "years": [
-    1920,
+    1914,
     1955
    ],
    "realm": "French Morocco",
@@ -2056,7 +2209,7 @@
     35.57
    ],
    "years": [
-    1920,
+    1914,
     1955
    ],
    "realm": "Spanish Morocco",
@@ -2082,7 +2235,7 @@
     35.17
    ],
    "years": [
-    1920,
+    1914,
     1955
    ],
    "realm": "Spanish Morocco",
@@ -2130,7 +2283,7 @@
     35.76
    ],
    "years": [
-    1920,
+    1914,
     1924
    ],
    "realm": "French Morocco",
@@ -2156,7 +2309,7 @@
     27.94
    ],
    "years": [
-    1920,
+    1914,
     1957
    ],
    "realm": "Cape Juby",
@@ -2195,7 +2348,7 @@
     29.36
    ],
    "years": [
-    1920,
+    1914,
     1933
    ],
    "realm": "French Morocco",
@@ -2221,7 +2374,7 @@
     36.8
    ],
    "years": [
-    1920,
+    1914,
     1955
    ],
    "realm": "French Tunisia",
@@ -2256,7 +2409,7 @@
     44.09
    ],
    "years": [
-    1920,
+    1914,
     1946
    ],
    "realm": "Italy",
@@ -2282,7 +2435,7 @@
     21.03
    ],
    "years": [
-    1920,
+    1914,
     1948
    ],
    "realm": "France",
@@ -2350,7 +2503,7 @@
     16.46
    ],
    "years": [
-    1920,
+    1914,
     1948
    ],
    "realm": "France",
@@ -2405,7 +2558,7 @@
     10.78
    ],
    "years": [
-    1920,
+    1914,
     1948
    ],
    "realm": "France",
@@ -2440,7 +2593,7 @@
     17.97
    ],
    "years": [
-    1920,
+    1914,
     1952
    ],
    "realm": "France",
@@ -2482,7 +2635,7 @@
     11.56
    ],
    "years": [
-    1920,
+    1914,
     1952
    ],
    "realm": "France",
@@ -2530,7 +2683,7 @@
     11.93
    ],
    "years": [
-    1920,
+    1914,
     1953
    ],
    "realm": "France",
@@ -2556,7 +2709,7 @@
     11.701
    ],
    "years": [
-    1920,
+    1914,
     1953
    ],
    "realm": "France",
@@ -2569,7 +2722,7 @@
     22.865
    ],
    "years": [
-    1920,
+    1914,
     1949
    ],
    "realm": "France",
@@ -2647,7 +2800,7 @@
     13.1
    ],
    "years": [
-    1920,
+    1914,
     1940
    ],
    "realm": "French Cambodia",
@@ -2686,7 +2839,7 @@
     15.15
    ],
    "years": [
-    1920,
+    1914,
     1946
    ],
    "realm": "French Laos",
@@ -2708,7 +2861,7 @@
     13.36
    ],
    "years": [
-    1920,
+    1914,
     1946
    ],
    "realm": "French Cambodia",
@@ -2743,7 +2896,7 @@
     -12.78
    ],
    "years": [
-    1920,
+    1914,
     1945
    ],
    "realm": "French Madagascar",
@@ -2765,7 +2918,7 @@
     -11.7
    ],
    "years": [
-    1920,
+    1914,
     1945
    ],
    "realm": "French Madagascar",
@@ -2787,7 +2940,7 @@
     21.2
    ],
    "years": [
-    1920,
+    1914,
     1944
    ],
    "realm": "Guangzhouwan",
@@ -2836,6 +2989,32 @@
      "by": "League of Nations"
     }
    ]
+  },
+  {
+   "place": "Damascus",
+   "lonLat": [
+    36.29,
+    33.51
+   ],
+   "years": [
+    1914,
+    1917
+   ],
+   "realm": "Ottoman Empire",
+   "why": "Ottoman until October 1918"
+  },
+  {
+   "place": "Damascus",
+   "lonLat": [
+    36.29,
+    33.51
+   ],
+   "years": [
+    1918,
+    1919
+   ],
+   "realm": "Arab Kingdom of Syria",
+   "why": "Held by the Arab government of Faisal from October 1918 until the French took Damascus in July 1920"
   },
   {
    "place": "Damascus",
@@ -2905,6 +3084,41 @@
     33.89
    ],
    "years": [
+    1914,
+    1917
+   ],
+   "realm": "Ottoman Empire",
+   "why": "Ottoman until October 1918"
+  },
+  {
+   "place": "Beirut",
+   "lonLat": [
+    35.5,
+    33.89
+   ],
+   "years": [
+    1918,
+    1919
+   ],
+   "realm": "Ottoman Empire",
+   "why": "Ottoman land under French military occupation from October 1918",
+   "heldBy": [
+    {
+     "years": [
+      1918,
+      1919
+     ],
+     "by": "France"
+    }
+   ]
+  },
+  {
+   "place": "Beirut",
+   "lonLat": [
+    35.5,
+    33.89
+   ],
+   "years": [
     1920,
     1942
    ],
@@ -2940,7 +3154,7 @@
     46.13
    ],
    "years": [
-    1920,
+    1914,
     2026
    ],
    "realm": "France",
@@ -2962,7 +3176,7 @@
     44.84
    ],
    "years": [
-    1920,
+    1914,
     2026
    ],
    "realm": "France",
@@ -2984,7 +3198,7 @@
     43.7
    ],
    "years": [
-    1920,
+    1914,
     2026
    ],
    "realm": "France",
@@ -3013,7 +3227,7 @@
     47.12
    ],
    "years": [
-    1920,
+    1914,
     2026
    ],
    "realm": "France",
@@ -3035,7 +3249,7 @@
     46.57
    ],
    "years": [
-    1920,
+    1914,
     2026
    ],
    "realm": "France",
@@ -3049,6 +3263,32 @@
      "by": "Germany"
     }
    ]
+  },
+  {
+   "place": "Aleppo",
+   "lonLat": [
+    37.16,
+    36.2
+   ],
+   "years": [
+    1914,
+    1917
+   ],
+   "realm": "Ottoman Empire",
+   "why": "Ottoman until October 1918"
+  },
+  {
+   "place": "Aleppo",
+   "lonLat": [
+    37.16,
+    36.2
+   ],
+   "years": [
+    1918,
+    1919
+   ],
+   "realm": "Arab Kingdom of Syria",
+   "why": "Held by the Arab government of Faisal from October 1918 until the French took Damascus in July 1920"
   },
   {
    "place": "Aleppo",
@@ -3091,6 +3331,41 @@
       1943
      ],
      "by": "League of Nations"
+    }
+   ]
+  },
+  {
+   "place": "Latakia",
+   "lonLat": [
+    35.79,
+    35.52
+   ],
+   "years": [
+    1914,
+    1917
+   ],
+   "realm": "Ottoman Empire",
+   "why": "Ottoman until October 1918"
+  },
+  {
+   "place": "Latakia",
+   "lonLat": [
+    35.79,
+    35.52
+   ],
+   "years": [
+    1918,
+    1919
+   ],
+   "realm": "Ottoman Empire",
+   "why": "Ottoman land under French military occupation from October 1918",
+   "heldBy": [
+    {
+     "years": [
+      1918,
+      1919
+     ],
+     "by": "France"
     }
    ]
   },
@@ -3167,11 +3442,72 @@
     32.71
    ],
    "years": [
+    1914,
+    1917
+   ],
+   "realm": "Ottoman Empire",
+   "why": "Ottoman until October 1918"
+  },
+  {
+   "place": "As-Suwayda",
+   "lonLat": [
+    36.57,
+    32.71
+   ],
+   "years": [
+    1918,
+    1919
+   ],
+   "realm": "Arab Kingdom of Syria",
+   "why": "Held by the Arab government of Faisal from October 1918 until the French took Damascus in July 1920"
+  },
+  {
+   "place": "As-Suwayda",
+   "lonLat": [
+    36.57,
+    32.71
+   ],
+   "years": [
     1920,
     1920
    ],
    "realm": "State of Damascus",
    "why": "Part of the State of Damascus until the Druze state was formed in May 1921"
+  },
+  {
+   "place": "Antakya",
+   "lonLat": [
+    36.16,
+    36.2
+   ],
+   "years": [
+    1914,
+    1917
+   ],
+   "realm": "Ottoman Empire",
+   "why": "Ottoman until October 1918"
+  },
+  {
+   "place": "Antakya",
+   "lonLat": [
+    36.16,
+    36.2
+   ],
+   "years": [
+    1918,
+    1919
+   ],
+   "realm": "Ottoman Empire",
+   "why": "Ottoman land under French military occupation from October 1918",
+   "heldBy": [
+    {
+     "years": [
+      1918,
+      1919
+     ],
+     "by": "France"
+    }
+   ]
   },
   {
    "place": "Antakya",
@@ -3272,6 +3608,28 @@
     49.23
    ],
    "years": [
+    1914,
+    1919
+   ],
+   "realm": "Germany",
+   "why": "German until the Treaty of Versailles, under French occupation from November 1918",
+   "heldBy": [
+    {
+     "years": [
+      1918,
+      1919
+     ],
+     "by": "France"
+    }
+   ]
+  },
+  {
+   "place": "Saarbrücken",
+   "lonLat": [
+    6.99,
+    49.23
+   ],
+   "years": [
     1920,
     1934
    ],
@@ -3307,7 +3665,7 @@
     21.36
    ],
    "years": [
-    1920,
+    1914,
     1929
    ],
    "realm": "Colony of Niger",
@@ -3346,11 +3704,169 @@
     -1.63
    ],
    "years": [
-    1920,
+    1914,
     1924
    ],
    "realm": "French Gabon",
    "why": "Part of Gabon until 1925"
+  },
+  {
+   "place": "Lille",
+   "lonLat": [
+    3.06,
+    50.63
+   ],
+   "years": [
+    1914,
+    1920
+   ],
+   "realm": "France",
+   "why": "French, occupied by Germany from October 1914 to October 1918",
+   "heldBy": [
+    {
+     "years": [
+      1914,
+      1917
+     ],
+     "by": "Germany"
+    }
+   ]
+  },
+  {
+   "place": "Charleville-Mézières",
+   "lonLat": [
+    4.72,
+    49.77
+   ],
+   "years": [
+    1914,
+    1920
+   ],
+   "realm": "France",
+   "why": "French, occupied by Germany from August 1914 to November 1918",
+   "heldBy": [
+    {
+     "years": [
+      1914,
+      1917
+     ],
+     "by": "Germany"
+    }
+   ]
+  },
+  {
+   "place": "Noyon",
+   "lonLat": [
+    3.0,
+    49.58
+   ],
+   "years": [
+    1914,
+    1920
+   ],
+   "realm": "France",
+   "why": "French, occupied by Germany until its retreat of March 1917",
+   "heldBy": [
+    {
+     "years": [
+      1914,
+      1916
+     ],
+     "by": "Germany"
+    }
+   ]
+  },
+  {
+   "place": "Arras",
+   "lonLat": [
+    2.78,
+    50.29
+   ],
+   "years": [
+    1914,
+    1920
+   ],
+   "realm": "France",
+   "why": "French, held by France on the front line throughout the war"
+  },
+  {
+   "place": "Verdun",
+   "lonLat": [
+    5.38,
+    49.16
+   ],
+   "years": [
+    1914,
+    1920
+   ],
+   "realm": "France",
+   "why": "French, held by France throughout the war"
+  },
+  {
+   "place": "Thann",
+   "lonLat": [
+    7.1,
+    47.81
+   ],
+   "years": [
+    1914,
+    1919
+   ],
+   "realm": "Alsace–Lorraine",
+   "why": "German Alsace-Lorraine until 1920, held by France from August 1914",
+   "heldBy": [
+    {
+     "years": [
+      1914,
+      1919
+     ],
+     "by": "France"
+    }
+   ]
+  },
+  {
+   "place": "Berbérati",
+   "lonLat": [
+    15.79,
+    4.26
+   ],
+   "years": [
+    1914,
+    1919
+   ],
+   "realm": "Kamerun",
+   "why": "In Neukamerun, German from 1911 until the Treaty of Versailles, retaken by France in 1914",
+   "heldBy": [
+    {
+     "years": [
+      1914,
+      1919
+     ],
+     "by": "France"
+    }
+   ]
+  },
+  {
+   "place": "Moundou",
+   "lonLat": [
+    16.08,
+    8.57
+   ],
+   "years": [
+    1914,
+    1919
+   ],
+   "realm": "Kamerun",
+   "why": "In Neukamerun, German from 1911 until the Treaty of Versailles, retaken by France in 1914",
+   "heldBy": [
+    {
+     "years": [
+      1914,
+      1919
+     ],
+     "by": "France"
+    }
+   ]
   }
  ]
 }

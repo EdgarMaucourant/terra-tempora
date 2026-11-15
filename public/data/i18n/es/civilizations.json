@@ -71,8 +71,14 @@
  "iran": {
   "name": "Irán"
  },
+ "ubangi-shari": {
+  "name": "Ubangui-Chari"
+ },
  "mongolia": {
   "name": "Mongolia"
+ },
+ "upper-senegal-and-niger": {
+  "name": "Alto Senegal y Níger"
  },
  "french-sudan": {
   "name": "Sudán francés"
@@ -134,6 +140,9 @@
  "pakistan": {
   "name": "Pakistán"
  },
+ "germany": {
+  "name": "Alemania"
+ },
  "namibia": {
   "name": "Namibia"
  },
@@ -142,6 +151,9 @@
  },
  "portuguese-mozambique": {
   "name": "Mozambique portugués"
+ },
+ "kamerun": {
+  "name": "Camerún alemán"
  },
  "turkey": {
   "name": "Turquía"
@@ -169,9 +181,6 @@
  },
  "central-african-republic": {
   "name": "República Centroafricana"
- },
- "ubangi-shari": {
-  "name": "Ubangui-Chari"
  },
  "french-madagascar": {
   "name": "Madagascar francés"
@@ -230,6 +239,9 @@
  "zimbabwe": {
   "name": "Zimbabue"
  },
+ "french-morocco": {
+  "name": "Protectorado francés de Marruecos"
+ },
  "french-congo": {
   "name": "Congo francés"
  },
@@ -238,12 +250,6 @@
  },
  "japan": {
   "name": "Japón"
- },
- "french-morocco": {
-  "name": "Protectorado francés de Marruecos"
- },
- "germany": {
-  "name": "Alemania"
  },
  "republic-of-the-congo": {
   "name": "República del Congo"
@@ -329,6 +335,9 @@
  "mandate-for-syria-and-the-lebanon": {
   "name": "Mandato francés de Siria y el Líbano"
  },
+ "ottoman-empire": {
+  "name": "Imperio otomano"
+ },
  "kyrgyzstan": {
   "name": "Kirguistán"
  },
@@ -346,6 +355,9 @@
  },
  "united-arab-republic": {
   "name": "República Árabe Unida"
+ },
+ "arab-kingdom-of-syria": {
+  "name": "Reino Árabe de Siria"
  },
  "cambodia": {
   "name": "Camboya"
@@ -488,6 +500,9 @@
  "french-togoland": {
   "name": "Togolandia francesa"
  },
+ "togoland": {
+  "name": "Togolandia"
+ },
  "croatia": {
   "name": "Croacia"
  },
@@ -610,6 +625,9 @@
  },
  "portuguese-timor": {
   "name": "Timor portugués"
+ },
+ "alsace-lorraine": {
+  "name": "Alsacia y Lorena"
  },
  "montenegro": {
   "name": "Montenegro"

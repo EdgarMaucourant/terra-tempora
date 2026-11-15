@@ -14,7 +14,7 @@
     "SPM",
     "WLF"
    ],
-   "from": 1920,
+   "from": 1914,
    "why": "Metropolitan France with Corsica, the overseas departments (Guadeloupe, Martinique, French Guiana, Réunion, and Mayotte since 2011) and the overseas territories (Saint Pierre and Miquelon, Saint Barthélemy, Saint Martin, New Caledonia, French Polynesia, Wallis and Futuna, the French Southern and Antarctic Lands, Clipperton), whose borders have not moved since 1957"
   },
   {
@@ -24,7 +24,7 @@
     "COM",
     "VUT"
    ],
-   "from": 1920,
+   "from": 1914,
    "why": "Algeria, Djibouti, the Comoros and Vanuatu, French (Vanuatu Anglo-French) until their independence, with today's borders"
   },
   {
@@ -45,7 +45,7 @@
     "CMR",
     "MDG"
    ],
-   "from": 1920,
+   "from": 1914,
    "why": "French West Africa, French Equatorial Africa, French Togoland, French Cameroon and Madagascar, with today's borders, from French rule to independence, and the British Southern Cameroons (Northwest and Southwest of today's Cameroon) until they join Cameroon in 1961"
   },
   {
@@ -73,7 +73,7 @@
     "MAR-3456",
     "TUN"
    ],
-   "from": 1920,
+   "from": 1914,
    "why": "Morocco (without Western Sahara) and Tunisia: the French protectorates until 1956, with Spain's northern zone, the Tangier International Zone, Cape Juby (Spanish until 1958) and Ifni (Spanish until 1969)"
   },
   {
@@ -82,7 +82,7 @@
     "LAO",
     "KHM"
    ],
-   "from": 1920,
+   "from": 1914,
    "why": "French Indochina: Vietnam (Tonkin, Annam and Cochinchina, then the State of Vietnam), Laos and Cambodia, with today's borders, until independence in 1953 and 1954, then North and South Vietnam until 1976"
   },
   {
@@ -91,14 +91,14 @@
     "mahe",
     "chandernagore"
    ],
-   "from": 1920,
+   "from": 1914,
    "why": "French India: Pondichéry, Karikal, Mahé and Yanaon (today's Puducherry, with Mahé drawn where it is, not where Natural Earth puts it) and Chandernagore, until they pass to India"
   },
   {
    "pieces": [
     "DEU-1581"
    ],
-   "from": 1920,
+   "from": 1914,
    "why": "The Saar: a League of Nations territory from 1920 to 1935, German again until 1945, occupied by France, a protectorate of France from 1946 until it joins West Germany in 1957, with today's Saarland borders"
   },
   {
@@ -108,14 +108,14 @@
     "LBN",
     "TUR-2289"
    ],
-   "from": 1920,
+   "from": 1914,
    "why": "Syria (with the Golan Heights), Lebanon and the Sanjak of Alexandretta (Hatay): French mandates under the League of Nations, with the states France set up in Syria (Aleppo, Damascus, the Alawites, Jabal Druze) until their union, with today's borders; Hatay State in 1938, Turkish from June 1939"
   },
   {
    "pieces": [
     "guangzhouwan"
    ],
-   "from": 1920,
+   "from": 1914,
    "why": "Guangzhouwan, leased to France until 1945, then part of China"
   }
  ],
@@ -3671,6 +3671,647 @@
      "source": {
       "title": "State of Damascus (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/State_of_Damascus"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1920-12-04",
+   "what": "Upper Senegal and Niger is renamed French Sudan, and Mauritania becomes a colony",
+   "source": {
+    "title": "French Sudan (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_Sudan"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MLI"
+     ],
+     "owner": "France",
+     "territory": "Upper Senegal and Niger",
+     "source": {
+      "title": "Upper Senegal and Niger (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Upper_Senegal_and_Niger"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1920-10-01",
+   "what": "The United Kingdom hands Lomé and the coast of Togo to France under the Milner–Simon agreement",
+   "source": {
+    "title": "French Togoland (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_Togoland"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "TGO-87"
+     ],
+     "owner": "France",
+     "territory": "French Togoland",
+     "source": {
+      "title": "French Togoland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Togoland"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1914-08-26",
+      "note": "Held by the United Kingdom since August 1914, its zone until 1 October 1920",
+      "source": {
+       "title": "Togoland campaign (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Togoland_campaign"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1920-09-01",
+   "what": "France divides its mandate into the states of Greater Lebanon, Damascus, Aleppo and the Alawites",
+   "source": {
+    "title": "Mandate for Syria and the Lebanon (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Mandate_for_Syria_and_the_Lebanon"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SYR-137",
+      "SYR-140",
+      "SYR-136",
+      "SYR-141",
+      "SYR-142",
+      "SYR-4843",
+      "SYR-144",
+      "SYR-139",
+      "SYR-138",
+      "SYR-146",
+      "SYR-145",
+      "SYR-5261",
+      "golan",
+      "SYR-143",
+      "LBN-3022"
+     ],
+     "owner": "Arab Kingdom of Syria",
+     "source": {
+      "title": "Arab Kingdom of Syria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Arab_Kingdom_of_Syria"
+     },
+     "hatch": {
+      "by": "France",
+      "since": "1920-07-24",
+      "note": "Occupied by France after the Battle of Maysalun",
+      "source": {
+       "title": "Battle of Maysalun (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Battle_of_Maysalun"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "SYR-134",
+      "SYR-135",
+      "LBN-3059",
+      "LBN-3060",
+      "LBN-3023",
+      "LBN-3025",
+      "LBN-3024",
+      "TUR-2289"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Occupied Enemy Territory Administration (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Occupied_Enemy_Territory_Administration"
+     },
+     "hatch": {
+      "by": "France",
+      "since": "1918-10-08",
+      "note": "Occupied Enemy Territory Administration, under French control",
+      "source": {
+       "title": "Occupied Enemy Territory Administration (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Occupied_Enemy_Territory_Administration"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1920-07-24",
+   "what": "France defeats the Arab Kingdom of Syria at Maysalun and takes Damascus",
+   "source": {
+    "title": "Battle of Maysalun (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Maysalun"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SYR-137",
+      "SYR-140",
+      "SYR-136",
+      "SYR-141",
+      "SYR-142",
+      "SYR-4843",
+      "SYR-144",
+      "SYR-139",
+      "SYR-138",
+      "SYR-146",
+      "SYR-145",
+      "SYR-5261",
+      "golan",
+      "SYR-143",
+      "LBN-3022"
+     ],
+     "owner": "Arab Kingdom of Syria",
+     "source": {
+      "title": "Arab Kingdom of Syria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Arab_Kingdom_of_Syria"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1920-03-17",
+   "what": "Chad is made a colony of its own, out of Ubangi-Shari-Chad",
+   "source": {
+    "title": "French Chad (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_Chad"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "TCD-1464",
+      "TCD-1465",
+      "TCD-1466",
+      "TCD-1472",
+      "TCD-1473",
+      "TCD-1474",
+      "TCD-1475",
+      "TCD-1484",
+      "TCD-1485",
+      "TCD-1486",
+      "TCD-1487",
+      "TCD-1488",
+      "TCD-1489",
+      "TCD-4857",
+      "TCD-4858",
+      "TCD-5577",
+      "TCD-5579",
+      "TCD-5580",
+      "TCD-5581",
+      "TCD-5582",
+      "TCD-5583"
+     ],
+     "owner": "France",
+     "territory": "Ubangi-Shari",
+     "source": {
+      "title": "Ubangi-Shari (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ubangi-Shari"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1920-01-10",
+   "what": "The Treaty of Versailles comes into force: Germany gives up Alsace-Lorraine, its colonies and, for fifteen years, the Saar",
+   "source": {
+    "title": "Treaty of Versailles (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Versailles"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "FRA-5273",
+      "FRA-5296",
+      "FRA-5328"
+     ],
+     "owner": "Germany",
+     "territory": "Alsace–Lorraine",
+     "source": {
+      "title": "Alsace–Lorraine (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Alsace–Lorraine"
+     },
+     "hatch": {
+      "by": "France",
+      "since": "1918-11-22",
+      "note": "Occupied by France since the Armistice; French troops enter Strasbourg on 22 November 1918",
+      "source": {
+       "title": "Alsace–Lorraine (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Alsace–Lorraine"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "south-alsace"
+     ],
+     "owner": "Germany",
+     "territory": "Alsace–Lorraine",
+     "source": {
+      "title": "Alsace–Lorraine (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Alsace–Lorraine"
+     },
+     "hatch": {
+      "by": "France",
+      "since": "1914-08-07",
+      "note": "Taken by France at the start of the war and held until the Armistice",
+      "source": {
+       "title": "Alsace–Lorraine (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Alsace–Lorraine"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "DEU-1581"
+     ],
+     "owner": "Germany",
+     "source": {
+      "title": "Weimar Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Weimar_Republic"
+     },
+     "hatch": {
+      "by": "France",
+      "since": "1918-11-22",
+      "note": "Occupied by France since November 1918",
+      "source": {
+       "title": "Territory of the Saar Basin (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Territory_of_the_Saar_Basin"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "TGO-87"
+     ],
+     "owner": "Germany",
+     "territory": "Togoland",
+     "source": {
+      "title": "Togoland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Togoland"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1914-08-26",
+      "note": "Taken by British and French troops in August 1914",
+      "source": {
+       "title": "Togoland campaign (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Togoland_campaign"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "TGO-86",
+      "TGO-88",
+      "TGO-89",
+      "TGO-90"
+     ],
+     "owner": "Germany",
+     "territory": "Togoland",
+     "source": {
+      "title": "Togoland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Togoland"
+     },
+     "hatch": {
+      "by": "France",
+      "since": "1914-08-26",
+      "note": "Taken by British and French troops in August 1914",
+      "source": {
+       "title": "Togoland campaign (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Togoland_campaign"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "CMR-803",
+      "CMR-1462",
+      "CMR-1483",
+      "CMR-1482",
+      "CMR-1481",
+      "CMR-1476",
+      "CMR-798",
+      "CMR-1480"
+     ],
+     "owner": "Germany",
+     "territory": "Kamerun",
+     "source": {
+      "title": "Kamerun (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kamerun"
+     },
+     "hatch": {
+      "by": "France",
+      "since": "1916-02-18",
+      "note": "Taken by French and British troops, 1914 to 1916",
+      "source": {
+       "title": "Kamerun campaign (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Kamerun_campaign"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "CMR-1477",
+      "CMR-799"
+     ],
+     "owner": "Germany",
+     "territory": "Kamerun",
+     "source": {
+      "title": "Kamerun (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kamerun"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1916-02-18",
+      "note": "Taken by British and French troops, 1914 to 1916",
+      "source": {
+       "title": "Kamerun campaign (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Kamerun_campaign"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "CAF-805",
+      "TCD-4858",
+      "CAF-802",
+      "CAF-804",
+      "CAF-801",
+      "TCD-1484",
+      "neukamerun-cuvette",
+      "neukamerun-estuaire",
+      "neukamerun-likouala",
+      "neukamerun-lobaye",
+      "neukamerun-logone-oriental",
+      "neukamerun-mayo-kebbi-est",
+      "neukamerun-ombella-m-poko",
+      "neukamerun-ouham",
+      "neukamerun-sangha",
+      "neukamerun-tandjile",
+      "neukamerun-wouleu-ntem"
+     ],
+     "owner": "Germany",
+     "territory": "Kamerun",
+     "source": {
+      "title": "Neukamerun (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Neukamerun"
+     },
+     "hatch": {
+      "by": "France",
+      "since": "1914-09-30",
+      "note": "Neukamerun, ceded to Germany in 1911, retaken by French troops from the autumn of 1914",
+      "source": {
+       "title": "Neukamerun (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Neukamerun"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1919-03-01",
+   "what": "Upper Volta is made a colony of its own, out of Upper Senegal and Niger",
+   "source": {
+    "title": "French Upper Volta (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_Upper_Volta"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "BFA"
+     ],
+     "owner": "France",
+     "territory": "Upper Senegal and Niger",
+     "source": {
+      "title": "Upper Senegal and Niger (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Upper_Senegal_and_Niger"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-11-22",
+   "what": "French troops enter Alsace-Lorraine and the Saar after the Armistice",
+   "source": {
+    "title": "Alsace–Lorraine (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Alsace–Lorraine"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "FRA-5273",
+      "FRA-5296",
+      "FRA-5328"
+     ],
+     "owner": "Germany",
+     "territory": "Alsace–Lorraine",
+     "source": {
+      "title": "Alsace–Lorraine (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Alsace–Lorraine"
+     }
+    },
+    {
+     "pieces": [
+      "south-alsace"
+     ],
+     "owner": "Germany",
+     "territory": "Alsace–Lorraine",
+     "source": {
+      "title": "Alsace–Lorraine (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Alsace–Lorraine"
+     },
+     "hatch": {
+      "by": "France",
+      "since": "1914-08-07",
+      "note": "Taken by France at the start of the war and held until the Armistice",
+      "source": {
+       "title": "Alsace–Lorraine (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Alsace–Lorraine"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "DEU-1581"
+     ],
+     "owner": "Germany",
+     "source": {
+      "title": "German Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/German_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-11-11",
+   "what": "The Armistice: German troops must leave occupied France within fifteen days",
+   "source": {
+    "title": "Armistice of 11 November 1918 (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Armistice_of_11_November_1918"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "nord-occupied-1914-1918",
+      "pas-de-calais-occupied-1914-1918",
+      "aisne-occupied-1914-1918",
+      "marne-occupied-1914-1918",
+      "meuse-occupied-1914-1918",
+      "meurthe-et-moselle-occupied-1914-1918",
+      "vosges-occupied-1914-1918",
+      "FRA-5268"
+     ],
+     "owner": "France",
+     "source": {
+      "title": "French Third Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Third_Republic"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1914-08-24",
+      "note": "Occupied by Germany, behind the Western Front",
+      "source": {
+       "title": "Western Front (World War I) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Western_Front_(World_War_I)"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-10-30",
+   "what": "By the Armistice of Mudros the Ottoman Empire leaves the war: the Arab government of Faisal holds the interior of Syria, France the coast",
+   "source": {
+    "title": "Arab Kingdom of Syria (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Arab_Kingdom_of_Syria"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "SYR-137",
+      "SYR-140",
+      "SYR-136",
+      "SYR-141",
+      "SYR-142",
+      "SYR-4843",
+      "SYR-144",
+      "SYR-139",
+      "SYR-138",
+      "SYR-146",
+      "SYR-145",
+      "SYR-5261",
+      "golan",
+      "SYR-143",
+      "LBN-3022",
+      "SYR-134",
+      "SYR-135",
+      "LBN-3059",
+      "LBN-3060",
+      "LBN-3023",
+      "LBN-3025",
+      "LBN-3024",
+      "TUR-2289"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1917-03-16",
+   "what": "German troops fall back to the Hindenburg Line, leaving Noyon, Péronne and Bapaume",
+   "source": {
+    "title": "Operation Alberich (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Operation_Alberich"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "pas-de-calais-occupied-1914-1917",
+      "somme-occupied-1914-1917",
+      "oise-occupied-1914-1917",
+      "aisne-occupied-1914-1917"
+     ],
+     "owner": "France",
+     "source": {
+      "title": "French Third Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Third_Republic"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1914-08-24",
+      "note": "Occupied by Germany, behind the Western Front",
+      "source": {
+       "title": "Western Front (World War I) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Western_Front_(World_War_I)"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1916-06-29",
+   "what": "Spain occupies Cape Juby, assigned to it in 1912",
+   "source": {
+    "title": "Cape Juby (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Cape_Juby"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "cape-juby-guelmim"
+     ],
+     "owner": "France",
+     "territory": "French Morocco",
+     "source": {
+      "title": "French protectorate in Morocco (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_protectorate_in_Morocco"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1916-02-18",
+   "what": "The last German garrison in Kamerun, at Mora, surrenders",
+   "source": {
+    "title": "Kamerun campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kamerun_campaign"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "CMR-803",
+      "CMR-1462",
+      "CMR-1483",
+      "CMR-1482",
+      "CMR-1481",
+      "CMR-1476",
+      "CMR-798",
+      "CMR-1480",
+      "CMR-1477",
+      "CMR-799"
+     ],
+     "owner": "Germany",
+     "territory": "Kamerun",
+     "source": {
+      "title": "Kamerun (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kamerun"
      }
     }
    ]
