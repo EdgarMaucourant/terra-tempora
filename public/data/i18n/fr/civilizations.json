@@ -20,6 +20,9 @@
  "australia": {
   "name": "Australie"
  },
+ "french-west-africa": {
+  "name": "Afrique-Occidentale française"
+ },
  "india": {
   "name": "Inde"
  },
@@ -28,6 +31,9 @@
  },
  "kazakhstan": {
   "name": "Kazakhstan"
+ },
+ "french-equatorial-africa": {
+  "name": "Afrique-Équatoriale française"
  },
  "democratic-republic-of-the-congo": {
   "name": "République démocratique du Congo"
@@ -499,6 +505,9 @@
  },
  "netherlands": {
   "name": "Pays-Bas"
+ },
+ "spanish-west-africa": {
+  "name": "Afrique occidentale espagnole"
  },
  "taiwan-republic-of-china": {
   "name": "Taïwan"

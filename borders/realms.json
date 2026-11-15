@@ -59,7 +59,8 @@
   "wikidata": "Q10828323",
   "fr": "Protectorat français d'Annam",
   "es": "Protectorado francés de Annam",
-  "group": "French Indochina"
+  "group": "French Indochina",
+  "groupUntil": "1954-07-21"
  },
  "Antigua and Barbuda": {
   "wikipedia": "Antigua and Barbuda",
@@ -353,7 +354,9 @@
   "wikipedia": "Cape Juby",
   "wikidata": "Q1538846",
   "fr": "Cap Juby",
-  "es": "Cabo Juby"
+  "es": "Cabo Juby",
+  "group": "Spanish West Africa",
+  "groupUntil": "1958-01-10"
  },
  "Cape Verde": {
   "wikipedia": "Cape Verde",
@@ -447,13 +450,17 @@
   "wikipedia": "Colonial Mauritania",
   "wikidata": "Q5148343",
   "fr": "Colonie de la Mauritanie",
-  "es": "Colonia de Mauritania"
+  "es": "Colonia de Mauritania",
+  "group": "French West Africa",
+  "groupUntil": "1958-10-05"
  },
  "Colony of Niger": {
   "wikipedia": "Colony of Niger",
   "wikidata": "Q5148520",
   "fr": "Colonie du Niger",
-  "es": "Colonia de Níger"
+  "es": "Colonia de Níger",
+  "group": "French West Africa",
+  "groupUntil": "1958-10-05"
  },
  "Comoros": {
   "wikipedia": "Comoros",
@@ -665,7 +672,8 @@
   "fr": "Protectorat français du Cambodge",
   "es": "Protectorado francés de Camboya",
   "withOwner": false,
-  "group": "French Indochina"
+  "group": "French Indochina",
+  "groupUntil": "1954-07-21"
  },
  "French Cameroon": {
   "wikipedia": "French Cameroon",
@@ -679,7 +687,9 @@
   "wikidata": "Q5501708",
   "fr": "Territoire du Tchad",
   "es": "Chad francés",
-  "withOwner": false
+  "withOwner": false,
+  "group": "French Equatorial Africa",
+  "groupUntil": "1958-09-28"
  },
  "French Cochinchina": {
   "wikipedia": "French Cochinchina",
@@ -687,28 +697,42 @@
   "fr": "Cochinchine française",
   "es": "Cochinchina francesa",
   "withOwner": false,
-  "group": "French Indochina"
+  "group": "French Indochina",
+  "groupUntil": "1954-07-21"
  },
  "French Congo": {
   "wikipedia": "French Congo",
   "wikidata": "Q265319",
   "fr": "Congo français",
   "es": "Congo francés",
-  "withOwner": false
+  "withOwner": false,
+  "group": "French Equatorial Africa",
+  "groupUntil": "1958-09-28"
  },
  "French Dahomey": {
   "wikipedia": "French Dahomey",
   "wikidata": "Q797505",
   "fr": "Colonie du Dahomey",
   "es": "Dahomey francés",
-  "withOwner": false
+  "withOwner": false,
+  "group": "French West Africa",
+  "groupUntil": "1958-10-05"
+ },
+ "French Equatorial Africa": {
+  "wikipedia": "French Equatorial Africa",
+  "wikidata": "Q271894",
+  "fr": "Afrique-Équatoriale française",
+  "es": "África Ecuatorial Francesa",
+  "notACountry": true
  },
  "French Gabon": {
   "wikipedia": "French Equatorial Africa",
   "wikidata": "Q39072717",
   "fr": "Colonie du Gabon",
   "es": "Gabón francés",
-  "withOwner": false
+  "withOwner": false,
+  "group": "French Equatorial Africa",
+  "groupUntil": "1958-09-28"
  },
  "French Guiana": {
   "wikipedia": "French Guiana",
@@ -722,7 +746,9 @@
   "wikidata": "Q797433",
   "fr": "Guinée française",
   "es": "Guinea francesa",
-  "withOwner": false
+  "withOwner": false,
+  "group": "French West Africa",
+  "groupUntil": "1958-10-05"
  },
  "French India": {
   "wikipedia": "French India",
@@ -743,7 +769,9 @@
   "wikidata": "Q39074482",
   "fr": "Colonie de Côte d'Ivoire",
   "es": "Costa de Marfil francesa",
-  "withOwner": false
+  "withOwner": false,
+  "group": "French West Africa",
+  "groupUntil": "1958-10-05"
  },
  "French Laos": {
   "wikipedia": "French protectorate of Laos",
@@ -751,7 +779,8 @@
   "fr": "Protectorat français du Laos",
   "es": "Protectorado francés de Laos",
   "withOwner": false,
-  "group": "French Indochina"
+  "group": "French Indochina",
+  "groupUntil": "1954-07-21"
  },
  "French Madagascar": {
   "wikipedia": "French Madagascar",
@@ -797,7 +826,9 @@
   "wikidata": "Q5502051",
   "fr": "Colonie du Sénégal",
   "es": "Senegal francés",
-  "withOwner": false
+  "withOwner": false,
+  "group": "French West Africa",
+  "groupUntil": "1958-10-05"
  },
  "French Somaliland": {
   "wikipedia": "French Somaliland",
@@ -836,7 +867,9 @@
   "wikidata": "Q508014",
   "fr": "Soudan français",
   "es": "Sudán francés",
-  "withOwner": false
+  "withOwner": false,
+  "group": "French West Africa",
+  "groupUntil": "1958-10-05"
  },
  "French Togoland": {
   "wikipedia": "French Togoland",
@@ -857,7 +890,16 @@
   "wikidata": "Q797440",
   "fr": "Colonie de la Haute-Volta",
   "es": "Alto Volta francés",
-  "withOwner": false
+  "withOwner": false,
+  "group": "French West Africa",
+  "groupUntil": "1958-10-05"
+ },
+ "French West Africa": {
+  "wikipedia": "French West Africa",
+  "wikidata": "Q210682",
+  "fr": "Afrique-Occidentale française",
+  "es": "África Occidental Francesa",
+  "notACountry": true
  },
  "Gabon": {
   "wikipedia": "Gabon",
@@ -1049,7 +1091,9 @@
   "wikipedia": "Ifni",
   "wikidata": "Q763141",
   "fr": "Ifni",
-  "es": "Ifni"
+  "es": "Ifni",
+  "group": "Spanish West Africa",
+  "groupUntil": "1958-01-10"
  },
  "India": {
   "wikipedia": "India",
@@ -1961,6 +2005,13 @@
   "es": "Protectorado español de Marruecos",
   "withOwner": false
  },
+ "Spanish West Africa": {
+  "wikipedia": "Spanish West Africa",
+  "wikidata": "Q1191986",
+  "fr": "Afrique occidentale espagnole",
+  "es": "África Occidental Española",
+  "notACountry": true
+ },
  "Sri Lanka": {
   "wikipedia": "Sri Lanka",
   "wikidata": "Q854",
@@ -1972,7 +2023,8 @@
   "wikidata": "Q1193879",
   "fr": "État du Viêt Nam",
   "es": "Estado de Vietnam",
-  "group": "French Indochina"
+  "group": "French Indochina",
+  "groupUntil": "1954-07-21"
  },
  "Sudan": {
   "wikipedia": "Sudan",
@@ -2082,7 +2134,8 @@
   "wikidata": "Q20969067",
   "fr": "Protectorat du Tonkin",
   "es": "Protectorado de Tonkín",
-  "group": "French Indochina"
+  "group": "French Indochina",
+  "groupUntil": "1954-07-21"
  },
  "Transnistria": {
   "wikipedia": "Transnistria",
@@ -2149,7 +2202,9 @@
   "wikipedia": "Ubangi-Shari",
   "wikidata": "Q1421888",
   "fr": "Oubangui-Chari",
-  "es": "Ubangui-Chari"
+  "es": "Ubangui-Chari",
+  "group": "French Equatorial Africa",
+  "groupUntil": "1958-09-28"
  },
  "Uganda": {
   "wikipedia": "Uganda",
