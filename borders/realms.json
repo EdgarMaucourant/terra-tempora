@@ -38,6 +38,12 @@
   "fr": "Algérie",
   "es": "Argelia"
  },
+ "Alsace–Lorraine": {
+  "wikipedia": "Alsace–Lorraine",
+  "wikidata": "Q155144",
+  "fr": "Alsace-Lorraine",
+  "es": "Alsacia y Lorena"
+ },
  "American Samoa": {
   "wikipedia": "American Samoa",
   "wikidata": "Q16641",
@@ -75,6 +81,12 @@
   "wikidata": "Q781",
   "fr": "Antigua-et-Barbuda",
   "es": "Antigua y Barbuda"
+ },
+ "Arab Kingdom of Syria": {
+  "wikipedia": "Arab Kingdom of Syria",
+  "wikidata": "Q146600",
+  "fr": "Royaume arabe de Syrie",
+  "es": "Reino Árabe de Siria"
  },
  "Argentina": {
   "wikipedia": "Argentina",
@@ -460,7 +472,22 @@
   "fr": "Colonie de la Mauritanie",
   "es": "Colonia de Mauritania",
   "group": "French West Africa",
-  "groupUntil": "1958-10-05"
+  "groupUntil": "1958-10-05",
+  "periods": [
+   {
+    "from": "1904-10-18",
+    "name": "Civil Territory of Mauritania",
+    "wikipedia": "Colonial Mauritania",
+    "fr": "Territoire civil de la Mauritanie",
+    "es": "Territorio civil de Mauritania"
+   },
+   {
+    "from": "1920-12-04",
+    "name": "Colonial Mauritania",
+    "wikipedia": "Colonial Mauritania",
+    "note": "A colony from 4 December 1920"
+   }
+  ]
  },
  "Colony of Niger": {
   "wikipedia": "Colony of Niger",
@@ -1242,6 +1269,12 @@
   "fr": "Jordanie",
   "es": "Jordania"
  },
+ "Kamerun": {
+  "wikipedia": "Kamerun",
+  "wikidata": "Q668294",
+  "fr": "Kamerun",
+  "es": "Camerún alemán"
+ },
  "Kazakhstan": {
   "wikipedia": "Kazakhstan",
   "wikidata": "Q232",
@@ -1689,6 +1722,12 @@
   "wikidata": "Q842",
   "fr": "Oman",
   "es": "Omán"
+ },
+ "Ottoman Empire": {
+  "wikipedia": "Ottoman Empire",
+  "wikidata": "Q12560",
+  "fr": "Empire ottoman",
+  "es": "Imperio otomano"
  },
  "Pakistan": {
   "wikipedia": "Pakistan",
@@ -2279,6 +2318,12 @@
   "fr": "Togo",
   "es": "Togo"
  },
+ "Togoland": {
+  "wikipedia": "Togoland",
+  "wikidata": "Q161062",
+  "fr": "Togoland",
+  "es": "Togolandia"
+ },
  "Tokelau": {
   "wikipedia": "Tokelau",
   "wikidata": "Q36823",
@@ -2366,7 +2411,23 @@
   "fr": "Oubangui-Chari",
   "es": "Ubangui-Chari",
   "group": "French Equatorial Africa",
-  "groupUntil": "1958-09-28"
+  "groupUntil": "1958-09-28",
+  "periods": [
+   {
+    "from": "1906-02-11",
+    "name": "Ubangi-Shari-Chad",
+    "wikipedia": "Ubangi-Shari",
+    "fr": "Oubangui-Chari-Tchad",
+    "es": "Ubangui-Chari-Chad",
+    "note": "Ubangi-Shari with the military territory of Chad"
+   },
+   {
+    "from": "1920-03-17",
+    "name": "Ubangi-Shari",
+    "wikipedia": "Ubangi-Shari",
+    "note": "Without Chad, a colony of its own from 1920"
+   }
+  ]
  },
  "Uganda": {
   "wikipedia": "Uganda",
@@ -2424,6 +2485,14 @@
   "fr": "îles Vierges des États-Unis",
   "es": "Islas Vírgenes de los Estados Unidos",
   "withOwner": false
+ },
+ "Upper Senegal and Niger": {
+  "wikipedia": "Upper Senegal and Niger",
+  "wikidata": "Q1271523",
+  "fr": "Haut-Sénégal et Niger",
+  "es": "Alto Senegal y Níger",
+  "group": "French West Africa",
+  "groupUntil": "1920-12-04"
  },
  "Uruguay": {
   "wikipedia": "Uruguay",
