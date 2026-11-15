@@ -3125,6 +3125,300 @@
    "summary": "After the Viet Minh's August Revolution and the abdication of Emperor Bảo Đại, Hồ Chí Minh reads the declaration of independence of the Democratic Republic of Vietnam before a huge crowd in Hanoi. France does not accept it: Chinese troops occupy the north, French troops retake the south, and war breaks out at the end of 1946.",
    "wikipedia": "Declaration_of_independence_of_the_Democratic_Republic_of_Vietnam",
    "search": "Ho Chi Minh declaration of independence Vietnam 2 September 1945 Ba Dinh"
+  },
+  {
+   "id": "battle-of-maysalun-1920",
+   "kind": "battle",
+   "year": 1920,
+   "title": "The Battle of Maysalun, 24 July 1920",
+   "place": "Maysalun pass, near Damascus",
+   "lonLat": [
+    36.3,
+    33.52
+   ],
+   "civs": [
+    "state-of-damascus",
+    "france"
+   ],
+   "summary": "Faisal's Arab Kingdom of Syria, proclaimed in March, refuses the French mandate given at San Remo. General Gouraud's army crushes the Syrian volunteers of Yusuf al-Azma at the Maysalun pass and enters Damascus the next day. Faisal goes into exile, and France splits Syria into several states: Damascus, Aleppo, the Alawites and, in 1921, Jabal Druze.",
+   "wikipedia": "Battle_of_Maysalun",
+   "search": "Battle of Maysalun 1920 Faisal Arab Kingdom of Syria Gouraud"
+  },
+  {
+   "id": "greater-lebanon-1920",
+   "kind": "empire",
+   "year": 1920,
+   "title": "Greater Lebanon is proclaimed, 1 September 1920",
+   "place": "Beirut and Mount Lebanon",
+   "lonLat": [
+    35.9,
+    34.3
+   ],
+   "civs": [
+    "mandatory-lebanon",
+    "france"
+   ],
+   "summary": "In Beirut, General Gouraud proclaims the State of Greater Lebanon: to the old autonomous Mount Lebanon, France adds Beirut, Tripoli, Sidon, Tyre and the Beqaa valley. These are today's borders of Lebanon. The state becomes the Lebanese Republic with its constitution of 1926, still under French mandate.",
+   "wikipedia": "Greater_Lebanon",
+   "search": "Greater Lebanon 1920 Gouraud proclamation Beirut"
+  },
+  {
+   "id": "franco-turkish-war-1918",
+   "kind": "war",
+   "year": 1918,
+   "to": 1921,
+   "title": "The Franco-Turkish War and the Treaty of Ankara, 1918 – 1921",
+   "place": "Cilicia",
+   "lonLat": [
+    35.32,
+    37.0
+   ],
+   "civs": [
+    "france"
+   ],
+   "summary": "After the Ottoman defeat, French troops occupy Cilicia, around Adana. Turkish nationalists led by Mustafa Kemal fight them at Marash, Urfa and Aintab. By the Treaty of Ankara of 20 October 1921, France leaves Cilicia and draws the border between Syria and Turkey, keeping the Sanjak of Alexandretta under a special regime.",
+   "wikipedia": "Franco-Turkish_War",
+   "search": "Franco-Turkish War Cilicia 1918 1921 Treaty of Ankara Marash Aintab"
+  },
+  {
+   "id": "rif-war-1921",
+   "kind": "war",
+   "year": 1921,
+   "to": 1926,
+   "title": "The Rif War, 1921 – 1926",
+   "place": "The Rif",
+   "lonLat": [
+    -3.3,
+    34.95
+   ],
+   "civs": [
+    "spanish-morocco",
+    "french-morocco",
+    "spain",
+    "france"
+   ],
+   "summary": "The Berber tribes of the Rif, led by Abd el-Krim, rise against Spain and crush its army at Annual in 1921, then found a Republic of the Rif. In 1925 they attack the French zone; France sends Marshal Pétain with a large army and, with Spain, which lands at Al Hoceima, defeats them. Abd el-Krim surrenders to the French in May 1926.",
+   "wikipedia": "Rif_War",
+   "search": "Rif War 1921 1926 Abd el-Krim Annual Republic of the Rif"
+  },
+  {
+   "id": "congo-ocean-railway-1921",
+   "kind": "trade",
+   "year": 1921,
+   "to": 1934,
+   "title": "The Congo–Ocean railway, 1921 – 1934",
+   "place": "From Brazzaville to Pointe-Noire, across the Mayombe",
+   "lonLat": [
+    12.6,
+    -4.25
+   ],
+   "civs": [
+    "french-congo",
+    "france"
+   ],
+   "summary": "To link Brazzaville to the sea without going through the Belgian Congo, France builds a railway of 500 km to Pointe-Noire. Africans from all over French Equatorial Africa are forced to work on it, above all in the Mayombe forest; about 17,000 of them die. André Gide and Albert Londres denounce the work site. The line opens in 1934.",
+   "wikipedia": "Congo–Ocean_Railway",
+   "search": "Congo-Ocean railway 1921 1934 forced labour Brazzaville Pointe-Noire"
+  },
+  {
+   "id": "occupation-of-the-ruhr-1923",
+   "kind": "war",
+   "year": 1923,
+   "to": 1925,
+   "title": "The occupation of the Ruhr, 1923 – 1925",
+   "place": "Essen and the Ruhr",
+   "lonLat": [
+    7.01,
+    51.46
+   ],
+   "civs": [
+    "germany",
+    "france"
+   ],
+   "summary": "Germany falls behind on the war reparations of the Treaty of Versailles. In January 1923, French and Belgian troops occupy the Ruhr, its main coal and steel basin, to take payment in kind. German workers answer with passive resistance, and German money collapses into hyperinflation. The Dawes Plan of 1924 settles the payments, and the troops leave in 1925.",
+   "wikipedia": "Occupation_of_the_Ruhr",
+   "search": "Occupation of the Ruhr 1923 1925 reparations passive resistance"
+  },
+  {
+   "id": "tangier-international-zone-1925",
+   "kind": "treaty",
+   "year": 1925,
+   "title": "Tangier becomes an international zone, 1 June 1925",
+   "place": "Tangier",
+   "lonLat": [
+    -5.85,
+    35.72
+   ],
+   "civs": [
+    "tangier-international-zone",
+    "french-morocco",
+    "spanish-morocco",
+    "france",
+    "spain",
+    "united-kingdom"
+   ],
+   "summary": "Neither France nor Spain wants the other to hold Tangier, which faces Gibraltar. By the Tangier Convention of 1923, France, Spain and the United Kingdom make the city and its surroundings an international zone, neutral and demilitarised, under the Sultan's nominal rule. It comes into force on 1 June 1925 and lasts, apart from a Spanish occupation from 1940 to 1945, until 1956.",
+   "wikipedia": "Tangier_International_Zone",
+   "search": "Tangier International Zone 1923 convention 1925"
+  },
+  {
+   "id": "great-syrian-revolt-1925",
+   "kind": "war",
+   "year": 1925,
+   "to": 1927,
+   "title": "The Great Syrian Revolt, 1925 – 1927",
+   "place": "Jabal Druze and Damascus",
+   "lonLat": [
+    36.57,
+    32.71
+   ],
+   "civs": [
+    "jabal-druze-state",
+    "mandatory-syria",
+    "france"
+   ],
+   "summary": "The Druze of Jabal Druze, led by Sultan al-Atrash, rise against French rule in July 1925, and nationalists across Syria join them. In October, the French shell Damascus, killing hundreds. With large reinforcements, France puts the revolt down by 1927, but it has to promise Syria a constitution, granted in 1930.",
+   "wikipedia": "Great_Syrian_Revolt",
+   "search": "Great Syrian Revolt 1925 1927 Sultan al-Atrash Jabal Druze bombardment of Damascus"
+  },
+  {
+   "id": "kongo-wara-rebellion-1928",
+   "kind": "war",
+   "year": 1928,
+   "to": 1931,
+   "title": "The Kongo-Wara rebellion, 1928 – 1931",
+   "place": "Western Ubangi-Shari",
+   "lonLat": [
+    15.79,
+    4.26
+   ],
+   "civs": [
+    "ubangi-shari",
+    "french-cameroon",
+    "french-congo",
+    "france"
+   ],
+   "summary": "The Gbaya people, worn down by forced labour, the rubber companies and recruiting for the Congo–Ocean railway, rise at the call of the prophet Karnou. The revolt spreads over western Ubangi-Shari and into Cameroon and Middle Congo. Karnou is killed in December 1928, but the fighting lasts until 1931: it is the largest uprising in French Equatorial Africa between the wars.",
+   "wikipedia": "Kongo-Wara_rebellion",
+   "search": "Kongo-Wara rebellion 1928 1931 Karnou Gbaya Ubangi-Shari forced labour"
+  },
+  {
+   "id": "yen-bai-mutiny-1930",
+   "kind": "revolution",
+   "year": 1930,
+   "title": "The Yên Bái mutiny, 10 February 1930",
+   "place": "Yên Bái",
+   "lonLat": [
+    104.87,
+    21.72
+   ],
+   "civs": [
+    "tonkin",
+    "france"
+   ],
+   "summary": "Vietnamese soldiers of the French colonial army, urged on by the Vietnamese Nationalist Party, rise at night against their French officers at Yên Bái, in Tonkin. The mutiny fails within hours. The French crush the party; its leader Nguyễn Thái Học and twelve companions are guillotined. The independence movement passes to the communists of Hồ Chí Minh.",
+   "wikipedia": "Yên_Bái_mutiny",
+   "search": "Yen Bai mutiny 1930 VNQDD Nguyen Thai Hoc Tonkin"
+  },
+  {
+   "id": "upper-volta-divided-1932",
+   "kind": "empire",
+   "year": 1932,
+   "title": "Upper Volta is divided, 5 September 1932",
+   "place": "Ouagadougou",
+   "lonLat": [
+    -1.52,
+    12.37
+   ],
+   "civs": [
+    "french-upper-volta",
+    "french-ivory-coast",
+    "french-sudan",
+    "colony-of-niger",
+    "france"
+   ],
+   "summary": "To save money in the Great Depression, France dissolves the colony of Upper Volta, created in 1919. Its land is shared out between Ivory Coast, which takes most of it with Ouagadougou and Bobo-Dioulasso to supply workers for its plantations, French Sudan and Niger. The Mossi chiefs campaign for its return, and Upper Volta is re-created in 1947.",
+   "wikipedia": "French_Upper_Volta",
+   "search": "Upper Volta dissolved 1932 Ivory Coast French Sudan Niger"
+  },
+  {
+   "id": "spain-takes-ifni-1934",
+   "kind": "empire",
+   "year": 1934,
+   "title": "Spain takes possession of Ifni, April 1934",
+   "place": "Sidi Ifni",
+   "lonLat": [
+    -10.0,
+    29.3
+   ],
+   "civs": [
+    "ifni",
+    "french-morocco",
+    "spain"
+   ],
+   "summary": "Morocco promised Spain a fishing post on this coast in 1860, and France recognised Ifni as Spanish in 1912, but Spain had never gone there. In April 1934 Colonel Fernando Osvaldo Capaz lands with a few men and takes possession of Ifni peacefully, after talks with the local tribes. Spain founds Sidi Ifni and keeps the enclave until 1969.",
+   "wikipedia": "Ifni",
+   "search": "Ifni 1934 Spain Capaz Sidi Ifni occupation"
+  },
+  {
+   "id": "saar-plebiscite-1935",
+   "kind": "treaty",
+   "year": 1935,
+   "title": "The Saar votes to return to Germany, 13 January 1935",
+   "place": "Saarbrücken",
+   "lonLat": [
+    6.99,
+    49.3
+   ],
+   "civs": [
+    "territory-of-the-saar-basin",
+    "germany",
+    "france"
+   ],
+   "summary": "The Treaty of Versailles put the Saar under the League of Nations for fifteen years and gave its coal mines to France. At the end of that time, its people vote: over 90% choose to return to Germany, now ruled by Hitler, rather than stay under the League or join France. The Saar becomes German again on 1 March 1935.",
+   "wikipedia": "1935_Saar_status_referendum",
+   "search": "Saar plebiscite 1935 referendum League of Nations return to Germany"
+  },
+  {
+   "id": "franco-syrian-treaty-1936",
+   "kind": "treaty",
+   "year": 1936,
+   "title": "The Franco-Syrian and Franco-Lebanese treaties, 1936",
+   "place": "Damascus and Beirut",
+   "lonLat": [
+    36.4,
+    33.6
+   ],
+   "civs": [
+    "mandatory-syria",
+    "mandatory-lebanon",
+    "france"
+   ],
+   "summary": "After a general strike in Syria, France signs treaties with Syria in September and Lebanon in November 1936 promising their independence within three years. The Alawite State and Jabal Druze are joined to Syria. But the French parliament never ratifies the treaties, and in 1939 France suspends the Syrian constitution.",
+   "wikipedia": "Franco-Syrian_Treaty_of_Independence",
+   "search": "Franco-Syrian Treaty of Independence 1936 Franco-Lebanese treaty Blum"
+  },
+  {
+   "id": "hatay-state-1938",
+   "kind": "treaty",
+   "year": 1938,
+   "to": 1939,
+   "title": "Hatay State, then Turkey, 1938 – 1939",
+   "place": "Antakya and İskenderun",
+   "lonLat": [
+    36.2,
+    36.3
+   ],
+   "civs": [
+    "hatay-state",
+    "sanjak-of-alexandretta",
+    "mandatory-syria",
+    "turkey",
+    "france"
+   ],
+   "summary": "The Sanjak of Alexandretta, part of Syria with many Turks, is made autonomous in 1937. Turkish troops enter it alongside the French, and on 2 September 1938 its assembly proclaims Hatay State. To keep Turkey on its side against Germany, France lets it annex Hatay on 29 June 1939. Syria has never recognised the loss.",
+   "wikipedia": "Hatay_State",
+   "search": "Hatay State 1938 1939 Sanjak of Alexandretta annexed by Turkey"
   }
  ]
 }
