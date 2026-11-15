@@ -245,6 +245,9 @@
  "vietnam": {
   "name": "Viêt Nam"
  },
+ "state-of-vietnam": {
+  "name": "État du Viêt Nam"
+ },
  "malaysia": {
   "name": "Malaisie"
  },
@@ -305,6 +308,9 @@
  "laos": {
   "name": "Laos"
  },
+ "french-laos": {
+  "name": "Protectorat français du Laos"
+ },
  "guyana": {
   "name": "Guyana"
  },
@@ -326,14 +332,26 @@
  "cambodia": {
   "name": "Cambodge"
  },
+ "french-cambodia": {
+  "name": "Protectorat français du Cambodge"
+ },
  "uruguay": {
   "name": "Uruguay"
+ },
+ "south-vietnam": {
+  "name": "Sud Viêt Nam"
+ },
+ "north-vietnam": {
+  "name": "Nord Viêt Nam"
  },
  "tunisia": {
   "name": "Tunisie"
  },
  "french-tunisia": {
   "name": "Protectorat français de Tunisie"
+ },
+ "annam": {
+  "name": "Protectorat français d'Annam"
  },
  "nepal": {
   "name": "Népal"
@@ -367,6 +385,9 @@
  },
  "french-dahomey": {
   "name": "Colonie du Dahomey"
+ },
+ "tonkin": {
+  "name": "Protectorat du Tonkin"
  },
  "honduras": {
   "name": "Honduras"
@@ -433,6 +454,9 @@
  },
  "latvia": {
   "name": "Lettonie"
+ },
+ "french-cochinchina": {
+  "name": "Cochinchine française"
  },
  "togo": {
   "name": "Togo"
@@ -626,6 +650,9 @@
  "samoa": {
   "name": "Samoa"
  },
+ "saar-protectorate": {
+  "name": "Protectorat de la Sarre"
+ },
  "azores": {
   "name": "Açores"
  },
@@ -721,6 +748,9 @@
  },
  "seychelles": {
   "name": "Seychelles"
+ },
+ "french-india": {
+  "name": "Inde française"
  },
  "mayotte": {
   "name": "Mayotte"
