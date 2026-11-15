@@ -28,6 +28,8 @@ type Subject =
       articles: string[];
       /** The realm drawn on the place in the year shown (Portuguese Timor in 1986), told instead of the country. */
       drawn?: string;
+      /** The realm drawn is a part of a country, or not a country (Cape Juby, the Azores). */
+      part?: boolean;
     }
   | { kind: "travel"; sub: string }
   | { kind: "home"; actions: { label: string; text: string; run: () => void }[]; report: () => void };
@@ -119,15 +121,14 @@ export class Overview {
       }
       case "country": {
         const k = subject.country;
-        eyebrow.textContent = subject.view === "territory" ? t("overview.territory") : t("overview.nation");
+        eyebrow.textContent = subject.part ? t("overview.part") : subject.view === "territory" ? t("overview.territory") : t("overview.nation");
         title.textContent = subject.drawn ?? k.name;
-        meta.textContent = subject.sub;
+        meta.hidden = true;
         if (k.blurb && subject.view === "nationality" && !subject.drawn) {
           lede.textContent = k.blurb;
           lede.hidden = false;
         }
         void article(subject.articles);
-        extra.append(el("h3", "event-more", t("overview.civilizations", { count: subject.civs.length })), this.civList(subject.civs));
         showDocs({ countries: [k.id], civs: subject.civs.map((c) => c.id) });
         break;
       }
