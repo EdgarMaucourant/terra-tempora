@@ -753,7 +753,7 @@ function showSource(p: Polity, el = $("info-source")) {
   el.hidden = !s && !p.by;
   if (p.by) {
     const date = p.since ? formatDate(p.since) : "";
-    el.append(p.trust ? t("info.trust", { date }) : t("info.heldBy", { by: placeName(p.by), date }), " ");
+    el.append(p.trust ? t(p.by === "League of Nations" ? "info.mandate" : "info.trust", { date }) : t("info.heldBy", { by: placeName(p.by), date }), " ");
     if (p.note) el.append(`${p.note}. `);
   }
   if (!s) return;
@@ -804,7 +804,7 @@ function hoverRealm(p: Polity | null | undefined, x: number, y: number) {
     Object.assign(document.createElement("strong"), { textContent: p.partOf || p.display || p.kind ? shownName(under ?? p) : civ.name }),
     ...groups.map((group) => line(t("tooltip.partOf", { group }))),
     ...(p.by
-      ? [line(t(p.trust ? "tooltip.trust" : "tooltip.heldBy", { by: placeName(p.by), year: p.since?.slice(0, 4) ?? "" }))]
+      ? [line(t(p.trust ? (p.by === "League of Nations" ? "tooltip.mandate" : "tooltip.trust") : "tooltip.heldBy", { by: placeName(p.by), year: p.since?.slice(0, 4) ?? "" }))]
       : []),
     ...(p.source ? [line(t("tooltip.border", { source: shortSource(p.source) })), line(t("tooltip.borderHint"))] : []),
     Object.assign(document.createElement("span"), {
