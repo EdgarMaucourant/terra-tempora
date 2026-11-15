@@ -2518,6 +2518,213 @@
    "summary": "France and West Germany agree to give the Saar, a French protectorate since 1947, a European status under the Western European Union. In a referendum on 23 October 1955, two thirds of the Saarlanders vote no. France accepts the result, and the Saar joins West Germany on 1 January 1957.",
    "wikipedia": "1955_Saar_Statute_referendum",
    "search": "Saar Statute referendum 1955"
+  },
+  {
+   "id": "passage-to-freedom-1954",
+   "kind": "journey",
+   "year": 1954,
+   "to": 1955,
+   "title": "Operation Passage to Freedom, August 1954 – May 1955",
+   "place": "Haiphong to Saigon",
+   "lonLat": [
+    106.68,
+    20.86
+   ],
+   "civs": [
+    "south-vietnam",
+    "north-vietnam",
+    "state-of-vietnam"
+   ],
+   "summary": "The Geneva Accords give people 300 days to choose between North and South. French and American ships carry between 800,000 and a million people from Haiphong to the South, most of them Catholics, while tens of thousands of Viet Minh fighters and their families go north. The North is left to the Viet Minh, and the South gains a large community loyal to its government.",
+   "wikipedia": "Operation_Passage_to_Freedom",
+   "search": "Operation Passage to Freedom 1954 1955 refugees Haiphong Saigon"
+  },
+  {
+   "id": "republic-of-vietnam-1955",
+   "kind": "crown",
+   "year": 1955,
+   "title": "The Republic of Vietnam is proclaimed, 26 October 1955",
+   "place": "Saigon",
+   "lonLat": [
+    106.7,
+    10.78
+   ],
+   "civs": [
+    "south-vietnam",
+    "state-of-vietnam"
+   ],
+   "summary": "Prime Minister Ngô Đình Diệm calls a referendum against the head of state, the former emperor Bảo Đại, who lives in France. The vote of 23 October 1955 is openly rigged and gives Diệm 98% of the vote. Three days later he proclaims the Republic of Vietnam and becomes its first president; he refuses the elections on reunification promised for 1956.",
+   "wikipedia": "1955_State_of_Vietnam_referendum",
+   "search": "Republic of Vietnam proclaimed 1955 Ngo Dinh Diem Bao Dai referendum"
+  },
+  {
+   "id": "vietnam-war-1955",
+   "kind": "war",
+   "year": 1955,
+   "to": 1975,
+   "title": "The Vietnam War, 1955 – 1975",
+   "place": "North and South Vietnam, with Laos and Cambodia",
+   "lonLat": [
+    106.5,
+    17.2
+   ],
+   "civs": [
+    "north-vietnam",
+    "south-vietnam",
+    "united-states",
+    "laos",
+    "cambodia"
+   ],
+   "summary": "Communist North Vietnam and the Viet Cong fight to bring down South Vietnam and reunify the country. The United States sends advisers, then from 1965 more than half a million soldiers and a massive bombing campaign; the war spills into Laos and Cambodia along the Ho Chi Minh trail. Some three million people die before the North takes Saigon on 30 April 1975.",
+   "wikipedia": "Vietnam_War",
+   "search": "Vietnam War 1955 1975 Second Indochina War American War"
+  },
+  {
+   "id": "viet-cong-1960",
+   "kind": "revolution",
+   "year": 1960,
+   "title": "The National Liberation Front (Viet Cong) is founded, 20 December 1960",
+   "place": "Tân Lập, Tây Ninh province",
+   "lonLat": [
+    106.1,
+    11.35
+   ],
+   "civs": [
+    "south-vietnam",
+    "north-vietnam"
+   ],
+   "summary": "With the backing of Hanoi, communists and other opponents of Ngô Đình Diệm found the National Liberation Front of South Vietnam in a jungle village near the Cambodian border. Its guerrillas, called the Viet Cong by Saigon, take control of large parts of the countryside in the following years.",
+   "wikipedia": "Viet_Cong",
+   "search": "National Liberation Front Viet Cong founded 1960"
+  },
+  {
+   "id": "diem-coup-1963",
+   "kind": "revolution",
+   "year": 1963,
+   "title": "The coup against Ngô Đình Diệm, 1–2 November 1963",
+   "place": "Saigon",
+   "lonLat": [
+    106.7,
+    10.78
+   ],
+   "civs": [
+    "south-vietnam"
+   ],
+   "summary": "After months of Buddhist protests, crushed by force, South Vietnamese generals overthrow President Ngô Đình Diệm with the tacit approval of the United States. Diệm and his brother Ngô Đình Nhu are killed on 2 November 1963. A string of military governments follows, and the South stays unstable for years.",
+   "wikipedia": "1963_South_Vietnamese_coup",
+   "search": "Coup against Ngo Dinh Diem 1963 Saigon"
+  },
+  {
+   "id": "gulf-of-tonkin-1964",
+   "kind": "battle",
+   "year": 1964,
+   "title": "The Gulf of Tonkin incident, 2–4 August 1964",
+   "place": "Gulf of Tonkin, off Thanh Hóa",
+   "lonLat": [
+    105.85,
+    19.75
+   ],
+   "civs": [
+    "north-vietnam",
+    "united-states",
+    "south-vietnam"
+   ],
+   "summary": "North Vietnamese torpedo boats attack the American destroyer USS Maddox on 2 August 1964; a second attack reported two days later most likely never happened. The US Congress passes the Gulf of Tonkin Resolution, which lets President Johnson wage war in Vietnam without declaring it, and American planes bomb the North for the first time.",
+   "wikipedia": "Gulf_of_Tonkin_incident",
+   "search": "Gulf of Tonkin incident 1964 resolution USS Maddox"
+  },
+  {
+   "id": "da-nang-landing-1965",
+   "kind": "war",
+   "year": 1965,
+   "title": "US combat troops land at Da Nang, 8 March 1965",
+   "place": "Da Nang",
+   "lonLat": [
+    108.22,
+    16.07
+   ],
+   "civs": [
+    "south-vietnam",
+    "united-states"
+   ],
+   "summary": "Some 3,500 US Marines come ashore at Da Nang to guard its air base, the first American combat troops in Vietnam. Until then the United States had sent only advisers; by the end of 1965 it has nearly 185,000 soldiers in the South, and more than 500,000 in 1968.",
+   "wikipedia": "9th_Marine_Expeditionary_Brigade",
+   "search": "US Marines land Da Nang 1965 combat troops"
+  },
+  {
+   "id": "tet-offensive-1968",
+   "kind": "battle",
+   "year": 1968,
+   "title": "The Tet Offensive, 30 January 1968",
+   "place": "Huế and towns across South Vietnam",
+   "lonLat": [
+    107.58,
+    16.47
+   ],
+   "civs": [
+    "south-vietnam",
+    "north-vietnam",
+    "united-states"
+   ],
+   "summary": "During the Tết new year truce, the Viet Cong and the North Vietnamese army attack more than a hundred towns of the South at once, even the US embassy in Saigon. They are pushed back with heavy losses, but the battle for Huế lasts a month and leaves the old imperial city in ruins. The shock turns American opinion against the war, and Washington begins to look for a way out.",
+   "wikipedia": "Tet_Offensive",
+   "search": "Tet Offensive 1968 Battle of Hue"
+  },
+  {
+   "id": "paris-peace-accords-1973",
+   "kind": "treaty",
+   "year": 1973,
+   "title": "The Paris Peace Accords, 27 January 1973",
+   "place": "Saigon (signed in Paris)",
+   "lonLat": [
+    106.68,
+    10.82
+   ],
+   "civs": [
+    "south-vietnam",
+    "north-vietnam",
+    "united-states"
+   ],
+   "summary": "After four years of talks in Paris, North Vietnam, South Vietnam, the Viet Cong and the United States sign a ceasefire. The last American troops leave South Vietnam on 29 March 1973 and American prisoners are freed, but North Vietnamese troops stay in the South and the fighting soon starts again.",
+   "wikipedia": "Paris_Peace_Accords",
+   "search": "Paris Peace Accords 1973 Vietnam ceasefire US withdrawal"
+  },
+  {
+   "id": "fall-of-saigon-1975",
+   "kind": "siege",
+   "year": 1975,
+   "title": "The Fall of Saigon, 30 April 1975",
+   "place": "Saigon",
+   "lonLat": [
+    106.7,
+    10.78
+   ],
+   "civs": [
+    "south-vietnam",
+    "north-vietnam"
+   ],
+   "summary": "North Vietnam's spring offensive sweeps through the South in under two months. As its tanks close in, American helicopters lift the last Americans and thousands of South Vietnamese from the roofs of Saigon. On 30 April 1975 a tank breaks through the gate of the presidential palace and South Vietnam surrenders. Saigon is renamed Ho Chi Minh City the next year.",
+   "wikipedia": "Fall_of_Saigon",
+   "search": "Fall of Saigon 30 April 1975"
+  },
+  {
+   "id": "vietnam-reunified-1976",
+   "kind": "empire",
+   "year": 1976,
+   "title": "Vietnam is reunified, 2 July 1976",
+   "place": "Hanoi",
+   "lonLat": [
+    105.84,
+    21.03
+   ],
+   "civs": [
+    "vietnam",
+    "north-vietnam",
+    "south-vietnam"
+   ],
+   "summary": "Fourteen months after the fall of Saigon, North and South become one country again: the Socialist Republic of Vietnam, with Hanoi as its capital. Saigon is renamed Ho Chi Minh City. Hundreds of thousands of South Vietnamese are sent to re-education camps, and many flee by sea in the following years.",
+   "wikipedia": "Vietnam",
+   "search": "Vietnam reunification 2 July 1976 Socialist Republic of Vietnam"
   }
  ]
 }
