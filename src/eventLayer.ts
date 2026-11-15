@@ -1,5 +1,5 @@
 import { Billboard, BillboardCollection, Cartesian3, Color, NearFarScalar, Scene, VerticalOrigin } from "cesium";
-import { badgeUrl, eventOpacity, type HistoryEvent } from "./events";
+import { badgeUrl, eventOpacity, supersededYears, type HistoryEvent } from "./events";
 
 // Badges float above the realms and their names.
 const HEIGHT = 40_000;
@@ -9,6 +9,7 @@ const SIZE = 30;
 export class EventLayer {
   private collection: BillboardCollection;
   private badges = new Map<HistoryEvent, Billboard>();
+  private until = new Map<HistoryEvent, number>();
 
   constructor(private scene: Scene) {
     this.collection = scene.primitives.add(new BillboardCollection({ scene })) as BillboardCollection;
@@ -18,6 +19,7 @@ export class EventLayer {
   set(events: HistoryEvent[]) {
     this.collection.removeAll();
     this.badges.clear();
+    this.until = supersededYears(events);
     for (const e of events) {
       const badge = this.collection.add({
         id: e,
@@ -34,7 +36,7 @@ export class EventLayer {
   }
 
   /** Shows each badge at its opacity for this year, or as `opacityOf` says. */
-  update(year: number, opacityOf: (e: HistoryEvent) => number = (e) => eventOpacity(e, year)) {
+  update(year: number, opacityOf: (e: HistoryEvent) => number = (e) => eventOpacity(e, year, this.until.get(e))) {
     for (const [e, badge] of this.badges) {
       const opacity = opacityOf(e);
       badge.show = opacity > 0;

@@ -36,6 +36,8 @@ export interface Polity {
   by?: string;
   since?: string;
   note?: string;
+  /** For "hatch": a UN trust territory, run by its owner for the United Nations (`by`). */
+  trust?: boolean;
   /** Where this border comes from, and the change that made it. */
   source?: BorderSource;
   /** [longitude, latitude] of the label. */
@@ -108,6 +110,8 @@ interface Index {
    * realms and territories that held its land, oldest first.
    */
   places?: Record<string, { name: string; from: number; to: number }[]>;
+  /** Realms and territories before and after each one on the same land, from the rebuilt borders. */
+  lineage?: Record<string, { before: string[]; after: string[] }>;
 }
 
 /**

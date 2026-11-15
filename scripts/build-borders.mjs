@@ -311,12 +311,15 @@ for (let year = TODAY; year >= firstReviewed; year--) {
       else add(`realm|${s.owner}`, id, { name: s.owner });
       if (s.hatch) {
         const h = s.hatch;
-        add(`hatch|${s.owner}|${h.by}|${h.since}`, id, {
+        // One hatching per territory under it, so that each one stands for its
+        // own land (French Togoland, not French Cameroon).
+        add(`hatch|${s.owner}|${s.territory ?? ""}|${h.by}|${h.since}`, id, {
           kind: "hatch",
           name: s.owner,
           by: h.by,
           since: h.since,
           note: h.note,
+          ...(h.trust && { trust: true }),
           source: { title: h.source.title, url: h.source.url, ...(h.map && { map: h.map }) },
         });
       }
@@ -462,6 +465,7 @@ for (const [key, list] of runs) {
       ...(m.display && { display: m.display }),
       ...(m.kind && { kind: m.kind }),
       ...(m.by && { by: m.by, since: m.since, note: m.note }),
+      ...(m.trust && { trust: true }),
       ...(m.source && { source: m.source }),
       label: o.label,
       rings: o.rings,
@@ -551,6 +555,25 @@ for (const [place, spans] of Object.entries(places)) {
     .map(([name, [from, to]]) => ({ name, from, to }));
 }
 
+// Which realm or territory followed which on the same land, from the pieces
+// each one held: the timeline links a colony to the country it became, not
+// to everything Wikidata says came after it.
+const lineage = {};
+const link = (name, side, other) => {
+  const entry = (lineage[name] ??= { before: [], after: [] });
+  if (!entry[side].includes(other)) entry[side].push(other);
+};
+for (const held of heldBy.values()) {
+  const order = [...held].sort((a, b) => a[1][0] - b[1][0] || a[1][1] - b[1][1]);
+  for (let i = 1; i < order.length; i++) {
+    const [before] = order[i - 1];
+    const [after] = order[i];
+    if (before === after) continue;
+    link(before, "after", after);
+    link(after, "before", before);
+  }
+}
+
 writeFileSync(
   `${OUT}/index.json`,
   JSON.stringify({
@@ -573,6 +596,7 @@ writeFileSync(
     names,
     notCountries: Object.keys(realms).filter((n) => realms[n].notACountry),
     places,
+    lineage,
   }),
 );
 console.log(`${shapes.length} shapes in ${windows.length} windows`);

@@ -61,6 +61,31 @@ const DATE_FIXES = existsSync("borders/2026.json") ? {} : JSON.parse(readFileSyn
 const PICTURES = existsSync("scripts/civ-pictures.json") ? JSON.parse(readFileSync("scripts/civ-pictures.json", "utf8")) : {};
 
 const index = JSON.parse(readFileSync("public/data/index.json", "utf8"));
+const REALMS = existsSync("borders/realms.json") ? JSON.parse(readFileSync("borders/realms.json", "utf8")) : {};
+
+/**
+ * The names a realm went by over its years, when its periods name it
+ * differently (Republic of Upper Volta, then Burkina Faso), for the
+ * timeline: [{ from, to, name }], or undefined when it kept one name. A
+ * period counts from the year it began, as on the map (31 December).
+ */
+function namePeriods(name, from, to) {
+  const periods = (REALMS[name]?.periods ?? [])
+    .map((p) => ({ year: Number(p.from.slice(0, 4)), name: p.name }))
+    .sort((a, b) => a.year - b.year);
+  if (!periods.length) return undefined;
+  const out = [];
+  for (let i = 0; i < periods.length; i++) {
+    const start = Math.max(from, periods[i].year);
+    const end = Math.min(to, (periods[i + 1]?.year ?? Infinity) - 1);
+    if (start > end) continue;
+    const last = out[out.length - 1];
+    if (last && last.name === periods[i].name) last.to = end;
+    else out.push({ from: start, to: end, name: periods[i].name });
+  }
+  if (out.length && out[0].from > from) out.unshift({ from, to: out[0].from - 1, name });
+  return out.length > 1 || (out.length === 1 && out[0].name !== name) ? out : undefined;
+}
 const shapes = new Map();
 for (const w of index.windows) {
   for (const s of readWindow("public/data", w.file)) shapes.set(s.id, s);
@@ -318,6 +343,8 @@ for (const g of groups.values()) {
     continents: continentsOf(g.shapes),
     ...(PICTURES[wikipedia] && { picture: PICTURES[wikipedia] }),
   });
+  const named = namePeriods(g.name, civilizations.at(-1).from, civilizations.at(-1).to);
+  if (named) civilizations.at(-1).periods = named;
   outlines[slug] = silhouette(peak);
 }
 for (const c of civilizations) {
