@@ -2472,9 +2472,10 @@
    ],
    "civs": [
     "france",
-    "state-of-vietnam",
     "north-vietnam",
-    "south-vietnam"
+    "south-vietnam",
+    "laos",
+    "cambodia"
    ],
    "summary": "The conference in Geneva ends the Indochina War. Vietnam is split at the Bến Hải river, near the 17th parallel: the Viet Minh's Democratic Republic of Vietnam in the north, the State of Vietnam in the south, until elections promised for 1956 that are never held. The independence of Laos and Cambodia is confirmed, and French troops leave.",
    "wikipedia": "1954_Geneva_Conference",
