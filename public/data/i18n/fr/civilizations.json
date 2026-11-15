@@ -68,6 +68,9 @@
  "mongolia": {
   "name": "Mongolie"
  },
+ "french-sudan": {
+  "name": "Soudan français"
+ },
  "peru": {
   "name": "Pérou"
  },
@@ -77,11 +80,11 @@
  "french-chad": {
   "name": "Territoire du Tchad"
  },
+ "colony-of-niger": {
+  "name": "Colonie du Niger"
+ },
  "mali": {
   "name": "Mali"
- },
- "french-sudan": {
-  "name": "Soudan français"
  },
  "angola": {
   "name": "Angola"
@@ -94,9 +97,6 @@
  },
  "niger": {
   "name": "Niger"
- },
- "colony-of-niger": {
-  "name": "Colonie du Niger"
  },
  "colombia": {
   "name": "Colombie"
@@ -164,11 +164,11 @@
  "ubangi-shari": {
   "name": "Oubangui-Chari"
  },
- "ukraine": {
-  "name": "Ukraine"
- },
  "french-madagascar": {
   "name": "Colonie de Madagascar et dépendances"
+ },
+ "ukraine": {
+  "name": "Ukraine"
  },
  "madagascar": {
   "name": "Madagascar"
@@ -193,6 +193,9 @@
  },
  "cameroon": {
   "name": "Cameroun"
+ },
+ "french-ivory-coast": {
+  "name": "Colonie de Côte d'Ivoire"
  },
  "yemen": {
   "name": "Yémen"
@@ -227,6 +230,9 @@
  "germany": {
   "name": "Allemagne"
  },
+ "french-morocco": {
+  "name": "Protectorat français au Maroc"
+ },
  "republic-of-the-congo": {
   "name": "République du Congo"
  },
@@ -244,9 +250,6 @@
  },
  "ivory-coast": {
   "name": "Côte d'Ivoire"
- },
- "french-ivory-coast": {
-  "name": "Colonie de Côte d'Ivoire"
  },
  "poland": {
   "name": "Pologne"
@@ -328,6 +331,9 @@
  },
  "tunisia": {
   "name": "Tunisie"
+ },
+ "french-tunisia": {
+  "name": "Protectorat français de Tunisie"
  },
  "nepal": {
   "name": "Népal"
@@ -455,6 +461,9 @@
  "southern-cameroons": {
   "name": "Cameroun méridional"
  },
+ "british-cameroons": {
+  "name": "Cameroun britannique"
+ },
  "switzerland": {
   "name": "Suisse"
  },
@@ -466,6 +475,9 @@
  },
  "taiwan-republic-of-china": {
   "name": "Taïwan"
+ },
+ "cape-juby": {
+  "name": "Cap Juby"
  },
  "moldova": {
   "name": "Moldavie"
@@ -523,6 +535,9 @@
  },
  "slovenia": {
   "name": "Slovénie"
+ },
+ "spanish-morocco": {
+  "name": "Protectorat espagnol au Maroc"
  },
  "fiji": {
   "name": "Fidji"
@@ -632,6 +647,9 @@
  "comoros": {
   "name": "Comores"
  },
+ "ifni": {
+  "name": "Ifni"
+ },
  "faroe-islands": {
   "name": "îles Féroé"
  },
@@ -709,6 +727,9 @@
  },
  "heard-island-and-mcdonald-islands": {
   "name": "îles Heard-et-MacDonald"
+ },
+ "tangier-international-zone": {
+  "name": "Zone internationale de Tanger"
  },
  "saint-vincent-and-the-grenadines": {
   "name": "Saint-Vincent-et-les-Grenadines"
