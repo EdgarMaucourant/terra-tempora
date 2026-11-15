@@ -75,6 +75,31 @@
    ],
    "from": 1946,
    "why": "Morocco (without Western Sahara) and Tunisia: the French protectorates until 1956, with Spain's northern zone, the Tangier International Zone, Cape Juby (Spanish until 1958) and Ifni (Spanish until 1969)"
+  },
+  {
+   "pieces": [
+    "VNM",
+    "LAO",
+    "KHM"
+   ],
+   "from": 1946,
+   "why": "French Indochina: Vietnam (Tonkin, Annam and Cochinchina, then the State of Vietnam), Laos and Cambodia, with today's borders, until independence in 1953 and 1954, then North and South Vietnam until 1976"
+  },
+  {
+   "pieces": [
+    "IND-3262",
+    "mahe",
+    "chandernagore"
+   ],
+   "from": 1946,
+   "why": "French India: Pondichéry, Karikal, Mahé and Yanaon (today's Puducherry, with Mahé drawn where it is, not where Natural Earth puts it) and Chandernagore, until they pass to India"
+  },
+  {
+   "pieces": [
+    "DEU-1581"
+   ],
+   "from": 1947,
+   "why": "The Saar, a protectorate of France from 1947 until it joins West Germany in 1957, with today's Saarland borders"
   }
  ],
  "changes": [
@@ -169,6 +194,99 @@
       "url": "https://en.wikipedia.org/wiki/French_Territory_of_the_Afars_and_the_Issas"
      },
      "map": "https://commons.wikimedia.org/wiki/File:Djibouti-Ethiopia border (and Eritrea).png"
+    }
+   ]
+  },
+  {
+   "date": "1976-07-02",
+   "what": "North and South Vietnam are reunified as the Socialist Republic of Vietnam",
+   "source": {
+    "title": "Vietnam (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Vietnam"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "VNM-450",
+      "VNM-455",
+      "VNM-512",
+      "VNM-511",
+      "VNM-5483",
+      "VNM-453",
+      "VNM-454",
+      "VNM-429",
+      "VNM-466",
+      "VNM-468",
+      "VNM-471",
+      "VNM-4600",
+      "VNM-459",
+      "VNM-457",
+      "VNM-458",
+      "VNM-464",
+      "VNM-469",
+      "VNM-462",
+      "VNM-451",
+      "VNM-461",
+      "VNM-463",
+      "VNM-470",
+      "VNM-452",
+      "VNM-460",
+      "VNM-467",
+      "VNM-456",
+      "VNM-475",
+      "VNM-474",
+      "VNM-476",
+      "quang-tri-north"
+     ],
+     "owner": "North Vietnam",
+     "source": {
+      "title": "North Vietnam (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/North_Vietnam"
+     }
+    },
+    {
+     "pieces": [
+      "VNM-490",
+      "VNM-487",
+      "VNM-491",
+      "VNM-488",
+      "VNM-485",
+      "VNM-482",
+      "VNM-479",
+      "VNM-481",
+      "VNM-496",
+      "VNM-486",
+      "VNM-478",
+      "VNM-477",
+      "VNM-4835",
+      "VNM-480",
+      "VNM-489",
+      "VNM-484",
+      "VNM-444",
+      "VNM-503",
+      "VNM-500",
+      "VNM-498",
+      "VNM-502",
+      "VNM-508",
+      "VNM-4834",
+      "VNM-495",
+      "VNM-501",
+      "VNM-507",
+      "VNM-506",
+      "VNM-505",
+      "VNM-510",
+      "VNM-509",
+      "VNM-504",
+      "VNM-497",
+      "VNM-483",
+      "VNM-499"
+     ],
+     "owner": "South Vietnam",
+     "source": {
+      "title": "South Vietnam (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/South_Vietnam"
+     }
     }
    ]
   },
@@ -731,6 +849,29 @@
    ]
   },
   {
+   "date": "1957-01-01",
+   "what": "The Saar joins West Germany after its people reject the Saar Statute in 1955",
+   "source": {
+    "title": "Saarland (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Saarland"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "DEU-1581"
+     ],
+     "owner": "France",
+     "territory": "Saar Protectorate",
+     "source": {
+      "title": "Saar Protectorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Saar_Protectorate"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Saar_Protectorate.svg"
+    }
+   ]
+  },
+  {
    "date": "1956-10-29",
    "what": "The Tangier International Zone ends and Tangier joins Morocco",
    "source": {
@@ -861,6 +1002,29 @@
    ]
   },
   {
+   "date": "1954-11-01",
+   "what": "France hands Pondichéry, Karikal, Mahé and Yanaon to India (de facto; the treaty is ratified in 1962)",
+   "source": {
+    "title": "Puducherry (union territory) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Puducherry_(union_territory)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "IND-3262",
+      "mahe"
+     ],
+     "owner": "France",
+     "territory": "French India",
+     "source": {
+      "title": "French India (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_India"
+     }
+    }
+   ]
+  },
+  {
    "date": "1954-10-01",
    "what": "The Southern Cameroons are separated from Nigeria's Eastern Region as a territory of their own",
    "source": {
@@ -889,6 +1053,262 @@
        "title": "United Nations Trust Territories (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/United_Nations_trust_territories"
       }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1954-07-21",
+   "what": "The Geneva Accords end the Indochina War and divide Vietnam along the Bến Hải river, near the 17th parallel",
+   "source": {
+    "title": "1954 Geneva Conference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/1954_Geneva_Conference"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "VNM-450",
+      "VNM-455",
+      "VNM-512",
+      "VNM-511",
+      "VNM-5483",
+      "VNM-453",
+      "VNM-454",
+      "VNM-429",
+      "VNM-466",
+      "VNM-468",
+      "VNM-471",
+      "VNM-4600",
+      "VNM-459",
+      "VNM-457",
+      "VNM-458",
+      "VNM-464",
+      "VNM-469",
+      "VNM-462",
+      "VNM-451",
+      "VNM-461",
+      "VNM-463",
+      "VNM-470",
+      "VNM-452",
+      "VNM-460",
+      "VNM-467",
+      "VNM-456",
+      "VNM-475",
+      "VNM-474",
+      "VNM-476",
+      "quang-tri-north",
+      "VNM-490",
+      "VNM-487",
+      "VNM-491",
+      "VNM-488",
+      "VNM-485",
+      "VNM-482",
+      "VNM-479",
+      "VNM-481",
+      "VNM-496",
+      "VNM-486",
+      "VNM-478",
+      "VNM-477",
+      "VNM-4835",
+      "VNM-480",
+      "VNM-489",
+      "VNM-484",
+      "VNM-444",
+      "VNM-503",
+      "VNM-500",
+      "VNM-498",
+      "VNM-502",
+      "VNM-508",
+      "VNM-4834",
+      "VNM-495",
+      "VNM-501",
+      "VNM-507",
+      "VNM-506",
+      "VNM-505",
+      "VNM-510",
+      "VNM-509",
+      "VNM-504",
+      "VNM-497",
+      "VNM-483",
+      "VNM-499"
+     ],
+     "owner": "France",
+     "territory": "State of Vietnam",
+     "source": {
+      "title": "State of Vietnam (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/State_of_Vietnam"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1953-11-09",
+   "what": "Cambodia becomes independent",
+   "source": {
+    "title": "Cambodia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Cambodia"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "KHM"
+     ],
+     "owner": "France",
+     "territory": "French Cambodia",
+     "source": {
+      "title": "French protectorate of Cambodia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_protectorate_of_Cambodia"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1953-10-22",
+   "what": "Laos becomes fully independent by the Franco-Lao Treaty of Amity and Association",
+   "source": {
+    "title": "Kingdom of Laos (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Laos"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "LAO"
+     ],
+     "owner": "France",
+     "territory": "French Laos",
+     "source": {
+      "title": "French protectorate of Laos (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_protectorate_of_Laos"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1950-05-02",
+   "what": "France hands Chandernagore to India (de facto; the treaty is signed in 1951)",
+   "source": {
+    "title": "Chandannagar (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Chandannagar"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "chandernagore"
+     ],
+     "owner": "France",
+     "territory": "French India",
+     "source": {
+      "title": "French India (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_India"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1949-06-14",
+   "what": "Tonkin, Annam and Cochinchina are united as the State of Vietnam, an associated state of the French Union",
+   "source": {
+    "title": "State of Vietnam (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/State_of_Vietnam"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "VNM-450",
+      "VNM-455",
+      "VNM-512",
+      "VNM-511",
+      "VNM-5483",
+      "VNM-453",
+      "VNM-454",
+      "VNM-429",
+      "VNM-466",
+      "VNM-468",
+      "VNM-471",
+      "VNM-4600",
+      "VNM-459",
+      "VNM-457",
+      "VNM-458",
+      "VNM-464",
+      "VNM-469",
+      "VNM-462",
+      "VNM-451",
+      "VNM-461",
+      "VNM-463",
+      "VNM-470",
+      "VNM-452",
+      "VNM-460",
+      "VNM-467"
+     ],
+     "owner": "France",
+     "territory": "Tonkin",
+     "source": {
+      "title": "Tonkin (French protectorate) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tonkin_(French_protectorate)"
+     }
+    },
+    {
+     "pieces": [
+      "VNM-456",
+      "VNM-475",
+      "VNM-474",
+      "VNM-476",
+      "quang-tri-north",
+      "VNM-489",
+      "VNM-490",
+      "VNM-487",
+      "VNM-491",
+      "VNM-488",
+      "VNM-485",
+      "VNM-482",
+      "VNM-479",
+      "VNM-481",
+      "VNM-496",
+      "VNM-486",
+      "VNM-478",
+      "VNM-477",
+      "VNM-4835",
+      "VNM-480"
+     ],
+     "owner": "France",
+     "territory": "Annam",
+     "source": {
+      "title": "Annam (French protectorate) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Annam_(French_protectorate)"
+     }
+    },
+    {
+     "pieces": [
+      "VNM-484",
+      "VNM-444",
+      "VNM-503",
+      "VNM-500",
+      "VNM-498",
+      "VNM-502",
+      "VNM-508",
+      "VNM-4834",
+      "VNM-495",
+      "VNM-501",
+      "VNM-507",
+      "VNM-506",
+      "VNM-505",
+      "VNM-510",
+      "VNM-509",
+      "VNM-504",
+      "VNM-497",
+      "VNM-483",
+      "VNM-499"
+     ],
+     "owner": "France",
+     "territory": "French Cochinchina",
+     "source": {
+      "title": "French Cochinchina (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Cochinchina"
      }
     }
    ]

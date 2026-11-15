@@ -1,5 +1,6 @@
 import {
   ArcType,
+  Cartesian2,
   Cartesian3,
   Color,
   GeometryInstance,
@@ -50,6 +51,9 @@ const COARSE_GRANULARITY = 2;
 const SMALL_RING = 16;
 // Hatching: land held by another state than its owner, drawn over the owner.
 const HATCH_HEIGHT = FEATURED_HEIGHT + 1500;
+// A group's outline (French West Africa), above everything it groups.
+const GROUP_HEIGHT = HATCH_HEIGHT + 1500;
+const GROUP_COLOR = "#f2d48a";
 const HATCH_ALPHA = 0.85;
 // The hatch lines' spacing, in km: the pattern repeats across the shape's extent.
 const HATCH_SPACING_KM = 12;
@@ -431,7 +435,7 @@ export class PolityLayer {
     for (const piece of this.pieces.values()) {
       const opacity = Math.min(1, piece.opacity);
       const show = opacity > 0.002;
-      piece.fill.show = show;
+      piece.fill.show = show && piece.kind !== "group";
       piece.line.show = show;
       if (!show) continue;
       const base =
@@ -474,7 +478,8 @@ export class PolityLayer {
    * than `budget` (unless `force`), in which case nothing is done.
    */
   private attach(p: Polity, budget: number, force: boolean): number {
-    const color = p.kind === "hatch" ? this.hatchColor(p) : p.kind === "unreviewed" ? UNREVIEWED_COLOR : highlightOf(this.highlight, p);
+    const color =
+      p.kind === "hatch" ? this.hatchColor(p) : p.kind === "unreviewed" ? UNREVIEWED_COLOR : p.kind === "group" ? GROUP_COLOR : highlightOf(this.highlight, p);
     const highlighted = !p.kind && color !== undefined;
     const style = `${p.kind ?? ""}:${color ?? ""}`;
     // Each sizeable outline is its own piece; the small ones go together.
@@ -511,6 +516,24 @@ export class PolityLayer {
         show: false,
       });
     }
+    // A group's name sits above its members' names, in capitals.
+    if (p.kind === "group" && p.label) {
+      label = this.labels.add({
+        id: p,
+        position: Cartesian3.fromDegrees(p.label[0], p.label[1], GROUP_HEIGHT + 2000),
+        text: this.nameOf(p.name).toUpperCase(),
+        font: "italic 600 12px 'Instrument Sans Variable', sans-serif",
+        fillColor: Color.fromCssColorString(GROUP_COLOR),
+        outlineColor: Color.BLACK.withAlpha(0.85),
+        outlineWidth: 3,
+        style: LabelStyle.FILL_AND_OUTLINE,
+        horizontalOrigin: HorizontalOrigin.CENTER,
+        verticalOrigin: VerticalOrigin.CENTER,
+        pixelOffset: new Cartesian2(0, -22),
+        scaleByDistance: new NearFarScalar(2e6, 1.15, 2.5e7, 0.8),
+        show: false,
+      });
+    }
     this.drawn.set(p, { pieces, highlighted, label });
     return missing;
   }
@@ -533,10 +556,10 @@ export class PolityLayer {
 
   private build(key: string, rings: number[][], color: string | undefined, coarse?: boolean, kind?: Polity["kind"]): Piece {
     const highlighted = !kind && color !== undefined;
-    const height = kind === "hatch" ? HATCH_HEIGHT : highlighted ? FEATURED_HEIGHT : CONTEXT_HEIGHT - (kind ? 500 : 0);
+    const height = kind === "group" ? GROUP_HEIGHT : kind === "hatch" ? HATCH_HEIGHT : highlighted ? FEATURED_HEIGHT : CONTEXT_HEIGHT - (kind ? 500 : 0);
     const fillColor = Color.fromCssColorString(color ?? MUTED);
     const lineColor = kind
-      ? fillColor.withAlpha(kind === "hatch" ? 0.7 : 0)
+      ? fillColor.withAlpha(kind === "hatch" ? 0.7 : kind === "group" ? 0.9 : 0)
       : highlighted
         ? Color.fromCssColorString(color!).brighten(0.35, new Color()).withAlpha(0.95)
         : Color.fromCssColorString("#e4e7ea").withAlpha(0.45);
@@ -568,10 +591,12 @@ export class PolityLayer {
         faceForward: true,
       }),
       asynchronous: true,
+      // A group's outline lets clicks through to its members.
+      allowPicking: kind !== "group",
       show: false,
     });
     piece.line = new Primitive({
-      geometryInstances: rings.map((ring) => border(ring, height + 300, highlighted ? 2 : 1, piece)),
+      geometryInstances: rings.map((ring) => border(ring, height + 300, kind === "group" ? 3 : highlighted ? 2 : 1, piece)),
       appearance: new PolylineMaterialAppearance({ material: lineMaterial, translucent: true }),
       asynchronous: true,
       show: false,

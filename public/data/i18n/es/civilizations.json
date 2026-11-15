@@ -20,6 +20,9 @@
  "australia": {
   "name": "Australia"
  },
+ "french-west-africa": {
+  "name": "África Occidental Francesa"
+ },
  "india": {
   "name": "India"
  },
@@ -28,6 +31,9 @@
  },
  "kazakhstan": {
   "name": "Kazajistán"
+ },
+ "french-equatorial-africa": {
+  "name": "África Ecuatorial Francesa"
  },
  "democratic-republic-of-the-congo": {
   "name": "República Democrática del Congo"
@@ -143,6 +149,9 @@
  "zambia": {
   "name": "Zambia"
  },
+ "french-indochina": {
+  "name": "Indochina francesa"
+ },
  "chile": {
   "name": "Chile"
  },
@@ -245,6 +254,9 @@
  "vietnam": {
   "name": "Vietnam"
  },
+ "state-of-vietnam": {
+  "name": "Estado de Vietnam"
+ },
  "malaysia": {
   "name": "Malasia"
  },
@@ -305,6 +317,9 @@
  "laos": {
   "name": "Laos"
  },
+ "french-laos": {
+  "name": "Protectorado francés de Laos"
+ },
  "guyana": {
   "name": "Guyana"
  },
@@ -326,14 +341,26 @@
  "cambodia": {
   "name": "Camboya"
  },
+ "french-cambodia": {
+  "name": "Protectorado francés de Camboya"
+ },
  "uruguay": {
   "name": "Uruguay"
+ },
+ "south-vietnam": {
+  "name": "Vietnam del Sur"
+ },
+ "north-vietnam": {
+  "name": "Vietnam del Norte"
  },
  "tunisia": {
   "name": "Túnez"
  },
  "french-tunisia": {
   "name": "Protectorado francés de Túnez"
+ },
+ "annam": {
+  "name": "Protectorado francés de Annam"
  },
  "nepal": {
   "name": "Nepal"
@@ -367,6 +394,9 @@
  },
  "french-dahomey": {
   "name": "Dahomey francés"
+ },
+ "tonkin": {
+  "name": "Protectorado de Tonkín"
  },
  "honduras": {
   "name": "Honduras"
@@ -434,6 +464,9 @@
  "latvia": {
   "name": "Letonia"
  },
+ "french-cochinchina": {
+  "name": "Cochinchina francesa"
+ },
  "togo": {
   "name": "Togo"
  },
@@ -472,6 +505,9 @@
  },
  "netherlands": {
   "name": "Países Bajos"
+ },
+ "spanish-west-africa": {
+  "name": "África Occidental Española"
  },
  "taiwan-republic-of-china": {
   "name": "República de China"
@@ -626,6 +662,9 @@
  "samoa": {
   "name": "Samoa"
  },
+ "saar-protectorate": {
+  "name": "Protectorado del Sarre"
+ },
  "azores": {
   "name": "Azores"
  },
@@ -721,6 +760,9 @@
  },
  "seychelles": {
   "name": "Seychelles"
+ },
+ "french-india": {
+  "name": "India francesa"
  },
  "mayotte": {
   "name": "Mayotte"

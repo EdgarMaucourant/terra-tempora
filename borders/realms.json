@@ -54,6 +54,14 @@
   "fr": "Anguilla",
   "es": "Anguila"
  },
+ "Annam": {
+  "wikipedia": "Annam (French protectorate)",
+  "wikidata": "Q10828323",
+  "fr": "Protectorat français d'Annam",
+  "es": "Protectorado francés de Annam",
+  "group": "French Indochina",
+  "groupUntil": "1954-07-21"
+ },
  "Antigua and Barbuda": {
   "wikipedia": "Antigua and Barbuda",
   "wikidata": "Q781",
@@ -280,7 +288,55 @@
   "wikipedia": "Cambodia",
   "wikidata": "Q424",
   "fr": "Cambodge",
-  "es": "Camboya"
+  "es": "Camboya",
+  "periods": [
+   {
+    "from": "1953-11-09",
+    "name": "Kingdom of Cambodia",
+    "wikipedia": "Kingdom of Cambodia (1953–1970)",
+    "fr": "Royaume du Cambodge",
+    "es": "Reino de Camboya",
+    "note": "Independent from 9 November 1953"
+   },
+   {
+    "from": "1970-10-09",
+    "name": "Khmer Republic",
+    "wikipedia": "Khmer Republic",
+    "fr": "République khmère",
+    "es": "República Jemer"
+   },
+   {
+    "from": "1975-04-17",
+    "name": "Democratic Kampuchea",
+    "wikipedia": "Democratic Kampuchea",
+    "fr": "Kampuchéa démocratique",
+    "es": "Kampuchea Democrática",
+    "note": "The Khmer Rouge take Phnom Penh"
+   },
+   {
+    "from": "1979-01-10",
+    "name": "People's Republic of Kampuchea",
+    "wikipedia": "People's Republic of Kampuchea",
+    "fr": "République populaire du Kampuchéa",
+    "es": "República Popular de Kampuchea",
+    "note": "Set up after Vietnam's invasion"
+   },
+   {
+    "from": "1989-05-01",
+    "name": "State of Cambodia",
+    "wikipedia": "State of Cambodia",
+    "fr": "État du Cambodge",
+    "es": "Estado de Camboya"
+   },
+   {
+    "from": "1993-09-24",
+    "name": "Cambodia",
+    "wikipedia": "Cambodia",
+    "fr": "Cambodge",
+    "es": "Camboya",
+    "note": "The monarchy is restored"
+   }
+  ]
  },
  "Cameroon": {
   "wikipedia": "Cameroon",
@@ -298,7 +354,9 @@
   "wikipedia": "Cape Juby",
   "wikidata": "Q1538846",
   "fr": "Cap Juby",
-  "es": "Cabo Juby"
+  "es": "Cabo Juby",
+  "group": "Spanish West Africa",
+  "groupUntil": "1958-01-10"
  },
  "Cape Verde": {
   "wikipedia": "Cape Verde",
@@ -392,13 +450,17 @@
   "wikipedia": "Colonial Mauritania",
   "wikidata": "Q5148343",
   "fr": "Colonie de la Mauritanie",
-  "es": "Colonia de Mauritania"
+  "es": "Colonia de Mauritania",
+  "group": "French West Africa",
+  "groupUntil": "1958-10-05"
  },
  "Colony of Niger": {
   "wikipedia": "Colony of Niger",
   "wikidata": "Q5148520",
   "fr": "Colonie du Niger",
-  "es": "Colonia de Níger"
+  "es": "Colonia de Níger",
+  "group": "French West Africa",
+  "groupUntil": "1958-10-05"
  },
  "Comoros": {
   "wikipedia": "Comoros",
@@ -604,6 +666,15 @@
   "es": "Argelia francesa",
   "withOwner": false
  },
+ "French Cambodia": {
+  "wikipedia": "French protectorate of Cambodia",
+  "wikidata": "Q3173090",
+  "fr": "Protectorat français du Cambodge",
+  "es": "Protectorado francés de Camboya",
+  "withOwner": false,
+  "group": "French Indochina",
+  "groupUntil": "1954-07-21"
+ },
  "French Cameroon": {
   "wikipedia": "French Cameroon",
   "wikidata": "Q1028848",
@@ -616,28 +687,52 @@
   "wikidata": "Q5501708",
   "fr": "Territoire du Tchad",
   "es": "Chad francés",
-  "withOwner": false
+  "withOwner": false,
+  "group": "French Equatorial Africa",
+  "groupUntil": "1958-09-28"
+ },
+ "French Cochinchina": {
+  "wikipedia": "French Cochinchina",
+  "wikidata": "Q19955896",
+  "fr": "Cochinchine française",
+  "es": "Cochinchina francesa",
+  "withOwner": false,
+  "group": "French Indochina",
+  "groupUntil": "1954-07-21"
  },
  "French Congo": {
   "wikipedia": "French Congo",
   "wikidata": "Q265319",
   "fr": "Congo français",
   "es": "Congo francés",
-  "withOwner": false
+  "withOwner": false,
+  "group": "French Equatorial Africa",
+  "groupUntil": "1958-09-28"
  },
  "French Dahomey": {
   "wikipedia": "French Dahomey",
   "wikidata": "Q797505",
   "fr": "Colonie du Dahomey",
   "es": "Dahomey francés",
-  "withOwner": false
+  "withOwner": false,
+  "group": "French West Africa",
+  "groupUntil": "1958-10-05"
+ },
+ "French Equatorial Africa": {
+  "wikipedia": "French Equatorial Africa",
+  "wikidata": "Q271894",
+  "fr": "Afrique-Équatoriale française",
+  "es": "África Ecuatorial Francesa",
+  "notACountry": true
  },
  "French Gabon": {
   "wikipedia": "French Equatorial Africa",
   "wikidata": "Q39072717",
   "fr": "Colonie du Gabon",
   "es": "Gabón francés",
-  "withOwner": false
+  "withOwner": false,
+  "group": "French Equatorial Africa",
+  "groupUntil": "1958-09-28"
  },
  "French Guiana": {
   "wikipedia": "French Guiana",
@@ -651,14 +746,41 @@
   "wikidata": "Q797433",
   "fr": "Guinée française",
   "es": "Guinea francesa",
+  "withOwner": false,
+  "group": "French West Africa",
+  "groupUntil": "1958-10-05"
+ },
+ "French India": {
+  "wikipedia": "French India",
+  "wikidata": "Q646374",
+  "fr": "Inde française",
+  "es": "India francesa",
   "withOwner": false
+ },
+ "French Indochina": {
+  "wikipedia": "French Indochina",
+  "wikidata": "Q185682",
+  "fr": "Indochine française",
+  "es": "Indochina francesa",
+  "notACountry": true
  },
  "French Ivory Coast": {
   "wikipedia": "French West Africa",
   "wikidata": "Q39074482",
   "fr": "Colonie de Côte d'Ivoire",
   "es": "Costa de Marfil francesa",
-  "withOwner": false
+  "withOwner": false,
+  "group": "French West Africa",
+  "groupUntil": "1958-10-05"
+ },
+ "French Laos": {
+  "wikipedia": "French protectorate of Laos",
+  "wikidata": "Q1320058",
+  "fr": "Protectorat français du Laos",
+  "es": "Protectorado francés de Laos",
+  "withOwner": false,
+  "group": "French Indochina",
+  "groupUntil": "1954-07-21"
  },
  "French Madagascar": {
   "wikipedia": "French Madagascar",
@@ -704,7 +826,9 @@
   "wikidata": "Q5502051",
   "fr": "Colonie du Sénégal",
   "es": "Senegal francés",
-  "withOwner": false
+  "withOwner": false,
+  "group": "French West Africa",
+  "groupUntil": "1958-10-05"
  },
  "French Somaliland": {
   "wikipedia": "French Somaliland",
@@ -743,7 +867,9 @@
   "wikidata": "Q508014",
   "fr": "Soudan français",
   "es": "Sudán francés",
-  "withOwner": false
+  "withOwner": false,
+  "group": "French West Africa",
+  "groupUntil": "1958-10-05"
  },
  "French Togoland": {
   "wikipedia": "French Togoland",
@@ -764,7 +890,16 @@
   "wikidata": "Q797440",
   "fr": "Colonie de la Haute-Volta",
   "es": "Alto Volta francés",
-  "withOwner": false
+  "withOwner": false,
+  "group": "French West Africa",
+  "groupUntil": "1958-10-05"
+ },
+ "French West Africa": {
+  "wikipedia": "French West Africa",
+  "wikidata": "Q210682",
+  "fr": "Afrique-Occidentale française",
+  "es": "África Occidental Francesa",
+  "notACountry": true
  },
  "Gabon": {
   "wikipedia": "Gabon",
@@ -956,7 +1091,9 @@
   "wikipedia": "Ifni",
   "wikidata": "Q763141",
   "fr": "Ifni",
-  "es": "Ifni"
+  "es": "Ifni",
+  "group": "Spanish West Africa",
+  "groupUntil": "1958-01-10"
  },
  "India": {
   "wikipedia": "India",
@@ -1076,7 +1213,25 @@
   "wikipedia": "Laos",
   "wikidata": "Q819",
   "fr": "Laos",
-  "es": "Laos"
+  "es": "Laos",
+  "periods": [
+   {
+    "from": "1953-10-22",
+    "name": "Kingdom of Laos",
+    "wikipedia": "Kingdom of Laos",
+    "fr": "Royaume du Laos",
+    "es": "Reino de Laos",
+    "note": "Fully independent from 22 October 1953"
+   },
+   {
+    "from": "1975-12-02",
+    "name": "Laos",
+    "wikipedia": "Laos",
+    "fr": "Laos",
+    "es": "Laos",
+    "note": "The Lao People's Democratic Republic, after the king abdicates"
+   }
+  ]
  },
  "Latvia": {
   "wikipedia": "Latvia",
@@ -1373,6 +1528,12 @@
   "fr": "Macédoine du Nord",
   "es": "Macedonia del Norte"
  },
+ "North Vietnam": {
+  "wikipedia": "North Vietnam",
+  "wikidata": "Q172640",
+  "fr": "Nord Viêt Nam",
+  "es": "Vietnam del Norte"
+ },
  "Northern Cyprus": {
   "wikipedia": "Northern Cyprus",
   "wikidata": "Q23681",
@@ -1624,6 +1785,12 @@
   "fr": "Rwanda",
   "es": "Ruanda"
  },
+ "Saar Protectorate": {
+  "wikipedia": "Saar Protectorate",
+  "wikidata": "Q310293",
+  "fr": "Protectorat de la Sarre",
+  "es": "Protectorado del Sarre"
+ },
  "Saint Barthélemy": {
   "wikipedia": "Saint Barthélemy",
   "wikidata": "Q25362",
@@ -1787,6 +1954,38 @@
   "fr": "Soudan du Sud",
   "es": "Sudán del Sur"
  },
+ "South Vietnam": {
+  "wikipedia": "South Vietnam",
+  "wikidata": "Q180573",
+  "fr": "Sud Viêt Nam",
+  "es": "Vietnam del Sur",
+  "periods": [
+   {
+    "from": "1954-07-21",
+    "name": "State of Vietnam",
+    "wikipedia": "State of Vietnam",
+    "fr": "État du Viêt Nam",
+    "es": "Estado de Vietnam",
+    "note": "South of the 17th parallel, after the Geneva Accords"
+   },
+   {
+    "from": "1955-10-26",
+    "name": "Republic of Vietnam",
+    "wikipedia": "South Vietnam",
+    "fr": "République du Viêt Nam",
+    "es": "República de Vietnam",
+    "note": "A republic after the 1955 referendum"
+   },
+   {
+    "from": "1975-04-30",
+    "name": "Republic of South Vietnam",
+    "wikipedia": "Provisional Revolutionary Government of the Republic of South Vietnam",
+    "fr": "République du Sud-Viêt Nam",
+    "es": "República de Vietnam del Sur",
+    "note": "After the fall of Saigon"
+   }
+  ]
+ },
  "Southern Cameroons": {
   "wikipedia": "Southern Cameroons",
   "wikidata": "Q1542471",
@@ -1806,11 +2005,26 @@
   "es": "Protectorado español de Marruecos",
   "withOwner": false
  },
+ "Spanish West Africa": {
+  "wikipedia": "Spanish West Africa",
+  "wikidata": "Q1191986",
+  "fr": "Afrique occidentale espagnole",
+  "es": "África Occidental Española",
+  "notACountry": true
+ },
  "Sri Lanka": {
   "wikipedia": "Sri Lanka",
   "wikidata": "Q854",
   "fr": "Sri Lanka",
   "es": "Sri Lanka"
+ },
+ "State of Vietnam": {
+  "wikipedia": "State of Vietnam",
+  "wikidata": "Q1193879",
+  "fr": "État du Viêt Nam",
+  "es": "Estado de Vietnam",
+  "group": "French Indochina",
+  "groupUntil": "1954-07-21"
  },
  "Sudan": {
   "wikipedia": "Sudan",
@@ -1915,6 +2129,14 @@
   "fr": "Tonga",
   "es": "Tonga"
  },
+ "Tonkin": {
+  "wikipedia": "Tonkin (French protectorate)",
+  "wikidata": "Q20969067",
+  "fr": "Protectorat du Tonkin",
+  "es": "Protectorado de Tonkín",
+  "group": "French Indochina",
+  "groupUntil": "1954-07-21"
+ },
  "Transnistria": {
   "wikipedia": "Transnistria",
   "wikidata": "Q907112",
@@ -1980,7 +2202,9 @@
   "wikipedia": "Ubangi-Shari",
   "wikidata": "Q1421888",
   "fr": "Oubangui-Chari",
-  "es": "Ubangui-Chari"
+  "es": "Ubangui-Chari",
+  "group": "French Equatorial Africa",
+  "groupUntil": "1958-09-28"
  },
  "Uganda": {
   "wikipedia": "Uganda",

@@ -643,5 +643,40 @@
   "title": "La Tunisie devient indépendante, 20 mars 1956",
   "place": "Tunis",
   "summary": "Après des années de résistance armée et de négociations menées par Habib Bourguiba, l’autonomie interne de 1955 est suivie de l’indépendance complète le 20 mars 1956, sous l’autorité du bey. Le 25 juillet 1957, l’Assemblée constituante abolit la monarchie et fait de Bourguiba le président de la République."
+ },
+ "indochina-war-1946": {
+  "title": "La guerre d’Indochine commence, 19 décembre 1946",
+  "place": "Hanoï",
+  "summary": "Les négociations entre la France et la République démocratique du Viêt Nam d’Hô Chi Minh, proclamée en septembre 1945, échouent. Après le bombardement de Haïphong par la marine française en novembre, le Viêt Minh attaque les Français à Hanoï le 19 décembre 1946. La guerre dure près de huit ans et s’achève par la défaite française à Diên Biên Phu."
+ },
+ "laos-independence-1953": {
+  "title": "Le Laos devient indépendant, 22 octobre 1953",
+  "place": "Vientiane",
+  "summary": "Royaume sous protection française depuis 1947, le Laos obtient la pleine souveraineté par le traité d’amitié et d’association franco-lao, signé à Paris le 22 octobre 1953, alors que les troupes du Viêt Minh et le Pathet Lao tiennent le nord-est. Les accords de Genève confirment son indépendance l’année suivante."
+ },
+ "cambodia-independence-1953": {
+  "title": "Le Cambodge devient indépendant, 9 novembre 1953",
+  "place": "Phnom Penh",
+  "summary": "La « croisade royale pour l’indépendance » du roi Norodom Sihanouk le mène en France, aux États-Unis et dans un exil volontaire. La France cède et transfère l’armée, la police et la justice ; les dernières troupes françaises partent et le Cambodge fête son indépendance le 9 novembre 1953."
+ },
+ "dien-bien-phu-1954": {
+  "title": "La bataille de Diên Biên Phu, 13 mars – 7 mai 1954",
+  "place": "Diên Biên Phu",
+  "summary": "L’armée française installe un camp retranché dans une vallée isolée du nord-ouest du Tonkin pour attirer le Viêt Minh dans une bataille rangée. Le général Võ Nguyên Giáp l’encercle d’une artillerie hissée à travers les montagnes et, après 56 jours de siège, le camp tombe le 7 mai 1954. La défaite pousse la France à accepter la paix à Genève."
+ },
+ "geneva-accords-1954": {
+  "title": "Les accords de Genève divisent le Viêt Nam, 21 juillet 1954",
+  "place": "Rivière Bến Hải, Viêt Nam (signés à Genève)",
+  "summary": "La conférence de Genève met fin à la guerre d’Indochine. Le Viêt Nam est coupé sur la rivière Bến Hải, près du 17e parallèle : la République démocratique du Viêt Nam du Viêt Minh au nord, l’État du Viêt Nam au sud, en attendant des élections promises pour 1956 qui n’auront jamais lieu. L’indépendance du Laos et du Cambodge est confirmée, et les troupes françaises partent."
+ },
+ "french-india-1954": {
+  "title": "L’Inde française passe à l’Inde, 1er novembre 1954",
+  "place": "Pondichéry",
+  "summary": "Après le rattachement de Chandernagor à l’Inde en 1950, les conseillers de Pondichéry, Karikal, Mahé et Yanaon votent en octobre 1954 pour rejoindre l’Inde à leur tour. La France leur en remet l’administration le 1er novembre 1954 ; le traité de cession, signé en 1956, n’est ratifié par la France qu’en 1962. Les quatre villes forment l’actuel Pondichéry."
+ },
+ "saar-referendum-1955": {
+  "title": "La Sarre rejette le statut de la Sarre, 23 octobre 1955",
+  "place": "Sarrebruck",
+  "summary": "La France et l’Allemagne de l’Ouest s’entendent pour donner à la Sarre, protectorat français depuis 1947, un statut européen sous l’égide de l’Union de l’Europe occidentale. Au référendum du 23 octobre 1955, deux tiers des Sarrois votent non. La France accepte le résultat, et la Sarre rejoint l’Allemagne de l’Ouest le 1er janvier 1957."
  }
 }

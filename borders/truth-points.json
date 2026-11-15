@@ -2134,6 +2134,292 @@
    ],
    "realm": "France",
    "why": "French since 15 September 1947"
+  },
+  {
+   "place": "Hanoi",
+   "lonLat": [
+    105.85,
+    21.03
+   ],
+   "years": [
+    1946,
+    1948
+   ],
+   "realm": "France",
+   "why": "Capital of the French protectorate of Tonkin"
+  },
+  {
+   "place": "Hanoi",
+   "lonLat": [
+    105.85,
+    21.03
+   ],
+   "years": [
+    1949,
+    1953
+   ],
+   "realm": "France",
+   "why": "State of Vietnam, an associated state of the French Union, from 1949"
+  },
+  {
+   "place": "Hanoi",
+   "lonLat": [
+    105.85,
+    21.03
+   ],
+   "years": [
+    1954,
+    1975
+   ],
+   "realm": "North Vietnam",
+   "why": "Capital of the Democratic Republic of Vietnam after the Geneva Accords"
+  },
+  {
+   "place": "Hanoi",
+   "lonLat": [
+    105.85,
+    21.03
+   ],
+   "years": [
+    1976,
+    2026
+   ],
+   "realm": "Vietnam",
+   "why": "Capital of reunified Vietnam"
+  },
+  {
+   "place": "Huế",
+   "lonLat": [
+    107.59,
+    16.46
+   ],
+   "years": [
+    1946,
+    1948
+   ],
+   "realm": "France",
+   "why": "Seat of the French protectorate of Annam"
+  },
+  {
+   "place": "Huế",
+   "lonLat": [
+    107.59,
+    16.46
+   ],
+   "years": [
+    1954,
+    1975
+   ],
+   "realm": "South Vietnam",
+   "why": "South of the 1954 demarcation line"
+  },
+  {
+   "place": "Vĩnh Linh",
+   "lonLat": [
+    107.03,
+    17.07
+   ],
+   "years": [
+    1954,
+    1975
+   ],
+   "realm": "North Vietnam",
+   "why": "North of the Bến Hải river, the 1954 demarcation line"
+  },
+  {
+   "place": "Ho Chi Minh City (Saigon)",
+   "lonLat": [
+    106.7,
+    10.78
+   ],
+   "years": [
+    1946,
+    1948
+   ],
+   "realm": "France",
+   "why": "Capital of the colony of Cochinchina"
+  },
+  {
+   "place": "Ho Chi Minh City (Saigon)",
+   "lonLat": [
+    106.7,
+    10.78
+   ],
+   "years": [
+    1954,
+    1975
+   ],
+   "realm": "South Vietnam",
+   "why": "Capital of South Vietnam"
+  },
+  {
+   "place": "Vientiane",
+   "lonLat": [
+    102.63,
+    17.97
+   ],
+   "years": [
+    1946,
+    1952
+   ],
+   "realm": "France",
+   "why": "French protectorate of Laos"
+  },
+  {
+   "place": "Vientiane",
+   "lonLat": [
+    102.63,
+    17.97
+   ],
+   "years": [
+    1953,
+    2026
+   ],
+   "realm": "Laos",
+   "why": "Independent since 22 October 1953"
+  },
+  {
+   "place": "Phnom Penh",
+   "lonLat": [
+    104.92,
+    11.56
+   ],
+   "years": [
+    1946,
+    1952
+   ],
+   "realm": "France",
+   "why": "French protectorate of Cambodia"
+  },
+  {
+   "place": "Phnom Penh",
+   "lonLat": [
+    104.92,
+    11.56
+   ],
+   "years": [
+    1953,
+    2026
+   ],
+   "realm": "Cambodia",
+   "why": "Independent since 9 November 1953"
+  },
+  {
+   "place": "Battambang",
+   "lonLat": [
+    103.2,
+    13.1
+   ],
+   "years": [
+    1946,
+    1952
+   ],
+   "realm": "France",
+   "why": "Returned by Thailand to French Cambodia in November 1946"
+  },
+  {
+   "place": "Puducherry",
+   "lonLat": [
+    79.83,
+    11.93
+   ],
+   "years": [
+    1946,
+    1953
+   ],
+   "realm": "France",
+   "why": "Capital of French India"
+  },
+  {
+   "place": "Puducherry",
+   "lonLat": [
+    79.83,
+    11.93
+   ],
+   "years": [
+    1954,
+    2026
+   ],
+   "realm": "India",
+   "why": "Handed to India on 1 November 1954"
+  },
+  {
+   "place": "Mahé",
+   "lonLat": [
+    75.536,
+    11.701
+   ],
+   "years": [
+    1946,
+    1953
+   ],
+   "realm": "France",
+   "why": "One of the five settlements of French India"
+  },
+  {
+   "place": "Chandannagar",
+   "lonLat": [
+    88.36,
+    22.865
+   ],
+   "years": [
+    1946,
+    1949
+   ],
+   "realm": "France",
+   "why": "French until 2 May 1950"
+  },
+  {
+   "place": "Chandannagar",
+   "lonLat": [
+    88.36,
+    22.865
+   ],
+   "years": [
+    1950,
+    2026
+   ],
+   "realm": "India",
+   "why": "Handed to India on 2 May 1950"
+  },
+  {
+   "place": "Saarbrücken",
+   "lonLat": [
+    6.99,
+    49.24
+   ],
+   "years": [
+    1947,
+    1956
+   ],
+   "realm": "France",
+   "why": "Capital of the Saar Protectorate"
+  },
+  {
+   "place": "Saarbrücken",
+   "lonLat": [
+    6.99,
+    49.24
+   ],
+   "years": [
+    1957,
+    2026
+   ],
+   "realm": "Germany",
+   "why": "Part of West Germany from 1 January 1957"
+  },
+  {
+   "place": "Mahé",
+   "lonLat": [
+    75.536,
+    11.701
+   ],
+   "years": [
+    1954,
+    2026
+   ],
+   "realm": "India",
+   "why": "Handed to India on 1 November 1954"
   }
  ]
 }

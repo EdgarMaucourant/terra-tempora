@@ -307,7 +307,15 @@ for (let year = TODAY; year >= firstReviewed; year--) {
       if (state.get(id)) add("blank", id, { kind: "blank" });
     }
     else {
-      if (s.territory) add(`territory|${s.owner}|${s.territory}`, id, { name: s.territory, partOf: s.owner });
+      if (s.territory) {
+        // A territory can belong to a group of territories too (Tonkin in French Indochina).
+        // The group ends at its "groupUntil" date (French West Africa in 1958).
+        const r = realms[s.territory];
+        const group = r?.group && !(r.groupUntil && r.groupUntil <= `${year}-12-31`) ? r.group : null;
+        add(`territory|${s.owner}|${s.territory}`, id, { name: s.territory, partOf: s.owner, ...(group && { groups: [group] }) });
+        // The group's own outline, drawn over its members with its name.
+        if (group) add(`group|${group}`, id, { kind: "group", name: group });
+      }
       else add(`realm|${s.owner}`, id, { name: s.owner });
       if (s.hatch) {
         const h = s.hatch;
@@ -380,8 +388,11 @@ const unitSize = new Map();
 for (const p of pieces.values()) unitSize.set(p.unit, (unitSize.get(p.unit) ?? 0) + 1);
 const keptPoint = new Map(
   [...pieces.values()]
-    .filter((p) => p.keep || (today.units[p.unit]?.territory && unitSize.get(p.unit) === 1))
-    .map((p) => [p.id, polylabel(polygonsOf(p.geometry).sort((a, b) => sphereArea(b[0]) - sphereArea(a[0]))[0], 0.001)]),
+    .map((p) => ({ p, polys: polygonsOf(p.geometry).sort((a, b) => sphereArea(b[0]) - sphereArea(a[0])) }))
+    // A piece made of small islands only (the Scattered Islands) keeps them all.
+    .map(({ p, polys }) => ({ p, polys, tiny: polys.length > 1 && polys.every((poly) => sphereArea(poly[0]) < MIN_PART_AREA) }))
+    .filter(({ p, tiny }) => tiny || p.keep || (today.units[p.unit]?.territory && unitSize.get(p.unit) === 1))
+    .map(({ p, polys, tiny }) => [p.id, (tiny ? polys : polys.slice(0, 1)).map((poly) => polylabel(poly, 0.001))]),
 );
 
 /** Whether a point lies in a ring, or by it when the ring is a few points only (Diu once simplified). */
@@ -412,7 +423,7 @@ function outline(ids, { bands = false } = {}) {
   if (!outers.length) return null;
   const largest = outers.reduce((a, b) => (b.area > a.area ? b : a));
   // A small place of its own (Diu, Saint Barthélemy) stays however small.
-  const marks = ids.map((id) => keptPoint.get(id)).filter(Boolean);
+  const marks = ids.flatMap((id) => keptPoint.get(id) ?? []);
   const kept = outers.filter(
     (o) => o === largest || o.area >= Math.min(MIN_PART_AREA, largest.area) || marks.find((m) => atRing(m, o.ring)),
   );
@@ -462,6 +473,7 @@ for (const [key, list] of runs) {
       wikidata: realm?.wikidata ?? null,
       area: Math.round(ids.reduce((s, id) => s + pieceArea.get(id), 0)),
       ...(m.partOf && { partOf: m.partOf }),
+      ...(m.groups && { groups: m.groups }),
       ...(m.display && { display: m.display }),
       ...(m.kind && { kind: m.kind }),
       ...(m.by && { by: m.by, since: m.since, note: m.note }),
@@ -595,6 +607,10 @@ writeFileSync(
     realms: spans,
     names,
     notCountries: Object.keys(realms).filter((n) => realms[n].notACountry),
+    // Groups of territories (French Indochina), drawn only as their members, with their own links.
+    groups: Object.fromEntries(
+      [...new Set(Object.values(realms).map((r) => r.group).filter(Boolean))].map((g) => [g, { wikipedia: realms[g]?.wikipedia ?? null, wikidata: realms[g]?.wikidata ?? null }]),
+    ),
     places,
     lineage,
   }),
