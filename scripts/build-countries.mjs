@@ -20,6 +20,10 @@ const MIN_SHARE_OF_COUNTRY = 0.1;
 const MIN_SHARE_OF_CIV = 0.6;
 const MIN_CIV_TO_COUNTRY = 0.01;
 const MAX_LINEAGE = 60;
+// In a rebuilt place, a realm that held less than this share of its land
+// is not in its lineage.
+const MIN_PLACE_SHARE = 0.01;
+
 // For a country's territory: a civilization whose borders crossed it. Borders
 // drawn by different hands overlap a little along shared edges, so a crossing
 // counts when it is more than such a sliver: this share of the country's land,
@@ -301,7 +305,11 @@ for (const [id, land] of today) {
   ];
 
   // Rebuilt borders say exactly who held each place (index.places).
-  const history = index.places?.[civ.names[0]]?.map((h) => civOfRealm.get(h.name)?.id).filter((h) => h && byId.has(h));
+  // A realm that held only a sliver of it (Italy's Tende, in France) is left out.
+  const history = index.places?.[civ.names[0]]
+    ?.filter((h) => h.name === civ.names[0] || !(h.share < MIN_PLACE_SHARE))
+    .map((h) => civOfRealm.get(h.name)?.id)
+    .filter((h) => h && byId.has(h));
   if (history) crossing.splice(0, crossing.length, ...history.map((h) => byId.get(h)));
   let lineage;
   if (history) lineage = history;
