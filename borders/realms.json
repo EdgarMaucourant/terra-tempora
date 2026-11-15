@@ -58,7 +58,8 @@
   "wikipedia": "Annam (French protectorate)",
   "wikidata": "Q10828323",
   "fr": "Protectorat français d'Annam",
-  "es": "Protectorado francés de Annam"
+  "es": "Protectorado francés de Annam",
+  "group": "French Indochina"
  },
  "Antigua and Barbuda": {
   "wikipedia": "Antigua and Barbuda",
@@ -663,7 +664,8 @@
   "wikidata": "Q3173090",
   "fr": "Protectorat français du Cambodge",
   "es": "Protectorado francés de Camboya",
-  "withOwner": false
+  "withOwner": false,
+  "group": "French Indochina"
  },
  "French Cameroon": {
   "wikipedia": "French Cameroon",
@@ -684,7 +686,8 @@
   "wikidata": "Q19955896",
   "fr": "Cochinchine française",
   "es": "Cochinchina francesa",
-  "withOwner": false
+  "withOwner": false,
+  "group": "French Indochina"
  },
  "French Congo": {
   "wikipedia": "French Congo",
@@ -728,6 +731,13 @@
   "es": "India francesa",
   "withOwner": false
  },
+ "French Indochina": {
+  "wikipedia": "French Indochina",
+  "wikidata": "Q185682",
+  "fr": "Indochine française",
+  "es": "Indochina francesa",
+  "notACountry": true
+ },
  "French Ivory Coast": {
   "wikipedia": "French West Africa",
   "wikidata": "Q39074482",
@@ -740,7 +750,8 @@
   "wikidata": "Q1320058",
   "fr": "Protectorat français du Laos",
   "es": "Protectorado francés de Laos",
-  "withOwner": false
+  "withOwner": false,
+  "group": "French Indochina"
  },
  "French Madagascar": {
   "wikipedia": "French Madagascar",
@@ -1960,7 +1971,8 @@
   "wikipedia": "State of Vietnam",
   "wikidata": "Q1193879",
   "fr": "État du Viêt Nam",
-  "es": "Estado de Vietnam"
+  "es": "Estado de Vietnam",
+  "group": "French Indochina"
  },
  "Sudan": {
   "wikipedia": "Sudan",
@@ -2069,7 +2081,8 @@
   "wikipedia": "Tonkin (French protectorate)",
   "wikidata": "Q20969067",
   "fr": "Protectorat du Tonkin",
-  "es": "Protectorado de Tonkín"
+  "es": "Protectorado de Tonkín",
+  "group": "French Indochina"
  },
  "Transnistria": {
   "wikipedia": "Transnistria",

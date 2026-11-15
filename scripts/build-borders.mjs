@@ -307,7 +307,11 @@ for (let year = TODAY; year >= firstReviewed; year--) {
       if (state.get(id)) add("blank", id, { kind: "blank" });
     }
     else {
-      if (s.territory) add(`territory|${s.owner}|${s.territory}`, id, { name: s.territory, partOf: s.owner });
+      if (s.territory) {
+        // A territory can belong to a group of territories too (Tonkin in French Indochina).
+        const group = realms[s.territory]?.group;
+        add(`territory|${s.owner}|${s.territory}`, id, { name: s.territory, partOf: s.owner, ...(group && { groups: [group] }) });
+      }
       else add(`realm|${s.owner}`, id, { name: s.owner });
       if (s.hatch) {
         const h = s.hatch;
@@ -462,6 +466,7 @@ for (const [key, list] of runs) {
       wikidata: realm?.wikidata ?? null,
       area: Math.round(ids.reduce((s, id) => s + pieceArea.get(id), 0)),
       ...(m.partOf && { partOf: m.partOf }),
+      ...(m.groups && { groups: m.groups }),
       ...(m.display && { display: m.display }),
       ...(m.kind && { kind: m.kind }),
       ...(m.by && { by: m.by, since: m.since, note: m.note }),
@@ -595,6 +600,10 @@ writeFileSync(
     realms: spans,
     names,
     notCountries: Object.keys(realms).filter((n) => realms[n].notACountry),
+    // Groups of territories (French Indochina), drawn only as their members, with their own links.
+    groups: Object.fromEntries(
+      [...new Set(Object.values(realms).map((r) => r.group).filter(Boolean))].map((g) => [g, { wikipedia: realms[g]?.wikipedia ?? null, wikidata: realms[g]?.wikidata ?? null }]),
+    ),
     places,
     lineage,
   }),
