@@ -1,6 +1,5 @@
 import {
   ArcType,
-  Cartesian2,
   Cartesian3,
   Color,
   GeometryInstance,
@@ -21,7 +20,7 @@ import {
   VerticalOrigin,
 } from "cesium";
 import { MUTED } from "./colors";
-import { highlightOf, isOverlay, type Polity } from "./data";
+import { foldedInGroup, highlightOf, isOverlay, type Polity } from "./data";
 import { inRing } from "./frame";
 
 // Shapes float slightly above the globe surface so they never z-fight with it.
@@ -218,6 +217,7 @@ export class PolityLayer {
    * every country is coloured), only the large ones are, like greyed realms.
    */
   labelAll = true;
+  private openGroups = new Set<string>();
   /** A realm's name as shown on its label. */
   nameOf = (realm: string) => realm;
   /**
@@ -355,6 +355,12 @@ export class PolityLayer {
   }
 
   /** Colours the given realms and greys out the rest. */
+  /** The groups whose territories are named, after a click inside them. */
+  setOpenGroups(groups: Iterable<string>) {
+    this.openGroups = new Set(groups);
+    this.scene.requestRender();
+  }
+
   setHighlight(colors: Map<string, string>) {
     const changed = new Set<string>();
     for (const [name, color] of colors) if (this.highlight.get(name) !== color) changed.add(name);
@@ -407,6 +413,12 @@ export class PolityLayer {
       }
     }
 
+    // A group (French West Africa) is named alone until a click inside it:
+    // its territories' names then take the place of its own.
+    const groupNames = new Set<string>();
+    for (const [p, d] of this.drawn) {
+      if (p.kind === "group" && d.label && this.visibleKind(p) && shapeOpacity(p, year) > 0.5) groupNames.add(p.name);
+    }
     for (const piece of this.pieces.values()) piece.reset();
     for (const [p, d] of [...this.drawn]) {
       const opacity = this.visibleKind(p) ? shapeOpacity(p, year) : 0;
@@ -429,7 +441,11 @@ export class PolityLayer {
       for (const piece of d.pieces) piece.addOpacity(p, opacity, hovered);
       // Labels switch at the midpoint of a fade. Changing a label's colour
       // redraws its glyphs, which is too costly to do every frame.
-      if (d.label) d.label.show = opacity > 0.5;
+      if (d.label) {
+        d.label.show =
+          opacity > 0.5 &&
+          (p.kind === "group" ? !this.openGroups.has(p.name) : !foldedInGroup(p, groupNames, this.openGroups, this.labelAll && this.highlight.has(p.name) && !(p.partOf && this.highlight.has(p.partOf))));
+      }
     }
 
     for (const piece of this.pieces.values()) {
@@ -499,7 +515,8 @@ export class PolityLayer {
     });
 
     let label: Label | undefined;
-    if (!p.kind && p.label && ((highlighted && this.labelAll) || p.area >= CONTEXT_LABEL_AREA)) {
+    // A group's territories all have a name, shown once a click opens the group.
+    if (!p.kind && p.label && ((highlighted && this.labelAll) || p.area >= CONTEXT_LABEL_AREA || (p.partOf && p.groups?.length))) {
       const height = highlighted ? FEATURED_HEIGHT : CONTEXT_HEIGHT;
       label = this.labels.add({
         id: p,
@@ -529,8 +546,7 @@ export class PolityLayer {
         style: LabelStyle.FILL_AND_OUTLINE,
         horizontalOrigin: HorizontalOrigin.CENTER,
         verticalOrigin: VerticalOrigin.CENTER,
-        pixelOffset: new Cartesian2(0, -22),
-        scaleByDistance: new NearFarScalar(2e6, 1.15, 2.5e7, 0.8),
+                scaleByDistance: new NearFarScalar(2e6, 1.15, 2.5e7, 0.8),
         show: false,
       });
     }
