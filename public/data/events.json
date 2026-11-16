@@ -3661,6 +3661,221 @@
    "summary": "Germany had taken Alsace and part of Lorraine from France in 1871. After the armistice, French troops enter Metz on 19 November and Strasbourg on 22 November 1918, to cheering crowds. The Treaty of Versailles returns the land to France on 10 January 1920, and it becomes the departments of Bas-Rhin, Haut-Rhin and Moselle. They keep some of their German-era laws, such as the Concordat on religion, to this day.",
    "wikipedia": "Alsace–Lorraine",
    "search": "Alsace-Lorraine returns to France 1918 1920 Strasbourg Metz Versailles"
+  },
+  {
+   "id": "battle-of-kousseri-1900",
+   "kind": "battle",
+   "year": 1900,
+   "title": "The Battle of Kousséri, 22 April 1900",
+   "place": "On the Chari, near today's N'Djamena",
+   "lonLat": [
+    15.2,
+    12.0
+   ],
+   "civs": [
+    "french-chad",
+    "chad",
+    "france"
+   ],
+   "summary": "Three French columns, one from Algeria across the Sahara, one from Niger and one from the Congo, meet near Lake Chad to fight the warlord Rabih az-Zubayr, who rules the Bornu and the lands south of the lake. At Kousséri, on the Chari, they defeat and kill him; the French commander Major Lamy is killed too. A month later the French found Fort-Lamy, today's N'Djamena, and the military territory of Chad begins.",
+   "wikipedia": "Battle_of_Kousséri",
+   "search": "Battle of Kousseri 1900 Rabih az-Zubayr Lamy Fort-Lamy conquest of Chad"
+  },
+  {
+   "id": "coppolani-mauritania-1902",
+   "kind": "empire",
+   "year": 1902,
+   "to": 1905,
+   "title": "Coppolani's \"peaceful conquest\" of Mauritania, 1902 – 1905",
+   "place": "Trarza, Brakna and Tagant, to Tidjikja",
+   "lonLat": [
+    -11.42,
+    18.55
+   ],
+   "civs": [
+    "colonial-mauritania",
+    "mauritania",
+    "france"
+   ],
+   "summary": "North of the Senegal river live the Moorish emirates of Trarza, Brakna, Tagant and Adrar. Xavier Coppolani, a Corsican raised in Algeria who speaks Arabic and knows the Sufi brotherhoods, wins over their emirs and religious leaders one by one, backed by small columns of troops. By 1904 Trarza, Brakna and Tagant have accepted French rule, and France makes Mauritania a territory of its own. Coppolani is killed at Tidjikja in May 1905.",
+   "wikipedia": "Xavier_Coppolani",
+   "search": "Xavier Coppolani peaceful conquest Mauritania 1902 1905 Trarza Brakna Tagant Tidjikja"
+  },
+  {
+   "id": "entente-cordiale-1904",
+   "kind": "treaty",
+   "year": 1904,
+   "title": "The Entente Cordiale, 8 April 1904",
+   "place": "Paris and London",
+   "lonLat": [
+    2.3,
+    48.9
+   ],
+   "civs": [
+    "france",
+    "united-kingdom",
+    "morocco",
+    "egypt"
+   ],
+   "summary": "After centuries of rivalry, and only six years after the Fashoda crisis, France and the United Kingdom settle their colonial quarrels. Britain leaves France a free hand in Morocco, and France stops opposing British rule in Egypt. They also share out their claims in Siam, the New Hebrides, West Africa and the Newfoundland fisheries. It is not an alliance, but the two countries draw closer against Germany and fight side by side in 1914.",
+   "wikipedia": "Entente_Cordiale",
+   "search": "Entente Cordiale 1904 France United Kingdom Morocco Egypt"
+  },
+  {
+   "id": "franco-siamese-treaties-1904",
+   "kind": "treaty",
+   "year": 1904,
+   "to": 1907,
+   "title": "The Franco-Siamese treaties, 1904 and 1907",
+   "place": "Battambang and Siem Reap",
+   "lonLat": [
+    103.2,
+    13.1
+   ],
+   "civs": [
+    "french-cambodia",
+    "cambodia",
+    "thailand",
+    "french-laos",
+    "france"
+   ],
+   "summary": "Siam keeps its independence between British Burma and French Indochina by giving up land. In 1904 it cedes to France Sainyabuli and the land west of the Mekong at Champasak, which go to Laos, and Koh Kong and Mlu Prey, which go to Cambodia. In 1907 it hands over the provinces of Battambang, Siem Reap and Sisophon, which Siam had held since 1795, in exchange for Trat, which French troops had occupied. Cambodia gets back the temples of Angkor.",
+   "wikipedia": "Franco-Siamese_Treaty_of_1907",
+   "search": "Franco-Siamese treaties 1904 1907 Battambang Siem Reap Angkor Sainyabuli Champasak Trat"
+  },
+  {
+   "id": "separation-of-church-and-state-1905",
+   "kind": "revolution",
+   "year": 1905,
+   "title": "The law separating the Churches and the State, 9 December 1905",
+   "place": "Paris",
+   "lonLat": [
+    2.35,
+    48.85
+   ],
+   "civs": [
+    "france"
+   ],
+   "summary": "After years of conflict between the Republic and the Catholic Church, Parliament ends the Concordat of 1801. The Republic guarantees freedom of conscience and of worship, but no longer recognises or pays any religion. Church buildings become public property, left for the use of the faithful. The law founds French laïcité. Alsace and Moselle, then German, keep the Concordat to this day.",
+   "wikipedia": "1905_French_law_on_the_Separation_of_the_Churches_and_the_State",
+   "search": "1905 law separation of the Churches and the State laïcité France Concordat"
+  },
+  {
+   "id": "tangier-crisis-1905",
+   "kind": "treaty",
+   "year": 1905,
+   "to": 1906,
+   "title": "The Tangier Crisis and the Algeciras Conference, 1905 – 1906",
+   "place": "Tangier",
+   "lonLat": [
+    -5.81,
+    35.78
+   ],
+   "civs": [
+    "morocco",
+    "france",
+    "germany",
+    "spain"
+   ],
+   "summary": "On 31 March 1905, Kaiser Wilhelm II lands at Tangier and declares his support for the independence of Morocco, to test the new Entente between France and Britain. War seems possible, and France's foreign minister Delcassé has to resign. At the Algeciras conference in 1906, the powers keep Morocco formally independent but give France and Spain the policing of its ports and a hold on its finances. Britain stands by France, and Germany comes out isolated.",
+   "wikipedia": "First_Moroccan_Crisis",
+   "search": "First Moroccan Crisis Tangier 1905 Wilhelm II Algeciras Conference 1906"
+  },
+  {
+   "id": "bombardment-of-casablanca-1907",
+   "kind": "war",
+   "year": 1907,
+   "title": "The bombardment of Casablanca, August 1907",
+   "place": "Casablanca",
+   "lonLat": [
+    -7.6,
+    33.59
+   ],
+   "civs": [
+    "morocco",
+    "france"
+   ],
+   "summary": "In July 1907, Moroccans opposed to the French-run works at the port of Casablanca kill nine European workers. On 5 August French warships shell the city and troops land; the city is looted and thousands of Moroccans die. France then occupies the Chaouia plain around Casablanca, as it had occupied Oujda, on the Algerian border, in March. These are the first steps of the French conquest of Morocco.",
+   "wikipedia": "Bombardment_of_Casablanca",
+   "search": "Bombardment of Casablanca 1907 Chaouia occupation Oujda"
+  },
+  {
+   "id": "conquest-of-adrar-1909",
+   "kind": "war",
+   "year": 1909,
+   "title": "Gouraud takes the Adrar, 1909",
+   "place": "Atar",
+   "lonLat": [
+    -13.05,
+    20.52
+   ],
+   "civs": [
+    "colonial-mauritania",
+    "mauritania",
+    "france"
+   ],
+   "summary": "After Coppolani's death, the emirate of Adrar and the followers of the religious leader Ma al-Aynayn lead the resistance in the north of Mauritania, with help from Morocco. Colonel Henri Gouraud marches a column across the desert and takes Atar in January 1909, then Chinguetti. The emir of Adrar submits, and by 1912 France has put down the last resistance in the Adrar.",
+   "wikipedia": "Henri_Gouraud",
+   "search": "Gouraud Adrar 1909 Atar Chinguetti Ma al-Aynayn conquest Mauritania"
+  },
+  {
+   "id": "conquest-of-ouaddai-1909",
+   "kind": "war",
+   "year": 1909,
+   "to": 1911,
+   "title": "The conquest of Ouaddai, 1909 – 1911",
+   "place": "Abéché",
+   "lonLat": [
+    20.83,
+    13.83
+   ],
+   "civs": [
+    "french-chad",
+    "chad",
+    "france"
+   ],
+   "summary": "The sultanate of Ouaddai, east of Lake Chad, is the strongest state left in the region, living from the caravan trade across the Sahara. French troops take its capital Abéché in June 1909, but Sultan Dud Murra fights on with the help of the neighbouring sultanates of Dar Masalit and Dar Sila, which kill a French colonel at Doroté in 1910. Dud Murra surrenders in October 1911, and Ouaddai becomes part of French Chad.",
+   "wikipedia": "Wadai_War",
+   "search": "Wadai War Ouaddai 1909 1911 Abeche Dud Murra conquest of Chad"
+  },
+  {
+   "id": "agadir-crisis-1911",
+   "kind": "treaty",
+   "year": 1911,
+   "title": "The Agadir Crisis and the Morocco–Congo Treaty, 1911",
+   "place": "Agadir",
+   "lonLat": [
+    -9.6,
+    30.42
+   ],
+   "civs": [
+    "morocco",
+    "france",
+    "germany",
+    "kamerun"
+   ],
+   "summary": "In May 1911 French troops march into Fez to help the Sultan against a revolt. Germany answers by sending the gunboat Panther to Agadir on 1 July, and Europe fears war. By the treaty of 4 November 1911, Germany accepts that France can make Morocco a protectorate. In return, France cedes to German Kamerun about 275,000 km² of its Equatorial Africa, Neukamerun, and gets a small strip south of Fort-Lamy, the Bec de canard.",
+   "wikipedia": "Agadir_Crisis",
+   "search": "Agadir Crisis 1911 Panther Morocco-Congo Treaty Neukamerun Bec de canard"
+  },
+  {
+   "id": "treaty-of-fes-1912",
+   "kind": "treaty",
+   "year": 1912,
+   "title": "The Treaty of Fes and the Fez riots, 1912",
+   "place": "Fez",
+   "lonLat": [
+    -5.0,
+    34.03
+   ],
+   "civs": [
+    "french-morocco",
+    "morocco",
+    "france"
+   ],
+   "summary": "On 30 March 1912, Sultan Abd al-Hafid signs the Treaty of Fes, making Morocco a French protectorate. Three weeks later, Moroccan soldiers in Fez mutiny, and with the townspeople kill French officers and civilians and attack the Jewish quarter. General Lyautey, the first resident-general, retakes the city and the surrounding region. The Sultan abdicates in August, and in November France gives Spain a zone in the north of Morocco.",
+   "wikipedia": "Treaty_of_Fes",
+   "search": "Treaty of Fes 1912 French protectorate Morocco Fez riots Lyautey Abd al-Hafid"
   }
  ]
 }
