@@ -690,14 +690,30 @@ function showPlaceNow() {
   );
 }
 
+/** The groups whose territories are named, after a click inside them. */
+let openGroups = new Set<string>();
+function setOpenGroups(groups: string[]) {
+  openGroups = new Set(groups);
+  layer.setOpenGroups(groups);
+  map.setOpenGroups(groups);
+  render();
+}
+
 // Tap or click a highlighted realm for its details, a greyed one to switch to it.
 function clickRealm(p: Polity | null | undefined) {
   hideTooltip();
-  // A click inside a group (French West Africa) names its territories; a
-  // click anywhere else brings the group's own name back.
-  const groups = (p?.kind === "hatch" && p.label ? layer.landAt(p.label[0], p.label[1], year) : p)?.groups ?? [];
-  layer.setOpenGroups(groups);
-  map.setOpenGroups(groups);
+  // A group (French West Africa) is named alone. A first click inside it
+  // opens the group and names its territories; a click on one of them then
+  // opens that territory, and a click anywhere else folds the group back.
+  const land = p?.kind === "hatch" && p.label ? layer.landAt(p.label[0], p.label[1], year) : p;
+  const group = land?.groups?.find((g) => layer.groupShown(g, year));
+  const groupCiv = group && !openGroups.has(group) ? civs?.ofRealm(group) : undefined;
+  setOpenGroups(group ? [group] : []);
+  if (groupCiv) {
+    info.hidden = true;
+    closeEvent();
+    return openCiv(groupCiv, { year, push: true });
+  }
   if (!p || p.kind === "unreviewed") {
     info.hidden = true;
     closeEvent();
