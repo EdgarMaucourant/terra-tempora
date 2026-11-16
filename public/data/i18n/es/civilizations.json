@@ -26,6 +26,9 @@
  "india": {
   "name": "India"
  },
+ "upper-senegal-and-niger": {
+  "name": "Alto Senegal y Níger"
+ },
  "argentina": {
   "name": "Argentina"
  },
@@ -65,20 +68,17 @@
  "sudan": {
   "name": "Sudán"
  },
+ "ubangi-shari": {
+  "name": "Ubangui-Chari"
+ },
  "libya": {
   "name": "Libia"
  },
  "iran": {
   "name": "Irán"
  },
- "ubangi-shari": {
-  "name": "Ubangui-Chari"
- },
  "mongolia": {
   "name": "Mongolia"
- },
- "upper-senegal-and-niger": {
-  "name": "Alto Senegal y Níger"
  },
  "french-sudan": {
   "name": "Sudán francés"
@@ -103,6 +103,9 @@
  },
  "portuguese-angola": {
   "name": "Angola portuguesa"
+ },
+ "french-congo": {
+  "name": "Congo francés"
  },
  "south-africa": {
   "name": "Sudáfrica"
@@ -236,14 +239,11 @@
  "paraguay": {
   "name": "Paraguay"
  },
- "zimbabwe": {
-  "name": "Zimbabue"
- },
  "french-morocco": {
   "name": "Protectorado francés de Marruecos"
  },
- "french-congo": {
-  "name": "Congo francés"
+ "zimbabwe": {
+  "name": "Zimbabue"
  },
  "norway": {
   "name": "Noruega"

@@ -1014,7 +1014,7 @@
     48.86
    ],
    "years": [
-    1914,
+    1900,
     2026
    ],
    "realm": "France",
@@ -1036,7 +1036,7 @@
     41.93
    ],
    "years": [
-    1914,
+    1900,
     2026
    ],
    "realm": "France",
@@ -1058,7 +1058,7 @@
     48.58
    ],
    "years": [
-    1914,
+    1900,
     1919
    ],
    "realm": "Alsace–Lorraine",
@@ -1102,7 +1102,7 @@
     14.61
    ],
    "years": [
-    1914,
+    1900,
     2026
    ],
    "realm": "Martinique",
@@ -1115,7 +1115,7 @@
     16.15
    ],
    "years": [
-    1914,
+    1900,
     2026
    ],
    "realm": "Guadeloupe",
@@ -1128,7 +1128,7 @@
     4.94
    ],
    "years": [
-    1914,
+    1900,
     2026
    ],
    "realm": "French Guiana",
@@ -1141,7 +1141,7 @@
     -20.88
    ],
    "years": [
-    1914,
+    1900,
     2026
    ],
    "realm": "Réunion",
@@ -1154,7 +1154,7 @@
     18.07
    ],
    "years": [
-    1914,
+    1900,
     2006
    ],
    "realm": "Guadeloupe",
@@ -1180,7 +1180,7 @@
     17.9
    ],
    "years": [
-    1914,
+    1900,
     2006
    ],
    "realm": "Guadeloupe",
@@ -1258,7 +1258,7 @@
     11.59
    ],
    "years": [
-    1914,
+    1900,
     1976
    ],
    "realm": "French Somaliland",
@@ -1284,7 +1284,7 @@
     -17.73
    ],
    "years": [
-    1914,
+    1900,
     1979
    ],
    "realm": "New Hebrides",
@@ -1310,7 +1310,7 @@
     36.75
    ],
    "years": [
-    1914,
+    1900,
     1961
    ],
    "realm": "French Algeria",
@@ -1336,7 +1336,7 @@
     22.79
    ],
    "years": [
-    1914,
+    1900,
     1961
    ],
    "realm": "French Algeria",
@@ -1362,7 +1362,7 @@
     -22.27
    ],
    "years": [
-    1914,
+    1900,
     2026
    ],
    "realm": "New Caledonia",
@@ -1375,7 +1375,7 @@
     -17.53
    ],
    "years": [
-    1914,
+    1900,
     2026
    ],
    "realm": "French Polynesia",
@@ -1388,7 +1388,7 @@
     46.78
    ],
    "years": [
-    1914,
+    1900,
     2026
    ],
    "realm": "Saint Pierre and Miquelon",
@@ -1401,7 +1401,7 @@
     -13.28
    ],
    "years": [
-    1914,
+    1900,
     2026
    ],
    "realm": "Wallis and Futuna",
@@ -1427,7 +1427,7 @@
     10.06
    ],
    "years": [
-    1914,
+    1900,
     1957
    ],
    "realm": "French Guinea",
@@ -1453,7 +1453,7 @@
     14.79
    ],
    "years": [
-    1914,
+    1900,
     1959
    ],
    "realm": "French Senegal",
@@ -1479,7 +1479,7 @@
     12.64
    ],
    "years": [
-    1914,
+    1900,
     1919
    ],
    "realm": "Upper Senegal and Niger",
@@ -1518,7 +1518,7 @@
     7.18
    ],
    "years": [
-    1914,
+    1900,
     1959
    ],
    "realm": "French Dahomey",
@@ -1544,11 +1544,24 @@
     13.51
    ],
    "years": [
-    1914,
+    1912,
     1959
    ],
    "realm": "Colony of Niger",
    "why": "French until 1960"
+  },
+  {
+   "place": "Niamey",
+   "lonLat": [
+    2.11,
+    13.51
+   ],
+   "years": [
+    1900,
+    1911
+   ],
+   "realm": "Upper Senegal and Niger",
+   "why": "Part of Upper Senegal and Niger until the Military Territory of Niger was split off on 1 January 1912"
   },
   {
    "place": "Niamey",
@@ -1596,7 +1609,7 @@
     6.82
    ],
    "years": [
-    1914,
+    1900,
     1959
    ],
    "realm": "French Ivory Coast",
@@ -1622,11 +1635,24 @@
     12.11
    ],
    "years": [
-    1914,
+    1906,
     1919
    ],
    "realm": "Ubangi-Shari",
    "why": "Part of Ubangi-Shari-Chad until Chad became a colony in March 1920"
+  },
+  {
+   "place": "N'Djamena",
+   "lonLat": [
+    15.05,
+    12.11
+   ],
+   "years": [
+    1900,
+    1905
+   ],
+   "realm": "French Chad",
+   "why": "The military territory of Chad, joined to Ubangi-Shari in 1906"
   },
   {
    "place": "N'Djamena",
@@ -1661,11 +1687,24 @@
     4.37
    ],
    "years": [
-    1914,
+    1903,
     1959
    ],
    "realm": "Ubangi-Shari",
    "why": "French until 1960"
+  },
+  {
+   "place": "Bangui",
+   "lonLat": [
+    18.56,
+    4.37
+   ],
+   "years": [
+    1900,
+    1902
+   ],
+   "realm": "French Congo",
+   "why": "Part of French Congo until Ubangi-Shari was set up at the end of 1903"
   },
   {
    "place": "Bangui",
@@ -1687,7 +1726,7 @@
     -4.26
    ],
    "years": [
-    1914,
+    1900,
     1959
    ],
    "realm": "French Congo",
@@ -1713,11 +1752,24 @@
     -0.7
    ],
    "years": [
-    1914,
+    1903,
     1959
    ],
    "realm": "French Gabon",
    "why": "French until 1960"
+  },
+  {
+   "place": "Lambaréné",
+   "lonLat": [
+    10.24,
+    -0.7
+   ],
+   "years": [
+    1900,
+    1902
+   ],
+   "realm": "French Congo",
+   "why": "Part of French Congo until Gabon was set up as a colony at the end of 1903"
   },
   {
    "place": "Lambaréné",
@@ -1739,7 +1791,7 @@
     20.52
    ],
    "years": [
-    1914,
+    1900,
     1959
    ],
    "realm": "Colonial Mauritania",
@@ -1765,7 +1817,7 @@
     6.9
    ],
    "years": [
-    1914,
+    1900,
     1919
    ],
    "realm": "Togoland",
@@ -1829,7 +1881,7 @@
     3.87
    ],
    "years": [
-    1914,
+    1900,
     1919
    ],
    "realm": "Kamerun",
@@ -1928,7 +1980,7 @@
     -18.91
    ],
    "years": [
-    1914,
+    1900,
     1959
    ],
    "realm": "French Madagascar",
@@ -1976,7 +2028,7 @@
     12.37
    ],
    "years": [
-    1914,
+    1900,
     1918
    ],
    "realm": "Upper Senegal and Niger",
@@ -2015,7 +2067,7 @@
     13.58
    ],
    "years": [
-    1914,
+    1900,
     1918
    ],
    "realm": "Upper Senegal and Niger",
@@ -2093,7 +2145,7 @@
     5.96
    ],
    "years": [
-    1914,
+    1900,
     1919
    ],
    "realm": "Kamerun",
@@ -2144,7 +2196,7 @@
     -49.35
    ],
    "years": [
-    1914,
+    1900,
     1954
    ],
    "realm": "French Madagascar",
@@ -2157,11 +2209,24 @@
     34.0
    ],
    "years": [
-    1914,
+    1912,
     1955
    ],
    "realm": "French Morocco",
    "why": "French protectorate until 2 March 1956"
+  },
+  {
+   "place": "Rabat",
+   "lonLat": [
+    -6.84,
+    34.0
+   ],
+   "years": [
+    1900,
+    1911
+   ],
+   "realm": "Morocco",
+   "why": "Independent Morocco until the Treaty of Fes, 30 March 1912"
   },
   {
    "place": "Rabat",
@@ -2183,11 +2248,24 @@
     31.63
    ],
    "years": [
-    1914,
+    1912,
     1955
    ],
    "realm": "French Morocco",
    "why": "French protectorate until 2 March 1956"
+  },
+  {
+   "place": "Marrakesh",
+   "lonLat": [
+    -7.99,
+    31.63
+   ],
+   "years": [
+    1900,
+    1911
+   ],
+   "realm": "Morocco",
+   "why": "Independent Morocco until the Treaty of Fes, 30 March 1912"
   },
   {
    "place": "Marrakesh",
@@ -2209,11 +2287,24 @@
     35.57
    ],
    "years": [
-    1914,
+    1912,
     1955
    ],
    "realm": "Spanish Morocco",
    "why": "Capital of the Spanish protectorate until April 1956"
+  },
+  {
+   "place": "Tétouan",
+   "lonLat": [
+    -5.37,
+    35.57
+   ],
+   "years": [
+    1900,
+    1911
+   ],
+   "realm": "Morocco",
+   "why": "Independent Morocco until 1912"
   },
   {
    "place": "Tétouan",
@@ -2235,11 +2326,24 @@
     35.17
    ],
    "years": [
-    1914,
+    1912,
     1955
    ],
    "realm": "Spanish Morocco",
    "why": "Spanish protectorate until April 1956"
+  },
+  {
+   "place": "Nador",
+   "lonLat": [
+    -2.93,
+    35.17
+   ],
+   "years": [
+    1900,
+    1911
+   ],
+   "realm": "Morocco",
+   "why": "Independent Morocco until 1912"
   },
   {
    "place": "Nador",
@@ -2283,11 +2387,24 @@
     35.76
    ],
    "years": [
-    1914,
+    1912,
     1924
    ],
    "realm": "French Morocco",
    "why": "Under the Sultan of Morocco until the international zone of June 1925"
+  },
+  {
+   "place": "Tangier",
+   "lonLat": [
+    -5.81,
+    35.76
+   ],
+   "years": [
+    1900,
+    1911
+   ],
+   "realm": "Morocco",
+   "why": "Independent Morocco until 1912"
   },
   {
    "place": "Tangier",
@@ -2309,11 +2426,37 @@
     27.94
    ],
    "years": [
-    1914,
+    1916,
     1957
    ],
    "realm": "Cape Juby",
    "why": "Spanish until 10 April 1958"
+  },
+  {
+   "place": "Tarfaya",
+   "lonLat": [
+    -12.92,
+    27.94
+   ],
+   "years": [
+    1912,
+    1915
+   ],
+   "realm": "French Morocco",
+   "why": "Spain only occupied Cape Juby on 29 June 1916"
+  },
+  {
+   "place": "Tarfaya",
+   "lonLat": [
+    -12.92,
+    27.94
+   ],
+   "years": [
+    1900,
+    1911
+   ],
+   "realm": "Morocco",
+   "why": "Independent Morocco until 1912"
   },
   {
    "place": "Tarfaya",
@@ -2348,11 +2491,24 @@
     29.36
    ],
    "years": [
-    1914,
+    1912,
     1933
    ],
    "realm": "French Morocco",
    "why": "Assigned to Spain in 1912 but only taken over in April 1934"
+  },
+  {
+   "place": "Sidi Ifni",
+   "lonLat": [
+    -10.15,
+    29.36
+   ],
+   "years": [
+    1900,
+    1911
+   ],
+   "realm": "Morocco",
+   "why": "Independent Morocco until 1912; Spain only took possession of Ifni in 1934"
   },
   {
    "place": "Sidi Ifni",
@@ -2374,7 +2530,7 @@
     36.8
    ],
    "years": [
-    1914,
+    1900,
     1955
    ],
    "realm": "French Tunisia",
@@ -2409,7 +2565,7 @@
     44.09
    ],
    "years": [
-    1914,
+    1900,
     1946
    ],
    "realm": "Italy",
@@ -2435,7 +2591,7 @@
     21.03
    ],
    "years": [
-    1914,
+    1900,
     1948
    ],
    "realm": "France",
@@ -2503,7 +2659,7 @@
     16.46
    ],
    "years": [
-    1914,
+    1900,
     1948
    ],
    "realm": "France",
@@ -2558,7 +2714,7 @@
     10.78
    ],
    "years": [
-    1914,
+    1900,
     1948
    ],
    "realm": "France",
@@ -2593,7 +2749,7 @@
     17.97
    ],
    "years": [
-    1914,
+    1900,
     1952
    ],
    "realm": "France",
@@ -2635,7 +2791,7 @@
     11.56
    ],
    "years": [
-    1914,
+    1900,
     1952
    ],
    "realm": "France",
@@ -2683,7 +2839,7 @@
     11.93
    ],
    "years": [
-    1914,
+    1900,
     1953
    ],
    "realm": "France",
@@ -2709,7 +2865,7 @@
     11.701
    ],
    "years": [
-    1914,
+    1900,
     1953
    ],
    "realm": "France",
@@ -2722,7 +2878,7 @@
     22.865
    ],
    "years": [
-    1914,
+    1900,
     1949
    ],
    "realm": "France",
@@ -2800,11 +2956,24 @@
     13.1
    ],
    "years": [
-    1914,
+    1907,
     1940
    ],
    "realm": "French Cambodia",
    "why": "French Cambodia's until the Treaty of Tokyo"
+  },
+  {
+   "place": "Battambang",
+   "lonLat": [
+    103.2,
+    13.1
+   ],
+   "years": [
+    1900,
+    1906
+   ],
+   "realm": "Thailand",
+   "why": "Siamese until the Franco-Siamese Treaty of 1907"
   },
   {
    "place": "Sainyabuli",
@@ -2839,7 +3008,7 @@
     15.15
    ],
    "years": [
-    1914,
+    1900,
     1946
    ],
    "realm": "French Laos",
@@ -2861,7 +3030,7 @@
     13.36
    ],
    "years": [
-    1914,
+    1907,
     1946
    ],
    "realm": "French Cambodia",
@@ -2875,6 +3044,19 @@
      "by": "Japan"
     }
    ]
+  },
+  {
+   "place": "Siem Reap",
+   "lonLat": [
+    103.86,
+    13.36
+   ],
+   "years": [
+    1900,
+    1906
+   ],
+   "realm": "Thailand",
+   "why": "Siamese until the Franco-Siamese Treaty of 1907"
   },
   {
    "place": "Sisophon",
@@ -2896,7 +3078,7 @@
     -12.78
    ],
    "years": [
-    1914,
+    1900,
     1945
    ],
    "realm": "French Madagascar",
@@ -2918,7 +3100,7 @@
     -11.7
    ],
    "years": [
-    1914,
+    1900,
     1945
    ],
    "realm": "French Madagascar",
@@ -2940,7 +3122,7 @@
     21.2
    ],
    "years": [
-    1914,
+    1900,
     1944
    ],
    "realm": "Guangzhouwan",
@@ -2997,7 +3179,7 @@
     33.51
    ],
    "years": [
-    1914,
+    1900,
     1917
    ],
    "realm": "Ottoman Empire",
@@ -3084,7 +3266,7 @@
     33.89
    ],
    "years": [
-    1914,
+    1900,
     1917
    ],
    "realm": "Ottoman Empire",
@@ -3154,7 +3336,7 @@
     46.13
    ],
    "years": [
-    1914,
+    1900,
     2026
    ],
    "realm": "France",
@@ -3176,7 +3358,7 @@
     44.84
    ],
    "years": [
-    1914,
+    1900,
     2026
    ],
    "realm": "France",
@@ -3198,7 +3380,7 @@
     43.7
    ],
    "years": [
-    1914,
+    1900,
     2026
    ],
    "realm": "France",
@@ -3227,7 +3409,7 @@
     47.12
    ],
    "years": [
-    1914,
+    1900,
     2026
    ],
    "realm": "France",
@@ -3249,7 +3431,7 @@
     46.57
    ],
    "years": [
-    1914,
+    1900,
     2026
    ],
    "realm": "France",
@@ -3271,7 +3453,7 @@
     36.2
    ],
    "years": [
-    1914,
+    1900,
     1917
    ],
    "realm": "Ottoman Empire",
@@ -3341,7 +3523,7 @@
     35.52
    ],
    "years": [
-    1914,
+    1900,
     1917
    ],
    "realm": "Ottoman Empire",
@@ -3442,7 +3624,7 @@
     32.71
    ],
    "years": [
-    1914,
+    1900,
     1917
    ],
    "realm": "Ottoman Empire",
@@ -3481,7 +3663,7 @@
     36.2
    ],
    "years": [
-    1914,
+    1900,
     1917
    ],
    "realm": "Ottoman Empire",
@@ -3608,7 +3790,7 @@
     49.23
    ],
    "years": [
-    1914,
+    1900,
     1919
    ],
    "realm": "Germany",
@@ -3665,11 +3847,24 @@
     21.36
    ],
    "years": [
-    1914,
+    1912,
     1929
    ],
    "realm": "Colony of Niger",
    "why": "Tibesti was part of Niger until 1930"
+  },
+  {
+   "place": "Bardaï",
+   "lonLat": [
+    16.98,
+    21.36
+   ],
+   "years": [
+    1900,
+    1911
+   ],
+   "realm": "Upper Senegal and Niger",
+   "why": "Tibesti went with the military territory of Niger, part of Upper Senegal and Niger until 1912"
   },
   {
    "place": "Bardaï",
@@ -3704,11 +3899,24 @@
     -1.63
    ],
    "years": [
-    1914,
+    1903,
     1924
    ],
    "realm": "French Gabon",
    "why": "Part of Gabon until 1925"
+  },
+  {
+   "place": "Franceville",
+   "lonLat": [
+    13.58,
+    -1.63
+   ],
+   "years": [
+    1900,
+    1902
+   ],
+   "realm": "French Congo",
+   "why": "Part of French Congo until Gabon was set up as a colony at the end of 1903"
   },
   {
    "place": "Lille",
@@ -3717,7 +3925,7 @@
     50.63
    ],
    "years": [
-    1914,
+    1900,
     1920
    ],
    "realm": "France",
@@ -3739,7 +3947,7 @@
     49.77
    ],
    "years": [
-    1914,
+    1900,
     1920
    ],
    "realm": "France",
@@ -3761,7 +3969,7 @@
     49.58
    ],
    "years": [
-    1914,
+    1900,
     1920
    ],
    "realm": "France",
@@ -3783,7 +3991,7 @@
     50.29
    ],
    "years": [
-    1914,
+    1900,
     1920
    ],
    "realm": "France",
@@ -3796,7 +4004,7 @@
     49.16
    ],
    "years": [
-    1914,
+    1900,
     1920
    ],
    "realm": "France",
@@ -3809,7 +4017,7 @@
     47.81
    ],
    "years": [
-    1914,
+    1900,
     1919
    ],
    "realm": "Alsace–Lorraine",
@@ -3831,7 +4039,55 @@
     4.26
    ],
    "years": [
-    1914,
+    1911,
+    1919
+   ],
+   "realm": "Kamerun",
+   "why": "In Neukamerun, German from 1911 until the Treaty of Versailles, retaken by France in 1914",
+   "heldBy": [
+    {
+     "years": [
+      1914,
+      1919
+     ],
+     "by": "France"
+    }
+   ]
+  },
+  {
+   "place": "Berbérati",
+   "lonLat": [
+    15.79,
+    4.26
+   ],
+   "years": [
+    1903,
+    1910
+   ],
+   "realm": "Ubangi-Shari",
+   "why": "French until France ceded Neukamerun to Germany in November 1911"
+  },
+  {
+   "place": "Berbérati",
+   "lonLat": [
+    15.79,
+    4.26
+   ],
+   "years": [
+    1900,
+    1902
+   ],
+   "realm": "French Congo",
+   "why": "Part of French Congo until 1903"
+  },
+  {
+   "place": "Moundou",
+   "lonLat": [
+    16.08,
+    8.57
+   ],
+   "years": [
+    1911,
     1919
    ],
    "realm": "Kamerun",
@@ -3853,20 +4109,150 @@
     8.57
    ],
    "years": [
-    1914,
-    1919
+    1906,
+    1910
    ],
-   "realm": "Kamerun",
-   "why": "In Neukamerun, German from 1911 until the Treaty of Versailles, retaken by France in 1914",
+   "realm": "Ubangi-Shari",
+   "why": "French until France ceded Neukamerun to Germany in November 1911"
+  },
+  {
+   "place": "Moundou",
+   "lonLat": [
+    16.08,
+    8.57
+   ],
+   "years": [
+    1900,
+    1905
+   ],
+   "realm": "French Chad",
+   "why": "The military territory of Chad until 1906"
+  },
+  {
+   "place": "Casablanca",
+   "lonLat": [
+    -7.59,
+    33.57
+   ],
+   "years": [
+    1900,
+    1911
+   ],
+   "realm": "Morocco",
+   "why": "Independent Morocco until 1912, occupied by France from August 1907",
    "heldBy": [
     {
      "years": [
-      1914,
-      1919
+      1907,
+      1911
      ],
      "by": "France"
     }
    ]
+  },
+  {
+   "place": "Bongor",
+   "lonLat": [
+    15.37,
+    10.28
+   ],
+   "years": [
+    1900,
+    1910
+   ],
+   "realm": "Kamerun",
+   "why": "In the Bec de canard, German until the treaty of 4 November 1911"
+  },
+  {
+   "place": "Bongor",
+   "lonLat": [
+    15.37,
+    10.28
+   ],
+   "years": [
+    1911,
+    1913
+   ],
+   "realm": "Ubangi-Shari",
+   "why": "French from the treaty of 4 November 1911"
+  },
+  {
+   "place": "Sainyabuli",
+   "lonLat": [
+    101.71,
+    19.25
+   ],
+   "years": [
+    1900,
+    1903
+   ],
+   "realm": "Thailand",
+   "why": "Siamese until the Franco-Siamese Treaty of 1904"
+  },
+  {
+   "place": "Sainyabuli",
+   "lonLat": [
+    101.71,
+    19.25
+   ],
+   "years": [
+    1904,
+    1913
+   ],
+   "realm": "French Laos",
+   "why": "French from 1904"
+  },
+  {
+   "place": "Koh Kong",
+   "lonLat": [
+    103.05,
+    11.6
+   ],
+   "years": [
+    1900,
+    1903
+   ],
+   "realm": "Thailand",
+   "why": "Siamese until the Franco-Siamese Treaty of 1904"
+  },
+  {
+   "place": "Koh Kong",
+   "lonLat": [
+    103.05,
+    11.6
+   ],
+   "years": [
+    1904,
+    1913
+   ],
+   "realm": "French Cambodia",
+   "why": "French from 1904; it stayed with Cambodia when Trat went back to Siam in 1907"
+  },
+  {
+   "place": "Stung Treng",
+   "lonLat": [
+    105.97,
+    13.53
+   ],
+   "years": [
+    1900,
+    1903
+   ],
+   "realm": "French Laos",
+   "why": "Part of Laos until it passed to Cambodia in 1904"
+  },
+  {
+   "place": "Stung Treng",
+   "lonLat": [
+    105.97,
+    13.53
+   ],
+   "years": [
+    1904,
+    1913
+   ],
+   "realm": "French Cambodia",
+   "why": "Part of Cambodia from 1904"
   }
  ]
 }
