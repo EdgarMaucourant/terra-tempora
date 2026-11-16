@@ -1,5 +1,6 @@
 import {
   ArcType,
+  Cartesian2,
   Cartesian3,
   Color,
   GeometryInstance,
@@ -17,6 +18,7 @@ import {
   PolylineMaterialAppearance,
   Primitive,
   Scene,
+  SceneTransforms,
   VerticalOrigin,
 } from "cesium";
 import { MUTED } from "./colors";
@@ -190,6 +192,8 @@ interface Drawn {
   pieces: Piece[];
   highlighted: boolean;
   label?: Label;
+  /** Whether the label is due on the globe; it still gives way to a name it would cover. */
+  wanted?: boolean;
 }
 
 const isReady = (d: Drawn) => d.pieces.every((piece) => piece.ready);
@@ -228,6 +232,7 @@ export class PolityLayer {
 
   constructor(private scene: Scene) {
     this.labels = scene.primitives.add(new LabelCollection({ scene }));
+    scene.preRender.addEventListener(() => this.declutter());
   }
 
   /**
@@ -301,6 +306,13 @@ export class PolityLayer {
     return undefined;
   }
 
+  /** Whether a group of territories (French West Africa) is outlined that year. */
+  groupShown(name: string, year: number): boolean {
+    const y = Math.round(year);
+    for (const p of this.polities.values()) if (p.kind === "group" && p.name === name && y >= p.from && y <= p.to) return true;
+    return false;
+  }
+
   /** The realms drawn at `year`, coloured or greyed, one shape per realm name. */
   at(year: number): Polity[] {
     const y = Math.round(year);
@@ -355,6 +367,59 @@ export class PolityLayer {
   }
 
   /** Colours the given realms and greys out the rest. */
+  private labelsDirty = true;
+  private lastView = "";
+  private lastDeclutter = 0;
+
+  /**
+   * Shows the names that are due without letting one cover another: those of
+   * highlighted realms first, then groups, then by size. Run before each
+   * frame, it only works when the names or the view have changed.
+   */
+  private declutter() {
+    const camera = this.scene.camera;
+    const view = `${camera.positionWC.x.toFixed(0)},${camera.positionWC.y.toFixed(0)},${camera.positionWC.z.toFixed(0)},${camera.heading.toFixed(3)},${this.scene.canvas.clientWidth}`;
+    if (!this.labelsDirty && view === this.lastView) return;
+    // While the globe turns, ten times a second is enough.
+    const now = performance.now();
+    if (!this.labelsDirty && now - this.lastDeclutter < 100) {
+      this.scene.requestRender();
+      return;
+    }
+    this.labelsDirty = false;
+    this.lastView = view;
+    this.lastDeclutter = now;
+    const rank = (p: Polity, d: Drawn) => (d.highlighted && this.labelAll ? 2 : p.kind === "group" ? 1 : 0);
+    const due = [...this.drawn].filter(([, d]) => d.label && d.wanted).sort((a, b) => rank(b[0], b[1]) - rank(a[0], a[1]) || b[0].area - a[0].area);
+    const placed: [number, number, number, number][] = [];
+    const at = new Cartesian2();
+    const range = Cartesian3.magnitude(camera.positionWC);
+    for (const [p, d] of due) {
+      const label = d.label!;
+      const position = label.position;
+      // Past the horizon, the globe hides the name anyway.
+      const facing = Cartesian3.dot(position, camera.positionWC) > Cartesian3.magnitudeSquared(position) * 0.98;
+      const point = facing ? SceneTransforms.worldToWindowCoordinates(this.scene, position, at) : undefined;
+      if (!point) {
+        label.show = false;
+        continue;
+      }
+      const size = (rank(p, d) === 2 ? 15 : 12) * (range < 1.2e7 ? 1.15 : 1);
+      const w = (label.text.length * size * 0.56) / 2 + 3;
+      const h = size * 0.8;
+      // A group's name moves above or below the names already there.
+      const shifts = p.kind === "group" ? [0, -22, 22, -44, 44] : [0];
+      const dy = shifts.find((dy) => {
+        const box = [point.x - w, point.y + dy - h, point.x + w, point.y + dy + h];
+        return !placed.some((b) => box[0] < b[2] && box[2] > b[0] && box[1] < b[3] && box[3] > b[1]);
+      });
+      label.show = dy !== undefined;
+      if (dy === undefined) continue;
+      placed.push([point.x - w, point.y + dy - h, point.x + w, point.y + dy + h]);
+      if (label.pixelOffset.y !== dy) label.pixelOffset = new Cartesian2(0, dy);
+    }
+  }
+
   /** The groups whose territories are named, after a click inside them. */
   setOpenGroups(groups: Iterable<string>) {
     this.openGroups = new Set(groups);
@@ -442,9 +507,12 @@ export class PolityLayer {
       // Labels switch at the midpoint of a fade. Changing a label's colour
       // redraws its glyphs, which is too costly to do every frame.
       if (d.label) {
-        d.label.show =
+        const wanted =
           opacity > 0.5 &&
           (p.kind === "group" ? !this.openGroups.has(p.name) : !foldedInGroup(p, groupNames, this.openGroups, this.labelAll && this.highlight.has(p.name) && !(p.partOf && this.highlight.has(p.partOf))));
+        if (wanted !== d.wanted) this.labelsDirty = true;
+        d.wanted = wanted;
+        if (!wanted) d.label.show = false;
       }
     }
 
