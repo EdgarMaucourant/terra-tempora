@@ -603,6 +603,15 @@ function placeOf(name: string): Country | undefined {
   return civ ? countryOf(civ) : undefined;
 }
 
+/** Whether the place of today this realm held (see placeOf) has its land drawn in this year. */
+function placeDrawn(name: string, at: number): boolean {
+  const places = data?.index.places;
+  if (!places) return true;
+  const found = places[name] ? name : Object.keys(places).find((k) => places[k].some((h) => h.name === name));
+  const y = Math.round(at);
+  return !found || places[found].some((h) => h.from <= y && y <= h.to);
+}
+
 /** The history of the place open, when its land is rebuilt: Portuguese Timor, then Timor-Leste. */
 function placeHistory(): { name: string; from: number; to: number }[] | undefined {
   const places = data?.index.places;
@@ -695,6 +704,14 @@ function clickRealm(p: Polity | null | undefined) {
   // Portuguese Timor in 1995 and Timor-Leste in 2017 both open Timor-Leste.
   // Clicking it again in that view shows the details of what is drawn.
   const place = placeOf(p.name);
+  // A realm whose place of today is not rebuilt for the year (Siam in 1904,
+  // whose land of today, Thailand, is not reviewed yet) has no history to
+  // open: its own details tell it, with its period's name and article.
+  if (place && !placeDrawn(p.name, year)) {
+    closeEvent();
+    showInfo(p);
+    return;
+  }
   placeSpot = place ? (p.label ?? undefined) : undefined;
   if (place && (home || place !== country)) {
     info.hidden = true;
