@@ -1336,7 +1336,7 @@
     22.79
    ],
    "years": [
-    1900,
+    1902,
     1961
    ],
    "realm": "French Algeria",
@@ -1791,7 +1791,7 @@
     20.52
    ],
    "years": [
-    1900,
+    1909,
     1959
    ],
    "realm": "Colonial Mauritania",
@@ -3847,32 +3847,6 @@
     21.36
    ],
    "years": [
-    1912,
-    1929
-   ],
-   "realm": "Colony of Niger",
-   "why": "Tibesti was part of Niger until 1930"
-  },
-  {
-   "place": "Bardaï",
-   "lonLat": [
-    16.98,
-    21.36
-   ],
-   "years": [
-    1900,
-    1911
-   ],
-   "realm": "Upper Senegal and Niger",
-   "why": "Tibesti went with the military territory of Niger, part of Upper Senegal and Niger until 1912"
-  },
-  {
-   "place": "Bardaï",
-   "lonLat": [
-    16.98,
-    21.36
-   ],
-   "years": [
     1930,
     1959
    ],
@@ -4301,6 +4275,357 @@
      "by": "France"
     }
    ]
+  },
+  {
+   "place": "Tamanrasset",
+   "lonLat": [
+    5.52,
+    22.79
+   ],
+   "years": [
+    1900,
+    1901
+   ],
+   "realm": null,
+   "why": "The Hoggar was out of French hands until the battle of Tit, 7 May 1902"
+  },
+  {
+   "place": "Atar",
+   "lonLat": [
+    -13.05,
+    20.52
+   ],
+   "years": [
+    1900,
+    1908
+   ],
+   "realm": null,
+   "why": "Not French before Gouraud's column took Atar on 9 January 1909"
+  },
+  {
+   "place": "Bardaï",
+   "lonLat": [
+    16.98,
+    21.36
+   ],
+   "years": [
+    1900,
+    1913
+   ],
+   "realm": null,
+   "why": "The Tibesti was not occupied before 1914"
+  },
+  {
+   "place": "Bardaï",
+   "lonLat": [
+    16.98,
+    21.36
+   ],
+   "years": [
+    1914,
+    1915
+   ],
+   "realm": "Colony of Niger",
+   "why": "Occupied from the Kaouar in 1914, under the military territory of Niger"
+  },
+  {
+   "place": "Bardaï",
+   "lonLat": [
+    16.98,
+    21.36
+   ],
+   "years": [
+    1916,
+    1928
+   ],
+   "realm": null,
+   "why": "Left by the French in 1916, occupied again in 1929"
+  },
+  {
+   "place": "Bardaï",
+   "lonLat": [
+    16.98,
+    21.36
+   ],
+   "years": [
+    1929,
+    1929
+   ],
+   "realm": "Colony of Niger",
+   "why": "Occupied again in 1929, part of Niger until 1930"
+  },
+  {
+   "place": "Tindouf",
+   "lonLat": [
+    -8.13,
+    27.67
+   ],
+   "years": [
+    1900,
+    1933
+   ],
+   "realm": null,
+   "why": "Occupied by France on 31 May 1934"
+  },
+  {
+   "place": "Tindouf",
+   "lonLat": [
+    -8.13,
+    27.67
+   ],
+   "years": [
+    1934,
+    1961
+   ],
+   "realm": "French Algeria",
+   "why": "Occupied on 31 May 1934, French until 1962"
+  },
+  {
+   "place": "Zouérat",
+   "lonLat": [
+    -12.48,
+    22.73
+   ],
+   "years": [
+    1900,
+    1933
+   ],
+   "realm": null,
+   "why": "The far north of Mauritania was occupied in 1934"
+  },
+  {
+   "place": "Zouérat",
+   "lonLat": [
+    -12.48,
+    22.73
+   ],
+   "years": [
+    1934,
+    1959
+   ],
+   "realm": "Colonial Mauritania",
+   "why": "Occupied in 1934, French until 1960"
+  },
+  {
+   "place": "In Salah",
+   "lonLat": [
+    2.47,
+    27.2
+   ],
+   "years": [
+    1900,
+    1961
+   ],
+   "realm": "French Algeria",
+   "why": "Occupied in January 1900, French until 1962"
+  },
+  {
+   "place": "Djanet",
+   "lonLat": [
+    9.48,
+    24.55
+   ],
+   "years": [
+    1900,
+    1908
+   ],
+   "realm": null,
+   "why": "The Tassili n'Ajjer was not occupied before Fort Polignac was built in 1909"
+  },
+  {
+   "place": "Djanet",
+   "lonLat": [
+    9.48,
+    24.55
+   ],
+   "years": [
+    1909,
+    1961
+   ],
+   "realm": "French Algeria",
+   "why": "French until 1962"
+  },
+  {
+   "place": "Abéché",
+   "lonLat": [
+    20.83,
+    13.83
+   ],
+   "years": [
+    1900,
+    1908
+   ],
+   "realm": null,
+   "why": "Capital of independent Wadai until the French took it on 2 June 1909"
+  },
+  {
+   "place": "Abéché",
+   "lonLat": [
+    20.83,
+    13.83
+   ],
+   "years": [
+    1909,
+    1919
+   ],
+   "realm": "Ubangi-Shari",
+   "why": "Taken on 2 June 1909; Chad was part of Ubangi-Shari-Chad until 1920"
+  },
+  {
+   "place": "Faya-Largeau",
+   "lonLat": [
+    19.11,
+    17.93
+   ],
+   "years": [
+    1900,
+    1912
+   ],
+   "realm": null,
+   "why": "Held by the Senussi until Largeau took Aïn Galaka on 27 November 1913"
+  },
+  {
+   "place": "Faya-Largeau",
+   "lonLat": [
+    19.11,
+    17.93
+   ],
+   "years": [
+    1913,
+    1919
+   ],
+   "realm": "Ubangi-Shari",
+   "why": "Taken in 1913; Chad was part of Ubangi-Shari-Chad until 1920"
+  },
+  {
+   "place": "Mao",
+   "lonLat": [
+    15.31,
+    14.12
+   ],
+   "years": [
+    1900,
+    1901
+   ],
+   "realm": null,
+   "why": "Kanem was not occupied before Bir Alali fell on 20 January 1902"
+  },
+  {
+   "place": "Mao",
+   "lonLat": [
+    15.31,
+    14.12
+   ],
+   "years": [
+    1902,
+    1905
+   ],
+   "realm": "French Chad",
+   "why": "Occupied in 1902"
+  },
+  {
+   "place": "Kidal",
+   "lonLat": [
+    1.41,
+    18.44
+   ],
+   "years": [
+    1900,
+    1907
+   ],
+   "realm": null,
+   "why": "No French post before 1908"
+  },
+  {
+   "place": "Kidal",
+   "lonLat": [
+    1.41,
+    18.44
+   ],
+   "years": [
+    1908,
+    1919
+   ],
+   "realm": "Upper Senegal and Niger",
+   "why": "A French post from 1908"
+  },
+  {
+   "place": "Agadez",
+   "lonLat": [
+    7.99,
+    16.97
+   ],
+   "years": [
+    1900,
+    1903
+   ],
+   "realm": null,
+   "why": "Occupied by France in 1904"
+  },
+  {
+   "place": "Agadez",
+   "lonLat": [
+    7.99,
+    16.97
+   ],
+   "years": [
+    1904,
+    1911
+   ],
+   "realm": "Upper Senegal and Niger",
+   "why": "Occupied in 1904, under the military territory of Niger"
+  },
+  {
+   "place": "Tidjikja",
+   "lonLat": [
+    -11.43,
+    18.55
+   ],
+   "years": [
+    1900,
+    1904
+   ],
+   "realm": null,
+   "why": "The Tagant was occupied in 1905"
+  },
+  {
+   "place": "Tidjikja",
+   "lonLat": [
+    -11.43,
+    18.55
+   ],
+   "years": [
+    1905,
+    1959
+   ],
+   "realm": "Colonial Mauritania",
+   "why": "French from 1905 until 1960"
+  },
+  {
+   "place": "Boutilimit",
+   "lonLat": [
+    -14.69,
+    17.55
+   ],
+   "years": [
+    1900,
+    1903
+   ],
+   "realm": null,
+   "why": "The Trarza came under French protection between 1902 and 1904"
+  },
+  {
+   "place": "Boutilimit",
+   "lonLat": [
+    -14.69,
+    17.55
+   ],
+   "years": [
+    1904,
+    1959
+   ],
+   "realm": "Colonial Mauritania",
+   "why": "French until 1960"
   }
  ]
 }
