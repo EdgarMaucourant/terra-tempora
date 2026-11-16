@@ -308,3 +308,14 @@ export class BorderData {
     return pending;
   }
 }
+
+/**
+ * Whether a territory's name gives way to its group's (French Senegal to
+ * French West Africa): the group is drawn and named, no click has opened it,
+ * and the territory is not the realm being looked at.
+ */
+export function foldedInGroup(p: Polity, shown: ReadonlySet<string>, open: ReadonlySet<string>, featured: boolean): boolean {
+  if (featured || !p.groups) return false;
+  const groups = p.groups.filter((g) => shown.has(g));
+  return groups.length > 0 && !groups.some((g) => open.has(g));
+}

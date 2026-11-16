@@ -693,6 +693,11 @@ function showPlaceNow() {
 // Tap or click a highlighted realm for its details, a greyed one to switch to it.
 function clickRealm(p: Polity | null | undefined) {
   hideTooltip();
+  // A click inside a group (French West Africa) names its territories; a
+  // click anywhere else brings the group's own name back.
+  const groups = (p?.kind === "hatch" && p.label ? layer.landAt(p.label[0], p.label[1], year) : p)?.groups ?? [];
+  layer.setOpenGroups(groups);
+  map.setOpenGroups(groups);
   if (!p || p.kind === "unreviewed") {
     info.hidden = true;
     closeEvent();
@@ -2166,7 +2171,7 @@ function showHome() {
   hideTooltip();
   landingEl.hidden = true;
   home = true;
-  layer.labelAll = false;
+  layer.labelAll = map.labelAll = false;
   document.body.classList.add("home");
   active = undefined;
   country = null;
@@ -2220,7 +2225,7 @@ function showHome() {
 function leaveHome() {
   if (!home) return;
   home = false;
-  layer.labelAll = true;
+  layer.labelAll = map.labelAll = true;
   document.body.classList.remove("home");
 }
 
