@@ -376,7 +376,8 @@
   "fr": "Cap Juby",
   "es": "Cabo Juby",
   "group": "Spanish West Africa",
-  "groupUntil": "1958-01-10"
+  "groupUntil": "1958-01-10",
+  "groupFrom": "1946-07-20"
  },
  "Cape Verde": {
   "wikipedia": "Cape Verde",
@@ -783,7 +784,24 @@
   "withOwner": false,
   "group": "French Equatorial Africa",
   "groupUntil": "1958-09-28",
-  "groupFrom": "1910-01-15"
+  "groupFrom": "1910-01-15",
+  "periods": [
+   {
+    "from": "1882-11-30",
+    "name": "French Congo",
+    "wikipedia": "French Congo",
+    "note": "The whole colony, with Gabon and Ubangi-Shari, until the end of 1903"
+   },
+   {
+    "from": "1903-12-29",
+    "name": "Middle Congo",
+    "wikipedia": "French Congo",
+    "fr": "Moyen-Congo",
+    "es": "Congo Medio",
+    "withOwner": true,
+    "note": "The colony of Middle Congo, from the decree of 29 December 1903"
+   }
+  ]
  },
  "French Dahomey": {
   "wikipedia": "French Dahomey",
@@ -1184,7 +1202,8 @@
   "fr": "Ifni",
   "es": "Ifni",
   "group": "Spanish West Africa",
-  "groupUntil": "1958-01-10"
+  "groupUntil": "1958-01-10",
+  "groupFrom": "1946-07-20"
  },
  "India": {
   "wikipedia": "India",
@@ -2527,6 +2546,14 @@
   "group": "French West Africa",
   "groupUntil": "1920-12-04",
   "periods": [
+   {
+    "from": "1899-10-17",
+    "name": "Upper Senegal and Middle Niger",
+    "wikipedia": "French Sudan",
+    "fr": "Haut-Sénégal et Moyen-Niger",
+    "es": "Alto Senegal y Níger Medio",
+    "note": "What was left of French Sudan after it was broken up in 1899, attached to Senegal"
+   },
    {
     "from": "1902-10-01",
     "name": "Senegambia and Niger",

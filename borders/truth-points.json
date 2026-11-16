@@ -2443,7 +2443,7 @@
     1915
    ],
    "realm": "French Morocco",
-   "why": "Spain only occupied Cape Juby on 29 June 1916"
+   "why": "Spain only occupied Cape Juby on 29 July 1916"
   },
   {
    "place": "Tarfaya",
@@ -4253,6 +4253,54 @@
    ],
    "realm": "French Cambodia",
    "why": "Part of Cambodia from 1904"
+  },
+  {
+   "place": "Banlung",
+   "lonLat": [
+    106.99,
+    13.74
+   ],
+   "years": [
+    1900,
+    1903
+   ],
+   "realm": "French Laos",
+   "why": "Ratanakiri was part of Stung Treng, in Laos until 1904"
+  },
+  {
+   "place": "Banlung",
+   "lonLat": [
+    106.99,
+    13.74
+   ],
+   "years": [
+    1904,
+    1913
+   ],
+   "realm": "French Cambodia",
+   "why": "Part of Cambodia from 1904"
+  },
+  {
+   "place": "Oujda",
+   "lonLat": [
+    -1.91,
+    34.68
+   ],
+   "years": [
+    1900,
+    1911
+   ],
+   "realm": "Morocco",
+   "why": "Moroccan until 1912, occupied by France from 29 March 1907",
+   "heldBy": [
+    {
+     "years": [
+      1907,
+      1911
+     ],
+     "by": "France"
+    }
+   ]
   }
  ]
 }

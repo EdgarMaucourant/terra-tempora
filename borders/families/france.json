@@ -4267,7 +4267,7 @@
    ]
   },
   {
-   "date": "1916-06-29",
+   "date": "1916-07-29",
    "what": "Spain occupies Cape Juby, assigned to it in 1912",
    "source": {
     "title": "Cape Juby (Wikipedia)",
@@ -4480,7 +4480,6 @@
       "MAR-1451",
       "MAR-1452",
       "MAR-1453",
-      "MAR-1454",
       "MAR-1455",
       "MAR-1456",
       "MAR-1457",
@@ -4516,6 +4515,25 @@
       "source": {
        "title": "Bombardment of Casablanca (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Bombardment_of_Casablanca"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "MAR-1454"
+     ],
+     "owner": "Morocco",
+     "source": {
+      "title": "French conquest of Morocco (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_conquest_of_Morocco"
+     },
+     "hatch": {
+      "by": "France",
+      "since": "1907-03-29",
+      "note": "Oujda occupied by France in March 1907, then the rest of eastern Morocco from Algeria",
+      "source": {
+       "title": "French conquest of Morocco (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/French_conquest_of_Morocco"
       }
      }
     }
@@ -4646,6 +4664,27 @@
    ]
   },
   {
+   "date": "1907-03-29",
+   "what": "French troops from Algeria occupy Oujda, then spread over eastern Morocco",
+   "source": {
+    "title": "French conquest of Morocco (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_conquest_of_Morocco"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "MAR-1454"
+     ],
+     "owner": "Morocco",
+     "source": {
+      "title": "Morocco (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Morocco"
+     }
+    }
+   ]
+  },
+  {
    "date": "1907-03-23",
    "what": "By the Franco-Siamese Treaty of 1907, Siam cedes Battambang, Siem Reap and Sisophon to Cambodia",
    "source": {
@@ -4718,7 +4757,7 @@
   },
   {
    "date": "1904-02-13",
-   "what": "By the Franco-Siamese Treaty of 1904, Siam cedes Sainyabuli and the land west of the Mekong at Champasak to Laos, and Mlu Prey and Koh Kong to Cambodia; Stung Treng passes from Laos to Cambodia",
+   "what": "By the Franco-Siamese Treaty of 1904, Siam cedes Sainyabuli and the land west of the Mekong at Champasak to Laos, and Mlu Prey and Koh Kong to Cambodia; Stung Treng, with today's Ratanakiri, passes from Laos to Cambodia",
    "source": {
     "title": "Franco-Siamese Treaty of 1904 (Wikipedia)",
     "url": "https://en.wikipedia.org/wiki/Franco-Siamese_Treaty_of_1904"
@@ -4741,7 +4780,8 @@
     },
     {
      "pieces": [
-      "KHM-1792"
+      "KHM-1792",
+      "KHM-1795"
      ],
      "owner": "France",
      "territory": "French Laos",
