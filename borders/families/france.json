@@ -3347,6 +3347,24 @@
    ]
   },
   {
+   "date": "1934-05-31",
+   "what": "French troops occupy Tindouf; with the link-up of the columns from Morocco, Algeria and Mauritania, the far west of the Sahara, the last land out of French hands, is occupied",
+   "source": {
+    "title": "Tindouf (French Wikipedia)",
+    "url": "https://fr.wikipedia.org/wiki/Tindouf"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "DZA-2150",
+      "MRT-2783"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
    "date": "1934-04-06",
    "what": "Spain takes possession of Ifni, assigned to it in 1912",
    "source": {
@@ -3410,6 +3428,23 @@
       "title": "Colony of Niger (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Colony_of_Niger"
      }
+    }
+   ]
+  },
+  {
+   "date": "1929-01-01",
+   "what": "French troops come back to the Tibesti and occupy it for good (1929)",
+   "source": {
+    "title": "Tibesti Mountains (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tibesti_Mountains"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TCD-5578"
+     ],
+     "owner": null
     }
    ]
   },
@@ -4267,6 +4302,28 @@
    ]
   },
   {
+   "date": "1916-08-01",
+   "what": "Under attack from the Toubou and the Senussi, French troops leave the Tibesti (1916)",
+   "source": {
+    "title": "Tibesti Mountains (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tibesti_Mountains"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TCD-5578"
+     ],
+     "owner": "France",
+     "territory": "Colony of Niger",
+     "source": {
+      "title": "Colony of Niger (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Colony_of_Niger"
+     }
+    }
+   ]
+  },
+  {
    "date": "1916-07-29",
    "what": "Spain occupies Cape Juby, assigned to it in 1912",
    "source": {
@@ -4439,6 +4496,41 @@
    ]
   },
   {
+   "date": "1914-03-01",
+   "what": "A French column from the Kaouar, in Niger, enters the Tibesti (early 1914)",
+   "source": {
+    "title": "Tibesti Mountains (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tibesti_Mountains"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TCD-5578"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1913-11-27",
+   "what": "Colonel Largeau takes Aïn Galaka from the Senussi, then Faya and Gouro: Borkou and Ennedi come under French rule",
+   "source": {
+    "title": "Victor Emmanuel Largeau (French Wikipedia)",
+    "url": "https://fr.wikipedia.org/wiki/Victor_Emmanuel_Largeau"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "TCD-5577",
+      "TCD-5579"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
    "date": "1912-11-27",
    "what": "By the Treaty of Madrid, France gives Spain a zone of its protectorate in the north of Morocco",
    "source": {
@@ -4557,8 +4649,7 @@
       "NER-92",
       "NER-93",
       "NER-94",
-      "NER-95",
-      "TCD-5578"
+      "NER-95"
      ],
      "owner": "France",
      "territory": "Upper Senegal and Niger",
@@ -4640,6 +4731,79 @@
     }
    ],
    "map": "https://commons.wikimedia.org/wiki/File:Cameroon_border_changes.svg"
+  },
+  {
+   "date": "1909-09-30",
+   "what": "Fort Polignac (Illizi) is built in the Tassili n'Ajjer (September 1909); Djanet, further south, is taken on 27 November 1911",
+   "source": {
+    "title": "Illizi (French Wikipedia)",
+    "url": "https://fr.wikipedia.org/wiki/Illizi"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "DZA-2188"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1909-06-02",
+   "what": "French troops take Abéché, the capital of Wadai; the sultan fights on until October 1911",
+   "source": {
+    "title": "Wadai War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Wadai_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "TCD-1475",
+      "TCD-1473",
+      "TCD-5582",
+      "TCD-1489"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1909-01-09",
+   "what": "Colonel Gouraud's column takes Atar and conquers the Adrar of Mauritania",
+   "source": {
+    "title": "Colonial Mauritania (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Colonial_Mauritania"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "MRT-2795",
+      "MRT-2786",
+      "MRT-2785"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1908-01-01",
+   "what": "A first French post is set up at Kidal, in the Adrar des Ifoghas (1908)",
+   "source": {
+    "title": "Adrar des Ifoghas (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Adrar_des_Ifoghas"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "MLI-2689"
+     ],
+     "owner": null
+    }
+   ]
   },
   {
    "date": "1907-08-07",
@@ -4725,20 +4889,14 @@
       "TCD-1465",
       "TCD-1466",
       "TCD-1472",
-      "TCD-1473",
       "TCD-1474",
-      "TCD-1475",
       "TCD-1485",
       "TCD-1486",
       "TCD-1487",
       "TCD-1488",
-      "TCD-1489",
       "TCD-4857",
-      "TCD-5577",
-      "TCD-5579",
       "TCD-5580",
       "TCD-5581",
-      "TCD-5582",
       "TCD-5583",
       "TCD-4858",
       "TCD-1484",
@@ -4752,6 +4910,60 @@
       "title": "French Chad (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/French_Chad"
      }
+    }
+   ]
+  },
+  {
+   "date": "1905-05-12",
+   "what": "The French occupy Tidjikja and the Tagant, where Xavier Coppolani is killed on 12 May 1905",
+   "source": {
+    "title": "Colonial Mauritania (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Colonial_Mauritania"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "MRT-2798",
+      "MRT-2789"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1904-10-18",
+   "what": "The Civil Territory of Mauritania is created, after Xavier Coppolani has brought the emirates of Trarza and Brakna under French protection (1902 to 1904)",
+   "source": {
+    "title": "Colonial Mauritania (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Colonial_Mauritania"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "MRT-2788",
+      "MRT-2784",
+      "MRT-2787"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1904-09-01",
+   "what": "French troops occupy Agadez and the Aïr (1904; a lasting garrison from 1906, the year Bilma is occupied)",
+   "source": {
+    "title": "Sultanate of Agadez (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Sultanate_of_Agadez"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "NER-800"
+     ],
+     "owner": null
     }
    ]
   },
@@ -4841,6 +5053,80 @@
       "title": "French Congo (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/French_Congo"
      }
+    }
+   ]
+  },
+  {
+   "date": "1902-05-07",
+   "what": "A French camel column beats the Kel Ahaggar Tuareg at Tit: the Hoggar is opened to the French, and its Tuareg submit in 1904",
+   "source": {
+    "title": "Combat de Tit (French Wikipedia)",
+    "url": "https://fr.wikipedia.org/wiki/Bataille_de_Tit"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "DZA-2189"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1902-01-20",
+   "what": "French troops take the Senussi lodge of Bir Alali and occupy Kanem",
+   "source": {
+    "title": "Kanem (historical region) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kanem_(historical_region)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "TCD-1465",
+      "TCD-1466",
+      "TCD-5581"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1900-04-22",
+   "what": "France beats Rabih az-Zubayr at Kousséri and takes over his lands on the Chari; Fort-Lamy is founded",
+   "source": {
+    "title": "Battle of Kousséri (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Kousséri"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TCD-5580",
+      "TCD-1464",
+      "TCD-4857"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1900-04-05",
+   "what": "French columns from Algeria occupy the oases of the Tidikelt (In Salah, January 1900), the Gourara, the Tuat and the Saoura valley (Igli, April 1900)",
+   "source": {
+    "title": "Touat (French Wikipedia)",
+    "url": "https://fr.wikipedia.org/wiki/Touat"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "tidikelt",
+      "DZA-2143",
+      "DZA-2148"
+     ],
+     "owner": null
     }
    ]
   }

@@ -26,14 +26,14 @@
  "india": {
   "name": "India"
  },
- "upper-senegal-and-niger": {
-  "name": "Alto Senegal y Níger"
- },
  "argentina": {
   "name": "Argentina"
  },
  "kazakhstan": {
   "name": "Kazajistán"
+ },
+ "upper-senegal-and-niger": {
+  "name": "Alto Senegal y Níger"
  },
  "french-equatorial-africa": {
   "name": "África Ecuatorial Francesa"
@@ -68,14 +68,14 @@
  "sudan": {
   "name": "Sudán"
  },
- "ubangi-shari": {
-  "name": "Ubangui-Chari"
- },
  "libya": {
   "name": "Libia"
  },
  "iran": {
   "name": "Irán"
+ },
+ "ubangi-shari": {
+  "name": "Ubangui-Chari"
  },
  "mongolia": {
   "name": "Mongolia"
