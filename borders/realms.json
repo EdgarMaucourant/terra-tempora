@@ -376,7 +376,8 @@
   "fr": "Cap Juby",
   "es": "Cabo Juby",
   "group": "Spanish West Africa",
-  "groupUntil": "1958-01-10"
+  "groupUntil": "1958-01-10",
+  "groupFrom": "1946-07-20"
  },
  "Cape Verde": {
   "wikipedia": "Cape Verde",
@@ -763,7 +764,8 @@
   "es": "Chad francés",
   "withOwner": false,
   "group": "French Equatorial Africa",
-  "groupUntil": "1958-09-28"
+  "groupUntil": "1958-09-28",
+  "groupFrom": "1910-01-15"
  },
  "French Cochinchina": {
   "wikipedia": "French Cochinchina",
@@ -781,7 +783,25 @@
   "es": "Congo francés",
   "withOwner": false,
   "group": "French Equatorial Africa",
-  "groupUntil": "1958-09-28"
+  "groupUntil": "1958-09-28",
+  "groupFrom": "1910-01-15",
+  "periods": [
+   {
+    "from": "1882-11-30",
+    "name": "French Congo",
+    "wikipedia": "French Congo",
+    "note": "The whole colony, with Gabon and Ubangi-Shari, until the end of 1903"
+   },
+   {
+    "from": "1903-12-29",
+    "name": "Middle Congo",
+    "wikipedia": "French Congo",
+    "fr": "Moyen-Congo",
+    "es": "Congo Medio",
+    "withOwner": true,
+    "note": "The colony of Middle Congo, from the decree of 29 December 1903"
+   }
+  ]
  },
  "French Dahomey": {
   "wikipedia": "French Dahomey",
@@ -806,7 +826,8 @@
   "es": "Gabón francés",
   "withOwner": false,
   "group": "French Equatorial Africa",
-  "groupUntil": "1958-09-28"
+  "groupUntil": "1958-09-28",
+  "groupFrom": "1910-01-15"
  },
  "French Guiana": {
   "wikipedia": "French Guiana",
@@ -1181,7 +1202,8 @@
   "fr": "Ifni",
   "es": "Ifni",
   "group": "Spanish West Africa",
-  "groupUntil": "1958-01-10"
+  "groupUntil": "1958-01-10",
+  "groupFrom": "1946-07-20"
  },
  "India": {
   "wikipedia": "India",
@@ -2292,7 +2314,36 @@
   "wikipedia": "Thailand",
   "wikidata": "Q869",
   "fr": "Thaïlande",
-  "es": "Tailandia"
+  "es": "Tailandia",
+  "periods": [
+   {
+    "from": "1782-04-06",
+    "name": "Siam",
+    "wikipedia": "Rattanakosin Kingdom (1782–1932)",
+    "fr": "Siam",
+    "es": "Siam"
+   },
+   {
+    "from": "1939-06-24",
+    "name": "Thailand",
+    "wikipedia": "Thailand",
+    "note": "Siam takes the name Thailand"
+   },
+   {
+    "from": "1945-09-08",
+    "name": "Siam",
+    "wikipedia": "Thailand",
+    "fr": "Siam",
+    "es": "Siam",
+    "note": "Named Siam again after the war"
+   },
+   {
+    "from": "1949-05-11",
+    "name": "Thailand",
+    "wikipedia": "Thailand",
+    "note": "Thailand again from 1949"
+   }
+  ]
  },
  "The Bahamas": {
   "wikipedia": "The Bahamas",
@@ -2427,7 +2478,8 @@
     "wikipedia": "Ubangi-Shari",
     "note": "Without Chad, a colony of its own from 1920"
    }
-  ]
+  ],
+  "groupFrom": "1910-01-15"
  },
  "Uganda": {
   "wikipedia": "Uganda",
@@ -2492,7 +2544,30 @@
   "fr": "Haut-Sénégal et Niger",
   "es": "Alto Senegal y Níger",
   "group": "French West Africa",
-  "groupUntil": "1920-12-04"
+  "groupUntil": "1920-12-04",
+  "periods": [
+   {
+    "from": "1899-10-17",
+    "name": "Upper Senegal and Middle Niger",
+    "wikipedia": "French Sudan",
+    "fr": "Haut-Sénégal et Moyen-Niger",
+    "es": "Alto Senegal y Níger Medio",
+    "note": "What was left of French Sudan after it was broken up in 1899, attached to Senegal"
+   },
+   {
+    "from": "1902-10-01",
+    "name": "Senegambia and Niger",
+    "wikipedia": "Senegambia and Niger",
+    "fr": "Sénégambie et Niger",
+    "es": "Senegambia y Níger"
+   },
+   {
+    "from": "1904-10-21",
+    "name": "Upper Senegal and Niger",
+    "wikipedia": "Upper Senegal and Niger",
+    "note": "Created on 21 October 1904"
+   }
+  ]
  },
  "Uruguay": {
   "wikipedia": "Uruguay",

@@ -18,10 +18,11 @@ import {
   PolylineMaterialAppearance,
   Primitive,
   Scene,
+  SceneTransforms,
   VerticalOrigin,
 } from "cesium";
 import { MUTED } from "./colors";
-import { highlightOf, isOverlay, type Polity } from "./data";
+import { foldedInGroup, highlightOf, isOverlay, withClosedGroups, type Polity } from "./data";
 import { inRing } from "./frame";
 
 // Shapes float slightly above the globe surface so they never z-fight with it.
@@ -191,6 +192,8 @@ interface Drawn {
   pieces: Piece[];
   highlighted: boolean;
   label?: Label;
+  /** Whether the label is due on the globe; it still gives way to a name it would cover. */
+  wanted?: boolean;
 }
 
 const isReady = (d: Drawn) => d.pieces.every((piece) => piece.ready);
@@ -208,6 +211,8 @@ export class PolityLayer {
   private labels: LabelCollection;
   /** Colours of the highlighted realms, by Cliopatria name. Others are grey. */
   private highlight = new Map<string, string>();
+  /** The colours asked for, before closed groups take one colour. */
+  private chosen = new Map<string, string>();
   /** Name of the greyed realm under the pointer. */
   private hovered: string | null = null;
   /** Today's border of the country being looked at. */
@@ -218,6 +223,7 @@ export class PolityLayer {
    * every country is coloured), only the large ones are, like greyed realms.
    */
   labelAll = true;
+  private openGroups = new Set<string>();
   /** A realm's name as shown on its label. */
   nameOf = (realm: string) => realm;
   /**
@@ -228,6 +234,7 @@ export class PolityLayer {
 
   constructor(private scene: Scene) {
     this.labels = scene.primitives.add(new LabelCollection({ scene }));
+    scene.preRender.addEventListener(() => this.declutter());
   }
 
   /**
@@ -242,6 +249,8 @@ export class PolityLayer {
       // A coarse outline already drawn stays until the detailed one is ready.
       if (known && this.drawn.has(known)) this.retiring.set(p.id, known);
     }
+    // A group's members, now known, take its colour.
+    if (this.chosen.size) this.applyHighlight();
   }
 
   /** The realm drawn by a picked piece of the globe, if it is one. */
@@ -301,6 +310,13 @@ export class PolityLayer {
     return undefined;
   }
 
+  /** The outline of a group of territories (French West Africa) drawn that year. */
+  groupAt(name: string, year: number): Polity | undefined {
+    const y = Math.round(year);
+    for (const p of this.polities.values()) if (p.kind === "group" && p.name === name && y >= p.from && y <= p.to) return p;
+    return undefined;
+  }
+
   /** The realms drawn at `year`, coloured or greyed, one shape per realm name. */
   at(year: number): Polity[] {
     const y = Math.round(year);
@@ -355,7 +371,75 @@ export class PolityLayer {
   }
 
   /** Colours the given realms and greys out the rest. */
+  private labelsDirty = true;
+  private lastView = "";
+  private lastDeclutter = 0;
+
+  /**
+   * Shows the names that are due without letting one cover another: those of
+   * highlighted realms first, then groups, then by size. Run before each
+   * frame, it only works when the names or the view have changed.
+   */
+  private declutter() {
+    const camera = this.scene.camera;
+    const view = `${camera.positionWC.x.toFixed(0)},${camera.positionWC.y.toFixed(0)},${camera.positionWC.z.toFixed(0)},${camera.heading.toFixed(3)},${this.scene.canvas.clientWidth}`;
+    if (!this.labelsDirty && view === this.lastView) return;
+    // While the globe turns, ten times a second is enough.
+    const now = performance.now();
+    if (!this.labelsDirty && now - this.lastDeclutter < 100) {
+      this.scene.requestRender();
+      return;
+    }
+    this.labelsDirty = false;
+    this.lastView = view;
+    this.lastDeclutter = now;
+    const rank = (p: Polity, d: Drawn) => (d.highlighted && this.labelAll ? 2 : p.kind === "group" ? 1 : 0);
+    const due = [...this.drawn].filter(([, d]) => d.label && d.wanted).sort((a, b) => rank(b[0], b[1]) - rank(a[0], a[1]) || b[0].area - a[0].area);
+    const placed: [number, number, number, number][] = [];
+    const at = new Cartesian2();
+    const range = Cartesian3.magnitude(camera.positionWC);
+    for (const [p, d] of due) {
+      const label = d.label!;
+      const position = label.position;
+      // Past the horizon, the globe hides the name anyway.
+      const facing = Cartesian3.dot(position, camera.positionWC) > Cartesian3.magnitudeSquared(position) * 0.98;
+      const point = facing ? SceneTransforms.worldToWindowCoordinates(this.scene, position, at) : undefined;
+      if (!point) {
+        label.show = false;
+        continue;
+      }
+      const size = (rank(p, d) === 2 ? 15 : 12) * (range < 1.2e7 ? 1.15 : 1);
+      const w = (label.text.length * size * 0.56) / 2 + 3;
+      const h = size * 0.8;
+      // A group's name moves above or below the names already there.
+      const shifts = p.kind === "group" ? [0, -22, 22, -44, 44] : [0];
+      const dy = shifts.find((dy) => {
+        const box = [point.x - w, point.y + dy - h, point.x + w, point.y + dy + h];
+        return !placed.some((b) => box[0] < b[2] && box[2] > b[0] && box[1] < b[3] && box[3] > b[1]);
+      });
+      label.show = dy !== undefined;
+      if (dy === undefined) continue;
+      placed.push([point.x - w, point.y + dy - h, point.x + w, point.y + dy + h]);
+      if (label.pixelOffset.y !== dy) label.pixelOffset = new Cartesian2(0, dy);
+    }
+  }
+
+  /** The groups whose territories are named, after a click inside them. */
+  setOpenGroups(groups: Iterable<string>) {
+    this.openGroups = new Set(groups);
+    this.applyHighlight();
+    this.labelsDirty = true;
+    this.scene.requestRender();
+  }
+
   setHighlight(colors: Map<string, string>) {
+    this.chosen = new Map(colors);
+    this.applyHighlight();
+  }
+
+  /** The chosen colours, with each closed group in one colour. */
+  private applyHighlight() {
+    const colors = withClosedGroups(this.chosen, this.polities.values(), this.openGroups);
     const changed = new Set<string>();
     for (const [name, color] of colors) if (this.highlight.get(name) !== color) changed.add(name);
     for (const name of this.highlight.keys()) if (!colors.has(name)) changed.add(name);
@@ -407,6 +491,12 @@ export class PolityLayer {
       }
     }
 
+    // A group (French West Africa) is named alone until a click inside it:
+    // its territories' names then take the place of its own.
+    const groupNames = new Set<string>();
+    for (const [p, d] of this.drawn) {
+      if (p.kind === "group" && d.label && this.visibleKind(p) && shapeOpacity(p, year) > 0.5) groupNames.add(p.name);
+    }
     for (const piece of this.pieces.values()) piece.reset();
     for (const [p, d] of [...this.drawn]) {
       const opacity = this.visibleKind(p) ? shapeOpacity(p, year) : 0;
@@ -425,11 +515,18 @@ export class PolityLayer {
         // The detailed outline waits, unseen, while the coarse one still shows.
         if (this.retiring.has(p.id)) continue;
       }
-      const hovered = !d.highlighted && p.name === this.hovered;
+      const hovered = !d.highlighted && !!this.hovered && (p.name === this.hovered || !!p.groups?.includes(this.hovered));
       for (const piece of d.pieces) piece.addOpacity(p, opacity, hovered);
       // Labels switch at the midpoint of a fade. Changing a label's colour
       // redraws its glyphs, which is too costly to do every frame.
-      if (d.label) d.label.show = opacity > 0.5;
+      if (d.label) {
+        const wanted =
+          opacity > 0.5 &&
+          (p.kind === "group" ? !this.openGroups.has(p.name) : !foldedInGroup(p, groupNames, this.openGroups));
+        if (wanted !== d.wanted) this.labelsDirty = true;
+        d.wanted = wanted;
+        if (!wanted) d.label.show = false;
+      }
     }
 
     for (const piece of this.pieces.values()) {
@@ -499,7 +596,8 @@ export class PolityLayer {
     });
 
     let label: Label | undefined;
-    if (!p.kind && p.label && ((highlighted && this.labelAll) || p.area >= CONTEXT_LABEL_AREA)) {
+    // A group's territories all have a name, shown once a click opens the group.
+    if (!p.kind && p.label && ((highlighted && this.labelAll) || p.area >= CONTEXT_LABEL_AREA || (p.partOf && p.groups?.length))) {
       const height = highlighted ? FEATURED_HEIGHT : CONTEXT_HEIGHT;
       label = this.labels.add({
         id: p,
@@ -529,8 +627,7 @@ export class PolityLayer {
         style: LabelStyle.FILL_AND_OUTLINE,
         horizontalOrigin: HorizontalOrigin.CENTER,
         verticalOrigin: VerticalOrigin.CENTER,
-        pixelOffset: new Cartesian2(0, -22),
-        scaleByDistance: new NearFarScalar(2e6, 1.15, 2.5e7, 0.8),
+                scaleByDistance: new NearFarScalar(2e6, 1.15, 2.5e7, 0.8),
         show: false,
       });
     }

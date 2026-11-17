@@ -308,3 +308,36 @@ export class BorderData {
     return pending;
   }
 }
+
+/**
+ * Whether a territory's name gives way to its group's (French Senegal to
+ * French West Africa): the group is drawn and named, and no click has opened it.
+ */
+export function foldedInGroup(p: Polity, shown: ReadonlySet<string>, open: ReadonlySet<string>): boolean {
+  if (!p.groups) return false;
+  const groups = p.groups.filter((g) => shown.has(g));
+  return groups.length > 0 && !groups.some((g) => open.has(g));
+}
+
+/**
+ * The highlight colours with each closed group of territories (French West
+ * Africa) in one colour: that of its first highlighted member, so the group
+ * shows as one until a click opens it.
+ */
+export function withClosedGroups(colors: Map<string, string>, polities: Iterable<Polity>, open: ReadonlySet<string>): Map<string, string> {
+  const outlined = new Set<string>();
+  const members: Polity[] = [];
+  for (const p of polities) {
+    if (p.kind === "group") outlined.add(p.name);
+    else if (!p.kind && p.groups) members.push(p);
+  }
+  const out = new Map(colors);
+  for (const p of members) {
+    for (const g of p.groups!) {
+      if (!outlined.has(g) || open.has(g) || out.has(g)) continue;
+      const color = highlightOf(colors, p);
+      if (color) out.set(g, color);
+    }
+  }
+  return out;
+}

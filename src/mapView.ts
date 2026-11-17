@@ -4,7 +4,7 @@ import type { Feature, MultiPolygon, Polygon } from "geojson";
 import { feature } from "topojson-client";
 import landUrl from "world-atlas/land-50m.json?url";
 import { MUTED } from "./colors";
-import { highlightOf, type Polity } from "./data";
+import { foldedInGroup, highlightOf, withClosedGroups, type Polity } from "./data";
 import { shapeOpacity } from "./polityLayer";
 import { badgeUrl, eventOpacity, supersededYears, type EventKind, type HistoryEvent } from "./events";
 import { PIN_HEIGHT, PIN_URL, PIN_WIDTH } from "./pin";
@@ -89,6 +89,8 @@ export class MapView {
   private land: GeoPermissibleObjects | null = null;
   private landLoading: Promise<void> | null = null;
   private highlight = new Map<string, string>();
+  /** The colours asked for, before closed groups take one colour. */
+  private chosen = new Map<string, string>();
   private hovered: string | null = null;
   /** Today's border of the country being looked at, drawn dashed over everything. */
   private outline: Shape | null = null;
@@ -101,6 +103,9 @@ export class MapView {
   /** Badges drawn last frame, for hit-testing. */
   private drawnBadges: { e: HistoryEvent; x: number; y: number }[] = [];
   showContext = true;
+  /** Whether every highlighted realm is named (see PolityLayer.labelAll). */
+  labelAll = true;
+  private openGroups = new Set<string>();
   /** A realm's name as shown on its label. */
   nameOf = (realm: string) => realm;
 
@@ -146,6 +151,8 @@ export class MapView {
       this.polities.set(p.id, p);
       this.shapes.delete(p.id);
     }
+    // A group's members, now known, take its colour.
+    if (this.chosen.size) this.highlight = withClosedGroups(this.chosen, this.polities.values(), this.openGroups);
   }
 
   private shapeOf(p: Polity): Shape {
@@ -202,12 +209,20 @@ export class MapView {
   }
 
   setHighlight(colors: Map<string, string>) {
-    this.highlight = new Map(colors);
+    this.chosen = new Map(colors);
+    this.highlight = withClosedGroups(this.chosen, this.polities.values(), this.openGroups);
     this.draw();
   }
 
   setHovered(name: string | null) {
     this.hovered = name;
+  }
+
+  /** The groups whose territories are named, after a click inside them. */
+  setOpenGroups(groups: Iterable<string>) {
+    this.openGroups = new Set(groups);
+    this.highlight = withClosedGroups(this.chosen, this.polities.values(), this.openGroups);
+    this.draw();
   }
 
   setYear(year: number) {
@@ -480,7 +495,7 @@ export class MapView {
     for (const { p, opacity } of [...context, ...featured]) {
       const shape = this.shapeOf(p);
       const color = highlightOf(this.highlight, p);
-      const hovered = !color && p.name === this.hovered;
+      const hovered = !color && !!this.hovered && (p.name === this.hovered || !!p.groups?.includes(this.hovered));
       ctx.beginPath();
       path(shape);
       ctx.globalAlpha = (color ? FEATURED_FILL_ALPHA : hovered ? HOVER_FILL_ALPHA : CONTEXT_FILL_ALPHA) * opacity;
@@ -559,9 +574,13 @@ export class MapView {
 
     // Names: highlighted realms first, then greyed ones by size, skipping
     // any that would overlap a name already placed.
+    // A group (French West Africa) is named alone until a click inside it:
+    // its territories' names then take the place of its own.
+    const groupNames = new Set(grouped.filter((g) => g.opacity > 0.5 && g.p.label).map((g) => g.p.name));
+    const folded = (p: Polity) => foldedInGroup(p, groupNames, this.openGroups);
     const minArea = CONTEXT_LABEL_AREA / Math.min(this.zoom, 8) ** 1.6;
     const candidates = this.drawn
-      .filter(({ p }) => !p.kind && p.label && (highlightOf(this.highlight, p) || p.area >= minArea))
+      .filter(({ p }) => !p.kind && p.label && !folded(p) && (highlightOf(this.highlight, p) || p.area >= minArea || p.groups?.some((g) => groupNames.has(g))))
       .sort((a, b) => Number(!!highlightOf(this.highlight, b.p)) - Number(!!highlightOf(this.highlight, a.p)) || b.p.area - a.p.area);
     const placed: [number, number, number, number][] = [];
     const named = new Set<string>();
@@ -591,12 +610,12 @@ export class MapView {
     // Group names, in capitals, just above or below their members' names.
     ctx.font = "italic 600 12px 'Instrument Sans Variable', sans-serif";
     for (const { p, opacity } of grouped) {
-      if (!p.label || opacity <= 0.5) continue;
+      if (!p.label || opacity <= 0.5 || this.openGroups.has(p.name)) continue;
       const at = this.projection(p.label);
       if (!at || at[0] < 0 || at[0] > this.width || at[1] < 0 || at[1] > this.height) continue;
       const text = this.nameOf(p.name).toUpperCase();
       const w = ctx.measureText(text).width / 2 + 3;
-      for (const dy of [-22, 22, -44, 44, 0]) {
+      for (const dy of [0, -22, 22, -44, 44]) {
         const y = at[1] + dy;
         const box: [number, number, number, number] = [at[0] - w, y - 9, at[0] + w, y + 9];
         if (placed.some((b) => box[0] < b[2] && box[2] > b[0] && box[1] < b[3] && box[3] > b[1])) continue;
