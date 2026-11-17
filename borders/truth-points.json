@@ -3078,7 +3078,7 @@
     -12.78
    ],
    "years": [
-    1900,
+    1912,
     1945
    ],
    "realm": "French Madagascar",
@@ -3100,7 +3100,7 @@
     -11.7
    ],
    "years": [
-    1900,
+    1912,
     1945
    ],
    "realm": "French Madagascar",
@@ -4626,6 +4626,305 @@
    ],
    "realm": "Colonial Mauritania",
    "why": "French until 1960"
+  },
+  {
+   "place": "Tunis",
+   "lonLat": [
+    10.18,
+    36.8
+   ],
+   "years": [
+    1880,
+    1880
+   ],
+   "realm": "Tunisia",
+   "why": "The beylik, before the Treaty of Bardo (1881)"
+  },
+  {
+   "place": "Tunis",
+   "lonLat": [
+    10.18,
+    36.8
+   ],
+   "years": [
+    1881,
+    1941
+   ],
+   "realm": "French Tunisia",
+   "why": "French protectorate from 1881"
+  },
+  {
+   "place": "Antananarivo",
+   "lonLat": [
+    47.52,
+    -18.91
+   ],
+   "years": [
+    1880,
+    1894
+   ],
+   "realm": "Madagascar",
+   "why": "Merina kingdom until the French took the capital in September 1895"
+  },
+  {
+   "place": "Antsiranana",
+   "lonLat": [
+    49.29,
+    -12.28
+   ],
+   "years": [
+    1886,
+    1894
+   ],
+   "realm": "Diego-Suarez",
+   "why": "French colony from the treaty of December 1885"
+  },
+  {
+   "place": "Hell-Ville, Nosy Be",
+   "lonLat": [
+    48.27,
+    -13.4
+   ],
+   "years": [
+    1880,
+    1894
+   ],
+   "realm": "Nosy Be",
+   "why": "French since 1841"
+  },
+  {
+   "place": "Hanoi",
+   "lonLat": [
+    105.85,
+    21.03
+   ],
+   "years": [
+    1880,
+    1882
+   ],
+   "realm": "Vietnam",
+   "why": "Đại Nam until the Harmand treaty of 1883"
+  },
+  {
+   "place": "Hanoi",
+   "lonLat": [
+    105.85,
+    21.03
+   ],
+   "years": [
+    1884,
+    1939
+   ],
+   "realm": "Tonkin",
+   "why": "French protectorate from 1883"
+  },
+  {
+   "place": "Vientiane",
+   "lonLat": [
+    102.6,
+    17.97
+   ],
+   "years": [
+    1880,
+    1892
+   ],
+   "realm": "Thailand",
+   "why": "Siamese until the treaty of 3 October 1893"
+  },
+  {
+   "place": "Vientiane",
+   "lonLat": [
+    102.6,
+    17.97
+   ],
+   "years": [
+    1894,
+    1940
+   ],
+   "realm": "French Laos",
+   "why": "French from 1893"
+  },
+  {
+   "place": "Djibouti",
+   "lonLat": [
+    43.15,
+    11.59
+   ],
+   "years": [
+    1880,
+    1887
+   ],
+   "realm": null,
+   "why": "The French post at Djibouti dates from 1888"
+  },
+  {
+   "place": "Obock (inland)",
+   "lonLat": [
+    43.0,
+    12.1
+   ],
+   "years": [
+    1885,
+    1895
+   ],
+   "realm": "French Somaliland",
+   "why": "Territory of Obock, French from 1884"
+  },
+  {
+   "place": "Porto-Novo",
+   "lonLat": [
+    2.63,
+    6.5
+   ],
+   "years": [
+    1880,
+    1959
+   ],
+   "realm": "French Dahomey",
+   "why": "French protectorate since 1863 (renewed 1882)"
+  },
+  {
+   "place": "Abomey",
+   "lonLat": [
+    1.99,
+    7.18
+   ],
+   "years": [
+    1880,
+    1891
+   ],
+   "realm": null,
+   "why": "Kingdom of Dahomey until the French conquest of 1892"
+  },
+  {
+   "place": "Bamako",
+   "lonLat": [
+    -8.0,
+    12.65
+   ],
+   "years": [
+    1880,
+    1882
+   ],
+   "realm": null,
+   "why": "Taken by Borgnis-Desbordes in February 1883"
+  },
+  {
+   "place": "Bamako",
+   "lonLat": [
+    -8.0,
+    12.65
+   ],
+   "years": [
+    1884,
+    1898
+   ],
+   "realm": "French Sudan",
+   "why": "French from 1883"
+  },
+  {
+   "place": "Timbuktu",
+   "lonLat": [
+    -3.0,
+    16.77
+   ],
+   "years": [
+    1880,
+    1892
+   ],
+   "realm": null,
+   "why": "Taken by the French in December 1893"
+  },
+  {
+   "place": "Ouagadougou",
+   "lonLat": [
+    -1.52,
+    12.37
+   ],
+   "years": [
+    1880,
+    1895
+   ],
+   "realm": null,
+   "why": "Taken by the French in September 1896"
+  },
+  {
+   "place": "Dubréka",
+   "lonLat": [
+    -13.52,
+    9.79
+   ],
+   "years": [
+    1880,
+    1881
+   ],
+   "realm": "French Senegal",
+   "why": "The Rivières du Sud were run from Senegal"
+  },
+  {
+   "place": "Dubréka",
+   "lonLat": [
+    -13.52,
+    9.79
+   ],
+   "years": [
+    1883,
+    1957
+   ],
+   "realm": "French Guinea",
+   "why": "Rivières du Sud from October 1882, French Guinea from 1891 to 1958"
+  },
+  {
+   "place": "Ziguinchor",
+   "lonLat": [
+    -16.27,
+    12.58
+   ],
+   "years": [
+    1880,
+    1887
+   ],
+   "realm": "Portuguese Guinea",
+   "why": "Portuguese until the 1886 convention, handed over in April 1888"
+  },
+  {
+   "place": "Guangzhouwan (Zhanjiang)",
+   "lonLat": [
+    110.4,
+    21.2
+   ],
+   "years": [
+    1880,
+    1897
+   ],
+   "realm": "China",
+   "why": "Leased to France in 1898"
+  },
+  {
+   "place": "Mayotte (Combani)",
+   "lonLat": [
+    45.15,
+    -12.78
+   ],
+   "years": [
+    1880,
+    1911
+   ],
+   "realm": "Mayotte",
+   "why": "Mayotte and dependencies until annexed to Madagascar on 25 July 1912"
+  },
+  {
+   "place": "Moroni",
+   "lonLat": [
+    43.26,
+    -11.7
+   ],
+   "years": [
+    1886,
+    1911
+   ],
+   "realm": "Mayotte",
+   "why": "Mayotte and dependencies until annexed to Madagascar on 25 July 1912"
   }
  ]
 }

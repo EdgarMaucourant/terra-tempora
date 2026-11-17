@@ -74,7 +74,8 @@
   "fr": "Protectorat français d'Annam",
   "es": "Protectorado francés de Annam",
   "group": "French Indochina",
-  "groupUntil": "1954-07-21"
+  "groupUntil": "1954-07-21",
+  "groupFrom": "1887-10-17"
  },
  "Antigua and Barbuda": {
   "wikipedia": "Antigua and Barbuda",
@@ -441,7 +442,30 @@
   "wikipedia": "China",
   "wikidata": "Q148",
   "fr": "Chine",
-  "es": "China"
+  "es": "China",
+  "periods": [
+   {
+    "from": "1644-06-06",
+    "name": "Qing dynasty",
+    "wikipedia": "Qing dynasty",
+    "fr": "Dynastie Qing",
+    "es": "Dinastía Qing"
+   },
+   {
+    "from": "1912-01-01",
+    "name": "Republic of China",
+    "wikipedia": "Republic of China (1912–1949)",
+    "fr": "République de Chine",
+    "es": "República de China"
+   },
+   {
+    "from": "1949-10-01",
+    "name": "China",
+    "wikipedia": "China",
+    "fr": "Chine",
+    "es": "China"
+   }
+  ]
  },
  "Christmas Island": {
   "wikipedia": "Christmas Island",
@@ -488,7 +512,8 @@
     "wikipedia": "Colonial Mauritania",
     "note": "A colony from 4 December 1920"
    }
-  ]
+  ],
+  "groupFrom": "1904-10-18"
  },
  "Colony of Niger": {
   "wikipedia": "Colony of Niger",
@@ -579,6 +604,11 @@
   "wikidata": "Q35",
   "fr": "Danemark",
   "es": "Dinamarca"
+ },
+ "Diego-Suarez": {
+  "wikipedia": "Antsiranana",
+  "fr": "Diego-Suarez",
+  "es": "Diego Suárez"
  },
  "Djibouti": {
   "wikipedia": "Djibouti",
@@ -748,7 +778,8 @@
   "es": "Protectorado francés de Camboya",
   "withOwner": false,
   "group": "French Indochina",
-  "groupUntil": "1954-07-21"
+  "groupUntil": "1954-07-21",
+  "groupFrom": "1887-10-17"
  },
  "French Cameroon": {
   "wikipedia": "French Cameroon",
@@ -774,7 +805,8 @@
   "es": "Cochinchina francesa",
   "withOwner": false,
   "group": "French Indochina",
-  "groupUntil": "1954-07-21"
+  "groupUntil": "1954-07-21",
+  "groupFrom": "1887-10-17"
  },
  "French Congo": {
   "wikipedia": "French Congo",
@@ -810,7 +842,8 @@
   "es": "Dahomey francés",
   "withOwner": false,
   "group": "French West Africa",
-  "groupUntil": "1958-10-05"
+  "groupUntil": "1958-10-05",
+  "groupFrom": "1899-10-17"
  },
  "French Equatorial Africa": {
   "wikipedia": "French Equatorial Africa",
@@ -843,7 +876,25 @@
   "es": "Guinea francesa",
   "withOwner": false,
   "group": "French West Africa",
-  "groupUntil": "1958-10-05"
+  "groupUntil": "1958-10-05",
+  "periods": [
+   {
+    "from": "1882-10-12",
+    "name": "Rivières du Sud",
+    "wikipedia": "French Guinea",
+    "fr": "Rivières du Sud",
+    "es": "Ríos del Sur",
+    "note": "The coast south of Senegal, under Senegal's governor until 1889"
+   },
+   {
+    "from": "1891-12-17",
+    "name": "French Guinea",
+    "wikipedia": "French Guinea",
+    "fr": "Guinée française",
+    "es": "Guinea francesa"
+   }
+  ],
+  "groupFrom": "1895-06-16"
  },
  "French India": {
   "wikipedia": "French India",
@@ -866,7 +917,8 @@
   "es": "Costa de Marfil francesa",
   "withOwner": false,
   "group": "French West Africa",
-  "groupUntil": "1958-10-05"
+  "groupUntil": "1958-10-05",
+  "groupFrom": "1895-06-16"
  },
  "French Laos": {
   "wikipedia": "French protectorate of Laos",
@@ -875,7 +927,8 @@
   "es": "Protectorado francés de Laos",
   "withOwner": false,
   "group": "French Indochina",
-  "groupUntil": "1954-07-21"
+  "groupUntil": "1954-07-21",
+  "groupFrom": "1899-04-19"
  },
  "French Madagascar": {
   "wikipedia": "French Madagascar",
@@ -923,7 +976,8 @@
   "es": "Senegal francés",
   "withOwner": false,
   "group": "French West Africa",
-  "groupUntil": "1958-10-05"
+  "groupUntil": "1958-10-05",
+  "groupFrom": "1895-06-16"
  },
  "French Somaliland": {
   "wikipedia": "French Somaliland",
@@ -932,6 +986,14 @@
   "es": "Somalia francesa",
   "withOwner": false,
   "periods": [
+   {
+    "from": "1884-06-01",
+    "name": "Territory of Obock",
+    "wikipedia": "French Somaliland",
+    "fr": "Territoire d'Obock",
+    "es": "Territorio de Obock",
+    "note": "Obock and Tadjoura"
+   },
    {
     "from": "1896-05-20",
     "name": "French Somaliland",
@@ -964,7 +1026,25 @@
   "es": "Sudán francés",
   "withOwner": false,
   "group": "French West Africa",
-  "groupUntil": "1958-10-05"
+  "groupUntil": "1958-10-05",
+  "periods": [
+   {
+    "from": "1880-01-01",
+    "name": "Upper River",
+    "wikipedia": "French Sudan",
+    "fr": "Haut-Fleuve",
+    "es": "Alto Río",
+    "note": "The French posts on the upper Senegal and Niger, under a military commander"
+   },
+   {
+    "from": "1890-08-18",
+    "name": "French Sudan",
+    "wikipedia": "French Sudan",
+    "fr": "Soudan français",
+    "es": "Sudán francés"
+   }
+  ],
+  "groupFrom": "1895-06-16"
  },
  "French Togoland": {
   "wikipedia": "French Togoland",
@@ -1116,7 +1196,8 @@
   "fr": "Kouang-Tchéou-Wan",
   "es": "Guangzhouwan",
   "group": "French Indochina",
-  "groupUntil": "1945-08-18"
+  "groupUntil": "1945-08-18",
+  "groupFrom": "1900-01-05"
  },
  "Guantanamo Bay Naval Base": {
   "wikipedia": "Guantanamo Bay Naval Base",
@@ -1424,6 +1505,14 @@
   "fr": "Madagascar",
   "es": "Madagascar",
   "periods": [
+   {
+    "from": "1817-10-23",
+    "name": "Kingdom of Madagascar",
+    "wikipedia": "Merina Kingdom",
+    "fr": "Royaume de Madagascar",
+    "es": "Reino de Madagascar",
+    "note": "The Merina kingdom, until the French conquest of 1895"
+   },
    {
     "from": "1960-06-26",
     "name": "Malagasy Republic",
@@ -1739,6 +1828,11 @@
   "fr": "Norvège",
   "es": "Noruega"
  },
+ "Nosy Be": {
+  "wikipedia": "Nosy Be",
+  "fr": "Nosy Be",
+  "es": "Nosy Be"
+ },
  "Oman": {
   "wikipedia": "Oman",
   "wikidata": "Q842",
@@ -1953,12 +2047,6 @@
    }
   ]
  },
- "Réunion": {
-  "wikipedia": "Réunion",
-  "wikidata": "Q17070",
-  "fr": "La Réunion",
-  "es": "Reunión"
- },
  "Romania": {
   "wikipedia": "Romania",
   "wikidata": "Q218",
@@ -1976,6 +2064,12 @@
   "wikidata": "Q1037",
   "fr": "Rwanda",
   "es": "Ruanda"
+ },
+ "Réunion": {
+  "wikipedia": "Réunion",
+  "wikidata": "Q17070",
+  "fr": "La Réunion",
+  "es": "Reunión"
  },
  "Saar Protectorate": {
   "wikipedia": "Saar Protectorate",
@@ -2044,12 +2138,6 @@
   "es": "Sanjacado de Alejandreta",
   "group": "Mandate for Syria and the Lebanon",
   "groupUntil": "1938-09-02"
- },
- "São Tomé and Príncipe": {
-  "wikipedia": "São Tomé and Príncipe",
-  "wikidata": "Q1039",
-  "fr": "Sao Tomé-et-Principe",
-  "es": "Santo Tomé y Príncipe"
  },
  "Saudi Arabia": {
   "wikipedia": "Saudi Arabia",
@@ -2272,6 +2360,12 @@
   "fr": "Syrie",
   "es": "Siria"
  },
+ "São Tomé and Príncipe": {
+  "wikipedia": "São Tomé and Príncipe",
+  "wikidata": "Q1039",
+  "fr": "Sao Tomé-et-Principe",
+  "es": "Santo Tomé y Príncipe"
+ },
  "Taiwan (Republic of China)": {
   "wikipedia": "Taiwan",
   "wikidata": "Q865",
@@ -2393,7 +2487,8 @@
   "fr": "Protectorat du Tonkin",
   "es": "Protectorado de Tonkín",
   "group": "French Indochina",
-  "groupUntil": "1954-07-21"
+  "groupUntil": "1954-07-21",
+  "groupFrom": "1887-10-17"
  },
  "Transnistria": {
   "wikipedia": "Transnistria",
@@ -2414,6 +2509,14 @@
   "fr": "Tunisie",
   "es": "Túnez",
   "periods": [
+   {
+    "from": "1705-07-15",
+    "name": "Beylik of Tunis",
+    "wikipedia": "Beylik of Tunis",
+    "fr": "Beylicat de Tunis",
+    "es": "Beylicato de Túnez",
+    "note": "Ruled by the Husainid beys; a French protectorate from 12 May 1881"
+   },
    {
     "from": "1956-03-20",
     "name": "Kingdom of Tunisia",
@@ -2603,7 +2706,24 @@
   "wikipedia": "Vietnam",
   "wikidata": "Q881",
   "fr": "Viêt Nam",
-  "es": "Vietnam"
+  "es": "Vietnam",
+  "periods": [
+   {
+    "from": "1839-01-01",
+    "name": "Đại Nam",
+    "wikipedia": "Nguyễn dynasty",
+    "fr": "Đại Nam",
+    "es": "Đại Nam",
+    "note": "The empire under the Nguyễn dynasty"
+   },
+   {
+    "from": "1976-07-02",
+    "name": "Vietnam",
+    "wikipedia": "Vietnam",
+    "fr": "Viêt Nam",
+    "es": "Vietnam"
+   }
+  ]
  },
  "Wake Island": {
   "wikipedia": "Wake Island",
@@ -2641,5 +2761,10 @@
   "wikidata": "Q954",
   "fr": "Zimbabwe",
   "es": "Zimbabue"
+ },
+ "Île Sainte-Marie": {
+  "wikipedia": "Île Sainte-Marie",
+  "fr": "Île Sainte-Marie",
+  "es": "Isla Santa María"
  }
 }

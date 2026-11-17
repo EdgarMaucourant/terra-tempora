@@ -14,7 +14,7 @@
     "SPM",
     "WLF"
    ],
-   "from": 1900,
+   "from": 1880,
    "why": "Metropolitan France with Corsica, the overseas departments (Guadeloupe, Martinique, French Guiana, Réunion, and Mayotte since 2011) and the overseas territories (Saint Pierre and Miquelon, Saint Barthélemy, Saint Martin, New Caledonia, French Polynesia, Wallis and Futuna, the French Southern and Antarctic Lands, Clipperton), whose borders have not moved since 1957"
   },
   {
@@ -24,7 +24,7 @@
     "COM",
     "VUT"
    ],
-   "from": 1900,
+   "from": 1880,
    "why": "Algeria, Djibouti, the Comoros and Vanuatu, French (Vanuatu Anglo-French) until their independence, with today's borders"
   },
   {
@@ -45,7 +45,7 @@
     "CMR",
     "MDG"
    ],
-   "from": 1900,
+   "from": 1880,
    "why": "French West Africa, French Equatorial Africa, French Togoland, French Cameroon and Madagascar, with today's borders, from French rule to independence, and the British Southern Cameroons (Northwest and Southwest of today's Cameroon) until they join Cameroon in 1961"
   },
   {
@@ -73,7 +73,7 @@
     "MAR-3456",
     "TUN"
    ],
-   "from": 1900,
+   "from": 1880,
    "why": "Morocco (without Western Sahara) and Tunisia: the French protectorates until 1956, with Spain's northern zone, the Tangier International Zone, Cape Juby (Spanish until 1958) and Ifni (Spanish until 1969)"
   },
   {
@@ -82,7 +82,7 @@
     "LAO",
     "KHM"
    ],
-   "from": 1900,
+   "from": 1880,
    "why": "French Indochina: Vietnam (Tonkin, Annam and Cochinchina, then the State of Vietnam), Laos and Cambodia, with today's borders, until independence in 1953 and 1954, then North and South Vietnam until 1976"
   },
   {
@@ -91,14 +91,14 @@
     "mahe",
     "chandernagore"
    ],
-   "from": 1900,
+   "from": 1880,
    "why": "French India: Pondichéry, Karikal, Mahé and Yanaon (today's Puducherry, with Mahé drawn where it is, not where Natural Earth puts it) and Chandernagore, until they pass to India"
   },
   {
    "pieces": [
     "DEU-1581"
    ],
-   "from": 1900,
+   "from": 1880,
    "why": "The Saar: a League of Nations territory from 1920 to 1935, German again until 1945, occupied by France, a protectorate of France from 1946 until it joins West Germany in 1957, with today's Saarland borders"
   },
   {
@@ -108,14 +108,14 @@
     "LBN",
     "TUR-2289"
    ],
-   "from": 1900,
+   "from": 1880,
    "why": "Syria (with the Golan Heights), Lebanon and the Sanjak of Alexandretta (Hatay): French mandates under the League of Nations, with the states France set up in Syria (Aleppo, Damascus, the Alawites, Jabal Druze) until their union, with today's borders; Hatay State in 1938, Turkish from June 1939"
   },
   {
    "pieces": [
     "guangzhouwan"
    ],
-   "from": 1900,
+   "from": 1880,
    "why": "Guangzhouwan, leased to France until 1945, then part of China"
   }
  ],
@@ -2436,6 +2436,29 @@
    ]
   },
   {
+   "date": "1944-07-05",
+   "what": "The Hodh is moved from French Sudan to Mauritania",
+   "source": {
+    "title": "Hodh (French Wikipedia)",
+    "url": "https://fr.wikipedia.org/wiki/Hodh"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "MRT-2796",
+      "MRT-2797"
+     ],
+     "owner": "France",
+     "territory": "French Sudan",
+     "source": {
+      "title": "Hodh (French Wikipedia)",
+      "url": "https://fr.wikipedia.org/wiki/Hodh"
+     }
+    }
+   ]
+  },
+  {
    "date": "1944-01-01",
    "what": "France hands its powers to the Syrian government: Syria is independent",
    "source": {
@@ -3729,6 +3752,18 @@
       "title": "Upper Senegal and Niger (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Upper_Senegal_and_Niger"
      }
+    },
+    {
+     "pieces": [
+      "MRT-2796",
+      "MRT-2797"
+     ],
+     "owner": "France",
+     "territory": "Upper Senegal and Niger",
+     "source": {
+      "title": "Hodh (French Wikipedia)",
+      "url": "https://fr.wikipedia.org/wiki/Hodh"
+     }
     }
    ]
   },
@@ -4555,6 +4590,29 @@
    ]
   },
   {
+   "date": "1912-07-25",
+   "what": "Mayotte and the Comoros protectorates are annexed and joined to the colony of Madagascar",
+   "source": {
+    "title": "Colonie de Mayotte et dépendances (French Wikipedia)",
+    "url": "https://fr.wikipedia.org/wiki/Colonie_de_Mayotte_et_d%C3%A9pendances"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "COM",
+      "FRA-4602"
+     ],
+     "owner": "France",
+     "territory": "Mayotte",
+     "source": {
+      "title": "Colonie de Mayotte et dépendances (French Wikipedia)",
+      "url": "https://fr.wikipedia.org/wiki/Colonie_de_Mayotte_et_d%C3%A9pendances"
+     }
+    }
+   ]
+  },
+  {
    "date": "1912-03-30",
    "what": "By the Treaty of Fes, the Sultan of Morocco accepts a French protectorate",
    "source": {
@@ -4947,6 +5005,18 @@
       "MRT-2787"
      ],
      "owner": null
+    },
+    {
+     "pieces": [
+      "MRT-2790",
+      "MRT-2791"
+     ],
+     "owner": "France",
+     "territory": "French Senegal",
+     "source": {
+      "title": "Mauritanie coloniale (French Wikipedia)",
+      "url": "https://fr.wikipedia.org/wiki/Mauritanie_coloniale"
+     }
     }
    ]
   },
@@ -5093,6 +5163,34 @@
    ]
   },
   {
+   "date": "1900-09-05",
+   "what": "The Military Territory of Chad is set up after the defeat of Rabih az-Zubayr, joining the land France holds south of Lake Chad",
+   "source": {
+    "title": "French Chad (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_Chad"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TCD-1472",
+      "TCD-1474",
+      "TCD-1484",
+      "TCD-1485",
+      "TCD-1486",
+      "TCD-1487",
+      "TCD-1488",
+      "TCD-4858",
+      "TCD-5583",
+      "neukamerun-logone-oriental",
+      "neukamerun-mayo-kebbi-est",
+      "neukamerun-tandjile"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
    "date": "1900-04-22",
    "what": "France beats Rabih az-Zubayr at Kousséri and takes over his lands on the Chari; Fort-Lamy is founded",
    "source": {
@@ -5127,6 +5225,987 @@
       "DZA-2148"
      ],
      "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1899-10-17",
+   "what": "French Sudan is broken up: its southern districts go to Guinea, Ivory Coast and Dahomey, the rest becomes Upper Senegal and Middle Niger",
+   "source": {
+    "title": "French Sudan (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_Sudan"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "MLI-2793",
+      "MLI-4860",
+      "MLI-2792",
+      "MLI-2810",
+      "MLI-2809",
+      "MLI-2688",
+      "MLI-2690",
+      "MLI-2794",
+      "BFA",
+      "NER-4859",
+      "NER-94",
+      "NER-93",
+      "NER-92",
+      "NER-91",
+      "NER-95",
+      "NER-796",
+      "GIN-5657",
+      "GIN-5641",
+      "GIN-5647",
+      "GIN-5654",
+      "GIN-5642",
+      "GIN-5634",
+      "GIN-5632",
+      "GIN-5636",
+      "GIN-5644",
+      "GIN-5627",
+      "CIV-3431",
+      "CIV-3437",
+      "CIV-3449",
+      "CIV-3443",
+      "CIV-3440"
+     ],
+     "owner": "France",
+     "territory": "French Sudan",
+     "source": {
+      "title": "French Sudan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Sudan"
+     }
+    },
+    {
+     "pieces": [
+      "MRT-2796",
+      "MRT-2797"
+     ],
+     "owner": "France",
+     "territory": "French Sudan",
+     "source": {
+      "title": "Hodh (French Wikipedia)",
+      "url": "https://fr.wikipedia.org/wiki/Hodh"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1899-07-30",
+   "what": "The Central African Mission takes Zinder, the capital of the Sultanate of Damagaram",
+   "source": {
+    "title": "Sultanate of Damagaram (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Sultanate_of_Damagaram"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "NER-92",
+      "NER-91",
+      "NER-95",
+      "NER-796"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1899-01-01",
+   "what": "French troops occupy Gao, on the Niger east of Timbuktu (1899)",
+   "source": {
+    "title": "Gao (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Gao"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "MLI-2690"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1898-09-29",
+   "what": "Samory Touré is captured at Guélémou, ending the Wassoulou Empire: France takes the forest of Guinea and the north of Ivory Coast",
+   "source": {
+    "title": "Samori Ture (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Samori_Ture"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GIN-5627",
+      "GIN-5651",
+      "GIN-5655",
+      "GIN-5650",
+      "GIN-5640",
+      "GIN-5659"
+     ],
+     "owner": null
+    },
+    {
+     "pieces": [
+      "CIV-3431",
+      "CIV-3437",
+      "CIV-3449",
+      "CIV-3443",
+      "CIV-3440"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1898-06-14",
+   "what": "An Anglo-French convention fixes the borders of Dahomey and the Niger bend, after French columns have occupied the Borgou",
+   "source": {
+    "title": "Anglo-French Convention of 1898 (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Anglo-French_Convention_of_1898"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "BEN-2169",
+      "BEN-2170",
+      "BEN-2181",
+      "BEN-2182"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1898-05-01",
+   "what": "French troops take Sikasso, the capital of the Kénédougou Kingdom",
+   "source": {
+    "title": "Kénédougou Kingdom (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/K%C3%A9n%C3%A9dougou_Kingdom"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MLI-2794"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1898-04-22",
+   "what": "French troops occupy Guangzhouwan, which China leases to France for 99 years in 1899",
+   "source": {
+    "title": "Guangzhouwan (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Guangzhouwan"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "guangzhouwan"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Qing dynasty (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Qing_dynasty"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1897-09-25",
+   "what": "French troops take Bobo-Dioulasso and occupy the west of today's Burkina Faso",
+   "source": {
+    "title": "Bobo-Dioulasso (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Bobo-Dioulasso"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "BFA-2799",
+      "BFA-2800",
+      "BFA-2834",
+      "BFA-2835",
+      "BFA-2836",
+      "BFA-2837",
+      "BFA-2832",
+      "BFA-2833",
+      "BFA-5989",
+      "BFA-2801",
+      "BFA-2802",
+      "BFA-2803",
+      "BFA-2804",
+      "BFA-2807",
+      "BFA-2808"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1897-01-01",
+   "what": "French posts are set up on the Niger at Say and Niamey (1897)",
+   "source": {
+    "title": "Say, Niger (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Say,_Niger"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "NER-4859",
+      "NER-94",
+      "NER-93"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1896-11-14",
+   "what": "French troops win at Porédaka and take the Fouta Djallon",
+   "source": {
+    "title": "Imamate of Futa Jallon (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Imamate_of_Futa_Jallon"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GIN-5648",
+      "GIN-5656",
+      "GIN-5653",
+      "GIN-5633",
+      "GIN-5658",
+      "GIN-5645",
+      "GIN-5649",
+      "GIN-5639",
+      "GIN-5646",
+      "GIN-5652",
+      "GIN-5660"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1896-09-01",
+   "what": "The Voulet–Chanoine column takes Ouagadougou, the capital of the Mossi kingdom, and the French occupy the Mossi country",
+   "source": {
+    "title": "Kingdom of Ouagadougou (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Ouagadougou"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "BFA"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1895-09-30",
+   "what": "French troops take Antananarivo; Madagascar becomes a French protectorate, then a colony in 1896",
+   "source": {
+    "title": "Franco-Hova War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Franco-Hova_Wars"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MDG"
+     ],
+     "owner": "Madagascar",
+     "source": {
+      "title": "Merina Kingdom (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Merina_Kingdom"
+     }
+    },
+    {
+     "pieces": [
+      "MDG-5872"
+     ],
+     "owner": "France",
+     "territory": "Diego-Suarez",
+     "source": {
+      "title": "Colonie de Diego-Suarez (French Wikipedia)",
+      "url": "https://fr.wikipedia.org/wiki/Colonie_de_Diego-Suarez"
+     }
+    },
+    {
+     "pieces": [
+      "nosy-be"
+     ],
+     "owner": "France",
+     "territory": "Nosy Be",
+     "source": {
+      "title": "Nosy Be (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Nosy_Be"
+     }
+    },
+    {
+     "pieces": [
+      "sainte-marie"
+     ],
+     "owner": "France",
+     "territory": "Île Sainte-Marie",
+     "source": {
+      "title": "Île Sainte-Marie (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Île_Sainte-Marie"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1894-07-13",
+   "what": "The Upper Ubangi is made a territory of its own, and a convention with the Congo Free State fixes its border on the Mbomou (August 1894)",
+   "source": {
+    "title": "Ubangi-Shari (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Ubangi-Shari"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CAF-794",
+      "CAF-801",
+      "CAF-802",
+      "CAF-804",
+      "CAF-805",
+      "CAF-806",
+      "CAF-807",
+      "CAF-808",
+      "CAF-809",
+      "CAF-810",
+      "CAF-812",
+      "CAF-866",
+      "CAF-867",
+      "CAF-868",
+      "neukamerun-ouham"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1894-03-15",
+   "what": "A Franco-German agreement fixes the border between Kamerun and French Congo as far as Lake Chad",
+   "source": {
+    "title": "Kamerun (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kamerun"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "bec-de-canard-chari-baguirmi",
+      "bec-de-canard-mayo-kebbi-est",
+      "bec-de-canard-tandjile"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1893-12-16",
+   "what": "A French flotilla reaches Timbuktu; Colonel Joffre's column arrives in February 1894",
+   "source": {
+    "title": "Timbuktu (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Timbuktu"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "MLI-2688"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1893-10-03",
+   "what": "By the Franco-Siamese Treaty, after the Paknam incident, Siam cedes the land east of the Mekong, which becomes French Laos",
+   "source": {
+    "title": "Franco-Siamese crisis of 1893 (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Franco-Siamese_crisis_of_1893"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "LAO",
+      "KHM-1792",
+      "KHM-1795",
+      "saravan-north"
+     ],
+     "owner": "Thailand",
+     "source": {
+      "title": "Rattanakosin Kingdom (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Rattanakosin_Kingdom_(1782%E2%80%931932)"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1893-04-12",
+   "what": "French troops take Djenné, then Bandiagara, in the inland delta of the Niger",
+   "source": {
+    "title": "Djenné (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Djenn%C3%A9"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "MLI-2809"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1893-03-10",
+   "what": "Ivory Coast is made a colony of its own, with the land inland of the coast placed under French protection by treaties",
+   "source": {
+    "title": "Ivory Coast (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Ivory_Coast"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CIV-3460",
+      "CIV-3452",
+      "CIV-3461",
+      "CIV-3450",
+      "CIV-3445",
+      "CIV-3444",
+      "CIV-3446",
+      "CIV-3448",
+      "CIV-3459",
+      "CIV-3441"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1893-01-01",
+   "what": "The French aviso Eure takes possession of the Kerguelen Islands again; Saint-Paul and Amsterdam are claimed in the same campaign, and the Crozet Islands are counted with them",
+   "source": {
+    "title": "Kerguelen Islands (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kerguelen_Islands"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ATF-5916",
+      "ATF-5917",
+      "ATF-5918"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1892-11-17",
+   "what": "French troops under Alfred Dodds take Abomey, the capital of the Kingdom of Dahomey",
+   "source": {
+    "title": "Second Franco-Dahomean War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Second_Franco-Dahomean_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "BEN-2178",
+      "BEN-2171",
+      "BEN-2179",
+      "BEN-2176",
+      "BEN-2174",
+      "BEN-2180"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1892-08-23",
+   "what": "France annexes the Glorioso Islands, then Juan de Nova, Europa and Bassas da India in 1897",
+   "source": {
+    "title": "Scattered Islands in the Indian Ocean (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Scattered_Islands_in_the_Indian_Ocean"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ATF-5919"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Scattered Islands in the Indian Ocean (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Scattered_Islands_in_the_Indian_Ocean"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1891-04-07",
+   "what": "French troops take Kankan from Samory Touré, and France occupies Upper Guinea",
+   "source": {
+    "title": "Samori Ture (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Samori_Ture"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "GIN-5657",
+      "GIN-5641",
+      "GIN-5647",
+      "GIN-5654",
+      "GIN-5642",
+      "GIN-5634",
+      "GIN-5632",
+      "GIN-5636",
+      "GIN-5644"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1891-01-01",
+   "what": "Archinard takes Nioro, capital of the Toucouleur Kaarta; the Hodh to its north comes under French Sudan",
+   "source": {
+    "title": "Louis Archinard (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Louis_Archinard"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "MRT-2796",
+      "MRT-2797"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Louis Archinard (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Louis_Archinard"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1890-04-06",
+   "what": "Colonel Archinard takes Ségou, the capital of the Toucouleur Empire",
+   "source": {
+    "title": "Toucouleur Empire (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Toucouleur_Empire"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "MLI-2810"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1889-06-26",
+   "what": "The post of Bangui is founded on the Ubangi",
+   "source": {
+    "title": "Bangui (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Bangui"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "CAF-1460",
+      "CAF-4856",
+      "CAF-795",
+      "neukamerun-lobaye",
+      "neukamerun-ombella-m-poko"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1888-04-22",
+   "what": "Portugal hands over Ziguinchor, in the Casamance, as agreed in the convention of 1886",
+   "source": {
+    "title": "Ziguinchor (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Ziguinchor"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "SEN-775"
+     ],
+     "owner": "Portugal",
+     "territory": "Portuguese Guinea",
+     "source": {
+      "title": "Portuguese Guinea (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Portuguese_Guinea"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1888-03-16",
+   "what": "France annexes the Leeward Islands of Tahiti (Raiatea, Huahine, Bora Bora); fighting goes on until 1897",
+   "source": {
+    "title": "Leeward Islands War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Leeward_Islands_War"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "PYF-4964"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1888-02-16",
+   "what": "The kings of Sigave and Alo, on Futuna, sign a treaty of French protection",
+   "source": {
+    "title": "Wallis and Futuna (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Wallis_and_Futuna"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "WLF-4995",
+      "WLF-4997"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1888-02-09",
+   "what": "An Anglo-French agreement fixes the border of the French coast of the Gulf of Tadjoura; the port of Djibouti is founded",
+   "source": {
+    "title": "French Somaliland (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_Somaliland"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "DJI-1566",
+      "DJI-1567",
+      "DJI-1568",
+      "DJI-1569"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1887-04-05",
+   "what": "The queen of Wallis (Uvea) signs a treaty of French protection",
+   "source": {
+    "title": "Wallis and Futuna (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Wallis_and_Futuna"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "WLF-4996"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1886-04-21",
+   "what": "The sultans of Grande Comore, Anjouan and Mohéli accept French protection (January to April 1886)",
+   "source": {
+    "title": "Comoros (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Comoros"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "COM"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1885-12-17",
+   "what": "After the first Franco-Hova War, a treaty gives France the bay of Diego-Suarez",
+   "source": {
+    "title": "Franco-Hova War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Franco-Hova_Wars"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MDG-5872"
+     ],
+     "owner": "Madagascar",
+     "source": {
+      "title": "Merina Kingdom (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Merina_Kingdom"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1885-02-05",
+   "what": "A convention with the International Association of the Congo gives France the right bank of the Congo and the Ubangi",
+   "source": {
+    "title": "French Congo (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_Congo"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "COG-3342",
+      "COG-2185",
+      "COG-2880",
+      "COG-2838",
+      "neukamerun-cuvette",
+      "neukamerun-likouala",
+      "neukamerun-sangha"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1884-07-14",
+   "what": "Gustav Nachtigal raises the German flag in Douala: Kamerun becomes a German protectorate",
+   "source": {
+    "title": "Kamerun (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kamerun"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "CMR"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1884-07-05",
+   "what": "Gustav Nachtigal signs a treaty at Togoville: Togoland becomes a German protectorate",
+   "source": {
+    "title": "Togoland (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Togoland"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TGO"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1884-06-01",
+   "what": "France settles at Obock, bought in 1862, and takes Tadjoura under its protection (1884)",
+   "source": {
+    "title": "Obock (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Obock"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "DJI-1570",
+      "DJI-1571"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1883-08-25",
+   "what": "By the Treaty of Huế, Vietnam accepts a French protectorate over Annam and Tonkin, after French troops take Hanoi",
+   "source": {
+    "title": "Treaty of Huế (1883) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Hu%E1%BA%BF_(1883)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "VNM-456",
+      "VNM-474",
+      "VNM-475",
+      "VNM-476",
+      "VNM-477",
+      "VNM-478",
+      "VNM-479",
+      "VNM-480",
+      "VNM-481",
+      "VNM-482",
+      "VNM-4835",
+      "VNM-485",
+      "VNM-486",
+      "VNM-487",
+      "VNM-488",
+      "VNM-489",
+      "VNM-490",
+      "VNM-491",
+      "VNM-496",
+      "quang-tri-north",
+      "VNM-429",
+      "VNM-450",
+      "VNM-451",
+      "VNM-452",
+      "VNM-453",
+      "VNM-454",
+      "VNM-455",
+      "VNM-457",
+      "VNM-458",
+      "VNM-459",
+      "VNM-460",
+      "VNM-4600",
+      "VNM-461",
+      "VNM-462",
+      "VNM-463",
+      "VNM-464",
+      "VNM-466",
+      "VNM-467",
+      "VNM-468",
+      "VNM-469",
+      "VNM-470",
+      "VNM-471",
+      "VNM-511",
+      "VNM-512",
+      "VNM-5483"
+     ],
+     "owner": "Vietnam",
+     "source": {
+      "title": "Nguyễn dynasty (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Nguy%E1%BB%85n_dynasty"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1883-03-12",
+   "what": "A treaty with the king of Loango gives France the coast of today's Republic of the Congo, around Pointe-Noire",
+   "source": {
+    "title": "French Congo (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_Congo"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "COG-3343",
+      "COG-5855",
+      "COG-3345",
+      "COG-2626",
+      "COG-3344"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1883-02-01",
+   "what": "Colonel Borgnis-Desbordes founds the fort of Bamako on the Niger",
+   "source": {
+    "title": "Bamako (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Bamako"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "MLI-2792",
+      "MLI-4860"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1882-10-12",
+   "what": "The Rivières du Sud, the coast of today's Guinea, are made a colony apart from Senegal",
+   "source": {
+    "title": "French Guinea (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_Guinea"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GIN-5629",
+      "GIN-5628",
+      "GIN-5635",
+      "GIN-5630",
+      "GIN-5631",
+      "GIN-5637",
+      "GIN-5643",
+      "GIN-5638"
+     ],
+     "owner": "France",
+     "territory": "French Senegal",
+     "source": {
+      "title": "French Senegal (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Senegal"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1881-05-12",
+   "what": "By the Treaty of Bardo, the Bey of Tunis accepts a French protectorate",
+   "source": {
+    "title": "Treaty of Bardo (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Bardo"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TUN"
+     ],
+     "owner": "Tunisia",
+     "source": {
+      "title": "Beylik of Tunis (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Beylik_of_Tunis"
+     }
     }
    ]
   }
