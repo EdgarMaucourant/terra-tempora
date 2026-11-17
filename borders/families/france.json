@@ -14,7 +14,7 @@
     "SPM",
     "WLF"
    ],
-   "from": 1914,
+   "from": 1900,
    "why": "Metropolitan France with Corsica, the overseas departments (Guadeloupe, Martinique, French Guiana, Réunion, and Mayotte since 2011) and the overseas territories (Saint Pierre and Miquelon, Saint Barthélemy, Saint Martin, New Caledonia, French Polynesia, Wallis and Futuna, the French Southern and Antarctic Lands, Clipperton), whose borders have not moved since 1957"
   },
   {
@@ -24,7 +24,7 @@
     "COM",
     "VUT"
    ],
-   "from": 1914,
+   "from": 1900,
    "why": "Algeria, Djibouti, the Comoros and Vanuatu, French (Vanuatu Anglo-French) until their independence, with today's borders"
   },
   {
@@ -45,7 +45,7 @@
     "CMR",
     "MDG"
    ],
-   "from": 1914,
+   "from": 1900,
    "why": "French West Africa, French Equatorial Africa, French Togoland, French Cameroon and Madagascar, with today's borders, from French rule to independence, and the British Southern Cameroons (Northwest and Southwest of today's Cameroon) until they join Cameroon in 1961"
   },
   {
@@ -73,7 +73,7 @@
     "MAR-3456",
     "TUN"
    ],
-   "from": 1914,
+   "from": 1900,
    "why": "Morocco (without Western Sahara) and Tunisia: the French protectorates until 1956, with Spain's northern zone, the Tangier International Zone, Cape Juby (Spanish until 1958) and Ifni (Spanish until 1969)"
   },
   {
@@ -82,7 +82,7 @@
     "LAO",
     "KHM"
    ],
-   "from": 1914,
+   "from": 1900,
    "why": "French Indochina: Vietnam (Tonkin, Annam and Cochinchina, then the State of Vietnam), Laos and Cambodia, with today's borders, until independence in 1953 and 1954, then North and South Vietnam until 1976"
   },
   {
@@ -91,14 +91,14 @@
     "mahe",
     "chandernagore"
    ],
-   "from": 1914,
+   "from": 1900,
    "why": "French India: Pondichéry, Karikal, Mahé and Yanaon (today's Puducherry, with Mahé drawn where it is, not where Natural Earth puts it) and Chandernagore, until they pass to India"
   },
   {
    "pieces": [
     "DEU-1581"
    ],
-   "from": 1914,
+   "from": 1900,
    "why": "The Saar: a League of Nations territory from 1920 to 1935, German again until 1945, occupied by France, a protectorate of France from 1946 until it joins West Germany in 1957, with today's Saarland borders"
   },
   {
@@ -108,14 +108,14 @@
     "LBN",
     "TUR-2289"
    ],
-   "from": 1914,
+   "from": 1900,
    "why": "Syria (with the Golan Heights), Lebanon and the Sanjak of Alexandretta (Hatay): French mandates under the League of Nations, with the states France set up in Syria (Aleppo, Damascus, the Alawites, Jabal Druze) until their union, with today's borders; Hatay State in 1938, Turkish from June 1939"
   },
   {
    "pieces": [
     "guangzhouwan"
    ],
-   "from": 1914,
+   "from": 1900,
    "why": "Guangzhouwan, leased to France until 1945, then part of China"
   }
  ],
@@ -3347,6 +3347,24 @@
    ]
   },
   {
+   "date": "1934-05-31",
+   "what": "French troops occupy Tindouf; with the link-up of the columns from Morocco, Algeria and Mauritania, the far west of the Sahara, the last land out of French hands, is occupied",
+   "source": {
+    "title": "Tindouf (French Wikipedia)",
+    "url": "https://fr.wikipedia.org/wiki/Tindouf"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "DZA-2150",
+      "MRT-2783"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
    "date": "1934-04-06",
    "what": "Spain takes possession of Ifni, assigned to it in 1912",
    "source": {
@@ -3410,6 +3428,23 @@
       "title": "Colony of Niger (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Colony_of_Niger"
      }
+    }
+   ]
+  },
+  {
+   "date": "1929-01-01",
+   "what": "French troops come back to the Tibesti and occupy it for good (1929)",
+   "source": {
+    "title": "Tibesti Mountains (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tibesti_Mountains"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TCD-5578"
+     ],
+     "owner": null
     }
    ]
   },
@@ -3864,7 +3899,10 @@
       "TCD-5580",
       "TCD-5581",
       "TCD-5582",
-      "TCD-5583"
+      "TCD-5583",
+      "bec-de-canard-chari-baguirmi",
+      "bec-de-canard-mayo-kebbi-est",
+      "bec-de-canard-tandjile"
      ],
      "owner": "France",
      "territory": "Ubangi-Shari",
@@ -4264,7 +4302,29 @@
    ]
   },
   {
-   "date": "1916-06-29",
+   "date": "1916-08-01",
+   "what": "Under attack from the Toubou and the Senussi, French troops leave the Tibesti (1916)",
+   "source": {
+    "title": "Tibesti Mountains (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tibesti_Mountains"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TCD-5578"
+     ],
+     "owner": "France",
+     "territory": "Colony of Niger",
+     "source": {
+      "title": "Colony of Niger (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Colony_of_Niger"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1916-07-29",
    "what": "Spain occupies Cape Juby, assigned to it in 1912",
    "source": {
     "title": "Cape Juby (Wikipedia)",
@@ -4274,7 +4334,8 @@
    "before": [
     {
      "pieces": [
-      "cape-juby-guelmim"
+      "cape-juby-guelmim",
+      "MAR-3456"
      ],
      "owner": "France",
      "territory": "French Morocco",
@@ -4313,6 +4374,759 @@
       "title": "Kamerun (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Kamerun"
      }
+    }
+   ]
+  },
+  {
+   "date": "1914-09-30",
+   "what": "French troops take back Neukamerun, ceded to Germany in 1911",
+   "source": {
+    "title": "Kamerun campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kamerun_campaign"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "CAF-805",
+      "TCD-4858",
+      "CAF-802",
+      "CAF-804",
+      "CAF-801",
+      "TCD-1484",
+      "neukamerun-cuvette",
+      "neukamerun-estuaire",
+      "neukamerun-likouala",
+      "neukamerun-lobaye",
+      "neukamerun-logone-oriental",
+      "neukamerun-mayo-kebbi-est",
+      "neukamerun-ombella-m-poko",
+      "neukamerun-ouham",
+      "neukamerun-sangha",
+      "neukamerun-tandjile",
+      "neukamerun-wouleu-ntem"
+     ],
+     "owner": "Germany",
+     "territory": "Kamerun",
+     "source": {
+      "title": "Neukamerun (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Neukamerun"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1914-08-26",
+   "what": "The Germans in Togoland surrender to British and French troops",
+   "source": {
+    "title": "Togoland campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Togoland_campaign"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TGO-87",
+      "TGO-86",
+      "TGO-88",
+      "TGO-89",
+      "TGO-90"
+     ],
+     "owner": "Germany",
+     "territory": "Togoland",
+     "source": {
+      "title": "Togoland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Togoland"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1914-08-24",
+   "what": "German armies invade northern France",
+   "source": {
+    "title": "Western Front (World War I) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Western_Front_(World_War_I)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "nord-occupied-1914-1918",
+      "pas-de-calais-occupied-1914-1918",
+      "aisne-occupied-1914-1918",
+      "marne-occupied-1914-1918",
+      "meuse-occupied-1914-1918",
+      "meurthe-et-moselle-occupied-1914-1918",
+      "vosges-occupied-1914-1918",
+      "FRA-5268",
+      "pas-de-calais-occupied-1914-1917",
+      "somme-occupied-1914-1917",
+      "oise-occupied-1914-1917",
+      "aisne-occupied-1914-1917"
+     ],
+     "owner": "France",
+     "source": {
+      "title": "French Third Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Third_Republic"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1914-08-07",
+   "what": "French troops enter southern Alsace and take Thann",
+   "source": {
+    "title": "Alsace–Lorraine (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Alsace–Lorraine"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "south-alsace"
+     ],
+     "owner": "Germany",
+     "territory": "Alsace–Lorraine",
+     "source": {
+      "title": "Alsace–Lorraine (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Alsace–Lorraine"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1914-03-01",
+   "what": "A French column from the Kaouar, in Niger, enters the Tibesti (early 1914)",
+   "source": {
+    "title": "Tibesti Mountains (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tibesti_Mountains"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TCD-5578"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1913-11-27",
+   "what": "Colonel Largeau takes Aïn Galaka from the Senussi, then Faya and Gouro: Borkou and Ennedi come under French rule",
+   "source": {
+    "title": "Victor Emmanuel Largeau (French Wikipedia)",
+    "url": "https://fr.wikipedia.org/wiki/Victor_Emmanuel_Largeau"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "TCD-5577",
+      "TCD-5579"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1912-11-27",
+   "what": "By the Treaty of Madrid, France gives Spain a zone of its protectorate in the north of Morocco",
+   "source": {
+    "title": "Spanish protectorate in Morocco (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Spanish_protectorate_in_Morocco"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "MAR-1445",
+      "spanish-morocco-taza",
+      "spanish-morocco-oriental"
+     ],
+     "owner": "France",
+     "territory": "French Morocco",
+     "source": {
+      "title": "French protectorate in Morocco (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_protectorate_in_Morocco"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1912-03-30",
+   "what": "By the Treaty of Fes, the Sultan of Morocco accepts a French protectorate",
+   "source": {
+    "title": "Treaty of Fes (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Fes"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MAR-1445",
+      "MAR-1446",
+      "MAR-1447",
+      "MAR-1448",
+      "MAR-1451",
+      "MAR-1452",
+      "MAR-1453",
+      "MAR-1455",
+      "MAR-1456",
+      "MAR-1457",
+      "MAR-3457",
+      "cape-juby-guelmim",
+      "ifni-guelmim",
+      "ifni-souss",
+      "spanish-morocco-oriental",
+      "spanish-morocco-taza",
+      "tangier-zone",
+      "MAR-3456"
+     ],
+     "owner": "Morocco",
+     "source": {
+      "title": "Morocco (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Morocco"
+     }
+    },
+    {
+     "pieces": [
+      "MAR-1449",
+      "MAR-1450"
+     ],
+     "owner": "Morocco",
+     "source": {
+      "title": "Morocco (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Morocco"
+     },
+     "hatch": {
+      "by": "France",
+      "since": "1907-08-07",
+      "note": "Occupied by France after the bombardment of Casablanca in August 1907",
+      "source": {
+       "title": "Bombardment of Casablanca (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Bombardment_of_Casablanca"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "MAR-1454"
+     ],
+     "owner": "Morocco",
+     "source": {
+      "title": "French conquest of Morocco (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_conquest_of_Morocco"
+     },
+     "hatch": {
+      "by": "France",
+      "since": "1907-03-29",
+      "note": "Oujda occupied by France in March 1907, then the rest of eastern Morocco from Algeria",
+      "source": {
+       "title": "French conquest of Morocco (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/French_conquest_of_Morocco"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1912-01-01",
+   "what": "The Military Territory of Niger, with Tibesti, is split off from Upper Senegal and Niger",
+   "source": {
+    "title": "Colony of Niger (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Colony_of_Niger"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "NER-4859",
+      "NER-796",
+      "NER-800",
+      "NER-91",
+      "NER-92",
+      "NER-93",
+      "NER-94",
+      "NER-95"
+     ],
+     "owner": "France",
+     "territory": "Upper Senegal and Niger",
+     "source": {
+      "title": "Upper Senegal and Niger (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Upper_Senegal_and_Niger"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1911-11-04",
+   "what": "By the Morocco–Congo Treaty, after the Agadir Crisis, France cedes Neukamerun to Germany and gets the Bec de canard between the Logone and the Chari",
+   "source": {
+    "title": "Morocco–Congo Treaty (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Morocco–Congo_Treaty"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "neukamerun-estuaire",
+      "neukamerun-wouleu-ntem"
+     ],
+     "owner": "France",
+     "territory": "French Gabon",
+     "source": {
+      "title": "Gabon (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gabon"
+     }
+    },
+    {
+     "pieces": [
+      "neukamerun-cuvette",
+      "neukamerun-likouala",
+      "neukamerun-sangha"
+     ],
+     "owner": "France",
+     "territory": "French Congo",
+     "source": {
+      "title": "French Congo (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Congo"
+     }
+    },
+    {
+     "pieces": [
+      "CAF-805",
+      "CAF-802",
+      "CAF-804",
+      "CAF-801",
+      "neukamerun-lobaye",
+      "neukamerun-ombella-m-poko",
+      "neukamerun-ouham",
+      "TCD-4858",
+      "TCD-1484",
+      "neukamerun-logone-oriental",
+      "neukamerun-mayo-kebbi-est",
+      "neukamerun-tandjile"
+     ],
+     "owner": "France",
+     "territory": "Ubangi-Shari",
+     "source": {
+      "title": "Ubangi-Shari (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ubangi-Shari"
+     }
+    },
+    {
+     "pieces": [
+      "bec-de-canard-chari-baguirmi",
+      "bec-de-canard-mayo-kebbi-est",
+      "bec-de-canard-tandjile"
+     ],
+     "owner": "Germany",
+     "territory": "Kamerun",
+     "source": {
+      "title": "Kamerun (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kamerun"
+     }
+    }
+   ],
+   "map": "https://commons.wikimedia.org/wiki/File:Cameroon_border_changes.svg"
+  },
+  {
+   "date": "1909-09-30",
+   "what": "Fort Polignac (Illizi) is built in the Tassili n'Ajjer (September 1909); Djanet, further south, is taken on 27 November 1911",
+   "source": {
+    "title": "Illizi (French Wikipedia)",
+    "url": "https://fr.wikipedia.org/wiki/Illizi"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "DZA-2188"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1909-06-02",
+   "what": "French troops take Abéché, the capital of Wadai; the sultan fights on until October 1911",
+   "source": {
+    "title": "Wadai War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Wadai_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "TCD-1475",
+      "TCD-1473",
+      "TCD-5582",
+      "TCD-1489"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1909-01-09",
+   "what": "Colonel Gouraud's column takes Atar and conquers the Adrar of Mauritania",
+   "source": {
+    "title": "Colonial Mauritania (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Colonial_Mauritania"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "MRT-2795",
+      "MRT-2786",
+      "MRT-2785"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1908-01-01",
+   "what": "A first French post is set up at Kidal, in the Adrar des Ifoghas (1908)",
+   "source": {
+    "title": "Adrar des Ifoghas (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Adrar_des_Ifoghas"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "MLI-2689"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1907-08-07",
+   "what": "France bombards Casablanca and lands troops, then occupies the Chaouia plain around it",
+   "source": {
+    "title": "Bombardment of Casablanca (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Bombardment_of_Casablanca"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "MAR-1449",
+      "MAR-1450"
+     ],
+     "owner": "Morocco",
+     "source": {
+      "title": "Morocco (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Morocco"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1907-03-29",
+   "what": "French troops from Algeria occupy Oujda, then spread over eastern Morocco",
+   "source": {
+    "title": "French conquest of Morocco (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_conquest_of_Morocco"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "MAR-1454"
+     ],
+     "owner": "Morocco",
+     "source": {
+      "title": "Morocco (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Morocco"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1907-03-23",
+   "what": "By the Franco-Siamese Treaty of 1907, Siam cedes Battambang, Siem Reap and Sisophon to Cambodia",
+   "source": {
+    "title": "Franco-Siamese Treaty of 1907 (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Franco-Siamese_Treaty_of_1907"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "KHM-1778",
+      "KHM-1783",
+      "KHM-1777",
+      "KHM-1782",
+      "KHM-1781",
+      "angkor"
+     ],
+     "owner": "Thailand",
+     "source": {
+      "title": "Rattanakosin Kingdom (1782–1932) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Rattanakosin_Kingdom_(1782–1932)"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1906-02-11",
+   "what": "Chad is joined to Ubangi-Shari as the colony of Ubangi-Shari-Chad",
+   "source": {
+    "title": "Ubangi-Shari (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Ubangi-Shari"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "TCD-1464",
+      "TCD-1465",
+      "TCD-1466",
+      "TCD-1472",
+      "TCD-1474",
+      "TCD-1485",
+      "TCD-1486",
+      "TCD-1487",
+      "TCD-1488",
+      "TCD-4857",
+      "TCD-5580",
+      "TCD-5581",
+      "TCD-5583",
+      "TCD-4858",
+      "TCD-1484",
+      "neukamerun-logone-oriental",
+      "neukamerun-mayo-kebbi-est",
+      "neukamerun-tandjile"
+     ],
+     "owner": "France",
+     "territory": "French Chad",
+     "source": {
+      "title": "French Chad (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Chad"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1905-05-12",
+   "what": "The French occupy Tidjikja and the Tagant, where Xavier Coppolani is killed on 12 May 1905",
+   "source": {
+    "title": "Colonial Mauritania (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Colonial_Mauritania"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "MRT-2798",
+      "MRT-2789"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1904-10-18",
+   "what": "The Civil Territory of Mauritania is created, after Xavier Coppolani has brought the emirates of Trarza and Brakna under French protection (1902 to 1904)",
+   "source": {
+    "title": "Colonial Mauritania (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Colonial_Mauritania"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "MRT-2788",
+      "MRT-2784",
+      "MRT-2787"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1904-09-01",
+   "what": "French troops occupy Agadez and the Aïr (1904; a lasting garrison from 1906, the year Bilma is occupied)",
+   "source": {
+    "title": "Sultanate of Agadez (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Sultanate_of_Agadez"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "NER-800"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1904-02-13",
+   "what": "By the Franco-Siamese Treaty of 1904, Siam cedes Sainyabuli and the land west of the Mekong at Champasak to Laos, and Mlu Prey and Koh Kong to Cambodia; Stung Treng, with today's Ratanakiri, passes from Laos to Cambodia",
+   "source": {
+    "title": "Franco-Siamese Treaty of 1904 (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Franco-Siamese_Treaty_of_1904"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "LAO-3278",
+      "champasak-west",
+      "KHM-1779",
+      "KHM-1791",
+      "stung-treng-west"
+     ],
+     "owner": "Thailand",
+     "source": {
+      "title": "Rattanakosin Kingdom (1782–1932) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Rattanakosin_Kingdom_(1782–1932)"
+     }
+    },
+    {
+     "pieces": [
+      "KHM-1792",
+      "KHM-1795"
+     ],
+     "owner": "France",
+     "territory": "French Laos",
+     "source": {
+      "title": "French Laos (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Laos"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1903-12-29",
+   "what": "French Congo is divided into the colonies of Gabon and Middle Congo and the territory of Ubangi-Shari",
+   "source": {
+    "title": "French Congo (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_Congo"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GAB-2168",
+      "GAB-2186",
+      "GAB-2187",
+      "GAB-2621",
+      "GAB-2622",
+      "GAB-2623",
+      "GAB-2624",
+      "GAB-2627",
+      "GAB-2628",
+      "CAF-1460",
+      "CAF-4856",
+      "CAF-794",
+      "CAF-795",
+      "CAF-806",
+      "CAF-807",
+      "CAF-808",
+      "CAF-809",
+      "CAF-810",
+      "CAF-812",
+      "CAF-866",
+      "CAF-867",
+      "CAF-868",
+      "neukamerun-estuaire",
+      "neukamerun-wouleu-ntem",
+      "CAF-805",
+      "CAF-802",
+      "CAF-804",
+      "CAF-801",
+      "neukamerun-lobaye",
+      "neukamerun-ombella-m-poko",
+      "neukamerun-ouham"
+     ],
+     "owner": "France",
+     "territory": "French Congo",
+     "source": {
+      "title": "French Congo (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Congo"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1902-05-07",
+   "what": "A French camel column beats the Kel Ahaggar Tuareg at Tit: the Hoggar is opened to the French, and its Tuareg submit in 1904",
+   "source": {
+    "title": "Combat de Tit (French Wikipedia)",
+    "url": "https://fr.wikipedia.org/wiki/Bataille_de_Tit"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "DZA-2189"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1902-01-20",
+   "what": "French troops take the Senussi lodge of Bir Alali and occupy Kanem",
+   "source": {
+    "title": "Kanem (historical region) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kanem_(historical_region)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "TCD-1465",
+      "TCD-1466",
+      "TCD-5581"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1900-04-22",
+   "what": "France beats Rabih az-Zubayr at Kousséri and takes over his lands on the Chari; Fort-Lamy is founded",
+   "source": {
+    "title": "Battle of Kousséri (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Kousséri"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TCD-5580",
+      "TCD-1464",
+      "TCD-4857"
+     ],
+     "owner": null
+    }
+   ]
+  },
+  {
+   "date": "1900-04-05",
+   "what": "French columns from Algeria occupy the oases of the Tidikelt (In Salah, January 1900), the Gourara, the Tuat and the Saoura valley (Igli, April 1900)",
+   "source": {
+    "title": "Touat (French Wikipedia)",
+    "url": "https://fr.wikipedia.org/wiki/Touat"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "tidikelt",
+      "DZA-2143",
+      "DZA-2148"
+     ],
+     "owner": null
     }
    ]
   }

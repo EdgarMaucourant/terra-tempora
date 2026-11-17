@@ -309,9 +309,11 @@ for (let year = TODAY; year >= firstReviewed; year--) {
     else {
       if (s.territory) {
         // A territory can belong to a group of territories too (Tonkin in French Indochina).
-        // The group ends at its "groupUntil" date (French West Africa in 1958).
+        // The group starts at its "groupFrom" date (French Equatorial Africa in
+        // 1910) and ends at its "groupUntil" date (French West Africa in 1958).
         const r = realms[s.territory];
-        const group = r?.group && !(r.groupUntil && r.groupUntil <= `${year}-12-31`) ? r.group : null;
+        const inGroup = !(r?.groupFrom && r.groupFrom > `${year}-12-31`) && !(r?.groupUntil && r.groupUntil <= `${year}-12-31`);
+        const group = r?.group && inGroup ? r.group : null;
         add(`territory|${s.owner}|${s.territory}`, id, { name: s.territory, partOf: s.owner, ...(group && { groups: [group] }) });
         // The group's own outline, drawn over its members with its name.
         if (group) add(`group|${group}`, id, { kind: "group", name: group });
@@ -344,8 +346,11 @@ for (let year = TODAY; year >= firstReviewed; year--) {
     if (g.meta.kind) continue;
     // A territory carries its state's name on the map, "Azores (Portugal)",
     // unless its own name already says it (Portuguese Angola: withOwner false).
-    const owner = g.meta.partOf && realms[g.meta.name]?.withOwner !== false ? g.meta.partOf : null;
-    const display = periodName(g.meta.name, year) ?? (owner ? `${g.meta.name} (${owner})` : undefined);
+    // A period can say otherwise (Middle Congo, a period of French Congo).
+    const period = periodName(g.meta.name, year);
+    const withOwner = (period && periodOf(g.meta.name, year).withOwner) ?? realms[g.meta.name]?.withOwner;
+    const owner = g.meta.partOf && withOwner !== false ? g.meta.partOf : null;
+    const display = owner ? `${period ?? g.meta.name} (${owner})` : period;
     g.meta = { ...g.meta, ...(display && { display }), source: sourceOf(changeFor(g.ids, year), year, g.ids) };
     groups.set(key, g);
   }
@@ -543,11 +548,13 @@ for (const [name, r] of Object.entries(realms)) {
 // "Azores (Portugal)", in French and Spanish too.
 for (const s of shapes) {
   if (!s.display || names[s.display] || !s.partOf) continue;
-  const own = realms[s.name];
-  const owner = names[s.display.slice(s.name.length + 2, -1)] ?? {};
+  // The name shown is the realm's or its period's (Ubangi-Shari-Chad (France)).
+  const base = s.display.endsWith(` (${s.partOf})`) ? s.display.slice(0, -s.partOf.length - 3) : s.name;
+  const own = base === s.name ? realms[s.name] : names[base];
+  const owner = names[s.partOf] ?? {};
   // A name that already says its owner (San Martín (Francia)) is kept as it is.
   const label = (name, of) => (name.endsWith(`(${of})`) ? name : `${name} (${of})`);
-  names[s.display] = { fr: label(own?.fr ?? s.name, owner.fr ?? s.partOf), es: label(own?.es ?? s.name, owner.es ?? s.partOf) };
+  names[s.display] = { fr: label(own?.fr ?? base, owner.fr ?? s.partOf), es: label(own?.es ?? base, owner.es ?? s.partOf) };
 }
 // Every place of today (a country, or a territory such as Macau) with the
 // realms and territories that held its land, oldest first.

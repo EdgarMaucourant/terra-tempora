@@ -32,6 +32,9 @@
  "kazakhstan": {
   "name": "Kazajistán"
  },
+ "upper-senegal-and-niger": {
+  "name": "Alto Senegal y Níger"
+ },
  "french-equatorial-africa": {
   "name": "África Ecuatorial Francesa"
  },
@@ -77,9 +80,6 @@
  "mongolia": {
   "name": "Mongolia"
  },
- "upper-senegal-and-niger": {
-  "name": "Alto Senegal y Níger"
- },
  "french-sudan": {
   "name": "Sudán francés"
  },
@@ -103,6 +103,9 @@
  },
  "portuguese-angola": {
   "name": "Angola portuguesa"
+ },
+ "french-congo": {
+  "name": "Congo francés"
  },
  "south-africa": {
   "name": "Sudáfrica"
@@ -236,14 +239,11 @@
  "paraguay": {
   "name": "Paraguay"
  },
- "zimbabwe": {
-  "name": "Zimbabue"
- },
  "french-morocco": {
   "name": "Protectorado francés de Marruecos"
  },
- "french-congo": {
-  "name": "Congo francés"
+ "zimbabwe": {
+  "name": "Zimbabue"
  },
  "norway": {
   "name": "Noruega"
