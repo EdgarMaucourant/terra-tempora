@@ -4,7 +4,7 @@ import type { Feature, MultiPolygon, Polygon } from "geojson";
 import { feature } from "topojson-client";
 import landUrl from "world-atlas/land-50m.json?url";
 import { MUTED } from "./colors";
-import { foldedInGroup, highlightOf, type Polity } from "./data";
+import { foldedInGroup, highlightOf, withClosedGroups, type Polity } from "./data";
 import { shapeOpacity } from "./polityLayer";
 import { badgeUrl, eventOpacity, supersededYears, type EventKind, type HistoryEvent } from "./events";
 import { PIN_HEIGHT, PIN_URL, PIN_WIDTH } from "./pin";
@@ -89,6 +89,8 @@ export class MapView {
   private land: GeoPermissibleObjects | null = null;
   private landLoading: Promise<void> | null = null;
   private highlight = new Map<string, string>();
+  /** The colours asked for, before closed groups take one colour. */
+  private chosen = new Map<string, string>();
   private hovered: string | null = null;
   /** Today's border of the country being looked at, drawn dashed over everything. */
   private outline: Shape | null = null;
@@ -149,6 +151,8 @@ export class MapView {
       this.polities.set(p.id, p);
       this.shapes.delete(p.id);
     }
+    // A group's members, now known, take its colour.
+    if (this.chosen.size) this.highlight = withClosedGroups(this.chosen, this.polities.values(), this.openGroups);
   }
 
   private shapeOf(p: Polity): Shape {
@@ -205,7 +209,8 @@ export class MapView {
   }
 
   setHighlight(colors: Map<string, string>) {
-    this.highlight = new Map(colors);
+    this.chosen = new Map(colors);
+    this.highlight = withClosedGroups(this.chosen, this.polities.values(), this.openGroups);
     this.draw();
   }
 
@@ -216,6 +221,7 @@ export class MapView {
   /** The groups whose territories are named, after a click inside them. */
   setOpenGroups(groups: Iterable<string>) {
     this.openGroups = new Set(groups);
+    this.highlight = withClosedGroups(this.chosen, this.polities.values(), this.openGroups);
     this.draw();
   }
 
@@ -489,7 +495,7 @@ export class MapView {
     for (const { p, opacity } of [...context, ...featured]) {
       const shape = this.shapeOf(p);
       const color = highlightOf(this.highlight, p);
-      const hovered = !color && p.name === this.hovered;
+      const hovered = !color && !!this.hovered && (p.name === this.hovered || !!p.groups?.includes(this.hovered));
       ctx.beginPath();
       path(shape);
       ctx.globalAlpha = (color ? FEATURED_FILL_ALPHA : hovered ? HOVER_FILL_ALPHA : CONTEXT_FILL_ALPHA) * opacity;
@@ -571,8 +577,7 @@ export class MapView {
     // A group (French West Africa) is named alone until a click inside it:
     // its territories' names then take the place of its own.
     const groupNames = new Set(grouped.filter((g) => g.opacity > 0.5 && g.p.label).map((g) => g.p.name));
-    const folded = (p: Polity) =>
-      foldedInGroup(p, groupNames, this.openGroups, this.labelAll && this.highlight.has(p.name) && !(p.partOf && this.highlight.has(p.partOf)));
+    const folded = (p: Polity) => foldedInGroup(p, groupNames, this.openGroups);
     const minArea = CONTEXT_LABEL_AREA / Math.min(this.zoom, 8) ** 1.6;
     const candidates = this.drawn
       .filter(({ p }) => !p.kind && p.label && !folded(p) && (highlightOf(this.highlight, p) || p.area >= minArea || p.groups?.some((g) => groupNames.has(g))))
