@@ -22,7 +22,7 @@ import {
   VerticalOrigin,
 } from "cesium";
 import { MUTED } from "./colors";
-import { foldedInGroup, highlightOf, isOverlay, type Polity } from "./data";
+import { foldedInGroup, highlightOf, isOverlay, withClosedGroups, type Polity } from "./data";
 import { inRing } from "./frame";
 
 // Shapes float slightly above the globe surface so they never z-fight with it.
@@ -211,6 +211,8 @@ export class PolityLayer {
   private labels: LabelCollection;
   /** Colours of the highlighted realms, by Cliopatria name. Others are grey. */
   private highlight = new Map<string, string>();
+  /** The colours asked for, before closed groups take one colour. */
+  private chosen = new Map<string, string>();
   /** Name of the greyed realm under the pointer. */
   private hovered: string | null = null;
   /** Today's border of the country being looked at. */
@@ -247,6 +249,8 @@ export class PolityLayer {
       // A coarse outline already drawn stays until the detailed one is ready.
       if (known && this.drawn.has(known)) this.retiring.set(p.id, known);
     }
+    // A group's members, now known, take its colour.
+    if (this.chosen.size) this.applyHighlight();
   }
 
   /** The realm drawn by a picked piece of the globe, if it is one. */
@@ -306,11 +310,11 @@ export class PolityLayer {
     return undefined;
   }
 
-  /** Whether a group of territories (French West Africa) is outlined that year. */
-  groupShown(name: string, year: number): boolean {
+  /** The outline of a group of territories (French West Africa) drawn that year. */
+  groupAt(name: string, year: number): Polity | undefined {
     const y = Math.round(year);
-    for (const p of this.polities.values()) if (p.kind === "group" && p.name === name && y >= p.from && y <= p.to) return true;
-    return false;
+    for (const p of this.polities.values()) if (p.kind === "group" && p.name === name && y >= p.from && y <= p.to) return p;
+    return undefined;
   }
 
   /** The realms drawn at `year`, coloured or greyed, one shape per realm name. */
@@ -423,10 +427,19 @@ export class PolityLayer {
   /** The groups whose territories are named, after a click inside them. */
   setOpenGroups(groups: Iterable<string>) {
     this.openGroups = new Set(groups);
+    this.applyHighlight();
+    this.labelsDirty = true;
     this.scene.requestRender();
   }
 
   setHighlight(colors: Map<string, string>) {
+    this.chosen = new Map(colors);
+    this.applyHighlight();
+  }
+
+  /** The chosen colours, with each closed group in one colour. */
+  private applyHighlight() {
+    const colors = withClosedGroups(this.chosen, this.polities.values(), this.openGroups);
     const changed = new Set<string>();
     for (const [name, color] of colors) if (this.highlight.get(name) !== color) changed.add(name);
     for (const name of this.highlight.keys()) if (!colors.has(name)) changed.add(name);
@@ -502,14 +515,14 @@ export class PolityLayer {
         // The detailed outline waits, unseen, while the coarse one still shows.
         if (this.retiring.has(p.id)) continue;
       }
-      const hovered = !d.highlighted && p.name === this.hovered;
+      const hovered = !d.highlighted && !!this.hovered && (p.name === this.hovered || !!p.groups?.includes(this.hovered));
       for (const piece of d.pieces) piece.addOpacity(p, opacity, hovered);
       // Labels switch at the midpoint of a fade. Changing a label's colour
       // redraws its glyphs, which is too costly to do every frame.
       if (d.label) {
         const wanted =
           opacity > 0.5 &&
-          (p.kind === "group" ? !this.openGroups.has(p.name) : !foldedInGroup(p, groupNames, this.openGroups, this.labelAll && this.highlight.has(p.name) && !(p.partOf && this.highlight.has(p.partOf))));
+          (p.kind === "group" ? !this.openGroups.has(p.name) : !foldedInGroup(p, groupNames, this.openGroups));
         if (wanted !== d.wanted) this.labelsDirty = true;
         d.wanted = wanted;
         if (!wanted) d.label.show = false;

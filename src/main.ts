@@ -692,6 +692,15 @@ function showPlaceNow() {
 
 /** The groups whose territories are named, after a click inside them. */
 let openGroups = new Set<string>();
+/** The closed group a realm is drawn in this year (French Sudan in French West Africa), as its outline. */
+function closedGroupOf(p: Polity | null | undefined): Polity | undefined {
+  if (!p || p.kind) return undefined;
+  for (const g of p.groups ?? []) {
+    const outline = !openGroups.has(g) && layer.groupAt(g, year);
+    if (outline) return outline;
+  }
+  return undefined;
+}
 function setOpenGroups(groups: string[]) {
   openGroups = new Set(groups);
   layer.setOpenGroups(groups);
@@ -702,18 +711,25 @@ function setOpenGroups(groups: string[]) {
 // Tap or click a highlighted realm for its details, a greyed one to switch to it.
 function clickRealm(p: Polity | null | undefined) {
   hideTooltip();
-  // A group (French West Africa) is named alone. A first click inside it
-  // opens the group and names its territories; a click on one of them then
-  // opens that territory, and a click anywhere else folds the group back.
+  // A closed group (French West Africa) acts as one: a click opens its page
+  // and names its territories, which can then be clicked one by one; a click
+  // anywhere else closes it again.
   const land = p?.kind === "hatch" && p.label ? layer.landAt(p.label[0], p.label[1], year) : p;
-  const group = land?.groups?.find((g) => layer.groupShown(g, year));
-  const groupCiv = group && !openGroups.has(group) ? civs?.ofRealm(group) : undefined;
-  setOpenGroups(group ? [group] : []);
-  if (groupCiv) {
-    info.hidden = true;
+  const closed = closedGroupOf(land);
+  if (closed) {
     closeEvent();
-    return openCiv(groupCiv, { year, push: true });
+    const civ = civs?.ofRealm(closed.name);
+    if (civ) openCiv(civ, { year, push: true });
+    else showInfo(closed);
+    setOpenGroups([closed.name]);
+    return;
   }
+  if (land && !land.kind && land.groups?.some((g) => openGroups.has(g) && layer.groupAt(g, year))) {
+    closeEvent();
+    showInfo(land);
+    return;
+  }
+  if (openGroups.size) setOpenGroups([]);
   if (!p || p.kind === "unreviewed") {
     info.hidden = true;
     closeEvent();
@@ -821,6 +837,9 @@ function hoverUnreviewed(x: number, y: number) {
 // Hovering a realm names it; a greyed realm also lights up.
 function hoverRealm(p: Polity | null | undefined, x: number, y: number) {
   if (p?.kind === "unreviewed") return hoverUnreviewed(x, y);
+  // A closed group (French West Africa) is pointed at as a whole.
+  const land = p?.kind === "hatch" && p.label ? layer.landAt(p.label[0], p.label[1], year) : p;
+  p = closedGroupOf(land) ?? p;
   const civ = p && civs?.ofRealm(home ? realmOf(p) : p.name);
   if (!p || !civ) {
     if (!tooltip.hidden) hideTooltip();
@@ -1893,6 +1912,7 @@ function showMasthead() {
 
 /** Shows a civilization on the globe, with its related realms highlighted. */
 function openCiv(c: Civilization, options: OpenOptions = {}) {
+  if (openGroups.size) setOpenGroups([]);
   showPin(null);
   if (!civs) return;
   const list = civs;
@@ -2028,6 +2048,7 @@ function showOutline(k: Country | null) {
  * territory, every civilization whose borders crossed its present land.
  */
 function openCountry(k: Country, view: CountryView, options: { year?: number; push?: boolean } = {}) {
+  if (openGroups.size) setOpenGroups([]);
   if (!civs) return;
   const known = civs;
   const list = countryCivIds(k, view)
