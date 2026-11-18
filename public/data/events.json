@@ -4117,6 +4117,269 @@
    "summary": "Sent from French Sudan to reach Lake Chad, the column of Captains Paul Voulet and Julien Chanoine loots and burns villages across what is now Niger, killing thousands; at Birni-N'Konni in May 1899 most of the town's people are massacred. When Colonel Klobb is sent to take over, Voulet has him shot in July; their own soldiers then kill Voulet and Chanoine. The rest of the column reaches Zinder and Lake Chad.",
    "wikipedia": "Voulet–Chanoine_Mission",
    "search": "Voulet-Chanoine Mission 1899 Birni N'Konni massacre Klobb Niger Zinder"
+  },
+  {
+   "id": "nice-savoy-1860",
+   "kind": "treaty",
+   "year": 1860,
+   "title": "Nice and Savoy join France, 1860",
+   "place": "Nice",
+   "lonLat": [
+    7.27,
+    43.7
+   ],
+   "civs": [
+    "france",
+    "italy"
+   ],
+   "summary": "In return for helping Piedmont-Sardinia against Austria in 1859, Napoleon III asks for Savoy and the County of Nice. By the Treaty of Turin of 24 March 1860, King Victor Emmanuel II cedes them, and plebiscites in April approve with huge majorities. France takes over on 14 June 1860. In 1861 the Prince of Monaco also sells Menton and Roquebrune to France.",
+   "wikipedia": "Treaty_of_Turin_(1860)",
+   "search": "Treaty of Turin 1860 Nice Savoy annexation plebiscite Napoleon III Cavour Menton Roquebrune"
+  },
+  {
+   "id": "lebanon-expedition-1860",
+   "kind": "war",
+   "year": 1860,
+   "to": 1861,
+   "title": "The French expedition to Lebanon, 1860 – 1861",
+   "place": "Mount Lebanon",
+   "lonLat": [
+    35.75,
+    33.85
+   ],
+   "civs": [
+    "lebanon",
+    "ottoman-empire",
+    "france"
+   ],
+   "summary": "In 1860 fighting between Druze and Maronite Christians in Mount Lebanon turns into massacres, which spread to Damascus. With the agreement of the other European powers, Napoleon III sends some 6,000 soldiers, who land at Beirut in August 1860 and stay until June 1861. The Ottoman government then makes Mount Lebanon a self-governing district under a Christian governor.",
+   "wikipedia": "1860_Mount_Lebanon_civil_war",
+   "search": "1860 Mount Lebanon civil war Druze Maronite massacres Damascus French expedition Beirut Mutasarrifate"
+  },
+  {
+   "id": "conquest-of-cochinchina-1861",
+   "kind": "war",
+   "year": 1861,
+   "to": 1862,
+   "title": "The conquest of Cochinchina and the Treaty of Saigon, 1861 – 1862",
+   "place": "Saigon",
+   "lonLat": [
+    106.7,
+    10.78
+   ],
+   "civs": [
+    "french-cochinchina",
+    "vietnam",
+    "france"
+   ],
+   "summary": "French and Spanish troops have held Saigon since 1859. In February 1861 they break the Vietnamese lines at Kỳ Hòa, then take Mỹ Tho and Biên Hòa. By the Treaty of Saigon of 5 June 1862, Emperor Tự Đức cedes the three eastern provinces of the south and Côn Sơn island to France, opens ports to trade and allows Catholic missions.",
+   "wikipedia": "Cochinchina_campaign",
+   "search": "Cochinchina campaign 1861 1862 Ky Hoa Treaty of Saigon Tu Duc Bien Hoa Gia Dinh Dinh Tuong"
+  },
+  {
+   "id": "french-intervention-mexico-1861",
+   "kind": "war",
+   "year": 1861,
+   "to": 1867,
+   "title": "The French intervention in Mexico, 1861 – 1867",
+   "place": "Puebla",
+   "lonLat": [
+    -98.2,
+    19.04
+   ],
+   "civs": [
+    "mexico",
+    "france"
+   ],
+   "summary": "After Mexico stops paying its foreign debts, France, Britain and Spain land at Veracruz in December 1861. Britain and Spain soon leave, but Napoleon III wants a friendly empire in the Americas. Beaten at Puebla on 5 May 1862, the French take Mexico City in 1863 and make the Austrian archduke Maximilian emperor. Under pressure from the United States and Benito Juárez's republicans, the French leave in 1867, and Maximilian is shot at Querétaro.",
+   "wikipedia": "Second_French_intervention_in_Mexico",
+   "search": "Second French intervention in Mexico 1861 1867 Puebla Cinco de Mayo Maximilian Juarez Queretaro"
+  },
+  {
+   "id": "cambodia-protectorate-1863",
+   "kind": "treaty",
+   "year": 1863,
+   "title": "Cambodia becomes a French protectorate, 1863",
+   "place": "Oudong, then Phnom Penh",
+   "lonLat": [
+    104.92,
+    11.56
+   ],
+   "civs": [
+    "french-cambodia",
+    "cambodia",
+    "france"
+   ],
+   "summary": "Squeezed between Siam and Vietnam, King Norodom signs a treaty with Admiral de La Grandière on 11 August 1863 placing Cambodia under French protection. Siam, which had crowned Norodom, accepts it in 1867 in return for keeping Battambang and Siem Reap. The capital moves to Phnom Penh in 1866.",
+   "wikipedia": "French_protectorate_of_Cambodia",
+   "search": "French protectorate of Cambodia 1863 Norodom La Grandiere Oudong Phnom Penh Siam 1867 treaty"
+  },
+  {
+   "id": "western-cochinchina-1867",
+   "kind": "war",
+   "year": 1867,
+   "title": "France takes western Cochinchina, 1867",
+   "place": "Vĩnh Long",
+   "lonLat": [
+    105.97,
+    10.25
+   ],
+   "civs": [
+    "french-cochinchina",
+    "vietnam",
+    "france"
+   ],
+   "summary": "In June 1867 Admiral de La Grandière seizes the three western provinces of the south, Vĩnh Long, An Giang and Hà Tiên, without a fight. The old viceroy Phan Thanh Giản, who had signed the 1862 treaty, takes poison. All of southern Vietnam is now the French colony of Cochinchina, which Vietnam recognises in 1874.",
+   "wikipedia": "Cochinchina_campaign",
+   "search": "western Cochinchina 1867 Vinh Long An Giang Ha Tien La Grandiere Phan Thanh Gian"
+  },
+  {
+   "id": "suez-canal-1869",
+   "kind": "trade",
+   "year": 1869,
+   "title": "The opening of the Suez Canal, 1869",
+   "place": "Ismailia, Suez Canal",
+   "lonLat": [
+    32.27,
+    30.6
+   ],
+   "civs": [
+    "egypt",
+    "france"
+   ],
+   "summary": "Built by Ferdinand de Lesseps's French company with Egyptian labour and money from 1859, the canal between the Mediterranean and the Red Sea opens on 17 November 1869, with Empress Eugénie aboard the first ship. It cuts the sea route from Europe to India and the Far East by thousands of kilometres. Egypt's debts force it to sell its shares to Britain in 1875.",
+   "wikipedia": "Suez_Canal",
+   "search": "Suez Canal 1869 opening Lesseps Empress Eugenie Ismailia Egypt"
+  },
+  {
+   "id": "franco-prussian-war-1870",
+   "kind": "war",
+   "year": 1870,
+   "to": 1871,
+   "title": "The Franco-Prussian War, 1870 – 1871",
+   "place": "Sedan",
+   "lonLat": [
+    4.94,
+    49.7
+   ],
+   "civs": [
+    "france",
+    "germany"
+   ],
+   "summary": "France declares war on Prussia on 19 July 1870. The German armies win quickly: Napoleon III surrenders at Sedan on 2 September, and two days later the Republic is proclaimed in Paris. Paris is besieged from September and Metz falls in October. On 18 January 1871 the German Empire is proclaimed at Versailles, and Paris surrenders ten days later.",
+   "wikipedia": "Franco-Prussian_War",
+   "search": "Franco-Prussian War 1870 1871 Sedan Napoleon III surrender siege of Paris Metz Versailles German Empire"
+  },
+  {
+   "id": "treaty-of-frankfurt-1871",
+   "kind": "treaty",
+   "year": 1871,
+   "title": "The Treaty of Frankfurt: Alsace-Lorraine lost, 1871",
+   "place": "Strasbourg",
+   "lonLat": [
+    7.75,
+    48.58
+   ],
+   "civs": [
+    "alsace-lorraine",
+    "france",
+    "germany"
+   ],
+   "summary": "Signed on 10 May 1871, the peace treaty gives the new German Empire Alsace and the north-east of Lorraine with Metz, about 1.6 million people; France keeps Belfort. France must pay five billion francs, and German troops occupy the east until it is paid. Tens of thousands of Alsatians and Lorrainers choose French nationality and leave.",
+   "wikipedia": "Treaty_of_Frankfurt_(1871)",
+   "search": "Treaty of Frankfurt 1871 Alsace-Lorraine annexed German Empire Metz Strasbourg Belfort indemnity"
+  },
+  {
+   "id": "paris-commune-1871",
+   "kind": "revolution",
+   "year": 1871,
+   "title": "The Paris Commune, 1871",
+   "place": "Paris",
+   "lonLat": [
+    2.35,
+    48.86
+   ],
+   "civs": [
+    "france"
+   ],
+   "summary": "On 18 March 1871 Paris rises against the government of Adolphe Thiers, which wants to take back the National Guard's cannons, and elects a revolutionary council, the Commune. The regular army retakes the city in the \"Bloody Week\" of 21–28 May; thousands of Communards are killed, and many more are jailed or deported to New Caledonia.",
+   "wikipedia": "Paris_Commune",
+   "search": "Paris Commune 1871 Bloody Week Thiers National Guard Communards Versailles"
+  },
+  {
+   "id": "mokrani-revolt-1871",
+   "kind": "war",
+   "year": 1871,
+   "to": 1872,
+   "title": "The Mokrani revolt, 1871 – 1872",
+   "place": "Kabylia",
+   "lonLat": [
+    4.05,
+    36.55
+   ],
+   "civs": [
+    "french-algeria",
+    "algeria",
+    "france"
+   ],
+   "summary": "In March 1871, as France is weakened by its defeat, Cheikh El Mokrani and the Rahmaniyya brotherhood call a rising in Kabylia and eastern Algeria, joined by some 250 tribes. El Mokrani is killed in May and the revolt is crushed by early 1872. The Kabyles are made to pay a huge fine and lose hundreds of thousands of hectares, given to settlers, many from Alsace-Lorraine.",
+   "wikipedia": "Mokrani_Revolt",
+   "search": "Mokrani Revolt 1871 1872 Kabylia El Mokrani Rahmaniyya Algeria land confiscation"
+  },
+  {
+   "id": "garnier-tonkin-1873",
+   "kind": "war",
+   "year": 1873,
+   "title": "Garnier's Tonkin expedition, 1873",
+   "place": "Hanoi",
+   "lonLat": [
+    105.85,
+    21.03
+   ],
+   "civs": [
+    "vietnam",
+    "tonkin",
+    "france"
+   ],
+   "summary": "Sent from Saigon to settle a dispute over trade on the Red River, the naval officer Francis Garnier storms the citadel of Hanoi on 20 November 1873 with about 200 men, then takes the forts of the delta. On 21 December he is killed near Hanoi by the Black Flags. Paris disowns the venture, and by the Treaty of Saigon of March 1874 the French leave Tonkin.",
+   "wikipedia": "Francis_Garnier",
+   "search": "Francis Garnier 1873 Tonkin expedition Hanoi citadel Black Flags Red River Philastre"
+  },
+  {
+   "id": "end-of-german-occupation-1873",
+   "kind": "treaty",
+   "year": 1873,
+   "title": "The end of the German occupation, 1873",
+   "place": "Verdun",
+   "lonLat": [
+    5.38,
+    49.16
+   ],
+   "civs": [
+    "france",
+    "germany"
+   ],
+   "summary": "France pays the five-billion-franc war indemnity well ahead of schedule, thanks to two huge public loans in 1871 and 1872. German troops leave the occupied departments one by one, and on 16 September 1873 the last of them march out of Verdun. Thiers, who arranged the payment, is hailed as the \"liberator of the territory\".",
+   "wikipedia": "Treaty_of_Frankfurt_(1871)",
+   "search": "end of German occupation 1873 Verdun war indemnity five billion Thiers liberator of the territory"
+  },
+  {
+   "id": "kanak-revolt-1878",
+   "kind": "war",
+   "year": 1878,
+   "title": "The Kanak revolt in New Caledonia, 1878",
+   "place": "La Foa",
+   "lonLat": [
+    165.83,
+    -21.71
+   ],
+   "civs": [
+    "new-caledonia",
+    "france"
+   ],
+   "summary": "Driven off their land by settlers' cattle and the penal colony, Kanak clans led by the high chief Ataï rise in June 1878 around La Foa and Bouloupari, killing some 200 settlers. French troops, helped by rival clans, put down the revolt by early 1879. Ataï is killed in September 1878 and his head sent to Paris; about 1,000 Kanaks die and many more lose their land.",
+   "wikipedia": "1878_Kanak_revolt",
+   "search": "1878 Kanak revolt New Caledonia Atai La Foa Bouloupari settlers land"
   }
  ]
 }

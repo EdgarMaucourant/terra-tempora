@@ -191,7 +191,10 @@
     "wikipedia": "Republic of Dahomey",
     "fr": "République du Dahomey",
     "es": "República de Dahomey",
-    "note": "Independent Dahomey"
+    "note": "Independent Dahomey",
+    "label": "Dahomey",
+    "labelFr": "Dahomey",
+    "labelEs": "Dahomey"
    },
    {
     "from": "1975-11-30",
@@ -199,7 +202,10 @@
     "wikipedia": "People's Republic of Benin",
     "fr": "République populaire du Bénin",
     "es": "República Popular de Benín",
-    "note": "Marxist-Leninist state under Mathieu Kérékou"
+    "note": "Marxist-Leninist state under Mathieu Kérékou",
+    "detail": "People's Republic",
+    "detailFr": "République populaire",
+    "detailEs": "República Popular"
    },
    {
     "from": "1990-03-01",
@@ -289,7 +295,10 @@
     "wikipedia": "Republic of Upper Volta",
     "fr": "République de Haute-Volta",
     "es": "República del Alto Volta",
-    "note": "Independent Upper Volta"
+    "note": "Independent Upper Volta",
+    "label": "Upper Volta",
+    "labelFr": "Haute-Volta",
+    "labelEs": "Alto Volta"
    },
    {
     "from": "1984-08-04",
@@ -317,14 +326,20 @@
     "wikipedia": "Kingdom of Cambodia (1953–1970)",
     "fr": "Royaume du Cambodge",
     "es": "Reino de Camboya",
-    "note": "Independent from 9 November 1953"
+    "note": "Independent from 9 November 1953",
+    "detail": "Kingdom",
+    "detailFr": "royaume",
+    "detailEs": "reino"
    },
    {
     "from": "1970-10-09",
     "name": "Khmer Republic",
     "wikipedia": "Khmer Republic",
     "fr": "République khmère",
-    "es": "República Jemer"
+    "es": "República Jemer",
+    "detail": "Khmer Republic",
+    "detailFr": "République khmère",
+    "detailEs": "República Jemer"
    },
    {
     "from": "1975-04-17",
@@ -332,7 +347,10 @@
     "wikipedia": "Democratic Kampuchea",
     "fr": "Kampuchéa démocratique",
     "es": "Kampuchea Democrática",
-    "note": "The Khmer Rouge take Phnom Penh"
+    "note": "The Khmer Rouge take Phnom Penh",
+    "detail": "Democratic Kampuchea",
+    "detailFr": "Kampuchéa démocratique",
+    "detailEs": "Kampuchea Democrática"
    },
    {
     "from": "1979-01-10",
@@ -340,14 +358,20 @@
     "wikipedia": "People's Republic of Kampuchea",
     "fr": "République populaire du Kampuchéa",
     "es": "República Popular de Kampuchea",
-    "note": "Set up after Vietnam's invasion"
+    "note": "Set up after Vietnam's invasion",
+    "detail": "People's Republic of Kampuchea",
+    "detailFr": "République populaire du Kampuchéa",
+    "detailEs": "República Popular de Kampuchea"
    },
    {
     "from": "1989-05-01",
     "name": "State of Cambodia",
     "wikipedia": "State of Cambodia",
     "fr": "État du Cambodge",
-    "es": "Estado de Camboya"
+    "es": "Estado de Camboya",
+    "detail": "State of Cambodia",
+    "detailFr": "État du Cambodge",
+    "detailEs": "Estado de Camboya"
    },
    {
     "from": "1993-09-24",
@@ -410,7 +434,10 @@
     "wikipedia": "Central African Empire",
     "fr": "Empire centrafricain",
     "es": "Imperio Centroafricano",
-    "note": "Bokassa's empire"
+    "note": "Bokassa's empire",
+    "label": "Central African Empire",
+    "labelFr": "Empire centrafricain",
+    "labelEs": "Imperio Centroafricano"
    },
    {
     "from": "1979-09-21",
@@ -449,14 +476,20 @@
     "name": "Qing dynasty",
     "wikipedia": "Qing dynasty",
     "fr": "Dynastie Qing",
-    "es": "Dinastía Qing"
+    "es": "Dinastía Qing",
+    "detail": "Qing dynasty",
+    "detailFr": "dynastie Qing",
+    "detailEs": "dinastía Qing"
    },
    {
     "from": "1912-01-01",
     "name": "Republic of China",
     "wikipedia": "Republic of China (1912–1949)",
     "fr": "République de Chine",
-    "es": "República de China"
+    "es": "República de China",
+    "detail": "Republic of China",
+    "detailFr": "république de Chine",
+    "detailEs": "República de China"
    },
    {
     "from": "1949-10-01",
@@ -508,9 +541,11 @@
    },
    {
     "from": "1920-12-04",
-    "name": "Colonial Mauritania",
+    "name": "Mauritania",
     "wikipedia": "Colonial Mauritania",
-    "note": "A colony from 4 December 1920"
+    "note": "A colony from 4 December 1920",
+    "fr": "Mauritanie",
+    "es": "Mauritania"
    }
   ],
   "groupFrom": "1904-10-18"
@@ -533,9 +568,11 @@
    },
    {
     "from": "1922-10-13",
-    "name": "Colony of Niger",
+    "name": "Niger",
     "wikipedia": "Colony of Niger",
-    "note": "A civilian colony from 13 October 1922"
+    "note": "A civilian colony from 13 October 1922",
+    "fr": "Niger",
+    "es": "Níger"
    }
   ]
  },
@@ -720,11 +757,25 @@
   "es": "Francia",
   "periods": [
    {
+    "from": "1852-12-02",
+    "name": "Second French Empire",
+    "wikipedia": "Second French Empire",
+    "fr": "Second Empire",
+    "es": "Segundo Imperio francés",
+    "note": "Napoleon III's empire, until the Republic is proclaimed on 4 September 1870",
+    "detail": "Second Empire",
+    "detailFr": "Second Empire",
+    "detailEs": "Segundo Imperio"
+   },
+   {
     "from": "1870-09-04",
     "name": "French Third Republic",
     "wikipedia": "French Third Republic",
     "fr": "Troisième République",
-    "es": "Tercera República Francesa"
+    "es": "Tercera República Francesa",
+    "detail": "Third Republic",
+    "detailFr": "Troisième République",
+    "detailEs": "Tercera República"
    },
    {
     "from": "1940-07-10",
@@ -732,7 +783,10 @@
     "wikipedia": "Vichy France",
     "fr": "Régime de Vichy",
     "es": "Francia de Vichy",
-    "note": "Pétain is given full powers; the French State"
+    "note": "Pétain is given full powers; the French State",
+    "detail": "Vichy regime",
+    "detailFr": "régime de Vichy",
+    "detailEs": "régimen de Vichy"
    },
    {
     "from": "1944-06-03",
@@ -740,7 +794,10 @@
     "wikipedia": "Provisional Government of the French Republic",
     "fr": "Gouvernement provisoire de la République française",
     "es": "Gobierno provisional de la República Francesa",
-    "note": "Proclaimed by the Free French in Algiers, in Paris from August 1944"
+    "note": "Proclaimed by the Free French in Algiers, in Paris from August 1944",
+    "detail": "Provisional Government",
+    "detailFr": "Gouvernement provisoire",
+    "detailEs": "Gobierno provisional"
    },
    {
     "from": "1946-10-27",
@@ -748,7 +805,10 @@
     "wikipedia": "French Fourth Republic",
     "fr": "Quatrième République",
     "es": "Cuarta República Francesa",
-    "note": "From the constitution of 27 October 1946"
+    "note": "From the constitution of 27 October 1946",
+    "detail": "Fourth Republic",
+    "detailFr": "Quatrième République",
+    "detailEs": "Cuarta República"
    },
    {
     "from": "1958-10-04",
@@ -843,7 +903,24 @@
   "withOwner": false,
   "group": "French West Africa",
   "groupUntil": "1958-10-05",
-  "groupFrom": "1899-10-17"
+  "groupFrom": "1899-10-17",
+  "periods": [
+   {
+    "from": "1863-02-23",
+    "name": "Protectorate of Porto-Novo",
+    "wikipedia": "Porto-Novo",
+    "fr": "Protectorat de Porto-Novo",
+    "es": "Protectorado de Porto Novo",
+    "withOwner": true
+   },
+   {
+    "from": "1894-06-22",
+    "name": "French Dahomey",
+    "wikipedia": "French Dahomey",
+    "fr": "Colonie du Dahomey",
+    "es": "Dahomey francés"
+   }
+  ]
  },
  "French Equatorial Africa": {
   "wikipedia": "French Equatorial Africa",
@@ -884,7 +961,8 @@
     "wikipedia": "French Guinea",
     "fr": "Rivières du Sud",
     "es": "Ríos del Sur",
-    "note": "The coast south of Senegal, under Senegal's governor until 1889"
+    "note": "The coast south of Senegal, under Senegal's governor until 1889",
+    "withOwner": true
    },
    {
     "from": "1891-12-17",
@@ -992,7 +1070,8 @@
     "wikipedia": "French Somaliland",
     "fr": "Territoire d'Obock",
     "es": "Territorio de Obock",
-    "note": "Obock and Tadjoura"
+    "note": "Obock and Tadjoura",
+    "withOwner": true
    },
    {
     "from": "1896-05-20",
@@ -1034,7 +1113,8 @@
     "wikipedia": "French Sudan",
     "fr": "Haut-Fleuve",
     "es": "Alto Río",
-    "note": "The French posts on the upper Senegal and Niger, under a military commander"
+    "note": "The French posts on the upper Senegal and Niger, under a military commander",
+    "withOwner": true
    },
    {
     "from": "1890-08-18",
@@ -1102,19 +1182,36 @@
   "es": "Alemania",
   "periods": [
    {
+    "from": "1867-07-01",
+    "name": "North German Confederation",
+    "wikipedia": "North German Confederation",
+    "fr": "Confédération de l'Allemagne du Nord",
+    "es": "Confederación Alemana del Norte",
+    "note": "Led by Prussia",
+    "label": "North German Confederation",
+    "labelFr": "Confédération de l'Allemagne du Nord",
+    "labelEs": "Confederación Alemana del Norte"
+   },
+   {
     "from": "1871-01-18",
     "name": "German Empire",
     "wikipedia": "German Empire",
     "fr": "Empire allemand",
     "es": "Imperio alemán",
-    "note": "Proclaimed at Versailles"
+    "note": "Proclaimed at Versailles",
+    "detail": "German Empire",
+    "detailFr": "Empire allemand",
+    "detailEs": "Imperio alemán"
    },
    {
     "from": "1918-11-09",
     "name": "Weimar Republic",
     "wikipedia": "Weimar Republic",
     "fr": "République de Weimar",
-    "es": "República de Weimar"
+    "es": "República de Weimar",
+    "detail": "Weimar Republic",
+    "detailFr": "république de Weimar",
+    "detailEs": "República de Weimar"
    },
    {
     "from": "1933-01-30",
@@ -1122,7 +1219,10 @@
     "wikipedia": "Nazi Germany",
     "fr": "Allemagne nazie",
     "es": "Alemania nazi",
-    "note": "Hitler appointed chancellor"
+    "note": "Hitler appointed chancellor",
+    "detail": "Nazi regime",
+    "detailFr": "régime nazi",
+    "detailEs": "régimen nazi"
    },
    {
     "from": "1945-06-05",
@@ -1130,7 +1230,10 @@
     "wikipedia": "Allied-occupied Germany",
     "fr": "Allemagne occupée",
     "es": "Alemania ocupada por los Aliados",
-    "note": "The four Allies take over the government"
+    "note": "The four Allies take over the government",
+    "detail": "Allied occupation",
+    "detailFr": "occupation alliée",
+    "detailEs": "ocupación aliada"
    },
    {
     "from": "1949-05-23",
@@ -1138,7 +1241,10 @@
     "wikipedia": "West Germany",
     "fr": "Allemagne de l'Ouest",
     "es": "Alemania Occidental",
-    "note": "Federal Republic of Germany, from its Basic Law"
+    "note": "Federal Republic of Germany, from its Basic Law",
+    "label": "West Germany",
+    "labelFr": "Allemagne de l'Ouest",
+    "labelEs": "Alemania Occidental"
    },
    {
     "from": "1990-10-03",
@@ -1426,7 +1532,10 @@
     "wikipedia": "Kingdom of Laos",
     "fr": "Royaume du Laos",
     "es": "Reino de Laos",
-    "note": "Fully independent from 22 October 1953"
+    "note": "Fully independent from 22 October 1953",
+    "detail": "Kingdom",
+    "detailFr": "royaume",
+    "detailEs": "reino"
    },
    {
     "from": "1975-12-02",
@@ -1511,7 +1620,10 @@
     "wikipedia": "Merina Kingdom",
     "fr": "Royaume de Madagascar",
     "es": "Reino de Madagascar",
-    "note": "The Merina kingdom, until the French conquest of 1895"
+    "note": "The Merina kingdom, until the French conquest of 1895",
+    "detail": "Merina Kingdom",
+    "detailFr": "royaume merina",
+    "detailEs": "Reino merina"
    },
    {
     "from": "1960-06-26",
@@ -1519,7 +1631,10 @@
     "wikipedia": "Malagasy Republic",
     "fr": "République malgache",
     "es": "República Malgache",
-    "note": "First Republic"
+    "note": "First Republic",
+    "detail": "Malagasy Republic",
+    "detailFr": "République malgache",
+    "detailEs": "República Malgache"
    },
    {
     "from": "1975-12-21",
@@ -1527,7 +1642,10 @@
     "wikipedia": "Democratic Republic of Madagascar",
     "fr": "République démocratique de Madagascar",
     "es": "República Democrática de Madagascar",
-    "note": "Socialist state under Didier Ratsiraka"
+    "note": "Socialist state under Didier Ratsiraka",
+    "detail": "Democratic Republic",
+    "detailFr": "République démocratique",
+    "detailEs": "República Democrática"
    },
    {
     "from": "1992-09-12",
@@ -1604,9 +1722,11 @@
    },
    {
     "from": "1926-05-23",
-    "name": "Mandatory Lebanon",
+    "name": "Lebanon",
     "wikipedia": "Greater Lebanon",
-    "note": "The Lebanese Republic, from its constitution of 23 May 1926"
+    "note": "The Lebanese Republic, from its constitution of 23 May 1926",
+    "fr": "Liban",
+    "es": "Líbano"
    }
   ]
  },
@@ -1628,9 +1748,11 @@
    },
    {
     "from": "1930-05-14",
-    "name": "Mandatory Syria",
+    "name": "Syria",
     "wikipedia": "First Syrian Republic",
-    "note": "The Syrian Republic, from its constitution of 14 May 1930"
+    "note": "The Syrian Republic, from its constitution of 14 May 1930",
+    "fr": "Syrie",
+    "es": "Siria"
    }
   ]
  },
@@ -1917,7 +2039,10 @@
     "wikipedia": "Kingdom of Portugal",
     "fr": "Royaume de Portugal",
     "es": "Reino de Portugal",
-    "note": "The kingdom, a constitutional monarchy from 1822"
+    "note": "The kingdom, a constitutional monarchy from 1822",
+    "detail": "Kingdom",
+    "detailFr": "royaume",
+    "detailEs": "reino"
    },
    {
     "from": "1910-10-05",
@@ -1925,7 +2050,10 @@
     "wikipedia": "First Portuguese Republic",
     "fr": "Première République portugaise",
     "es": "Primera República Portuguesa",
-    "note": "Republic proclaimed by the 5 October 1910 revolution"
+    "note": "Republic proclaimed by the 5 October 1910 revolution",
+    "detail": "First Republic",
+    "detailFr": "Première République",
+    "detailEs": "Primera República"
    },
    {
     "from": "1926-05-28",
@@ -1933,7 +2061,10 @@
     "wikipedia": "Ditadura Nacional",
     "fr": "Dictature nationale (Portugal)",
     "es": "Dictadura Nacional (Portugal)",
-    "note": "Military dictatorship after the 28 May 1926 coup"
+    "note": "Military dictatorship after the 28 May 1926 coup",
+    "detail": "Ditadura Nacional",
+    "detailFr": "Ditadura Nacional",
+    "detailEs": "Ditadura Nacional"
    },
    {
     "from": "1933-04-11",
@@ -1941,7 +2072,10 @@
     "wikipedia": "Estado Novo (Portugal)",
     "fr": "Estado Novo (Portugal)",
     "es": "Estado Novo (Portugal)",
-    "note": "Salazar's regime, from the 1933 Constitution"
+    "note": "Salazar's regime, from the 1933 Constitution",
+    "detail": "Estado Novo",
+    "detailFr": "Estado Novo",
+    "detailEs": "Estado Novo"
    },
    {
     "from": "1974-04-25",
@@ -2037,7 +2171,10 @@
     "wikipedia": "People's Republic of the Congo",
     "fr": "République populaire du Congo",
     "es": "República Popular del Congo",
-    "note": "Marxist-Leninist state"
+    "note": "Marxist-Leninist state",
+    "detail": "People's Republic",
+    "detailFr": "République populaire",
+    "detailEs": "República Popular"
    },
    {
     "from": "1992-03-15",
@@ -2254,7 +2391,10 @@
     "wikipedia": "State of Vietnam",
     "fr": "État du Viêt Nam",
     "es": "Estado de Vietnam",
-    "note": "South of the 17th parallel, after the Geneva Accords"
+    "note": "South of the 17th parallel, after the Geneva Accords",
+    "detail": "State of Vietnam",
+    "detailFr": "État du Viêt Nam",
+    "detailEs": "Estado de Vietnam"
    },
    {
     "from": "1955-10-26",
@@ -2262,7 +2402,10 @@
     "wikipedia": "South Vietnam",
     "fr": "République du Viêt Nam",
     "es": "República de Vietnam",
-    "note": "A republic after the 1955 referendum"
+    "note": "A republic after the 1955 referendum",
+    "detail": "Republic of Vietnam",
+    "detailFr": "république du Viêt Nam",
+    "detailEs": "República de Vietnam"
    },
    {
     "from": "1975-04-30",
@@ -2270,7 +2413,10 @@
     "wikipedia": "Provisional Revolutionary Government of the Republic of South Vietnam",
     "fr": "République du Sud-Viêt Nam",
     "es": "República de Vietnam del Sur",
-    "note": "After the fall of Saigon"
+    "note": "After the fall of Saigon",
+    "detail": "Provisional Revolutionary Government",
+    "detailFr": "Gouvernement révolutionnaire provisoire",
+    "detailEs": "Gobierno Revolucionario Provisional"
    }
   ]
  },
@@ -2415,7 +2561,10 @@
     "name": "Siam",
     "wikipedia": "Rattanakosin Kingdom (1782–1932)",
     "fr": "Siam",
-    "es": "Siam"
+    "es": "Siam",
+    "label": "Siam",
+    "labelFr": "Siam",
+    "labelEs": "Siam"
    },
    {
     "from": "1939-06-24",
@@ -2429,7 +2578,10 @@
     "wikipedia": "Thailand",
     "fr": "Siam",
     "es": "Siam",
-    "note": "Named Siam again after the war"
+    "note": "Named Siam again after the war",
+    "label": "Siam",
+    "labelFr": "Siam",
+    "labelEs": "Siam"
    },
    {
     "from": "1949-05-11",
@@ -2515,7 +2667,10 @@
     "wikipedia": "Beylik of Tunis",
     "fr": "Beylicat de Tunis",
     "es": "Beylicato de Túnez",
-    "note": "Ruled by the Husainid beys; a French protectorate from 12 May 1881"
+    "note": "Ruled by the Husainid beys; a French protectorate from 12 May 1881",
+    "detail": "Beylik",
+    "detailFr": "beylicat",
+    "detailEs": "beylicato"
    },
    {
     "from": "1956-03-20",
@@ -2523,7 +2678,10 @@
     "wikipedia": "Kingdom of Tunisia",
     "fr": "Royaume de Tunisie",
     "es": "Reino de Túnez",
-    "note": "Independent under the Bey from 20 March 1956"
+    "note": "Independent under the Bey from 20 March 1956",
+    "detail": "Kingdom",
+    "detailFr": "royaume",
+    "detailEs": "reino"
    },
    {
     "from": "1957-07-25",
@@ -2715,7 +2873,10 @@
     "wikipedia": "Nguyễn dynasty",
     "fr": "Đại Nam",
     "es": "Đại Nam",
-    "note": "The empire under the Nguyễn dynasty"
+    "note": "The empire under the Nguyễn dynasty",
+    "detail": "Nguyễn dynasty",
+    "detailFr": "dynastie Nguyễn",
+    "detailEs": "dinastía Nguyễn"
    },
    {
     "from": "1976-07-02",

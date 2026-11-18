@@ -269,6 +269,9 @@
  "ivory-coast": {
   "name": "Costa de Marfil"
  },
+ "french-senegal": {
+  "name": "Senegal francés"
+ },
  "poland": {
   "name": "Polonia"
  },
@@ -304,9 +307,6 @@
  },
  "ecuador": {
   "name": "Ecuador"
- },
- "french-senegal": {
-  "name": "Senegal francés"
  },
  "guinea": {
   "name": "Guinea"
