@@ -3875,6 +3875,248 @@
    "summary": "On 30 March 1912, Sultan Abd al-Hafid signs the Treaty of Fes, making Morocco a French protectorate. Three weeks later, Moroccan soldiers in Fez mutiny, and with the townspeople kill French officers and civilians and attack the Jewish quarter. General Lyautey, the first resident-general, retakes the city and the surrounding region. The Sultan abdicates in August, and in November France gives Spain a zone in the north of Morocco.",
    "wikipedia": "Treaty_of_Fes",
    "search": "Treaty of Fes 1912 French protectorate Morocco Fez riots Lyautey Abd al-Hafid"
+  },
+  {
+   "id": "makoko-treaty-1880",
+   "kind": "treaty",
+   "year": 1880,
+   "title": "Brazza's treaty with King Makoko, 1880",
+   "place": "Mbé, near today's Brazzaville",
+   "lonLat": [
+    15.28,
+    -4.27
+   ],
+   "civs": [
+    "french-congo",
+    "republic-of-the-congo",
+    "france"
+   ],
+   "summary": "On 10 September 1880 the explorer Pierre Savorgnan de Brazza signs a treaty with Makoko, king of the Teke, who places his lands on the north bank of the Congo under French protection. Brazza founds a post on the river that will become Brazzaville. The French parliament ratifies the treaty in 1882, the start of French Congo.",
+   "wikipedia": "Pierre_Savorgnan_de_Brazza",
+   "search": "Makoko treaty 1880 Brazza Teke Brazzaville French Congo"
+  },
+  {
+   "id": "treaty-of-bardo-1881",
+   "kind": "treaty",
+   "year": 1881,
+   "title": "The Treaty of Bardo, 1881",
+   "place": "Ksar Saïd palace, Le Bardo",
+   "lonLat": [
+    10.13,
+    36.81
+   ],
+   "civs": [
+    "french-tunisia",
+    "tunisia",
+    "france"
+   ],
+   "summary": "In April 1881, using raids by Khroumir tribesmen into Algeria as a pretext, French troops enter Tunisia. On 12 May, with soldiers around his palace, Muhammad III as-Sadiq Bey signs the Treaty of Bardo: France takes charge of Tunisia's army and foreign affairs. The 1883 La Marsa Convention completes the protectorate, which lasts until 1956.",
+   "wikipedia": "Treaty_of_Bardo",
+   "search": "Treaty of Bardo 1881 Tunisia French protectorate Khroumir Sadiq Bey La Marsa"
+  },
+  {
+   "id": "sino-french-war-1883",
+   "kind": "war",
+   "year": 1883,
+   "to": 1885,
+   "title": "The Tonkin campaign and the Sino-French War, 1883 – 1885",
+   "place": "Lạng Sơn",
+   "lonLat": [
+    106.76,
+    21.85
+   ],
+   "civs": [
+    "tonkin",
+    "annam",
+    "vietnam",
+    "china",
+    "france"
+   ],
+   "summary": "France sends troops to Tonkin, and in August 1883 the Harmand treaty forces the court of Huế to accept a protectorate over Annam and Tonkin. China, which considers Vietnam its tributary, fights back with its armies and the Black Flags. After battles around Lạng Sơn and a French naval campaign off Fuzhou and Taiwan, the Treaty of Tientsin of June 1885 makes China give up its claims.",
+   "wikipedia": "Sino-French_War",
+   "search": "Sino-French War 1883 1885 Tonkin campaign Harmand treaty Lang Son Black Flags Tientsin"
+  },
+  {
+   "id": "can-vuong-1885",
+   "kind": "war",
+   "year": 1885,
+   "to": 1896,
+   "title": "The Cần Vương revolt, 1885 – 1896",
+   "place": "Huế",
+   "lonLat": [
+    107.58,
+    16.46
+   ],
+   "civs": [
+    "annam",
+    "vietnam",
+    "france"
+   ],
+   "summary": "In July 1885 the regent Tôn Thất Thuyết attacks the French garrison of Huế, then flees with the young emperor Hàm Nghi and calls on the Vietnamese to rise to \"save the king\" (Cần Vương). Scholars lead uprisings across Annam. Hàm Nghi is captured in 1888 and exiled to Algeria, and the last leader, Phan Đình Phùng, dies in 1895; the revolt ends the following year.",
+   "wikipedia": "Cần_Vương",
+   "search": "Can Vuong revolt 1885 Ham Nghi Ton That Thuyet Hue Phan Dinh Phung"
+  },
+  {
+   "id": "indochinese-union-1887",
+   "kind": "empire",
+   "year": 1887,
+   "title": "The Indochinese Union is founded, 1887",
+   "place": "Saigon",
+   "lonLat": [
+    106.7,
+    10.78
+   ],
+   "civs": [
+    "french-indochina",
+    "french-cochinchina",
+    "french-cambodia",
+    "annam",
+    "tonkin",
+    "france"
+   ],
+   "summary": "On 17 October 1887 France joins the colony of Cochinchina and the protectorates of Cambodia, Annam and Tonkin under one governor-general: the Indochinese Union, or French Indochina. Laos is added in 1899 and Guangzhouwan in 1900. The capital, first Saigon, moves to Hanoi in 1902.",
+   "wikipedia": "French_Indochina",
+   "search": "Indochinese Union 1887 French Indochina governor-general Cochinchina Cambodia Annam Tonkin"
+  },
+  {
+   "id": "conquest-of-dahomey-1892",
+   "kind": "war",
+   "year": 1892,
+   "to": 1894,
+   "title": "The conquest of Dahomey, 1892 – 1894",
+   "place": "Abomey",
+   "lonLat": [
+    1.99,
+    7.18
+   ],
+   "civs": [
+    "french-dahomey",
+    "benin",
+    "france"
+   ],
+   "summary": "After a first war in 1890 over the coast around Cotonou and Porto-Novo, Colonel Alfred-Amédée Dodds marches on the kingdom of Dahomey in 1892. King Béhanzin's army, with its women soldiers, is beaten in a series of battles, and Abomey falls in November. Béhanzin surrenders in January 1894 and is exiled to Martinique; Dahomey becomes a French colony.",
+   "wikipedia": "Second_Franco-Dahomean_War",
+   "search": "Second Franco-Dahomean War 1892 Dodds Behanzin Abomey Dahomey conquest"
+  },
+  {
+   "id": "franco-siamese-crisis-1893",
+   "kind": "war",
+   "year": 1893,
+   "title": "The Franco-Siamese crisis, 1893",
+   "place": "Vientiane",
+   "lonLat": [
+    102.6,
+    17.97
+   ],
+   "civs": [
+    "french-laos",
+    "laos",
+    "thailand",
+    "france"
+   ],
+   "summary": "France claims the lands east of the Mekong, held by Siam. After clashes in Laos, French gunboats force their way up the Chao Phraya to Bangkok in July 1893 and blockade the coast. By the treaty of 3 October 1893, Siam gives up all the left bank of the Mekong, which becomes French Laos.",
+   "wikipedia": "Franco-Siamese_War",
+   "search": "Franco-Siamese War crisis 1893 Paknam incident Mekong left bank Laos treaty"
+  },
+  {
+   "id": "timbuktu-taken-1893",
+   "kind": "battle",
+   "year": 1893,
+   "title": "The French take Timbuktu, 1893 – 1894",
+   "place": "Timbuktu",
+   "lonLat": [
+    -3.0,
+    16.77
+   ],
+   "civs": [
+    "french-sudan",
+    "mali",
+    "france"
+   ],
+   "summary": "In December 1893 a French flotilla on the Niger reaches Timbuktu, the old city of trade and learning, and a column under Colonel Bonnier occupies it. In January 1894 Tuareg fighters wipe out Bonnier's column at Tacoubao. Major Joffre, the future marshal, arrives overland in February and holds the city for French Sudan.",
+   "wikipedia": "Timbuktu",
+   "search": "Timbuktu 1893 1894 French conquest Bonnier Joffre Tuareg Tacoubao"
+  },
+  {
+   "id": "french-west-africa-1895",
+   "kind": "empire",
+   "year": 1895,
+   "title": "French West Africa is founded, 1895",
+   "place": "Saint-Louis",
+   "lonLat": [
+    -16.5,
+    16.03
+   ],
+   "civs": [
+    "french-west-africa",
+    "french-senegal",
+    "french-sudan",
+    "french-guinea",
+    "french-ivory-coast",
+    "france"
+   ],
+   "summary": "On 16 June 1895 France places Senegal, French Sudan, French Guinea and Ivory Coast under one governor-general in Saint-Louis: French West Africa. Dahomey joins in 1899, Mauritania, Upper Volta and Niger later. In 1902 the capital moves to Dakar. The federation lasts until 1958.",
+   "wikipedia": "French_West_Africa",
+   "search": "French West Africa 1895 AOF founded governor-general Saint-Louis Dakar federation"
+  },
+  {
+   "id": "madagascar-expedition-1895",
+   "kind": "war",
+   "year": 1895,
+   "to": 1897,
+   "title": "The French conquest of Madagascar, 1895 – 1897",
+   "place": "Antananarivo",
+   "lonLat": [
+    47.52,
+    -18.91
+   ],
+   "civs": [
+    "french-madagascar",
+    "madagascar",
+    "france"
+   ],
+   "summary": "In 1895 a French expedition lands at Mahajanga and marches inland; thousands of its soldiers die of fever on the way. Antananarivo is shelled and surrenders on 30 September, and the Merina kingdom accepts a protectorate. France annexes Madagascar in August 1896, and after a rising against French rule, General Gallieni exiles Queen Ranavalona III in February 1897 and ends the monarchy.",
+   "wikipedia": "Franco-Hova_Wars",
+   "search": "Second Franco-Hova War 1895 Madagascar expedition Antananarivo annexation 1896 Gallieni Ranavalona III exile"
+  },
+  {
+   "id": "samori-captured-1898",
+   "kind": "war",
+   "year": 1898,
+   "title": "The capture of Samori Touré, 1898",
+   "place": "Bissandougou",
+   "lonLat": [
+    -8.97,
+    10.07
+   ],
+   "civs": [
+    "french-guinea",
+    "guinea",
+    "french-ivory-coast",
+    "france"
+   ],
+   "summary": "For almost twenty years Samori Touré, founder of the Wassoulou Empire around Bissandougou, fights the French advance in the upper Niger lands, moving his whole state east into the north of Ivory Coast in the 1890s. Surprised at Guélémou on 29 September 1898, he is captured and exiled to Gabon, where he dies in 1900. His lands are shared between French Guinea, French Sudan and Ivory Coast.",
+   "wikipedia": "Samori_Ture",
+   "search": "Samori Toure 1898 captured Guelemou Wassoulou Empire Bissandougou exile Gabon"
+  },
+  {
+   "id": "voulet-chanoine-1899",
+   "kind": "war",
+   "year": 1899,
+   "title": "The Voulet–Chanoine Mission, 1899",
+   "place": "Birni-N'Konni",
+   "lonLat": [
+    5.25,
+    13.79
+   ],
+   "civs": [
+    "niger",
+    "colony-of-niger",
+    "france"
+   ],
+   "summary": "Sent from French Sudan to reach Lake Chad, the column of Captains Paul Voulet and Julien Chanoine loots and burns villages across what is now Niger, killing thousands; at Birni-N'Konni in May 1899 most of the town's people are massacred. When Colonel Klobb is sent to take over, Voulet has him shot in July; their own soldiers then kill Voulet and Chanoine. The rest of the column reaches Zinder and Lake Chad.",
+   "wikipedia": "Voulet–Chanoine_Mission",
+   "search": "Voulet-Chanoine Mission 1899 Birni N'Konni massacre Klobb Niger Zinder"
   }
  ]
 }
