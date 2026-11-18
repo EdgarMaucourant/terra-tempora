@@ -256,6 +256,23 @@ function periodName(name, year) {
   return period && period.name !== name ? period.name : undefined;
 }
 
+/**
+ * A country's name in a year when it differs from its realm's: its common
+ * name then (Siam, Upper Volta) and the period in brackets, "France (Third
+ * Republic)", in English, French and Spanish.
+ */
+function countryName(name, year) {
+  const p = periodOf(name, year);
+  if (!p || (!p.label && !p.detail)) return undefined;
+  const r = realms[name] ?? {};
+  const one = (label, detail) => (detail ? `${label} (${detail})` : label);
+  return {
+    en: one(p.label ?? name, p.detail),
+    fr: one(p.labelFr ?? p.label ?? r.fr ?? name, p.detailFr ?? p.detail),
+    es: one(p.labelEs ?? p.label ?? r.es ?? name, p.detailEs ?? p.detail),
+  };
+}
+
 /** The period of a realm a year falls in, if it has periods. */
 function periodOf(name, year) {
   const periods = (realms[name]?.periods ?? []).filter((p) => Number(p.from.slice(0, 4)) <= year);
@@ -350,7 +367,9 @@ for (let year = TODAY; year >= firstReviewed; year--) {
     const period = periodName(g.meta.name, year);
     const withOwner = (period && periodOf(g.meta.name, year).withOwner) ?? realms[g.meta.name]?.withOwner;
     const owner = g.meta.partOf && withOwner !== false ? g.meta.partOf : null;
-    const display = owner ? `${period ?? g.meta.name} (${owner})` : period;
+    // A country goes by its common name with the period in brackets,
+    // "France (Third Republic)"; elsewhere (held by, part of) it is just France.
+    const display = g.meta.partOf ? (owner ? `${period ?? g.meta.name} (${owner})` : period) : countryName(g.meta.name, year)?.en;
     g.meta = { ...g.meta, ...(display && { display }), source: sourceOf(changeFor(g.ids, year), year, g.ids) };
     groups.set(key, g);
   }
@@ -544,6 +563,13 @@ const names = {};
 for (const [name, r] of Object.entries(realms)) {
   names[name] = { fr: r.fr, es: r.es };
   for (const p of r.periods ?? []) if (p.name !== name) names[p.name] = { fr: p.fr ?? p.name, es: p.es ?? p.name };
+  for (const p of r.periods ?? []) {
+    const shown = countryName(name, Number(p.from.slice(0, 4)));
+    if (shown) names[shown.en] = { fr: shown.fr, es: shown.es };
+    // The timeline names a country's periods by these alone: Third Republic.
+    if (p.detail) names[p.detail] ??= { fr: p.detailFr ?? p.detail, es: p.detailEs ?? p.detail };
+    if (p.label) names[p.label] ??= { fr: p.labelFr ?? p.label, es: p.labelEs ?? p.label };
+  }
 }
 // "Azores (Portugal)", in French and Spanish too.
 for (const s of shapes) {
