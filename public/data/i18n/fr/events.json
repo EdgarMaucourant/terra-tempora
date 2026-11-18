@@ -1088,5 +1088,75 @@
   "title": "La mission Voulet-Chanoine, 1899",
   "place": "Birni-N’Konni",
   "summary": "Partie du Soudan français pour gagner le lac Tchad, la colonne des capitaines Paul Voulet et Julien Chanoine pille et brûle des villages dans l’actuel Niger et tue des milliers de personnes ; à Birni-N’Konni, en mai 1899, la plupart des habitants sont massacrés. Le colonel Klobb, envoyé pour en prendre le commandement, est abattu sur ordre de Voulet en juillet ; leurs propres soldats tuent ensuite Voulet et Chanoine. Le reste de la colonne atteint Zinder et le lac Tchad."
+ },
+ "nice-savoy-1860": {
+  "title": "Le rattachement de Nice et de la Savoie, 1860",
+  "place": "Nice",
+  "summary": "En échange de son aide au Piémont-Sardaigne contre l’Autriche en 1859, Napoléon III demande la Savoie et le comté de Nice. Par le traité de Turin du 24 mars 1860, le roi Victor-Emmanuel II les cède, et des plébiscites en avril l’approuvent à d’énormes majorités. La France en prend possession le 14 juin 1860. En 1861, le prince de Monaco vend aussi Menton et Roquebrune à la France."
+ },
+ "lebanon-expedition-1860": {
+  "title": "L’expédition française au Liban, 1860 – 1861",
+  "place": "Mont-Liban",
+  "summary": "En 1860, les combats entre Druzes et chrétiens maronites au Mont-Liban tournent aux massacres, qui gagnent Damas. Avec l’accord des autres puissances européennes, Napoléon III envoie quelque 6 000 soldats, qui débarquent à Beyrouth en août 1860 et restent jusqu’en juin 1861. Le gouvernement ottoman fait ensuite du Mont-Liban un district autonome sous un gouverneur chrétien."
+ },
+ "conquest-of-cochinchina-1861": {
+  "title": "La conquête de la Cochinchine et le traité de Saïgon, 1861 – 1862",
+  "place": "Saïgon",
+  "summary": "Les troupes françaises et espagnoles tiennent Saïgon depuis 1859. En février 1861, elles forcent les lignes vietnamiennes à Kỳ Hòa, puis prennent Mỹ Tho et Biên Hòa. Par le traité de Saïgon du 5 juin 1862, l’empereur Tự Đức cède à la France les trois provinces orientales du Sud et l’île de Poulo Condor, ouvre des ports au commerce et autorise les missions catholiques."
+ },
+ "french-intervention-mexico-1861": {
+  "title": "L’intervention française au Mexique, 1861 – 1867",
+  "place": "Puebla",
+  "summary": "Après que le Mexique a cessé de payer ses dettes étrangères, la France, le Royaume-Uni et l’Espagne débarquent à Veracruz en décembre 1861. Britanniques et Espagnols repartent vite, mais Napoléon III veut un empire ami en Amérique. Battus à Puebla le 5 mai 1862, les Français prennent Mexico en 1863 et font de l’archiduc autrichien Maximilien un empereur. Sous la pression des États-Unis et des républicains de Benito Juárez, les Français partent en 1867, et Maximilien est fusillé à Querétaro."
+ },
+ "cambodia-protectorate-1863": {
+  "title": "Le Cambodge devient un protectorat français, 1863",
+  "place": "Oudong, puis Phnom Penh",
+  "summary": "Pris en étau entre le Siam et le Viêt Nam, le roi Norodom signe le 11 août 1863 avec l’amiral de La Grandière un traité qui place le Cambodge sous la protection de la France. Le Siam, qui avait couronné Norodom, l’accepte en 1867 en échange de Battambang et de Siem Reap. La capitale passe à Phnom Penh en 1866."
+ },
+ "western-cochinchina-1867": {
+  "title": "La France prend l’ouest de la Cochinchine, 1867",
+  "place": "Vĩnh Long",
+  "summary": "En juin 1867, l’amiral de La Grandière s’empare sans combat des trois provinces occidentales du Sud, Vĩnh Long, An Giang et Hà Tiên. Le vieux vice-roi Phan Thanh Giản, signataire du traité de 1862, s’empoisonne. Tout le sud du Viêt Nam forme désormais la colonie française de Cochinchine, que le Viêt Nam reconnaît en 1874."
+ },
+ "suez-canal-1869": {
+  "title": "L’ouverture du canal de Suez, 1869",
+  "place": "Ismaïlia, canal de Suez",
+  "summary": "Creusé à partir de 1859 par la compagnie française de Ferdinand de Lesseps, avec des ouvriers et de l’argent égyptiens, le canal entre la Méditerranée et la mer Rouge est inauguré le 17 novembre 1869, l’impératrice Eugénie à bord du premier navire. Il raccourcit de milliers de kilomètres la route maritime de l’Europe vers l’Inde et l’Extrême-Orient. Endettée, l’Égypte vend ses actions au Royaume-Uni en 1875."
+ },
+ "franco-prussian-war-1870": {
+  "title": "La guerre franco-allemande, 1870 – 1871",
+  "place": "Sedan",
+  "summary": "La France déclare la guerre à la Prusse le 19 juillet 1870. Les armées allemandes l’emportent vite : Napoléon III capitule à Sedan le 2 septembre, et deux jours plus tard la République est proclamée à Paris. Paris est assiégé dès septembre et Metz tombe en octobre. Le 18 janvier 1871, l’Empire allemand est proclamé à Versailles, et Paris capitule dix jours plus tard."
+ },
+ "treaty-of-frankfurt-1871": {
+  "title": "Le traité de Francfort : la perte de l’Alsace-Lorraine, 1871",
+  "place": "Strasbourg",
+  "summary": "Signé le 10 mai 1871, le traité de paix donne au nouvel Empire allemand l’Alsace et le nord-est de la Lorraine avec Metz, soit environ 1,6 million d’habitants ; la France garde Belfort. Elle doit payer cinq milliards de francs, et des troupes allemandes occupent l’Est jusqu’au paiement. Des dizaines de milliers d’Alsaciens et de Lorrains optent pour la France et partent."
+ },
+ "paris-commune-1871": {
+  "title": "La Commune de Paris, 1871",
+  "place": "Paris",
+  "summary": "Le 18 mars 1871, Paris se soulève contre le gouvernement d’Adolphe Thiers, qui veut reprendre les canons de la Garde nationale, et élit un conseil révolutionnaire, la Commune. L’armée régulière reprend la ville pendant la « Semaine sanglante », du 21 au 28 mai ; des milliers de communards sont tués, et beaucoup d’autres emprisonnés ou déportés en Nouvelle-Calédonie."
+ },
+ "mokrani-revolt-1871": {
+  "title": "L’insurrection de Mokrani, 1871 – 1872",
+  "place": "Kabylie",
+  "summary": "En mars 1871, alors que la France est affaiblie par sa défaite, le cheikh El Mokrani et la confrérie Rahmaniyya appellent au soulèvement en Kabylie et dans l’Est algérien, suivis par quelque 250 tribus. El Mokrani est tué en mai et la révolte est écrasée début 1872. Les Kabyles doivent payer une énorme amende et perdent des centaines de milliers d’hectares, donnés à des colons, dont beaucoup d’Alsaciens-Lorrains."
+ },
+ "garnier-tonkin-1873": {
+  "title": "L’expédition de Garnier au Tonkin, 1873",
+  "place": "Hanoï",
+  "summary": "Envoyé de Saïgon pour régler un différend sur le commerce du fleuve Rouge, l’officier de marine Francis Garnier prend d’assaut la citadelle de Hanoï le 20 novembre 1873 avec environ 200 hommes, puis les forts du delta. Le 21 décembre, il est tué près de Hanoï par les Pavillons noirs. Paris désavoue l’aventure et, par le traité de Saïgon de mars 1874, les Français quittent le Tonkin."
+ },
+ "end-of-german-occupation-1873": {
+  "title": "La fin de l’occupation allemande, 1873",
+  "place": "Verdun",
+  "summary": "La France paie l’indemnité de guerre de cinq milliards de francs bien plus tôt que prévu, grâce à deux énormes emprunts publics en 1871 et 1872. Les troupes allemandes quittent un à un les départements occupés et, le 16 septembre 1873, les dernières sortent de Verdun. Thiers, qui a organisé le paiement, est salué comme le « libérateur du territoire »."
+ },
+ "kanak-revolt-1878": {
+  "title": "L’insurrection kanak de 1878",
+  "place": "La Foa",
+  "summary": "Chassés de leurs terres par le bétail des colons et le bagne, des clans kanak menés par le grand chef Ataï se soulèvent en juin 1878 autour de La Foa et de Bouloupari et tuent quelque 200 colons. Les troupes françaises, aidées de clans rivaux, écrasent la révolte au début de 1879. Ataï est tué en septembre 1878 et sa tête envoyée à Paris ; environ 1 000 Kanak meurent et beaucoup d’autres perdent leurs terres."
  }
 }
