@@ -269,6 +269,9 @@
  "ivory-coast": {
   "name": "Côte d'Ivoire"
  },
+ "french-senegal": {
+  "name": "Colonie du Sénégal"
+ },
  "poland": {
   "name": "Pologne"
  },
@@ -304,9 +307,6 @@
  },
  "ecuador": {
   "name": "Équateur"
- },
- "french-senegal": {
-  "name": "Colonie du Sénégal"
  },
  "guinea": {
   "name": "Guinée"

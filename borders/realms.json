@@ -720,6 +720,14 @@
   "es": "Francia",
   "periods": [
    {
+    "from": "1852-12-02",
+    "name": "Second French Empire",
+    "wikipedia": "Second French Empire",
+    "fr": "Second Empire",
+    "es": "Segundo Imperio francés",
+    "note": "Napoleon III's empire, until the Republic is proclaimed on 4 September 1870"
+   },
+   {
     "from": "1870-09-04",
     "name": "French Third Republic",
     "wikipedia": "French Third Republic",
@@ -843,7 +851,23 @@
   "withOwner": false,
   "group": "French West Africa",
   "groupUntil": "1958-10-05",
-  "groupFrom": "1899-10-17"
+  "groupFrom": "1899-10-17",
+  "periods": [
+   {
+    "from": "1863-02-23",
+    "name": "Protectorate of Porto-Novo",
+    "wikipedia": "Porto-Novo",
+    "fr": "Protectorat de Porto-Novo",
+    "es": "Protectorado de Porto Novo"
+   },
+   {
+    "from": "1894-06-22",
+    "name": "French Dahomey",
+    "wikipedia": "French Dahomey",
+    "fr": "Colonie du Dahomey",
+    "es": "Dahomey francés"
+   }
+  ]
  },
  "French Equatorial Africa": {
   "wikipedia": "French Equatorial Africa",
@@ -1101,6 +1125,14 @@
   "fr": "Allemagne",
   "es": "Alemania",
   "periods": [
+   {
+    "from": "1867-07-01",
+    "name": "North German Confederation",
+    "wikipedia": "North German Confederation",
+    "fr": "Confédération de l'Allemagne du Nord",
+    "es": "Confederación Alemana del Norte",
+    "note": "Led by Prussia"
+   },
    {
     "from": "1871-01-18",
     "name": "German Empire",

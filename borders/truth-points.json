@@ -4777,11 +4777,11 @@
     6.5
    ],
    "years": [
-    1880,
+    1882,
     1959
    ],
    "realm": "French Dahomey",
-   "why": "French protectorate since 1863 (renewed 1882)"
+   "why": "French protectorate 1863-1864, then again from 1882"
   },
   {
    "place": "Abomey",
@@ -4925,6 +4925,219 @@
    ],
    "realm": "Mayotte",
    "why": "Mayotte and dependencies until annexed to Madagascar on 25 July 1912"
+  },
+  {
+   "place": "Porto-Novo",
+   "lonLat": [
+    2.63,
+    6.5
+   ],
+   "years": [
+    1865,
+    1881
+   ],
+   "realm": null,
+   "why": "The first French protectorate lapsed in 1865"
+  },
+  {
+   "place": "Strasbourg",
+   "lonLat": [
+    7.75,
+    48.58
+   ],
+   "years": [
+    1860,
+    1869
+   ],
+   "realm": "France",
+   "why": "French until the Treaty of Frankfurt (1871)"
+  },
+  {
+   "place": "Strasbourg",
+   "lonLat": [
+    7.75,
+    48.58
+   ],
+   "years": [
+    1871,
+    1917
+   ],
+   "realm": "Alsace–Lorraine",
+   "why": "German from May 1871"
+  },
+  {
+   "place": "Reims",
+   "lonLat": [
+    4.03,
+    49.26
+   ],
+   "years": [
+    1871,
+    1872
+   ],
+   "realm": "France",
+   "why": "Occupied by German troops until 1873",
+   "heldBy": [
+    {
+     "years": [
+      1871,
+      1872
+     ],
+     "by": "Germany"
+    }
+   ]
+  },
+  {
+   "place": "Orléans",
+   "lonLat": [
+    1.91,
+    47.9
+   ],
+   "years": [
+    1870,
+    1870
+   ],
+   "realm": "France",
+   "why": "Occupied by German troops in December 1870",
+   "heldBy": [
+    {
+     "years": [
+      1870,
+      1870
+     ],
+     "by": "Germany"
+    }
+   ]
+  },
+  {
+   "place": "Orléans",
+   "lonLat": [
+    1.91,
+    47.9
+   ],
+   "years": [
+    1871,
+    1879
+   ],
+   "realm": "France",
+   "why": "Evacuated in 1871"
+  },
+  {
+   "place": "Saigon",
+   "lonLat": [
+    106.7,
+    10.78
+   ],
+   "years": [
+    1862,
+    1886
+   ],
+   "realm": "French Cochinchina",
+   "why": "Ceded to France in June 1862"
+  },
+  {
+   "place": "Mỹ Tho",
+   "lonLat": [
+    106.36,
+    10.36
+   ],
+   "years": [
+    1860,
+    1860
+   ],
+   "realm": "Vietnam",
+   "why": "Taken by the French in April 1861"
+  },
+  {
+   "place": "Vĩnh Long",
+   "lonLat": [
+    105.97,
+    10.25
+   ],
+   "years": [
+    1860,
+    1866
+   ],
+   "realm": "Vietnam",
+   "why": "Taken by the French in June 1867"
+  },
+  {
+   "place": "Vĩnh Long",
+   "lonLat": [
+    105.97,
+    10.25
+   ],
+   "years": [
+    1867,
+    1886
+   ],
+   "realm": "French Cochinchina",
+   "why": "French from 1867"
+  },
+  {
+   "place": "Phnom Penh",
+   "lonLat": [
+    104.92,
+    11.56
+   ],
+   "years": [
+    1860,
+    1862
+   ],
+   "realm": "Cambodia",
+   "why": "French protectorate from August 1863"
+  },
+  {
+   "place": "Phnom Penh",
+   "lonLat": [
+    104.92,
+    11.56
+   ],
+   "years": [
+    1863,
+    1886
+   ],
+   "realm": "French Cambodia",
+   "why": "French protectorate from August 1863"
+  },
+  {
+   "place": "Thiès",
+   "lonLat": [
+    -16.93,
+    14.79
+   ],
+   "years": [
+    1871,
+    1882
+   ],
+   "realm": null,
+   "why": "Cayor under Lat Dior, outside French rule until 1883"
+  },
+  {
+   "place": "Libreville",
+   "lonLat": [
+    9.45,
+    0.39
+   ],
+   "years": [
+    1860,
+    1885
+   ],
+   "realm": "French Gabon",
+   "why": "French post since 1843"
+  },
+  {
+   "place": "Lambaréné",
+   "lonLat": [
+    10.24,
+    -0.7
+   ],
+   "years": [
+    1860,
+    1884
+   ],
+   "realm": null,
+   "why": "Inland Gabon, not held before the mid-1880s"
   }
  ]
 }

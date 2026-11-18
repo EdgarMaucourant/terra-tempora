@@ -14,7 +14,7 @@
     "SPM",
     "WLF"
    ],
-   "from": 1880,
+   "from": 1860,
    "why": "Metropolitan France with Corsica, the overseas departments (Guadeloupe, Martinique, French Guiana, Réunion, and Mayotte since 2011) and the overseas territories (Saint Pierre and Miquelon, Saint Barthélemy, Saint Martin, New Caledonia, French Polynesia, Wallis and Futuna, the French Southern and Antarctic Lands, Clipperton), whose borders have not moved since 1957"
   },
   {
@@ -24,7 +24,7 @@
     "COM",
     "VUT"
    ],
-   "from": 1880,
+   "from": 1860,
    "why": "Algeria, Djibouti, the Comoros and Vanuatu, French (Vanuatu Anglo-French) until their independence, with today's borders"
   },
   {
@@ -45,7 +45,7 @@
     "CMR",
     "MDG"
    ],
-   "from": 1880,
+   "from": 1860,
    "why": "French West Africa, French Equatorial Africa, French Togoland, French Cameroon and Madagascar, with today's borders, from French rule to independence, and the British Southern Cameroons (Northwest and Southwest of today's Cameroon) until they join Cameroon in 1961"
   },
   {
@@ -73,7 +73,7 @@
     "MAR-3456",
     "TUN"
    ],
-   "from": 1880,
+   "from": 1860,
    "why": "Morocco (without Western Sahara) and Tunisia: the French protectorates until 1956, with Spain's northern zone, the Tangier International Zone, Cape Juby (Spanish until 1958) and Ifni (Spanish until 1969)"
   },
   {
@@ -82,7 +82,7 @@
     "LAO",
     "KHM"
    ],
-   "from": 1880,
+   "from": 1860,
    "why": "French Indochina: Vietnam (Tonkin, Annam and Cochinchina, then the State of Vietnam), Laos and Cambodia, with today's borders, until independence in 1953 and 1954, then North and South Vietnam until 1976"
   },
   {
@@ -91,14 +91,14 @@
     "mahe",
     "chandernagore"
    ],
-   "from": 1880,
+   "from": 1860,
    "why": "French India: Pondichéry, Karikal, Mahé and Yanaon (today's Puducherry, with Mahé drawn where it is, not where Natural Earth puts it) and Chandernagore, until they pass to India"
   },
   {
    "pieces": [
     "DEU-1581"
    ],
-   "from": 1880,
+   "from": 1860,
    "why": "The Saar: a League of Nations territory from 1920 to 1935, German again until 1945, occupied by France, a protectorate of France from 1946 until it joins West Germany in 1957, with today's Saarland borders"
   },
   {
@@ -108,14 +108,14 @@
     "LBN",
     "TUR-2289"
    ],
-   "from": 1880,
+   "from": 1860,
    "why": "Syria (with the Golan Heights), Lebanon and the Sanjak of Alexandretta (Hatay): French mandates under the League of Nations, with the states France set up in Syria (Aleppo, Damascus, the Alawites, Jabal Druze) until their union, with today's borders; Hatay State in 1938, Turkish from June 1939"
   },
   {
    "pieces": [
     "guangzhouwan"
    ],
-   "from": 1880,
+   "from": 1860,
    "why": "Guangzhouwan, leased to France until 1945, then part of China"
   }
  ],
@@ -5493,6 +5493,16 @@
       "GIN-5660"
      ],
      "owner": null
+    },
+    {
+     "pieces": [
+      "SEN-5515"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Kédougou (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/K%C3%A9dougou"
+     }
     }
    ]
   },
@@ -5943,6 +5953,61 @@
    ]
   },
   {
+   "date": "1887-01-01",
+   "what": "The kingdoms of Sine and Saloum accept French protectorates",
+   "source": {
+    "title": "Kingdom of Saloum (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Saloum"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "SEN-764",
+      "SEN-765",
+      "SEN-5516"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Kingdom of Sine (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Sine"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1886-06-29",
+   "what": "Gabon is put under Brazza, commissioner of the French Congo, and soon merged into it",
+   "source": {
+    "title": "French Gabon (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_Gabon"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "GAB-2168",
+      "neukamerun-estuaire",
+      "GAB-2186",
+      "GAB-2187",
+      "neukamerun-wouleu-ntem",
+      "GAB-2621",
+      "GAB-2622",
+      "GAB-2623",
+      "GAB-2624",
+      "GAB-2627",
+      "GAB-2628"
+     ],
+     "owner": "France",
+     "territory": "French Gabon",
+     "source": {
+      "title": "French Gabon (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Gabon"
+     }
+    }
+   ]
+  },
+  {
    "date": "1886-04-21",
    "what": "The sultans of Grande Comore, Anjouan and Mohéli accept French protection (January to April 1886)",
    "source": {
@@ -6000,6 +6065,22 @@
       "neukamerun-sangha"
      ],
      "owner": null
+    },
+    {
+     "pieces": [
+      "GAB-2186",
+      "GAB-2187",
+      "neukamerun-wouleu-ntem",
+      "GAB-2621",
+      "GAB-2622",
+      "GAB-2623",
+      "GAB-2628"
+     ],
+     "owner": null,
+     "source": {
+      "title": "French Gabon (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Gabon"
+     }
     }
    ]
   },
@@ -6160,6 +6241,30 @@
    ]
   },
   {
+   "date": "1883-01-01",
+   "what": "French troops enter Cayor and Baol to protect the Dakar–Saint-Louis railway; Lat Dior is deposed, and Musa Molo's Fuladu accepts a protectorate",
+   "source": {
+    "title": "Lat Dior (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Lat_Dior"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "SEN-768",
+      "SEN-766",
+      "SEN-763",
+      "SEN-774"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Cayor (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cayor"
+     }
+    }
+   ]
+  },
+  {
    "date": "1882-10-12",
    "what": "The Rivières du Sud, the coast of today's Guinea, are made a colony apart from Senegal",
    "source": {
@@ -6189,6 +6294,27 @@
    ]
   },
   {
+   "date": "1882-01-01",
+   "what": "King Toffa of Porto-Novo again places his kingdom under French protection",
+   "source": {
+    "title": "Porto-Novo (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Porto-Novo"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "BEN-2177"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Porto-Novo (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Porto-Novo"
+     }
+    }
+   ]
+  },
+  {
    "date": "1881-05-12",
    "what": "By the Treaty of Bardo, the Bey of Tunis accepts a French protectorate",
    "source": {
@@ -6205,6 +6331,557 @@
      "source": {
       "title": "Beylik of Tunis (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Beylik_of_Tunis"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1880-09-10",
+   "what": "Brazza signs a treaty with Makoko, king of the Teke, and founds a post on the Congo, the future Brazzaville",
+   "source": {
+    "title": "Pierre Savorgnan de Brazza (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Pierre_Savorgnan_de_Brazza"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "COG-3341",
+      "COG-3346",
+      "COG-4855"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Brazzaville (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Brazzaville"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1880-06-13",
+   "what": "Brazza founds Franceville on the upper Ogooué",
+   "source": {
+    "title": "Franceville (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Franceville"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GAB-2627"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Franceville (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Franceville"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1880-01-01",
+   "what": "The posts on the upper Senegal around Médine and Kayes become the Upper River command, under its own military commander",
+   "source": {
+    "title": "French Sudan (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_Sudan"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "MLI-2793"
+     ],
+     "owner": "France",
+     "territory": "French Senegal",
+     "source": {
+      "title": "French Senegal (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Senegal"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1878-04-19",
+   "what": "By a treaty with Dahomey, France takes possession of Cotonou",
+   "source": {
+    "title": "Cotonou (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Cotonou"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "BEN-2175"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Cotonou (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cotonou"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1874-03-15",
+   "what": "By the Treaty of Saigon, France gives back the forts of the Red River delta taken by Garnier, and Vietnam recognises French Cochinchina",
+   "source": {
+    "title": "Treaty of Saigon (1874) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Saigon_(1874)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "VNM-462",
+      "VNM-460",
+      "VNM-468",
+      "VNM-466",
+      "VNM-467",
+      "VNM-461"
+     ],
+     "owner": "Vietnam",
+     "source": {
+      "title": "Francis Garnier (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Francis_Garnier"
+     },
+     "hatch": {
+      "by": "France",
+      "since": "1873-11-20",
+      "note": "Hanoi and the delta forts held by Francis Garnier's men, from November 1873 to early 1874",
+      "source": {
+       "title": "Francis Garnier (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Francis_Garnier"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1873-11-20",
+   "what": "Francis Garnier takes the citadel of Hanoi, then the forts of the Red River delta",
+   "source": {
+    "title": "Francis Garnier (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Francis_Garnier"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "VNM-462",
+      "VNM-460",
+      "VNM-468",
+      "VNM-466",
+      "VNM-467",
+      "VNM-461"
+     ],
+     "owner": "Vietnam",
+     "source": {
+      "title": "Francis Garnier (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Francis_Garnier"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1873-09-16",
+   "what": "The last German troops leave France, at Verdun, once the war indemnity is paid",
+   "source": {
+    "title": "Occupation de la France à la suite de la guerre de 1870 (French Wikipedia)",
+    "url": "https://fr.wikipedia.org/wiki/Occupation_de_la_France_%C3%A0_la_suite_de_la_guerre_de_1870"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "FRA-5323",
+      "marne-occupied-1914-1918",
+      "FRA-5300",
+      "FRA-5268",
+      "FRA-5355",
+      "vosges-occupied-1914-1918",
+      "FRA-5326",
+      "meuse-occupied-1914-1918",
+      "FRA-5325",
+      "meurthe-et-moselle-occupied-1914-1918",
+      "FRA-5348"
+     ],
+     "owner": "France",
+     "source": {
+      "title": "Occupation de la France à la suite de la guerre de 1870 (French Wikipedia)",
+      "url": "https://fr.wikipedia.org/wiki/Occupation_de_la_France_%C3%A0_la_suite_de_la_guerre_de_1870"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1870-08-04",
+      "note": "Occupied by the armies of Prussia and its German allies in the war of 1870-1871; the last troops leave in September 1873, once the war indemnity is paid",
+      "source": {
+       "title": "Occupation de la France à la suite de la guerre de 1870 (French Wikipedia)",
+       "url": "https://fr.wikipedia.org/wiki/Occupation_de_la_France_%C3%A0_la_suite_de_la_guerre_de_1870"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1871-05-10",
+   "what": "By the Treaty of Frankfurt, France cedes Alsace and part of Lorraine to the German Empire",
+   "source": {
+    "title": "Treaty of Frankfurt (1871) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Frankfurt_(1871)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "FRA-5323",
+      "marne-occupied-1914-1918",
+      "FRA-5300",
+      "FRA-5268",
+      "FRA-5355",
+      "vosges-occupied-1914-1918",
+      "FRA-5326",
+      "meuse-occupied-1914-1918",
+      "FRA-5325",
+      "meurthe-et-moselle-occupied-1914-1918",
+      "FRA-5348",
+      "FRA-5263",
+      "aisne-occupied-1914-1918",
+      "aisne-occupied-1914-1917",
+      "FRA-5270",
+      "FRA-5331",
+      "oise-occupied-1914-1917",
+      "FRA-5342",
+      "FRA-5357",
+      "FRA-5289",
+      "FRA-5349",
+      "FRA-5345",
+      "somme-occupied-1914-1917",
+      "FRA-5343",
+      "FRA-5290",
+      "FRA-5291",
+      "FRA-5317",
+      "FRA-5314",
+      "loir-et-cher-occupied",
+      "FRA-5356",
+      "FRA-5282",
+      "FRA-5301",
+      "FRA-5273",
+      "FRA-5296",
+      "south-alsace",
+      "FRA-5328"
+     ],
+     "owner": "France",
+     "source": {
+      "title": "Franco-Prussian War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Franco-Prussian_War"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1870-08-04",
+      "note": "Occupied by the armies of Prussia and its German allies in the war of 1870-1871; the last troops leave in September 1873, once the war indemnity is paid",
+      "source": {
+       "title": "Occupation de la France à la suite de la guerre de 1870 (French Wikipedia)",
+       "url": "https://fr.wikipedia.org/wiki/Occupation_de_la_France_%C3%A0_la_suite_de_la_guerre_de_1870"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1871-01-01",
+   "what": "France recognises Lat Dior as damel of Cayor and gives up the land it held there",
+   "source": {
+    "title": "Lat Dior (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Lat_Dior"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "SEN-768",
+      "SEN-766"
+     ],
+     "owner": "France",
+     "territory": "French Senegal",
+     "source": {
+      "title": "French Senegal (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Senegal"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1870-08-04",
+   "what": "The Franco-Prussian War: German armies cross into Alsace at Wissembourg",
+   "source": {
+    "title": "Franco-Prussian War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Franco-Prussian_War"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "FRA-5323",
+      "marne-occupied-1914-1918",
+      "FRA-5300",
+      "FRA-5268",
+      "FRA-5355",
+      "vosges-occupied-1914-1918",
+      "FRA-5326",
+      "meuse-occupied-1914-1918",
+      "FRA-5325",
+      "meurthe-et-moselle-occupied-1914-1918",
+      "FRA-5348",
+      "FRA-5263",
+      "aisne-occupied-1914-1918",
+      "aisne-occupied-1914-1917",
+      "FRA-5270",
+      "FRA-5331",
+      "oise-occupied-1914-1917",
+      "FRA-5342",
+      "FRA-5357",
+      "FRA-5289",
+      "FRA-5349",
+      "FRA-5345",
+      "somme-occupied-1914-1917",
+      "FRA-5343",
+      "FRA-5290",
+      "FRA-5291",
+      "FRA-5317",
+      "FRA-5314",
+      "loir-et-cher-occupied",
+      "FRA-5356",
+      "FRA-5282",
+      "FRA-5301",
+      "FRA-5273",
+      "FRA-5296",
+      "south-alsace",
+      "FRA-5328"
+     ],
+     "owner": "France",
+     "source": {
+      "title": "Franco-Prussian War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Franco-Prussian_War"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1867-06-24",
+   "what": "Admiral de La Grandière takes Vĩnh Long, An Giang and Hà Tiên, the western provinces of Cochinchina",
+   "source": {
+    "title": "Cochinchina campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Cochinchina_campaign"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "VNM-498",
+      "VNM-499",
+      "VNM-500",
+      "VNM-502",
+      "VNM-504",
+      "VNM-505",
+      "VNM-506",
+      "VNM-507",
+      "VNM-508",
+      "VNM-509",
+      "VNM-510"
+     ],
+     "owner": "Vietnam",
+     "source": {
+      "title": "Cochinchina campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cochinchina_campaign"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1866-01-01",
+   "what": "France builds a fort at Boké on the Rio Nunez, then posts at Boffa and Benty, the Rivières du Sud",
+   "source": {
+    "title": "French Guinea (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_Guinea"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "GIN-5629",
+      "GIN-5628",
+      "GIN-5635",
+      "GIN-5630",
+      "GIN-5631",
+      "GIN-5637",
+      "GIN-5643",
+      "GIN-5638"
+     ],
+     "owner": null,
+     "source": {
+      "title": "French Guinea (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Guinea"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1865-01-01",
+   "what": "The French protectorate over Porto-Novo lapses",
+   "source": {
+    "title": "Porto-Novo (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Porto-Novo"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "BEN-2177"
+     ],
+     "owner": "France",
+     "territory": "French Dahomey",
+     "source": {
+      "title": "Porto-Novo (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Porto-Novo"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1863-08-11",
+   "what": "King Norodom places Cambodia under French protection",
+   "source": {
+    "title": "French protectorate of Cambodia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_protectorate_of_Cambodia"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "KHM-1780",
+      "KHM-1784",
+      "KHM-1785",
+      "KHM-1786",
+      "KHM-1787",
+      "KHM-1788",
+      "KHM-1789",
+      "KHM-1790",
+      "KHM-1793",
+      "KHM-1794",
+      "KHM-1797",
+      "KHM-1798",
+      "KHM-1800",
+      "KHM-1801",
+      "KHM-1802"
+     ],
+     "owner": "Cambodia",
+     "source": {
+      "title": "French protectorate of Cambodia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_protectorate_of_Cambodia"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1863-02-23",
+   "what": "King Sodji of Porto-Novo accepts a French protectorate",
+   "source": {
+    "title": "Porto-Novo (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Porto-Novo"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "BEN-2177"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Porto-Novo (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Porto-Novo"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1862-06-05",
+   "what": "By the Treaty of Saigon, Vietnam cedes Biên Hòa, Gia Định and Định Tường, the eastern provinces of Cochinchina",
+   "source": {
+    "title": "Treaty of Saigon (1862) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Saigon"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "VNM-444",
+      "VNM-4834",
+      "VNM-483",
+      "VNM-484",
+      "VNM-495",
+      "VNM-497",
+      "VNM-503"
+     ],
+     "owner": "Vietnam",
+     "source": {
+      "title": "Cochinchina campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cochinchina_campaign"
+     },
+     "hatch": {
+      "by": "France",
+      "since": "1861-02-25",
+      "note": "Conquered by French and Spanish troops in 1861",
+      "source": {
+       "title": "Cochinchina campaign (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Cochinchina_campaign"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "VNM-501"
+     ],
+     "owner": "Vietnam",
+     "source": {
+      "title": "Cochinchina campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cochinchina_campaign"
+     },
+     "hatch": {
+      "by": "France",
+      "since": "1859-02-17",
+      "note": "Saigon is held by French and Spanish troops from February 1859",
+      "source": {
+       "title": "Cochinchina campaign (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Cochinchina_campaign"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1861-02-25",
+   "what": "French troops break the Vietnamese siege lines at Kỳ Hòa and go on to take Mỹ Tho and Biên Hòa",
+   "source": {
+    "title": "Battle of Ky Hoa (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Ky_Hoa"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "VNM-444",
+      "VNM-4834",
+      "VNM-483",
+      "VNM-484",
+      "VNM-495",
+      "VNM-497",
+      "VNM-503"
+     ],
+     "owner": "Vietnam",
+     "source": {
+      "title": "Cochinchina campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cochinchina_campaign"
      }
     }
    ]
