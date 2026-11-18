@@ -926,6 +926,9 @@
  "norfolk-island": {
   "name": "Île Norfolk"
  },
+ "monaco": {
+  "name": "Monaco"
+ },
  "macau": {
   "name": "Macao"
  },
@@ -949,9 +952,6 @@
  },
  "tuvalu": {
   "name": "Tuvalu"
- },
- "monaco": {
-  "name": "Monaco"
  },
  "cocos-keeling-islands": {
   "name": "Îles Cocos"

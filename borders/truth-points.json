@@ -5138,6 +5138,209 @@
    ],
    "realm": null,
    "why": "Inland Gabon, not held before the mid-1880s"
+  },
+  {
+   "place": "Nice",
+   "lonLat": [
+    7.27,
+    43.7
+   ],
+   "years": [
+    1840,
+    1859
+   ],
+   "realm": "Italy",
+   "why": "Part of the Kingdom of Sardinia until June 1860"
+  },
+  {
+   "place": "Chambéry",
+   "lonLat": [
+    5.92,
+    45.57
+   ],
+   "years": [
+    1840,
+    1859
+   ],
+   "realm": "Italy",
+   "why": "Savoy, part of the Kingdom of Sardinia until June 1860"
+  },
+  {
+   "place": "Chambéry",
+   "lonLat": [
+    5.92,
+    45.57
+   ],
+   "years": [
+    1860,
+    2025
+   ],
+   "realm": "France",
+   "why": "French from 1860",
+   "heldBy": [
+    {
+     "years": [
+      1942,
+      1942
+     ],
+     "by": "Italy"
+    },
+    {
+     "years": [
+      1943,
+      1943
+     ],
+     "by": "Germany"
+    }
+   ]
+  },
+  {
+   "place": "Menton",
+   "lonLat": [
+    7.47,
+    43.8
+   ],
+   "years": [
+    1848,
+    1860
+   ],
+   "realm": "Monaco",
+   "why": "Free town under Sardinian protection, 1848-1861",
+   "heldBy": [
+    {
+     "years": [
+      1848,
+      1860
+     ],
+     "by": "Italy"
+    }
+   ]
+  },
+  {
+   "place": "Mascara",
+   "lonLat": [
+    0.14,
+    35.4
+   ],
+   "years": [
+    1840,
+    1840
+   ],
+   "realm": null,
+   "why": "Abd al-Qadir's capital until May 1841"
+  },
+  {
+   "place": "Tlemcen",
+   "lonLat": [
+    -1.32,
+    34.88
+   ],
+   "years": [
+    1840,
+    1841
+   ],
+   "realm": null,
+   "why": "Taken by Bugeaud in January 1842"
+  },
+  {
+   "place": "Laghouat",
+   "lonLat": [
+    2.87,
+    33.8
+   ],
+   "years": [
+    1840,
+    1851
+   ],
+   "realm": null,
+   "why": "Taken in December 1852"
+  },
+  {
+   "place": "Tizi Ouzou",
+   "lonLat": [
+    4.05,
+    36.71
+   ],
+   "years": [
+    1840,
+    1856
+   ],
+   "realm": null,
+   "why": "Greater Kabylia, conquered in 1857"
+  },
+  {
+   "place": "Tizi Ouzou",
+   "lonLat": [
+    4.05,
+    36.71
+   ],
+   "years": [
+    1857,
+    1961
+   ],
+   "realm": "French Algeria",
+   "why": "French from 1857"
+  },
+  {
+   "place": "Dakar",
+   "lonLat": [
+    -17.44,
+    14.69
+   ],
+   "years": [
+    1840,
+    1856
+   ],
+   "realm": null,
+   "why": "Occupied by France in May 1857"
+  },
+  {
+   "place": "Papeete",
+   "lonLat": [
+    -149.57,
+    -17.54
+   ],
+   "years": [
+    1840,
+    1841
+   ],
+   "realm": null,
+   "why": "French protectorate from September 1842"
+  },
+  {
+   "place": "Nouméa",
+   "lonLat": [
+    166.45,
+    -22.27
+   ],
+   "years": [
+    1840,
+    1852
+   ],
+   "realm": null,
+   "why": "Annexed by France in September 1853"
+  },
+  {
+   "place": "Da Nang",
+   "lonLat": [
+    108.22,
+    16.07
+   ],
+   "years": [
+    1858,
+    1859
+   ],
+   "realm": "Vietnam",
+   "why": "Held by French and Spanish troops 1858-1860",
+   "heldBy": [
+    {
+     "years": [
+      1858,
+      1859
+     ],
+     "by": "France"
+    }
+   ]
   }
  ]
 }
