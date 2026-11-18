@@ -26,14 +26,14 @@
  "india": {
   "name": "India"
  },
+ "upper-senegal-and-niger": {
+  "name": "Alto Senegal y Níger"
+ },
  "argentina": {
   "name": "Argentina"
  },
  "kazakhstan": {
   "name": "Kazajistán"
- },
- "upper-senegal-and-niger": {
-  "name": "Alto Senegal y Níger"
  },
  "french-equatorial-africa": {
   "name": "África Ecuatorial Francesa"
@@ -68,6 +68,9 @@
  "sudan": {
   "name": "Sudán"
  },
+ "french-sudan": {
+  "name": "Sudán francés"
+ },
  "libya": {
   "name": "Libia"
  },
@@ -79,9 +82,6 @@
  },
  "mongolia": {
   "name": "Mongolia"
- },
- "french-sudan": {
-  "name": "Sudán francés"
  },
  "colony-of-niger": {
   "name": "Colonia de Níger"
@@ -305,6 +305,9 @@
  "ecuador": {
   "name": "Ecuador"
  },
+ "french-senegal": {
+  "name": "Senegal francés"
+ },
  "guinea": {
   "name": "Guinea"
  },
@@ -343,9 +346,6 @@
  },
  "senegal": {
   "name": "Senegal"
- },
- "french-senegal": {
-  "name": "Senegal francés"
  },
  "mandatory-syria": {
   "name": "Siria bajo mandato francés"
@@ -533,6 +533,9 @@
  "bhutan": {
   "name": "Bután"
  },
+ "portuguese-guinea": {
+  "name": "Guinea portuguesa"
+ },
  "netherlands": {
   "name": "Países Bajos"
  },
@@ -550,9 +553,6 @@
  },
  "guinea-bissau": {
   "name": "Guinea-Bisáu"
- },
- "portuguese-guinea": {
-  "name": "Guinea portuguesa"
  },
  "belgium": {
   "name": "Bélgica"
@@ -604,6 +604,9 @@
  },
  "spanish-morocco": {
   "name": "Protectorado español de Marruecos"
+ },
+ "diego-suarez": {
+  "name": "Diego Suárez"
  },
  "fiji": {
   "name": "Fiyi"
@@ -725,6 +728,9 @@
  "reunion": {
   "name": "Reunión"
  },
+ "mayotte": {
+  "name": "Mayotte"
+ },
  "territory-of-the-comoros": {
   "name": "Territorio de las Comoras"
  },
@@ -818,9 +824,6 @@
  "french-india": {
   "name": "India francesa"
  },
- "mayotte": {
-  "name": "Mayotte"
- },
  "heard-island-and-mcdonald-islands": {
   "name": "Islas Heard y McDonald"
  },
@@ -844,6 +847,12 @@
  },
  "cayman-islands": {
   "name": "Islas Caimán"
+ },
+ "nosy-be": {
+  "name": "Nosy Be"
+ },
+ "ile-sainte-marie": {
+  "name": "Isla Santa María"
  },
  "saint-kitts-and-nevis": {
   "name": "San Cristóbal y Nieves"
