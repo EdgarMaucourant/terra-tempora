@@ -509,10 +509,10 @@ export class MapView {
       ctx.globalAlpha = BLANK_FILL_ALPHA * opacity;
       ctx.fillStyle = BLANK_COLOR;
       ctx.fill();
-      ctx.globalAlpha = 0.55 * opacity;
+      ctx.globalAlpha = 0.8 * opacity;
       ctx.strokeStyle = BLANK_COLOR;
-      ctx.lineWidth = 0.8;
-      ctx.setLineDash([3, 3]);
+      ctx.lineWidth = 1.4;
+      ctx.setLineDash([5, 4]);
       ctx.stroke();
       ctx.setLineDash([]);
       ctx.globalAlpha = 1;

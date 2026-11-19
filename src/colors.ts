@@ -25,7 +25,7 @@ export const MUTED = "#5d636b";
 
 /** Land no state held in a year (borders still missing) is drawn in this light grey, faintly. */
 export const BLANK_COLOR = "#c3c9d0";
-export const BLANK_FILL_ALPHA = 0.22;
+export const BLANK_FILL_ALPHA = 0.38;
 
 /** Colours by name for a highlighted realm (first) and the realms related to it. */
 export function highlightColors(chosen: Realm, related: Realm[]): Map<string, string> {
