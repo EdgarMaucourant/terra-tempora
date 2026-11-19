@@ -4380,6 +4380,215 @@
    "summary": "Driven off their land by settlers' cattle and the penal colony, Kanak clans led by the high chief Ataï rise in June 1878 around La Foa and Bouloupari, killing some 200 settlers. French troops, helped by rival clans, put down the revolt by early 1879. Ataï is killed in September 1878 and his head sent to Paris; about 1,000 Kanaks die and many more lose their land.",
    "wikipedia": "1878_Kanak_revolt",
    "search": "1878 Kanak revolt New Caledonia Atai La Foa Bouloupari settlers land"
+  },
+  {
+   "id": "battle-of-isly-1844",
+   "kind": "battle",
+   "year": 1844,
+   "title": "The Battle of Isly, 1844",
+   "place": "Isly, near Oujda",
+   "lonLat": [
+    -1.85,
+    34.68
+   ],
+   "civs": [
+    "french-algeria",
+    "morocco",
+    "france"
+   ],
+   "summary": "Morocco's sultan Abd al-Rahman shelters Abd al-Qadir, who leads the fight against the French in Algeria, and gathers an army on the border. On 14 August 1844 Marshal Bugeaud beats it on the Isly river near Oujda, while the French navy shells Tangier and Mogador. By the Treaty of Tangier in September, Morocco stops helping Abd al-Qadir, and the border with Algeria is drawn in 1845.",
+   "wikipedia": "Battle_of_Isly",
+   "search": "Battle of Isly 1844 Bugeaud Morocco Oujda Abd al-Qadir Tangier Mogador Treaty of Tangier Lalla Maghnia"
+  },
+  {
+   "id": "franco-tahitian-war-1844",
+   "kind": "war",
+   "year": 1844,
+   "to": 1847,
+   "title": "The Franco-Tahitian War, 1844 – 1847",
+   "place": "Tahiti",
+   "lonLat": [
+    -149.45,
+    -17.65
+   ],
+   "civs": [
+    "french-polynesia",
+    "france"
+   ],
+   "summary": "In 1843 Admiral Dupetit-Thouars deposes Queen Pōmare IV, who had accepted a French protectorate the year before, and she flees to Raiatea. Tahitians rise in 1844 and fight a guerrilla war from the island's valleys until their last stronghold, Fautaua, falls in December 1846. Pōmare returns in 1847 and rules under the protectorate; the Leeward Islands stay independent.",
+   "wikipedia": "Franco-Tahitian_War",
+   "search": "Franco-Tahitian War 1844 1847 Pomare IV Tahiti protectorate Dupetit-Thouars Fautaua Mahaena"
+  },
+  {
+   "id": "surrender-of-abd-al-qadir-1847",
+   "kind": "war",
+   "year": 1847,
+   "title": "The surrender of Abd al-Qadir, 1847",
+   "place": "Near Nemours (Ghazaouet)",
+   "lonLat": [
+    -1.86,
+    35.09
+   ],
+   "civs": [
+    "french-algeria",
+    "algeria",
+    "france"
+   ],
+   "summary": "For fifteen years the emir Abd al-Qadir leads the fight against the French conquest of western Algeria, with a state of his own and a moving capital, the Smala. Hunted down and no longer welcome in Morocco, he surrenders to General Lamoricière on 23 December 1847. Promised exile in the East, he is instead held in France until 1852, and later lives in Damascus.",
+   "wikipedia": "Emir_Abdelkader",
+   "search": "Abd al-Qadir surrender 1847 emir Abdelkader Lamoriciere Ghazaouet Algeria resistance"
+  },
+  {
+   "id": "revolution-of-1848",
+   "kind": "revolution",
+   "year": 1848,
+   "title": "The Revolution of 1848 and the end of slavery",
+   "place": "Paris",
+   "lonLat": [
+    2.35,
+    48.86
+   ],
+   "civs": [
+    "france"
+   ],
+   "summary": "In February 1848 Parisians rise against King Louis-Philippe, who abdicates, and the Second Republic is proclaimed. Men get the vote, and on 27 April a decree drafted by Victor Schœlcher abolishes slavery in all French colonies, freeing some 250,000 people in the Caribbean, Réunion and Senegal. In December Louis-Napoléon Bonaparte is elected president.",
+   "wikipedia": "French_Revolution_of_1848",
+   "search": "Revolution of 1848 France February Second Republic abolition of slavery Schoelcher universal suffrage Louis-Philippe"
+  },
+  {
+   "id": "coup-of-1851",
+   "kind": "empire",
+   "year": 1851,
+   "to": 1852,
+   "title": "Napoleon III's coup and the Second Empire, 1851 – 1852",
+   "place": "Paris",
+   "lonLat": [
+    2.33,
+    48.87
+   ],
+   "civs": [
+    "france"
+   ],
+   "summary": "Barred from a second term, President Louis-Napoléon Bonaparte dissolves the Assembly on 2 December 1851, the anniversary of Austerlitz. Risings in Paris and the provinces are put down and thousands are deported, many to Algeria. A year later, on 2 December 1852, after a plebiscite, he becomes Emperor Napoleon III.",
+   "wikipedia": "1851_French_coup_d'état",
+   "search": "1851 coup d'etat Louis-Napoleon Bonaparte 2 December Second Empire Napoleon III plebiscite 1852"
+  },
+  {
+   "id": "new-caledonia-annexed-1853",
+   "kind": "empire",
+   "year": 1853,
+   "title": "France annexes New Caledonia, 1853",
+   "place": "Balade, New Caledonia",
+   "lonLat": [
+    164.42,
+    -20.35
+   ],
+   "civs": [
+    "new-caledonia",
+    "france"
+   ],
+   "summary": "Looking for a site for a penal colony in the Pacific, Napoleon III sends Admiral Febvrier-Despointes, who takes possession of New Caledonia at Balade on 24 September 1853. Port-de-France, later Nouméa, is founded in 1854. From 1864 convicts are sent there, and the Kanak people lose much of their land to settlers.",
+   "wikipedia": "History_of_New_Caledonia",
+   "search": "New Caledonia 1853 annexation Febvrier-Despointes Balade Port-de-France Noumea penal colony Kanak"
+  },
+  {
+   "id": "crimean-war-1853",
+   "kind": "war",
+   "year": 1853,
+   "to": 1856,
+   "title": "The Crimean War, 1853 – 1856",
+   "place": "Sevastopol",
+   "lonLat": [
+    33.52,
+    44.6
+   ],
+   "civs": [
+    "russia",
+    "ottoman-empire",
+    "france",
+    "united-kingdom"
+   ],
+   "summary": "Russia attacks the Ottoman Empire in 1853, and France and Britain join the Ottomans in 1854, later helped by Sardinia. The allies land in Crimea and besiege the Russian naval base of Sevastopol for almost a year, until the French take the Malakoff fort in September 1855. About 95,000 French soldiers die, mostly of disease. The Treaty of Paris of 1856 closes the Black Sea to warships.",
+   "wikipedia": "Crimean_War",
+   "search": "Crimean War 1853 1856 Sevastopol siege Malakoff Alma Inkerman Treaty of Paris Russia Ottoman"
+  },
+  {
+   "id": "faidherbe-senegal-1854",
+   "kind": "war",
+   "year": 1854,
+   "to": 1857,
+   "title": "Faidherbe in Senegal and the siege of Médine, 1854 – 1857",
+   "place": "Médine",
+   "lonLat": [
+    -11.37,
+    14.37
+   ],
+   "civs": [
+    "french-senegal",
+    "senegal",
+    "mali",
+    "france"
+   ],
+   "summary": "Made governor of Senegal in 1854, Louis Faidherbe pushes French rule up the Senegal river, beats the Trarza emirate and builds forts, including Médine in 1855. In April 1857 the army of El Hadj Umar Tall, who is building an empire on the upper Niger, besieges Médine for three months, until Faidherbe relieves it on 18 July. The same year France occupies Dakar and Faidherbe raises the Senegalese Tirailleurs.",
+   "wikipedia": "Siege_of_Medina_Fort",
+   "search": "Faidherbe Senegal 1854 1857 siege of Medine El Hadj Umar Tall Paul Holle Senegal river Senegalese Tirailleurs"
+  },
+  {
+   "id": "conquest-of-kabylia-1857",
+   "kind": "war",
+   "year": 1857,
+   "title": "The conquest of Kabylia, 1857",
+   "place": "Tizi Ouzou, Kabylia",
+   "lonLat": [
+    4.05,
+    36.71
+   ],
+   "civs": [
+    "french-algeria",
+    "algeria",
+    "france"
+   ],
+   "summary": "The mountains of Greater Kabylia, east of Algiers, are the last part of northern Algeria outside French rule. In May 1857 Marshal Randon leads some 35,000 men into them and, after hard fighting at Icheriden, the villages submit by July. Lalla Fatma N'Soumer, who had led the resistance, is captured. The French build Fort-Napoléon, now Larbaâ Nath Irathen, to hold the region.",
+   "wikipedia": "French_conquest_of_Algeria",
+   "search": "conquest of Kabylia 1857 Randon Lalla Fatma N'Soumer Icheriden Fort-Napoleon Larbaa Nath Irathen Algeria"
+  },
+  {
+   "id": "tourane-saigon-1858",
+   "kind": "war",
+   "year": 1858,
+   "to": 1860,
+   "title": "The siege of Tourane and the capture of Saigon, 1858 – 1860",
+   "place": "Tourane (Da Nang)",
+   "lonLat": [
+    108.22,
+    16.07
+   ],
+   "civs": [
+    "vietnam",
+    "france"
+   ],
+   "summary": "To stop the persecution of Catholic missionaries and gain a foothold in Asia, a French and Spanish fleet under Admiral Rigault de Genouilly attacks Tourane, now Da Nang, on 1 September 1858. Stuck there by Vietnamese resistance and disease, the admiral sails south and takes the citadel of Saigon on 17 February 1859. Tourane is given up in March 1860, but Saigon is held.",
+   "wikipedia": "Siege_of_Tourane",
+   "search": "siege of Tourane 1858 Da Nang Rigault de Genouilly Saigon 1859 Cochinchina campaign Spain Vietnam Tu Duc"
+  },
+  {
+   "id": "magenta-solferino-1859",
+   "kind": "war",
+   "year": 1859,
+   "title": "Magenta and Solferino: the war for Italy, 1859",
+   "place": "Solferino",
+   "lonLat": [
+    10.57,
+    45.37
+   ],
+   "civs": [
+    "italy",
+    "austria",
+    "france"
+   ],
+   "summary": "Allied to Piedmont-Sardinia, Napoleon III goes to war with Austria in April 1859 and leads the French army into Lombardy himself. The French and Sardinians win at Magenta on 4 June and at Solferino on 24 June, one of the bloodiest battles of the century, whose horrors lead Henry Dunant to found the Red Cross. Lombardy passes to Sardinia, and in return France receives Nice and Savoy in 1860.",
+   "wikipedia": "Second_Italian_War_of_Independence",
+   "search": "Second Italian War of Independence 1859 Magenta Solferino Napoleon III Austria Piedmont-Sardinia Lombardy Villafranca Red Cross Dunant"
   }
  ]
 }
