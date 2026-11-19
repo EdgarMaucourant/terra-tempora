@@ -1253,5 +1253,485 @@
   "title": "Le siège de Constantine, 1837",
   "place": "Constantine",
   "summary": "Après un assaut manqué en 1836, une armée française de 20 000 hommes menée par le général Damrémont revient devant Constantine, la place forte d’Ahmed Bey sur son rocher bordé de gorges. Damrémont est tué par un boulet le 12 octobre 1837 et, le lendemain, les troupes du général Valée montent à l’assaut de la brèche et prennent la ville après de durs combats de rue. Ahmed Bey résiste dans les Aurès jusqu’en 1848."
+ },
+ "third-republic-1870": {
+  "title": "La proclamation de la République, 4 septembre 1870",
+  "place": "Paris",
+  "summary": "Deux jours après la capitulation de Napoléon III à Sedan, la foule envahit l’Assemblée et Léon Gambetta proclame la République à l’Hôtel de Ville de Paris. Un gouvernement de la Défense nationale poursuit la guerre contre la Prusse. La Troisième République qui en naît dure jusqu’en 1940, le plus long régime français depuis la Révolution."
+ },
+ "provisional-government-1944": {
+  "title": "Le Gouvernement provisoire de De Gaulle, 1944 – 1946",
+  "place": "Alger, puis Paris",
+  "summary": "Le 3 juin 1944, à Alger, le Comité français de libération nationale devient le Gouvernement provisoire de la République française, dirigé par Charles de Gaulle. Il s’installe à Paris après la libération en août, balaie le régime de Vichy et donne le droit de vote aux femmes. De Gaulle démissionne en janvier 1946, et la Quatrième République commence en octobre."
+ },
+ "liberal-wars-1828": {
+  "title": "Dom Miguel s’empare du trône : les guerres libérales, 1828 – 1834",
+  "place": "Lisbonne",
+  "summary": "En juillet 1828, Dom Miguel, régent pour sa nièce Marie II, se fait proclamer roi absolu et déchire la Charte libérale. Son frère Pierre, empereur du Brésil, abdique là-bas et débarque près de Porto en 1832 pour défendre les droits de sa fille. Après deux ans de guerre civile, les miguélistes capitulent à Évora-Monte en mai 1834, et Marie II règne en reine constitutionnelle."
+ },
+ "sidonio-pais-1917": {
+  "title": "Le coup d’État de Sidónio Pais, 1917",
+  "place": "Lisbonne",
+  "summary": "Alors que le Portugal est épuisé par sa participation à la Première Guerre mondiale, le major Sidónio Pais mène une révolte militaire à Lisbonne du 5 au 8 décembre 1917 et renverse le gouvernement d’Afonso Costa. Il gouverne en dictateur présidentiel, la « Nouvelle République », jusqu’à son assassinat à la gare du Rossio le 14 décembre 1918."
+ },
+ "boumediene-coup-1965": {
+  "title": "Le coup d’État de Boumediène, 1965",
+  "place": "Alger",
+  "summary": "Le 19 juin 1965, le ministre de la Défense, le colonel Houari Boumediène, fait arrêter le président Ahmed Ben Bella et prend le pouvoir à la tête d’un Conseil de la révolution. Il dirige l’Algérie jusqu’à sa mort en 1978 et nationalise son pétrole et son gaz."
+ },
+ "algeria-coup-1992": {
+  "title": "L’armée interrompt les élections, 1992",
+  "place": "Alger",
+  "summary": "Alors que le Front islamique du salut s’apprête à remporter les législatives, l’armée pousse le président Chadli Bendjedid à démissionner le 11 janvier 1992 et annule le second tour. Un Haut Comité d’État prend le pouvoir et le Front est dissous. La guerre civile qui suit, la « décennie noire », fait bien plus de 100 000 morts."
+ },
+ "hirak-2019": {
+  "title": "Le Hirak et la chute de Bouteflika, 2019",
+  "place": "Alger",
+  "summary": "Quand le président Abdelaziz Bouteflika, malade et au pouvoir depuis 1999, brigue un cinquième mandat, des millions d’Algériens défilent chaque vendredi à partir de février 2019 dans un mouvement pacifique, le Hirak. L’armée le lâche et il démissionne le 2 avril 2019."
+ },
+ "tunisian-republic-1957": {
+  "title": "La Tunisie devient une république, 1957",
+  "place": "Tunis",
+  "summary": "Le 25 juillet 1957, l’Assemblée constituante dépose Lamine Bey, dernier bey de la dynastie husseinite au pouvoir depuis 1705, et proclame la république. Le Premier ministre Habib Bourguiba en devient le premier président."
+ },
+ "ben-ali-takes-power-1987": {
+  "title": "Ben Ali écarte Bourguiba, 1987",
+  "place": "Tunis",
+  "summary": "Le 7 novembre 1987, le Premier ministre Zine el-Abidine Ben Ali fait déclarer par sept médecins Habib Bourguiba, 84 ans, inapte à gouverner, et le remplace à la présidence. Ce « coup d’État médical » sans effusion de sang ouvre 23 ans d’un pouvoir de plus en plus dur."
+ },
+ "tunisian-revolution-2011": {
+  "title": "La révolution tunisienne, 2010 – 2011",
+  "place": "Sidi Bouzid, puis Tunis",
+  "summary": "Le 17 décembre 2010, un jeune marchand ambulant, Mohamed Bouazizi, s’immole par le feu à Sidi Bouzid après la saisie de sa marchandise par la police. La contestation gagne tout le pays et, le 14 janvier 2011, le président Ben Ali s’enfuit en Arabie saoudite. La révolution déclenche le Printemps arabe et ouvre la voie aux premières élections libres du pays."
+ },
+ "mauritania-coup-1978": {
+  "title": "L’armée renverse Ould Daddah, 1978",
+  "place": "Nouakchott",
+  "summary": "Épuisée par sa guerre contre le Front Polisario au Sahara occidental, l’armée mauritanienne renverse le 10 juillet 1978 Moktar Ould Daddah, président depuis l’indépendance. Les nouveaux dirigeants font la paix avec le Polisario en 1979 et renoncent à la part mauritanienne du territoire."
+ },
+ "mauritania-coup-1984": {
+  "title": "Ould Taya prend le pouvoir, 1984",
+  "place": "Nouakchott",
+  "summary": "Le 12 décembre 1984, alors que le président Mohamed Khouna Ould Haidalla est à l’étranger, son Premier ministre, le colonel Maaouiya Ould Sid’Ahmed Taya, prend le pouvoir sans effusion de sang. Il dirige la Mauritanie plus de vingt ans."
+ },
+ "mauritania-coup-2005": {
+  "title": "Ould Taya est renversé, 2005",
+  "place": "Nouakchott",
+  "summary": "Le 3 août 2005, alors qu’Ould Taya assiste à des funérailles en Arabie saoudite, le chef de la police, le colonel Ely Ould Mohamed Vall, prend le pouvoir. Son conseil militaire le remet en 2007 à un président élu, Sidi Ould Cheikh Abdallahi."
+ },
+ "mauritania-coup-2008": {
+  "title": "Le coup d’État d’Ould Abdel Aziz, 2008",
+  "place": "Nouakchott",
+  "summary": "Le 6 août 2008, quelques heures après son limogeage, le général Mohamed Ould Abdel Aziz renverse le président élu Sidi Ould Cheikh Abdallahi. Il est élu président en 2009 et gouverne jusqu’en 2019."
+ },
+ "mali-coup-1968": {
+  "title": "Moussa Traoré renverse Modibo Keïta, 1968",
+  "place": "Bamako",
+  "summary": "Le 19 novembre 1968, de jeunes officiers menés par le lieutenant Moussa Traoré renversent Modibo Keïta, président socialiste du Mali depuis l’indépendance, qui meurt en détention en 1977. Traoré gouverne 23 ans."
+ },
+ "mali-revolution-1991": {
+  "title": "La révolution de mars au Mali, 1991",
+  "place": "Bamako",
+  "summary": "Après des jours de manifestations à Bamako où les soldats tuent quelque 200 personnes, le lieutenant-colonel Amadou Toumani Touré arrête Moussa Traoré le 26 mars 1991. Touré remet le pouvoir en 1992 à un président élu, Alpha Oumar Konaré, ouvrant deux décennies de démocratie."
+ },
+ "mali-coup-2012": {
+  "title": "Le coup d’État de 2012 et la perte du Nord",
+  "place": "Bamako",
+  "summary": "Furieux des défaites de l’armée face aux rebelles touareg, des soldats menés par le capitaine Amadou Sanogo renversent le président Amadou Toumani Touré le 22 mars 2012. Dans le chaos, rebelles et groupes djihadistes s’emparent de tout le nord du Mali, jusqu’à ce qu’une intervention française en janvier 2013 chasse les djihadistes des villes."
+ },
+ "mali-coups-2020": {
+  "title": "Les deux coups d’État du colonel Goïta, 2020 – 2021",
+  "place": "Bamako",
+  "summary": "Après des mois de manifestations, des colonels menés par Assimi Goïta arrêtent le président Ibrahim Boubacar Keïta le 18 août 2020. En mai 2021, Goïta écarte les dirigeants civils de la transition et prend lui-même la présidence. La junte se tourne vers le groupe russe Wagner, et les troupes françaises quittent le Mali en 2022."
+ },
+ "guinea-coup-1984": {
+  "title": "Lansana Conté prend le pouvoir, 1984",
+  "place": "Conakry",
+  "summary": "Une semaine après la mort d’Ahmed Sékou Touré, au pouvoir depuis l’indépendance, l’armée du colonel Lansana Conté s’empare du pouvoir le 3 avril 1984. Conté libère des milliers de prisonniers politiques et reste au pouvoir jusqu’à sa mort en 2008."
+ },
+ "guinea-coup-2008": {
+  "title": "Le coup d’État de Dadis Camara, 2008",
+  "place": "Conakry",
+  "summary": "Quelques heures après la mort de Lansana Conté, le capitaine Moussa Dadis Camara s’empare du pouvoir le 23 décembre 2008. Le 28 septembre 2009, ses soldats tuent plus de 150 opposants dans un stade de Conakry ; blessé par un aide de camp en décembre, Camara part en exil."
+ },
+ "guinea-coup-2021": {
+  "title": "Le coup d’État de Doumbouya, 2021",
+  "place": "Conakry",
+  "summary": "Le 5 septembre 2021, les forces spéciales du colonel Mamadi Doumbouya prennent d’assaut le palais présidentiel et arrêtent Alpha Condé, qui avait changé la Constitution pour obtenir un troisième mandat. Doumbouya devient président de la transition."
+ },
+ "ivory-coast-coup-1999": {
+  "title": "Le coup d’État de Noël en Côte d’Ivoire, 1999",
+  "place": "Abidjan",
+  "summary": "Le 24 décembre 1999, une mutinerie pour des soldes impayées devient le premier coup d’État du pays : le général Robert Guéï renverse le président Henri Konan Bédié. Guéï perd l’élection contestée de 2000 face à Laurent Gbagbo, et les tensions autour de l’« ivoirité » mènent à la guerre civile en 2002."
+ },
+ "ivory-coast-crisis-2011": {
+  "title": "La crise ivoirienne et la chute de Gbagbo, 2010 – 2011",
+  "place": "Abidjan",
+  "summary": "Laurent Gbagbo refuse sa défaite face à Alassane Ouattara à l’élection de novembre 2010, et les combats font quelque 3 000 morts. Les forces d’Ouattara, appuyées par les soldats français et de l’ONU, capturent Gbagbo à Abidjan le 11 avril 2011, et Ouattara prend ses fonctions."
+ },
+ "upper-volta-coup-1966": {
+  "title": "Le premier coup d’État en Haute-Volta, 1966",
+  "place": "Ouagadougou",
+  "summary": "Le 3 janvier 1966, après une grève générale et d’immenses manifestations contre l’austérité, le président Maurice Yaméogo remet le pouvoir au chef de l’armée, le lieutenant-colonel Sangoulé Lamizana. Lamizana gouverne près de quinze ans."
+ },
+ "upper-volta-coup-1980": {
+  "title": "Le coup d’État de Saye Zerbo, 1980",
+  "place": "Ouagadougou",
+  "summary": "Le 25 novembre 1980, après des mois de grèves, le colonel Saye Zerbo renverse le président Lamizana et installe un Comité militaire de redressement pour le progrès national."
+ },
+ "upper-volta-coup-1982": {
+  "title": "Le coup d’État de Jean-Baptiste Ouédraogo, 1982",
+  "place": "Ouagadougou",
+  "summary": "Le 7 novembre 1982, de jeunes officiers renversent Saye Zerbo et placent à la tête de l’État le médecin militaire Jean-Baptiste Ouédraogo. Le capitaine Thomas Sankara devient son Premier ministre en janvier 1983."
+ },
+ "sankara-revolution-1983": {
+  "title": "La révolution de Thomas Sankara, 1983",
+  "place": "Ouagadougou",
+  "summary": "Le 4 août 1983, les commandos du capitaine Blaise Compaoré libèrent Thomas Sankara, emprisonné par Ouédraogo, et en font le président. Sankara lance une révolution radicale contre la corruption et pour l’autosuffisance, et rebaptise en 1984 le pays Burkina Faso, « pays des hommes intègres »."
+ },
+ "burkina-coup-1987": {
+  "title": "Sankara est tué : le coup d’État de Compaoré, 1987",
+  "place": "Ouagadougou",
+  "summary": "Le 15 octobre 1987, Thomas Sankara est abattu avec douze collaborateurs pendant une réunion, et son ancien ami Blaise Compaoré prend le pouvoir. Compaoré dirige le Burkina Faso pendant 27 ans."
+ },
+ "burkina-uprising-2014": {
+  "title": "Le soulèvement burkinabè, 2014",
+  "place": "Ouagadougou",
+  "summary": "Quand Blaise Compaoré veut changer la Constitution pour se représenter, la foule incendie l’Assemblée nationale le 30 octobre 2014. Il démissionne le lendemain et s’enfuit en Côte d’Ivoire ; des élections suivent en 2015."
+ },
+ "burkina-coups-2022": {
+  "title": "Deux coups d’État au Burkina Faso, 2022",
+  "place": "Ouagadougou",
+  "summary": "Face à l’extension des attaques djihadistes, le lieutenant-colonel Paul-Henri Damiba renverse le président élu Roch Marc Christian Kaboré le 24 janvier 2022. Huit mois plus tard, le 30 septembre, le capitaine Ibrahim Traoré renverse à son tour Damiba."
+ },
+ "niger-coup-1974": {
+  "title": "Le coup d’État de Kountché, 1974",
+  "place": "Niamey",
+  "summary": "En pleine sécheresse, le lieutenant-colonel Seyni Kountché renverse Hamani Diori, président depuis l’indépendance, le 15 avril 1974. Kountché gouverne jusqu’à sa mort en 1987."
+ },
+ "niger-coup-1996": {
+  "title": "Le coup d’État de Baré Maïnassara, 1996",
+  "place": "Niamey",
+  "summary": "Le 27 janvier 1996, alors que le président et le Premier ministre élus se paralysent mutuellement, le colonel Ibrahim Baré Maïnassara prend le pouvoir. Il remporte une élection truquée la même année."
+ },
+ "niger-coup-1999": {
+  "title": "Baré Maïnassara est tué, 1999",
+  "place": "Niamey",
+  "summary": "Le 9 avril 1999, le président Baré Maïnassara est abattu par sa propre garde à l’aéroport de Niamey. Le commandant Daouda Malam Wanké prend le pouvoir et le remet en décembre à un président élu, Mamadou Tandja."
+ },
+ "niger-coup-2010": {
+  "title": "Tandja est renversé, 2010",
+  "place": "Niamey",
+  "summary": "Après que le président Mamadou Tandja a changé la Constitution pour rester au pouvoir, des soldats prennent d’assaut le palais présidentiel le 18 février 2010. Leur junte remet le pouvoir à l’élu Mahamadou Issoufou en 2011."
+ },
+ "niger-coup-2023": {
+  "title": "Le coup d’État de Tiani, 2023",
+  "place": "Niamey",
+  "summary": "Le 26 juillet 2023, la garde présidentielle du général Abdourahamane Tiani séquestre le président Mohamed Bazoum. La junte expulse les soldats et l’ambassadeur français, et rejoint le Mali et le Burkina Faso dans une Alliance des États du Sahel."
+ },
+ "dahomey-coup-1963": {
+  "title": "Le premier coup d’État au Dahomey, 1963",
+  "place": "Cotonou",
+  "summary": "Le 28 octobre 1963, après des émeutes à Cotonou, le chef de l’armée, le colonel Christophe Soglo, écarte le président Hubert Maga. C’est le premier de six coups d’État au Dahomey en neuf ans."
+ },
+ "dahomey-coup-1965": {
+  "title": "Soglo prend le pouvoir, 1965",
+  "place": "Cotonou",
+  "summary": "Alors que les dirigeants civils se déchirent, le général Christophe Soglo intervient de nouveau le 22 décembre 1965 et se proclame chef de l’État."
+ },
+ "dahomey-coup-1967": {
+  "title": "Le coup d’État de Kouandété, 1967",
+  "place": "Cotonou",
+  "summary": "Le 17 décembre 1967, de jeunes officiers menés par le commandant Maurice Kouandété renversent Soglo, et le lieutenant-colonel Alphonse Alley devient chef de l’État."
+ },
+ "dahomey-coup-1969": {
+  "title": "Le coup d’État de 1969 et le conseil des trois",
+  "place": "Cotonou",
+  "summary": "Le 10 décembre 1969, Kouandété renverse le président Émile Derlin Zinsou. En 1970, l’armée remet le pouvoir à un Conseil présidentiel où les trois chefs rivaux, Maga, Ahomadégbé et Apithy, doivent se relayer."
+ },
+ "kerekou-coup-1972": {
+  "title": "Le coup d’État de Kérékou et la République populaire du Bénin, 1972 – 1975",
+  "place": "Cotonou",
+  "summary": "Le 26 octobre 1972, le commandant Mathieu Kérékou renverse le Conseil présidentiel. Il fait du marxisme-léninisme la doctrine de l’État et, le 30 novembre 1975, rebaptise le Dahomey République populaire du Bénin."
+ },
+ "benin-national-conference-1990": {
+  "title": "La Conférence nationale du Bénin, 1990",
+  "place": "Cotonou",
+  "summary": "Ruiné et confronté aux grèves, Kérékou convoque en février 1990 une Conférence nationale à Cotonou. Elle abandonne le marxisme-léninisme, rebaptise le pays République du Bénin et organise des élections libres, que Nicéphore Soglo remporte en 1991 : la première transition pacifique de ce genre en Afrique."
+ },
+ "togo-coup-1963": {
+  "title": "Olympio est tué : le coup d’État au Togo, 1963",
+  "place": "Lomé",
+  "summary": "Le 13 janvier 1963, d’anciens soldats de l’armée française tuent le président Sylvanus Olympio devant l’ambassade américaine à Lomé, le premier assassinat de ce genre dans l’Afrique indépendante. Nicolas Grunitzky devient président."
+ },
+ "togo-coup-1967": {
+  "title": "Eyadéma prend le pouvoir, 1967",
+  "place": "Lomé",
+  "summary": "Le 13 janvier 1967, le lieutenant-colonel Étienne (plus tard Gnassingbé) Eyadéma, qui avait pris part au coup de 1963, renverse Grunitzky. Il gouverne le Togo 38 ans, jusqu’à sa mort en 2005."
+ },
+ "togo-succession-2005": {
+  "title": "Faure Gnassingbé succède à son père, 2005",
+  "place": "Lomé",
+  "summary": "À la mort d’Eyadéma, le 5 février 2005, l’armée installe son fils Faure Gnassingbé à la présidence, contre la Constitution. Sous la pression africaine, il se retire puis remporte en avril une élection contestée qui fait des centaines de morts."
+ },
+ "chad-coup-1975": {
+  "title": "Tombalbaye est tué, 1975",
+  "place": "N’Djamena",
+  "summary": "Le 13 avril 1975, des unités de l’armée tuent François Tombalbaye, président du Tchad depuis l’indépendance, alors que la rébellion s’étend dans le nord. Le général Félix Malloum prend le pouvoir."
+ },
+ "battle-of-ndjamena-1979": {
+  "title": "La bataille de N’Djamena et le GUNT, 1979",
+  "place": "N’Djamena",
+  "summary": "En février 1979, les combats éclatent à N’Djamena entre l’armée de Malloum et les forces de son Premier ministre, Hissène Habré. Malloum s’enfuit et, en novembre, un Gouvernement d’union nationale de transition est formé sous le chef rebelle du nord Goukouni Oueddei."
+ },
+ "habre-takes-ndjamena-1982": {
+  "title": "Hissène Habré prend N’Djamena, 1982",
+  "place": "N’Djamena",
+  "summary": "Le 7 juin 1982, l’armée d’Hissène Habré prend N’Djamena et Goukouni s’enfuit. Habré gouverne jusqu’en 1990 ; en 2016, un tribunal au Sénégal le condamne à perpétuité pour crimes contre l’humanité."
+ },
+ "deby-takes-power-1990": {
+  "title": "Idriss Déby prend le pouvoir, 1990",
+  "place": "N’Djamena",
+  "summary": "Les rebelles d’Idriss Déby, ancien chef de l’armée de Habré, déferlent depuis le Soudan et entrent dans N’Djamena le 2 décembre 1990, tandis que Habré s’enfuit. Déby gouverne le Tchad trente ans."
+ },
+ "chad-military-council-2021": {
+  "title": "La mort de Déby et le conseil militaire, 2021",
+  "place": "N’Djamena",
+  "summary": "Le 20 avril 2021, le jour où sa réélection est annoncée, Idriss Déby meurt de blessures reçues en combattant des rebelles dans le nord. Au lieu de suivre la Constitution, un conseil militaire place son fils, le général Mahamat Déby, à la tête de l’État."
+ },
+ "saint-sylvestre-coup-1966": {
+  "title": "Le coup d’État de la Saint-Sylvestre de Bokassa, 1966",
+  "place": "Bangui",
+  "summary": "Dans la nuit de la Saint-Sylvestre 1965, le colonel Jean-Bédel Bokassa, chef de l’armée, renverse son cousin le président David Dacko et prend le pouvoir à Bangui le 1er janvier 1966."
+ },
+ "central-african-empire-1976": {
+  "title": "L’Empire centrafricain de Bokassa, 1976 – 1979",
+  "place": "Bangui",
+  "summary": "Le 4 décembre 1976, Bokassa transforme la république en Empire centrafricain et, un an plus tard, se couronne empereur sous le nom de Bokassa Ier lors d’une cérémonie copiée sur celle de Napoléon, qui coûte un tiers du budget du pays."
+ },
+ "operation-barracuda-1979": {
+  "title": "L’opération Barracuda : Bokassa déposé, 1979",
+  "place": "Bangui",
+  "summary": "Après le massacre d’écoliers qui manifestaient à Bangui en avril 1979, des troupes françaises débarquent pendant que Bokassa est en Libye, les 20 et 21 septembre 1979, et ramènent David Dacko à la présidence. L’empire redevient une république."
+ },
+ "car-coup-1981": {
+  "title": "Le coup d’État de Kolingba, 1981",
+  "place": "Bangui",
+  "summary": "Le 1er septembre 1981, le chef de l’armée, le général André Kolingba, écarte David Dacko par un coup d’État sans effusion de sang. Kolingba gouverne jusqu’à sa défaite électorale de 1993."
+ },
+ "car-coup-2003": {
+  "title": "Le coup d’État de Bozizé, 2003",
+  "place": "Bangui",
+  "summary": "Le 15 mars 2003, les rebelles du général François Bozizé prennent Bangui pendant que le président Ange-Félix Patassé est à l’étranger. Bozizé gouverne dix ans."
+ },
+ "seleka-takes-bangui-2013": {
+  "title": "La Séléka prend Bangui, 2013",
+  "place": "Bangui",
+  "summary": "Le 24 mars 2013, la Séléka, une coalition rebelle du nord-est surtout musulman, prend Bangui et Bozizé s’enfuit ; son chef Michel Djotodia se proclame président. Les tueries entre la Séléka et les milices anti-balaka entraînent l’intervention de la France et de l’ONU."
+ },
+ "trois-glorieuses-1963": {
+  "title": "Les Trois Glorieuses à Brazzaville, 1963",
+  "place": "Brazzaville",
+  "summary": "Pendant trois jours de grèves et de manifestations, du 13 au 15 août 1963, l’armée refuse de défendre le président Fulbert Youlou, qui démissionne. Alphonse Massamba-Débat devient président et oriente le Congo vers le socialisme."
+ },
+ "ngouabi-peoples-republic-1968": {
+  "title": "Ngouabi et la République populaire du Congo, 1968 – 1969",
+  "place": "Brazzaville",
+  "summary": "En août et septembre 1968, le capitaine Marien Ngouabi écarte Massamba-Débat et prend le pouvoir. Le 31 décembre 1969, il proclame la République populaire du Congo, premier État marxiste-léniniste d’Afrique, avec un parti unique, le Parti congolais du travail."
+ },
+ "ngouabi-killed-1977": {
+  "title": "Ngouabi est tué, 1977",
+  "place": "Brazzaville",
+  "summary": "Le 18 mars 1977, le président Marien Ngouabi est abattu dans sa résidence. Un comité militaire mené par le colonel Joachim Yhombi-Opango prend le pouvoir, et l’ancien président Massamba-Débat est exécuté pour le meurtre."
+ },
+ "sassou-nguesso-1979": {
+  "title": "Sassou Nguesso prend le pouvoir, 1979",
+  "place": "Brazzaville",
+  "summary": "En février 1979, le comité central du parti écarte Yhombi-Opango et fait du colonel Denis Sassou Nguesso le président. Il gouverne jusqu’en 1992, puis de nouveau à partir de 1997."
+ },
+ "congo-national-conference-1991": {
+  "title": "La Conférence nationale et la fin de la République populaire, 1991",
+  "place": "Brazzaville",
+  "summary": "Une Conférence nationale réunie à Brazzaville en 1991 retire à Sassou Nguesso l’essentiel de ses pouvoirs, abandonne le marxisme-léninisme et rétablit le nom de République du Congo. Pascal Lissouba remporte l’élection libre d’août 1992."
+ },
+ "congo-civil-war-1997": {
+  "title": "Sassou Nguesso revient par la guerre, 1997",
+  "place": "Brazzaville",
+  "summary": "En juin 1997, les combats éclatent à Brazzaville entre les forces du président Lissouba et les miliciens Cobras de Sassou Nguesso. Aidé par des troupes angolaises, Sassou Nguesso prend la ville en octobre 1997 et redevient président."
+ },
+ "gabon-coup-1964": {
+  "title": "Le coup d’État de 1964 au Gabon, défait par la France",
+  "place": "Libreville",
+  "summary": "Les 17 et 18 février 1964, de jeunes officiers arrêtent le président Léon M’ba et remettent le pouvoir à l’opposant Jean-Hilaire Aubame. En deux jours, des parachutistes français rétablissent M’ba."
+ },
+ "gabon-coup-2023": {
+  "title": "La fin de l’ère Bongo, 2023",
+  "place": "Libreville",
+  "summary": "Quelques minutes après l’annonce de la réélection d’Ali Bongo, le 30 août 2023, des officiers menés par le général Brice Oligui Nguema prennent le pouvoir, mettant fin à 56 ans de règne d’Omar Bongo et de son fils. Oligui est élu président en avril 2025."
+ },
+ "comoros-coup-1975": {
+  "title": "Le coup d’État d’Ali Soilih, 1975",
+  "place": "Moroni",
+  "summary": "Moins d’un mois après l’indépendance, le 3 août 1975, Ali Soilih renverse le président Ahmed Abdallah avec l’aide du mercenaire Bob Denard. Soilih lance un programme de changements radicaux, souvent brutaux."
+ },
+ "comoros-coup-1978": {
+  "title": "Bob Denard ramène Abdallah, 1978",
+  "place": "Moroni",
+  "summary": "Le 13 mai 1978, Bob Denard débarque avec une cinquantaine de mercenaires, renverse Ali Soilih, tué peu après, et ramène Ahmed Abdallah. La garde présidentielle de Denard tient une grande partie du pays pendant onze ans."
+ },
+ "comoros-coup-1989": {
+  "title": "Abdallah est tué, 1989",
+  "place": "Moroni",
+  "summary": "Le 26 novembre 1989, le président Ahmed Abdallah est abattu dans son palais, apparemment par les hommes de Denard. Sous la pression française et sud-africaine, les mercenaires partent en décembre, et Saïd Mohamed Djohar devient président."
+ },
+ "comoros-coup-1995": {
+  "title": "Le dernier coup d’État de Denard, 1995",
+  "place": "Moroni",
+  "summary": "Le 28 septembre 1995, Bob Denard débarque de nouveau et arrête le président Djohar. Une semaine plus tard, les troupes françaises mettent fin au putsch par l’opération Azalée et ramènent Denard en France."
+ },
+ "comoros-coup-1999": {
+  "title": "Le coup d’État d’Azali, 1999",
+  "place": "Moroni",
+  "summary": "Alors qu’Anjouan et Mohéli tentent de faire sécession, le chef de l’armée, le colonel Azali Assoumani, prend le pouvoir le 30 avril 1999. Il fait adopter en 2001 une nouvelle Constitution qui donne à chaque île une large autonomie."
+ },
+ "madagascar-1972": {
+  "title": "La révolte de mai 1972 à Madagascar",
+  "place": "Antananarivo",
+  "summary": "Des manifestations menées par les étudiants contre le président Philibert Tsiranana et ses liens étroits avec la France paralysent Antananarivo en mai 1972. Le 18 mai, Tsiranana remet les pleins pouvoirs au chef de l’armée, le général Gabriel Ramanantsoa."
+ },
+ "ratsiraka-1975": {
+  "title": "Ratsiraka et la République démocratique de Madagascar, 1975",
+  "place": "Antananarivo",
+  "summary": "Le colonel Richard Ratsimandrava, chef de l’État depuis six jours, est abattu le 11 février 1975. En juin, un directoire militaire désigne le capitaine de frégate Didier Ratsiraka, qui fonde en décembre la République démocratique socialiste de Madagascar."
+ },
+ "madagascar-1991": {
+  "title": "Les manifestations de 1991 et la Troisième République",
+  "place": "Antananarivo",
+  "summary": "Des mois de grève générale en 1991 forcent Ratsiraka à partager le pouvoir ; le 10 août, sa garde tire sur les manifestants devant le palais. Une nouvelle Constitution fonde en 1992 la Troisième République, et l’opposant Albert Zafy est élu président en 1993."
+ },
+ "madagascar-crisis-2002": {
+  "title": "La crise de 2002 : Ravalomanana contre Ratsiraka",
+  "place": "Antananarivo",
+  "summary": "Marc Ravalomanana, maire d’Antananarivo, et Didier Ratsiraka revendiquent tous deux la victoire à l’élection de décembre 2001, et l’île se partage des mois durant entre deux gouvernements. Le camp de Ravalomanana l’emporte, et Ratsiraka part pour la France en juillet 2002."
+ },
+ "madagascar-crisis-2009": {
+  "title": "Rajoelina prend le pouvoir, 2009",
+  "place": "Antananarivo",
+  "summary": "Après des semaines de manifestations menées par Andry Rajoelina, le jeune maire d’Antananarivo, des soldats mutinés prennent le palais présidentiel et le président Ravalomanana remet le pouvoir à l’armée, qui le transmet à Rajoelina le 17 mars 2009."
+ },
+ "madagascar-coup-2025": {
+  "title": "Les manifestations de la génération Z et le coup d’État de 2025",
+  "place": "Antananarivo",
+  "summary": "Les manifestations de jeunes contre les coupures d’eau et d’électricité deviennent en septembre 2025 un mouvement contre le président Rajoelina. Quand l’unité d’élite CAPSAT les rejoint, Rajoelina fuit le pays et, le 14 octobre 2025, le colonel Michael Randrianirina annonce que l’armée prend le pouvoir."
+ },
+ "khanh-coup-1964": {
+  "title": "Le coup d’État de Nguyễn Khánh, 1964",
+  "place": "Saïgon",
+  "summary": "Le 30 janvier 1964, moins de trois mois après la chute de Diệm, le général Nguyễn Khánh écarte sans un coup de feu la junte du général Dương Văn Minh. S’ouvrent deux années de coups et contre-coups à Saïgon."
+ },
+ "thieu-ky-junta-1965": {
+  "title": "Le gouvernement militaire Thiệu–Kỳ, 1965",
+  "place": "Saïgon",
+  "summary": "En juin 1965, après l’exil forcé de Khánh et la démission du gouvernement civil de Phan Huy Quát, les généraux placent Nguyễn Văn Thiệu à la tête de l’État et Nguyễn Cao Kỳ à la tête du gouvernement. Thiệu reste président jusqu’en avril 1975."
+ },
+ "kong-le-coup-1960": {
+  "title": "Le coup d’État de Kong Le à Vientiane, 1960",
+  "place": "Vientiane",
+  "summary": "Le 9 août 1960, le capitaine Kong Le et ses parachutistes s’emparent de Vientiane et réclament un Laos neutre. Le général Phoumi Nosavan, soutenu par la Thaïlande et les États-Unis, reprend la ville en décembre, et la guerre civile s’étend."
+ },
+ "lao-pdr-1975": {
+  "title": "Le Pathet Lao abolit la monarchie, 1975",
+  "place": "Vientiane",
+  "summary": "Le 2 décembre 1975, le roi Savang Vatthana abdique et le Pathet Lao communiste proclame la République démocratique populaire lao, mettant fin à six siècles de royauté lao. Le roi meurt plus tard dans un camp de rééducation."
+ },
+ "lon-nol-coup-1970": {
+  "title": "Lon Nol renverse Sihanouk, 1970",
+  "place": "Phnom Penh",
+  "summary": "Le 18 mars 1970, pendant que le prince Norodom Sihanouk est à l’étranger, l’Assemblée nationale le destitue et le général Lon Nol prend le pouvoir. En octobre, il proclame la République khmère, et le pays est entraîné dans la guerre du Viêt Nam."
+ },
+ "khmer-rouge-phnom-penh-1975": {
+  "title": "Les Khmers rouges prennent Phnom Penh, 1975",
+  "place": "Phnom Penh",
+  "summary": "Le 17 avril 1975, les Khmers rouges entrent dans Phnom Penh et vident la ville en quelques jours. Leur Kampuchéa démocratique, dirigé par Pol Pot, fait mourir environ un quart de la population par les exécutions, le travail forcé et la famine."
+ },
+ "vietnam-takes-phnom-penh-1979": {
+  "title": "Le Viêt Nam renverse les Khmers rouges, 1979",
+  "place": "Phnom Penh",
+  "summary": "Après des raids khmers rouges au Viêt Nam, l’armée vietnamienne envahit le pays et prend Phnom Penh le 7 janvier 1979. Elle installe la République populaire du Kampuchéa de Heng Samrin et reste dans le pays jusqu’en 1989."
+ },
+ "cambodia-monarchy-restored-1993": {
+  "title": "La monarchie cambodgienne rétablie, 1993",
+  "place": "Phnom Penh",
+  "summary": "Après des élections organisées par les Nations unies en mai 1993, une nouvelle Constitution rétablit le royaume du Cambodge le 24 septembre 1993, avec Norodom Sihanouk de nouveau sur le trône et deux Premiers ministres, Ranariddh et Hun Sen."
+ },
+ "hun-sen-coup-1997": {
+  "title": "Hun Sen écarte le prince Ranariddh, 1997",
+  "place": "Phnom Penh",
+  "summary": "Les 5 et 6 juillet 1997, les forces du second Premier ministre Hun Sen battent celles du premier Premier ministre, le prince Norodom Ranariddh, dans les rues de Phnom Penh. Hun Sen garde seul le pouvoir jusqu’à le céder à son fils en 2023."
+ },
+ "syria-coups-1949": {
+  "title": "Les trois coups d’État syriens de 1949",
+  "place": "Damas",
+  "summary": "En mars 1949, le colonel Husni al-Za’im renverse le président Choukri al-Kouatli, premier coup d’État militaire du monde arabe indépendant. En août, Sami al-Hinnawi fait fusiller Za’im, et en décembre Adib Chichakli écarte Hinnawi."
+ },
+ "shishakli-ousted-1954": {
+  "title": "Chichakli renversé, 1954",
+  "place": "Damas",
+  "summary": "En février 1954, des officiers à Alep et dans le djebel druze se soulèvent contre le dirigeant militaire Adib Chichakli, qui s’enfuit au Liban. Un gouvernement civil élu revient jusqu’en 1958."
+ },
+ "united-arab-republic-1958": {
+  "title": "La Syrie s’unit à l’Égypte : la République arabe unie, 1958",
+  "place": "Damas",
+  "summary": "Le 22 février 1958, la Syrie fusionne avec l’Égypte de Nasser dans la République arabe unie, gouvernée depuis Le Caire. Les partis syriens sont dissous et le pays devient la « région nord » de la république."
+ },
+ "syria-secession-1961": {
+  "title": "La Syrie quitte la République arabe unie, 1961",
+  "place": "Damas",
+  "summary": "Le 28 septembre 1961, des officiers syriens s’emparent de Damas et font sortir la Syrie de l’union avec l’Égypte. La République arabe syrienne est rétablie."
+ },
+ "baath-revolution-1963": {
+  "title": "Le parti Baas prend le pouvoir, 1963",
+  "place": "Damas",
+  "summary": "Le 8 mars 1963, des officiers du parti Baas prennent le pouvoir à Damas. Le parti gouverne la Syrie dès lors, jusqu’à la fin de 2024."
+ },
+ "syria-coup-1966": {
+  "title": "Le coup d’État du Baas radical, 1966",
+  "place": "Damas",
+  "summary": "Le 23 février 1966, l’aile militaire du Baas menée par Salah Jedid renverse les anciens dirigeants du parti, Michel Aflak et Amin al-Hafez. Hafez al-Assad devient ministre de la Défense."
+ },
+ "assad-corrective-movement-1970": {
+  "title": "Hafez al-Assad prend le pouvoir, 1970",
+  "place": "Damas",
+  "summary": "Le 13 novembre 1970, le ministre de la Défense Hafez al-Assad fait arrêter Salah Jedid et le président Noureddine al-Atassi. Il appelle cela le « Mouvement correctif » et gouverne jusqu’à sa mort en 2000, quand son fils Bachar lui succède."
+ },
+ "fall-of-assad-2024": {
+  "title": "La chute du régime Assad, 2024",
+  "place": "Damas",
+  "summary": "Après une offensive éclair des rebelles partis d’Idlib et menés par Hayat Tahrir al-Cham, Damas tombe le 8 décembre 2024 et Bachar al-Assad s’enfuit en Russie, mettant fin à 54 ans de pouvoir de la famille Assad et à 13 ans de guerre civile. Ahmed al-Charaa devient président."
+ },
+ "guinea-bissau-coup-1980": {
+  "title": "Le coup d’État de Nino Vieira, 1980",
+  "place": "Bissau",
+  "summary": "Le 14 novembre 1980, le Premier ministre João Bernardo « Nino » Vieira renverse le président Luís Cabral. Le coup met fin au projet d’union entre la Guinée-Bissau et le Cap-Vert, qui quitte le parti commun."
+ },
+ "guinea-bissau-civil-war-1998": {
+  "title": "La guerre civile en Guinée-Bissau, 1998 – 1999",
+  "place": "Bissau",
+  "summary": "En juin 1998, le chef d’état-major limogé Ansumane Mané se soulève contre le président Vieira. Des troupes sénégalaises et guinéennes viennent en aide à Vieira, mais les rebelles prennent Bissau et le chassent le 7 mai 1999."
+ },
+ "guinea-bissau-coup-2003": {
+  "title": "Kumba Ialá renversé, 2003",
+  "place": "Bissau",
+  "summary": "Le 14 septembre 2003, le chef d’état-major, le général Veríssimo Correia Seabra, écarte le président Kumba Ialá, qui repoussait sans cesse les élections. Une transition civile mène à de nouvelles élections."
+ },
+ "guinea-bissau-coup-2012": {
+  "title": "Le coup d’État d’avril 2012",
+  "place": "Bissau",
+  "summary": "Le 12 avril 2012, entre les deux tours de l’élection présidentielle, des militaires prennent Bissau et arrêtent le favori, l’ancien Premier ministre Carlos Gomes Júnior, et le président par intérim. Un gouvernement de transition gouverne jusqu’en 2014."
+ },
+ "guinea-bissau-coup-2025": {
+  "title": "Le coup d’État de novembre 2025",
+  "place": "Bissau",
+  "summary": "Le 26 novembre 2025, la veille de l’annonce des résultats de l’élection présidentielle, des officiers prennent le pouvoir à Bissau, déposent le président Umaro Sissoco Embaló et suspendent le processus électoral."
  }
 }
