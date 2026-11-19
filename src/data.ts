@@ -30,9 +30,11 @@ export interface Polity {
    * Not a realm's land: "hatch" is land held by another state than its owner
    * (`name`), drawn hatched over it; "unreviewed" is land whose borders for
    * these years are not rebuilt yet; "group" is the outline of a group of
-   * territories (French West Africa), drawn over its members with its name.
+   * territories (French West Africa), drawn over its members with its name;
+   * "blank" is reviewed land no state held in these years, drawn light grey
+   * within today's borders, which clicks pass through (to ask for a source).
    */
-  kind?: "hatch" | "unreviewed" | "group";
+  kind?: "hatch" | "unreviewed" | "group" | "blank";
   /** For "hatch": the state that holds the land, since when, and why it is not its owner. */
   by?: string;
   since?: string;
