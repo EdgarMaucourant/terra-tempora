@@ -4589,6 +4589,158 @@
    "summary": "Allied to Piedmont-Sardinia, Napoleon III goes to war with Austria in April 1859 and leads the French army into Lombardy himself. The French and Sardinians win at Magenta on 4 June and at Solferino on 24 June, one of the bloodiest battles of the century, whose horrors lead Henry Dunant to found the Red Cross. Lombardy passes to Sardinia, and in return France receives Nice and Savoy in 1860.",
    "wikipedia": "Second_Italian_War_of_Independence",
    "search": "Second Italian War of Independence 1859 Magenta Solferino Napoleon III Austria Piedmont-Sardinia Lombardy Villafranca Red Cross Dunant"
+  },
+  {
+   "id": "waterloo-1815",
+   "kind": "battle",
+   "year": 1815,
+   "title": "Waterloo and the second Treaty of Paris, 1815",
+   "place": "Waterloo",
+   "lonLat": [
+    4.41,
+    50.68
+   ],
+   "civs": [
+    "france",
+    "united-kingdom",
+    "netherlands"
+   ],
+   "summary": "Back from Elba for a Hundred Days, Napoleon is beaten at Waterloo on 18 June 1815 by Wellington's British, Dutch and German army and Blücher's Prussians. He abdicates again and is sent to Saint Helena, and Louis XVIII returns to Paris on 8 July. By the second Treaty of Paris of 20 November 1815, France loses Landau, Saarlouis, Philippeville and the part of Savoy it had kept in 1814, must pay 700 million francs and accept an army of occupation.",
+   "wikipedia": "Battle_of_Waterloo",
+   "search": "Battle of Waterloo 1815 Napoleon Wellington Blucher Hundred Days second Treaty of Paris Louis XVIII Saint Helena"
+  },
+  {
+   "id": "allied-occupation-ends-1818",
+   "kind": "treaty",
+   "year": 1818,
+   "title": "The end of the Allied occupation, 1818",
+   "place": "Cambrai",
+   "lonLat": [
+    3.23,
+    50.18
+   ],
+   "civs": [
+    "france",
+    "united-kingdom",
+    "russia",
+    "austria"
+   ],
+   "summary": "Since 1815 an Allied army of 150,000 men under Wellington, with headquarters at Cambrai, has held the north-east of France as a guarantee for the war indemnity. Thanks to loans from the Baring and Hope banks, the Duke of Richelieu's government pays early, and at the Congress of Aix-la-Chapelle in October 1818 the powers agree to leave. The last troops are gone by the end of November, and France joins the Concert of Europe.",
+   "wikipedia": "Congress_of_Aix-la-Chapelle_(1818)",
+   "search": "end of Allied occupation 1818 Congress of Aix-la-Chapelle Wellington Cambrai Richelieu indemnity army of occupation"
+  },
+  {
+   "id": "radama-madagascar-1817",
+   "kind": "empire",
+   "year": 1817,
+   "to": 1828,
+   "title": "Radama I and the Merina conquest of Madagascar, 1817 – 1828",
+   "place": "Antananarivo",
+   "lonLat": [
+    47.52,
+    -18.91
+   ],
+   "civs": [
+    "madagascar"
+   ],
+   "summary": "King Radama I of Imerina signs a treaty with Britain in October 1817, ending the slave trade in return for weapons and advisers, and Britain recognises him as King of Madagascar. With a modern army he takes Tamatave and the east coast, then Mahajanga and the north-west in 1824, and Fort-Dauphin in 1825. By his death in 1828 the Merina rule about two-thirds of the island, but never the Sakalava west or the far south.",
+   "wikipedia": "Radama_I",
+   "search": "Radama I Merina Kingdom 1817 1828 Madagascar conquest Tamatave Mahajanga Fort-Dauphin British treaty"
+  },
+  {
+   "id": "invasion-of-algiers-1830",
+   "kind": "war",
+   "year": 1830,
+   "title": "The French invasion of Algiers, 1830",
+   "place": "Algiers",
+   "lonLat": [
+    3.06,
+    36.75
+   ],
+   "civs": [
+    "french-algeria",
+    "algeria",
+    "france"
+   ],
+   "summary": "Using a quarrel with the Dey of Algiers, who had struck the French consul with a fly whisk in 1827, Charles X's government sends 37,000 men, who land at Sidi Ferruch on 14 June 1830. Algiers surrenders on 5 July and the Dey goes into exile, ending three centuries of Ottoman rule. Charles X falls weeks later, but the July Monarchy keeps the city and slowly extends the conquest.",
+   "wikipedia": "Invasion_of_Algiers_in_1830",
+   "search": "invasion of Algiers 1830 Sidi Ferruch Dey Hussein fly whisk Charles X Bourmont conquest of Algeria"
+  },
+  {
+   "id": "july-revolution-1830",
+   "kind": "revolution",
+   "year": 1830,
+   "title": "The July Revolution, 1830",
+   "place": "Paris",
+   "lonLat": [
+    2.35,
+    48.86
+   ],
+   "civs": [
+    "france"
+   ],
+   "summary": "When Charles X suspends press freedom and dissolves the newly elected Chamber, Parisians build barricades and fight the army for three days, the \"Three Glorious Days\" of 27–29 July 1830. Charles X abdicates and leaves for exile, and the liberal deputies offer the crown to his cousin Louis-Philippe, Duke of Orléans, who becomes King of the French on 9 August: the July Monarchy begins.",
+   "wikipedia": "July_Revolution",
+   "search": "July Revolution 1830 Three Glorious Days Trois Glorieuses Charles X Louis-Philippe July Monarchy barricades"
+  },
+  {
+   "id": "egypt-in-syria-1831",
+   "kind": "war",
+   "year": 1831,
+   "to": 1840,
+   "title": "Egypt rules Syria, 1831 – 1840",
+   "place": "Damascus",
+   "lonLat": [
+    36.29,
+    33.51
+   ],
+   "civs": [
+    "syria",
+    "lebanon",
+    "ottoman-empire",
+    "egypt"
+   ],
+   "summary": "Muhammad Ali, the Ottoman governor of Egypt, sends his son Ibrahim Pasha to take Syria in 1831. Acre falls in May 1832, Damascus soon after, and Ibrahim beats the Sultan's armies at Homs and Konya. Egypt rules Syria and Lebanon for eight years, until Britain, Austria and Russia step in during the Oriental Crisis of 1840: Acre is shelled and Ibrahim withdraws, while France, which backed Muhammad Ali, is left out.",
+   "wikipedia": "Egyptian–Ottoman_War_(1831–1833)",
+   "search": "Egyptian–Ottoman War 1831 1840 Muhammad Ali Ibrahim Pasha Syria Acre Damascus Konya Oriental Crisis Convention of London"
+  },
+  {
+   "id": "treaty-of-tafna-1837",
+   "kind": "treaty",
+   "year": 1837,
+   "title": "The Treaty of Tafna, 1837",
+   "place": "Tafna river",
+   "lonLat": [
+    -1.45,
+    35.25
+   ],
+   "civs": [
+    "french-algeria",
+    "algeria",
+    "france"
+   ],
+   "summary": "On 30 May 1837 General Bugeaud signs a treaty with the emir Abd al-Qadir on the Tafna river. France keeps Algiers, Oran and the coast around them, and recognises the emir's rule over most of western and central Algeria, including Tlemcen. Abd al-Qadir uses the truce to build up his state, until the French march through his land in 1839 and the war starts again.",
+   "wikipedia": "Treaty_of_Tafna",
+   "search": "Treaty of Tafna 1837 Bugeaud Abd al-Qadir emir Tlemcen Oran Algeria truce"
+  },
+  {
+   "id": "siege-of-constantine-1837",
+   "kind": "siege",
+   "year": 1837,
+   "title": "The siege of Constantine, 1837",
+   "place": "Constantine",
+   "lonLat": [
+    6.61,
+    36.36
+   ],
+   "civs": [
+    "french-algeria",
+    "algeria",
+    "france"
+   ],
+   "summary": "After a failed attack in 1836, a French army of 20,000 under General Damrémont returns to Constantine, the stronghold of Ahmed Bey on its rocky gorge. Damrémont is killed by a cannonball on 12 October 1837, and the next day General Valée's troops storm the breach and take the city after hard street fighting. Ahmed Bey holds out in the Aurès until 1848.",
+   "wikipedia": "Siege_of_Constantine_(1837)",
+   "search": "siege of Constantine 1837 Ahmed Bey Damremont Valee French conquest of Algeria breach"
   }
  ]
 }
