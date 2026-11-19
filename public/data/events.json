@@ -4741,6 +4741,1656 @@
    "summary": "After a failed attack in 1836, a French army of 20,000 under General Damrémont returns to Constantine, the stronghold of Ahmed Bey on its rocky gorge. Damrémont is killed by a cannonball on 12 October 1837, and the next day General Valée's troops storm the breach and take the city after hard street fighting. Ahmed Bey holds out in the Aurès until 1848.",
    "wikipedia": "Siege_of_Constantine_(1837)",
    "search": "siege of Constantine 1837 Ahmed Bey Damremont Valee French conquest of Algeria breach"
+  },
+  {
+   "id": "third-republic-1870",
+   "kind": "revolution",
+   "year": 1870,
+   "title": "The Republic is proclaimed, 4 September 1870",
+   "place": "Paris",
+   "lonLat": [
+    2.352,
+    48.857
+   ],
+   "civs": [
+    "france"
+   ],
+   "summary": "Two days after Napoleon III's surrender at Sedan, crowds invade the Assembly and Léon Gambetta proclaims the Republic at the Hôtel de Ville of Paris. A Government of National Defence carries on the war against Prussia. The Third Republic that follows lasts until 1940, the longest French regime since the Revolution.",
+   "wikipedia": "French_Third_Republic",
+   "search": "4 September 1870 Third Republic proclaimed Gambetta Hotel de Ville Government of National Defence Second Empire falls"
+  },
+  {
+   "id": "provisional-government-1944",
+   "kind": "revolution",
+   "year": 1944,
+   "to": 1946,
+   "title": "De Gaulle's Provisional Government, 1944 – 1946",
+   "place": "Algiers, then Paris",
+   "lonLat": [
+    3.04,
+    36.77
+   ],
+   "civs": [
+    "france",
+    "french-algeria"
+   ],
+   "summary": "On 3 June 1944, in Algiers, the French Committee of National Liberation makes itself the Provisional Government of the French Republic, led by Charles de Gaulle. It moves to Paris after the liberation in August, sweeping away the Vichy regime, and gives women the vote. De Gaulle resigns in January 1946, and the Fourth Republic begins that October.",
+   "wikipedia": "Provisional_Government_of_the_French_Republic",
+   "search": "Provisional Government of the French Republic 1944 GPRF de Gaulle Algiers Vichy women's vote Fourth Republic"
+  },
+  {
+   "id": "liberal-wars-1828",
+   "kind": "war",
+   "year": 1828,
+   "to": 1834,
+   "title": "Dom Miguel seizes the throne: the Liberal Wars, 1828 – 1834",
+   "place": "Lisbon",
+   "lonLat": [
+    -9.14,
+    38.72
+   ],
+   "civs": [
+    "portugal"
+   ],
+   "summary": "In July 1828 Dom Miguel, regent for his niece Maria II, has himself proclaimed absolute king and tears up the liberal Charter. His brother Pedro, emperor of Brazil, abdicates there and lands near Porto in 1832 to fight for his daughter. After two years of civil war the Miguelists surrender at Évora-Monte in May 1834, and Maria II rules as a constitutional queen.",
+   "wikipedia": "Liberal_Wars",
+   "search": "Liberal Wars 1828 1834 Dom Miguel Pedro IV Maria II absolutism siege of Porto Evora-Monte Portugal civil war"
+  },
+  {
+   "id": "sidonio-pais-1917",
+   "kind": "revolution",
+   "year": 1917,
+   "title": "Sidónio Pais's coup, 1917",
+   "place": "Lisbon",
+   "lonLat": [
+    -9.15,
+    38.73
+   ],
+   "civs": [
+    "portugal"
+   ],
+   "summary": "With Portugal worn down by its part in the First World War, Major Sidónio Pais leads a military revolt in Lisbon on 5–8 December 1917 and overthrows Afonso Costa's government. He rules as a presidential dictator, the \"New Republic\", until he is shot dead at Rossio station on 14 December 1918.",
+   "wikipedia": "Sidónio_Pais",
+   "search": "Sidonio Pais 1917 coup New Republic Portugal First Republic dictatorship assassinated 1918"
+  },
+  {
+   "id": "boumediene-coup-1965",
+   "kind": "revolution",
+   "year": 1965,
+   "title": "Boumediène's coup, 1965",
+   "place": "Algiers",
+   "lonLat": [
+    3.06,
+    36.75
+   ],
+   "civs": [
+    "algeria"
+   ],
+   "summary": "On 19 June 1965 the defence minister, Colonel Houari Boumediène, has President Ahmed Ben Bella arrested and takes power at the head of a Revolutionary Council. He rules Algeria until his death in 1978, nationalising its oil and gas.",
+   "wikipedia": "1965_Algerian_coup_d'état",
+   "search": "1965 Algerian coup Boumediene Ben Bella Revolutionary Council 19 June"
+  },
+  {
+   "id": "algeria-coup-1992",
+   "kind": "revolution",
+   "year": 1992,
+   "title": "The army halts the elections, 1992",
+   "place": "Algiers",
+   "lonLat": [
+    3.04,
+    36.74
+   ],
+   "civs": [
+    "algeria"
+   ],
+   "summary": "With the Islamic Salvation Front about to win the general election, the army forces President Chadli Bendjedid to resign on 11 January 1992 and cancels the second round. A High Council of State takes over, and the Front is banned. The civil war that follows, the \"black decade\", kills well over 100,000 people.",
+   "wikipedia": "1992_Algerian_coup_d'état",
+   "search": "1992 Algerian coup Chadli Bendjedid Islamic Salvation Front FIS elections cancelled High Council of State civil war black decade"
+  },
+  {
+   "id": "hirak-2019",
+   "kind": "revolution",
+   "year": 2019,
+   "title": "The Hirak and Bouteflika's fall, 2019",
+   "place": "Algiers",
+   "lonLat": [
+    3.07,
+    36.76
+   ],
+   "civs": [
+    "algeria"
+   ],
+   "summary": "When the ailing President Abdelaziz Bouteflika, in power since 1999, seeks a fifth term, millions of Algerians march every Friday from February 2019 in a peaceful movement, the Hirak. The army drops him and he resigns on 2 April 2019.",
+   "wikipedia": "2019–2021_Algerian_protests",
+   "search": "Hirak 2019 Algeria protests Bouteflika fifth term resigns"
+  },
+  {
+   "id": "tunisian-republic-1957",
+   "kind": "crown",
+   "year": 1957,
+   "title": "Tunisia becomes a republic, 1957",
+   "place": "Tunis",
+   "lonLat": [
+    10.18,
+    36.8
+   ],
+   "civs": [
+    "tunisia"
+   ],
+   "summary": "On 25 July 1957 the Constituent Assembly deposes Muhammad VIII al-Amin, the last bey of the Husainid dynasty that had ruled since 1705, and proclaims the republic. Prime Minister Habib Bourguiba becomes its first president.",
+   "wikipedia": "Tunisia",
+   "search": "Tunisia republic 1957 bey deposed Husainid dynasty Bourguiba president 25 July"
+  },
+  {
+   "id": "ben-ali-takes-power-1987",
+   "kind": "revolution",
+   "year": 1987,
+   "title": "Ben Ali removes Bourguiba, 1987",
+   "place": "Tunis",
+   "lonLat": [
+    10.2,
+    36.81
+   ],
+   "civs": [
+    "tunisia"
+   ],
+   "summary": "On 7 November 1987 Prime Minister Zine El Abidine Ben Ali has seven doctors declare the 84-year-old Habib Bourguiba unfit to rule, and takes over as president. The bloodless \"medical coup\" begins 23 years of increasingly harsh rule.",
+   "wikipedia": "1987_Tunisian_coup_d'état",
+   "search": "1987 Tunisia Ben Ali Bourguiba medical coup 7 November"
+  },
+  {
+   "id": "tunisian-revolution-2011",
+   "kind": "revolution",
+   "year": 2010,
+   "to": 2011,
+   "title": "The Tunisian revolution, 2010 – 2011",
+   "place": "Sidi Bouzid, then Tunis",
+   "lonLat": [
+    9.48,
+    35.04
+   ],
+   "civs": [
+    "tunisia"
+   ],
+   "summary": "On 17 December 2010 a young street vendor, Mohamed Bouazizi, sets himself on fire in Sidi Bouzid after police seize his goods. Protests spread across the country, and on 14 January 2011 President Ben Ali flees to Saudi Arabia. The revolution sets off the Arab Spring and leads to Tunisia's first free elections.",
+   "wikipedia": "Tunisian_revolution",
+   "search": "Tunisian revolution 2010 2011 Jasmine Revolution Bouazizi Sidi Bouzid Ben Ali flees Arab Spring"
+  },
+  {
+   "id": "mauritania-coup-1978",
+   "kind": "revolution",
+   "year": 1978,
+   "title": "The army ousts Ould Daddah, 1978",
+   "place": "Nouakchott",
+   "lonLat": [
+    -15.98,
+    18.09
+   ],
+   "civs": [
+    "mauritania"
+   ],
+   "summary": "Drained by its war against the Polisario Front over Western Sahara, Mauritania's army overthrows Moktar Ould Daddah, president since independence, on 10 July 1978. The new rulers make peace with the Polisario in 1979 and give up Mauritania's share of the territory.",
+   "wikipedia": "1978_Mauritanian_coup_d'état",
+   "search": "1978 Mauritanian coup Moktar Ould Daddah Western Sahara war Polisario"
+  },
+  {
+   "id": "mauritania-coup-1984",
+   "kind": "revolution",
+   "year": 1984,
+   "title": "Ould Taya takes power, 1984",
+   "place": "Nouakchott",
+   "lonLat": [
+    -15.97,
+    18.08
+   ],
+   "civs": [
+    "mauritania"
+   ],
+   "summary": "On 12 December 1984, while President Mohamed Khouna Ould Haidalla is abroad, his prime minister, Colonel Maaouya Ould Sid'Ahmed Taya, takes power in a bloodless coup. He rules Mauritania for more than twenty years.",
+   "wikipedia": "Maaouya_Ould_Sid'Ahmed_Taya",
+   "search": "1984 Mauritania coup Ould Taya Haidalla"
+  },
+  {
+   "id": "mauritania-coup-2005",
+   "kind": "revolution",
+   "year": 2005,
+   "title": "Ould Taya is overthrown, 2005",
+   "place": "Nouakchott",
+   "lonLat": [
+    -15.96,
+    18.1
+   ],
+   "civs": [
+    "mauritania"
+   ],
+   "summary": "On 3 August 2005, while Ould Taya is at a funeral in Saudi Arabia, the head of the police, Colonel Ely Ould Mohamed Vall, takes power. His military council hands over to an elected president, Sidi Ould Cheikh Abdallahi, in 2007.",
+   "wikipedia": "2005_Mauritanian_coup_d'état",
+   "search": "2005 Mauritania coup Ely Ould Mohamed Vall Ould Taya"
+  },
+  {
+   "id": "mauritania-coup-2008",
+   "kind": "revolution",
+   "year": 2008,
+   "title": "Ould Abdel Aziz's coup, 2008",
+   "place": "Nouakchott",
+   "lonLat": [
+    -15.99,
+    18.07
+   ],
+   "civs": [
+    "mauritania"
+   ],
+   "summary": "On 6 August 2008, hours after being dismissed, General Mohamed Ould Abdel Aziz overthrows the elected president Sidi Ould Cheikh Abdallahi. He is elected president in 2009 and rules until 2019.",
+   "wikipedia": "2008_Mauritanian_coup_d'état",
+   "search": "2008 Mauritania coup Mohamed Ould Abdel Aziz Abdallahi"
+  },
+  {
+   "id": "mali-coup-1968",
+   "kind": "revolution",
+   "year": 1968,
+   "title": "Moussa Traoré ousts Modibo Keïta, 1968",
+   "place": "Bamako",
+   "lonLat": [
+    -8.0,
+    12.64
+   ],
+   "civs": [
+    "mali"
+   ],
+   "summary": "On 19 November 1968 young officers led by Lieutenant Moussa Traoré overthrow Modibo Keïta, Mali's socialist president since independence, who dies in detention in 1977. Traoré rules for 23 years.",
+   "wikipedia": "1968_Malian_coup_d'état",
+   "search": "1968 Mali coup Moussa Traore Modibo Keita"
+  },
+  {
+   "id": "mali-revolution-1991",
+   "kind": "revolution",
+   "year": 1991,
+   "title": "The March revolution in Mali, 1991",
+   "place": "Bamako",
+   "lonLat": [
+    -7.99,
+    12.65
+   ],
+   "civs": [
+    "mali"
+   ],
+   "summary": "After days of protests in Bamako in which soldiers kill some 200 people, Lieutenant-Colonel Amadou Toumani Touré arrests Moussa Traoré on 26 March 1991. Touré hands power to an elected president, Alpha Oumar Konaré, in 1992, opening two decades of democracy.",
+   "wikipedia": "1991_Malian_coup_d'état",
+   "search": "March 1991 revolution Mali Moussa Traore overthrown Amadou Toumani Toure democracy Konare"
+  },
+  {
+   "id": "mali-coup-2012",
+   "kind": "revolution",
+   "year": 2012,
+   "title": "The 2012 coup and the loss of the north",
+   "place": "Bamako",
+   "lonLat": [
+    -8.01,
+    12.63
+   ],
+   "civs": [
+    "mali"
+   ],
+   "summary": "Angry at the army's defeats by Tuareg rebels, soldiers led by Captain Amadou Sanogo overthrow President Amadou Toumani Touré on 22 March 2012. In the chaos, rebels and jihadist groups seize all of northern Mali, until a French intervention in January 2013 drives the jihadists from the towns.",
+   "wikipedia": "2012_Malian_coup_d'état",
+   "search": "2012 Mali coup Sanogo Amadou Toumani Toure Tuareg rebellion Azawad jihadists Operation Serval"
+  },
+  {
+   "id": "mali-coups-2020",
+   "kind": "revolution",
+   "year": 2020,
+   "to": 2021,
+   "title": "Colonel Goïta's two coups, 2020 – 2021",
+   "place": "Bamako",
+   "lonLat": [
+    -8.0,
+    12.66
+   ],
+   "civs": [
+    "mali"
+   ],
+   "summary": "After months of protests, colonels led by Assimi Goïta arrest President Ibrahim Boubacar Keïta on 18 August 2020. In May 2021 Goïta removes the civilian transition leaders and takes the presidency himself. The junta turns to Russia's Wagner group, and French troops leave Mali in 2022.",
+   "wikipedia": "2020_Malian_coup_d'état",
+   "search": "2020 2021 Mali coups Assimi Goita Ibrahim Boubacar Keita Bah N'Daw junta Wagner France leaves"
+  },
+  {
+   "id": "guinea-coup-1984",
+   "kind": "revolution",
+   "year": 1984,
+   "title": "Lansana Conté takes power, 1984",
+   "place": "Conakry",
+   "lonLat": [
+    -13.68,
+    9.64
+   ],
+   "civs": [
+    "guinea"
+   ],
+   "summary": "A week after the death of Ahmed Sékou Touré, who had ruled Guinea since independence, the army under Colonel Lansana Conté seizes power on 3 April 1984. Conté frees thousands of political prisoners and stays in power until his death in 2008.",
+   "wikipedia": "1984_Guinean_coup_d'état",
+   "search": "1984 Guinea coup Lansana Conte Sekou Toure death"
+  },
+  {
+   "id": "guinea-coup-2008",
+   "kind": "revolution",
+   "year": 2008,
+   "title": "Dadis Camara's coup, 2008",
+   "place": "Conakry",
+   "lonLat": [
+    -13.69,
+    9.63
+   ],
+   "civs": [
+    "guinea"
+   ],
+   "summary": "Hours after Lansana Conté's death, Captain Moussa Dadis Camara seizes power on 23 December 2008. On 28 September 2009 his soldiers kill over 150 opposition supporters in a Conakry stadium; Camara is shot by an aide that December and goes into exile.",
+   "wikipedia": "2008_Guinean_coup_d'état",
+   "search": "2008 Guinea coup Moussa Dadis Camara 28 September 2009 stadium massacre"
+  },
+  {
+   "id": "guinea-coup-2021",
+   "kind": "revolution",
+   "year": 2021,
+   "title": "Doumbouya's coup, 2021",
+   "place": "Conakry",
+   "lonLat": [
+    -13.7,
+    9.65
+   ],
+   "civs": [
+    "guinea"
+   ],
+   "summary": "On 5 September 2021 special forces led by Colonel Mamady Doumbouya storm the presidential palace and detain Alpha Condé, who had changed the constitution to win a third term. Doumbouya becomes transition president.",
+   "wikipedia": "2021_Guinean_coup_d'état",
+   "search": "2021 Guinea coup Mamady Doumbouya Alpha Conde third term"
+  },
+  {
+   "id": "ivory-coast-coup-1999",
+   "kind": "revolution",
+   "year": 1999,
+   "title": "The Christmas Eve coup in Ivory Coast, 1999",
+   "place": "Abidjan",
+   "lonLat": [
+    -4.01,
+    5.36
+   ],
+   "civs": [
+    "ivory-coast"
+   ],
+   "summary": "On 24 December 1999 a mutiny over unpaid wages turns into the country's first coup: General Robert Guéï ousts President Henri Konan Bédié. Guéï loses the disputed 2000 election to Laurent Gbagbo, and tensions over who counts as Ivorian lead to civil war in 2002.",
+   "wikipedia": "1999_Ivorian_coup_d'état",
+   "search": "1999 Ivory Coast coup Robert Guei Henri Konan Bedie Christmas Eve Ivoirite"
+  },
+  {
+   "id": "ivory-coast-crisis-2011",
+   "kind": "war",
+   "year": 2010,
+   "to": 2011,
+   "title": "The Ivorian crisis and Gbagbo's fall, 2010 – 2011",
+   "place": "Abidjan",
+   "lonLat": [
+    -4.0,
+    5.34
+   ],
+   "civs": [
+    "ivory-coast"
+   ],
+   "summary": "Laurent Gbagbo refuses to accept defeat by Alassane Ouattara in the November 2010 election, and fighting kills some 3,000 people. Ouattara's forces, backed by French and UN troops, capture Gbagbo in Abidjan on 11 April 2011, and Ouattara takes office.",
+   "wikipedia": "2010–2011_Ivorian_crisis",
+   "search": "2010 2011 Ivorian crisis Gbagbo Ouattara election Abidjan captured"
+  },
+  {
+   "id": "upper-volta-coup-1966",
+   "kind": "revolution",
+   "year": 1966,
+   "title": "Upper Volta's first coup, 1966",
+   "place": "Ouagadougou",
+   "lonLat": [
+    -1.53,
+    12.37
+   ],
+   "civs": [
+    "burkina-faso"
+   ],
+   "summary": "On 3 January 1966, after a general strike and huge protests against austerity, President Maurice Yaméogo hands power to the army chief, Lieutenant-Colonel Sangoulé Lamizana. Lamizana rules for almost 15 years.",
+   "wikipedia": "1966_Upper_Voltan_coup_d'état",
+   "search": "1966 Upper Volta coup Lamizana Yameogo general strike Burkina Faso"
+  },
+  {
+   "id": "upper-volta-coup-1980",
+   "kind": "revolution",
+   "year": 1980,
+   "title": "Saye Zerbo's coup, 1980",
+   "place": "Ouagadougou",
+   "lonLat": [
+    -1.52,
+    12.36
+   ],
+   "civs": [
+    "burkina-faso"
+   ],
+   "summary": "On 25 November 1980, after months of strikes, Colonel Saye Zerbo overthrows President Lamizana and sets up a Military Committee of Recovery for National Progress.",
+   "wikipedia": "1980_Upper_Voltan_coup_d'état",
+   "search": "1980 Upper Volta coup Saye Zerbo Lamizana"
+  },
+  {
+   "id": "upper-volta-coup-1982",
+   "kind": "revolution",
+   "year": 1982,
+   "title": "Jean-Baptiste Ouédraogo's coup, 1982",
+   "place": "Ouagadougou",
+   "lonLat": [
+    -1.54,
+    12.38
+   ],
+   "civs": [
+    "burkina-faso"
+   ],
+   "summary": "On 7 November 1982 junior officers overthrow Saye Zerbo and make the army doctor Jean-Baptiste Ouédraogo head of state. Captain Thomas Sankara becomes his prime minister in January 1983.",
+   "wikipedia": "1982_Upper_Voltan_coup_d'état",
+   "search": "1982 Upper Volta coup Jean-Baptiste Ouedraogo Saye Zerbo Sankara"
+  },
+  {
+   "id": "sankara-revolution-1983",
+   "kind": "revolution",
+   "year": 1983,
+   "title": "Thomas Sankara's revolution, 1983",
+   "place": "Ouagadougou",
+   "lonLat": [
+    -1.51,
+    12.37
+   ],
+   "civs": [
+    "burkina-faso"
+   ],
+   "summary": "On 4 August 1983 Captain Blaise Compaoré's commandos free Thomas Sankara, jailed by Ouédraogo, and make him president. Sankara launches a radical revolution against corruption and for self-reliance, and in 1984 renames the country Burkina Faso, \"land of upright people\".",
+   "wikipedia": "1983_Upper_Voltan_coup_d'état",
+   "search": "1983 Thomas Sankara revolution Burkina Faso Upper Volta Compaore 4 August"
+  },
+  {
+   "id": "burkina-coup-1987",
+   "kind": "revolution",
+   "year": 1987,
+   "title": "Sankara is killed: Compaoré's coup, 1987",
+   "place": "Ouagadougou",
+   "lonLat": [
+    -1.52,
+    12.38
+   ],
+   "civs": [
+    "burkina-faso"
+   ],
+   "summary": "On 15 October 1987 Thomas Sankara is shot dead with twelve aides during a meeting, and his old friend Blaise Compaoré takes power. Compaoré rules Burkina Faso for 27 years.",
+   "wikipedia": "1987_Burkinabé_coup_d'état",
+   "search": "1987 Burkina Faso coup Sankara killed Blaise Compaore 15 October"
+  },
+  {
+   "id": "burkina-uprising-2014",
+   "kind": "revolution",
+   "year": 2014,
+   "title": "The Burkinabè uprising, 2014",
+   "place": "Ouagadougou",
+   "lonLat": [
+    -1.53,
+    12.36
+   ],
+   "civs": [
+    "burkina-faso"
+   ],
+   "summary": "When Blaise Compaoré tries to change the constitution to run again, crowds set the National Assembly on fire on 30 October 2014. He resigns the next day and flees to Ivory Coast; elections follow in 2015.",
+   "wikipedia": "2014_Burkinabé_uprising",
+   "search": "2014 Burkina Faso uprising Compaore resigns National Assembly burned"
+  },
+  {
+   "id": "burkina-coups-2022",
+   "kind": "revolution",
+   "year": 2022,
+   "title": "Two coups in Burkina Faso, 2022",
+   "place": "Ouagadougou",
+   "lonLat": [
+    -1.52,
+    12.37
+   ],
+   "civs": [
+    "burkina-faso"
+   ],
+   "summary": "With jihadist attacks spreading, Lieutenant-Colonel Paul-Henri Damiba overthrows the elected president Roch Marc Christian Kaboré on 24 January 2022. Eight months later, on 30 September, Captain Ibrahim Traoré ousts Damiba in turn.",
+   "wikipedia": "January_2022_Burkina_Faso_coup_d'état",
+   "search": "2022 Burkina Faso coups Damiba Kabore Ibrahim Traore"
+  },
+  {
+   "id": "niger-coup-1974",
+   "kind": "revolution",
+   "year": 1974,
+   "title": "Kountché's coup, 1974",
+   "place": "Niamey",
+   "lonLat": [
+    2.11,
+    13.51
+   ],
+   "civs": [
+    "niger"
+   ],
+   "summary": "During a terrible drought, Lieutenant-Colonel Seyni Kountché overthrows Hamani Diori, president since independence, on 15 April 1974. Kountché rules until his death in 1987.",
+   "wikipedia": "1974_Nigerien_coup_d'état",
+   "search": "1974 Niger coup Seyni Kountche Hamani Diori drought"
+  },
+  {
+   "id": "niger-coup-1996",
+   "kind": "revolution",
+   "year": 1996,
+   "title": "Baré Maïnassara's coup, 1996",
+   "place": "Niamey",
+   "lonLat": [
+    2.12,
+    13.52
+   ],
+   "civs": [
+    "niger"
+   ],
+   "summary": "On 27 January 1996, with the elected president and prime minister deadlocked, Colonel Ibrahim Baré Maïnassara seizes power. He wins a rigged election later that year.",
+   "wikipedia": "1996_Nigerien_coup_d'état",
+   "search": "1996 Niger coup Ibrahim Bare Mainassara"
+  },
+  {
+   "id": "niger-coup-1999",
+   "kind": "revolution",
+   "year": 1999,
+   "title": "Baré Maïnassara is killed, 1999",
+   "place": "Niamey",
+   "lonLat": [
+    2.1,
+    13.5
+   ],
+   "civs": [
+    "niger"
+   ],
+   "summary": "On 9 April 1999 President Baré Maïnassara is shot dead by his own guards at Niamey airport. Major Daouda Malam Wanké takes over and hands power to an elected president, Mamadou Tandja, that December.",
+   "wikipedia": "1999_Nigerien_coup_d'état",
+   "search": "1999 Niger coup Bare Mainassara killed Wanke Tandja"
+  },
+  {
+   "id": "niger-coup-2010",
+   "kind": "revolution",
+   "year": 2010,
+   "title": "Tandja is overthrown, 2010",
+   "place": "Niamey",
+   "lonLat": [
+    2.11,
+    13.52
+   ],
+   "civs": [
+    "niger"
+   ],
+   "summary": "After President Mamadou Tandja changes the constitution to stay in power, soldiers storm the presidential palace on 18 February 2010. Their junta hands over to the elected Mahamadou Issoufou in 2011.",
+   "wikipedia": "2010_Nigerien_coup_d'état",
+   "search": "2010 Niger coup Tandja Salou Djibo Issoufou"
+  },
+  {
+   "id": "niger-coup-2023",
+   "kind": "revolution",
+   "year": 2023,
+   "title": "Tiani's coup, 2023",
+   "place": "Niamey",
+   "lonLat": [
+    2.12,
+    13.5
+   ],
+   "civs": [
+    "niger"
+   ],
+   "summary": "On 26 July 2023 the presidential guard under General Abdourahamane Tiani detains President Mohamed Bazoum. The junta expels French troops and the French ambassador, and joins Mali and Burkina Faso in an Alliance of Sahel States.",
+   "wikipedia": "2023_Nigerien_coup_d'état",
+   "search": "2023 Niger coup Tiani Bazoum Alliance of Sahel States France"
+  },
+  {
+   "id": "dahomey-coup-1963",
+   "kind": "revolution",
+   "year": 1963,
+   "title": "Dahomey's first coup, 1963",
+   "place": "Cotonou",
+   "lonLat": [
+    2.42,
+    6.37
+   ],
+   "civs": [
+    "benin"
+   ],
+   "summary": "On 28 October 1963, after riots in Cotonou, the army chief Colonel Christophe Soglo removes President Hubert Maga. It is the first of six coups in Dahomey in nine years.",
+   "wikipedia": "1963_Dahomeyan_coup_d'état",
+   "search": "1963 Dahomey coup Christophe Soglo Hubert Maga Benin"
+  },
+  {
+   "id": "dahomey-coup-1965",
+   "kind": "revolution",
+   "year": 1965,
+   "title": "Soglo takes power, 1965",
+   "place": "Cotonou",
+   "lonLat": [
+    2.43,
+    6.36
+   ],
+   "civs": [
+    "benin"
+   ],
+   "summary": "As the civilian leaders quarrel, General Christophe Soglo steps in again on 22 December 1965 and makes himself head of state.",
+   "wikipedia": "1965_Dahomeyan_coup_d'état",
+   "search": "1965 Dahomey coup Christophe Soglo"
+  },
+  {
+   "id": "dahomey-coup-1967",
+   "kind": "revolution",
+   "year": 1967,
+   "title": "Kouandété's coup, 1967",
+   "place": "Cotonou",
+   "lonLat": [
+    2.41,
+    6.38
+   ],
+   "civs": [
+    "benin"
+   ],
+   "summary": "On 17 December 1967 young officers led by Major Maurice Kouandété overthrow Soglo, and Lieutenant-Colonel Alphonse Alley becomes head of state.",
+   "wikipedia": "1967_Dahomeyan_coup_d'état",
+   "search": "1967 Dahomey coup Maurice Kouandete Alphonse Alley Soglo"
+  },
+  {
+   "id": "dahomey-coup-1969",
+   "kind": "revolution",
+   "year": 1969,
+   "title": "The 1969 coup and the three-man council",
+   "place": "Cotonou",
+   "lonLat": [
+    2.42,
+    6.38
+   ],
+   "civs": [
+    "benin"
+   ],
+   "summary": "On 10 December 1969 Kouandété overthrows President Émile Derlin Zinsou. In 1970 the army hands power to a Presidential Council in which the three rival leaders, Maga, Ahomadégbé and Apithy, are to take turns.",
+   "wikipedia": "1969_Dahomeyan_coup_d'état",
+   "search": "1969 Dahomey coup Kouandete Zinsou Presidential Council"
+  },
+  {
+   "id": "kerekou-coup-1972",
+   "kind": "revolution",
+   "year": 1972,
+   "to": 1975,
+   "title": "Kérékou's coup and the People's Republic of Benin, 1972 – 1975",
+   "place": "Cotonou",
+   "lonLat": [
+    2.43,
+    6.37
+   ],
+   "civs": [
+    "benin"
+   ],
+   "summary": "On 26 October 1972 Major Mathieu Kérékou overthrows the Presidential Council. He makes Marxism-Leninism the state's doctrine, and on 30 November 1975 renames Dahomey the People's Republic of Benin.",
+   "wikipedia": "1972_Dahomeyan_coup_d'état",
+   "search": "1972 Dahomey coup Mathieu Kerekou People's Republic of Benin 1975 Marxism"
+  },
+  {
+   "id": "benin-national-conference-1990",
+   "kind": "revolution",
+   "year": 1990,
+   "title": "Benin's National Conference, 1990",
+   "place": "Cotonou",
+   "lonLat": [
+    2.41,
+    6.36
+   ],
+   "civs": [
+    "benin"
+   ],
+   "summary": "Bankrupt and facing strikes, Kérékou calls a National Conference in Cotonou in February 1990. It drops Marxism-Leninism, renames the country the Republic of Benin and sets up free elections, which Nicéphore Soglo wins in 1991: Africa's first peaceful handover of this kind.",
+   "wikipedia": "History_of_Benin",
+   "search": "1990 Benin National Conference Kerekou democracy Nicephore Soglo"
+  },
+  {
+   "id": "togo-coup-1963",
+   "kind": "revolution",
+   "year": 1963,
+   "title": "Olympio is killed: Togo's coup, 1963",
+   "place": "Lomé",
+   "lonLat": [
+    1.23,
+    6.13
+   ],
+   "civs": [
+    "togo"
+   ],
+   "summary": "On 13 January 1963 soldiers who had served in the French army kill President Sylvanus Olympio outside the US embassy in Lomé, the first such killing in newly independent Africa. Nicolas Grunitzky becomes president.",
+   "wikipedia": "1963_Togolese_coup_d'état",
+   "search": "1963 Togo coup Sylvanus Olympio assassinated Eyadema Grunitzky"
+  },
+  {
+   "id": "togo-coup-1967",
+   "kind": "revolution",
+   "year": 1967,
+   "title": "Eyadéma takes power, 1967",
+   "place": "Lomé",
+   "lonLat": [
+    1.22,
+    6.14
+   ],
+   "civs": [
+    "togo"
+   ],
+   "summary": "On 13 January 1967 Lieutenant-Colonel Étienne (later Gnassingbé) Eyadéma, who had taken part in the 1963 coup, overthrows Grunitzky. He rules Togo for 38 years, until his death in 2005.",
+   "wikipedia": "1967_Togolese_coup_d'état",
+   "search": "1967 Togo coup Gnassingbe Eyadema Grunitzky"
+  },
+  {
+   "id": "togo-succession-2005",
+   "kind": "revolution",
+   "year": 2005,
+   "title": "Faure Gnassingbé succeeds his father, 2005",
+   "place": "Lomé",
+   "lonLat": [
+    1.24,
+    6.12
+   ],
+   "civs": [
+    "togo"
+   ],
+   "summary": "When Eyadéma dies on 5 February 2005, the army makes his son Faure Gnassingbé president, against the constitution. Under African pressure he steps down and wins a disputed election in April, in which hundreds are killed.",
+   "wikipedia": "Faure_Gnassingbé",
+   "search": "2005 Togo Faure Gnassingbe succession Eyadema death army"
+  },
+  {
+   "id": "chad-coup-1975",
+   "kind": "revolution",
+   "year": 1975,
+   "title": "Tombalbaye is killed, 1975",
+   "place": "N'Djamena",
+   "lonLat": [
+    15.04,
+    12.11
+   ],
+   "civs": [
+    "chad"
+   ],
+   "summary": "On 13 April 1975 army units kill François Tombalbaye, Chad's president since independence, as rebellion spreads in the north. General Félix Malloum takes over.",
+   "wikipedia": "1975_Chadian_coup_d'état",
+   "search": "1975 Chad coup Tombalbaye killed Felix Malloum"
+  },
+  {
+   "id": "battle-of-ndjamena-1979",
+   "kind": "war",
+   "year": 1979,
+   "title": "The battle of N'Djamena and the GUNT, 1979",
+   "place": "N'Djamena",
+   "lonLat": [
+    15.05,
+    12.12
+   ],
+   "civs": [
+    "chad"
+   ],
+   "summary": "In February 1979 fighting breaks out in N'Djamena between Malloum's army and the forces of his prime minister, Hissène Habré. Malloum flees, and in November a Transitional Government of National Unity is formed under the northern rebel leader Goukouni Oueddei.",
+   "wikipedia": "Battle_of_N'Djamena_(1979)",
+   "search": "1979 battle of N'Djamena Malloum Habre Goukouni GUNT Chad civil war"
+  },
+  {
+   "id": "habre-takes-ndjamena-1982",
+   "kind": "revolution",
+   "year": 1982,
+   "title": "Hissène Habré takes N'Djamena, 1982",
+   "place": "N'Djamena",
+   "lonLat": [
+    15.03,
+    12.1
+   ],
+   "civs": [
+    "chad"
+   ],
+   "summary": "On 7 June 1982 Hissène Habré's army takes N'Djamena and Goukouni flees. Habré rules until 1990; in 2016 a court in Senegal sentences him to life for crimes against humanity.",
+   "wikipedia": "Hissène_Habré",
+   "search": "1982 Hissene Habre takes N'Djamena Goukouni Chad"
+  },
+  {
+   "id": "deby-takes-power-1990",
+   "kind": "revolution",
+   "year": 1990,
+   "title": "Idriss Déby takes power, 1990",
+   "place": "N'Djamena",
+   "lonLat": [
+    15.06,
+    12.11
+   ],
+   "civs": [
+    "chad"
+   ],
+   "summary": "Rebels led by Idriss Déby, Habré's former army chief, sweep in from Sudan and enter N'Djamena on 2 December 1990 as Habré flees. Déby rules Chad for thirty years.",
+   "wikipedia": "Idriss_Déby",
+   "search": "1990 Idriss Deby takes power N'Djamena Habre flees Chad"
+  },
+  {
+   "id": "chad-military-council-2021",
+   "kind": "revolution",
+   "year": 2021,
+   "title": "Déby's death and the military council, 2021",
+   "place": "N'Djamena",
+   "lonLat": [
+    15.04,
+    12.12
+   ],
+   "civs": [
+    "chad"
+   ],
+   "summary": "On 20 April 2021, the day his re-election is announced, Idriss Déby dies of wounds from fighting rebels in the north. Instead of following the constitution, a military council makes his son, General Mahamat Déby, head of state.",
+   "wikipedia": "Mahamat_Déby",
+   "search": "2021 Chad Idriss Deby death Mahamat Deby military council"
+  },
+  {
+   "id": "saint-sylvestre-coup-1966",
+   "kind": "revolution",
+   "year": 1966,
+   "title": "Bokassa's Saint-Sylvestre coup, 1966",
+   "place": "Bangui",
+   "lonLat": [
+    18.56,
+    4.36
+   ],
+   "civs": [
+    "central-african-republic"
+   ],
+   "summary": "On New Year's Eve 1965, Colonel Jean-Bédel Bokassa, the army chief, overthrows his cousin President David Dacko and takes power in Bangui on 1 January 1966.",
+   "wikipedia": "Saint-Sylvestre_coup_d'état",
+   "search": "Saint-Sylvestre coup 1966 Bokassa Dacko Central African Republic"
+  },
+  {
+   "id": "central-african-empire-1976",
+   "kind": "empire",
+   "year": 1976,
+   "to": 1979,
+   "title": "Bokassa's Central African Empire, 1976 – 1979",
+   "place": "Bangui",
+   "lonLat": [
+    18.57,
+    4.37
+   ],
+   "civs": [
+    "central-african-republic"
+   ],
+   "summary": "On 4 December 1976 Bokassa turns the republic into the Central African Empire, and a year later crowns himself Emperor Bokassa I in a ceremony modelled on Napoleon's that costs a third of the country's budget.",
+   "wikipedia": "Central_African_Empire",
+   "search": "Central African Empire 1976 Bokassa I emperor coronation 1977"
+  },
+  {
+   "id": "operation-barracuda-1979",
+   "kind": "revolution",
+   "year": 1979,
+   "title": "Operation Barracuda: Bokassa deposed, 1979",
+   "place": "Bangui",
+   "lonLat": [
+    18.55,
+    4.35
+   ],
+   "civs": [
+    "central-african-republic",
+    "france"
+   ],
+   "summary": "After the massacre of schoolchildren protesting in Bangui in April 1979, French troops fly in while Bokassa is in Libya, on 20–21 September 1979, and bring back David Dacko as president. The empire becomes a republic again.",
+   "wikipedia": "Operation_Barracuda",
+   "search": "Operation Barracuda 1979 Bokassa deposed France Dacko Central African Republic"
+  },
+  {
+   "id": "car-coup-1981",
+   "kind": "revolution",
+   "year": 1981,
+   "title": "Kolingba's coup, 1981",
+   "place": "Bangui",
+   "lonLat": [
+    18.56,
+    4.37
+   ],
+   "civs": [
+    "central-african-republic"
+   ],
+   "summary": "On 1 September 1981 the army chief, General André Kolingba, removes David Dacko in a bloodless coup. Kolingba rules until he loses an election in 1993.",
+   "wikipedia": "1981_Central_African_Republic_coup_d'état",
+   "search": "1981 Central African Republic coup Kolingba Dacko"
+  },
+  {
+   "id": "car-coup-2003",
+   "kind": "revolution",
+   "year": 2003,
+   "title": "Bozizé's coup, 2003",
+   "place": "Bangui",
+   "lonLat": [
+    18.57,
+    4.35
+   ],
+   "civs": [
+    "central-african-republic"
+   ],
+   "summary": "On 15 March 2003 the rebels of General François Bozizé take Bangui while President Ange-Félix Patassé is abroad. Bozizé rules for ten years.",
+   "wikipedia": "2003_Central_African_Republic_coup_d'état",
+   "search": "2003 Central African Republic coup Bozize Patasse"
+  },
+  {
+   "id": "seleka-takes-bangui-2013",
+   "kind": "revolution",
+   "year": 2013,
+   "title": "The Séléka take Bangui, 2013",
+   "place": "Bangui",
+   "lonLat": [
+    18.58,
+    4.36
+   ],
+   "civs": [
+    "central-african-republic"
+   ],
+   "summary": "On 24 March 2013 the Séléka, a rebel alliance from the mostly Muslim north-east, take Bangui and Bozizé flees; their leader Michel Djotodia makes himself president. Killings between the Séléka and the anti-balaka militias lead to French and UN intervention.",
+   "wikipedia": "Central_African_Republic_Civil_War",
+   "search": "2013 Seleka Bangui Bozize Djotodia anti-balaka Central African Republic civil war"
+  },
+  {
+   "id": "trois-glorieuses-1963",
+   "kind": "revolution",
+   "year": 1963,
+   "title": "The Trois Glorieuses in Brazzaville, 1963",
+   "place": "Brazzaville",
+   "lonLat": [
+    15.28,
+    -4.27
+   ],
+   "civs": [
+    "republic-of-the-congo"
+   ],
+   "summary": "During three days of strikes and protests, 13–15 August 1963, the army refuses to defend President Fulbert Youlou, who resigns. Alphonse Massamba-Débat becomes president and turns the Congo towards socialism.",
+   "wikipedia": "Fulbert_Youlou",
+   "search": "Trois Glorieuses 1963 Congo Brazzaville Fulbert Youlou Massamba-Debat"
+  },
+  {
+   "id": "ngouabi-peoples-republic-1968",
+   "kind": "revolution",
+   "year": 1968,
+   "to": 1969,
+   "title": "Ngouabi and the People's Republic of the Congo, 1968 – 1969",
+   "place": "Brazzaville",
+   "lonLat": [
+    15.27,
+    -4.26
+   ],
+   "civs": [
+    "republic-of-the-congo"
+   ],
+   "summary": "In August–September 1968 Captain Marien Ngouabi pushes Massamba-Débat aside and takes power. On 31 December 1969 he proclaims the People's Republic of the Congo, Africa's first Marxist-Leninist state, with a single Congolese Labour Party.",
+   "wikipedia": "People's_Republic_of_the_Congo",
+   "search": "1968 Ngouabi coup People's Republic of the Congo 1969 Marxist-Leninist Congolese Labour Party"
+  },
+  {
+   "id": "ngouabi-killed-1977",
+   "kind": "revolution",
+   "year": 1977,
+   "title": "Ngouabi is killed, 1977",
+   "place": "Brazzaville",
+   "lonLat": [
+    15.29,
+    -4.28
+   ],
+   "civs": [
+    "republic-of-the-congo"
+   ],
+   "summary": "On 18 March 1977 President Marien Ngouabi is shot dead in his residence. A military committee led by Colonel Joachim Yhombi-Opango takes over, and former president Massamba-Débat is executed for the killing.",
+   "wikipedia": "Marien_Ngouabi",
+   "search": "1977 Marien Ngouabi assassinated Yhombi-Opango Congo"
+  },
+  {
+   "id": "sassou-nguesso-1979",
+   "kind": "revolution",
+   "year": 1979,
+   "title": "Sassou Nguesso takes power, 1979",
+   "place": "Brazzaville",
+   "lonLat": [
+    15.28,
+    -4.28
+   ],
+   "civs": [
+    "republic-of-the-congo"
+   ],
+   "summary": "In February 1979 the party's central committee forces out Yhombi-Opango and makes Colonel Denis Sassou Nguesso president. He rules until 1992, and again from 1997.",
+   "wikipedia": "Denis_Sassou_Nguesso",
+   "search": "1979 Denis Sassou Nguesso Yhombi-Opango Congo"
+  },
+  {
+   "id": "congo-national-conference-1991",
+   "kind": "revolution",
+   "year": 1991,
+   "title": "The National Conference and the end of the People's Republic, 1991",
+   "place": "Brazzaville",
+   "lonLat": [
+    15.27,
+    -4.28
+   ],
+   "civs": [
+    "republic-of-the-congo"
+   ],
+   "summary": "A National Conference in Brazzaville in 1991 strips Sassou Nguesso of most of his powers, drops Marxism-Leninism and restores the name Republic of the Congo. Pascal Lissouba wins the free election of August 1992.",
+   "wikipedia": "Pascal_Lissouba",
+   "search": "1991 Congo National Conference Sassou Nguesso Lissouba democracy 1992"
+  },
+  {
+   "id": "congo-civil-war-1997",
+   "kind": "war",
+   "year": 1997,
+   "title": "Sassou Nguesso returns by war, 1997",
+   "place": "Brazzaville",
+   "lonLat": [
+    15.29,
+    -4.26
+   ],
+   "civs": [
+    "republic-of-the-congo"
+   ],
+   "summary": "In June 1997 fighting breaks out in Brazzaville between President Lissouba's forces and Sassou Nguesso's Cobra militia. Helped by Angolan troops, Sassou Nguesso takes the city in October 1997 and becomes president again.",
+   "wikipedia": "Republic_of_the_Congo_Civil_War_(1997–1999)",
+   "search": "1997 Republic of the Congo civil war Sassou Nguesso Lissouba Cobra Angola Brazzaville"
+  },
+  {
+   "id": "gabon-coup-1964",
+   "kind": "revolution",
+   "year": 1964,
+   "title": "The 1964 coup in Gabon, undone by France",
+   "place": "Libreville",
+   "lonLat": [
+    9.45,
+    0.39
+   ],
+   "civs": [
+    "gabon",
+    "france"
+   ],
+   "summary": "On 17–18 February 1964 young officers arrest President Léon M'ba and hand power to the opposition leader Jean-Hilaire Aubame. Within two days French paratroopers restore M'ba, the only time France reverses a coup in its former colonies this way.",
+   "wikipedia": "1964_Gabon_coup_d'état",
+   "search": "1964 Gabon coup Leon M'ba Aubame French paratroopers"
+  },
+  {
+   "id": "gabon-coup-2023",
+   "kind": "revolution",
+   "year": 2023,
+   "title": "The end of the Bongo era, 2023",
+   "place": "Libreville",
+   "lonLat": [
+    9.46,
+    0.4
+   ],
+   "civs": [
+    "gabon"
+   ],
+   "summary": "Minutes after Ali Bongo is declared re-elected, on 30 August 2023, officers led by General Brice Oligui Nguema seize power, ending 56 years of rule by Omar Bongo and his son. Oligui is elected president in April 2025.",
+   "wikipedia": "2023_Gabonese_coup_d'état",
+   "search": "2023 Gabon coup Oligui Nguema Ali Bongo"
+  },
+  {
+   "id": "comoros-coup-1975",
+   "kind": "revolution",
+   "year": 1975,
+   "title": "Ali Soilih's coup, 1975",
+   "place": "Moroni",
+   "lonLat": [
+    43.25,
+    -11.71
+   ],
+   "civs": [
+    "comoros"
+   ],
+   "summary": "Less than a month after independence, on 3 August 1975, Ali Soilih overthrows President Ahmed Abdallah with the help of the mercenary Bob Denard. Soilih launches a radical, often brutal, programme of change.",
+   "wikipedia": "1975_Comorian_coup_d'état",
+   "search": "1975 Comoros coup Ali Soilih Ahmed Abdallah Bob Denard"
+  },
+  {
+   "id": "comoros-coup-1978",
+   "kind": "revolution",
+   "year": 1978,
+   "title": "Bob Denard brings back Abdallah, 1978",
+   "place": "Moroni",
+   "lonLat": [
+    43.26,
+    -11.69
+   ],
+   "civs": [
+    "comoros"
+   ],
+   "summary": "On 13 May 1978 Bob Denard lands with about fifty mercenaries, overthrows Ali Soilih, who is killed soon after, and brings back Ahmed Abdallah. Denard's presidential guard runs much of the country for eleven years.",
+   "wikipedia": "1978_Comorian_coup_d'état",
+   "search": "1978 Comoros coup Bob Denard mercenaries Ali Soilih Ahmed Abdallah"
+  },
+  {
+   "id": "comoros-coup-1989",
+   "kind": "revolution",
+   "year": 1989,
+   "title": "Abdallah is killed, 1989",
+   "place": "Moroni",
+   "lonLat": [
+    43.24,
+    -11.7
+   ],
+   "civs": [
+    "comoros"
+   ],
+   "summary": "On 26 November 1989 President Ahmed Abdallah is shot dead in his palace, apparently by Denard's men. Under French and South African pressure the mercenaries leave in December, and Said Mohamed Djohar becomes president.",
+   "wikipedia": "Ahmed_Abdallah",
+   "search": "1989 Comoros coup Ahmed Abdallah killed Bob Denard Djohar"
+  },
+  {
+   "id": "comoros-coup-1995",
+   "kind": "revolution",
+   "year": 1995,
+   "title": "Denard's last coup, 1995",
+   "place": "Moroni",
+   "lonLat": [
+    43.27,
+    -11.7
+   ],
+   "civs": [
+    "comoros",
+    "france"
+   ],
+   "summary": "On 28 September 1995 Bob Denard lands again and arrests President Djohar. A week later French troops end the coup in Operation Azalée and take Denard to France.",
+   "wikipedia": "Operation_Azalee",
+   "search": "1995 Comoros coup Bob Denard Djohar Operation Azalee France"
+  },
+  {
+   "id": "comoros-coup-1999",
+   "kind": "revolution",
+   "year": 1999,
+   "title": "Azali's coup, 1999",
+   "place": "Moroni",
+   "lonLat": [
+    43.25,
+    -11.69
+   ],
+   "civs": [
+    "comoros"
+   ],
+   "summary": "With Anjouan and Mohéli trying to break away, the army chief, Colonel Azali Assoumani, takes power on 30 April 1999. He oversees a new constitution in 2001 that gives each island wide self-rule.",
+   "wikipedia": "1999_Comorian_coup_d'état",
+   "search": "1999 Comoros coup Azali Assoumani Anjouan secession"
+  },
+  {
+   "id": "madagascar-1972",
+   "kind": "revolution",
+   "year": 1972,
+   "title": "The May 1972 revolt in Madagascar",
+   "place": "Antananarivo",
+   "lonLat": [
+    47.52,
+    -18.91
+   ],
+   "civs": [
+    "madagascar"
+   ],
+   "summary": "Student-led protests against President Philibert Tsiranana and the close ties he kept with France paralyse Antananarivo in May 1972. On 18 May Tsiranana hands full powers to the army chief, General Gabriel Ramanantsoa.",
+   "wikipedia": "Gabriel_Ramanantsoa",
+   "search": "May 1972 Madagascar revolt Tsiranana Ramanantsoa students"
+  },
+  {
+   "id": "ratsiraka-1975",
+   "kind": "revolution",
+   "year": 1975,
+   "title": "Ratsiraka and the Democratic Republic of Madagascar, 1975",
+   "place": "Antananarivo",
+   "lonLat": [
+    47.53,
+    -18.9
+   ],
+   "civs": [
+    "madagascar"
+   ],
+   "summary": "Colonel Richard Ratsimandrava, head of state for six days, is shot dead on 11 February 1975. In June a military directorate chooses Commander Didier Ratsiraka, who in December founds the socialist Democratic Republic of Madagascar.",
+   "wikipedia": "Didier_Ratsiraka",
+   "search": "1975 Madagascar Ratsimandrava killed Didier Ratsiraka Democratic Republic socialism"
+  },
+  {
+   "id": "madagascar-1991",
+   "kind": "revolution",
+   "year": 1991,
+   "to": 1993,
+   "title": "The 1991 protests and the Third Republic",
+   "place": "Antananarivo",
+   "lonLat": [
+    47.51,
+    -18.91
+   ],
+   "civs": [
+    "madagascar"
+   ],
+   "summary": "Months of general strikes in 1991 force Ratsiraka to share power; on 10 August his guards fire on marchers at the palace. A new constitution in 1992 founds the Third Republic, and the opposition leader Albert Zafy is elected president in 1993.",
+   "wikipedia": "Albert_Zafy",
+   "search": "1991 Madagascar protests Ratsiraka Third Republic 1992 Albert Zafy"
+  },
+  {
+   "id": "madagascar-crisis-2002",
+   "kind": "revolution",
+   "year": 2002,
+   "title": "The 2002 crisis: Ravalomanana against Ratsiraka",
+   "place": "Antananarivo",
+   "lonLat": [
+    47.53,
+    -18.92
+   ],
+   "civs": [
+    "madagascar"
+   ],
+   "summary": "Both Marc Ravalomanana, mayor of Antananarivo, and Didier Ratsiraka claim to have won the December 2001 election, and the island splits between two governments for months. Ravalomanana's side wins, and Ratsiraka leaves for France in July 2002.",
+   "wikipedia": "Marc_Ravalomanana",
+   "search": "2002 Madagascar crisis Ravalomanana Ratsiraka election two governments"
+  },
+  {
+   "id": "madagascar-crisis-2009",
+   "kind": "revolution",
+   "year": 2009,
+   "title": "Rajoelina takes power, 2009",
+   "place": "Antananarivo",
+   "lonLat": [
+    47.52,
+    -18.92
+   ],
+   "civs": [
+    "madagascar"
+   ],
+   "summary": "After weeks of protests led by Andry Rajoelina, the young mayor of Antananarivo, mutinous soldiers storm the presidential palace and President Ravalomanana hands power to the army, which passes it to Rajoelina on 17 March 2009.",
+   "wikipedia": "2009_Malagasy_political_crisis",
+   "search": "2009 Madagascar political crisis Rajoelina Ravalomanana coup"
+  },
+  {
+   "id": "madagascar-coup-2025",
+   "kind": "revolution",
+   "year": 2025,
+   "title": "The Gen Z protests and the 2025 coup",
+   "place": "Antananarivo",
+   "lonLat": [
+    47.51,
+    -18.9
+   ],
+   "civs": [
+    "madagascar"
+   ],
+   "summary": "Protests by young people over water and power cuts grow into a movement against President Rajoelina in September 2025. When the elite CAPSAT unit joins them, Rajoelina flees the country, and on 14 October 2025 Colonel Michael Randrianirina announces that the army is taking power.",
+   "wikipedia": "2025_Malagasy_coup_d'état",
+   "search": "2025 Madagascar coup Gen Z protests Rajoelina CAPSAT Michael Randrianirina"
+  },
+  {
+   "id": "khanh-coup-1964",
+   "kind": "revolution",
+   "year": 1964,
+   "title": "Nguyễn Khánh's coup, 1964",
+   "place": "Saigon",
+   "lonLat": [
+    106.66,
+    10.8
+   ],
+   "civs": [
+    "south-vietnam"
+   ],
+   "summary": "On 30 January 1964, less than three months after Diệm's fall, General Nguyễn Khánh removes the junta of General Dương Văn Minh without a shot. It opens two years of coups and counter-coups in Saigon.",
+   "wikipedia": "January_1964_South_Vietnamese_coup",
+   "search": "1964 South Vietnam coup Nguyen Khanh Duong Van Minh Saigon"
+  },
+  {
+   "id": "thieu-ky-junta-1965",
+   "kind": "revolution",
+   "year": 1965,
+   "title": "The Thiệu–Kỳ military government, 1965",
+   "place": "Saigon",
+   "lonLat": [
+    106.72,
+    10.76
+   ],
+   "civs": [
+    "south-vietnam"
+   ],
+   "summary": "In June 1965, after Khánh is pushed into exile and the civilian government of Phan Huy Quát resigns, the generals put Nguyễn Văn Thiệu at the head of state and Nguyễn Cao Kỳ at the head of government. Thiệu stays president until April 1975.",
+   "wikipedia": "Nguyễn_Văn_Thiệu",
+   "search": "1965 South Vietnam Nguyen Van Thieu Nguyen Cao Ky junta military government"
+  },
+  {
+   "id": "kong-le-coup-1960",
+   "kind": "revolution",
+   "year": 1960,
+   "title": "Kong Le's coup in Vientiane, 1960",
+   "place": "Vientiane",
+   "lonLat": [
+    102.6,
+    17.96
+   ],
+   "civs": [
+    "laos"
+   ],
+   "summary": "On 9 August 1960 Captain Kong Le and his paratroopers seize Vientiane and call for a neutral Laos. General Phoumi Nosavan, backed by Thailand and the United States, retakes the city in December, and the civil war widens.",
+   "wikipedia": "1960_Laotian_coups",
+   "search": "1960 Laos coup Kong Le Vientiane Phoumi Nosavan neutral"
+  },
+  {
+   "id": "lao-pdr-1975",
+   "kind": "revolution",
+   "year": 1975,
+   "title": "The Pathet Lao abolish the monarchy, 1975",
+   "place": "Vientiane",
+   "lonLat": [
+    102.62,
+    17.98
+   ],
+   "civs": [
+    "laos"
+   ],
+   "summary": "On 2 December 1975 King Savang Vatthana abdicates and the communist Pathet Lao proclaim the Lao People's Democratic Republic, ending six centuries of Lao kingship. The king later dies in a re-education camp.",
+   "wikipedia": "Lao_People's_Democratic_Republic",
+   "search": "1975 Laos Pathet Lao People's Democratic Republic monarchy abolished Savang Vatthana"
+  },
+  {
+   "id": "lon-nol-coup-1970",
+   "kind": "revolution",
+   "year": 1970,
+   "title": "Lon Nol deposes Sihanouk, 1970",
+   "place": "Phnom Penh",
+   "lonLat": [
+    104.9,
+    11.57
+   ],
+   "civs": [
+    "cambodia"
+   ],
+   "summary": "On 18 March 1970, while Prince Norodom Sihanouk is abroad, the National Assembly votes him out and General Lon Nol takes power. In October he proclaims the Khmer Republic, and the country is drawn into the Vietnam War.",
+   "wikipedia": "1970_Cambodian_coup_d'état",
+   "search": "1970 Cambodia coup Lon Nol Sihanouk Khmer Republic"
+  },
+  {
+   "id": "khmer-rouge-phnom-penh-1975",
+   "kind": "revolution",
+   "year": 1975,
+   "title": "The Khmer Rouge take Phnom Penh, 1975",
+   "place": "Phnom Penh",
+   "lonLat": [
+    104.92,
+    11.55
+   ],
+   "civs": [
+    "cambodia"
+   ],
+   "summary": "On 17 April 1975 the Khmer Rouge enter Phnom Penh and empty the city within days. Their Democratic Kampuchea, led by Pol Pot, kills about a quarter of the country's people through executions, forced labour and famine.",
+   "wikipedia": "Fall_of_Phnom_Penh",
+   "search": "1975 Khmer Rouge fall of Phnom Penh Pol Pot Democratic Kampuchea genocide"
+  },
+  {
+   "id": "vietnam-takes-phnom-penh-1979",
+   "kind": "war",
+   "year": 1979,
+   "title": "Vietnam overthrows the Khmer Rouge, 1979",
+   "place": "Phnom Penh",
+   "lonLat": [
+    104.89,
+    11.54
+   ],
+   "civs": [
+    "cambodia",
+    "vietnam"
+   ],
+   "summary": "After Khmer Rouge raids into Vietnam, the Vietnamese army invades and takes Phnom Penh on 7 January 1979. It sets up the People's Republic of Kampuchea under Heng Samrin and stays in the country until 1989.",
+   "wikipedia": "People's_Republic_of_Kampuchea",
+   "search": "1979 Vietnam invades Cambodia People's Republic of Kampuchea Heng Samrin Khmer Rouge overthrown"
+  },
+  {
+   "id": "cambodia-monarchy-restored-1993",
+   "kind": "crown",
+   "year": 1993,
+   "title": "The Cambodian monarchy restored, 1993",
+   "place": "Phnom Penh",
+   "lonLat": [
+    104.93,
+    11.56
+   ],
+   "civs": [
+    "cambodia"
+   ],
+   "summary": "After elections run by the United Nations in May 1993, a new constitution brings back the Kingdom of Cambodia on 24 September 1993, with Norodom Sihanouk on the throne again and two prime ministers, Ranariddh and Hun Sen.",
+   "wikipedia": "United_Nations_Transitional_Authority_in_Cambodia",
+   "search": "1993 Cambodia monarchy restored UNTAC elections Sihanouk Kingdom of Cambodia"
+  },
+  {
+   "id": "hun-sen-coup-1997",
+   "kind": "revolution",
+   "year": 1997,
+   "title": "Hun Sen ousts Prince Ranariddh, 1997",
+   "place": "Phnom Penh",
+   "lonLat": [
+    104.91,
+    11.58
+   ],
+   "civs": [
+    "cambodia"
+   ],
+   "summary": "On 5–6 July 1997 the forces of second prime minister Hun Sen defeat those of first prime minister Prince Norodom Ranariddh in the streets of Phnom Penh. Hun Sen holds power alone until he hands it to his son in 2023.",
+   "wikipedia": "1997_clashes_in_Cambodia",
+   "search": "1997 Cambodia coup Hun Sen Ranariddh clashes Phnom Penh"
+  },
+  {
+   "id": "syria-coups-1949",
+   "kind": "revolution",
+   "year": 1949,
+   "title": "Syria's three coups of 1949",
+   "place": "Damascus",
+   "lonLat": [
+    36.3,
+    33.52
+   ],
+   "civs": [
+    "syria"
+   ],
+   "summary": "In March 1949 Colonel Husni al-Za'im overthrows President Shukri al-Quwatli in the Arab world's first military coup after independence. In August Sami al-Hinnawi has Za'im shot, and in December Adib Shishakli removes Hinnawi.",
+   "wikipedia": "March_1949_Syrian_coup_d'état",
+   "search": "1949 Syria coups Husni al-Zaim Quwatli Hinnawi Shishakli"
+  },
+  {
+   "id": "shishakli-ousted-1954",
+   "kind": "revolution",
+   "year": 1954,
+   "title": "Shishakli overthrown, 1954",
+   "place": "Damascus",
+   "lonLat": [
+    36.28,
+    33.5
+   ],
+   "civs": [
+    "syria"
+   ],
+   "summary": "In February 1954 army officers in Aleppo and the Druze mountains rise against the military ruler Adib Shishakli, who flees to Lebanon. Civilian, elected government returns until 1958.",
+   "wikipedia": "1954_Syrian_coup_d'état",
+   "search": "1954 Syria coup Shishakli overthrown"
+  },
+  {
+   "id": "united-arab-republic-1958",
+   "kind": "empire",
+   "year": 1958,
+   "title": "Syria joins Egypt: the United Arab Republic, 1958",
+   "place": "Damascus",
+   "lonLat": [
+    36.31,
+    33.53
+   ],
+   "civs": [
+    "syria",
+    "united-arab-republic",
+    "egypt"
+   ],
+   "summary": "On 22 February 1958 Syria merges with Nasser's Egypt into the United Arab Republic, ruled from Cairo. Syria's parties are dissolved and the country becomes the republic's \"northern region\".",
+   "wikipedia": "United_Arab_Republic",
+   "search": "1958 United Arab Republic Syria Egypt union Nasser"
+  },
+  {
+   "id": "syria-secession-1961",
+   "kind": "revolution",
+   "year": 1961,
+   "title": "Syria leaves the United Arab Republic, 1961",
+   "place": "Damascus",
+   "lonLat": [
+    36.29,
+    33.49
+   ],
+   "civs": [
+    "syria",
+    "united-arab-republic"
+   ],
+   "summary": "On 28 September 1961 Syrian officers seize Damascus and take Syria out of the union with Egypt. The Syrian Arab Republic is restored.",
+   "wikipedia": "1961_Syrian_coup_d'état",
+   "search": "1961 Syria coup secession United Arab Republic Egypt"
+  },
+  {
+   "id": "baath-revolution-1963",
+   "kind": "revolution",
+   "year": 1963,
+   "title": "The Ba'ath Party takes power, 1963",
+   "place": "Damascus",
+   "lonLat": [
+    36.27,
+    33.51
+   ],
+   "civs": [
+    "syria"
+   ],
+   "summary": "On 8 March 1963 officers of the Ba'ath Party seize power in Damascus. The party has ruled Syria ever since, until the end of 2024.",
+   "wikipedia": "1963_Syrian_coup_d'état",
+   "search": "1963 Syria Ba'ath coup 8 March revolution"
+  },
+  {
+   "id": "syria-coup-1966",
+   "kind": "revolution",
+   "year": 1966,
+   "title": "The radical Ba'ath coup, 1966",
+   "place": "Damascus",
+   "lonLat": [
+    36.32,
+    33.5
+   ],
+   "civs": [
+    "syria"
+   ],
+   "summary": "On 23 February 1966 the military wing of the Ba'ath under Salah Jadid overthrows the party's old leaders, Michel Aflaq and Amin al-Hafiz. Hafez al-Assad becomes defence minister.",
+   "wikipedia": "1966_Syrian_coup_d'état",
+   "search": "1966 Syria coup Salah Jadid Aflaq Amin al-Hafiz Ba'ath"
+  },
+  {
+   "id": "assad-corrective-movement-1970",
+   "kind": "revolution",
+   "year": 1970,
+   "title": "Hafez al-Assad takes power, 1970",
+   "place": "Damascus",
+   "lonLat": [
+    36.3,
+    33.54
+   ],
+   "civs": [
+    "syria"
+   ],
+   "summary": "On 13 November 1970 defence minister Hafez al-Assad arrests Salah Jadid and the president, Nureddin al-Atassi. He calls it the \"Corrective Movement\" and rules until his death in 2000, when his son Bashar succeeds him.",
+   "wikipedia": "Corrective_Movement_(Syria)",
+   "search": "1970 Syria Hafez al-Assad Corrective Movement coup Jadid"
+  },
+  {
+   "id": "fall-of-assad-2024",
+   "kind": "revolution",
+   "year": 2024,
+   "title": "The fall of the Assad regime, 2024",
+   "place": "Damascus",
+   "lonLat": [
+    36.28,
+    33.52
+   ],
+   "civs": [
+    "syria"
+   ],
+   "summary": "After a lightning rebel offensive from Idlib led by Hayat Tahrir al-Sham, Damascus falls on 8 December 2024 and Bashar al-Assad flees to Russia, ending 54 years of Assad family rule and 13 years of civil war. Ahmed al-Sharaa becomes president.",
+   "wikipedia": "Fall_of_the_Assad_regime",
+   "search": "2024 fall of Assad regime Damascus Hayat Tahrir al-Sham Bashar al-Assad Ahmed al-Sharaa"
+  },
+  {
+   "id": "guinea-bissau-coup-1980",
+   "kind": "revolution",
+   "year": 1980,
+   "title": "Nino Vieira's coup, 1980",
+   "place": "Bissau",
+   "lonLat": [
+    -15.6,
+    11.87
+   ],
+   "civs": [
+    "guinea-bissau"
+   ],
+   "summary": "On 14 November 1980 Prime Minister João Bernardo \"Nino\" Vieira overthrows President Luís Cabral. The coup ends the plan to unite Guinea-Bissau with Cape Verde, which breaks away from the shared party.",
+   "wikipedia": "1980_Guinea-Bissau_coup_d'état",
+   "search": "1980 Guinea-Bissau coup Nino Vieira Luis Cabral Cape Verde"
+  },
+  {
+   "id": "guinea-bissau-civil-war-1998",
+   "kind": "war",
+   "year": 1998,
+   "to": 1999,
+   "title": "The Guinea-Bissau civil war, 1998 – 1999",
+   "place": "Bissau",
+   "lonLat": [
+    -15.58,
+    11.86
+   ],
+   "civs": [
+    "guinea-bissau"
+   ],
+   "summary": "In June 1998 the sacked army chief Ansumane Mané rises against President Vieira. Senegalese and Guinean troops come to Vieira's aid, but the rebels take Bissau and drive him out on 7 May 1999.",
+   "wikipedia": "Guinea-Bissau_Civil_War",
+   "search": "1998 1999 Guinea-Bissau civil war Ansumane Mane Vieira ousted"
+  },
+  {
+   "id": "guinea-bissau-coup-2003",
+   "kind": "revolution",
+   "year": 2003,
+   "title": "Kumba Ialá overthrown, 2003",
+   "place": "Bissau",
+   "lonLat": [
+    -15.6,
+    11.85
+   ],
+   "civs": [
+    "guinea-bissau"
+   ],
+   "summary": "On 14 September 2003 the army chief, General Veríssimo Correia Seabra, removes President Kumba Ialá, who had kept putting off elections. A civilian transition leads to new elections.",
+   "wikipedia": "2003_Guinea-Bissau_coup_d'état",
+   "search": "2003 Guinea-Bissau coup Kumba Iala Verissimo Correia Seabra"
+  },
+  {
+   "id": "guinea-bissau-coup-2012",
+   "kind": "revolution",
+   "year": 2012,
+   "title": "The coup of April 2012",
+   "place": "Bissau",
+   "lonLat": [
+    -15.62,
+    11.86
+   ],
+   "civs": [
+    "guinea-bissau"
+   ],
+   "summary": "On 12 April 2012, between the two rounds of the presidential election, soldiers seize Bissau and arrest the front-runner, former prime minister Carlos Gomes Júnior, and the interim president. A transition government rules until 2014.",
+   "wikipedia": "2012_Guinea-Bissau_coup_d'état",
+   "search": "2012 Guinea-Bissau coup Carlos Gomes Junior election"
+  },
+  {
+   "id": "guinea-bissau-coup-2025",
+   "kind": "revolution",
+   "year": 2025,
+   "title": "The coup of November 2025",
+   "place": "Bissau",
+   "lonLat": [
+    -15.59,
+    11.88
+   ],
+   "civs": [
+    "guinea-bissau"
+   ],
+   "summary": "On 26 November 2025, a day before the results of the presidential election were due, officers take power in Bissau, depose President Umaro Sissoco Embaló and halt the electoral process.",
+   "wikipedia": "2025_Guinea-Bissau_coup_d'état",
+   "search": "2025 Guinea-Bissau coup Embalo election"
   }
  ]
 }
