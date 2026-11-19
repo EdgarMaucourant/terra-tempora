@@ -1213,5 +1213,45 @@
   "title": "Magenta et Solferino : la guerre d’Italie, 1859",
   "place": "Solferino",
   "summary": "Allié au Piémont-Sardaigne, Napoléon III entre en guerre contre l’Autriche en avril 1859 et conduit lui-même l’armée française en Lombardie. Français et Sardes l’emportent à Magenta le 4 juin et à Solferino le 24 juin, l’une des batailles les plus sanglantes du siècle, dont les horreurs poussent Henry Dunant à fonder la Croix-Rouge. La Lombardie passe à la Sardaigne et, en échange, la France reçoit Nice et la Savoie en 1860."
+ },
+ "waterloo-1815": {
+  "title": "Waterloo et le second traité de Paris, 1815",
+  "place": "Waterloo",
+  "summary": "Revenu de l’île d’Elbe pour les Cent-Jours, Napoléon est battu à Waterloo le 18 juin 1815 par l’armée britannique, néerlandaise et allemande de Wellington et les Prussiens de Blücher. Il abdique de nouveau et est envoyé à Sainte-Hélène, et Louis XVIII rentre à Paris le 8 juillet. Par le second traité de Paris du 20 novembre 1815, la France perd Landau, Sarrelouis, Philippeville et la part de la Savoie gardée en 1814, doit payer 700 millions de francs et accepter une armée d’occupation."
+ },
+ "allied-occupation-ends-1818": {
+  "title": "La fin de l’occupation alliée, 1818",
+  "place": "Cambrai",
+  "summary": "Depuis 1815, une armée alliée de 150 000 hommes commandée par Wellington, avec son quartier général à Cambrai, tient le nord-est de la France en garantie de l’indemnité de guerre. Grâce à des emprunts auprès des banques Baring et Hope, le gouvernement du duc de Richelieu paie en avance et, au congrès d’Aix-la-Chapelle en octobre 1818, les puissances acceptent de partir. Les dernières troupes s’en vont fin novembre, et la France rejoint le concert européen."
+ },
+ "radama-madagascar-1817": {
+  "title": "Radama Ier et la conquête merina de Madagascar, 1817 – 1828",
+  "place": "Antananarivo",
+  "summary": "Le roi Radama Ier de l’Imerina signe en octobre 1817 un traité avec le Royaume-Uni, qui met fin à la traite en échange d’armes et de conseillers, et Londres le reconnaît roi de Madagascar. Avec une armée moderne, il prend Tamatave et la côte est, puis Majunga et le nord-ouest en 1824, et Fort-Dauphin en 1825. À sa mort en 1828, les Merina dominent environ les deux tiers de l’île, mais jamais l’ouest sakalava ni l’extrême sud."
+ },
+ "invasion-of-algiers-1830": {
+  "title": "La prise d’Alger, 1830",
+  "place": "Alger",
+  "summary": "Prenant prétexte d’une querelle avec le dey d’Alger, qui avait frappé le consul de France d’un chasse-mouches en 1827, le gouvernement de Charles X envoie 37 000 hommes, qui débarquent à Sidi-Ferruch le 14 juin 1830. Alger capitule le 5 juillet et le dey part en exil, mettant fin à trois siècles de domination ottomane. Charles X tombe quelques semaines plus tard, mais la monarchie de Juillet garde la ville et étend peu à peu la conquête."
+ },
+ "july-revolution-1830": {
+  "title": "La révolution de Juillet, 1830",
+  "place": "Paris",
+  "summary": "Quand Charles X suspend la liberté de la presse et dissout la Chambre tout juste élue, les Parisiens dressent des barricades et combattent l’armée trois jours durant, les « Trois Glorieuses » des 27, 28 et 29 juillet 1830. Charles X abdique et part en exil, et les députés libéraux offrent la couronne à son cousin Louis-Philippe, duc d’Orléans, qui devient roi des Français le 9 août : la monarchie de Juillet commence."
+ },
+ "egypt-in-syria-1831": {
+  "title": "L’Égypte gouverne la Syrie, 1831 – 1840",
+  "place": "Damas",
+  "summary": "Méhémet Ali, gouverneur ottoman de l’Égypte, envoie son fils Ibrahim Pacha prendre la Syrie en 1831. Acre tombe en mai 1832, Damas peu après, et Ibrahim bat les armées du sultan à Homs et à Konya. L’Égypte gouverne la Syrie et le Liban pendant huit ans, jusqu’à ce que le Royaume-Uni, l’Autriche et la Russie interviennent lors de la crise d’Orient de 1840 : Acre est bombardée et Ibrahim se retire, tandis que la France, qui soutenait Méhémet Ali, est tenue à l’écart."
+ },
+ "treaty-of-tafna-1837": {
+  "title": "Le traité de la Tafna, 1837",
+  "place": "Oued Tafna",
+  "summary": "Le 30 mai 1837, le général Bugeaud signe avec l’émir Abd el-Kader un traité sur l’oued Tafna. La France garde Alger, Oran et la côte alentour, et reconnaît l’autorité de l’émir sur l’essentiel de l’ouest et du centre de l’Algérie, dont Tlemcen. Abd el-Kader profite de la trêve pour bâtir son État, jusqu’à ce que les Français traversent son territoire en 1839 et que la guerre reprenne."
+ },
+ "siege-of-constantine-1837": {
+  "title": "Le siège de Constantine, 1837",
+  "place": "Constantine",
+  "summary": "Après un assaut manqué en 1836, une armée française de 20 000 hommes menée par le général Damrémont revient devant Constantine, la place forte d’Ahmed Bey sur son rocher bordé de gorges. Damrémont est tué par un boulet le 12 octobre 1837 et, le lendemain, les troupes du général Valée montent à l’assaut de la brèche et prennent la ville après de durs combats de rue. Ahmed Bey résiste dans les Aurès jusqu’en 1848."
  }
 }
