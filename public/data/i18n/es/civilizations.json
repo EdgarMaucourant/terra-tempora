@@ -170,6 +170,9 @@
  "chile": {
   "name": "Chile"
  },
+ "united-kingdom": {
+  "name": "Reino Unido"
+ },
  "myanmar": {
   "name": "Birmania"
  },
@@ -245,6 +248,9 @@
  "zimbabwe": {
   "name": "Zimbabue"
  },
+ "southern-rhodesia": {
+  "name": "Rodesia del Sur"
+ },
  "norway": {
   "name": "Noruega"
  },
@@ -301,9 +307,6 @@
  },
  "french-gabon": {
   "name": "Gabón francés"
- },
- "united-kingdom": {
-  "name": "Reino Unido"
  },
  "ecuador": {
   "name": "Ecuador"
@@ -569,6 +572,9 @@
  "solomon-islands": {
   "name": "Islas Salomón"
  },
+ "british-solomon-islands": {
+  "name": "Islas Salomón británicas"
+ },
  "burundi": {
   "name": "Burundi"
  },
@@ -586,6 +592,9 @@
  },
  "belize": {
   "name": "Belice"
+ },
+ "british-honduras": {
+  "name": "Honduras Británica"
  },
  "djibouti": {
   "name": "Yibuti"
@@ -701,6 +710,9 @@
  "south-georgia-and-the-south-sandwich-islands": {
   "name": "Islas Georgias del Sur y Sandwich del Sur"
  },
+ "falkland-islands-dependencies": {
+  "name": "Dependencias de las Islas Malvinas"
+ },
  "cape-verde": {
   "name": "Cabo Verde"
  },
@@ -764,8 +776,14 @@
  "hong-kong": {
   "name": "Hong Kong"
  },
+ "british-hong-kong": {
+  "name": "Hong Kong británico"
+ },
  "kiribati": {
   "name": "Kiribati"
+ },
+ "gilbert-islands": {
+  "name": "Islas Gilbert"
  },
  "madeira": {
   "name": "Madeira"
@@ -839,6 +857,9 @@
  "united-states-virgin-islands": {
   "name": "Islas Vírgenes de los Estados Unidos"
  },
+ "saint-christopher-nevis-anguilla": {
+  "name": "San Cristóbal-Nieves-Anguila"
+ },
  "grenada": {
   "name": "Granada"
  },
@@ -877,6 +898,9 @@
  },
  "aruba": {
   "name": "Aruba"
+ },
+ "british-indian-ocean-territory": {
+  "name": "Territorio Británico del Océano Índico"
  },
  "marshall-islands": {
   "name": "Islas Marshall"
@@ -947,11 +971,14 @@
  "united-states-minor-outlying-islands": {
   "name": "Islas ultramarinas de Estados Unidos"
  },
+ "tuvalu": {
+  "name": "Tuvalu"
+ },
  "sint-maarten": {
   "name": "San Martín (Países Bajos)"
  },
- "tuvalu": {
-  "name": "Tuvalu"
+ "canton-and-enderbury-islands": {
+  "name": "Islas Canton y Enderbury"
  },
  "cocos-keeling-islands": {
   "name": "Islas Cocos"
