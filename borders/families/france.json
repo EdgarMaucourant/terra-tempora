@@ -14,7 +14,7 @@
     "SPM",
     "WLF"
    ],
-   "from": 1860,
+   "from": 1840,
    "why": "Metropolitan France with Corsica, the overseas departments (Guadeloupe, Martinique, French Guiana, Réunion, and Mayotte since 2011) and the overseas territories (Saint Pierre and Miquelon, Saint Barthélemy, Saint Martin, New Caledonia, French Polynesia, Wallis and Futuna, the French Southern and Antarctic Lands, Clipperton), whose borders have not moved since 1957"
   },
   {
@@ -24,7 +24,7 @@
     "COM",
     "VUT"
    ],
-   "from": 1860,
+   "from": 1840,
    "why": "Algeria, Djibouti, the Comoros and Vanuatu, French (Vanuatu Anglo-French) until their independence, with today's borders"
   },
   {
@@ -45,7 +45,7 @@
     "CMR",
     "MDG"
    ],
-   "from": 1860,
+   "from": 1840,
    "why": "French West Africa, French Equatorial Africa, French Togoland, French Cameroon and Madagascar, with today's borders, from French rule to independence, and the British Southern Cameroons (Northwest and Southwest of today's Cameroon) until they join Cameroon in 1961"
   },
   {
@@ -73,7 +73,7 @@
     "MAR-3456",
     "TUN"
    ],
-   "from": 1860,
+   "from": 1840,
    "why": "Morocco (without Western Sahara) and Tunisia: the French protectorates until 1956, with Spain's northern zone, the Tangier International Zone, Cape Juby (Spanish until 1958) and Ifni (Spanish until 1969)"
   },
   {
@@ -82,7 +82,7 @@
     "LAO",
     "KHM"
    ],
-   "from": 1860,
+   "from": 1840,
    "why": "French Indochina: Vietnam (Tonkin, Annam and Cochinchina, then the State of Vietnam), Laos and Cambodia, with today's borders, until independence in 1953 and 1954, then North and South Vietnam until 1976"
   },
   {
@@ -91,14 +91,14 @@
     "mahe",
     "chandernagore"
    ],
-   "from": 1860,
+   "from": 1840,
    "why": "French India: Pondichéry, Karikal, Mahé and Yanaon (today's Puducherry, with Mahé drawn where it is, not where Natural Earth puts it) and Chandernagore, until they pass to India"
   },
   {
    "pieces": [
     "DEU-1581"
    ],
-   "from": 1860,
+   "from": 1840,
    "why": "The Saar: a League of Nations territory from 1920 to 1935, German again until 1945, occupied by France, a protectorate of France from 1946 until it joins West Germany in 1957, with today's Saarland borders"
   },
   {
@@ -108,14 +108,14 @@
     "LBN",
     "TUR-2289"
    ],
-   "from": 1860,
+   "from": 1840,
    "why": "Syria (with the Golan Heights), Lebanon and the Sanjak of Alexandretta (Hatay): French mandates under the League of Nations, with the states France set up in Syria (Aleppo, Damascus, the Alawites, Jabal Druze) until their union, with today's borders; Hatay State in 1938, Turkish from June 1939"
   },
   {
    "pieces": [
     "guangzhouwan"
    ],
-   "from": 1860,
+   "from": 1840,
    "why": "Guangzhouwan, leased to France until 1945, then part of China"
   }
  ],
@@ -2416,7 +2416,9 @@
       "FRA-5302",
       "FRA-5351",
       "FRA-5288",
-      "FRA-5311"
+      "FRA-5311",
+      "county-of-nice",
+      "menton-roquebrune"
      ],
      "owner": "France",
      "source": {
@@ -2572,7 +2574,9 @@
       "FRA-5302",
       "FRA-5351",
       "FRA-5288",
-      "FRA-5311"
+      "FRA-5311",
+      "county-of-nice",
+      "menton-roquebrune"
      ],
      "owner": "France",
      "source": {
@@ -2755,7 +2759,9 @@
       "FRA-5302",
       "FRA-5351",
       "FRA-5288",
-      "FRA-5311"
+      "FRA-5311",
+      "county-of-nice",
+      "menton-roquebrune"
      ],
      "owner": "France",
      "source": {
@@ -6315,6 +6321,27 @@
    ]
   },
   {
+   "date": "1881-06-01",
+   "what": "After the revolt of Bou Amama, the French set up posts at Aïn Sefra and Méchéria in the Ksour mountains",
+   "source": {
+    "title": "Bou Amama (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Bou_Amama"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "DZA-2149"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Bou Amama (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bou_Amama"
+     }
+    }
+   ]
+  },
+  {
    "date": "1881-05-12",
    "what": "By the Treaty of Bardo, the Bey of Tunis accepts a French protectorate",
    "source": {
@@ -6727,6 +6754,28 @@
    ]
   },
   {
+   "date": "1865-05-01",
+   "what": "After beating Lat Dior, Senegal's governor annexes the coast of Cayor between Saint-Louis and Dakar",
+   "source": {
+    "title": "Cayor (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Cayor"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "SEN-768",
+      "SEN-766"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Cayor (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cayor"
+     }
+    }
+   ]
+  },
+  {
    "date": "1865-01-01",
    "what": "The French protectorate over Porto-Novo lapses",
    "source": {
@@ -6744,6 +6793,27 @@
      "source": {
       "title": "Porto-Novo (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Porto-Novo"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1864-01-01",
+   "what": "France takes control of the Loyalty Islands",
+   "source": {
+    "title": "Loyalty Islands (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Loyalty_Islands"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "NCL-1258"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Loyalty Islands (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Loyalty_Islands"
      }
     }
    ]
@@ -6860,6 +6930,27 @@
    ]
   },
   {
+   "date": "1862-01-01",
+   "what": "Chiefs of Cape Lopez and the Ogooué mouth sign treaties placing the coast south of the Gabon estuary under France",
+   "source": {
+    "title": "French Gabon (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_Gabon"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "GAB-2624"
+     ],
+     "owner": null,
+     "source": {
+      "title": "French Gabon (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Gabon"
+     }
+    }
+   ]
+  },
+  {
    "date": "1861-02-25",
    "what": "French troops break the Vietnamese siege lines at Kỳ Hòa and go on to take Mỹ Tho and Biên Hòa",
    "source": {
@@ -6882,6 +6973,551 @@
      "source": {
       "title": "Cochinchina campaign (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Cochinchina_campaign"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1861-02-02",
+   "what": "The Prince of Monaco sells Menton and Roquebrune, free towns since 1848, to France",
+   "source": {
+    "title": "Menton (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Menton"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "menton-roquebrune"
+     ],
+     "owner": "Monaco",
+     "source": {
+      "title": "Menton (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Menton"
+     },
+     "hatch": {
+      "by": "Italy",
+      "since": "1848-03-21",
+      "note": "Menton and Roquebrune broke away from Monaco in 1848 and were held under Sardinian protection until 1861",
+      "source": {
+       "title": "Menton (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Menton"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1860-06-14",
+   "what": "By the Treaty of Turin, confirmed by plebiscites, Sardinia hands Savoy and the County of Nice over to France",
+   "source": {
+    "title": "Treaty of Turin (1860) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Turin_(1860)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "county-of-nice",
+      "FRA-5341",
+      "FRA-5302"
+     ],
+     "owner": "Italy",
+     "source": {
+      "title": "Treaty of Turin (1860) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Turin_(1860)"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1860-03-22",
+   "what": "The French leave Tourane (Da Nang), held since 1858",
+   "source": {
+    "title": "Cochinchina campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Cochinchina_campaign"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "VNM-491"
+     ],
+     "owner": "Vietnam",
+     "source": {
+      "title": "Cochinchina campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cochinchina_campaign"
+     },
+     "hatch": {
+      "by": "France",
+      "since": "1858-09-01",
+      "note": "Held by French and Spanish troops from September 1858 to March 1860",
+      "source": {
+       "title": "Cochinchina campaign (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Cochinchina_campaign"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1859-02-17",
+   "what": "French and Spanish troops take the citadel of Saigon",
+   "source": {
+    "title": "Cochinchina campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Cochinchina_campaign"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "VNM-501"
+     ],
+     "owner": "Vietnam",
+     "source": {
+      "title": "Cochinchina campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cochinchina_campaign"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1858-09-01",
+   "what": "A French and Spanish fleet attacks Tourane (Da Nang) and lands troops",
+   "source": {
+    "title": "Cochinchina campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Cochinchina_campaign"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "VNM-491"
+     ],
+     "owner": "Vietnam",
+     "source": {
+      "title": "Cochinchina campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cochinchina_campaign"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1857-07-11",
+   "what": "Marshal Randon's campaign conquers Greater Kabylia; Lalla Fatma N'Soumer is captured",
+   "source": {
+    "title": "Lalla Fatma N'Soumer (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Lalla_Fatma_N%27Soumer"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "DZA-2197"
+     ],
+     "owner": null,
+     "source": {
+      "title": "French conquest of Algeria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_conquest_of_Algeria"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1857-05-25",
+   "what": "France occupies Dakar, on the mainland facing Gorée",
+   "source": {
+    "title": "Dakar (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Dakar"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SEN-759"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Dakar (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Dakar"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1857-01-01",
+   "what": "Faidherbe builds a fort at Matam, on the middle Senegal",
+   "source": {
+    "title": "French Senegal (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_Senegal"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "SEN-767"
+     ],
+     "owner": null,
+     "source": {
+      "title": "French Senegal (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Senegal"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1855-09-01",
+   "what": "Faidherbe builds a fort at Médine, on the upper Senegal; it holds out against El Hadj Umar's siege in 1857",
+   "source": {
+    "title": "Siege of Medina Fort (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Medina_Fort"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "MLI-2793"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Siege of Medina Fort (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Medina_Fort"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1854-12-02",
+   "what": "French troops take Touggourt and the Souf oases",
+   "source": {
+    "title": "French conquest of Algeria (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_conquest_of_Algeria"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "DZA-2191"
+     ],
+     "owner": null,
+     "source": {
+      "title": "French conquest of Algeria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_conquest_of_Algeria"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1853-09-24",
+   "what": "Admiral Febvrier-Despointes takes possession of New Caledonia",
+   "source": {
+    "title": "New Caledonia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/New_Caledonia"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "NCL-1259",
+      "NCL-559"
+     ],
+     "owner": null,
+     "source": {
+      "title": "New Caledonia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/New_Caledonia"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1853-06-01",
+   "what": "A fort is built at Dabou, west of the Ébrié lagoon, and posts on the lagoons",
+   "source": {
+    "title": "French Ivory Coast (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_Ivory_Coast"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CIV-3451",
+      "CIV-3447",
+      "CIV-3458"
+     ],
+     "owner": null,
+     "source": {
+      "title": "French Ivory Coast (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Ivory_Coast"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1853-01-01",
+   "what": "The French set up a post at Géryville (El Bayadh); Ouargla and the Mzab accept French rule",
+   "source": {
+    "title": "French conquest of Algeria (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_conquest_of_Algeria"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "DZA-2190",
+      "DZA-2194",
+      "DZA-2192"
+     ],
+     "owner": null,
+     "source": {
+      "title": "French conquest of Algeria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_conquest_of_Algeria"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1852-12-04",
+   "what": "French troops take Laghouat by storm",
+   "source": {
+    "title": "Siege of Laghouat (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Laghouat"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "DZA-2193",
+      "DZA-2212"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Siege of Laghouat (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Laghouat"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1846-01-01",
+   "what": "The French found Aumale (Sour El-Ghozlane), south of Kabylia",
+   "source": {
+    "title": "French conquest of Algeria (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_conquest_of_Algeria"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "DZA-2210"
+     ],
+     "owner": null,
+     "source": {
+      "title": "French conquest of Algeria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_conquest_of_Algeria"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1844-03-04",
+   "what": "The Duke of Aumale takes Biskra; Batna is founded, and the land south and east of Constantine is brought under French rule",
+   "source": {
+    "title": "French conquest of Algeria (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_conquest_of_Algeria"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "DZA-2211",
+      "DZA-2216",
+      "DZA-2214",
+      "DZA-2207",
+      "DZA-2219",
+      "DZA-2221",
+      "DZA-2222",
+      "DZA-2223"
+     ],
+     "owner": null,
+     "source": {
+      "title": "French conquest of Algeria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_conquest_of_Algeria"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1843-06-13",
+   "what": "France takes possession of Mayotte, bought from Sultan Andriantsoly in 1841",
+   "source": {
+    "title": "Mayotte (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Mayotte"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "FRA-4602"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Mayotte (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mayotte"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1843-05-16",
+   "what": "The Duke of Aumale takes Abd al-Qadir's camp, the Smala; Orléansville and Tiaret are founded",
+   "source": {
+    "title": "Capture of the Smala of Abd al-Qadir (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Capture_of_the_Smala_of_Abd-El-Kader"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "DZA-2200",
+      "DZA-2205",
+      "DZA-2206",
+      "DZA-2203"
+     ],
+     "owner": null,
+     "source": {
+      "title": "French conquest of Algeria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_conquest_of_Algeria"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1843-01-01",
+   "what": "France builds forts at Grand-Bassam and Assinie, on the Ivory Coast",
+   "source": {
+    "title": "French Ivory Coast (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_Ivory_Coast"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CIV-3462"
+     ],
+     "owner": null,
+     "source": {
+      "title": "French Ivory Coast (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Ivory_Coast"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1842-09-09",
+   "what": "Queen Pōmare IV places the Kingdom of Tahiti, with the Tuamotus and the Austral Islands of Tubuai and Raivavae, under French protection",
+   "source": {
+    "title": "Kingdom of Tahiti (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Tahiti"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "PYF-4963",
+      "PYF-4965",
+      "PYF-4966"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Kingdom of Tahiti (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Tahiti"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1842-05-01",
+   "what": "Admiral Dupetit-Thouars takes possession of the Marquesas Islands",
+   "source": {
+    "title": "French Polynesia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_Polynesia"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "PYF-4967"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Marquesas Islands (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Marquesas_Islands"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1842-01-30",
+   "what": "Bugeaud takes Tlemcen, in the far west",
+   "source": {
+    "title": "French conquest of Algeria (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_conquest_of_Algeria"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "DZA-2147",
+      "DZA-2144",
+      "DZA-2146"
+     ],
+     "owner": null,
+     "source": {
+      "title": "French conquest of Algeria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_conquest_of_Algeria"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1841-05-30",
+   "what": "Bugeaud takes Mascara, Abd al-Qadir's capital, and destroys Saïda",
+   "source": {
+    "title": "French conquest of Algeria (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_conquest_of_Algeria"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "DZA-2201",
+      "DZA-2204"
+     ],
+     "owner": null,
+     "source": {
+      "title": "French conquest of Algeria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_conquest_of_Algeria"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1841-03-05",
+   "what": "France takes possession of Nosy Be, ceded by the Sakalava queen Tsiomeko",
+   "source": {
+    "title": "Nosy Be (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Nosy_Be"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "nosy-be"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Nosy Be (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Nosy_Be"
      }
     }
    ]

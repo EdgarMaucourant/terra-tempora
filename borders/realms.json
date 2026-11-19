@@ -757,6 +757,27 @@
   "es": "Francia",
   "periods": [
    {
+    "from": "1830-08-09",
+    "name": "July Monarchy",
+    "wikipedia": "July Monarchy",
+    "fr": "Monarchie de Juillet",
+    "es": "Monarquía de Julio",
+    "detail": "July Monarchy",
+    "detailFr": "monarchie de Juillet",
+    "detailEs": "Monarquía de Julio",
+    "note": "King Louis-Philippe"
+   },
+   {
+    "from": "1848-02-24",
+    "name": "French Second Republic",
+    "wikipedia": "French Second Republic",
+    "fr": "Deuxième République",
+    "es": "Segunda República Francesa",
+    "detail": "Second Republic",
+    "detailFr": "Deuxième République",
+    "detailEs": "Segunda República"
+   },
+   {
     "from": "1852-12-02",
     "name": "Second French Empire",
     "wikipedia": "Second French Empire",
@@ -1029,6 +1050,14 @@
   "es": "Polinesia Francesa",
   "withOwner": false,
   "periods": [
+   {
+    "from": "1842-05-01",
+    "name": "French Oceania",
+    "wikipedia": "French Polynesia",
+    "fr": "Océanie française",
+    "es": "Oceanía Francesa",
+    "note": "The Marquesas, and the Kingdom of Tahiti as a French protectorate until 1880"
+   },
    {
     "from": "1880-06-29",
     "name": "French Establishments in Oceania",
@@ -1438,7 +1467,37 @@
   "wikipedia": "Italy",
   "wikidata": "Q38",
   "fr": "Italie",
-  "es": "Italia"
+  "es": "Italia",
+  "periods": [
+   {
+    "from": "1720-08-08",
+    "name": "Kingdom of Sardinia",
+    "wikipedia": "Kingdom of Sardinia",
+    "fr": "Royaume de Sardaigne",
+    "es": "Reino de Cerdeña",
+    "label": "Sardinia",
+    "labelFr": "Sardaigne",
+    "labelEs": "Cerdeña",
+    "note": "Piedmont, Savoy, Nice and Sardinia under the House of Savoy"
+   },
+   {
+    "from": "1861-03-17",
+    "name": "Kingdom of Italy",
+    "wikipedia": "Kingdom of Italy",
+    "fr": "Royaume d'Italie",
+    "es": "Reino de Italia",
+    "detail": "Kingdom",
+    "detailFr": "royaume",
+    "detailEs": "reino"
+   },
+   {
+    "from": "1946-06-02",
+    "name": "Italy",
+    "wikipedia": "Italy",
+    "fr": "Italie",
+    "es": "Italia"
+   }
+  ]
  },
  "Ivory Coast": {
   "wikipedia": "Ivory Coast",
