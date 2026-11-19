@@ -50,10 +50,12 @@ const COARSE_GRANULARITY = 2;
 // Outlines with fewer points than this are drawn together, a realm's small
 // islands in one piece, to keep the number of pieces on the globe down.
 const SMALL_RING = 16;
-// Hatching: land held by another state than its owner, drawn over the owner.
-const HATCH_HEIGHT = FEATURED_HEIGHT + 1500;
+// Hatching: land held by another state than its owner, drawn just above the
+// owner's land. Higher, the hatching seen at a slant slides off the land and
+// leaves a strip of it bare (Saint-Martin in 1815).
+const HATCH_LIFT = 400;
 // A group's outline (French West Africa), above everything it groups.
-const GROUP_HEIGHT = HATCH_HEIGHT + 1500;
+const GROUP_HEIGHT = FEATURED_HEIGHT + 3000;
 const GROUP_COLOR = "#f2d48a";
 const HATCH_ALPHA = 0.85;
 // The hatch lines' spacing, in km: the pattern repeats across the shape's extent.
@@ -346,6 +348,17 @@ export class PolityLayer {
     return this.showContext || this.isHighlighted(p);
   }
 
+  /** Whether the land under a hatching is drawn highlighted, and so higher. */
+  private landHighlighted(h: Polity): boolean {
+    // A hatching is named after the land's owner (France under German occupation).
+    if (highlightOf(this.highlight, h) !== undefined) return true;
+    const rings = new Set(h.rings);
+    for (const q of this.polities.values()) {
+      if (!q.kind && q.from <= h.to && q.to >= h.from && q.rings.some((r) => rings.has(r)) && highlightOf(this.highlight, q) !== undefined) return true;
+    }
+    return false;
+  }
+
   /** The colour of a hatch: the holder's when it is highlighted, else a light grey. */
   private hatchColor(p: Polity): string {
     return (p.by && this.highlight.get(p.by)) ?? "#e4e7ea";
@@ -452,7 +465,9 @@ export class PolityLayer {
         changed.has(p.name) ||
         p.groups?.some((name) => changed.has(name)) ||
         (p.partOf && changed.has(p.partOf)) ||
-        (p.by && changed.has(p.by))
+        (p.by && changed.has(p.by)) ||
+        // A hatching follows its land up or down (see landHighlighted).
+        (p.kind === "hatch" && changed.size > 0)
       ) {
         this.detach(p);
       }
@@ -590,7 +605,9 @@ export class PolityLayer {
               ? GROUP_COLOR
               : highlightOf(this.highlight, p);
     const highlighted = !p.kind && color !== undefined;
-    const style = `${p.kind ?? ""}:${color ?? ""}`;
+    // A hatching sits just above its land, which is higher when highlighted.
+    const lifted = p.kind === "hatch" && this.landHighlighted(p);
+    const style = `${p.kind ?? ""}:${color ?? ""}${lifted ? ":lifted" : ""}`;
     // Each sizeable outline is its own piece; the small ones go together.
     const groups: number[][][] = [];
     const small: number[][] = [];
@@ -602,7 +619,7 @@ export class PolityLayer {
 
     const pieces = groups.map((rings, i) => {
       let piece = this.pieces.get(keys[i]);
-      if (!piece) this.pieces.set(keys[i], (piece = this.build(keys[i], rings, color, p.coarse, p.kind)));
+      if (!piece) this.pieces.set(keys[i], (piece = this.build(keys[i], rings, color, p.coarse, p.kind, lifted)));
       piece.users.add(p);
       return piece;
     });
@@ -663,9 +680,16 @@ export class PolityLayer {
     if (this.retiring.get(p.id) === p) this.retiring.delete(p.id);
   }
 
-  private build(key: string, rings: number[][], color: string | undefined, coarse?: boolean, kind?: Polity["kind"]): Piece {
+  private build(key: string, rings: number[][], color: string | undefined, coarse?: boolean, kind?: Polity["kind"], lifted = false): Piece {
     const highlighted = !kind && color !== undefined;
-    const height = kind === "group" ? GROUP_HEIGHT : kind === "hatch" ? HATCH_HEIGHT : highlighted ? FEATURED_HEIGHT : CONTEXT_HEIGHT - (kind ? 500 : 0);
+    const height =
+      kind === "group"
+        ? GROUP_HEIGHT
+        : kind === "hatch"
+          ? (lifted ? FEATURED_HEIGHT : CONTEXT_HEIGHT) + HATCH_LIFT
+          : highlighted
+            ? FEATURED_HEIGHT
+            : CONTEXT_HEIGHT - (kind ? 500 : 0);
     const fillColor = Color.fromCssColorString(color ?? MUTED);
     const lineColor = kind
       ? fillColor.withAlpha(kind === "hatch" ? 0.7 : kind === "group" ? 0.9 : kind === "blank" ? 0.8 : 0)
