@@ -668,7 +668,7 @@ export class PolityLayer {
     const height = kind === "group" ? GROUP_HEIGHT : kind === "hatch" ? HATCH_HEIGHT : highlighted ? FEATURED_HEIGHT : CONTEXT_HEIGHT - (kind ? 500 : 0);
     const fillColor = Color.fromCssColorString(color ?? MUTED);
     const lineColor = kind
-      ? fillColor.withAlpha(kind === "hatch" ? 0.7 : kind === "group" ? 0.9 : kind === "blank" ? 0.55 : 0)
+      ? fillColor.withAlpha(kind === "hatch" ? 0.7 : kind === "group" ? 0.9 : kind === "blank" ? 0.8 : 0)
       : highlighted
         ? Color.fromCssColorString(color!).brighten(0.35, new Color()).withAlpha(0.95)
         : Color.fromCssColorString("#e4e7ea").withAlpha(0.45);
@@ -677,7 +677,7 @@ export class PolityLayer {
     // Land no state held has a dashed outline of today's borders.
     const lineMaterial =
       kind === "blank"
-        ? Material.fromType("PolylineDash", { color: lineColor.withAlpha(0), dashLength: 12 })
+        ? Material.fromType("PolylineDash", { color: lineColor.withAlpha(0), dashLength: 16 })
         : Material.fromType("Color", { color: lineColor.withAlpha(0) });
     const piece = new Piece(key, fillMaterial, lineMaterial, fillColor, lineColor, highlighted);
     piece.kind = kind;
@@ -710,7 +710,7 @@ export class PolityLayer {
       show: false,
     });
     piece.line = new Primitive({
-      geometryInstances: rings.map((ring) => border(ring, height + 300, kind === "group" ? 3 : highlighted ? 2 : 1, piece)),
+      geometryInstances: rings.map((ring) => border(ring, height + 300, kind === "group" ? 3 : highlighted || kind === "blank" ? 2 : 1, piece)),
       appearance: new PolylineMaterialAppearance({ material: lineMaterial, translucent: true }),
       asynchronous: true,
       allowPicking: kind !== "blank",
