@@ -3,7 +3,7 @@ import { geoCylindricalEqualArea, geoEckert4, geoMiller, geoMollweide, geoRobins
 import type { Feature, MultiPolygon, Polygon } from "geojson";
 import { feature } from "topojson-client";
 import landUrl from "world-atlas/land-50m.json?url";
-import { MUTED } from "./colors";
+import { BLANK_COLOR, BLANK_FILL_ALPHA, MUTED } from "./colors";
 import { foldedInGroup, highlightOf, withClosedGroups, type Polity } from "./data";
 import { shapeOpacity } from "./polityLayer";
 import { badgeUrl, eventOpacity, supersededYears, type EventKind, type HistoryEvent } from "./events";
@@ -464,7 +464,15 @@ export class MapView {
     const featured: { p: Polity; opacity: number }[] = [];
     const hatched: { p: Polity; opacity: number }[] = [];
     const grouped: { p: Polity; opacity: number }[] = [];
+    const blank: { p: Polity; opacity: number }[] = [];
     for (const p of this.polities.values()) {
+      // Land no state held is always shown, so that visitors see it and can
+      // tell us about it.
+      if (p.kind === "blank") {
+        const opacity = shapeOpacity(p, this.year);
+        if (opacity > 0.002) blank.push({ p, opacity });
+        continue;
+      }
       if (p.kind === "group") {
         const opacity = shapeOpacity(p, this.year);
         if (opacity > 0.002 && (this.showContext || highlightOf(this.highlight, p) !== undefined)) grouped.push({ p, opacity });
@@ -491,6 +499,23 @@ export class MapView {
       ctx.fill();
       ctx.globalAlpha = 1;
       if (opacity > 0.5) this.drawn.push({ p, shape });
+    }
+    // Land no state held: a light grey with a dashed outline of today's
+    // borders. It is not pickable: a pointer there finds no realm.
+    for (const { p, opacity } of blank) {
+      const shape = this.shapeOf(p);
+      ctx.beginPath();
+      path(shape);
+      ctx.globalAlpha = BLANK_FILL_ALPHA * opacity;
+      ctx.fillStyle = BLANK_COLOR;
+      ctx.fill();
+      ctx.globalAlpha = 0.8 * opacity;
+      ctx.strokeStyle = BLANK_COLOR;
+      ctx.lineWidth = 1.4;
+      ctx.setLineDash([5, 4]);
+      ctx.stroke();
+      ctx.setLineDash([]);
+      ctx.globalAlpha = 1;
     }
     for (const { p, opacity } of [...context, ...featured]) {
       const shape = this.shapeOf(p);
