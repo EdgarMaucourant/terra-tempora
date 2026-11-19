@@ -14,7 +14,7 @@
     "SPM",
     "WLF"
    ],
-   "from": 1840,
+   "from": 1815,
    "why": "Metropolitan France with Corsica, the overseas departments (Guadeloupe, Martinique, French Guiana, Réunion, and Mayotte since 2011) and the overseas territories (Saint Pierre and Miquelon, Saint Barthélemy, Saint Martin, New Caledonia, French Polynesia, Wallis and Futuna, the French Southern and Antarctic Lands, Clipperton), whose borders have not moved since 1957"
   },
   {
@@ -24,7 +24,7 @@
     "COM",
     "VUT"
    ],
-   "from": 1840,
+   "from": 1815,
    "why": "Algeria, Djibouti, the Comoros and Vanuatu, French (Vanuatu Anglo-French) until their independence, with today's borders"
   },
   {
@@ -45,7 +45,7 @@
     "CMR",
     "MDG"
    ],
-   "from": 1840,
+   "from": 1815,
    "why": "French West Africa, French Equatorial Africa, French Togoland, French Cameroon and Madagascar, with today's borders, from French rule to independence, and the British Southern Cameroons (Northwest and Southwest of today's Cameroon) until they join Cameroon in 1961"
   },
   {
@@ -73,7 +73,7 @@
     "MAR-3456",
     "TUN"
    ],
-   "from": 1840,
+   "from": 1815,
    "why": "Morocco (without Western Sahara) and Tunisia: the French protectorates until 1956, with Spain's northern zone, the Tangier International Zone, Cape Juby (Spanish until 1958) and Ifni (Spanish until 1969)"
   },
   {
@@ -82,7 +82,7 @@
     "LAO",
     "KHM"
    ],
-   "from": 1840,
+   "from": 1815,
    "why": "French Indochina: Vietnam (Tonkin, Annam and Cochinchina, then the State of Vietnam), Laos and Cambodia, with today's borders, until independence in 1953 and 1954, then North and South Vietnam until 1976"
   },
   {
@@ -91,14 +91,14 @@
     "mahe",
     "chandernagore"
    ],
-   "from": 1840,
+   "from": 1815,
    "why": "French India: Pondichéry, Karikal, Mahé and Yanaon (today's Puducherry, with Mahé drawn where it is, not where Natural Earth puts it) and Chandernagore, until they pass to India"
   },
   {
    "pieces": [
     "DEU-1581"
    ],
-   "from": 1840,
+   "from": 1815,
    "why": "The Saar: a League of Nations territory from 1920 to 1935, German again until 1945, occupied by France, a protectorate of France from 1946 until it joins West Germany in 1957, with today's Saarland borders"
   },
   {
@@ -108,14 +108,14 @@
     "LBN",
     "TUR-2289"
    ],
-   "from": 1840,
+   "from": 1815,
    "why": "Syria (with the Golan Heights), Lebanon and the Sanjak of Alexandretta (Hatay): French mandates under the League of Nations, with the states France set up in Syria (Aleppo, Damascus, the Alawites, Jabal Druze) until their union, with today's borders; Hatay State in 1938, Turkish from June 1939"
   },
   {
    "pieces": [
     "guangzhouwan"
    ],
-   "from": 1840,
+   "from": 1815,
    "why": "Guangzhouwan, leased to France until 1945, then part of China"
   }
  ],
@@ -4011,8 +4011,8 @@
      ],
      "owner": "Germany",
      "source": {
-      "title": "Weimar Republic (Wikipedia)",
-      "url": "https://en.wikipedia.org/wiki/Weimar_Republic"
+      "title": "Territory of the Saar Basin (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Territory_of_the_Saar_Basin"
      },
      "hatch": {
       "by": "France",
@@ -4939,6 +4939,27 @@
    ]
   },
   {
+   "date": "1906-10-20",
+   "what": "Britain and France agree to rule the New Hebrides jointly, as a condominium",
+   "source": {
+    "title": "New Hebrides (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/New_Hebrides"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "VUT"
+     ],
+     "owner": null,
+     "source": {
+      "title": "New Hebrides (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/New_Hebrides"
+     }
+    }
+   ]
+  },
+  {
    "date": "1906-02-11",
    "what": "Chad is joined to Ubangi-Shari as the colony of Ubangi-Shari-Chad",
    "source": {
@@ -5543,6 +5564,20 @@
       "MDG"
      ],
      "owner": "Madagascar",
+     "source": {
+      "title": "Merina Kingdom (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Merina_Kingdom"
+     }
+    },
+    {
+     "pieces": [
+      "MDG-5878",
+      "MDG-5876",
+      "MDG-5866",
+      "MDG-5864",
+      "MDG-5874"
+     ],
+     "owner": null,
      "source": {
       "title": "Merina Kingdom (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Merina_Kingdom"
@@ -6450,6 +6485,27 @@
    ]
   },
   {
+   "date": "1878-03-16",
+   "what": "Sweden hands Saint Barthélemy back to France, which bought it the year before",
+   "source": {
+    "title": "Saint Barthélemy (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Saint_Barth%C3%A9lemy"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "BLM"
+     ],
+     "owner": "Sweden",
+     "source": {
+      "title": "Swedish colony of Saint Barthélemy (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Swedish_colony_of_Saint_Barth%C3%A9lemy"
+     }
+    }
+   ]
+  },
+  {
    "date": "1874-03-15",
    "what": "By the Treaty of Saigon, France gives back the forts of the Red River delta taken by Garnier, and Vietnam recognises French Cochinchina",
    "source": {
@@ -7082,6 +7138,27 @@
    ]
   },
   {
+   "date": "1858-11-17",
+   "what": "A French navy officer claims Clipperton Island for France",
+   "source": {
+    "title": "Clipperton Island (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Clipperton_Island"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "CLP"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Clipperton Island (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Clipperton_Island"
+     }
+    }
+   ]
+  },
+  {
    "date": "1858-09-01",
    "what": "A French and Spanish fleet attacks Tourane (Da Nang) and lands troops",
    "source": {
@@ -7518,6 +7595,765 @@
      "source": {
       "title": "Nosy Be (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Nosy_Be"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1840-12-29",
+   "what": "Ibrahim Pasha's army leaves Damascus and withdraws from Syria, which goes back to the Ottoman Sultan",
+   "source": {
+    "title": "Oriental Crisis of 1840 (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Oriental_Crisis_of_1840"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "SYR",
+      "golan",
+      "LBN",
+      "TUR-2289"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Oriental Crisis of 1840 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Oriental_Crisis_of_1840"
+     },
+     "hatch": {
+      "by": "Egypt",
+      "since": "1831-11-01",
+      "note": "Conquered by Ibrahim Pasha for his father Muhammad Ali, governor of Egypt, in 1831-1832, and held until the European powers force him out in 1840",
+      "source": {
+       "title": "Egyptian–Ottoman War (1831–1833) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Egyptian%E2%80%93Ottoman_War_(1831%E2%80%931833)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "SYR-136",
+      "SYR-141",
+      "SYR-142"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Oriental Crisis of 1840 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Oriental_Crisis_of_1840"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1840-06-08",
+   "what": "French troops take Miliana",
+   "source": {
+    "title": "French conquest of Algeria (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_conquest_of_Algeria"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "DZA-2199"
+     ],
+     "owner": null,
+     "source": {
+      "title": "French conquest of Algeria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_conquest_of_Algeria"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1840-05-17",
+   "what": "French troops take Médéa, after forcing the Mouzaïa pass",
+   "source": {
+    "title": "French conquest of Algeria (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_conquest_of_Algeria"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "DZA-2213"
+     ],
+     "owner": null,
+     "source": {
+      "title": "French conquest of Algeria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_conquest_of_Algeria"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1839-05-13",
+   "what": "French troops land at Djidjelli (Jijel)",
+   "source": {
+    "title": "Jijel (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Jijel"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "DZA-2165"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Jijel (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Jijel"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1839-02-09",
+   "what": "King Denis (Rapontchombo) cedes land on the south bank of the Gabon estuary to France",
+   "source": {
+    "title": "French Gabon (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_Gabon"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GAB-2168",
+      "neukamerun-estuaire"
+     ],
+     "owner": null,
+     "source": {
+      "title": "French Gabon (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Gabon"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1838-12-15",
+   "what": "French troops occupy Mila and Sétif, west of Constantine",
+   "source": {
+    "title": "French conquest of Algeria (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_conquest_of_Algeria"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "DZA-2220",
+      "DZA-2215"
+     ],
+     "owner": null,
+     "source": {
+      "title": "French conquest of Algeria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_conquest_of_Algeria"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1838-10-07",
+   "what": "Marshal Valée founds Philippeville (Skikda), the port of Constantine",
+   "source": {
+    "title": "Skikda (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Skikda"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "DZA-2166"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Skikda (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Skikda"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1838-05-03",
+   "what": "French troops occupy Blida and Koléa, at the edge of the Mitidja",
+   "source": {
+    "title": "French conquest of Algeria (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_conquest_of_Algeria"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "DZA-2209",
+      "DZA-2198"
+     ],
+     "owner": null,
+     "source": {
+      "title": "French conquest of Algeria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_conquest_of_Algeria"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1838-03-24",
+   "what": "France builds a post at Sédhiou, on the Casamance river",
+   "source": {
+    "title": "Sédhiou (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/S%C3%A9dhiou"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "SEN-5514"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Sédhiou (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/S%C3%A9dhiou"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1837-10-13",
+   "what": "French troops take Constantine by storm at the second attempt",
+   "source": {
+    "title": "Siege of Constantine (1837) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Constantine_(1837)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "DZA-2217"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Siege of Constantine (1837) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Constantine_(1837)"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1836-11-10",
+   "what": "On the march to Constantine, the French set up a camp at Guelma, and hold La Calle again",
+   "source": {
+    "title": "French conquest of Algeria (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_conquest_of_Algeria"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "DZA-2218",
+      "DZA-2164"
+     ],
+     "owner": null,
+     "source": {
+      "title": "French conquest of Algeria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_conquest_of_Algeria"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1833-09-29",
+   "what": "French troops take Bougie (Béjaïa)",
+   "source": {
+    "title": "French conquest of Algeria (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_conquest_of_Algeria"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "DZA-2208"
+     ],
+     "owner": null,
+     "source": {
+      "title": "French conquest of Algeria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_conquest_of_Algeria"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1833-07-28",
+   "what": "French troops occupy Mostaganem",
+   "source": {
+    "title": "French conquest of Algeria (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_conquest_of_Algeria"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "DZA-2202"
+     ],
+     "owner": null,
+     "source": {
+      "title": "French conquest of Algeria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_conquest_of_Algeria"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1832-03-27",
+   "what": "French troops take the citadel of Bône (Annaba)",
+   "source": {
+    "title": "Annaba (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Annaba"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "DZA-2163"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Annaba (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Annaba"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1831-11-01",
+   "what": "Ibrahim Pasha, son of Egypt's governor Muhammad Ali, invades Syria and besieges Acre",
+   "source": {
+    "title": "Egyptian–Ottoman War (1831–1833) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Egyptian%E2%80%93Ottoman_War_(1831%E2%80%931833)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "SYR",
+      "golan",
+      "LBN",
+      "TUR-2289"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Egyptian–Ottoman War (1831–1833) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Egyptian%E2%80%93Ottoman_War_(1831%E2%80%931833)"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1831-01-04",
+   "what": "French troops occupy Oran",
+   "source": {
+    "title": "Oran (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Oran"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "DZA-2145"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Oran (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Oran"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1830-07-05",
+   "what": "The Dey of Algiers surrenders the city to the French expedition",
+   "source": {
+    "title": "Invasion of Algiers in 1830 (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Invasion_of_Algiers_in_1830"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "DZA-2195",
+      "DZA-2196"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Invasion of Algiers in 1830 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Invasion_of_Algiers_in_1830"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1825-03-01",
+   "what": "Radama I's armies take Fort-Dauphin and the south-east coast, and finish the conquest of the Betsileo highlands",
+   "source": {
+    "title": "Radama I (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Radama_I"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "MDG-5865",
+      "MDG-5867",
+      "MDG-5882",
+      "MDG-5873"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Radama I (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Radama_I"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1824-06-01",
+   "what": "Radama I takes Mahajanga and the north-west from the Sakalava, then the north of the island",
+   "source": {
+    "title": "Radama I (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Radama_I"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "MDG-5870",
+      "MDG-5869",
+      "MDG-5880",
+      "MDG-5872",
+      "MDG-5879"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Radama I (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Radama_I"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1820-01-01",
+   "what": "France builds the fort of Bakel on the upper Senegal",
+   "source": {
+    "title": "Bakel (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Bakel"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "SEN-779",
+      "MRT-2790",
+      "MRT-2791"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Bakel (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bakel"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1818-11-30",
+   "what": "After the Congress of Aix-la-Chapelle, the last Allied troops leave the north-east of France",
+   "source": {
+    "title": "Congress of Aix-la-Chapelle (1818) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Congress_of_Aix-la-Chapelle_(1818)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "FRA-5330",
+      "nord-occupied-1914-1918",
+      "FRA-5334",
+      "pas-de-calais-occupied-1914-1918",
+      "pas-de-calais-occupied-1914-1917"
+     ],
+     "owner": "France",
+     "source": {
+      "title": "Occupation de la France à la fin du Premier Empire (French Wikipedia)",
+      "url": "https://fr.wikipedia.org/wiki/Occupation_de_la_France_%C3%A0_la_fin_du_Premier_Empire"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1815-07-01",
+      "note": "Occupied by the Allied armies after Waterloo; from November 1815 an army of 150,000 holds the north-east until the Congress of Aix-la-Chapelle ends the occupation in 1818",
+      "source": {
+       "title": "Occupation de la France à la fin du Premier Empire (French Wikipedia)",
+       "url": "https://fr.wikipedia.org/wiki/Occupation_de_la_France_%C3%A0_la_fin_du_Premier_Empire"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "FRA-5268"
+     ],
+     "owner": "France",
+     "source": {
+      "title": "Occupation de la France à la fin du Premier Empire (French Wikipedia)",
+      "url": "https://fr.wikipedia.org/wiki/Occupation_de_la_France_%C3%A0_la_fin_du_Premier_Empire"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1815-07-01",
+      "note": "Occupied by the Allied armies after Waterloo; from November 1815 an army of 150,000 holds the north-east until the Congress of Aix-la-Chapelle ends the occupation in 1818",
+      "source": {
+       "title": "Occupation de la France à la fin du Premier Empire (French Wikipedia)",
+       "url": "https://fr.wikipedia.org/wiki/Occupation_de_la_France_%C3%A0_la_fin_du_Premier_Empire"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "FRA-5326",
+      "meuse-occupied-1914-1918"
+     ],
+     "owner": "France",
+     "source": {
+      "title": "Occupation de la France à la fin du Premier Empire (French Wikipedia)",
+      "url": "https://fr.wikipedia.org/wiki/Occupation_de_la_France_%C3%A0_la_fin_du_Premier_Empire"
+     },
+     "hatch": {
+      "by": "Prussia",
+      "since": "1815-07-01",
+      "note": "Occupied by the Allied armies after Waterloo; from November 1815 an army of 150,000 holds the north-east until the Congress of Aix-la-Chapelle ends the occupation in 1818",
+      "source": {
+       "title": "Occupation de la France à la fin du Premier Empire (French Wikipedia)",
+       "url": "https://fr.wikipedia.org/wiki/Occupation_de_la_France_%C3%A0_la_fin_du_Premier_Empire"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "FRA-5273",
+      "FRA-5296",
+      "south-alsace",
+      "FRA-5348",
+      "FRA-5328"
+     ],
+     "owner": "France",
+     "source": {
+      "title": "Occupation de la France à la fin du Premier Empire (French Wikipedia)",
+      "url": "https://fr.wikipedia.org/wiki/Occupation_de_la_France_%C3%A0_la_fin_du_Premier_Empire"
+     },
+     "hatch": {
+      "by": "Austria",
+      "since": "1815-07-01",
+      "note": "Occupied by the Allied armies after Waterloo; from November 1815 an army of 150,000 holds the north-east until the Congress of Aix-la-Chapelle ends the occupation in 1818",
+      "source": {
+       "title": "Occupation de la France à la fin du Premier Empire (French Wikipedia)",
+       "url": "https://fr.wikipedia.org/wiki/Occupation_de_la_France_%C3%A0_la_fin_du_Premier_Empire"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1818-10-15",
+   "what": "France takes back Île Sainte-Marie, off Madagascar",
+   "source": {
+    "title": "Île Sainte-Marie (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/%C3%8Ele_Sainte-Marie"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "sainte-marie"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Île Sainte-Marie (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/%C3%8Ele_Sainte-Marie"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1817-11-08",
+   "what": "Portugal hands French Guiana back to France",
+   "source": {
+    "title": "French Guiana (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_Guiana"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "FRA-2000"
+     ],
+     "owner": "France",
+     "territory": "French Guiana",
+     "source": {
+      "title": "French Guiana (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Guiana"
+     },
+     "hatch": {
+      "by": "Portugal",
+      "since": "1809-01-12",
+      "note": "Taken by Portuguese and British troops from Brazil in January 1809, and held until 1817",
+      "source": {
+       "title": "French Guiana (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/French_Guiana"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1817-10-23",
+   "what": "Radama I signs a treaty with Britain, which recognises him as King of Madagascar, and takes Tamatave and the east coast",
+   "source": {
+    "title": "Radama I (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Radama_I"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "MDG-5868",
+      "MDG-5863",
+      "MDG-5860"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Radama I (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Radama_I"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1817-01-25",
+   "what": "Britain hands Saint-Louis du Sénégal back to France",
+   "source": {
+    "title": "French Senegal (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_Senegal"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "SEN-5517"
+     ],
+     "owner": "France",
+     "territory": "French Senegal",
+     "source": {
+      "title": "French Senegal (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Senegal"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1809-07-13",
+      "note": "Taken by the British in July 1809, and held until January 1817",
+      "source": {
+       "title": "French Senegal (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/French_Senegal"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1816-12-04",
+   "what": "Britain hands Pondichéry back to France, then the other posts of French India",
+   "source": {
+    "title": "French India (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/French_India"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "IND-3262",
+      "chandernagore",
+      "mahe"
+     ],
+     "owner": "France",
+     "territory": "French India",
+     "source": {
+      "title": "French India (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_India"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1793-08-23",
+      "note": "Taken by the British in the wars of the French Revolution and of Napoleon (Pondichéry in 1793, and again in 1803), and handed back in 1816-1817",
+      "source": {
+       "title": "French India (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/French_India"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1816-07-25",
+   "what": "British troops leave Guadeloupe, occupied again since August 1815",
+   "source": {
+    "title": "Guadeloupe (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Guadeloupe"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "FRA-4603",
+      "MAF-5145"
+     ],
+     "owner": "France",
+     "territory": "Guadeloupe",
+     "source": {
+      "title": "Guadeloupe (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Guadeloupe"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1815-08-10",
+      "note": "Occupied by the British after the governor sided with Napoleon in the Hundred Days, until July 1816",
+      "source": {
+       "title": "Guadeloupe (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Guadeloupe"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1816-06-22",
+   "what": "Britain hands Saint Pierre and Miquelon back to France",
+   "source": {
+    "title": "Saint Pierre and Miquelon (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Saint_Pierre_and_Miquelon"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "SPM"
+     ],
+     "owner": "France",
+     "territory": "Saint Pierre and Miquelon",
+     "source": {
+      "title": "Saint Pierre and Miquelon (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Saint_Pierre_and_Miquelon"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1803-05-18",
+      "note": "Held by the British in the Napoleonic Wars, until 1816",
+      "source": {
+       "title": "Saint Pierre and Miquelon (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Saint_Pierre_and_Miquelon"
+      }
      }
     }
    ]

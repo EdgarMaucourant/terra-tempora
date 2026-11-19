@@ -757,6 +757,17 @@
   "es": "Francia",
   "periods": [
    {
+    "from": "1815-07-08",
+    "name": "Bourbon Restoration",
+    "wikipedia": "Bourbon Restoration in France",
+    "fr": "Restauration",
+    "es": "Restauración borbónica",
+    "detail": "Bourbon Restoration",
+    "detailFr": "Restauration",
+    "detailEs": "Restauración",
+    "note": "Kings Louis XVIII and Charles X"
+   },
+   {
     "from": "1830-08-09",
     "name": "July Monarchy",
     "wikipedia": "July Monarchy",
@@ -1210,6 +1221,17 @@
   "fr": "Allemagne",
   "es": "Alemania",
   "periods": [
+   {
+    "from": "1815-06-08",
+    "name": "German Confederation",
+    "wikipedia": "German Confederation",
+    "fr": "Confédération germanique",
+    "es": "Confederación Germánica",
+    "note": "A league of German states, led by Austria and Prussia",
+    "label": "German Confederation",
+    "labelFr": "Confédération germanique",
+    "labelEs": "Confederación Germánica"
+   },
    {
     "from": "1867-07-01",
     "name": "North German Confederation",
@@ -1673,6 +1695,17 @@
   "fr": "Madagascar",
   "es": "Madagascar",
   "periods": [
+   {
+    "from": "1787-01-01",
+    "name": "Kingdom of Imerina",
+    "wikipedia": "Merina Kingdom",
+    "fr": "Royaume de l'Imerina",
+    "es": "Reino de Imerina",
+    "note": "The Merina kingdom of the central highlands",
+    "label": "Imerina",
+    "labelFr": "Imerina",
+    "labelEs": "Imerina"
+   },
    {
     "from": "1817-10-23",
     "name": "Kingdom of Madagascar",
@@ -2199,6 +2232,12 @@
   "fr": "Timor portugais",
   "es": "Timor portugués",
   "withOwner": false
+ },
+ "Prussia": {
+  "wikipedia": "Kingdom of Prussia",
+  "wikidata": "Q27306",
+  "fr": "Prusse",
+  "es": "Prusia"
  },
  "Puerto Rico": {
   "wikipedia": "Puerto Rico",
