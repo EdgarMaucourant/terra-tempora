@@ -21,7 +21,7 @@ import {
   SceneTransforms,
   VerticalOrigin,
 } from "cesium";
-import { MUTED } from "./colors";
+import { BLANK_COLOR, BLANK_FILL_ALPHA, MUTED } from "./colors";
 import { foldedInGroup, highlightOf, isOverlay, withClosedGroups, type Polity } from "./data";
 import { inRing } from "./frame";
 
@@ -341,6 +341,8 @@ export class PolityLayer {
 
   private visibleKind(p: Polity): boolean {
     if (p.kind === "unreviewed") return this.showContext;
+    // Land no state held is always shown, so that visitors see it and can tell us about it.
+    if (p.kind === "blank") return true;
     return this.showContext || this.isHighlighted(p);
   }
 
@@ -540,6 +542,8 @@ export class PolityLayer {
           ? HATCH_ALPHA
           : piece.kind === "unreviewed"
             ? UNREVIEWED_ALPHA
+            : piece.kind === "blank"
+              ? BLANK_FILL_ALPHA
             : piece.highlighted
               ? FEATURED_FILL_ALPHA
               : piece.hovered
@@ -576,7 +580,15 @@ export class PolityLayer {
    */
   private attach(p: Polity, budget: number, force: boolean): number {
     const color =
-      p.kind === "hatch" ? this.hatchColor(p) : p.kind === "unreviewed" ? UNREVIEWED_COLOR : p.kind === "group" ? GROUP_COLOR : highlightOf(this.highlight, p);
+      p.kind === "hatch"
+        ? this.hatchColor(p)
+        : p.kind === "unreviewed"
+          ? UNREVIEWED_COLOR
+          : p.kind === "blank"
+            ? BLANK_COLOR
+            : p.kind === "group"
+              ? GROUP_COLOR
+              : highlightOf(this.highlight, p);
     const highlighted = !p.kind && color !== undefined;
     const style = `${p.kind ?? ""}:${color ?? ""}`;
     // Each sizeable outline is its own piece; the small ones go together.
@@ -656,13 +668,17 @@ export class PolityLayer {
     const height = kind === "group" ? GROUP_HEIGHT : kind === "hatch" ? HATCH_HEIGHT : highlighted ? FEATURED_HEIGHT : CONTEXT_HEIGHT - (kind ? 500 : 0);
     const fillColor = Color.fromCssColorString(color ?? MUTED);
     const lineColor = kind
-      ? fillColor.withAlpha(kind === "hatch" ? 0.7 : kind === "group" ? 0.9 : 0)
+      ? fillColor.withAlpha(kind === "hatch" ? 0.7 : kind === "group" ? 0.9 : kind === "blank" ? 0.55 : 0)
       : highlighted
         ? Color.fromCssColorString(color!).brighten(0.35, new Color()).withAlpha(0.95)
         : Color.fromCssColorString("#e4e7ea").withAlpha(0.45);
     const fillMaterial =
       kind === "hatch" ? hatchMaterial(fillColor.withAlpha(0), extentKm(rings)) : Material.fromType("Color", { color: fillColor.withAlpha(0) });
-    const lineMaterial = Material.fromType("Color", { color: lineColor.withAlpha(0) });
+    // Land no state held has a dashed outline of today's borders.
+    const lineMaterial =
+      kind === "blank"
+        ? Material.fromType("PolylineDash", { color: lineColor.withAlpha(0), dashLength: 12 })
+        : Material.fromType("Color", { color: lineColor.withAlpha(0) });
     const piece = new Piece(key, fillMaterial, lineMaterial, fillColor, lineColor, highlighted);
     piece.kind = kind;
     const vertexFormat = (kind === "hatch" ? MaterialAppearance.MaterialSupport.TEXTURED : MaterialAppearance.MaterialSupport.BASIC).vertexFormat;
@@ -688,14 +704,16 @@ export class PolityLayer {
         faceForward: true,
       }),
       asynchronous: true,
-      // A group's outline lets clicks through to its members.
-      allowPicking: kind !== "group",
+      // A group's outline lets clicks through to its members, and land no
+      // state held lets them through to the note asking for a source.
+      allowPicking: kind !== "group" && kind !== "blank",
       show: false,
     });
     piece.line = new Primitive({
       geometryInstances: rings.map((ring) => border(ring, height + 300, kind === "group" ? 3 : highlighted ? 2 : 1, piece)),
       appearance: new PolylineMaterialAppearance({ material: lineMaterial, translucent: true }),
       asynchronous: true,
+      allowPicking: kind !== "blank",
       show: false,
     });
     this.scene.primitives.add(piece.fill);

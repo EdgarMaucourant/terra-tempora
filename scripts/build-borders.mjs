@@ -318,10 +318,14 @@ for (let year = TODAY; year >= firstReviewed; year--) {
     // be too large for the globe to draw.
     if (reviewedFrom.get(id) > year) add(`unreviewed|${state.get(id).owner}`, id, { kind: "unreviewed" });
     // Reviewed land no state held that year (inland Angola before the
-    // treaties): not drawn, but kept to tell visitors that its borders are
-    // missing. Land no state owns today (Antarctica) is not missing any.
+    // treaties): drawn light grey within today's borders, owned by no one,
+    // and kept to tell visitors that its borders are missing. Land no state
+    // owns today (Antarctica) is not missing any.
     else if (!s) {
-      if (state.get(id)) add("blank", id, { kind: "blank" });
+      if (state.get(id)) {
+        add("blank", id, { kind: "blank" });
+        add(`blank|${state.get(id).owner}`, id, { kind: "blank", drawn: true });
+      }
     }
     else {
       if (s.territory) {
@@ -482,14 +486,15 @@ for (const [key, list] of runs) {
     const cacheKey2 = `${bands}|${cacheKey}`;
     const o = outlineCache.get(cacheKey2) ?? outlineCache.set(cacheKey2, outline(ids, { bands })).get(cacheKey2);
     if (!o) continue;
-    if (m.kind === "blank") {
+    if (m.kind === "blank" && !m.drawn) {
       blank.push({ from: run.from, to: run.to, rings: o.rings });
       continue;
     }
-    const realm = m.kind === "unreviewed" ? null : realms[m.name];
+    const unnamed = m.kind === "unreviewed" || m.kind === "blank";
+    const realm = unnamed ? null : realms[m.name];
     shapes.push({
       id: nextId++,
-      name: m.kind === "unreviewed" ? "" : m.name,
+      name: unnamed ? "" : m.name,
       from: run.from,
       to: run.to,
       // A period has its own article (Estado Novo), the realm's otherwise.
