@@ -1,0 +1,495 @@
+{
+ "family": "United Kingdom",
+ "note": "The United Kingdom with its Crown Dependencies, overseas territories, colonies, protectorates and protected states, walked back from 2026.",
+ "reviewed": [
+  {
+   "pieces": [
+    "GBR",
+    "GGY",
+    "JEY",
+    "IMN",
+    "GIB",
+    "BMU",
+    "CYM",
+    "TCA",
+    "VGB",
+    "MSR",
+    "AIA",
+    "PCN",
+    "SHN",
+    "FLK",
+    "SGS",
+    "ESB",
+    "WSB",
+    "IOT"
+   ],
+   "from": 1975,
+   "why": "The United Kingdom with the Crown Dependencies (Guernsey, Jersey, the Isle of Man), its overseas territories and the Chagos Archipelago, whose land has not changed hands since 1975"
+  },
+  {
+   "pieces": [
+    "HKG",
+    "BRN",
+    "KNA",
+    "ATG",
+    "BLZ",
+    "ZWE",
+    "VCT",
+    "KIR",
+    "LCA",
+    "DMA",
+    "TUV",
+    "SLB",
+    "SYC"
+   ],
+   "from": 1975,
+   "why": "Hong Kong, Brunei, Southern Rhodesia and the colonies in the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1975, with today's borders, until their independence or handover"
+  }
+ ],
+ "changes": [
+  {
+   "date": "1997-07-01",
+   "what": "Britain hands Hong Kong over to China",
+   "source": {
+    "title": "Hong Kong (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Hong_Kong"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Map of Hong Kong.svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "HKG"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British Hong Kong (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Hong_Kong"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Hong Kong on the globe (Hong Kong centered with inset).svg",
+     "territory": "British Hong Kong"
+    }
+   ]
+  },
+  {
+   "date": "1985-10-03",
+   "what": "South Georgia and the South Sandwich Islands become a territory of their own, apart from the Falkland Islands",
+   "source": {
+    "title": "South Georgia and the South Sandwich Islands (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/South_Georgia_and_the_South_Sandwich_Islands"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Map of South Georgia and the South Sandwich Islands.svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SGS"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Falkland Islands Dependencies (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Falkland_Islands_Dependencies"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:LocationSouthGeorgiaAndSouthSandwichIslands.png",
+     "territory": "Falkland Islands Dependencies"
+    }
+   ]
+  },
+  {
+   "date": "1984-01-01",
+   "what": "Brunei, a British protectorate since 1888, becomes fully independent",
+   "source": {
+    "title": "Brunei (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Brunei"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Brunei map-en.svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "BRN"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Brunei (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Brunei"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Brunei (orthographic projection).svg",
+     "territory": "Brunei"
+    }
+   ]
+  },
+  {
+   "date": "1983-09-19",
+   "what": "Saint Kitts and Nevis becomes independent",
+   "source": {
+    "title": "Saint Kitts and Nevis (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Saint Kitts and Nevis location map.svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "KNA"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Saint Christopher-Nevis-Anguilla (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Saint_Christopher-Nevis-Anguilla"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:LocationSt.Kitts Nevis Anguilla.PNG",
+     "territory": "Saint Christopher-Nevis-Anguilla"
+    }
+   ]
+  },
+  {
+   "date": "1981-11-01",
+   "what": "Antigua and Barbuda becomes independent",
+   "source": {
+    "title": "Antigua and Barbuda (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Antigua_and_Barbuda"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Antigua and Barbuda-CIA WFB Map.png",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ATG"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "West Indies Associated States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/West_Indies_Associated_States"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:ATG orthographic.svg",
+     "territory": "Antigua and Barbuda"
+    }
+   ]
+  },
+  {
+   "date": "1981-09-21",
+   "what": "Belize, formerly British Honduras, becomes independent",
+   "source": {
+    "title": "Belize (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Belize"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Belize - Location Map (2013) - BLZ - UNOCHA.svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "BLZ"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British Honduras (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Honduras"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:LocationBelizeandGuatemala.png",
+     "territory": "British Honduras"
+    }
+   ]
+  },
+  {
+   "date": "1980-12-19",
+   "what": "Anguilla is formally separated from Saint Christopher-Nevis-Anguilla and becomes a dependency of its own",
+   "source": {
+    "title": "Anguilla (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Anguilla"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Anguilla map.svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "AIA"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Saint Christopher-Nevis-Anguilla (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Saint_Christopher-Nevis-Anguilla"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:LocationSt.Kitts Nevis Anguilla.PNG",
+     "territory": "Saint Christopher-Nevis-Anguilla"
+    }
+   ]
+  },
+  {
+   "date": "1980-04-18",
+   "what": "Southern Rhodesia becomes independent as Zimbabwe",
+   "source": {
+    "title": "Zimbabwe (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Zimbabwe"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Zimbabwe (orthographic projection).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ZWE"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Southern Rhodesia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Southern_Rhodesia"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Rhodesia adm location map with names.svg",
+     "territory": "Southern Rhodesia"
+    }
+   ]
+  },
+  {
+   "date": "1979-12-12",
+   "what": "Under the Lancaster House talks, Zimbabwe Rhodesia returns to British rule, ending the unrecognised Rhodesian state",
+   "source": {
+    "title": "Lancaster House Agreement (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Lancaster_House_Agreement"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ZWE"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Rhodesia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Rhodesia"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Rhodesia adm location map with names.svg",
+     "territory": "Southern Rhodesia",
+     "hatch": {
+      "by": "Rhodesia",
+      "since": "1965-11-11",
+      "note": "Run by the white minority government of Ian Smith, which declared independence unilaterally as Rhodesia in 1965 (Zimbabwe Rhodesia in 1979); no state recognised it, and Britain kept sovereignty",
+      "source": {
+       "title": "Rhodesia (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Rhodesia"
+      },
+      "map": "https://commons.wikimedia.org/wiki/File:Rhodesia adm location map with names.svg"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1979-10-27",
+   "what": "Saint Vincent and the Grenadines becomes independent",
+   "source": {
+    "title": "Saint Vincent and the Grenadines (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:VCT orthographic.svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "VCT"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "West Indies Associated States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/West_Indies_Associated_States"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:VCT orthographic.svg",
+     "territory": "Saint Vincent and the Grenadines"
+    }
+   ]
+  },
+  {
+   "date": "1979-07-12",
+   "what": "The Gilbert Islands become independent as Kiribati, with Canton and Enderbury, until then an Anglo-American condominium",
+   "source": {
+    "title": "Kiribati (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kiribati"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Kiribati on the globe (Polynesia centered).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "KIR+00?",
+      "KIR+99?"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Gilbert Islands (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gilbert_Islands"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:LocationGilbert.png",
+     "territory": "Gilbert Islands"
+    },
+    {
+     "pieces": [
+      "canton-island",
+      "enderbury-island"
+     ],
+     "owner": "Canton and Enderbury Islands",
+     "source": {
+      "title": "Canton and Enderbury Islands (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Canton_and_Enderbury_Islands"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:LocationCantonIsl.png"
+    }
+   ]
+  },
+  {
+   "date": "1979-02-22",
+   "what": "Saint Lucia becomes independent",
+   "source": {
+    "title": "Saint Lucia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Saint_Lucia"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Saint Lucia on the globe (Americas centered).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "LCA"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "West Indies Associated States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/West_Indies_Associated_States"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Saint Lucia map.gif",
+     "territory": "Saint Lucia"
+    }
+   ]
+  },
+  {
+   "date": "1978-11-03",
+   "what": "Dominica becomes independent",
+   "source": {
+    "title": "Dominica (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Dominica"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Caribbean location map highlighting Dominica.svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "DMA"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "West Indies Associated States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/West_Indies_Associated_States"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Map of Dominica.gif",
+     "territory": "Dominica"
+    }
+   ]
+  },
+  {
+   "date": "1978-10-01",
+   "what": "Tuvalu, formerly the Ellice Islands, becomes independent",
+   "source": {
+    "title": "Tuvalu (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tuvalu"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Tuvalu on the globe (Polynesia centered).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TUV"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Gilbert and Ellice Islands (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gilbert_and_Ellice_Islands"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:LocationGilbertandEllice.png",
+     "territory": "Tuvalu"
+    }
+   ]
+  },
+  {
+   "date": "1978-07-07",
+   "what": "The British Solomon Islands Protectorate becomes independent as the Solomon Islands",
+   "source": {
+    "title": "Solomon Islands (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Solomon_Islands"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Solomon Islands on the globe (Oceania centered).svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SLB"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British Solomon Islands (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Solomon_Islands"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Solomon Islands on the globe (small islands magnified) (Polynesia centered).svg",
+     "territory": "British Solomon Islands"
+    }
+   ]
+  },
+  {
+   "date": "1976-06-29",
+   "what": "Seychelles becomes independent, and the Aldabra group is handed back to it from the British Indian Ocean Territory",
+   "source": {
+    "title": "Seychelles (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Seychelles"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Location Seychelles AU Africa.svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SYC"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Seychelles (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Seychelles"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Se-map.gif",
+     "territory": "Seychelles"
+    },
+    {
+     "pieces": [
+      "aldabra-group"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British Indian Ocean Territory (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Indian_Ocean_Territory"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Chagos map 2.svg",
+     "territory": "British Indian Ocean Territory"
+    }
+   ]
+  },
+  {
+   "date": "1975-10-01",
+   "what": "The Ellice Islands leave the Gilbert and Ellice Islands colony and become the separate colony of Tuvalu",
+   "source": {
+    "title": "Tuvalu (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tuvalu"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:LocationGilbertandEllice.png",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TUV",
+      "KIR+00?",
+      "KIR+99?"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Gilbert and Ellice Islands (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gilbert_and_Ellice_Islands"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:LocationGilbertandEllice.png",
+     "territory": "Gilbert and Ellice Islands"
+    }
+   ]
+  }
+ ]
+}
