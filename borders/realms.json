@@ -3131,5 +3131,19 @@
   "wikidata": "Q5431953",
   "fr": "Dépendances des îles Malouines",
   "es": "Dependencias de las Islas Malvinas"
+ },
+ "Donetsk People's Republic": {
+  "wikipedia": "Donetsk People's Republic",
+  "wikidata": "Q16150196",
+  "fr": "République populaire de Donetsk",
+  "es": "República Popular de Donetsk",
+  "hatchOnly": true
+ },
+ "Luhansk People's Republic": {
+  "wikipedia": "Luhansk People's Republic",
+  "wikidata": "Q16746854",
+  "fr": "République populaire de Lougansk",
+  "es": "República Popular de Lugansk",
+  "hatchOnly": true
  }
 }
