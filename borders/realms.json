@@ -3213,7 +3213,7 @@
     "wikipedia": "Aden Protectorate",
     "fr": "Protectorat d'Aden",
     "es": "Protectorado de Adén",
-    "note": "The Eastern Aden Protectorate until 1963"
+    "note": "The Western and Eastern Aden Protectorates until 1963"
    },
    {
     "from": "1963-01-18",
@@ -3233,7 +3233,30 @@
   "wikipedia": "North Yemen",
   "wikidata": "Q1998401",
   "fr": "Yémen du Nord",
-  "es": "Yemen del Norte"
+  "es": "Yemen del Norte",
+  "periods": [
+   {
+    "from": "1918-10-30",
+    "name": "Mutawakkilite Kingdom of Yemen",
+    "wikipedia": "Mutawakkilite Kingdom of Yemen",
+    "fr": "Royaume mutawakkilite du Yémen",
+    "es": "Reino Mutawakkilita de Yemen",
+    "label": "Yemen",
+    "labelFr": "Yémen",
+    "labelEs": "Yemen",
+    "note": "Kingdom until the revolution of September 1962"
+   },
+   {
+    "from": "1962-09-26",
+    "name": "Yemen Arab Republic",
+    "wikipedia": "North Yemen",
+    "fr": "République arabe du Yémen",
+    "es": "República Árabe de Yemen",
+    "label": "North Yemen",
+    "labelFr": "Yémen du Nord",
+    "labelEs": "Yemen del Norte"
+   }
+  ]
  },
  "Perim": {
   "wikipedia": "Perim",
@@ -3432,5 +3455,72 @@
   "wikidata": "Q49910",
   "fr": "Colonie d'Aden",
   "es": "Colonia de Adén"
+ },
+ "Gold Coast": {
+  "wikipedia": "Gold Coast (British colony)",
+  "wikidata": "Q503623",
+  "fr": "Côte-de-l'Or",
+  "es": "Costa de Oro"
+ },
+ "British Togoland": {
+  "wikipedia": "British Togoland",
+  "wikidata": "Q797527",
+  "fr": "Togoland britannique",
+  "es": "Togolandia británica",
+  "withOwner": false
+ },
+ "Anglo-Egyptian Sudan": {
+  "wikipedia": "Anglo-Egyptian Sudan",
+  "wikidata": "Q541455",
+  "fr": "Soudan anglo-égyptien",
+  "es": "Sudán anglo-egipcio",
+  "notACountry": true,
+  "periods": [
+   {
+    "from": "1899-01-19",
+    "name": "Anglo-Egyptian Sudan",
+    "detail": "United Kingdom and Egypt",
+    "detailFr": "Royaume-Uni et Égypte",
+    "detailEs": "Reino Unido y Egipto",
+    "note": "Anglo-Egyptian condominium",
+    "jointly": true
+   }
+  ]
+ },
+ "Tripolitania": {
+  "wikipedia": "British Military Administration (Libya)",
+  "wikidata": "Q16953965",
+  "fr": "Tripolitaine",
+  "es": "Tripolitania"
+ },
+ "Cyrenaica": {
+  "wikipedia": "Emirate of Cyrenaica",
+  "wikidata": "Q370372",
+  "fr": "Cyrénaïque",
+  "es": "Cirenaica"
+ },
+ "Fezzan": {
+  "wikipedia": "Fezzan",
+  "wikidata": "Q188258",
+  "fr": "Fezzan",
+  "es": "Fezán"
+ },
+ "Trust Territory of Somaliland": {
+  "wikipedia": "Trust Territory of Somaliland",
+  "wikidata": "Q616221",
+  "fr": "Territoire sous tutelle de la Somalie",
+  "es": "Territorio en fideicomiso de Somalia"
+ },
+ "British Leeward Islands": {
+  "wikipedia": "British Leeward Islands",
+  "wikidata": "Q1796551",
+  "fr": "Îles Sous-le-Vent britanniques",
+  "es": "Islas de Sotavento Británicas"
+ },
+ "British Windward Islands": {
+  "wikipedia": "British Windward Islands",
+  "wikidata": "Q2660774",
+  "fr": "Îles du Vent britanniques",
+  "es": "Islas de Barlovento Británicas"
  }
 }

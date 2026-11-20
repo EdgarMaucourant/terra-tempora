@@ -7390,6 +7390,393 @@
    ],
    "realm": "Protectorate of South Arabia",
    "why": "Eastern Aden Protectorate"
+  },
+  {
+   "place": "Accra (colony)",
+   "lonLat": [
+    -0.2,
+    5.6
+   ],
+   "years": [
+    1950,
+    1956
+   ],
+   "realm": "Gold Coast",
+   "why": "British colony until 6 March 1957"
+  },
+  {
+   "place": "Accra",
+   "lonLat": [
+    -0.2,
+    5.6
+   ],
+   "years": [
+    1957,
+    2026
+   ],
+   "realm": "Ghana",
+   "why": "Independent since 6 March 1957"
+  },
+  {
+   "place": "Ho (trust)",
+   "lonLat": [
+    0.47,
+    6.6
+   ],
+   "years": [
+    1950,
+    1955
+   ],
+   "realm": "British Togoland",
+   "why": "British-run trust territory until December 1956",
+   "heldBy": [
+    {
+     "years": [
+      1950,
+      1955
+     ],
+     "by": "United Nations"
+    }
+   ]
+  },
+  {
+   "place": "Ho",
+   "lonLat": [
+    0.47,
+    6.6
+   ],
+   "years": [
+    1957,
+    2026
+   ],
+   "realm": "Ghana",
+   "why": "Part of Ghana since 1957"
+  },
+  {
+   "place": "Yendi (trust)",
+   "lonLat": [
+    0.0,
+    9.44
+   ],
+   "years": [
+    1950,
+    1955
+   ],
+   "realm": "British Togoland",
+   "why": "British-run trust territory until December 1956",
+   "heldBy": [
+    {
+     "years": [
+      1950,
+      1955
+     ],
+     "by": "United Nations"
+    }
+   ]
+  },
+  {
+   "place": "Tamale",
+   "lonLat": [
+    -0.84,
+    9.4
+   ],
+   "years": [
+    1950,
+    1956
+   ],
+   "realm": "Gold Coast",
+   "why": "Northern Territories of the Gold Coast, west of British Togoland"
+  },
+  {
+   "place": "Kuala Lumpur (colony)",
+   "lonLat": [
+    101.69,
+    3.14
+   ],
+   "years": [
+    1950,
+    1956
+   ],
+   "realm": "Malaya",
+   "why": "British Federation of Malaya until 31 August 1957"
+  },
+  {
+   "place": "Khartoum (condominium)",
+   "lonLat": [
+    32.53,
+    15.59
+   ],
+   "years": [
+    1950,
+    1955
+   ],
+   "realm": "Anglo-Egyptian Sudan",
+   "why": "Anglo-Egyptian condominium until 1 January 1956",
+   "heldBy": [
+    {
+     "years": [
+      1950,
+      1955
+     ],
+     "by": "United Kingdom"
+    }
+   ]
+  },
+  {
+   "place": "Khartoum",
+   "lonLat": [
+    32.53,
+    15.59
+   ],
+   "years": [
+    1956,
+    2026
+   ],
+   "realm": "Sudan",
+   "why": "Independent since 1 January 1956"
+  },
+  {
+   "place": "Juba (Sudan)",
+   "lonLat": [
+    31.58,
+    4.85
+   ],
+   "years": [
+    1956,
+    2010
+   ],
+   "realm": "Sudan",
+   "why": "Part of Sudan until 9 July 2011"
+  },
+  {
+   "place": "Juba",
+   "lonLat": [
+    31.58,
+    4.85
+   ],
+   "years": [
+    2011,
+    2026
+   ],
+   "realm": "South Sudan",
+   "why": "Independent since 9 July 2011"
+  },
+  {
+   "place": "Tripoli (British)",
+   "lonLat": [
+    13.19,
+    32.89
+   ],
+   "years": [
+    1950,
+    1950
+   ],
+   "realm": "Tripolitania",
+   "why": "British military administration until 24 December 1951"
+  },
+  {
+   "place": "Benghazi (British)",
+   "lonLat": [
+    20.07,
+    32.11
+   ],
+   "years": [
+    1950,
+    1950
+   ],
+   "realm": "Cyrenaica",
+   "why": "Emirate of Cyrenaica under British administration until 24 December 1951"
+  },
+  {
+   "place": "Sabha (French)",
+   "lonLat": [
+    14.43,
+    27.04
+   ],
+   "years": [
+    1950,
+    1950
+   ],
+   "realm": "Fezzan",
+   "why": "French administration until 24 December 1951"
+  },
+  {
+   "place": "Tripoli",
+   "lonLat": [
+    13.19,
+    32.89
+   ],
+   "years": [
+    1951,
+    2026
+   ],
+   "realm": "Libya",
+   "why": "Independent since 24 December 1951"
+  },
+  {
+   "place": "Asmara (British)",
+   "lonLat": [
+    38.93,
+    15.33
+   ],
+   "years": [
+    1950,
+    1951
+   ],
+   "realm": "Eritrea",
+   "why": "British administration until 15 September 1952"
+  },
+  {
+   "place": "Asmara (federation)",
+   "lonLat": [
+    38.93,
+    15.33
+   ],
+   "years": [
+    1952,
+    1961
+   ],
+   "realm": "Eritrea",
+   "why": "Federated with Ethiopia from 1952 to 1962"
+  },
+  {
+   "place": "Asmara (Ethiopia)",
+   "lonLat": [
+    38.93,
+    15.33
+   ],
+   "years": [
+    1962,
+    1992
+   ],
+   "realm": "Ethiopia",
+   "why": "Annexed by Ethiopia in 1962"
+  },
+  {
+   "place": "Asmara",
+   "lonLat": [
+    38.93,
+    15.33
+   ],
+   "years": [
+    1993,
+    2026
+   ],
+   "realm": "Eritrea",
+   "why": "Independent since 24 May 1993"
+  },
+  {
+   "place": "Addis Ababa",
+   "lonLat": [
+    38.75,
+    9.03
+   ],
+   "years": [
+    1950,
+    2026
+   ],
+   "realm": "Ethiopia",
+   "why": "Ethiopia"
+  },
+  {
+   "place": "Mogadishu (trust)",
+   "lonLat": [
+    45.34,
+    2.04
+   ],
+   "years": [
+    1950,
+    1959
+   ],
+   "realm": "Trust Territory of Somaliland",
+   "why": "Italian-run UN trust territory until 1 July 1960",
+   "heldBy": [
+    {
+     "years": [
+      1950,
+      1959
+     ],
+     "by": "United Nations"
+    }
+   ]
+  },
+  {
+   "place": "Salisbury (colony, 1950s)",
+   "lonLat": [
+    31.05,
+    -17.83
+   ],
+   "years": [
+    1950,
+    1952
+   ],
+   "realm": "Southern Rhodesia",
+   "why": "Self-governing British colony until the federation of 1953"
+  },
+  {
+   "place": "Lusaka (colony, 1950s)",
+   "lonLat": [
+    28.28,
+    -15.42
+   ],
+   "years": [
+    1950,
+    1952
+   ],
+   "realm": "Northern Rhodesia",
+   "why": "British protectorate until the federation of 1953"
+  },
+  {
+   "place": "Kingston (colony)",
+   "lonLat": [
+    -76.79,
+    18.0
+   ],
+   "years": [
+    1950,
+    1957
+   ],
+   "realm": "Jamaica",
+   "why": "British colony until the West Indies Federation of 1958"
+  },
+  {
+   "place": "Castries (Windward Islands)",
+   "lonLat": [
+    -60.98,
+    14.0
+   ],
+   "years": [
+    1950,
+    1957
+   ],
+   "realm": "British Windward Islands",
+   "why": "British Windward Islands colony"
+  },
+  {
+   "place": "St John's (Leeward Islands)",
+   "lonLat": [
+    -61.8,
+    17.08
+   ],
+   "years": [
+    1950,
+    1957
+   ],
+   "realm": "British Leeward Islands",
+   "why": "British Leeward Islands colony until the West Indies Federation of 1958"
+  },
+  {
+   "place": "Sanaa",
+   "lonLat": [
+    44.2,
+    15.35
+   ],
+   "years": [
+    1950,
+    1961
+   ],
+   "realm": "North Yemen",
+   "why": "Kingdom of Yemen until 1962"
   }
  ]
 }

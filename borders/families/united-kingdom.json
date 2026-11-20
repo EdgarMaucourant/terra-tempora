@@ -23,7 +23,7 @@
     "WSB",
     "IOT"
    ],
-   "from": 1960,
+   "from": 1950,
    "why": "The United Kingdom with the Crown Dependencies (Guernsey, Jersey, the Isle of Man), its overseas territories and the Chagos Archipelago, whose land has not changed hands since 1965"
   },
   {
@@ -42,7 +42,7 @@
     "SLB",
     "SYC"
    ],
-   "from": 1960,
+   "from": 1950,
    "why": "Hong Kong, Brunei, Southern Rhodesia and the colonies in the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence or handover"
   },
   {
@@ -64,7 +64,7 @@
     "BHS",
     "GRD"
    ],
-   "from": 1960,
+   "from": 1950,
    "why": "The Gulf protected states, South Arabia with all of Yemen (North Yemen until 1990), and the colonies and protectorates in Africa, the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence"
   },
   {
@@ -89,11 +89,47 @@
     "JAM",
     "TTO"
    ],
-   "from": 1960,
+   "from": 1950,
    "why": "The colonies, protectorates and trust territories Britain held in 1960 in Africa, Asia, the Mediterranean and the Caribbean, with today's borders, until their independence, with Malaya and Somalia around them"
+  },
+  {
+   "pieces": [
+    "GHA",
+    "btog-volta",
+    "btog-northern",
+    "btog-upper-east",
+    "SDN",
+    "SDS",
+    "LBY",
+    "ERI",
+    "ETH"
+   ],
+   "from": 1950,
+   "why": "The Gold Coast and British Togoland (Ghana), Anglo-Egyptian Sudan, Libya and Eritrea, which Britain ruled or ran in the 1950s, with today's borders, and Ethiopia around Eritrea. The Haud, run by Britain inside Ethiopia until 1955, is not drawn"
   }
  ],
  "changes": [
+  {
+   "date": "2011-07-09",
+   "what": "South Sudan becomes independent from Sudan",
+   "source": {
+    "title": "South Sudan (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/South_Sudan"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SDS"
+     ],
+     "owner": "Sudan",
+     "source": {
+      "title": "Sudan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sudan"
+     }
+    }
+   ]
+  },
   {
    "date": "1997-07-01",
    "what": "Britain hands Hong Kong over to China",
@@ -115,6 +151,27 @@
      },
      "map": "https://commons.wikimedia.org/wiki/File:Hong Kong on the globe (Hong Kong centered with inset).svg",
      "territory": "British Hong Kong"
+    }
+   ]
+  },
+  {
+   "date": "1993-05-24",
+   "what": "Eritrea becomes independent from Ethiopia after the April 1993 referendum",
+   "source": {
+    "title": "Eritrea (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Eritrea"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ERI"
+     ],
+     "owner": "Ethiopia",
+     "source": {
+      "title": "Ethiopia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ethiopia"
+     }
     }
    ]
   },
@@ -1484,6 +1541,28 @@
    ]
   },
   {
+   "date": "1962-11-14",
+   "what": "Ethiopia ends the federation and annexes Eritrea",
+   "source": {
+    "title": "Federation of Ethiopia and Eritrea (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Federation_of_Ethiopia_and_Eritrea"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ERI"
+     ],
+     "owner": "Ethiopia",
+     "source": {
+      "title": "Federation of Ethiopia and Eritrea (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Federation_of_Ethiopia_and_Eritrea"
+     },
+     "territory": "Eritrea"
+    }
+   ]
+  },
+  {
    "date": "1962-10-09",
    "what": "Uganda becomes independent",
    "source": {
@@ -1781,6 +1860,38 @@
    ]
   },
   {
+   "date": "1960-07-01",
+   "what": "The Trust Territory of Somaliland, run by Italy, becomes independent and unites with Somaliland as Somalia",
+   "source": {
+    "title": "Trust Territory of Somaliland (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Trust_Territory_of_Somaliland"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SOM"
+     ],
+     "owner": "Italy",
+     "source": {
+      "title": "Trust Territory of Somaliland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Trust_Territory_of_Somaliland"
+     },
+     "territory": "Trust Territory of Somaliland",
+     "hatch": {
+      "by": "United Nations",
+      "since": "1946-12-13",
+      "trust": true,
+      "note": "Administered by Italy from 1 April 1950, after British military rule",
+      "source": {
+       "title": "United Nations trust territories (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/United_Nations_trust_territories"
+      }
+     }
+    }
+   ]
+  },
+  {
    "date": "1960-06-26",
    "what": "British Somaliland becomes independent as the State of Somaliland and joins Somalia five days later",
    "source": {
@@ -1799,6 +1910,398 @@
       "url": "https://en.wikipedia.org/wiki/British_Somaliland"
      },
      "territory": "British Somaliland"
+    }
+   ]
+  },
+  {
+   "date": "1959-02-11",
+   "what": "Six states of the Western Aden Protectorate form the Federation of Arab Emirates of the South",
+   "source": {
+    "title": "Federation of South Arabia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Federation_of_South_Arabia"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "YEM-157",
+      "YEM-3511",
+      "YEM-336",
+      "dali-south"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Aden Protectorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Aden_Protectorate"
+     },
+     "territory": "Protectorate of South Arabia"
+    }
+   ]
+  },
+  {
+   "date": "1958-01-03",
+   "what": "Ten British Caribbean colonies form the West Indies Federation",
+   "source": {
+    "title": "West Indies Federation (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/West_Indies_Federation"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "JAM"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Colony of Jamaica (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Colony_of_Jamaica"
+     },
+     "territory": "Jamaica"
+    },
+    {
+     "pieces": [
+      "CYM"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Cayman Islands (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cayman_Islands"
+     },
+     "territory": "Cayman Islands"
+    },
+    {
+     "pieces": [
+      "TCA"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Turks and Caicos Islands (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Turks_and_Caicos_Islands"
+     },
+     "territory": "Turks and Caicos Islands"
+    },
+    {
+     "pieces": [
+      "TTO"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Trinidad and Tobago (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Trinidad_and_Tobago"
+     },
+     "territory": "Trinidad and Tobago"
+    },
+    {
+     "pieces": [
+      "BRB"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Barbados (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Barbados"
+     },
+     "territory": "Barbados"
+    },
+    {
+     "pieces": [
+      "ATG",
+      "KNA",
+      "AIA",
+      "MSR"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British Leeward Islands (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Leeward_Islands"
+     },
+     "territory": "British Leeward Islands"
+    },
+    {
+     "pieces": [
+      "DMA",
+      "LCA",
+      "VCT",
+      "GRD"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British Windward Islands (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Windward_Islands"
+     },
+     "territory": "British Windward Islands"
+    }
+   ]
+  },
+  {
+   "date": "1957-08-31",
+   "what": "Malaya becomes independent",
+   "source": {
+    "title": "Federation of Malaya (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Federation_of_Malaya"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MYS-1141",
+      "MYS-1140",
+      "MYS-1144",
+      "MYS-1137",
+      "MYS-1139",
+      "MYS-1148",
+      "MYS-1146",
+      "MYS-1145",
+      "MYS-1143",
+      "MYS-1147",
+      "MYS-1149",
+      "MYS-4831",
+      "MYS-4832"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Federation of Malaya (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Federation_of_Malaya"
+     },
+     "territory": "Malaya"
+    }
+   ]
+  },
+  {
+   "date": "1957-03-06",
+   "what": "The Gold Coast becomes independent as Ghana, with British Togoland",
+   "source": {
+    "title": "Ghana (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Ghana"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "GHA"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Gold Coast (British colony) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gold_Coast_(British_colony)"
+     },
+     "territory": "Gold Coast"
+    }
+   ]
+  },
+  {
+   "date": "1956-12-13",
+   "what": "British Togoland joins the Gold Coast after the May 1956 plebiscite",
+   "source": {
+    "title": "British Togoland (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/British_Togoland"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "btog-volta",
+      "btog-northern",
+      "btog-upper-east"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British Togoland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Togoland"
+     },
+     "territory": "British Togoland",
+     "hatch": {
+      "by": "United Nations",
+      "since": "1946-12-13",
+      "trust": true,
+      "note": "Administered by the United Kingdom with the Gold Coast, under a League of Nations mandate from 1922",
+      "source": {
+       "title": "United Nations trust territories (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/United_Nations_trust_territories"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1956-07-01",
+   "what": "The British Virgin Islands leave the Leeward Islands colony and become a separate colony",
+   "source": {
+    "title": "British Leeward Islands (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/British_Leeward_Islands"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "VGB"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British Leeward Islands (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Leeward_Islands"
+     },
+     "territory": "British Leeward Islands"
+    }
+   ]
+  },
+  {
+   "date": "1956-01-01",
+   "what": "Sudan becomes independent, ending the Anglo-Egyptian condominium",
+   "source": {
+    "title": "Sudan (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Sudan"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SDN",
+      "SDS"
+     ],
+     "owner": "Anglo-Egyptian Sudan",
+     "source": {
+      "title": "Anglo-Egyptian Sudan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Anglo-Egyptian_Sudan"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "with": "Egypt",
+      "since": "1899-01-19",
+      "note": "An Anglo-Egyptian condominium from 1899, run in practice by Britain",
+      "source": {
+       "title": "Anglo-Egyptian Sudan (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Anglo-Egyptian_Sudan"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1953-08-01",
+   "what": "Southern Rhodesia, Northern Rhodesia and Nyasaland form the Federation of Rhodesia and Nyasaland",
+   "source": {
+    "title": "Federation of Rhodesia and Nyasaland (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Federation_of_Rhodesia_and_Nyasaland"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ZWE"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Southern Rhodesia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Southern_Rhodesia"
+     },
+     "territory": "Southern Rhodesia"
+    },
+    {
+     "pieces": [
+      "ZMB"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Northern Rhodesia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Northern_Rhodesia"
+     },
+     "territory": "Northern Rhodesia"
+    },
+    {
+     "pieces": [
+      "MWI"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Nyasaland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Nyasaland"
+     },
+     "territory": "Nyasaland"
+    }
+   ]
+  },
+  {
+   "date": "1952-09-15",
+   "what": "Britain hands Eritrea to Ethiopia, as an autonomous unit federated with it",
+   "source": {
+    "title": "Federation of Ethiopia and Eritrea (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Federation_of_Ethiopia_and_Eritrea"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ERI"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British Military Administration (Eritrea) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Military_Administration_(Eritrea)"
+     },
+     "territory": "Eritrea"
+    }
+   ]
+  },
+  {
+   "date": "1951-12-24",
+   "what": "Libya becomes independent as a kingdom uniting Tripolitania and Cyrenaica, run by Britain, and the Fezzan, run by France",
+   "source": {
+    "title": "Kingdom of Libya (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Libya"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "LBY-2974",
+      "LBY-2985",
+      "LBY-2970",
+      "LBY-2966",
+      "LBY-2978",
+      "LBY-2975",
+      "LBY-2973",
+      "LBY-2976",
+      "LBY-2964"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British Military Administration (Libya) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Military_Administration_(Libya)"
+     },
+     "territory": "Tripolitania"
+    },
+    {
+     "pieces": [
+      "LBY-2987",
+      "LBY-2983",
+      "LBY-2986",
+      "LBY-2982",
+      "LBY-2981",
+      "LBY-2984",
+      "LBY-2965"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Emirate of Cyrenaica (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Emirate_of_Cyrenaica"
+     },
+     "territory": "Cyrenaica"
+    },
+    {
+     "pieces": [
+      "LBY-2882",
+      "LBY-2967",
+      "LBY-5488",
+      "LBY-2971",
+      "LBY-2969",
+      "LBY-2968"
+     ],
+     "owner": "France",
+     "source": {
+      "title": "Fezzan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Fezzan"
+     },
+     "territory": "Fezzan"
     }
    ]
   }
