@@ -50,3 +50,7 @@ export function highlightColors(chosen: Realm, related: Realm[]): Map<string, st
  * clay rather than the accent: across that much land a strong colour shouts.
  */
 export const TODAY_COLOURS = ["#b59782", "#3fa7a4", "#e6bc3f", "#6d9fd8", "#b07cc6", "#8bb158", "#d0668f", "#c98a5a"];
+
+/** The warning over an active war zone whose lines are rough, and the least area that gets one (km²). */
+export const ROUGH_COLOR = "#ffc857";
+export const ROUGH_LABEL_AREA = 30_000;
