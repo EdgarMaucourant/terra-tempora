@@ -201,6 +201,8 @@ interface Drawn {
   pieces: Piece[];
   highlighted: boolean;
   label?: Label;
+  /** An active war zone's warning sign (see Polity.rough). */
+  sign?: Label;
   /** Whether the label is due on the globe; it still gives way to a name it would cover. */
   wanted?: boolean;
 }
@@ -218,6 +220,8 @@ export class PolityLayer {
   private ringIds = new WeakMap<number[], number>();
   private nextRing = 0;
   private labels: LabelCollection;
+  /** Warning signs, kept above every other primitive (see attach). */
+  private signs: LabelCollection;
   /** Colours of the highlighted realms, by Cliopatria name. Others are grey. */
   private highlight = new Map<string, string>();
   /** The colours asked for, before closed groups take one colour. */
@@ -244,6 +248,7 @@ export class PolityLayer {
 
   constructor(private scene: Scene) {
     this.labels = scene.primitives.add(new LabelCollection({ scene }));
+    this.signs = scene.primitives.add(new LabelCollection({ scene }));
     scene.preRender.addEventListener(() => this.declutter());
   }
 
@@ -306,6 +311,20 @@ export class PolityLayer {
       if (p.rings.some((ring) => inRing(ring, lon, lat))) best = p;
     }
     return best;
+  }
+
+  /** The war zone whose warning sign is at this point on the screen, if any. */
+  signAt(x: number, y: number): Polity | undefined {
+    const at = new Cartesian2();
+    const camera = this.scene.camera.positionWC;
+    for (const [p, d] of this.drawn) {
+      if (!d.sign?.show) continue;
+      const position = d.sign.position;
+      if (Cartesian3.dot(position, camera) <= Cartesian3.magnitudeSquared(position) * 0.98) continue;
+      const point = SceneTransforms.worldToWindowCoordinates(this.scene, position, at);
+      if (point && Math.hypot(point.x - x, point.y - y) <= 16) return p;
+    }
+    return undefined;
   }
 
   /** The land under a hatching at `year`: at its label, or found by name. */
@@ -566,6 +585,7 @@ export class PolityLayer {
       for (const piece of d.pieces) piece.addOpacity(p, opacity, hovered);
       // Labels switch at the midpoint of a fade. Changing a label's colour
       // redraws its glyphs, which is too costly to do every frame.
+      if (d.sign) d.sign.show = opacity > 0.5;
       if (d.label) {
         const wanted =
           opacity > 0.5 &&
@@ -676,9 +696,12 @@ export class PolityLayer {
         show: false,
       });
     }
-    // An active war zone carries a warning that its lines are rough.
+    // An active war zone carries a warning sign that its lines are rough,
+    // drawn last so that no hatching or outline covers it.
+    let sign: Label | undefined;
     if (p.kind === "hatch" && p.rough && p.label && p.area >= ROUGH_LABEL_AREA) {
-      label = this.labels.add({
+      this.scene.primitives.raiseToTop(this.signs);
+      sign = this.signs.add({
         id: p,
         position: Cartesian3.fromDegrees(p.label[0], p.label[1], FEATURED_HEIGHT + 4000),
         text: "⚠",
@@ -712,7 +735,7 @@ export class PolityLayer {
         show: false,
       });
     }
-    this.drawn.set(p, { pieces, highlighted, label });
+    this.drawn.set(p, { pieces, highlighted, label, sign });
     return missing;
   }
 
@@ -728,6 +751,7 @@ export class PolityLayer {
       this.pieces.delete(piece.key);
     }
     if (d.label) this.labels.remove(d.label);
+    if (d.sign) this.signs.remove(d.sign);
     this.drawn.delete(p);
     if (this.retiring.get(p.id) === p) this.retiring.delete(p.id);
   }

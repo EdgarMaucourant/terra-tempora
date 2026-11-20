@@ -103,6 +103,7 @@ export class MapView {
   private badgeImages = new Map<EventKind, HTMLImageElement>();
   /** Badges drawn last frame, for hit-testing. */
   private drawnBadges: { e: HistoryEvent; x: number; y: number }[] = [];
+  private drawnSigns: { p: Polity; x: number; y: number }[] = [];
   showContext = true;
   /** Whether every highlighted realm is named (see PolityLayer.labelAll). */
   labelAll = true;
@@ -210,6 +211,11 @@ export class MapView {
   }
 
   /** ownerFirst: territories take their owner's colour (the home globe). */
+  /** The war zone whose warning sign is at this point of the canvas, if any. */
+  signAt(x: number, y: number): Polity | undefined {
+    return this.drawnSigns.find((s) => Math.hypot(s.x - x, s.y - y) <= 14)?.p;
+  }
+
   setHighlight(colors: Map<string, string>, ownerFirst = false) {
     this.ownerFirst = ownerFirst;
     this.chosen = new Map(colors);
@@ -622,6 +628,7 @@ export class MapView {
     ctx.lineJoin = "round";
     // An active war zone's warning sign: its text shows on hover.
     ctx.font = "700 18px 'Instrument Sans Variable', sans-serif";
+    this.drawnSigns = [];
     for (const { p, opacity } of hatched) {
       if (opacity <= 0.5 || !p.rough || !p.label || p.area < ROUGH_LABEL_AREA) continue;
       const at = this.projection(p.label);
@@ -632,6 +639,7 @@ export class MapView {
       ctx.fillStyle = ROUGH_COLOR;
       ctx.fillText("⚠", at[0], at[1]);
       placed.push([at[0] - 11, at[1] - 11, at[0] + 11, at[1] + 11]);
+      this.drawnSigns.push({ p, x: at[0], y: at[1] });
     }
     for (const { p } of candidates) {
       if (named.has(p.name)) continue;
