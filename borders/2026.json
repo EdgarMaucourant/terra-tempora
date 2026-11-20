@@ -1047,6 +1047,186 @@
      "url": "https://en.wikipedia.org/wiki/Western_Sahara"
     }
    }
+  },
+  "ukr-held-2014-luhansk": {
+   "owner": "Ukraine",
+   "hatch": {
+    "by": "Russia",
+    "since": "2022-09-30",
+    "note": "Held since 2014 by the Russian-backed Donetsk and Luhansk People's Republics, which Russia claimed to annex in September 2022; not recognised (UN General Assembly resolution ES-11/4)",
+    "source": {
+     "title": "Russian annexation of Donetsk, Kherson, Luhansk and Zaporizhzhia oblasts (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Russian_annexation_of_Donetsk,_Kherson,_Luhansk_and_Zaporizhzhia_oblasts"
+    }
+   }
+  },
+  "ukr-held-2014-donetsk": {
+   "owner": "Ukraine",
+   "hatch": {
+    "by": "Russia",
+    "since": "2022-09-30",
+    "note": "Held since 2014 by the Russian-backed Donetsk and Luhansk People's Republics, which Russia claimed to annex in September 2022; not recognised (UN General Assembly resolution ES-11/4)",
+    "source": {
+     "title": "Russian annexation of Donetsk, Kherson, Luhansk and Zaporizhzhia oblasts (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Russian_annexation_of_Donetsk,_Kherson,_Luhansk_and_Zaporizhzhia_oblasts"
+    }
+   }
+  },
+  "ukr-held-2022-luhansk": {
+   "owner": "Ukraine",
+   "hatch": {
+    "by": "Russia",
+    "since": "2022-02-24",
+    "note": "Occupied by Russia, which claimed to annex it in September 2022; not recognised (UN General Assembly resolution ES-11/4). The front line is drawn roughly, as it stood at the end of the year",
+    "source": {
+     "title": "Russian-occupied territories of Ukraine (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Russian-occupied_territories_of_Ukraine"
+    }
+   }
+  },
+  "ukr-held-2022-donetsk": {
+   "owner": "Ukraine",
+   "hatch": {
+    "by": "Russia",
+    "since": "2022-02-24",
+    "note": "Occupied by Russia, which claimed to annex it in September 2022; not recognised (UN General Assembly resolution ES-11/4). The front line is drawn roughly, as it stood at the end of the year",
+    "source": {
+     "title": "Russian-occupied territories of Ukraine (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Russian-occupied_territories_of_Ukraine"
+    }
+   }
+  },
+  "ukr-held-2022-kherson": {
+   "owner": "Ukraine",
+   "hatch": {
+    "by": "Russia",
+    "since": "2022-02-24",
+    "note": "Occupied by Russia, which claimed to annex it in September 2022; not recognised (UN General Assembly resolution ES-11/4). The front line is drawn roughly, as it stood at the end of the year",
+    "source": {
+     "title": "Russian-occupied territories of Ukraine (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Russian-occupied_territories_of_Ukraine"
+    }
+   }
+  },
+  "ukr-held-2022-zaporizhzhya": {
+   "owner": "Ukraine",
+   "hatch": {
+    "by": "Russia",
+    "since": "2022-02-24",
+    "note": "Occupied by Russia, which claimed to annex it in September 2022; not recognised (UN General Assembly resolution ES-11/4). The front line is drawn roughly, as it stood at the end of the year",
+    "source": {
+     "title": "Russian-occupied territories of Ukraine (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Russian-occupied_territories_of_Ukraine"
+    }
+   }
+  },
+  "ukr-held-2022-mykolayiv": {
+   "owner": "Ukraine",
+   "hatch": {
+    "by": "Russia",
+    "since": "2022-02-24",
+    "note": "Occupied by Russia, which claimed to annex it in September 2022; not recognised (UN General Assembly resolution ES-11/4). The front line is drawn roughly, as it stood at the end of the year",
+    "source": {
+     "title": "Russian-occupied territories of Ukraine (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Russian-occupied_territories_of_Ukraine"
+    }
+   }
+  },
+  "ukr-held-2023-luhansk": {
+   "owner": "Ukraine",
+   "hatch": {
+    "by": "Russia",
+    "since": "2023-05-20",
+    "note": "Occupied by Russia, which claimed to annex it in September 2022; not recognised (UN General Assembly resolution ES-11/4). The front line is drawn roughly, as it stood at the end of the year",
+    "source": {
+     "title": "Russian-occupied territories of Ukraine (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Russian-occupied_territories_of_Ukraine"
+    }
+   }
+  },
+  "ukr-held-2023-donetsk": {
+   "owner": "Ukraine",
+   "hatch": {
+    "by": "Russia",
+    "since": "2023-05-20",
+    "note": "Occupied by Russia, which claimed to annex it in September 2022; not recognised (UN General Assembly resolution ES-11/4). The front line is drawn roughly, as it stood at the end of the year",
+    "source": {
+     "title": "Russian-occupied territories of Ukraine (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Russian-occupied_territories_of_Ukraine"
+    }
+   }
+  },
+  "ukr-held-2024-kharkiv": {
+   "owner": "Ukraine",
+   "hatch": {
+    "by": "Russia",
+    "since": "2024-02-17",
+    "note": "Occupied by Russia, which claimed to annex it in September 2022; not recognised (UN General Assembly resolution ES-11/4). The front line is drawn roughly, as it stood at the end of the year",
+    "source": {
+     "title": "Russian-occupied territories of Ukraine (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Russian-occupied_territories_of_Ukraine"
+    }
+   }
+  },
+  "ukr-held-2024-luhansk": {
+   "owner": "Ukraine",
+   "hatch": {
+    "by": "Russia",
+    "since": "2024-02-17",
+    "note": "Occupied by Russia, which claimed to annex it in September 2022; not recognised (UN General Assembly resolution ES-11/4). The front line is drawn roughly, as it stood at the end of the year",
+    "source": {
+     "title": "Russian-occupied territories of Ukraine (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Russian-occupied_territories_of_Ukraine"
+    }
+   }
+  },
+  "ukr-held-2024-donetsk": {
+   "owner": "Ukraine",
+   "hatch": {
+    "by": "Russia",
+    "since": "2024-02-17",
+    "note": "Occupied by Russia, which claimed to annex it in September 2022; not recognised (UN General Assembly resolution ES-11/4). The front line is drawn roughly, as it stood at the end of the year",
+    "source": {
+     "title": "Russian-occupied territories of Ukraine (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Russian-occupied_territories_of_Ukraine"
+    }
+   }
+  },
+  "ukr-held-2025-kharkiv": {
+   "owner": "Ukraine",
+   "hatch": {
+    "by": "Russia",
+    "since": "2025-12-01",
+    "note": "Occupied by Russia, which claimed to annex it in September 2022; not recognised (UN General Assembly resolution ES-11/4). The front line is drawn roughly, as it stood at the end of the year",
+    "source": {
+     "title": "Russian-occupied territories of Ukraine (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Russian-occupied_territories_of_Ukraine"
+    }
+   }
+  },
+  "ukr-held-2025-donetsk": {
+   "owner": "Ukraine",
+   "hatch": {
+    "by": "Russia",
+    "since": "2025-12-01",
+    "note": "Occupied by Russia, which claimed to annex it in September 2022; not recognised (UN General Assembly resolution ES-11/4). The front line is drawn roughly, as it stood at the end of the year",
+    "source": {
+     "title": "Russian-occupied territories of Ukraine (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Russian-occupied_territories_of_Ukraine"
+    }
+   }
+  },
+  "ukr-held-2025-zaporizhzhya": {
+   "owner": "Ukraine",
+   "hatch": {
+    "by": "Russia",
+    "since": "2025-12-01",
+    "note": "Occupied by Russia, which claimed to annex it in September 2022; not recognised (UN General Assembly resolution ES-11/4). The front line is drawn roughly, as it stood at the end of the year",
+    "source": {
+     "title": "Russian-occupied territories of Ukraine (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Russian-occupied_territories_of_Ukraine"
+    }
+   }
   }
  }
 }

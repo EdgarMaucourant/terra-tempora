@@ -865,7 +865,7 @@
    "place": "Mossuril",
    "lonLat": [
     40.5,
-    -15.0
+    -15
    ],
    "years": [
     1822,
@@ -1497,7 +1497,7 @@
   {
    "place": "Bamako",
    "lonLat": [
-    -8.0,
+    -8,
     12.64
    ],
    "years": [
@@ -1510,7 +1510,7 @@
   {
    "place": "Bamako",
    "lonLat": [
-    -8.0,
+    -8,
     12.64
    ],
    "years": [
@@ -1523,7 +1523,7 @@
   {
    "place": "Bamako",
    "lonLat": [
-    -8.0,
+    -8,
     12.64
    ],
    "years": [
@@ -2228,7 +2228,7 @@
    "place": "Rabat",
    "lonLat": [
     -6.84,
-    34.0
+    34
    ],
    "years": [
     1912,
@@ -2241,7 +2241,7 @@
    "place": "Rabat",
    "lonLat": [
     -6.84,
-    34.0
+    34
    ],
    "years": [
     1900,
@@ -2254,7 +2254,7 @@
    "place": "Rabat",
    "lonLat": [
     -6.84,
-    34.0
+    34
    ],
    "years": [
     1956,
@@ -3427,7 +3427,7 @@
   {
    "place": "Loches",
    "lonLat": [
-    1.0,
+    1,
     47.12
    ],
    "years": [
@@ -3961,7 +3961,7 @@
   {
    "place": "Noyon",
    "lonLat": [
-    3.0,
+    3,
     49.58
    ],
    "years": [
@@ -4782,7 +4782,7 @@
   {
    "place": "Obock (inland)",
    "lonLat": [
-    43.0,
+    43,
     12.1
    ],
    "years": [
@@ -4821,7 +4821,7 @@
   {
    "place": "Bamako",
    "lonLat": [
-    -8.0,
+    -8,
     12.65
    ],
    "years": [
@@ -4834,7 +4834,7 @@
   {
    "place": "Bamako",
    "lonLat": [
-    -8.0,
+    -8,
     12.65
    ],
    "years": [
@@ -4847,7 +4847,7 @@
   {
    "place": "Timbuktu",
    "lonLat": [
-    -3.0,
+    -3,
     16.77
    ],
    "years": [
@@ -5933,6 +5933,248 @@
    ],
    "realm": "United Kingdom",
    "why": "Capital of the United Kingdom"
+  },
+  {
+   "place": "Donetsk",
+   "lonLat": [
+    37.8,
+    48
+   ],
+   "years": [
+    2014,
+    2026
+   ],
+   "realm": "Ukraine",
+   "why": "Held by the Donetsk People's Republic from 2014, by Russia from 2022",
+   "heldBy": [
+    {
+     "years": [
+      2014,
+      2021
+     ],
+     "by": "Donetsk People's Republic"
+    },
+    {
+     "years": [
+      2022,
+      2026
+     ],
+     "by": "Russia"
+    }
+   ]
+  },
+  {
+   "place": "Luhansk",
+   "lonLat": [
+    39.3,
+    48.57
+   ],
+   "years": [
+    2014,
+    2026
+   ],
+   "realm": "Ukraine",
+   "why": "Held by the Luhansk People's Republic from 2014, by Russia from 2022",
+   "heldBy": [
+    {
+     "years": [
+      2014,
+      2021
+     ],
+     "by": "Luhansk People's Republic"
+    },
+    {
+     "years": [
+      2022,
+      2026
+     ],
+     "by": "Russia"
+    }
+   ]
+  },
+  {
+   "place": "Mariupol",
+   "lonLat": [
+    37.55,
+    47.1
+   ],
+   "years": [
+    2014,
+    2026
+   ],
+   "realm": "Ukraine",
+   "why": "Ukrainian until Russia took it in May 2022",
+   "heldBy": [
+    {
+     "years": [
+      2022,
+      2026
+     ],
+     "by": "Russia"
+    }
+   ]
+  },
+  {
+   "place": "Melitopol",
+   "lonLat": [
+    35.37,
+    46.84
+   ],
+   "years": [
+    2014,
+    2026
+   ],
+   "realm": "Ukraine",
+   "why": "Held by Russia since March 2022",
+   "heldBy": [
+    {
+     "years": [
+      2022,
+      2026
+     ],
+     "by": "Russia"
+    }
+   ]
+  },
+  {
+   "place": "Simferopol",
+   "lonLat": [
+    34.1,
+    44.95
+   ],
+   "years": [
+    2014,
+    2026
+   ],
+   "realm": "Ukraine",
+   "why": "Annexed by Russia in March 2014, not recognised",
+   "heldBy": [
+    {
+     "years": [
+      2014,
+      2026
+     ],
+     "by": "Russia"
+    }
+   ]
+  },
+  {
+   "place": "Bakhmut",
+   "lonLat": [
+    38,
+    48.59
+   ],
+   "years": [
+    2014,
+    2026
+   ],
+   "realm": "Ukraine",
+   "why": "Ukrainian until Russia took it in May 2023",
+   "heldBy": [
+    {
+     "years": [
+      2023,
+      2026
+     ],
+     "by": "Russia"
+    }
+   ]
+  },
+  {
+   "place": "Avdiivka",
+   "lonLat": [
+    37.75,
+    48.14
+   ],
+   "years": [
+    2014,
+    2026
+   ],
+   "realm": "Ukraine",
+   "why": "Ukrainian until Russia took it in February 2024",
+   "heldBy": [
+    {
+     "years": [
+      2024,
+      2026
+     ],
+     "by": "Russia"
+    }
+   ]
+  },
+  {
+   "place": "Pokrovsk",
+   "lonLat": [
+    37.18,
+    48.28
+   ],
+   "years": [
+    2014,
+    2026
+   ],
+   "realm": "Ukraine",
+   "why": "Ukrainian until Russia took it at the end of 2025",
+   "heldBy": [
+    {
+     "years": [
+      2025,
+      2026
+     ],
+     "by": "Russia"
+    }
+   ]
+  },
+  {
+   "place": "Kramatorsk",
+   "lonLat": [
+    37.56,
+    48.74
+   ],
+   "years": [
+    2014,
+    2026
+   ],
+   "realm": "Ukraine",
+   "why": "Held by Ukraine (briefly by separatists in spring 2014)"
+  },
+  {
+   "place": "Kherson",
+   "lonLat": [
+    32.6,
+    46.66
+   ],
+   "years": [
+    2014,
+    2026
+   ],
+   "realm": "Ukraine",
+   "why": "Ukrainian; occupied by Russia from March to November 2022 only"
+  },
+  {
+   "place": "Zaporizhzhia",
+   "lonLat": [
+    35.14,
+    47.84
+   ],
+   "years": [
+    2014,
+    2026
+   ],
+   "realm": "Ukraine",
+   "why": "Ukrainian, close to the front line"
+  },
+  {
+   "place": "Kharkiv",
+   "lonLat": [
+    36.23,
+    49.99
+   ],
+   "years": [
+    2014,
+    2026
+   ],
+   "realm": "Ukraine",
+   "why": "Ukrainian"
   }
  ]
 }
