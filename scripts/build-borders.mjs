@@ -348,6 +348,9 @@ for (let year = TODAY; year >= firstReviewed; year--) {
         add(`hatch|${s.owner}|${s.territory ?? ""}|${h.by}|${h.since}`, id, {
           kind: "hatch",
           name: s.owner,
+          // The territory under it, so the hatching is named after its land
+          // even where its label point falls in a lagoon (Chagos Archipelago).
+          ...(s.territory && { land: s.territory }),
           by: h.by,
           since: h.since,
           note: h.note,
@@ -507,6 +510,7 @@ for (const [key, list] of runs) {
       ...(m.groups && { groups: m.groups }),
       ...(m.display && { display: m.display }),
       ...(m.kind && { kind: m.kind }),
+      ...(m.land && { land: m.land }),
       ...(m.by && { by: m.by, since: m.since, note: m.note }),
       ...(m.with && { with: m.with }),
       ...(m.trust && { trust: true }),

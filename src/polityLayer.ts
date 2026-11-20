@@ -308,6 +308,18 @@ export class PolityLayer {
     return best;
   }
 
+  /** The land under a hatching at `year`: at its label, or found by name. */
+  landUnder(h: Polity, year: number): Polity | undefined {
+    const at = h.label ? this.landAt(h.label[0], h.label[1], year) : undefined;
+    const name = h.land ?? h.name;
+    if (at?.name === name) return at;
+    const y = Math.round(year);
+    for (const p of this.polities.values()) {
+      if (!isOverlay(p) && !p.kind && p.name === name && y >= p.from && y <= p.to && (!h.land || p.partOf === h.name)) return p;
+    }
+    return at;
+  }
+
   /**
    * The hatching over a point at `year`, if any: picking passes through the
    * gaps between its lines, so a pick on its owner is checked against it.
