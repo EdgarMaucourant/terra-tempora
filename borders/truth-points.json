@@ -7777,6 +7777,406 @@
    ],
    "realm": "North Yemen",
    "why": "Kingdom of Yemen until 1962"
+  },
+  {
+   "place": "Delhi (Raj)",
+   "lonLat": [
+    77.21,
+    28.61
+   ],
+   "years": [
+    1945,
+    1946
+   ],
+   "realm": "British Raj",
+   "why": "British India until 15 August 1947"
+  },
+  {
+   "place": "Delhi",
+   "lonLat": [
+    77.21,
+    28.61
+   ],
+   "years": [
+    1947,
+    2026
+   ],
+   "realm": "India",
+   "why": "Independent since 15 August 1947"
+  },
+  {
+   "place": "Lahore (Raj)",
+   "lonLat": [
+    74.35,
+    31.55
+   ],
+   "years": [
+    1945,
+    1946
+   ],
+   "realm": "British Raj",
+   "why": "British India until 15 August 1947"
+  },
+  {
+   "place": "Lahore",
+   "lonLat": [
+    74.35,
+    31.55
+   ],
+   "years": [
+    1947,
+    2026
+   ],
+   "realm": "Pakistan",
+   "why": "Pakistan since 15 August 1947"
+  },
+  {
+   "place": "Dhaka (Pakistan)",
+   "lonLat": [
+    90.41,
+    23.81
+   ],
+   "years": [
+    1947,
+    1970
+   ],
+   "realm": "Pakistan",
+   "why": "East Pakistan until December 1971"
+  },
+  {
+   "place": "Dhaka",
+   "lonLat": [
+    90.41,
+    23.81
+   ],
+   "years": [
+    1971,
+    2026
+   ],
+   "realm": "Bangladesh",
+   "why": "Independent since 16 December 1971"
+  },
+  {
+   "place": "Hyderabad (state)",
+   "lonLat": [
+    78.47,
+    17.38
+   ],
+   "years": [
+    1947,
+    1947
+   ],
+   "realm": "Hyderabad State",
+   "why": "Princely state outside India until September 1948"
+  },
+  {
+   "place": "Hyderabad",
+   "lonLat": [
+    78.47,
+    17.38
+   ],
+   "years": [
+    1948,
+    2026
+   ],
+   "realm": "India",
+   "why": "Part of India since 17 September 1948"
+  },
+  {
+   "place": "Gangtok (protectorate)",
+   "lonLat": [
+    88.61,
+    27.33
+   ],
+   "years": [
+    1947,
+    1974
+   ],
+   "realm": "Kingdom of Sikkim",
+   "why": "Indian protectorate until May 1975"
+  },
+  {
+   "place": "Gangtok",
+   "lonLat": [
+    88.61,
+    27.33
+   ],
+   "years": [
+    1975,
+    2026
+   ],
+   "realm": "India",
+   "why": "Indian state since 16 May 1975"
+  },
+  {
+   "place": "Panaji",
+   "lonLat": [
+    73.83,
+    15.49
+   ],
+   "years": [
+    1945,
+    1960
+   ],
+   "realm": "Portuguese India",
+   "why": "Portuguese until December 1961"
+  },
+  {
+   "place": "Puducherry",
+   "lonLat": [
+    79.81,
+    11.93
+   ],
+   "years": [
+    1945,
+    1953
+   ],
+   "realm": "French India",
+   "why": "French until November 1954"
+  },
+  {
+   "place": "Yangon (colony)",
+   "lonLat": [
+    96.16,
+    16.87
+   ],
+   "years": [
+    1945,
+    1947
+   ],
+   "realm": "British Burma",
+   "why": "British until 4 January 1948"
+  },
+  {
+   "place": "Yangon",
+   "lonLat": [
+    96.16,
+    16.87
+   ],
+   "years": [
+    1948,
+    2026
+   ],
+   "realm": "Myanmar",
+   "why": "Independent since 4 January 1948"
+  },
+  {
+   "place": "Kandy (colony)",
+   "lonLat": [
+    80.64,
+    7.29
+   ],
+   "years": [
+    1945,
+    1947
+   ],
+   "realm": "British Ceylon",
+   "why": "British until 4 February 1948"
+  },
+  {
+   "place": "Kandy",
+   "lonLat": [
+    80.64,
+    7.29
+   ],
+   "years": [
+    1948,
+    2026
+   ],
+   "realm": "Sri Lanka",
+   "why": "Independent since 4 February 1948"
+  },
+  {
+   "place": "St. John's (dominion)",
+   "lonLat": [
+    -52.75,
+    47.55
+   ],
+   "years": [
+    1945,
+    1948
+   ],
+   "realm": "Dominion of Newfoundland",
+   "why": "Dominion of Newfoundland until 31 March 1949"
+  },
+  {
+   "place": "St. John's",
+   "lonLat": [
+    -52.75,
+    47.55
+   ],
+   "years": [
+    1949,
+    2026
+   ],
+   "realm": "Canada",
+   "why": "Province of Canada since 31 March 1949"
+  },
+  {
+   "place": "Kuala Lumpur (Union)",
+   "lonLat": [
+    101.69,
+    3.14
+   ],
+   "years": [
+    1946,
+    1947
+   ],
+   "realm": "Malayan Union",
+   "why": "Malayan Union, 1946 to 1948"
+  },
+  {
+   "place": "Kuala Lumpur (FMS)",
+   "lonLat": [
+    101.69,
+    3.14
+   ],
+   "years": [
+    1945,
+    1945
+   ],
+   "realm": "Federated Malay States",
+   "why": "Federated Malay States until 1946"
+  },
+  {
+   "place": "Johor Bahru (UMS)",
+   "lonLat": [
+    103.76,
+    1.49
+   ],
+   "years": [
+    1945,
+    1945
+   ],
+   "realm": "Unfederated Malay States",
+   "why": "Unfederated Malay States until 1946"
+  },
+  {
+   "place": "Singapore (Straits)",
+   "lonLat": [
+    103.82,
+    1.35
+   ],
+   "years": [
+    1945,
+    1945
+   ],
+   "realm": "Straits Settlements",
+   "why": "Straits Settlements until 1 April 1946"
+  },
+  {
+   "place": "Kuching (Raj)",
+   "lonLat": [
+    110.35,
+    1.55
+   ],
+   "years": [
+    1945,
+    1945
+   ],
+   "realm": "Raj of Sarawak",
+   "why": "Brooke Raj until 1 July 1946"
+  },
+  {
+   "place": "Tripoli (Italian)",
+   "lonLat": [
+    13.19,
+    32.89
+   ],
+   "years": [
+    1945,
+    1946
+   ],
+   "realm": "Italian Libya",
+   "why": "Italian colony under British occupation until 1947",
+   "heldBy": [
+    {
+     "years": [
+      1945,
+      1946
+     ],
+     "by": "United Kingdom"
+    }
+   ]
+  },
+  {
+   "place": "Sabha (Italian)",
+   "lonLat": [
+    14.43,
+    27.04
+   ],
+   "years": [
+    1945,
+    1946
+   ],
+   "realm": "Italian Libya",
+   "why": "Italian colony under French occupation until 1947",
+   "heldBy": [
+    {
+     "years": [
+      1945,
+      1946
+     ],
+     "by": "France"
+    }
+   ]
+  },
+  {
+   "place": "Asmara (Italian)",
+   "lonLat": [
+    38.93,
+    15.33
+   ],
+   "years": [
+    1945,
+    1946
+   ],
+   "realm": "Italian Eritrea",
+   "why": "Italian colony under British occupation until 1947",
+   "heldBy": [
+    {
+     "years": [
+      1945,
+      1946
+     ],
+     "by": "United Kingdom"
+    }
+   ]
+  },
+  {
+   "place": "Mogadishu (British)",
+   "lonLat": [
+    45.34,
+    2.04
+   ],
+   "years": [
+    1947,
+    1949
+   ],
+   "realm": "Somalia",
+   "why": "British administration until 1 April 1950"
+  },
+  {
+   "place": "Dodoma (mandate)",
+   "lonLat": [
+    35.74,
+    -6.17
+   ],
+   "years": [
+    1945,
+    1945
+   ],
+   "realm": "Tanganyika Territory",
+   "why": "League of Nations mandate until December 1946",
+   "heldBy": [
+    {
+     "years": [
+      1945,
+      1945
+     ],
+     "by": "League of Nations"
+    }
+   ]
   }
  ]
 }
