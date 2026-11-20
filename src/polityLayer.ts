@@ -30,7 +30,13 @@ const HOVER_FILL_ALPHA = 0.62;
 // Width, in years, of the crossfade between two consecutive snapshots.
 const FADE = 0.6;
 // Context realms this large (km²) get a name on the globe.
-const CONTEXT_LABEL_AREA = 900_000;
+/**
+ * The least area (km²) of a realm named at the starting view; zooming in
+ * names smaller ones, as long as the names do not cover each other.
+ */
+const CONTEXT_LABEL_AREA = 150_000;
+/** The camera height of the starting view, where CONTEXT_LABEL_AREA applies. */
+const START_HEIGHT = 14_500_000;
 // Shapes built per frame, so a fast scrub never freezes the page.
 const BUILDS_PER_FRAME = 40;
 // Above this many built shapes, those far from the current year are freed.
@@ -450,19 +456,31 @@ export class PolityLayer {
     this.labelsDirty = false;
     this.lastView = view;
     this.lastDeclutter = now;
-    // A warning sign past the horizon would show through the globe.
-    for (const [, d] of this.drawn) {
-      if (!d.sign || !d.signWanted) continue;
-      const position = d.sign.position;
-      d.sign.show = Cartesian3.dot(position, camera.positionWC) > Cartesian3.magnitudeSquared(position) * 0.98;
-    }
+
     const rank = (p: Polity, d: Drawn) => (d.highlighted && this.labelAll ? 2 : p.kind === "group" ? 1 : 0);
     const due = [...this.drawn].filter(([, d]) => d.label && d.wanted).sort((a, b) => rank(b[0], b[1]) - rank(a[0], a[1]) || b[0].area - a[0].area);
     const placed: [number, number, number, number][] = [];
     const at = new Cartesian2();
+    // Warning signs first, so that no name covers them; one past the horizon
+    // would show through the globe.
+    for (const [, d] of this.drawn) {
+      if (!d.sign || !d.signWanted) continue;
+      const position = d.sign.position;
+      const facing = Cartesian3.dot(position, camera.positionWC) > Cartesian3.magnitudeSquared(position) * 0.98;
+      const point = facing ? SceneTransforms.worldToWindowCoordinates(this.scene, position, at) : undefined;
+      d.sign.show = !!point;
+      if (point) placed.push([point.x - 12, point.y - 12, point.x + 12, point.y + 12]);
+    }
     const range = Cartesian3.magnitude(camera.positionWC);
+    const zoom = Math.min(16, Math.max(1, START_HEIGHT / Math.max(1, camera.positionCartographic.height)));
+    const minArea = CONTEXT_LABEL_AREA / zoom ** 1.6;
     for (const [p, d] of due) {
       const label = d.label!;
+      // Small realms are named once zoomed in, unless chosen or in an open group.
+      if (rank(p, d) === 0 && p.area < minArea && !(p.partOf && p.groups?.length)) {
+        label.show = false;
+        continue;
+      }
       const position = label.position;
       // Past the horizon, the globe hides the name anyway.
       const facing = Cartesian3.dot(position, camera.positionWC) > Cartesian3.magnitudeSquared(position) * 0.98;
@@ -688,7 +706,7 @@ export class PolityLayer {
 
     let label: FlatLabel | undefined;
     // A group's territories all have a name, shown once a click opens the group.
-    if (!p.kind && p.label && ((highlighted && this.labelAll) || p.area >= CONTEXT_LABEL_AREA || (p.partOf && p.groups?.length))) {
+    if (!p.kind && p.label) {
       const height = highlighted ? FEATURED_HEIGHT : CONTEXT_HEIGHT;
       label = this.labels.add({
         id: p,

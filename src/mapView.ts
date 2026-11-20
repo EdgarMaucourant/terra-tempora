@@ -35,7 +35,8 @@ export const PROJECTIONS: ProjectionChoice[] = [
 const FEATURED_FILL_ALPHA = 0.55;
 const CONTEXT_FILL_ALPHA = 0.4;
 const HOVER_FILL_ALPHA = 0.62;
-const CONTEXT_LABEL_AREA = 900_000;
+/** The least area (km²) of a realm named at the starting zoom (see PolityLayer). */
+const CONTEXT_LABEL_AREA = 150_000;
 /** The outline and name of a group of territories (French West Africa). */
 const GROUP_COLOR = "#f2d48a";
 const MIN_ZOOM = 0.8;
