@@ -1301,7 +1301,16 @@
     1979
    ],
    "realm": "New Hebrides",
-   "why": "Anglo-French condominium until 1980"
+   "why": "Anglo-French condominium until 1980, hatched in the colours of both rulers",
+   "heldBy": [
+    {
+     "years": [
+      1907,
+      1979
+     ],
+     "by": "France"
+    }
+   ]
   },
   {
    "place": "Port Vila",
@@ -5542,6 +5551,388 @@
    ],
    "realm": "Sweden",
    "why": "Saint Barthélemy was Swedish from 1784 to 1878"
+  },
+  {
+   "place": "Kowloon (British)",
+   "lonLat": [
+    114.17,
+    22.33
+   ],
+   "years": [
+    1975,
+    1996
+   ],
+   "realm": "British Hong Kong",
+   "why": "British colony until the handover of 1 July 1997"
+  },
+  {
+   "place": "Kowloon",
+   "lonLat": [
+    114.17,
+    22.33
+   ],
+   "years": [
+    1997,
+    2026
+   ],
+   "realm": "Hong Kong",
+   "why": "Special administrative region of China since 1 July 1997"
+  },
+  {
+   "place": "King Edward Point",
+   "lonLat": [
+    -36.5,
+    -54.28
+   ],
+   "years": [
+    1975,
+    1984
+   ],
+   "realm": "Falkland Islands Dependencies",
+   "why": "A Falkland Islands Dependency until 3 October 1985"
+  },
+  {
+   "place": "King Edward Point",
+   "lonLat": [
+    -36.5,
+    -54.28
+   ],
+   "years": [
+    1985,
+    2026
+   ],
+   "realm": "South Georgia and the South Sandwich Islands",
+   "why": "A territory of its own since 3 October 1985"
+  },
+  {
+   "place": "Bandar Seri Begawan (protectorate)",
+   "lonLat": [
+    114.94,
+    4.89
+   ],
+   "years": [
+    1975,
+    1983
+   ],
+   "realm": "Brunei",
+   "why": "British protectorate until 1 January 1984"
+  },
+  {
+   "place": "Basseterre (colony)",
+   "lonLat": [
+    -62.72,
+    17.3
+   ],
+   "years": [
+    1975,
+    1982
+   ],
+   "realm": "Saint Christopher-Nevis-Anguilla",
+   "why": "British associated state until 19 September 1983"
+  },
+  {
+   "place": "Basseterre",
+   "lonLat": [
+    -62.72,
+    17.3
+   ],
+   "years": [
+    1983,
+    2026
+   ],
+   "realm": "Saint Kitts and Nevis",
+   "why": "Independent since 19 September 1983"
+  },
+  {
+   "place": "Antigua (associated state)",
+   "lonLat": [
+    -61.8,
+    17.07
+   ],
+   "years": [
+    1975,
+    1980
+   ],
+   "realm": "Antigua and Barbuda",
+   "why": "British associated state until 1 November 1981"
+  },
+  {
+   "place": "Belize City (British Honduras)",
+   "lonLat": [
+    -88.19,
+    17.5
+   ],
+   "years": [
+    1975,
+    1980
+   ],
+   "realm": "British Honduras",
+   "why": "British colony (named Belize from 1973) until 21 September 1981"
+  },
+  {
+   "place": "Belmopan",
+   "lonLat": [
+    -88.77,
+    17.25
+   ],
+   "years": [
+    1981,
+    2026
+   ],
+   "realm": "Belize",
+   "why": "Independent since 21 September 1981"
+  },
+  {
+   "place": "The Valley (colony)",
+   "lonLat": [
+    -63.05,
+    18.22
+   ],
+   "years": [
+    1975,
+    1979
+   ],
+   "realm": "Saint Christopher-Nevis-Anguilla",
+   "why": "Formally part of Saint Christopher-Nevis-Anguilla until 19 December 1980"
+  },
+  {
+   "place": "The Valley",
+   "lonLat": [
+    -63.05,
+    18.22
+   ],
+   "years": [
+    1980,
+    2026
+   ],
+   "realm": "Anguilla",
+   "why": "A separate British dependency since 19 December 1980"
+  },
+  {
+   "place": "Salisbury (Harare)",
+   "lonLat": [
+    31.05,
+    -17.83
+   ],
+   "years": [
+    1975,
+    1979
+   ],
+   "realm": "Southern Rhodesia",
+   "why": "British colony in law; held by the unrecognised Rhodesian government from 1965 to December 1979",
+   "heldBy": [
+    {
+     "years": [
+      1975,
+      1978
+     ],
+     "by": "Rhodesia"
+    }
+   ]
+  },
+  {
+   "place": "Harare",
+   "lonLat": [
+    31.05,
+    -17.83
+   ],
+   "years": [
+    1980,
+    2026
+   ],
+   "realm": "Zimbabwe",
+   "why": "Independent since 18 April 1980"
+  },
+  {
+   "place": "Kingstown (associated state)",
+   "lonLat": [
+    -61.23,
+    13.16
+   ],
+   "years": [
+    1975,
+    1978
+   ],
+   "realm": "Saint Vincent and the Grenadines",
+   "why": "British associated state until 27 October 1979"
+  },
+  {
+   "place": "Kiritimati (colony)",
+   "lonLat": [
+    -157.3,
+    1.8
+   ],
+   "years": [
+    1975,
+    1978
+   ],
+   "realm": "Gilbert Islands",
+   "why": "British colony until 12 July 1979"
+  },
+  {
+   "place": "Kiritimati",
+   "lonLat": [
+    -157.3,
+    1.8
+   ],
+   "years": [
+    1979,
+    2026
+   ],
+   "realm": "Kiribati",
+   "why": "Independent since 12 July 1979"
+  },
+  {
+   "place": "Enderbury Island",
+   "lonLat": [
+    -171.09,
+    -3.13
+   ],
+   "years": [
+    1975,
+    1978
+   ],
+   "realm": "Canton and Enderbury Islands",
+   "why": "Anglo-American condominium from 1939 until Kiribati takes it in 1979",
+   "heldBy": [
+    {
+     "years": [
+      1975,
+      1978
+     ],
+     "by": "United Kingdom"
+    }
+   ]
+  },
+  {
+   "place": "Castries (associated state)",
+   "lonLat": [
+    -60.99,
+    14.01
+   ],
+   "years": [
+    1975,
+    1978
+   ],
+   "realm": "Saint Lucia",
+   "why": "British associated state until 22 February 1979"
+  },
+  {
+   "place": "Dominica (associated state)",
+   "lonLat": [
+    -61.35,
+    15.42
+   ],
+   "years": [
+    1975,
+    1977
+   ],
+   "realm": "Dominica",
+   "why": "British associated state until 3 November 1978"
+  },
+  {
+   "place": "Nukulaelae (colony)",
+   "lonLat": [
+    179.9,
+    -9.4
+   ],
+   "years": [
+    1975,
+    1977
+   ],
+   "realm": "Tuvalu",
+   "why": "British colony of Tuvalu, separated from the Gilbert Islands in 1975, until 1 October 1978"
+  },
+  {
+   "place": "Honiara (protectorate)",
+   "lonLat": [
+    159.95,
+    -9.43
+   ],
+   "years": [
+    1975,
+    1977
+   ],
+   "realm": "British Solomon Islands",
+   "why": "British protectorate until 7 July 1978"
+  },
+  {
+   "place": "Honiara",
+   "lonLat": [
+    159.95,
+    -9.43
+   ],
+   "years": [
+    1978,
+    2026
+   ],
+   "realm": "Solomon Islands",
+   "why": "Independent since 7 July 1978"
+  },
+  {
+   "place": "Victoria, Seychelles (colony)",
+   "lonLat": [
+    55.45,
+    -4.62
+   ],
+   "years": [
+    1975,
+    1975
+   ],
+   "realm": "Seychelles",
+   "why": "British colony until 29 June 1976"
+  },
+  {
+   "place": "Aldabra",
+   "lonLat": [
+    46.35,
+    -9.42
+   ],
+   "years": [
+    1975,
+    1975
+   ],
+   "realm": "British Indian Ocean Territory",
+   "why": "Part of the British Indian Ocean Territory from 1965 until 29 June 1976"
+  },
+  {
+   "place": "Aldabra",
+   "lonLat": [
+    46.35,
+    -9.42
+   ],
+   "years": [
+    1976,
+    2026
+   ],
+   "realm": "Seychelles",
+   "why": "Part of Seychelles since 29 June 1976"
+  },
+  {
+   "place": "Stanley",
+   "lonLat": [
+    -57.85,
+    -51.69
+   ],
+   "years": [
+    1975,
+    2026
+   ],
+   "realm": "Falkland Islands",
+   "why": "British; held by Argentina from April to June 1982 only"
+  },
+  {
+   "place": "London",
+   "lonLat": [
+    -0.13,
+    51.5
+   ],
+   "years": [
+    1975,
+    2026
+   ],
+   "realm": "United Kingdom",
+   "why": "Capital of the United Kingdom"
   }
  ]
 }

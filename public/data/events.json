@@ -6391,6 +6391,225 @@
    "summary": "On 26 November 2025, a day before the results of the presidential election were due, officers take power in Bissau, depose President Umaro Sissoco Embaló and halt the electoral process.",
    "wikipedia": "2025_Guinea-Bissau_coup_d'état",
    "search": "2025 Guinea-Bissau coup Embalo election"
+  },
+  {
+   "id": "lancaster-house-1979",
+   "kind": "treaty",
+   "year": 1979,
+   "title": "The Lancaster House Agreement, 21 December 1979",
+   "place": "Salisbury (now Harare)",
+   "lonLat": [
+    31.05,
+    -17.83
+   ],
+   "civs": [
+    "united-kingdom",
+    "southern-rhodesia"
+   ],
+   "summary": "Talks at Lancaster House in London bring together the government of Zimbabwe Rhodesia and the guerrilla leaders Robert Mugabe and Joshua Nkomo. On 12 December 1979 Lord Soames arrives in Salisbury as governor and Britain takes back the colony it had not ruled since 1965. The agreement, signed on 21 December, ends a bush war that had cost some 20,000 lives, with a ceasefire and elections open to all.",
+   "wikipedia": "Lancaster_House_Agreement",
+   "search": "Lancaster House Agreement 1979 Rhodesian Bush War Zimbabwe Rhodesia Muzorewa Mugabe Nkomo Patriotic Front ceasefire Lord Soames"
+  },
+  {
+   "id": "zimbabwe-independence-1980",
+   "kind": "empire",
+   "year": 1980,
+   "title": "Zimbabwe becomes independent, 18 April 1980",
+   "place": "Salisbury (now Harare)",
+   "lonLat": [
+    31.05,
+    -17.83
+   ],
+   "civs": [
+    "united-kingdom",
+    "southern-rhodesia",
+    "zimbabwe"
+   ],
+   "summary": "Robert Mugabe’s ZANU wins the February 1980 elections, and at midnight on 17 April, at Rufaro Stadium in Salisbury, the Union Jack is lowered before Prince Charles. Southern Rhodesia, Britain’s last colony in mainland Africa, becomes the Republic of Zimbabwe, with Mugabe as prime minister. The capital is renamed Harare in 1982.",
+   "wikipedia": "Zimbabwe",
+   "search": "Zimbabwe independence 1980 Southern Rhodesia Mugabe ZANU-PF Prince Charles Rufaro Stadium Salisbury Harare"
+  },
+  {
+   "id": "belize-independence-1981",
+   "kind": "empire",
+   "year": 1981,
+   "title": "Belize becomes independent, 21 September 1981",
+   "place": "Belmopan",
+   "lonLat": [
+    -88.77,
+    17.25
+   ],
+   "civs": [
+    "united-kingdom",
+    "british-honduras",
+    "belize"
+   ],
+   "summary": "British Honduras, renamed Belize in 1973, waits years for its independence because Guatemala claims the whole country. Backed by a UN resolution of 1980, it becomes independent on 21 September 1981 under George Price, while British troops stay to guard it. Guatemala recognises Belize only in 1991, and still claims part of its land.",
+   "wikipedia": "Belize",
+   "search": "Belize independence 1981 British Honduras George Price Guatemala claim British troops Belmopan"
+  },
+  {
+   "id": "falklands-war-1982",
+   "kind": "war",
+   "year": 1982,
+   "title": "The Falklands War, April – June 1982",
+   "place": "Stanley, Falkland Islands",
+   "lonLat": [
+    -57.85,
+    -51.69
+   ],
+   "civs": [
+    "united-kingdom",
+    "falkland-islands",
+    "argentina"
+   ],
+   "summary": "On 2 April 1982 Argentina’s military junta lands troops at Stanley and takes the Falkland Islands, which it calls the Malvinas, and South Georgia the next day. Margaret Thatcher sends a naval task force 13,000 km south. After the sinking of the cruiser Belgrano, air attacks on the fleet and battles at Goose Green and on the hills around Stanley, the Argentine garrison surrenders on 14 June. About 900 men die; the defeat brings down the junta in Argentina.",
+   "wikipedia": "Falklands_War",
+   "search": "Falklands War 1982 Malvinas Argentina Galtieri Thatcher task force Stanley Goose Green Belgrano South Georgia"
+  },
+  {
+   "id": "sino-british-joint-declaration-1984",
+   "kind": "treaty",
+   "year": 1984,
+   "title": "The Sino-British Joint Declaration, 19 December 1984",
+   "place": "Hong Kong",
+   "lonLat": [
+    114.17,
+    22.32
+   ],
+   "civs": [
+    "united-kingdom",
+    "british-hong-kong",
+    "china"
+   ],
+   "summary": "The lease of the New Territories, which make up most of Hong Kong, runs out in 1997. After two years of talks, Margaret Thatcher and Premier Zhao Ziyang sign a declaration in Beijing on 19 December 1984: Britain will hand the whole colony back to China on 1 July 1997. Under Deng Xiaoping’s formula “one country, two systems”, Hong Kong is to keep its own laws, currency and way of life for fifty years.",
+   "wikipedia": "Sino-British_Joint_Declaration",
+   "search": "Sino-British Joint Declaration 1984 Hong Kong Thatcher Zhao Ziyang Deng Xiaoping one country two systems New Territories lease 1997"
+  },
+  {
+   "id": "south-georgia-territory-1985",
+   "kind": "crown",
+   "year": 1985,
+   "title": "South Georgia becomes a territory of its own, 3 October 1985",
+   "place": "King Edward Point, South Georgia",
+   "lonLat": [
+    -36.5,
+    -54.28
+   ],
+   "civs": [
+    "united-kingdom",
+    "falkland-islands-dependencies",
+    "south-georgia-and-the-south-sandwich-islands"
+   ],
+   "summary": "Since 1908 South Georgia and the South Sandwich Islands had been Falkland Islands Dependencies, governed from Stanley. Three years after the war, on 3 October 1985, they become a British territory of their own, still with the Falklands’ governor as commissioner. The last whaling station at Grytviken had closed in 1966, and only a few scientists and officials live at King Edward Point.",
+   "wikipedia": "South_Georgia_and_the_South_Sandwich_Islands",
+   "search": "South Georgia and the South Sandwich Islands 1985 Falkland Islands Dependencies overseas territory King Edward Point Grytviken"
+  },
+  {
+   "id": "hong-kong-handover-1997",
+   "kind": "treaty",
+   "year": 1997,
+   "title": "Hong Kong is handed over to China, 1 July 1997",
+   "place": "Hong Kong",
+   "lonLat": [
+    114.17,
+    22.28
+   ],
+   "civs": [
+    "united-kingdom",
+    "british-hong-kong",
+    "hong-kong",
+    "china"
+   ],
+   "summary": "At midnight on 30 June 1997, in the new Convention Centre, the British flag is lowered and the Chinese flag raised before Prince Charles and President Jiang Zemin. After 156 years, Hong Kong becomes a special administrative region of China, and the last governor, Chris Patten, sails away on the royal yacht Britannia. The handover marks for many the end of the British Empire.",
+   "wikipedia": "Handover_of_Hong_Kong",
+   "search": "handover of Hong Kong 1997 transfer of sovereignty China Chris Patten Prince Charles Jiang Zemin Britannia special administrative region"
+  },
+  {
+   "id": "good-friday-agreement-1998",
+   "kind": "treaty",
+   "year": 1998,
+   "title": "The Good Friday Agreement, 10 April 1998",
+   "place": "Belfast",
+   "lonLat": [
+    -5.93,
+    54.6
+   ],
+   "civs": [
+    "united-kingdom",
+    "ireland"
+   ],
+   "summary": "After thirty years of the Troubles, in which some 3,500 people died, the British and Irish governments and most of Northern Ireland’s parties sign an agreement in Belfast on Good Friday, 10 April 1998. Northern Ireland gets an assembly where unionists and nationalists share power, and stays in the United Kingdom unless a majority of its people vote otherwise. Ireland drops its constitutional claim to the North, and both parts of Ireland approve the deal by referendum in May.",
+   "wikipedia": "Good_Friday_Agreement",
+   "search": "Good Friday Agreement Belfast Agreement 1998 Northern Ireland Troubles Tony Blair Bertie Ahern George Mitchell Trimble Hume power-sharing"
+  },
+  {
+   "id": "devolution-1999",
+   "kind": "crown",
+   "year": 1999,
+   "title": "Scotland and Wales get their own parliaments, 1999",
+   "place": "Edinburgh",
+   "lonLat": [
+    -3.17,
+    55.95
+   ],
+   "civs": [
+    "united-kingdom"
+   ],
+   "summary": "After the referendums of 1997, Tony Blair’s government hands many powers to new elected bodies. The Scottish Parliament, the first since 1707, opens in Edinburgh on 1 July 1999, and the National Assembly for Wales, now the Senedd, in Cardiff in May. Scotland and Wales run their own schools, health and local affairs, while defence and foreign policy stay in London.",
+   "wikipedia": "Devolution_in_the_United_Kingdom",
+   "search": "devolution 1999 Scottish Parliament Welsh Assembly National Assembly for Wales Senedd Donald Dewar referendum 1997 Edinburgh Cardiff"
+  },
+  {
+   "id": "scottish-referendum-2014",
+   "kind": "crown",
+   "year": 2014,
+   "title": "Scotland votes to stay in the United Kingdom, 18 September 2014",
+   "place": "Edinburgh",
+   "lonLat": [
+    -3.19,
+    55.95
+   ],
+   "civs": [
+    "united-kingdom"
+   ],
+   "summary": "Asked “Should Scotland be an independent country?”, Scots answer No by 55 to 45 per cent on 18 September 2014, with a turnout of almost 85 per cent. The vote, agreed between Alex Salmond’s Scottish government and David Cameron’s, keeps the union of 1707, and Scotland is promised more powers. The question returns after the Brexit vote, which most Scots opposed.",
+   "wikipedia": "2014_Scottish_independence_referendum",
+   "search": "Scottish independence referendum 2014 Alex Salmond Yes Scotland Better Together No vote 55 per cent"
+  },
+  {
+   "id": "brexit-referendum-2016",
+   "kind": "crown",
+   "year": 2016,
+   "title": "The Brexit referendum, 23 June 2016",
+   "place": "London",
+   "lonLat": [
+    -0.13,
+    51.5
+   ],
+   "civs": [
+    "united-kingdom"
+   ],
+   "summary": "Called by David Cameron, who campaigns to Remain, the referendum of 23 June 2016 asks whether the United Kingdom should stay in the European Union, which it joined in 1973. Leave wins by 52 to 48 per cent: England and Wales vote to leave, Scotland and Northern Ireland to stay. Cameron resigns the next day, and Theresa May formally starts the withdrawal in March 2017.",
+   "wikipedia": "2016_United_Kingdom_European_Union_membership_referendum",
+   "search": "Brexit referendum 2016 Leave Remain European Union David Cameron Boris Johnson Nigel Farage 52 per cent"
+  },
+  {
+   "id": "brexit-2020",
+   "kind": "treaty",
+   "year": 2020,
+   "title": "The United Kingdom leaves the European Union, 31 January 2020",
+   "place": "London",
+   "lonLat": [
+    -0.13,
+    51.5
+   ],
+   "civs": [
+    "united-kingdom"
+   ],
+   "summary": "After three years of deadlock in Parliament and the fall of Theresa May, Boris Johnson wins the December 2019 election and has his withdrawal agreement passed. At 11 pm on 31 January 2020 the United Kingdom leaves the European Union after 47 years. A transition period ends on 31 December, when a new trade agreement takes effect, with Northern Ireland keeping EU rules for goods so that its border with Ireland stays open.",
+   "wikipedia": "Brexit",
+   "search": "Brexit 2020 withdrawal agreement Boris Johnson leaves European Union 31 January transition Northern Ireland protocol trade agreement"
   }
  ]
 }
