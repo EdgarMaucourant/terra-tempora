@@ -2128,8 +2128,12 @@ function colourRealms(shapes: Polity[]) {
   for (const name of [...areas.keys()].sort((a, b) => areas.get(b)! - areas.get(a)!)) {
     const at = seats.get(name);
     const [from, to] = spans.get(name)!;
-    let colour = palette[homeColours.size % palette.length];
-    if (at) {
+    // The build gives every rebuilt realm its colour, the same on every visit.
+    const fixed = data?.index.homeColours?.[name];
+    let colour = palette[(fixed ?? homeColours.size) % palette.length];
+    if (fixed !== undefined) {
+      if (at) homePlaced.push({ at, from, to, colour });
+    } else if (at) {
       const near = homePlaced
         .filter((x) => x.from <= to && x.to >= from)
         .map((x) => ({ colour: x.colour, d: distance(at, x.at) }))
