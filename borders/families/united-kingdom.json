@@ -23,7 +23,7 @@
     "WSB",
     "IOT"
    ],
-   "from": 1965,
+   "from": 1960,
    "why": "The United Kingdom with the Crown Dependencies (Guernsey, Jersey, the Isle of Man), its overseas territories and the Chagos Archipelago, whose land has not changed hands since 1965"
   },
   {
@@ -42,7 +42,7 @@
     "SLB",
     "SYC"
    ],
-   "from": 1965,
+   "from": 1960,
    "why": "Hong Kong, Brunei, Southern Rhodesia and the colonies in the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence or handover"
   },
   {
@@ -64,8 +64,33 @@
     "BHS",
     "GRD"
    ],
-   "from": 1965,
+   "from": 1960,
    "why": "The Gulf protected states, South Arabia with all of Yemen (North Yemen until 1990), and the colonies and protectorates in Africa, the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence"
+  },
+  {
+   "pieces": [
+    "GMB",
+    "MDV",
+    "MLT",
+    "ZMB",
+    "MWI",
+    "TZA",
+    "KEN",
+    "UGA",
+    "MYS",
+    "SGP",
+    "NGA",
+    "SLE",
+    "KWT",
+    "CYP",
+    "CYN",
+    "SOL",
+    "SOM",
+    "JAM",
+    "TTO"
+   ],
+   "from": 1960,
+   "why": "The colonies, protectorates and trust territories Britain held in 1960 in Africa, Asia, the Mediterranean and the Caribbean, with today's borders, until their independence, with Malaya and Somalia around them"
   }
  ],
  "changes": [
@@ -90,6 +115,27 @@
      },
      "map": "https://commons.wikimedia.org/wiki/File:Hong Kong on the globe (Hong Kong centered with inset).svg",
      "territory": "British Hong Kong"
+    }
+   ]
+  },
+  {
+   "date": "1991-05-18",
+   "what": "Somaliland declares its independence from Somalia, which no state recognises",
+   "source": {
+    "title": "Somaliland (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Somaliland"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SOL"
+     ],
+     "owner": "Somalia",
+     "source": {
+      "title": "Somalia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Somalia"
+     }
     }
    ]
   },
@@ -558,6 +604,27 @@
      },
      "map": "https://commons.wikimedia.org/wiki/File:LocationGilbertandEllice.png",
      "territory": "Gilbert and Ellice Islands"
+    }
+   ]
+  },
+  {
+   "date": "1974-08-16",
+   "what": "Turkish forces end their second offensive holding the north of Cyprus",
+   "source": {
+    "title": "Turkish invasion of Cyprus (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Turkish_invasion_of_Cyprus"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "CYN"
+     ],
+     "owner": "Cyprus",
+     "source": {
+      "title": "Cyprus (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cyprus"
+     }
     }
    ]
   },
@@ -1098,6 +1165,640 @@
       "url": "https://en.wikipedia.org/wiki/Seychelles"
      },
      "territory": "Seychelles"
+    }
+   ]
+  },
+  {
+   "date": "1965-08-09",
+   "what": "Singapore leaves Malaysia and becomes independent",
+   "source": {
+    "title": "Singapore (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Singapore"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SGP"
+     ],
+     "owner": "Malaysia",
+     "source": {
+      "title": "Malaysia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Malaysia"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1965-07-26",
+   "what": "The Maldives, a British protected state since 1887, become fully independent",
+   "source": {
+    "title": "Maldives (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Maldives"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MDV"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Maldives (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Maldives"
+     },
+     "territory": "Maldives"
+    }
+   ]
+  },
+  {
+   "date": "1965-02-18",
+   "what": "The Gambia becomes independent",
+   "source": {
+    "title": "The Gambia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/The_Gambia"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "GMB"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Gambia Colony and Protectorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gambia_Colony_and_Protectorate"
+     },
+     "territory": "Gambia Colony and Protectorate"
+    }
+   ]
+  },
+  {
+   "date": "1964-10-24",
+   "what": "Northern Rhodesia becomes independent as Zambia",
+   "source": {
+    "title": "Zambia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Zambia"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ZMB"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Northern Rhodesia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Northern_Rhodesia"
+     },
+     "territory": "Northern Rhodesia"
+    }
+   ]
+  },
+  {
+   "date": "1964-09-21",
+   "what": "Malta becomes independent",
+   "source": {
+    "title": "Malta (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Malta"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MLT"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Crown Colony of Malta (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Crown_Colony_of_Malta"
+     },
+     "territory": "Crown Colony of Malta"
+    }
+   ]
+  },
+  {
+   "date": "1964-07-06",
+   "what": "Nyasaland becomes independent as Malawi",
+   "source": {
+    "title": "Malawi (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Malawi"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MWI"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Nyasaland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Nyasaland"
+     },
+     "territory": "Nyasaland"
+    }
+   ]
+  },
+  {
+   "date": "1964-04-26",
+   "what": "Tanganyika and Zanzibar unite, as Tanzania from October",
+   "source": {
+    "title": "Tanzania (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tanzania"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TZA"
+     ],
+     "owner": "Tanganyika",
+     "source": {
+      "title": "Tanganyika (1961–1964) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tanganyika_(1961–1964)"
+     }
+    },
+    {
+     "pieces": [
+      "TZA-3337",
+      "TZA-3383",
+      "TZA-3384",
+      "TZA-3381",
+      "TZA-3380"
+     ],
+     "owner": "Zanzibar",
+     "source": {
+      "title": "People's Republic of Zanzibar (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/People's_Republic_of_Zanzibar"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1964-01-01",
+   "what": "The Federation of Rhodesia and Nyasaland is dissolved; Northern Rhodesia, Nyasaland and Southern Rhodesia become separate colonies again",
+   "source": {
+    "title": "Federation of Rhodesia and Nyasaland (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Federation_of_Rhodesia_and_Nyasaland"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ZWE",
+      "ZMB",
+      "MWI"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Federation of Rhodesia and Nyasaland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Federation_of_Rhodesia_and_Nyasaland"
+     },
+     "territory": "Federation of Rhodesia and Nyasaland"
+    }
+   ]
+  },
+  {
+   "date": "1963-12-12",
+   "what": "Kenya becomes independent",
+   "source": {
+    "title": "Kenya (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kenya"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "KEN"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Kenya Colony (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kenya_Colony"
+     },
+     "territory": "Kenya Colony"
+    }
+   ]
+  },
+  {
+   "date": "1963-12-10",
+   "what": "Zanzibar, a British protectorate since 1890, becomes independent as a sultanate",
+   "source": {
+    "title": "Sultanate of Zanzibar (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Sultanate_of_Zanzibar"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TZA-3337",
+      "TZA-3383",
+      "TZA-3384",
+      "TZA-3381",
+      "TZA-3380"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Sultanate of Zanzibar (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sultanate_of_Zanzibar"
+     },
+     "territory": "Zanzibar"
+    }
+   ]
+  },
+  {
+   "date": "1963-09-16",
+   "what": "Malaya joins with Singapore, Sarawak and North Borneo (Sabah) to form Malaysia",
+   "source": {
+    "title": "Malaysia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Malaysia"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MYS"
+     ],
+     "owner": "Malaya",
+     "source": {
+      "title": "Federation of Malaya (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Federation_of_Malaya"
+     }
+    },
+    {
+     "pieces": [
+      "SGP"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "State of Singapore (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/State_of_Singapore"
+     },
+     "territory": "Singapore"
+    },
+    {
+     "pieces": [
+      "MYS-1187"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Crown Colony of Sarawak (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Crown_Colony_of_Sarawak"
+     },
+     "territory": "Crown Colony of Sarawak"
+    },
+    {
+     "pieces": [
+      "MYS-1186",
+      "MYS-4833"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "North Borneo (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/North_Borneo"
+     },
+     "territory": "North Borneo"
+    }
+   ]
+  },
+  {
+   "date": "1963-01-18",
+   "what": "Aden Colony joins the Federation of South Arabia as the State of Aden",
+   "source": {
+    "title": "Federation of South Arabia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Federation_of_South_Arabia"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "YEM-3510"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Aden Colony (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Aden_Colony"
+     },
+     "territory": "Aden Colony"
+    }
+   ]
+  },
+  {
+   "date": "1962-10-09",
+   "what": "Uganda becomes independent",
+   "source": {
+    "title": "Uganda (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Uganda"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "UGA"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Uganda Protectorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Uganda_Protectorate"
+     },
+     "territory": "Uganda Protectorate"
+    }
+   ]
+  },
+  {
+   "date": "1962-08-31",
+   "what": "Trinidad and Tobago becomes independent",
+   "source": {
+    "title": "Trinidad and Tobago (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Trinidad_and_Tobago"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TTO"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Trinidad and Tobago (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Trinidad_and_Tobago"
+     },
+     "territory": "Trinidad and Tobago"
+    }
+   ]
+  },
+  {
+   "date": "1962-08-06",
+   "what": "Jamaica becomes independent; the Cayman Islands and the Turks and Caicos Islands, until then its dependencies, stay British",
+   "source": {
+    "title": "Jamaica (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Jamaica"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "JAM"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Jamaica (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Jamaica"
+     },
+     "territory": "Jamaica"
+    }
+   ]
+  },
+  {
+   "date": "1962-05-31",
+   "what": "The West Indies Federation is dissolved after Jamaica and Trinidad vote to leave it",
+   "source": {
+    "title": "West Indies Federation (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/West_Indies_Federation"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "JAM",
+      "CYM",
+      "TCA",
+      "TTO",
+      "BRB",
+      "ATG",
+      "KNA",
+      "AIA",
+      "MSR",
+      "DMA",
+      "LCA",
+      "VCT",
+      "GRD"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "West Indies Federation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/West_Indies_Federation"
+     },
+     "territory": "West Indies Federation"
+    }
+   ]
+  },
+  {
+   "date": "1961-12-09",
+   "what": "Tanganyika, a UN trust territory under British administration, becomes independent",
+   "source": {
+    "title": "Tanganyika (1961–1964) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tanganyika_(1961–1964)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TZA"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Tanganyika Territory (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tanganyika_Territory"
+     },
+     "territory": "Tanganyika Territory",
+     "hatch": {
+      "by": "United Nations",
+      "since": "1946-12-13",
+      "trust": true,
+      "note": "Administered by the United Kingdom, under a League of Nations mandate from 1922",
+      "source": {
+       "title": "United Nations trust territories (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/United_Nations_trust_territories"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "TZA-3337",
+      "TZA-3383",
+      "TZA-3384",
+      "TZA-3381",
+      "TZA-3380"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Sultanate of Zanzibar (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sultanate_of_Zanzibar"
+     },
+     "territory": "Zanzibar"
+    }
+   ]
+  },
+  {
+   "date": "1961-06-19",
+   "what": "Kuwait ends British protection and becomes independent",
+   "source": {
+    "title": "Kuwait (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kuwait"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "KWT"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Kuwait (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kuwait"
+     },
+     "territory": "Kuwait"
+    }
+   ]
+  },
+  {
+   "date": "1961-06-01",
+   "what": "The Northern Cameroons join Nigeria after the February 1961 plebiscite",
+   "source": {
+    "title": "Northern Cameroons (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Northern_Cameroons"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ncam-borno",
+      "ncam-adamawa-north",
+      "ncam-adamawa-south",
+      "ncam-taraba"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British Cameroons (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Cameroons"
+     },
+     "territory": "British Cameroons",
+     "hatch": {
+      "by": "United Nations",
+      "since": "1946-12-13",
+      "trust": true,
+      "note": "Administered by the United Kingdom as part of Nigeria, under a League of Nations mandate from 1922",
+      "source": {
+       "title": "United Nations trust territories (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/United_Nations_trust_territories"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1961-04-27",
+   "what": "Sierra Leone becomes independent",
+   "source": {
+    "title": "Sierra Leone (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Sierra_Leone"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SLE"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Sierra Leone Colony and Protectorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sierra_Leone_Colony_and_Protectorate"
+     },
+     "territory": "Sierra Leone Colony and Protectorate"
+    }
+   ]
+  },
+  {
+   "date": "1960-10-01",
+   "what": "Nigeria becomes independent; the Northern Cameroons stay a British-run trust territory",
+   "source": {
+    "title": "Nigeria (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Nigeria"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "NGA"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Colonial Nigeria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Colonial_Nigeria"
+     },
+     "territory": "Colonial Nigeria"
+    },
+    {
+     "pieces": [
+      "ncam-borno",
+      "ncam-adamawa-north",
+      "ncam-adamawa-south",
+      "ncam-taraba"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British Cameroons (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Cameroons"
+     },
+     "territory": "British Cameroons",
+     "hatch": {
+      "by": "United Nations",
+      "since": "1946-12-13",
+      "trust": true,
+      "note": "Administered by the United Kingdom as part of Nigeria, under a League of Nations mandate from 1922",
+      "source": {
+       "title": "United Nations trust territories (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/United_Nations_trust_territories"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1960-08-16",
+   "what": "Cyprus becomes independent; Britain keeps the Sovereign Base Areas of Akrotiri and Dhekelia",
+   "source": {
+    "title": "Cyprus (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Cyprus"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "CYP",
+      "CYN",
+      "ESB",
+      "WSB"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British Cyprus (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Cyprus"
+     },
+     "territory": "British Cyprus"
+    }
+   ]
+  },
+  {
+   "date": "1960-06-26",
+   "what": "British Somaliland becomes independent as the State of Somaliland and joins Somalia five days later",
+   "source": {
+    "title": "British Somaliland (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/British_Somaliland"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SOL"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British Somaliland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Somaliland"
+     },
+     "territory": "British Somaliland"
     }
    ]
   }
