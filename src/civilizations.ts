@@ -32,6 +32,8 @@ export interface Civilization {
   periods?: { from: number; to: number; name: string }[];
   /** For a territory (Portuguese Angola, Macau), the realm name of the state it is part of. */
   partOf?: string;
+  /** The years it was a territory, when it was also a state of its own (Bahrain until 1971). */
+  partOfYears?: [number, number];
 }
 
 /** Outlines at their largest, by civilization id, as rings of [x, y, …] in a 100 × 100 box. */
