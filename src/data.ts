@@ -117,6 +117,8 @@ interface Index {
   notCountries?: string[];
   /** Realms and territories before and after each one on the same land, from the rebuilt borders. */
   lineage?: Record<string, { before: string[]; after: string[] }>;
+  /** Each realm's colour on the home globe, as a position in TODAY_COLOURS, worked out by the build. */
+  homeColours?: Record<string, number>;
 }
 
 /**
