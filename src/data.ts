@@ -74,9 +74,12 @@ export const isOverlay = (p: Polity) => p.kind !== undefined;
  * empire shows in one colour with its homeland, or else its own realm's, or
  * else the colour of the state it is a dependency of.
  */
-export function highlightOf(colors: Map<string, string>, p: Polity): string | undefined {
+export function highlightOf(colors: Map<string, string>, p: Polity, ownerFirst = false): string | undefined {
   return (
     p.groups?.map((g) => colors.get(g)).find((c) => c !== undefined) ??
+    // On the home globe a territory wears its owner's colour, even when a
+    // later country shares its name (Antigua and Barbuda, British until 1981).
+    (ownerFirst && p.partOf ? colors.get(p.partOf) : undefined) ??
     colors.get(p.name) ??
     (p.partOf ? colors.get(p.partOf) : undefined)
   );
@@ -330,7 +333,7 @@ export function foldedInGroup(p: Polity, shown: ReadonlySet<string>, open: Reado
  * Africa) in one colour: that of its first highlighted member, so the group
  * shows as one until a click opens it.
  */
-export function withClosedGroups(colors: Map<string, string>, polities: Iterable<Polity>, open: ReadonlySet<string>): Map<string, string> {
+export function withClosedGroups(colors: Map<string, string>, polities: Iterable<Polity>, open: ReadonlySet<string>, ownerFirst = false): Map<string, string> {
   const outlined = new Set<string>();
   const members: Polity[] = [];
   for (const p of polities) {
@@ -341,7 +344,7 @@ export function withClosedGroups(colors: Map<string, string>, polities: Iterable
   for (const p of members) {
     for (const g of p.groups!) {
       if (!outlined.has(g) || open.has(g) || out.has(g)) continue;
-      const color = highlightOf(colors, p);
+      const color = highlightOf(colors, p, ownerFirst);
       if (color) out.set(g, color);
     }
   }

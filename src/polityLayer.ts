@@ -222,6 +222,7 @@ export class PolityLayer {
   private highlight = new Map<string, string>();
   /** The colours asked for, before closed groups take one colour. */
   private chosen = new Map<string, string>();
+  private ownerFirst = false;
   /** Name of the greyed realm under the pointer. */
   private hovered: string | null = null;
   /** Today's border of the country being looked at. */
@@ -341,11 +342,11 @@ export class PolityLayer {
 
   /** A realm's colour on the globe, or undefined when it is greyed. */
   colorOf(p: Polity): string | undefined {
-    return highlightOf(this.highlight, p);
+    return highlightOf(this.highlight, p, this.ownerFirst);
   }
 
   isHighlighted(p: Polity): boolean {
-    return highlightOf(this.highlight, p) !== undefined;
+    return highlightOf(this.highlight, p, this.ownerFirst) !== undefined;
   }
 
   private visibleKind(p: Polity): boolean {
@@ -358,10 +359,10 @@ export class PolityLayer {
   /** Whether the land under a hatching is drawn highlighted, and so higher. */
   private landHighlighted(h: Polity): boolean {
     // A hatching is named after the land's owner (France under German occupation).
-    if (highlightOf(this.highlight, h) !== undefined) return true;
+    if (highlightOf(this.highlight, h, this.ownerFirst) !== undefined) return true;
     const rings = new Set(h.rings);
     for (const q of this.polities.values()) {
-      if (!q.kind && q.from <= h.to && q.to >= h.from && q.rings.some((r) => rings.has(r)) && highlightOf(this.highlight, q) !== undefined) return true;
+      if (!q.kind && q.from <= h.to && q.to >= h.from && q.rings.some((r) => rings.has(r)) && highlightOf(this.highlight, q, this.ownerFirst) !== undefined) return true;
     }
     return false;
   }
@@ -459,14 +460,18 @@ export class PolityLayer {
     this.scene.requestRender();
   }
 
-  setHighlight(colors: Map<string, string>) {
+  /** ownerFirst: territories take their owner's colour (the home globe). */
+  setHighlight(colors: Map<string, string>, ownerFirst = false) {
+    // Switching how territories are coloured rebuilds every shape.
+    const flipped = ownerFirst !== this.ownerFirst;
+    this.ownerFirst = ownerFirst;
     this.chosen = new Map(colors);
-    this.applyHighlight();
+    this.applyHighlight(flipped);
   }
 
   /** The chosen colours, with each closed group in one colour. */
-  private applyHighlight() {
-    const colors = withClosedGroups(this.chosen, this.polities.values(), this.openGroups);
+  private applyHighlight(all = false) {
+    const colors = withClosedGroups(this.chosen, this.polities.values(), this.openGroups, this.ownerFirst);
     const changed = new Set<string>();
     for (const [name, color] of colors) if (this.highlight.get(name) !== color) changed.add(name);
     for (const name of this.highlight.keys()) if (!colors.has(name)) changed.add(name);
@@ -474,6 +479,7 @@ export class PolityLayer {
     // Shapes whose colour or height changes are rebuilt on the next update.
     for (const p of [...this.drawn.keys()]) {
       if (
+        all ||
         changed.has(p.name) ||
         p.groups?.some((name) => changed.has(name)) ||
         (p.partOf && changed.has(p.partOf)) ||
@@ -618,7 +624,7 @@ export class PolityLayer {
             ? BLANK_COLOR
             : p.kind === "group"
               ? GROUP_COLOR
-              : highlightOf(this.highlight, p);
+              : highlightOf(this.highlight, p, this.ownerFirst);
     const highlighted = !p.kind && color !== undefined;
     // A hatching sits just above its land, which is higher when highlighted.
     const lifted = p.kind === "hatch" && this.landHighlighted(p);
