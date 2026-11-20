@@ -187,6 +187,7 @@ for (const c of changes) {
     if (b.owner) knownRealm(b.owner, where);
     if (b.territory) knownRealm(b.territory, where);
     if (b.hatch) knownRealm(b.hatch.by, where);
+    if (b.hatch?.with) knownRealm(b.hatch.with, where);
   }
 }
 if (problems.length) {
@@ -350,6 +351,7 @@ for (let year = TODAY; year >= firstReviewed; year--) {
           by: h.by,
           since: h.since,
           note: h.note,
+          ...(h.with && { with: h.with }),
           ...(h.trust && { trust: true }),
           source: { title: h.source.title, url: h.source.url, ...(h.map && { map: h.map }) },
         });
@@ -506,6 +508,7 @@ for (const [key, list] of runs) {
       ...(m.display && { display: m.display }),
       ...(m.kind && { kind: m.kind }),
       ...(m.by && { by: m.by, since: m.since, note: m.note }),
+      ...(m.with && { with: m.with }),
       ...(m.trust && { trust: true }),
       ...(m.source && { source: m.source }),
       label: o.label,

@@ -21,7 +21,7 @@ import {
   SceneTransforms,
   VerticalOrigin,
 } from "cesium";
-import { BLANK_COLOR, BLANK_FILL_ALPHA, MUTED } from "./colors";
+import { BLANK_COLOR, BLANK_FILL_ALPHA, JOINT_DARK, JOINT_LIGHT, MUTED } from "./colors";
 import { foldedInGroup, highlightOf, isOverlay, withClosedGroups, type Polity } from "./data";
 import { inRing } from "./frame";
 
@@ -63,22 +63,27 @@ const HATCH_SPACING_KM = 12;
 // Land not reviewed yet: a faint flat grey, under the realms.
 const UNREVIEWED_COLOR = "#3a3f46";
 const UNREVIEWED_ALPHA = 0.72;
+// Land ruled jointly by two states (a condominium) is hatched in both
+// colours, one line in each: color2 is the second state's (else color).
 const HATCH_SOURCE = `
 uniform vec4 color;
+uniform vec4 color2;
 uniform float repeat;
 czm_material czm_getMaterial(czm_materialInput materialInput) {
   czm_material material = czm_getDefaultMaterial(materialInput);
-  float v = fract((materialInput.st.s + materialInput.st.t) * repeat);
-  material.diffuse = color.rgb;
-  material.alpha = color.a * step(0.55, v);
+  float x = (materialInput.st.s + materialInput.st.t) * repeat;
+  float v = fract(x);
+  vec4 c = fract(x * 0.5) < 0.5 ? color : color2;
+  material.diffuse = c.rgb;
+  material.alpha = c.a * step(0.55, v);
   return material;
 }`;
 
 /** A diagonal hatch, lines about HATCH_SPACING_KM apart across a shape of `extentKm`. */
-function hatchMaterial(color: Color, extentKm: number): Material {
+function hatchMaterial(color: Color, extentKm: number, color2 = color): Material {
   return new Material({
     fabric: {
-      uniforms: { color, repeat: Math.min(400, Math.max(3, extentKm / HATCH_SPACING_KM)) },
+      uniforms: { color, color2, repeat: Math.min(400, Math.max(3, extentKm / HATCH_SPACING_KM)) },
       source: HATCH_SOURCE,
     },
     translucent: true,
@@ -166,6 +171,8 @@ class Piece {
     readonly fillColor: Color,
     readonly lineColor: Color,
     readonly highlighted: boolean,
+    /** A jointly ruled land's hatch: the second state's colour. */
+    readonly fillColor2?: Color,
   ) {}
 
   get ready(): boolean {
@@ -359,9 +366,14 @@ export class PolityLayer {
     return false;
   }
 
-  /** The colour of a hatch: the holder's when it is highlighted, else a light grey. */
+  /**
+   * The colour of a hatch: the holder's when it is highlighted, else a light
+   * grey; for land ruled jointly, both rulers' as "first/second".
+   */
   private hatchColor(p: Polity): string {
-    return (p.by && this.highlight.get(p.by)) ?? "#e4e7ea";
+    if (!p.with) return (p.by && this.highlight.get(p.by)) ?? "#e4e7ea";
+    // Two rulers not highlighted are still told apart: light and dark lines.
+    return `${this.highlight.get(p.by!) ?? JOINT_LIGHT}/${this.highlight.get(p.with) ?? JOINT_DARK}`;
   }
 
   /** Draws these rings as a dashed white border above every realm, or none. */
@@ -566,6 +578,9 @@ export class PolityLayer {
                 : CONTEXT_FILL_ALPHA;
       const lineAlpha = piece.hovered ? 0.95 : piece.lineColor.alpha;
       piece.fillMaterial.uniforms.color = Color.fromAlpha(piece.fillColor, base * opacity, piece.fillMaterial.uniforms.color);
+      if (piece.kind === "hatch") {
+        piece.fillMaterial.uniforms.color2 = Color.fromAlpha(piece.fillColor2 ?? piece.fillColor, base * opacity, piece.fillMaterial.uniforms.color2);
+      }
       piece.lineMaterial.uniforms.color = Color.fromAlpha(piece.lineColor, lineAlpha * opacity, piece.lineMaterial.uniforms.color);
     }
     if (this.drawn.size > MAX_BUILT) this.release(year);
@@ -690,20 +705,22 @@ export class PolityLayer {
           : highlighted
             ? FEATURED_HEIGHT
             : CONTEXT_HEIGHT - (kind ? 500 : 0);
-    const fillColor = Color.fromCssColorString(color ?? MUTED);
+    const [first, second] = (color ?? MUTED).split("/");
+    const fillColor = Color.fromCssColorString(first);
+    const fillColor2 = second ? Color.fromCssColorString(second) : undefined;
     const lineColor = kind
       ? fillColor.withAlpha(kind === "hatch" ? 0.7 : kind === "group" ? 0.9 : kind === "blank" ? 0.8 : 0)
       : highlighted
         ? Color.fromCssColorString(color!).brighten(0.35, new Color()).withAlpha(0.95)
         : Color.fromCssColorString("#e4e7ea").withAlpha(0.45);
     const fillMaterial =
-      kind === "hatch" ? hatchMaterial(fillColor.withAlpha(0), extentKm(rings)) : Material.fromType("Color", { color: fillColor.withAlpha(0) });
+      kind === "hatch" ? hatchMaterial(fillColor.withAlpha(0), extentKm(rings), (fillColor2 ?? fillColor).withAlpha(0)) : Material.fromType("Color", { color: fillColor.withAlpha(0) });
     // Land no state held has a dashed outline of today's borders.
     const lineMaterial =
       kind === "blank"
         ? Material.fromType("PolylineDash", { color: lineColor.withAlpha(0), dashLength: 16 })
         : Material.fromType("Color", { color: lineColor.withAlpha(0) });
-    const piece = new Piece(key, fillMaterial, lineMaterial, fillColor, lineColor, highlighted);
+    const piece = new Piece(key, fillMaterial, lineMaterial, fillColor, lineColor, highlighted, fillColor2);
     piece.kind = kind;
     const vertexFormat = (kind === "hatch" ? MaterialAppearance.MaterialSupport.TEXTURED : MaterialAppearance.MaterialSupport.BASIC).vertexFormat;
     // Picking a piece finds the snapshot it is drawn for (see polityOf).

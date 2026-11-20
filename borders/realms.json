@@ -1967,7 +1967,18 @@
   "wikidata": "Q752431",
   "fr": "Nouvelles-Hébrides",
   "es": "Nuevas Hébridas",
-  "notACountry": true
+  "notACountry": true,
+  "periods": [
+   {
+    "from": "1906-10-20",
+    "name": "New Hebrides",
+    "detail": "France and United Kingdom",
+    "detailFr": "France et Royaume-Uni",
+    "detailEs": "Francia y Reino Unido",
+    "note": "Anglo-French condominium",
+    "jointly": true
+   }
+  ]
  },
  "New Zealand": {
   "wikipedia": "New Zealand",
@@ -3026,5 +3037,99 @@
   "wikipedia": "Île Sainte-Marie",
   "fr": "Île Sainte-Marie",
   "es": "Isla Santa María"
+ },
+ "British Hong Kong": {
+  "wikipedia": "British Hong Kong",
+  "wikidata": "Q1054923",
+  "fr": "Hong Kong britannique",
+  "es": "Hong Kong británico",
+  "withOwner": false
+ },
+ "British Solomon Islands": {
+  "wikipedia": "British Solomon Islands",
+  "wikidata": "Q13410267",
+  "fr": "Îles Salomon britanniques",
+  "es": "Islas Salomón británicas",
+  "withOwner": false
+ },
+ "Gilbert and Ellice Islands": {
+  "wikipedia": "Gilbert and Ellice Islands",
+  "wikidata": "Q1050859",
+  "fr": "Îles Gilbert et Ellice",
+  "es": "Islas Gilbert y Ellice"
+ },
+ "Gilbert Islands": {
+  "wikipedia": "Gilbert Islands",
+  "wikidata": "Q271876",
+  "fr": "Îles Gilbert",
+  "es": "Islas Gilbert"
+ },
+ "Canton and Enderbury Islands": {
+  "wikipedia": "Canton and Enderbury Islands",
+  "wikidata": "Q2618621",
+  "fr": "Îles Canton et Enderbury",
+  "es": "Islas Canton y Enderbury",
+  "notACountry": true,
+  "periods": [
+   {
+    "from": "1939-04-06",
+    "name": "Canton and Enderbury Islands",
+    "detail": "United Kingdom and United States",
+    "detailFr": "Royaume-Uni et États-Unis",
+    "detailEs": "Reino Unido y Estados Unidos",
+    "note": "Anglo-American condominium",
+    "jointly": true
+   }
+  ]
+ },
+ "British Indian Ocean Territory": {
+  "wikipedia": "British Indian Ocean Territory",
+  "wikidata": "Q43448",
+  "fr": "Territoire britannique de l'océan Indien",
+  "es": "Territorio Británico del Océano Índico",
+  "withOwner": false
+ },
+ "Southern Rhodesia": {
+  "wikipedia": "Southern Rhodesia",
+  "wikidata": "Q750583",
+  "fr": "Rhodésie du Sud",
+  "es": "Rodesia del Sur"
+ },
+ "Rhodesia": {
+  "wikipedia": "Rhodesia",
+  "wikidata": "Q217169",
+  "fr": "Rhodésie",
+  "es": "Rodesia",
+  "hatchOnly": true
+ },
+ "British Honduras": {
+  "wikipedia": "British Honduras",
+  "wikidata": "Q1643555",
+  "fr": "Honduras britannique",
+  "es": "Honduras Británica",
+  "withOwner": false,
+  "periods": [
+   {
+    "from": "1973-06-01",
+    "name": "Belize",
+    "wikipedia": "British Honduras",
+    "fr": "Belize",
+    "es": "Belice",
+    "note": "The colony is renamed Belize",
+    "withOwner": true
+   }
+  ]
+ },
+ "Saint Christopher-Nevis-Anguilla": {
+  "wikipedia": "Saint Christopher-Nevis-Anguilla",
+  "wikidata": "Q1637975",
+  "fr": "Saint-Christophe-Niévès-Anguilla",
+  "es": "San Cristóbal-Nieves-Anguila"
+ },
+ "Falkland Islands Dependencies": {
+  "wikipedia": "Falkland Islands Dependencies",
+  "wikidata": "Q5431953",
+  "fr": "Dépendances des îles Malouines",
+  "es": "Dependencias de las Islas Malvinas"
  }
 }
