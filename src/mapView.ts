@@ -3,7 +3,7 @@ import { geoCylindricalEqualArea, geoEckert4, geoMiller, geoMollweide, geoRobins
 import type { Feature, MultiPolygon, Polygon } from "geojson";
 import { feature } from "topojson-client";
 import landUrl from "world-atlas/land-50m.json?url";
-import { BLANK_COLOR, BLANK_FILL_ALPHA, JOINT_DARK, JOINT_LIGHT, MUTED } from "./colors";
+import { BLANK_COLOR, BLANK_FILL_ALPHA, JOINT_DARK, JOINT_LIGHT, MUTED, ROUGH_COLOR, ROUGH_LABEL_AREA } from "./colors";
 import { foldedInGroup, highlightOf, withClosedGroups, type Polity } from "./data";
 import { shapeOpacity } from "./polityLayer";
 import { badgeUrl, eventOpacity, supersededYears, type EventKind, type HistoryEvent } from "./events";
@@ -109,6 +109,8 @@ export class MapView {
   private openGroups = new Set<string>();
   /** A realm's name as shown on its label. */
   nameOf = (realm: string) => realm;
+  /** The warning written over a war zone whose lines are rough. */
+  roughText = () => "⚠";
 
   private choice = PROJECTIONS[0];
   private projection: GeoProjection = PROJECTIONS[0].make();
@@ -620,6 +622,23 @@ export class MapView {
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
     ctx.lineJoin = "round";
+    // An active war zone's warning that its lines are rough, before the other names.
+    ctx.font = "700 15px 'Instrument Sans Variable', sans-serif";
+    for (const { p, opacity } of hatched) {
+      if (opacity <= 0.5 || !p.rough || !p.label || p.area < ROUGH_LABEL_AREA) continue;
+      const at = this.projection(p.label);
+      if (!at || at[0] < 0 || at[0] > this.width || at[1] < 0 || at[1] > this.height) continue;
+      const text = this.roughText();
+      const w = ctx.measureText(text).width / 2 + 3;
+      ctx.fillStyle = "rgba(0, 0, 0, 0.7)";
+      ctx.beginPath();
+      ctx.roundRect(at[0] - w - 8, at[1] - 13, 2 * w + 16, 26, 6);
+      ctx.fill();
+      ctx.fillStyle = ROUGH_COLOR;
+      ctx.fillText(text, at[0], at[1]);
+      placed.push([at[0] - w - 8, at[1] - 13, at[0] + w + 8, at[1] + 13]);
+    }
+
     for (const { p } of candidates) {
       if (named.has(p.name)) continue;
       const at = this.projection(p.label!);

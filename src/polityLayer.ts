@@ -21,7 +21,7 @@ import {
   SceneTransforms,
   VerticalOrigin,
 } from "cesium";
-import { BLANK_COLOR, BLANK_FILL_ALPHA, JOINT_DARK, JOINT_LIGHT, MUTED } from "./colors";
+import { BLANK_COLOR, BLANK_FILL_ALPHA, JOINT_DARK, JOINT_LIGHT, MUTED, ROUGH_COLOR, ROUGH_LABEL_AREA } from "./colors";
 import { foldedInGroup, highlightOf, isOverlay, withClosedGroups, type Polity } from "./data";
 import { inRing } from "./frame";
 
@@ -236,6 +236,8 @@ export class PolityLayer {
   private openGroups = new Set<string>();
   /** A realm's name as shown on its label. */
   nameOf = (realm: string) => realm;
+  /** The warning written over a war zone whose lines are rough. */
+  roughText = () => "⚠";
   /**
    * Years ahead of the current one whose shapes are built in advance; raised
    * while playing so shapes are ready by the time their year comes.
@@ -433,7 +435,7 @@ export class PolityLayer {
     this.labelsDirty = false;
     this.lastView = view;
     this.lastDeclutter = now;
-    const rank = (p: Polity, d: Drawn) => (d.highlighted && this.labelAll ? 2 : p.kind === "group" ? 1 : 0);
+    const rank = (p: Polity, d: Drawn) => (p.kind === "hatch" ? 3 : d.highlighted && this.labelAll ? 2 : p.kind === "group" ? 1 : 0);
     const due = [...this.drawn].filter(([, d]) => d.label && d.wanted).sort((a, b) => rank(b[0], b[1]) - rank(a[0], a[1]) || b[0].area - a[0].area);
     const placed: [number, number, number, number][] = [];
     const at = new Cartesian2();
@@ -448,7 +450,7 @@ export class PolityLayer {
         label.show = false;
         continue;
       }
-      const size = (rank(p, d) === 2 ? 15 : 12) * (range < 1.2e7 ? 1.15 : 1);
+      const size = (rank(p, d) === 3 ? 19 : rank(p, d) === 2 ? 15 : 12) * (range < 1.2e7 ? 1.15 : 1);
       const w = (label.text.length * size * 0.56) / 2 + 3;
       const h = size * 0.8;
       // A group's name moves above or below the names already there.
@@ -670,6 +672,24 @@ export class PolityLayer {
         outlineColor: Color.BLACK.withAlpha(0.85),
         outlineWidth: 3,
         style: LabelStyle.FILL_AND_OUTLINE,
+        horizontalOrigin: HorizontalOrigin.CENTER,
+        verticalOrigin: VerticalOrigin.CENTER,
+        scaleByDistance: new NearFarScalar(2e6, 1.15, 2.5e7, 0.8),
+        show: false,
+      });
+    }
+    // An active war zone carries a warning that its lines are rough.
+    if (p.kind === "hatch" && p.rough && p.label && p.area >= ROUGH_LABEL_AREA) {
+      label = this.labels.add({
+        id: p,
+        position: Cartesian3.fromDegrees(p.label[0], p.label[1], FEATURED_HEIGHT + 4000),
+        text: this.roughText(),
+        font: "700 17px 'Instrument Sans Variable', sans-serif",
+        fillColor: Color.fromCssColorString(ROUGH_COLOR),
+        showBackground: true,
+        backgroundColor: Color.BLACK.withAlpha(0.7),
+        backgroundPadding: new Cartesian2(10, 6),
+        style: LabelStyle.FILL,
         horizontalOrigin: HorizontalOrigin.CENTER,
         verticalOrigin: VerticalOrigin.CENTER,
         scaleByDistance: new NearFarScalar(2e6, 1.15, 2.5e7, 0.8),
