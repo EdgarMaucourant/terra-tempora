@@ -34,6 +34,13 @@ export interface Civilization {
   partOf?: string;
   /** The years it was a territory, when it was also a state of its own (Bahrain until 1971). */
   partOfYears?: [number, number];
+  /** For such a realm, the first year it stood as a state of its own (Jamaica, 1962). */
+  ownFrom?: number;
+}
+
+/** The years a civilization is shown with: a country that was a territory first counts from its own start. */
+export function civYears(c: Pick<Civilization, "from" | "to" | "ownFrom">): [number, number] {
+  return [c.ownFrom ?? c.from, c.to];
 }
 
 /** Outlines at their largest, by civilization id, as rings of [x, y, …] in a 100 × 100 box. */

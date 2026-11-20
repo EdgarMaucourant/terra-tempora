@@ -1,4 +1,4 @@
-import { civEraText, type Civilization } from "./civilizations";
+import { civEraText, civYears, type Civilization } from "./civilizations";
 import { lang, t } from "./i18n";
 import { formatRange } from "./years";
 
@@ -90,7 +90,7 @@ export class Picker {
       name.textContent = c.name;
       const meta = document.createElement("span");
       meta.className = "picker-meta";
-      meta.textContent = `${formatRange(c.from, c.to)} · ${civEraText(c)}`;
+      meta.textContent = `${formatRange(...civYears(c))} · ${civEraText(c)}`;
       row.append(box, name, meta);
       this.rows.set(c.id, { row, box, text: [c.name, ...c.names].join(" ").toLocaleLowerCase(lang) });
       return row;
