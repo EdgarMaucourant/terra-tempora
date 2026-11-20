@@ -17,6 +17,7 @@ import "cesium/Build/Cesium/Widgets/CesiumWidget/CesiumWidget.css";
 import "@fontsource-variable/instrument-sans";
 import "@fontsource-variable/newsreader/opsz.css";
 import "./style.css";
+import "./cesiumFixes";
 import { AxisLock } from "./axisLock";
 import { setView, track, watchTime } from "./analytics";
 import { civEraText, Civilizations, type Civilization } from "./civilizations";
