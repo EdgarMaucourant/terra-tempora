@@ -23,8 +23,8 @@
     "WSB",
     "IOT"
    ],
-   "from": 1975,
-   "why": "The United Kingdom with the Crown Dependencies (Guernsey, Jersey, the Isle of Man), its overseas territories and the Chagos Archipelago, whose land has not changed hands since 1975"
+   "from": 1965,
+   "why": "The United Kingdom with the Crown Dependencies (Guernsey, Jersey, the Isle of Man), its overseas territories and the Chagos Archipelago, whose land has not changed hands since 1965"
   },
   {
    "pieces": [
@@ -42,8 +42,30 @@
     "SLB",
     "SYC"
    ],
-   "from": 1975,
-   "why": "Hong Kong, Brunei, Southern Rhodesia and the colonies in the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1975, with today's borders, until their independence or handover"
+   "from": 1965,
+   "why": "Hong Kong, Brunei, Southern Rhodesia and the colonies in the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence or handover"
+  },
+  {
+   "pieces": [
+    "BHR",
+    "QAT",
+    "ARE",
+    "abu-musa",
+    "YEM",
+    "kuria-muria",
+    "FJI",
+    "TON",
+    "SWZ",
+    "MUS",
+    "BWA",
+    "LSO",
+    "BRB",
+    "GUY",
+    "BHS",
+    "GRD"
+   ],
+   "from": 1965,
+   "why": "The Gulf protected states, South Arabia with all of Yemen (North Yemen until 1990), and the colonies and protectorates in Africa, the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence"
   }
  ],
  "changes": [
@@ -68,6 +90,44 @@
      },
      "map": "https://commons.wikimedia.org/wiki/File:Hong Kong on the globe (Hong Kong centered with inset).svg",
      "territory": "British Hong Kong"
+    }
+   ]
+  },
+  {
+   "date": "1990-05-22",
+   "what": "North Yemen and South Yemen unite as the Republic of Yemen",
+   "source": {
+    "title": "Yemeni unification (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Yemeni_unification"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "YEM"
+     ],
+     "owner": "North Yemen",
+     "source": {
+      "title": "North Yemen (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/North_Yemen"
+     }
+    },
+    {
+     "pieces": [
+      "YEM-3510",
+      "YEM-157",
+      "YEM-3511",
+      "YEM-336",
+      "dali-south",
+      "YEM-3497",
+      "YEM-332",
+      "perim"
+     ],
+     "owner": "South Yemen",
+     "source": {
+      "title": "South Yemen (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/South_Yemen"
+     }
     }
    ]
   },
@@ -441,7 +501,7 @@
   },
   {
    "date": "1976-06-29",
-   "what": "Seychelles becomes independent, and the Aldabra group is handed back to it from the British Indian Ocean Territory",
+   "what": "Seychelles becomes independent, and the Aldabra and Farquhar groups and Desroches are handed back to it from the British Indian Ocean Territory",
    "source": {
     "title": "Seychelles (Wikipedia)",
     "url": "https://en.wikipedia.org/wiki/Seychelles"
@@ -498,6 +558,546 @@
      },
      "map": "https://commons.wikimedia.org/wiki/File:LocationGilbertandEllice.png",
      "territory": "Gilbert and Ellice Islands"
+    }
+   ]
+  },
+  {
+   "date": "1974-02-07",
+   "what": "Grenada becomes independent",
+   "source": {
+    "title": "Grenada (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Grenada"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "GRD"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "West Indies Associated States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/West_Indies_Associated_States"
+     },
+     "territory": "Grenada"
+    }
+   ]
+  },
+  {
+   "date": "1973-07-10",
+   "what": "The Bahamas become independent",
+   "source": {
+    "title": "The Bahamas (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/The_Bahamas"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "BHS"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British Bahamas (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Bahamas"
+     },
+     "territory": "British Bahamas"
+    }
+   ]
+  },
+  {
+   "date": "1972-10-01",
+   "what": "North Yemen takes Kamaran island from South Yemen during their border war",
+   "source": {
+    "title": "Kamaran (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kamaran"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "kamaran"
+     ],
+     "owner": "South Yemen",
+     "source": {
+      "title": "Kamaran (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kamaran"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1972-02-10",
+   "what": "Ras Al Khaimah joins the United Arab Emirates",
+   "source": {
+    "title": "Emirate of Ras Al Khaimah (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Emirate_of_Ras_Al_Khaimah"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ARE-338"
+     ],
+     "owner": "Ras Al Khaimah",
+     "source": {
+      "title": "Emirate of Ras Al Khaimah (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Emirate_of_Ras_Al_Khaimah"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1971-12-02",
+   "what": "Six of the Trucial States end British protection and form the United Arab Emirates; Ras Al Khaimah stays apart for ten weeks",
+   "source": {
+    "title": "United Arab Emirates (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/United_Arab_Emirates"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ARE"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Trucial States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Trucial_States"
+     },
+     "territory": "Trucial States"
+    }
+   ]
+  },
+  {
+   "date": "1971-11-30",
+   "what": "Iran takes the Greater and Lesser Tunbs from Ras Al Khaimah and lands on Abu Musa under an agreement with Sharjah, two days before British protection ends",
+   "source": {
+    "title": "Greater and Lesser Tunbs (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Greater_and_Lesser_Tunbs"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "abu-musa"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Trucial States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Trucial_States"
+     },
+     "territory": "Trucial States"
+    }
+   ]
+  },
+  {
+   "date": "1971-09-03",
+   "what": "Qatar ends British protection and becomes independent",
+   "source": {
+    "title": "Qatar (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Qatar"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "QAT"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Qatar (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Qatar"
+     },
+     "territory": "Qatar"
+    }
+   ]
+  },
+  {
+   "date": "1971-08-15",
+   "what": "Bahrain ends British protection and becomes independent",
+   "source": {
+    "title": "Bahrain (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Bahrain"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "BHR"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Bahrain (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bahrain"
+     },
+     "territory": "Bahrain"
+    }
+   ]
+  },
+  {
+   "date": "1970-10-10",
+   "what": "Fiji becomes independent",
+   "source": {
+    "title": "Fiji (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Fiji"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "FJI"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Colony of Fiji (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Colony_of_Fiji"
+     },
+     "territory": "Colony of Fiji"
+    }
+   ]
+  },
+  {
+   "date": "1970-06-04",
+   "what": "Tonga, a British protected state since 1900, becomes fully independent",
+   "source": {
+    "title": "Tonga (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tonga"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TON"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Tonga (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tonga"
+     },
+     "territory": "Tonga"
+    }
+   ]
+  },
+  {
+   "date": "1969-03-19",
+   "what": "British troops land on Anguilla and end its self-declared republic",
+   "source": {
+    "title": "Republic of Anguilla (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Republic_of_Anguilla"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "AIA"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Saint Christopher-Nevis-Anguilla (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Saint_Christopher-Nevis-Anguilla"
+     },
+     "territory": "Saint Christopher-Nevis-Anguilla",
+     "hatch": {
+      "by": "Republic of Anguilla",
+      "since": "1967-05-30",
+      "note": "Anguillans expelled the St Kitts police on 30 May 1967 and ran the island themselves, declaring a republic that no state recognised, until British troops landed in March 1969",
+      "source": {
+       "title": "Republic of Anguilla (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Republic_of_Anguilla"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1968-09-06",
+   "what": "Swaziland becomes independent",
+   "source": {
+    "title": "Eswatini (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Eswatini"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SWZ"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "History of Eswatini (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/History_of_Eswatini"
+     },
+     "territory": "Eswatini"
+    }
+   ]
+  },
+  {
+   "date": "1968-03-12",
+   "what": "Mauritius becomes independent, without the Chagos Archipelago that Britain kept as the British Indian Ocean Territory",
+   "source": {
+    "title": "Mauritius (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Mauritius"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MUS"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British Mauritius (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Mauritius"
+     },
+     "territory": "British Mauritius"
+    },
+    {
+     "pieces": [
+      "IOT"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British Indian Ocean Territory (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Indian_Ocean_Territory"
+     },
+     "territory": "British Indian Ocean Territory"
+    }
+   ]
+  },
+  {
+   "date": "1967-11-30",
+   "what": "South Yemen becomes independent from the Federation and the Protectorate of South Arabia, and Britain hands the Kuria Muria Islands back to the Sultan of Muscat and Oman",
+   "source": {
+    "title": "South Yemen (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/South_Yemen"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "YEM-3510",
+      "YEM-157",
+      "YEM-3511",
+      "YEM-336",
+      "dali-south"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Federation of South Arabia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Federation_of_South_Arabia"
+     },
+     "territory": "Federation of South Arabia"
+    },
+    {
+     "pieces": [
+      "YEM-3497",
+      "YEM-332"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Protectorate of South Arabia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Protectorate_of_South_Arabia"
+     },
+     "territory": "Protectorate of South Arabia"
+    },
+    {
+     "pieces": [
+      "perim"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Perim (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Perim"
+     },
+     "territory": "Perim"
+    },
+    {
+     "pieces": [
+      "kamaran"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Kamaran (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kamaran"
+     },
+     "territory": "Kamaran"
+    },
+    {
+     "pieces": [
+      "kuria-muria"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Khuriya Muriya Islands (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Khuriya_Muriya_Islands"
+     },
+     "territory": "Khuriya Muriya Islands"
+    }
+   ]
+  },
+  {
+   "date": "1967-05-30",
+   "what": "Anguillans expel the St Kitts police and take control of their island",
+   "source": {
+    "title": "Republic of Anguilla (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Republic_of_Anguilla"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "AIA"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Saint Christopher-Nevis-Anguilla (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Saint_Christopher-Nevis-Anguilla"
+     },
+     "territory": "Saint Christopher-Nevis-Anguilla"
+    }
+   ]
+  },
+  {
+   "date": "1966-11-30",
+   "what": "Barbados becomes independent",
+   "source": {
+    "title": "Barbados (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Barbados"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "BRB"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Barbados (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Barbados"
+     },
+     "territory": "Barbados"
+    }
+   ]
+  },
+  {
+   "date": "1966-10-04",
+   "what": "Basutoland becomes independent as Lesotho",
+   "source": {
+    "title": "Lesotho (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Lesotho"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "LSO"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Basutoland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Basutoland"
+     },
+     "territory": "Basutoland"
+    }
+   ]
+  },
+  {
+   "date": "1966-09-30",
+   "what": "The Bechuanaland Protectorate becomes independent as Botswana",
+   "source": {
+    "title": "Botswana (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Botswana"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "BWA"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Bechuanaland Protectorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bechuanaland_Protectorate"
+     },
+     "territory": "Bechuanaland Protectorate"
+    }
+   ]
+  },
+  {
+   "date": "1966-05-26",
+   "what": "British Guiana becomes independent as Guyana",
+   "source": {
+    "title": "Guyana (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Guyana"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "GUY"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British Guiana (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Guiana"
+     },
+     "territory": "British Guiana"
+    }
+   ]
+  },
+  {
+   "date": "1965-11-11",
+   "what": "The white minority government of Southern Rhodesia declares independence as Rhodesia; Britain and the UN do not recognise it",
+   "source": {
+    "title": "Rhodesia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Rhodesia"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ZWE"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Southern Rhodesia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Southern_Rhodesia"
+     },
+     "territory": "Southern Rhodesia"
+    }
+   ]
+  },
+  {
+   "date": "1965-11-08",
+   "what": "Britain makes the British Indian Ocean Territory from the Chagos Archipelago, taken from Mauritius, and the Aldabra and Farquhar groups and Desroches, taken from Seychelles",
+   "source": {
+    "title": "British Indian Ocean Territory (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/British_Indian_Ocean_Territory"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "IOT"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British Mauritius (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Mauritius"
+     },
+     "territory": "British Mauritius"
+    },
+    {
+     "pieces": [
+      "aldabra-group"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Seychelles (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Seychelles"
+     },
+     "territory": "Seychelles"
     }
    ]
   }

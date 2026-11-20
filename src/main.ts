@@ -1642,7 +1642,33 @@ function heldYears(c: Civilization): { from: number; to: number } {
 }
 
 /** A civilization's name on its timeline lane, with the state a territory belonged to. */
-const laneName = (c: Civilization) => (c.partOf ? t("lanes.partOf", { name: c.name, owner: placeName(c.partOf) }) : c.name);
+const laneName = (c: Civilization) =>
+  c.partOf && !c.partOfYears ? t("lanes.partOf", { name: c.name, owner: placeName(c.partOf) }) : c.name;
+
+/**
+ * The names along a lane: the realm's periods, and for a realm that was a
+ * territory before it stood alone, "Bahrain (part of United Kingdom)" over
+ * those years only.
+ */
+function lanePeriods(c: Civilization): Lane["periods"] {
+  const periods = c.periods?.map((p) => ({ ...p, name: placeName(p.name) }));
+  const span = c.partOfYears;
+  if (!c.partOf || !span) return periods;
+  const owner = placeName(c.partOf);
+  const out: NonNullable<Lane["periods"]> = [];
+  for (const p of periods ?? [{ from: c.from, to: c.to, name: placeName(c.name) }]) {
+    const from = Math.max(p.from, span[0]);
+    const to = Math.min(p.to, span[1]);
+    if (from > to) {
+      out.push(p);
+      continue;
+    }
+    if (p.from < from) out.push({ ...p, to: from - 1 });
+    out.push({ from, to, name: t("lanes.partOf", { name: p.name, owner }) });
+    if (to < p.to) out.push({ ...p, from: to + 1 });
+  }
+  return out;
+}
 
 function showHighlight() {
   if (!active) return;
@@ -1661,7 +1687,7 @@ function showHighlight() {
   const lanes: Lane[] = highlighted.map((c) => ({
     name: laneName(c),
     ...heldYears(c),
-    periods: c.periods?.map((p) => ({ ...p, name: placeName(p.name) })),
+    periods: lanePeriods(c),
     before: neighboursOf(c, "before")?.map(toLink),
     after: neighboursOf(c, "after")?.map(toLink),
   }));
