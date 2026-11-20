@@ -15,7 +15,7 @@ import {
   Scene,
   SceneTransforms,
 } from "cesium";
-import { BLANK_COLOR, BLANK_FILL_ALPHA, JOINT_DARK, JOINT_LIGHT, MUTED, ROUGH_COLOR, ROUGH_LABEL_AREA } from "./colors";
+import { BLANK_COLOR, BLANK_FILL_ALPHA, JOINT_DARK, JOINT_LIGHT, MUTED, LABEL_OUTLINE, ROUGH_COLOR, ROUGH_LABEL_AREA } from "./colors";
 import { foldedInGroup, highlightOf, isOverlay, withClosedGroups, type Polity } from "./data";
 import { FlatLabel, FlatLabels } from "./flatLabels";
 import { inRing } from "./frame";
@@ -714,7 +714,7 @@ export class PolityLayer {
         text: this.nameOf(p.display ?? p.name),
         font: highlighted ? "600 15px 'Instrument Sans Variable', sans-serif" : "500 12px 'Instrument Sans Variable', sans-serif",
         fill: highlighted ? "#fbf6ec" : "#b4bac1",
-        outline: "rgba(0, 0, 0, 0.85)",
+        outline: LABEL_OUTLINE,
         outlineWidth: 3,
         near: [2e6, 1.15],
         far: [2.5e7, 0.8],
@@ -744,7 +744,7 @@ export class PolityLayer {
         text: this.nameOf(p.name).toUpperCase(),
         font: "italic 600 12px 'Instrument Sans Variable', sans-serif",
         fill: GROUP_COLOR,
-        outline: "rgba(0, 0, 0, 0.85)",
+        outline: LABEL_OUTLINE,
         outlineWidth: 3,
         near: [2e6, 1.15],
         far: [2.5e7, 0.8],
