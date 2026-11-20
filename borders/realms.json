@@ -720,7 +720,10 @@
     "wikipedia": "Eswatini",
     "fr": "Swaziland",
     "es": "Suazilandia",
-    "note": "Named Swaziland until 2018"
+    "note": "Named Swaziland until 2018",
+    "label": "Swaziland",
+    "labelFr": "Swaziland",
+    "labelEs": "Suazilandia"
    },
    {
     "from": "2018-04-19",
