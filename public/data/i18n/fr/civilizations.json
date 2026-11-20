@@ -20,6 +20,9 @@
  "australia": {
   "name": "Australie"
  },
+ "united-kingdom": {
+  "name": "Royaume-Uni"
+ },
  "french-west-africa": {
   "name": "Afrique-Occidentale française"
  },
@@ -55,9 +58,6 @@
  },
  "greenland": {
   "name": "Groenland"
- },
- "united-kingdom": {
-  "name": "Royaume-Uni"
  },
  "mexico": {
   "name": "Mexique"
@@ -98,6 +98,9 @@
  "french-chad": {
   "name": "Territoire du Tchad"
  },
+ "federation-of-rhodesia-and-nyasaland": {
+  "name": "Fédération de Rhodésie et du Nyassaland"
+ },
  "mali": {
   "name": "Mali"
  },
@@ -136,6 +139,12 @@
  },
  "tanzania": {
   "name": "Tanzanie"
+ },
+ "tanganyika": {
+  "name": "Tanganyika"
+ },
+ "tanganyika-territory": {
+  "name": "Territoire du Tanganyika"
  },
  "venezuela": {
   "name": "Venezuela"
@@ -199,6 +208,9 @@
  },
  "kenya": {
   "name": "Kenya"
+ },
+ "kenya-colony": {
+  "name": "Colonie du Kenya"
  },
  "botswana": {
   "name": "Botswana"
@@ -266,14 +278,14 @@
  "finland": {
   "name": "Finlande"
  },
+ "malaysia": {
+  "name": "Malaisie"
+ },
  "vietnam": {
   "name": "Viêt Nam"
  },
  "state-of-vietnam": {
   "name": "État du Viêt Nam"
- },
- "malaysia": {
-  "name": "Malaisie"
  },
  "ivory-coast": {
   "name": "Côte d'Ivoire"
@@ -325,6 +337,9 @@
  },
  "uganda": {
   "name": "Ouganda"
+ },
+ "uganda-protectorate": {
+  "name": "Protectorat de l'Ouganda"
  },
  "ghana": {
   "name": "Ghana"
@@ -413,11 +428,17 @@
  "bangladesh": {
   "name": "Bangladesh"
  },
+ "malaya": {
+  "name": "Malaya"
+ },
  "greece": {
   "name": "Grèce"
  },
  "nicaragua": {
   "name": "Nicaragua"
+ },
+ "crown-colony-of-sarawak": {
+  "name": "Colonie de Sarawak"
  },
  "eritrea": {
   "name": "Érythrée"
@@ -488,8 +509,14 @@
  "panama": {
   "name": "Panama"
  },
+ "north-borneo": {
+  "name": "Bornéo du Nord"
+ },
  "sierra-leone": {
   "name": "Sierra Leone"
+ },
+ "sierra-leone-colony-and-protectorate": {
+  "name": "Colonie et protectorat de Sierra Leone"
  },
  "trucial-states": {
   "name": "États de la Trêve"
@@ -632,6 +659,9 @@
  "el-salvador": {
   "name": "Salvador"
  },
+ "west-indies-federation": {
+  "name": "Fédération des Indes occidentales"
+ },
  "slovenia": {
   "name": "Slovénie"
  },
@@ -697,6 +727,9 @@
  },
  "the-gambia": {
   "name": "Gambie"
+ },
+ "gambia-colony-and-protectorate": {
+  "name": "Colonie et protectorat de Gambie"
  },
  "lebanon": {
   "name": "Liban"
@@ -773,17 +806,20 @@
  "ras-al-khaimah": {
   "name": "Ras el Khaïmah"
  },
+ "zanzibar": {
+  "name": "Zanzibar"
+ },
  "mayotte": {
   "name": "Mayotte"
  },
  "territory-of-the-comoros": {
   "name": "Territoire des Comores"
  },
- "mauritius": {
-  "name": "Maurice"
- },
  "british-mauritius": {
   "name": "Maurice britannique"
+ },
+ "mauritius": {
+  "name": "Maurice"
  },
  "guadeloupe": {
   "name": "Guadeloupe"
@@ -851,11 +887,14 @@
  "guam": {
   "name": "Guam"
  },
- "german-east-africa": {
-  "name": "Afrique orientale allemande"
+ "aden-colony": {
+  "name": "Colonie d'Aden"
  },
  "singapore": {
   "name": "Singapour"
+ },
+ "german-east-africa": {
+  "name": "Afrique orientale allemande"
  },
  "palau": {
   "name": "Palaos"
@@ -904,6 +943,9 @@
  },
  "malta": {
   "name": "Malte"
+ },
+ "crown-colony-of-malta": {
+  "name": "Colonie de Malte"
  },
  "cayman-islands": {
   "name": "îles Caïmans"
