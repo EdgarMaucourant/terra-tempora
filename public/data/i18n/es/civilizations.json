@@ -41,6 +41,12 @@
  "french-equatorial-africa": {
   "name": "África Ecuatorial Francesa"
  },
+ "sudan": {
+  "name": "Sudán"
+ },
+ "anglo-egyptian-sudan": {
+  "name": "Sudán anglo-egipcio"
+ },
  "democratic-republic-of-the-congo": {
   "name": "República Democrática del Congo"
  },
@@ -67,9 +73,6 @@
  },
  "indonesia": {
   "name": "Indonesia"
- },
- "sudan": {
-  "name": "Sudán"
  },
  "french-sudan": {
   "name": "Sudán francés"
@@ -104,6 +107,9 @@
  "mali": {
   "name": "Malí"
  },
+ "ethiopia": {
+  "name": "Etiopía"
+ },
  "angola": {
   "name": "Angola"
  },
@@ -121,9 +127,6 @@
  },
  "colombia": {
   "name": "Colombia"
- },
- "ethiopia": {
-  "name": "Etiopía"
  },
  "bolivia": {
   "name": "Bolivia"
@@ -155,6 +158,9 @@
  "pakistan": {
   "name": "Pakistán"
  },
+ "colonial-nigeria": {
+  "name": "Colonia y Protectorado de Nigeria"
+ },
  "germany": {
   "name": "Alemania"
  },
@@ -173,8 +179,14 @@
  "turkey": {
   "name": "Turquía"
  },
+ "cyrenaica": {
+  "name": "Cirenaica"
+ },
  "zambia": {
   "name": "Zambia"
+ },
+ "northern-rhodesia": {
+  "name": "Rodesia del Norte"
  },
  "french-indochina": {
   "name": "Indochina francesa"
@@ -218,11 +230,20 @@
  "bechuanaland-protectorate": {
   "name": "Protectorado de Bechuanalandia"
  },
+ "fezzan": {
+  "name": "Fezán"
+ },
  "thailand": {
   "name": "Tailandia"
  },
  "spain": {
   "name": "España"
+ },
+ "italy": {
+  "name": "Italia"
+ },
+ "trust-territory-of-somaliland": {
+  "name": "Territorio en fideicomiso de Somalia"
  },
  "turkmenistan": {
   "name": "Turkmenistán"
@@ -290,6 +311,9 @@
  "ivory-coast": {
   "name": "Costa de Marfil"
  },
+ "tripolitania": {
+  "name": "Tripolitania"
+ },
  "french-senegal": {
   "name": "Senegal francés"
  },
@@ -302,8 +326,8 @@
  "south-yemen": {
   "name": "Yemen del Sur"
  },
- "italy": {
-  "name": "Italia"
+ "protectorate-of-south-arabia": {
+  "name": "Protectorado de Arabia del Sur"
  },
  "philippines": {
   "name": "Filipinas"
@@ -344,11 +368,11 @@
  "ghana": {
   "name": "Ghana"
  },
+ "gold-coast": {
+  "name": "Costa de Oro"
+ },
  "romania": {
   "name": "Rumania"
- },
- "protectorate-of-south-arabia": {
-  "name": "Protectorado de Arabia del Sur"
  },
  "laos": {
   "name": "Laos"
@@ -401,6 +425,9 @@
  "south-vietnam": {
   "name": "Vietnam del Sur"
  },
+ "british-somaliland": {
+  "name": "Somalilandia británica"
+ },
  "north-vietnam": {
   "name": "Vietnam del Norte"
  },
@@ -448,6 +475,9 @@
  },
  "malawi": {
   "name": "Malaui"
+ },
+ "nyasaland": {
+  "name": "Nyasalandia"
  },
  "benin": {
   "name": "Benín"
@@ -499,6 +529,9 @@
  },
  "french-guiana": {
   "name": "Guayana Francesa"
+ },
+ "british-cameroons": {
+  "name": "Camerún británico"
  },
  "czech-republic": {
   "name": "República Checa"
@@ -575,9 +608,6 @@
  "southern-cameroons": {
   "name": "Camerún Meridional"
  },
- "british-cameroons": {
-  "name": "Camerún británico"
- },
  "switzerland": {
   "name": "Suiza"
  },
@@ -589,6 +619,9 @@
  },
  "netherlands": {
   "name": "Países Bajos"
+ },
+ "british-togoland": {
+  "name": "Togolandia británica"
  },
  "spanish-west-africa": {
   "name": "África Occidental Española"
@@ -737,6 +770,9 @@
  "mandatory-lebanon": {
   "name": "Líbano bajo mandato francés"
  },
+ "british-cyprus": {
+  "name": "Chipre británico"
+ },
  "cyprus": {
   "name": "Chipre"
  },
@@ -821,6 +857,9 @@
  "mauritius": {
   "name": "Mauricio"
  },
+ "british-windward-islands": {
+  "name": "Islas de Barlovento Británicas"
+ },
  "guadeloupe": {
   "name": "Guadalupe"
  },
@@ -838,6 +877,9 @@
  },
  "martinique": {
   "name": "Martinica"
+ },
+ "british-leeward-islands": {
+  "name": "Islas de Sotavento Británicas"
  },
  "sao-tome-and-principe": {
   "name": "Santo Tomé y Príncipe"
