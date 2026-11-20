@@ -56,6 +56,9 @@
  "greenland": {
   "name": "Groenlandia"
  },
+ "united-kingdom": {
+  "name": "Reino Unido"
+ },
  "mexico": {
   "name": "México"
  },
@@ -170,9 +173,6 @@
  "chile": {
   "name": "Chile"
  },
- "united-kingdom": {
-  "name": "Reino Unido"
- },
  "myanmar": {
   "name": "Birmania"
  },
@@ -202,6 +202,9 @@
  },
  "botswana": {
   "name": "Botsuana"
+ },
+ "bechuanaland-protectorate": {
+  "name": "Protectorado de Bechuanalandia"
  },
  "thailand": {
   "name": "Tailandia"
@@ -284,6 +287,9 @@
  "oman": {
   "name": "Omán"
  },
+ "south-yemen": {
+  "name": "Yemen del Sur"
+ },
  "italy": {
   "name": "Italia"
  },
@@ -326,6 +332,9 @@
  "romania": {
   "name": "Rumania"
  },
+ "protectorate-of-south-arabia": {
+  "name": "Protectorado de Arabia del Sur"
+ },
  "laos": {
   "name": "Laos"
  },
@@ -334,6 +343,9 @@
  },
  "guyana": {
   "name": "Guyana"
+ },
+ "british-guiana": {
+  "name": "Guayana Británica"
  },
  "belarus": {
   "name": "Bielorrusia"
@@ -382,6 +394,9 @@
  },
  "french-tunisia": {
   "name": "Protectorado francés de Túnez"
+ },
+ "north-yemen": {
+  "name": "Yemen del Norte"
  },
  "annam": {
   "name": "Protectorado francés de Annam"
@@ -476,8 +491,14 @@
  "sierra-leone": {
   "name": "Sierra Leona"
  },
+ "trucial-states": {
+  "name": "Estados de la Tregua"
+ },
  "united-arab-emirates": {
   "name": "Emiratos Árabes Unidos"
+ },
+ "federation-of-south-arabia": {
+  "name": "Federación de Arabia del Sur"
  },
  "georgia": {
   "name": "Georgia"
@@ -563,6 +584,9 @@
  "lesotho": {
   "name": "Lesoto"
  },
+ "basutoland": {
+  "name": "Basutolandia"
+ },
  "armenia": {
   "name": "Armenia"
  },
@@ -620,6 +644,9 @@
  "fiji": {
   "name": "Fiyi"
  },
+ "colony-of-fiji": {
+  "name": "Colonia de Fiyi"
+ },
  "new-caledonia": {
   "name": "Nueva Caledonia"
  },
@@ -646,6 +673,9 @@
  },
  "the-bahamas": {
   "name": "Bahamas"
+ },
+ "british-bahamas": {
+  "name": "Bahamas británicas"
  },
  "vanuatu": {
   "name": "Vanuatu"
@@ -740,6 +770,9 @@
  "reunion": {
   "name": "Reunión"
  },
+ "ras-al-khaimah": {
+  "name": "Ras al-Jaima"
+ },
  "mayotte": {
   "name": "Mayotte"
  },
@@ -748,6 +781,9 @@
  },
  "mauritius": {
   "name": "Mauricio"
+ },
+ "british-mauritius": {
+  "name": "Mauricio británico"
  },
  "guadeloupe": {
   "name": "Guadalupe"
@@ -778,6 +814,9 @@
  },
  "british-hong-kong": {
   "name": "Hong Kong británico"
+ },
+ "gilbert-and-ellice-islands": {
+  "name": "Islas Gilbert y Ellice"
  },
  "kiribati": {
   "name": "Kiribati"
@@ -887,6 +926,9 @@
  "niue": {
   "name": "Niue"
  },
+ "british-indian-ocean-territory": {
+  "name": "Territorio Británico del Océano Índico"
+ },
  "cook-islands": {
   "name": "Islas Cook"
  },
@@ -899,11 +941,14 @@
  "aruba": {
   "name": "Aruba"
  },
- "british-indian-ocean-territory": {
-  "name": "Territorio Británico del Océano Índico"
- },
  "marshall-islands": {
   "name": "Islas Marshall"
+ },
+ "kamaran": {
+  "name": "Kamaran"
+ },
+ "khuriya-muriya-islands": {
+  "name": "Islas Kuria Muria"
  },
  "british-virgin-islands": {
   "name": "Islas Vírgenes Británicas"
@@ -976,6 +1021,9 @@
  },
  "sint-maarten": {
   "name": "San Martín (Países Bajos)"
+ },
+ "perim": {
+  "name": "Perim"
  },
  "canton-and-enderbury-islands": {
   "name": "Islas Canton y Enderbury"

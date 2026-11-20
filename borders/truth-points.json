@@ -6175,6 +6175,596 @@
    ],
    "realm": "Ukraine",
    "why": "Ukrainian"
+  },
+  {
+   "place": "Sana'a",
+   "lonLat": [
+    44.21,
+    15.35
+   ],
+   "years": [
+    1965,
+    1989
+   ],
+   "realm": "North Yemen",
+   "why": "Capital of North Yemen until unification on 22 May 1990"
+  },
+  {
+   "place": "Sana'a",
+   "lonLat": [
+    44.21,
+    15.35
+   ],
+   "years": [
+    1990,
+    2026
+   ],
+   "realm": "Yemen",
+   "why": "Capital of united Yemen since 22 May 1990"
+  },
+  {
+   "place": "Aden (British)",
+   "lonLat": [
+    44.98,
+    12.87
+   ],
+   "years": [
+    1965,
+    1966
+   ],
+   "realm": "Federation of South Arabia",
+   "why": "British-protected Federation of South Arabia until 30 November 1967"
+  },
+  {
+   "place": "Aden",
+   "lonLat": [
+    44.98,
+    12.87
+   ],
+   "years": [
+    1967,
+    1989
+   ],
+   "realm": "South Yemen",
+   "why": "Capital of South Yemen from 30 November 1967 to 1990"
+  },
+  {
+   "place": "Mukalla (British)",
+   "lonLat": [
+    49.12,
+    14.54
+   ],
+   "years": [
+    1965,
+    1966
+   ],
+   "realm": "Protectorate of South Arabia",
+   "why": "Qu'aiti state, British protectorate until 1967"
+  },
+  {
+   "place": "Mukalla",
+   "lonLat": [
+    49.12,
+    14.54
+   ],
+   "years": [
+    1967,
+    1989
+   ],
+   "realm": "South Yemen",
+   "why": "Part of South Yemen from 1967 to 1990"
+  },
+  {
+   "place": "Dhala",
+   "lonLat": [
+    44.73,
+    13.7
+   ],
+   "years": [
+    1967,
+    1989
+   ],
+   "realm": "South Yemen",
+   "why": "South Yemen, just south of the line with North Yemen"
+  },
+  {
+   "place": "Qa'tabah",
+   "lonLat": [
+    44.71,
+    13.86
+   ],
+   "years": [
+    1965,
+    1989
+   ],
+   "realm": "North Yemen",
+   "why": "North Yemen, just north of the line with South Yemen"
+  },
+  {
+   "place": "Kamaran (British)",
+   "lonLat": [
+    42.6,
+    15.34
+   ],
+   "years": [
+    1965,
+    1966
+   ],
+   "realm": "Kamaran",
+   "why": "Under British administration until 1967"
+  },
+  {
+   "place": "Kamaran",
+   "lonLat": [
+    42.6,
+    15.34
+   ],
+   "years": [
+    1967,
+    1971
+   ],
+   "realm": "South Yemen",
+   "why": "South Yemen from 1967 until North Yemen took it in 1972"
+  },
+  {
+   "place": "Kamaran",
+   "lonLat": [
+    42.6,
+    15.34
+   ],
+   "years": [
+    1972,
+    1989
+   ],
+   "realm": "North Yemen",
+   "why": "North Yemen from 1972 until unification"
+  },
+  {
+   "place": "Perim",
+   "lonLat": [
+    43.42,
+    12.65
+   ],
+   "years": [
+    1965,
+    1966
+   ],
+   "realm": "Perim",
+   "why": "British until 30 November 1967"
+  },
+  {
+   "place": "Hallaniyah",
+   "lonLat": [
+    56.0,
+    17.51
+   ],
+   "years": [
+    1965,
+    1966
+   ],
+   "realm": "Khuriya Muriya Islands",
+   "why": "British, administered from Aden, until 30 November 1967"
+  },
+  {
+   "place": "Hallaniyah",
+   "lonLat": [
+    56.0,
+    17.51
+   ],
+   "years": [
+    1967,
+    2026
+   ],
+   "realm": "Oman",
+   "why": "Handed to the Sultan of Muscat and Oman on 30 November 1967"
+  },
+  {
+   "place": "Manama (protected state)",
+   "lonLat": [
+    50.58,
+    26.22
+   ],
+   "years": [
+    1965,
+    1970
+   ],
+   "realm": "Bahrain",
+   "why": "British protected state until 15 August 1971"
+  },
+  {
+   "place": "Manama",
+   "lonLat": [
+    50.58,
+    26.22
+   ],
+   "years": [
+    1971,
+    2026
+   ],
+   "realm": "Bahrain",
+   "why": "Independent since 15 August 1971"
+  },
+  {
+   "place": "Doha (protected state)",
+   "lonLat": [
+    51.53,
+    25.29
+   ],
+   "years": [
+    1965,
+    1970
+   ],
+   "realm": "Qatar",
+   "why": "British protected state until 3 September 1971"
+  },
+  {
+   "place": "Dubai (Trucial States)",
+   "lonLat": [
+    55.35,
+    25.15
+   ],
+   "years": [
+    1965,
+    1970
+   ],
+   "realm": "Trucial States",
+   "why": "British-protected Trucial States until 2 December 1971"
+  },
+  {
+   "place": "Dubai",
+   "lonLat": [
+    55.35,
+    25.15
+   ],
+   "years": [
+    1971,
+    2026
+   ],
+   "realm": "United Arab Emirates",
+   "why": "United Arab Emirates since 2 December 1971"
+  },
+  {
+   "place": "Ras Al Khaimah",
+   "lonLat": [
+    55.94,
+    25.79
+   ],
+   "years": [
+    1971,
+    1971
+   ],
+   "realm": "Ras Al Khaimah",
+   "why": "Independent from 2 December 1971 until it joined the UAE on 10 February 1972"
+  },
+  {
+   "place": "Ras Al Khaimah",
+   "lonLat": [
+    55.94,
+    25.79
+   ],
+   "years": [
+    1972,
+    2026
+   ],
+   "realm": "United Arab Emirates",
+   "why": "Part of the UAE since 10 February 1972"
+  },
+  {
+   "place": "Abu Musa (Trucial States)",
+   "lonLat": [
+    55.03,
+    25.87
+   ],
+   "years": [
+    1965,
+    1970
+   ],
+   "realm": "Trucial States",
+   "why": "Dependency of Sharjah, under British protection until 1971"
+  },
+  {
+   "place": "Abu Musa",
+   "lonLat": [
+    55.03,
+    25.87
+   ],
+   "years": [
+    1971,
+    2026
+   ],
+   "realm": "Iran",
+   "why": "Held by Iran since 30 November 1971 (claimed by the UAE)"
+  },
+  {
+   "place": "Suva (colony)",
+   "lonLat": [
+    178.44,
+    -18.14
+   ],
+   "years": [
+    1965,
+    1969
+   ],
+   "realm": "Colony of Fiji",
+   "why": "British colony until 10 October 1970"
+  },
+  {
+   "place": "Suva",
+   "lonLat": [
+    178.44,
+    -18.14
+   ],
+   "years": [
+    1970,
+    2026
+   ],
+   "realm": "Fiji",
+   "why": "Independent since 10 October 1970"
+  },
+  {
+   "place": "Nuku'alofa (protected state)",
+   "lonLat": [
+    -175.2,
+    -21.18
+   ],
+   "years": [
+    1965,
+    1969
+   ],
+   "realm": "Tonga",
+   "why": "British protected state until 4 June 1970"
+  },
+  {
+   "place": "The Valley (republic)",
+   "lonLat": [
+    -63.05,
+    18.22
+   ],
+   "years": [
+    1967,
+    1968
+   ],
+   "realm": "Saint Christopher-Nevis-Anguilla",
+   "why": "British in law; run by its self-declared republic from May 1967 to March 1969",
+   "heldBy": [
+    {
+     "years": [
+      1967,
+      1968
+     ],
+     "by": "Republic of Anguilla"
+    }
+   ]
+  },
+  {
+   "place": "Mbabane (protectorate)",
+   "lonLat": [
+    31.13,
+    -26.32
+   ],
+   "years": [
+    1965,
+    1967
+   ],
+   "realm": "Eswatini",
+   "why": "British protectorate of Swaziland until 6 September 1968"
+  },
+  {
+   "place": "Port Louis (colony)",
+   "lonLat": [
+    57.5,
+    -20.16
+   ],
+   "years": [
+    1965,
+    1967
+   ],
+   "realm": "British Mauritius",
+   "why": "British colony until 12 March 1968"
+  },
+  {
+   "place": "Port Louis",
+   "lonLat": [
+    57.5,
+    -20.16
+   ],
+   "years": [
+    1968,
+    2026
+   ],
+   "realm": "Mauritius",
+   "why": "Independent since 12 March 1968"
+  },
+  {
+   "place": "Aldabra (BIOT)",
+   "lonLat": [
+    46.35,
+    -9.42
+   ],
+   "years": [
+    1965,
+    1974
+   ],
+   "realm": "British Indian Ocean Territory",
+   "why": "Part of the British Indian Ocean Territory from 8 November 1965 until 29 June 1976"
+  },
+  {
+   "place": "Bridgetown (colony)",
+   "lonLat": [
+    -59.61,
+    13.1
+   ],
+   "years": [
+    1965,
+    1965
+   ],
+   "realm": "Barbados",
+   "why": "British colony until 30 November 1966"
+  },
+  {
+   "place": "Bridgetown",
+   "lonLat": [
+    -59.61,
+    13.1
+   ],
+   "years": [
+    1966,
+    2026
+   ],
+   "realm": "Barbados",
+   "why": "Independent since 30 November 1966"
+  },
+  {
+   "place": "Maseru (Basutoland)",
+   "lonLat": [
+    27.48,
+    -29.31
+   ],
+   "years": [
+    1965,
+    1965
+   ],
+   "realm": "Basutoland",
+   "why": "British colony until 4 October 1966"
+  },
+  {
+   "place": "Maseru",
+   "lonLat": [
+    27.48,
+    -29.31
+   ],
+   "years": [
+    1966,
+    2026
+   ],
+   "realm": "Lesotho",
+   "why": "Independent since 4 October 1966"
+  },
+  {
+   "place": "Gaborone (protectorate)",
+   "lonLat": [
+    25.91,
+    -24.65
+   ],
+   "years": [
+    1965,
+    1965
+   ],
+   "realm": "Bechuanaland Protectorate",
+   "why": "British protectorate until 30 September 1966"
+  },
+  {
+   "place": "Gaborone",
+   "lonLat": [
+    25.91,
+    -24.65
+   ],
+   "years": [
+    1966,
+    2026
+   ],
+   "realm": "Botswana",
+   "why": "Independent since 30 September 1966"
+  },
+  {
+   "place": "Georgetown (British Guiana)",
+   "lonLat": [
+    -58.16,
+    6.8
+   ],
+   "years": [
+    1965,
+    1965
+   ],
+   "realm": "British Guiana",
+   "why": "British colony until 26 May 1966"
+  },
+  {
+   "place": "Georgetown",
+   "lonLat": [
+    -58.16,
+    6.8
+   ],
+   "years": [
+    1966,
+    2026
+   ],
+   "realm": "Guyana",
+   "why": "Independent since 26 May 1966"
+  },
+  {
+   "place": "Nassau (colony)",
+   "lonLat": [
+    -77.34,
+    25.06
+   ],
+   "years": [
+    1965,
+    1972
+   ],
+   "realm": "British Bahamas",
+   "why": "British colony until 10 July 1973"
+  },
+  {
+   "place": "Nassau",
+   "lonLat": [
+    -77.34,
+    25.06
+   ],
+   "years": [
+    1973,
+    2026
+   ],
+   "realm": "The Bahamas",
+   "why": "Independent since 10 July 1973"
+  },
+  {
+   "place": "St. George's (associated state)",
+   "lonLat": [
+    -61.75,
+    12.05
+   ],
+   "years": [
+    1965,
+    1973
+   ],
+   "realm": "Grenada",
+   "why": "British colony, then associated state from 1967, until 7 February 1974"
+  },
+  {
+   "place": "St. George's",
+   "lonLat": [
+    -61.75,
+    12.05
+   ],
+   "years": [
+    1974,
+    2026
+   ],
+   "realm": "Grenada",
+   "why": "Independent since 7 February 1974"
+  },
+  {
+   "place": "Salisbury (UDI)",
+   "lonLat": [
+    31.05,
+    -17.83
+   ],
+   "years": [
+    1965,
+    1974
+   ],
+   "realm": "Southern Rhodesia",
+   "why": "British colony in law; held by the unrecognised Rhodesian government from 11 November 1965",
+   "heldBy": [
+    {
+     "years": [
+      1965,
+      1974
+     ],
+     "by": "Rhodesia"
+    }
+   ]
   }
  ]
 }
