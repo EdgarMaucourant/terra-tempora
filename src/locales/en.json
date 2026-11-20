@@ -472,8 +472,7 @@
     "unreviewed": "Not yet reviewed",
     "unreviewedText": "The borders are being rebuilt; this land is not done for this year yet",
     "until": "{source}, until {date}",
-    "zoomIn": "{detail} · click to zoom in",
-    "activeWar": "Active war: the front line moves often and is drawn roughly"
+    "zoomIn": "{detail} · click to zoom in"
   },
   "picker": {
     "keepOne": "Keep at least one civilization.",

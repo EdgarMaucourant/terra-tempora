@@ -880,7 +880,7 @@ function hoverRealm(p: Polity | null | undefined, x: number, y: number) {
           ),
         ]
       : []),
-    ...(p.rough ? [line(t("tooltip.activeWar"))] : []),
+    ...(p.rough ? [line(t("map.activeWar"))] : []),
     ...(p.source ? [line(t("tooltip.border", { source: shortSource(p.source) })), line(t("tooltip.borderHint"))] : []),
     Object.assign(document.createElement("span"), {
       textContent: home
@@ -2671,7 +2671,6 @@ Promise.all([
     travelEvents = turningPoints;
     civs = list;
     // On today's map, countries go by their everyday names.
-    layer.roughText = map.roughText = () => t("map.activeWar");
     layer.nameOf = map.nameOf = (realm) => {
       const civ = home ? list.ofRealm(realm) : undefined;
       return (civ && civ.names[0] === realm && countryOf(civ)?.name) || placeName(realm);

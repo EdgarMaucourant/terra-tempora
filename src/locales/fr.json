@@ -472,8 +472,7 @@
     "unreviewed": "Pas encore vérifié",
     "unreviewedText": "Les frontières sont en cours de reconstruction ; cette terre n’est pas encore faite pour cette année",
     "until": "{source}, jusqu’au {date}",
-    "zoomIn": "{detail} · cliquez pour zoomer",
-    "activeWar": "Guerre en cours : la ligne de front bouge souvent et est tracée approximativement"
+    "zoomIn": "{detail} · cliquez pour zoomer"
   },
   "picker": {
     "keepOne": "Gardez au moins une civilisation.",
