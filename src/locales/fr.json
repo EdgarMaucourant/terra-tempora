@@ -223,7 +223,8 @@
     }
   },
   "map": {
-    "label": "Carte plane montrant les États de l’année choisie. Les flèches la déplacent."
+    "label": "Carte plane montrant les États de l’année choisie. Les flèches la déplacent.",
+    "activeWar": "⚠ Guerre en cours : tracé approximatif"
   },
   "realms": {
     "title": "États en {year} ({count})",
@@ -315,7 +316,8 @@
     "rough": "approximatif",
     "source": "Source",
     "thisBorder": "Ce tracé",
-    "today": "Natural Earth, frontières actuelles"
+    "today": "Natural Earth, frontières actuelles",
+    "activeWar": "Guerre en cours : la ligne de front bouge souvent et est mal documentée, elle est donc tracée approximativement."
   },
   "event": {
     "approximate": "{place} (emplacement approximatif)",

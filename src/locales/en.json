@@ -223,7 +223,8 @@
     }
   },
   "map": {
-    "label": "Flat map showing the realms of the chosen year. Arrow keys move it."
+    "label": "Flat map showing the realms of the chosen year. Arrow keys move it.",
+    "activeWar": "⚠ Active war: rough lines"
   },
   "realms": {
     "title": "Realms in {year} ({count})",
@@ -315,7 +316,8 @@
     "rough": "approximate",
     "source": "Source",
     "thisBorder": "This border",
-    "today": "Natural Earth, today's borders"
+    "today": "Natural Earth, today's borders",
+    "activeWar": "Active war: the front line moves often and is not well documented, so it is drawn roughly."
   },
   "event": {
     "approximate": "{place} (approximate location)",

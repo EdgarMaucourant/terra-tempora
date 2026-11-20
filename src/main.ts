@@ -232,7 +232,7 @@ scene.postRender.addEventListener(() => {
 const map = new MapView(mapCanvas, {
   onHover: (p, x, y) => {
     cancelAnimationFrame(mapHover);
-    mapHover = requestAnimationFrame(() => (p ? hoverRealm(p, x, y) : hoverEmpty(map.lonLatAt(x, y), x, y)));
+    mapHover = requestAnimationFrame(() => (map.signAt(x, y) ? hoverSign(x, y) : p ? hoverRealm(p, x, y) : hoverEmpty(map.lonLatAt(x, y), x, y)));
   },
   onClick: (p, x, y) => {
     clickRealm(p);
@@ -816,6 +816,7 @@ function showSource(p: Polity, el = $("info-source")) {
       " ",
     );
     if (p.note) el.append(`${p.note}. `);
+    if (p.rough) el.append(`${t("info.activeWar")} `);
   }
   if (!s) return;
   if (!s.date) return el.append(`${t(s.what ? "info.border" : "info.source")}: `, externalLink(s.url, s.what ? t("info.today") : s.title));
@@ -879,6 +880,7 @@ function hoverRealm(p: Polity | null | undefined, x: number, y: number) {
           ),
         ]
       : []),
+    ...(p.rough ? [line(t("map.activeWar"))] : []),
     ...(p.source ? [line(t("tooltip.border", { source: shortSource(p.source) })), line(t("tooltip.borderHint"))] : []),
     Object.assign(document.createElement("span"), {
       textContent: home
@@ -1020,7 +1022,8 @@ handler.setInputAction((event: ScreenSpaceEventHandler.MotionEvent) => {
     if (e) hoverEvent(e, hoverPosition.x, hoverPosition.y);
     else {
       const p = polityAt(hoverPosition);
-      if (p) hoverRealm(p, hoverPosition.x, hoverPosition.y);
+      if (layer.signAt(hoverPosition.x, hoverPosition.y)) hoverSign(hoverPosition.x, hoverPosition.y);
+      else if (p) hoverRealm(p, hoverPosition.x, hoverPosition.y);
       else hoverEmpty(globeLonLat(hoverPosition), hoverPosition.x, hoverPosition.y);
     }
   });
@@ -1831,6 +1834,17 @@ function openEvent(e: HistoryEvent) {
     }
     renderGallery(gallery, article.media);
   });
+}
+
+/** An active war zone's warning sign says, in large, that its lines are rough. */
+function hoverSign(x: number, y: number) {
+  layer.setHovered(null);
+  map.setHovered(null);
+  tooltip.replaceChildren(Object.assign(document.createElement("strong"), { className: "tooltip-warning", textContent: t("map.activeWar") }));
+  tooltip.style.transform = `translate(${x + 14}px, ${y + 14}px)`;
+  tooltip.hidden = false;
+  scene.canvas.style.cursor = "";
+  mapCanvas.style.cursor = "";
 }
 
 function hoverEvent(e: HistoryEvent, x: number, y: number) {

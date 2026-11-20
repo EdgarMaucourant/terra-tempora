@@ -1,0 +1,265 @@
+{
+ "family": "Ukraine",
+ "note": "Ukraine, whose borders have not changed since 1991, with the land Russia has held since 2014 hatched as it stood on 31 December of each year.",
+ "reviewed": [
+  {
+   "pieces": [
+    "UKR",
+    "RUS-283",
+    "RUS-5482"
+   ],
+   "from": 2014,
+   "why": "Ukraine within its 1991 borders, with Crimea, which Russia annexed in 2014, and the land held by Russia or its proxies in the east and south hatched"
+  }
+ ],
+ "changes": [
+  {
+   "date": "2025-12-01",
+   "what": "Russian forces take Pokrovsk, Myrnohrad, Siversk and Chasiv Yar, reach Dnipropetrovsk oblast and Huliaipole, and push into Kharkiv oblast near Vovchansk and Kupiansk during 2025",
+   "source": {
+    "title": "Pokrovsk offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Pokrovsk_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ukr-held-2025-kharkiv",
+      "ukr-held-2025-donetsk",
+      "ukr-held-2025-zaporizhzhya"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Russian-occupied territories of Ukraine (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Russian-occupied_territories_of_Ukraine"
+     }
+    }
+   ]
+  },
+  {
+   "date": "2024-02-17",
+   "what": "Russian forces take Avdiivka, then Ocheretyne, Vuhledar, Selydove and Kurakhove, and cross the border near Vovchansk during 2024",
+   "source": {
+    "title": "Battle of Avdiivka (2023–2024) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Avdiivka_(2023–2024)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ukr-held-2024-kharkiv",
+      "ukr-held-2024-luhansk",
+      "ukr-held-2024-donetsk"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Russian-occupied territories of Ukraine (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Russian-occupied_territories_of_Ukraine"
+     }
+    }
+   ]
+  },
+  {
+   "date": "2023-05-20",
+   "what": "Russian forces take Soledar and Bakhmut, and later Marinka, during 2023",
+   "source": {
+    "title": "Battle of Bakhmut (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Bakhmut"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ukr-held-2023-luhansk",
+      "ukr-held-2023-donetsk"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Russian-occupied territories of Ukraine (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Russian-occupied_territories_of_Ukraine"
+     }
+    }
+   ]
+  },
+  {
+   "date": "2022-09-30",
+   "what": "Russia claims to annex the Donetsk, Luhansk, Zaporizhzhia and Kherson oblasts, which no UN member recognises",
+   "source": {
+    "title": "Russian annexation of Donetsk, Kherson, Luhansk and Zaporizhzhia oblasts (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Russian_annexation_of_Donetsk,_Kherson,_Luhansk_and_Zaporizhzhia_oblasts"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ukr-held-2014-donetsk"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "War in Donbas (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/War_in_Donbas"
+     },
+     "hatch": {
+      "by": "Donetsk People's Republic",
+      "since": "2014-05-11",
+      "note": "Held by the self-declared Donetsk People's Republic, armed and backed by Russia, recognised by no UN member until Russia recognised it in February 2022",
+      "source": {
+       "title": "Donetsk People's Republic (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Donetsk_People's_Republic"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ukr-held-2014-luhansk"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "War in Donbas (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/War_in_Donbas"
+     },
+     "hatch": {
+      "by": "Luhansk People's Republic",
+      "since": "2014-05-11",
+      "note": "Held by the self-declared Luhansk People's Republic, armed and backed by Russia, recognised by no UN member until Russia recognised it in February 2022",
+      "source": {
+       "title": "Luhansk People's Republic (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Luhansk_People's_Republic"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ukr-held-2022-luhansk",
+      "ukr-held-2022-donetsk",
+      "ukr-held-2022-kherson",
+      "ukr-held-2022-zaporizhzhya",
+      "ukr-held-2022-mykolayiv"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Russian invasion of Ukraine (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Russian_invasion_of_Ukraine"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "2022-02-24",
+      "rough": true,
+      "note": "Occupied by Russia since its invasion of February 2022",
+      "source": {
+       "title": "Russian-occupied territories of Ukraine (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Russian-occupied_territories_of_Ukraine"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "2022-02-24",
+   "what": "Russia invades Ukraine; by the end of 2022, after Ukraine has taken back the north, Kharkiv oblast and Kherson, Russia holds most of the south and east",
+   "source": {
+    "title": "Russian invasion of Ukraine (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Russian_invasion_of_Ukraine"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ukr-held-2014-donetsk"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "War in Donbas (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/War_in_Donbas"
+     },
+     "hatch": {
+      "by": "Donetsk People's Republic",
+      "since": "2014-05-11",
+      "note": "Held by the self-declared Donetsk People's Republic, armed and backed by Russia, recognised by no UN member until Russia recognised it in February 2022",
+      "source": {
+       "title": "Donetsk People's Republic (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Donetsk_People's_Republic"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ukr-held-2014-luhansk"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "War in Donbas (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/War_in_Donbas"
+     },
+     "hatch": {
+      "by": "Luhansk People's Republic",
+      "since": "2014-05-11",
+      "note": "Held by the self-declared Luhansk People's Republic, armed and backed by Russia, recognised by no UN member until Russia recognised it in February 2022",
+      "source": {
+       "title": "Luhansk People's Republic (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Luhansk_People's_Republic"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ukr-held-2022-luhansk",
+      "ukr-held-2022-donetsk",
+      "ukr-held-2022-kherson",
+      "ukr-held-2022-zaporizhzhya",
+      "ukr-held-2022-mykolayiv"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Russian invasion of Ukraine (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Russian_invasion_of_Ukraine"
+     }
+    }
+   ]
+  },
+  {
+   "date": "2014-05-11",
+   "what": "Russian-backed separatists hold part of the Donetsk and Luhansk oblasts as the self-declared Donetsk and Luhansk People's Republics",
+   "source": {
+    "title": "War in Donbas (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/War_in_Donbas"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ukr-held-2014-luhansk",
+      "ukr-held-2014-donetsk"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "War in Donbas (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/War_in_Donbas"
+     }
+    }
+   ]
+  },
+  {
+   "date": "2014-03-18",
+   "what": "Russia annexes Crimea, which no UN member but a few recognise (UN General Assembly resolution 68/262)",
+   "source": {
+    "title": "Annexation of Crimea by the Russian Federation (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Annexation_of_Crimea_by_the_Russian_Federation"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "RUS-283",
+      "RUS-5482"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Annexation of Crimea by the Russian Federation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Annexation_of_Crimea_by_the_Russian_Federation"
+     }
+    }
+   ]
+  }
+ ]
+}

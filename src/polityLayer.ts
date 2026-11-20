@@ -4,14 +4,9 @@ import {
   Cartesian3,
   Color,
   GeometryInstance,
-  HorizontalOrigin,
-  Label,
-  LabelCollection,
-  LabelStyle,
   Material,
   MaterialAppearance,
   Math as CesiumMath,
-  NearFarScalar,
   PolygonGeometry,
   PolygonHierarchy,
   PolylineGeometry,
@@ -19,10 +14,10 @@ import {
   Primitive,
   Scene,
   SceneTransforms,
-  VerticalOrigin,
 } from "cesium";
-import { BLANK_COLOR, BLANK_FILL_ALPHA, JOINT_DARK, JOINT_LIGHT, MUTED } from "./colors";
+import { BLANK_COLOR, BLANK_FILL_ALPHA, JOINT_DARK, JOINT_LIGHT, MUTED, LABEL_OUTLINE, ROUGH_COLOR, ROUGH_LABEL_AREA } from "./colors";
 import { foldedInGroup, highlightOf, isOverlay, withClosedGroups, type Polity } from "./data";
+import { FlatLabel, FlatLabels } from "./flatLabels";
 import { inRing } from "./frame";
 
 // Shapes float slightly above the globe surface so they never z-fight with it.
@@ -35,7 +30,13 @@ const HOVER_FILL_ALPHA = 0.62;
 // Width, in years, of the crossfade between two consecutive snapshots.
 const FADE = 0.6;
 // Context realms this large (km²) get a name on the globe.
-const CONTEXT_LABEL_AREA = 900_000;
+/**
+ * The least area (km²) of a realm named at the starting view; zooming in
+ * names smaller ones, as long as the names do not cover each other.
+ */
+const CONTEXT_LABEL_AREA = 150_000;
+/** The camera height of the starting view, where CONTEXT_LABEL_AREA applies. */
+const START_HEIGHT = 14_500_000;
 // Shapes built per frame, so a fast scrub never freezes the page.
 const BUILDS_PER_FRAME = 40;
 // Above this many built shapes, those far from the current year are freed.
@@ -200,7 +201,10 @@ class Piece {
 interface Drawn {
   pieces: Piece[];
   highlighted: boolean;
-  label?: Label;
+  label?: FlatLabel;
+  /** An active war zone's warning sign (see Polity.rough). */
+  sign?: FlatLabel;
+  signWanted?: boolean;
   /** Whether the label is due on the globe; it still gives way to a name it would cover. */
   wanted?: boolean;
 }
@@ -217,7 +221,9 @@ export class PolityLayer {
   /** A number for each outline, as the same outline is the same array. */
   private ringIds = new WeakMap<number[], number>();
   private nextRing = 0;
-  private labels: LabelCollection;
+  private labels: FlatLabels;
+  /** Warning signs, kept above every other primitive (see attach). */
+  private signs: FlatLabels;
   /** Colours of the highlighted realms, by Cliopatria name. Others are grey. */
   private highlight = new Map<string, string>();
   /** The colours asked for, before closed groups take one colour. */
@@ -243,7 +249,10 @@ export class PolityLayer {
   lookahead = 3;
 
   constructor(private scene: Scene) {
-    this.labels = scene.primitives.add(new LabelCollection({ scene }));
+    // Drawn flat over the globe, so no border or hatching covers them; the
+    // warning signs over the names.
+    this.labels = new FlatLabels(scene);
+    this.signs = new FlatLabels(scene);
     scene.preRender.addEventListener(() => this.declutter());
   }
 
@@ -306,6 +315,20 @@ export class PolityLayer {
       if (p.rings.some((ring) => inRing(ring, lon, lat))) best = p;
     }
     return best;
+  }
+
+  /** The war zone whose warning sign is at this point on the screen, if any. */
+  signAt(x: number, y: number): Polity | undefined {
+    const at = new Cartesian2();
+    const camera = this.scene.camera.positionWC;
+    for (const [p, d] of this.drawn) {
+      if (!d.sign?.show) continue;
+      const position = d.sign.position;
+      if (Cartesian3.dot(position, camera) <= Cartesian3.magnitudeSquared(position) * 0.98) continue;
+      const point = SceneTransforms.worldToWindowCoordinates(this.scene, position, at);
+      if (point && Math.hypot(point.x - x, point.y - y) <= 16) return p;
+    }
+    return undefined;
   }
 
   /** The land under a hatching at `year`: at its label, or found by name. */
@@ -433,13 +456,31 @@ export class PolityLayer {
     this.labelsDirty = false;
     this.lastView = view;
     this.lastDeclutter = now;
+
     const rank = (p: Polity, d: Drawn) => (d.highlighted && this.labelAll ? 2 : p.kind === "group" ? 1 : 0);
     const due = [...this.drawn].filter(([, d]) => d.label && d.wanted).sort((a, b) => rank(b[0], b[1]) - rank(a[0], a[1]) || b[0].area - a[0].area);
     const placed: [number, number, number, number][] = [];
     const at = new Cartesian2();
+    // Warning signs first, so that no name covers them; one past the horizon
+    // would show through the globe.
+    for (const [, d] of this.drawn) {
+      if (!d.sign || !d.signWanted) continue;
+      const position = d.sign.position;
+      const facing = Cartesian3.dot(position, camera.positionWC) > Cartesian3.magnitudeSquared(position) * 0.98;
+      const point = facing ? SceneTransforms.worldToWindowCoordinates(this.scene, position, at) : undefined;
+      d.sign.show = !!point;
+      if (point) placed.push([point.x - 12, point.y - 12, point.x + 12, point.y + 12]);
+    }
     const range = Cartesian3.magnitude(camera.positionWC);
+    const zoom = Math.min(16, Math.max(1, START_HEIGHT / Math.max(1, camera.positionCartographic.height)));
+    const minArea = CONTEXT_LABEL_AREA / zoom ** 1.6;
     for (const [p, d] of due) {
       const label = d.label!;
+      // Small realms are named once zoomed in, unless chosen or in an open group.
+      if (rank(p, d) === 0 && p.area < minArea && !(p.partOf && p.groups?.length)) {
+        label.show = false;
+        continue;
+      }
       const position = label.position;
       // Past the horizon, the globe hides the name anyway.
       const facing = Cartesian3.dot(position, camera.positionWC) > Cartesian3.magnitudeSquared(position) * 0.98;
@@ -460,7 +501,7 @@ export class PolityLayer {
       label.show = dy !== undefined;
       if (dy === undefined) continue;
       placed.push([point.x - w, point.y + dy - h, point.x + w, point.y + dy + h]);
-      if (label.pixelOffset.y !== dy) label.pixelOffset = new Cartesian2(0, dy);
+      label.pixelOffset.y = dy;
     }
   }
 
@@ -566,6 +607,12 @@ export class PolityLayer {
       for (const piece of d.pieces) piece.addOpacity(p, opacity, hovered);
       // Labels switch at the midpoint of a fade. Changing a label's colour
       // redraws its glyphs, which is too costly to do every frame.
+      if (d.sign) {
+        const wanted = opacity > 0.5;
+        if (wanted !== d.signWanted) this.labelsDirty = true;
+        d.signWanted = wanted;
+        if (!wanted) d.sign.show = false;
+      }
       if (d.label) {
         const wanted =
           opacity > 0.5 &&
@@ -657,23 +704,36 @@ export class PolityLayer {
       return piece;
     });
 
-    let label: Label | undefined;
+    let label: FlatLabel | undefined;
     // A group's territories all have a name, shown once a click opens the group.
-    if (!p.kind && p.label && ((highlighted && this.labelAll) || p.area >= CONTEXT_LABEL_AREA || (p.partOf && p.groups?.length))) {
+    if (!p.kind && p.label) {
       const height = highlighted ? FEATURED_HEIGHT : CONTEXT_HEIGHT;
       label = this.labels.add({
         id: p,
         position: Cartesian3.fromDegrees(p.label[0], p.label[1], height + 2000),
         text: this.nameOf(p.display ?? p.name),
         font: highlighted ? "600 15px 'Instrument Sans Variable', sans-serif" : "500 12px 'Instrument Sans Variable', sans-serif",
-        fillColor: highlighted ? Color.fromCssColorString("#fbf6ec") : Color.fromCssColorString("#b4bac1"),
-        outlineColor: Color.BLACK.withAlpha(0.85),
+        fill: highlighted ? "#fbf6ec" : "#b4bac1",
+        outline: LABEL_OUTLINE,
         outlineWidth: 3,
-        style: LabelStyle.FILL_AND_OUTLINE,
-        horizontalOrigin: HorizontalOrigin.CENTER,
-        verticalOrigin: VerticalOrigin.CENTER,
-        scaleByDistance: new NearFarScalar(2e6, 1.15, 2.5e7, 0.8),
-        show: false,
+        near: [2e6, 1.15],
+        far: [2.5e7, 0.8],
+      });
+    }
+    // An active war zone carries a warning sign that its lines are rough,
+    // small from afar.
+    let sign: FlatLabel | undefined;
+    if (p.kind === "hatch" && p.rough && p.label && p.area >= ROUGH_LABEL_AREA) {
+      sign = this.signs.add({
+        id: p,
+        position: Cartesian3.fromDegrees(p.label[0], p.label[1], FEATURED_HEIGHT + 4000),
+        text: "⚠",
+        font: "700 20px 'Instrument Sans Variable', sans-serif",
+        fill: ROUGH_COLOR,
+        outline: "rgba(0, 0, 0, 0.9)",
+        outlineWidth: 4,
+        near: [1.5e6, 1.3],
+        far: [2e7, 0.6],
       });
     }
     // A group's name sits above its members' names, in capitals.
@@ -683,17 +743,14 @@ export class PolityLayer {
         position: Cartesian3.fromDegrees(p.label[0], p.label[1], GROUP_HEIGHT + 2000),
         text: this.nameOf(p.name).toUpperCase(),
         font: "italic 600 12px 'Instrument Sans Variable', sans-serif",
-        fillColor: Color.fromCssColorString(GROUP_COLOR),
-        outlineColor: Color.BLACK.withAlpha(0.85),
+        fill: GROUP_COLOR,
+        outline: LABEL_OUTLINE,
         outlineWidth: 3,
-        style: LabelStyle.FILL_AND_OUTLINE,
-        horizontalOrigin: HorizontalOrigin.CENTER,
-        verticalOrigin: VerticalOrigin.CENTER,
-                scaleByDistance: new NearFarScalar(2e6, 1.15, 2.5e7, 0.8),
-        show: false,
+        near: [2e6, 1.15],
+        far: [2.5e7, 0.8],
       });
     }
-    this.drawn.set(p, { pieces, highlighted, label });
+    this.drawn.set(p, { pieces, highlighted, label, sign });
     return missing;
   }
 
@@ -709,6 +766,7 @@ export class PolityLayer {
       this.pieces.delete(piece.key);
     }
     if (d.label) this.labels.remove(d.label);
+    if (d.sign) this.signs.remove(d.sign);
     this.drawn.delete(p);
     if (this.retiring.get(p.id) === p) this.retiring.delete(p.id);
   }

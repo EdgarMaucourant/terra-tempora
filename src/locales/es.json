@@ -223,7 +223,8 @@
     }
   },
   "map": {
-    "label": "Mapa plano con los reinos del año elegido. Las flechas lo mueven."
+    "label": "Mapa plano con los reinos del año elegido. Las flechas lo mueven.",
+    "activeWar": "⚠ Guerra en curso: líneas aproximadas"
   },
   "realms": {
     "title": "Reinos en {year} ({count})",
@@ -315,7 +316,8 @@
     "rough": "aproximado",
     "source": "Fuente",
     "thisBorder": "Esta frontera",
-    "today": "Natural Earth, fronteras actuales"
+    "today": "Natural Earth, fronteras actuales",
+    "activeWar": "Guerra en curso: la línea del frente cambia a menudo y está mal documentada, por lo que está trazada de forma aproximada."
   },
   "event": {
     "approximate": "{place} (ubicación aproximada)",
