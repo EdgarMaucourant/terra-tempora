@@ -712,7 +712,25 @@
   "wikipedia": "Eswatini",
   "wikidata": "Q1050",
   "fr": "Eswatini",
-  "es": "Suazilandia"
+  "es": "Suazilandia",
+  "periods": [
+   {
+    "from": "1906-12-01",
+    "name": "Swaziland",
+    "wikipedia": "Eswatini",
+    "fr": "Swaziland",
+    "es": "Suazilandia",
+    "note": "Named Swaziland until 2018"
+   },
+   {
+    "from": "2018-04-19",
+    "name": "Eswatini",
+    "wikipedia": "Eswatini",
+    "fr": "Eswatini",
+    "es": "Esuatini",
+    "note": "Renamed Eswatini by King Mswati III"
+   }
+  ]
  },
  "Ethiopia": {
   "wikipedia": "Ethiopia",
@@ -3145,5 +3163,108 @@
   "fr": "République populaire de Lougansk",
   "es": "República Popular de Lugansk",
   "hatchOnly": true
+ },
+ "Trucial States": {
+  "wikipedia": "Trucial States",
+  "wikidata": "Q1852345",
+  "fr": "États de la Trêve",
+  "es": "Estados de la Tregua"
+ },
+ "Ras Al Khaimah": {
+  "wikipedia": "Emirate of Ras Al Khaimah",
+  "wikidata": "Q170024",
+  "fr": "Ras el Khaïmah",
+  "es": "Ras al-Jaima"
+ },
+ "Federation of South Arabia": {
+  "wikipedia": "Federation of South Arabia",
+  "wikidata": "Q834486",
+  "fr": "Fédération d'Arabie du Sud",
+  "es": "Federación de Arabia del Sur"
+ },
+ "Protectorate of South Arabia": {
+  "wikipedia": "Protectorate of South Arabia",
+  "wikidata": "Q1517772",
+  "fr": "Protectorat d'Arabie du Sud",
+  "es": "Protectorado de Arabia del Sur"
+ },
+ "South Yemen": {
+  "wikipedia": "South Yemen",
+  "wikidata": "Q199841",
+  "fr": "Yémen du Sud",
+  "es": "Yemen del Sur"
+ },
+ "North Yemen": {
+  "wikipedia": "North Yemen",
+  "wikidata": "Q1998401",
+  "fr": "Yémen du Nord",
+  "es": "Yemen del Norte"
+ },
+ "Perim": {
+  "wikipedia": "Perim",
+  "wikidata": "Q1160017",
+  "fr": "Périm",
+  "es": "Perim",
+  "notACountry": true
+ },
+ "Kamaran": {
+  "wikipedia": "Kamaran",
+  "wikidata": "Q1320260",
+  "fr": "Kamaran",
+  "es": "Kamaran",
+  "notACountry": true
+ },
+ "Khuriya Muriya Islands": {
+  "wikipedia": "Khuriya Muriya Islands",
+  "wikidata": "Q521176",
+  "fr": "Îles Kuria Muria",
+  "es": "Islas Kuria Muria",
+  "notACountry": true
+ },
+ "Republic of Anguilla": {
+  "wikipedia": "Republic of Anguilla",
+  "wikidata": "Q7314425",
+  "fr": "République d'Anguilla",
+  "es": "República de Anguila",
+  "hatchOnly": true
+ },
+ "British Mauritius": {
+  "wikipedia": "British Mauritius",
+  "wikidata": "Q12053604",
+  "fr": "Maurice britannique",
+  "es": "Mauricio británico",
+  "withOwner": false
+ },
+ "Colony of Fiji": {
+  "wikipedia": "Colony of Fiji",
+  "wikidata": "Q5148320",
+  "fr": "Colonie des Fidji",
+  "es": "Colonia de Fiyi"
+ },
+ "Bechuanaland Protectorate": {
+  "wikipedia": "Bechuanaland Protectorate",
+  "wikidata": "Q747314",
+  "fr": "Protectorat du Bechuanaland",
+  "es": "Protectorado de Bechuanalandia"
+ },
+ "Basutoland": {
+  "wikipedia": "Basutoland",
+  "wikidata": "Q2340665",
+  "fr": "Basutoland",
+  "es": "Basutolandia"
+ },
+ "British Guiana": {
+  "wikipedia": "British Guiana",
+  "wikidata": "Q918126",
+  "fr": "Guyane britannique",
+  "es": "Guayana Británica",
+  "withOwner": false
+ },
+ "British Bahamas": {
+  "wikipedia": "British Bahamas",
+  "wikidata": "Q131612041",
+  "fr": "Bahamas britanniques",
+  "es": "Bahamas británicas",
+  "withOwner": false
  }
 }
