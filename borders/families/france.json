@@ -186,7 +186,17 @@
       "title": "New Hebrides (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/New_Hebrides"
      },
-     "map": "https://commons.wikimedia.org/wiki/File:Neue Hebriden 140543a.jpg"
+     "map": "https://commons.wikimedia.org/wiki/File:Neue Hebriden 140543a.jpg",
+     "hatch": {
+      "by": "France",
+      "with": "United Kingdom",
+      "since": "1906-10-20",
+      "note": "An Anglo-French condominium: each power kept its own officials, police, laws and courts, beside a joint court",
+      "source": {
+       "title": "New Hebrides (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/New_Hebrides"
+      }
+     }
     }
    ]
   },
