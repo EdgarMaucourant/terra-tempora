@@ -6777,6 +6777,181 @@
    "summary": "In the first referendum ever held across the whole United Kingdom, Harold Wilson asks voters on 5 June 1975 whether to stay in the European Communities after renegotiating the terms of entry. Yes wins by 67 to 33 per cent, with every nation and region but Shetland and the Western Isles in favour. The question returns 41 years later, in the Brexit vote of 2016.",
    "wikipedia": "1975_United_Kingdom_European_Communities_membership_referendum",
    "search": "1975 referendum European Communities Common Market membership Harold Wilson Yes No 67 per cent first UK-wide referendum"
+  },
+  {
+   "id": "cyprus-independence-1960",
+   "kind": "empire",
+   "year": 1960,
+   "title": "Cyprus becomes independent, 16 August 1960",
+   "place": "Nicosia",
+   "lonLat": [
+    33.37,
+    35.17
+   ],
+   "civs": [
+    "united-kingdom",
+    "cyprus"
+   ],
+   "summary": "After four years of the EOKA campaign for union with Greece, Britain, Greece and Turkey agree at Zurich and London in 1959 on an independent Cyprus. The republic is born on 16 August 1960 with Archbishop Makarios as president and a constitution sharing power between Greek and Turkish Cypriots. Britain keeps two Sovereign Base Areas, Akrotiri and Dhekelia, which are still British today.",
+   "wikipedia": "Zürich_and_London_Agreement",
+   "search": "Cyprus independence 1960 Zurich London Agreement EOKA Makarios Grivas enosis Sovereign Base Areas Akrotiri Dhekelia Treaty of Guarantee"
+  },
+  {
+   "id": "nigeria-independence-1960",
+   "kind": "empire",
+   "year": 1960,
+   "title": "Nigeria becomes independent, 1 October 1960",
+   "place": "Lagos",
+   "lonLat": [
+    3.35,
+    6.6
+   ],
+   "civs": [
+    "united-kingdom",
+    "nigeria"
+   ],
+   "summary": "Africa’s most populous colony becomes independent on 1 October 1960, when Princess Alexandra hands the constitution to Prime Minister Abubakar Tafawa Balewa at the Lagos racecourse. Nigeria is a federation of three large regions, North, East and West, each with its own government. The Northern Cameroons, a trust territory run from Nigeria, join it after a plebiscite in 1961, and the country becomes a republic in 1963.",
+   "wikipedia": "Nigerian_Independence_Day",
+   "search": "Nigeria independence 1960 Lagos Tafawa Balewa Azikiwe Princess Alexandra federation regions Northern Eastern Western"
+  },
+  {
+   "id": "kuwait-1961",
+   "kind": "war",
+   "year": 1961,
+   "title": "Kuwait becomes independent and British troops land against an Iraqi threat, 1961",
+   "place": "Kuwait City",
+   "lonLat": [
+    47.98,
+    29.37
+   ],
+   "civs": [
+    "united-kingdom",
+    "kuwait",
+    "iraq"
+   ],
+   "summary": "Kuwait ends its 1899 treaty of British protection on 19 June 1961. Six days later Iraq’s leader Abd al-Karim Qasim claims the emirate as part of Iraq. At the Emir’s request Britain lands Royal Marines and troops in July (Operation Vantage), and Iraq does not attack. Arab League forces replace the British in the autumn, and Iraq recognises Kuwait in 1963.",
+   "wikipedia": "Operation_Vantage",
+   "search": "Operation Vantage 1961 Kuwait independence Abd al-Karim Qasim Iraq claim British troops Royal Marines Arab League"
+  },
+  {
+   "id": "west-indies-federation-ends-1962",
+   "kind": "empire",
+   "year": 1962,
+   "title": "The West Indies Federation breaks up, 31 May 1962",
+   "place": "Port of Spain",
+   "lonLat": [
+    -61.45,
+    10.62
+   ],
+   "civs": [
+    "united-kingdom",
+    "west-indies-federation",
+    "jamaica",
+    "trinidad-and-tobago"
+   ],
+   "summary": "Formed in 1958 to lead ten British Caribbean colonies to independence together, the West Indies Federation has its capital at Port of Spain and Grantley Adams as prime minister. Jamaica, the largest member, votes to leave in a referendum in September 1961, and Trinidad’s Eric Williams follows: “one from ten leaves nought”. The federation is dissolved on 31 May 1962, and Jamaica and Trinidad and Tobago become independent on their own that August.",
+   "wikipedia": "West_Indies_Federation",
+   "search": "West Indies Federation 1958 1962 dissolution Jamaica referendum 1961 Trinidad Eric Williams Grantley Adams Port of Spain"
+  },
+  {
+   "id": "borneo-confrontation-1963",
+   "kind": "war",
+   "year": 1963,
+   "to": 1966,
+   "title": "The Indonesia–Malaysia confrontation in Borneo, 1963 – 1966",
+   "place": "Sarawak",
+   "lonLat": [
+    111.5,
+    1.3
+   ],
+   "civs": [
+    "united-kingdom",
+    "malaysia",
+    "indonesia",
+    "crown-colony-of-sarawak",
+    "north-borneo"
+   ],
+   "summary": "Sukarno’s Indonesia opposes the new Malaysia, which takes in Sarawak and North Borneo in September 1963, and sends raiders across the jungle border in Borneo. British, Gurkha, Australian and New Zealand troops defend the border and strike back in secret across it. The undeclared war ends after Sukarno loses power, with a peace agreement in August 1966.",
+   "wikipedia": "Indonesia–Malaysia_confrontation",
+   "search": "Indonesia Malaysia confrontation Konfrontasi 1963 1966 Sukarno Borneo Sarawak Sabah British Gurkhas Operation Claret Brunei revolt"
+  },
+  {
+   "id": "kenya-independence-1963",
+   "kind": "empire",
+   "year": 1963,
+   "title": "Kenya becomes independent, 12 December 1963",
+   "place": "Nairobi",
+   "lonLat": [
+    36.82,
+    -1.29
+   ],
+   "civs": [
+    "united-kingdom",
+    "kenya-colony",
+    "kenya"
+   ],
+   "summary": "The Mau Mau uprising of 1952–1960, put down with mass detention camps and the death of more than 11,000 rebels, convinces Britain that white settler rule cannot last. Jomo Kenyatta, jailed for years as an alleged Mau Mau leader, wins the 1963 elections, and at midnight on 12 December, before Prince Philip in Nairobi, Kenya becomes independent with Kenyatta as prime minister.",
+   "wikipedia": "Kenya",
+   "search": "Kenya independence 1963 Mau Mau uprising emergency Jomo Kenyatta Uhuru KANU Nairobi Prince Philip"
+  },
+  {
+   "id": "aden-emergency-1963",
+   "kind": "war",
+   "year": 1963,
+   "title": "The Aden Emergency begins, 10 December 1963",
+   "place": "Aden",
+   "lonLat": [
+    45.03,
+    12.83
+   ],
+   "civs": [
+    "united-kingdom",
+    "federation-of-south-arabia",
+    "aden-colony"
+   ],
+   "summary": "On 10 December 1963 a grenade thrown at Aden’s Khormaksar airport wounds the British High Commissioner, Sir Kennedy Trevaskis, and kills two people. Britain declares a state of emergency in the Federation of South Arabia, which Aden had joined that January. The revolt spreads from the Radfan mountains to the streets of Aden and ends with the British departure in November 1967.",
+   "wikipedia": "Aden_Emergency",
+   "search": "Aden Emergency 1963 grenade Khormaksar airport High Commissioner Kennedy Trevaskis state of emergency NLF Radfan"
+  },
+  {
+   "id": "rhodesia-nyasaland-ends-1963",
+   "kind": "empire",
+   "year": 1963,
+   "title": "The Federation of Rhodesia and Nyasaland breaks up, 31 December 1963",
+   "place": "Lusaka",
+   "lonLat": [
+    28.28,
+    -15.42
+   ],
+   "civs": [
+    "united-kingdom",
+    "federation-of-rhodesia-and-nyasaland",
+    "zambia",
+    "malawi",
+    "southern-rhodesia"
+   ],
+   "summary": "Set up in 1953 against the wishes of most Africans, the Central African Federation joins Southern Rhodesia, Northern Rhodesia and Nyasaland under a white-led government in Salisbury. African nationalists led by Hastings Banda and Kenneth Kaunda campaign to leave it, and Britain lets Nyasaland and Northern Rhodesia go. The federation ends on 31 December 1963; Malawi and Zambia become independent in 1964, while Southern Rhodesia’s white government declares independence in 1965.",
+   "wikipedia": "Federation_of_Rhodesia_and_Nyasaland",
+   "search": "Federation of Rhodesia and Nyasaland Central African Federation 1953 1963 dissolution Victoria Falls conference Hastings Banda Kenneth Kaunda Roy Welensky"
+  },
+  {
+   "id": "zanzibar-revolution-1964",
+   "kind": "war",
+   "year": 1964,
+   "title": "The Zanzibar Revolution, 12 January 1964",
+   "place": "Zanzibar",
+   "lonLat": [
+    39.3,
+    -6.1
+   ],
+   "civs": [
+    "zanzibar",
+    "tanzania",
+    "united-kingdom"
+   ],
+   "summary": "One month after independence, African revolutionaries led by John Okello overthrow Sultan Jamshid bin Abdullah and the Arab-dominated government of Zanzibar on 12 January 1964. Thousands of Arabs and South Asians are killed, and the sultan flees into exile in Britain. Abeid Karume of the Afro-Shirazi Party becomes president of a people’s republic, which unites with Tanganyika in April to form Tanzania.",
+   "wikipedia": "Zanzibar_Revolution",
+   "search": "Zanzibar Revolution 1964 John Okello Afro-Shirazi Party Sultan Jamshid Abeid Karume union Tanganyika Tanzania"
   }
  ]
 }
