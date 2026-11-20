@@ -71,7 +71,8 @@ const REALMS = existsSync("borders/realms.json") ? JSON.parse(readFileSync("bord
  */
 function namePeriods(name, from, to) {
   const periods = (REALMS[name]?.periods ?? [])
-    .map((p) => ({ year: Number(p.from.slice(0, 4)), name: p.detail ?? p.label ?? p.name })) // France: Third Republic
+    // France: Third Republic; a jointly ruled land keeps its own name (its rulers are not a period of it).
+    .map((p) => ({ year: Number(p.from.slice(0, 4)), name: p.jointly ? p.name : (p.detail ?? p.label ?? p.name) }))
     .sort((a, b) => a.year - b.year);
   if (!periods.length) return undefined;
   const out = [];

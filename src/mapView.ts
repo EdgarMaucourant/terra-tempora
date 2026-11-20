@@ -3,7 +3,7 @@ import { geoCylindricalEqualArea, geoEckert4, geoMiller, geoMollweide, geoRobins
 import type { Feature, MultiPolygon, Polygon } from "geojson";
 import { feature } from "topojson-client";
 import landUrl from "world-atlas/land-50m.json?url";
-import { BLANK_COLOR, BLANK_FILL_ALPHA, MUTED } from "./colors";
+import { BLANK_COLOR, BLANK_FILL_ALPHA, JOINT_DARK, JOINT_LIGHT, MUTED } from "./colors";
 import { foldedInGroup, highlightOf, withClosedGroups, type Polity } from "./data";
 import { shapeOpacity } from "./polityLayer";
 import { badgeUrl, eventOpacity, supersededYears, type EventKind, type HistoryEvent } from "./events";
@@ -535,21 +535,26 @@ export class MapView {
     }
     for (const { p, opacity } of hatched) {
       const shape = this.shapeOf(p);
-      const color = (p.by && this.highlight.get(p.by)) ?? "#e4e7ea";
+      // Land ruled jointly (a condominium) takes every other line in the second
+      // state's colour; rulers not highlighted are light and dark lines.
+      const color = (p.by && this.highlight.get(p.by)) ?? (p.with ? JOINT_LIGHT : "#e4e7ea");
+      const color2 = p.with ? (this.highlight.get(p.with) ?? JOINT_DARK) : color;
       ctx.save();
       ctx.beginPath();
       path(shape);
       ctx.clip();
       ctx.globalAlpha = 0.85 * opacity;
-      ctx.strokeStyle = color;
       ctx.lineWidth = 1.5;
-      ctx.beginPath();
       // Diagonal lines 6 px apart across the screen, kept to the shape by the clip.
-      for (let x = -this.height; x < this.width; x += 6) {
-        ctx.moveTo(x, this.height);
-        ctx.lineTo(x + this.height, 0);
+      for (const [offset, stroke] of [[0, color], [6, color2]] as const) {
+        ctx.strokeStyle = stroke;
+        ctx.beginPath();
+        for (let x = -this.height + offset; x < this.width; x += 12) {
+          ctx.moveTo(x, this.height);
+          ctx.lineTo(x + this.height, 0);
+        }
+        ctx.stroke();
       }
-      ctx.stroke();
       ctx.restore();
       ctx.beginPath();
       path(shape);
