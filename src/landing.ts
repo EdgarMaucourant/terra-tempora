@@ -1,5 +1,5 @@
 import { searched } from "./analytics";
-import { civEraText, civEras, shapePath, type Civilization, type Outlines } from "./civilizations";
+import { civEraText, civYears, civEras, shapePath, type Civilization, type Outlines } from "./civilizations";
 import { ERAS, eraLabel, type Era } from "./eras";
 import { countryCivIds, type Country, type CountryView } from "./countries";
 import { el, externalLink } from "./dom";
@@ -355,7 +355,7 @@ export class Landing {
     body.append(
       el("p", "civ-era", civEraText(c)),
       title,
-      el("p", "civ-dates", formatRange(c.from, c.to)),
+      el("p", "civ-dates", formatRange(...civYears(c))),
       figures,
     );
 

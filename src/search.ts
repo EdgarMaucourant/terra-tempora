@@ -1,5 +1,5 @@
 import { searched } from "./analytics";
-import { CONTINENTS, type Civilization, type Continent } from "./civilizations";
+import { CONTINENTS, civYears, type Civilization, type Continent } from "./civilizations";
 import { continentFinder } from "./continentAt";
 import { countryCivIds, type Country, type CountryView } from "./countries";
 import { el } from "./dom";
@@ -214,7 +214,7 @@ export class Search {
         kind: "civs" as const,
         id: c.id,
         name: c.name,
-        meta: `${formatRange(c.from, c.to)} · ${this.continentNames(c.continents)}`,
+        meta: `${formatRange(...civYears(c))} · ${this.continentNames(c.continents)}`,
         href: `#c=${c.id}`,
         shape: c.id,
         open: () => this.onOpen(c),
