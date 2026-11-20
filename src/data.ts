@@ -37,6 +37,8 @@ export interface Polity {
   kind?: "hatch" | "unreviewed" | "group" | "blank";
   /** For "hatch": the state that holds the land, since when, and why it is not its owner. */
   by?: string;
+  /** On a hatching: the territory under it, when the land is one. */
+  land?: string;
   /** For "hatch": the state that rules the land jointly with `by` (a condominium, the New Hebrides). */
   with?: string;
   since?: string;
