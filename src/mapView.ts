@@ -91,6 +91,7 @@ export class MapView {
   private highlight = new Map<string, string>();
   /** The colours asked for, before closed groups take one colour. */
   private chosen = new Map<string, string>();
+  private ownerFirst = false;
   private hovered: string | null = null;
   /** Today's border of the country being looked at, drawn dashed over everything. */
   private outline: Shape | null = null;
@@ -152,7 +153,7 @@ export class MapView {
       this.shapes.delete(p.id);
     }
     // A group's members, now known, take its colour.
-    if (this.chosen.size) this.highlight = withClosedGroups(this.chosen, this.polities.values(), this.openGroups);
+    if (this.chosen.size) this.highlight = withClosedGroups(this.chosen, this.polities.values(), this.openGroups, this.ownerFirst);
   }
 
   private shapeOf(p: Polity): Shape {
@@ -208,9 +209,11 @@ export class MapView {
     return img.complete && img.naturalWidth ? img : null;
   }
 
-  setHighlight(colors: Map<string, string>) {
+  /** ownerFirst: territories take their owner's colour (the home globe). */
+  setHighlight(colors: Map<string, string>, ownerFirst = false) {
+    this.ownerFirst = ownerFirst;
     this.chosen = new Map(colors);
-    this.highlight = withClosedGroups(this.chosen, this.polities.values(), this.openGroups);
+    this.highlight = withClosedGroups(this.chosen, this.polities.values(), this.openGroups, this.ownerFirst);
     this.draw();
   }
 
@@ -221,7 +224,7 @@ export class MapView {
   /** The groups whose territories are named, after a click inside them. */
   setOpenGroups(groups: Iterable<string>) {
     this.openGroups = new Set(groups);
-    this.highlight = withClosedGroups(this.chosen, this.polities.values(), this.openGroups);
+    this.highlight = withClosedGroups(this.chosen, this.polities.values(), this.openGroups, this.ownerFirst);
     this.draw();
   }
 
@@ -475,7 +478,7 @@ export class MapView {
       }
       if (p.kind === "group") {
         const opacity = shapeOpacity(p, this.year);
-        if (opacity > 0.002 && (this.showContext || highlightOf(this.highlight, p) !== undefined)) grouped.push({ p, opacity });
+        if (opacity > 0.002 && (this.showContext || highlightOf(this.highlight, p, this.ownerFirst) !== undefined)) grouped.push({ p, opacity });
         continue;
       }
       if (p.kind) {
@@ -483,7 +486,7 @@ export class MapView {
         if (opacity > 0.002 && (this.showContext || p.kind === "hatch")) (p.kind === "hatch" ? hatched : unreviewed).push({ p, opacity });
         continue;
       }
-      const highlighted = highlightOf(this.highlight, p) !== undefined;
+      const highlighted = highlightOf(this.highlight, p, this.ownerFirst) !== undefined;
       if (!highlighted && !this.showContext) continue;
       const opacity = shapeOpacity(p, this.year);
       if (opacity <= 0.002) continue;
@@ -519,7 +522,7 @@ export class MapView {
     }
     for (const { p, opacity } of [...context, ...featured]) {
       const shape = this.shapeOf(p);
-      const color = highlightOf(this.highlight, p);
+      const color = highlightOf(this.highlight, p, this.ownerFirst);
       const hovered = !color && !!this.hovered && (p.name === this.hovered || !!p.groups?.includes(this.hovered));
       ctx.beginPath();
       path(shape);
@@ -610,8 +613,8 @@ export class MapView {
     const folded = (p: Polity) => foldedInGroup(p, groupNames, this.openGroups);
     const minArea = CONTEXT_LABEL_AREA / Math.min(this.zoom, 8) ** 1.6;
     const candidates = this.drawn
-      .filter(({ p }) => !p.kind && p.label && !folded(p) && (highlightOf(this.highlight, p) || p.area >= minArea || p.groups?.some((g) => groupNames.has(g))))
-      .sort((a, b) => Number(!!highlightOf(this.highlight, b.p)) - Number(!!highlightOf(this.highlight, a.p)) || b.p.area - a.p.area);
+      .filter(({ p }) => !p.kind && p.label && !folded(p) && (highlightOf(this.highlight, p, this.ownerFirst) || p.area >= minArea || p.groups?.some((g) => groupNames.has(g))))
+      .sort((a, b) => Number(!!highlightOf(this.highlight, b.p, this.ownerFirst)) - Number(!!highlightOf(this.highlight, a.p, this.ownerFirst)) || b.p.area - a.p.area);
     const placed: [number, number, number, number][] = [];
     const named = new Set<string>();
     ctx.textAlign = "center";
@@ -621,7 +624,7 @@ export class MapView {
       if (named.has(p.name)) continue;
       const at = this.projection(p.label!);
       if (!at || at[0] < 0 || at[0] > this.width || at[1] < 0 || at[1] > this.height) continue;
-      const highlighted = highlightOf(this.highlight, p) !== undefined;
+      const highlighted = highlightOf(this.highlight, p, this.ownerFirst) !== undefined;
       ctx.font = highlighted ? "600 14px 'Instrument Sans Variable', sans-serif" : "500 11px 'Instrument Sans Variable', sans-serif";
       const text = this.nameOf(p.display ?? p.name);
       const w = ctx.measureText(text).width / 2 + 3;

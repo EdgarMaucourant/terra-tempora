@@ -2170,8 +2170,8 @@ function showHomeColours(shapes: Polity[]) {
     const colour = homeColours.get(realmOf(p));
     if (colour) homeRealms.set(realmOf(p), colour);
   }
-  layer.setHighlight(homeRealms);
-  map.setHighlight(homeRealms);
+  layer.setHighlight(homeRealms, true);
+  map.setHighlight(homeRealms, true);
   render();
 }
 
