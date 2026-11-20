@@ -714,7 +714,7 @@ function clickRealm(p: Polity | null | undefined) {
   // A closed group (French West Africa) acts as one: a click opens its page
   // and names its territories, which can then be clicked one by one; a click
   // anywhere else closes it again.
-  const land = p?.kind === "hatch" && p.label ? layer.landAt(p.label[0], p.label[1], year) : p;
+  const land = p?.kind === "hatch" ? layer.landUnder(p, year) : p;
   const closed = closedGroupOf(land);
   if (closed) {
     closeEvent();
@@ -736,7 +736,7 @@ function clickRealm(p: Polity | null | undefined) {
     return;
   }
   // A hatching (Indonesia over Portuguese Timor) stands for the land under it.
-  if (p.kind === "hatch" && p.label) p = layer.landAt(p.label[0], p.label[1], year) ?? p;
+  if (p.kind === "hatch") p = layer.landUnder(p, year) ?? p;
   // Rebuilt land opens the history of its place of today, whatever the year:
   // Portuguese Timor in 1995 and Timor-Leste in 2017 both open Timor-Leste.
   // Clicking it again in that view shows the details of what is drawn.
@@ -845,7 +845,7 @@ function hoverUnreviewed(x: number, y: number) {
 function hoverRealm(p: Polity | null | undefined, x: number, y: number) {
   if (p?.kind === "unreviewed") return hoverUnreviewed(x, y);
   // A closed group (French West Africa) is pointed at as a whole.
-  const land = p?.kind === "hatch" && p.label ? layer.landAt(p.label[0], p.label[1], year) : p;
+  const land = p?.kind === "hatch" ? layer.landUnder(p, year) : p;
   p = closedGroupOf(land) ?? p;
   const civ = p && civs?.ofRealm(home ? realmOf(p) : p.name);
   if (!p || !civ) {
@@ -853,15 +853,16 @@ function hoverRealm(p: Polity | null | undefined, x: number, y: number) {
     return;
   }
   // A hatching is named after the land under it (Portuguese Timor, not Portugal).
-  const under = p.kind === "hatch" && p.label ? layer.landAt(p.label[0], p.label[1], year) : undefined;
+  const under = p.kind === "hatch" ? layer.landUnder(p, year) : undefined;
   const greyed = !layer.isHighlighted(p);
   layer.setHovered(greyed ? p.name : null);
   map.setHovered(greyed ? p.name : null);
   const own = under && civs?.ofRealm(under.name);
   const years = own ? formatRange(own.from, own.to) : formatRange(civ.from, civ.to);
   // A member of a group says so: the Kingdom of Spain in 1530 is part of the Spanish Empire.
-  const groups = [...(home ? [] : (p.groups ?? [])), ...(p.partOf ? [p.partOf] : [])]
-    .filter((g) => g !== p.name)
+  const named = under ?? p;
+  const groups = [...(home ? [] : (named.groups ?? [])), ...(named.partOf ? [named.partOf] : [])]
+    .filter((g) => g !== named.name)
     .map((g) => placeName(g));
   const line = (textContent: string) => Object.assign(document.createElement("span"), { textContent });
   tooltip.replaceChildren(
@@ -2143,8 +2144,12 @@ function colourRealms(shapes: Polity[]) {
   for (const name of [...areas.keys()].sort((a, b) => areas.get(b)! - areas.get(a)!)) {
     const at = seats.get(name);
     const [from, to] = spans.get(name)!;
-    let colour = palette[homeColours.size % palette.length];
-    if (at) {
+    // The build gives every rebuilt realm its colour, the same on every visit.
+    const fixed = data?.index.homeColours?.[name];
+    let colour = palette[(fixed ?? homeColours.size) % palette.length];
+    if (fixed !== undefined) {
+      if (at) homePlaced.push({ at, from, to, colour });
+    } else if (at) {
       const near = homePlaced
         .filter((x) => x.from <= to && x.to >= from)
         .map((x) => ({ colour: x.colour, d: distance(at, x.at) }))
@@ -2166,8 +2171,8 @@ function showHomeColours(shapes: Polity[]) {
     const colour = homeColours.get(realmOf(p));
     if (colour) homeRealms.set(realmOf(p), colour);
   }
-  layer.setHighlight(homeRealms);
-  map.setHighlight(homeRealms);
+  layer.setHighlight(homeRealms, true);
+  map.setHighlight(homeRealms, true);
   render();
 }
 
