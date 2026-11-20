@@ -4,14 +4,9 @@ import {
   Cartesian3,
   Color,
   GeometryInstance,
-  HorizontalOrigin,
-  Label,
-  LabelCollection,
-  LabelStyle,
   Material,
   MaterialAppearance,
   Math as CesiumMath,
-  NearFarScalar,
   PolygonGeometry,
   PolygonHierarchy,
   PolylineGeometry,
@@ -19,10 +14,10 @@ import {
   Primitive,
   Scene,
   SceneTransforms,
-  VerticalOrigin,
 } from "cesium";
 import { BLANK_COLOR, BLANK_FILL_ALPHA, JOINT_DARK, JOINT_LIGHT, MUTED, ROUGH_COLOR, ROUGH_LABEL_AREA } from "./colors";
 import { foldedInGroup, highlightOf, isOverlay, withClosedGroups, type Polity } from "./data";
+import { FlatLabel, FlatLabels } from "./flatLabels";
 import { inRing } from "./frame";
 
 // Shapes float slightly above the globe surface so they never z-fight with it.
@@ -200,9 +195,10 @@ class Piece {
 interface Drawn {
   pieces: Piece[];
   highlighted: boolean;
-  label?: Label;
+  label?: FlatLabel;
   /** An active war zone's warning sign (see Polity.rough). */
-  sign?: Label;
+  sign?: FlatLabel;
+  signWanted?: boolean;
   /** Whether the label is due on the globe; it still gives way to a name it would cover. */
   wanted?: boolean;
 }
@@ -219,9 +215,9 @@ export class PolityLayer {
   /** A number for each outline, as the same outline is the same array. */
   private ringIds = new WeakMap<number[], number>();
   private nextRing = 0;
-  private labels: LabelCollection;
+  private labels: FlatLabels;
   /** Warning signs, kept above every other primitive (see attach). */
-  private signs: LabelCollection;
+  private signs: FlatLabels;
   /** Colours of the highlighted realms, by Cliopatria name. Others are grey. */
   private highlight = new Map<string, string>();
   /** The colours asked for, before closed groups take one colour. */
@@ -247,8 +243,10 @@ export class PolityLayer {
   lookahead = 3;
 
   constructor(private scene: Scene) {
-    this.labels = scene.primitives.add(new LabelCollection({ scene }));
-    this.signs = scene.primitives.add(new LabelCollection({ scene }));
+    // Drawn flat over the globe, so no border or hatching covers them; the
+    // warning signs over the names.
+    this.labels = new FlatLabels(scene);
+    this.signs = new FlatLabels(scene);
     scene.preRender.addEventListener(() => this.declutter());
   }
 
@@ -452,7 +450,13 @@ export class PolityLayer {
     this.labelsDirty = false;
     this.lastView = view;
     this.lastDeclutter = now;
-    const rank = (p: Polity, d: Drawn) => (p.kind === "hatch" ? 3 : d.highlighted && this.labelAll ? 2 : p.kind === "group" ? 1 : 0);
+    // A warning sign past the horizon would show through the globe.
+    for (const [, d] of this.drawn) {
+      if (!d.sign || !d.signWanted) continue;
+      const position = d.sign.position;
+      d.sign.show = Cartesian3.dot(position, camera.positionWC) > Cartesian3.magnitudeSquared(position) * 0.98;
+    }
+    const rank = (p: Polity, d: Drawn) => (d.highlighted && this.labelAll ? 2 : p.kind === "group" ? 1 : 0);
     const due = [...this.drawn].filter(([, d]) => d.label && d.wanted).sort((a, b) => rank(b[0], b[1]) - rank(a[0], a[1]) || b[0].area - a[0].area);
     const placed: [number, number, number, number][] = [];
     const at = new Cartesian2();
@@ -467,7 +471,7 @@ export class PolityLayer {
         label.show = false;
         continue;
       }
-      const size = (rank(p, d) === 3 ? 10 : rank(p, d) === 2 ? 15 : 12) * (range < 1.2e7 ? 1.15 : 1);
+      const size = (rank(p, d) === 2 ? 15 : 12) * (range < 1.2e7 ? 1.15 : 1);
       const w = (label.text.length * size * 0.56) / 2 + 3;
       const h = size * 0.8;
       // A group's name moves above or below the names already there.
@@ -479,7 +483,7 @@ export class PolityLayer {
       label.show = dy !== undefined;
       if (dy === undefined) continue;
       placed.push([point.x - w, point.y + dy - h, point.x + w, point.y + dy + h]);
-      if (label.pixelOffset.y !== dy) label.pixelOffset = new Cartesian2(0, dy);
+      label.pixelOffset.y = dy;
     }
   }
 
@@ -585,7 +589,12 @@ export class PolityLayer {
       for (const piece of d.pieces) piece.addOpacity(p, opacity, hovered);
       // Labels switch at the midpoint of a fade. Changing a label's colour
       // redraws its glyphs, which is too costly to do every frame.
-      if (d.sign) d.sign.show = opacity > 0.5;
+      if (d.sign) {
+        const wanted = opacity > 0.5;
+        if (wanted !== d.signWanted) this.labelsDirty = true;
+        d.signWanted = wanted;
+        if (!wanted) d.sign.show = false;
+      }
       if (d.label) {
         const wanted =
           opacity > 0.5 &&
@@ -677,7 +686,7 @@ export class PolityLayer {
       return piece;
     });
 
-    let label: Label | undefined;
+    let label: FlatLabel | undefined;
     // A group's territories all have a name, shown once a click opens the group.
     if (!p.kind && p.label && ((highlighted && this.labelAll) || p.area >= CONTEXT_LABEL_AREA || (p.partOf && p.groups?.length))) {
       const height = highlighted ? FEATURED_HEIGHT : CONTEXT_HEIGHT;
@@ -686,36 +695,27 @@ export class PolityLayer {
         position: Cartesian3.fromDegrees(p.label[0], p.label[1], height + 2000),
         text: this.nameOf(p.display ?? p.name),
         font: highlighted ? "600 15px 'Instrument Sans Variable', sans-serif" : "500 12px 'Instrument Sans Variable', sans-serif",
-        fillColor: highlighted ? Color.fromCssColorString("#fbf6ec") : Color.fromCssColorString("#b4bac1"),
-        outlineColor: Color.BLACK.withAlpha(0.85),
+        fill: highlighted ? "#fbf6ec" : "#b4bac1",
+        outline: "rgba(0, 0, 0, 0.85)",
         outlineWidth: 3,
-        style: LabelStyle.FILL_AND_OUTLINE,
-        horizontalOrigin: HorizontalOrigin.CENTER,
-        verticalOrigin: VerticalOrigin.CENTER,
-        scaleByDistance: new NearFarScalar(2e6, 1.15, 2.5e7, 0.8),
-        show: false,
+        near: [2e6, 1.15],
+        far: [2.5e7, 0.8],
       });
     }
     // An active war zone carries a warning sign that its lines are rough,
-    // drawn last so that no hatching or outline covers it.
-    let sign: Label | undefined;
+    // small from afar.
+    let sign: FlatLabel | undefined;
     if (p.kind === "hatch" && p.rough && p.label && p.area >= ROUGH_LABEL_AREA) {
-      this.scene.primitives.raiseToTop(this.signs);
       sign = this.signs.add({
         id: p,
         position: Cartesian3.fromDegrees(p.label[0], p.label[1], FEATURED_HEIGHT + 4000),
         text: "⚠",
         font: "700 20px 'Instrument Sans Variable', sans-serif",
-        fillColor: Color.fromCssColorString(ROUGH_COLOR),
-        outlineColor: Color.BLACK.withAlpha(0.9),
+        fill: ROUGH_COLOR,
+        outline: "rgba(0, 0, 0, 0.9)",
         outlineWidth: 4,
-        style: LabelStyle.FILL_AND_OUTLINE,
-        horizontalOrigin: HorizontalOrigin.CENTER,
-        verticalOrigin: VerticalOrigin.CENTER,
-        // Small from afar, and never hidden behind the land or its outlines.
-        scaleByDistance: new NearFarScalar(1.5e6, 1.3, 2e7, 0.6),
-        disableDepthTestDistance: Number.POSITIVE_INFINITY,
-        show: false,
+        near: [1.5e6, 1.3],
+        far: [2e7, 0.6],
       });
     }
     // A group's name sits above its members' names, in capitals.
@@ -725,14 +725,11 @@ export class PolityLayer {
         position: Cartesian3.fromDegrees(p.label[0], p.label[1], GROUP_HEIGHT + 2000),
         text: this.nameOf(p.name).toUpperCase(),
         font: "italic 600 12px 'Instrument Sans Variable', sans-serif",
-        fillColor: Color.fromCssColorString(GROUP_COLOR),
-        outlineColor: Color.BLACK.withAlpha(0.85),
+        fill: GROUP_COLOR,
+        outline: "rgba(0, 0, 0, 0.85)",
         outlineWidth: 3,
-        style: LabelStyle.FILL_AND_OUTLINE,
-        horizontalOrigin: HorizontalOrigin.CENTER,
-        verticalOrigin: VerticalOrigin.CENTER,
-                scaleByDistance: new NearFarScalar(2e6, 1.15, 2.5e7, 0.8),
-        show: false,
+        near: [2e6, 1.15],
+        far: [2.5e7, 0.8],
       });
     }
     this.drawn.set(p, { pieces, highlighted, label, sign });
