@@ -3,7 +3,7 @@ import { geoCylindricalEqualArea, geoEckert4, geoMiller, geoMollweide, geoRobins
 import type { Feature, MultiPolygon, Polygon } from "geojson";
 import { feature } from "topojson-client";
 import landUrl from "world-atlas/land-50m.json?url";
-import { BLANK_COLOR, BLANK_FILL_ALPHA, JOINT_DARK, JOINT_LIGHT, MUTED, ROUGH_COLOR, ROUGH_LABEL_AREA } from "./colors";
+import { BLANK_COLOR, BLANK_FILL_ALPHA, JOINT_DARK, JOINT_LIGHT, MUTED, LABEL_OUTLINE, ROUGH_COLOR, ROUGH_LABEL_AREA } from "./colors";
 import { foldedInGroup, highlightOf, withClosedGroups, type Polity } from "./data";
 import { shapeOpacity } from "./polityLayer";
 import { badgeUrl, eventOpacity, supersededYears, type EventKind, type HistoryEvent } from "./events";
@@ -655,7 +655,7 @@ export class MapView {
       if (placed.some((b) => box[0] < b[2] && box[2] > b[0] && box[1] < b[3] && box[3] > b[1])) continue;
       placed.push(box);
       named.add(p.name);
-      ctx.strokeStyle = "rgba(0, 0, 0, 0.85)";
+      ctx.strokeStyle = LABEL_OUTLINE;
       ctx.lineWidth = 3;
       ctx.strokeText(text, at[0], at[1]);
       ctx.fillStyle = highlighted ? "#fbf6ec" : "#b4bac1";
@@ -675,7 +675,7 @@ export class MapView {
         const box: [number, number, number, number] = [at[0] - w, y - 9, at[0] + w, y + 9];
         if (placed.some((b) => box[0] < b[2] && box[2] > b[0] && box[1] < b[3] && box[3] > b[1])) continue;
         placed.push(box);
-        ctx.strokeStyle = "rgba(0, 0, 0, 0.85)";
+        ctx.strokeStyle = LABEL_OUTLINE;
         ctx.lineWidth = 3;
         ctx.strokeText(text, at[0], y);
         ctx.fillStyle = GROUP_COLOR;

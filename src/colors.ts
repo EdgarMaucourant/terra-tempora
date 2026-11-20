@@ -54,3 +54,6 @@ export const TODAY_COLOURS = ["#b59782", "#3fa7a4", "#e6bc3f", "#6d9fd8", "#b07c
 /** The warning over an active war zone whose lines are rough, and the least area that gets one (km²). */
 export const ROUGH_COLOR = "#ffc857";
 export const ROUGH_LABEL_AREA = 30_000;
+
+/** The outline around the names on the globe and the map: a medium grey, softer than black. */
+export const LABEL_OUTLINE = "rgba(72, 77, 86, 0.85)";
