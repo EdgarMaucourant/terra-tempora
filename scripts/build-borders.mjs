@@ -348,6 +348,9 @@ for (let year = TODAY; year >= firstReviewed; year--) {
         add(`hatch|${s.owner}|${s.territory ?? ""}|${h.by}|${h.since}`, id, {
           kind: "hatch",
           name: s.owner,
+          // The territory under it, so the hatching is named after its land
+          // even where its label point falls in a lagoon (Chagos Archipelago).
+          ...(s.territory && { land: s.territory }),
           by: h.by,
           since: h.since,
           note: h.note,
@@ -507,6 +510,7 @@ for (const [key, list] of runs) {
       ...(m.groups && { groups: m.groups }),
       ...(m.display && { display: m.display }),
       ...(m.kind && { kind: m.kind }),
+      ...(m.land && { land: m.land }),
       ...(m.by && { by: m.by, since: m.since, note: m.note }),
       ...(m.with && { with: m.with }),
       ...(m.trust && { trust: true }),
@@ -534,6 +538,69 @@ for (const ids of landByOwner.values()) {
     label: null,
     rings: o.rings,
   });
+}
+
+// ---------------------------------------------------------------- home colours
+
+/**
+ * The colour each realm takes on the home globe ("Today's world"), as a
+ * position in its palette (TODAY_COLOURS in src/colors.ts, HOME_PALETTE
+ * colours long). Worked out once here, so it is the same on every visit
+ * whatever years are looked at first. A realm is coloured as a whole: its
+ * territories (British Hong Kong is drawn in the colour of the United
+ * Kingdom) and the members of a group (French West Africa) count as its own
+ * places. Today's realms go first, largest first, then the others; each
+ * takes the colour least used by the realms nearest to any of its places in
+ * the same years, and, where land changed hands, never the colour of the
+ * realm that held the same place just before or just after it if another
+ * colour is free.
+ */
+const HOME_PALETTE = 8;
+const homeRealmOf = (s) => s.groups?.[0] ?? s.partOf ?? s.name;
+const homeColours = {};
+{
+  const spots = new Map(); // realm -> [{ at, from, to }]
+  const sizes = new Map(); // realm -> largest area in one year
+  const yearArea = new Map();
+  for (const s of shapes) {
+    if (s.kind || !s.name || !s.label) continue;
+    const realm = homeRealmOf(s);
+    (spots.get(realm) ?? spots.set(realm, []).get(realm)).push({ at: s.label, from: s.from, to: s.to });
+    for (let y = s.from; y <= s.to; y += Math.max(1, Math.ceil((s.to - s.from) / 50))) {
+      const key = `${realm}|${y}`;
+      yearArea.set(key, (yearArea.get(key) ?? 0) + s.area);
+      sizes.set(realm, Math.max(sizes.get(realm) ?? 0, yearArea.get(key)));
+    }
+  }
+  const standsToday = (realm) => spots.get(realm).some((p) => p.to >= TODAY);
+  const order = [...spots.keys()].sort(
+    (a, b) => Number(standsToday(b)) - Number(standsToday(a)) || sizes.get(b) - sizes.get(a) || a.localeCompare(b),
+  );
+  const distance = ([a, b], [c, d]) => Math.hypot((a - c) * Math.cos((((b + d) / 2) * Math.PI) / 180), b - d);
+  const placed = []; // { at, from, to, colour }
+  // Places this close (in degrees) are the same land, for the hand-over rule.
+  const SAME_PLACE = 1.5;
+  for (const realm of order) {
+    const score = new Array(HOME_PALETTE).fill(0);
+    const handedOver = new Set();
+    for (const spot of spots.get(realm)) {
+      const near = placed
+        .filter((x) => x.from <= spot.to && x.to >= spot.from)
+        .map((x) => ({ colour: x.colour, d: distance(spot.at, x.at) }))
+        .sort((a, b) => a.d - b.d)
+        .slice(0, 8);
+      near.forEach((n, i) => (score[n.colour] += 8 - i));
+      for (const x of placed) {
+        const touching = x.to === spot.from - 1 || x.from === spot.to + 1 || (x.from <= spot.to && x.to >= spot.from);
+        if (touching && distance(spot.at, x.at) < SAME_PLACE) handedOver.add(x.colour);
+      }
+    }
+    const free = [...Array(HOME_PALETTE).keys()].filter((c) => !handedOver.has(c));
+    const choices = free.length ? free : [...Array(HOME_PALETTE).keys()];
+    const colour = choices.reduce((best, c) => (score[c] < score[best] ? c : best), choices[0]);
+    homeColours[realm] = colour;
+    for (const spot of spots.get(realm)) placed.push({ ...spot, colour });
+  }
 }
 
 // ---------------------------------------------------------------- windows
@@ -671,6 +738,7 @@ writeFileSync(
     ),
     places,
     lineage,
+    homeColours,
   }),
 );
 console.log(`${shapes.length} shapes in ${windows.length} windows`);
