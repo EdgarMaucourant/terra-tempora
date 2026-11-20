@@ -17,7 +17,7 @@ import {
 } from "cesium";
 import { BLANK_COLOR, BLANK_FILL_ALPHA, JOINT_DARK, JOINT_LIGHT, MUTED, LABEL_OUTLINE, ROUGH_COLOR, ROUGH_LABEL_AREA } from "./colors";
 import { foldedInGroup, highlightOf, isOverlay, withClosedGroups, type Polity } from "./data";
-import { FlatLabel, FlatLabels } from "./flatLabels";
+import { FlatLabel, FlatLabels, wrapLabel } from "./flatLabels";
 import { inRing } from "./frame";
 
 // Shapes float slightly above the globe surface so they never z-fight with it.
@@ -490,8 +490,9 @@ export class PolityLayer {
         continue;
       }
       const size = (rank(p, d) === 2 ? 15 : 12) * (range < 1.2e7 ? 1.15 : 1);
-      const w = (label.text.length * size * 0.56) / 2 + 3;
-      const h = size * 0.8;
+      const lines = label.text.split("\n");
+      const w = (Math.max(...lines.map((l) => l.length)) * size * 0.56) / 2 + 3;
+      const h = size * (0.8 + 0.575 * (lines.length - 1));
       // A group's name moves above or below the names already there.
       const shifts = p.kind === "group" ? [0, -22, 22, -44, 44] : [0];
       const dy = shifts.find((dy) => {
@@ -711,7 +712,7 @@ export class PolityLayer {
       label = this.labels.add({
         id: p,
         position: Cartesian3.fromDegrees(p.label[0], p.label[1], height + 2000),
-        text: this.nameOf(p.display ?? p.name),
+        text: wrapLabel(this.nameOf(p.display ?? p.name)),
         font: highlighted ? "600 15px 'Instrument Sans Variable', sans-serif" : "500 12px 'Instrument Sans Variable', sans-serif",
         fill: highlighted ? "#fbf6ec" : "#b4bac1",
         outline: LABEL_OUTLINE,
@@ -741,7 +742,7 @@ export class PolityLayer {
       label = this.labels.add({
         id: p,
         position: Cartesian3.fromDegrees(p.label[0], p.label[1], GROUP_HEIGHT + 2000),
-        text: this.nameOf(p.name).toUpperCase(),
+        text: wrapLabel(this.nameOf(p.name).toUpperCase()),
         font: "italic 600 12px 'Instrument Sans Variable', sans-serif",
         fill: GROUP_COLOR,
         outline: LABEL_OUTLINE,

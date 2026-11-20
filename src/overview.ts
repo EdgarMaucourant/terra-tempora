@@ -5,7 +5,7 @@
 // travel, what it is; on the home view, the note on the map's accuracy and
 // the ways in. Documentaries about the subject close it.
 
-import { civEraText, type Civilization } from "./civilizations";
+import { civEraText, civYears, type Civilization } from "./civilizations";
 import type { Country, CountryView } from "./countries";
 import { disclaimer } from "./disclaimer";
 import { renderDocumentaries, type Documentaries } from "./documentaries";
@@ -99,7 +99,7 @@ export class Overview {
         const c = subject.civ;
         eyebrow.textContent = t("overview.civilization");
         title.textContent = c.name;
-        meta.textContent = `${formatRange(c.from, c.to)} · ${civEraText(c)}`;
+        meta.textContent = `${formatRange(...civYears(c))} · ${civEraText(c)}`;
         void article([c.wikipedia]);
         if (c.wikidata) {
           links.append(externalLink(`https://www.wikidata.org/wiki/${encodeURIComponent(c.wikidata)}`, "Wikidata"));
@@ -169,7 +169,7 @@ export class Overview {
       const item = el("li");
       const button = el("button", "overview-civ");
       button.type = "button";
-      button.append(el("strong", undefined, c.name), el("span", undefined, formatRange(c.from, c.to)));
+      button.append(el("strong", undefined, c.name), el("span", undefined, formatRange(...civYears(c))));
       button.addEventListener("click", () => this.focus(c));
       item.append(button);
       items.append(item);
