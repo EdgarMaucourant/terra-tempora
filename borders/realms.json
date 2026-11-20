@@ -3183,13 +3183,45 @@
   "wikipedia": "Federation of South Arabia",
   "wikidata": "Q834486",
   "fr": "Fédération d'Arabie du Sud",
-  "es": "Federación de Arabia del Sur"
+  "es": "Federación de Arabia del Sur",
+  "periods": [
+   {
+    "from": "1959-02-11",
+    "name": "Federation of Arab Emirates of the South",
+    "wikipedia": "Federation of South Arabia",
+    "fr": "Fédération des émirats arabes du Sud",
+    "es": "Federación de Emiratos Árabes del Sur",
+    "note": "Federation of Arab Emirates of the South until 4 April 1962"
+   },
+   {
+    "from": "1962-04-04",
+    "name": "Federation of South Arabia",
+    "wikipedia": "Federation of South Arabia",
+    "note": "Renamed the Federation of South Arabia; Aden joined it in January 1963"
+   }
+  ]
  },
  "Protectorate of South Arabia": {
   "wikipedia": "Protectorate of South Arabia",
   "wikidata": "Q1517772",
   "fr": "Protectorat d'Arabie du Sud",
-  "es": "Protectorado de Arabia del Sur"
+  "es": "Protectorado de Arabia del Sur",
+  "periods": [
+   {
+    "from": "1886-01-01",
+    "name": "Aden Protectorate",
+    "wikipedia": "Aden Protectorate",
+    "fr": "Protectorat d'Aden",
+    "es": "Protectorado de Adén",
+    "note": "The Eastern Aden Protectorate until 1963"
+   },
+   {
+    "from": "1963-01-18",
+    "name": "Protectorate of South Arabia",
+    "wikipedia": "Protectorate of South Arabia",
+    "note": "Renamed in 1963"
+   }
+  ]
  },
  "South Yemen": {
   "wikipedia": "South Yemen",
@@ -3269,5 +3301,136 @@
   "fr": "Bahamas britanniques",
   "es": "Bahamas británicas",
   "withOwner": false
+ },
+ "Gambia Colony and Protectorate": {
+  "wikipedia": "Gambia Colony and Protectorate",
+  "wikidata": "Q3557236",
+  "fr": "Colonie et protectorat de Gambie",
+  "es": "Colonia y Protectorado de Gambia",
+  "withOwner": true
+ },
+ "Crown Colony of Malta": {
+  "wikipedia": "Crown Colony of Malta",
+  "wikidata": "Q6744657",
+  "fr": "Colonie de Malte",
+  "es": "Colonia de Malta"
+ },
+ "Northern Rhodesia": {
+  "wikipedia": "Northern Rhodesia",
+  "wikidata": "Q953903",
+  "fr": "Rhodésie du Nord",
+  "es": "Rodesia del Norte"
+ },
+ "Nyasaland": {
+  "wikipedia": "Nyasaland",
+  "wikidata": "Q1649306",
+  "fr": "Nyassaland",
+  "es": "Nyasalandia"
+ },
+ "Federation of Rhodesia and Nyasaland": {
+  "wikipedia": "Federation of Rhodesia and Nyasaland",
+  "wikidata": "Q654342",
+  "fr": "Fédération de Rhodésie et du Nyassaland",
+  "es": "Federación de Rodesia y Nyasalandia"
+ },
+ "Tanganyika": {
+  "wikipedia": "Tanganyika (1961–1964)",
+  "wikidata": "Q431731",
+  "fr": "Tanganyika",
+  "es": "Tanganica"
+ },
+ "Tanganyika Territory": {
+  "wikipedia": "Tanganyika Territory",
+  "wikidata": "Q158725",
+  "fr": "Territoire du Tanganyika",
+  "es": "Territorio de Tanganica"
+ },
+ "Zanzibar": {
+  "wikipedia": "People's Republic of Zanzibar",
+  "wikidata": "Q157535",
+  "fr": "Zanzibar",
+  "es": "Zanzíbar",
+  "periods": [
+   {
+    "from": "1963-12-10",
+    "name": "Zanzibar",
+    "wikipedia": "Sultanate of Zanzibar",
+    "note": "Independent sultanate"
+   },
+   {
+    "from": "1964-01-12",
+    "name": "Zanzibar",
+    "wikipedia": "People's Republic of Zanzibar",
+    "note": "Republic after the revolution of January 1964"
+   }
+  ]
+ },
+ "Kenya Colony": {
+  "wikipedia": "Kenya Colony",
+  "wikidata": "Q2538511",
+  "fr": "Colonie du Kenya",
+  "es": "Colonia de Kenia"
+ },
+ "Uganda Protectorate": {
+  "wikipedia": "Uganda Protectorate",
+  "wikidata": "Q1097943",
+  "fr": "Protectorat de l'Ouganda",
+  "es": "Protectorado de Uganda"
+ },
+ "Malaya": {
+  "wikipedia": "Federation of Malaya",
+  "wikidata": "Q1479726",
+  "fr": "Malaya",
+  "es": "Malaya"
+ },
+ "Crown Colony of Sarawak": {
+  "wikipedia": "Crown Colony of Sarawak",
+  "wikidata": "Q5589708",
+  "fr": "Colonie de Sarawak",
+  "es": "Colonia de Sarawak"
+ },
+ "North Borneo": {
+  "wikipedia": "North Borneo",
+  "wikidata": "Q1147441",
+  "fr": "Bornéo du Nord",
+  "es": "Borneo del Norte"
+ },
+ "West Indies Federation": {
+  "wikipedia": "West Indies Federation",
+  "wikidata": "Q652560",
+  "fr": "Fédération des Indes occidentales",
+  "es": "Federación de las Indias Occidentales"
+ },
+ "Sierra Leone Colony and Protectorate": {
+  "wikipedia": "Sierra Leone Colony and Protectorate",
+  "wikidata": "Q30059027",
+  "fr": "Colonie et protectorat de Sierra Leone",
+  "es": "Colonia y Protectorado de Sierra Leona"
+ },
+ "Colonial Nigeria": {
+  "wikipedia": "Colonial Nigeria",
+  "wikidata": "Q2046345",
+  "fr": "Colonie et protectorat du Nigeria",
+  "es": "Colonia y Protectorado de Nigeria"
+ },
+ "British Cyprus": {
+  "wikipedia": "British Cyprus",
+  "wikidata": "Q15240466",
+  "fr": "Chypre britannique",
+  "es": "Chipre británico",
+  "withOwner": false
+ },
+ "British Somaliland": {
+  "wikipedia": "British Somaliland",
+  "wikidata": "Q662653",
+  "fr": "Somaliland britannique",
+  "es": "Somalilandia británica",
+  "withOwner": false
+ },
+ "Aden Colony": {
+  "wikipedia": "Aden Colony",
+  "wikidata": "Q49910",
+  "fr": "Colonie d'Aden",
+  "es": "Colonia de Adén"
  }
 }

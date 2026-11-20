@@ -6765,6 +6765,631 @@
      "by": "Rhodesia"
     }
    ]
+  },
+  {
+   "place": "Singapore (Malaysia)",
+   "lonLat": [
+    103.82,
+    1.35
+   ],
+   "years": [
+    1963,
+    1964
+   ],
+   "realm": "Malaysia",
+   "why": "Part of Malaysia from 16 September 1963 to 9 August 1965"
+  },
+  {
+   "place": "Singapore (colony)",
+   "lonLat": [
+    103.82,
+    1.35
+   ],
+   "years": [
+    1960,
+    1962
+   ],
+   "realm": "Singapore",
+   "why": "British self-governing State of Singapore until 1963"
+  },
+  {
+   "place": "Singapore",
+   "lonLat": [
+    103.82,
+    1.35
+   ],
+   "years": [
+    1965,
+    2026
+   ],
+   "realm": "Singapore",
+   "why": "Independent since 9 August 1965"
+  },
+  {
+   "place": "Malé (protected state)",
+   "lonLat": [
+    73.51,
+    4.18
+   ],
+   "years": [
+    1960,
+    1964
+   ],
+   "realm": "Maldives",
+   "why": "British protected state until 26 July 1965"
+  },
+  {
+   "place": "Banjul (colony)",
+   "lonLat": [
+    -16.68,
+    13.43
+   ],
+   "years": [
+    1960,
+    1964
+   ],
+   "realm": "Gambia Colony and Protectorate",
+   "why": "British colony until 18 February 1965"
+  },
+  {
+   "place": "Banjul",
+   "lonLat": [
+    -16.68,
+    13.43
+   ],
+   "years": [
+    1965,
+    2026
+   ],
+   "realm": "The Gambia",
+   "why": "Independent since 18 February 1965"
+  },
+  {
+   "place": "Lusaka (federation)",
+   "lonLat": [
+    28.28,
+    -15.42
+   ],
+   "years": [
+    1960,
+    1963
+   ],
+   "realm": "Federation of Rhodesia and Nyasaland",
+   "why": "Part of the Federation of Rhodesia and Nyasaland until 31 December 1963"
+  },
+  {
+   "place": "Lusaka",
+   "lonLat": [
+    28.28,
+    -15.42
+   ],
+   "years": [
+    1964,
+    2026
+   ],
+   "realm": "Zambia",
+   "why": "Independent since 24 October 1964"
+  },
+  {
+   "place": "Blantyre (federation)",
+   "lonLat": [
+    35.0,
+    -15.79
+   ],
+   "years": [
+    1960,
+    1963
+   ],
+   "realm": "Federation of Rhodesia and Nyasaland",
+   "why": "Part of the Federation of Rhodesia and Nyasaland until 31 December 1963"
+  },
+  {
+   "place": "Blantyre",
+   "lonLat": [
+    35.0,
+    -15.79
+   ],
+   "years": [
+    1964,
+    2026
+   ],
+   "realm": "Malawi",
+   "why": "Independent since 6 July 1964"
+  },
+  {
+   "place": "Salisbury (federation)",
+   "lonLat": [
+    31.05,
+    -17.83
+   ],
+   "years": [
+    1960,
+    1963
+   ],
+   "realm": "Federation of Rhodesia and Nyasaland",
+   "why": "Capital of the Federation of Rhodesia and Nyasaland"
+  },
+  {
+   "place": "Salisbury (colony)",
+   "lonLat": [
+    31.05,
+    -17.83
+   ],
+   "years": [
+    1964,
+    1964
+   ],
+   "realm": "Southern Rhodesia",
+   "why": "British colony again after the federation ended"
+  },
+  {
+   "place": "Birkirkara (colony)",
+   "lonLat": [
+    14.46,
+    35.9
+   ],
+   "years": [
+    1960,
+    1963
+   ],
+   "realm": "Crown Colony of Malta",
+   "why": "British colony until 21 September 1964"
+  },
+  {
+   "place": "Birkirkara",
+   "lonLat": [
+    14.46,
+    35.9
+   ],
+   "years": [
+    1964,
+    2026
+   ],
+   "realm": "Malta",
+   "why": "Independent since 21 September 1964"
+  },
+  {
+   "place": "Dodoma (trust)",
+   "lonLat": [
+    35.74,
+    -6.17
+   ],
+   "years": [
+    1960,
+    1960
+   ],
+   "realm": "Tanganyika Territory",
+   "why": "UN trust territory under British administration until 9 December 1961",
+   "heldBy": [
+    {
+     "years": [
+      1960,
+      1960
+     ],
+     "by": "United Nations"
+    }
+   ]
+  },
+  {
+   "place": "Dodoma (Tanganyika)",
+   "lonLat": [
+    35.74,
+    -6.17
+   ],
+   "years": [
+    1961,
+    1963
+   ],
+   "realm": "Tanganyika",
+   "why": "Independent Tanganyika from 9 December 1961 until the union of April 1964"
+  },
+  {
+   "place": "Dodoma",
+   "lonLat": [
+    35.74,
+    -6.17
+   ],
+   "years": [
+    1964,
+    2026
+   ],
+   "realm": "Tanzania",
+   "why": "Tanzania since 1964"
+  },
+  {
+   "place": "Zanzibar (protectorate)",
+   "lonLat": [
+    39.3,
+    -6.0
+   ],
+   "years": [
+    1960,
+    1962
+   ],
+   "realm": "Zanzibar",
+   "why": "British protectorate until 10 December 1963"
+  },
+  {
+   "place": "Zanzibar (republic)",
+   "lonLat": [
+    39.3,
+    -6.0
+   ],
+   "years": [
+    1963,
+    1963
+   ],
+   "realm": "Zanzibar",
+   "why": "Independent sultanate, then republic, until the union of April 1964"
+  },
+  {
+   "place": "Nairobi (colony)",
+   "lonLat": [
+    36.82,
+    -1.29
+   ],
+   "years": [
+    1960,
+    1962
+   ],
+   "realm": "Kenya Colony",
+   "why": "British colony until 12 December 1963"
+  },
+  {
+   "place": "Nairobi",
+   "lonLat": [
+    36.82,
+    -1.29
+   ],
+   "years": [
+    1963,
+    2026
+   ],
+   "realm": "Kenya",
+   "why": "Independent since 12 December 1963"
+  },
+  {
+   "place": "Kampala (protectorate)",
+   "lonLat": [
+    32.58,
+    0.32
+   ],
+   "years": [
+    1960,
+    1961
+   ],
+   "realm": "Uganda Protectorate",
+   "why": "British protectorate until 9 October 1962"
+  },
+  {
+   "place": "Kampala",
+   "lonLat": [
+    32.58,
+    0.32
+   ],
+   "years": [
+    1962,
+    2026
+   ],
+   "realm": "Uganda",
+   "why": "Independent since 9 October 1962"
+  },
+  {
+   "place": "Kuala Lumpur (Malaya)",
+   "lonLat": [
+    101.69,
+    3.14
+   ],
+   "years": [
+    1960,
+    1962
+   ],
+   "realm": "Malaya",
+   "why": "Independent Federation of Malaya from 1957 to 1963"
+  },
+  {
+   "place": "Kuching (colony)",
+   "lonLat": [
+    110.35,
+    1.55
+   ],
+   "years": [
+    1960,
+    1962
+   ],
+   "realm": "Crown Colony of Sarawak",
+   "why": "British colony until 16 September 1963"
+  },
+  {
+   "place": "Kuching",
+   "lonLat": [
+    110.35,
+    1.55
+   ],
+   "years": [
+    1963,
+    2026
+   ],
+   "realm": "Malaysia",
+   "why": "Part of Malaysia since 16 September 1963"
+  },
+  {
+   "place": "Kota Kinabalu (colony)",
+   "lonLat": [
+    116.2,
+    5.9
+   ],
+   "years": [
+    1960,
+    1962
+   ],
+   "realm": "North Borneo",
+   "why": "British colony of North Borneo until 16 September 1963"
+  },
+  {
+   "place": "Port of Spain (federation)",
+   "lonLat": [
+    -61.51,
+    10.66
+   ],
+   "years": [
+    1960,
+    1961
+   ],
+   "realm": "West Indies Federation",
+   "why": "Capital of the West Indies Federation, 1958 to 1962"
+  },
+  {
+   "place": "Port of Spain",
+   "lonLat": [
+    -61.51,
+    10.66
+   ],
+   "years": [
+    1962,
+    2026
+   ],
+   "realm": "Trinidad and Tobago",
+   "why": "Independent since 31 August 1962"
+  },
+  {
+   "place": "Kingston (federation)",
+   "lonLat": [
+    -76.79,
+    18.0
+   ],
+   "years": [
+    1960,
+    1961
+   ],
+   "realm": "West Indies Federation",
+   "why": "In the West Indies Federation until May 1962"
+  },
+  {
+   "place": "Kingston",
+   "lonLat": [
+    -76.79,
+    18.0
+   ],
+   "years": [
+    1962,
+    2026
+   ],
+   "realm": "Jamaica",
+   "why": "Independent since 6 August 1962"
+  },
+  {
+   "place": "Bridgetown (federation)",
+   "lonLat": [
+    -59.61,
+    13.1
+   ],
+   "years": [
+    1960,
+    1961
+   ],
+   "realm": "West Indies Federation",
+   "why": "In the West Indies Federation until May 1962"
+  },
+  {
+   "place": "Kuwait City (protected state)",
+   "lonLat": [
+    47.98,
+    29.37
+   ],
+   "years": [
+    1960,
+    1960
+   ],
+   "realm": "Kuwait",
+   "why": "British protected state until 19 June 1961"
+  },
+  {
+   "place": "Kuwait City",
+   "lonLat": [
+    47.98,
+    29.37
+   ],
+   "years": [
+    1961,
+    2026
+   ],
+   "realm": "Kuwait",
+   "why": "Independent since 19 June 1961"
+  },
+  {
+   "place": "Gwoza (trust)",
+   "lonLat": [
+    13.69,
+    11.08
+   ],
+   "years": [
+    1960,
+    1960
+   ],
+   "realm": "British Cameroons",
+   "why": "British-run UN trust territory until 1 June 1961",
+   "heldBy": [
+    {
+     "years": [
+      1960,
+      1960
+     ],
+     "by": "United Nations"
+    }
+   ]
+  },
+  {
+   "place": "Gwoza",
+   "lonLat": [
+    13.69,
+    11.08
+   ],
+   "years": [
+    1961,
+    2026
+   ],
+   "realm": "Nigeria",
+   "why": "Part of Nigeria since 1 June 1961"
+  },
+  {
+   "place": "Mubi (trust)",
+   "lonLat": [
+    13.26,
+    10.27
+   ],
+   "years": [
+    1960,
+    1960
+   ],
+   "realm": "British Cameroons",
+   "why": "British-run UN trust territory until 1 June 1961",
+   "heldBy": [
+    {
+     "years": [
+      1960,
+      1960
+     ],
+     "by": "United Nations"
+    }
+   ]
+  },
+  {
+   "place": "Yola",
+   "lonLat": [
+    12.46,
+    9.21
+   ],
+   "years": [
+    1960,
+    2026
+   ],
+   "realm": "Nigeria",
+   "why": "Nigeria proper, west of the Northern Cameroons"
+  },
+  {
+   "place": "Freetown (colony)",
+   "lonLat": [
+    -13.23,
+    8.48
+   ],
+   "years": [
+    1960,
+    1960
+   ],
+   "realm": "Sierra Leone Colony and Protectorate",
+   "why": "British colony until 27 April 1961"
+  },
+  {
+   "place": "Freetown",
+   "lonLat": [
+    -13.23,
+    8.48
+   ],
+   "years": [
+    1961,
+    2026
+   ],
+   "realm": "Sierra Leone",
+   "why": "Independent since 27 April 1961"
+  },
+  {
+   "place": "Lagos",
+   "lonLat": [
+    3.35,
+    6.6
+   ],
+   "years": [
+    1960,
+    2026
+   ],
+   "realm": "Nigeria",
+   "why": "Independent since 1 October 1960"
+  },
+  {
+   "place": "Nicosia",
+   "lonLat": [
+    33.37,
+    35.17
+   ],
+   "years": [
+    1960,
+    1973
+   ],
+   "realm": "Cyprus",
+   "why": "Independent since 16 August 1960"
+  },
+  {
+   "place": "Hargeisa",
+   "lonLat": [
+    44.06,
+    9.56
+   ],
+   "years": [
+    1960,
+    1990
+   ],
+   "realm": "Somalia",
+   "why": "Part of Somalia since 1 July 1960"
+  },
+  {
+   "place": "Mogadishu",
+   "lonLat": [
+    45.34,
+    2.04
+   ],
+   "years": [
+    1960,
+    2026
+   ],
+   "realm": "Somalia",
+   "why": "Independent since 1 July 1960"
+  },
+  {
+   "place": "Aden (colony)",
+   "lonLat": [
+    44.98,
+    12.87
+   ],
+   "years": [
+    1960,
+    1962
+   ],
+   "realm": "Aden Colony",
+   "why": "British crown colony until it joined the federation in January 1963"
+  },
+  {
+   "place": "Mukalla (Aden Protectorate)",
+   "lonLat": [
+    49.12,
+    14.54
+   ],
+   "years": [
+    1960,
+    1962
+   ],
+   "realm": "Protectorate of South Arabia",
+   "why": "Eastern Aden Protectorate"
   }
  ]
 }
