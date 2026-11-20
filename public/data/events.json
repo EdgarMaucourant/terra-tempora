@@ -6952,6 +6952,248 @@
    "summary": "One month after independence, African revolutionaries led by John Okello overthrow Sultan Jamshid bin Abdullah and the Arab-dominated government of Zanzibar on 12 January 1964. Thousands of Arabs and South Asians are killed, and the sultan flees into exile in Britain. Abeid Karume of the Afro-Shirazi Party becomes president of a people’s republic, which unites with Tanganyika in April to form Tanzania.",
    "wikipedia": "Zanzibar_Revolution",
    "search": "Zanzibar Revolution 1964 John Okello Afro-Shirazi Party Sultan Jamshid Abeid Karume union Tanganyika Tanzania"
+  },
+  {
+   "id": "malayan-emergency-1948",
+   "kind": "war",
+   "year": 1948,
+   "to": 1960,
+   "title": "The Malayan Emergency, 1948 – 1960",
+   "place": "Pahang",
+   "lonLat": [
+    102.4,
+    3.9
+   ],
+   "civs": [
+    "united-kingdom",
+    "malaya"
+   ],
+   "summary": "After communist guerrillas kill three British rubber planters in June 1948, Britain declares an emergency in Malaya. The mostly Chinese Malayan National Liberation Army fights from the jungle; Britain answers with the Briggs Plan, moving half a million people into guarded \"New Villages\", and under General Templer wins over the population by promising independence. Malaya becomes independent in 1957 and the emergency is lifted in July 1960.",
+   "wikipedia": "Malayan_Emergency",
+   "search": "Malayan Emergency 1948 1960 communist insurgency MNLA Chin Peng Gerald Templer Briggs Plan New Villages rubber planters"
+  },
+  {
+   "id": "libya-independence-1951",
+   "kind": "empire",
+   "year": 1951,
+   "title": "Libya becomes independent, 24 December 1951",
+   "place": "Benghazi",
+   "lonLat": [
+    20.07,
+    32.11
+   ],
+   "civs": [
+    "libya",
+    "cyrenaica",
+    "tripolitania",
+    "fezzan",
+    "united-kingdom"
+   ],
+   "summary": "Italy gives up Libya in 1947, and the United Nations decides in 1949 that it will be independent. Tripolitania and Cyrenaica, run by Britain since the Second World War, and the Fezzan, run by France, unite as the United Kingdom of Libya. King Idris, Emir of Cyrenaica, proclaims its independence in Benghazi on 24 December 1951, the first country to gain independence through the UN.",
+   "wikipedia": "Kingdom_of_Libya",
+   "search": "Libya independence 1951 King Idris Benghazi United Nations Tripolitania Cyrenaica Fezzan British French administration"
+  },
+  {
+   "id": "mau-mau-uprising-1952",
+   "kind": "war",
+   "year": 1952,
+   "to": 1960,
+   "title": "The Mau Mau uprising in Kenya, 1952 – 1960",
+   "place": "Nyeri",
+   "lonLat": [
+    36.95,
+    -0.42
+   ],
+   "civs": [
+    "united-kingdom",
+    "kenya-colony",
+    "kenya"
+   ],
+   "summary": "Kikuyu fighters of the Land and Freedom Army rise against white settlers and colonial rule in Kenya’s highlands, and Britain declares an emergency in October 1952. Jomo Kenyatta is jailed, the forests of the Aberdares and Mount Kenya become battlefields, and tens of thousands of Kikuyu are held in detention camps where many are abused. The revolt is crushed by 1956 and the leader Dedan Kimathi hanged, but the emergency, lifted in 1960, pushes Britain towards Kenyan independence.",
+   "wikipedia": "Mau_Mau_rebellion",
+   "search": "Mau Mau uprising rebellion 1952 1960 Kenya emergency Kikuyu Dedan Kimathi Jomo Kenyatta Kapenguria detention camps Hola massacre Aberdares"
+  },
+  {
+   "id": "rhodesia-nyasaland-formed-1953",
+   "kind": "empire",
+   "year": 1953,
+   "title": "The Federation of Rhodesia and Nyasaland is formed, 1 August 1953",
+   "place": "Salisbury",
+   "lonLat": [
+    31.05,
+    -17.83
+   ],
+   "civs": [
+    "united-kingdom",
+    "federation-of-rhodesia-and-nyasaland",
+    "southern-rhodesia",
+    "northern-rhodesia",
+    "nyasaland"
+   ],
+   "summary": "Britain joins self-governing Southern Rhodesia with the protectorates of Northern Rhodesia and Nyasaland in a Central African Federation, ruled from Salisbury under Godfrey Huggins. Its backers promise a \"partnership\" of races and shared wealth from the copper mines of the north, but power stays with the white minority and most Africans oppose it from the start.",
+   "wikipedia": "Federation_of_Rhodesia_and_Nyasaland",
+   "search": "Federation of Rhodesia and Nyasaland Central African Federation 1953 formation Godfrey Huggins Roy Welensky Salisbury copper partnership"
+  },
+  {
+   "id": "cyprus-emergency-1955",
+   "kind": "war",
+   "year": 1955,
+   "to": 1959,
+   "title": "The Cyprus Emergency, 1955 – 1959",
+   "place": "Troodos",
+   "lonLat": [
+    32.88,
+    34.93
+   ],
+   "civs": [
+    "united-kingdom",
+    "british-cyprus",
+    "cyprus",
+    "greece",
+    "turkey"
+   ],
+   "summary": "On 1 April 1955 EOKA, led by Colonel George Grivas, starts a bombing and guerrilla campaign for enosis, the union of Cyprus with Greece. Britain declares an emergency, exiles Archbishop Makarios to the Seychelles and hunts EOKA in the Troodos mountains, while violence grows between Greek and Turkish Cypriots. The 1959 Zurich and London agreements end the fighting with an independent Cyprus instead of union with Greece.",
+   "wikipedia": "Cyprus_Emergency",
+   "search": "Cyprus Emergency 1955 1959 EOKA Grivas Makarios enosis union with Greece exile Seychelles Harding British Army Troodos"
+  },
+  {
+   "id": "sudan-independence-1956",
+   "kind": "empire",
+   "year": 1956,
+   "title": "Sudan becomes independent, 1 January 1956",
+   "place": "Khartoum",
+   "lonLat": [
+    32.53,
+    15.59
+   ],
+   "civs": [
+    "sudan",
+    "anglo-egyptian-sudan",
+    "united-kingdom",
+    "egypt"
+   ],
+   "summary": "Ruled since 1899 as an Anglo-Egyptian condominium, in practice by Britain, Sudan gains self-government under a 1953 agreement between Britain and Egypt. Its parliament, led by Ismail al-Azhari, chooses full independence over union with Egypt, and the British and Egyptian flags are lowered in Khartoum on 1 January 1956. A mutiny in the south at Torit in 1955 has already started the first Sudanese civil war.",
+   "wikipedia": "Sudan",
+   "search": "Sudan independence 1 January 1956 Anglo-Egyptian condominium Ismail al-Azhari Khartoum Torit mutiny south"
+  },
+  {
+   "id": "suez-crisis-1956",
+   "kind": "war",
+   "year": 1956,
+   "title": "The Suez Crisis, October – November 1956",
+   "place": "Port Said",
+   "lonLat": [
+    32.3,
+    31.26
+   ],
+   "civs": [
+    "egypt",
+    "united-kingdom",
+    "france",
+    "israel"
+   ],
+   "summary": "After Egypt’s President Nasser nationalises the Suez Canal in July 1956, Israel invades Sinai on 29 October by secret agreement with Britain and France, whose paratroopers and marines then land at Port Said. Under heavy pressure from the United States and the Soviet Union, they accept a ceasefire on 6 November and withdraw, replaced by UN peacekeepers. Nasser keeps the canal, and the humiliation marks the end of Britain’s standing as a great imperial power.",
+   "wikipedia": "Suez_Crisis",
+   "search": "Suez Crisis 1956 Nasser nationalises Suez Canal Israel Sinai Britain France Port Said Operation Musketeer Eden Eisenhower ceasefire UNEF"
+  },
+  {
+   "id": "togoland-plebiscite-1956",
+   "kind": "empire",
+   "year": 1956,
+   "title": "British Togoland votes to join the Gold Coast, 9 May 1956",
+   "place": "Ho",
+   "lonLat": [
+    0.47,
+    6.6
+   ],
+   "civs": [
+    "british-togoland",
+    "gold-coast",
+    "ghana",
+    "united-kingdom"
+   ],
+   "summary": "In a UN-supervised plebiscite on 9 May 1956, 58% of voters in British Togoland, a trust territory run with the Gold Coast, choose to join it rather than stay under trusteeship. The north votes strongly for union while many Ewe in the south vote against, hoping to unite with their kin in French Togoland. The territory joins the Gold Coast in December 1956, three months before it becomes independent as Ghana.",
+   "wikipedia": "1956_British_Togoland_status_plebiscite",
+   "search": "British Togoland plebiscite 1956 union Gold Coast Ewe unification French Togoland trust territory Ho Volta"
+  },
+  {
+   "id": "ghana-independence-1957",
+   "kind": "empire",
+   "year": 1957,
+   "title": "Ghana becomes independent, 6 March 1957",
+   "place": "Accra",
+   "lonLat": [
+    -0.2,
+    5.6
+   ],
+   "civs": [
+    "ghana",
+    "gold-coast",
+    "united-kingdom"
+   ],
+   "summary": "The Gold Coast, with British Togoland, becomes independent as Ghana on 6 March 1957, the first colony in sub-Saharan Africa to win its freedom from European rule. At midnight in Accra, Prime Minister Kwame Nkrumah declares \"Ghana, your beloved country, is free for ever\". Its independence inspires nationalist movements across the continent.",
+   "wikipedia": "Ghana",
+   "search": "Ghana independence 6 March 1957 Gold Coast Kwame Nkrumah Accra Old Polo Ground first sub-Saharan colony"
+  },
+  {
+   "id": "malaya-independence-1957",
+   "kind": "empire",
+   "year": 1957,
+   "title": "Malaya becomes independent, 31 August 1957",
+   "place": "Kuala Lumpur",
+   "lonLat": [
+    101.69,
+    3.14
+   ],
+   "civs": [
+    "malaya",
+    "malaysia",
+    "united-kingdom"
+   ],
+   "summary": "On 31 August 1957, at the new Merdeka Stadium in Kuala Lumpur, Tunku Abdul Rahman reads the declaration of independence of the Federation of Malaya and leads the crowd in cries of \"Merdeka!\" (freedom). The nine Malay states and the British settlements of Penang and Malacca become one independent country, which joins with Singapore, Sarawak and North Borneo to form Malaysia in 1963.",
+   "wikipedia": "Malayan_Declaration_of_Independence",
+   "search": "Malaya independence Merdeka 31 August 1957 Tunku Abdul Rahman Stadium Merdeka Kuala Lumpur Federation of Malaya Alliance"
+  },
+  {
+   "id": "west-indies-federation-1958",
+   "kind": "empire",
+   "year": 1958,
+   "title": "The West Indies Federation is formed, 3 January 1958",
+   "place": "Bridgetown",
+   "lonLat": [
+    -59.6,
+    13.1
+   ],
+   "civs": [
+    "united-kingdom",
+    "west-indies-federation",
+    "jamaica",
+    "trinidad-and-tobago",
+    "barbados"
+   ],
+   "summary": "Ten British Caribbean colonies, from Jamaica to Trinidad, are joined in the West Indies Federation on 3 January 1958, meant to become one independent country. Barbados’s Grantley Adams becomes its prime minister after the first federal elections and the capital is set at Port of Spain, but the big islands keep most of the power and money, and the federation breaks up in 1962.",
+   "wikipedia": "West_Indies_Federation",
+   "search": "West Indies Federation formed 3 January 1958 Grantley Adams Barbados prime minister Port of Spain capital ten colonies federal elections"
+  },
+  {
+   "id": "nyasaland-emergency-1959",
+   "kind": "war",
+   "year": 1959,
+   "title": "The Nyasaland Emergency, March 1959",
+   "place": "Blantyre",
+   "lonLat": [
+    35.0,
+    -15.79
+   ],
+   "civs": [
+    "nyasaland",
+    "malawi",
+    "federation-of-rhodesia-and-nyasaland",
+    "united-kingdom"
+   ],
+   "summary": "On 3 March 1959 the governor of Nyasaland declares an emergency and arrests Hastings Banda and hundreds of members of the Nyasaland African Congress, who oppose the Central African Federation. Troops and police kill more than fifty people, 20 of them at Nkata Bay. The Devlin Commission calls Nyasaland \"a police state\", Banda is freed in 1960, and Britain soon lets Nyasaland leave the federation.",
+   "wikipedia": "Nyasaland_African_Congress",
+   "search": "Nyasaland Emergency 1959 Hastings Banda arrested Operation Sunrise Nkata Bay Devlin report police state federation"
   }
  ]
 }
