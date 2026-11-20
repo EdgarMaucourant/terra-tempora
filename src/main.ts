@@ -20,7 +20,7 @@ import "./style.css";
 import "./cesiumFixes";
 import { AxisLock } from "./axisLock";
 import { setView, track, watchTime } from "./analytics";
-import { civEraText, Civilizations, type Civilization } from "./civilizations";
+import { civEraText, civYears, Civilizations, type Civilization } from "./civilizations";
 import { formatNumber, initLanguage, lang, languageMenu, t, translatePage, withText, type MessageKey } from "./i18n";
 import { highlightColors, TODAY_COLOURS } from "./colors";
 import { disclaimer } from "./disclaimer";
@@ -236,7 +236,7 @@ const map = new MapView(mapCanvas, {
     mapHover = requestAnimationFrame(() => (map.signAt(x, y) ? hoverSign(x, y) : p ? hoverRealm(p, x, y) : hoverEmpty(map.lonLatAt(x, y), x, y)));
   },
   onClick: (p, x, y) => {
-    clickRealm(p);
+    clickRealm(p, map.lonLatAt(x, y));
     if (!p) {
       const box = mapCanvas.getBoundingClientRect();
       offerSource(map.lonLatAt(x, y), box.left + x, box.top + y);
@@ -604,6 +604,30 @@ function placeOf(name: string): Country | undefined {
   return civ ? countryOf(civ) : undefined;
 }
 
+/**
+ * The places of today a realm held, when it held more than one (the West
+ * Indies Federation: Jamaica, Trinidad and Tobago, Barbados…).
+ */
+function placesOf(name: string): string[] {
+  const places = data?.index.places;
+  if (!places || places[name]) return [];
+  return Object.keys(places).filter((k) => places[k].some((h) => h.name === name));
+}
+
+/**
+ * The place of today under a spot, for a realm that held several: a click on
+ * Jamaica in 1960 opens Jamaica, not another island of the West Indies Federation.
+ */
+async function placeAtSpot(name: string, spot: [number, number]): Promise<Country | undefined> {
+  const candidates = placesOf(name);
+  if (candidates.length < 2 || !data || !civs) return undefined;
+  const today = data.to;
+  const shapes = await data.load(today, today);
+  const found = candidates.find((k) => shapes.some((q) => !q.kind && q.name === k && q.from <= today && today <= q.to && q.rings.some((r) => inRing(r, spot[0], spot[1]))));
+  const civ = found && civs.ofRealm(found);
+  return civ ? countryOf(civ) : undefined;
+}
+
 /** Whether the place of today this realm held (see placeOf) has its land drawn in this year. */
 function placeDrawn(name: string, at: number): boolean {
   const places = data?.index.places;
@@ -710,7 +734,7 @@ function setOpenGroups(groups: string[]) {
 }
 
 // Tap or click a highlighted realm for its details, a greyed one to switch to it.
-function clickRealm(p: Polity | null | undefined) {
+function clickRealm(p: Polity | null | undefined, spot?: [number, number] | null) {
   hideTooltip();
   // A closed group (French West Africa) acts as one: a click opens its page
   // and names its territories, which can then be clicked one by one; a click
@@ -741,7 +765,17 @@ function clickRealm(p: Polity | null | undefined) {
   // Rebuilt land opens the history of its place of today, whatever the year:
   // Portuguese Timor in 1995 and Timor-Leste in 2017 both open Timor-Leste.
   // Clicking it again in that view shows the details of what is drawn.
-  const place = placeOf(p.name);
+  // A realm that held several places of today opens the one clicked.
+  if (spot && placesOf(p.name).length > 1) {
+    const clicked = p;
+    void placeAtSpot(p.name, spot).then((place) => openPlace(clicked, place ?? placeOf(clicked.name), spot));
+    return;
+  }
+  openPlace(p, placeOf(p.name), spot ?? undefined);
+}
+
+/** Opens the history of a clicked realm's place of today, or else the realm itself. */
+function openPlace(p: Polity, place: Country | undefined, spot?: [number, number]) {
   // A realm whose place of today is not rebuilt for the year (Siam in 1904,
   // whose land of today, Thailand, is not reviewed yet) has no history to
   // open: its own details tell it, with its period's name and article.
@@ -750,7 +784,7 @@ function clickRealm(p: Polity | null | undefined) {
     showInfo(p);
     return;
   }
-  placeSpot = place ? (p.label ?? undefined) : undefined;
+  placeSpot = place ? (spot ?? p.label ?? undefined) : undefined;
   if (place && (home || place !== country)) {
     info.hidden = true;
     return openCountry(place, "nationality", { push: true });
@@ -859,8 +893,12 @@ function hoverRealm(p: Polity | null | undefined, x: number, y: number) {
   const greyed = !layer.isHighlighted(p);
   layer.setHovered(greyed ? p.name : null);
   map.setHovered(greyed ? p.name : null);
-  const own = under && civs?.ofRealm(under.name);
-  const years = own ? formatRange(own.from, own.to) : formatRange(civ.from, civ.to);
+  // A territory gives its own years, not its owner's: the West Indies
+  // Federation stood from 1958 to 1962, whatever the United Kingdom did.
+  const own = (under && civs?.ofRealm(under.name)) || (p.partOf ? civs?.ofRealm(p.name) : undefined);
+  // Jamaica as a British colony gives its colonial years; as a country, its own (1962 on).
+  const span = own ? (p.partOf && own.partOfYears ? own.partOfYears : civYears(own)) : civYears(civ);
+  const years = formatRange(span[0], span[1]);
   // A member of a group says so: the Kingdom of Spain in 1530 is part of the Spanish Empire.
   const named = under ?? p;
   const groups = [...(home ? [] : (named.groups ?? [])), ...(named.partOf ? [named.partOf] : [])]
@@ -997,7 +1035,7 @@ handler.setInputAction((event: ScreenSpaceEventHandler.PositionedEvent) => {
   else if (e) openEvent(e);
   else {
     const p = polityAt(event.position);
-    clickRealm(p);
+    clickRealm(p, globeLonLat(event.position));
     if (!p) offerSource(globeLonLat(event.position), event.position.x, event.position.y);
   }
 }, ScreenSpaceEventType.LEFT_CLICK);
@@ -1226,7 +1264,7 @@ function altitudeFor(area: number): number {
 
 /** Years that frame these civilizations on the timeline. */
 function focusView(list: Civilization[]): [number, number] {
-  const from = Math.min(...list.map((c) => c.from));
+  const from = Math.min(...list.map((c) => civYears(c)[0]));
   const to = Math.max(...list.map((c) => c.to));
   const pad = Math.max(60, (to - from) * (list.length > 1 ? 0.1 : 0.5));
   return [from - pad, to + pad];
@@ -1945,7 +1983,7 @@ interface OpenOptions {
 
 function showMasthead() {
   const list = chosen();
-  const from = Math.min(...list.map((c) => c.from));
+  const from = Math.min(...list.map((c) => civYears(c)[0]));
   const to = Math.max(...list.map((c) => c.to));
   const title = country ? country.name : viewTitle(list);
   $("civ-title").textContent = title;
@@ -1992,7 +2030,7 @@ function openCiv(c: Civilization, options: OpenOptions = {}) {
     if (c.wikidata) {
       realmFacts(c.wikidata, c.picture).then((facts) => {
         if (active !== c || !expanded || !facts) return;
-        const sub = `${formatRange(c.from, c.to)} · ${civEraText(c)}`;
+        const sub = `${formatRange(...civYears(c))} · ${civEraText(c)}`;
         $("civ-sub").textContent = facts.figures.length ? `${sub} · ${facts.figures.join(", ")}` : sub;
         const near = linkedCivs(c, facts);
         const linked = [...near.before, ...near.after].filter((o) => !highlighted.includes(o));
