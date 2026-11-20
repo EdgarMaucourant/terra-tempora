@@ -39,6 +39,8 @@ export interface Polity {
   by?: string;
   /** On a hatching: the territory under it, when the land is one. */
   land?: string;
+  /** On a hatching: an active war whose front line is drawn roughly (Ukraine). */
+  rough?: boolean;
   /** For "hatch": the state that rules the land jointly with `by` (a condominium, the New Hebrides). */
   with?: string;
   since?: string;

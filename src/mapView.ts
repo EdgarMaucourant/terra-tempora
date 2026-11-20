@@ -3,7 +3,7 @@ import { geoCylindricalEqualArea, geoEckert4, geoMiller, geoMollweide, geoRobins
 import type { Feature, MultiPolygon, Polygon } from "geojson";
 import { feature } from "topojson-client";
 import landUrl from "world-atlas/land-50m.json?url";
-import { BLANK_COLOR, BLANK_FILL_ALPHA, JOINT_DARK, JOINT_LIGHT, MUTED } from "./colors";
+import { BLANK_COLOR, BLANK_FILL_ALPHA, JOINT_DARK, JOINT_LIGHT, MUTED, LABEL_OUTLINE, ROUGH_COLOR, ROUGH_LABEL_AREA } from "./colors";
 import { foldedInGroup, highlightOf, withClosedGroups, type Polity } from "./data";
 import { shapeOpacity } from "./polityLayer";
 import { badgeUrl, eventOpacity, supersededYears, type EventKind, type HistoryEvent } from "./events";
@@ -35,7 +35,8 @@ export const PROJECTIONS: ProjectionChoice[] = [
 const FEATURED_FILL_ALPHA = 0.55;
 const CONTEXT_FILL_ALPHA = 0.4;
 const HOVER_FILL_ALPHA = 0.62;
-const CONTEXT_LABEL_AREA = 900_000;
+/** The least area (km²) of a realm named at the starting zoom (see PolityLayer). */
+const CONTEXT_LABEL_AREA = 150_000;
 /** The outline and name of a group of territories (French West Africa). */
 const GROUP_COLOR = "#f2d48a";
 const MIN_ZOOM = 0.8;
@@ -103,6 +104,7 @@ export class MapView {
   private badgeImages = new Map<EventKind, HTMLImageElement>();
   /** Badges drawn last frame, for hit-testing. */
   private drawnBadges: { e: HistoryEvent; x: number; y: number }[] = [];
+  private drawnSigns: { p: Polity; x: number; y: number }[] = [];
   showContext = true;
   /** Whether every highlighted realm is named (see PolityLayer.labelAll). */
   labelAll = true;
@@ -210,6 +212,11 @@ export class MapView {
   }
 
   /** ownerFirst: territories take their owner's colour (the home globe). */
+  /** The war zone whose warning sign is at this point of the canvas, if any. */
+  signAt(x: number, y: number): Polity | undefined {
+    return this.drawnSigns.find((s) => Math.hypot(s.x - x, s.y - y) <= 14)?.p;
+  }
+
   setHighlight(colors: Map<string, string>, ownerFirst = false) {
     this.ownerFirst = ownerFirst;
     this.chosen = new Map(colors);
@@ -620,6 +627,21 @@ export class MapView {
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
     ctx.lineJoin = "round";
+    // An active war zone's warning sign: its text shows on hover.
+    ctx.font = "700 18px 'Instrument Sans Variable', sans-serif";
+    this.drawnSigns = [];
+    for (const { p, opacity } of hatched) {
+      if (opacity <= 0.5 || !p.rough || !p.label || p.area < ROUGH_LABEL_AREA) continue;
+      const at = this.projection(p.label);
+      if (!at || at[0] < 0 || at[0] > this.width || at[1] < 0 || at[1] > this.height) continue;
+      ctx.strokeStyle = "rgba(0, 0, 0, 0.9)";
+      ctx.lineWidth = 4;
+      ctx.strokeText("⚠", at[0], at[1]);
+      ctx.fillStyle = ROUGH_COLOR;
+      ctx.fillText("⚠", at[0], at[1]);
+      placed.push([at[0] - 11, at[1] - 11, at[0] + 11, at[1] + 11]);
+      this.drawnSigns.push({ p, x: at[0], y: at[1] });
+    }
     for (const { p } of candidates) {
       if (named.has(p.name)) continue;
       const at = this.projection(p.label!);
@@ -633,7 +655,7 @@ export class MapView {
       if (placed.some((b) => box[0] < b[2] && box[2] > b[0] && box[1] < b[3] && box[3] > b[1])) continue;
       placed.push(box);
       named.add(p.name);
-      ctx.strokeStyle = "rgba(0, 0, 0, 0.85)";
+      ctx.strokeStyle = LABEL_OUTLINE;
       ctx.lineWidth = 3;
       ctx.strokeText(text, at[0], at[1]);
       ctx.fillStyle = highlighted ? "#fbf6ec" : "#b4bac1";
@@ -653,7 +675,7 @@ export class MapView {
         const box: [number, number, number, number] = [at[0] - w, y - 9, at[0] + w, y + 9];
         if (placed.some((b) => box[0] < b[2] && box[2] > b[0] && box[1] < b[3] && box[3] > b[1])) continue;
         placed.push(box);
-        ctx.strokeStyle = "rgba(0, 0, 0, 0.85)";
+        ctx.strokeStyle = LABEL_OUTLINE;
         ctx.lineWidth = 3;
         ctx.strokeText(text, at[0], y);
         ctx.fillStyle = GROUP_COLOR;
