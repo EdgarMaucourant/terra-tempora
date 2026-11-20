@@ -262,11 +262,16 @@ for (const s of shapes.values()) {
     realm(s.name).own.push(s);
     realm(s.name).shapes.push(s);
     realm(s.name).partOf = s.partOf;
+    // The years it was a territory, for a realm that was also a state of its
+    // own (Bahrain, a British protected state until 1971).
+    const span = realm(s.name).partOfYears;
+    realm(s.name).partOfYears = span ? [Math.min(span[0], s.from), Math.max(span[1], s.to)] : [s.from, s.to];
     for (const key of s.groups ?? []) realm(key).shapes.push(s);
     continue;
   }
   realm(s.name).own.push(s);
   realm(s.name).shapes.push(s);
+  realm(s.name).free = true;
   for (const key of s.groups ?? []) realm(key).shapes.push(s);
 }
 
@@ -329,6 +334,7 @@ for (const g of groups.values()) {
     name: g.name,
     // The state a territory belongs to, by its realm name.
     ...(g.partOf && { partOf: g.partOf }),
+    ...(g.partOf && g.free && { partOfYears: g.partOfYears }),
     // The realm or group it shows, then the territories it owned.
     names: [g.name, ...[...territories].filter(([, owner]) => owner === g.name).map(([name]) => name)],
     wikidata: count("wikidata"),

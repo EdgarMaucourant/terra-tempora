@@ -6610,6 +6610,173 @@
    "summary": "After three years of deadlock in Parliament and the fall of Theresa May, Boris Johnson wins the December 2019 election and has his withdrawal agreement passed. At 11 pm on 31 January 2020 the United Kingdom leaves the European Union after 47 years. A transition period ends on 31 December, when a new trade agreement takes effect, with Northern Ireland keeping EU rules for goods so that its border with Ireland stays open.",
    "wikipedia": "Brexit",
    "search": "Brexit 2020 withdrawal agreement Boris Johnson leaves European Union 31 January transition Northern Ireland protocol trade agreement"
+  },
+  {
+   "id": "rhodesia-udi-1965",
+   "kind": "empire",
+   "year": 1965,
+   "title": "Rhodesia declares independence, 11 November 1965",
+   "place": "Salisbury (now Harare)",
+   "lonLat": [
+    31.05,
+    -17.83
+   ],
+   "civs": [
+    "united-kingdom",
+    "southern-rhodesia"
+   ],
+   "summary": "Rather than accept majority rule, the white minority government of Ian Smith declares Southern Rhodesia independent on 11 November 1965. Britain calls the act illegal and the United Nations orders sanctions, but Harold Wilson rules out force. No state recognises Rhodesia, which becomes a republic in 1970, and from 1972 a bush war against African guerrillas grows until the Lancaster House talks of 1979.",
+   "wikipedia": "Rhodesia's_Unilateral_Declaration_of_Independence",
+   "search": "Rhodesia Unilateral Declaration of Independence UDI 1965 Ian Smith Southern Rhodesia Harold Wilson sanctions white minority rule"
+  },
+  {
+   "id": "aden-withdrawal-1967",
+   "kind": "war",
+   "year": 1967,
+   "title": "Britain leaves Aden, 30 November 1967",
+   "place": "Aden",
+   "lonLat": [
+    44.98,
+    12.87
+   ],
+   "civs": [
+    "united-kingdom",
+    "federation-of-south-arabia",
+    "protectorate-of-south-arabia",
+    "south-yemen"
+   ],
+   "summary": "From December 1963 nationalist fighters wage a guerrilla war against British rule in Aden and the Federation of South Arabia, with grenade attacks in the streets and a mutiny in the Crater district in 1967. Britain decides to leave, and the last troops sail on 29 November 1967. The National Liberation Front, which has beaten its rivals, takes over the Federation and the Protectorate the next day as the People’s Republic of South Yemen.",
+   "wikipedia": "Aden_Emergency",
+   "search": "Aden Emergency 1963 1967 National Liberation Front NLF FLOSY Crater British withdrawal South Yemen independence Federation of South Arabia"
+  },
+  {
+   "id": "east-of-suez-1968",
+   "kind": "empire",
+   "year": 1968,
+   "title": "Britain announces its withdrawal from East of Suez, 16 January 1968",
+   "place": "Bahrain",
+   "lonLat": [
+    50.58,
+    26.2
+   ],
+   "civs": [
+    "united-kingdom",
+    "trucial-states",
+    "bahrain",
+    "qatar"
+   ],
+   "summary": "After the devaluation of the pound, Harold Wilson tells Parliament on 16 January 1968 that Britain will pull its forces out of the Persian Gulf, Malaysia and Singapore by the end of 1971. The rulers of the Gulf, under British protection since the 19th century, must now look after themselves. In 1971 Bahrain and Qatar become independent, and six of the Trucial States form the United Arab Emirates.",
+   "wikipedia": "East_of_Suez",
+   "search": "East of Suez withdrawal 1968 Harold Wilson devaluation Persian Gulf Singapore Malaysia British bases Bahrain Trucial States 1971"
+  },
+  {
+   "id": "operation-sheepskin-1969",
+   "kind": "war",
+   "year": 1969,
+   "title": "British troops land on Anguilla, 19 March 1969",
+   "place": "Anguilla",
+   "lonLat": [
+    -63.05,
+    18.22
+   ],
+   "civs": [
+    "united-kingdom",
+    "saint-christopher-nevis-anguilla",
+    "anguilla"
+   ],
+   "summary": "Anguillans refuse to be ruled from St Kitts: in May 1967 they expel the police, and under Ronald Webster they declare a republic. On 19 March 1969 British paratroopers and London policemen land on the island without a shot being fired, an operation the press mocks as the “Bay of Piglets”. Anguilla stays under direct British rule and is formally separated from St Kitts and Nevis in 1980.",
+   "wikipedia": "Republic_of_Anguilla",
+   "search": "Operation Sheepskin 1969 Anguilla Republic of Anguilla Ronald Webster St Kitts Nevis paratroopers Bay of Piglets"
+  },
+  {
+   "id": "troubles-1969",
+   "kind": "war",
+   "year": 1969,
+   "title": "British troops are sent to Northern Ireland, 14 August 1969",
+   "place": "Derry",
+   "lonLat": [
+    -7.31,
+    55.0
+   ],
+   "civs": [
+    "united-kingdom"
+   ],
+   "summary": "Catholic civil rights marches against discrimination in Northern Ireland meet loyalist attacks and police violence. After the Battle of the Bogside in Derry and riots in Belfast, the British Army is deployed on 14 August 1969 to restore order. It stays for 38 years: the Troubles between republicans, loyalists and the security forces cost some 3,500 lives until the Good Friday Agreement of 1998.",
+   "wikipedia": "The_Troubles",
+   "search": "The Troubles 1969 Battle of the Bogside Derry Belfast riots Operation Banner British Army Northern Ireland civil rights IRA"
+  },
+  {
+   "id": "chagossians-expelled-1971",
+   "kind": "empire",
+   "year": 1971,
+   "title": "The Chagossians are expelled from Diego Garcia, 1968 – 1973",
+   "place": "Diego Garcia",
+   "lonLat": [
+    72.42,
+    -7.31
+   ],
+   "civs": [
+    "united-kingdom",
+    "british-indian-ocean-territory",
+    "chagos-archipelago",
+    "mauritius"
+   ],
+   "summary": "Britain had kept the Chagos Archipelago when Mauritius became independent so that the United States could build a military base on Diego Garcia. Between 1968 and 1973 the whole population, some 1,500 to 2,000 Chagossians, is removed: islanders who left are not allowed back, and the last are shipped to Mauritius and Seychelles. In 2019 the International Court of Justice and the UN General Assembly declare the separation of Chagos from Mauritius unlawful.",
+   "wikipedia": "Expulsion_of_the_Chagossians",
+   "search": "expulsion of the Chagossians Diego Garcia 1968 1973 British Indian Ocean Territory US military base Mauritius Seychelles Ilois"
+  },
+  {
+   "id": "uk-joins-eec-1973",
+   "kind": "treaty",
+   "year": 1973,
+   "title": "The United Kingdom joins the European Communities, 1 January 1973",
+   "place": "London",
+   "lonLat": [
+    -0.09,
+    51.52
+   ],
+   "civs": [
+    "united-kingdom"
+   ],
+   "summary": "Twice vetoed by Charles de Gaulle, in 1963 and 1967, Britain’s bid to join the Common Market succeeds under Edward Heath. On 1 January 1973 the United Kingdom, with Ireland and Denmark, becomes a member of the European Communities, turning towards Europe as its empire ends. It leaves the European Union, their successor, in 2020.",
+   "wikipedia": "1973_enlargement_of_the_European_Communities",
+   "search": "1973 enlargement European Communities EEC Common Market United Kingdom Edward Heath Ireland Denmark de Gaulle veto Treaty of Accession"
+  },
+  {
+   "id": "cyprus-invasion-1974",
+   "kind": "war",
+   "year": 1974,
+   "title": "Turkey invades Cyprus, July – August 1974",
+   "place": "Kyrenia, Cyprus",
+   "lonLat": [
+    33.32,
+    35.33
+   ],
+   "civs": [
+    "cyprus",
+    "turkey",
+    "united-kingdom"
+   ],
+   "summary": "After a coup backed by the Greek junta overthrows President Makarios, Turkey lands troops near Kyrenia on 20 July 1974 and, in a second offensive in August, takes the north-east third of the island. Some 200,000 people flee their homes, and many shelter in Britain’s Dhekelia base, one of the two military areas Britain kept at independence in 1960. Cyprus has been split along the UN’s Green Line ever since.",
+   "wikipedia": "Turkish_invasion_of_Cyprus",
+   "search": "Turkish invasion of Cyprus 1974 coup Sampson Greek junta Kyrenia Green Line Sovereign Base Areas Dhekelia Akrotiri partition"
+  },
+  {
+   "id": "eec-referendum-1975",
+   "kind": "crown",
+   "year": 1975,
+   "title": "The United Kingdom votes to stay in the Common Market, 5 June 1975",
+   "place": "London",
+   "lonLat": [
+    -0.18,
+    51.47
+   ],
+   "civs": [
+    "united-kingdom"
+   ],
+   "summary": "In the first referendum ever held across the whole United Kingdom, Harold Wilson asks voters on 5 June 1975 whether to stay in the European Communities after renegotiating the terms of entry. Yes wins by 67 to 33 per cent, with every nation and region but Shetland and the Western Isles in favour. The question returns 41 years later, in the Brexit vote of 2016.",
+   "wikipedia": "1975_United_Kingdom_European_Communities_membership_referendum",
+   "search": "1975 referendum European Communities Common Market membership Harold Wilson Yes No 67 per cent first UK-wide referendum"
   }
  ]
 }
