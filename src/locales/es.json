@@ -472,8 +472,7 @@
     "unreviewed": "Aún sin revisar",
     "unreviewedText": "Las fronteras se están reconstruyendo; esta tierra aún no está hecha para este año",
     "until": "{source}, hasta el {date}",
-    "zoomIn": "{detail} · haz clic para acercar",
-    "activeWar": "Guerra en curso: la línea del frente cambia a menudo y está trazada de forma aproximada"
+    "zoomIn": "{detail} · haz clic para acercar"
   },
   "picker": {
     "keepOne": "Deja al menos una civilización.",

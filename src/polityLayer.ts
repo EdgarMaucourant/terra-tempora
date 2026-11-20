@@ -236,8 +236,6 @@ export class PolityLayer {
   private openGroups = new Set<string>();
   /** A realm's name as shown on its label. */
   nameOf = (realm: string) => realm;
-  /** The warning written over a war zone whose lines are rough. */
-  roughText = () => "⚠";
   /**
    * Years ahead of the current one whose shapes are built in advance; raised
    * while playing so shapes are ready by the time their year comes.
@@ -450,7 +448,7 @@ export class PolityLayer {
         label.show = false;
         continue;
       }
-      const size = (rank(p, d) === 3 ? 19 : rank(p, d) === 2 ? 15 : 12) * (range < 1.2e7 ? 1.15 : 1);
+      const size = (rank(p, d) === 3 ? 10 : rank(p, d) === 2 ? 15 : 12) * (range < 1.2e7 ? 1.15 : 1);
       const w = (label.text.length * size * 0.56) / 2 + 3;
       const h = size * 0.8;
       // A group's name moves above or below the names already there.
@@ -683,16 +681,17 @@ export class PolityLayer {
       label = this.labels.add({
         id: p,
         position: Cartesian3.fromDegrees(p.label[0], p.label[1], FEATURED_HEIGHT + 4000),
-        text: this.roughText(),
-        font: "700 17px 'Instrument Sans Variable', sans-serif",
+        text: "⚠",
+        font: "700 20px 'Instrument Sans Variable', sans-serif",
         fillColor: Color.fromCssColorString(ROUGH_COLOR),
-        showBackground: true,
-        backgroundColor: Color.BLACK.withAlpha(0.7),
-        backgroundPadding: new Cartesian2(10, 6),
-        style: LabelStyle.FILL,
+        outlineColor: Color.BLACK.withAlpha(0.9),
+        outlineWidth: 4,
+        style: LabelStyle.FILL_AND_OUTLINE,
         horizontalOrigin: HorizontalOrigin.CENTER,
         verticalOrigin: VerticalOrigin.CENTER,
-        scaleByDistance: new NearFarScalar(2e6, 1.15, 2.5e7, 0.8),
+        // Small from afar, and never hidden behind the land or its outlines.
+        scaleByDistance: new NearFarScalar(1.5e6, 1.3, 2e7, 0.6),
+        disableDepthTestDistance: Number.POSITIVE_INFINITY,
         show: false,
       });
     }
