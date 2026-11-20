@@ -20,7 +20,7 @@ import "./style.css";
 import "./cesiumFixes";
 import { AxisLock } from "./axisLock";
 import { setView, track, watchTime } from "./analytics";
-import { civEraText, Civilizations, type Civilization } from "./civilizations";
+import { civEraText, civYears, Civilizations, type Civilization } from "./civilizations";
 import { formatNumber, initLanguage, lang, languageMenu, t, translatePage, withText, type MessageKey } from "./i18n";
 import { highlightColors, TODAY_COLOURS } from "./colors";
 import { disclaimer } from "./disclaimer";
@@ -896,7 +896,9 @@ function hoverRealm(p: Polity | null | undefined, x: number, y: number) {
   // A territory gives its own years, not its owner's: the West Indies
   // Federation stood from 1958 to 1962, whatever the United Kingdom did.
   const own = (under && civs?.ofRealm(under.name)) || (p.partOf ? civs?.ofRealm(p.name) : undefined);
-  const years = own ? formatRange(own.from, own.to) : formatRange(civ.from, civ.to);
+  // Jamaica as a British colony gives its colonial years; as a country, its own (1962 on).
+  const span = own ? (p.partOf && own.partOfYears ? own.partOfYears : civYears(own)) : civYears(civ);
+  const years = formatRange(span[0], span[1]);
   // A member of a group says so: the Kingdom of Spain in 1530 is part of the Spanish Empire.
   const named = under ?? p;
   const groups = [...(home ? [] : (named.groups ?? [])), ...(named.partOf ? [named.partOf] : [])]
@@ -1262,7 +1264,7 @@ function altitudeFor(area: number): number {
 
 /** Years that frame these civilizations on the timeline. */
 function focusView(list: Civilization[]): [number, number] {
-  const from = Math.min(...list.map((c) => c.from));
+  const from = Math.min(...list.map((c) => civYears(c)[0]));
   const to = Math.max(...list.map((c) => c.to));
   const pad = Math.max(60, (to - from) * (list.length > 1 ? 0.1 : 0.5));
   return [from - pad, to + pad];
@@ -1981,7 +1983,7 @@ interface OpenOptions {
 
 function showMasthead() {
   const list = chosen();
-  const from = Math.min(...list.map((c) => c.from));
+  const from = Math.min(...list.map((c) => civYears(c)[0]));
   const to = Math.max(...list.map((c) => c.to));
   const title = country ? country.name : viewTitle(list);
   $("civ-title").textContent = title;
@@ -2028,7 +2030,7 @@ function openCiv(c: Civilization, options: OpenOptions = {}) {
     if (c.wikidata) {
       realmFacts(c.wikidata, c.picture).then((facts) => {
         if (active !== c || !expanded || !facts) return;
-        const sub = `${formatRange(c.from, c.to)} · ${civEraText(c)}`;
+        const sub = `${formatRange(...civYears(c))} · ${civEraText(c)}`;
         $("civ-sub").textContent = facts.figures.length ? `${sub} · ${facts.figures.join(", ")}` : sub;
         const near = linkedCivs(c, facts);
         const linked = [...near.before, ...near.after].filter((o) => !highlighted.includes(o));
