@@ -1951,7 +1951,28 @@
   "wikipedia": "Myanmar",
   "wikidata": "Q836",
   "fr": "Birmanie",
-  "es": "Birmania"
+  "es": "Birmania",
+  "periods": [
+   {
+    "from": "1948-01-04",
+    "name": "Union of Burma",
+    "wikipedia": "Myanmar",
+    "fr": "Union de Birmanie",
+    "es": "Unión de Birmania",
+    "label": "Burma",
+    "labelFr": "Birmanie",
+    "labelEs": "Birmania"
+   },
+   {
+    "from": "1989-06-18",
+    "name": "Myanmar",
+    "wikipedia": "Myanmar",
+    "label": "Myanmar",
+    "labelFr": "Birmanie",
+    "labelEs": "Myanmar",
+    "note": "Renamed Myanmar in 1989"
+   }
+  ]
  },
  "Namibia": {
   "wikipedia": "Namibia",
@@ -2580,7 +2601,28 @@
   "wikipedia": "Sri Lanka",
   "wikidata": "Q854",
   "fr": "Sri Lanka",
-  "es": "Sri Lanka"
+  "es": "Sri Lanka",
+  "periods": [
+   {
+    "from": "1948-02-04",
+    "name": "Dominion of Ceylon",
+    "wikipedia": "Dominion of Ceylon",
+    "fr": "Dominion de Ceylan",
+    "es": "Dominio de Ceilán",
+    "label": "Ceylon",
+    "labelFr": "Ceylan",
+    "labelEs": "Ceilán"
+   },
+   {
+    "from": "1972-05-22",
+    "name": "Sri Lanka",
+    "wikipedia": "Sri Lanka",
+    "label": "Sri Lanka",
+    "labelFr": "Sri Lanka",
+    "labelEs": "Sri Lanka",
+    "note": "A republic named Sri Lanka from 1972"
+   }
+  ]
  },
  "State of Aleppo": {
   "wikipedia": "State of Aleppo",
@@ -3522,5 +3564,115 @@
   "wikidata": "Q2660774",
   "fr": "Îles du Vent britanniques",
   "es": "Islas de Barlovento Británicas"
+ },
+ "British Raj": {
+  "wikipedia": "British Raj",
+  "wikidata": "Q129286",
+  "fr": "Raj britannique",
+  "es": "Raj británico"
+ },
+ "British Burma": {
+  "wikipedia": "British rule in Burma",
+  "wikidata": "Q2376315",
+  "fr": "Birmanie britannique",
+  "es": "Birmania británica"
+ },
+ "British Ceylon": {
+  "wikipedia": "British Ceylon",
+  "wikidata": "Q918153",
+  "fr": "Ceylan britannique",
+  "es": "Ceilán británico"
+ },
+ "Dominion of Newfoundland": {
+  "wikipedia": "Dominion of Newfoundland",
+  "wikidata": "Q38610",
+  "fr": "Dominion de Terre-Neuve",
+  "es": "Dominio de Terranova",
+  "periods": [
+   {
+    "from": "1907-09-26",
+    "name": "Dominion of Newfoundland",
+    "label": "Newfoundland",
+    "labelFr": "Terre-Neuve",
+    "labelEs": "Terranova",
+    "note": "Run by a British-appointed Commission of Government from 1934 to 1949"
+   }
+  ]
+ },
+ "Malayan Union": {
+  "wikipedia": "Malayan Union",
+  "wikidata": "Q976099",
+  "fr": "Union malaise",
+  "es": "Unión Malaya"
+ },
+ "Straits Settlements": {
+  "wikipedia": "Straits Settlements",
+  "wikidata": "Q376178",
+  "fr": "Établissements des détroits",
+  "es": "Establecimientos de los Estrechos",
+  "group": "British Malaya",
+  "groupUntil": "1946-04-01",
+  "groupFrom": "1895-07-01"
+ },
+ "Federated Malay States": {
+  "wikipedia": "Federated Malay States",
+  "wikidata": "Q1400154",
+  "fr": "États malais fédérés",
+  "es": "Estados Malayos Federados",
+  "group": "British Malaya",
+  "groupUntil": "1946-04-01",
+  "groupFrom": "1895-07-01"
+ },
+ "Unfederated Malay States": {
+  "wikipedia": "Unfederated Malay States",
+  "wikidata": "Q1973084",
+  "fr": "États malais non fédérés",
+  "es": "Estados Malayos No Federados",
+  "group": "British Malaya",
+  "groupUntil": "1946-04-01",
+  "groupFrom": "1909-03-10"
+ },
+ "British Malaya": {
+  "wikipedia": "British Malaya",
+  "wikidata": "Q871091",
+  "fr": "Malaisie britannique",
+  "es": "Malasia británica",
+  "notACountry": true
+ },
+ "Raj of Sarawak": {
+  "wikipedia": "Raj of Sarawak",
+  "wikidata": "Q1658411",
+  "fr": "Raj de Sarawak",
+  "es": "Raj de Sarawak"
+ },
+ "Italian Libya": {
+  "wikipedia": "Italian Libya",
+  "wikidata": "Q284568",
+  "fr": "Libye italienne",
+  "es": "Libia italiana"
+ },
+ "Italian Eritrea": {
+  "wikipedia": "Italian Eritrea",
+  "wikidata": "Q1232988",
+  "fr": "Érythrée italienne",
+  "es": "Eritrea italiana"
+ },
+ "Italian Somaliland": {
+  "wikipedia": "Italian Somaliland",
+  "wikidata": "Q319984",
+  "fr": "Somalie italienne",
+  "es": "Somalia italiana"
+ },
+ "Kingdom of Sikkim": {
+  "wikipedia": "Kingdom of Sikkim",
+  "wikidata": "Q3960459",
+  "fr": "Royaume du Sikkim",
+  "es": "Reino de Sikkim"
+ },
+ "Hyderabad State": {
+  "wikipedia": "Hyderabad State",
+  "wikidata": "Q1240096",
+  "fr": "État d'Hyderabad",
+  "es": "Estado de Hyderabad"
  }
 }
