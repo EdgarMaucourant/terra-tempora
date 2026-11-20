@@ -27,6 +27,10 @@ export const MUTED = "#5d636b";
 export const BLANK_COLOR = "#c3c9d0";
 export const BLANK_FILL_ALPHA = 0.38;
 
+/** The hatch lines of land ruled jointly (a condominium), for rulers not highlighted: one light, one dark. */
+export const JOINT_LIGHT = "#f4f5f7";
+export const JOINT_DARK = "#23272d";
+
 /** Colours by name for a highlighted realm (first) and the realms related to it. */
 export function highlightColors(chosen: Realm, related: Realm[]): Map<string, string> {
   const colors = new Map<string, string>();

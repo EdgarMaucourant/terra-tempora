@@ -329,7 +329,17 @@
       "title": "Canton and Enderbury Islands (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Canton_and_Enderbury_Islands"
      },
-     "map": "https://commons.wikimedia.org/wiki/File:LocationCantonIsl.png"
+     "map": "https://commons.wikimedia.org/wiki/File:LocationCantonIsl.png",
+     "hatch": {
+      "by": "United Kingdom",
+      "with": "United States",
+      "since": "1939-04-06",
+      "note": "An Anglo-American condominium, agreed in 1939 after both powers had claimed the islands",
+      "source": {
+       "title": "Canton and Enderbury Islands (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Canton_and_Enderbury_Islands"
+      }
+     }
     }
    ]
   },

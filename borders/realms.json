@@ -1967,7 +1967,18 @@
   "wikidata": "Q752431",
   "fr": "Nouvelles-Hébrides",
   "es": "Nuevas Hébridas",
-  "notACountry": true
+  "notACountry": true,
+  "periods": [
+   {
+    "from": "1906-10-20",
+    "name": "New Hebrides",
+    "detail": "France and United Kingdom",
+    "detailFr": "France et Royaume-Uni",
+    "detailEs": "Francia y Reino Unido",
+    "note": "Anglo-French condominium",
+    "jointly": true
+   }
+  ]
  },
  "New Zealand": {
   "wikipedia": "New Zealand",
@@ -3058,7 +3069,18 @@
   "wikidata": "Q2618621",
   "fr": "Îles Canton et Enderbury",
   "es": "Islas Canton y Enderbury",
-  "notACountry": true
+  "notACountry": true,
+  "periods": [
+   {
+    "from": "1939-04-06",
+    "name": "Canton and Enderbury Islands",
+    "detail": "United Kingdom and United States",
+    "detailFr": "Royaume-Uni et États-Unis",
+    "detailEs": "Reino Unido y Estados Unidos",
+    "note": "Anglo-American condominium",
+    "jointly": true
+   }
+  ]
  },
  "British Indian Ocean Territory": {
   "wikipedia": "British Indian Ocean Territory",
