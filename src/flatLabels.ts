@@ -20,6 +20,20 @@ export interface FlatLabelOptions {
   far: [number, number];
 }
 
+/**
+ * Puts a long name on two lines: the owner in brackets goes on the second
+ * line, or else the name breaks at the space nearest its middle.
+ */
+export function wrapLabel(text: string, max = 26): string {
+  if (text.length <= max) return text;
+  const bracket = text.lastIndexOf(" (");
+  if (bracket > 0 && text.endsWith(")")) return `${text.slice(0, bracket)}\n${text.slice(bracket + 1)}`;
+  const middle = text.length / 2;
+  let best = -1;
+  for (let i = text.indexOf(" "); i >= 0; i = text.indexOf(" ", i + 1)) if (best < 0 || Math.abs(i - middle) < Math.abs(best - middle)) best = i;
+  return best < 0 ? text : `${text.slice(0, best)}\n${text.slice(best + 1)}`;
+}
+
 export class FlatLabel {
   show = false;
   pixelOffset = new Cartesian2(0, 0);
@@ -80,14 +94,19 @@ export class FlatLabels {
       const scale = o.near[1] + (o.far[1] - o.near[1]) * t;
       ctx.font = o.font.replace(/(\d+(?:\.\d+)?)px/, (_, size: string) => `${(Number(size) * scale).toFixed(1)}px`);
       const x = point.x + label.pixelOffset.x;
-      const y = point.y + label.pixelOffset.y;
-      if (o.outlineWidth) {
-        ctx.strokeStyle = o.outline;
-        ctx.lineWidth = o.outlineWidth;
-        ctx.strokeText(o.text, x, y);
-      }
-      ctx.fillStyle = o.fill;
-      ctx.fillText(o.text, x, y);
+      const lines = o.text.split("\n");
+      // Lines are spaced by the font size, centred on the place as one block.
+      const step = Number(/(\d+(?:\.\d+)?)px/.exec(ctx.font)?.[1] ?? 12) * 1.15;
+      lines.forEach((line, i) => {
+        const y = point.y + label.pixelOffset.y + (i - (lines.length - 1) / 2) * step;
+        if (o.outlineWidth) {
+          ctx.strokeStyle = o.outline;
+          ctx.lineWidth = o.outlineWidth;
+          ctx.strokeText(line, x, y);
+        }
+        ctx.fillStyle = o.fill;
+        ctx.fillText(line, x, y);
+      });
     }
   }
 }
