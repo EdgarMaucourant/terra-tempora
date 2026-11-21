@@ -916,8 +916,9 @@ function hoverRealm(p: Polity | null | undefined, x: number, y: number) {
   const span = own ? (p.partOf && own.partOfYears ? own.partOfYears : civYears(own)) : civYears(civ);
   const years = formatRange(span[0], span[1]);
   // A member of a group says so: the Kingdom of Spain in 1530 is part of the Spanish Empire.
+  // The owner is not repeated: the name already says it, "Jersey (United Kingdom)".
   const named = under ?? p;
-  const groups = [...(home ? [] : (named.groups ?? [])), ...(named.partOf ? [named.partOf] : [])]
+  const groups = (home ? [] : (named.groups ?? []))
     .filter((g) => g !== named.name)
     .map((g) => placeName(g));
   const line = (textContent: string) => Object.assign(document.createElement("span"), { textContent });
