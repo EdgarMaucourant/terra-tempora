@@ -22,10 +22,11 @@
     "ESB",
     "WSB",
     "IOT",
-    "gilbert-islands"
+    "gilbert-islands",
+    "IRL"
    ],
-   "from": 1939,
-   "why": "The United Kingdom with the Crown Dependencies (Guernsey, Jersey, the Isle of Man), its overseas territories and the Chagos Archipelago, whose land has not changed hands since 1965"
+   "from": 1930,
+   "why": "The United Kingdom with the Crown Dependencies (Guernsey, Jersey, the Isle of Man), its overseas territories and the Chagos Archipelago, whose land has not changed hands since 1965, and Ireland (the Irish Free State until 1937)"
   },
   {
    "pieces": [
@@ -41,10 +42,11 @@
     "DMA",
     "TUV",
     "SLB",
-    "SYC"
+    "SYC",
+    "weihaiwei"
    ],
-   "from": 1939,
-   "why": "Hong Kong, Brunei, Southern Rhodesia and the colonies in the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence or handover"
+   "from": 1930,
+   "why": "Hong Kong, Brunei, Southern Rhodesia and the colonies in the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence or handover; Weihaiwei, leased from China until 1930"
   },
   {
    "pieces": [
@@ -65,7 +67,7 @@
     "BHS",
     "GRD"
    ],
-   "from": 1939,
+   "from": 1930,
    "why": "The Gulf protected states, South Arabia with all of Yemen (North Yemen until 1990), and the colonies and protectorates in Africa, the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence"
   },
   {
@@ -90,7 +92,7 @@
     "JAM",
     "TTO"
    ],
-   "from": 1939,
+   "from": 1930,
    "why": "The colonies, protectorates and trust territories Britain held in 1960 in Africa, Asia, the Mediterranean and the Caribbean, with today's borders, until their independence, with Malaya and Somalia around them"
   },
   {
@@ -105,7 +107,7 @@
     "ERI",
     "ETH"
    ],
-   "from": 1939,
+   "from": 1930,
    "why": "The Gold Coast and British Togoland (Ghana), Anglo-Egyptian Sudan, Libya and Eritrea, which Britain ruled or ran in the 1950s, with today's borders, and Ethiopia around Eritrea. The Haud, run by Britain inside Ethiopia until 1955, is not drawn"
   },
   {
@@ -152,7 +154,7 @@
     "hyd-karnataka",
     "bhadrachalam"
    ],
-   "from": 1939,
+   "from": 1930,
    "why": "British India (with the princely states, drawn as part of it), Burma and Ceylon, with today's borders, from British rule to today, and Newfoundland until it joined Canada. French and Portuguese India stay with their own families"
   },
   {
@@ -168,10 +170,11 @@
     "GAZ+00?",
     "EGY-1558",
     "EGY-1557",
-    "JOR"
+    "JOR",
+    "IRQ"
    ],
-   "from": 1939,
-   "why": "Mandatory Palestine and Transjordan, and what became of them: Israel, the West Bank, the Gaza Strip, Jordan, and the Sinai occupied by Israel"
+   "from": 1930,
+   "why": "Mandatory Palestine and Transjordan, and what became of them: Israel, the West Bank, the Gaza Strip, Jordan, and the Sinai occupied by Israel; Iraq, a British mandate until 1932, and Kuwait, occupied by Iraq in 1990-91"
   }
  ],
  "changes": [
@@ -192,6 +195,59 @@
      "source": {
       "title": "Sudan (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Sudan"
+     }
+    }
+   ]
+  },
+  {
+   "date": "2004-06-28",
+   "what": "The Coalition Provisional Authority hands sovereignty to the Iraqi Interim Government",
+   "source": {
+    "title": "Coalition Provisional Authority (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Coalition_Provisional_Authority"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "IRQ"
+     ],
+     "owner": "Iraq",
+     "source": {
+      "title": "Coalition Provisional Authority (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Coalition_Provisional_Authority"
+     },
+     "hatch": {
+      "by": "United States",
+      "since": "2003-04-09",
+      "note": "Occupied from the fall of Baghdad on 9 April 2003 by the US-led coalition. The United States and the United Kingdom were the occupying powers recognised by UN Security Council Resolution 1483 and ran Iraq through the Coalition Provisional Authority until sovereignty passed to the Iraqi Interim Government on 28 June 2004",
+      "source": {
+       "title": "Coalition Provisional Authority (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Coalition_Provisional_Authority"
+      },
+      "with": "United Kingdom",
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "2003-04-09",
+   "what": "American forces take Baghdad; Iraq comes under US-led occupation",
+   "source": {
+    "title": "Fall of Baghdad (2003) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Fall_of_Baghdad_(2003)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "IRQ"
+     ],
+     "owner": "Iraq",
+     "source": {
+      "title": "Iraq (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Iraq"
      }
     }
    ]
@@ -258,6 +314,57 @@
      "source": {
       "title": "Somalia (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Somalia"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1991-02-28",
+   "what": "The Gulf War ends: Kuwait is freed from Iraqi occupation",
+   "source": {
+    "title": "Iraqi occupation of Kuwait (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Iraqi_occupation_of_Kuwait"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "KWT"
+     ],
+     "owner": "Kuwait",
+     "source": {
+      "title": "Iraqi occupation of Kuwait (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Iraqi_occupation_of_Kuwait"
+     },
+     "hatch": {
+      "by": "Iraq",
+      "since": "1990-08-02",
+      "note": "Invaded and annexed by Iraq on 2 August 1990, freed in the Gulf War in February 1991",
+      "source": {
+       "title": "Iraqi occupation of Kuwait (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Iraqi_occupation_of_Kuwait"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1990-08-02",
+   "what": "Iraq invades Kuwait",
+   "source": {
+    "title": "Iraqi invasion of Kuwait (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Iraqi_invasion_of_Kuwait"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "KWT"
+     ],
+     "owner": "Kuwait",
+     "source": {
+      "title": "Kuwait (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kuwait"
      }
     }
    ]
@@ -4361,6 +4468,177 @@
       "url": "https://en.wikipedia.org/wiki/Bailiwick_of_Guernsey"
      },
      "territory": "Guernsey"
+    }
+   ]
+  },
+  {
+   "date": "1939-04-06",
+   "what": "The United Kingdom and the United States agree to rule Canton and Enderbury jointly",
+   "source": {
+    "title": "Canton and Enderbury Islands (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Canton_and_Enderbury_Islands"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "canton-island",
+      "enderbury-island"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Canton and Enderbury Islands (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Canton_and_Enderbury_Islands"
+     },
+     "territory": "Gilbert and Ellice Islands"
+    }
+   ]
+  },
+  {
+   "date": "1937-04-01",
+   "what": "Burma and Aden are separated from British India: Burma becomes a colony of its own, Aden a Crown colony",
+   "source": {
+    "title": "Government of India Act 1935 (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Government_of_India_Act_1935"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MMR"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British rule in Burma (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_rule_in_Burma"
+     },
+     "territory": "British Raj"
+    },
+    {
+     "pieces": [
+      "YEM-3510"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Aden Colony (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Aden_Colony"
+     },
+     "territory": "British Raj"
+    }
+   ]
+  },
+  {
+   "date": "1936-05-05",
+   "what": "Italian troops enter Addis Ababa; Italy declares Ethiopia annexed",
+   "source": {
+    "title": "Second Italo-Ethiopian War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Second_Italo-Ethiopian_War"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ETH"
+     ],
+     "owner": "Ethiopia",
+     "source": {
+      "title": "Ethiopian Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ethiopian_Empire"
+     }
+    },
+    {
+     "pieces": [
+      "ETH-3110"
+     ],
+     "owner": "Ethiopia",
+     "source": {
+      "title": "Second Italo-Ethiopian War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Second_Italo-Ethiopian_War"
+     },
+     "hatch": {
+      "by": "Italy",
+      "since": "1935-11-08",
+      "note": "Invaded by Italy from Eritrea in October 1935; Adwa fell on 6 October and Mek’ele on 8 November",
+      "source": {
+       "title": "Second Italo-Ethiopian War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Second_Italo-Ethiopian_War"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1935-11-08",
+   "what": "Italy invades Ethiopia from Eritrea and takes Adwa, Aksum and Mek’ele in Tigray",
+   "source": {
+    "title": "Second Italo-Ethiopian War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Second_Italo-Ethiopian_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ETH-3110"
+     ],
+     "owner": "Ethiopia",
+     "source": {
+      "title": "Ethiopian Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ethiopian_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1932-10-03",
+   "what": "Iraq becomes independent and joins the League of Nations, ending the British mandate",
+   "source": {
+    "title": "Mandatory Iraq (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Mandatory_Iraq"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "IRQ"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Mandatory Iraq (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mandatory_Iraq"
+     },
+     "territory": "Mandatory Iraq",
+     "hatch": {
+      "by": "League of Nations",
+      "since": "1920-04-25",
+      "note": "Assigned to the United Kingdom as a League of Nations mandate at San Remo in April 1920; Faisal I was made king in 1921 and the mandate ended with independence in 1932",
+      "source": {
+       "title": "Mandatory Iraq (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Mandatory_Iraq"
+      },
+      "trust": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1930-10-01",
+   "what": "The United Kingdom hands the leased territory of Weihaiwei back to China",
+   "source": {
+    "title": "Weihaiwei under British rule (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Weihaiwei_under_British_rule"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "weihaiwei"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Weihaiwei under British rule (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Weihaiwei_under_British_rule"
+     },
+     "territory": "Weihaiwei"
     }
    ]
   }

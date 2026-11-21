@@ -7876,6 +7876,196 @@
    "summary": "After Japan’s surrender in August, British forces return to Singapore in Operation Tiderace, and on 12 September 1945 General Itagaki surrenders all Japanese forces in South-East Asia to Lord Mountbatten at the Municipal Building. A British Military Administration runs Singapore and Malaya until the spring of 1946, and Thailand gives back the four northern Malay states.",
    "wikipedia": "Japanese_occupation_of_Singapore",
    "search": "Japanese surrender Singapore 12 September 1945 Mountbatten Itagaki Municipal Building Operation Tiderace Operation Zipper British Military Administration Malaya"
+  },
+  {
+   "id": "weihaiwei-returned-1930",
+   "kind": "empire",
+   "year": 1930,
+   "title": "Britain hands Weihaiwei back to China, 1 October 1930",
+   "place": "Weihai",
+   "lonLat": [
+    122.12,
+    37.51
+   ],
+   "civs": [
+    "china",
+    "united-kingdom"
+   ],
+   "summary": "Leased from China in 1898 as a naval station facing Port Arthur, the territory of Weihaiwei in Shandong never became the base Britain had hoped for. After years of talks with the Nationalist government, Britain hands it back on 1 October 1930, keeping only the use of Liugong Island for the Royal Navy for ten more years.",
+   "wikipedia": "Weihaiwei_under_British_rule",
+   "search": "Weihaiwei returned to China 1 October 1930 British lease 1898 Shandong Port Edward Liugong Island naval base rendition"
+  },
+  {
+   "id": "statute-of-westminster-1931",
+   "kind": "empire",
+   "year": 1931,
+   "title": "The Statute of Westminster, 11 December 1931",
+   "place": "London",
+   "lonLat": [
+    -0.12,
+    51.5
+   ],
+   "civs": [
+    "united-kingdom",
+    "canada",
+    "australia",
+    "new-zealand",
+    "south-africa",
+    "ireland",
+    "dominion-of-newfoundland"
+   ],
+   "summary": "Passed by the British Parliament on 11 December 1931, the Statute of Westminster puts the 1926 Balfour Declaration into law: Canada, Australia, New Zealand, South Africa, the Irish Free State and Newfoundland are equal, self-governing states, and London can no longer make laws for them without their consent. It is the founding text of the modern Commonwealth.",
+   "wikipedia": "Statute_of_Westminster_1931",
+   "search": "Statute of Westminster 11 December 1931 dominions legislative independence Balfour Declaration 1926 Canada Australia New Zealand South Africa Irish Free State Newfoundland Commonwealth"
+  },
+  {
+   "id": "iraq-independence-1932",
+   "kind": "empire",
+   "year": 1932,
+   "title": "Iraq becomes independent, 3 October 1932",
+   "place": "Baghdad",
+   "lonLat": [
+    44.37,
+    33.31
+   ],
+   "civs": [
+    "iraq",
+    "mandatory-iraq",
+    "united-kingdom"
+   ],
+   "summary": "Under the Anglo-Iraqi Treaty of 1930, Britain backs Iraq’s entry into the League of Nations, and on 3 October 1932 the Kingdom of Iraq under King Faisal I becomes the first mandate to win independence. Britain keeps two air bases and a close alliance, and its influence stays strong until the revolution of 1958.",
+   "wikipedia": "Kingdom_of_Iraq",
+   "search": "Iraq independence 3 October 1932 League of Nations admission end of British mandate Anglo-Iraqi Treaty 1930 King Faisal I Kingdom of Iraq RAF bases"
+  },
+  {
+   "id": "italy-invades-ethiopia-1935",
+   "kind": "war",
+   "year": 1935,
+   "title": "Italy invades Ethiopia, 3 October 1935",
+   "place": "Adwa",
+   "lonLat": [
+    38.9,
+    14.16
+   ],
+   "civs": [
+    "ethiopia",
+    "italy",
+    "italian-eritrea"
+   ],
+   "summary": "Without declaring war, Mussolini’s army crosses from Eritrea into Ethiopia on 3 October 1935 and takes Adwa, where Italy had been defeated in 1896, three days later. The League of Nations names Italy the aggressor but its sanctions leave out oil, and Britain and France try to buy peace with the Hoare–Laval plan. Italy presses on, using poison gas.",
+   "wikipedia": "Second_Italo-Ethiopian_War",
+   "search": "Second Italo-Ethiopian War Italy invades Ethiopia 3 October 1935 Adwa Mek’ele De Bono Badoglio League of Nations sanctions Hoare-Laval pact mustard gas Haile Selassie"
+  },
+  {
+   "id": "fall-of-addis-ababa-1936",
+   "kind": "war",
+   "year": 1936,
+   "title": "Italy takes Addis Ababa, 5 May 1936",
+   "place": "Addis Ababa",
+   "lonLat": [
+    38.74,
+    9.02
+   ],
+   "civs": [
+    "ethiopia",
+    "italy"
+   ],
+   "summary": "After the defeat of the Ethiopian army at Maychew, Emperor Haile Selassie leaves for exile, and Marshal Badoglio’s troops enter Addis Ababa on 5 May 1936. Italy declares Ethiopia annexed and joins it with Eritrea and Somalia as Italian East Africa. In June the emperor warns the League of Nations in Geneva: \"It is us today. It will be you tomorrow.\"",
+   "wikipedia": "Second_Italo-Ethiopian_War",
+   "search": "Fall of Addis Ababa 5 May 1936 Badoglio Italian East Africa Haile Selassie exile League of Nations speech Geneva Victor Emmanuel Emperor of Ethiopia annexation"
+  },
+  {
+   "id": "anglo-egyptian-treaty-1936",
+   "kind": "empire",
+   "year": 1936,
+   "title": "The Anglo-Egyptian Treaty, 26 August 1936",
+   "place": "Cairo",
+   "lonLat": [
+    31.24,
+    30.04
+   ],
+   "civs": [
+    "egypt",
+    "united-kingdom"
+   ],
+   "summary": "Alarmed by Italy’s conquest of Ethiopia, Egypt and Britain sign a twenty-year alliance on 26 August 1936. British troops leave Cairo and the rest of Egypt for the Suez Canal Zone, Egypt joins the League of Nations in 1937, and the foreigners’ special legal privileges are phased out. Egypt repudiates the treaty in 1951.",
+   "wikipedia": "Anglo-Egyptian_treaty_of_1936",
+   "search": "Anglo-Egyptian Treaty 26 August 1936 Suez Canal Zone British troops withdrawal Cairo King Farouk Wafd Nahhas League of Nations Montreux capitulations Sudan"
+  },
+  {
+   "id": "arab-revolt-palestine-1936",
+   "kind": "war",
+   "year": 1936,
+   "to": 1939,
+   "title": "The Arab revolt in Palestine, 1936 – 1939",
+   "place": "Nablus",
+   "lonLat": [
+    35.26,
+    32.22
+   ],
+   "civs": [
+    "mandatory-palestine",
+    "united-kingdom"
+   ],
+   "summary": "In April 1936 the Arabs of Mandatory Palestine begin a general strike against Jewish immigration and British rule, which turns into an armed uprising in the hills around Nablus and Jenin. Britain crushes it by 1939 with some 20,000 troops; about 5,000 Arabs are killed. The White Paper of May 1939 then caps Jewish immigration and promises an independent Palestine within ten years.",
+   "wikipedia": "1936–1939_Arab_revolt_in_Palestine",
+   "search": "1936 1939 Arab revolt in Palestine general strike Arab Higher Committee Amin al-Husseini British mandate Jewish immigration White Paper 1939 Peel Commission"
+  },
+  {
+   "id": "burma-aden-separated-1937",
+   "kind": "empire",
+   "year": 1937,
+   "title": "Burma and Aden are separated from British India, 1 April 1937",
+   "place": "Yangon",
+   "lonLat": [
+    96.16,
+    16.87
+   ],
+   "civs": [
+    "british-burma",
+    "aden-colony",
+    "british-raj",
+    "united-kingdom"
+   ],
+   "summary": "Under the Government of India Act 1935, which comes into force on 1 April 1937, Burma stops being a province of British India and becomes a colony of its own, with an elected house and a prime minister, Ba Maw. The same day the port of Aden, ruled from Bombay since 1839, becomes a Crown colony answering directly to London.",
+   "wikipedia": "Government_of_India_Act_1935",
+   "search": "Burma separated from India 1 April 1937 Government of India Act 1935 Government of Burma Act Ba Maw Aden Crown colony provincial autonomy"
+  },
+  {
+   "id": "peel-commission-1937",
+   "kind": "empire",
+   "year": 1937,
+   "title": "The Peel Commission proposes partitioning Palestine, 7 July 1937",
+   "place": "Jerusalem",
+   "lonLat": [
+    35.21,
+    31.77
+   ],
+   "civs": [
+    "mandatory-palestine",
+    "united-kingdom"
+   ],
+   "summary": "Sent out after the outbreak of the Arab revolt, the royal commission led by Lord Peel reports on 7 July 1937 that the mandate cannot work and proposes, for the first time, to split Palestine: a small Jewish state in the north and along the coast, an Arab state joined to Transjordan, and a British zone around Jerusalem. The Arabs reject it and the revolt flares again; Britain drops the plan in 1938.",
+   "wikipedia": "Peel_Commission",
+   "search": "Peel Commission report 7 July 1937 partition of Palestine Jewish state Arab state Transjordan population transfer Woodhead Commission 1938 Arab revolt"
+  },
+  {
+   "id": "constitution-of-ireland-1937",
+   "kind": "empire",
+   "year": 1937,
+   "title": "Ireland’s new constitution, 29 December 1937",
+   "place": "Dublin",
+   "lonLat": [
+    -6.26,
+    53.35
+   ],
+   "civs": [
+    "ireland",
+    "united-kingdom"
+   ],
+   "summary": "Approved by referendum in July, Éamon de Valera’s constitution comes into force on 29 December 1937. The Irish Free State becomes Ireland (Éire), with an elected President in place of the King’s Governor-General; the first, Douglas Hyde, takes office in 1938. Ireland stays neutral in the Second World War and leaves the Commonwealth as a republic in 1949.",
+   "wikipedia": "Constitution_of_Ireland",
+   "search": "Constitution of Ireland Bunreacht na hÉireann 29 December 1937 referendum de Valera Éire Irish Free State President of Ireland Douglas Hyde"
   }
  ]
 }

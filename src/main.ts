@@ -861,7 +861,7 @@ function showSource(p: Polity, el = $("info-source")) {
     const date = p.since ? formatDate(p.since) : "";
     el.append(
       p.with
-        ? t("info.jointly", { by: placeName(p.by), with: placeName(p.with), date })
+        ? t(p.occupied ? "info.heldByBoth" : "info.jointly", { by: placeName(p.by), with: placeName(p.with), date })
         : p.trust
           ? t(p.by === "League of Nations" ? "info.mandate" : "info.trust", { date })
           : t("info.heldBy", { by: placeName(p.by), date }),
@@ -871,7 +871,11 @@ function showSource(p: Polity, el = $("info-source")) {
     if (p.rough) el.append(`${t("info.activeWar")} `);
   }
   if (!s) return;
-  if (!s.date) return el.append(`${t(s.what ? "info.border" : "info.source")}: `, externalLink(s.url, s.what ? t("info.today") : s.title));
+  if (!s.date) {
+    el.append(`${t(s.what ? "info.border" : "info.source")}: `, externalLink(s.url, s.what ? t("info.today") : s.title));
+    if (s.confidence === "rough" && !p.rough) el.append(` (${t("info.rough")})`);
+    return;
+  }
   el.append(`${t("info.border")}: ${sourceLine(s)}`);
   if (s.confidence) el.append(` (${t(`info.${s.confidence}` as MessageKey)})`);
   el.append(". ");
@@ -929,7 +933,7 @@ function hoverRealm(p: Polity | null | undefined, x: number, y: number) {
     ...(p.by
       ? [
           line(
-            t(p.with ? "tooltip.jointly" : p.trust ? (p.by === "League of Nations" ? "tooltip.mandate" : "tooltip.trust") : "tooltip.heldBy", {
+            t(p.with ? (p.occupied ? "tooltip.heldByBoth" : "tooltip.jointly") : p.trust ? (p.by === "League of Nations" ? "tooltip.mandate" : "tooltip.trust") : "tooltip.heldBy", {
               by: placeName(p.by),
               with: p.with ? placeName(p.with) : "",
               year: p.since?.slice(0, 4) ?? "",
@@ -944,7 +948,10 @@ function hoverRealm(p: Polity | null | undefined, x: number, y: number) {
           .map((h) => line(t(h.whole ? "tooltip.heldBy" : "tooltip.partlyHeldBy", { by: placeName(h.by), year: h.since?.slice(0, 4) ?? "" })))
       : []),
     ...(p.rough ? [line(t("map.activeWar"))] : []),
-    ...(p.source ? [line(t("tooltip.border", { source: shortSource(p.source) })), line(t("tooltip.borderHint"))] : []),
+    ...(p.source ? [line(t("tooltip.border", { source: shortSource(p.source) }))] : []),
+    // Lines drawn as an estimate say so (an active war already does).
+    ...(p.source?.confidence === "rough" && !p.rough ? [line(t("tooltip.rough"))] : []),
+    ...(p.source ? [line(t("tooltip.borderHint"))] : []),
     Object.assign(document.createElement("span"), {
       textContent: home
         ? countryOf(civ)

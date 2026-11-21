@@ -7215,7 +7215,16 @@
     2026
    ],
    "realm": "Kuwait",
-   "why": "Independent since 19 June 1961"
+   "why": "Independent since 19 June 1961; occupied by Iraq from August 1990 to February 1991",
+   "heldBy": [
+    {
+     "years": [
+      1990,
+      1990
+     ],
+     "by": "Iraq"
+    }
+   ]
   },
   {
    "place": "Gwoza (trust)",
@@ -8777,6 +8786,185 @@
    ],
    "realm": "Italian Eritrea",
    "why": "Italian colony until April 1941"
+  },
+  {
+   "place": "Yangon (British India)",
+   "lonLat": [
+    96.16,
+    16.87
+   ],
+   "years": [
+    1930,
+    1936
+   ],
+   "realm": "British Raj",
+   "why": "Part of British India until 1 April 1937"
+  },
+  {
+   "place": "Yangon (1937)",
+   "lonLat": [
+    96.16,
+    16.87
+   ],
+   "years": [
+    1937,
+    1941
+   ],
+   "realm": "British Burma",
+   "why": "A colony of its own from 1 April 1937"
+  },
+  {
+   "place": "Aden (British India)",
+   "lonLat": [
+    44.99,
+    12.85
+   ],
+   "years": [
+    1930,
+    1936
+   ],
+   "realm": "British Raj",
+   "why": "Ruled from British India until 1 April 1937"
+  },
+  {
+   "place": "Aden (1937)",
+   "lonLat": [
+    44.99,
+    12.85
+   ],
+   "years": [
+    1937,
+    1962
+   ],
+   "realm": "Aden Colony",
+   "why": "A Crown colony from 1 April 1937"
+  },
+  {
+   "place": "Baghdad (mandate)",
+   "lonLat": [
+    44.37,
+    33.31
+   ],
+   "years": [
+    1930,
+    1931
+   ],
+   "realm": "Mandatory Iraq",
+   "why": "British mandate until 3 October 1932",
+   "heldBy": [
+    {
+     "years": [
+      1930,
+      1931
+     ],
+     "by": "League of Nations"
+    }
+   ]
+  },
+  {
+   "place": "Baghdad",
+   "lonLat": [
+    44.37,
+    33.31
+   ],
+   "years": [
+    1932,
+    2026
+   ],
+   "realm": "Iraq",
+   "why": "Independent from 1932; occupied by the US-led coalition from April 2003 to June 2004",
+   "heldBy": [
+    {
+     "years": [
+      2003,
+      2003
+     ],
+     "by": "United States"
+    }
+   ]
+  },
+  {
+   "place": "Dublin",
+   "lonLat": [
+    -6.26,
+    53.35
+   ],
+   "years": [
+    1930,
+    2026
+   ],
+   "realm": "Ireland",
+   "why": "The Irish Free State from 1922, Ireland from 1937"
+  },
+  {
+   "place": "Addis Ababa (1936)",
+   "lonLat": [
+    38.75,
+    9.03
+   ],
+   "years": [
+    1936,
+    1938
+   ],
+   "realm": "Ethiopia",
+   "why": "Occupied by Italy 1936-41",
+   "heldBy": [
+    {
+     "years": [
+      1936,
+      1938
+     ],
+     "by": "Italy"
+    }
+   ]
+  },
+  {
+   "place": "Addis Ababa (1930)",
+   "lonLat": [
+    38.75,
+    9.03
+   ],
+   "years": [
+    1930,
+    1935
+   ],
+   "realm": "Ethiopia",
+   "why": "Independent until May 1936"
+  },
+  {
+   "place": "Mek’ele (1935)",
+   "lonLat": [
+    39.47,
+    13.49
+   ],
+   "years": [
+    1935,
+    1935
+   ],
+   "realm": "Ethiopia",
+   "why": "Taken by Italy in November 1935",
+   "heldBy": [
+    {
+     "years": [
+      1935,
+      1935
+     ],
+     "by": "Italy"
+    }
+   ]
+  },
+  {
+   "place": "Weihai",
+   "lonLat": [
+    122.12,
+    37.51
+   ],
+   "years": [
+    1930,
+    1948
+   ],
+   "realm": "China",
+   "why": "Handed back by Britain on 1 October 1930"
   }
  ]
 }

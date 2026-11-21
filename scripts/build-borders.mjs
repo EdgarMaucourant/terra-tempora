@@ -229,6 +229,15 @@ function changeFor(ids, year) {
   return touching.find((c) => c.year <= year) ?? touching.findLast((c) => c.year > year) ?? null;
 }
 
+/**
+ * How sure a hatching's lines are: the confidence of the change on its start
+ * date that names the piece (Tigray, taken by Italy in late 1935, is rough).
+ */
+function hatchConfidence(h, id) {
+  const c = changes.find((c) => c.date === h.since && c.before.some((b) => b.ids.includes(id)));
+  return c?.confidence === "rough" ? { confidence: "rough" } : {};
+}
+
 const baseSource = { title: "Natural Earth", url: today.source.url, what: `Borders of ${TODAY}` };
 /**
  * The source of a border is about the realm drawn: after a change, the
@@ -356,8 +365,9 @@ for (let year = TODAY; year >= firstReviewed; year--) {
           note: h.note,
           ...(h.with && { with: h.with }),
           ...(h.trust && { trust: true }),
+          ...(h.occupied && { occupied: true }),
           ...(h.rough && { rough: true }),
-          source: { title: h.source.title, url: h.source.url, ...(h.map && { map: h.map }) },
+          source: { title: h.source.title, url: h.source.url, ...(h.map && { map: h.map }), ...hatchConfidence(h, id) },
         });
       }
     }
@@ -515,6 +525,7 @@ for (const [key, list] of runs) {
       ...(m.by && { by: m.by, since: m.since, note: m.note }),
       ...(m.with && { with: m.with }),
       ...(m.trust && { trust: true }),
+      ...(m.occupied && { occupied: true }),
       ...(m.rough && { rough: true }),
       ...(m.source && { source: m.source }),
       label: o.label,
