@@ -25,7 +25,7 @@
     "gilbert-islands",
     "IRL"
    ],
-   "from": 1910,
+   "from": 1900,
    "why": "The United Kingdom with the Crown Dependencies (Guernsey, Jersey, the Isle of Man), its overseas territories and the Chagos Archipelago, whose land has not changed hands since 1965, and Ireland (the Irish Free State until 1937)"
   },
   {
@@ -45,7 +45,7 @@
     "SYC",
     "weihaiwei"
    ],
-   "from": 1910,
+   "from": 1900,
    "why": "Hong Kong, Brunei, Southern Rhodesia and the colonies in the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence or handover; Weihaiwei, leased from China until 1930"
   },
   {
@@ -67,7 +67,7 @@
     "BHS",
     "GRD"
    ],
-   "from": 1910,
+   "from": 1900,
    "why": "The Gulf protected states, South Arabia with all of Yemen (North Yemen until 1990), and the colonies and protectorates in Africa, the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence"
   },
   {
@@ -91,9 +91,10 @@
     "SOM",
     "JAM",
     "TTO",
-    "dervish-nugaal"
+    "dervish-nugaal",
+    "lado-enclave"
    ],
-   "from": 1910,
+   "from": 1900,
    "why": "The colonies, protectorates and trust territories Britain held in 1960 in Africa, Asia, the Mediterranean and the Caribbean, with today's borders, until their independence, with Malaya and Somalia around them"
   },
   {
@@ -107,7 +108,7 @@
     "ERI",
     "ETH"
    ],
-   "from": 1910,
+   "from": 1900,
    "why": "The Gold Coast and British Togoland (Ghana), Anglo-Egyptian Sudan and Eritrea, which Britain ruled or ran in the 1950s, with today's borders, and Ethiopia around Eritrea. The Haud, run by Britain inside Ethiopia until 1955, is not drawn"
   },
   {
@@ -154,7 +155,7 @@
     "hyd-karnataka",
     "bhadrachalam"
    ],
-   "from": 1910,
+   "from": 1900,
    "why": "British India (with the princely states, drawn as part of it), Burma and Ceylon, with today's borders, from British rule to today, and Newfoundland until it joined Canada. French and Portuguese India stay with their own families"
   },
   {
@@ -174,7 +175,7 @@
     "IRQ",
     "EGY"
    ],
-   "from": 1910,
+   "from": 1900,
    "why": "Mandatory Palestine and Transjordan, and what became of them: Israel, the West Bank, the Gaza Strip, Jordan, and the Sinai occupied by Israel; Iraq, a British mandate until 1932, and Kuwait, occupied by Iraq in 1990-91; Egypt, a British protectorate until 1922 and part of the United Arab Republic in 1958-61"
   },
   {
@@ -6227,6 +6228,43 @@
    ]
   },
   {
+   "date": "1914-03-01",
+   "what": "The West Nile district passes from the Sudan to the Uganda Protectorate (1914)",
+   "source": {
+    "title": "Lado Enclave (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Lado_Enclave"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UGA-3081",
+      "UGA-3086",
+      "UGA-3080",
+      "UGA-3087",
+      "UGA-5589",
+      "UGA-3084",
+      "UGA-3085"
+     ],
+     "owner": "Anglo-Egyptian Sudan",
+     "source": {
+      "title": "Lado Enclave (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lado_Enclave"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "with": "Egypt",
+      "since": "1899-01-19",
+      "note": "An Anglo-Egyptian condominium from 1899, run in practice by Britain",
+      "source": {
+       "title": "Anglo-Egyptian Sudan (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Anglo-Egyptian_Sudan"
+      }
+     }
+    }
+   ]
+  },
+  {
    "date": "1914-01-01",
    "what": "Northern and Southern Nigeria are joined as the Colony and Protectorate of Nigeria",
    "source": {
@@ -6346,6 +6384,367 @@
       "url": "https://en.wikipedia.org/wiki/North-Eastern_Rhodesia"
      },
      "territory": "North-Eastern Rhodesia"
+    }
+   ]
+  },
+  {
+   "date": "1910-06-16",
+   "what": "The Lado Enclave, leased to King Leopold II, returns to the Anglo-Egyptian Sudan after his death",
+   "source": {
+    "title": "Lado Enclave (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Lado_Enclave"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "lado-enclave",
+      "UGA-3081",
+      "UGA-3086",
+      "UGA-3080",
+      "UGA-3087",
+      "UGA-5589",
+      "UGA-3084",
+      "UGA-3085"
+     ],
+     "owner": "Belgium",
+     "source": {
+      "title": "Lado Enclave (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lado_Enclave"
+     },
+     "territory": "Lado Enclave"
+    }
+   ]
+  },
+  {
+   "date": "1910-03-15",
+   "what": "British troops withdraw to the Somaliland coast (“coastal concentration”), leaving the interior to the Dervishes",
+   "source": {
+    "title": "Dervish movement (Somali) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Dervish_movement_(Somali)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "dervish-nugaal"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British Somaliland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Somaliland"
+     },
+     "territory": "British Somaliland"
+    }
+   ]
+  },
+  {
+   "date": "1909-07-09",
+   "what": "By the Anglo-Siamese Treaty, Siam hands Kedah, Perlis, Kelantan and Terengganu to Britain",
+   "source": {
+    "title": "Anglo-Siamese Treaty of 1909 (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Anglo-Siamese_Treaty_of_1909"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MYS-1140",
+      "MYS-1141",
+      "MYS-1144",
+      "MYS-1149"
+     ],
+     "owner": "Thailand",
+     "source": {
+      "title": "Anglo-Siamese Treaty of 1909 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Anglo-Siamese_Treaty_of_1909"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1908-11-15",
+   "what": "Belgium annexes the Congo Free State, with the Lado Enclave",
+   "source": {
+    "title": "Congo Free State (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Congo_Free_State"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "lado-enclave",
+      "UGA-3081",
+      "UGA-3086",
+      "UGA-3080",
+      "UGA-3087",
+      "UGA-5589",
+      "UGA-3084",
+      "UGA-3085"
+     ],
+     "owner": "Congo Free State",
+     "source": {
+      "title": "Lado Enclave (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lado_Enclave"
+     },
+     "territory": "Lado Enclave"
+    }
+   ]
+  },
+  {
+   "date": "1907-09-26",
+   "what": "Newfoundland becomes a dominion",
+   "source": {
+    "title": "Dominion of Newfoundland (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Dominion_of_Newfoundland"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "CAN-686"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Newfoundland Colony (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Newfoundland_Colony"
+     },
+     "territory": "Newfoundland Colony"
+    }
+   ]
+  },
+  {
+   "date": "1907-07-06",
+   "what": "The British Central Africa Protectorate is renamed Nyasaland",
+   "source": {
+    "title": "Nyasaland (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Nyasaland"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MWI"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British Central Africa Protectorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Central_Africa_Protectorate"
+     },
+     "territory": "British Central Africa Protectorate"
+    }
+   ]
+  },
+  {
+   "date": "1904-01-10",
+   "what": "British forces defeat the Dervishes at Jidballi and drive them out of the Somaliland interior",
+   "source": {
+    "title": "Somaliland campaign (1903–1904) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Somaliland_campaign_(1903–1904)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "dervish-nugaal"
+     ],
+     "owner": "Dervish State",
+     "source": {
+      "title": "Dervish movement (Somali) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Dervish_movement_(Somali)"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1903-08-31",
+   "what": "Seychelles is separated from Mauritius and becomes a colony of its own",
+   "source": {
+    "title": "Seychelles (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Seychelles"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SYC",
+      "aldabra-group"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British Mauritius (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Mauritius"
+     },
+     "territory": "British Mauritius"
+    }
+   ]
+  },
+  {
+   "date": "1903-06-25",
+   "what": "Britain takes over Swaziland after the Boer War, run from the Transvaal until 1906",
+   "source": {
+    "title": "Eswatini (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Eswatini"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "SWZ"
+     ],
+     "owner": "Eswatini",
+     "source": {
+      "title": "Eswatini (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Eswatini"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1903-03-15",
+   "what": "British forces take Sokoto, weeks after Kano: the Sokoto Caliphate falls to Northern Nigeria",
+   "source": {
+    "title": "Sokoto Caliphate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Sokoto_Caliphate"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "NGA-2871",
+      "NGA-2879",
+      "NGA-2872",
+      "NGA-2870",
+      "NGA-2869",
+      "NGA-2868"
+     ],
+     "owner": "Sokoto Caliphate",
+     "source": {
+      "title": "Sokoto Caliphate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sokoto_Caliphate"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1902-04-01",
+   "what": "Uganda’s Eastern Province is transferred to the East Africa Protectorate",
+   "source": {
+    "title": "East Africa Protectorate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/East_Africa_Protectorate"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "KEN-891",
+      "KEN-1197",
+      "KEN-890"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Uganda Protectorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Uganda_Protectorate"
+     },
+     "territory": "Uganda Protectorate"
+    }
+   ]
+  },
+  {
+   "date": "1902-03-01",
+   "what": "British columns occupy Bauchi, Zaria and Borno (early 1902)",
+   "source": {
+    "title": "Northern Nigeria Protectorate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Northern_Nigeria_Protectorate"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "NGA-2864",
+      "NGA-2858",
+      "NGA-2859"
+     ],
+     "owner": "Sokoto Caliphate",
+     "source": {
+      "title": "Sokoto Caliphate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sokoto_Caliphate"
+     }
+    },
+    {
+     "pieces": [
+      "NGA-2839",
+      "NGA-2873"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Borno (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Borno"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1901-09-02",
+   "what": "British forces take Yola, capital of the Adamawa emirate",
+   "source": {
+    "title": "Adamawa Emirate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Adamawa_Emirate"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "NGA-2881",
+      "NGA-2848"
+     ],
+     "owner": "Sokoto Caliphate",
+     "source": {
+      "title": "Adamawa Emirate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Adamawa_Emirate"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1901-02-19",
+   "what": "British forces take Kontagora and Bida, in the Nupe country",
+   "source": {
+    "title": "Kontagora (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kontagora"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "NGA-2851"
+     ],
+     "owner": "Sokoto Caliphate",
+     "source": {
+      "title": "Nupe Kingdom (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Nupe_Kingdom"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1900-05-18",
+   "what": "Tonga becomes a British protected state",
+   "source": {
+    "title": "Tonga (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tonga"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TON"
+     ],
+     "owner": "Tonga",
+     "source": {
+      "title": "Tonga (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tonga"
+     }
     }
    ]
   }

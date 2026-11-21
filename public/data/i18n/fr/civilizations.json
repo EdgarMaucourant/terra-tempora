@@ -311,6 +311,12 @@
  "mandatory-iraq": {
   "name": "Irak mandataire"
  },
+ "uganda-protectorate": {
+  "name": "Protectorat de l'Ouganda"
+ },
+ "sokoto-caliphate": {
+  "name": "Califat de Sokoto"
+ },
  "french-cameroon": {
   "name": "Cameroun français"
  },
@@ -319,6 +325,9 @@
  },
  "dominion-of-newfoundland": {
   "name": "Dominion de Terre-Neuve"
+ },
+ "newfoundland-colony": {
+  "name": "Colonie de Terre-Neuve"
  },
  "paraguay": {
   "name": "Paraguay"
@@ -409,9 +418,6 @@
  },
  "uganda": {
   "name": "Ouganda"
- },
- "uganda-protectorate": {
-  "name": "Protectorat de l'Ouganda"
  },
  "ghana": {
   "name": "Ghana"
@@ -538,6 +544,9 @@
  },
  "nyasaland": {
   "name": "Nyassaland"
+ },
+ "british-central-africa-protectorate": {
+  "name": "Protectorat britannique d’Afrique centrale"
  },
  "benin": {
   "name": "Bénin"
@@ -686,6 +695,15 @@
  "estonia": {
   "name": "Estonie"
  },
+ "belgium": {
+  "name": "Belgique"
+ },
+ "lado-enclave": {
+  "name": "Enclave de Lado"
+ },
+ "congo-free-state": {
+  "name": "État indépendant du Congo"
+ },
  "southern-cameroons": {
   "name": "Cameroun méridional"
  },
@@ -721,9 +739,6 @@
  },
  "guinea-bissau": {
   "name": "Guinée-Bissau"
- },
- "belgium": {
-  "name": "Belgique"
  },
  "lesotho": {
   "name": "Lesotho"
@@ -941,14 +956,14 @@
  "zanzibar": {
   "name": "Zanzibar"
  },
+ "british-mauritius": {
+  "name": "Maurice britannique"
+ },
  "mayotte": {
   "name": "Mayotte"
  },
  "territory-of-the-comoros": {
   "name": "Territoire des Comores"
- },
- "british-mauritius": {
-  "name": "Maurice britannique"
  },
  "mauritius": {
   "name": "Maurice"
