@@ -462,6 +462,7 @@
     "event": "{kind} · {when} · haz clic para saber más",
     "explore": "{years} · haz clic para explorar",
     "heldBy": "En manos de {by} desde {year}",
+    "partlyHeldBy": "En parte en manos de {by} desde {year}",
     "jointly": "Gobernado conjuntamente por {by} y {with} desde {year}",
     "trust": "Territorio en fideicomiso de la ONU desde {year}",
     "mandate": "Mandato de la Sociedad de Naciones desde {year}",

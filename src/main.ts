@@ -937,6 +937,12 @@ function hoverRealm(p: Polity | null | undefined, x: number, y: number) {
           ),
         ]
       : []),
+    // A closed group says who holds its members (French Indochina held by Japan).
+    ...(p.kind === "group"
+      ? layer
+          .groupHolders(p.name, year)
+          .map((h) => line(t(h.whole ? "tooltip.heldBy" : "tooltip.partlyHeldBy", { by: placeName(h.by), year: h.since?.slice(0, 4) ?? "" })))
+      : []),
     ...(p.rough ? [line(t("map.activeWar"))] : []),
     ...(p.source ? [line(t("tooltip.border", { source: shortSource(p.source) })), line(t("tooltip.borderHint"))] : []),
     Object.assign(document.createElement("span"), {
