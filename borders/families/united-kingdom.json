@@ -2038,7 +2038,7 @@
       "by": "United Nations",
       "since": "1946-12-13",
       "trust": true,
-      "note": "Administered by the United Kingdom, under a League of Nations mandate from 1920 (given out under the Treaty of Versailles, confirmed by the League in July 1922)",
+      "note": "Administered by the United Kingdom, under a League of Nations mandate from 1920, given out under the Treaty of Versailles",
       "source": {
        "title": "United Nations trust territories (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/United_Nations_trust_territories"
@@ -2131,7 +2131,7 @@
       "by": "United Nations",
       "since": "1946-12-13",
       "trust": true,
-      "note": "Administered by the United Kingdom as part of Nigeria, under a League of Nations mandate from 1920 (given out under the Treaty of Versailles, confirmed by the League in July 1922)",
+      "note": "Administered by the United Kingdom as part of Nigeria, under a League of Nations mandate from 1920, given out under the Treaty of Versailles",
       "source": {
        "title": "United Nations trust territories (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/United_Nations_trust_territories"
@@ -2199,7 +2199,7 @@
       "by": "United Nations",
       "since": "1946-12-13",
       "trust": true,
-      "note": "Administered by the United Kingdom as part of Nigeria, under a League of Nations mandate from 1920 (given out under the Treaty of Versailles, confirmed by the League in July 1922)",
+      "note": "Administered by the United Kingdom as part of Nigeria, under a League of Nations mandate from 1920, given out under the Treaty of Versailles",
       "source": {
        "title": "United Nations trust territories (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/United_Nations_trust_territories"
@@ -2559,7 +2559,7 @@
       "by": "United Nations",
       "since": "1946-12-13",
       "trust": true,
-      "note": "Administered by the United Kingdom with the Gold Coast, under a League of Nations mandate from 1920 (given out under the Treaty of Versailles, confirmed by the League in July 1922)",
+      "note": "Administered by the United Kingdom with the Gold Coast, under a League of Nations mandate from 1920, given out under the Treaty of Versailles",
       "source": {
        "title": "United Nations trust territories (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/United_Nations_trust_territories"
@@ -2881,11 +2881,12 @@
       "by": "League of Nations",
       "since": "1920-07-01",
       "trust": true,
-      "note": "Administered by the United Kingdom under a League of Nations mandate (from 1920, in force from 1923)",
+      "note": "Administered by the United Kingdom under a League of Nations mandate",
       "source": {
        "title": "Mandate for Palestine (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Mandate_for_Palestine"
-      }
+      },
+      "confirmed": "1923-09-29"
      }
     }
    ]
@@ -3190,11 +3191,12 @@
       "by": "League of Nations",
       "since": "1920-01-10",
       "trust": true,
-      "note": "Administered by the United Kingdom under a League of Nations mandate from 1920 (given out under the Treaty of Versailles, confirmed by the League in July 1922)",
+      "note": "Administered by the United Kingdom under a League of Nations mandate from 1920, given out under the Treaty of Versailles",
       "source": {
        "title": "League of Nations mandate (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/League_of_Nations_mandate"
-      }
+      },
+      "confirmed": "1922-07-20"
      }
     },
     {
@@ -3229,11 +3231,12 @@
       "by": "League of Nations",
       "since": "1920-01-10",
       "trust": true,
-      "note": "Administered by the United Kingdom as part of Nigeria, under a League of Nations mandate from 1920 (given out under the Treaty of Versailles, confirmed by the League in July 1922)",
+      "note": "Administered by the United Kingdom as part of Nigeria, under a League of Nations mandate from 1920, given out under the Treaty of Versailles",
       "source": {
        "title": "League of Nations mandate (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/League_of_Nations_mandate"
-      }
+      },
+      "confirmed": "1922-07-20"
      }
     },
     {
@@ -3252,11 +3255,12 @@
       "by": "League of Nations",
       "since": "1920-01-10",
       "trust": true,
-      "note": "Administered by the United Kingdom with the Gold Coast, under a League of Nations mandate from 1920 (given out under the Treaty of Versailles, confirmed by the League in July 1922)",
+      "note": "Administered by the United Kingdom with the Gold Coast, under a League of Nations mandate from 1920, given out under the Treaty of Versailles",
       "source": {
        "title": "League of Nations mandate (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/League_of_Nations_mandate"
-      }
+      },
+      "confirmed": "1922-07-20"
      }
     }
    ]
@@ -3328,11 +3332,12 @@
       "by": "League of Nations",
       "since": "1920-07-01",
       "trust": true,
-      "note": "Administered by the United Kingdom under the League of Nations mandate for Palestine (from 1920, in force from 1923)",
+      "note": "Administered by the United Kingdom under the League of Nations mandate for Palestine",
       "source": {
        "title": "Mandate for Palestine (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Mandate_for_Palestine"
-      }
+      },
+      "confirmed": "1923-09-29"
      }
     }
    ]
@@ -4878,11 +4883,12 @@
       "by": "League of Nations",
       "since": "1920-07-01",
       "trust": true,
-      "note": "Administered by the United Kingdom under a League of Nations mandate (from 1920, in force from 1923)",
+      "note": "Administered by the United Kingdom under a League of Nations mandate",
       "source": {
        "title": "Mandate for Palestine (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Mandate_for_Palestine"
-      }
+      },
+      "confirmed": "1923-09-29"
      }
     }
    ]

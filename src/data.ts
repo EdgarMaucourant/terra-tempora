@@ -45,6 +45,8 @@ export interface Polity {
   with?: string;
   /** For "hatch" with `with`: two states holding the land as occupiers, not a condominium (Iraq, 2003-04). */
   occupied?: boolean;
+  /** For a League of Nations mandate's hatch: when the League confirmed it (Tanganyika, July 1922). */
+  confirmed?: string;
   since?: string;
   note?: string;
   /** For "hatch": a UN trust territory or a League of Nations mandate, run by its owner for `by`. */
