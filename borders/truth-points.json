@@ -8872,7 +8872,16 @@
     2026
    ],
    "realm": "Iraq",
-   "why": "Independent from 1932"
+   "why": "Independent from 1932; occupied by the US-led coalition from April 2003 to June 2004",
+   "heldBy": [
+    {
+     "years": [
+      2003,
+      2003
+     ],
+     "by": "United States"
+    }
+   ]
   },
   {
    "place": "Dublin",
