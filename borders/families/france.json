@@ -2504,9 +2504,9 @@
      },
      "hatch": {
       "by": "League of Nations",
-      "since": "1923-09-29",
+      "since": "1920-09-01",
       "trust": true,
-      "note": "Administered by France under a League of Nations mandate from 1923",
+      "note": "Administered by France under a League of Nations mandate from 1920 (in force from 1923)",
       "source": {
        "title": "Mandate for Syria and the Lebanon (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Mandate_for_Syria_and_the_Lebanon"
@@ -2536,9 +2536,9 @@
      },
      "hatch": {
       "by": "League of Nations",
-      "since": "1923-09-29",
+      "since": "1920-09-01",
       "trust": true,
-      "note": "Administered by France under a League of Nations mandate from 1923",
+      "note": "Administered by France under a League of Nations mandate from 1920 (in force from 1923)",
       "source": {
        "title": "Mandate for Syria and the Lebanon (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Mandate_for_Syria_and_the_Lebanon"
@@ -3281,9 +3281,9 @@
      },
      "hatch": {
       "by": "League of Nations",
-      "since": "1923-09-29",
+      "since": "1920-09-01",
       "trust": true,
-      "note": "Administered by France under a League of Nations mandate from 1923",
+      "note": "Administered by France under a League of Nations mandate from 1920 (in force from 1923)",
       "source": {
        "title": "Mandate for Syria and the Lebanon (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Mandate_for_Syria_and_the_Lebanon"
@@ -3313,9 +3313,9 @@
      },
      "hatch": {
       "by": "League of Nations",
-      "since": "1923-09-29",
+      "since": "1920-09-01",
       "trust": true,
-      "note": "Administered by France under a League of Nations mandate from 1923",
+      "note": "Administered by France under a League of Nations mandate from 1920 (in force from 1923)",
       "source": {
        "title": "Mandate for Syria and the Lebanon (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Mandate_for_Syria_and_the_Lebanon"
@@ -3346,9 +3346,9 @@
      },
      "hatch": {
       "by": "League of Nations",
-      "since": "1923-09-29",
+      "since": "1920-09-01",
       "trust": true,
-      "note": "Administered by France under a League of Nations mandate from 1923",
+      "note": "Administered by France under a League of Nations mandate from 1920 (in force from 1923)",
       "source": {
        "title": "Mandate for Syria and the Lebanon (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Mandate_for_Syria_and_the_Lebanon"
@@ -3378,9 +3378,9 @@
      },
      "hatch": {
       "by": "League of Nations",
-      "since": "1923-09-29",
+      "since": "1920-09-01",
       "trust": true,
-      "note": "Administered by France under a League of Nations mandate from 1923",
+      "note": "Administered by France under a League of Nations mandate from 1920 (in force from 1923)",
       "source": {
        "title": "Mandate for Syria and the Lebanon (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Mandate_for_Syria_and_the_Lebanon"
@@ -3560,9 +3560,9 @@
      },
      "hatch": {
       "by": "League of Nations",
-      "since": "1923-09-29",
+      "since": "1920-09-01",
       "trust": true,
-      "note": "Administered by France under a League of Nations mandate from 1923",
+      "note": "Administered by France under a League of Nations mandate from 1920 (in force from 1923)",
       "source": {
        "title": "Mandate for Syria and the Lebanon (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Mandate_for_Syria_and_the_Lebanon"
@@ -3588,9 +3588,9 @@
      },
      "hatch": {
       "by": "League of Nations",
-      "since": "1923-09-29",
+      "since": "1920-09-01",
       "trust": true,
-      "note": "Administered by France under a League of Nations mandate from 1923",
+      "note": "Administered by France under a League of Nations mandate from 1920 (in force from 1923)",
       "source": {
        "title": "Mandate for Syria and the Lebanon (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Mandate_for_Syria_and_the_Lebanon"
@@ -3622,85 +3622,6 @@
    ]
   },
   {
-   "date": "1923-09-29",
-   "what": "The League of Nations mandate for Syria and the Lebanon comes into force",
-   "source": {
-    "title": "Mandate for Syria and the Lebanon (Wikipedia)",
-    "url": "https://en.wikipedia.org/wiki/Mandate_for_Syria_and_the_Lebanon"
-   },
-   "confidence": "exact",
-   "before": [
-    {
-     "pieces": [
-      "SYR-137",
-      "SYR-140",
-      "SYR-136",
-      "SYR-141",
-      "SYR-142",
-      "TUR-2289"
-     ],
-     "owner": "France",
-     "territory": "State of Aleppo",
-     "source": {
-      "title": "State of Aleppo (Wikipedia)",
-      "url": "https://en.wikipedia.org/wiki/State_of_Aleppo"
-     }
-    },
-    {
-     "pieces": [
-      "SYR-4843",
-      "SYR-144",
-      "SYR-139",
-      "SYR-138",
-      "SYR-146",
-      "SYR-145",
-      "SYR-5261",
-      "golan"
-     ],
-     "owner": "France",
-     "territory": "State of Damascus",
-     "source": {
-      "title": "State of Damascus (Wikipedia)",
-      "url": "https://en.wikipedia.org/wiki/State_of_Damascus"
-     }
-    },
-    {
-     "pieces": [
-      "SYR-134",
-      "SYR-135"
-     ],
-     "owner": "France",
-     "territory": "Alawite State",
-     "source": {
-      "title": "Alawite State (Wikipedia)",
-      "url": "https://en.wikipedia.org/wiki/Alawite_State"
-     }
-    },
-    {
-     "pieces": [
-      "SYR-143"
-     ],
-     "owner": "France",
-     "territory": "Jabal Druze State",
-     "source": {
-      "title": "Jabal Druze State (Wikipedia)",
-      "url": "https://en.wikipedia.org/wiki/Jabal_Druze_State"
-     }
-    },
-    {
-     "pieces": [
-      "LBN"
-     ],
-     "owner": "France",
-     "territory": "Mandatory Lebanon",
-     "source": {
-      "title": "Greater Lebanon (Wikipedia)",
-      "url": "https://en.wikipedia.org/wiki/Greater_Lebanon"
-     }
-    }
-   ]
-  },
-  {
    "date": "1921-05-01",
    "what": "The Druze state is formed out of the State of Damascus",
    "source": {
@@ -3718,6 +3639,16 @@
      "source": {
       "title": "State of Damascus (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/State_of_Damascus"
+     },
+     "hatch": {
+      "by": "League of Nations",
+      "since": "1920-09-01",
+      "trust": true,
+      "note": "Administered by France under a League of Nations mandate from 1920 (in force from 1923)",
+      "source": {
+       "title": "Mandate for Syria and the Lebanon (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Mandate_for_Syria_and_the_Lebanon"
+      }
      }
     }
    ]

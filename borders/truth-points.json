@@ -3235,7 +3235,7 @@
    "heldBy": [
     {
      "years": [
-      1923,
+      1920,
       1924
      ],
      "by": "League of Nations"
@@ -3331,7 +3331,7 @@
    "heldBy": [
     {
      "years": [
-      1923,
+      1920,
       1942
      ],
      "by": "League of Nations"
@@ -3509,7 +3509,7 @@
    "heldBy": [
     {
      "years": [
-      1923,
+      1920,
       1924
      ],
      "by": "League of Nations"
@@ -3588,7 +3588,7 @@
    "heldBy": [
     {
      "years": [
-      1923,
+      1920,
       1935
      ],
      "by": "League of Nations"
@@ -3632,7 +3632,7 @@
    "heldBy": [
     {
      "years": [
-      1923,
+      1921,
       1935
      ],
      "by": "League of Nations"
@@ -3676,7 +3676,16 @@
     1920
    ],
    "realm": "State of Damascus",
-   "why": "Part of the State of Damascus until the Druze state was formed in May 1921"
+   "why": "Part of the State of Damascus until the Druze state was formed in May 1921",
+   "heldBy": [
+    {
+     "years": [
+      1920,
+      1920
+     ],
+     "by": "League of Nations"
+    }
+   ]
   },
   {
    "place": "Antakya",
@@ -3728,7 +3737,7 @@
    "heldBy": [
     {
      "years": [
-      1923,
+      1920,
       1924
      ],
      "by": "League of Nations"
@@ -9122,7 +9131,16 @@
     1920
    ],
    "realm": "Mandatory Palestine",
-   "why": "Under the British mandate before the emirate"
+   "why": "Under the British mandate before the emirate",
+   "heldBy": [
+    {
+     "years": [
+      1920,
+      1920
+     ],
+     "by": "League of Nations"
+    }
+   ]
   },
   {
    "place": "Amman (emirate 1921)",
@@ -9139,7 +9157,7 @@
    "heldBy": [
     {
      "years": [
-      1923,
+      1921,
       1944
      ],
      "by": "League of Nations"
@@ -9157,7 +9175,16 @@
     1922
    ],
    "realm": "Mandatory Palestine",
-   "why": "British civil administration from July 1920; the mandate came into force in 1923"
+   "why": "British civil administration under the mandate from July 1920",
+   "heldBy": [
+    {
+     "years": [
+      1920,
+      1922
+     ],
+     "by": "League of Nations"
+    }
+   ]
   },
   {
    "place": "Dar es Salaam (mandate)",
