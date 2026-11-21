@@ -21,9 +21,10 @@
     "SGS",
     "ESB",
     "WSB",
-    "IOT"
+    "IOT",
+    "gilbert-islands"
    ],
-   "from": 1945,
+   "from": 1939,
    "why": "The United Kingdom with the Crown Dependencies (Guernsey, Jersey, the Isle of Man), its overseas territories and the Chagos Archipelago, whose land has not changed hands since 1965"
   },
   {
@@ -42,7 +43,7 @@
     "SLB",
     "SYC"
    ],
-   "from": 1945,
+   "from": 1939,
    "why": "Hong Kong, Brunei, Southern Rhodesia and the colonies in the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence or handover"
   },
   {
@@ -64,7 +65,7 @@
     "BHS",
     "GRD"
    ],
-   "from": 1945,
+   "from": 1939,
    "why": "The Gulf protected states, South Arabia with all of Yemen (North Yemen until 1990), and the colonies and protectorates in Africa, the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence"
   },
   {
@@ -89,7 +90,7 @@
     "JAM",
     "TTO"
    ],
-   "from": 1945,
+   "from": 1939,
    "why": "The colonies, protectorates and trust territories Britain held in 1960 in Africa, Asia, the Mediterranean and the Caribbean, with today's borders, until their independence, with Malaya and Somalia around them"
   },
   {
@@ -104,7 +105,7 @@
     "ERI",
     "ETH"
    ],
-   "from": 1945,
+   "from": 1939,
    "why": "The Gold Coast and British Togoland (Ghana), Anglo-Egyptian Sudan, Libya and Eritrea, which Britain ruled or ran in the 1950s, with today's borders, and Ethiopia around Eritrea. The Haud, run by Britain inside Ethiopia until 1955, is not drawn"
   },
   {
@@ -151,7 +152,7 @@
     "hyd-karnataka",
     "bhadrachalam"
    ],
-   "from": 1945,
+   "from": 1939,
    "why": "British India (with the princely states, drawn as part of it), Burma and Ceylon, with today's borders, from British rule to today, and Newfoundland until it joined Canada. French and Portuguese India stay with their own families"
   },
   {
@@ -169,7 +170,7 @@
     "EGY-1557",
     "JOR"
    ],
-   "from": 1945,
+   "from": 1939,
    "why": "Mandatory Palestine and Transjordan, and what became of them: Israel, the West Bank, the Gaza Strip, Jordan, and the Sinai occupied by Israel"
   }
  ],
@@ -620,7 +621,8 @@
     {
      "pieces": [
       "KIR+00?",
-      "KIR+99?"
+      "KIR+99?",
+      "gilbert-islands"
      ],
      "owner": "United Kingdom",
      "source": {
@@ -800,7 +802,8 @@
      "pieces": [
       "TUV",
       "KIR+00?",
-      "KIR+99?"
+      "KIR+99?",
+      "gilbert-islands"
      ],
      "owner": "United Kingdom",
      "source": {
@@ -2828,7 +2831,26 @@
       "LBY-2975",
       "LBY-2973",
       "LBY-2976",
-      "LBY-2964",
+      "LBY-2964"
+     ],
+     "owner": "Italy",
+     "source": {
+      "title": "Italian Libya (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Italian_Libya"
+     },
+     "territory": "Italian Libya",
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1943-01-23",
+      "note": "Occupied by Britain in the Second World War; Italy gave up its colonies in the 1947 peace treaty",
+      "source": {
+       "title": "British Military Administration (Libya) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/British_Military_Administration_(Libya)"
+      }
+     }
+    },
+    {
+     "pieces": [
       "LBY-2987",
       "LBY-2983",
       "LBY-2986",
@@ -2845,7 +2867,7 @@
      "territory": "Italian Libya",
      "hatch": {
       "by": "United Kingdom",
-      "since": "1943-01-23",
+      "since": "1942-11-20",
       "note": "Occupied by Britain in the Second World War; Italy gave up its colonies in the 1947 peace treaty",
       "source": {
        "title": "British Military Administration (Libya) (Wikipedia)",
@@ -3211,6 +3233,1134 @@
       "url": "https://en.wikipedia.org/wiki/Unfederated_Malay_States"
      },
      "territory": "Unfederated Malay States"
+    }
+   ]
+  },
+  {
+   "date": "1945-10-07",
+   "what": "The Japanese garrison of the Andaman and Nicobar Islands surrenders",
+   "source": {
+    "title": "Japanese occupation of the Andaman and Nicobar Islands (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Andaman_and_Nicobar_Islands"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "IND-2474"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Japanese occupation of the Andaman and Nicobar Islands (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Andaman_and_Nicobar_Islands"
+     },
+     "territory": "British Raj",
+     "hatch": {
+      "by": "Japan",
+      "since": "1942-03-23",
+      "note": "Occupied by Japan from March 1942 until October 1945",
+      "source": {
+       "title": "Japanese occupation of the Andaman and Nicobar Islands (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Andaman_and_Nicobar_Islands"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1945-09-12",
+   "what": "Japan surrenders in Singapore, ending its occupation of Malaya; Thailand gives back the four northern Malay states",
+   "source": {
+    "title": "Japanese occupation of Malaya (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Malaya"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MYS-1141",
+      "MYS-1140",
+      "MYS-1144",
+      "MYS-1149"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Japanese occupation of Malaya (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Malaya"
+     },
+     "territory": "Unfederated Malay States",
+     "hatch": {
+      "by": "Thailand",
+      "since": "1943-10-18",
+      "note": "Handed by Japan to Thailand in October 1943, until the end of the war",
+      "source": {
+       "title": "Japanese occupation of Malaya (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Malaya"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "MYS-1137"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Japanese occupation of Malaya (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Malaya"
+     },
+     "territory": "Federated Malay States",
+     "hatch": {
+      "by": "Japan",
+      "since": "1941-12-28",
+      "note": "Occupied by Japan in the Malayan campaign of December 1941 to February 1942, until the surrender of September 1945",
+      "source": {
+       "title": "Japanese occupation of Malaya (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Malaya"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "MYS-1139"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Japanese occupation of Malaya (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Malaya"
+     },
+     "territory": "Straits Settlements",
+     "hatch": {
+      "by": "Japan",
+      "since": "1941-12-28",
+      "note": "Occupied by Japan in the Malayan campaign of December 1941 to February 1942, until the surrender of September 1945",
+      "source": {
+       "title": "Japanese occupation of Malaya (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Malaya"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "MYS-1148",
+      "MYS-1146",
+      "MYS-1147",
+      "MYS-4831",
+      "MYS-4832"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Japanese occupation of Malaya (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Malaya"
+     },
+     "territory": "Federated Malay States",
+     "hatch": {
+      "by": "Japan",
+      "since": "1942-02-15",
+      "note": "Occupied by Japan from the fall of Singapore on 15 February 1942 until the surrender of September 1945",
+      "source": {
+       "title": "Japanese occupation of Malaya (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Malaya"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "MYS-1143"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Japanese occupation of Malaya (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Malaya"
+     },
+     "territory": "Unfederated Malay States",
+     "hatch": {
+      "by": "Japan",
+      "since": "1942-02-15",
+      "note": "Occupied by Japan from the fall of Singapore on 15 February 1942 until the surrender of September 1945",
+      "source": {
+       "title": "Japanese occupation of Malaya (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Malaya"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "SGP",
+      "MYS-1145"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Japanese occupation of Singapore (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Singapore"
+     },
+     "territory": "Straits Settlements",
+     "hatch": {
+      "by": "Japan",
+      "since": "1942-02-15",
+      "note": "Occupied by Japan (as Syonan-to) from the fall of Singapore until September 1945",
+      "source": {
+       "title": "Japanese occupation of Singapore (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Singapore"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1945-09-10",
+   "what": "The Japanese forces in British Borneo surrender on Labuan",
+   "source": {
+    "title": "Japanese occupation of British Borneo (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_British_Borneo"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MYS-1187"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Japanese occupation of British Borneo (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_British_Borneo"
+     },
+     "territory": "Raj of Sarawak",
+     "hatch": {
+      "by": "Japan",
+      "since": "1941-12-24",
+      "note": "Occupied by Japan from the winter of 1941–42 until the surrender of September 1945",
+      "source": {
+       "title": "Japanese occupation of British Borneo (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_British_Borneo"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "BRN"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Japanese occupation of British Borneo (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_British_Borneo"
+     },
+     "territory": "Brunei",
+     "hatch": {
+      "by": "Japan",
+      "since": "1941-12-22",
+      "note": "Occupied by Japan from the winter of 1941–42 until the surrender of September 1945",
+      "source": {
+       "title": "Japanese occupation of British Borneo (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_British_Borneo"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "MYS-1186"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Japanese occupation of British Borneo (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_British_Borneo"
+     },
+     "territory": "North Borneo",
+     "hatch": {
+      "by": "Japan",
+      "since": "1942-01-19",
+      "note": "Occupied by Japan from the winter of 1941–42 until the surrender of September 1945",
+      "source": {
+       "title": "Japanese occupation of British Borneo (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_British_Borneo"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "MYS-4833"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Japanese occupation of British Borneo (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_British_Borneo"
+     },
+     "territory": "Straits Settlements",
+     "hatch": {
+      "by": "Japan",
+      "since": "1942-01-03",
+      "note": "Occupied by Japan from the winter of 1941–42 until the surrender of September 1945",
+      "source": {
+       "title": "Japanese occupation of British Borneo (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_British_Borneo"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1945-08-30",
+   "what": "British forces return to Hong Kong after Japan's surrender",
+   "source": {
+    "title": "Japanese occupation of Hong Kong (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Hong_Kong"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "HKG"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Japanese occupation of Hong Kong (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Hong_Kong"
+     },
+     "territory": "British Hong Kong",
+     "hatch": {
+      "by": "Japan",
+      "since": "1941-12-25",
+      "note": "Occupied by Japan from the surrender of the colony on Christmas Day 1941 until 30 August 1945",
+      "source": {
+       "title": "Japanese occupation of Hong Kong (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Hong_Kong"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1945-05-09",
+   "what": "The Channel Islands are liberated, the day after Germany's surrender",
+   "source": {
+    "title": "Liberation Day (Jersey and Guernsey) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Liberation_Day_(Jersey_and_Guernsey)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "GGY"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "German occupation of the Channel Islands (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/German_occupation_of_the_Channel_Islands"
+     },
+     "territory": "Guernsey",
+     "hatch": {
+      "by": "Germany",
+      "since": "1940-06-30",
+      "note": "Occupied by Germany from 30 June 1940 until 9 May 1945",
+      "source": {
+       "title": "German occupation of the Channel Islands (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/German_occupation_of_the_Channel_Islands"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "JEY"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "German occupation of the Channel Islands (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/German_occupation_of_the_Channel_Islands"
+     },
+     "territory": "Jersey",
+     "hatch": {
+      "by": "Germany",
+      "since": "1940-07-01",
+      "note": "Occupied by Germany from 1 July 1940 until 9 May 1945",
+      "source": {
+       "title": "German occupation of the Channel Islands (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/German_occupation_of_the_Channel_Islands"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1945-05-03",
+   "what": "British and Indian troops retake Rangoon; the Japanese army is driven out of most of Burma",
+   "source": {
+    "title": "Burma campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Burma_campaign"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "MMR"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Japanese occupation of Burma (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Burma"
+     },
+     "territory": "British Burma",
+     "hatch": {
+      "by": "Japan",
+      "since": "1942-05-20",
+      "note": "Occupied by Japan from 1942; a Japanese-backed State of Burma was declared in 1943. Rangoon was retaken in May 1945",
+      "source": {
+       "title": "Japanese occupation of Burma (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Burma"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-11-23",
+   "what": "American forces take Tarawa and Makin; the Gilbert Islands are free of Japan (except Banaba)",
+   "source": {
+    "title": "Battle of Tarawa (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Tarawa"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "gilbert-islands"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Japanese occupation of the Gilbert Islands (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Gilbert_Islands"
+     },
+     "territory": "Gilbert and Ellice Islands",
+     "hatch": {
+      "by": "Japan",
+      "since": "1942-09-15",
+      "note": "Occupied by Japan in 1942; the Americans retook Tarawa and Makin in November 1943, but Japan held Banaba until 1945",
+      "source": {
+       "title": "Japanese occupation of the Gilbert Islands (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Gilbert_Islands"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-10-18",
+   "what": "Japan hands Perlis, Kedah, Kelantan and Terengganu to Thailand",
+   "source": {
+    "title": "Japanese occupation of Malaya (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Malaya"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MYS-1141",
+      "MYS-1140",
+      "MYS-1144",
+      "MYS-1149"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Japanese occupation of Malaya (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Malaya"
+     },
+     "territory": "Unfederated Malay States",
+     "hatch": {
+      "by": "Japan",
+      "since": "1941-12-28",
+      "note": "Occupied by Japan in the Malayan campaign of December 1941 to February 1942, until the surrender of September 1945",
+      "source": {
+       "title": "Japanese occupation of Malaya (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Malaya"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-10-07",
+   "what": "The last Japanese troops leave the central Solomon Islands after the New Georgia campaign",
+   "source": {
+    "title": "New Georgia campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/New_Georgia_campaign"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "SLB-3507",
+      "SLB-3508",
+      "SLB-1264"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Solomon Islands campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Solomon_Islands_campaign"
+     },
+     "territory": "British Solomon Islands",
+     "hatch": {
+      "by": "Japan",
+      "since": "1942-05-03",
+      "note": "Occupied by Japan in 1942 and retaken in the Solomon Islands campaign of 1942–43 (Japan held the Shortland Islands until 1945)",
+      "source": {
+       "title": "Solomon Islands campaign (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Solomon_Islands_campaign"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-01-23",
+   "what": "The British Eighth Army takes Tripoli; all of Libya is in Allied hands",
+   "source": {
+    "title": "Western Desert campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Western_Desert_campaign"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "LBY-2974",
+      "LBY-2985",
+      "LBY-2970",
+      "LBY-2966",
+      "LBY-2978",
+      "LBY-2975",
+      "LBY-2973",
+      "LBY-2976",
+      "LBY-2964"
+     ],
+     "owner": "Italy",
+     "source": {
+      "title": "Italian Libya (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Italian_Libya"
+     },
+     "territory": "Italian Libya"
+    }
+   ]
+  },
+  {
+   "date": "1943-01-12",
+   "what": "Free French forces from Chad take the Fezzan",
+   "source": {
+    "title": "Fezzan campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Fezzan_campaign"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "LBY-2882",
+      "LBY-2967",
+      "LBY-5488",
+      "LBY-2971",
+      "LBY-2969",
+      "LBY-2968"
+     ],
+     "owner": "Italy",
+     "source": {
+      "title": "Italian Libya (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Italian_Libya"
+     },
+     "territory": "Italian Libya"
+    }
+   ]
+  },
+  {
+   "date": "1942-11-20",
+   "what": "After El Alamein, the British take Benghazi and Cyrenaica for good",
+   "source": {
+    "title": "Second Battle of El Alamein (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Second_Battle_of_El_Alamein"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "LBY-2987",
+      "LBY-2983",
+      "LBY-2986",
+      "LBY-2982",
+      "LBY-2981",
+      "LBY-2984"
+     ],
+     "owner": "Italy",
+     "source": {
+      "title": "Italian Libya (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Italian_Libya"
+     },
+     "territory": "Italian Libya"
+    },
+    {
+     "pieces": [
+      "LBY-2965"
+     ],
+     "owner": "Italy",
+     "source": {
+      "title": "Capture of Kufra (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Capture_of_Kufra"
+     },
+     "territory": "Italian Libya",
+     "hatch": {
+      "by": "France",
+      "since": "1941-03-01",
+      "note": "Taken by Free French forces from Chad under Leclerc on 1 March 1941; held by the Allies for the rest of the war",
+      "source": {
+       "title": "Capture of Kufra (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Capture_of_Kufra"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1942-09-15",
+   "what": "Japan garrisons Tarawa and the Gilbert Islands, and takes Banaba (Ocean Island)",
+   "source": {
+    "title": "Japanese occupation of the Gilbert Islands (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Gilbert_Islands"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "gilbert-islands"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Gilbert and Ellice Islands (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gilbert_and_Ellice_Islands"
+     },
+     "territory": "Gilbert and Ellice Islands"
+    }
+   ]
+  },
+  {
+   "date": "1942-05-20",
+   "what": "The British army completes its retreat from Burma to India; Japan holds Burma",
+   "source": {
+    "title": "Japanese conquest of Burma (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Japanese_conquest_of_Burma"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "MMR"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British rule in Burma (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_rule_in_Burma"
+     },
+     "territory": "British Burma"
+    }
+   ]
+  },
+  {
+   "date": "1942-05-03",
+   "what": "Japan lands on Tulagi and takes the western and central Solomon Islands",
+   "source": {
+    "title": "Solomon Islands campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Solomon_Islands_campaign"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "SLB-3507",
+      "SLB-3508",
+      "SLB-1264"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British Solomon Islands (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Solomon_Islands"
+     },
+     "territory": "British Solomon Islands"
+    }
+   ]
+  },
+  {
+   "date": "1942-03-23",
+   "what": "Japan occupies the Andaman and Nicobar Islands",
+   "source": {
+    "title": "Japanese occupation of the Andaman and Nicobar Islands (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Andaman_and_Nicobar_Islands"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "IND-2474"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British Raj (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Raj"
+     },
+     "territory": "British Raj"
+    }
+   ]
+  },
+  {
+   "date": "1942-02-15",
+   "what": "Singapore surrenders to Japan; all of Malaya is occupied",
+   "source": {
+    "title": "Fall of Singapore (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Fall_of_Singapore"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MYS-1148",
+      "MYS-1146",
+      "MYS-1147",
+      "MYS-4831",
+      "MYS-4832"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Federated Malay States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Federated_Malay_States"
+     },
+     "territory": "Federated Malay States"
+    },
+    {
+     "pieces": [
+      "MYS-1143"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Unfederated Malay States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Unfederated_Malay_States"
+     },
+     "territory": "Unfederated Malay States"
+    },
+    {
+     "pieces": [
+      "SGP",
+      "MYS-1145"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Straits Settlements (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Straits_Settlements"
+     },
+     "territory": "Straits Settlements"
+    }
+   ]
+  },
+  {
+   "date": "1942-01-29",
+   "what": "Rommel retakes Benghazi; Cyrenaica is back in Axis hands",
+   "source": {
+    "title": "Western Desert campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Western_Desert_campaign"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "LBY-2987",
+      "LBY-2983",
+      "LBY-2986",
+      "LBY-2982",
+      "LBY-2981",
+      "LBY-2984"
+     ],
+     "owner": "Italy",
+     "source": {
+      "title": "Operation Crusader (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Operation_Crusader"
+     },
+     "territory": "Italian Libya",
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1941-12-24",
+      "note": "Taken by British forces in Operation Crusader in December 1941, lost again in January 1942",
+      "source": {
+       "title": "Operation Crusader (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Operation_Crusader"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1942-01-19",
+   "what": "Japan takes Sandakan and the rest of North Borneo",
+   "source": {
+    "title": "Japanese occupation of British Borneo (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_British_Borneo"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "MYS-1186"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "North Borneo (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/North_Borneo"
+     },
+     "territory": "North Borneo"
+    }
+   ]
+  },
+  {
+   "date": "1942-01-03",
+   "what": "Japan occupies Labuan",
+   "source": {
+    "title": "Japanese occupation of British Borneo (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_British_Borneo"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "MYS-4833"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Straits Settlements (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Straits_Settlements"
+     },
+     "territory": "Straits Settlements"
+    }
+   ]
+  },
+  {
+   "date": "1941-12-28",
+   "what": "By the end of December 1941 Japan holds northern Malaya: Kedah, Perlis, Penang, Kelantan, Terengganu and most of Perak",
+   "source": {
+    "title": "Malayan campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Malayan_campaign"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "MYS-1141",
+      "MYS-1140",
+      "MYS-1144",
+      "MYS-1149"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Unfederated Malay States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Unfederated_Malay_States"
+     },
+     "territory": "Unfederated Malay States"
+    },
+    {
+     "pieces": [
+      "MYS-1137"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Federated Malay States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Federated_Malay_States"
+     },
+     "territory": "Federated Malay States"
+    },
+    {
+     "pieces": [
+      "MYS-1139"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Straits Settlements (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Straits_Settlements"
+     },
+     "territory": "Straits Settlements"
+    }
+   ]
+  },
+  {
+   "date": "1941-12-25",
+   "what": "Hong Kong surrenders to Japan on Christmas Day",
+   "source": {
+    "title": "Battle of Hong Kong (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Hong_Kong"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "HKG"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British Hong Kong (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Hong_Kong"
+     },
+     "territory": "British Hong Kong"
+    }
+   ]
+  },
+  {
+   "date": "1941-12-24",
+   "what": "Japan takes Kuching, the capital of Sarawak",
+   "source": {
+    "title": "Japanese occupation of British Borneo (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_British_Borneo"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "MYS-1187"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Raj of Sarawak (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Raj_of_Sarawak"
+     },
+     "territory": "Raj of Sarawak"
+    }
+   ]
+  },
+  {
+   "date": "1941-12-24",
+   "what": "British troops take Benghazi in Operation Crusader",
+   "source": {
+    "title": "Operation Crusader (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Operation_Crusader"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "LBY-2987",
+      "LBY-2983",
+      "LBY-2986",
+      "LBY-2982",
+      "LBY-2981",
+      "LBY-2984"
+     ],
+     "owner": "Italy",
+     "source": {
+      "title": "Italian Libya (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Italian_Libya"
+     },
+     "territory": "Italian Libya"
+    }
+   ]
+  },
+  {
+   "date": "1941-12-22",
+   "what": "Japan occupies Brunei",
+   "source": {
+    "title": "Japanese occupation of British Borneo (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_British_Borneo"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "BRN"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Brunei (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Brunei"
+     },
+     "territory": "Brunei"
+    }
+   ]
+  },
+  {
+   "date": "1941-05-05",
+   "what": "Emperor Haile Selassie returns to Addis Ababa; Ethiopia is free of Italian rule",
+   "source": {
+    "title": "East African campaign (World War II) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/East_African_campaign_(World_War_II)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "ETH"
+     ],
+     "owner": "Ethiopia",
+     "source": {
+      "title": "Italian East Africa (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Italian_East_Africa"
+     },
+     "hatch": {
+      "by": "Italy",
+      "since": "1936-05-05",
+      "note": "Occupied by Italy from the fall of Addis Ababa in May 1936 and ruled as part of Italian East Africa, until 1941",
+      "source": {
+       "title": "Italian East Africa (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Italian_East_Africa"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-04-01",
+   "what": "British and Indian troops take Asmara; Italian Eritrea comes under British military rule",
+   "source": {
+    "title": "East African campaign (World War II) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/East_African_campaign_(World_War_II)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ERI"
+     ],
+     "owner": "Italy",
+     "source": {
+      "title": "Italian Eritrea (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Italian_Eritrea"
+     },
+     "territory": "Italian Eritrea"
+    }
+   ]
+  },
+  {
+   "date": "1941-03-16",
+   "what": "British forces land at Berbera and retake British Somaliland",
+   "source": {
+    "title": "British Somaliland campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/British_Somaliland_campaign"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SOL"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Italian conquest of British Somaliland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Italian_conquest_of_British_Somaliland"
+     },
+     "territory": "British Somaliland",
+     "hatch": {
+      "by": "Italy",
+      "since": "1940-08-19",
+      "note": "Occupied by Italy from August 1940 until March 1941",
+      "source": {
+       "title": "Italian conquest of British Somaliland (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Italian_conquest_of_British_Somaliland"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-03-01",
+   "what": "Free French forces from Chad take the Kufra oases from Italy",
+   "source": {
+    "title": "Capture of Kufra (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Capture_of_Kufra"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "LBY-2965"
+     ],
+     "owner": "Italy",
+     "source": {
+      "title": "Italian Libya (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Italian_Libya"
+     },
+     "territory": "Italian Libya"
+    }
+   ]
+  },
+  {
+   "date": "1941-02-25",
+   "what": "British troops take Mogadishu; Italian Somaliland comes under British military rule",
+   "source": {
+    "title": "East African campaign (World War II) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/East_African_campaign_(World_War_II)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SOM"
+     ],
+     "owner": "Italy",
+     "source": {
+      "title": "Italian Somaliland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Italian_Somaliland"
+     },
+     "territory": "Italian Somaliland"
+    }
+   ]
+  },
+  {
+   "date": "1940-08-19",
+   "what": "Italy conquers British Somaliland",
+   "source": {
+    "title": "Italian conquest of British Somaliland (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Italian_conquest_of_British_Somaliland"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SOL"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British Somaliland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Somaliland"
+     },
+     "territory": "British Somaliland"
+    }
+   ]
+  },
+  {
+   "date": "1940-07-01",
+   "what": "German forces occupy Jersey",
+   "source": {
+    "title": "German occupation of the Channel Islands (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/German_occupation_of_the_Channel_Islands"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "JEY"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Jersey (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Jersey"
+     },
+     "territory": "Jersey"
+    }
+   ]
+  },
+  {
+   "date": "1940-06-30",
+   "what": "German forces occupy Guernsey",
+   "source": {
+    "title": "German occupation of the Channel Islands (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/German_occupation_of_the_Channel_Islands"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "GGY"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Bailiwick of Guernsey (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bailiwick_of_Guernsey"
+     },
+     "territory": "Guernsey"
     }
    ]
   }
