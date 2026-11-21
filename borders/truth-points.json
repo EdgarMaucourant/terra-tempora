@@ -10451,6 +10451,84 @@
    ],
    "realm": "Khedivate of Egypt",
    "why": "British occupation from September 1882"
+  },
+  {
+   "place": "Nicosia (Ottoman)",
+   "lonLat": [
+    33.36,
+    35.17
+   ],
+   "years": [
+    1870,
+    1877
+   ],
+   "realm": "Ottoman Empire",
+   "why": "British administration from July 1878"
+  },
+  {
+   "place": "Levuka (Kingdom of Fiji)",
+   "lonLat": [
+    178.83,
+    -17.68
+   ],
+   "years": [
+    1871,
+    1873
+   ],
+   "realm": "Kingdom of Fiji",
+   "why": "Ceded to Britain in October 1874"
+  },
+  {
+   "place": "Kalat (Khanate)",
+   "lonLat": [
+    66.58,
+    29.03
+   ],
+   "years": [
+    1870,
+    1875
+   ],
+   "realm": "Khanate of Kalat",
+   "why": "British protection from the Treaty of Jacobabad, 1876"
+  },
+  {
+   "place": "El Fasher (Darfur)",
+   "lonLat": [
+    25.35,
+    13.63
+   ],
+   "years": [
+    1870,
+    1873
+   ],
+   "realm": "Sultanate of Darfur",
+   "why": "Annexed by Egypt in November 1874"
+  },
+  {
+   "place": "Ipoh (Perak)",
+   "lonLat": [
+    101.08,
+    4.6
+   ],
+   "years": [
+    1870,
+    1873
+   ],
+   "realm": "Perak",
+   "why": "British Resident from the Pangkor Treaty, January 1874"
+  },
+  {
+   "place": "Mukalla (before the protectorate)",
+   "lonLat": [
+    49.12,
+    14.55
+   ],
+   "years": [
+    1880,
+    1887
+   ],
+   "realm": null,
+   "why": "Qu’aiti treaty with Britain in 1888"
   }
  ]
 }
