@@ -1486,13 +1486,48 @@
   "wikipedia": "Iraq",
   "wikidata": "Q796",
   "fr": "Irak",
-  "es": "Irak"
+  "es": "Irak",
+  "periods": [
+   {
+    "from": "1932-10-03",
+    "name": "Kingdom of Iraq",
+    "wikipedia": "Kingdom of Iraq",
+    "fr": "Royaume d’Irak",
+    "es": "Reino de Irak",
+    "note": "Independent from 3 October 1932"
+   },
+   {
+    "from": "1958-07-14",
+    "name": "Iraq",
+    "wikipedia": "Iraq",
+    "note": "A republic from the revolution of 14 July 1958"
+   }
+  ]
  },
  "Ireland": {
   "wikipedia": "Republic of Ireland",
   "wikidata": "Q27",
   "fr": "Irlande",
-  "es": "Irlanda"
+  "es": "Irlanda",
+  "periods": [
+   {
+    "from": "1922-12-06",
+    "name": "Irish Free State",
+    "wikipedia": "Irish Free State",
+    "fr": "État libre d’Irlande",
+    "es": "Estado Libre Irlandés",
+    "label": "Irish Free State",
+    "labelFr": "État libre d’Irlande",
+    "labelEs": "Estado Libre Irlandés",
+    "note": "A dominion of the British Commonwealth"
+   },
+   {
+    "from": "1937-12-29",
+    "name": "Ireland",
+    "wikipedia": "Republic of Ireland",
+    "note": "The constitution of 1937 names the state Ireland (Éire)"
+   }
+  ]
  },
  "Isle of Man": {
   "wikipedia": "Isle of Man",
@@ -3719,5 +3754,17 @@
   "wikidata": "Q39760",
   "fr": "Bande de Gaza",
   "es": "Franja de Gaza"
+ },
+ "Mandatory Iraq": {
+  "wikipedia": "Mandatory Iraq",
+  "wikidata": "Q146720",
+  "fr": "Irak mandataire",
+  "es": "Irak bajo mandato británico"
+ },
+ "Weihaiwei": {
+  "wikipedia": "Weihaiwei under British rule",
+  "wikidata": "Q15939896",
+  "fr": "Weihaiwei",
+  "es": "Weihaiwei"
  }
 }

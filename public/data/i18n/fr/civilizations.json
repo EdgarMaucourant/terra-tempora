@@ -23,11 +23,11 @@
  "australia": {
   "name": "Australie"
  },
- "french-west-africa": {
-  "name": "Afrique-Occidentale française"
- },
  "british-raj": {
   "name": "Raj britannique"
+ },
+ "french-west-africa": {
+  "name": "Afrique-Occidentale française"
  },
  "india": {
   "name": "Inde"
@@ -280,6 +280,9 @@
  },
  "iraq": {
   "name": "Irak"
+ },
+ "mandatory-iraq": {
+  "name": "Irak mandataire"
  },
  "french-cameroon": {
   "name": "Cameroun français"
