@@ -8066,6 +8066,181 @@
    "summary": "Approved by referendum in July, Éamon de Valera’s constitution comes into force on 29 December 1937. The Irish Free State becomes Ireland (Éire), with an elected President in place of the King’s Governor-General; the first, Douglas Hyde, takes office in 1938. Ireland stays neutral in the Second World War and leaves the Commonwealth as a republic in 1949.",
    "wikipedia": "Constitution_of_Ireland",
    "search": "Constitution of Ireland Bunreacht na hÉireann 29 December 1937 referendum de Valera Éire Irish Free State President of Ireland Douglas Hyde"
+  },
+  {
+   "id": "san-remo-conference-1920",
+   "kind": "empire",
+   "year": 1920,
+   "title": "The San Remo conference shares out the Middle East mandates, April 1920",
+   "place": "Jerusalem",
+   "lonLat": [
+    35.23,
+    31.8
+   ],
+   "civs": [
+    "mandatory-palestine",
+    "mandatory-iraq",
+    "mandate-for-syria-and-the-lebanon",
+    "united-kingdom",
+    "ottoman-empire"
+   ],
+   "summary": "Meeting at San Remo in Italy on 19–26 April 1920, the Allied powers decide how to divide the Ottoman Empire’s Arab lands. Britain receives the mandates for Mesopotamia (Iraq) and Palestine, with the promise of the Balfour Declaration written in, and France those for Syria and Lebanon. The borders drawn here shape the modern Middle East.",
+   "wikipedia": "San_Remo_conference",
+   "search": "San Remo conference April 1920 mandates Palestine Mesopotamia Iraq Syria Lebanon Balfour Declaration Britain France League of Nations Ottoman Empire partition"
+  },
+  {
+   "id": "iraqi-revolt-1920",
+   "kind": "war",
+   "year": 1920,
+   "title": "The Iraqi revolt against British rule, June – October 1920",
+   "place": "Najaf",
+   "lonLat": [
+    44.32,
+    32.0
+   ],
+   "civs": [
+    "mandatory-iraq",
+    "united-kingdom"
+   ],
+   "summary": "News of the British mandate sets off a revolt in the summer of 1920. Shia and Sunni leaders and the tribes of the middle Euphrates rise from June, cutting railways and besieging British garrisons. Britain needs reinforcements from India and aircraft to crush it by October, at a cost of thousands of lives, and decides to rule Iraq through an Arab king instead.",
+   "wikipedia": "Iraqi_revolt_of_1920",
+   "search": "Iraqi revolt 1920 Great Iraqi Revolution British mandate Mesopotamia Rumaitha Najaf Karbala tribes Shia Sunni RAF Cairo Conference 1921 Faisal"
+  },
+  {
+   "id": "emirate-of-transjordan-1921",
+   "kind": "empire",
+   "year": 1921,
+   "title": "Abdullah founds the Emirate of Transjordan, April 1921",
+   "place": "Amman",
+   "lonLat": [
+    35.93,
+    31.95
+   ],
+   "civs": [
+    "emirate-of-transjordan",
+    "mandatory-palestine",
+    "united-kingdom"
+   ],
+   "summary": "After the Cairo Conference, Winston Churchill agrees with Abdullah, son of the Sharif of Mecca, that he will rule the lands east of the Jordan. The Emirate of Transjordan is set up on 11 April 1921 with Amman as its capital, under British protection and inside the Palestine mandate, but closed to the Jewish national home. It becomes independent as Jordan in 1946.",
+   "wikipedia": "Emirate_of_Transjordan",
+   "search": "Emirate of Transjordan founded 11 April 1921 Abdullah bin Hussein Amman Cairo Conference Churchill British protection mandate Palestine excluded Jewish national home"
+  },
+  {
+   "id": "faisal-king-of-iraq-1921",
+   "kind": "empire",
+   "year": 1921,
+   "title": "Faisal is crowned King of Iraq, 23 August 1921",
+   "place": "Baghdad",
+   "lonLat": [
+    44.4,
+    33.34
+   ],
+   "civs": [
+    "mandatory-iraq",
+    "united-kingdom"
+   ],
+   "summary": "Driven out of Syria by the French in 1920, Faisal, son of the Sharif of Mecca, is chosen by Britain at the Cairo Conference to rule Mesopotamia. After a managed referendum he is crowned King of Iraq in Baghdad on 23 August 1921. The kingdom stays under the British mandate, bound by the treaty of 1922, until independence in 1932.",
+   "wikipedia": "Faisal_I_of_Iraq",
+   "search": "Faisal I crowned King of Iraq 23 August 1921 Baghdad Cairo Conference referendum British mandate Hashemite Kingdom of Iraq Gertrude Bell"
+  },
+  {
+   "id": "anglo-irish-treaty-1921",
+   "kind": "empire",
+   "year": 1921,
+   "title": "The Anglo-Irish Treaty, 6 December 1921",
+   "place": "Dublin",
+   "lonLat": [
+    -6.27,
+    53.34
+   ],
+   "civs": [
+    "ireland",
+    "united-kingdom"
+   ],
+   "summary": "After two and a half years of the Irish War of Independence, Irish delegates led by Arthur Griffith and Michael Collins sign a treaty with Lloyd George’s government in London on 6 December 1921. Twenty-six counties are to become the Irish Free State, a dominion like Canada, with an oath to the King, while Northern Ireland may stay in the United Kingdom. The Dáil approves it narrowly in January 1922.",
+   "wikipedia": "Anglo-Irish_Treaty",
+   "search": "Anglo-Irish Treaty 6 December 1921 Michael Collins Arthur Griffith Lloyd George Irish War of Independence dominion Irish Free State oath partition Northern Ireland Dáil vote"
+  },
+  {
+   "id": "egypt-independence-1922",
+   "kind": "empire",
+   "year": 1922,
+   "title": "Britain declares Egypt independent, 28 February 1922",
+   "place": "Cairo",
+   "lonLat": [
+    31.25,
+    30.05
+   ],
+   "civs": [
+    "egypt",
+    "sultanate-of-egypt",
+    "united-kingdom"
+   ],
+   "summary": "After the revolution of 1919 and years of unrest led by Saad Zaghloul’s Wafd party, Britain ends its protectorate on 28 February 1922 and declares Egypt an independent state. Sultan Fuad becomes King Fuad I. But Britain keeps four “reserved points” – the Suez Canal route, defence, foreign interests and Sudan – and its troops stay until the treaty of 1936.",
+   "wikipedia": "Unilateral_Declaration_of_Egyptian_Independence",
+   "search": "Unilateral Declaration of Egyptian Independence 28 February 1922 end of British protectorate 1919 revolution Saad Zaghloul Wafd King Fuad I reserved points Suez Canal Sudan"
+  },
+  {
+   "id": "irish-free-state-civil-war-1922",
+   "kind": "war",
+   "year": 1922,
+   "to": 1923,
+   "title": "The Irish Free State and the Irish Civil War, 1922 – 1923",
+   "place": "Dublin",
+   "lonLat": [
+    -6.25,
+    53.36
+   ],
+   "civs": [
+    "ireland",
+    "united-kingdom"
+   ],
+   "summary": "The Treaty splits the Irish republicans. Civil war breaks out in June 1922 when the pro-Treaty government shells anti-Treaty fighters in Dublin’s Four Courts; Michael Collins is killed in an ambush in August. The Irish Free State is formally founded on 6 December 1922, and Northern Ireland opts out the next day. The anti-Treaty side gives up in May 1923.",
+   "wikipedia": "Irish_Civil_War",
+   "search": "Irish Civil War June 1922 May 1923 Four Courts Michael Collins killed Béal na Bláth Irish Free State 6 December 1922 anti-Treaty IRA de Valera Northern Ireland opts out"
+  },
+  {
+   "id": "jubaland-to-italy-1925",
+   "kind": "empire",
+   "year": 1925,
+   "title": "Britain hands Jubaland to Italy, 29 June 1925",
+   "place": "Kismayo",
+   "lonLat": [
+    42.54,
+    -0.36
+   ],
+   "civs": [
+    "trans-juba",
+    "kenya-colony",
+    "italy",
+    "united-kingdom"
+   ],
+   "summary": "Rewarding Italy for joining the Allies in 1915, Britain agrees in 1924 to give up the north-eastern part of Kenya Colony west of the Juba river. Italy takes over on 29 June 1925 and rules it as the colony of Trans-Juba (Oltre Giuba), with Kismayo as its capital, before joining it to Italian Somaliland in June 1926. It is today’s Jubaland region of Somalia.",
+   "wikipedia": "Trans-Juba",
+   "search": "Jubaland ceded to Italy 1924 treaty 29 June 1925 Trans-Juba Oltre Giuba Kismayo Treaty of London 1915 reward Kenya Colony Italian Somaliland 1926"
+  },
+  {
+   "id": "balfour-declaration-1926",
+   "kind": "empire",
+   "year": 1926,
+   "title": "The Balfour Declaration on the dominions, 18 November 1926",
+   "place": "London",
+   "lonLat": [
+    -0.14,
+    51.5
+   ],
+   "civs": [
+    "united-kingdom",
+    "canada",
+    "australia",
+    "new-zealand",
+    "south-africa",
+    "ireland",
+    "dominion-of-newfoundland"
+   ],
+   "summary": "At the Imperial Conference in London, a report drafted by Lord Balfour and adopted on 18 November 1926 declares Britain and the dominions to be “autonomous communities within the British Empire, equal in status”, united by allegiance to the Crown and freely associated as the British Commonwealth of Nations. The Statute of Westminster puts it into law in 1931.",
+   "wikipedia": "Balfour_Declaration_of_1926",
+   "search": "Balfour Declaration 1926 Imperial Conference dominions autonomous communities equal in status British Commonwealth of Nations King-Byng affair Statute of Westminster 1931"
   }
  ]
 }
