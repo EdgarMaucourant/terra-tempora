@@ -7956,6 +7956,49 @@
    ]
   },
   {
+   "date": "1890-04-30",
+   "what": "The Chin-Lushai Expedition ends: the Chin Hills and the Lushai Hills come under British rule",
+   "source": {
+    "title": "Chin-Lushai Expedition (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Chin-Lushai_Expedition"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "MMR-3274",
+      "IND-3300"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Chin-Lushai Expedition (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chin-Lushai_Expedition"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1890-04-29",
+   "what": "British columns bring the Kachin hills under the rule of British Burma",
+   "source": {
+    "title": "British rule in Burma (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/British_rule_in_Burma"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "MMR-3296"
+     ],
+     "owner": null,
+     "source": {
+      "title": "British rule in Burma (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_rule_in_Burma"
+     }
+    }
+   ]
+  },
+  {
    "date": "1889-09-21",
    "what": "Britain declares a protectorate over the Shire Highlands, the start of British Central Africa",
    "source": {
@@ -8114,7 +8157,7 @@
   },
   {
    "date": "1887-02-01",
-   "what": "British columns occupy the Shan states; the Kachin and Chin hills follow by 1890",
+   "what": "British columns occupy the Shan states",
    "source": {
     "title": "British rule in Burma (Wikipedia)",
     "url": "https://en.wikipedia.org/wiki/British_rule_in_Burma"
@@ -8124,9 +8167,7 @@
     {
      "pieces": [
       "MMR-3277",
-      "MMR-2473",
-      "MMR-3296",
-      "MMR-3274"
+      "MMR-2473"
      ],
      "owner": null,
      "source": {
