@@ -25,7 +25,7 @@
     "gilbert-islands",
     "IRL"
    ],
-   "from": 1920,
+   "from": 1910,
    "why": "The United Kingdom with the Crown Dependencies (Guernsey, Jersey, the Isle of Man), its overseas territories and the Chagos Archipelago, whose land has not changed hands since 1965, and Ireland (the Irish Free State until 1937)"
   },
   {
@@ -45,7 +45,7 @@
     "SYC",
     "weihaiwei"
    ],
-   "from": 1920,
+   "from": 1910,
    "why": "Hong Kong, Brunei, Southern Rhodesia and the colonies in the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence or handover; Weihaiwei, leased from China until 1930"
   },
   {
@@ -67,7 +67,7 @@
     "BHS",
     "GRD"
    ],
-   "from": 1920,
+   "from": 1910,
    "why": "The Gulf protected states, South Arabia with all of Yemen (North Yemen until 1990), and the colonies and protectorates in Africa, the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence"
   },
   {
@@ -90,9 +90,10 @@
     "SOL",
     "SOM",
     "JAM",
-    "TTO"
+    "TTO",
+    "dervish-nugaal"
    ],
-   "from": 1920,
+   "from": 1910,
    "why": "The colonies, protectorates and trust territories Britain held in 1960 in Africa, Asia, the Mediterranean and the Caribbean, with today's borders, until their independence, with Malaya and Somalia around them"
   },
   {
@@ -106,7 +107,7 @@
     "ERI",
     "ETH"
    ],
-   "from": 1920,
+   "from": 1910,
    "why": "The Gold Coast and British Togoland (Ghana), Anglo-Egyptian Sudan and Eritrea, which Britain ruled or ran in the 1950s, with today's borders, and Ethiopia around Eritrea. The Haud, run by Britain inside Ethiopia until 1955, is not drawn"
   },
   {
@@ -153,7 +154,7 @@
     "hyd-karnataka",
     "bhadrachalam"
    ],
-   "from": 1920,
+   "from": 1910,
    "why": "British India (with the princely states, drawn as part of it), Burma and Ceylon, with today's borders, from British rule to today, and Newfoundland until it joined Canada. French and Portuguese India stay with their own families"
   },
   {
@@ -173,7 +174,7 @@
     "IRQ",
     "EGY"
    ],
-   "from": 1920,
+   "from": 1910,
    "why": "Mandatory Palestine and Transjordan, and what became of them: Israel, the West Bank, the Gaza Strip, Jordan, and the Sinai occupied by Israel; Iraq, a British mandate until 1932, and Kuwait, occupied by Iraq in 1990-91; Egypt, a British protectorate until 1922 and part of the United Arab Republic in 1958-61"
   },
   {
@@ -4894,6 +4895,61 @@
    ]
   },
   {
+   "date": "1921-01-29",
+   "what": "British troops leave Hodeidah, which passes to the Idrisi Emirate of Asir",
+   "source": {
+    "title": "Hodeidah (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Hodeidah"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "YEM-151"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Hodeidah (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hodeidah"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1918-12-14",
+      "note": "Occupied by British and Indian troops from 14 December 1918 until January 1921",
+      "source": {
+       "title": "Hodeidah (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Hodeidah"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1920-07-23",
+   "what": "The East Africa Protectorate becomes the Kenya Colony and Protectorate",
+   "source": {
+    "title": "Kenya Colony (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kenya_Colony"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "KEN",
+      "SOM-2645",
+      "SOM-2315",
+      "SOM-2314"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "East Africa Protectorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/East_Africa_Protectorate"
+     },
+     "territory": "East Africa Protectorate"
+    }
+   ]
+  },
+  {
    "date": "1920-07-01",
    "what": "A British civil administration under Herbert Samuel replaces military rule in Palestine; the mandate also covers the lands east of the Jordan",
    "source": {
@@ -4902,33 +4958,6 @@
    },
    "confidence": "exact",
    "before": [
-    {
-     "pieces": [
-      "ISR-3053",
-      "ISR-3054",
-      "ISR-3055",
-      "ISR-3056",
-      "ISR-3057",
-      "ISR-3058",
-      "WEB+00?",
-      "east-jerusalem",
-      "GAZ+00?"
-     ],
-     "owner": "Ottoman Empire",
-     "source": {
-      "title": "Occupied Enemy Territory Administration (Wikipedia)",
-      "url": "https://en.wikipedia.org/wiki/Occupied_Enemy_Territory_Administration"
-     },
-     "hatch": {
-      "by": "United Kingdom",
-      "since": "1917-12-09",
-      "note": "Taken from the Ottoman Empire by British forces in 1917–18 and run as Occupied Enemy Territory, until the civil administration of July 1920",
-      "source": {
-       "title": "Occupied Enemy Territory Administration (Wikipedia)",
-       "url": "https://en.wikipedia.org/wiki/Occupied_Enemy_Territory_Administration"
-      }
-     }
-    },
     {
      "pieces": [
       "JOR-854",
@@ -4947,6 +4976,123 @@
       "title": "Arab Kingdom of Syria (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Arab_Kingdom_of_Syria"
      }
+    },
+    {
+     "pieces": [
+      "ISR-3053"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Occupied Enemy Territory Administration (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Occupied_Enemy_Territory_Administration"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1917-10-31",
+      "note": "Taken from the Ottoman Empire by British forces (Beersheba, 31 October 1917) and run as Occupied Enemy Territory until July 1920",
+      "source": {
+       "title": "Occupied Enemy Territory Administration (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Occupied_Enemy_Territory_Administration"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "GAZ+00?"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Occupied Enemy Territory Administration (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Occupied_Enemy_Territory_Administration"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1917-11-07",
+      "note": "Taken from the Ottoman Empire by British forces (Gaza, 7 November 1917) and run as Occupied Enemy Territory until July 1920",
+      "source": {
+       "title": "Occupied Enemy Territory Administration (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Occupied_Enemy_Territory_Administration"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ISR-3057",
+      "ISR-3055"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Occupied Enemy Territory Administration (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Occupied_Enemy_Territory_Administration"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1917-11-16",
+      "note": "Taken from the Ottoman Empire by British forces (Jaffa, 16 November 1917) and run as Occupied Enemy Territory until July 1920",
+      "source": {
+       "title": "Occupied Enemy Territory Administration (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Occupied_Enemy_Territory_Administration"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ISR-3058",
+      "east-jerusalem"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Occupied Enemy Territory Administration (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Occupied_Enemy_Territory_Administration"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1917-12-09",
+      "note": "Taken from the Ottoman Empire by British forces (Jerusalem, 9 December 1917) and run as Occupied Enemy Territory until July 1920",
+      "source": {
+       "title": "Occupied Enemy Territory Administration (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Occupied_Enemy_Territory_Administration"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "WEB+00?"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Occupied Enemy Territory Administration (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Occupied_Enemy_Territory_Administration"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1918-09-20",
+      "note": "Taken from the Ottoman Empire by British forces at the battle of Megiddo (Nablus, 20 September 1918); the front had run north of Jerusalem since December 1917",
+      "source": {
+       "title": "Occupied Enemy Territory Administration (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Occupied_Enemy_Territory_Administration"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ISR-3054",
+      "ISR-3056"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Occupied Enemy Territory Administration (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Occupied_Enemy_Territory_Administration"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1918-09-23",
+      "note": "Taken from the Ottoman Empire by British forces after Megiddo (Haifa and Acre, 23 September 1918) and run as Occupied Enemy Territory until July 1920",
+      "source": {
+       "title": "Occupied Enemy Territory Administration (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Occupied_Enemy_Territory_Administration"
+      }
+     }
     }
    ]
   },
@@ -4961,7 +5107,7 @@
    "before": [
     {
      "pieces": [
-      "IRQ"
+      "IRQ-3222"
      ],
      "owner": "Ottoman Empire",
      "source": {
@@ -4970,12 +5116,140 @@
      },
      "hatch": {
       "by": "United Kingdom",
-      "since": "1918-10-30",
-      "note": "Taken from the Ottoman Empire by British and Indian forces between 1914 and November 1918 (Mosul), until the mandate",
+      "since": "1914-11-22",
+      "note": "Taken from the Ottoman Empire by British and Indian forces (Basra, 22 November 1914), until the mandate",
       "source": {
        "title": "Mesopotamian campaign (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Mesopotamian_campaign"
       }
+     }
+    },
+    {
+     "pieces": [
+      "IRQ-3226"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Mesopotamian campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mesopotamian_campaign"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1915-06-03",
+      "note": "Taken from the Ottoman Empire by British and Indian forces (Amarah, 3 June 1915), until the mandate",
+      "source": {
+       "title": "Mesopotamian campaign (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Mesopotamian_campaign"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "IRQ-3225"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Mesopotamian campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mesopotamian_campaign"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1915-07-24",
+      "note": "Taken from the Ottoman Empire by British and Indian forces (Nasiriyah, 24 July 1915), until the mandate",
+      "source": {
+       "title": "Mesopotamian campaign (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Mesopotamian_campaign"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "IRQ-3227"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Mesopotamian campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mesopotamian_campaign"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1917-02-24",
+      "note": "Taken back from the Ottoman Empire by British and Indian forces (Kut, 24 February 1917), until the mandate",
+      "source": {
+       "title": "Mesopotamian campaign (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Mesopotamian_campaign"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "IRQ-3063",
+      "IRQ-3472",
+      "IRQ-3062",
+      "IRQ-3061",
+      "IRQ-3224",
+      "IRQ-3223",
+      "IRQ-3243",
+      "IRQ-3471",
+      "IRQ-3052"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Mesopotamian campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mesopotamian_campaign"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1917-03-11",
+      "note": "Taken from the Ottoman Empire by British and Indian forces (Baghdad, 11 March 1917; Ramadi and Tikrit later in 1917), until the mandate",
+      "source": {
+       "title": "Mesopotamian campaign (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Mesopotamian_campaign"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "IRQ-3051",
+      "IRQ-3046",
+      "IRQ-3050",
+      "IRQ-3049",
+      "IRQ-3242"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Mesopotamian campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mesopotamian_campaign"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1918-11-01",
+      "note": "Taken from the Ottoman Empire by British forces at the end of the war (Kirkuk, October 1918; Mosul, November 1918), until the mandate",
+      "source": {
+       "title": "Mesopotamian campaign (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Mesopotamian_campaign"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1920-02-09",
+   "what": "British air and ground forces take Taleh, the Dervish capital: the Dervish State in the Somaliland interior falls",
+   "source": {
+    "title": "Somaliland campaign (1920) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Somaliland_campaign_(1920)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "dervish-nugaal"
+     ],
+     "owner": "Dervish State",
+     "source": {
+      "title": "Dervish movement (Somali) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Dervish_movement_(Somali)"
      }
     }
    ]
@@ -4991,7 +5265,31 @@
    "before": [
     {
      "pieces": [
-      "TZA"
+      "TZA-3335",
+      "TZA-5587",
+      "TZA-3363",
+      "TZA-5584",
+      "TZA-3336",
+      "TZA-3360",
+      "TZA-3394",
+      "TZA-3391",
+      "TZA-3393",
+      "TZA-3395",
+      "TZA-3382",
+      "TZA-3378",
+      "TZA-3379",
+      "TZA-3385",
+      "TZA-3392",
+      "TZA-3390",
+      "TZA-3359",
+      "TZA-3386",
+      "TZA-3357",
+      "TZA-5585",
+      "TZA-5586",
+      "TZA-3358",
+      "TZA-3387",
+      "TZA-3388",
+      "TZA-3389"
      ],
      "owner": "Germany",
      "source": {
@@ -5002,7 +5300,7 @@
      "hatch": {
       "by": "United Kingdom",
       "since": "1917-11-25",
-      "note": "Conquered by British, Indian, South African and Belgian forces in the East African campaign, until the Treaty of Versailles",
+      "note": "Conquered by British, Indian, South African and Belgian forces in the East African campaign (Dar es Salaam, September 1916); the last German troops left for Mozambique on 25 November 1917. British until the Treaty of Versailles",
       "source": {
        "title": "East African campaign (World War I) (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/East_African_campaign_(World_War_I)"
@@ -5068,6 +5366,986 @@
        "url": "https://en.wikipedia.org/wiki/Togoland_campaign"
       }
      }
+    }
+   ]
+  },
+  {
+   "date": "1919-01-01",
+   "what": "Ottoman troops leave Lahej after the armistice (around the turn of 1919)",
+   "source": {
+    "title": "South Arabia during World War I (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/South_Arabia_during_World_War_I"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "YEM-157"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "South Arabia during World War I (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/South_Arabia_during_World_War_I"
+     },
+     "territory": "Protectorate of South Arabia",
+     "hatch": {
+      "by": "Ottoman Empire",
+      "since": "1915-07-04",
+      "note": "Occupied by Ottoman troops from Yemen from July 1915 until they left after the 1918 armistice",
+      "source": {
+       "title": "South Arabia during World War I (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/South_Arabia_during_World_War_I"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-12-14",
+   "what": "British and Indian troops land at Hodeidah",
+   "source": {
+    "title": "Hodeidah (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Hodeidah"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "YEM-151"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Yemen Vilayet (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Yemen_Vilayet"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-11-01",
+   "what": "British troops take Kirkuk and Mosul as the war with the Ottoman Empire ends",
+   "source": {
+    "title": "Mesopotamian campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Mesopotamian_campaign"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "IRQ-3051",
+      "IRQ-3046",
+      "IRQ-3050",
+      "IRQ-3049",
+      "IRQ-3242"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Mesopotamian campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mesopotamian_campaign"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-10-30",
+   "what": "By the Armistice of Mudros the Ottoman Empire leaves the war; Imam Yahya rules Yemen as an independent king",
+   "source": {
+    "title": "Mutawakkilite Kingdom of Yemen (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Mutawakkilite_Kingdom_of_Yemen"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "YEM-150",
+      "YEM-154",
+      "YEM-335",
+      "YEM-155",
+      "YEM-3496",
+      "YEM-3498",
+      "YEM-152",
+      "YEM-151",
+      "YEM-3499",
+      "YEM-153",
+      "YEM-156",
+      "YEM-158",
+      "YEM-337",
+      "YEM-333",
+      "YEM-334"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Yemen Vilayet (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Yemen_Vilayet"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-09-25",
+   "what": "British and Arab forces take Amman and Ma’an: Transjordan passes to Faisal’s Arab government in Damascus, Ma’an to the Kingdom of Hejaz",
+   "source": {
+    "title": "Occupied Enemy Territory Administration (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Occupied_Enemy_Territory_Administration"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "JOR-854",
+      "JOR-858",
+      "JOR-859",
+      "JOR-852",
+      "JOR-857",
+      "JOR-850",
+      "JOR-851",
+      "JOR-860",
+      "JOR-855",
+      "JOR-856"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Ottoman Syria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Syria"
+     }
+    },
+    {
+     "pieces": [
+      "JOR-853"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Ottoman Syria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Syria"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-09-23",
+   "what": "British forces take Haifa and Acre after the battle of Megiddo",
+   "source": {
+    "title": "Battle of Megiddo (1918) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Megiddo_(1918)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ISR-3054",
+      "ISR-3056"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Battle of Megiddo (1918) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Megiddo_(1918)"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-09-20",
+   "what": "British forces take Nablus and the hills north of Jerusalem in the battle of Megiddo",
+   "source": {
+    "title": "Battle of Megiddo (1918) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Megiddo_(1918)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "WEB+00?"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Battle of Megiddo (1918) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Megiddo_(1918)"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1917-12-09",
+   "what": "British forces take Jerusalem",
+   "source": {
+    "title": "Battle of Jerusalem (1917) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Jerusalem_(1917)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ISR-3058",
+      "east-jerusalem"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Battle of Jerusalem (1917) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Jerusalem_(1917)"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1917-11-25",
+   "what": "The last German troops in German East Africa cross into Mozambique",
+   "source": {
+    "title": "East African campaign (World War I) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/East_African_campaign_(World_War_I)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TZA-3335",
+      "TZA-5587",
+      "TZA-3363",
+      "TZA-5584",
+      "TZA-3336",
+      "TZA-3360",
+      "TZA-3394",
+      "TZA-3391",
+      "TZA-3393",
+      "TZA-3395",
+      "TZA-3382",
+      "TZA-3378",
+      "TZA-3379",
+      "TZA-3385",
+      "TZA-3392",
+      "TZA-3390",
+      "TZA-3359",
+      "TZA-3386",
+      "TZA-3357",
+      "TZA-5585",
+      "TZA-5586",
+      "TZA-3358"
+     ],
+     "owner": "Germany",
+     "source": {
+      "title": "East African campaign (World War I) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/East_African_campaign_(World_War_I)"
+     },
+     "territory": "German East Africa",
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1916-09-04",
+      "note": "Conquered by British, Indian, South African and Belgian forces in the East African campaign (Dar es Salaam, 4 September 1916), until the Treaty of Versailles",
+      "source": {
+       "title": "East African campaign (World War I) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/East_African_campaign_(World_War_I)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "TZA-3387",
+      "TZA-3388",
+      "TZA-3389"
+     ],
+     "owner": "Germany",
+     "source": {
+      "title": "East African campaign (World War I) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/East_African_campaign_(World_War_I)"
+     },
+     "territory": "German East Africa"
+    }
+   ]
+  },
+  {
+   "date": "1917-11-16",
+   "what": "British forces take Jaffa",
+   "source": {
+    "title": "Battle of Mughar Ridge (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Mughar_Ridge"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ISR-3057",
+      "ISR-3055"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Battle of Mughar Ridge (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Mughar_Ridge"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1917-11-07",
+   "what": "British forces take Gaza at the third attempt",
+   "source": {
+    "title": "Third Battle of Gaza (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Third_Battle_of_Gaza"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "GAZ+00?"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Third Battle of Gaza (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Third_Battle_of_Gaza"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1917-10-31",
+   "what": "British and Australian forces take Beersheba",
+   "source": {
+    "title": "Battle of Beersheba (1917) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Beersheba_(1917)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ISR-3053"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Battle of Beersheba (1917) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Beersheba_(1917)"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1917-07-06",
+   "what": "Arab forces of the Hejaz take Aqaba from the Ottoman Empire",
+   "source": {
+    "title": "Battle of Aqaba (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Aqaba"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "JOR-849"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Battle of Aqaba (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Aqaba"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1917-03-11",
+   "what": "British and Indian forces take Baghdad",
+   "source": {
+    "title": "Fall of Baghdad (1917) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Fall_of_Baghdad_(1917)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "IRQ-3063",
+      "IRQ-3472",
+      "IRQ-3062",
+      "IRQ-3061",
+      "IRQ-3224",
+      "IRQ-3223",
+      "IRQ-3243",
+      "IRQ-3471",
+      "IRQ-3052"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Fall of Baghdad (1917) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Fall_of_Baghdad_(1917)"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1917-02-24",
+   "what": "British and Indian forces take Kut back",
+   "source": {
+    "title": "Second Battle of Kut (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Second_Battle_of_Kut"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "IRQ-3227"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Second Battle of Kut (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Second_Battle_of_Kut"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1916-12-21",
+   "what": "British forces enter El Arish and clear the Ottoman army from Sinai",
+   "source": {
+    "title": "Battle of Magdhaba (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Magdhaba"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "EGY-1558"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Sinai and Palestine campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sinai_and_Palestine_campaign"
+     },
+     "territory": "Sultanate of Egypt",
+     "hatch": {
+      "by": "Ottoman Empire",
+      "since": "1914-12-01",
+      "note": "Held by Ottoman troops from late 1914, after the British fell back to the Suez Canal, until December 1916",
+      "source": {
+       "title": "Sinai and Palestine campaign (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Sinai_and_Palestine_campaign"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1916-11-03",
+   "what": "Qatar signs a treaty putting itself under British protection",
+   "source": {
+    "title": "Anglo-Qatari Treaty of 1916 (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Anglo-Qatari_Treaty_of_1916"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "QAT"
+     ],
+     "owner": "Qatar",
+     "source": {
+      "title": "Qatar (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Qatar"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1916-09-04",
+   "what": "British forces take Dar es Salaam; most of German East Africa is now in Allied hands",
+   "source": {
+    "title": "East African campaign (World War I) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/East_African_campaign_(World_War_I)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TZA-3335",
+      "TZA-5587",
+      "TZA-3363",
+      "TZA-5584",
+      "TZA-3336",
+      "TZA-3360",
+      "TZA-3394",
+      "TZA-3391",
+      "TZA-3393",
+      "TZA-3395",
+      "TZA-3382",
+      "TZA-3378",
+      "TZA-3379",
+      "TZA-3385",
+      "TZA-3392",
+      "TZA-3390",
+      "TZA-3359",
+      "TZA-3386",
+      "TZA-3357",
+      "TZA-5585",
+      "TZA-5586",
+      "TZA-3358"
+     ],
+     "owner": "Germany",
+     "source": {
+      "title": "East African campaign (World War I) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/East_African_campaign_(World_War_I)"
+     },
+     "territory": "German East Africa"
+    }
+   ]
+  },
+  {
+   "date": "1916-05-23",
+   "what": "Anglo-Egyptian troops take El Fasher: the Sultanate of Darfur is joined to the Sudan",
+   "source": {
+    "title": "Invasion of Darfur (1916) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Invasion_of_Darfur_(1916)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SDN-881",
+      "SDN-5858",
+      "SDN-5859",
+      "SDN-5856",
+      "SDN-5857"
+     ],
+     "owner": "Sultanate of Darfur",
+     "source": {
+      "title": "Sultanate of Darfur (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sultanate_of_Darfur"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1916-04-29",
+   "what": "The British and Indian garrison of Kut surrenders to the Ottoman army",
+   "source": {
+    "title": "Siege of Kut (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Kut"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "IRQ-3227"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Siege of Kut (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Kut"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1915-09-28",
+      "note": "Taken by British and Indian forces (Kut, 28 September 1915); besieged from December and lost in April 1916",
+      "source": {
+       "title": "Mesopotamian campaign (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Mesopotamian_campaign"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1916-02-18",
+   "what": "The last German garrison in Kamerun, at Mora, surrenders",
+   "source": {
+    "title": "Kamerun campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kamerun_campaign"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ncam-borno",
+      "ncam-adamawa-north",
+      "ncam-adamawa-south",
+      "ncam-taraba"
+     ],
+     "owner": "Germany",
+     "source": {
+      "title": "Kamerun campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kamerun_campaign"
+     },
+     "territory": "Kamerun"
+    }
+   ]
+  },
+  {
+   "date": "1915-09-28",
+   "what": "British and Indian forces take Kut",
+   "source": {
+    "title": "Battle of Es Sinn (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Es_Sinn"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "IRQ-3227"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Battle of Es Sinn (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Es_Sinn"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1915-08-20",
+   "what": "The Ottoman garrison leaves Doha; Qatar is on its own",
+   "source": {
+    "title": "Qatar (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Qatar"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "QAT"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Ottoman Qatar (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Qatar"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1915-07-24",
+   "what": "British and Indian forces take Nasiriyah",
+   "source": {
+    "title": "Battle of Nasiriyah (1915) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Nasiriyah_(1915)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "IRQ-3225"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Battle of Nasiriyah (1915) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Nasiriyah_(1915)"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1915-07-04",
+   "what": "Ottoman troops from Yemen take Lahej, in the Aden Protectorate",
+   "source": {
+    "title": "South Arabia during World War I (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/South_Arabia_during_World_War_I"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "YEM-157"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "South Arabia during World War I (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/South_Arabia_during_World_War_I"
+     },
+     "territory": "Protectorate of South Arabia"
+    }
+   ]
+  },
+  {
+   "date": "1915-06-09",
+   "what": "British troops land on Kamaran, which the Ottoman garrison had left",
+   "source": {
+    "title": "Kamaran (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kamaran"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "kamaran"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Kamaran (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kamaran"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1915-06-03",
+   "what": "British and Indian forces take Amarah",
+   "source": {
+    "title": "Mesopotamian campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Mesopotamian_campaign"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "IRQ-3226"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Mesopotamian campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mesopotamian_campaign"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1914-12-18",
+   "what": "The United Kingdom makes Egypt a protectorate and deposes the khedive; Egypt is cut off from the Ottoman Empire",
+   "source": {
+    "title": "Sultanate of Egypt (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Sultanate_of_Egypt"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "EGY"
+     ],
+     "owner": "Khedivate of Egypt",
+     "source": {
+      "title": "Khedivate of Egypt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Khedivate_of_Egypt"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1882-09-13",
+      "note": "Occupied by British troops since 1882 (Tel el-Kebir); the khedive remained a vassal of the Ottoman sultan",
+      "source": {
+       "title": "British occupation of Egypt (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/British_occupation_of_Egypt"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1914-12-01",
+   "what": "Ottoman troops cross Sinai to El Arish as the British fall back to the Suez Canal",
+   "source": {
+    "title": "Raid on the Suez Canal (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Raid_on_the_Suez_Canal"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "EGY-1558"
+     ],
+     "owner": "Khedivate of Egypt",
+     "source": {
+      "title": "Khedivate of Egypt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Khedivate_of_Egypt"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1882-09-13",
+      "note": "Occupied by British troops since 1882 (Tel el-Kebir); the khedive remained a vassal of the Ottoman sultan",
+      "source": {
+       "title": "British occupation of Egypt (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/British_occupation_of_Egypt"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1914-11-22",
+   "what": "British and Indian forces take Basra",
+   "source": {
+    "title": "Capture of Basra (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Capture_of_Basra"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "IRQ-3222"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Capture of Basra (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Capture_of_Basra"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1914-11-05",
+   "what": "The United Kingdom annexes Cyprus when the Ottoman Empire enters the war",
+   "source": {
+    "title": "British Cyprus (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/British_Cyprus"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "CYP",
+      "CYN",
+      "ESB",
+      "WSB"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Cyprus Convention (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cyprus_Convention"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1878-07-12",
+      "note": "Run by the United Kingdom under the Cyprus Convention of 1878, still under Ottoman sovereignty",
+      "source": {
+       "title": "Cyprus Convention (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Cyprus_Convention"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1914-08-26",
+   "what": "The Germans in Togoland surrender to British and French troops",
+   "source": {
+    "title": "Togoland campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Togoland_campaign"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "btog-volta",
+      "btog-northern",
+      "btog-upper-east"
+     ],
+     "owner": "Germany",
+     "source": {
+      "title": "Togoland campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Togoland_campaign"
+     },
+     "territory": "Togoland"
+    }
+   ]
+  },
+  {
+   "date": "1914-01-01",
+   "what": "Northern and Southern Nigeria are joined as the Colony and Protectorate of Nigeria",
+   "source": {
+    "title": "Colonial Nigeria (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Colonial_Nigeria"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "NGA-2879",
+      "NGA-2851",
+      "NGA-2849",
+      "NGA-2839",
+      "NGA-2881",
+      "NGA-2848",
+      "NGA-2846",
+      "NGA-2871",
+      "NGA-2872",
+      "NGA-2873",
+      "NGA-2870",
+      "NGA-2868",
+      "NGA-2858",
+      "NGA-2866",
+      "NGA-2867",
+      "NGA-2859",
+      "NGA-2865",
+      "NGA-2864",
+      "NGA-2869",
+      "NGA-3470"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Northern Nigeria Protectorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Northern_Nigeria_Protectorate"
+     },
+     "territory": "Northern Nigeria Protectorate"
+    },
+    {
+     "pieces": [
+      "NGA-2850",
+      "NGA-2852",
+      "NGA-2856",
+      "NGA-2855",
+      "NGA-2853",
+      "NGA-2854",
+      "NGA-2861",
+      "NGA-2860",
+      "NGA-2845",
+      "NGA-2844",
+      "NGA-2842",
+      "NGA-2847",
+      "NGA-2841",
+      "NGA-2843",
+      "NGA-2857",
+      "NGA-2862",
+      "NGA-2863"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Southern Nigeria Protectorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Southern_Nigeria_Protectorate"
+     },
+     "territory": "Southern Nigeria Protectorate"
+    },
+    {
+     "pieces": [
+      "ncam-borno",
+      "ncam-adamawa-north",
+      "ncam-adamawa-south",
+      "ncam-taraba"
+     ],
+     "owner": "Germany",
+     "source": {
+      "title": "Kamerun (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kamerun"
+     },
+     "territory": "Kamerun"
+    }
+   ]
+  },
+  {
+   "date": "1911-08-17",
+   "what": "North-Western and North-Eastern Rhodesia are joined as Northern Rhodesia",
+   "source": {
+    "title": "Northern Rhodesia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Northern_Rhodesia"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ZMB-523",
+      "ZMB-521",
+      "ZMB-517",
+      "ZMB-516",
+      "ZMB-520",
+      "ZMB-522"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "North-Western Rhodesia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/North-Western_Rhodesia"
+     },
+     "territory": "North-Western Rhodesia"
+    },
+    {
+     "pieces": [
+      "ZMB-515",
+      "ZMB-5511",
+      "ZMB-514",
+      "ZMB-518"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "North-Eastern Rhodesia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/North-Eastern_Rhodesia"
+     },
+     "territory": "North-Eastern Rhodesia"
     }
    ]
   }
