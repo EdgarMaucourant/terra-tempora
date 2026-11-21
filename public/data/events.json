@@ -8241,6 +8241,289 @@
    "summary": "At the Imperial Conference in London, a report drafted by Lord Balfour and adopted on 18 November 1926 declares Britain and the dominions to be “autonomous communities within the British Empire, equal in status”, united by allegiance to the Crown and freely associated as the British Commonwealth of Nations. The Statute of Westminster puts it into law in 1931.",
    "wikipedia": "Balfour_Declaration_of_1926",
    "search": "Balfour Declaration 1926 Imperial Conference dominions autonomous communities equal in status British Commonwealth of Nations King-Byng affair Statute of Westminster 1931"
+  },
+  {
+   "id": "delhi-durbar-1911",
+   "kind": "empire",
+   "year": 1911,
+   "title": "At the Delhi Durbar the capital of India moves to Delhi, 12 December 1911",
+   "place": "Delhi",
+   "lonLat": [
+    77.21,
+    28.61
+   ],
+   "civs": [
+    "british-raj",
+    "india",
+    "united-kingdom"
+   ],
+   "summary": "George V and Queen Mary, the only reigning British monarchs to visit India, are proclaimed Emperor and Empress at a vast durbar in Delhi on 12 December 1911. The King announces that the capital of British India will move from Calcutta to Delhi, and that the partition of Bengal of 1905 is undone. A new city, New Delhi, is built as the seat of government and opened in 1931.",
+   "wikipedia": "Delhi_Durbar",
+   "search": "Delhi Durbar 12 December 1911 George V Queen Mary emperor of India capital moved from Calcutta to Delhi partition of Bengal annulled New Delhi Lutyens 1931"
+  },
+  {
+   "id": "amalgamation-of-nigeria-1914",
+   "kind": "empire",
+   "year": 1914,
+   "title": "Northern and Southern Nigeria are joined as one colony, 1 January 1914",
+   "place": "Lagos",
+   "lonLat": [
+    3.39,
+    6.46
+   ],
+   "civs": [
+    "colonial-nigeria",
+    "northern-nigeria-protectorate",
+    "southern-nigeria-protectorate",
+    "nigeria",
+    "united-kingdom"
+   ],
+   "summary": "On 1 January 1914 Sir Frederick Lugard joins the Northern Nigeria Protectorate and the Colony and Protectorate of Southern Nigeria into a single Colony and Protectorate of Nigeria, run from Lagos. The north keeps its emirs under “indirect rule”, and the two halves stay very different. The borders of 1914 are, with the Cameroons added later, those of Nigeria today.",
+   "wikipedia": "Colonial_Nigeria",
+   "search": "amalgamation of Nigeria 1 January 1914 Frederick Lugard Northern Nigeria Protectorate Southern Nigeria Colony and Protectorate Colony and Protectorate of Nigeria indirect rule Lagos"
+  },
+  {
+   "id": "cyprus-annexed-1914",
+   "kind": "empire",
+   "year": 1914,
+   "title": "Britain annexes Cyprus, 5 November 1914",
+   "place": "Nicosia",
+   "lonLat": [
+    33.3,
+    35.12
+   ],
+   "civs": [
+    "british-cyprus",
+    "ottoman-empire",
+    "cyprus",
+    "united-kingdom"
+   ],
+   "summary": "Since 1878 Britain had run Cyprus under the Cyprus Convention while the island stayed under Ottoman sovereignty. When the Ottoman Empire enters the war on Germany’s side, Britain annexes the island on 5 November 1914. Turkey recognises the annexation in the Treaty of Lausanne in 1923, and Cyprus becomes a Crown colony in 1925.",
+   "wikipedia": "British_Cyprus",
+   "search": "Cyprus annexed by Britain 5 November 1914 Ottoman Empire entered First World War Cyprus Convention 1878 Treaty of Lausanne 1923 Crown colony 1925"
+  },
+  {
+   "id": "egypt-protectorate-1914",
+   "kind": "empire",
+   "year": 1914,
+   "title": "Britain makes Egypt a protectorate, 18 December 1914",
+   "place": "Cairo",
+   "lonLat": [
+    31.3,
+    29.96
+   ],
+   "civs": [
+    "sultanate-of-egypt",
+    "khedivate-of-egypt",
+    "egypt",
+    "ottoman-empire",
+    "united-kingdom"
+   ],
+   "summary": "British troops had occupied Egypt since 1882 while it stayed, in law, a vassal of the Ottoman sultan. With the Ottoman Empire now an enemy, Britain declares a protectorate on 18 December 1914, deposes the pro-Ottoman Khedive Abbas II, and makes his uncle Hussein Kamel Sultan of Egypt. Egypt is cut off from the Ottoman Empire and becomes the base for the war in the Middle East.",
+   "wikipedia": "Sultanate_of_Egypt",
+   "search": "British protectorate over Egypt 18 December 1914 Khedive Abbas II Hilmi deposed Hussein Kamel Sultan of Egypt Ottoman suzerainty ended Suez Canal First World War British occupation 1882"
+  },
+  {
+   "id": "siege-of-kut-1916",
+   "kind": "war",
+   "year": 1915,
+   "to": 1916,
+   "title": "The siege of Kut, December 1915 – April 1916",
+   "place": "Kut",
+   "lonLat": [
+    45.82,
+    32.5
+   ],
+   "civs": [
+    "ottoman-empire",
+    "mandatory-iraq",
+    "iraq",
+    "united-kingdom"
+   ],
+   "summary": "After a failed push on Baghdad, General Townshend’s Anglo-Indian division falls back to Kut on the Tigris and is besieged by the Ottoman army from 7 December 1915. Relief forces lose some 23,000 men trying to break through. Starving, the garrison of about 13,000 surrenders on 29 April 1916, one of Britain’s worst defeats of the war; most of the prisoners die in captivity.",
+   "wikipedia": "Siege_of_Kut",
+   "search": "Siege of Kut December 1915 29 April 1916 Charles Townshend surrender Ottoman Sixth Army Khalil Pasha Mesopotamian campaign relief force Tigris prisoners"
+  },
+  {
+   "id": "conquest-of-darfur-1916",
+   "kind": "war",
+   "year": 1916,
+   "title": "Anglo-Egyptian troops conquer Darfur, May – November 1916",
+   "place": "El Fasher",
+   "lonLat": [
+    25.35,
+    13.63
+   ],
+   "civs": [
+    "sultanate-of-darfur",
+    "anglo-egyptian-sudan",
+    "sudan",
+    "united-kingdom"
+   ],
+   "summary": "Sultan Ali Dinar had ruled Darfur on his own since 1898. When he sides with the Ottoman Empire in the war, an Anglo-Egyptian force marches from Kordofan, wins at Beringia and takes his capital, El Fasher, on 23 May 1916. Ali Dinar is hunted down and killed on 6 November 1916, and Darfur is joined to the Anglo-Egyptian Sudan.",
+   "wikipedia": "Invasion_of_Darfur_(1916)",
+   "search": "Invasion of Darfur 1916 Ali Dinar Sultanate of Darfur El Fasher 23 May 1916 Beringia Kelly Anglo-Egyptian Sudan aircraft Ali Dinar killed 6 November 1916 annexed"
+  },
+  {
+   "id": "anglo-qatari-treaty-1916",
+   "kind": "empire",
+   "year": 1916,
+   "title": "Qatar comes under British protection, 3 November 1916",
+   "place": "Doha",
+   "lonLat": [
+    51.53,
+    25.29
+   ],
+   "civs": [
+    "qatar",
+    "ottoman-empire",
+    "united-kingdom"
+   ],
+   "summary": "The Ottoman garrison in Doha slips away in August 1915 under British pressure. On 3 November 1916 Sheikh Abdullah bin Jassim Al Thani signs a treaty that brings Qatar into Britain’s system of Gulf protected states: Britain takes charge of its foreign affairs and promises to defend it. The treaty lasts until independence in 1971.",
+   "wikipedia": "Qatar–United_Kingdom_relations",
+   "search": "Anglo-Qatari Treaty 3 November 1916 Sheikh Abdullah bin Jassim Al Thani British protection Ottoman garrison Doha left August 1915 Trucial system foreign affairs independence 1971"
+  },
+  {
+   "id": "fall-of-baghdad-1917",
+   "kind": "war",
+   "year": 1917,
+   "title": "British and Indian troops take Baghdad, 11 March 1917",
+   "place": "Baghdad",
+   "lonLat": [
+    44.3,
+    33.25
+   ],
+   "civs": [
+    "ottoman-empire",
+    "mandatory-iraq",
+    "iraq",
+    "united-kingdom"
+   ],
+   "summary": "Rebuilt after the defeat at Kut, the Anglo-Indian army under General Stanley Maude retakes Kut in February 1917 and drives up the Tigris. Baghdad falls on 11 March 1917, and Maude proclaims that his troops come “not as conquerors, but as liberators”. Britain now holds the heart of Mesopotamia, which it keeps as the mandate of Iraq.",
+   "wikipedia": "Fall_of_Baghdad_(1917)",
+   "search": "Fall of Baghdad 11 March 1917 General Maude Proclamation of Baghdad Mesopotamian campaign Kut retaken Ottoman Sixth Army Tigris liberators not conquerors"
+  },
+  {
+   "id": "capture-of-aqaba-1917",
+   "kind": "war",
+   "year": 1917,
+   "title": "Arab forces take Aqaba, 6 July 1917",
+   "place": "Aqaba",
+   "lonLat": [
+    35.0,
+    29.53
+   ],
+   "civs": [
+    "kingdom-of-hejaz",
+    "ottoman-empire",
+    "jordan",
+    "united-kingdom"
+   ],
+   "summary": "During the Arab Revolt, a force of Howeitat tribesmen led by Auda abu Tayi and Sharif Nasir, with T. E. Lawrence, crosses the desert and falls on Aqaba from the land side on 6 July 1917. The Ottoman garrison surrenders. The port becomes the base of Faisal’s Arab army, which fights north alongside the British. Aqaba stays with the Hejaz until 1925, when it passes to Transjordan.",
+   "wikipedia": "Battle_of_Aqaba",
+   "search": "Battle of Aqaba 6 July 1917 Arab Revolt Auda abu Tayi T. E. Lawrence Sharif Nasir Hejaz Ottoman garrison overland desert march Faisal base"
+  },
+  {
+   "id": "fall-of-jerusalem-1917",
+   "kind": "war",
+   "year": 1917,
+   "title": "British troops take Jerusalem, 9 December 1917",
+   "place": "Jerusalem",
+   "lonLat": [
+    35.13,
+    31.72
+   ],
+   "civs": [
+    "ottoman-empire",
+    "mandatory-palestine",
+    "israel",
+    "palestine",
+    "united-kingdom"
+   ],
+   "summary": "After breaking the Ottoman line at Beersheba and Gaza and taking Jaffa, General Allenby’s army closes on Jerusalem. The Ottoman forces leave, and the city surrenders on 9 December 1917. Allenby enters on foot through the Jaffa Gate two days later. Four centuries of Ottoman rule end; Britain runs Palestine as occupied territory, then as a mandate.",
+   "wikipedia": "Battle_of_Jerusalem_(1917)",
+   "search": "Battle of Jerusalem December 1917 Allenby enters on foot Jaffa Gate 11 December surrender 9 December Beersheba Gaza Ottoman Yildirim Sinai and Palestine campaign"
+  },
+  {
+   "id": "battle-of-megiddo-1918",
+   "kind": "war",
+   "year": 1918,
+   "title": "The battle of Megiddo breaks the Ottoman front, September 1918",
+   "place": "Megiddo",
+   "lonLat": [
+    35.18,
+    32.58
+   ],
+   "civs": [
+    "ottoman-empire",
+    "mandatory-palestine",
+    "arab-kingdom-of-syria",
+    "israel",
+    "jordan",
+    "united-kingdom"
+   ],
+   "summary": "On 19 September 1918 Allenby’s army breaks through the Ottoman line on the coast north of Jaffa, and its cavalry sweeps behind the front through the plain of Megiddo. In a week the Ottoman armies in Palestine are destroyed; Nablus, Haifa and Amman fall, and Damascus is taken on 1 October with Faisal’s Arab army. The whole of Palestine and Transjordan is now in Allied hands.",
+   "wikipedia": "Battle_of_Megiddo_(1918)",
+   "search": "Battle of Megiddo 19 25 September 1918 Allenby cavalry Desert Mounted Corps Nablus Haifa Amman Damascus 1 October Ottoman Seventh Eighth armies collapse Arab army Faisal"
+  },
+  {
+   "id": "armistice-of-mudros-1918",
+   "kind": "war",
+   "year": 1918,
+   "title": "The Armistice of Mudros ends the war with the Ottoman Empire, 30 October 1918",
+   "place": "Mosul",
+   "lonLat": [
+    43.13,
+    36.34
+   ],
+   "civs": [
+    "ottoman-empire",
+    "mandatory-iraq",
+    "iraq",
+    "united-kingdom"
+   ],
+   "summary": "Signed aboard HMS Agamemnon off Lemnos on 30 October 1918, the armistice takes the Ottoman Empire out of the war and opens the Straits to the Allies. Its garrisons in Arabia, Mesopotamia and Syria must surrender. Britain uses its terms to march on and occupy Mosul in early November, a move that leads to the long dispute over whether Mosul belongs to Turkey or Iraq.",
+   "wikipedia": "Armistice_of_Mudros",
+   "search": "Armistice of Mudros 30 October 1918 HMS Agamemnon Lemnos Ottoman surrender Allied occupation Straits Constantinople Mosul occupied November 1918 Mosul question"
+  },
+  {
+   "id": "irish-war-of-independence-1919",
+   "kind": "war",
+   "year": 1919,
+   "to": 1921,
+   "title": "The Irish War of Independence, January 1919 – July 1921",
+   "place": "Soloheadbeg",
+   "lonLat": [
+    -8.1,
+    52.52
+   ],
+   "civs": [
+    "ireland",
+    "united-kingdom"
+   ],
+   "summary": "On 21 January 1919, the day the First Dáil meets in Dublin and declares Irish independence, IRA volunteers kill two policemen at Soloheadbeg in County Tipperary. A guerrilla war follows against the British forces, reinforced by the “Black and Tans” and Auxiliaries, with ambushes, reprisals and burnings across Ireland. A truce on 11 July 1921 leads to the Anglo-Irish Treaty.",
+   "wikipedia": "Irish_War_of_Independence",
+   "search": "Irish War of Independence 21 January 1919 Soloheadbeg First Dáil declaration of independence IRA Michael Collins Black and Tans Auxiliaries truce 11 July 1921 Anglo-Irish Treaty"
+  },
+  {
+   "id": "fall-of-taleh-1920",
+   "kind": "war",
+   "year": 1920,
+   "title": "The fall of Taleh ends the Dervish State, February 1920",
+   "place": "Taleh",
+   "lonLat": [
+    48.42,
+    9.15
+   ],
+   "civs": [
+    "dervish-state",
+    "british-somaliland",
+    "somalia",
+    "united-kingdom"
+   ],
+   "summary": "For twenty years the Dervish movement of Mohammed Abdullah Hassan had fought the British, Italians and Ethiopians, and since 1910 had held the Somaliland interior from its stone forts. In January 1920 Britain sends a small air force, “Z Force”, with the Camel Corps; the forts are bombed and Taleh, the Dervish capital, falls in February. The leader flees to Ethiopia and dies later that year.",
+   "wikipedia": "Somaliland_campaign_(1920)",
+   "search": "Somaliland campaign 1920 Taleh Dervish State Mohammed Abdullah Hassan Mad Mullah RAF Z Force bombing Somaliland Camel Corps fled to Ethiopia died 1920"
   }
  ]
 }
