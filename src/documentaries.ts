@@ -17,6 +17,12 @@ interface Documentary {
   civs?: string[];
   events?: string[];
   countries?: string[];
+  /**
+   * For a series that gives one episode each to several places: who that
+   * episode is about and when, by country, civilization or event id, so the
+   * link reads as history and not as a comment on the place today.
+   */
+  episodes?: Record<string, { who: Localized; years?: Localized }>;
   /** Age ratings by country: the US TV or film rating, and France's signalétique. */
   ratings?: { us?: string; fr?: string };
 }
@@ -56,8 +62,23 @@ export class Documentaries {
   }
 }
 
+/** A text the same in every language, or one per language. */
+type Localized = string | Record<string, string>;
+
+const local = (text: Localized) => (typeof text === "string" ? text : (text[lang] ?? text.en));
+
+/** The episode of a documentary about what the panel shows, the most specific first. */
+function episodeFor(d: Documentary, query: DocumentaryQuery | undefined): string | undefined {
+  if (!d.episodes || !query) return undefined;
+  for (const id of [...(query.events ?? []), ...(query.countries ?? []), ...(query.civs ?? [])]) {
+    const e = d.episodes[id];
+    if (e) return e.years ? t("docs.episode", { who: local(e.who), years: local(e.years) }) : t("docs.episodeOn", { who: local(e.who) });
+  }
+  return undefined;
+}
+
 /** "See more on Netflix: Roman Empire" links, under a heading; hidden when there are none. */
-export function renderDocumentaries(container: HTMLElement, list: Documentary[]) {
+export function renderDocumentaries(container: HTMLElement, list: Documentary[], query?: DocumentaryQuery) {
   container.replaceChildren();
   container.hidden = !list.length;
   if (!list.length) return;
@@ -74,6 +95,8 @@ export function renderDocumentaries(container: HTMLElement, list: Documentary[])
       badge.title = t("docs.ratingTitle", { rating });
       item.append(" ", badge);
     }
+    const episode = episodeFor(d, query);
+    if (episode) item.append(el("span", "docs-episode", episode));
     items.append(item);
   }
   container.append(heading, items);
