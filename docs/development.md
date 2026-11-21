@@ -16,185 +16,13 @@ rebuilding it. `npm run data` rebuilds it from the rebuilt borders in
 downloads Natural Earth's 1:10m provinces (about 40 MB) into `data-raw/`.
 `npm run civs` rebuilds only the civilization list from the border files.
 
-## Border overrides (the old Cliopatria build)
+## Data files
 
-The borders are being rebuilt from scratch in `borders/`. Until that is done,
-the old build below (`scripts/build-data.mjs`, Cliopatria with hand-traced
-overrides) stays in the repository for reference, but `npm run data` no longer
-runs it.
+The borders are rebuilt by hand in `borders/` (see
+[borders/README.md](../borders/README.md)); `npm run data` turns them into the
+window files in `public/data/`. `npm run geojson` exports those as GeoJSON
+(see the README).
 
-Each `scripts/border-overrides/*.geojson` file holds hand-traced borders that
-`npm run data` puts in place of Cliopatria's. Each feature has these properties:
-
-- `Name`, `FromYear`, `ToYear`: the realm, under its Cliopatria name, and the
-  years the shape applies to (negative for BCE). Cliopatria's shapes of that
-  name are cut out of those years.
-- `Replaces` (optional): other realms whose shapes are cut out of those years
-  as well, such as a kingdom it conquered or the dynasty it overthrew.
-- `Clips` (optional): neighbours that only lose the traced area for those
-  years. With `Adds`, the realms that lose the land added (needed before
-  1800, when two realms may both draw the same land).
-- `Adds` (optional): `true` when the traced area is added to the realm's
-  own shapes for those years instead of replacing them. Cliopatria draws the
-  United States only where it had settled, so `united-states.geojson` adds the
-  land it owned after each treaty or purchase (`Acquisition` names it), from
-  the Treaty of Paris (1783) to the Alaska Purchase (1867), until 1889. A
-  smaller realm still keeps land it holds in those years, such as the
-  Confederate States in 1861-1865.
-  `claimed-land.geojson` does the same for Mexico's north (1822 to 1853),
-  Russian America (1799 to 1866) and the whole of Greenland (from 1921), and
-  `british-dominions.geojson` for Australia before 1901 (`Claim` says what
-  each feature adds). Added land counts towards the realm's area as measured
-  on the sphere.
-- `Removes` (optional): `true` with no outline takes the realm off the map
-  for those years (`russian-backed-regions.geojson`); with an outline, it only
-  takes that land off the realm, leaving it blank where no other realm has it.
-- `KeepSmall` (optional): `true` keeps every part of the shape, however
-  small. Parts under 300 km² are otherwise dropped (all but the largest), so
-  `french-india.geojson` needs it for French India's trading posts.
-  The realm also keeps its small parts when a smaller neighbour's land is cut
-  out of it (Kiribati's atolls).
-- `PartOf` (optional): for a dependency, the realm of the state it belongs
-  to. Hovering it says "Part of" that state, and highlighting the state colours
-  it too. A realm with `PartOf` today is not one of the home globe's countries.
-- `ClipOutline` (optional): with `Clips`, a wider outline the neighbours lose
-  instead of the traced one, to take the slivers left along a coast that
-  Cliopatria draws a little differently (Greenland's coast in Denmark's shape).
-- `Area` (optional): the shape's area in km². Give it for a large shape far
-  from the equator: worked out from the shape, it can be off by tens of
-  percent.
-- `Wikipedia`, `Wikidata`: the realm's English Wikipedia article and Wikidata
-  item. Needed for a realm Cliopatria doesn't have; one it has keeps its own.
-  Give a new realm its French name in `scripts/name-fixes.json` and
-  `public/data/i18n/fr/civilizations.json` too, as Wikidata may not be
-  reachable when the data is built.
-
-A top-level `credit` names the source map, its author and licence; it is
-copied into `index.json`, and should also go in the Sources panel
-(`sources.list` in `src/locales/`, and `index.html`). `magadha.geojson` was
-traced from the 11 frames of the animated map
-[Magadha Expansion](https://commons.wikimedia.org/wiki/File:Magadha_Expansion_1.gif)
-(CC BY-SA 4.0), georeferenced with 14 of the cities it marks; each feature's
-`Frame` says which frame it comes from. The African files each come from one
-map, named in their `credit`, and each feature's `Map` names the area traced:
-`west-africa.geojson` from a map of West Africa at the end of the 18th century
-(georeferenced with 16 of its towns and its coastline, to within about 20 km),
-`southern-savanna.geojson` from the Library of Congress's map of the savanna
-states around 1850 after Vansina (with the present-day border of the Congo it
-draws, to within about 5 km), and `pre-colonial-africa.geojson` from a map of
-pre-colonial African civilizations (with its coastline, to within about 10 km;
-the map gives no dates and calls itself an artistic interpretation). A map of
-one moment stands for a span of years: Mossi and Hausa borders of about 1790
-are shown from 1500, for instance.
-`french-india.geojson` replaces Cliopatria's French India, which lumps the
-French East India Company's islands (Réunion, Mauritius, the Comoros, parts of
-Madagascar) in with its Indian posts and then loses the posts to the size cut:
-it draws the five posts only in the years France held them (`Held` names
-them each time), Pondicherry, Karikal and Yanam from today's Puducherry in
-Natural Earth 1:10m, Mahé and Chandernagore as squares of their area around
-the town, and moves Réunion and Mauritius to a realm of their own, the French
-Mascarene Islands, with Cliopatria's outlines.
-`united-states.geojson` is drawn from Natural Earth's 1:10m states (without the
-large lakes) and rivers, public domain, cut along the treaty lines: the
-Mississippi, the 1819 Adams-Onís line (the Sabine and Red rivers, 100°W, the
-Arkansas River and 42°N), the Continental Divide (followed through its passes
-and peaks, to within about 20 km), the Isle of Orleans and the Gila River.
-`british-dominions.geojson` draws the dominions Cliopatria leaves inside the
-British Empire until 1932 (Canada, South Africa), 1948 (New Zealand) or for
-good (Newfoundland), from Natural Earth's 1:10m countries and provinces (without
-the large lakes), public domain. Canada grows with each province or territory
-that joined it (`Joins` names it): Ontario and Quebec are cut back to their
-1867 limits along the Hudson Bay watershed, followed roughly (to within about
-100 km). From 1949 it also takes in Newfoundland and Labrador, which Cliopatria
-leaves British until 1957. South Africa takes in South West Africa (Namibia)
-from 1920, as Cliopatria does from 1932. `claimed-land.geojson` reuses the
-Texas, Mexican Cession, Gadsden Purchase and Alaska Purchase areas of
-`united-states.geojson`, and Natural Earth's Greenland. Both files were made
-with a script outside the repository from those sources.
-`crimea.geojson` adds Crimea (the Autonomous Republic of Crimea and
-Sevastopol) to Ukraine in 2024, the year Cliopatria moves it to Russia, so it is
-drawn as Ukraine, its internationally recognised border (UN General Assembly
-resolution 68/262), from 2014 to today. Until 2023 Cliopatria has it in both
-realms, and the build already gives it to Ukraine (from 1800, land two realms
-both draw goes to the smaller one). The outline is
-Cliopatria's own (the part Russia gains in 2024), so it fits its neighbours
-exactly. The other Ukrainian land Russia has occupied since 2022 is in Ukraine
-in Cliopatria too.
-`independent-states.geojson` draws states that Cliopatria leaves out for some
-years and folds into a larger neighbour: allies, satellites and personal unions
-drawn as if they were its own land, such as Czechoslovakia inside the USSR
-from 1969 to 1990, South Vietnam inside the United States from 1967 to 1972,
-Scotland inside England between the Union of the Crowns (1603) and the Acts
-of Union (1707), or Saxony inside Poland-Lithuania while its electors were
-kings of Poland. It also fills years Cliopatria leaves blank (Mexico
-1913-1919, El Salvador 1979-1991) and keeps San Marino from 1631 to today.
-Each feature's `Note` says why, and `Outline` which of Cliopatria's own
-outlines of the realm it reuses (the nearest year it does draw it); San
-Marino, which Cliopatria places as a square about 15 km off, is drawn from
-today's border, by hand. Before 1800 the neighbour that held the land is
-listed in `Clips`. An enclave such as San Marino can't be cut out of the realm
-around it (shapes have no holes), so it is drawn over it, as Lesotho is.
-`russia-ussr.geojson` fixes land Cliopatria draws as Russian (Muscovy, the
-Tsardom, the Russian Empire, the USSR) in years it was not: states that kept
-their own rulers under a Russian occupation or protectorate (Moldavia and
-Wallachia during the occupations of 1769-1856, Bulgaria in 1878-1879, Romania
-in 1917-1918, Bukhara and Khiva, Uryankhay and the Tuvan People's Republic
-until 1944), land Russia had handed back or not yet taken (Livonia after 1582,
-Courland and Polish Livonia in 1713-1733, Gilan and Baku after 1732, Adjara
-until 1878, Kraków in 1915, the Turkmen lands until 1881-1884, the Pamirs
-until 1895), occupations that left the country in place (the Ili valley in
-1871-1884, Manchuria in 1900-1904 and 1946-1947, northern Iran in 1942-1946,
-Afghanistan in 1979-1989, extended in `independent-states.geojson`), and the
-Allied occupation zones, drawn as Germany (1945-1948), West Germany (1949),
-Austria (1945-1946) and Korea (1946-1947) instead of their occupiers. Each
-feature's `Note` or `Claim` says why and `Outline` which shape it reuses:
-Cliopatria's own outline of the nearest year it draws the state right,
-Natural Earth's Turkmenistan and Tajikistan (public domain) for the Turkmen
-lands and the Pamirs, and a hand-traced Khorezm oasis for Khiva (to within
-about 50 km). Occupations during a war are left as Cliopatria draws them, as
-for other countries, and so are annexations: the Baltic states from 1940,
-Finland (1809-1917) and Congress Poland (1815-1915), which were part of the
-Russian Empire with their own institutions. Cliopatria's Bessarabia of
-1812-1813 is in fact Moldavia west of the Prut, so it is taken off the map and
-drawn as Moldavia. The file was made with a script outside the repository
-from those sources.
-`un-borders.geojson` draws today's borders as the UN recognises them, and
-carries each fix back to the first year the border was the same. Syria is one
-state from 1967 on, within its Natural Earth border plus the Golan Heights
-(Cliopatria's "Mujahideen" realm of 2014 on, rebel-held Syria named after the
-Afghan mujahideen, is taken off the map). Palestine is drawn on the 1967 lines
-(the West Bank, East Jerusalem and Gaza) from 1967, in place of Israel and
-Cliopatria's small "Gaza/Hamas" realm. Western Sahara is a realm of its own
-from 1976, left out of the home globe's countries as a non-self-governing
-territory. Northern Cyprus goes back to Cyprus (1976 on), Nagorno-Karabakh
-and the districts around it to Azerbaijan (1992 on), and Cabinda to Angola
-(Cliopatria draws it as Portugal's Estado Novo from 1979). Taiwan is the
-"Taiwan (Republic of China)" realm from 1950, so the Republic of China ends
-in 1949. UN members Cliopatria leaves out or misplaces are added: the Comoros
-(drawn inside Cabo Verde, with Mayotte, which goes to France), Saint Kitts and
-Nevis (placed on St Croix), Liechtenstein (1721 on, as a sovereign state from
-1806), the Maldives, Samoa, Nauru, Tonga, Tuvalu, Kiribati and the Marshall
-Islands; atolls are widened by about 1 km so they survive the 0.01° grid. The
-Netherlands Antilles end in 2010: Bonaire, Sint Eustatius and Saba go to the
-Netherlands, while Aruba, Curaçao and Sint Maarten are drawn on their own
-(`dependencies.geojson`). Outlines are Natural Earth 1:10m countries and
-disputed areas (public domain), or Cliopatria's own for Taiwan and the
-Antilles. Each feature's `Claim` says why. The file was made with a script
-outside the repository.
-`dependencies.geojson` draws territories with a government of their own that
-belong to another state as realms of their own, from the year they took that
-status, with `PartOf` naming the state they belong to: Greenland (home rule,
-1979) and the Faroe Islands (1948) under Denmark, Hong Kong (1997) and Macau
-(1999) under China, the United States' territories (Puerto Rico, Guam, the
-Northern Mariana Islands, American Samoa, the US Virgin Islands), France's
-overseas collectivities and New Caledonia (from 1853, which Cliopatria names
-French Indochina before 1887), Aruba, Curaçao and Sint Maarten, the Crown
-dependencies and British overseas territories, the Cook Islands, Niue and
-Tokelau, and Australia's Norfolk, Christmas and Cocos Islands. Regions that
-are part of their state proper (Hawaii, the French overseas departments) stay
-in it. Outlines are Natural Earth 1:10m countries (public domain); islands
-under 20 km² are widened by about 1 km. The file was made with a script
-outside the repository.
 The list (`civilizations.json`) carries no outlines: the Civilizations popup's card
 outlines are in `civilization-shapes.json`, downloaded only once the landing
 page shows, so a link straight to the globe skips them.
@@ -203,7 +31,7 @@ page shows, so a link straight to the globe skips them.
 known, years and places in range, event kinds known, links https, translations
 matching the English, and markup only in the messages shown as markup, limited
 to simple tags and https links), and that the map still draws the checked
-realm at each truth point (`scripts/truth-points.json`). It runs on every pull
+realm at each truth point (`borders/truth-points.json`). It runs on every pull
 request with the build (`.github/workflows/check.yml`).
 
 `npm run audit` looks over the whole map for likely mistakes and writes them to
@@ -297,10 +125,10 @@ again.
 
 | Path | What it is |
 | --- | --- |
-| `scripts/build-data.mjs` | Simplifies Cliopatria borders, puts the border overrides in, picks label points, splits them into time windows |
+| `scripts/build-borders.mjs` | Builds the border windows from `borders/`: regroups Natural Earth's provinces by owner year by year, cuts them where needed, keeps holes, picks label points |
+| `scripts/export-geojson.mjs` | Writes the built borders as GeoJSON (`npm run geojson`) |
 | `scripts/border-files.mjs` | Reads and writes the border window files: each distinct ring once, file names hashed so browsers keep them for good, and a coarse copy of each window |
-| `scripts/border-overrides/` | Hand-traced borders that replace Cliopatria's where it is wrong |
-| `scripts/build-civilizations.mjs` | One entry per civilization: dates, largest extent, outline, family. Years corrected by hand where the borders don't span the realm's history are in `scripts/date-fixes.json` |
+| `scripts/build-civilizations.mjs` | One entry per civilization: dates, largest extent, outline, family. |
 | `src/landing.ts` | The Civilizations, Countries and Nations popups, with multi-select |
 | `scripts/build-countries.mjs` | Countries of today and the civilizations that led to each, from the borders |
 | `src/countries.ts` | Loads the countries |
