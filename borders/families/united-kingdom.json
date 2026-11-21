@@ -23,9 +23,10 @@
     "WSB",
     "IOT",
     "gilbert-islands",
-    "IRL"
+    "IRL",
+    "heligoland"
    ],
-   "from": 1890,
+   "from": 1880,
    "why": "The United Kingdom with the Crown Dependencies (Guernsey, Jersey, the Isle of Man), its overseas territories and the Chagos Archipelago, whose land has not changed hands since 1965, and Ireland (the Irish Free State until 1937)"
   },
   {
@@ -45,7 +46,7 @@
     "SYC",
     "weihaiwei"
    ],
-   "from": 1890,
+   "from": 1880,
    "why": "Hong Kong, Brunei, Southern Rhodesia and the colonies in the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence or handover; Weihaiwei, leased from China until 1930"
   },
   {
@@ -67,7 +68,7 @@
     "BHS",
     "GRD"
    ],
-   "from": 1890,
+   "from": 1880,
    "why": "The Gulf protected states, South Arabia with all of Yemen (North Yemen until 1990), and the colonies and protectorates in Africa, the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence"
   },
   {
@@ -94,7 +95,7 @@
     "dervish-nugaal",
     "lado-enclave"
    ],
-   "from": 1890,
+   "from": 1880,
    "why": "The colonies, protectorates and trust territories Britain held in 1960 in Africa, Asia, the Mediterranean and the Caribbean, with today's borders, until their independence, with Malaya and Somalia around them"
   },
   {
@@ -108,7 +109,7 @@
     "ERI",
     "ETH"
    ],
-   "from": 1890,
+   "from": 1880,
    "why": "The Gold Coast and British Togoland (Ghana), Anglo-Egyptian Sudan and Eritrea, which Britain ruled or ran in the 1950s, with today's borders, and Ethiopia around Eritrea. The Haud, run by Britain inside Ethiopia until 1955, is not drawn"
   },
   {
@@ -155,7 +156,7 @@
     "hyd-karnataka",
     "bhadrachalam"
    ],
-   "from": 1890,
+   "from": 1880,
    "why": "British India (with the princely states, drawn as part of it), Burma and Ceylon, with today's borders, from British rule to today, and Newfoundland until it joined Canada. French and Portuguese India stay with their own families"
   },
   {
@@ -175,7 +176,7 @@
     "IRQ",
     "EGY"
    ],
-   "from": 1890,
+   "from": 1880,
    "why": "Mandatory Palestine and Transjordan, and what became of them: Israel, the West Bank, the Gaza Strip, Jordan, and the Sinai occupied by Israel; Iraq, a British mandate until 1932, and Kuwait, occupied by Iraq in 1990-91; Egypt, a British protectorate until 1922 and part of the United Arab Republic in 1958-61"
   },
   {
@@ -7808,6 +7809,795 @@
      "source": {
       "title": "British Central Africa Protectorate (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/British_Central_Africa_Protectorate"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1891-01-01",
+   "what": "Germany buys the Sultan of Zanzibar’s coastal strip and takes it into German East Africa",
+   "source": {
+    "title": "German East Africa (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/German_East_Africa"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "TZA-3395",
+      "TZA-3382",
+      "TZA-3378",
+      "TZA-3387",
+      "TZA-3388"
+     ],
+     "owner": "Sultanate of Zanzibar",
+     "source": {
+      "title": "Sultanate of Zanzibar (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sultanate_of_Zanzibar"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1890-12-26",
+   "what": "Kabaka Mwanga signs a treaty with Frederick Lugard of the Imperial British East Africa Company",
+   "source": {
+    "title": "Buganda (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Buganda"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "UGA-3361",
+      "UGA-2631",
+      "UGA-5598",
+      "UGA-3090",
+      "UGA-3067",
+      "UGA-3092",
+      "UGA-3094",
+      "UGA-3089",
+      "UGA-3078",
+      "UGA-5599",
+      "UGA-5600",
+      "UGA-3091",
+      "UGA-3095",
+      "UGA-5602",
+      "UGA-3077",
+      "UGA-3093",
+      "UGA-5617",
+      "UGA-5619",
+      "UGA-5620",
+      "UGA-3088",
+      "UGA-5618",
+      "UGA-3362",
+      "UGA-3075",
+      "UGA-5597"
+     ],
+     "owner": "Buganda",
+     "source": {
+      "title": "Buganda (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Buganda"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1890-11-04",
+   "what": "Britain declares a protectorate over Zanzibar and Pemba",
+   "source": {
+    "title": "Sultanate of Zanzibar (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Sultanate_of_Zanzibar"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TZA-3337",
+      "TZA-3380",
+      "TZA-3381",
+      "TZA-3383",
+      "TZA-3384"
+     ],
+     "owner": "Sultanate of Zanzibar",
+     "source": {
+      "title": "Sultanate of Zanzibar (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sultanate_of_Zanzibar"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1890-09-12",
+   "what": "The British South Africa Company’s Pioneer Column founds Fort Salisbury in Mashonaland",
+   "source": {
+    "title": "Pioneer Column (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Pioneer_Column"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ZWE-524",
+      "ZWE-525",
+      "ZWE-528",
+      "ZWE-529",
+      "ZWE-532",
+      "ZWE-533"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Pioneer Column (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pioneer_Column"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1890-08-09",
+   "what": "Britain hands Heligoland to Germany under the Heligoland–Zanzibar Treaty",
+   "source": {
+    "title": "Heligoland–Zanzibar Treaty (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Heligoland–Zanzibar_Treaty"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "heligoland"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Heligoland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Heligoland"
+     },
+     "territory": "Heligoland"
+    }
+   ]
+  },
+  {
+   "date": "1889-09-21",
+   "what": "Britain declares a protectorate over the Shire Highlands, the start of British Central Africa",
+   "source": {
+    "title": "British Central Africa Protectorate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/British_Central_Africa_Protectorate"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "MWI-1910",
+      "MWI-1904",
+      "MWI-1919",
+      "MWI-1916",
+      "MWI-1922",
+      "MWI-5510",
+      "MWI-1920",
+      "MWI-1924",
+      "MWI-1923",
+      "MWI-1918",
+      "MWI-1915",
+      "MWI-1917",
+      "MWI-1921"
+     ],
+     "owner": null,
+     "source": {
+      "title": "British Central Africa Protectorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Central_Africa_Protectorate"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1889-04-10",
+   "what": "Emin Pasha leaves Equatoria with Stanley, the last Egyptian province of the Sudan",
+   "source": {
+    "title": "Emin Pasha Relief Expedition (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Emin_Pasha_Relief_Expedition"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "SDS-864",
+      "SDS-865",
+      "SDS-892",
+      "lado-enclave"
+     ],
+     "owner": "Khedivate of Egypt",
+     "source": {
+      "title": "Equatoria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Equatoria"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1888-10-08",
+   "what": "Pahang accepts a British Resident",
+   "source": {
+    "title": "Pahang (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Pahang"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "MYS-1147"
+     ],
+     "owner": "Pahang",
+     "source": {
+      "title": "Pahang (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pahang"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1888-09-17",
+   "what": "Brunei becomes a British protectorate",
+   "source": {
+    "title": "Brunei (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Brunei"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "BRN"
+     ],
+     "owner": "Brunei",
+     "source": {
+      "title": "Brunei (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Brunei"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1888-09-03",
+   "what": "The Imperial British East Africa Company receives its royal charter",
+   "source": {
+    "title": "Imperial British East Africa Company (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Imperial_British_East_Africa_Company"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "KEN",
+      "KEN-1197",
+      "KEN-890",
+      "KEN-891"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Imperial British East Africa Company (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Imperial_British_East_Africa_Company"
+     }
+    },
+    {
+     "pieces": [
+      "KEN-1193",
+      "SOM-2314",
+      "SOM-2315",
+      "SOM-2645"
+     ],
+     "owner": "Sultanate of Zanzibar",
+     "source": {
+      "title": "Sultanate of Zanzibar (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sultanate_of_Zanzibar"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1888-06-14",
+   "what": "Sarawak becomes a British protectorate",
+   "source": {
+    "title": "Raj of Sarawak (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Raj_of_Sarawak"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MYS-1187"
+     ],
+     "owner": "Raj of Sarawak",
+     "source": {
+      "title": "Raj of Sarawak (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Raj_of_Sarawak"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1887-02-01",
+   "what": "British columns occupy the Shan states; the Kachin and Chin hills follow by 1890",
+   "source": {
+    "title": "British rule in Burma (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/British_rule_in_Burma"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "MMR-3277",
+      "MMR-2473",
+      "MMR-3296",
+      "MMR-3274"
+     ],
+     "owner": null,
+     "source": {
+      "title": "British rule in Burma (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_rule_in_Burma"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1886-10-28",
+   "what": "Germany extends its New Guinea protectorate to the northern Solomon Islands",
+   "source": {
+    "title": "German New Guinea (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/German_New_Guinea"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "SLB-1264",
+      "SLB-3508"
+     ],
+     "owner": null,
+     "source": {
+      "title": "German New Guinea (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/German_New_Guinea"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1886-07-10",
+   "what": "The National African Company is chartered as the Royal Niger Company",
+   "source": {
+    "title": "Royal Niger Company (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Royal_Niger_Company"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "NGA-2846",
+      "NGA-2857",
+      "NGA-2865",
+      "NGA-2866",
+      "NGA-2867",
+      "NGA-3470"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Royal Niger Company (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Royal_Niger_Company"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1886-01-13",
+   "what": "Lagos is separated from the Gold Coast and becomes a colony of its own",
+   "source": {
+    "title": "Lagos Colony (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Lagos_Colony"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "NGA-2850"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Lagos Colony (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lagos_Colony"
+     },
+     "territory": "Gold Coast"
+    }
+   ]
+  },
+  {
+   "date": "1885-12-11",
+   "what": "By a treaty with Britain, Johor puts its foreign affairs in British hands",
+   "source": {
+    "title": "Johor Sultanate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Johor_Sultanate"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "MYS-1143"
+     ],
+     "owner": "Johor Sultanate",
+     "source": {
+      "title": "Johor Sultanate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Johor_Sultanate"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1885-11-28",
+   "what": "British troops take Mandalay and depose King Thibaw: Upper Burma is annexed on 1 January 1886",
+   "source": {
+    "title": "Third Anglo-Burmese War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Third_Anglo-Burmese_War"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MMR-3302",
+      "MMR-3276",
+      "MMR-3267",
+      "MMR-3277"
+     ],
+     "owner": "Kingdom of Burma",
+     "source": {
+      "title": "Konbaung dynasty (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Konbaung_dynasty"
+     }
+    },
+    {
+     "pieces": [
+      "MMR-2473",
+      "MMR-3296",
+      "MMR-3274"
+     ],
+     "owner": null,
+     "source": {
+      "title": "British rule in Burma (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_rule_in_Burma"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1885-08-14",
+   "what": "Sennar falls to the Mahdists",
+   "source": {
+    "title": "Mahdist War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Mahdist_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "SDN-880",
+      "SDN-148"
+     ],
+     "owner": "Khedivate of Egypt",
+     "source": {
+      "title": "Mahdist War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mahdist_War"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1885-07-30",
+   "what": "Kassala falls to the Mahdists after a long siege",
+   "source": {
+    "title": "Mahdist War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Mahdist_War"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SDN-884"
+     ],
+     "owner": "Khedivate of Egypt",
+     "source": {
+      "title": "Mahdist War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mahdist_War"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1885-07-01",
+   "what": "The Anglo-Egyptian army leaves Dongola after the failed Gordon relief expedition",
+   "source": {
+    "title": "Nile Expedition (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Nile_Expedition"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "SDN-878"
+     ],
+     "owner": "Khedivate of Egypt",
+     "source": {
+      "title": "Nile Expedition (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Nile_Expedition"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1885-06-05",
+   "what": "Britain declares the Oil Rivers Protectorate on the Niger delta",
+   "source": {
+    "title": "Niger Coast Protectorate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Niger_Coast_Protectorate"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "NGA-2841",
+      "NGA-2842",
+      "NGA-2843",
+      "NGA-2844",
+      "NGA-2845",
+      "NGA-2847",
+      "NGA-2860",
+      "NGA-2862",
+      "NGA-2863"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Niger Coast Protectorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Niger_Coast_Protectorate"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1885-03-31",
+   "what": "Britain declares the Bechuanaland Protectorate",
+   "source": {
+    "title": "Bechuanaland Protectorate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Bechuanaland_Protectorate"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "BWA"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Bechuanaland Protectorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bechuanaland_Protectorate"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1885-02-27",
+   "what": "A German imperial charter puts the German East Africa Company’s treaty lands under German protection",
+   "source": {
+    "title": "German East Africa (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/German_East_Africa"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TZA-3335",
+      "TZA-3336",
+      "TZA-3357",
+      "TZA-3358",
+      "TZA-3359",
+      "TZA-3360",
+      "TZA-3363",
+      "TZA-3379",
+      "TZA-3385",
+      "TZA-3386",
+      "TZA-3389",
+      "TZA-3390",
+      "TZA-3391",
+      "TZA-3392",
+      "TZA-3393",
+      "TZA-3394",
+      "TZA-5584",
+      "TZA-5585",
+      "TZA-5586",
+      "TZA-5587"
+     ],
+     "owner": null,
+     "source": {
+      "title": "German East Africa (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/German_East_Africa"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1885-01-26",
+   "what": "Khartoum falls to the Mahdi and Gordon is killed",
+   "source": {
+    "title": "Siege of Khartoum (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Khartoum"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "SDN-874",
+      "SDN-875",
+      "SDN-879"
+     ],
+     "owner": "Khedivate of Egypt",
+     "source": {
+      "title": "Siege of Khartoum (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Khartoum"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1884-07-14",
+   "what": "The first British protection treaties are signed with the Somali clans as Egypt leaves the coast",
+   "source": {
+    "title": "British Somaliland (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/British_Somaliland"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "SOL",
+      "dervish-nugaal"
+     ],
+     "owner": null,
+     "source": {
+      "title": "British Somaliland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Somaliland"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1884-05-26",
+   "what": "Berber falls to the Mahdists",
+   "source": {
+    "title": "Mahdist War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Mahdist_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "SDN-877",
+      "SDN-876"
+     ],
+     "owner": "Khedivate of Egypt",
+     "source": {
+      "title": "Mahdist War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mahdist_War"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1884-04-28",
+   "what": "Lupton Bey surrenders Bahr el Ghazal to the Mahdists",
+   "source": {
+    "title": "Mahdist War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Mahdist_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "SDS-873",
+      "SDS-147",
+      "SDS-863",
+      "SDS-872",
+      "SDS-869",
+      "SDS-870",
+      "SDS-871"
+     ],
+     "owner": "Khedivate of Egypt",
+     "source": {
+      "title": "Mahdist War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mahdist_War"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1883-12-23",
+   "what": "Slatin surrenders Darfur to the Mahdists",
+   "source": {
+    "title": "Mahdist War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Mahdist_War"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SDN-5856",
+      "SDN-5857",
+      "SDN-5858",
+      "SDN-5859",
+      "SDN-881"
+     ],
+     "owner": "Khedivate of Egypt",
+     "source": {
+      "title": "Mahdist War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mahdist_War"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1883-01-19",
+   "what": "El Obeid falls to the Mahdi: Kordofan is lost to Egypt",
+   "source": {
+    "title": "Siege of El Obeid (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_El_Obeid"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SDN-882",
+      "SDN-883"
+     ],
+     "owner": "Khedivate of Egypt",
+     "source": {
+      "title": "Siege of El Obeid (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_El_Obeid"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1882-09-13",
+   "what": "British troops defeat Urabi at Tel el-Kebir and occupy Egypt",
+   "source": {
+    "title": "Anglo-Egyptian War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Anglo-Egyptian_War"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "EGY",
+      "EGY-1558",
+      "SDN-149"
+     ],
+     "owner": "Khedivate of Egypt",
+     "source": {
+      "title": "Khedivate of Egypt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Khedivate_of_Egypt"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1881-11-01",
+   "what": "The British North Borneo Company receives its royal charter",
+   "source": {
+    "title": "North Borneo Chartered Company (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/North_Borneo_Chartered_Company"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "MYS-1186"
+     ],
+     "owner": null,
+     "source": {
+      "title": "North Borneo Chartered Company (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/North_Borneo_Chartered_Company"
      }
     }
    ]
