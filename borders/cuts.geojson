@@ -18836,6 +18836,155 @@
      ]
     ]
    }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "bengal-duars",
+    "from": "IND-3257",
+    "note": "The Bengal Duars and the hills east of the Teesta around Kalimpong, ceded by Bhutan in 1865, traced roughly along the Teesta and the northern edge of Cooch Behar",
+    "source": {
+     "title": "Duar War (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Duar_War"
+    }
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       88.56,
+       27.3
+      ],
+      [
+       88.53,
+       27.17
+      ],
+      [
+       88.45,
+       27.1
+      ],
+      [
+       88.43,
+       27.05
+      ],
+      [
+       88.45,
+       26.95
+      ],
+      [
+       88.47,
+       26.89
+      ],
+      [
+       88.55,
+       26.78
+      ],
+      [
+       88.65,
+       26.65
+      ],
+      [
+       88.72,
+       26.55
+      ],
+      [
+       88.8,
+       26.44
+      ],
+      [
+       90.0,
+       26.44
+      ],
+      [
+       90.0,
+       27.3
+      ],
+      [
+       88.56,
+       27.3
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "nicobar-islands",
+    "from": "IND-2474",
+    "note": "The Nicobar Islands, south of the Ten Degree Channel, Danish until 1868",
+    "source": {
+     "title": "Nicobar Islands (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Nicobar_Islands"
+    }
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       92.4,
+       6.4
+      ],
+      [
+       94.3,
+       6.4
+      ],
+      [
+       94.3,
+       9.6
+      ],
+      [
+       92.4,
+       9.6
+      ],
+      [
+       92.4,
+       6.4
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "kythira",
+    "from": "GRC-2884",
+    "note": "Kythira and Antikythera, one of the seven Ionian Islands, part of the Attica region today",
+    "source": {
+     "title": "Kythira (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Kythira"
+    }
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       22.8,
+       35.75
+      ],
+      [
+       23.45,
+       35.75
+      ],
+      [
+       23.45,
+       36.42
+      ],
+      [
+       22.8,
+       36.42
+      ],
+      [
+       22.8,
+       35.75
+      ]
+     ]
+    ]
+   }
   }
  ]
 }
