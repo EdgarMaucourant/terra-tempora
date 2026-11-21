@@ -80,6 +80,9 @@
  "indonesia": {
   "name": "Indonésie"
  },
+ "germany": {
+  "name": "Allemagne"
+ },
  "french-sudan": {
   "name": "Soudan français"
  },
@@ -158,14 +161,23 @@
  "sultanate-of-egypt": {
   "name": "Sultanat d’Égypte"
  },
+ "khedivate-of-egypt": {
+  "name": "Khédivat d’Égypte"
+ },
  "tanzania": {
   "name": "Tanzanie"
+ },
+ "german-east-africa": {
+  "name": "Afrique orientale allemande"
  },
  "tanganyika": {
   "name": "Tanganyika"
  },
  "tanganyika-territory": {
   "name": "Territoire du Tanganyika"
+ },
+ "ottoman-empire": {
+  "name": "Empire ottoman"
  },
  "venezuela": {
   "name": "Venezuela"
@@ -176,8 +188,8 @@
  "colonial-nigeria": {
   "name": "Colonie et protectorat du Nigeria"
  },
- "germany": {
-  "name": "Allemagne"
+ "kamerun": {
+  "name": "Kamerun"
  },
  "namibia": {
   "name": "Namibie"
@@ -187,9 +199,6 @@
  },
  "portuguese-mozambique": {
   "name": "Mozambique portugais"
- },
- "kamerun": {
-  "name": "Kamerun"
  },
  "turkey": {
   "name": "Turquie"
@@ -211,6 +220,12 @@
  },
  "kenya-colony": {
   "name": "Colonie du Kenya"
+ },
+ "east-africa-protectorate": {
+  "name": "Protectorat de l’Afrique orientale"
+ },
+ "northern-nigeria-protectorate": {
+  "name": "Protectorat du Nigeria du Nord"
  },
  "myanmar": {
   "name": "Birmanie"
@@ -254,8 +269,14 @@
  "thailand": {
   "name": "Thaïlande"
  },
+ "sultanate-of-darfur": {
+  "name": "Sultanat du Darfour"
+ },
  "spain": {
   "name": "Espagne"
+ },
+ "north-western-rhodesia": {
+  "name": "Rhodésie du Nord-Ouest"
  },
  "trust-territory-of-somaliland": {
   "name": "Territoire sous tutelle de la Somalie"
@@ -368,6 +389,9 @@
  "new-zealand": {
   "name": "Nouvelle-Zélande"
  },
+ "north-eastern-rhodesia": {
+  "name": "Rhodésie du Nord-Est"
+ },
  "gabon": {
   "name": "Gabon"
  },
@@ -395,6 +419,9 @@
  "gold-coast": {
   "name": "Côte-de-l'Or"
  },
+ "arab-kingdom-of-syria": {
+  "name": "Royaume arabe de Syrie"
+ },
  "romania": {
   "name": "Roumanie"
  },
@@ -419,9 +446,6 @@
  "mandate-for-syria-and-the-lebanon": {
   "name": "Mandat français en Syrie et au Liban"
  },
- "ottoman-empire": {
-  "name": "Empire ottoman"
- },
  "kyrgyzstan": {
   "name": "Kirghizistan"
  },
@@ -431,11 +455,11 @@
  "mandatory-syria": {
   "name": "Syrie mandataire"
  },
+ "southern-nigeria-protectorate": {
+  "name": "Protectorat du Nigeria du Sud"
+ },
  "syria": {
   "name": "Syrie"
- },
- "arab-kingdom-of-syria": {
-  "name": "Royaume arabe de Syrie"
  },
  "cambodia": {
   "name": "Cambodge"
@@ -557,6 +581,9 @@
  "jordan": {
   "name": "Jordanie"
  },
+ "togoland": {
+  "name": "Togoland"
+ },
  "state-of-damascus": {
   "name": "État de Damas"
  },
@@ -574,6 +601,9 @@
  },
  "british-cameroons": {
   "name": "Cameroun britannique"
+ },
+ "dervish-state": {
+  "name": "État derviche"
  },
  "czech-republic": {
   "name": "Tchéquie"
@@ -637,9 +667,6 @@
  },
  "french-togoland": {
   "name": "Togo français"
- },
- "togoland": {
-  "name": "Togoland"
  },
  "croatia": {
   "name": "Croatie"
@@ -1006,9 +1033,6 @@
  },
  "singapore": {
   "name": "Singapour"
- },
- "german-east-africa": {
-  "name": "Afrique orientale allemande"
  },
  "palau": {
   "name": "Palaos"
