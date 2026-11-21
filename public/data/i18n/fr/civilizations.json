@@ -29,6 +29,9 @@
  "french-west-africa": {
   "name": "Afrique-Occidentale française"
  },
+ "khedivate-of-egypt": {
+  "name": "Khédivat d’Égypte"
+ },
  "india": {
   "name": "Inde"
  },
@@ -70,9 +73,6 @@
  },
  "greenland": {
   "name": "Groenland"
- },
- "khedivate-of-egypt": {
-  "name": "Khédivat d’Égypte"
  },
  "mexico": {
   "name": "Mexique"
@@ -356,8 +356,14 @@
  "republic-of-the-congo": {
   "name": "République du Congo"
  },
+ "sultanate-of-zanzibar": {
+  "name": "Sultanat de Zanzibar"
+ },
  "barotseland": {
   "name": "Barotseland"
+ },
+ "kingdom-of-burma": {
+  "name": "Royaume de Birmanie"
  },
  "finland": {
   "name": "Finlande"
@@ -692,6 +698,9 @@
  "french-cochinchina": {
   "name": "Cochinchine française"
  },
+ "buganda": {
+  "name": "Bouganda"
+ },
  "unfederated-malay-states": {
   "name": "États malais non fédérés"
  },
@@ -832,6 +841,9 @@
  },
  "spanish-morocco": {
   "name": "Protectorat espagnol au Maroc"
+ },
+ "johor-sultanate": {
+  "name": "Sultanat de Johor"
  },
  "diego-suarez": {
   "name": "Diego-Suarez"
@@ -1282,6 +1294,9 @@
  },
  "ashmore-and-cartier-islands": {
   "name": "Îles Ashmore-et-Cartier"
+ },
+ "heligoland": {
+  "name": "Heligoland"
  },
  "coral-sea-islands": {
   "name": "Îles de la mer de Corail"
