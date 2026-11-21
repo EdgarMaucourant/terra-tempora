@@ -5,6 +5,9 @@
  "france": {
   "name": "Francia"
  },
+ "united-kingdom": {
+  "name": "Reino Unido"
+ },
  "canada": {
   "name": "Canadá"
  },
@@ -20,11 +23,11 @@
  "australia": {
   "name": "Australia"
  },
- "united-kingdom": {
-  "name": "Reino Unido"
- },
  "french-west-africa": {
   "name": "África Occidental Francesa"
+ },
+ "british-raj": {
+  "name": "Raj británico"
  },
  "india": {
   "name": "India"
@@ -56,6 +59,9 @@
  "french-algeria": {
   "name": "Argelia francesa"
  },
+ "italy": {
+  "name": "Italia"
+ },
  "portugal": {
   "name": "Portugal"
  },
@@ -79,6 +85,9 @@
  },
  "libya": {
   "name": "Libia"
+ },
+ "italian-libya": {
+  "name": "Libia italiana"
  },
  "iran": {
   "name": "Irán"
@@ -137,6 +146,9 @@
  "colonial-mauritania": {
   "name": "Colonia de Mauritania"
  },
+ "pakistan": {
+  "name": "Pakistán"
+ },
  "egypt": {
   "name": "Egipto"
  },
@@ -154,9 +166,6 @@
  },
  "nigeria": {
   "name": "Nigeria"
- },
- "pakistan": {
-  "name": "Pakistán"
  },
  "colonial-nigeria": {
   "name": "Colonia y Protectorado de Nigeria"
@@ -195,7 +204,10 @@
   "name": "Chile"
  },
  "myanmar": {
-  "name": "Birmania"
+  "name": "Myanmar"
+ },
+ "british-burma": {
+  "name": "Birmania británica"
  },
  "afghanistan": {
   "name": "Afganistán"
@@ -239,11 +251,11 @@
  "spain": {
   "name": "España"
  },
- "italy": {
-  "name": "Italia"
- },
  "trust-territory-of-somaliland": {
   "name": "Territorio en fideicomiso de Somalia"
+ },
+ "italian-somaliland": {
+  "name": "Somalia italiana"
  },
  "turkmenistan": {
   "name": "Turkmenistán"
@@ -274,6 +286,9 @@
  },
  "morocco": {
   "name": "Marruecos"
+ },
+ "dominion-of-newfoundland": {
+  "name": "Dominio de Terranova"
  },
  "paraguay": {
   "name": "Paraguay"
@@ -386,6 +401,9 @@
  "british-guiana": {
   "name": "Guayana Británica"
  },
+ "hyderabad-state": {
+  "name": "Estado de Hyderabad"
+ },
  "belarus": {
   "name": "Bielorrusia"
  },
@@ -455,8 +473,14 @@
  "bangladesh": {
   "name": "Bangladés"
  },
+ "british-malaya": {
+  "name": "Malasia británica"
+ },
  "malaya": {
   "name": "Malaya"
+ },
+ "malayan-union": {
+  "name": "Unión Malaya"
  },
  "greece": {
   "name": "Grecia"
@@ -467,8 +491,14 @@
  "crown-colony-of-sarawak": {
   "name": "Colonia de Sarawak"
  },
+ "raj-of-sarawak": {
+  "name": "Raj de Sarawak"
+ },
  "eritrea": {
   "name": "Eritrea"
+ },
+ "italian-eritrea": {
+  "name": "Eritrea italiana"
  },
  "north-korea": {
   "name": "Corea del Norte"
@@ -545,6 +575,9 @@
  "north-borneo": {
   "name": "Borneo del Norte"
  },
+ "federated-malay-states": {
+  "name": "Estados Malayos Federados"
+ },
  "sierra-leone": {
   "name": "Sierra Leona"
  },
@@ -569,6 +602,9 @@
  "sri-lanka": {
   "name": "Sri Lanka"
  },
+ "british-ceylon": {
+  "name": "Ceilán británico"
+ },
  "lithuania": {
   "name": "Lituania"
  },
@@ -577,6 +613,9 @@
  },
  "french-cochinchina": {
   "name": "Cochinchina francesa"
+ },
+ "unfederated-malay-states": {
+  "name": "Estados Malayos No Federados"
  },
  "togo": {
   "name": "Togo"
@@ -782,6 +821,9 @@
  "french-southern-and-antarctic-lands": {
   "name": "Tierras Australes y Antárticas Francesas"
  },
+ "kingdom-of-sikkim": {
+  "name": "Reino de Sikkim"
+ },
  "jabal-druze-state": {
   "name": "Estado de Yábal al-Druz"
  },
@@ -820,6 +862,9 @@
  },
  "french-polynesia": {
   "name": "Polinesia Francesa"
+ },
+ "straits-settlements": {
+  "name": "Establecimientos de los Estrechos"
  },
  "samoa": {
   "name": "Samoa"

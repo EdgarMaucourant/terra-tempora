@@ -23,7 +23,7 @@
     "WSB",
     "IOT"
    ],
-   "from": 1950,
+   "from": 1945,
    "why": "The United Kingdom with the Crown Dependencies (Guernsey, Jersey, the Isle of Man), its overseas territories and the Chagos Archipelago, whose land has not changed hands since 1965"
   },
   {
@@ -42,7 +42,7 @@
     "SLB",
     "SYC"
    ],
-   "from": 1950,
+   "from": 1945,
    "why": "Hong Kong, Brunei, Southern Rhodesia and the colonies in the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence or handover"
   },
   {
@@ -64,7 +64,7 @@
     "BHS",
     "GRD"
    ],
-   "from": 1950,
+   "from": 1945,
    "why": "The Gulf protected states, South Arabia with all of Yemen (North Yemen until 1990), and the colonies and protectorates in Africa, the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence"
   },
   {
@@ -89,7 +89,7 @@
     "JAM",
     "TTO"
    ],
-   "from": 1950,
+   "from": 1945,
    "why": "The colonies, protectorates and trust territories Britain held in 1960 in Africa, Asia, the Mediterranean and the Caribbean, with today's borders, until their independence, with Malaya and Somalia around them"
   },
   {
@@ -104,8 +104,55 @@
     "ERI",
     "ETH"
    ],
-   "from": 1950,
+   "from": 1945,
    "why": "The Gold Coast and British Togoland (Ghana), Anglo-Egyptian Sudan, Libya and Eritrea, which Britain ruled or ran in the 1950s, with today's borders, and Ethiopia around Eritrea. The Haud, run by Britain inside Ethiopia until 1955, is not drawn"
+  },
+  {
+   "pieces": [
+    "IND-20011",
+    "IND-20012",
+    "IND-2427",
+    "IND-2428",
+    "IND-2429",
+    "IND-2430",
+    "IND-2431",
+    "IND-2441",
+    "IND-2442",
+    "IND-2443",
+    "IND-2444",
+    "IND-2446",
+    "IND-2447",
+    "IND-2474",
+    "IND-2477",
+    "IND-2478",
+    "IND-2479",
+    "IND-2489",
+    "IND-3249",
+    "IND-3250",
+    "IND-3253",
+    "IND-3254",
+    "IND-3256",
+    "IND-3257",
+    "IND-3258",
+    "IND-3259",
+    "IND-3260",
+    "IND-3261",
+    "IND-3263",
+    "IND-3264",
+    "IND-3299",
+    "IND-3300",
+    "IND-3301",
+    "PAK",
+    "BGD",
+    "MMR",
+    "LKA",
+    "CAN-686",
+    "hyd-marathwada",
+    "hyd-karnataka",
+    "bhadrachalam"
+   ],
+   "from": 1945,
+   "why": "British India (with the princely states, drawn as part of it), Burma and Ceylon, with today's borders, from British rule to today, and Newfoundland until it joined Canada. French and Portuguese India stay with their own families"
   }
  ],
  "changes": [
@@ -665,6 +712,28 @@
    ]
   },
   {
+   "date": "1975-05-16",
+   "what": "Sikkim, an Indian protectorate since 1950, becomes a state of India",
+   "source": {
+    "title": "Kingdom of Sikkim (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Sikkim"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "IND-3259"
+     ],
+     "owner": "India",
+     "source": {
+      "title": "Kingdom of Sikkim (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Sikkim"
+     },
+     "territory": "Kingdom of Sikkim"
+    }
+   ]
+  },
+  {
    "date": "1974-08-16",
    "what": "Turkish forces end their second offensive holding the north of Cyprus",
    "source": {
@@ -767,6 +836,27 @@
      "source": {
       "title": "Emirate of Ras Al Khaimah (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Emirate_of_Ras_Al_Khaimah"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1971-12-16",
+   "what": "East Pakistan becomes independent as Bangladesh after the Liberation War",
+   "source": {
+    "title": "Bangladesh Liberation War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Bangladesh_Liberation_War"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "BGD"
+     ],
+     "owner": "Pakistan",
+     "source": {
+      "title": "East Pakistan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/East_Pakistan"
      }
     }
    ]
@@ -2302,6 +2392,523 @@
       "url": "https://en.wikipedia.org/wiki/Fezzan"
      },
      "territory": "Fezzan"
+    }
+   ]
+  },
+  {
+   "date": "1950-04-01",
+   "what": "Britain hands Somalia to Italy as a UN trust territory",
+   "source": {
+    "title": "Trust Territory of Somaliland (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Trust_Territory_of_Somaliland"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SOM"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Trust Territory of Somaliland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Trust_Territory_of_Somaliland"
+     },
+     "territory": "Somalia"
+    }
+   ]
+  },
+  {
+   "date": "1949-03-31",
+   "what": "Newfoundland joins Canada as its tenth province",
+   "source": {
+    "title": "Dominion of Newfoundland (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Dominion_of_Newfoundland"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "CAN-686"
+     ],
+     "owner": "Dominion of Newfoundland",
+     "source": {
+      "title": "Dominion of Newfoundland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Dominion_of_Newfoundland"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1948-09-17",
+   "what": "India annexes Hyderabad after a short military operation",
+   "source": {
+    "title": "Indian annexation of Hyderabad (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Indian_annexation_of_Hyderabad"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "IND-20011",
+      "hyd-marathwada",
+      "hyd-karnataka"
+     ],
+     "owner": "Hyderabad State",
+     "source": {
+      "title": "Hyderabad State (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hyderabad_State"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1948-02-04",
+   "what": "Ceylon becomes independent",
+   "source": {
+    "title": "Dominion of Ceylon (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Dominion_of_Ceylon"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "LKA"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British Ceylon (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Ceylon"
+     },
+     "territory": "British Ceylon"
+    }
+   ]
+  },
+  {
+   "date": "1948-02-01",
+   "what": "The Malayan Union becomes the Federation of Malaya",
+   "source": {
+    "title": "Federation of Malaya (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Federation_of_Malaya"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MYS-1141",
+      "MYS-1140",
+      "MYS-1144",
+      "MYS-1137",
+      "MYS-1139",
+      "MYS-1148",
+      "MYS-1146",
+      "MYS-1145",
+      "MYS-1143",
+      "MYS-1147",
+      "MYS-1149",
+      "MYS-4831",
+      "MYS-4832"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Malayan Union (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Malayan_Union"
+     },
+     "territory": "Malayan Union"
+    }
+   ]
+  },
+  {
+   "date": "1948-01-04",
+   "what": "Burma becomes independent",
+   "source": {
+    "title": "Burma (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Burma"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MMR"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British rule in Burma (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_rule_in_Burma"
+     },
+     "territory": "British Burma"
+    }
+   ]
+  },
+  {
+   "date": "1947-09-15",
+   "what": "The peace treaty with Italy comes into force: Italy gives up Libya, Eritrea and Somalia, which Britain and France have occupied since 1941–43",
+   "source": {
+    "title": "Treaty of Paris between Italy and the Allied Powers (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Paris_between_Italy_and_the_Allied_Powers"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "LBY-2974",
+      "LBY-2985",
+      "LBY-2970",
+      "LBY-2966",
+      "LBY-2978",
+      "LBY-2975",
+      "LBY-2973",
+      "LBY-2976",
+      "LBY-2964",
+      "LBY-2987",
+      "LBY-2983",
+      "LBY-2986",
+      "LBY-2982",
+      "LBY-2981",
+      "LBY-2984",
+      "LBY-2965"
+     ],
+     "owner": "Italy",
+     "source": {
+      "title": "Italian Libya (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Italian_Libya"
+     },
+     "territory": "Italian Libya",
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1943-01-23",
+      "note": "Occupied by Britain in the Second World War; Italy gave up its colonies in the 1947 peace treaty",
+      "source": {
+       "title": "British Military Administration (Libya) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/British_Military_Administration_(Libya)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "LBY-2882",
+      "LBY-2967",
+      "LBY-5488",
+      "LBY-2971",
+      "LBY-2969",
+      "LBY-2968"
+     ],
+     "owner": "Italy",
+     "source": {
+      "title": "Italian Libya (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Italian_Libya"
+     },
+     "territory": "Italian Libya",
+     "hatch": {
+      "by": "France",
+      "since": "1943-01-12",
+      "note": "Occupied by Free French forces in the Second World War; Italy gave up its colonies in the 1947 peace treaty",
+      "source": {
+       "title": "Fezzan (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Fezzan"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ERI"
+     ],
+     "owner": "Italy",
+     "source": {
+      "title": "Italian Eritrea (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Italian_Eritrea"
+     },
+     "territory": "Italian Eritrea",
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1941-04-01",
+      "note": "Occupied by Britain in the Second World War",
+      "source": {
+       "title": "British Military Administration (Eritrea) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/British_Military_Administration_(Eritrea)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "SOM"
+     ],
+     "owner": "Italy",
+     "source": {
+      "title": "Italian Somaliland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Italian_Somaliland"
+     },
+     "territory": "Italian Somaliland",
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1941-02-25",
+      "note": "Occupied by Britain in the Second World War",
+      "source": {
+       "title": "Italian Somaliland (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Italian_Somaliland"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1947-08-15",
+   "what": "British India is partitioned into the independent dominions of India and Pakistan",
+   "source": {
+    "title": "Partition of India (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Partition_of_India"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "IND-20011",
+      "IND-20012",
+      "IND-2427",
+      "IND-2428",
+      "IND-2429",
+      "IND-2430",
+      "IND-2431",
+      "IND-2441",
+      "IND-2442",
+      "IND-2443",
+      "IND-2444",
+      "IND-2446",
+      "IND-2447",
+      "IND-2474",
+      "IND-2477",
+      "IND-2478",
+      "IND-2479",
+      "IND-2489",
+      "IND-3249",
+      "IND-3250",
+      "IND-3253",
+      "IND-3254",
+      "IND-3256",
+      "IND-3257",
+      "IND-3258",
+      "IND-3260",
+      "IND-3261",
+      "IND-3263",
+      "IND-3264",
+      "IND-3299",
+      "IND-3300",
+      "IND-3301",
+      "PAK",
+      "BGD",
+      "hyd-marathwada",
+      "hyd-karnataka",
+      "bhadrachalam"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British Raj (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Raj"
+     },
+     "territory": "British Raj"
+    },
+    {
+     "pieces": [
+      "IND-3259"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Kingdom of Sikkim (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Sikkim"
+     },
+     "territory": "Kingdom of Sikkim"
+    }
+   ]
+  },
+  {
+   "date": "1946-12-13",
+   "what": "Tanganyika, the Cameroons and Togoland under British rule become UN trust territories instead of League of Nations mandates",
+   "source": {
+    "title": "United Nations trust territories (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/United_Nations_trust_territories"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TZA"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Tanganyika Territory (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tanganyika_Territory"
+     },
+     "territory": "Tanganyika Territory",
+     "hatch": {
+      "by": "League of Nations",
+      "since": "1922-07-20",
+      "trust": true,
+      "note": "Administered by the United Kingdom under a League of Nations mandate from 1922",
+      "source": {
+       "title": "League of Nations mandate (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/League_of_Nations_mandate"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "TZA-3337",
+      "TZA-3383",
+      "TZA-3384",
+      "TZA-3381",
+      "TZA-3380"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Sultanate of Zanzibar (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sultanate_of_Zanzibar"
+     },
+     "territory": "Zanzibar"
+    },
+    {
+     "pieces": [
+      "ncam-borno",
+      "ncam-adamawa-north",
+      "ncam-adamawa-south",
+      "ncam-taraba"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British Cameroons (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Cameroons"
+     },
+     "territory": "British Cameroons",
+     "hatch": {
+      "by": "League of Nations",
+      "since": "1922-07-20",
+      "trust": true,
+      "note": "Administered by the United Kingdom as part of Nigeria, under a League of Nations mandate from 1922",
+      "source": {
+       "title": "League of Nations mandate (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/League_of_Nations_mandate"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "btog-volta",
+      "btog-northern",
+      "btog-upper-east"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British Togoland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Togoland"
+     },
+     "territory": "British Togoland",
+     "hatch": {
+      "by": "League of Nations",
+      "since": "1922-07-20",
+      "trust": true,
+      "note": "Administered by the United Kingdom with the Gold Coast, under a League of Nations mandate from 1922",
+      "source": {
+       "title": "League of Nations mandate (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/League_of_Nations_mandate"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1946-07-15",
+   "what": "Labuan joins the new colony of North Borneo",
+   "source": {
+    "title": "North Borneo (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/North_Borneo"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MYS-4833"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Straits Settlements (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Straits_Settlements"
+     },
+     "territory": "Straits Settlements"
+    }
+   ]
+  },
+  {
+   "date": "1946-07-01",
+   "what": "The last White Rajah cedes Sarawak to the British Crown",
+   "source": {
+    "title": "Raj of Sarawak (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Raj_of_Sarawak"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MYS-1187"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Raj of Sarawak (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Raj_of_Sarawak"
+     },
+     "territory": "Raj of Sarawak"
+    }
+   ]
+  },
+  {
+   "date": "1946-04-01",
+   "what": "The Straits Settlements are dissolved: Singapore becomes a colony of its own, and Penang and Malacca join the Malay states in the Malayan Union",
+   "source": {
+    "title": "Malayan Union (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Malayan_Union"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SGP",
+      "MYS-1139",
+      "MYS-1145"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Straits Settlements (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Straits_Settlements"
+     },
+     "territory": "Straits Settlements"
+    },
+    {
+     "pieces": [
+      "MYS-1137",
+      "MYS-1148",
+      "MYS-1146",
+      "MYS-1147",
+      "MYS-4831",
+      "MYS-4832"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Federated Malay States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Federated_Malay_States"
+     },
+     "territory": "Federated Malay States"
+    },
+    {
+     "pieces": [
+      "MYS-1143",
+      "MYS-1140",
+      "MYS-1141",
+      "MYS-1144",
+      "MYS-1149"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Unfederated Malay States (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Unfederated_Malay_States"
+     },
+     "territory": "Unfederated Malay States"
     }
    ]
   }
