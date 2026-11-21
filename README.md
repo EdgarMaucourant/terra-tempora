@@ -76,32 +76,17 @@ button on the site also lets you send a kind word.
 
 The code is under the [MIT licence](LICENSE). The map data, texts and
 pictures keep the licences of their sources, listed below; the built border
-files in `public/data/` include CC BY-SA traces, so they are shared as a whole
-under CC BY-SA 4.0.
+files in `public/data/` include lines traced from CC BY-SA maps, so they are
+shared as a whole under CC BY-SA 4.0.
 
-- Borders: [Cliopatria](https://github.com/Seshat-Global-History-Databank/cliopatria),
-  Seshat Global History Databank, CC BY 4.0.
-- Hand-traced borders in `scripts/border-overrides/`, shared under the licence
-  of the map they were traced from:
-  - Magadha and its successors, 600 to 171 BCE: "Magadha Expansion" by
-    Avantiputra7 on Wikimedia Commons (after Schwartzberg, 1992), CC BY-SA 4.0.
-  - Ségou, Kaarta, Kong and the Mossi and Hausa kingdoms: "Africa de l'Oèst
-    (fin sègle XVIII)" by Nicolas Eynaud on Wikimedia Commons, CC BY-SA 4.0.
-  - Luba Empire: "Lunda Empire", Library of Congress, *Zaire: A Country Study*
-    (1994), after Jan Vansina, public domain.
-  - Great Zimbabwe: "African civilizations map (pre-colonial)" by Jeff Israel
-    on Wikimedia Commons, CC BY-SA 3.0.
-  - The United States, 1783 to 1889 (the land it owned after each treaty or
-    purchase): today's states and rivers from Natural Earth 1:10m, cut along
-    the treaty lines, public domain.
-  - The British dominions (Canada from 1867, Newfoundland, Australia, New
-    Zealand and South Africa) before Cliopatria draws them, and land owned but
-    not yet settled (Australia before 1901, Mexico's north before 1848, Russian
-    America, Greenland from 1921): today's countries and provinces from
-    Natural Earth 1:10m, public domain.
-  - French India's trading posts: Pondicherry, Karikal and Yanam from
-    today's Puducherry in Natural Earth 1:10m, public domain; Mahé and
-    Chandernagore drawn as squares of their area around the town.
+- Borders: today's provinces and countries from
+  [Natural Earth 1:10m](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/)
+  (public domain), regrouped by owner for each year. The history lives in
+  `borders/`: each change names its date, its source (mostly Wikipedia) and how
+  sure it is (exact, close or rough). Where a border no longer follows today's
+  lines, the piece is cut along a line traced from an old map, named with each
+  cut in `borders/cuts.geojson`. Some of those maps are on Wikimedia Commons
+  under CC BY-SA, which is why the built border files are shared under CC BY-SA 4.0.
 - Key figures, links between realms and most events: Wikidata, CC0, with
   Wikipedia's opening paragraphs (CC BY-SA).
 - Pictures: Wikimedia Commons, each under its own free licence, credited with
