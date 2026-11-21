@@ -18,13 +18,16 @@ const COARSE_TOLERANCE = 20;
 export function writeWindow(dir, w, shapes, level = "") {
   const rings = [];
   const seen = new Map();
+  const at = (ring) => {
+    const key = ring.join(",");
+    if (!seen.has(key)) seen.set(key, rings.push(ring) - 1);
+    return seen.get(key);
+  };
+  // Holes, when a shape has any, are listed per ring: holes[i] are ring i's.
   const list = shapes.map((s) => ({
     ...s,
-    rings: s.rings.map((ring) => {
-      const key = ring.join(",");
-      if (!seen.has(key)) seen.set(key, rings.push(ring) - 1);
-      return seen.get(key);
-    }),
+    rings: s.rings.map(at),
+    ...(s.holes && { holes: s.holes.map((hs) => hs.map(at)) }),
   }));
   const json = JSON.stringify({ rings, shapes: list });
   const hash = createHash("sha256").update(json).digest("hex").slice(0, 10);
@@ -36,7 +39,11 @@ export function writeWindow(dir, w, shapes, level = "") {
 /** One window's shapes, each with its own rings (delta-encoded, as in toShape). */
 export function readWindow(dir, file) {
   const { rings, shapes } = JSON.parse(readFileSync(`${dir}/${file}`, "utf8"));
-  return shapes.map((s) => ({ ...s, rings: s.rings.map((i) => rings[i]) }));
+  return shapes.map((s) => ({
+    ...s,
+    rings: s.rings.map((i) => rings[i]),
+    ...(s.holes && { holes: s.holes.map((hs) => hs.map((i) => rings[i])) }),
+  }));
 }
 
 /**
@@ -53,7 +60,7 @@ export function coarsen(shapes) {
     }
     return memo.get(key);
   };
-  return shapes.map((s) => ({ ...s, rings: s.rings.map(coarse) }));
+  return shapes.map((s) => ({ ...s, rings: s.rings.map(coarse), ...(s.holes && { holes: s.holes.map((hs) => hs.map(coarse)) }) }));
 }
 
 function decode(ring) {

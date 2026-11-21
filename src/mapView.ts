@@ -51,14 +51,16 @@ type Shape = Feature<Polygon | MultiPolygon, null>;
 
 /** A Cliopatria shape as GeoJSON, each ring wound the way d3 expects. */
 function toFeature(p: Polity): Shape {
-  const polygons = p.rings.map((flat) => {
+  const toRing = (flat: number[], hole: boolean) => {
     const ring: [number, number][] = [];
     for (let i = 0; i < flat.length; i += 2) ring.push([flat[i], flat[i + 1]]);
     ring.push(ring[0]);
-    // d3 treats a ring wound the other way as "everything but this shape".
-    if (geoArea({ type: "Polygon", coordinates: [ring] }) > 2 * Math.PI) ring.reverse();
-    return [ring];
-  });
+    // d3 treats a ring wound the other way as "everything but this shape",
+    // which is how it reads a hole.
+    if (geoArea({ type: "Polygon", coordinates: [ring] }) > 2 * Math.PI !== hole) ring.reverse();
+    return ring;
+  };
+  const polygons = p.rings.map((flat, i) => [toRing(flat, false), ...(p.holes?.[i] ?? []).map((h) => toRing(h, true))]);
   const geometry: Polygon | MultiPolygon =
     polygons.length === 1 ? { type: "Polygon", coordinates: polygons[0] } : { type: "MultiPolygon", coordinates: polygons };
   return { type: "Feature", properties: null, geometry };
