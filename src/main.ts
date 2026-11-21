@@ -588,11 +588,12 @@ function polityAt(position: { x: number; y: number }): Polity | undefined {
   if (!p || typeof p !== "object" || !("rings" in p)) return undefined;
   // Land hatched over its owner (Crimea over Ukraine) is the hatching's.
   const at = p.kind ? null : globeLonLat(position);
-  if (!at) return p;
+  if (!at) return layer.hatchOver(p, year) ?? p;
   // Shapes have no holes: a realm inside another (Hyderabad State in India)
   // overlaps it, and the globe may pick either. The smaller one is on top.
   const inner = layer.landAt(at[0], at[1], year);
-  return layer.hatchAt(at[0], at[1], year) || (inner && inner.area < p.area ? inner : p);
+  const land = inner && inner.area < p.area ? inner : p;
+  return layer.hatchAt(at[0], at[1], year) || layer.hatchOver(land, year) || land;
 }
 
 /** A realm picked from the list: as a click on it, turning the globe to it when it stays in view. */
@@ -916,8 +917,9 @@ function hoverRealm(p: Polity | null | undefined, x: number, y: number) {
   const span = own ? (p.partOf && own.partOfYears ? own.partOfYears : civYears(own)) : civYears(civ);
   const years = formatRange(span[0], span[1]);
   // A member of a group says so: the Kingdom of Spain in 1530 is part of the Spanish Empire.
+  // The owner is not repeated: the name already says it, "Jersey (United Kingdom)".
   const named = under ?? p;
-  const groups = [...(home ? [] : (named.groups ?? [])), ...(named.partOf ? [named.partOf] : [])]
+  const groups = (home ? [] : (named.groups ?? []))
     .filter((g) => g !== named.name)
     .map((g) => placeName(g));
   const line = (textContent: string) => Object.assign(document.createElement("span"), { textContent });
@@ -934,6 +936,12 @@ function hoverRealm(p: Polity | null | undefined, x: number, y: number) {
             }),
           ),
         ]
+      : []),
+    // A closed group says who holds its members (French Indochina held by Japan).
+    ...(p.kind === "group"
+      ? layer
+          .groupHolders(p.name, year)
+          .map((h) => line(t(h.whole ? "tooltip.heldBy" : "tooltip.partlyHeldBy", { by: placeName(h.by), year: h.since?.slice(0, 4) ?? "" })))
       : []),
     ...(p.rough ? [line(t("map.activeWar"))] : []),
     ...(p.source ? [line(t("tooltip.border", { source: shortSource(p.source) })), line(t("tooltip.borderHint"))] : []),

@@ -7582,6 +7582,300 @@
    "summary": "Under Ariel Sharon’s disengagement plan, Israel evacuates all 21 of its settlements in the Gaza Strip and withdraws its army by 12 September 2005, while keeping control of Gaza’s borders, airspace and coast. Hamas takes over the strip in 2007, after which Israel and Egypt impose a blockade; the UN still counts Gaza as occupied territory.",
    "wikipedia": "Israeli_disengagement_from_Gaza",
    "search": "Israeli disengagement from Gaza 2005 Ariel Sharon settlements Gush Katif evacuation withdrawal blockade Hamas 2007 occupation"
+  },
+  {
+   "id": "britain-declares-war-1939",
+   "kind": "war",
+   "year": 1939,
+   "title": "Britain declares war on Germany, 3 September 1939",
+   "place": "London",
+   "lonLat": [
+    -0.13,
+    51.5
+   ],
+   "civs": [
+    "united-kingdom",
+    "germany"
+   ],
+   "summary": "Two days after Germany invades Poland, Britain’s ultimatum runs out at 11 a.m. on 3 September 1939, and Neville Chamberlain tells the nation by radio that the country is at war with Germany. France follows the same day, and Australia, New Zealand, South Africa and Canada join within a week. The Second World War has begun.",
+   "wikipedia": "British_declaration_of_war_on_Germany_(1939)",
+   "search": "Britain declares war on Germany 3 September 1939 Chamberlain broadcast invasion of Poland ultimatum Second World War begins dominions"
+  },
+  {
+   "id": "battle-of-britain-1940",
+   "kind": "war",
+   "year": 1940,
+   "to": 1941,
+   "title": "The Battle of Britain and the Blitz, 1940 – 1941",
+   "place": "Kent",
+   "lonLat": [
+    0.9,
+    51.2
+   ],
+   "civs": [
+    "united-kingdom",
+    "germany"
+   ],
+   "summary": "After the fall of France, the German air force tries to destroy the Royal Air Force over southern England from July 1940, to clear the way for an invasion. Helped by radar, the RAF holds, and Hitler puts off the invasion in September. Germany turns to bombing cities by night, the Blitz, which kills some 43,000 civilians in London, Coventry and other towns before it ends in May 1941.",
+   "wikipedia": "Battle_of_Britain",
+   "search": "Battle of Britain July October 1940 RAF Luftwaffe Spitfire Hurricane radar Operation Sea Lion Churchill the few Blitz London Coventry bombing May 1941"
+  },
+  {
+   "id": "siege-of-malta-1940",
+   "kind": "war",
+   "year": 1940,
+   "to": 1942,
+   "title": "The siege of Malta, 1940 – 1942",
+   "place": "Valletta",
+   "lonLat": [
+    14.51,
+    35.9
+   ],
+   "civs": [
+    "malta",
+    "united-kingdom",
+    "italy",
+    "germany"
+   ],
+   "summary": "From Italy’s first air raid on 11 June 1940, Italian and German bombers pound the British island colony of Malta, a base for attacks on Axis convoys to Libya. By mid-1942 its people are close to starving, until the battered Operation Pedestal convoy reaches the Grand Harbour in August. King George VI awards the whole island the George Cross for its endurance.",
+   "wikipedia": "Siege_of_Malta_(World_War_II)",
+   "search": "Siege of Malta 1940 1942 George Cross Valletta Italian German bombing Operation Pedestal convoy Santa Marija Grand Harbour"
+  },
+  {
+   "id": "channel-islands-occupied-1940",
+   "kind": "war",
+   "year": 1940,
+   "title": "Germany occupies the Channel Islands, 30 June – 1 July 1940",
+   "place": "Saint Peter Port",
+   "lonLat": [
+    -2.54,
+    49.46
+   ],
+   "civs": [
+    "guernsey",
+    "jersey",
+    "germany",
+    "united-kingdom"
+   ],
+   "summary": "Judging the islands impossible to defend, Britain demilitarises them, and many islanders are evacuated. German troops land on Guernsey on 30 June 1940 and on Jersey the next day: the only British soil occupied in the war. The islands are fortified as part of the Atlantic Wall with forced labour, and some islanders are deported to Germany.",
+   "wikipedia": "German_occupation_of_the_Channel_Islands",
+   "search": "German occupation of the Channel Islands 30 June 1940 Guernsey Jersey Alderney Sark demilitarised evacuation Atlantic Wall Organisation Todt deportations"
+  },
+  {
+   "id": "italy-conquers-somaliland-1940",
+   "kind": "war",
+   "year": 1940,
+   "title": "Italy conquers British Somaliland, August 1940",
+   "place": "Berbera",
+   "lonLat": [
+    45.01,
+    10.44
+   ],
+   "civs": [
+    "british-somaliland",
+    "italy",
+    "united-kingdom"
+   ],
+   "summary": "Italian forces from Ethiopia invade British Somaliland on 3 August 1940. After a stand at the Tug Argan pass, the small British garrison is evacuated by sea from Berbera, and Italy takes the whole protectorate on 19 August, its only conquest of British land in the war. British troops land at Berbera and take it back in March 1941.",
+   "wikipedia": "Italian_conquest_of_British_Somaliland",
+   "search": "Italian conquest of British Somaliland August 1940 Tug Argan Berbera evacuation East African campaign recaptured March 1941 Operation Appearance"
+  },
+  {
+   "id": "haile-selassie-returns-1941",
+   "kind": "empire",
+   "year": 1941,
+   "title": "Haile Selassie returns to Addis Ababa, 5 May 1941",
+   "place": "Addis Ababa",
+   "lonLat": [
+    38.75,
+    9.03
+   ],
+   "civs": [
+    "ethiopia",
+    "italy",
+    "united-kingdom"
+   ],
+   "summary": "In early 1941 British, Commonwealth and Ethiopian forces attack Italian East Africa from Sudan and Kenya. Emperor Haile Selassie, in exile since the Italian conquest of 1936, crosses back into Ethiopia with the Gideon Force and re-enters Addis Ababa on 5 May 1941, five years to the day after the Italians took it. The last Italian stronghold, Gondar, falls in November.",
+   "wikipedia": "East_African_campaign_(World_War_II)",
+   "search": "Haile Selassie returns Addis Ababa 5 May 1941 East African campaign liberation of Ethiopia Gideon Force Wingate Italian East Africa Amba Alagi Gondar"
+  },
+  {
+   "id": "fall-of-hong-kong-1941",
+   "kind": "war",
+   "year": 1941,
+   "title": "The fall of Hong Kong, 8 – 25 December 1941",
+   "place": "Hong Kong",
+   "lonLat": [
+    114.17,
+    22.32
+   ],
+   "civs": [
+    "british-hong-kong",
+    "japan",
+    "united-kingdom"
+   ],
+   "summary": "Hours after the attack on Pearl Harbor, Japanese troops cross from China into the New Territories on 8 December 1941. The British, Canadian and Indian defenders fall back to Hong Kong Island, and Governor Mark Young surrenders on Christmas Day, \"Black Christmas\". Japan rules the colony until August 1945.",
+   "wikipedia": "Battle_of_Hong_Kong",
+   "search": "Battle of Hong Kong December 1941 Japanese invasion Black Christmas Gin Drinkers Line surrender governor Mark Young occupation 1945"
+  },
+  {
+   "id": "fall-of-singapore-1942",
+   "kind": "war",
+   "year": 1942,
+   "title": "The fall of Singapore, 15 February 1942",
+   "place": "Singapore",
+   "lonLat": [
+    103.82,
+    1.35
+   ],
+   "civs": [
+    "straits-settlements",
+    "british-malaya",
+    "japan",
+    "united-kingdom"
+   ],
+   "summary": "Landing in northern Malaya and Thailand on 8 December 1941, Japanese troops push down the peninsula in ten weeks and cross to Singapore. General Arthur Percival surrenders on 15 February 1942, and some 80,000 British, Indian and Australian soldiers become prisoners: the largest surrender in British history. Renamed Syonan-to, Singapore suffers three years of occupation.",
+   "wikipedia": "Fall_of_Singapore",
+   "search": "Fall of Singapore 15 February 1942 Malayan campaign Yamashita Percival surrender Prince of Wales Repulse Syonan-to prisoners of war Sook Ching"
+  },
+  {
+   "id": "japan-conquers-burma-1942",
+   "kind": "war",
+   "year": 1942,
+   "title": "Japan conquers Burma, January – May 1942",
+   "place": "Mandalay",
+   "lonLat": [
+    96.08,
+    21.97
+   ],
+   "civs": [
+    "british-burma",
+    "japan",
+    "united-kingdom"
+   ],
+   "summary": "Japanese troops invade Burma from Thailand in January 1942 to cut the Burma Road supplying China. Rangoon falls in March and Mandalay in May, and the British army makes the longest retreat in its history, back to India before the monsoon. Japan sets up a nominally independent State of Burma in 1943; the British return in 1944–45.",
+   "wikipedia": "Japanese_conquest_of_Burma",
+   "search": "Japanese conquest of Burma 1942 Rangoon falls March Burma Road retreat to India Slim Burma Independence Army Aung San Ba Maw State of Burma 1943"
+  },
+  {
+   "id": "guadalcanal-campaign-1942",
+   "kind": "war",
+   "year": 1942,
+   "to": 1943,
+   "title": "The Guadalcanal campaign, August 1942 – February 1943",
+   "place": "Guadalcanal",
+   "lonLat": [
+    160.0,
+    -9.5
+   ],
+   "civs": [
+    "british-solomon-islands",
+    "japan",
+    "united-states"
+   ],
+   "summary": "On 7 August 1942 American marines land on Guadalcanal and Tulagi in the British Solomon Islands, where Japan was building an airfield. Six months of fighting on land and at sea follow around Henderson Field, with islanders and coastwatchers helping the Allies. Japan evacuates the island in February 1943, its first major defeat on land.",
+   "wikipedia": "Guadalcanal_campaign",
+   "search": "Guadalcanal campaign August 1942 February 1943 US Marines Henderson Field Japan Solomon Islands Tulagi Savo Island coastwatchers Tokyo Express"
+  },
+  {
+   "id": "el-alamein-1942",
+   "kind": "war",
+   "year": 1942,
+   "title": "The Second Battle of El Alamein, 23 October – 11 November 1942",
+   "place": "El Alamein",
+   "lonLat": [
+    28.95,
+    30.83
+   ],
+   "civs": [
+    "egypt",
+    "italian-libya",
+    "united-kingdom",
+    "germany",
+    "italy"
+   ],
+   "summary": "Rommel’s German and Italian army has pushed deep into Egypt, 100 kilometres from Alexandria. On 23 October 1942 Bernard Montgomery’s Eighth Army attacks at El Alamein and breaks through after twelve days. The Axis retreats across Libya: the British take Benghazi on 20 November and Tripoli in January 1943, ending Italy’s rule there.",
+   "wikipedia": "Second_Battle_of_El_Alamein",
+   "search": "Second Battle of El Alamein October November 1942 Montgomery Rommel Eighth Army Afrika Korps Egypt Suez Canal retreat Libya Tripoli 1943"
+  },
+  {
+   "id": "battle-of-tarawa-1943",
+   "kind": "war",
+   "year": 1943,
+   "title": "The Battle of Tarawa, 20 – 23 November 1943",
+   "place": "Tarawa",
+   "lonLat": [
+    173.0,
+    1.4
+   ],
+   "civs": [
+    "gilbert-and-ellice-islands",
+    "japan",
+    "united-states"
+   ],
+   "summary": "To open the way across the central Pacific, American marines land on Betio, the fortified islet of Tarawa atoll in the Gilbert Islands, on 20 November 1943. In 76 hours of fighting, almost all of the 4,700 Japanese defenders and over 1,000 Americans are killed. With Makin taken the same week, the Gilberts are freed; Japan keeps Banaba until 1945.",
+   "wikipedia": "Battle_of_Tarawa",
+   "search": "Battle of Tarawa November 1943 Betio US Marines Gilbert Islands Japanese garrison Makin Operation Galvanic amphibious assault"
+  },
+  {
+   "id": "imphal-kohima-1944",
+   "kind": "war",
+   "year": 1944,
+   "title": "The battles of Imphal and Kohima, March – July 1944",
+   "place": "Imphal",
+   "lonLat": [
+    93.94,
+    24.82
+   ],
+   "civs": [
+    "british-raj",
+    "japan",
+    "british-burma",
+    "united-kingdom"
+   ],
+   "summary": "In March 1944 the Japanese army crosses from Burma into India to take Imphal and Kohima, with units of the Indian National Army at its side. Besieged and supplied by air, William Slim’s British and Indian Fourteenth Army holds, notably around the tennis court at Kohima. By July the starving Japanese are in retreat, their worst defeat on land so far, opening the way back into Burma.",
+   "wikipedia": "Battle_of_Imphal",
+   "search": "Battle of Imphal Kohima March July 1944 U-Go offensive invasion of India Slim Fourteenth Army tennis court Indian National Army Manipur Nagaland"
+  },
+  {
+   "id": "channel-islands-liberated-1945",
+   "kind": "war",
+   "year": 1945,
+   "title": "The Channel Islands are liberated, 9 May 1945",
+   "place": "Saint Helier",
+   "lonLat": [
+    -2.11,
+    49.19
+   ],
+   "civs": [
+    "jersey",
+    "guernsey",
+    "germany",
+    "united-kingdom"
+   ],
+   "summary": "Cut off since the Normandy landings and short of food, the German garrison of the Channel Islands surrenders on board HMS Bulldog off Guernsey on 9 May 1945, the day after Germany’s surrender. British troops land at Saint Peter Port and Saint Helier the same day. 9 May is still celebrated as Liberation Day in Jersey and Guernsey.",
+   "wikipedia": "Liberation_Day_(Jersey_and_Guernsey)",
+   "search": "Liberation Day Channel Islands 9 May 1945 Jersey Guernsey Operation Nestegg German surrender HMS Bulldog Saint Helier Saint Peter Port Sark Alderney"
+  },
+  {
+   "id": "japan-surrenders-singapore-1945",
+   "kind": "war",
+   "year": 1945,
+   "title": "Japan surrenders in Singapore, 12 September 1945",
+   "place": "Singapore",
+   "lonLat": [
+    103.85,
+    1.29
+   ],
+   "civs": [
+    "straits-settlements",
+    "british-malaya",
+    "japan",
+    "united-kingdom"
+   ],
+   "summary": "After Japan’s surrender in August, British forces return to Singapore in Operation Tiderace, and on 12 September 1945 General Itagaki surrenders all Japanese forces in South-East Asia to Lord Mountbatten at the Municipal Building. A British Military Administration runs Singapore and Malaya until the spring of 1946, and Thailand gives back the four northern Malay states.",
+   "wikipedia": "Japanese_occupation_of_Singapore",
+   "search": "Japanese surrender Singapore 12 September 1945 Mountbatten Itagaki Municipal Building Operation Tiderace Operation Zipper British Military Administration Malaya"
   }
  ]
 }

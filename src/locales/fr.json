@@ -462,6 +462,7 @@
     "event": "{kind} · {when} · cliquez pour en savoir plus",
     "explore": "{years} · cliquez pour explorer",
     "heldBy": "Tenu par {by} depuis {year}",
+    "partlyHeldBy": "Tenu en partie par {by} depuis {year}",
     "jointly": "Gouverné conjointement par {by} et {with} depuis {year}",
     "trust": "Territoire sous tutelle de l’ONU depuis {year}",
     "mandate": "Mandat de la SDN depuis {year}",

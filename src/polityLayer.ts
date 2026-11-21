@@ -355,6 +355,43 @@ export class PolityLayer {
     return undefined;
   }
 
+  /**
+   * The hatching over the whole of a land at `year` (Jersey held by Germany),
+   * if any. It has the land's very outline, so a pick anywhere on the land is
+   * the hatching's, even at its edge where the point found on the globe's
+   * surface falls just off the outline (the land is drawn a few km up).
+   */
+  hatchOver(land: Polity, year: number): Polity | undefined {
+    if (land.kind) return undefined;
+    const y = Math.round(year);
+    const owner = land.partOf ?? land.name;
+    const territory = land.partOf ? land.name : undefined;
+    for (const p of this.polities.values()) {
+      if (p.kind !== "hatch" || y < p.from || y > p.to || p.name !== owner || p.land !== territory) continue;
+      if (p.area >= land.area * 0.98) return p;
+    }
+    return undefined;
+  }
+
+  /**
+   * Who holds the members of a group of territories at `year` (French
+   * Indochina held by Japan): each holder with its earliest date, and whether
+   * it holds every member.
+   */
+  groupHolders(group: string, year: number): { by: string; since?: string; whole: boolean }[] {
+    const y = Math.round(year);
+    const members = [...this.polities.values()].filter((p) => !p.kind && !isOverlay(p) && y >= p.from && y <= p.to && p.groups?.includes(group));
+    const names = new Set(members.map((m) => m.name));
+    const held = new Map<string, { since?: string; lands: Set<string> }>();
+    for (const h of this.polities.values()) {
+      if (h.kind !== "hatch" || !h.by || y < h.from || y > h.to || !h.land || !names.has(h.land)) continue;
+      const seen = held.get(h.by) ?? held.set(h.by, { lands: new Set() }).get(h.by)!;
+      seen.lands.add(h.land);
+      if (h.since && (!seen.since || h.since < seen.since)) seen.since = h.since;
+    }
+    return [...held].map(([by, s]) => ({ by, since: s.since, whole: s.lands.size === names.size }));
+  }
+
   /** The outline of a group of territories (French West Africa) drawn that year. */
   groupAt(name: string, year: number): Polity | undefined {
     const y = Math.round(year);

@@ -2322,7 +2322,18 @@
       "charente-occupied",
       "cher-occupied",
       "saone-et-loire-occupied",
-      "vienne-occupied"
+      "vienne-occupied",
+      "nord-occupied-1914-1918",
+      "pas-de-calais-occupied-1914-1918",
+      "aisne-occupied-1914-1918",
+      "marne-occupied-1914-1918",
+      "meuse-occupied-1914-1918",
+      "meurthe-et-moselle-occupied-1914-1918",
+      "vosges-occupied-1914-1918",
+      "pas-de-calais-occupied-1914-1917",
+      "somme-occupied-1914-1917",
+      "oise-occupied-1914-1917",
+      "aisne-occupied-1914-1917"
      ],
      "owner": "France",
      "source": {
@@ -2343,7 +2354,8 @@
      "pieces": [
       "FRA-5273",
       "FRA-5296",
-      "FRA-5328"
+      "FRA-5328",
+      "south-alsace"
      ],
      "owner": "France",
      "source": {
@@ -3095,7 +3107,8 @@
      "pieces": [
       "FRA-5273",
       "FRA-5296",
-      "FRA-5328"
+      "FRA-5328",
+      "south-alsace"
      ],
      "owner": "France",
      "source": {
@@ -3183,7 +3196,19 @@
       "vienne-occupied",
       "FRA-5273",
       "FRA-5296",
-      "FRA-5328"
+      "FRA-5328",
+      "nord-occupied-1914-1918",
+      "pas-de-calais-occupied-1914-1918",
+      "aisne-occupied-1914-1918",
+      "marne-occupied-1914-1918",
+      "meuse-occupied-1914-1918",
+      "meurthe-et-moselle-occupied-1914-1918",
+      "vosges-occupied-1914-1918",
+      "pas-de-calais-occupied-1914-1917",
+      "somme-occupied-1914-1917",
+      "oise-occupied-1914-1917",
+      "aisne-occupied-1914-1917",
+      "south-alsace"
      ],
      "owner": "France",
      "source": {
