@@ -861,7 +861,7 @@ function showSource(p: Polity, el = $("info-source")) {
     const date = p.since ? formatDate(p.since) : "";
     el.append(
       p.with
-        ? t("info.jointly", { by: placeName(p.by), with: placeName(p.with), date })
+        ? t(p.occupied ? "info.heldByBoth" : "info.jointly", { by: placeName(p.by), with: placeName(p.with), date })
         : p.trust
           ? t(p.by === "League of Nations" ? "info.mandate" : "info.trust", { date })
           : t("info.heldBy", { by: placeName(p.by), date }),
@@ -929,7 +929,7 @@ function hoverRealm(p: Polity | null | undefined, x: number, y: number) {
     ...(p.by
       ? [
           line(
-            t(p.with ? "tooltip.jointly" : p.trust ? (p.by === "League of Nations" ? "tooltip.mandate" : "tooltip.trust") : "tooltip.heldBy", {
+            t(p.with ? (p.occupied ? "tooltip.heldByBoth" : "tooltip.jointly") : p.trust ? (p.by === "League of Nations" ? "tooltip.mandate" : "tooltip.trust") : "tooltip.heldBy", {
               by: placeName(p.by),
               with: p.with ? placeName(p.with) : "",
               year: p.since?.slice(0, 4) ?? "",

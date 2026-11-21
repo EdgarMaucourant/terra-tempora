@@ -43,6 +43,8 @@ export interface Polity {
   rough?: boolean;
   /** For "hatch": the state that rules the land jointly with `by` (a condominium, the New Hebrides). */
   with?: string;
+  /** For "hatch" with `with`: two states holding the land as occupiers, not a condominium (Iraq, 2003-04). */
+  occupied?: boolean;
   since?: string;
   note?: string;
   /** For "hatch": a UN trust territory or a League of Nations mandate, run by its owner for `by`. */

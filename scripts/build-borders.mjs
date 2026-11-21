@@ -356,6 +356,7 @@ for (let year = TODAY; year >= firstReviewed; year--) {
           note: h.note,
           ...(h.with && { with: h.with }),
           ...(h.trust && { trust: true }),
+          ...(h.occupied && { occupied: true }),
           ...(h.rough && { rough: true }),
           source: { title: h.source.title, url: h.source.url, ...(h.map && { map: h.map }) },
         });
@@ -515,6 +516,7 @@ for (const [key, list] of runs) {
       ...(m.by && { by: m.by, since: m.since, note: m.note }),
       ...(m.with && { with: m.with }),
       ...(m.trust && { trust: true }),
+      ...(m.occupied && { occupied: true }),
       ...(m.rough && { rough: true }),
       ...(m.source && { source: m.source }),
       label: o.label,

@@ -225,7 +225,8 @@
        "title": "Coalition Provisional Authority (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Coalition_Provisional_Authority"
       },
-      "with": "United Kingdom"
+      "with": "United Kingdom",
+      "occupied": true
      }
     }
    ]
