@@ -2,11 +2,11 @@
  "russia": {
   "name": "Rusia"
  },
- "france": {
-  "name": "Francia"
- },
  "united-kingdom": {
   "name": "Reino Unido"
+ },
+ "france": {
+  "name": "Francia"
  },
  "canada": {
   "name": "Canadá"
@@ -131,6 +131,9 @@
  "south-africa": {
   "name": "Sudáfrica"
  },
+ "united-arab-republic": {
+  "name": "República Árabe Unida"
+ },
  "niger": {
   "name": "Níger"
  },
@@ -151,6 +154,9 @@
  },
  "egypt": {
   "name": "Egipto"
+ },
+ "sultanate-of-egypt": {
+  "name": "Sultanato de Egipto"
  },
  "tanzania": {
   "name": "Tanzania"
@@ -203,6 +209,9 @@
  "chile": {
   "name": "Chile"
  },
+ "kenya-colony": {
+  "name": "Colonia de Kenia"
+ },
  "myanmar": {
   "name": "Myanmar"
  },
@@ -232,9 +241,6 @@
  },
  "kenya": {
   "name": "Kenia"
- },
- "kenya-colony": {
-  "name": "Colonia de Kenia"
  },
  "botswana": {
   "name": "Botsuana"
@@ -428,9 +434,6 @@
  "syria": {
   "name": "Siria"
  },
- "united-arab-republic": {
-  "name": "República Árabe Unida"
- },
  "arab-kingdom-of-syria": {
   "name": "Reino Árabe de Siria"
  },
@@ -521,6 +524,9 @@
  "tonkin": {
   "name": "Protectorado de Tonkín"
  },
+ "trans-juba": {
+  "name": "Trans-Juba"
+ },
  "honduras": {
   "name": "Honduras"
  },
@@ -574,6 +580,9 @@
  },
  "serbia": {
   "name": "Serbia"
+ },
+ "mandatory-palestine": {
+  "name": "Mandato británico de Palestina"
  },
  "panama": {
   "name": "Panamá"
@@ -662,6 +671,9 @@
  "portuguese-guinea": {
   "name": "Guinea portuguesa"
  },
+ "kingdom-of-hejaz": {
+  "name": "Reino del Hiyaz"
+ },
  "netherlands": {
   "name": "Países Bajos"
  },
@@ -706,9 +718,6 @@
  },
  "burundi": {
   "name": "Burundi"
- },
- "mandatory-palestine": {
-  "name": "Mandato británico de Palestina"
  },
  "haiti": {
   "name": "Haití"
@@ -775,6 +784,9 @@
  },
  "portuguese-timor": {
   "name": "Timor portugués"
+ },
+ "emirate-of-asir": {
+  "name": "Emirato de Asir"
  },
  "alsace-lorraine": {
   "name": "Alsacia y Lorena"
@@ -970,6 +982,9 @@
  },
  "federated-states-of-micronesia": {
   "name": "Estados Federados de Micronesia"
+ },
+ "weihaiwei": {
+  "name": "Weihaiwei"
  },
  "tonga": {
   "name": "Tonga"
