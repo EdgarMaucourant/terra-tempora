@@ -39,6 +39,25 @@ To rebuild the data, translate the interface, or find your way around the
 code, see [docs/development.md](docs/development.md). Hosting and the
 Cloudflare Worker setup are in [docs/deployment.md](docs/deployment.md).
 
+## Use the borders elsewhere
+
+The site loads its borders in a compact format of its own (`public/data/borders-*.json`).
+To get them as GeoJSON, for QGIS, a web map or your own project:
+
+```sh
+npm install
+npm run geojson -- 1914            # the map of 1914, as on 31 December: borders-1914.geojson
+npm run geojson                    # every year: borders-all.geojson, one feature per realm and run of years
+npm run geojson -- 1914 my.geojson # to another file
+```
+
+Each feature carries the realm's `name`, the years it covers (`from` and `to`, both
+included), its `kind` when it isn't a realm's own land (`hatch` for land held or run by
+another state, `group` for a group of territories, `blank` for land no state held),
+its owner for a territory (`partOf`), Wikipedia and Wikidata links, and the `source` of
+its border. Land whose history isn't reviewed yet is left out. Coordinates are rounded
+to 0.01°. The data is shared under CC BY-SA 4.0 (see below).
+
 ## Contributing
 
 Found a mistake, missing data or have an idea? Use "Report a problem" on the
