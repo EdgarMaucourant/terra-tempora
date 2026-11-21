@@ -168,8 +168,8 @@
     "whyItMatters": "Por qué importa"
   },
   "masthead": {
-    "back": "← El mundo de hoy",
-    "backShort": "← Hoy",
+    "back": "← El mundo entero",
+    "backShort": "← Mundo",
     "focusLabel": "Mostrar los años de {name}",
     "more": {
       "one": "{first}, {second} y {count} más",
