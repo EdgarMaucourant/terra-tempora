@@ -1915,7 +1915,8 @@ function openEvent(e: HistoryEvent) {
       return item;
     }),
   );
-  renderDocumentaries($("event-docs"), documentaries?.about({ events: [e.id], civs: e.civs }) ?? []);
+  const eventDocs = { events: [e.id], civs: e.civs };
+  renderDocumentaries($("event-docs"), documentaries?.about(eventDocs) ?? [], eventDocs);
   const gallery = $("event-gallery");
   renderGallery(gallery, []);
   eventPanel.hidden = false;
@@ -1994,6 +1995,11 @@ function renderCountryOverview(list: Civilization[], shape?: Polity | null) {
   const drawn = shape ? (shape.display ?? shape.name) : drawnOnPlace();
   toldRealm = drawn;
   const own = shape?.wikipedia ?? (drawn ? civs?.ofRealm(drawn)?.wikipedia : undefined);
+  // Documentaries about today's country show only while the place is that
+  // country itself: Uganda, not the Uganda Protectorate or the Lado Enclave.
+  const realm = shape ? shape.name : drawn;
+  const realmCiv = realm ? civs?.ofRealm(realm) : undefined;
+  const isCountry = !realm || realm === english || realmCiv?.id === country.id;
   overview.render({
     kind: "country",
     country,
@@ -2003,6 +2009,7 @@ function renderCountryOverview(list: Civilization[], shape?: Polity | null) {
     articles: drawn ? [own ?? english, english] : countryView === "territory" ? [english, history] : [history, english],
     drawn: drawn ? placeName(drawn) : undefined,
     part: !!drawn && (!!(shape ? shape.partOf : civs?.ofRealm(drawn)?.partOf) || !!data?.index.notCountries?.includes(drawn)),
+    docs: isCountry ? undefined : { civs: realmCiv ? [realmCiv.id] : [] },
   });
 }
 

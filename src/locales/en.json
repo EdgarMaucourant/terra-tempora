@@ -353,6 +353,8 @@
     "allAges": "All ages",
     "ratingTitle": "Age rating in the United States: {rating}",
     "seeMore": "See more on {platform}:",
+    "episode": "Episode on {who}, {years}",
+    "episodeOn": "Episode on {who}",
     "title": "Documentaries"
   },
   "media": {

@@ -793,6 +793,12 @@ a.ghost {
   white-space: nowrap;
 }
 
+.docs-episode {
+  display: block;
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+
 .docs-list cite {
   font-style: normal;
   color: #f3a46e;
