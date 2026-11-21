@@ -460,6 +460,7 @@
     "before": "Antes",
     "border": "Frontera: {source}",
     "borderHint": "Selecciónelo para abrir el mapa de origen",
+    "rough": "Trazado aproximado: una estimación",
     "event": "{kind} · {when} · haz clic para saber más",
     "explore": "{years} · haz clic para explorar",
     "heldBy": "En manos de {by} desde {year}",

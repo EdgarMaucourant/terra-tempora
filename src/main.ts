@@ -871,7 +871,11 @@ function showSource(p: Polity, el = $("info-source")) {
     if (p.rough) el.append(`${t("info.activeWar")} `);
   }
   if (!s) return;
-  if (!s.date) return el.append(`${t(s.what ? "info.border" : "info.source")}: `, externalLink(s.url, s.what ? t("info.today") : s.title));
+  if (!s.date) {
+    el.append(`${t(s.what ? "info.border" : "info.source")}: `, externalLink(s.url, s.what ? t("info.today") : s.title));
+    if (s.confidence === "rough" && !p.rough) el.append(` (${t("info.rough")})`);
+    return;
+  }
   el.append(`${t("info.border")}: ${sourceLine(s)}`);
   if (s.confidence) el.append(` (${t(`info.${s.confidence}` as MessageKey)})`);
   el.append(". ");
@@ -944,7 +948,10 @@ function hoverRealm(p: Polity | null | undefined, x: number, y: number) {
           .map((h) => line(t(h.whole ? "tooltip.heldBy" : "tooltip.partlyHeldBy", { by: placeName(h.by), year: h.since?.slice(0, 4) ?? "" })))
       : []),
     ...(p.rough ? [line(t("map.activeWar"))] : []),
-    ...(p.source ? [line(t("tooltip.border", { source: shortSource(p.source) })), line(t("tooltip.borderHint"))] : []),
+    ...(p.source ? [line(t("tooltip.border", { source: shortSource(p.source) }))] : []),
+    // Lines drawn as an estimate say so (an active war already does).
+    ...(p.source?.confidence === "rough" && !p.rough ? [line(t("tooltip.rough"))] : []),
+    ...(p.source ? [line(t("tooltip.borderHint"))] : []),
     Object.assign(document.createElement("span"), {
       textContent: home
         ? countryOf(civ)
