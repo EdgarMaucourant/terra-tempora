@@ -353,6 +353,9 @@
  "japan": {
   "name": "Japón"
  },
+ "khanate-of-kalat": {
+  "name": "Kanato de Kalat"
+ },
  "republic-of-the-congo": {
   "name": "República del Congo"
  },
@@ -853,6 +856,9 @@
  },
  "colony-of-fiji": {
   "name": "Colonia de Fiyi"
+ },
+ "kingdom-of-fiji": {
+  "name": "Reino de Fiyi"
  },
  "new-caledonia": {
   "name": "Nueva Caledonia"

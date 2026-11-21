@@ -83,12 +83,12 @@
             "@type": "Dataset",
             "@id": "https://terra-tempora.com/#borders",
             "name": "Terra Tempora historical borders",
-            "description": "Simplified borders of about 1,560 states and civilizations from 3400 BCE to 2024, year by year, built from the Cliopatria dataset of the Seshat Global History Databank with hand-traced additions, plus names, links between realms and events from Wikidata. Used by the Terra Tempora globe.",
+            "description": "Historical borders year by year, built from today's provinces and countries in Natural Earth, regrouped by their owner of the time, with a source for each change, plus names, links between realms and events from Wikidata. Used by the Terra Tempora globe.",
             "url": "https://github.com/EdgarMaucourant/terra-tempora/tree/main/public/data",
             "license": "https://creativecommons.org/licenses/by-sa/4.0/",
             "isAccessibleForFree": true,
             "creator": { "@id": "https://terra-tempora.com/#publisher" },
-            "isBasedOn": "https://github.com/Seshat-Global-History-Databank/cliopatria",
+            "isBasedOn": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/",
             "temporalCoverage": "-3400/2024",
             "spatialCoverage": { "@type": "Place", "name": "World" },
             "keywords": ["historical borders", "polities", "empires", "civilizations", "world history"],
@@ -111,7 +111,7 @@
       <section class="noscript" style="max-width: 40rem; margin: 2rem auto; padding: 0 1rem; background: #07090d; color: #f3f1ec; font: 1rem/1.5 sans-serif">
         <h1>Terra Tempora: 5,000 years of world history on a globe</h1>
         <p>Terra Tempora is a free interactive atlas of world history. It draws the borders of more than 1,500 civilizations, from 3400 BCE to today, on a 3D globe or a flat map. Pick a civilization, a country or a year to see the realms of that time, follow the key events (battles, treaties, rulers, capitals) with links to Wikipedia, or take the History travel, a flight through 141 turning points from Göbekli Tepe to today.</p>
-        <p>The borders come from Cliopatria, the open dataset of the Seshat Global History Databank; names, events and pictures come from Wikidata, Wikipedia and Wikimedia Commons. No account, no ads, no cookies.</p>
+        <p>The borders are today’s provinces and countries from Natural Earth, regrouped year by year by their owner of the time, each change with its source; names, events and pictures come from Wikidata, Wikipedia and Wikimedia Commons. No account, no ads, no cookies.</p>
         <p>The globe needs JavaScript and WebGL. Also in <a href="/?lang=fr">French</a> and <a href="/?lang=es">Spanish</a>. <a href="/llms.txt">About this site in plain text</a> · <a href="https://github.com/EdgarMaucourant/terra-tempora">Code on GitHub</a></p>
       </section>
     </noscript>
@@ -322,30 +322,7 @@
           <section id="sources" class="panel-section sources" hidden>
             <h2 data-i18n="sources.title">Sources</h2>
             <ul data-i18n-html="sources.list">
-              <li>
-                Borders: <a href="https://github.com/Seshat-Global-History-Databank/cliopatria" target="_blank" rel="noopener">Cliopatria</a>, Seshat Global History Databank, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>: the realms of 3400 BCE to 2024, simplified for display. Today&rsquo;s countries are its realms of 2024, drawn until the current year.
-              </li>
-              <li>
-                Borders of Magadha and its successors (the Nanda, Maurya and Shunga empires, 600 to 171 BCE): traced from <a href="https://commons.wikimedia.org/wiki/File:Magadha_Expansion_1.gif" target="_blank" rel="noopener">Magadha Expansion</a> by Avantiputra7, after Schwartzberg&rsquo;s <i>Historical Atlas of South Asia</i>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>; the traced borders are shared under the same licence.
-              </li>
-              <li>
-                Borders of the Bamana Empire of Ségou (1766 to 1802), Kaarta, Kong and the Mossi and Hausa kingdoms: traced from <a href="https://commons.wikimedia.org/wiki/File:Africa_de_l%27O%C3%A8st_(fin_s%C3%A8gle_XVIII).png" target="_blank" rel="noopener">Africa de l&rsquo;Oèst (fin sègle XVIII)</a> by Nicolas Eynaud, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>; the traced borders are shared under the same licence.
-              </li>
-              <li>
-                Borders of the Luba Empire: traced from <a href="https://commons.wikimedia.org/wiki/File:Lunda_Empire.png" target="_blank" rel="noopener">Lunda Empire</a>, Library of Congress (<i>Zaire: A Country Study</i>, 1994, after Jan Vansina&rsquo;s <i>Kingdoms of the Savanna</i>), public domain.
-              </li>
-              <li>
-                Borders of the Kingdom of Great Zimbabwe: taken from <a href="https://commons.wikimedia.org/wiki/File:African-civilizations-map-pre-colonial.svg" target="_blank" rel="noopener">African civilizations map (pre-colonial)</a> by Jeff Israel, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>; the borders are shared under the same licence.
-              </li>
-              <li>
-                Borders of the United States from 1783 to 1889: the land it owned after each treaty or purchase (the Treaty of Paris, the Louisiana Purchase, Florida, Texas, Oregon, the Mexican Cession, the Gadsden and Alaska purchases), where Cliopatria draws only the land it had settled. Drawn from today&rsquo;s states and rivers in <a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener">Natural Earth</a> 1:10m, public domain, cut along the treaty lines.
-              </li>
-              <li>
-                Borders of the British dominions (Canada from 1867, growing with each province, Newfoundland from 1907, Australia from 1901, New Zealand from 1907, South Africa from 1910), which Cliopatria draws inside the British Empire until 1932 to 1948, and of land owned but not yet settled (Australia before 1901, Mexico&rsquo;s north before 1848, Russian America before 1867, all of Greenland from 1921): drawn from today&rsquo;s countries and provinces in <a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener">Natural Earth</a> 1:10m, public domain.
-              </li>
-              <li>
-                Borders of French India&rsquo;s five trading posts (Pondicherry, Karikal, Mahé, Yanam and Chandernagore), shown only in the years France held them: Pondicherry, Karikal and Yanam are the parts of today&rsquo;s Puducherry in <a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener">Natural Earth</a> 1:10m, public domain; Mahé and Chandernagore, too small for it, are drawn as squares of their area around the town.
-              </li><li>Borders of dependencies and autonomous territories with their own government, outside their sovereign state’s own territory (Greenland from 1979, the Faroe Islands from 1948, Hong Kong, Macau, Puerto Rico, the Crown dependencies and the British, French, Dutch, US, New Zealand and Australian overseas territories), drawn on their own: today’s outlines in <a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener">Natural Earth</a> 1:10m, public domain.</li>
+              <li>Borders: today&rsquo;s provinces and countries from <a href="https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/" target="_blank" rel="noopener">Natural Earth</a> 1:10m, public domain, regrouped by owner year by year. Each change of border names its source, most often Wikipedia, and the map it follows; hover over or select a realm to see it. Where a border no longer follows today&rsquo;s lines, the land is cut along a line traced from the old map named with the change. Some of these maps are on Wikimedia Commons under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>, so the traced borders are shared under the same licence.</li>
               <li>
                 Civilization names in other languages, key figures and links between realms: <a href="https://www.wikidata.org/" target="_blank" rel="noopener">Wikidata</a>, CC0.
               </li>
@@ -744,9 +721,7 @@
             <div class="country-grid"></div>
           </section>
           <div class="landing-foot" data-i18n-html="landing.footer">
-            Borders:
-            <a href="https://github.com/Seshat-Global-History-Databank/cliopatria" target="_blank" rel="noopener">Cliopatria</a>,
-            Seshat Global History Databank, CC BY 4.0. Key figures and links between realms:
+            Borders: today’s provinces from <a href="https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/" target="_blank" rel="noopener">Natural Earth</a> (public domain), regrouped year by year, each change with its source. Key figures and links between realms:
             <a href="https://www.wikidata.org/" target="_blank" rel="noopener">Wikidata</a> (CC0). Pictures:
             <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">Wikimedia Commons</a>, freely licensed;
             each card names the author and licence and links to the file. The small shape in each card's corner is the realm's

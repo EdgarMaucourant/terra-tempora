@@ -26,7 +26,7 @@
     "IRL",
     "heligoland"
    ],
-   "from": 1880,
+   "from": 1870,
    "why": "The United Kingdom with the Crown Dependencies (Guernsey, Jersey, the Isle of Man), its overseas territories and the Chagos Archipelago, whose land has not changed hands since 1965, and Ireland (the Irish Free State until 1937)"
   },
   {
@@ -46,7 +46,7 @@
     "SYC",
     "weihaiwei"
    ],
-   "from": 1880,
+   "from": 1870,
    "why": "Hong Kong, Brunei, Southern Rhodesia and the colonies in the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence or handover; Weihaiwei, leased from China until 1930"
   },
   {
@@ -68,7 +68,7 @@
     "BHS",
     "GRD"
    ],
-   "from": 1880,
+   "from": 1870,
    "why": "The Gulf protected states, South Arabia with all of Yemen (North Yemen until 1990), and the colonies and protectorates in Africa, the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence"
   },
   {
@@ -95,7 +95,7 @@
     "dervish-nugaal",
     "lado-enclave"
    ],
-   "from": 1880,
+   "from": 1870,
    "why": "The colonies, protectorates and trust territories Britain held in 1960 in Africa, Asia, the Mediterranean and the Caribbean, with today's borders, until their independence, with Malaya and Somalia around them"
   },
   {
@@ -109,7 +109,7 @@
     "ERI",
     "ETH"
    ],
-   "from": 1880,
+   "from": 1870,
    "why": "The Gold Coast and British Togoland (Ghana), Anglo-Egyptian Sudan and Eritrea, which Britain ruled or ran in the 1950s, with today's borders, and Ethiopia around Eritrea. The Haud, run by Britain inside Ethiopia until 1955, is not drawn"
   },
   {
@@ -156,7 +156,7 @@
     "hyd-karnataka",
     "bhadrachalam"
    ],
-   "from": 1880,
+   "from": 1870,
    "why": "British India (with the princely states, drawn as part of it), Burma and Ceylon, with today's borders, from British rule to today, and Newfoundland until it joined Canada. French and Portuguese India stay with their own families"
   },
   {
@@ -176,7 +176,7 @@
     "IRQ",
     "EGY"
    ],
-   "from": 1880,
+   "from": 1870,
    "why": "Mandatory Palestine and Transjordan, and what became of them: Israel, the West Bank, the Gaza Strip, Jordan, and the Sinai occupied by Israel; Iraq, a British mandate until 1932, and Kuwait, occupied by Iraq in 1990-91; Egypt, a British protectorate until 1922 and part of the United Arab Republic in 1958-61"
   },
   {
@@ -8032,6 +8032,27 @@
    ]
   },
   {
+   "date": "1889-06-01",
+   "what": "The states of Sri Menanti accept a British Resident: most of Negeri Sembilan comes under British protection",
+   "source": {
+    "title": "Negeri Sembilan (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Negeri_Sembilan"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "MYS-1146"
+     ],
+     "owner": "Negeri Sembilan",
+     "source": {
+      "title": "Negeri Sembilan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Negeri_Sembilan"
+     }
+    }
+   ]
+  },
+  {
    "date": "1889-04-10",
    "what": "Emin Pasha leaves Equatoria with Stanley, the last Egyptian province of the Sudan",
    "source": {
@@ -8135,6 +8156,28 @@
    ]
   },
   {
+   "date": "1888-07-01",
+   "what": "The Fadhli, Lower Aulaqi and Wahidi rulers sign protectorate treaties with Britain",
+   "source": {
+    "title": "Aden Protectorate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Aden_Protectorate"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "YEM-3511",
+      "YEM-336"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Aden Protectorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Aden_Protectorate"
+     }
+    }
+   ]
+  },
+  {
    "date": "1888-06-14",
    "what": "Sarawak becomes a British protectorate",
    "source": {
@@ -8151,6 +8194,27 @@
      "source": {
       "title": "Raj of Sarawak (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Raj_of_Sarawak"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1888-05-01",
+   "what": "The Qu’aiti and Kathiri sultans of the Hadhramaut accept British protection",
+   "source": {
+    "title": "Aden Protectorate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Aden_Protectorate"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "YEM-3497"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Aden Protectorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Aden_Protectorate"
      }
     }
    ]
@@ -8221,6 +8285,27 @@
      "source": {
       "title": "Royal Niger Company (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Royal_Niger_Company"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1886-07-01",
+   "what": "The Mahra Sultanate of Qishn and Socotra signs the first protectorate treaty east of Aden",
+   "source": {
+    "title": "Mahra Sultanate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Mahra_Sultanate"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "YEM-332"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Mahra Sultanate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mahra_Sultanate"
      }
     }
    ]
@@ -8639,6 +8724,237 @@
      "source": {
       "title": "North Borneo Chartered Company (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/North_Borneo_Chartered_Company"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1881-05-13",
+   "what": "Rotuma is ceded to Britain and joins the Colony of Fiji",
+   "source": {
+    "title": "Rotuma (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Rotuma"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "FJI-2658"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Rotuma (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Rotuma"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1878-07-12",
+   "what": "Britain takes over the administration of Cyprus under the Cyprus Convention; the island stays Ottoman",
+   "source": {
+    "title": "Cyprus Convention (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Cyprus_Convention"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "CYP",
+      "CYN",
+      "ESB",
+      "WSB"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Cyprus Convention (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cyprus_Convention"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1876-12-08",
+   "what": "By the Treaty of Jacobabad the Khan of Kalat accepts British protection; Quetta is leased to Britain",
+   "source": {
+    "title": "Khanate of Kalat (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Khanate_of_Kalat"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "PAK-1108"
+     ],
+     "owner": "Khanate of Kalat",
+     "source": {
+      "title": "Khanate of Kalat (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Khanate_of_Kalat"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1874-11-02",
+   "what": "Al-Zubayr Rahma Mansur takes El Fasher: Darfur is annexed to the Egyptian Sudan",
+   "source": {
+    "title": "Sultanate of Darfur (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Sultanate_of_Darfur"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "SDN-5856",
+      "SDN-5857",
+      "SDN-5858",
+      "SDN-5859",
+      "SDN-881"
+     ],
+     "owner": "Sultanate of Darfur",
+     "source": {
+      "title": "Sultanate of Darfur (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sultanate_of_Darfur"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1874-10-10",
+   "what": "Cakobau and the chiefs of Fiji cede the islands to Britain",
+   "source": {
+    "title": "Colony of Fiji (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Colony_of_Fiji"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "FJI-2618",
+      "FJI-2620",
+      "FJI-2617",
+      "FJI-2619"
+     ],
+     "owner": "Kingdom of Fiji",
+     "source": {
+      "title": "Kingdom of Fiji (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Fiji"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1874-08-01",
+   "what": "The Sultan of Selangor accepts a British Resident",
+   "source": {
+    "title": "Selangor (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Selangor"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "MYS-1148",
+      "MYS-4831",
+      "MYS-4832"
+     ],
+     "owner": "Selangor",
+     "source": {
+      "title": "Selangor (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Selangor"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1874-01-20",
+   "what": "By the Treaty of Pangkor, Perak accepts a British Resident",
+   "source": {
+    "title": "Pangkor Treaty of 1874 (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Pangkor_Treaty_of_1874"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MYS-1137"
+     ],
+     "owner": "Perak",
+     "source": {
+      "title": "Pangkor Treaty of 1874 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pangkor_Treaty_of_1874"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1873-07-01",
+   "what": "Al-Zubayr, master of the Bahr el Ghazal, is made its Egyptian governor",
+   "source": {
+    "title": "Bahr el Ghazal (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Bahr_el_Ghazal"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "SDS-873",
+      "SDS-147",
+      "SDS-863",
+      "SDS-872"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Bahr el Ghazal (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bahr_el_Ghazal"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1871-06-05",
+   "what": "Cakobau is crowned king of a united Fiji",
+   "source": {
+    "title": "Kingdom of Fiji (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Fiji"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "FJI-2618",
+      "FJI-2620",
+      "FJI-2617",
+      "FJI-2619"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Kingdom of Fiji (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Fiji"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1871-05-26",
+   "what": "Samuel Baker proclaims Egyptian rule over Equatoria at Gondokoro",
+   "source": {
+    "title": "Equatoria (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Equatoria"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "SDS-864",
+      "SDS-865",
+      "SDS-892",
+      "lado-enclave"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Equatoria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Equatoria"
      }
     }
    ]
