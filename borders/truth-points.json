@@ -1869,7 +1869,7 @@
    "heldBy": [
     {
      "years": [
-      1922,
+      1920,
       1945
      ],
      "by": "League of Nations"
@@ -1933,7 +1933,7 @@
    "heldBy": [
     {
      "years": [
-      1922,
+      1920,
       1945
      ],
      "by": "League of Nations"
@@ -2197,7 +2197,7 @@
    "heldBy": [
     {
      "years": [
-      1922,
+      1920,
       1945
      ],
      "by": "League of Nations"
@@ -9160,34 +9160,21 @@
    "why": "British civil administration from July 1920; the mandate came into force in 1923"
   },
   {
-   "place": "Dar es Salaam (1920)",
-   "lonLat": [
-    39.27,
-    -6.82
-   ],
-   "years": [
-    1920,
-    1921
-   ],
-   "realm": "Tanganyika Territory",
-   "why": "British under the Treaty of Versailles before the mandate"
-  },
-  {
    "place": "Dar es Salaam (mandate)",
    "lonLat": [
     39.27,
     -6.82
    ],
    "years": [
-    1922,
+    1920,
     1945
    ],
    "realm": "Tanganyika Territory",
-   "why": "League of Nations mandate from 1922",
+   "why": "League of Nations mandate from 1920",
    "heldBy": [
     {
      "years": [
-      1922,
+      1920,
       1945
      ],
      "by": "League of Nations"
