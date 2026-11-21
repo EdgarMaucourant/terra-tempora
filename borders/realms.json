@@ -731,7 +731,7 @@
   "es": "Suazilandia",
   "periods": [
    {
-    "from": "1906-12-01",
+    "from": "1745-01-01",
     "name": "Swaziland",
     "wikipedia": "Eswatini",
     "fr": "Swaziland",
@@ -3854,5 +3854,36 @@
   "wikidata": "Q2753015",
   "fr": "Rhodésie du Nord-Est",
   "es": "Rodesia del Noreste"
+ },
+ "Sokoto Caliphate": {
+  "wikipedia": "Sokoto Caliphate",
+  "wikidata": "Q600524",
+  "fr": "Califat de Sokoto",
+  "es": "Califato de Sokoto"
+ },
+ "Congo Free State": {
+  "wikipedia": "Congo Free State",
+  "wikidata": "Q76048",
+  "fr": "État indépendant du Congo",
+  "es": "Estado Libre del Congo"
+ },
+ "Lado Enclave": {
+  "wikipedia": "Lado Enclave",
+  "wikidata": "Q371883",
+  "fr": "Enclave de Lado",
+  "es": "Enclave de Lado"
+ },
+ "British Central Africa Protectorate": {
+  "wikipedia": "British Central Africa Protectorate",
+  "wikidata": "Q2642989",
+  "fr": "Protectorat britannique d’Afrique centrale",
+  "es": "Protectorado Británico de África Central",
+  "withOwner": false
+ },
+ "Newfoundland Colony": {
+  "wikipedia": "Newfoundland Colony",
+  "wikidata": "Q2984260",
+  "fr": "Colonie de Terre-Neuve",
+  "es": "Colonia de Terranova"
  }
 }
