@@ -230,7 +230,7 @@ export class PolityLayer {
   private labels: FlatLabels;
   /** Warning signs, kept above every other primitive (see attach). */
   private signs: FlatLabels;
-  /** Colours of the highlighted realms, by Cliopatria name. Others are grey. */
+  /** Colours of the highlighted realms, by name. Others are grey. */
   private highlight = new Map<string, string>();
   /** The colours asked for, before closed groups take one colour. */
   private chosen = new Map<string, string>();

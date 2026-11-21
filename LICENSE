@@ -25,7 +25,6 @@ SOFTWARE.
 This licence covers the code of Terra Tempora. It does not cover the map
 data, texts and pictures, which keep the licences of their sources (see
 "Sources and licenses" in README.md): the border files in public/data/ and
-the hand-traced borders in scripts/border-overrides/ are shared under
-CC BY-SA 4.0, built from Cliopatria (CC BY 4.0) and from maps under
-CC BY-SA; Wikipedia texts are CC BY-SA; Wikidata facts are CC0; each
+borders/ are shared under CC BY-SA 4.0, built from Natural Earth (public
+domain) and from lines traced from maps, some under CC BY-SA; Wikipedia texts are CC BY-SA; Wikidata facts are CC0; each
 picture keeps its own licence.
