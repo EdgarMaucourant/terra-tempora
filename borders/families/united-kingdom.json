@@ -25,7 +25,7 @@
     "gilbert-islands",
     "IRL"
    ],
-   "from": 1900,
+   "from": 1890,
    "why": "The United Kingdom with the Crown Dependencies (Guernsey, Jersey, the Isle of Man), its overseas territories and the Chagos Archipelago, whose land has not changed hands since 1965, and Ireland (the Irish Free State until 1937)"
   },
   {
@@ -45,7 +45,7 @@
     "SYC",
     "weihaiwei"
    ],
-   "from": 1900,
+   "from": 1890,
    "why": "Hong Kong, Brunei, Southern Rhodesia and the colonies in the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence or handover; Weihaiwei, leased from China until 1930"
   },
   {
@@ -67,7 +67,7 @@
     "BHS",
     "GRD"
    ],
-   "from": 1900,
+   "from": 1890,
    "why": "The Gulf protected states, South Arabia with all of Yemen (North Yemen until 1990), and the colonies and protectorates in Africa, the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence"
   },
   {
@@ -94,7 +94,7 @@
     "dervish-nugaal",
     "lado-enclave"
    ],
-   "from": 1900,
+   "from": 1890,
    "why": "The colonies, protectorates and trust territories Britain held in 1960 in Africa, Asia, the Mediterranean and the Caribbean, with today's borders, until their independence, with Malaya and Somalia around them"
   },
   {
@@ -108,7 +108,7 @@
     "ERI",
     "ETH"
    ],
-   "from": 1900,
+   "from": 1890,
    "why": "The Gold Coast and British Togoland (Ghana), Anglo-Egyptian Sudan and Eritrea, which Britain ruled or ran in the 1950s, with today's borders, and Ethiopia around Eritrea. The Haud, run by Britain inside Ethiopia until 1955, is not drawn"
   },
   {
@@ -155,7 +155,7 @@
     "hyd-karnataka",
     "bhadrachalam"
    ],
-   "from": 1900,
+   "from": 1890,
    "why": "British India (with the princely states, drawn as part of it), Burma and Ceylon, with today's borders, from British rule to today, and Newfoundland until it joined Canada. French and Portuguese India stay with their own families"
   },
   {
@@ -175,7 +175,7 @@
     "IRQ",
     "EGY"
    ],
-   "from": 1900,
+   "from": 1890,
    "why": "Mandatory Palestine and Transjordan, and what became of them: Israel, the West Bank, the Gaza Strip, Jordan, and the Sinai occupied by Israel; Iraq, a British mandate until 1932, and Kuwait, occupied by Iraq in 1990-91; Egypt, a British protectorate until 1922 and part of the United Arab Republic in 1958-61"
   },
   {
@@ -6536,6 +6536,33 @@
    ]
   },
   {
+   "date": "1906-02-28",
+   "what": "Lagos Colony merges with the Southern Nigeria Protectorate",
+   "source": {
+    "title": "Colony and Protectorate of Southern Nigeria (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Colony_and_Protectorate_of_Southern_Nigeria"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "NGA-2850",
+      "NGA-2852",
+      "NGA-2856",
+      "NGA-2855",
+      "NGA-2853",
+      "NGA-2854"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Lagos Colony (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lagos_Colony"
+     },
+     "territory": "Lagos Colony"
+    }
+   ]
+  },
+  {
    "date": "1904-01-10",
    "what": "British forces defeat the Dervishes at Jidballi and drive them out of the Somaliland interior",
    "source": {
@@ -6744,6 +6771,1043 @@
      "source": {
       "title": "Tonga (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Tonga"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1900-01-01",
+   "what": "The Crown takes over the Royal Niger Company’s lands and the Niger Coast Protectorate: Northern and Southern Nigeria are formed",
+   "source": {
+    "title": "Royal Niger Company (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Royal_Niger_Company"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "NGA-2849",
+      "NGA-2865",
+      "NGA-2846",
+      "NGA-2866",
+      "NGA-2867",
+      "NGA-3470",
+      "NGA-2857"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Royal Niger Company (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Royal_Niger_Company"
+     },
+     "territory": "Royal Niger Company"
+    },
+    {
+     "pieces": [
+      "NGA-2844",
+      "NGA-2845",
+      "NGA-2842",
+      "NGA-2847",
+      "NGA-2860",
+      "NGA-2861",
+      "NGA-2841",
+      "NGA-2843",
+      "NGA-2863",
+      "NGA-2862"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Niger Coast Protectorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Niger_Coast_Protectorate"
+     },
+     "territory": "Niger Coast Protectorate"
+    }
+   ]
+  },
+  {
+   "date": "1899-11-24",
+   "what": "The Khalifa is killed at Umm Diwaykarat: Kordofan, the last Mahdist land, falls to the Anglo-Egyptian army",
+   "source": {
+    "title": "Battle of Umm Diwaykarat (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Umm_Diwaykarat"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "SDN-882",
+      "SDN-883"
+     ],
+     "owner": "Mahdist State",
+     "source": {
+      "title": "Mahdist State (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mahdist_State"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1899-11-14",
+   "what": "By the Tripartite Convention, Germany hands Choiseul and Santa Isabel to the British Solomon Islands",
+   "source": {
+    "title": "Tripartite Convention (1899) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tripartite_Convention_(1899)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SLB-3508",
+      "SLB-1264"
+     ],
+     "owner": "Germany",
+     "source": {
+      "title": "German New Guinea (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/German_New_Guinea"
+     },
+     "territory": "German New Guinea"
+    }
+   ]
+  },
+  {
+   "date": "1899-09-01",
+   "what": "The Dervish rising of Mohammed Abdullah Hassan takes the Nugaal valley out of British hands",
+   "source": {
+    "title": "Dervish movement (Somali) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Dervish_movement_(Somali)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "dervish-nugaal"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British Somaliland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Somaliland"
+     },
+     "territory": "British Somaliland"
+    }
+   ]
+  },
+  {
+   "date": "1899-04-16",
+   "what": "Britain takes possession of the New Territories, leased from China for 99 years in 1898",
+   "source": {
+    "title": "New Territories (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/New_Territories"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "HKG-5168",
+      "HKG-5170",
+      "HKG-5165",
+      "HKG-5169",
+      "HKG-5163",
+      "HKG-5162",
+      "HKG-5164",
+      "HKG-5166",
+      "HKG-5167",
+      "HKG-5160",
+      "HKG-5161"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Convention for the Extension of Hong Kong Territory (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Convention_for_the_Extension_of_Hong_Kong_Territory"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1899-01-23",
+   "what": "By the Anglo-Kuwaiti Agreement, Kuwait’s sheikh Mubarak puts Kuwait under British protection",
+   "source": {
+    "title": "Anglo-Kuwaiti Agreement of 1899 (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Anglo-Kuwaiti_Agreement_of_1899"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "KWT"
+     ],
+     "owner": "Kuwait",
+     "source": {
+      "title": "Sheikhdom of Kuwait (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sheikhdom_of_Kuwait"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1899-01-19",
+   "what": "The Anglo-Egyptian condominium over the Sudan is set up",
+   "source": {
+    "title": "Anglo-Egyptian Sudan (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Anglo-Egyptian_Sudan"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "SDS"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Anglo-Egyptian Sudan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Anglo-Egyptian_Sudan"
+     }
+    },
+    {
+     "pieces": [
+      "lado-enclave"
+     ],
+     "owner": "Congo Free State",
+     "source": {
+      "title": "Lado Enclave (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lado_Enclave"
+     },
+     "territory": "Lado Enclave"
+    },
+    {
+     "pieces": [
+      "SDN-878",
+      "SDN-877",
+      "SDN-874",
+      "SDN-875",
+      "SDN-879",
+      "SDN-880",
+      "SDN-148",
+      "SDN-876",
+      "SDN-884",
+      "SDN-149"
+     ],
+     "owner": "Khedivate of Egypt",
+     "source": {
+      "title": "Mahdist War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mahdist_War"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1882-09-13",
+      "note": "Occupied by British troops since 1882 (Tel el-Kebir); the khedive remained a vassal of the Ottoman sultan",
+      "source": {
+       "title": "British occupation of Egypt (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/British_occupation_of_Egypt"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1898-10-01",
+   "what": "The British Solomon Islands protectorate is extended to the Santa Cruz Islands and Rennell",
+   "source": {
+    "title": "British Solomon Islands (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/British_Solomon_Islands"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "SLB-1934",
+      "SLB-1261"
+     ],
+     "owner": null,
+     "source": {
+      "title": "British Solomon Islands (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Solomon_Islands"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1898-09-02",
+   "what": "Kitchener’s army destroys the Mahdist army at Omdurman and takes Khartoum; Ali Dinar retakes Darfur",
+   "source": {
+    "title": "Battle of Omdurman (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Omdurman"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "SDN-874",
+      "SDN-875",
+      "SDN-879",
+      "SDN-880",
+      "SDN-148",
+      "SDN-876",
+      "SDN-5856",
+      "SDN-5857",
+      "SDN-5858",
+      "SDN-5859",
+      "SDN-881"
+     ],
+     "owner": "Mahdist State",
+     "source": {
+      "title": "Mahdist State (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mahdist_State"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1898-05-24",
+   "what": "Japan leaves Weihaiwei and Britain takes it over, under a lease signed with China on 1 July",
+   "source": {
+    "title": "Weihaiwei under British rule (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Weihaiwei_under_British_rule"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "weihaiwei"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Weihaiwei under British rule (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Weihaiwei_under_British_rule"
+     },
+     "hatch": {
+      "by": "Japan",
+      "since": "1895-02-12",
+      "note": "Taken by Japan in the First Sino-Japanese War (Weihaiwei surrendered on 12 February 1895) and held until the indemnity was paid; the Japanese left in May 1898",
+      "source": {
+       "title": "Battle of Weihaiwei (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Battle_of_Weihaiwei"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1898-02-01",
+   "what": "British forces defeat Mpezeni’s Ngoni: the east of North-Eastern Rhodesia comes under the company",
+   "source": {
+    "title": "North-Eastern Rhodesia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/North-Eastern_Rhodesia"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ZMB-518"
+     ],
+     "owner": null,
+     "source": {
+      "title": "North-Eastern Rhodesia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/North-Eastern_Rhodesia"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1897-12-25",
+   "what": "Italy hands Kassala over to Egypt",
+   "source": {
+    "title": "Kassala (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kassala"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SDN-884"
+     ],
+     "owner": "Italy",
+     "source": {
+      "title": "Italian Eritrea (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Italian_Eritrea"
+     },
+     "territory": "Italian Eritrea"
+    }
+   ]
+  },
+  {
+   "date": "1897-10-20",
+   "what": "Robert Coryndon arrives as the company’s resident with Lewanika: Barotseland comes under British South Africa Company rule",
+   "source": {
+    "title": "North-Western Rhodesia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/North-Western_Rhodesia"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ZMB-523",
+      "ZMB-521",
+      "ZMB-522"
+     ],
+     "owner": "Barotseland",
+     "source": {
+      "title": "Barotseland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Barotseland"
+     }
+    },
+    {
+     "pieces": [
+      "ZMB-516",
+      "ZMB-517",
+      "ZMB-520"
+     ],
+     "owner": null,
+     "source": {
+      "title": "North-Western Rhodesia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/North-Western_Rhodesia"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1897-09-06",
+   "what": "Anglo-Egyptian forces take Berber, after Abu Hamed in August",
+   "source": {
+    "title": "Mahdist War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Mahdist_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "SDN-877"
+     ],
+     "owner": "Mahdist State",
+     "source": {
+      "title": "Mahdist State (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mahdist_State"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1897-02-18",
+   "what": "British forces take Benin City and end the Kingdom of Benin",
+   "source": {
+    "title": "Benin Expedition of 1897 (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Benin_Expedition_of_1897"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "NGA-2861"
+     ],
+     "owner": "Kingdom of Benin",
+     "source": {
+      "title": "Kingdom of Benin (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Benin"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1897-02-17",
+   "what": "The Congo Free State takes Rejaf from the Mahdists and occupies the Lado Enclave",
+   "source": {
+    "title": "Lado Enclave (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Lado_Enclave"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "lado-enclave"
+     ],
+     "owner": "Mahdist State",
+     "source": {
+      "title": "Mahdist State (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mahdist_State"
+     }
+    },
+    {
+     "pieces": [
+      "UGA-3081",
+      "UGA-3086",
+      "UGA-3080",
+      "UGA-3087",
+      "UGA-5589",
+      "UGA-3084",
+      "UGA-3085"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Lado Enclave (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lado_Enclave"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1897-02-16",
+   "what": "The Royal Niger Company takes Ilorin, an emirate of the Sokoto Caliphate",
+   "source": {
+    "title": "Ilorin Emirate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Ilorin_Emirate"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "NGA-2849"
+     ],
+     "owner": "Sokoto Caliphate",
+     "source": {
+      "title": "Ilorin Emirate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ilorin_Emirate"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1897-01-01",
+   "what": "British posts are set up in the lands north of Ashanti, later the Northern Territories",
+   "source": {
+    "title": "Northern Territories of the Gold Coast (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Northern_Territories_of_the_Gold_Coast"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "GHA-2155",
+      "GHA-2156",
+      "GHA-2157"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Northern Territories of the Gold Coast (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Northern_Territories_of_the_Gold_Coast"
+     }
+    },
+    {
+     "pieces": [
+      "btog-northern",
+      "btog-upper-east"
+     ],
+     "owner": "Germany",
+     "source": {
+      "title": "Togoland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Togoland"
+     },
+     "territory": "Togoland"
+    }
+   ]
+  },
+  {
+   "date": "1896-09-23",
+   "what": "Anglo-Egyptian forces retake Dongola",
+   "source": {
+    "title": "Dongola Expedition (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Dongola_Expedition"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "SDN-878"
+     ],
+     "owner": "Mahdist State",
+     "source": {
+      "title": "Mahdist State (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mahdist_State"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1896-08-31",
+   "what": "Britain declares a protectorate over the hinterland of Sierra Leone",
+   "source": {
+    "title": "Sierra Leone Colony and Protectorate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Sierra_Leone_Colony_and_Protectorate"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SLE-762",
+      "SLE-790",
+      "SLE-760"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Sierra Leone Colony and Protectorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sierra_Leone_Colony_and_Protectorate"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1896-06-30",
+   "what": "The Uganda Protectorate is extended to Bunyoro, Toro, Ankole and Busoga",
+   "source": {
+    "title": "Uganda Protectorate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Uganda_Protectorate"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UGA-3372",
+      "UGA-3370",
+      "UGA-3375",
+      "UGA-3376",
+      "UGA-3120",
+      "UGA-5614",
+      "UGA-3125",
+      "UGA-3096",
+      "UGA-5603",
+      "UGA-5601",
+      "UGA-3079",
+      "UGA-3127",
+      "UGA-3112",
+      "UGA-3113",
+      "UGA-5616",
+      "UGA-3118",
+      "UGA-3121",
+      "UGA-3116",
+      "UGA-5626",
+      "UGA-3082",
+      "UGA-3105",
+      "UGA-5610",
+      "UGA-3104",
+      "UGA-3106",
+      "UGA-3367",
+      "UGA-5621",
+      "UGA-3373",
+      "UGA-3377",
+      "UGA-3069",
+      "UGA-5592",
+      "UGA-5593",
+      "UGA-3064",
+      "UGA-5604",
+      "UGA-3102",
+      "UGA-3070",
+      "UGA-3066",
+      "UGA-3100",
+      "UGA-3107",
+      "UGA-3368",
+      "UGA-5611",
+      "UGA-3108",
+      "UGA-3103",
+      "UGA-3099",
+      "UGA-5605",
+      "UGA-3101",
+      "UGA-3369",
+      "UGA-3374",
+      "UGA-3098",
+      "UGA-5609",
+      "UGA-3068",
+      "UGA-3071",
+      "UGA-5608",
+      "UGA-3123",
+      "UGA-3126",
+      "UGA-5607",
+      "UGA-5606",
+      "UGA-3124",
+      "UGA-3122",
+      "UGA-5596",
+      "UGA-3074",
+      "UGA-3076",
+      "UGA-3371",
+      "UGA-3128",
+      "UGA-5612",
+      "UGA-5624",
+      "UGA-5623",
+      "UGA-5622",
+      "UGA-3366",
+      "UGA-5613",
+      "UGA-3114",
+      "UGA-3117",
+      "UGA-5625",
+      "UGA-3115",
+      "UGA-5594",
+      "UGA-3119",
+      "UGA-5595",
+      "UGA-5615",
+      "UGA-3065",
+      "UGA-5590",
+      "UGA-5591",
+      "UGA-3073"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Uganda Protectorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Uganda_Protectorate"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1896-01-20",
+   "what": "British troops occupy Kumasi and exile the Asantehene Prempeh I",
+   "source": {
+    "title": "Anglo-Ashanti wars (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Anglo-Ashanti_wars"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GHA-2158",
+      "GHA-2159"
+     ],
+     "owner": "Ashanti Empire",
+     "source": {
+      "title": "Ashanti Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ashanti_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1895-07-01",
+   "what": "The British government takes over from the Imperial British East Africa Company: the East Africa Protectorate is formed",
+   "source": {
+    "title": "East Africa Protectorate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/East_Africa_Protectorate"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "KEN",
+      "KEN-891",
+      "KEN-1197",
+      "KEN-890",
+      "SOM-2314",
+      "SOM-2315",
+      "SOM-2645"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Imperial British East Africa Company (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Imperial_British_East_Africa_Company"
+     },
+     "territory": "Imperial British East Africa Company"
+    }
+   ]
+  },
+  {
+   "date": "1895-07-01",
+   "what": "Perak, Selangor, Negeri Sembilan and Pahang form the Federated Malay States",
+   "source": {
+    "title": "Federated Malay States (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Federated_Malay_States"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MYS-1137"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Perak (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Perak"
+     },
+     "territory": "Perak"
+    },
+    {
+     "pieces": [
+      "MYS-1148",
+      "MYS-4831",
+      "MYS-4832"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Selangor (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Selangor"
+     },
+     "territory": "Selangor"
+    },
+    {
+     "pieces": [
+      "MYS-1147"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Pahang (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pahang"
+     },
+     "territory": "Pahang"
+    },
+    {
+     "pieces": [
+      "MYS-1146"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Negeri Sembilan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Negeri_Sembilan"
+     },
+     "territory": "Negeri Sembilan"
+    }
+   ]
+  },
+  {
+   "date": "1895-02-12",
+   "what": "Japan takes Weihaiwei from China",
+   "source": {
+    "title": "Battle of Weihaiwei (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Weihaiwei"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "weihaiwei"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Weihaiwei under British rule (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Weihaiwei_under_British_rule"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1894-07-17",
+   "what": "Italian troops take Kassala from the Mahdists",
+   "source": {
+    "title": "Battle of Kassala (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Kassala"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SDN-884"
+     ],
+     "owner": "Mahdist State",
+     "source": {
+      "title": "Mahdist State (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mahdist_State"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1893-11-04",
+   "what": "British South Africa Company forces take Bulawayo: the Ndebele kingdom falls",
+   "source": {
+    "title": "First Matabele War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/First_Matabele_War"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ZWE-526",
+      "ZWE-530",
+      "ZWE-531",
+      "ZWE-527"
+     ],
+     "owner": "Ndebele Kingdom",
+     "source": {
+      "title": "Mthwakazi (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mthwakazi"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1893-06-15",
+   "what": "Britain declares a protectorate over the southern Solomon Islands",
+   "source": {
+    "title": "British Solomon Islands (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/British_Solomon_Islands"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "SLB-1263",
+      "SLB-1260",
+      "SLB-3509",
+      "SLB-1262",
+      "SLB-5130",
+      "SLB-3507"
+     ],
+     "owner": null,
+     "source": {
+      "title": "British Solomon Islands (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Solomon_Islands"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1893-04-01",
+   "what": "The Imperial British East Africa Company leaves Buganda, which Britain takes over (a protectorate from 1894)",
+   "source": {
+    "title": "Uganda Protectorate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Uganda_Protectorate"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "UGA-3361",
+      "UGA-2631",
+      "UGA-5598",
+      "UGA-3090",
+      "UGA-3067",
+      "UGA-3092",
+      "UGA-3094",
+      "UGA-3089",
+      "UGA-3078",
+      "UGA-5599",
+      "UGA-5600",
+      "UGA-3091",
+      "UGA-3095",
+      "UGA-5602",
+      "UGA-3077",
+      "UGA-3093",
+      "UGA-5617",
+      "UGA-5619",
+      "UGA-5620",
+      "UGA-3088",
+      "UGA-5618",
+      "UGA-3362",
+      "UGA-3075",
+      "UGA-5597"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Imperial British East Africa Company (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Imperial_British_East_Africa_Company"
+     },
+     "territory": "Imperial British East Africa Company"
+    }
+   ]
+  },
+  {
+   "date": "1893-03-01",
+   "what": "Treaties after the Ijebu expedition bring the Yoruba states under the Lagos protectorate",
+   "source": {
+    "title": "Lagos Colony (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Lagos_Colony"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "NGA-2852",
+      "NGA-2856",
+      "NGA-2855",
+      "NGA-2853",
+      "NGA-2854"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Lagos Colony (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lagos_Colony"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1892-10-16",
+   "what": "Britain declares a protectorate over the Ellice Islands",
+   "source": {
+    "title": "Gilbert and Ellice Islands (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Gilbert_and_Ellice_Islands"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "TUV"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Gilbert and Ellice Islands (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gilbert_and_Ellice_Islands"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1892-05-27",
+   "what": "Britain declares a protectorate over the Gilbert Islands",
+   "source": {
+    "title": "Gilbert and Ellice Islands (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Gilbert_and_Ellice_Islands"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "gilbert-islands"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Gilbert and Ellice Islands (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gilbert_and_Ellice_Islands"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1891-06-11",
+   "what": "The Anglo-Portuguese Treaty leaves the land north of the Zambezi, later North-Eastern Rhodesia, to the British South Africa Company",
+   "source": {
+    "title": "North-Eastern Rhodesia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/North-Eastern_Rhodesia"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ZMB-514",
+      "ZMB-515",
+      "ZMB-5511"
+     ],
+     "owner": null,
+     "source": {
+      "title": "North-Eastern Rhodesia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/North-Eastern_Rhodesia"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1891-05-14",
+   "what": "The British Central Africa Protectorate is extended from the Shire Highlands to the lands around Lake Nyasa",
+   "source": {
+    "title": "British Central Africa Protectorate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/British_Central_Africa_Protectorate"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "MWI-1903",
+      "MWI-1901",
+      "MWI-5509",
+      "MWI-1900",
+      "MWI-1899",
+      "MWI-1911",
+      "MWI-1902",
+      "MWI-1914",
+      "MWI-1907",
+      "MWI-1909",
+      "MWI-1912",
+      "MWI-1908",
+      "MWI-1913",
+      "MWI-1194",
+      "MWI-1873"
+     ],
+     "owner": null,
+     "source": {
+      "title": "British Central Africa Protectorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Central_Africa_Protectorate"
      }
     }
    ]

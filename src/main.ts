@@ -2735,9 +2735,10 @@ function showPin(lonLat: [number, number] | null) {
   map.setPin(lonLat);
 }
 
+// Like a click off every border: the camera stays where it is (Edgar, 2026-11-21).
 $("back").addEventListener("click", (e) => {
   e.preventDefault();
-  leaveForWorld(true);
+  leaveForWorld(false);
 });
 window.addEventListener("popstate", route);
 
