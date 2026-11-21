@@ -10698,6 +10698,110 @@
    ],
    "realm": "Crown Colony of Labuan",
    "why": "Joined the Straits Settlements in 1907"
+  },
+  {
+   "place": "Calcutta (Company rule)",
+   "lonLat": [
+    88.36,
+    22.57
+   ],
+   "years": [
+    1850,
+    1857
+   ],
+   "realm": "Company rule in India",
+   "why": "Crown rule from November 1858"
+  },
+  {
+   "place": "Rangoon (Kingdom of Burma)",
+   "lonLat": [
+    96.16,
+    16.8
+   ],
+   "years": [
+    1850,
+    1851
+   ],
+   "realm": "Kingdom of Burma",
+   "why": "Annexed by Britain in December 1852"
+  },
+  {
+   "place": "Port Blair (before the settlement)",
+   "lonLat": [
+    92.73,
+    11.62
+   ],
+   "years": [
+    1850,
+    1857
+   ],
+   "realm": null,
+   "why": "Penal settlement founded in March 1858"
+  },
+  {
+   "place": "Bluefields (Mosquito Coast)",
+   "lonLat": [
+    -83.77,
+    12.01
+   ],
+   "years": [
+    1850,
+    1859
+   ],
+   "realm": "Mosquito Coast",
+   "why": "Protectorate given up by the Treaty of Managua, January 1860"
+  },
+  {
+   "place": "Bluefields (Nicaragua)",
+   "lonLat": [
+    -83.77,
+    12.01
+   ],
+   "years": [
+    1860,
+    1893
+   ],
+   "realm": "Nicaragua",
+   "why": "Mosquito Reserve under Nicaraguan sovereignty from 1860"
+  },
+  {
+   "place": "Hallaniyah (Oman)",
+   "lonLat": [
+    56.0,
+    17.5
+   ],
+   "years": [
+    1850,
+    1853
+   ],
+   "realm": "Oman",
+   "why": "Given to Britain in July 1854"
+  },
+  {
+   "place": "Kowloon (China)",
+   "lonLat": [
+    114.17,
+    22.31
+   ],
+   "years": [
+    1850,
+    1859
+   ],
+   "realm": "China",
+   "why": "Ceded to Britain in October 1860"
+  },
+  {
+   "place": "Basse Santa Su (before the protectorate)",
+   "lonLat": [
+    -14.21,
+    13.31
+   ],
+   "years": [
+    1850,
+    1893
+   ],
+   "realm": null,
+   "why": "Protectorate over the river lands from 1894"
   }
  ]
 }

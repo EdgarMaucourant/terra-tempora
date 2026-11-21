@@ -29,6 +29,9 @@
  "french-west-africa": {
   "name": "Afrique-Occidentale française"
  },
+ "company-rule-in-india": {
+  "name": "Inde de la Compagnie"
+ },
  "khedivate-of-egypt": {
   "name": "Khédivat d’Égypte"
  },
@@ -326,6 +329,9 @@
  "french-cameroon": {
   "name": "Cameroun français"
  },
+ "kingdom-of-burma": {
+  "name": "Royaume de Birmanie"
+ },
  "morocco": {
   "name": "Maroc"
  },
@@ -364,9 +370,6 @@
  },
  "barotseland": {
   "name": "Barotseland"
- },
- "kingdom-of-burma": {
-  "name": "Royaume de Birmanie"
  },
  "finland": {
   "name": "Finlande"
@@ -703,6 +706,9 @@
  },
  "buganda": {
   "name": "Bouganda"
+ },
+ "mosquito-coast": {
+  "name": "Côte des Mosquitos"
  },
  "unfederated-malay-states": {
   "name": "États malais non fédérés"
