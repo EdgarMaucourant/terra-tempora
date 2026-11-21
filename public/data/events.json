@@ -7369,6 +7369,219 @@
    "summary": "The Himalayan kingdom of Sikkim, a British protectorate and from 1950 an Indian one, is shaken by protests against its king, the Chogyal, in 1973. In April 1975 Indian troops disarm the palace guard and a referendum votes to abolish the monarchy; on 16 May 1975 Sikkim becomes the 22nd state of India.",
    "wikipedia": "Kingdom_of_Sikkim",
    "search": "Sikkim 1975 merger India referendum Chogyal Palden Thondup Namgyal abolished monarchy 22nd state protectorate"
+  },
+  {
+   "id": "transjordan-independence-1946",
+   "kind": "empire",
+   "year": 1946,
+   "title": "Transjordan becomes independent, 25 May 1946",
+   "place": "Amman",
+   "lonLat": [
+    35.93,
+    31.95
+   ],
+   "civs": [
+    "jordan",
+    "emirate-of-transjordan",
+    "united-kingdom"
+   ],
+   "summary": "Under the Treaty of London, Britain ends its mandate over Transjordan, which its emir Abdullah had ruled under British supervision since 1921. On 25 May 1946 he is proclaimed king of the Hashemite Kingdom of Transjordan, which keeps close ties with Britain and its British-led army, the Arab Legion. The country is renamed Jordan in 1949.",
+   "wikipedia": "Emirate_of_Transjordan",
+   "search": "Transjordan independence 25 May 1946 Treaty of London Abdullah I king Hashemite Kingdom Amman British mandate Arab Legion Jordan 1949"
+  },
+  {
+   "id": "israel-independence-1948",
+   "kind": "war",
+   "year": 1948,
+   "to": 1949,
+   "title": "Israel declares independence and the first Arab–Israeli war, 1948 – 1949",
+   "place": "Tel Aviv",
+   "lonLat": [
+    34.78,
+    32.08
+   ],
+   "civs": [
+    "israel",
+    "mandatory-palestine",
+    "jordan",
+    "egypt",
+    "west-bank",
+    "gaza-strip",
+    "united-kingdom"
+   ],
+   "summary": "As the British Mandate ends, David Ben-Gurion proclaims the State of Israel in Tel Aviv on 14 May 1948, and the armies of Egypt, Transjordan, Syria, Iraq and Lebanon attack the next day. When the fighting stops, the 1949 armistice lines leave Israel with more land than the UN partition plan gave it, Jordan with the West Bank and East Jerusalem, and Egypt with the Gaza Strip. Some 700,000 Palestinians flee or are driven from their homes, the Nakba.",
+   "wikipedia": "1948_Arab–Israeli_War",
+   "search": "Israel declaration of independence 14 May 1948 Ben-Gurion end of British Mandate Arab-Israeli war Nakba Palestinian refugees 1949 armistice Green Line"
+  },
+  {
+   "id": "jordan-annexes-west-bank-1950",
+   "kind": "empire",
+   "year": 1950,
+   "title": "Jordan annexes the West Bank, 24 April 1950",
+   "place": "Nablus",
+   "lonLat": [
+    35.26,
+    32.22
+   ],
+   "civs": [
+    "jordan",
+    "west-bank"
+   ],
+   "summary": "Holding the West Bank and East Jerusalem since the 1948 war, Jordan formally annexes them on 24 April 1950 and gives their Palestinian inhabitants Jordanian citizenship. The annexation is recognised by almost no other country, and the Arab League condemns it. Jordan loses the West Bank to Israel in 1967 and gives up its claim in 1988.",
+   "wikipedia": "Jordanian_annexation_of_the_West_Bank",
+   "search": "Jordanian annexation of the West Bank 1950 East Jerusalem Abdullah Jericho conference Two Banks citizenship recognised only by Britain Pakistan disengagement 1988"
+  },
+  {
+   "id": "six-day-war-1967",
+   "kind": "war",
+   "year": 1967,
+   "title": "The Six-Day War, 5 – 10 June 1967",
+   "place": "Jerusalem",
+   "lonLat": [
+    35.23,
+    31.78
+   ],
+   "civs": [
+    "israel",
+    "egypt",
+    "jordan",
+    "syria",
+    "west-bank",
+    "gaza-strip"
+   ],
+   "summary": "After Egypt closes the Straits of Tiran and masses troops in the Sinai, Israel strikes first on 5 June 1967, destroying Egypt’s air force on the ground. In six days it takes the Sinai and the Gaza Strip from Egypt, the West Bank and East Jerusalem from Jordan, and the Golan Heights from Syria. UN Resolution 242 calls for withdrawal in exchange for peace, and the occupation of these lands shapes the region ever since.",
+   "wikipedia": "Six-Day_War",
+   "search": "Six-Day War June 1967 Israel Egypt Jordan Syria Nasser Straits of Tiran preemptive strike Sinai Gaza West Bank East Jerusalem Golan Heights occupation Resolution 242"
+  },
+  {
+   "id": "yom-kippur-war-1973",
+   "kind": "war",
+   "year": 1973,
+   "title": "The Yom Kippur War, 6 – 25 October 1973",
+   "place": "Suez Canal",
+   "lonLat": [
+    32.27,
+    30.6
+   ],
+   "civs": [
+    "egypt",
+    "israel",
+    "syria"
+   ],
+   "summary": "On 6 October 1973, the Jewish holy day of Yom Kippur, Egypt and Syria launch a surprise attack: Egyptian troops cross the Suez Canal and break the Israeli Bar Lev Line, while Syria pushes into the Golan. Israel recovers and crosses the canal itself before a ceasefire on 25 October. The war, and the Arab oil embargo that comes with it, opens the way to talks that return the Sinai to Egypt.",
+   "wikipedia": "Yom_Kippur_War",
+   "search": "Yom Kippur War October 1973 Ramadan War Egypt Syria surprise attack Suez Canal Bar Lev Line Golan Sadat ceasefire oil embargo"
+  },
+  {
+   "id": "egypt-israel-peace-treaty-1979",
+   "kind": "treaty",
+   "year": 1979,
+   "title": "The Egypt–Israel peace treaty, 26 March 1979",
+   "place": "Sinai",
+   "lonLat": [
+    33.8,
+    29.5
+   ],
+   "civs": [
+    "egypt",
+    "israel"
+   ],
+   "summary": "After Anwar Sadat’s visit to Jerusalem in 1977 and the Camp David Accords brokered by Jimmy Carter, Sadat and Menachem Begin sign a peace treaty in Washington on 26 March 1979. Egypt becomes the first Arab country to recognise Israel, which agrees to give back the whole Sinai. The Arab League suspends Egypt, and Sadat is assassinated in 1981.",
+   "wikipedia": "Egypt–Israel_peace_treaty",
+   "search": "Egypt Israel peace treaty 26 March 1979 Camp David Accords 1978 Sadat Begin Carter Sinai withdrawal recognition Arab League suspension Sadat assassinated 1981"
+  },
+  {
+   "id": "sinai-returned-1982",
+   "kind": "empire",
+   "year": 1982,
+   "title": "Israel hands the last of the Sinai back to Egypt, 25 April 1982",
+   "place": "Sharm el-Sheikh",
+   "lonLat": [
+    34.33,
+    27.91
+   ],
+   "civs": [
+    "egypt",
+    "israel"
+   ],
+   "summary": "Under the peace treaty, Israel withdraws from the Sinai in stages and hands over the last part on 25 April 1982, after evacuating its settlements, including the town of Yamit, by force. A multinational force watches over the demilitarised peninsula. The tiny strip of Taba, still disputed, goes to Egypt by arbitration in 1989.",
+   "wikipedia": "Sinai_Peninsula",
+   "search": "Israel withdrawal Sinai 25 April 1982 Egypt peace treaty Yamit evacuation settlers Sharm el-Sheikh Multinational Force and Observers Taba 1989"
+  },
+  {
+   "id": "palestine-declaration-1988",
+   "kind": "revolution",
+   "year": 1988,
+   "title": "The State of Palestine is declared, 15 November 1988",
+   "place": "Ramallah",
+   "lonLat": [
+    35.2,
+    31.9
+   ],
+   "civs": [
+    "palestine",
+    "west-bank",
+    "gaza-strip",
+    "jordan"
+   ],
+   "summary": "During the First Intifada, the uprising in the occupied territories that began in December 1987, Jordan gives up its claim to the West Bank on 31 July 1988. On 15 November the Palestine Liberation Organization, meeting in exile in Algiers, declares the State of Palestine, read out by Yasser Arafat. Dozens of countries recognise it within weeks.",
+   "wikipedia": "Palestinian_Declaration_of_Independence",
+   "search": "Palestinian Declaration of Independence 15 November 1988 Algiers Yasser Arafat PLO Palestinian National Council First Intifada Jordan disengagement 31 July 1988 recognition"
+  },
+  {
+   "id": "oslo-accords-1993",
+   "kind": "treaty",
+   "year": 1993,
+   "title": "The Oslo Accords, 13 September 1993",
+   "place": "Jericho",
+   "lonLat": [
+    35.44,
+    31.86
+   ],
+   "civs": [
+    "palestine",
+    "israel"
+   ],
+   "summary": "After secret talks in Norway, Israel and the PLO recognise each other, and Yitzhak Rabin and Yasser Arafat shake hands at the White House on 13 September 1993. The accords create the Palestinian Authority, which takes over Gaza and Jericho in 1994 and parts of the West Bank later, as a five-year step towards a final settlement that never comes. Rabin is assassinated in 1995.",
+   "wikipedia": "Oslo_Accords",
+   "search": "Oslo Accords 13 September 1993 Rabin Arafat handshake White House Declaration of Principles Palestinian Authority Gaza Jericho 1994 Oslo II areas A B C Rabin assassinated 1995"
+  },
+  {
+   "id": "israel-jordan-peace-treaty-1994",
+   "kind": "treaty",
+   "year": 1994,
+   "title": "The Israel–Jordan peace treaty, 26 October 1994",
+   "place": "Wadi Araba",
+   "lonLat": [
+    35.4,
+    30.5
+   ],
+   "civs": [
+    "jordan",
+    "israel"
+   ],
+   "summary": "After decades of secret contacts, King Hussein of Jordan and Yitzhak Rabin sign a peace treaty at the Wadi Araba crossing on 26 October 1994, with Bill Clinton looking on. Jordan becomes the second Arab country to make peace with Israel; the treaty fixes their border along the Jordan and Arava valleys and shares the water of the Jordan and Yarmuk rivers.",
+   "wikipedia": "Israel–Jordan_peace_treaty",
+   "search": "Israel Jordan peace treaty 26 October 1994 Wadi Araba King Hussein Rabin Clinton border Jordan River water Naharayim Tzofar"
+  },
+  {
+   "id": "gaza-disengagement-2005",
+   "kind": "empire",
+   "year": 2005,
+   "title": "Israel withdraws from the Gaza Strip, August – September 2005",
+   "place": "Gaza",
+   "lonLat": [
+    34.45,
+    31.5
+   ],
+   "civs": [
+    "palestine",
+    "israel",
+    "gaza-strip"
+   ],
+   "summary": "Under Ariel Sharon’s disengagement plan, Israel evacuates all 21 of its settlements in the Gaza Strip and withdraws its army by 12 September 2005, while keeping control of Gaza’s borders, airspace and coast. Hamas takes over the strip in 2007, after which Israel and Egypt impose a blockade; the UN still counts Gaza as occupied territory.",
+   "wikipedia": "Israeli_disengagement_from_Gaza",
+   "search": "Israeli disengagement from Gaza 2005 Ariel Sharon settlements Gush Katif evacuation withdrawal blockade Hamas 2007 occupation"
   }
  ]
 }
