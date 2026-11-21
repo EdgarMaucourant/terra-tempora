@@ -7194,6 +7194,181 @@
    "summary": "On 3 March 1959 the governor of Nyasaland declares an emergency and arrests Hastings Banda and hundreds of members of the Nyasaland African Congress, who oppose the Central African Federation. Troops and police kill more than fifty people, 20 of them at Nkata Bay. The Devlin Commission calls Nyasaland \"a police state\", Banda is freed in 1960, and Britain soon lets Nyasaland leave the federation.",
    "wikipedia": "Nyasaland_African_Congress",
    "search": "Nyasaland Emergency 1959 Hastings Banda arrested Operation Sunrise Nkata Bay Devlin report police state federation"
+  },
+  {
+   "id": "partition-of-india-1947",
+   "kind": "empire",
+   "year": 1947,
+   "title": "India and Pakistan become independent and British India is partitioned, 15 August 1947",
+   "place": "Punjab",
+   "lonLat": [
+    74.57,
+    31.6
+   ],
+   "civs": [
+    "british-raj",
+    "india",
+    "pakistan",
+    "united-kingdom"
+   ],
+   "summary": "At midnight on 14–15 August 1947, British rule in India ends and two dominions are born: India, led by Jawaharlal Nehru, and Pakistan, led by Muhammad Ali Jinnah, in two wings on either side of India. The Radcliffe Line, drawn in a few weeks, splits Punjab and Bengal by religion. Some 15 million people flee across the new borders, and up to a million or more are killed in the violence that follows.",
+   "wikipedia": "Partition_of_India",
+   "search": "Partition of India 1947 independence Pakistan Nehru Jinnah Mountbatten Radcliffe Line Punjab Bengal refugees violence"
+  },
+  {
+   "id": "first-kashmir-war-1947",
+   "kind": "war",
+   "year": 1947,
+   "to": 1949,
+   "title": "The first war over Kashmir, 1947 – 1949",
+   "place": "Srinagar",
+   "lonLat": [
+    74.8,
+    34.08
+   ],
+   "civs": [
+    "india",
+    "pakistan"
+   ],
+   "summary": "In October 1947 tribesmen from Pakistan invade the princely state of Jammu and Kashmir. Its Hindu ruler, Maharaja Hari Singh, accedes to India, which flies troops into Srinagar, and the two new countries fight their first war. A UN ceasefire on 1 January 1949 leaves about two-thirds of the state with India and the rest, Azad Kashmir and Gilgit-Baltistan, with Pakistan, along a line that still divides Kashmir today.",
+   "wikipedia": "Indo-Pakistani_war_of_1947–1948",
+   "search": "First Kashmir war 1947 1948 Indo-Pakistani war Maharaja Hari Singh accession Srinagar tribal invasion ceasefire line 1949 Azad Kashmir Gilgit"
+  },
+  {
+   "id": "burma-independence-1948",
+   "kind": "empire",
+   "year": 1948,
+   "title": "Burma becomes independent, 4 January 1948",
+   "place": "Yangon",
+   "lonLat": [
+    96.16,
+    16.87
+   ],
+   "civs": [
+    "myanmar",
+    "british-burma",
+    "united-kingdom"
+   ],
+   "summary": "Aung San negotiates Burma’s independence with Britain in 1947 and wins the frontier peoples over at the Panglong conference, but he is assassinated with most of his cabinet that July. At an hour chosen by astrologers, 4:20 in the morning of 4 January 1948, the Union of Burma becomes independent with U Nu as prime minister and, unlike India, leaves the Commonwealth.",
+   "wikipedia": "Myanmar",
+   "search": "Burma independence 4 January 1948 Union of Burma Aung San assassinated U Nu Rangoon Panglong Agreement leaves Commonwealth"
+  },
+  {
+   "id": "ceylon-independence-1948",
+   "kind": "empire",
+   "year": 1948,
+   "title": "Ceylon becomes independent, 4 February 1948",
+   "place": "Colombo",
+   "lonLat": [
+    79.86,
+    6.93
+   ],
+   "civs": [
+    "sri-lanka",
+    "british-ceylon",
+    "united-kingdom"
+   ],
+   "summary": "After a peaceful campaign, Ceylon becomes an independent dominion on 4 February 1948 with D. S. Senanayake as its first prime minister and the British king as head of state. British bases stay until 1957. In 1972 the island becomes a republic and takes the name Sri Lanka.",
+   "wikipedia": "Dominion_of_Ceylon",
+   "search": "Ceylon independence 4 February 1948 Dominion of Ceylon D. S. Senanayake Colombo Sri Lanka 1972 republic"
+  },
+  {
+   "id": "hyderabad-annexation-1948",
+   "kind": "war",
+   "year": 1948,
+   "title": "India annexes Hyderabad, September 1948",
+   "place": "Hyderabad",
+   "lonLat": [
+    78.47,
+    17.38
+   ],
+   "civs": [
+    "india",
+    "hyderabad-state"
+   ],
+   "summary": "The Nizam of Hyderabad, ruler of the largest princely state, refuses to join India or Pakistan after 1947, while his Razakar militia terrorises the mostly Hindu population. On 13 September 1948 the Indian Army moves in, in what it calls a \"police action\" (Operation Polo). The Nizam surrenders after four days and Hyderabad becomes part of India, amid killings that cost tens of thousands of lives.",
+   "wikipedia": "Indian_annexation_of_Hyderabad",
+   "search": "Operation Polo 1948 annexation of Hyderabad Nizam Osman Ali Khan Razakars police action Indian Army Telangana"
+  },
+  {
+   "id": "newfoundland-joins-canada-1949",
+   "kind": "empire",
+   "year": 1949,
+   "title": "Newfoundland joins Canada, 31 March 1949",
+   "place": "St. John's",
+   "lonLat": [
+    -52.75,
+    47.55
+   ],
+   "civs": [
+    "canada",
+    "dominion-of-newfoundland",
+    "united-kingdom"
+   ],
+   "summary": "Bankrupt in the Depression, the Dominion of Newfoundland gave up self-government in 1934 to a commission appointed from London. In two referendums in 1948, campaigned for by Joey Smallwood, voters narrowly choose union with Canada over restored independence, and Newfoundland, with Labrador, becomes Canada’s tenth province just before midnight on 31 March 1949.",
+   "wikipedia": "Dominion_of_Newfoundland",
+   "search": "Newfoundland joins Canada 1949 Confederation referendum 1948 Joey Smallwood Commission of Government tenth province Labrador"
+  },
+  {
+   "id": "italian-peace-treaty-1947",
+   "kind": "empire",
+   "year": 1947,
+   "title": "Italy gives up its colonies in the Paris peace treaty, 1947",
+   "place": "Tripoli",
+   "lonLat": [
+    13.19,
+    32.89
+   ],
+   "civs": [
+    "italian-libya",
+    "italian-eritrea",
+    "italian-somaliland",
+    "italy",
+    "united-kingdom",
+    "libya",
+    "eritrea",
+    "somalia"
+   ],
+   "summary": "Signed in Paris on 10 February 1947 and in force that September, the peace treaty with Italy makes it give up its African colonies, which Britain and France have run since they took them in 1941–43. When the great powers cannot agree on their future, the UN decides in 1949: Libya becomes independent in 1951, Eritrea is federated with Ethiopia in 1952, and Somalia goes back to Italy as a trust territory for ten years.",
+   "wikipedia": "Treaty_of_Paris_between_Italy_and_the_Allied_Powers",
+   "search": "Treaty of Paris 1947 Italy peace treaty colonies Libya Eritrea Somalia renounce British military administration United Nations 1949"
+  },
+  {
+   "id": "bangladesh-liberation-war-1971",
+   "kind": "war",
+   "year": 1971,
+   "title": "The Bangladesh Liberation War, March – December 1971",
+   "place": "Dhaka",
+   "lonLat": [
+    90.41,
+    23.81
+   ],
+   "civs": [
+    "bangladesh",
+    "pakistan",
+    "india"
+   ],
+   "summary": "After Sheikh Mujibur Rahman’s Awami League wins the 1970 elections, Pakistan’s army cracks down on East Pakistan on 25 March 1971 (Operation Searchlight), and independence is declared. Hundreds of thousands, perhaps millions, are killed and ten million flee to India. India enters the war in December, and on 16 December Pakistan’s forces surrender in Dhaka: East Pakistan becomes Bangladesh.",
+   "wikipedia": "Bangladesh_Liberation_War",
+   "search": "Bangladesh Liberation War 1971 East Pakistan Operation Searchlight Mukti Bahini Sheikh Mujibur Rahman Indo-Pakistani war surrender Dhaka 16 December genocide refugees"
+  },
+  {
+   "id": "sikkim-joins-india-1975",
+   "kind": "empire",
+   "year": 1975,
+   "title": "Sikkim becomes a state of India, 16 May 1975",
+   "place": "Gangtok",
+   "lonLat": [
+    88.61,
+    27.33
+   ],
+   "civs": [
+    "india",
+    "kingdom-of-sikkim"
+   ],
+   "summary": "The Himalayan kingdom of Sikkim, a British protectorate and from 1950 an Indian one, is shaken by protests against its king, the Chogyal, in 1973. In April 1975 Indian troops disarm the palace guard and a referendum votes to abolish the monarchy; on 16 May 1975 Sikkim becomes the 22nd state of India.",
+   "wikipedia": "Kingdom_of_Sikkim",
+   "search": "Sikkim 1975 merger India referendum Chogyal Palden Thondup Namgyal abolished monarchy 22nd state protectorate"
   }
  ]
 }

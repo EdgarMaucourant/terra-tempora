@@ -588,7 +588,11 @@ function polityAt(position: { x: number; y: number }): Polity | undefined {
   if (!p || typeof p !== "object" || !("rings" in p)) return undefined;
   // Land hatched over its owner (Crimea over Ukraine) is the hatching's.
   const at = p.kind ? null : globeLonLat(position);
-  return (at && layer.hatchAt(at[0], at[1], year)) || p;
+  if (!at) return p;
+  // Shapes have no holes: a realm inside another (Hyderabad State in India)
+  // overlaps it, and the globe may pick either. The smaller one is on top.
+  const inner = layer.landAt(at[0], at[1], year);
+  return layer.hatchAt(at[0], at[1], year) || (inner && inner.area < p.area ? inner : p);
 }
 
 /** A realm picked from the list: as a click on it, turning the globe to it when it stays in view. */
