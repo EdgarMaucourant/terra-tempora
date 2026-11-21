@@ -437,7 +437,7 @@
       "by": "United Nations",
       "since": "1946-12-13",
       "trust": true,
-      "note": "Administered by the United Kingdom, under a League of Nations mandate from 1922",
+      "note": "Administered by the United Kingdom, under a League of Nations mandate from 1920 (given out under the Treaty of Versailles, confirmed by the League in July 1922)",
       "source": {
        "title": "United Nations Trust Territories (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/United_Nations_trust_territories"
@@ -799,7 +799,7 @@
       "by": "United Nations",
       "since": "1946-12-13",
       "trust": true,
-      "note": "Administered by France, under a League of Nations mandate from 1922",
+      "note": "Administered by France, under a League of Nations mandate from 1920 (given out under the Treaty of Versailles, confirmed by the League in July 1922)",
       "source": {
        "title": "United Nations Trust Territories (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/United_Nations_trust_territories"
@@ -861,7 +861,7 @@
       "by": "United Nations",
       "since": "1946-12-13",
       "trust": true,
-      "note": "Administered by France, under a League of Nations mandate from 1922",
+      "note": "Administered by France, under a League of Nations mandate from 1920 (given out under the Treaty of Versailles, confirmed by the League in July 1922)",
       "source": {
        "title": "United Nations Trust Territories (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/United_Nations_trust_territories"
@@ -1140,7 +1140,7 @@
       "by": "United Nations",
       "since": "1946-12-13",
       "trust": true,
-      "note": "Administered by the United Kingdom, under a League of Nations mandate from 1922",
+      "note": "Administered by the United Kingdom, under a League of Nations mandate from 1920 (given out under the Treaty of Versailles, confirmed by the League in July 1922)",
       "source": {
        "title": "United Nations Trust Territories (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/United_Nations_trust_territories"
@@ -1534,9 +1534,9 @@
      },
      "hatch": {
       "by": "League of Nations",
-      "since": "1922-07-20",
+      "since": "1920-01-10",
       "trust": true,
-      "note": "Administered by France under a League of Nations mandate from 1922",
+      "note": "Administered by France under a League of Nations mandate from 1920 (given out under the Treaty of Versailles, confirmed by the League in July 1922)",
       "source": {
        "title": "League of Nations mandate (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/League_of_Nations_mandate"
@@ -1562,9 +1562,9 @@
      },
      "hatch": {
       "by": "League of Nations",
-      "since": "1922-07-20",
+      "since": "1920-01-10",
       "trust": true,
-      "note": "Administered by France under a League of Nations mandate from 1922",
+      "note": "Administered by France under a League of Nations mandate from 1920 (given out under the Treaty of Versailles, confirmed by the League in July 1922)",
       "source": {
        "title": "League of Nations mandate (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/League_of_Nations_mandate"
@@ -1584,9 +1584,9 @@
      },
      "hatch": {
       "by": "League of Nations",
-      "since": "1922-07-20",
+      "since": "1920-01-10",
       "trust": true,
-      "note": "Administered by the United Kingdom under a League of Nations mandate from 1922",
+      "note": "Administered by the United Kingdom under a League of Nations mandate from 1920 (given out under the Treaty of Versailles, confirmed by the League in July 1922)",
       "source": {
        "title": "League of Nations mandate (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/League_of_Nations_mandate"
@@ -3696,58 +3696,6 @@
      "source": {
       "title": "Greater Lebanon (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Greater_Lebanon"
-     }
-    }
-   ]
-  },
-  {
-   "date": "1922-07-20",
-   "what": "The League of Nations confirms the mandates for Togo and Cameroon",
-   "source": {
-    "title": "League of Nations mandate (Wikipedia)",
-    "url": "https://en.wikipedia.org/wiki/League_of_Nations_mandate"
-   },
-   "confidence": "exact",
-   "before": [
-    {
-     "pieces": [
-      "TGO"
-     ],
-     "owner": "France",
-     "territory": "French Togoland",
-     "source": {
-      "title": "French Togoland (Wikipedia)",
-      "url": "https://en.wikipedia.org/wiki/French_Togoland"
-     }
-    },
-    {
-     "pieces": [
-      "CMR-803",
-      "CMR-1462",
-      "CMR-1483",
-      "CMR-1482",
-      "CMR-1481",
-      "CMR-1476",
-      "CMR-798",
-      "CMR-1480"
-     ],
-     "owner": "France",
-     "territory": "French Cameroon",
-     "source": {
-      "title": "French Cameroon (Wikipedia)",
-      "url": "https://en.wikipedia.org/wiki/French_Cameroon"
-     }
-    },
-    {
-     "pieces": [
-      "CMR-1477",
-      "CMR-799"
-     ],
-     "owner": "United Kingdom",
-     "territory": "British Cameroons",
-     "source": {
-      "title": "British Cameroons (Wikipedia)",
-      "url": "https://en.wikipedia.org/wiki/British_Cameroons"
      }
     }
    ]

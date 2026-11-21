@@ -2038,7 +2038,7 @@
       "by": "United Nations",
       "since": "1946-12-13",
       "trust": true,
-      "note": "Administered by the United Kingdom, under a League of Nations mandate from 1922",
+      "note": "Administered by the United Kingdom, under a League of Nations mandate from 1920 (given out under the Treaty of Versailles, confirmed by the League in July 1922)",
       "source": {
        "title": "United Nations trust territories (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/United_Nations_trust_territories"
@@ -2131,7 +2131,7 @@
       "by": "United Nations",
       "since": "1946-12-13",
       "trust": true,
-      "note": "Administered by the United Kingdom as part of Nigeria, under a League of Nations mandate from 1922",
+      "note": "Administered by the United Kingdom as part of Nigeria, under a League of Nations mandate from 1920 (given out under the Treaty of Versailles, confirmed by the League in July 1922)",
       "source": {
        "title": "United Nations trust territories (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/United_Nations_trust_territories"
@@ -2199,7 +2199,7 @@
       "by": "United Nations",
       "since": "1946-12-13",
       "trust": true,
-      "note": "Administered by the United Kingdom as part of Nigeria, under a League of Nations mandate from 1922",
+      "note": "Administered by the United Kingdom as part of Nigeria, under a League of Nations mandate from 1920 (given out under the Treaty of Versailles, confirmed by the League in July 1922)",
       "source": {
        "title": "United Nations trust territories (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/United_Nations_trust_territories"
@@ -2559,7 +2559,7 @@
       "by": "United Nations",
       "since": "1946-12-13",
       "trust": true,
-      "note": "Administered by the United Kingdom with the Gold Coast, under a League of Nations mandate from 1922",
+      "note": "Administered by the United Kingdom with the Gold Coast, under a League of Nations mandate from 1920 (given out under the Treaty of Versailles, confirmed by the League in July 1922)",
       "source": {
        "title": "United Nations trust territories (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/United_Nations_trust_territories"
@@ -3188,9 +3188,9 @@
      "territory": "Tanganyika Territory",
      "hatch": {
       "by": "League of Nations",
-      "since": "1922-07-20",
+      "since": "1920-01-10",
       "trust": true,
-      "note": "Administered by the United Kingdom under a League of Nations mandate from 1922",
+      "note": "Administered by the United Kingdom under a League of Nations mandate from 1920 (given out under the Treaty of Versailles, confirmed by the League in July 1922)",
       "source": {
        "title": "League of Nations mandate (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/League_of_Nations_mandate"
@@ -3227,9 +3227,9 @@
      "territory": "British Cameroons",
      "hatch": {
       "by": "League of Nations",
-      "since": "1922-07-20",
+      "since": "1920-01-10",
       "trust": true,
-      "note": "Administered by the United Kingdom as part of Nigeria, under a League of Nations mandate from 1922",
+      "note": "Administered by the United Kingdom as part of Nigeria, under a League of Nations mandate from 1920 (given out under the Treaty of Versailles, confirmed by the League in July 1922)",
       "source": {
        "title": "League of Nations mandate (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/League_of_Nations_mandate"
@@ -3250,9 +3250,9 @@
      "territory": "British Togoland",
      "hatch": {
       "by": "League of Nations",
-      "since": "1922-07-20",
+      "since": "1920-01-10",
       "trust": true,
-      "note": "Administered by the United Kingdom with the Gold Coast, under a League of Nations mandate from 1922",
+      "note": "Administered by the United Kingdom with the Gold Coast, under a League of Nations mandate from 1920 (given out under the Treaty of Versailles, confirmed by the League in July 1922)",
       "source": {
        "title": "League of Nations mandate (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/League_of_Nations_mandate"
@@ -4871,70 +4871,6 @@
       "title": "Ireland in the United Kingdom (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Ireland_in_the_United_Kingdom"
      }
-    }
-   ]
-  },
-  {
-   "date": "1922-07-20",
-   "what": "The League of Nations confirms the British mandates for Tanganyika, the Cameroons and Togoland",
-   "source": {
-    "title": "League of Nations mandate (Wikipedia)",
-    "url": "https://en.wikipedia.org/wiki/League_of_Nations_mandate"
-   },
-   "confidence": "exact",
-   "before": [
-    {
-     "pieces": [
-      "TZA"
-     ],
-     "owner": "United Kingdom",
-     "source": {
-      "title": "Tanganyika Territory (Wikipedia)",
-      "url": "https://en.wikipedia.org/wiki/Tanganyika_Territory"
-     },
-     "territory": "Tanganyika Territory"
-    },
-    {
-     "pieces": [
-      "TZA-3337",
-      "TZA-3383",
-      "TZA-3384",
-      "TZA-3381",
-      "TZA-3380"
-     ],
-     "owner": "United Kingdom",
-     "source": {
-      "title": "Sultanate of Zanzibar (Wikipedia)",
-      "url": "https://en.wikipedia.org/wiki/Sultanate_of_Zanzibar"
-     },
-     "territory": "Zanzibar"
-    },
-    {
-     "pieces": [
-      "ncam-borno",
-      "ncam-adamawa-north",
-      "ncam-adamawa-south",
-      "ncam-taraba"
-     ],
-     "owner": "United Kingdom",
-     "source": {
-      "title": "British Cameroons (Wikipedia)",
-      "url": "https://en.wikipedia.org/wiki/British_Cameroons"
-     },
-     "territory": "British Cameroons"
-    },
-    {
-     "pieces": [
-      "btog-volta",
-      "btog-northern",
-      "btog-upper-east"
-     ],
-     "owner": "United Kingdom",
-     "source": {
-      "title": "British Togoland (Wikipedia)",
-      "url": "https://en.wikipedia.org/wiki/British_Togoland"
-     },
-     "territory": "British Togoland"
     }
    ]
   },
