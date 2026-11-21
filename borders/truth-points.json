@@ -7525,7 +7525,7 @@
     15.59
    ],
    "years": [
-    1950,
+    1910,
     1955
    ],
    "realm": "Anglo-Egyptian Sudan",
@@ -7533,7 +7533,7 @@
    "heldBy": [
     {
      "years": [
-      1950,
+      1910,
       1955
      ],
      "by": "United Kingdom"
@@ -9242,6 +9242,590 @@
      "by": "League of Nations"
     }
    ]
+  },
+  {
+   "place": "Nicosia (Ottoman)",
+   "lonLat": [
+    33.36,
+    35.17
+   ],
+   "years": [
+    1910,
+    1913
+   ],
+   "realm": "Ottoman Empire",
+   "why": "Ottoman, run by Britain under the Cyprus Convention",
+   "heldBy": [
+    {
+     "years": [
+      1910,
+      1913
+     ],
+     "by": "United Kingdom"
+    }
+   ]
+  },
+  {
+   "place": "Nicosia (annexed)",
+   "lonLat": [
+    33.36,
+    35.17
+   ],
+   "years": [
+    1914,
+    1919
+   ],
+   "realm": "British Cyprus",
+   "why": "Annexed by Britain on 5 November 1914"
+  },
+  {
+   "place": "Cairo (khedivate)",
+   "lonLat": [
+    31.24,
+    30.04
+   ],
+   "years": [
+    1910,
+    1913
+   ],
+   "realm": "Khedivate of Egypt",
+   "why": "Khedivate under British occupation",
+   "heldBy": [
+    {
+     "years": [
+      1910,
+      1913
+     ],
+     "by": "United Kingdom"
+    }
+   ]
+  },
+  {
+   "place": "Cairo (protectorate 1914)",
+   "lonLat": [
+    31.24,
+    30.04
+   ],
+   "years": [
+    1914,
+    1919
+   ],
+   "realm": "Sultanate of Egypt",
+   "why": "British protectorate from 18 December 1914"
+  },
+  {
+   "place": "El Arish (Ottoman-held)",
+   "lonLat": [
+    33.8,
+    31.13
+   ],
+   "years": [
+    1914,
+    1915
+   ],
+   "realm": "Sultanate of Egypt",
+   "why": "Held by Ottoman troops until December 1916",
+   "heldBy": [
+    {
+     "years": [
+      1914,
+      1915
+     ],
+     "by": "Ottoman Empire"
+    }
+   ]
+  },
+  {
+   "place": "Basra (Ottoman)",
+   "lonLat": [
+    47.8,
+    30.5
+   ],
+   "years": [
+    1910,
+    1913
+   ],
+   "realm": "Ottoman Empire",
+   "why": "Ottoman until November 1914"
+  },
+  {
+   "place": "Basra (occupied)",
+   "lonLat": [
+    47.8,
+    30.5
+   ],
+   "years": [
+    1914,
+    1919
+   ],
+   "realm": "Ottoman Empire",
+   "why": "Held by Britain from November 1914",
+   "heldBy": [
+    {
+     "years": [
+      1914,
+      1919
+     ],
+     "by": "United Kingdom"
+    }
+   ]
+  },
+  {
+   "place": "Baghdad (Ottoman)",
+   "lonLat": [
+    44.37,
+    33.31
+   ],
+   "years": [
+    1910,
+    1916
+   ],
+   "realm": "Ottoman Empire",
+   "why": "Ottoman until March 1917"
+  },
+  {
+   "place": "Baghdad (occupied)",
+   "lonLat": [
+    44.37,
+    33.31
+   ],
+   "years": [
+    1917,
+    1919
+   ],
+   "realm": "Ottoman Empire",
+   "why": "Held by Britain from March 1917",
+   "heldBy": [
+    {
+     "years": [
+      1917,
+      1919
+     ],
+     "by": "United Kingdom"
+    }
+   ]
+  },
+  {
+   "place": "Mosul (Ottoman)",
+   "lonLat": [
+    43.13,
+    36.34
+   ],
+   "years": [
+    1910,
+    1917
+   ],
+   "realm": "Ottoman Empire",
+   "why": "Ottoman until November 1918"
+  },
+  {
+   "place": "Kut (1916)",
+   "lonLat": [
+    45.82,
+    32.5
+   ],
+   "years": [
+    1916,
+    1916
+   ],
+   "realm": "Ottoman Empire",
+   "why": "Ottoman again after the siege of Kut"
+  },
+  {
+   "place": "Jerusalem (Ottoman)",
+   "lonLat": [
+    35.21,
+    31.78
+   ],
+   "years": [
+    1910,
+    1916
+   ],
+   "realm": "Ottoman Empire",
+   "why": "Ottoman until December 1917"
+  },
+  {
+   "place": "Jerusalem (occupied)",
+   "lonLat": [
+    35.21,
+    31.78
+   ],
+   "years": [
+    1917,
+    1919
+   ],
+   "realm": "Ottoman Empire",
+   "why": "Held by Britain from December 1917",
+   "heldBy": [
+    {
+     "years": [
+      1917,
+      1919
+     ],
+     "by": "United Kingdom"
+    }
+   ]
+  },
+  {
+   "place": "Haifa (Ottoman)",
+   "lonLat": [
+    35.0,
+    32.79
+   ],
+   "years": [
+    1910,
+    1917
+   ],
+   "realm": "Ottoman Empire",
+   "why": "Ottoman until September 1918"
+  },
+  {
+   "place": "Amman (Ottoman)",
+   "lonLat": [
+    35.93,
+    31.95
+   ],
+   "years": [
+    1910,
+    1917
+   ],
+   "realm": "Ottoman Empire",
+   "why": "Ottoman until September 1918"
+  },
+  {
+   "place": "Amman (Arab government)",
+   "lonLat": [
+    35.93,
+    31.95
+   ],
+   "years": [
+    1918,
+    1919
+   ],
+   "realm": "Arab Kingdom of Syria",
+   "why": "Faisal’s Arab government, 1918-20"
+  },
+  {
+   "place": "Aqaba (Ottoman)",
+   "lonLat": [
+    35.01,
+    29.53
+   ],
+   "years": [
+    1910,
+    1916
+   ],
+   "realm": "Ottoman Empire",
+   "why": "Ottoman until July 1917"
+  },
+  {
+   "place": "Aqaba (Hejaz 1917)",
+   "lonLat": [
+    35.01,
+    29.53
+   ],
+   "years": [
+    1917,
+    1919
+   ],
+   "realm": "Kingdom of Hejaz",
+   "why": "Taken by the Arab Revolt in July 1917"
+  },
+  {
+   "place": "Doha (Ottoman)",
+   "lonLat": [
+    51.53,
+    25.29
+   ],
+   "years": [
+    1910,
+    1914
+   ],
+   "realm": "Ottoman Empire",
+   "why": "Ottoman garrison until August 1915"
+  },
+  {
+   "place": "Doha (sheikhdom)",
+   "lonLat": [
+    51.53,
+    25.29
+   ],
+   "years": [
+    1915,
+    1915
+   ],
+   "realm": "Qatar",
+   "why": "On its own between the Ottoman withdrawal and the British treaty"
+  },
+  {
+   "place": "Doha (protectorate)",
+   "lonLat": [
+    51.53,
+    25.29
+   ],
+   "years": [
+    1916,
+    1919
+   ],
+   "realm": "Qatar",
+   "why": "British protectorate from November 1916"
+  },
+  {
+   "place": "Sanaa (Ottoman)",
+   "lonLat": [
+    44.2,
+    15.35
+   ],
+   "years": [
+    1910,
+    1917
+   ],
+   "realm": "Ottoman Empire",
+   "why": "Ottoman Yemen until the 1918 armistice"
+  },
+  {
+   "place": "Hodeidah (British)",
+   "lonLat": [
+    42.95,
+    14.8
+   ],
+   "years": [
+    1918,
+    1920
+   ],
+   "realm": "Ottoman Empire",
+   "why": "Held by British troops, December 1918 to January 1921",
+   "heldBy": [
+    {
+     "years": [
+      1918,
+      1920
+     ],
+     "by": "United Kingdom"
+    }
+   ]
+  },
+  {
+   "place": "Lahej (Ottoman-held)",
+   "lonLat": [
+    44.88,
+    13.05
+   ],
+   "years": [
+    1915,
+    1918
+   ],
+   "realm": "Protectorate of South Arabia",
+   "why": "Held by Ottoman troops, 1915-18",
+   "heldBy": [
+    {
+     "years": [
+      1915,
+      1918
+     ],
+     "by": "Ottoman Empire"
+    }
+   ]
+  },
+  {
+   "place": "El Fasher (Darfur)",
+   "lonLat": [
+    25.35,
+    13.63
+   ],
+   "years": [
+    1910,
+    1915
+   ],
+   "realm": "Sultanate of Darfur",
+   "why": "Independent sultanate until May 1916"
+  },
+  {
+   "place": "El Fasher (Sudan)",
+   "lonLat": [
+    25.35,
+    13.63
+   ],
+   "years": [
+    1916,
+    1919
+   ],
+   "realm": "Anglo-Egyptian Sudan",
+   "why": "Part of the Sudan from 1916",
+   "heldBy": [
+    {
+     "years": [
+      1916,
+      1919
+     ],
+     "by": "United Kingdom"
+    }
+   ]
+  },
+  {
+   "place": "Taleh (Dervish)",
+   "lonLat": [
+    48.42,
+    9.15
+   ],
+   "years": [
+    1910,
+    1919
+   ],
+   "realm": "Dervish State",
+   "why": "Dervish capital until February 1920"
+  },
+  {
+   "place": "Berbera",
+   "lonLat": [
+    45.01,
+    10.44
+   ],
+   "years": [
+    1910,
+    1919
+   ],
+   "realm": "British Somaliland",
+   "why": "British coast"
+  },
+  {
+   "place": "Dar es Salaam (German)",
+   "lonLat": [
+    39.27,
+    -6.82
+   ],
+   "years": [
+    1910,
+    1915
+   ],
+   "realm": "German East Africa",
+   "why": "German until September 1916"
+  },
+  {
+   "place": "Dar es Salaam (occupied)",
+   "lonLat": [
+    39.27,
+    -6.82
+   ],
+   "years": [
+    1916,
+    1919
+   ],
+   "realm": "German East Africa",
+   "why": "Held by Britain from September 1916",
+   "heldBy": [
+    {
+     "years": [
+      1916,
+      1919
+     ],
+     "by": "United Kingdom"
+    }
+   ]
+  },
+  {
+   "place": "Lindi (German 1916)",
+   "lonLat": [
+    39.71,
+    -10.0
+   ],
+   "years": [
+    1916,
+    1916
+   ],
+   "realm": "German East Africa",
+   "why": "Southern German East Africa held by German troops until November 1917"
+  },
+  {
+   "place": "Nairobi (protectorate)",
+   "lonLat": [
+    36.82,
+    -1.29
+   ],
+   "years": [
+    1910,
+    1919
+   ],
+   "realm": "East Africa Protectorate",
+   "why": "East Africa Protectorate until July 1920"
+  },
+  {
+   "place": "Lagos (south)",
+   "lonLat": [
+    3.38,
+    6.52
+   ],
+   "years": [
+    1910,
+    1913
+   ],
+   "realm": "Southern Nigeria Protectorate",
+   "why": "Southern Nigeria until 1914"
+  },
+  {
+   "place": "Kano (north)",
+   "lonLat": [
+    8.52,
+    12.0
+   ],
+   "years": [
+    1910,
+    1913
+   ],
+   "realm": "Northern Nigeria Protectorate",
+   "why": "Northern Nigeria until 1914"
+  },
+  {
+   "place": "Kano",
+   "lonLat": [
+    8.52,
+    12.0
+   ],
+   "years": [
+    1914,
+    1919
+   ],
+   "realm": "Colonial Nigeria",
+   "why": "Nigeria from 1 January 1914"
+  },
+  {
+   "place": "Livingstone (north-west)",
+   "lonLat": [
+    25.85,
+    -17.85
+   ],
+   "years": [
+    1910,
+    1910
+   ],
+   "realm": "North-Western Rhodesia",
+   "why": "North-Western Rhodesia until 1911"
+  },
+  {
+   "place": "Chipata (north-east)",
+   "lonLat": [
+    32.65,
+    -13.64
+   ],
+   "years": [
+    1910,
+    1910
+   ],
+   "realm": "North-Eastern Rhodesia",
+   "why": "North-Eastern Rhodesia until 1911"
+  },
+  {
+   "place": "Ho (German Togoland)",
+   "lonLat": [
+    0.47,
+    6.6
+   ],
+   "years": [
+    1910,
+    1913
+   ],
+   "realm": "Togoland",
+   "why": "German until August 1914"
   }
  ]
 }
