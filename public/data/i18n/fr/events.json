@@ -2283,5 +2283,50 @@
   "title": "La chute de Taleh met fin à l’État derviche, février 1920",
   "place": "Taleh",
   "summary": "Pendant vingt ans, le mouvement derviche de Mohammed Abdullah Hassan avait combattu Britanniques, Italiens et Éthiopiens et, depuis 1910, tenait l’intérieur du Somaliland depuis ses forts de pierre. En janvier 1920, la Grande-Bretagne envoie une petite force aérienne, la « Z Force », avec le Camel Corps ; les forts sont bombardés et Taleh, la capitale derviche, tombe en février. Le chef s’enfuit en Éthiopie et y meurt la même année."
+ },
+ "war-of-the-golden-stool-1900": {
+  "title": "La guerre du Tabouret d’or et l’annexion de l’Ashanti, 1900 – 1901",
+  "place": "Kumasi",
+  "summary": "Quand le gouverneur britannique exige le Tabouret d’or, symbole sacré de la nation ashanti, les Ashanti se soulèvent en mars 1900 derrière la reine mère Yaa Asantewaa et assiègent des mois durant le fort britannique de Kumasi. Des colonnes de secours brisent la révolte fin 1900. Le 26 septembre 1901, la Grande-Bretagne annexe l’Ashanti à la Côte-de-l’Or, avec les Territoires du Nord en protectorat, fixant les frontières de l’actuel Ghana."
+ },
+ "tonga-protected-state-1900": {
+  "title": "Tonga devient un État protégé britannique, 18 mai 1900",
+  "place": "Nukuʻalofa",
+  "summary": "Le roi George Tupou II signe le 18 mai 1900 un traité d’amitié avec la Grande-Bretagne qui fait des Tonga un État protégé britannique. La Grande-Bretagne prend en charge ses affaires étrangères, mais le royaume garde sa monarchie et son gouvernement et ne devient jamais une colonie. Les Tonga retrouvent la pleine maîtrise de leurs affaires le 4 juin 1970."
+ },
+ "anglo-aro-war-1901": {
+  "title": "La guerre anglo-aro dans le sud du Nigeria, novembre 1901 – mars 1902",
+  "place": "Arochukwu",
+  "summary": "Pour briser la puissance de la confédération aro, dont l’oracle d’Arochukwu dominait le commerce en pays igbo, des colonnes britanniques partent de quatre directions en novembre 1901. Elles prennent Arochukwu la veille de Noël et font sauter le sanctuaire de l’oracle Ibini Ukpabi. En mars 1902, la confédération est brisée, ce qui ouvre l’intérieur igbo à la domination britannique au Nigeria du Sud."
+ },
+ "fall-of-kano-and-sokoto-1903": {
+  "title": "Les forces britanniques prennent Kano et Sokoto, février – mars 1903",
+  "place": "Sokoto",
+  "summary": "Le haut-commissaire Frederick Lugard lance la West African Frontier Force contre le califat de Sokoto, le grand État peul des pays haoussa. Kano tombe le 3 février 1903 et Sokoto le 15 mars ; le sultan Attahiru Ier s’enfuit et est tué à Burmi en juillet. Lugard maintient les émirs sous « administration indirecte » britannique, et les terres du califat deviennent le cœur du Nigeria du Nord."
+ },
+ "battle-of-jidballi-1904": {
+  "title": "La bataille de Jidballi au Somaliland, 10 janvier 1904",
+  "place": "Jidballi",
+  "summary": "Après deux ans d’expéditions manquées contre les derviches de Mohammed Abdullah Hassan, une force britannique, indienne et somalie menée par le général Charles Egerton met en déroute l’armée derviche à Jidballi le 10 janvier 1904, tuant un millier d’hommes. Les derviches se replient en territoire italien, et l’accord d’Illig de 1905 les installe dans la vallée du Nugaal. Ils reviennent dans l’intérieur britannique en 1908–1910."
+ },
+ "partition-of-bengal-1905": {
+  "title": "La partition du Bengale, 16 octobre 1905",
+  "place": "Calcutta",
+  "summary": "Le vice-roi lord Curzon coupe l’immense province du Bengale le 16 octobre 1905 : il crée le Bengale oriental et Assam, capitale Dacca, à majorité musulmane, et laisse un Bengale occidental surtout hindou. La mesure déclenche le mouvement Swadeshi, avec le boycott des produits britanniques, et passe pour diviser hindous et musulmans. Elle est annulée au durbar de Delhi en 1911."
+ },
+ "taba-crisis-1906": {
+  "title": "La crise de Taba fixe la frontière entre l’Égypte et l’Empire ottoman dans le Sinaï, 1906",
+  "place": "Taba",
+  "summary": "Début 1906, des troupes ottomanes occupent Taba, au fond du golfe d’Aqaba, et revendiquent l’essentiel du Sinaï. La Grande-Bretagne, qui gouverne l’Égypte, envoie des navires de guerre et un ultimatum, et le sultan cède. Un accord du 1er octobre 1906 trace une ligne droite de Rafah à Taba comme frontière du Sinaï égyptien – la ligne toujours en vigueur entre l’Égypte et Israël."
+ },
+ "anglo-siamese-treaty-1909": {
+  "title": "Le traité anglo-siamois : quatre États malais passent à la Grande-Bretagne, 9 juillet 1909",
+  "place": "Alor Setar",
+  "summary": "Par le traité signé à Bangkok en mars 1909 et entré en vigueur le 9 juillet, le Siam renonce à Kedah, Perlis, Kelantan et Terengganu, qui passent sous protection britannique comme États malais non fédérés, tandis que Pattani reste siamois. En échange, la Grande-Bretagne renonce à ses droits d’exterritorialité au Siam et prête de l’argent pour un chemin de fer. Le traité trace la frontière actuelle entre la Malaisie et la Thaïlande."
+ },
+ "lado-enclave-to-sudan-1910": {
+  "title": "L’enclave de Lado revient au Soudan, 16 juin 1910",
+  "place": "Rejaf",
+  "summary": "En 1894, la Grande-Bretagne avait loué la rive ouest du haut Nil au roi Léopold II, sa vie durant, reliant son État indépendant du Congo au fleuve. Six mois après la mort de Léopold, l’enclave de Lado est remise au Soudan anglo-égyptien le 16 juin 1910 et rattachée à la province de Mongalla. Sa partie sud, le West Nile, passe à l’Ouganda en 1914."
  }
 }

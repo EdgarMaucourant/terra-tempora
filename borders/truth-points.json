@@ -7525,7 +7525,7 @@
     15.59
    ],
    "years": [
-    1910,
+    1900,
     1955
    ],
    "realm": "Anglo-Egyptian Sudan",
@@ -7533,7 +7533,7 @@
    "heldBy": [
     {
      "years": [
-      1910,
+      1900,
       1955
      ],
      "by": "United Kingdom"
@@ -9826,6 +9826,223 @@
    ],
    "realm": "Togoland",
    "why": "German until August 1914"
+  },
+  {
+   "place": "Alor Setar (Siam)",
+   "lonLat": [
+    100.37,
+    6.12
+   ],
+   "years": [
+    1900,
+    1908
+   ],
+   "realm": "Thailand",
+   "why": "Kedah, a Siamese tributary until 1909"
+  },
+  {
+   "place": "Kota Bharu (Siam)",
+   "lonLat": [
+    102.24,
+    6.12
+   ],
+   "years": [
+    1900,
+    1908
+   ],
+   "realm": "Thailand",
+   "why": "Kelantan, under Siam until 1909"
+  },
+  {
+   "place": "Juba (Lado, Congo)",
+   "lonLat": [
+    31.4,
+    4.6
+   ],
+   "years": [
+    1900,
+    1907
+   ],
+   "realm": "Congo Free State",
+   "why": "Lado Enclave, leased to Leopold II"
+  },
+  {
+   "place": "Juba (Lado, Belgian)",
+   "lonLat": [
+    31.4,
+    4.6
+   ],
+   "years": [
+    1908,
+    1909
+   ],
+   "realm": "Belgium",
+   "why": "Lado Enclave under Belgium, 1908-10"
+  },
+  {
+   "place": "Arua (Sudan)",
+   "lonLat": [
+    30.91,
+    3.02
+   ],
+   "years": [
+    1910,
+    1913
+   ],
+   "realm": "Anglo-Egyptian Sudan",
+   "why": "West Nile, part of the Sudan until 1914",
+   "heldBy": [
+    {
+     "years": [
+      1910,
+      1913
+     ],
+     "by": "United Kingdom"
+    }
+   ]
+  },
+  {
+   "place": "Arua (Uganda)",
+   "lonLat": [
+    30.91,
+    3.02
+   ],
+   "years": [
+    1914,
+    1961
+   ],
+   "realm": "Uganda Protectorate",
+   "why": "Part of Uganda from 1914"
+  },
+  {
+   "place": "St. John’s (colony)",
+   "lonLat": [
+    -52.71,
+    47.56
+   ],
+   "years": [
+    1900,
+    1906
+   ],
+   "realm": "Newfoundland Colony",
+   "why": "Crown colony until 1907"
+  },
+  {
+   "place": "Zomba (BCA)",
+   "lonLat": [
+    35.32,
+    -15.38
+   ],
+   "years": [
+    1900,
+    1906
+   ],
+   "realm": "British Central Africa Protectorate",
+   "why": "Renamed Nyasaland in 1907"
+  },
+  {
+   "place": "Victoria, Seychelles (Mauritius)",
+   "lonLat": [
+    55.45,
+    -4.62
+   ],
+   "years": [
+    1900,
+    1902
+   ],
+   "realm": "British Mauritius",
+   "why": "Part of Mauritius until 1903"
+  },
+  {
+   "place": "Mbabane (own)",
+   "lonLat": [
+    31.13,
+    -26.31
+   ],
+   "years": [
+    1900,
+    1902
+   ],
+   "realm": "Eswatini",
+   "why": "Swazi rule between Boer and British control"
+  },
+  {
+   "place": "Sokoto (caliphate)",
+   "lonLat": [
+    5.24,
+    13.06
+   ],
+   "years": [
+    1900,
+    1902
+   ],
+   "realm": "Sokoto Caliphate",
+   "why": "Capital of the Sokoto Caliphate until March 1903"
+  },
+  {
+   "place": "Kano (caliphate)",
+   "lonLat": [
+    8.52,
+    12.0
+   ],
+   "years": [
+    1900,
+    1902
+   ],
+   "realm": "Sokoto Caliphate",
+   "why": "Emirate of the caliphate until February 1903"
+  },
+  {
+   "place": "Kano (protectorate)",
+   "lonLat": [
+    8.52,
+    12.0
+   ],
+   "years": [
+    1903,
+    1909
+   ],
+   "realm": "Northern Nigeria Protectorate",
+   "why": "British from 1903"
+  },
+  {
+   "place": "Kisumu (Uganda)",
+   "lonLat": [
+    34.76,
+    -0.09
+   ],
+   "years": [
+    1900,
+    1901
+   ],
+   "realm": "Uganda Protectorate",
+   "why": "Uganda’s Eastern Province until 1902"
+  },
+  {
+   "place": "Taleh (British 1904)",
+   "lonLat": [
+    48.42,
+    9.15
+   ],
+   "years": [
+    1904,
+    1909
+   ],
+   "realm": "British Somaliland",
+   "why": "British after Jidballi until the 1910 withdrawal"
+  },
+  {
+   "place": "Taleh (Dervish 1900)",
+   "lonLat": [
+    48.42,
+    9.15
+   ],
+   "years": [
+    1900,
+    1903
+   ],
+   "realm": "Dervish State",
+   "why": "Dervish-held until Jidballi, 1904"
   }
  ]
 }

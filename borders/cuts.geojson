@@ -18741,6 +18741,59 @@
      ]
     ]
    }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "lado-enclave",
+    "from": "SDS-865",
+    "note": "Rough outline of the Lado Enclave in today’s South Sudan: the west bank of the Nile from the Uganda border to 5°30′ N",
+    "source": {
+     "title": "Lado Enclave (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Lado_Enclave"
+    }
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        29.9,
+        3.3
+       ],
+       [
+        32.1,
+        3.3
+       ],
+       [
+        32.07,
+        3.6
+       ],
+       [
+        31.85,
+        4.2
+       ],
+       [
+        31.6,
+        4.85
+       ],
+       [
+        31.55,
+        5.5
+       ],
+       [
+        29.9,
+        5.5
+       ],
+       [
+        29.9,
+        3.3
+       ]
+      ]
+     ]
+    ]
+   }
   }
  ]
 }

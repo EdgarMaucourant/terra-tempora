@@ -353,6 +353,8 @@
     "allAges": "Todos los públicos",
     "ratingTitle": "Clasificación por edades en Estados Unidos: {rating}",
     "seeMore": "Ver más en {platform}:",
+    "episode": "Episodio sobre {who}, {years}",
+    "episodeOn": "Episodio sobre {who}",
     "title": "Documentales"
   },
   "media": {

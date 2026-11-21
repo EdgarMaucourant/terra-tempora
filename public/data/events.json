@@ -8524,6 +8524,186 @@
    "summary": "For twenty years the Dervish movement of Mohammed Abdullah Hassan had fought the British, Italians and Ethiopians, and since 1910 had held the Somaliland interior from its stone forts. In January 1920 Britain sends a small air force, “Z Force”, with the Camel Corps; the forts are bombed and Taleh, the Dervish capital, falls in February. The leader flees to Ethiopia and dies later that year.",
    "wikipedia": "Somaliland_campaign_(1920)",
    "search": "Somaliland campaign 1920 Taleh Dervish State Mohammed Abdullah Hassan Mad Mullah RAF Z Force bombing Somaliland Camel Corps fled to Ethiopia died 1920"
+  },
+  {
+   "id": "war-of-the-golden-stool-1900",
+   "kind": "war",
+   "year": 1900,
+   "to": 1901,
+   "title": "The War of the Golden Stool and the annexation of Ashanti, 1900 – 1901",
+   "place": "Kumasi",
+   "lonLat": [
+    -1.62,
+    6.69
+   ],
+   "civs": [
+    "gold-coast",
+    "ghana",
+    "united-kingdom"
+   ],
+   "summary": "When the British governor demands the Golden Stool, the sacred symbol of the Ashanti nation, the Ashanti rise in March 1900 under Queen Mother Yaa Asantewaa and besiege the British fort in Kumasi for months. Relief columns break the rising by the end of 1900. On 26 September 1901 Britain annexes Ashanti to the Gold Coast, along with the Northern Territories as a protectorate, setting the borders of today’s Ghana.",
+   "wikipedia": "War_of_the_Golden_Stool",
+   "search": "War of the Golden Stool 1900 Yaa Asantewaa siege of Kumasi fort Governor Hodgson Golden Stool demand Ashanti annexed 26 September 1901 Gold Coast colony Northern Territories"
+  },
+  {
+   "id": "tonga-protected-state-1900",
+   "kind": "empire",
+   "year": 1900,
+   "title": "Tonga becomes a British protected state, 18 May 1900",
+   "place": "Nuku’alofa",
+   "lonLat": [
+    -175.2,
+    -21.13
+   ],
+   "civs": [
+    "tonga",
+    "united-kingdom"
+   ],
+   "summary": "King George Tupou II signs a Treaty of Friendship with Britain on 18 May 1900, making Tonga a British protected state. Britain takes charge of its foreign affairs, but the kingdom keeps its own monarchy and government and is never made a colony. Tonga regains full control of its affairs on 4 June 1970.",
+   "wikipedia": "Tonga",
+   "search": "Tonga British protected state 18 May 1900 Treaty of Friendship George Tupou II Basil Thomson foreign affairs only kingdom never colonised independence 1970"
+  },
+  {
+   "id": "anglo-aro-war-1901",
+   "kind": "war",
+   "year": 1901,
+   "to": 1902,
+   "title": "The Anglo-Aro War in southern Nigeria, November 1901 – March 1902",
+   "place": "Arochukwu",
+   "lonLat": [
+    7.91,
+    5.39
+   ],
+   "civs": [
+    "southern-nigeria-protectorate",
+    "nigeria",
+    "united-kingdom"
+   ],
+   "summary": "To break the power of the Aro Confederacy, whose oracle at Arochukwu dominated trade across Igboland, British columns march from four directions in November 1901. They take Arochukwu on Christmas Eve and blow up the shrine of the Ibini Ukpabi oracle. By March 1902 the confederacy is broken, opening the Igbo interior to British rule in Southern Nigeria.",
+   "wikipedia": "Anglo-Aro_war",
+   "search": "Anglo-Aro war November 1901 March 1902 Aro Confederacy Arochukwu Ibini Ukpabi oracle Long Juju destroyed Southern Nigeria Protectorate Igboland conquest slave trade"
+  },
+  {
+   "id": "fall-of-kano-and-sokoto-1903",
+   "kind": "war",
+   "year": 1903,
+   "title": "British forces take Kano and Sokoto, February – March 1903",
+   "place": "Sokoto",
+   "lonLat": [
+    5.24,
+    13.06
+   ],
+   "civs": [
+    "sokoto-caliphate",
+    "northern-nigeria-protectorate",
+    "nigeria",
+    "united-kingdom"
+   ],
+   "summary": "High Commissioner Frederick Lugard sends the West African Frontier Force against the Sokoto Caliphate, the great Fulani state of the Hausa lands. Kano falls on 3 February 1903 and Sokoto on 15 March; Sultan Attahiru I flees and is killed at Burmi in July. Lugard keeps the emirs in place under British “indirect rule”, and the caliphate’s lands become the heart of Northern Nigeria.",
+   "wikipedia": "British_conquest_of_the_Sokoto_Caliphate",
+   "search": "British conquest of Sokoto Caliphate 1903 Lugard Kano 3 February 1903 Sokoto 15 March 1903 Burmi Sultan Attahiru Northern Nigeria indirect rule emirs"
+  },
+  {
+   "id": "battle-of-jidballi-1904",
+   "kind": "war",
+   "year": 1904,
+   "title": "The battle of Jidballi in Somaliland, 10 January 1904",
+   "place": "Jidballi",
+   "lonLat": [
+    46.6,
+    8.6
+   ],
+   "civs": [
+    "dervish-state",
+    "british-somaliland",
+    "somalia",
+    "united-kingdom"
+   ],
+   "summary": "After two years of failed expeditions against the Dervishes of Mohammed Abdullah Hassan, a British, Indian and Somali force under General Charles Egerton routs the Dervish army at Jidballi on 10 January 1904, killing about a thousand. The Dervishes retreat into Italian territory, and the 1905 Illig agreement settles them in the Nugaal valley. They return to the British interior in 1908–1910.",
+   "wikipedia": "Battle_of_Jidballi",
+   "search": "Battle of Jidballi 10 January 1904 Somaliland campaign 1903-1904 Charles Egerton Dervishes Mohammed Abdullah Hassan defeat Illig 1905 treaty Italian Nugaal"
+  },
+  {
+   "id": "partition-of-bengal-1905",
+   "kind": "empire",
+   "year": 1905,
+   "title": "The partition of Bengal, 16 October 1905",
+   "place": "Calcutta",
+   "lonLat": [
+    88.36,
+    22.57
+   ],
+   "civs": [
+    "british-raj",
+    "india",
+    "bangladesh",
+    "united-kingdom"
+   ],
+   "summary": "Viceroy Lord Curzon splits the huge province of Bengal on 16 October 1905, creating Eastern Bengal and Assam, with its capital at Dacca and a Muslim majority, and leaving a mostly Hindu western Bengal. The move sparks the Swadeshi movement, with boycotts of British goods, and is seen as dividing Hindus and Muslims. It is undone at the Delhi Durbar of 1911.",
+   "wikipedia": "Partition_of_Bengal_(1905)",
+   "search": "Partition of Bengal 16 October 1905 Lord Curzon Eastern Bengal and Assam Dacca Swadeshi movement boycott annulled 1911 Delhi Durbar Muslim League"
+  },
+  {
+   "id": "taba-crisis-1906",
+   "kind": "empire",
+   "year": 1906,
+   "title": "The Taba crisis fixes the border between Egypt and the Ottoman Empire in Sinai, 1906",
+   "place": "Taba",
+   "lonLat": [
+    34.89,
+    29.49
+   ],
+   "civs": [
+    "khedivate-of-egypt",
+    "egypt",
+    "ottoman-empire",
+    "united-kingdom"
+   ],
+   "summary": "In early 1906 Ottoman troops occupy Taba, at the head of the Gulf of Aqaba, claiming most of Sinai. Britain, which runs Egypt, sends warships and an ultimatum, and the Sultan gives way. An agreement of 1 October 1906 draws a straight line from Rafah to Taba as the border of Egyptian Sinai – the line still used between Egypt and Israel today.",
+   "wikipedia": "Taba_Crisis",
+   "search": "Taba crisis 1906 Ottoman troops occupy Taba Britain ultimatum Egypt Sinai boundary Rafah to Taba line 1 October 1906 agreement Egypt Israel border arbitration 1988"
+  },
+  {
+   "id": "anglo-siamese-treaty-1909",
+   "kind": "empire",
+   "year": 1909,
+   "title": "The Anglo-Siamese Treaty: four Malay states pass to Britain, 9 July 1909",
+   "place": "Alor Setar",
+   "lonLat": [
+    100.37,
+    6.12
+   ],
+   "civs": [
+    "unfederated-malay-states",
+    "malaysia",
+    "thailand",
+    "united-kingdom"
+   ],
+   "summary": "By the treaty signed in Bangkok in March 1909 and taking effect on 9 July, Siam gives up its claims over Kedah, Perlis, Kelantan and Terengganu, which come under British protection as Unfederated Malay States, while Pattani stays Siamese. In return Britain gives up extraterritorial rights in Siam and lends money for a railway. The treaty draws today’s border between Malaysia and Thailand.",
+   "wikipedia": "Anglo-Siamese_Treaty_of_1909",
+   "search": "Anglo-Siamese Treaty 1909 Bangkok 10 March 1909 Kedah Perlis Kelantan Terengganu transferred to Britain Pattani stays Siam Unfederated Malay States extraterritoriality loan railway"
+  },
+  {
+   "id": "lado-enclave-to-sudan-1910",
+   "kind": "empire",
+   "year": 1910,
+   "title": "The Lado Enclave returns to the Sudan, 16 June 1910",
+   "place": "Rejaf",
+   "lonLat": [
+    31.58,
+    4.75
+   ],
+   "civs": [
+    "lado-enclave",
+    "congo-free-state",
+    "anglo-egyptian-sudan",
+    "south-sudan",
+    "belgium",
+    "united-kingdom"
+   ],
+   "summary": "In 1894 Britain had leased the west bank of the upper Nile to King Leopold II for his lifetime, linking his Congo Free State to the river. Six months after Leopold’s death, the Lado Enclave is handed to the Anglo-Egyptian Sudan on 16 June 1910 and joined to Mongalla province. Its southern part, West Nile, passes to Uganda in 1914.",
+   "wikipedia": "Lado_Enclave",
+   "search": "Lado Enclave 16 June 1910 transferred to Sudan Leopold II lease 1894 death 1909 Congo Free State Belgian Congo Rejaf Mongalla province West Nile Uganda 1914"
   }
  ]
 }

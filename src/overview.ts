@@ -30,6 +30,8 @@ type Subject =
       drawn?: string;
       /** The realm drawn is a part of a country, or not a country (Cape Juby, the Azores). */
       part?: boolean;
+      /** What the documentaries are picked by; defaults to the country and its civilizations. */
+      docs?: Parameters<Documentaries["about"]>[0];
     }
   | { kind: "travel"; sub: string }
   | { kind: "home"; actions: { label: string; text: string; run: () => void }[]; report: () => void };
@@ -91,7 +93,7 @@ export class Overview {
     };
 
     const showDocs = (query: Parameters<Documentaries["about"]>[0]) => {
-      renderDocumentaries(docs, this.documentaries?.about(query) ?? []);
+      renderDocumentaries(docs, this.documentaries?.about(query) ?? [], query);
     };
 
     switch (subject.kind) {
@@ -129,7 +131,7 @@ export class Overview {
           lede.hidden = false;
         }
         void article(subject.articles);
-        showDocs({ countries: [k.id], civs: subject.civs.map((c) => c.id) });
+        showDocs(subject.docs ?? { countries: [k.id], civs: subject.civs.map((c) => c.id) });
         break;
       }
       case "travel": {
