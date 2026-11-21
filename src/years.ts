@@ -1,6 +1,6 @@
 import { t } from "./i18n";
 
-// Years are integers on one line, negative for BCE, as in Cliopatria. There is
+// Years are integers on one line, negative for BCE. There is
 // no year 0 in the calendar, so 0 is shown as 1 CE.
 export function formatYear(year: number): string {
   const y = Math.round(year);

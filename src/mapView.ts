@@ -49,7 +49,7 @@ const FOV = Math.PI / 3;
 
 type Shape = Feature<Polygon | MultiPolygon, null>;
 
-/** A Cliopatria shape as GeoJSON, each ring wound the way d3 expects. */
+/** A shape as GeoJSON, each ring wound the way d3 expects. */
 function toFeature(p: Polity): Shape {
   const toRing = (flat: number[], hole: boolean) => {
     const ring: [number, number][] = [];

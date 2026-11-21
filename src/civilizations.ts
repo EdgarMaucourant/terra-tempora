@@ -8,7 +8,7 @@ export interface Civilization {
   /** Stable id used in links, e.g. "mongol-empire". */
   id: string;
   name: string;
-  /** Cliopatria realm names drawn as this civilization, e.g. "(British Empire)". */
+  /** Realm names drawn as this civilization. */
   names: string[];
   wikidata: string | null;
   wikipedia: string | null;
@@ -114,12 +114,12 @@ export class Civilizations {
     return this.byId.get(id);
   }
 
-  /** The civilization a Cliopatria realm name belongs to. */
+  /** The civilization a realm name belongs to. */
   ofRealm(name: string): Civilization | undefined {
     return this.byRealm.get(name);
   }
 
-  /** A Cliopatria realm's name as shown, in the reader's language. */
+  /** A realm's name as shown, in the reader's language. */
   realmName(realm: string): string {
     return this.byRealm.get(realm)?.name ?? realm;
   }

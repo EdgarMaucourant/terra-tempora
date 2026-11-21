@@ -9144,6 +9144,203 @@
    "summary": "Armed with the Rudd Concession, a mining grant obtained from the Ndebele king Lobengula in 1888, Cecil Rhodes wins a royal charter for his British South Africa Company on 29 October 1889. It may govern, police and make treaties north of the Limpopo. Its Pioneer Column occupies Mashonaland in 1890, and the company rules the lands later called Southern and Northern Rhodesia until 1923–24.",
    "wikipedia": "British_South_Africa_Company",
    "search": "British South Africa Company royal charter 29 October 1889 Cecil Rhodes Rudd Concession Lobengula Pioneer Column 1890 Mashonaland Rhodesia company rule 1923 1924"
+  },
+  {
+   "id": "third-anglo-ashanti-war-1873",
+   "kind": "war",
+   "year": 1873,
+   "to": 1874,
+   "title": "The Third Anglo-Ashanti War and the Gold Coast Colony, 1873 – 1874",
+   "place": "Cape Coast",
+   "lonLat": [
+    -1.25,
+    5.15
+   ],
+   "civs": [
+    "gold-coast",
+    "ashanti-empire",
+    "ghana",
+    "united-kingdom"
+   ],
+   "summary": "After Britain buys the Dutch forts, among them Elmina, in 1872, the Asante kingdom, which claimed Elmina, invades the coast. Garnet Wolseley marches inland, burns Kumasi in February 1874, and the Treaty of Fomena makes Asante give up its claims to the south. On 24 July 1874 the coastal lands become the Gold Coast Colony, the core of today’s Ghana.",
+   "wikipedia": "Third_Anglo-Ashanti_War",
+   "search": "Third Anglo-Ashanti War 1873 1874 Garnet Wolseley Kumasi burned Treaty of Fomena Elmina Dutch Gold Coast 1872 Gold Coast Colony 24 July 1874"
+  },
+  {
+   "id": "pangkor-treaty-1874",
+   "kind": "empire",
+   "year": 1874,
+   "title": "The Treaty of Pangkor brings a British Resident to Perak, 20 January 1874",
+   "place": "Lumut",
+   "lonLat": [
+    100.68,
+    4.25
+   ],
+   "civs": [
+    "perak",
+    "malaysia",
+    "united-kingdom"
+   ],
+   "summary": "To end the Larut wars between Chinese tin-mining societies and a disputed succession in Perak, the governor of the Straits Settlements, Andrew Clarke, has the chiefs sign a treaty on Pangkor island on 20 January 1874. Raja Abdullah becomes sultan, but must accept a British Resident whose advice he must follow in all but religion and Malay custom. The Dindings are ceded to Britain, and the Residential system spreads to Selangor and the other Malay states.",
+   "wikipedia": "Pangkor_Treaty_of_1874",
+   "search": "Pangkor Treaty 20 January 1874 Perak Raja Abdullah Andrew Clarke British Resident Larut wars tin Dindings Straits Settlements Malay states Residential system"
+  },
+  {
+   "id": "cession-of-fiji-1874",
+   "kind": "empire",
+   "year": 1874,
+   "title": "Fiji is ceded to Britain, 10 October 1874",
+   "place": "Levuka",
+   "lonLat": [
+    178.83,
+    -17.68
+   ],
+   "civs": [
+    "kingdom-of-fiji",
+    "colony-of-fiji",
+    "fiji",
+    "united-kingdom"
+   ],
+   "summary": "Deep in debt and unable to keep order among settlers and rival chiefs, King Cakobau and the leading chiefs sign the Deed of Cession at Levuka on 10 October 1874, and Fiji becomes a British colony. Its first governor, Arthur Gordon, rules through the chiefs and protects Fijian land, while bringing in labourers from India for the sugar plantations. Fiji becomes independent in 1970.",
+   "wikipedia": "Colony_of_Fiji",
+   "search": "Cession of Fiji 10 October 1874 Deed of Cession Cakobau Levuka Kingdom of Fiji debts Hercules Robinson Arthur Gordon colony measles 1875 Fiji independence 1970"
+  },
+  {
+   "id": "egypt-annexes-darfur-1874",
+   "kind": "war",
+   "year": 1874,
+   "title": "Egypt conquers the Sultanate of Darfur, 1874",
+   "place": "El Fasher",
+   "lonLat": [
+    25.35,
+    13.63
+   ],
+   "civs": [
+    "sultanate-of-darfur",
+    "khedivate-of-egypt",
+    "sudan"
+   ],
+   "summary": "The slave-trader and warlord al-Zubayr Rahma Mansur, master of the Bahr el Ghazal, invades Darfur from the south. Sultan Ibrahim is killed at the battle of Manawashi in October 1874, and in November Zubayr and the Khedive’s troops take El Fasher. Darfur becomes a province of the Egyptian Sudan until the Mahdists take it in 1883; its sultanate is restored in 1898 under Ali Dinar.",
+   "wikipedia": "Sultanate_of_Darfur",
+   "search": "Egyptian conquest of Darfur 1874 Zubayr Rahma Mansur Battle of Manawashi Sultan Ibrahim Qarad El Fasher Khedive Ismail Egyptian Sudan Ali Dinar 1898"
+  },
+  {
+   "id": "suez-canal-shares-1875",
+   "kind": "empire",
+   "year": 1875,
+   "title": "Britain buys Egypt’s Suez Canal shares, November 1875",
+   "place": "Port Said",
+   "lonLat": [
+    32.3,
+    31.25
+   ],
+   "civs": [
+    "khedivate-of-egypt",
+    "egypt",
+    "united-kingdom"
+   ],
+   "summary": "Close to bankruptcy, Khedive Ismail sells Egypt’s 44% stake in the Suez Canal Company. Prime Minister Benjamin Disraeli buys it for Britain in November 1875 for four million pounds lent by the Rothschilds, without waiting for Parliament. Britain now owns a large share of its route to India, and its stake in Egypt’s finances leads to the occupation of 1882.",
+   "wikipedia": "Suez_Canal_Company",
+   "search": "Disraeli buys Suez Canal shares November 1875 Khedive Ismail debt 176602 shares four million pounds Rothschild Suez Canal Company British interest Egypt"
+  },
+  {
+   "id": "perak-war-1875",
+   "kind": "war",
+   "year": 1875,
+   "to": 1876,
+   "title": "The Perak War after the killing of Resident Birch, 1875 – 1876",
+   "place": "Pasir Salak",
+   "lonLat": [
+    100.98,
+    4.17
+   ],
+   "civs": [
+    "perak",
+    "malaysia",
+    "united-kingdom"
+   ],
+   "summary": "The first British Resident of Perak, James Birch, angers the chiefs by taking over tax collection and pressing reforms. On 2 November 1875 he is killed at Pasir Salak on the orders of the Maharaja Lela. British and Indian troops occupy Perak; the Maharaja Lela is hanged and Sultan Abdullah exiled to the Seychelles. British control over the state is firmer than before.",
+   "wikipedia": "Perak_War",
+   "search": "Perak War 1875 1876 J. W. W. Birch killed Pasir Salak 2 November 1875 Maharaja Lela Sultan Abdullah exiled Seychelles British troops Perak Resident"
+  },
+  {
+   "id": "treaty-of-jacobabad-1876",
+   "kind": "empire",
+   "year": 1876,
+   "title": "The Treaty of Jacobabad puts Kalat under British protection, 8 December 1876",
+   "place": "Kalat",
+   "lonLat": [
+    66.58,
+    29.03
+   ],
+   "civs": [
+    "khanate-of-kalat",
+    "british-raj",
+    "pakistan",
+    "united-kingdom"
+   ],
+   "summary": "Robert Sandeman, sent to settle quarrels between the Khan of Kalat and his Baloch chiefs, brings them to sign the Treaty of Jacobabad on 8 December 1876. The khanate keeps its ruler but comes under British protection, and British troops may be stationed in it; Quetta, guarding the Bolan Pass toward Afghanistan, becomes a British base. Kalat stays a princely state until it joins Pakistan in 1948.",
+   "wikipedia": "Khanate_of_Kalat",
+   "search": "Treaty of Jacobabad 8 December 1876 Robert Sandeman Khan of Kalat Khudadad Khan British protection Quetta lease Baluchistan Agency Bolan Pass"
+  },
+  {
+   "id": "empress-of-india-1877",
+   "kind": "empire",
+   "year": 1877,
+   "title": "Victoria is proclaimed Empress of India at the Delhi Durbar, 1 January 1877",
+   "place": "Delhi",
+   "lonLat": [
+    77.21,
+    28.66
+   ],
+   "civs": [
+    "british-raj",
+    "india",
+    "united-kingdom"
+   ],
+   "summary": "Under the Royal Titles Act passed by Disraeli’s government in 1876, Queen Victoria takes the title Empress of India. The Viceroy, Lord Lytton, proclaims it before the princes of India at a vast Imperial Assemblage in Delhi on 1 January 1877, even as famine spreads in the south. British monarchs keep the title until 1947.",
+   "wikipedia": "Delhi_Durbar",
+   "search": "Royal Titles Act 1876 Queen Victoria Empress of India Kaisar-i-Hind Delhi Durbar 1 January 1877 Lord Lytton Imperial Assemblage princes British Raj"
+  },
+  {
+   "id": "cyprus-convention-1878",
+   "kind": "empire",
+   "year": 1878,
+   "title": "The Cyprus Convention: Britain takes over Cyprus, 1878",
+   "place": "Nicosia",
+   "lonLat": [
+    33.36,
+    35.17
+   ],
+   "civs": [
+    "british-cyprus",
+    "cyprus",
+    "united-kingdom"
+   ],
+   "summary": "In a secret convention of 4 June 1878, the Ottoman sultan lets Britain occupy and govern Cyprus in return for a British promise to defend his Asian lands against Russia. British troops land and Garnet Wolseley takes over the government in July 1878, while the island stays Ottoman in name and pays tribute. Britain annexes it in 1914, when the Ottomans join Germany in the First World War.",
+   "wikipedia": "Cyprus_Convention",
+   "search": "Cyprus Convention 4 June 1878 Britain Ottoman Empire defensive alliance against Russia Congress of Berlin Garnet Wolseley 12 July 1878 Nicosia administration annexation 1914 Crown colony 1925"
+  },
+  {
+   "id": "second-anglo-afghan-war-1878",
+   "kind": "war",
+   "year": 1878,
+   "to": 1880,
+   "title": "The Second Anglo-Afghan War and the Treaty of Gandamak, 1878 – 1880",
+   "place": "Pishin",
+   "lonLat": [
+    67.0,
+    30.58
+   ],
+   "civs": [
+    "afghanistan",
+    "british-raj",
+    "pakistan",
+    "united-kingdom"
+   ],
+   "summary": "When Emir Sher Ali receives a Russian mission but turns a British one back, British Indian armies invade Afghanistan in November 1878. By the Treaty of Gandamak of 26 May 1879 his son Yaqub Khan cedes Pishin, Sibi and the Kurram and hands over his foreign affairs. After the British envoy is killed in Kabul the war starts again; it ends in 1880 with Abdur Rahman as emir and the British back behind the new frontier, now holding Pishin and Sibi.",
+   "wikipedia": "Second_Anglo-Afghan_War",
+   "search": "Second Anglo-Afghan War 1878 1880 Sher Ali Russian mission Treaty of Gandamak 26 May 1879 Yaqub Khan Pishin Sibi Kurram Khyber Cavagnari killed Kabul Maiwand Kandahar Abdur Rahman"
   }
  ]
 }

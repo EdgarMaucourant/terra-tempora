@@ -39,6 +39,25 @@ To rebuild the data, translate the interface, or find your way around the
 code, see [docs/development.md](docs/development.md). Hosting and the
 Cloudflare Worker setup are in [docs/deployment.md](docs/deployment.md).
 
+## Use the borders elsewhere
+
+The site loads its borders in a compact format of its own (`public/data/borders-*.json`).
+To get them as GeoJSON, for QGIS, a web map or your own project:
+
+```sh
+npm install
+npm run geojson -- 1914            # the map of 1914, as on 31 December: borders-1914.geojson
+npm run geojson                    # every year: borders-all.geojson, one feature per realm and run of years
+npm run geojson -- 1914 my.geojson # to another file
+```
+
+Each feature carries the realm's `name`, the years it covers (`from` and `to`, both
+included), its `kind` when it isn't a realm's own land (`hatch` for land held or run by
+another state, `group` for a group of territories, `blank` for land no state held),
+its owner for a territory (`partOf`), Wikipedia and Wikidata links, and the `source` of
+its border. Land whose history isn't reviewed yet is left out. Coordinates are rounded
+to 0.01°. The data is shared under CC BY-SA 4.0 (see below).
+
 ## Contributing
 
 Found a mistake, missing data or have an idea? Use "Report a problem" on the
@@ -57,32 +76,17 @@ button on the site also lets you send a kind word.
 
 The code is under the [MIT licence](LICENSE). The map data, texts and
 pictures keep the licences of their sources, listed below; the built border
-files in `public/data/` include CC BY-SA traces, so they are shared as a whole
-under CC BY-SA 4.0.
+files in `public/data/` include lines traced from CC BY-SA maps, so they are
+shared as a whole under CC BY-SA 4.0.
 
-- Borders: [Cliopatria](https://github.com/Seshat-Global-History-Databank/cliopatria),
-  Seshat Global History Databank, CC BY 4.0.
-- Hand-traced borders in `scripts/border-overrides/`, shared under the licence
-  of the map they were traced from:
-  - Magadha and its successors, 600 to 171 BCE: "Magadha Expansion" by
-    Avantiputra7 on Wikimedia Commons (after Schwartzberg, 1992), CC BY-SA 4.0.
-  - Ségou, Kaarta, Kong and the Mossi and Hausa kingdoms: "Africa de l'Oèst
-    (fin sègle XVIII)" by Nicolas Eynaud on Wikimedia Commons, CC BY-SA 4.0.
-  - Luba Empire: "Lunda Empire", Library of Congress, *Zaire: A Country Study*
-    (1994), after Jan Vansina, public domain.
-  - Great Zimbabwe: "African civilizations map (pre-colonial)" by Jeff Israel
-    on Wikimedia Commons, CC BY-SA 3.0.
-  - The United States, 1783 to 1889 (the land it owned after each treaty or
-    purchase): today's states and rivers from Natural Earth 1:10m, cut along
-    the treaty lines, public domain.
-  - The British dominions (Canada from 1867, Newfoundland, Australia, New
-    Zealand and South Africa) before Cliopatria draws them, and land owned but
-    not yet settled (Australia before 1901, Mexico's north before 1848, Russian
-    America, Greenland from 1921): today's countries and provinces from
-    Natural Earth 1:10m, public domain.
-  - French India's trading posts: Pondicherry, Karikal and Yanam from
-    today's Puducherry in Natural Earth 1:10m, public domain; Mahé and
-    Chandernagore drawn as squares of their area around the town.
+- Borders: today's provinces and countries from
+  [Natural Earth 1:10m](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/)
+  (public domain), regrouped by owner for each year. The history lives in
+  `borders/`: each change names its date, its source (mostly Wikipedia) and how
+  sure it is (exact, close or rough). Where a border no longer follows today's
+  lines, the piece is cut along a line traced from an old map, named with each
+  cut in `borders/cuts.geojson`. Some of those maps are on Wikimedia Commons
+  under CC BY-SA, which is why the built border files are shared under CC BY-SA 4.0.
 - Key figures, links between realms and most events: Wikidata, CC0, with
   Wikipedia's opening paragraphs (CC BY-SA).
 - Pictures: Wikimedia Commons, each under its own free licence, credited with

@@ -3,10 +3,8 @@
 // Output: public/data/civilizations.json, and public/data/civilization-shapes.json
 //         with each one's outline, which only the landing page's cards need
 //
-// One civilization per Cliopatria realm name, and one per group of realms
-// (scripts/build-data.mjs): a group's members count as its land, so the
-// Spanish Empire's heartland is Spain, which Cliopatria calls the Kingdom of
-// Spain within it.
+// One civilization per realm name, and one per group of realms: a group's
+// members count as its land.
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import polylabel from "polylabel";
 import { readWindow } from "./border-files.mjs";
@@ -25,8 +23,7 @@ const FAMILIES = {
     "Eastern Chagatai Khanate",
     "Mongol Khanate",
   ],
-  // Magadha and the dynasties that grew it into an empire, as traced in
-  // scripts/border-overrides/magadha.geojson.
+  // Magadha and the dynasties that grew it into an empire.
   magadha: [
     "Janapada of Magadha",
     "Magadha - Haryanka dynasty",
@@ -53,10 +50,6 @@ const KM2_PER_SQ_DEGREE = 111.32 * 111.32;
 // lay there, or this much of it (km²): the Russian Empire's Alaska counts.
 const CONTINENT_SHARE = 0.05;
 const CONTINENT_KM2 = 100_000;
-// Hand corrections to a civilization's years where its borders don't span its
-// history, by id: [from, to].
-// They belong to the old borders, so the rebuilt ones (borders/) go without.
-const DATE_FIXES = existsSync("borders/2026.json") ? {} : JSON.parse(readFileSync("scripts/date-fixes.json", "utf8"));
 // Pictures from each realm's Wikipedia article, by article (see fetch-pictures.mjs).
 const PICTURES = existsSync("scripts/civ-pictures.json") ? JSON.parse(readFileSync("scripts/civ-pictures.json", "utf8")) : {};
 
@@ -355,16 +348,6 @@ for (const g of groups.values()) {
   const named = namePeriods(g.name, civilizations.at(-1).from, civilizations.at(-1).to);
   if (named) civilizations.at(-1).periods = named;
   outlines[slug] = silhouette(peak);
-}
-for (const c of civilizations) {
-  const fix = DATE_FIXES[c.id];
-  if (!fix) continue;
-  [c.from, c.to] = fix;
-  // Opening the realm goes to its peak year, so keep that within its years.
-  c.peakYear = Math.min(c.to, Math.max(c.from, c.peakYear));
-}
-for (const id of Object.keys(DATE_FIXES)) {
-  if (!civilizations.some((c) => c.id === id)) console.warn(`date-fixes.json: no civilization "${id}"`);
 }
 civilizations.sort((a, b) => b.area - a.area);
 
