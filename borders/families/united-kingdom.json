@@ -200,6 +200,58 @@
    ]
   },
   {
+   "date": "2004-06-28",
+   "what": "The Coalition Provisional Authority hands sovereignty to the Iraqi Interim Government",
+   "source": {
+    "title": "Coalition Provisional Authority (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Coalition_Provisional_Authority"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "IRQ"
+     ],
+     "owner": "Iraq",
+     "source": {
+      "title": "Coalition Provisional Authority (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Coalition_Provisional_Authority"
+     },
+     "hatch": {
+      "by": "United States",
+      "since": "2003-04-09",
+      "note": "Occupied from the fall of Baghdad on 9 April 2003 by the US-led coalition. The United States and the United Kingdom were the occupying powers recognised by UN Security Council Resolution 1483 and ran Iraq through the Coalition Provisional Authority until sovereignty passed to the Iraqi Interim Government on 28 June 2004",
+      "source": {
+       "title": "Coalition Provisional Authority (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Coalition_Provisional_Authority"
+      },
+      "with": "United Kingdom"
+     }
+    }
+   ]
+  },
+  {
+   "date": "2003-04-09",
+   "what": "American forces take Baghdad; Iraq comes under US-led occupation",
+   "source": {
+    "title": "Fall of Baghdad (2003) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Fall_of_Baghdad_(2003)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "IRQ"
+     ],
+     "owner": "Iraq",
+     "source": {
+      "title": "Iraq (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Iraq"
+     }
+    }
+   ]
+  },
+  {
    "date": "1997-07-01",
    "what": "Britain hands Hong Kong over to China",
    "source": {
