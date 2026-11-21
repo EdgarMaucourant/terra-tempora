@@ -18794,6 +18794,48 @@
      ]
     ]
    }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "heligoland",
+    "from": "DEU-1579",
+    "keep": true,
+    "note": "Heligoland and its dune island, British from 1807 to 1890",
+    "source": {
+     "title": "Heligoland (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Heligoland"
+    }
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        7.85,
+        54.16
+       ],
+       [
+        7.96,
+        54.16
+       ],
+       [
+        7.96,
+        54.21
+       ],
+       [
+        7.85,
+        54.21
+       ],
+       [
+        7.85,
+        54.16
+       ]
+      ]
+     ]
+    ]
+   }
   }
  ]
 }

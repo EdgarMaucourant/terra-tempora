@@ -11,7 +11,7 @@ export function loadShapes(dir = "public/data") {
   const byId = new Map();
   for (const w of index.windows) {
     for (const s of readWindow(dir, w.file)) {
-      if (!byId.has(s.id)) byId.set(s.id, { ...s, rings: s.rings.map(decodeRing) });
+      if (!byId.has(s.id)) byId.set(s.id, { ...s, rings: s.rings.map(decodeRing), holes: s.holes?.map((hs) => hs.map(decodeRing)) });
     }
   }
   return { index, shapes: [...byId.values()].sort((a, b) => a.from - b.from || a.id - b.id) };
@@ -27,9 +27,9 @@ function insideRing([x, y], ring) {
   return inside;
 }
 
-/** Whether a [lon, lat] point lies in a shape (shapes have no holes: each ring is a part). */
+/** Whether a [lon, lat] point lies in a shape: in one of its rings, not in that ring's holes. */
 export function shapeHas(shape, point) {
-  return shape.rings.some((ring) => insideRing(point, ring));
+  return shape.rings.some((ring, i) => insideRing(point, ring) && !shape.holes?.[i]?.some((hole) => insideRing(point, hole)));
 }
 
 /** The names of the realms drawn at a point in a year, smallest first (the one on top). */

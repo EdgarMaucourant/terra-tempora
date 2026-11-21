@@ -30,7 +30,7 @@ import { BorderData, type BorderSource, type Polity } from "./data";
 import { formatDate } from "./changelog";
 import { announce, el, externalLink } from "./dom";
 import { eraAt, eraName, ERAS, NOW } from "./eras";
-import { frameRealm, inRing } from "./frame";
+import { frameRealm, inShape } from "./frame";
 import { EventLayer } from "./eventLayer";
 import { makeDraggable } from "./drag";
 import { Feedback } from "./feedback";
@@ -636,7 +636,7 @@ async function placeAtSpot(name: string, spot: [number, number]): Promise<Countr
   if (candidates.length < 2 || !data || !civs) return undefined;
   const today = data.to;
   const shapes = await data.load(today, today);
-  const found = candidates.find((k) => shapes.some((q) => !q.kind && q.name === k && q.from <= today && today <= q.to && q.rings.some((r) => inRing(r, spot[0], spot[1]))));
+  const found = candidates.find((k) => shapes.some((q) => !q.kind && q.name === k && q.from <= today && today <= q.to && inShape(q, spot[0], spot[1])));
   const civ = found && civs.ofRealm(found);
   return civ ? countryOf(civ) : undefined;
 }
@@ -701,7 +701,7 @@ function showPlaceNow() {
       const here =
         spot &&
         covering.length > 1 &&
-        shapes.find((q) => !q.kind && at >= q.from && at <= q.to && covering.some((h) => h.name === q.name) && q.rings.some((r) => inRing(r, spot[0], spot[1])));
+        shapes.find((q) => !q.kind && at >= q.from && at <= q.to && covering.some((h) => h.name === q.name) && inShape(q, spot[0], spot[1]));
       if (here) entry = covering.find((h) => h.name === here.name) ?? entry;
       // With no spot clicked, the realm holding most of the land is told
       // (France in 1941, not Italy's Tende).

@@ -18,7 +18,7 @@ import {
 import { BLANK_COLOR, BLANK_FILL_ALPHA, JOINT_DARK, JOINT_LIGHT, MUTED, LABEL_OUTLINE, ROUGH_COLOR, ROUGH_LABEL_AREA } from "./colors";
 import { foldedInGroup, highlightOf, isOverlay, withClosedGroups, type Polity } from "./data";
 import { FlatLabel, FlatLabels, wrapLabel } from "./flatLabels";
-import { inRing } from "./frame";
+import { inShape } from "./frame";
 
 // Shapes float slightly above the globe surface so they never z-fight with it.
 const CONTEXT_HEIGHT = 2500;
@@ -132,6 +132,12 @@ function extentKm(rings: number[][]): number {
 }
 
 /** A ring's closed border line at a height, for picking as `id`. */
+/** One outer ring of a shape with its holes, as flat [lon, lat, …] arrays. */
+interface Part {
+  ring: number[];
+  holes: number[][];
+}
+
 function border(ring: number[], height: number, width: number, id?: object): GeometryInstance {
   const positions: number[] = [];
   for (let i = 0; i < ring.length; i += 2) positions.push(ring[i], ring[i + 1], height);
@@ -301,7 +307,7 @@ export class PolityLayer {
     let best: Polity | null = null;
     for (const p of this.polities.values()) {
       if (isOverlay(p) || year < p.from || year > p.to || (best && p.area >= best.area)) continue;
-      if (p.rings.some((ring) => inRing(ring, lon, lat))) best = p;
+      if (inShape(p, lon, lat)) best = p;
     }
     return best?.name ?? null;
   }
@@ -312,7 +318,7 @@ export class PolityLayer {
     let best: Polity | undefined;
     for (const p of this.polities.values()) {
       if (isOverlay(p) || y < p.from || y > p.to || (best && p.area >= best.area)) continue;
-      if (p.rings.some((ring) => inRing(ring, lon, lat))) best = p;
+      if (inShape(p, lon, lat)) best = p;
     }
     return best;
   }
@@ -350,7 +356,7 @@ export class PolityLayer {
   hatchAt(lon: number, lat: number, year: number): Polity | undefined {
     const y = Math.round(year);
     for (const p of this.polities.values()) {
-      if (p.kind === "hatch" && y >= p.from && y <= p.to && p.rings.some((ring) => inRing(ring, lon, lat))) return p;
+      if (p.kind === "hatch" && y >= p.from && y <= p.to && inShape(p, lon, lat)) return p;
     }
     return undefined;
   }
@@ -727,11 +733,16 @@ export class PolityLayer {
     const lifted = p.kind === "hatch" && this.landHighlighted(p);
     const style = `${p.kind ?? ""}:${color ?? ""}${lifted ? ":lifted" : ""}`;
     // Each sizeable outline is its own piece; the small ones go together.
-    const groups: number[][][] = [];
-    const small: number[][] = [];
-    for (const ring of p.rings) (ring.length / 2 >= SMALL_RING ? groups.push([ring]) : small.push(ring));
+    const groups: Part[][] = [];
+    const small: Part[] = [];
+    p.rings.forEach((ring, i) => {
+      const part = { ring, holes: p.holes?.[i] ?? [] };
+      if (ring.length / 2 >= SMALL_RING) groups.push([part]);
+      else small.push(part);
+    });
     if (small.length) groups.push(small);
-    const keys = groups.map((rings) => `${style}|${rings.map((r) => this.ringId(r)).join(",")}`);
+    const partKey = (part: Part) => [part.ring, ...part.holes].map((r) => this.ringId(r)).join("/");
+    const keys = groups.map((parts) => `${style}|${parts.map(partKey).join(",")}`);
     const missing = keys.filter((key) => !this.pieces.has(key)).length;
     if (missing > budget && !force) return -1;
 
@@ -809,8 +820,9 @@ export class PolityLayer {
     if (this.retiring.get(p.id) === p) this.retiring.delete(p.id);
   }
 
-  private build(key: string, rings: number[][], color: string | undefined, coarse?: boolean, kind?: Polity["kind"], lifted = false): Piece {
+  private build(key: string, parts: Part[], color: string | undefined, coarse?: boolean, kind?: Polity["kind"], lifted = false): Piece {
     const highlighted = !kind && color !== undefined;
+    const rings = parts.map((part) => part.ring);
     const height =
       kind === "group"
         ? GROUP_HEIGHT
@@ -839,12 +851,15 @@ export class PolityLayer {
     const vertexFormat = (kind === "hatch" ? MaterialAppearance.MaterialSupport.TEXTURED : MaterialAppearance.MaterialSupport.BASIC).vertexFormat;
     // Picking a piece finds the snapshot it is drawn for (see polityOf).
     piece.fill = new Primitive({
-      geometryInstances: rings.map(
-        (ring) =>
+      geometryInstances: parts.map(
+        ({ ring, holes }) =>
           new GeometryInstance({
             id: piece,
             geometry: new PolygonGeometry({
-              polygonHierarchy: new PolygonHierarchy(Cartesian3.fromDegreesArray(ring)),
+              polygonHierarchy: new PolygonHierarchy(
+                Cartesian3.fromDegreesArray(ring),
+                holes.map((hole) => new PolygonHierarchy(Cartesian3.fromDegreesArray(hole))),
+              ),
               height,
               granularity: CesiumMath.RADIANS_PER_DEGREE * (coarse ? COARSE_GRANULARITY : 1),
               vertexFormat,
@@ -865,7 +880,9 @@ export class PolityLayer {
       show: false,
     });
     piece.line = new Primitive({
-      geometryInstances: rings.map((ring) => border(ring, height + 300, kind === "group" ? 3 : highlighted || kind === "blank" ? 2 : 1, piece)),
+      geometryInstances: parts
+        .flatMap((part) => [part.ring, ...part.holes])
+        .map((ring) => border(ring, height + 300, kind === "group" ? 3 : highlighted || kind === "blank" ? 2 : 1, piece)),
       appearance: new PolylineMaterialAppearance({ material: lineMaterial, translucent: true }),
       asynchronous: true,
       allowPicking: kind !== "blank",

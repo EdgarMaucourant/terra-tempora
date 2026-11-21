@@ -188,11 +188,19 @@ for (const w of index.windows) {
     const civ = civOfRealm.get(shape.name);
     if (!civ) continue;
     const rings = shape.rings.map(decodeRing);
+    // Land of another realm inside this one (a hole) is not held.
+    const own = new Set();
+    for (const ring of rings) fillRing(ring, own);
+    if (shape.holes) {
+      const inner = new Set();
+      for (const hole of shape.holes.flat()) fillRing(decodeRing(hole), inner);
+      for (const cell of inner) own.delete(cell);
+    }
     // A group (the Spanish Empire) holds its members' land too (the Kingdom of Spain).
     for (const holder of [civ, ...(shape.groups ?? []).map((g) => civOfRealm.get(g)).filter(Boolean)]) {
       let cells = held.get(holder.id);
       if (!cells) held.set(holder.id, (cells = new Set()));
-      for (const ring of rings) fillRing(ring, cells);
+      for (const cell of own) cells.add(cell);
     }
     // Today's land: the realm's own shapes, not its group's other members.
     // A dependency (Greenland, Puerto Rico) is not a country of its own.

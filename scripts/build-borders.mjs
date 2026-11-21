@@ -84,8 +84,8 @@ function encodeRing(ring) {
   return out;
 }
 
-function labelPoint(ring) {
-  return polylabel([ring], 0.05).map((v) => Math.round(v * 100) / 100);
+function labelPoint(ring, holes = []) {
+  return polylabel([ring, ...holes], 0.05).map((v) => Math.round(v * 100) / 100);
 }
 
 // ---------------------------------------------------------------- pieces
@@ -95,6 +95,10 @@ const provinces = read(PIECES_FILE).features;
 
 /** Every piece of land: a Natural Earth province, or a part cut out of one. */
 const pieces = new Map();
+// A point in each sliver a cut leaves (a small part on either side of its
+// line, beside a larger one): a hole made of slivers is not drawn as a hole.
+const sliverPoints = [];
+const SLIVER_AREA = 400;
 for (const f of provinces) {
   const p = f.properties;
   pieces.set(p.adm1_code, { id: p.adm1_code, unit: p.adm0_a3, ground: p.gu_a3, name: p.name, geometry: f.geometry });
@@ -107,6 +111,12 @@ for (const cut of cuts.features) {
   const outside = orient(polygonClipping.difference(polygonsOf(from.geometry), outline));
   pieces.set(cut.properties.id, { ...from, id: cut.properties.id, name: cut.properties.note, keep: !!cut.properties.keep, geometry: { type: "MultiPolygon", coordinates: inside } });
   from.geometry = { type: "MultiPolygon", coordinates: outside };
+  for (const side of [inside, outside]) {
+    if (side.length < 2) continue;
+    const areas = side.map((poly) => sphereArea(poly[0]));
+    const largest = Math.max(...areas);
+    side.forEach((poly, i) => areas[i] < SLIVER_AREA && areas[i] < largest && sliverPoints.push(polylabel(poly, 0.001)));
+  }
 }
 
 /**
@@ -440,6 +450,8 @@ const keptPoint = new Map(
     .map(({ p, polys, tiny }) => [p.id, (tiny ? polys : polys.slice(0, 1)).map((poly) => polylabel(poly, 0.001))]),
 );
 
+const allMarks = [...keptPoint.values()].flat();
+
 /** Whether a point lies in a ring, or by it when the ring is a few points only (Diu once simplified). */
 function atRing(point, ring) {
   if (inRing(point, ring)) return true;
@@ -457,18 +469,23 @@ function inRing([x, y], ring) {
   return inside;
 }
 
-/** The outer rings of a group of pieces merged into one shape, small parts dropped. */
+/**
+ * The outer rings of a group of pieces merged into one shape, small parts
+ * dropped, each with its holes: land of another realm wholly inside it
+ * (Lesotho in South Africa, Mahdist Berber inside the Egyptian Sudan), so
+ * the inner realm is not drawn over the outer one. Banded (unreviewed) land
+ * keeps no holes.
+ */
 function outline(ids, { bands = false } = {}) {
   const geoms = ids.map((id) => topo.objects.pieces.geometries[indexOf.get(id)]).filter((g) => g.type);
   const merged = merge(topo, geoms);
+  const marks = ids.flatMap((id) => keptPoint.get(id) ?? []);
   const outers = polygonsOf(merged)
-    .map((poly) => poly[0])
-    .filter((ring) => ring.length >= 4)
-    .map((ring) => ({ ring, area: sphereArea(ring) }));
+    .filter((poly) => poly[0].length >= 4)
+    .map((poly) => ({ ring: poly[0], area: sphereArea(poly[0]), ...holesOf(bands ? [] : poly.slice(1)) }));
   if (!outers.length) return null;
   const largest = outers.reduce((a, b) => (b.area > a.area ? b : a));
   // A small place of its own (Diu, Saint Barthélemy) stays however small.
-  const marks = ids.flatMap((id) => keptPoint.get(id) ?? []);
   const kept = outers.filter(
     (o) => o === largest || o.area >= Math.min(MIN_PART_AREA, largest.area) || marks.find((m) => atRing(m, o.ring)),
   );
@@ -476,18 +493,43 @@ function outline(ids, { bands = false } = {}) {
     const [x, y] = ring[0].map((v) => Math.round(v * 100));
     return [x - 1, y - 1, 2, 0, 0, 2, -2, 0];
   };
-  const rings = kept
-    .flatMap((o) => (bands ? banded(o.ring) : [o.ring]).map((ring) => ({ ring, mark: o !== largest && marks.find((m) => atRing(m, o.ring)) })))
+  const parts = kept
+    .flatMap((o) =>
+      (bands ? banded(o.ring) : [o.ring]).map((ring) => ({ ring, holes: o.holes, mark: o !== largest && marks.find((m) => atRing(m, o.ring)) })),
+    )
     // A kept small place that simplifying has worn away is a small square.
-    .map(({ ring, mark }) => {
+    .map(({ ring, holes, mark }) => {
       const r = encodeRing(ring);
-      return mark && (r.length < 6 || !inRing(mark, ring)) ? square([mark]) : r;
+      return mark && (r.length < 6 || !inRing(mark, ring)) ? { r: square([mark]), holes: [] } : { r, holes };
     })
-    .filter((r) => r.length >= 6);
+    .filter(({ r }) => r.length >= 6);
   // A part too small to keep three points at 0.01° is drawn as a small square.
-  if (!rings.length) rings.push(square(largest.ring));
+  if (!parts.length) parts.push({ r: square(largest.ring), holes: [] });
+  const rings = parts.map((p) => p.r);
+  const holes = parts.some((p) => p.holes.length) ? parts.map((p) => p.holes) : undefined;
   // True areas, from the unsimplified pieces, sum over the group.
-  return { rings, label: labelPoint(largest.ring), area: kept.reduce((s, o) => s + o.area, 0) };
+  return {
+    rings,
+    holes,
+    label: labelPoint(largest.ring, largest.holeRings),
+    area: kept.reduce((s, o) => s + o.area, 0),
+  };
+}
+
+/**
+ * The holes of a merged polygon worth drawing, encoded: those as big as a
+ * part we keep, or holding a small place of its own (San Marino, Lesotho),
+ * but not the slivers a cut's line leaves along today's borders.
+ * Their unencoded rings (holeRings) place the label.
+ */
+function holesOf(inner) {
+  const holeRings = inner.filter((ring) => {
+    if (ring.length < 4) return false;
+    const area = sphereArea(ring);
+    if (allMarks.some((m) => inRing(m, ring))) return true;
+    return area >= MIN_PART_AREA && !(area < SLIVER_AREA && sliverPoints.some((m) => inRing(m, ring)));
+  });
+  return { holes: holeRings.map(encodeRing).filter((r) => r.length >= 6), holeRings };
 }
 
 const shapes = [];
@@ -504,7 +546,7 @@ for (const [key, list] of runs) {
     const o = outlineCache.get(cacheKey2) ?? outlineCache.set(cacheKey2, outline(ids, { bands })).get(cacheKey2);
     if (!o) continue;
     if (m.kind === "blank" && !m.drawn) {
-      blank.push({ from: run.from, to: run.to, rings: o.rings });
+      blank.push({ from: run.from, to: run.to, rings: o.rings, ...(o.holes && { holes: o.holes }) });
       continue;
     }
     const unnamed = m.kind === "unreviewed" || m.kind === "blank";
@@ -532,6 +574,7 @@ for (const [key, list] of runs) {
       ...(m.source && { source: m.source }),
       label: o.label,
       rings: o.rings,
+      ...(o.holes && { holes: o.holes }),
     });
   }
 }

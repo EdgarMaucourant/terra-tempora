@@ -10334,6 +10334,123 @@
    ],
    "realm": "Barotseland",
    "why": "Lozi kingdom until company rule in 1897"
+  },
+  {
+   "place": "Khartoum (Egypt)",
+   "lonLat": [
+    32.53,
+    15.59
+   ],
+   "years": [
+    1880,
+    1884
+   ],
+   "realm": "Khedivate of Egypt",
+   "why": "Egyptian until the Mahdi took it in January 1885"
+  },
+  {
+   "place": "El Fasher (Egypt)",
+   "lonLat": [
+    25.35,
+    13.63
+   ],
+   "years": [
+    1880,
+    1882
+   ],
+   "realm": "Khedivate of Egypt",
+   "why": "Egyptian Darfur until Slatin’s surrender, December 1883"
+  },
+  {
+   "place": "Mandalay (Burma)",
+   "lonLat": [
+    96.08,
+    21.97
+   ],
+   "years": [
+    1880,
+    1884
+   ],
+   "realm": "Kingdom of Burma",
+   "why": "Royal capital until November 1885"
+  },
+  {
+   "place": "Kuching (Raj)",
+   "lonLat": [
+    110.33,
+    1.55
+   ],
+   "years": [
+    1880,
+    1887
+   ],
+   "realm": "Raj of Sarawak",
+   "why": "The Brookes’ own state until the 1888 protectorate"
+  },
+  {
+   "place": "Kuantan (Pahang)",
+   "lonLat": [
+    103.33,
+    3.82
+   ],
+   "years": [
+    1880,
+    1887
+   ],
+   "realm": "Pahang",
+   "why": "British Resident from 1888"
+  },
+  {
+   "place": "Zanzibar (Sultanate)",
+   "lonLat": [
+    39.2,
+    -6.16
+   ],
+   "years": [
+    1880,
+    1889
+   ],
+   "realm": "Sultanate of Zanzibar",
+   "why": "British protectorate from November 1890"
+  },
+  {
+   "place": "Dar es Salaam (Zanzibar)",
+   "lonLat": [
+    39.25,
+    -6.85
+   ],
+   "years": [
+    1880,
+    1890
+   ],
+   "realm": "Sultanate of Zanzibar",
+   "why": "Zanzibari coast until German purchase, 1891"
+  },
+  {
+   "place": "Kampala (Buganda)",
+   "lonLat": [
+    32.58,
+    0.35
+   ],
+   "years": [
+    1880,
+    1889
+   ],
+   "realm": "Buganda",
+   "why": "Lugard’s treaty with Mwanga in December 1890"
+  },
+  {
+   "place": "Cairo (Egypt before 1882)",
+   "lonLat": [
+    31.24,
+    30.04
+   ],
+   "years": [
+    1880,
+    1881
+   ],
+   "realm": "Khedivate of Egypt",
+   "why": "British occupation from September 1882"
   }
  ]
 }

@@ -69,7 +69,11 @@ for (const w of index?.windows ?? []) {
   const file = existsSync(`${DATA}/${w.file}`) && read(`${DATA}/${w.file}`);
   if (!file) continue;
   for (const s of file.shapes ?? []) {
-    if (!s.rings.every((i) => Number.isInteger(i) && i >= 0 && i < file.rings.length)) fail(w.file, `"${s.name}" points at a ring that isn't there`);
+    const isRing = (i) => Number.isInteger(i) && i >= 0 && i < file.rings.length;
+    if (!s.rings.every(isRing)) fail(w.file, `"${s.name}" points at a ring that isn't there`);
+    if (s.holes && (s.holes.length !== s.rings.length || !s.holes.every((hs) => Array.isArray(hs) && hs.every(isRing)))) {
+      fail(w.file, `"${s.name}" has holes that don't match its rings`);
+    }
   }
 }
 
