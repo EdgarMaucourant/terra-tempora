@@ -1988,5 +1988,60 @@
   "title": "Le Sikkim devient un État de l’Inde, 16 mai 1975",
   "place": "Gangtok",
   "summary": "Le royaume himalayen du Sikkim, protectorat britannique puis indien à partir de 1950, est secoué en 1973 par des manifestations contre son roi, le chogyal. En avril 1975, les troupes indiennes désarment la garde du palais et un référendum vote l’abolition de la monarchie ; le 16 mai 1975, le Sikkim devient le 22e État de l’Inde."
+ },
+ "transjordan-independence-1946": {
+  "title": "La Transjordanie devient indépendante, 25 mai 1946",
+  "place": "Amman",
+  "summary": "Par le traité de Londres, la Grande-Bretagne met fin à son mandat sur la Transjordanie, que l’émir Abdallah gouvernait sous contrôle britannique depuis 1921. Le 25 mai 1946, il est proclamé roi du royaume hachémite de Transjordanie, qui garde des liens étroits avec la Grande-Bretagne et son armée commandée par des Britanniques, la Légion arabe. Le pays prend le nom de Jordanie en 1949."
+ },
+ "israel-independence-1948": {
+  "title": "Israël proclame son indépendance et la première guerre israélo-arabe, 1948 – 1949",
+  "place": "Tel Aviv",
+  "summary": "À la fin du mandat britannique, David Ben Gourion proclame l’État d’Israël à Tel Aviv le 14 mai 1948, et les armées de l’Égypte, de la Transjordanie, de la Syrie, de l’Irak et du Liban attaquent le lendemain. À la fin des combats, les lignes d’armistice de 1949 laissent à Israël plus de terres que le plan de partage de l’ONU, la Cisjordanie et Jérusalem-Est à la Jordanie, et la bande de Gaza à l’Égypte. Quelque 700 000 Palestiniens fuient ou sont chassés de chez eux : c’est la Nakba."
+ },
+ "jordan-annexes-west-bank-1950": {
+  "title": "La Jordanie annexe la Cisjordanie, 24 avril 1950",
+  "place": "Naplouse",
+  "summary": "Maîtresse de la Cisjordanie et de Jérusalem-Est depuis la guerre de 1948, la Jordanie les annexe officiellement le 24 avril 1950 et donne la citoyenneté jordanienne à leurs habitants palestiniens. Presque aucun autre pays ne reconnaît l’annexion, et la Ligue arabe la condamne. La Jordanie perd la Cisjordanie au profit d’Israël en 1967 et renonce à sa revendication en 1988."
+ },
+ "six-day-war-1967": {
+  "title": "La guerre des Six Jours, 5 – 10 juin 1967",
+  "place": "Jérusalem",
+  "summary": "Après que l’Égypte a fermé le détroit de Tiran et massé ses troupes dans le Sinaï, Israël frappe le premier le 5 juin 1967 et détruit au sol l’aviation égyptienne. En six jours, il prend le Sinaï et la bande de Gaza à l’Égypte, la Cisjordanie et Jérusalem-Est à la Jordanie, et le plateau du Golan à la Syrie. La résolution 242 de l’ONU demande le retrait en échange de la paix, et l’occupation de ces terres façonne la région depuis."
+ },
+ "yom-kippur-war-1973": {
+  "title": "La guerre du Kippour, 6 – 25 octobre 1973",
+  "place": "Canal de Suez",
+  "summary": "Le 6 octobre 1973, jour du Kippour, fête juive, l’Égypte et la Syrie lancent une attaque surprise : les troupes égyptiennes franchissent le canal de Suez et percent la ligne Bar-Lev israélienne, tandis que la Syrie avance sur le Golan. Israël se reprend et franchit à son tour le canal avant un cessez-le-feu le 25 octobre. La guerre, et l’embargo pétrolier arabe qui l’accompagne, ouvre la voie aux négociations qui rendront le Sinaï à l’Égypte."
+ },
+ "egypt-israel-peace-treaty-1979": {
+  "title": "Le traité de paix israélo-égyptien, 26 mars 1979",
+  "place": "Sinaï",
+  "summary": "Après la visite d’Anouar el-Sadate à Jérusalem en 1977 et les accords de Camp David négociés par Jimmy Carter, Sadate et Menahem Begin signent un traité de paix à Washington le 26 mars 1979. L’Égypte devient le premier pays arabe à reconnaître Israël, qui accepte de rendre tout le Sinaï. La Ligue arabe suspend l’Égypte, et Sadate est assassiné en 1981."
+ },
+ "sinai-returned-1982": {
+  "title": "Israël rend la dernière partie du Sinaï à l’Égypte, 25 avril 1982",
+  "place": "Charm el-Cheikh",
+  "summary": "En application du traité de paix, Israël se retire du Sinaï par étapes et en rend la dernière partie le 25 avril 1982, après avoir évacué de force ses colonies, dont la ville de Yamit. Une force multinationale surveille la péninsule démilitarisée. La petite bande de Taba, encore disputée, revient à l’Égypte par arbitrage en 1989."
+ },
+ "palestine-declaration-1988": {
+  "title": "L’État de Palestine est proclamé, 15 novembre 1988",
+  "place": "Ramallah",
+  "summary": "Pendant la première Intifada, le soulèvement dans les territoires occupés commencé en décembre 1987, la Jordanie renonce à sa revendication sur la Cisjordanie le 31 juillet 1988. Le 15 novembre, l’Organisation de libération de la Palestine, réunie en exil à Alger, proclame l’État de Palestine, déclaration lue par Yasser Arafat. Des dizaines de pays le reconnaissent en quelques semaines."
+ },
+ "oslo-accords-1993": {
+  "title": "Les accords d’Oslo, 13 septembre 1993",
+  "place": "Jéricho",
+  "summary": "Après des négociations secrètes en Norvège, Israël et l’OLP se reconnaissent mutuellement, et Yitzhak Rabin et Yasser Arafat se serrent la main à la Maison-Blanche le 13 septembre 1993. Les accords créent l’Autorité palestinienne, qui prend en charge Gaza et Jéricho en 1994 puis des parties de la Cisjordanie, pour une étape de cinq ans vers un règlement définitif qui ne viendra jamais. Rabin est assassiné en 1995."
+ },
+ "israel-jordan-peace-treaty-1994": {
+  "title": "Le traité de paix israélo-jordanien, 26 octobre 1994",
+  "place": "Wadi Araba",
+  "summary": "Après des décennies de contacts secrets, le roi Hussein de Jordanie et Yitzhak Rabin signent un traité de paix au poste-frontière de Wadi Araba le 26 octobre 1994, en présence de Bill Clinton. La Jordanie devient le deuxième pays arabe à faire la paix avec Israël ; le traité fixe leur frontière le long des vallées du Jourdain et de l’Arava et partage l’eau du Jourdain et du Yarmouk."
+ },
+ "gaza-disengagement-2005": {
+  "title": "Israël se retire de la bande de Gaza, août – septembre 2005",
+  "place": "Gaza",
+  "summary": "Selon le plan de désengagement d’Ariel Sharon, Israël évacue ses 21 colonies de la bande de Gaza et retire son armée le 12 septembre 2005, tout en gardant le contrôle des frontières, de l’espace aérien et du littoral de Gaza. Le Hamas prend le pouvoir dans la bande en 2007, après quoi Israël et l’Égypte imposent un blocus ; l’ONU considère toujours Gaza comme un territoire occupé."
  }
 }
