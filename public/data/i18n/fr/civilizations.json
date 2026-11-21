@@ -2,11 +2,11 @@
  "russia": {
   "name": "Russie"
  },
- "france": {
-  "name": "France"
- },
  "united-kingdom": {
   "name": "Royaume-Uni"
+ },
+ "france": {
+  "name": "France"
  },
  "canada": {
   "name": "Canada"
@@ -131,6 +131,9 @@
  "south-africa": {
   "name": "Afrique du Sud"
  },
+ "united-arab-republic": {
+  "name": "République arabe unie"
+ },
  "niger": {
   "name": "Niger"
  },
@@ -151,6 +154,9 @@
  },
  "egypt": {
   "name": "Égypte"
+ },
+ "sultanate-of-egypt": {
+  "name": "Sultanat d’Égypte"
  },
  "tanzania": {
   "name": "Tanzanie"
@@ -203,6 +209,9 @@
  "chile": {
   "name": "Chili"
  },
+ "kenya-colony": {
+  "name": "Colonie du Kenya"
+ },
  "myanmar": {
   "name": "Birmanie"
  },
@@ -232,9 +241,6 @@
  },
  "kenya": {
   "name": "Kenya"
- },
- "kenya-colony": {
-  "name": "Colonie du Kenya"
  },
  "botswana": {
   "name": "Botswana"
@@ -428,9 +434,6 @@
  "syria": {
   "name": "Syrie"
  },
- "united-arab-republic": {
-  "name": "République arabe unie"
- },
  "arab-kingdom-of-syria": {
   "name": "Royaume arabe de Syrie"
  },
@@ -521,6 +524,9 @@
  "tonkin": {
   "name": "Protectorat du Tonkin"
  },
+ "trans-juba": {
+  "name": "Oltre Giuba"
+ },
  "honduras": {
   "name": "Honduras"
  },
@@ -574,6 +580,9 @@
  },
  "serbia": {
   "name": "Serbie"
+ },
+ "mandatory-palestine": {
+  "name": "Palestine mandataire"
  },
  "panama": {
   "name": "Panama"
@@ -662,6 +671,9 @@
  "portuguese-guinea": {
   "name": "Guinée portugaise"
  },
+ "kingdom-of-hejaz": {
+  "name": "Royaume du Hedjaz"
+ },
  "netherlands": {
   "name": "Pays-Bas"
  },
@@ -706,9 +718,6 @@
  },
  "burundi": {
   "name": "Burundi"
- },
- "mandatory-palestine": {
-  "name": "Palestine mandataire"
  },
  "haiti": {
   "name": "Haïti"
@@ -775,6 +784,9 @@
  },
  "portuguese-timor": {
   "name": "Timor portugais"
+ },
+ "emirate-of-asir": {
+  "name": "Émirat d’Asir"
  },
  "alsace-lorraine": {
   "name": "Alsace-Lorraine"
@@ -970,6 +982,9 @@
  },
  "federated-states-of-micronesia": {
   "name": "États fédérés de Micronésie"
+ },
+ "weihaiwei": {
+  "name": "Weihaiwei"
  },
  "tonga": {
   "name": "Tonga"

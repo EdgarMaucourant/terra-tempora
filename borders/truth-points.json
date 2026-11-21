@@ -8382,7 +8382,7 @@
    ],
    "years": [
     1945,
-    2026
+    1957
    ],
    "realm": "Egypt",
    "why": "Egyptian; occupied by Israel 1956-57 and 1967-82",
@@ -8393,7 +8393,35 @@
       1956
      ],
      "by": "Israel"
-    },
+    }
+   ]
+  },
+  {
+   "place": "Arish (UAR)",
+   "lonLat": [
+    33.8,
+    31.13
+   ],
+   "years": [
+    1958,
+    1960
+   ],
+   "realm": "United Arab Republic",
+   "why": "Egypt was part of the United Arab Republic, 1958-61"
+  },
+  {
+   "place": "Arish (1961)",
+   "lonLat": [
+    33.8,
+    31.13
+   ],
+   "years": [
+    1961,
+    2026
+   ],
+   "realm": "Egypt",
+   "why": "Egyptian; occupied by Israel 1956-57 and 1967-82",
+   "heldBy": [
     {
      "years": [
       1967,
@@ -8965,6 +8993,241 @@
    ],
    "realm": "China",
    "why": "Handed back by Britain on 1 October 1930"
+  },
+  {
+   "place": "Dublin (UK)",
+   "lonLat": [
+    -6.26,
+    53.35
+   ],
+   "years": [
+    1920,
+    1921
+   ],
+   "realm": "United Kingdom",
+   "why": "Part of the United Kingdom until 6 December 1922"
+  },
+  {
+   "place": "Cairo (protectorate)",
+   "lonLat": [
+    31.24,
+    30.04
+   ],
+   "years": [
+    1920,
+    1921
+   ],
+   "realm": "Sultanate of Egypt",
+   "why": "British protectorate until 28 February 1922"
+  },
+  {
+   "place": "Cairo",
+   "lonLat": [
+    31.24,
+    30.04
+   ],
+   "years": [
+    1922,
+    1957
+   ],
+   "realm": "Egypt",
+   "why": "Independent from 1922"
+  },
+  {
+   "place": "Cairo (UAR)",
+   "lonLat": [
+    31.24,
+    30.04
+   ],
+   "years": [
+    1958,
+    1960
+   ],
+   "realm": "United Arab Republic",
+   "why": "Egypt and Syria united, 1958-61"
+  },
+  {
+   "place": "Cairo (1961)",
+   "lonLat": [
+    31.24,
+    30.04
+   ],
+   "years": [
+    1961,
+    2026
+   ],
+   "realm": "Egypt",
+   "why": "Egypt again after Syria left the union"
+  },
+  {
+   "place": "Kismayo (Kenya)",
+   "lonLat": [
+    42.54,
+    -0.36
+   ],
+   "years": [
+    1920,
+    1924
+   ],
+   "realm": "Kenya Colony",
+   "why": "British until 29 June 1925"
+  },
+  {
+   "place": "Kismayo (Trans-Juba)",
+   "lonLat": [
+    42.54,
+    -0.36
+   ],
+   "years": [
+    1925,
+    1925
+   ],
+   "realm": "Trans-Juba",
+   "why": "Italian colony of Trans-Juba, 1925-26"
+  },
+  {
+   "place": "Kismayo (Italian)",
+   "lonLat": [
+    42.54,
+    -0.36
+   ],
+   "years": [
+    1926,
+    1940
+   ],
+   "realm": "Italian Somaliland",
+   "why": "Part of Italian Somaliland from 1926"
+  },
+  {
+   "place": "Aqaba (Hejaz)",
+   "lonLat": [
+    35.01,
+    29.53
+   ],
+   "years": [
+    1920,
+    1924
+   ],
+   "realm": "Kingdom of Hejaz",
+   "why": "Part of the Kingdom of Hejaz until 1925"
+  },
+  {
+   "place": "Amman (1920)",
+   "lonLat": [
+    35.93,
+    31.95
+   ],
+   "years": [
+    1920,
+    1920
+   ],
+   "realm": "Mandatory Palestine",
+   "why": "Under the British mandate before the emirate"
+  },
+  {
+   "place": "Amman (emirate 1921)",
+   "lonLat": [
+    35.93,
+    31.95
+   ],
+   "years": [
+    1921,
+    1944
+   ],
+   "realm": "Emirate of Transjordan",
+   "why": "Emirate under British mandate from 1921",
+   "heldBy": [
+    {
+     "years": [
+      1923,
+      1944
+     ],
+     "by": "League of Nations"
+    }
+   ]
+  },
+  {
+   "place": "Jerusalem (1920)",
+   "lonLat": [
+    35.21,
+    31.78
+   ],
+   "years": [
+    1920,
+    1922
+   ],
+   "realm": "Mandatory Palestine",
+   "why": "British civil administration from July 1920; the mandate came into force in 1923"
+  },
+  {
+   "place": "Dar es Salaam (1920)",
+   "lonLat": [
+    39.27,
+    -6.82
+   ],
+   "years": [
+    1920,
+    1921
+   ],
+   "realm": "Tanganyika Territory",
+   "why": "British under the Treaty of Versailles before the mandate"
+  },
+  {
+   "place": "Dar es Salaam (mandate)",
+   "lonLat": [
+    39.27,
+    -6.82
+   ],
+   "years": [
+    1922,
+    1945
+   ],
+   "realm": "Tanganyika Territory",
+   "why": "League of Nations mandate from 1922",
+   "heldBy": [
+    {
+     "years": [
+      1922,
+      1945
+     ],
+     "by": "League of Nations"
+    }
+   ]
+  },
+  {
+   "place": "Hodeidah (Asir)",
+   "lonLat": [
+    42.95,
+    14.8
+   ],
+   "years": [
+    1921,
+    1924
+   ],
+   "realm": "Emirate of Asir",
+   "why": "Held by the Idrisids until 1925"
+  },
+  {
+   "place": "Baghdad (mandate 1920)",
+   "lonLat": [
+    44.37,
+    33.31
+   ],
+   "years": [
+    1920,
+    1929
+   ],
+   "realm": "Mandatory Iraq",
+   "why": "British mandate",
+   "heldBy": [
+    {
+     "years": [
+      1920,
+      1929
+     ],
+     "by": "League of Nations"
+    }
+   ]
   }
  ]
 }

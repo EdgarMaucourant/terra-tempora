@@ -682,7 +682,23 @@
   "wikipedia": "Egypt",
   "wikidata": "Q79",
   "fr": "Égypte",
-  "es": "Egipto"
+  "es": "Egipto",
+  "periods": [
+   {
+    "from": "1922-03-15",
+    "name": "Kingdom of Egypt",
+    "wikipedia": "Kingdom of Egypt",
+    "fr": "Royaume d’Égypte",
+    "es": "Reino de Egipto",
+    "note": "King Fuad I, from 15 March 1922"
+   },
+   {
+    "from": "1953-06-18",
+    "name": "Egypt",
+    "wikipedia": "Egypt",
+    "note": "A republic from 18 June 1953"
+   }
+  ]
  },
  "El Salvador": {
   "wikipedia": "El Salvador",
@@ -3766,5 +3782,29 @@
   "wikidata": "Q15939896",
   "fr": "Weihaiwei",
   "es": "Weihaiwei"
+ },
+ "Sultanate of Egypt": {
+  "wikipedia": "Sultanate of Egypt",
+  "wikidata": "Q370173",
+  "fr": "Sultanat d’Égypte",
+  "es": "Sultanato de Egipto"
+ },
+ "Kingdom of Hejaz": {
+  "wikipedia": "Kingdom of Hejaz",
+  "wikidata": "Q956357",
+  "fr": "Royaume du Hedjaz",
+  "es": "Reino del Hiyaz"
+ },
+ "Emirate of Asir": {
+  "wikipedia": "Emirate of Asir",
+  "wikidata": "Q1656908",
+  "fr": "Émirat d’Asir",
+  "es": "Emirato de Asir"
+ },
+ "Trans-Juba": {
+  "wikipedia": "Trans-Juba",
+  "wikidata": "Q1231992",
+  "fr": "Oltre Giuba",
+  "es": "Trans-Juba"
  }
 }

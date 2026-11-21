@@ -25,7 +25,7 @@
     "gilbert-islands",
     "IRL"
    ],
-   "from": 1930,
+   "from": 1920,
    "why": "The United Kingdom with the Crown Dependencies (Guernsey, Jersey, the Isle of Man), its overseas territories and the Chagos Archipelago, whose land has not changed hands since 1965, and Ireland (the Irish Free State until 1937)"
   },
   {
@@ -45,7 +45,7 @@
     "SYC",
     "weihaiwei"
    ],
-   "from": 1930,
+   "from": 1920,
    "why": "Hong Kong, Brunei, Southern Rhodesia and the colonies in the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence or handover; Weihaiwei, leased from China until 1930"
   },
   {
@@ -67,7 +67,7 @@
     "BHS",
     "GRD"
    ],
-   "from": 1930,
+   "from": 1920,
    "why": "The Gulf protected states, South Arabia with all of Yemen (North Yemen until 1990), and the colonies and protectorates in Africa, the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence"
   },
   {
@@ -92,7 +92,7 @@
     "JAM",
     "TTO"
    ],
-   "from": 1930,
+   "from": 1920,
    "why": "The colonies, protectorates and trust territories Britain held in 1960 in Africa, Asia, the Mediterranean and the Caribbean, with today's borders, until their independence, with Malaya and Somalia around them"
   },
   {
@@ -103,12 +103,11 @@
     "btog-upper-east",
     "SDN",
     "SDS",
-    "LBY",
     "ERI",
     "ETH"
    ],
-   "from": 1930,
-   "why": "The Gold Coast and British Togoland (Ghana), Anglo-Egyptian Sudan, Libya and Eritrea, which Britain ruled or ran in the 1950s, with today's borders, and Ethiopia around Eritrea. The Haud, run by Britain inside Ethiopia until 1955, is not drawn"
+   "from": 1920,
+   "why": "The Gold Coast and British Togoland (Ghana), Anglo-Egyptian Sudan and Eritrea, which Britain ruled or ran in the 1950s, with today's borders, and Ethiopia around Eritrea. The Haud, run by Britain inside Ethiopia until 1955, is not drawn"
   },
   {
    "pieces": [
@@ -154,7 +153,7 @@
     "hyd-karnataka",
     "bhadrachalam"
    ],
-   "from": 1930,
+   "from": 1920,
    "why": "British India (with the princely states, drawn as part of it), Burma and Ceylon, with today's borders, from British rule to today, and Newfoundland until it joined Canada. French and Portuguese India stay with their own families"
   },
   {
@@ -171,10 +170,18 @@
     "EGY-1558",
     "EGY-1557",
     "JOR",
-    "IRQ"
+    "IRQ",
+    "EGY"
+   ],
+   "from": 1920,
+   "why": "Mandatory Palestine and Transjordan, and what became of them: Israel, the West Bank, the Gaza Strip, Jordan, and the Sinai occupied by Israel; Iraq, a British mandate until 1932, and Kuwait, occupied by Iraq in 1990-91; Egypt, a British protectorate until 1922 and part of the United Arab Republic in 1958-61"
+  },
+  {
+   "pieces": [
+    "LBY"
    ],
    "from": 1930,
-   "why": "Mandatory Palestine and Transjordan, and what became of them: Israel, the West Bank, the Gaza Strip, Jordan, and the Sinai occupied by Israel; Iraq, a British mandate until 1932, and Kuwait, occupied by Iraq in 1990-91"
+   "why": "Libya, an Italian colony until the Second World War, from the end of the Italian reconquest (Kufra, January 1931). The reconquest of the 1920s is left to the rebuild of Italy"
   }
  ],
  "changes": [
@@ -2056,6 +2063,27 @@
    ]
   },
   {
+   "date": "1961-09-28",
+   "what": "Syria leaves the United Arab Republic; Egypt keeps the name until 1971",
+   "source": {
+    "title": "United Arab Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/United_Arab_Republic"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "EGY"
+     ],
+     "owner": "United Arab Republic",
+     "source": {
+      "title": "United Arab Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/United_Arab_Republic"
+     }
+    }
+   ]
+  },
+  {
    "date": "1961-06-19",
    "what": "Kuwait ends British protection and becomes independent",
    "source": {
@@ -2281,6 +2309,27 @@
       "url": "https://en.wikipedia.org/wiki/Aden_Protectorate"
      },
      "territory": "Protectorate of South Arabia"
+    }
+   ]
+  },
+  {
+   "date": "1958-02-22",
+   "what": "Egypt and Syria unite as the United Arab Republic",
+   "source": {
+    "title": "United Arab Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/United_Arab_Republic"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "EGY"
+     ],
+     "owner": "Egypt",
+     "source": {
+      "title": "Republic of Egypt (1953–1958) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Republic_of_Egypt_(1953–1958)"
+     }
     }
    ]
   },
@@ -4621,6 +4670,27 @@
    ]
   },
   {
+   "date": "1931-01-20",
+   "what": "Italian troops take the Kufra oases, the last stronghold of the Senussi resistance in Libya",
+   "source": {
+    "title": "Italian colonization of Libya (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Italian_colonization_of_Libya"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "LBY-2965"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Italian colonization of Libya (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Italian_colonization_of_Libya"
+     }
+    }
+   ]
+  },
+  {
    "date": "1930-10-01",
    "what": "The United Kingdom hands the leased territory of Weihaiwei back to China",
    "source": {
@@ -4639,6 +4709,444 @@
       "url": "https://en.wikipedia.org/wiki/Weihaiwei_under_British_rule"
      },
      "territory": "Weihaiwei"
+    }
+   ]
+  },
+  {
+   "date": "1926-06-30",
+   "what": "Trans-Juba is joined to Italian Somaliland",
+   "source": {
+    "title": "Trans-Juba (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Trans-Juba"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SOM-2645",
+      "SOM-2315",
+      "SOM-2314"
+     ],
+     "owner": "Italy",
+     "source": {
+      "title": "Trans-Juba (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Trans-Juba"
+     },
+     "territory": "Trans-Juba"
+    }
+   ]
+  },
+  {
+   "date": "1925-06-29",
+   "what": "The United Kingdom hands Jubaland, the part of Kenya west of the Juba river, to Italy as Trans-Juba",
+   "source": {
+    "title": "Trans-Juba (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Trans-Juba"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "SOM-2645",
+      "SOM-2315",
+      "SOM-2314"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Jubaland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Jubaland"
+     },
+     "territory": "Kenya Colony"
+    }
+   ]
+  },
+  {
+   "date": "1925-06-15",
+   "what": "Transjordan takes over Aqaba and Ma’an from the Kingdom of Hejaz, as Ibn Saud conquers the Hejaz",
+   "source": {
+    "title": "Emirate of Transjordan (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Emirate_of_Transjordan"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "JOR-849",
+      "JOR-853"
+     ],
+     "owner": "Kingdom of Hejaz",
+     "source": {
+      "title": "Kingdom of Hejaz (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Hejaz"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1925-04-01",
+   "what": "The Kingdom of Yemen takes Hodeidah and the Tihama coast from the Idrisid Emirate of Asir",
+   "source": {
+    "title": "Emirate of Asir (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Emirate_of_Asir"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "YEM-151"
+     ],
+     "owner": "Emirate of Asir",
+     "source": {
+      "title": "Emirate of Asir (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Emirate_of_Asir"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1923-09-29",
+   "what": "The League of Nations mandate for Palestine comes into force, covering Palestine and Transjordan",
+   "source": {
+    "title": "Mandate for Palestine (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Mandate_for_Palestine"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ISR-3053",
+      "ISR-3054",
+      "ISR-3055",
+      "ISR-3056",
+      "ISR-3057",
+      "ISR-3058",
+      "WEB+00?",
+      "east-jerusalem",
+      "GAZ+00?"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Mandatory Palestine (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mandatory_Palestine"
+     },
+     "territory": "Mandatory Palestine"
+    },
+    {
+     "pieces": [
+      "JOR-854",
+      "JOR-858",
+      "JOR-859",
+      "JOR-852",
+      "JOR-857",
+      "JOR-850",
+      "JOR-851",
+      "JOR-860",
+      "JOR-855",
+      "JOR-856"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Emirate of Transjordan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Emirate_of_Transjordan"
+     },
+     "territory": "Emirate of Transjordan"
+    }
+   ]
+  },
+  {
+   "date": "1922-12-06",
+   "what": "The Irish Free State is founded under the Anglo-Irish Treaty; Northern Ireland stays in the United Kingdom",
+   "source": {
+    "title": "Irish Free State (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Irish_Free_State"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "IRL"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Ireland in the United Kingdom (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ireland_in_the_United_Kingdom"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1922-07-20",
+   "what": "The League of Nations confirms the British mandates for Tanganyika, the Cameroons and Togoland",
+   "source": {
+    "title": "League of Nations mandate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/League_of_Nations_mandate"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TZA"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Tanganyika Territory (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tanganyika_Territory"
+     },
+     "territory": "Tanganyika Territory"
+    },
+    {
+     "pieces": [
+      "TZA-3337",
+      "TZA-3383",
+      "TZA-3384",
+      "TZA-3381",
+      "TZA-3380"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Sultanate of Zanzibar (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sultanate_of_Zanzibar"
+     },
+     "territory": "Zanzibar"
+    },
+    {
+     "pieces": [
+      "ncam-borno",
+      "ncam-adamawa-north",
+      "ncam-adamawa-south",
+      "ncam-taraba"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British Cameroons (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Cameroons"
+     },
+     "territory": "British Cameroons"
+    },
+    {
+     "pieces": [
+      "btog-volta",
+      "btog-northern",
+      "btog-upper-east"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "British Togoland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Togoland"
+     },
+     "territory": "British Togoland"
+    }
+   ]
+  },
+  {
+   "date": "1922-02-28",
+   "what": "The United Kingdom ends its protectorate over Egypt, which becomes a kingdom",
+   "source": {
+    "title": "Unilateral Declaration of Egyptian Independence (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Unilateral_Declaration_of_Egyptian_Independence"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "EGY"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Sultanate of Egypt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sultanate_of_Egypt"
+     },
+     "territory": "Sultanate of Egypt"
+    }
+   ]
+  },
+  {
+   "date": "1921-04-11",
+   "what": "Abdullah founds the Emirate of Transjordan under British protection",
+   "source": {
+    "title": "Emirate of Transjordan (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Emirate_of_Transjordan"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "JOR-854",
+      "JOR-858",
+      "JOR-859",
+      "JOR-852",
+      "JOR-857",
+      "JOR-850",
+      "JOR-851",
+      "JOR-860",
+      "JOR-855",
+      "JOR-856"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Emirate of Transjordan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Emirate_of_Transjordan"
+     },
+     "territory": "Mandatory Palestine"
+    }
+   ]
+  },
+  {
+   "date": "1920-07-01",
+   "what": "A British civil administration under Herbert Samuel replaces military rule in Palestine",
+   "source": {
+    "title": "Mandatory Palestine (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Mandatory_Palestine"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ISR-3053",
+      "ISR-3054",
+      "ISR-3055",
+      "ISR-3056",
+      "ISR-3057",
+      "ISR-3058",
+      "WEB+00?",
+      "east-jerusalem",
+      "GAZ+00?"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Occupied Enemy Territory Administration (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Occupied_Enemy_Territory_Administration"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1917-12-09",
+      "note": "Taken from the Ottoman Empire by British forces in 1917–18 and run as Occupied Enemy Territory, until the civil administration of July 1920",
+      "source": {
+       "title": "Occupied Enemy Territory Administration (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Occupied_Enemy_Territory_Administration"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1920-04-25",
+   "what": "At San Remo the Allies give the United Kingdom the mandates for Mesopotamia and Palestine",
+   "source": {
+    "title": "San Remo conference (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/San_Remo_conference"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "IRQ"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Mesopotamian campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mesopotamian_campaign"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1918-10-30",
+      "note": "Taken from the Ottoman Empire by British and Indian forces between 1914 and November 1918 (Mosul), until the mandate",
+      "source": {
+       "title": "Mesopotamian campaign (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Mesopotamian_campaign"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1920-01-10",
+   "what": "The Treaty of Versailles comes into force: Germany gives up its colonies",
+   "source": {
+    "title": "Treaty of Versailles (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Versailles"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TZA"
+     ],
+     "owner": "Germany",
+     "source": {
+      "title": "East African campaign (World War I) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/East_African_campaign_(World_War_I)"
+     },
+     "territory": "German East Africa",
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1917-11-25",
+      "note": "Conquered by British, Indian, South African and Belgian forces in the East African campaign, until the Treaty of Versailles",
+      "source": {
+       "title": "East African campaign (World War I) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/East_African_campaign_(World_War_I)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "TZA-3337",
+      "TZA-3383",
+      "TZA-3384",
+      "TZA-3381",
+      "TZA-3380"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Sultanate of Zanzibar (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sultanate_of_Zanzibar"
+     },
+     "territory": "Zanzibar"
+    },
+    {
+     "pieces": [
+      "ncam-borno",
+      "ncam-adamawa-north",
+      "ncam-adamawa-south",
+      "ncam-taraba"
+     ],
+     "owner": "Germany",
+     "source": {
+      "title": "Kamerun campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kamerun_campaign"
+     },
+     "territory": "Kamerun",
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1916-02-18",
+      "note": "Taken by British and French troops, 1914 to 1916",
+      "source": {
+       "title": "Kamerun campaign (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Kamerun_campaign"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "btog-volta",
+      "btog-northern",
+      "btog-upper-east"
+     ],
+     "owner": "Germany",
+     "source": {
+      "title": "Togoland campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Togoland_campaign"
+     },
+     "territory": "Togoland",
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1914-08-26",
+      "note": "Taken by British and French troops in August 1914",
+      "source": {
+       "title": "Togoland campaign (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Togoland_campaign"
+      }
+     }
     }
    ]
   }
