@@ -355,6 +355,24 @@ export class PolityLayer {
     return undefined;
   }
 
+  /**
+   * The hatching over the whole of a land at `year` (Jersey held by Germany),
+   * if any. It has the land's very outline, so a pick anywhere on the land is
+   * the hatching's, even at its edge where the point found on the globe's
+   * surface falls just off the outline (the land is drawn a few km up).
+   */
+  hatchOver(land: Polity, year: number): Polity | undefined {
+    if (land.kind) return undefined;
+    const y = Math.round(year);
+    const owner = land.partOf ?? land.name;
+    const territory = land.partOf ? land.name : undefined;
+    for (const p of this.polities.values()) {
+      if (p.kind !== "hatch" || y < p.from || y > p.to || p.name !== owner || p.land !== territory) continue;
+      if (p.area >= land.area * 0.98) return p;
+    }
+    return undefined;
+  }
+
   /** The outline of a group of territories (French West Africa) drawn that year. */
   groupAt(name: string, year: number): Polity | undefined {
     const y = Math.round(year);
