@@ -8393,6 +8393,390 @@
      "by": "Israel"
     }
    ]
+  },
+  {
+   "place": "St Peter Port (occupied)",
+   "lonLat": [
+    -2.54,
+    49.46
+   ],
+   "years": [
+    1940,
+    1944
+   ],
+   "realm": "Guernsey",
+   "why": "Occupied by Germany 1940-45",
+   "heldBy": [
+    {
+     "years": [
+      1940,
+      1944
+     ],
+     "by": "Germany"
+    }
+   ]
+  },
+  {
+   "place": "St Helier (occupied)",
+   "lonLat": [
+    -2.11,
+    49.19
+   ],
+   "years": [
+    1940,
+    1944
+   ],
+   "realm": "Jersey",
+   "why": "Occupied by Germany 1940-45",
+   "heldBy": [
+    {
+     "years": [
+      1940,
+      1944
+     ],
+     "by": "Germany"
+    }
+   ]
+  },
+  {
+   "place": "St Helier (1939)",
+   "lonLat": [
+    -2.11,
+    49.19
+   ],
+   "years": [
+    1939,
+    1939
+   ],
+   "realm": "Jersey",
+   "why": "British Crown dependency"
+  },
+  {
+   "place": "Victoria, Hong Kong (occupied)",
+   "lonLat": [
+    114.17,
+    22.32
+   ],
+   "years": [
+    1941,
+    1944
+   ],
+   "realm": "British Hong Kong",
+   "why": "Occupied by Japan from 25 December 1941",
+   "heldBy": [
+    {
+     "years": [
+      1941,
+      1944
+     ],
+     "by": "Japan"
+    }
+   ]
+  },
+  {
+   "place": "Singapore (occupied)",
+   "lonLat": [
+    103.82,
+    1.35
+   ],
+   "years": [
+    1942,
+    1944
+   ],
+   "realm": "Straits Settlements",
+   "why": "Occupied by Japan from 15 February 1942",
+   "heldBy": [
+    {
+     "years": [
+      1942,
+      1944
+     ],
+     "by": "Japan"
+    }
+   ]
+  },
+  {
+   "place": "Singapore (1941)",
+   "lonLat": [
+    103.82,
+    1.35
+   ],
+   "years": [
+    1939,
+    1941
+   ],
+   "realm": "Straits Settlements",
+   "why": "British until 15 February 1942"
+  },
+  {
+   "place": "Alor Setar (Thai)",
+   "lonLat": [
+    100.37,
+    6.12
+   ],
+   "years": [
+    1943,
+    1944
+   ],
+   "realm": "Unfederated Malay States",
+   "why": "Handed by Japan to Thailand, 1943-45",
+   "heldBy": [
+    {
+     "years": [
+      1943,
+      1944
+     ],
+     "by": "Thailand"
+    }
+   ]
+  },
+  {
+   "place": "Alor Setar (Japanese)",
+   "lonLat": [
+    100.37,
+    6.12
+   ],
+   "years": [
+    1941,
+    1942
+   ],
+   "realm": "Unfederated Malay States",
+   "why": "Occupied by Japan from December 1941",
+   "heldBy": [
+    {
+     "years": [
+      1941,
+      1942
+     ],
+     "by": "Japan"
+    }
+   ]
+  },
+  {
+   "place": "Yangon (occupied)",
+   "lonLat": [
+    96.16,
+    16.87
+   ],
+   "years": [
+    1942,
+    1944
+   ],
+   "realm": "British Burma",
+   "why": "Occupied by Japan 1942-45",
+   "heldBy": [
+    {
+     "years": [
+      1942,
+      1944
+     ],
+     "by": "Japan"
+    }
+   ]
+  },
+  {
+   "place": "Port Blair (occupied)",
+   "lonLat": [
+    92.73,
+    11.62
+   ],
+   "years": [
+    1942,
+    1944
+   ],
+   "realm": "British Raj",
+   "why": "Occupied by Japan 1942-45",
+   "heldBy": [
+    {
+     "years": [
+      1942,
+      1944
+     ],
+     "by": "Japan"
+    }
+   ]
+  },
+  {
+   "place": "Kuching (occupied)",
+   "lonLat": [
+    110.35,
+    1.55
+   ],
+   "years": [
+    1941,
+    1944
+   ],
+   "realm": "Raj of Sarawak",
+   "why": "Occupied by Japan from 24 December 1941",
+   "heldBy": [
+    {
+     "years": [
+      1941,
+      1944
+     ],
+     "by": "Japan"
+    }
+   ]
+  },
+  {
+   "place": "Hargeisa (occupied)",
+   "lonLat": [
+    44.06,
+    9.56
+   ],
+   "years": [
+    1940,
+    1940
+   ],
+   "realm": "British Somaliland",
+   "why": "Occupied by Italy August 1940 to March 1941",
+   "heldBy": [
+    {
+     "years": [
+      1940,
+      1940
+     ],
+     "by": "Italy"
+    }
+   ]
+  },
+  {
+   "place": "Hargeisa (1941)",
+   "lonLat": [
+    44.06,
+    9.56
+   ],
+   "years": [
+    1941,
+    1944
+   ],
+   "realm": "British Somaliland",
+   "why": "British protectorate"
+  },
+  {
+   "place": "Addis Ababa (occupied)",
+   "lonLat": [
+    38.75,
+    9.03
+   ],
+   "years": [
+    1939,
+    1940
+   ],
+   "realm": "Ethiopia",
+   "why": "Occupied by Italy 1936-41",
+   "heldBy": [
+    {
+     "years": [
+      1939,
+      1940
+     ],
+     "by": "Italy"
+    }
+   ]
+  },
+  {
+   "place": "Addis Ababa",
+   "lonLat": [
+    38.75,
+    9.03
+   ],
+   "years": [
+    1941,
+    2026
+   ],
+   "realm": "Ethiopia",
+   "why": "Independent again from 1941"
+  },
+  {
+   "place": "Benghazi (Italian)",
+   "lonLat": [
+    20.07,
+    32.12
+   ],
+   "years": [
+    1939,
+    1940
+   ],
+   "realm": "Italian Libya",
+   "why": "Italian colony"
+  },
+  {
+   "place": "Benghazi (British-held)",
+   "lonLat": [
+    20.07,
+    32.12
+   ],
+   "years": [
+    1941,
+    1946
+   ],
+   "realm": "Italian Libya",
+   "why": "Held by Britain at the end of 1941, and from November 1942",
+   "heldBy": [
+    {
+     "years": [
+      1941,
+      1941
+     ],
+     "by": "United Kingdom"
+    },
+    {
+     "years": [
+      1942,
+      1946
+     ],
+     "by": "United Kingdom"
+    }
+   ]
+  },
+  {
+   "place": "Kufra (Free French)",
+   "lonLat": [
+    23.3,
+    24.2
+   ],
+   "years": [
+    1941,
+    1941
+   ],
+   "realm": "Italian Libya",
+   "why": "Taken by the Free French on 1 March 1941",
+   "heldBy": [
+    {
+     "years": [
+      1941,
+      1941
+     ],
+     "by": "France"
+    }
+   ]
+  },
+  {
+   "place": "Tripoli (Axis)",
+   "lonLat": [
+    13.19,
+    32.89
+   ],
+   "years": [
+    1939,
+    1942
+   ],
+   "realm": "Italian Libya",
+   "why": "Italian colony, in Axis hands until January 1943"
+  },
+  {
+   "place": "Asmara (Italian)",
+   "lonLat": [
+    38.93,
+    15.33
+   ],
+   "years": [
+    1939,
+    1940
+   ],
+   "realm": "Italian Eritrea",
+   "why": "Italian colony until April 1941"
   }
  ]
 }

@@ -462,6 +462,7 @@
     "event": "{kind} · {when} · click for more",
     "explore": "{years} · click to explore",
     "heldBy": "Held by {by} since {year}",
+    "partlyHeldBy": "Partly held by {by} since {year}",
     "jointly": "Ruled jointly by {by} and {with} since {year}",
     "trust": "UN trust territory since {year}",
     "mandate": "League of Nations mandate since {year}",
