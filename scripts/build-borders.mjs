@@ -366,6 +366,7 @@ for (let year = TODAY; year >= firstReviewed; year--) {
           ...(h.with && { with: h.with }),
           ...(h.trust && { trust: true }),
           ...(h.occupied && { occupied: true }),
+          ...(h.confirmed && { confirmed: h.confirmed }),
           ...(h.rough && { rough: true }),
           source: { title: h.source.title, url: h.source.url, ...(h.map && { map: h.map }), ...hatchConfidence(h, id) },
         });
@@ -526,6 +527,7 @@ for (const [key, list] of runs) {
       ...(m.with && { with: m.with }),
       ...(m.trust && { trust: true }),
       ...(m.occupied && { occupied: true }),
+      ...(m.confirmed && { confirmed: m.confirmed }),
       ...(m.rough && { rough: true }),
       ...(m.source && { source: m.source }),
       label: o.label,
