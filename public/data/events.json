@@ -8945,6 +8945,205 @@
    "summary": "Fearing that the Ottomans would make good their claims – and that Germany would end its Baghdad railway at Kuwait – Sheikh Mubarak al-Sabah signs a secret bond with Britain on 23 January 1899. He promises not to cede land or receive foreign agents without British consent, in return for British protection. Kuwait stays under that protection until its independence in 1961.",
    "wikipedia": "Anglo-Kuwaiti_Agreement_of_1899",
    "search": "Anglo-Kuwaiti Agreement 23 January 1899 Mubarak al-Sabah Britain protection secret bond Ottoman claims Baghdad railway Kuwait protectorate 1961 independence"
+  },
+  {
+   "id": "basutoland-gun-war-1880",
+   "kind": "war",
+   "year": 1880,
+   "to": 1884,
+   "title": "The Basotho Gun War and the return of direct British rule, 1880 – 1884",
+   "place": "Maseru",
+   "lonLat": [
+    27.48,
+    -29.31
+   ],
+   "civs": [
+    "basutoland",
+    "lesotho",
+    "united-kingdom"
+   ],
+   "summary": "When the Cape Colony, which had run Basutoland since 1871, orders the Basotho to hand in their guns, they rise in September 1880 and fight the Cape forces to a standstill. The Cape gives up, and on 18 March 1884 Britain takes Basutoland back under direct rule from London. This kept it out of South Africa and is why Lesotho is an independent country today.",
+   "wikipedia": "Basuto_Gun_War",
+   "search": "Basuto Gun War 1880 1881 Cape Colony disarmament Basotho Lerotholi Basutoland Crown colony 18 March 1884 Lesotho"
+  },
+  {
+   "id": "tel-el-kebir-1882",
+   "kind": "war",
+   "year": 1882,
+   "title": "The battle of Tel el-Kebir and the British occupation of Egypt, 13 September 1882",
+   "place": "Tel el-Kebir",
+   "lonLat": [
+    31.95,
+    30.55
+   ],
+   "civs": [
+    "khedivate-of-egypt",
+    "egypt",
+    "united-kingdom"
+   ],
+   "summary": "After the nationalist army officer Ahmed Urabi takes power and riots break out in Alexandria, the Royal Navy bombards the city in July 1882 and a British army lands by the Suez Canal. Garnet Wolseley’s dawn attack routs Urabi’s army at Tel el-Kebir on 13 September, and Cairo falls the next day. The khedive is restored under British control, and British troops stay in Egypt for 74 years.",
+   "wikipedia": "Anglo-Egyptian_War",
+   "search": "Anglo-Egyptian War 1882 Urabi revolt bombardment of Alexandria Tel el-Kebir 13 September 1882 Garnet Wolseley British occupation of Egypt Suez Canal veiled protectorate"
+  },
+  {
+   "id": "fall-of-khartoum-1885",
+   "kind": "war",
+   "year": 1885,
+   "title": "The fall of Khartoum and the death of Gordon, 26 January 1885",
+   "place": "Khartoum",
+   "lonLat": [
+    32.56,
+    15.66
+   ],
+   "civs": [
+    "mahdist-state",
+    "khedivate-of-egypt",
+    "sudan",
+    "united-kingdom"
+   ],
+   "summary": "Sent to evacuate the Egyptian garrisons from a Sudan overrun by the Mahdi’s rising, General Charles Gordon instead holds Khartoum through a ten-month siege. The Mahdists storm the city on 26 January 1885 and kill Gordon, two days before a British relief force arrives. Egypt gives up the Sudan, and the Mahdi’s successor rules it from Omdurman until 1898.",
+   "wikipedia": "Siege_of_Khartoum",
+   "search": "Siege of Khartoum 1884 1885 Charles Gordon killed 26 January 1885 Muhammad Ahmad Mahdi relief expedition Wolseley too late Mahdist State Omdurman"
+  },
+  {
+   "id": "bechuanaland-protectorate-1885",
+   "kind": "empire",
+   "year": 1885,
+   "title": "Britain declares the Bechuanaland Protectorate, 31 March 1885",
+   "place": "Shoshong",
+   "lonLat": [
+    26.5,
+    -23.03
+   ],
+   "civs": [
+    "bechuanaland-protectorate",
+    "botswana",
+    "united-kingdom"
+   ],
+   "summary": "To keep the Boer republics and German South West Africa from joining up, and to hold the “road to the north”, Britain sends the Warren Expedition and declares a protectorate over the Tswana lands on 31 March 1885. The south becomes British Bechuanaland, later joined to the Cape, while the north stays a protectorate. In 1895 the chiefs Khama III, Sebele and Bathoen go to London to keep it out of Cecil Rhodes’s company. It becomes independent Botswana in 1966.",
+   "wikipedia": "Bechuanaland_Protectorate",
+   "search": "Bechuanaland Protectorate 31 March 1885 Warren Expedition Khama III Tswana German South West Africa Boer republics road to the north Botswana independence 1966"
+  },
+  {
+   "id": "third-anglo-burmese-war-1885",
+   "kind": "war",
+   "year": 1885,
+   "to": 1886,
+   "title": "The Third Anglo-Burmese War: Upper Burma annexed, November 1885 – January 1886",
+   "place": "Mandalay",
+   "lonLat": [
+    96.1,
+    22.05
+   ],
+   "civs": [
+    "kingdom-of-burma",
+    "british-raj",
+    "myanmar",
+    "united-kingdom"
+   ],
+   "summary": "Fearing French influence at the court of King Thibaw and angered by a fine on a British timber company, Britain sends a river fleet up the Irrawaddy in November 1885. Mandalay falls on 28 November almost without a fight, and Thibaw is exiled to India. On 1 January 1886 Upper Burma is annexed and the whole country becomes a province of British India, ending the Konbaung dynasty; resistance goes on for years.",
+   "wikipedia": "Third_Anglo-Burmese_War",
+   "search": "Third Anglo-Burmese War November 1885 Mandalay King Thibaw exiled Ratnagiri Upper Burma annexed 1 January 1886 Konbaung dynasty end British India province Burma pacification"
+  },
+  {
+   "id": "royal-niger-company-1886",
+   "kind": "empire",
+   "year": 1886,
+   "title": "The Royal Niger Company receives its charter, 10 July 1886",
+   "place": "Lokoja",
+   "lonLat": [
+    6.74,
+    7.8
+   ],
+   "civs": [
+    "royal-niger-company",
+    "nigeria",
+    "united-kingdom"
+   ],
+   "summary": "George Goldie’s National African Company, which had bought out its French rivals on the Niger and signed hundreds of treaties with local rulers, is chartered as the Royal Niger Company on 10 July 1886. It governs the lower and middle Niger and Benue, with a monopoly on trade, and fights the emirates of Bida and Ilorin. In 1900 the Crown takes over its lands, which become the heart of Northern and Southern Nigeria.",
+   "wikipedia": "Royal_Niger_Company",
+   "search": "Royal Niger Company charter 10 July 1886 George Goldie National African Company Niger river monopoly Lokoja Berlin Conference Northern Nigeria 1900 Unilever"
+  },
+  {
+   "id": "borneo-protectorates-1888",
+   "kind": "empire",
+   "year": 1888,
+   "title": "North Borneo, Sarawak and Brunei become British protectorates, 1888",
+   "place": "Sandakan",
+   "lonLat": [
+    117.9,
+    5.8
+   ],
+   "civs": [
+    "north-borneo",
+    "raj-of-sarawak",
+    "brunei",
+    "malaysia",
+    "united-kingdom"
+   ],
+   "summary": "To shut out other powers, Britain makes protectorates of the three states of northern Borneo in 1888: the British North Borneo Company’s lands in May, the Brooke family’s Raj of Sarawak in June and the Sultanate of Brunei in September. Britain takes their foreign affairs while each keeps its own rulers. Sarawak and North Borneo join Malaysia in 1963; Brunei stays apart and becomes independent in 1984.",
+   "wikipedia": "North_Borneo",
+   "search": "1888 British protectorates North Borneo 12 May Sarawak 14 June Brunei 17 September Brooke Rajah Charles British North Borneo Company Labuan Malaysia 1963"
+  },
+  {
+   "id": "sikkim-expedition-1888",
+   "kind": "war",
+   "year": 1888,
+   "title": "The Sikkim expedition drives out the Tibetans, 1888",
+   "place": "Gnathang",
+   "lonLat": [
+    88.85,
+    27.28
+   ],
+   "civs": [
+    "kingdom-of-sikkim",
+    "british-raj",
+    "india",
+    "united-kingdom"
+   ],
+   "summary": "Tibetan troops fortify the Jelep La route at Lingtu, inside Sikkim, in 1886. In 1888 a British Indian force drives them out and defeats them at Gnatong in September. A British Political Officer is put in charge of Sikkim’s affairs, and the Anglo-Chinese Convention of Calcutta of 17 March 1890 recognises Sikkim as a British protectorate and fixes its border with Tibet.",
+   "wikipedia": "Sikkim_expedition",
+   "search": "Sikkim expedition 1888 Tibetan troops Lingtu fort Gnatong British India Political Officer Claude White Convention of Calcutta 17 March 1890 Sikkim British protectorate"
+  },
+  {
+   "id": "ibeac-charter-1888",
+   "kind": "empire",
+   "year": 1888,
+   "title": "The Imperial British East Africa Company receives its charter, 3 September 1888",
+   "place": "Mombasa",
+   "lonLat": [
+    39.62,
+    -4.0
+   ],
+   "civs": [
+    "imperial-british-east-africa-company",
+    "kenya",
+    "uganda",
+    "united-kingdom"
+   ],
+   "summary": "William Mackinnon’s company, which had leased the Sultan of Zanzibar’s mainland coast around Mombasa in 1887, receives a royal charter on 3 September 1888 to govern the British sphere of East Africa. It pushes inland to Buganda, where Frederick Lugard signs a treaty in 1890. Short of money, it hands Uganda to the Crown in 1893 and Kenya, as the East Africa Protectorate, in 1895.",
+   "wikipedia": "Imperial_British_East_Africa_Company",
+   "search": "Imperial British East Africa Company charter 3 September 1888 William Mackinnon Mombasa Zanzibar coast lease Lugard Uganda railway East Africa Protectorate 1895"
+  },
+  {
+   "id": "bsac-charter-1889",
+   "kind": "empire",
+   "year": 1889,
+   "title": "The British South Africa Company receives its charter, 29 October 1889",
+   "place": "Harare",
+   "lonLat": [
+    31.05,
+    -17.83
+   ],
+   "civs": [
+    "southern-rhodesia",
+    "zimbabwe",
+    "zambia",
+    "united-kingdom"
+   ],
+   "summary": "Armed with the Rudd Concession, a mining grant obtained from the Ndebele king Lobengula in 1888, Cecil Rhodes wins a royal charter for his British South Africa Company on 29 October 1889. It may govern, police and make treaties north of the Limpopo. Its Pioneer Column occupies Mashonaland in 1890, and the company rules the lands later called Southern and Northern Rhodesia until 1923–24.",
+   "wikipedia": "British_South_Africa_Company",
+   "search": "British South Africa Company royal charter 29 October 1889 Cecil Rhodes Rudd Concession Lobengula Pioneer Column 1890 Mashonaland Rhodesia company rule 1923 1924"
   }
  ]
 }

@@ -1,6 +1,6 @@
 import { reloadForNewRelease } from "./newRelease";
 import { NOW } from "./eras";
-import { inRing } from "./frame";
+import { inShape } from "./frame";
 
 export interface Polity {
   id: number;
@@ -57,6 +57,8 @@ export interface Polity {
   label: [number, number] | null;
   /** Outer rings as flat [lon, lat, lon, lat, …] arrays in degrees. */
   rings: number[][];
+  /** When the shape has any: holes[i] are ring i's holes, as rings. */
+  holes?: number[][][];
   /** Drawn from the coarse window: simpler rings, for the globe seen from afar. */
   coarse?: boolean;
 }
@@ -140,7 +142,7 @@ interface Index {
  */
 interface WindowFile {
   rings: number[][];
-  shapes: (Omit<Polity, "rings"> & { rings: number[] })[];
+  shapes: (Omit<Polity, "rings" | "holes"> & { rings: number[]; holes?: number[][] })[];
 }
 
 /** Turns a delta-encoded ring of 0.01° steps back into degrees. */
@@ -264,10 +266,15 @@ export class BorderData {
           })
           .then((data) => {
             const rings = data.rings.map(decodeRing);
-            const shapes = data.shapes.map((s) => ({ from: s.from, to: s.to, rings: s.rings.map((i) => rings[i]) }));
+            const shapes = data.shapes.map((s) => ({
+              from: s.from,
+              to: s.to,
+              rings: s.rings.map((i) => rings[i]),
+              holes: s.holes?.map((hs) => hs.map((i) => rings[i])),
+            }));
             return (lon: number, lat: number, year: number) => {
               const y = Math.round(year);
-              return shapes.some((s) => y >= s.from && y <= s.to && s.rings.some((ring) => inRing(ring, lon, lat)));
+              return shapes.some((s) => y >= s.from && y <= s.to && inShape(s, lon, lat));
             };
           });
     // A failed download can be retried on the next hover.
@@ -315,7 +322,13 @@ export class BorderData {
         .then((data) => {
           // Shapes that share a ring share its decoded copy too.
           const rings = data.rings.map(decodeRing);
-          return data.shapes.map((p) => ({ ...p, to: this.until(p.to), rings: p.rings.map((i) => rings[i]), coarse }));
+          return data.shapes.map((p) => ({
+            ...p,
+            to: this.until(p.to),
+            rings: p.rings.map((i) => rings[i]),
+            holes: p.holes?.map((hs) => hs.map((i) => rings[i])),
+            coarse,
+          }));
         })
         .then((shapes) => (this.arrivedFiles.add(file), this.arrive(shapes), shapes));
       // A failed download can be retried on the next request.

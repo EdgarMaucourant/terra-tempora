@@ -30,6 +30,14 @@ export function inRing(ring: number[], lon: number, lat: number): boolean {
   return inside;
 }
 
+/**
+ * Whether a point lies in a shape: in one of its rings and not in one of
+ * that ring's holes (land of another realm wholly inside it).
+ */
+export function inShape(shape: { rings: number[][]; holes?: number[][][] }, lon: number, lat: number): boolean {
+  return shape.rings.some((ring, i) => inRing(ring, lon, lat) && !shape.holes?.[i]?.some((hole) => inRing(hole, lon, lat)));
+}
+
 /** km between two boxes, 0 when they touch or overlap. */
 function gap(a: Part["box"], b: Part["box"]): number {
   const dLon = Math.max(0, a[0] - b[2], b[0] - a[2]);
