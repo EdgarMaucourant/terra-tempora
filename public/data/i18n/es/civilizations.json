@@ -545,11 +545,14 @@
  "liberia": {
   "name": "Liberia"
  },
+ "jordan": {
+  "name": "Jordania"
+ },
  "state-of-damascus": {
   "name": "Estado de Damasco"
  },
- "jordan": {
-  "name": "Jordania"
+ "emirate-of-transjordan": {
+  "name": "Emirato de Transjordania"
  },
  "azerbaijan": {
   "name": "Azerbaiyán"
@@ -701,6 +704,9 @@
  "burundi": {
   "name": "Burundi"
  },
+ "mandatory-palestine": {
+  "name": "Mandato británico de Palestina"
+ },
  "haiti": {
   "name": "Haití"
  },
@@ -829,6 +835,9 @@
  },
  "palestine": {
   "name": "Palestina"
+ },
+ "west-bank": {
+  "name": "Cisjordania"
  },
  "brunei": {
   "name": "Brunéi"
@@ -1027,6 +1036,9 @@
  },
  "grenada": {
   "name": "Granada"
+ },
+ "gaza-strip": {
+  "name": "Franja de Gaza"
  },
  "malta": {
   "name": "Malta"

@@ -1578,7 +1578,28 @@
   "wikipedia": "Jordan",
   "wikidata": "Q810",
   "fr": "Jordanie",
-  "es": "Jordania"
+  "es": "Jordania",
+  "periods": [
+   {
+    "from": "1946-05-25",
+    "name": "Hashemite Kingdom of Transjordan",
+    "wikipedia": "Jordan",
+    "fr": "Royaume hachémite de Transjordanie",
+    "es": "Reino Hachemita de Transjordania",
+    "label": "Transjordan",
+    "labelFr": "Transjordanie",
+    "labelEs": "Transjordania"
+   },
+   {
+    "from": "1949-04-26",
+    "name": "Jordan",
+    "wikipedia": "Jordan",
+    "label": "Jordan",
+    "labelFr": "Jordanie",
+    "labelEs": "Jordania",
+    "note": "Renamed the Hashemite Kingdom of Jordan in 1949"
+   }
+  ]
  },
  "Kamerun": {
   "wikipedia": "Kamerun",
@@ -3674,5 +3695,29 @@
   "wikidata": "Q1240096",
   "fr": "État d'Hyderabad",
   "es": "Estado de Hyderabad"
+ },
+ "Mandatory Palestine": {
+  "wikipedia": "Mandatory Palestine",
+  "wikidata": "Q193714",
+  "fr": "Palestine mandataire",
+  "es": "Mandato británico de Palestina"
+ },
+ "Emirate of Transjordan": {
+  "wikipedia": "Emirate of Transjordan",
+  "wikidata": "Q1121819",
+  "fr": "Émirat de Transjordanie",
+  "es": "Emirato de Transjordania"
+ },
+ "West Bank": {
+  "wikipedia": "West Bank",
+  "wikidata": "Q36678",
+  "fr": "Cisjordanie",
+  "es": "Cisjordania"
+ },
+ "Gaza Strip": {
+  "wikipedia": "Gaza Strip",
+  "wikidata": "Q39760",
+  "fr": "Bande de Gaza",
+  "es": "Franja de Gaza"
  }
 }

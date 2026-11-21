@@ -153,6 +153,24 @@
    ],
    "from": 1945,
    "why": "British India (with the princely states, drawn as part of it), Burma and Ceylon, with today's borders, from British rule to today, and Newfoundland until it joined Canada. French and Portuguese India stay with their own families"
+  },
+  {
+   "pieces": [
+    "ISR-3053",
+    "ISR-3054",
+    "ISR-3055",
+    "ISR-3056",
+    "ISR-3057",
+    "ISR-3058",
+    "WEB+00?",
+    "east-jerusalem",
+    "GAZ+00?",
+    "EGY-1558",
+    "EGY-1557",
+    "JOR"
+   ],
+   "from": 1945,
+   "why": "Mandatory Palestine and Transjordan, and what became of them: Israel, the West Bank, the Gaza Strip, Jordan, and the Sinai occupied by Israel"
   }
  ],
  "changes": [
@@ -282,6 +300,58 @@
    ]
   },
   {
+   "date": "1988-11-15",
+   "what": "The Palestine Liberation Organization declares the State of Palestine; Jordan gave up its claim to the West Bank on 31 July",
+   "source": {
+    "title": "Palestinian Declaration of Independence (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Palestinian_Declaration_of_Independence"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "WEB+00?",
+      "east-jerusalem"
+     ],
+     "owner": "Jordan",
+     "source": {
+      "title": "Jordanian annexation of the West Bank (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Jordanian_annexation_of_the_West_Bank"
+     },
+     "territory": "West Bank",
+     "hatch": {
+      "by": "Israel",
+      "since": "1967-06-10",
+      "note": "Occupied by Israel in the Six-Day War of June 1967",
+      "source": {
+       "title": "Israeli-occupied territories (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Israeli-occupied_territories"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "GAZ+00?"
+     ],
+     "owner": "Egypt",
+     "source": {
+      "title": "Occupation of the Gaza Strip by Egypt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Occupation_of_the_Gaza_Strip_by_Egypt"
+     },
+     "territory": "Gaza Strip",
+     "hatch": {
+      "by": "Israel",
+      "since": "1967-06-10",
+      "note": "Occupied by Israel in the Six-Day War of June 1967",
+      "source": {
+       "title": "Israeli-occupied territories (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Israeli-occupied_territories"
+      }
+     }
+    }
+   ]
+  },
+  {
    "date": "1985-10-03",
    "what": "South Georgia and the South Sandwich Islands become a territory of their own, apart from the Falkland Islands",
    "source": {
@@ -350,6 +420,37 @@
      },
      "map": "https://commons.wikimedia.org/wiki/File:LocationSt.Kitts Nevis Anguilla.PNG",
      "territory": "Saint Christopher-Nevis-Anguilla"
+    }
+   ]
+  },
+  {
+   "date": "1982-04-25",
+   "what": "Israel hands the last of the Sinai back to Egypt under the 1979 peace treaty",
+   "source": {
+    "title": "Egypt–Israel peace treaty (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Egypt–Israel_peace_treaty"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "EGY-1558",
+      "EGY-1557"
+     ],
+     "owner": "Egypt",
+     "source": {
+      "title": "Sinai Peninsula (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sinai_Peninsula"
+     },
+     "hatch": {
+      "by": "Israel",
+      "since": "1967-06-10",
+      "note": "Occupied by Israel in the Six-Day War of June 1967",
+      "source": {
+       "title": "Israeli-occupied territories (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Israeli-occupied_territories"
+      }
+     }
     }
    ]
   },
@@ -1147,6 +1248,51 @@
       "url": "https://en.wikipedia.org/wiki/Khuriya_Muriya_Islands"
      },
      "territory": "Khuriya Muriya Islands"
+    }
+   ]
+  },
+  {
+   "date": "1967-06-10",
+   "what": "Israel takes the West Bank, East Jerusalem, the Gaza Strip and the Sinai in the Six-Day War",
+   "source": {
+    "title": "Six-Day War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Six-Day_War"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "WEB+00?",
+      "east-jerusalem"
+     ],
+     "owner": "Jordan",
+     "source": {
+      "title": "Jordanian annexation of the West Bank (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Jordanian_annexation_of_the_West_Bank"
+     },
+     "territory": "West Bank"
+    },
+    {
+     "pieces": [
+      "GAZ+00?"
+     ],
+     "owner": "Egypt",
+     "source": {
+      "title": "Occupation of the Gaza Strip by Egypt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Occupation_of_the_Gaza_Strip_by_Egypt"
+     },
+     "territory": "Gaza Strip"
+    },
+    {
+     "pieces": [
+      "EGY-1558",
+      "EGY-1557"
+     ],
+     "owner": "Egypt",
+     "source": {
+      "title": "Sinai Peninsula (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sinai_Peninsula"
+     }
     }
    ]
   },
@@ -2157,6 +2303,57 @@
    ]
   },
   {
+   "date": "1957-03-08",
+   "what": "Israel withdraws from the Sinai and the Gaza Strip, handing over to UN forces",
+   "source": {
+    "title": "Suez Crisis (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Suez_Crisis"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "GAZ+00?"
+     ],
+     "owner": "Egypt",
+     "source": {
+      "title": "Occupation of the Gaza Strip by Egypt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Occupation_of_the_Gaza_Strip_by_Egypt"
+     },
+     "territory": "Gaza Strip",
+     "hatch": {
+      "by": "Israel",
+      "since": "1956-11-02",
+      "note": "Occupied by Israel in the Suez Crisis, until March 1957",
+      "source": {
+       "title": "Suez Crisis (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Suez_Crisis"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "EGY-1558",
+      "EGY-1557"
+     ],
+     "owner": "Egypt",
+     "source": {
+      "title": "Sinai Peninsula (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sinai_Peninsula"
+     },
+     "hatch": {
+      "by": "Israel",
+      "since": "1956-11-02",
+      "note": "Occupied by Israel in the Suez Crisis, until March 1957",
+      "source": {
+       "title": "Suez Crisis (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Suez_Crisis"
+      }
+     }
+    }
+   ]
+  },
+  {
    "date": "1957-03-06",
    "what": "The Gold Coast becomes independent as Ghana, with British Togoland",
    "source": {
@@ -2208,6 +2405,39 @@
        "title": "United Nations trust territories (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/United_Nations_trust_territories"
       }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1956-11-02",
+   "what": "Israel occupies the Gaza Strip and the Sinai in the Suez Crisis",
+   "source": {
+    "title": "Suez Crisis (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Suez_Crisis"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "GAZ+00?"
+     ],
+     "owner": "Egypt",
+     "source": {
+      "title": "Occupation of the Gaza Strip by Egypt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Occupation_of_the_Gaza_Strip_by_Egypt"
+     },
+     "territory": "Gaza Strip"
+    },
+    {
+     "pieces": [
+      "EGY-1558",
+      "EGY-1557"
+     ],
+     "owner": "Egypt",
+     "source": {
+      "title": "Sinai Peninsula (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sinai_Peninsula"
      }
     }
    ]
@@ -2457,6 +2687,46 @@
      "source": {
       "title": "Hyderabad State (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Hyderabad_State"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1948-05-15",
+   "what": "The British Mandate ends and Israel declares independence; in the war that follows Jordan holds the West Bank and Egypt the Gaza Strip (drawn along the 1949 armistice lines)",
+   "source": {
+    "title": "1948 Arab–Israeli War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/1948_Arab–Israeli_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ISR-3053",
+      "ISR-3054",
+      "ISR-3055",
+      "ISR-3056",
+      "ISR-3057",
+      "ISR-3058",
+      "WEB+00?",
+      "east-jerusalem",
+      "GAZ+00?"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Mandatory Palestine (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mandatory_Palestine"
+     },
+     "territory": "Mandatory Palestine",
+     "hatch": {
+      "by": "League of Nations",
+      "since": "1923-09-29",
+      "trust": true,
+      "note": "Administered by the United Kingdom under a League of Nations mandate",
+      "source": {
+       "title": "Mandate for Palestine (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Mandate_for_Palestine"
+      }
      }
     }
    ]
@@ -2854,6 +3124,38 @@
       "url": "https://en.wikipedia.org/wiki/Raj_of_Sarawak"
      },
      "territory": "Raj of Sarawak"
+    }
+   ]
+  },
+  {
+   "date": "1946-05-25",
+   "what": "Transjordan becomes independent as the Hashemite Kingdom of Transjordan",
+   "source": {
+    "title": "Treaty of London (1946) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_London_(1946)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "JOR"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Emirate of Transjordan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Emirate_of_Transjordan"
+     },
+     "territory": "Emirate of Transjordan",
+     "hatch": {
+      "by": "League of Nations",
+      "since": "1923-09-29",
+      "trust": true,
+      "note": "Administered by the United Kingdom under the League of Nations mandate for Palestine",
+      "source": {
+       "title": "Mandate for Palestine (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Mandate_for_Palestine"
+      }
+     }
     }
    ]
   },
