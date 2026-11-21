@@ -10529,6 +10529,175 @@
    ],
    "realm": null,
    "why": "Qu’aiti treaty with Britain in 1888"
+  },
+  {
+   "place": "Corfu (Ionian Islands)",
+   "lonLat": [
+    19.92,
+    39.62
+   ],
+   "years": [
+    1860,
+    1863
+   ],
+   "realm": "United States of the Ionian Islands",
+   "why": "Handed over to Greece in June 1864"
+  },
+  {
+   "place": "Corfu (Greece)",
+   "lonLat": [
+    19.92,
+    39.62
+   ],
+   "years": [
+    1864,
+    1940
+   ],
+   "realm": "Greece",
+   "why": "Greek since June 1864"
+  },
+  {
+   "place": "Roatán (Bay Islands)",
+   "lonLat": [
+    -86.53,
+    16.33
+   ],
+   "years": [
+    1860,
+    1860
+   ],
+   "realm": "Colony of the Bay Islands",
+   "why": "Handed over to Honduras in June 1861"
+  },
+  {
+   "place": "Roatán (Honduras)",
+   "lonLat": [
+    -86.53,
+    16.33
+   ],
+   "years": [
+    1861,
+    1869
+   ],
+   "realm": "Honduras",
+   "why": "Honduran since June 1861"
+  },
+  {
+   "place": "Ikeja (Kingdom of Lagos)",
+   "lonLat": [
+    3.35,
+    6.6
+   ],
+   "years": [
+    1860,
+    1860
+   ],
+   "realm": "Kingdom of Lagos",
+   "why": "Ceded to Britain in August 1861"
+  },
+  {
+   "place": "Kalimpong (Bhutan)",
+   "lonLat": [
+    88.47,
+    27.06
+   ],
+   "years": [
+    1860,
+    1864
+   ],
+   "realm": "Bhutan",
+   "why": "Ceded to British India by the Treaty of Sinchula, November 1865"
+  },
+  {
+   "place": "Gangtok (Sikkim)",
+   "lonLat": [
+    88.61,
+    27.33
+   ],
+   "years": [
+    1860,
+    1860
+   ],
+   "realm": "Kingdom of Sikkim",
+   "why": "British protectorate from the Treaty of Tumlong, March 1861"
+  },
+  {
+   "place": "Manama (Bahrain)",
+   "lonLat": [
+    50.58,
+    26.22
+   ],
+   "years": [
+    1860,
+    1860
+   ],
+   "realm": "Bahrain",
+   "why": "British protection from the truce of May 1861"
+  },
+  {
+   "place": "Maseru (Basotho kingdom)",
+   "lonLat": [
+    27.48,
+    -29.32
+   ],
+   "years": [
+    1860,
+    1867
+   ],
+   "realm": "Lesotho",
+   "why": "British from March 1868"
+  },
+  {
+   "place": "Car Nicobar (unheld)",
+   "lonLat": [
+    92.8,
+    9.17
+   ],
+   "years": [
+    1860,
+    1867
+   ],
+   "realm": null,
+   "why": "Danish claim abandoned since 1848, handed to Britain in October 1868"
+  },
+  {
+   "place": "Malé (Maldives)",
+   "lonLat": [
+    73.51,
+    4.175
+   ],
+   "years": [
+    1870,
+    1886
+   ],
+   "realm": "Maldives",
+   "why": "British protection from December 1887"
+  },
+  {
+   "place": "Doha (Qatar)",
+   "lonLat": [
+    51.53,
+    25.29
+   ],
+   "years": [
+    1870,
+    1870
+   ],
+   "realm": "Qatar",
+   "why": "Ottoman troops from December 1871"
+  },
+  {
+   "place": "Labuan",
+   "lonLat": [
+    115.22,
+    5.3
+   ],
+   "years": [
+    1870,
+    1906
+   ],
+   "realm": "Crown Colony of Labuan",
+   "why": "Joined the Straits Settlements in 1907"
   }
  ]
 }

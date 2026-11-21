@@ -26,7 +26,7 @@
     "IRL",
     "heligoland"
    ],
-   "from": 1870,
+   "from": 1860,
    "why": "The United Kingdom with the Crown Dependencies (Guernsey, Jersey, the Isle of Man), its overseas territories and the Chagos Archipelago, whose land has not changed hands since 1965, and Ireland (the Irish Free State until 1937)"
   },
   {
@@ -46,7 +46,7 @@
     "SYC",
     "weihaiwei"
    ],
-   "from": 1870,
+   "from": 1860,
    "why": "Hong Kong, Brunei, Southern Rhodesia and the colonies in the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence or handover; Weihaiwei, leased from China until 1930"
   },
   {
@@ -68,7 +68,7 @@
     "BHS",
     "GRD"
    ],
-   "from": 1870,
+   "from": 1860,
    "why": "The Gulf protected states, South Arabia with all of Yemen (North Yemen until 1990), and the colonies and protectorates in Africa, the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence"
   },
   {
@@ -95,7 +95,7 @@
     "dervish-nugaal",
     "lado-enclave"
    ],
-   "from": 1870,
+   "from": 1860,
    "why": "The colonies, protectorates and trust territories Britain held in 1960 in Africa, Asia, the Mediterranean and the Caribbean, with today's borders, until their independence, with Malaya and Somalia around them"
   },
   {
@@ -109,7 +109,7 @@
     "ERI",
     "ETH"
    ],
-   "from": 1870,
+   "from": 1860,
    "why": "The Gold Coast and British Togoland (Ghana), Anglo-Egyptian Sudan and Eritrea, which Britain ruled or ran in the 1950s, with today's borders, and Ethiopia around Eritrea. The Haud, run by Britain inside Ethiopia until 1955, is not drawn"
   },
   {
@@ -154,9 +154,11 @@
     "CAN-686",
     "hyd-marathwada",
     "hyd-karnataka",
-    "bhadrachalam"
+    "bhadrachalam",
+    "bengal-duars",
+    "nicobar-islands"
    ],
-   "from": 1870,
+   "from": 1860,
    "why": "British India (with the princely states, drawn as part of it), Burma and Ceylon, with today's borders, from British rule to today, and Newfoundland until it joined Canada. French and Portuguese India stay with their own families"
   },
   {
@@ -176,7 +178,7 @@
     "IRQ",
     "EGY"
    ],
-   "from": 1870,
+   "from": 1860,
    "why": "Mandatory Palestine and Transjordan, and what became of them: Israel, the West Bank, the Gaza Strip, Jordan, and the Sinai occupied by Israel; Iraq, a British mandate until 1932, and Kuwait, occupied by Iraq in 1990-91; Egypt, a British protectorate until 1922 and part of the United Arab Republic in 1958-61"
   },
   {
@@ -185,6 +187,15 @@
    ],
    "from": 1930,
    "why": "Libya, an Italian colony until the Second World War, from the end of the Italian reconquest (Kufra, January 1931). The reconquest of the 1920s is left to the rebuild of Italy"
+  },
+  {
+   "pieces": [
+    "GRC-2883",
+    "kythira",
+    "HND-641"
+   ],
+   "from": 1860,
+   "why": "The Ionian Islands, a British protectorate until 1864, and the Bay Islands, a British colony until 1861, with Greece and Honduras since then"
   }
  ],
  "changes": [
@@ -3149,7 +3160,9 @@
       "BGD",
       "hyd-marathwada",
       "hyd-karnataka",
-      "bhadrachalam"
+      "bhadrachalam",
+      "bengal-duars",
+      "nicobar-islands"
      ],
      "owner": "United Kingdom",
      "source": {
@@ -3411,7 +3424,8 @@
    "before": [
     {
      "pieces": [
-      "IND-2474"
+      "IND-2474",
+      "nicobar-islands"
      ],
      "owner": "United Kingdom",
      "source": {
@@ -3775,6 +3789,37 @@
    ]
   },
   {
+   "date": "1944-10-14",
+   "what": "German troops leave Corfu, the last of the Ionian Islands they held",
+   "source": {
+    "title": "Axis occupation of Greece (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Axis_occupation_of_Greece"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GRC-2883",
+      "kythira"
+     ],
+     "owner": "Greece",
+     "source": {
+      "title": "Axis occupation of Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Axis_occupation_of_Greece"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1943-09-25",
+      "note": "Taken over by Germany after Italy’s armistice of September 1943 (the Acqui Division was massacred on Kefalonia), until October 1944",
+      "source": {
+       "title": "Axis occupation of Greece (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Axis_occupation_of_Greece"
+      }
+     }
+    }
+   ]
+  },
+  {
    "date": "1943-11-23",
    "what": "American forces take Tarawa and Makin; the Gilbert Islands are free of Japan (except Banaba)",
    "source": {
@@ -3867,6 +3912,37 @@
       "source": {
        "title": "Solomon Islands campaign (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Solomon_Islands_campaign"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-09-25",
+   "what": "German troops take the Ionian Islands from their former Italian allies",
+   "source": {
+    "title": "Axis occupation of Greece (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Axis_occupation_of_Greece"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GRC-2883",
+      "kythira"
+     ],
+     "owner": "Greece",
+     "source": {
+      "title": "Axis occupation of Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Axis_occupation_of_Greece"
+     },
+     "hatch": {
+      "by": "Italy",
+      "since": "1941-04-30",
+      "note": "Occupied by Italy from the end of April 1941, until the Italian armistice of September 1943",
+      "source": {
+       "title": "Axis occupation of Greece (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Axis_occupation_of_Greece"
       }
      }
     }
@@ -4055,7 +4131,8 @@
    "before": [
     {
      "pieces": [
-      "IND-2474"
+      "IND-2474",
+      "nicobar-islands"
      ],
      "owner": "United Kingdom",
      "source": {
@@ -4361,6 +4438,28 @@
        "title": "Italian East Africa (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Italian_East_Africa"
       }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-04-30",
+   "what": "Italian troops occupy the Ionian Islands",
+   "source": {
+    "title": "Axis occupation of Greece (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Axis_occupation_of_Greece"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GRC-2883",
+      "kythira"
+     ],
+     "owner": "Greece",
+     "source": {
+      "title": "Axis occupation of Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Axis_occupation_of_Greece"
      }
     }
    ]
@@ -6537,6 +6636,28 @@
    ]
   },
   {
+   "date": "1907-01-01",
+   "what": "Labuan joins the Straits Settlements",
+   "source": {
+    "title": "Crown Colony of Labuan (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Crown_Colony_of_Labuan"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MYS-4833"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Crown Colony of Labuan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Crown_Colony_of_Labuan"
+     },
+     "territory": "Crown Colony of Labuan"
+    }
+   ]
+  },
+  {
    "date": "1906-02-28",
    "what": "Lagos Colony merges with the Southern Nigeria Protectorate",
    "source": {
@@ -8220,6 +8341,27 @@
    ]
   },
   {
+   "date": "1887-12-16",
+   "what": "The Sultan of the Maldives accepts British protection",
+   "source": {
+    "title": "Maldives (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Maldives"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MDV"
+     ],
+     "owner": "Maldives",
+     "source": {
+      "title": "Maldives (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Maldives"
+     }
+    }
+   ]
+  },
+  {
    "date": "1887-02-01",
    "what": "British columns occupy the Shan states",
    "source": {
@@ -8867,6 +9009,28 @@
    ]
   },
   {
+   "date": "1874-07-24",
+   "what": "Lagos is joined to the new Gold Coast Colony",
+   "source": {
+    "title": "Lagos Colony (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Lagos_Colony"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "NGA-2850"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Lagos Colony (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lagos_Colony"
+     },
+     "territory": "Lagos Colony"
+    }
+   ]
+  },
+  {
    "date": "1874-01-20",
    "what": "By the Treaty of Pangkor, Perak accepts a British Resident",
    "source": {
@@ -8907,6 +9071,27 @@
      "source": {
       "title": "Bahr el Ghazal (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Bahr_el_Ghazal"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1871-12-01",
+   "what": "Jassim Al Thani flies the Ottoman flag and lets Ottoman troops into Al Bidda: Qatar becomes an Ottoman district",
+   "source": {
+    "title": "History of Qatar (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/History_of_Qatar"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "QAT"
+     ],
+     "owner": "Qatar",
+     "source": {
+      "title": "History of Qatar (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/History_of_Qatar"
      }
     }
    ]
@@ -8955,6 +9140,200 @@
      "source": {
       "title": "Equatoria (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Equatoria"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1868-10-16",
+   "what": "Denmark hands its rights over the Nicobar Islands, abandoned since 1848, to Britain",
+   "source": {
+    "title": "Nicobar Islands (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Nicobar_Islands"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "nicobar-islands"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Nicobar Islands (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Nicobar_Islands"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1868-03-12",
+   "what": "Moshoeshoe’s Basotho kingdom is taken under British rule as Basutoland",
+   "source": {
+    "title": "Basutoland (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Basutoland"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "LSO"
+     ],
+     "owner": "Lesotho",
+     "source": {
+      "title": "Free State–Basotho Wars (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Free_State–Basotho_Wars"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1865-11-11",
+   "what": "By the Treaty of Sinchula, Bhutan cedes the Bengal Duars and the hills around Kalimpong to British India",
+   "source": {
+    "title": "Duar War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Duar_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "bengal-duars"
+     ],
+     "owner": "Bhutan",
+     "source": {
+      "title": "Duar War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Duar_War"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1864-06-02",
+   "what": "Britain hands the Ionian Islands over to Greece",
+   "source": {
+    "title": "United States of the Ionian Islands (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/United_States_of_the_Ionian_Islands"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "GRC-2883",
+      "kythira"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "United States of the Ionian Islands (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/United_States_of_the_Ionian_Islands"
+     },
+     "territory": "United States of the Ionian Islands"
+    }
+   ]
+  },
+  {
+   "date": "1861-08-06",
+   "what": "King Dosunmu cedes Lagos to Britain",
+   "source": {
+    "title": "Lagos Colony (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Lagos_Colony"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "NGA-2850"
+     ],
+     "owner": "Kingdom of Lagos",
+     "source": {
+      "title": "Lagos Colony (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lagos_Colony"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1861-06-01",
+   "what": "Britain hands the Bay Islands over to Honduras under the Wyke–Cruz Treaty",
+   "source": {
+    "title": "Bay Islands Department (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Bay_Islands_Department"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "HND-641"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Bay Islands Department (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bay_Islands_Department"
+     },
+     "territory": "Colony of the Bay Islands"
+    }
+   ]
+  },
+  {
+   "date": "1861-05-31",
+   "what": "Bahrain signs a perpetual truce with Britain and comes under its protection",
+   "source": {
+    "title": "Bahrain (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Bahrain"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "BHR"
+     ],
+     "owner": "Bahrain",
+     "source": {
+      "title": "Bahrain (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bahrain"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1861-03-28",
+   "what": "By the Treaty of Tumlong, Sikkim becomes a British protectorate",
+   "source": {
+    "title": "Kingdom of Sikkim (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kingdom_of_Sikkim"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "IND-3259"
+     ],
+     "owner": "Kingdom of Sikkim",
+     "source": {
+      "title": "Kingdom of Sikkim (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Sikkim"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1860-10-24",
+   "what": "By the Convention of Peking, China cedes Kowloon, south of today’s Boundary Street, to Britain",
+   "source": {
+    "title": "Convention of Peking (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Convention_of_Peking"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "HKG-5157",
+      "HKG-5158",
+      "HKG-5159"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Convention of Peking (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Convention_of_Peking"
      }
     }
    ]

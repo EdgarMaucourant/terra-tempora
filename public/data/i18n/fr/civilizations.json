@@ -986,6 +986,9 @@
  "portuguese-cape-verde": {
   "name": "Cap-Vert portugais"
  },
+ "kingdom-of-lagos": {
+  "name": "Royaume de Lagos"
+ },
  "french-polynesia": {
   "name": "Polynésie française"
  },
@@ -1012,6 +1015,9 @@
  },
  "ras-al-khaimah": {
   "name": "Ras el Khaïmah"
+ },
+ "united-states-of-the-ionian-islands": {
+  "name": "États-Unis des îles Ioniennes"
  },
  "zanzibar": {
   "name": "Zanzibar"
@@ -1175,6 +1181,9 @@
  "saint-kitts-and-nevis": {
   "name": "Saint-Christophe-et-Niévès"
  },
+ "colony-of-the-bay-islands": {
+  "name": "Colonie des îles de la Baie"
+ },
  "saint-pierre-and-miquelon": {
   "name": "Saint-Pierre-et-Miquelon"
  },
@@ -1225,6 +1234,9 @@
  },
  "christmas-island": {
   "name": "Île Christmas"
+ },
+ "crown-colony-of-labuan": {
+  "name": "Colonie de Labuan"
  },
  "anguilla": {
   "name": "Anguilla"
