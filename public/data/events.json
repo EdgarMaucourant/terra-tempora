@@ -8704,6 +8704,247 @@
    "summary": "In 1894 Britain had leased the west bank of the upper Nile to King Leopold II for his lifetime, linking his Congo Free State to the river. Six months after Leopold’s death, the Lado Enclave is handed to the Anglo-Egyptian Sudan on 16 June 1910 and joined to Mongalla province. Its southern part, West Nile, passes to Uganda in 1914.",
    "wikipedia": "Lado_Enclave",
    "search": "Lado Enclave 16 June 1910 transferred to Sudan Leopold II lease 1894 death 1909 Congo Free State Belgian Congo Rejaf Mongalla province West Nile Uganda 1914"
+  },
+  {
+   "id": "heligoland-zanzibar-treaty-1890",
+   "kind": "empire",
+   "year": 1890,
+   "title": "The Heligoland–Zanzibar Treaty, 1 July 1890",
+   "place": "Zanzibar",
+   "lonLat": [
+    39.25,
+    -6.0
+   ],
+   "civs": [
+    "zanzibar",
+    "tanzania",
+    "germany",
+    "united-kingdom"
+   ],
+   "summary": "Britain and Germany settle their rivalry in East Africa. Germany recognises a British protectorate over Zanzibar and Pemba, proclaimed on 4 November 1890, and gives up its claims to Uganda and Witu; Britain hands the North Sea island of Heligoland to Germany and grants it the Caprivi Strip. The treaty fixes much of the border between today’s Kenya, Uganda and Tanzania.",
+   "wikipedia": "Heligoland–Zanzibar_Treaty",
+   "search": "Heligoland-Zanzibar Treaty 1 July 1890 Britain Germany Heligoland ceded Zanzibar Pemba British protectorate 4 November 1890 Caprivi Strip Uganda Wituland East Africa spheres"
+  },
+  {
+   "id": "durand-line-1893",
+   "kind": "empire",
+   "year": 1893,
+   "title": "The Durand Line between British India and Afghanistan, 12 November 1893",
+   "place": "Khyber Pass",
+   "lonLat": [
+    71.1,
+    34.08
+   ],
+   "civs": [
+    "british-raj",
+    "pakistan",
+    "afghanistan",
+    "united-kingdom"
+   ],
+   "summary": "Sir Mortimer Durand and Amir Abdur Rahman Khan agree on 12 November 1893 to a line marking the limits of British India and Afghanistan, surveyed over the following years. It cuts through the Pashtun lands, leaving the tribal areas on the British side. The Durand Line is today the border between Pakistan and Afghanistan, which has never formally accepted it.",
+   "wikipedia": "Durand_Line",
+   "search": "Durand Line 12 November 1893 Mortimer Durand Abdur Rahman Khan agreement British India Afghanistan border Pashtun tribal areas Pakistan border dispute"
+  },
+  {
+   "id": "first-matabele-war-1893",
+   "kind": "war",
+   "year": 1893,
+   "title": "The First Matabele War, October – November 1893",
+   "place": "Bulawayo",
+   "lonLat": [
+    28.58,
+    -20.15
+   ],
+   "civs": [
+    "ndebele-kingdom",
+    "southern-rhodesia",
+    "zimbabwe",
+    "united-kingdom"
+   ],
+   "summary": "The British South Africa Company, which had settled Mashonaland in 1890, invades the Ndebele kingdom of King Lobengula in October 1893. Company columns armed with Maxim guns crush the Ndebele regiments at the Shangani and Bembezi, and enter Bulawayo on 4 November. Lobengula flees and dies early in 1894, and Matabeleland is joined to the company’s lands, later Southern Rhodesia.",
+   "wikipedia": "First_Matabele_War",
+   "search": "First Matabele War 1893 British South Africa Company Lobengula Ndebele kingdom Maxim guns Shangani Bulawayo 4 November 1893 Jameson Matabeleland"
+  },
+  {
+   "id": "uganda-protectorate-1894",
+   "kind": "empire",
+   "year": 1894,
+   "title": "Uganda becomes a British protectorate, 1894",
+   "place": "Kampala",
+   "lonLat": [
+    32.58,
+    0.32
+   ],
+   "civs": [
+    "uganda-protectorate",
+    "imperial-british-east-africa-company",
+    "uganda",
+    "united-kingdom"
+   ],
+   "summary": "The Imperial British East Africa Company, which had run Buganda since Frederick Lugard’s treaty with Kabaka Mwanga in 1890, cannot pay its way and withdraws in 1893. After a campaign by missionaries in Britain, the government declares a protectorate over Buganda in June 1894. It is extended in 1896 to Bunyoro, Toro, Ankole and Busoga, laying the ground of today’s Uganda.",
+   "wikipedia": "Uganda_Protectorate",
+   "search": "Uganda Protectorate 1894 Buganda Imperial British East Africa Company withdrawal Lugard Portal Mwanga Kabaka 1896 Bunyoro Toro Ankole Busoga Uganda Agreement 1900"
+  },
+  {
+   "id": "kumasi-occupied-1896",
+   "kind": "war",
+   "year": 1896,
+   "title": "British troops occupy Kumasi and exile Prempeh I, January 1896",
+   "place": "Kumasi",
+   "lonLat": [
+    -1.55,
+    6.75
+   ],
+   "civs": [
+    "ashanti-empire",
+    "gold-coast",
+    "ghana",
+    "united-kingdom"
+   ],
+   "summary": "Claiming unpaid war debts and fearing French advances, a British expedition marches on Kumasi, capital of the Ashanti Empire, at the end of 1895. To spare his people, the Asantehene Prempeh I does not resist; the British enter the city on 17 January 1896, arrest him and later exile him to the Seychelles. Ashanti comes under British control, and is annexed after the rising of 1900.",
+   "wikipedia": "Anglo-Ashanti_wars",
+   "search": "Fourth Anglo-Ashanti War 1895-1896 Kumasi occupied 17 January 1896 Prempeh I arrested 20 January exile Seychelles Robert Baden-Powell Ashanti protectorate Gold Coast"
+  },
+  {
+   "id": "anglo-zanzibar-war-1896",
+   "kind": "war",
+   "year": 1896,
+   "title": "The Anglo-Zanzibar War, 27 August 1896",
+   "place": "Zanzibar",
+   "lonLat": [
+    39.19,
+    -6.17
+   ],
+   "civs": [
+    "zanzibar",
+    "tanzania",
+    "united-kingdom"
+   ],
+   "summary": "When Sultan Hamad bin Thuwaini dies, his cousin Khalid bin Barghash seizes the palace without British approval. Royal Navy ships open fire on 27 August 1896 and the palace falls in about 40 minutes, the shortest war on record. Khalid flees to the German consulate and Britain installs Hamoud bin Mohammed, tightening its hold on the protectorate.",
+   "wikipedia": "Anglo-Zanzibar_War",
+   "search": "Anglo-Zanzibar War 27 August 1896 shortest war in history 38 minutes Khalid bin Barghash Hamoud bin Mohammed palace bombarded Royal Navy Zanzibar protectorate"
+  },
+  {
+   "id": "second-matabele-war-1896",
+   "kind": "war",
+   "year": 1896,
+   "to": 1897,
+   "title": "The Second Matabele War and the First Chimurenga, 1896 – 1897",
+   "place": "Matobo Hills",
+   "lonLat": [
+    28.5,
+    -20.55
+   ],
+   "civs": [
+    "southern-rhodesia",
+    "zimbabwe",
+    "united-kingdom"
+   ],
+   "summary": "In March 1896, after the Jameson Raid had stripped the territory of police, the Ndebele rise against company rule, and in June the Shona of Mashonaland join them – the First Chimurenga. Hundreds of settlers are killed. Cecil Rhodes ends the Ndebele war through talks in the Matobo Hills in 1896, while the Shona resistance is crushed in 1897 and its spirit mediums Nehanda and Kaguvi are hanged.",
+   "wikipedia": "Second_Matabele_War",
+   "search": "Second Matabele War 1896 1897 First Chimurenga Ndebele Shona rising British South Africa Company Matobo Hills Rhodes indaba Mlimo Nehanda Kaguvi executed"
+  },
+  {
+   "id": "benin-expedition-1897",
+   "kind": "war",
+   "year": 1897,
+   "title": "The Benin Expedition, February 1897",
+   "place": "Benin City",
+   "lonLat": [
+    5.62,
+    6.34
+   ],
+   "civs": [
+    "kingdom-of-benin",
+    "niger-coast-protectorate",
+    "nigeria",
+    "united-kingdom"
+   ],
+   "summary": "After a British party led by acting consul James Phillips is killed on its way to Benin City in January 1897, a punitive force of 1,200 men takes the city on 18 February. Much of it burns, and thousands of bronzes and ivories are carried off to Britain – the Benin Bronzes. Oba Ovonramwen is exiled to Calabar, and the kingdom becomes part of the Niger Coast Protectorate.",
+   "wikipedia": "Benin_Expedition_of_1897",
+   "search": "Benin Expedition 1897 punitive expedition Benin City 18 February 1897 Oba Ovonramwen exiled Calabar Benin Bronzes looted Phillips massacre Niger Coast Protectorate"
+  },
+  {
+   "id": "battle-of-omdurman-1898",
+   "kind": "war",
+   "year": 1898,
+   "title": "The battle of Omdurman, 2 September 1898",
+   "place": "Omdurman",
+   "lonLat": [
+    32.48,
+    15.64
+   ],
+   "civs": [
+    "mahdist-state",
+    "anglo-egyptian-sudan",
+    "sudan",
+    "khedivate-of-egypt",
+    "united-kingdom"
+   ],
+   "summary": "After two years advancing up the Nile with a railway, Herbert Kitchener’s Anglo-Egyptian army meets the Khalifa’s army of some 50,000 outside Omdurman on 2 September 1898. Machine guns and rifles kill about 12,000 Mahdists for fewer than 50 of Kitchener’s men. Khartoum is retaken, the Mahdist State collapses, and the Sudan becomes an Anglo-Egyptian condominium in January 1899.",
+   "wikipedia": "Battle_of_Omdurman",
+   "search": "Battle of Omdurman 2 September 1898 Kitchener Khalifa Abdallahi Mahdist army Maxim guns Lee-Metford 21st Lancers Churchill Khartoum reconquest of Sudan Mahdi tomb"
+  },
+  {
+   "id": "weihaiwei-new-territories-1898",
+   "kind": "empire",
+   "year": 1898,
+   "title": "Britain leases Weihaiwei and the New Territories from China, 1898",
+   "place": "Tai Po",
+   "lonLat": [
+    114.16,
+    22.44
+   ],
+   "civs": [
+    "british-hong-kong",
+    "weihaiwei",
+    "hong-kong",
+    "china",
+    "united-kingdom"
+   ],
+   "summary": "In the scramble for concessions after China’s defeat by Japan, Britain leases two pieces of China in 1898. The Convention of Peking of 9 June gives it the New Territories north of Kowloon for 99 years from 1 July, taken over after a short fight with villagers in April 1899; Weihaiwei in Shandong follows on 1 July, for as long as Russia holds Port Arthur. The end of the New Territories lease in 1997 led to the return of all Hong Kong to China.",
+   "wikipedia": "Convention_for_the_Extension_of_Hong_Kong_Territory",
+   "search": "Convention for the Extension of Hong Kong Territory 9 June 1898 New Territories 99-year lease 1 July 1898 Weihaiwei lease Six-Day War 1899 Tai Po scramble for concessions China 1997 handover"
+  },
+  {
+   "id": "sudan-condominium-1899",
+   "kind": "empire",
+   "year": 1899,
+   "title": "The Anglo-Egyptian condominium over the Sudan, 19 January 1899",
+   "place": "Khartoum",
+   "lonLat": [
+    32.62,
+    15.5
+   ],
+   "civs": [
+    "anglo-egyptian-sudan",
+    "sudan",
+    "south-sudan",
+    "khedivate-of-egypt",
+    "united-kingdom"
+   ],
+   "summary": "After the reconquest, Britain and Egypt sign an agreement on 19 January 1899 to rule the Sudan jointly. Both flags fly, but a British governor-general holds all power, and Kitchener is the first. The condominium sets the 22nd parallel as the Sudan’s northern border and lasts until independence on 1 January 1956.",
+   "wikipedia": "Anglo-Egyptian_Sudan",
+   "search": "Anglo-Egyptian Condominium Agreement 19 January 1899 Sudan joint rule Britain Egypt Governor-General Kitchener Wadi Halfa 22nd parallel independence 1956"
+  },
+  {
+   "id": "anglo-kuwaiti-agreement-1899",
+   "kind": "empire",
+   "year": 1899,
+   "title": "The Anglo-Kuwaiti Agreement, 23 January 1899",
+   "place": "Kuwait City",
+   "lonLat": [
+    47.85,
+    29.25
+   ],
+   "civs": [
+    "kuwait",
+    "ottoman-empire",
+    "united-kingdom"
+   ],
+   "summary": "Fearing that the Ottomans would make good their claims – and that Germany would end its Baghdad railway at Kuwait – Sheikh Mubarak al-Sabah signs a secret bond with Britain on 23 January 1899. He promises not to cede land or receive foreign agents without British consent, in return for British protection. Kuwait stays under that protection until its independence in 1961.",
+   "wikipedia": "Anglo-Kuwaiti_Agreement_of_1899",
+   "search": "Anglo-Kuwaiti Agreement 23 January 1899 Mubarak al-Sabah Britain protection secret bond Ottoman claims Baghdad railway Kuwait protectorate 1961 independence"
   }
  ]
 }

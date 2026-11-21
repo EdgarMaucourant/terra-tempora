@@ -71,6 +71,9 @@
  "greenland": {
   "name": "Groenland"
  },
+ "khedivate-of-egypt": {
+  "name": "Khédivat d’Égypte"
+ },
  "mexico": {
   "name": "Mexique"
  },
@@ -85,6 +88,9 @@
  },
  "french-sudan": {
   "name": "Soudan français"
+ },
+ "mahdist-state": {
+  "name": "État mahdiste"
  },
  "libya": {
   "name": "Libye"
@@ -161,9 +167,6 @@
  "sultanate-of-egypt": {
   "name": "Sultanat d’Égypte"
  },
- "khedivate-of-egypt": {
-  "name": "Khédivat d’Égypte"
- },
  "tanzania": {
   "name": "Tanzanie"
  },
@@ -202,6 +205,9 @@
  },
  "turkey": {
   "name": "Turquie"
+ },
+ "imperial-british-east-africa-company": {
+  "name": "Compagnie impériale britannique d’Afrique de l’Est"
  },
  "cyrenaica": {
   "name": "Cyrénaïque"
@@ -296,6 +302,9 @@
  "french-ivory-coast": {
   "name": "Colonie de Côte d'Ivoire"
  },
+ "sokoto-caliphate": {
+  "name": "Califat de Sokoto"
+ },
  "yemen": {
   "name": "Yémen"
  },
@@ -313,9 +322,6 @@
  },
  "uganda-protectorate": {
   "name": "Protectorat de l'Ouganda"
- },
- "sokoto-caliphate": {
-  "name": "Califat de Sokoto"
  },
  "french-cameroon": {
   "name": "Cameroun français"
@@ -349,6 +355,9 @@
  },
  "republic-of-the-congo": {
   "name": "République du Congo"
+ },
+ "barotseland": {
+  "name": "Barotseland"
  },
  "finland": {
   "name": "Finlande"
@@ -473,14 +482,23 @@
  "french-cambodia": {
   "name": "Protectorat français du Cambodge"
  },
+ "ndebele-kingdom": {
+  "name": "Royaume ndébélé"
+ },
  "uruguay": {
   "name": "Uruguay"
+ },
+ "italian-eritrea": {
+  "name": "Érythrée italienne"
  },
  "south-vietnam": {
   "name": "Sud Viêt Nam"
  },
  "british-somaliland": {
   "name": "Somaliland britannique"
+ },
+ "royal-niger-company": {
+  "name": "Royal Niger Company"
  },
  "north-vietnam": {
   "name": "Nord Viêt Nam"
@@ -533,9 +551,6 @@
  "eritrea": {
   "name": "Érythrée"
  },
- "italian-eritrea": {
-  "name": "Érythrée italienne"
- },
  "north-korea": {
   "name": "Corée du Nord"
  },
@@ -571,6 +586,9 @@
  },
  "guatemala": {
   "name": "Guatemala"
+ },
+ "niger-coast-protectorate": {
+  "name": "Protectorat de la côte du Niger"
  },
  "iceland": {
   "name": "Islande"
@@ -620,6 +638,9 @@
  "serbia": {
   "name": "Serbie"
  },
+ "lagos-colony": {
+  "name": "Colonie de Lagos"
+ },
  "mandatory-palestine": {
   "name": "Palestine mandataire"
  },
@@ -658,6 +679,9 @@
  },
  "british-ceylon": {
   "name": "Ceylan britannique"
+ },
+ "ashanti-empire": {
+  "name": "Empire ashanti"
  },
  "lithuania": {
   "name": "Lituanie"
@@ -731,6 +755,9 @@
  "taiwan-republic-of-china": {
   "name": "Taïwan"
  },
+ "pahang": {
+  "name": "Pahang"
+ },
  "cape-juby": {
   "name": "Cap Juby"
  },
@@ -785,6 +812,9 @@
  "french-somaliland": {
   "name": "Côte française des Somalis"
  },
+ "perak": {
+  "name": "Perak"
+ },
  "israel": {
   "name": "Israël"
  },
@@ -796,6 +826,9 @@
  },
  "slovenia": {
   "name": "Slovénie"
+ },
+ "kingdom-of-benin": {
+  "name": "Royaume du Bénin"
  },
  "spanish-morocco": {
   "name": "Protectorat espagnol au Maroc"
@@ -881,11 +914,20 @@
  "puerto-rico": {
   "name": "Porto Rico"
  },
+ "selangor": {
+  "name": "Selangor"
+ },
  "french-southern-and-antarctic-lands": {
   "name": "Terres australes et antarctiques françaises"
  },
+ "german-new-guinea": {
+  "name": "Nouvelle-Guinée allemande"
+ },
  "kingdom-of-sikkim": {
   "name": "Royaume du Sikkim"
+ },
+ "negeri-sembilan": {
+  "name": "Negeri Sembilan"
  },
  "jabal-druze-state": {
   "name": "État du Djebel druze"

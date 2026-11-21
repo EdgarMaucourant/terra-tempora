@@ -10043,6 +10043,297 @@
    ],
    "realm": "Dervish State",
    "why": "Dervish-held until Jidballi, 1904"
+  },
+  {
+   "place": "Omdurman (Mahdist)",
+   "lonLat": [
+    32.48,
+    15.64
+   ],
+   "years": [
+    1890,
+    1897
+   ],
+   "realm": "Mahdist State",
+   "why": "Capital of the Mahdist State until September 1898"
+  },
+  {
+   "place": "El Obeid (Mahdist)",
+   "lonLat": [
+    30.22,
+    13.18
+   ],
+   "years": [
+    1890,
+    1898
+   ],
+   "realm": "Mahdist State",
+   "why": "Kordofan held by the Khalifa until November 1899"
+  },
+  {
+   "place": "Dongola (Mahdist)",
+   "lonLat": [
+    30.48,
+    19.17
+   ],
+   "years": [
+    1890,
+    1895
+   ],
+   "realm": "Mahdist State",
+   "why": "Mahdist until the Dongola Expedition, 1896"
+  },
+  {
+   "place": "Dongola (Egypt)",
+   "lonLat": [
+    30.48,
+    19.17
+   ],
+   "years": [
+    1896,
+    1898
+   ],
+   "realm": "Khedivate of Egypt",
+   "why": "Retaken for Egypt in 1896, condominium from 1899",
+   "heldBy": [
+    {
+     "years": [
+      1896,
+      1898
+     ],
+     "by": "United Kingdom"
+    }
+   ]
+  },
+  {
+   "place": "Kassala (Mahdist)",
+   "lonLat": [
+    36.4,
+    15.45
+   ],
+   "years": [
+    1890,
+    1893
+   ],
+   "realm": "Mahdist State",
+   "why": "Mahdist until the Italians took it in 1894"
+  },
+  {
+   "place": "Kassala (Italy)",
+   "lonLat": [
+    36.4,
+    15.45
+   ],
+   "years": [
+    1894,
+    1896
+   ],
+   "realm": "Italian Eritrea",
+   "why": "Italian from 1894 to Christmas 1897"
+  },
+  {
+   "place": "Bulawayo (Ndebele)",
+   "lonLat": [
+    28.58,
+    -20.15
+   ],
+   "years": [
+    1890,
+    1892
+   ],
+   "realm": "Ndebele Kingdom",
+   "why": "Lobengula’s capital until November 1893"
+  },
+  {
+   "place": "Kampala (IBEAC)",
+   "lonLat": [
+    32.58,
+    0.35
+   ],
+   "years": [
+    1891,
+    1892
+   ],
+   "realm": "Imperial British East Africa Company",
+   "why": "Run by the company until April 1893"
+  },
+  {
+   "place": "Nairobi (IBEAC)",
+   "lonLat": [
+    36.82,
+    -1.29
+   ],
+   "years": [
+    1891,
+    1894
+   ],
+   "realm": "Imperial British East Africa Company",
+   "why": "Company land until the protectorate of July 1895"
+  },
+  {
+   "place": "Weihai (China)",
+   "lonLat": [
+    122.1,
+    37.5
+   ],
+   "years": [
+    1890,
+    1894
+   ],
+   "realm": "China",
+   "why": "Chinese naval base until 1895"
+  },
+  {
+   "place": "Weihai (Japanese-held)",
+   "lonLat": [
+    122.1,
+    37.5
+   ],
+   "years": [
+    1895,
+    1897
+   ],
+   "realm": "China",
+   "why": "Held by Japan 1895-98",
+   "heldBy": [
+    {
+     "years": [
+      1895,
+      1897
+     ],
+     "by": "Japan"
+    }
+   ]
+  },
+  {
+   "place": "Yuen Long (China)",
+   "lonLat": [
+    114.03,
+    22.44
+   ],
+   "years": [
+    1890,
+    1898
+   ],
+   "realm": "China",
+   "why": "New Territories, British from April 1899"
+  },
+  {
+   "place": "Kuwait City (own)",
+   "lonLat": [
+    47.98,
+    29.37
+   ],
+   "years": [
+    1890,
+    1898
+   ],
+   "realm": "Kuwait",
+   "why": "British protection from January 1899"
+  },
+  {
+   "place": "Kumasi (Ashanti)",
+   "lonLat": [
+    -1.62,
+    6.69
+   ],
+   "years": [
+    1890,
+    1895
+   ],
+   "realm": "Ashanti Empire",
+   "why": "Asante capital until British occupation, January 1896"
+  },
+  {
+   "place": "Benin City (kingdom)",
+   "lonLat": [
+    5.62,
+    6.34
+   ],
+   "years": [
+    1890,
+    1896
+   ],
+   "realm": "Kingdom of Benin",
+   "why": "Taken by the British in February 1897"
+  },
+  {
+   "place": "Calabar (NCP)",
+   "lonLat": [
+    8.33,
+    4.97
+   ],
+   "years": [
+    1891,
+    1899
+   ],
+   "realm": "Niger Coast Protectorate",
+   "why": "Seat of the Niger Coast Protectorate until 1900"
+  },
+  {
+   "place": "Lokoja (RNC)",
+   "lonLat": [
+    6.74,
+    7.8
+   ],
+   "years": [
+    1890,
+    1899
+   ],
+   "realm": "Royal Niger Company",
+   "why": "Company land until 1900"
+  },
+  {
+   "place": "Abeokuta (Lagos)",
+   "lonLat": [
+    3.35,
+    7.16
+   ],
+   "years": [
+    1893,
+    1905
+   ],
+   "realm": "Lagos Colony",
+   "why": "Part of the Lagos protectorate until 1906"
+  },
+  {
+   "place": "Ipoh (Perak)",
+   "lonLat": [
+    101.08,
+    4.6
+   ],
+   "years": [
+    1890,
+    1894
+   ],
+   "realm": "Perak",
+   "why": "Federated Malay States from 1895"
+  },
+  {
+   "place": "Choiseul (German)",
+   "lonLat": [
+    156.9,
+    -7.05
+   ],
+   "years": [
+    1890,
+    1898
+   ],
+   "realm": "German New Guinea",
+   "why": "German until the 1899 Tripartite Convention"
+  },
+  {
+   "place": "Mongu (Lozi)",
+   "lonLat": [
+    23.13,
+    -15.25
+   ],
+   "years": [
+    1890,
+    1896
+   ],
+   "realm": "Barotseland",
+   "why": "Lozi kingdom until company rule in 1897"
   }
  ]
 }
