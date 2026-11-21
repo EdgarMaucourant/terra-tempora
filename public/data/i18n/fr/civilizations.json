@@ -395,6 +395,9 @@
  "french-laos": {
   "name": "Protectorat français du Laos"
  },
+ "hyderabad-state": {
+  "name": "État d'Hyderabad"
+ },
  "guyana": {
   "name": "Guyana"
  },
@@ -511,9 +514,6 @@
  },
  "french-dahomey": {
   "name": "Colonie du Dahomey"
- },
- "hyderabad-state": {
-  "name": "État d'Hyderabad"
  },
  "tonkin": {
   "name": "Protectorat du Tonkin"

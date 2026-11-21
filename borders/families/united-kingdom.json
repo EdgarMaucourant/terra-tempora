@@ -146,7 +146,9 @@
     "BGD",
     "MMR",
     "LKA",
-    "CAN-686"
+    "CAN-686",
+    "hyd-marathwada",
+    "hyd-karnataka"
    ],
    "from": 1945,
    "why": "British India (with the princely states, drawn as part of it), Burma and Ceylon, with today's borders, from British rule to today, and Newfoundland until it joined Canada. French and Portuguese India stay with their own families"
@@ -2446,7 +2448,9 @@
    "before": [
     {
      "pieces": [
-      "IND-20011"
+      "IND-20011",
+      "hyd-marathwada",
+      "hyd-karnataka"
      ],
      "owner": "Hyderabad State",
      "source": {
@@ -2689,7 +2693,9 @@
       "IND-3300",
       "IND-3301",
       "PAK",
-      "BGD"
+      "BGD",
+      "hyd-marathwada",
+      "hyd-karnataka"
      ],
      "owner": "United Kingdom",
      "source": {
