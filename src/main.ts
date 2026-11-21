@@ -1915,7 +1915,8 @@ function openEvent(e: HistoryEvent) {
       return item;
     }),
   );
-  renderDocumentaries($("event-docs"), documentaries?.about({ events: [e.id], civs: e.civs }) ?? []);
+  const eventDocs = { events: [e.id], civs: e.civs };
+  renderDocumentaries($("event-docs"), documentaries?.about(eventDocs) ?? [], eventDocs);
   const gallery = $("event-gallery");
   renderGallery(gallery, []);
   eventPanel.hidden = false;

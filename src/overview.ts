@@ -93,7 +93,7 @@ export class Overview {
     };
 
     const showDocs = (query: Parameters<Documentaries["about"]>[0]) => {
-      renderDocumentaries(docs, this.documentaries?.about(query) ?? []);
+      renderDocumentaries(docs, this.documentaries?.about(query) ?? [], query);
     };
 
     switch (subject.kind) {

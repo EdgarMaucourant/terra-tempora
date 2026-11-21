@@ -353,6 +353,8 @@
     "allAges": "Tous publics",
     "ratingTitle": "Signalétique en France : {rating}",
     "seeMore": "En voir plus sur {platform} :",
+    "episode": "Épisode sur {who}, {years}",
+    "episodeOn": "Épisode sur {who}",
     "title": "Documentaires"
   },
   "media": {
