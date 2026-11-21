@@ -2879,9 +2879,9 @@
      "territory": "Mandatory Palestine",
      "hatch": {
       "by": "League of Nations",
-      "since": "1923-09-29",
+      "since": "1920-07-01",
       "trust": true,
-      "note": "Administered by the United Kingdom under a League of Nations mandate",
+      "note": "Administered by the United Kingdom under a League of Nations mandate (from 1920, in force from 1923)",
       "source": {
        "title": "Mandate for Palestine (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Mandate_for_Palestine"
@@ -3326,9 +3326,9 @@
      "territory": "Emirate of Transjordan",
      "hatch": {
       "by": "League of Nations",
-      "since": "1923-09-29",
+      "since": "1920-07-01",
       "trust": true,
-      "note": "Administered by the United Kingdom under the League of Nations mandate for Palestine",
+      "note": "Administered by the United Kingdom under the League of Nations mandate for Palestine (from 1920, in force from 1923)",
       "source": {
        "title": "Mandate for Palestine (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Mandate_for_Palestine"
@@ -4804,56 +4804,6 @@
    ]
   },
   {
-   "date": "1923-09-29",
-   "what": "The League of Nations mandate for Palestine comes into force, covering Palestine and Transjordan",
-   "source": {
-    "title": "Mandate for Palestine (Wikipedia)",
-    "url": "https://en.wikipedia.org/wiki/Mandate_for_Palestine"
-   },
-   "confidence": "exact",
-   "before": [
-    {
-     "pieces": [
-      "ISR-3053",
-      "ISR-3054",
-      "ISR-3055",
-      "ISR-3056",
-      "ISR-3057",
-      "ISR-3058",
-      "WEB+00?",
-      "east-jerusalem",
-      "GAZ+00?"
-     ],
-     "owner": "United Kingdom",
-     "source": {
-      "title": "Mandatory Palestine (Wikipedia)",
-      "url": "https://en.wikipedia.org/wiki/Mandatory_Palestine"
-     },
-     "territory": "Mandatory Palestine"
-    },
-    {
-     "pieces": [
-      "JOR-854",
-      "JOR-858",
-      "JOR-859",
-      "JOR-852",
-      "JOR-857",
-      "JOR-850",
-      "JOR-851",
-      "JOR-860",
-      "JOR-855",
-      "JOR-856"
-     ],
-     "owner": "United Kingdom",
-     "source": {
-      "title": "Emirate of Transjordan (Wikipedia)",
-      "url": "https://en.wikipedia.org/wiki/Emirate_of_Transjordan"
-     },
-     "territory": "Emirate of Transjordan"
-    }
-   ]
-  },
-  {
    "date": "1922-12-06",
    "what": "The Irish Free State is founded under the Anglo-Irish Treaty; Northern Ireland stays in the United Kingdom",
    "source": {
@@ -4923,13 +4873,23 @@
       "title": "Emirate of Transjordan (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Emirate_of_Transjordan"
      },
-     "territory": "Mandatory Palestine"
+     "territory": "Mandatory Palestine",
+     "hatch": {
+      "by": "League of Nations",
+      "since": "1920-07-01",
+      "trust": true,
+      "note": "Administered by the United Kingdom under a League of Nations mandate (from 1920, in force from 1923)",
+      "source": {
+       "title": "Mandate for Palestine (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Mandate_for_Palestine"
+      }
+     }
     }
    ]
   },
   {
    "date": "1920-07-01",
-   "what": "A British civil administration under Herbert Samuel replaces military rule in Palestine",
+   "what": "A British civil administration under Herbert Samuel replaces military rule in Palestine; the mandate also covers the lands east of the Jordan",
    "source": {
     "title": "Mandatory Palestine (Wikipedia)",
     "url": "https://en.wikipedia.org/wiki/Mandatory_Palestine"
@@ -4961,6 +4921,25 @@
        "title": "Occupied Enemy Territory Administration (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Occupied_Enemy_Territory_Administration"
       }
+     }
+    },
+    {
+     "pieces": [
+      "JOR-854",
+      "JOR-858",
+      "JOR-859",
+      "JOR-852",
+      "JOR-857",
+      "JOR-850",
+      "JOR-851",
+      "JOR-860",
+      "JOR-855",
+      "JOR-856"
+     ],
+     "owner": "Arab Kingdom of Syria",
+     "source": {
+      "title": "Arab Kingdom of Syria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Arab_Kingdom_of_Syria"
      }
     }
    ]
