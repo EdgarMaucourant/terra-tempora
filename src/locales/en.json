@@ -460,6 +460,7 @@
     "before": "Before",
     "border": "Border: {source}",
     "borderHint": "Select it to open the source map",
+    "rough": "Approximate border: drawn as an estimate",
     "event": "{kind} · {when} · click for more",
     "explore": "{years} · click to explore",
     "heldBy": "Held by {by} since {year}",

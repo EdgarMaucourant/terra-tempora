@@ -460,6 +460,7 @@
     "before": "Avant",
     "border": "Frontière : {source}",
     "borderHint": "Sélectionnez-le pour ouvrir la carte source",
+    "rough": "Tracé approximatif : une estimation",
     "event": "{kind} · {when} · cliquez pour en savoir plus",
     "explore": "{years} · cliquez pour explorer",
     "heldBy": "Tenu par {by} depuis {year}",
