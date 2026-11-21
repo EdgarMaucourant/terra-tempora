@@ -1744,7 +1744,23 @@
   "wikipedia": "Lesotho",
   "wikidata": "Q1013",
   "fr": "Lesotho",
-  "es": "Lesoto"
+  "es": "Lesoto",
+  "periods": [
+   {
+    "from": "1822-01-01",
+    "name": "Basotho Kingdom",
+    "wikipedia": "History of Lesotho",
+    "fr": "Royaume basotho",
+    "es": "Reino basoto"
+   },
+   {
+    "from": "1966-10-04",
+    "name": "Lesotho",
+    "wikipedia": "Lesotho",
+    "fr": "Lesotho",
+    "es": "Lesoto"
+   }
+  ]
  },
  "Liberia": {
   "wikipedia": "Liberia",
@@ -4011,5 +4027,32 @@
   "wikidata": "Q17515160",
   "fr": "Royaume des Fidji",
   "es": "Reino de Fiyi"
+ },
+ "United States of the Ionian Islands": {
+  "wikipedia": "United States of the Ionian Islands",
+  "wikidata": "Q1063498",
+  "fr": "États-Unis des îles Ioniennes",
+  "es": "Estados Unidos de las Islas Jónicas",
+  "withOwner": false
+ },
+ "Crown Colony of Labuan": {
+  "wikipedia": "Crown Colony of Labuan",
+  "wikidata": "Q6420545",
+  "fr": "Colonie de Labuan",
+  "es": "Colonia de Labuan",
+  "withOwner": false
+ },
+ "Colony of the Bay Islands": {
+  "wikipedia": "Bay Islands Department",
+  "wikidata": "Q751725",
+  "fr": "Colonie des îles de la Baie",
+  "es": "Colonia de las Islas de la Bahía",
+  "withOwner": false
+ },
+ "Kingdom of Lagos": {
+  "wikipedia": "Oba of Lagos",
+  "wikidata": "Q7074545",
+  "fr": "Royaume de Lagos",
+  "es": "Reino de Lagos"
  }
 }
