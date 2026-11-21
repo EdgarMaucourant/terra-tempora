@@ -5286,26 +5286,7 @@
       "TZA-3357",
       "TZA-5585",
       "TZA-5586",
-      "TZA-3358"
-     ],
-     "owner": "Germany",
-     "source": {
-      "title": "East African campaign (World War I) (Wikipedia)",
-      "url": "https://en.wikipedia.org/wiki/East_African_campaign_(World_War_I)"
-     },
-     "territory": "German East Africa",
-     "hatch": {
-      "by": "United Kingdom",
-      "since": "1916-09-04",
-      "note": "Conquered by British, Indian, South African and Belgian forces in the East African campaign (Dar es Salaam, 4 September 1916), until the Treaty of Versailles",
-      "source": {
-       "title": "East African campaign (World War I) (Wikipedia)",
-       "url": "https://en.wikipedia.org/wiki/East_African_campaign_(World_War_I)"
-      }
-     }
-    },
-    {
-     "pieces": [
+      "TZA-3358",
       "TZA-3387",
       "TZA-3388",
       "TZA-3389"
@@ -5319,7 +5300,7 @@
      "hatch": {
       "by": "United Kingdom",
       "since": "1917-11-25",
-      "note": "Conquered by British forces in the East African campaign: the last German troops left for Mozambique on 25 November 1917; British until the Treaty of Versailles",
+      "note": "Conquered by British, Indian, South African and Belgian forces in the East African campaign (Dar es Salaam, September 1916); the last German troops left for Mozambique on 25 November 1917. British until the Treaty of Versailles",
       "source": {
        "title": "East African campaign (World War I) (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/East_African_campaign_(World_War_I)"
@@ -5614,6 +5595,47 @@
    },
    "confidence": "rough",
    "before": [
+    {
+     "pieces": [
+      "TZA-3335",
+      "TZA-5587",
+      "TZA-3363",
+      "TZA-5584",
+      "TZA-3336",
+      "TZA-3360",
+      "TZA-3394",
+      "TZA-3391",
+      "TZA-3393",
+      "TZA-3395",
+      "TZA-3382",
+      "TZA-3378",
+      "TZA-3379",
+      "TZA-3385",
+      "TZA-3392",
+      "TZA-3390",
+      "TZA-3359",
+      "TZA-3386",
+      "TZA-3357",
+      "TZA-5585",
+      "TZA-5586",
+      "TZA-3358"
+     ],
+     "owner": "Germany",
+     "source": {
+      "title": "East African campaign (World War I) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/East_African_campaign_(World_War_I)"
+     },
+     "territory": "German East Africa",
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1916-09-04",
+      "note": "Conquered by British, Indian, South African and Belgian forces in the East African campaign (Dar es Salaam, 4 September 1916), until the Treaty of Versailles",
+      "source": {
+       "title": "East African campaign (World War I) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/East_African_campaign_(World_War_I)"
+      }
+     }
+    },
     {
      "pieces": [
       "TZA-3387",
