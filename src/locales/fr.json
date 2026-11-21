@@ -168,8 +168,8 @@
     "whyItMatters": "Pourquoi c’est important"
   },
   "masthead": {
-    "back": "← Le monde d’aujourd’hui",
-    "backShort": "← Aujourd’hui",
+    "back": "← Le monde entier",
+    "backShort": "← Monde",
     "focusLabel": "Afficher la période de {name}",
     "more": {
       "one": "{first}, {second} et {count} autre",

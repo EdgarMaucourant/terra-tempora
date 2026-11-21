@@ -168,8 +168,8 @@
     "whyItMatters": "Why it matters"
   },
   "masthead": {
-    "back": "← Today’s world",
-    "backShort": "← Today",
+    "back": "← Whole world",
+    "backShort": "← World",
     "focusLabel": "Show the years of {name}",
     "more": {
       "one": "{first}, {second} & {count} more",

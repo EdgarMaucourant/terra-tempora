@@ -316,7 +316,8 @@ function routeHash(route: Route): string {
   if (route.travel) return "#travel";
   if (route.country)
     return `#${route.view === "territory" ? "t" : "k"}=${route.country}${route.year !== undefined ? `&y=${Math.round(route.year)}` : ""}`;
-  if (!route.civs?.length) return location.pathname + location.search;
+  // The world with no country chosen, in a year of the past (#y=1950).
+  if (!route.civs?.length) return route.year !== undefined ? `#y=${Math.round(route.year)}` : location.pathname + location.search;
   const multi = route.multi && route.civs.length === 1 ? "&m=1" : "";
   return `#c=${route.civs.join(",")}${multi}${route.year !== undefined ? `&y=${Math.round(route.year)}` : ""}`;
 }
@@ -340,6 +341,13 @@ function currentRoute(): Route {
 
 function writeHash() {
   if (active) go(currentRoute(), false);
+  // The world left in a year of the past keeps that year in its link.
+  else if (home && location.hash.startsWith("#y=")) go({ year: Math.round(year) === latestYear() ? undefined : year }, false);
+}
+
+/** The latest year with borders: the year the world opens on. */
+function latestYear() {
+  return Math.min(NOW, data?.to ?? NOW);
 }
 
 function showYear() {
@@ -758,6 +766,10 @@ function clickRealm(p: Polity | null | undefined, spot?: [number, number] | null
   if (!p || p.kind === "unreviewed") {
     info.hidden = true;
     closeEvent();
+    // A click off any country (the sea, land no state held, land not rebuilt
+    // yet) leaves the country or civilization shown for the world with none
+    // chosen, in the same year and from the same view.
+    if (!home && !travel?.active) leaveForWorld(false);
     return;
   }
   // A hatching (Indonesia over Portuguese Timor) stands for the land under it.
@@ -2297,10 +2309,22 @@ function colourAround(at: number) {
     });
 }
 
-function showHome() {
+/** Shows the world with no country chosen, staying in the year shown; `fly` pulls out to see it all. */
+function leaveForWorld(fly: boolean) {
+  go({ year: Math.round(year) === latestYear() ? undefined : year }, true);
+  showHome({ year, fly });
+}
+
+/**
+ * The world with every country in its own colour and none chosen: in today's
+ * year, or in `year` when one is given, as when leaving a country shown.
+ * `fly: false` leaves the camera where it is.
+ */
+function showHome(options: { year?: number; fly?: boolean } = {}) {
+  const fly = options.fly ?? true;
   showPin(null);
   leaveTravel();
-  if (playing) setPlaying(false);
+  if (playing && options.year === undefined) setPlaying(false);
   info.hidden = true;
   sources.hidden = true;
   closeEvent();
@@ -2314,12 +2338,14 @@ function showHome() {
   highlighted = [];
   expanded = true;
   showOutline(null);
-  const today = Math.min(NOW, data?.to ?? NOW);
+  const now = latestYear();
   renderEvents([]);
   timeline?.setFeatured([], t("lanes.today"));
-  timeline?.setView(today - 400, NOW + 20);
-  const coloured = colourWorld(today);
-  setYear(today);
+  // Staying in a year keeps the timeline as it was.
+  if (options.year === undefined) timeline?.setView(now - 400, NOW + 20);
+  // Today's countries are coloured first, so they keep their colours in every year.
+  const coloured = colourWorld(now);
+  setYear(options.year ?? now);
   timeline?.setYear(year);
   $("civ-title").textContent = t("page.title");
   $("civ-sub").textContent = t("landing.lede");
@@ -2337,7 +2363,9 @@ function showHome() {
   // The first time, the globe turns to the visitor's part of the world once
   // the borders are in; coming back from a view, it pulls out to see the
   // whole world again.
-  if (!homeVisited && placeAsked && !map.active) {
+  if (!fly) {
+    // The camera stays where it is.
+  } else if (!homeVisited && placeAsked && !map.active) {
     void Promise.all([placeAsked, coloured]).then(([place]) => {
       // Wait until today's shapes are drawn, so the turn runs smoothly.
       const ready = () => {
@@ -2657,7 +2685,7 @@ function route() {
   const k = r.country ? countries.find((c) => c.id === r.country) : undefined;
   const found = (r.civs ?? []).map((id) => list.get(id)).filter((c): c is Civilization => !!c);
   if (k) openCountry(k, r.view ?? "nationality", { year: r.year });
-  else if (!found.length) showHome();
+  else if (!found.length) showHome({ year: r.year });
   else if (!r.multi) openCiv(found[0], { year: r.year });
   else openView(found, { year: r.year });
   // A report's link: the spot the visitor pointed at, pinned and in view.
@@ -2682,8 +2710,7 @@ function showPin(lonLat: [number, number] | null) {
 
 $("back").addEventListener("click", (e) => {
   e.preventDefault();
-  go({}, true);
-  showHome();
+  leaveForWorld(true);
 });
 window.addEventListener("popstate", route);
 
