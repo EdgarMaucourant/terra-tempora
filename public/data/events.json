@@ -9496,6 +9496,124 @@
    "summary": "Losing his best farmland in the wars with the Orange Free State, King Moshoeshoe I asks Britain for protection. On 12 March 1868 the Governor of the Cape, Philip Wodehouse, proclaims the Basotho British subjects, and the Free State must stop its advance. The border fixed at Aliwal North in 1869 leaves the lowlands west of the Caledon to the Boers; the rest stays a British territory until it becomes independent as Lesotho in 1966.",
    "wikipedia": "Basutoland",
    "search": "Basutoland annexed 12 March 1868 Moshoeshoe I Philip Wodehouse Free State Basotho Wars Thaba Bosiu Convention of Aliwal North 1869 Conquered Territory Cape Colony 1871 Lesotho"
+  },
+  {
+   "id": "second-anglo-burmese-war-1852",
+   "kind": "war",
+   "year": 1852,
+   "title": "The Second Anglo-Burmese War: Britain annexes Pegu, 1852",
+   "place": "Rangoon",
+   "lonLat": [
+    96.16,
+    16.8
+   ],
+   "civs": [
+    "kingdom-of-burma",
+    "company-rule-in-india",
+    "myanmar",
+    "united-kingdom"
+   ],
+   "summary": "A quarrel over fines imposed on two British sea captains in Rangoon gives the Governor-General, Lord Dalhousie, a reason for war. British and Indian forces take Rangoon, Bassein and Pegu in 1852, and on 20 December Dalhousie annexes the province of Pegu without a treaty. With Arakan and Tenasserim, taken in 1826, it forms British Lower Burma, cutting the Burmese kingdom off from the sea.",
+   "wikipedia": "Second_Anglo-Burmese_War",
+   "search": "Second Anglo-Burmese War 1852 Lord Dalhousie Commodore Lambert Rangoon Shwedagon Pegu Bassein Prome annexation 20 December 1852 Lower Burma Mindon Min"
+  },
+  {
+   "id": "kuria-muria-ceded-1854",
+   "kind": "empire",
+   "year": 1854,
+   "title": "The Sultan of Muscat gives the Khuriya Muriya Islands to Britain, 1854",
+   "place": "Hallaniyah",
+   "lonLat": [
+    56.0,
+    17.5
+   ],
+   "civs": [
+    "oman",
+    "united-kingdom"
+   ],
+   "summary": "On 14 July 1854 Sultan Said bin Sultan of Muscat gives Queen Victoria the five small Khuriya Muriya Islands off the coast of Dhofar, prized for their guano. Run from Aden, they stay British until 1967, when Britain hands them back to Oman as it leaves South Arabia.",
+   "wikipedia": "Kuria_Muria_Islands",
+   "search": "Khuriya Muriya Kuria Muria Islands Hallaniyat 14 July 1854 Sultan Said bin Sultan gift Queen Victoria guano Aden 1967 returned Oman"
+  },
+  {
+   "id": "annexation-of-oudh-1856",
+   "kind": "empire",
+   "year": 1856,
+   "title": "The East India Company annexes Oudh, February 1856",
+   "place": "Lucknow",
+   "lonLat": [
+    80.95,
+    26.85
+   ],
+   "civs": [
+    "company-rule-in-india",
+    "india",
+    "united-kingdom"
+   ],
+   "summary": "Charging the kingdom with misrule, Lord Dalhousie annexes Oudh (Awadh), a Company ally since 1801, on 7 February 1856, and its king Wajid Ali Shah is sent into exile near Calcutta. Many sepoys of the Bengal Army come from Oudh, and the loss of its court and the new land settlement anger soldiers, landowners and townspeople alike. A year later Oudh is a heartland of the Indian Rebellion.",
+   "wikipedia": "Awadh_State",
+   "search": "Annexation of Oudh Awadh 7 February 1856 Lord Dalhousie misrule Wajid Ali Shah exiled Calcutta Metiabruz Lucknow sepoys Bengal Army Indian Rebellion 1857 Begum Hazrat Mahal"
+  },
+  {
+   "id": "indian-rebellion-1857",
+   "kind": "war",
+   "year": 1857,
+   "to": 1858,
+   "title": "The Indian Rebellion, 1857 – 1858",
+   "place": "Delhi",
+   "lonLat": [
+    77.23,
+    28.66
+   ],
+   "civs": [
+    "company-rule-in-india",
+    "india",
+    "pakistan",
+    "bangladesh",
+    "united-kingdom"
+   ],
+   "summary": "On 10 May 1857 sepoys at Meerut mutiny over greased cartridges and years of grievances, march to Delhi and proclaim the old Mughal emperor Bahadur Shah Zafar their leader. The revolt spreads across the Ganges plain and central India, with sieges and massacres at Cawnpore and Lucknow. British and loyal Indian troops retake Delhi in September 1857 and crush the last fighters in 1858; the Mughal empire ends, and so does the East India Company’s rule.",
+   "wikipedia": "Indian_Rebellion_of_1857",
+   "search": "Indian Rebellion 1857 1858 Sepoy Mutiny Meerut 10 May 1857 Delhi Bahadur Shah Zafar Cawnpore Lucknow siege Rani of Jhansi Tantia Tope Nana Sahib Gwalior end of Mughal Empire Company rule"
+  },
+  {
+   "id": "crown-rule-india-1858",
+   "kind": "empire",
+   "year": 1858,
+   "title": "The Crown takes over India from the East India Company, 1 November 1858",
+   "place": "Allahabad",
+   "lonLat": [
+    81.85,
+    25.44
+   ],
+   "civs": [
+    "company-rule-in-india",
+    "british-raj",
+    "india",
+    "united-kingdom"
+   ],
+   "summary": "After the rebellion, Parliament passes the Government of India Act on 2 August 1858, and the East India Company hands its Indian lands, army and officials to the Crown. On 1 November Lord Canning, now the first Viceroy, reads Queen Victoria’s proclamation at Allahabad, promising to respect the princes’ treaties and Indian religions. British rule in India, the Raj, lasts until 1947.",
+   "wikipedia": "Government_of_India_Act_1858",
+   "search": "Government of India Act 2 August 1858 end of East India Company rule Queen Victoria proclamation 1 November 1858 Allahabad Lord Canning first Viceroy Secretary of State for India British Raj"
+  },
+  {
+   "id": "treaty-of-managua-1860",
+   "kind": "empire",
+   "year": 1860,
+   "title": "The Treaty of Managua ends Britain’s Mosquito Coast protectorate, 28 January 1860",
+   "place": "Bluefields",
+   "lonLat": [
+    -83.77,
+    12.01
+   ],
+   "civs": [
+    "mosquito-coast",
+    "nicaragua",
+    "united-kingdom"
+   ],
+   "summary": "For two centuries Britain had backed the Miskito kings on the Caribbean coast of Central America. Under pressure from the United States, it signs the Treaty of Managua with Nicaragua on 28 January 1860, recognising Nicaraguan sovereignty and keeping only a self-governing Mosquito Reserve around Bluefields for the Miskito. Nicaragua takes the reserve over in 1894.",
+   "wikipedia": "Treaty_of_Managua",
+   "search": "Treaty of Managua 28 January 1860 Zeledon Wyke Mosquito Coast protectorate Mosquito Reserve Bluefields Greytown Clayton-Bulwer Nicaragua sovereignty 1894 Reincorporation"
   }
  ]
 }
