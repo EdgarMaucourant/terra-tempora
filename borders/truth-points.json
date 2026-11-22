@@ -10945,6 +10945,97 @@
    ],
    "realm": "Kingdom of Sikkim",
    "why": "Annexed by Britain in 1850"
+  },
+  {
+   "place": "Dharamsala (Sikh Empire)",
+   "lonLat": [
+    76.32,
+    32.22
+   ],
+   "years": [
+    1830,
+    1845
+   ],
+   "realm": "Sikh Empire",
+   "why": "Ceded by the Treaty of Lahore, March 1846"
+  },
+  {
+   "place": "Shimla (Company rule)",
+   "lonLat": [
+    77.17,
+    31.1
+   ],
+   "years": [
+    1830,
+    1849
+   ],
+   "realm": "Company rule in India",
+   "why": "Simla hill states under British protection from 1815"
+  },
+  {
+   "place": "Darjeeling (Sikkim)",
+   "lonLat": [
+    88.26,
+    27.04
+   ],
+   "years": [
+    1830,
+    1849
+   ],
+   "realm": "Kingdom of Sikkim",
+   "why": "Darjeeling town granted in 1835, the hills annexed in 1850"
+  },
+  {
+   "place": "Madikeri (Coorg)",
+   "lonLat": [
+    75.74,
+    12.42
+   ],
+   "years": [
+    1830,
+    1833
+   ],
+   "realm": "Kingdom of Coorg",
+   "why": "Annexed by the East India Company in May 1834"
+  },
+  {
+   "place": "Aden (Lahej)",
+   "lonLat": [
+    45.0,
+    12.85
+   ],
+   "years": [
+    1830,
+    1838
+   ],
+   "realm": "Sultanate of Lahej",
+   "why": "Taken by Britain in January 1839"
+  },
+  {
+   "place": "Stanley (Argentina)",
+   "lonLat": [
+    -57.86,
+    -51.7
+   ],
+   "years": [
+    1830,
+    1832
+   ],
+   "realm": "Argentina",
+   "why": "British sovereignty reasserted in January 1833"
+  },
+  {
+   "place": "Kuching (Brunei)",
+   "lonLat": [
+    110.34,
+    1.55
+   ],
+   "years": [
+    1830,
+    1840
+   ],
+   "realm": "Brunei",
+   "why": "James Brooke made Rajah of Sarawak in 1841"
   }
  ]
 }
