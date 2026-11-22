@@ -5,9 +5,6 @@
  "russia": {
   "name": "Rusia"
  },
- "russian-sfsr": {
-  "name": "RSFS de Rusia"
- },
  "united-kingdom": {
   "name": "Reino Unido"
  },
@@ -52,9 +49,6 @@
  },
  "kazakhstan": {
   "name": "Kazajistán"
- },
- "kazakh-ssr": {
-  "name": "RSS de Kazajistán"
  },
  "french-equatorial-africa": {
   "name": "África Ecuatorial Francesa"
@@ -275,9 +269,6 @@
  "ukraine": {
   "name": "Ucrania"
  },
- "ukrainian-ssr": {
-  "name": "RSS de Ucrania"
- },
  "madagascar": {
   "name": "Madagascar"
  },
@@ -317,9 +308,6 @@
  "turkmenistan": {
   "name": "Turkmenistán"
  },
- "turkmen-ssr": {
-  "name": "RSS de Turkmenistán"
- },
  "papua-new-guinea": {
   "name": "Papúa Nueva Guinea"
  },
@@ -337,9 +325,6 @@
  },
  "uzbekistan": {
   "name": "Uzbekistán"
- },
- "uzbek-ssr": {
-  "name": "RSS de Uzbekistán"
  },
  "sweden": {
   "name": "Suecia"
@@ -497,17 +482,11 @@
  "belarus": {
   "name": "Bielorrusia"
  },
- "byelorussian-ssr": {
-  "name": "RSS de Bielorrusia"
- },
  "mandate-for-syria-and-the-lebanon": {
   "name": "Mandato francés de Siria y el Líbano"
  },
  "kyrgyzstan": {
   "name": "Kirguistán"
- },
- "kirghiz-ssr": {
-  "name": "RSS de Kirguistán"
  },
  "senegal": {
   "name": "Senegal"
@@ -568,9 +547,6 @@
  },
  "tajikistan": {
   "name": "Tayikistán"
- },
- "tajik-ssr": {
-  "name": "RSS de Tayikistán"
  },
  "talpur-dynasty": {
   "name": "Dinastía Talpur"
@@ -674,9 +650,6 @@
  "azerbaijan": {
   "name": "Azerbaiyán"
  },
- "azerbaijan-ssr": {
-  "name": "RSS de Azerbaiyán"
- },
  "austria": {
   "name": "Austria"
  },
@@ -727,9 +700,6 @@
  },
  "georgia": {
   "name": "Georgia"
- },
- "georgian-ssr": {
-  "name": "RSS de Georgia"
  },
  "ireland": {
   "name": "Irlanda"
@@ -836,9 +806,6 @@
  "moldova": {
   "name": "Moldavia"
  },
- "moldavian-ssr": {
-  "name": "RSS de Moldavia"
- },
  "guinea-bissau": {
   "name": "Guinea-Bisáu"
  },
@@ -850,9 +817,6 @@
  },
  "armenia": {
   "name": "Armenia"
- },
- "armenian-ssr": {
-  "name": "RSS de Armenia"
  },
  "albania": {
   "name": "Albania"
