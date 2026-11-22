@@ -710,6 +710,9 @@
  "united-arab-emirates": {
   "name": "Émirats arabes unis"
  },
+ "austria-hungary": {
+  "name": "Autriche-Hongrie"
+ },
  "federation-of-south-arabia": {
   "name": "Fédération d'Arabie du Sud"
  },
@@ -763,6 +766,9 @@
  },
  "costa-rica": {
   "name": "Costa Rica"
+ },
+ "west-ukrainian-people-s-republic": {
+  "name": "République populaire d'Ukraine occidentale"
  },
  "dominican-republic": {
   "name": "République dominicaine"
@@ -991,6 +997,9 @@
  },
  "ras-al-khaimah": {
   "name": "Ras el Khaïmah"
+ },
+ "republic-of-central-lithuania": {
+  "name": "Lituanie centrale"
  },
  "french-southern-and-antarctic-lands": {
   "name": "Terres australes et antarctiques françaises"

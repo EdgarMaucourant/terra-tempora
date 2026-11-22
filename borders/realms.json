@@ -3255,6 +3255,17 @@
   "es": "Ucrania",
   "periods": [
    {
+    "from": "1918-01-22",
+    "name": "Ukrainian People's Republic",
+    "wikipedia": "Ukrainian People's Republic",
+    "fr": "République populaire ukrainienne",
+    "es": "República Popular Ucraniana",
+    "label": "Ukrainian People's Republic",
+    "labelFr": "République populaire ukrainienne",
+    "labelEs": "República Popular Ucraniana",
+    "note": "Independent from January 1918; the Ukrainian State (Hetmanate) under German protection from April to December 1918"
+   },
+   {
     "from": "1919-03-10",
     "name": "Ukrainian SSR",
     "wikipedia": "Ukrainian Soviet Socialist Republic",
@@ -4494,5 +4505,23 @@
   "wikidata": "Q61291",
   "fr": "République soviétique populaire du Khorezm",
   "es": "República Popular Soviética de Corasmia"
+ },
+ "Austria-Hungary": {
+  "wikipedia": "Austria-Hungary",
+  "wikidata": "Q28513",
+  "fr": "Autriche-Hongrie",
+  "es": "Austria-Hungría"
+ },
+ "West Ukrainian People's Republic": {
+  "wikipedia": "West Ukrainian People's Republic",
+  "wikidata": "Q457167",
+  "fr": "République populaire d'Ukraine occidentale",
+  "es": "República Popular de Ucrania Occidental"
+ },
+ "Republic of Central Lithuania": {
+  "wikipedia": "Republic of Central Lithuania",
+  "wikidata": "Q523380",
+  "fr": "Lituanie centrale",
+  "es": "Lituania Central"
  }
 }
