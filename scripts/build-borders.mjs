@@ -359,7 +359,14 @@ for (let year = TODAY; year >= firstReviewed; year--) {
         // The group's own outline, drawn over its members with its name.
         if (group) add(`group|${group}`, id, { kind: "group", name: group });
       }
-      else add(`realm|${s.owner}`, id, { name: s.owner });
+      else {
+        // A country can belong to a group too (Ukraine, as the Ukrainian SSR, in the Soviet Union).
+        const r = realms[s.owner];
+        const inGroup = !(r?.groupFrom && r.groupFrom > `${year}-12-31`) && !(r?.groupUntil && r.groupUntil <= `${year}-12-31`);
+        const group = r?.group && inGroup ? r.group : null;
+        add(`realm|${s.owner}`, id, { name: s.owner, ...(group && { groups: [group] }) });
+        if (group) add(`group|${group}`, id, { kind: "group", name: group });
+      }
       if (s.hatch) {
         const h = s.hatch;
         // One hatching per territory under it, so that each one stands for its

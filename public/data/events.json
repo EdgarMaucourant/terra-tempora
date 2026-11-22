@@ -10024,6 +10024,207 @@
    "summary": "Burma’s conquest of Assam and Manipur brings its armies to the borders of British Bengal, and war breaks out in March 1824. A British fleet takes Rangoon, and after hard fighting and heavy losses to disease, Archibald Campbell’s army marches up the Irrawaddy towards Ava. By the Treaty of Yandabo of 24 February 1826 Burma gives up Assam and Manipur, cedes Arakan and Tenasserim and pays a large indemnity.",
    "wikipedia": "First_Anglo-Burmese_War",
    "search": "First Anglo-Burmese War 1824 1826 Bagyidaw Maha Bandula Rangoon Archibald Campbell Danubyu Prome Treaty of Yandabo 24 February 1826 Assam Manipur Arakan Tenasserim indemnity"
+  },
+  {
+   "id": "lithuania-independence-1990",
+   "kind": "revolution",
+   "year": 1990,
+   "title": "Lithuania restores its independence, 11 March 1990",
+   "place": "Vilnius",
+   "lonLat": [
+    25.28,
+    54.69
+   ],
+   "civs": [
+    "lithuania"
+   ],
+   "summary": "On 11 March 1990 Lithuania's newly elected Supreme Council, led by the Sąjūdis movement, declares the state restored, the first Soviet republic to break away. Moscow answers with an economic blockade, and in January 1991 Soviet troops storm the Vilnius television tower, killing fourteen people. Estonia and Latvia follow the same path, and the Soviet Union recognises all three on 6 September 1991.",
+   "wikipedia": "Act_of_the_Re-Establishment_of_the_State_of_Lithuania",
+   "search": "Lithuania independence 11 March 1990 Act of the Re-Establishment Sajudis Landsbergis Vilnius Soviet blockade January Events 1991 Baltic states"
+  },
+  {
+   "id": "august-coup-1991",
+   "kind": "revolution",
+   "year": 1991,
+   "title": "The August coup in Moscow, 19 – 21 August 1991",
+   "place": "Moscow",
+   "lonLat": [
+    37.62,
+    55.75
+   ],
+   "civs": [
+    "russia"
+   ],
+   "summary": "On 19 August 1991 hardliners of the Communist Party and the KGB hold Mikhail Gorbachev at his dacha in Crimea and declare a state of emergency, to stop a new union treaty that would loosen the Soviet Union. Boris Yeltsin, president of the Russian republic, climbs onto a tank outside the Russian White House and calls for resistance; crowds gather, the army hesitates, and the coup collapses in three days. Power passes to the republics, and one by one they declare independence.",
+   "wikipedia": "1991_Soviet_coup_attempt",
+   "search": "August coup 1991 Soviet coup attempt State Committee on the State of Emergency GKChP Gorbachev Foros Yeltsin tank White House Moscow"
+  },
+  {
+   "id": "belovezha-accords-1991",
+   "kind": "treaty",
+   "year": 1991,
+   "title": "The Belovezha Accords, 8 December 1991",
+   "place": "Viskuli, in the Belovezha Forest",
+   "lonLat": [
+    23.83,
+    52.6
+   ],
+   "civs": [
+    "belarus",
+    "russia",
+    "ukraine"
+   ],
+   "summary": "At a hunting lodge in the Belovezha Forest, the leaders of Russia, Ukraine and Belarus, the three republics that had founded the Soviet Union in 1922, declare on 8 December 1991 that it \"ceases to exist as a subject of international law\" and found the Commonwealth of Independent States in its place. A week after Ukraine's vote for independence, the accords leave Gorbachev a president without a country.",
+   "wikipedia": "Belovezha_Accords",
+   "search": "Belovezha Accords 8 December 1991 Viskuli Yeltsin Kravchuk Shushkevich Commonwealth of Independent States CIS Soviet Union ceases to exist"
+  },
+  {
+   "id": "dissolution-of-the-soviet-union-1991",
+   "kind": "empire",
+   "year": 1991,
+   "title": "The end of the Soviet Union, 26 December 1991",
+   "place": "Almaty, where eleven republics signed the Alma-Ata Protocol on 21 December",
+   "lonLat": [
+    76.95,
+    43.24
+   ],
+   "civs": [
+    "russia",
+    "kazakhstan",
+    "ukraine",
+    "belarus"
+   ],
+   "summary": "On 21 December 1991 eleven republics meet in Alma-Ata (Almaty), join the new Commonwealth of Independent States and agree that the Soviet Union is at an end. Gorbachev resigns on television on 25 December, the red flag is lowered over the Kremlin that evening, and on 26 December the Soviet of the Republics votes the union out of existence. Fifteen states take its place; Russia keeps its seat on the UN Security Council and its nuclear weapons.",
+   "wikipedia": "Dissolution_of_the_Soviet_Union",
+   "search": "dissolution of the Soviet Union 26 December 1991 Alma-Ata Protocol 21 December Gorbachev resigns 25 December red flag Kremlin Commonwealth of Independent States fifteen republics independent"
+  },
+  {
+   "id": "first-nagorno-karabakh-war-1992",
+   "kind": "war",
+   "year": 1992,
+   "to": 1994,
+   "title": "The Nagorno-Karabakh war, 1992 – 1994",
+   "place": "Stepanakert (Khankendi)",
+   "lonLat": [
+    46.75,
+    39.82
+   ],
+   "civs": [
+    "azerbaijan",
+    "armenia"
+   ],
+   "summary": "The Armenians of Nagorno-Karabakh, an autonomous region of Soviet Azerbaijan, ask from 1988 to join Armenia; when the Soviet Union falls the quarrel becomes a war. Armenian forces take Shusha and Lachin in May 1992, linking the region to Armenia, and in 1993 they seize seven districts around it. A ceasefire in May 1994 leaves the self-declared Republic of Artsakh holding about a seventh of Azerbaijan, after some 30,000 deaths and the flight of hundreds of thousands of Azerbaijanis and Armenians.",
+   "wikipedia": "First_Nagorno-Karabakh_War",
+   "search": "First Nagorno-Karabakh War 1988 1994 Artsakh Stepanakert Shusha Lachin Kalbajar Agdam Khojaly ceasefire Bishkek Protocol May 1994 refugees"
+  },
+  {
+   "id": "first-chechen-war-1994",
+   "kind": "war",
+   "year": 1994,
+   "to": 1996,
+   "title": "The First Chechen War, 1994 – 1996",
+   "place": "Grozny",
+   "lonLat": [
+    45.69,
+    43.32
+   ],
+   "civs": [
+    "russia"
+   ],
+   "summary": "Chechnya, which declared independence as the Chechen Republic of Ichkeria in 1991, is invaded by Russian forces in December 1994. The New Year assault on Grozny ends in disaster, and the city is taken only after weeks of bombardment that kill thousands of civilians. Chechen fighters keep up the war in the mountains and retake Grozny in August 1996, and the Khasavyurt Accord brings the Russian army home, leaving Chechnya's status to be settled by 2001.",
+   "wikipedia": "First_Chechen_War",
+   "search": "First Chechen War 1994 1996 Chechen Republic of Ichkeria Dudayev Maskhadov Grozny New Year assault Budyonnovsk Khasavyurt Accord Lebed"
+  },
+  {
+   "id": "second-chechen-war-1999",
+   "kind": "war",
+   "year": 1999,
+   "to": 2000,
+   "title": "The Second Chechen War, 1999 – 2000",
+   "place": "Grozny",
+   "lonLat": [
+    45.69,
+    43.32
+   ],
+   "civs": [
+    "russia"
+   ],
+   "summary": "After Chechen fighters raid Dagestan and bombs destroy apartment blocks in Russian cities in 1999, Russian forces enter Chechnya again in October under the new prime minister, Vladimir Putin. Grozny falls in February 2000 after a long siege that leaves it in ruins, and Moscow rules Chechnya directly, then through Akhmad Kadyrov and his son Ramzan. The insurgency in the mountains lasts until the \"counter-terrorism operation\" is declared over in 2009.",
+   "wikipedia": "Second_Chechen_War",
+   "search": "Second Chechen War 1999 2000 2009 Dagestan incursion Basayev apartment bombings Putin Grozny siege February 2000 Kadyrov counter-terrorism operation"
+  },
+  {
+   "id": "russo-georgian-war-2008",
+   "kind": "war",
+   "year": 2008,
+   "title": "The Russo-Georgian War, August 2008",
+   "place": "Tskhinvali",
+   "lonLat": [
+    43.96,
+    42.23
+   ],
+   "civs": [
+    "georgia",
+    "russia"
+   ],
+   "summary": "On the night of 7 August 2008 Georgia attacks Tskhinvali to retake South Ossetia, which has been out of its control since 1992. Russia sends its army through the Roki Tunnel and, with Abkhaz forces, drives the Georgians out of both breakaway regions and occupies Gori before a ceasefire brokered by France on 12 August. The Akhalgori district and the upper Kodori valley pass to the separatists, and on 26 August Russia recognises South Ossetia and Abkhazia as independent states.",
+   "wikipedia": "Russo-Georgian_War",
+   "search": "Russo-Georgian War August 2008 five-day war South Ossetia Tskhinvali Abkhazia Gori Akhalgori Kodori Saakashvili Medvedev Sarkozy ceasefire recognition"
+  },
+  {
+   "id": "annexation-of-crimea-2014",
+   "kind": "war",
+   "year": 2014,
+   "title": "Russia annexes Crimea, February – March 2014",
+   "place": "Simferopol",
+   "lonLat": [
+    34.1,
+    44.95
+   ],
+   "civs": [
+    "ukraine",
+    "russia"
+   ],
+   "summary": "Days after the Maidan revolution topples Ukraine's president, soldiers without insignia seize Crimea's parliament and airports in late February 2014. A referendum held under occupation on 16 March is followed on 18 March by a treaty making Crimea and Sevastopol part of Russia. The UN General Assembly calls the referendum invalid (resolution 68/262), and in April Russian-backed separatists take up arms in the Donbas.",
+   "wikipedia": "Annexation_of_Crimea_by_the_Russian_Federation",
+   "search": "annexation of Crimea 2014 little green men Simferopol parliament referendum 16 March treaty 18 March Sevastopol UN General Assembly resolution 68/262 Donbas war"
+  },
+  {
+   "id": "russian-invasion-of-ukraine-2022",
+   "kind": "war",
+   "year": 2022,
+   "title": "Russia invades Ukraine, 24 February 2022",
+   "place": "Kyiv",
+   "lonLat": [
+    30.52,
+    50.45
+   ],
+   "civs": [
+    "ukraine",
+    "russia"
+   ],
+   "summary": "On 24 February 2022 Russia launches a full-scale invasion of Ukraine from the north, east and south. Its drive on Kyiv fails and it withdraws from the north by April, leaving evidence of massacres at Bucha; it takes Mariupol after a long siege, but loses much of Kharkiv oblast and the city of Kherson to Ukrainian counteroffensives that autumn. In September 2022 Russia claims to annex four Ukrainian oblasts, which the UN General Assembly rejects (resolution ES-11/4), and the war goes on.",
+   "wikipedia": "Russian_invasion_of_Ukraine",
+   "search": "Russian invasion of Ukraine 24 February 2022 Kyiv Bucha Mariupol Kherson Kharkiv counteroffensive annexation September 2022 Donetsk Luhansk Zaporizhzhia war"
+  },
+  {
+   "id": "end-of-artsakh-2020",
+   "kind": "war",
+   "year": 2020,
+   "to": 2023,
+   "title": "The 2020 Karabakh war and the end of Artsakh, 2020 – 2023",
+   "place": "Shusha",
+   "lonLat": [
+    46.75,
+    39.76
+   ],
+   "civs": [
+    "azerbaijan",
+    "armenia"
+   ],
+   "summary": "On 27 September 2020 Azerbaijan, backed by Turkey and armed with drones, attacks the Armenian-held land around Nagorno-Karabakh. In 44 days it retakes the southern districts, Hadrut and the fortress town of Shusha; a ceasefire brokered by Russia on 10 November hands back Agdam, Kalbajar and Lachin and sends Russian peacekeepers to guard what is left. After a nine-month blockade of the Lachin corridor, a one-day offensive on 19-20 September 2023 forces Artsakh to disarm, and nearly all of its 100,000 Armenians flee to Armenia.",
+   "wikipedia": "2020_Nagorno-Karabakh_war",
+   "search": "2020 Nagorno-Karabakh war 44-day war Shusha Hadrut ceasefire 10 November 2020 Russian peacekeepers Lachin corridor blockade 2023 Azerbaijani offensive Artsakh dissolved exodus"
   }
  ]
 }
