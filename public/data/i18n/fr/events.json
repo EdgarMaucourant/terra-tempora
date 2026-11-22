@@ -2858,5 +2858,45 @@
   "title": "La Constitution de 1936 : le Kazakhstan et la Kirghizie deviennent des républiques de l’Union",
   "place": "Alma-Ata (Almaty)",
   "summary": "La « Constitution de Staline », adoptée le 5 décembre 1936, porte de sept à onze le nombre des républiques de l’Union. Les républiques autonomes kazakhe et kirghize quittent la RSFS de Russie pour devenir les RSS kazakhe et kirghize, le Karakalpakstan passe à la RSS d’Ouzbékistan, et la RSFS de Transcaucasie est partagée entre les RSS de Géorgie, d’Arménie et d’Azerbaïdjan. La constitution promet sur le papier droits et élections, en pleine Grande Terreur."
+ },
+ "finnish-independence-1917": {
+  "title": "La Finlande proclame son indépendance, 6 décembre 1917",
+  "place": "Helsinki",
+  "summary": "Un mois après la prise du pouvoir par les bolcheviks à Petrograd, le Sénat finlandais dirigé par Pehr Evind Svinhufvud proclame indépendant le grand-duché, rattaché à l’Empire russe depuis 1809, le 6 décembre 1917. Le gouvernement de Lénine le reconnaît le 31 décembre. Une guerre civile courte et acharnée entre Rouges et Blancs suit en 1918, gagnée par les Blancs avec l’aide allemande."
+ },
+ "treaty-of-brest-litovsk-1918": {
+  "title": "Le traité de Brest-Litovsk, 3 mars 1918",
+  "place": "Brest-Litovsk",
+  "summary": "Pour sortir de la guerre à tout prix, la Russie soviétique signe le 3 mars 1918 à Brest-Litovsk une paix séparée avec l’Allemagne et ses alliés. Elle renonce à la Pologne, aux pays baltes et à la Finlande, reconnaît l’Ukraine et cède Kars, Ardahan et Batoumi aux Ottomans : un tiers de la population de l’ancien empire. La défaite allemande de novembre 1918 annule le traité, mais la plupart des terres perdues à l’ouest ne reviennent jamais."
+ },
+ "ukrainian-independence-1918": {
+  "title": "L’Ukraine proclame son indépendance, 22 janvier 1918",
+  "place": "Kyiv",
+  "summary": "Alors que les bolcheviks marchent sur Kyiv, la Rada centrale proclame le 22 janvier 1918 la pleine indépendance de la République populaire ukrainienne. L’Allemagne et l’Autriche-Hongrie la reconnaissent à Brest-Litovsk et l’occupent, installant en avril l’État ukrainien de l’hetman Skoropadsky. Après leur défaite, le Directoire de Petlioura rétablit la république, mais Rouges, Blancs, anarchistes et Polonais se disputent l’Ukraine jusqu’en 1921, quand la plus grande partie devient la RSS d’Ukraine."
+ },
+ "union-of-bessarabia-with-romania-1918": {
+  "title": "La Bessarabie s’unit à la Roumanie, 9 avril 1918",
+  "place": "Chișinău",
+  "summary": "Dans le chaos qui suit la révolution, la République démocratique moldave est proclamée à Kichinev en décembre 1917 et les troupes roumaines arrivent en janvier 1918. Le 9 avril 1918, son conseil, le Sfatul Țării, vote l’union avec la Roumanie. La Russie soviétique ne l’accepte jamais, et l’Union soviétique reprend la Bessarabie en juin 1940."
+ },
+ "baltic-independence-1918": {
+  "title": "L’Estonie, la Lettonie et la Lituanie deviennent indépendantes, 1918-1920",
+  "place": "Tallinn",
+  "summary": "La Lituanie (16 février) et l’Estonie (24 février) proclament leur indépendance en 1918 sous occupation allemande, et la Lettonie suit le 18 novembre, au départ des Allemands. Toutes trois doivent ensuite combattre l’Armée rouge, et la Lettonie et l’Estonie aussi des forces allemandes et germano-baltes, jusqu’en 1920. Les traités de paix de 1920 avec la Russie soviétique fixent leurs frontières jusqu’à l’occupation soviétique de 1940."
+ },
+ "peace-of-riga-1921": {
+  "title": "La guerre soviéto-polonaise et la paix de Riga, 1920-1921",
+  "place": "Riga",
+  "summary": "La Pologne renaissante et la Russie soviétique s’affrontent dès 1919 pour la Biélorussie, la Lituanie et l’Ukraine. Piłsudski prend Kyiv en mai 1920 ; l’Armée rouge contre-attaque jusqu’aux portes de Varsovie, où elle est battue en août. La paix de Riga, signée le 18 mars 1921, partage la Biélorussie et l’Ukraine entre la Pologne et les républiques soviétiques selon une ligne qui tient jusqu’en septembre 1939."
+ },
+ "zeligowski-mutiny-1920": {
+  "title": "La mutinerie de Żeligowski : la Pologne prend Vilnius, octobre 1920",
+  "place": "Vilnius",
+  "summary": "Deux jours après l’accord de Suwałki qui laisse Vilnius à la Lituanie, la division du général Lucjan Żeligowski, feignant une mutinerie avec l’appui secret de Piłsudski, prend la ville le 9 octobre 1920 et fonde la République de Lituanie centrale. La Pologne l’annexe en mars 1922. La Lituanie, dont la capitale passe à Kaunas, rompt ses relations avec la Pologne jusqu’en 1938."
+ },
+ "treaties-of-tartu-1920": {
+  "title": "Les traités de Tartu, 1920",
+  "place": "Tartu",
+  "summary": "Deux traités de paix signés à Tartu mettent fin aux guerres de la Russie soviétique dans le nord. Le 2 février 1920, elle reconnaît l’Estonie, avec la rive est de Narva et Petchory ; le 14 octobre, elle fait la paix avec la Finlande, qui obtient Petsamo et un port sur l’océan Arctique. Les deux frontières durent jusqu’à ce que l’Union soviétique reprenne ces terres en 1940 et 1944."
  }
 }

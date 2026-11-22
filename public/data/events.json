@@ -10801,6 +10801,169 @@
    "summary": "The \"Stalin Constitution\" adopted on 5 December 1936 raises the number of union republics from seven to eleven. The Kazakh and Kirghiz autonomous republics leave the Russian SFSR to become the Kazakh and Kirghiz SSRs, Karakalpakstan moves to the Uzbek SSR, and the Transcaucasian SFSR is split into the Georgian, Armenian and Azerbaijan SSRs. The constitution promises rights and elections on paper, in the middle of the Great Purge.",
    "wikipedia": "1936_Constitution_of_the_Soviet_Union",
    "search": "1936 Constitution of the Soviet Union Stalin Constitution 5 December 1936 Kazakh SSR Kirghiz SSR Karakalpakstan Transcaucasian SFSR dissolved Georgian Armenian Azerbaijan SSR"
+  },
+  {
+   "id": "finnish-independence-1917",
+   "kind": "revolution",
+   "year": 1917,
+   "title": "Finland declares independence, 6 December 1917",
+   "place": "Helsinki",
+   "lonLat": [
+    24.94,
+    60.17
+   ],
+   "civs": [
+    "finland",
+    "russia"
+   ],
+   "summary": "A month after the Bolsheviks take power in Petrograd, the Finnish Senate led by Pehr Evind Svinhufvud declares the Grand Duchy, part of the Russian Empire since 1809, an independent state on 6 December 1917. Lenin's government recognises it on 31 December. A short, bitter civil war between Reds and Whites follows in 1918, won by the Whites with German help.",
+   "wikipedia": "Finnish_Declaration_of_Independence",
+   "search": "Finnish Declaration of Independence 6 December 1917 Senate Svinhufvud Lenin recognition 31 December Finnish Civil War 1918"
+  },
+  {
+   "id": "treaty-of-brest-litovsk-1918",
+   "kind": "treaty",
+   "year": 1918,
+   "title": "The Treaty of Brest-Litovsk, 3 March 1918",
+   "place": "Brest-Litovsk",
+   "lonLat": [
+    23.69,
+    52.08
+   ],
+   "civs": [
+    "russia",
+    "germany",
+    "austria-hungary",
+    "ukraine",
+    "finland",
+    "estonia",
+    "latvia",
+    "lithuania",
+    "belarus"
+   ],
+   "summary": "To get out of the war at any price, Soviet Russia signs a separate peace with Germany and its allies at Brest-Litovsk on 3 March 1918. It gives up Poland, the Baltic lands and Finland, recognises Ukraine, and hands Kars, Ardahan and Batumi to the Ottomans: a third of the old empire's people. Germany's defeat in November 1918 voids the treaty, but most of the lost western lands never come back.",
+   "wikipedia": "Treaty_of_Brest-Litovsk",
+   "search": "Treaty of Brest-Litovsk 3 March 1918 Soviet Russia Central Powers Germany Austria-Hungary Trotsky separate peace Ukraine Baltic annulled November 1918"
+  },
+  {
+   "id": "ukrainian-independence-1918",
+   "kind": "revolution",
+   "year": 1918,
+   "title": "Ukraine declares independence, 22 January 1918",
+   "place": "Kyiv",
+   "lonLat": [
+    30.52,
+    50.45
+   ],
+   "civs": [
+    "ukraine",
+    "russia",
+    "west-ukrainian-people-s-republic"
+   ],
+   "summary": "With the Bolsheviks marching on Kyiv, the Central Rada declares the Ukrainian People's Republic fully independent on 22 January 1918. Germany and Austria-Hungary recognise it at Brest-Litovsk and occupy it, setting up Hetman Skoropadsky's Ukrainian State in April. After their defeat, Petliura's Directorate restores the republic, but Reds, Whites, anarchists and Poles fight over Ukraine until 1921, when most of it ends up as the Ukrainian SSR.",
+   "wikipedia": "Ukrainian_People's_Republic",
+   "search": "Ukrainian People's Republic Fourth Universal 22 January 1918 Central Rada Hrushevsky Hetmanate Skoropadsky Directorate Petliura Kyiv Ukrainian War of Independence"
+  },
+  {
+   "id": "union-of-bessarabia-with-romania-1918",
+   "kind": "treaty",
+   "year": 1918,
+   "title": "Bessarabia joins Romania, 9 April 1918",
+   "place": "Chișinău",
+   "lonLat": [
+    28.86,
+    47.01
+   ],
+   "civs": [
+    "romania",
+    "moldova",
+    "russia"
+   ],
+   "summary": "In the chaos after the revolution, the Moldavian Democratic Republic is proclaimed in Kishinev in December 1917 and Romanian troops arrive in January 1918. On 9 April 1918 its council, the Sfatul Țării, votes for union with Romania. Soviet Russia never accepts it, and the Soviet Union takes Bessarabia back in June 1940.",
+   "wikipedia": "Union_of_Bessarabia_with_Romania",
+   "search": "Union of Bessarabia with Romania 9 April 1918 Sfatul Țării Moldavian Democratic Republic Chișinău Kishinev"
+  },
+  {
+   "id": "baltic-independence-1918",
+   "kind": "revolution",
+   "year": 1918,
+   "to": 1920,
+   "title": "Estonia, Latvia and Lithuania become independent, 1918-1920",
+   "place": "Tallinn",
+   "lonLat": [
+    24.75,
+    59.44
+   ],
+   "civs": [
+    "estonia",
+    "latvia",
+    "lithuania",
+    "russia",
+    "germany"
+   ],
+   "summary": "Lithuania (16 February) and Estonia (24 February) declare independence in 1918 under German occupation, and Latvia follows on 18 November as the Germans withdraw. All three must then fight the Red Army, and Latvia and Estonia also German and Baltic German forces, until 1920. The peace treaties of 1920 with Soviet Russia fix their borders until the Soviet occupation of 1940.",
+   "wikipedia": "Estonian_War_of_Independence",
+   "search": "Baltic independence 1918 Lithuania 16 February Estonia 24 February Latvia 18 November wars of independence Landeswehr Bermontians 1920 peace treaties"
+  },
+  {
+   "id": "peace-of-riga-1921",
+   "kind": "war",
+   "year": 1920,
+   "to": 1921,
+   "title": "The Polish–Soviet War and the Peace of Riga, 1920-1921",
+   "place": "Riga",
+   "lonLat": [
+    24.11,
+    56.95
+   ],
+   "civs": [
+    "poland",
+    "russia",
+    "ukraine",
+    "belarus",
+    "lithuania"
+   ],
+   "summary": "Reborn Poland and Soviet Russia clash over Belarus, Lithuania and Ukraine from 1919. Piłsudski takes Kyiv in May 1920; the Red Army drives back to the gates of Warsaw, where it is beaten in August. The Peace of Riga, signed on 18 March 1921, splits Belarus and Ukraine between Poland and the Soviet republics along a line that holds until September 1939.",
+   "wikipedia": "Peace_of_Riga",
+   "search": "Polish–Soviet War 1919-1921 Kyiv offensive Battle of Warsaw August 1920 Miracle on the Vistula Peace of Riga 18 March 1921 border Belarus Ukraine"
+  },
+  {
+   "id": "zeligowski-mutiny-1920",
+   "kind": "war",
+   "year": 1920,
+   "title": "Żeligowski's Mutiny: Poland takes Vilnius, October 1920",
+   "place": "Vilnius",
+   "lonLat": [
+    25.28,
+    54.69
+   ],
+   "civs": [
+    "republic-of-central-lithuania",
+    "lithuania",
+    "poland"
+   ],
+   "summary": "Two days after the Suwałki Agreement leaves Vilnius to Lithuania, General Lucjan Żeligowski's division, feigning a mutiny with Piłsudski's secret backing, takes the city on 9 October 1920 and sets up the Republic of Central Lithuania. Poland annexes it in March 1922. Lithuania, its capital moved to Kaunas, breaks off relations with Poland until 1938.",
+   "wikipedia": "Żeligowski's_Mutiny",
+   "search": "Żeligowski Mutiny 8-9 October 1920 Vilnius Wilno Republic of Central Lithuania annexed by Poland 1922 Suwałki Agreement"
+  },
+  {
+   "id": "treaties-of-tartu-1920",
+   "kind": "treaty",
+   "year": 1920,
+   "title": "The Treaties of Tartu, 1920",
+   "place": "Tartu",
+   "lonLat": [
+    26.72,
+    58.38
+   ],
+   "civs": [
+    "estonia",
+    "finland",
+    "russia"
+   ],
+   "summary": "Two peace treaties signed at Tartu end Soviet Russia's wars in the north. On 2 February 1920 it recognises Estonia, with Narva's east bank and Pechory; on 14 October it makes peace with Finland, which gains Petsamo and a port on the Arctic Ocean. Both borders last until the Soviet Union takes back this land in 1940 and 1944.",
+   "wikipedia": "Treaty_of_Tartu_(Russian–Estonian)",
+   "search": "Treaty of Tartu 2 February 1920 Estonia Soviet Russia 14 October 1920 Finland Petsamo Pechory Ivangorod Narva border"
   }
  ]
 }
