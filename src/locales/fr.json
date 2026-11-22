@@ -168,8 +168,7 @@
     "whyItMatters": "Pourquoi c’est important"
   },
   "masthead": {
-    "back": "← Le monde entier",
-    "backShort": "← Monde",
+    "crumbs": "Où vous êtes",
     "focusLabel": "Afficher la période de {name}",
     "more": {
       "one": "{first}, {second} et {count} autre",
@@ -179,7 +178,8 @@
       "one": "{count} civilisation · {years}",
       "other": "{count} civilisations · {years}"
     },
-    "two": "{first} et {second}"
+    "two": "{first} et {second}",
+    "world": "Monde"
   },
   "toolbar": {
     "otherRealms": "Autres États",
