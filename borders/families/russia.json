@@ -20,7 +20,7 @@
     "LVA",
     "LTU"
    ],
-   "from": 1922,
+   "from": 1917,
    "why": "Russia and the other fourteen republics of the former Soviet Union, with the land held by breakaway states (Chechnya, Transnistria, Abkhazia, South Ossetia, Nagorno-Karabakh) hatched"
   },
   {
@@ -32,7 +32,7 @@
     "agdam-west",
     "fuzuli-west"
    ],
-   "from": 1922,
+   "from": 1917,
    "why": "Cuts for South Ossetia and for the land held by Armenian forces around Nagorno-Karabakh"
   },
   {
@@ -43,7 +43,7 @@
     "klukhori",
     "akhalkhevi"
    ],
-   "from": 1922,
+   "from": 1917,
    "why": "Cuts for land moved between Soviet republics after the war: the Estonian and Latvian border districts given to the Russian SFSR, and the Karachay and Chechen highlands given to the Georgian SSR from 1943-44 to 1957"
   },
   {
@@ -75,7 +75,7 @@
     "south-sakhalin",
     "kuril-islands"
    ],
-   "from": 1922,
+   "from": 1917,
    "why": "Finland, whose borders moved with the Soviet Union in 1940 and 1944, and the cuts for land that changed hands between 1939 and 1946"
   },
   {
@@ -86,14 +86,14 @@
     "kaluga-west",
     "voronezh-west"
    ],
-   "from": 1922,
+   "from": 1917,
    "why": "Cuts for Soviet land held by Germany and Finland in 1941-44 that was only part of a region"
   },
   {
    "pieces": [
     "KAB"
    ],
-   "from": 1922,
+   "from": 1917,
    "why": "The Baikonur Cosmodrome area, part of Kazakhstan, leased to Russia since 1994"
   },
   {
@@ -103,7 +103,7 @@
     "bobruisk",
     "khiva-delta"
    ],
-   "from": 1922,
+   "from": 1917,
    "why": "Cuts for land moved between Soviet republics in the 1920s: Taganrog and Shakhty, Gomel and Rechytsa, Bobruisk, and the Khivan part of Karakalpakstan"
   },
   {
@@ -5299,6 +5299,66 @@
    ]
   },
   {
+   "date": "1922-11-15",
+   "what": "The Far Eastern Republic joins the Russian SFSR",
+   "source": {
+    "title": "Far Eastern Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Far_Eastern_Republic"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2606",
+      "RUS-2610",
+      "RUS-2609",
+      "RUS-2613",
+      "RUS-2614",
+      "RUS-3468",
+      "RUS-2615",
+      "RUS-2321",
+      "RUS-2611"
+     ],
+     "owner": "Far Eastern Republic",
+     "source": {
+      "title": "Far Eastern Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Far_Eastern_Republic"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1922-10-25",
+   "what": "The last Japanese troops leave Vladivostok and the Far Eastern Republic takes it, ending the civil war in the Far East",
+   "source": {
+    "title": "Japanese intervention in Siberia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Japanese_intervention_in_Siberia"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2611"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Provisional Priamurye Government (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Provisional_Priamurye_Government"
+     },
+     "hatch": {
+      "by": "Japan",
+      "since": "1918-08-11",
+      "note": "Held by Japanese troops in the Siberian Intervention, from August 1918 to October 1922",
+      "source": {
+       "title": "Japanese intervention in Siberia (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Japanese_intervention_in_Siberia"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
    "date": "1922-03-24",
    "what": "Poland annexes the Republic of Central Lithuania (Vilnius and its region)",
    "source": {
@@ -5315,6 +5375,110 @@
      "source": {
       "title": "Republic of Central Lithuania (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Republic_of_Central_Lithuania"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1921-08-14",
+   "what": "The Tuvan People's Republic is proclaimed in the former Uryankhay Krai, a Russian protectorate since 1914",
+   "source": {
+    "title": "Uryankhay Krai (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Uryankhay_Krai"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2605"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Uryankhay Krai (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Uryankhay_Krai"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1921-05-26",
+   "what": "White forces take Vladivostok and set up the Provisional Priamurye Government, under Japanese protection",
+   "source": {
+    "title": "Provisional Priamurye Government (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Provisional_Priamurye_Government"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2611"
+     ],
+     "owner": "Far Eastern Republic",
+     "source": {
+      "title": "Far Eastern Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Far_Eastern_Republic"
+     },
+     "hatch": {
+      "by": "Japan",
+      "since": "1918-08-11",
+      "note": "Held by Japanese troops in the Siberian Intervention, from August 1918 to October 1922",
+      "source": {
+       "title": "Japanese intervention in Siberia (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Japanese_intervention_in_Siberia"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1921-04-22",
+   "what": "Turkish forces leave Alexandropol (Gyumri), held since November 1920",
+   "source": {
+    "title": "Turkish–Armenian War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Turkish–Armenian_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ARM-1555"
+     ],
+     "owner": "Armenia",
+     "source": {
+      "title": "Turkish–Armenian War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Turkish–Armenian_War"
+     },
+     "hatch": {
+      "by": "Turkey",
+      "since": "1920-11-07",
+      "note": "Held by the Turkish army after the Turkish–Armenian War, November 1920 to April 1921",
+      "source": {
+       "title": "Turkish–Armenian War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Turkish–Armenian_War"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1920-11-07",
+   "what": "Turkish forces take Alexandropol (Gyumri) in the Turkish–Armenian War",
+   "source": {
+    "title": "Turkish–Armenian War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Turkish–Armenian_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "ARM-1555"
+     ],
+     "owner": "Armenia",
+     "source": {
+      "title": "Shirak Province (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Shirak_Province"
      }
     }
    ]
@@ -5357,6 +5521,34 @@
      "source": {
       "title": "Vilnius Region (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Vilnius_Region"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1920-09-02",
+   "what": "The Red Army takes Bukhara; the emir flees and the Bukharan People's Soviet Republic is proclaimed",
+   "source": {
+    "title": "Bukhara operation (1920) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Bukhara_operation_(1920)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "UZB-354",
+      "UZB-357",
+      "UZB-361",
+      "UZB-362",
+      "TJK-367",
+      "TJK-368",
+      "TJK-5491",
+      "TKM-359"
+     ],
+     "owner": "Emirate of Bukhara",
+     "source": {
+      "title": "Emirate of Bukhara (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Emirate_of_Bukhara"
      }
     }
    ]
@@ -5437,6 +5629,106 @@
    ]
   },
   {
+   "date": "1920-07-07",
+   "what": "British forces leave Batumi and hand Ajaria to Georgia",
+   "source": {
+    "title": "Batumi Oblast (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Batumi_Oblast"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GEO-3027"
+     ],
+     "owner": "Georgia",
+     "source": {
+      "title": "Batumi Oblast (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Batumi_Oblast"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1918-12-24",
+      "note": "Held by British forces after the Ottoman withdrawal, December 1918 to July 1920",
+      "source": {
+       "title": "Batumi Oblast (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Batumi_Oblast"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1920-04-21",
+   "what": "Japan takes northern Sakhalin, after the Nikolayevsk incident",
+   "source": {
+    "title": "Nikolayevsk incident (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Nikolayevsk_incident"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2616"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Sakhalin Oblast (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sakhalin_Oblast"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1920-04-06",
+   "what": "The Far Eastern Republic is proclaimed in Verkhneudinsk as a buffer state between Soviet Russia and Japan",
+   "source": {
+    "title": "Far Eastern Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Far_Eastern_Republic"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2606",
+      "RUS-2610",
+      "RUS-2609",
+      "RUS-2613",
+      "RUS-2614",
+      "RUS-3468",
+      "RUS-2615",
+      "RUS-2321"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Far Eastern Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Far_Eastern_Republic"
+     }
+    },
+    {
+     "pieces": [
+      "RUS-2611"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Japanese intervention in Siberia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Japanese_intervention_in_Siberia"
+     },
+     "hatch": {
+      "by": "Japan",
+      "since": "1918-08-11",
+      "note": "Held by Japanese troops in the Siberian Intervention, from August 1918 to October 1922",
+      "source": {
+       "title": "Japanese intervention in Siberia (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Japanese_intervention_in_Siberia"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
    "date": "1920-02-15",
    "what": "The Memel Territory is detached from Germany under the Treaty of Versailles and placed under French administration",
    "source": {
@@ -5490,6 +5782,29 @@
    ]
   },
   {
+   "date": "1920-02-02",
+   "what": "The last khan of Khiva abdicates; the Khorezm People's Soviet Republic is proclaimed in April",
+   "source": {
+    "title": "Khanate of Khiva (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Khanate_of_Khiva"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "UZB-355",
+      "TKM-353",
+      "khiva-delta"
+     ],
+     "owner": "Khanate of Khiva",
+     "source": {
+      "title": "Khanate of Khiva (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Khanate_of_Khiva"
+     }
+    }
+   ]
+  },
+  {
    "date": "1920-01-03",
    "what": "Latvian and Polish forces take Daugavpils; by February 1920 Latgale is freed from the Red Army",
    "source": {
@@ -5531,6 +5846,69 @@
    ]
   },
   {
+   "date": "1919-10-12",
+   "what": "The Allies leave Murmansk",
+   "source": {
+    "title": "North Russia intervention (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/North_Russia_intervention"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2333",
+      "petsamo"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Northern Region (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Northern_Region"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1918-03-09",
+      "note": "Held by British-led Allied forces in the North Russia intervention, March 1918 to October 1919",
+      "source": {
+       "title": "North Russia intervention (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/North_Russia_intervention"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1919-09-27",
+   "what": "The Allies leave Arkhangelsk; the Red Army takes it in February 1920",
+   "source": {
+    "title": "North Russia intervention (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/North_Russia_intervention"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2354"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Northern Region (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Northern_Region"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1918-08-02",
+      "note": "Held by British-led Allied forces in the North Russia intervention, August 1918 to September 1919",
+      "source": {
+       "title": "North Russia intervention (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/North_Russia_intervention"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
    "date": "1919-09-10",
    "what": "Treaty of Saint-Germain: Carpathian Ruthenia goes to Czechoslovakia",
    "source": {
@@ -5547,6 +5925,39 @@
      "source": {
       "title": "Carpathian Ruthenia (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Carpathian_Ruthenia"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1919-08-24",
+   "what": "British forces leave Baku",
+   "source": {
+    "title": "British occupation of Baku (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/British_occupation_of_Baku"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "AZE-1689",
+      "AZE-1690",
+      "AZE-1717"
+     ],
+     "owner": "Azerbaijan",
+     "source": {
+      "title": "Azerbaijan Democratic Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Azerbaijan_Democratic_Republic"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1918-11-17",
+      "note": "Held by British forces after the Ottoman surrender, November 1918 to August 1919",
+      "source": {
+       "title": "Azerbaijan Democratic Republic (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Azerbaijan_Democratic_Republic"
+      },
+      "occupied": true
      }
     }
    ]
@@ -5725,6 +6136,27 @@
      "source": {
       "title": "Minsk Governorate (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Minsk_Governorate"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-12-24",
+   "what": "British troops replace the Ottoman army in Batumi",
+   "source": {
+    "title": "Batumi Oblast (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Batumi_Oblast"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GEO-3027"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Treaty of Batum (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Batum"
      }
     }
    ]
@@ -5909,6 +6341,29 @@
    ]
   },
   {
+   "date": "1918-11-17",
+   "what": "British forces land at Baku after the Ottoman surrender",
+   "source": {
+    "title": "Azerbaijan Democratic Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Azerbaijan_Democratic_Republic"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "AZE-1689",
+      "AZE-1690",
+      "AZE-1717"
+     ],
+     "owner": "Azerbaijan",
+     "source": {
+      "title": "Battle of Baku (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Baku"
+     }
+    }
+   ]
+  },
+  {
    "date": "1918-11-16",
    "what": "Hungary leaves Austria-Hungary and becomes a republic, with Carpathian Ruthenia",
    "source": {
@@ -6048,6 +6503,123 @@
    ]
   },
   {
+   "date": "1918-09-15",
+   "what": "The Ottoman Army of Islam takes Baku for the Azerbaijan Democratic Republic",
+   "source": {
+    "title": "Battle of Baku (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Baku"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "AZE-1689",
+      "AZE-1690",
+      "AZE-1717"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Centrocaspian Dictatorship (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Centrocaspian_Dictatorship"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-08-11",
+   "what": "Japanese troops land at Vladivostok in the Allied intervention in Siberia",
+   "source": {
+    "title": "Japanese intervention in Siberia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Japanese_intervention_in_Siberia"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2611"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Primorskaya Oblast (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Primorskaya_Oblast"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-08-02",
+   "what": "British-led Allied forces land at Arkhangelsk",
+   "source": {
+    "title": "North Russia intervention (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/North_Russia_intervention"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2354"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Arkhangelsk Governorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Arkhangelsk_Governorate"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-05-28",
+   "what": "Armenia and Azerbaijan declare independence as the Transcaucasian Federation breaks up",
+   "source": {
+    "title": "Transcaucasian Democratic Federative Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Transcaucasian_Democratic_Federative_Republic"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "ARM"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "First Republic of Armenia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/First_Republic_of_Armenia"
+     }
+    },
+    {
+     "pieces": [
+      "AZE"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Azerbaijan Democratic Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Azerbaijan_Democratic_Republic"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-05-26",
+   "what": "Georgia declares independence as the Democratic Republic of Georgia",
+   "source": {
+    "title": "Democratic Republic of Georgia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Democratic_Republic_of_Georgia"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "GEO"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Democratic Republic of Georgia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Democratic_Republic_of_Georgia"
+     }
+    }
+   ]
+  },
+  {
    "date": "1918-04-09",
    "what": "The Sfatul Țării votes for the union of Bessarabia with Romania, whose troops arrived in January 1918",
    "source": {
@@ -6098,6 +6670,28 @@
      "source": {
       "title": "Bessarabia Governorate (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Bessarabia_Governorate"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-03-09",
+   "what": "British forces land at Murmansk",
+   "source": {
+    "title": "North Russia intervention (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/North_Russia_intervention"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2333",
+      "petsamo"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Murmansk (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Murmansk"
      }
     }
    ]

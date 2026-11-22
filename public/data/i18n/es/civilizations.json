@@ -35,6 +35,9 @@
  "company-rule-in-india": {
   "name": "India de la Compañía"
  },
+ "far-eastern-republic": {
+  "name": "República del Lejano Oriente"
+ },
  "khedivate-of-egypt": {
   "name": "Jedivato de Egipto"
  },
@@ -86,11 +89,11 @@
  "saudi-arabia": {
   "name": "Arabia Saudita"
  },
- "indonesia": {
-  "name": "Indonesia"
- },
  "germany": {
   "name": "Alemania"
+ },
+ "indonesia": {
+  "name": "Indonesia"
  },
  "french-sudan": {
   "name": "Sudán francés"
@@ -383,6 +386,9 @@
  "bukharan-people-s-soviet-republic": {
   "name": "República Popular Soviética de Bujará"
  },
+ "emirate-of-bukhara": {
+  "name": "Emirato de Bujará"
+ },
  "rajputana": {
   "name": "Rajputana"
  },
@@ -643,6 +649,9 @@
  },
  "khorezm-people-s-soviet-republic": {
   "name": "República Popular Soviética de Corasmia"
+ },
+ "khanate-of-khiva": {
+  "name": "Kanato de Jiva"
  },
  "liberia": {
   "name": "Liberia"

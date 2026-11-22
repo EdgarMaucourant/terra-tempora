@@ -146,25 +146,71 @@ interface Part {
 const WIDE_RING = 90;
 const SLICE_WIDTH = 45;
 
-/** The part of a ring between two longitudes (Sutherland-Hodgman), or undefined when nothing is left. */
-function clipRing(ring: number[], west: number, east: number): number[] | undefined {
-  const clip = (points: number[], inside: (lon: number) => boolean, edge: number) => {
-    const out: number[] = [];
-    const n = points.length;
-    for (let i = 0; i < n; i += 2) {
-      const ax = points[i];
-      const ay = points[i + 1];
-      const bx = points[(i + 2) % n];
-      const by = points[(i + 3) % n];
-      const aIn = inside(ax);
-      const bIn = inside(bx);
-      if (aIn) out.push(ax, ay);
-      if (aIn !== bIn) out.push(edge, ay + ((by - ay) * (edge - ax)) / (bx - ax));
-    }
-    return out;
+/**
+ * The parts of a ring on one side of a meridian. Each part is its own ring:
+ * where the ring crosses the meridian more than twice (Russia's outline
+ * between Bukhara and the Arctic), the parts are traced apart rather than
+ * joined by edges running up the meridian, which Cesium filled as stripes.
+ */
+function clipSide(ring: number[], edge: number, inside: (lon: number) => boolean): number[][] {
+  type Node = { x: number; y: number; cross?: "in" | "out"; partner?: number };
+  const nodes: Node[] = [];
+  const n = ring.length;
+  for (let i = 0; i < n; i += 2) {
+    const ax = ring[i];
+    const ay = ring[i + 1];
+    const bx = ring[(i + 2) % n];
+    const by = ring[(i + 3) % n];
+    const aIn = inside(ax);
+    if (aIn) nodes.push({ x: ax, y: ay });
+    if (aIn !== inside(bx)) nodes.push({ x: edge, y: ay + ((by - ay) * (edge - ax)) / (bx - ax), cross: aIn ? "out" : "in" });
+  }
+  const crossings = nodes.map((node, i) => i).filter((i) => nodes[i].cross);
+  if (!crossings.length) return nodes.length >= 3 ? [ring] : [];
+  // Along the meridian, the stretches inside the ring lie between crossings taken two by two.
+  const sorted = [...crossings].sort((i, j) => nodes[i].y - nodes[j].y);
+  const joined = (): number[][] => {
+    const out = nodes.flatMap((node) => [node.x, node.y]);
+    return out.length >= 6 ? [out] : [];
   };
-  const clipped = clip(clip(ring, (lon) => lon >= west, west), (lon) => lon <= east, east);
-  return clipped.length >= 6 ? clipped : undefined;
+  if (sorted.length % 2) return joined();
+  for (let k = 0; k < sorted.length; k += 2) {
+    const [i, j] = [sorted[k], sorted[k + 1]];
+    if (nodes[i].cross === nodes[j].cross) return joined();
+    nodes[i].partner = j;
+    nodes[j].partner = i;
+  }
+  const seen = new Set<number>();
+  const parts: number[][] = [];
+  for (const start of crossings) {
+    if (nodes[start].cross !== "in" || seen.has(start)) continue;
+    const part: number[] = [];
+    let i = start;
+    for (let guard = 0; guard <= nodes.length; guard++) {
+      seen.add(i);
+      part.push(nodes[i].x, nodes[i].y);
+      const next = nodes[i].cross === "out" ? nodes[i].partner! : (i + 1) % nodes.length;
+      if (next === start) break;
+      i = next;
+    }
+    if (part.length >= 6) parts.push(part);
+  }
+  return parts;
+}
+
+/** The parts of a ring between two longitudes, each its own ring. */
+function clipRing(ring: number[], west: number, east: number): number[][] {
+  return clipSide(ring, west, (lon) => lon >= west).flatMap((part) => clipSide(part, east, (lon) => lon <= east));
+}
+
+/** Whether a point lies inside a ring (even-odd rule). */
+function insideRing(x: number, y: number, ring: number[]): boolean {
+  let inside = false;
+  for (let i = 0, j = ring.length - 2; i < ring.length; j = i, i += 2) {
+    const [xi, yi, xj, yj] = [ring[i], ring[i + 1], ring[j], ring[j + 1]];
+    if (yi > y !== yj > y && x < ((xj - xi) * (y - yi)) / (yj - yi) + xi) inside = !inside;
+  }
+  return inside;
 }
 
 /** A part to fill, cut into slices of longitude when it is too wide for Cesium to fill in one go. */
@@ -183,10 +229,16 @@ function fillParts(part: Part): Part[] {
   for (let i = 0; i < count; i++) {
     const from = west + i * width;
     const to = i === count - 1 ? east : from + width;
-    const ring = clipRing(part.ring, from, to);
-    if (!ring) continue;
-    const holes = part.holes.map((hole) => clipRing(hole, from, to)).filter((hole): hole is number[] => !!hole);
-    slices.push({ ring, holes });
+    const rings = clipRing(part.ring, from, to);
+    const holes = part.holes.flatMap((hole) => clipRing(hole, from, to));
+    for (const ring of rings) {
+      // A hole goes with the slice part around it (tested at a corner off the slice's edges).
+      const own = holes.filter((hole) => {
+        for (let k = 0; k < hole.length; k += 2) if (hole[k] !== from && hole[k] !== to) return insideRing(hole[k], hole[k + 1], ring);
+        return false;
+      });
+      slices.push({ ring, holes: own });
+    }
   }
   return slices;
 }
