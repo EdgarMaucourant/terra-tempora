@@ -1644,7 +1644,27 @@
   "wikipedia": "Iran",
   "wikidata": "Q794",
   "fr": "Iran",
-  "es": "Irán"
+  "es": "Irán",
+  "periods": [
+   {
+    "from": "1789-01-01",
+    "name": "Persia",
+    "wikipedia": "Qajar Iran",
+    "fr": "Perse",
+    "es": "Persia",
+    "label": "Persia",
+    "labelFr": "Perse",
+    "labelEs": "Persia",
+    "note": "Ruled by the Qajar dynasty"
+   },
+   {
+    "from": "1935-03-21",
+    "name": "Iran",
+    "wikipedia": "Iran",
+    "fr": "Iran",
+    "es": "Irán"
+   }
+  ]
  },
  "Iraq": {
   "wikipedia": "Iraq",
@@ -4667,5 +4687,29 @@
   "fr": "Principauté de Moldavie",
   "es": "Principado de Moldavia",
   "note": "A principality under Ottoman suzerainty; united with Wallachia in 1859"
+ },
+ "Caucasian Imamate": {
+  "wikipedia": "Caucasian Imamate",
+  "wikidata": "Q2088141",
+  "fr": "Imamat du Caucase",
+  "es": "Imamato del Cáucaso"
+ },
+ "Principality of Guria": {
+  "wikipedia": "Principality of Guria",
+  "wikidata": "Q2195101",
+  "fr": "Principauté de Gourie",
+  "es": "Principado de Guria"
+ },
+ "Principality of Mingrelia": {
+  "wikipedia": "Principality of Mingrelia",
+  "wikidata": "Q2907860",
+  "fr": "Principauté de Mingrélie",
+  "es": "Principado de Mingrelia"
+ },
+ "Principality of Abkhazia": {
+  "wikipedia": "Principality of Abkhazia",
+  "wikidata": "Q1760473",
+  "fr": "Principauté d'Abkhazie",
+  "es": "Principado de Abjasia"
  }
 }

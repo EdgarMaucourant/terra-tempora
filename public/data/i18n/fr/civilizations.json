@@ -935,6 +935,9 @@
  "new-caledonia": {
   "name": "Nouvelle-Calédonie"
  },
+ "caucasian-imamate": {
+  "name": "Imamat du Caucase"
+ },
  "kuwait": {
   "name": "Koweït"
  },
@@ -1019,11 +1022,17 @@
  "puerto-rico": {
   "name": "Porto Rico"
  },
+ "principality-of-abkhazia": {
+  "name": "Principauté d'Abkhazie"
+ },
  "selangor": {
   "name": "Selangor"
  },
  "ras-al-khaimah": {
   "name": "Ras el Khaïmah"
+ },
+ "principality-of-mingrelia": {
+  "name": "Principauté de Mingrélie"
  },
  "republic-of-central-lithuania": {
   "name": "Lituanie centrale"
@@ -1126,6 +1135,9 @@
  },
  "british-windward-islands": {
   "name": "Îles du Vent britanniques"
+ },
+ "principality-of-guria": {
+  "name": "Principauté de Gourie"
  },
  "guadeloupe": {
   "name": "Guadeloupe"
