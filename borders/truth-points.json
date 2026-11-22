@@ -12173,6 +12173,219 @@
      "by": "Soviet Union"
     }
    ]
+  },
+  {
+   "place": "Lviv (Poland, Soviet-held)",
+   "lonLat": [
+    24.03,
+    49.84
+   ],
+   "years": [
+    1939,
+    1944
+   ],
+   "realm": "Poland",
+   "why": "Polish land annexed by the Soviet Union in 1939; Poland accepted the border in August 1945",
+   "heldBy": [
+    {
+     "years": [
+      1939,
+      1944
+     ],
+     "by": "Soviet Union"
+    }
+   ]
+  },
+  {
+   "place": "Brest (Poland, Soviet-held)",
+   "lonLat": [
+    23.83,
+    52.1
+   ],
+   "years": [
+    1939,
+    1944
+   ],
+   "realm": "Poland",
+   "why": "Polish land annexed by the Soviet Union in 1939",
+   "heldBy": [
+    {
+     "years": [
+      1939,
+      1944
+     ],
+     "by": "Soviet Union"
+    }
+   ]
+  },
+  {
+   "place": "Chisinau (Romania)",
+   "lonLat": [
+    28.86,
+    47.0
+   ],
+   "years": [
+    1939,
+    1939
+   ],
+   "realm": "Romania",
+   "why": "Bessarabia, Romanian until June 1940"
+  },
+  {
+   "place": "Chisinau (Moldavian SSR)",
+   "lonLat": [
+    28.86,
+    47.0
+   ],
+   "years": [
+    1940,
+    1944
+   ],
+   "realm": "Moldova",
+   "why": "Capital of the Moldavian SSR from August 1940"
+  },
+  {
+   "place": "Tiraspol (Ukrainian SSR)",
+   "lonLat": [
+    29.64,
+    46.84
+   ],
+   "years": [
+    1939,
+    1939
+   ],
+   "realm": "Ukraine",
+   "why": "In the Moldavian ASSR of the Ukrainian SSR until August 1940"
+  },
+  {
+   "place": "Chernivtsi (Romania)",
+   "lonLat": [
+    25.94,
+    48.29
+   ],
+   "years": [
+    1939,
+    1939
+   ],
+   "realm": "Romania",
+   "why": "Northern Bukovina, Romanian until June 1940"
+  },
+  {
+   "place": "Uzhhorod (Hungary)",
+   "lonLat": [
+    22.29,
+    48.62
+   ],
+   "years": [
+    1939,
+    1943
+   ],
+   "realm": "Hungary",
+   "why": "Held by Hungary from March 1939 to October 1944"
+  },
+  {
+   "place": "Kyzyl",
+   "lonLat": [
+    94.45,
+    51.72
+   ],
+   "years": [
+    1939,
+    1943
+   ],
+   "realm": "Tuvan People's Republic",
+   "why": "Capital of the Tuvan People's Republic until October 1944"
+  },
+  {
+   "place": "Kaliningrad (Königsberg)",
+   "lonLat": [
+    20.5,
+    54.7
+   ],
+   "years": [
+    1939,
+    1944
+   ],
+   "realm": "Germany",
+   "why": "Königsberg, in German East Prussia"
+  },
+  {
+   "place": "Klaipėda (Memel)",
+   "lonLat": [
+    21.13,
+    55.7
+   ],
+   "years": [
+    1939,
+    1944
+   ],
+   "realm": "Germany",
+   "why": "Memel, taken by Germany from Lithuania in March 1939"
+  },
+  {
+   "place": "Vyborg (Finland)",
+   "lonLat": [
+    28.73,
+    60.71
+   ],
+   "years": [
+    1939,
+    1939
+   ],
+   "realm": "Finland",
+   "why": "Viipuri, Finnish until March 1940"
+  },
+  {
+   "place": "Vyborg (Karelo-Finnish SSR)",
+   "lonLat": [
+    28.73,
+    60.71
+   ],
+   "years": [
+    1940,
+    1943
+   ],
+   "realm": "Karelo-Finnish SSR",
+   "why": "In the Karelo-Finnish SSR from 1940 to November 1944"
+  },
+  {
+   "place": "Pechenga (Finland)",
+   "lonLat": [
+    31.17,
+    69.55
+   ],
+   "years": [
+    1939,
+    1943
+   ],
+   "realm": "Finland",
+   "why": "Petsamo, Finnish until September 1944"
+  },
+  {
+   "place": "Yuzhno-Sakhalinsk (Toyohara)",
+   "lonLat": [
+    142.7,
+    46.96
+   ],
+   "years": [
+    1939,
+    1944
+   ],
+   "realm": "Japan",
+   "why": "Toyohara, capital of Japanese Karafuto"
+  },
+  {
+   "place": "Kaunas (1939)",
+   "lonLat": [
+    23.9,
+    54.9
+   ],
+   "years": [
+    1939,
+    1939
+   ],
+   "realm": "Lithuania",
+   "why": "Independent Lithuania until the Soviet occupation of June 1940"
   }
  ]
 }

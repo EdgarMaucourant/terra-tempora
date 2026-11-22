@@ -4470,5 +4470,17 @@
   "group": "Soviet Union",
   "groupFrom": "1940-03-31",
   "groupUntil": "1956-07-16"
+ },
+ "Czechoslovakia": {
+  "wikipedia": "Czechoslovakia",
+  "wikidata": "Q33946",
+  "fr": "Tchécoslovaquie",
+  "es": "Checoslovaquia"
+ },
+ "Tuvan People's Republic": {
+  "wikipedia": "Tuvan People's Republic",
+  "wikidata": "Q816709",
+  "fr": "République populaire de Touva",
+  "es": "República Popular de Tuvá"
  }
 }

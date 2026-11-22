@@ -20,7 +20,7 @@
     "LVA",
     "LTU"
    ],
-   "from": 1945,
+   "from": 1939,
    "why": "Russia and the other fourteen republics of the former Soviet Union, with the land held by breakaway states (Chechnya, Transnistria, Abkhazia, South Ossetia, Nagorno-Karabakh) hatched"
   },
   {
@@ -32,7 +32,7 @@
     "agdam-west",
     "fuzuli-west"
    ],
-   "from": 1945,
+   "from": 1939,
    "why": "Cuts for South Ossetia and for the land held by Armenian forces around Nagorno-Karabakh"
   },
   {
@@ -43,12 +43,11 @@
     "klukhori",
     "akhalkhevi"
    ],
-   "from": 1945,
+   "from": 1939,
    "why": "Cuts for land moved between Soviet republics after the war: the Estonian and Latvian border districts given to the Russian SFSR, and the Karachay and Chechen highlands given to the Georgian SSR from 1943-44 to 1957"
   },
   {
    "pieces": [
-    "FIN",
     "DNK",
     "IRN",
     "port-arthur",
@@ -58,6 +57,26 @@
    ],
    "from": 1945,
    "why": "Land outside the Soviet Union that Soviet forces held after the war: Finland (Porkkala), Denmark (Bornholm) and Iran, whose borders have not changed since 1945, and Manchuria with Port Arthur"
+  },
+  {
+   "pieces": [
+    "FIN",
+    "west-minsk",
+    "west-vitebsk",
+    "budjak",
+    "vilnius-region",
+    "memel",
+    "karelian-isthmus",
+    "ladoga-karelia",
+    "salla-kuusamo",
+    "salla",
+    "petsamo",
+    "hanko",
+    "south-sakhalin",
+    "kuril-islands"
+   ],
+   "from": 1939,
+   "why": "Finland, whose borders moved with the Soviet Union in 1940 and 1944, and the cuts for land that changed hands between 1939 and 1946"
   }
  ],
  "changes": [
@@ -553,7 +572,9 @@
    "before": [
     {
      "pieces": [
-      "RUS-2353"
+      "RUS-2353",
+      "ladoga-karelia",
+      "salla-kuusamo"
      ],
      "owner": "Karelo-Finnish SSR",
      "source": {
@@ -739,6 +760,37 @@
    ]
   },
   {
+   "date": "1946-04-07",
+   "what": "Soviet-held northern East Prussia becomes the Königsberg Oblast of the Russian SFSR (Kaliningrad from July 1946)",
+   "source": {
+    "title": "Kaliningrad Oblast (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kaliningrad_Oblast"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2324"
+     ],
+     "owner": "Germany",
+     "source": {
+      "title": "East Prussia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/East_Prussia"
+     },
+     "hatch": {
+      "by": "Soviet Union",
+      "since": "1945-04-09",
+      "note": "German land taken by the Red Army (Königsberg fell on 9 April 1945) and placed under Soviet administration at the Potsdam Conference",
+      "source": {
+       "title": "Battle of Königsberg (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Battle_of_Königsberg"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
    "date": "1946-04-05",
    "what": "Soviet forces leave the Danish island of Bornholm",
    "source": {
@@ -765,6 +817,677 @@
        "url": "https://en.wikipedia.org/wiki/Soviet_occupation_of_Bornholm"
       },
       "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1946-02-02",
+   "what": "The Soviet Union annexes South Sakhalin and the Kuril Islands, taken from Japan in August and September 1945",
+   "source": {
+    "title": "Soviet–Japanese War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Soviet–Japanese_War"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "south-sakhalin"
+     ],
+     "owner": "Japan",
+     "source": {
+      "title": "Karafuto Prefecture (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Karafuto_Prefecture"
+     },
+     "hatch": {
+      "by": "Soviet Union",
+      "since": "1945-08-25",
+      "note": "Japanese land (Karafuto) taken by the Soviet invasion of South Sakhalin in August 1945",
+      "source": {
+       "title": "Invasion of South Sakhalin (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Invasion_of_South_Sakhalin"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "kuril-islands"
+     ],
+     "owner": "Japan",
+     "source": {
+      "title": "Kuril Islands (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kuril_Islands"
+     },
+     "hatch": {
+      "by": "Soviet Union",
+      "since": "1945-09-05",
+      "note": "Japanese islands taken by the Soviet invasion of the Kuril Islands, completed on 5 September 1945; Japan still claims the four southern islands",
+      "source": {
+       "title": "Invasion of the Kuril Islands (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Invasion_of_the_Kuril_Islands"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1945-09-05",
+   "what": "Soviet forces complete the taking of the Kuril Islands",
+   "source": {
+    "title": "Invasion of the Kuril Islands (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Invasion_of_the_Kuril_Islands"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "kuril-islands"
+     ],
+     "owner": "Japan",
+     "source": {
+      "title": "Kuril Islands (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kuril_Islands"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1945-08-25",
+   "what": "Soviet forces complete the taking of South Sakhalin",
+   "source": {
+    "title": "Invasion of South Sakhalin (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Invasion_of_South_Sakhalin"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "south-sakhalin"
+     ],
+     "owner": "Japan",
+     "source": {
+      "title": "Karafuto Prefecture (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Karafuto_Prefecture"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1945-08-16",
+   "what": "Poland accepts the new border with the Soviet Union: the land east of the Curzon Line stays in the Ukrainian and Byelorussian SSRs",
+   "source": {
+    "title": "Polish–Soviet border agreement of August 1945 (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Polish–Soviet_border_agreement_of_August_1945"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "UKR-318",
+      "UKR-286",
+      "UKR-291",
+      "UKR-292",
+      "UKR-289",
+      "BLR-2338",
+      "BLR-2344",
+      "west-minsk",
+      "west-vitebsk"
+     ],
+     "owner": "Poland",
+     "source": {
+      "title": "Kresy (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kresy"
+     },
+     "hatch": {
+      "by": "Soviet Union",
+      "since": "1939-09-17",
+      "note": "Polish land taken by the Soviet invasion of September 1939 and annexed in November 1939; held by Germany from 1941 to 1944; Poland accepted the new border in August 1945",
+      "source": {
+       "title": "Soviet invasion of Poland (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Soviet_invasion_of_Poland"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1945-06-29",
+   "what": "Czechoslovakia cedes Carpathian Ruthenia to the Soviet Union; it becomes the Zakarpattia Oblast of the Ukrainian SSR",
+   "source": {
+    "title": "Carpathian Ruthenia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Carpathian_Ruthenia"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "UKR-293"
+     ],
+     "owner": "Czechoslovakia",
+     "source": {
+      "title": "Carpathian Ruthenia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Carpathian_Ruthenia"
+     },
+     "hatch": {
+      "by": "Soviet Union",
+      "since": "1944-10-27",
+      "note": "Czechoslovak land, held by Hungary from 1939, taken by the Red Army in October 1944 (Uzhhorod on 27 October)",
+      "source": {
+       "title": "Carpathian Ruthenia (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Carpathian_Ruthenia"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1945-04-09",
+   "what": "The Red Army takes Königsberg, capital of East Prussia",
+   "source": {
+    "title": "Battle of Königsberg (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Königsberg"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2324"
+     ],
+     "owner": "Germany",
+     "source": {
+      "title": "East Prussia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/East_Prussia"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1945-01-28",
+   "what": "The Red Army takes Memel (Klaipėda); the Memel Territory goes back to Lithuania, now a Soviet republic",
+   "source": {
+    "title": "Klaipėda Region (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Klaipėda_Region"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "memel"
+     ],
+     "owner": "Germany",
+     "source": {
+      "title": "Klaipėda Region (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Klaipėda_Region"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-11-24",
+   "what": "The Karelian Isthmus with Vyborg moves from the Karelo-Finnish SSR to the Leningrad Oblast of the Russian SFSR",
+   "source": {
+    "title": "Vyborgsky District, Leningrad Oblast (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Vyborgsky_District,_Leningrad_Oblast"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "karelian-isthmus"
+     ],
+     "owner": "Karelo-Finnish SSR",
+     "source": {
+      "title": "Karelian Isthmus (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Karelian_Isthmus"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-10-27",
+   "what": "The Red Army takes Uzhhorod and Carpathian Ruthenia from Hungary",
+   "source": {
+    "title": "Carpathian Ruthenia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Carpathian_Ruthenia"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "UKR-293"
+     ],
+     "owner": "Hungary",
+     "source": {
+      "title": "Carpathian Ruthenia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Carpathian_Ruthenia"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-10-11",
+   "what": "The Tuvan People's Republic joins the Soviet Union, as an autonomous oblast of the Russian SFSR",
+   "source": {
+    "title": "Tuvan People's Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tuvan_People's_Republic"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2605"
+     ],
+     "owner": "Tuvan People's Republic",
+     "source": {
+      "title": "Tuvan People's Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tuvan_People's_Republic"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-09-19",
+   "what": "Moscow Armistice: Finland gives up Petsamo and leases Porkkala to the Soviet Union, and the 1940 border comes back",
+   "source": {
+    "title": "Moscow Armistice (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Moscow_Armistice"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "petsamo"
+     ],
+     "owner": "Finland",
+     "source": {
+      "title": "Petsamo Province (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Petsamo_Province"
+     }
+    },
+    {
+     "pieces": [
+      "porkkala"
+     ],
+     "owner": "Finland",
+     "source": {
+      "title": "Porkkala Naval Base (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Porkkala_Naval_Base"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-12-02",
+   "what": "Soviet forces leave the Hanko naval base, besieged by Finland since June 1941",
+   "source": {
+    "title": "Battle of Hanko (1941) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Hanko_(1941)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "hanko"
+     ],
+     "owner": "Finland",
+     "source": {
+      "title": "Hanko (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hanko"
+     },
+     "hatch": {
+      "by": "Soviet Union",
+      "since": "1940-03-22",
+      "note": "Leased to the Soviet Union as a naval base for 30 years under the Moscow Peace Treaty of 1940; left in December 1941",
+      "source": {
+       "title": "Moscow Peace Treaty (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Moscow_Peace_Treaty"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1940-08-02",
+   "what": "The Moldavian SSR is formed from most of Bessarabia and the western part of the Moldavian ASSR of the Ukrainian SSR",
+   "source": {
+    "title": "Moldavian Soviet Socialist Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Moldavian_Soviet_Socialist_Republic"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "MDA-1652",
+      "MDA-1645",
+      "MDA-1628",
+      "MDA-1637",
+      "MDA-1638",
+      "MDA-1650"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Moldavian Autonomous Soviet Socialist Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Moldavian_Autonomous_Soviet_Socialist_Republic"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1940-06-28",
+   "what": "Romania gives in to a Soviet ultimatum: the Red Army takes Bessarabia, Northern Bukovina and Hertsa",
+   "source": {
+    "title": "Soviet occupation of Bessarabia and Northern Bukovina (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Soviet_occupation_of_Bessarabia_and_Northern_Bukovina"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MDA-1613",
+      "MDA-1614",
+      "MDA-1615",
+      "MDA-1616",
+      "MDA-1617",
+      "MDA-1618",
+      "MDA-1619",
+      "MDA-1620",
+      "MDA-1621",
+      "MDA-1622",
+      "MDA-1623",
+      "MDA-1624",
+      "MDA-1625",
+      "MDA-1626",
+      "MDA-1627",
+      "MDA-1629",
+      "MDA-1630",
+      "MDA-1631",
+      "MDA-1632",
+      "MDA-1633",
+      "MDA-1634",
+      "MDA-1635",
+      "MDA-1639",
+      "MDA-1640",
+      "MDA-1641",
+      "MDA-1642",
+      "MDA-1643",
+      "MDA-1644",
+      "MDA-1646",
+      "MDA-1647",
+      "MDA-1648",
+      "MDA-1649",
+      "MDA-1651",
+      "MDA-1653"
+     ],
+     "owner": "Romania",
+     "source": {
+      "title": "Bessarabia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bessarabia"
+     }
+    },
+    {
+     "pieces": [
+      "UKR-288"
+     ],
+     "owner": "Romania",
+     "source": {
+      "title": "Northern Bukovina (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Northern_Bukovina"
+     }
+    },
+    {
+     "pieces": [
+      "budjak"
+     ],
+     "owner": "Romania",
+     "source": {
+      "title": "Budjak (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Budjak"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1940-06-17",
+   "what": "Soviet forces occupy Estonia, Latvia and Lithuania, annexed in August 1940",
+   "source": {
+    "title": "Occupation of the Baltic states (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Occupation_of_the_Baltic_states"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "EST",
+      "pechory",
+      "ivangorod"
+     ],
+     "owner": "Estonia",
+     "source": {
+      "title": "Occupation of the Baltic states (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Occupation_of_the_Baltic_states"
+     }
+    },
+    {
+     "pieces": [
+      "LVA",
+      "abrene"
+     ],
+     "owner": "Latvia",
+     "source": {
+      "title": "Occupation of the Baltic states (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Occupation_of_the_Baltic_states"
+     }
+    },
+    {
+     "pieces": [
+      "LTU"
+     ],
+     "owner": "Lithuania",
+     "source": {
+      "title": "Occupation of the Baltic states (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Occupation_of_the_Baltic_states"
+     }
+    },
+    {
+     "pieces": [
+      "memel"
+     ],
+     "owner": "Germany",
+     "source": {
+      "title": "Klaipėda Region (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Klaipėda_Region"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1940-03-31",
+   "what": "The Karelo-Finnish SSR is formed from the Karelian ASSR and most of the land taken from Finland",
+   "source": {
+    "title": "Karelo-Finnish Soviet Socialist Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Karelo-Finnish_Soviet_Socialist_Republic"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2353"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Karelian Autonomous Soviet Socialist Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Karelian_Autonomous_Soviet_Socialist_Republic"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1940-03-22",
+   "what": "Soviet forces take over the Hanko naval base",
+   "source": {
+    "title": "Moscow Peace Treaty (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Moscow_Peace_Treaty"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "hanko"
+     ],
+     "owner": "Finland",
+     "source": {
+      "title": "Hanko (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hanko"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1940-03-13",
+   "what": "Moscow Peace Treaty ends the Winter War: Finland gives up the Karelian Isthmus with Vyborg, Ladoga Karelia, and land at Salla and Kuusamo",
+   "source": {
+    "title": "Moscow Peace Treaty (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Moscow_Peace_Treaty"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "karelian-isthmus",
+      "ladoga-karelia",
+      "salla-kuusamo",
+      "salla"
+     ],
+     "owner": "Finland",
+     "source": {
+      "title": "Moscow Peace Treaty (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Moscow_Peace_Treaty"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1939-10-28",
+   "what": "Lithuanian troops enter Vilnius, given to Lithuania by the Soviet Union under their mutual assistance treaty",
+   "source": {
+    "title": "Soviet–Lithuanian Mutual Assistance Treaty (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Soviet–Lithuanian_Mutual_Assistance_Treaty"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "vilnius-region"
+     ],
+     "owner": "Poland",
+     "source": {
+      "title": "Vilnius Region (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Vilnius_Region"
+     },
+     "hatch": {
+      "by": "Soviet Union",
+      "since": "1939-09-19",
+      "note": "Polish land taken by the Red Army on 19 September 1939, then given to Lithuania",
+      "source": {
+       "title": "Soviet invasion of Poland (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Soviet_invasion_of_Poland"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1939-09-19",
+   "what": "The Red Army takes Vilnius",
+   "source": {
+    "title": "Soviet invasion of Poland (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Soviet_invasion_of_Poland"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "vilnius-region"
+     ],
+     "owner": "Poland",
+     "source": {
+      "title": "Vilnius Region (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Vilnius_Region"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1939-09-17",
+   "what": "The Soviet Union invades eastern Poland",
+   "source": {
+    "title": "Soviet invasion of Poland (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Soviet_invasion_of_Poland"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "UKR-318",
+      "UKR-286",
+      "UKR-291",
+      "UKR-292",
+      "UKR-289",
+      "BLR-2338",
+      "BLR-2344",
+      "west-minsk",
+      "west-vitebsk"
+     ],
+     "owner": "Poland",
+     "source": {
+      "title": "Kresy (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kresy"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1939-03-22",
+   "what": "Germany takes the Memel Territory from Lithuania",
+   "source": {
+    "title": "German ultimatum to Lithuania (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/German_ultimatum_to_Lithuania"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "memel"
+     ],
+     "owner": "Lithuania",
+     "source": {
+      "title": "Klaipėda Region (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Klaipėda_Region"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1939-03-15",
+   "what": "Hungary takes Carpathian Ruthenia as Czechoslovakia breaks up",
+   "source": {
+    "title": "Carpatho-Ukraine (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Carpatho-Ukraine"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "UKR-293"
+     ],
+     "owner": "Czechoslovakia",
+     "source": {
+      "title": "Carpathian Ruthenia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Carpathian_Ruthenia"
      }
     }
    ]
