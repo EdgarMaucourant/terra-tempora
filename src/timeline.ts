@@ -193,6 +193,15 @@ export class Timeline {
     this.render();
   }
 
+  /**
+   * Goes `delta` whole years from the year shown, as one pick: the previous
+   * and next year buttons. Skips year 0, which is shown as 1 CE.
+   */
+  step(delta: number) {
+    this.pick(stepYear(this.year, delta), true);
+    this.setYear(this.year);
+  }
+
   /** Replaces the highlighted realms' lanes. */
   setFeatured(featured: Lane[], label: string) {
     this.featured = featured;
@@ -843,9 +852,7 @@ export class Timeline {
     };
     if (e.key in steps) {
       e.preventDefault();
-      const step = steps[e.key] * (e.shiftKey ? 10 : 1);
-      this.pick(Math.round(this.year) + step, true);
-      this.setYear(this.year);
+      this.step(steps[e.key] * (e.shiftKey ? 10 : 1));
     } else if (e.key === "Home" || e.key === "End") {
       e.preventDefault();
       this.pick(e.key === "Home" ? this.min : this.max, true);
@@ -856,6 +863,18 @@ export class Timeline {
       this.zoom(1 / 0.7);
     }
   }
+}
+
+/**
+ * The year `delta` whole years from `year`. There is no year 0 (it is shown
+ * as 1 CE), so a step never lands on it: 1 BCE is followed by 1 CE.
+ */
+export function stepYear(year: number, delta: number): number {
+  let from = Math.round(year);
+  if (from === 0) from = 1;
+  let to = from + delta;
+  if (to === 0 || (from < 0 && to > 0) || (from > 0 && to < 0)) to += delta > 0 ? 1 : -1;
+  return to;
 }
 
 /** What can be focused on the track, besides the knob. */
