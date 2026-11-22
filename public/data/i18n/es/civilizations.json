@@ -317,6 +317,9 @@
  "sweden": {
   "name": "Suecia"
  },
+ "sikh-empire": {
+  "name": "Imperio sij"
+ },
  "iraq": {
   "name": "Irak"
  },
@@ -535,6 +538,9 @@
  },
  "tajikistan": {
   "name": "Tayikistán"
+ },
+ "talpur-dynasty": {
+  "name": "Dinastía Talpur"
  },
  "bangladesh": {
   "name": "Bangladés"
@@ -938,6 +944,9 @@
  "puerto-rico": {
   "name": "Puerto Rico"
  },
+ "kingdom-of-sikkim": {
+  "name": "Reino de Sikkim"
+ },
  "selangor": {
   "name": "Selangor"
  },
@@ -946,9 +955,6 @@
  },
  "german-new-guinea": {
   "name": "Nueva Guinea Alemana"
- },
- "kingdom-of-sikkim": {
-  "name": "Reino de Sikkim"
  },
  "negeri-sembilan": {
   "name": "Negeri Sembilan"

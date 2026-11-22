@@ -10802,6 +10802,149 @@
    ],
    "realm": null,
    "why": "Protectorate over the river lands from 1894"
+  },
+  {
+   "place": "Lahore (Sikh Empire)",
+   "lonLat": [
+    74.34,
+    31.55
+   ],
+   "years": [
+    1840,
+    1848
+   ],
+   "realm": "Sikh Empire",
+   "why": "Annexed by the East India Company in March 1849"
+  },
+  {
+   "place": "Peshawar (Sikh Empire)",
+   "lonLat": [
+    71.57,
+    34.01
+   ],
+   "years": [
+    1840,
+    1848
+   ],
+   "realm": "Sikh Empire",
+   "why": "Annexed with the Punjab in 1849"
+  },
+  {
+   "place": "Amritsar (Sikh Empire)",
+   "lonLat": [
+    74.87,
+    31.63
+   ],
+   "years": [
+    1840,
+    1848
+   ],
+   "realm": "Sikh Empire",
+   "why": "Annexed with the Punjab in 1849"
+  },
+  {
+   "place": "Jalandhar (Sikh Empire)",
+   "lonLat": [
+    75.58,
+    31.33
+   ],
+   "years": [
+    1840,
+    1845
+   ],
+   "realm": "Sikh Empire",
+   "why": "Ceded by the Treaty of Lahore, March 1846"
+  },
+  {
+   "place": "Ludhiana (Company rule)",
+   "lonLat": [
+    75.85,
+    30.9
+   ],
+   "years": [
+    1840,
+    1849
+   ],
+   "realm": "Company rule in India",
+   "why": "British since 1809, south of the Sutlej"
+  },
+  {
+   "place": "Bahawalpur (Company rule)",
+   "lonLat": [
+    71.68,
+    29.39
+   ],
+   "years": [
+    1840,
+    1849
+   ],
+   "realm": "Company rule in India",
+   "why": "Princely state under British protection from 1833"
+  },
+  {
+   "place": "Srinagar (Sikh Empire)",
+   "lonLat": [
+    74.8,
+    34.08
+   ],
+   "years": [
+    1840,
+    1845
+   ],
+   "realm": "Sikh Empire",
+   "why": "Sold to Gulab Singh by the Treaty of Amritsar, March 1846"
+  },
+  {
+   "place": "Hyderabad, Sindh (Talpur amirs)",
+   "lonLat": [
+    68.37,
+    25.39
+   ],
+   "years": [
+    1840,
+    1842
+   ],
+   "realm": "Talpur dynasty",
+   "why": "Annexed by Britain in 1843"
+  },
+  {
+   "place": "Hong Kong Island (China)",
+   "lonLat": [
+    114.2,
+    22.24
+   ],
+   "years": [
+    1840,
+    1840
+   ],
+   "realm": "China",
+   "why": "Taken by Britain in January 1841"
+  },
+  {
+   "place": "Labuan (Brunei)",
+   "lonLat": [
+    115.22,
+    5.3
+   ],
+   "years": [
+    1840,
+    1845
+   ],
+   "realm": "Brunei",
+   "why": "Ceded to Britain in December 1846"
+  },
+  {
+   "place": "Siliguri (Sikkim)",
+   "lonLat": [
+    88.43,
+    26.72
+   ],
+   "years": [
+    1840,
+    1849
+   ],
+   "realm": "Kingdom of Sikkim",
+   "why": "Annexed by Britain in 1850"
   }
  ]
 }
