@@ -11757,6 +11757,156 @@
    "summary": "The Dadiani princes of Mingrelia had ruled under Russian protection since 1803. After running the principality through a regency from 1857, Russia deposes the young Prince Niko Dadiani and abolishes the principality in 1867, making Mingrelia part of the Kutaisi Governorate.",
    "wikipedia": "Principality_of_Mingrelia",
    "search": "Principality of Mingrelia abolished 1867 Niko Dadiani deposed Zugdidi Russian protectorate 1803 Kutaisi Governorate Dadiani dynasty"
+  },
+  {
+   "id": "kingdom-of-poland-1815",
+   "kind": "treaty",
+   "year": 1815,
+   "title": "The Kingdom of Poland is created under the tsar, 1815",
+   "place": "Warsaw",
+   "lonLat": [
+    21.01,
+    52.23
+   ],
+   "civs": [
+    "congress-poland",
+    "russia"
+   ],
+   "summary": "The Congress of Vienna divides Napoleon's Duchy of Warsaw. Most of it becomes the Kingdom of Poland, with its own constitution, army and parliament but with the Russian emperor as its king; Prussia takes Poznan and Krakow becomes a free city.",
+   "wikipedia": "Congress_Poland",
+   "search": "Congress of Vienna 1815 Kingdom of Poland Congress Poland Alexander I king constitution 27 November 1815 Duchy of Warsaw partition Prussia Austria Krakow"
+  },
+  {
+   "id": "middle-juz-abolished-1822",
+   "kind": "empire",
+   "year": 1822,
+   "title": "Russia abolishes the khan of the Middle juz, 1822",
+   "place": "Karkaraly",
+   "lonLat": [
+    73.1,
+    49.8
+   ],
+   "civs": [
+    "middle-juz",
+    "russia",
+    "kazakhstan"
+   ],
+   "summary": "Under Russian protection since 1740, the Kazakhs of the Middle juz kept their own khans. Speransky's statute on the Siberian Kazakhs of 22 July 1822 abolishes the khanship and divides the steppe into Russian districts run by sultans under Russian officials; the first, Karkaraly and Kokshetau, open in 1824.",
+   "wikipedia": "Middle_jüz",
+   "search": "Middle juz khan abolished 1822 Speransky statute Siberian Kirghiz okrugs Karkaraly Kokshetau Russian administration Kazakh steppe"
+  },
+  {
+   "id": "junior-juz-abolished-1824",
+   "kind": "empire",
+   "year": 1824,
+   "title": "Russia abolishes the khan of the Junior juz, 1824",
+   "place": "Western Kazakh steppe",
+   "lonLat": [
+    57.2,
+    50.28
+   ],
+   "civs": [
+    "junior-juz",
+    "russia",
+    "kazakhstan"
+   ],
+   "summary": "Russia removes Khan Shirgazy in 1824 and abolishes the khanship of the Junior juz, under its protection since 1731. Its Kazakhs are split into three parts, each under a sultan named by the Orenburg governor.",
+   "wikipedia": "Junior_jüz",
+   "search": "Junior juz khan abolished 1824 Orenburg Kirghiz Shirgazy khan three parts sultans-rulers Orenburg Frontier Commission Kazakh steppe"
+  },
+  {
+   "id": "november-uprising-1830",
+   "kind": "revolution",
+   "year": 1830,
+   "to": 1831,
+   "title": "The November Uprising in Poland, 1830 – 1831",
+   "place": "Warsaw",
+   "lonLat": [
+    21.01,
+    52.23
+   ],
+   "civs": [
+    "congress-poland",
+    "russia"
+   ],
+   "summary": "On 29 November 1830 young officers in Warsaw rise against Russian rule. The Polish parliament dethrones Tsar Nicholas I in January 1831 and the Polish army fights Russia for most of the year, but Warsaw falls in September 1831. Russia then withdraws Poland's constitution, disbands its army and parliament, and thousands of Poles go into exile.",
+   "wikipedia": "November_Uprising",
+   "search": "November Uprising 1830 1831 Polish-Russian War cadets Belweder Sejm dethrones Nicholas I Grochow Ostroleka Warsaw falls September 1831 Organic Statute 1832 Great Emigration"
+  },
+  {
+   "id": "kenesary-revolt-1837",
+   "kind": "war",
+   "year": 1837,
+   "to": 1847,
+   "title": "Kenesary's Kazakh revolt, 1837 – 1847",
+   "place": "Central Kazakh steppe",
+   "lonLat": [
+    70.0,
+    47.0
+   ],
+   "civs": [
+    "russia",
+    "kazakhstan",
+    "middle-juz"
+   ],
+   "summary": "Sultan Kenesary Kasymov, grandson of Ablai Khan, leads the Kazakhs of the Middle juz against Russian rule from 1837. Proclaimed khan of all the Kazakhs in 1841, he sets up his own state in the central steppe, but pushed south by Russian troops he is killed by the Kyrgyz in 1847, the last khan of the Kazakhs.",
+   "wikipedia": "Kenesary_Khan",
+   "search": "Kenesary Kasymov revolt 1837 1847 Kazakh uprising khan 1841 Akmolinsk Turgay Kazakh Khanate last khan Kyrgyz killed 1847 Russian rule steppe"
+  },
+  {
+   "id": "nikolayevsk-founded-1850",
+   "kind": "empire",
+   "year": 1850,
+   "title": "Russia raises its flag at the mouth of the Amur, 1850",
+   "place": "Nikolayevsk-on-Amur",
+   "lonLat": [
+    140.73,
+    53.14
+   ],
+   "civs": [
+    "russia",
+    "china"
+   ],
+   "summary": "Exploring the Amur estuary against orders, Captain Gennady Nevelskoy proves that Sakhalin is an island and that ships can reach the river. On 13 August 1850 he raises the Russian flag at the mouth of the Amur and founds Nikolayevsk on land the Qing still claimed; Russian posts follow along the river before the Treaty of Aigun.",
+   "wikipedia": "Nikolayevsk-on-Amur",
+   "search": "Nikolayevsk founded 13 August 1850 Nevelskoy Amur mouth Russian flag Amur expedition Muravyov Qing Nerchinsk Mariinsky post Sakhalin strait"
+  },
+  {
+   "id": "ak-mechet-1853",
+   "kind": "siege",
+   "year": 1853,
+   "title": "Russia takes Ak-Mechet on the Syr Darya, 1853",
+   "place": "Ak-Mechet (Kyzylorda)",
+   "lonLat": [
+    65.5,
+    44.85
+   ],
+   "civs": [
+    "russia",
+    "khanate-of-kokand"
+   ],
+   "summary": "General Vasily Perovsky leads a column from Orenburg up the Syr Darya and storms the Kokand fortress of Ak-Mechet on 9 August 1853. Renamed Fort Perovsky, it anchors Russia's Syr Darya line, the starting point of the conquest of Turkestan a decade later.",
+   "wikipedia": "Kyzylorda",
+   "search": "Ak-Mechet siege 1853 Perovsky Kokand fortress Syr Darya Fort Perovsky Kyzylorda Syr Darya line Russian conquest of Turkestan"
+  },
+  {
+   "id": "treaty-of-paris-bessarabia-1856",
+   "kind": "treaty",
+   "year": 1856,
+   "title": "The Treaty of Paris ends the Crimean War, March 1856",
+   "place": "Izmail",
+   "lonLat": [
+    28.84,
+    45.35
+   ],
+   "civs": [
+    "russia",
+    "moldavia",
+    "ottoman-empire"
+   ],
+   "summary": "Defeated in the Crimean War, Russia signs the Treaty of Paris on 30 March 1856. It gives Kars back to the Ottomans, loses the mouths of the Danube and Southern Bessarabia (Izmail, Bolhrad, Cahul) to Moldavia, and may no longer keep a war fleet on the Black Sea.",
+   "wikipedia": "Treaty_of_Paris_(1856)",
+   "search": "Treaty of Paris 30 March 1856 Crimean War end Russia Southern Bessarabia Moldavia Danube mouths Black Sea neutralised Izmail Bolhrad Cahul"
   }
  ]
 }
