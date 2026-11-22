@@ -1077,6 +1077,10 @@ a {
 }
 
 .year-number {
+  /* Room for four digits, so the next year button stays put under the
+     finger as the year goes from 999 to 1000. */
+  min-width: 4ch;
+  text-align: center;
   font: 600 44px/1 var(--font-display);
   font-variant-numeric: tabular-nums lining-nums;
   letter-spacing: -0.02em;
@@ -1087,6 +1091,47 @@ a {
   font-weight: 600;
   letter-spacing: 0.12em;
   color: var(--ink-soft);
+}
+
+/* The previous and next year buttons on either side of the year. */
+.year-step {
+  display: grid;
+  place-items: center;
+  flex: none;
+  align-self: center;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.year-step svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+@media (hover: hover) {
+  .year-step:hover:not(:disabled) {
+    border-color: var(--steppe);
+  }
+}
+
+.year-step:disabled {
+  opacity: 0.35;
+  cursor: default;
 }
 
 .year-period {
@@ -2784,6 +2829,17 @@ a {
 
   .year-era {
     font-size: 10px;
+  }
+
+  /* Bigger buttons for a thumb. */
+  .year-step {
+    width: 34px;
+    height: 34px;
+  }
+
+  .year-step svg {
+    width: 18px;
+    height: 18px;
   }
 
   .year-period {
