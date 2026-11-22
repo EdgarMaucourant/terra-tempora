@@ -20,7 +20,7 @@
     "LVA",
     "LTU"
    ],
-   "from": 1905,
+   "from": 1878,
    "why": "Russia and the other fourteen republics of the former Soviet Union, with the land held by breakaway states (Chechnya, Transnistria, Abkhazia, South Ossetia, Nagorno-Karabakh) hatched"
   },
   {
@@ -32,7 +32,7 @@
     "agdam-west",
     "fuzuli-west"
    ],
-   "from": 1905,
+   "from": 1878,
    "why": "Cuts for South Ossetia and for the land held by Armenian forces around Nagorno-Karabakh"
   },
   {
@@ -43,7 +43,7 @@
     "klukhori",
     "akhalkhevi"
    ],
-   "from": 1905,
+   "from": 1878,
    "why": "Cuts for land moved between Soviet republics after the war: the Estonian and Latvian border districts given to the Russian SFSR, and the Karachay and Chechen highlands given to the Georgian SSR from 1943-44 to 1957"
   },
   {
@@ -75,7 +75,7 @@
     "south-sakhalin",
     "kuril-islands"
    ],
-   "from": 1905,
+   "from": 1878,
    "why": "Finland, whose borders moved with the Soviet Union in 1940 and 1944, and the cuts for land that changed hands between 1939 and 1946"
   },
   {
@@ -86,14 +86,14 @@
     "kaluga-west",
     "voronezh-west"
    ],
-   "from": 1905,
+   "from": 1878,
    "why": "Cuts for Soviet land held by Germany and Finland in 1941-44 that was only part of a region"
   },
   {
    "pieces": [
     "KAB"
    ],
-   "from": 1905,
+   "from": 1878,
    "why": "The Baikonur Cosmodrome area, part of Kazakhstan, leased to Russia since 1994"
   },
   {
@@ -103,7 +103,7 @@
     "bobruisk",
     "khiva-delta"
    ],
-   "from": 1905,
+   "from": 1878,
    "why": "Cuts for land moved between Soviet republics in the 1920s: Taganrog and Shakhty, Gomel and Rechytsa, Bobruisk, and the Khivan part of Karakalpakstan"
   },
   {
@@ -131,7 +131,7 @@
     "salla-kuusamo",
     "salla"
    ],
-   "from": 1905,
+   "from": 1878,
    "why": "Finland, the Baltic states, Belarus, Ukraine and Moldova from the Russian Revolution, drawn as states held at the end of each year"
   },
   {
@@ -141,7 +141,7 @@
     "TUR-2298",
     "TUR-4840"
    ],
-   "from": 1905,
+   "from": 1878,
    "why": "Kars, Ardahan, Artvin and Surmalu (Iğdır): Russian from 1878 to 1918, fought over until the Treaty of Kars of 1921"
   },
   {
@@ -158,7 +158,7 @@
     "ru-cp-pol-3144",
     "POL-3149"
    ],
-   "from": 1905,
+   "from": 1878,
    "why": "The Russian part of Poland (Congress Poland and Bialystok), from 1905 to today; the rest of Poland is not yet rebuilt"
   }
  ],
@@ -8418,6 +8418,69 @@
      "source": {
       "title": "Sakhalin Oblast (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Sakhalin_Oblast"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1895-03-11",
+   "what": "The Anglo-Russian Pamir agreement fixes Russia's border with Afghanistan on the Panj; Russia keeps the Pamirs north of it, held since its expeditions of 1891-1893",
+   "source": {
+    "title": "Pamir Mountains (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Pamir_Mountains"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TJK-366"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Great Game (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Great_Game"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1884-03-13",
+   "what": "The Merv oasis submits to Russia; Russia takes Panjdeh in March 1885, fixing its border with Afghanistan",
+   "source": {
+    "title": "Merv (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Merv"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TKM-360"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Panjdeh incident (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Panjdeh_incident"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1881-01-24",
+   "what": "Russia storms the Turkmen fortress of Geok Tepe and annexes the Akhal oasis; Ashgabat is founded the same year",
+   "source": {
+    "title": "Battle of Geok Tepe (1881) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Geok_Tepe_(1881)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "TKM-352"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Battle of Geok Tepe (1881) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Geok_Tepe_(1881)"
      }
     }
    ]
