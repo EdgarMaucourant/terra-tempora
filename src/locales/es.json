@@ -389,6 +389,8 @@
     "marksGripLabel": "Cambiar el tamaño de los iconos de acontecimientos",
     "marksGripTitle": "Arrastra para agrandar los iconos de acontecimientos. Doble clic para restablecerlos.",
     "more": "Más opciones de la línea de tiempo",
+    "nextYear": "Año siguiente",
+    "prevYear": "Año anterior",
     "rightLabel": "Cambiar el tamaño de la línea de tiempo desde la derecha: arrastra o usa las flechas izquierda y derecha",
     "unfold": "Mostrar los reinos y acontecimientos",
     "itemsLabel": "Reinos y eventos de la línea de tiempo: las flechas pasan de uno a otro",
