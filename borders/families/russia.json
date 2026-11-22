@@ -105,6 +105,34 @@
    ],
    "from": 1922,
    "why": "Cuts for land moved between Soviet republics in the 1920s: Taganrog and Shakhty, Gomel and Rechytsa, Bobruisk, and the Khivan part of Karakalpakstan"
+  },
+  {
+   "pieces": [
+    "FIN",
+    "EST",
+    "LVA",
+    "LTU",
+    "BLR",
+    "UKR",
+    "MDA",
+    "west-minsk",
+    "west-vitebsk",
+    "budjak",
+    "vilnius-region",
+    "memel",
+    "pechory",
+    "ivangorod",
+    "abrene",
+    "petsamo",
+    "east-gomel",
+    "bobruisk",
+    "karelian-isthmus",
+    "ladoga-karelia",
+    "salla-kuusamo",
+    "salla"
+   ],
+   "from": 1917,
+   "why": "Finland, the Baltic states, Belarus, Ukraine and Moldova from the Russian Revolution, drawn as states held at the end of each year"
   }
  ],
  "changes": [
@@ -2098,7 +2126,8 @@
    "before": [
     {
      "pieces": [
-      "UKR-284"
+      "UKR-284",
+      "ukr-held-2022-mykolayiv"
      ],
      "owner": "Ukraine",
      "source": {
@@ -2191,7 +2220,8 @@
    "before": [
     {
      "pieces": [
-      "UKR-4827"
+      "UKR-4827",
+      "ukr-held-2022-kherson"
      ],
      "owner": "Ukraine",
      "source": {
@@ -2545,7 +2575,9 @@
    "before": [
     {
      "pieces": [
-      "UKR-331"
+      "UKR-331",
+      "ukr-held-2022-zaporizhzhya",
+      "ukr-held-2025-zaporizhzhya"
      ],
      "owner": "Ukraine",
      "source": {
@@ -2700,7 +2732,12 @@
    "before": [
     {
      "pieces": [
-      "UKR-327"
+      "UKR-327",
+      "ukr-held-2014-donetsk",
+      "ukr-held-2022-donetsk",
+      "ukr-held-2023-donetsk",
+      "ukr-held-2024-donetsk",
+      "ukr-held-2025-donetsk"
      ],
      "owner": "Ukraine",
      "source": {
@@ -2762,7 +2799,9 @@
    "before": [
     {
      "pieces": [
-      "UKR-328"
+      "UKR-328",
+      "ukr-held-2024-kharkiv",
+      "ukr-held-2025-kharkiv"
      ],
      "owner": "Ukraine",
      "source": {
@@ -2917,7 +2956,11 @@
    "before": [
     {
      "pieces": [
-      "UKR-329"
+      "UKR-329",
+      "ukr-held-2014-luhansk",
+      "ukr-held-2022-luhansk",
+      "ukr-held-2023-luhansk",
+      "ukr-held-2024-luhansk"
      ],
      "owner": "Ukraine",
      "source": {
@@ -3276,7 +3319,11 @@
    "before": [
     {
      "pieces": [
-      "UKR-329"
+      "UKR-329",
+      "ukr-held-2014-luhansk",
+      "ukr-held-2022-luhansk",
+      "ukr-held-2023-luhansk",
+      "ukr-held-2024-luhansk"
      ],
      "owner": "Ukraine",
      "source": {
@@ -3411,7 +3458,9 @@
    "before": [
     {
      "pieces": [
-      "UKR-328"
+      "UKR-328",
+      "ukr-held-2024-kharkiv",
+      "ukr-held-2025-kharkiv"
      ],
      "owner": "Ukraine",
      "source": {
@@ -3453,7 +3502,12 @@
    "before": [
     {
      "pieces": [
-      "UKR-327"
+      "UKR-327",
+      "ukr-held-2014-donetsk",
+      "ukr-held-2022-donetsk",
+      "ukr-held-2023-donetsk",
+      "ukr-held-2024-donetsk",
+      "ukr-held-2025-donetsk"
      ],
      "owner": "Ukraine",
      "source": {
@@ -3558,7 +3612,9 @@
    "before": [
     {
      "pieces": [
-      "UKR-331"
+      "UKR-331",
+      "ukr-held-2022-zaporizhzhya",
+      "ukr-held-2025-zaporizhzhya"
      ],
      "owner": "Ukraine",
      "source": {
@@ -3848,7 +3904,8 @@
    "before": [
     {
      "pieces": [
-      "UKR-4827"
+      "UKR-4827",
+      "ukr-held-2022-kherson"
      ],
      "owner": "Ukraine",
      "source": {
@@ -3912,7 +3969,8 @@
    "before": [
     {
      "pieces": [
-      "UKR-284"
+      "UKR-284",
+      "ukr-held-2022-mykolayiv"
      ],
      "owner": "Ukraine",
      "source": {
@@ -5236,6 +5294,1024 @@
      "source": {
       "title": "Klaipėda Region (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Klaipėda_Region"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1922-03-24",
+   "what": "Poland annexes the Republic of Central Lithuania (Vilnius and its region)",
+   "source": {
+    "title": "Republic of Central Lithuania (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Republic_of_Central_Lithuania"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "vilnius-region"
+     ],
+     "owner": "Republic of Central Lithuania",
+     "source": {
+      "title": "Republic of Central Lithuania (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Republic_of_Central_Lithuania"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1920-10-14",
+   "what": "Treaty of Tartu: Soviet Russia recognises Finland and gives it Petsamo, with an outlet to the Arctic Ocean",
+   "source": {
+    "title": "Treaty of Tartu (Finland–Russia) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Tartu_(Finland–Russia)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "petsamo"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Petsamo Province (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Petsamo_Province"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1920-10-12",
+   "what": "General Żeligowski's staged mutiny: Polish troops take Vilnius from Lithuania and set up the Republic of Central Lithuania",
+   "source": {
+    "title": "Żeligowski's Mutiny (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Żeligowski's_Mutiny"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "vilnius-region"
+     ],
+     "owner": "Lithuania",
+     "source": {
+      "title": "Vilnius Region (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Vilnius_Region"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1920-08-11",
+   "what": "Latvian–Soviet Peace Treaty: Soviet Russia recognises Latvia, with Abrene (Pytalovo)",
+   "source": {
+    "title": "Latvian–Soviet Peace Treaty (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Latvian–Soviet_Peace_Treaty"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "abrene"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Latvian–Soviet Peace Treaty (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Latvian–Soviet_Peace_Treaty"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1920-07-14",
+   "what": "The Red Army takes Vilnius from Poland, then hands it to Lithuania in August 1920",
+   "source": {
+    "title": "Polish–Soviet War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Polish–Soviet_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "vilnius-region"
+     ],
+     "owner": "Poland",
+     "source": {
+      "title": "Vilnius offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Vilnius_offensive"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1920-07-11",
+   "what": "The Red Army retakes Minsk; the Byelorussian SSR is proclaimed again on 31 July",
+   "source": {
+    "title": "Polish–Soviet War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Polish–Soviet_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "BLR-2345",
+      "BLR-4825",
+      "bobruisk"
+     ],
+     "owner": "Belarus",
+     "source": {
+      "title": "Polish–Soviet War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Polish–Soviet_War"
+     },
+     "hatch": {
+      "by": "Poland",
+      "since": "1919-08-08",
+      "note": "Held by Poland in the Polish–Soviet War, from the taking of Minsk in August 1919 to July 1920",
+      "source": {
+       "title": "Polish–Soviet War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Polish–Soviet_War"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1920-02-15",
+   "what": "The Memel Territory is detached from Germany under the Treaty of Versailles and placed under French administration",
+   "source": {
+    "title": "Klaipėda Region (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Klaipėda_Region"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "memel"
+     ],
+     "owner": "Germany",
+     "source": {
+      "title": "Klaipėda Region (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Klaipėda_Region"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1920-02-02",
+   "what": "Treaty of Tartu: Soviet Russia recognises Estonia, with Ivangorod and Pechory (Petseri), held by Estonia since 1919",
+   "source": {
+    "title": "Treaty of Tartu (Russian–Estonian) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Tartu_(Russian–Estonian)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "pechory",
+      "ivangorod"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Petseri County (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Petseri_County"
+     },
+     "hatch": {
+      "by": "Estonia",
+      "since": "1919-05-25",
+      "note": "Russian land taken by Estonian forces in the War of Independence in 1919",
+      "source": {
+       "title": "Estonian War of Independence (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Estonian_War_of_Independence"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1920-01-03",
+   "what": "Latvian and Polish forces take Daugavpils; by February 1920 Latgale is freed from the Red Army",
+   "source": {
+    "title": "Latvian War of Independence (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Latvian_War_of_Independence"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "LVA-1081",
+      "LVA-4850",
+      "LVA-1064",
+      "LVA-5747",
+      "LVA-5748",
+      "LVA-5746",
+      "LVA-1065",
+      "LVA-5745",
+      "LVA-5744",
+      "LVA-5743",
+      "LVA-5742",
+      "LVA-5741",
+      "LVA-1063",
+      "LVA-1066",
+      "LVA-4851",
+      "LVA-5753",
+      "LVA-5752",
+      "LVA-1089",
+      "LVA-5751",
+      "LVA-5750",
+      "LVA-5800"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Latgale (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Latgale"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1919-09-10",
+   "what": "Treaty of Saint-Germain: Carpathian Ruthenia goes to Czechoslovakia",
+   "source": {
+    "title": "Carpathian Ruthenia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Carpathian_Ruthenia"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "UKR-293"
+     ],
+     "owner": "Hungary",
+     "source": {
+      "title": "Carpathian Ruthenia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Carpathian_Ruthenia"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1919-08-08",
+   "what": "Polish forces take Minsk and push the front to the Berezina",
+   "source": {
+    "title": "Polish–Soviet War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Polish–Soviet_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "BLR-2345",
+      "BLR-4825",
+      "bobruisk"
+     ],
+     "owner": "Belarus",
+     "source": {
+      "title": "Polish–Soviet War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Polish–Soviet_War"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1919-07-17",
+   "what": "Poland completes the taking of Eastern Galicia from the West Ukrainian People's Republic",
+   "source": {
+    "title": "Polish–Ukrainian War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Polish–Ukrainian_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "UKR-291",
+      "UKR-292",
+      "UKR-289"
+     ],
+     "owner": "West Ukrainian People's Republic",
+     "source": {
+      "title": "West Ukrainian People's Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/West_Ukrainian_People's_Republic"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1919-05-25",
+   "what": "Estonian forces take Pechory and the land east of Narva",
+   "source": {
+    "title": "Estonian War of Independence (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Estonian_War_of_Independence"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "pechory",
+      "ivangorod"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Petseri County (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Petseri_County"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1919-05-16",
+   "what": "Polish forces take western Volhynia from the Ukrainian People's Republic; Poland keeps it under the Peace of Riga of 1921",
+   "source": {
+    "title": "Peace of Riga (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Peace_of_Riga"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-318",
+      "UKR-286"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Volhynian Governorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Volhynian_Governorate"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1919-04-21",
+   "what": "Polish forces take Vilnius",
+   "source": {
+    "title": "Vilna offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Vilna_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "vilnius-region"
+     ],
+     "owner": "Lithuania",
+     "source": {
+      "title": "Vilnius Region (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Vilnius_Region"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1919-02-09",
+   "what": "Polish forces move into the land left by the Germans: Brest, then Grodno in April; Poland keeps it under the Peace of Riga of 1921",
+   "source": {
+    "title": "Peace of Riga (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Peace_of_Riga"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "BLR-2338",
+      "BLR-2344"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Ober Ost (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ober_Ost"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1915-08-26",
+      "note": "Russian land held by Germany from the Great Retreat of 1915 until the end of the First World War",
+      "source": {
+       "title": "Ober Ost (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Ober_Ost"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "west-minsk",
+      "west-vitebsk"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Minsk Governorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Minsk_Governorate"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1919-01-01",
+   "what": "The Socialist Soviet Republic of Byelorussia is proclaimed in Smolensk, then seated in Minsk",
+   "source": {
+    "title": "Byelorussian Soviet Socialist Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Byelorussian_Soviet_Socialist_Republic"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "BLR-2345",
+      "BLR-4825",
+      "bobruisk",
+      "BLR-2339"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Minsk Governorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Minsk_Governorate"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-11-28",
+   "what": "The Congress of Bukovina votes for union with Romania, whose troops entered Chernivtsi on 11 November",
+   "source": {
+    "title": "Union of Bukovina with Romania (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Union_of_Bukovina_with_Romania"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "UKR-288"
+     ],
+     "owner": "Austria-Hungary",
+     "source": {
+      "title": "Duchy of Bukovina (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Duchy_of_Bukovina"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-11-18",
+   "what": "Latvia declares independence in Riga as the German army withdraws",
+   "source": {
+    "title": "Latvian Declaration of Independence (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Latvian_Declaration_of_Independence"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "LVA-5724",
+      "LVA-5733",
+      "LVA-5735",
+      "LVA-1068",
+      "LVA-5718",
+      "LVA-5715",
+      "LVA-5713",
+      "LVA-5740",
+      "LVA-1079",
+      "LVA-5739",
+      "LVA-1084",
+      "LVA-5738",
+      "LVA-5734",
+      "LVA-5749",
+      "LVA-5717",
+      "LVA-4848",
+      "LVA-5716",
+      "LVA-5719",
+      "LVA-934",
+      "LVA-4852",
+      "LVA-5721",
+      "LVA-5722",
+      "LVA-1091",
+      "LVA-5723",
+      "LVA-5759",
+      "LVA-5764",
+      "LVA-1094",
+      "LVA-5758",
+      "LVA-5776",
+      "LVA-5756",
+      "LVA-5760",
+      "LVA-5767",
+      "LVA-5771",
+      "LVA-5772",
+      "LVA-5775",
+      "LVA-5780",
+      "LVA-5777",
+      "LVA-5757",
+      "LVA-5766",
+      "LVA-5736",
+      "LVA-5769",
+      "LVA-5732",
+      "LVA-5725",
+      "LVA-5727",
+      "LVA-5714",
+      "LVA-5709",
+      "LVA-5710",
+      "LVA-5712",
+      "LVA-5765",
+      "LVA-1092",
+      "LVA-1082",
+      "LVA-5763",
+      "LVA-5711",
+      "LVA-5737",
+      "LVA-4849",
+      "LVA-5720",
+      "LVA-5762",
+      "LVA-5754"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Courland Governorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Courland_Governorate"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1915-08-01",
+      "note": "Russian land held by Germany from the Great Retreat of 1915 until the end of the First World War (Courland from 1915, Riga from September 1917)",
+      "source": {
+       "title": "Ober Ost (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Ober_Ost"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "LVA-5796",
+      "LVA-5791",
+      "LVA-5755",
+      "LVA-5792",
+      "LVA-5774",
+      "LVA-5782",
+      "LVA-1077",
+      "LVA-1076",
+      "LVA-5742",
+      "LVA-5743",
+      "LVA-5744",
+      "LVA-5745",
+      "LVA-1065",
+      "LVA-5746",
+      "LVA-1081",
+      "LVA-5747",
+      "LVA-1064",
+      "LVA-1086",
+      "LVA-5798",
+      "LVA-1063",
+      "LVA-5795",
+      "LVA-5783",
+      "LVA-5784",
+      "LVA-5788",
+      "LVA-1066",
+      "LVA-5797",
+      "LVA-5799",
+      "LVA-5794",
+      "LVA-5793",
+      "LVA-5768",
+      "LVA-1083",
+      "LVA-5741",
+      "LVA-5787",
+      "LVA-5748",
+      "LVA-5752",
+      "LVA-5753",
+      "LVA-5770",
+      "LVA-5778",
+      "LVA-1087",
+      "LVA-5790",
+      "LVA-5800",
+      "LVA-5781",
+      "LVA-5786",
+      "LVA-5785",
+      "LVA-1088",
+      "LVA-5773",
+      "LVA-5761",
+      "LVA-5728",
+      "LVA-5729",
+      "LVA-5730",
+      "LVA-5731",
+      "LVA-1089",
+      "LVA-5750",
+      "LVA-5751",
+      "LVA-5726",
+      "LVA-4850",
+      "LVA-4851",
+      "LVA-1093",
+      "LVA-1080",
+      "LVA-5789",
+      "LVA-1085"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Governorate of Livonia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Governorate_of_Livonia"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-11-16",
+   "what": "Hungary leaves Austria-Hungary and becomes a republic, with Carpathian Ruthenia",
+   "source": {
+    "title": "Hungarian Democratic Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Hungarian_Democratic_Republic"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "UKR-293"
+     ],
+     "owner": "Austria-Hungary",
+     "source": {
+      "title": "Carpathian Ruthenia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Carpathian_Ruthenia"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-11-11",
+   "what": "As Germany surrenders, the Estonian Provisional Government, which declared independence on 24 February 1918, takes power from the German occupiers",
+   "source": {
+    "title": "Estonian War of Independence (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Estonian_War_of_Independence"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "EST-2352",
+      "EST-1660"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Governorate of Estonia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Governorate_of_Estonia"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1917-10-20",
+      "note": "The West Estonian islands, taken by Germany in Operation Albion in October 1917",
+      "source": {
+       "title": "Operation Albion (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Operation_Albion"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "EST-2350",
+      "EST-2346",
+      "EST-2349",
+      "EST-2351",
+      "EST-1655",
+      "EST-2347",
+      "EST-1659",
+      "EST-1657",
+      "EST-1661",
+      "EST-1654",
+      "EST-1658",
+      "EST-2348",
+      "EST-1656"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Governorate of Estonia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Governorate_of_Estonia"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-11-11",
+   "what": "As Germany surrenders, the Lithuanian government, which declared independence on 16 February 1918, takes power",
+   "source": {
+    "title": "Act of Independence of Lithuania (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Act_of_Independence_of_Lithuania"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "LTU-1074",
+      "LTU-1075",
+      "LTU-1067",
+      "LTU-1071",
+      "LTU-936",
+      "LTU-935",
+      "LTU-1072",
+      "LTU-1070",
+      "LTU-1073",
+      "LTU-1069",
+      "vilnius-region"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Ober Ost (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ober_Ost"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1915-09-19",
+      "note": "Russian land held by Germany from the Great Retreat of 1915 until the end of the First World War",
+      "source": {
+       "title": "Ober Ost (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Ober_Ost"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-11-01",
+   "what": "The West Ukrainian People's Republic is proclaimed in Lviv as Austria-Hungary breaks up; Polish forces hold Lviv from 22 November",
+   "source": {
+    "title": "West Ukrainian People's Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/West_Ukrainian_People's_Republic"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "UKR-291",
+      "UKR-292",
+      "UKR-289"
+     ],
+     "owner": "Austria-Hungary",
+     "source": {
+      "title": "Kingdom of Galicia and Lodomeria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Galicia_and_Lodomeria"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-04-09",
+   "what": "The Sfatul Țării votes for the union of Bessarabia with Romania, whose troops arrived in January 1918",
+   "source": {
+    "title": "Union of Bessarabia with Romania (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Union_of_Bessarabia_with_Romania"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MDA-1613",
+      "MDA-1615",
+      "MDA-1617",
+      "MDA-1621",
+      "MDA-1620",
+      "MDA-1623",
+      "MDA-1642",
+      "MDA-1639",
+      "MDA-1641",
+      "MDA-1631",
+      "MDA-1624",
+      "MDA-1616",
+      "MDA-1614",
+      "MDA-1653",
+      "MDA-1651",
+      "MDA-1649",
+      "MDA-1633",
+      "MDA-1630",
+      "MDA-1625",
+      "MDA-1626",
+      "MDA-1634",
+      "MDA-1647",
+      "MDA-1629",
+      "MDA-1643",
+      "MDA-1627",
+      "MDA-1648",
+      "MDA-1646",
+      "MDA-1635",
+      "MDA-1644",
+      "MDA-1640",
+      "MDA-1632",
+      "MDA-1619",
+      "MDA-1622",
+      "MDA-1618",
+      "budjak"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Bessarabia Governorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bessarabia_Governorate"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-01-22",
+   "what": "The Central Rada declares the Ukrainian People's Republic independent",
+   "source": {
+    "title": "Ukrainian People's Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Ukrainian_People's_Republic"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "UKR-285",
+      "UKR-324",
+      "UKR-321",
+      "UKR-322",
+      "UKR-323",
+      "UKR-325",
+      "UKR-328",
+      "UKR-329",
+      "UKR-327",
+      "UKR-4827",
+      "UKR-331",
+      "UKR-284",
+      "UKR-330",
+      "UKR-290",
+      "UKR-326",
+      "UKR-319",
+      "UKR-320",
+      "UKR-4826",
+      "ukr-held-2014-luhansk",
+      "ukr-held-2022-luhansk",
+      "ukr-held-2023-luhansk",
+      "ukr-held-2024-luhansk",
+      "ukr-held-2014-donetsk",
+      "ukr-held-2022-donetsk",
+      "ukr-held-2023-donetsk",
+      "ukr-held-2024-donetsk",
+      "ukr-held-2025-donetsk",
+      "ukr-held-2022-kherson",
+      "ukr-held-2022-zaporizhzhya",
+      "ukr-held-2025-zaporizhzhya",
+      "ukr-held-2022-mykolayiv",
+      "ukr-held-2024-kharkiv",
+      "ukr-held-2025-kharkiv",
+      "UKR-318",
+      "UKR-286",
+      "MDA-1652",
+      "MDA-1645",
+      "MDA-1628",
+      "MDA-1637",
+      "MDA-1638",
+      "MDA-1650"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Ukrainian People's Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ukrainian_People's_Republic"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1917-10-20",
+   "what": "Germany takes the West Estonian islands (Saaremaa, Hiiumaa and Muhu) in Operation Albion",
+   "source": {
+    "title": "Operation Albion (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Operation_Albion"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "EST-2352",
+      "EST-1660"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Governorate of Estonia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Governorate_of_Estonia"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1915-09-19",
+   "what": "Germany takes Vilnius; all of Lithuania is now German-held",
+   "source": {
+    "title": "Great Retreat (Russian) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Great_Retreat_(Russian)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "LTU-1074",
+      "LTU-1075",
+      "LTU-1067",
+      "LTU-1071",
+      "LTU-936",
+      "LTU-935",
+      "LTU-1072",
+      "LTU-1070",
+      "LTU-1073",
+      "LTU-1069",
+      "vilnius-region"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Vilna Governorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Vilna_Governorate"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1915-08-26",
+   "what": "Germany takes Brest-Litovsk, and Grodno in September",
+   "source": {
+    "title": "Great Retreat (Russian) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Great_Retreat_(Russian)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "BLR-2338",
+      "BLR-2344"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Grodno Governorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Grodno_Governorate"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1915-08-01",
+   "what": "Germany takes Mitau (Jelgava) and most of Courland in the Great Retreat",
+   "source": {
+    "title": "Great Retreat (Russian) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Great_Retreat_(Russian)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "LVA-5724",
+      "LVA-5733",
+      "LVA-5735",
+      "LVA-1068",
+      "LVA-5718",
+      "LVA-5715",
+      "LVA-5713",
+      "LVA-5740",
+      "LVA-1079",
+      "LVA-5739",
+      "LVA-1084",
+      "LVA-5738",
+      "LVA-5734",
+      "LVA-5749",
+      "LVA-5717",
+      "LVA-4848",
+      "LVA-5716",
+      "LVA-5719",
+      "LVA-934",
+      "LVA-4852",
+      "LVA-5721",
+      "LVA-5722",
+      "LVA-1091",
+      "LVA-5723",
+      "LVA-5759",
+      "LVA-5764",
+      "LVA-1094",
+      "LVA-5758",
+      "LVA-5776",
+      "LVA-5756",
+      "LVA-5760",
+      "LVA-5767",
+      "LVA-5771",
+      "LVA-5772",
+      "LVA-5775",
+      "LVA-5780",
+      "LVA-5777",
+      "LVA-5757",
+      "LVA-5766",
+      "LVA-5736",
+      "LVA-5769",
+      "LVA-5732",
+      "LVA-5725",
+      "LVA-5727",
+      "LVA-5714",
+      "LVA-5709",
+      "LVA-5710",
+      "LVA-5712",
+      "LVA-5765",
+      "LVA-1092",
+      "LVA-1082",
+      "LVA-5763",
+      "LVA-5711",
+      "LVA-5737",
+      "LVA-4849",
+      "LVA-5720",
+      "LVA-5762",
+      "LVA-5754"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Courland Governorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Courland_Governorate"
      }
     }
    ]

@@ -12942,6 +12942,441 @@
    ],
    "realm": "Georgia",
    "why": "Capital of the Georgian SSR"
+  },
+  {
+   "place": "Kyiv (Russia, 1917)",
+   "lonLat": [
+    30.52,
+    50.45
+   ],
+   "years": [
+    1917,
+    1917
+   ],
+   "realm": "Russia",
+   "why": "In the Russian Republic until the Ukrainian independence of January 1918"
+  },
+  {
+   "place": "Kyiv (Ukrainian People's Republic)",
+   "lonLat": [
+    30.52,
+    50.45
+   ],
+   "years": [
+    1918,
+    1918
+   ],
+   "realm": "Ukraine",
+   "why": "Capital of the Ukrainian People's Republic"
+  },
+  {
+   "place": "Ternopil (West Ukrainian PR)",
+   "lonLat": [
+    25.6,
+    49.55
+   ],
+   "years": [
+    1918,
+    1918
+   ],
+   "realm": "West Ukrainian People's Republic",
+   "why": "Held by the West Ukrainian People's Republic from November 1918 to July 1919"
+  },
+  {
+   "place": "Lviv (Austria-Hungary)",
+   "lonLat": [
+    24.03,
+    49.84
+   ],
+   "years": [
+    1917,
+    1917
+   ],
+   "realm": "Austria-Hungary",
+   "why": "Lemberg, capital of Austrian Galicia"
+  },
+  {
+   "place": "Lviv (Poland, 1919)",
+   "lonLat": [
+    24.03,
+    49.84
+   ],
+   "years": [
+    1919,
+    1921
+   ],
+   "realm": "Poland",
+   "why": "Polish from 1919"
+  },
+  {
+   "place": "Lutsk (Poland, 1919)",
+   "lonLat": [
+    25.33,
+    50.75
+   ],
+   "years": [
+    1919,
+    1921
+   ],
+   "realm": "Poland",
+   "why": "Held by Poland from May 1919"
+  },
+  {
+   "place": "Chernivtsi (Austria-Hungary)",
+   "lonLat": [
+    25.94,
+    48.29
+   ],
+   "years": [
+    1917,
+    1917
+   ],
+   "realm": "Austria-Hungary",
+   "why": "Czernowitz, capital of the Austrian Duchy of Bukovina"
+  },
+  {
+   "place": "Chernivtsi (Romania, 1918)",
+   "lonLat": [
+    25.94,
+    48.29
+   ],
+   "years": [
+    1918,
+    1921
+   ],
+   "realm": "Romania",
+   "why": "Romanian from November 1918"
+  },
+  {
+   "place": "Uzhhorod (Hungary, 1918)",
+   "lonLat": [
+    22.29,
+    48.62
+   ],
+   "years": [
+    1918,
+    1918
+   ],
+   "realm": "Hungary",
+   "why": "Ungvár, in Hungary until 1919"
+  },
+  {
+   "place": "Uzhhorod (Czechoslovakia, 1919)",
+   "lonLat": [
+    22.29,
+    48.62
+   ],
+   "years": [
+    1919,
+    1921
+   ],
+   "realm": "Czechoslovakia",
+   "why": "In Czechoslovakia from 1919"
+  },
+  {
+   "place": "Chisinau (Russia, 1917)",
+   "lonLat": [
+    28.86,
+    47.0
+   ],
+   "years": [
+    1917,
+    1917
+   ],
+   "realm": "Russia",
+   "why": "In the Bessarabia Governorate until 1918"
+  },
+  {
+   "place": "Chisinau (Romania, 1918)",
+   "lonLat": [
+    28.86,
+    47.0
+   ],
+   "years": [
+    1918,
+    1921
+   ],
+   "realm": "Romania",
+   "why": "Romanian from April 1918"
+  },
+  {
+   "place": "Riga (German-held, 1917)",
+   "lonLat": [
+    24.11,
+    56.95
+   ],
+   "years": [
+    1917,
+    1917
+   ],
+   "realm": "Russia",
+   "why": "Taken by Germany in September 1917",
+   "heldBy": [
+    {
+     "years": [
+      1917,
+      1917
+     ],
+     "by": "Germany"
+    }
+   ]
+  },
+  {
+   "place": "Riga (Latvia, 1919)",
+   "lonLat": [
+    24.11,
+    56.95
+   ],
+   "years": [
+    1918,
+    1921
+   ],
+   "realm": "Latvia",
+   "why": "Capital of Latvia from November 1918"
+  },
+  {
+   "place": "Daugavpils (1919)",
+   "lonLat": [
+    26.53,
+    55.88
+   ],
+   "years": [
+    1919,
+    1919
+   ],
+   "realm": "Russia",
+   "why": "Held by the Red Army until January 1920"
+  },
+  {
+   "place": "Tallinn (1917)",
+   "lonLat": [
+    24.75,
+    59.44
+   ],
+   "years": [
+    1917,
+    1917
+   ],
+   "realm": "Russia",
+   "why": "Reval, in the Governorate of Estonia"
+  },
+  {
+   "place": "Tallinn (Estonia, 1918)",
+   "lonLat": [
+    24.75,
+    59.44
+   ],
+   "years": [
+    1918,
+    1921
+   ],
+   "realm": "Estonia",
+   "why": "Capital of Estonia"
+  },
+  {
+   "place": "Kuressaare (German-held, 1917)",
+   "lonLat": [
+    22.48,
+    58.25
+   ],
+   "years": [
+    1917,
+    1917
+   ],
+   "realm": "Russia",
+   "why": "Saaremaa, taken by Germany in October 1917",
+   "heldBy": [
+    {
+     "years": [
+      1917,
+      1917
+     ],
+     "by": "Germany"
+    }
+   ]
+  },
+  {
+   "place": "Kaunas (German-held, 1917)",
+   "lonLat": [
+    23.9,
+    54.9
+   ],
+   "years": [
+    1917,
+    1917
+   ],
+   "realm": "Russia",
+   "why": "Kovno, German-held from 1915 to 1918",
+   "heldBy": [
+    {
+     "years": [
+      1917,
+      1917
+     ],
+     "by": "Germany"
+    }
+   ]
+  },
+  {
+   "place": "Kaunas (Lithuania, 1918)",
+   "lonLat": [
+    23.9,
+    54.9
+   ],
+   "years": [
+    1918,
+    1921
+   ],
+   "realm": "Lithuania",
+   "why": "Temporary capital of Lithuania from 1920"
+  },
+  {
+   "place": "Vilnius (Central Lithuania)",
+   "lonLat": [
+    25.28,
+    54.69
+   ],
+   "years": [
+    1920,
+    1921
+   ],
+   "realm": "Republic of Central Lithuania",
+   "why": "Capital of the Republic of Central Lithuania, October 1920 to March 1922"
+  },
+  {
+   "place": "Vilnius (Poland, 1919)",
+   "lonLat": [
+    25.28,
+    54.69
+   ],
+   "years": [
+    1919,
+    1919
+   ],
+   "realm": "Poland",
+   "why": "Wilno, Polish-held from April 1919 to July 1920"
+  },
+  {
+   "place": "Klaipėda (Germany, 1919)",
+   "lonLat": [
+    21.13,
+    55.7
+   ],
+   "years": [
+    1917,
+    1919
+   ],
+   "realm": "Germany",
+   "why": "Memel, German until February 1920"
+  },
+  {
+   "place": "Klaipėda (French-administered)",
+   "lonLat": [
+    21.13,
+    55.7
+   ],
+   "years": [
+    1920,
+    1922
+   ],
+   "realm": "France",
+   "why": "Under French administration for the Allies, 1920 to January 1923"
+  },
+  {
+   "place": "Minsk (Polish-held, 1919)",
+   "lonLat": [
+    27.56,
+    53.9
+   ],
+   "years": [
+    1919,
+    1919
+   ],
+   "realm": "Belarus",
+   "why": "Held by Poland from August 1919 to July 1920",
+   "heldBy": [
+    {
+     "years": [
+      1919,
+      1919
+     ],
+     "by": "Poland"
+    }
+   ]
+  },
+  {
+   "place": "Minsk (1920)",
+   "lonLat": [
+    27.56,
+    53.9
+   ],
+   "years": [
+    1920,
+    1921
+   ],
+   "realm": "Belarus",
+   "why": "Capital of the Byelorussian SSR"
+  },
+  {
+   "place": "Minsk (Russia, 1917)",
+   "lonLat": [
+    27.56,
+    53.9
+   ],
+   "years": [
+    1917,
+    1918
+   ],
+   "realm": "Russia",
+   "why": "In the Minsk Governorate until the Byelorussian SSR of January 1919"
+  },
+  {
+   "place": "Brest (German-held, 1917)",
+   "lonLat": [
+    23.83,
+    52.1
+   ],
+   "years": [
+    1917,
+    1918
+   ],
+   "realm": "Russia",
+   "why": "Brest-Litovsk, German-held from 1915 to February 1919",
+   "heldBy": [
+    {
+     "years": [
+      1917,
+      1918
+     ],
+     "by": "Germany"
+    }
+   ]
+  },
+  {
+   "place": "Brest (Poland, 1919)",
+   "lonLat": [
+    23.83,
+    52.1
+   ],
+   "years": [
+    1919,
+    1921
+   ],
+   "realm": "Poland",
+   "why": "Polish from February 1919"
+  },
+  {
+   "place": "Pechenga (Russia, 1919)",
+   "lonLat": [
+    31.17,
+    69.55
+   ],
+   "years": [
+    1917,
+    1919
+   ],
+   "realm": "Russia",
+   "why": "Russian until the Treaty of Tartu of 1920"
   }
  ]
 }
