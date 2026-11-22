@@ -1242,6 +1242,33 @@
      "url": "https://en.wikipedia.org/wiki/Russian-occupied_territories_of_Ukraine"
     }
    }
+  },
+  "south-ossetia": {
+   "owner": "Georgia",
+   "hatch": {
+    "by": "South Ossetia",
+    "since": "1992-06-24",
+    "note": "Out of Georgia's control since the 1991-1992 war, which the Sochi agreement ended; recognised by Russia and a few states only (Georgian villages inside it held out until 2008)",
+    "source": {
+     "title": "South Ossetia (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/South_Ossetia"
+    },
+    "map": "https://commons.wikimedia.org/wiki/File:South_Ossetia_map.svg",
+    "rough": true
+   }
+  },
+  "akhalgori": {
+   "owner": "Georgia",
+   "hatch": {
+    "by": "South Ossetia",
+    "since": "2008-08-16",
+    "note": "Held by South Ossetia and Russian forces since the war of August 2008; recognised by Russia and a few states only",
+    "source": {
+     "title": "Akhalgori Municipality (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Akhalgori_Municipality"
+    },
+    "rough": true
+   }
   }
  }
 }

@@ -1,6 +1,12 @@
 {
+ "soviet-union": {
+  "name": "Union soviétique"
+ },
  "russia": {
   "name": "Russie"
+ },
+ "russian-sfsr": {
+  "name": "RSFS de Russie"
  },
  "united-kingdom": {
   "name": "Royaume-Uni"
@@ -46,6 +52,9 @@
  },
  "kazakhstan": {
   "name": "Kazakhstan"
+ },
+ "kazakh-ssr": {
+  "name": "RSS kazakhe"
  },
  "french-equatorial-africa": {
   "name": "Afrique-Équatoriale française"
@@ -266,6 +275,9 @@
  "ukraine": {
   "name": "Ukraine"
  },
+ "ukrainian-ssr": {
+  "name": "RSS d'Ukraine"
+ },
  "madagascar": {
   "name": "Madagascar"
  },
@@ -305,6 +317,9 @@
  "turkmenistan": {
   "name": "Turkménistan"
  },
+ "turkmen-ssr": {
+  "name": "RSS de Turkménie"
+ },
  "papua-new-guinea": {
   "name": "Papouasie-Nouvelle-Guinée"
  },
@@ -322,6 +337,9 @@
  },
  "uzbekistan": {
   "name": "Ouzbékistan"
+ },
+ "uzbek-ssr": {
+  "name": "RSS d'Ouzbékistan"
  },
  "sweden": {
   "name": "Suède"
@@ -479,11 +497,17 @@
  "belarus": {
   "name": "Biélorussie"
  },
+ "byelorussian-ssr": {
+  "name": "RSS de Biélorussie"
+ },
  "mandate-for-syria-and-the-lebanon": {
   "name": "Mandat français en Syrie et au Liban"
  },
  "kyrgyzstan": {
   "name": "Kirghizistan"
+ },
+ "kirghiz-ssr": {
+  "name": "RSS kirghize"
  },
  "senegal": {
   "name": "Sénégal"
@@ -544,6 +568,9 @@
  },
  "tajikistan": {
   "name": "Tadjikistan"
+ },
+ "tajik-ssr": {
+  "name": "RSS du Tadjikistan"
  },
  "talpur-dynasty": {
   "name": "Émirs talpur du Sind"
@@ -647,6 +674,9 @@
  "azerbaijan": {
   "name": "Azerbaïdjan"
  },
+ "azerbaijan-ssr": {
+  "name": "RSS d'Azerbaïdjan"
+ },
  "austria": {
   "name": "Autriche"
  },
@@ -697,6 +727,9 @@
  },
  "georgia": {
   "name": "Géorgie"
+ },
+ "georgian-ssr": {
+  "name": "RSS de Géorgie"
  },
  "ireland": {
   "name": "Irlande"
@@ -803,6 +836,9 @@
  "moldova": {
   "name": "Moldavie"
  },
+ "moldavian-ssr": {
+  "name": "RSS de Moldavie"
+ },
  "guinea-bissau": {
   "name": "Guinée-Bissau"
  },
@@ -814,6 +850,9 @@
  },
  "armenia": {
   "name": "Arménie"
+ },
+ "armenian-ssr": {
+  "name": "RSS d'Arménie"
  },
  "albania": {
   "name": "Albanie"
