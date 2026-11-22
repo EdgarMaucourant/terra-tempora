@@ -1,0 +1,642 @@
+{
+ "family": "Russia",
+ "note": "Russia, as the Russian Federation, the Soviet Union and the Russian Empire, with the land of the other Soviet republics, walked back from 2026.",
+ "reviewed": [
+  {
+   "pieces": [
+    "RUS",
+    "UKR",
+    "BLR",
+    "MDA",
+    "GEO",
+    "ARM",
+    "AZE",
+    "KAZ",
+    "UZB",
+    "TKM",
+    "KGZ",
+    "TJK",
+    "EST",
+    "LVA",
+    "LTU"
+   ],
+   "from": 1985,
+   "why": "Russia and the other fourteen republics of the former Soviet Union, with the land held by breakaway states (Chechnya, Transnistria, Abkhazia, South Ossetia, Nagorno-Karabakh) hatched"
+  },
+  {
+   "pieces": [
+    "south-ossetia",
+    "akhalgori",
+    "hadrut",
+    "tartar-west",
+    "agdam-west",
+    "fuzuli-west"
+   ],
+   "from": 1985,
+   "why": "Cuts for South Ossetia and for the land held by Armenian forces around Nagorno-Karabakh"
+  }
+ ],
+ "changes": [
+  {
+   "date": "2023-09-20",
+   "what": "Azerbaijan's offensive of 19-20 September 2023 ends the Republic of Artsakh, whose forces lay down their arms; nearly all Karabakh Armenians leave",
+   "source": {
+    "title": "2023 Azerbaijani offensive in Nagorno-Karabakh (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/2023_Azerbaijani_offensive_in_Nagorno-Karabakh"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "AZE-4838",
+      "AZE-1739",
+      "AZE-1734",
+      "tartar-west"
+     ],
+     "owner": "Azerbaijan",
+     "source": {
+      "title": "Republic of Artsakh (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Republic_of_Artsakh"
+     },
+     "hatch": {
+      "by": "Republic of Artsakh",
+      "since": "1992-05-18",
+      "note": "Held by the Armenian forces of the self-declared Republic of Artsakh (Nagorno-Karabakh Republic) since the war of 1988-1994, with Shusha and Lachin taken in May 1992; recognised by no UN member, not even Armenia",
+      "source": {
+       "title": "Republic of Artsakh (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Republic_of_Artsakh"
+      },
+      "rough": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "2020-11-10",
+   "what": "The 2020 war: Azerbaijan retakes Shusha, Hadrut and the districts in the south, and the ceasefire of 10 November hands back Agdam, Kalbajar and Lachin by 1 December",
+   "source": {
+    "title": "2020 Nagorno-Karabakh ceasefire agreement (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/2020_Nagorno-Karabakh_ceasefire_agreement"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "AZE-1737",
+      "AZE-5565",
+      "hadrut",
+      "AZE-1735"
+     ],
+     "owner": "Azerbaijan",
+     "source": {
+      "title": "Republic of Artsakh (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Republic_of_Artsakh"
+     },
+     "hatch": {
+      "by": "Republic of Artsakh",
+      "since": "1992-05-18",
+      "note": "Held by the Armenian forces of the self-declared Republic of Artsakh (Nagorno-Karabakh Republic) since the war of 1988-1994, with Shusha and Lachin taken in May 1992; recognised by no UN member, not even Armenia",
+      "source": {
+       "title": "Republic of Artsakh (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Republic_of_Artsakh"
+      },
+      "rough": true
+     }
+    },
+    {
+     "pieces": [
+      "AZE-1682",
+      "AZE-1736",
+      "AZE-1740",
+      "AZE-1699",
+      "agdam-west",
+      "fuzuli-west"
+     ],
+     "owner": "Azerbaijan",
+     "source": {
+      "title": "First Nagorno-Karabakh War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/First_Nagorno-Karabakh_War"
+     },
+     "hatch": {
+      "by": "Republic of Artsakh",
+      "since": "1993-10-30",
+      "note": "Districts of Azerbaijan around Nagorno-Karabakh taken by Armenian forces in 1993 (Kalbajar in April, Agdam in July, Fuzuli, Jabrayil and Qubadli in August, Zangilan in October), held until 2020 (UN Security Council resolutions 822, 853, 874 and 884)",
+      "source": {
+       "title": "First Nagorno-Karabakh War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/First_Nagorno-Karabakh_War"
+      },
+      "rough": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "2008-08-16",
+   "what": "In the August 2008 war, Russian and South Ossetian forces take the Akhalgori district of Georgia; Russia then recognises South Ossetia and Abkhazia",
+   "source": {
+    "title": "Russo-Georgian War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Russo-Georgian_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "akhalgori"
+     ],
+     "owner": "Georgia",
+     "source": {
+      "title": "Akhalgori Municipality (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Akhalgori_Municipality"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1999-10-01",
+   "what": "Russian forces enter Chechnya in the Second Chechen War and take most of it by the end of 1999 (Grozny in February 2000)",
+   "source": {
+    "title": "Second Chechen War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Second_Chechen_War"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Map_of_Chechnya.svg",
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2416"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Chechen Republic of Ichkeria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chechen_Republic_of_Ichkeria"
+     },
+     "hatch": {
+      "by": "Chechen Republic of Ichkeria",
+      "since": "1996-08-31",
+      "note": "Held by the Chechen Republic of Ichkeria after Russian forces left under the Khasavyurt Accord, which put off a decision on its status until 2001; recognised by no UN member",
+      "source": {
+       "title": "Khasavyurt Accord (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Khasavyurt_Accord"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1996-08-31",
+   "what": "The Khasavyurt Accord ends the First Chechen War: Russian forces leave Chechnya",
+   "source": {
+    "title": "Khasavyurt Accord (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Khasavyurt_Accord"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Map_of_Chechnya.svg",
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2416"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "First Chechen War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/First_Chechen_War"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1994-12-11",
+   "what": "Russian forces invade Chechnya, starting the First Chechen War",
+   "source": {
+    "title": "First Chechen War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/First_Chechen_War"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Map_of_Chechnya.svg",
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2416"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Chechen Republic of Ichkeria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chechen_Republic_of_Ichkeria"
+     },
+     "hatch": {
+      "by": "Chechen Republic of Ichkeria",
+      "since": "1991-11-01",
+      "note": "Held by the separatist Chechen Republic of Ichkeria, which declared independence in November 1991; recognised by no UN member",
+      "source": {
+       "title": "Chechen Republic of Ichkeria (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Chechen_Republic_of_Ichkeria"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1993-10-30",
+   "what": "Armenian forces take the districts of Azerbaijan around Nagorno-Karabakh during 1993: Kalbajar, Agdam, Fuzuli, Jabrayil, Qubadli and Zangilan",
+   "source": {
+    "title": "First Nagorno-Karabakh War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/First_Nagorno-Karabakh_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "AZE-1682",
+      "AZE-1736",
+      "AZE-1740",
+      "AZE-1699",
+      "agdam-west",
+      "fuzuli-west"
+     ],
+     "owner": "Azerbaijan",
+     "source": {
+      "title": "Azerbaijan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Azerbaijan"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1993-09-30",
+   "what": "Abkhaz forces take Sukhumi and drive Georgian forces out of Abkhazia",
+   "source": {
+    "title": "War in Abkhazia (1992–1993) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/War_in_Abkhazia_(1992–1993)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GEO-3015"
+     ],
+     "owner": "Georgia",
+     "source": {
+      "title": "Abkhaz Autonomous Soviet Socialist Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Abkhaz_Autonomous_Soviet_Socialist_Republic"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1992-07-21",
+   "what": "The ceasefire agreement ending the Transnistria War leaves the land east of the Dniester, with Bender, outside Moldova's control",
+   "source": {
+    "title": "Transnistria War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Transnistria_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "MDA-1638",
+      "MDA-1652",
+      "MDA-1645",
+      "MDA-1628",
+      "MDA-1637",
+      "MDA-1650"
+     ],
+     "owner": "Moldova",
+     "source": {
+      "title": "Moldova (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Moldova"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1992-06-24",
+   "what": "The Sochi agreement ends the South Ossetia war, leaving most of South Ossetia outside Georgia's control",
+   "source": {
+    "title": "1991–1992 South Ossetia War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/1991–1992_South_Ossetia_War"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:South_Ossetia_map.svg",
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "south-ossetia"
+     ],
+     "owner": "Georgia",
+     "source": {
+      "title": "South Ossetian Autonomous Oblast (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/South_Ossetian_Autonomous_Oblast"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1992-05-18",
+   "what": "Armenian forces take Shusha and Lachin, linking Nagorno-Karabakh with Armenia",
+   "source": {
+    "title": "First Nagorno-Karabakh War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/First_Nagorno-Karabakh_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "AZE-4838",
+      "AZE-1739",
+      "AZE-1737",
+      "AZE-5565",
+      "AZE-1734",
+      "hadrut",
+      "tartar-west",
+      "AZE-1735"
+     ],
+     "owner": "Azerbaijan",
+     "source": {
+      "title": "Nagorno-Karabakh Autonomous Oblast (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Nagorno-Karabakh_Autonomous_Oblast"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1991-12-26",
+   "what": "The Soviet Union is dissolved: its twelve remaining republics become independent states, Russia among them",
+   "source": {
+    "title": "Dissolution of the Soviet Union (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Republics_of_the_USSR.svg",
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "RUS"
+     ],
+     "owner": "Soviet Union",
+     "source": {
+      "title": "Russian Soviet Federative Socialist Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Russian_Soviet_Federative_Socialist_Republic"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Republics_of_the_USSR.svg",
+     "territory": "Russian SFSR"
+    },
+    {
+     "pieces": [
+      "RUS-283",
+      "RUS-5482"
+     ],
+     "owner": "Soviet Union",
+     "source": {
+      "title": "Crimean Oblast (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Crimean_Oblast"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Republics_of_the_USSR.svg",
+     "territory": "Ukrainian SSR"
+    },
+    {
+     "pieces": [
+      "RUS-2416"
+     ],
+     "owner": "Soviet Union",
+     "source": {
+      "title": "Chechen Republic of Ichkeria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chechen_Republic_of_Ichkeria"
+     },
+     "territory": "Russian SFSR",
+     "hatch": {
+      "by": "Chechen Republic of Ichkeria",
+      "since": "1991-11-01",
+      "note": "Held by the separatist Chechen Republic of Ichkeria, which declared independence in November 1991; recognised by no UN member",
+      "source": {
+       "title": "Chechen Republic of Ichkeria (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Chechen_Republic_of_Ichkeria"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "UKR"
+     ],
+     "owner": "Soviet Union",
+     "source": {
+      "title": "Ukrainian Soviet Socialist Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ukrainian_Soviet_Socialist_Republic"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Republics_of_the_USSR.svg",
+     "territory": "Ukrainian SSR"
+    },
+    {
+     "pieces": [
+      "BLR"
+     ],
+     "owner": "Soviet Union",
+     "source": {
+      "title": "Byelorussian Soviet Socialist Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Byelorussian_Soviet_Socialist_Republic"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Republics_of_the_USSR.svg",
+     "territory": "Byelorussian SSR"
+    },
+    {
+     "pieces": [
+      "MDA"
+     ],
+     "owner": "Soviet Union",
+     "source": {
+      "title": "Moldavian Soviet Socialist Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Moldavian_Soviet_Socialist_Republic"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Republics_of_the_USSR.svg",
+     "territory": "Moldavian SSR"
+    },
+    {
+     "pieces": [
+      "GEO"
+     ],
+     "owner": "Soviet Union",
+     "source": {
+      "title": "Georgian Soviet Socialist Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Georgian_Soviet_Socialist_Republic"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Republics_of_the_USSR.svg",
+     "territory": "Georgian SSR"
+    },
+    {
+     "pieces": [
+      "ARM"
+     ],
+     "owner": "Soviet Union",
+     "source": {
+      "title": "Armenian Soviet Socialist Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Armenian_Soviet_Socialist_Republic"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Republics_of_the_USSR.svg",
+     "territory": "Armenian SSR"
+    },
+    {
+     "pieces": [
+      "AZE"
+     ],
+     "owner": "Soviet Union",
+     "source": {
+      "title": "Azerbaijan Soviet Socialist Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Azerbaijan_Soviet_Socialist_Republic"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Republics_of_the_USSR.svg",
+     "territory": "Azerbaijan SSR"
+    },
+    {
+     "pieces": [
+      "KAZ"
+     ],
+     "owner": "Soviet Union",
+     "source": {
+      "title": "Kazakh Soviet Socialist Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kazakh_Soviet_Socialist_Republic"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Republics_of_the_USSR.svg",
+     "territory": "Kazakh SSR"
+    },
+    {
+     "pieces": [
+      "UZB"
+     ],
+     "owner": "Soviet Union",
+     "source": {
+      "title": "Uzbek Soviet Socialist Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Uzbek_Soviet_Socialist_Republic"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Republics_of_the_USSR.svg",
+     "territory": "Uzbek SSR"
+    },
+    {
+     "pieces": [
+      "TKM"
+     ],
+     "owner": "Soviet Union",
+     "source": {
+      "title": "Turkmen Soviet Socialist Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Turkmen_Soviet_Socialist_Republic"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Republics_of_the_USSR.svg",
+     "territory": "Turkmen SSR"
+    },
+    {
+     "pieces": [
+      "KGZ"
+     ],
+     "owner": "Soviet Union",
+     "source": {
+      "title": "Kirghiz Soviet Socialist Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kirghiz_Soviet_Socialist_Republic"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Republics_of_the_USSR.svg",
+     "territory": "Kirghiz SSR"
+    },
+    {
+     "pieces": [
+      "TJK"
+     ],
+     "owner": "Soviet Union",
+     "source": {
+      "title": "Tajik Soviet Socialist Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tajik_Soviet_Socialist_Republic"
+     },
+     "map": "https://commons.wikimedia.org/wiki/File:Republics_of_the_USSR.svg",
+     "territory": "Tajik SSR"
+    }
+   ]
+  },
+  {
+   "date": "1991-11-01",
+   "what": "Chechnya declares independence as the Chechen Republic of Ichkeria",
+   "source": {
+    "title": "Chechen Republic of Ichkeria (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Chechen_Republic_of_Ichkeria"
+   },
+   "map": "https://commons.wikimedia.org/wiki/File:Map_of_Chechnya.svg",
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2416"
+     ],
+     "owner": "Soviet Union",
+     "source": {
+      "title": "Checheno-Ingush Autonomous Soviet Socialist Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Checheno-Ingush_Autonomous_Soviet_Socialist_Republic"
+     },
+     "territory": "Russian SFSR"
+    }
+   ]
+  },
+  {
+   "date": "1991-09-06",
+   "what": "The Soviet Union recognises the independence of Estonia, Latvia and Lithuania",
+   "source": {
+    "title": "Singing Revolution (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Singing_Revolution"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "EST"
+     ],
+     "owner": "Estonia",
+     "source": {
+      "title": "Occupation of the Baltic states (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Occupation_of_the_Baltic_states"
+     },
+     "hatch": {
+      "by": "Soviet Union",
+      "since": "1940-06-17",
+      "note": "Occupied by the Soviet Union in June 1940 and annexed in August 1940 as the Estonian SSR; most Western states never recognised the annexation",
+      "source": {
+       "title": "Occupation of the Baltic states (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Occupation_of_the_Baltic_states"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "LVA"
+     ],
+     "owner": "Latvia",
+     "source": {
+      "title": "Occupation of the Baltic states (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Occupation_of_the_Baltic_states"
+     },
+     "hatch": {
+      "by": "Soviet Union",
+      "since": "1940-06-17",
+      "note": "Occupied by the Soviet Union in June 1940 and annexed in August 1940 as the Latvian SSR; most Western states never recognised the annexation",
+      "source": {
+       "title": "Occupation of the Baltic states (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Occupation_of_the_Baltic_states"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "LTU"
+     ],
+     "owner": "Lithuania",
+     "source": {
+      "title": "Occupation of the Baltic states (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Occupation_of_the_Baltic_states"
+     },
+     "hatch": {
+      "by": "Soviet Union",
+      "since": "1940-06-17",
+      "note": "Occupied by the Soviet Union in June 1940 and annexed in August 1940 as the Lithuanian SSR; most Western states never recognised the annexation",
+      "source": {
+       "title": "Occupation of the Baltic states (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Occupation_of_the_Baltic_states"
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

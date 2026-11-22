@@ -11322,6 +11322,573 @@
    ],
    "realm": "British Raj",
    "why": "North-East Frontier Tracts from 1914"
+  },
+  {
+   "place": "Moscow (Soviet)",
+   "lonLat": [
+    37.62,
+    55.75
+   ],
+   "years": [
+    1985,
+    1990
+   ],
+   "realm": "Russian SFSR",
+   "why": "Capital of the Soviet Union and of the Russian SFSR until December 1991"
+  },
+  {
+   "place": "Moscow",
+   "lonLat": [
+    37.62,
+    55.75
+   ],
+   "years": [
+    1991,
+    2026
+   ],
+   "realm": "Russia",
+   "why": "Capital of Russia since the end of the Soviet Union"
+  },
+  {
+   "place": "Kyiv (Soviet)",
+   "lonLat": [
+    30.52,
+    50.45
+   ],
+   "years": [
+    1985,
+    1990
+   ],
+   "realm": "Ukrainian SSR",
+   "why": "Soviet republic until December 1991"
+  },
+  {
+   "place": "Kyiv",
+   "lonLat": [
+    30.52,
+    50.45
+   ],
+   "years": [
+    1991,
+    2026
+   ],
+   "realm": "Ukraine",
+   "why": "Independent since 1991"
+  },
+  {
+   "place": "Sevastopol (Soviet)",
+   "lonLat": [
+    33.52,
+    44.6
+   ],
+   "years": [
+    1985,
+    1990
+   ],
+   "realm": "Ukrainian SSR",
+   "why": "Part of the Ukrainian SSR since 1954"
+  },
+  {
+   "place": "Minsk (Soviet)",
+   "lonLat": [
+    27.56,
+    53.9
+   ],
+   "years": [
+    1985,
+    1990
+   ],
+   "realm": "Byelorussian SSR",
+   "why": "Soviet republic until December 1991"
+  },
+  {
+   "place": "Chisinau (Soviet)",
+   "lonLat": [
+    28.83,
+    47.0
+   ],
+   "years": [
+    1985,
+    1990
+   ],
+   "realm": "Moldavian SSR",
+   "why": "Soviet republic until December 1991"
+  },
+  {
+   "place": "Tbilisi (Soviet)",
+   "lonLat": [
+    44.79,
+    41.72
+   ],
+   "years": [
+    1985,
+    1990
+   ],
+   "realm": "Georgian SSR",
+   "why": "Soviet republic until December 1991"
+  },
+  {
+   "place": "Yerevan (Soviet)",
+   "lonLat": [
+    44.51,
+    40.18
+   ],
+   "years": [
+    1985,
+    1990
+   ],
+   "realm": "Armenian SSR",
+   "why": "Soviet republic until December 1991"
+  },
+  {
+   "place": "Baku (Soviet)",
+   "lonLat": [
+    49.87,
+    40.41
+   ],
+   "years": [
+    1985,
+    1990
+   ],
+   "realm": "Azerbaijan SSR",
+   "why": "Soviet republic until December 1991"
+  },
+  {
+   "place": "Almaty (Soviet)",
+   "lonLat": [
+    76.95,
+    43.24
+   ],
+   "years": [
+    1985,
+    1990
+   ],
+   "realm": "Kazakh SSR",
+   "why": "Soviet republic until December 1991"
+  },
+  {
+   "place": "Tashkent (Soviet)",
+   "lonLat": [
+    69.24,
+    41.3
+   ],
+   "years": [
+    1985,
+    1990
+   ],
+   "realm": "Uzbek SSR",
+   "why": "Soviet republic until December 1991"
+  },
+  {
+   "place": "Ashgabat (Soviet)",
+   "lonLat": [
+    58.38,
+    37.95
+   ],
+   "years": [
+    1985,
+    1990
+   ],
+   "realm": "Turkmen SSR",
+   "why": "Soviet republic until December 1991"
+  },
+  {
+   "place": "Bishkek (Soviet)",
+   "lonLat": [
+    74.6,
+    42.87
+   ],
+   "years": [
+    1985,
+    1990
+   ],
+   "realm": "Kirghiz SSR",
+   "why": "Soviet republic until December 1991"
+  },
+  {
+   "place": "Dushanbe (Soviet)",
+   "lonLat": [
+    68.78,
+    38.56
+   ],
+   "years": [
+    1985,
+    1990
+   ],
+   "realm": "Tajik SSR",
+   "why": "Soviet republic until December 1991"
+  },
+  {
+   "place": "Grozny (Ichkeria)",
+   "lonLat": [
+    45.69,
+    43.32
+   ],
+   "years": [
+    1991,
+    1993
+   ],
+   "realm": "Russia",
+   "why": "Held by the Chechen Republic of Ichkeria from November 1991 until the Russian invasion of December 1994",
+   "heldBy": [
+    {
+     "years": [
+      1991,
+      1993
+     ],
+     "by": "Chechen Republic of Ichkeria"
+    }
+   ]
+  },
+  {
+   "place": "Grozny (war)",
+   "lonLat": [
+    45.69,
+    43.32
+   ],
+   "years": [
+    1994,
+    1995
+   ],
+   "realm": "Russia",
+   "why": "Taken by Russian forces in early 1995"
+  },
+  {
+   "place": "Grozny (Ichkeria, 1996)",
+   "lonLat": [
+    45.69,
+    43.32
+   ],
+   "years": [
+    1996,
+    1998
+   ],
+   "realm": "Russia",
+   "why": "Held by Ichkeria after the Khasavyurt Accord of August 1996",
+   "heldBy": [
+    {
+     "years": [
+      1996,
+      1998
+     ],
+     "by": "Chechen Republic of Ichkeria"
+    }
+   ]
+  },
+  {
+   "place": "Gudermes",
+   "lonLat": [
+    46.1,
+    43.35
+   ],
+   "years": [
+    1999,
+    2026
+   ],
+   "realm": "Russia",
+   "why": "Retaken by Russian forces in November 1999"
+  },
+  {
+   "place": "Stepanakert (Soviet)",
+   "lonLat": [
+    46.75,
+    39.82
+   ],
+   "years": [
+    1985,
+    1990
+   ],
+   "realm": "Azerbaijan SSR",
+   "why": "Capital of the Nagorno-Karabakh Autonomous Oblast in the Azerbaijan SSR"
+  },
+  {
+   "place": "Stepanakert (Artsakh)",
+   "lonLat": [
+    46.75,
+    39.82
+   ],
+   "years": [
+    1992,
+    2022
+   ],
+   "realm": "Azerbaijan",
+   "why": "Capital of the Republic of Artsakh until September 2023",
+   "heldBy": [
+    {
+     "years": [
+      1992,
+      2022
+     ],
+     "by": "Republic of Artsakh"
+    }
+   ]
+  },
+  {
+   "place": "Kalbajar",
+   "lonLat": [
+    46.04,
+    40.11
+   ],
+   "years": [
+    1993,
+    2019
+   ],
+   "realm": "Azerbaijan",
+   "why": "Held by Armenian forces from April 1993 to 25 November 2020",
+   "heldBy": [
+    {
+     "years": [
+      1993,
+      2019
+     ],
+     "by": "Republic of Artsakh"
+    }
+   ]
+  },
+  {
+   "place": "Kalbajar (handed back)",
+   "lonLat": [
+    46.04,
+    40.11
+   ],
+   "years": [
+    2020,
+    2026
+   ],
+   "realm": "Azerbaijan",
+   "why": "Handed back to Azerbaijan on 25 November 2020"
+  },
+  {
+   "place": "Shusha",
+   "lonLat": [
+    46.75,
+    39.76
+   ],
+   "years": [
+    2020,
+    2026
+   ],
+   "realm": "Azerbaijan",
+   "why": "Retaken by Azerbaijan on 8 November 2020"
+  },
+  {
+   "place": "Tskhinvali",
+   "lonLat": [
+    43.964,
+    42.226
+   ],
+   "years": [
+    1992,
+    2026
+   ],
+   "realm": "Georgia",
+   "why": "Held by South Ossetia since the 1991-1992 war",
+   "heldBy": [
+    {
+     "years": [
+      1992,
+      2026
+     ],
+     "by": "South Ossetia"
+    }
+   ]
+  },
+  {
+   "place": "Akhalgori",
+   "lonLat": [
+    44.483,
+    42.126
+   ],
+   "years": [
+    2008,
+    2026
+   ],
+   "realm": "Georgia",
+   "why": "Held by South Ossetia since August 2008",
+   "heldBy": [
+    {
+     "years": [
+      2008,
+      2026
+     ],
+     "by": "South Ossetia"
+    }
+   ]
+  },
+  {
+   "place": "Akhalgori (Georgian)",
+   "lonLat": [
+    44.483,
+    42.126
+   ],
+   "years": [
+    1992,
+    2007
+   ],
+   "realm": "Georgia",
+   "why": "Under Georgian control until August 2008"
+  },
+  {
+   "place": "Tiraspol (since 1992)",
+   "lonLat": [
+    29.62,
+    46.84
+   ],
+   "years": [
+    1992,
+    2025
+   ],
+   "realm": "Moldova",
+   "why": "Held by Transnistria since the war of 1992",
+   "heldBy": [
+    {
+     "years": [
+      1992,
+      2025
+     ],
+     "by": "Transnistria"
+    }
+   ]
+  },
+  {
+   "place": "Sukhumi (since 1993)",
+   "lonLat": [
+    41.02,
+    43.0
+   ],
+   "years": [
+    1993,
+    2025
+   ],
+   "realm": "Georgia",
+   "why": "Held by Abkhazia since September 1993",
+   "heldBy": [
+    {
+     "years": [
+      1993,
+      2025
+     ],
+     "by": "Abkhazia"
+    }
+   ]
+  },
+  {
+   "place": "Sukhumi (Georgian)",
+   "lonLat": [
+    41.02,
+    43.0
+   ],
+   "years": [
+    1991,
+    1992
+   ],
+   "realm": "Georgia",
+   "why": "Under Georgian control until September 1993"
+  },
+  {
+   "place": "Tallinn (Soviet)",
+   "lonLat": [
+    24.75,
+    59.44
+   ],
+   "years": [
+    1985,
+    1990
+   ],
+   "realm": "Estonia",
+   "why": "Annexed by the Soviet Union in 1940, not recognised by most Western states, until 6 September 1991",
+   "heldBy": [
+    {
+     "years": [
+      1985,
+      1990
+     ],
+     "by": "Soviet Union"
+    }
+   ]
+  },
+  {
+   "place": "Tallinn",
+   "lonLat": [
+    24.75,
+    59.44
+   ],
+   "years": [
+    1991,
+    2026
+   ],
+   "realm": "Estonia",
+   "why": "Independent again since 1991"
+  },
+  {
+   "place": "Riga (Soviet)",
+   "lonLat": [
+    24.11,
+    56.95
+   ],
+   "years": [
+    1985,
+    1990
+   ],
+   "realm": "Latvia",
+   "why": "Annexed by the Soviet Union in 1940, not recognised by most Western states, until 6 September 1991",
+   "heldBy": [
+    {
+     "years": [
+      1985,
+      1990
+     ],
+     "by": "Soviet Union"
+    }
+   ]
+  },
+  {
+   "place": "Riga",
+   "lonLat": [
+    24.11,
+    56.95
+   ],
+   "years": [
+    1991,
+    2026
+   ],
+   "realm": "Latvia",
+   "why": "Independent again since 1991"
+  },
+  {
+   "place": "Vilnius (Soviet)",
+   "lonLat": [
+    25.28,
+    54.69
+   ],
+   "years": [
+    1985,
+    1990
+   ],
+   "realm": "Lithuania",
+   "why": "Annexed by the Soviet Union in 1940, not recognised by most Western states, until 6 September 1991",
+   "heldBy": [
+    {
+     "years": [
+      1985,
+      1990
+     ],
+     "by": "Soviet Union"
+    }
+   ]
+  },
+  {
+   "place": "Vilnius",
+   "lonLat": [
+    25.28,
+    54.69
+   ],
+   "years": [
+    1991,
+    2026
+   ],
+   "realm": "Lithuania",
+   "why": "Independent again since 1991"
   }
  ]
 }

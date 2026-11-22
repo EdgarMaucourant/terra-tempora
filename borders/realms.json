@@ -4145,5 +4145,104 @@
   "wikidata": "Q17500081",
   "fr": "Tibet",
   "es": "Tíbet"
+ },
+ "Soviet Union": {
+  "wikipedia": "Soviet Union",
+  "wikidata": "Q15180",
+  "fr": "Union soviétique",
+  "es": "Unión Soviética"
+ },
+ "Russian SFSR": {
+  "wikipedia": "Russian Soviet Federative Socialist Republic",
+  "wikidata": "Q2184",
+  "fr": "RSFS de Russie",
+  "es": "RSFS de Rusia"
+ },
+ "Ukrainian SSR": {
+  "wikipedia": "Ukrainian Soviet Socialist Republic",
+  "wikidata": "Q133356",
+  "fr": "RSS d'Ukraine",
+  "es": "RSS de Ucrania"
+ },
+ "Byelorussian SSR": {
+  "wikipedia": "Byelorussian Soviet Socialist Republic",
+  "wikidata": "Q2895",
+  "fr": "RSS de Biélorussie",
+  "es": "RSS de Bielorrusia"
+ },
+ "Moldavian SSR": {
+  "wikipedia": "Moldavian Soviet Socialist Republic",
+  "wikidata": "Q170895",
+  "fr": "RSS de Moldavie",
+  "es": "RSS de Moldavia"
+ },
+ "Georgian SSR": {
+  "wikipedia": "Georgian Soviet Socialist Republic",
+  "wikidata": "Q130229",
+  "fr": "RSS de Géorgie",
+  "es": "RSS de Georgia"
+ },
+ "Armenian SSR": {
+  "wikipedia": "Armenian Soviet Socialist Republic",
+  "wikidata": "Q132856",
+  "fr": "RSS d'Arménie",
+  "es": "RSS de Armenia"
+ },
+ "Azerbaijan SSR": {
+  "wikipedia": "Azerbaijan Soviet Socialist Republic",
+  "wikidata": "Q131337",
+  "fr": "RSS d'Azerbaïdjan",
+  "es": "RSS de Azerbaiyán"
+ },
+ "Kazakh SSR": {
+  "wikipedia": "Kazakh Soviet Socialist Republic",
+  "wikidata": "Q168811",
+  "fr": "RSS kazakhe",
+  "es": "RSS de Kazajistán"
+ },
+ "Uzbek SSR": {
+  "wikipedia": "Uzbek Soviet Socialist Republic",
+  "wikidata": "Q484578",
+  "fr": "RSS d'Ouzbékistan",
+  "es": "RSS de Uzbekistán"
+ },
+ "Turkmen SSR": {
+  "wikipedia": "Turkmen Soviet Socialist Republic",
+  "wikidata": "Q199707",
+  "fr": "RSS de Turkménie",
+  "es": "RSS de Turkmenistán"
+ },
+ "Kirghiz SSR": {
+  "wikipedia": "Kirghiz Soviet Socialist Republic",
+  "wikidata": "Q130276",
+  "fr": "RSS kirghize",
+  "es": "RSS de Kirguistán"
+ },
+ "Tajik SSR": {
+  "wikipedia": "Tajik Soviet Socialist Republic",
+  "wikidata": "Q199711",
+  "fr": "RSS du Tadjikistan",
+  "es": "RSS de Tayikistán"
+ },
+ "Chechen Republic of Ichkeria": {
+  "wikipedia": "Chechen Republic of Ichkeria",
+  "wikidata": "Q210036",
+  "fr": "République tchétchène d'Itchkérie",
+  "es": "República Chechena de Ichkeria",
+  "hatchOnly": true
+ },
+ "Republic of Artsakh": {
+  "wikipedia": "Republic of Artsakh",
+  "wikidata": "Q244165",
+  "fr": "République d'Artsakh",
+  "es": "República de Artsaj",
+  "hatchOnly": true
+ },
+ "South Ossetia": {
+  "wikipedia": "South Ossetia",
+  "wikidata": "Q23427",
+  "fr": "Ossétie du Sud",
+  "es": "Osetia del Sur",
+  "hatchOnly": true
  }
 }
