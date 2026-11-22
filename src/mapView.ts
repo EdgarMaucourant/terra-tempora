@@ -342,6 +342,12 @@ export class MapView {
     return px / (111.32 * Math.cos((at * Math.PI) / 180));
   }
 
+  /** Canvas coordinates of a [longitude, latitude], or null where the projection has none. */
+  pointAt(lonLat: [number, number]): [number, number] | null {
+    const point = this.projection(lonLat);
+    return point && Number.isFinite(point[0]) && Number.isFinite(point[1]) ? [point[0], point[1]] : null;
+  }
+
   /** [longitude, latitude] under these canvas coordinates, or null off the map. */
   lonLatAt(x: number, y: number): [number, number] | null {
     const point = this.projection.invert?.([x, y]);

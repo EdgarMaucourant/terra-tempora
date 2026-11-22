@@ -214,6 +214,7 @@
   },
   "globe": {
     "label": "Globe en 3D montrant les États de l’année choisie. Les flèches le tournent, + et − zooment.",
+    "moreDetails": "Plus de détails",
     "blank": {
       "title": "Pas encore de frontières ici",
       "text": "Nous travaillons sur ces régions du monde, mais il nous faut d’abord des sources fiables. En connaissez-vous une ?",
