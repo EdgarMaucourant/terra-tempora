@@ -10528,6 +10528,130 @@
    "summary": "The Red Army takes Königsberg, the old capital of Prussia, on 9 April 1945 after a fierce siege. At Potsdam in August the Allies agree that the city and the northern third of East Prussia go to the Soviet Union, pending a peace settlement, while the south goes to Poland. It becomes the Königsberg Oblast of the Russian SFSR in April 1946 and is renamed Kaliningrad in July; its remaining German inhabitants are expelled by 1948.",
    "wikipedia": "Potsdam_Agreement",
    "search": "Potsdam Agreement 2 August 1945 Königsberg East Prussia Soviet Union Kaliningrad Oblast 1946 Oder-Neisse line expulsion of Germans Battle of Königsberg April 1945"
+  },
+  {
+   "id": "operation-barbarossa-1941",
+   "kind": "war",
+   "year": 1941,
+   "title": "Germany invades the Soviet Union, 22 June 1941",
+   "place": "Brest Fortress",
+   "lonLat": [
+    23.66,
+    52.08
+   ],
+   "civs": [
+    "germany",
+    "soviet-union",
+    "russia",
+    "ukraine",
+    "belarus"
+   ],
+   "summary": "At dawn on 22 June 1941 more than three million German soldiers, with Romanian, Finnish and other allies, attack the Soviet Union along a front from the Baltic to the Black Sea, breaking the pact of 1939. The Red Army, caught unprepared, loses millions of men in vast encirclements at Białystok, Minsk, Smolensk and Kyiv, while the defenders of the Brest Fortress hold out for weeks. By December the Germans stand before Leningrad and Moscow and hold the Baltic states, Belarus and most of Ukraine.",
+   "wikipedia": "Operation_Barbarossa",
+   "search": "Operation Barbarossa 22 June 1941 German invasion of the Soviet Union Brest Fortress Army Group North Centre South Kiev encirclement Smolensk Romania Finland Continuation War"
+  },
+  {
+   "id": "siege-of-leningrad-1941",
+   "kind": "siege",
+   "year": 1941,
+   "to": 1944,
+   "title": "The siege of Leningrad, September 1941 – January 1944",
+   "place": "Leningrad (Saint Petersburg)",
+   "lonLat": [
+    30.32,
+    59.94
+   ],
+   "civs": [
+    "russia",
+    "soviet-union",
+    "germany",
+    "finland"
+   ],
+   "summary": "On 8 September 1941 German troops take Shlisselburg on Lake Ladoga and cut Leningrad off by land, while the Finns close in from the north. For 872 days the city of three million is shelled and starved; in the first winter alone hundreds of thousands die of hunger and cold, and supplies come only across the frozen lake by the \"Road of Life\". A narrow land corridor opens in January 1943, and the siege is lifted on 27 January 1944, after some 800,000 civilian deaths.",
+   "wikipedia": "Siege_of_Leningrad",
+   "search": "Siege of Leningrad 8 September 1941 27 January 1944 872 days blockade Road of Life Lake Ladoga famine winter 1941-42 Shlisselburg Operation Iskra Leningrad-Novgorod offensive"
+  },
+  {
+   "id": "battle-of-moscow-1941",
+   "kind": "battle",
+   "year": 1941,
+   "to": 1942,
+   "title": "The Battle of Moscow, October 1941 – January 1942",
+   "place": "Moscow",
+   "lonLat": [
+    37.3,
+    55.6
+   ],
+   "civs": [
+    "russia",
+    "soviet-union",
+    "germany"
+   ],
+   "summary": "In October 1941 the German Operation Typhoon encircles whole Soviet armies at Vyazma and Bryansk and drives on Moscow; the government leaves for Kuibyshev, but Stalin stays. Mud, then frost, slow the advance, and by late November German units are within 30 km of the Kremlin. On 5 December Zhukov counterattacks with fresh divisions from Siberia and the Far East, and by January the Germans are thrown back 100 to 250 km: the first great defeat of the German army.",
+   "wikipedia": "Battle_of_Moscow",
+   "search": "Battle of Moscow October 1941 January 1942 Operation Typhoon Vyazma Bryansk encirclement Mozhaysk line Zhukov Siberian divisions winter counteroffensive 5 December 1941 Kalinin Kaluga"
+  },
+  {
+   "id": "battle-of-stalingrad-1942",
+   "kind": "battle",
+   "year": 1942,
+   "to": 1943,
+   "title": "The Battle of Stalingrad, August 1942 – February 1943",
+   "place": "Stalingrad (Volgograd)",
+   "lonLat": [
+    44.53,
+    48.72
+   ],
+   "civs": [
+    "russia",
+    "soviet-union",
+    "germany",
+    "romania"
+   ],
+   "summary": "Germany's summer offensive of 1942 drives toward the Caucasus oil fields and the Volga, and in August the Sixth Army reaches Stalingrad. Months of house-to-house fighting reduce the city to ruins, but its defenders hold a strip along the river. On 19 November Operation Uranus breaks through the Romanian armies on the flanks and traps some 300,000 men; Field Marshal Paulus surrenders on 2 February 1943. The Germans also fall back from the Caucasus, and the tide of the war turns.",
+   "wikipedia": "Battle_of_Stalingrad",
+   "search": "Battle of Stalingrad August 1942 2 February 1943 Volga Paulus Sixth Army Chuikov Mamayev Kurgan Operation Uranus encirclement Romanian Third Army surrender turning point"
+  },
+  {
+   "id": "battle-of-kursk-1943",
+   "kind": "battle",
+   "year": 1943,
+   "title": "The Battle of Kursk, July – August 1943",
+   "place": "Prokhorovka, near Kursk",
+   "lonLat": [
+    36.73,
+    51.04
+   ],
+   "civs": [
+    "russia",
+    "soviet-union",
+    "germany",
+    "ukraine"
+   ],
+   "summary": "In July 1943 Germany attacks the Kursk salient from north and south in Operation Citadel, its last great offensive in the east, against deep Soviet defences. After the clash of tanks at Prokhorovka on 12 July the attack is called off, and Soviet counteroffensives take Oryol and Belgorod on 5 August and Kharkiv on 23 August. From then on the Red Army keeps the initiative, reaching the Dnieper and retaking Kyiv in November.",
+   "wikipedia": "Battle_of_Kursk",
+   "search": "Battle of Kursk July August 1943 Operation Citadel Prokhorovka tank battle Kursk salient Operation Kutuzov Polkovodets Rumyantsev Oryol Belgorod Kharkiv liberated"
+  },
+  {
+   "id": "operation-bagration-1944",
+   "kind": "battle",
+   "year": 1944,
+   "title": "Operation Bagration, June – August 1944",
+   "place": "Minsk",
+   "lonLat": [
+    27.56,
+    53.9
+   ],
+   "civs": [
+    "belarus",
+    "soviet-union",
+    "germany",
+    "lithuania",
+    "poland"
+   ],
+   "summary": "Three years to the day after the German invasion, on 22 June 1944, the Red Army launches Operation Bagration against Army Group Centre in Belarus. Encircled at Vitebsk, Bobruisk and Minsk, which is freed on 3 July, the German front collapses; in five weeks the Soviets advance some 500 km, taking Vilnius, Brest and Lublin and reaching the Vistula and the edge of East Prussia. It is the heaviest German defeat of the war.",
+   "wikipedia": "Operation_Bagration",
+   "search": "Operation Bagration 22 June 1944 Belorussian offensive Army Group Centre destroyed Vitebsk Bobruisk Minsk liberated 3 July Vilnius Brest Vistula Warsaw"
   }
  ]
 }
