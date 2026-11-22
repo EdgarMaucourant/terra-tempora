@@ -19217,6 +19217,179 @@
      ]
     ]
    }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "kangra-kullu",
+    "from": "IND-2429",
+    "note": "The western and northern hills of Himachal Pradesh (Kangra, Hamirpur, Una, Kullu, Mandi, Chamba, Lahaul and Spiti), Sikh or Sikh tributaries until 1846, traced roughly; the Simla hill states to the south-east were under British protection from 1815",
+    "source": {
+     "title": "Treaty of Lahore (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_Lahore"
+    }
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       75.5,
+       33.4
+      ],
+      [
+       79.2,
+       33.4
+      ],
+      [
+       79.2,
+       32.0
+      ],
+      [
+       78.3,
+       32.0
+      ],
+      [
+       77.9,
+       31.9
+      ],
+      [
+       77.6,
+       31.7
+      ],
+      [
+       77.2,
+       31.55
+      ],
+      [
+       76.9,
+       31.4
+      ],
+      [
+       76.6,
+       31.45
+      ],
+      [
+       76.35,
+       31.3
+      ],
+      [
+       75.5,
+       31.3
+      ],
+      [
+       75.5,
+       33.4
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "darjeeling-hills",
+    "from": "IND-3257",
+    "note": "The Darjeeling hills west of the Teesta, part of Sikkim until 1835 (Darjeeling town) and 1850 (the rest), traced roughly",
+    "source": {
+     "title": "Darjeeling district (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Darjeeling_district"
+    }
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       87.9,
+       27.4
+      ],
+      [
+       88.56,
+       27.3
+      ],
+      [
+       88.53,
+       27.17
+      ],
+      [
+       88.45,
+       27.1
+      ],
+      [
+       88.43,
+       27.05
+      ],
+      [
+       88.45,
+       26.95
+      ],
+      [
+       88.46,
+       26.92
+      ],
+      [
+       87.9,
+       26.92
+      ],
+      [
+       87.9,
+       27.4
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "coorg",
+    "from": "IND-2446",
+    "note": "Coorg (Kodagu), an independent kingdom until 1834, traced roughly",
+    "source": {
+     "title": "Kingdom of Coorg (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Coorg"
+    }
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       75.4,
+       12.45
+      ],
+      [
+       75.6,
+       12.85
+      ],
+      [
+       76.05,
+       12.78
+      ],
+      [
+       76.2,
+       12.4
+      ],
+      [
+       76.1,
+       12.0
+      ],
+      [
+       75.85,
+       11.93
+      ],
+      [
+       75.55,
+       12.2
+      ],
+      [
+       75.4,
+       12.45
+      ]
+     ]
+    ]
+   }
   }
  ]
 }
