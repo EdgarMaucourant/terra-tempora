@@ -9739,6 +9739,291 @@
    "summary": "A revolt at Multan in April 1848 grows into a new war between the Sikh army and the East India Company. After the bloody draw at Chillianwala, the Sikhs are crushed at Gujrat on 21 February 1849. On 29 March Lord Dalhousie annexes the Punjab; the boy maharaja Duleep Singh is deposed and the Koh-i-Noor diamond goes to Queen Victoria.",
    "wikipedia": "Second_Anglo-Sikh_War",
    "search": "Second Anglo-Sikh War 1848 1849 Multan revolt Mulraj Chillianwala Gujrat 21 February 1849 Lord Dalhousie annexation of the Punjab 29 March 1849 Duleep Singh Koh-i-Noor"
+  },
+  {
+   "id": "falklands-1833",
+   "kind": "empire",
+   "year": 1833,
+   "title": "Britain reasserts its sovereignty over the Falkland Islands, 3 January 1833",
+   "place": "Port Louis, Falkland Islands",
+   "lonLat": [
+    -58.0,
+    -51.55
+   ],
+   "civs": [
+    "argentina",
+    "falkland-islands",
+    "united-kingdom"
+   ],
+   "summary": "Buenos Aires had sent a governor and a garrison to the Falklands, which Britain also claimed. On 2 and 3 January 1833 the British warships Clio and Tyne arrive at Port Louis and the small Argentine garrison leaves without a fight. The islands become a British colony; Argentina has claimed them as the Malvinas ever since.",
+   "wikipedia": "Reassertion_of_British_sovereignty_over_the_Falkland_Islands_(1833)",
+   "search": "Falkland Islands 1833 Malvinas reassertion British sovereignty 3 January 1833 HMS Clio HMS Tyne John Onslow Buenos Aires garrison Pinedo Luis Vernet Port Louis Argentina claim"
+  },
+  {
+   "id": "coorg-war-1834",
+   "kind": "war",
+   "year": 1834,
+   "title": "The Coorg War: the East India Company annexes Coorg, 1834",
+   "place": "Madikeri",
+   "lonLat": [
+    75.74,
+    12.42
+   ],
+   "civs": [
+    "kingdom-of-coorg",
+    "company-rule-in-india",
+    "india",
+    "united-kingdom"
+   ],
+   "summary": "The East India Company accuses Chikka Virarajendra, the raja of the small hill kingdom of Coorg, of cruelty and of plotting against it. Its troops invade in April 1834 and take the capital, Mercara (Madikeri), after a short campaign. The raja is deposed and exiled, and Coorg is annexed in May “at the wish of the people”; it stays a province of its own until it joins Mysore in 1956.",
+   "wikipedia": "Coorg_War",
+   "search": "Coorg War 1834 Kodagu Chikka Virarajendra Madikeri Mercara James Lindesay annexation East India Company Kingdom of Coorg Karnataka"
+  },
+  {
+   "id": "slavery-abolition-1834",
+   "kind": "idea",
+   "year": 1834,
+   "title": "Slavery ends in the British Empire, 1 August 1834",
+   "place": "London",
+   "lonLat": [
+    -0.13,
+    51.5
+   ],
+   "civs": [
+    "united-kingdom",
+    "jamaica"
+   ],
+   "summary": "The Slavery Abolition Act, passed in 1833, takes effect on 1 August 1834 and frees about 800,000 enslaved people in the British colonies, most of them in the Caribbean. Freed people over six must first serve as unpaid “apprentices” until 1838, while slave owners receive £20 million in compensation, about 40% of the government’s yearly budget. The Company’s lands in India, Ceylon and Saint Helena are left out at first.",
+   "wikipedia": "Slavery_Abolition_Act_1833",
+   "search": "Slavery Abolition Act 1833 1 August 1834 emancipation British Empire West Indies Jamaica apprenticeship 1838 compensation slave owners 20 million pounds Wilberforce Buxton"
+  },
+  {
+   "id": "pitcairn-constitution-1838",
+   "kind": "idea",
+   "year": 1838,
+   "title": "Pitcairn Island’s constitution gives women the vote, 29 November 1838",
+   "place": "Adamstown",
+   "lonLat": [
+    -130.1,
+    -25.066
+   ],
+   "civs": [
+    "pitcairn-islands",
+    "united-kingdom"
+   ],
+   "summary": "Pitcairn, a tiny Pacific island settled by the Bounty mutineers and their Tahitian companions, asks a passing British captain, Russell Elliott of HMS Fly, for protection against whalers. On 29 November 1838 he draws up a short constitution that places the island under the British flag and lets every islander over 18, women included, elect a magistrate. It is one of the first laws anywhere to give women the vote.",
+   "wikipedia": "Pitcairn_Islands",
+   "search": "Pitcairn Islands 1838 constitution women vote suffrage Captain Russell Elliott HMS Fly Bounty mutineers descendants Adamstown British protection"
+  },
+  {
+   "id": "aden-taken-1839",
+   "kind": "war",
+   "year": 1839,
+   "title": "Britain takes Aden, 19 January 1839",
+   "place": "Aden",
+   "lonLat": [
+    45.03,
+    12.79
+   ],
+   "civs": [
+    "sultanate-of-lahej",
+    "company-rule-in-india",
+    "aden-colony",
+    "yemen",
+    "united-kingdom"
+   ],
+   "summary": "Looking for a coaling station on the steamer route to India, the East India Company uses the plundering of a wrecked ship as a pretext against the Sultan of Lahej. On 19 January 1839 Royal Navy ships and Company troops under Captain Stafford Haines storm the small port of Aden. It is ruled from Bombay as part of British India until 1937 and grows into one of the world’s busiest ports.",
+   "wikipedia": "Aden_Province",
+   "search": "Aden 1839 capture 19 January 1839 Stafford Haines Sultan of Lahej Muhsin bin Fadl Duria Daulat shipwreck Bombay Presidency coaling station Red Sea route India"
+  },
+  {
+   "id": "brooke-rajah-of-sarawak-1841",
+   "kind": "empire",
+   "year": 1841,
+   "title": "James Brooke becomes the White Rajah of Sarawak, 24 September 1841",
+   "place": "Kuching",
+   "lonLat": [
+    110.34,
+    1.55
+   ],
+   "civs": [
+    "brunei",
+    "raj-of-sarawak",
+    "malaysia",
+    "united-kingdom"
+   ],
+   "summary": "The English adventurer James Brooke helps the Bruneian prince Pengiran Muda Hashim put down a revolt in Sarawak. In return the Sultan of Brunei makes him Rajah of Sarawak on 24 September 1841, around the town of Kuching. His family, the “White Rajahs”, grow the Raj step by step at Brunei’s expense and rule it for a century, under British protection from 1888, until it becomes a Crown colony in 1946.",
+   "wikipedia": "Raj_of_Sarawak",
+   "search": "James Brooke White Rajah Sarawak 24 September 1841 Kuching Brunei Pengiran Muda Hashim Omar Ali Saifuddin II Land Dayak revolt Brooke dynasty Charles Vyner Brooke 1946"
+  },
+  {
+   "id": "anglo-nepalese-war-1814",
+   "kind": "war",
+   "year": 1814,
+   "to": 1816,
+   "title": "The Anglo-Nepalese War and the Treaty of Sugauli, 1814 – 1816",
+   "place": "Makwanpur",
+   "lonLat": [
+    85.03,
+    27.42
+   ],
+   "civs": [
+    "nepal",
+    "company-rule-in-india",
+    "india",
+    "united-kingdom"
+   ],
+   "summary": "Border quarrels in the Terai lead the East India Company to attack the Gorkha kingdom of Nepal in 1814. The Gorkhas beat back the first campaigns, but in 1815 Ochterlony drives Amar Singh Thapa out of the western hills, and in early 1816 a British army advances to Makwanpur, near Kathmandu. By the Treaty of Sugauli Nepal gives up Kumaon, Garhwal, the hills west of the Kali and the Terai, and the Company begins recruiting the Gurkha soldiers it so admired.",
+   "wikipedia": "Anglo-Nepalese_War",
+   "search": "Anglo-Nepalese War Gurkha War 1814 1816 Treaty of Sugauli 4 March 1816 Kalunga Malaun Amar Singh Thapa David Ochterlony Makwanpur Kumaon Garhwal Terai Gurkhas recruited"
+  },
+  {
+   "id": "kandyan-convention-1815",
+   "kind": "empire",
+   "year": 1815,
+   "title": "Britain takes the Kingdom of Kandy, 2 March 1815",
+   "place": "Kandy",
+   "lonLat": [
+    80.63,
+    7.29
+   ],
+   "civs": [
+    "british-ceylon",
+    "sri-lanka",
+    "united-kingdom"
+   ],
+   "summary": "The kingdom of Kandy, in the hills of Ceylon, had held out against the Portuguese, the Dutch and the British for three centuries. In 1815 its chiefs turn against their king, Sri Vikrama Rajasinha, and invite British troops in. By the Kandyan Convention of 2 March 1815 they depose him and accept British rule over the whole island, which ends 2,300 years of Sinhalese kingship.",
+   "wikipedia": "Kandyan_Convention",
+   "search": "Kandyan Convention 2 March 1815 Kingdom of Kandy Sri Vikrama Rajasinha Ehelepola Robert Brownrigg British Ceylon last Sinhalese kingdom Uva rebellion 1818"
+  },
+  {
+   "id": "napoleon-saint-helena-1815",
+   "kind": "journey",
+   "year": 1815,
+   "to": 1821,
+   "title": "Napoleon’s exile on Saint Helena, 1815 – 1821",
+   "place": "Longwood, Saint Helena",
+   "lonLat": [
+    -5.68,
+    -15.95
+   ],
+   "civs": [
+    "saint-helena-ascension-and-tristan-da-cunha",
+    "france",
+    "united-kingdom"
+   ],
+   "summary": "After Waterloo, Napoleon surrenders to the British, who send him to Saint Helena, a remote island in the South Atlantic owned by the East India Company. He lands in October 1815 and lives at Longwood House under the close watch of Governor Hudson Lowe, dictating his memoirs. To stop any rescue Britain also garrisons Ascension and Tristan da Cunha. Napoleon dies on the island on 5 May 1821.",
+   "wikipedia": "Napoleon's_exile_to_Saint_Helena",
+   "search": "Napoleon exile Saint Helena 1815 1821 Longwood House Hudson Lowe Northumberland Ascension garrison Tristan da Cunha death 5 May 1821 Memorial of Saint Helena Las Cases"
+  },
+  {
+   "id": "third-anglo-maratha-war-1817",
+   "kind": "war",
+   "year": 1817,
+   "to": 1818,
+   "title": "The Third Anglo-Maratha War, 1817 – 1818",
+   "place": "Koregaon",
+   "lonLat": [
+    74.06,
+    18.65
+   ],
+   "civs": [
+    "maratha-empire",
+    "rajputana",
+    "company-rule-in-india",
+    "india",
+    "united-kingdom"
+   ],
+   "summary": "A campaign by Lord Hastings against the Pindari raiders of central India turns into a last war with the Marathas. The Peshwa Baji Rao II attacks the British at Khadki near Pune in November 1817, the Bhonsle of Nagpur is beaten at Sitabuldi and Holkar’s army at Mahidpur. The Peshwa surrenders on 3 June 1818: his lands are annexed, the other Maratha princes and the Rajput states accept British protection, and the Company becomes master of most of India.",
+   "wikipedia": "Third_Anglo-Maratha_War",
+   "search": "Third Anglo-Maratha War 1817 1818 Pindari war Lord Hastings Baji Rao II Peshwa Khadki Koregaon Sitabuldi Mahidpur surrender 3 June 1818 Holkar Sindhia Bhonsle Rajputana treaties end Maratha Empire"
+  },
+  {
+   "id": "singapore-founded-1819",
+   "kind": "city",
+   "year": 1819,
+   "title": "Stamford Raffles founds British Singapore, 6 February 1819",
+   "place": "Singapore",
+   "lonLat": [
+    103.85,
+    1.29
+   ],
+   "civs": [
+    "johor-sultanate",
+    "company-rule-in-india",
+    "straits-settlements",
+    "singapore",
+    "united-kingdom"
+   ],
+   "summary": "Looking for a port to break the Dutch hold on the Strait of Malacca, Stamford Raffles of the East India Company lands on the island of Singapore in January 1819. He recognises Hussein Shah as Sultan of Johor, and on 6 February the sultan and the local chief, the Temenggong, let the Company set up a trading post. Singapore grows fast as a free port, and in 1824 the whole island is ceded to Britain.",
+   "wikipedia": "Founding_of_modern_Singapore",
+   "search": "Founding of modern Singapore 1819 Stamford Raffles Treaty of Singapore 6 February 1819 Sultan Hussein Shah Temenggong Abdul Rahman William Farquhar Johor free port East India Company"
+  },
+  {
+   "id": "general-maritime-treaty-1820",
+   "kind": "treaty",
+   "year": 1820,
+   "title": "The Gulf campaign and the General Maritime Treaty, 1819 – 1820",
+   "place": "Ras Al Khaimah",
+   "lonLat": [
+    55.94,
+    25.79
+   ],
+   "civs": [
+    "ras-al-khaimah",
+    "abu-dhabi",
+    "trucial-states",
+    "united-arab-emirates",
+    "united-kingdom"
+   ],
+   "summary": "Britain blames the Al Qasimi of Ras Al Khaimah for attacks on shipping in the Gulf, which it calls the “Pirate Coast”. In December 1819 a force from Bombay takes and destroys Ras Al Khaimah. In January 1820 the rulers of Ras Al Khaimah, Sharjah, Ajman, Umm Al Quwain and Abu Dhabi sign the General Maritime Treaty, which bans piracy and the slave trade at sea. It is the start of the British-protected Trucial States, today’s United Arab Emirates.",
+   "wikipedia": "General_Maritime_Treaty_of_1820",
+   "search": "Persian Gulf campaign of 1819 Ras Al Khaimah Al Qasimi Qawasim piracy William Keir Grant General Maritime Treaty January 1820 Abu Dhabi Sharjah Ajman Umm Al Quwain Bahrain Trucial Coast Pirate Coast"
+  },
+  {
+   "id": "anglo-dutch-treaty-1824",
+   "kind": "treaty",
+   "year": 1824,
+   "title": "The Anglo-Dutch Treaty swaps Malacca for Bencoolen, 17 March 1824",
+   "place": "Malacca",
+   "lonLat": [
+    102.25,
+    2.2
+   ],
+   "civs": [
+    "dutch-malacca",
+    "netherlands",
+    "straits-settlements",
+    "malaysia",
+    "united-kingdom"
+   ],
+   "summary": "Signed in London on 17 March 1824, the treaty settles the quarrels between Britain and the Netherlands in the East Indies. Britain gives up Bencoolen and its other posts on Sumatra; the Netherlands hands over Malacca, its factories in India and its objection to British Singapore. The line it draws through the Strait of Malacca, British to the north and Dutch to the south, is still roughly the border between Malaysia and Indonesia.",
+   "wikipedia": "Anglo-Dutch_Treaty_of_1824",
+   "search": "Anglo-Dutch Treaty of 1824 Treaty of London 17 March 1824 Malacca Bencoolen Sumatra Singapore Strait of Malacca spheres of influence Malaysia Indonesia border"
+  },
+  {
+   "id": "first-anglo-burmese-war-1824",
+   "kind": "war",
+   "year": 1824,
+   "to": 1826,
+   "title": "The First Anglo-Burmese War and the Treaty of Yandabo, 1824 – 1826",
+   "place": "Yangon",
+   "lonLat": [
+    96.16,
+    16.8
+   ],
+   "civs": [
+    "kingdom-of-burma",
+    "ahom-kingdom",
+    "kingdom-of-manipur",
+    "company-rule-in-india",
+    "myanmar",
+    "india",
+    "united-kingdom"
+   ],
+   "summary": "Burma’s conquest of Assam and Manipur brings its armies to the borders of British Bengal, and war breaks out in March 1824. A British fleet takes Rangoon, and after hard fighting and heavy losses to disease, Archibald Campbell’s army marches up the Irrawaddy towards Ava. By the Treaty of Yandabo of 24 February 1826 Burma gives up Assam and Manipur, cedes Arakan and Tenasserim and pays a large indemnity.",
+   "wikipedia": "First_Anglo-Burmese_War",
+   "search": "First Anglo-Burmese War 1824 1826 Bagyidaw Maha Bandula Rangoon Archibald Campbell Danubyu Prome Treaty of Yandabo 24 February 1826 Assam Manipur Arakan Tenasserim indemnity"
   }
  ]
 }
