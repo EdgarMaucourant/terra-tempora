@@ -768,7 +768,7 @@ function clickRealm(p: Polity | null | undefined, spot?: [number, number] | null
   if (land && group) {
     closeEvent();
     showInfo(land);
-    crumbMember = { name: shownName(land), group };
+    crumbMember = { name: shownName(land), realm: land.name, group };
     renderCrumbs();
     return;
   }
@@ -1745,6 +1745,23 @@ function lanePeriods(c: Civilization): Lane["periods"] {
   return out;
 }
 
+// The view's colours by realm, and the group territory picked out of them.
+let viewColours = new Map<string, string>();
+let focusedMember: string | null | undefined;
+/**
+ * A territory opened in a group (French Cochinchina in French Indochina)
+ * stands alone in the view's colour, its neighbours in the group unselected;
+ * closing it brings the whole group back.
+ */
+function focusMember(realm: string | null) {
+  if (realm === focusedMember || !active) return;
+  focusedMember = realm;
+  const colours = realm ? new Map([[realm, colors.get(active.name) ?? [...viewColours.values()][0]]]) : viewColours;
+  layer.setHighlight(colours);
+  map.setHighlight(colours);
+  render();
+}
+
 function showHighlight() {
   if (!active) return;
   colors = highlightColors(
@@ -1753,8 +1770,9 @@ function showHighlight() {
   );
   const byRealm = new Map<string, string>();
   for (const c of highlighted) for (const n of c.names) byRealm.set(n, colors.get(c.name)!);
-  layer.setHighlight(byRealm);
-  map.setHighlight(byRealm);
+  viewColours = byRealm;
+  focusedMember = undefined;
+  focusMember(openedMember()?.realm ?? null);
 
   loadNeighbours(highlighted);
   // A territory's lane says whose it was: "Macau (part of China)".
@@ -2342,6 +2360,8 @@ function colourAround(at: number) {
 
 /** Shows the world with no country chosen, staying in the year shown; `fly` pulls out to see it all. */
 function leaveForWorld(fly: boolean) {
+  // The world shows every group closed again (French Indochina as one).
+  if (openGroups.size) setOpenGroups([]);
   go({ year: Math.round(year) === latestYear() ? undefined : year }, true);
   showHome({ year, fly });
 }
@@ -2745,7 +2765,7 @@ function showPin(lonLat: [number, number] | null) {
 // where it is (Edgar, 2026-11-21). On phones only the step back is shown.
 const crumbList = $("crumbs").querySelector("ol")!;
 /** The group member whose details are shown, as the breadcrumb's last step. */
-let crumbMember: { name: string; group: string } | null = null;
+let crumbMember: { name: string; realm: string; group: string } | null = null;
 function crumb(text: string, onClick?: () => void, track?: string): HTMLLIElement {
   const li = document.createElement("li");
   if (onClick) {
@@ -2764,11 +2784,15 @@ function crumb(text: string, onClick?: () => void, track?: string): HTMLLIElemen
   }
   return li;
 }
+/** The group territory whose details are open, if any. */
+function openedMember() {
+  return crumbMember && !info.hidden && openGroups.has(crumbMember.group) ? crumbMember : null;
+}
 function renderCrumbs() {
   const world = crumbList.firstElementChild!;
   const steps: HTMLLIElement[] = [];
   const title = $("civ-title").textContent ?? "";
-  const member = crumbMember && !info.hidden && openGroups.has(crumbMember.group) ? crumbMember : null;
+  const member = openedMember();
   if (member) {
     steps.push(
       crumb(title, () => {
@@ -2778,6 +2802,7 @@ function renderCrumbs() {
       crumb(member.name),
     );
   } else steps.push(crumb(title));
+  if (!home) focusMember(member?.realm ?? null);
   crumbList.replaceChildren(world, ...steps);
   // The step back, which phones show alone.
   const parent = crumbList.children[crumbList.children.length - 2];
