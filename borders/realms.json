@@ -110,7 +110,7 @@
     "label": "Armenian SSR",
     "labelFr": "RSS d'Arménie",
     "labelEs": "RSS de Armenia",
-    "note": "A republic of the Soviet Union from 1922"
+    "note": "A republic of the Soviet Union from 1922, within the Transcaucasian SFSR until 1936"
    },
    {
     "from": "1991-12-26",
@@ -164,7 +164,7 @@
     "label": "Azerbaijan SSR",
     "labelFr": "RSS d'Azerbaïdjan",
     "labelEs": "RSS de Azerbaiyán",
-    "note": "A republic of the Soviet Union from 1922"
+    "note": "A republic of the Soviet Union from 1922, within the Transcaucasian SFSR until 1936"
    },
    {
     "from": "1991-12-26",
@@ -1326,7 +1326,7 @@
     "label": "Georgian SSR",
     "labelFr": "RSS de Géorgie",
     "labelEs": "RSS de Georgia",
-    "note": "A republic of the Soviet Union from 1922"
+    "note": "A republic of the Soviet Union from 1922, within the Transcaucasian SFSR until 1936"
    },
    {
     "from": "1991-12-26",
@@ -4482,5 +4482,17 @@
   "wikidata": "Q816709",
   "fr": "République populaire de Touva",
   "es": "República Popular de Tuvá"
+ },
+ "Bukharan People's Soviet Republic": {
+  "wikipedia": "Bukharan People's Soviet Republic",
+  "wikidata": "Q68682",
+  "fr": "République soviétique populaire de Boukhara",
+  "es": "República Popular Soviética de Bujará"
+ },
+ "Khorezm People's Soviet Republic": {
+  "wikipedia": "Khorezm People's Soviet Republic",
+  "wikidata": "Q61291",
+  "fr": "République soviétique populaire du Khorezm",
+  "es": "República Popular Soviética de Corasmia"
  }
 }

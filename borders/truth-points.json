@@ -12634,6 +12634,314 @@
    ],
    "realm": "Russia",
    "why": "In the Karachay Autonomous Oblast of the Russian SFSR until 1944"
+  },
+  {
+   "place": "Tashkent (Russian SFSR)",
+   "lonLat": [
+    69.24,
+    41.3
+   ],
+   "years": [
+    1922,
+    1923
+   ],
+   "realm": "Russia",
+   "why": "Capital of the Turkestan ASSR of the Russian SFSR until 1924"
+  },
+  {
+   "place": "Tashkent (Uzbek SSR)",
+   "lonLat": [
+    69.24,
+    41.3
+   ],
+   "years": [
+    1925,
+    1939
+   ],
+   "realm": "Uzbekistan",
+   "why": "In the Uzbek SSR from October 1924"
+  },
+  {
+   "place": "Bukhara (1923)",
+   "lonLat": [
+    64.42,
+    39.77
+   ],
+   "years": [
+    1922,
+    1923
+   ],
+   "realm": "Bukharan People's Soviet Republic",
+   "why": "Capital of the Bukharan People's Soviet Republic until 1924"
+  },
+  {
+   "place": "Khiva (1923)",
+   "lonLat": [
+    60.36,
+    41.38
+   ],
+   "years": [
+    1922,
+    1923
+   ],
+   "realm": "Khorezm People's Soviet Republic",
+   "why": "Capital of the Khorezm People's Soviet Republic until 1924"
+  },
+  {
+   "place": "Ashgabat (Russian SFSR)",
+   "lonLat": [
+    58.38,
+    37.95
+   ],
+   "years": [
+    1922,
+    1923
+   ],
+   "realm": "Russia",
+   "why": "In the Turkestan ASSR of the Russian SFSR until 1924"
+  },
+  {
+   "place": "Ashgabat (Turkmen SSR)",
+   "lonLat": [
+    58.38,
+    37.95
+   ],
+   "years": [
+    1925,
+    1939
+   ],
+   "realm": "Turkmenistan",
+   "why": "Capital of the Turkmen SSR from 1924"
+  },
+  {
+   "place": "Dushanbe (Uzbek SSR)",
+   "lonLat": [
+    68.78,
+    38.56
+   ],
+   "years": [
+    1925,
+    1928
+   ],
+   "realm": "Uzbekistan",
+   "why": "Capital of the Tajik ASSR within the Uzbek SSR, 1924-1929"
+  },
+  {
+   "place": "Dushanbe (Tajik SSR)",
+   "lonLat": [
+    68.78,
+    38.56
+   ],
+   "years": [
+    1930,
+    1939
+   ],
+   "realm": "Tajikistan",
+   "why": "Capital of the Tajik SSR from 1929"
+  },
+  {
+   "place": "Nukus (Russian SFSR)",
+   "lonLat": [
+    59.6,
+    42.46
+   ],
+   "years": [
+    1925,
+    1935
+   ],
+   "realm": "Russia",
+   "why": "Karakalpakstan, in the Russian SFSR until December 1936"
+  },
+  {
+   "place": "Almaty (Russian SFSR)",
+   "lonLat": [
+    76.9,
+    43.25
+   ],
+   "years": [
+    1922,
+    1935
+   ],
+   "realm": "Russia",
+   "why": "In the Kazakh ASSR of the Russian SFSR until December 1936"
+  },
+  {
+   "place": "Almaty (Kazakh SSR)",
+   "lonLat": [
+    76.9,
+    43.25
+   ],
+   "years": [
+    1937,
+    1939
+   ],
+   "realm": "Kazakhstan",
+   "why": "Capital of the Kazakh SSR from 1936"
+  },
+  {
+   "place": "Bishkek (Russian SFSR)",
+   "lonLat": [
+    74.6,
+    42.87
+   ],
+   "years": [
+    1922,
+    1935
+   ],
+   "realm": "Russia",
+   "why": "Frunze, in the Kirghiz ASSR of the Russian SFSR until December 1936"
+  },
+  {
+   "place": "Taganrog (Ukrainian SSR)",
+   "lonLat": [
+    38.9,
+    47.22
+   ],
+   "years": [
+    1922,
+    1923
+   ],
+   "realm": "Ukraine",
+   "why": "In the Ukrainian SSR until October 1924"
+  },
+  {
+   "place": "Taganrog (Russian SFSR)",
+   "lonLat": [
+    38.9,
+    47.22
+   ],
+   "years": [
+    1925,
+    1939
+   ],
+   "realm": "Russia",
+   "why": "In the Russian SFSR from October 1924"
+  },
+  {
+   "place": "Vitebsk (Russian SFSR)",
+   "lonLat": [
+    30.2,
+    55.19
+   ],
+   "years": [
+    1922,
+    1923
+   ],
+   "realm": "Russia",
+   "why": "In the Russian SFSR until March 1924"
+  },
+  {
+   "place": "Gomel (Russian SFSR)",
+   "lonLat": [
+    30.98,
+    52.44
+   ],
+   "years": [
+    1922,
+    1925
+   ],
+   "realm": "Russia",
+   "why": "In the Gomel Governorate of the Russian SFSR until December 1926"
+  },
+  {
+   "place": "Gomel (Byelorussian SSR)",
+   "lonLat": [
+    30.98,
+    52.44
+   ],
+   "years": [
+    1927,
+    1939
+   ],
+   "realm": "Belarus",
+   "why": "In the Byelorussian SSR from December 1926"
+  },
+  {
+   "place": "Minsk (1922)",
+   "lonLat": [
+    27.56,
+    53.9
+   ],
+   "years": [
+    1922,
+    1939
+   ],
+   "realm": "Belarus",
+   "why": "Capital of the Byelorussian SSR"
+  },
+  {
+   "place": "Vilnius (Poland)",
+   "lonLat": [
+    25.28,
+    54.69
+   ],
+   "years": [
+    1922,
+    1938
+   ],
+   "realm": "Poland",
+   "why": "Wilno, Polish from 1922 to 1939"
+  },
+  {
+   "place": "Klaipėda (Lithuania)",
+   "lonLat": [
+    21.13,
+    55.7
+   ],
+   "years": [
+    1923,
+    1938
+   ],
+   "realm": "Lithuania",
+   "why": "Lithuanian from January 1923 to March 1939"
+  },
+  {
+   "place": "Okha (Japanese-held)",
+   "lonLat": [
+    142.95,
+    53.57
+   ],
+   "years": [
+    1922,
+    1924
+   ],
+   "realm": "Russia",
+   "why": "Northern Sakhalin, held by Japan from 1920 to May 1925",
+   "heldBy": [
+    {
+     "years": [
+      1922,
+      1924
+     ],
+     "by": "Japan"
+    }
+   ]
+  },
+  {
+   "place": "Petrozavodsk (Karelian ASSR)",
+   "lonLat": [
+    34.35,
+    61.79
+   ],
+   "years": [
+    1922,
+    1939
+   ],
+   "realm": "Russia",
+   "why": "Capital of the Karelian ASSR of the Russian SFSR until March 1940"
+  },
+  {
+   "place": "Tbilisi (1930)",
+   "lonLat": [
+    44.8,
+    41.7
+   ],
+   "years": [
+    1922,
+    1939
+   ],
+   "realm": "Georgia",
+   "why": "Capital of the Georgian SSR"
   }
  ]
 }
