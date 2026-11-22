@@ -37,6 +37,8 @@ interface SidePanelParts {
   details: HTMLElement[];
   /** Called by "Overview": closes whatever detail is open. */
   onBack(): void;
+  /** True while a detail shown should wait for the panel to be opened (a tap on a phone shows "More details" instead). */
+  quiet?(): boolean;
 }
 
 export class SidePanel {
@@ -136,7 +138,7 @@ export class SidePanel {
     const changed = overview.hidden !== detail;
     overview.hidden = detail;
     back.hidden = !detail;
-    if (detail && !this.open) this.setOpen(true, false);
+    if (detail && !this.open && !this.parts.quiet?.()) this.setOpen(true, false);
     if (changed) body.scrollTop = 0;
   }
 }

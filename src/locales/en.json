@@ -214,6 +214,7 @@
   },
   "globe": {
     "label": "3D globe showing the realms of the chosen year. Arrow keys turn it, + and − zoom.",
+    "moreDetails": "More details",
     "blank": {
       "title": "No borders here yet",
       "text": "We’re working on these parts of the world, but we need reputable sources first. Do you know one?",
