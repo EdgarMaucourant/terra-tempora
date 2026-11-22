@@ -389,6 +389,8 @@
     "marksGripLabel": "Resize the event icons",
     "marksGripTitle": "Drag to make the event icons bigger. Double-click to reset.",
     "more": "More timeline options",
+    "nextYear": "Next year",
+    "prevYear": "Previous year",
     "rightLabel": "Resize the timeline from the right: drag, or use the left and right arrows",
     "unfold": "Show the realms and events",
     "itemsLabel": "Realms and events on the timeline: the arrow keys go from one to the next",
