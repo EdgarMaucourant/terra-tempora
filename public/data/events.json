@@ -10964,6 +10964,206 @@
    "summary": "Two peace treaties signed at Tartu end Soviet Russia's wars in the north. On 2 February 1920 it recognises Estonia, with Narva's east bank and Pechory; on 14 October it makes peace with Finland, which gains Petsamo and a port on the Arctic Ocean. Both borders last until the Soviet Union takes back this land in 1940 and 1944.",
    "wikipedia": "Treaty_of_Tartu_(Russian–Estonian)",
    "search": "Treaty of Tartu 2 February 1920 Estonia Soviet Russia 14 October 1920 Finland Petsamo Pechory Ivangorod Narva border"
+  },
+  {
+   "id": "october-revolution-1917",
+   "kind": "revolution",
+   "year": 1917,
+   "title": "The October Revolution, 7 November 1917",
+   "place": "Petrograd (Saint Petersburg)",
+   "lonLat": [
+    30.31,
+    59.94
+   ],
+   "civs": [
+    "russia"
+   ],
+   "summary": "Eight months after the fall of the Tsar, the Bolsheviks led by Lenin and Trotsky storm the Winter Palace in Petrograd on the night of 7 November 1917 (25 October in the old calendar) and overthrow Kerensky's Provisional Government. The new Soviet government takes Russia out of the war and sets up the Russian Soviet Republic. The old empire breaks apart as its border lands declare independence.",
+   "wikipedia": "October_Revolution",
+   "search": "October Revolution 7 November 1917 25 October Bolsheviks Lenin Trotsky Petrograd Winter Palace Provisional Government Kerensky Soviet Russia"
+  },
+  {
+   "id": "russian-civil-war-1917",
+   "kind": "war",
+   "year": 1917,
+   "to": 1922,
+   "title": "The Russian Civil War, 1917 – 1922",
+   "place": "Omsk",
+   "lonLat": [
+    73.37,
+    54.98
+   ],
+   "civs": [
+    "russia",
+    "far-eastern-republic",
+    "ukraine",
+    "japan",
+    "united-kingdom"
+   ],
+   "summary": "The Bolsheviks' Red Army fights the Whites, an alliance of monarchists, liberals and generals, across the whole of the old empire. In 1919 Admiral Kolchak rules Siberia from Omsk as Supreme Ruler, while Denikin advances on Moscow from the south. The Reds win by 1920 in Europe and by 1922 in the Far East, at the cost of millions of dead from fighting, terror, famine and epidemics.",
+   "wikipedia": "Russian_Civil_War",
+   "search": "Russian Civil War 1917 1922 Reds Whites Red Army Kolchak Omsk Denikin Wrangel Yudenich Czechoslovak Legion Allied intervention famine"
+  },
+  {
+   "id": "transcaucasian-independence-1918",
+   "kind": "revolution",
+   "year": 1918,
+   "title": "Georgia, Armenia and Azerbaijan become independent, May 1918",
+   "place": "Tbilisi",
+   "lonLat": [
+    44.8,
+    41.7
+   ],
+   "civs": [
+    "georgia",
+    "armenia",
+    "azerbaijan",
+    "russia",
+    "ottoman-empire"
+   ],
+   "summary": "After refusing Brest-Litovsk, the Transcaucasian lands form a federation in April 1918, but it falls apart under the Ottoman offensive. Georgia declares independence in Tiflis on 26 May 1918, and Armenia and Azerbaijan on 28 May. The three republics fight over their borders and live under Ottoman, German and then British influence until the Red Army takes them in 1920 and 1921.",
+   "wikipedia": "Democratic_Republic_of_Georgia",
+   "search": "Transcaucasian Democratic Federative Republic 1918 Georgia 26 May Armenia Azerbaijan 28 May independence Tiflis Ottoman offensive"
+  },
+  {
+   "id": "north-russia-intervention-1918",
+   "kind": "war",
+   "year": 1918,
+   "to": 1919,
+   "title": "The Allied intervention in North Russia, 1918 – 1919",
+   "place": "Arkhangelsk",
+   "lonLat": [
+    40.54,
+    64.54
+   ],
+   "civs": [
+    "russia",
+    "united-kingdom"
+   ],
+   "summary": "To keep war supplies from the Germans and help the Whites, British troops land at Murmansk in March 1918 and an Allied force takes Arkhangelsk in August. A White government of the Northern Region rules under their protection. The Allies leave in September and October 1919, and the Red Army takes Arkhangelsk and Murmansk in February and March 1920.",
+   "wikipedia": "North_Russia_intervention",
+   "search": "North Russia intervention 1918 1919 Allied British American French Murmansk Arkhangelsk Northern Region Chaikovsky Miller Polar Bear Expedition"
+  },
+  {
+   "id": "japanese-intervention-in-siberia-1918",
+   "kind": "war",
+   "year": 1918,
+   "to": 1922,
+   "title": "The Japanese intervention in Siberia, 1918 – 1922",
+   "place": "Vladivostok",
+   "lonLat": [
+    131.89,
+    43.12
+   ],
+   "civs": [
+    "russia",
+    "japan",
+    "far-eastern-republic"
+   ],
+   "summary": "Japan lands troops at Vladivostok in August 1918 as part of an Allied intervention, and soon has some 70,000 men along the railways of the Far East. The other Allies leave in 1920, but Japan stays, backing White governments in Vladivostok. Its last troops leave the mainland in October 1922, and northern Sakhalin, taken in 1920, only in 1925.",
+   "wikipedia": "Japanese_intervention_in_Siberia",
+   "search": "Japanese intervention in Siberia 1918 1922 Siberian intervention Vladivostok Allied American Expeditionary Force Siberia Nikolayevsk incident northern Sakhalin 1925"
+  },
+  {
+   "id": "far-eastern-republic-1920",
+   "kind": "empire",
+   "year": 1920,
+   "to": 1922,
+   "title": "The Far Eastern Republic, 1920 – 1922",
+   "place": "Chita",
+   "lonLat": [
+    113.5,
+    52.03
+   ],
+   "civs": [
+    "far-eastern-republic",
+    "russia",
+    "japan"
+   ],
+   "summary": "To avoid open war with Japan, Moscow sets up a nominally independent buffer state east of Lake Baikal in April 1920, first seated in Verkhneudinsk, then in Chita. Its People's Revolutionary Army defeats the Whites at Volochayevka in February 1922 and enters Vladivostok when the Japanese leave in October. Its job done, the republic joins Soviet Russia on 15 November 1922.",
+   "wikipedia": "Far_Eastern_Republic",
+   "search": "Far Eastern Republic 1920 1922 buffer state Verkhneudinsk Chita Transbaikal Amur Primorye Blyukher Volochayevka Japan merged RSFSR 15 November 1922"
+  },
+  {
+   "id": "soviet-conquest-of-the-caucasus-1920",
+   "kind": "war",
+   "year": 1920,
+   "to": 1921,
+   "title": "The Red Army takes the Caucasus, 1920 – 1921",
+   "place": "Baku",
+   "lonLat": [
+    49.87,
+    40.41
+   ],
+   "civs": [
+    "azerbaijan",
+    "armenia",
+    "georgia",
+    "russia",
+    "turkey"
+   ],
+   "summary": "The Red Army's 11th Army enters Baku on 28 April 1920 and Azerbaijan becomes a Soviet republic. Armenia, crushed by Turkey in the autumn, is taken over in December 1920, and Georgia is invaded in February 1921, with Tbilisi falling on 25 February. The three republics are joined in the Transcaucasian SFSR in 1922.",
+   "wikipedia": "Red_Army_invasion_of_Azerbaijan",
+   "search": "Red Army invasion of Azerbaijan April 1920 Baku 11th Army Sovietization of Armenia December 1920 Red Army invasion of Georgia February 1921 Tbilisi Transcaucasian SFSR"
+  },
+  {
+   "id": "bukhara-operation-1920",
+   "kind": "war",
+   "year": 1920,
+   "title": "The Red Army takes Bukhara, September 1920",
+   "place": "Bukhara",
+   "lonLat": [
+    64.42,
+    39.77
+   ],
+   "civs": [
+    "emirate-of-bukhara",
+    "bukharan-people-s-soviet-republic",
+    "khanate-of-khiva",
+    "russia"
+   ],
+   "summary": "After the last khan of Khiva is deposed in February 1920, Mikhail Frunze's Red Army storms Bukhara between 29 August and 2 September 1920, with the Young Bukharan reformers. The emir Alim Khan flees to Afghanistan and the Bukharan People's Soviet Republic is proclaimed. The Basmachi revolt against Soviet rule goes on in the mountains for years.",
+   "wikipedia": "Bukhara_operation_(1920)",
+   "search": "Bukhara operation 1920 Frunze Red Army Emir Alim Khan Young Bukharans Bukharan People's Soviet Republic Khiva Khorezm Basmachi"
+  },
+  {
+   "id": "treaty-of-kars-1921",
+   "kind": "treaty",
+   "year": 1921,
+   "title": "The Treaty of Kars fixes the Turkish–Soviet border, October 1921",
+   "place": "Kars",
+   "lonLat": [
+    43.1,
+    40.6
+   ],
+   "civs": [
+    "turkey",
+    "russia",
+    "armenia",
+    "georgia",
+    "azerbaijan"
+   ],
+   "summary": "Following the Treaty of Moscow of March 1921, Atatürk's Ankara government and the three Soviet republics of the Caucasus sign the Treaty of Kars on 13 October 1921. Turkey keeps Kars and Ardahan, Russian since 1878, Georgia keeps Batumi, and Nakhchivan becomes an autonomous part of Azerbaijan. It is still the border between Turkey and its Caucasian neighbours.",
+   "wikipedia": "Treaty_of_Kars",
+   "search": "Treaty of Kars 13 October 1921 Turkey Grand National Assembly Soviet Armenia Georgia Azerbaijan Kars Ardahan Artvin Batumi Nakhchivan border Treaty of Moscow"
+  },
+  {
+   "id": "tuvan-people-s-republic-1921",
+   "kind": "revolution",
+   "year": 1921,
+   "title": "The Tuvan People's Republic, August 1921",
+   "place": "Kyzyl",
+   "lonLat": [
+    94.45,
+    51.72
+   ],
+   "civs": [
+    "tuvan-people-s-republic",
+    "russia"
+   ],
+   "summary": "Uryankhay, a Russian protectorate since 1914, is fought over by Reds, Whites and Chinese troops during the civil war. On 14 August 1921, with Soviet backing, a congress proclaims the People's Republic of Tannu Tuva. Recognised only by the Soviet Union and Mongolia, it is absorbed into the Soviet Union in 1944.",
+   "wikipedia": "Tuvan_People's_Republic",
+   "search": "Tuvan People's Republic 14 August 1921 Tannu Tuva Uryankhay Krai Russian protectorate 1914 Kyzyl Khem-Beldyr Soviet Union 1944"
   }
  ]
 }
