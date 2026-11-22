@@ -26,7 +26,7 @@
     "IRL",
     "heligoland"
    ],
-   "from": 1840,
+   "from": 1830,
    "why": "The United Kingdom with the Crown Dependencies (Guernsey, Jersey, the Isle of Man), its overseas territories and the Chagos Archipelago, whose land has not changed hands since 1965, and Ireland (the Irish Free State until 1937)"
   },
   {
@@ -46,7 +46,7 @@
     "SYC",
     "weihaiwei"
    ],
-   "from": 1840,
+   "from": 1830,
    "why": "Hong Kong, Brunei, Southern Rhodesia and the colonies in the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence or handover; Weihaiwei, leased from China until 1930"
   },
   {
@@ -68,7 +68,7 @@
     "BHS",
     "GRD"
    ],
-   "from": 1840,
+   "from": 1830,
    "why": "The Gulf protected states, South Arabia with all of Yemen (North Yemen until 1990), and the colonies and protectorates in Africa, the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence"
   },
   {
@@ -95,7 +95,7 @@
     "dervish-nugaal",
     "lado-enclave"
    ],
-   "from": 1840,
+   "from": 1830,
    "why": "The colonies, protectorates and trust territories Britain held in 1960 in Africa, Asia, the Mediterranean and the Caribbean, with today's borders, until their independence, with Malaya and Somalia around them"
   },
   {
@@ -109,7 +109,7 @@
     "ERI",
     "ETH"
    ],
-   "from": 1840,
+   "from": 1830,
    "why": "The Gold Coast and British Togoland (Ghana), Anglo-Egyptian Sudan and Eritrea, which Britain ruled or ran in the 1950s, with today's borders, and Ethiopia around Eritrea. The Haud, run by Britain inside Ethiopia until 1955, is not drawn"
   },
   {
@@ -159,9 +159,12 @@
     "nicobar-islands",
     "majha",
     "jullundur-doab",
-    "sikkim-morang"
+    "sikkim-morang",
+    "kangra-kullu",
+    "darjeeling-hills",
+    "coorg"
    ],
-   "from": 1840,
+   "from": 1830,
    "why": "British India (with the princely states, drawn as part of it), Burma and Ceylon, with today's borders, from British rule to today, and Newfoundland until it joined Canada. French and Portuguese India stay with their own families"
   },
   {
@@ -181,7 +184,7 @@
     "IRQ",
     "EGY"
    ],
-   "from": 1840,
+   "from": 1830,
    "why": "Mandatory Palestine and Transjordan, and what became of them: Israel, the West Bank, the Gaza Strip, Jordan, and the Sinai occupied by Israel; Iraq, a British mandate until 1932, and Kuwait, occupied by Iraq in 1990-91; Egypt, a British protectorate until 1922 and part of the United Arab Republic in 1958-61"
   },
   {
@@ -197,7 +200,7 @@
     "kythira",
     "HND-641"
    ],
-   "from": 1840,
+   "from": 1830,
    "why": "The Ionian Islands, a British protectorate until 1864, and the Bay Islands, a British colony until 1861, with Greece and Honduras since then"
   },
   {
@@ -205,7 +208,7 @@
     "NIC-657",
     "NIC-644"
    ],
-   "from": 1840,
+   "from": 1830,
    "why": "The Mosquito Coast, a British protectorate until 1860, with Nicaragua since then"
   }
  ],
@@ -3176,7 +3179,10 @@
       "nicobar-islands",
       "majha",
       "jullundur-doab",
-      "sikkim-morang"
+      "sikkim-morang",
+      "kangra-kullu",
+      "darjeeling-hills",
+      "coorg"
      ],
      "owner": "United Kingdom",
      "source": {
@@ -9464,7 +9470,10 @@
       "majha",
       "jullundur-doab",
       "bahawalpur",
-      "sikkim-morang"
+      "sikkim-morang",
+      "kangra-kullu",
+      "darjeeling-hills",
+      "coorg"
      ],
      "owner": "United Kingdom",
      "source": {
@@ -9563,7 +9572,7 @@
   },
   {
    "date": "1850-02-01",
-   "what": "Britain annexes the Sikkim Terai around Siliguri after the Raja of Sikkim had two British travellers seized",
+   "what": "Britain annexes the Sikkim Terai and the rest of the Darjeeling hills after the Raja of Sikkim had two British travellers seized",
    "source": {
     "title": "Darjeeling district (Wikipedia)",
     "url": "https://en.wikipedia.org/wiki/Darjeeling_district"
@@ -9572,7 +9581,8 @@
    "before": [
     {
      "pieces": [
-      "sikkim-morang"
+      "sikkim-morang",
+      "darjeeling-hills"
      ],
      "owner": "Kingdom of Sikkim",
      "source": {
@@ -9663,7 +9673,7 @@
   },
   {
    "date": "1846-03-09",
-   "what": "By the Treaty of Lahore, after the First Anglo-Sikh War, the Sikhs cede the Jullundur Doab to the East India Company",
+   "what": "By the Treaty of Lahore, after the First Anglo-Sikh War, the Sikhs cede the Jullundur Doab and the hill country between the Beas and the Sutlej (Kangra, Kullu) to the East India Company",
    "source": {
     "title": "Treaty of Lahore (Wikipedia)",
     "url": "https://en.wikipedia.org/wiki/Treaty_of_Lahore"
@@ -9672,7 +9682,8 @@
    "before": [
     {
      "pieces": [
-      "jullundur-doab"
+      "jullundur-doab",
+      "kangra-kullu"
      ],
      "owner": "Sikh Empire",
      "source": {
@@ -9704,6 +9715,27 @@
    ]
   },
   {
+   "date": "1841-09-24",
+   "what": "The Sultan of Brunei makes James Brooke Rajah of Sarawak",
+   "source": {
+    "title": "Raj of Sarawak (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Raj_of_Sarawak"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "MYS-1187"
+     ],
+     "owner": "Brunei",
+     "source": {
+      "title": "Brunei (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Brunei"
+     }
+    }
+   ]
+  },
+  {
    "date": "1841-01-26",
    "what": "British forces take possession of Hong Kong Island",
    "source": {
@@ -9723,6 +9755,90 @@
      "source": {
       "title": "Treaty of Nanking (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Treaty_of_Nanking"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1839-01-19",
+   "what": "British troops take Aden from the Sultan of Lahej",
+   "source": {
+    "title": "Aden Province (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Aden_Province"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "YEM-3510"
+     ],
+     "owner": "Sultanate of Lahej",
+     "source": {
+      "title": "Sultanate of Lahej (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sultanate_of_Lahej"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1838-11-29",
+   "what": "Pitcairn Island is taken under British protection with its first constitution",
+   "source": {
+    "title": "Pitcairn Islands (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Pitcairn_Islands"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "PCN"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Pitcairn Islands (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pitcairn_Islands"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1834-05-07",
+   "what": "After the Coorg War, the East India Company annexes Coorg",
+   "source": {
+    "title": "Coorg War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Coorg_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "coorg"
+     ],
+     "owner": "Kingdom of Coorg",
+     "source": {
+      "title": "Kingdom of Coorg (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Coorg"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1833-01-03",
+   "what": "Two British warships reassert British sovereignty over the Falkland Islands and the Buenos Aires garrison leaves",
+   "source": {
+    "title": "Reassertion of British sovereignty over the Falkland Islands (1833) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Reassertion_of_British_sovereignty_over_the_Falkland_Islands_(1833)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "FLK"
+     ],
+     "owner": "Argentina",
+     "source": {
+      "title": "Reassertion of British sovereignty over the Falkland Islands (1833) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Reassertion_of_British_sovereignty_over_the_Falkland_Islands_(1833)"
      }
     }
    ]
