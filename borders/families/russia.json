@@ -307,6 +307,27 @@
    ]
   },
   {
+   "date": "1994-03-28",
+   "what": "Kazakhstan agrees to lease the Baikonur Cosmodrome and its town to Russia",
+   "source": {
+    "title": "Baikonur Cosmodrome (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Baikonur_Cosmodrome"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "KAB"
+     ],
+     "owner": "Kazakhstan",
+     "source": {
+      "title": "Baikonur Cosmodrome (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Baikonur_Cosmodrome"
+     }
+    }
+   ]
+  },
+  {
    "date": "1993-10-30",
    "what": "Armenian forces take the districts of Azerbaijan around Nagorno-Karabakh during 1993: Kalbajar, Agdam, Fuzuli, Jabrayil, Qubadli and Zangilan",
    "source": {
