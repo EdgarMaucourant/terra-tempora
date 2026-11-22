@@ -20,7 +20,7 @@
     "LVA",
     "LTU"
    ],
-   "from": 1917,
+   "from": 1905,
    "why": "Russia and the other fourteen republics of the former Soviet Union, with the land held by breakaway states (Chechnya, Transnistria, Abkhazia, South Ossetia, Nagorno-Karabakh) hatched"
   },
   {
@@ -32,7 +32,7 @@
     "agdam-west",
     "fuzuli-west"
    ],
-   "from": 1917,
+   "from": 1905,
    "why": "Cuts for South Ossetia and for the land held by Armenian forces around Nagorno-Karabakh"
   },
   {
@@ -43,7 +43,7 @@
     "klukhori",
     "akhalkhevi"
    ],
-   "from": 1917,
+   "from": 1905,
    "why": "Cuts for land moved between Soviet republics after the war: the Estonian and Latvian border districts given to the Russian SFSR, and the Karachay and Chechen highlands given to the Georgian SSR from 1943-44 to 1957"
   },
   {
@@ -75,7 +75,7 @@
     "south-sakhalin",
     "kuril-islands"
    ],
-   "from": 1917,
+   "from": 1905,
    "why": "Finland, whose borders moved with the Soviet Union in 1940 and 1944, and the cuts for land that changed hands between 1939 and 1946"
   },
   {
@@ -86,14 +86,14 @@
     "kaluga-west",
     "voronezh-west"
    ],
-   "from": 1917,
+   "from": 1905,
    "why": "Cuts for Soviet land held by Germany and Finland in 1941-44 that was only part of a region"
   },
   {
    "pieces": [
     "KAB"
    ],
-   "from": 1917,
+   "from": 1905,
    "why": "The Baikonur Cosmodrome area, part of Kazakhstan, leased to Russia since 1994"
   },
   {
@@ -103,7 +103,7 @@
     "bobruisk",
     "khiva-delta"
    ],
-   "from": 1917,
+   "from": 1905,
    "why": "Cuts for land moved between Soviet republics in the 1920s: Taganrog and Shakhty, Gomel and Rechytsa, Bobruisk, and the Khivan part of Karakalpakstan"
   },
   {
@@ -131,8 +131,35 @@
     "salla-kuusamo",
     "salla"
    ],
-   "from": 1917,
+   "from": 1905,
    "why": "Finland, the Baltic states, Belarus, Ukraine and Moldova from the Russian Revolution, drawn as states held at the end of each year"
+  },
+  {
+   "pieces": [
+    "TUR-3040",
+    "TUR-4839",
+    "TUR-2298",
+    "TUR-4840"
+   ],
+   "from": 1905,
+   "why": "Kars, Ardahan, Artvin and Surmalu (Iğdır): Russian from 1878 to 1918, fought over until the Treaty of Kars of 1921"
+  },
+  {
+   "pieces": [
+    "ru-cp-pol-3146",
+    "ru-cp-pol-3170",
+    "ru-cp-pol-3152",
+    "ru-cp-pol-3150",
+    "ru-gr-pol-3150",
+    "POL-3151",
+    "POL-3148",
+    "POL-3147",
+    "ru-cp-pol-3145",
+    "ru-cp-pol-3144",
+    "POL-3149"
+   ],
+   "from": 1905,
+   "why": "The Russian part of Poland (Congress Poland and Bialystok), from 1905 to today; the rest of Poland is not yet rebuilt"
   }
  ],
  "changes": [
@@ -1158,6 +1185,223 @@
    ]
   },
   {
+   "date": "1945-01-27",
+   "what": "The Red Army and the Polish People's Army drive the Germans out",
+   "source": {
+    "title": "Vistula–Oder offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Vistula–Oder_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ru-cp-pol-3146"
+     ],
+     "owner": "Poland",
+     "source": {
+      "title": "German occupation of Poland during World War II (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/German_occupation_of_Poland_during_World_War_II"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1939-09-28",
+      "note": "Held by Germany in the Second World War, annexed to the Reich or in the General Government",
+      "source": {
+       "title": "General Government (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/General_Government"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1945-01-21",
+   "what": "The Red Army and the Polish People's Army drive the Germans out",
+   "source": {
+    "title": "Vistula–Oder offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Vistula–Oder_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ru-cp-pol-3144"
+     ],
+     "owner": "Poland",
+     "source": {
+      "title": "German occupation of Poland during World War II (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/German_occupation_of_Poland_during_World_War_II"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1939-09-28",
+      "note": "Held by Germany in the Second World War, annexed to the Reich or in the General Government",
+      "source": {
+       "title": "General Government (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/General_Government"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1945-01-20",
+   "what": "The Red Army and the Polish People's Army drive the Germans out",
+   "source": {
+    "title": "Vistula–Oder offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Vistula–Oder_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ru-cp-pol-3145"
+     ],
+     "owner": "Poland",
+     "source": {
+      "title": "German occupation of Poland during World War II (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/German_occupation_of_Poland_during_World_War_II"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1939-09-28",
+      "note": "Held by Germany in the Second World War, annexed to the Reich or in the General Government",
+      "source": {
+       "title": "General Government (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/General_Government"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1945-01-19",
+   "what": "The Red Army and the Polish People's Army drive the Germans out",
+   "source": {
+    "title": "Vistula–Oder offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Vistula–Oder_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "POL-3147"
+     ],
+     "owner": "Poland",
+     "source": {
+      "title": "German occupation of Poland during World War II (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/German_occupation_of_Poland_during_World_War_II"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1939-09-28",
+      "note": "Held by Germany in the Second World War, annexed to the Reich or in the General Government",
+      "source": {
+       "title": "General Government (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/General_Government"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1945-01-17",
+   "what": "The Red Army and the Polish People's Army drive the Germans out",
+   "source": {
+    "title": "Vistula–Oder offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Vistula–Oder_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "POL-3148"
+     ],
+     "owner": "Poland",
+     "source": {
+      "title": "German occupation of Poland during World War II (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/German_occupation_of_Poland_during_World_War_II"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1939-09-28",
+      "note": "Held by Germany in the Second World War, annexed to the Reich or in the General Government",
+      "source": {
+       "title": "General Government (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/General_Government"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1945-01-17",
+   "what": "The Red Army and the Polish People's Army drive the Germans out",
+   "source": {
+    "title": "Vistula–Oder offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Vistula–Oder_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ru-cp-pol-3170"
+     ],
+     "owner": "Poland",
+     "source": {
+      "title": "German occupation of Poland during World War II (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/German_occupation_of_Poland_during_World_War_II"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1939-09-28",
+      "note": "Held by Germany in the Second World War, annexed to the Reich or in the General Government",
+      "source": {
+       "title": "General Government (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/General_Government"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1945-01-15",
+   "what": "The Red Army and the Polish People's Army drive the Germans out",
+   "source": {
+    "title": "Vistula–Oder offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Vistula–Oder_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "POL-3149"
+     ],
+     "owner": "Poland",
+     "source": {
+      "title": "German occupation of Poland during World War II (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/German_occupation_of_Poland_during_World_War_II"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1939-09-28",
+      "note": "Held by Germany in the Second World War, annexed to the Reich or in the General Government",
+      "source": {
+       "title": "General Government (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/General_Government"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
    "date": "1944-11-24",
    "what": "The Karelian Isthmus with Vyborg moves from the Karelo-Finnish SSR to the Leningrad Oblast of the Russian SFSR",
    "source": {
@@ -1667,6 +1911,100 @@
       "source": {
        "title": "Lvov–Sandomierz offensive (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Lvov–Sandomierz_offensive"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-07-27",
+   "what": "The Red Army takes Bialystok",
+   "source": {
+    "title": "Belostok Region (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Belostok_Region"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ru-cp-pol-3150",
+      "ru-gr-pol-3150"
+     ],
+     "owner": "Poland",
+     "source": {
+      "title": "Bezirk Bialystok (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bezirk_Bialystok"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-06-22",
+      "note": "Held by Germany from the invasion of the Soviet Union in 1941 to 1944",
+      "source": {
+       "title": "Bezirk Bialystok (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Bezirk_Bialystok"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-07-24",
+   "what": "The Red Army and the Polish People's Army drive the Germans out",
+   "source": {
+    "title": "Lublin–Brest offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Lublin–Brest_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "POL-3151"
+     ],
+     "owner": "Poland",
+     "source": {
+      "title": "German occupation of Poland during World War II (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/German_occupation_of_Poland_during_World_War_II"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1939-09-28",
+      "note": "Held by Germany in the Second World War, annexed to the Reich or in the General Government",
+      "source": {
+       "title": "General Government (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/General_Government"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-07-24",
+   "what": "The Red Army and the Polish People's Army drive the Germans out",
+   "source": {
+    "title": "Lublin–Brest offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Lublin–Brest_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ru-cp-pol-3152"
+     ],
+     "owner": "Poland",
+     "source": {
+      "title": "German occupation of Poland during World War II (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/German_occupation_of_Poland_during_World_War_II"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1939-09-28",
+      "note": "Held by Germany in the Second World War, annexed to the Reich or in the General Government",
+      "source": {
+       "title": "General Government (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/General_Government"
       },
       "occupied": true
      }
@@ -4712,6 +5050,38 @@
    ]
   },
   {
+   "date": "1941-06-22",
+   "what": "Germany invades the Soviet Union and takes the Bialystok region",
+   "source": {
+    "title": "Operation Barbarossa (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Operation_Barbarossa"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "ru-cp-pol-3150",
+      "ru-gr-pol-3150"
+     ],
+     "owner": "Poland",
+     "source": {
+      "title": "Soviet invasion of Poland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Soviet_invasion_of_Poland"
+     },
+     "hatch": {
+      "by": "Soviet Union",
+      "since": "1939-09-17",
+      "note": "Held by the Soviet Union from its invasion of Poland in 1939 to 1941, and annexed to the Byelorussian SSR",
+      "source": {
+       "title": "Soviet invasion of Poland (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Soviet_invasion_of_Poland"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
    "date": "1940-08-02",
    "what": "The Moldavian SSR is formed from most of Bessarabia and the western part of the Moldavian ASSR of the Ukrainian SSR",
    "source": {
@@ -4964,6 +5334,35 @@
    ]
   },
   {
+   "date": "1939-09-28",
+   "what": "Warsaw surrenders; Germany occupies the land west of the Bug",
+   "source": {
+    "title": "Invasion of Poland (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Invasion_of_Poland"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "POL-3151",
+      "ru-cp-pol-3152",
+      "POL-3148",
+      "POL-3147",
+      "POL-3149",
+      "ru-cp-pol-3170",
+      "ru-cp-pol-3146",
+      "ru-cp-pol-3144",
+      "ru-cp-pol-3145"
+     ],
+     "owner": "Poland",
+     "source": {
+      "title": "Second Polish Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Second_Polish_Republic"
+     }
+    }
+   ]
+  },
+  {
    "date": "1939-09-19",
    "what": "The Red Army takes Vilnius",
    "source": {
@@ -5009,6 +5408,28 @@
      "source": {
       "title": "Kresy (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Kresy"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1939-09-17",
+   "what": "The Soviet Union invades Poland from the east",
+   "source": {
+    "title": "Soviet invasion of Poland (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Soviet_invasion_of_Poland"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ru-cp-pol-3150",
+      "ru-gr-pol-3150"
+     ],
+     "owner": "Poland",
+     "source": {
+      "title": "Second Polish Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Second_Polish_Republic"
      }
     }
    ]
@@ -5463,6 +5884,28 @@
    ]
   },
   {
+   "date": "1921-03-16",
+   "what": "Treaty of Moscow: Soviet Russia leaves Artvin and Ardahan, taken from Georgia in February and March 1921, to Turkey",
+   "source": {
+    "title": "Treaty of Moscow (1921) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Moscow_(1921)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "TUR-2298",
+      "TUR-4839"
+     ],
+     "owner": "Georgia",
+     "source": {
+      "title": "Treaty of Moscow (1921) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Moscow_(1921)"
+     }
+    }
+   ]
+  },
+  {
    "date": "1920-11-07",
    "what": "Turkish forces take Alexandropol (Gyumri) in the Turkish–Armenian War",
    "source": {
@@ -5479,6 +5922,28 @@
      "source": {
       "title": "Shirak Province (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Shirak_Province"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1920-10-30",
+   "what": "Turkish forces take Kars from Armenia, then Surmalu (Iğdır) in November",
+   "source": {
+    "title": "Turkish–Armenian War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Turkish–Armenian_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "TUR-3040",
+      "TUR-4840"
+     ],
+     "owner": "Armenia",
+     "source": {
+      "title": "Kars Oblast (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kars_Oblast"
      }
     }
    ]
@@ -5639,7 +6104,8 @@
    "before": [
     {
      "pieces": [
-      "GEO-3027"
+      "GEO-3027",
+      "TUR-2298"
      ],
      "owner": "Georgia",
      "source": {
@@ -6074,6 +6540,80 @@
    ]
   },
   {
+   "date": "1919-04-19",
+   "what": "British forces end the South-West Caucasian Republic in Kars and hand Kars to Armenia; Georgia holds Ardahan",
+   "source": {
+    "title": "South West Caucasian Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/South_West_Caucasian_Republic"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TUR-3040",
+      "TUR-4839"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Kars Oblast (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kars_Oblast"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1919-02-19",
+   "what": "German troops leave Bialystok to the Polish army",
+   "source": {
+    "title": "Białystok (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Białystok"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ru-cp-pol-3150"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Ober Ost (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ober_Ost"
+     },
+     "territory": "Congress Poland",
+     "hatch": {
+      "by": "Germany",
+      "since": "1915-08-13",
+      "note": "Russian land held by Germany from the Great Retreat of 1915 to 1919",
+      "source": {
+       "title": "Ober Ost (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Ober_Ost"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "ru-gr-pol-3150"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Ober Ost (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ober_Ost"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1915-08-13",
+      "note": "Russian land held by Germany from the Great Retreat of 1915 to 1919",
+      "source": {
+       "title": "Ober Ost (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Ober_Ost"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
    "date": "1919-02-09",
    "what": "Polish forces move into the land left by the Germans: Brest, then Grodno in April; Poland keeps it under the Peace of Riga of 1921",
    "source": {
@@ -6151,12 +6691,34 @@
    "before": [
     {
      "pieces": [
-      "GEO-3027"
+      "GEO-3027",
+      "TUR-2298"
      ],
      "owner": "Ottoman Empire",
      "source": {
       "title": "Treaty of Batum (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Treaty_of_Batum"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-12-07",
+   "what": "Ottoman troops leave Surmalu after the Armistice of Mudros; Armenia takes it",
+   "source": {
+    "title": "First Republic of Armenia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/First_Republic_of_Armenia"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TUR-4840"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Surmalu uezd (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Surmalu_uezd"
      }
     }
    ]
@@ -6218,22 +6780,8 @@
       "LVA-1091",
       "LVA-5723",
       "LVA-5759",
-      "LVA-5764",
-      "LVA-1094",
-      "LVA-5758",
-      "LVA-5776",
-      "LVA-5756",
-      "LVA-5760",
-      "LVA-5767",
-      "LVA-5771",
-      "LVA-5772",
-      "LVA-5775",
-      "LVA-5780",
-      "LVA-5777",
       "LVA-5757",
-      "LVA-5766",
       "LVA-5736",
-      "LVA-5769",
       "LVA-5732",
       "LVA-5725",
       "LVA-5727",
@@ -6248,9 +6796,7 @@
       "LVA-5711",
       "LVA-5737",
       "LVA-4849",
-      "LVA-5720",
-      "LVA-5762",
-      "LVA-5754"
+      "LVA-5720"
      ],
      "owner": "Russia",
      "source": {
@@ -6336,6 +6882,41 @@
      "source": {
       "title": "Governorate of Livonia (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Governorate_of_Livonia"
+     }
+    },
+    {
+     "pieces": [
+      "LVA-1094",
+      "LVA-5758",
+      "LVA-5776",
+      "LVA-5760",
+      "LVA-5780",
+      "LVA-5775",
+      "LVA-5777",
+      "LVA-5762",
+      "LVA-5754",
+      "LVA-5766",
+      "LVA-5769",
+      "LVA-5764",
+      "LVA-5756",
+      "LVA-5771",
+      "LVA-5772",
+      "LVA-5767"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Governorate of Livonia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Governorate_of_Livonia"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1917-09-03",
+      "note": "Riga and its area, taken by Germany in September 1917",
+      "source": {
+       "title": "Battle of Jugla (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Battle_of_Jugla"
+      },
+      "occupied": true
      }
     }
    ]
@@ -6473,6 +7054,206 @@
       "source": {
        "title": "Ober Ost (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Ober_Ost"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-11-11",
+   "what": "Poland regains its independence: the Regency Council hands power to Józef Piłsudski as the German and Austrian occupiers withdraw",
+   "source": {
+    "title": "Second Polish Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Second_Polish_Republic"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ru-cp-pol-3146"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Kingdom of Poland (1917–1918) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Poland_(1917–1918)"
+     },
+     "territory": "Congress Poland",
+     "hatch": {
+      "by": "Germany",
+      "since": "1914-08-02",
+      "note": "Congress Poland, held by Germany in the First World War; a Kingdom of Poland under German and Austrian control from November 1916",
+      "source": {
+       "title": "Kingdom of Poland (1917–1918) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Kingdom_of_Poland_(1917–1918)"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "ru-cp-pol-3170"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Kingdom of Poland (1917–1918) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Poland_(1917–1918)"
+     },
+     "territory": "Congress Poland",
+     "hatch": {
+      "by": "Austria-Hungary",
+      "since": "1914-12-17",
+      "note": "Congress Poland, held by Austria-Hungary in the First World War; a Kingdom of Poland under German and Austrian control from November 1916",
+      "source": {
+       "title": "Kingdom of Poland (1917–1918) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Kingdom_of_Poland_(1917–1918)"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "ru-cp-pol-3152"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Kingdom of Poland (1917–1918) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Poland_(1917–1918)"
+     },
+     "territory": "Congress Poland",
+     "hatch": {
+      "by": "Austria-Hungary",
+      "since": "1915-07-30",
+      "note": "Congress Poland, held by Austria-Hungary in the First World War; a Kingdom of Poland under German and Austrian control from November 1916",
+      "source": {
+       "title": "Kingdom of Poland (1917–1918) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Kingdom_of_Poland_(1917–1918)"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "POL-3151"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Kingdom of Poland (1917–1918) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Poland_(1917–1918)"
+     },
+     "territory": "Congress Poland",
+     "hatch": {
+      "by": "Austria-Hungary",
+      "since": "1915-07-30",
+      "note": "Congress Poland, held by Austria-Hungary in the First World War; a Kingdom of Poland under German and Austrian control from November 1916",
+      "source": {
+       "title": "Kingdom of Poland (1917–1918) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Kingdom_of_Poland_(1917–1918)"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "POL-3148"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Kingdom of Poland (1917–1918) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Poland_(1917–1918)"
+     },
+     "territory": "Congress Poland",
+     "hatch": {
+      "by": "Germany",
+      "since": "1915-08-05",
+      "note": "Congress Poland, held by Germany in the First World War; a Kingdom of Poland under German and Austrian control from November 1916",
+      "source": {
+       "title": "Kingdom of Poland (1917–1918) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Kingdom_of_Poland_(1917–1918)"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "POL-3147"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Kingdom of Poland (1917–1918) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Poland_(1917–1918)"
+     },
+     "territory": "Congress Poland",
+     "hatch": {
+      "by": "Germany",
+      "since": "1914-12-06",
+      "note": "Congress Poland, held by Germany in the First World War; a Kingdom of Poland under German and Austrian control from November 1916",
+      "source": {
+       "title": "Kingdom of Poland (1917–1918) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Kingdom_of_Poland_(1917–1918)"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "ru-cp-pol-3145"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Kingdom of Poland (1917–1918) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Poland_(1917–1918)"
+     },
+     "territory": "Congress Poland",
+     "hatch": {
+      "by": "Germany",
+      "since": "1914-11-15",
+      "note": "Congress Poland, held by Germany in the First World War; a Kingdom of Poland under German and Austrian control from November 1916",
+      "source": {
+       "title": "Kingdom of Poland (1917–1918) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Kingdom_of_Poland_(1917–1918)"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "ru-cp-pol-3144"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Kingdom of Poland (1917–1918) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Poland_(1917–1918)"
+     },
+     "territory": "Congress Poland",
+     "hatch": {
+      "by": "Germany",
+      "since": "1914-08-02",
+      "note": "Congress Poland, held by Germany in the First World War; a Kingdom of Poland under German and Austrian control from November 1916",
+      "source": {
+       "title": "Kingdom of Poland (1917–1918) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Kingdom_of_Poland_(1917–1918)"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "POL-3149"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Kingdom of Poland (1917–1918) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Poland_(1917–1918)"
+     },
+     "territory": "Congress Poland",
+     "hatch": {
+      "by": "Austria-Hungary",
+      "since": "1915-07-20",
+      "note": "Congress Poland, held by Austria-Hungary in the First World War; a Kingdom of Poland under German and Austrian control from November 1916",
+      "source": {
+       "title": "Kingdom of Poland (1917–1918) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Kingdom_of_Poland_(1917–1918)"
       },
       "occupied": true
      }
@@ -6620,6 +7401,30 @@
    ]
   },
   {
+   "date": "1918-04-25",
+   "what": "Ottoman forces take Kars, Ardahan and Batumi, ceded at Brest-Litovsk, and Surmalu in May",
+   "source": {
+    "title": "Treaty of Brest-Litovsk (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Brest-Litovsk"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "TUR-3040",
+      "TUR-4839",
+      "TUR-2298",
+      "TUR-4840"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Kars Oblast (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kars_Oblast"
+     }
+    }
+   ]
+  },
+  {
    "date": "1918-04-09",
    "what": "The Sfatul Țării votes for the union of Bessarabia with Romania, whose troops arrived in January 1918",
    "source": {
@@ -6740,7 +7545,6 @@
       "ukr-held-2022-mykolayiv",
       "ukr-held-2024-kharkiv",
       "ukr-held-2025-kharkiv",
-      "UKR-318",
       "UKR-286",
       "MDA-1652",
       "MDA-1645",
@@ -6753,6 +7557,110 @@
      "source": {
       "title": "Ukrainian People's Republic (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Ukrainian_People's_Republic"
+     }
+    },
+    {
+     "pieces": [
+      "UKR-318"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Volhynian Governorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Volhynian_Governorate"
+     },
+     "hatch": {
+      "by": "Austria-Hungary",
+      "since": "1915-08-31",
+      "note": "Western Volhynia (Kovel, Volodymyr), held by the Central Powers from the Great Retreat of 1915 until 1918; Lutsk was retaken by Russia in June 1916",
+      "source": {
+       "title": "Great Retreat (Russian) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Great_Retreat_(Russian)"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1917-12-06",
+   "what": "Finland declares independence from Russia",
+   "source": {
+    "title": "Finnish Declaration of Independence (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Finnish_Declaration_of_Independence"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "FIN",
+      "karelian-isthmus",
+      "ladoga-karelia",
+      "salla-kuusamo",
+      "salla"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Grand Duchy of Finland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Grand_Duchy_of_Finland"
+     },
+     "territory": "Grand Duchy of Finland"
+    }
+   ]
+  },
+  {
+   "date": "1917-11-07",
+   "what": "With the fall of the Provisional Government, Bukhara and Khiva are no longer Russian protectorates",
+   "source": {
+    "title": "Emirate of Bukhara (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Emirate_of_Bukhara"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UZB-354",
+      "UZB-357",
+      "UZB-361",
+      "UZB-362",
+      "TJK-367",
+      "TJK-368",
+      "TJK-5491",
+      "TKM-359"
+     ],
+     "owner": "Emirate of Bukhara",
+     "source": {
+      "title": "Emirate of Bukhara (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Emirate_of_Bukhara"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1873-09-28",
+      "note": "A Russian protectorate from 1873 (a vassal since 1868)",
+      "source": {
+       "title": "Emirate of Bukhara (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Emirate_of_Bukhara"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "UZB-355",
+      "TKM-353",
+      "khiva-delta"
+     ],
+     "owner": "Khanate of Khiva",
+     "source": {
+      "title": "Khanate of Khiva (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Khanate_of_Khiva"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1873-08-12",
+      "note": "A Russian protectorate from the Treaty of Gandjemi of 1873",
+      "source": {
+       "title": "Khanate of Khiva (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Khanate_of_Khiva"
+      }
      }
     }
    ]
@@ -6775,6 +7683,166 @@
      "source": {
       "title": "Governorate of Estonia (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Governorate_of_Estonia"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1917-09-03",
+   "what": "Germany takes Riga",
+   "source": {
+    "title": "Battle of Jugla (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Jugla"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "LVA-1094",
+      "LVA-5758",
+      "LVA-5776",
+      "LVA-5760",
+      "LVA-5780",
+      "LVA-5775",
+      "LVA-5777",
+      "LVA-5762",
+      "LVA-5754",
+      "LVA-5766",
+      "LVA-5769",
+      "LVA-5764",
+      "LVA-5756",
+      "LVA-5771",
+      "LVA-5772",
+      "LVA-5767"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Governorate of Livonia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Governorate_of_Livonia"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1917-08-03",
+   "what": "Austro-Hungarian forces retake Czernowitz",
+   "source": {
+    "title": "Kerensky offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kerensky_offensive"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "UKR-288"
+     ],
+     "owner": "Austria-Hungary",
+     "source": {
+      "title": "Brusilov offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Brusilov_offensive"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1916-06-18",
+      "note": "Austrian land held by Russia in the First World War: Bukovina, taken in the Brusilov offensive in June 1916",
+      "source": {
+       "title": "Brusilov offensive (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Brusilov_offensive"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1917-07-25",
+   "what": "The Austro-German counter-offensive after the Kerensky offensive retakes Tarnopol and Stanislau",
+   "source": {
+    "title": "Kerensky offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kerensky_offensive"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "UKR-292"
+     ],
+     "owner": "Austria-Hungary",
+     "source": {
+      "title": "Galicia (Eastern Europe) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Galicia_(Eastern_Europe)"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1914-08-27",
+      "note": "Austrian land held by Russia in the First World War: Tarnopol, held from August 1914 to July 1917",
+      "source": {
+       "title": "Battle of Galicia (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Battle_of_Galicia"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "UKR-289"
+     ],
+     "owner": "Austria-Hungary",
+     "source": {
+      "title": "Brusilov offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Brusilov_offensive"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1916-08-10",
+      "note": "Austrian land held by Russia in the First World War: Stanislau, retaken in the Brusilov offensive in August 1916",
+      "source": {
+       "title": "Brusilov offensive (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Brusilov_offensive"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1916-08-10",
+   "what": "The Brusilov offensive takes Stanislau",
+   "source": {
+    "title": "Brusilov offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Brusilov_offensive"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "UKR-289"
+     ],
+     "owner": "Austria-Hungary",
+     "source": {
+      "title": "Brusilov offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Brusilov_offensive"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1916-06-18",
+   "what": "The Brusilov offensive takes Czernowitz and Bukovina",
+   "source": {
+    "title": "Brusilov offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Brusilov_offensive"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "UKR-288"
+     ],
+     "owner": "Austria-Hungary",
+     "source": {
+      "title": "Duchy of Bukovina (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Duchy_of_Bukovina"
      }
     }
    ]
@@ -6811,6 +7879,27 @@
    ]
   },
   {
+   "date": "1915-08-31",
+   "what": "Austro-Hungarian forces take Lutsk and western Volhynia in the Great Retreat",
+   "source": {
+    "title": "Great Retreat (Russian) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Great_Retreat_(Russian)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-318"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Volhynian Governorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Volhynian_Governorate"
+     }
+    }
+   ]
+  },
+  {
    "date": "1915-08-26",
    "what": "Germany takes Brest-Litovsk, and Grodno in September",
    "source": {
@@ -6829,6 +7918,60 @@
       "title": "Grodno Governorate (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Grodno_Governorate"
      }
+    }
+   ]
+  },
+  {
+   "date": "1915-08-13",
+   "what": "Germany takes this part of Russian Poland",
+   "source": {
+    "title": "Eastern Front (World War I) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Eastern_Front_(World_War_I)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ru-cp-pol-3150"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Congress Poland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Congress_Poland"
+     },
+     "territory": "Congress Poland"
+    },
+    {
+     "pieces": [
+      "ru-gr-pol-3150"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Grodno Governorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Grodno_Governorate"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1915-08-05",
+   "what": "Germany takes this part of Russian Poland",
+   "source": {
+    "title": "Eastern Front (World War I) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Eastern_Front_(World_War_I)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "POL-3148"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Congress Poland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Congress_Poland"
+     },
+     "territory": "Congress Poland"
     }
    ]
   },
@@ -6868,22 +8011,8 @@
       "LVA-1091",
       "LVA-5723",
       "LVA-5759",
-      "LVA-5764",
-      "LVA-1094",
-      "LVA-5758",
-      "LVA-5776",
-      "LVA-5756",
-      "LVA-5760",
-      "LVA-5767",
-      "LVA-5771",
-      "LVA-5772",
-      "LVA-5775",
-      "LVA-5780",
-      "LVA-5777",
       "LVA-5757",
-      "LVA-5766",
       "LVA-5736",
-      "LVA-5769",
       "LVA-5732",
       "LVA-5725",
       "LVA-5727",
@@ -6898,14 +8027,448 @@
       "LVA-5711",
       "LVA-5737",
       "LVA-4849",
-      "LVA-5720",
-      "LVA-5762",
-      "LVA-5754"
+      "LVA-5720"
      ],
      "owner": "Russia",
      "source": {
       "title": "Courland Governorate (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Courland_Governorate"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1915-07-30",
+   "what": "Austria-Hungary takes this part of Russian Poland",
+   "source": {
+    "title": "Eastern Front (World War I) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Eastern_Front_(World_War_I)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "POL-3151"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Congress Poland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Congress_Poland"
+     },
+     "territory": "Congress Poland"
+    }
+   ]
+  },
+  {
+   "date": "1915-07-30",
+   "what": "Austria-Hungary takes this part of Russian Poland",
+   "source": {
+    "title": "Eastern Front (World War I) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Eastern_Front_(World_War_I)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ru-cp-pol-3152"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Congress Poland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Congress_Poland"
+     },
+     "territory": "Congress Poland"
+    }
+   ]
+  },
+  {
+   "date": "1915-07-20",
+   "what": "Austria-Hungary takes this part of Russian Poland",
+   "source": {
+    "title": "Eastern Front (World War I) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Eastern_Front_(World_War_I)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "POL-3149"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Congress Poland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Congress_Poland"
+     },
+     "territory": "Congress Poland"
+    }
+   ]
+  },
+  {
+   "date": "1915-06-22",
+   "what": "The Gorlice–Tarnów offensive drives Russia out of Lemberg (Lviv) and most of Galicia",
+   "source": {
+    "title": "Gorlice–Tarnów offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Gorlice–Tarnów_offensive"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "UKR-291"
+     ],
+     "owner": "Austria-Hungary",
+     "source": {
+      "title": "Battle of Galicia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Galicia"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1914-09-03",
+      "note": "Austrian land held by Russia in the First World War: Lemberg (Lviv), held from September 1914 to June 1915",
+      "source": {
+       "title": "Battle of Galicia (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Battle_of_Galicia"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "UKR-289"
+     ],
+     "owner": "Austria-Hungary",
+     "source": {
+      "title": "Battle of Galicia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Galicia"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1914-09-03",
+      "note": "Austrian land held by Russia in the First World War: Stanislau, held from September 1914 to June 1915",
+      "source": {
+       "title": "Battle of Galicia (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Battle_of_Galicia"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1915-02-17",
+   "what": "Austro-Hungarian forces retake Czernowitz",
+   "source": {
+    "title": "Battle of Galicia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Galicia"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-288"
+     ],
+     "owner": "Austria-Hungary",
+     "source": {
+      "title": "Duchy of Bukovina (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Duchy_of_Bukovina"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1914-09-02",
+      "note": "Austrian land held by Russia in the First World War: Czernowitz, held with breaks from September 1914 to February 1915",
+      "source": {
+       "title": "Battle of Galicia (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Battle_of_Galicia"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1914-12-17",
+   "what": "Austria-Hungary takes this part of Russian Poland",
+   "source": {
+    "title": "Eastern Front (World War I) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Eastern_Front_(World_War_I)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ru-cp-pol-3170"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Congress Poland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Congress_Poland"
+     },
+     "territory": "Congress Poland"
+    }
+   ]
+  },
+  {
+   "date": "1914-12-06",
+   "what": "Germany takes this part of Russian Poland",
+   "source": {
+    "title": "Eastern Front (World War I) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Eastern_Front_(World_War_I)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "POL-3147"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Congress Poland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Congress_Poland"
+     },
+     "territory": "Congress Poland"
+    }
+   ]
+  },
+  {
+   "date": "1914-11-15",
+   "what": "Germany takes this part of Russian Poland",
+   "source": {
+    "title": "Eastern Front (World War I) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Eastern_Front_(World_War_I)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ru-cp-pol-3145"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Congress Poland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Congress_Poland"
+     },
+     "territory": "Congress Poland"
+    }
+   ]
+  },
+  {
+   "date": "1914-09-03",
+   "what": "The Russian army takes Lemberg (Lviv) in the Battle of Galicia",
+   "source": {
+    "title": "Battle of Galicia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Galicia"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "UKR-291",
+      "UKR-289"
+     ],
+     "owner": "Austria-Hungary",
+     "source": {
+      "title": "Kingdom of Galicia and Lodomeria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Galicia_and_Lodomeria"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1914-09-02",
+   "what": "The Russian army takes Czernowitz",
+   "source": {
+    "title": "Battle of Galicia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Galicia"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-288"
+     ],
+     "owner": "Austria-Hungary",
+     "source": {
+      "title": "Duchy of Bukovina (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Duchy_of_Bukovina"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1914-08-27",
+   "what": "The Russian army takes Tarnopol",
+   "source": {
+    "title": "Battle of Galicia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Galicia"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "UKR-292"
+     ],
+     "owner": "Austria-Hungary",
+     "source": {
+      "title": "Kingdom of Galicia and Lodomeria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Galicia_and_Lodomeria"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1914-08-02",
+   "what": "Germany takes this part of Russian Poland",
+   "source": {
+    "title": "Eastern Front (World War I) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Eastern_Front_(World_War_I)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ru-cp-pol-3144"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Congress Poland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Congress_Poland"
+     },
+     "territory": "Congress Poland"
+    }
+   ]
+  },
+  {
+   "date": "1914-08-02",
+   "what": "Germany takes this part of Russian Poland",
+   "source": {
+    "title": "Eastern Front (World War I) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Eastern_Front_(World_War_I)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ru-cp-pol-3146"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Congress Poland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Congress_Poland"
+     },
+     "territory": "Congress Poland"
+    }
+   ]
+  },
+  {
+   "date": "1914-06-17",
+   "what": "Russia takes the Uryankhay Krai (Tuva) under its protection",
+   "source": {
+    "title": "Uryankhay Krai (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Uryankhay_Krai"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2605"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Uryankhay Krai (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Uryankhay_Krai"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1912-01-15",
+   "what": "Qing rule in Uryankhay (Tuva) collapses after the Mongolian revolution of 1911; Russia and Mongolia both claim it",
+   "source": {
+    "title": "Uryankhay Krai (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Uryankhay_Krai"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2605"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Tannu Uriankhai (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tannu_Uriankhai"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1905-09-05",
+   "what": "Treaty of Portsmouth: after the Russo-Japanese War, Russia gives southern Sakhalin, south of the 50th parallel, to Japan",
+   "source": {
+    "title": "Treaty of Portsmouth (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Portsmouth"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "south-sakhalin"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Sakhalin Oblast (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sakhalin_Oblast"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1873-09-28",
+   "what": "Bukhara becomes a Russian protectorate",
+   "source": {
+    "title": "Emirate of Bukhara (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Emirate_of_Bukhara"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "UZB-354",
+      "UZB-357",
+      "UZB-361",
+      "UZB-362",
+      "TJK-367",
+      "TJK-368",
+      "TJK-5491",
+      "TKM-359"
+     ],
+     "owner": "Emirate of Bukhara",
+     "source": {
+      "title": "Emirate of Bukhara (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Emirate_of_Bukhara"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1873-08-12",
+   "what": "Treaty of Gandjemi: Khiva becomes a Russian protectorate",
+   "source": {
+    "title": "Khanate of Khiva (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Khanate_of_Khiva"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "UZB-355",
+      "TKM-353",
+      "khiva-delta"
+     ],
+     "owner": "Khanate of Khiva",
+     "source": {
+      "title": "Khanate of Khiva (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Khanate_of_Khiva"
      }
     }
    ]

@@ -2637,6 +2637,28 @@
   "es": "Rusia",
   "periods": [
    {
+    "from": "1721-11-02",
+    "name": "Russian Empire",
+    "wikipedia": "Russian Empire",
+    "fr": "Empire russe",
+    "es": "Imperio ruso",
+    "label": "Russian Empire",
+    "labelFr": "Empire russe",
+    "labelEs": "Imperio ruso",
+    "note": "Ruled by the Romanov tsars until the February Revolution of 1917"
+   },
+   {
+    "from": "1917-09-14",
+    "name": "Russian Republic",
+    "wikipedia": "Russian Republic",
+    "fr": "République russe",
+    "es": "República Rusa",
+    "label": "Russian Republic",
+    "labelFr": "République russe",
+    "labelEs": "República Rusa",
+    "note": "Proclaimed by the Provisional Government after the fall of the monarchy"
+   },
+   {
     "from": "1917-11-07",
     "name": "Russian SFSR",
     "wikipedia": "Russian Soviet Federative Socialist Republic",
@@ -4574,5 +4596,17 @@
   "wikidata": "Q491106",
   "fr": "Khanat de Khiva",
   "es": "Kanato de Jiva"
+ },
+ "Grand Duchy of Finland": {
+  "wikipedia": "Grand Duchy of Finland",
+  "wikidata": "Q62633",
+  "fr": "Grand-duché de Finlande",
+  "es": "Gran Ducado de Finlandia"
+ },
+ "Congress Poland": {
+  "wikipedia": "Congress Poland",
+  "wikidata": "Q221457",
+  "fr": "Royaume du Congrès",
+  "es": "Polonia del Congreso"
  }
 }

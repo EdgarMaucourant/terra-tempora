@@ -1,9 +1,9 @@
 {
- "soviet-union": {
-  "name": "Union soviétique"
- },
  "russia": {
   "name": "Russie"
+ },
+ "soviet-union": {
+  "name": "Union soviétique"
  },
  "united-kingdom": {
   "name": "Royaume-Uni"
@@ -374,6 +374,9 @@
  "japan": {
   "name": "Japon"
  },
+ "grand-duchy-of-finland": {
+  "name": "Grand-duché de Finlande"
+ },
  "khanate-of-kalat": {
   "name": "Khanat de Kalat"
  },
@@ -599,6 +602,9 @@
  "north-korea": {
   "name": "Corée du Nord"
  },
+ "congress-poland": {
+  "name": "Royaume du Congrès"
+ },
  "malawi": {
   "name": "Malawi"
  },
@@ -680,14 +686,14 @@
  "british-cameroons": {
   "name": "Cameroun britannique"
  },
+ "georgia": {
+  "name": "Géorgie"
+ },
  "dervish-state": {
   "name": "État derviche"
  },
  "czech-republic": {
   "name": "Tchéquie"
- },
- "georgia": {
-  "name": "Géorgie"
  },
  "serbia": {
   "name": "Serbie"
@@ -788,6 +794,9 @@
  "estonia": {
   "name": "Estonie"
  },
+ "armenia": {
+  "name": "Arménie"
+ },
  "belgium": {
   "name": "Belgique"
  },
@@ -841,9 +850,6 @@
  },
  "basutoland": {
   "name": "Basutoland"
- },
- "armenia": {
-  "name": "Arménie"
  },
  "albania": {
   "name": "Albanie"
