@@ -91,6 +91,13 @@
   },
   {
    "pieces": [
+    "KAB"
+   ],
+   "from": 1922,
+   "why": "The Baikonur Cosmodrome area, part of Kazakhstan, leased to Russia since 1994"
+  },
+  {
+   "pieces": [
     "taganrog-shakhty",
     "east-gomel",
     "bobruisk",
@@ -4980,7 +4987,8 @@
    "before": [
     {
      "pieces": [
-      "KAZ"
+      "KAZ",
+      "KAB"
      ],
      "owner": "Russia",
      "source": {
