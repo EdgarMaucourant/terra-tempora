@@ -248,6 +248,9 @@
  "somalia": {
   "name": "Somalia"
  },
+ "maratha-empire": {
+  "name": "Imperio maratha"
+ },
  "south-sudan": {
   "name": "Sudán del Sur"
  },
@@ -256,6 +259,9 @@
  },
  "french-madagascar": {
   "name": "Madagascar francés"
+ },
+ "kingdom-of-burma": {
+  "name": "Reino de Birmania"
  },
  "ukraine": {
   "name": "Ucrania"
@@ -332,9 +338,6 @@
  "french-cameroon": {
   "name": "Camerún francés"
  },
- "kingdom-of-burma": {
-  "name": "Reino de Birmania"
- },
  "morocco": {
   "name": "Marruecos"
  },
@@ -370,6 +373,9 @@
  },
  "sultanate-of-zanzibar": {
   "name": "Sultanato de Zanzíbar"
+ },
+ "rajputana": {
+  "name": "Rajputana"
  },
  "barotseland": {
   "name": "Barotselandia"
@@ -710,6 +716,9 @@
  "latvia": {
   "name": "Letonia"
  },
+ "abu-dhabi": {
+  "name": "Abu Dabi"
+ },
  "french-cochinchina": {
   "name": "Cochinchina francesa"
  },
@@ -730,6 +739,9 @@
  },
  "croatia": {
   "name": "Croacia"
+ },
+ "ahom-kingdom": {
+  "name": "Reino Ahom"
  },
  "bosnia-and-herzegovina": {
   "name": "Bosnia y Herzegovina"
@@ -839,6 +851,9 @@
  "french-somaliland": {
   "name": "Somalia francesa"
  },
+ "kingdom-of-manipur": {
+  "name": "Reino de Manipur"
+ },
  "perak": {
   "name": "Perak"
  },
@@ -857,11 +872,11 @@
  "kingdom-of-benin": {
   "name": "Reino de Benín"
  },
- "spanish-morocco": {
-  "name": "Protectorado español de Marruecos"
- },
  "johor-sultanate": {
   "name": "Sultanato de Johor"
+ },
+ "spanish-morocco": {
+  "name": "Protectorado español de Marruecos"
  },
  "diego-suarez": {
   "name": "Diego Suárez"
@@ -914,6 +929,9 @@
  "new-hebrides": {
   "name": "Nuevas Hébridas"
  },
+ "dimasa-kingdom": {
+  "name": "Reino dimasa"
+ },
  "falkland-islands": {
   "name": "Islas Malvinas"
  },
@@ -952,6 +970,9 @@
  },
  "selangor": {
   "name": "Selangor"
+ },
+ "ras-al-khaimah": {
+  "name": "Ras al-Jaima"
  },
  "french-southern-and-antarctic-lands": {
   "name": "Tierras Australes y Antárticas Francesas"
@@ -1028,9 +1049,6 @@
  "reunion": {
   "name": "Reunión"
  },
- "ras-al-khaimah": {
-  "name": "Ras al-Jaima"
- },
  "united-states-of-the-ionian-islands": {
   "name": "Estados Unidos de las Islas Jónicas"
  },
@@ -1054,6 +1072,9 @@
  },
  "guadeloupe": {
   "name": "Guadalupe"
+ },
+ "dutch-malacca": {
+  "name": "Malaca neerlandesa"
  },
  "comoros": {
   "name": "Comoras"

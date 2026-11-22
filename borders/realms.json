@@ -4090,5 +4090,54 @@
   "wikidata": "Q19892830",
   "fr": "Royaume de Coorg",
   "es": "Reino de Coorg"
+ },
+ "Maratha Empire": {
+  "wikipedia": "Maratha Empire",
+  "wikidata": "Q83618",
+  "fr": "Empire marathe",
+  "es": "Imperio maratha"
+ },
+ "Rajputana": {
+  "wikipedia": "Rajputana",
+  "wikidata": "Q3929733",
+  "fr": "Rajputana",
+  "es": "Rajputana"
+ },
+ "Ahom kingdom": {
+  "wikipedia": "Ahom kingdom",
+  "wikidata": "Q2308237",
+  "fr": "Royaume Ahom",
+  "es": "Reino Ahom"
+ },
+ "Dimasa Kingdom": {
+  "wikipedia": "Dimasa Kingdom",
+  "wikidata": "Q3632862",
+  "fr": "Royaume dimasa",
+  "es": "Reino dimasa"
+ },
+ "Dutch Malacca": {
+  "wikipedia": "Dutch Malacca",
+  "wikidata": "Q949314",
+  "fr": "Malacca néerlandaise",
+  "es": "Malaca neerlandesa",
+  "withOwner": false
+ },
+ "Abu Dhabi": {
+  "wikipedia": "Emirate of Abu Dhabi",
+  "wikidata": "Q187712",
+  "fr": "Abou Dabi",
+  "es": "Abu Dabi"
+ },
+ "Kingdom of Kandy": {
+  "wikipedia": "Kingdom of Kandy",
+  "wikidata": "Q1530762",
+  "fr": "Royaume de Kandy",
+  "es": "Reino de Kandy"
+ },
+ "Kingdom of Manipur": {
+  "wikipedia": "Manipur (princely state)",
+  "wikidata": "Q889030",
+  "fr": "Royaume de Manipur",
+  "es": "Reino de Manipur"
  }
 }

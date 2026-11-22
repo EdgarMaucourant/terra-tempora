@@ -26,7 +26,7 @@
     "IRL",
     "heligoland"
    ],
-   "from": 1830,
+   "from": 1815,
    "why": "The United Kingdom with the Crown Dependencies (Guernsey, Jersey, the Isle of Man), its overseas territories and the Chagos Archipelago, whose land has not changed hands since 1965, and Ireland (the Irish Free State until 1937)"
   },
   {
@@ -46,7 +46,7 @@
     "SYC",
     "weihaiwei"
    ],
-   "from": 1830,
+   "from": 1815,
    "why": "Hong Kong, Brunei, Southern Rhodesia and the colonies in the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence or handover; Weihaiwei, leased from China until 1930"
   },
   {
@@ -68,7 +68,7 @@
     "BHS",
     "GRD"
    ],
-   "from": 1830,
+   "from": 1815,
    "why": "The Gulf protected states, South Arabia with all of Yemen (North Yemen until 1990), and the colonies and protectorates in Africa, the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence"
   },
   {
@@ -95,7 +95,7 @@
     "dervish-nugaal",
     "lado-enclave"
    ],
-   "from": 1830,
+   "from": 1815,
    "why": "The colonies, protectorates and trust territories Britain held in 1960 in Africa, Asia, the Mediterranean and the Caribbean, with today's borders, until their independence, with Malaya and Somalia around them"
   },
   {
@@ -109,7 +109,7 @@
     "ERI",
     "ETH"
    ],
-   "from": 1830,
+   "from": 1815,
    "why": "The Gold Coast and British Togoland (Ghana), Anglo-Egyptian Sudan and Eritrea, which Britain ruled or ran in the 1950s, with today's borders, and Ethiopia around Eritrea. The Haud, run by Britain inside Ethiopia until 1955, is not drawn"
   },
   {
@@ -162,9 +162,15 @@
     "sikkim-morang",
     "kangra-kullu",
     "darjeeling-hills",
-    "coorg"
+    "coorg",
+    "goalpara",
+    "goalpara-duars",
+    "assam-duars",
+    "cachar",
+    "bombay-salsette",
+    "berar"
    ],
-   "from": 1830,
+   "from": 1815,
    "why": "British India (with the princely states, drawn as part of it), Burma and Ceylon, with today's borders, from British rule to today, and Newfoundland until it joined Canada. French and Portuguese India stay with their own families"
   },
   {
@@ -184,7 +190,7 @@
     "IRQ",
     "EGY"
    ],
-   "from": 1830,
+   "from": 1815,
    "why": "Mandatory Palestine and Transjordan, and what became of them: Israel, the West Bank, the Gaza Strip, Jordan, and the Sinai occupied by Israel; Iraq, a British mandate until 1932, and Kuwait, occupied by Iraq in 1990-91; Egypt, a British protectorate until 1922 and part of the United Arab Republic in 1958-61"
   },
   {
@@ -200,7 +206,7 @@
     "kythira",
     "HND-641"
    ],
-   "from": 1830,
+   "from": 1815,
    "why": "The Ionian Islands, a British protectorate until 1864, and the Bay Islands, a British colony until 1861, with Greece and Honduras since then"
   },
   {
@@ -208,8 +214,17 @@
     "NIC-657",
     "NIC-644"
    ],
-   "from": 1830,
+   "from": 1815,
    "why": "The Mosquito Coast, a British protectorate until 1860, with Nicaragua since then"
+  },
+  {
+   "pieces": [
+    "naya-muluk-bheri",
+    "naya-muluk-seti",
+    "naya-muluk-mahakali"
+   ],
+   "from": 1815,
+   "why": "Naya Muluk, the western Terai, British from 1816 to 1860"
   }
  ],
  "changes": [
@@ -3182,7 +3197,13 @@
       "sikkim-morang",
       "kangra-kullu",
       "darjeeling-hills",
-      "coorg"
+      "coorg",
+      "goalpara",
+      "goalpara-duars",
+      "assam-duars",
+      "cachar",
+      "bombay-salsette",
+      "berar"
      ],
      "owner": "United Kingdom",
      "source": {
@@ -9233,7 +9254,7 @@
   },
   {
    "date": "1865-11-11",
-   "what": "By the Treaty of Sinchula, Bhutan cedes the Bengal Duars and the hills around Kalimpong to British India",
+   "what": "By the Treaty of Sinchula, after the Duar War, Bhutan cedes the Bengal and Eastern Duars and Kalimpong to Britain",
    "source": {
     "title": "Duar War (Wikipedia)",
     "url": "https://en.wikipedia.org/wiki/Duar_War"
@@ -9242,7 +9263,8 @@
    "before": [
     {
      "pieces": [
-      "bengal-duars"
+      "bengal-duars",
+      "goalpara-duars"
      ],
      "owner": "Bhutan",
      "source": {
@@ -9361,6 +9383,30 @@
    ]
   },
   {
+   "date": "1860-11-01",
+   "what": "Britain gives Naya Muluk, the western Terai, back to Nepal for its help in 1857",
+   "source": {
+    "title": "Naya Muluk (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Naya_Muluk"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "naya-muluk-bheri",
+      "naya-muluk-seti",
+      "naya-muluk-mahakali"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Naya Muluk (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Naya_Muluk"
+     },
+     "territory": "British Raj"
+    }
+   ]
+  },
+  {
    "date": "1860-10-24",
    "what": "By the Convention of Peking, China cedes Kowloon, south of today’s Boundary Street, to Britain",
    "source": {
@@ -9473,7 +9519,15 @@
       "sikkim-morang",
       "kangra-kullu",
       "darjeeling-hills",
-      "coorg"
+      "coorg",
+      "goalpara",
+      "assam-duars",
+      "cachar",
+      "bombay-salsette",
+      "berar",
+      "naya-muluk-bheri",
+      "naya-muluk-seti",
+      "naya-muluk-mahakali"
      ],
      "owner": "United Kingdom",
      "source": {
@@ -9736,6 +9790,27 @@
    ]
   },
   {
+   "date": "1841-06-01",
+   "what": "Britain annexes the Assam Duars, the foothill passes of Kamrup and Darrang held by Bhutan",
+   "source": {
+    "title": "Duars (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Duars"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "assam-duars"
+     ],
+     "owner": "Bhutan",
+     "source": {
+      "title": "Duars (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Duars"
+     }
+    }
+   ]
+  },
+  {
    "date": "1841-01-26",
    "what": "British forces take possession of Hong Kong Island",
    "source": {
@@ -9839,6 +9914,450 @@
      "source": {
       "title": "Reassertion of British sovereignty over the Falkland Islands (1833) (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Reassertion_of_British_sovereignty_over_the_Falkland_Islands_(1833)"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1833-01-01",
+   "what": "The Anglo-Khasi War ends and the Khasi and Jaintia hill chiefs submit to the Company",
+   "source": {
+    "title": "Anglo-Khasi War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Anglo-Khasi_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "IND-2489"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Anglo-Khasi War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Anglo-Khasi_War"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1826-08-01",
+   "what": "Penang, Malacca and Singapore are joined as the Straits Settlements, governed from Penang",
+   "source": {
+    "title": "Straits Settlements (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Straits_Settlements"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "MYS-1139",
+      "MYS-1145",
+      "SGP"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Straits Settlements (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Straits_Settlements"
+     },
+     "territory": "Company rule in India"
+    }
+   ]
+  },
+  {
+   "date": "1826-02-24",
+   "what": "By the Treaty of Yandabo, after the First Anglo-Burmese War, Burma cedes Arakan and Tenasserim, gives up Assam and recognises Manipur",
+   "source": {
+    "title": "Treaty of Yandabo (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Yandabo"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MMR-3273",
+      "MMR-3279",
+      "MMR-3270",
+      "MMR-3266",
+      "IND-2477",
+      "IND-2478"
+     ],
+     "owner": "Kingdom of Burma",
+     "source": {
+      "title": "Treaty of Yandabo (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Yandabo"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1825-03-01",
+   "what": "By the Anglo-Dutch Treaty of 1824, the Netherlands hands Malacca to Britain in exchange for Bencoolen",
+   "source": {
+    "title": "Dutch Malacca (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Dutch_Malacca"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MYS-1145"
+     ],
+     "owner": "Netherlands",
+     "source": {
+      "title": "Dutch Malacca (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Dutch_Malacca"
+     },
+     "territory": "Dutch Malacca"
+    }
+   ]
+  },
+  {
+   "date": "1824-03-06",
+   "what": "The raja of Cachar, driven out by the Burmese, puts his kingdom under British protection",
+   "source": {
+    "title": "Dimasa Kingdom (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Dimasa_Kingdom"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "cachar"
+     ],
+     "owner": "Dimasa Kingdom",
+     "source": {
+      "title": "Dimasa Kingdom (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Dimasa_Kingdom"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1821-03-01",
+   "what": "Burmese armies invade Assam for the third time and rule the Ahom kingdom themselves",
+   "source": {
+    "title": "Burmese invasions of Assam (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Burmese_invasions_of_Assam"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "IND-2477"
+     ],
+     "owner": "Ahom kingdom",
+     "source": {
+      "title": "Ahom kingdom (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ahom_kingdom"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1820-01-08",
+   "what": "The sheikhs of the Gulf coast sign the General Maritime Treaty with Britain after the 1819 Ras Al Khaimah campaign",
+   "source": {
+    "title": "General Maritime Treaty of 1820 (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/General_Maritime_Treaty_of_1820"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "ARE-338",
+      "ARE-348",
+      "ARE-346",
+      "ARE-339",
+      "ARE-341",
+      "ARE-344",
+      "ARE-347"
+     ],
+     "owner": "Ras Al Khaimah",
+     "source": {
+      "title": "Al Qasimi (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Al_Qasimi"
+     }
+    },
+    {
+     "pieces": [
+      "ARE-349",
+      "ARE-350"
+     ],
+     "owner": "Abu Dhabi",
+     "source": {
+      "title": "Emirate of Abu Dhabi (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Emirate_of_Abu_Dhabi"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1819-06-01",
+   "what": "Burma conquers Manipur and holds it for seven years",
+   "source": {
+    "title": "Manipur (princely state) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Manipur_(princely_state)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "IND-2478"
+     ],
+     "owner": "Kingdom of Manipur",
+     "source": {
+      "title": "Manipur (princely state) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Manipur_(princely_state)"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1819-02-06",
+   "what": "By a treaty with the Sultan of Johor, Stamford Raffles founds a British trading post at Singapore",
+   "source": {
+    "title": "Founding of modern Singapore (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Founding_of_modern_Singapore"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SGP"
+     ],
+     "owner": "Johor Sultanate",
+     "source": {
+      "title": "Johor Sultanate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Johor_Sultanate"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1818-09-21",
+   "what": "Britain hands Malacca back to the Netherlands after the Napoleonic Wars",
+   "source": {
+    "title": "Dutch Malacca (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Dutch_Malacca"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "MYS-1145"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Dutch Malacca (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Dutch_Malacca"
+     },
+     "territory": "Company rule in India"
+    }
+   ]
+  },
+  {
+   "date": "1818-06-03",
+   "what": "The Peshwa surrenders, ending the Third Anglo-Maratha War: his lands are annexed and the other Maratha states come under British protection",
+   "source": {
+    "title": "Third Anglo-Maratha War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Third_Anglo-Maratha_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "IND-3261",
+      "IND-3260",
+      "IND-2447"
+     ],
+     "owner": "Maratha Empire",
+     "source": {
+      "title": "Maratha Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Maratha_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1818-01-06",
+   "what": "The Rajput states of Rajputana sign treaties of protection with the East India Company (1817-1818)",
+   "source": {
+    "title": "Rajputana (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Rajputana"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "IND-3250"
+     ],
+     "owner": "Rajputana",
+     "source": {
+      "title": "Rajputana (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Rajputana"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1817-02-10",
+   "what": "By the Treaty of Titalia, the Company gives the land between the Mechi and the Teesta back to Sikkim",
+   "source": {
+    "title": "Treaty of Titalia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Titalia"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "sikkim-morang",
+      "darjeeling-hills"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Treaty of Titalia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Titalia"
+     },
+     "territory": "Company rule in India"
+    }
+   ]
+  },
+  {
+   "date": "1816-08-14",
+   "what": "A British garrison lands on Tristan da Cunha to watch over Napoleon on Saint Helena",
+   "source": {
+    "title": "Tristan da Cunha (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tristan_da_Cunha"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "SHN-4865"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Tristan da Cunha (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tristan_da_Cunha"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1816-04-23",
+   "what": "Britain founds Bathurst (Banjul) on St Mary's Island at the mouth of the Gambia",
+   "source": {
+    "title": "Banjul (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Banjul"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GMB-2153"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Banjul (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Banjul"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1816-03-04",
+   "what": "By the Treaty of Sugauli, after the Anglo-Nepalese War, Nepal cedes the Terai and the land between the Mechi and the Teesta",
+   "source": {
+    "title": "Treaty of Sugauli (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Sugauli"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "naya-muluk-bheri",
+      "naya-muluk-seti",
+      "naya-muluk-mahakali",
+      "sikkim-morang",
+      "darjeeling-hills"
+     ],
+     "owner": "Nepal",
+     "source": {
+      "title": "Treaty of Sugauli (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Sugauli"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1815-10-22",
+   "what": "The Royal Navy garrisons Ascension Island while Napoleon is held on Saint Helena",
+   "source": {
+    "title": "Ascension Island (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Ascension_Island"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "SHN-4863"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Ascension Island (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ascension_Island"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1815-05-15",
+   "what": "The Gorkha armies surrender Kumaon, Garhwal and the hill states west of the Kali to the East India Company",
+   "source": {
+    "title": "Anglo-Nepalese War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Anglo-Nepalese_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "IND-3254",
+      "IND-2429"
+     ],
+     "owner": "Nepal",
+     "source": {
+      "title": "Anglo-Nepalese War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Anglo-Nepalese_War"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1815-03-02",
+   "what": "By the Kandyan Convention, the chiefs of Kandy depose their king and accept British rule",
+   "source": {
+    "title": "Kandyan Convention (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kandyan_Convention"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "LKA-2448",
+      "LKA-2449",
+      "LKA-2450",
+      "LKA-2467",
+      "LKA-2468",
+      "LKA-2463",
+      "LKA-2469",
+      "LKA-2461",
+      "LKA-2455",
+      "LKA-2453"
+     ],
+     "owner": "Kingdom of Kandy",
+     "source": {
+      "title": "Kingdom of Kandy (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Kandy"
      }
     }
    ]
