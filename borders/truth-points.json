@@ -11283,6 +11283,45 @@
    ],
    "realm": "Ras Al Khaimah",
    "why": "General Maritime Treaty January 1820"
+  },
+  {
+   "place": "Tawang (Tibet)",
+   "lonLat": [
+    91.86,
+    27.59
+   ],
+   "years": [
+    1815,
+    1950
+   ],
+   "realm": "Tibet",
+   "why": "Taken over by India in February 1951"
+  },
+  {
+   "place": "Kohima (British Raj)",
+   "lonLat": [
+    94.1,
+    25.67
+   ],
+   "years": [
+    1880,
+    1946
+   ],
+   "realm": "British Raj",
+   "why": "Naga Hills district headquarters from 1878"
+  },
+  {
+   "place": "Pasighat (British Raj)",
+   "lonLat": [
+    95.33,
+    28.07
+   ],
+   "years": [
+    1915,
+    1946
+   ],
+   "realm": "British Raj",
+   "why": "North-East Frontier Tracts from 1914"
   }
  ]
 }

@@ -19905,6 +19905,96 @@
      ]
     ]
    }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "tawang",
+    "from": "IND-3299",
+    "note": "Tawang, north of the Se La pass, Tibetan until 1951, traced roughly",
+    "source": {
+     "title": "Tawang district (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Tawang_district"
+    }
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       91.5,
+       27.45
+      ],
+      [
+       92.3,
+       27.45
+      ],
+      [
+       92.3,
+       28.0
+      ],
+      [
+       91.5,
+       28.0
+      ],
+      [
+       91.5,
+       27.45
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "naga-tribal-area",
+    "from": "IND-2479",
+    "note": "The eastern Naga hills (Tuensang, Mon, Kiphire), left unadministered by the British, traced roughly",
+    "source": {
+     "title": "Tuensang district (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Tuensang_district"
+    }
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       94.55,
+       25.5
+      ],
+      [
+       95.4,
+       25.5
+      ],
+      [
+       95.4,
+       27.2
+      ],
+      [
+       94.85,
+       27.2
+      ],
+      [
+       94.75,
+       26.6
+      ],
+      [
+       94.6,
+       26.35
+      ],
+      [
+       94.55,
+       26.0
+      ],
+      [
+       94.55,
+       25.5
+      ]
+     ]
+    ]
+   }
   }
  ]
 }
