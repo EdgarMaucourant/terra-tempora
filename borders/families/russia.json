@@ -4,13 +4,9 @@
  "reviewed": [
   {
    "pieces": [
-    "RUS",
     "UKR",
     "BLR",
     "MDA",
-    "GEO",
-    "ARM",
-    "AZE",
     "KAZ",
     "UZB",
     "TKM",
@@ -18,32 +14,97 @@
     "TJK",
     "EST",
     "LVA",
-    "LTU"
+    "LTU",
+    "RUS+99?",
+    "RUS-2167",
+    "RUS-2306",
+    "RUS-2321",
+    "RUS-2324",
+    "RUS-2333",
+    "RUS-2334",
+    "RUS-2335",
+    "RUS-2336",
+    "RUS-2337",
+    "RUS-2342",
+    "RUS-2343",
+    "RUS-2353",
+    "RUS-2354",
+    "RUS-2355",
+    "RUS-2356",
+    "RUS-2357",
+    "RUS-2358",
+    "RUS-2359",
+    "RUS-2360",
+    "RUS-2361",
+    "RUS-2362",
+    "RUS-2363",
+    "RUS-2364",
+    "RUS-2365",
+    "RUS-2366",
+    "RUS-2367",
+    "RUS-2368",
+    "RUS-2369",
+    "RUS-2370",
+    "RUS-2372",
+    "RUS-2373",
+    "RUS-2374",
+    "RUS-2375",
+    "RUS-2376",
+    "RUS-2377",
+    "RUS-2378",
+    "RUS-2379",
+    "RUS-2380",
+    "RUS-2381",
+    "RUS-2382",
+    "RUS-2383",
+    "RUS-2384",
+    "RUS-2385",
+    "RUS-2386",
+    "RUS-2387",
+    "RUS-2388",
+    "RUS-2389",
+    "RUS-2390",
+    "RUS-2391",
+    "RUS-2392",
+    "RUS-2393",
+    "RUS-2394",
+    "RUS-2395",
+    "RUS-2396",
+    "RUS-2397",
+    "RUS-2398",
+    "RUS-2399",
+    "RUS-2400",
+    "RUS-2401",
+    "RUS-2402",
+    "RUS-2403",
+    "RUS-2602",
+    "RUS-2603",
+    "RUS-2605",
+    "RUS-2606",
+    "RUS-2609",
+    "RUS-2610",
+    "RUS-2611",
+    "RUS-2612",
+    "RUS-2613",
+    "RUS-2614",
+    "RUS-2615",
+    "RUS-2616",
+    "RUS-283",
+    "RUS-3200",
+    "RUS-3468",
+    "RUS-5482",
+    "ALD"
    ],
-   "from": 1878,
+   "from": 1858,
    "why": "Russia and the other fourteen republics of the former Soviet Union, with the land held by breakaway states (Chechnya, Transnistria, Abkhazia, South Ossetia, Nagorno-Karabakh) hatched"
-  },
-  {
-   "pieces": [
-    "south-ossetia",
-    "akhalgori",
-    "hadrut",
-    "tartar-west",
-    "agdam-west",
-    "fuzuli-west"
-   ],
-   "from": 1878,
-   "why": "Cuts for South Ossetia and for the land held by Armenian forces around Nagorno-Karabakh"
   },
   {
    "pieces": [
     "pechory",
     "ivangorod",
-    "abrene",
-    "klukhori",
-    "akhalkhevi"
+    "abrene"
    ],
-   "from": 1878,
+   "from": 1858,
    "why": "Cuts for land moved between Soviet republics after the war: the Estonian and Latvian border districts given to the Russian SFSR, and the Karachay and Chechen highlands given to the Georgian SSR from 1943-44 to 1957"
   },
   {
@@ -75,7 +136,7 @@
     "south-sakhalin",
     "kuril-islands"
    ],
-   "from": 1878,
+   "from": 1858,
    "why": "Finland, whose borders moved with the Soviet Union in 1940 and 1944, and the cuts for land that changed hands between 1939 and 1946"
   },
   {
@@ -86,14 +147,14 @@
     "kaluga-west",
     "voronezh-west"
    ],
-   "from": 1878,
+   "from": 1858,
    "why": "Cuts for Soviet land held by Germany and Finland in 1941-44 that was only part of a region"
   },
   {
    "pieces": [
     "KAB"
    ],
-   "from": 1878,
+   "from": 1858,
    "why": "The Baikonur Cosmodrome area, part of Kazakhstan, leased to Russia since 1994"
   },
   {
@@ -103,7 +164,7 @@
     "bobruisk",
     "khiva-delta"
    ],
-   "from": 1878,
+   "from": 1858,
    "why": "Cuts for land moved between Soviet republics in the 1920s: Taganrog and Shakhty, Gomel and Rechytsa, Bobruisk, and the Khivan part of Karakalpakstan"
   },
   {
@@ -131,7 +192,7 @@
     "salla-kuusamo",
     "salla"
    ],
-   "from": 1878,
+   "from": 1858,
    "why": "Finland, the Baltic states, Belarus, Ukraine and Moldova from the Russian Revolution, drawn as states held at the end of each year"
   },
   {
@@ -141,7 +202,7 @@
     "TUR-2298",
     "TUR-4840"
    ],
-   "from": 1878,
+   "from": 1858,
    "why": "Kars, Ardahan, Artvin and Surmalu (Iğdır): Russian from 1878 to 1918, fought over until the Treaty of Kars of 1921"
   },
   {
@@ -158,8 +219,48 @@
     "ru-cp-pol-3144",
     "POL-3149"
    ],
-   "from": 1878,
+   "from": 1858,
    "why": "The Russian part of Poland (Congress Poland and Bialystok), from 1905 to today; the rest of Poland is not yet rebuilt"
+  },
+  {
+   "pieces": [
+    "GEO",
+    "ARM",
+    "AZE",
+    "south-ossetia",
+    "akhalgori",
+    "hadrut",
+    "tartar-west",
+    "agdam-west",
+    "fuzuli-west",
+    "klukhori",
+    "akhalkhevi",
+    "RUS-2371",
+    "RUS-2279",
+    "RUS-2280",
+    "RUS-2304",
+    "RUS-2305",
+    "RUS-2303",
+    "RUS-2416",
+    "RUS-2417"
+   ],
+   "from": 1878,
+   "why": "The Caucasus (Georgia, Armenia, Azerbaijan and the North Caucasus), reviewed back to the Treaty of Berlin; the conquest of the Caucasus before 1878 is the next step"
+  },
+  {
+   "pieces": [
+    "sb-budjak",
+    "sb-cantemir",
+    "sb-taraclia",
+    "sb-comrat",
+    "north-kurils",
+    "ussuri-khabarovsk",
+    "sixty-four-villages",
+    "zaysan",
+    "USA-3563"
+   ],
+   "from": 1858,
+   "why": "Cuts for the land that changed hands between 1856 and 1900: Southern Bessarabia, the northern Kurils, the Ussuri land, the Sixty-Four Villages and the Zaysan basin; and Alaska, Russian America until 1867"
   }
  ],
  "changes": [
@@ -957,7 +1058,8 @@
     },
     {
      "pieces": [
-      "kuril-islands"
+      "kuril-islands",
+      "north-kurils"
      ],
      "owner": "Japan",
      "source": {
@@ -988,7 +1090,8 @@
    "before": [
     {
      "pieces": [
-      "kuril-islands"
+      "kuril-islands",
+      "north-kurils"
      ],
      "owner": "Japan",
      "source": {
@@ -1728,7 +1831,8 @@
    "before": [
     {
      "pieces": [
-      "budjak"
+      "budjak",
+      "sb-budjak"
      ],
      "owner": "Ukraine",
      "source": {
@@ -1792,7 +1896,10 @@
       "MDA-1648",
       "MDA-1649",
       "MDA-1651",
-      "MDA-1653"
+      "MDA-1653",
+      "sb-cantemir",
+      "sb-taraclia",
+      "sb-comrat"
      ],
      "owner": "Moldova",
      "source": {
@@ -4394,7 +4501,8 @@
    "before": [
     {
      "pieces": [
-      "budjak"
+      "budjak",
+      "sb-budjak"
      ],
      "owner": "Ukraine",
      "source": {
@@ -4469,7 +4577,10 @@
       "MDA-1648",
       "MDA-1649",
       "MDA-1651",
-      "MDA-1653"
+      "MDA-1653",
+      "sb-cantemir",
+      "sb-taraclia",
+      "sb-comrat"
      ],
      "owner": "Moldova",
      "source": {
@@ -5151,7 +5262,10 @@
       "MDA-1648",
       "MDA-1649",
       "MDA-1651",
-      "MDA-1653"
+      "MDA-1653",
+      "sb-cantemir",
+      "sb-taraclia",
+      "sb-comrat"
      ],
      "owner": "Romania",
      "source": {
@@ -5171,7 +5285,8 @@
     },
     {
      "pieces": [
-      "budjak"
+      "budjak",
+      "sb-budjak"
      ],
      "owner": "Romania",
      "source": {
@@ -5738,7 +5853,9 @@
       "RUS-3468",
       "RUS-2615",
       "RUS-2321",
-      "RUS-2611"
+      "RUS-2611",
+      "ussuri-khabarovsk",
+      "sixty-four-villages"
      ],
      "owner": "Far Eastern Republic",
      "source": {
@@ -6164,7 +6281,9 @@
       "RUS-2614",
       "RUS-3468",
       "RUS-2615",
-      "RUS-2321"
+      "RUS-2321",
+      "ussuri-khabarovsk",
+      "sixty-four-villages"
      ],
      "owner": "Russia",
      "source": {
@@ -7469,7 +7588,11 @@
       "MDA-1619",
       "MDA-1622",
       "MDA-1618",
-      "budjak"
+      "budjak",
+      "sb-budjak",
+      "sb-cantemir",
+      "sb-taraclia",
+      "sb-comrat"
      ],
      "owner": "Russia",
      "source": {
@@ -7596,7 +7719,8 @@
       "karelian-isthmus",
       "ladoga-karelia",
       "salla-kuusamo",
-      "salla"
+      "salla",
+      "ALD"
      ],
      "owner": "Russia",
      "source": {
@@ -7634,11 +7758,11 @@
      },
      "hatch": {
       "by": "Russia",
-      "since": "1873-09-28",
+      "since": "1868-06-23",
       "note": "A Russian protectorate from 1873 (a vassal since 1868)",
       "source": {
-       "title": "Emirate of Bukhara (Wikipedia)",
-       "url": "https://en.wikipedia.org/wiki/Emirate_of_Bukhara"
+       "title": "Russian conquest of Bukhara (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Russian_conquest_of_Bukhara"
       }
      }
     },
@@ -8423,6 +8547,27 @@
    ]
   },
   {
+   "date": "1900-07-17",
+   "what": "Russian troops drive the Qing subjects of the Sixty-Four Villages across the Amur, ending Qing rule there",
+   "source": {
+    "title": "Sixty-Four Villages East of the River (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Sixty-Four_Villages_East_of_the_River"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "sixty-four-villages"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Sixty-Four Villages East of the River (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sixty-Four_Villages_East_of_the_River"
+     }
+    }
+   ]
+  },
+  {
    "date": "1895-03-11",
    "what": "The Anglo-Russian Pamir agreement fixes Russia's border with Afghanistan on the Panj; Russia keeps the Pamirs north of it, held since its expeditions of 1891-1893",
    "source": {
@@ -8486,29 +8631,166 @@
    ]
   },
   {
-   "date": "1873-09-28",
-   "what": "Bukhara becomes a Russian protectorate",
+   "date": "1878-07-13",
+   "what": "The Treaty of Berlin gives Russia Kars, Ardahan and Batumi from the Ottoman Empire, and Southern Bessarabia from Romania",
    "source": {
-    "title": "Emirate of Bukhara (Wikipedia)",
-    "url": "https://en.wikipedia.org/wiki/Emirate_of_Bukhara"
+    "title": "Treaty of Berlin (1878) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Berlin_(1878)"
    },
    "confidence": "close",
    "before": [
     {
      "pieces": [
-      "UZB-354",
-      "UZB-357",
-      "UZB-361",
-      "UZB-362",
-      "TJK-367",
-      "TJK-368",
-      "TJK-5491",
-      "TKM-359"
+      "TUR-3040"
      ],
-     "owner": "Emirate of Bukhara",
+     "owner": "Ottoman Empire",
      "source": {
-      "title": "Emirate of Bukhara (Wikipedia)",
-      "url": "https://en.wikipedia.org/wiki/Emirate_of_Bukhara"
+      "title": "Siege of Kars (1877) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Kars_(1877)"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1877-11-18",
+      "occupied": true,
+      "note": "Taken by Russia in the Russo-Turkish War",
+      "source": {
+       "title": "Siege of Kars (1877) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Siege_of_Kars_(1877)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "TUR-4839"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Russo-Turkish War (1877–1878) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Russo-Turkish_War_(1877–1878)"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1877-05-17",
+      "occupied": true,
+      "note": "Taken by Russia in the Russo-Turkish War",
+      "source": {
+       "title": "Russo-Turkish War (1877–1878) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Russo-Turkish_War_(1877–1878)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "TUR-2298",
+      "GEO-3027"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Batumi Oblast (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Batumi_Oblast"
+     }
+    },
+    {
+     "pieces": [
+      "sb-budjak",
+      "sb-cantemir",
+      "sb-taraclia",
+      "sb-comrat",
+      "MDA-1624"
+     ],
+     "owner": "Romania",
+     "source": {
+      "title": "Southern Bessarabia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Southern_Bessarabia"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1877-11-18",
+   "what": "Russian troops storm Kars",
+   "source": {
+    "title": "Siege of Kars (1877) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Kars_(1877)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "TUR-3040"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Kars Oblast (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kars_Oblast"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1877-05-17",
+   "what": "Russian troops take Ardahan",
+   "source": {
+    "title": "Russo-Turkish War (1877–1878) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Russo-Turkish_War_(1877–1878)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "TUR-4839"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Kars Oblast (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kars_Oblast"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1876-02-19",
+   "what": "Russia annexes the Khanate of Kokand as the Fergana Oblast, after crushing a revolt against the khan",
+   "source": {
+    "title": "Khanate of Kokand (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Khanate_of_Kokand"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "UZB-363",
+      "UZB-364",
+      "UZB-365",
+      "KGZ-1119",
+      "KGZ-1120",
+      "KGZ-1122"
+     ],
+     "owner": "Khanate of Kokand",
+     "source": {
+      "title": "Khanate of Kokand (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Khanate_of_Kokand"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1875-08-22",
+   "what": "The Treaty of Saint Petersburg comes into force: Russia gives Japan the northern Kurils in exchange for all of Sakhalin",
+   "source": {
+    "title": "Treaty of Saint Petersburg (1875) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Saint_Petersburg_(1875)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "north-kurils"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Kuril Islands (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kuril_Islands"
      }
     }
    ]
@@ -8532,6 +8814,374 @@
      "source": {
       "title": "Khanate of Khiva (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Khanate_of_Khiva"
+     }
+    },
+    {
+     "pieces": [
+      "UZB-356"
+     ],
+     "owner": "Khanate of Khiva",
+     "source": {
+      "title": "Khivan campaign of 1873 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Khivan_campaign_of_1873"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1869-11-17",
+   "what": "Russian troops land on the Caspian shore and found Krasnovodsk, the start of Russian rule among the Turkmens",
+   "source": {
+    "title": "Türkmenbaşy (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Türkmenbaşy"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TKM-351"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Transcaspian Oblast (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Transcaspian_Oblast"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1868-06-23",
+   "what": "After losing Samarkand, the Emir of Bukhara signs a peace treaty that makes the emirate a Russian protectorate",
+   "source": {
+    "title": "Russian conquest of Bukhara (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Russian_conquest_of_Bukhara"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "UZB-354",
+      "UZB-357",
+      "UZB-361",
+      "UZB-362",
+      "TJK-367",
+      "TJK-368",
+      "TJK-5491",
+      "TKM-359"
+     ],
+     "owner": "Emirate of Bukhara",
+     "source": {
+      "title": "Emirate of Bukhara (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Emirate_of_Bukhara"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1868-05-14",
+   "what": "Samarkand surrenders to Russian troops; the Zarafshan valley becomes Russian",
+   "source": {
+    "title": "Russian conquest of Bukhara (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Russian_conquest_of_Bukhara"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "UZB-358"
+     ],
+     "owner": "Emirate of Bukhara",
+     "source": {
+      "title": "Zarafshan Okrug (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Zarafshan_Okrug"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1867-10-18",
+   "what": "Russia hands Alaska over to the United States, which bought it for 7.2 million dollars",
+   "source": {
+    "title": "Alaska Purchase (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Alaska_Purchase"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "USA-3563"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Russian America (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Russian_America"
+     },
+     "territory": "Russian America"
+    }
+   ]
+  },
+  {
+   "date": "1867-07-11",
+   "what": "Russia sets up the Governorate-General of Turkestan, taking in the Kyrgyz of the inner Tian Shan; the Naryn fort follows in 1868",
+   "source": {
+    "title": "Russian Turkestan (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Russian_Turkestan"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "KGZ-1118"
+     ],
+     "owner": "Khanate of Kokand",
+     "source": {
+      "title": "Naryn (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Naryn"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1867-07-01",
+   "what": "East Prussia joins the North German Confederation",
+   "source": {
+    "title": "North German Confederation (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/North_German_Confederation"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2324",
+      "memel"
+     ],
+     "owner": "Prussia",
+     "source": {
+      "title": "East Prussia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/East_Prussia"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1867-03-30",
+   "what": "The Compromise of 1867 turns the Austrian Empire into Austria-Hungary",
+   "source": {
+    "title": "Austro-Hungarian Compromise of 1867 (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Austro-Hungarian_Compromise_of_1867"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "UKR-288",
+      "UKR-289",
+      "UKR-291",
+      "UKR-292",
+      "UKR-293"
+     ],
+     "owner": "Austria",
+     "source": {
+      "title": "Austrian Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Austrian_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1866-10-30",
+   "what": "Russian troops storm Jizzakh, the Bukharan fortress on the road to Samarkand",
+   "source": {
+    "title": "Russian conquest of Bukhara (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Russian_conquest_of_Bukhara"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "UZB-370"
+     ],
+     "owner": "Emirate of Bukhara",
+     "source": {
+      "title": "Russian conquest of Bukhara (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Russian_conquest_of_Bukhara"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1866-10-14",
+   "what": "Russian troops take Ura-Tyube, after Khujand in May; the land around Khujand becomes Russian",
+   "source": {
+    "title": "Siege of Khujand (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Khujand"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TJK-369"
+     ],
+     "owner": "Emirate of Bukhara",
+     "source": {
+      "title": "Siege of Khujand (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Khujand"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1865-06-29",
+   "what": "Russian troops under Chernyayev take Tashkent from Kokand",
+   "source": {
+    "title": "Siege of Tashkent (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Tashkent"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "UZB-4828",
+      "UZB-372",
+      "UZB-371"
+     ],
+     "owner": "Khanate of Kokand",
+     "source": {
+      "title": "Siege of Tashkent (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Tashkent"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1864-10-07",
+   "what": "The Protocol of Chuguchak (Treaty of Tarbagatai) gives Russia the Zaysan basin and the lands claimed by the Qing west of the new border",
+   "source": {
+    "title": "Treaty of Tarbagatai (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Tarbagatai"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "zaysan"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Treaty of Tarbagatai (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Tarbagatai"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1864-06-12",
+   "what": "Russian troops take the town of Turkestan from Kokand; Chimkent falls in September",
+   "source": {
+    "title": "Russian conquest of Turkestan (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Russian_conquest_of_Turkestan"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "KAZ-3251"
+     ],
+     "owner": "Khanate of Kokand",
+     "source": {
+      "title": "Russian conquest of Turkestan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Russian_conquest_of_Turkestan"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1864-06-04",
+   "what": "Russian troops take Aulie-Ata (Taraz) from Kokand",
+   "source": {
+    "title": "Taraz (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Taraz"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "KAZ-3252",
+      "KGZ-1121"
+     ],
+     "owner": "Khanate of Kokand",
+     "source": {
+      "title": "Russian conquest of Turkestan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Russian_conquest_of_Turkestan"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1860-11-14",
+   "what": "The Convention of Peking gives Russia the land between the Ussuri and the sea, left in common by the Treaty of Aigun",
+   "source": {
+    "title": "Convention of Peking (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Convention_of_Peking"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2611",
+      "ussuri-khabarovsk"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Treaty of Aigun (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Aigun"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1860-09-04",
+   "what": "Russian troops take and raze the Kokand fort of Pishpek (Bishkek); the Chuy valley comes under Russian rule",
+   "source": {
+    "title": "Bishkek (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Bishkek"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "KGZ-1115",
+      "KGZ-1116"
+     ],
+     "owner": "Khanate of Kokand",
+     "source": {
+      "title": "Bishkek (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bishkek"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1859-02-05",
+   "what": "Moldavia, which holds Southern Bessarabia since 1856, elects the same prince as Wallachia: the two form the United Principalities",
+   "source": {
+    "title": "United Principalities (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/United_Principalities"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "sb-budjak",
+      "sb-cantemir",
+      "sb-taraclia",
+      "sb-comrat",
+      "MDA-1624"
+     ],
+     "owner": "Moldavia",
+     "source": {
+      "title": "Southern Bessarabia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Southern_Bessarabia"
      }
     }
    ]

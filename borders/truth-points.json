@@ -14550,6 +14550,201 @@
    ],
    "realm": "Russia",
    "why": "Capital of the Governorate-General of Turkestan"
+  },
+  {
+   "place": "Tashkent (Kokand, 1864)",
+   "lonLat": [
+    69.24,
+    41.3
+   ],
+   "years": [
+    1858,
+    1864
+   ],
+   "realm": "Khanate of Kokand",
+   "why": "Kokand until Chernyayev took it in June 1865"
+  },
+  {
+   "place": "Kokand (khanate)",
+   "lonLat": [
+    70.94,
+    40.53
+   ],
+   "years": [
+    1858,
+    1875
+   ],
+   "realm": "Khanate of Kokand",
+   "why": "Capital of the khanate until 1876"
+  },
+  {
+   "place": "Fergana (Russian, 1876)",
+   "lonLat": [
+    71.78,
+    40.38
+   ],
+   "years": [
+    1876,
+    1916
+   ],
+   "realm": "Russia",
+   "why": "Fergana Oblast from 1876"
+  },
+  {
+   "place": "Samarkand (Bukharan, 1867)",
+   "lonLat": [
+    66.96,
+    39.65
+   ],
+   "years": [
+    1858,
+    1867
+   ],
+   "realm": "Emirate of Bukhara",
+   "why": "Bukharan until May 1868"
+  },
+  {
+   "place": "Samarkand (Russian, 1868)",
+   "lonLat": [
+    66.96,
+    39.65
+   ],
+   "years": [
+    1868,
+    1916
+   ],
+   "realm": "Russia",
+   "why": "Zarafshan Okrug, then Samarkand Oblast"
+  },
+  {
+   "place": "Taraz (Kokand, 1863)",
+   "lonLat": [
+    71.37,
+    42.9
+   ],
+   "years": [
+    1858,
+    1863
+   ],
+   "realm": "Khanate of Kokand",
+   "why": "Aulie-Ata, a Kokand fort until June 1864"
+  },
+  {
+   "place": "Vladivostok (Qing, 1859)",
+   "lonLat": [
+    131.9,
+    43.12
+   ],
+   "years": [
+    1858,
+    1859
+   ],
+   "realm": "China",
+   "why": "Land between the Ussuri and the sea, Russian from the Convention of Peking"
+  },
+  {
+   "place": "Vladivostok (Russian, 1860)",
+   "lonLat": [
+    131.9,
+    43.12
+   ],
+   "years": [
+    1860,
+    1917
+   ],
+   "realm": "Russia",
+   "why": "Founded in 1860"
+  },
+  {
+   "place": "Baranof Island (Russian America)",
+   "lonLat": [
+    -135.0,
+    57.4
+   ],
+   "years": [
+    1858,
+    1866
+   ],
+   "realm": "Russia",
+   "why": "Novo-Arkhangelsk, capital of Russian America"
+  },
+  {
+   "place": "Baranof Island (United States)",
+   "lonLat": [
+    -135.0,
+    57.4
+   ],
+   "years": [
+    1867,
+    2026
+   ],
+   "realm": "United States",
+   "why": "Alaska, bought in 1867"
+  },
+  {
+   "place": "Kars (Ottoman, 1876)",
+   "lonLat": [
+    43.1,
+    40.6
+   ],
+   "years": [
+    1858,
+    1876
+   ],
+   "realm": "Ottoman Empire",
+   "why": "Ottoman until the war of 1877-78"
+  },
+  {
+   "place": "Izmail (Romania, 1870)",
+   "lonLat": [
+    28.84,
+    45.35
+   ],
+   "years": [
+    1859,
+    1877
+   ],
+   "realm": "Romania",
+   "why": "Southern Bessarabia, Moldavian from 1856, Romanian until 1878"
+  },
+  {
+   "place": "Mariehamn (Grand Duchy)",
+   "lonLat": [
+    19.93,
+    60.1
+   ],
+   "years": [
+    1858,
+    1916
+   ],
+   "realm": "Russia",
+   "why": "Aland, part of the Grand Duchy of Finland"
+  },
+  {
+   "place": "Kaliningrad (Prussia)",
+   "lonLat": [
+    20.5,
+    54.7
+   ],
+   "years": [
+    1858,
+    1866
+   ],
+   "realm": "Prussia",
+   "why": "Konigsberg, in the Kingdom of Prussia"
+  },
+  {
+   "place": "Lviv (Austrian Empire)",
+   "lonLat": [
+    24.03,
+    49.84
+   ],
+   "years": [
+    1858,
+    1866
+   ],
+   "realm": "Austria",
+   "why": "Lemberg, capital of Galicia"
   }
  ]
 }
