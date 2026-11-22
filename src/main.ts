@@ -65,6 +65,15 @@ const FIRST_YEAR = ERAS[0].from;
 // Old links (#y1241) open on the Mongol Empire, the first prototype's subject.
 const DEFAULT_CIV = "mongol-empire";
 
+// public/unsupported.js has already told this browser it can't run the globe.
+document.documentElement.setAttribute("data-started", "");
+if (document.documentElement.hasAttribute("data-unsupported")) throw new Error("This browser can't run the globe");
+declare global {
+  interface Window {
+    terraTemporaUnsupported?: (reason: "webgl" | "old") => void;
+  }
+}
+
 const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
 
 // A page left open across a release reloads when its files are gone.
@@ -101,17 +110,24 @@ const aboutEl = $("about");
 
 // The neutral globe: Natural Earth II relief imagery shipped with CesiumJS,
 // served from our own files. No Cesium ion account or token is involved.
-const widget = new CesiumWidget($("globe"), {
-  baseLayer: ImageryLayer.fromProviderAsync(
-    TileMapServiceImageryProvider.fromUrl(buildModuleUrl("Assets/Textures/NaturalEarthII")),
-  ),
-  terrainProvider: new EllipsoidTerrainProvider(),
-  creditContainer: $("credits"),
-  requestRenderMode: true,
-  maximumRenderTimeChange: Infinity,
-  // Render errors are handled below (renderError).
-  showRenderLoopErrors: false,
-});
+let widget: CesiumWidget;
+try {
+  widget = new CesiumWidget($("globe"), {
+    baseLayer: ImageryLayer.fromProviderAsync(
+      TileMapServiceImageryProvider.fromUrl(buildModuleUrl("Assets/Textures/NaturalEarthII")),
+    ),
+    terrainProvider: new EllipsoidTerrainProvider(),
+    creditContainer: $("credits"),
+    requestRenderMode: true,
+    maximumRenderTimeChange: Infinity,
+    // Render errors are handled below (renderError).
+    showRenderLoopErrors: false,
+  });
+} catch (error) {
+  // WebGL is there but the globe still can't start (blocked, or no graphics memory).
+  window.terraTemporaUnsupported?.("webgl");
+  throw error;
+}
 const scene = widget.scene;
 // Phones can take the WebGL context away (the tab goes to the background, the
 // browser runs short of graphics memory). Its drawing buffer is then 0 pixels
