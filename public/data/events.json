@@ -11334,6 +11334,63 @@
    "summary": "Bread riots and strikes in Petrograd in March 1917 (February in the old calendar) turn into revolution when the garrison joins the crowds. On 15 March Nicholas II abdicates, ending three centuries of Romanov rule. A Provisional Government takes power alongside the Petrograd Soviet, but it keeps Russia in the war and is overthrown by the Bolsheviks in November.",
    "wikipedia": "February_Revolution",
    "search": "February Revolution March 1917 Petrograd strikes bread riots garrison mutiny Nicholas II abdicates 15 March Provisional Government Petrograd Soviet Romanov"
+  },
+  {
+   "id": "battle-of-geok-tepe-1881",
+   "kind": "battle",
+   "year": 1881,
+   "title": "The storming of Geok Tepe, January 1881",
+   "place": "Geok Tepe",
+   "lonLat": [
+    57.97,
+    38.15
+   ],
+   "civs": [
+    "russia"
+   ],
+   "summary": "After a first Russian attack failed in 1879, General Skobelev besieges the Tekke Turkmen fortress of Geok Tepe and storms it on 24 January 1881, followed by a massacre of thousands of defenders and civilians. Russia annexes the Akhal oasis, founds Ashgabat nearby and makes the land the Transcaspian Oblast.",
+   "wikipedia": "Battle_of_Geok_Tepe_(1881)",
+   "search": "Battle of Geok Tepe 1881 Skobelev Akhal Teke Turkmen fortress Dengil Tepe Ashgabat Transcaspian Oblast conquest of Turkmenistan"
+  },
+  {
+   "id": "merv-and-panjdeh-1884",
+   "kind": "empire",
+   "year": 1884,
+   "to": 1885,
+   "title": "Merv and the Panjdeh incident, 1884 – 1885",
+   "place": "Merv (Mary)",
+   "lonLat": [
+    61.83,
+    37.6
+   ],
+   "civs": [
+    "russia",
+    "afghanistan",
+    "united-kingdom"
+   ],
+   "summary": "The Merv oasis, the last free Turkmen stronghold, submits to Russia in 1884. Pushing south, Russian troops drive Afghan forces out of the Panjdeh oasis on 30 March 1885. Britain, fearing for India, nearly goes to war, but the crisis ends with a joint commission that fixes Russia's border with Afghanistan, leaving Panjdeh to Russia.",
+   "wikipedia": "Panjdeh_incident",
+   "search": "Merv annexation 1884 Alikhanov Tekke Turkmens Panjdeh incident 30 March 1885 Kushka Afghanistan Britain war scare Anglo-Russian boundary commission"
+  },
+  {
+   "id": "pamir-agreement-1895",
+   "kind": "treaty",
+   "year": 1895,
+   "title": "The Pamir agreement, March 1895",
+   "place": "Khorog, the Pamirs",
+   "lonLat": [
+    71.55,
+    37.49
+   ],
+   "civs": [
+    "russia",
+    "afghanistan",
+    "united-kingdom",
+    "china"
+   ],
+   "summary": "After Russian expeditions into the Pamirs from 1891 and clashes with Afghan troops, Britain and Russia agree on 11 March 1895 that the Panj river marks their spheres. Russia keeps the high Pamirs and the lands north of the river, Afghanistan those to the south, and the thin Wakhan Corridor is left to Afghanistan to keep the two empires apart. It is the last great deal of the Great Game in Central Asia.",
+   "wikipedia": "Pamir_Mountains",
+   "search": "Pamir agreement 11 March 1895 Anglo-Russian Pamir Boundary Commission Panj river Wakhan Corridor Afghanistan Great Game Shughnan Murghab Khorog"
   }
  ]
 }
