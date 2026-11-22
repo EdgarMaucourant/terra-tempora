@@ -249,10 +249,14 @@ let quietTap = false;
 /** A tap or click on a realm of the globe or map; on phones it only chooses it. */
 function tapRealm(p: Polity | null | undefined, spot: [number, number] | null) {
   if (!compactQuery.matches) return clickRealm(p, spot);
+  // The button goes under the land chosen: a closed group's outline (French
+  // Indochina) on the first tap, the territory itself once the group is open.
+  const land = p?.kind === "hatch" ? (layer.landUnder(p, year) ?? p) : p;
+  const shape = closedGroupOf(land) ?? land;
   quietTap = true;
   clickRealm(p, spot);
   quietTap = false;
-  if (p && p.kind !== "unreviewed") detailsHere.show(spot);
+  if (p && p.kind !== "unreviewed") detailsHere.show(spot, shape?.rings);
   else detailsHere.hide();
 }
 let mapHover = 0;
@@ -841,7 +845,7 @@ function clickRealm(p: Polity | null | undefined, spot?: [number, number] | null
     void placeAtSpot(p.name, spot).then((place) => {
       quietTap = quiet;
       openPlace(clicked, place ?? placeOf(clicked.name), spot);
-      if (quiet) detailsHere.show(spot);
+      if (quiet) detailsHere.show(spot, clicked.rings);
       quietTap = false;
     });
     return;
