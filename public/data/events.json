@@ -11592,6 +11592,171 @@
    "summary": "The great powers meet in Berlin to revise the peace Russia imposed on the Ottomans at San Stefano. The treaty of 13 July 1878 still gives Russia Kars, Ardahan and Batumi, made a free port, and takes Southern Bessarabia back from Romania, which receives Northern Dobruja instead and is recognised as independent.",
    "wikipedia": "Treaty_of_Berlin_(1878)",
    "search": "Congress of Berlin 13 July 1878 Treaty of Berlin San Stefano Russia Kars Ardahan Batumi free port Southern Bessarabia Romania Dobruja Bismarck"
+  },
+  {
+   "id": "treaty-of-turkmenchay-1828",
+   "kind": "treaty",
+   "year": 1828,
+   "title": "The Treaty of Turkmenchay, February 1828",
+   "place": "Yerevan",
+   "lonLat": [
+    44.51,
+    40.18
+   ],
+   "civs": [
+    "russia",
+    "iran",
+    "armenia",
+    "azerbaijan"
+   ],
+   "summary": "After Persia tries to win back its lost Caucasian lands in 1826, Russian troops under Paskevich take Nakhchivan and Erivan in 1827. By the Treaty of Turkmenchay of 22 February 1828 Persia gives up the khanates of Erivan and Nakhchivan, and the border is set on the Aras river, where it still runs today.",
+   "wikipedia": "Treaty_of_Turkmenchay",
+   "search": "Treaty of Turkmenchay 22 February 1828 Russo-Persian War 1826-1828 Paskevich Erivan Khanate Nakhchivan Khanate Aras border Armenian Oblast Griboyedov"
+  },
+  {
+   "id": "treaty-of-adrianople-caucasus-1829",
+   "kind": "treaty",
+   "year": 1829,
+   "title": "The Treaty of Adrianople, September 1829",
+   "place": "Akhaltsikhe",
+   "lonLat": [
+    42.98,
+    41.64
+   ],
+   "civs": [
+    "russia",
+    "ottoman-empire",
+    "georgia"
+   ],
+   "summary": "In the war of 1828-29 Russian troops storm Kars and the Ottoman fortress of Akhaltsikhe. The Treaty of Adrianople of 14 September 1829 gives Kars back to the Ottomans but leaves Russia Akhaltsikhe and Akhalkalaki and the Black Sea coast from the Kuban to Adjara, including the Ottoman claim to Circassia.",
+   "wikipedia": "Treaty_of_Adrianople_(1829)",
+   "search": "Treaty of Adrianople 14 September 1829 Russo-Turkish War 1828-1829 Akhaltsikhe Akhalkalaki pashalik Black Sea coast Circassia Anapa Poti Kars returned"
+  },
+  {
+   "id": "caucasian-imamate-founded-1829",
+   "kind": "empire",
+   "year": 1829,
+   "title": "The Caucasian Imamate is founded, 1829",
+   "place": "Gimry, Dagestan",
+   "lonLat": [
+    46.88,
+    42.73
+   ],
+   "civs": [
+    "caucasian-imamate",
+    "russia"
+   ],
+   "summary": "In the highlands of Dagestan the preacher Ghazi Muhammad of Gimry is proclaimed imam and calls the mountain peoples to holy war against Russia and its local khans. He is killed in 1832; under his successors, and from 1834 under Imam Shamil, the Imamate becomes a state ruled by Islamic law that holds out against Russia for thirty years.",
+   "wikipedia": "Caucasian_Imamate",
+   "search": "Caucasian Imamate founded 1828 1829 Ghazi Muhammad Gimry Dagestan holy war Murid Hamzat Bek Shamil 1834 Avaria North Caucasus"
+  },
+  {
+   "id": "chechnya-joins-shamil-1840",
+   "kind": "war",
+   "year": 1840,
+   "title": "Chechnya rises and joins Shamil, 1840",
+   "place": "Chechnya",
+   "lonLat": [
+    45.9,
+    43.15
+   ],
+   "civs": [
+    "caucasian-imamate",
+    "russia"
+   ],
+   "summary": "After his defeat at Akhulgo in 1839, Shamil seems finished, but in March 1840 Russian attempts to disarm the Chechens set off a general rising. The Chechens call Shamil to lead them, and Chechnya south of the Sunzha becomes the heart of his Imamate, with its capitals at Dargo and later Vedeno.",
+   "wikipedia": "Shamil",
+   "search": "Chechnya joins Shamil 1840 Chechen uprising disarmament Lesser Chechnya Greater Chechnya Caucasian Imamate Dargo Vedeno Pullo Valerik Caucasian War"
+  },
+  {
+   "id": "siege-of-kars-1855",
+   "kind": "siege",
+   "year": 1855,
+   "title": "The siege of Kars, 1855",
+   "place": "Kars",
+   "lonLat": [
+    43.1,
+    40.6
+   ],
+   "civs": [
+    "russia",
+    "ottoman-empire"
+   ],
+   "summary": "During the Crimean War a Russian army under Nikolay Muravyov besieges Kars, defended by an Ottoman garrison under the British general William Williams. After a failed assault in September, hunger forces the garrison to surrender on 28 November 1855. Russia gives Kars back at the peace of Paris in 1856.",
+   "wikipedia": "Siege_of_Kars",
+   "search": "Siege of Kars 1855 Crimean War Muravyov Williams Ottoman garrison surrender 28 November 1855 hunger Treaty of Paris returned 1856"
+  },
+  {
+   "id": "shamil-surrenders-gunib-1859",
+   "kind": "war",
+   "year": 1859,
+   "title": "Shamil surrenders at Gunib, August 1859",
+   "place": "Gunib",
+   "lonLat": [
+    46.96,
+    42.39
+   ],
+   "civs": [
+    "caucasian-imamate",
+    "russia"
+   ],
+   "summary": "With Chechnya lost after the fall of Vedeno in April 1859, Imam Shamil retreats with a few hundred followers to the mountain village of Gunib in Dagestan. Surrounded by Prince Baryatinsky's army, he surrenders on 25 August 1859. The Imamate ends and Shamil lives out his life in honourable captivity in Russia.",
+   "wikipedia": "Shamil",
+   "search": "Shamil surrender Gunib 25 August 1859 Baryatinsky Vedeno April 1859 end of Caucasian Imamate Dagestan Chechnya captivity Kaluga"
+  },
+  {
+   "id": "end-of-caucasian-war-1864",
+   "kind": "war",
+   "year": 1864,
+   "title": "The Caucasian War ends and the Circassians are driven out, 1864",
+   "place": "Kbaada (Krasnaya Polyana)",
+   "lonLat": [
+    40.2,
+    43.68
+   ],
+   "civs": [
+    "russia",
+    "ottoman-empire"
+   ],
+   "summary": "After Shamil's surrender, Russian armies conquer the last free Circassian and Ubykh lands on the Black Sea coast. The war ends with a victory parade at Kbaada on 21 May 1864. Hundreds of thousands of Circassians are killed or driven across the sea to the Ottoman Empire, many dying on the way, and their land is settled by Cossacks.",
+   "wikipedia": "Circassian_genocide",
+   "search": "end of Caucasian War 21 May 1864 Kbaada Krasnaya Polyana Circassia conquest Circassian expulsion genocide Ubykh Ottoman Empire muhajirs Black Sea coast"
+  },
+  {
+   "id": "abkhazia-annexed-1864",
+   "kind": "empire",
+   "year": 1864,
+   "title": "Russia annexes Abkhazia, 1864",
+   "place": "Sukhumi",
+   "lonLat": [
+    41.02,
+    43.0
+   ],
+   "civs": [
+    "principality-of-abkhazia",
+    "russia"
+   ],
+   "summary": "Under Russian protection since 1810, the Principality of Abkhazia keeps its own princes of the Shervashidze family. Once the Caucasian War is over, Russia removes Prince Mikhail in 1864 and rules Abkhazia directly; an uprising in 1866 is followed by the expulsion of many Abkhaz to the Ottoman Empire.",
+   "wikipedia": "Principality_of_Abkhazia",
+   "search": "Principality of Abkhazia abolished 1864 Mikhail Shervashidze Sukhumi Russian protectorate 1810 annexation Sukhum military department 1866 Lykhny uprising"
+  },
+  {
+   "id": "mingrelia-abolished-1867",
+   "kind": "empire",
+   "year": 1867,
+   "title": "Russia abolishes the Principality of Mingrelia, 1867",
+   "place": "Zugdidi",
+   "lonLat": [
+    41.87,
+    42.51
+   ],
+   "civs": [
+    "principality-of-mingrelia",
+    "russia"
+   ],
+   "summary": "The Dadiani princes of Mingrelia had ruled under Russian protection since 1803. After running the principality through a regency from 1857, Russia deposes the young Prince Niko Dadiani and abolishes the principality in 1867, making Mingrelia part of the Kutaisi Governorate.",
+   "wikipedia": "Principality_of_Mingrelia",
+   "search": "Principality of Mingrelia abolished 1867 Niko Dadiani deposed Zugdidi Russian protectorate 1803 Kutaisi Governorate Dadiani dynasty"
   }
  ]
 }

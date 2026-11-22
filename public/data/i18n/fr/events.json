@@ -3063,5 +3063,50 @@
   "title": "Le traité de Berlin, juillet 1878",
   "place": "Batoumi",
   "summary": "Les grandes puissances se réunissent à Berlin pour réviser la paix imposée par la Russie aux Ottomans à San Stefano. Le traité du 13 juillet 1878 donne tout de même à la Russie Kars, Ardahan et Batoumi, déclaré port franc, et lui rend la Bessarabie du Sud prise à la Roumanie, qui reçoit en échange la Dobroudja du Nord et voit son indépendance reconnue."
+ },
+ "treaty-of-turkmenchay-1828": {
+  "title": "Le traité de Turkmanchai, février 1828",
+  "place": "Erevan",
+  "summary": "Après la tentative de la Perse de reprendre ses terres caucasiennes perdues en 1826, les troupes russes de Paskevitch prennent Nakhitchevan et Erevan en 1827. Par le traité de Turkmanchai du 22 février 1828, la Perse cède les khanats d’Erevan et de Nakhitchevan, et la frontière est fixée sur l’Araxe, où elle passe encore aujourd’hui."
+ },
+ "treaty-of-adrianople-caucasus-1829": {
+  "title": "Le traité d’Andrinople, septembre 1829",
+  "place": "Akhaltsikhé",
+  "summary": "Pendant la guerre de 1828-1829, les troupes russes prennent Kars et la forteresse ottomane d’Akhaltsikhé. Le traité d’Andrinople du 14 septembre 1829 rend Kars aux Ottomans mais laisse à la Russie Akhaltsikhé, Akhalkalaki et la côte de la mer Noire du Kouban à l’Adjarie, avec la revendication ottomane sur la Circassie."
+ },
+ "caucasian-imamate-founded-1829": {
+  "title": "La fondation de l’imamat du Caucase, 1829",
+  "place": "Guimry, Daghestan",
+  "summary": "Dans les montagnes du Daghestan, le prédicateur Ghazi Muhammad de Guimry est proclamé imam et appelle les peuples des montagnes à la guerre sainte contre la Russie et ses khans locaux. Il est tué en 1832 ; sous ses successeurs, et à partir de 1834 sous l’imam Chamil, l’imamat devient un État régi par la loi islamique qui tient tête à la Russie pendant trente ans."
+ },
+ "chechnya-joins-shamil-1840": {
+  "title": "La Tchétchénie se soulève et rejoint Chamil, 1840",
+  "place": "Tchétchénie",
+  "summary": "Après sa défaite à Akhoulgo en 1839, Chamil semble vaincu, mais en mars 1840 les tentatives russes de désarmer les Tchétchènes déclenchent un soulèvement général. Les Tchétchènes appellent Chamil à leur tête et la Tchétchénie au sud de la Sounja devient le cœur de son imamat, avec pour capitales Dargo puis Vedeno."
+ },
+ "siege-of-kars-1855": {
+  "title": "Le siège de Kars, 1855",
+  "place": "Kars",
+  "summary": "Pendant la guerre de Crimée, une armée russe commandée par Nikolaï Mouraviov assiège Kars, défendue par une garnison ottomane sous les ordres du général britannique William Williams. Après un assaut manqué en septembre, la faim oblige la garnison à se rendre le 28 novembre 1855. La Russie rend Kars à la paix de Paris en 1856."
+ },
+ "shamil-surrenders-gunib-1859": {
+  "title": "Chamil se rend à Gounib, août 1859",
+  "place": "Gounib",
+  "summary": "Après la perte de la Tchétchénie et la chute de Vedeno en avril 1859, l’imam Chamil se replie avec quelques centaines de fidèles dans le village de montagne de Gounib, au Daghestan. Encerclé par l’armée du prince Bariatinski, il se rend le 25 août 1859. L’imamat prend fin et Chamil finit sa vie dans une captivité honorable en Russie."
+ },
+ "end-of-caucasian-war-1864": {
+  "title": "La fin de la guerre du Caucase et l’expulsion des Circassiens, 1864",
+  "place": "Kbaada (Krasnaïa Poliana)",
+  "summary": "Après la reddition de Chamil, les armées russes conquièrent les dernières terres libres des Circassiens et des Oubykhs sur la côte de la mer Noire. La guerre s’achève par une parade de victoire à Kbaada le 21 mai 1864. Des centaines de milliers de Circassiens sont tués ou chassés par la mer vers l’Empire ottoman, beaucoup mourant en route, et leurs terres sont peuplées de Cosaques."
+ },
+ "abkhazia-annexed-1864": {
+  "title": "La Russie annexe l’Abkhazie, 1864",
+  "place": "Soukhoumi",
+  "summary": "Sous protection russe depuis 1810, la principauté d’Abkhazie garde ses propres princes de la famille Chervachidzé. Une fois la guerre du Caucase terminée, la Russie écarte le prince Mikhaïl en 1864 et gouverne l’Abkhazie directement ; un soulèvement en 1866 est suivi de l’expulsion de nombreux Abkhazes vers l’Empire ottoman."
+ },
+ "mingrelia-abolished-1867": {
+  "title": "La Russie supprime la principauté de Mingrélie, 1867",
+  "place": "Zougdidi",
+  "summary": "Les princes Dadiani de Mingrélie régnaient sous protection russe depuis 1803. Après avoir gouverné la principauté par une régence à partir de 1857, la Russie dépose le jeune prince Niko Dadiani et supprime la principauté en 1867 ; la Mingrélie est rattachée au gouvernement de Koutaïssi."
  }
 }
