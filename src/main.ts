@@ -532,6 +532,7 @@ document.addEventListener("keydown", (e) => {
 // Tap or click a realm for its details.
 let shownRealm: Polity | null = null;
 function showInfo(p: Polity) {
+  crumbMember = null;
   if (shownRealm !== p || info.hidden) {
     track("realm", { subject: p.name, year: Math.round(year) });
     announce(t("panel.shown", { name: civs?.realmName(p.name) ?? p.name }));
@@ -744,6 +745,7 @@ function setOpenGroups(groups: string[]) {
   layer.setOpenGroups(groups);
   map.setOpenGroups(groups);
   render();
+  renderCrumbs();
 }
 
 // Tap or click a highlighted realm for its details, a greyed one to switch to it.
@@ -762,19 +764,21 @@ function clickRealm(p: Polity | null | undefined, spot?: [number, number] | null
     setOpenGroups([closed.name]);
     return;
   }
-  if (land && !land.kind && land.groups?.some((g) => openGroups.has(g) && layer.groupAt(g, year))) {
+  const group = land && !land.kind ? land.groups?.find((g) => openGroups.has(g) && layer.groupAt(g, year)) : undefined;
+  if (land && group) {
     closeEvent();
     showInfo(land);
+    crumbMember = { name: shownName(land), group };
+    renderCrumbs();
     return;
   }
   if (openGroups.size) setOpenGroups([]);
   if (!p || p.kind === "unreviewed") {
+    // A click off any country (the sea, land no state held, land not rebuilt
+    // yet) closes the details but keeps the country shown: only World in the
+    // breadcrumb leaves it (Edgar, 2026-11-22).
     info.hidden = true;
     closeEvent();
-    // A click off any country (the sea, land no state held, land not rebuilt
-    // yet) leaves the country or civilization shown for the world with none
-    // chosen, in the same year and from the same view.
-    if (!home && !travel?.active) leaveForWorld(false);
     return;
   }
   // A hatching (Indonesia over Portuguese Timor) stands for the land under it.
@@ -2735,11 +2739,62 @@ function showPin(lonLat: [number, number] | null) {
   map.setPin(lonLat);
 }
 
-// Like a click off every border: the camera stays where it is (Edgar, 2026-11-21).
+// The breadcrumb at the top left: World › the country or realm shown › the
+// territory opened inside a group (World › French Indochina › French
+// Cambodia). World leaves for the world with none chosen; the camera stays
+// where it is (Edgar, 2026-11-21). On phones only the step back is shown.
+const crumbList = $("crumbs").querySelector("ol")!;
+/** The group member whose details are shown, as the breadcrumb's last step. */
+let crumbMember: { name: string; group: string } | null = null;
+function crumb(text: string, onClick?: () => void, track?: string): HTMLLIElement {
+  const li = document.createElement("li");
+  if (onClick) {
+    const a = el("a", "crumb", text) as HTMLAnchorElement;
+    a.href = "#";
+    if (track) a.dataset.track = track;
+    a.addEventListener("click", (e) => {
+      e.preventDefault();
+      onClick();
+    });
+    li.append(a);
+  } else {
+    const span = el("span", "crumb", text);
+    span.setAttribute("aria-current", "page");
+    li.append(span);
+  }
+  return li;
+}
+function renderCrumbs() {
+  const world = crumbList.firstElementChild!;
+  const steps: HTMLLIElement[] = [];
+  const title = $("civ-title").textContent ?? "";
+  const member = crumbMember && !info.hidden && openGroups.has(crumbMember.group) ? crumbMember : null;
+  if (member) {
+    steps.push(
+      crumb(title, () => {
+        info.hidden = true;
+        renderCrumbs();
+      }, "crumb-group"),
+      crumb(member.name),
+    );
+  } else steps.push(crumb(title));
+  crumbList.replaceChildren(world, ...steps);
+  // The step back, which phones show alone.
+  const parent = crumbList.children[crumbList.children.length - 2];
+  for (const li of crumbList.children) li.classList.toggle("crumb-parent", li === parent);
+}
+new MutationObserver(renderCrumbs).observe($("civ-title"), { childList: true, characterData: true, subtree: true });
+new MutationObserver(renderCrumbs).observe(info, { attributes: true, attributeFilter: ["hidden"] });
 $("back").addEventListener("click", (e) => {
   e.preventDefault();
   leaveForWorld(false);
 });
+renderCrumbs();
+// On phones the breadcrumb shares its row with the toolbar, whose width it needs.
+const toolbarEl = document.querySelector<HTMLElement>(".toolbar");
+if (toolbarEl) {
+  new ResizeObserver(() => document.documentElement.style.setProperty("--toolbar-width", `${toolbarEl.offsetWidth}px`)).observe(toolbarEl);
+}
 window.addEventListener("popstate", route);
 
 // Usage counts (src/analytics.ts): the controls pressed, the links followed

@@ -168,8 +168,7 @@
     "whyItMatters": "Why it matters"
   },
   "masthead": {
-    "back": "← Whole world",
-    "backShort": "← World",
+    "crumbs": "Where you are",
     "focusLabel": "Show the years of {name}",
     "more": {
       "one": "{first}, {second} & {count} more",
@@ -179,7 +178,8 @@
       "one": "{count} civilization · {years}",
       "other": "{count} civilizations · {years}"
     },
-    "two": "{first} & {second}"
+    "two": "{first} & {second}",
+    "world": "World"
   },
   "toolbar": {
     "otherRealms": "Other realms",
