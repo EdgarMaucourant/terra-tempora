@@ -64,6 +64,7 @@ import { wikidataEvents } from "./wikiEvents";
 import { era, formatRange, formatYear, yearNumber } from "./years";
 import { VERSION } from "./version";
 import { setupWhatsNew } from "./whatsNew";
+import { attachYearStep } from "./yearStep";
 
 const FIRST_YEAR = ERAS[0].from;
 // Old links (#y1241) open on the Mongol Empire, the first prototype's subject.
@@ -98,6 +99,8 @@ translatePage();
 document.querySelector(".toolbar-end")!.prepend(languageMenu("language toolbar-language"));
 
 const yearNumberEl = $("year-number");
+const yearPrevEl = $<HTMLButtonElement>("year-prev");
+const yearNextEl = $<HTMLButtonElement>("year-next");
 const yearEraEl = $("year-era");
 const yearPeriodEl = $("year-period");
 const playButton = $<HTMLButtonElement>("play");
@@ -457,6 +460,8 @@ function latestYear() {
 
 function showYear() {
   yearNumberEl.textContent = yearNumber(year);
+  yearPrevEl.disabled = Math.round(year) <= FIRST_YEAR;
+  yearNextEl.disabled = Math.round(year) >= NOW;
   yearEraEl.textContent = era(year);
   yearPeriodEl.textContent = eraName(eraAt(year));
 }
@@ -3097,6 +3102,8 @@ Promise.all([
 
     $("zoom-in").addEventListener("click", () => line.zoom(0.5));
     $("zoom-out").addEventListener("click", () => line.zoom(2));
+    attachYearStep(yearPrevEl, -1, (delta) => line.step(delta));
+    attachYearStep(yearNextEl, 1, (delta) => line.step(delta));
     if (stored(MAP_KEY) === "map") setMapMode(true, false);
     route();
   })
