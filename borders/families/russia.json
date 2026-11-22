@@ -77,6 +77,17 @@
    ],
    "from": 1939,
    "why": "Finland, whose borders moved with the Soviet Union in 1940 and 1944, and the cuts for land that changed hands between 1939 and 1946"
+  },
+  {
+   "pieces": [
+    "east-karelia",
+    "leningrad-occupied",
+    "tver-west",
+    "kaluga-west",
+    "voronezh-west"
+   ],
+   "from": 1939,
+   "why": "Cuts for Soviet land held by Germany and Finland in 1941-44 that was only part of a region"
   }
  ],
  "changes": [
@@ -574,7 +585,8 @@
      "pieces": [
       "RUS-2353",
       "ladoga-karelia",
-      "salla-kuusamo"
+      "salla-kuusamo",
+      "east-karelia"
      ],
      "owner": "Karelo-Finnish SSR",
      "source": {
@@ -984,6 +996,61 @@
    ]
   },
   {
+   "date": "1945-05-09",
+   "what": "Courland (the Courland Pocket from October 1944 to May 1945): taken back by the Red Army",
+   "source": {
+    "title": "Courland Pocket (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Courland_Pocket"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "LVA-1068",
+      "LVA-5718",
+      "LVA-5715",
+      "LVA-5713",
+      "LVA-5740",
+      "LVA-5717",
+      "LVA-4848",
+      "LVA-5716",
+      "LVA-5719",
+      "LVA-934",
+      "LVA-4852",
+      "LVA-5721",
+      "LVA-5722",
+      "LVA-1091",
+      "LVA-5723",
+      "LVA-5714",
+      "LVA-5709",
+      "LVA-5710",
+      "LVA-5712",
+      "LVA-5765",
+      "LVA-1092",
+      "LVA-5763",
+      "LVA-5711",
+      "LVA-5720"
+     ],
+     "owner": "Latvia",
+     "source": {
+      "title": "Courland Pocket (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Courland_Pocket"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-07-01",
+      "note": "Held by Germany from 1941 to 1945: Courland (the Courland Pocket from October 1944 to May 1945); front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Courland Pocket (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Courland_Pocket"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
    "date": "1945-04-09",
    "what": "The Red Army takes Königsberg, capital of East Prussia",
    "source": {
@@ -1068,6 +1135,133 @@
    ]
   },
   {
+   "date": "1944-10-13",
+   "what": "Latvia: taken back by the Red Army",
+   "source": {
+    "title": "German occupation of Latvia during World War II (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/German_occupation_of_Latvia_during_World_War_II"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "LVA-1063",
+      "LVA-1064",
+      "LVA-1065",
+      "LVA-1066",
+      "LVA-1076",
+      "LVA-1077",
+      "LVA-1079",
+      "LVA-1080",
+      "LVA-1081",
+      "LVA-1082",
+      "LVA-1083",
+      "LVA-1084",
+      "LVA-1085",
+      "LVA-1086",
+      "LVA-1087",
+      "LVA-1088",
+      "LVA-1089",
+      "LVA-1093",
+      "LVA-1094",
+      "LVA-4849",
+      "LVA-4850",
+      "LVA-4851",
+      "LVA-5724",
+      "LVA-5725",
+      "LVA-5726",
+      "LVA-5727",
+      "LVA-5728",
+      "LVA-5729",
+      "LVA-5730",
+      "LVA-5731",
+      "LVA-5732",
+      "LVA-5733",
+      "LVA-5734",
+      "LVA-5735",
+      "LVA-5736",
+      "LVA-5737",
+      "LVA-5738",
+      "LVA-5739",
+      "LVA-5741",
+      "LVA-5742",
+      "LVA-5743",
+      "LVA-5744",
+      "LVA-5745",
+      "LVA-5746",
+      "LVA-5747",
+      "LVA-5748",
+      "LVA-5749",
+      "LVA-5750",
+      "LVA-5751",
+      "LVA-5752",
+      "LVA-5753",
+      "LVA-5754",
+      "LVA-5755",
+      "LVA-5756",
+      "LVA-5757",
+      "LVA-5758",
+      "LVA-5759",
+      "LVA-5760",
+      "LVA-5761",
+      "LVA-5762",
+      "LVA-5764",
+      "LVA-5766",
+      "LVA-5767",
+      "LVA-5768",
+      "LVA-5769",
+      "LVA-5770",
+      "LVA-5771",
+      "LVA-5772",
+      "LVA-5773",
+      "LVA-5774",
+      "LVA-5775",
+      "LVA-5776",
+      "LVA-5777",
+      "LVA-5778",
+      "LVA-5780",
+      "LVA-5781",
+      "LVA-5782",
+      "LVA-5783",
+      "LVA-5784",
+      "LVA-5785",
+      "LVA-5786",
+      "LVA-5787",
+      "LVA-5788",
+      "LVA-5789",
+      "LVA-5790",
+      "LVA-5791",
+      "LVA-5792",
+      "LVA-5793",
+      "LVA-5794",
+      "LVA-5795",
+      "LVA-5796",
+      "LVA-5797",
+      "LVA-5798",
+      "LVA-5799",
+      "LVA-5800",
+      "abrene"
+     ],
+     "owner": "Latvia",
+     "source": {
+      "title": "German occupation of Latvia during World War II (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/German_occupation_of_Latvia_during_World_War_II"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-07-01",
+      "note": "Held by Germany from 1941 to 1944: Latvia; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "German occupation of Latvia during World War II (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/German_occupation_of_Latvia_during_World_War_II"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
    "date": "1944-10-11",
    "what": "The Tuvan People's Republic joins the Soviet Union, as an autonomous oblast of the Russian SFSR",
    "source": {
@@ -1084,6 +1278,40 @@
      "source": {
       "title": "Tuvan People's Republic (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Tuvan_People's_Republic"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-09-22",
+   "what": "Estonia: taken back by the Red Army",
+   "source": {
+    "title": "German occupation of Estonia during World War II (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/German_occupation_of_Estonia_during_World_War_II"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "EST",
+      "pechory",
+      "ivangorod"
+     ],
+     "owner": "Estonia",
+     "source": {
+      "title": "German occupation of Estonia during World War II (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/German_occupation_of_Estonia_during_World_War_II"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-08-28",
+      "note": "Held by Germany from 1941 to 1944: Estonia; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "German occupation of Estonia during World War II (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/German_occupation_of_Estonia_during_World_War_II"
+      },
+      "rough": true,
+      "occupied": true
      }
     }
    ]
@@ -1120,6 +1348,2002 @@
    ]
   },
   {
+   "date": "1944-09-19",
+   "what": "Ladoga Karelia and the Kuusamo strip, taken back by Finland in 1941: given back by Finland under the Moscow Armistice",
+   "source": {
+    "title": "Continuation War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Continuation_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ladoga-karelia",
+      "salla-kuusamo"
+     ],
+     "owner": "Karelo-Finnish SSR",
+     "source": {
+      "title": "Continuation War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Continuation_War"
+     },
+     "hatch": {
+      "by": "Finland",
+      "since": "1941-08-16",
+      "note": "Held by Finland from 1941 to 1944: Ladoga Karelia and the Kuusamo strip, taken back by Finland in 1941; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Continuation War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Continuation_War"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-09-19",
+   "what": "Salla, taken back by Finland in 1941: given back by Finland under the Moscow Armistice",
+   "source": {
+    "title": "Continuation War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Continuation_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "salla"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Continuation War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Continuation_War"
+     },
+     "hatch": {
+      "by": "Finland",
+      "since": "1941-07-08",
+      "note": "Held by Finland from 1941 to 1944: Salla, taken back by Finland in 1941; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Continuation War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Continuation_War"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-08-26",
+   "what": "The Budjak, taken back by Romania in 1941: taken back by the Red Army",
+   "source": {
+    "title": "Jassy–Kishinev offensive (August 1944) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Jassy–Kishinev_offensive_(August_1944)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "budjak"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Jassy–Kishinev offensive (August 1944) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Jassy–Kishinev_offensive_(August_1944)"
+     },
+     "hatch": {
+      "by": "Romania",
+      "since": "1941-07-25",
+      "note": "Held by Romania from 1941 to 1944: the Budjak, taken back by Romania in 1941; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Jassy–Kishinev offensive (August 1944) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Jassy–Kishinev_offensive_(August_1944)"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-08-24",
+   "what": "Bessarabia, taken back by Romania in 1941: taken back by the Red Army",
+   "source": {
+    "title": "Jassy–Kishinev offensive (August 1944) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Jassy–Kishinev_offensive_(August_1944)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "MDA-1613",
+      "MDA-1614",
+      "MDA-1615",
+      "MDA-1616",
+      "MDA-1617",
+      "MDA-1618",
+      "MDA-1619",
+      "MDA-1620",
+      "MDA-1621",
+      "MDA-1622",
+      "MDA-1623",
+      "MDA-1624",
+      "MDA-1625",
+      "MDA-1626",
+      "MDA-1627",
+      "MDA-1629",
+      "MDA-1630",
+      "MDA-1631",
+      "MDA-1632",
+      "MDA-1633",
+      "MDA-1634",
+      "MDA-1635",
+      "MDA-1639",
+      "MDA-1640",
+      "MDA-1641",
+      "MDA-1642",
+      "MDA-1643",
+      "MDA-1644",
+      "MDA-1646",
+      "MDA-1647",
+      "MDA-1648",
+      "MDA-1649",
+      "MDA-1651",
+      "MDA-1653"
+     ],
+     "owner": "Moldova",
+     "source": {
+      "title": "Jassy–Kishinev offensive (August 1944) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Jassy–Kishinev_offensive_(August_1944)"
+     },
+     "hatch": {
+      "by": "Romania",
+      "since": "1941-07-16",
+      "note": "Held by Romania from 1941 to 1944: Bessarabia, taken back by Romania in 1941; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Jassy–Kishinev offensive (August 1944) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Jassy–Kishinev_offensive_(August_1944)"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-08-01",
+   "what": "Lithuania: taken back by the Red Army",
+   "source": {
+    "title": "German occupation of Lithuania during World War II (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/German_occupation_of_Lithuania_during_World_War_II"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "LTU"
+     ],
+     "owner": "Lithuania",
+     "source": {
+      "title": "German occupation of Lithuania during World War II (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/German_occupation_of_Lithuania_during_World_War_II"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-06-24",
+      "note": "Held by Germany from 1941 to 1944: Lithuania; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "German occupation of Lithuania during World War II (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/German_occupation_of_Lithuania_during_World_War_II"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "memel"
+     ],
+     "owner": "Germany",
+     "source": {
+      "title": "Klaipėda Region (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Klaipėda_Region"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-07-28",
+   "what": "The Brest and Volhynia regions: taken back by the Red Army",
+   "source": {
+    "title": "Operation Bagration (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Operation_Bagration"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "BLR-2338",
+      "UKR-318"
+     ],
+     "owner": "Poland",
+     "source": {
+      "title": "Operation Bagration (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Operation_Bagration"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-06-22",
+      "note": "Held by Germany from 1941 to 1944: the Brest and Volhynia regions; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Operation Bagration (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Operation_Bagration"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-07-27",
+   "what": "Eastern Galicia: taken back by the Red Army",
+   "source": {
+    "title": "Lvov–Sandomierz offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Lvov–Sandomierz_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-291",
+      "UKR-289"
+     ],
+     "owner": "Poland",
+     "source": {
+      "title": "Lvov–Sandomierz offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lvov–Sandomierz_offensive"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-06-30",
+      "note": "Held by Germany from 1941 to 1944: eastern Galicia; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Lvov–Sandomierz offensive (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Lvov–Sandomierz_offensive"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-07-23",
+   "what": "The Pskov region: taken back by the Red Army",
+   "source": {
+    "title": "Pskov–Ostrov offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Pskov–Ostrov_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2335"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Pskov–Ostrov offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pskov–Ostrov_offensive"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-07-09",
+      "note": "Held by Germany from 1941 to 1944: the Pskov region; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Pskov–Ostrov offensive (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Pskov–Ostrov_offensive"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-07-16",
+   "what": "The Grodno region: taken back by the Red Army",
+   "source": {
+    "title": "Operation Bagration (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Operation_Bagration"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "BLR-2344"
+     ],
+     "owner": "Poland",
+     "source": {
+      "title": "Operation Bagration (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Operation_Bagration"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-06-24",
+      "note": "Held by Germany from 1941 to 1944: the Grodno region; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Operation Bagration (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Operation_Bagration"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-07-05",
+   "what": "The Wilno lands of north-western Belarus: taken back by the Red Army",
+   "source": {
+    "title": "Operation Bagration (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Operation_Bagration"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "west-minsk",
+      "west-vitebsk"
+     ],
+     "owner": "Poland",
+     "source": {
+      "title": "Operation Bagration (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Operation_Bagration"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-06-26",
+      "note": "Held by Germany from 1941 to 1944: the Wilno lands of north-western Belarus; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Operation Bagration (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Operation_Bagration"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-07-03",
+   "what": "The Minsk region: taken back by the Red Army",
+   "source": {
+    "title": "Minsk offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Minsk_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "BLR-2345",
+      "BLR-4825"
+     ],
+     "owner": "Belarus",
+     "source": {
+      "title": "Minsk offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Minsk_offensive"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-06-28",
+      "note": "Held by Germany from 1941 to 1944: the Minsk region; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Minsk offensive (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Minsk_offensive"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-06-28",
+   "what": "The Mogilev region: taken back by the Red Army",
+   "source": {
+    "title": "Mogilev offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Mogilev_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "BLR-2340"
+     ],
+     "owner": "Belarus",
+     "source": {
+      "title": "Mogilev offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mogilev_offensive"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-07-26",
+      "note": "Held by Germany from 1941 to 1944: the Mogilev region; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Mogilev offensive (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Mogilev_offensive"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-06-28",
+   "what": "East Karelia, with Petrozavodsk (Äänislinna): taken back by the Red Army",
+   "source": {
+    "title": "Finnish occupation of East Karelia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Finnish_occupation_of_East_Karelia"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "east-karelia"
+     ],
+     "owner": "Karelo-Finnish SSR",
+     "source": {
+      "title": "Finnish occupation of East Karelia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Finnish_occupation_of_East_Karelia"
+     },
+     "hatch": {
+      "by": "Finland",
+      "since": "1941-10-01",
+      "note": "Held by Finland from 1941 to 1944: East Karelia, with Petrozavodsk (Äänislinna); front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Finnish occupation of East Karelia (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Finnish_occupation_of_East_Karelia"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-06-26",
+   "what": "The Vitebsk region: taken back by the Red Army",
+   "source": {
+    "title": "Vitebsk–Orsha offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Vitebsk–Orsha_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "BLR-2341"
+     ],
+     "owner": "Belarus",
+     "source": {
+      "title": "Vitebsk–Orsha offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Vitebsk–Orsha_offensive"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-07-11",
+      "note": "Held by Germany from 1941 to 1944: the Vitebsk region; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Vitebsk–Orsha offensive (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Vitebsk–Orsha_offensive"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-06-20",
+   "what": "The Karelian Isthmus with Vyborg, taken back by Finland in 1941: taken back by the Red Army",
+   "source": {
+    "title": "Vyborg–Petrozavodsk offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Vyborg–Petrozavodsk_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "karelian-isthmus"
+     ],
+     "owner": "Karelo-Finnish SSR",
+     "source": {
+      "title": "Vyborg–Petrozavodsk offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Vyborg–Petrozavodsk_offensive"
+     },
+     "hatch": {
+      "by": "Finland",
+      "since": "1941-08-29",
+      "note": "Held by Finland from 1941 to 1944: the Karelian Isthmus with Vyborg, taken back by Finland in 1941; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Vyborg–Petrozavodsk offensive (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Vyborg–Petrozavodsk_offensive"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-05-12",
+   "what": "Crimea: taken back by the Red Army",
+   "source": {
+    "title": "Crimean offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Crimean_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "RUS-283"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Crimean offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Crimean_offensive"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-11-16",
+      "note": "Held by Germany from 1941 to 1944: Crimea; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Crimean offensive (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Crimean_offensive"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-05-09",
+   "what": "Sevastopol, taken after a siege of 250 days: taken back by the Red Army",
+   "source": {
+    "title": "Siege of Sevastopol (1941–1942) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Sevastopol_(1941–1942)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "RUS-5482"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Siege of Sevastopol (1941–1942) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Sevastopol_(1941–1942)"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1942-07-04",
+      "note": "Held by Germany from 1942 to 1944: Sevastopol, taken after a siege of 250 days; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Siege of Sevastopol (1941–1942) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Siege_of_Sevastopol_(1941–1942)"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-04-15",
+   "what": "The Ternopil region: taken back by the Red Army",
+   "source": {
+    "title": "Proskurov–Chernovtsy offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Proskurov–Chernovtsy_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-292"
+     ],
+     "owner": "Poland",
+     "source": {
+      "title": "Proskurov–Chernovtsy offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Proskurov–Chernovtsy_offensive"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-07-02",
+      "note": "Held by Germany from 1941 to 1944: the Ternopil region; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Proskurov–Chernovtsy offensive (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Proskurov–Chernovtsy_offensive"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-04-12",
+   "what": "The left bank of the Dniester, in the Romanian Transnistria Governorate: taken back by the Red Army",
+   "source": {
+    "title": "Transnistria Governorate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Transnistria_Governorate"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "MDA-1652",
+      "MDA-1645",
+      "MDA-1628",
+      "MDA-1637",
+      "MDA-1638",
+      "MDA-1650"
+     ],
+     "owner": "Moldova",
+     "source": {
+      "title": "Transnistria Governorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Transnistria_Governorate"
+     },
+     "hatch": {
+      "by": "Romania",
+      "since": "1941-08-19",
+      "note": "Held by Romania from 1941 to 1944: the left bank of the Dniester, in the Romanian Transnistria Governorate; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Transnistria Governorate (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Transnistria_Governorate"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-04-10",
+   "what": "Odesa and its region, in the Romanian Transnistria Governorate: taken back by the Red Army",
+   "source": {
+    "title": "Transnistria Governorate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Transnistria_Governorate"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-322"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Transnistria Governorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Transnistria_Governorate"
+     },
+     "hatch": {
+      "by": "Romania",
+      "since": "1941-10-16",
+      "note": "Held by Romania from 1941 to 1944: Odesa and its region, in the Romanian Transnistria Governorate; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Transnistria Governorate (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Transnistria_Governorate"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-03-29",
+   "what": "Northern Bukovina, taken back by Romania in 1941: taken back by the Red Army",
+   "source": {
+    "title": "Proskurov–Chernovtsy offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Proskurov–Chernovtsy_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-288"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Proskurov–Chernovtsy offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Proskurov–Chernovtsy_offensive"
+     },
+     "hatch": {
+      "by": "Romania",
+      "since": "1941-07-05",
+      "note": "Held by Romania from 1941 to 1944: Northern Bukovina, taken back by Romania in 1941; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Proskurov–Chernovtsy offensive (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Proskurov–Chernovtsy_offensive"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-03-28",
+   "what": "The Mykolaiv region: taken back by the Red Army",
+   "source": {
+    "title": "Odessa offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Odessa_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-284"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Odessa offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Odessa_offensive"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-08-16",
+      "note": "Held by Germany from 1941 to 1944: the Mykolaiv region; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Odessa offensive (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Odessa_offensive"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-03-25",
+   "what": "The Kamianets-Podilskyi region: taken back by the Red Army",
+   "source": {
+    "title": "Proskurov–Chernovtsy offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Proskurov–Chernovtsy_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-290"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Proskurov–Chernovtsy offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Proskurov–Chernovtsy_offensive"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-07-08",
+      "note": "Held by Germany from 1941 to 1944: the Kamianets-Podilskyi region; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Proskurov–Chernovtsy offensive (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Proskurov–Chernovtsy_offensive"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-03-20",
+   "what": "The Vinnytsia region: taken back by the Red Army",
+   "source": {
+    "title": "Uman–Botoșani offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Uman–Botoșani_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-323"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Uman–Botoșani offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Uman–Botoșani_offensive"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-07-19",
+      "note": "Held by Germany from 1941 to 1944: the Vinnytsia region; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Uman–Botoșani offensive (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Uman–Botoșani_offensive"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-03-13",
+   "what": "The Kherson region: taken back by the Red Army",
+   "source": {
+    "title": "Bereznegovatoye–Snigirevka offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Bereznegovatoye–Snigirevka_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-4827"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Bereznegovatoye–Snigirevka offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bereznegovatoye–Snigirevka_offensive"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-08-19",
+      "note": "Held by Germany from 1941 to 1944: the Kherson region; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Bereznegovatoye–Snigirevka offensive (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Bereznegovatoye–Snigirevka_offensive"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-03-07",
+   "what": "The Chechen highlands around Itum-Kale, emptied by the deportation of February 1944, are given to the Georgian SSR",
+   "source": {
+    "title": "Chechen-Ingush Autonomous Soviet Socialist Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Chechen-Ingush_Autonomous_Soviet_Socialist_Republic"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "akhalkhevi"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Chechen-Ingush Autonomous Soviet Socialist Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chechen-Ingush_Autonomous_Soviet_Socialist_Republic"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-02-17",
+   "what": "The Cherkasy region: taken back by the Red Army",
+   "source": {
+    "title": "Battle of the Korsun–Cherkassy Pocket (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_the_Korsun–Cherkassy_Pocket"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-319"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Battle of the Korsun–Cherkassy Pocket (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Korsun–Cherkassy_Pocket"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-08-22",
+      "note": "Held by Germany from 1941 to 1944: the Cherkasy region; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Battle of the Korsun–Cherkassy Pocket (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Battle_of_the_Korsun–Cherkassy_Pocket"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-02-15",
+   "what": "The land around besieged Leningrad: taken back by the Red Army",
+   "source": {
+    "title": "Siege of Leningrad (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Leningrad"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "leningrad-occupied"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Siege of Leningrad (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Leningrad"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-09-08",
+      "note": "Held by Germany from 1941 to 1944: the land around besieged Leningrad; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Siege of Leningrad (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Siege_of_Leningrad"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-02-02",
+   "what": "The Rivne region: taken back by the Red Army",
+   "source": {
+    "title": "Rovno–Lutsk offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Rovno–Lutsk_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-286"
+     ],
+     "owner": "Poland",
+     "source": {
+      "title": "Rovno–Lutsk offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Rovno–Lutsk_offensive"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-06-28",
+      "note": "Held by Germany from 1941 to 1944: the Rivne region; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Rovno–Lutsk offensive (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Rovno–Lutsk_offensive"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-01-20",
+   "what": "The Novgorod region: taken back by the Red Army",
+   "source": {
+    "title": "Leningrad–Novgorod offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Leningrad–Novgorod_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2334"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Leningrad–Novgorod offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Leningrad–Novgorod_offensive"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-08-19",
+      "note": "Held by Germany from 1941 to 1944: the Novgorod region; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Leningrad–Novgorod offensive (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Leningrad–Novgorod_offensive"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-01-12",
+   "what": "The Karachay highlands, emptied by the deportation of November 1943, become the Klukhori district of the Georgian SSR",
+   "source": {
+    "title": "Klukhori District (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Klukhori_District"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "klukhori"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Karachay Autonomous Oblast (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Karachay_Autonomous_Oblast"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-01-08",
+   "what": "The Kirovohrad region: taken back by the Red Army",
+   "source": {
+    "title": "Kirovograd offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kirovograd_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-320"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Kirovograd offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kirovograd_offensive"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-08-05",
+      "note": "Held by Germany from 1941 to 1944: the Kirovohrad region; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Kirovograd offensive (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Kirovograd_offensive"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-01-01",
+   "what": "The Zhytomyr region: taken back by the Red Army",
+   "source": {
+    "title": "Zhitomir–Berdichev offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Zhitomir–Berdichev_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-324"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Zhitomir–Berdichev offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Zhitomir–Berdichev_offensive"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-07-09",
+      "note": "Held by Germany from 1941 to 1944: the Zhytomyr region; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Zhitomir–Berdichev offensive (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Zhitomir–Berdichev_offensive"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-11-26",
+   "what": "The Gomel region: taken back by the Red Army",
+   "source": {
+    "title": "Gomel–Rechitsa offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Gomel–Rechitsa_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "BLR-2339"
+     ],
+     "owner": "Belarus",
+     "source": {
+      "title": "Gomel–Rechitsa offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gomel–Rechitsa_offensive"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-08-19",
+      "note": "Held by Germany from 1941 to 1943: the Gomel region; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Gomel–Rechitsa offensive (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Gomel–Rechitsa_offensive"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-11-06",
+   "what": "Kyiv and its region: taken back by the Red Army",
+   "source": {
+    "title": "Battle of Kiev (1943) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Kiev_(1943)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-321",
+      "UKR-4826"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Battle of Kiev (1943) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Kiev_(1943)"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-09-19",
+      "note": "Held by Germany from 1941 to 1943: Kyiv and its region; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Battle of Kiev (1943) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Battle_of_Kiev_(1943)"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-10-25",
+   "what": "The Dnipropetrovsk region: taken back by the Red Army",
+   "source": {
+    "title": "Battle of the Dnieper (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_the_Dnieper"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-326"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Battle of the Dnieper (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Dnieper"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-08-25",
+      "note": "Held by Germany from 1941 to 1943: the Dnipropetrovsk region; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Battle of the Dnieper (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Battle_of_the_Dnieper"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-10-14",
+   "what": "The Zaporizhzhia region: taken back by the Red Army",
+   "source": {
+    "title": "Battle of the Dnieper (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_the_Dnieper"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-331"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Battle of the Dnieper (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Dnieper"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-10-04",
+      "note": "Held by Germany from 1941 to 1943: the Zaporizhzhia region; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Battle of the Dnieper (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Battle_of_the_Dnieper"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-09-25",
+   "what": "The Smolensk region: taken back by the Red Army",
+   "source": {
+    "title": "Smolensk operation (1943) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Smolensk_operation_(1943)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2343"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Smolensk operation (1943) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Smolensk_operation_(1943)"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-07-16",
+      "note": "Held by Germany from 1941 to 1943: the Smolensk region; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Smolensk operation (1943) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Smolensk_operation_(1943)"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-09-23",
+   "what": "The Poltava region: taken back by the Red Army",
+   "source": {
+    "title": "Battle of the Dnieper (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_the_Dnieper"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-330"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Battle of the Dnieper (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Dnieper"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-09-18",
+      "note": "Held by Germany from 1941 to 1943: the Poltava region; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Battle of the Dnieper (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Battle_of_the_Dnieper"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-09-21",
+   "what": "The Chernihiv region: taken back by the Red Army",
+   "source": {
+    "title": "Chernigov–Pripyat offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Chernigov–Pripyat_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-285"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Chernigov–Pripyat offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chernigov–Pripyat_offensive"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-09-09",
+      "note": "Held by Germany from 1941 to 1943: the Chernihiv region; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Chernigov–Pripyat offensive (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Chernigov–Pripyat_offensive"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-09-17",
+   "what": "The Bryansk region: taken back by the Red Army",
+   "source": {
+    "title": "Bryansk offensive operation (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Bryansk_offensive_operation"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2342"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Bryansk offensive operation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bryansk_offensive_operation"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-10-06",
+      "note": "Held by Germany from 1941 to 1943: the Bryansk region; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Bryansk offensive operation (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Bryansk_offensive_operation"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-09-08",
+   "what": "The Donbas around Stalino (Donetsk): taken back by the Red Army",
+   "source": {
+    "title": "Donbas strategic offensive (August 1943) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Donbas_strategic_offensive_(August_1943)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-327"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Donbas strategic offensive (August 1943) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Donbas_strategic_offensive_(August_1943)"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-10-21",
+      "note": "Held by Germany from 1941 to 1943: the Donbas around Stalino (Donetsk); front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Donbas strategic offensive (August 1943) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Donbas_strategic_offensive_(August_1943)"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-09-02",
+   "what": "The Sumy region: taken back by the Red Army",
+   "source": {
+    "title": "Battle of the Dnieper (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_the_Dnieper"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-325"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Battle of the Dnieper (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Dnieper"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-10-10",
+      "note": "Held by Germany from 1941 to 1943: the Sumy region; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Battle of the Dnieper (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Battle_of_the_Dnieper"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-08-23",
+   "what": "The Kharkiv region: taken back by the Red Army",
+   "source": {
+    "title": "Fourth Battle of Kharkov (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Fourth_Battle_of_Kharkov"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-328"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Fourth Battle of Kharkov (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Fourth_Battle_of_Kharkov"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-10-24",
+      "note": "Held by Germany from 1941 to 1943: the Kharkiv region; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Fourth Battle of Kharkov (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Fourth_Battle_of_Kharkov"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-08-13",
+   "what": "The western Kaluga region: taken back by the Red Army",
+   "source": {
+    "title": "Smolensk operation (1943) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Smolensk_operation_(1943)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "kaluga-west"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Smolensk operation (1943) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Smolensk_operation_(1943)"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-10-04",
+      "note": "Held by Germany from 1941 to 1943: the western Kaluga region; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Smolensk operation (1943) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Smolensk_operation_(1943)"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-08-05",
+   "what": "The Oryol region: taken back by the Red Army",
+   "source": {
+    "title": "Operation Kutuzov (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Operation_Kutuzov"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2366"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Operation Kutuzov (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Operation_Kutuzov"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-10-03",
+      "note": "Held by Germany from 1941 to 1943: the Oryol region; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Operation Kutuzov (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Operation_Kutuzov"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-08-05",
+   "what": "The Belgorod region: taken back by the Red Army",
+   "source": {
+    "title": "Belgorod–Kharkov offensive operation (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Belgorod–Kharkov_offensive_operation"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2370"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Belgorod–Kharkov offensive operation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Belgorod–Kharkov_offensive_operation"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-10-24",
+      "note": "Held by Germany from 1941 to 1943: the Belgorod region; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Belgorod–Kharkov offensive operation (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Belgorod–Kharkov_offensive_operation"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-03-03",
+   "what": "The Rzhev salient: taken back by the Red Army",
+   "source": {
+    "title": "Battles of Rzhev (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battles_of_Rzhev"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "tver-west"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Battles of Rzhev (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battles_of_Rzhev"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-10-10",
+      "note": "Held by Germany from 1941 to 1943: the Rzhev salient; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Battles of Rzhev (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Battles_of_Rzhev"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-02-14",
+   "what": "The Voroshilovgrad (Luhansk) region: taken back by the Red Army",
+   "source": {
+    "title": "Operation Gallop (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Operation_Gallop"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-329"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Operation Gallop (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Operation_Gallop"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1942-07-17",
+      "note": "Held by Germany from 1942 to 1943: the Voroshilovgrad (Luhansk) region; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Operation Gallop (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Operation_Gallop"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-02-14",
+   "what": "The Rostov region: taken back by the Red Army",
+   "source": {
+    "title": "Battle of Rostov (1943) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Rostov_(1943)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2367"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Battle of Rostov (1943) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Rostov_(1943)"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1942-07-24",
+      "note": "Held by Germany from 1942 to 1943: the Rostov region; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Battle of Rostov (1943) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Battle_of_Rostov_(1943)"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-02-12",
+   "what": "The Kuban (Krasnodar and Adygea): taken back by the Red Army",
+   "source": {
+    "title": "Battle of the Caucasus (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_the_Caucasus"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2371",
+      "RUS-2279"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Battle of the Caucasus (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Caucasus"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1942-08-09",
+      "note": "Held by Germany from 1942 to 1943: the Kuban (Krasnodar and Adygea); front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Battle of the Caucasus (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Battle_of_the_Caucasus"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-02-08",
+   "what": "The Kursk region: taken back by the Red Army",
+   "source": {
+    "title": "Operation Star (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Operation_Star"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2362"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Operation Star (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Operation_Star"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-11-02",
+      "note": "Held by Germany from 1941 to 1943: the Kursk region; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Operation Star (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Operation_Star"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-01-25",
+   "what": "The land west of the Don at Voronezh: taken back by the Red Army",
+   "source": {
+    "title": "Voronezh–Kastornoye offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Voronezh–Kastornoye_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "voronezh-west"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Voronezh–Kastornoye offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Voronezh–Kastornoye_offensive"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1942-07-07",
+      "note": "Held by Germany from 1942 to 1943: the land west of the Don at Voronezh; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Voronezh–Kastornoye offensive (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Voronezh–Kastornoye_offensive"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-01-21",
+   "what": "The Stavropol region: taken back by the Red Army",
+   "source": {
+    "title": "Battle of the Caucasus (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_the_Caucasus"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2306"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Battle of the Caucasus (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Caucasus"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1942-08-03",
+      "note": "Held by Germany from 1942 to 1943: the Stavropol region; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Battle of the Caucasus (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Battle_of_the_Caucasus"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-01-17",
+   "what": "Karachay and Cherkessia: taken back by the Red Army",
+   "source": {
+    "title": "Battle of the Caucasus (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_the_Caucasus"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2280",
+      "klukhori"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Battle of the Caucasus (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Caucasus"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1942-08-12",
+      "note": "Held by Germany from 1942 to 1943: Karachay and Cherkessia; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Battle of the Caucasus (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Battle_of_the_Caucasus"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-01-04",
+   "what": "Kabarda and Balkaria: taken back by the Red Army",
+   "source": {
+    "title": "Battle of the Caucasus (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_the_Caucasus"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2304"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Battle of the Caucasus (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Caucasus"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1942-08-25",
+      "note": "Held by Germany from 1942 to 1943: Kabarda and Balkaria; front lines drawn roughly, by region, as they stood at the end of each year",
+      "source": {
+       "title": "Battle of the Caucasus (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Battle_of_the_Caucasus"
+      },
+      "rough": true,
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1942-08-25",
+   "what": "Kabarda and Balkaria: taken by Germany",
+   "source": {
+    "title": "Battle of the Caucasus (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_the_Caucasus"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2304"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Battle of the Caucasus (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Caucasus"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1942-08-12",
+   "what": "Karachay and Cherkessia: taken by Germany",
+   "source": {
+    "title": "Battle of the Caucasus (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_the_Caucasus"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2280",
+      "klukhori"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Battle of the Caucasus (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Caucasus"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1942-08-09",
+   "what": "The Kuban (Krasnodar and Adygea): taken by Germany",
+   "source": {
+    "title": "Battle of the Caucasus (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_the_Caucasus"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2371",
+      "RUS-2279"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Battle of the Caucasus (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Caucasus"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1942-08-03",
+   "what": "The Stavropol region: taken by Germany",
+   "source": {
+    "title": "Battle of the Caucasus (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_the_Caucasus"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2306"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Battle of the Caucasus (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Caucasus"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1942-07-24",
+   "what": "The Rostov region: taken by Germany",
+   "source": {
+    "title": "Battle of Rostov (1943) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Rostov_(1943)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2367"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Battle of Rostov (1943) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Rostov_(1943)"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1942-07-17",
+   "what": "The Voroshilovgrad (Luhansk) region: taken by Germany",
+   "source": {
+    "title": "Operation Gallop (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Operation_Gallop"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-329"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Operation Gallop (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Operation_Gallop"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1942-07-07",
+   "what": "The land west of the Don at Voronezh: taken by Germany",
+   "source": {
+    "title": "Voronezh–Kastornoye offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Voronezh–Kastornoye_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "voronezh-west"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Voronezh–Kastornoye offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Voronezh–Kastornoye_offensive"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1942-07-04",
+   "what": "Sevastopol, taken after a siege of 250 days: taken by Germany",
+   "source": {
+    "title": "Siege of Sevastopol (1941–1942) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Sevastopol_(1941–1942)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "RUS-5482"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Siege of Sevastopol (1941–1942) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Sevastopol_(1941–1942)"
+     }
+    }
+   ]
+  },
+  {
    "date": "1941-12-02",
    "what": "Soviet forces leave the Hanko naval base, besieged by Finland since June 1941",
    "source": {
@@ -1144,6 +3368,1299 @@
       "source": {
        "title": "Moscow Peace Treaty (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Moscow_Peace_Treaty"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-11-16",
+   "what": "Crimea: taken by Germany",
+   "source": {
+    "title": "Crimean offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Crimean_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "RUS-283"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Crimean offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Crimean_offensive"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-11-02",
+   "what": "The Kursk region: taken by Germany",
+   "source": {
+    "title": "Operation Star (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Operation_Star"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2362"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Operation Star (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Operation_Star"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-10-24",
+   "what": "The Kharkiv region: taken by Germany",
+   "source": {
+    "title": "Fourth Battle of Kharkov (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Fourth_Battle_of_Kharkov"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-328"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Fourth Battle of Kharkov (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Fourth_Battle_of_Kharkov"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-10-24",
+   "what": "The Belgorod region: taken by Germany",
+   "source": {
+    "title": "Belgorod–Kharkov offensive operation (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Belgorod–Kharkov_offensive_operation"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2370"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Belgorod–Kharkov offensive operation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Belgorod–Kharkov_offensive_operation"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-10-21",
+   "what": "The Donbas around Stalino (Donetsk): taken by Germany",
+   "source": {
+    "title": "Donbas strategic offensive (August 1943) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Donbas_strategic_offensive_(August_1943)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-327"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Donbas strategic offensive (August 1943) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Donbas_strategic_offensive_(August_1943)"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-10-16",
+   "what": "Odesa and its region, in the Romanian Transnistria Governorate: taken by Romania",
+   "source": {
+    "title": "Transnistria Governorate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Transnistria_Governorate"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-322"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Transnistria Governorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Transnistria_Governorate"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-10-10",
+   "what": "The Sumy region: taken by Germany",
+   "source": {
+    "title": "Battle of the Dnieper (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_the_Dnieper"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-325"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Battle of the Dnieper (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Dnieper"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-10-10",
+   "what": "The Rzhev salient: taken by Germany",
+   "source": {
+    "title": "Battles of Rzhev (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battles_of_Rzhev"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "tver-west"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Battles of Rzhev (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battles_of_Rzhev"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-10-06",
+   "what": "The Bryansk region: taken by Germany",
+   "source": {
+    "title": "Bryansk offensive operation (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Bryansk_offensive_operation"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2342"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Bryansk offensive operation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bryansk_offensive_operation"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-10-04",
+   "what": "The Zaporizhzhia region: taken by Germany",
+   "source": {
+    "title": "Battle of the Dnieper (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_the_Dnieper"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-331"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Battle of the Dnieper (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Dnieper"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-10-04",
+   "what": "The western Kaluga region: taken by Germany",
+   "source": {
+    "title": "Smolensk operation (1943) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Smolensk_operation_(1943)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "kaluga-west"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Smolensk operation (1943) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Smolensk_operation_(1943)"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-10-03",
+   "what": "The Oryol region: taken by Germany",
+   "source": {
+    "title": "Operation Kutuzov (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Operation_Kutuzov"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2366"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Operation Kutuzov (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Operation_Kutuzov"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-10-01",
+   "what": "East Karelia, with Petrozavodsk (Äänislinna): taken by Finland",
+   "source": {
+    "title": "Finnish occupation of East Karelia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Finnish_occupation_of_East_Karelia"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "east-karelia"
+     ],
+     "owner": "Karelo-Finnish SSR",
+     "source": {
+      "title": "Finnish occupation of East Karelia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Finnish_occupation_of_East_Karelia"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-09-19",
+   "what": "Kyiv and its region: taken by Germany",
+   "source": {
+    "title": "Battle of Kiev (1943) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Kiev_(1943)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-321",
+      "UKR-4826"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Battle of Kiev (1943) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Kiev_(1943)"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-09-18",
+   "what": "The Poltava region: taken by Germany",
+   "source": {
+    "title": "Battle of the Dnieper (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_the_Dnieper"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-330"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Battle of the Dnieper (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Dnieper"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-09-09",
+   "what": "The Chernihiv region: taken by Germany",
+   "source": {
+    "title": "Chernigov–Pripyat offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Chernigov–Pripyat_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-285"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Chernigov–Pripyat offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chernigov–Pripyat_offensive"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-09-08",
+   "what": "The land around besieged Leningrad: taken by Germany",
+   "source": {
+    "title": "Siege of Leningrad (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Leningrad"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "leningrad-occupied"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Siege of Leningrad (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Leningrad"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-08-29",
+   "what": "The Karelian Isthmus with Vyborg, taken back by Finland in 1941: taken by Finland",
+   "source": {
+    "title": "Vyborg–Petrozavodsk offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Vyborg–Petrozavodsk_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "karelian-isthmus"
+     ],
+     "owner": "Karelo-Finnish SSR",
+     "source": {
+      "title": "Vyborg–Petrozavodsk offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Vyborg–Petrozavodsk_offensive"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-08-28",
+   "what": "Estonia: taken by Germany",
+   "source": {
+    "title": "German occupation of Estonia during World War II (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/German_occupation_of_Estonia_during_World_War_II"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "EST",
+      "pechory",
+      "ivangorod"
+     ],
+     "owner": "Estonia",
+     "source": {
+      "title": "German occupation of Estonia during World War II (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/German_occupation_of_Estonia_during_World_War_II"
+     },
+     "hatch": {
+      "by": "Soviet Union",
+      "since": "1940-06-17",
+      "note": "Occupied by the Soviet Union in June 1940 and annexed in August 1940; most Western states never recognised the annexation",
+      "source": {
+       "title": "Occupation of the Baltic states (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Occupation_of_the_Baltic_states"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-08-25",
+   "what": "The Dnipropetrovsk region: taken by Germany",
+   "source": {
+    "title": "Battle of the Dnieper (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_the_Dnieper"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-326"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Battle of the Dnieper (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Dnieper"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-08-22",
+   "what": "The Cherkasy region: taken by Germany",
+   "source": {
+    "title": "Battle of the Korsun–Cherkassy Pocket (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_the_Korsun–Cherkassy_Pocket"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-319"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Battle of the Korsun–Cherkassy Pocket (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Korsun–Cherkassy_Pocket"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-08-19",
+   "what": "The left bank of the Dniester, in the Romanian Transnistria Governorate: taken by Romania",
+   "source": {
+    "title": "Transnistria Governorate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Transnistria_Governorate"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "MDA-1652",
+      "MDA-1645",
+      "MDA-1628",
+      "MDA-1637",
+      "MDA-1638",
+      "MDA-1650"
+     ],
+     "owner": "Moldova",
+     "source": {
+      "title": "Transnistria Governorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Transnistria_Governorate"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-08-19",
+   "what": "The Kherson region: taken by Germany",
+   "source": {
+    "title": "Bereznegovatoye–Snigirevka offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Bereznegovatoye–Snigirevka_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-4827"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Bereznegovatoye–Snigirevka offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bereznegovatoye–Snigirevka_offensive"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-08-19",
+   "what": "The Gomel region: taken by Germany",
+   "source": {
+    "title": "Gomel–Rechitsa offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Gomel–Rechitsa_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "BLR-2339"
+     ],
+     "owner": "Belarus",
+     "source": {
+      "title": "Gomel–Rechitsa offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gomel–Rechitsa_offensive"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-08-19",
+   "what": "The Novgorod region: taken by Germany",
+   "source": {
+    "title": "Leningrad–Novgorod offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Leningrad–Novgorod_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2334"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Leningrad–Novgorod offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Leningrad–Novgorod_offensive"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-08-16",
+   "what": "The Mykolaiv region: taken by Germany",
+   "source": {
+    "title": "Odessa offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Odessa_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-284"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Odessa offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Odessa_offensive"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-08-16",
+   "what": "Ladoga Karelia and the Kuusamo strip, taken back by Finland in 1941: taken by Finland",
+   "source": {
+    "title": "Continuation War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Continuation_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ladoga-karelia",
+      "salla-kuusamo"
+     ],
+     "owner": "Karelo-Finnish SSR",
+     "source": {
+      "title": "Continuation War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Continuation_War"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-08-05",
+   "what": "The Kirovohrad region: taken by Germany",
+   "source": {
+    "title": "Kirovograd offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kirovograd_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-320"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Kirovograd offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kirovograd_offensive"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-07-26",
+   "what": "The Mogilev region: taken by Germany",
+   "source": {
+    "title": "Mogilev offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Mogilev_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "BLR-2340"
+     ],
+     "owner": "Belarus",
+     "source": {
+      "title": "Mogilev offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mogilev_offensive"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-07-25",
+   "what": "The Budjak, taken back by Romania in 1941: taken by Romania",
+   "source": {
+    "title": "Jassy–Kishinev offensive (August 1944) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Jassy–Kishinev_offensive_(August_1944)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "budjak"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Jassy–Kishinev offensive (August 1944) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Jassy–Kishinev_offensive_(August_1944)"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-07-19",
+   "what": "The Vinnytsia region: taken by Germany",
+   "source": {
+    "title": "Uman–Botoșani offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Uman–Botoșani_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-323"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Uman–Botoșani offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Uman–Botoșani_offensive"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-07-16",
+   "what": "Bessarabia, taken back by Romania in 1941: taken by Romania",
+   "source": {
+    "title": "Jassy–Kishinev offensive (August 1944) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Jassy–Kishinev_offensive_(August_1944)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "MDA-1613",
+      "MDA-1614",
+      "MDA-1615",
+      "MDA-1616",
+      "MDA-1617",
+      "MDA-1618",
+      "MDA-1619",
+      "MDA-1620",
+      "MDA-1621",
+      "MDA-1622",
+      "MDA-1623",
+      "MDA-1624",
+      "MDA-1625",
+      "MDA-1626",
+      "MDA-1627",
+      "MDA-1629",
+      "MDA-1630",
+      "MDA-1631",
+      "MDA-1632",
+      "MDA-1633",
+      "MDA-1634",
+      "MDA-1635",
+      "MDA-1639",
+      "MDA-1640",
+      "MDA-1641",
+      "MDA-1642",
+      "MDA-1643",
+      "MDA-1644",
+      "MDA-1646",
+      "MDA-1647",
+      "MDA-1648",
+      "MDA-1649",
+      "MDA-1651",
+      "MDA-1653"
+     ],
+     "owner": "Moldova",
+     "source": {
+      "title": "Jassy–Kishinev offensive (August 1944) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Jassy–Kishinev_offensive_(August_1944)"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-07-16",
+   "what": "The Smolensk region: taken by Germany",
+   "source": {
+    "title": "Smolensk operation (1943) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Smolensk_operation_(1943)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2343"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Smolensk operation (1943) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Smolensk_operation_(1943)"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-07-11",
+   "what": "The Vitebsk region: taken by Germany",
+   "source": {
+    "title": "Vitebsk–Orsha offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Vitebsk–Orsha_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "BLR-2341"
+     ],
+     "owner": "Belarus",
+     "source": {
+      "title": "Vitebsk–Orsha offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Vitebsk–Orsha_offensive"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-07-09",
+   "what": "The Zhytomyr region: taken by Germany",
+   "source": {
+    "title": "Zhitomir–Berdichev offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Zhitomir–Berdichev_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-324"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Zhitomir–Berdichev offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Zhitomir–Berdichev_offensive"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-07-09",
+   "what": "The Pskov region: taken by Germany",
+   "source": {
+    "title": "Pskov–Ostrov offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Pskov–Ostrov_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2335"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Pskov–Ostrov offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pskov–Ostrov_offensive"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-07-08",
+   "what": "The Kamianets-Podilskyi region: taken by Germany",
+   "source": {
+    "title": "Proskurov–Chernovtsy offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Proskurov–Chernovtsy_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-290"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Proskurov–Chernovtsy offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Proskurov–Chernovtsy_offensive"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-07-08",
+   "what": "Salla, taken back by Finland in 1941: taken by Finland",
+   "source": {
+    "title": "Continuation War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Continuation_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "salla"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Continuation War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Continuation_War"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-07-05",
+   "what": "Northern Bukovina, taken back by Romania in 1941: taken by Romania",
+   "source": {
+    "title": "Proskurov–Chernovtsy offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Proskurov–Chernovtsy_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-288"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Proskurov–Chernovtsy offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Proskurov–Chernovtsy_offensive"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-07-02",
+   "what": "The Ternopil region: taken by Germany",
+   "source": {
+    "title": "Proskurov–Chernovtsy offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Proskurov–Chernovtsy_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-292"
+     ],
+     "owner": "Poland",
+     "source": {
+      "title": "Proskurov–Chernovtsy offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Proskurov–Chernovtsy_offensive"
+     },
+     "hatch": {
+      "by": "Soviet Union",
+      "since": "1939-09-17",
+      "note": "Polish land taken by the Soviet invasion of September 1939 and annexed in November 1939; held by Germany from 1941 to 1944; Poland accepted the new border in August 1945",
+      "source": {
+       "title": "Soviet invasion of Poland (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Soviet_invasion_of_Poland"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-07-01",
+   "what": "Latvia: taken by Germany",
+   "source": {
+    "title": "German occupation of Latvia during World War II (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/German_occupation_of_Latvia_during_World_War_II"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "LVA-1063",
+      "LVA-1064",
+      "LVA-1065",
+      "LVA-1066",
+      "LVA-1076",
+      "LVA-1077",
+      "LVA-1079",
+      "LVA-1080",
+      "LVA-1081",
+      "LVA-1082",
+      "LVA-1083",
+      "LVA-1084",
+      "LVA-1085",
+      "LVA-1086",
+      "LVA-1087",
+      "LVA-1088",
+      "LVA-1089",
+      "LVA-1093",
+      "LVA-1094",
+      "LVA-4849",
+      "LVA-4850",
+      "LVA-4851",
+      "LVA-5724",
+      "LVA-5725",
+      "LVA-5726",
+      "LVA-5727",
+      "LVA-5728",
+      "LVA-5729",
+      "LVA-5730",
+      "LVA-5731",
+      "LVA-5732",
+      "LVA-5733",
+      "LVA-5734",
+      "LVA-5735",
+      "LVA-5736",
+      "LVA-5737",
+      "LVA-5738",
+      "LVA-5739",
+      "LVA-5741",
+      "LVA-5742",
+      "LVA-5743",
+      "LVA-5744",
+      "LVA-5745",
+      "LVA-5746",
+      "LVA-5747",
+      "LVA-5748",
+      "LVA-5749",
+      "LVA-5750",
+      "LVA-5751",
+      "LVA-5752",
+      "LVA-5753",
+      "LVA-5754",
+      "LVA-5755",
+      "LVA-5756",
+      "LVA-5757",
+      "LVA-5758",
+      "LVA-5759",
+      "LVA-5760",
+      "LVA-5761",
+      "LVA-5762",
+      "LVA-5764",
+      "LVA-5766",
+      "LVA-5767",
+      "LVA-5768",
+      "LVA-5769",
+      "LVA-5770",
+      "LVA-5771",
+      "LVA-5772",
+      "LVA-5773",
+      "LVA-5774",
+      "LVA-5775",
+      "LVA-5776",
+      "LVA-5777",
+      "LVA-5778",
+      "LVA-5780",
+      "LVA-5781",
+      "LVA-5782",
+      "LVA-5783",
+      "LVA-5784",
+      "LVA-5785",
+      "LVA-5786",
+      "LVA-5787",
+      "LVA-5788",
+      "LVA-5789",
+      "LVA-5790",
+      "LVA-5791",
+      "LVA-5792",
+      "LVA-5793",
+      "LVA-5794",
+      "LVA-5795",
+      "LVA-5796",
+      "LVA-5797",
+      "LVA-5798",
+      "LVA-5799",
+      "LVA-5800",
+      "abrene"
+     ],
+     "owner": "Latvia",
+     "source": {
+      "title": "German occupation of Latvia during World War II (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/German_occupation_of_Latvia_during_World_War_II"
+     },
+     "hatch": {
+      "by": "Soviet Union",
+      "since": "1940-06-17",
+      "note": "Occupied by the Soviet Union in June 1940 and annexed in August 1940; most Western states never recognised the annexation",
+      "source": {
+       "title": "Occupation of the Baltic states (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Occupation_of_the_Baltic_states"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-07-01",
+   "what": "Courland (the Courland Pocket from October 1944 to May 1945): taken by Germany",
+   "source": {
+    "title": "Courland Pocket (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Courland_Pocket"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "LVA-1068",
+      "LVA-5718",
+      "LVA-5715",
+      "LVA-5713",
+      "LVA-5740",
+      "LVA-5717",
+      "LVA-4848",
+      "LVA-5716",
+      "LVA-5719",
+      "LVA-934",
+      "LVA-4852",
+      "LVA-5721",
+      "LVA-5722",
+      "LVA-1091",
+      "LVA-5723",
+      "LVA-5714",
+      "LVA-5709",
+      "LVA-5710",
+      "LVA-5712",
+      "LVA-5765",
+      "LVA-1092",
+      "LVA-5763",
+      "LVA-5711",
+      "LVA-5720"
+     ],
+     "owner": "Latvia",
+     "source": {
+      "title": "Courland Pocket (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Courland_Pocket"
+     },
+     "hatch": {
+      "by": "Soviet Union",
+      "since": "1940-06-17",
+      "note": "Occupied by the Soviet Union in June 1940 and annexed in August 1940; most Western states never recognised the annexation",
+      "source": {
+       "title": "Occupation of the Baltic states (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Occupation_of_the_Baltic_states"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-06-30",
+   "what": "Eastern Galicia: taken by Germany",
+   "source": {
+    "title": "Lvov–Sandomierz offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Lvov–Sandomierz_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-291",
+      "UKR-289"
+     ],
+     "owner": "Poland",
+     "source": {
+      "title": "Lvov–Sandomierz offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lvov–Sandomierz_offensive"
+     },
+     "hatch": {
+      "by": "Soviet Union",
+      "since": "1939-09-17",
+      "note": "Polish land taken by the Soviet invasion of September 1939 and annexed in November 1939; held by Germany from 1941 to 1944; Poland accepted the new border in August 1945",
+      "source": {
+       "title": "Soviet invasion of Poland (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Soviet_invasion_of_Poland"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-06-28",
+   "what": "The Rivne region: taken by Germany",
+   "source": {
+    "title": "Rovno–Lutsk offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Rovno–Lutsk_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "UKR-286"
+     ],
+     "owner": "Poland",
+     "source": {
+      "title": "Rovno–Lutsk offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Rovno–Lutsk_offensive"
+     },
+     "hatch": {
+      "by": "Soviet Union",
+      "since": "1939-09-17",
+      "note": "Polish land taken by the Soviet invasion of September 1939 and annexed in November 1939; held by Germany from 1941 to 1944; Poland accepted the new border in August 1945",
+      "source": {
+       "title": "Soviet invasion of Poland (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Soviet_invasion_of_Poland"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-06-28",
+   "what": "The Minsk region: taken by Germany",
+   "source": {
+    "title": "Minsk offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Minsk_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "BLR-2345",
+      "BLR-4825"
+     ],
+     "owner": "Belarus",
+     "source": {
+      "title": "Minsk offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Minsk_offensive"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-06-26",
+   "what": "The Wilno lands of north-western Belarus: taken by Germany",
+   "source": {
+    "title": "Operation Bagration (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Operation_Bagration"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "west-minsk",
+      "west-vitebsk"
+     ],
+     "owner": "Poland",
+     "source": {
+      "title": "Operation Bagration (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Operation_Bagration"
+     },
+     "hatch": {
+      "by": "Soviet Union",
+      "since": "1939-09-17",
+      "note": "Polish land taken by the Soviet invasion of September 1939 and annexed in November 1939; held by Germany from 1941 to 1944; Poland accepted the new border in August 1945",
+      "source": {
+       "title": "Soviet invasion of Poland (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Soviet_invasion_of_Poland"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-06-24",
+   "what": "Lithuania: taken by Germany",
+   "source": {
+    "title": "German occupation of Lithuania during World War II (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/German_occupation_of_Lithuania_during_World_War_II"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "LTU"
+     ],
+     "owner": "Lithuania",
+     "source": {
+      "title": "German occupation of Lithuania during World War II (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/German_occupation_of_Lithuania_during_World_War_II"
+     },
+     "hatch": {
+      "by": "Soviet Union",
+      "since": "1940-06-17",
+      "note": "Occupied by the Soviet Union in June 1940 and annexed in August 1940; most Western states never recognised the annexation",
+      "source": {
+       "title": "Occupation of the Baltic states (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Occupation_of_the_Baltic_states"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "memel"
+     ],
+     "owner": "Germany",
+     "source": {
+      "title": "Klaipėda Region (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Klaipėda_Region"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-06-24",
+   "what": "The Grodno region: taken by Germany",
+   "source": {
+    "title": "Operation Bagration (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Operation_Bagration"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "BLR-2344"
+     ],
+     "owner": "Poland",
+     "source": {
+      "title": "Operation Bagration (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Operation_Bagration"
+     },
+     "hatch": {
+      "by": "Soviet Union",
+      "since": "1939-09-17",
+      "note": "Polish land taken by the Soviet invasion of September 1939 and annexed in November 1939; held by Germany from 1941 to 1944; Poland accepted the new border in August 1945",
+      "source": {
+       "title": "Soviet invasion of Poland (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Soviet_invasion_of_Poland"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-06-22",
+   "what": "The Brest and Volhynia regions: taken by Germany",
+   "source": {
+    "title": "Operation Bagration (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Operation_Bagration"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "BLR-2338",
+      "UKR-318"
+     ],
+     "owner": "Poland",
+     "source": {
+      "title": "Operation Bagration (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Operation_Bagration"
+     },
+     "hatch": {
+      "by": "Soviet Union",
+      "since": "1939-09-17",
+      "note": "Polish land taken by the Soviet invasion of September 1939 and annexed in November 1939; held by Germany from 1941 to 1944; Poland accepted the new border in August 1945",
+      "source": {
+       "title": "Soviet invasion of Poland (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Soviet_invasion_of_Poland"
       }
      }
     }
