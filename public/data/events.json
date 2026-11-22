@@ -9739,6 +9739,122 @@
    "summary": "A revolt at Multan in April 1848 grows into a new war between the Sikh army and the East India Company. After the bloody draw at Chillianwala, the Sikhs are crushed at Gujrat on 21 February 1849. On 29 March Lord Dalhousie annexes the Punjab; the boy maharaja Duleep Singh is deposed and the Koh-i-Noor diamond goes to Queen Victoria.",
    "wikipedia": "Second_Anglo-Sikh_War",
    "search": "Second Anglo-Sikh War 1848 1849 Multan revolt Mulraj Chillianwala Gujrat 21 February 1849 Lord Dalhousie annexation of the Punjab 29 March 1849 Duleep Singh Koh-i-Noor"
+  },
+  {
+   "id": "falklands-1833",
+   "kind": "empire",
+   "year": 1833,
+   "title": "Britain reasserts its sovereignty over the Falkland Islands, 3 January 1833",
+   "place": "Port Louis, Falkland Islands",
+   "lonLat": [
+    -58.0,
+    -51.55
+   ],
+   "civs": [
+    "argentina",
+    "falkland-islands",
+    "united-kingdom"
+   ],
+   "summary": "Buenos Aires had sent a governor and a garrison to the Falklands, which Britain also claimed. On 2 and 3 January 1833 the British warships Clio and Tyne arrive at Port Louis and the small Argentine garrison leaves without a fight. The islands become a British colony; Argentina has claimed them as the Malvinas ever since.",
+   "wikipedia": "Reassertion_of_British_sovereignty_over_the_Falkland_Islands_(1833)",
+   "search": "Falkland Islands 1833 Malvinas reassertion British sovereignty 3 January 1833 HMS Clio HMS Tyne John Onslow Buenos Aires garrison Pinedo Luis Vernet Port Louis Argentina claim"
+  },
+  {
+   "id": "coorg-war-1834",
+   "kind": "war",
+   "year": 1834,
+   "title": "The Coorg War: the East India Company annexes Coorg, 1834",
+   "place": "Madikeri",
+   "lonLat": [
+    75.74,
+    12.42
+   ],
+   "civs": [
+    "kingdom-of-coorg",
+    "company-rule-in-india",
+    "india",
+    "united-kingdom"
+   ],
+   "summary": "The East India Company accuses Chikka Virarajendra, the raja of the small hill kingdom of Coorg, of cruelty and of plotting against it. Its troops invade in April 1834 and take the capital, Mercara (Madikeri), after a short campaign. The raja is deposed and exiled, and Coorg is annexed in May “at the wish of the people”; it stays a province of its own until it joins Mysore in 1956.",
+   "wikipedia": "Coorg_War",
+   "search": "Coorg War 1834 Kodagu Chikka Virarajendra Madikeri Mercara James Lindesay annexation East India Company Kingdom of Coorg Karnataka"
+  },
+  {
+   "id": "slavery-abolition-1834",
+   "kind": "idea",
+   "year": 1834,
+   "title": "Slavery ends in the British Empire, 1 August 1834",
+   "place": "London",
+   "lonLat": [
+    -0.13,
+    51.5
+   ],
+   "civs": [
+    "united-kingdom",
+    "jamaica"
+   ],
+   "summary": "The Slavery Abolition Act, passed in 1833, takes effect on 1 August 1834 and frees about 800,000 enslaved people in the British colonies, most of them in the Caribbean. Freed people over six must first serve as unpaid “apprentices” until 1838, while slave owners receive £20 million in compensation, about 40% of the government’s yearly budget. The Company’s lands in India, Ceylon and Saint Helena are left out at first.",
+   "wikipedia": "Slavery_Abolition_Act_1833",
+   "search": "Slavery Abolition Act 1833 1 August 1834 emancipation British Empire West Indies Jamaica apprenticeship 1838 compensation slave owners 20 million pounds Wilberforce Buxton"
+  },
+  {
+   "id": "pitcairn-constitution-1838",
+   "kind": "idea",
+   "year": 1838,
+   "title": "Pitcairn Island’s constitution gives women the vote, 29 November 1838",
+   "place": "Adamstown",
+   "lonLat": [
+    -130.1,
+    -25.066
+   ],
+   "civs": [
+    "pitcairn-islands",
+    "united-kingdom"
+   ],
+   "summary": "Pitcairn, a tiny Pacific island settled by the Bounty mutineers and their Tahitian companions, asks a passing British captain, Russell Elliott of HMS Fly, for protection against whalers. On 29 November 1838 he draws up a short constitution that places the island under the British flag and lets every islander over 18, women included, elect a magistrate. It is one of the first laws anywhere to give women the vote.",
+   "wikipedia": "Pitcairn_Islands",
+   "search": "Pitcairn Islands 1838 constitution women vote suffrage Captain Russell Elliott HMS Fly Bounty mutineers descendants Adamstown British protection"
+  },
+  {
+   "id": "aden-taken-1839",
+   "kind": "war",
+   "year": 1839,
+   "title": "Britain takes Aden, 19 January 1839",
+   "place": "Aden",
+   "lonLat": [
+    45.03,
+    12.79
+   ],
+   "civs": [
+    "sultanate-of-lahej",
+    "company-rule-in-india",
+    "aden-colony",
+    "yemen",
+    "united-kingdom"
+   ],
+   "summary": "Looking for a coaling station on the steamer route to India, the East India Company uses the plundering of a wrecked ship as a pretext against the Sultan of Lahej. On 19 January 1839 Royal Navy ships and Company troops under Captain Stafford Haines storm the small port of Aden. It is ruled from Bombay as part of British India until 1937 and grows into one of the world’s busiest ports.",
+   "wikipedia": "Aden_Province",
+   "search": "Aden 1839 capture 19 January 1839 Stafford Haines Sultan of Lahej Muhsin bin Fadl Duria Daulat shipwreck Bombay Presidency coaling station Red Sea route India"
+  },
+  {
+   "id": "brooke-rajah-of-sarawak-1841",
+   "kind": "empire",
+   "year": 1841,
+   "title": "James Brooke becomes the White Rajah of Sarawak, 24 September 1841",
+   "place": "Kuching",
+   "lonLat": [
+    110.34,
+    1.55
+   ],
+   "civs": [
+    "brunei",
+    "raj-of-sarawak",
+    "malaysia",
+    "united-kingdom"
+   ],
+   "summary": "The English adventurer James Brooke helps the Bruneian prince Pengiran Muda Hashim put down a revolt in Sarawak. In return the Sultan of Brunei makes him Rajah of Sarawak on 24 September 1841, around the town of Kuching. His family, the “White Rajahs”, grow the Raj step by step at Brunei’s expense and rule it for a century, under British protection from 1888, until it becomes a Crown colony in 1946.",
+   "wikipedia": "Raj_of_Sarawak",
+   "search": "James Brooke White Rajah Sarawak 24 September 1841 Kuching Brunei Pengiran Muda Hashim Omar Ali Saifuddin II Land Dayak revolt Brooke dynasty Charles Vyner Brooke 1946"
   }
  ]
 }
