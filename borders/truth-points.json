@@ -14745,6 +14745,215 @@
    ],
    "realm": "Austria",
    "why": "Lemberg, capital of Galicia"
+  },
+  {
+   "place": "Yerevan (Persian, 1826)",
+   "lonLat": [
+    44.51,
+    40.18
+   ],
+   "years": [
+    1815,
+    1826
+   ],
+   "realm": "Iran",
+   "why": "Capital of the Erivan Khanate until 1827"
+  },
+  {
+   "place": "Yerevan (Russian, 1828)",
+   "lonLat": [
+    44.51,
+    40.18
+   ],
+   "years": [
+    1828,
+    1916
+   ],
+   "realm": "Russia",
+   "why": "Armenian Oblast, then Erivan Governorate"
+  },
+  {
+   "place": "Nakhchivan (Persian, 1826)",
+   "lonLat": [
+    45.41,
+    39.21
+   ],
+   "years": [
+    1815,
+    1826
+   ],
+   "realm": "Iran",
+   "why": "Nakhchivan Khanate until 1827"
+  },
+  {
+   "place": "Akhaltsikhe (Ottoman, 1827)",
+   "lonLat": [
+    42.98,
+    41.64
+   ],
+   "years": [
+    1815,
+    1827
+   ],
+   "realm": "Ottoman Empire",
+   "why": "Ottoman pashalik until 1828"
+  },
+  {
+   "place": "Akhaltsikhe (Russian, 1829)",
+   "lonLat": [
+    42.98,
+    41.64
+   ],
+   "years": [
+    1829,
+    1916
+   ],
+   "realm": "Russia",
+   "why": "Russian from the Treaty of Adrianople"
+  },
+  {
+   "place": "Ozurgeti (Guria, 1820)",
+   "lonLat": [
+    42.0,
+    41.92
+   ],
+   "years": [
+    1815,
+    1828
+   ],
+   "realm": "Principality of Guria",
+   "why": "Capital of the Principality of Guria",
+   "heldBy": [
+    {
+     "years": [
+      1815,
+      1828
+     ],
+     "by": "Russia"
+    }
+   ]
+  },
+  {
+   "place": "Zugdidi (Mingrelia, 1850)",
+   "lonLat": [
+    41.87,
+    42.51
+   ],
+   "years": [
+    1815,
+    1866
+   ],
+   "realm": "Principality of Mingrelia",
+   "why": "Capital of the Principality of Mingrelia",
+   "heldBy": [
+    {
+     "years": [
+      1815,
+      1866
+     ],
+     "by": "Russia"
+    }
+   ]
+  },
+  {
+   "place": "Sukhumi (Abkhazia, 1850)",
+   "lonLat": [
+    41.02,
+    43.0
+   ],
+   "years": [
+    1815,
+    1863
+   ],
+   "realm": "Principality of Abkhazia",
+   "why": "Principality of Abkhazia, under Russian protection",
+   "heldBy": [
+    {
+     "years": [
+      1815,
+      1863
+     ],
+     "by": "Russia"
+    }
+   ]
+  },
+  {
+   "place": "Gunib (Imamate, 1850)",
+   "lonLat": [
+    46.96,
+    42.39
+   ],
+   "years": [
+    1829,
+    1858
+   ],
+   "realm": "Caucasian Imamate",
+   "why": "Shamil's last stronghold"
+  },
+  {
+   "place": "Vedeno (Imamate, 1850)",
+   "lonLat": [
+    46.1,
+    42.97
+   ],
+   "years": [
+    1840,
+    1858
+   ],
+   "realm": "Caucasian Imamate",
+   "why": "Shamil's capital in Chechnya"
+  },
+  {
+   "place": "Tbilisi (Russian, 1815)",
+   "lonLat": [
+    44.8,
+    41.72
+   ],
+   "years": [
+    1815,
+    1917
+   ],
+   "realm": "Russia",
+   "why": "Seat of the Russian viceroy of the Caucasus"
+  },
+  {
+   "place": "Baku (Russian, 1815)",
+   "lonLat": [
+    49.87,
+    40.4
+   ],
+   "years": [
+    1815,
+    1917
+   ],
+   "realm": "Russia",
+   "why": "Russian since 1806"
+  },
+  {
+   "place": "Kars (Ottoman, 1830)",
+   "lonLat": [
+    43.1,
+    40.6
+   ],
+   "years": [
+    1829,
+    1854
+   ],
+   "realm": "Ottoman Empire",
+   "why": "Ottoman between the wars"
+  },
+  {
+   "place": "Batumi (Ottoman, 1850)",
+   "lonLat": [
+    41.64,
+    41.64
+   ],
+   "years": [
+    1815,
+    1877
+   ],
+   "realm": "Ottoman Empire",
+   "why": "Ottoman until 1878"
   }
  ]
 }
