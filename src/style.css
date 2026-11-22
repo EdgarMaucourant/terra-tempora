@@ -115,30 +115,60 @@ input {
   white-space: pre-line;
 }
 
-/* The short label is for phones, where the way back shares a row with the toolbar. */
-.back-short {
-  display: none;
-}
-
-.back {
+/* The breadcrumb: World › the country or realm shown › a territory in it. */
+.crumbs {
   display: inline-flex;
-  align-items: center;
+  max-width: 100%;
   min-height: 32px;
   padding: 0 12px;
   border: 1px solid var(--line);
   border-radius: 999px;
   background: var(--panel);
   backdrop-filter: blur(10px);
-  color: var(--ink);
   font-size: 13px;
   font-weight: 500;
-  text-decoration: none;
   text-shadow: none;
   pointer-events: auto;
 }
 
-.back:hover {
-  border-color: rgba(214, 220, 228, 0.32);
+.crumbs ol {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.crumbs li {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  white-space: nowrap;
+}
+
+.crumbs li + li::before {
+  content: "›";
+  margin: 0 7px;
+  color: var(--ink-soft);
+}
+
+.crumb {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--ink);
+}
+
+a.crumb {
+  color: var(--ink-soft);
+  text-decoration: none;
+}
+
+a.crumb:hover,
+a.crumb:focus-visible {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 
@@ -2682,22 +2712,38 @@ a {
     gap: 6px;
   }
 
-  .back-long {
+  /* Phones show only the step back, "← World" or "← French Indochina"; the
+     title under it names where you are. */
+  .crumbs li:not(.crumb-parent) {
     display: none;
   }
 
-  .back-short {
-    display: inline;
+  .crumbs li + li::before {
+    content: none;
   }
 
-  .back,
+  /* It shares the row with the toolbar and stops short of it (6px gap,
+     plus its own padding and border). */
+  .crumbs {
+    max-width: calc(100% - var(--toolbar-width, 230px) - 30px);
+  }
+
+  .crumbs .crumb-parent a::before {
+    content: "← ";
+  }
+
+  .crumbs a.crumb {
+    color: var(--ink);
+  }
+
+  .crumbs,
   .toolbar .switch,
   .toolbar .language select {
     min-height: 34px;
     font-size: 13px;
   }
 
-  .back,
+  .crumbs,
   .toolbar .switch {
     padding: 0 10px;
   }
@@ -3778,7 +3824,7 @@ a {
   }
 }
 
-.home .back,
+.home .crumbs,
 .home #view-focus,
 .home .switch[for="context-toggle"],
 .traveling .explore-menu,

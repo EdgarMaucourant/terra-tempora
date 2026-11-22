@@ -168,8 +168,7 @@
     "whyItMatters": "Por qué importa"
   },
   "masthead": {
-    "back": "← El mundo entero",
-    "backShort": "← Mundo",
+    "crumbs": "Dónde está",
     "focusLabel": "Mostrar los años de {name}",
     "more": {
       "one": "{first}, {second} y {count} más",
@@ -179,7 +178,8 @@
       "one": "{count} civilización · {years}",
       "other": "{count} civilizaciones · {years}"
     },
-    "two": "{first} y {second}"
+    "two": "{first} y {second}",
+    "world": "Mundo"
   },
   "toolbar": {
     "otherRealms": "Otros reinos",

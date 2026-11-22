@@ -120,7 +120,11 @@
       <canvas id="map" class="map" hidden role="img" aria-label="Flat map showing the realms of the chosen year" data-i18n-label="map.label"></canvas>
 
       <header class="masthead">
-        <a id="back" class="back" href="#"><span class="back-long" data-i18n="masthead.back">← Whole world</span><span class="back-short" data-i18n="masthead.backShort">← World</span></a>
+        <nav id="crumbs" class="crumbs" aria-label="Where you are" data-i18n-label="masthead.crumbs">
+          <ol>
+            <li><a id="back" class="crumb" href="#" data-i18n="masthead.world">World</a></li>
+          </ol>
+        </nav>
         <div class="title-row">
           <div class="explore-menu">
             <button id="explore-toggle" class="burger" type="button" aria-expanded="false" aria-controls="explore-list" aria-label="Menu" data-i18n-label="home.menu">
