@@ -287,6 +287,9 @@
  "north-western-rhodesia": {
   "name": "Rodesia del Noroeste"
  },
+ "sikh-empire": {
+  "name": "Imperio sij"
+ },
  "trust-territory-of-somaliland": {
   "name": "Territorio en fideicomiso de Somalia"
  },
@@ -316,9 +319,6 @@
  },
  "sweden": {
   "name": "Suecia"
- },
- "sikh-empire": {
-  "name": "Imperio sij"
  },
  "iraq": {
   "name": "Irak"
@@ -559,6 +559,9 @@
  },
  "nicaragua": {
   "name": "Nicaragua"
+ },
+ "brunei": {
+  "name": "Brunéi"
  },
  "crown-colony-of-sarawak": {
   "name": "Colonia de Sarawak"
@@ -935,6 +938,9 @@
  "mandatory-lebanon": {
   "name": "Líbano bajo mandato francés"
  },
+ "kingdom-of-sikkim": {
+  "name": "Reino de Sikkim"
+ },
  "british-cyprus": {
   "name": "Chipre británico"
  },
@@ -943,9 +949,6 @@
  },
  "puerto-rico": {
   "name": "Puerto Rico"
- },
- "kingdom-of-sikkim": {
-  "name": "Reino de Sikkim"
  },
  "selangor": {
   "name": "Selangor"
@@ -965,11 +968,11 @@
  "palestine": {
   "name": "Palestina"
  },
+ "kingdom-of-coorg": {
+  "name": "Reino de Coorg"
+ },
  "west-bank": {
   "name": "Cisjordania"
- },
- "brunei": {
-  "name": "Brunéi"
  },
  "hatay-state": {
   "name": "Estado de Hatay"
@@ -1123,6 +1126,9 @@
  },
  "aden-colony": {
   "name": "Colonia de Adén"
+ },
+ "sultanate-of-lahej": {
+  "name": "Sultanato de Lahej"
  },
  "singapore": {
   "name": "Singapur"
