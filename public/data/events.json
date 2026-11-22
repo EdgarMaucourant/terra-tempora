@@ -10225,6 +10225,136 @@
    "summary": "On 27 September 2020 Azerbaijan, backed by Turkey and armed with drones, attacks the Armenian-held land around Nagorno-Karabakh. In 44 days it retakes the southern districts, Hadrut and the fortress town of Shusha; a ceasefire brokered by Russia on 10 November hands back Agdam, Kalbajar and Lachin and sends Russian peacekeepers to guard what is left. After a nine-month blockade of the Lachin corridor, a one-day offensive on 19-20 September 2023 forces Artsakh to disarm, and nearly all of its 100,000 Armenians flee to Armenia.",
    "wikipedia": "2020_Nagorno-Karabakh_war",
    "search": "2020 Nagorno-Karabakh war 44-day war Shusha Hadrut ceasefire 10 November 2020 Russian peacekeepers Lachin corridor blockade 2023 Azerbaijani offensive Artsakh dissolved exodus"
+  },
+  {
+   "id": "iran-crisis-1946",
+   "kind": "war",
+   "year": 1946,
+   "title": "Soviet troops leave northern Iran and Manchuria, 1946",
+   "place": "Tabriz",
+   "lonLat": [
+    46.29,
+    38.08
+   ],
+   "civs": [
+    "iran",
+    "soviet-union"
+   ],
+   "summary": "British and Soviet forces had occupied Iran in 1941 and promised to leave six months after the war. The British go by March 1946, but Soviet troops stay in the north, where Moscow backs an Azerbaijani government in Tabriz and a Kurdish republic at Mahabad. After the first complaint ever brought to the UN Security Council and a promise of oil concessions, the last Soviet troops leave in May 1946, the same spring they leave Manchuria; Iranian forces retake Tabriz in December.",
+   "wikipedia": "Iran_crisis_of_1946",
+   "search": "Iran crisis of 1946 Azerbaijan People's Government Mahabad Republic Soviet troops withdrawal May 1946 Qavam UN Security Council Manchuria withdrawal"
+  },
+  {
+   "id": "transfer-of-crimea-1954",
+   "kind": "treaty",
+   "year": 1954,
+   "title": "Crimea is moved to the Ukrainian SSR, 19 February 1954",
+   "place": "Yalta",
+   "lonLat": [
+    34.16,
+    44.5
+   ],
+   "civs": [
+    "ukraine",
+    "russia",
+    "soviet-union"
+   ],
+   "summary": "On 19 February 1954 the Presidium of the Supreme Soviet moves the Crimean Oblast from the Russian SFSR to the Ukrainian SSR, citing its economic ties with Ukraine and the 300th anniversary of the Pereiaslav Agreement. Within one Soviet Union the change seems a matter of administration; when the union breaks up in 1991, it leaves Crimea in independent Ukraine.",
+   "wikipedia": "1954_transfer_of_Crimea",
+   "search": "1954 transfer of Crimea Russian SFSR Ukrainian SSR Presidium Supreme Soviet 19 February 1954 Khrushchev Pereiaslav 300th anniversary"
+  },
+  {
+   "id": "port-arthur-returned-1955",
+   "kind": "treaty",
+   "year": 1955,
+   "title": "Port Arthur is handed back to China, May 1955",
+   "place": "Lüshun (Port Arthur)",
+   "lonLat": [
+    121.26,
+    38.81
+   ],
+   "civs": [
+    "china",
+    "soviet-union"
+   ],
+   "summary": "The Sino-Soviet treaty of August 1945 let the Soviet Union keep Port Arthur (Lüshun) as a naval base, as tsarist Russia had before 1905. After the Communist victory in China, Moscow agrees to leave, and after a delay caused by the Korean War, the last Soviet forces hand the base back in May 1955.",
+   "wikipedia": "Lüshunkou_District",
+   "search": "Port Arthur Lüshun Dalian Soviet naval base 1945 1955 Sino-Soviet Treaty of Friendship and Alliance Khrushchev return to China Liaodong"
+  },
+  {
+   "id": "porkkala-returned-1956",
+   "kind": "treaty",
+   "year": 1956,
+   "title": "Porkkala is handed back to Finland, 26 January 1956",
+   "place": "Kirkkonummi",
+   "lonLat": [
+    24.44,
+    60.12
+   ],
+   "civs": [
+    "finland",
+    "soviet-union"
+   ],
+   "summary": "The Moscow Armistice of 1944 forced Finland to lease the Porkkala peninsula, 30 km from Helsinki, to the Soviet Union as a naval base for fifty years; its 7,000 inhabitants had ten days to leave, and trains to Turku crossed it with their windows covered. Judging the base useless in the missile age, Moscow hands it back on 26 January 1956, forty years early.",
+   "wikipedia": "Porkkala_Naval_Base",
+   "search": "Porkkala Naval Base 1944 1956 Moscow Armistice lease 50 years Kirkkonummi Degerby Paasikivi Khrushchev returned 26 January 1956"
+  },
+  {
+   "id": "deported-peoples-return-1957",
+   "kind": "revolution",
+   "year": 1957,
+   "title": "Deported peoples are allowed home, January 1957",
+   "place": "Nazran",
+   "lonLat": [
+    44.77,
+    43.23
+   ],
+   "civs": [
+    "russia",
+    "georgia",
+    "soviet-union"
+   ],
+   "summary": "In 1943-44 Stalin deported whole peoples of the North Caucasus and the Volga, the Chechens, Ingush, Karachays, Balkars and Kalmyks, to Kazakhstan and Siberia, accusing them of helping the Germans; their autonomous republics were abolished and their land shared out. After Khrushchev's denunciation of Stalin, a decree of 9 January 1957 restores their republics, and the highlands given to Georgia go back. The Crimean Tatars, Volga Germans and Meskhetian Turks are not allowed home.",
+   "wikipedia": "Population_transfer_in_the_Soviet_Union",
+   "search": "deportation Chechens Ingush Karachays Balkars Kalmyks 1943 1944 Operation Lentil Khrushchev rehabilitation 9 January 1957 autonomous republics restored return Kazakhstan"
+  },
+  {
+   "id": "damansky-island-1969",
+   "kind": "battle",
+   "year": 1969,
+   "title": "Sino-Soviet border clashes on Damansky Island, March 1969",
+   "place": "Damansky (Zhenbao) Island, on the Ussuri",
+   "lonLat": [
+    133.86,
+    46.49
+   ],
+   "civs": [
+    "china",
+    "soviet-union",
+    "russia"
+   ],
+   "summary": "On 2 March 1969 Chinese troops ambush a Soviet patrol on Damansky (Zhenbao) Island in the Ussuri river, claimed by both countries; a larger battle follows on 15 March, and in August fighting spreads to the Xinjiang border. The clashes bring the two communist powers close to war, Moscow hints at a nuclear strike, and China turns toward the United States. The island was given to China in 1991.",
+   "wikipedia": "Sino-Soviet_border_conflict",
+   "search": "Sino-Soviet border conflict 1969 Damansky Island Zhenbao Ussuri river March 1969 Tielieketi Xinjiang nuclear war scare 1991 border agreement 2004"
+  },
+  {
+   "id": "soviet-afghan-war-1979",
+   "kind": "war",
+   "year": 1979,
+   "to": 1989,
+   "title": "The Soviet war in Afghanistan, 1979 – 1989",
+   "place": "Kabul",
+   "lonLat": [
+    69.17,
+    34.53
+   ],
+   "civs": [
+    "afghanistan",
+    "soviet-union"
+   ],
+   "summary": "In December 1979 Soviet troops enter Afghanistan to prop up its communist government, kill its leader Hafizullah Amin and install Babrak Karmal. They hold the cities but not the mountains, where mujahideen armed by the United States, Pakistan and Saudi Arabia fight a long guerrilla war. About 15,000 Soviet soldiers and perhaps a million Afghans die before the Geneva Accords; the last Soviet troops cross back over the Amu Darya on 15 February 1989.",
+   "wikipedia": "Soviet–Afghan_War",
+   "search": "Soviet-Afghan War 1979 1989 invasion 24 December 1979 Operation Storm-333 Amin Karmal mujahideen Stinger Geneva Accords withdrawal 15 February 1989 Termez"
   }
  ]
 }

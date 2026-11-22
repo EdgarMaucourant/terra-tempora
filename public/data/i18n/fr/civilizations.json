@@ -365,6 +365,9 @@
  "norway": {
   "name": "Norvège"
  },
+ "finland": {
+  "name": "Finlande"
+ },
  "japan": {
   "name": "Japon"
  },
@@ -382,9 +385,6 @@
  },
  "barotseland": {
   "name": "Barotseland"
- },
- "finland": {
-  "name": "Finlande"
  },
  "malaysia": {
   "name": "Malaisie"
@@ -500,6 +500,9 @@
  "syria": {
   "name": "Syrie"
  },
+ "karelo-finnish-ssr": {
+  "name": "RSS carélo-finnoise"
+ },
  "cambodia": {
   "name": "Cambodge"
  },
@@ -515,11 +518,11 @@
  "italian-eritrea": {
   "name": "Érythrée italienne"
  },
- "karelo-finnish-ssr": {
-  "name": "RSS carélo-finnoise"
- },
  "south-vietnam": {
   "name": "Sud Viêt Nam"
+ },
+ "tuvan-people-s-republic": {
+  "name": "République populaire de Touva"
  },
  "british-somaliland": {
   "name": "Somaliland britannique"
@@ -922,6 +925,9 @@
  },
  "montenegro": {
   "name": "Monténégro"
+ },
+ "czechoslovakia": {
+  "name": "Tchécoslovaquie"
  },
  "the-bahamas": {
   "name": "Bahamas"
