@@ -13822,6 +13822,604 @@
    ],
    "realm": "Russia",
    "why": "Verny, in the Russian SFSR"
+  },
+  {
+   "place": "Saint Petersburg (Russian Empire)",
+   "lonLat": [
+    30.31,
+    59.94
+   ],
+   "years": [
+    1905,
+    1916
+   ],
+   "realm": "Russia",
+   "why": "Capital of the Russian Empire (Petrograd from 1914)"
+  },
+  {
+   "place": "Helsinki (Grand Duchy)",
+   "lonLat": [
+    24.94,
+    60.17
+   ],
+   "years": [
+    1905,
+    1916
+   ],
+   "realm": "Russia",
+   "why": "Helsingfors, capital of the Grand Duchy of Finland"
+  },
+  {
+   "place": "Kars (Russian Empire)",
+   "lonLat": [
+    43.1,
+    40.6
+   ],
+   "years": [
+    1905,
+    1917
+   ],
+   "realm": "Russia",
+   "why": "Capital of the Kars Oblast, Russian from 1878"
+  },
+  {
+   "place": "Kars (Ottoman, 1918)",
+   "lonLat": [
+    43.1,
+    40.6
+   ],
+   "years": [
+    1918,
+    1918
+   ],
+   "realm": "Ottoman Empire",
+   "why": "Ottoman from April 1918"
+  },
+  {
+   "place": "Kars (Armenia)",
+   "lonLat": [
+    43.1,
+    40.6
+   ],
+   "years": [
+    1919,
+    1919
+   ],
+   "realm": "Armenia",
+   "why": "Armenian from April 1919 to October 1920"
+  },
+  {
+   "place": "Kars (Turkey)",
+   "lonLat": [
+    43.1,
+    40.6
+   ],
+   "years": [
+    1920,
+    1925
+   ],
+   "realm": "Turkey",
+   "why": "Turkish from October 1920"
+  },
+  {
+   "place": "Ardahan (Georgia)",
+   "lonLat": [
+    42.7,
+    41.11
+   ],
+   "years": [
+    1919,
+    1920
+   ],
+   "realm": "Georgia",
+   "why": "Held by Georgia until 1921"
+  },
+  {
+   "place": "Artvin (Russian Empire)",
+   "lonLat": [
+    41.82,
+    41.18
+   ],
+   "years": [
+    1905,
+    1917
+   ],
+   "realm": "Russia",
+   "why": "In the Batum Oblast"
+  },
+  {
+   "place": "Iğdır (Armenia)",
+   "lonLat": [
+    44.04,
+    39.92
+   ],
+   "years": [
+    1919,
+    1919
+   ],
+   "realm": "Armenia",
+   "why": "Surmalu, Armenian from December 1918 to November 1920"
+  },
+  {
+   "place": "Yuzhno-Sakhalinsk (Russian, 1904)",
+   "lonLat": [
+    142.73,
+    46.96
+   ],
+   "years": [
+    1905,
+    1905
+   ],
+   "realm": "Japan",
+   "why": "Vladimirovka, Japanese from 1905"
+  },
+  {
+   "place": "Lviv (Russian-held, 1914)",
+   "lonLat": [
+    24.03,
+    49.84
+   ],
+   "years": [
+    1914,
+    1914
+   ],
+   "realm": "Austria-Hungary",
+   "why": "Lemberg, held by Russia from September 1914 to June 1915",
+   "heldBy": [
+    {
+     "years": [
+      1914,
+      1914
+     ],
+     "by": "Russia"
+    }
+   ]
+  },
+  {
+   "place": "Lviv (Austria-Hungary, 1915)",
+   "lonLat": [
+    24.03,
+    49.84
+   ],
+   "years": [
+    1915,
+    1916
+   ],
+   "realm": "Austria-Hungary",
+   "why": "Retaken by Austria-Hungary in June 1915"
+  },
+  {
+   "place": "Ternopil (Russian-held)",
+   "lonLat": [
+    25.6,
+    49.55
+   ],
+   "years": [
+    1914,
+    1916
+   ],
+   "realm": "Austria-Hungary",
+   "why": "Tarnopol, held by Russia from 1914 to July 1917",
+   "heldBy": [
+    {
+     "years": [
+      1914,
+      1916
+     ],
+     "by": "Russia"
+    }
+   ]
+  },
+  {
+   "place": "Chernivtsi (Russian-held, 1916)",
+   "lonLat": [
+    25.94,
+    48.29
+   ],
+   "years": [
+    1916,
+    1916
+   ],
+   "realm": "Austria-Hungary",
+   "why": "Czernowitz, held by Russia from June 1916 to August 1917",
+   "heldBy": [
+    {
+     "years": [
+      1916,
+      1916
+     ],
+     "by": "Russia"
+    }
+   ]
+  },
+  {
+   "place": "Chernivtsi (Austria-Hungary, 1915)",
+   "lonLat": [
+    25.94,
+    48.29
+   ],
+   "years": [
+    1915,
+    1915
+   ],
+   "realm": "Austria-Hungary",
+   "why": "Retaken by Austria-Hungary in February 1915"
+  },
+  {
+   "place": "Kovel (Austro-Hungarian-held)",
+   "lonLat": [
+    24.71,
+    51.21
+   ],
+   "years": [
+    1915,
+    1917
+   ],
+   "realm": "Russia",
+   "why": "Held by the Central Powers from 1915",
+   "heldBy": [
+    {
+     "years": [
+      1915,
+      1917
+     ],
+     "by": "Austria-Hungary"
+    }
+   ]
+  },
+  {
+   "place": "Bukhara (Russian protectorate)",
+   "lonLat": [
+    64.42,
+    39.77
+   ],
+   "years": [
+    1905,
+    1916
+   ],
+   "realm": "Emirate of Bukhara",
+   "why": "A Russian protectorate",
+   "heldBy": [
+    {
+     "years": [
+      1905,
+      1916
+     ],
+     "by": "Russia"
+    }
+   ]
+  },
+  {
+   "place": "Khiva (Russian protectorate)",
+   "lonLat": [
+    60.36,
+    41.38
+   ],
+   "years": [
+    1905,
+    1916
+   ],
+   "realm": "Khanate of Khiva",
+   "why": "A Russian protectorate",
+   "heldBy": [
+    {
+     "years": [
+      1905,
+      1916
+     ],
+     "by": "Russia"
+    }
+   ]
+  },
+  {
+   "place": "Kyzyl (Uryankhay, 1915)",
+   "lonLat": [
+    94.45,
+    51.72
+   ],
+   "years": [
+    1914,
+    1916
+   ],
+   "realm": "Russia",
+   "why": "Uryankhay Krai, a Russian protectorate from 1914"
+  },
+  {
+   "place": "Tashkent (Russian Empire)",
+   "lonLat": [
+    69.24,
+    41.3
+   ],
+   "years": [
+    1905,
+    1916
+   ],
+   "realm": "Russia",
+   "why": "Capital of Russian Turkestan"
+  },
+  {
+   "place": "Tbilisi (Russian Empire)",
+   "lonLat": [
+    44.8,
+    41.7
+   ],
+   "years": [
+    1905,
+    1916
+   ],
+   "realm": "Russia",
+   "why": "Tiflis, seat of the Viceroy of the Caucasus"
+  },
+  {
+   "place": "Vladivostok (Russian Empire)",
+   "lonLat": [
+    131.9,
+    43.12
+   ],
+   "years": [
+    1905,
+    1916
+   ],
+   "realm": "Russia",
+   "why": "In the Primorskaya Oblast"
+  },
+  {
+   "place": "Kyiv (Russian Empire)",
+   "lonLat": [
+    30.52,
+    50.45
+   ],
+   "years": [
+    1905,
+    1916
+   ],
+   "realm": "Russia",
+   "why": "In the Kiev Governorate"
+  },
+  {
+   "place": "Riga (Russian Empire)",
+   "lonLat": [
+    24.11,
+    56.95
+   ],
+   "years": [
+    1905,
+    1916
+   ],
+   "realm": "Russia",
+   "why": "In the Governorate of Livonia; the front ran just south of it from 1915"
+  },
+  {
+   "place": "Warsaw (Congress Poland)",
+   "lonLat": [
+    21.01,
+    52.23
+   ],
+   "years": [
+    1905,
+    1914
+   ],
+   "realm": "Russia",
+   "why": "Capital of Congress Poland, in the Russian Empire"
+  },
+  {
+   "place": "Warsaw (German-held, 1915)",
+   "lonLat": [
+    21.01,
+    52.23
+   ],
+   "years": [
+    1915,
+    1917
+   ],
+   "realm": "Russia",
+   "why": "Taken by Germany in August 1915",
+   "heldBy": [
+    {
+     "years": [
+      1915,
+      1917
+     ],
+     "by": "Germany"
+    }
+   ]
+  },
+  {
+   "place": "Warsaw (Poland)",
+   "lonLat": [
+    21.01,
+    52.23
+   ],
+   "years": [
+    1918,
+    1938
+   ],
+   "realm": "Poland",
+   "why": "Capital of independent Poland"
+  },
+  {
+   "place": "Warsaw (German-held, 1939)",
+   "lonLat": [
+    21.01,
+    52.23
+   ],
+   "years": [
+    1939,
+    1944
+   ],
+   "realm": "Poland",
+   "why": "Held by Germany from September 1939 to January 1945",
+   "heldBy": [
+    {
+     "years": [
+      1939,
+      1944
+     ],
+     "by": "Germany"
+    }
+   ]
+  },
+  {
+   "place": "Lodz (German-held, 1914)",
+   "lonLat": [
+    19.46,
+    51.76
+   ],
+   "years": [
+    1914,
+    1914
+   ],
+   "realm": "Russia",
+   "why": "Taken by Germany in December 1914",
+   "heldBy": [
+    {
+     "years": [
+      1914,
+      1914
+     ],
+     "by": "Germany"
+    }
+   ]
+  },
+  {
+   "place": "Lublin (Austro-Hungarian-held)",
+   "lonLat": [
+    22.57,
+    51.25
+   ],
+   "years": [
+    1915,
+    1917
+   ],
+   "realm": "Russia",
+   "why": "Held by Austria-Hungary from July 1915",
+   "heldBy": [
+    {
+     "years": [
+      1915,
+      1917
+     ],
+     "by": "Austria-Hungary"
+    }
+   ]
+  },
+  {
+   "place": "Lublin (1944)",
+   "lonLat": [
+    22.57,
+    51.25
+   ],
+   "years": [
+    1944,
+    1950
+   ],
+   "realm": "Poland",
+   "why": "Freed in July 1944"
+  },
+  {
+   "place": "Bialystok (Grodno Governorate)",
+   "lonLat": [
+    23.16,
+    53.13
+   ],
+   "years": [
+    1905,
+    1914
+   ],
+   "realm": "Russia",
+   "why": "In the Grodno Governorate"
+  },
+  {
+   "place": "Bialystok (German-held, 1918)",
+   "lonLat": [
+    23.16,
+    53.13
+   ],
+   "years": [
+    1915,
+    1918
+   ],
+   "realm": "Russia",
+   "why": "Held by Germany until February 1919",
+   "heldBy": [
+    {
+     "years": [
+      1915,
+      1918
+     ],
+     "by": "Germany"
+    }
+   ]
+  },
+  {
+   "place": "Bialystok (Soviet-held)",
+   "lonLat": [
+    23.16,
+    53.13
+   ],
+   "years": [
+    1939,
+    1940
+   ],
+   "realm": "Poland",
+   "why": "Annexed by the Soviet Union, 1939 to 1941",
+   "heldBy": [
+    {
+     "years": [
+      1939,
+      1940
+     ],
+     "by": "Soviet Union"
+    }
+   ]
+  },
+  {
+   "place": "Kalisz (German-held, 1914)",
+   "lonLat": [
+    18.09,
+    51.76
+   ],
+   "years": [
+    1914,
+    1917
+   ],
+   "realm": "Russia",
+   "why": "Taken by Germany in August 1914",
+   "heldBy": [
+    {
+     "years": [
+      1914,
+      1917
+     ],
+     "by": "Germany"
+    }
+   ]
+  },
+  {
+   "place": "Czestochowa (Congress Poland)",
+   "lonLat": [
+    19.12,
+    50.81
+   ],
+   "years": [
+    1905,
+    1913
+   ],
+   "realm": "Russia",
+   "why": "In Congress Poland"
+  },
+  {
+   "place": "Suwalki (Congress Poland)",
+   "lonLat": [
+    22.93,
+    54.1
+   ],
+   "years": [
+    1905,
+    1913
+   ],
+   "realm": "Russia",
+   "why": "In Congress Poland"
   }
  ]
 }
