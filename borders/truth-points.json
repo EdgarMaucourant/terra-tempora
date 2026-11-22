@@ -12190,6 +12190,20 @@
     {
      "years": [
       1939,
+      1940
+     ],
+     "by": "Soviet Union"
+    },
+    {
+     "years": [
+      1941,
+      1943
+     ],
+     "by": "Germany"
+    },
+    {
+     "years": [
+      1944,
       1944
      ],
      "by": "Soviet Union"
@@ -12212,6 +12226,20 @@
     {
      "years": [
       1939,
+      1940
+     ],
+     "by": "Soviet Union"
+    },
+    {
+     "years": [
+      1941,
+      1943
+     ],
+     "by": "Germany"
+    },
+    {
+     "years": [
+      1944,
       1944
      ],
      "by": "Soviet Union"
@@ -12242,7 +12270,16 @@
     1944
    ],
    "realm": "Moldova",
-   "why": "Capital of the Moldavian SSR from August 1940"
+   "why": "Capital of the Moldavian SSR from August 1940",
+   "heldBy": [
+    {
+     "years": [
+      1941,
+      1943
+     ],
+     "by": "Romania"
+    }
+   ]
   },
   {
    "place": "Tiraspol (Ukrainian SSR)",
@@ -12346,7 +12383,16 @@
     1943
    ],
    "realm": "Karelo-Finnish SSR",
-   "why": "In the Karelo-Finnish SSR from 1940 to November 1944"
+   "why": "In the Karelo-Finnish SSR from 1940 to November 1944",
+   "heldBy": [
+    {
+     "years": [
+      1941,
+      1943
+     ],
+     "by": "Finland"
+    }
+   ]
   },
   {
    "place": "Pechenga (Finland)",
@@ -12386,6 +12432,208 @@
    ],
    "realm": "Lithuania",
    "why": "Independent Lithuania until the Soviet occupation of June 1940"
+  },
+  {
+   "place": "Kyiv (occupied)",
+   "lonLat": [
+    30.52,
+    50.45
+   ],
+   "years": [
+    1941,
+    1942
+   ],
+   "realm": "Ukraine",
+   "why": "Held by Germany from September 1941 to November 1943",
+   "heldBy": [
+    {
+     "years": [
+      1941,
+      1942
+     ],
+     "by": "Germany"
+    }
+   ]
+  },
+  {
+   "place": "Minsk (occupied)",
+   "lonLat": [
+    27.56,
+    53.9
+   ],
+   "years": [
+    1941,
+    1943
+   ],
+   "realm": "Belarus",
+   "why": "Held by Germany from June 1941 to July 1944",
+   "heldBy": [
+    {
+     "years": [
+      1941,
+      1943
+     ],
+     "by": "Germany"
+    }
+   ]
+  },
+  {
+   "place": "Riga (occupied)",
+   "lonLat": [
+    24.11,
+    56.95
+   ],
+   "years": [
+    1941,
+    1943
+   ],
+   "realm": "Latvia",
+   "why": "Held by Germany from July 1941 to October 1944",
+   "heldBy": [
+    {
+     "years": [
+      1941,
+      1943
+     ],
+     "by": "Germany"
+    }
+   ]
+  },
+  {
+   "place": "Aizpute (Courland Pocket)",
+   "lonLat": [
+    21.6,
+    56.8
+   ],
+   "years": [
+    1944,
+    1944
+   ],
+   "realm": "Latvia",
+   "why": "In the Courland Pocket, held by Germany until May 1945",
+   "heldBy": [
+    {
+     "years": [
+      1944,
+      1944
+     ],
+     "by": "Germany"
+    }
+   ]
+  },
+  {
+   "place": "Odesa (Romanian-held)",
+   "lonLat": [
+    30.73,
+    46.48
+   ],
+   "years": [
+    1941,
+    1943
+   ],
+   "realm": "Ukraine",
+   "why": "Held by Romania from October 1941 to April 1944",
+   "heldBy": [
+    {
+     "years": [
+      1941,
+      1943
+     ],
+     "by": "Romania"
+    }
+   ]
+  },
+  {
+   "place": "Petrozavodsk (Finnish-held)",
+   "lonLat": [
+    34.35,
+    61.79
+   ],
+   "years": [
+    1941,
+    1943
+   ],
+   "realm": "Karelo-Finnish SSR",
+   "why": "Held by Finland from October 1941 to June 1944",
+   "heldBy": [
+    {
+     "years": [
+      1941,
+      1943
+     ],
+     "by": "Finland"
+    }
+   ]
+  },
+  {
+   "place": "Smolensk (occupied)",
+   "lonLat": [
+    32.05,
+    54.78
+   ],
+   "years": [
+    1941,
+    1942
+   ],
+   "realm": "Russia",
+   "why": "Held by Germany from July 1941 to September 1943",
+   "heldBy": [
+    {
+     "years": [
+      1941,
+      1942
+     ],
+     "by": "Germany"
+    }
+   ]
+  },
+  {
+   "place": "Krasnodar (occupied)",
+   "lonLat": [
+    38.98,
+    45.04
+   ],
+   "years": [
+    1942,
+    1942
+   ],
+   "realm": "Russia",
+   "why": "Held by Germany from August 1942 to February 1943",
+   "heldBy": [
+    {
+     "years": [
+      1942,
+      1942
+     ],
+     "by": "Germany"
+    }
+   ]
+  },
+  {
+   "place": "Moscow (1941)",
+   "lonLat": [
+    37.62,
+    55.75
+   ],
+   "years": [
+    1941,
+    1944
+   ],
+   "realm": "Russia",
+   "why": "Never taken"
+  },
+  {
+   "place": "Teberda (RSFSR, 1939-41)",
+   "lonLat": [
+    41.74,
+    43.45
+   ],
+   "years": [
+    1939,
+    1941
+   ],
+   "realm": "Russia",
+   "why": "In the Karachay Autonomous Oblast of the Russian SFSR until 1944"
   }
  ]
 }
