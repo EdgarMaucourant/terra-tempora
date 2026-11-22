@@ -10036,8 +10036,7 @@
     54.69
    ],
    "civs": [
-    "lithuania",
-    "soviet-union"
+    "lithuania"
    ],
    "summary": "On 11 March 1990 Lithuania's newly elected Supreme Council, led by the Sąjūdis movement, declares the state restored, the first Soviet republic to break away. Moscow answers with an economic blockade, and in January 1991 Soviet troops storm the Vilnius television tower, killing fourteen people. Estonia and Latvia follow the same path, and the Soviet Union recognises all three on 6 September 1991.",
    "wikipedia": "Act_of_the_Re-Establishment_of_the_State_of_Lithuania",
@@ -10054,8 +10053,6 @@
     55.75
    ],
    "civs": [
-    "soviet-union",
-    "russian-sfsr",
     "russia"
    ],
    "summary": "On 19 August 1991 hardliners of the Communist Party and the KGB hold Mikhail Gorbachev at his dacha in Crimea and declare a state of emergency, to stop a new union treaty that would loosen the Soviet Union. Boris Yeltsin, president of the Russian republic, climbs onto a tank outside the Russian White House and calls for resistance; crowds gather, the army hesitates, and the coup collapses in three days. Power passes to the republics, and one by one they declare independence.",
@@ -10074,8 +10071,6 @@
    ],
    "civs": [
     "belarus",
-    "byelorussian-ssr",
-    "soviet-union",
     "russia",
     "ukraine"
    ],
@@ -10094,10 +10089,8 @@
     43.24
    ],
    "civs": [
-    "soviet-union",
     "russia",
     "kazakhstan",
-    "kazakh-ssr",
     "ukraine",
     "belarus"
    ],
@@ -10118,8 +10111,7 @@
    ],
    "civs": [
     "azerbaijan",
-    "armenia",
-    "azerbaijan-ssr"
+    "armenia"
    ],
    "summary": "The Armenians of Nagorno-Karabakh, an autonomous region of Soviet Azerbaijan, ask from 1988 to join Armenia; when the Soviet Union falls the quarrel becomes a war. Armenian forces take Shusha and Lachin in May 1992, linking the region to Armenia, and in 1993 they seize seven districts around it. A ceasefire in May 1994 leaves the self-declared Republic of Artsakh holding about a seventh of Azerbaijan, after some 30,000 deaths and the flight of hundreds of thousands of Azerbaijanis and Armenians.",
    "wikipedia": "First_Nagorno-Karabakh_War",

@@ -99,7 +99,31 @@
   "wikipedia": "Armenia",
   "wikidata": "Q399",
   "fr": "Arménie",
-  "es": "Armenia"
+  "es": "Armenia",
+  "periods": [
+   {
+    "from": "1920-11-29",
+    "name": "Armenian SSR",
+    "wikipedia": "Armenian Soviet Socialist Republic",
+    "fr": "RSS d'Arménie",
+    "es": "RSS de Armenia",
+    "label": "Armenian SSR",
+    "labelFr": "RSS d'Arménie",
+    "labelEs": "RSS de Armenia",
+    "note": "A republic of the Soviet Union from 1922"
+   },
+   {
+    "from": "1991-12-26",
+    "name": "Armenia",
+    "wikipedia": "Armenia",
+    "fr": "Arménie",
+    "es": "Armenia",
+    "note": "Independent since the end of the Soviet Union"
+   }
+  ],
+  "group": "Soviet Union",
+  "groupFrom": "1922-12-30",
+  "groupUntil": "1991-12-26"
  },
  "Aruba": {
   "wikipedia": "Aruba",
@@ -129,7 +153,31 @@
   "wikipedia": "Azerbaijan",
   "wikidata": "Q227",
   "fr": "Azerbaïdjan",
-  "es": "Azerbaiyán"
+  "es": "Azerbaiyán",
+  "periods": [
+   {
+    "from": "1920-04-28",
+    "name": "Azerbaijan SSR",
+    "wikipedia": "Azerbaijan Soviet Socialist Republic",
+    "fr": "RSS d'Azerbaïdjan",
+    "es": "RSS de Azerbaiyán",
+    "label": "Azerbaijan SSR",
+    "labelFr": "RSS d'Azerbaïdjan",
+    "labelEs": "RSS de Azerbaiyán",
+    "note": "A republic of the Soviet Union from 1922"
+   },
+   {
+    "from": "1991-12-26",
+    "name": "Azerbaijan",
+    "wikipedia": "Azerbaijan",
+    "fr": "Azerbaïdjan",
+    "es": "Azerbaiyán",
+    "note": "Independent since the end of the Soviet Union"
+   }
+  ],
+  "group": "Soviet Union",
+  "groupFrom": "1922-12-30",
+  "groupUntil": "1991-12-26"
  },
  "Azores": {
   "wikipedia": "Azores",
@@ -165,7 +213,31 @@
   "wikipedia": "Belarus",
   "wikidata": "Q184",
   "fr": "Biélorussie",
-  "es": "Bielorrusia"
+  "es": "Bielorrusia",
+  "periods": [
+   {
+    "from": "1919-01-01",
+    "name": "Byelorussian SSR",
+    "wikipedia": "Byelorussian Soviet Socialist Republic",
+    "fr": "RSS de Biélorussie",
+    "es": "RSS de Bielorrusia",
+    "label": "Byelorussian SSR",
+    "labelFr": "RSS de Biélorussie",
+    "labelEs": "RSS de Bielorrusia",
+    "note": "A republic of the Soviet Union from 1922"
+   },
+   {
+    "from": "1991-12-26",
+    "name": "Belarus",
+    "wikipedia": "Belarus",
+    "fr": "Biélorussie",
+    "es": "Bielorrusia",
+    "note": "Independent since the end of the Soviet Union"
+   }
+  ],
+  "group": "Soviet Union",
+  "groupFrom": "1922-12-30",
+  "groupUntil": "1991-12-26"
  },
  "Belgium": {
   "wikipedia": "Belgium",
@@ -1243,7 +1315,31 @@
   "wikipedia": "Georgia (country)",
   "wikidata": "Q230",
   "fr": "Géorgie",
-  "es": "Georgia"
+  "es": "Georgia",
+  "periods": [
+   {
+    "from": "1921-02-25",
+    "name": "Georgian SSR",
+    "wikipedia": "Georgian Soviet Socialist Republic",
+    "fr": "RSS de Géorgie",
+    "es": "RSS de Georgia",
+    "label": "Georgian SSR",
+    "labelFr": "RSS de Géorgie",
+    "labelEs": "RSS de Georgia",
+    "note": "A republic of the Soviet Union from 1922"
+   },
+   {
+    "from": "1991-12-26",
+    "name": "Georgia",
+    "wikipedia": "Georgia (country)",
+    "fr": "Géorgie",
+    "es": "Georgia",
+    "note": "Independent since the end of the Soviet Union"
+   }
+  ],
+  "group": "Soviet Union",
+  "groupFrom": "1922-12-30",
+  "groupUntil": "1991-12-26"
  },
  "German East Africa": {
   "wikipedia": "German East Africa",
@@ -1662,7 +1758,31 @@
   "wikipedia": "Kazakhstan",
   "wikidata": "Q232",
   "fr": "Kazakhstan",
-  "es": "Kazajistán"
+  "es": "Kazajistán",
+  "periods": [
+   {
+    "from": "1936-12-05",
+    "name": "Kazakh SSR",
+    "wikipedia": "Kazakh Soviet Socialist Republic",
+    "fr": "RSS kazakhe",
+    "es": "RSS de Kazajistán",
+    "label": "Kazakh SSR",
+    "labelFr": "RSS kazakhe",
+    "labelEs": "RSS de Kazajistán",
+    "note": "A republic of the Soviet Union from 1936"
+   },
+   {
+    "from": "1991-12-26",
+    "name": "Kazakhstan",
+    "wikipedia": "Kazakhstan",
+    "fr": "Kazakhstan",
+    "es": "Kazajistán",
+    "note": "Independent since the end of the Soviet Union"
+   }
+  ],
+  "group": "Soviet Union",
+  "groupFrom": "1936-12-05",
+  "groupUntil": "1991-12-26"
  },
  "Kenya": {
   "wikipedia": "Kenya",
@@ -1692,7 +1812,31 @@
   "wikipedia": "Kyrgyzstan",
   "wikidata": "Q813",
   "fr": "Kirghizistan",
-  "es": "Kirguistán"
+  "es": "Kirguistán",
+  "periods": [
+   {
+    "from": "1936-12-05",
+    "name": "Kirghiz SSR",
+    "wikipedia": "Kirghiz Soviet Socialist Republic",
+    "fr": "RSS kirghize",
+    "es": "RSS de Kirguistán",
+    "label": "Kirghiz SSR",
+    "labelFr": "RSS kirghize",
+    "labelEs": "RSS de Kirguistán",
+    "note": "A republic of the Soviet Union from 1936"
+   },
+   {
+    "from": "1991-12-26",
+    "name": "Kyrgyzstan",
+    "wikipedia": "Kyrgyzstan",
+    "fr": "Kirghizistan",
+    "es": "Kirguistán",
+    "note": "Independent since the end of the Soviet Union"
+   }
+  ],
+  "group": "Soviet Union",
+  "groupFrom": "1936-12-05",
+  "groupUntil": "1991-12-26"
  },
  "Laos": {
   "wikipedia": "Laos",
@@ -1997,7 +2141,31 @@
   "wikipedia": "Moldova",
   "wikidata": "Q217",
   "fr": "Moldavie",
-  "es": "Moldavia"
+  "es": "Moldavia",
+  "periods": [
+   {
+    "from": "1940-08-02",
+    "name": "Moldavian SSR",
+    "wikipedia": "Moldavian Soviet Socialist Republic",
+    "fr": "RSS de Moldavie",
+    "es": "RSS de Moldavia",
+    "label": "Moldavian SSR",
+    "labelFr": "RSS de Moldavie",
+    "labelEs": "RSS de Moldavia",
+    "note": "A republic of the Soviet Union from 1940"
+   },
+   {
+    "from": "1991-12-26",
+    "name": "Moldova",
+    "wikipedia": "Moldova",
+    "fr": "Moldavie",
+    "es": "Moldavia",
+    "note": "Independent since the end of the Soviet Union"
+   }
+  ],
+  "group": "Soviet Union",
+  "groupFrom": "1940-08-02",
+  "groupUntil": "1991-12-26"
  },
  "Monaco": {
   "wikipedia": "Monaco",
@@ -2433,7 +2601,31 @@
   "wikipedia": "Russia",
   "wikidata": "Q159",
   "fr": "Russie",
-  "es": "Rusia"
+  "es": "Rusia",
+  "periods": [
+   {
+    "from": "1917-11-07",
+    "name": "Russian SFSR",
+    "wikipedia": "Russian Soviet Federative Socialist Republic",
+    "fr": "RSFS de Russie",
+    "es": "RSFS de Rusia",
+    "label": "Russian SFSR",
+    "labelFr": "RSFS de Russie",
+    "labelEs": "RSFS de Rusia",
+    "note": "A republic of the Soviet Union from 1922"
+   },
+   {
+    "from": "1991-12-26",
+    "name": "Russia",
+    "wikipedia": "Russia",
+    "fr": "Russie",
+    "es": "Rusia",
+    "note": "Independent since the end of the Soviet Union"
+   }
+  ],
+  "group": "Soviet Union",
+  "groupFrom": "1922-12-30",
+  "groupUntil": "1991-12-26"
  },
  "Rwanda": {
   "wikipedia": "Rwanda",
@@ -2782,7 +2974,31 @@
   "wikipedia": "Tajikistan",
   "wikidata": "Q863",
   "fr": "Tadjikistan",
-  "es": "Tayikistán"
+  "es": "Tayikistán",
+  "periods": [
+   {
+    "from": "1929-10-16",
+    "name": "Tajik SSR",
+    "wikipedia": "Tajik Soviet Socialist Republic",
+    "fr": "RSS du Tadjikistan",
+    "es": "RSS de Tayikistán",
+    "label": "Tajik SSR",
+    "labelFr": "RSS du Tadjikistan",
+    "labelEs": "RSS de Tayikistán",
+    "note": "A republic of the Soviet Union from 1929"
+   },
+   {
+    "from": "1991-12-26",
+    "name": "Tajikistan",
+    "wikipedia": "Tajikistan",
+    "fr": "Tadjikistan",
+    "es": "Tayikistán",
+    "note": "Independent since the end of the Soviet Union"
+   }
+  ],
+  "group": "Soviet Union",
+  "groupFrom": "1929-10-16",
+  "groupUntil": "1991-12-26"
  },
  "Tangier International Zone": {
   "wikipedia": "Tangier International Zone",
@@ -2963,7 +3179,31 @@
   "wikipedia": "Turkmenistan",
   "wikidata": "Q874",
   "fr": "Turkménistan",
-  "es": "Turkmenistán"
+  "es": "Turkmenistán",
+  "periods": [
+   {
+    "from": "1924-10-27",
+    "name": "Turkmen SSR",
+    "wikipedia": "Turkmen Soviet Socialist Republic",
+    "fr": "RSS de Turkménie",
+    "es": "RSS de Turkmenistán",
+    "label": "Turkmen SSR",
+    "labelFr": "RSS de Turkménie",
+    "labelEs": "RSS de Turkmenistán",
+    "note": "A republic of the Soviet Union from 1924"
+   },
+   {
+    "from": "1991-12-26",
+    "name": "Turkmenistan",
+    "wikipedia": "Turkmenistan",
+    "fr": "Turkménistan",
+    "es": "Turkmenistán",
+    "note": "Independent since the end of the Soviet Union"
+   }
+  ],
+  "group": "Soviet Union",
+  "groupFrom": "1924-10-27",
+  "groupUntil": "1991-12-26"
  },
  "Turks and Caicos Islands": {
   "wikipedia": "Turks and Caicos Islands",
@@ -3012,7 +3252,31 @@
   "wikipedia": "Ukraine",
   "wikidata": "Q212",
   "fr": "Ukraine",
-  "es": "Ucrania"
+  "es": "Ucrania",
+  "periods": [
+   {
+    "from": "1919-03-10",
+    "name": "Ukrainian SSR",
+    "wikipedia": "Ukrainian Soviet Socialist Republic",
+    "fr": "RSS d'Ukraine",
+    "es": "RSS de Ucrania",
+    "label": "Ukrainian SSR",
+    "labelFr": "RSS d'Ukraine",
+    "labelEs": "RSS de Ucrania",
+    "note": "A republic of the Soviet Union from 1922"
+   },
+   {
+    "from": "1991-12-26",
+    "name": "Ukraine",
+    "wikipedia": "Ukraine",
+    "fr": "Ukraine",
+    "es": "Ucrania",
+    "note": "Independent since the end of the Soviet Union"
+   }
+  ],
+  "group": "Soviet Union",
+  "groupFrom": "1922-12-30",
+  "groupUntil": "1991-12-26"
  },
  "United Arab Emirates": {
   "wikipedia": "United Arab Emirates",
@@ -3101,7 +3365,31 @@
   "wikipedia": "Uzbekistan",
   "wikidata": "Q265",
   "fr": "Ouzbékistan",
-  "es": "Uzbekistán"
+  "es": "Uzbekistán",
+  "periods": [
+   {
+    "from": "1924-10-27",
+    "name": "Uzbek SSR",
+    "wikipedia": "Uzbek Soviet Socialist Republic",
+    "fr": "RSS d'Ouzbékistan",
+    "es": "RSS de Uzbekistán",
+    "label": "Uzbek SSR",
+    "labelFr": "RSS d'Ouzbékistan",
+    "labelEs": "RSS de Uzbekistán",
+    "note": "A republic of the Soviet Union from 1924"
+   },
+   {
+    "from": "1991-12-26",
+    "name": "Uzbekistan",
+    "wikipedia": "Uzbekistan",
+    "fr": "Ouzbékistan",
+    "es": "Uzbekistán",
+    "note": "Independent since the end of the Soviet Union"
+   }
+  ],
+  "group": "Soviet Union",
+  "groupFrom": "1924-10-27",
+  "groupUntil": "1991-12-26"
  },
  "Vanuatu": {
   "wikipedia": "Vanuatu",
@@ -4150,79 +4438,8 @@
   "wikipedia": "Soviet Union",
   "wikidata": "Q15180",
   "fr": "Union soviétique",
-  "es": "Unión Soviética"
- },
- "Russian SFSR": {
-  "wikipedia": "Russian Soviet Federative Socialist Republic",
-  "wikidata": "Q2184",
-  "fr": "RSFS de Russie",
-  "es": "RSFS de Rusia"
- },
- "Ukrainian SSR": {
-  "wikipedia": "Ukrainian Soviet Socialist Republic",
-  "wikidata": "Q133356",
-  "fr": "RSS d'Ukraine",
-  "es": "RSS de Ucrania"
- },
- "Byelorussian SSR": {
-  "wikipedia": "Byelorussian Soviet Socialist Republic",
-  "wikidata": "Q2895",
-  "fr": "RSS de Biélorussie",
-  "es": "RSS de Bielorrusia"
- },
- "Moldavian SSR": {
-  "wikipedia": "Moldavian Soviet Socialist Republic",
-  "wikidata": "Q170895",
-  "fr": "RSS de Moldavie",
-  "es": "RSS de Moldavia"
- },
- "Georgian SSR": {
-  "wikipedia": "Georgian Soviet Socialist Republic",
-  "wikidata": "Q130229",
-  "fr": "RSS de Géorgie",
-  "es": "RSS de Georgia"
- },
- "Armenian SSR": {
-  "wikipedia": "Armenian Soviet Socialist Republic",
-  "wikidata": "Q132856",
-  "fr": "RSS d'Arménie",
-  "es": "RSS de Armenia"
- },
- "Azerbaijan SSR": {
-  "wikipedia": "Azerbaijan Soviet Socialist Republic",
-  "wikidata": "Q131337",
-  "fr": "RSS d'Azerbaïdjan",
-  "es": "RSS de Azerbaiyán"
- },
- "Kazakh SSR": {
-  "wikipedia": "Kazakh Soviet Socialist Republic",
-  "wikidata": "Q168811",
-  "fr": "RSS kazakhe",
-  "es": "RSS de Kazajistán"
- },
- "Uzbek SSR": {
-  "wikipedia": "Uzbek Soviet Socialist Republic",
-  "wikidata": "Q484578",
-  "fr": "RSS d'Ouzbékistan",
-  "es": "RSS de Uzbekistán"
- },
- "Turkmen SSR": {
-  "wikipedia": "Turkmen Soviet Socialist Republic",
-  "wikidata": "Q199707",
-  "fr": "RSS de Turkménie",
-  "es": "RSS de Turkmenistán"
- },
- "Kirghiz SSR": {
-  "wikipedia": "Kirghiz Soviet Socialist Republic",
-  "wikidata": "Q130276",
-  "fr": "RSS kirghize",
-  "es": "RSS de Kirguistán"
- },
- "Tajik SSR": {
-  "wikipedia": "Tajik Soviet Socialist Republic",
-  "wikidata": "Q199711",
-  "fr": "RSS du Tadjikistan",
-  "es": "RSS de Tayikistán"
+  "es": "Unión Soviética",
+  "notACountry": true
  },
  "Chechen Republic of Ichkeria": {
   "wikipedia": "Chechen Republic of Ichkeria",
