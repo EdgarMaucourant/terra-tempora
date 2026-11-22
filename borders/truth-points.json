@@ -14420,6 +14420,136 @@
    ],
    "realm": "Russia",
    "why": "In Congress Poland"
+  },
+  {
+   "place": "Ashgabat (before Geok Tepe)",
+   "lonLat": [
+    58.38,
+    37.95
+   ],
+   "years": [
+    1878,
+    1880
+   ],
+   "realm": null,
+   "why": "Turkmen land, not yet held by Russia"
+  },
+  {
+   "place": "Ashgabat (Russian, 1881)",
+   "lonLat": [
+    58.38,
+    37.95
+   ],
+   "years": [
+    1881,
+    1916
+   ],
+   "realm": "Russia",
+   "why": "Founded in 1881, capital of the Transcaspian Oblast"
+  },
+  {
+   "place": "Mary (Merv, 1883)",
+   "lonLat": [
+    61.83,
+    37.6
+   ],
+   "years": [
+    1878,
+    1883
+   ],
+   "realm": null,
+   "why": "The Merv oasis, held by the Tekke Turkmens until 1884"
+  },
+  {
+   "place": "Mary (Merv, Russian)",
+   "lonLat": [
+    61.83,
+    37.6
+   ],
+   "years": [
+    1884,
+    1916
+   ],
+   "realm": "Russia",
+   "why": "Russian from 1884"
+  },
+  {
+   "place": "Murghab (Pamirs, 1890)",
+   "lonLat": [
+    73.97,
+    38.17
+   ],
+   "years": [
+    1878,
+    1894
+   ],
+   "realm": null,
+   "why": "The Pamirs, disputed by Russia, Afghanistan, China and Bukhara until 1895"
+  },
+  {
+   "place": "Khorog (Russian, 1895)",
+   "lonLat": [
+    71.55,
+    37.49
+   ],
+   "years": [
+    1895,
+    1916
+   ],
+   "realm": "Russia",
+   "why": "Russian from the Pamir agreement of 1895"
+  },
+  {
+   "place": "Krasnovodsk (Russian, 1878)",
+   "lonLat": [
+    52.97,
+    40.02
+   ],
+   "years": [
+    1878,
+    1916
+   ],
+   "realm": "Russia",
+   "why": "Russian since 1869"
+  },
+  {
+   "place": "Kars (Russian, 1878)",
+   "lonLat": [
+    43.1,
+    40.6
+   ],
+   "years": [
+    1878,
+    1904
+   ],
+   "realm": "Russia",
+   "why": "Russian from the Treaty of Berlin of 1878"
+  },
+  {
+   "place": "Batumi (Russian, 1878)",
+   "lonLat": [
+    41.64,
+    41.64
+   ],
+   "years": [
+    1878,
+    1904
+   ],
+   "realm": "Russia",
+   "why": "Russian from the Treaty of Berlin of 1878"
+  },
+  {
+   "place": "Tashkent (Russian, 1878)",
+   "lonLat": [
+    69.24,
+    41.3
+   ],
+   "years": [
+    1878,
+    1904
+   ],
+   "realm": "Russia",
+   "why": "Capital of the Governorate-General of Turkestan"
   }
  ]
 }
