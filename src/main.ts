@@ -4,12 +4,15 @@ import {
   Cartesian3,
   CesiumWidget,
   defined,
+  Ellipsoid,
+  EllipsoidalOccluder,
   EllipsoidTerrainProvider,
   ImageryLayer,
   Math as CesiumMath,
   PerspectiveFrustum,
   ScreenSpaceEventHandler,
   ScreenSpaceEventType,
+  SceneTransforms,
   TileMapServiceImageryProvider,
 } from "cesium";
 import "cesium/Build/Cesium/Widgets/CesiumWidget/CesiumWidget.css";
@@ -52,6 +55,7 @@ import { Support } from "./support";
 import { store, stored } from "./storage";
 import { loadTravel, Travel, travelWhen, type TravelEvent } from "./travel";
 import { compactQuery } from "./layout";
+import { DetailsHere } from "./detailsHere";
 import { realmFacts } from "./wikidata";
 import { lessMotion } from "./motion";
 import { reloadOnMissingChunks } from "./newRelease";
@@ -214,6 +218,43 @@ const pinLayer = new PinLayer(scene);
 
 // The flat map: the same borders in a choice of projections.
 const mapCanvas = $<HTMLCanvasElement>("map");
+
+// On phones a tap on a country only chooses it; "More details" under the spot
+// tapped opens the panel (Edgar, 2026-11-22).
+const hereOccluder = new EllipsoidalOccluder(Ellipsoid.WGS84, Cartesian3.ZERO);
+const detailsHere = new DetailsHere({
+  button: $<HTMLButtonElement>("details-here"),
+  toScreen: ([lon, lat]) => {
+    if (map.active) {
+      const point = map.pointAt([lon, lat]);
+      const box = mapCanvas.getBoundingClientRect();
+      return point ? { x: box.left + point[0], y: box.top + point[1] } : null;
+    }
+    const position = Cartesian3.fromDegrees(lon, lat);
+    hereOccluder.cameraPosition = scene.camera.positionWC;
+    if (!hereOccluder.isPointVisible(position)) return null;
+    const point = SceneTransforms.worldToWindowCoordinates(scene, position);
+    const box = scene.canvas.getBoundingClientRect();
+    return point ? { x: box.left + point.x, y: box.top + point.y } : null;
+  },
+  onOpen: () => panel.setOpen(true),
+});
+scene.postRender.addEventListener(() => detailsHere.place());
+/**
+ * True while a tap on the globe or map is handled on a phone, and after it
+ * while the realm details it showed wait for "More details".
+ */
+let quietTap = false;
+
+/** A tap or click on a realm of the globe or map; on phones it only chooses it. */
+function tapRealm(p: Polity | null | undefined, spot: [number, number] | null) {
+  if (!compactQuery.matches) return clickRealm(p, spot);
+  quietTap = true;
+  clickRealm(p, spot);
+  quietTap = false;
+  if (p && p.kind !== "unreviewed") detailsHere.show(spot);
+  else detailsHere.hide();
+}
 let mapHover = 0;
 // Borders come coarse (rings simplified to 0.2°) until 0.2° spans this many
 // CSS pixels, then in full detail.
@@ -236,7 +277,7 @@ const map = new MapView(mapCanvas, {
     mapHover = requestAnimationFrame(() => (map.signAt(x, y) ? hoverSign(x, y) : p ? hoverRealm(p, x, y) : hoverEmpty(map.lonLatAt(x, y), x, y)));
   },
   onClick: (p, x, y) => {
-    clickRealm(p, map.lonLatAt(x, y));
+    tapRealm(p, map.lonLatAt(x, y));
     if (!p) {
       const box = mapCanvas.getBoundingClientRect();
       offerSource(map.lonLatAt(x, y), box.left + x, box.top + y);
@@ -250,7 +291,10 @@ const map = new MapView(mapCanvas, {
   },
   onEventClick: (e) => openEvent(e),
   bottomInset: () => (document.querySelector("footer")?.offsetHeight ?? 0) + 12,
-  onScale: (pixelsPerDegree) => showDetailAt(pixelsPerDegree),
+  onScale: (pixelsPerDegree) => {
+    showDetailAt(pixelsPerDegree);
+    detailsHere.place();
+  },
 });
 let data: BorderData | undefined;
 let civs: Civilizations | undefined;
@@ -531,8 +575,12 @@ document.addEventListener("keydown", (e) => {
 
 // Tap or click a realm for its details.
 let shownRealm: Polity | null = null;
+/** The realm details were shown by a tap on a phone, and wait for "More details". */
+let quietInfo = false;
 function showInfo(p: Polity) {
   crumbMember = null;
+  // Only a tap on the globe or map waits for "More details"; anything else opens the panel.
+  quietInfo = quietTap;
   if (shownRealm !== p || info.hidden) {
     track("realm", { subject: p.name, year: Math.round(year) });
     announce(t("panel.shown", { name: civs?.realmName(p.name) ?? p.name }));
@@ -664,7 +712,7 @@ function showPlace() {
   sources.hidden = true;
   closeEvent();
   info.hidden = true;
-  if (!panel.isOpen) panel.setOpen(true, false);
+  if (!panel.isOpen && !quietTap) panel.setOpen(true, false);
   showPlaceNow();
 }
 
@@ -789,7 +837,13 @@ function clickRealm(p: Polity | null | undefined, spot?: [number, number] | null
   // A realm that held several places of today opens the one clicked.
   if (spot && placesOf(p.name).length > 1) {
     const clicked = p;
-    void placeAtSpot(p.name, spot).then((place) => openPlace(clicked, place ?? placeOf(clicked.name), spot));
+    const quiet = quietTap;
+    void placeAtSpot(p.name, spot).then((place) => {
+      quietTap = quiet;
+      openPlace(clicked, place ?? placeOf(clicked.name), spot);
+      if (quiet) detailsHere.show(spot);
+      quietTap = false;
+    });
     return;
   }
   openPlace(p, placeOf(p.name), spot ?? undefined);
@@ -1067,11 +1121,12 @@ blankNote.addEventListener("keydown", (e) => {
 const handler = new ScreenSpaceEventHandler(scene.canvas);
 handler.setInputAction((event: ScreenSpaceEventHandler.PositionedEvent) => {
   const e = eventAt(event.position);
+  if (e) detailsHere.hide();
   if (e && travel?.active) travel.pin(e as TravelEvent);
   else if (e) openEvent(e);
   else {
     const p = polityAt(event.position);
-    clickRealm(p, globeLonLat(event.position));
+    tapRealm(p, globeLonLat(event.position));
     if (!p) offerSource(globeLonLat(event.position), event.position.x, event.position.y);
   }
 }, ScreenSpaceEventType.LEFT_CLICK);
@@ -1255,6 +1310,7 @@ const panel = new SidePanel({
   body: $("panel-body"),
   overview: $("overview-wrap"),
   details: [info, $("event"), sources],
+  quiet: () => compactQuery.matches && quietInfo && !info.hidden,
   onBack: () => {
     info.hidden = true;
     sources.hidden = true;
@@ -2068,6 +2124,7 @@ function showMasthead() {
 
 /** Shows a civilization on the globe, with its related realms highlighted. */
 function openCiv(c: Civilization, options: OpenOptions = {}) {
+  detailsHere.hide();
   if (openGroups.size) setOpenGroups([]);
   showPin(null);
   if (!civs) return;
@@ -2204,6 +2261,7 @@ function showOutline(k: Country | null) {
  * territory, every civilization whose borders crossed its present land.
  */
 function openCountry(k: Country, view: CountryView, options: { year?: number; push?: boolean } = {}) {
+  detailsHere.hide();
   if (openGroups.size) setOpenGroups([]);
   if (!civs) return;
   const known = civs;
@@ -2373,6 +2431,7 @@ function leaveForWorld(fly: boolean) {
  */
 function showHome(options: { year?: number; fly?: boolean } = {}) {
   const fly = options.fly ?? true;
+  detailsHere.hide();
   showPin(null);
   leaveTravel();
   if (playing && options.year === undefined) setPlaying(false);
@@ -2612,6 +2671,8 @@ setupWelcome(welcome, tour, startBusy, setupWhatsNew(whatsNew, startBusy));
 // On phones the prompts step aside when the text panel opens over them.
 new MutationObserver(() => {
   if (compactQuery.matches && panel.isOpen) welcome.hidden = whatsNew.hidden = true;
+  // Once the panel is open, "More details" has done its work.
+  if (panel.isOpen) detailsHere.hide();
 }).observe($("panel"), { attributes: true, attributeFilter: ["hidden"] });
 $("tour-button").addEventListener("click", () => tour.start());
 
@@ -2627,6 +2688,7 @@ let travelRealmsAt = 0;
 function startTravel(at?: number) {
   if (!travelEvents.length || !timeline) return;
   if (playing) setPlaying(false);
+  detailsHere.hide();
   leaveHome();
   const line = timeline;
   if (!travel) {

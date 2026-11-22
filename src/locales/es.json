@@ -214,6 +214,7 @@
   },
   "globe": {
     "label": "Globo en 3D con los reinos del año elegido. Las flechas lo giran, + y − hacen zoom.",
+    "moreDetails": "Más detalles",
     "blank": {
       "title": "Aún no hay fronteras aquí",
       "text": "Estamos trabajando en estas partes del mundo, pero primero necesitamos fuentes fiables. ¿Conoces alguna?",

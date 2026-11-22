@@ -3481,6 +3481,31 @@ a {
   display: none;
 }
 
+/* On phones and tablets: "More details" under the country tapped, following
+   it as the globe turns. It opens the text panel. */
+.details-here {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 4;
+  min-height: 36px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--steppe);
+  color: #160c05;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+}
+
+.details-here[hidden] {
+  display: none;
+}
+
 /* The note on land with no borders yet, asking for a source. */
 .blank-note {
   position: fixed;
