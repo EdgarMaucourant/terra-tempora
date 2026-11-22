@@ -197,16 +197,6 @@
   },
   {
    "pieces": [
-    "TUR-3040",
-    "TUR-4839",
-    "TUR-2298",
-    "TUR-4840"
-   ],
-   "from": 1858,
-   "why": "Kars, Ardahan, Artvin and Surmalu (Iğdır): Russian from 1878 to 1918, fought over until the Treaty of Kars of 1921"
-  },
-  {
-   "pieces": [
     "ru-cp-pol-3146",
     "ru-cp-pol-3170",
     "ru-cp-pol-3152",
@@ -242,10 +232,17 @@
     "RUS-2305",
     "RUS-2303",
     "RUS-2416",
-    "RUS-2417"
+    "RUS-2417",
+    "TUR-3040",
+    "TUR-4839",
+    "TUR-2298",
+    "TUR-4840",
+    "circassia-krasnodar",
+    "imamate-chechnya",
+    "imamate-dagestan"
    ],
-   "from": 1878,
-   "why": "The Caucasus (Georgia, Armenia, Azerbaijan and the North Caucasus), reviewed back to the Treaty of Berlin; the conquest of the Caucasus before 1878 is the next step"
+   "from": 1815,
+   "why": "The Caucasus (Georgia, Armenia, Azerbaijan, the North Caucasus, and Kars, Ardahan, Artvin and Igdir in Turkey), from the end of the Napoleonic wars"
   },
   {
    "pieces": [
@@ -390,7 +387,8 @@
    "before": [
     {
      "pieces": [
-      "RUS-2416"
+      "RUS-2416",
+      "imamate-chechnya"
      ],
      "owner": "Russia",
      "source": {
@@ -421,7 +419,8 @@
    "before": [
     {
      "pieces": [
-      "RUS-2416"
+      "RUS-2416",
+      "imamate-chechnya"
      ],
      "owner": "Russia",
      "source": {
@@ -443,7 +442,8 @@
    "before": [
     {
      "pieces": [
-      "RUS-2416"
+      "RUS-2416",
+      "imamate-chechnya"
      ],
      "owner": "Russia",
      "source": {
@@ -618,7 +618,8 @@
    "before": [
     {
      "pieces": [
-      "RUS-2416"
+      "RUS-2416",
+      "imamate-chechnya"
      ],
      "owner": "Russia",
      "source": {
@@ -3469,7 +3470,8 @@
     {
      "pieces": [
       "RUS-2371",
-      "RUS-2279"
+      "RUS-2279",
+      "circassia-krasnodar"
      ],
      "owner": "Russia",
      "source": {
@@ -3700,7 +3702,8 @@
     {
      "pieces": [
       "RUS-2371",
-      "RUS-2279"
+      "RUS-2279",
+      "circassia-krasnodar"
      ],
      "owner": "Russia",
      "source": {
@@ -8989,6 +8992,36 @@
    ]
   },
   {
+   "date": "1867-01-01",
+   "what": "Russia deposes Prince Niko Dadiani and abolishes the Principality of Mingrelia, under its protection since 1803",
+   "source": {
+    "title": "Principality of Mingrelia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Principality_of_Mingrelia"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "GEO-3029"
+     ],
+     "owner": "Principality of Mingrelia",
+     "source": {
+      "title": "Principality of Mingrelia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Principality_of_Mingrelia"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1803-12-04",
+      "note": "A Russian protectorate",
+      "source": {
+       "title": "Principality of Mingrelia (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Principality_of_Mingrelia"
+      }
+     }
+    }
+   ]
+  },
+  {
    "date": "1866-10-30",
    "what": "Russian troops storm Jizzakh, the Bukharan fortress on the road to Samarkand",
    "source": {
@@ -9075,6 +9108,36 @@
    ]
   },
   {
+   "date": "1864-07-08",
+   "what": "Russia abolishes the Principality of Abkhazia, under its protection since 1810, and rules it directly",
+   "source": {
+    "title": "Principality of Abkhazia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Principality_of_Abkhazia"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "GEO-3015"
+     ],
+     "owner": "Principality of Abkhazia",
+     "source": {
+      "title": "Principality of Abkhazia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Principality_of_Abkhazia"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1810-02-17",
+      "note": "A Russian protectorate",
+      "source": {
+       "title": "Principality of Abkhazia (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Principality_of_Abkhazia"
+      }
+     }
+    }
+   ]
+  },
+  {
    "date": "1864-06-12",
    "what": "Russian troops take the town of Turkestan from Kokand; Chimkent falls in September",
    "source": {
@@ -9113,6 +9176,28 @@
      "source": {
       "title": "Russian conquest of Turkestan (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Russian_conquest_of_Turkestan"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1864-05-21",
+   "what": "The Caucasian War ends with the surrender of the last Circassians at Kbaada (Krasnaya Polyana); most Circassians are driven to the Ottoman Empire",
+   "source": {
+    "title": "Circassian genocide (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Circassian_genocide"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "circassia-krasnodar",
+      "RUS-2279"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Circassia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Circassia"
      }
     }
    ]
@@ -9162,6 +9247,49 @@
    ]
   },
   {
+   "date": "1859-08-25",
+   "what": "Imam Shamil surrenders at Gunib: the Caucasian Imamate ends and highland Dagestan becomes Russian",
+   "source": {
+    "title": "Caucasian Imamate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Caucasian_Imamate"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "imamate-dagestan"
+     ],
+     "owner": "Caucasian Imamate",
+     "source": {
+      "title": "Caucasian Imamate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Caucasian_Imamate"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1859-04-13",
+   "what": "Russian troops take Vedeno, Shamil's capital in Chechnya",
+   "source": {
+    "title": "Caucasian Imamate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Caucasian_Imamate"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "imamate-chechnya",
+      "akhalkhevi"
+     ],
+     "owner": "Caucasian Imamate",
+     "source": {
+      "title": "Caucasian Imamate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Caucasian_Imamate"
+     }
+    }
+   ]
+  },
+  {
    "date": "1859-02-05",
    "what": "Moldavia, which holds Southern Bessarabia since 1856, elects the same prince as Wallachia: the two form the United Principalities",
    "source": {
@@ -9182,6 +9310,367 @@
      "source": {
       "title": "Southern Bessarabia (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Southern_Bessarabia"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1856-03-30",
+   "what": "The Treaty of Paris ends the Crimean War; Russia gives Kars back to the Ottoman Empire",
+   "source": {
+    "title": "Treaty of Paris (1856) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Paris_(1856)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "TUR-3040"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Siege of Kars (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Kars"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1855-11-28",
+      "note": "Taken by Russia in the Crimean War",
+      "source": {
+       "title": "Siege of Kars (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Siege_of_Kars"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1855-11-28",
+   "what": "The Ottoman garrison of Kars surrenders to Russian troops after a five-month siege",
+   "source": {
+    "title": "Siege of Kars (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Kars"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "TUR-3040"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Siege of Kars (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Kars"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1840-03-01",
+   "what": "Chechnya rises against Russia and joins Shamil's Imamate",
+   "source": {
+    "title": "Caucasian Imamate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Caucasian_Imamate"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "imamate-chechnya",
+      "akhalkhevi"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Chechnya (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chechnya"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1829-09-14",
+   "what": "The Treaty of Adrianople gives Russia Akhaltsikhe and Akhalkalaki and the Black Sea coast north of Adjara; Kars goes back to the Ottomans",
+   "source": {
+    "title": "Treaty of Adrianople (1829) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Adrianople_(1829)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GEO-3038"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Treaty of Adrianople (1829) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Adrianople_(1829)"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1828-08-28",
+      "note": "Taken by Russia in the Russo-Turkish War",
+      "source": {
+       "title": "Russo-Turkish War (1828–1829) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Russo-Turkish_War_(1828–1829)"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "TUR-3040"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Russo-Turkish War (1828–1829) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Russo-Turkish_War_(1828–1829)"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1828-07-05",
+      "note": "Taken by Russia in the Russo-Turkish War",
+      "source": {
+       "title": "Russo-Turkish War (1828–1829) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Russo-Turkish_War_(1828–1829)"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1829-01-01",
+   "what": "Russia annexes the Principality of Guria, under its protection since 1810",
+   "source": {
+    "title": "Principality of Guria (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Principality_of_Guria"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "GEO-3028"
+     ],
+     "owner": "Principality of Guria",
+     "source": {
+      "title": "Principality of Guria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Principality_of_Guria"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1810-06-01",
+      "note": "A Russian protectorate",
+      "source": {
+       "title": "Principality of Guria (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Principality_of_Guria"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1829-01-01",
+   "what": "Ghazi Muhammad, the first imam, calls the highlands of Dagestan to holy war against Russia: the start of the Caucasian Imamate",
+   "source": {
+    "title": "Caucasian Imamate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Caucasian_Imamate"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "imamate-dagestan"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Caucasian Imamate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Caucasian_Imamate"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1828-10-20",
+   "what": "Russian troops defeat the Karachays at Khasaut; Karachay submits to Russia",
+   "source": {
+    "title": "Karachays (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Karachays"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2280",
+      "klukhori"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Karachays (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Karachays"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1828-08-28",
+   "what": "Russian troops storm the Ottoman fortress of Akhaltsikhe",
+   "source": {
+    "title": "Russo-Turkish War (1828–1829) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Russo-Turkish_War_(1828–1829)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GEO-3038"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Akhaltsikhe (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Akhaltsikhe"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1828-07-05",
+   "what": "Russian troops take Kars",
+   "source": {
+    "title": "Russo-Turkish War (1828–1829) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Russo-Turkish_War_(1828–1829)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "TUR-3040"
+     ],
+     "owner": "Ottoman Empire",
+     "source": {
+      "title": "Kars (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kars"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1828-02-22",
+   "what": "The Treaty of Turkmenchay gives Russia the khanates of Erivan and Nakhchivan and sets the border on the Aras",
+   "source": {
+    "title": "Treaty of Turkmenchay (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Turkmenchay"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ARM-1671",
+      "ARM-1675",
+      "ARM-1673",
+      "ARM-1672",
+      "ARM-1733",
+      "ARM-1554",
+      "ARM-1553",
+      "TUR-4840"
+     ],
+     "owner": "Iran",
+     "source": {
+      "title": "Erivan Khanate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Erivan_Khanate"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1827-10-13",
+      "note": "Taken by Russia in the Russo-Persian War",
+      "source": {
+       "title": "Russo-Persian War (1826–1828) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Russo-Persian_War_(1826–1828)"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "AZE-2419",
+      "AZE-2415",
+      "AZE-5567",
+      "AZE-2420",
+      "AZE-2423",
+      "AZE-2421",
+      "AZE-2418",
+      "AZE-2422"
+     ],
+     "owner": "Iran",
+     "source": {
+      "title": "Nakhchivan Khanate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Nakhchivan_Khanate"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1827-07-19",
+      "note": "Taken by Russia in the Russo-Persian War",
+      "source": {
+       "title": "Russo-Persian War (1826–1828) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Russo-Persian_War_(1826–1828)"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1827-10-13",
+   "what": "Russian troops under Paskevich take Erivan",
+   "source": {
+    "title": "Russo-Persian War (1826–1828) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Russo-Persian_War_(1826–1828)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "ARM-1671",
+      "ARM-1675",
+      "ARM-1673",
+      "ARM-1672",
+      "ARM-1733",
+      "ARM-1554",
+      "ARM-1553",
+      "TUR-4840"
+     ],
+     "owner": "Iran",
+     "source": {
+      "title": "Erivan Khanate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Erivan_Khanate"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1827-07-19",
+   "what": "Russian troops take Abbasabad and hold the Nakhchivan khanate",
+   "source": {
+    "title": "Russo-Persian War (1826–1828) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Russo-Persian_War_(1826–1828)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "AZE-2419",
+      "AZE-2415",
+      "AZE-5567",
+      "AZE-2420",
+      "AZE-2423",
+      "AZE-2421",
+      "AZE-2418",
+      "AZE-2422"
+     ],
+     "owner": "Iran",
+     "source": {
+      "title": "Nakhchivan Khanate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Nakhchivan_Khanate"
      }
     }
    ]
