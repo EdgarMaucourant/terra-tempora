@@ -18985,6 +18985,238 @@
      ]
     ]
    }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "majha",
+    "from": "IND-3249",
+    "note": "The Indian Punjab north and west of the Beas and the Sutlej (Amritsar, Gurdaspur, Tarn Taran), Sikh until 1849, traced roughly along the rivers",
+    "source": {
+     "title": "Sikh Empire (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Sikh_Empire"
+    }
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       74.3,
+       32.8
+      ],
+      [
+       76.1,
+       32.8
+      ],
+      [
+       75.95,
+       32.05
+      ],
+      [
+       75.6,
+       31.7
+      ],
+      [
+       75.3,
+       31.4
+      ],
+      [
+       74.95,
+       31.15
+      ],
+      [
+       74.7,
+       31.05
+      ],
+      [
+       74.3,
+       31.0
+      ],
+      [
+       74.3,
+       32.8
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "jullundur-doab",
+    "from": "IND-3249",
+    "note": "The Jullundur Doab between the Beas and the Sutlej (Jalandhar, Hoshiarpur, Kapurthala), ceded by the Sikhs in 1846, traced roughly along the rivers",
+    "source": {
+     "title": "Treaty of Lahore (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_Lahore"
+    }
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       75.95,
+       32.05
+      ],
+      [
+       75.6,
+       31.7
+      ],
+      [
+       75.3,
+       31.4
+      ],
+      [
+       74.95,
+       31.15
+      ],
+      [
+       75.3,
+       31.05
+      ],
+      [
+       75.8,
+       30.95
+      ],
+      [
+       76.2,
+       30.98
+      ],
+      [
+       76.5,
+       31.05
+      ],
+      [
+       76.7,
+       31.4
+      ],
+      [
+       76.4,
+       31.9
+      ],
+      [
+       76.1,
+       32.8
+      ],
+      [
+       75.95,
+       32.05
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "bahawalpur",
+    "from": "PAK-1113",
+    "note": "Bahawalpur, the princely state south and east of the Sutlej, Panjnad and Indus, under British protection from 1833, traced roughly along the rivers",
+    "source": {
+     "title": "Bahawalpur (princely state) (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Bahawalpur_(princely_state)"
+    }
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       74.6,
+       30.9
+      ],
+      [
+       73.9,
+       30.4
+      ],
+      [
+       73.25,
+       30.05
+      ],
+      [
+       72.5,
+       29.7
+      ],
+      [
+       71.7,
+       29.45
+      ],
+      [
+       71.0,
+       29.35
+      ],
+      [
+       70.4,
+       28.95
+      ],
+      [
+       69.9,
+       28.5
+      ],
+      [
+       69.5,
+       27.6
+      ],
+      [
+       76.0,
+       27.6
+      ],
+      [
+       76.0,
+       30.9
+      ],
+      [
+       74.6,
+       30.9
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sikkim-morang",
+    "from": "IND-3257",
+    "note": "The Sikkim Morang or Terai around Siliguri, below the Darjeeling hills and west of the Teesta, annexed from Sikkim in 1850",
+    "source": {
+     "title": "Darjeeling district (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Darjeeling_district"
+    }
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       87.95,
+       26.92
+      ],
+      [
+       88.46,
+       26.92
+      ],
+      [
+       88.46,
+       26.55
+      ],
+      [
+       88.3,
+       26.42
+      ],
+      [
+       87.95,
+       26.42
+      ],
+      [
+       87.95,
+       26.92
+      ]
+     ]
+    ]
+   }
   }
  ]
 }
