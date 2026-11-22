@@ -11391,6 +11391,207 @@
    "summary": "After Russian expeditions into the Pamirs from 1891 and clashes with Afghan troops, Britain and Russia agree on 11 March 1895 that the Panj river marks their spheres. Russia keeps the high Pamirs and the lands north of the river, Afghanistan those to the south, and the thin Wakhan Corridor is left to Afghanistan to keep the two empires apart. It is the last great deal of the Great Game in Central Asia.",
    "wikipedia": "Pamir_Mountains",
    "search": "Pamir agreement 11 March 1895 Anglo-Russian Pamir Boundary Commission Panj river Wakhan Corridor Afghanistan Great Game Shughnan Murghab Khorog"
+  },
+  {
+   "id": "treaty-of-aigun-1858",
+   "kind": "treaty",
+   "year": 1858,
+   "title": "The Treaty of Aigun, May 1858",
+   "place": "Aigun, on the Amur",
+   "lonLat": [
+    127.5,
+    50.25
+   ],
+   "civs": [
+    "russia",
+    "china"
+   ],
+   "summary": "With China weakened by the Taiping rebellion and the war with Britain and France, Governor Nikolay Muravyov forces the Qing to sign the Treaty of Aigun on 28 May 1858. China gives up the north bank of the Amur, held by the Qing since 1689, and the land between the Ussuri and the sea is left in common. Blagoveshchensk is founded across the river the same year.",
+   "wikipedia": "Treaty_of_Aigun",
+   "search": "Treaty of Aigun 28 May 1858 Muravyov Yishan Amur river north bank Outer Manchuria Qing China cession Stanovoy Nerchinsk Blagoveshchensk Sixty-Four Villages"
+  },
+  {
+   "id": "convention-of-peking-russia-1860",
+   "kind": "treaty",
+   "year": 1860,
+   "title": "Russia gains the Ussuri coast, November 1860",
+   "place": "Vladivostok",
+   "lonLat": [
+    131.9,
+    43.12
+   ],
+   "civs": [
+    "russia",
+    "china"
+   ],
+   "summary": "Acting as a go-between after British and French troops take Beijing, the Russian envoy Nikolay Ignatyev obtains in the Convention of Peking of 14 November 1860 all the land between the Ussuri and the Sea of Japan. China loses its coast north of Korea; Russia has founded Vladivostok, \"ruler of the East\", there that summer.",
+   "wikipedia": "Amur_Annexation",
+   "search": "Convention of Peking 14 November 1860 Ignatyev Russia Ussuri krai Primorye Outer Manchuria cession Vladivostok founded Amur annexation Qing"
+  },
+  {
+   "id": "january-uprising-1863",
+   "kind": "revolution",
+   "year": 1863,
+   "to": 1864,
+   "title": "The January Uprising in Poland, 1863 – 1864",
+   "place": "Warsaw",
+   "lonLat": [
+    21.01,
+    52.23
+   ],
+   "civs": [
+    "congress-poland",
+    "russia"
+   ],
+   "summary": "On 22 January 1863 Polish patriots rise against Russian rule, set up an underground national government and fight a guerrilla war in Poland and Lithuania for over a year. Russia crushes the rising, hangs its leaders in 1864 and then ends what was left of the Kingdom of Poland's self-rule, ruling it as the \"Vistula Land\".",
+   "wikipedia": "January_Uprising",
+   "search": "January Uprising 1863 1864 Polish Lithuanian insurrection Russian Empire Congress Poland Traugutt Warsaw national government Vistula Land Russification"
+  },
+  {
+   "id": "siege-of-tashkent-1865",
+   "kind": "siege",
+   "year": 1865,
+   "title": "Russia takes Tashkent, June 1865",
+   "place": "Tashkent",
+   "lonLat": [
+    69.24,
+    41.3
+   ],
+   "civs": [
+    "russia",
+    "khanate-of-kokand"
+   ],
+   "summary": "Without orders from Saint Petersburg, General Mikhail Chernyayev storms Tashkent, the largest city of Central Asia, which surrenders on 29 June 1865 after the death of Kokand's regent Alimqul. Tashkent becomes the capital of the Governorate-General of Turkestan, set up in 1867, from which Russia rules its conquests in Central Asia.",
+   "wikipedia": "Siege_of_Tashkent",
+   "search": "Siege of Tashkent June 1865 Chernyayev Khanate of Kokand Alimqul Russian conquest of Turkestan Governorate-General of Turkestan 1867 Kaufmann"
+  },
+  {
+   "id": "alaska-purchase-1867",
+   "kind": "treaty",
+   "year": 1867,
+   "title": "Russia sells Alaska to the United States, 1867",
+   "place": "Sitka (Novo-Arkhangelsk)",
+   "lonLat": [
+    -135.0,
+    57.4
+   ],
+   "civs": [
+    "russia",
+    "russian-america",
+    "united-states"
+   ],
+   "summary": "Short of money after the Crimean War and unable to defend its distant colony, Russia sells Russian America to the United States for 7.2 million dollars, signed on 30 March 1867. The Russian flag is lowered at Sitka on 18 October 1867, ending Russia's presence in America.",
+   "wikipedia": "Alaska_Purchase",
+   "search": "Alaska Purchase 1867 Seward Stoeckl 7.2 million dollars Russian America Sitka Novo-Arkhangelsk transfer 18 October 1867 Seward's Folly"
+  },
+  {
+   "id": "samarkand-and-bukhara-protectorate-1868",
+   "kind": "empire",
+   "year": 1868,
+   "title": "Samarkand falls and Bukhara becomes a protectorate, 1868",
+   "place": "Samarkand",
+   "lonLat": [
+    66.96,
+    39.65
+   ],
+   "civs": [
+    "russia",
+    "emirate-of-bukhara"
+   ],
+   "summary": "General Kaufmann defeats the Emir of Bukhara and takes Samarkand, the old capital of Timur, in May 1868. By the treaty of 23 June 1868 the emir gives up Samarkand and the upper Zarafshan valley and accepts Russia's protection: Bukhara keeps its emir but follows Russian orders until 1920.",
+   "wikipedia": "Russian_conquest_of_Bukhara",
+   "search": "Samarkand 1868 Kaufmann Chupan-Ata Zerabulak Emir Muzaffar Bukhara protectorate treaty 23 June 1868 Zarafshan district Russian conquest"
+  },
+  {
+   "id": "khiva-protectorate-1873",
+   "kind": "empire",
+   "year": 1873,
+   "title": "Khiva becomes a Russian protectorate, 1873",
+   "place": "Khiva",
+   "lonLat": [
+    60.36,
+    41.38
+   ],
+   "civs": [
+    "russia",
+    "khanate-of-khiva"
+   ],
+   "summary": "Russian columns cross the deserts from Tashkent, Orenburg and the Caspian and take Khiva in May 1873. By the Treaty of Gandemian of 12 August the khan becomes Russia's vassal, frees the slaves held in the khanate and gives up all land on the right bank of the Amu Darya, which becomes Russian.",
+   "wikipedia": "Khivan_campaign_of_1873",
+   "search": "Khivan campaign 1873 Kaufmann Khiva Khanate Treaty of Gandemian 12 August 1873 protectorate Amu Darya right bank Amu Darya department slavery abolished"
+  },
+  {
+   "id": "sakhalin-kurils-exchange-1875",
+   "kind": "treaty",
+   "year": 1875,
+   "title": "Sakhalin is exchanged for the Kurils, 1875",
+   "place": "Sakhalin",
+   "lonLat": [
+    142.73,
+    46.96
+   ],
+   "civs": [
+    "russia",
+    "japan"
+   ],
+   "summary": "Since the Treaty of Shimoda of 1855, Sakhalin had been shared by Russia and Japan. By the Treaty of Saint Petersburg, signed on 7 May 1875, Japan gives up its claims on Sakhalin, which becomes wholly Russian, and receives in exchange all the Kuril Islands up to Kamchatka.",
+   "wikipedia": "Treaty_of_Saint_Petersburg_(1875)",
+   "search": "Treaty of Saint Petersburg 1875 Sakhalin Kuril Islands exchange Japan Russia Enomoto Gorchakov Karafuto Chishima Shimoda 1855 joint Sakhalin"
+  },
+  {
+   "id": "annexation-of-kokand-1876",
+   "kind": "empire",
+   "year": 1876,
+   "title": "Russia annexes Kokand, February 1876",
+   "place": "Kokand",
+   "lonLat": [
+    70.94,
+    40.53
+   ],
+   "civs": [
+    "russia",
+    "khanate-of-kokand"
+   ],
+   "summary": "A revolt against Khan Khudayar, Russia's client, spreads into a holy war against the Russians in 1875. Russian troops under Kaufmann and Skobelev crush it, and on 19 February 1876 the Khanate of Kokand is abolished: the Fergana valley becomes Russia's Fergana Oblast.",
+   "wikipedia": "Khanate_of_Kokand",
+   "search": "Kokand annexation 19 February 1876 Fergana Oblast Skobelev Pulat Khan revolt Khudayar Khan Kaufmann Russian conquest of Kokand Andijan Namangan"
+  },
+  {
+   "id": "siege-of-kars-1877",
+   "kind": "siege",
+   "year": 1877,
+   "title": "Russia takes Kars, November 1877",
+   "place": "Kars",
+   "lonLat": [
+    43.1,
+    40.6
+   ],
+   "civs": [
+    "russia",
+    "ottoman-empire"
+   ],
+   "summary": "In the Russo-Turkish War, Russian troops take Ardahan in May 1877 and then storm the great Ottoman fortress of Kars in a night assault on 17–18 November 1877. Russia keeps Kars and Ardahan at the peace and rules them until 1918.",
+   "wikipedia": "Siege_of_Kars_(1877)",
+   "search": "Siege of Kars November 1877 Russo-Turkish War Loris-Melikov Lazarev night assault Ardahan May 1877 Caucasus front Ottoman fortress"
+  },
+  {
+   "id": "treaty-of-berlin-russia-1878",
+   "kind": "treaty",
+   "year": 1878,
+   "title": "The Treaty of Berlin, July 1878",
+   "place": "Batumi",
+   "lonLat": [
+    41.64,
+    41.64
+   ],
+   "civs": [
+    "russia",
+    "ottoman-empire",
+    "romania"
+   ],
+   "summary": "The great powers meet in Berlin to revise the peace Russia imposed on the Ottomans at San Stefano. The treaty of 13 July 1878 still gives Russia Kars, Ardahan and Batumi, made a free port, and takes Southern Bessarabia back from Romania, which receives Northern Dobruja instead and is recognised as independent.",
+   "wikipedia": "Treaty_of_Berlin_(1878)",
+   "search": "Congress of Berlin 13 July 1878 Treaty of Berlin San Stefano Russia Kars Ardahan Batumi free port Southern Bessarabia Romania Dobruja Bismarck"
   }
  ]
 }
