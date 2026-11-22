@@ -20,7 +20,7 @@
     "LVA",
     "LTU"
    ],
-   "from": 1939,
+   "from": 1922,
    "why": "Russia and the other fourteen republics of the former Soviet Union, with the land held by breakaway states (Chechnya, Transnistria, Abkhazia, South Ossetia, Nagorno-Karabakh) hatched"
   },
   {
@@ -32,7 +32,7 @@
     "agdam-west",
     "fuzuli-west"
    ],
-   "from": 1939,
+   "from": 1922,
    "why": "Cuts for South Ossetia and for the land held by Armenian forces around Nagorno-Karabakh"
   },
   {
@@ -43,7 +43,7 @@
     "klukhori",
     "akhalkhevi"
    ],
-   "from": 1939,
+   "from": 1922,
    "why": "Cuts for land moved between Soviet republics after the war: the Estonian and Latvian border districts given to the Russian SFSR, and the Karachay and Chechen highlands given to the Georgian SSR from 1943-44 to 1957"
   },
   {
@@ -75,7 +75,7 @@
     "south-sakhalin",
     "kuril-islands"
    ],
-   "from": 1939,
+   "from": 1922,
    "why": "Finland, whose borders moved with the Soviet Union in 1940 and 1944, and the cuts for land that changed hands between 1939 and 1946"
   },
   {
@@ -86,8 +86,18 @@
     "kaluga-west",
     "voronezh-west"
    ],
-   "from": 1939,
+   "from": 1922,
    "why": "Cuts for Soviet land held by Germany and Finland in 1941-44 that was only part of a region"
+  },
+  {
+   "pieces": [
+    "taganrog-shakhty",
+    "east-gomel",
+    "bobruisk",
+    "khiva-delta"
+   ],
+   "from": 1922,
+   "why": "Cuts for land moved between Soviet republics in the 1920s: Taganrog and Shakhty, Gomel and Rechytsa, Bobruisk, and the Khivan part of Karakalpakstan"
   }
  ],
  "changes": [
@@ -1744,7 +1754,8 @@
    "before": [
     {
      "pieces": [
-      "BLR-2340"
+      "BLR-2340",
+      "bobruisk"
      ],
      "owner": "Belarus",
      "source": {
@@ -2411,7 +2422,8 @@
    "before": [
     {
      "pieces": [
-      "BLR-2339"
+      "BLR-2339",
+      "east-gomel"
      ],
      "owner": "Belarus",
      "source": {
@@ -2908,7 +2920,8 @@
    "before": [
     {
      "pieces": [
-      "RUS-2367"
+      "RUS-2367",
+      "taganrog-shakhty"
      ],
      "owner": "Russia",
      "source": {
@@ -3213,7 +3226,8 @@
    "before": [
     {
      "pieces": [
-      "RUS-2367"
+      "RUS-2367",
+      "taganrog-shakhty"
      ],
      "owner": "Russia",
      "source": {
@@ -3827,7 +3841,8 @@
    "before": [
     {
      "pieces": [
-      "BLR-2339"
+      "BLR-2339",
+      "east-gomel"
      ],
      "owner": "Belarus",
      "source": {
@@ -3933,7 +3948,8 @@
    "before": [
     {
      "pieces": [
-      "BLR-2340"
+      "BLR-2340",
+      "bobruisk"
      ],
      "owner": "Belarus",
      "source": {
@@ -4774,7 +4790,8 @@
    "before": [
     {
      "pieces": [
-      "RUS-2353"
+      "RUS-2353",
+      "east-karelia"
      ],
      "owner": "Russia",
      "source": {
@@ -4948,6 +4965,248 @@
      "source": {
       "title": "Carpathian Ruthenia (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Carpathian_Ruthenia"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1936-12-05",
+   "what": "The new Soviet constitution makes the Kazakh and Kirghiz autonomous republics of the Russian SFSR into union republics, moves Karakalpakstan to the Uzbek SSR, and splits the Transcaucasian SFSR into the Georgian, Armenian and Azerbaijan SSRs",
+   "source": {
+    "title": "1936 Constitution of the Soviet Union (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/1936_Constitution_of_the_Soviet_Union"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "KAZ"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Kazakh Autonomous Socialist Soviet Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kazakh_Autonomous_Socialist_Soviet_Republic"
+     }
+    },
+    {
+     "pieces": [
+      "KGZ"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Kirghiz Autonomous Socialist Soviet Republic (1926–1936) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kirghiz_Autonomous_Socialist_Soviet_Republic_(1926–1936)"
+     }
+    },
+    {
+     "pieces": [
+      "UZB-356",
+      "khiva-delta"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Karakalpak Autonomous Soviet Socialist Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Karakalpak_Autonomous_Soviet_Socialist_Republic"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1929-10-16",
+   "what": "The Tajik ASSR leaves the Uzbek SSR and becomes the Tajik SSR, a union republic, with Khujand added",
+   "source": {
+    "title": "Tajik Soviet Socialist Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tajik_Soviet_Socialist_Republic"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TJK"
+     ],
+     "owner": "Uzbekistan",
+     "source": {
+      "title": "Tajik Autonomous Soviet Socialist Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tajik_Autonomous_Soviet_Socialist_Republic"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1926-12-06",
+   "what": "The Byelorussian SSR is enlarged again with Gomel and Rechytsa, from the Gomel Governorate of the Russian SFSR",
+   "source": {
+    "title": "Gomel Governorate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Gomel_Governorate"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "east-gomel"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Gomel Governorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gomel_Governorate"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1925-05-15",
+   "what": "Japan withdraws from northern Sakhalin, held since 1920, under the Soviet–Japanese Basic Convention",
+   "source": {
+    "title": "Japanese occupation of northern Sakhalin (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_northern_Sakhalin"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2616"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Japanese occupation of northern Sakhalin (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_northern_Sakhalin"
+     },
+     "hatch": {
+      "by": "Japan",
+      "since": "1920-04-21",
+      "note": "Russian land held by Japan from 1920, after the Nikolayevsk Incident, until May 1925",
+      "source": {
+       "title": "Japanese occupation of northern Sakhalin (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_northern_Sakhalin"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1924-10-27",
+   "what": "National delimitation in Central Asia: the Turkestan ASSR, Bukhara and Khorezm are split into the Uzbek SSR (with a Tajik ASSR) and the Turkmen SSR; Karakalpakstan, Kyrgyzstan and southern Kazakhstan stay in the Russian SFSR",
+   "source": {
+    "title": "National delimitation in the Soviet Union (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/National_delimitation_in_the_Soviet_Union"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "UZB-372",
+      "UZB-4828",
+      "UZB-371",
+      "UZB-370",
+      "UZB-358",
+      "UZB-364",
+      "UZB-365",
+      "UZB-363",
+      "UZB-356",
+      "TJK-369",
+      "TJK-366",
+      "TKM-352",
+      "TKM-351",
+      "TKM-360"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Turkestan Autonomous Soviet Socialist Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Turkestan_Autonomous_Soviet_Socialist_Republic"
+     }
+    },
+    {
+     "pieces": [
+      "UZB-354",
+      "UZB-357",
+      "UZB-361",
+      "UZB-362",
+      "TJK-367",
+      "TJK-368",
+      "TJK-5491",
+      "TKM-359"
+     ],
+     "owner": "Bukharan People's Soviet Republic",
+     "source": {
+      "title": "Bukharan People's Soviet Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bukharan_People's_Soviet_Republic"
+     }
+    },
+    {
+     "pieces": [
+      "UZB-355",
+      "TKM-353",
+      "khiva-delta"
+     ],
+     "owner": "Khorezm People's Soviet Republic",
+     "source": {
+      "title": "Khorezm People's Soviet Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Khorezm_People's_Soviet_Republic"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1924-10-01",
+   "what": "The Taganrog and Shakhty districts move from the Ukrainian SSR to the Russian SFSR",
+   "source": {
+    "title": "Taganrog (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Taganrog"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "taganrog-shakhty"
+     ],
+     "owner": "Ukraine",
+     "source": {
+      "title": "Donetsk Governorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Donetsk_Governorate"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1924-03-03",
+   "what": "The Russian SFSR gives most of the Vitebsk and Mogilev governorates to the Byelorussian SSR, which doubles in size",
+   "source": {
+    "title": "Byelorussian Soviet Socialist Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Byelorussian_Soviet_Socialist_Republic"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "BLR-2341",
+      "BLR-2340"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Vitebsk Governorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Vitebsk_Governorate"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1923-01-15",
+   "what": "Lithuania takes the Memel Territory, under French administration for the Allies since 1920, in the Klaipėda Revolt",
+   "source": {
+    "title": "Klaipėda Revolt (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Klaipėda_Revolt"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "memel"
+     ],
+     "owner": "France",
+     "source": {
+      "title": "Klaipėda Region (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Klaipėda_Region"
      }
     }
    ]
