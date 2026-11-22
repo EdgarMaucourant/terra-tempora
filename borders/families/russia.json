@@ -20,7 +20,7 @@
     "LVA",
     "LTU"
    ],
-   "from": 1985,
+   "from": 1945,
    "why": "Russia and the other fourteen republics of the former Soviet Union, with the land held by breakaway states (Chechnya, Transnistria, Abkhazia, South Ossetia, Nagorno-Karabakh) hatched"
   },
   {
@@ -32,8 +32,32 @@
     "agdam-west",
     "fuzuli-west"
    ],
-   "from": 1985,
+   "from": 1945,
    "why": "Cuts for South Ossetia and for the land held by Armenian forces around Nagorno-Karabakh"
+  },
+  {
+   "pieces": [
+    "pechory",
+    "ivangorod",
+    "abrene",
+    "klukhori",
+    "akhalkhevi"
+   ],
+   "from": 1945,
+   "why": "Cuts for land moved between Soviet republics after the war: the Estonian and Latvian border districts given to the Russian SFSR, and the Karachay and Chechen highlands given to the Georgian SSR from 1943-44 to 1957"
+  },
+  {
+   "pieces": [
+    "FIN",
+    "DNK",
+    "IRN",
+    "port-arthur",
+    "CHN-1839",
+    "CHN-1828",
+    "CHN-1813"
+   ],
+   "from": 1945,
+   "why": "Land outside the Soviet Union that Soviet forces held after the war: Finland (Porkkala), Denmark (Bornholm) and Iran, whose borders have not changed since 1945, and Manchuria with Port Arthur"
   }
  ],
  "changes": [
@@ -444,6 +468,303 @@
        "title": "Occupation of the Baltic states (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Occupation_of_the_Baltic_states"
       }
+     }
+    },
+    {
+     "pieces": [
+      "pechory",
+      "ivangorod"
+     ],
+     "owner": "Estonia",
+     "source": {
+      "title": "Pechorsky District (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pechorsky_District"
+     },
+     "hatch": {
+      "by": "Soviet Union",
+      "since": "1940-06-17",
+      "note": "Estonian land, occupied with Estonia in 1940 and moved from the Estonian SSR to the Russian SFSR in 1945; most Western states never recognised the annexation. Russia kept it in 1991",
+      "source": {
+       "title": "Pechorsky District (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Pechorsky_District"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "abrene"
+     ],
+     "owner": "Latvia",
+     "source": {
+      "title": "Pytalovsky District (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pytalovsky_District"
+     },
+     "hatch": {
+      "by": "Soviet Union",
+      "since": "1940-06-17",
+      "note": "Latvian land (the Abrene district), occupied with Latvia in 1940 and moved from the Latvian SSR to the Russian SFSR in 1944; most Western states never recognised the annexation. Russia kept it in 1991, and Latvia accepted the border in 2007",
+      "source": {
+       "title": "Pytalovsky District (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Pytalovsky_District"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1957-01-09",
+   "what": "The Karachay and Chechen peoples, deported in 1943-44, are allowed home: their highlands go back from the Georgian SSR to the Russian SFSR",
+   "source": {
+    "title": "Karachay-Cherkess Autonomous Oblast (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Karachay-Cherkess_Autonomous_Oblast"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "klukhori"
+     ],
+     "owner": "Georgia",
+     "source": {
+      "title": "Klukhori District (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Klukhori_District"
+     }
+    },
+    {
+     "pieces": [
+      "akhalkhevi"
+     ],
+     "owner": "Georgia",
+     "source": {
+      "title": "Chechen-Ingush Autonomous Soviet Socialist Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chechen-Ingush_Autonomous_Soviet_Socialist_Republic"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1956-07-16",
+   "what": "The Karelo-Finnish SSR is downgraded to the Karelian ASSR, within the Russian SFSR",
+   "source": {
+    "title": "Karelo-Finnish Soviet Socialist Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Karelo-Finnish_Soviet_Socialist_Republic"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2353"
+     ],
+     "owner": "Karelo-Finnish SSR",
+     "source": {
+      "title": "Karelo-Finnish Soviet Socialist Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Karelo-Finnish_Soviet_Socialist_Republic"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1956-01-26",
+   "what": "The Soviet Union hands the Porkkala naval base back to Finland",
+   "source": {
+    "title": "Porkkala Naval Base (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Porkkala_Naval_Base"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "porkkala"
+     ],
+     "owner": "Finland",
+     "source": {
+      "title": "Porkkala Naval Base (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Porkkala_Naval_Base"
+     },
+     "hatch": {
+      "by": "Soviet Union",
+      "since": "1944-09-19",
+      "note": "Leased to the Soviet Union as a naval base under the Moscow Armistice of 1944, for 50 years; handed back early in 1956",
+      "source": {
+       "title": "Porkkala Naval Base (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Porkkala_Naval_Base"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1955-05-26",
+   "what": "Soviet forces leave Port Arthur (Lüshun), handed back to China",
+   "source": {
+    "title": "Lüshunkou District (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Lüshunkou_District"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "port-arthur"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Port Arthur (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Port_Arthur"
+     },
+     "hatch": {
+      "by": "Soviet Union",
+      "since": "1945-08-22",
+      "note": "A Soviet naval base under the Sino-Soviet treaty of 1945, held by Soviet forces until May 1955",
+      "source": {
+       "title": "Sino-Soviet Treaty of Friendship and Alliance (1945) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Sino-Soviet_Treaty_of_Friendship_and_Alliance_(1945)"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1954-02-19",
+   "what": "Crimea is moved from the Russian SFSR to the Ukrainian SSR",
+   "source": {
+    "title": "1954 transfer of Crimea (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/1954_transfer_of_Crimea"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "RUS-283",
+      "RUS-5482"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Crimean Oblast (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Crimean_Oblast"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1946-05-09",
+   "what": "The last Soviet troops leave northern Iran, after the Iran crisis of 1946",
+   "source": {
+    "title": "Iran crisis of 1946 (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Iran_crisis_of_1946"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "IRN-3238",
+      "IRN-3237",
+      "IRN-3230",
+      "IRN-3240",
+      "IRN-3214",
+      "IRN-3213",
+      "IRN-3234",
+      "IRN-3235",
+      "IRN-3246",
+      "IRN-3245",
+      "IRN-3215"
+     ],
+     "owner": "Iran",
+     "source": {
+      "title": "Anglo-Soviet invasion of Iran (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Anglo-Soviet_invasion_of_Iran"
+     },
+     "hatch": {
+      "by": "Soviet Union",
+      "since": "1941-08-25",
+      "note": "Occupied by the Soviet Union from the Anglo-Soviet invasion of August 1941 until May 1946; the Soviet zone is drawn roughly by province",
+      "source": {
+       "title": "Anglo-Soviet invasion of Iran (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Anglo-Soviet_invasion_of_Iran"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1946-05-03",
+   "what": "The last Soviet troops leave Manchuria, which they took from Japan in August 1945",
+   "source": {
+    "title": "Soviet invasion of Manchuria (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Soviet_invasion_of_Manchuria"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CHN-1839",
+      "CHN-1828",
+      "CHN-1813"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Soviet invasion of Manchuria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Soviet_invasion_of_Manchuria"
+     },
+     "hatch": {
+      "by": "Soviet Union",
+      "since": "1945-08-09",
+      "note": "Taken from Japan and its Manchukuo state by the Soviet invasion of August 1945; held by Soviet forces until May 1946",
+      "source": {
+       "title": "Soviet invasion of Manchuria (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Soviet_invasion_of_Manchuria"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "port-arthur"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Port Arthur (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Port_Arthur"
+     },
+     "hatch": {
+      "by": "Soviet Union",
+      "since": "1945-08-22",
+      "note": "A Soviet naval base under the Sino-Soviet treaty of 1945, held by Soviet forces until May 1955",
+      "source": {
+       "title": "Sino-Soviet Treaty of Friendship and Alliance (1945) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Sino-Soviet_Treaty_of_Friendship_and_Alliance_(1945)"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1946-04-05",
+   "what": "Soviet forces leave the Danish island of Bornholm",
+   "source": {
+    "title": "Soviet occupation of Bornholm (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Soviet_occupation_of_Bornholm"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "bornholm"
+     ],
+     "owner": "Denmark",
+     "source": {
+      "title": "Soviet occupation of Bornholm (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Soviet_occupation_of_Bornholm"
+     },
+     "hatch": {
+      "by": "Soviet Union",
+      "since": "1945-05-09",
+      "note": "Taken from the German garrison in May 1945 and held by Soviet forces until April 1946",
+      "source": {
+       "title": "Soviet occupation of Bornholm (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Soviet_occupation_of_Bornholm"
+      },
+      "occupied": true
      }
     }
    ]

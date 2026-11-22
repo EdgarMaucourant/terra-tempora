@@ -11889,6 +11889,290 @@
    ],
    "realm": "Lithuania",
    "why": "Independent again since 1991"
+  },
+  {
+   "place": "Moscow (1945)",
+   "lonLat": [
+    37.62,
+    55.75
+   ],
+   "years": [
+    1945,
+    1984
+   ],
+   "realm": "Russia",
+   "why": "Capital of the Soviet Union and of the Russian SFSR"
+  },
+  {
+   "place": "Simferopol (RSFSR)",
+   "lonLat": [
+    34.1,
+    44.95
+   ],
+   "years": [
+    1945,
+    1953
+   ],
+   "realm": "Russia",
+   "why": "In the Russian SFSR until 19 February 1954"
+  },
+  {
+   "place": "Simferopol (Ukrainian SSR)",
+   "lonLat": [
+    34.1,
+    44.95
+   ],
+   "years": [
+    1954,
+    1990
+   ],
+   "realm": "Ukraine",
+   "why": "In the Ukrainian SSR from 19 February 1954"
+  },
+  {
+   "place": "Petrozavodsk (Karelo-Finnish SSR)",
+   "lonLat": [
+    34.35,
+    61.79
+   ],
+   "years": [
+    1945,
+    1955
+   ],
+   "realm": "Karelo-Finnish SSR",
+   "why": "Capital of the Karelo-Finnish SSR until 16 July 1956"
+  },
+  {
+   "place": "Petrozavodsk",
+   "lonLat": [
+    34.35,
+    61.79
+   ],
+   "years": [
+    1956,
+    2026
+   ],
+   "realm": "Russia",
+   "why": "Capital of Karelia, within Russia, since 1956"
+  },
+  {
+   "place": "Pechory",
+   "lonLat": [
+    27.61,
+    57.81
+   ],
+   "years": [
+    1945,
+    1990
+   ],
+   "realm": "Estonia",
+   "why": "Estonian land, in the Russian SFSR from 1945",
+   "heldBy": [
+    {
+     "years": [
+      1945,
+      1990
+     ],
+     "by": "Soviet Union"
+    }
+   ]
+  },
+  {
+   "place": "Pechory (Russia)",
+   "lonLat": [
+    27.61,
+    57.81
+   ],
+   "years": [
+    1991,
+    2026
+   ],
+   "realm": "Russia",
+   "why": "Kept by Russia in 1991"
+  },
+  {
+   "place": "Pytalovo",
+   "lonLat": [
+    27.92,
+    57.07
+   ],
+   "years": [
+    1945,
+    1990
+   ],
+   "realm": "Latvia",
+   "why": "Latvian land, in the Russian SFSR from 1944",
+   "heldBy": [
+    {
+     "years": [
+      1945,
+      1990
+     ],
+     "by": "Soviet Union"
+    }
+   ]
+  },
+  {
+   "place": "Teberda",
+   "lonLat": [
+    41.74,
+    43.45
+   ],
+   "years": [
+    1945,
+    1956
+   ],
+   "realm": "Georgia",
+   "why": "In the Klukhori district of the Georgian SSR until 1957"
+  },
+  {
+   "place": "Teberda (RSFSR)",
+   "lonLat": [
+    41.74,
+    43.45
+   ],
+   "years": [
+    1957,
+    2026
+   ],
+   "realm": "Russia",
+   "why": "Back in the Russian SFSR from 1957"
+  },
+  {
+   "place": "Itum-Kale",
+   "lonLat": [
+    45.35,
+    42.73
+   ],
+   "years": [
+    1945,
+    1956
+   ],
+   "realm": "Georgia",
+   "why": "In the Georgian SSR until 1957"
+  },
+  {
+   "place": "Porkkala",
+   "lonLat": [
+    24.4,
+    60.03
+   ],
+   "years": [
+    1945,
+    1955
+   ],
+   "realm": "Finland",
+   "why": "Leased to the Soviet Union as a naval base until January 1956",
+   "heldBy": [
+    {
+     "years": [
+      1945,
+      1955
+     ],
+     "by": "Soviet Union"
+    }
+   ]
+  },
+  {
+   "place": "Porkkala (Finnish)",
+   "lonLat": [
+    24.4,
+    60.03
+   ],
+   "years": [
+    1956,
+    2026
+   ],
+   "realm": "Finland",
+   "why": "Handed back on 26 January 1956"
+  },
+  {
+   "place": "Rønne",
+   "lonLat": [
+    14.7,
+    55.1
+   ],
+   "years": [
+    1945,
+    1945
+   ],
+   "realm": "Denmark",
+   "why": "Held by Soviet forces from May 1945 to April 1946",
+   "heldBy": [
+    {
+     "years": [
+      1945,
+      1945
+     ],
+     "by": "Soviet Union"
+    }
+   ]
+  },
+  {
+   "place": "Lüshun",
+   "lonLat": [
+    121.26,
+    38.81
+   ],
+   "years": [
+    1945,
+    1954
+   ],
+   "realm": "China",
+   "why": "Soviet naval base until May 1955",
+   "heldBy": [
+    {
+     "years": [
+      1945,
+      1954
+     ],
+     "by": "Soviet Union"
+    }
+   ]
+  },
+  {
+   "place": "Harbin",
+   "lonLat": [
+    126.63,
+    45.75
+   ],
+   "years": [
+    1945,
+    1945
+   ],
+   "realm": "China",
+   "why": "Held by Soviet forces until April 1946",
+   "heldBy": [
+    {
+     "years": [
+      1945,
+      1945
+     ],
+     "by": "Soviet Union"
+    }
+   ]
+  },
+  {
+   "place": "Tabriz",
+   "lonLat": [
+    46.29,
+    38.08
+   ],
+   "years": [
+    1945,
+    1945
+   ],
+   "realm": "Iran",
+   "why": "In the Soviet zone of occupation until May 1946",
+   "heldBy": [
+    {
+     "years": [
+      1945,
+      1945
+     ],
+     "by": "Soviet Union"
+    }
+   ]
   }
  ]
 }
