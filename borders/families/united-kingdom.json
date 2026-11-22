@@ -168,7 +168,9 @@
     "assam-duars",
     "cachar",
     "bombay-salsette",
-    "berar"
+    "berar",
+    "tawang",
+    "naga-tribal-area"
    ],
    "from": 1815,
    "why": "British India (with the princely states, drawn as part of it), Burma and Ceylon, with today's borders, from British rule to today, and Newfoundland until it joined Canada. French and Portuguese India stay with their own families"
@@ -2828,6 +2830,27 @@
    ]
   },
   {
+   "date": "1951-02-12",
+   "what": "An Indian column takes over Tawang from the Tibetan officials, south of the McMahon Line",
+   "source": {
+    "title": "Tawang district (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tawang_district"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "tawang"
+     ],
+     "owner": "Tibet",
+     "source": {
+      "title": "Ganden Phodrang (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ganden_Phodrang"
+     }
+    }
+   ]
+  },
+  {
    "date": "1950-04-01",
    "what": "Britain hands Somalia to Italy as a UN trust territory",
    "source": {
@@ -3222,6 +3245,16 @@
       "url": "https://en.wikipedia.org/wiki/Kingdom_of_Sikkim"
      },
      "territory": "Kingdom of Sikkim"
+    },
+    {
+     "pieces": [
+      "naga-tribal-area"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Tuensang district (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tuensang_district"
+     }
     }
    ]
   },
@@ -6369,6 +6402,27 @@
    ]
   },
   {
+   "date": "1914-03-24",
+   "what": "Britain and Tibet agree the McMahon Line, and the hills north of Assam become the North-East Frontier Tracts",
+   "source": {
+    "title": "McMahon Line (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/McMahon_Line"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "IND-3299"
+     ],
+     "owner": null,
+     "source": {
+      "title": "McMahon Line (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/McMahon_Line"
+     }
+    }
+   ]
+  },
+  {
    "date": "1914-03-01",
    "what": "The West Nile district passes from the Sudan to the Uganda Protectorate (1914)",
    "source": {
@@ -9253,6 +9307,27 @@
    ]
   },
   {
+   "date": "1866-01-01",
+   "what": "Britain sets up the Naga Hills district, pushing into the hills from Samaguting; Kohima follows in 1878",
+   "source": {
+    "title": "Nagaland (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Nagaland"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "IND-2479"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Nagaland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Nagaland"
+     }
+    }
+   ]
+  },
+  {
    "date": "1865-11-11",
    "what": "By the Treaty of Sinchula, after the Duar War, Bhutan cedes the Bengal and Eastern Duars and Kalimpong to Britain",
    "source": {
@@ -9479,7 +9554,6 @@
       "IND-2447",
       "IND-2477",
       "IND-2478",
-      "IND-2479",
       "IND-2489",
       "IND-3249",
       "IND-3250",
@@ -9492,7 +9566,6 @@
       "IND-3261",
       "IND-3263",
       "IND-3264",
-      "IND-3299",
       "IND-3301",
       "hyd-marathwada",
       "hyd-karnataka",
