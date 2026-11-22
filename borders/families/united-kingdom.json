@@ -26,7 +26,7 @@
     "IRL",
     "heligoland"
    ],
-   "from": 1850,
+   "from": 1840,
    "why": "The United Kingdom with the Crown Dependencies (Guernsey, Jersey, the Isle of Man), its overseas territories and the Chagos Archipelago, whose land has not changed hands since 1965, and Ireland (the Irish Free State until 1937)"
   },
   {
@@ -46,7 +46,7 @@
     "SYC",
     "weihaiwei"
    ],
-   "from": 1850,
+   "from": 1840,
    "why": "Hong Kong, Brunei, Southern Rhodesia and the colonies in the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence or handover; Weihaiwei, leased from China until 1930"
   },
   {
@@ -68,7 +68,7 @@
     "BHS",
     "GRD"
    ],
-   "from": 1850,
+   "from": 1840,
    "why": "The Gulf protected states, South Arabia with all of Yemen (North Yemen until 1990), and the colonies and protectorates in Africa, the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence"
   },
   {
@@ -95,7 +95,7 @@
     "dervish-nugaal",
     "lado-enclave"
    ],
-   "from": 1850,
+   "from": 1840,
    "why": "The colonies, protectorates and trust territories Britain held in 1960 in Africa, Asia, the Mediterranean and the Caribbean, with today's borders, until their independence, with Malaya and Somalia around them"
   },
   {
@@ -109,7 +109,7 @@
     "ERI",
     "ETH"
    ],
-   "from": 1850,
+   "from": 1840,
    "why": "The Gold Coast and British Togoland (Ghana), Anglo-Egyptian Sudan and Eritrea, which Britain ruled or ran in the 1950s, with today's borders, and Ethiopia around Eritrea. The Haud, run by Britain inside Ethiopia until 1955, is not drawn"
   },
   {
@@ -156,9 +156,12 @@
     "hyd-karnataka",
     "bhadrachalam",
     "bengal-duars",
-    "nicobar-islands"
+    "nicobar-islands",
+    "majha",
+    "jullundur-doab",
+    "sikkim-morang"
    ],
-   "from": 1850,
+   "from": 1840,
    "why": "British India (with the princely states, drawn as part of it), Burma and Ceylon, with today's borders, from British rule to today, and Newfoundland until it joined Canada. French and Portuguese India stay with their own families"
   },
   {
@@ -178,7 +181,7 @@
     "IRQ",
     "EGY"
    ],
-   "from": 1850,
+   "from": 1840,
    "why": "Mandatory Palestine and Transjordan, and what became of them: Israel, the West Bank, the Gaza Strip, Jordan, and the Sinai occupied by Israel; Iraq, a British mandate until 1932, and Kuwait, occupied by Iraq in 1990-91; Egypt, a British protectorate until 1922 and part of the United Arab Republic in 1958-61"
   },
   {
@@ -194,7 +197,7 @@
     "kythira",
     "HND-641"
    ],
-   "from": 1850,
+   "from": 1840,
    "why": "The Ionian Islands, a British protectorate until 1864, and the Bay Islands, a British colony until 1861, with Greece and Honduras since then"
   },
   {
@@ -202,7 +205,7 @@
     "NIC-657",
     "NIC-644"
    ],
-   "from": 1850,
+   "from": 1840,
    "why": "The Mosquito Coast, a British protectorate until 1860, with Nicaragua since then"
   }
  ],
@@ -3170,7 +3173,10 @@
       "hyd-karnataka",
       "bhadrachalam",
       "bengal-duars",
-      "nicobar-islands"
+      "nicobar-islands",
+      "majha",
+      "jullundur-doab",
+      "sikkim-morang"
      ],
      "owner": "United Kingdom",
      "source": {
@@ -9454,7 +9460,11 @@
       "MMR-3275",
       "MMR-3269",
       "MMR-3268",
-      "YEM-3510"
+      "YEM-3510",
+      "majha",
+      "jullundur-doab",
+      "bahawalpur",
+      "sikkim-morang"
      ],
      "owner": "United Kingdom",
      "source": {
@@ -9547,6 +9557,172 @@
      "source": {
       "title": "Second Anglo-Burmese War (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Second_Anglo-Burmese_War"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1850-02-01",
+   "what": "Britain annexes the Sikkim Terai around Siliguri after the Raja of Sikkim had two British travellers seized",
+   "source": {
+    "title": "Darjeeling district (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Darjeeling_district"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "sikkim-morang"
+     ],
+     "owner": "Kingdom of Sikkim",
+     "source": {
+      "title": "Kingdom of Sikkim (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Sikkim"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1849-03-29",
+   "what": "After the Second Anglo-Sikh War, the East India Company annexes the Punjab",
+   "source": {
+    "title": "Second Anglo-Sikh War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Second_Anglo-Sikh_War"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "PAK-1113",
+      "PAK-1110",
+      "PAK-1123",
+      "majha"
+     ],
+     "owner": "Sikh Empire",
+     "source": {
+      "title": "Sikh Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sikh_Empire"
+     }
+    },
+    {
+     "pieces": [
+      "PAK-1112"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Federally Administered Tribal Areas (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Federally_Administered_Tribal_Areas"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1846-12-18",
+   "what": "The Sultan of Brunei cedes Labuan to Britain",
+   "source": {
+    "title": "Labuan (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Labuan"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MYS-4833"
+     ],
+     "owner": "Brunei",
+     "source": {
+      "title": "Labuan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Labuan"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1846-03-16",
+   "what": "By the Treaty of Amritsar, Britain sells Kashmir to Gulab Singh, who rules Jammu and Kashmir as a princely state under British protection",
+   "source": {
+    "title": "Treaty of Amritsar (1846) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Amritsar_(1846)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "IND-2431",
+      "IND-20012",
+      "PAK-1109",
+      "PAK-1111"
+     ],
+     "owner": "Sikh Empire",
+     "source": {
+      "title": "Sikh Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sikh_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1846-03-09",
+   "what": "By the Treaty of Lahore, after the First Anglo-Sikh War, the Sikhs cede the Jullundur Doab to the East India Company",
+   "source": {
+    "title": "Treaty of Lahore (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Lahore"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "jullundur-doab"
+     ],
+     "owner": "Sikh Empire",
+     "source": {
+      "title": "Sikh Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sikh_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1843-03-24",
+   "what": "Charles Napier defeats the Talpur amirs at Miani and Dubba: Sindh is annexed",
+   "source": {
+    "title": "Talpur dynasty (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Talpur_dynasty"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "PAK-1114"
+     ],
+     "owner": "Talpur dynasty",
+     "source": {
+      "title": "Talpur dynasty (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Talpur_dynasty"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1841-01-26",
+   "what": "British forces take possession of Hong Kong Island",
+   "source": {
+    "title": "British Hong Kong (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/British_Hong_Kong"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "HKG-5153",
+      "HKG-5154",
+      "HKG-5155",
+      "HKG-5156"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Treaty of Nanking (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Nanking"
      }
     }
    ]
