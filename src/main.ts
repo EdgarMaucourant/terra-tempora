@@ -69,6 +69,15 @@ const FIRST_YEAR = ERAS[0].from;
 // Old links (#y1241) open on the Mongol Empire, the first prototype's subject.
 const DEFAULT_CIV = "mongol-empire";
 
+// public/unsupported.js has already told this browser it can't run the globe.
+document.documentElement.setAttribute("data-started", "");
+if (document.documentElement.hasAttribute("data-unsupported")) throw new Error("This browser can't run the globe");
+declare global {
+  interface Window {
+    terraTemporaUnsupported?: (reason: "webgl" | "old") => void;
+  }
+}
+
 const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
 
 // A page left open across a release reloads when its files are gone.
@@ -105,16 +114,64 @@ const aboutEl = $("about");
 
 // The neutral globe: Natural Earth II relief imagery shipped with CesiumJS,
 // served from our own files. No Cesium ion account or token is involved.
-const widget = new CesiumWidget($("globe"), {
-  baseLayer: ImageryLayer.fromProviderAsync(
-    TileMapServiceImageryProvider.fromUrl(buildModuleUrl("Assets/Textures/NaturalEarthII")),
-  ),
-  terrainProvider: new EllipsoidTerrainProvider(),
-  creditContainer: $("credits"),
-  requestRenderMode: true,
-  maximumRenderTimeChange: Infinity,
-});
+let widget: CesiumWidget;
+try {
+  widget = new CesiumWidget($("globe"), {
+    baseLayer: ImageryLayer.fromProviderAsync(
+      TileMapServiceImageryProvider.fromUrl(buildModuleUrl("Assets/Textures/NaturalEarthII")),
+    ),
+    terrainProvider: new EllipsoidTerrainProvider(),
+    creditContainer: $("credits"),
+    requestRenderMode: true,
+    maximumRenderTimeChange: Infinity,
+    // Render errors are handled below (renderError).
+    showRenderLoopErrors: false,
+  });
+} catch (error) {
+  // WebGL is there but the globe still can't start (blocked, or no graphics memory).
+  window.terraTemporaUnsupported?.("webgl");
+  throw error;
+}
 const scene = widget.scene;
+// Phones can take the WebGL context away (the tab goes to the background, the
+// browser runs short of graphics memory). Its drawing buffer is then 0 pixels
+// wide, Cesium fails to make its frame buffers and stops drawing for good.
+// The page reloads instead, keeping its place from the address, as soon as the
+// browser gives the context back (or when the page is shown again). A canvas
+// laid out 0 pixels wide for a moment just draws again once it has a size; an
+// error that keeps coming back still shows Cesium's error box.
+let contextLost = false;
+scene.canvas.addEventListener("webglcontextlost", (event) => {
+  event.preventDefault(); // lets the browser restore the context
+  contextLost = true;
+});
+scene.canvas.addEventListener("webglcontextrestored", () => location.reload());
+document.addEventListener("visibilitychange", () => {
+  if (contextLost && document.visibilityState === "visible") setTimeout(() => location.reload(), 1500);
+});
+let renderRetries = 0;
+scene.renderError.addEventListener((_scene: unknown, error: unknown) => {
+  if (contextLost || scene.drawingBufferWidth === 0) {
+    contextLost = true;
+    if (document.visibilityState === "visible") setTimeout(() => location.reload(), 1500);
+    return;
+  }
+  const canvas = scene.canvas;
+  if (canvas.clientWidth > 0 && canvas.clientHeight > 0 && ++renderRetries > 5) {
+    widget.showErrorPanel("An error occurred while rendering. Rendering has stopped.", undefined, String(error));
+    return;
+  }
+  const restart = () => {
+    if (canvas.clientWidth === 0 || canvas.clientHeight === 0) return void requestAnimationFrame(restart);
+    widget.resize();
+    widget.useDefaultRenderLoop = true;
+    scene.requestRender();
+  };
+  requestAnimationFrame(restart);
+});
+scene.postRender.addEventListener(() => {
+  renderRetries = 0;
+});
 scene.globe.showGroundAtmosphere = true;
 const camera = scene.screenSpaceCameraController;
 // The bundled imagery is low resolution, so stop zooming at regional scale.

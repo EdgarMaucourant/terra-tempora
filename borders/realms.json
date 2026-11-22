@@ -4461,5 +4461,14 @@
   "fr": "Ossétie du Sud",
   "es": "Osetia del Sur",
   "hatchOnly": true
+ },
+ "Karelo-Finnish SSR": {
+  "wikipedia": "Karelo-Finnish Soviet Socialist Republic",
+  "wikidata": "Q186888",
+  "fr": "RSS carélo-finnoise",
+  "es": "RSS Carelo-Finesa",
+  "group": "Soviet Union",
+  "groupFrom": "1940-03-31",
+  "groupUntil": "1956-07-16"
  }
 }
