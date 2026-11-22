@@ -10652,6 +10652,155 @@
    "summary": "Three years to the day after the German invasion, on 22 June 1944, the Red Army launches Operation Bagration against Army Group Centre in Belarus. Encircled at Vitebsk, Bobruisk and Minsk, which is freed on 3 July, the German front collapses; in five weeks the Soviets advance some 500 km, taking Vilnius, Brest and Lublin and reaching the Vistula and the edge of East Prussia. It is the heaviest German defeat of the war.",
    "wikipedia": "Operation_Bagration",
    "search": "Operation Bagration 22 June 1944 Belorussian offensive Army Group Centre destroyed Vitebsk Bobruisk Minsk liberated 3 July Vilnius Brest Vistula Warsaw"
+  },
+  {
+   "id": "creation-of-the-ussr-1922",
+   "kind": "treaty",
+   "year": 1922,
+   "title": "The Soviet Union is founded, 30 December 1922",
+   "place": "Moscow",
+   "lonLat": [
+    37.62,
+    55.75
+   ],
+   "civs": [
+    "soviet-union",
+    "russia",
+    "ukraine",
+    "belarus",
+    "georgia",
+    "armenia",
+    "azerbaijan"
+   ],
+   "summary": "On 30 December 1922 a congress in Moscow approves the treaty uniting the Russian SFSR, the Ukrainian SSR, the Byelorussian SSR and the Transcaucasian SFSR (Georgia, Armenia and Azerbaijan) into the Union of Soviet Socialist Republics. Each republic keeps the right to leave on paper, but power lies with the Communist Party in Moscow. New republics join as they are formed, and the Union lasts until December 1991.",
+   "wikipedia": "Treaty_on_the_Creation_of_the_USSR",
+   "search": "Formation of the Soviet Union USSR 30 December 1922 Treaty on the Creation of the USSR Russian SFSR Ukrainian SSR Byelorussian SSR Transcaucasian SFSR Lenin Stalin"
+  },
+  {
+   "id": "klaipeda-revolt-1923",
+   "kind": "revolution",
+   "year": 1923,
+   "title": "The Klaipėda Revolt: Lithuania takes Memel, January 1923",
+   "place": "Klaipėda (Memel)",
+   "lonLat": [
+    21.13,
+    55.71
+   ],
+   "civs": [
+    "lithuania",
+    "germany",
+    "france"
+   ],
+   "summary": "The Memel Territory, cut from German East Prussia in 1920, is held by French troops for the Allies while its future is argued over. In January 1923, while France is busy occupying the Ruhr, Lithuanian volunteers posing as local rebels take Memel (Klaipėda) after brief fighting. The Allies accept the fait accompli, and the Klaipėda Convention of 1924 makes the territory an autonomous region of Lithuania, its only port, until Germany takes it back in March 1939.",
+   "wikipedia": "Klaipėda_Revolt",
+   "search": "Klaipėda Revolt January 1923 Memel Territory Lithuania Klaipeda Convention 1924 Council of Ambassadors French administration"
+  },
+  {
+   "id": "central-asia-delimitation-1924",
+   "kind": "empire",
+   "year": 1924,
+   "title": "Central Asia is divided into national republics, 1924",
+   "place": "Tashkent",
+   "lonLat": [
+    69.24,
+    41.3
+   ],
+   "civs": [
+    "uzbekistan",
+    "turkmenistan",
+    "tajikistan",
+    "kyrgyzstan",
+    "kazakhstan",
+    "soviet-union",
+    "russia",
+    "bukharan-people-s-soviet-republic",
+    "khorezm-people-s-soviet-republic"
+   ],
+   "summary": "In 1924 Moscow redraws the map of Central Asia along national lines. The Turkestan ASSR and the people's republics of Bukhara and Khorezm, heirs of the old emirate and khanate, are dissolved and their land shared out: the Uzbek SSR, with a Tajik autonomous republic inside it, and the Turkmen SSR are formed on 27 October, while the Kara-Kirghiz and Karakalpak regions and southern Kazakhstan stay in the Russian SFSR. The borders cut through mixed lands such as the Fergana valley, where they still matter today.",
+   "wikipedia": "National_delimitation_in_the_Soviet_Union",
+   "search": "National delimitation in Central Asia 1924 Uzbek SSR Turkmen SSR Tajik ASSR Turkestan ASSR Bukhara Khorezm Fergana valley borders 27 October 1924"
+  },
+  {
+   "id": "belarus-enlargements-1924",
+   "kind": "empire",
+   "year": 1924,
+   "to": 1926,
+   "title": "Soviet Belarus is enlarged, 1924 and 1926",
+   "place": "Vitebsk",
+   "lonLat": [
+    30.2,
+    55.19
+   ],
+   "civs": [
+    "belarus",
+    "russia",
+    "soviet-union"
+   ],
+   "summary": "Squeezed by the Peace of Riga, the Byelorussian SSR of 1921 holds only six districts around Minsk. In March 1924 the Russian SFSR hands it most of the Vitebsk and Mogilev governorates, doubling its size, and in December 1926 Gomel and Rechytsa follow. The republic, with Belarusian, Russian, Yiddish and Polish as official languages, takes roughly the shape of eastern Belarus today.",
+   "wikipedia": "Byelorussian_Soviet_Socialist_Republic",
+   "search": "Byelorussian SSR enlargement March 1924 Vitebsk Mogilev governorates December 1926 Gomel Rechytsa Belarus borders"
+  },
+  {
+   "id": "japan-leaves-northern-sakhalin-1925",
+   "kind": "treaty",
+   "year": 1925,
+   "title": "Japan leaves northern Sakhalin, May 1925",
+   "place": "Alexandrovsk-Sakhalinsky",
+   "lonLat": [
+    142.16,
+    50.9
+   ],
+   "civs": [
+    "russia",
+    "japan",
+    "soviet-union"
+   ],
+   "summary": "Japan sent troops into northern Sakhalin in April 1920, after hundreds of Japanese were killed in the Nikolayevsk Incident, and stayed after leaving Siberia in 1922. Under the Soviet–Japanese Basic Convention of January 1925, which also opens diplomatic relations, its soldiers leave by May 1925 and the north of the island returns to Soviet rule, while Japanese companies keep oil and coal concessions there for two decades.",
+   "wikipedia": "Japanese_occupation_of_northern_Sakhalin",
+   "search": "Japanese occupation of northern Sakhalin 1920 1925 Soviet–Japanese Basic Convention withdrawal May 1925 Nikolayevsk Incident oil concessions"
+  },
+  {
+   "id": "tajik-ssr-1929",
+   "kind": "empire",
+   "year": 1929,
+   "title": "The Tajik SSR is formed, October 1929",
+   "place": "Dushanbe",
+   "lonLat": [
+    68.78,
+    38.56
+   ],
+   "civs": [
+    "tajikistan",
+    "uzbekistan",
+    "soviet-union"
+   ],
+   "summary": "Formed in 1924 as an autonomous republic inside the Uzbek SSR, Tajikistan becomes a union republic of its own on 16 October 1929, the seventh of the Soviet Union. It gains Khujand and its district from Uzbekistan, but Samarkand and Bukhara, old centres of Persian-speaking culture, stay Uzbek. Its capital, the village of Dushanbe, grows into a city and is renamed Stalinabad.",
+   "wikipedia": "Tajik_Soviet_Socialist_Republic",
+   "search": "Tajik SSR 16 October 1929 Tajik ASSR Uzbek SSR Khujand Stalinabad Dushanbe Samarkand Bukhara"
+  },
+  {
+   "id": "soviet-constitution-1936",
+   "kind": "treaty",
+   "year": 1936,
+   "title": "The 1936 Constitution: Kazakhstan and Kyrgyzstan become union republics",
+   "place": "Alma-Ata (Almaty)",
+   "lonLat": [
+    76.9,
+    43.25
+   ],
+   "civs": [
+    "kazakhstan",
+    "kyrgyzstan",
+    "uzbekistan",
+    "georgia",
+    "armenia",
+    "azerbaijan",
+    "soviet-union",
+    "russia"
+   ],
+   "summary": "The \"Stalin Constitution\" adopted on 5 December 1936 raises the number of union republics from seven to eleven. The Kazakh and Kirghiz autonomous republics leave the Russian SFSR to become the Kazakh and Kirghiz SSRs, Karakalpakstan moves to the Uzbek SSR, and the Transcaucasian SFSR is split into the Georgian, Armenian and Azerbaijan SSRs. The constitution promises rights and elections on paper, in the middle of the Great Purge.",
+   "wikipedia": "1936_Constitution_of_the_Soviet_Union",
+   "search": "1936 Constitution of the Soviet Union Stalin Constitution 5 December 1936 Kazakh SSR Kirghiz SSR Karakalpakstan Transcaucasian SFSR dissolved Georgian Armenian Azerbaijan SSR"
   }
  ]
 }
