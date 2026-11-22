@@ -389,7 +389,16 @@
    "owner": "Japan"
   },
   "KAB": {
-   "owner": "Kazakhstan"
+   "owner": "Kazakhstan",
+   "hatch": {
+    "by": "Russia",
+    "since": "1994-03-28",
+    "note": "The Baikonur Cosmodrome and the town of Baikonur, leased to Russia since 1994 (until 2050 under the 2004 extension)",
+    "source": {
+     "title": "Baikonur Cosmodrome (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Baikonur_Cosmodrome"
+    }
+   }
   },
   "KAS": {
    "owner": "India"
