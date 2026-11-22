@@ -9614,6 +9614,131 @@
    "summary": "For two centuries Britain had backed the Miskito kings on the Caribbean coast of Central America. Under pressure from the United States, it signs the Treaty of Managua with Nicaragua on 28 January 1860, recognising Nicaraguan sovereignty and keeping only a self-governing Mosquito Reserve around Bluefields for the Miskito. Nicaragua takes the reserve over in 1894.",
    "wikipedia": "Treaty_of_Managua",
    "search": "Treaty of Managua 28 January 1860 Zeledon Wyke Mosquito Coast protectorate Mosquito Reserve Bluefields Greytown Clayton-Bulwer Nicaragua sovereignty 1894 Reincorporation"
+  },
+  {
+   "id": "first-anglo-afghan-war-1839",
+   "kind": "war",
+   "year": 1839,
+   "to": 1842,
+   "title": "The First Anglo-Afghan War and the retreat from Kabul, 1839 – 1842",
+   "place": "Gandamak",
+   "lonLat": [
+    70.05,
+    34.3
+   ],
+   "civs": [
+    "afghanistan",
+    "company-rule-in-india",
+    "united-kingdom"
+   ],
+   "summary": "Fearing Russian influence, the East India Company invades Afghanistan in 1839 to put Shah Shuja back on the throne in place of Dost Mohammad. An uprising in Kabul in late 1841 forces the British garrison to retreat in the winter of January 1842; almost all of the 16,000 soldiers and camp followers die in the passes, and the last stand is made at Gandamak. An avenging army burns part of Kabul and withdraws, and Dost Mohammad returns to rule.",
+   "wikipedia": "First_Anglo-Afghan_War",
+   "search": "First Anglo-Afghan War 1839 1842 Army of the Indus Shah Shuja Dost Mohammad Kabul retreat January 1842 Gandamak William Brydon Elphinstone Akbar Khan Army of Retribution Great Game"
+  },
+  {
+   "id": "first-opium-war-1839",
+   "kind": "war",
+   "year": 1839,
+   "to": 1842,
+   "title": "The First Opium War and the Treaty of Nanking, 1839 – 1842",
+   "place": "Hong Kong",
+   "lonLat": [
+    114.16,
+    22.28
+   ],
+   "civs": [
+    "china",
+    "british-hong-kong",
+    "hong-kong",
+    "united-kingdom"
+   ],
+   "summary": "When the Qing commissioner Lin Zexu seizes and destroys British merchants’ opium at Canton in 1839, Britain sends a fleet. Its forces take Chusan, occupy Hong Kong Island in January 1841 and fight their way up the Yangtze to Nanking. By the Treaty of Nanking of 29 August 1842, China pays an indemnity, opens five ports to British trade and cedes Hong Kong Island to Britain for ever.",
+   "wikipedia": "First_Opium_War",
+   "search": "First Opium War 1839 1842 Lin Zexu opium destroyed Humen Canton Chusan Charles Elliot Hong Kong occupied 26 January 1841 Treaty of Nanking 29 August 1842 treaty ports Shanghai Qing"
+  },
+  {
+   "id": "conquest-of-sindh-1843",
+   "kind": "war",
+   "year": 1843,
+   "title": "Charles Napier conquers Sindh, 1843",
+   "place": "Hyderabad, Sindh",
+   "lonLat": [
+    68.37,
+    25.39
+   ],
+   "civs": [
+    "talpur-dynasty",
+    "company-rule-in-india",
+    "pakistan",
+    "united-kingdom"
+   ],
+   "summary": "After the Afghan war, Charles Napier picks a quarrel with the Talpur amirs who rule Sindh. He defeats their army at Miani on 17 February 1843 and again at Dubba near Hyderabad in March, and Sindh is annexed to British India; only the amir of Khairpur keeps his state. Napier’s conquest, against his orders’ spirit, is mocked in Britain with the pun “Peccavi”, “I have sinned”.",
+   "wikipedia": "Battle_of_Miani",
+   "search": "Conquest of Sindh 1843 Charles Napier Battle of Miani 17 February 1843 Battle of Dubba Hyderabad Talpur amirs Peccavi Karachi Khairpur annexation Bombay Presidency"
+  },
+  {
+   "id": "first-anglo-sikh-war-1845",
+   "kind": "war",
+   "year": 1845,
+   "to": 1846,
+   "title": "The First Anglo-Sikh War and the treaties of Lahore and Amritsar, 1845 – 1846",
+   "place": "Sobraon",
+   "lonLat": [
+    74.85,
+    31.18
+   ],
+   "civs": [
+    "sikh-empire",
+    "company-rule-in-india",
+    "india",
+    "pakistan",
+    "united-kingdom"
+   ],
+   "summary": "Six years after the death of Ranjit Singh, the Sikh army crosses the Sutlej in December 1845. After hard battles at Mudki, Ferozeshah, Aliwal and Sobraon it is beaten, and by the Treaty of Lahore of 9 March 1846 the Sikh state cedes the Jullundur Doab and the hills and owes a large indemnity. A week later, by the Treaty of Amritsar, Britain sells Kashmir to Gulab Singh of Jammu, founding the princely state of Jammu and Kashmir.",
+   "wikipedia": "First_Anglo-Sikh_War",
+   "search": "First Anglo-Sikh War 1845 1846 Mudki Ferozeshah Aliwal Sobraon Treaty of Lahore 9 March 1846 Jullundur Doab Treaty of Amritsar 16 March 1846 Gulab Singh Jammu and Kashmir Duleep Singh Henry Hardinge"
+  },
+  {
+   "id": "labuan-ceded-1846",
+   "kind": "empire",
+   "year": 1846,
+   "title": "Brunei cedes Labuan to Britain, 18 December 1846",
+   "place": "Labuan",
+   "lonLat": [
+    115.22,
+    5.3
+   ],
+   "civs": [
+    "brunei",
+    "crown-colony-of-labuan",
+    "malaysia",
+    "united-kingdom"
+   ],
+   "summary": "After a British squadron shells Brunei Town in 1846, Sultan Omar Ali Saifuddin II cedes the island of Labuan, off the coast of Borneo, on 18 December. Britain wants it as a base against pirates and for its coal, and makes it a Crown colony in 1848 with James Brooke of Sarawak as its first governor. The coal never pays, and Labuan is joined to North Borneo and then the Straits Settlements; it is part of Malaysia today.",
+   "wikipedia": "Crown_Colony_of_Labuan",
+   "search": "Labuan ceded 18 December 1846 Sultan Omar Ali Saifuddin II Brunei Rodney Mundy James Brooke coal anti-piracy Crown Colony of Labuan 1848 Victoria"
+  },
+  {
+   "id": "second-anglo-sikh-war-1848",
+   "kind": "war",
+   "year": 1848,
+   "to": 1849,
+   "title": "The Second Anglo-Sikh War and the annexation of the Punjab, 1848 – 1849",
+   "place": "Gujrat",
+   "lonLat": [
+    74.08,
+    32.57
+   ],
+   "civs": [
+    "sikh-empire",
+    "company-rule-in-india",
+    "pakistan",
+    "india",
+    "united-kingdom"
+   ],
+   "summary": "A revolt at Multan in April 1848 grows into a new war between the Sikh army and the East India Company. After the bloody draw at Chillianwala, the Sikhs are crushed at Gujrat on 21 February 1849. On 29 March Lord Dalhousie annexes the Punjab; the boy maharaja Duleep Singh is deposed and the Koh-i-Noor diamond goes to Queen Victoria.",
+   "wikipedia": "Second_Anglo-Sikh_War",
+   "search": "Second Anglo-Sikh War 1848 1849 Multan revolt Mulraj Chillianwala Gujrat 21 February 1849 Lord Dalhousie annexation of the Punjab 29 March 1849 Duleep Singh Koh-i-Noor"
   }
  ]
 }
