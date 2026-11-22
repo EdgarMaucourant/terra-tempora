@@ -104,11 +104,18 @@
     <!-- Asked for before the app's code arrives: nothing is drawn without them. -->
     <link rel="preload" href="data/index.json" as="fetch" crossorigin />
     <link rel="preload" href="data/civilizations.json" as="fetch" crossorigin />
+    <!-- Says so when this browser can't run the globe (no WebGL, too old). -->
+    <script src="/unsupported.js"></script>
   </head>
   <body>
     <!-- For readers and crawlers that don't run scripts: what the site is. -->
     <noscript>
       <section class="noscript" style="max-width: 40rem; margin: 2rem auto; padding: 0 1rem; background: #07090d; color: #f3f1ec; font: 1rem/1.5 sans-serif">
+        <p role="alert" style="padding: 0.75rem 1rem; border: 1px solid #f3f1ec; border-radius: 0.5rem">
+          <strong>JavaScript is turned off.</strong> The globe needs JavaScript and WebGL: turn JavaScript on for this site, then reload the page.<br />
+          <span lang="fr"><strong>JavaScript est désactivé.</strong> Le globe a besoin de JavaScript et de WebGL : activez JavaScript pour ce site, puis rechargez la page.</span><br />
+          <span lang="es"><strong>JavaScript está desactivado.</strong> El globo necesita JavaScript y WebGL: activa JavaScript para este sitio y recarga la página.</span>
+        </p>
         <h1>Terra Tempora: 5,000 years of world history on a globe</h1>
         <p>Terra Tempora is a free interactive atlas of world history. It draws the borders of more than 1,500 civilizations, from 3400 BCE to today, on a 3D globe or a flat map. Pick a civilization, a country or a year to see the realms of that time, follow the key events (battles, treaties, rulers, capitals) with links to Wikipedia, or take the History travel, a flight through 141 turning points from Göbekli Tepe to today.</p>
         <p>The borders are today’s provinces and countries from Natural Earth, regrouped year by year by their owner of the time, each change with its source; names, events and pictures come from Wikidata, Wikipedia and Wikimedia Commons. No account, no ads, no cookies.</p>
