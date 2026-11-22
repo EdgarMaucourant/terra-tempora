@@ -443,9 +443,12 @@ export class PolityLayer {
     const names = new Set(members.map((m) => m.name));
     const held = new Map<string, { since?: string; lands: Set<string> }>();
     for (const h of this.polities.values()) {
-      if (h.kind !== "hatch" || !h.by || y < h.from || y > h.to || !h.land || !names.has(h.land)) continue;
+      // The land under a hatching: a territory (Tonkin), or else its owner when the
+      // member is a country (the Ukrainian SSR in the Soviet Union).
+      const land = h.kind === "hatch" ? (h.land ?? h.name) : undefined;
+      if (h.kind !== "hatch" || !h.by || y < h.from || y > h.to || !land || !names.has(land)) continue;
       const seen = held.get(h.by) ?? held.set(h.by, { lands: new Set() }).get(h.by)!;
-      seen.lands.add(h.land);
+      seen.lands.add(land);
       if (h.since && (!seen.since || h.since < seen.since)) seen.since = h.since;
     }
     return [...held].map(([by, s]) => ({ by, since: s.since, whole: s.lands.size === names.size }));
