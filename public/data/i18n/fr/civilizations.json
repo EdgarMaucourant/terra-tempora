@@ -248,6 +248,9 @@
  "somalia": {
   "name": "Somalie"
  },
+ "maratha-empire": {
+  "name": "Empire marathe"
+ },
  "south-sudan": {
   "name": "Soudan du Sud"
  },
@@ -256,6 +259,9 @@
  },
  "french-madagascar": {
   "name": "Colonie de Madagascar et dépendances"
+ },
+ "kingdom-of-burma": {
+  "name": "Royaume de Birmanie"
  },
  "ukraine": {
   "name": "Ukraine"
@@ -332,9 +338,6 @@
  "french-cameroon": {
   "name": "Cameroun français"
  },
- "kingdom-of-burma": {
-  "name": "Royaume de Birmanie"
- },
  "morocco": {
   "name": "Maroc"
  },
@@ -370,6 +373,9 @@
  },
  "sultanate-of-zanzibar": {
   "name": "Sultanat de Zanzibar"
+ },
+ "rajputana": {
+  "name": "Rajputana"
  },
  "barotseland": {
   "name": "Barotseland"
@@ -710,6 +716,9 @@
  "latvia": {
   "name": "Lettonie"
  },
+ "abu-dhabi": {
+  "name": "Abou Dabi"
+ },
  "french-cochinchina": {
   "name": "Cochinchine française"
  },
@@ -730,6 +739,9 @@
  },
  "croatia": {
   "name": "Croatie"
+ },
+ "ahom-kingdom": {
+  "name": "Royaume Ahom"
  },
  "bosnia-and-herzegovina": {
   "name": "Bosnie-Herzégovine"
@@ -839,6 +851,9 @@
  "french-somaliland": {
   "name": "Côte française des Somalis"
  },
+ "kingdom-of-manipur": {
+  "name": "Royaume de Manipur"
+ },
  "perak": {
   "name": "Perak"
  },
@@ -857,11 +872,11 @@
  "kingdom-of-benin": {
   "name": "Royaume du Bénin"
  },
- "spanish-morocco": {
-  "name": "Protectorat espagnol au Maroc"
- },
  "johor-sultanate": {
   "name": "Sultanat de Johor"
+ },
+ "spanish-morocco": {
+  "name": "Protectorat espagnol au Maroc"
  },
  "diego-suarez": {
   "name": "Diego-Suarez"
@@ -914,6 +929,9 @@
  "new-hebrides": {
   "name": "Nouvelles-Hébrides"
  },
+ "dimasa-kingdom": {
+  "name": "Royaume dimasa"
+ },
  "falkland-islands": {
   "name": "îles Malouines"
  },
@@ -952,6 +970,9 @@
  },
  "selangor": {
   "name": "Selangor"
+ },
+ "ras-al-khaimah": {
+  "name": "Ras el Khaïmah"
  },
  "french-southern-and-antarctic-lands": {
   "name": "Terres australes et antarctiques françaises"
@@ -1028,9 +1049,6 @@
  "reunion": {
   "name": "La Réunion"
  },
- "ras-al-khaimah": {
-  "name": "Ras el Khaïmah"
- },
  "united-states-of-the-ionian-islands": {
   "name": "États-Unis des îles Ioniennes"
  },
@@ -1054,6 +1072,9 @@
  },
  "guadeloupe": {
   "name": "Guadeloupe"
+ },
+ "dutch-malacca": {
+  "name": "Malacca néerlandaise"
  },
  "comoros": {
   "name": "Comores"

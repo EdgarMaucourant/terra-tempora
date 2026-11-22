@@ -11036,6 +11036,253 @@
    ],
    "realm": "Brunei",
    "why": "James Brooke made Rajah of Sarawak in 1841"
+  },
+  {
+   "place": "Pune (Maratha Empire)",
+   "lonLat": [
+    73.85,
+    18.52
+   ],
+   "years": [
+    1815,
+    1817
+   ],
+   "realm": "Maratha Empire",
+   "why": "Peshwa surrenders June 1818"
+  },
+  {
+   "place": "Jaipur (Rajputana)",
+   "lonLat": [
+    75.79,
+    26.91
+   ],
+   "years": [
+    1815,
+    1817
+   ],
+   "realm": "Rajputana",
+   "why": "Treaty of protection 1818"
+  },
+  {
+   "place": "Amravati (Berar, Nizam)",
+   "lonLat": [
+    77.75,
+    20.93
+   ],
+   "years": [
+    1815,
+    1830
+   ],
+   "realm": "Company rule in India",
+   "why": "Berar belonged to the Nizam, a protected prince"
+  },
+  {
+   "place": "Mumbai",
+   "lonLat": [
+    72.88,
+    19.07
+   ],
+   "years": [
+    1815,
+    1830
+   ],
+   "realm": "Company rule in India",
+   "why": "Bombay, British since 1661"
+  },
+  {
+   "place": "Sittwe (Burma)",
+   "lonLat": [
+    92.9,
+    20.15
+   ],
+   "years": [
+    1815,
+    1825
+   ],
+   "realm": "Kingdom of Burma",
+   "why": "Arakan ceded by the Treaty of Yandabo, 1826"
+  },
+  {
+   "place": "Dawei (Burma)",
+   "lonLat": [
+    98.2,
+    14.08
+   ],
+   "years": [
+    1815,
+    1825
+   ],
+   "realm": "Kingdom of Burma",
+   "why": "Tenasserim ceded by the Treaty of Yandabo, 1826"
+  },
+  {
+   "place": "Guwahati (Ahom)",
+   "lonLat": [
+    91.74,
+    26.14
+   ],
+   "years": [
+    1815,
+    1820
+   ],
+   "realm": "Ahom kingdom",
+   "why": "Burmese rule from 1821"
+  },
+  {
+   "place": "Guwahati (Burma)",
+   "lonLat": [
+    91.74,
+    26.14
+   ],
+   "years": [
+    1821,
+    1825
+   ],
+   "realm": "Kingdom of Burma",
+   "why": "Ceded by the Treaty of Yandabo, 1826"
+  },
+  {
+   "place": "Goalpara",
+   "lonLat": [
+    90.62,
+    26.17
+   ],
+   "years": [
+    1815,
+    1830
+   ],
+   "realm": "Company rule in India",
+   "why": "Part of Bengal since 1765"
+  },
+  {
+   "place": "Silchar (Cachar)",
+   "lonLat": [
+    92.8,
+    24.83
+   ],
+   "years": [
+    1815,
+    1823
+   ],
+   "realm": "Dimasa Kingdom",
+   "why": "British protection 1824"
+  },
+  {
+   "place": "Imphal (Manipur)",
+   "lonLat": [
+    93.94,
+    24.8
+   ],
+   "years": [
+    1815,
+    1818
+   ],
+   "realm": "Kingdom of Manipur",
+   "why": "Burmese conquest 1819"
+  },
+  {
+   "place": "Imphal (Burma)",
+   "lonLat": [
+    93.94,
+    24.8
+   ],
+   "years": [
+    1819,
+    1825
+   ],
+   "realm": "Kingdom of Burma",
+   "why": "Burmese occupation 1819-1825"
+  },
+  {
+   "place": "Almora (Company rule)",
+   "lonLat": [
+    79.66,
+    29.6
+   ],
+   "years": [
+    1815,
+    1830
+   ],
+   "realm": "Company rule in India",
+   "why": "Kumaon surrendered April 1815"
+  },
+  {
+   "place": "Nepalgunj (Naya Muluk)",
+   "lonLat": [
+    81.62,
+    28.05
+   ],
+   "years": [
+    1816,
+    1857
+   ],
+   "realm": "Company rule in India",
+   "why": "Naya Muluk, British 1816-1860"
+  },
+  {
+   "place": "Nepalgunj (Nepal)",
+   "lonLat": [
+    81.62,
+    28.05
+   ],
+   "years": [
+    1860,
+    1870
+   ],
+   "realm": "Nepal",
+   "why": "Returned to Nepal in 1860"
+  },
+  {
+   "place": "Singapore (Johor)",
+   "lonLat": [
+    103.85,
+    1.29
+   ],
+   "years": [
+    1815,
+    1818
+   ],
+   "realm": "Johor Sultanate",
+   "why": "British post founded February 1819"
+  },
+  {
+   "place": "Malacca (Dutch)",
+   "lonLat": [
+    102.25,
+    2.2
+   ],
+   "years": [
+    1818,
+    1824
+   ],
+   "realm": "Dutch Malacca",
+   "why": "Handed to Britain in 1825"
+  },
+  {
+   "place": "Dubai (Abu Dhabi)",
+   "lonLat": [
+    55.3,
+    25.2
+   ],
+   "years": [
+    1815,
+    1819
+   ],
+   "realm": "Abu Dhabi",
+   "why": "General Maritime Treaty January 1820"
+  },
+  {
+   "place": "Ras Al Khaimah",
+   "lonLat": [
+    56.0,
+    25.8
+   ],
+   "years": [
+    1815,
+    1819
+   ],
+   "realm": "Ras Al Khaimah",
+   "why": "General Maritime Treaty January 1820"
   }
  ]
 }
