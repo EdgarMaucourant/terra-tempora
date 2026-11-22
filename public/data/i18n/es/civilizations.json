@@ -515,6 +515,9 @@
  "italian-eritrea": {
   "name": "Eritrea italiana"
  },
+ "karelo-finnish-ssr": {
+  "name": "RSS Carelo-Finesa"
+ },
  "south-vietnam": {
   "name": "Vietnam del Sur"
  },
@@ -665,6 +668,9 @@
  "czech-republic": {
   "name": "República Checa"
  },
+ "georgia": {
+  "name": "Georgia"
+ },
  "serbia": {
   "name": "Serbia"
  },
@@ -698,9 +704,6 @@
  "federation-of-south-arabia": {
   "name": "Federación de Arabia del Sur"
  },
- "georgia": {
-  "name": "Georgia"
- },
  "ireland": {
   "name": "Irlanda"
  },
@@ -710,14 +713,14 @@
  "british-ceylon": {
   "name": "Ceilán británico"
  },
+ "latvia": {
+  "name": "Letonia"
+ },
  "ashanti-empire": {
   "name": "Imperio asante"
  },
  "lithuania": {
   "name": "Lituania"
- },
- "latvia": {
-  "name": "Letonia"
  },
  "abu-dhabi": {
   "name": "Abu Dabi"
