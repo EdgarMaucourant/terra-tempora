@@ -14188,6 +14188,238 @@
    ],
    "realm": "Russia",
    "why": "In the Governorate of Livonia; the front ran just south of it from 1915"
+  },
+  {
+   "place": "Warsaw (Congress Poland)",
+   "lonLat": [
+    21.01,
+    52.23
+   ],
+   "years": [
+    1905,
+    1914
+   ],
+   "realm": "Russia",
+   "why": "Capital of Congress Poland, in the Russian Empire"
+  },
+  {
+   "place": "Warsaw (German-held, 1915)",
+   "lonLat": [
+    21.01,
+    52.23
+   ],
+   "years": [
+    1915,
+    1917
+   ],
+   "realm": "Russia",
+   "why": "Taken by Germany in August 1915",
+   "heldBy": [
+    {
+     "years": [
+      1915,
+      1917
+     ],
+     "by": "Germany"
+    }
+   ]
+  },
+  {
+   "place": "Warsaw (Poland)",
+   "lonLat": [
+    21.01,
+    52.23
+   ],
+   "years": [
+    1918,
+    1938
+   ],
+   "realm": "Poland",
+   "why": "Capital of independent Poland"
+  },
+  {
+   "place": "Warsaw (German-held, 1939)",
+   "lonLat": [
+    21.01,
+    52.23
+   ],
+   "years": [
+    1939,
+    1944
+   ],
+   "realm": "Poland",
+   "why": "Held by Germany from September 1939 to January 1945",
+   "heldBy": [
+    {
+     "years": [
+      1939,
+      1944
+     ],
+     "by": "Germany"
+    }
+   ]
+  },
+  {
+   "place": "Lodz (German-held, 1914)",
+   "lonLat": [
+    19.46,
+    51.76
+   ],
+   "years": [
+    1914,
+    1914
+   ],
+   "realm": "Russia",
+   "why": "Taken by Germany in December 1914",
+   "heldBy": [
+    {
+     "years": [
+      1914,
+      1914
+     ],
+     "by": "Germany"
+    }
+   ]
+  },
+  {
+   "place": "Lublin (Austro-Hungarian-held)",
+   "lonLat": [
+    22.57,
+    51.25
+   ],
+   "years": [
+    1915,
+    1917
+   ],
+   "realm": "Russia",
+   "why": "Held by Austria-Hungary from July 1915",
+   "heldBy": [
+    {
+     "years": [
+      1915,
+      1917
+     ],
+     "by": "Austria-Hungary"
+    }
+   ]
+  },
+  {
+   "place": "Lublin (1944)",
+   "lonLat": [
+    22.57,
+    51.25
+   ],
+   "years": [
+    1944,
+    1950
+   ],
+   "realm": "Poland",
+   "why": "Freed in July 1944"
+  },
+  {
+   "place": "Bialystok (Grodno Governorate)",
+   "lonLat": [
+    23.16,
+    53.13
+   ],
+   "years": [
+    1905,
+    1914
+   ],
+   "realm": "Russia",
+   "why": "In the Grodno Governorate"
+  },
+  {
+   "place": "Bialystok (German-held, 1918)",
+   "lonLat": [
+    23.16,
+    53.13
+   ],
+   "years": [
+    1915,
+    1918
+   ],
+   "realm": "Russia",
+   "why": "Held by Germany until February 1919",
+   "heldBy": [
+    {
+     "years": [
+      1915,
+      1918
+     ],
+     "by": "Germany"
+    }
+   ]
+  },
+  {
+   "place": "Bialystok (Soviet-held)",
+   "lonLat": [
+    23.16,
+    53.13
+   ],
+   "years": [
+    1939,
+    1940
+   ],
+   "realm": "Poland",
+   "why": "Annexed by the Soviet Union, 1939 to 1941",
+   "heldBy": [
+    {
+     "years": [
+      1939,
+      1940
+     ],
+     "by": "Soviet Union"
+    }
+   ]
+  },
+  {
+   "place": "Kalisz (German-held, 1914)",
+   "lonLat": [
+    18.09,
+    51.76
+   ],
+   "years": [
+    1914,
+    1917
+   ],
+   "realm": "Russia",
+   "why": "Taken by Germany in August 1914",
+   "heldBy": [
+    {
+     "years": [
+      1914,
+      1917
+     ],
+     "by": "Germany"
+    }
+   ]
+  },
+  {
+   "place": "Czestochowa (Congress Poland)",
+   "lonLat": [
+    19.12,
+    50.81
+   ],
+   "years": [
+    1905,
+    1913
+   ],
+   "realm": "Russia",
+   "why": "In Congress Poland"
+  },
+  {
+   "place": "Suwalki (Congress Poland)",
+   "lonLat": [
+    22.93,
+    54.1
+   ],
+   "years": [
+    1905,
+    1913
+   ],
+   "realm": "Russia",
+   "why": "In Congress Poland"
   }
  ]
 }

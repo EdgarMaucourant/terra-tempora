@@ -1,9 +1,9 @@
 {
- "soviet-union": {
-  "name": "Unión Soviética"
- },
  "russia": {
   "name": "Rusia"
+ },
+ "soviet-union": {
+  "name": "Unión Soviética"
  },
  "united-kingdom": {
   "name": "Reino Unido"
@@ -601,6 +601,9 @@
  },
  "north-korea": {
   "name": "Corea del Norte"
+ },
+ "congress-poland": {
+  "name": "Polonia del Congreso"
  },
  "malawi": {
   "name": "Malaui"
