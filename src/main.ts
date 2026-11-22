@@ -306,8 +306,23 @@ scene.postRender.addEventListener(() => detailsHere.place());
  */
 let quietTap = false;
 
+/**
+ * True while a click on the globe or map is handled: what it opens leaves the
+ * camera where the reader put it, without zooming or turning (Edgar, 2026-11-22).
+ */
+let cameraStays = false;
+
 /** A tap or click on a realm of the globe or map; on phones it only chooses it. */
 function tapRealm(p: Polity | null | undefined, spot: [number, number] | null) {
+  cameraStays = true;
+  try {
+    chooseRealm(p, spot);
+  } finally {
+    cameraStays = false;
+  }
+}
+
+function chooseRealm(p: Polity | null | undefined, spot: [number, number] | null) {
   if (!compactQuery.matches) return clickRealm(p, spot);
   // The button goes under the land chosen: a closed group's outline (French
   // Indochina) on the first tap, the territory itself once the group is open.
@@ -326,6 +341,17 @@ const DETAIL_PIXELS = 2.5;
 function showDetailAt(pixelsPerDegree: number) {
   if (data && pixelsPerDegree * 0.2 > DETAIL_PIXELS) data.showDetail();
 }
+// The globe keeps its scale when its canvas narrows (the side panel opening on
+// a click): the field of view, 60° across the whole window, shrinks with it.
+const WINDOW_FOV = CesiumMath.toRadians(60);
+scene.preRender.addEventListener(() => {
+  const frustum = widget.camera.frustum;
+  if (!(frustum instanceof PerspectiveFrustum)) return;
+  const { width, height } = scene.canvas.getBoundingClientRect();
+  const share = Math.max(width, height) / Math.max(window.innerWidth, window.innerHeight);
+  const fov = WINDOW_FOV * Math.min(1, share || 1);
+  if (Math.abs((frustum.fov ?? fov) - fov) > 1e-4) frustum.fov = fov;
+});
 // On the globe, the scale at the middle of the view, where the ground is nearest.
 scene.postRender.addEventListener(() => {
   if (map.active || !(widget.camera.frustum instanceof PerspectiveFrustum)) return;
@@ -904,9 +930,15 @@ function clickRealm(p: Polity | null | undefined, spot?: [number, number] | null
   if (spot && placesOf(p.name).length > 1) {
     const clicked = p;
     const quiet = quietTap;
+    const stays = cameraStays;
     void placeAtSpot(p.name, spot).then((place) => {
       quietTap = quiet;
-      openPlace(clicked, place ?? placeOf(clicked.name), spot);
+      cameraStays = stays;
+      try {
+        openPlace(clicked, place ?? placeOf(clicked.name), spot);
+      } finally {
+        cameraStays = false;
+      }
       if (quiet) detailsHere.show(spot, clicked.rings);
       quietTap = false;
     });
@@ -1459,7 +1491,7 @@ function flightMs(seconds = 1.4): number {
 
 function flyToCiv(c: Civilization, target: [number, number] | null = c.home ?? c.center, keepHeight = false) {
   flight++;
-  if (!target) return;
+  if (!target || cameraStays) return;
   if (map.active) return map.focus(target[0], target[1], keepHeight ? null : altitudeFor(c.area), flightMs());
   flyCamera(target[0], target[1], keepHeight ? widget.camera.positionCartographic.height : altitudeFor(c.area));
 }
@@ -1471,6 +1503,7 @@ function flyToCiv(c: Civilization, target: [number, number] | null = c.home ?? c
  */
 function flyToRealm(c: Civilization) {
   const mine = ++flight;
+  if (cameraStays) return;
   const at = year;
   if (!data) return flyToCiv(c);
   data.load(at, at).then(
@@ -1490,6 +1523,7 @@ function flyToRealm(c: Civilization) {
 /** Points the camera so all these civilizations are in view at once. */
 function flyToAll(list: Civilization[]) {
   flight++;
+  if (cameraStays) return;
   const centers = list.map((c) => c.home ?? c.center).filter((p): p is [number, number] => !!p);
   if (centers.length < 2) return flyToCiv(list[0]);
   // Average on the sphere, so realms on either side of the antimeridian meet in the middle.
@@ -2297,6 +2331,7 @@ function applyPicked(list: Civilization[]) {
 /** Points the camera at a place, framing an area of so many km². */
 function flyToPlace([lon, lat]: [number, number], area: number) {
   flight++;
+  if (cameraStays) return;
   if (map.active) return map.focus(lon, lat, altitudeFor(area), flightMs());
   flyCamera(lon, lat, altitudeFor(area));
 }

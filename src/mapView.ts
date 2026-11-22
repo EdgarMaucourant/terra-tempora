@@ -381,12 +381,16 @@ export class MapView {
     if (!rect.width || !rect.height) return;
     const ratio = window.devicePixelRatio || 1;
     const centreLat = this.width ? this.projection.invert?.([this.width / 2, this.viewCentreY()])?.[1] : undefined;
+    // A zoomed-in map keeps its scale when the canvas changes size (the side
+    // panel opening on a click), so the land shown doesn't shrink or grow.
+    const scale = this.width && this.zoom > 1 ? this.baseScale * this.zoom : 0;
     this.width = rect.width;
     this.height = rect.height;
     this.canvas.width = Math.round(rect.width * ratio);
     this.canvas.height = Math.round(rect.height * ratio);
     this.ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
     this.fit();
+    if (scale) this.zoom = Math.min(MAX_ZOOM, Math.max(1, scale / this.baseScale));
     if (centreLat !== undefined && this.zoom > 1) {
       this.apply(this.lambda, this.zoom, 0);
       const y = this.projection([this.lambda, centreLat])?.[1];

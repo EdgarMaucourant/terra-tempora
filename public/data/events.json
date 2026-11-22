@@ -10355,6 +10355,303 @@
    "summary": "In December 1979 Soviet troops enter Afghanistan to prop up its communist government, kill its leader Hafizullah Amin and install Babrak Karmal. They hold the cities but not the mountains, where mujahideen armed by the United States, Pakistan and Saudi Arabia fight a long guerrilla war. About 15,000 Soviet soldiers and perhaps a million Afghans die before the Geneva Accords; the last Soviet troops cross back over the Amu Darya on 15 February 1989.",
    "wikipedia": "Soviet–Afghan_War",
    "search": "Soviet-Afghan War 1979 1989 invasion 24 December 1979 Operation Storm-333 Amin Karmal mujahideen Stinger Geneva Accords withdrawal 15 February 1989 Termez"
+  },
+  {
+   "id": "soviet-invasion-of-poland-1939",
+   "kind": "war",
+   "year": 1939,
+   "title": "The Soviet Union invades eastern Poland, 17 September 1939",
+   "place": "Lviv",
+   "lonLat": [
+    24.03,
+    49.84
+   ],
+   "civs": [
+    "poland",
+    "soviet-union",
+    "ukraine",
+    "belarus"
+   ],
+   "summary": "Sixteen days after Germany attacks Poland, the Red Army crosses its eastern border on 17 September 1939, as agreed in the secret protocol of the Molotov–Ribbentrop Pact. Lwów surrenders on 22 September and German and Soviet troops hold a joint parade in Brest. After staged elections, the Soviet Union annexes the land as Western Ukraine and Western Belarus in November 1939; Vilnius is handed to Lithuania. Hundreds of thousands are deported, and in 1940 some 22,000 Polish officers and officials are shot at Katyn and elsewhere.",
+   "wikipedia": "Soviet_invasion_of_Poland",
+   "search": "Soviet invasion of Poland 17 September 1939 Molotov-Ribbentrop Pact secret protocol Curzon Line Lwow Brest joint parade annexation November 1939 Western Ukraine Western Belarus Katyn"
+  },
+  {
+   "id": "winter-war-1939",
+   "kind": "war",
+   "year": 1939,
+   "to": 1940,
+   "title": "The Winter War, November 1939 – March 1940",
+   "place": "Vyborg",
+   "lonLat": [
+    28.73,
+    60.71
+   ],
+   "civs": [
+    "finland",
+    "soviet-union"
+   ],
+   "summary": "After Finland refuses to give up land near Leningrad, the Soviet Union attacks on 30 November 1939 and is expelled from the League of Nations. The Finns hold the Mannerheim Line and destroy whole divisions in the snowy forests at Suomussalmi, but a new offensive breaks through in February 1940. The Moscow Peace Treaty of 13 March 1940 takes the Karelian Isthmus with Viipuri (Vyborg), Ladoga Karelia and land in the north, about a tenth of Finland, and leases Hanko as a naval base; 400,000 Karelians leave their homes.",
+   "wikipedia": "Winter_War",
+   "search": "Winter War 30 November 1939 13 March 1940 Finland Soviet Union Mannerheim Line Karelian Isthmus Suomussalmi Vyborg Viipuri Moscow Peace Treaty Hanko League of Nations expelled"
+  },
+  {
+   "id": "occupation-of-the-baltic-states-1940",
+   "kind": "war",
+   "year": 1940,
+   "title": "The Soviet Union occupies the Baltic states, June 1940",
+   "place": "Riga",
+   "lonLat": [
+    24.11,
+    56.95
+   ],
+   "civs": [
+    "estonia",
+    "latvia",
+    "lithuania",
+    "soviet-union"
+   ],
+   "summary": "In June 1940, while the world watches the fall of France, the Soviet Union sends ultimatums to Lithuania, Latvia and Estonia and its troops march in. Rigged elections in July produce assemblies that ask to join the Soviet Union, and the three states are annexed in August 1940. Tens of thousands are deported to Siberia in June 1941. The United States and most Western countries never recognise the annexation, which ends when the three states regain their independence in 1991.",
+   "wikipedia": "Occupation_of_the_Baltic_states",
+   "search": "Soviet occupation of the Baltic states June 1940 ultimatum Lithuania 14 June Estonia Latvia 16 June elections July annexation August 1940 deportations June 1941 non-recognition Stimson"
+  },
+  {
+   "id": "soviet-occupation-of-bessarabia-1940",
+   "kind": "war",
+   "year": 1940,
+   "title": "Romania loses Bessarabia and Northern Bukovina, 28 June 1940",
+   "place": "Chișinău",
+   "lonLat": [
+    28.86,
+    47.0
+   ],
+   "civs": [
+    "romania",
+    "moldova",
+    "ukraine",
+    "soviet-union"
+   ],
+   "summary": "On 26 June 1940 the Soviet Union gives Romania 24 hours to hand over Bessarabia, which it had claimed since 1918, and Northern Bukovina, never Russian before. Left alone after the fall of France, Romania gives in, and the Red Army moves in on 28 June, taking the Hertsa region as well. On 2 August most of Bessarabia becomes the Moldavian SSR, while its south (the Budjak) and Northern Bukovina go to the Ukrainian SSR.",
+   "wikipedia": "Soviet_occupation_of_Bessarabia_and_Northern_Bukovina",
+   "search": "Soviet occupation of Bessarabia and Northern Bukovina 26 June 1940 ultimatum Romania 28 June Hertsa Moldavian SSR 2 August 1940 Chisinau Cernauti Budjak"
+  },
+  {
+   "id": "tuva-joins-soviet-union-1944",
+   "kind": "empire",
+   "year": 1944,
+   "title": "Tuva joins the Soviet Union, 11 October 1944",
+   "place": "Kyzyl",
+   "lonLat": [
+    94.45,
+    51.72
+   ],
+   "civs": [
+    "soviet-union",
+    "russia"
+   ],
+   "summary": "Tannu Tuva, a land of herders on the upper Yenisei, broke away from China in 1921 as the Tuvan People's Republic, recognised only by the Soviet Union and Mongolia. Its small parliament asks to join the Soviet Union in August 1944, and on 11 October 1944 Tuva becomes an autonomous oblast of the Russian SFSR. It is today the Republic of Tuva, within Russia.",
+   "wikipedia": "Tuvan_People's_Republic",
+   "search": "Tuvan People's Republic Tannu Tuva 1921 1944 annexation 11 October 1944 autonomous oblast Kyzyl Toka Soviet satellite"
+  },
+  {
+   "id": "moscow-armistice-1944",
+   "kind": "treaty",
+   "year": 1944,
+   "title": "The Moscow Armistice with Finland, 19 September 1944",
+   "place": "Pechenga (Petsamo)",
+   "lonLat": [
+    31.17,
+    69.55
+   ],
+   "civs": [
+    "finland",
+    "soviet-union"
+   ],
+   "summary": "Finland, which had joined the German attack in 1941 and retaken its lost land, makes a separate peace once the Soviet summer offensive of 1944 breaks through at Vyborg. The Moscow Armistice of 19 September 1944 restores the border of 1940, takes Petsamo and Finland's outlet to the Arctic Ocean, leases Porkkala near Helsinki for fifty years and obliges Finland to drive the German army out of Lapland. The Paris Peace Treaty of 1947 confirms these terms.",
+   "wikipedia": "Moscow_Armistice",
+   "search": "Moscow Armistice 19 September 1944 Finland Soviet Union Continuation War Petsamo Porkkala 1940 border Lapland War reparations Paris Peace Treaty 1947"
+  },
+  {
+   "id": "carpathian-ruthenia-ceded-1945",
+   "kind": "treaty",
+   "year": 1945,
+   "title": "Czechoslovakia cedes Carpathian Ruthenia, 29 June 1945",
+   "place": "Uzhhorod",
+   "lonLat": [
+    22.29,
+    48.62
+   ],
+   "civs": [
+    "czechoslovakia",
+    "ukraine",
+    "soviet-union"
+   ],
+   "summary": "Carpathian Ruthenia, the eastern tip of Czechoslovakia between the wars, declared itself Carpatho-Ukraine in March 1939 and was overrun by Hungary within a day. The Red Army takes it in October 1944; a congress in Mukachevo asks to join Soviet Ukraine, and on 29 June 1945 Czechoslovakia cedes it by treaty. It becomes the Zakarpattia Oblast of the Ukrainian SSR, giving the Soviet Union a border with Hungary.",
+   "wikipedia": "Carpathian_Ruthenia",
+   "search": "Carpathian Ruthenia Subcarpathian Rus 1939 Carpatho-Ukraine Hungary 1944 Red Army Transcarpathian Ukraine treaty 29 June 1945 Zakarpattia Oblast Ukrainian SSR Uzhhorod"
+  },
+  {
+   "id": "soviet-japanese-war-1945",
+   "kind": "war",
+   "year": 1945,
+   "title": "The Soviet–Japanese War, August – September 1945",
+   "place": "Yuzhno-Sakhalinsk (Toyohara)",
+   "lonLat": [
+    142.73,
+    46.96
+   ],
+   "civs": [
+    "japan",
+    "soviet-union",
+    "russia",
+    "china"
+   ],
+   "summary": "As agreed at Yalta, the Soviet Union declares war on Japan on 8 August 1945, two days after Hiroshima. More than a million Soviet soldiers overrun Manchuria and its puppet state Manchukuo, while landings take South Sakhalin (Karafuto) and, until 5 September, the whole Kuril chain. Both are annexed on 2 February 1946 and their Japanese inhabitants sent away; Japan still claims the four southern Kuril islands, and the two countries have never signed a peace treaty.",
+   "wikipedia": "Soviet–Japanese_War",
+   "search": "Soviet-Japanese War August 1945 Manchuria Operation August Storm Manchukuo invasion of South Sakhalin Kuril Islands Shumshu Yalta Agreement annexation February 1946 Northern Territories dispute"
+  },
+  {
+   "id": "konigsberg-to-soviet-union-1945",
+   "kind": "treaty",
+   "year": 1945,
+   "title": "Potsdam gives Königsberg to the Soviet Union, August 1945",
+   "place": "Kaliningrad (Königsberg)",
+   "lonLat": [
+    20.5,
+    54.71
+   ],
+   "civs": [
+    "germany",
+    "soviet-union",
+    "russia"
+   ],
+   "summary": "The Red Army takes Königsberg, the old capital of Prussia, on 9 April 1945 after a fierce siege. At Potsdam in August the Allies agree that the city and the northern third of East Prussia go to the Soviet Union, pending a peace settlement, while the south goes to Poland. It becomes the Königsberg Oblast of the Russian SFSR in April 1946 and is renamed Kaliningrad in July; its remaining German inhabitants are expelled by 1948.",
+   "wikipedia": "Potsdam_Agreement",
+   "search": "Potsdam Agreement 2 August 1945 Königsberg East Prussia Soviet Union Kaliningrad Oblast 1946 Oder-Neisse line expulsion of Germans Battle of Königsberg April 1945"
+  },
+  {
+   "id": "operation-barbarossa-1941",
+   "kind": "war",
+   "year": 1941,
+   "title": "Germany invades the Soviet Union, 22 June 1941",
+   "place": "Brest Fortress",
+   "lonLat": [
+    23.66,
+    52.08
+   ],
+   "civs": [
+    "germany",
+    "soviet-union",
+    "russia",
+    "ukraine",
+    "belarus"
+   ],
+   "summary": "At dawn on 22 June 1941 more than three million German soldiers, with Romanian, Finnish and other allies, attack the Soviet Union along a front from the Baltic to the Black Sea, breaking the pact of 1939. The Red Army, caught unprepared, loses millions of men in vast encirclements at Białystok, Minsk, Smolensk and Kyiv, while the defenders of the Brest Fortress hold out for weeks. By December the Germans stand before Leningrad and Moscow and hold the Baltic states, Belarus and most of Ukraine.",
+   "wikipedia": "Operation_Barbarossa",
+   "search": "Operation Barbarossa 22 June 1941 German invasion of the Soviet Union Brest Fortress Army Group North Centre South Kiev encirclement Smolensk Romania Finland Continuation War"
+  },
+  {
+   "id": "siege-of-leningrad-1941",
+   "kind": "siege",
+   "year": 1941,
+   "to": 1944,
+   "title": "The siege of Leningrad, September 1941 – January 1944",
+   "place": "Leningrad (Saint Petersburg)",
+   "lonLat": [
+    30.32,
+    59.94
+   ],
+   "civs": [
+    "russia",
+    "soviet-union",
+    "germany",
+    "finland"
+   ],
+   "summary": "On 8 September 1941 German troops take Shlisselburg on Lake Ladoga and cut Leningrad off by land, while the Finns close in from the north. For 872 days the city of three million is shelled and starved; in the first winter alone hundreds of thousands die of hunger and cold, and supplies come only across the frozen lake by the \"Road of Life\". A narrow land corridor opens in January 1943, and the siege is lifted on 27 January 1944, after some 800,000 civilian deaths.",
+   "wikipedia": "Siege_of_Leningrad",
+   "search": "Siege of Leningrad 8 September 1941 27 January 1944 872 days blockade Road of Life Lake Ladoga famine winter 1941-42 Shlisselburg Operation Iskra Leningrad-Novgorod offensive"
+  },
+  {
+   "id": "battle-of-moscow-1941",
+   "kind": "battle",
+   "year": 1941,
+   "to": 1942,
+   "title": "The Battle of Moscow, October 1941 – January 1942",
+   "place": "Moscow",
+   "lonLat": [
+    37.3,
+    55.6
+   ],
+   "civs": [
+    "russia",
+    "soviet-union",
+    "germany"
+   ],
+   "summary": "In October 1941 the German Operation Typhoon encircles whole Soviet armies at Vyazma and Bryansk and drives on Moscow; the government leaves for Kuibyshev, but Stalin stays. Mud, then frost, slow the advance, and by late November German units are within 30 km of the Kremlin. On 5 December Zhukov counterattacks with fresh divisions from Siberia and the Far East, and by January the Germans are thrown back 100 to 250 km: the first great defeat of the German army.",
+   "wikipedia": "Battle_of_Moscow",
+   "search": "Battle of Moscow October 1941 January 1942 Operation Typhoon Vyazma Bryansk encirclement Mozhaysk line Zhukov Siberian divisions winter counteroffensive 5 December 1941 Kalinin Kaluga"
+  },
+  {
+   "id": "battle-of-stalingrad-1942",
+   "kind": "battle",
+   "year": 1942,
+   "to": 1943,
+   "title": "The Battle of Stalingrad, August 1942 – February 1943",
+   "place": "Stalingrad (Volgograd)",
+   "lonLat": [
+    44.53,
+    48.72
+   ],
+   "civs": [
+    "russia",
+    "soviet-union",
+    "germany",
+    "romania"
+   ],
+   "summary": "Germany's summer offensive of 1942 drives toward the Caucasus oil fields and the Volga, and in August the Sixth Army reaches Stalingrad. Months of house-to-house fighting reduce the city to ruins, but its defenders hold a strip along the river. On 19 November Operation Uranus breaks through the Romanian armies on the flanks and traps some 300,000 men; Field Marshal Paulus surrenders on 2 February 1943. The Germans also fall back from the Caucasus, and the tide of the war turns.",
+   "wikipedia": "Battle_of_Stalingrad",
+   "search": "Battle of Stalingrad August 1942 2 February 1943 Volga Paulus Sixth Army Chuikov Mamayev Kurgan Operation Uranus encirclement Romanian Third Army surrender turning point"
+  },
+  {
+   "id": "battle-of-kursk-1943",
+   "kind": "battle",
+   "year": 1943,
+   "title": "The Battle of Kursk, July – August 1943",
+   "place": "Prokhorovka, near Kursk",
+   "lonLat": [
+    36.73,
+    51.04
+   ],
+   "civs": [
+    "russia",
+    "soviet-union",
+    "germany",
+    "ukraine"
+   ],
+   "summary": "In July 1943 Germany attacks the Kursk salient from north and south in Operation Citadel, its last great offensive in the east, against deep Soviet defences. After the clash of tanks at Prokhorovka on 12 July the attack is called off, and Soviet counteroffensives take Oryol and Belgorod on 5 August and Kharkiv on 23 August. From then on the Red Army keeps the initiative, reaching the Dnieper and retaking Kyiv in November.",
+   "wikipedia": "Battle_of_Kursk",
+   "search": "Battle of Kursk July August 1943 Operation Citadel Prokhorovka tank battle Kursk salient Operation Kutuzov Polkovodets Rumyantsev Oryol Belgorod Kharkiv liberated"
+  },
+  {
+   "id": "operation-bagration-1944",
+   "kind": "battle",
+   "year": 1944,
+   "title": "Operation Bagration, June – August 1944",
+   "place": "Minsk",
+   "lonLat": [
+    27.56,
+    53.9
+   ],
+   "civs": [
+    "belarus",
+    "soviet-union",
+    "germany",
+    "lithuania",
+    "poland"
+   ],
+   "summary": "Three years to the day after the German invasion, on 22 June 1944, the Red Army launches Operation Bagration against Army Group Centre in Belarus. Encircled at Vitebsk, Bobruisk and Minsk, which is freed on 3 July, the German front collapses; in five weeks the Soviets advance some 500 km, taking Vilnius, Brest and Lublin and reaching the Vistula and the edge of East Prussia. It is the heaviest German defeat of the war.",
+   "wikipedia": "Operation_Bagration",
+   "search": "Operation Bagration 22 June 1944 Belorussian offensive Army Group Centre destroyed Vitebsk Bobruisk Minsk liberated 3 July Vilnius Brest Vistula Warsaw"
   }
  ]
 }
