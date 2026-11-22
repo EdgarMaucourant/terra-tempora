@@ -102,6 +102,17 @@
   "es": "Armenia",
   "periods": [
    {
+    "from": "1918-05-28",
+    "name": "First Republic of Armenia",
+    "wikipedia": "First Republic of Armenia",
+    "fr": "République démocratique d'Arménie",
+    "es": "Primera República de Armenia",
+    "label": "First Republic of Armenia",
+    "labelFr": "République démocratique d'Arménie",
+    "labelEs": "Primera República de Armenia",
+    "note": "Independent from May 1918 until the Soviet takeover of December 1920"
+   },
+   {
     "from": "1920-11-29",
     "name": "Armenian SSR",
     "wikipedia": "Armenian Soviet Socialist Republic",
@@ -155,6 +166,17 @@
   "fr": "Azerbaïdjan",
   "es": "Azerbaiyán",
   "periods": [
+   {
+    "from": "1918-05-28",
+    "name": "Azerbaijan Democratic Republic",
+    "wikipedia": "Azerbaijan Democratic Republic",
+    "fr": "République démocratique d'Azerbaïdjan",
+    "es": "República Democrática de Azerbaiyán",
+    "label": "Azerbaijan Democratic Republic",
+    "labelFr": "République démocratique d'Azerbaïdjan",
+    "labelEs": "República Democrática de Azerbaiyán",
+    "note": "Independent from May 1918 until the Red Army invasion of April 1920"
+   },
    {
     "from": "1920-04-28",
     "name": "Azerbaijan SSR",
@@ -1317,6 +1339,17 @@
   "fr": "Géorgie",
   "es": "Georgia",
   "periods": [
+   {
+    "from": "1918-05-26",
+    "name": "Democratic Republic of Georgia",
+    "wikipedia": "Democratic Republic of Georgia",
+    "fr": "République démocratique de Géorgie",
+    "es": "República Democrática de Georgia",
+    "label": "Democratic Republic of Georgia",
+    "labelFr": "République démocratique de Géorgie",
+    "labelEs": "República Democrática de Georgia",
+    "note": "Independent from May 1918 until the Red Army invasion of February 1921"
+   },
    {
     "from": "1921-02-25",
     "name": "Georgian SSR",
@@ -4523,5 +4556,23 @@
   "wikidata": "Q523380",
   "fr": "Lituanie centrale",
   "es": "Lituania Central"
+ },
+ "Far Eastern Republic": {
+  "wikipedia": "Far Eastern Republic",
+  "wikidata": "Q61292",
+  "fr": "République d'Extrême-Orient",
+  "es": "República del Lejano Oriente"
+ },
+ "Emirate of Bukhara": {
+  "wikipedia": "Emirate of Bukhara",
+  "wikidata": "Q746558",
+  "fr": "Émirat de Boukhara",
+  "es": "Emirato de Bujará"
+ },
+ "Khanate of Khiva": {
+  "wikipedia": "Khanate of Khiva",
+  "wikidata": "Q491106",
+  "fr": "Khanat de Khiva",
+  "es": "Kanato de Jiva"
  }
 }

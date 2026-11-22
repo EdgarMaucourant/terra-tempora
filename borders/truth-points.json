@@ -13376,7 +13376,452 @@
     1919
    ],
    "realm": "Russia",
-   "why": "Russian until the Treaty of Tartu of 1920"
+   "why": "Russian until the Treaty of Tartu of 1920; British troops held Pechenga in 1918 and 1919",
+   "heldBy": [
+    {
+     "years": [
+      1918,
+      1918
+     ],
+     "by": "United Kingdom"
+    }
+   ]
+  },
+  {
+   "place": "Moscow (1917)",
+   "lonLat": [
+    37.62,
+    55.75
+   ],
+   "years": [
+    1917,
+    1921
+   ],
+   "realm": "Russia",
+   "why": "Capital of Soviet Russia from March 1918"
+  },
+  {
+   "place": "Omsk (Kolchak, 1919)",
+   "lonLat": [
+    73.37,
+    54.98
+   ],
+   "years": [
+    1918,
+    1919
+   ],
+   "realm": "Russia",
+   "why": "Seat of the White government of Admiral Kolchak, drawn as Russia"
+  },
+  {
+   "place": "Chita (Far Eastern Republic)",
+   "lonLat": [
+    113.5,
+    52.03
+   ],
+   "years": [
+    1920,
+    1921
+   ],
+   "realm": "Far Eastern Republic",
+   "why": "Capital of the Far Eastern Republic from October 1920"
+  },
+  {
+   "place": "Chita (1922)",
+   "lonLat": [
+    113.5,
+    52.03
+   ],
+   "years": [
+    1922,
+    1925
+   ],
+   "realm": "Russia",
+   "why": "In the Russian SFSR from November 1922"
+  },
+  {
+   "place": "Blagoveshchensk (Far Eastern Republic)",
+   "lonLat": [
+    127.53,
+    50.26
+   ],
+   "years": [
+    1920,
+    1921
+   ],
+   "realm": "Far Eastern Republic",
+   "why": "In the Far Eastern Republic"
+  },
+  {
+   "place": "Vladivostok (Japanese-held, 1919)",
+   "lonLat": [
+    131.9,
+    43.12
+   ],
+   "years": [
+    1918,
+    1919
+   ],
+   "realm": "Russia",
+   "why": "Held by Japanese troops from 1918",
+   "heldBy": [
+    {
+     "years": [
+      1918,
+      1921
+     ],
+     "by": "Japan"
+    }
+   ]
+  },
+  {
+   "place": "Vladivostok (FER, Japanese-held)",
+   "lonLat": [
+    131.9,
+    43.12
+   ],
+   "years": [
+    1920,
+    1920
+   ],
+   "realm": "Far Eastern Republic",
+   "why": "In the Far Eastern Republic, still held by Japanese troops",
+   "heldBy": [
+    {
+     "years": [
+      1920,
+      1920
+     ],
+     "by": "Japan"
+    }
+   ]
+  },
+  {
+   "place": "Vladivostok (1922)",
+   "lonLat": [
+    131.9,
+    43.12
+   ],
+   "years": [
+    1922,
+    1925
+   ],
+   "realm": "Russia",
+   "why": "Left by Japan in October 1922"
+  },
+  {
+   "place": "Alexandrovsk-Sakhalinsky (Japanese-held)",
+   "lonLat": [
+    142.16,
+    50.9
+   ],
+   "years": [
+    1920,
+    1924
+   ],
+   "realm": "Russia",
+   "why": "Northern Sakhalin, held by Japan from 1920 to 1925",
+   "heldBy": [
+    {
+     "years": [
+      1920,
+      1924
+     ],
+     "by": "Japan"
+    }
+   ]
+  },
+  {
+   "place": "Kyzyl (Uryankhay, 1920)",
+   "lonLat": [
+    94.45,
+    51.72
+   ],
+   "years": [
+    1917,
+    1920
+   ],
+   "realm": "Russia",
+   "why": "Uryankhay Krai, a Russian protectorate, until 1921"
+  },
+  {
+   "place": "Kyzyl (Tuvan PR)",
+   "lonLat": [
+    94.45,
+    51.72
+   ],
+   "years": [
+    1921,
+    1943
+   ],
+   "realm": "Tuvan People's Republic",
+   "why": "Capital of the Tuvan People's Republic"
+  },
+  {
+   "place": "Arkhangelsk (Allied-held, 1918)",
+   "lonLat": [
+    40.6,
+    64.55
+   ],
+   "years": [
+    1918,
+    1918
+   ],
+   "realm": "Russia",
+   "why": "Held by British-led Allied forces, August 1918 to September 1919",
+   "heldBy": [
+    {
+     "years": [
+      1918,
+      1918
+     ],
+     "by": "United Kingdom"
+    }
+   ]
+  },
+  {
+   "place": "Arkhangelsk (1919)",
+   "lonLat": [
+    40.6,
+    64.55
+   ],
+   "years": [
+    1919,
+    1921
+   ],
+   "realm": "Russia",
+   "why": "Left by the Allies in September 1919"
+  },
+  {
+   "place": "Murmansk (Allied-held, 1918)",
+   "lonLat": [
+    33.08,
+    68.97
+   ],
+   "years": [
+    1918,
+    1918
+   ],
+   "realm": "Russia",
+   "why": "Held by British-led Allied forces, March 1918 to October 1919",
+   "heldBy": [
+    {
+     "years": [
+      1918,
+      1918
+     ],
+     "by": "United Kingdom"
+    }
+   ]
+  },
+  {
+   "place": "Tbilisi (1917)",
+   "lonLat": [
+    44.8,
+    41.7
+   ],
+   "years": [
+    1917,
+    1917
+   ],
+   "realm": "Russia",
+   "why": "Tiflis, seat of the Transcaucasian Commissariat"
+  },
+  {
+   "place": "Tbilisi (Democratic Republic of Georgia)",
+   "lonLat": [
+    44.8,
+    41.7
+   ],
+   "years": [
+    1918,
+    1921
+   ],
+   "realm": "Georgia",
+   "why": "Capital of independent Georgia, then of the Georgian SSR from February 1921"
+  },
+  {
+   "place": "Batumi (British-held, 1919)",
+   "lonLat": [
+    41.64,
+    41.64
+   ],
+   "years": [
+    1918,
+    1919
+   ],
+   "realm": "Georgia",
+   "why": "Held by British forces, December 1918 to July 1920",
+   "heldBy": [
+    {
+     "years": [
+      1918,
+      1919
+     ],
+     "by": "United Kingdom"
+    }
+   ]
+  },
+  {
+   "place": "Batumi (Georgia, 1920)",
+   "lonLat": [
+    41.64,
+    41.64
+   ],
+   "years": [
+    1920,
+    1922
+   ],
+   "realm": "Georgia",
+   "why": "Handed to Georgia in July 1920"
+  },
+  {
+   "place": "Yerevan (First Republic)",
+   "lonLat": [
+    44.51,
+    40.18
+   ],
+   "years": [
+    1918,
+    1921
+   ],
+   "realm": "Armenia",
+   "why": "Capital of the First Republic of Armenia, then of the Armenian SSR"
+  },
+  {
+   "place": "Gyumri (Turkish-held, 1920)",
+   "lonLat": [
+    43.85,
+    40.79
+   ],
+   "years": [
+    1920,
+    1920
+   ],
+   "realm": "Armenia",
+   "why": "Alexandropol, held by the Turkish army from November 1920 to April 1921",
+   "heldBy": [
+    {
+     "years": [
+      1920,
+      1920
+     ],
+     "by": "Turkey"
+    }
+   ]
+  },
+  {
+   "place": "Baku (British-held, 1918)",
+   "lonLat": [
+    49.87,
+    40.4
+   ],
+   "years": [
+    1918,
+    1918
+   ],
+   "realm": "Azerbaijan",
+   "why": "Held by British forces, November 1918 to August 1919",
+   "heldBy": [
+    {
+     "years": [
+      1918,
+      1918
+     ],
+     "by": "United Kingdom"
+    }
+   ]
+  },
+  {
+   "place": "Baku (1919)",
+   "lonLat": [
+    49.87,
+    40.4
+   ],
+   "years": [
+    1919,
+    1921
+   ],
+   "realm": "Azerbaijan",
+   "why": "Capital of the Azerbaijan Democratic Republic, then of the Azerbaijan SSR"
+  },
+  {
+   "place": "Ganja (Azerbaijan, 1918)",
+   "lonLat": [
+    46.36,
+    40.68
+   ],
+   "years": [
+    1918,
+    1921
+   ],
+   "realm": "Azerbaijan",
+   "why": "First seat of the Azerbaijan Democratic Republic"
+  },
+  {
+   "place": "Bukhara (Emirate)",
+   "lonLat": [
+    64.42,
+    39.77
+   ],
+   "years": [
+    1917,
+    1919
+   ],
+   "realm": "Emirate of Bukhara",
+   "why": "Capital of the Emirate of Bukhara until September 1920"
+  },
+  {
+   "place": "Bukhara (People's Soviet Republic)",
+   "lonLat": [
+    64.42,
+    39.77
+   ],
+   "years": [
+    1920,
+    1923
+   ],
+   "realm": "Bukharan People's Soviet Republic",
+   "why": "From September 1920"
+  },
+  {
+   "place": "Khiva (Khanate)",
+   "lonLat": [
+    60.36,
+    41.38
+   ],
+   "years": [
+    1917,
+    1919
+   ],
+   "realm": "Khanate of Khiva",
+   "why": "Capital of the Khanate of Khiva until February 1920"
+  },
+  {
+   "place": "Tashkent (1917)",
+   "lonLat": [
+    69.24,
+    41.3
+   ],
+   "years": [
+    1917,
+    1921
+   ],
+   "realm": "Russia",
+   "why": "Capital of the Turkestan ASSR within the Russian SFSR"
+  },
+  {
+   "place": "Almaty (1917)",
+   "lonLat": [
+    76.95,
+    43.25
+   ],
+   "years": [
+    1917,
+    1921
+   ],
+   "realm": "Russia",
+   "why": "Verny, in the Russian SFSR"
   }
  ]
 }

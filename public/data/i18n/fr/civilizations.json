@@ -35,6 +35,9 @@
  "company-rule-in-india": {
   "name": "Inde de la Compagnie"
  },
+ "far-eastern-republic": {
+  "name": "République d'Extrême-Orient"
+ },
  "khedivate-of-egypt": {
   "name": "Khédivat d’Égypte"
  },
@@ -86,11 +89,11 @@
  "saudi-arabia": {
   "name": "Arabie saoudite"
  },
- "indonesia": {
-  "name": "Indonésie"
- },
  "germany": {
   "name": "Allemagne"
+ },
+ "indonesia": {
+  "name": "Indonésie"
  },
  "french-sudan": {
   "name": "Soudan français"
@@ -383,6 +386,9 @@
  "bukharan-people-s-soviet-republic": {
   "name": "République soviétique populaire de Boukhara"
  },
+ "emirate-of-bukhara": {
+  "name": "Émirat de Boukhara"
+ },
  "rajputana": {
   "name": "Rajputana"
  },
@@ -643,6 +649,9 @@
  },
  "khorezm-people-s-soviet-republic": {
   "name": "République soviétique populaire du Khorezm"
+ },
+ "khanate-of-khiva": {
+  "name": "Khanat de Khiva"
  },
  "liberia": {
   "name": "Liberia"
