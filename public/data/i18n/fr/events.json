@@ -2948,5 +2948,50 @@
   "title": "La République populaire de Touva, août 1921",
   "place": "Kyzyl",
   "summary": "L’Ouriankhaï, protectorat russe depuis 1914, est disputé par les Rouges, les Blancs et des troupes chinoises pendant la guerre civile. Le 14 août 1921, avec l’appui soviétique, un congrès proclame la République populaire de Tannou-Touva. Reconnue seulement par l’Union soviétique et la Mongolie, elle est absorbée par l’Union soviétique en 1944."
+ },
+ "russo-japanese-war-1904": {
+  "title": "La guerre russo-japonaise, 1904 – 1905",
+  "place": "Port-Arthur (Lüshun)",
+  "summary": "Rivaux pour la Mandchourie et la Corée, le Japon attaque la flotte russe à Port-Arthur en février 1904. Port-Arthur tombe en janvier 1905 après un long siège, l’armée russe est battue à Moukden en mars, et la flotte de la Baltique, envoyée autour du monde, est anéantie à Tsushima en mai. C’est la première grande victoire d’une puissance asiatique sur une puissance européenne à l’époque moderne, et elle contribue à déclencher la révolution de 1905."
+ },
+ "treaty-of-portsmouth-1905": {
+  "title": "Le traité de Portsmouth, 5 septembre 1905",
+  "place": "Sud de Sakhaline",
+  "summary": "Grâce à la médiation de Theodore Roosevelt, la Russie et le Japon font la paix à Portsmouth, dans le New Hampshire, le 5 septembre 1905. La Russie cède au Japon le bail de Port-Arthur et le chemin de fer du sud de la Mandchourie, reconnaît la Corée comme zone japonaise et abandonne le sud de Sakhaline, sous le 50e parallèle, que le Japon garde sous le nom de Karafuto jusqu’en 1945."
+ },
+ "russian-revolution-of-1905": {
+  "title": "La révolution de 1905 et le Dimanche rouge",
+  "place": "Saint-Pétersbourg",
+  "summary": "Le 22 janvier 1905, la troupe tire sur une marche pacifique vers le palais d’Hiver à Saint-Pétersbourg, faisant des centaines de morts. Grèves, mutineries comme celle du cuirassé Potemkine et révoltes paysannes gagnent tout l’empire. En octobre, une grève générale oblige Nicolas II à accorder une constitution et un parlement élu, la Douma, mais il reprend vite une grande partie de son pouvoir."
+ },
+ "uryankhay-protectorate-1914": {
+  "title": "Touva devient un protectorat russe, juin 1914",
+  "place": "Belotsarsk (Kyzyl)",
+  "summary": "Après la chute des Qing en Mongolie en 1911, l’Ouriankhaï (Touva) est revendiqué à la fois par la Russie et par la Mongolie indépendante, tandis que des colons russes s’y installent. Le 17 juin 1914, la Russie le place sous sa protection sous le nom de kraï d’Ouriankhaï et fonde Belotsarsk, l’actuelle Kyzyl, comme chef-lieu."
+ },
+ "battle-of-galicia-1914": {
+  "title": "La bataille de Galicie, août – septembre 1914",
+  "place": "Lemberg (Lviv)",
+  "summary": "Dans les premières semaines de la guerre, les armées russes écrasent les forces austro-hongroises en Galicie, prennent Lemberg (Lviv) le 3 septembre 1914 et assiègent la forteresse de Przemyśl, qui tombe en mars 1915. L’Autriche-Hongrie perd quelque 400 000 hommes. La Russie tient la Galicie orientale jusqu’à ce que les Empires centraux l’en chassent à l’été 1915."
+ },
+ "great-retreat-1915": {
+  "title": "La Grande Retraite, 1915",
+  "place": "Varsovie",
+  "summary": "Après la percée allemande et austro-hongroise de Gorlice–Tarnów en mai 1915, les armées russes reculent sur tout le front. Varsovie tombe le 5 août, puis Brest-Litovsk, Grodno et Vilnius. À l’automne, la Russie a perdu la Pologne, la Lituanie et la Courlande, et des millions de réfugiés fuient vers l’est."
+ },
+ "battle-of-erzurum-1916": {
+  "title": "L’armée russe prend Erzurum, février 1916",
+  "place": "Erzurum",
+  "summary": "Lors d’une offensive d’hiver à travers les montagnes, l’armée du Caucase du général Ioudenitch prend la grande forteresse ottomane d’Erzurum le 16 février 1916, puis Trébizonde en avril et Erzincan en juillet. La Russie tient une grande partie de l’Anatolie orientale jusqu’à ce que son armée se disloque après la révolution de 1917."
+ },
+ "brusilov-offensive-1916": {
+  "title": "L’offensive Broussilov, juin – septembre 1916",
+  "place": "Loutsk",
+  "summary": "Le 4 juin 1916, le général Broussilov attaque sur un front très large avec des bombardements courts et surprises, et enfonce les lignes austro-hongroises. Loutsk tombe en quelques jours, Czernowitz et la Bucovine en juin, Stanislau en août. C’est le plus grand succès russe de la guerre : il soulage Verdun et fait entrer la Roumanie en guerre, mais coûte environ un million de pertes russes."
+ },
+ "february-revolution-1917": {
+  "title": "La révolution de Février, mars 1917",
+  "place": "Petrograd (Saint-Pétersbourg)",
+  "summary": "Les émeutes de la faim et les grèves de Petrograd en mars 1917 (février dans l’ancien calendrier) deviennent une révolution quand la garnison rejoint la foule. Le 15 mars, Nicolas II abdique, mettant fin à trois siècles de règne des Romanov. Un gouvernement provisoire prend le pouvoir aux côtés du soviet de Petrograd, mais il maintient la Russie dans la guerre et est renversé par les bolcheviks en novembre."
  }
 }

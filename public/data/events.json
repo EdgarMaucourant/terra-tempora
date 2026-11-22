@@ -11164,6 +11164,176 @@
    "summary": "Uryankhay, a Russian protectorate since 1914, is fought over by Reds, Whites and Chinese troops during the civil war. On 14 August 1921, with Soviet backing, a congress proclaims the People's Republic of Tannu Tuva. Recognised only by the Soviet Union and Mongolia, it is absorbed into the Soviet Union in 1944.",
    "wikipedia": "Tuvan_People's_Republic",
    "search": "Tuvan People's Republic 14 August 1921 Tannu Tuva Uryankhay Krai Russian protectorate 1914 Kyzyl Khem-Beldyr Soviet Union 1944"
+  },
+  {
+   "id": "russo-japanese-war-1904",
+   "kind": "war",
+   "year": 1904,
+   "to": 1905,
+   "title": "The Russo-Japanese War, 1904 – 1905",
+   "place": "Port Arthur (Lüshun)",
+   "lonLat": [
+    121.25,
+    38.81
+   ],
+   "civs": [
+    "russia",
+    "japan",
+    "china"
+   ],
+   "summary": "Rivals for Manchuria and Korea, Japan attacks the Russian fleet at Port Arthur in February 1904. Port Arthur falls in January 1905 after a long siege, the Russian army is beaten at Mukden in March, and the Baltic Fleet, sent round the world, is destroyed at Tsushima in May. It is the first great victory of an Asian power over a European one in modern times, and it helps set off the 1905 revolution.",
+   "wikipedia": "Russo-Japanese_War",
+   "search": "Russo-Japanese War 1904 1905 Port Arthur siege Mukden Tsushima Manchuria Korea Togo Kuropatkin Treaty of Portsmouth"
+  },
+  {
+   "id": "treaty-of-portsmouth-1905",
+   "kind": "treaty",
+   "year": 1905,
+   "title": "The Treaty of Portsmouth, 5 September 1905",
+   "place": "Southern Sakhalin",
+   "lonLat": [
+    142.73,
+    46.96
+   ],
+   "civs": [
+    "russia",
+    "japan"
+   ],
+   "summary": "With Theodore Roosevelt as mediator, Russia and Japan make peace at Portsmouth, New Hampshire, on 5 September 1905. Russia hands Japan the lease of Port Arthur and the southern Manchurian railway, recognises Korea as Japan's sphere, and gives up the south of Sakhalin, below the 50th parallel, which Japan holds as Karafuto until 1945.",
+   "wikipedia": "Treaty_of_Portsmouth",
+   "search": "Treaty of Portsmouth 5 September 1905 Theodore Roosevelt Witte Komura Sakhalin 50th parallel Port Arthur Kwantung lease Korea"
+  },
+  {
+   "id": "russian-revolution-of-1905",
+   "kind": "revolution",
+   "year": 1905,
+   "title": "The Revolution of 1905 and Bloody Sunday",
+   "place": "Saint Petersburg",
+   "lonLat": [
+    30.31,
+    59.94
+   ],
+   "civs": [
+    "russia",
+    "finland",
+    "congress-poland"
+   ],
+   "summary": "On 22 January 1905 troops fire on a peaceful march to the Winter Palace in Saint Petersburg, killing hundreds. Strikes, mutinies such as that of the battleship Potemkin and peasant risings spread across the empire. In October a general strike forces Nicholas II to grant a constitution and an elected parliament, the Duma, though he soon takes back much of his power.",
+   "wikipedia": "Russian_Revolution_of_1905",
+   "search": "Russian Revolution of 1905 Bloody Sunday 22 January Gapon Winter Palace general strike Potemkin October Manifesto Duma Nicholas II soviet"
+  },
+  {
+   "id": "uryankhay-protectorate-1914",
+   "kind": "empire",
+   "year": 1914,
+   "title": "Tuva becomes a Russian protectorate, June 1914",
+   "place": "Belotsarsk (Kyzyl)",
+   "lonLat": [
+    94.45,
+    51.72
+   ],
+   "civs": [
+    "russia",
+    "china"
+   ],
+   "summary": "After the fall of the Qing in Mongolia in 1911, Uryankhay (Tuva) is claimed by both Russia and independent Mongolia, while Russian settlers move in. On 17 June 1914 Russia takes it under its protection as the Uryankhay Krai, and founds Belotsarsk, today's Kyzyl, as its seat.",
+   "wikipedia": "Uryankhay_Krai",
+   "search": "Uryankhay Krai Russian protectorate 17 June 1914 Tuva Tannu Uriankhai Qing Mongolia Belotsarsk Kyzyl"
+  },
+  {
+   "id": "battle-of-galicia-1914",
+   "kind": "battle",
+   "year": 1914,
+   "title": "The Battle of Galicia, August – September 1914",
+   "place": "Lemberg (Lviv)",
+   "lonLat": [
+    24.03,
+    49.84
+   ],
+   "civs": [
+    "russia",
+    "austria-hungary"
+   ],
+   "summary": "In the first weeks of the war the Russian armies smash the Austro-Hungarian forces in Galicia, taking Lemberg (Lviv) on 3 September 1914 and besieging the fortress of Przemyśl, which falls in March 1915. Austria-Hungary loses some 400,000 men. Russia holds eastern Galicia until the Central Powers drive it out in the summer of 1915.",
+   "wikipedia": "Battle_of_Galicia",
+   "search": "Battle of Galicia August September 1914 Lemberg Lviv Russian army Austria-Hungary Conrad Przemyśl siege Eastern Front"
+  },
+  {
+   "id": "great-retreat-1915",
+   "kind": "war",
+   "year": 1915,
+   "title": "The Great Retreat, 1915",
+   "place": "Warsaw",
+   "lonLat": [
+    21.01,
+    52.23
+   ],
+   "civs": [
+    "russia",
+    "germany",
+    "austria-hungary",
+    "congress-poland",
+    "lithuania",
+    "latvia"
+   ],
+   "summary": "After the German and Austro-Hungarian breakthrough at Gorlice–Tarnów in May 1915, the Russian armies fall back across the whole front. Warsaw falls on 5 August, then Brest-Litovsk, Grodno and Vilnius. By the autumn Russia has lost Poland, Lithuania and Courland, and millions of refugees stream east.",
+   "wikipedia": "Great_Retreat_(Russian)",
+   "search": "Great Retreat 1915 Russia Gorlice–Tarnów offensive Warsaw falls 5 August Brest-Litovsk Vilnius Courland refugees Eastern Front"
+  },
+  {
+   "id": "battle-of-erzurum-1916",
+   "kind": "battle",
+   "year": 1916,
+   "title": "The Russian army takes Erzurum, February 1916",
+   "place": "Erzurum",
+   "lonLat": [
+    41.27,
+    39.9
+   ],
+   "civs": [
+    "russia",
+    "ottoman-empire"
+   ],
+   "summary": "In a winter offensive across the mountains, General Yudenich's Caucasus Army takes the great Ottoman fortress of Erzurum on 16 February 1916, then Trebizond in April and Erzincan in July. Russia holds much of eastern Anatolia until its army melts away after the revolution of 1917.",
+   "wikipedia": "Erzurum_offensive",
+   "search": "Erzurum offensive January February 1916 Yudenich Caucasus campaign Ottoman Third Army Trebizond Van Russian occupation of Armenia"
+  },
+  {
+   "id": "brusilov-offensive-1916",
+   "kind": "battle",
+   "year": 1916,
+   "to": 1916,
+   "title": "The Brusilov offensive, June – September 1916",
+   "place": "Lutsk",
+   "lonLat": [
+    25.33,
+    50.75
+   ],
+   "civs": [
+    "russia",
+    "austria-hungary",
+    "germany"
+   ],
+   "summary": "On 4 June 1916 General Brusilov attacks along a wide front with short, surprise bombardments and breaks the Austro-Hungarian lines. Lutsk falls within days, Czernowitz and Bukovina in June, Stanislau in August. It is Russia's greatest success of the war, easing the pressure on Verdun and bringing Romania into the war, but it costs about a million Russian casualties.",
+   "wikipedia": "Brusilov_offensive",
+   "search": "Brusilov offensive June September 1916 Lutsk Czernowitz Bukovina Stanislau Austria-Hungary Verdun Romania enters war"
+  },
+  {
+   "id": "february-revolution-1917",
+   "kind": "revolution",
+   "year": 1917,
+   "title": "The February Revolution, March 1917",
+   "place": "Petrograd (Saint Petersburg)",
+   "lonLat": [
+    30.31,
+    59.94
+   ],
+   "civs": [
+    "russia"
+   ],
+   "summary": "Bread riots and strikes in Petrograd in March 1917 (February in the old calendar) turn into revolution when the garrison joins the crowds. On 15 March Nicholas II abdicates, ending three centuries of Romanov rule. A Provisional Government takes power alongside the Petrograd Soviet, but it keeps Russia in the war and is overthrown by the Bolsheviks in November.",
+   "wikipedia": "February_Revolution",
+   "search": "February Revolution March 1917 Petrograd strikes bread riots garrison mutiny Nicholas II abdicates 15 March Provisional Government Petrograd Soviet Romanov"
   }
  ]
 }
