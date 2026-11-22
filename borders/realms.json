@@ -158,7 +158,26 @@
   "wikipedia": "Austria",
   "wikidata": "Q40",
   "fr": "Autriche",
-  "es": "Austria"
+  "es": "Austria",
+  "periods": [
+   {
+    "from": "1804-08-11",
+    "name": "Austrian Empire",
+    "wikipedia": "Austrian Empire",
+    "fr": "Empire d'Autriche",
+    "es": "Imperio austríaco",
+    "label": "Austrian Empire",
+    "labelFr": "Empire d'Autriche",
+    "labelEs": "Imperio austríaco"
+   },
+   {
+    "from": "1918-11-12",
+    "name": "Austria",
+    "wikipedia": "Austria",
+    "fr": "Autriche",
+    "es": "Austria"
+   }
+  ]
  },
  "Azerbaijan": {
   "wikipedia": "Azerbaijan",
@@ -2628,7 +2647,27 @@
   "wikipedia": "Romania",
   "wikidata": "Q218",
   "fr": "Roumanie",
-  "es": "Rumania"
+  "es": "Rumania",
+  "periods": [
+   {
+    "from": "1859-02-05",
+    "name": "United Principalities",
+    "wikipedia": "United Principalities",
+    "fr": "Principautés unies",
+    "es": "Principados Unidos",
+    "label": "United Principalities",
+    "labelFr": "Principautés unies",
+    "labelEs": "Principados Unidos",
+    "note": "Moldavia and Wallachia under one prince, under Ottoman suzerainty until 1878"
+   },
+   {
+    "from": "1866-07-13",
+    "name": "Romania",
+    "wikipedia": "Romania",
+    "fr": "Roumanie",
+    "es": "Rumania"
+   }
+  ]
  },
  "Russia": {
   "wikipedia": "Russia",
@@ -4608,5 +4647,25 @@
   "wikidata": "Q221457",
   "fr": "Royaume du Congrès",
   "es": "Polonia del Congreso"
+ },
+ "Khanate of Kokand": {
+  "wikipedia": "Khanate of Kokand",
+  "wikidata": "Q696241",
+  "fr": "Khanat de Kokand",
+  "es": "Kanato de Kokand"
+ },
+ "Russian America": {
+  "wikipedia": "Russian America",
+  "wikidata": "Q910495",
+  "fr": "Amérique russe",
+  "es": "América rusa",
+  "withOwner": false
+ },
+ "Moldavia": {
+  "wikipedia": "Moldavia",
+  "wikidata": "Q10957559",
+  "fr": "Principauté de Moldavie",
+  "es": "Principado de Moldavia",
+  "note": "A principality under Ottoman suzerainty; united with Wallachia in 1859"
  }
 }

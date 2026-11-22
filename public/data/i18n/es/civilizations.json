@@ -116,6 +116,9 @@
  "mongolia": {
   "name": "Mongolia"
  },
+ "russian-america": {
+  "name": "América rusa"
+ },
  "colony-of-niger": {
   "name": "Colonia de Níger"
  },
@@ -176,6 +179,9 @@
  "sultanate-of-egypt": {
   "name": "Sultanato de Egipto"
  },
+ "ottoman-empire": {
+  "name": "Imperio otomano"
+ },
  "tanzania": {
   "name": "Tanzania"
  },
@@ -187,9 +193,6 @@
  },
  "tanganyika-territory": {
   "name": "Territorio de Tanganica"
- },
- "ottoman-empire": {
-  "name": "Imperio otomano"
  },
  "venezuela": {
   "name": "Venezuela"
@@ -326,6 +329,9 @@
  "yemen": {
   "name": "Yemen"
  },
+ "khanate-of-kokand": {
+  "name": "Kanato de Kokand"
+ },
  "uzbekistan": {
   "name": "Uzbekistán"
  },
@@ -346,6 +352,9 @@
  },
  "morocco": {
   "name": "Marruecos"
+ },
+ "emirate-of-bukhara": {
+  "name": "Emirato de Bujará"
  },
  "dominion-of-newfoundland": {
   "name": "Dominio de Terranova"
@@ -388,9 +397,6 @@
  },
  "bukharan-people-s-soviet-republic": {
   "name": "República Popular Soviética de Bujará"
- },
- "emirate-of-bukhara": {
-  "name": "Emirato de Bujará"
  },
  "rajputana": {
   "name": "Rajputana"
@@ -460,6 +466,9 @@
  },
  "french-guinea": {
   "name": "Guinea francesa"
+ },
+ "khanate-of-khiva": {
+  "name": "Kanato de Jiva"
  },
  "uganda": {
   "name": "Uganda"
@@ -655,9 +664,6 @@
  },
  "khorezm-people-s-soviet-republic": {
   "name": "República Popular Soviética de Corasmia"
- },
- "khanate-of-khiva": {
-  "name": "Kanato de Jiva"
  },
  "liberia": {
   "name": "Liberia"
@@ -935,6 +941,9 @@
  "eswatini": {
   "name": "Suazilandia"
  },
+ "prussia": {
+  "name": "Prusia"
+ },
  "timor-leste": {
   "name": "Timor Oriental"
  },
@@ -988,6 +997,9 @@
  },
  "gambia-colony-and-protectorate": {
   "name": "Colonia y Protectorado de Gambia"
+ },
+ "moldavia": {
+  "name": "Principado de Moldavia"
  },
  "lebanon": {
   "name": "Líbano"
