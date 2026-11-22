@@ -138,6 +138,59 @@ interface Part {
   holes: number[][];
 }
 
+// Cesium fills a polygon by laying it flat on a plane touching the globe at
+// its middle. An outline as wide as Russia's (150 degrees of longitude) folds
+// over on that plane, and its triangles cover much of the land twice, so a
+// see-through fill is drawn twice as dark. Such an outline is filled in
+// slices of at most SLICE_WIDTH degrees; its border line stays whole.
+const WIDE_RING = 90;
+const SLICE_WIDTH = 45;
+
+/** The part of a ring between two longitudes (Sutherland-Hodgman), or undefined when nothing is left. */
+function clipRing(ring: number[], west: number, east: number): number[] | undefined {
+  const clip = (points: number[], inside: (lon: number) => boolean, edge: number) => {
+    const out: number[] = [];
+    const n = points.length;
+    for (let i = 0; i < n; i += 2) {
+      const ax = points[i];
+      const ay = points[i + 1];
+      const bx = points[(i + 2) % n];
+      const by = points[(i + 3) % n];
+      const aIn = inside(ax);
+      const bIn = inside(bx);
+      if (aIn) out.push(ax, ay);
+      if (aIn !== bIn) out.push(edge, ay + ((by - ay) * (edge - ax)) / (bx - ax));
+    }
+    return out;
+  };
+  const clipped = clip(clip(ring, (lon) => lon >= west, west), (lon) => lon <= east, east);
+  return clipped.length >= 6 ? clipped : undefined;
+}
+
+/** A part to fill, cut into slices of longitude when it is too wide for Cesium to fill in one go. */
+function fillParts(part: Part): Part[] {
+  let west = Infinity;
+  let east = -Infinity;
+  for (let i = 0; i < part.ring.length; i += 2) {
+    west = Math.min(west, part.ring[i]);
+    east = Math.max(east, part.ring[i]);
+  }
+  // A ring going all round the globe (around a pole) is left alone.
+  if (east - west <= WIDE_RING || east - west >= 180) return [part];
+  const slices: Part[] = [];
+  const count = Math.ceil((east - west) / SLICE_WIDTH);
+  const width = (east - west) / count;
+  for (let i = 0; i < count; i++) {
+    const from = west + i * width;
+    const to = i === count - 1 ? east : from + width;
+    const ring = clipRing(part.ring, from, to);
+    if (!ring) continue;
+    const holes = part.holes.map((hole) => clipRing(hole, from, to)).filter((hole): hole is number[] => !!hole);
+    slices.push({ ring, holes });
+  }
+  return slices;
+}
+
 function border(ring: number[], height: number, width: number, id?: object): GeometryInstance {
   const positions: number[] = [];
   for (let i = 0; i < ring.length; i += 2) positions.push(ring[i], ring[i + 1], height);
@@ -851,7 +904,7 @@ export class PolityLayer {
     const vertexFormat = (kind === "hatch" ? MaterialAppearance.MaterialSupport.TEXTURED : MaterialAppearance.MaterialSupport.BASIC).vertexFormat;
     // Picking a piece finds the snapshot it is drawn for (see polityOf).
     piece.fill = new Primitive({
-      geometryInstances: parts.map(
+      geometryInstances: parts.flatMap(fillParts).map(
         ({ ring, holes }) =>
           new GeometryInstance({
             id: piece,
