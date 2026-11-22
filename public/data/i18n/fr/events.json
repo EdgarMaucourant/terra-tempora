@@ -2793,5 +2793,35 @@
   "title": "Potsdam donne Königsberg à l’Union soviétique, août 1945",
   "place": "Kaliningrad (Königsberg)",
   "summary": "L’Armée rouge prend Königsberg, l’ancienne capitale de la Prusse, le 9 avril 1945 après un siège acharné. À Potsdam en août, les Alliés conviennent que la ville et le tiers nord de la Prusse-Orientale reviennent à l’Union soviétique, en attendant un traité de paix, et le sud à la Pologne. Elle devient l’oblast de Königsberg de la RSFS de Russie en avril 1946 et prend le nom de Kaliningrad en juillet ; ses derniers habitants allemands sont expulsés avant 1948."
+ },
+ "operation-barbarossa-1941": {
+  "title": "L’Allemagne envahit l’Union soviétique, 22 juin 1941",
+  "place": "Forteresse de Brest",
+  "summary": "À l’aube du 22 juin 1941, plus de trois millions de soldats allemands, avec leurs alliés roumains, finlandais et autres, attaquent l’Union soviétique sur un front allant de la Baltique à la mer Noire, rompant le pacte de 1939. L’Armée rouge, prise au dépourvu, perd des millions d’hommes dans d’immenses encerclements à Białystok, Minsk, Smolensk et Kyiv, tandis que les défenseurs de la forteresse de Brest tiennent des semaines. En décembre, les Allemands sont devant Leningrad et Moscou et tiennent les pays baltes, la Biélorussie et la majeure partie de l’Ukraine."
+ },
+ "siege-of-leningrad-1941": {
+  "title": "Le siège de Leningrad, septembre 1941 – janvier 1944",
+  "place": "Leningrad (Saint-Pétersbourg)",
+  "summary": "Le 8 septembre 1941, les troupes allemandes prennent Schlüsselbourg sur le lac Ladoga et coupent Leningrad de la terre ferme, tandis que les Finlandais approchent par le nord. Pendant 872 jours, la ville de trois millions d’habitants est bombardée et affamée ; le premier hiver, des centaines de milliers de personnes meurent de faim et de froid, et le ravitaillement ne passe que par le lac gelé, la « route de la vie ». Un étroit corridor terrestre s’ouvre en janvier 1943, et le siège est levé le 27 janvier 1944, après quelque 800 000 morts civils."
+ },
+ "battle-of-moscow-1941": {
+  "title": "La bataille de Moscou, octobre 1941 – janvier 1942",
+  "place": "Moscou",
+  "summary": "En octobre 1941, l’opération allemande Typhon encercle des armées soviétiques entières à Viazma et Briansk et fonce sur Moscou ; le gouvernement part pour Kouïbychev, mais Staline reste. La boue, puis le gel, ralentissent l’avance, et fin novembre des unités allemandes sont à 30 km du Kremlin. Le 5 décembre, Joukov contre-attaque avec des divisions fraîches venues de Sibérie et d’Extrême-Orient, et en janvier les Allemands sont rejetés de 100 à 250 km : c’est la première grande défaite de l’armée allemande."
+ },
+ "battle-of-stalingrad-1942": {
+  "title": "La bataille de Stalingrad, août 1942 – février 1943",
+  "place": "Stalingrad (Volgograd)",
+  "summary": "L’offensive allemande de l’été 1942 vise les champs pétroliers du Caucase et la Volga, et en août la 6e armée atteint Stalingrad. Des mois de combats maison par maison réduisent la ville en ruines, mais ses défenseurs tiennent une bande le long du fleuve. Le 19 novembre, l’opération Uranus perce les armées roumaines sur les flancs et encercle quelque 300 000 hommes ; le maréchal Paulus capitule le 2 février 1943. Les Allemands reculent aussi du Caucase, et le cours de la guerre s’inverse."
+ },
+ "battle-of-kursk-1943": {
+  "title": "La bataille de Koursk, juillet – août 1943",
+  "place": "Prokhorovka, près de Koursk",
+  "summary": "En juillet 1943, l’Allemagne attaque le saillant de Koursk par le nord et le sud avec l’opération Citadelle, sa dernière grande offensive à l’est, contre des défenses soviétiques profondes. Après le choc des chars à Prokhorovka le 12 juillet, l’attaque est abandonnée, et les contre-offensives soviétiques prennent Orel et Belgorod le 5 août et Kharkiv le 23 août. Dès lors l’Armée rouge garde l’initiative, atteint le Dniepr et reprend Kyiv en novembre."
+ },
+ "operation-bagration-1944": {
+  "title": "L’opération Bagration, juin – août 1944",
+  "place": "Minsk",
+  "summary": "Trois ans jour pour jour après l’invasion allemande, le 22 juin 1944, l’Armée rouge lance l’opération Bagration contre le groupe d’armées Centre en Biélorussie. Encerclé à Vitebsk, Babrouïsk et Minsk, libérée le 3 juillet, le front allemand s’effondre ; en cinq semaines les Soviétiques avancent d’environ 500 km, prennent Vilnius, Brest et Lublin et atteignent la Vistule et les abords de la Prusse-Orientale. C’est la plus lourde défaite allemande de la guerre."
  }
 }
