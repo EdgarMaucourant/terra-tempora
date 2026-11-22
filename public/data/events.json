@@ -9341,6 +9341,279 @@
    "summary": "When Emir Sher Ali receives a Russian mission but turns a British one back, British Indian armies invade Afghanistan in November 1878. By the Treaty of Gandamak of 26 May 1879 his son Yaqub Khan cedes Pishin, Sibi and the Kurram and hands over his foreign affairs. After the British envoy is killed in Kabul the war starts again; it ends in 1880 with Abdur Rahman as emir and the British back behind the new frontier, now holding Pishin and Sibi.",
    "wikipedia": "Second_Anglo-Afghan_War",
    "search": "Second Anglo-Afghan War 1878 1880 Sher Ali Russian mission Treaty of Gandamak 26 May 1879 Yaqub Khan Pishin Sibi Kurram Khyber Cavagnari killed Kabul Maiwand Kandahar Abdur Rahman"
+  },
+  {
+   "id": "convention-of-peking-1860",
+   "kind": "war",
+   "year": 1860,
+   "title": "The Convention of Peking: China cedes Kowloon to Britain, 24 October 1860",
+   "place": "Kowloon",
+   "lonLat": [
+    114.17,
+    22.31
+   ],
+   "civs": [
+    "british-hong-kong",
+    "hong-kong",
+    "china",
+    "united-kingdom"
+   ],
+   "summary": "At the end of the Second Opium War, after British and French troops take Beijing and burn the Old Summer Palace, Prince Gong signs the Convention of Peking with Lord Elgin on 24 October 1860. China cedes to Britain the tip of the Kowloon peninsula, south of today’s Boundary Street, with Stonecutters Island, facing Hong Kong Island across the harbour. Britain adds the New Territories on a lease in 1898.",
+   "wikipedia": "Convention_of_Peking",
+   "search": "Convention of Peking 24 October 1860 Second Opium War Lord Elgin Prince Gong Kowloon peninsula Boundary Street Stonecutters Island Hong Kong Old Summer Palace burned"
+  },
+  {
+   "id": "treaty-of-tumlong-1861",
+   "kind": "empire",
+   "year": 1861,
+   "title": "The Treaty of Tumlong makes Sikkim a British protectorate, 28 March 1861",
+   "place": "Tumlong",
+   "lonLat": [
+    88.58,
+    27.43
+   ],
+   "civs": [
+    "kingdom-of-sikkim",
+    "india",
+    "united-kingdom"
+   ],
+   "summary": "After raids into British Darjeeling and the seizure of two British doctors, a British force marches into Sikkim. On 28 March 1861, at the capital Tumlong, the Sikkimese court signs a treaty that opens the country to British trade and roads to Tibet and puts it under British protection. Sikkim stays a protectorate, of Britain and then of India, until it becomes an Indian state in 1975.",
+   "wikipedia": "Treaty_of_Tumlong",
+   "search": "Treaty of Tumlong 28 March 1861 Sikkim British expedition Ashley Eden Darjeeling Chogyal Tsugphud Namgyal Sikkim protectorate trade roads Tibet"
+  },
+  {
+   "id": "bahrain-truce-1861",
+   "kind": "empire",
+   "year": 1861,
+   "title": "Bahrain’s perpetual truce with Britain, 31 May 1861",
+   "place": "Manama",
+   "lonLat": [
+    50.58,
+    26.22
+   ],
+   "civs": [
+    "bahrain",
+    "united-kingdom"
+   ],
+   "summary": "Pressed by Persian and Ottoman claims and by raids at sea, Sheikh Muhammad bin Khalifa signs a Perpetual Truce of Peace and Friendship with Britain on 31 May 1861. Bahrain gives up war, piracy and the slave trade at sea, and Britain undertakes to protect it. Later agreements in 1880 and 1892 hand Britain its foreign affairs; Bahrain becomes fully independent in 1971.",
+   "wikipedia": "History_of_Bahrain",
+   "search": "Perpetual Truce of Peace and Friendship 31 May 1861 Bahrain Sheikh Muhammad bin Khalifa Al Khalifa Britain protection maritime truce slave trade piracy Persian Ottoman claims 1880 1892 exclusive agreement"
+  },
+  {
+   "id": "lagos-treaty-of-cession-1861",
+   "kind": "empire",
+   "year": 1861,
+   "title": "The Lagos Treaty of Cession, 6 August 1861",
+   "place": "Lagos",
+   "lonLat": [
+    3.39,
+    6.45
+   ],
+   "civs": [
+    "kingdom-of-lagos",
+    "lagos-colony",
+    "nigeria",
+    "united-kingdom"
+   ],
+   "summary": "Ten years after a British bombardment put Oba Akitoye back on the throne of Lagos to end its slave trade, the British consul and navy press his son Oba Dosunmu to give up the kingdom. On 6 August 1861 he signs the treaty ceding Lagos to the British Crown in return for a pension. Lagos becomes a colony, the start of British rule in what becomes Nigeria.",
+   "wikipedia": "Lagos_Treaty_of_Cession",
+   "search": "Lagos Treaty of Cession 6 August 1861 Oba Dosunmu Bedingfield McCoskry Lagos Colony annexation slave trade Bombardment of Lagos 1851 Kosoko Akitoye consulate"
+  },
+  {
+   "id": "bay-islands-to-honduras-1861",
+   "kind": "empire",
+   "year": 1861,
+   "title": "Britain hands the Bay Islands over to Honduras, 1 June 1861",
+   "place": "Roatán",
+   "lonLat": [
+    -86.53,
+    16.33
+   ],
+   "civs": [
+    "colony-of-the-bay-islands",
+    "honduras",
+    "united-kingdom"
+   ],
+   "summary": "Britain made Roatán, Guanaja, Utila and the smaller Bay Islands a colony in 1852, angering the United States, which saw it as a breach of the Clayton–Bulwer Treaty. To settle the quarrel, Britain signs the Wyke–Cruz Treaty with Honduras in November 1859, and the islands are handed over on 1 June 1861. They are a department of Honduras today, where many people still speak English.",
+   "wikipedia": "Bay_Islands_Department",
+   "search": "Bay Islands Roatan Guanaja Utila British colony 1852 Wyke Cruz Treaty 28 November 1859 handed to Honduras 1 June 1861 Clayton Bulwer Treaty United States Mosquito Coast"
+  },
+  {
+   "id": "ionian-islands-to-greece-1864",
+   "kind": "empire",
+   "year": 1864,
+   "title": "Britain hands the Ionian Islands over to Greece, 2 June 1864",
+   "place": "Corfu",
+   "lonLat": [
+    19.92,
+    39.62
+   ],
+   "civs": [
+    "united-states-of-the-ionian-islands",
+    "greece",
+    "united-kingdom"
+   ],
+   "summary": "A British protectorate since 1815, the United States of the Ionian Islands had long called for union with Greece. When Greece takes the Danish prince George as its king, Britain agrees to give the islands up as a welcome gift, and by the Treaty of London of 1864 they join Greece on 2 June 1864 (21 May in the Greek calendar). Corfu’s fortifications are blown up and the islands are made neutral.",
+   "wikipedia": "United_States_of_the_Ionian_Islands",
+   "search": "Ionian Islands union with Greece 21 May 1864 Treaty of London 1864 United States of the Ionian Islands British protectorate 1815 Corfu Lord High Commissioner King George I enosis"
+  },
+  {
+   "id": "duar-war-1864",
+   "kind": "war",
+   "year": 1864,
+   "to": 1865,
+   "title": "The Duar War and the Treaty of Sinchula, 1864 – 1865",
+   "place": "Kalimpong",
+   "lonLat": [
+    88.47,
+    27.06
+   ],
+   "civs": [
+    "bhutan",
+    "british-raj",
+    "india",
+    "united-kingdom"
+   ],
+   "summary": "After a British mission led by Ashley Eden is humiliated at the Bhutanese court, Britain annexes the Bengal Duars in November 1864 and sends troops into the foothills. Bhutanese forces retake Dewangiri, but a second campaign forces them to sign the Treaty of Sinchula on 11 November 1865. Bhutan cedes the Duars and the hills east of the Teesta around Kalimpong for a yearly subsidy, and the plains become tea country.",
+   "wikipedia": "Duar_War",
+   "search": "Duar War Bhutan War 1864 1865 Ashley Eden mission Bengal Duars annexed Dewangiri Treaty of Sinchula 11 November 1865 Kalimpong Jalpaiguri tea gardens subsidy"
+  },
+  {
+   "id": "basutoland-1868",
+   "kind": "empire",
+   "year": 1868,
+   "title": "Basutoland comes under British rule, 12 March 1868",
+   "place": "Thaba Bosiu",
+   "lonLat": [
+    27.67,
+    -29.35
+   ],
+   "civs": [
+    "lesotho",
+    "basutoland",
+    "united-kingdom"
+   ],
+   "summary": "Losing his best farmland in the wars with the Orange Free State, King Moshoeshoe I asks Britain for protection. On 12 March 1868 the Governor of the Cape, Philip Wodehouse, proclaims the Basotho British subjects, and the Free State must stop its advance. The border fixed at Aliwal North in 1869 leaves the lowlands west of the Caledon to the Boers; the rest stays a British territory until it becomes independent as Lesotho in 1966.",
+   "wikipedia": "Basutoland",
+   "search": "Basutoland annexed 12 March 1868 Moshoeshoe I Philip Wodehouse Free State Basotho Wars Thaba Bosiu Convention of Aliwal North 1869 Conquered Territory Cape Colony 1871 Lesotho"
+  },
+  {
+   "id": "second-anglo-burmese-war-1852",
+   "kind": "war",
+   "year": 1852,
+   "title": "The Second Anglo-Burmese War: Britain annexes Pegu, 1852",
+   "place": "Rangoon",
+   "lonLat": [
+    96.16,
+    16.8
+   ],
+   "civs": [
+    "kingdom-of-burma",
+    "company-rule-in-india",
+    "myanmar",
+    "united-kingdom"
+   ],
+   "summary": "A quarrel over fines imposed on two British sea captains in Rangoon gives the Governor-General, Lord Dalhousie, a reason for war. British and Indian forces take Rangoon, Bassein and Pegu in 1852, and on 20 December Dalhousie annexes the province of Pegu without a treaty. With Arakan and Tenasserim, taken in 1826, it forms British Lower Burma, cutting the Burmese kingdom off from the sea.",
+   "wikipedia": "Second_Anglo-Burmese_War",
+   "search": "Second Anglo-Burmese War 1852 Lord Dalhousie Commodore Lambert Rangoon Shwedagon Pegu Bassein Prome annexation 20 December 1852 Lower Burma Mindon Min"
+  },
+  {
+   "id": "kuria-muria-ceded-1854",
+   "kind": "empire",
+   "year": 1854,
+   "title": "The Sultan of Muscat gives the Khuriya Muriya Islands to Britain, 1854",
+   "place": "Hallaniyah",
+   "lonLat": [
+    56.0,
+    17.5
+   ],
+   "civs": [
+    "oman",
+    "united-kingdom"
+   ],
+   "summary": "On 14 July 1854 Sultan Said bin Sultan of Muscat gives Queen Victoria the five small Khuriya Muriya Islands off the coast of Dhofar, prized for their guano. Run from Aden, they stay British until 1967, when Britain hands them back to Oman as it leaves South Arabia.",
+   "wikipedia": "Kuria_Muria_Islands",
+   "search": "Khuriya Muriya Kuria Muria Islands Hallaniyat 14 July 1854 Sultan Said bin Sultan gift Queen Victoria guano Aden 1967 returned Oman"
+  },
+  {
+   "id": "annexation-of-oudh-1856",
+   "kind": "empire",
+   "year": 1856,
+   "title": "The East India Company annexes Oudh, February 1856",
+   "place": "Lucknow",
+   "lonLat": [
+    80.95,
+    26.85
+   ],
+   "civs": [
+    "company-rule-in-india",
+    "india",
+    "united-kingdom"
+   ],
+   "summary": "Charging the kingdom with misrule, Lord Dalhousie annexes Oudh (Awadh), a Company ally since 1801, on 7 February 1856, and its king Wajid Ali Shah is sent into exile near Calcutta. Many sepoys of the Bengal Army come from Oudh, and the loss of its court and the new land settlement anger soldiers, landowners and townspeople alike. A year later Oudh is a heartland of the Indian Rebellion.",
+   "wikipedia": "Awadh_State",
+   "search": "Annexation of Oudh Awadh 7 February 1856 Lord Dalhousie misrule Wajid Ali Shah exiled Calcutta Metiabruz Lucknow sepoys Bengal Army Indian Rebellion 1857 Begum Hazrat Mahal"
+  },
+  {
+   "id": "indian-rebellion-1857",
+   "kind": "war",
+   "year": 1857,
+   "to": 1858,
+   "title": "The Indian Rebellion, 1857 – 1858",
+   "place": "Delhi",
+   "lonLat": [
+    77.23,
+    28.66
+   ],
+   "civs": [
+    "company-rule-in-india",
+    "india",
+    "pakistan",
+    "bangladesh",
+    "united-kingdom"
+   ],
+   "summary": "On 10 May 1857 sepoys at Meerut mutiny over greased cartridges and years of grievances, march to Delhi and proclaim the old Mughal emperor Bahadur Shah Zafar their leader. The revolt spreads across the Ganges plain and central India, with sieges and massacres at Cawnpore and Lucknow. British and loyal Indian troops retake Delhi in September 1857 and crush the last fighters in 1858; the Mughal empire ends, and so does the East India Company’s rule.",
+   "wikipedia": "Indian_Rebellion_of_1857",
+   "search": "Indian Rebellion 1857 1858 Sepoy Mutiny Meerut 10 May 1857 Delhi Bahadur Shah Zafar Cawnpore Lucknow siege Rani of Jhansi Tantia Tope Nana Sahib Gwalior end of Mughal Empire Company rule"
+  },
+  {
+   "id": "crown-rule-india-1858",
+   "kind": "empire",
+   "year": 1858,
+   "title": "The Crown takes over India from the East India Company, 1 November 1858",
+   "place": "Allahabad",
+   "lonLat": [
+    81.85,
+    25.44
+   ],
+   "civs": [
+    "company-rule-in-india",
+    "british-raj",
+    "india",
+    "united-kingdom"
+   ],
+   "summary": "After the rebellion, Parliament passes the Government of India Act on 2 August 1858, and the East India Company hands its Indian lands, army and officials to the Crown. On 1 November Lord Canning, now the first Viceroy, reads Queen Victoria’s proclamation at Allahabad, promising to respect the princes’ treaties and Indian religions. British rule in India, the Raj, lasts until 1947.",
+   "wikipedia": "Government_of_India_Act_1858",
+   "search": "Government of India Act 2 August 1858 end of East India Company rule Queen Victoria proclamation 1 November 1858 Allahabad Lord Canning first Viceroy Secretary of State for India British Raj"
+  },
+  {
+   "id": "treaty-of-managua-1860",
+   "kind": "empire",
+   "year": 1860,
+   "title": "The Treaty of Managua ends Britain’s Mosquito Coast protectorate, 28 January 1860",
+   "place": "Bluefields",
+   "lonLat": [
+    -83.77,
+    12.01
+   ],
+   "civs": [
+    "mosquito-coast",
+    "nicaragua",
+    "united-kingdom"
+   ],
+   "summary": "For two centuries Britain had backed the Miskito kings on the Caribbean coast of Central America. Under pressure from the United States, it signs the Treaty of Managua with Nicaragua on 28 January 1860, recognising Nicaraguan sovereignty and keeping only a self-governing Mosquito Reserve around Bluefields for the Miskito. Nicaragua takes the reserve over in 1894.",
+   "wikipedia": "Treaty_of_Managua",
+   "search": "Treaty of Managua 28 January 1860 Zeledon Wyke Mosquito Coast protectorate Mosquito Reserve Bluefields Greytown Clayton-Bulwer Nicaragua sovereignty 1894 Reincorporation"
   }
  ]
 }

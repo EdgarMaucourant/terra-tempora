@@ -26,7 +26,7 @@
     "IRL",
     "heligoland"
    ],
-   "from": 1860,
+   "from": 1850,
    "why": "The United Kingdom with the Crown Dependencies (Guernsey, Jersey, the Isle of Man), its overseas territories and the Chagos Archipelago, whose land has not changed hands since 1965, and Ireland (the Irish Free State until 1937)"
   },
   {
@@ -46,7 +46,7 @@
     "SYC",
     "weihaiwei"
    ],
-   "from": 1860,
+   "from": 1850,
    "why": "Hong Kong, Brunei, Southern Rhodesia and the colonies in the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence or handover; Weihaiwei, leased from China until 1930"
   },
   {
@@ -68,7 +68,7 @@
     "BHS",
     "GRD"
    ],
-   "from": 1860,
+   "from": 1850,
    "why": "The Gulf protected states, South Arabia with all of Yemen (North Yemen until 1990), and the colonies and protectorates in Africa, the Caribbean, the Pacific and the Indian Ocean that Britain still held in 1965, with today's borders, until their independence"
   },
   {
@@ -95,7 +95,7 @@
     "dervish-nugaal",
     "lado-enclave"
    ],
-   "from": 1860,
+   "from": 1850,
    "why": "The colonies, protectorates and trust territories Britain held in 1960 in Africa, Asia, the Mediterranean and the Caribbean, with today's borders, until their independence, with Malaya and Somalia around them"
   },
   {
@@ -109,7 +109,7 @@
     "ERI",
     "ETH"
    ],
-   "from": 1860,
+   "from": 1850,
    "why": "The Gold Coast and British Togoland (Ghana), Anglo-Egyptian Sudan and Eritrea, which Britain ruled or ran in the 1950s, with today's borders, and Ethiopia around Eritrea. The Haud, run by Britain inside Ethiopia until 1955, is not drawn"
   },
   {
@@ -158,7 +158,7 @@
     "bengal-duars",
     "nicobar-islands"
    ],
-   "from": 1860,
+   "from": 1850,
    "why": "British India (with the princely states, drawn as part of it), Burma and Ceylon, with today's borders, from British rule to today, and Newfoundland until it joined Canada. French and Portuguese India stay with their own families"
   },
   {
@@ -178,7 +178,7 @@
     "IRQ",
     "EGY"
    ],
-   "from": 1860,
+   "from": 1850,
    "why": "Mandatory Palestine and Transjordan, and what became of them: Israel, the West Bank, the Gaza Strip, Jordan, and the Sinai occupied by Israel; Iraq, a British mandate until 1932, and Kuwait, occupied by Iraq in 1990-91; Egypt, a British protectorate until 1922 and part of the United Arab Republic in 1958-61"
   },
   {
@@ -194,8 +194,16 @@
     "kythira",
     "HND-641"
    ],
-   "from": 1860,
+   "from": 1850,
    "why": "The Ionian Islands, a British protectorate until 1864, and the Bay Islands, a British colony until 1861, with Greece and Honduras since then"
+  },
+  {
+   "pieces": [
+    "NIC-657",
+    "NIC-644"
+   ],
+   "from": 1850,
+   "why": "The Mosquito Coast, a British protectorate until 1860, with Nicaragua since then"
   }
  ],
  "changes": [
@@ -7715,6 +7723,31 @@
    ]
   },
   {
+   "date": "1894-01-01",
+   "what": "Britain declares a protectorate over the lands along the Gambia river",
+   "source": {
+    "title": "Gambia Colony and Protectorate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Gambia_Colony_and_Protectorate"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "GMB-2151",
+      "GMB-5513",
+      "GMB-2152",
+      "GMB-2154",
+      "GMB-5512"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Gambia Colony and Protectorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gambia_Colony_and_Protectorate"
+     }
+    }
+   ]
+  },
+  {
    "date": "1893-11-04",
    "what": "British South Africa Company forces take Bulawayo: the Ndebele kingdom falls",
    "source": {
@@ -9334,6 +9367,186 @@
      "source": {
       "title": "Convention of Peking (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Convention_of_Peking"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1860-01-28",
+   "what": "By the Treaty of Managua, Britain gives up its protectorate over the Mosquito Coast to Nicaragua",
+   "source": {
+    "title": "Treaty of Managua (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Managua"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "NIC-657",
+      "NIC-644"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Mosquito Coast (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mosquito_Coast"
+     },
+     "territory": "Mosquito Coast"
+    }
+   ]
+  },
+  {
+   "date": "1858-11-01",
+   "what": "Queen Victoria’s proclamation: the Crown takes over the East India Company’s rule in India",
+   "source": {
+    "title": "Company rule in India (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Company_rule_in_India"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "IND-2474",
+      "IND-20011",
+      "IND-20012",
+      "IND-2427",
+      "IND-2428",
+      "IND-2429",
+      "IND-2430",
+      "IND-2431",
+      "IND-2441",
+      "IND-2442",
+      "IND-2443",
+      "IND-2444",
+      "IND-2446",
+      "IND-2447",
+      "IND-2477",
+      "IND-2478",
+      "IND-2479",
+      "IND-2489",
+      "IND-3249",
+      "IND-3250",
+      "IND-3253",
+      "IND-3254",
+      "IND-3256",
+      "IND-3257",
+      "IND-3258",
+      "IND-3260",
+      "IND-3261",
+      "IND-3263",
+      "IND-3264",
+      "IND-3299",
+      "IND-3301",
+      "hyd-marathwada",
+      "hyd-karnataka",
+      "bhadrachalam",
+      "PAK-1111",
+      "PAK-1123",
+      "PAK-1112",
+      "PAK-1113",
+      "PAK-1114",
+      "PAK-1109",
+      "PAK-1110",
+      "BGD",
+      "MMR-3273",
+      "MMR-3266",
+      "MMR-3270",
+      "MMR-3279",
+      "MMR-3275",
+      "MMR-3269",
+      "MMR-3268",
+      "YEM-3510"
+     ],
+     "owner": "United Kingdom",
+     "source": {
+      "title": "Company rule in India (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Company_rule_in_India"
+     },
+     "territory": "Company rule in India"
+    }
+   ]
+  },
+  {
+   "date": "1858-03-10",
+   "what": "The penal settlement of Port Blair is founded on the Andaman Islands",
+   "source": {
+    "title": "Andaman Islands (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Andaman_Islands"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "IND-2474"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Andaman Islands (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Andaman_Islands"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1857-01-01",
+   "what": "British troops occupy the island of Perim",
+   "source": {
+    "title": "Perim (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Perim"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "perim"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Perim (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Perim"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1854-07-14",
+   "what": "The Sultan of Muscat gives the Khuriya Muriya Islands to Britain",
+   "source": {
+    "title": "Kuria Muria Islands (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kuria_Muria_Islands"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "kuria-muria"
+     ],
+     "owner": "Oman",
+     "source": {
+      "title": "Kuria Muria Islands (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kuria_Muria_Islands"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1852-12-20",
+   "what": "After the Second Anglo-Burmese War, Britain annexes the province of Pegu",
+   "source": {
+    "title": "Second Anglo-Burmese War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Second_Anglo-Burmese_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "MMR-3275",
+      "MMR-3269",
+      "MMR-3268"
+     ],
+     "owner": "Kingdom of Burma",
+     "source": {
+      "title": "Second Anglo-Burmese War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Second_Anglo-Burmese_War"
      }
     }
    ]
