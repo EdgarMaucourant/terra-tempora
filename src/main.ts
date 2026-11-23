@@ -348,7 +348,11 @@ scene.preRender.addEventListener(() => {
   const frustum = widget.camera.frustum;
   if (!(frustum instanceof PerspectiveFrustum)) return;
   const { width, height } = scene.canvas.getBoundingClientRect();
-  const share = Math.max(width, height) / Math.max(window.innerWidth, window.innerHeight);
+  // The root element's size, not innerWidth/innerHeight: on phones a tooltip
+  // running off the screen widens the layout viewport (and innerWidth with it),
+  // which shrank the field of view and made the globe jump in and out.
+  const { clientWidth, clientHeight } = document.documentElement;
+  const share = Math.max(width, height) / Math.max(clientWidth, clientHeight);
   const fov = WINDOW_FOV * Math.min(1, share || 1);
   if (Math.abs((frustum.fov ?? fov) - fov) > 1e-4) frustum.fov = fov;
 });
@@ -1039,6 +1043,19 @@ function showSource(p: Polity, el = $("info-source")) {
   el.append(externalLink(s.url, s.title));
 }
 
+/** The tooltip sits beside the pointer. On phones and tablets it is kept on the
+ * screen: one running off the edge widens the page there. */
+function placeTooltip(x: number, y: number) {
+  let left = x + 14;
+  let top = y + 14;
+  if (compactQuery.matches) {
+    const { clientWidth, clientHeight } = document.documentElement;
+    left = Math.max(8, Math.min(left, clientWidth - tooltip.offsetWidth - 8));
+    top = Math.max(8, Math.min(top, clientHeight - tooltip.offsetHeight - 8));
+  }
+  tooltip.style.transform = `translate(${left}px, ${top}px)`;
+}
+
 /** Land whose borders are not rebuilt yet for this year: the tooltip says so. */
 function hoverUnreviewed(x: number, y: number) {
   layer.setHovered(null);
@@ -1047,8 +1064,8 @@ function hoverUnreviewed(x: number, y: number) {
     Object.assign(document.createElement("strong"), { textContent: t("tooltip.unreviewed") }),
     Object.assign(document.createElement("span"), { textContent: t("tooltip.unreviewedText") }),
   );
-  tooltip.style.transform = `translate(${x + 14}px, ${y + 14}px)`;
   tooltip.hidden = false;
+  placeTooltip(x, y);
   scene.canvas.style.cursor = "";
   mapCanvas.style.cursor = "";
   render();
@@ -1119,8 +1136,8 @@ function hoverRealm(p: Polity | null | undefined, x: number, y: number) {
           : years,
     }),
   );
-  tooltip.style.transform = `translate(${x + 14}px, ${y + 14}px)`;
   tooltip.hidden = false;
+  placeTooltip(x, y);
   scene.canvas.style.cursor = "pointer";
   mapCanvas.style.cursor = "pointer";
   render();
@@ -1177,8 +1194,8 @@ function hoverEmpty(lonLat: [number, number] | null, x: number, y: number) {
     Object.assign(document.createElement("strong"), { textContent: t("globe.blank.title") }),
     Object.assign(document.createElement("span"), { textContent: t("globe.blank.hover") }),
   );
-  tooltip.style.transform = `translate(${x + 14}px, ${y + 14}px)`;
   tooltip.hidden = false;
+  placeTooltip(x, y);
   scene.canvas.style.cursor = "pointer";
   mapCanvas.style.cursor = "pointer";
   render();
@@ -2117,8 +2134,8 @@ function hoverSign(x: number, y: number) {
   layer.setHovered(null);
   map.setHovered(null);
   tooltip.replaceChildren(Object.assign(document.createElement("strong"), { className: "tooltip-warning", textContent: t("map.activeWar") }));
-  tooltip.style.transform = `translate(${x + 14}px, ${y + 14}px)`;
   tooltip.hidden = false;
+  placeTooltip(x, y);
   scene.canvas.style.cursor = "";
   mapCanvas.style.cursor = "";
 }
@@ -2130,8 +2147,8 @@ function hoverEvent(e: HistoryEvent, x: number, y: number) {
     Object.assign(document.createElement("strong"), { textContent: e.title }),
     Object.assign(document.createElement("span"), { textContent: t("tooltip.event", { kind: kindLabel(e.kind), when: eventWhen(e) }) }),
   );
-  tooltip.style.transform = `translate(${x + 14}px, ${y + 14}px)`;
   tooltip.hidden = false;
+  placeTooltip(x, y);
   scene.canvas.style.cursor = "pointer";
   mapCanvas.style.cursor = "pointer";
 }
