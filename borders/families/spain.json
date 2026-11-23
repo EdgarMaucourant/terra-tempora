@@ -104,6 +104,62 @@
      "territory": "Spanish Guinea"
     }
    ]
+  },
+  {
+   "date": "1958-04-10",
+   "what": "By the Angra de Cintra agreement that ends the Ifni War, Spain leaves most of Ifni to Morocco and keeps only Sidi Ifni",
+   "source": {
+    "title": "Treaty of Angra de Cintra (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Angra_de_Cintra"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ifni-guelmim",
+      "ifni-souss"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Ifni War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ifni_War"
+     },
+     "territory": "Ifni",
+     "hatch": {
+      "by": "Morocco",
+      "since": "1957-12-09",
+      "occupied": true,
+      "note": "Taken by Moroccan irregulars of the Army of Liberation in the Ifni War; Spain held only Sidi Ifni and the perimeter around it",
+      "source": {
+       "title": "Ifni War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Ifni_War"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1957-12-09",
+   "what": "In the Ifni War, Spanish forces abandon the interior of Ifni and fall back to a defensive perimeter around Sidi Ifni",
+   "source": {
+    "title": "Ifni War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Ifni_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ifni-guelmim",
+      "ifni-souss"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Ifni (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ifni"
+     },
+     "territory": "Ifni"
+    }
+   ]
   }
  ]
 }

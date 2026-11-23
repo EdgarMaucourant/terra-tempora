@@ -15307,6 +15307,41 @@
    ],
    "realm": "Equatorial Guinea",
    "why": "Independent since 12 October 1968"
+  },
+  {
+   "place": "Ifni interior (Tiouinine road)",
+   "lonLat": [
+    -10.3,
+    29.15
+   ],
+   "years": [
+    1934,
+    1957
+   ],
+   "realm": "Ifni",
+   "why": "Spanish Ifni, abandoned in the Ifni War in December 1957",
+   "heldBy": [
+    {
+     "years": [
+      1957,
+      1957
+     ],
+     "by": "Morocco"
+    }
+   ]
+  },
+  {
+   "place": "Ifni interior (Moroccan)",
+   "lonLat": [
+    -10.3,
+    29.15
+   ],
+   "years": [
+    1958,
+    2026
+   ],
+   "realm": "Morocco",
+   "why": "Moroccan since the Angra de Cintra agreement of April 1958"
   }
  ]
 }
