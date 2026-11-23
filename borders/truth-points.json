@@ -15098,6 +15098,215 @@
    ],
    "realm": "Russia",
    "why": "Grand Duchy of Finland"
+  },
+  {
+   "place": "Madrid",
+   "lonLat": [
+    -3.7,
+    40.42
+   ],
+   "years": [
+    1956,
+    2026
+   ],
+   "realm": "Spain",
+   "why": "Capital of Spain"
+  },
+  {
+   "place": "Ceuta",
+   "lonLat": [
+    -5.32,
+    35.89
+   ],
+   "years": [
+    1956,
+    2026
+   ],
+   "realm": "Spain",
+   "why": "Spanish city in North Africa"
+  },
+  {
+   "place": "Las Palmas",
+   "lonLat": [
+    -15.43,
+    28.12
+   ],
+   "years": [
+    1956,
+    2026
+   ],
+   "realm": "Spain",
+   "why": "Canary Islands, part of Spain"
+  },
+  {
+   "place": "Palma",
+   "lonLat": [
+    2.65,
+    39.57
+   ],
+   "years": [
+    1956,
+    2026
+   ],
+   "realm": "Spain",
+   "why": "Balearic Islands, part of Spain"
+  },
+  {
+   "place": "Laayoune (Spanish Sahara)",
+   "lonLat": [
+    -13.2,
+    27.15
+   ],
+   "years": [
+    1956,
+    1975
+   ],
+   "realm": "Spain",
+   "why": "Capital of Spanish Sahara until Spain left on 26 February 1976"
+  },
+  {
+   "place": "Laayoune",
+   "lonLat": [
+    -13.2,
+    27.15
+   ],
+   "years": [
+    1976,
+    2025
+   ],
+   "realm": "Western Sahara",
+   "why": "Held by Morocco since 1976",
+   "heldBy": [
+    {
+     "years": [
+      1976,
+      2025
+     ],
+     "by": "Morocco"
+    }
+   ]
+  },
+  {
+   "place": "Dakhla (Spanish Sahara)",
+   "lonLat": [
+    -15.8,
+    23.6
+   ],
+   "years": [
+    1956,
+    1975
+   ],
+   "realm": "Spain",
+   "why": "Villa Cisneros, Spanish until 1976"
+  },
+  {
+   "place": "Dakhla (Western Tiris)",
+   "lonLat": [
+    -15.8,
+    23.6
+   ],
+   "years": [
+    1976,
+    1978
+   ],
+   "realm": "Western Sahara",
+   "why": "Held by Mauritania from 1976 to August 1979",
+   "heldBy": [
+    {
+     "years": [
+      1976,
+      1978
+     ],
+     "by": "Mauritania"
+    }
+   ]
+  },
+  {
+   "place": "Dakhla",
+   "lonLat": [
+    -15.8,
+    23.6
+   ],
+   "years": [
+    1979,
+    2026
+   ],
+   "realm": "Western Sahara",
+   "why": "Held by Morocco since August 1979",
+   "heldBy": [
+    {
+     "years": [
+      1979,
+      2026
+     ],
+     "by": "Morocco"
+    }
+   ]
+  },
+  {
+   "place": "Bir Lehlou (Spanish Sahara)",
+   "lonLat": [
+    -9.6,
+    26.35
+   ],
+   "years": [
+    1956,
+    1975
+   ],
+   "realm": "Spain",
+   "why": "Spanish Sahara until 1976"
+  },
+  {
+   "place": "Malabo (Spanish Guinea)",
+   "lonLat": [
+    8.78,
+    3.75
+   ],
+   "years": [
+    1956,
+    1967
+   ],
+   "realm": "Spain",
+   "why": "Santa Isabel, capital of Spanish Guinea until independence on 12 October 1968"
+  },
+  {
+   "place": "Malabo",
+   "lonLat": [
+    8.78,
+    3.75
+   ],
+   "years": [
+    1968,
+    2026
+   ],
+   "realm": "Equatorial Guinea",
+   "why": "Independent since 12 October 1968"
+  },
+  {
+   "place": "Bata (Spanish Guinea)",
+   "lonLat": [
+    9.77,
+    1.86
+   ],
+   "years": [
+    1956,
+    1967
+   ],
+   "realm": "Spain",
+   "why": "Río Muni, Spanish until 1968"
+  },
+  {
+   "place": "Bata",
+   "lonLat": [
+    9.77,
+    1.86
+   ],
+   "years": [
+    1968,
+    2026
+   ],
+   "realm": "Equatorial Guinea",
+   "why": "Independent since 12 October 1968"
   }
  ]
 }
