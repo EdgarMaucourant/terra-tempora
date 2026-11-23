@@ -95,7 +95,7 @@
     "RUS-5482",
     "ALD"
    ],
-   "from": 1858,
+   "from": 1815,
    "why": "Russia and the other fourteen republics of the former Soviet Union, with the land held by breakaway states (Chechnya, Transnistria, Abkhazia, South Ossetia, Nagorno-Karabakh) hatched"
   },
   {
@@ -104,7 +104,7 @@
     "ivangorod",
     "abrene"
    ],
-   "from": 1858,
+   "from": 1815,
    "why": "Cuts for land moved between Soviet republics after the war: the Estonian and Latvian border districts given to the Russian SFSR, and the Karachay and Chechen highlands given to the Georgian SSR from 1943-44 to 1957"
   },
   {
@@ -136,7 +136,7 @@
     "south-sakhalin",
     "kuril-islands"
    ],
-   "from": 1858,
+   "from": 1815,
    "why": "Finland, whose borders moved with the Soviet Union in 1940 and 1944, and the cuts for land that changed hands between 1939 and 1946"
   },
   {
@@ -147,14 +147,14 @@
     "kaluga-west",
     "voronezh-west"
    ],
-   "from": 1858,
+   "from": 1815,
    "why": "Cuts for Soviet land held by Germany and Finland in 1941-44 that was only part of a region"
   },
   {
    "pieces": [
     "KAB"
    ],
-   "from": 1858,
+   "from": 1815,
    "why": "The Baikonur Cosmodrome area, part of Kazakhstan, leased to Russia since 1994"
   },
   {
@@ -164,7 +164,7 @@
     "bobruisk",
     "khiva-delta"
    ],
-   "from": 1858,
+   "from": 1815,
    "why": "Cuts for land moved between Soviet republics in the 1920s: Taganrog and Shakhty, Gomel and Rechytsa, Bobruisk, and the Khivan part of Karakalpakstan"
   },
   {
@@ -192,7 +192,7 @@
     "salla-kuusamo",
     "salla"
    ],
-   "from": 1858,
+   "from": 1815,
    "why": "Finland, the Baltic states, Belarus, Ukraine and Moldova from the Russian Revolution, drawn as states held at the end of each year"
   },
   {
@@ -209,7 +209,7 @@
     "ru-cp-pol-3144",
     "POL-3149"
    ],
-   "from": 1858,
+   "from": 1815,
    "why": "The Russian part of Poland (Congress Poland and Bialystok), from 1905 to today; the rest of Poland is not yet rebuilt"
   },
   {
@@ -256,8 +256,16 @@
     "zaysan",
     "USA-3563"
    ],
-   "from": 1858,
+   "from": 1815,
    "why": "Cuts for the land that changed hands between 1856 and 1900: Southern Bessarabia, the northern Kurils, the Ussuri land, the Sixty-Four Villages and the Zaysan basin; and Alaska, Russian America until 1867"
+  },
+  {
+   "pieces": [
+    "lower-amur",
+    "kokand-syr-darya"
+   ],
+   "from": 1815,
+   "why": "Cuts for the lower Amur (Qing until 1858) and the Kokand forts on the Syr Darya (until 1853)"
   }
  ],
  "changes": [
@@ -5858,7 +5866,8 @@
       "RUS-2321",
       "RUS-2611",
       "ussuri-khabarovsk",
-      "sixty-four-villages"
+      "sixty-four-villages",
+      "lower-amur"
      ],
      "owner": "Far Eastern Republic",
      "source": {
@@ -6286,7 +6295,8 @@
       "RUS-2615",
       "RUS-2321",
       "ussuri-khabarovsk",
-      "sixty-four-villages"
+      "sixty-four-villages",
+      "lower-amur"
      ],
      "owner": "Russia",
      "source": {
@@ -9315,6 +9325,48 @@
    ]
   },
   {
+   "date": "1858-05-28",
+   "what": "The Treaty of Aigun gives Russia the north bank of the Amur, held by the Qing since the Treaty of Nerchinsk of 1689",
+   "source": {
+    "title": "Treaty of Aigun (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Aigun"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2609",
+      "RUS-2613"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Treaty of Nerchinsk (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Nerchinsk"
+     }
+    },
+    {
+     "pieces": [
+      "lower-amur"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Treaty of Nerchinsk (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Nerchinsk"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1850-08-13",
+      "note": "Held by Russian posts from the founding of Nikolayevsk in 1850",
+      "source": {
+       "title": "Amur Annexation (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Amur_Annexation"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
    "date": "1856-03-30",
    "what": "The Treaty of Paris ends the Crimean War; Russia gives Kars back to the Ottoman Empire",
    "source": {
@@ -9346,6 +9398,31 @@
    ]
   },
   {
+   "date": "1856-03-30",
+   "what": "The Treaty of Paris ends the Crimean War: Russia gives Southern Bessarabia to Moldavia",
+   "source": {
+    "title": "Treaty of Paris (1856) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Paris_(1856)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "sb-budjak",
+      "sb-cantemir",
+      "sb-taraclia",
+      "sb-comrat",
+      "MDA-1624"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Bessarabia Governorate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bessarabia_Governorate"
+     }
+    }
+   ]
+  },
+  {
    "date": "1855-11-28",
    "what": "The Ottoman garrison of Kars surrenders to Russian troops after a five-month siege",
    "source": {
@@ -9362,6 +9439,114 @@
      "source": {
       "title": "Siege of Kars (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Siege_of_Kars"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1855-01-17",
+   "what": "The Bugu Kyrgyz of Issyk-Kul swear allegiance to Russia",
+   "source": {
+    "title": "Issyk-Kul Region (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Issyk-Kul_Region"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "KGZ-1117"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Kyrgyz people (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kyrgyz_people"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1853-09-22",
+   "what": "Nevelskoy's expedition founds the first Russian posts on Sakhalin",
+   "source": {
+    "title": "Sakhalin (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Sakhalin"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "RUS-2616",
+      "south-sakhalin"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Sakhalin (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sakhalin"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1853-08-09",
+   "what": "Russian troops under Perovsky storm Ak-Mechet, the Kokand fortress on the Syr Darya, renamed Fort Perovsky",
+   "source": {
+    "title": "Kyzylorda (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kyzylorda"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "kokand-syr-darya",
+      "KAB"
+     ],
+     "owner": "Khanate of Kokand",
+     "source": {
+      "title": "Kyzylorda (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kyzylorda"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1850-08-13",
+   "what": "Gennady Nevelskoy raises the Russian flag at the mouth of the Amur and founds Nikolayevsk",
+   "source": {
+    "title": "Nikolayevsk-on-Amur (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Nikolayevsk-on-Amur"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "lower-amur"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Treaty of Nerchinsk (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Nerchinsk"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1847-01-01",
+   "what": "The Kazakhs of the Senior juz come under Russian rule; the fort of Kopal is built in 1847 and Verny (Almaty) in 1854",
+   "source": {
+    "title": "Senior jüz (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Senior_jüz"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "KAZ-3207",
+      "KAZ-4829"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Senior jüz (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Senior_jüz"
      }
     }
    ]
@@ -9671,6 +9856,75 @@
      "source": {
       "title": "Nakhchivan Khanate (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Nakhchivan_Khanate"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1824-01-01",
+   "what": "Russia abolishes the khanship of the Junior juz and rules its Kazakhs from Orenburg",
+   "source": {
+    "title": "Junior jüz (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Junior_jüz"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "KAZ-3201",
+      "KAZ-3198",
+      "KAZ-3195",
+      "KAZ-3236"
+     ],
+     "owner": "Junior jüz",
+     "source": {
+      "title": "Junior jüz (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Junior_jüz"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1731-10-10",
+      "note": "Under Russian protection since 1731",
+      "source": {
+       "title": "Junior jüz (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Junior_jüz"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1822-07-22",
+   "what": "Speransky's statute on the Siberian Kazakhs abolishes the khanship of the Middle juz and divides its land into Russian districts",
+   "source": {
+    "title": "Middle jüz (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Middle_jüz"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "KAZ-3204",
+      "KAZ-3202",
+      "KAZ-4830",
+      "KAZ-3205",
+      "KAZ-3203",
+      "KAZ-3196",
+      "KAZ-3206"
+     ],
+     "owner": "Middle jüz",
+     "source": {
+      "title": "Middle jüz (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Middle_jüz"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1740-08-28",
+      "note": "Under Russian protection since 1740",
+      "source": {
+       "title": "Middle jüz (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Middle_jüz"
+      }
      }
     }
    ]

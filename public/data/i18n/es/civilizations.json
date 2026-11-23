@@ -152,6 +152,9 @@
  "south-africa": {
   "name": "Sudáfrica"
  },
+ "middle-juz": {
+  "name": "Horda Media"
+ },
  "united-arab-republic": {
   "name": "República Árabe Unida"
  },
@@ -236,6 +239,9 @@
  "chile": {
   "name": "Chile"
  },
+ "junior-juz": {
+  "name": "Pequeña Horda"
+ },
  "kenya-colony": {
   "name": "Colonia de Kenia"
  },
@@ -290,6 +296,9 @@
  "fezzan": {
   "name": "Fezán"
  },
+ "khanate-of-kokand": {
+  "name": "Kanato de Kokand"
+ },
  "thailand": {
   "name": "Tailandia"
  },
@@ -328,9 +337,6 @@
  },
  "yemen": {
   "name": "Yemen"
- },
- "khanate-of-kokand": {
-  "name": "Kanato de Kokand"
  },
  "uzbekistan": {
   "name": "Uzbekistán"
