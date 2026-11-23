@@ -3108,5 +3108,45 @@
   "title": "La Russie supprime la principauté de Mingrélie, 1867",
   "place": "Zougdidi",
   "summary": "Les princes Dadiani de Mingrélie régnaient sous protection russe depuis 1803. Après avoir gouverné la principauté par une régence à partir de 1857, la Russie dépose le jeune prince Niko Dadiani et supprime la principauté en 1867 ; la Mingrélie est rattachée au gouvernement de Koutaïssi."
+ },
+ "kingdom-of-poland-1815": {
+  "title": "Le royaume de Pologne est créé sous le tsar, 1815",
+  "place": "Varsovie",
+  "summary": "Le congrès de Vienne partage le duché de Varsovie de Napoléon. L’essentiel devient le royaume de Pologne, avec sa propre constitution, son armée et sa diète, mais avec l’empereur de Russie pour roi ; la Prusse prend Poznań et Cracovie devient une ville libre."
+ },
+ "middle-juz-abolished-1822": {
+  "title": "La Russie supprime le khan de la Moyenne Horde, 1822",
+  "place": "Karkaraly",
+  "summary": "Sous protection russe depuis 1740, les Kazakhs de la Moyenne Horde gardaient leurs propres khans. Le statut de Speransky sur les Kazakhs de Sibérie du 22 juillet 1822 supprime le titre de khan et divise la steppe en districts russes dirigés par des sultans sous des fonctionnaires russes ; les premiers, Karkaraly et Kokchetaou, ouvrent en 1824."
+ },
+ "junior-juz-abolished-1824": {
+  "title": "La Russie supprime le khan de la Petite Horde, 1824",
+  "place": "Steppe kazakhe occidentale",
+  "summary": "La Russie écarte le khan Chirgazy en 1824 et supprime le titre de khan de la Petite Horde, sous sa protection depuis 1731. Ses Kazakhs sont répartis en trois parties, chacune sous un sultan nommé par le gouverneur d’Orenbourg."
+ },
+ "november-uprising-1830": {
+  "title": "L’insurrection de Novembre en Pologne, 1830 – 1831",
+  "place": "Varsovie",
+  "summary": "Le 29 novembre 1830, de jeunes officiers se soulèvent à Varsovie contre la domination russe. La Diète polonaise détrône le tsar Nicolas Ier en janvier 1831 et l’armée polonaise combat la Russie pendant presque toute l’année, mais Varsovie tombe en septembre 1831. La Russie retire alors sa constitution à la Pologne, dissout son armée et sa Diète, et des milliers de Polonais partent en exil."
+ },
+ "kenesary-revolt-1837": {
+  "title": "La révolte kazakhe de Kenessary, 1837 – 1847",
+  "place": "Steppe kazakhe centrale",
+  "summary": "Le sultan Kenessary Kassymov, petit-fils d’Ablaï Khan, mène les Kazakhs de la Moyenne Horde contre la domination russe à partir de 1837. Proclamé khan de tous les Kazakhs en 1841, il fonde son propre État dans la steppe centrale, mais repoussé vers le sud par les troupes russes, il est tué par les Kirghiz en 1847 : c’est le dernier khan des Kazakhs."
+ },
+ "nikolayevsk-founded-1850": {
+  "title": "La Russie hisse son drapeau à l’embouchure de l’Amour, 1850",
+  "place": "Nikolaïevsk-sur-l’Amour",
+  "summary": "Explorant l’estuaire de l’Amour malgré les ordres, le capitaine Guennadi Nevelskoï prouve que Sakhaline est une île et que les navires peuvent atteindre le fleuve. Le 13 août 1850, il hisse le drapeau russe à l’embouchure de l’Amour et fonde Nikolaïevsk sur une terre que les Qing revendiquent encore ; des postes russes suivent le long du fleuve avant le traité d’Aigoun."
+ },
+ "ak-mechet-1853": {
+  "title": "La Russie prend Ak-Metchet sur le Syr-Daria, 1853",
+  "place": "Ak-Metchet (Kyzylorda)",
+  "summary": "Le général Vassili Perovski conduit une colonne d’Orenbourg le long du Syr-Daria et prend d’assaut la forteresse kokandaise d’Ak-Metchet le 9 août 1853. Rebaptisée fort Perovski, elle ancre la ligne russe du Syr-Daria, point de départ de la conquête du Turkestan dix ans plus tard."
+ },
+ "treaty-of-paris-bessarabia-1856": {
+  "title": "Le traité de Paris met fin à la guerre de Crimée, mars 1856",
+  "place": "Izmaïl",
+  "summary": "Vaincue dans la guerre de Crimée, la Russie signe le traité de Paris le 30 mars 1856. Elle rend Kars aux Ottomans, perd les bouches du Danube et la Bessarabie du Sud (Izmaïl, Bolhrad, Cahul) au profit de la Moldavie, et ne peut plus entretenir de flotte de guerre sur la mer Noire."
  }
 }
