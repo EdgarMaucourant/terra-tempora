@@ -2975,7 +2975,26 @@
   "wikipedia": "Spain",
   "wikidata": "Q29",
   "fr": "Espagne",
-  "es": "España"
+  "es": "España",
+  "periods": [
+   {
+    "from": "1939-04-01",
+    "name": "Francoist Spain",
+    "wikipedia": "Francoist Spain",
+    "fr": "Espagne franquiste",
+    "es": "España franquista",
+    "note": "Franco's dictatorship, from the end of the Civil War",
+    "detail": "Francoist",
+    "detailFr": "franquiste",
+    "detailEs": "franquista"
+   },
+   {
+    "from": "1975-11-22",
+    "name": "Spain",
+    "wikipedia": "Spain",
+    "note": "The Kingdom of Spain, from the proclamation of Juan Carlos I after Franco's death"
+   }
+  ]
  },
  "Spanish Morocco": {
   "wikipedia": "Spanish protectorate in Morocco",
@@ -4723,5 +4742,22 @@
   "wikidata": "Q1641396",
   "fr": "Moyenne Horde",
   "es": "Horda Media"
+ },
+ "Spanish Sahara": {
+  "wikipedia": "Spanish Sahara",
+  "wikidata": "Q689837",
+  "fr": "Sahara espagnol",
+  "es": "Sahara español",
+  "withOwner": false,
+  "group": "Spanish West Africa",
+  "groupFrom": "1946-07-20",
+  "groupUntil": "1958-01-10"
+ },
+ "Spanish Guinea": {
+  "wikipedia": "Spanish Guinea",
+  "wikidata": "Q1232509",
+  "fr": "Guinée espagnole",
+  "es": "Guinea Española",
+  "withOwner": false
  }
 }
