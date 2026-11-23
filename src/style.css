@@ -1816,6 +1816,14 @@ a {
 }
 
 @media (max-width: 640px), (hover: none) and (pointer: coarse) {
+  /* A long tooltip wraps rather than running off the screen. */
+  .tooltip {
+    position: fixed;
+    max-width: calc(100vw - 16px);
+    box-sizing: border-box;
+    white-space: normal;
+  }
+
   .landing {
     padding: 0;
   }
