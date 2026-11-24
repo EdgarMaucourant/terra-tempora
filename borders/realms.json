@@ -2978,6 +2978,28 @@
   "es": "España",
   "periods": [
    {
+    "from": "1874-12-29",
+    "name": "Restoration",
+    "wikipedia": "Restoration (Spain)",
+    "fr": "Restauration bourbonienne en Espagne",
+    "es": "Restauración borbónica en España",
+    "note": "The Bourbon monarchy restored after the First Republic",
+    "detail": "Restoration",
+    "detailFr": "Restauration",
+    "detailEs": "Restauración"
+   },
+   {
+    "from": "1931-04-14",
+    "name": "Second Spanish Republic",
+    "wikipedia": "Second Spanish Republic",
+    "fr": "Seconde République espagnole",
+    "es": "Segunda República Española",
+    "note": "Proclaimed on 14 April 1931 after King Alfonso XIII left",
+    "detail": "Second Republic",
+    "detailFr": "Seconde République",
+    "detailEs": "Segunda República"
+   },
+   {
     "from": "1939-04-01",
     "name": "Francoist Spain",
     "wikipedia": "Francoist Spain",
@@ -4759,5 +4781,12 @@
   "fr": "Guinée espagnole",
   "es": "Guinea Española",
   "withOwner": false
+ },
+ "Nationalist Spain": {
+  "wikipedia": "Nationalist faction (Spanish Civil War)",
+  "wikidata": "Q2742116",
+  "fr": "Camp nationaliste",
+  "es": "Bando sublevado",
+  "notACountry": true
  }
 }
