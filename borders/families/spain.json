@@ -1,0 +1,165 @@
+{
+ "family": "Spain",
+ "note": "Spain with the land it held overseas (Spanish Sahara, Spanish Guinea; Morocco is in the France family), walked back from 2026.",
+ "reviewed": [
+  {
+   "pieces": [
+    "ESP"
+   ],
+   "from": 1956,
+   "why": "Spain with the Balearic and Canary Islands, Ceuta and Melilla"
+  },
+  {
+   "pieces": [
+    "SAH",
+    "western-sahara-3456",
+    "western-sahara-3457",
+    "western-sahara-3469"
+   ],
+   "from": 1956,
+   "why": "Western Sahara: Spanish Sahara until 1976, then held by Morocco west of its sand wall (and by Mauritania in the south until 1979)"
+  },
+  {
+   "pieces": [
+    "GNQ"
+   ],
+   "from": 1956,
+   "why": "Equatorial Guinea: Spanish Guinea (Fernando Po, Annobón and Río Muni) until 1968"
+  }
+ ],
+ "changes": [
+  {
+   "date": "1979-08-11",
+   "what": "Mauritania gives up its part of Western Sahara under the Algiers agreement of 5 August 1979; Morocco takes Dakhla and annexes Western Tiris",
+   "source": {
+    "title": "Tiris al-Gharbiyya (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tiris_al-Gharbiyya"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "western-sahara-3469"
+     ],
+     "owner": "Western Sahara",
+     "source": {
+      "title": "Tiris al-Gharbiyya (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tiris_al-Gharbiyya"
+     },
+     "hatch": {
+      "by": "Mauritania",
+      "since": "1976-02-26",
+      "note": "Western Tiris (Tiris al-Gharbiyya), the southern third of Western Sahara, held by Mauritania from Spain's departure (partition treaty with Morocco of 14 April 1976) until it gave up its claim in August 1979",
+      "source": {
+       "title": "Tiris al-Gharbiyya (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Tiris_al-Gharbiyya"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1976-02-26",
+   "what": "Spain leaves Spanish Sahara under the Madrid Accords of November 1975, handing it to Morocco and Mauritania",
+   "source": {
+    "title": "Madrid Accords (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Madrid_Accords"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SAH",
+      "western-sahara-3456",
+      "western-sahara-3457",
+      "western-sahara-3469"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Sahara (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Sahara"
+     },
+     "territory": "Spanish Sahara"
+    }
+   ]
+  },
+  {
+   "date": "1968-10-12",
+   "what": "Spanish Guinea becomes independent as Equatorial Guinea",
+   "source": {
+    "title": "Equatorial Guinea (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Equatorial_Guinea"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "GNQ"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Guinea (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Guinea"
+     },
+     "territory": "Spanish Guinea"
+    }
+   ]
+  },
+  {
+   "date": "1958-04-10",
+   "what": "By the Angra de Cintra agreement that ends the Ifni War, Spain leaves most of Ifni to Morocco and keeps only Sidi Ifni",
+   "source": {
+    "title": "Treaty of Angra de Cintra (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Angra_de_Cintra"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ifni-guelmim",
+      "ifni-souss"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Ifni War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ifni_War"
+     },
+     "territory": "Ifni",
+     "hatch": {
+      "by": "Morocco",
+      "since": "1957-12-09",
+      "occupied": true,
+      "note": "Taken by Moroccan irregulars of the Army of Liberation in the Ifni War; Spain held only Sidi Ifni and the perimeter around it",
+      "source": {
+       "title": "Ifni War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Ifni_War"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1957-12-09",
+   "what": "In the Ifni War, Spanish forces abandon the interior of Ifni and fall back to a defensive perimeter around Sidi Ifni",
+   "source": {
+    "title": "Ifni War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Ifni_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ifni-guelmim",
+      "ifni-souss"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Ifni (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ifni"
+     },
+     "territory": "Ifni"
+    }
+   ]
+  }
+ ]
+}

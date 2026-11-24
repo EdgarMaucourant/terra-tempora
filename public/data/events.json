@@ -11907,6 +11907,248 @@
    "summary": "Defeated in the Crimean War, Russia signs the Treaty of Paris on 30 March 1856. It gives Kars back to the Ottomans, loses the mouths of the Danube and Southern Bessarabia (Izmail, Bolhrad, Cahul) to Moldavia, and may no longer keep a war fleet on the Black Sea.",
    "wikipedia": "Treaty_of_Paris_(1856)",
    "search": "Treaty of Paris 30 March 1856 Crimean War end Russia Southern Bessarabia Moldavia Danube mouths Black Sea neutralised Izmail Bolhrad Cahul"
+  },
+  {
+   "id": "ifni-war-1957",
+   "kind": "war",
+   "year": 1957,
+   "to": 1958,
+   "title": "The Ifni War, 1957 – 1958",
+   "place": "Sidi Ifni",
+   "lonLat": [
+    -10.17,
+    29.38
+   ],
+   "civs": [
+    "spain",
+    "ifni",
+    "morocco",
+    "spanish-sahara"
+   ],
+   "summary": "In November 1957 Moroccan irregulars of the Army of Liberation attack Ifni and Spanish Sahara. Spain abandons the interior of Ifni and holds only a perimeter around Sidi Ifni, while a joint Spanish and French offensive clears Spanish Sahara in February 1958. By the Angra de Cintra agreement of April 1958 Spain hands Cape Juby and most of Ifni to Morocco.",
+   "wikipedia": "Ifni_War",
+   "search": "Ifni War 1957 1958 Moroccan Army of Liberation Sidi Ifni siege perimeter Spanish Sahara Edchera Operation Ecouvillon Angra de Cintra Cape Juby Tarfaya"
+  },
+  {
+   "id": "equatorial-guinea-independence-1968",
+   "kind": "empire",
+   "year": 1968,
+   "title": "Equatorial Guinea becomes independent, 12 October 1968",
+   "place": "Malabo",
+   "lonLat": [
+    8.78,
+    3.75
+   ],
+   "civs": [
+    "equatorial-guinea",
+    "spanish-guinea",
+    "spain"
+   ],
+   "summary": "Spanish Guinea, made up of the island of Fernando Po, Annobón and Río Muni on the mainland, becomes independent from Spain on 12 October 1968 as Equatorial Guinea. Francisco Macías Nguema, elected its first president, soon turns it into a one-party dictatorship.",
+   "wikipedia": "Equatorial_Guinea",
+   "search": "Equatorial Guinea independence 12 October 1968 Spanish Guinea Fernando Po Rio Muni Santa Isabel Francisco Macias Nguema president"
+  },
+  {
+   "id": "sidi-ifni-handover-1969",
+   "kind": "treaty",
+   "year": 1969,
+   "title": "Spain hands Sidi Ifni back to Morocco, 30 June 1969",
+   "place": "Sidi Ifni",
+   "lonLat": [
+    -10.17,
+    29.38
+   ],
+   "civs": [
+    "spain",
+    "ifni",
+    "morocco"
+   ],
+   "summary": "Under pressure from the United Nations, Spain signs a treaty with Morocco in Fez in January 1969 and hands back Sidi Ifni, all it had kept of Ifni since the war of 1957-58, on 30 June 1969.",
+   "wikipedia": "Ifni",
+   "search": "Sidi Ifni returned to Morocco 30 June 1969 Treaty of Fez 1969 Spain Ifni retrocession UN resolution 2072"
+  },
+  {
+   "id": "juan-carlos-king-1975",
+   "kind": "crown",
+   "year": 1975,
+   "title": "Franco dies and Juan Carlos I becomes king, November 1975",
+   "place": "Madrid",
+   "lonLat": [
+    -3.7,
+    40.42
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "Francisco Franco, dictator since the Civil War, dies on 20 November 1975. Two days later Juan Carlos de Borbón, whom he had named his successor, is proclaimed king; he soon backs the reforms that lead Spain to democracy.",
+   "wikipedia": "Juan_Carlos_I",
+   "search": "Death of Franco 20 November 1975 Juan Carlos I proclaimed king 22 November 1975 restoration monarchy Spanish transition to democracy"
+  },
+  {
+   "id": "madrid-accords-1975",
+   "kind": "treaty",
+   "year": 1975,
+   "to": 1976,
+   "title": "The Madrid Accords and the end of Spanish Sahara, 1975 – 1976",
+   "place": "Laayoune",
+   "lonLat": [
+    -13.2,
+    27.15
+   ],
+   "civs": [
+    "spain",
+    "spanish-sahara",
+    "western-sahara",
+    "morocco",
+    "mauritania"
+   ],
+   "summary": "As Moroccan marchers cross into Spanish Sahara and Franco lies dying, Spain signs the Madrid Accords with Morocco and Mauritania on 14 November 1975. It hands them the territory and leaves on 26 February 1976; the next day the Polisario Front proclaims the Sahrawi Arab Democratic Republic.",
+   "wikipedia": "Madrid_Accords",
+   "search": "Madrid Accords 14 November 1975 Spanish Sahara Morocco Mauritania tripartite administration Spain leaves 26 February 1976 Sahrawi Arab Democratic Republic Polisario"
+  },
+  {
+   "id": "spanish-constitution-1978",
+   "kind": "crown",
+   "year": 1978,
+   "title": "The Constitution of 1978 makes Spain a democracy",
+   "place": "Madrid",
+   "lonLat": [
+    -3.7,
+    40.42
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "After the first free elections since the Civil War, in June 1977, the new Cortes draft a constitution approved by referendum on 6 December 1978. Spain becomes a parliamentary monarchy, with regions that can govern themselves as autonomous communities.",
+   "wikipedia": "Spanish_Constitution_of_1978",
+   "search": "Spanish Constitution 1978 referendum 6 December 1978 parliamentary monarchy democracy transition autonomous communities Cortes"
+  },
+  {
+   "id": "mauritania-leaves-western-sahara-1979",
+   "kind": "treaty",
+   "year": 1979,
+   "title": "Mauritania gives up its part of Western Sahara, August 1979",
+   "place": "Dakhla",
+   "lonLat": [
+    -15.94,
+    23.7
+   ],
+   "civs": [
+    "western-sahara",
+    "mauritania",
+    "morocco"
+   ],
+   "summary": "Worn down by the Polisario Front's raids, Mauritania makes peace with it at Algiers on 5 August 1979 and renounces Western Tiris, the southern third of Western Sahara it had held since 1976. Morocco moves into Dakhla within days and annexes the land as the province of Oued Ed-Dahab.",
+   "wikipedia": "Tiris_al-Gharbiyya",
+   "search": "Mauritania Western Tiris Tiris al-Gharbiyya Algiers agreement 5 August 1979 Polisario peace Morocco annexes Dakhla Oued Ed-Dahab Western Sahara War"
+  },
+  {
+   "id": "obiang-coup-1979",
+   "kind": "revolution",
+   "year": 1979,
+   "title": "Obiang overthrows Macías in Equatorial Guinea, 1979",
+   "place": "Bata",
+   "lonLat": [
+    9.77,
+    1.86
+   ],
+   "civs": [
+    "equatorial-guinea"
+   ],
+   "summary": "On 3 August 1979 Teodoro Obiang Nguema overthrows his uncle Francisco Macías Nguema, whose rule had killed or driven into exile a large share of the population. Macías is tried and shot; Obiang is still in power today.",
+   "wikipedia": "1979_Equatorial_Guinea_coup_d'état",
+   "search": "Equatorial Guinea coup 3 August 1979 Teodoro Obiang Nguema overthrows Francisco Macias Nguema executed Supreme Military Council"
+  },
+  {
+   "id": "green-march-1975",
+   "kind": "journey",
+   "year": 1975,
+   "title": "The Green March, 6 November 1975",
+   "place": "Tah, on the border of Spanish Sahara",
+   "lonLat": [
+    -12.9,
+    27.66
+   ],
+   "civs": [
+    "morocco",
+    "spanish-sahara",
+    "spain"
+   ],
+   "summary": "Called by King Hassan II, about 350,000 unarmed Moroccans gather at Tarfaya and on 6 November 1975 cross a few kilometres into Spanish Sahara to press Morocco's claim. They turn back three days later, as Spain, with Franco dying, agrees to negotiate; the Madrid Accords follow a week later.",
+   "wikipedia": "Green_March",
+   "search": "Green March 6 November 1975 Hassan II 350000 Moroccans Tarfaya Tah Spanish Sahara border Madrid Accords Western Sahara"
+  },
+  {
+   "id": "western-sahara-war-1975",
+   "kind": "war",
+   "year": 1975,
+   "to": 1991,
+   "title": "The Western Sahara War, 1975 – 1991",
+   "place": "Smara",
+   "lonLat": [
+    -11.67,
+    26.74
+   ],
+   "civs": [
+    "western-sahara",
+    "morocco",
+    "mauritania"
+   ],
+   "summary": "The Polisario Front fights Morocco and Mauritania for the former Spanish Sahara, and tens of thousands of Sahrawis flee to camps near Tindouf in Algeria. Mauritania gives up in 1979; Morocco builds a 2,700 km sand wall in the 1980s that holds the Polisario out of most of the land. A UN ceasefire of 6 September 1991 promises a referendum that has never been held.",
+   "wikipedia": "Western_Sahara_War",
+   "search": "Western Sahara War 1975 1991 Polisario Front Morocco Mauritania Sahrawi refugees Tindouf Moroccan Wall berm ceasefire 6 September 1991 MINURSO referendum"
+  },
+  {
+   "id": "23-f-coup-attempt-1981",
+   "kind": "revolution",
+   "year": 1981,
+   "title": "The failed coup of 23 February 1981",
+   "place": "Congress of Deputies, Madrid",
+   "lonLat": [
+    -3.7,
+    40.42
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "On 23 February 1981 Civil Guard officers led by Antonio Tejero storm the Congress of Deputies during a vote and hold the deputies hostage, while tanks roll into Valencia. King Juan Carlos I orders the army on television to back the constitution, and the coup collapses the next morning.",
+   "wikipedia": "1981_Spanish_coup_attempt",
+   "search": "23-F 23 February 1981 coup attempt Tejero Congress of Deputies Milans del Bosch Valencia tanks Juan Carlos I television address democracy"
+  },
+  {
+   "id": "spain-joins-eec-1986",
+   "kind": "treaty",
+   "year": 1986,
+   "title": "Spain joins the European Community, 1 January 1986",
+   "place": "Royal Palace, Madrid, where the treaty was signed",
+   "lonLat": [
+    -3.714,
+    40.418
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "Spain joins the European Economic Community together with Portugal. Spain signed its accession treaty at the Royal Palace in Madrid on 12 June 1985, the same day as Portugal in Lisbon, ending the isolation of the Franco years.",
+   "wikipedia": "1986_enlargement_of_the_European_Communities",
+   "search": "1986 enlargement of the European Communities Spain accession treaty 12 June 1985 Royal Palace Madrid European Economic Community"
+  },
+  {
+   "id": "perejil-island-crisis-2002",
+   "kind": "war",
+   "year": 2002,
+   "title": "The Perejil Island crisis, July 2002",
+   "place": "Perejil Island",
+   "lonLat": [
+    -5.42,
+    35.915
+   ],
+   "civs": [
+    "spain",
+    "morocco"
+   ],
+   "summary": "On 11 July 2002 a handful of Moroccan soldiers land on Perejil, an uninhabited islet off the Moroccan coast near Ceuta that both countries claim. Spanish special forces remove them on 17 July without a shot, and US mediation restores the earlier state: nobody stays on the island.",
+   "wikipedia": "Perejil_Island_crisis",
+   "search": "Perejil Island crisis July 2002 Leila Moroccan soldiers Spain Operation Romeo-Sierra Ceuta Colin Powell mediation status quo"
   }
  ]
 }

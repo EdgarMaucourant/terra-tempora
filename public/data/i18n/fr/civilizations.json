@@ -206,6 +206,9 @@
  "colonial-nigeria": {
   "name": "Colonie et protectorat du Nigeria"
  },
+ "spain": {
+  "name": "Espagne"
+ },
  "kamerun": {
   "name": "Kamerun"
  },
@@ -304,9 +307,6 @@
  },
  "sultanate-of-darfur": {
   "name": "Sultanat du Darfour"
- },
- "spain": {
-  "name": "Espagne"
  },
  "north-western-rhodesia": {
   "name": "Rhodésie du Nord-Ouest"
@@ -434,6 +434,9 @@
  "oman": {
   "name": "Oman"
  },
+ "spanish-west-africa": {
+  "name": "Afrique occidentale espagnole"
+ },
  "south-yemen": {
   "name": "Yémen du Sud"
  },
@@ -451,6 +454,9 @@
  },
  "western-sahara": {
   "name": "Sahara occidental"
+ },
+ "spanish-sahara": {
+  "name": "Sahara espagnol"
  },
  "new-zealand": {
   "name": "Nouvelle-Zélande"
@@ -839,9 +845,6 @@
  "british-togoland": {
   "name": "Togoland britannique"
  },
- "spanish-west-africa": {
-  "name": "Afrique occidentale espagnole"
- },
  "taiwan-republic-of-china": {
   "name": "Taïwan"
  },
@@ -880,6 +883,9 @@
  },
  "equatorial-guinea": {
   "name": "Guinée équatoriale"
+ },
+ "spanish-guinea": {
+  "name": "Guinée espagnole"
  },
  "rwanda": {
   "name": "Rwanda"
