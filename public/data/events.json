@@ -12058,6 +12058,97 @@
    "summary": "On 3 August 1979 Teodoro Obiang Nguema overthrows his uncle Francisco Macías Nguema, whose rule had killed or driven into exile a large share of the population. Macías is tried and shot; Obiang is still in power today.",
    "wikipedia": "1979_Equatorial_Guinea_coup_d'état",
    "search": "Equatorial Guinea coup 3 August 1979 Teodoro Obiang Nguema overthrows Francisco Macias Nguema executed Supreme Military Council"
+  },
+  {
+   "id": "green-march-1975",
+   "kind": "journey",
+   "year": 1975,
+   "title": "The Green March, 6 November 1975",
+   "place": "Tah, on the border of Spanish Sahara",
+   "lonLat": [
+    -12.9,
+    27.66
+   ],
+   "civs": [
+    "morocco",
+    "spanish-sahara",
+    "spain"
+   ],
+   "summary": "Called by King Hassan II, about 350,000 unarmed Moroccans gather at Tarfaya and on 6 November 1975 cross a few kilometres into Spanish Sahara to press Morocco's claim. They turn back three days later, as Spain, with Franco dying, agrees to negotiate; the Madrid Accords follow a week later.",
+   "wikipedia": "Green_March",
+   "search": "Green March 6 November 1975 Hassan II 350000 Moroccans Tarfaya Tah Spanish Sahara border Madrid Accords Western Sahara"
+  },
+  {
+   "id": "western-sahara-war-1975",
+   "kind": "war",
+   "year": 1975,
+   "to": 1991,
+   "title": "The Western Sahara War, 1975 – 1991",
+   "place": "Smara",
+   "lonLat": [
+    -11.67,
+    26.74
+   ],
+   "civs": [
+    "western-sahara",
+    "morocco",
+    "mauritania"
+   ],
+   "summary": "The Polisario Front fights Morocco and Mauritania for the former Spanish Sahara, and tens of thousands of Sahrawis flee to camps near Tindouf in Algeria. Mauritania gives up in 1979; Morocco builds a 2,700 km sand wall in the 1980s that holds the Polisario out of most of the land. A UN ceasefire of 6 September 1991 promises a referendum that has never been held.",
+   "wikipedia": "Western_Sahara_War",
+   "search": "Western Sahara War 1975 1991 Polisario Front Morocco Mauritania Sahrawi refugees Tindouf Moroccan Wall berm ceasefire 6 September 1991 MINURSO referendum"
+  },
+  {
+   "id": "23-f-coup-attempt-1981",
+   "kind": "revolution",
+   "year": 1981,
+   "title": "The failed coup of 23 February 1981",
+   "place": "Congress of Deputies, Madrid",
+   "lonLat": [
+    -3.7,
+    40.42
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "On 23 February 1981 Civil Guard officers led by Antonio Tejero storm the Congress of Deputies during a vote and hold the deputies hostage, while tanks roll into Valencia. King Juan Carlos I orders the army on television to back the constitution, and the coup collapses the next morning.",
+   "wikipedia": "1981_Spanish_coup_attempt",
+   "search": "23-F 23 February 1981 coup attempt Tejero Congress of Deputies Milans del Bosch Valencia tanks Juan Carlos I television address democracy"
+  },
+  {
+   "id": "spain-joins-eec-1986",
+   "kind": "treaty",
+   "year": 1986,
+   "title": "Spain joins the European Community, 1 January 1986",
+   "place": "Royal Palace, Madrid, where the treaty was signed",
+   "lonLat": [
+    -3.714,
+    40.418
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "Spain joins the European Economic Community together with Portugal. Spain signed its accession treaty at the Royal Palace in Madrid on 12 June 1985, the same day as Portugal in Lisbon, ending the isolation of the Franco years.",
+   "wikipedia": "1986_enlargement_of_the_European_Communities",
+   "search": "1986 enlargement of the European Communities Spain accession treaty 12 June 1985 Royal Palace Madrid European Economic Community"
+  },
+  {
+   "id": "perejil-island-crisis-2002",
+   "kind": "war",
+   "year": 2002,
+   "title": "The Perejil Island crisis, July 2002",
+   "place": "Perejil Island",
+   "lonLat": [
+    -5.42,
+    35.915
+   ],
+   "civs": [
+    "spain",
+    "morocco"
+   ],
+   "summary": "On 11 July 2002 a handful of Moroccan soldiers land on Perejil, an uninhabited islet off the Moroccan coast near Ceuta that both countries claim. Spanish special forces remove them on 17 July without a shot, and US mediation restores the earlier state: nobody stays on the island.",
+   "wikipedia": "Perejil_Island_crisis",
+   "search": "Perejil Island crisis July 2002 Leila Moroccan soldiers Spain Operation Romeo-Sierra Ceuta Colin Powell mediation status quo"
   }
  ]
 }
