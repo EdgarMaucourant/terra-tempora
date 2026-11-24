@@ -12149,6 +12149,146 @@
    "summary": "On 11 July 2002 a handful of Moroccan soldiers land on Perejil, an uninhabited islet off the Moroccan coast near Ceuta that both countries claim. Spanish special forces remove them on 17 July without a shot, and US mediation restores the earlier state: nobody stays on the island.",
    "wikipedia": "Perejil_Island_crisis",
    "search": "Perejil Island crisis July 2002 Leila Moroccan soldiers Spain Operation Romeo-Sierra Ceuta Colin Powell mediation status quo"
+  },
+  {
+   "id": "second-spanish-republic-1931",
+   "kind": "revolution",
+   "year": 1931,
+   "title": "The Second Republic is proclaimed, 14 April 1931",
+   "place": "Madrid",
+   "lonLat": [
+    -3.7,
+    40.42
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "Republicans sweep the cities in the municipal elections of 12 April 1931. Two days later the Second Republic is proclaimed and King Alfonso XIII leaves Spain without abdicating. Its constitution of December 1931 gives women the vote, separates church and state and lets Catalonia govern itself.",
+   "wikipedia": "Second_Spanish_Republic",
+   "search": "Second Spanish Republic proclaimed 14 April 1931 municipal elections Alfonso XIII exile Niceto Alcala-Zamora Constitution 1931 Catalonia autonomy"
+  },
+  {
+   "id": "spain-occupies-smara-1934",
+   "kind": "empire",
+   "year": 1934,
+   "title": "Spain occupies the interior of Spanish Sahara, 1934",
+   "place": "Smara",
+   "lonLat": [
+    -11.67,
+    26.74
+   ],
+   "civs": [
+    "spain",
+    "spanish-sahara"
+   ],
+   "summary": "For fifty years Spain held only a few posts on the coast of its Saharan colony, such as Villa Cisneros. In 1934, just after taking Ifni, a column of Saharan troops from Cape Juby occupies Daora on 1 May and Smara on 15 May; by the end of the year Spain holds the whole territory.",
+   "wikipedia": "Spanish_Sahara",
+   "search": "Spanish Sahara 1934 occupation Smara Daora Galo Bullon Cape Juby Saguia el-Hamra interior Rio de Oro Villa Cisneros"
+  },
+  {
+   "id": "spanish-civil-war-1936",
+   "kind": "war",
+   "year": 1936,
+   "to": 1939,
+   "title": "The Spanish Civil War, 1936 – 1939",
+   "place": "Burgos",
+   "lonLat": [
+    -3.7,
+    42.34
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "On 17-18 July 1936 army officers rise against the Republic. The coup fails in Madrid and Barcelona but takes the north-west, Old Castile, western Andalusia, Morocco and the islands, splitting Spain in two. Franco becomes the Nationalists' head of state at Burgos in October 1936. Helped by Germany and Italy, while the Soviet Union and the International Brigades help the Republic, the Nationalists win after nearly three years and some 500,000 deaths.",
+   "wikipedia": "Spanish_Civil_War",
+   "search": "Spanish Civil War 1936 1939 coup 17 18 July 1936 Franco Mola Nationalists Republic Burgos junta Germany Italy Soviet Union International Brigades"
+  },
+  {
+   "id": "war-in-the-north-1937",
+   "kind": "war",
+   "year": 1937,
+   "title": "The Nationalists take the Republican north, 1937",
+   "place": "Bilbao",
+   "lonLat": [
+    -2.93,
+    43.26
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "The Nationalists turn on the Republican strip along the Bay of Biscay, cut off from the rest of the Republic. Guernica is bombed by the German Condor Legion in April, Bilbao falls on 19 June, Santander in August and Gijón on 21 October 1937, giving Franco the industry and mines of the north.",
+   "wikipedia": "War_in_the_North",
+   "search": "War in the North 1937 Bilbao Biscay Basque Country Guernica Iron Ring Santander Asturias Gijón Nationalists Republic northern front"
+  },
+  {
+   "id": "aragon-offensive-1938",
+   "kind": "war",
+   "year": 1938,
+   "title": "The Nationalists cut the Republic in two, April 1938",
+   "place": "Vinaròs",
+   "lonLat": [
+    0.47,
+    40.47
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "After retaking Teruel, the Nationalists break through in Aragon in March 1938, take Lleida and reach the Mediterranean at Vinaròs on 15 April, cutting Catalonia off from Valencia and Madrid. They take Castellón in June; the Republic's Ebro counter-offensive that summer gains nothing lasting.",
+   "wikipedia": "Aragon_Offensive",
+   "search": "Aragon Offensive March April 1938 Nationalists reach the Mediterranean Vinaros 15 April 1938 Republic cut in two Lleida Castellon Teruel"
+  },
+  {
+   "id": "fall-of-catalonia-1939",
+   "kind": "war",
+   "year": 1939,
+   "title": "The Nationalists take Catalonia, January – February 1939",
+   "place": "Barcelona",
+   "lonLat": [
+    2.17,
+    41.39
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "The Nationalist offensive of December 1938 overwhelms Catalonia. Barcelona falls on 26 January 1939 and Nationalist troops reach the French border on 10 February, while some 450,000 refugees, soldiers and the Republican government flee to France in the Retirada.",
+   "wikipedia": "Catalonia_Offensive",
+   "search": "Catalonia Offensive December 1938 February 1939 fall of Barcelona 26 January 1939 Retirada refugees France border Girona"
+  },
+  {
+   "id": "end-of-civil-war-1939",
+   "kind": "crown",
+   "year": 1939,
+   "title": "Franco wins the Civil War, 1 April 1939",
+   "place": "Madrid",
+   "lonLat": [
+    -3.7,
+    40.42
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "After a coup within the Republican side, Madrid surrenders on 28 March 1939 and Valencia and the last Republican ports soon after. On 1 April Franco declares the war over. He rules Spain as dictator until his death in 1975; tens of thousands of Republicans are executed and hundreds of thousands imprisoned or exiled.",
+   "wikipedia": "Francoist_Spain",
+   "search": "End of the Spanish Civil War 1 April 1939 Franco victory Madrid falls 28 March 1939 Casado coup Francoist dictatorship repression"
+  },
+  {
+   "id": "spain-occupies-tangier-1940",
+   "kind": "empire",
+   "year": 1940,
+   "to": 1945,
+   "title": "Spain occupies Tangier, June 1940",
+   "place": "Tangier",
+   "lonLat": [
+    -5.81,
+    35.78
+   ],
+   "civs": [
+    "spain",
+    "tangier-international-zone"
+   ],
+   "summary": "On 14 June 1940, the day the Germans enter Paris, Spanish troops from Morocco occupy the Tangier International Zone. Franco soon joins it to Spanish Morocco, but has to leave in October 1945 when the Allies restore the international zone.",
+   "wikipedia": "Tangier_International_Zone",
+   "search": "Spanish occupation of Tangier 14 June 1940 Franco international zone annexed Spanish Morocco 1945 restored"
   }
  ]
 }

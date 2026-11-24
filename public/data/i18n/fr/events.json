@@ -3213,5 +3213,45 @@
   "title": "La crise de l’îlot Persil, juillet 2002",
   "place": "Îlot Persil",
   "summary": "Le 11 juillet 2002, quelques soldats marocains débarquent sur Persil, un îlot inhabité au large de la côte marocaine près de Ceuta, revendiqué par les deux pays. Des forces spéciales espagnoles les en délogent le 17 juillet sans un coup de feu, et une médiation américaine rétablit la situation antérieure : personne ne reste sur l’île."
+ },
+ "second-spanish-republic-1931": {
+  "title": "La Seconde République est proclamée, 14 avril 1931",
+  "place": "Madrid",
+  "summary": "Les républicains l’emportent dans les villes aux élections municipales du 12 avril 1931. Deux jours plus tard, la Seconde République est proclamée et le roi Alphonse XIII quitte l’Espagne sans abdiquer. Sa constitution de décembre 1931 donne le vote aux femmes, sépare l’Église et l’État et permet à la Catalogne de se gouverner elle-même."
+ },
+ "spain-occupies-smara-1934": {
+  "title": "L’Espagne occupe l’intérieur du Sahara espagnol, 1934",
+  "place": "Smara",
+  "summary": "Pendant cinquante ans, l’Espagne n’a tenu que quelques postes sur la côte de sa colonie saharienne, comme Villa Cisneros. En 1934, juste après avoir pris Ifni, une colonne de troupes sahariennes partie du cap Juby occupe Daora le 1er mai et Smara le 15 mai ; à la fin de l’année, l’Espagne tient tout le territoire."
+ },
+ "spanish-civil-war-1936": {
+  "title": "La guerre civile espagnole, 1936 – 1939",
+  "place": "Burgos",
+  "summary": "Les 17 et 18 juillet 1936, des officiers se soulèvent contre la République. Le coup échoue à Madrid et Barcelone mais prend le nord-ouest, la Vieille-Castille, l’ouest de l’Andalousie, le Maroc et les îles, coupant l’Espagne en deux. Franco devient chef de l’État nationaliste à Burgos en octobre 1936. Aidés par l’Allemagne et l’Italie, tandis que l’Union soviétique et les Brigades internationales aident la République, les nationalistes gagnent après près de trois ans et quelque 500 000 morts."
+ },
+ "war-in-the-north-1937": {
+  "title": "Les nationalistes prennent le nord républicain, 1937",
+  "place": "Bilbao",
+  "summary": "Les nationalistes s’attaquent à la bande républicaine du golfe de Gascogne, coupée du reste de la République. Guernica est bombardée par la légion Condor allemande en avril, Bilbao tombe le 19 juin, Santander en août et Gijón le 21 octobre 1937, donnant à Franco l’industrie et les mines du nord."
+ },
+ "aragon-offensive-1938": {
+  "title": "Les nationalistes coupent la République en deux, avril 1938",
+  "place": "Vinaròs",
+  "summary": "Après avoir repris Teruel, les nationalistes percent en Aragon en mars 1938, prennent Lérida et atteignent la Méditerranée à Vinaròs le 15 avril, coupant la Catalogne de Valence et de Madrid. Ils prennent Castellón en juin ; la contre-offensive républicaine de l’Èbre, cet été-là, ne gagne rien de durable."
+ },
+ "fall-of-catalonia-1939": {
+  "title": "Les nationalistes prennent la Catalogne, janvier – février 1939",
+  "place": "Barcelone",
+  "summary": "L’offensive nationaliste de décembre 1938 submerge la Catalogne. Barcelone tombe le 26 janvier 1939 et les troupes nationalistes atteignent la frontière française le 10 février, tandis que quelque 450 000 réfugiés, soldats et le gouvernement républicain fuient en France : c’est la Retirada."
+ },
+ "end-of-civil-war-1939": {
+  "title": "Franco gagne la guerre civile, 1er avril 1939",
+  "place": "Madrid",
+  "summary": "Après un coup d’État dans le camp républicain, Madrid se rend le 28 mars 1939, suivie de Valence et des derniers ports républicains. Le 1er avril, Franco déclare la guerre terminée. Il gouverne l’Espagne en dictateur jusqu’à sa mort en 1975 ; des dizaines de milliers de républicains sont exécutés et des centaines de milliers emprisonnés ou exilés."
+ },
+ "spain-occupies-tangier-1940": {
+  "title": "L’Espagne occupe Tanger, juin 1940",
+  "place": "Tanger",
+  "summary": "Le 14 juin 1940, le jour où les Allemands entrent dans Paris, des troupes espagnoles venues du Maroc occupent la zone internationale de Tanger. Franco la rattache bientôt au Maroc espagnol, mais doit partir en octobre 1945 quand les Alliés rétablissent la zone internationale."
  }
 }
