@@ -71,7 +71,8 @@
     "ifni-souss",
     "cape-juby-guelmim",
     "MAR-3456",
-    "TUN"
+    "TUN",
+    "sidi-ifni"
    ],
    "from": 1815,
    "why": "Morocco (without Western Sahara) and Tunisia: the French protectorates until 1956, with Spain's northern zone, the Tangier International Zone, Cape Juby (Spanish until 1958) and Ifni (Spanish until 1969)"
@@ -344,7 +345,7 @@
   },
   {
    "date": "1969-06-30",
-   "what": "Spain hands Ifni back to Morocco",
+   "what": "Spain hands Sidi Ifni, all it had kept of Ifni since the Ifni War, back to Morocco",
    "source": {
     "title": "Ifni (Wikipedia)",
     "url": "https://en.wikipedia.org/wiki/Ifni"
@@ -354,8 +355,7 @@
    "before": [
     {
      "pieces": [
-      "ifni-guelmim",
-      "ifni-souss"
+      "sidi-ifni"
      ],
      "owner": "Spain",
      "territory": "Ifni",
@@ -3449,7 +3449,8 @@
     {
      "pieces": [
       "ifni-guelmim",
-      "ifni-souss"
+      "ifni-souss",
+      "sidi-ifni"
      ],
      "owner": "France",
      "territory": "French Morocco",
@@ -4572,7 +4573,8 @@
       "spanish-morocco-oriental",
       "spanish-morocco-taza",
       "tangier-zone",
-      "MAR-3456"
+      "MAR-3456",
+      "sidi-ifni"
      ],
      "owner": "Morocco",
      "source": {
