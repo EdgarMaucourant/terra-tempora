@@ -3231,7 +3231,7 @@
  },
  "war-in-the-north-1937": {
   "title": "Les nationalistes prennent le nord républicain, 1937",
-  "place": "Bilbao",
+  "place": "Santander",
   "summary": "Les nationalistes s’attaquent à la bande républicaine du golfe de Gascogne, coupée du reste de la République. Guernica est bombardée par la légion Condor allemande en avril, Bilbao tombe le 19 juin, Santander en août et Gijón le 21 octobre 1937, donnant à Franco l’industrie et les mines du nord."
  },
  "aragon-offensive-1938": {
@@ -3253,5 +3253,40 @@
   "title": "L’Espagne occupe Tanger, juin 1940",
   "place": "Tanger",
   "summary": "Le 14 juin 1940, le jour où les Allemands entrent dans Paris, des troupes espagnoles venues du Maroc occupent la zone internationale de Tanger. Franco la rattache bientôt au Maroc espagnol, mais doit partir en octobre 1945 quand les Alliés rétablissent la zone internationale."
+ },
+ "revolution-of-1934": {
+  "title": "La révolution d’octobre 1934",
+  "place": "Oviedo",
+  "summary": "Quand la CEDA, de droite, entre au gouvernement en octobre 1934, la gauche appelle à la grève générale. Dans les Asturies, des mineurs armés prennent l’essentiel de la province et tiennent Oviedo deux semaines, jusqu’à ce que des troupes d’Afrique, dirigées par Franco, les écrasent, faisant quelque 1 500 morts ; à Barcelone, Lluís Companys proclame un État catalan que l’armée renverse en dix heures."
+ },
+ "bombing-of-guernica-1937": {
+  "title": "Le bombardement de Guernica, 26 avril 1937",
+  "place": "Guernica",
+  "summary": "Un jour de marché, le 26 avril 1937, des avions allemands de la légion Condor et des bombardiers italiens détruisent pour Franco la ville basque de Guernica, tuant des centaines de civils. L’attaque choque le monde et inspire à Picasso son tableau Guernica."
+ },
+ "battle-of-the-ebro-1938": {
+  "title": "La bataille de l’Èbre, juillet – novembre 1938",
+  "place": "Gandesa",
+  "summary": "Le 25 juillet 1938, l’armée républicaine franchit l’Èbre pour relier la Catalogne au reste de la République. Arrêtée devant Gandesa, elle s’use en près de quatre mois de combats et repasse le fleuve en novembre ; c’est la bataille la plus longue et la plus sanglante de la guerre, qui laisse la République trop faible pour défendre la Catalogne."
+ },
+ "hendaye-meeting-1940": {
+  "title": "Franco rencontre Hitler à Hendaye, 23 octobre 1940",
+  "place": "Hendaye, à la frontière, face à Irun",
+  "summary": "Hitler rencontre Franco en gare d’Hendaye, à la frontière, pour faire entrer l’Espagne en guerre et prendre Gibraltar. Franco demande en échange le Maroc français, Oran et beaucoup d’aide ; les pourparlers échouent et l’Espagne reste hors de la guerre, même si elle envoie la division Azul combattre l’Union soviétique en 1941."
+ },
+ "law-of-succession-1947": {
+  "title": "La loi de succession fait de l’Espagne un royaume, 1947",
+  "place": "Madrid",
+  "summary": "Une loi approuvée par référendum en juillet 1947 déclare l’Espagne royaume, avec Franco chef de l’État à vie et le droit de désigner le futur roi. Il n’y a pas de roi du vivant de Franco ; en 1969, il désigne Juan Carlos de Bourbon pour lui succéder."
+ },
+ "pact-of-madrid-1953": {
+  "title": "Le pacte de Madrid avec les États-Unis, 1953",
+  "place": "Torrejón de Ardoz, près de Madrid",
+  "summary": "En pleine guerre froide, les États-Unis signent des accords avec Franco le 23 septembre 1953 : des bases aériennes et navales américaines à Torrejón, Saragosse, Morón et Rota contre une aide économique et militaire, ce qui met fin à l’isolement de l’Espagne depuis 1945."
+ },
+ "spain-joins-un-1955": {
+  "title": "L’Espagne entre aux Nations unies, 14 décembre 1955",
+  "place": "Madrid",
+  "summary": "Tenue à l’écart en 1946 comme régime ayant pris le parti de l’Axe, l’Espagne est admise aux Nations unies le 14 décembre 1955 avec quinze autres États, signe que les puissances occidentales ont fini par accepter Franco dans la guerre froide."
  }
 }

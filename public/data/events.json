@@ -12208,10 +12208,10 @@
    "kind": "war",
    "year": 1937,
    "title": "The Nationalists take the Republican north, 1937",
-   "place": "Bilbao",
+   "place": "Santander",
    "lonLat": [
-    -2.93,
-    43.26
+    -3.8,
+    43.46
    ],
    "civs": [
     "spain"
@@ -12289,6 +12289,128 @@
    "summary": "On 14 June 1940, the day the Germans enter Paris, Spanish troops from Morocco occupy the Tangier International Zone. Franco soon joins it to Spanish Morocco, but has to leave in October 1945 when the Allies restore the international zone.",
    "wikipedia": "Tangier_International_Zone",
    "search": "Spanish occupation of Tangier 14 June 1940 Franco international zone annexed Spanish Morocco 1945 restored"
+  },
+  {
+   "id": "revolution-of-1934",
+   "kind": "revolution",
+   "year": 1934,
+   "title": "The October Revolution of 1934",
+   "place": "Oviedo",
+   "lonLat": [
+    -5.85,
+    43.36
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "When the right-wing CEDA joins the government in October 1934, the left calls a general strike. In Asturias armed miners take most of the province and hold Oviedo for two weeks until troops from Africa, directed by Franco, crush them, leaving some 1,500 dead; in Barcelona Lluís Companys proclaims a Catalan State that the army ends in ten hours.",
+   "wikipedia": "Revolution_of_1934",
+   "search": "Revolution of 1934 October Asturian miners strike Oviedo Catalan State Companys proclamation Franco army Africa repression general strike"
+  },
+  {
+   "id": "bombing-of-guernica-1937",
+   "kind": "battle",
+   "year": 1937,
+   "title": "The bombing of Guernica, 26 April 1937",
+   "place": "Guernica",
+   "lonLat": [
+    -2.68,
+    43.31
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "On a market day, 26 April 1937, German planes of the Condor Legion and Italian bombers destroy the Basque town of Guernica for Franco, killing hundreds of civilians. The attack shocks the world and inspires Picasso's painting Guernica.",
+   "wikipedia": "Bombing_of_Guernica",
+   "search": "Bombing of Guernica 26 April 1937 Condor Legion Italian Aviazione Legionaria Basque town market day Picasso Guernica painting"
+  },
+  {
+   "id": "battle-of-the-ebro-1938",
+   "kind": "battle",
+   "year": 1938,
+   "to": 1938,
+   "title": "The Battle of the Ebro, July – November 1938",
+   "place": "Gandesa",
+   "lonLat": [
+    0.52,
+    41.05
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "On 25 July 1938 the Republican army crosses the Ebro to reconnect Catalonia with the rest of the Republic. Stopped at Gandesa, it is worn down in nearly four months of fighting and pulls back across the river in November, the longest and bloodiest battle of the war; it leaves the Republic too weak to defend Catalonia.",
+   "wikipedia": "Battle_of_the_Ebro",
+   "search": "Battle of the Ebro July November 1938 Republican offensive crossing Gandesa Popular Army Modesto longest battle Spanish Civil War"
+  },
+  {
+   "id": "hendaye-meeting-1940",
+   "kind": "treaty",
+   "year": 1940,
+   "title": "Franco meets Hitler at Hendaye, 23 October 1940",
+   "place": "Hendaye, on the French border at Irun",
+   "lonLat": [
+    -1.79,
+    43.34
+   ],
+   "civs": [
+    "spain",
+    "germany"
+   ],
+   "summary": "Hitler meets Franco at the Hendaye railway station, on the border, to bring Spain into the war and take Gibraltar. Franco asks for French Morocco, Oran and much aid in return; the talks fail, and Spain stays out of the war, though it sends the Blue Division to fight the Soviet Union in 1941.",
+   "wikipedia": "Meeting_at_Hendaye",
+   "search": "Meeting at Hendaye 23 October 1940 Franco Hitler train station Spain enter Second World War Gibraltar French Morocco non-belligerence"
+  },
+  {
+   "id": "law-of-succession-1947",
+   "kind": "crown",
+   "year": 1947,
+   "title": "The Law of Succession makes Spain a kingdom, 1947",
+   "place": "Madrid",
+   "lonLat": [
+    -3.7,
+    40.42
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "A law approved by referendum in July 1947 declares Spain a kingdom, with Franco as head of state for life and the right to name the future king. There is no king while Franco lives; in 1969 he names Juan Carlos de Borbón as his successor.",
+   "wikipedia": "Law_of_Succession_to_the_Headship_of_the_State",
+   "search": "Law of Succession 1947 referendum Spain kingdom Franco head of state for life choose king successor Juan Carlos 1969"
+  },
+  {
+   "id": "pact-of-madrid-1953",
+   "kind": "treaty",
+   "year": 1953,
+   "title": "The Pact of Madrid with the United States, 1953",
+   "place": "Torrejón de Ardoz, near Madrid",
+   "lonLat": [
+    -3.45,
+    40.49
+   ],
+   "civs": [
+    "spain",
+    "united-states"
+   ],
+   "summary": "In the Cold War, the United States signs agreements with Franco on 23 September 1953: American air and naval bases at Torrejón, Zaragoza, Morón and Rota in exchange for economic and military aid, ending Spain's isolation since 1945.",
+   "wikipedia": "Pact_of_Madrid",
+   "search": "Pact of Madrid 23 September 1953 United States Spain bases Torrejon Rota Zaragoza Moron economic military aid Cold War Franco isolation"
+  },
+  {
+   "id": "spain-joins-un-1955",
+   "kind": "treaty",
+   "year": 1955,
+   "title": "Spain joins the United Nations, 14 December 1955",
+   "place": "Madrid",
+   "lonLat": [
+    -3.7,
+    40.42
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "Kept out in 1946 as a regime that had sided with the Axis, Spain is admitted to the United Nations on 14 December 1955 in a package deal with fifteen other states, a sign that the Western powers have come to accept Franco in the Cold War.",
+   "wikipedia": "Spain_and_the_United_Nations",
+   "search": "Spain admitted to the United Nations 14 December 1955 Franco isolation General Assembly resolution 1946 lifted 1950"
   }
  ]
 }
