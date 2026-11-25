@@ -73,7 +73,8 @@
     "MAR-3456",
     "TUN",
     "sidi-ifni",
-    "rif-jebala"
+    "rif-jebala",
+    "tetouan-1860"
    ],
    "from": 1815,
    "why": "Morocco (without Western Sahara) and Tunisia: the French protectorates until 1956, with Spain's northern zone, the Tangier International Zone, Cape Juby (Spanish until 1958) and Ifni (Spanish until 1969)"
@@ -1001,7 +1002,8 @@
       "MAR-1445",
       "spanish-morocco-taza",
       "spanish-morocco-oriental",
-      "rif-jebala"
+      "rif-jebala",
+      "tetouan-1860"
      ],
      "owner": "Spain",
      "territory": "Spanish Morocco",
@@ -4514,7 +4516,8 @@
       "MAR-1445",
       "spanish-morocco-taza",
       "spanish-morocco-oriental",
-      "rif-jebala"
+      "rif-jebala",
+      "tetouan-1860"
      ],
      "owner": "France",
      "territory": "French Morocco",
@@ -4578,7 +4581,8 @@
       "tangier-zone",
       "MAR-3456",
       "sidi-ifni",
-      "rif-jebala"
+      "rif-jebala",
+      "tetouan-1860"
      ],
      "owner": "Morocco",
      "source": {
@@ -6918,6 +6922,37 @@
    ]
   },
   {
+   "date": "1862-05-02",
+   "what": "Spain hands Tetouan back to Morocco once the war indemnity is paid",
+   "source": {
+    "title": "Hispano-Moroccan War (1859–1860) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Hispano-Moroccan_War_(1859–1860)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "tetouan-1860"
+     ],
+     "owner": "Morocco",
+     "source": {
+      "title": "Hispano-Moroccan War (1859–1860) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hispano-Moroccan_War_(1859–1860)"
+     },
+     "hatch": {
+      "by": "Spain",
+      "since": "1860-02-06",
+      "note": "Taken by the Spanish army on 6 February 1860 and held until the indemnity of the Treaty of Wad-Ras was paid",
+      "source": {
+       "title": "Hispano-Moroccan War (1859–1860) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Hispano-Moroccan_War_(1859–1860)"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
    "date": "1862-01-01",
    "what": "Chiefs of Cape Lopez and the Ogooué mouth sign treaties placing the coast south of the Gabon estuary under France",
    "source": {
@@ -7044,6 +7079,27 @@
        "title": "Cochinchina campaign (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Cochinchina_campaign"
       }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1860-02-06",
+   "what": "The Spanish army takes Tetouan",
+   "source": {
+    "title": "Hispano-Moroccan War (1859–1860) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Hispano-Moroccan_War_(1859–1860)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "tetouan-1860"
+     ],
+     "owner": "Morocco",
+     "source": {
+      "title": "Morocco (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Morocco"
      }
     }
    ]
