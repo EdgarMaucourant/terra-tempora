@@ -2313,7 +2313,16 @@
     1955
    ],
    "realm": "Spanish Morocco",
-   "why": "Capital of the Spanish protectorate until April 1956"
+   "why": "Capital of the Spanish protectorate until April 1956",
+   "heldBy": [
+    {
+     "years": [
+      1936,
+      1938
+     ],
+     "by": "Nationalist Spain"
+    }
+   ]
   },
   {
    "place": "Tétouan",
@@ -2352,7 +2361,16 @@
     1955
    ],
    "realm": "Spanish Morocco",
-   "why": "Spanish protectorate until April 1956"
+   "why": "Spanish protectorate until April 1956",
+   "heldBy": [
+    {
+     "years": [
+      1936,
+      1938
+     ],
+     "by": "Nationalist Spain"
+    }
+   ]
   },
   {
    "place": "Nador",
@@ -2452,7 +2470,16 @@
     1957
    ],
    "realm": "Cape Juby",
-   "why": "Spanish until 10 April 1958"
+   "why": "Spanish until 10 April 1958",
+   "heldBy": [
+    {
+     "years": [
+      1936,
+      1938
+     ],
+     "by": "Nationalist Spain"
+    }
+   ]
   },
   {
    "place": "Tarfaya",
@@ -2504,7 +2531,16 @@
     1968
    ],
    "realm": "Ifni",
-   "why": "Spanish until 30 June 1969"
+   "why": "Spanish until 30 June 1969",
+   "heldBy": [
+    {
+     "years": [
+      1936,
+      1938
+     ],
+     "by": "Nationalist Spain"
+    }
+   ]
   },
   {
    "place": "Sidi Ifni",
@@ -15106,7 +15142,7 @@
     40.42
    ],
    "years": [
-    1956,
+    1931,
     2026
    ],
    "realm": "Spain",
@@ -15119,7 +15155,7 @@
     35.89
    ],
    "years": [
-    1956,
+    1939,
     2026
    ],
    "realm": "Spain",
@@ -15132,7 +15168,7 @@
     28.12
    ],
    "years": [
-    1956,
+    1939,
     2026
    ],
    "realm": "Spain",
@@ -15145,7 +15181,7 @@
     39.57
    ],
    "years": [
-    1956,
+    1939,
     2026
    ],
    "realm": "Spain",
@@ -15158,7 +15194,7 @@
     27.15
    ],
    "years": [
-    1956,
+    1939,
     1975
    ],
    "realm": "Spain",
@@ -15250,7 +15286,7 @@
     26.35
    ],
    "years": [
-    1956,
+    1939,
     1975
    ],
    "realm": "Spain",
@@ -15263,7 +15299,7 @@
     3.75
    ],
    "years": [
-    1956,
+    1939,
     1967
    ],
    "realm": "Spain",
@@ -15289,7 +15325,7 @@
     1.86
    ],
    "years": [
-    1956,
+    1939,
     1967
    ],
    "realm": "Spain",
@@ -15323,6 +15359,13 @@
    "heldBy": [
     {
      "years": [
+      1936,
+      1938
+     ],
+     "by": "Nationalist Spain"
+    },
+    {
+     "years": [
       1957,
       1957
      ],
@@ -15342,6 +15385,133 @@
    ],
    "realm": "Morocco",
    "why": "Moroccan since the Angra de Cintra agreement of April 1958"
+  },
+  {
+   "place": "Burgos (Nationalist)",
+   "lonLat": [
+    -3.7,
+    42.34
+   ],
+   "years": [
+    1931,
+    2026
+   ],
+   "realm": "Spain",
+   "why": "Seat of the Nationalist junta from July 1936",
+   "heldBy": [
+    {
+     "years": [
+      1936,
+      1938
+     ],
+     "by": "Nationalist Spain"
+    }
+   ]
+  },
+  {
+   "place": "Bilbao (fell 1937)",
+   "lonLat": [
+    -2.93,
+    43.26
+   ],
+   "years": [
+    1931,
+    2026
+   ],
+   "realm": "Spain",
+   "why": "Republican until June 1937",
+   "heldBy": [
+    {
+     "years": [
+      1937,
+      1938
+     ],
+     "by": "Nationalist Spain"
+    }
+   ]
+  },
+  {
+   "place": "Barcelona (fell 1939)",
+   "lonLat": [
+    2.17,
+    41.39
+   ],
+   "years": [
+    1931,
+    2026
+   ],
+   "realm": "Spain",
+   "why": "Republican until January 1939"
+  },
+  {
+   "place": "Valencia (Republican)",
+   "lonLat": [
+    -0.38,
+    39.47
+   ],
+   "years": [
+    1931,
+    2026
+   ],
+   "realm": "Spain",
+   "why": "Republican until the end of March 1939"
+  },
+  {
+   "place": "Zaragoza (Nationalist)",
+   "lonLat": [
+    -0.88,
+    41.65
+   ],
+   "years": [
+    1931,
+    2026
+   ],
+   "realm": "Spain",
+   "why": "Held by the Nationalists from July 1936",
+   "heldBy": [
+    {
+     "years": [
+      1936,
+      1938
+     ],
+     "by": "Nationalist Spain"
+    }
+   ]
+  },
+  {
+   "place": "Smara (before 1934)",
+   "lonLat": [
+    -11.67,
+    26.74
+   ],
+   "years": [
+    1931,
+    1933
+   ],
+   "realm": null,
+   "why": "Not held by Spain before May 1934"
+  },
+  {
+   "place": "Smara (Spanish Sahara)",
+   "lonLat": [
+    -11.67,
+    26.74
+   ],
+   "years": [
+    1934,
+    1975
+   ],
+   "realm": "Spain",
+   "why": "Occupied on 15 May 1934",
+   "heldBy": [
+    {
+     "years": [
+      1936,
+      1938
+     ],
+     "by": "Nationalist Spain"
+    }
+   ]
   }
  ]
 }
