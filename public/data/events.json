@@ -12647,6 +12647,43 @@
    "summary": "After eight referendums, Palau approves its Compact of Free Association with the United States and becomes independent on 1 October 1994. It was the last of the UN trust territories; the Trusteeship Council suspends its work weeks later.",
    "wikipedia": "Palau",
    "search": "Palau independence 1 October 1994 Compact of Free Association last UN trust territory Trusteeship Council suspended"
+  },
+  {
+   "id": "melilla-war-tragic-week-1909",
+   "kind": "war",
+   "year": 1909,
+   "title": "The Melilla War and the Tragic Week, 1909",
+   "place": "Melilla",
+   "lonLat": [
+    -2.94,
+    35.29
+   ],
+   "civs": [
+    "spain",
+    "morocco"
+   ],
+   "summary": "In July 1909 Rif tribesmen attack the workers of a Spanish mining railway near Melilla, and Spain calls up reservists, many of them fathers from Barcelona. Their departure sets off the Tragic Week in Barcelona, a week of riots and burnt churches, harshly put down. Spain loses over a thousand men at the Barranco del Lobo before taking the hills around Melilla, and the execution of the educator Francisco Ferrer brings down Maura's government.",
+   "wikipedia": "Second_Melillan_campaign",
+   "search": "Second Melillan campaign 1909 Barranco del Lobo Rif Gurugu reservists Tragic Week Barcelona July 1909 Ferrer execution Maura falls"
+  },
+  {
+   "id": "alhucemas-landing-1925",
+   "kind": "battle",
+   "year": 1925,
+   "title": "The Alhucemas landing, September 1925",
+   "place": "Al Hoceima (Alhucemas)",
+   "lonLat": [
+    -3.93,
+    35.25
+   ],
+   "civs": [
+    "spain",
+    "spanish-morocco",
+    "france"
+   ],
+   "summary": "On 8 September 1925 Spanish troops, backed by the French fleet, land in the bay of Alhucemas, in the heart of the Rif, while France attacks from the south. They take Abd el-Krim's capital Ajdir in October. It is one of the first great amphibious landings with tanks and aircraft, and it seals the end of the Rif Republic, which surrenders in May 1926.",
+   "wikipedia": "Alhucemas_landing",
+   "search": "Alhucemas landing 8 September 1925 Al Hoceima Primo de Rivera Sanjurjo Franco amphibious France Rif War Abd el-Krim Ajdir"
   }
  ]
 }
