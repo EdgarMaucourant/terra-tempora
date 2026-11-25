@@ -12149,6 +12149,268 @@
    "summary": "On 11 July 2002 a handful of Moroccan soldiers land on Perejil, an uninhabited islet off the Moroccan coast near Ceuta that both countries claim. Spanish special forces remove them on 17 July without a shot, and US mediation restores the earlier state: nobody stays on the island.",
    "wikipedia": "Perejil_Island_crisis",
    "search": "Perejil Island crisis July 2002 Leila Moroccan soldiers Spain Operation Romeo-Sierra Ceuta Colin Powell mediation status quo"
+  },
+  {
+   "id": "second-spanish-republic-1931",
+   "kind": "revolution",
+   "year": 1931,
+   "title": "The Second Republic is proclaimed, 14 April 1931",
+   "place": "Madrid",
+   "lonLat": [
+    -3.7,
+    40.42
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "Republicans sweep the cities in the municipal elections of 12 April 1931. Two days later the Second Republic is proclaimed and King Alfonso XIII leaves Spain without abdicating. Its constitution of December 1931 gives women the vote, separates church and state and lets Catalonia govern itself.",
+   "wikipedia": "Second_Spanish_Republic",
+   "search": "Second Spanish Republic proclaimed 14 April 1931 municipal elections Alfonso XIII exile Niceto Alcala-Zamora Constitution 1931 Catalonia autonomy"
+  },
+  {
+   "id": "spain-occupies-smara-1934",
+   "kind": "empire",
+   "year": 1934,
+   "title": "Spain occupies the interior of Spanish Sahara, 1934",
+   "place": "Smara",
+   "lonLat": [
+    -11.67,
+    26.74
+   ],
+   "civs": [
+    "spain",
+    "spanish-sahara"
+   ],
+   "summary": "For fifty years Spain held only a few posts on the coast of its Saharan colony, such as Villa Cisneros. In 1934, just after taking Ifni, a column of Saharan troops from Cape Juby occupies Daora on 1 May and Smara on 15 May; by the end of the year Spain holds the whole territory.",
+   "wikipedia": "Spanish_Sahara",
+   "search": "Spanish Sahara 1934 occupation Smara Daora Galo Bullon Cape Juby Saguia el-Hamra interior Rio de Oro Villa Cisneros"
+  },
+  {
+   "id": "spanish-civil-war-1936",
+   "kind": "war",
+   "year": 1936,
+   "to": 1939,
+   "title": "The Spanish Civil War, 1936 – 1939",
+   "place": "Burgos",
+   "lonLat": [
+    -3.7,
+    42.34
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "On 17-18 July 1936 army officers rise against the Republic. The coup fails in Madrid and Barcelona but takes the north-west, Old Castile, western Andalusia, Morocco and the islands, splitting Spain in two. Franco becomes the Nationalists' head of state at Burgos in October 1936. Helped by Germany and Italy, while the Soviet Union and the International Brigades help the Republic, the Nationalists win after nearly three years and some 500,000 deaths.",
+   "wikipedia": "Spanish_Civil_War",
+   "search": "Spanish Civil War 1936 1939 coup 17 18 July 1936 Franco Mola Nationalists Republic Burgos junta Germany Italy Soviet Union International Brigades"
+  },
+  {
+   "id": "war-in-the-north-1937",
+   "kind": "war",
+   "year": 1937,
+   "title": "The Nationalists take the Republican north, 1937",
+   "place": "Santander",
+   "lonLat": [
+    -3.8,
+    43.46
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "The Nationalists turn on the Republican strip along the Bay of Biscay, cut off from the rest of the Republic. Guernica is bombed by the German Condor Legion in April, Bilbao falls on 19 June, Santander in August and Gijón on 21 October 1937, giving Franco the industry and mines of the north.",
+   "wikipedia": "War_in_the_North",
+   "search": "War in the North 1937 Bilbao Biscay Basque Country Guernica Iron Ring Santander Asturias Gijón Nationalists Republic northern front"
+  },
+  {
+   "id": "aragon-offensive-1938",
+   "kind": "war",
+   "year": 1938,
+   "title": "The Nationalists cut the Republic in two, April 1938",
+   "place": "Vinaròs",
+   "lonLat": [
+    0.47,
+    40.47
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "After retaking Teruel, the Nationalists break through in Aragon in March 1938, take Lleida and reach the Mediterranean at Vinaròs on 15 April, cutting Catalonia off from Valencia and Madrid. They take Castellón in June; the Republic's Ebro counter-offensive that summer gains nothing lasting.",
+   "wikipedia": "Aragon_Offensive",
+   "search": "Aragon Offensive March April 1938 Nationalists reach the Mediterranean Vinaros 15 April 1938 Republic cut in two Lleida Castellon Teruel"
+  },
+  {
+   "id": "fall-of-catalonia-1939",
+   "kind": "war",
+   "year": 1939,
+   "title": "The Nationalists take Catalonia, January – February 1939",
+   "place": "Barcelona",
+   "lonLat": [
+    2.17,
+    41.39
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "The Nationalist offensive of December 1938 overwhelms Catalonia. Barcelona falls on 26 January 1939 and Nationalist troops reach the French border on 10 February, while some 450,000 refugees, soldiers and the Republican government flee to France in the Retirada.",
+   "wikipedia": "Catalonia_Offensive",
+   "search": "Catalonia Offensive December 1938 February 1939 fall of Barcelona 26 January 1939 Retirada refugees France border Girona"
+  },
+  {
+   "id": "end-of-civil-war-1939",
+   "kind": "crown",
+   "year": 1939,
+   "title": "Franco wins the Civil War, 1 April 1939",
+   "place": "Madrid",
+   "lonLat": [
+    -3.7,
+    40.42
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "After a coup within the Republican side, Madrid surrenders on 28 March 1939 and Valencia and the last Republican ports soon after. On 1 April Franco declares the war over. He rules Spain as dictator until his death in 1975; tens of thousands of Republicans are executed and hundreds of thousands imprisoned or exiled.",
+   "wikipedia": "Francoist_Spain",
+   "search": "End of the Spanish Civil War 1 April 1939 Franco victory Madrid falls 28 March 1939 Casado coup Francoist dictatorship repression"
+  },
+  {
+   "id": "spain-occupies-tangier-1940",
+   "kind": "empire",
+   "year": 1940,
+   "to": 1945,
+   "title": "Spain occupies Tangier, June 1940",
+   "place": "Tangier",
+   "lonLat": [
+    -5.81,
+    35.78
+   ],
+   "civs": [
+    "spain",
+    "tangier-international-zone"
+   ],
+   "summary": "On 14 June 1940, the day the Germans enter Paris, Spanish troops from Morocco occupy the Tangier International Zone. Franco soon joins it to Spanish Morocco, but has to leave in October 1945 when the Allies restore the international zone.",
+   "wikipedia": "Tangier_International_Zone",
+   "search": "Spanish occupation of Tangier 14 June 1940 Franco international zone annexed Spanish Morocco 1945 restored"
+  },
+  {
+   "id": "revolution-of-1934",
+   "kind": "revolution",
+   "year": 1934,
+   "title": "The October Revolution of 1934",
+   "place": "Oviedo",
+   "lonLat": [
+    -5.85,
+    43.36
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "When the right-wing CEDA joins the government in October 1934, the left calls a general strike. In Asturias armed miners take most of the province and hold Oviedo for two weeks until troops from Africa, directed by Franco, crush them, leaving some 1,500 dead; in Barcelona Lluís Companys proclaims a Catalan State that the army ends in ten hours.",
+   "wikipedia": "Revolution_of_1934",
+   "search": "Revolution of 1934 October Asturian miners strike Oviedo Catalan State Companys proclamation Franco army Africa repression general strike"
+  },
+  {
+   "id": "bombing-of-guernica-1937",
+   "kind": "battle",
+   "year": 1937,
+   "title": "The bombing of Guernica, 26 April 1937",
+   "place": "Guernica",
+   "lonLat": [
+    -2.68,
+    43.31
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "On a market day, 26 April 1937, German planes of the Condor Legion and Italian bombers destroy the Basque town of Guernica for Franco, killing hundreds of civilians. The attack shocks the world and inspires Picasso's painting Guernica.",
+   "wikipedia": "Bombing_of_Guernica",
+   "search": "Bombing of Guernica 26 April 1937 Condor Legion Italian Aviazione Legionaria Basque town market day Picasso Guernica painting"
+  },
+  {
+   "id": "battle-of-the-ebro-1938",
+   "kind": "battle",
+   "year": 1938,
+   "to": 1938,
+   "title": "The Battle of the Ebro, July – November 1938",
+   "place": "Gandesa",
+   "lonLat": [
+    0.52,
+    41.05
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "On 25 July 1938 the Republican army crosses the Ebro to reconnect Catalonia with the rest of the Republic. Stopped at Gandesa, it is worn down in nearly four months of fighting and pulls back across the river in November, the longest and bloodiest battle of the war; it leaves the Republic too weak to defend Catalonia.",
+   "wikipedia": "Battle_of_the_Ebro",
+   "search": "Battle of the Ebro July November 1938 Republican offensive crossing Gandesa Popular Army Modesto longest battle Spanish Civil War"
+  },
+  {
+   "id": "hendaye-meeting-1940",
+   "kind": "treaty",
+   "year": 1940,
+   "title": "Franco meets Hitler at Hendaye, 23 October 1940",
+   "place": "Hendaye, on the French border at Irun",
+   "lonLat": [
+    -1.79,
+    43.34
+   ],
+   "civs": [
+    "spain",
+    "germany"
+   ],
+   "summary": "Hitler meets Franco at the Hendaye railway station, on the border, to bring Spain into the war and take Gibraltar. Franco asks for French Morocco, Oran and much aid in return; the talks fail, and Spain stays out of the war, though it sends the Blue Division to fight the Soviet Union in 1941.",
+   "wikipedia": "Meeting_at_Hendaye",
+   "search": "Meeting at Hendaye 23 October 1940 Franco Hitler train station Spain enter Second World War Gibraltar French Morocco non-belligerence"
+  },
+  {
+   "id": "law-of-succession-1947",
+   "kind": "crown",
+   "year": 1947,
+   "title": "The Law of Succession makes Spain a kingdom, 1947",
+   "place": "Madrid",
+   "lonLat": [
+    -3.7,
+    40.42
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "A law approved by referendum in July 1947 declares Spain a kingdom, with Franco as head of state for life and the right to name the future king. There is no king while Franco lives; in 1969 he names Juan Carlos de Borbón as his successor.",
+   "wikipedia": "Law_of_Succession_to_the_Headship_of_the_State",
+   "search": "Law of Succession 1947 referendum Spain kingdom Franco head of state for life choose king successor Juan Carlos 1969"
+  },
+  {
+   "id": "pact-of-madrid-1953",
+   "kind": "treaty",
+   "year": 1953,
+   "title": "The Pact of Madrid with the United States, 1953",
+   "place": "Torrejón de Ardoz, near Madrid",
+   "lonLat": [
+    -3.45,
+    40.49
+   ],
+   "civs": [
+    "spain",
+    "united-states"
+   ],
+   "summary": "In the Cold War, the United States signs agreements with Franco on 23 September 1953: American air and naval bases at Torrejón, Zaragoza, Morón and Rota in exchange for economic and military aid, ending Spain's isolation since 1945.",
+   "wikipedia": "Pact_of_Madrid",
+   "search": "Pact of Madrid 23 September 1953 United States Spain bases Torrejon Rota Zaragoza Moron economic military aid Cold War Franco isolation"
+  },
+  {
+   "id": "spain-joins-un-1955",
+   "kind": "treaty",
+   "year": 1955,
+   "title": "Spain joins the United Nations, 14 December 1955",
+   "place": "Madrid",
+   "lonLat": [
+    -3.7,
+    40.42
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "Kept out in 1946 as a regime that had sided with the Axis, Spain is admitted to the United Nations on 14 December 1955 in a package deal with fifteen other states, a sign that the Western powers have come to accept Franco in the Cold War.",
+   "wikipedia": "Spain_and_the_United_Nations",
+   "search": "Spain admitted to the United Nations 14 December 1955 Franco isolation General Assembly resolution 1946 lifted 1950"
   }
  ]
 }

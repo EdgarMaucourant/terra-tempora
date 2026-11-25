@@ -1278,6 +1278,14 @@
     },
     "rough": true
    }
+  },
+  "ESP-5842": {
+   "owner": "Spain",
+   "territory": "Canary Islands"
+  },
+  "ESP-5829": {
+   "owner": "Spain",
+   "territory": "Canary Islands"
   }
  }
 }

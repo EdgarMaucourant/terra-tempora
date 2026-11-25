@@ -6,7 +6,7 @@
    "pieces": [
     "ESP"
    ],
-   "from": 1956,
+   "from": 1931,
    "why": "Spain with the Balearic and Canary Islands, Ceuta and Melilla"
   },
   {
@@ -16,14 +16,14 @@
     "western-sahara-3457",
     "western-sahara-3469"
    ],
-   "from": 1956,
+   "from": 1931,
    "why": "Western Sahara: Spanish Sahara until 1976, then held by Morocco west of its sand wall (and by Mauritania in the south until 1979)"
   },
   {
    "pieces": [
     "GNQ"
    ],
-   "from": 1956,
+   "from": 1931,
    "why": "Equatorial Guinea: Spanish Guinea (Fernando Po, Annobón and Río Muni) until 1968"
   }
  ],
@@ -158,6 +158,2269 @@
       "url": "https://en.wikipedia.org/wiki/Ifni"
      },
      "territory": "Ifni"
+    }
+   ]
+  },
+  {
+   "date": "1939-04-01",
+   "what": "Franco declares the Civil War over after taking Madrid, Valencia and the last Republican land",
+   "source": {
+    "title": "Spanish Civil War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "ESP-5827",
+      "ESP-5832",
+      "ESP-5838",
+      "ESP-5840",
+      "ESP-5830",
+      "ESP-5852",
+      "ESP-5841",
+      "ESP-5850",
+      "ESP-5839",
+      "ESP-5810",
+      "ESP-5845",
+      "ESP-5843",
+      "ESP-5806",
+      "ESP-5811",
+      "ESP-5807",
+      "ESP-5837",
+      "ESP-5801",
+      "ESP-5823",
+      "ESP-5828",
+      "ESP-5853",
+      "ESP-5847",
+      "ESP-5844",
+      "ESP-5812",
+      "ESP-5824",
+      "ESP-5817",
+      "ESP-5821",
+      "ESP-5848",
+      "ESP-5808",
+      "ESP-5815",
+      "ESP-5835"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5842",
+      "ESP-5829"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     },
+     "territory": "Canary Islands"
+    },
+    {
+     "pieces": [
+      "ESP-5834"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1937-02-08",
+      "note": "Held by the Nationalists under Franco since the fall of Málaga in February 1937, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5851"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1937-06-19",
+      "note": "Held by the Nationalists under Franco since the fall of Bilbao in June 1937, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5813"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1937-08-26",
+      "note": "Held by the Nationalists under Franco since the fall of Santander in August 1937, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5805"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1937-10-21",
+      "note": "Held by the Nationalists under Franco since the fall of Gijón in October 1937, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5825",
+      "ESP-5831"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1938-04-03",
+      "note": "Held by the Nationalists under Franco since the Aragon Offensive of spring 1938, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5814"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1938-06-14",
+      "note": "Held by the Nationalists under Franco since the fall of Castellón in June 1938, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5809",
+      "ESP-5846",
+      "ESP-5820"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1939-02-10",
+      "note": "Held by the Nationalists under Franco since the conquest of Catalonia, January–February 1939, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "MAR-1445",
+      "spanish-morocco-taza",
+      "spanish-morocco-oriental"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish protectorate in Morocco (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_protectorate_in_Morocco"
+     },
+     "territory": "Spanish Morocco",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ifni-guelmim",
+      "ifni-souss",
+      "sidi-ifni"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Ifni (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ifni"
+     },
+     "territory": "Ifni",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "cape-juby-guelmim",
+      "MAR-3456"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Cape Juby (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cape_Juby"
+     },
+     "territory": "Cape Juby",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "SAH",
+      "western-sahara-3456",
+      "western-sahara-3457",
+      "western-sahara-3469"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Sahara (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Sahara"
+     },
+     "territory": "Spanish Sahara",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "GNQ"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Guinea (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Guinea"
+     },
+     "territory": "Spanish Guinea",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-10-14",
+      "note": "Held by the Nationalists under Franco from October 1936 (Fernando Po in September), during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1939-02-10",
+   "what": "The Nationalists take Catalonia (Barcelona on 26 January)",
+   "source": {
+    "title": "Catalonia Offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Catalonia_Offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ESP-5827",
+      "ESP-5832",
+      "ESP-5838",
+      "ESP-5840",
+      "ESP-5830",
+      "ESP-5852",
+      "ESP-5841",
+      "ESP-5850",
+      "ESP-5839",
+      "ESP-5810",
+      "ESP-5845",
+      "ESP-5843",
+      "ESP-5806",
+      "ESP-5811",
+      "ESP-5807",
+      "ESP-5837",
+      "ESP-5801",
+      "ESP-5823",
+      "ESP-5828",
+      "ESP-5853",
+      "ESP-5847",
+      "ESP-5844",
+      "ESP-5812",
+      "ESP-5824",
+      "ESP-5817",
+      "ESP-5821",
+      "ESP-5848",
+      "ESP-5808",
+      "ESP-5815",
+      "ESP-5835"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5842",
+      "ESP-5829"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     },
+     "territory": "Canary Islands"
+    },
+    {
+     "pieces": [
+      "ESP-5834"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1937-02-08",
+      "note": "Held by the Nationalists under Franco since the fall of Málaga in February 1937, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5851"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1937-06-19",
+      "note": "Held by the Nationalists under Franco since the fall of Bilbao in June 1937, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5813"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1937-08-26",
+      "note": "Held by the Nationalists under Franco since the fall of Santander in August 1937, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5805"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1937-10-21",
+      "note": "Held by the Nationalists under Franco since the fall of Gijón in October 1937, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5825",
+      "ESP-5831"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1938-04-03",
+      "note": "Held by the Nationalists under Franco since the Aragon Offensive of spring 1938, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5814"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1938-06-14",
+      "note": "Held by the Nationalists under Franco since the fall of Castellón in June 1938, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "MAR-1445",
+      "spanish-morocco-taza",
+      "spanish-morocco-oriental"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish protectorate in Morocco (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_protectorate_in_Morocco"
+     },
+     "territory": "Spanish Morocco",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ifni-guelmim",
+      "ifni-souss",
+      "sidi-ifni"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Ifni (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ifni"
+     },
+     "territory": "Ifni",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "cape-juby-guelmim",
+      "MAR-3456"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Cape Juby (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cape_Juby"
+     },
+     "territory": "Cape Juby",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "SAH",
+      "western-sahara-3456",
+      "western-sahara-3457",
+      "western-sahara-3469"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Sahara (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Sahara"
+     },
+     "territory": "Spanish Sahara",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "GNQ"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Guinea (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Guinea"
+     },
+     "territory": "Spanish Guinea",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-10-14",
+      "note": "Held by the Nationalists under Franco from October 1936 (Fernando Po in September), during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5809",
+      "ESP-5846",
+      "ESP-5820"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Catalonia Offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Catalonia_Offensive"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1938-06-14",
+   "what": "The Nationalists take Castellón, cutting the Republic in two",
+   "source": {
+    "title": "Levante Offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Levante_Offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ESP-5827",
+      "ESP-5832",
+      "ESP-5838",
+      "ESP-5840",
+      "ESP-5830",
+      "ESP-5852",
+      "ESP-5841",
+      "ESP-5850",
+      "ESP-5839",
+      "ESP-5810",
+      "ESP-5845",
+      "ESP-5843",
+      "ESP-5806",
+      "ESP-5811",
+      "ESP-5807",
+      "ESP-5837",
+      "ESP-5801",
+      "ESP-5823",
+      "ESP-5828",
+      "ESP-5853",
+      "ESP-5847",
+      "ESP-5844",
+      "ESP-5812",
+      "ESP-5824",
+      "ESP-5817",
+      "ESP-5821",
+      "ESP-5848",
+      "ESP-5808",
+      "ESP-5815",
+      "ESP-5835"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5842",
+      "ESP-5829"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     },
+     "territory": "Canary Islands"
+    },
+    {
+     "pieces": [
+      "ESP-5834"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1937-02-08",
+      "note": "Held by the Nationalists under Franco since the fall of Málaga in February 1937, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5851"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1937-06-19",
+      "note": "Held by the Nationalists under Franco since the fall of Bilbao in June 1937, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5813"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1937-08-26",
+      "note": "Held by the Nationalists under Franco since the fall of Santander in August 1937, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5805"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1937-10-21",
+      "note": "Held by the Nationalists under Franco since the fall of Gijón in October 1937, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5825",
+      "ESP-5831"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1938-04-03",
+      "note": "Held by the Nationalists under Franco since the Aragon Offensive of spring 1938, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "MAR-1445",
+      "spanish-morocco-taza",
+      "spanish-morocco-oriental"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish protectorate in Morocco (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_protectorate_in_Morocco"
+     },
+     "territory": "Spanish Morocco",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ifni-guelmim",
+      "ifni-souss",
+      "sidi-ifni"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Ifni (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ifni"
+     },
+     "territory": "Ifni",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "cape-juby-guelmim",
+      "MAR-3456"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Cape Juby (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cape_Juby"
+     },
+     "territory": "Cape Juby",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "SAH",
+      "western-sahara-3456",
+      "western-sahara-3457",
+      "western-sahara-3469"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Sahara (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Sahara"
+     },
+     "territory": "Spanish Sahara",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "GNQ"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Guinea (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Guinea"
+     },
+     "territory": "Spanish Guinea",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-10-14",
+      "note": "Held by the Nationalists under Franco from October 1936 (Fernando Po in September), during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5814"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Levante Offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Levante_Offensive"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1938-04-03",
+   "what": "The Aragon Offensive: the Nationalists take eastern Aragon and Lleida",
+   "source": {
+    "title": "Aragon Offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Aragon_Offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ESP-5827",
+      "ESP-5832",
+      "ESP-5838",
+      "ESP-5840",
+      "ESP-5830",
+      "ESP-5852",
+      "ESP-5841",
+      "ESP-5850",
+      "ESP-5839",
+      "ESP-5810",
+      "ESP-5845",
+      "ESP-5843",
+      "ESP-5806",
+      "ESP-5811",
+      "ESP-5807",
+      "ESP-5837",
+      "ESP-5801",
+      "ESP-5823",
+      "ESP-5828",
+      "ESP-5853",
+      "ESP-5847",
+      "ESP-5844",
+      "ESP-5812",
+      "ESP-5824",
+      "ESP-5817",
+      "ESP-5821",
+      "ESP-5848",
+      "ESP-5808",
+      "ESP-5815",
+      "ESP-5835"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5842",
+      "ESP-5829"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     },
+     "territory": "Canary Islands"
+    },
+    {
+     "pieces": [
+      "ESP-5834"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1937-02-08",
+      "note": "Held by the Nationalists under Franco since the fall of Málaga in February 1937, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5851"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1937-06-19",
+      "note": "Held by the Nationalists under Franco since the fall of Bilbao in June 1937, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5813"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1937-08-26",
+      "note": "Held by the Nationalists under Franco since the fall of Santander in August 1937, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5805"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1937-10-21",
+      "note": "Held by the Nationalists under Franco since the fall of Gijón in October 1937, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "MAR-1445",
+      "spanish-morocco-taza",
+      "spanish-morocco-oriental"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish protectorate in Morocco (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_protectorate_in_Morocco"
+     },
+     "territory": "Spanish Morocco",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ifni-guelmim",
+      "ifni-souss",
+      "sidi-ifni"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Ifni (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ifni"
+     },
+     "territory": "Ifni",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "cape-juby-guelmim",
+      "MAR-3456"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Cape Juby (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cape_Juby"
+     },
+     "territory": "Cape Juby",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "SAH",
+      "western-sahara-3456",
+      "western-sahara-3457",
+      "western-sahara-3469"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Sahara (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Sahara"
+     },
+     "territory": "Spanish Sahara",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "GNQ"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Guinea (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Guinea"
+     },
+     "territory": "Spanish Guinea",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-10-14",
+      "note": "Held by the Nationalists under Franco from October 1936 (Fernando Po in September), during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5825",
+      "ESP-5831"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Aragon Offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Aragon_Offensive"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1937-10-21",
+   "what": "The Nationalists take Gijón, ending the war in the north",
+   "source": {
+    "title": "Asturias Offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Asturias_Offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ESP-5827",
+      "ESP-5832",
+      "ESP-5838",
+      "ESP-5840",
+      "ESP-5830",
+      "ESP-5852",
+      "ESP-5841",
+      "ESP-5850",
+      "ESP-5839",
+      "ESP-5810",
+      "ESP-5845",
+      "ESP-5843",
+      "ESP-5806",
+      "ESP-5811",
+      "ESP-5807",
+      "ESP-5837",
+      "ESP-5801",
+      "ESP-5823",
+      "ESP-5828",
+      "ESP-5853",
+      "ESP-5847",
+      "ESP-5844",
+      "ESP-5812",
+      "ESP-5824",
+      "ESP-5817",
+      "ESP-5821",
+      "ESP-5848",
+      "ESP-5808",
+      "ESP-5815",
+      "ESP-5835"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5842",
+      "ESP-5829"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     },
+     "territory": "Canary Islands"
+    },
+    {
+     "pieces": [
+      "ESP-5834"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1937-02-08",
+      "note": "Held by the Nationalists under Franco since the fall of Málaga in February 1937, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5851"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1937-06-19",
+      "note": "Held by the Nationalists under Franco since the fall of Bilbao in June 1937, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5813"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1937-08-26",
+      "note": "Held by the Nationalists under Franco since the fall of Santander in August 1937, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "MAR-1445",
+      "spanish-morocco-taza",
+      "spanish-morocco-oriental"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish protectorate in Morocco (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_protectorate_in_Morocco"
+     },
+     "territory": "Spanish Morocco",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ifni-guelmim",
+      "ifni-souss",
+      "sidi-ifni"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Ifni (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ifni"
+     },
+     "territory": "Ifni",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "cape-juby-guelmim",
+      "MAR-3456"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Cape Juby (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cape_Juby"
+     },
+     "territory": "Cape Juby",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "SAH",
+      "western-sahara-3456",
+      "western-sahara-3457",
+      "western-sahara-3469"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Sahara (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Sahara"
+     },
+     "territory": "Spanish Sahara",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "GNQ"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Guinea (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Guinea"
+     },
+     "territory": "Spanish Guinea",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-10-14",
+      "note": "Held by the Nationalists under Franco from October 1936 (Fernando Po in September), during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5805"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Asturias Offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Asturias_Offensive"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1937-08-26",
+   "what": "The Nationalists take Santander",
+   "source": {
+    "title": "Battle of Santander (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Santander"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ESP-5827",
+      "ESP-5832",
+      "ESP-5838",
+      "ESP-5840",
+      "ESP-5830",
+      "ESP-5852",
+      "ESP-5841",
+      "ESP-5850",
+      "ESP-5839",
+      "ESP-5810",
+      "ESP-5845",
+      "ESP-5843",
+      "ESP-5806",
+      "ESP-5811",
+      "ESP-5807",
+      "ESP-5837",
+      "ESP-5801",
+      "ESP-5823",
+      "ESP-5828",
+      "ESP-5853",
+      "ESP-5847",
+      "ESP-5844",
+      "ESP-5812",
+      "ESP-5824",
+      "ESP-5817",
+      "ESP-5821",
+      "ESP-5848",
+      "ESP-5808",
+      "ESP-5815",
+      "ESP-5835"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5842",
+      "ESP-5829"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     },
+     "territory": "Canary Islands"
+    },
+    {
+     "pieces": [
+      "ESP-5834"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1937-02-08",
+      "note": "Held by the Nationalists under Franco since the fall of Málaga in February 1937, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5851"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1937-06-19",
+      "note": "Held by the Nationalists under Franco since the fall of Bilbao in June 1937, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "MAR-1445",
+      "spanish-morocco-taza",
+      "spanish-morocco-oriental"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish protectorate in Morocco (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_protectorate_in_Morocco"
+     },
+     "territory": "Spanish Morocco",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ifni-guelmim",
+      "ifni-souss",
+      "sidi-ifni"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Ifni (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ifni"
+     },
+     "territory": "Ifni",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "cape-juby-guelmim",
+      "MAR-3456"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Cape Juby (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cape_Juby"
+     },
+     "territory": "Cape Juby",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "SAH",
+      "western-sahara-3456",
+      "western-sahara-3457",
+      "western-sahara-3469"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Sahara (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Sahara"
+     },
+     "territory": "Spanish Sahara",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "GNQ"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Guinea (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Guinea"
+     },
+     "territory": "Spanish Guinea",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-10-14",
+      "note": "Held by the Nationalists under Franco from October 1936 (Fernando Po in September), during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5813"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Battle of Santander (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Santander"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1937-06-19",
+   "what": "The Nationalists take Bilbao and Biscay",
+   "source": {
+    "title": "Bilbao campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Bilbao_campaign"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ESP-5827",
+      "ESP-5832",
+      "ESP-5838",
+      "ESP-5840",
+      "ESP-5830",
+      "ESP-5852",
+      "ESP-5841",
+      "ESP-5850",
+      "ESP-5839",
+      "ESP-5810",
+      "ESP-5845",
+      "ESP-5843",
+      "ESP-5806",
+      "ESP-5811",
+      "ESP-5807",
+      "ESP-5837",
+      "ESP-5801",
+      "ESP-5823",
+      "ESP-5828",
+      "ESP-5853",
+      "ESP-5847",
+      "ESP-5844",
+      "ESP-5812",
+      "ESP-5824",
+      "ESP-5817",
+      "ESP-5821",
+      "ESP-5848",
+      "ESP-5808",
+      "ESP-5815",
+      "ESP-5835"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5842",
+      "ESP-5829"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     },
+     "territory": "Canary Islands"
+    },
+    {
+     "pieces": [
+      "ESP-5834"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1937-02-08",
+      "note": "Held by the Nationalists under Franco since the fall of Málaga in February 1937, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "MAR-1445",
+      "spanish-morocco-taza",
+      "spanish-morocco-oriental"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish protectorate in Morocco (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_protectorate_in_Morocco"
+     },
+     "territory": "Spanish Morocco",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ifni-guelmim",
+      "ifni-souss",
+      "sidi-ifni"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Ifni (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ifni"
+     },
+     "territory": "Ifni",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "cape-juby-guelmim",
+      "MAR-3456"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Cape Juby (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cape_Juby"
+     },
+     "territory": "Cape Juby",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "SAH",
+      "western-sahara-3456",
+      "western-sahara-3457",
+      "western-sahara-3469"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Sahara (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Sahara"
+     },
+     "territory": "Spanish Sahara",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "GNQ"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Guinea (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Guinea"
+     },
+     "territory": "Spanish Guinea",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-10-14",
+      "note": "Held by the Nationalists under Franco from October 1936 (Fernando Po in September), during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5851"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Bilbao campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bilbao_campaign"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1937-02-08",
+   "what": "The Nationalists take Málaga",
+   "source": {
+    "title": "Battle of Málaga (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Málaga"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ESP-5827",
+      "ESP-5832",
+      "ESP-5838",
+      "ESP-5840",
+      "ESP-5830",
+      "ESP-5852",
+      "ESP-5841",
+      "ESP-5850",
+      "ESP-5839",
+      "ESP-5810",
+      "ESP-5845",
+      "ESP-5843",
+      "ESP-5806",
+      "ESP-5811",
+      "ESP-5807",
+      "ESP-5837",
+      "ESP-5801",
+      "ESP-5823",
+      "ESP-5828",
+      "ESP-5853",
+      "ESP-5847",
+      "ESP-5844",
+      "ESP-5812",
+      "ESP-5824",
+      "ESP-5817",
+      "ESP-5821",
+      "ESP-5848",
+      "ESP-5808",
+      "ESP-5815",
+      "ESP-5835"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5842",
+      "ESP-5829"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War"
+     },
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     },
+     "territory": "Canary Islands"
+    },
+    {
+     "pieces": [
+      "MAR-1445",
+      "spanish-morocco-taza",
+      "spanish-morocco-oriental"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish protectorate in Morocco (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_protectorate_in_Morocco"
+     },
+     "territory": "Spanish Morocco",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ifni-guelmim",
+      "ifni-souss",
+      "sidi-ifni"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Ifni (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ifni"
+     },
+     "territory": "Ifni",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "cape-juby-guelmim",
+      "MAR-3456"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Cape Juby (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cape_Juby"
+     },
+     "territory": "Cape Juby",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "SAH",
+      "western-sahara-3456",
+      "western-sahara-3457",
+      "western-sahara-3469"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Sahara (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Sahara"
+     },
+     "territory": "Spanish Sahara",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-07-18",
+      "note": "Held by the Nationalists under Franco since the uprising of July 1936, during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "GNQ"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Guinea (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Guinea"
+     },
+     "territory": "Spanish Guinea",
+     "hatch": {
+      "by": "Nationalist Spain",
+      "since": "1936-10-14",
+      "note": "Held by the Nationalists under Franco from October 1936 (Fernando Po in September), during the Civil War",
+      "source": {
+       "title": "Nationalist faction (Spanish Civil War) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5834"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Battle of Málaga (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Málaga"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1936-07-18",
+   "what": "The army rises against the Republic: the Nationalists hold the north-west, Old Castile, western Andalusia, Morocco and the islands",
+   "source": {
+    "title": "Spanish coup of July 1936 (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Spanish_coup_of_July_1936"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ESP-5827",
+      "ESP-5832",
+      "ESP-5838",
+      "ESP-5840",
+      "ESP-5830",
+      "ESP-5852",
+      "ESP-5841",
+      "ESP-5850",
+      "ESP-5839",
+      "ESP-5810",
+      "ESP-5845",
+      "ESP-5843",
+      "ESP-5806",
+      "ESP-5811",
+      "ESP-5807",
+      "ESP-5837",
+      "ESP-5801",
+      "ESP-5823",
+      "ESP-5828",
+      "ESP-5853",
+      "ESP-5847",
+      "ESP-5844",
+      "ESP-5812",
+      "ESP-5824",
+      "ESP-5817",
+      "ESP-5821",
+      "ESP-5848",
+      "ESP-5808",
+      "ESP-5815",
+      "ESP-5835"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Second Spanish Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Second_Spanish_Republic"
+     }
+    },
+    {
+     "pieces": [
+      "ESP-5842",
+      "ESP-5829"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Second Spanish Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Second_Spanish_Republic"
+     },
+     "territory": "Canary Islands"
+    },
+    {
+     "pieces": [
+      "MAR-1445",
+      "spanish-morocco-taza",
+      "spanish-morocco-oriental"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish protectorate in Morocco (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_protectorate_in_Morocco"
+     },
+     "territory": "Spanish Morocco"
+    },
+    {
+     "pieces": [
+      "ifni-guelmim",
+      "ifni-souss",
+      "sidi-ifni"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Ifni (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ifni"
+     },
+     "territory": "Ifni"
+    },
+    {
+     "pieces": [
+      "cape-juby-guelmim",
+      "MAR-3456"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Cape Juby (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cape_Juby"
+     },
+     "territory": "Cape Juby"
+    },
+    {
+     "pieces": [
+      "SAH",
+      "western-sahara-3456",
+      "western-sahara-3457",
+      "western-sahara-3469"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Sahara (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Sahara"
+     },
+     "territory": "Spanish Sahara"
+    },
+    {
+     "pieces": [
+      "GNQ"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish Guinea (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Guinea"
+     },
+     "territory": "Spanish Guinea"
+    }
+   ]
+  },
+  {
+   "date": "1934-05-15",
+   "what": "Spanish troops from Cape Juby occupy Smara; by the end of 1934 Spain holds the whole of Spanish Sahara",
+   "source": {
+    "title": "Spanish Sahara (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Spanish_Sahara"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "SAH",
+      "western-sahara-3456",
+      "western-sahara-3457",
+      "western-sahara-3469"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Sahrawi people (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sahrawi_people"
+     }
     }
    ]
   }
