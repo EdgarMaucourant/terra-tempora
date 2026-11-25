@@ -2989,6 +2989,28 @@
     "detailEs": "Restauración"
    },
    {
+    "from": "1923-09-13",
+    "name": "Dictatorship of Primo de Rivera",
+    "wikipedia": "Dictatorship of Miguel Primo de Rivera",
+    "fr": "Dictature de Primo de Rivera",
+    "es": "Dictadura de Primo de Rivera",
+    "note": "Military dictatorship under King Alfonso XIII, after the coup of 13 September 1923",
+    "detail": "Primo de Rivera",
+    "detailFr": "Primo de Rivera",
+    "detailEs": "Primo de Rivera"
+   },
+   {
+    "from": "1930-01-28",
+    "name": "Restoration",
+    "wikipedia": "Restoration (Spain)",
+    "fr": "Restauration bourbonienne en Espagne",
+    "es": "Restauración borbónica en España",
+    "note": "The monarchy without a dictator, from Primo de Rivera's fall to the Republic",
+    "detail": "Restoration",
+    "detailFr": "Restauration",
+    "detailEs": "Restauración"
+   },
+   {
     "from": "1931-04-14",
     "name": "Second Spanish Republic",
     "wikipedia": "Second Spanish Republic",
@@ -4794,5 +4816,30 @@
   "wikidata": "Q5813",
   "fr": "Îles Canaries",
   "es": "Canarias"
+ },
+ "Trust Territory of the Pacific Islands": {
+  "wikipedia": "Trust Territory of the Pacific Islands",
+  "wikidata": "Q129237",
+  "fr": "Territoire sous tutelle des îles du Pacifique",
+  "es": "Territorio en fideicomiso de las Islas del Pacífico"
+ },
+ "South Seas Mandate": {
+  "wikipedia": "South Seas Mandate",
+  "wikidata": "Q718763",
+  "fr": "Mandat des îles du Pacifique",
+  "es": "Mandato del Pacífico Sur"
+ },
+ "Spanish East Indies": {
+  "wikipedia": "Spanish East Indies",
+  "wikidata": "Q910648",
+  "fr": "Indes orientales espagnoles",
+  "es": "Indias Orientales Españolas",
+  "withOwner": false
+ },
+ "Rif Republic": {
+  "wikipedia": "Republic of the Rif",
+  "wikidata": "Q37102",
+  "fr": "République du Rif",
+  "es": "República del Rif"
  }
 }
