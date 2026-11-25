@@ -15768,6 +15768,443 @@
    ],
    "realm": null,
    "why": "Inland Río Muni, occupied by Spain only in 1926"
+  },
+  {
+   "place": "Havana (Spanish)",
+   "lonLat": [
+    -82.37,
+    23.12
+   ],
+   "years": [
+    1860,
+    1898
+   ],
+   "realm": "Spain",
+   "why": "Spanish Cuba until 1 January 1899"
+  },
+  {
+   "place": "Havana (US rule)",
+   "lonLat": [
+    -82.37,
+    23.12
+   ],
+   "years": [
+    1899,
+    1901
+   ],
+   "realm": "Cuba",
+   "why": "US Military Government of Cuba 1899-1902",
+   "heldBy": [
+    {
+     "years": [
+      1899,
+      1901
+     ],
+     "by": "United States"
+    }
+   ]
+  },
+  {
+   "place": "Santiago de Cuba (1898)",
+   "lonLat": [
+    -75.9,
+    20.2
+   ],
+   "years": [
+    1898,
+    1898
+   ],
+   "realm": "Spain",
+   "why": "Surrendered to US forces 17 July 1898",
+   "heldBy": [
+    {
+     "years": [
+      1898,
+      1898
+     ],
+     "by": "United States"
+    }
+   ]
+  },
+  {
+   "place": "San Juan (Spanish)",
+   "lonLat": [
+    -66.4,
+    18.3
+   ],
+   "years": [
+    1860,
+    1897
+   ],
+   "realm": "Spain",
+   "why": "Spanish Puerto Rico until October 1898"
+  },
+  {
+   "place": "Puerto Rico (US)",
+   "lonLat": [
+    -66.4,
+    18.3
+   ],
+   "years": [
+    1898,
+    2026
+   ],
+   "realm": "United States",
+   "why": "Handed over to the United States 18 October 1898"
+  },
+  {
+   "place": "Manila (Spanish)",
+   "lonLat": [
+    121.0,
+    14.6
+   ],
+   "years": [
+    1860,
+    1897
+   ],
+   "realm": "Spain",
+   "why": "Capital of the Spanish East Indies"
+  },
+  {
+   "place": "Manila (1898)",
+   "lonLat": [
+    121.0,
+    14.6
+   ],
+   "years": [
+    1898,
+    1898
+   ],
+   "realm": "Spain",
+   "why": "Taken by US forces 13 August 1898",
+   "heldBy": [
+    {
+     "years": [
+      1898,
+      1898
+     ],
+     "by": "United States"
+    }
+   ]
+  },
+  {
+   "place": "Manila (US)",
+   "lonLat": [
+    121.0,
+    14.6
+   ],
+   "years": [
+    1899,
+    1941
+   ],
+   "realm": "United States",
+   "why": "US Philippines"
+  },
+  {
+   "place": "Manila (Japanese)",
+   "lonLat": [
+    121.0,
+    14.6
+   ],
+   "years": [
+    1942,
+    1944
+   ],
+   "realm": "United States",
+   "why": "Occupied by Japan 1942-45",
+   "heldBy": [
+    {
+     "years": [
+      1942,
+      1944
+     ],
+     "by": "Japan"
+    }
+   ]
+  },
+  {
+   "place": "Manila (independent)",
+   "lonLat": [
+    121.0,
+    14.6
+   ],
+   "years": [
+    1946,
+    2026
+   ],
+   "realm": "Philippines",
+   "why": "Independent since 4 July 1946"
+  },
+  {
+   "place": "Malolos (1898)",
+   "lonLat": [
+    120.95,
+    15.0
+   ],
+   "years": [
+    1898,
+    1898
+   ],
+   "realm": "Spain",
+   "why": "Seat of the Philippine Republic",
+   "heldBy": [
+    {
+     "years": [
+      1898,
+      1898
+     ],
+     "by": "Philippine Republic"
+    }
+   ]
+  },
+  {
+   "place": "Cebu (Spanish)",
+   "lonLat": [
+    123.85,
+    10.4
+   ],
+   "years": [
+    1860,
+    1898
+   ],
+   "realm": "Spain",
+   "why": "Spanish East Indies"
+  },
+  {
+   "place": "Jolo",
+   "lonLat": [
+    121.0,
+    5.95
+   ],
+   "years": [
+    1876,
+    1898
+   ],
+   "realm": "Sultanate of Sulu",
+   "why": "Sultanate of Sulu under Spain from 1876",
+   "heldBy": [
+    {
+     "years": [
+      1876,
+      1898
+     ],
+     "by": "Spain"
+    }
+   ]
+  },
+  {
+   "place": "Jolo (before 1876)",
+   "lonLat": [
+    121.0,
+    5.95
+   ],
+   "years": [
+    1860,
+    1875
+   ],
+   "realm": "Sultanate of Sulu",
+   "why": "Sultanate of Sulu, independent until Spain took Jolo in 1876"
+  },
+  {
+   "place": "Marawi (before 1895)",
+   "lonLat": [
+    124.3,
+    7.9
+   ],
+   "years": [
+    1860,
+    1894
+   ],
+   "realm": null,
+   "why": "Lanao sultanates, not held by Spain until 1895"
+  },
+  {
+   "place": "Hagåtña (Spanish)",
+   "lonLat": [
+    144.78,
+    13.45
+   ],
+   "years": [
+    1860,
+    1897
+   ],
+   "realm": "Spain",
+   "why": "Spanish Marianas"
+  },
+  {
+   "place": "Hagåtña (Japanese)",
+   "lonLat": [
+    144.78,
+    13.45
+   ],
+   "years": [
+    1942,
+    1943
+   ],
+   "realm": "United States",
+   "why": "Occupied by Japan 1941-44",
+   "heldBy": [
+    {
+     "years": [
+      1942,
+      1943
+     ],
+     "by": "Japan"
+    }
+   ]
+  },
+  {
+   "place": "Santo Domingo (Spanish)",
+   "lonLat": [
+    -69.9,
+    18.5
+   ],
+   "years": [
+    1861,
+    1864
+   ],
+   "realm": "Spain",
+   "why": "Annexed by Spain 1861-65"
+  },
+  {
+   "place": "Santiago de los Caballeros (1864)",
+   "lonLat": [
+    -70.7,
+    19.45
+   ],
+   "years": [
+    1863,
+    1864
+   ],
+   "realm": "Spain",
+   "why": "Seat of the Dominican rebel government",
+   "heldBy": [
+    {
+     "years": [
+      1863,
+      1864
+     ],
+     "by": "Dominican Republic"
+    }
+   ]
+  },
+  {
+   "place": "Santo Domingo (1860)",
+   "lonLat": [
+    -69.9,
+    18.5
+   ],
+   "years": [
+    1860,
+    1860
+   ],
+   "realm": "Dominican Republic",
+   "why": "Independent before the annexation of 1861"
+  },
+  {
+   "place": "Santiago de los Caballeros (US)",
+   "lonLat": [
+    -70.7,
+    19.45
+   ],
+   "years": [
+    1917,
+    1923
+   ],
+   "realm": "Dominican Republic",
+   "why": "US military government 1916-24",
+   "heldBy": [
+    {
+     "years": [
+      1917,
+      1923
+     ],
+     "by": "United States"
+    }
+   ]
+  },
+  {
+   "place": "Malabo (1860)",
+   "lonLat": [
+    8.78,
+    3.75
+   ],
+   "years": [
+    1860,
+    1897
+   ],
+   "realm": "Spain",
+   "why": "Fernando Po, Spanish"
+  },
+  {
+   "place": "Pohnpei (before 1885)",
+   "lonLat": [
+    158.21,
+    6.96
+   ],
+   "years": [
+    1860,
+    1884
+   ],
+   "realm": null,
+   "why": "Not held by Spain before 1885"
+  },
+  {
+   "place": "Saipan (1860)",
+   "lonLat": [
+    145.75,
+    15.18
+   ],
+   "years": [
+    1860,
+    1897
+   ],
+   "realm": "Spain",
+   "why": "Spanish Marianas"
+  },
+  {
+   "place": "Tétouan (1861)",
+   "lonLat": [
+    -5.37,
+    35.57
+   ],
+   "years": [
+    1860,
+    1861
+   ],
+   "realm": "Morocco",
+   "why": "Occupied by Spain 1860-62",
+   "heldBy": [
+    {
+     "years": [
+      1860,
+      1861
+     ],
+     "by": "Spain"
+    }
+   ]
+  },
+  {
+   "place": "Estella",
+   "lonLat": [
+    -2.03,
+    42.67
+   ],
+   "years": [
+    1873,
+    1875
+   ],
+   "realm": "Spain",
+   "why": "Carlist seat 1873-76",
+   "heldBy": [
+    {
+     "years": [
+      1873,
+      1875
+     ],
+     "by": "Carlist State"
+    }
+   ]
   }
  ]
 }
