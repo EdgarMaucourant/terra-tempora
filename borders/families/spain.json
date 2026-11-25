@@ -6,7 +6,7 @@
    "pieces": [
     "ESP"
    ],
-   "from": 1931,
+   "from": 1898,
    "why": "Spain with the Balearic and Canary Islands, Ceuta and Melilla"
   },
   {
@@ -16,18 +16,92 @@
     "western-sahara-3457",
     "western-sahara-3469"
    ],
-   "from": 1931,
+   "from": 1898,
    "why": "Western Sahara: Spanish Sahara until 1976, then held by Morocco west of its sand wall (and by Mauritania in the south until 1979)"
   },
   {
    "pieces": [
     "GNQ"
    ],
-   "from": 1931,
+   "from": 1898,
    "why": "Equatorial Guinea: Spanish Guinea (Fernando Po, Annobón and Río Muni) until 1968"
+  },
+  {
+   "pieces": [
+    "FSM",
+    "PLW",
+    "MNP"
+   ],
+   "from": 1898,
+   "why": "The Caroline Islands (Micronesia), Palau and the Northern Mariana Islands: Spanish until 1899, then German, Japanese (a League of Nations mandate) and a US-administered UN trust territory"
   }
  ],
  "changes": [
+  {
+   "date": "1994-10-01",
+   "what": "Palau becomes independent in free association with the United States, ending the last UN trust territory",
+   "source": {
+    "title": "Palau (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Palau"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "PLW"
+     ],
+     "owner": "United States",
+     "source": {
+      "title": "Trust Territory of the Pacific Islands (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Trust_Territory_of_the_Pacific_Islands"
+     },
+     "territory": "Trust Territory of the Pacific Islands",
+     "hatch": {
+      "by": "United Nations",
+      "since": "1947-07-18",
+      "note": "A UN strategic trust territory administered by the United States from 18 July 1947",
+      "source": {
+       "title": "Trust Territory of the Pacific Islands (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Trust_Territory_of_the_Pacific_Islands"
+      },
+      "trust": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1986-11-03",
+   "what": "The trusteeship ends for the Federated States of Micronesia, independent in free association with the United States, and for the Northern Mariana Islands, a US commonwealth",
+   "source": {
+    "title": "Federated States of Micronesia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Federated_States_of_Micronesia"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "FSM",
+      "MNP"
+     ],
+     "owner": "United States",
+     "source": {
+      "title": "Trust Territory of the Pacific Islands (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Trust_Territory_of_the_Pacific_Islands"
+     },
+     "territory": "Trust Territory of the Pacific Islands",
+     "hatch": {
+      "by": "United Nations",
+      "since": "1947-07-18",
+      "note": "A UN strategic trust territory administered by the United States from 18 July 1947",
+      "source": {
+       "title": "Trust Territory of the Pacific Islands (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Trust_Territory_of_the_Pacific_Islands"
+      },
+      "trust": true
+     }
+    }
+   ]
+  },
   {
    "date": "1979-08-11",
    "what": "Mauritania gives up its part of Western Sahara under the Algiers agreement of 5 August 1979; Morocco takes Dakhla and annexes Western Tiris",
@@ -158,6 +232,305 @@
       "url": "https://en.wikipedia.org/wiki/Ifni"
      },
      "territory": "Ifni"
+    }
+   ]
+  },
+  {
+   "date": "1947-07-18",
+   "what": "The UN Security Council places the former Japanese mandate under US trusteeship as the Trust Territory of the Pacific Islands",
+   "source": {
+    "title": "Trust Territory of the Pacific Islands (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Trust_Territory_of_the_Pacific_Islands"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MNP-4939"
+     ],
+     "owner": "Japan",
+     "source": {
+      "title": "South Seas Mandate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/South_Seas_Mandate"
+     },
+     "territory": "South Seas Mandate",
+     "hatch": {
+      "by": "United States",
+      "since": "1944-07-09",
+      "note": "Taken by US forces in the Battle of Saipan, July 1944",
+      "source": {
+       "title": "Mariana and Palau Islands campaign (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Mariana_and_Palau_Islands_campaign"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "MNP-4938"
+     ],
+     "owner": "Japan",
+     "source": {
+      "title": "South Seas Mandate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/South_Seas_Mandate"
+     },
+     "territory": "South Seas Mandate",
+     "hatch": {
+      "by": "United States",
+      "since": "1944-08-01",
+      "note": "Taken by US forces in the Battle of Tinian, August 1944",
+      "source": {
+       "title": "Mariana and Palau Islands campaign (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Mariana_and_Palau_Islands_campaign"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "PLW-5258",
+      "PLW-5246"
+     ],
+     "owner": "Japan",
+     "source": {
+      "title": "South Seas Mandate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/South_Seas_Mandate"
+     },
+     "territory": "South Seas Mandate",
+     "hatch": {
+      "by": "United States",
+      "since": "1944-11-27",
+      "note": "Peleliu and Angaur, taken by US forces in September-November 1944",
+      "source": {
+       "title": "Mariana and Palau Islands campaign (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Mariana_and_Palau_Islands_campaign"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "FSM",
+      "PLW",
+      "MNP-4937",
+      "MNP-4940"
+     ],
+     "owner": "Japan",
+     "source": {
+      "title": "South Seas Mandate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/South_Seas_Mandate"
+     },
+     "territory": "South Seas Mandate",
+     "hatch": {
+      "by": "United States",
+      "since": "1945-09-02",
+      "note": "Held by US forces after the Japanese surrender of 2 September 1945",
+      "source": {
+       "title": "Mariana and Palau Islands campaign (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Mariana_and_Palau_Islands_campaign"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1945-09-02",
+   "what": "Japan surrenders; its garrisons on the islands the US had bypassed (Chuuk, Pohnpei, Yap, Palau, Rota) give up",
+   "source": {
+    "title": "Surrender of Japan (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Surrender_of_Japan"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "FSM",
+      "PLW",
+      "MNP-4937",
+      "MNP-4940"
+     ],
+     "owner": "Japan",
+     "source": {
+      "title": "South Seas Mandate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/South_Seas_Mandate"
+     },
+     "territory": "South Seas Mandate",
+     "hatch": {
+      "by": "League of Nations",
+      "since": "1920-01-10",
+      "note": "Administered by Japan under a League of Nations class C mandate, given out under the Treaty of Versailles",
+      "source": {
+       "title": "South Seas Mandate (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/South_Seas_Mandate"
+      },
+      "trust": true,
+      "confirmed": "1920-12-17"
+     }
+    },
+    {
+     "pieces": [
+      "MNP-4939"
+     ],
+     "owner": "Japan",
+     "source": {
+      "title": "South Seas Mandate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/South_Seas_Mandate"
+     },
+     "territory": "South Seas Mandate",
+     "hatch": {
+      "by": "United States",
+      "since": "1944-07-09",
+      "note": "Taken by US forces in the Battle of Saipan, July 1944",
+      "source": {
+       "title": "Mariana and Palau Islands campaign (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Mariana_and_Palau_Islands_campaign"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "MNP-4938"
+     ],
+     "owner": "Japan",
+     "source": {
+      "title": "South Seas Mandate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/South_Seas_Mandate"
+     },
+     "territory": "South Seas Mandate",
+     "hatch": {
+      "by": "United States",
+      "since": "1944-08-01",
+      "note": "Taken by US forces in the Battle of Tinian, August 1944",
+      "source": {
+       "title": "Mariana and Palau Islands campaign (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Mariana_and_Palau_Islands_campaign"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "PLW-5258",
+      "PLW-5246"
+     ],
+     "owner": "Japan",
+     "source": {
+      "title": "South Seas Mandate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/South_Seas_Mandate"
+     },
+     "territory": "South Seas Mandate",
+     "hatch": {
+      "by": "United States",
+      "since": "1944-11-27",
+      "note": "Peleliu and Angaur, taken by US forces in September-November 1944",
+      "source": {
+       "title": "Mariana and Palau Islands campaign (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Mariana_and_Palau_Islands_campaign"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-11-27",
+   "what": "US forces complete the capture of Peleliu and Angaur in Palau",
+   "source": {
+    "title": "Battle of Peleliu (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Peleliu"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "PLW-5258",
+      "PLW-5246"
+     ],
+     "owner": "Japan",
+     "source": {
+      "title": "South Seas Mandate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/South_Seas_Mandate"
+     },
+     "territory": "South Seas Mandate",
+     "hatch": {
+      "by": "League of Nations",
+      "since": "1920-01-10",
+      "note": "Administered by Japan under a League of Nations class C mandate, given out under the Treaty of Versailles",
+      "source": {
+       "title": "South Seas Mandate (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/South_Seas_Mandate"
+      },
+      "trust": true,
+      "confirmed": "1920-12-17"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-08-01",
+   "what": "US forces take Tinian",
+   "source": {
+    "title": "Battle of Tinian (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Tinian"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MNP-4938"
+     ],
+     "owner": "Japan",
+     "source": {
+      "title": "South Seas Mandate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/South_Seas_Mandate"
+     },
+     "territory": "South Seas Mandate",
+     "hatch": {
+      "by": "League of Nations",
+      "since": "1920-01-10",
+      "note": "Administered by Japan under a League of Nations class C mandate, given out under the Treaty of Versailles",
+      "source": {
+       "title": "South Seas Mandate (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/South_Seas_Mandate"
+      },
+      "trust": true,
+      "confirmed": "1920-12-17"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-07-09",
+   "what": "US forces take Saipan",
+   "source": {
+    "title": "Battle of Saipan (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Saipan"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MNP-4939"
+     ],
+     "owner": "Japan",
+     "source": {
+      "title": "South Seas Mandate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/South_Seas_Mandate"
+     },
+     "territory": "South Seas Mandate",
+     "hatch": {
+      "by": "League of Nations",
+      "since": "1920-01-10",
+      "note": "Administered by Japan under a League of Nations class C mandate, given out under the Treaty of Versailles",
+      "source": {
+       "title": "South Seas Mandate (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/South_Seas_Mandate"
+      },
+      "trust": true,
+      "confirmed": "1920-12-17"
+     }
     }
    ]
   },
@@ -379,7 +752,8 @@
      "pieces": [
       "MAR-1445",
       "spanish-morocco-taza",
-      "spanish-morocco-oriental"
+      "spanish-morocco-oriental",
+      "rif-jebala"
      ],
      "owner": "Spain",
      "source": {
@@ -682,7 +1056,8 @@
      "pieces": [
       "MAR-1445",
       "spanish-morocco-taza",
-      "spanish-morocco-oriental"
+      "spanish-morocco-oriental",
+      "rif-jebala"
      ],
      "owner": "Spain",
      "source": {
@@ -978,7 +1353,8 @@
      "pieces": [
       "MAR-1445",
       "spanish-morocco-taza",
-      "spanish-morocco-oriental"
+      "spanish-morocco-oriental",
+      "rif-jebala"
      ],
      "owner": "Spain",
      "source": {
@@ -1252,7 +1628,8 @@
      "pieces": [
       "MAR-1445",
       "spanish-morocco-taza",
-      "spanish-morocco-oriental"
+      "spanish-morocco-oriental",
+      "rif-jebala"
      ],
      "owner": "Spain",
      "source": {
@@ -1508,7 +1885,8 @@
      "pieces": [
       "MAR-1445",
       "spanish-morocco-taza",
-      "spanish-morocco-oriental"
+      "spanish-morocco-oriental",
+      "rif-jebala"
      ],
      "owner": "Spain",
      "source": {
@@ -1744,7 +2122,8 @@
      "pieces": [
       "MAR-1445",
       "spanish-morocco-taza",
-      "spanish-morocco-oriental"
+      "spanish-morocco-oriental",
+      "rif-jebala"
      ],
      "owner": "Spain",
      "source": {
@@ -1961,7 +2340,8 @@
      "pieces": [
       "MAR-1445",
       "spanish-morocco-taza",
-      "spanish-morocco-oriental"
+      "spanish-morocco-oriental",
+      "rif-jebala"
      ],
      "owner": "Spain",
      "source": {
@@ -2159,7 +2539,8 @@
      "pieces": [
       "MAR-1445",
       "spanish-morocco-taza",
-      "spanish-morocco-oriental"
+      "spanish-morocco-oriental",
+      "rif-jebala"
      ],
      "owner": "Spain",
      "source": {
@@ -2339,7 +2720,8 @@
      "pieces": [
       "MAR-1445",
       "spanish-morocco-taza",
-      "spanish-morocco-oriental"
+      "spanish-morocco-oriental",
+      "rif-jebala"
      ],
      "owner": "Spain",
      "source": {
@@ -2421,6 +2803,230 @@
       "title": "Sahrawi people (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Sahrawi_people"
      }
+    }
+   ]
+  },
+  {
+   "date": "1926-12-31",
+   "what": "Spain completes the occupation of inland Río Muni, which it had barely held since 1900",
+   "source": {
+    "title": "Spanish Guinea (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Spanish_Guinea"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "GNQ-1468",
+      "GNQ-1469",
+      "GNQ-1471"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Río Muni (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Río_Muni"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1926-05-27",
+   "what": "Abd el-Krim surrenders to the French: the Rif Republic ends",
+   "source": {
+    "title": "Rif Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Rif_Republic"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "spanish-morocco-taza"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Rif Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Rif_Republic"
+     },
+     "territory": "Spanish Morocco",
+     "hatch": {
+      "by": "Rif Republic",
+      "since": "1921-07-22",
+      "note": "Held by Abd el-Krim's Rif Republic after the Spanish defeat at Annual, July 1921, until his surrender in May 1926",
+      "source": {
+       "title": "Rif War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Rif_War"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "rif-jebala"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Rif Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Rif_Republic"
+     },
+     "territory": "Spanish Morocco",
+     "hatch": {
+      "by": "Rif Republic",
+      "since": "1924-12-13",
+      "note": "Given up by Spain in its retreat from Chefchaouen to the Primo de Rivera line (December 1924), then held by the Rif Republic until May 1926",
+      "source": {
+       "title": "Rif War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Rif_War"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1924-12-13",
+   "what": "Spain completes its retreat from Chefchaouen and the Jebala to a fortified line near the coast",
+   "source": {
+    "title": "Rif War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Rif_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "rif-jebala"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish protectorate in Morocco (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_protectorate_in_Morocco"
+     },
+     "territory": "Spanish Morocco"
+    }
+   ]
+  },
+  {
+   "date": "1921-07-22",
+   "what": "The Rif tribes under Abd el-Krim rout the Spanish army at Annual; Spain loses the eastern zone up to Melilla",
+   "source": {
+    "title": "Battle of Annual (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Annual"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "spanish-morocco-taza"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish protectorate in Morocco (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_protectorate_in_Morocco"
+     },
+     "territory": "Spanish Morocco"
+    }
+   ]
+  },
+  {
+   "date": "1920-01-10",
+   "what": "The Treaty of Versailles comes into force: Germany loses its Pacific islands north of the equator, given to Japan as a League of Nations mandate",
+   "source": {
+    "title": "South Seas Mandate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/South_Seas_Mandate"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "FSM",
+      "PLW",
+      "MNP"
+     ],
+     "owner": "Germany",
+     "source": {
+      "title": "German New Guinea (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/German_New_Guinea"
+     },
+     "territory": "German New Guinea",
+     "hatch": {
+      "by": "Japan",
+      "since": "1914-10-14",
+      "note": "Taken by Japan from Germany in October 1914, at the start of the First World War",
+      "source": {
+       "title": "South Seas Mandate (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/South_Seas_Mandate"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1914-10-14",
+   "what": "Japan takes Germany's islands north of the equator: the Marshalls, the Carolines, Palau and the Marianas",
+   "source": {
+    "title": "South Seas Mandate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/South_Seas_Mandate"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "FSM",
+      "PLW",
+      "MNP"
+     ],
+     "owner": "Germany",
+     "source": {
+      "title": "German New Guinea (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/German_New_Guinea"
+     },
+     "territory": "German New Guinea"
+    }
+   ]
+  },
+  {
+   "date": "1900-06-27",
+   "what": "The Treaty of Paris with France fixes the borders of Río Muni and leaves Spain the coast between the Muni and Campo rivers",
+   "source": {
+    "title": "Treaty of Paris (1900) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Paris_(1900)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GNQ-1470",
+      "GNQ-1468",
+      "GNQ-1469",
+      "GNQ-1471"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Río Muni (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Río_Muni"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1899-06-30",
+   "what": "By the German-Spanish Treaty of 1899, Spain sells the Caroline Islands, Palau and the Northern Marianas to Germany after losing the Philippines and Guam",
+   "source": {
+    "title": "German–Spanish Treaty (1899) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/German–Spanish_Treaty_(1899)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "FSM",
+      "PLW",
+      "MNP"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish East Indies (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_East_Indies"
+     },
+     "territory": "Spanish East Indies"
     }
    ]
   }

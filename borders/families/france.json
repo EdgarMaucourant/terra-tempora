@@ -72,7 +72,8 @@
     "cape-juby-guelmim",
     "MAR-3456",
     "TUN",
-    "sidi-ifni"
+    "sidi-ifni",
+    "rif-jebala"
    ],
    "from": 1815,
    "why": "Morocco (without Western Sahara) and Tunisia: the French protectorates until 1956, with Spain's northern zone, the Tangier International Zone, Cape Juby (Spanish until 1958) and Ifni (Spanish until 1969)"
@@ -999,7 +1000,8 @@
      "pieces": [
       "MAR-1445",
       "spanish-morocco-taza",
-      "spanish-morocco-oriental"
+      "spanish-morocco-oriental",
+      "rif-jebala"
      ],
      "owner": "Spain",
      "territory": "Spanish Morocco",
@@ -4511,7 +4513,8 @@
      "pieces": [
       "MAR-1445",
       "spanish-morocco-taza",
-      "spanish-morocco-oriental"
+      "spanish-morocco-oriental",
+      "rif-jebala"
      ],
      "owner": "France",
      "territory": "French Morocco",
@@ -4574,7 +4577,8 @@
       "spanish-morocco-taza",
       "tangier-zone",
       "MAR-3456",
-      "sidi-ifni"
+      "sidi-ifni",
+      "rif-jebala"
      ],
      "owner": "Morocco",
      "source": {
