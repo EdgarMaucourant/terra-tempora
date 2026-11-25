@@ -15512,6 +15512,262 @@
      "by": "Nationalist Spain"
     }
    ]
+  },
+  {
+   "place": "Saipan (Spanish)",
+   "lonLat": [
+    145.75,
+    15.18
+   ],
+   "years": [
+    1898,
+    1898
+   ],
+   "realm": "Spain",
+   "why": "Spanish Mariana Islands until 1899"
+  },
+  {
+   "place": "Saipan (German)",
+   "lonLat": [
+    145.75,
+    15.18
+   ],
+   "years": [
+    1899,
+    1919
+   ],
+   "realm": "Germany",
+   "why": "German New Guinea, taken by Japan in October 1914",
+   "heldBy": [
+    {
+     "years": [
+      1914,
+      1919
+     ],
+     "by": "Japan"
+    }
+   ]
+  },
+  {
+   "place": "Saipan (mandate)",
+   "lonLat": [
+    145.75,
+    15.18
+   ],
+   "years": [
+    1920,
+    1946
+   ],
+   "realm": "Japan",
+   "why": "South Seas Mandate, taken by US forces in July 1944",
+   "heldBy": [
+    {
+     "years": [
+      1920,
+      1943
+     ],
+     "by": "League of Nations"
+    },
+    {
+     "years": [
+      1944,
+      1946
+     ],
+     "by": "United States"
+    }
+   ]
+  },
+  {
+   "place": "Saipan (trust)",
+   "lonLat": [
+    145.75,
+    15.18
+   ],
+   "years": [
+    1947,
+    1985
+   ],
+   "realm": "United States",
+   "why": "Trust Territory of the Pacific Islands",
+   "heldBy": [
+    {
+     "years": [
+      1947,
+      1985
+     ],
+     "by": "United Nations"
+    }
+   ]
+  },
+  {
+   "place": "Pohnpei (Kolonia)",
+   "lonLat": [
+    158.21,
+    6.96
+   ],
+   "years": [
+    1986,
+    2026
+   ],
+   "realm": "Federated States of Micronesia",
+   "why": "Independent since 3 November 1986"
+  },
+  {
+   "place": "Pohnpei (mandate)",
+   "lonLat": [
+    158.21,
+    6.96
+   ],
+   "years": [
+    1920,
+    1946
+   ],
+   "realm": "Japan",
+   "why": "South Seas Mandate; bypassed by US forces, given up in September 1945",
+   "heldBy": [
+    {
+     "years": [
+      1920,
+      1944
+     ],
+     "by": "League of Nations"
+    },
+    {
+     "years": [
+      1945,
+      1946
+     ],
+     "by": "United States"
+    }
+   ]
+  },
+  {
+   "place": "Melekeok",
+   "lonLat": [
+    134.62,
+    7.5
+   ],
+   "years": [
+    1994,
+    2026
+   ],
+   "realm": "Palau",
+   "why": "Independent since 1 October 1994"
+  },
+  {
+   "place": "Melekeok (trust)",
+   "lonLat": [
+    134.62,
+    7.5
+   ],
+   "years": [
+    1947,
+    1993
+   ],
+   "realm": "United States",
+   "why": "Trust Territory of the Pacific Islands",
+   "heldBy": [
+    {
+     "years": [
+      1947,
+      1993
+     ],
+     "by": "United Nations"
+    }
+   ]
+  },
+  {
+   "place": "Al Hoceima (Rif Republic)",
+   "lonLat": [
+    -3.93,
+    35.25
+   ],
+   "years": [
+    1912,
+    1955
+   ],
+   "realm": "Spanish Morocco",
+   "why": "Spanish zone; held by the Rif Republic 1921-26",
+   "heldBy": [
+    {
+     "years": [
+      1921,
+      1925
+     ],
+     "by": "Rif Republic"
+    },
+    {
+     "years": [
+      1936,
+      1938
+     ],
+     "by": "Nationalist Spain"
+    }
+   ]
+  },
+  {
+   "place": "Chefchaouen",
+   "lonLat": [
+    -5.27,
+    35.17
+   ],
+   "years": [
+    1912,
+    1955
+   ],
+   "realm": "Spanish Morocco",
+   "why": "Spanish zone; given up in December 1924, held by the Rif Republic until 1926",
+   "heldBy": [
+    {
+     "years": [
+      1924,
+      1925
+     ],
+     "by": "Rif Republic"
+    },
+    {
+     "years": [
+      1936,
+      1938
+     ],
+     "by": "Nationalist Spain"
+    }
+   ]
+  },
+  {
+   "place": "Bata (Spanish Guinea, 1910)",
+   "lonLat": [
+    9.77,
+    1.86
+   ],
+   "years": [
+    1900,
+    1955
+   ],
+   "realm": "Spain",
+   "why": "Río Muni coast, Spanish from the Treaty of Paris of 1900",
+   "heldBy": [
+    {
+     "years": [
+      1936,
+      1938
+     ],
+     "by": "Nationalist Spain"
+    }
+   ]
+  },
+  {
+   "place": "Niefang (before 1926)",
+   "lonLat": [
+    10.25,
+    1.84
+   ],
+   "years": [
+    1900,
+    1925
+   ],
+   "realm": null,
+   "why": "Inland Río Muni, occupied by Spain only in 1926"
   }
  ]
 }
