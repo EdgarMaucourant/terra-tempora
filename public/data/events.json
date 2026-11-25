@@ -12411,6 +12411,242 @@
    "summary": "Kept out in 1946 as a regime that had sided with the Axis, Spain is admitted to the United Nations on 14 December 1955 in a package deal with fifteen other states, a sign that the Western powers have come to accept Franco in the Cold War.",
    "wikipedia": "Spain_and_the_United_Nations",
    "search": "Spain admitted to the United Nations 14 December 1955 Franco isolation General Assembly resolution 1946 lifted 1950"
+  },
+  {
+   "id": "carolines-sold-to-germany-1899",
+   "kind": "treaty",
+   "year": 1899,
+   "title": "Spain sells its last Pacific islands to Germany, 1899",
+   "place": "Pohnpei",
+   "lonLat": [
+    158.21,
+    6.96
+   ],
+   "civs": [
+    "spain",
+    "germany",
+    "german-new-guinea"
+   ],
+   "summary": "Having lost the Philippines and Guam to the United States, Spain sells the Caroline Islands, Palau and the Northern Marianas to Germany for 25 million pesetas by a treaty of February 1899, ratified in June. They become part of German New Guinea, ending three centuries of the Spanish East Indies.",
+   "wikipedia": "German–Spanish_Treaty_(1899)",
+   "search": "German-Spanish Treaty 1899 Caroline Islands Palau Northern Mariana Islands sold 25 million pesetas Germany Spanish East Indies end"
+  },
+  {
+   "id": "treaty-of-paris-rio-muni-1900",
+   "kind": "treaty",
+   "year": 1900,
+   "title": "The Treaty of Paris fixes the borders of Río Muni, 1900",
+   "place": "Bata",
+   "lonLat": [
+    9.77,
+    1.86
+   ],
+   "civs": [
+    "spain",
+    "spanish-guinea",
+    "france"
+   ],
+   "summary": "Spain and France settle their rival claims on the Gulf of Guinea coast on 27 June 1900. Spain keeps Río Muni, a block of about 26,000 km² between Cameroon and Gabon, with the islands of Corisco and Elobey, giving up its claims inland as far as the Ubangi.",
+   "wikipedia": "Treaty_of_Paris_(1900)",
+   "search": "Treaty of Paris 27 June 1900 Spain France Rio Muni border Spanish Guinea Corisco Elobey Gabon Cameroon"
+  },
+  {
+   "id": "spanish-protectorate-morocco-1912",
+   "kind": "treaty",
+   "year": 1912,
+   "title": "Spain gets its protectorate in northern Morocco, November 1912",
+   "place": "Tétouan",
+   "lonLat": [
+    -5.37,
+    35.57
+   ],
+   "civs": [
+    "spain",
+    "spanish-morocco",
+    "morocco",
+    "france"
+   ],
+   "summary": "By the Treaty of Madrid of 27 November 1912, France hands Spain the north of its new protectorate: the Rif and the Jebala, with Tetouan as capital, and a southern strip around Cape Juby. Spain rules them through a khalifa of the Sultan, but it takes until 1927 to subdue the Rif.",
+   "wikipedia": "Spanish_protectorate_in_Morocco",
+   "search": "Treaty of Madrid 27 November 1912 Spanish protectorate Morocco northern zone Rif Tetouan capital Cape Juby southern zone khalifa"
+  },
+  {
+   "id": "japan-takes-micronesia-1914",
+   "kind": "war",
+   "year": 1914,
+   "title": "Japan takes Germany's Micronesian islands, October 1914",
+   "place": "Chuuk",
+   "lonLat": [
+    151.85,
+    7.45
+   ],
+   "civs": [
+    "japan",
+    "germany",
+    "german-new-guinea"
+   ],
+   "summary": "Joining the First World War on the Allied side, Japan sends its navy to Germany's undefended islands north of the equator and takes the Marshalls, the Carolines, Palau and the Northern Marianas without a fight in October 1914.",
+   "wikipedia": "South_Seas_Mandate",
+   "search": "Japan occupies German Micronesia October 1914 First World War Marshall Caroline Mariana Palau islands Imperial Japanese Navy"
+  },
+  {
+   "id": "cape-juby-occupied-1916",
+   "kind": "empire",
+   "year": 1916,
+   "title": "Spain occupies Cape Juby, July 1916",
+   "place": "Cape Juby (Tarfaya)",
+   "lonLat": [
+    -12.92,
+    27.94
+   ],
+   "civs": [
+    "spain",
+    "cape-juby"
+   ],
+   "summary": "Assigned to Spain in 1912 as the southern zone of its Moroccan protectorate, Cape Juby is occupied on 29 July 1916 by Colonel Francisco Bens, who founds the post later named Villa Bens. Its airfield becomes a stop on the French airmail line to Dakar.",
+   "wikipedia": "Cape_Juby",
+   "search": "Cape Juby Tarfaya Villa Bens 29 July 1916 Francisco Bens Spanish occupation southern zone protectorate"
+  },
+  {
+   "id": "south-seas-mandate-1920",
+   "kind": "treaty",
+   "year": 1920,
+   "title": "Japan's South Seas Mandate, 1920",
+   "place": "Koror",
+   "lonLat": [
+    134.48,
+    7.34
+   ],
+   "civs": [
+    "japan"
+   ],
+   "summary": "The Treaty of Versailles takes Germany's islands north of the equator, and the League of Nations gives them to Japan as a class C mandate in December 1920. Governed from Koror in Palau, they fill with Japanese settlers and, in the 1930s, with military bases.",
+   "wikipedia": "South_Seas_Mandate",
+   "search": "South Seas Mandate 1920 League of Nations class C mandate Japan Koror Palau Marshall Caroline Mariana islands Treaty of Versailles"
+  },
+  {
+   "id": "primo-de-rivera-coup-1923",
+   "kind": "revolution",
+   "year": 1923,
+   "title": "Primo de Rivera seizes power, September 1923",
+   "place": "Madrid",
+   "lonLat": [
+    -3.7,
+    40.42
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "After the disaster of Annual and years of unrest, General Miguel Primo de Rivera, captain general of Catalonia, rises on 13 September 1923. King Alfonso XIII names him head of government; he suspends the constitution and rules as dictator.",
+   "wikipedia": "Dictatorship_of_Miguel_Primo_de_Rivera",
+   "search": "Primo de Rivera coup 13 September 1923 Barcelona Alfonso XIII military directory dictatorship Cortes dissolved constitution suspended"
+  },
+  {
+   "id": "rio-muni-occupied-1926",
+   "kind": "empire",
+   "year": 1926,
+   "title": "Spain occupies inland Río Muni, 1926",
+   "place": "Niefang, Río Muni",
+   "lonLat": [
+    10.25,
+    1.84
+   ],
+   "civs": [
+    "spain",
+    "spanish-guinea"
+   ],
+   "summary": "For a quarter of a century Spain held little more than the coast of Río Muni. In 1926, under Governor Ángel Barrera and his successor Miguel Núñez de Prado, columns of the Colonial Guard take over the Fang lands of the interior, and the territories are joined as the colony of Spanish Guinea.",
+   "wikipedia": "Spanish_Guinea",
+   "search": "Spanish Guinea Rio Muni interior occupation 1926 Nunez de Prado Fang colony Spanish Territories of the Gulf of Guinea"
+  },
+  {
+   "id": "primo-de-rivera-falls-1930",
+   "kind": "revolution",
+   "year": 1930,
+   "title": "Primo de Rivera falls, January 1930",
+   "place": "Madrid",
+   "lonLat": [
+    -3.7,
+    40.42
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "Losing the army's and the king's support as the economy turns down, Primo de Rivera resigns on 28 January 1930 and dies in Paris weeks later. General Berenguer's softer rule fails to restore the old order, and in August republicans and Catalan nationalists sign the Pact of San Sebastián against the monarchy.",
+   "wikipedia": "Dictatorship_of_Miguel_Primo_de_Rivera",
+   "search": "Primo de Rivera resigns 28 January 1930 Berenguer dictablanda Alfonso XIII Pact of San Sebastian republicans"
+  },
+  {
+   "id": "us-takes-marianas-1944",
+   "kind": "war",
+   "year": 1944,
+   "title": "US forces take Saipan, Tinian and Peleliu, 1944",
+   "place": "Saipan",
+   "lonLat": [
+    145.75,
+    15.18
+   ],
+   "civs": [
+    "japan",
+    "united-states"
+   ],
+   "summary": "In the summer of 1944 US forces storm Saipan (July) and Tinian (August), where the B-29s that bomb Japan, including those of Hiroshima and Nagasaki, will be based, and then Peleliu and Angaur in Palau after weeks of fighting. The other Japanese-held islands are bypassed until the surrender of 1945.",
+   "wikipedia": "Mariana_and_Palau_Islands_campaign",
+   "search": "Mariana and Palau Islands campaign 1944 Battle of Saipan Tinian Guam Peleliu Angaur B-29 bases Philippine Sea"
+  },
+  {
+   "id": "trust-territory-pacific-1947",
+   "kind": "treaty",
+   "year": 1947,
+   "title": "The Trust Territory of the Pacific Islands, 1947",
+   "place": "Saipan",
+   "lonLat": [
+    145.73,
+    15.21
+   ],
+   "civs": [
+    "united-states"
+   ],
+   "summary": "On 2 April 1947 the UN Security Council places Japan's former mandate under US administration as a strategic trust territory, in force from 18 July. The United States runs the Marianas, the Carolines, Palau and the Marshalls, where it tests nuclear weapons, until they choose their status between 1978 and 1994.",
+   "wikipedia": "Trust_Territory_of_the_Pacific_Islands",
+   "search": "Trust Territory of the Pacific Islands 18 July 1947 UN Security Council strategic trust United States Micronesia Saipan nuclear tests Bikini"
+  },
+  {
+   "id": "micronesia-independence-1986",
+   "kind": "empire",
+   "year": 1986,
+   "title": "Micronesia becomes independent and the Northern Marianas join the US, November 1986",
+   "place": "Palikir, Pohnpei",
+   "lonLat": [
+    158.16,
+    6.92
+   ],
+   "civs": [
+    "federated-states-of-micronesia",
+    "northern-mariana-islands",
+    "united-states"
+   ],
+   "summary": "On 3 November 1986 the United States ends the trusteeship for most of its Pacific islands. The Federated States of Micronesia (Yap, Chuuk, Pohnpei and Kosrae) become independent in free association with it, and the Northern Mariana Islands become a US commonwealth, as they had voted in 1975.",
+   "wikipedia": "Federated_States_of_Micronesia",
+   "search": "Federated States of Micronesia independence 3 November 1986 Compact of Free Association Northern Mariana Islands commonwealth trusteeship ends"
+  },
+  {
+   "id": "palau-independence-1994",
+   "kind": "empire",
+   "year": 1994,
+   "title": "Palau becomes independent, 1 October 1994",
+   "place": "Koror",
+   "lonLat": [
+    134.48,
+    7.34
+   ],
+   "civs": [
+    "palau",
+    "united-states"
+   ],
+   "summary": "After eight referendums, Palau approves its Compact of Free Association with the United States and becomes independent on 1 October 1994. It was the last of the UN trust territories; the Trusteeship Council suspends its work weeks later.",
+   "wikipedia": "Palau",
+   "search": "Palau independence 1 October 1994 Compact of Free Association last UN trust territory Trusteeship Council suspended"
   }
  ]
 }
