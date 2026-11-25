@@ -4788,5 +4788,11 @@
   "fr": "Camp nationaliste",
   "es": "Bando sublevado",
   "notACountry": true
+ },
+ "Canary Islands": {
+  "wikipedia": "Canary Islands",
+  "wikidata": "Q5813",
+  "fr": "Îles Canaries",
+  "es": "Canarias"
  }
 }
