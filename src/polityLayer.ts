@@ -39,9 +39,6 @@ const CONTEXT_LABEL_AREA = 150_000;
 const START_HEIGHT = 14_500_000;
 // Shapes built per frame, so a fast scrub never freezes the page.
 const BUILDS_PER_FRAME = 40;
-// Above this many built shapes, those far from the current year are freed.
-const MAX_BUILT = 1500;
-const KEEP_YEARS = 30;
 // Realms this large (km²) catch the eye when they appear late: they are built
 // first, and playback waits for them (see readyAt). Smaller ones may follow.
 const BIG_AREA = 100_000;
@@ -358,6 +355,13 @@ export class PolityLayer {
    * while playing so shapes are ready by the time their year comes.
    */
   lookahead = 3;
+  /**
+   * Above this many built shapes, those more than `keepYears` from the current
+   * year are freed. Phones lower both (main.ts): every shape kept takes
+   * graphics memory, and a phone that runs out loses the globe.
+   */
+  maxBuilt = 1500;
+  keepYears = 30;
 
   constructor(private scene: Scene) {
     // Drawn flat over the globe, so no border or hatching covers them; the
@@ -800,7 +804,7 @@ export class PolityLayer {
       }
       piece.lineMaterial.uniforms.color = Color.fromAlpha(piece.lineColor, lineAlpha * opacity, piece.lineMaterial.uniforms.color);
     }
-    if (this.drawn.size > MAX_BUILT) this.release(year);
+    if (this.drawn.size > this.maxBuilt) this.release(year);
     return { pending, visible };
   }
 
@@ -809,7 +813,7 @@ export class PolityLayer {
     for (const p of [...this.drawn.keys()]) {
       const distance = year < p.from ? p.from - year : year - p.to;
       // Shapes built ahead for playback are kept too.
-      if (distance <= KEEP_YEARS || (year < p.from && distance <= this.lookahead + 1)) continue;
+      if (distance <= this.keepYears || (year < p.from && distance <= this.lookahead + 1)) continue;
       this.detach(p);
     }
   }
