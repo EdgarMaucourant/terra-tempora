@@ -18705,6 +18705,84 @@
    ],
    "realm": "Turkey",
    "why": "Ottoman until 1912"
+  },
+  {
+   "place": "Massawa (Ottoman)",
+   "lonLat": [
+    39.35,
+    15.58
+   ],
+   "years": [
+    1815,
+    1864
+   ],
+   "realm": "Turkey",
+   "why": "Ottoman Habesh until 1865"
+  },
+  {
+   "place": "Massawa (Egypt)",
+   "lonLat": [
+    39.35,
+    15.58
+   ],
+   "years": [
+    1866,
+    1884
+   ],
+   "realm": "Khedivate of Egypt",
+   "why": "Egyptian 1865-85"
+  },
+  {
+   "place": "Massawa (Italy)",
+   "lonLat": [
+    39.35,
+    15.58
+   ],
+   "years": [
+    1886,
+    1940
+   ],
+   "realm": "Italy",
+   "why": "Italian from 1885"
+  },
+  {
+   "place": "Suakin (Ottoman)",
+   "lonLat": [
+    37.25,
+    19.05
+   ],
+   "years": [
+    1815,
+    1864
+   ],
+   "realm": "Turkey",
+   "why": "Ottoman until 1865"
+  },
+  {
+   "place": "Suakin (Egypt)",
+   "lonLat": [
+    37.25,
+    19.05
+   ],
+   "years": [
+    1866,
+    1881
+   ],
+   "realm": "Khedivate of Egypt",
+   "why": "Egyptian from 1865"
+  },
+  {
+   "place": "Asmara (Italy)",
+   "lonLat": [
+    38.93,
+    15.33
+   ],
+   "years": [
+    1890,
+    1940
+   ],
+   "realm": "Italy",
+   "why": "Italian Eritrea"
   }
  ]
 }
