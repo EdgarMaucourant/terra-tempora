@@ -15155,6 +15155,175 @@
    "summary": "After a deputy shoots Croatian leaders in parliament in 1928, King Alexander suspends the constitution on 6 January 1929 and rules as dictator. On 3 October he renames the country the Kingdom of Yugoslavia and redraws it into new provinces, the banovinas, cutting across the old historical lands.",
    "wikipedia": "Kingdom_of_Yugoslavia",
    "search": "6 January Dictatorship 1929 King Alexander suspends constitution renamed Kingdom of Yugoslavia 3 October 1929 banovinas"
+  },
+  {
+   "id": "second-serbian-uprising-1815",
+   "kind": "revolution",
+   "year": 1815,
+   "to": 1817,
+   "title": "The Second Serbian Uprising and Serbian self-rule, 1815 – 1817",
+   "place": "Takovo",
+   "lonLat": [
+    20.6,
+    44.15
+   ],
+   "civs": [
+    "serbia",
+    "turkey"
+   ],
+   "summary": "On 23 April 1815 Miloš Obrenović raises a new revolt at Takovo against Ottoman rule in the Pashalik of Belgrade. By the end of the year he reaches an agreement with the Ottoman governor that leaves the Serbs to run their own affairs, and in 1817 an assembly makes Miloš hereditary prince.",
+   "wikipedia": "Second_Serbian_Uprising",
+   "search": "Second Serbian Uprising April 1815 Takovo Miloš Obrenović agreement with Marashli Ali Pasha self-government Pashalik of Belgrade knez 1817"
+  },
+  {
+   "id": "serbian-autonomy-1830",
+   "kind": "treaty",
+   "year": 1830,
+   "to": 1833,
+   "title": "The sultan recognises the Principality of Serbia, 1830 – 1833",
+   "place": "Serbia",
+   "lonLat": [
+    21.5,
+    43.9
+   ],
+   "civs": [
+    "serbia",
+    "turkey"
+   ],
+   "summary": "Under the Treaty of Adrianople the sultan issues decrees in 1830 recognising Serbia as a self-governing principality under Ottoman suzerainty, with Miloš Obrenović as hereditary prince. In 1833 a further decree hands Serbia six more districts, among them Krajina, Crna Reka and Kruševac.",
+   "wikipedia": "Principality_of_Serbia",
+   "search": "Hatt-i sharif 1830 Serbia autonomous principality Miloš hereditary prince 1833 six nahiyas Krajina Crna Reka Kruševac Paraćin Jadar Stari Vlah Treaty of Adrianople"
+  },
+  {
+   "id": "serbian-montenegrin-ottoman-wars-1876",
+   "kind": "war",
+   "year": 1876,
+   "to": 1878,
+   "title": "Serbia and Montenegro at war with the Ottomans, 1876 – 1878",
+   "place": "Southern Serbia",
+   "lonLat": [
+    21.2,
+    43.2
+   ],
+   "civs": [
+    "serbia",
+    "montenegro",
+    "turkey",
+    "russia"
+   ],
+   "summary": "After the Herzegovina uprising of 1875, Serbia and Montenegro declare war on the Ottoman Empire in June 1876. Serbia is beaten that year, but when Russia enters the war it fights again from December 1877 and takes Pirot, Leskovac, Niš and Vranje. The Montenegrins take Nikšić in September 1877 and Bar in January 1878.",
+   "wikipedia": "Serbian–Ottoman_War_(1876–1878)",
+   "search": "Serbian Ottoman War 1876 1878 Herzegovina uprising Montenegrin Ottoman War Nikšić 1877 Niš January 1878 Pirot Vranje Bar Russo-Turkish War"
+  },
+  {
+   "id": "treaty-of-berlin-western-balkans-1878",
+   "kind": "treaty",
+   "year": 1878,
+   "title": "The Treaty of Berlin and the occupation of Bosnia, 1878",
+   "place": "Bosnia and Herzegovina",
+   "lonLat": [
+    18.9,
+    43.7
+   ],
+   "civs": [
+    "serbia",
+    "montenegro",
+    "bosnia-and-herzegovina",
+    "austria-hungary",
+    "turkey"
+   ],
+   "summary": "The Treaty of Berlin makes Serbia and Montenegro fully independent. Serbia gains Niš, Pirot, Leskovac and Vranje, and Montenegro roughly doubles in size with Nikšić, Podgorica and the port of Bar. Austria-Hungary is allowed to occupy and run Bosnia and Herzegovina, still formally Ottoman, and its troops take Sarajevo in August after hard fighting.",
+   "wikipedia": "Austro-Hungarian_occupation_of_Bosnia_and_Herzegovina",
+   "search": "Treaty of Berlin 13 July 1878 Serbia Montenegro independence Niš Pirot Vranje Nikšić Podgorica Bar Austro-Hungarian occupation of Bosnia and Herzegovina campaign Sarajevo August October 1878 Sandžak garrisons"
+  },
+  {
+   "id": "ulcinj-to-montenegro-1880",
+   "kind": "treaty",
+   "year": 1880,
+   "title": "Montenegro receives Ulcinj, 1880",
+   "place": "Ulcinj",
+   "lonLat": [
+    19.3,
+    41.98
+   ],
+   "civs": [
+    "montenegro",
+    "turkey"
+   ],
+   "summary": "The Treaty of Berlin had given Montenegro Plav and Gusinje, but the Albanian League of Prizren fought to keep them. After a naval demonstration by the Great Powers, the Ottomans hand over the port of Ulcinj instead on 22 November 1880.",
+   "wikipedia": "Ulcinj",
+   "search": "Ulcinj handed to Montenegro 22 November 1880 instead of Plav and Gusinje League of Prizren resistance naval demonstration Great Powers"
+  },
+  {
+   "id": "kingdom-of-serbia-1882",
+   "kind": "crown",
+   "year": 1882,
+   "title": "Serbia becomes a kingdom, 1882",
+   "place": "Belgrade",
+   "lonLat": [
+    20.48,
+    44.81
+   ],
+   "civs": [
+    "serbia"
+   ],
+   "summary": "On 6 March 1882 Prince Milan Obrenović proclaims Serbia a kingdom and becomes King Milan I, four years after the Treaty of Berlin recognised the country's independence.",
+   "wikipedia": "Kingdom_of_Serbia",
+   "search": "Kingdom of Serbia proclaimed 6 March 1882 Milan Obrenović King Milan I"
+  },
+  {
+   "id": "may-coup-serbia-1903",
+   "kind": "revolution",
+   "year": 1903,
+   "title": "The May Coup brings the Karađorđević dynasty back to Serbia, 1903",
+   "place": "Belgrade",
+   "lonLat": [
+    20.46,
+    44.81
+   ],
+   "civs": [
+    "serbia"
+   ],
+   "summary": "On the night of 10 to 11 June 1903 army officers break into the royal palace in Belgrade and kill King Alexander Obrenović and Queen Draga. The assembly calls Peter Karađorđević to the throne as Peter I, ending the Obrenović line.",
+   "wikipedia": "May_Overthrow",
+   "search": "May Overthrow 11 June 1903 King Alexander Obrenović and Queen Draga killed army officers Peter I Karađorđević"
+  },
+  {
+   "id": "bosnian-crisis-1908",
+   "kind": "empire",
+   "year": 1908,
+   "title": "Austria-Hungary annexes Bosnia and Herzegovina, 1908",
+   "place": "Sarajevo",
+   "lonLat": [
+    18.45,
+    43.9
+   ],
+   "civs": [
+    "austria-hungary",
+    "bosnia-and-herzegovina",
+    "turkey",
+    "serbia"
+   ],
+   "summary": "On 6 October 1908 Austria-Hungary annexes Bosnia and Herzegovina, which it had occupied since 1878, and pulls its garrisons out of the Sandžak of Novi Pazar. Serbia and Russia protest, but have to accept the annexation in March 1909, and the Ottoman Empire is paid compensation.",
+   "wikipedia": "Bosnian_Crisis",
+   "search": "Bosnian Crisis annexation of Bosnia and Herzegovina 6 October 1908 Austria-Hungary Sandžak of Novi Pazar garrisons withdrawn Serbia Russia protest 1909"
+  },
+  {
+   "id": "kingdom-of-montenegro-1910",
+   "kind": "crown",
+   "year": 1910,
+   "title": "Montenegro becomes a kingdom, 1910",
+   "place": "Cetinje",
+   "lonLat": [
+    18.92,
+    42.39
+   ],
+   "civs": [
+    "montenegro"
+   ],
+   "summary": "On 28 August 1910, at the jubilee of his fifty years on the throne, Prince Nicholas proclaims Montenegro a kingdom and takes the title of King Nicholas I.",
+   "wikipedia": "Kingdom_of_Montenegro",
+   "search": "Kingdom of Montenegro proclaimed 28 August 1910 Nicholas I fiftieth jubilee Cetinje"
   }
  ]
 }

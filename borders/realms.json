@@ -3197,6 +3197,17 @@
   "groupUntil": "2006-06-05",
   "periods": [
    {
+    "from": "1815-04-23",
+    "name": "Principality of Serbia",
+    "wikipedia": "Principality of Serbia",
+    "fr": "Principauté de Serbie",
+    "es": "Principado de Serbia",
+    "label": "Principality of Serbia",
+    "labelFr": "Principauté de Serbie",
+    "labelEs": "Principado de Serbia",
+    "note": "Self-governing under Ottoman suzerainty from the Second Serbian Uprising (1815), recognised in 1830, independent from 1878"
+   },
+   {
     "from": "1882-03-06",
     "name": "Kingdom of Serbia",
     "wikipedia": "Kingdom of Serbia",

@@ -632,6 +632,9 @@
  "brunei": {
   "name": "Brunéi"
  },
+ "austria-hungary": {
+  "name": "Austria-Hungría"
+ },
  "crown-colony-of-sarawak": {
   "name": "Colonia de Sarawak"
  },
@@ -640,9 +643,6 @@
  },
  "eritrea": {
   "name": "Eritrea"
- },
- "austria-hungary": {
-  "name": "Austria-Hungría"
  },
  "north-korea": {
   "name": "Corea del Norte"
