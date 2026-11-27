@@ -14230,7 +14230,9 @@
    "civs": [
     "greece",
     "turkey",
-    "bulgaria"
+    "bulgaria",
+    "serbia",
+    "montenegro"
    ],
    "summary": "Greece, Bulgaria, Serbia and Montenegro attack the Ottoman Empire in October 1912. The Greek army enters Thessaloniki on 26 October, its navy takes the northern Aegean islands, and Ioannina falls in March 1913. By the Treaty of London of 30 May 1913 the Ottomans give up almost all their land in Europe.",
    "wikipedia": "First_Balkan_War",
@@ -14249,7 +14251,8 @@
    "civs": [
     "greece",
     "bulgaria",
-    "romania"
+    "romania",
+    "serbia"
    ],
    "summary": "Bulgaria, unhappy with its share, attacks its former allies in June 1913 and loses the Second Balkan War. By the Treaty of Bucharest of 10 August 1913 Greece gets southern Macedonia as far as Kavala and Drama, while Bulgaria keeps Western Thrace.",
    "wikipedia": "Treaty_of_Bucharest_(1913)",
@@ -14883,6 +14886,275 @@
    "summary": "The Prespa Agreement, signed with Greece in June 2018 on Lake Prespa, ends a 27-year dispute over the country's name. On 12 February 2019 the Republic of Macedonia becomes the Republic of North Macedonia, and Greece lifts its veto on its joining NATO, which it does in 2020.",
    "wikipedia": "Prespa_agreement",
    "search": "Prespa Agreement June 2018 Greece Macedonia name dispute North Macedonia renamed 12 February 2019 NATO membership 2020"
+  },
+  {
+   "id": "albanian-independence-1912",
+   "kind": "revolution",
+   "year": 1912,
+   "title": "Albania declares its independence, November 1912",
+   "place": "Vlorë",
+   "lonLat": [
+    19.49,
+    40.47
+   ],
+   "civs": [
+    "albania",
+    "turkey"
+   ],
+   "summary": "With Serbian, Montenegrin and Greek armies overrunning the Ottoman Balkans, Albanian delegates meet at Vlorë and on 28 November 1912 declare Albania independent, with Ismail Qemali at the head of a provisional government. For months it controls little more than the area around Vlorë.",
+   "wikipedia": "Albanian_Declaration_of_Independence",
+   "search": "Albanian Declaration of Independence 28 November 1912 Vlorë Ismail Qemali provisional government First Balkan War"
+  },
+  {
+   "id": "treaty-of-london-1913",
+   "kind": "treaty",
+   "year": 1913,
+   "title": "The Treaty of London ends the First Balkan War, May 1913",
+   "place": "Macedonia and Albania",
+   "lonLat": [
+    21.0,
+    41.7
+   ],
+   "civs": [
+    "turkey",
+    "serbia",
+    "montenegro",
+    "bulgaria",
+    "greece",
+    "albania"
+   ],
+   "summary": "On 30 May 1913 the Ottoman Empire gives up all its European land west of a line from Enos to Midia, and Crete. Kosovo, the Sandžak and most of Macedonia are left to the Balkan allies who had taken them, and the Great Powers decide that Albania will be an independent principality.",
+   "wikipedia": "Treaty_of_London_(1913)",
+   "search": "Treaty of London 30 May 1913 end of First Balkan War Ottoman Empire cedes land west of Enos Midia line Crete Albania Kosovo Macedonia Sandžak Scutari"
+  },
+  {
+   "id": "principality-of-albania-1914",
+   "kind": "crown",
+   "year": 1914,
+   "title": "Prince Wilhelm of Wied and the Principality of Albania, 1914",
+   "place": "Durrës",
+   "lonLat": [
+    19.45,
+    41.32
+   ],
+   "civs": [
+    "albania"
+   ],
+   "summary": "The Great Powers choose a German prince, Wilhelm of Wied, as ruler of Albania. He lands at Durrës on 7 March 1914, but faces revolts and a Greek-backed uprising in the south, and leaves the country in September after the First World War breaks out.",
+   "wikipedia": "Principality_of_Albania",
+   "search": "Principality of Albania Wilhelm of Wied arrives Durrës 7 March 1914 International Commission of Control Essad Pasha leaves September 1914"
+  },
+  {
+   "id": "serbian-campaign-1915",
+   "kind": "war",
+   "year": 1915,
+   "title": "The Central Powers overrun Serbia, October – December 1915",
+   "place": "Serbia",
+   "lonLat": [
+    20.9,
+    44.0
+   ],
+   "civs": [
+    "serbia",
+    "austria-hungary",
+    "germany",
+    "bulgaria",
+    "montenegro"
+   ],
+   "summary": "In October 1915 German and Austro-Hungarian armies cross the Danube and take Belgrade, while Bulgaria attacks from the east. The Serbian army, with the king and government, retreats over the mountains of Kosovo and Albania to the Adriatic and is shipped to Corfu. Serbia is split into an Austro-Hungarian and a Bulgarian zone of occupation until 1918.",
+   "wikipedia": "Serbian_campaign",
+   "search": "Serbian campaign 1915 Mackensen Belgrade 9 October Bulgaria enters war Niš Kosovo Serbian army retreat through Albania Corfu Austro-Hungarian and Bulgarian occupation zones"
+  },
+  {
+   "id": "montenegro-occupied-1916",
+   "kind": "war",
+   "year": 1916,
+   "title": "Austria-Hungary conquers Montenegro, January 1916",
+   "place": "Montenegro",
+   "lonLat": [
+    19.1,
+    42.6
+   ],
+   "civs": [
+    "montenegro",
+    "austria-hungary"
+   ],
+   "summary": "In January 1916 Austro-Hungarian troops storm Mount Lovćen and take Cetinje. Montenegro capitulates, King Nicholas flees to Italy, and the country is ruled by an Austro-Hungarian military government until the autumn of 1918.",
+   "wikipedia": "Montenegrin_campaign_of_World_War_I",
+   "search": "Montenegrin campaign January 1916 Mount Lovćen Cetinje falls capitulation King Nicholas exile Austro-Hungarian military governorate"
+  },
+  {
+   "id": "albania-in-world-war-i-1916",
+   "kind": "war",
+   "year": 1916,
+   "to": 1918,
+   "title": "Albania divided among the warring powers, 1914 – 1918",
+   "place": "Albania",
+   "lonLat": [
+    20.0,
+    41.0
+   ],
+   "civs": [
+    "albania",
+    "austria-hungary",
+    "italy",
+    "france",
+    "greece",
+    "montenegro"
+   ],
+   "summary": "Neutral Albania is soon occupied from every side. Italy lands at Vlorë in December 1914, and Montenegro takes Shkodër in 1915. In 1916 Austria-Hungary occupies the north and centre, Italy pushes into the south and France takes Korçë, where it sets up an autonomous Albanian republic. The front runs across the country until the autumn of 1918.",
+   "wikipedia": "Albania_during_World_War_I",
+   "search": "Albania during World War I Italy Vlorë December 1914 Montenegro Shkodër 1915 Austria-Hungary north and centre 1916 France Korçë Italy Gjirokastër front on the Vjosa"
+  },
+  {
+   "id": "vardar-offensive-1918",
+   "kind": "war",
+   "year": 1918,
+   "title": "The Allies break through in Macedonia and free Serbia, 1918",
+   "place": "Macedonia",
+   "lonLat": [
+    21.6,
+    41.6
+   ],
+   "civs": [
+    "serbia",
+    "bulgaria",
+    "france",
+    "austria-hungary",
+    "germany"
+   ],
+   "summary": "On 15 September 1918 Serbian and French troops break the Bulgarian front at Dobro Pole. Bulgaria signs the Armistice of Salonica on 29 September, and the Serbian army drives north through Macedonia, Kosovo and Serbia, retaking Niš in October and Belgrade on 1 November.",
+   "wikipedia": "Vardar_offensive",
+   "search": "Vardar offensive Dobro Pole September 1918 Armistice of Salonica 29 September Bulgaria Skopje Niš Belgrade 1 November liberation of Serbia"
+  },
+  {
+   "id": "creation-of-yugoslavia-1918",
+   "kind": "empire",
+   "year": 1918,
+   "title": "The Kingdom of Serbs, Croats and Slovenes is created, December 1918",
+   "place": "Belgrade",
+   "lonLat": [
+    20.47,
+    44.82
+   ],
+   "civs": [
+    "yugoslavia",
+    "serbia",
+    "montenegro",
+    "bosnia-and-herzegovina",
+    "croatia",
+    "slovenia",
+    "austria-hungary"
+   ],
+   "summary": "As Austria-Hungary collapses, its South Slav lands, including Bosnia, form a State of Slovenes, Croats and Serbs in October 1918. In November an assembly at Podgorica deposes King Nicholas and votes to join Montenegro to Serbia. On 1 December 1918 Prince Regent Alexander proclaims the Kingdom of Serbs, Croats and Slovenes in Belgrade.",
+   "wikipedia": "Creation_of_Yugoslavia",
+   "search": "Creation of Yugoslavia 1 December 1918 Kingdom of Serbs Croats and Slovenes State of Slovenes Croats and Serbs Podgorica Assembly Montenegro union Prince Regent Alexander"
+  },
+  {
+   "id": "treaty-of-neuilly-1919",
+   "kind": "treaty",
+   "year": 1919,
+   "title": "The Treaty of Neuilly cuts back Bulgaria, 1919",
+   "place": "Western Outlands",
+   "lonLat": [
+    22.6,
+    42.6
+   ],
+   "civs": [
+    "bulgaria",
+    "yugoslavia",
+    "greece"
+   ],
+   "summary": "By the Treaty of Neuilly of 27 November 1919 Bulgaria gives the Western Outlands around Caribrod and Bosilegrad and the Strumica valley to the Kingdom of Serbs, Croats and Slovenes, and Western Thrace to the Allies. The treaty comes into force on 9 August 1920.",
+   "wikipedia": "Treaty_of_Neuilly-sur-Seine",
+   "search": "Treaty of Neuilly 27 November 1919 Bulgaria cedes Western Outlands Caribrod Bosilegrad Strumica to Yugoslavia Western Thrace to the Allies reparations in force 9 August 1920"
+  },
+  {
+   "id": "vlora-war-1920",
+   "kind": "war",
+   "year": 1920,
+   "title": "Albania wins back its land: Lushnjë and the Vlora War, 1920",
+   "place": "Vlorë",
+   "lonLat": [
+    19.55,
+    40.45
+   ],
+   "civs": [
+    "albania",
+    "italy"
+   ],
+   "summary": "In January 1920 the Congress of Lushnjë sets up a new Albanian government, which moves to Tirana. French troops leave Korçë in May, and in the summer Albanian fighters besiege the Italian garrison in Vlorë. By the Tirana protocol of 2 August Italy agrees to leave, keeping only the island of Sazan, and its last troops sail in September.",
+   "wikipedia": "Vlora_War",
+   "search": "Congress of Lushnjë January 1920 Tirana capital Vlora War June August 1920 Italian withdrawal Tirana protocol 2 August 1920 Sazan French leave Korçë"
+  },
+  {
+   "id": "albanian-borders-1921",
+   "kind": "treaty",
+   "year": 1921,
+   "title": "The Great Powers confirm Albania's borders, November 1921",
+   "place": "Northern Albania",
+   "lonLat": [
+    20.4,
+    41.75
+   ],
+   "civs": [
+    "albania",
+    "yugoslavia"
+   ],
+   "summary": "Yugoslav troops had held parts of northern Albania since 1918 and backed a breakaway Republic of Mirdita. On 9 November 1921 the Conference of Ambassadors confirms Albania's borders of 1913 with small changes, and under pressure from the League of Nations the Yugoslav army withdraws.",
+   "wikipedia": "Republic_of_Mirdita",
+   "search": "Conference of Ambassadors 9 November 1921 Albania 1913 borders confirmed Yugoslav troops withdraw Republic of Mirdita League of Nations"
+  },
+  {
+   "id": "albanian-republic-1925",
+   "kind": "revolution",
+   "year": 1925,
+   "title": "Albania becomes a republic under Ahmet Zogu, 1925",
+   "place": "Tirana",
+   "lonLat": [
+    19.84,
+    41.31
+   ],
+   "civs": [
+    "albania"
+   ],
+   "summary": "After the June Revolution of 1924 put Fan Noli in power, Ahmet Zogu returns with Yugoslav backing in December. On 31 January 1925 Albania is proclaimed a republic, with Zogu as its president holding wide powers.",
+   "wikipedia": "Albanian_Republic",
+   "search": "Albanian Republic 31 January 1925 Ahmet Zogu president June Revolution 1924 Fan Noli Zogu returns December 1924 Yugoslav support"
+  },
+  {
+   "id": "albanian-kingdom-1928",
+   "kind": "crown",
+   "year": 1928,
+   "title": "Zogu makes himself King Zog I, 1928",
+   "place": "Tirana",
+   "lonLat": [
+    19.8,
+    41.34
+   ],
+   "civs": [
+    "albania"
+   ],
+   "summary": "On 1 September 1928 President Ahmet Zogu has the assembly proclaim Albania a kingdom and takes the title of Zog I, King of the Albanians. He rules until the Italian invasion of 1939, while Italy gains growing control over the country's economy.",
+   "wikipedia": "Albanian_Kingdom_(1928–1939)",
+   "search": "Albanian Kingdom 1 September 1928 Zog I King of the Albanians constitutional monarchy Italian influence Tirana"
+  },
+  {
+   "id": "kingdom-of-yugoslavia-1929",
+   "kind": "crown",
+   "year": 1929,
+   "title": "King Alexander's dictatorship and the Kingdom of Yugoslavia, 1929",
+   "place": "Belgrade",
+   "lonLat": [
+    20.44,
+    44.79
+   ],
+   "civs": [
+    "yugoslavia"
+   ],
+   "summary": "After a deputy shoots Croatian leaders in parliament in 1928, King Alexander suspends the constitution on 6 January 1929 and rules as dictator. On 3 October he renames the country the Kingdom of Yugoslavia and redraws it into new provinces, the banovinas, cutting across the old historical lands.",
+   "wikipedia": "Kingdom_of_Yugoslavia",
+   "search": "6 January Dictatorship 1929 King Alexander suspends constitution renamed Kingdom of Yugoslavia 3 October 1929 banovinas"
   }
  ]
 }
