@@ -2978,6 +2978,50 @@
   "es": "España",
   "periods": [
    {
+    "from": "1833-09-29",
+    "name": "Reign of Isabella II",
+    "wikipedia": "Isabella II",
+    "fr": "Règne d’Isabelle II",
+    "es": "Reinado de Isabel II",
+    "note": "The reign of Queen Isabella II, until the revolution of September 1868",
+    "detail": "Isabella II",
+    "detailFr": "Isabelle II",
+    "detailEs": "Isabel II"
+   },
+   {
+    "from": "1868-09-30",
+    "name": "Democratic Sexennium",
+    "wikipedia": "Sexenio Democrático",
+    "fr": "Sexennat démocratique",
+    "es": "Sexenio Democrático",
+    "note": "The Glorious Revolution drives out Isabella II; a provisional government rules until the new king arrives",
+    "detail": "Provisional Government",
+    "detailFr": "Gouvernement provisoire",
+    "detailEs": "Gobierno provisional"
+   },
+   {
+    "from": "1871-01-02",
+    "name": "Reign of Amadeo I",
+    "wikipedia": "Amadeo I of Spain",
+    "fr": "Règne d’Amédée Ier",
+    "es": "Reinado de Amadeo I",
+    "note": "The elected king Amadeo of Savoy, until his abdication in February 1873",
+    "detail": "Amadeo I",
+    "detailFr": "Amédée Ier",
+    "detailEs": "Amadeo I"
+   },
+   {
+    "from": "1873-02-11",
+    "name": "First Spanish Republic",
+    "wikipedia": "First Spanish Republic",
+    "fr": "Première République espagnole",
+    "es": "Primera República Española",
+    "note": "The First Republic, until the Bourbon restoration of December 1874",
+    "detail": "First Republic",
+    "detailFr": "Première République",
+    "detailEs": "Primera República"
+   },
+   {
     "from": "1874-12-29",
     "name": "Restoration",
     "wikipedia": "Restoration (Spain)",
@@ -4841,5 +4885,30 @@
   "wikidata": "Q37102",
   "fr": "République du Rif",
   "es": "República del Rif"
+ },
+ "Santo Domingo": {
+  "wikipedia": "Annexation of Santo Domingo",
+  "wikidata": "Q127689726",
+  "fr": "Saint-Domingue espagnol",
+  "es": "Santo Domingo"
+ },
+ "Philippine Republic": {
+  "wikipedia": "First Philippine Republic",
+  "wikidata": "Q1361989",
+  "fr": "Première République des Philippines",
+  "es": "Primera República Filipina"
+ },
+ "Sultanate of Sulu": {
+  "wikipedia": "Sultanate of Sulu",
+  "wikidata": "Q422065",
+  "fr": "Sultanat de Sulu",
+  "es": "Sultanato de Joló"
+ },
+ "Carlist State": {
+  "wikipedia": "Third Carlist War",
+  "wikidata": "Q957532",
+  "fr": "État carliste",
+  "es": "Estado carlista",
+  "notACountry": true
  }
 }

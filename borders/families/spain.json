@@ -6,7 +6,7 @@
    "pieces": [
     "ESP"
    ],
-   "from": 1898,
+   "from": 1860,
    "why": "Spain with the Balearic and Canary Islands, Ceuta and Melilla"
   },
   {
@@ -16,14 +16,14 @@
     "western-sahara-3457",
     "western-sahara-3469"
    ],
-   "from": 1898,
+   "from": 1860,
    "why": "Western Sahara: Spanish Sahara until 1976, then held by Morocco west of its sand wall (and by Mauritania in the south until 1979)"
   },
   {
    "pieces": [
     "GNQ"
    ],
-   "from": 1898,
+   "from": 1860,
    "why": "Equatorial Guinea: Spanish Guinea (Fernando Po, Annobón and Río Muni) until 1968"
   },
   {
@@ -32,8 +32,44 @@
     "PLW",
     "MNP"
    ],
-   "from": 1898,
+   "from": 1860,
    "why": "The Caroline Islands (Micronesia), Palau and the Northern Mariana Islands: Spanish until 1899, then German, Japanese (a League of Nations mandate) and a US-administered UN trust territory"
+  },
+  {
+   "pieces": [
+    "CUB",
+    "USG"
+   ],
+   "from": 1860,
+   "why": "Cuba: Spanish until 1898, under US military rule 1899-1902, then independent"
+  },
+  {
+   "pieces": [
+    "PRI"
+   ],
+   "from": 1860,
+   "why": "Puerto Rico: Spanish until 1898, then a US territory"
+  },
+  {
+   "pieces": [
+    "PHL"
+   ],
+   "from": 1860,
+   "why": "The Philippines: Spanish East Indies until 1898 (with Sulu a protected sultanate), then US, occupied by Japan 1942-45, independent from 1946"
+  },
+  {
+   "pieces": [
+    "GUM"
+   ],
+   "from": 1860,
+   "why": "Guam: Spanish until 1898, then US (occupied by Japan 1941-44)"
+  },
+  {
+   "pieces": [
+    "DOM"
+   ],
+   "from": 1860,
+   "why": "The Dominican Republic: annexed by Spain 1861-65, occupied by the United States 1916-24"
   }
  ],
  "changes": [
@@ -176,6 +212,60 @@
       "url": "https://en.wikipedia.org/wiki/Spanish_Guinea"
      },
      "territory": "Spanish Guinea"
+    }
+   ]
+  },
+  {
+   "date": "1966-09-21",
+   "what": "The last US and Inter-American troops leave the Dominican Republic",
+   "source": {
+    "title": "Dominican Civil War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Dominican_Civil_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "DOM-1985",
+      "DOM-1394"
+     ],
+     "owner": "Dominican Republic",
+     "source": {
+      "title": "Dominican Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Dominican_Civil_War"
+     },
+     "hatch": {
+      "by": "United States",
+      "since": "1965-04-28",
+      "note": "US troops, joined by the OAS Inter-American Peace Force, held Santo Domingo during the civil war of 1965 until September 1966",
+      "source": {
+       "title": "Dominican Civil War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Dominican_Civil_War"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1965-04-28",
+   "what": "US Marines land in Santo Domingo during the Dominican civil war",
+   "source": {
+    "title": "Dominican Civil War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Dominican_Civil_War"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "DOM-1985",
+      "DOM-1394"
+     ],
+     "owner": "Dominican Republic",
+     "source": {
+      "title": "Dominican Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Dominican_Republic"
+     }
     }
    ]
   },
@@ -335,6 +425,145 @@
    ]
   },
   {
+   "date": "1946-07-04",
+   "what": "The Philippines becomes independent from the United States by the Treaty of Manila",
+   "source": {
+    "title": "Treaty of Manila (1946) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Manila_(1946)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "PHL-2511",
+      "PHL-2513",
+      "PHL-2514",
+      "PHL-2516",
+      "PHL-2517",
+      "PHL-2518",
+      "PHL-2519",
+      "PHL-2520",
+      "PHL-2521",
+      "PHL-2522",
+      "PHL-2523",
+      "PHL-2524",
+      "PHL-2525",
+      "PHL-2526",
+      "PHL-2528",
+      "PHL-2529",
+      "PHL-2530",
+      "PHL-2534",
+      "PHL-2535",
+      "PHL-2536",
+      "PHL-2537",
+      "PHL-2538",
+      "PHL-2539",
+      "PHL-2540",
+      "PHL-2541",
+      "PHL-2542",
+      "PHL-2543",
+      "PHL-2545",
+      "PHL-2546",
+      "PHL-2547",
+      "PHL-2548",
+      "PHL-2549",
+      "PHL-2550",
+      "PHL-2551",
+      "PHL-2552",
+      "PHL-2553",
+      "PHL-2554",
+      "PHL-2555",
+      "PHL-2556",
+      "PHL-2557",
+      "PHL-2558",
+      "PHL-2559",
+      "PHL-2560",
+      "PHL-2561",
+      "PHL-2562",
+      "PHL-2563",
+      "PHL-2564",
+      "PHL-2565",
+      "PHL-2566",
+      "PHL-2567",
+      "PHL-2569",
+      "PHL-2570",
+      "PHL-2571",
+      "PHL-2572",
+      "PHL-2573",
+      "PHL-2574",
+      "PHL-2576",
+      "PHL-2579",
+      "PHL-2580",
+      "PHL-2581",
+      "PHL-2582",
+      "PHL-2583",
+      "PHL-2584",
+      "PHL-2585",
+      "PHL-2586",
+      "PHL-2587",
+      "PHL-2588",
+      "PHL-2589",
+      "PHL-2590",
+      "PHL-2591",
+      "PHL-2592",
+      "PHL-2593",
+      "PHL-2594",
+      "PHL-2595",
+      "PHL-2596",
+      "PHL-2597",
+      "PHL-2598",
+      "PHL-2599",
+      "PHL-4931",
+      "PHL-4932",
+      "PHL-5522",
+      "PHL-5523",
+      "PHL-5524",
+      "PHL-5525",
+      "PHL-5526",
+      "PHL-5527",
+      "PHL-5528",
+      "PHL-5529",
+      "PHL-5530",
+      "PHL-5531",
+      "PHL-5532",
+      "PHL-5533",
+      "PHL-5534",
+      "PHL-5535",
+      "PHL-5536",
+      "PHL-5537",
+      "PHL-5538",
+      "PHL-5539",
+      "PHL-5540",
+      "PHL-5541",
+      "PHL-5542",
+      "PHL-5543",
+      "PHL-5544",
+      "PHL-5545",
+      "PHL-5546",
+      "PHL-5547",
+      "PHL-5549",
+      "PHL-5550",
+      "PHL-5551",
+      "PHL-5552",
+      "PHL-5553",
+      "PHL-5554",
+      "PHL-5555",
+      "PHL-5556",
+      "PHL-5557",
+      "PHL-5558",
+      "PHL-5559",
+      "PHL-5560"
+     ],
+     "owner": "United States",
+     "source": {
+      "title": "Commonwealth of the Philippines (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Commonwealth_of_the_Philippines"
+     },
+     "territory": "Philippines"
+    }
+   ]
+  },
+  {
    "date": "1945-09-02",
    "what": "Japan surrenders; its garrisons on the islands the US had bypassed (Chuuk, Pohnpei, Yap, Palau, Rota) give up",
    "source": {
@@ -435,6 +664,206 @@
    ]
   },
   {
+   "date": "1945-07-05",
+   "what": "General MacArthur announces the liberation of the whole of the Philippines",
+   "source": {
+    "title": "Philippines campaign (1944–1945) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Philippines_campaign_(1944–1945)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "PHL-2549",
+      "PHL-2572",
+      "PHL-2537",
+      "PHL-2538",
+      "PHL-2536",
+      "PHL-2541",
+      "PHL-5560",
+      "PHL-2564",
+      "PHL-2563",
+      "PHL-5556",
+      "PHL-5555",
+      "PHL-5554",
+      "PHL-5543",
+      "PHL-5544",
+      "PHL-2565",
+      "PHL-2558",
+      "PHL-2555",
+      "PHL-5540",
+      "PHL-2560",
+      "PHL-2562",
+      "PHL-5541",
+      "PHL-2561",
+      "PHL-2548",
+      "PHL-2547",
+      "PHL-2545",
+      "PHL-2550",
+      "PHL-2535",
+      "PHL-2571",
+      "PHL-2570",
+      "PHL-2569",
+      "PHL-2539",
+      "PHL-2543",
+      "PHL-5557",
+      "PHL-5545",
+      "PHL-5546",
+      "PHL-5547",
+      "PHL-5549",
+      "PHL-2557",
+      "PHL-2566",
+      "PHL-2567",
+      "PHL-5558",
+      "PHL-5550",
+      "PHL-5552",
+      "PHL-2554",
+      "PHL-5537",
+      "PHL-2553",
+      "PHL-2559",
+      "PHL-2551",
+      "PHL-2552",
+      "PHL-2556",
+      "PHL-2546",
+      "PHL-4931",
+      "PHL-2542",
+      "PHL-5536",
+      "PHL-5538",
+      "PHL-5539",
+      "PHL-5553",
+      "PHL-5559",
+      "PHL-5542",
+      "PHL-5551"
+     ],
+     "owner": "United States",
+     "source": {
+      "title": "Japanese occupation of the Philippines (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Philippines"
+     },
+     "territory": "Philippines",
+     "hatch": {
+      "by": "Japan",
+      "since": "1942-01-02",
+      "note": "Occupied by Japan from the fall of Manila (2 January 1942); Bataan held out until April and Corregidor until May 1942",
+      "source": {
+       "title": "Japanese occupation of the Philippines (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Philippines"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "PHL-2524",
+      "PHL-2591",
+      "PHL-2521",
+      "PHL-2534",
+      "PHL-2593",
+      "PHL-2594",
+      "PHL-2587",
+      "PHL-5532",
+      "PHL-2595",
+      "PHL-5531",
+      "PHL-5530",
+      "PHL-2573",
+      "PHL-2522",
+      "PHL-2523",
+      "PHL-2520",
+      "PHL-4932",
+      "PHL-2574",
+      "PHL-2576",
+      "PHL-5527",
+      "PHL-2580",
+      "PHL-2598",
+      "PHL-5529",
+      "PHL-2596",
+      "PHL-5528",
+      "PHL-2592",
+      "PHL-2597",
+      "PHL-2511",
+      "PHL-2519",
+      "PHL-2590",
+      "PHL-2517",
+      "PHL-2513",
+      "PHL-2530",
+      "PHL-5525",
+      "PHL-2518",
+      "PHL-2516",
+      "PHL-5522",
+      "PHL-5523",
+      "PHL-2514",
+      "PHL-5533",
+      "PHL-2525",
+      "PHL-2526",
+      "PHL-2529",
+      "PHL-5526",
+      "PHL-2528",
+      "PHL-2540",
+      "PHL-5524",
+      "PHL-2588",
+      "PHL-2589",
+      "PHL-2579",
+      "PHL-2599"
+     ],
+     "owner": "United States",
+     "source": {
+      "title": "Japanese occupation of the Philippines (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Philippines"
+     },
+     "territory": "Philippines",
+     "hatch": {
+      "by": "Japan",
+      "since": "1942-05-10",
+      "note": "Occupied by Japan after the US and Filipino forces in the Visayas and Mindanao surrendered in May 1942",
+      "source": {
+       "title": "Japanese occupation of the Philippines (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Philippines"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-12-25",
+   "what": "US forces complete the liberation of Leyte and Samar",
+   "source": {
+    "title": "Battle of Leyte (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Leyte"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "PHL-2585",
+      "PHL-2583",
+      "PHL-2582",
+      "PHL-2581",
+      "PHL-2584",
+      "PHL-5535",
+      "PHL-5534",
+      "PHL-2586"
+     ],
+     "owner": "United States",
+     "source": {
+      "title": "Japanese occupation of the Philippines (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Philippines"
+     },
+     "territory": "Philippines",
+     "hatch": {
+      "by": "Japan",
+      "since": "1942-05-10",
+      "note": "Occupied by Japan after the US and Filipino forces in the Visayas and Mindanao surrendered in May 1942",
+      "source": {
+       "title": "Japanese occupation of the Philippines (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Philippines"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
    "date": "1944-11-27",
    "what": "US forces complete the capture of Peleliu and Angaur in Palau",
    "source": {
@@ -464,6 +893,38 @@
       },
       "trust": true,
       "confirmed": "1920-12-17"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-08-10",
+   "what": "US forces retake Guam from Japan",
+   "source": {
+    "title": "Battle of Guam (1944) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Guam_(1944)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "GUM"
+     ],
+     "owner": "United States",
+     "source": {
+      "title": "Japanese occupation of Guam (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Guam"
+     },
+     "territory": "Guam",
+     "hatch": {
+      "by": "Japan",
+      "since": "1941-12-10",
+      "note": "Occupied by Japan from 10 December 1941",
+      "source": {
+       "title": "Japanese occupation of Guam (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Japanese_occupation_of_Guam"
+      },
+      "occupied": true
      }
     }
    ]
@@ -531,6 +992,188 @@
       "trust": true,
       "confirmed": "1920-12-17"
      }
+    }
+   ]
+  },
+  {
+   "date": "1942-05-10",
+   "what": "The last US and Filipino forces in the Visayas and Mindanao surrender to Japan",
+   "source": {
+    "title": "Philippines campaign (1941–1942) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Philippines_campaign_(1941–1942)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "PHL-2524",
+      "PHL-2591",
+      "PHL-2521",
+      "PHL-2534",
+      "PHL-2593",
+      "PHL-2594",
+      "PHL-2587",
+      "PHL-5532",
+      "PHL-2595",
+      "PHL-5531",
+      "PHL-5530",
+      "PHL-2573",
+      "PHL-2522",
+      "PHL-2523",
+      "PHL-2520",
+      "PHL-4932",
+      "PHL-2574",
+      "PHL-2576",
+      "PHL-5527",
+      "PHL-2580",
+      "PHL-2598",
+      "PHL-5529",
+      "PHL-2596",
+      "PHL-5528",
+      "PHL-2592",
+      "PHL-2597",
+      "PHL-2511",
+      "PHL-2519",
+      "PHL-2590",
+      "PHL-2517",
+      "PHL-2513",
+      "PHL-2530",
+      "PHL-5525",
+      "PHL-2518",
+      "PHL-2516",
+      "PHL-5522",
+      "PHL-5523",
+      "PHL-2514",
+      "PHL-5533",
+      "PHL-2525",
+      "PHL-2526",
+      "PHL-2529",
+      "PHL-5526",
+      "PHL-2528",
+      "PHL-2540",
+      "PHL-5524",
+      "PHL-2588",
+      "PHL-2589",
+      "PHL-2579",
+      "PHL-2599",
+      "PHL-2585",
+      "PHL-2583",
+      "PHL-2582",
+      "PHL-2581",
+      "PHL-2584",
+      "PHL-5535",
+      "PHL-5534",
+      "PHL-2586"
+     ],
+     "owner": "United States",
+     "source": {
+      "title": "Commonwealth of the Philippines (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Commonwealth_of_the_Philippines"
+     },
+     "territory": "Philippines"
+    }
+   ]
+  },
+  {
+   "date": "1942-01-02",
+   "what": "Japanese forces enter Manila; Luzon falls except Bataan and Corregidor",
+   "source": {
+    "title": "Philippines campaign (1941–1942) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Philippines_campaign_(1941–1942)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "PHL-2549",
+      "PHL-2572",
+      "PHL-2537",
+      "PHL-2538",
+      "PHL-2536",
+      "PHL-2541",
+      "PHL-5560",
+      "PHL-2564",
+      "PHL-2563",
+      "PHL-5556",
+      "PHL-5555",
+      "PHL-5554",
+      "PHL-5543",
+      "PHL-5544",
+      "PHL-2565",
+      "PHL-2558",
+      "PHL-2555",
+      "PHL-5540",
+      "PHL-2560",
+      "PHL-2562",
+      "PHL-5541",
+      "PHL-2561",
+      "PHL-2548",
+      "PHL-2547",
+      "PHL-2545",
+      "PHL-2550",
+      "PHL-2535",
+      "PHL-2571",
+      "PHL-2570",
+      "PHL-2569",
+      "PHL-2539",
+      "PHL-2543",
+      "PHL-5557",
+      "PHL-5545",
+      "PHL-5546",
+      "PHL-5547",
+      "PHL-5549",
+      "PHL-2557",
+      "PHL-2566",
+      "PHL-2567",
+      "PHL-5558",
+      "PHL-5550",
+      "PHL-5552",
+      "PHL-2554",
+      "PHL-5537",
+      "PHL-2553",
+      "PHL-2559",
+      "PHL-2551",
+      "PHL-2552",
+      "PHL-2556",
+      "PHL-2546",
+      "PHL-4931",
+      "PHL-2542",
+      "PHL-5536",
+      "PHL-5538",
+      "PHL-5539",
+      "PHL-5553",
+      "PHL-5559",
+      "PHL-5542",
+      "PHL-5551"
+     ],
+     "owner": "United States",
+     "source": {
+      "title": "Commonwealth of the Philippines (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Commonwealth_of_the_Philippines"
+     },
+     "territory": "Philippines"
+    }
+   ]
+  },
+  {
+   "date": "1941-12-10",
+   "what": "Japan takes Guam",
+   "source": {
+    "title": "Battle of Guam (1941) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Guam_(1941)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "GUM"
+     ],
+     "owner": "United States",
+     "source": {
+      "title": "Guam (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Guam"
+     },
+     "territory": "Guam"
     }
    ]
   },
@@ -753,7 +1396,8 @@
       "MAR-1445",
       "spanish-morocco-taza",
       "spanish-morocco-oriental",
-      "rif-jebala"
+      "rif-jebala",
+      "tetouan-1860"
      ],
      "owner": "Spain",
      "source": {
@@ -1057,7 +1701,8 @@
       "MAR-1445",
       "spanish-morocco-taza",
       "spanish-morocco-oriental",
-      "rif-jebala"
+      "rif-jebala",
+      "tetouan-1860"
      ],
      "owner": "Spain",
      "source": {
@@ -1354,7 +1999,8 @@
       "MAR-1445",
       "spanish-morocco-taza",
       "spanish-morocco-oriental",
-      "rif-jebala"
+      "rif-jebala",
+      "tetouan-1860"
      ],
      "owner": "Spain",
      "source": {
@@ -1629,7 +2275,8 @@
       "MAR-1445",
       "spanish-morocco-taza",
       "spanish-morocco-oriental",
-      "rif-jebala"
+      "rif-jebala",
+      "tetouan-1860"
      ],
      "owner": "Spain",
      "source": {
@@ -1886,7 +2533,8 @@
       "MAR-1445",
       "spanish-morocco-taza",
       "spanish-morocco-oriental",
-      "rif-jebala"
+      "rif-jebala",
+      "tetouan-1860"
      ],
      "owner": "Spain",
      "source": {
@@ -2123,7 +2771,8 @@
       "MAR-1445",
       "spanish-morocco-taza",
       "spanish-morocco-oriental",
-      "rif-jebala"
+      "rif-jebala",
+      "tetouan-1860"
      ],
      "owner": "Spain",
      "source": {
@@ -2341,7 +2990,8 @@
       "MAR-1445",
       "spanish-morocco-taza",
       "spanish-morocco-oriental",
-      "rif-jebala"
+      "rif-jebala",
+      "tetouan-1860"
      ],
      "owner": "Spain",
      "source": {
@@ -2540,7 +3190,8 @@
       "MAR-1445",
       "spanish-morocco-taza",
       "spanish-morocco-oriental",
-      "rif-jebala"
+      "rif-jebala",
+      "tetouan-1860"
      ],
      "owner": "Spain",
      "source": {
@@ -2721,7 +3372,8 @@
       "MAR-1445",
       "spanish-morocco-taza",
       "spanish-morocco-oriental",
-      "rif-jebala"
+      "rif-jebala",
+      "tetouan-1860"
      ],
      "owner": "Spain",
      "source": {
@@ -2903,6 +3555,68 @@
    ]
   },
   {
+   "date": "1924-07-12",
+   "what": "The US military government ends and the Marines leave the Dominican Republic",
+   "source": {
+    "title": "Military Government of Santo Domingo (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Military_Government_of_Santo_Domingo"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "DOM-1390",
+      "DOM-1391",
+      "DOM-1392",
+      "DOM-1393",
+      "DOM-1394",
+      "DOM-1395",
+      "DOM-1396",
+      "DOM-1964",
+      "DOM-1965",
+      "DOM-1966",
+      "DOM-1967",
+      "DOM-1968",
+      "DOM-1969",
+      "DOM-1970",
+      "DOM-1971",
+      "DOM-1972",
+      "DOM-1973",
+      "DOM-1974",
+      "DOM-1975",
+      "DOM-1976",
+      "DOM-1977",
+      "DOM-1978",
+      "DOM-1979",
+      "DOM-1980",
+      "DOM-1981",
+      "DOM-1982",
+      "DOM-1983",
+      "DOM-1984",
+      "DOM-1985",
+      "DOM-1986",
+      "DOM-1987",
+      "DOM-1988"
+     ],
+     "owner": "Dominican Republic",
+     "source": {
+      "title": "Military Government of Santo Domingo (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Military_Government_of_Santo_Domingo"
+     },
+     "hatch": {
+      "by": "United States",
+      "since": "1916-11-29",
+      "note": "US Marines landed in May 1916 and a US military government ruled from 29 November 1916 until July 1924",
+      "source": {
+       "title": "Military Government of Santo Domingo (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Military_Government_of_Santo_Domingo"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
    "date": "1921-07-22",
    "what": "The Rif tribes under Abd el-Krim rout the Spanish army at Annual; Spain loses the eastern zone up to Melilla",
    "source": {
@@ -2959,6 +3673,58 @@
    ]
   },
   {
+   "date": "1916-11-29",
+   "what": "The United States proclaims a military government over the Dominican Republic",
+   "source": {
+    "title": "Military Government of Santo Domingo (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Military_Government_of_Santo_Domingo"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "DOM-1390",
+      "DOM-1391",
+      "DOM-1392",
+      "DOM-1393",
+      "DOM-1394",
+      "DOM-1395",
+      "DOM-1396",
+      "DOM-1964",
+      "DOM-1965",
+      "DOM-1966",
+      "DOM-1967",
+      "DOM-1968",
+      "DOM-1969",
+      "DOM-1970",
+      "DOM-1971",
+      "DOM-1972",
+      "DOM-1973",
+      "DOM-1974",
+      "DOM-1975",
+      "DOM-1976",
+      "DOM-1977",
+      "DOM-1978",
+      "DOM-1979",
+      "DOM-1980",
+      "DOM-1981",
+      "DOM-1982",
+      "DOM-1983",
+      "DOM-1984",
+      "DOM-1985",
+      "DOM-1986",
+      "DOM-1987",
+      "DOM-1988"
+     ],
+     "owner": "Dominican Republic",
+     "source": {
+      "title": "Dominican Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Dominican_Republic"
+     }
+    }
+   ]
+  },
+  {
    "date": "1914-10-14",
    "what": "Japan takes Germany's islands north of the equator: the Marshalls, the Carolines, Palau and the Marianas",
    "source": {
@@ -2979,6 +3745,53 @@
       "url": "https://en.wikipedia.org/wiki/German_New_Guinea"
      },
      "territory": "German New Guinea"
+    }
+   ]
+  },
+  {
+   "date": "1902-05-20",
+   "what": "The Republic of Cuba takes office and US troops leave",
+   "source": {
+    "title": "Military Government of Cuba (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Military_Government_of_Cuba"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "CUB-1319",
+      "CUB-1320",
+      "CUB-1321",
+      "CUB-1322",
+      "CUB-1363",
+      "CUB-1364",
+      "CUB-1365",
+      "CUB-1366",
+      "CUB-1367",
+      "CUB-1368",
+      "CUB-1369",
+      "CUB-1428",
+      "CUB-1429",
+      "CUB-1430",
+      "CUB-1431",
+      "CUB-5489",
+      "USG"
+     ],
+     "owner": "Cuba",
+     "source": {
+      "title": "Military Government of Cuba (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Military_Government_of_Cuba"
+     },
+     "hatch": {
+      "by": "United States",
+      "since": "1899-01-01",
+      "note": "Ruled by the US Military Government of Cuba from Spain's departure on 1 January 1899 until the Republic of Cuba took office on 20 May 1902",
+      "source": {
+       "title": "Military Government of Cuba (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Military_Government_of_Cuba"
+      },
+      "occupied": true
+     }
     }
    ]
   },
@@ -3007,6 +3820,79 @@
    ]
   },
   {
+   "date": "1899-11-13",
+   "what": "Aguinaldo disbands the Philippine regular army and turns to guerrilla war: the Philippine Republic no longer holds land",
+   "source": {
+    "title": "Philippine–American War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Philippine–American_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "PHL-2549",
+      "PHL-2572",
+      "PHL-2537",
+      "PHL-2538",
+      "PHL-2536",
+      "PHL-2541",
+      "PHL-5560",
+      "PHL-2564",
+      "PHL-2563",
+      "PHL-2565",
+      "PHL-2558",
+      "PHL-2555",
+      "PHL-5540",
+      "PHL-2560",
+      "PHL-2562",
+      "PHL-5541",
+      "PHL-2561",
+      "PHL-2548",
+      "PHL-2547",
+      "PHL-2545",
+      "PHL-2550",
+      "PHL-2535",
+      "PHL-2571",
+      "PHL-2570",
+      "PHL-2569",
+      "PHL-2539",
+      "PHL-2543",
+      "PHL-2557",
+      "PHL-2566",
+      "PHL-2567",
+      "PHL-2554",
+      "PHL-5537",
+      "PHL-2553",
+      "PHL-2559",
+      "PHL-2551",
+      "PHL-2552",
+      "PHL-2556",
+      "PHL-2546",
+      "PHL-4931",
+      "PHL-2542",
+      "PHL-5536",
+      "PHL-5538",
+      "PHL-5539"
+     ],
+     "owner": "United States",
+     "source": {
+      "title": "First Philippine Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/First_Philippine_Republic"
+     },
+     "territory": "Philippines",
+     "hatch": {
+      "by": "Philippine Republic",
+      "since": "1898-06-12",
+      "note": "Held by the Philippine revolutionaries, who declared independence on 12 June 1898 and set up the Malolos Republic; lost to US forces in 1899",
+      "source": {
+       "title": "First Philippine Republic (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/First_Philippine_Republic"
+      }
+     }
+    }
+   ]
+  },
+  {
    "date": "1899-06-30",
    "what": "By the German-Spanish Treaty of 1899, Spain sells the Caroline Islands, Palau and the Northern Marianas to Germany after losing the Philippines and Guam",
    "source": {
@@ -3027,6 +3913,820 @@
       "url": "https://en.wikipedia.org/wiki/Spanish_East_Indies"
      },
      "territory": "Spanish East Indies"
+    }
+   ]
+  },
+  {
+   "date": "1899-04-11",
+   "what": "The Treaty of Paris comes into force: Spain cedes the Philippines to the United States",
+   "source": {
+    "title": "Treaty of Paris (1898) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Paris_(1898)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "PHL-2549",
+      "PHL-2572",
+      "PHL-2537",
+      "PHL-2538",
+      "PHL-2536",
+      "PHL-2541",
+      "PHL-5560",
+      "PHL-2564",
+      "PHL-2563",
+      "PHL-2565",
+      "PHL-2558",
+      "PHL-2555",
+      "PHL-5540",
+      "PHL-2560",
+      "PHL-2562",
+      "PHL-5541",
+      "PHL-2561",
+      "PHL-2548",
+      "PHL-2547",
+      "PHL-2545",
+      "PHL-2550",
+      "PHL-2535",
+      "PHL-2571",
+      "PHL-2570",
+      "PHL-2569",
+      "PHL-2539",
+      "PHL-2543",
+      "PHL-2557",
+      "PHL-2566",
+      "PHL-2567",
+      "PHL-2554",
+      "PHL-5537",
+      "PHL-2553",
+      "PHL-2559",
+      "PHL-2551",
+      "PHL-2552",
+      "PHL-2556",
+      "PHL-2546",
+      "PHL-4931",
+      "PHL-2542",
+      "PHL-5536",
+      "PHL-5538",
+      "PHL-5539"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "First Philippine Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/First_Philippine_Republic"
+     },
+     "territory": "Spanish East Indies",
+     "hatch": {
+      "by": "Philippine Republic",
+      "since": "1898-06-12",
+      "note": "Held by the Philippine revolutionaries, who declared independence on 12 June 1898 and set up the Malolos Republic; lost to US forces in 1899",
+      "source": {
+       "title": "First Philippine Republic (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/First_Philippine_Republic"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "PHL-5556",
+      "PHL-5555",
+      "PHL-5554",
+      "PHL-5543",
+      "PHL-5544",
+      "PHL-5557",
+      "PHL-5545",
+      "PHL-5546",
+      "PHL-5547",
+      "PHL-5549",
+      "PHL-5558",
+      "PHL-5550",
+      "PHL-5552",
+      "PHL-5553",
+      "PHL-5559",
+      "PHL-5542",
+      "PHL-5551"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Battle of Manila (1898) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Manila_(1898)"
+     },
+     "territory": "Spanish East Indies",
+     "hatch": {
+      "by": "United States",
+      "since": "1898-08-13",
+      "note": "Manila, taken by US forces in the Battle of Manila on 13 August 1898",
+      "source": {
+       "title": "Battle of Manila (1898) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Battle_of_Manila_(1898)"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "PHL-2591",
+      "PHL-2521",
+      "PHL-2534",
+      "PHL-2593",
+      "PHL-2594",
+      "PHL-2587",
+      "PHL-5532",
+      "PHL-2595",
+      "PHL-5531",
+      "PHL-5530",
+      "PHL-2573",
+      "PHL-2522",
+      "PHL-2523",
+      "PHL-2520",
+      "PHL-4932",
+      "PHL-2574",
+      "PHL-2576",
+      "PHL-5527",
+      "PHL-2580",
+      "PHL-2598",
+      "PHL-5529",
+      "PHL-2596",
+      "PHL-5528",
+      "PHL-2592",
+      "PHL-2597",
+      "PHL-2519",
+      "PHL-2590",
+      "PHL-2517",
+      "PHL-2513",
+      "PHL-2530",
+      "PHL-5525",
+      "PHL-2518",
+      "PHL-2516",
+      "PHL-5522",
+      "PHL-5523",
+      "PHL-2514",
+      "PHL-5533",
+      "PHL-2525",
+      "PHL-2526",
+      "PHL-2529",
+      "PHL-5526",
+      "PHL-2528",
+      "PHL-2540",
+      "PHL-5524",
+      "PHL-2588",
+      "PHL-2589",
+      "PHL-2579",
+      "PHL-2599",
+      "PHL-2585",
+      "PHL-2583",
+      "PHL-2582",
+      "PHL-2581",
+      "PHL-2584",
+      "PHL-5535",
+      "PHL-5534",
+      "PHL-2586"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish East Indies (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_East_Indies"
+     },
+     "territory": "Spanish East Indies"
+    },
+    {
+     "pieces": [
+      "PHL-2524",
+      "PHL-2511"
+     ],
+     "owner": "Sultanate of Sulu",
+     "source": {
+      "title": "Sultanate of Sulu (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sultanate_of_Sulu"
+     },
+     "hatch": {
+      "by": "Spain",
+      "since": "1876-02-29",
+      "note": "Jolo taken by Spain in February 1876; the Sultan accepted Spanish rule by the treaty of 22 July 1878",
+      "source": {
+       "title": "Sultanate of Sulu (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Sultanate_of_Sulu"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1899-04-11",
+   "what": "The Treaty of Paris comes into force: Spain cedes Guam to the United States",
+   "source": {
+    "title": "Treaty of Paris (1898) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Paris_(1898)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "GUM"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish East Indies (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_East_Indies"
+     },
+     "territory": "Spanish East Indies",
+     "hatch": {
+      "by": "United States",
+      "since": "1898-06-21",
+      "note": "Taken by the USS Charleston on 21 June 1898, the Spanish garrison not knowing the war had begun",
+      "source": {
+       "title": "Capture of Guam (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Capture_of_Guam"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1899-01-01",
+   "what": "Spain leaves Cuba, handed over to US military rule",
+   "source": {
+    "title": "Military Government of Cuba (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Military_Government_of_Cuba"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "CUB-1369",
+      "CUB-1365",
+      "USG"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Captaincy General of Cuba (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Captaincy_General_of_Cuba"
+     },
+     "territory": "Cuba",
+     "hatch": {
+      "by": "United States",
+      "since": "1898-07-17",
+      "note": "The eastern district of Santiago de Cuba, surrendered to US forces on 17 July 1898",
+      "source": {
+       "title": "Siege of Santiago (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Siege_of_Santiago"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "CUB-1319",
+      "CUB-1320",
+      "CUB-1321",
+      "CUB-1322",
+      "CUB-1363",
+      "CUB-1364",
+      "CUB-1366",
+      "CUB-1367",
+      "CUB-1368",
+      "CUB-1428",
+      "CUB-1429",
+      "CUB-1430",
+      "CUB-1431",
+      "CUB-5489"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Captaincy General of Cuba (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Captaincy_General_of_Cuba"
+     },
+     "territory": "Cuba"
+    }
+   ]
+  },
+  {
+   "date": "1898-10-18",
+   "what": "Spain hands Puerto Rico over to the United States at San Juan",
+   "source": {
+    "title": "Puerto Rico campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Puerto_Rico_campaign"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "PRI"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Puerto Rico (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Puerto_Rico"
+     },
+     "territory": "Puerto Rico",
+     "hatch": {
+      "by": "United States",
+      "since": "1898-07-25",
+      "note": "US forces landed at Guánica on 25 July 1898 and held the south and west of the island by the armistice of 12 August",
+      "source": {
+       "title": "Puerto Rico campaign (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Puerto_Rico_campaign"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1898-08-13",
+   "what": "US forces take Manila from Spain",
+   "source": {
+    "title": "Battle of Manila (1898) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Manila_(1898)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "PHL-5556",
+      "PHL-5555",
+      "PHL-5554",
+      "PHL-5543",
+      "PHL-5544",
+      "PHL-5557",
+      "PHL-5545",
+      "PHL-5546",
+      "PHL-5547",
+      "PHL-5549",
+      "PHL-5558",
+      "PHL-5550",
+      "PHL-5552",
+      "PHL-5553",
+      "PHL-5559",
+      "PHL-5542",
+      "PHL-5551"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish East Indies (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_East_Indies"
+     },
+     "territory": "Spanish East Indies"
+    }
+   ]
+  },
+  {
+   "date": "1898-07-25",
+   "what": "US forces land at Guánica",
+   "source": {
+    "title": "Puerto Rico campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Puerto_Rico_campaign"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "PRI"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Captaincy General of Puerto Rico (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Captaincy_General_of_Puerto_Rico"
+     },
+     "territory": "Puerto Rico"
+    }
+   ]
+  },
+  {
+   "date": "1898-07-17",
+   "what": "The Spanish army at Santiago de Cuba surrenders to US forces with the eastern district",
+   "source": {
+    "title": "Siege of Santiago (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Santiago"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "CUB-1369",
+      "CUB-1365",
+      "USG"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Captaincy General of Cuba (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Captaincy_General_of_Cuba"
+     },
+     "territory": "Cuba"
+    }
+   ]
+  },
+  {
+   "date": "1898-06-21",
+   "what": "The USS Charleston takes Guam from its Spanish garrison",
+   "source": {
+    "title": "Capture of Guam (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Capture_of_Guam"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "GUM"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish East Indies (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_East_Indies"
+     },
+     "territory": "Spanish East Indies"
+    }
+   ]
+  },
+  {
+   "date": "1898-06-12",
+   "what": "Emilio Aguinaldo declares the independence of the Philippines at Kawit; the revolutionaries take most of Luzon outside Manila",
+   "source": {
+    "title": "Philippine Declaration of Independence (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Philippine_Declaration_of_Independence"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "PHL-2549",
+      "PHL-2572",
+      "PHL-2537",
+      "PHL-2538",
+      "PHL-2536",
+      "PHL-2541",
+      "PHL-5560",
+      "PHL-2564",
+      "PHL-2563",
+      "PHL-2565",
+      "PHL-2558",
+      "PHL-2555",
+      "PHL-5540",
+      "PHL-2560",
+      "PHL-2562",
+      "PHL-5541",
+      "PHL-2561",
+      "PHL-2548",
+      "PHL-2547",
+      "PHL-2545",
+      "PHL-2550",
+      "PHL-2535",
+      "PHL-2571",
+      "PHL-2570",
+      "PHL-2569",
+      "PHL-2539",
+      "PHL-2543",
+      "PHL-2557",
+      "PHL-2566",
+      "PHL-2567",
+      "PHL-2554",
+      "PHL-5537",
+      "PHL-2553",
+      "PHL-2559",
+      "PHL-2551",
+      "PHL-2552",
+      "PHL-2556",
+      "PHL-2546",
+      "PHL-4931",
+      "PHL-2542",
+      "PHL-5536",
+      "PHL-5538",
+      "PHL-5539"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spanish East Indies (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spanish_East_Indies"
+     },
+     "territory": "Spanish East Indies"
+    }
+   ]
+  },
+  {
+   "date": "1895-03-10",
+   "what": "A Spanish expedition under General Weyler takes Marawi, the stronghold of the Lanao sultanates",
+   "source": {
+    "title": "Marawi (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Marawi"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "PHL-2574"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Lanao (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lanao"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1885-12-17",
+   "what": "After papal mediation in the Carolines Question, Germany recognises Spanish sovereignty over the Caroline Islands and Palau, which Spain then occupies",
+   "source": {
+    "title": "Carolines Question (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Carolines_Question"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "FSM",
+      "PLW"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Carolines Question (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Carolines_Question"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1876-02-29",
+   "what": "Spain takes Jolo, the capital of the Sultanate of Sulu",
+   "source": {
+    "title": "Sultanate of Sulu (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Sultanate_of_Sulu"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "PHL-2524",
+      "PHL-2511"
+     ],
+     "owner": "Sultanate of Sulu",
+     "source": {
+      "title": "Sultanate of Sulu (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sultanate_of_Sulu"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1876-02-28",
+   "what": "Carlos VII crosses into France: the Third Carlist War ends",
+   "source": {
+    "title": "Third Carlist War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Third_Carlist_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "ESP-5837",
+      "ESP-5823",
+      "ESP-5851",
+      "ESP-5801"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Third Carlist War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Third_Carlist_War"
+     },
+     "hatch": {
+      "by": "Carlist State",
+      "since": "1873-08-24",
+      "note": "The countryside of Navarre and the Basque provinces, held by the Carlists of Carlos VII with their court at Estella; the provincial capitals stayed with Madrid",
+      "source": {
+       "title": "Third Carlist War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Third_Carlist_War"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1873-08-24",
+   "what": "The Carlists take Estella, which becomes the seat of their state",
+   "source": {
+    "title": "Third Carlist War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Third_Carlist_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ESP-5837",
+      "ESP-5823",
+      "ESP-5851",
+      "ESP-5801"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spain (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spain"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1865-07-11",
+   "what": "The last Spanish troops leave Santo Domingo: the Dominican Republic is restored",
+   "source": {
+    "title": "Dominican Restoration War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Dominican_Restoration_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "DOM-1390",
+      "DOM-1391",
+      "DOM-1392",
+      "DOM-1393",
+      "DOM-1395",
+      "DOM-1396",
+      "DOM-1964",
+      "DOM-1966",
+      "DOM-1967",
+      "DOM-1968",
+      "DOM-1969",
+      "DOM-1970",
+      "DOM-1971",
+      "DOM-1972",
+      "DOM-1973",
+      "DOM-1974",
+      "DOM-1975",
+      "DOM-1976",
+      "DOM-1977",
+      "DOM-1978",
+      "DOM-1979",
+      "DOM-1980",
+      "DOM-1981",
+      "DOM-1982",
+      "DOM-1984",
+      "DOM-1986",
+      "DOM-1987",
+      "DOM-1988"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Annexation of Santo Domingo (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Annexation_of_Santo_Domingo"
+     },
+     "territory": "Santo Domingo",
+     "hatch": {
+      "by": "Dominican Republic",
+      "since": "1863-09-14",
+      "note": "Held by the Dominican rebels of the Restoration War, who set up a government at Santiago on 14 September 1863; Spain kept Santo Domingo and a few ports",
+      "source": {
+       "title": "Dominican Restoration War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Dominican_Restoration_War"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "DOM-1985",
+      "DOM-1394",
+      "DOM-1965",
+      "DOM-1983"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Annexation of Santo Domingo (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Annexation_of_Santo_Domingo"
+     },
+     "territory": "Santo Domingo"
+    }
+   ]
+  },
+  {
+   "date": "1863-09-14",
+   "what": "The Dominican rebels set up a provisional government at Santiago; Spain loses the interior",
+   "source": {
+    "title": "Dominican Restoration War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Dominican_Restoration_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "DOM-1390",
+      "DOM-1391",
+      "DOM-1392",
+      "DOM-1393",
+      "DOM-1394",
+      "DOM-1395",
+      "DOM-1396",
+      "DOM-1964",
+      "DOM-1965",
+      "DOM-1966",
+      "DOM-1967",
+      "DOM-1968",
+      "DOM-1969",
+      "DOM-1970",
+      "DOM-1971",
+      "DOM-1972",
+      "DOM-1973",
+      "DOM-1974",
+      "DOM-1975",
+      "DOM-1976",
+      "DOM-1977",
+      "DOM-1978",
+      "DOM-1979",
+      "DOM-1980",
+      "DOM-1981",
+      "DOM-1982",
+      "DOM-1983",
+      "DOM-1984",
+      "DOM-1985",
+      "DOM-1986",
+      "DOM-1987",
+      "DOM-1988"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Annexation of Santo Domingo (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Annexation_of_Santo_Domingo"
+     },
+     "territory": "Santo Domingo"
+    }
+   ]
+  },
+  {
+   "date": "1861-04-30",
+   "what": "Spain sets up a fort at Cotabato on the Rio Grande de Mindanao, in the lands of the Sultanate of Maguindanao",
+   "source": {
+    "title": "Cotabato City (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Cotabato_City"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "PHL-2576",
+      "PHL-5527",
+      "PHL-2579",
+      "PHL-2580",
+      "PHL-2599",
+      "PHL-2598",
+      "PHL-5529"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Sultanate of Maguindanao (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sultanate_of_Maguindanao"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1861-03-18",
+   "what": "President Pedro Santana annexes the Dominican Republic to Spain",
+   "source": {
+    "title": "Annexation of Santo Domingo (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Annexation_of_Santo_Domingo"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "DOM-1390",
+      "DOM-1391",
+      "DOM-1392",
+      "DOM-1393",
+      "DOM-1394",
+      "DOM-1395",
+      "DOM-1396",
+      "DOM-1964",
+      "DOM-1965",
+      "DOM-1966",
+      "DOM-1967",
+      "DOM-1968",
+      "DOM-1969",
+      "DOM-1970",
+      "DOM-1971",
+      "DOM-1972",
+      "DOM-1973",
+      "DOM-1974",
+      "DOM-1975",
+      "DOM-1976",
+      "DOM-1977",
+      "DOM-1978",
+      "DOM-1979",
+      "DOM-1980",
+      "DOM-1981",
+      "DOM-1982",
+      "DOM-1983",
+      "DOM-1984",
+      "DOM-1985",
+      "DOM-1986",
+      "DOM-1987",
+      "DOM-1988"
+     ],
+     "owner": "Dominican Republic",
+     "source": {
+      "title": "Dominican Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Dominican_Republic"
+     }
     }
    ]
   }

@@ -182,6 +182,9 @@
  "sultanate-of-egypt": {
   "name": "Sultanat d’Égypte"
  },
+ "spain": {
+  "name": "Espagne"
+ },
  "ottoman-empire": {
   "name": "Empire ottoman"
  },
@@ -205,9 +208,6 @@
  },
  "colonial-nigeria": {
   "name": "Colonie et protectorat du Nigeria"
- },
- "spain": {
-  "name": "Espagne"
  },
  "kamerun": {
   "name": "Kamerun"
@@ -442,6 +442,9 @@
  },
  "protectorate-of-south-arabia": {
   "name": "Protectorat d'Arabie du Sud"
+ },
+ "spanish-east-indies": {
+  "name": "Indes orientales espagnoles"
  },
  "philippines": {
   "name": "Philippines"
@@ -806,6 +809,9 @@
  "dominican-republic": {
   "name": "République dominicaine"
  },
+ "santo-domingo": {
+  "name": "Saint-Domingue espagnol"
+ },
  "slovakia": {
   "name": "Slovaquie"
  },
@@ -1151,6 +1157,9 @@
  "british-windward-islands": {
   "name": "Îles du Vent britanniques"
  },
+ "sultanate-of-sulu": {
+  "name": "Sultanat de Sulu"
+ },
  "principality-of-guria": {
   "name": "Principauté de Gourie"
  },
@@ -1162,9 +1171,6 @@
  },
  "south-seas-mandate": {
   "name": "Mandat des îles du Pacifique"
- },
- "spanish-east-indies": {
-  "name": "Indes orientales espagnoles"
  },
  "dutch-malacca": {
   "name": "Malacca néerlandaise"

@@ -12684,6 +12684,532 @@
    "summary": "On 8 September 1925 Spanish troops, backed by the French fleet, land in the bay of Alhucemas, in the heart of the Rif, while France attacks from the south. They take Abd el-Krim's capital Ajdir in October. It is one of the first great amphibious landings with tanks and aircraft, and it seals the end of the Rif Republic, which surrenders in May 1926.",
    "wikipedia": "Alhucemas_landing",
    "search": "Alhucemas landing 8 September 1925 Al Hoceima Primo de Rivera Sanjurjo Franco amphibious France Rif War Abd el-Krim Ajdir"
+  },
+  {
+   "id": "spain-takes-tetouan-1860",
+   "kind": "war",
+   "year": 1860,
+   "to": 1862,
+   "title": "Spain takes Tetouan, 1860",
+   "place": "Tétouan",
+   "lonLat": [
+    -5.37,
+    35.57
+   ],
+   "civs": [
+    "spain",
+    "morocco"
+   ],
+   "summary": "In the \"African War\" against Morocco, General O'Donnell's army takes Tetouan on 6 February 1860 and wins at Wad-Ras in March. By the peace treaty Morocco enlarges Ceuta and Melilla, promises Spain Ifni and pays a large indemnity; Spain holds Tetouan until it is paid in May 1862.",
+   "wikipedia": "Hispano-Moroccan_War_(1859–1860)",
+   "search": "Hispano-Moroccan War 1859 1860 African War O'Donnell Tetouan 6 February 1860 Wad-Ras treaty Ifni Ceuta enlarged indemnity 1862"
+  },
+  {
+   "id": "annexation-of-santo-domingo-1861",
+   "kind": "empire",
+   "year": 1861,
+   "title": "Spain takes back Santo Domingo, March 1861",
+   "place": "Santo Domingo",
+   "lonLat": [
+    -69.9,
+    18.48
+   ],
+   "civs": [
+    "spain",
+    "santo-domingo",
+    "dominican-republic"
+   ],
+   "summary": "Fearing a new Haitian invasion, President Pedro Santana hands the Dominican Republic back to Spain on 18 March 1861, seventeen years after its independence. It becomes a Spanish province again, the only American country to return to its old colonial master.",
+   "wikipedia": "Annexation_of_Santo_Domingo",
+   "search": "Annexation of Santo Domingo 18 March 1861 Pedro Santana Spain Dominican Republic province Captaincy General"
+  },
+  {
+   "id": "dominican-restoration-war-1863",
+   "kind": "war",
+   "year": 1863,
+   "to": 1865,
+   "title": "The Dominican Restoration War, 1863 – 1865",
+   "place": "Santiago de los Caballeros",
+   "lonLat": [
+    -70.7,
+    19.45
+   ],
+   "civs": [
+    "spain",
+    "santo-domingo",
+    "dominican-republic"
+   ],
+   "summary": "In August 1863 Dominicans rise against Spanish rule at Capotillo and set up a government at Santiago in September. Guerrilla war and yellow fever leave Spain holding only Santo Domingo and a few ports; Queen Isabella II gives up the island, and the last Spanish troops leave in July 1865.",
+   "wikipedia": "Dominican_Restoration_War",
+   "search": "Dominican Restoration War 1863 1865 Grito de Capotillo Santiago provisional government guerrilla Spain withdraws July 1865"
+  },
+  {
+   "id": "glorious-revolution-1868",
+   "kind": "revolution",
+   "year": 1868,
+   "title": "The Glorious Revolution drives out Isabella II, September 1868",
+   "place": "Madrid",
+   "lonLat": [
+    -3.7,
+    40.42
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "Admiral Topete and Generals Prim and Serrano rise at Cádiz in September 1868 and beat the royal army at Alcolea. Queen Isabella II flees to France; a provisional government gives Spain universal male suffrage and the liberal constitution of 1869, and looks for a new king.",
+   "wikipedia": "Glorious_Revolution_(Spain)",
+   "search": "Glorious Revolution La Gloriosa September 1868 Prim Serrano Topete Cadiz Alcolea Isabella II exile provisional government constitution 1869"
+  },
+  {
+   "id": "amadeo-king-of-spain-1871",
+   "kind": "crown",
+   "year": 1871,
+   "title": "Amadeo of Savoy becomes King of Spain, 1871",
+   "place": "Madrid",
+   "lonLat": [
+    -3.7,
+    40.42
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "Elected by the Cortes in November 1870, the Italian prince Amadeo of Savoy reaches Madrid on 2 January 1871, days after his sponsor General Prim is murdered. Shunned by the nobility and fought by Carlists and republicans, he abdicates in February 1873.",
+   "wikipedia": "Amadeo_I_of_Spain",
+   "search": "Amadeo I of Savoy elected King of Spain November 1870 Cortes arrives January 1871 Prim assassinated abdicates February 1873"
+  },
+  {
+   "id": "first-spanish-republic-1873",
+   "kind": "revolution",
+   "year": 1873,
+   "title": "The First Spanish Republic, 1873",
+   "place": "Madrid",
+   "lonLat": [
+    -3.7,
+    40.42
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "When Amadeo abdicates, the Cortes proclaim the Republic on 11 February 1873. It has four presidents in eleven months while fighting the Carlists, the Cuban rebels and the cantonal risings, until General Pavía's soldiers break up the Cortes in January 1874 and General Serrano rules alone.",
+   "wikipedia": "First_Spanish_Republic",
+   "search": "First Spanish Republic 11 February 1873 Figueras Pi y Margall Salmerón Castelar federal republic Pavía coup January 1874 Serrano"
+  },
+  {
+   "id": "third-carlist-war-1872",
+   "kind": "war",
+   "year": 1872,
+   "to": 1876,
+   "title": "The Third Carlist War, 1872 – 1876",
+   "place": "Estella",
+   "lonLat": [
+    -2.03,
+    42.67
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "The Carlists rise again for their pretender Carlos VII in 1872. From Estella, taken in August 1873, they run a state of their own over the countryside of Navarre and the Basque provinces, with courts, a mint and a university, but never take Bilbao or Pamplona. Restored Alfonso XII's armies win in February 1876, and the Basque fueros are abolished.",
+   "wikipedia": "Third_Carlist_War",
+   "search": "Third Carlist War 1872 1876 Carlos VII Estella Navarre Basque provinces Carlist state siege of Bilbao Montejurra"
+  },
+  {
+   "id": "bourbon-restoration-1874",
+   "kind": "crown",
+   "year": 1874,
+   "title": "The Bourbons return: Alfonso XII, December 1874",
+   "place": "Sagunto",
+   "lonLat": [
+    -0.27,
+    39.68
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "On 29 December 1874 General Martínez Campos proclaims Isabella II's son Alfonso XII king at Sagunto, and the government gives way without a fight. Cánovas del Castillo builds the Restoration regime, with the constitution of 1876 and two parties taking turns in power.",
+   "wikipedia": "Restoration_(Spain)",
+   "search": "Bourbon Restoration Spain Martínez Campos pronunciamiento Sagunto 29 December 1874 Alfonso XII Cánovas del Castillo constitution 1876"
+  },
+  {
+   "id": "spain-takes-jolo-1876",
+   "kind": "empire",
+   "year": 1876,
+   "title": "Spain takes Jolo, 1876",
+   "place": "Jolo",
+   "lonLat": [
+    121.0,
+    6.05
+   ],
+   "civs": [
+    "spain",
+    "sultanate-of-sulu",
+    "spanish-east-indies"
+   ],
+   "summary": "After three centuries of raids and wars, a Spanish fleet takes Jolo, the capital of the Sultanate of Sulu, in February 1876. By the treaty of July 1878 the Sultan accepts Spanish rule, though the Tausug read it as a mere protectorate and resistance goes on.",
+   "wikipedia": "Sultanate_of_Sulu",
+   "search": "Spanish expedition Jolo February 1876 Malcampo Sultanate of Sulu treaty 22 July 1878 Spanish sovereignty protectorate Tausug"
+  },
+  {
+   "id": "carolines-question-1885",
+   "kind": "treaty",
+   "year": 1885,
+   "title": "The Carolines Question, 1885",
+   "place": "Yap",
+   "lonLat": [
+    138.12,
+    9.52
+   ],
+   "civs": [
+    "spain",
+    "germany",
+    "spanish-east-indies"
+   ],
+   "summary": "In August 1885 a German gunboat raises the flag on Yap, days after Spanish ships arrive to claim it, and crowds in Madrid attack the German embassy. Pope Leo XIII mediates: by the protocol of 17 December 1885 Germany recognises Spanish rule over the Carolines and Palau, and Spain occupies them in 1886.",
+   "wikipedia": "Carolines_Question",
+   "search": "Carolines Question 1885 Germany Spain Yap flag Pope Leo XIII mediation Protocol of Rome 17 December 1885 Caroline Islands Palau"
+  },
+  {
+   "id": "spain-takes-marawi-1895",
+   "kind": "war",
+   "year": 1895,
+   "title": "Spain takes Marawi, 1895",
+   "place": "Marawi",
+   "lonLat": [
+    124.29,
+    8.0
+   ],
+   "civs": [
+    "spain",
+    "spanish-east-indies"
+   ],
+   "summary": "In March 1895 a Spanish expedition under General Valeriano Weyler storms Marawi, the stronghold of the Maranao on Lake Lanao, where Datu Amai Pakpak dies defending his fort. It is Spain's deepest advance into inner Mindanao, three years before it loses the islands.",
+   "wikipedia": "Marawi",
+   "search": "Spanish Lanao expedition 1895 Weyler Marawi Amai Pakpak Maranao Lake Lanao Iligan"
+  },
+  {
+   "id": "philippine-independence-declared-1898",
+   "kind": "revolution",
+   "year": 1898,
+   "title": "Aguinaldo declares the independence of the Philippines, June 1898",
+   "place": "Kawit",
+   "lonLat": [
+    120.88,
+    14.45
+   ],
+   "civs": [
+    "philippines",
+    "spanish-east-indies",
+    "spain"
+   ],
+   "summary": "Back from exile with American help, Emilio Aguinaldo proclaims the independence of the Philippines at Kawit on 12 June 1898. His forces take most of Luzon from the Spanish, and the Malolos Congress founds the Philippine Republic in January 1899, Asia's first constitutional republic.",
+   "wikipedia": "Philippine_Declaration_of_Independence",
+   "search": "Philippine Declaration of Independence 12 June 1898 Kawit Cavite Emilio Aguinaldo Malolos Congress First Philippine Republic"
+  },
+  {
+   "id": "capture-of-guam-1898",
+   "kind": "battle",
+   "year": 1898,
+   "title": "The United States takes Guam, June 1898",
+   "place": "Guam",
+   "lonLat": [
+    144.66,
+    13.44
+   ],
+   "civs": [
+    "guam",
+    "spanish-east-indies",
+    "spain",
+    "united-states"
+   ],
+   "summary": "On 20 June 1898 the cruiser USS Charleston fires on the old fort at Apra Harbor. The Spanish governor, who had not heard that war had broken out, rows out to apologise for having no powder to return the salute, and surrenders the island the next day.",
+   "wikipedia": "Capture_of_Guam",
+   "search": "Capture of Guam 20 21 June 1898 USS Charleston Henry Glass Apra Harbor Spanish garrison unaware of war"
+  },
+  {
+   "id": "siege-of-santiago-1898",
+   "kind": "siege",
+   "year": 1898,
+   "title": "The fall of Santiago de Cuba, July 1898",
+   "place": "Santiago de Cuba",
+   "lonLat": [
+    -75.83,
+    20.02
+   ],
+   "civs": [
+    "cuba",
+    "spain",
+    "united-states"
+   ],
+   "summary": "US troops land near Santiago in June 1898 and take the San Juan Heights on 1 July. Admiral Cervera's fleet, breaking out of the harbour on 3 July, is destroyed, and on 17 July the Spanish army surrenders Santiago with the whole eastern district of Cuba.",
+   "wikipedia": "Siege_of_Santiago",
+   "search": "Siege of Santiago de Cuba July 1898 San Juan Hill Rough Riders Cervera fleet destroyed 3 July surrender 17 July Spanish–American War"
+  },
+  {
+   "id": "puerto-rico-campaign-1898",
+   "kind": "war",
+   "year": 1898,
+   "title": "The United States takes Puerto Rico, 1898",
+   "place": "Guánica",
+   "lonLat": [
+    -66.91,
+    17.97
+   ],
+   "civs": [
+    "puerto-rico",
+    "spain",
+    "united-states"
+   ],
+   "summary": "General Nelson Miles lands at Guánica on 25 July 1898 and his columns march north across the island, often welcomed in the towns. The armistice of 12 August halts the fighting, and Spain hands Puerto Rico over at San Juan on 18 October 1898.",
+   "wikipedia": "Puerto_Rico_campaign",
+   "search": "Puerto Rico campaign 25 July 1898 Guánica landing Nelson Miles Ponce armistice 12 August handover 18 October 1898 San Juan"
+  },
+  {
+   "id": "battle-of-manila-1898",
+   "kind": "battle",
+   "year": 1898,
+   "title": "The United States takes Manila, August 1898",
+   "place": "Manila",
+   "lonLat": [
+    120.97,
+    14.59
+   ],
+   "civs": [
+    "philippines",
+    "spanish-east-indies",
+    "spain",
+    "united-states"
+   ],
+   "summary": "Three months after Commodore Dewey sank the Spanish fleet in Manila Bay, US troops take Manila on 13 August 1898 in a battle arranged with the Spanish governor so that the city falls to the Americans and not to the Filipino revolutionaries besieging it. It sows the war of 1899.",
+   "wikipedia": "Battle_of_Manila_(1898)",
+   "search": "Battle of Manila 13 August 1898 mock battle Merritt Dewey Fermín Jáudenes surrender Filipino revolutionaries kept out Intramuros"
+  },
+  {
+   "id": "treaty-of-paris-1898",
+   "kind": "treaty",
+   "year": 1898,
+   "title": "The Treaty of Paris ends Spain's empire in America and Asia, December 1898",
+   "place": "Havana",
+   "lonLat": [
+    -82.37,
+    23.13
+   ],
+   "civs": [
+    "spain",
+    "united-states",
+    "cuba",
+    "puerto-rico",
+    "philippines",
+    "guam"
+   ],
+   "summary": "Signed on 10 December 1898, the treaty ends the Spanish-American War. Spain gives up Cuba, which passes under US military rule on 1 January 1899, and cedes Puerto Rico, Guam and, for 20 million dollars, the Philippines to the United States. Spain calls it \"the Disaster\".",
+   "wikipedia": "Treaty_of_Paris_(1898)",
+   "search": "Treaty of Paris 10 December 1898 Spain United States Cuba Puerto Rico Guam Philippines 20 million dollars ratified 11 April 1899 end of Spanish empire"
+  },
+  {
+   "id": "philippine-american-war-1899",
+   "kind": "war",
+   "year": 1899,
+   "to": 1902,
+   "title": "The Philippine-American War, 1899 – 1902",
+   "place": "Malolos",
+   "lonLat": [
+    120.81,
+    14.84
+   ],
+   "civs": [
+    "philippines",
+    "united-states"
+   ],
+   "summary": "Fighting breaks out in Manila on 4 February 1899 between US troops and the Philippine Republic. The Americans take its capital Malolos in March, and in November Aguinaldo disbands his army for guerrilla war. He is captured in 1901, and the US declares the war over in July 1902, after the deaths of some 200,000 Filipino civilians.",
+   "wikipedia": "Philippine–American_War",
+   "search": "Philippine-American War February 1899 1902 Aguinaldo Malolos falls guerrilla Palanan capture March 1901 Balangiga"
+  },
+  {
+   "id": "republic-of-cuba-1902",
+   "kind": "empire",
+   "year": 1902,
+   "title": "The Republic of Cuba is born, May 1902",
+   "place": "Havana",
+   "lonLat": [
+    -82.36,
+    23.14
+   ],
+   "civs": [
+    "cuba",
+    "united-states"
+   ],
+   "summary": "After three years of US military rule, Tomás Estrada Palma takes office as the first president on 20 May 1902 and the American troops leave. The Platt Amendment, written into the Cuban constitution, lets the United States intervene and gives it the naval base at Guantánamo.",
+   "wikipedia": "Military_Government_of_Cuba",
+   "search": "Republic of Cuba 20 May 1902 Tomás Estrada Palma end of US military government Platt Amendment Guantánamo"
+  },
+  {
+   "id": "us-occupation-dominican-republic-1916",
+   "kind": "war",
+   "year": 1916,
+   "to": 1924,
+   "title": "The United States occupies the Dominican Republic, 1916 – 1924",
+   "place": "Santo Domingo",
+   "lonLat": [
+    -69.9,
+    18.47
+   ],
+   "civs": [
+    "dominican-republic",
+    "united-states"
+   ],
+   "summary": "With the country in civil strife and deep in debt, US Marines land in May 1916 and a US military government takes over in November. It builds roads and a National Guard while fighting rural guerrillas, and leaves in July 1924; the Guard's commander, Rafael Trujillo, later seizes power.",
+   "wikipedia": "Military_Government_of_Santo_Domingo",
+   "search": "United States occupation Dominican Republic 1916 1924 Marines military government gavilleros customs debt"
+  },
+  {
+   "id": "commonwealth-of-the-philippines-1935",
+   "kind": "revolution",
+   "year": 1935,
+   "title": "The Commonwealth of the Philippines, November 1935",
+   "place": "Manila",
+   "lonLat": [
+    120.98,
+    14.59
+   ],
+   "civs": [
+    "philippines",
+    "united-states"
+   ],
+   "summary": "Under the Tydings-McDuffie Act, the Philippines becomes a self-governing Commonwealth on 15 November 1935, with Manuel Quezon as president and full independence promised after ten years. The United States keeps control of defence and foreign affairs.",
+   "wikipedia": "Commonwealth_of_the_Philippines",
+   "search": "Commonwealth of the Philippines 15 November 1935 Manuel Quezon Tydings-McDuffie Act ten-year transition independence"
+  },
+  {
+   "id": "japan-takes-guam-1941",
+   "kind": "battle",
+   "year": 1941,
+   "title": "Japan takes Guam, December 1941",
+   "place": "Guam",
+   "lonLat": [
+    144.75,
+    13.47
+   ],
+   "civs": [
+    "guam",
+    "united-states",
+    "japan"
+   ],
+   "summary": "Hours after Pearl Harbor, Japanese planes bomb Guam, and on 10 December 1941 some 5,000 Japanese troops land and force the small US garrison to surrender. Renamed Ōmiya-jima, the island is occupied for two and a half years.",
+   "wikipedia": "Battle_of_Guam_(1941)",
+   "search": "Battle of Guam 8 10 December 1941 Japanese invasion Agana surrender Omiya Jima occupation"
+  },
+  {
+   "id": "japanese-invasion-philippines-1941",
+   "kind": "war",
+   "year": 1941,
+   "to": 1942,
+   "title": "Japan conquers the Philippines, 1941 – 1942",
+   "place": "Bataan",
+   "lonLat": [
+    120.5,
+    14.5
+   ],
+   "civs": [
+    "philippines",
+    "united-states",
+    "japan"
+   ],
+   "summary": "Japan invades the Philippines in December 1941. Manila falls on 2 January 1942; the US and Filipino forces hold out on Bataan until 9 April, before the Death March, and on Corregidor until 6 May. The last troops in the south surrender days later, and Japan rules the islands until 1945.",
+   "wikipedia": "Philippines_campaign_(1941–1942)",
+   "search": "Japanese invasion Philippines December 1941 Manila open city January 1942 Bataan April Death March Corregidor 6 May 1942 MacArthur"
+  },
+  {
+   "id": "liberation-of-guam-1944",
+   "kind": "battle",
+   "year": 1944,
+   "title": "The United States retakes Guam, July – August 1944",
+   "place": "Guam",
+   "lonLat": [
+    144.7,
+    13.4
+   ],
+   "civs": [
+    "guam",
+    "united-states",
+    "japan"
+   ],
+   "summary": "US Marines and soldiers land on Guam on 21 July 1944 and, after three weeks of hard fighting, declare the island secure on 10 August. Guam becomes a great base for the bombing of Japan; the islanders still keep 21 July as Liberation Day.",
+   "wikipedia": "Battle_of_Guam_(1944)",
+   "search": "Battle of Guam 21 July 10 August 1944 US Marines liberation Asan Agat Liberation Day"
+  },
+  {
+   "id": "battle-of-leyte-1944",
+   "kind": "battle",
+   "year": 1944,
+   "title": "MacArthur returns: Leyte, October 1944",
+   "place": "Leyte",
+   "lonLat": [
+    125.0,
+    11.2
+   ],
+   "civs": [
+    "philippines",
+    "united-states",
+    "japan"
+   ],
+   "summary": "US forces land on Leyte on 20 October 1944, and General MacArthur wades ashore declaring \"I have returned\". The Japanese navy is crushed in the Battle of Leyte Gulf, the largest naval battle in history, and Leyte and Samar are cleared by the end of December.",
+   "wikipedia": "Battle_of_Leyte",
+   "search": "Battle of Leyte October December 1944 MacArthur I have returned Leyte Gulf naval battle liberation Philippines"
+  },
+  {
+   "id": "battle-of-manila-1945",
+   "kind": "battle",
+   "year": 1945,
+   "title": "The battle for Manila and the liberation of the Philippines, 1945",
+   "place": "Manila",
+   "lonLat": [
+    120.98,
+    14.59
+   ],
+   "civs": [
+    "philippines",
+    "united-states",
+    "japan"
+   ],
+   "summary": "US and Filipino forces fight their way into Manila in February 1945; a month of street fighting and Japanese massacres kills about 100,000 civilians and levels the old walled city. On 5 July 1945 MacArthur announces that the whole of the Philippines is liberated.",
+   "wikipedia": "Battle_of_Manila_(1945)",
+   "search": "Battle of Manila February March 1945 Intramuros destroyed massacre 100,000 civilians liberation of Luzon July 1945"
+  },
+  {
+   "id": "philippine-independence-1946",
+   "kind": "empire",
+   "year": 1946,
+   "title": "The Philippines becomes independent, 4 July 1946",
+   "place": "Manila",
+   "lonLat": [
+    120.98,
+    14.58
+   ],
+   "civs": [
+    "philippines",
+    "united-states"
+   ],
+   "summary": "As promised in 1935, the United States recognises the independence of the Philippines on 4 July 1946, in a ceremony at the Luneta in ruined Manila. Manuel Roxas becomes the first president of the Republic; US bases remain for decades.",
+   "wikipedia": "Treaty_of_Manila_(1946)",
+   "search": "Philippine independence 4 July 1946 Treaty of Manila Manuel Roxas Third Republic Luneta"
+  },
+  {
+   "id": "dominican-civil-war-1965",
+   "kind": "war",
+   "year": 1965,
+   "to": 1966,
+   "title": "Civil war and US intervention in Santo Domingo, 1965 – 1966",
+   "place": "Santo Domingo",
+   "lonLat": [
+    -69.93,
+    18.47
+   ],
+   "civs": [
+    "dominican-republic",
+    "united-states"
+   ],
+   "summary": "In April 1965 officers loyal to the ousted president Juan Bosch rise in Santo Domingo. Fearing \"a second Cuba\", President Johnson sends 42,000 US troops, later joined by an inter-American force; they hold the capital until a truce and elections, won by Joaquín Balaguer, and leave in September 1966.",
+   "wikipedia": "Dominican_Civil_War",
+   "search": "Dominican Civil War April 1965 Constitutionalists Caamaño US intervention Operation Power Pack Inter-American Peace Force 1966 Balaguer"
   }
  ]
 }
