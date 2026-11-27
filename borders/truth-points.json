@@ -17920,6 +17920,535 @@
    ],
    "realm": "Montenegro",
    "why": "Montenegro"
+  },
+  {
+   "place": "Skopje (1912)",
+   "lonLat": [
+    21.43,
+    42.0
+   ],
+   "years": [
+    1912,
+    1912
+   ],
+   "realm": "Turkey",
+   "why": "Serbian army from October 1912",
+   "heldBy": [
+    {
+     "years": [
+      1912,
+      1912
+     ],
+     "by": "Serbia"
+    }
+   ]
+  },
+  {
+   "place": "Skopje (Serbia)",
+   "lonLat": [
+    21.43,
+    42.0
+   ],
+   "years": [
+    1913,
+    1914
+   ],
+   "realm": "Serbia",
+   "why": "Serbian from 1913"
+  },
+  {
+   "place": "Skopje (1916)",
+   "lonLat": [
+    21.43,
+    42.0
+   ],
+   "years": [
+    1916,
+    1917
+   ],
+   "realm": "Serbia",
+   "why": "Bulgarian occupation",
+   "heldBy": [
+    {
+     "years": [
+      1916,
+      1917
+     ],
+     "by": "Bulgaria"
+    }
+   ]
+  },
+  {
+   "place": "Skopje (Yugoslavia)",
+   "lonLat": [
+    21.43,
+    42.0
+   ],
+   "years": [
+    1919,
+    1940
+   ],
+   "realm": "Yugoslavia",
+   "why": "Yugoslav"
+  },
+  {
+   "place": "Novi Pazar (1912)",
+   "lonLat": [
+    20.51,
+    43.14
+   ],
+   "years": [
+    1912,
+    1912
+   ],
+   "realm": "Turkey",
+   "why": "Serbian army",
+   "heldBy": [
+    {
+     "years": [
+      1912,
+      1912
+     ],
+     "by": "Serbia"
+    }
+   ]
+  },
+  {
+   "place": "Novi Pazar (Serbia)",
+   "lonLat": [
+    20.51,
+    43.14
+   ],
+   "years": [
+    1913,
+    1914
+   ],
+   "realm": "Serbia",
+   "why": "Serbian from 1913"
+  },
+  {
+   "place": "Pljevlja (Montenegro)",
+   "lonLat": [
+    19.36,
+    43.36
+   ],
+   "years": [
+    1913,
+    1914
+   ],
+   "realm": "Montenegro",
+   "why": "Montenegrin from 1913"
+  },
+  {
+   "place": "Pljevlja (1917)",
+   "lonLat": [
+    19.36,
+    43.36
+   ],
+   "years": [
+    1917,
+    1917
+   ],
+   "realm": "Montenegro",
+   "why": "Austro-Hungarian occupation",
+   "heldBy": [
+    {
+     "years": [
+      1917,
+      1917
+     ],
+     "by": "Austria-Hungary"
+    }
+   ]
+  },
+  {
+   "place": "Peć (Montenegro)",
+   "lonLat": [
+    20.29,
+    42.66
+   ],
+   "years": [
+    1913,
+    1914
+   ],
+   "realm": "Montenegro",
+   "why": "Montenegrin 1913-18"
+  },
+  {
+   "place": "Pristina (Serbia, 1913)",
+   "lonLat": [
+    21.16,
+    42.66
+   ],
+   "years": [
+    1913,
+    1914
+   ],
+   "realm": "Serbia",
+   "why": "Serbian from 1913"
+  },
+  {
+   "place": "Pristina (1916)",
+   "lonLat": [
+    21.16,
+    42.66
+   ],
+   "years": [
+    1916,
+    1917
+   ],
+   "realm": "Serbia",
+   "why": "Bulgarian occupation",
+   "heldBy": [
+    {
+     "years": [
+      1916,
+      1917
+     ],
+     "by": "Bulgaria"
+    }
+   ]
+  },
+  {
+   "place": "Belgrade (Kingdom of Serbia)",
+   "lonLat": [
+    20.46,
+    44.8
+   ],
+   "years": [
+    1912,
+    1914
+   ],
+   "realm": "Serbia",
+   "why": "Capital of Serbia"
+  },
+  {
+   "place": "Belgrade (1916)",
+   "lonLat": [
+    20.46,
+    44.8
+   ],
+   "years": [
+    1916,
+    1917
+   ],
+   "realm": "Serbia",
+   "why": "Austro-Hungarian occupation",
+   "heldBy": [
+    {
+     "years": [
+      1916,
+      1917
+     ],
+     "by": "Austria-Hungary"
+    }
+   ]
+  },
+  {
+   "place": "Belgrade (Yugoslavia)",
+   "lonLat": [
+    20.46,
+    44.8
+   ],
+   "years": [
+    1919,
+    1940
+   ],
+   "realm": "Yugoslavia",
+   "why": "Capital of Yugoslavia"
+  },
+  {
+   "place": "Niš (1916)",
+   "lonLat": [
+    21.9,
+    43.32
+   ],
+   "years": [
+    1916,
+    1917
+   ],
+   "realm": "Serbia",
+   "why": "Bulgarian occupation",
+   "heldBy": [
+    {
+     "years": [
+      1916,
+      1917
+     ],
+     "by": "Bulgaria"
+    }
+   ]
+  },
+  {
+   "place": "Sarajevo (Austria-Hungary)",
+   "lonLat": [
+    18.41,
+    43.85
+   ],
+   "years": [
+    1912,
+    1917
+   ],
+   "realm": "Austria-Hungary",
+   "why": "Austro-Hungarian Bosnia"
+  },
+  {
+   "place": "Sarajevo (Yugoslavia)",
+   "lonLat": [
+    18.41,
+    43.85
+   ],
+   "years": [
+    1919,
+    1940
+   ],
+   "realm": "Yugoslavia",
+   "why": "Yugoslav"
+  },
+  {
+   "place": "Dimitrovgrad (Bulgaria)",
+   "lonLat": [
+    22.78,
+    43.02
+   ],
+   "years": [
+    1912,
+    1919
+   ],
+   "realm": "Bulgaria",
+   "why": "Western Outlands, Bulgarian until 1920"
+  },
+  {
+   "place": "Dimitrovgrad (Yugoslavia)",
+   "lonLat": [
+    22.78,
+    43.02
+   ],
+   "years": [
+    1921,
+    1940
+   ],
+   "realm": "Yugoslavia",
+   "why": "Yugoslav from 1920"
+  },
+  {
+   "place": "Bosilegrad (Bulgaria)",
+   "lonLat": [
+    22.47,
+    42.5
+   ],
+   "years": [
+    1912,
+    1919
+   ],
+   "realm": "Bulgaria",
+   "why": "Western Outlands, Bulgarian until 1920"
+  },
+  {
+   "place": "Strumica (Bulgaria)",
+   "lonLat": [
+    22.64,
+    41.44
+   ],
+   "years": [
+    1913,
+    1919
+   ],
+   "realm": "Bulgaria",
+   "why": "Bulgarian 1913-20"
+  },
+  {
+   "place": "Strumica (Yugoslavia)",
+   "lonLat": [
+    22.64,
+    41.44
+   ],
+   "years": [
+    1921,
+    1940
+   ],
+   "realm": "Yugoslavia",
+   "why": "Yugoslav from 1920"
+  },
+  {
+   "place": "Tirana (1912)",
+   "lonLat": [
+    19.82,
+    41.33
+   ],
+   "years": [
+    1912,
+    1912
+   ],
+   "realm": "Turkey",
+   "why": "Serbian army",
+   "heldBy": [
+    {
+     "years": [
+      1912,
+      1912
+     ],
+     "by": "Serbia"
+    }
+   ]
+  },
+  {
+   "place": "Tirana (1917)",
+   "lonLat": [
+    19.82,
+    41.33
+   ],
+   "years": [
+    1916,
+    1917
+   ],
+   "realm": "Albania",
+   "why": "Austro-Hungarian occupation",
+   "heldBy": [
+    {
+     "years": [
+      1916,
+      1917
+     ],
+     "by": "Austria-Hungary"
+    }
+   ]
+  },
+  {
+   "place": "Tirana (Albania, 1921)",
+   "lonLat": [
+    19.82,
+    41.33
+   ],
+   "years": [
+    1921,
+    1938
+   ],
+   "realm": "Albania",
+   "why": "Capital from 1920"
+  },
+  {
+   "place": "Vlorë (Italian)",
+   "lonLat": [
+    19.6,
+    40.4
+   ],
+   "years": [
+    1915,
+    1919
+   ],
+   "realm": "Albania",
+   "why": "Italian 1914-20",
+   "heldBy": [
+    {
+     "years": [
+      1915,
+      1919
+     ],
+     "by": "Italy"
+    }
+   ]
+  },
+  {
+   "place": "Korçë (French)",
+   "lonLat": [
+    20.78,
+    40.62
+   ],
+   "years": [
+    1917,
+    1919
+   ],
+   "realm": "Albania",
+   "why": "French 1916-20",
+   "heldBy": [
+    {
+     "years": [
+      1917,
+      1919
+     ],
+     "by": "France"
+    }
+   ]
+  },
+  {
+   "place": "Shkodër (1915)",
+   "lonLat": [
+    19.55,
+    42.1
+   ],
+   "years": [
+    1915,
+    1915
+   ],
+   "realm": "Albania",
+   "why": "Montenegrin 1915",
+   "heldBy": [
+    {
+     "years": [
+      1915,
+      1915
+     ],
+     "by": "Montenegro"
+    }
+   ]
+  },
+  {
+   "place": "Shkodër (1917)",
+   "lonLat": [
+    19.55,
+    42.1
+   ],
+   "years": [
+    1917,
+    1917
+   ],
+   "realm": "Albania",
+   "why": "Austro-Hungarian occupation",
+   "heldBy": [
+    {
+     "years": [
+      1917,
+      1917
+     ],
+     "by": "Austria-Hungary"
+    }
+   ]
+  },
+  {
+   "place": "Podgorica (1917)",
+   "lonLat": [
+    19.26,
+    42.44
+   ],
+   "years": [
+    1917,
+    1917
+   ],
+   "realm": "Montenegro",
+   "why": "Austro-Hungarian occupation",
+   "heldBy": [
+    {
+     "years": [
+      1917,
+      1917
+     ],
+     "by": "Austria-Hungary"
+    }
+   ]
+  },
+  {
+   "place": "Podgorica (Yugoslavia)",
+   "lonLat": [
+    19.26,
+    42.44
+   ],
+   "years": [
+    1919,
+    1940
+   ],
+   "realm": "Yugoslavia",
+   "why": "Yugoslav"
   }
  ]
 }
