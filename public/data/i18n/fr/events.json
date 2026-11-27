@@ -3823,5 +3823,60 @@
   "title": "La dictature des colonels en Grèce, 1967 – 1974",
   "place": "Athènes",
   "summary": "Le 21 avril 1967, un groupe de colonels mené par Georgios Papadopoulos prend le pouvoir. Le roi Constantin II échoue à les renverser et s’exile ; la junte abolit la monarchie le 1er juin 1973. Elle tombe en juillet 1974 après l’invasion turque de Chypre, et un référendum confirme la république en décembre."
+ },
+ "treaty-of-adrianople-principalities-1829": {
+  "title": "Le traité d’Andrinople et le protectorat russe sur les principautés, 1829",
+  "place": "Brăila",
+  "summary": "Les troupes russes occupaient la Moldavie et la Valachie depuis 1828. Par le traité d’Andrinople du 14 septembre 1829, les Ottomans cèdent le delta du Danube à la Russie et rendent à la Valachie les forteresses de Brăila, Giurgiu et Turnu. Les principautés restent sous le sultan mais passent sous protectorat russe, administrées par le général russe Pavel Kisselev jusqu’en 1834."
+ },
+ "wallachian-revolution-1848": {
+  "title": "La révolution valaque et sa répression, 1848",
+  "place": "Bucarest",
+  "summary": "En juin 1848, des révolutionnaires libéraux prennent le pouvoir à Bucarest et chassent le prince. En septembre, des troupes ottomanes et russes entrent en Valachie et écrasent la révolution ; par la convention de Balta Liman, les deux puissances maintiennent des troupes dans les deux principautés jusqu’en 1851."
+ },
+ "union-of-the-principalities-1859": {
+  "title": "La Moldavie et la Valachie s’unissent sous Alexandru Ioan Cuza, 1859",
+  "place": "Iași",
+  "summary": "Les grandes puissances avaient prévu un prince pour chaque principauté. La Moldavie élit Alexandru Ioan Cuza en janvier 1859 et, le 5 février, la Valachie l’élit à son tour, unissant les deux sous un même souverain. Les Principautés unies prennent le nom de Roumanie en 1862, avec Bucarest pour capitale, toujours sous suzeraineté ottomane."
+ },
+ "russo-turkish-war-1877": {
+  "title": "La guerre russo-turque en Bulgarie, 1877 – 1878",
+  "place": "Plevna",
+  "summary": "Après l’écrasement par les Ottomans du soulèvement d’avril en Bulgarie, la Russie déclare la guerre en avril 1877 et franchit le Danube en juin. Bloqués des mois devant Plevna, qui tombe aux mains des Russes et des Roumains en décembre, les Russes franchissent les Balkans en plein hiver, prennent Sofia et Plovdiv et arrivent aux portes de Constantinople. Le traité de San Stefano, en mars 1878, crée une grande Bulgarie."
+ },
+ "treaty-of-berlin-bulgaria-1878": {
+  "title": "Le traité de Berlin partage la Bulgarie, juillet 1878",
+  "place": "Bulgarie",
+  "summary": "Les grandes puissances réduisent la grande Bulgarie de San Stefano. Au nord du Grand Balkan naît la Principauté de Bulgarie, sous suzeraineté ottomane ; au sud, la Roumélie orientale devient une province ottomane autonome, et la Macédoine revient au sultan. La Roumanie devient indépendante et reçoit la Dobroudja du Nord et le delta du Danube."
+ },
+ "kingdom-of-romania-1881": {
+  "title": "La Roumanie devient un royaume, 1881",
+  "place": "Bucarest",
+  "summary": "La Roumanie avait proclamé son indépendance en mai 1877 et combattu aux côtés de la Russie, et le traité de Berlin l’avait reconnue. Le 26 mars 1881, le Parlement proclame le royaume de Roumanie, et le prince Carol de Hohenzollern est couronné roi sous le nom de Carol Ier en mai."
+ },
+ "bulgarian-unification-1885": {
+  "title": "La Roumélie orientale s’unit à la Bulgarie, 1885",
+  "place": "Plovdiv",
+  "summary": "Le 18 septembre 1885, des nationalistes bulgares prennent le pouvoir à Plovdiv sans un coup de feu et proclament l’union de la Roumélie orientale avec la Bulgarie. Le prince Alexandre l’accepte, repousse une attaque serbe à Slivnitsa en novembre, et le sultan le nomme gouverneur de la Roumélie orientale par l’accord de Tophane de 1886."
+ },
+ "bulgarian-independence-1908": {
+  "title": "La Bulgarie proclame son indépendance, octobre 1908",
+  "place": "Veliko Tarnovo",
+  "summary": "Profitant de la révolution jeune-turque, le prince Ferdinand proclame la Bulgarie pleinement indépendante de l’Empire ottoman dans l’ancienne capitale Veliko Tarnovo le 5 octobre 1908, et prend le titre de tsar."
+ },
+ "romanian-campaign-1916": {
+  "title": "Les Empires centraux envahissent la Valachie et la Dobroudja, 1916",
+  "place": "Valachie",
+  "summary": "La Roumanie rejoint les Alliés en août 1916 et envahit la Transylvanie, mais les Empires centraux contre-attaquent. Des troupes bulgares et allemandes prennent Turtucaia et Constanța, et les armées allemandes franchissent les Carpates et entrent dans Bucarest le 6 décembre. La Roumanie tient en Moldavie, tandis que la Valachie et la Dobroudja restent occupées jusqu’en novembre 1918."
+ },
+ "treaty-of-craiova-1940": {
+  "title": "La Dobroudja du Sud revient à la Bulgarie, septembre 1940",
+  "place": "Dobritch",
+  "summary": "La Roumanie tenait la Dobroudja du Sud depuis 1913. Sous la pression allemande, et après avoir perdu la Bessarabie et le nord de la Transylvanie cet été-là, elle la rend à la Bulgarie par le traité de Craiova du 7 septembre 1940, avec un échange de populations."
+ },
+ "peoples-republic-of-bulgaria-1946": {
+  "title": "La Bulgarie devient une république populaire, 1946",
+  "place": "Sofia",
+  "summary": "Occupée par les Soviétiques depuis 1944, la Bulgarie vote l’abolition de la monarchie par référendum le 8 septembre 1946. Le tsar Siméon II, âgé de neuf ans, part en exil, et le communiste Georgi Dimitrov dirige la nouvelle République populaire, qui dure jusqu’en 1990."
  }
 }
