@@ -322,7 +322,9 @@ for (const g of groups.values()) {
   let slug = slugify(g.name) || `realm-${peak.id}`;
   while (slugs.has(slug)) slug += "-2";
   slugs.add(slug);
-  const wikipedia = count("wikipedia");
+  // A realm with periods goes by its own article and picture (Turkey, not
+  // the Ottoman Empire it was for most of its years).
+  const wikipedia = (REALMS[g.name]?.periods && REALMS[g.name].wikipedia) || count("wikipedia");
   civilizations.push({
     id: slug,
     name: g.name,
@@ -331,7 +333,7 @@ for (const g of groups.values()) {
     ...(g.partOf && g.free && { partOfYears: g.partOfYears, ownFrom: g.freeFrom }),
     // The realm or group it shows, then the territories it owned.
     names: [g.name, ...[...territories].filter(([, owner]) => owner === g.name).map(([name]) => name)],
-    wikidata: count("wikidata"),
+    wikidata: (REALMS[g.name]?.periods && REALMS[g.name].wikidata) || count("wikidata"),
     wikipedia,
     from: Math.min(...main.map((s) => s.from)),
     to: Math.max(...main.map((s) => s.to)),
