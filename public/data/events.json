@@ -13865,6 +13865,223 @@
    "summary": "On 1 January 1934 Italy unites its colonies of Tripolitania and Cyrenaica, with the Fezzan, into a single colony of Libya under the governor Italo Balbo. In 1939 its four coastal provinces are made part of Italy itself.",
    "wikipedia": "Italian_Libya",
    "search": "Italian Libya 1 January 1934 Tripolitania Cyrenaica united one colony Italo Balbo governor Libia 1939 coastal provinces"
+  },
+  {
+   "id": "fall-of-diriyah-1818",
+   "kind": "war",
+   "year": 1818,
+   "title": "Diriyah falls and the first Saudi state ends, September 1818",
+   "place": "Diriyah",
+   "lonLat": [
+    46.57,
+    24.73
+   ],
+   "civs": [
+    "saudi-arabia",
+    "khedivate-of-egypt",
+    "turkey"
+   ],
+   "summary": "Sent by the sultan, Muhammad Ali of Egypt had already driven the Saudis out of Mecca and Medina. His son Ibrahim Pasha marches into Najd and besieges Diriyah, which surrenders on 11 September 1818. The emir Abdullah bin Saud is sent to Constantinople and beheaded, Diriyah is razed and Egyptian troops occupy al-Hasa.",
+   "wikipedia": "Ottoman–Wahhabi_war",
+   "search": "Fall of Diriyah 11 September 1818 Ibrahim Pasha Abdullah bin Saud surrender end of first Saudi state Emirate of Diriyah al-Hasa Ottoman-Wahhabi war"
+  },
+  {
+   "id": "egypt-leaves-the-hejaz-1840",
+   "kind": "empire",
+   "year": 1840,
+   "title": "Egypt gives the Hejaz back to the sultan, 1840 – 1841",
+   "place": "Mecca",
+   "lonLat": [
+    39.83,
+    21.42
+   ],
+   "civs": [
+    "turkey",
+    "khedivate-of-egypt"
+   ],
+   "summary": "Muhammad Ali had governed the holy cities for the sultan since he took them back from the Saudis in 1812-13. After the Great Powers force him out of Syria in 1840, the Convention of London also makes him call his troops home from Arabia, and the Hejaz is governed by Ottoman officials again.",
+   "wikipedia": "Hejaz_Vilayet",
+   "search": "Egyptian withdrawal from the Hejaz 1840 1841 Convention of London Muhammad Ali Mecca Medina Ottoman direct rule restored Hejaz eyalet"
+  },
+  {
+   "id": "ottoman-al-hasa-expedition-1871",
+   "kind": "war",
+   "year": 1871,
+   "title": "The Ottomans take al-Hasa, 1871",
+   "place": "Hofuf",
+   "lonLat": [
+    49.59,
+    25.38
+   ],
+   "civs": [
+    "turkey",
+    "saudi-arabia"
+   ],
+   "summary": "While two sons of the Saudi emir Faisal fight over his succession, Midhat Pasha, governor of Baghdad, sends troops by sea. They land at Ras Tanura in May 1871 and take Qatif and Hofuf. Al-Hasa becomes an Ottoman sanjak, cut off from the Saudi state.",
+   "wikipedia": "Al-Hasa_Expedition_(1871)",
+   "search": "Al-Hasa Expedition 1871 Midhat Pasha Baghdad Ras Tanura Qatif Hofuf Najd Sanjak Abdullah bin Faisal Saud bin Faisal civil war"
+  },
+  {
+   "id": "ottoman-conquest-of-asir-1871",
+   "kind": "war",
+   "year": 1871,
+   "title": "The Ottomans conquer Asir, 1871",
+   "place": "Abha",
+   "lonLat": [
+    42.5,
+    18.22
+   ],
+   "civs": [
+    "turkey"
+   ],
+   "summary": "The Al Aidh emirs of Abha had kept the highlands of Asir out of Ottoman hands and even raided Hodeidah. In 1871 Ottoman troops march into Asir, take Abha and capture the emir Muhammad bin Aidh; Asir becomes an Ottoman sanjak, the base for the conquest of Yemen.",
+   "wikipedia": "Al_Aidh_Emirate",
+   "search": "Ottoman conquest of Asir 1871 1872 Radif Pasha Abha Muhammad bin Aidh Al Aidh emirate Asir sanjak Yemen"
+  },
+  {
+   "id": "ibn-saud-takes-al-hasa-1913",
+   "kind": "war",
+   "year": 1913,
+   "title": "Ibn Saud takes al-Hasa from the Ottomans, 1913",
+   "place": "Hofuf",
+   "lonLat": [
+    49.59,
+    25.38
+   ],
+   "civs": [
+    "saudi-arabia",
+    "turkey"
+   ],
+   "summary": "With the Ottomans weakened by the Balkan Wars, Ibn Saud, emir of Riyadh, storms Hofuf in May 1913 and sends its Ottoman garrison away by sea. Qatif follows, and his emirate of Nejd and Hasa now reaches the Persian Gulf.",
+   "wikipedia": "Conquest_of_al-Hasa",
+   "search": "Conquest of al-Hasa May 1913 Ibn Saud Hofuf Ottoman garrison expelled Qatif Emirate of Nejd and Hasa Persian Gulf coast"
+  },
+  {
+   "id": "arab-revolt-1916",
+   "kind": "revolution",
+   "year": 1916,
+   "title": "The Arab Revolt and the Kingdom of Hejaz, 1916",
+   "place": "Mecca",
+   "lonLat": [
+    39.83,
+    21.42
+   ],
+   "civs": [
+    "kingdom-of-hejaz",
+    "turkey",
+    "united-kingdom"
+   ],
+   "summary": "Promised Arab independence by Britain, Sharif Hussein of Mecca rises against the Ottomans on 10 June 1916. His men take Mecca, Jeddah and Taif within months, and in the autumn he is proclaimed king. His sons Faisal and Abdullah carry the revolt north along the Hejaz railway with British help, while Medina holds out.",
+   "wikipedia": "Arab_Revolt",
+   "search": "Arab Revolt 10 June 1916 Sharif Hussein bin Ali Mecca Jeddah Taif King of the Hejaz Faisal Lawrence McMahon correspondence Hejaz railway"
+  },
+  {
+   "id": "surrender-of-medina-1919",
+   "kind": "war",
+   "year": 1919,
+   "title": "Medina surrenders, January 1919",
+   "place": "Medina",
+   "lonLat": [
+    39.61,
+    24.47
+   ],
+   "civs": [
+    "turkey",
+    "kingdom-of-hejaz"
+   ],
+   "summary": "Fakhri Pasha had held Medina for the sultan through the whole Arab Revolt, and refused to give it up even after the Armistice of Mudros. Hungry and sick, his own officers hand him over on 10 January 1919, and the city passes to the Kingdom of Hejaz.",
+   "wikipedia": "Siege_of_Medina",
+   "search": "Siege of Medina 1916 1919 Fakhri Pasha surrender 10 January 1919 Ottoman garrison Hejaz railway Kingdom of Hejaz Abdullah"
+  },
+  {
+   "id": "saudis-take-abha-1920",
+   "kind": "war",
+   "year": 1920,
+   "title": "Ibn Saud takes the Asir highlands, 1920",
+   "place": "Abha",
+   "lonLat": [
+    42.5,
+    18.22
+   ],
+   "civs": [
+    "saudi-arabia",
+    "emirate-of-asir"
+   ],
+   "summary": "After the Ottomans left, the Al Aidh emirs took Abha back. Called in by local tribes, Ibn Saud sends his son Faisal and his cousin Abdulaziz bin Musaid, whose force enters Abha on 21 July 1920. A treaty with the Idrisi emir in August shares out Upper Asir, and the highlands stay with Nejd.",
+   "wikipedia": "Sheikdom_of_Upper_Asir",
+   "search": "Saudi capture of Abha 21 July 1920 Faisal bin Abdulaziz Abdulaziz bin Musaid Hasan bin Aidh Upper Asir Idrisi treaty August 1920 partition"
+  },
+  {
+   "id": "saudi-conquest-of-hejaz-1924",
+   "kind": "war",
+   "year": 1924,
+   "to": 1925,
+   "title": "Ibn Saud conquers the Hejaz, 1924 – 1925",
+   "place": "Jeddah",
+   "lonLat": [
+    39.19,
+    21.49
+   ],
+   "civs": [
+    "saudi-arabia",
+    "kingdom-of-hejaz"
+   ],
+   "summary": "When King Hussein takes the title of caliph in 1924, Ibn Saud attacks. His Ikhwan take Taif and enter Mecca on 13 October 1924; Hussein abdicates for his son Ali, who holds out in Jeddah. Medina surrenders on 5 December 1925 and Jeddah on 17 December, ending the Kingdom of Hejaz; in January 1926 Ibn Saud is proclaimed King of the Hejaz.",
+   "wikipedia": "Saudi_conquest_of_Hejaz",
+   "search": "Saudi conquest of Hejaz 1924 1925 Taif Mecca 13 October 1924 Hussein abdicates Ali bin Hussein Medina 5 December Jeddah 17 December 1925 Ikhwan"
+  },
+  {
+   "id": "treaty-of-mecca-1926",
+   "kind": "treaty",
+   "year": 1926,
+   "title": "Idrisi Asir becomes a Saudi protectorate, October 1926",
+   "place": "Sabya",
+   "lonLat": [
+    42.95,
+    17.15
+   ],
+   "civs": [
+    "emirate-of-asir",
+    "saudi-arabia"
+   ],
+   "summary": "Squeezed between the Imam of Yemen, who had taken Hodeidah from it in 1925, and its own family quarrels, the Idrisi Emirate of Asir turns to Ibn Saud. By the Treaty of Mecca of 21 October 1926 the emir Hasan al-Idrisi places his country under Saudi protection and hands over its foreign affairs.",
+   "wikipedia": "Idrisid_Emirate_of_Asir",
+   "search": "Treaty of Mecca 21 October 1926 Idrisi Asir Hasan al-Idrisi Ibn Saud protectorate foreign affairs Sabya Jizan Yemen"
+  },
+  {
+   "id": "annexation-of-asir-1930",
+   "kind": "empire",
+   "year": 1930,
+   "title": "Ibn Saud takes over Idrisi Asir, November 1930",
+   "place": "Jizan",
+   "lonLat": [
+    42.55,
+    16.89
+   ],
+   "civs": [
+    "saudi-arabia",
+    "emirate-of-asir"
+   ],
+   "summary": "On 20 November 1930 a new agreement gives Ibn Saud the government of the Idrisi emirate as well, and Jizan and the Tihama of Asir become part of his kingdom. An Idrisi revolt in 1932 fails, and after the Saudi-Yemeni war the Treaty of Taif of 1934 confirms the border with Yemen.",
+   "wikipedia": "Idrisid_Emirate_of_Asir",
+   "search": "Ibn Saud annexes Idrisi Asir 20 November 1930 internal administration Jizan Sabya revolt 1932 Treaty of Taif 1934 Saudi-Yemeni war"
+  },
+  {
+   "id": "saudi-arabia-proclaimed-1932",
+   "kind": "empire",
+   "year": 1932,
+   "title": "The Kingdom of Saudi Arabia is proclaimed, September 1932",
+   "place": "Riyadh",
+   "lonLat": [
+    46.72,
+    24.69
+   ],
+   "civs": [
+    "saudi-arabia"
+   ],
+   "summary": "Since 1926 Ibn Saud had ruled the Hejaz and Nejd as two kingdoms under one crown. By a royal decree of 23 September 1932 he unites them as the Kingdom of Saudi Arabia, named after his dynasty; the day is now the country's national day.",
+   "wikipedia": "Proclamation_of_the_Kingdom_of_Saudi_Arabia",
+   "search": "Proclamation of the Kingdom of Saudi Arabia 23 September 1932 Ibn Saud Abdulaziz Kingdom of Hejaz and Nejd unified National Day"
   }
  ]
 }
