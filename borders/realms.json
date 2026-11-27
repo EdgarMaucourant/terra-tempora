@@ -2978,6 +2978,39 @@
   "es": "España",
   "periods": [
    {
+    "from": "1814-05-04",
+    "name": "Reign of Ferdinand VII",
+    "wikipedia": "Ferdinand VII",
+    "fr": "Règne de Ferdinand VII",
+    "es": "Reinado de Fernando VII",
+    "note": "Ferdinand VII back on the throne after the Peninsular War, abolishing the constitution of 1812",
+    "detail": "Ferdinand VII",
+    "detailFr": "Ferdinand VII",
+    "detailEs": "Fernando VII"
+   },
+   {
+    "from": "1820-03-10",
+    "name": "Liberal Triennium",
+    "wikipedia": "Trienio Liberal",
+    "fr": "Triennat libéral",
+    "es": "Trienio Liberal",
+    "note": "Riego's revolt forces Ferdinand VII to swear the constitution of 1812; a liberal government rules until the French invasion of 1823",
+    "detail": "Liberal Triennium",
+    "detailFr": "Triennat libéral",
+    "detailEs": "Trienio Liberal"
+   },
+   {
+    "from": "1823-10-01",
+    "name": "Ominous Decade",
+    "wikipedia": "Ominous Decade",
+    "fr": "Décennie abominable",
+    "es": "Década Ominosa",
+    "note": "Ferdinand VII's absolute rule again, restored by the French army, until his death in 1833",
+    "detail": "Ominous Decade",
+    "detailFr": "Décennie abominable",
+    "detailEs": "Década Ominosa"
+   },
+   {
     "from": "1833-09-29",
     "name": "Reign of Isabella II",
     "wikipedia": "Isabella II",
@@ -4887,8 +4920,8 @@
   "es": "República del Rif"
  },
  "Santo Domingo": {
-  "wikipedia": "Annexation of Santo Domingo",
-  "wikidata": "Q127689726",
+  "wikipedia": "Captaincy General of Santo Domingo",
+  "wikidata": "Q2919465",
   "fr": "Saint-Domingue espagnol",
   "es": "Santo Domingo"
  },
@@ -4910,5 +4943,11 @@
   "fr": "État carliste",
   "es": "Estado carlista",
   "notACountry": true
+ },
+ "Republic of Spanish Haiti": {
+  "wikipedia": "Republic of Spanish Haiti",
+  "wikidata": "Q11681694",
+  "fr": "République d’Haïti espagnole",
+  "es": "Estado Independiente del Haití Español"
  }
 }

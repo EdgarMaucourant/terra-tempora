@@ -16205,6 +16205,184 @@
      "by": "Carlist State"
     }
    ]
+  },
+  {
+   "place": "Santo Domingo (1815)",
+   "lonLat": [
+    -69.9,
+    18.5
+   ],
+   "years": [
+    1815,
+    1820
+   ],
+   "realm": "Spain",
+   "why": "Spanish Santo Domingo (España Boba) until December 1821"
+  },
+  {
+   "place": "Santo Domingo (1821)",
+   "lonLat": [
+    -69.9,
+    18.5
+   ],
+   "years": [
+    1821,
+    1821
+   ],
+   "realm": "Republic of Spanish Haiti",
+   "why": "Republic of Spanish Haiti, 1 Dec 1821 - 9 Feb 1822"
+  },
+  {
+   "place": "Santo Domingo (Haitian)",
+   "lonLat": [
+    -69.9,
+    18.5
+   ],
+   "years": [
+    1822,
+    1843
+   ],
+   "realm": "Haiti",
+   "why": "Haitian rule 1822-44"
+  },
+  {
+   "place": "Santo Domingo (1844)",
+   "lonLat": [
+    -69.9,
+    18.5
+   ],
+   "years": [
+    1844,
+    1860
+   ],
+   "realm": "Dominican Republic",
+   "why": "Independent from 27 February 1844"
+  },
+  {
+   "place": "Malabo (before 1843)",
+   "lonLat": [
+    8.78,
+    3.75
+   ],
+   "years": [
+    1815,
+    1842
+   ],
+   "realm": null,
+   "why": "Fernando Po not held by Spain before 1843 (British base 1827-43)"
+  },
+  {
+   "place": "Malabo (1843)",
+   "lonLat": [
+    8.78,
+    3.75
+   ],
+   "years": [
+    1843,
+    1859
+   ],
+   "realm": "Spain",
+   "why": "Spanish from Lerena's expedition of 1843"
+  },
+  {
+   "place": "Davao (before 1848)",
+   "lonLat": [
+    125.5,
+    7.3
+   ],
+   "years": [
+    1815,
+    1847
+   ],
+   "realm": null,
+   "why": "Davao Gulf not held by Spain before 1848"
+  },
+  {
+   "place": "Basilan (before 1848)",
+   "lonLat": [
+    122.1,
+    6.55
+   ],
+   "years": [
+    1815,
+    1847
+   ],
+   "realm": "Sultanate of Sulu",
+   "why": "Part of the Sultanate of Sulu before the Spanish fort of 1848"
+  },
+  {
+   "place": "Manila (1815)",
+   "lonLat": [
+    121.0,
+    14.6
+   ],
+   "years": [
+    1815,
+    1859
+   ],
+   "realm": "Spain",
+   "why": "Spanish East Indies"
+  },
+  {
+   "place": "Havana (1815)",
+   "lonLat": [
+    -82.37,
+    23.12
+   ],
+   "years": [
+    1815,
+    1859
+   ],
+   "realm": "Spain",
+   "why": "Spanish Cuba"
+  },
+  {
+   "place": "San Juan (1815)",
+   "lonLat": [
+    -66.4,
+    18.3
+   ],
+   "years": [
+    1815,
+    1859
+   ],
+   "realm": "Spain",
+   "why": "Spanish Puerto Rico"
+  },
+  {
+   "place": "Estella (First Carlist War)",
+   "lonLat": [
+    -2.03,
+    42.67
+   ],
+   "years": [
+    1834,
+    1838
+   ],
+   "realm": "Spain",
+   "why": "Carlist-held 1834-39",
+   "heldBy": [
+    {
+     "years": [
+      1834,
+      1838
+     ],
+     "by": "Carlist State"
+    }
+   ]
+  },
+  {
+   "place": "Madrid (1815)",
+   "lonLat": [
+    -3.7,
+    40.42
+   ],
+   "years": [
+    1815,
+    1859
+   ],
+   "realm": "Spain",
+   "why": "Spain"
   }
  ]
 }
