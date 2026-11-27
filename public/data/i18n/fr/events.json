@@ -4023,5 +4023,50 @@
   "title": "La dictature du roi Alexandre et le royaume de Yougoslavie, 1929",
   "place": "Belgrade",
   "summary": "Après qu’un député a abattu des dirigeants croates en plein parlement en 1928, le roi Alexandre suspend la constitution le 6 janvier 1929 et gouverne en dictateur. Le 3 octobre, il rebaptise le pays royaume de Yougoslavie et le redécoupe en nouvelles provinces, les banovines, qui ignorent les anciennes terres historiques."
+ },
+ "second-serbian-uprising-1815": {
+  "title": "Le second soulèvement serbe et l’autonomie serbe, 1815 – 1817",
+  "place": "Takovo",
+  "summary": "Le 23 avril 1815, Miloš Obrenović lance à Takovo une nouvelle révolte contre la domination ottomane dans le pachalik de Belgrade. Avant la fin de l’année, il conclut avec le gouverneur ottoman un accord qui laisse les Serbes gérer leurs propres affaires, et en 1817 une assemblée fait de Miloš un prince héréditaire."
+ },
+ "serbian-autonomy-1830": {
+  "title": "Le sultan reconnaît la principauté de Serbie, 1830 – 1833",
+  "place": "Serbie",
+  "summary": "En application du traité d’Andrinople, le sultan promulgue en 1830 des décrets qui reconnaissent la Serbie comme principauté autonome sous suzeraineté ottomane, avec Miloš Obrenović comme prince héréditaire. En 1833, un nouveau décret remet à la Serbie six districts de plus, dont la Krajina, la Crna Reka et Kruševac."
+ },
+ "serbian-montenegrin-ottoman-wars-1876": {
+  "title": "La Serbie et le Monténégro en guerre contre les Ottomans, 1876 – 1878",
+  "place": "Sud de la Serbie",
+  "summary": "Après le soulèvement de l’Herzégovine en 1875, la Serbie et le Monténégro déclarent la guerre à l’Empire ottoman en juin 1876. La Serbie est battue cette année-là, mais quand la Russie entre en guerre, elle reprend les armes en décembre 1877 et s’empare de Pirot, Leskovac, Niš et Vranje. Les Monténégrins prennent Nikšić en septembre 1877 et Bar en janvier 1878."
+ },
+ "treaty-of-berlin-western-balkans-1878": {
+  "title": "Le traité de Berlin et l’occupation de la Bosnie, 1878",
+  "place": "Bosnie-Herzégovine",
+  "summary": "Le traité de Berlin rend la Serbie et le Monténégro pleinement indépendants. La Serbie gagne Niš, Pirot, Leskovac et Vranje, et le Monténégro double presque de taille avec Nikšić, Podgorica et le port de Bar. L’Autriche-Hongrie obtient le droit d’occuper et d’administrer la Bosnie-Herzégovine, toujours formellement ottomane, et ses troupes prennent Sarajevo en août après de durs combats."
+ },
+ "ulcinj-to-montenegro-1880": {
+  "title": "Le Monténégro reçoit Ulcinj, 1880",
+  "place": "Ulcinj",
+  "summary": "Le traité de Berlin avait attribué Plav et Gusinje au Monténégro, mais la Ligue albanaise de Prizren s’était battue pour les garder. Après une démonstration navale des grandes puissances, les Ottomans remettent à la place le port d’Ulcinj le 22 novembre 1880."
+ },
+ "kingdom-of-serbia-1882": {
+  "title": "La Serbie devient un royaume, 1882",
+  "place": "Belgrade",
+  "summary": "Le 6 mars 1882, le prince Milan Obrenović proclame la Serbie royaume et devient le roi Milan Ier, quatre ans après que le traité de Berlin a reconnu l’indépendance du pays."
+ },
+ "may-coup-serbia-1903": {
+  "title": "Le coup d’État de mai ramène les Karađorđević en Serbie, 1903",
+  "place": "Belgrade",
+  "summary": "Dans la nuit du 10 au 11 juin 1903, des officiers pénètrent dans le palais royal de Belgrade et tuent le roi Alexandre Obrenović et la reine Draga. L’assemblée appelle au trône Pierre Karađorđević, qui devient Pierre Ier, mettant fin à la lignée des Obrenović."
+ },
+ "bosnian-crisis-1908": {
+  "title": "L’Autriche-Hongrie annexe la Bosnie-Herzégovine, 1908",
+  "place": "Sarajevo",
+  "summary": "Le 6 octobre 1908, l’Autriche-Hongrie annexe la Bosnie-Herzégovine, qu’elle occupait depuis 1878, et retire ses garnisons du sandjak de Novi Pazar. La Serbie et la Russie protestent, mais doivent accepter l’annexion en mars 1909, et l’Empire ottoman reçoit une compensation."
+ },
+ "kingdom-of-montenegro-1910": {
+  "title": "Le Monténégro devient un royaume, 1910",
+  "place": "Cetinje",
+  "summary": "Le 28 août 1910, pour le jubilé de ses cinquante ans de règne, le prince Nicolas proclame le Monténégro royaume et prend le titre de roi Nicolas Ier."
  }
 }
