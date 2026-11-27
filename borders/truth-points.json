@@ -17565,6 +17565,361 @@
    ],
    "realm": "Turkey",
    "why": "Ottoman Rhodopes until 1912"
+  },
+  {
+   "place": "Belgrade (Serbia)",
+   "lonLat": [
+    20.46,
+    44.8
+   ],
+   "years": [
+    1946,
+    2026
+   ],
+   "realm": "Serbia",
+   "why": "Serbia, a Yugoslav republic until 2006"
+  },
+  {
+   "place": "Belgrade (1942)",
+   "lonLat": [
+    20.46,
+    44.8
+   ],
+   "years": [
+    1942,
+    1942
+   ],
+   "realm": "Yugoslavia",
+   "heldBy": [
+    {
+     "years": [
+      1942,
+      1942
+     ],
+     "by": "Germany"
+    }
+   ],
+   "why": "German military administration"
+  },
+  {
+   "place": "Sarajevo (Bosnia)",
+   "lonLat": [
+    18.41,
+    43.85
+   ],
+   "years": [
+    1946,
+    2026
+   ],
+   "realm": "Bosnia and Herzegovina",
+   "why": "Capital of Bosnia and Herzegovina"
+  },
+  {
+   "place": "Sarajevo (1942)",
+   "lonLat": [
+    18.41,
+    43.85
+   ],
+   "years": [
+    1942,
+    1944
+   ],
+   "realm": "Yugoslavia",
+   "heldBy": [
+    {
+     "years": [
+      1942,
+      1944
+     ],
+     "by": "Independent State of Croatia"
+    }
+   ],
+   "why": "Independent State of Croatia"
+  },
+  {
+   "place": "Banja Luka (1993)",
+   "lonLat": [
+    17.19,
+    44.77
+   ],
+   "years": [
+    1992,
+    1994
+   ],
+   "realm": "Bosnia and Herzegovina",
+   "heldBy": [
+    {
+     "years": [
+      1992,
+      1994
+     ],
+     "by": "Republika Srpska"
+    }
+   ],
+   "why": "Republika Srpska in the war"
+  },
+  {
+   "place": "Mostar (1993)",
+   "lonLat": [
+    17.81,
+    43.34
+   ],
+   "years": [
+    1992,
+    1993
+   ],
+   "realm": "Bosnia and Herzegovina",
+   "heldBy": [
+    {
+     "years": [
+      1992,
+      1993
+     ],
+     "by": "Croatian Republic of Herzeg-Bosnia"
+    }
+   ],
+   "why": "Herzeg-Bosnia in the war"
+  },
+  {
+   "place": "Pristina (Serbia)",
+   "lonLat": [
+    21.16,
+    42.66
+   ],
+   "years": [
+    1946,
+    1998
+   ],
+   "realm": "Serbia",
+   "why": "Autonomous province of Serbia"
+  },
+  {
+   "place": "Pristina (UN)",
+   "lonLat": [
+    21.16,
+    42.66
+   ],
+   "years": [
+    1999,
+    2007
+   ],
+   "realm": "Serbia",
+   "heldBy": [
+    {
+     "years": [
+      1999,
+      2007
+     ],
+     "by": "United Nations"
+    }
+   ],
+   "why": "UNMIK"
+  },
+  {
+   "place": "Pristina (Kosovo)",
+   "lonLat": [
+    21.16,
+    42.66
+   ],
+   "years": [
+    2008,
+    2026
+   ],
+   "realm": "Kosovo",
+   "why": "Independent since 2008"
+  },
+  {
+   "place": "Pristina (1942)",
+   "lonLat": [
+    21.16,
+    42.66
+   ],
+   "years": [
+    1941,
+    1942
+   ],
+   "realm": "Yugoslavia",
+   "heldBy": [
+    {
+     "years": [
+      1941,
+      1942
+     ],
+     "by": "Italy"
+    }
+   ],
+   "why": "Joined to Italian Albania"
+  },
+  {
+   "place": "Mitrovica (1942)",
+   "lonLat": [
+    20.87,
+    42.89
+   ],
+   "years": [
+    1941,
+    1943
+   ],
+   "realm": "Yugoslavia",
+   "heldBy": [
+    {
+     "years": [
+      1941,
+      1943
+     ],
+     "by": "Germany"
+    }
+   ],
+   "why": "German zone"
+  },
+  {
+   "place": "Skopje (North Macedonia)",
+   "lonLat": [
+    21.43,
+    42.0
+   ],
+   "years": [
+    1946,
+    2026
+   ],
+   "realm": "North Macedonia",
+   "why": "Capital of North Macedonia"
+  },
+  {
+   "place": "Skopje (1942)",
+   "lonLat": [
+    21.43,
+    42.0
+   ],
+   "years": [
+    1941,
+    1943
+   ],
+   "realm": "Yugoslavia",
+   "heldBy": [
+    {
+     "years": [
+      1941,
+      1943
+     ],
+     "by": "Bulgaria"
+    }
+   ],
+   "why": "Bulgarian occupation"
+  },
+  {
+   "place": "Tetovo (1942)",
+   "lonLat": [
+    20.97,
+    42.01
+   ],
+   "years": [
+    1941,
+    1942
+   ],
+   "realm": "Yugoslavia",
+   "heldBy": [
+    {
+     "years": [
+      1941,
+      1942
+     ],
+     "by": "Italy"
+    }
+   ],
+   "why": "Joined to Italian Albania"
+  },
+  {
+   "place": "Tirana (Albania)",
+   "lonLat": [
+    19.82,
+    41.33
+   ],
+   "years": [
+    1945,
+    2026
+   ],
+   "realm": "Albania",
+   "why": "Capital of Albania"
+  },
+  {
+   "place": "Tirana (1940)",
+   "lonLat": [
+    19.82,
+    41.33
+   ],
+   "years": [
+    1939,
+    1942
+   ],
+   "realm": "Albania",
+   "heldBy": [
+    {
+     "years": [
+      1939,
+      1942
+     ],
+     "by": "Italy"
+    }
+   ],
+   "why": "Italian protectorate"
+  },
+  {
+   "place": "Gjirokastër (1940)",
+   "lonLat": [
+    20.14,
+    40.08
+   ],
+   "years": [
+    1940,
+    1940
+   ],
+   "realm": "Albania",
+   "heldBy": [
+    {
+     "years": [
+      1940,
+      1940
+     ],
+     "by": "Greece"
+    }
+   ],
+   "why": "Greek army 1940-41"
+  },
+  {
+   "place": "Podgorica (1942)",
+   "lonLat": [
+    19.26,
+    42.44
+   ],
+   "years": [
+    1941,
+    1942
+   ],
+   "realm": "Yugoslavia",
+   "heldBy": [
+    {
+     "years": [
+      1941,
+      1942
+     ],
+     "by": "Italy"
+    }
+   ],
+   "why": "Italian governorate"
+  },
+  {
+   "place": "Podgorica (Montenegro)",
+   "lonLat": [
+    19.26,
+    42.44
+   ],
+   "years": [
+    1946,
+    2026
+   ],
+   "realm": "Montenegro",
+   "why": "Montenegro"
   }
  ]
 }

@@ -207,9 +207,429 @@
    ],
    "from": 1815,
    "why": "Bulgaria, Dobruja, Wallachia and Moldavia west of the Prut (not Bukovina or Transylvania)"
+  },
+  {
+   "pieces": [
+    "SRB-121",
+    "SRB-125",
+    "SRB-1505",
+    "SRB-279",
+    "SRB-829",
+    "SRB-830",
+    "SRB-831",
+    "SRB-832",
+    "SRB-833",
+    "SRB-834",
+    "SRB-835",
+    "SRB-836",
+    "SRB-837",
+    "SRB-838",
+    "SRB-839",
+    "SRB-841",
+    "SRB-843",
+    "SRB-844",
+    "KOS-5886",
+    "KOS-5887",
+    "KOS-5888",
+    "KOS-5889",
+    "KOS-5890",
+    "KOS-5891",
+    "KOS-5892",
+    "KOS-5893",
+    "KOS-5894",
+    "KOS-5895",
+    "KOS-5896",
+    "KOS-5897",
+    "KOS-5898",
+    "KOS-5899",
+    "KOS-5900",
+    "KOS-5901",
+    "KOS-5902",
+    "KOS-5903",
+    "KOS-5904",
+    "KOS-5905",
+    "KOS-5906",
+    "KOS-5907",
+    "KOS-5908",
+    "KOS-5909",
+    "KOS-5910",
+    "KOS-5911",
+    "KOS-5912",
+    "KOS-5913",
+    "KOS-5914",
+    "KOS-5915",
+    "MNE-1496",
+    "MNE-1497",
+    "MNE-1501",
+    "MNE-1503",
+    "MNE-1508",
+    "MNE-1509",
+    "MNE-1510",
+    "MNE-1512",
+    "MNE-1513",
+    "MNE-1514",
+    "MNE-1515",
+    "MNE-1516",
+    "MNE-1517",
+    "MNE-1519",
+    "MNE-1520",
+    "BIH-2224",
+    "BIH-2225",
+    "BIH-2226",
+    "BIH-2227",
+    "BIH-2228",
+    "BIH-2887",
+    "BIH-2889",
+    "BIH-2890",
+    "BIH-2891",
+    "BIH-3153",
+    "BIH-4801",
+    "BIH-4802",
+    "BIH-4803",
+    "BIH-4804",
+    "BIH-4805",
+    "BIH-4806",
+    "BIH-4807",
+    "BIH-4808",
+    "MKD-2894",
+    "MKD-2895",
+    "MKD-2896",
+    "MKD-2897",
+    "MKD-2898",
+    "MKD-2899",
+    "MKD-2901",
+    "MKD-2902",
+    "MKD-2903",
+    "MKD-2904",
+    "MKD-2905",
+    "MKD-2906",
+    "MKD-2907",
+    "MKD-2908",
+    "MKD-2909",
+    "MKD-2910",
+    "MKD-2911",
+    "MKD-2912",
+    "MKD-2913",
+    "MKD-2914",
+    "MKD-2915",
+    "MKD-2916",
+    "MKD-2917",
+    "MKD-2918",
+    "MKD-2919",
+    "MKD-2920",
+    "MKD-2921",
+    "MKD-2922",
+    "MKD-2923",
+    "MKD-2924",
+    "MKD-2925",
+    "MKD-2926",
+    "MKD-2927",
+    "MKD-2928",
+    "MKD-2929",
+    "MKD-2930",
+    "MKD-2931",
+    "MKD-2932",
+    "MKD-2933",
+    "MKD-2934",
+    "MKD-2935",
+    "MKD-2936",
+    "MKD-2937",
+    "MKD-2938",
+    "MKD-2939",
+    "MKD-2940",
+    "MKD-2941",
+    "MKD-2942",
+    "MKD-2943",
+    "MKD-2944",
+    "MKD-2945",
+    "MKD-2946",
+    "MKD-2947",
+    "MKD-2948",
+    "MKD-2950",
+    "MKD-2951",
+    "MKD-2952",
+    "MKD-2953",
+    "MKD-2954",
+    "MKD-2955",
+    "MKD-2956",
+    "MKD-2957",
+    "MKD-2958",
+    "MKD-2959",
+    "MKD-2960",
+    "MKD-2961",
+    "MKD-2962",
+    "MKD-2963",
+    "MKD-2993",
+    "MKD-2994",
+    "MKD-2995",
+    "MKD-2996",
+    "MKD-2997",
+    "MKD-2998",
+    "MKD-2999",
+    "MKD-3000",
+    "MKD-3003",
+    "MKD-3004",
+    "MKD-3005",
+    "MKD-3006",
+    "MKD-3007",
+    "MKD-4845",
+    "MKD-4846",
+    "MKD-5883"
+   ],
+   "from": 1941,
+   "why": "Serbia (not Vojvodina), Kosovo, Bosnia, North Macedonia and Montenegro (not Old Montenegro or the Bay of Kotor): Ottoman land in 1815"
+  },
+  {
+   "pieces": [
+    "ALB-1494",
+    "ALB-1495",
+    "ALB-1498",
+    "ALB-1502",
+    "ALB-1504",
+    "ALB-1521",
+    "ALB-1523",
+    "ALB-1524",
+    "ALB-1525",
+    "ALB-1526",
+    "ALB-1528",
+    "ALB-1529"
+   ],
+   "from": 1939,
+   "why": "Albania, Ottoman until 1912"
   }
  ],
  "changes": [
+  {
+   "date": "2008-02-17",
+   "what": "Kosovo declares its independence from Serbia",
+   "source": {
+    "title": "2008 Kosovo declaration of independence (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/2008_Kosovo_declaration_of_independence"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "KOS-5886",
+      "KOS-5887",
+      "KOS-5888",
+      "KOS-5889",
+      "KOS-5890",
+      "KOS-5891",
+      "KOS-5892",
+      "KOS-5893",
+      "KOS-5894",
+      "KOS-5895",
+      "KOS-5896",
+      "KOS-5897",
+      "KOS-5898",
+      "KOS-5899",
+      "KOS-5900",
+      "KOS-5901",
+      "KOS-5902",
+      "KOS-5903",
+      "KOS-5904",
+      "KOS-5905",
+      "KOS-5906",
+      "KOS-5907",
+      "KOS-5908",
+      "KOS-5909",
+      "KOS-5910",
+      "KOS-5911",
+      "KOS-5912",
+      "KOS-5913",
+      "KOS-5914",
+      "KOS-5915"
+     ],
+     "owner": "Serbia",
+     "source": {
+      "title": "Kosovo (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kosovo"
+     },
+     "hatch": {
+      "by": "United Nations",
+      "since": "1999-06-10",
+      "note": "Run by the United Nations Interim Administration Mission in Kosovo (UNMIK) under Resolution 1244, while still part of Serbia",
+      "source": {
+       "title": "United Nations Interim Administration Mission in Kosovo (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/United_Nations_Interim_Administration_Mission_in_Kosovo"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1999-06-10",
+   "what": "After the NATO bombing, Serbian forces leave Kosovo and the United Nations takes over its administration",
+   "source": {
+    "title": "United Nations Security Council Resolution 1244 (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_1244"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "KOS-5886",
+      "KOS-5887",
+      "KOS-5888",
+      "KOS-5889",
+      "KOS-5890",
+      "KOS-5891",
+      "KOS-5892",
+      "KOS-5893",
+      "KOS-5894",
+      "KOS-5895",
+      "KOS-5896",
+      "KOS-5897",
+      "KOS-5898",
+      "KOS-5899",
+      "KOS-5900",
+      "KOS-5901",
+      "KOS-5902",
+      "KOS-5903",
+      "KOS-5904",
+      "KOS-5905",
+      "KOS-5906",
+      "KOS-5907",
+      "KOS-5908",
+      "KOS-5909",
+      "KOS-5910",
+      "KOS-5911",
+      "KOS-5912",
+      "KOS-5913",
+      "KOS-5914",
+      "KOS-5915"
+     ],
+     "owner": "Serbia",
+     "source": {
+      "title": "Kosovo War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kosovo_War"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1995-12-14",
+   "what": "The Dayton Agreement ends the Bosnian War: Republika Srpska becomes one of the country's two entities",
+   "source": {
+    "title": "Dayton Agreement (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Dayton_Agreement"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "BIH-4801",
+      "BIH-4802",
+      "BIH-4803",
+      "BIH-4804",
+      "BIH-4805",
+      "BIH-4806",
+      "BIH-4807",
+      "BIH-4808"
+     ],
+     "owner": "Bosnia and Herzegovina",
+     "source": {
+      "title": "Bosnian War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bosnian_War"
+     },
+     "hatch": {
+      "by": "Republika Srpska",
+      "since": "1992-04-07",
+      "note": "Held by the self-proclaimed Republika Srpska in the Bosnian War, until the Dayton Agreement made it one of the country's two entities",
+      "source": {
+       "title": "Republika Srpska (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Republika_Srpska"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1994-03-18",
+   "what": "The Washington Agreement ends the Croat-Bosniak war and folds Herzeg-Bosnia into a federation",
+   "source": {
+    "title": "Washington Agreement (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Washington_Agreement"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "BIH-2227",
+      "BIH-2228",
+      "BIH-3153",
+      "BIH-2224"
+     ],
+     "owner": "Bosnia and Herzegovina",
+     "source": {
+      "title": "Croat–Bosniak War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Croat–Bosniak_War"
+     },
+     "hatch": {
+      "by": "Croatian Republic of Herzeg-Bosnia",
+      "since": "1992-04-08",
+      "note": "Held by the self-proclaimed Croatian Republic of Herzeg-Bosnia in the Bosnian War, until the Washington Agreement of 1994",
+      "source": {
+       "title": "Croatian Republic of Herzeg-Bosnia (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Croatian_Republic_of_Herzeg-Bosnia"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1992-04-08",
+   "what": "Herzeg-Bosnia's forces take control of western Herzegovina",
+   "source": {
+    "title": "Croatian Republic of Herzeg-Bosnia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Croatian_Republic_of_Herzeg-Bosnia"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "BIH-2227",
+      "BIH-2228",
+      "BIH-3153",
+      "BIH-2224"
+     ],
+     "owner": "Bosnia and Herzegovina",
+     "source": {
+      "title": "Bosnian War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bosnian_War"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1992-04-07",
+   "what": "The Bosnian War begins: Bosnian Serb forces take control of the north and east",
+   "source": {
+    "title": "Bosnian War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Bosnian_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "BIH-4801",
+      "BIH-4802",
+      "BIH-4803",
+      "BIH-4804",
+      "BIH-4805",
+      "BIH-4806",
+      "BIH-4807",
+      "BIH-4808"
+     ],
+     "owner": "Bosnia and Herzegovina",
+     "source": {
+      "title": "Bosnian War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bosnian_War"
+     }
+    }
+   ]
+  },
   {
    "date": "1947-03-31",
    "what": "The British hand the Dodecanese over to Greece; the islands are formally joined to it in 1948",
@@ -243,6 +663,191 @@
    ]
   },
   {
+   "date": "1945-11-29",
+   "what": "The Federal People's Republic of Yugoslavia is proclaimed, a federation of six republics",
+   "source": {
+    "title": "Socialist Federal Republic of Yugoslavia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Socialist_Federal_Republic_of_Yugoslavia"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SRB-121",
+      "SRB-125",
+      "SRB-1505",
+      "SRB-279",
+      "SRB-829",
+      "SRB-830",
+      "SRB-831",
+      "SRB-832",
+      "SRB-833",
+      "SRB-834",
+      "SRB-835",
+      "SRB-836",
+      "SRB-837",
+      "SRB-838",
+      "SRB-839",
+      "SRB-841",
+      "SRB-843",
+      "SRB-844",
+      "KOS-5886",
+      "KOS-5887",
+      "KOS-5888",
+      "KOS-5889",
+      "KOS-5890",
+      "KOS-5891",
+      "KOS-5892",
+      "KOS-5893",
+      "KOS-5894",
+      "KOS-5895",
+      "KOS-5896",
+      "KOS-5897",
+      "KOS-5898",
+      "KOS-5899",
+      "KOS-5900",
+      "KOS-5901",
+      "KOS-5902",
+      "KOS-5903",
+      "KOS-5904",
+      "KOS-5905",
+      "KOS-5906",
+      "KOS-5907",
+      "KOS-5908",
+      "KOS-5909",
+      "KOS-5910",
+      "KOS-5911",
+      "KOS-5912",
+      "KOS-5913",
+      "KOS-5914",
+      "KOS-5915",
+      "MNE-1496",
+      "MNE-1497",
+      "MNE-1501",
+      "MNE-1503",
+      "MNE-1508",
+      "MNE-1509",
+      "MNE-1510",
+      "MNE-1512",
+      "MNE-1513",
+      "MNE-1514",
+      "MNE-1515",
+      "MNE-1516",
+      "MNE-1517",
+      "MNE-1519",
+      "MNE-1520",
+      "BIH-2224",
+      "BIH-2225",
+      "BIH-2226",
+      "BIH-2227",
+      "BIH-2228",
+      "BIH-2887",
+      "BIH-2889",
+      "BIH-2890",
+      "BIH-2891",
+      "BIH-3153",
+      "BIH-4801",
+      "BIH-4802",
+      "BIH-4803",
+      "BIH-4804",
+      "BIH-4805",
+      "BIH-4806",
+      "BIH-4807",
+      "BIH-4808",
+      "MKD-2894",
+      "MKD-2895",
+      "MKD-2896",
+      "MKD-2897",
+      "MKD-2898",
+      "MKD-2899",
+      "MKD-2901",
+      "MKD-2902",
+      "MKD-2903",
+      "MKD-2904",
+      "MKD-2905",
+      "MKD-2906",
+      "MKD-2907",
+      "MKD-2908",
+      "MKD-2909",
+      "MKD-2910",
+      "MKD-2911",
+      "MKD-2912",
+      "MKD-2913",
+      "MKD-2914",
+      "MKD-2915",
+      "MKD-2916",
+      "MKD-2917",
+      "MKD-2918",
+      "MKD-2919",
+      "MKD-2920",
+      "MKD-2921",
+      "MKD-2922",
+      "MKD-2923",
+      "MKD-2924",
+      "MKD-2925",
+      "MKD-2926",
+      "MKD-2927",
+      "MKD-2928",
+      "MKD-2929",
+      "MKD-2930",
+      "MKD-2931",
+      "MKD-2932",
+      "MKD-2933",
+      "MKD-2934",
+      "MKD-2935",
+      "MKD-2936",
+      "MKD-2937",
+      "MKD-2938",
+      "MKD-2939",
+      "MKD-2940",
+      "MKD-2941",
+      "MKD-2942",
+      "MKD-2943",
+      "MKD-2944",
+      "MKD-2945",
+      "MKD-2946",
+      "MKD-2947",
+      "MKD-2948",
+      "MKD-2950",
+      "MKD-2951",
+      "MKD-2952",
+      "MKD-2953",
+      "MKD-2954",
+      "MKD-2955",
+      "MKD-2956",
+      "MKD-2957",
+      "MKD-2958",
+      "MKD-2959",
+      "MKD-2960",
+      "MKD-2961",
+      "MKD-2962",
+      "MKD-2963",
+      "MKD-2993",
+      "MKD-2994",
+      "MKD-2995",
+      "MKD-2996",
+      "MKD-2997",
+      "MKD-2998",
+      "MKD-2999",
+      "MKD-3000",
+      "MKD-3003",
+      "MKD-3004",
+      "MKD-3005",
+      "MKD-3006",
+      "MKD-3007",
+      "MKD-4845",
+      "MKD-4846",
+      "MKD-5883"
+     ],
+     "owner": "Yugoslavia",
+     "source": {
+      "title": "Democratic Federal Yugoslavia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Democratic_Federal_Yugoslavia"
+     }
+    }
+   ]
+  },
+  {
    "date": "1945-05-08",
    "what": "The German garrison of the Dodecanese surrenders to the British",
    "source": {
@@ -268,6 +873,352 @@
       "source": {
        "title": "Dodecanese campaign (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Dodecanese_campaign"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1945-05-08",
+   "what": "The Independent State of Croatia collapses at the end of the war in Europe",
+   "source": {
+    "title": "Independent State of Croatia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Independent_State_of_Croatia"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "BIH-2224",
+      "BIH-2225",
+      "BIH-2226",
+      "BIH-2227",
+      "BIH-2228",
+      "BIH-2887",
+      "BIH-2889",
+      "BIH-2890",
+      "BIH-2891",
+      "BIH-3153",
+      "BIH-4801",
+      "BIH-4802",
+      "BIH-4803",
+      "BIH-4804",
+      "BIH-4805",
+      "BIH-4806",
+      "BIH-4807",
+      "BIH-4808"
+     ],
+     "owner": "Yugoslavia",
+     "source": {
+      "title": "Independent State of Croatia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Independent_State_of_Croatia"
+     },
+     "hatch": {
+      "by": "Independent State of Croatia",
+      "since": "1941-04-17",
+      "note": "Part of the Independent State of Croatia, a puppet state of Germany and Italy, until May 1945",
+      "source": {
+       "title": "Independent State of Croatia (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Independent_State_of_Croatia"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-12-15",
+   "what": "The last German troops leave Montenegro",
+   "source": {
+    "title": "Yugoslav Front (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Yugoslav_Front"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "MNE-1496",
+      "MNE-1497",
+      "MNE-1501",
+      "MNE-1503",
+      "MNE-1508",
+      "MNE-1509",
+      "MNE-1510",
+      "MNE-1512",
+      "MNE-1513",
+      "MNE-1514",
+      "MNE-1515",
+      "MNE-1516",
+      "MNE-1517",
+      "MNE-1519",
+      "MNE-1520"
+     ],
+     "owner": "Yugoslavia",
+     "source": {
+      "title": "Italian governorate of Montenegro (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Italian_governorate_of_Montenegro"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1943-09-08",
+      "note": "Under German occupation from the Italian surrender until December 1944",
+      "source": {
+       "title": "Italian governorate of Montenegro (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Italian_governorate_of_Montenegro"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-11-29",
+   "what": "The last German troops leave Albania",
+   "source": {
+    "title": "German occupation of Albania (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/German_occupation_of_Albania"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "ALB-1494",
+      "ALB-1495",
+      "ALB-1498",
+      "ALB-1502",
+      "ALB-1504",
+      "ALB-1521",
+      "ALB-1523",
+      "ALB-1524",
+      "ALB-1525",
+      "ALB-1526",
+      "ALB-1528",
+      "ALB-1529"
+     ],
+     "owner": "Albania",
+     "source": {
+      "title": "German occupation of Albania (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/German_occupation_of_Albania"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1943-09-08",
+      "note": "Under German occupation from the Italian surrender until November 1944",
+      "source": {
+       "title": "German occupation of Albania (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/German_occupation_of_Albania"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-11-19",
+   "what": "The German army leaves Kosovo",
+   "source": {
+    "title": "Kosovo in World War II (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Kosovo_in_World_War_II"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "KOS-5893",
+      "KOS-5892",
+      "KOS-5897",
+      "KOS-5894",
+      "KOS-5895",
+      "KOS-5901"
+     ],
+     "owner": "Yugoslavia",
+     "source": {
+      "title": "Military Administration in Serbia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Military_Administration_in_Serbia"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-04-17",
+      "note": "Northern Kosovo and the Trepča mines, under the German military administration in Serbia, until November 1944",
+      "source": {
+       "title": "Military Administration in Serbia (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Military_Administration_in_Serbia"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "KOS-5886",
+      "KOS-5887",
+      "KOS-5888",
+      "KOS-5889",
+      "KOS-5890",
+      "KOS-5891",
+      "KOS-5896",
+      "KOS-5898",
+      "KOS-5899",
+      "KOS-5900",
+      "KOS-5902",
+      "KOS-5903",
+      "KOS-5904",
+      "KOS-5905",
+      "KOS-5906",
+      "KOS-5907",
+      "KOS-5908",
+      "KOS-5909",
+      "KOS-5910",
+      "KOS-5911",
+      "KOS-5912",
+      "KOS-5913",
+      "KOS-5914",
+      "KOS-5915"
+     ],
+     "owner": "Yugoslavia",
+     "source": {
+      "title": "Kosovo in World War II (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kosovo_in_World_War_II"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1943-09-08",
+      "note": "Under German occupation, as part of Albania, from the Italian surrender until November 1944",
+      "source": {
+       "title": "Kosovo in World War II (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Kosovo_in_World_War_II"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-11-13",
+   "what": "The German army leaves Skopje and Macedonia",
+   "source": {
+    "title": "Yugoslav Front (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Yugoslav_Front"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "MKD-2894",
+      "MKD-2896",
+      "MKD-2897",
+      "MKD-2898",
+      "MKD-2901",
+      "MKD-2903",
+      "MKD-2904",
+      "MKD-2905",
+      "MKD-2906",
+      "MKD-2907",
+      "MKD-2908",
+      "MKD-2909",
+      "MKD-2910",
+      "MKD-2911",
+      "MKD-2912",
+      "MKD-2913",
+      "MKD-2914",
+      "MKD-2915",
+      "MKD-2917",
+      "MKD-2919",
+      "MKD-2920",
+      "MKD-2921",
+      "MKD-2922",
+      "MKD-2923",
+      "MKD-2924",
+      "MKD-2925",
+      "MKD-2926",
+      "MKD-2927",
+      "MKD-2928",
+      "MKD-2929",
+      "MKD-2930",
+      "MKD-2931",
+      "MKD-2932",
+      "MKD-2933",
+      "MKD-2934",
+      "MKD-2935",
+      "MKD-2936",
+      "MKD-2937",
+      "MKD-2938",
+      "MKD-2939",
+      "MKD-2940",
+      "MKD-2941",
+      "MKD-2942",
+      "MKD-2943",
+      "MKD-2944",
+      "MKD-2945",
+      "MKD-2946",
+      "MKD-2947",
+      "MKD-2948",
+      "MKD-2993",
+      "MKD-2994",
+      "MKD-2995",
+      "MKD-2996",
+      "MKD-2997",
+      "MKD-2998",
+      "MKD-2999",
+      "MKD-3000",
+      "MKD-3003",
+      "MKD-3004",
+      "MKD-3005",
+      "MKD-3006",
+      "MKD-3007",
+      "MKD-4846",
+      "MKD-5883"
+     ],
+     "owner": "Yugoslavia",
+     "source": {
+      "title": "Yugoslav Front (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Yugoslav_Front"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1944-09-08",
+      "note": "Held by the German army after Bulgaria changed sides, until November 1944",
+      "source": {
+       "title": "Yugoslav Front (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Yugoslav_Front"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "MKD-2958",
+      "MKD-2962",
+      "MKD-2952",
+      "MKD-2954",
+      "MKD-4845",
+      "MKD-2959",
+      "MKD-2960",
+      "MKD-2957",
+      "MKD-2963",
+      "MKD-2961",
+      "MKD-2918",
+      "MKD-2955",
+      "MKD-2951",
+      "MKD-2950",
+      "MKD-2956",
+      "MKD-2916",
+      "MKD-2902",
+      "MKD-2953",
+      "MKD-2895",
+      "MKD-2899"
+     ],
+     "owner": "Yugoslavia",
+     "source": {
+      "title": "Yugoslav Front (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Yugoslav_Front"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1943-09-08",
+      "note": "Under German occupation from the Italian surrender until November 1944",
+      "source": {
+       "title": "German occupation of Albania (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/German_occupation_of_Albania"
       },
       "occupied": true
      }
@@ -388,6 +1339,167 @@
    ]
   },
   {
+   "date": "1944-10-20",
+   "what": "Yugoslav Partisans and the Red Army take Belgrade",
+   "source": {
+    "title": "Belgrade offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Belgrade_offensive"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SRB-125",
+      "SRB-1505",
+      "SRB-279",
+      "SRB-829",
+      "SRB-830",
+      "SRB-831",
+      "SRB-832",
+      "SRB-833",
+      "SRB-834",
+      "SRB-835",
+      "SRB-836",
+      "SRB-837",
+      "SRB-838",
+      "SRB-839",
+      "SRB-843",
+      "SRB-844"
+     ],
+     "owner": "Yugoslavia",
+     "source": {
+      "title": "Military Administration in Serbia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Military_Administration_in_Serbia"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-04-17",
+      "note": "Under the German military administration in Serbia, with a Serbian puppet government, until October 1944",
+      "source": {
+       "title": "Military Administration in Serbia (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Military_Administration_in_Serbia"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-09-08",
+   "what": "Bulgaria changes sides and its troops leave Serbia; the Germans hold on in Macedonia",
+   "source": {
+    "title": "Bulgaria in World War II (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Bulgaria_in_World_War_II"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "SRB-841",
+      "SRB-121"
+     ],
+     "owner": "Yugoslavia",
+     "source": {
+      "title": "Bulgarian occupation of Serbia (World War II) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bulgarian_occupation_of_Serbia_(World_War_II)"
+     },
+     "hatch": {
+      "by": "Bulgaria",
+      "since": "1941-04-17",
+      "note": "Occupied and annexed by Bulgaria in the Second World War, until September 1944",
+      "source": {
+       "title": "Bulgarian occupation of Serbia (World War II) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Bulgarian_occupation_of_Serbia_(World_War_II)"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "MKD-2894",
+      "MKD-2896",
+      "MKD-2897",
+      "MKD-2898",
+      "MKD-2901",
+      "MKD-2903",
+      "MKD-2904",
+      "MKD-2905",
+      "MKD-2906",
+      "MKD-2907",
+      "MKD-2908",
+      "MKD-2909",
+      "MKD-2910",
+      "MKD-2911",
+      "MKD-2912",
+      "MKD-2913",
+      "MKD-2914",
+      "MKD-2915",
+      "MKD-2917",
+      "MKD-2919",
+      "MKD-2920",
+      "MKD-2921",
+      "MKD-2922",
+      "MKD-2923",
+      "MKD-2924",
+      "MKD-2925",
+      "MKD-2926",
+      "MKD-2927",
+      "MKD-2928",
+      "MKD-2929",
+      "MKD-2930",
+      "MKD-2931",
+      "MKD-2932",
+      "MKD-2933",
+      "MKD-2934",
+      "MKD-2935",
+      "MKD-2936",
+      "MKD-2937",
+      "MKD-2938",
+      "MKD-2939",
+      "MKD-2940",
+      "MKD-2941",
+      "MKD-2942",
+      "MKD-2943",
+      "MKD-2944",
+      "MKD-2945",
+      "MKD-2946",
+      "MKD-2947",
+      "MKD-2948",
+      "MKD-2993",
+      "MKD-2994",
+      "MKD-2995",
+      "MKD-2996",
+      "MKD-2997",
+      "MKD-2998",
+      "MKD-2999",
+      "MKD-3000",
+      "MKD-3003",
+      "MKD-3004",
+      "MKD-3005",
+      "MKD-3006",
+      "MKD-3007",
+      "MKD-4846",
+      "MKD-5883"
+     ],
+     "owner": "Yugoslavia",
+     "source": {
+      "title": "Bulgarian occupation of Yugoslavia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bulgarian_occupation_of_Yugoslavia"
+     },
+     "hatch": {
+      "by": "Bulgaria",
+      "since": "1941-04-17",
+      "note": "Occupied and annexed by Bulgaria in the Second World War, until September 1944",
+      "source": {
+       "title": "Bulgarian occupation of Yugoslavia (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Bulgarian_occupation_of_Yugoslavia"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
    "date": "1943-09-11",
    "what": "German troops take Rhodes from the Italians",
    "source": {
@@ -448,6 +1560,183 @@
    ]
   },
   {
+   "date": "1943-09-08",
+   "what": "Italy surrenders, and Germany takes over its zones in Albania, Montenegro, Kosovo and western Macedonia",
+   "source": {
+    "title": "Armistice of Cassibile (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Armistice_of_Cassibile"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MNE-1496",
+      "MNE-1497",
+      "MNE-1501",
+      "MNE-1503",
+      "MNE-1508",
+      "MNE-1509",
+      "MNE-1510",
+      "MNE-1512",
+      "MNE-1513",
+      "MNE-1514",
+      "MNE-1515",
+      "MNE-1516",
+      "MNE-1517",
+      "MNE-1519",
+      "MNE-1520"
+     ],
+     "owner": "Yugoslavia",
+     "source": {
+      "title": "Italian governorate of Montenegro (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Italian_governorate_of_Montenegro"
+     },
+     "hatch": {
+      "by": "Italy",
+      "since": "1941-04-17",
+      "note": "The Italian Governorate of Montenegro, until the Italian surrender in September 1943",
+      "source": {
+       "title": "Italian governorate of Montenegro (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Italian_governorate_of_Montenegro"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "KOS-5886",
+      "KOS-5887",
+      "KOS-5888",
+      "KOS-5889",
+      "KOS-5890",
+      "KOS-5891",
+      "KOS-5896",
+      "KOS-5898",
+      "KOS-5899",
+      "KOS-5900",
+      "KOS-5902",
+      "KOS-5903",
+      "KOS-5904",
+      "KOS-5905",
+      "KOS-5906",
+      "KOS-5907",
+      "KOS-5908",
+      "KOS-5909",
+      "KOS-5910",
+      "KOS-5911",
+      "KOS-5912",
+      "KOS-5913",
+      "KOS-5914",
+      "KOS-5915"
+     ],
+     "owner": "Yugoslavia",
+     "source": {
+      "title": "Kosovo in World War II (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kosovo_in_World_War_II"
+     },
+     "hatch": {
+      "by": "Italy",
+      "since": "1941-04-17",
+      "note": "Joined to Italian-ruled Albania in the Second World War, until September 1943",
+      "source": {
+       "title": "Kosovo in World War II (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Kosovo_in_World_War_II"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "MKD-2958",
+      "MKD-2962",
+      "MKD-2952",
+      "MKD-2954",
+      "MKD-4845",
+      "MKD-2959",
+      "MKD-2960",
+      "MKD-2957",
+      "MKD-2963",
+      "MKD-2961",
+      "MKD-2918",
+      "MKD-2955",
+      "MKD-2951",
+      "MKD-2950",
+      "MKD-2956",
+      "MKD-2916",
+      "MKD-2902",
+      "MKD-2953",
+      "MKD-2895",
+      "MKD-2899"
+     ],
+     "owner": "Yugoslavia",
+     "source": {
+      "title": "Albanian Kingdom (1939–1943) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Albanian_Kingdom_(1939–1943)"
+     },
+     "hatch": {
+      "by": "Italy",
+      "since": "1941-04-17",
+      "note": "Western Macedonia, joined to Italian-ruled Albania in the Second World War, until September 1943",
+      "source": {
+       "title": "Albanian Kingdom (1939–1943) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Albanian_Kingdom_(1939–1943)"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "ALB-1494",
+      "ALB-1495",
+      "ALB-1498",
+      "ALB-1502",
+      "ALB-1504",
+      "ALB-1523",
+      "ALB-1524",
+      "ALB-1526",
+      "ALB-1528",
+      "ALB-1529"
+     ],
+     "owner": "Albania",
+     "source": {
+      "title": "Albanian Kingdom (1939–1943) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Albanian_Kingdom_(1939–1943)"
+     },
+     "hatch": {
+      "by": "Italy",
+      "since": "1939-04-07",
+      "note": "Invaded by Italy in April 1939 and ruled as an Italian protectorate under King Victor Emmanuel III, until September 1943",
+      "source": {
+       "title": "Italian invasion of Albania (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Italian_invasion_of_Albania"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "ALB-1521",
+      "ALB-1525"
+     ],
+     "owner": "Albania",
+     "source": {
+      "title": "Albanian Kingdom (1939–1943) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Albanian_Kingdom_(1939–1943)"
+     },
+     "hatch": {
+      "by": "Italy",
+      "since": "1941-04-23",
+      "note": "Back under Italian rule after the Greek army withdrew, until September 1943",
+      "source": {
+       "title": "Greco-Italian War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Greco-Italian_War"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
    "date": "1941-06-01",
    "what": "The battle of Crete ends with the island in German and Italian hands",
    "source": {
@@ -501,6 +1790,57 @@
    ]
   },
   {
+   "date": "1941-04-23",
+   "what": "The Greek army withdraws from southern Albania as Germany invades Greece",
+   "source": {
+    "title": "Greco-Italian War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Greco-Italian_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "ALB-1521"
+     ],
+     "owner": "Albania",
+     "source": {
+      "title": "Greco-Italian War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Greco-Italian_War"
+     },
+     "hatch": {
+      "by": "Greece",
+      "since": "1940-11-22",
+      "note": "Taken by the Greek army in the Greco-Italian War, until April 1941",
+      "source": {
+       "title": "Greco-Italian War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Greco-Italian_War"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "ALB-1525"
+     ],
+     "owner": "Albania",
+     "source": {
+      "title": "Greco-Italian War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Greco-Italian_War"
+     },
+     "hatch": {
+      "by": "Greece",
+      "since": "1940-12-08",
+      "note": "Taken by the Greek army in the Greco-Italian War, until April 1941",
+      "source": {
+       "title": "Greco-Italian War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Greco-Italian_War"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
    "date": "1941-04-20",
    "what": "Bulgarian troops move into eastern Macedonia and Western Thrace behind the Germans",
    "source": {
@@ -523,6 +1863,253 @@
    ]
   },
   {
+   "date": "1941-04-17",
+   "what": "Yugoslavia surrenders to the Axis and is carved up between Germany, Italy, Bulgaria and the Independent State of Croatia",
+   "source": {
+    "title": "Invasion of Yugoslavia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Invasion_of_Yugoslavia"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SRB-121",
+      "SRB-125",
+      "SRB-1505",
+      "SRB-279",
+      "SRB-829",
+      "SRB-830",
+      "SRB-831",
+      "SRB-832",
+      "SRB-833",
+      "SRB-834",
+      "SRB-835",
+      "SRB-836",
+      "SRB-837",
+      "SRB-838",
+      "SRB-839",
+      "SRB-841",
+      "SRB-843",
+      "SRB-844",
+      "KOS-5886",
+      "KOS-5887",
+      "KOS-5888",
+      "KOS-5889",
+      "KOS-5890",
+      "KOS-5891",
+      "KOS-5892",
+      "KOS-5893",
+      "KOS-5894",
+      "KOS-5895",
+      "KOS-5896",
+      "KOS-5897",
+      "KOS-5898",
+      "KOS-5899",
+      "KOS-5900",
+      "KOS-5901",
+      "KOS-5902",
+      "KOS-5903",
+      "KOS-5904",
+      "KOS-5905",
+      "KOS-5906",
+      "KOS-5907",
+      "KOS-5908",
+      "KOS-5909",
+      "KOS-5910",
+      "KOS-5911",
+      "KOS-5912",
+      "KOS-5913",
+      "KOS-5914",
+      "KOS-5915",
+      "MNE-1496",
+      "MNE-1497",
+      "MNE-1501",
+      "MNE-1503",
+      "MNE-1508",
+      "MNE-1509",
+      "MNE-1510",
+      "MNE-1512",
+      "MNE-1513",
+      "MNE-1514",
+      "MNE-1515",
+      "MNE-1516",
+      "MNE-1517",
+      "MNE-1519",
+      "MNE-1520",
+      "BIH-2224",
+      "BIH-2225",
+      "BIH-2226",
+      "BIH-2227",
+      "BIH-2228",
+      "BIH-2887",
+      "BIH-2889",
+      "BIH-2890",
+      "BIH-2891",
+      "BIH-3153",
+      "BIH-4801",
+      "BIH-4802",
+      "BIH-4803",
+      "BIH-4804",
+      "BIH-4805",
+      "BIH-4806",
+      "BIH-4807",
+      "BIH-4808",
+      "MKD-2894",
+      "MKD-2895",
+      "MKD-2896",
+      "MKD-2897",
+      "MKD-2898",
+      "MKD-2899",
+      "MKD-2901",
+      "MKD-2902",
+      "MKD-2903",
+      "MKD-2904",
+      "MKD-2905",
+      "MKD-2906",
+      "MKD-2907",
+      "MKD-2908",
+      "MKD-2909",
+      "MKD-2910",
+      "MKD-2911",
+      "MKD-2912",
+      "MKD-2913",
+      "MKD-2914",
+      "MKD-2915",
+      "MKD-2916",
+      "MKD-2917",
+      "MKD-2918",
+      "MKD-2919",
+      "MKD-2920",
+      "MKD-2921",
+      "MKD-2922",
+      "MKD-2923",
+      "MKD-2924",
+      "MKD-2925",
+      "MKD-2926",
+      "MKD-2927",
+      "MKD-2928",
+      "MKD-2929",
+      "MKD-2930",
+      "MKD-2931",
+      "MKD-2932",
+      "MKD-2933",
+      "MKD-2934",
+      "MKD-2935",
+      "MKD-2936",
+      "MKD-2937",
+      "MKD-2938",
+      "MKD-2939",
+      "MKD-2940",
+      "MKD-2941",
+      "MKD-2942",
+      "MKD-2943",
+      "MKD-2944",
+      "MKD-2945",
+      "MKD-2946",
+      "MKD-2947",
+      "MKD-2948",
+      "MKD-2950",
+      "MKD-2951",
+      "MKD-2952",
+      "MKD-2953",
+      "MKD-2954",
+      "MKD-2955",
+      "MKD-2956",
+      "MKD-2957",
+      "MKD-2958",
+      "MKD-2959",
+      "MKD-2960",
+      "MKD-2961",
+      "MKD-2962",
+      "MKD-2963",
+      "MKD-2993",
+      "MKD-2994",
+      "MKD-2995",
+      "MKD-2996",
+      "MKD-2997",
+      "MKD-2998",
+      "MKD-2999",
+      "MKD-3000",
+      "MKD-3003",
+      "MKD-3004",
+      "MKD-3005",
+      "MKD-3006",
+      "MKD-3007",
+      "MKD-4845",
+      "MKD-4846",
+      "MKD-5883"
+     ],
+     "owner": "Yugoslavia",
+     "source": {
+      "title": "Kingdom of Yugoslavia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Yugoslavia"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1940-12-08",
+   "what": "The Greek army takes Gjirokastër",
+   "source": {
+    "title": "Greco-Italian War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Greco-Italian_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "ALB-1525"
+     ],
+     "owner": "Albania",
+     "source": {
+      "title": "Greco-Italian War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Greco-Italian_War"
+     },
+     "hatch": {
+      "by": "Italy",
+      "since": "1939-04-07",
+      "note": "Invaded by Italy in April 1939 and ruled as an Italian protectorate under King Victor Emmanuel III, until September 1943",
+      "source": {
+       "title": "Italian invasion of Albania (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Italian_invasion_of_Albania"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1940-11-22",
+   "what": "The Greek army counter-attacks into Albania and takes Korçë",
+   "source": {
+    "title": "Greco-Italian War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Greco-Italian_War"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ALB-1521"
+     ],
+     "owner": "Albania",
+     "source": {
+      "title": "Greco-Italian War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Greco-Italian_War"
+     },
+     "hatch": {
+      "by": "Italy",
+      "since": "1939-04-07",
+      "note": "Invaded by Italy in April 1939 and ruled as an Italian protectorate under King Victor Emmanuel III, until September 1943",
+      "source": {
+       "title": "Italian invasion of Albania (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Italian_invasion_of_Albania"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
    "date": "1940-09-07",
    "what": "By the Treaty of Craiova Romania gives Southern Dobruja back to Bulgaria",
    "source": {
@@ -540,6 +2127,38 @@
      "source": {
       "title": "Southern Dobruja (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Southern_Dobruja"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1939-04-07",
+   "what": "Italy invades Albania; King Zog flees and Victor Emmanuel III takes the Albanian crown",
+   "source": {
+    "title": "Italian invasion of Albania (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Italian_invasion_of_Albania"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ALB-1494",
+      "ALB-1495",
+      "ALB-1498",
+      "ALB-1502",
+      "ALB-1504",
+      "ALB-1521",
+      "ALB-1523",
+      "ALB-1524",
+      "ALB-1525",
+      "ALB-1526",
+      "ALB-1528",
+      "ALB-1529"
+     ],
+     "owner": "Albania",
+     "source": {
+      "title": "Albanian Kingdom (1928–1939) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Albanian_Kingdom_(1928–1939)"
      }
     }
    ]
