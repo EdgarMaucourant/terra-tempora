@@ -13734,6 +13734,137 @@
    "summary": "After years of street violence between left and right, the army under General Kenan Evren seizes power on 12 September 1980, dissolves parliament and the parties and arrests hundreds of thousands. A new constitution follows in 1982, and civilian rule returns with the elections of 1983.",
    "wikipedia": "1980_Turkish_coup_d'état",
    "search": "1980 Turkish coup 12 September 1980 Kenan Evren National Security Council political violence constitution 1982 elections 1983"
+  },
+  {
+   "id": "end-of-karamanli-rule-1835",
+   "kind": "empire",
+   "year": 1835,
+   "title": "The Ottomans end the rule of the Karamanlis in Tripoli, May 1835",
+   "place": "Tripoli",
+   "lonLat": [
+    13.18,
+    32.89
+   ],
+   "civs": [
+    "regency-of-tripoli",
+    "turkey"
+   ],
+   "summary": "For more than a century the Karamanli pashas had ruled Tripoli almost on their own. When a civil war breaks out between claimants and the Europeans threaten to step in, an Ottoman fleet lands troops at Tripoli on 26 May 1835, deposes Ali II Karamanli and brings Tripolitania and Cyrenaica back under direct rule from Constantinople.",
+   "wikipedia": "Karamanli_dynasty",
+   "search": "End of Karamanli rule 26 May 1835 Ottoman fleet Tripoli Ali II Karamanli deposed direct Ottoman rule Tripolitania"
+  },
+  {
+   "id": "ottoman-conquest-of-fezzan-1842",
+   "kind": "empire",
+   "year": 1842,
+   "title": "The Ottomans take the Fezzan, 1842",
+   "place": "Murzuq",
+   "lonLat": [
+    13.92,
+    25.92
+   ],
+   "civs": [
+    "turkey"
+   ],
+   "summary": "Since 1831 the Fezzan had been held by Abd al-Jalil, chief of the Awlad Sulayman, who also controlled the caravan routes south to Lake Chad. In 1842 Ottoman troops from Tripoli kill him and occupy Murzuq, bringing the Fezzan under the empire.",
+   "wikipedia": "Fezzan",
+   "search": "Ottoman conquest of Fezzan 1842 Murzuq Abd al-Jalil Awlad Sulayman killed Tripolitania"
+  },
+  {
+   "id": "italo-turkish-war-1911",
+   "kind": "war",
+   "year": 1911,
+   "to": 1912,
+   "title": "The Italo-Turkish War and the Treaty of Ouchy, 1911 – 1912",
+   "place": "Tripoli",
+   "lonLat": [
+    13.2,
+    32.85
+   ],
+   "civs": [
+    "turkey",
+    "italy",
+    "italian-tripolitania",
+    "italian-cyrenaica"
+   ],
+   "summary": "Italy declares war on the Ottoman Empire on 29 September 1911 and lands at Tobruk, Tripoli, Derna, Benghazi and Homs, but Ottoman officers and Arab fighters hold it to the coast. The war spreads to the Dodecanese, and with the Balkan states about to attack, the Ottomans give up Tripolitania and Cyrenaica by the Treaty of Ouchy on 18 October 1912.",
+   "wikipedia": "Italo-Turkish_War",
+   "search": "Italo-Turkish War 29 September 1911 Tripoli landing Benghazi Derna Tobruk Rhodes Dodecanese Treaty of Ouchy 18 October 1912 Libya first aerial bombing"
+  },
+  {
+   "id": "tripolitanian-republic-1918",
+   "kind": "revolution",
+   "year": 1918,
+   "title": "The Tripolitanian Republic is proclaimed, November 1918",
+   "place": "Msallata",
+   "lonLat": [
+    14.1,
+    32.6
+   ],
+   "civs": [
+    "italy",
+    "italian-tripolitania"
+   ],
+   "summary": "The Italians had been pushed back to Tripoli and a few coastal towns in 1915. On 16 November 1918 Tripolitanian leaders meeting at Msallata proclaim a republic, one of the first in the Arab world, ruled by a council of four. Italy treats with it at first, then retakes the land from 1922.",
+   "wikipedia": "Tripolitanian_Republic",
+   "search": "Tripolitanian Republic proclaimed 16 November 1918 Msallata Sulayman al-Baruni Ramadan al-Shtaiwi first republic in the Arab world Italian reconquest 1922"
+  },
+  {
+   "id": "emirate-of-cyrenaica-1920",
+   "kind": "treaty",
+   "year": 1920,
+   "title": "Italy recognises the Senussi emirate of Cyrenaica, October 1920",
+   "place": "Ajdabiya",
+   "lonLat": [
+    20.22,
+    30.76
+   ],
+   "civs": [
+    "italy",
+    "italian-cyrenaica"
+   ],
+   "summary": "By the accord of al-Rajma, signed on 25 October 1920, Italy recognises Muhammad Idris al-Senussi as emir of the inland of Cyrenaica, with his seat at Ajdabiya, while it keeps the coast. The arrangement breaks down once the Fascists take power: Italian troops occupy Ajdabiya in April 1923 and Idris goes into exile in Egypt.",
+   "wikipedia": "Idris_of_Libya",
+   "search": "Accord of al-Rajma 25 October 1920 Italy recognises Idris al-Senussi emir of Cyrenaica Ajdabiya Senussi emirate autonomy 1923"
+  },
+  {
+   "id": "reconquest-of-tripolitania-1922",
+   "kind": "war",
+   "year": 1922,
+   "to": 1923,
+   "title": "Italy retakes Tripolitania, 1922 – 1923",
+   "place": "Gharyan",
+   "lonLat": [
+    13.02,
+    32.17
+   ],
+   "civs": [
+    "italy",
+    "italian-tripolitania"
+   ],
+   "summary": "In January 1922 the governor Giuseppe Volpi lands troops at Misrata and starts to take back the inland from the Tripolitanian Republic. Gharyan and the Jabal Nafusa fall within the year and the republic's leaders flee; the reconquest goes on until the Fezzan is taken in 1930.",
+   "wikipedia": "Pacification_of_Libya",
+   "search": "Italian reconquest of Tripolitania 1922 Giuseppe Volpi Misrata landing 26 January 1922 Gharyan Jabal Nafusa Pacification of Libya Graziani"
+  },
+  {
+   "id": "italian-libya-united-1934",
+   "kind": "empire",
+   "year": 1934,
+   "title": "Tripolitania and Cyrenaica become one Italian Libya, 1934",
+   "place": "Libya",
+   "lonLat": [
+    15.5,
+    31.0
+   ],
+   "civs": [
+    "italy",
+    "italian-libya",
+    "italian-tripolitania",
+    "italian-cyrenaica"
+   ],
+   "summary": "On 1 January 1934 Italy unites its colonies of Tripolitania and Cyrenaica, with the Fezzan, into a single colony of Libya under the governor Italo Balbo. In 1939 its four coastal provinces are made part of Italy itself.",
+   "wikipedia": "Italian_Libya",
+   "search": "Italian Libya 1 January 1934 Tripolitania Cyrenaica united one colony Italo Balbo governor Libia 1939 coastal provinces"
   }
  ]
 }

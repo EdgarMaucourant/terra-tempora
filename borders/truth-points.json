@@ -5419,8 +5419,8 @@
     1815,
     1829
    ],
-   "realm": null,
-   "why": "Capital of the Regency of Algiers until the French take it on 5 July 1830; not drawn yet"
+   "realm": "Regency of Algiers",
+   "why": "Capital of the Regency of Algiers until the French take it on 5 July 1830"
   },
   {
    "place": "Constantine (before 1837)",
@@ -5429,11 +5429,11 @@
     36.36
    ],
    "years": [
-    1815,
+    1830,
     1836
    ],
-   "realm": null,
-   "why": "Capital of the beylik of Constantine until the French take it on 13 October 1837"
+   "realm": "Beylik of Constantine",
+   "why": "Capital of the beylik of Constantine, held by Ahmed Bey after the fall of Algiers until the French take it on 13 October 1837"
   },
   {
    "place": "Lille (Allied occupation)",
@@ -16607,6 +16607,176 @@
     }
    ],
    "why": "Imbros, Greek-held Oct 1912 - Sept 1923"
+  },
+  {
+   "place": "Tripoli (Karamanli)",
+   "lonLat": [
+    13.18,
+    32.89
+   ],
+   "years": [
+    1815,
+    1834
+   ],
+   "realm": "Regency of Tripoli",
+   "why": "Karamanli regency until May 1835"
+  },
+  {
+   "place": "Tripoli (Ottoman)",
+   "lonLat": [
+    13.18,
+    32.89
+   ],
+   "years": [
+    1835,
+    1910
+   ],
+   "realm": "Turkey",
+   "why": "Ottoman Tripolitania 1835-1911"
+  },
+  {
+   "place": "Tripoli (1911)",
+   "lonLat": [
+    13.18,
+    32.89
+   ],
+   "years": [
+    1911,
+    1911
+   ],
+   "realm": "Turkey",
+   "heldBy": [
+    {
+     "years": [
+      1911,
+      1911
+     ],
+     "by": "Italy"
+    }
+   ],
+   "why": "Italian-held from October 1911, Ottoman until Ouchy"
+  },
+  {
+   "place": "Murzuq (Abd al-Jalil)",
+   "lonLat": [
+    15.33,
+    24.49
+   ],
+   "years": [
+    1831,
+    1841
+   ],
+   "realm": null,
+   "why": "Fezzan outside Tripoli's rule 1831-42"
+  },
+  {
+   "place": "Murzuq (Ottoman)",
+   "lonLat": [
+    15.33,
+    24.49
+   ],
+   "years": [
+    1842,
+    1911
+   ],
+   "realm": "Turkey",
+   "why": "Ottoman from 1842"
+  },
+  {
+   "place": "Ghat (before 1875)",
+   "lonLat": [
+    10.41,
+    26.02
+   ],
+   "years": [
+    1815,
+    1874
+   ],
+   "realm": null,
+   "why": "Tuareg Ghat before the Ottoman garrison"
+  },
+  {
+   "place": "Ajdabiya (Senussi)",
+   "lonLat": [
+    20.78,
+    29.02
+   ],
+   "years": [
+    1912,
+    1922
+   ],
+   "realm": "Italian Cyrenaica",
+   "heldBy": [
+    {
+     "years": [
+      1912,
+      1922
+     ],
+     "by": "Senussi Order"
+    }
+   ],
+   "why": "Senussi-held until April 1923"
+  },
+  {
+   "place": "Gharyan (Tripolitanian Republic)",
+   "lonLat": [
+    13.29,
+    30.33
+   ],
+   "years": [
+    1918,
+    1921
+   ],
+   "realm": "Italian Tripolitania",
+   "heldBy": [
+    {
+     "years": [
+      1918,
+      1921
+     ],
+     "by": "Tripolitanian Republic"
+    }
+   ],
+   "why": "Tripolitanian Republic 1918-22"
+  },
+  {
+   "place": "Benghazi (Ottoman)",
+   "lonLat": [
+    20.07,
+    32.1
+   ],
+   "years": [
+    1835,
+    1910
+   ],
+   "realm": "Turkey",
+   "why": "Ottoman Cyrenaica"
+  },
+  {
+   "place": "Tizi Ouzou (Kabylia)",
+   "lonLat": [
+    4.27,
+    36.69
+   ],
+   "years": [
+    1815,
+    1829
+   ],
+   "realm": null,
+   "why": "Greater Kabylia, outside the deys' rule"
+  },
+  {
+   "place": "Constantine (Regency)",
+   "lonLat": [
+    6.61,
+    36.36
+   ],
+   "years": [
+    1815,
+    1829
+   ],
+   "realm": "Regency of Algiers",
+   "why": "Beylik of the east of the Regency of Algiers"
   }
  ]
 }

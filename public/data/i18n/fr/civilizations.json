@@ -47,6 +47,9 @@
  "upper-senegal-and-niger": {
   "name": "Haut-Sénégal et Niger"
  },
+ "turkey": {
+  "name": "Turquie"
+ },
  "argentina": {
   "name": "Argentine"
  },
@@ -97,9 +100,6 @@
  },
  "french-sudan": {
   "name": "Soudan français"
- },
- "turkey": {
-  "name": "Turquie"
  },
  "mahdist-state": {
   "name": "État mahdiste"
@@ -164,6 +164,9 @@
  "niger": {
   "name": "Niger"
  },
+ "regency-of-tripoli": {
+  "name": "Régence de Tripoli"
+ },
  "colombia": {
   "name": "Colombie"
  },
@@ -206,6 +209,9 @@
  "nigeria": {
   "name": "Nigeria"
  },
+ "italian-tripolitania": {
+  "name": "Tripolitaine italienne"
+ },
  "colonial-nigeria": {
   "name": "Colonie et protectorat du Nigeria"
  },
@@ -226,6 +232,9 @@
  },
  "cyrenaica": {
   "name": "Cyrénaïque"
+ },
+ "italian-cyrenaica": {
+  "name": "Cyrénaïque italienne"
  },
  "zambia": {
   "name": "Zambie"
@@ -503,6 +512,9 @@
  "french-laos": {
   "name": "Protectorat français du Laos"
  },
+ "regency-of-algiers": {
+  "name": "Régence d’Alger"
+ },
  "guyana": {
   "name": "Guyana"
  },
@@ -640,6 +652,9 @@
  },
  "french-dahomey": {
   "name": "Colonie du Dahomey"
+ },
+ "beylik-of-constantine": {
+  "name": "Beylik de Constantine"
  },
  "tonkin": {
   "name": "Protectorat du Tonkin"

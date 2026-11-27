@@ -7814,12 +7814,24 @@
    "before": [
     {
      "pieces": [
-      "DZA-2217"
+      "DZA-2217",
+      "DZA-2166",
+      "DZA-2220",
+      "DZA-2215",
+      "DZA-2165",
+      "DZA-2211",
+      "DZA-2216",
+      "DZA-2214",
+      "DZA-2207",
+      "DZA-2219",
+      "DZA-2221",
+      "DZA-2222",
+      "DZA-2223"
      ],
-     "owner": null,
+     "owner": "Beylik of Constantine",
      "source": {
-      "title": "Siege of Constantine (1837) (Wikipedia)",
-      "url": "https://en.wikipedia.org/wiki/Siege_of_Constantine_(1837)"
+      "title": "Beylik of Constantine (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Beylik_of_Constantine"
      }
     }
    ]
@@ -7838,10 +7850,10 @@
       "DZA-2218",
       "DZA-2164"
      ],
-     "owner": null,
+     "owner": "Beylik of Constantine",
      "source": {
-      "title": "French conquest of Algeria (Wikipedia)",
-      "url": "https://en.wikipedia.org/wiki/French_conquest_of_Algeria"
+      "title": "Beylik of Constantine (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Beylik_of_Constantine"
      }
     }
    ]
@@ -7901,10 +7913,10 @@
      "pieces": [
       "DZA-2163"
      ],
-     "owner": null,
+     "owner": "Beylik of Constantine",
      "source": {
-      "title": "Annaba (Wikipedia)",
-      "url": "https://en.wikipedia.org/wiki/Annaba"
+      "title": "Beylik of Constantine (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Beylik_of_Constantine"
      }
     }
    ]
@@ -7965,13 +7977,46 @@
    "before": [
     {
      "pieces": [
+      "DZA-2164",
+      "DZA-2223",
+      "DZA-2222",
+      "DZA-2147",
+      "DZA-2163",
+      "DZA-2166",
+      "DZA-2165",
+      "DZA-2208",
+      "DZA-2196",
       "DZA-2195",
-      "DZA-2196"
+      "DZA-2198",
+      "DZA-2200",
+      "DZA-2202",
+      "DZA-2145",
+      "DZA-2144",
+      "DZA-2215",
+      "DZA-2207",
+      "DZA-2210",
+      "DZA-2209",
+      "DZA-2206",
+      "DZA-2199",
+      "DZA-2203",
+      "DZA-2204",
+      "DZA-2146",
+      "DZA-2201",
+      "DZA-2213",
+      "DZA-2205",
+      "DZA-2214",
+      "DZA-2216",
+      "DZA-2219",
+      "DZA-2218",
+      "DZA-2217",
+      "DZA-2220",
+      "DZA-2221",
+      "DZA-2211"
      ],
-     "owner": null,
+     "owner": "Regency of Algiers",
      "source": {
-      "title": "Invasion of Algiers in 1830 (Wikipedia)",
-      "url": "https://en.wikipedia.org/wiki/Invasion_of_Algiers_in_1830"
+      "title": "Regency of Algiers (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Regency_of_Algiers"
      }
     }
    ]

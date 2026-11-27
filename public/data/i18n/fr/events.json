@@ -3648,5 +3648,40 @@
   "title": "L’armée reprend le pouvoir, 12 septembre 1980",
   "place": "Ankara",
   "summary": "Après des années de violences de rue entre gauche et droite, l’armée du général Kenan Evren prend le pouvoir le 12 septembre 1980, dissout le parlement et les partis et arrête des centaines de milliers de personnes. Une nouvelle constitution suit en 1982, et le pouvoir civil revient avec les élections de 1983."
+ },
+ "end-of-karamanli-rule-1835": {
+  "title": "Les Ottomans mettent fin au règne des Karamanli à Tripoli, mai 1835",
+  "place": "Tripoli",
+  "summary": "Depuis plus d’un siècle, les pachas Karamanli gouvernaient Tripoli presque seuls. Quand une guerre civile éclate entre prétendants et que les Européens menacent d’intervenir, une flotte ottomane débarque des troupes à Tripoli le 26 mai 1835, dépose Ali II Karamanli et replace la Tripolitaine et la Cyrénaïque sous l’autorité directe de Constantinople."
+ },
+ "ottoman-conquest-of-fezzan-1842": {
+  "title": "Les Ottomans prennent le Fezzan, 1842",
+  "place": "Mourzouq",
+  "summary": "Depuis 1831, le Fezzan était aux mains d’Abd al-Jalil, chef des Awlad Sulayman, qui tenait aussi les routes caravanières vers le lac Tchad. En 1842, des troupes ottomanes venues de Tripoli le tuent et occupent Mourzouq : le Fezzan passe sous l’autorité de l’empire."
+ },
+ "italo-turkish-war-1911": {
+  "title": "La guerre italo-turque et le traité d’Ouchy, 1911 – 1912",
+  "place": "Tripoli",
+  "summary": "L’Italie déclare la guerre à l’Empire ottoman le 29 septembre 1911 et débarque à Tobrouk, Tripoli, Derna, Benghazi et Homs, mais des officiers ottomans et des combattants arabes la contiennent sur la côte. La guerre s’étend au Dodécanèse et, alors que les États balkaniques s’apprêtent à attaquer, les Ottomans cèdent la Tripolitaine et la Cyrénaïque par le traité d’Ouchy le 18 octobre 1912."
+ },
+ "tripolitanian-republic-1918": {
+  "title": "La République tripolitaine est proclamée, novembre 1918",
+  "place": "Msallata",
+  "summary": "Les Italiens avaient été repoussés en 1915 jusqu’à Tripoli et quelques villes côtières. Le 16 novembre 1918, des chefs tripolitains réunis à Msallata proclament une république, l’une des premières du monde arabe, dirigée par un conseil de quatre membres. L’Italie traite d’abord avec elle, puis reprend le pays à partir de 1922."
+ },
+ "emirate-of-cyrenaica-1920": {
+  "title": "L’Italie reconnaît l’émirat senoussi de Cyrénaïque, octobre 1920",
+  "place": "Ajdabiya",
+  "summary": "Par l’accord d’al-Rajma, signé le 25 octobre 1920, l’Italie reconnaît Mohammed Idris al-Senoussi comme émir de l’intérieur de la Cyrénaïque, avec Ajdabiya pour siège, et garde la côte. L’arrangement ne survit pas à l’arrivée des fascistes : les troupes italiennes occupent Ajdabiya en avril 1923 et Idris s’exile en Égypte."
+ },
+ "reconquest-of-tripolitania-1922": {
+  "title": "L’Italie reprend la Tripolitaine, 1922 – 1923",
+  "place": "Gharyan",
+  "summary": "En janvier 1922, le gouverneur Giuseppe Volpi débarque des troupes à Misrata et commence à reprendre l’intérieur à la République tripolitaine. Gharyan et le djebel Nefoussa tombent dans l’année et les chefs de la république s’enfuient ; la reconquête se poursuit jusqu’à la prise du Fezzan en 1930."
+ },
+ "italian-libya-united-1934": {
+  "title": "La Tripolitaine et la Cyrénaïque forment la Libye italienne, 1934",
+  "place": "Libye",
+  "summary": "Le 1er janvier 1934, l’Italie réunit ses colonies de Tripolitaine et de Cyrénaïque, avec le Fezzan, en une seule colonie de Libye, sous le gouverneur Italo Balbo. En 1939, ses quatre provinces côtières sont rattachées à l’Italie même."
  }
 }
