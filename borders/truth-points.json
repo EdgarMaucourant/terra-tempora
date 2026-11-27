@@ -18783,6 +18783,251 @@
    ],
    "realm": "Italy",
    "why": "Italian Eritrea"
+  },
+  {
+   "place": "Beijing",
+   "lonLat": [
+    116.4,
+    39.9
+   ],
+   "years": [
+    1945,
+    2026
+   ],
+   "realm": "China",
+   "why": "Capital of China (Beiping under the Nationalists)"
+  },
+  {
+   "place": "Nanjing",
+   "lonLat": [
+    118.8,
+    32.06
+   ],
+   "years": [
+    1945,
+    2026
+   ],
+   "realm": "China",
+   "why": "Nationalist capital until April 1949"
+  },
+  {
+   "place": "Harbin (Communist-held)",
+   "lonLat": [
+    126.63,
+    45.75
+   ],
+   "years": [
+    1946,
+    1948
+   ],
+   "realm": "China",
+   "heldBy": [
+    {
+     "years": [
+      1946,
+      1948
+     ],
+     "by": "Chinese Communists"
+    }
+   ],
+   "why": "Communist-held from April 1946"
+  },
+  {
+   "place": "Jinan (Communist-held)",
+   "lonLat": [
+    117.0,
+    36.67
+   ],
+   "years": [
+    1948,
+    1948
+   ],
+   "realm": "China",
+   "heldBy": [
+    {
+     "years": [
+      1948,
+      1948
+     ],
+     "by": "Chinese Communists"
+    }
+   ],
+   "why": "Taken by the Communists in September 1948"
+  },
+  {
+   "place": "Yan'an",
+   "lonLat": [
+    109.49,
+    36.6
+   ],
+   "years": [
+    1945,
+    1948
+   ],
+   "realm": "China",
+   "heldBy": [
+    {
+     "years": [
+      1945,
+      1948
+     ],
+     "by": "Chinese Communists"
+    }
+   ],
+   "why": "Communist base"
+  },
+  {
+   "place": "Hailar",
+   "lonLat": [
+    119.7,
+    49.2
+   ],
+   "years": [
+    1947,
+    1948
+   ],
+   "realm": "China",
+   "heldBy": [
+    {
+     "years": [
+      1947,
+      1948
+     ],
+     "by": "Chinese Communists"
+    }
+   ],
+   "why": "Inner Mongolian Autonomous Government under the Communists"
+  },
+  {
+   "place": "Haikou (Nationalist-held)",
+   "lonLat": [
+    110.3,
+    19.9
+   ],
+   "years": [
+    1949,
+    1949
+   ],
+   "realm": "China",
+   "heldBy": [
+    {
+     "years": [
+      1949,
+      1949
+     ],
+     "by": "Taiwan (Republic of China)"
+    }
+   ],
+   "why": "Nationalist until May 1950"
+  },
+  {
+   "place": "Taipei",
+   "lonLat": [
+    121.56,
+    25.04
+   ],
+   "years": [
+    1945,
+    1948
+   ],
+   "realm": "China",
+   "why": "Taiwan handed to the Republic of China in October 1945"
+  },
+  {
+   "place": "Taipei",
+   "lonLat": [
+    121.56,
+    25.04
+   ],
+   "years": [
+    1949,
+    2026
+   ],
+   "realm": "Taiwan (Republic of China)",
+   "why": "Seat of the Republic of China since December 1949"
+  },
+  {
+   "place": "Lhasa",
+   "lonLat": [
+    91.13,
+    29.65
+   ],
+   "years": [
+    1945,
+    1950
+   ],
+   "realm": "Tibet",
+   "why": "Tibet ran its own affairs until 1951"
+  },
+  {
+   "place": "Lhasa",
+   "lonLat": [
+    91.13,
+    29.65
+   ],
+   "years": [
+    1951,
+    2026
+   ],
+   "realm": "China",
+   "why": "Seventeen Point Agreement, May 1951"
+  },
+  {
+   "place": "Chamdo (Chinese-held)",
+   "lonLat": [
+    97.17,
+    31.14
+   ],
+   "years": [
+    1950,
+    1950
+   ],
+   "realm": "Tibet",
+   "heldBy": [
+    {
+     "years": [
+      1950,
+      1950
+     ],
+     "by": "China"
+    }
+   ],
+   "why": "Taken by the Chinese army in October 1950"
+  },
+  {
+   "place": "Yining (Ghulja)",
+   "lonLat": [
+    81.32,
+    43.92
+   ],
+   "years": [
+    1945,
+    1948
+   ],
+   "realm": "China",
+   "heldBy": [
+    {
+     "years": [
+      1945,
+      1948
+     ],
+     "by": "Second East Turkestan Republic"
+    }
+   ],
+   "why": "Capital of the Second East Turkestan Republic"
+  },
+  {
+   "place": "Ulaanbaatar",
+   "lonLat": [
+    106.92,
+    47.92
+   ],
+   "years": [
+    1945,
+    2026
+   ],
+   "realm": "Mongolia",
+   "why": "Capital of Mongolia"
   }
  ]
 }

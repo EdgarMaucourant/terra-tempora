@@ -2446,7 +2446,27 @@
   "wikipedia": "Mongolia",
   "wikidata": "Q711",
   "fr": "Mongolie",
-  "es": "Mongolia"
+  "es": "Mongolia",
+  "periods": [
+   {
+    "from": "1924-11-26",
+    "name": "Mongolian People's Republic",
+    "wikipedia": "Mongolian People's Republic",
+    "fr": "République populaire de Mongolie",
+    "es": "República Popular de Mongolia",
+    "label": "Mongolian People's Republic",
+    "labelFr": "République populaire de Mongolie",
+    "labelEs": "República Popular de Mongolia",
+    "note": "A one-party communist state allied with the Soviet Union; the Republic of China recognised its independence in January 1946"
+   },
+   {
+    "from": "1992-02-12",
+    "name": "Mongolia",
+    "wikipedia": "Mongolia",
+    "fr": "Mongolie",
+    "es": "Mongolia"
+   }
+  ]
  },
  "Montenegro": {
   "wikipedia": "Montenegro",
@@ -5510,5 +5530,24 @@
   "fr": "République croate d'Herceg-Bosna",
   "es": "República Croata de Herzeg-Bosnia",
   "note": "The Bosnian Croat state proclaimed in 1991-92, folded into the Federation of Bosnia and Herzegovina by the Washington Agreement of 1994"
+ },
+ "Chinese Communists": {
+  "wikipedia": "Chinese Communist Revolution",
+  "wikidata": "Q32993",
+  "fr": "Communistes chinois",
+  "es": "Comunistas chinos",
+  "notACountry": true
+ },
+ "Second East Turkestan Republic": {
+  "wikipedia": "Second East Turkestan Republic",
+  "wikidata": "Q10988528",
+  "fr": "Seconde république du Turkestan oriental",
+  "es": "Segunda República del Turquestán Oriental"
+ },
+ "Taiwan": {
+  "wikipedia": "Taiwan under Japanese rule",
+  "wikidata": "Q137816",
+  "fr": "Taïwan",
+  "es": "Taiwán"
  }
 }

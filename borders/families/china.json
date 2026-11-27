@@ -1,0 +1,1588 @@
+{
+ "family": "China",
+ "note": "China (the Qing dynasty, the Republic of China and the People's Republic of China), Taiwan and Mongolia, with the land they held, walked back from 2026. Already drawn by other families: Hong Kong and Weihaiwei (United Kingdom), Macau (Portugal), Guangzhouwan (France), the Amur and Ussuri lands, Tuva and the Soviet-held Manchuria and Port Arthur of 1945-55 (Russia).",
+ "reviewed": [
+  {
+   "pieces": [
+    "CHN-1150",
+    "CHN-1151",
+    "CHN-1152",
+    "CHN-1153",
+    "CHN-1154",
+    "CHN-1155",
+    "CHN-1178",
+    "CHN-1179",
+    "CHN-1180",
+    "CHN-1662",
+    "CHN-1756",
+    "CHN-1775",
+    "CHN-1803",
+    "CHN-1804",
+    "CHN-1805",
+    "CHN-1807",
+    "CHN-1808",
+    "CHN-1809",
+    "CHN-1810",
+    "CHN-1811",
+    "CHN-1812",
+    "CHN-1813",
+    "CHN-1814",
+    "CHN-1816",
+    "CHN-1817",
+    "CHN-1818",
+    "CHN-1819",
+    "CHN-1820",
+    "CHN-1828",
+    "CHN-1838",
+    "CHN-1839",
+    "PFA+00?",
+    "TWN-1156",
+    "TWN-1158",
+    "TWN-1160",
+    "TWN-1161",
+    "TWN-1162",
+    "TWN-1163",
+    "TWN-1164",
+    "TWN-1165",
+    "TWN-1166",
+    "TWN-1167",
+    "TWN-1168",
+    "TWN-1169",
+    "TWN-1170",
+    "TWN-1171",
+    "TWN-1172",
+    "TWN-1173",
+    "TWN-1174",
+    "TWN-1176",
+    "TWN-1177",
+    "TWN-3414",
+    "TWN-3415",
+    "MNG-3208",
+    "MNG-3297",
+    "MNG-3298",
+    "MNG-3315",
+    "MNG-3316",
+    "MNG-3317",
+    "MNG-3318",
+    "MNG-3319",
+    "MNG-3320",
+    "MNG-3321",
+    "MNG-3322",
+    "MNG-3323",
+    "MNG-3324",
+    "MNG-3325",
+    "MNG-3326",
+    "MNG-3327",
+    "MNG-3328",
+    "MNG-3329",
+    "MNG-3330",
+    "MNG-3331",
+    "MNG-3332",
+    "MNG-3333",
+    "shaan-gan-ning",
+    "east-inner-mongolia",
+    "three-districts",
+    "chamdo"
+   ],
+   "from": 1945,
+   "why": "China (without Hong Kong and Macau), Taiwan and Mongolia, from the end of the Second World War"
+  }
+ ],
+ "changes": [
+  {
+   "date": "1951-05-23",
+   "what": "Tibet signs the Seventeen Point Agreement and becomes part of the People's Republic of China; the Chinese army enters Lhasa in October",
+   "source": {
+    "title": "Seventeen Point Agreement (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Seventeen_Point_Agreement"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "CHN-1662"
+     ],
+     "owner": "Tibet",
+     "source": {
+      "title": "Tibet (1912–1951) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tibet_(1912–1951)"
+     }
+    },
+    {
+     "pieces": [
+      "chamdo"
+     ],
+     "owner": "Tibet",
+     "source": {
+      "title": "Tibet (1912–1951) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tibet_(1912–1951)"
+     },
+     "hatch": {
+      "by": "China",
+      "since": "1950-10-19",
+      "note": "Taken by the Chinese army at the battle of Chamdo, before the Seventeen Point Agreement",
+      "source": {
+       "title": "Battle of Chamdo (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Battle_of_Chamdo"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1950-10-19",
+   "what": "The Chinese army takes Chamdo in eastern Tibet",
+   "source": {
+    "title": "Battle of Chamdo (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Chamdo"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "chamdo"
+     ],
+     "owner": "Tibet",
+     "source": {
+      "title": "Tibet (1912–1951) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tibet_(1912–1951)"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1950-05-01",
+   "what": "The Communists take Hainan from the Nationalists",
+   "source": {
+    "title": "Landing Operation on Hainan Island (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Landing_Operation_on_Hainan_Island"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CHN-1775",
+      "PFA+00?"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Landing Operation on Hainan Island (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Landing_Operation_on_Hainan_Island"
+     },
+     "hatch": {
+      "by": "Taiwan (Republic of China)",
+      "since": "1949-10-01",
+      "note": "Still held by the Nationalist government of the Republic of China after the People's Republic was proclaimed",
+      "source": {
+       "title": "Retreat of the government of the Republic of China to Taiwan (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Retreat_of_the_government_of_the_Republic_of_China_to_Taiwan"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1949-12-27",
+   "what": "The Communists take Chengdu; the Nationalist government has left the mainland for Taipei",
+   "source": {
+    "title": "Chengdu campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Chengdu_campaign"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CHN-1809"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Chengdu campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chengdu_campaign"
+     },
+     "hatch": {
+      "by": "Taiwan (Republic of China)",
+      "since": "1949-10-01",
+      "note": "Still held by the Nationalist government of the Republic of China after the People's Republic was proclaimed",
+      "source": {
+       "title": "Retreat of the government of the Republic of China to Taiwan (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Retreat_of_the_government_of_the_Republic_of_China_to_Taiwan"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1949-12-20",
+   "what": "The Second East Turkestan Republic is wound up and its army joins the People's Liberation Army",
+   "source": {
+    "title": "Second East Turkestan Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Second_East_Turkestan_Republic"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "three-districts"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Second East Turkestan Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Second_East_Turkestan_Republic"
+     },
+     "hatch": {
+      "by": "Second East Turkestan Republic",
+      "since": "1944-11-12",
+      "note": "Held by the Second East Turkestan Republic, set up at Ghulja (Yining) in the Ili Rebellion; it kept the Three Districts under a coalition government from 1946 and joined the People's Republic in December 1949",
+      "source": {
+       "title": "Second East Turkestan Republic (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Second_East_Turkestan_Republic"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1949-12-09",
+   "what": "The governor of Yunnan goes over to the Communists",
+   "source": {
+    "title": "Chinese Civil War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CHN-1810"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Chinese Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+     },
+     "hatch": {
+      "by": "Taiwan (Republic of China)",
+      "since": "1949-10-01",
+      "note": "Still held by the Nationalist government of the Republic of China after the People's Republic was proclaimed",
+      "source": {
+       "title": "Retreat of the government of the Republic of China to Taiwan (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Retreat_of_the_government_of_the_Republic_of_China_to_Taiwan"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1949-12-04",
+   "what": "The Communists take Nanning",
+   "source": {
+    "title": "Guangxi campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Guangxi_campaign"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CHN-1152"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Guangxi campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Guangxi_campaign"
+     },
+     "hatch": {
+      "by": "Taiwan (Republic of China)",
+      "since": "1949-10-01",
+      "note": "Still held by the Nationalist government of the Republic of China after the People's Republic was proclaimed",
+      "source": {
+       "title": "Retreat of the government of the Republic of China to Taiwan (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Retreat_of_the_government_of_the_Republic_of_China_to_Taiwan"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1949-11-30",
+   "what": "The Communists take Chongqing, the Nationalists' wartime capital",
+   "source": {
+    "title": "Chinese Civil War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CHN-1154"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Chinese Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+     },
+     "hatch": {
+      "by": "Taiwan (Republic of China)",
+      "since": "1949-10-01",
+      "note": "Still held by the Nationalist government of the Republic of China after the People's Republic was proclaimed",
+      "source": {
+       "title": "Retreat of the government of the Republic of China to Taiwan (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Retreat_of_the_government_of_the_Republic_of_China_to_Taiwan"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1949-11-15",
+   "what": "The Communists take Guiyang",
+   "source": {
+    "title": "Chinese Civil War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CHN-1153"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Chinese Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+     },
+     "hatch": {
+      "by": "Taiwan (Republic of China)",
+      "since": "1949-10-01",
+      "note": "Still held by the Nationalist government of the Republic of China after the People's Republic was proclaimed",
+      "source": {
+       "title": "Retreat of the government of the Republic of China to Taiwan (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Retreat_of_the_government_of_the_Republic_of_China_to_Taiwan"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1949-10-14",
+   "what": "The Communists take Guangzhou",
+   "source": {
+    "title": "Chinese Civil War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CHN-1180"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Chinese Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+     },
+     "hatch": {
+      "by": "Taiwan (Republic of China)",
+      "since": "1949-10-01",
+      "note": "Still held by the Nationalist government of the Republic of China after the People's Republic was proclaimed",
+      "source": {
+       "title": "Retreat of the government of the Republic of China to Taiwan (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Retreat_of_the_government_of_the_Republic_of_China_to_Taiwan"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1949-10-01",
+   "what": "Mao Zedong proclaims the People's Republic of China in Beijing; the Republic of China keeps Taiwan, where its government moves in December",
+   "source": {
+    "title": "Proclamation of the People's Republic of China (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Proclamation_of_the_People's_Republic_of_China"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "shaan-gan-ning"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Shaan-Gan-Ning Border Region (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Shaan-Gan-Ning_Border_Region"
+     },
+     "hatch": {
+      "by": "Chinese Communists",
+      "since": "1937-09-06",
+      "note": "Held by the Communists during the Civil War: the Shaan-Gan-Ning Border Region, run by the Communists from Yan'an since 1937 (the Nationalists held Yan'an itself from March 1947 to April 1948)",
+      "source": {
+       "title": "Chinese Civil War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "CHN-1839"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Chinese Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+     },
+     "hatch": {
+      "by": "Chinese Communists",
+      "since": "1946-05-04",
+      "note": "Held by the Communists during the Civil War: since the Soviet army left Harbin and northern Manchuria to the Communists (April-May 1946)",
+      "source": {
+       "title": "Chinese Civil War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "east-inner-mongolia"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Inner Mongolia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Inner_Mongolia"
+     },
+     "hatch": {
+      "by": "Chinese Communists",
+      "since": "1947-05-01",
+      "note": "Held by the Communists during the Civil War: the Inner Mongolian Autonomous Government, set up under the Communists at Ulanhot in May 1947",
+      "source": {
+       "title": "Chinese Civil War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "CHN-1811"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Chinese Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+     },
+     "hatch": {
+      "by": "Chinese Communists",
+      "since": "1947-11-12",
+      "note": "Held by the Communists during the Civil War: most of Hebei, held by the Communists from the fall of Shijiazhuang (November 1947); Baoding fell in November 1948",
+      "source": {
+       "title": "Chinese Civil War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "CHN-1828"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Siege of Changchun (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Changchun"
+     },
+     "hatch": {
+      "by": "Chinese Communists",
+      "since": "1948-03-09",
+      "note": "Held by the Communists during the Civil War: most of Jilin, held by the Communists from the fall of Jilin city (March 1948); besieged Changchun held out until October",
+      "source": {
+       "title": "Chinese Civil War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "CHN-1805"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Taiyuan campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Taiyuan_campaign"
+     },
+     "hatch": {
+      "by": "Chinese Communists",
+      "since": "1948-07-21",
+      "note": "Held by the Communists during the Civil War: Shanxi, taken by the Communists by July 1948 except besieged Taiyuan (until April 1949)",
+      "source": {
+       "title": "Chinese Civil War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "CHN-1814"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Jinan campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Jinan_campaign"
+     },
+     "hatch": {
+      "by": "Chinese Communists",
+      "since": "1948-09-24",
+      "note": "Held by the Communists during the Civil War: Shandong, held by the Communists from the fall of Jinan (September 1948); Qingdao held out until June 1949",
+      "source": {
+       "title": "Chinese Civil War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "CHN-1812"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Chinese Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+     },
+     "hatch": {
+      "by": "Chinese Communists",
+      "since": "1948-10-24",
+      "note": "Held by the Communists during the Civil War: Henan, held by the Communists from the fall of Zhengzhou and Kaifeng (October 1948)",
+      "source": {
+       "title": "Chinese Civil War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "CHN-1813"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Liaoshen campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Liaoshen_campaign"
+     },
+     "hatch": {
+      "by": "Chinese Communists",
+      "since": "1948-11-02",
+      "note": "Held by the Communists during the Civil War: Liaoning, taken by the Communists in the Liaoshen campaign (Shenyang, 2 November 1948)",
+      "source": {
+       "title": "Chinese Civil War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "CHN-1816"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Pingjin campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pingjin_campaign"
+     },
+     "hatch": {
+      "by": "Chinese Communists",
+      "since": "1949-01-15",
+      "note": "Held by the Communists during the Civil War: Tianjin, taken by the Communists on 15 January 1949",
+      "source": {
+       "title": "Chinese Civil War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "CHN-1179"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Huaihai campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Huaihai_campaign"
+     },
+     "hatch": {
+      "by": "Chinese Communists",
+      "since": "1949-01-21",
+      "note": "Held by the Communists during the Civil War: Anhui, held by the Communists after the Huaihai campaign (Bengbu and Hefei, January 1949)",
+      "source": {
+       "title": "Chinese Civil War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "CHN-1155"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Pingjin campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pingjin_campaign"
+     },
+     "hatch": {
+      "by": "Chinese Communists",
+      "since": "1949-01-31",
+      "note": "Held by the Communists during the Civil War: Beiping, handed over to the Communists on 31 January 1949",
+      "source": {
+       "title": "Chinese Civil War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "CHN-1818"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Yangtze River Crossing campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Yangtze_River_Crossing_campaign"
+     },
+     "hatch": {
+      "by": "Chinese Communists",
+      "since": "1949-04-23",
+      "note": "Held by the Communists during the Civil War: Jiangsu, held by the Communists from the fall of Nanjing (23 April 1949)",
+      "source": {
+       "title": "Chinese Civil War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "CHN-1820"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Yangtze River Crossing campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Yangtze_River_Crossing_campaign"
+     },
+     "hatch": {
+      "by": "Chinese Communists",
+      "since": "1949-05-03",
+      "note": "Held by the Communists during the Civil War: Zhejiang, held by the Communists from the fall of Hangzhou (May 1949)",
+      "source": {
+       "title": "Chinese Civil War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "CHN-1807"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Chinese Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+     },
+     "hatch": {
+      "by": "Chinese Communists",
+      "since": "1949-05-16",
+      "note": "Held by the Communists during the Civil War: Hubei, held by the Communists from the fall of Wuhan (May 1949)",
+      "source": {
+       "title": "Chinese Civil War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "CHN-1804"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Chinese Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+     },
+     "hatch": {
+      "by": "Chinese Communists",
+      "since": "1949-05-20",
+      "note": "Held by the Communists during the Civil War: Shaanxi, held by the Communists from the fall of Xi'an (May 1949)",
+      "source": {
+       "title": "Chinese Civil War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "CHN-1817"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Chinese Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+     },
+     "hatch": {
+      "by": "Chinese Communists",
+      "since": "1949-05-22",
+      "note": "Held by the Communists during the Civil War: Jiangxi, held by the Communists from the fall of Nanchang (May 1949)",
+      "source": {
+       "title": "Chinese Civil War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "CHN-1819"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Shanghai Campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Shanghai_Campaign"
+     },
+     "hatch": {
+      "by": "Chinese Communists",
+      "since": "1949-05-27",
+      "note": "Held by the Communists during the Civil War: Shanghai, taken by the Communists on 27 May 1949",
+      "source": {
+       "title": "Chinese Civil War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "CHN-1808"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Chinese Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+     },
+     "hatch": {
+      "by": "Chinese Communists",
+      "since": "1949-08-04",
+      "note": "Held by the Communists during the Civil War: Hunan, whose governor went over to the Communists in August 1949",
+      "source": {
+       "title": "Chinese Civil War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "CHN-1178"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Chinese Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+     },
+     "hatch": {
+      "by": "Chinese Communists",
+      "since": "1949-08-17",
+      "note": "Held by the Communists during the Civil War: Fujian, held by the Communists from the fall of Fuzhou (August 1949); Xiamen fell in October",
+      "source": {
+       "title": "Chinese Civil War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "CHN-1150"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Lanzhou Campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lanzhou_Campaign"
+     },
+     "hatch": {
+      "by": "Chinese Communists",
+      "since": "1949-08-26",
+      "note": "Held by the Communists during the Civil War: Gansu, held by the Communists from the fall of Lanzhou (August 1949)",
+      "source": {
+       "title": "Chinese Civil War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "CHN-1151"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Chinese Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+     },
+     "hatch": {
+      "by": "Chinese Communists",
+      "since": "1949-09-05",
+      "note": "Held by the Communists during the Civil War: Qinghai, held by the Communists from the fall of Xining (September 1949)",
+      "source": {
+       "title": "Chinese Civil War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "CHN-1838"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Chinese Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+     },
+     "hatch": {
+      "by": "Chinese Communists",
+      "since": "1949-09-19",
+      "note": "Held by the Communists during the Civil War: western Inner Mongolia (Suiyuan), whose Nationalist governor went over to the Communists in September 1949",
+      "source": {
+       "title": "Chinese Civil War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "CHN-1803"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Ningxia Campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ningxia_Campaign"
+     },
+     "hatch": {
+      "by": "Chinese Communists",
+      "since": "1949-09-23",
+      "note": "Held by the Communists during the Civil War: Ningxia, held by the Communists from the fall of Yinchuan (September 1949)",
+      "source": {
+       "title": "Chinese Civil War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "CHN-1756"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Incorporation of Xinjiang into the People's Republic of China (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Incorporation_of_Xinjiang_into_the_People's_Republic_of_China"
+     },
+     "hatch": {
+      "by": "Chinese Communists",
+      "since": "1949-09-25",
+      "note": "Held by the Communists during the Civil War: Xinjiang, whose Nationalist governor and garrison went over to the Communists in September 1949",
+      "source": {
+       "title": "Chinese Civil War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "CHN-1180"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Chinese Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+     }
+    },
+    {
+     "pieces": [
+      "CHN-1153"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Chinese Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+     }
+    },
+    {
+     "pieces": [
+      "CHN-1154"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Chinese Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+     }
+    },
+    {
+     "pieces": [
+      "CHN-1152"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Chinese Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+     }
+    },
+    {
+     "pieces": [
+      "CHN-1810"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Chinese Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+     }
+    },
+    {
+     "pieces": [
+      "CHN-1809"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Chinese Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+     }
+    },
+    {
+     "pieces": [
+      "CHN-1775",
+      "PFA+00?"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Chinese Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+     }
+    },
+    {
+     "pieces": [
+      "three-districts"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Second East Turkestan Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Second_East_Turkestan_Republic"
+     },
+     "hatch": {
+      "by": "Second East Turkestan Republic",
+      "since": "1944-11-12",
+      "note": "Held by the Second East Turkestan Republic, set up at Ghulja (Yining) in the Ili Rebellion; it kept the Three Districts under a coalition government from 1946 and joined the People's Republic in December 1949",
+      "source": {
+       "title": "Second East Turkestan Republic (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Second_East_Turkestan_Republic"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "TWN-1156",
+      "TWN-1158",
+      "TWN-1160",
+      "TWN-1161",
+      "TWN-1162",
+      "TWN-1163",
+      "TWN-1164",
+      "TWN-1165",
+      "TWN-1166",
+      "TWN-1167",
+      "TWN-1168",
+      "TWN-1169",
+      "TWN-1170",
+      "TWN-1171",
+      "TWN-1172",
+      "TWN-1173",
+      "TWN-1174",
+      "TWN-1176",
+      "TWN-1177",
+      "TWN-3414",
+      "TWN-3415"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Taiwan under Republic of China rule (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Taiwan_under_Republic_of_China_rule"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1949-09-25",
+   "what": "The Nationalist governor and garrison of Xinjiang go over to the Communists",
+   "source": {
+    "title": "Incorporation of Xinjiang into the People's Republic of China (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Incorporation_of_Xinjiang_into_the_People's_Republic_of_China"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CHN-1756"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Incorporation of Xinjiang into the People's Republic of China (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Incorporation_of_Xinjiang_into_the_People's_Republic_of_China"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1949-09-23",
+   "what": "The Communists take Yinchuan",
+   "source": {
+    "title": "Ningxia Campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Ningxia_Campaign"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CHN-1803"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Ningxia Campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ningxia_Campaign"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1949-09-19",
+   "what": "The Nationalist governor of Suiyuan goes over to the Communists",
+   "source": {
+    "title": "Chinese Civil War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CHN-1838"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Chinese Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1949-09-05",
+   "what": "The Communists take Xining",
+   "source": {
+    "title": "Chinese Civil War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CHN-1151"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Chinese Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1949-08-26",
+   "what": "The Communists take Lanzhou",
+   "source": {
+    "title": "Lanzhou Campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Lanzhou_Campaign"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CHN-1150"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Lanzhou Campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lanzhou_Campaign"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1949-08-17",
+   "what": "The Communists take Fuzhou",
+   "source": {
+    "title": "Chinese Civil War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CHN-1178"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Chinese Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1949-08-04",
+   "what": "The governor of Hunan goes over to the Communists, who enter Changsha",
+   "source": {
+    "title": "Chinese Civil War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CHN-1808"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Chinese Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1949-05-27",
+   "what": "The Communists take Shanghai",
+   "source": {
+    "title": "Shanghai Campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Shanghai_Campaign"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CHN-1819"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Shanghai Campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Shanghai_Campaign"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1949-05-22",
+   "what": "The Communists take Nanchang",
+   "source": {
+    "title": "Chinese Civil War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CHN-1817"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Chinese Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1949-05-20",
+   "what": "The Communists take Xi'an",
+   "source": {
+    "title": "Chinese Civil War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CHN-1804"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Chinese Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1949-05-16",
+   "what": "The Communists take Wuhan",
+   "source": {
+    "title": "Chinese Civil War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CHN-1807"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Chinese Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1949-05-03",
+   "what": "The Communists take Hangzhou",
+   "source": {
+    "title": "Yangtze River Crossing campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Yangtze_River_Crossing_campaign"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CHN-1820"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Yangtze River Crossing campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Yangtze_River_Crossing_campaign"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1949-04-23",
+   "what": "The Communists cross the Yangtze and take Nanjing, the Nationalist capital",
+   "source": {
+    "title": "Yangtze River Crossing campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Yangtze_River_Crossing_campaign"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CHN-1818"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Yangtze River Crossing campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Yangtze_River_Crossing_campaign"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1949-01-31",
+   "what": "The Nationalist garrison hands Beiping over to the Communists",
+   "source": {
+    "title": "Pingjin campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Pingjin_campaign"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CHN-1155"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Pingjin campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pingjin_campaign"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1949-01-21",
+   "what": "After the Huaihai campaign the Communists take Bengbu and Hefei",
+   "source": {
+    "title": "Huaihai campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Huaihai_campaign"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CHN-1179"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Huaihai campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Huaihai_campaign"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1949-01-15",
+   "what": "The Communists storm Tianjin",
+   "source": {
+    "title": "Pingjin campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Pingjin_campaign"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CHN-1816"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Pingjin campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pingjin_campaign"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1948-11-02",
+   "what": "The Communists take Shenyang, ending the Liaoshen campaign: all of Manchuria is theirs",
+   "source": {
+    "title": "Liaoshen campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Liaoshen_campaign"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CHN-1813"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Liaoshen campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Liaoshen_campaign"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1948-10-24",
+   "what": "The Communists take Zhengzhou and Kaifeng",
+   "source": {
+    "title": "Chinese Civil War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CHN-1812"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Chinese Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1948-09-24",
+   "what": "The Communists take Jinan",
+   "source": {
+    "title": "Jinan campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Jinan_campaign"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CHN-1814"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Jinan campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Jinan_campaign"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1948-07-21",
+   "what": "The Communists win the Jinzhong campaign: only Taiyuan is left to the Nationalists in Shanxi",
+   "source": {
+    "title": "Taiyuan campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Taiyuan_campaign"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CHN-1805"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Taiyuan campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Taiyuan_campaign"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1948-03-09",
+   "what": "The Nationalists give up Jilin city; only Changchun holds out in the province",
+   "source": {
+    "title": "Siege of Changchun (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Changchun"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CHN-1828"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Siege of Changchun (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Changchun"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1947-11-12",
+   "what": "The Communists take Shijiazhuang, the first large city they capture",
+   "source": {
+    "title": "Chinese Civil War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CHN-1811"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Chinese Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1947-05-01",
+   "what": "The Inner Mongolian Autonomous Government is set up under the Communists at Ulanhot",
+   "source": {
+    "title": "Inner Mongolia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Inner_Mongolia"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "east-inner-mongolia"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Inner Mongolia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Inner_Mongolia"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1946-05-04",
+   "what": "Communist troops take over Harbin and northern Manchuria as the Soviet army leaves",
+   "source": {
+    "title": "Chinese Civil War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "CHN-1839"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Chinese Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1945-10-25",
+   "what": "Japan hands Taiwan and Penghu over to the Republic of China",
+   "source": {
+    "title": "Taiwan under Republic of China rule (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Taiwan_under_Republic_of_China_rule"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TWN-1156",
+      "TWN-1158",
+      "TWN-1160",
+      "TWN-1161",
+      "TWN-1162",
+      "TWN-1163",
+      "TWN-1164",
+      "TWN-1165",
+      "TWN-1166",
+      "TWN-1167",
+      "TWN-1168",
+      "TWN-1169",
+      "TWN-1170",
+      "TWN-1171",
+      "TWN-1172",
+      "TWN-1173",
+      "TWN-1174",
+      "TWN-1176",
+      "TWN-1177",
+      "TWN-3414"
+     ],
+     "owner": "Japan",
+     "source": {
+      "title": "Taiwan under Japanese rule (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Taiwan_under_Japanese_rule"
+     },
+     "territory": "Taiwan"
+    }
+   ]
+  },
+  {
+   "date": "1944-11-12",
+   "what": "The Ili Rebellion: the Second East Turkestan Republic is proclaimed at Ghulja (Yining)",
+   "source": {
+    "title": "Ili Rebellion (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Ili_Rebellion"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "three-districts"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Second East Turkestan Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Second_East_Turkestan_Republic"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1937-09-06",
+   "what": "The Communist base in northern Shaanxi becomes the Shaan-Gan-Ning Border Region of the Republic of China",
+   "source": {
+    "title": "Shaan-Gan-Ning Border Region (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Shaan-Gan-Ning_Border_Region"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "shaan-gan-ning"
+     ],
+     "owner": "China",
+     "source": {
+      "title": "Shaan-Gan-Ning Border Region (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Shaan-Gan-Ning_Border_Region"
+     }
+    }
+   ]
+  }
+ ]
+}
