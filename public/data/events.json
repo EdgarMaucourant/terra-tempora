@@ -3173,7 +3173,8 @@
     37.0
    ],
    "civs": [
-    "france"
+    "france",
+    "turkey"
    ],
    "summary": "After the Ottoman defeat, French troops occupy Cilicia, around Adana. Turkish nationalists led by Mustafa Kemal fight them at Marash, Urfa and Aintab. By the Treaty of Ankara of 20 October 1921, France leaves Cilicia and draws the border between Syria and Turkey, keeping the Sanjak of Alexandretta under a special regime.",
    "wikipedia": "Franco-Turkish_War",
@@ -3571,7 +3572,7 @@
     35.3
    ],
    "civs": [
-    "ottoman-empire",
+    "turkey",
     "syria",
     "mandatory-syria",
     "mandatory-lebanon",
@@ -4149,7 +4150,7 @@
    ],
    "civs": [
     "lebanon",
-    "ottoman-empire",
+    "turkey",
     "france"
    ],
    "summary": "In 1860 fighting between Druze and Maronite Christians in Mount Lebanon turns into massacres, which spread to Damascus. With the agreement of the other European powers, Napoleon III sends some 6,000 soldiers, who land at Beirut in August 1860 and stay until June 1861. The Ottoman government then makes Mount Lebanon a self-governing district under a Christian governor.",
@@ -4504,7 +4505,7 @@
    ],
    "civs": [
     "russia",
-    "ottoman-empire",
+    "turkey",
     "france",
     "united-kingdom"
    ],
@@ -4697,7 +4698,7 @@
    "civs": [
     "syria",
     "lebanon",
-    "ottoman-empire",
+    "turkey",
     "egypt"
    ],
    "summary": "Muhammad Ali, the Ottoman governor of Egypt, sends his son Ibrahim Pasha to take Syria in 1831. Acre falls in May 1832, Damascus soon after, and Ibrahim beats the Sultan's armies at Homs and Konya. Egypt rules Syria and Lebanon for eight years, until Britain, Austria and Russia step in during the Oriental Crisis of 1840: Acre is shelled and Ibrahim withdraws, while France, which backed Muhammad Ali, is left out.",
@@ -8082,7 +8083,7 @@
     "mandatory-iraq",
     "mandate-for-syria-and-the-lebanon",
     "united-kingdom",
-    "ottoman-empire"
+    "turkey"
    ],
    "summary": "Meeting at San Remo in Italy on 19–26 April 1920, the Allied powers decide how to divide the Ottoman Empire’s Arab lands. Britain receives the mandates for Mesopotamia (Iraq) and Palestine, with the promise of the Balfour Declaration written in, and France those for Syria and Lebanon. The borders drawn here shape the modern Middle East.",
    "wikipedia": "San_Remo_conference",
@@ -8294,7 +8295,7 @@
    ],
    "civs": [
     "british-cyprus",
-    "ottoman-empire",
+    "turkey",
     "cyprus",
     "united-kingdom"
    ],
@@ -8316,7 +8317,7 @@
     "sultanate-of-egypt",
     "khedivate-of-egypt",
     "egypt",
-    "ottoman-empire",
+    "turkey",
     "united-kingdom"
    ],
    "summary": "British troops had occupied Egypt since 1882 while it stayed, in law, a vassal of the Ottoman sultan. With the Ottoman Empire now an enemy, Britain declares a protectorate on 18 December 1914, deposes the pro-Ottoman Khedive Abbas II, and makes his uncle Hussein Kamel Sultan of Egypt. Egypt is cut off from the Ottoman Empire and becomes the base for the war in the Middle East.",
@@ -8335,7 +8336,7 @@
     32.5
    ],
    "civs": [
-    "ottoman-empire",
+    "turkey",
     "mandatory-iraq",
     "iraq",
     "united-kingdom"
@@ -8376,7 +8377,7 @@
    ],
    "civs": [
     "qatar",
-    "ottoman-empire",
+    "turkey",
     "united-kingdom"
    ],
    "summary": "The Ottoman garrison in Doha slips away in August 1915 under British pressure. On 3 November 1916 Sheikh Abdullah bin Jassim Al Thani signs a treaty that brings Qatar into Britain’s system of Gulf protected states: Britain takes charge of its foreign affairs and promises to defend it. The treaty lasts until independence in 1971.",
@@ -8394,7 +8395,7 @@
     33.25
    ],
    "civs": [
-    "ottoman-empire",
+    "turkey",
     "mandatory-iraq",
     "iraq",
     "united-kingdom"
@@ -8415,7 +8416,7 @@
    ],
    "civs": [
     "kingdom-of-hejaz",
-    "ottoman-empire",
+    "turkey",
     "jordan",
     "united-kingdom"
    ],
@@ -8434,7 +8435,7 @@
     31.72
    ],
    "civs": [
-    "ottoman-empire",
+    "turkey",
     "mandatory-palestine",
     "israel",
     "palestine",
@@ -8455,7 +8456,7 @@
     32.58
    ],
    "civs": [
-    "ottoman-empire",
+    "turkey",
     "mandatory-palestine",
     "arab-kingdom-of-syria",
     "israel",
@@ -8477,7 +8478,7 @@
     36.34
    ],
    "civs": [
-    "ottoman-empire",
+    "turkey",
     "mandatory-iraq",
     "iraq",
     "united-kingdom"
@@ -8656,7 +8657,7 @@
    "civs": [
     "khedivate-of-egypt",
     "egypt",
-    "ottoman-empire",
+    "turkey",
     "united-kingdom"
    ],
    "summary": "In early 1906 Ottoman troops occupy Taba, at the head of the Gulf of Aqaba, claiming most of Sinai. Britain, which runs Egypt, sends warships and an ultimatum, and the Sultan gives way. An agreement of 1 October 1906 draws a straight line from Rafah to Taba as the border of Egyptian Sinai – the line still used between Egypt and Israel today.",
@@ -8939,7 +8940,7 @@
    ],
    "civs": [
     "kuwait",
-    "ottoman-empire",
+    "turkey",
     "united-kingdom"
    ],
    "summary": "Fearing that the Ottomans would make good their claims – and that Germany would end its Baghdad railway at Kuwait – Sheikh Mubarak al-Sabah signs a secret bond with Britain on 23 January 1899. He promises not to cede land or receive foreign agents without British consent, in return for British protection. Kuwait stays under that protection until its independence in 1961.",
@@ -11019,7 +11020,7 @@
     "armenia",
     "azerbaijan",
     "russia",
-    "ottoman-empire"
+    "turkey"
    ],
    "summary": "After refusing Brest-Litovsk, the Transcaucasian lands form a federation in April 1918, but it falls apart under the Ottoman offensive. Georgia declares independence in Tiflis on 26 May 1918, and Armenia and Azerbaijan on 28 May. The three republics fight over their borders and live under Ottoman, German and then British influence until the Red Army takes them in 1920 and 1921.",
    "wikipedia": "Democratic_Republic_of_Georgia",
@@ -11292,7 +11293,7 @@
    ],
    "civs": [
     "russia",
-    "ottoman-empire"
+    "turkey"
    ],
    "summary": "In a winter offensive across the mountains, General Yudenich's Caucasus Army takes the great Ottoman fortress of Erzurum on 16 February 1916, then Trebizond in April and Erzincan in July. Russia holds much of eastern Anatolia until its army melts away after the revolution of 1917.",
    "wikipedia": "Erzurum_offensive",
@@ -11568,7 +11569,7 @@
    ],
    "civs": [
     "russia",
-    "ottoman-empire"
+    "turkey"
    ],
    "summary": "In the Russo-Turkish War, Russian troops take Ardahan in May 1877 and then storm the great Ottoman fortress of Kars in a night assault on 17–18 November 1877. Russia keeps Kars and Ardahan at the peace and rules them until 1918.",
    "wikipedia": "Siege_of_Kars_(1877)",
@@ -11586,7 +11587,7 @@
    ],
    "civs": [
     "russia",
-    "ottoman-empire",
+    "turkey",
     "romania"
    ],
    "summary": "The great powers meet in Berlin to revise the peace Russia imposed on the Ottomans at San Stefano. The treaty of 13 July 1878 still gives Russia Kars, Ardahan and Batumi, made a free port, and takes Southern Bessarabia back from Romania, which receives Northern Dobruja instead and is recognised as independent.",
@@ -11625,7 +11626,7 @@
    ],
    "civs": [
     "russia",
-    "ottoman-empire",
+    "turkey",
     "georgia"
    ],
    "summary": "In the war of 1828-29 Russian troops storm Kars and the Ottoman fortress of Akhaltsikhe. The Treaty of Adrianople of 14 September 1829 gives Kars back to the Ottomans but leaves Russia Akhaltsikhe and Akhalkalaki and the Black Sea coast from the Kuban to Adjara, including the Ottoman claim to Circassia.",
@@ -11680,7 +11681,7 @@
    ],
    "civs": [
     "russia",
-    "ottoman-empire"
+    "turkey"
    ],
    "summary": "During the Crimean War a Russian army under Nikolay Muravyov besieges Kars, defended by an Ottoman garrison under the British general William Williams. After a failed assault in September, hunger forces the garrison to surrender on 28 November 1855. Russia gives Kars back at the peace of Paris in 1856.",
    "wikipedia": "Siege_of_Kars",
@@ -11716,7 +11717,7 @@
    ],
    "civs": [
     "russia",
-    "ottoman-empire"
+    "turkey"
    ],
    "summary": "After Shamil's surrender, Russian armies conquer the last free Circassian and Ubykh lands on the Black Sea coast. The war ends with a victory parade at Kbaada on 21 May 1864. Hundreds of thousands of Circassians are killed or driven across the sea to the Ottoman Empire, many dying on the way, and their land is settled by Cossacks.",
    "wikipedia": "Circassian_genocide",
@@ -11902,7 +11903,7 @@
    "civs": [
     "russia",
     "moldavia",
-    "ottoman-empire"
+    "turkey"
    ],
    "summary": "Defeated in the Crimean War, Russia signs the Treaty of Paris on 30 March 1856. It gives Kars back to the Ottomans, loses the mouths of the Danube and Southern Bessarabia (Izmail, Bolhrad, Cahul) to Moldavia, and may no longer keep a war fleet on the Black Sea.",
    "wikipedia": "Treaty_of_Paris_(1856)",
@@ -13426,6 +13427,313 @@
    "summary": "In June 1854 General O'Donnell rises at Vicálvaro, and with the Manifesto of Manzanares and uprisings in the cities the revolt topples the Moderate government. Espartero returns to power for the \"Progressive Biennium\" until O'Donnell replaces him in 1856 and founds the Liberal Union.",
    "wikipedia": "Spanish_Revolution_of_1854",
    "search": "Vicalvarada June 1854 O'Donnell Manifesto of Manzanares Progressive Biennium Espartero 1856 Liberal Union"
+  },
+  {
+   "id": "battle-of-konya-1832",
+   "kind": "battle",
+   "year": 1832,
+   "title": "Ibrahim Pasha crushes the Ottoman army at Konya, December 1832",
+   "place": "Konya",
+   "lonLat": [
+    32.49,
+    37.87
+   ],
+   "civs": [
+    "turkey",
+    "egypt"
+   ],
+   "summary": "Sent north by his father Muhammad Ali, governor of Egypt, Ibrahim Pasha has taken Syria and Cilicia. On 21 December 1832 he routs the grand vizier's army at Konya and captures him, opening the road to Constantinople. Under the Convention of Kütahya (May 1833) the sultan leaves Syria and Adana to Egypt.",
+   "wikipedia": "Battle_of_Konya",
+   "search": "Battle of Konya 21 December 1832 Ibrahim Pasha Reşid Mehmed Pasha Egyptian–Ottoman War Convention of Kütahya 1833 Adana"
+  },
+  {
+   "id": "first-constitutional-era-1876",
+   "kind": "revolution",
+   "year": 1876,
+   "title": "The Ottoman Empire gets a constitution, December 1876",
+   "place": "Constantinople",
+   "lonLat": [
+    28.98,
+    41.01
+   ],
+   "civs": [
+    "turkey"
+   ],
+   "summary": "On 23 December 1876 the new sultan Abdul Hamid II proclaims the first Ottoman constitution, drawn up by the reformer Midhat Pasha, and an elected parliament meets in March 1877. During the war with Russia Abdul Hamid suspends it in February 1878 and rules alone for thirty years.",
+   "wikipedia": "First_Constitutional_Era",
+   "search": "Ottoman constitution of 1876 Kanun-i Esasi 23 December 1876 Midhat Pasha Abdul Hamid II parliament suspended 1878"
+  },
+  {
+   "id": "russians-take-adrianople-1878",
+   "kind": "war",
+   "year": 1878,
+   "title": "The Russian army reaches Adrianople, January 1878",
+   "place": "Adrianople (Edirne)",
+   "lonLat": [
+    26.56,
+    41.68
+   ],
+   "civs": [
+    "russia",
+    "turkey"
+   ],
+   "summary": "After the fall of Plevna, the Russian army crosses the Balkan mountains in midwinter and enters Adrianople, the empire's second city in Europe, on 20 January 1878. It pushes on to San Stefano, at the gates of Constantinople, where peace is signed in March; Russian troops stay in Eastern Thrace until 1879.",
+   "wikipedia": "Russo-Turkish_War_(1877–1878)",
+   "search": "Russo-Turkish War 1877 1878 Russian army enters Adrianople 20 January 1878 armistice San Stefano Eastern Thrace occupation 1879"
+  },
+  {
+   "id": "young-turk-revolution-1908",
+   "kind": "revolution",
+   "year": 1908,
+   "title": "The Young Turk Revolution, July 1908",
+   "place": "Constantinople",
+   "lonLat": [
+    28.96,
+    41.0
+   ],
+   "civs": [
+    "turkey"
+   ],
+   "summary": "Officers of the Committee of Union and Progress rise in Macedonia and threaten to march on the capital. On 24 July 1908 Sultan Abdul Hamid II restores the constitution of 1876 and calls elections. After a failed counter-coup in April 1909 he is deposed in favour of his brother Mehmed V.",
+   "wikipedia": "Young_Turk_Revolution",
+   "search": "Young Turk Revolution July 1908 Committee of Union and Progress Third Army Macedonia Abdul Hamid II restores constitution Second Constitutional Era"
+  },
+  {
+   "id": "raid-on-the-sublime-porte-1913",
+   "kind": "revolution",
+   "year": 1913,
+   "title": "The Raid on the Sublime Porte, January 1913",
+   "place": "Constantinople",
+   "lonLat": [
+    28.98,
+    41.01
+   ],
+   "civs": [
+    "turkey"
+   ],
+   "summary": "As the government prepares to give up Adrianople in the First Balkan War, Enver Bey and officers of the Committee of Union and Progress storm the cabinet meeting on 23 January 1913, kill the war minister and force the grand vizier to resign. The Unionists, led by the \"Three Pashas\", rule the empire until 1918.",
+   "wikipedia": "1913_Ottoman_coup_d'état",
+   "search": "Raid on the Sublime Porte 23 January 1913 Enver Talat Committee of Union and Progress coup Kâmil Pasha Nazım Pasha Three Pashas"
+  },
+  {
+   "id": "fall-of-trebizond-1916",
+   "kind": "battle",
+   "year": 1916,
+   "title": "The Russian army takes Trebizond, April 1916",
+   "place": "Trebizond (Trabzon)",
+   "lonLat": [
+    39.72,
+    41.0
+   ],
+   "civs": [
+    "russia",
+    "turkey"
+   ],
+   "summary": "Pushing west along the Black Sea coast with landings from the fleet, the Russian army takes Rize in March and enters Trebizond on 18 April 1916. With Erzurum and, in July, Erzincan, Russia holds a large part of eastern Anatolia until its army falls apart after the revolution of 1917.",
+   "wikipedia": "Trebizond_campaign",
+   "search": "Trebizond campaign 1916 Russian Caucasus army Black Sea Fleet landings Rize Trabzon taken 18 April 1916 Lyakhov"
+  },
+  {
+   "id": "ottoman-recapture-of-the-east-1918",
+   "kind": "war",
+   "year": 1918,
+   "to": 1918,
+   "title": "The Ottoman army retakes eastern Anatolia, February – April 1918",
+   "place": "Erzincan",
+   "lonLat": [
+    39.49,
+    39.75
+   ],
+   "civs": [
+    "turkey",
+    "russia"
+   ],
+   "summary": "With the Russian army gone after the revolution, the Ottoman Third Army advances against the Armenian units left behind. It retakes Erzincan on 13 February 1918, Trebizond on 24 February, Erzurum on 12 March and Van in April, and by the Treaty of Brest-Litovsk it also gets back Kars, Ardahan and Batum.",
+   "wikipedia": "Caucasus_campaign",
+   "search": "Ottoman offensive February March 1918 Erzincan Trabzon Erzurum 12 March 1918 Van Brest-Litovsk Vehib Pasha Russian army collapse"
+  },
+  {
+   "id": "occupation-of-constantinople-1918",
+   "kind": "war",
+   "year": 1918,
+   "to": 1923,
+   "title": "The Allies occupy Constantinople, 1918 – 1923",
+   "place": "Constantinople",
+   "lonLat": [
+    29.0,
+    41.05
+   ],
+   "civs": [
+    "turkey",
+    "united-kingdom",
+    "france",
+    "italy"
+   ],
+   "summary": "Two weeks after the Armistice of Mudros, an Allied fleet anchors off Constantinople on 13 November 1918, and British, French and Italian troops occupy the capital and the Dardanelles. In March 1920 they dissolve the Ottoman parliament, which drives many deputies to the nationalists in Ankara. The last Allied troops leave on 4 October 1923.",
+   "wikipedia": "Occupation_of_Constantinople",
+   "search": "Occupation of Constantinople 13 November 1918 4 October 1923 Allied fleet British French Italian troops Dardanelles March 1920 parliament dissolved"
+  },
+  {
+   "id": "greek-landing-at-smyrna-1919",
+   "kind": "war",
+   "year": 1919,
+   "title": "The Greek army lands at Smyrna, May 1919",
+   "place": "Smyrna (İzmir)",
+   "lonLat": [
+    27.14,
+    38.42
+   ],
+   "civs": [
+    "turkey",
+    "greece"
+   ],
+   "summary": "With the backing of the Allies at the Paris Peace Conference, Greek troops land at Smyrna on 15 May 1919 and spread over the surrounding region. The landing starts the Greco-Turkish War: in 1920 and 1921 the Greek army pushes deep into western Anatolia and takes Eastern Thrace.",
+   "wikipedia": "Occupation_of_Smyrna",
+   "search": "Greek landing at Smyrna 15 May 1919 Paris Peace Conference Venizelos Greco-Turkish War 1919 1922 Smyrna zone"
+  },
+  {
+   "id": "grand-national-assembly-1920",
+   "kind": "revolution",
+   "year": 1920,
+   "title": "The Grand National Assembly opens in Ankara, April 1920",
+   "place": "Ankara",
+   "lonLat": [
+    32.86,
+    39.94
+   ],
+   "civs": [
+    "turkey"
+   ],
+   "summary": "After the Allies dissolve the parliament in Constantinople, deputies and nationalist delegates gather in Ankara and open the Grand National Assembly on 23 April 1920, with Mustafa Kemal as its president. It forms a rival government that leads the war of independence and soon controls most of Anatolia.",
+   "wikipedia": "Grand_National_Assembly_of_Turkey",
+   "search": "Grand National Assembly opens Ankara 23 April 1920 Mustafa Kemal nationalist government Turkish War of Independence National Pact"
+  },
+  {
+   "id": "great-offensive-1922",
+   "kind": "war",
+   "year": 1922,
+   "title": "The Turkish army drives the Greeks out of Anatolia, August – September 1922",
+   "place": "Afyonkarahisar",
+   "lonLat": [
+    30.54,
+    38.76
+   ],
+   "civs": [
+    "turkey",
+    "greece"
+   ],
+   "summary": "On 26 August 1922 Mustafa Kemal's army breaks the Greek front near Afyonkarahisar and routs it at Dumlupınar. The Greek army falls back to the coast, and Turkish troops enter Smyrna on 9 September. The Armistice of Mudanya (11 October) gives Eastern Thrace back to Turkey.",
+   "wikipedia": "Great_Offensive",
+   "search": "Great Offensive 26 August 1922 Dumlupınar Afyonkarahisar Mustafa Kemal Greek army routed Smyrna 9 September 1922 Armistice of Mudanya"
+  },
+  {
+   "id": "abolition-of-the-sultanate-1922",
+   "kind": "crown",
+   "year": 1922,
+   "title": "The Ottoman sultanate is abolished, November 1922",
+   "place": "Constantinople",
+   "lonLat": [
+    28.97,
+    41.02
+   ],
+   "civs": [
+    "turkey"
+   ],
+   "summary": "On 1 November 1922 the Grand National Assembly in Ankara abolishes the sultanate, ending more than six centuries of Ottoman rule. The last sultan, Mehmed VI, leaves Constantinople on a British warship on 17 November; his cousin Abdulmejid II is kept only as caliph.",
+   "wikipedia": "Abolition_of_the_Ottoman_sultanate",
+   "search": "Abolition of the Ottoman sultanate 1 November 1922 Grand National Assembly Mehmed VI leaves 17 November 1922 Abdulmejid II caliph"
+  },
+  {
+   "id": "treaty-of-lausanne-1923",
+   "kind": "treaty",
+   "year": 1923,
+   "title": "The Treaty of Lausanne, July 1923",
+   "place": "Turkey (signed at Lausanne)",
+   "lonLat": [
+    34.5,
+    39.2
+   ],
+   "civs": [
+    "turkey",
+    "greece",
+    "united-kingdom",
+    "france",
+    "italy"
+   ],
+   "summary": "Signed on 24 July 1923 by İsmet Pasha and the Allies, the treaty replaces the Treaty of Sèvres and recognises the new Turkey with nearly all of Anatolia, Eastern Thrace, Imbros and Tenedos. Turkey gives up the Arab lands, Cyprus and the Dodecanese, the capitulations end, and a separate convention exchanges the Orthodox and Muslim populations of Turkey and Greece.",
+   "wikipedia": "Treaty_of_Lausanne",
+   "search": "Treaty of Lausanne 24 July 1923 İsmet İnönü borders of Turkey Eastern Thrace Imbros Tenedos Straits Commission population exchange Greece capitulations"
+  },
+  {
+   "id": "republic-of-turkey-1923",
+   "kind": "revolution",
+   "year": 1923,
+   "title": "Turkey becomes a republic, 29 October 1923",
+   "place": "Ankara",
+   "lonLat": [
+    32.85,
+    39.93
+   ],
+   "civs": [
+    "turkey"
+   ],
+   "summary": "Two weeks after making Ankara the capital, the Grand National Assembly proclaims the Republic of Turkey on 29 October 1923 and elects Mustafa Kemal (later Atatürk) its first president. Over the next years he abolishes the caliphate and remakes the country's laws, script and dress.",
+   "wikipedia": "Proclamation_of_the_Republic_of_Turkey",
+   "search": "Proclamation of the Republic of Turkey 29 October 1923 Ankara capital 13 October Mustafa Kemal first president İsmet İnönü prime minister"
+  },
+  {
+   "id": "treaty-of-angora-mosul-1926",
+   "kind": "treaty",
+   "year": 1926,
+   "title": "Turkey gives up Mosul, June 1926",
+   "place": "Turkish–Iraqi border",
+   "lonLat": [
+    42.9,
+    37.4
+   ],
+   "civs": [
+    "turkey",
+    "mandatory-iraq",
+    "iraq",
+    "united-kingdom"
+   ],
+   "summary": "Turkey had claimed the former vilayet of Mosul, held by the British since 1918. After the League of Nations awards it to Iraq along the \"Brussels line\" in December 1925, Turkey signs a treaty with Britain and Iraq at Ankara on 5 June 1926 that fixes today's Turkish–Iraqi border, in return for a share of Mosul's oil revenue.",
+   "wikipedia": "Mosul_question",
+   "search": "Mosul question Treaty of Ankara 5 June 1926 League of Nations Brussels Line Turkey gives up Mosul vilayet Iraq oil royalties"
+  },
+  {
+   "id": "turkish-coup-1960",
+   "kind": "revolution",
+   "year": 1960,
+   "title": "The army overthrows Menderes, 27 May 1960",
+   "place": "Ankara",
+   "lonLat": [
+    32.86,
+    39.92
+   ],
+   "civs": [
+    "turkey"
+   ],
+   "summary": "On 27 May 1960 army officers overthrow the elected government of Adnan Menderes, whose Democrat Party had ruled since 1950 and grown more and more authoritarian. General Cemal Gürsel's National Unity Committee rules until a new constitution and elections in 1961; Menderes is tried and hanged.",
+   "wikipedia": "1960_Turkish_coup_d'état",
+   "search": "1960 Turkish coup 27 May 1960 Cemal Gürsel National Unity Committee Adnan Menderes hanged 1961 Yassıada constitution 1961"
+  },
+  {
+   "id": "turkish-coup-1980",
+   "kind": "revolution",
+   "year": 1980,
+   "title": "The army takes power again, 12 September 1980",
+   "place": "Ankara",
+   "lonLat": [
+    32.84,
+    39.94
+   ],
+   "civs": [
+    "turkey"
+   ],
+   "summary": "After years of street violence between left and right, the army under General Kenan Evren seizes power on 12 September 1980, dissolves parliament and the parties and arrests hundreds of thousands. A new constitution follows in 1982, and civilian rule returns with the elections of 1983.",
+   "wikipedia": "1980_Turkish_coup_d'état",
+   "search": "1980 Turkish coup 12 September 1980 Kenan Evren National Security Council political violence constitution 1982 elections 1983"
   }
  ]
 }
