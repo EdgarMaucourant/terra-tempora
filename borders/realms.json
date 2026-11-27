@@ -1506,7 +1506,61 @@
   "wikipedia": "Greece",
   "wikidata": "Q41",
   "fr": "Grèce",
-  "es": "Grecia"
+  "es": "Grecia",
+  "periods": [
+   {
+    "from": "1822-01-13",
+    "name": "First Hellenic Republic",
+    "wikipedia": "First Hellenic Republic",
+    "fr": "Première République hellénique",
+    "es": "Primera República Helénica",
+    "label": "First Hellenic Republic",
+    "labelFr": "Première République hellénique",
+    "labelEs": "Primera República Helénica",
+    "note": "The provisional government of the War of Independence, under Kapodistrias from 1828"
+   },
+   {
+    "from": "1832-05-07",
+    "name": "Kingdom of Greece",
+    "wikipedia": "Kingdom of Greece",
+    "fr": "Royaume de Grèce",
+    "es": "Reino de Grecia",
+    "label": "Kingdom of Greece",
+    "labelFr": "Royaume de Grèce",
+    "labelEs": "Reino de Grecia",
+    "note": "Kingdom under Otto of Bavaria from 1832, then George I and his heirs"
+   },
+   {
+    "from": "1924-03-25",
+    "name": "Second Hellenic Republic",
+    "wikipedia": "Second Hellenic Republic",
+    "fr": "Deuxième République hellénique",
+    "es": "Segunda República Helénica",
+    "label": "Second Hellenic Republic",
+    "labelFr": "Deuxième République hellénique",
+    "labelEs": "Segunda República Helénica",
+    "note": "Republic from 25 March 1924 until the monarchy was restored in 1935"
+   },
+   {
+    "from": "1935-11-03",
+    "name": "Kingdom of Greece",
+    "wikipedia": "Kingdom of Greece",
+    "fr": "Royaume de Grèce",
+    "es": "Reino de Grecia",
+    "label": "Kingdom of Greece",
+    "labelFr": "Royaume de Grèce",
+    "labelEs": "Reino de Grecia",
+    "note": "The monarchy was restored in 1935 and abolished in 1973"
+   },
+   {
+    "from": "1973-06-01",
+    "name": "Greece",
+    "wikipedia": "Greece",
+    "fr": "Grèce",
+    "es": "Grecia",
+    "note": "A republic since 1973, a parliamentary one since the fall of the junta in 1974"
+   }
+  ]
  },
  "Greenland": {
   "wikipedia": "Greenland",
@@ -5088,5 +5142,31 @@
   "fr": "Émirat des Bani Khalid",
   "es": "Emirato de los Banu Jalid",
   "note": "Ruled al-Hasa again after the fall of the first Saudi state, until 1830"
+ },
+ "Cretan State": {
+  "wikipedia": "Cretan State",
+  "wikidata": "Q1140034",
+  "fr": "État crétois",
+  "es": "Estado de Creta",
+  "note": "Autonomous under Ottoman suzerainty, with a high commissioner named by the Great Powers, until union with Greece in 1913"
+ },
+ "Principality of Samos": {
+  "wikipedia": "Principality of Samos",
+  "wikidata": "Q1150398",
+  "fr": "Principauté de Samos",
+  "es": "Principado de Samos",
+  "note": "Autonomous under Ottoman suzerainty, with a Christian prince named by the sultan, until 1912"
+ },
+ "Italian Islands of the Aegean": {
+  "wikipedia": "Italian Islands of the Aegean",
+  "fr": "Îles italiennes de l’Égée",
+  "es": "Islas italianas del Egeo",
+  "withOwner": false
+ },
+ "Inter-Allied Thrace": {
+  "wikipedia": "Western Thrace",
+  "fr": "Thrace interalliée",
+  "es": "Tracia interaliada",
+  "note": "Run by the Allies under a French general between Bulgaria and Greece"
  }
 }

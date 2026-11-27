@@ -1064,6 +1064,12 @@
  "selangor": {
   "name": "Selangor"
  },
+ "inter-allied-thrace": {
+  "name": "Tracia interaliada"
+ },
+ "cretan-state": {
+  "name": "Estado de Creta"
+ },
  "ras-al-khaimah": {
   "name": "Ras al-Jaima"
  },
@@ -1156,6 +1162,9 @@
  },
  "tibet": {
   "name": "Tíbet"
+ },
+ "italian-islands-of-the-aegean": {
+  "name": "Islas italianas del Egeo"
  },
  "united-states-of-the-ionian-islands": {
   "name": "Estados Unidos de las Islas Jónicas"
@@ -1273,6 +1282,9 @@
  },
  "palau": {
   "name": "Palaos"
+ },
+ "principality-of-samos": {
+  "name": "Principado de Samos"
  },
  "curacao": {
   "name": "Curazao"

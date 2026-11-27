@@ -125,9 +125,343 @@
    ],
    "from": 1815,
    "why": "Ottoman Arabia: Hejaz, al-Hasa, Asir and Jizan (Najd and Najran left to the Saudi rebuild)"
+  },
+  {
+   "pieces": [
+    "GRC-2884",
+    "GRC-2885",
+    "GRC-2886",
+    "GRC-2989",
+    "GRC-3013",
+    "dodecanese",
+    "GRC-2900",
+    "GRC-2949",
+    "GRC-2991",
+    "GRC-2892",
+    "GRC-2992",
+    "GRC-3001",
+    "western-thrace",
+    "GRC-2988",
+    "samos",
+    "GRC-2990"
+   ],
+   "from": 1815,
+   "why": "Greece without the Ionian Islands and Kythira (United Kingdom family): Ottoman land, Greek from 1830 to 1947"
   }
  ],
  "changes": [
+  {
+   "date": "1947-03-31",
+   "what": "The British hand the Dodecanese over to Greece; the islands are formally joined to it in 1948",
+   "source": {
+    "title": "Dodecanese (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Dodecanese"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "dodecanese"
+     ],
+     "owner": "Italy",
+     "source": {
+      "title": "Italian Islands of the Aegean (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Italian_Islands_of_the_Aegean"
+     },
+     "territory": "Italian Islands of the Aegean",
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1945-05-08",
+      "note": "Under British military administration after the German surrender, until handed to Greece",
+      "source": {
+       "title": "Dodecanese (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Dodecanese"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1945-05-08",
+   "what": "The German garrison of the Dodecanese surrenders to the British",
+   "source": {
+    "title": "Dodecanese campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Dodecanese_campaign"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "dodecanese"
+     ],
+     "owner": "Italy",
+     "source": {
+      "title": "Italian Islands of the Aegean (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Italian_Islands_of_the_Aegean"
+     },
+     "territory": "Italian Islands of the Aegean",
+     "hatch": {
+      "by": "Germany",
+      "since": "1943-09-11",
+      "note": "Taken by the Germans from their Italian allies after the armistice; Leros fell in November 1943",
+      "source": {
+       "title": "Dodecanese campaign (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Dodecanese_campaign"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-11-02",
+   "what": "The last German troops leave mainland Greece",
+   "source": {
+    "title": "Axis occupation of Greece (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Axis_occupation_of_Greece"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GRC-2991",
+      "GRC-2992",
+      "GRC-2988",
+      "GRC-2884"
+     ],
+     "owner": "Greece",
+     "source": {
+      "title": "Axis occupation of Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Axis_occupation_of_Greece"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-04-27",
+      "note": "German occupation zone, from the fall of Athens until the German withdrawal in October 1944",
+      "source": {
+       "title": "Axis occupation of Greece (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Axis_occupation_of_Greece"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "GRC-2990"
+     ],
+     "owner": "Greece",
+     "source": {
+      "title": "Axis occupation of Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Axis_occupation_of_Greece"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1941-06-01",
+      "note": "Taken by German paratroopers in the battle of Crete; the Germans held out round Chania until May 1945",
+      "source": {
+       "title": "Battle of Crete (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Battle_of_Crete"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "GRC-2892",
+      "GRC-2949",
+      "GRC-2900",
+      "GRC-2989",
+      "GRC-2885",
+      "GRC-2886",
+      "GRC-3013",
+      "samos"
+     ],
+     "owner": "Greece",
+     "source": {
+      "title": "Axis occupation of Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Axis_occupation_of_Greece"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1943-09-08",
+      "note": "Italian occupation zone, taken over by the Germans when Italy left the war, until October 1944",
+      "source": {
+       "title": "Axis occupation of Greece (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Axis_occupation_of_Greece"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1944-10-25",
+   "what": "Bulgarian troops leave eastern Macedonia and Western Thrace",
+   "source": {
+    "title": "Axis occupation of Greece (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Axis_occupation_of_Greece"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "GRC-3001",
+      "western-thrace"
+     ],
+     "owner": "Greece",
+     "source": {
+      "title": "Axis occupation of Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Axis_occupation_of_Greece"
+     },
+     "hatch": {
+      "by": "Bulgaria",
+      "since": "1941-04-20",
+      "note": "Bulgarian occupation zone, annexed in all but name, until Bulgaria changed sides in September 1944",
+      "source": {
+       "title": "Axis occupation of Greece (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Axis_occupation_of_Greece"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1943-09-11",
+   "what": "German troops take Rhodes from the Italians",
+   "source": {
+    "title": "Dodecanese campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Dodecanese_campaign"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "dodecanese"
+     ],
+     "owner": "Italy",
+     "source": {
+      "title": "Italian Islands of the Aegean (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Italian_Islands_of_the_Aegean"
+     },
+     "territory": "Italian Islands of the Aegean"
+    }
+   ]
+  },
+  {
+   "date": "1943-09-08",
+   "what": "Italy leaves the war: German troops take over the Italian zone of Greece",
+   "source": {
+    "title": "Axis occupation of Greece (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Axis_occupation_of_Greece"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GRC-2892",
+      "GRC-2949",
+      "GRC-2900",
+      "GRC-2989",
+      "GRC-2885",
+      "GRC-2886",
+      "GRC-3013",
+      "samos"
+     ],
+     "owner": "Greece",
+     "source": {
+      "title": "Axis occupation of Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Axis_occupation_of_Greece"
+     },
+     "hatch": {
+      "by": "Italy",
+      "since": "1941-04-27",
+      "note": "Italian occupation zone, from the fall of Athens until the Italian armistice of September 1943",
+      "source": {
+       "title": "Axis occupation of Greece (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Axis_occupation_of_Greece"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-06-01",
+   "what": "The battle of Crete ends with the island in German and Italian hands",
+   "source": {
+    "title": "Battle of Crete (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Crete"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "GRC-2990"
+     ],
+     "owner": "Greece",
+     "source": {
+      "title": "Battle of Crete (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Crete"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-04-27",
+   "what": "German troops enter Athens: Greece is shared out between German, Italian and Bulgarian occupiers",
+   "source": {
+    "title": "Axis occupation of Greece (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Axis_occupation_of_Greece"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GRC-2991",
+      "GRC-2992",
+      "GRC-2988",
+      "GRC-2884",
+      "GRC-2892",
+      "GRC-2949",
+      "GRC-2900",
+      "GRC-2989",
+      "GRC-2885",
+      "GRC-2886",
+      "GRC-3013",
+      "samos"
+     ],
+     "owner": "Greece",
+     "source": {
+      "title": "Axis occupation of Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Axis_occupation_of_Greece"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1941-04-20",
+   "what": "Bulgarian troops move into eastern Macedonia and Western Thrace behind the Germans",
+   "source": {
+    "title": "Axis occupation of Greece (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Axis_occupation_of_Greece"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GRC-3001",
+      "western-thrace"
+     ],
+     "owner": "Greece",
+     "source": {
+      "title": "Axis occupation of Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Axis_occupation_of_Greece"
+     }
+    }
+   ]
+  },
   {
    "date": "1934-01-01",
    "what": "Italian Tripolitania and Italian Cyrenaica are united as the colony of Libya",
@@ -312,6 +646,37 @@
      "source": {
       "title": "Kingdom of Hejaz (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Kingdom_of_Hejaz"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1924-08-06",
+   "what": "The Treaty of Lausanne comes into force: Turkey gives up the Dodecanese to Italy",
+   "source": {
+    "title": "Treaty of Lausanne (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Lausanne"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "dodecanese"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Greece"
+     },
+     "hatch": {
+      "by": "Italy",
+      "since": "1912-05-04",
+      "note": "Taken by Italy in the Italo-Turkish War and kept after the Treaty of Ouchy",
+      "source": {
+       "title": "Italo-Turkish War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Italo-Turkish_War"
+      },
+      "occupied": true
      }
     }
    ]
@@ -868,6 +1233,28 @@
    ]
   },
   {
+   "date": "1920-05-14",
+   "what": "The Greek army enters Western Thrace, given to Greece by the Allies",
+   "source": {
+    "title": "Western Thrace (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Western_Thrace"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "western-thrace"
+     ],
+     "owner": "France",
+     "source": {
+      "title": "Western Thrace (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Western_Thrace"
+     },
+     "territory": "Inter-Allied Thrace"
+    }
+   ]
+  },
+  {
    "date": "1920-04-11",
    "what": "The French garrison of Urfa leaves the town after a two-month siege",
    "source": {
@@ -959,6 +1346,37 @@
    ]
   },
   {
+   "date": "1919-11-27",
+   "what": "By the Treaty of Neuilly Bulgaria gives up Western Thrace to the Allies",
+   "source": {
+    "title": "Treaty of Neuilly-sur-Seine (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Neuilly-sur-Seine"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "western-thrace"
+     ],
+     "owner": "Bulgaria",
+     "source": {
+      "title": "Western Thrace (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Western_Thrace"
+     },
+     "hatch": {
+      "by": "France",
+      "since": "1919-10-04",
+      "note": "Run by an inter-allied administration under a French general",
+      "source": {
+       "title": "Western Thrace (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Western_Thrace"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
    "date": "1919-11-05",
    "what": "British troops hand Antep and Kilis over to the French",
    "source": {
@@ -1034,6 +1452,27 @@
        "title": "Battle of Urfa (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Battle_of_Urfa"
       }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1919-10-04",
+   "what": "Inter-allied troops under a French general take over Western Thrace from Bulgaria",
+   "source": {
+    "title": "Western Thrace (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Western_Thrace"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "western-thrace"
+     ],
+     "owner": "Bulgaria",
+     "source": {
+      "title": "Western Thrace (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Western_Thrace"
      }
     }
    ]
@@ -1283,6 +1722,37 @@
    ]
   },
   {
+   "date": "1918-09-30",
+   "what": "Bulgaria signs the Armistice of Salonica and leaves eastern Macedonia",
+   "source": {
+    "title": "Armistice of Salonica (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Armistice_of_Salonica"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GRC-3001"
+     ],
+     "owner": "Greece",
+     "source": {
+      "title": "Macedonian front (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Macedonian_front"
+     },
+     "hatch": {
+      "by": "Bulgaria",
+      "since": "1916-08-18",
+      "note": "Eastern Macedonia, Kavala and Drama, occupied by Bulgaria in the First World War",
+      "source": {
+       "title": "Macedonian front (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Macedonian_front"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
    "date": "1918-03-12",
    "what": "The Ottoman army takes back Erzurum, Trabzon, Erzincan and Van as the Russian army falls apart",
    "source": {
@@ -1389,6 +1859,27 @@
        "title": "Battle of Erzincan (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Battle_of_Erzincan"
       }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1916-08-18",
+   "what": "Bulgarian troops occupy eastern Macedonia as far as Kavala",
+   "source": {
+    "title": "Macedonian front (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Macedonian_front"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GRC-3001"
+     ],
+     "owner": "Greece",
+     "source": {
+      "title": "Macedonian front (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Macedonian_front"
      }
     }
    ]
@@ -1526,6 +2017,162 @@
    ]
   },
   {
+   "date": "1914-02-13",
+   "what": "The Great Powers award the northern Aegean islands to Greece",
+   "source": {
+    "title": "First Balkan War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/First_Balkan_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GRC-2988"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Greece"
+     },
+     "hatch": {
+      "by": "Greece",
+      "since": "1912-10-21",
+      "note": "Taken by the Greek navy in the First Balkan War; the Great Powers gave the islands to Greece in February 1914",
+      "source": {
+       "title": "First Balkan War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/First_Balkan_War"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1913-12-01",
+   "what": "Crete is formally united with Greece",
+   "source": {
+    "title": "Cretan State (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Cretan_State"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "GRC-2990"
+     ],
+     "owner": "Cretan State",
+     "source": {
+      "title": "Cretan State (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cretan_State"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1913-08-10",
+   "what": "By the Treaty of Bucharest eastern Macedonia, with Kavala and Drama, goes to Greece",
+   "source": {
+    "title": "Treaty of Bucharest (1913) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Bucharest_(1913)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GRC-3001"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Greece"
+     },
+     "hatch": {
+      "by": "Bulgaria",
+      "since": "1912-11-06",
+      "note": "Taken by the Bulgarian army in the First Balkan War",
+      "source": {
+       "title": "First Balkan War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/First_Balkan_War"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1913-05-30",
+   "what": "By the Treaty of London the Ottoman Empire gives up its land west of the Enos-Midia line",
+   "source": {
+    "title": "Treaty of London (1913) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_London_(1913)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GRC-2991",
+      "GRC-2892",
+      "GRC-2992"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Greece"
+     },
+     "hatch": {
+      "by": "Greece",
+      "since": "1912-10-26",
+      "note": "Taken by the Greek army in the First Balkan War",
+      "source": {
+       "title": "First Balkan War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/First_Balkan_War"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "GRC-2949"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Greece"
+     },
+     "hatch": {
+      "by": "Greece",
+      "since": "1913-03-06",
+      "note": "Taken by the Greek army with Ioannina in the First Balkan War",
+      "source": {
+       "title": "Battle of Bizani (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Battle_of_Bizani"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "western-thrace"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Greece"
+     },
+     "hatch": {
+      "by": "Bulgaria",
+      "since": "1912-11-06",
+      "note": "Taken by the Bulgarian army in the First Balkan War",
+      "source": {
+       "title": "First Balkan War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/First_Balkan_War"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
    "date": "1913-05-05",
    "what": "Ibn Saud takes Hofuf and drives the Ottoman garrison out of al-Hasa",
    "source": {
@@ -1542,6 +2189,114 @@
      "source": {
       "title": "Najd Sanjak (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Najd_Sanjak"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1913-03-06",
+   "what": "The Greek army takes Ioannina",
+   "source": {
+    "title": "Battle of Bizani (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Bizani"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "GRC-2949"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Greece"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1912-11-24",
+   "what": "The assembly of Samos declares union with Greece",
+   "source": {
+    "title": "Principality of Samos (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Principality_of_Samos"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "samos"
+     ],
+     "owner": "Principality of Samos",
+     "source": {
+      "title": "Principality of Samos (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Principality_of_Samos"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1912-11-06",
+   "what": "Bulgarian troops reach the Aegean at Kavala and in Western Thrace",
+   "source": {
+    "title": "First Balkan War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/First_Balkan_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "GRC-3001",
+      "western-thrace"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Greece"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1912-10-26",
+   "what": "The Greek army enters Thessaloniki",
+   "source": {
+    "title": "First Balkan War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/First_Balkan_War"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "GRC-2991",
+      "GRC-2892",
+      "GRC-2992"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Greece"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1912-10-21",
+   "what": "The Greek navy takes Lemnos, then Lesbos and Chios",
+   "source": {
+    "title": "First Balkan War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/First_Balkan_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GRC-2988"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Greece"
      }
     }
    ]
@@ -1699,6 +2454,27 @@
    ]
   },
   {
+   "date": "1912-05-04",
+   "what": "Italian troops land on Rhodes",
+   "source": {
+    "title": "Italo-Turkish War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Italo-Turkish_War"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "dodecanese"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Greece"
+     }
+    }
+   ]
+  },
+  {
    "date": "1911-10-21",
    "what": "Italian troops land at Homs",
    "source": {
@@ -1821,6 +2597,100 @@
      "source": {
       "title": "Asir Sanjak (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Asir_Sanjak"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1898-12-09",
+   "what": "The last Ottoman troops have left Crete, which becomes an autonomous Cretan State under Prince George of Greece",
+   "source": {
+    "title": "Cretan State (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Cretan_State"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GRC-2990"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Greece"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1898-06-06",
+   "what": "The Ottoman army leaves Thessaly after the peace of 1897",
+   "source": {
+    "title": "Greco-Turkish War (1897) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Greco-Turkish_War_(1897)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "GRC-2900"
+     ],
+     "owner": "Greece",
+     "source": {
+      "title": "Greco-Turkish War (1897) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Greco-Turkish_War_(1897)"
+     },
+     "hatch": {
+      "by": "Turkey",
+      "since": "1897-04-27",
+      "note": "Occupied by the Ottoman army in the Greco-Turkish War of 1897 until the evacuation of 1898",
+      "source": {
+       "title": "Greco-Turkish War (1897) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Greco-Turkish_War_(1897)"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1897-04-27",
+   "what": "The Ottoman army takes Larissa",
+   "source": {
+    "title": "Greco-Turkish War (1897) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Greco-Turkish_War_(1897)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GRC-2900"
+     ],
+     "owner": "Greece",
+     "source": {
+      "title": "Greco-Turkish War (1897) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Greco-Turkish_War_(1897)"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1881-07-02",
+   "what": "By the Convention of Constantinople the Ottoman Empire gives Thessaly and Arta to Greece",
+   "source": {
+    "title": "Convention of Constantinople (1881) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Convention_of_Constantinople_(1881)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GRC-2900"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Greece"
      }
     }
    ]
@@ -2089,6 +2959,36 @@
    ]
   },
   {
+   "date": "1840-12-29",
+   "what": "Muhammad Ali hands Crete back to the sultan",
+   "source": {
+    "title": "Ottoman Crete (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Ottoman_Crete"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "GRC-2990"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Greece"
+     },
+     "hatch": {
+      "by": "Egypt",
+      "since": "1830-01-01",
+      "note": "Given by the sultan to Muhammad Ali of Egypt for his help in the Greek war; handed back in 1840",
+      "source": {
+       "title": "Ottoman Crete (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Ottoman_Crete"
+      }
+     }
+    }
+   ]
+  },
+  {
    "date": "1840-06-01",
    "what": "Egyptian troops are called back from eastern Arabia; al-Hasa returns to the Saudi emirs",
    "source": {
@@ -2222,6 +3122,36 @@
    ]
   },
   {
+   "date": "1832-12-10",
+   "what": "Samos becomes an autonomous principality under Ottoman suzerainty",
+   "source": {
+    "title": "Principality of Samos (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Principality_of_Samos"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "samos"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Greece"
+     },
+     "hatch": {
+      "by": "Greece",
+      "since": "1821-04-18",
+      "note": "Held by the Greek insurgents of the War of Independence",
+      "source": {
+       "title": "Greek War of Independence (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Greek_War_of_Independence"
+      }
+     }
+    }
+   ]
+  },
+  {
    "date": "1832-07-29",
    "what": "Ibrahim Pasha wins at Belen and enters Cilicia",
    "source": {
@@ -2271,6 +3201,76 @@
    ]
   },
   {
+   "date": "1830-02-03",
+   "what": "By the London Protocol the Great Powers recognise Greece as an independent state",
+   "source": {
+    "title": "London Protocol (1830) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/London_Protocol_(1830)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "GRC-2885"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Greece"
+     },
+     "hatch": {
+      "by": "Greece",
+      "since": "1828-10-07",
+      "note": "Held by the Greeks after the Egyptian army left, with French troops of the Morea expedition",
+      "source": {
+       "title": "Morea expedition (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Morea_expedition"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "GRC-2886",
+      "GRC-2989",
+      "GRC-2884"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Greece"
+     },
+     "hatch": {
+      "by": "Greece",
+      "since": "1829-09-12",
+      "note": "Held by the Greek insurgents of the War of Independence",
+      "source": {
+       "title": "Greek War of Independence (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Greek_War_of_Independence"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "GRC-3013"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Greece"
+     },
+     "hatch": {
+      "by": "Greece",
+      "since": "1821-03-25",
+      "note": "Held by the Greek insurgents of the War of Independence",
+      "source": {
+       "title": "Greek War of Independence (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Greek_War_of_Independence"
+      }
+     }
+    }
+   ]
+  },
+  {
    "date": "1830-01-01",
    "what": "The Saudi emir Turki defeats the Bani Khalid and takes al-Hasa",
    "source": {
@@ -2287,6 +3287,188 @@
      "source": {
       "title": "Bani Khalid Emirate (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Bani_Khalid_Emirate"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1830-01-01",
+   "what": "The sultan gives Crete to Muhammad Ali of Egypt",
+   "source": {
+    "title": "Ottoman Crete (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Ottoman_Crete"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "GRC-2990"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Greece"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1829-09-12",
+   "what": "The battle of Petra, the last of the war, leaves eastern mainland Greece to the Greeks",
+   "source": {
+    "title": "Battle of Petra (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Petra"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GRC-2886",
+      "GRC-2989",
+      "GRC-2884"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Greece"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1828-10-07",
+   "what": "The Egyptian army leaves the Peloponnese as French troops land",
+   "source": {
+    "title": "Morea expedition (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Morea_expedition"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GRC-2885"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Greece"
+     },
+     "hatch": {
+      "by": "Egypt",
+      "since": "1825-02-24",
+      "note": "Retaken for the sultan by Ibrahim Pasha and his Egyptian army, which held most of the Peloponnese until the French landed in 1828",
+      "source": {
+       "title": "Egyptian intervention in the Greek War of Independence (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Egyptian_intervention_in_the_Greek_War_of_Independence"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1827-06-05",
+   "what": "The Acropolis of Athens surrenders: the Ottomans hold mainland Greece again",
+   "source": {
+    "title": "Siege of the Acropolis (1826–1827) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_the_Acropolis_(1826–1827)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GRC-2886",
+      "GRC-2989",
+      "GRC-2884"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Greece"
+     },
+     "hatch": {
+      "by": "Greece",
+      "since": "1821-03-25",
+      "note": "Held by the Greek insurgents of the War of Independence",
+      "source": {
+       "title": "Greek War of Independence (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Greek_War_of_Independence"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1825-02-24",
+   "what": "Ibrahim Pasha lands in the Peloponnese with an Egyptian army",
+   "source": {
+    "title": "Egyptian intervention in the Greek War of Independence (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Egyptian_intervention_in_the_Greek_War_of_Independence"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GRC-2885"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Greece"
+     },
+     "hatch": {
+      "by": "Greece",
+      "since": "1821-03-25",
+      "note": "Held by the Greek insurgents of the War of Independence",
+      "source": {
+       "title": "Greek War of Independence (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Greek_War_of_Independence"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1821-04-18",
+   "what": "Samos rises against the Ottomans",
+   "source": {
+    "title": "Greek War of Independence (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Greek_War_of_Independence"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "samos"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Greece"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1821-03-25",
+   "what": "The Greek War of Independence breaks out in the Peloponnese",
+   "source": {
+    "title": "Greek War of Independence (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Greek_War_of_Independence"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "GRC-2885",
+      "GRC-2886",
+      "GRC-2989",
+      "GRC-2884",
+      "GRC-3013"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Greece"
      }
     }
    ]
