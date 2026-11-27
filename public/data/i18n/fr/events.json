@@ -3878,5 +3878,80 @@
   "title": "La Bulgarie devient une république populaire, 1946",
   "place": "Sofia",
   "summary": "Occupée par les Soviétiques depuis 1944, la Bulgarie vote l’abolition de la monarchie par référendum le 8 septembre 1946. Le tsar Siméon II, âgé de neuf ans, part en exil, et le communiste Georgi Dimitrov dirige la nouvelle République populaire, qui dure jusqu’en 1990."
+ },
+ "italian-invasion-of-albania-1939": {
+  "title": "L’Italie envahit l’Albanie, avril 1939",
+  "place": "Tirana",
+  "summary": "Le 7 avril 1939, les troupes italiennes débarquent à Durrës et dans d’autres ports et prennent Tirana en quelques jours. Le roi Zog s’enfuit à l’étranger, et une assemblée fantoche offre la couronne à Victor-Emmanuel III d’Italie. L’Albanie devient un protectorat italien, dirigé par un gouverneur italien."
+ },
+ "greco-italian-war-albania-1940": {
+  "title": "L’armée grecque avance dans le sud de l’Albanie, 1940 – 1941",
+  "place": "Korçë",
+  "summary": "L’Italie attaque la Grèce depuis l’Albanie en octobre 1940, mais les Grecs repoussent l’invasion et avancent en Albanie, prenant Korçë le 22 novembre et Gjirokastër en décembre. Ils tiennent le sud du pays pendant l’hiver, jusqu’à ce que l’invasion allemande de la Grèce, en avril 1941, les oblige à se retirer."
+ },
+ "invasion-of-yugoslavia-1941": {
+  "title": "L’Axe envahit et dépèce la Yougoslavie, avril 1941",
+  "place": "Belgrade",
+  "summary": "L’Allemagne, l’Italie et la Hongrie envahissent la Yougoslavie le 6 avril 1941, et son armée capitule le 17 avril tandis que le roi et le gouvernement partent en exil. Le pays est dépecé : la Bosnie va au nouvel État indépendant de Croatie, la Serbie passe sous administration militaire allemande, le Monténégro sous l’Italie, la plus grande partie du Kosovo et la Macédoine occidentale sont rattachées à l’Albanie sous domination italienne, et la Bulgarie prend le reste de la Macédoine."
+ },
+ "german-takeover-of-italian-zones-1943": {
+  "title": "L’Allemagne reprend les zones italiennes, septembre 1943",
+  "place": "Albanie et Monténégro",
+  "summary": "Quand l’Italie capitule le 8 septembre 1943, les troupes allemandes désarment les garnisons italiennes et occupent l’Albanie, le Monténégro, le Kosovo et la Macédoine occidentale. En Albanie, elles mettent en place un gouvernement nominalement indépendant sous leur contrôle, jusqu’à leur retrait à la fin de 1944."
+ },
+ "liberation-of-belgrade-1944": {
+  "title": "Belgrade est libérée, octobre 1944",
+  "place": "Belgrade",
+  "summary": "La Bulgarie change de camp en septembre 1944 et ses troupes quittent la Serbie et la Macédoine. Les partisans yougoslaves et l’Armée rouge prennent ensuite Belgrade le 20 octobre, et l’armée allemande se retire de Macédoine, du Kosovo et du Monténégro avant la fin de l’année."
+ },
+ "liberation-of-albania-1944": {
+  "title": "Les communistes prennent le pouvoir en Albanie, 1944 – 1946",
+  "place": "Tirana",
+  "summary": "Les partisans d’Enver Hoxha, dirigés par les communistes, prennent Tirana le 17 novembre 1944, et les dernières troupes allemandes quittent l’Albanie le 29 novembre. Le gouvernement provisoire de Hoxha dirige le pays, proclamé République populaire d’Albanie le 11 janvier 1946 ; la monarchie est abolie."
+ },
+ "federal-peoples-republic-of-yugoslavia-1945": {
+  "title": "La Yougoslavie devient une république populaire fédérative, 1945",
+  "place": "Belgrade",
+  "summary": "Après la victoire des partisans, l’assemblée élue en novembre 1945 abolit la monarchie et proclame le 29 novembre la République populaire fédérative de Yougoslavie, sous Josip Broz Tito. C’est une fédération de six républiques : Serbie, Croatie, Slovénie, Bosnie-Herzégovine, Monténégro et Macédoine, avec le Kosovo et la Voïvodine comme régions autonomes de la Serbie."
+ },
+ "end-of-communism-in-albania-1991": {
+  "title": "Fin du régime communiste en Albanie, 1991",
+  "place": "Tirana",
+  "summary": "Après les manifestations étudiantes et les départs massifs vers l’étranger de 1990, les dirigeants communistes albanais autorisent d’autres partis. Après les premières élections pluralistes, la République populaire socialiste devient la République d’Albanie le 29 avril 1991, et le Parti démocrate prend le pouvoir en 1992."
+ },
+ "macedonia-independence-1991": {
+  "title": "La Macédoine quitte la Yougoslavie, 1991",
+  "place": "Skopje",
+  "summary": "Par le référendum du 8 septembre 1991, la Macédoine vote son indépendance vis-à-vis d’une Yougoslavie en train d’éclater. L’armée yougoslave se retire pacifiquement au début de 1992, et la République de Macédoine entre à l’ONU en 1993 sous un nom provisoire, en raison d’un différend avec la Grèce."
+ },
+ "bosnian-war-1992": {
+  "title": "L’indépendance de la Bosnie et la guerre de Bosnie, 1992 – 1995",
+  "place": "Bosnie-Herzégovine",
+  "summary": "La Bosnie-Herzégovine proclame son indépendance vis-à-vis de la Yougoslavie le 3 mars 1992. Les forces serbes de Bosnie, soutenues par Belgrade, prennent la plus grande partie du nord et de l’est pour leur République serbe autoproclamée, et les Croates de Bosnie créent l’Herceg-Bosna à l’ouest. Après que l’accord de Washington de 1994 a mis fin aux combats entre Croates et Bosniaques, les accords de Dayton de décembre 1995 mettent fin à la guerre et divisent le pays en deux entités."
+ },
+ "kosovo-war-1999": {
+  "title": "La guerre du Kosovo et l’administration de l’ONU, 1998 – 1999",
+  "place": "Kosovo",
+  "summary": "Les combats entre l’Armée de libération du Kosovo et les forces serbes s’intensifient en 1998. Après 78 jours de bombardements de l’OTAN à partir de mars 1999, la Yougoslavie accepte de retirer ses forces, et le 10 juin la résolution 1244 du Conseil de sécurité place le Kosovo sous administration des Nations unies (MINUK), tout en le laissant formellement à la Serbie."
+ },
+ "serbia-and-montenegro-2003": {
+  "title": "La Yougoslavie devient la Serbie-et-Monténégro, 2003",
+  "place": "Serbie-et-Monténégro",
+  "summary": "Le 4 février 2003, la République fédérale de Yougoslavie, formée de la Serbie et du Monténégro depuis 1992, devient une union plus lâche, la Communauté d’États de Serbie-et-Monténégro, et le nom de Yougoslavie disparaît. La nouvelle charte permet à chaque république de partir au bout de trois ans."
+ },
+ "montenegro-independence-2006": {
+  "title": "Le Monténégro et la Serbie se séparent, 2006",
+  "place": "Podgorica",
+  "summary": "Lors du référendum du 21 mai 2006, 55,5 % des électeurs monténégrins choisissent l’indépendance, juste au-dessus des 55 % exigés par l’Union européenne. Le Monténégro proclame son indépendance le 3 juin, et la Serbie devient le successeur de la Communauté d’États le 5 juin."
+ },
+ "kosovo-independence-2008": {
+  "title": "Le Kosovo proclame son indépendance, 2008",
+  "place": "Pristina",
+  "summary": "Le 17 février 2008, l’Assemblée du Kosovo proclame l’indépendance vis-à-vis de la Serbie, mettant fin à neuf ans d’administration des Nations unies. De nombreux pays reconnaissent la nouvelle république, mais pas la Serbie, la Russie et d’autres ; en 2010, la Cour internationale de justice estime que la déclaration n’a pas violé le droit international."
+ },
+ "prespa-agreement-2019": {
+  "title": "La Macédoine devient la Macédoine du Nord, 2019",
+  "place": "lac Prespa",
+  "summary": "L’accord de Prespa, signé avec la Grèce en juin 2018 au bord du lac Prespa, met fin à un différend de 27 ans sur le nom du pays. Le 12 février 2019, la République de Macédoine devient la République de Macédoine du Nord, et la Grèce lève son veto à son entrée dans l’OTAN, faite en 2020."
  }
 }

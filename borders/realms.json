@@ -30,7 +30,83 @@
   "wikipedia": "Albania",
   "wikidata": "Q222",
   "fr": "Albanie",
-  "es": "Albania"
+  "es": "Albania",
+  "periods": [
+   {
+    "from": "1912-11-28",
+    "name": "Independent Albania",
+    "wikipedia": "Independent Albania",
+    "fr": "Albanie indépendante",
+    "es": "Albania Independiente",
+    "label": "Independent Albania",
+    "labelFr": "Albanie indépendante",
+    "labelEs": "Albania Independiente",
+    "note": "Proclaimed at Vlorë on 28 November 1912"
+   },
+   {
+    "from": "1914-03-07",
+    "name": "Principality of Albania",
+    "wikipedia": "Principality of Albania",
+    "fr": "Principauté d'Albanie",
+    "es": "Principado de Albania",
+    "label": "Principality of Albania",
+    "labelFr": "Principauté d'Albanie",
+    "labelEs": "Principado de Albania",
+    "note": "Under Prince Wilhelm of Wied, set up by the Great Powers"
+   },
+   {
+    "from": "1925-01-31",
+    "name": "Albanian Republic",
+    "wikipedia": "Albanian Republic",
+    "fr": "République albanaise",
+    "es": "República de Albania",
+    "label": "Albanian Republic",
+    "labelFr": "République albanaise",
+    "labelEs": "República de Albania",
+    "note": "A republic under Ahmet Zogu"
+   },
+   {
+    "from": "1928-09-01",
+    "name": "Albanian Kingdom",
+    "wikipedia": "Albanian Kingdom (1928–1939)",
+    "fr": "Royaume albanais",
+    "es": "Reino de Albania",
+    "label": "Albanian Kingdom",
+    "labelFr": "Royaume albanais",
+    "labelEs": "Reino de Albania",
+    "note": "Zogu crowned himself King Zog I; under Italian and then German rule from 1939 to 1944"
+   },
+   {
+    "from": "1946-01-11",
+    "name": "People's Republic of Albania",
+    "wikipedia": "People's Socialist Republic of Albania",
+    "fr": "République populaire d'Albanie",
+    "es": "República Popular de Albania",
+    "label": "People's Republic of Albania",
+    "labelFr": "République populaire d'Albanie",
+    "labelEs": "República Popular de Albania",
+    "note": "Communist republic under Enver Hoxha"
+   },
+   {
+    "from": "1976-12-28",
+    "name": "People's Socialist Republic of Albania",
+    "wikipedia": "People's Socialist Republic of Albania",
+    "fr": "République populaire socialiste d'Albanie",
+    "es": "República Popular Socialista de Albania",
+    "label": "People's Socialist Republic of Albania",
+    "labelFr": "République populaire socialiste d'Albanie",
+    "labelEs": "República Popular Socialista de Albania",
+    "note": "Communist republic until 1991"
+   },
+   {
+    "from": "1991-04-29",
+    "name": "Albania",
+    "wikipedia": "Albania",
+    "fr": "Albanie",
+    "es": "Albania",
+    "note": "Republic of Albania since 1991"
+   }
+  ]
  },
  "Algeria": {
   "wikipedia": "Algeria",
@@ -350,7 +426,31 @@
   "wikipedia": "Bosnia and Herzegovina",
   "wikidata": "Q225",
   "fr": "Bosnie-Herzégovine",
-  "es": "Bosnia y Herzegovina"
+  "es": "Bosnia y Herzegovina",
+  "group": "Yugoslavia",
+  "groupFrom": "1945-11-29",
+  "groupUntil": "1992-03-03",
+  "periods": [
+   {
+    "from": "1945-11-29",
+    "name": "Socialist Republic of Bosnia and Herzegovina",
+    "wikipedia": "Socialist Republic of Bosnia and Herzegovina",
+    "fr": "République socialiste de Bosnie-Herzégovine",
+    "es": "República Socialista de Bosnia y Herzegovina",
+    "label": "Socialist Republic of Bosnia and Herzegovina",
+    "labelFr": "République socialiste de Bosnie-Herzégovine",
+    "labelEs": "República Socialista de Bosnia y Herzegovina",
+    "note": "A republic of Yugoslavia (People's Republic until 1963)"
+   },
+   {
+    "from": "1992-03-03",
+    "name": "Bosnia and Herzegovina",
+    "wikipedia": "Bosnia and Herzegovina",
+    "fr": "Bosnie-Herzégovine",
+    "es": "Bosnia y Herzegovina",
+    "note": "Independent from 3 March 1992"
+   }
+  ]
  },
  "Botswana": {
   "wikipedia": "Botswana",
@@ -2352,7 +2452,31 @@
   "wikipedia": "Montenegro",
   "wikidata": "Q236",
   "fr": "Monténégro",
-  "es": "Montenegro"
+  "es": "Montenegro",
+  "group": "Yugoslavia",
+  "groupFrom": "1945-11-29",
+  "groupUntil": "2006-06-03",
+  "periods": [
+   {
+    "from": "1945-11-29",
+    "name": "Socialist Republic of Montenegro",
+    "wikipedia": "Socialist Republic of Montenegro",
+    "fr": "République socialiste du Monténégro",
+    "es": "República Socialista de Montenegro",
+    "label": "Socialist Republic of Montenegro",
+    "labelFr": "République socialiste du Monténégro",
+    "labelEs": "República Socialista de Montenegro",
+    "note": "A republic of Yugoslavia (People's Republic until 1963)"
+   },
+   {
+    "from": "1992-04-27",
+    "name": "Montenegro",
+    "wikipedia": "Montenegro",
+    "fr": "Monténégro",
+    "es": "Montenegro",
+    "note": "Republic of Montenegro, with Serbia in a Yugoslav federation until it voted for independence in 2006"
+   }
+  ]
  },
  "Montserrat": {
   "wikipedia": "Montserrat",
@@ -2493,7 +2617,42 @@
   "wikipedia": "North Macedonia",
   "wikidata": "Q221",
   "fr": "Macédoine du Nord",
-  "es": "Macedonia del Norte"
+  "es": "Macedonia del Norte",
+  "group": "Yugoslavia",
+  "groupFrom": "1945-11-29",
+  "groupUntil": "1991-09-08",
+  "periods": [
+   {
+    "from": "1945-11-29",
+    "name": "Socialist Republic of Macedonia",
+    "wikipedia": "Socialist Republic of Macedonia",
+    "fr": "République socialiste de Macédoine",
+    "es": "República Socialista de Macedonia",
+    "label": "Socialist Republic of Macedonia",
+    "labelFr": "République socialiste de Macédoine",
+    "labelEs": "República Socialista de Macedonia",
+    "note": "A republic of Yugoslavia (People's Republic until 1963)"
+   },
+   {
+    "from": "1991-09-08",
+    "name": "Republic of Macedonia",
+    "wikipedia": "North Macedonia",
+    "fr": "République de Macédoine",
+    "es": "República de Macedonia",
+    "label": "Republic of Macedonia",
+    "labelFr": "République de Macédoine",
+    "labelEs": "República de Macedonia",
+    "note": "Independent from 8 September 1991"
+   },
+   {
+    "from": "2019-02-12",
+    "name": "North Macedonia",
+    "wikipedia": "North Macedonia",
+    "fr": "Macédoine du Nord",
+    "es": "Macedonia del Norte",
+    "note": "Renamed by the Prespa Agreement in 2019"
+   }
+  ]
  },
  "North Vietnam": {
   "wikipedia": "North Vietnam",
@@ -3010,7 +3169,31 @@
   "wikipedia": "Serbia",
   "wikidata": "Q403",
   "fr": "Serbie",
-  "es": "Serbia"
+  "es": "Serbia",
+  "group": "Yugoslavia",
+  "groupFrom": "1945-11-29",
+  "groupUntil": "2006-06-05",
+  "periods": [
+   {
+    "from": "1945-11-29",
+    "name": "Socialist Republic of Serbia",
+    "wikipedia": "Socialist Republic of Serbia",
+    "fr": "République socialiste de Serbie",
+    "es": "República Socialista de Serbia",
+    "label": "Socialist Republic of Serbia",
+    "labelFr": "République socialiste de Serbie",
+    "labelEs": "República Socialista de Serbia",
+    "note": "A republic of Yugoslavia (People's Republic until 1963), with Kosovo and Vojvodina as autonomous provinces"
+   },
+   {
+    "from": "1990-09-28",
+    "name": "Serbia",
+    "wikipedia": "Serbia",
+    "fr": "Serbie",
+    "es": "Serbia",
+    "note": "Republic of Serbia from 1990; with Montenegro in a Yugoslav federation until 2006"
+   }
+  ]
  },
  "Seychelles": {
   "wikipedia": "Seychelles",
@@ -5223,5 +5406,65 @@
   "fr": "Roumélie orientale",
   "es": "Rumelia Oriental",
   "note": "An autonomous Ottoman province with a Christian governor, united with Bulgaria in 1885"
+ },
+ "Yugoslavia": {
+  "wikipedia": "Yugoslavia",
+  "wikidata": "Q36704",
+  "fr": "Yougoslavie",
+  "es": "Yugoslavia",
+  "note": "The kingdom of the South Slavs from 1918; from 1945 a federation of six republics, shown as a group, until it broke up in 1991-92 (Serbia and Montenegro kept the name until 2003)",
+  "periods": [
+   {
+    "from": "1918-12-01",
+    "name": "Kingdom of Serbs, Croats and Slovenes",
+    "wikipedia": "Kingdom of Yugoslavia",
+    "fr": "Royaume des Serbes, Croates et Slovènes",
+    "es": "Reino de los Serbios, Croatas y Eslovenos",
+    "label": "Kingdom of Serbs, Croats and Slovenes",
+    "labelFr": "Royaume des Serbes, Croates et Slovènes",
+    "labelEs": "Reino de los Serbios, Croatas y Eslovenos",
+    "note": "Proclaimed on 1 December 1918 under the Serbian king"
+   },
+   {
+    "from": "1929-10-03",
+    "name": "Kingdom of Yugoslavia",
+    "wikipedia": "Kingdom of Yugoslavia",
+    "fr": "Royaume de Yougoslavie",
+    "es": "Reino de Yugoslavia",
+    "label": "Kingdom of Yugoslavia",
+    "labelFr": "Royaume de Yougoslavie",
+    "labelEs": "Reino de Yugoslavia",
+    "note": "Renamed by King Alexander in 1929; its government went into exile in 1941"
+   },
+   {
+    "from": "1945-03-07",
+    "name": "Democratic Federal Yugoslavia",
+    "wikipedia": "Democratic Federal Yugoslavia",
+    "fr": "Yougoslavie fédérale démocratique",
+    "es": "Yugoslavia Federal Democrática",
+    "label": "Democratic Federal Yugoslavia",
+    "labelFr": "Yougoslavie fédérale démocratique",
+    "labelEs": "Yugoslavia Federal Democrática",
+    "note": "The joint royal and Partisan government of 1945, until the republic was proclaimed"
+   }
+  ]
+ },
+ "Independent State of Croatia": {
+  "wikipedia": "Independent State of Croatia",
+  "fr": "État indépendant de Croatie",
+  "es": "Estado Independiente de Croacia",
+  "note": "A puppet state of Germany and Italy, 1941-45, which took in all of Bosnia and Herzegovina"
+ },
+ "Republika Srpska": {
+  "wikipedia": "Republika Srpska",
+  "fr": "République serbe de Bosnie",
+  "es": "República Srpska",
+  "note": "The Bosnian Serb republic proclaimed in 1992; since the Dayton Agreement of 1995 one of the two entities of Bosnia and Herzegovina"
+ },
+ "Croatian Republic of Herzeg-Bosnia": {
+  "wikipedia": "Croatian Republic of Herzeg-Bosnia",
+  "fr": "République croate d'Herceg-Bosna",
+  "es": "República Croata de Herzeg-Bosnia",
+  "note": "The Bosnian Croat state proclaimed in 1991-92, folded into the Federation of Bosnia and Herzegovina by the Washington Agreement of 1994"
  }
 }

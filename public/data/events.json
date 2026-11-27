@@ -14595,6 +14595,294 @@
    "summary": "Under Soviet occupation since 1944, Bulgaria votes to abolish the monarchy in a referendum on 8 September 1946. The nine-year-old Tsar Simeon II goes into exile, and the communist Georgi Dimitrov leads the new People's Republic, which lasts until 1990.",
    "wikipedia": "People's_Republic_of_Bulgaria",
    "search": "People's Republic of Bulgaria referendum 8 September 1946 monarchy abolished Simeon II exile 15 September Georgi Dimitrov communist 1990 Republic of Bulgaria"
+  },
+  {
+   "id": "italian-invasion-of-albania-1939",
+   "kind": "war",
+   "year": 1939,
+   "title": "Italy invades Albania, April 1939",
+   "place": "Tirana",
+   "lonLat": [
+    19.82,
+    41.33
+   ],
+   "civs": [
+    "albania",
+    "italy"
+   ],
+   "summary": "On 7 April 1939 Italian troops land at Durrës and other ports and take Tirana within days. King Zog flees abroad, and a puppet assembly offers the crown to Victor Emmanuel III of Italy. Albania becomes an Italian protectorate, run by an Italian governor.",
+   "wikipedia": "Italian_invasion_of_Albania",
+   "search": "Italian invasion of Albania 7 April 1939 Durrës King Zog flees Victor Emmanuel III king of Albania protectorate Francesco Jacomoni"
+  },
+  {
+   "id": "greco-italian-war-albania-1940",
+   "kind": "war",
+   "year": 1940,
+   "to": 1941,
+   "title": "The Greek army pushes into southern Albania, 1940 – 1941",
+   "place": "Korçë",
+   "lonLat": [
+    20.78,
+    40.62
+   ],
+   "civs": [
+    "greece",
+    "italy",
+    "albania"
+   ],
+   "summary": "Italy attacks Greece from Albania in October 1940, but the Greeks throw the invasion back and advance into Albania, taking Korçë on 22 November and Gjirokastër in December. They hold the south of the country through the winter, until the German invasion of Greece in April 1941 forces them to withdraw.",
+   "wikipedia": "Greco-Italian_War",
+   "search": "Greco-Italian War October 1940 Italian attack from Albania Greek counter-offensive Korçë 22 November Gjirokastër Sarandë northern Epirus April 1941 German invasion"
+  },
+  {
+   "id": "invasion-of-yugoslavia-1941",
+   "kind": "war",
+   "year": 1941,
+   "title": "The Axis invades and carves up Yugoslavia, April 1941",
+   "place": "Belgrade",
+   "lonLat": [
+    20.4,
+    44.6
+   ],
+   "civs": [
+    "yugoslavia",
+    "germany",
+    "italy",
+    "bulgaria"
+   ],
+   "summary": "Germany, Italy and Hungary invade Yugoslavia on 6 April 1941, and its army surrenders on 17 April while the king and government go into exile. The country is carved up: Bosnia goes to the new Independent State of Croatia, Serbia is put under German military rule, Montenegro under Italy, most of Kosovo and western Macedonia are joined to Italian-ruled Albania, and Bulgaria takes the rest of Macedonia.",
+   "wikipedia": "Invasion_of_Yugoslavia",
+   "search": "Invasion of Yugoslavia April War 6 April 1941 bombing of Belgrade surrender 17 April partition Independent State of Croatia German Serbia Italian Montenegro Bulgarian Macedonia Kosovo Albania"
+  },
+  {
+   "id": "german-takeover-of-italian-zones-1943",
+   "kind": "war",
+   "year": 1943,
+   "title": "Germany takes over the Italian zones, September 1943",
+   "place": "Albania and Montenegro",
+   "lonLat": [
+    19.6,
+    41.9
+   ],
+   "civs": [
+    "germany",
+    "italy",
+    "albania",
+    "yugoslavia"
+   ],
+   "summary": "When Italy surrenders on 8 September 1943, German troops disarm the Italian garrisons and occupy Albania, Montenegro, Kosovo and western Macedonia. In Albania they set up a nominally independent government under their control, until they withdraw in late 1944.",
+   "wikipedia": "German_occupation_of_Albania",
+   "search": "Italian armistice 8 September 1943 German occupation of Albania Montenegro Kosovo western Macedonia disarm Italian troops regency council"
+  },
+  {
+   "id": "liberation-of-belgrade-1944",
+   "kind": "battle",
+   "year": 1944,
+   "title": "Belgrade is liberated, October 1944",
+   "place": "Belgrade",
+   "lonLat": [
+    20.5,
+    44.85
+   ],
+   "civs": [
+    "yugoslavia",
+    "germany",
+    "soviet-union",
+    "bulgaria"
+   ],
+   "summary": "Bulgaria changes sides in September 1944 and its troops leave Serbia and Macedonia. Yugoslav Partisans and the Soviet Red Army then take Belgrade on 20 October, and the German army pulls out of Macedonia, Kosovo and Montenegro by the end of the year.",
+   "wikipedia": "Belgrade_offensive",
+   "search": "Belgrade offensive liberation 20 October 1944 Partisans Red Army Bulgaria changes sides September 1944 German withdrawal Macedonia Kosovo Montenegro"
+  },
+  {
+   "id": "liberation-of-albania-1944",
+   "kind": "revolution",
+   "year": 1944,
+   "to": 1946,
+   "title": "The communists take power in Albania, 1944 – 1946",
+   "place": "Tirana",
+   "lonLat": [
+    19.85,
+    41.3
+   ],
+   "civs": [
+    "albania",
+    "germany"
+   ],
+   "summary": "The communist-led partisans of Enver Hoxha take Tirana on 17 November 1944, and the last German troops leave Albania by 29 November. Hoxha's provisional government rules the country, which is proclaimed the People's Republic of Albania on 11 January 1946; the monarchy is abolished.",
+   "wikipedia": "Albanian_resistance_of_World_War_II",
+   "search": "Liberation of Albania 17 November 1944 Tirana 29 November German withdrawal National Liberation Front Enver Hoxha provisional government People's Republic 11 January 1946"
+  },
+  {
+   "id": "federal-peoples-republic-of-yugoslavia-1945",
+   "kind": "revolution",
+   "year": 1945,
+   "title": "Yugoslavia becomes a federal people's republic, 1945",
+   "place": "Belgrade",
+   "lonLat": [
+    20.42,
+    44.78
+   ],
+   "civs": [
+    "yugoslavia",
+    "serbia",
+    "bosnia-and-herzegovina",
+    "montenegro",
+    "north-macedonia",
+    "croatia"
+   ],
+   "summary": "After the Partisans' victory, the assembly elected in November 1945 abolishes the monarchy and on 29 November proclaims the Federal People's Republic of Yugoslavia under Josip Broz Tito. It is a federation of six republics: Serbia, Croatia, Slovenia, Bosnia and Herzegovina, Montenegro and Macedonia, with Kosovo and Vojvodina as autonomous parts of Serbia.",
+   "wikipedia": "Socialist_Federal_Republic_of_Yugoslavia",
+   "search": "Federal People's Republic of Yugoslavia proclaimed 29 November 1945 monarchy abolished Tito six republics Serbia Croatia Slovenia Bosnia and Herzegovina Montenegro Macedonia Kosovo Vojvodina autonomous"
+  },
+  {
+   "id": "end-of-communism-in-albania-1991",
+   "kind": "revolution",
+   "year": 1991,
+   "title": "Communist rule ends in Albania, 1991",
+   "place": "Tirana",
+   "lonLat": [
+    19.8,
+    41.36
+   ],
+   "civs": [
+    "albania"
+   ],
+   "summary": "After student protests and mass flight abroad in 1990, Albania's communist rulers allow other parties. Following the first multi-party elections, the People's Socialist Republic becomes the Republic of Albania on 29 April 1991, and the Democratic Party wins power in 1992.",
+   "wikipedia": "Fall_of_communism_in_Albania",
+   "search": "Fall of communism in Albania 1990 1991 student protests multi-party elections March 1991 Republic of Albania 29 April 1991 Sali Berisha 1992"
+  },
+  {
+   "id": "macedonia-independence-1991",
+   "kind": "revolution",
+   "year": 1991,
+   "title": "Macedonia leaves Yugoslavia, 1991",
+   "place": "Skopje",
+   "lonLat": [
+    21.43,
+    42.0
+   ],
+   "civs": [
+    "north-macedonia",
+    "yugoslavia"
+   ],
+   "summary": "In a referendum on 8 September 1991 Macedonia votes for independence from the breaking-up Yugoslavia. The Yugoslav army withdraws peacefully in early 1992, and the Republic of Macedonia joins the United Nations in 1993 under a provisional name because of a dispute with Greece.",
+   "wikipedia": "Republic_of_Macedonia_independence_referendum,_1991",
+   "search": "Macedonia independence referendum 8 September 1991 Republic of Macedonia leaves Yugoslavia peaceful Yugoslav army withdrawal 1992 UN admission 1993 former Yugoslav Republic"
+  },
+  {
+   "id": "bosnian-war-1992",
+   "kind": "war",
+   "year": 1992,
+   "to": 1995,
+   "title": "Bosnia's independence and the Bosnian War, 1992 – 1995",
+   "place": "Bosnia and Herzegovina",
+   "lonLat": [
+    18.3,
+    44.2
+   ],
+   "civs": [
+    "bosnia-and-herzegovina",
+    "yugoslavia",
+    "croatia",
+    "serbia"
+   ],
+   "summary": "Bosnia and Herzegovina declares its independence from Yugoslavia on 3 March 1992. Bosnian Serb forces, backed by Belgrade, take most of the north and east for their self-proclaimed Republika Srpska, and Bosnian Croats set up Herzeg-Bosnia in the west. After the Washington Agreement of 1994 ends the Croat-Bosniak fighting, the Dayton Agreement of December 1995 ends the war and splits the country into two entities.",
+   "wikipedia": "Bosnian_War",
+   "search": "Bosnian War 1992 1995 independence referendum 3 March 1992 Republika Srpska Herzeg-Bosnia siege of Sarajevo Srebrenica genocide Washington Agreement 1994 Dayton Agreement December 1995 two entities"
+  },
+  {
+   "id": "kosovo-war-1999",
+   "kind": "war",
+   "year": 1999,
+   "to": 1999,
+   "title": "The Kosovo War and the UN administration, 1998 – 1999",
+   "place": "Kosovo",
+   "lonLat": [
+    21.0,
+    42.55
+   ],
+   "civs": [
+    "kosovo",
+    "serbia",
+    "yugoslavia"
+   ],
+   "summary": "Fighting between the Kosovo Liberation Army and Serbian forces grows in 1998. After 78 days of NATO bombing from March 1999, Yugoslavia agrees to pull its forces out, and on 10 June UN Security Council Resolution 1244 puts Kosovo under a United Nations administration (UNMIK), while leaving it formally part of Serbia.",
+   "wikipedia": "Kosovo_War",
+   "search": "Kosovo War 1998 1999 Kosovo Liberation Army NATO bombing March June 1999 Kumanovo Agreement Resolution 1244 UNMIK KFOR Serbian forces withdraw"
+  },
+  {
+   "id": "serbia-and-montenegro-2003",
+   "kind": "revolution",
+   "year": 2003,
+   "title": "Yugoslavia becomes Serbia and Montenegro, 2003",
+   "place": "Serbia and Montenegro",
+   "lonLat": [
+    20.0,
+    43.4
+   ],
+   "civs": [
+    "serbia",
+    "montenegro",
+    "yugoslavia"
+   ],
+   "summary": "On 4 February 2003 the Federal Republic of Yugoslavia, made up of Serbia and Montenegro since 1992, is turned into a looser State Union of Serbia and Montenegro, and the name Yugoslavia disappears. The new charter lets either republic leave after three years.",
+   "wikipedia": "Serbia_and_Montenegro",
+   "search": "Federal Republic of Yugoslavia renamed Serbia and Montenegro 4 February 2003 State Union loose union Belgrade Agreement end of the name Yugoslavia"
+  },
+  {
+   "id": "montenegro-independence-2006",
+   "kind": "revolution",
+   "year": 2006,
+   "title": "Montenegro and Serbia go their own ways, 2006",
+   "place": "Podgorica",
+   "lonLat": [
+    19.26,
+    42.44
+   ],
+   "civs": [
+    "montenegro",
+    "serbia"
+   ],
+   "summary": "In a referendum on 21 May 2006, 55.5 percent of Montenegrin voters choose independence, just above the 55 percent the European Union had required. Montenegro declares independence on 3 June, and Serbia becomes the successor of the State Union on 5 June.",
+   "wikipedia": "2006_Montenegrin_independence_referendum",
+   "search": "Montenegrin independence referendum 21 May 2006 55.5 percent declaration of independence 3 June 2006 Serbia 5 June end of State Union Serbia and Montenegro"
+  },
+  {
+   "id": "kosovo-independence-2008",
+   "kind": "revolution",
+   "year": 2008,
+   "title": "Kosovo declares its independence, 2008",
+   "place": "Pristina",
+   "lonLat": [
+    21.16,
+    42.66
+   ],
+   "civs": [
+    "kosovo",
+    "serbia"
+   ],
+   "summary": "On 17 February 2008 the Assembly of Kosovo declares independence from Serbia, ending nine years of United Nations administration. Many countries recognise the new republic, but Serbia, Russia and others do not; in 2010 the International Court of Justice finds that the declaration did not break international law.",
+   "wikipedia": "2008_Kosovo_declaration_of_independence",
+   "search": "Kosovo declaration of independence 17 February 2008 Pristina Assembly Serbia rejects recognition International Court of Justice 2010 advisory opinion"
+  },
+  {
+   "id": "prespa-agreement-2019",
+   "kind": "treaty",
+   "year": 2019,
+   "title": "Macedonia becomes North Macedonia, 2019",
+   "place": "Lake Prespa",
+   "lonLat": [
+    21.0,
+    40.9
+   ],
+   "civs": [
+    "north-macedonia",
+    "greece"
+   ],
+   "summary": "The Prespa Agreement, signed with Greece in June 2018 on Lake Prespa, ends a 27-year dispute over the country's name. On 12 February 2019 the Republic of Macedonia becomes the Republic of North Macedonia, and Greece lifts its veto on its joining NATO, which it does in 2020.",
+   "wikipedia": "Prespa_agreement",
+   "search": "Prespa Agreement June 2018 Greece Macedonia name dispute North Macedonia renamed 12 February 2019 NATO membership 2020"
   }
  ]
 }
