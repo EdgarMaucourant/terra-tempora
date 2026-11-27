@@ -25224,6 +25224,123 @@
      ]
     ]
    }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "massawa",
+    "from": "ERI-1562",
+    "note": "Massawa and the coast at Arkiko",
+    "source": {
+     "title": "Massawa (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Massawa"
+    }
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       39.2,
+       15.85
+      ],
+      [
+       40.0,
+       15.85
+      ],
+      [
+       40.0,
+       15.3
+      ],
+      [
+       39.2,
+       15.3
+      ],
+      [
+       39.2,
+       15.85
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "assab",
+    "from": "ERI-1565",
+    "note": "Assab, the first Italian foothold",
+    "source": {
+     "title": "Assab (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Assab"
+    }
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       42.5,
+       13.2
+      ],
+      [
+       42.95,
+       13.2
+      ],
+      [
+       42.95,
+       12.8
+      ],
+      [
+       42.5,
+       12.8
+      ],
+      [
+       42.5,
+       13.2
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "suakin",
+    "from": "SDN-149",
+    "note": "Suakin and its coast",
+    "source": {
+     "title": "Suakin (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Suakin"
+    }
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       37.05,
+       19.4
+      ],
+      [
+       37.65,
+       19.4
+      ],
+      [
+       37.65,
+       18.8
+      ],
+      [
+       37.05,
+       18.8
+      ],
+      [
+       37.05,
+       19.4
+      ]
+     ]
+    ]
+   }
   }
  ]
 }

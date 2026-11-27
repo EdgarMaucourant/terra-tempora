@@ -7200,7 +7200,8 @@
       "SDN-148",
       "SDN-876",
       "SDN-884",
-      "SDN-149"
+      "SDN-149",
+      "suakin"
      ],
      "owner": "Khedivate of Egypt",
      "source": {
@@ -8294,6 +8295,32 @@
    ]
   },
   {
+   "date": "1889-05-02",
+   "what": "Italy takes the Eritrean highlands; by the Treaty of Wuchale Ethiopia recognises its hold (the colony of Eritrea is proclaimed on 1 January 1890)",
+   "source": {
+    "title": "Italian Eritrea (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Italian_Eritrea"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ERI-1560",
+      "ERI-1561",
+      "ERI-1562",
+      "ERI-1563",
+      "ERI-1564",
+      "ERI-1565"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Italian Eritrea (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Italian_Eritrea"
+     }
+    }
+   ]
+  },
+  {
    "date": "1889-04-10",
    "what": "Emin Pasha leaves Equatoria with Stanley, the last Egyptian province of the Sudan",
    "source": {
@@ -8806,6 +8833,27 @@
    ]
   },
   {
+   "date": "1885-02-05",
+   "what": "Italian troops land at Massawa as the Egyptian garrison is withdrawn",
+   "source": {
+    "title": "Massawa (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Massawa"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "massawa"
+     ],
+     "owner": "Khedivate of Egypt",
+     "source": {
+      "title": "Khedivate of Egypt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Khedivate_of_Egypt"
+     }
+    }
+   ]
+  },
+  {
    "date": "1885-01-26",
    "what": "Khartoum falls to the Mahdi and Gordon is killed",
    "source": {
@@ -8959,12 +9007,34 @@
      "pieces": [
       "EGY",
       "EGY-1558",
-      "SDN-149"
+      "SDN-149",
+      "suakin"
      ],
      "owner": "Khedivate of Egypt",
      "source": {
       "title": "Khedivate of Egypt (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Khedivate_of_Egypt"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1882-07-05",
+   "what": "Italy makes Assab, bought by the Rubattino shipping company in 1869, its first colony",
+   "source": {
+    "title": "Assab (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Assab"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "assab"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Assab (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Assab"
      }
     }
    ]
@@ -9345,6 +9415,28 @@
      "source": {
       "title": "Duar War (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Duar_War"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1865-05-15",
+   "what": "The sultan hands Massawa and Suakin to the Khedive of Egypt",
+   "source": {
+    "title": "Habesh Eyalet (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Habesh_Eyalet"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "massawa",
+      "suakin"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Habesh Eyalet (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Habesh_Eyalet"
      }
     }
    ]

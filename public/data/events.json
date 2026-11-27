@@ -15324,6 +15324,45 @@
    "summary": "On 28 August 1910, at the jubilee of his fifty years on the throne, Prince Nicholas proclaims Montenegro a kingdom and takes the title of King Nicholas I.",
    "wikipedia": "Kingdom_of_Montenegro",
    "search": "Kingdom of Montenegro proclaimed 28 August 1910 Nicholas I fiftieth jubilee Cetinje"
+  },
+  {
+   "id": "massawa-and-suakin-to-egypt-1865",
+   "kind": "treaty",
+   "year": 1865,
+   "title": "The Ottoman Red Sea ports pass to Egypt, 1865",
+   "place": "Red Sea coast",
+   "lonLat": [
+    38.3,
+    17.3
+   ],
+   "civs": [
+    "khedivate-of-egypt",
+    "turkey"
+   ],
+   "summary": "Massawa and Suakin, the last Ottoman ports on the African shore of the Red Sea, are handed by the sultan to the Khedive of Egypt in 1865. Ismail uses them as bases to push Egyptian rule inland, towards the Sudan and the Ethiopian highlands.",
+   "wikipedia": "Habesh_Eyalet",
+   "search": "Massawa Suakin handed to Egypt 1865 Khedive Ismail firman Ottoman Habesh Eyalet Red Sea ports"
+  },
+  {
+   "id": "italian-eritrea-1885",
+   "kind": "empire",
+   "year": 1885,
+   "to": 1890,
+   "title": "Italy builds its colony of Eritrea, 1882 – 1890",
+   "place": "Eritrea",
+   "lonLat": [
+    39.0,
+    15.6
+   ],
+   "civs": [
+    "italy",
+    "italian-eritrea",
+    "khedivate-of-egypt",
+    "ethiopia"
+   ],
+   "summary": "Italy takes over the port of Assab in 1882 and lands at Massawa in February 1885 as the Egyptians withdraw. After a defeat at Dogali in 1887, its troops push up to the highlands and take Asmara in 1889, and the Treaty of Wuchale with Ethiopia recognises their hold. The colony of Eritrea is proclaimed on 1 January 1890.",
+   "wikipedia": "Italian_Eritrea",
+   "search": "Italian Eritrea Assab 1882 Massawa landing 5 February 1885 Dogali 1887 Asmara 1889 Treaty of Wuchale colony of Eritrea 1 January 1890"
   }
  ]
 }
