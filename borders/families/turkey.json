@@ -84,9 +84,90 @@
    ],
    "from": 1815,
    "why": "Turkey, without Kars, Ardahan, Artvin and Iğdır (Russia family) and Hatay (France family)"
+  },
+  {
+   "pieces": [
+    "LBY-2973",
+    "LBY-2978",
+    "LBY-2975",
+    "LBY-2974",
+    "LBY-2966",
+    "LBY-2970",
+    "LBY-2985",
+    "LBY-2976",
+    "LBY-2882",
+    "LBY-2964",
+    "LBY-2967",
+    "LBY-5488",
+    "LBY-2971",
+    "LBY-2969",
+    "LBY-2968",
+    "LBY-2984",
+    "LBY-2981",
+    "LBY-2982",
+    "LBY-2986",
+    "LBY-2987",
+    "LBY-2983",
+    "LBY-2965"
+   ],
+   "from": 1815,
+   "why": "Libya (Kufra blank before 1931, United Kingdom family): Ottoman Tripolitania, the Karamanli regency before 1835, Italian from 1912"
   }
  ],
  "changes": [
+  {
+   "date": "1934-01-01",
+   "what": "Italian Tripolitania and Italian Cyrenaica are united as the colony of Libya",
+   "source": {
+    "title": "Italian Libya (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Italian_Libya"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "LBY-2973",
+      "LBY-2978",
+      "LBY-2975",
+      "LBY-2974",
+      "LBY-2966",
+      "LBY-2970",
+      "LBY-2985",
+      "LBY-2976",
+      "LBY-2882",
+      "LBY-2964",
+      "LBY-2967",
+      "LBY-5488",
+      "LBY-2971",
+      "LBY-2969",
+      "LBY-2968"
+     ],
+     "owner": "Italy",
+     "source": {
+      "title": "Italian Tripolitania (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Italian_Tripolitania"
+     },
+     "territory": "Italian Tripolitania"
+    },
+    {
+     "pieces": [
+      "LBY-2984",
+      "LBY-2981",
+      "LBY-2982",
+      "LBY-2986",
+      "LBY-2987",
+      "LBY-2983",
+      "LBY-2965"
+     ],
+     "owner": "Italy",
+     "source": {
+      "title": "Italian Cyrenaica (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Italian_Cyrenaica"
+     },
+     "territory": "Italian Cyrenaica"
+    }
+   ]
+  },
   {
    "date": "1923-10-06",
    "what": "Turkish troops enter Istanbul two days after the last Allied troops leave",
@@ -165,6 +246,75 @@
       "source": {
        "title": "Imbros (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Imbros"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1923-04-21",
+   "what": "Italian troops take Ajdabiya, seat of the Senussi emir Idris, who has gone into exile in Egypt",
+   "source": {
+    "title": "Senusiyya (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Senusiyya"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "LBY-2983",
+      "LBY-2982"
+     ],
+     "owner": "Italy",
+     "source": {
+      "title": "Italian Cyrenaica (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Italian_Cyrenaica"
+     },
+     "territory": "Italian Cyrenaica",
+     "hatch": {
+      "by": "Senussi Order",
+      "since": "1912-10-18",
+      "note": "The inland of Cyrenaica, held by the Senussi order, which fought on after the Ottomans left; recognised by Italy as the Emirate of Cyrenaica in 1920, taken by the Italians from 1923",
+      "source": {
+       "title": "Senusiyya (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Senusiyya"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1922-12-31",
+   "what": "Italian columns retake Gharyan and the Jabal Nafusa; the Tripolitanian Republic is over",
+   "source": {
+    "title": "Tripolitanian Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tripolitanian_Republic"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "LBY-2976",
+      "LBY-2882",
+      "LBY-2964",
+      "LBY-2967",
+      "LBY-5488",
+      "LBY-2971",
+      "LBY-2969"
+     ],
+     "owner": "Italy",
+     "source": {
+      "title": "Italian Tripolitania (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Italian_Tripolitania"
+     },
+     "territory": "Italian Tripolitania",
+     "hatch": {
+      "by": "Tripolitanian Republic",
+      "since": "1918-11-16",
+      "note": "Held by the Tripolitanian Republic, proclaimed in November 1918 after the Italians had fallen back to the coast in 1915; retaken by Italy from 1922",
+      "source": {
+       "title": "Tripolitanian Republic (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Tripolitanian_Republic"
       }
      }
     }
@@ -272,6 +422,38 @@
       "source": {
        "title": "Greco-Turkish War (1919–1922) (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Greco-Turkish_War_(1919–1922)"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1922-01-26",
+   "what": "Italian troops land at Misrata Marina and begin the reconquest of Tripolitania",
+   "source": {
+    "title": "Tripolitanian Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tripolitanian_Republic"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "LBY-2970",
+      "LBY-2985"
+     ],
+     "owner": "Italy",
+     "source": {
+      "title": "Italian Tripolitania (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Italian_Tripolitania"
+     },
+     "territory": "Italian Tripolitania",
+     "hatch": {
+      "by": "Tripolitanian Republic",
+      "since": "1918-11-16",
+      "note": "Held by the Tripolitanian Republic, proclaimed in November 1918 after the Italians had fallen back to the coast in 1915; retaken by Italy from 1922",
+      "source": {
+       "title": "Tripolitanian Republic (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Tripolitanian_Republic"
       }
      }
     }
@@ -809,6 +991,36 @@
    ]
   },
   {
+   "date": "1918-11-16",
+   "what": "Tripolitanian leaders proclaim the Tripolitanian Republic in the inland they have held since 1915",
+   "source": {
+    "title": "Tripolitanian Republic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tripolitanian_Republic"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "LBY-2970",
+      "LBY-2985",
+      "LBY-2976",
+      "LBY-2882",
+      "LBY-2964",
+      "LBY-2967",
+      "LBY-5488",
+      "LBY-2971",
+      "LBY-2969"
+     ],
+     "owner": "Italy",
+     "source": {
+      "title": "Italian Tripolitania (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Italian_Tripolitania"
+     },
+     "territory": "Italian Tripolitania"
+    }
+   ]
+  },
+  {
    "date": "1918-11-13",
    "what": "British, French and Italian troops occupy Constantinople and the Dardanelles",
    "source": {
@@ -1082,6 +1294,243 @@
    ]
   },
   {
+   "date": "1912-10-18",
+   "what": "By the Treaty of Ouchy the Ottoman Empire gives up Tripolitania and Cyrenaica to Italy",
+   "source": {
+    "title": "Treaty of Ouchy (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Ouchy"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "LBY-2973",
+      "LBY-2978"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Tripolitania (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Tripolitania"
+     },
+     "hatch": {
+      "by": "Italy",
+      "since": "1911-10-05",
+      "note": "Tripoli, taken by Italian troops in the Italo-Turkish War and held until the Treaty of Ouchy (October 1912) gave Libya to Italy",
+      "source": {
+       "title": "Italo-Turkish War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Italo-Turkish_War"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "LBY-2966"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Tripolitania (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Tripolitania"
+     },
+     "hatch": {
+      "by": "Italy",
+      "since": "1911-10-21",
+      "note": "Homs, taken by Italian troops in the Italo-Turkish War and held until the Treaty of Ouchy (October 1912) gave Libya to Italy",
+      "source": {
+       "title": "Italo-Turkish War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Italo-Turkish_War"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "LBY-2984"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Tripolitania (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Tripolitania"
+     },
+     "hatch": {
+      "by": "Italy",
+      "since": "1911-10-20",
+      "note": "Benghazi, taken by Italian troops in the Italo-Turkish War and held until the Treaty of Ouchy (October 1912) gave Libya to Italy",
+      "source": {
+       "title": "Italo-Turkish War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Italo-Turkish_War"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "LBY-2986"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Tripolitania (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Tripolitania"
+     },
+     "hatch": {
+      "by": "Italy",
+      "since": "1911-10-18",
+      "note": "Derna, taken by Italian troops in the Italo-Turkish War and held until the Treaty of Ouchy (October 1912) gave Libya to Italy",
+      "source": {
+       "title": "Italo-Turkish War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Italo-Turkish_War"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "LBY-2987"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Tripolitania (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Tripolitania"
+     },
+     "hatch": {
+      "by": "Italy",
+      "since": "1911-10-04",
+      "note": "Tobruk, taken by Italian troops in the Italo-Turkish War and held until the Treaty of Ouchy (October 1912) gave Libya to Italy",
+      "source": {
+       "title": "Italo-Turkish War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Italo-Turkish_War"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "LBY-2975",
+      "LBY-2974",
+      "LBY-2970",
+      "LBY-2985",
+      "LBY-2976",
+      "LBY-2882",
+      "LBY-2964",
+      "LBY-2967",
+      "LBY-5488",
+      "LBY-2971",
+      "LBY-2969",
+      "LBY-2968",
+      "LBY-2981",
+      "LBY-2982",
+      "LBY-2983"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Tripolitania (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Tripolitania"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1911-10-21",
+   "what": "Italian troops land at Homs",
+   "source": {
+    "title": "Italo-Turkish War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Italo-Turkish_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "LBY-2966"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Tripolitania (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Tripolitania"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1911-10-20",
+   "what": "Italian troops land at Benghazi",
+   "source": {
+    "title": "Italo-Turkish War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Italo-Turkish_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "LBY-2984"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Tripolitania (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Tripolitania"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1911-10-18",
+   "what": "Italian troops land at Derna",
+   "source": {
+    "title": "Italo-Turkish War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Italo-Turkish_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "LBY-2986"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Tripolitania (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Tripolitania"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1911-10-05",
+   "what": "Italian sailors land at Tripoli",
+   "source": {
+    "title": "Italo-Turkish War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Italo-Turkish_War"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "LBY-2973",
+      "LBY-2978"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Tripolitania (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Tripolitania"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1911-10-04",
+   "what": "Italian sailors land at Tobruk",
+   "source": {
+    "title": "Italo-Turkish War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Italo-Turkish_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "LBY-2987"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Tripolitania (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Tripolitania"
+     }
+    }
+   ]
+  },
+  {
    "date": "1879-03-01",
    "what": "The last Russian troops leave Adrianople and Eastern Thrace",
    "source": {
@@ -1190,6 +1639,51 @@
    ]
   },
   {
+   "date": "1875-01-01",
+   "what": "An Ottoman garrison takes over the oasis of Ghat from its Tuareg rulers",
+   "source": {
+    "title": "Ghat, Libya (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Ghat,_Libya"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "LBY-2968"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Ghat, Libya (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ghat,_Libya"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1842-01-01",
+   "what": "The Ottomans take Murzuq and the Fezzan after Abd al-Jalil, of the Awlad Sulayman, is killed",
+   "source": {
+    "title": "Fezzan (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Fezzan"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "LBY-2967",
+      "LBY-5488",
+      "LBY-2971",
+      "LBY-2969"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Fezzan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Fezzan"
+     }
+    }
+   ]
+  },
+  {
    "date": "1840-12-29",
    "what": "Ibrahim Pasha's army leaves Cilicia and Syria, which go back to the Ottoman Empire",
    "source": {
@@ -1219,6 +1713,42 @@
        "title": "Egyptian–Ottoman War (1831–1833) (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Egyptian–Ottoman_War_(1831–1833)"
       }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1835-05-26",
+   "what": "An Ottoman fleet lands at Tripoli and ends the rule of the Karamanli pashas: Tripolitania is ruled from Constantinople again",
+   "source": {
+    "title": "Karamanli dynasty (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Karamanli_dynasty"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "LBY-2973",
+      "LBY-2978",
+      "LBY-2975",
+      "LBY-2974",
+      "LBY-2966",
+      "LBY-2970",
+      "LBY-2985",
+      "LBY-2976",
+      "LBY-2882",
+      "LBY-2964",
+      "LBY-2984",
+      "LBY-2981",
+      "LBY-2982",
+      "LBY-2986",
+      "LBY-2987",
+      "LBY-2983"
+     ],
+     "owner": "Regency of Tripoli",
+     "source": {
+      "title": "Karamanli dynasty (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Karamanli_dynasty"
      }
     }
    ]
@@ -1299,6 +1829,30 @@
      "source": {
       "title": "Ottoman Empire (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1831-01-01",
+   "what": "Abd al-Jalil, chief of the Awlad Sulayman, throws off the rule of Tripoli in the Fezzan",
+   "source": {
+    "title": "Fezzan (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Fezzan"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "LBY-2967",
+      "LBY-5488",
+      "LBY-2971",
+      "LBY-2969"
+     ],
+     "owner": "Regency of Tripoli",
+     "source": {
+      "title": "Karamanli dynasty (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Karamanli_dynasty"
      }
     }
    ]

@@ -4964,5 +4964,47 @@
   "wikidata": "Q11681694",
   "fr": "République d’Haïti espagnole",
   "es": "Estado Independiente del Haití Español"
+ },
+ "Regency of Tripoli": {
+  "wikipedia": "Karamanli dynasty",
+  "wikidata": "Q1929987",
+  "fr": "Régence de Tripoli",
+  "es": "Regencia de Trípoli",
+  "note": "Ruled by the Karamanli pashas under Ottoman suzerainty until 1835"
+ },
+ "Regency of Algiers": {
+  "wikipedia": "Regency of Algiers",
+  "wikidata": "Q3045696",
+  "fr": "Régence d’Alger",
+  "es": "Regencia de Argel",
+  "note": "Ruled by the deys of Algiers under Ottoman suzerainty until the French conquest of 1830"
+ },
+ "Beylik of Constantine": {
+  "wikipedia": "Beylik of Constantine",
+  "fr": "Beylik de Constantine",
+  "es": "Beylicato de Constantina",
+  "note": "Held by Ahmed Bey, who stayed loyal to the Ottoman sultan, after the fall of Algiers until the French took Constantine in 1837"
+ },
+ "Senussi Order": {
+  "wikipedia": "Senusiyya",
+  "fr": "Confrérie senoussie",
+  "es": "Orden senusí"
+ },
+ "Tripolitanian Republic": {
+  "wikipedia": "Tripolitanian Republic",
+  "fr": "République tripolitaine",
+  "es": "República Tripolitana"
+ },
+ "Italian Tripolitania": {
+  "wikipedia": "Italian Tripolitania",
+  "fr": "Tripolitaine italienne",
+  "es": "Tripolitania italiana",
+  "withOwner": false
+ },
+ "Italian Cyrenaica": {
+  "wikipedia": "Italian Cyrenaica",
+  "fr": "Cyrénaïque italienne",
+  "es": "Cirenaica italiana",
+  "withOwner": false
  }
 }
