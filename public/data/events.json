@@ -3571,7 +3571,7 @@
     35.3
    ],
    "civs": [
-    "ottoman-empire",
+    "turkey",
     "syria",
     "mandatory-syria",
     "mandatory-lebanon",
@@ -4149,7 +4149,7 @@
    ],
    "civs": [
     "lebanon",
-    "ottoman-empire",
+    "turkey",
     "france"
    ],
    "summary": "In 1860 fighting between Druze and Maronite Christians in Mount Lebanon turns into massacres, which spread to Damascus. With the agreement of the other European powers, Napoleon III sends some 6,000 soldiers, who land at Beirut in August 1860 and stay until June 1861. The Ottoman government then makes Mount Lebanon a self-governing district under a Christian governor.",
@@ -4504,7 +4504,7 @@
    ],
    "civs": [
     "russia",
-    "ottoman-empire",
+    "turkey",
     "france",
     "united-kingdom"
    ],
@@ -4697,7 +4697,7 @@
    "civs": [
     "syria",
     "lebanon",
-    "ottoman-empire",
+    "turkey",
     "egypt"
    ],
    "summary": "Muhammad Ali, the Ottoman governor of Egypt, sends his son Ibrahim Pasha to take Syria in 1831. Acre falls in May 1832, Damascus soon after, and Ibrahim beats the Sultan's armies at Homs and Konya. Egypt rules Syria and Lebanon for eight years, until Britain, Austria and Russia step in during the Oriental Crisis of 1840: Acre is shelled and Ibrahim withdraws, while France, which backed Muhammad Ali, is left out.",
@@ -8082,7 +8082,7 @@
     "mandatory-iraq",
     "mandate-for-syria-and-the-lebanon",
     "united-kingdom",
-    "ottoman-empire"
+    "turkey"
    ],
    "summary": "Meeting at San Remo in Italy on 19–26 April 1920, the Allied powers decide how to divide the Ottoman Empire’s Arab lands. Britain receives the mandates for Mesopotamia (Iraq) and Palestine, with the promise of the Balfour Declaration written in, and France those for Syria and Lebanon. The borders drawn here shape the modern Middle East.",
    "wikipedia": "San_Remo_conference",
@@ -8294,7 +8294,7 @@
    ],
    "civs": [
     "british-cyprus",
-    "ottoman-empire",
+    "turkey",
     "cyprus",
     "united-kingdom"
    ],
@@ -8316,7 +8316,7 @@
     "sultanate-of-egypt",
     "khedivate-of-egypt",
     "egypt",
-    "ottoman-empire",
+    "turkey",
     "united-kingdom"
    ],
    "summary": "British troops had occupied Egypt since 1882 while it stayed, in law, a vassal of the Ottoman sultan. With the Ottoman Empire now an enemy, Britain declares a protectorate on 18 December 1914, deposes the pro-Ottoman Khedive Abbas II, and makes his uncle Hussein Kamel Sultan of Egypt. Egypt is cut off from the Ottoman Empire and becomes the base for the war in the Middle East.",
@@ -8335,7 +8335,7 @@
     32.5
    ],
    "civs": [
-    "ottoman-empire",
+    "turkey",
     "mandatory-iraq",
     "iraq",
     "united-kingdom"
@@ -8376,7 +8376,7 @@
    ],
    "civs": [
     "qatar",
-    "ottoman-empire",
+    "turkey",
     "united-kingdom"
    ],
    "summary": "The Ottoman garrison in Doha slips away in August 1915 under British pressure. On 3 November 1916 Sheikh Abdullah bin Jassim Al Thani signs a treaty that brings Qatar into Britain’s system of Gulf protected states: Britain takes charge of its foreign affairs and promises to defend it. The treaty lasts until independence in 1971.",
@@ -8394,7 +8394,7 @@
     33.25
    ],
    "civs": [
-    "ottoman-empire",
+    "turkey",
     "mandatory-iraq",
     "iraq",
     "united-kingdom"
@@ -8415,7 +8415,7 @@
    ],
    "civs": [
     "kingdom-of-hejaz",
-    "ottoman-empire",
+    "turkey",
     "jordan",
     "united-kingdom"
    ],
@@ -8434,7 +8434,7 @@
     31.72
    ],
    "civs": [
-    "ottoman-empire",
+    "turkey",
     "mandatory-palestine",
     "israel",
     "palestine",
@@ -8455,7 +8455,7 @@
     32.58
    ],
    "civs": [
-    "ottoman-empire",
+    "turkey",
     "mandatory-palestine",
     "arab-kingdom-of-syria",
     "israel",
@@ -8477,7 +8477,7 @@
     36.34
    ],
    "civs": [
-    "ottoman-empire",
+    "turkey",
     "mandatory-iraq",
     "iraq",
     "united-kingdom"
@@ -8656,7 +8656,7 @@
    "civs": [
     "khedivate-of-egypt",
     "egypt",
-    "ottoman-empire",
+    "turkey",
     "united-kingdom"
    ],
    "summary": "In early 1906 Ottoman troops occupy Taba, at the head of the Gulf of Aqaba, claiming most of Sinai. Britain, which runs Egypt, sends warships and an ultimatum, and the Sultan gives way. An agreement of 1 October 1906 draws a straight line from Rafah to Taba as the border of Egyptian Sinai – the line still used between Egypt and Israel today.",
@@ -8939,7 +8939,7 @@
    ],
    "civs": [
     "kuwait",
-    "ottoman-empire",
+    "turkey",
     "united-kingdom"
    ],
    "summary": "Fearing that the Ottomans would make good their claims – and that Germany would end its Baghdad railway at Kuwait – Sheikh Mubarak al-Sabah signs a secret bond with Britain on 23 January 1899. He promises not to cede land or receive foreign agents without British consent, in return for British protection. Kuwait stays under that protection until its independence in 1961.",
@@ -11019,7 +11019,7 @@
     "armenia",
     "azerbaijan",
     "russia",
-    "ottoman-empire"
+    "turkey"
    ],
    "summary": "After refusing Brest-Litovsk, the Transcaucasian lands form a federation in April 1918, but it falls apart under the Ottoman offensive. Georgia declares independence in Tiflis on 26 May 1918, and Armenia and Azerbaijan on 28 May. The three republics fight over their borders and live under Ottoman, German and then British influence until the Red Army takes them in 1920 and 1921.",
    "wikipedia": "Democratic_Republic_of_Georgia",
@@ -11292,7 +11292,7 @@
    ],
    "civs": [
     "russia",
-    "ottoman-empire"
+    "turkey"
    ],
    "summary": "In a winter offensive across the mountains, General Yudenich's Caucasus Army takes the great Ottoman fortress of Erzurum on 16 February 1916, then Trebizond in April and Erzincan in July. Russia holds much of eastern Anatolia until its army melts away after the revolution of 1917.",
    "wikipedia": "Erzurum_offensive",
@@ -11568,7 +11568,7 @@
    ],
    "civs": [
     "russia",
-    "ottoman-empire"
+    "turkey"
    ],
    "summary": "In the Russo-Turkish War, Russian troops take Ardahan in May 1877 and then storm the great Ottoman fortress of Kars in a night assault on 17–18 November 1877. Russia keeps Kars and Ardahan at the peace and rules them until 1918.",
    "wikipedia": "Siege_of_Kars_(1877)",
@@ -11586,7 +11586,7 @@
    ],
    "civs": [
     "russia",
-    "ottoman-empire",
+    "turkey",
     "romania"
    ],
    "summary": "The great powers meet in Berlin to revise the peace Russia imposed on the Ottomans at San Stefano. The treaty of 13 July 1878 still gives Russia Kars, Ardahan and Batumi, made a free port, and takes Southern Bessarabia back from Romania, which receives Northern Dobruja instead and is recognised as independent.",
@@ -11625,7 +11625,7 @@
    ],
    "civs": [
     "russia",
-    "ottoman-empire",
+    "turkey",
     "georgia"
    ],
    "summary": "In the war of 1828-29 Russian troops storm Kars and the Ottoman fortress of Akhaltsikhe. The Treaty of Adrianople of 14 September 1829 gives Kars back to the Ottomans but leaves Russia Akhaltsikhe and Akhalkalaki and the Black Sea coast from the Kuban to Adjara, including the Ottoman claim to Circassia.",
@@ -11680,7 +11680,7 @@
    ],
    "civs": [
     "russia",
-    "ottoman-empire"
+    "turkey"
    ],
    "summary": "During the Crimean War a Russian army under Nikolay Muravyov besieges Kars, defended by an Ottoman garrison under the British general William Williams. After a failed assault in September, hunger forces the garrison to surrender on 28 November 1855. Russia gives Kars back at the peace of Paris in 1856.",
    "wikipedia": "Siege_of_Kars",
@@ -11716,7 +11716,7 @@
    ],
    "civs": [
     "russia",
-    "ottoman-empire"
+    "turkey"
    ],
    "summary": "After Shamil's surrender, Russian armies conquer the last free Circassian and Ubykh lands on the Black Sea coast. The war ends with a victory parade at Kbaada on 21 May 1864. Hundreds of thousands of Circassians are killed or driven across the sea to the Ottoman Empire, many dying on the way, and their land is settled by Cossacks.",
    "wikipedia": "Circassian_genocide",
@@ -11902,7 +11902,7 @@
    "civs": [
     "russia",
     "moldavia",
-    "ottoman-empire"
+    "turkey"
    ],
    "summary": "Defeated in the Crimean War, Russia signs the Treaty of Paris on 30 March 1856. It gives Kars back to the Ottomans, loses the mouths of the Danube and Southern Bessarabia (Izmail, Bolhrad, Cahul) to Moldavia, and may no longer keep a war fleet on the Black Sea.",
    "wikipedia": "Treaty_of_Paris_(1856)",
