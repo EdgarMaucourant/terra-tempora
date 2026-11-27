@@ -6,7 +6,7 @@
    "pieces": [
     "ESP"
    ],
-   "from": 1860,
+   "from": 1815,
    "why": "Spain with the Balearic and Canary Islands, Ceuta and Melilla"
   },
   {
@@ -16,14 +16,14 @@
     "western-sahara-3457",
     "western-sahara-3469"
    ],
-   "from": 1860,
+   "from": 1815,
    "why": "Western Sahara: Spanish Sahara until 1976, then held by Morocco west of its sand wall (and by Mauritania in the south until 1979)"
   },
   {
    "pieces": [
     "GNQ"
    ],
-   "from": 1860,
+   "from": 1815,
    "why": "Equatorial Guinea: Spanish Guinea (Fernando Po, Annobón and Río Muni) until 1968"
   },
   {
@@ -32,7 +32,7 @@
     "PLW",
     "MNP"
    ],
-   "from": 1860,
+   "from": 1815,
    "why": "The Caroline Islands (Micronesia), Palau and the Northern Mariana Islands: Spanish until 1899, then German, Japanese (a League of Nations mandate) and a US-administered UN trust territory"
   },
   {
@@ -40,36 +40,36 @@
     "CUB",
     "USG"
    ],
-   "from": 1860,
+   "from": 1815,
    "why": "Cuba: Spanish until 1898, under US military rule 1899-1902, then independent"
   },
   {
    "pieces": [
     "PRI"
    ],
-   "from": 1860,
+   "from": 1815,
    "why": "Puerto Rico: Spanish until 1898, then a US territory"
   },
   {
    "pieces": [
     "PHL"
    ],
-   "from": 1860,
+   "from": 1815,
    "why": "The Philippines: Spanish East Indies until 1898 (with Sulu a protected sultanate), then US, occupied by Japan 1942-45, independent from 1946"
   },
   {
    "pieces": [
     "GUM"
    ],
-   "from": 1860,
+   "from": 1815,
    "why": "Guam: Spanish until 1898, then US (occupied by Japan 1941-44)"
   },
   {
    "pieces": [
     "DOM"
    ],
-   "from": 1860,
-   "why": "The Dominican Republic: annexed by Spain 1861-65, occupied by the United States 1916-24"
+   "from": 1815,
+   "why": "The Dominican Republic: Spanish Santo Domingo to 1821, Haitian 1822-44, annexed by Spain 1861-65, occupied by the United States 1916-24"
   }
  ],
  "changes": [
@@ -4727,6 +4727,289 @@
       "title": "Dominican Republic (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Dominican_Republic"
      }
+    }
+   ]
+  },
+  {
+   "date": "1848-06-29",
+   "what": "José Cruz de Oyanguren's expedition takes the Davao Gulf from Datu Bago and founds Nueva Vergara (Davao)",
+   "source": {
+    "title": "Davao City (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Davao_City"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "PHL-2591",
+      "PHL-5528",
+      "PHL-2592",
+      "PHL-2597",
+      "PHL-2596"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Davao City (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Davao_City"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1848-01-01",
+   "what": "Spain builds Fort Isabela II on Basilan, taken from the Sultanate of Sulu after a French attempt to seize the island in 1844-45",
+   "source": {
+    "title": "Basilan (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Basilan"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "PHL-2519"
+     ],
+     "owner": "Sultanate of Sulu",
+     "source": {
+      "title": "Sultanate of Sulu (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sultanate_of_Sulu"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1844-02-27",
+   "what": "The Dominican Republic declares its independence from Haiti at the Puerta del Conde in Santo Domingo",
+   "source": {
+    "title": "Dominican War of Independence (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Dominican_War_of_Independence"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "DOM-1390",
+      "DOM-1391",
+      "DOM-1392",
+      "DOM-1393",
+      "DOM-1394",
+      "DOM-1395",
+      "DOM-1396",
+      "DOM-1964",
+      "DOM-1965",
+      "DOM-1966",
+      "DOM-1967",
+      "DOM-1968",
+      "DOM-1969",
+      "DOM-1970",
+      "DOM-1971",
+      "DOM-1972",
+      "DOM-1973",
+      "DOM-1974",
+      "DOM-1975",
+      "DOM-1976",
+      "DOM-1977",
+      "DOM-1978",
+      "DOM-1979",
+      "DOM-1980",
+      "DOM-1981",
+      "DOM-1982",
+      "DOM-1983",
+      "DOM-1984",
+      "DOM-1985",
+      "DOM-1986",
+      "DOM-1987",
+      "DOM-1988"
+     ],
+     "owner": "Haiti",
+     "source": {
+      "title": "Haitian occupation of Santo Domingo (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Haitian_occupation_of_Santo_Domingo"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1843-03-15",
+   "what": "Juan José Lerena raises the Spanish flag at Port Clarence (Santa Isabel) and takes possession of Fernando Po and Annobón",
+   "source": {
+    "title": "Bioko (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Bioko"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "GNQ-1478",
+      "GNQ-1479",
+      "GNQ-1467"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Bioko (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bioko"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1839-09-14",
+   "what": "After the Convention of Vergara, Don Carlos crosses into France: the First Carlist War ends in the north",
+   "source": {
+    "title": "First Carlist War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/First_Carlist_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "ESP-5837",
+      "ESP-5823",
+      "ESP-5851",
+      "ESP-5801"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "First Carlist War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/First_Carlist_War"
+     },
+     "hatch": {
+      "by": "Carlist State",
+      "since": "1834-07-12",
+      "note": "The countryside of Navarre and the Basque provinces, held by the Carlists of Don Carlos with Zumalacárregui's army; Bilbao, San Sebastián, Vitoria and Pamplona stayed with Madrid",
+      "source": {
+       "title": "First Carlist War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/First_Carlist_War"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1834-07-12",
+   "what": "Don Carlos enters Navarre and joins Zumalacárregui, who holds the countryside of Navarre and the Basque provinces",
+   "source": {
+    "title": "First Carlist War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/First_Carlist_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ESP-5837",
+      "ESP-5823",
+      "ESP-5851",
+      "ESP-5801"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Spain (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spain"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1822-02-09",
+   "what": "President Boyer's Haitian army enters Santo Domingo and unites the whole island under Haiti",
+   "source": {
+    "title": "Haitian occupation of Santo Domingo (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Haitian_occupation_of_Santo_Domingo"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "DOM-1390",
+      "DOM-1391",
+      "DOM-1392",
+      "DOM-1393",
+      "DOM-1394",
+      "DOM-1395",
+      "DOM-1396",
+      "DOM-1964",
+      "DOM-1965",
+      "DOM-1966",
+      "DOM-1967",
+      "DOM-1968",
+      "DOM-1969",
+      "DOM-1970",
+      "DOM-1971",
+      "DOM-1972",
+      "DOM-1973",
+      "DOM-1974",
+      "DOM-1975",
+      "DOM-1976",
+      "DOM-1977",
+      "DOM-1978",
+      "DOM-1979",
+      "DOM-1980",
+      "DOM-1981",
+      "DOM-1982",
+      "DOM-1983",
+      "DOM-1984",
+      "DOM-1985",
+      "DOM-1986",
+      "DOM-1987",
+      "DOM-1988"
+     ],
+     "owner": "Republic of Spanish Haiti",
+     "source": {
+      "title": "Republic of Spanish Haiti (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Republic_of_Spanish_Haiti"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1821-12-01",
+   "what": "José Núñez de Cáceres declares the independence of Spanish Haiti from Spain",
+   "source": {
+    "title": "Republic of Spanish Haiti (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Republic_of_Spanish_Haiti"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "DOM-1390",
+      "DOM-1391",
+      "DOM-1392",
+      "DOM-1393",
+      "DOM-1394",
+      "DOM-1395",
+      "DOM-1396",
+      "DOM-1964",
+      "DOM-1965",
+      "DOM-1966",
+      "DOM-1967",
+      "DOM-1968",
+      "DOM-1969",
+      "DOM-1970",
+      "DOM-1971",
+      "DOM-1972",
+      "DOM-1973",
+      "DOM-1974",
+      "DOM-1975",
+      "DOM-1976",
+      "DOM-1977",
+      "DOM-1978",
+      "DOM-1979",
+      "DOM-1980",
+      "DOM-1981",
+      "DOM-1982",
+      "DOM-1983",
+      "DOM-1984",
+      "DOM-1985",
+      "DOM-1986",
+      "DOM-1987",
+      "DOM-1988"
+     ],
+     "owner": "Spain",
+     "source": {
+      "title": "Captaincy General of Santo Domingo (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Captaincy_General_of_Santo_Domingo"
+     },
+     "territory": "Santo Domingo"
     }
    ]
   }
