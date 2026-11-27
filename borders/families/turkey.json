@@ -1,0 +1,1307 @@
+{
+ "family": "Turkey",
+ "note": "Turkey and, before 1922, the Ottoman Empire with the land it held, walked back from 2026. Ottoman land already drawn by other families: Cyprus, Egypt and the Levant, Iraq, Yemen and Qatar (United Kingdom, France), Kars, Ardahan, Artvin and Iğdır (Russia), Hatay (France).",
+ "reviewed": [
+  {
+   "pieces": [
+    "TUR-2229",
+    "TUR-2230",
+    "TUR-2238",
+    "TUR-2239",
+    "TUR-2240",
+    "TUR-2241",
+    "TUR-2242",
+    "TUR-2263",
+    "TUR-2264",
+    "TUR-2265",
+    "TUR-2266",
+    "TUR-2267",
+    "TUR-2268",
+    "TUR-2269",
+    "TUR-2270",
+    "TUR-2271",
+    "TUR-2272",
+    "TUR-2273",
+    "TUR-2274",
+    "TUR-2275",
+    "TUR-2276",
+    "TUR-2277",
+    "TUR-2278",
+    "TUR-2281",
+    "TUR-2282",
+    "TUR-2283",
+    "TUR-2284",
+    "TUR-2285",
+    "TUR-2286",
+    "TUR-2287",
+    "TUR-2288",
+    "TUR-2290",
+    "TUR-2291",
+    "TUR-2292",
+    "TUR-2293",
+    "TUR-2294",
+    "TUR-2295",
+    "TUR-2296",
+    "TUR-2297",
+    "TUR-2299",
+    "TUR-2300",
+    "TUR-2301",
+    "TUR-2302",
+    "TUR-2307",
+    "TUR-2308",
+    "TUR-2309",
+    "TUR-2310",
+    "TUR-2311",
+    "TUR-3008",
+    "TUR-3009",
+    "TUR-3010",
+    "TUR-3011",
+    "TUR-3012",
+    "TUR-3014",
+    "TUR-3016",
+    "TUR-3017",
+    "TUR-3018",
+    "TUR-3019",
+    "TUR-3020",
+    "TUR-3021",
+    "TUR-3026",
+    "TUR-3031",
+    "TUR-3032",
+    "TUR-3041",
+    "TUR-3042",
+    "TUR-3043",
+    "TUR-3044",
+    "TUR-3045",
+    "TUR-3047",
+    "TUR-3048",
+    "TUR-4841",
+    "TUR-4842",
+    "TUR-5518",
+    "TUR-5519",
+    "TUR-5520",
+    "TUR-5521",
+    "imbros-tenedos"
+   ],
+   "from": 1815,
+   "why": "Turkey, without Kars, Ardahan, Artvin and Iğdır (Russia family) and Hatay (France family)"
+  }
+ ],
+ "changes": [
+  {
+   "date": "1923-10-06",
+   "what": "Turkish troops enter Istanbul two days after the last Allied troops leave",
+   "source": {
+    "title": "Occupation of Constantinople (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Occupation_of_Constantinople"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TUR-2265"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Occupation of Constantinople (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Occupation_of_Constantinople"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1918-11-13",
+      "note": "Occupied by British, French and Italian troops after the Armistice of Mudros, until October 1923",
+      "source": {
+       "title": "Occupation of Constantinople (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Occupation_of_Constantinople"
+      },
+      "with": "France",
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "TUR-2239"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Occupation of Constantinople (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Occupation_of_Constantinople"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1918-11-13",
+      "note": "The forts of the Dardanelles, occupied by British and French troops after the Armistice of Mudros, until 1923",
+      "source": {
+       "title": "Occupation of Constantinople (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Occupation_of_Constantinople"
+      },
+      "with": "France",
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1923-09-23",
+   "what": "Greece hands Imbros and Tenedos back to Turkey under the Treaty of Lausanne",
+   "source": {
+    "title": "Treaty of Lausanne (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Lausanne"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "imbros-tenedos"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Imbros (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Imbros"
+     },
+     "hatch": {
+      "by": "Greece",
+      "since": "1912-10-18",
+      "note": "Imbros and Tenedos, taken by the Greek navy in the First Balkan War and run by Greece until September 1923, though the Powers gave them back to the Ottomans in 1914",
+      "source": {
+       "title": "Imbros (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Imbros"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1922-10-15",
+   "what": "Under the Armistice of Mudanya the Greek army leaves Eastern Thrace, handed over to Turkey through the Allies",
+   "source": {
+    "title": "Armistice of Mudanya (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Armistice_of_Mudanya"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TUR-2240",
+      "TUR-2241",
+      "TUR-2242"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Greco-Turkish War (1919–1922) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Greco-Turkish_War_(1919–1922)"
+     },
+     "hatch": {
+      "by": "Greece",
+      "since": "1920-07-25",
+      "note": "Eastern Thrace, occupied by the Greek army from July 1920 and given up after the Armistice of Mudanya (October 1922)",
+      "source": {
+       "title": "Greco-Turkish War (1919–1922) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Greco-Turkish_War_(1919–1922)"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1922-09-09",
+   "what": "The Turkish army enters Smyrna: the Greek army has been driven out of Anatolia",
+   "source": {
+    "title": "Greco-Turkish War (1919–1922) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Greco-Turkish_War_(1919–1922)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TUR-2230",
+      "TUR-2277",
+      "TUR-2229"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Greco-Turkish War (1919–1922) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Greco-Turkish_War_(1919–1922)"
+     },
+     "hatch": {
+      "by": "Greece",
+      "since": "1919-05-15",
+      "note": "Occupied by the Greek army from the landing at Smyrna (15 May 1919) until September 1922",
+      "source": {
+       "title": "Greco-Turkish War (1919–1922) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Greco-Turkish_War_(1919–1922)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "TUR-2238",
+      "TUR-2264",
+      "TUR-3014"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Greco-Turkish War (1919–1922) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Greco-Turkish_War_(1919–1922)"
+     },
+     "hatch": {
+      "by": "Greece",
+      "since": "1920-06-22",
+      "note": "Taken by the Greek army in its summer offensive of 1920, held until September 1922",
+      "source": {
+       "title": "Greco-Turkish War (1919–1922) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Greco-Turkish_War_(1919–1922)"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "TUR-2276",
+      "TUR-2269",
+      "TUR-2272",
+      "TUR-2263"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Greco-Turkish War (1919–1922) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Greco-Turkish_War_(1919–1922)"
+     },
+     "hatch": {
+      "by": "Greece",
+      "since": "1921-07-17",
+      "note": "Taken by the Greek army at Kütahya–Eskişehir in July 1921, held until the Turkish offensive of August 1922",
+      "source": {
+       "title": "Greco-Turkish War (1919–1922) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Greco-Turkish_War_(1919–1922)"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1922-01-05",
+   "what": "The last French troops leave Cilicia under the Treaty of Ankara",
+   "source": {
+    "title": "Treaty of Ankara (1921) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Ankara_(1921)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TUR-3018",
+      "TUR-2285",
+      "TUR-4842"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Franco-Turkish War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Franco-Turkish_War"
+     },
+     "hatch": {
+      "by": "France",
+      "since": "1918-12-17",
+      "note": "Cilicia, occupied by French troops (with the Armenian Legion) after the Armistice of Mudros, until the Treaty of Ankara (evacuated in January 1922)",
+      "source": {
+       "title": "Franco-Turkish War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Franco-Turkish_War"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1921-12-25",
+   "what": "The French leave Antep and Kilis under the Treaty of Ankara",
+   "source": {
+    "title": "Treaty of Ankara (1921) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Ankara_(1921)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TUR-3016",
+      "TUR-4841"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Siege of Aintab (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Aintab"
+     },
+     "hatch": {
+      "by": "France",
+      "since": "1921-02-08",
+      "note": "Antep, taken by the French after a ten-month siege, held until the Treaty of Ankara (evacuated in December 1921)",
+      "source": {
+       "title": "Siege of Aintab (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Siege_of_Aintab"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1921-07-17",
+   "what": "The Greek army takes Kütahya, Eskişehir and Afyonkarahisar",
+   "source": {
+    "title": "Battle of Kütahya–Eskişehir (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Kütahya–Eskişehir"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TUR-2276",
+      "TUR-2269",
+      "TUR-2272",
+      "TUR-2263"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Greco-Turkish War (1919–1922) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Greco-Turkish_War_(1919–1922)"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1921-07-05",
+   "what": "The Italians leave Antalya and the coast of Muğla",
+   "source": {
+    "title": "Turkish War of Independence (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Turkish_War_of_Independence"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TUR-2271",
+      "TUR-2278"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Turkish War of Independence (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Turkish_War_of_Independence"
+     },
+     "hatch": {
+      "by": "Italy",
+      "since": "1919-03-28",
+      "note": "The Italian zone around Antalya and on the coast of Muğla, held from spring 1919 until the Italians left in mid-1921",
+      "source": {
+       "title": "Turkish War of Independence (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Turkish_War_of_Independence"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1921-06-28",
+   "what": "The Greek army leaves Izmit and Yalova",
+   "source": {
+    "title": "Greco-Turkish War (1919–1922) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Greco-Turkish_War_(1919–1922)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TUR-2266",
+      "TUR-5518"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Greco-Turkish War (1919–1922) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Greco-Turkish_War_(1919–1922)"
+     },
+     "hatch": {
+      "by": "Greece",
+      "since": "1920-07-07",
+      "note": "Izmit and the Yalova coast, held by Greek troops from July 1920 to June 1921",
+      "source": {
+       "title": "Greco-Turkish War (1919–1922) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Greco-Turkish_War_(1919–1922)"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1921-02-08",
+   "what": "Antep surrenders to the French after a ten-month siege",
+   "source": {
+    "title": "Siege of Aintab (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Aintab"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TUR-3016",
+      "TUR-4841"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Siege of Aintab (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Aintab"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1920-07-25",
+   "what": "The Greek army takes Adrianople and Eastern Thrace",
+   "source": {
+    "title": "Greco-Turkish War (1919–1922) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Greco-Turkish_War_(1919–1922)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TUR-2240",
+      "TUR-2241",
+      "TUR-2242"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Greco-Turkish War (1919–1922) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Greco-Turkish_War_(1919–1922)"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1920-07-07",
+   "what": "Greek troops take over Izmit and the Yalova coast",
+   "source": {
+    "title": "Greco-Turkish War (1919–1922) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Greco-Turkish_War_(1919–1922)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TUR-2266",
+      "TUR-5518"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Greco-Turkish War (1919–1922) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Greco-Turkish_War_(1919–1922)"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1920-06-22",
+   "what": "The Greek summer offensive takes Balıkesir, Bursa and Uşak",
+   "source": {
+    "title": "Greco-Turkish War (1919–1922) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Greco-Turkish_War_(1919–1922)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TUR-2238",
+      "TUR-2264",
+      "TUR-3014"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Greco-Turkish War (1919–1922) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Greco-Turkish_War_(1919–1922)"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1920-04-11",
+   "what": "The French garrison of Urfa leaves the town after a two-month siege",
+   "source": {
+    "title": "Battle of Urfa (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Urfa"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TUR-3017"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Battle of Urfa (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Urfa"
+     },
+     "hatch": {
+      "by": "France",
+      "since": "1919-10-30",
+      "note": "Handed by the British to the French in October 1919, until the siege of Urfa (April 1920)",
+      "source": {
+       "title": "Battle of Urfa (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Battle_of_Urfa"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1920-04-01",
+   "what": "Antep rises against the French garrison",
+   "source": {
+    "title": "Siege of Aintab (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Aintab"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TUR-3016",
+      "TUR-4841"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Siege of Aintab (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Aintab"
+     },
+     "hatch": {
+      "by": "France",
+      "since": "1919-11-05",
+      "note": "Antep and Kilis, handed by the British to the French in November 1919; the town rose against them in April 1920",
+      "source": {
+       "title": "Siege of Aintab (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Siege_of_Aintab"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1920-02-11",
+   "what": "The French leave Marash after three weeks of fighting",
+   "source": {
+    "title": "Battle of Marash (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Marash"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TUR-2283"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Battle of Marash (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Marash"
+     },
+     "hatch": {
+      "by": "France",
+      "since": "1919-10-30",
+      "note": "Handed by the British to the French in October 1919, until the battle of Marash (February 1920)",
+      "source": {
+       "title": "Battle of Marash (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Battle_of_Marash"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1919-11-05",
+   "what": "British troops hand Antep and Kilis over to the French",
+   "source": {
+    "title": "Siege of Aintab (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Aintab"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TUR-3016",
+      "TUR-4841"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Siege of Aintab (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Aintab"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1918-12-17",
+      "note": "Occupied by British troops after the Armistice of Mudros, until they handed it to France in November 1919",
+      "source": {
+       "title": "Siege of Aintab (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Siege_of_Aintab"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1919-10-30",
+   "what": "British troops hand Marash and Urfa over to the French",
+   "source": {
+    "title": "Franco-Turkish War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Franco-Turkish_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TUR-2283"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Battle of Marash (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Marash"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1919-02-22",
+      "note": "Occupied by British troops after the Armistice of Mudros, until they handed it to France in October 1919",
+      "source": {
+       "title": "Battle of Marash (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Battle_of_Marash"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "TUR-3017"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Battle of Urfa (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Urfa"
+     },
+     "hatch": {
+      "by": "United Kingdom",
+      "since": "1919-03-24",
+      "note": "Occupied by British troops after the Armistice of Mudros, until they handed it to France in October 1919",
+      "source": {
+       "title": "Battle of Urfa (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Battle_of_Urfa"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1919-05-15",
+   "what": "The Greek army lands at Smyrna",
+   "source": {
+    "title": "Occupation of Smyrna (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Occupation_of_Smyrna"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TUR-2230",
+      "TUR-2277",
+      "TUR-2229"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Occupation of Smyrna (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Occupation_of_Smyrna"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1919-03-28",
+   "what": "Italian troops land at Antalya",
+   "source": {
+    "title": "Turkish War of Independence (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Turkish_War_of_Independence"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TUR-2271",
+      "TUR-2278"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Turkish War of Independence (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Turkish_War_of_Independence"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1919-03-24",
+   "what": "British troops occupy Urfa",
+   "source": {
+    "title": "Battle of Urfa (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Urfa"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TUR-3017"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1919-02-22",
+   "what": "British troops occupy Marash",
+   "source": {
+    "title": "Battle of Marash (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Marash"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TUR-2283"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-12-17",
+   "what": "French troops land at Mersin and occupy Cilicia; British troops occupy Antep",
+   "source": {
+    "title": "Franco-Turkish War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Franco-Turkish_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TUR-3018",
+      "TUR-2285",
+      "TUR-4842"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    },
+    {
+     "pieces": [
+      "TUR-3016",
+      "TUR-4841"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-11-13",
+   "what": "British, French and Italian troops occupy Constantinople and the Dardanelles",
+   "source": {
+    "title": "Occupation of Constantinople (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Occupation_of_Constantinople"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TUR-2265"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    },
+    {
+     "pieces": [
+      "TUR-2239"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-03-12",
+   "what": "The Ottoman army takes back Erzurum, Trabzon, Erzincan and Van as the Russian army falls apart",
+   "source": {
+    "title": "Caucasus campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Caucasus_campaign"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TUR-2307"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Caucasus campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Caucasus_campaign"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1914-11-02",
+      "note": "Bayazid and the Eleşkirt valley, held by the Russian army from November 1914 until the Ottoman advance of March 1918",
+      "source": {
+       "title": "Caucasus campaign (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Caucasus_campaign"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "TUR-3048"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Caucasus campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Caucasus_campaign"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1915-05-19",
+      "note": "Van, held by Armenian defenders and the Russian army from May 1915 until April 1918",
+      "source": {
+       "title": "Caucasus campaign (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Caucasus_campaign"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "TUR-2299",
+      "TUR-2310",
+      "TUR-2311"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Erzurum offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Erzurum_offensive"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1916-02-16",
+      "note": "Taken by the Russian army in the Erzurum offensive (February-March 1916), held until March 1918",
+      "source": {
+       "title": "Erzurum offensive (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Erzurum_offensive"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "TUR-2301",
+      "TUR-2302"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Trebizond campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Trebizond_campaign"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1916-04-18",
+      "note": "Taken by the Russian army in the Trebizond campaign (March-April 1916), held until February 1918",
+      "source": {
+       "title": "Trebizond campaign (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Trebizond_campaign"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "TUR-2300",
+      "TUR-3032",
+      "TUR-3031"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Battle of Erzincan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Erzincan"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1916-07-16",
+      "note": "Taken by the Russian army in the Erzincan offensive (July 1916), held until February 1918",
+      "source": {
+       "title": "Battle of Erzincan (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Battle_of_Erzincan"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1916-07-16",
+   "what": "The Russian army takes Bayburt, Gümüşhane and Erzincan",
+   "source": {
+    "title": "Battle of Erzincan (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Erzincan"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TUR-2300",
+      "TUR-3032",
+      "TUR-3031"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1916-04-18",
+   "what": "The Russian army takes Trabzon",
+   "source": {
+    "title": "Trebizond campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Trebizond_campaign"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TUR-2301",
+      "TUR-2302"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1916-02-16",
+   "what": "The Russian army takes Erzurum, then Muş and Bitlis",
+   "source": {
+    "title": "Erzurum offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Erzurum_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TUR-2299",
+      "TUR-2310",
+      "TUR-2311"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1915-05-19",
+   "what": "The Russian army relieves Van, held by its Armenian defenders",
+   "source": {
+    "title": "Defense of Van (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Defense_of_Van"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TUR-3048"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1914-11-02",
+   "what": "The Russian army crosses the border and takes Bayazid",
+   "source": {
+    "title": "Bergmann offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Bergmann_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TUR-2307"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1912-10-18",
+   "what": "The Greek navy takes Imbros, then Tenedos",
+   "source": {
+    "title": "First Balkan War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/First_Balkan_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "imbros-tenedos"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1879-03-01",
+   "what": "The last Russian troops leave Adrianople and Eastern Thrace",
+   "source": {
+    "title": "Russo-Turkish War (1877–1878) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Russo-Turkish_War_(1877–1878)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TUR-2240",
+      "TUR-2241",
+      "TUR-2242"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Russo-Turkish War (1877–1878) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Russo-Turkish_War_(1877–1878)"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1878-01-20",
+      "note": "Taken by the Russian army in January 1878 (Adrianople), held after the war until the Russians left in 1879",
+      "source": {
+       "title": "Russo-Turkish War (1877–1878) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Russo-Turkish_War_(1877–1878)"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1878-07-13",
+   "what": "The Congress of Berlin gives Bayazid back to the Ottoman Empire",
+   "source": {
+    "title": "Treaty of Berlin (1878) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Berlin_(1878)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TUR-2307"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Russo-Turkish War (1877–1878) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Russo-Turkish_War_(1877–1878)"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1877-04-30",
+      "note": "Bayazid, taken by the Russian army in the Russo-Turkish War and given back at the Congress of Berlin",
+      "source": {
+       "title": "Russo-Turkish War (1877–1878) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Russo-Turkish_War_(1877–1878)"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1878-01-20",
+   "what": "The Russian army enters Adrianople",
+   "source": {
+    "title": "Russo-Turkish War (1877–1878) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Russo-Turkish_War_(1877–1878)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "TUR-2240",
+      "TUR-2241",
+      "TUR-2242"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1877-04-30",
+   "what": "The Russian army takes Bayazid",
+   "source": {
+    "title": "Russo-Turkish War (1877–1878) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Russo-Turkish_War_(1877–1878)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "TUR-2307"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1840-12-29",
+   "what": "Ibrahim Pasha's army leaves Cilicia and Syria, which go back to the Ottoman Empire",
+   "source": {
+    "title": "Oriental Crisis of 1840 (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Oriental_Crisis_of_1840"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "TUR-3018",
+      "TUR-2285",
+      "TUR-4842",
+      "TUR-3016",
+      "TUR-4841"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Egyptian–Ottoman War (1831–1833) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Egyptian–Ottoman_War_(1831–1833)"
+     },
+     "hatch": {
+      "by": "Egypt",
+      "since": "1832-07-29",
+      "note": "Conquered by Ibrahim Pasha for his father Muhammad Ali, governor of Egypt, after the battle of Belen; Adana was granted to him at Kütahya (1833) and given back in 1840",
+      "source": {
+       "title": "Egyptian–Ottoman War (1831–1833) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Egyptian–Ottoman_War_(1831–1833)"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1833-05-14",
+   "what": "By the Convention of Kütahya Ibrahim Pasha leaves central Anatolia, keeping Adana",
+   "source": {
+    "title": "Convention of Kütahya (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Convention_of_Kütahya"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "TUR-3011",
+      "TUR-3012",
+      "TUR-3020"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Battle of Konya (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Konya"
+     },
+     "hatch": {
+      "by": "Egypt",
+      "since": "1832-12-21",
+      "note": "Held by Ibrahim Pasha's army after its victory at Konya, until the Convention of Kütahya (May 1833)",
+      "source": {
+       "title": "Battle of Konya (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Battle_of_Konya"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1832-12-21",
+   "what": "Ibrahim Pasha defeats the Ottoman army at Konya",
+   "source": {
+    "title": "Battle of Konya (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Konya"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "TUR-3011",
+      "TUR-3012",
+      "TUR-3020"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1832-07-29",
+   "what": "Ibrahim Pasha wins at Belen and enters Cilicia",
+   "source": {
+    "title": "Egyptian–Ottoman War (1831–1833) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Egyptian–Ottoman_War_(1831–1833)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "TUR-3018",
+      "TUR-2285",
+      "TUR-4842",
+      "TUR-3016",
+      "TUR-4841"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    }
+   ]
+  }
+ ]
+}

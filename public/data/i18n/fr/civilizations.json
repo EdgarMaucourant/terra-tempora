@@ -98,6 +98,9 @@
  "french-sudan": {
   "name": "Soudan français"
  },
+ "turkey": {
+  "name": "Turquie"
+ },
  "mahdist-state": {
   "name": "État mahdiste"
  },
@@ -185,9 +188,6 @@
  "spain": {
   "name": "Espagne"
  },
- "ottoman-empire": {
-  "name": "Empire ottoman"
- },
  "tanzania": {
   "name": "Tanzanie"
  },
@@ -220,9 +220,6 @@
  },
  "portuguese-mozambique": {
   "name": "Mozambique portugais"
- },
- "turkey": {
-  "name": "Turquie"
  },
  "imperial-british-east-africa-company": {
   "name": "Compagnie impériale britannique d’Afrique de l’Est"
