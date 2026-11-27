@@ -2458,6 +2458,28 @@
   "groupUntil": "2006-06-03",
   "periods": [
    {
+    "from": "1852-03-13",
+    "name": "Principality of Montenegro",
+    "wikipedia": "Principality of Montenegro",
+    "fr": "Principauté du Monténégro",
+    "es": "Principado de Montenegro",
+    "label": "Principality of Montenegro",
+    "labelFr": "Principauté du Monténégro",
+    "labelEs": "Principado de Montenegro",
+    "note": "Secular principality from 1852, independent from 1878"
+   },
+   {
+    "from": "1910-08-28",
+    "name": "Kingdom of Montenegro",
+    "wikipedia": "Kingdom of Montenegro",
+    "fr": "Royaume du Monténégro",
+    "es": "Reino de Montenegro",
+    "label": "Kingdom of Montenegro",
+    "labelFr": "Royaume du Monténégro",
+    "labelEs": "Reino de Montenegro",
+    "note": "Kingdom from 1910 until its union with Serbia in November 1918"
+   },
+   {
     "from": "1945-11-29",
     "name": "Socialist Republic of Montenegro",
     "wikipedia": "Socialist Republic of Montenegro",
@@ -3174,6 +3196,17 @@
   "groupFrom": "1945-11-29",
   "groupUntil": "2006-06-05",
   "periods": [
+   {
+    "from": "1882-03-06",
+    "name": "Kingdom of Serbia",
+    "wikipedia": "Kingdom of Serbia",
+    "fr": "Royaume de Serbie",
+    "es": "Reino de Serbia",
+    "label": "Kingdom of Serbia",
+    "labelFr": "Royaume de Serbie",
+    "labelEs": "Reino de Serbia",
+    "note": "Kingdom from 1882 until it joined the Kingdom of Serbs, Croats and Slovenes in 1918"
+   },
    {
     "from": "1945-11-29",
     "name": "Socialist Republic of Serbia",

@@ -641,6 +641,9 @@
  "eritrea": {
   "name": "Eritrea"
  },
+ "austria-hungary": {
+  "name": "Austria-Hungría"
+ },
  "north-korea": {
   "name": "Corea del Norte"
  },
@@ -662,6 +665,9 @@
  "french-dahomey": {
   "name": "Dahomey francés"
  },
+ "bulgaria": {
+  "name": "Bulgaria"
+ },
  "beylik-of-constantine": {
   "name": "Beylicato de Constantina"
  },
@@ -670,9 +676,6 @@
  },
  "trans-juba": {
   "name": "Trans-Juba"
- },
- "bulgaria": {
-  "name": "Bulgaria"
  },
  "honduras": {
   "name": "Honduras"
@@ -716,6 +719,9 @@
  "emirate-of-transjordan": {
   "name": "Emirato de Transjordania"
  },
+ "serbia": {
+  "name": "Serbia"
+ },
  "azerbaijan": {
   "name": "Azerbaiyán"
  },
@@ -736,9 +742,6 @@
  },
  "czech-republic": {
   "name": "República Checa"
- },
- "serbia": {
-  "name": "Serbia"
  },
  "lagos-colony": {
   "name": "Colonia de Lagos"
@@ -769,9 +772,6 @@
  },
  "united-arab-emirates": {
   "name": "Emiratos Árabes Unidos"
- },
- "austria-hungary": {
-  "name": "Austria-Hungría"
  },
  "federation-of-south-arabia": {
   "name": "Federación de Arabia del Sur"

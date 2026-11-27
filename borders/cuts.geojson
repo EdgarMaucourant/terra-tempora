@@ -24937,6 +24937,218 @@
      ]
     ]
    }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sandzak-raska",
+    "from": "SRB-834",
+    "note": "Novi Pazar and Tutin, the Serbian part of the Sandžak of Novi Pazar",
+    "source": {
+     "title": "Sandžak (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Sandžak"
+    }
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       19.0,
+       43.6
+      ],
+      [
+       19.55,
+       43.66
+      ],
+      [
+       19.75,
+       43.6
+      ],
+      [
+       19.95,
+       43.53
+      ],
+      [
+       20.15,
+       43.44
+      ],
+      [
+       20.35,
+       43.32
+      ],
+      [
+       20.52,
+       43.24
+      ],
+      [
+       20.72,
+       43.18
+      ],
+      [
+       21.05,
+       43.15
+      ],
+      [
+       21.05,
+       42.7
+      ],
+      [
+       19.0,
+       42.7
+      ],
+      [
+       19.0,
+       43.6
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "sandzak-zlatibor",
+    "from": "SRB-1505",
+    "note": "Sjenica, Prijepolje, Nova Varoš and Priboj, the Serbian part of the Sandžak of Novi Pazar",
+    "source": {
+     "title": "Sandžak (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Sandžak"
+    }
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       19.0,
+       43.6
+      ],
+      [
+       19.55,
+       43.66
+      ],
+      [
+       19.75,
+       43.6
+      ],
+      [
+       19.95,
+       43.53
+      ],
+      [
+       20.15,
+       43.44
+      ],
+      [
+       20.35,
+       43.32
+      ],
+      [
+       20.52,
+       43.24
+      ],
+      [
+       20.72,
+       43.18
+      ],
+      [
+       21.05,
+       43.15
+      ],
+      [
+       21.05,
+       42.7
+      ],
+      [
+       19.0,
+       42.7
+      ],
+      [
+       19.0,
+       43.6
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "outlands-bosilegrad",
+    "from": "SRB-841",
+    "note": "Bosilegrad, one of the Western Outlands",
+    "source": {
+     "title": "Western Outlands (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Western_Outlands"
+    }
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       22.33,
+       42.75
+      ],
+      [
+       22.62,
+       42.75
+      ],
+      [
+       22.62,
+       42.25
+      ],
+      [
+       22.33,
+       42.25
+      ],
+      [
+       22.33,
+       42.75
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "outlands-caribrod",
+    "from": "SRB-121",
+    "note": "Caribrod (Dimitrovgrad), one of the Western Outlands",
+    "source": {
+     "title": "Western Outlands (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Western_Outlands"
+    }
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       22.68,
+       43.3
+      ],
+      [
+       23.1,
+       43.3
+      ],
+      [
+       23.1,
+       42.8
+      ],
+      [
+       22.68,
+       42.8
+      ],
+      [
+       22.68,
+       43.3
+      ]
+     ]
+    ]
+   }
   }
  ]
 }

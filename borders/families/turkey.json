@@ -228,6 +228,8 @@
     "SRB-841",
     "SRB-843",
     "SRB-844",
+    "sandzak-raska",
+    "sandzak-zlatibor",
     "KOS-5886",
     "KOS-5887",
     "KOS-5888",
@@ -374,9 +376,11 @@
     "MKD-3007",
     "MKD-4845",
     "MKD-4846",
-    "MKD-5883"
+    "MKD-5883",
+    "outlands-bosilegrad",
+    "outlands-caribrod"
    ],
-   "from": 1941,
+   "from": 1912,
    "why": "Serbia (not Vojvodina), Kosovo, Bosnia, North Macedonia and Montenegro (not Old Montenegro or the Bay of Kotor): Ottoman land in 1815"
   },
   {
@@ -394,7 +398,7 @@
     "ALB-1528",
     "ALB-1529"
    ],
-   "from": 1939,
+   "from": 1912,
    "why": "Albania, Ottoman until 1912"
   }
  ],
@@ -837,7 +841,11 @@
       "MKD-3007",
       "MKD-4845",
       "MKD-4846",
-      "MKD-5883"
+      "MKD-5883",
+      "sandzak-raska",
+      "sandzak-zlatibor",
+      "outlands-bosilegrad",
+      "outlands-caribrod"
      ],
      "owner": "Yugoslavia",
      "source": {
@@ -1364,7 +1372,9 @@
       "SRB-838",
       "SRB-839",
       "SRB-843",
-      "SRB-844"
+      "SRB-844",
+      "sandzak-raska",
+      "sandzak-zlatibor"
      ],
      "owner": "Yugoslavia",
      "source": {
@@ -1396,7 +1406,9 @@
     {
      "pieces": [
       "SRB-841",
-      "SRB-121"
+      "SRB-121",
+      "outlands-bosilegrad",
+      "outlands-caribrod"
      ],
      "owner": "Yugoslavia",
      "source": {
@@ -2037,7 +2049,11 @@
       "MKD-3007",
       "MKD-4845",
       "MKD-4846",
-      "MKD-5883"
+      "MKD-5883",
+      "sandzak-raska",
+      "sandzak-zlatibor",
+      "outlands-bosilegrad",
+      "outlands-caribrod"
      ],
      "owner": "Yugoslavia",
      "source": {
@@ -2737,6 +2753,38 @@
    ]
   },
   {
+   "date": "1921-11-30",
+   "what": "Yugoslav troops leave northern Albania after the Conference of Ambassadors fixes its borders",
+   "source": {
+    "title": "Albania during World War I (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Albania_during_World_War_I"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ALB-1502",
+      "ALB-1526"
+     ],
+     "owner": "Albania",
+     "source": {
+      "title": "Albania during World War I (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Albania_during_World_War_I"
+     },
+     "hatch": {
+      "by": "Yugoslavia",
+      "since": "1918-10-31",
+      "note": "Held by Serbian, then Yugoslav, troops after the war, until the Conference of Ambassadors fixed Albania's borders in November 1921",
+      "source": {
+       "title": "Albania during World War I (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Albania_during_World_War_I"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
    "date": "1921-07-17",
    "what": "The Greek army takes Kütahya, Eskişehir and Afyonkarahisar",
    "source": {
@@ -2845,6 +2893,155 @@
    ]
   },
   {
+   "date": "1920-09-02",
+   "what": "After the Vlora War Italy agrees to leave Albania, keeping only the island of Sazan",
+   "source": {
+    "title": "Vlora War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Vlora_War"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ALB-1528"
+     ],
+     "owner": "Albania",
+     "source": {
+      "title": "Albania during World War I (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Albania_during_World_War_I"
+     },
+     "hatch": {
+      "by": "Italy",
+      "since": "1918-10-31",
+      "note": "Occupied by Italy after the Austro-Hungarian retreat, until it withdrew in 1920",
+      "source": {
+       "title": "Albania during World War I (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Albania_during_World_War_I"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "ALB-1494",
+      "ALB-1529",
+      "ALB-1524"
+     ],
+     "owner": "Albania",
+     "source": {
+      "title": "Albania during World War I (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Albania_during_World_War_I"
+     },
+     "hatch": {
+      "by": "Italy",
+      "since": "1918-10-14",
+      "note": "Occupied by Italy after the Austro-Hungarian retreat, until it withdrew in 1920",
+      "source": {
+       "title": "Albania during World War I (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Albania_during_World_War_I"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "ALB-1495",
+      "ALB-1523"
+     ],
+     "owner": "Albania",
+     "source": {
+      "title": "Albania during World War I (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Albania_during_World_War_I"
+     },
+     "hatch": {
+      "by": "Italy",
+      "since": "1918-10-14",
+      "note": "Occupied by Italy after the Austro-Hungarian retreat, until it withdrew in 1920",
+      "source": {
+       "title": "Albania during World War I (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Albania_during_World_War_I"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "ALB-1504"
+     ],
+     "owner": "Albania",
+     "source": {
+      "title": "Vlora War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Vlora_War"
+     },
+     "hatch": {
+      "by": "Italy",
+      "since": "1914-12-25",
+      "note": "Held by Italy from December 1914 until the Vlora War of 1920",
+      "source": {
+       "title": "Vlora War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Vlora_War"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "ALB-1525"
+     ],
+     "owner": "Albania",
+     "source": {
+      "title": "Albania during World War I (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Albania_during_World_War_I"
+     },
+     "hatch": {
+      "by": "Italy",
+      "since": "1916-09-01",
+      "note": "Held by Italy from 1916 until it withdrew in September 1920",
+      "source": {
+       "title": "Albania during World War I (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Albania_during_World_War_I"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1920-08-09",
+   "what": "The Treaty of Neuilly comes into force: Bulgaria gives Strumica and the Western Outlands to Yugoslavia",
+   "source": {
+    "title": "Treaty of Neuilly-sur-Seine (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Neuilly-sur-Seine"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "outlands-bosilegrad",
+      "outlands-caribrod"
+     ],
+     "owner": "Bulgaria",
+     "source": {
+      "title": "Kingdom of Bulgaria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Bulgaria"
+     }
+    },
+    {
+     "pieces": [
+      "MKD-2993",
+      "MKD-2997",
+      "MKD-2999",
+      "MKD-2995"
+     ],
+     "owner": "Bulgaria",
+     "source": {
+      "title": "Kingdom of Bulgaria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Bulgaria"
+     }
+    }
+   ]
+  },
+  {
    "date": "1920-07-25",
    "what": "The Greek army takes Adrianople and Eastern Thrace",
    "source": {
@@ -2934,6 +3131,37 @@
    ]
   },
   {
+   "date": "1920-05-27",
+   "what": "French troops leave Korçë",
+   "source": {
+    "title": "Autonomous Albanian Republic of Korçë (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Autonomous_Albanian_Republic_of_Korçë"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "ALB-1521"
+     ],
+     "owner": "Albania",
+     "source": {
+      "title": "Autonomous Albanian Republic of Korçë (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Autonomous_Albanian_Republic_of_Korçë"
+     },
+     "hatch": {
+      "by": "France",
+      "since": "1916-11-29",
+      "note": "The Autonomous Albanian Republic of Korçë, under French military rule, until May 1920",
+      "source": {
+       "title": "Autonomous Albanian Republic of Korçë (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Autonomous_Albanian_Republic_of_Korçë"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
    "date": "1920-05-14",
    "what": "The Greek army enters Western Thrace, given to Greece by the Allies",
    "source": {
@@ -3012,6 +3240,38 @@
        "title": "Siege of Aintab (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Siege_of_Aintab"
       }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1920-03-12",
+   "what": "The inter-allied force leaves Shkodër",
+   "source": {
+    "title": "Albania during World War I (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Albania_during_World_War_I"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ALB-1498"
+     ],
+     "owner": "Albania",
+     "source": {
+      "title": "Albania during World War I (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Albania_during_World_War_I"
+     },
+     "hatch": {
+      "by": "France",
+      "since": "1918-10-31",
+      "note": "Held by an inter-allied force under French command after the war, until March 1920",
+      "source": {
+       "title": "Albania during World War I (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Albania_during_World_War_I"
+      },
+      "with": "Italy",
+      "occupied": true
      }
     }
    ]
@@ -3322,6 +3582,279 @@
    ]
   },
   {
+   "date": "1918-12-01",
+   "what": "The Kingdom of Serbs, Croats and Slovenes is proclaimed, uniting Serbia, Montenegro and the South Slav lands of Austria-Hungary",
+   "source": {
+    "title": "Creation of Yugoslavia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Creation_of_Yugoslavia"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SRB-1505",
+      "SRB-279",
+      "SRB-829",
+      "SRB-831",
+      "SRB-832",
+      "SRB-833",
+      "SRB-834",
+      "SRB-836",
+      "SRB-837",
+      "SRB-838",
+      "SRB-839"
+     ],
+     "owner": "Serbia",
+     "source": {
+      "title": "Kingdom of Serbia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Serbia"
+     }
+    },
+    {
+     "pieces": [
+      "SRB-844",
+      "SRB-125",
+      "SRB-830",
+      "SRB-121",
+      "SRB-841",
+      "SRB-843",
+      "SRB-835"
+     ],
+     "owner": "Serbia",
+     "source": {
+      "title": "Kingdom of Serbia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Serbia"
+     }
+    },
+    {
+     "pieces": [
+      "sandzak-raska",
+      "sandzak-zlatibor"
+     ],
+     "owner": "Serbia",
+     "source": {
+      "title": "Kingdom of Serbia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Serbia"
+     }
+    },
+    {
+     "pieces": [
+      "KOS-5893",
+      "KOS-5892",
+      "KOS-5897",
+      "KOS-5894",
+      "KOS-5895",
+      "KOS-5901"
+     ],
+     "owner": "Serbia",
+     "source": {
+      "title": "Kingdom of Serbia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Serbia"
+     }
+    },
+    {
+     "pieces": [
+      "KOS-5891",
+      "KOS-5896",
+      "KOS-5898",
+      "KOS-5899",
+      "KOS-5900",
+      "KOS-5902",
+      "KOS-5903",
+      "KOS-5904",
+      "KOS-5905",
+      "KOS-5906",
+      "KOS-5907",
+      "KOS-5908",
+      "KOS-5909",
+      "KOS-5910",
+      "KOS-5911",
+      "KOS-5912",
+      "KOS-5913",
+      "KOS-5914",
+      "KOS-5915"
+     ],
+     "owner": "Serbia",
+     "source": {
+      "title": "Kingdom of Serbia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Serbia"
+     }
+    },
+    {
+     "pieces": [
+      "KOS-5886",
+      "KOS-5887",
+      "KOS-5888",
+      "KOS-5889",
+      "KOS-5890"
+     ],
+     "owner": "Montenegro",
+     "source": {
+      "title": "Kingdom of Montenegro (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Montenegro"
+     }
+    },
+    {
+     "pieces": [
+      "MKD-2894",
+      "MKD-2895",
+      "MKD-2897",
+      "MKD-2898",
+      "MKD-2899",
+      "MKD-2901",
+      "MKD-2902",
+      "MKD-2903",
+      "MKD-2904",
+      "MKD-2905",
+      "MKD-2906",
+      "MKD-2907",
+      "MKD-2908",
+      "MKD-2909",
+      "MKD-2910",
+      "MKD-2911",
+      "MKD-2912",
+      "MKD-2913",
+      "MKD-2914",
+      "MKD-2915",
+      "MKD-2916",
+      "MKD-2917",
+      "MKD-2918",
+      "MKD-2919",
+      "MKD-2920",
+      "MKD-2921",
+      "MKD-2922",
+      "MKD-2923",
+      "MKD-2924",
+      "MKD-2925",
+      "MKD-2926",
+      "MKD-2927",
+      "MKD-2928",
+      "MKD-2929",
+      "MKD-2930",
+      "MKD-2931",
+      "MKD-2932",
+      "MKD-2933",
+      "MKD-2934",
+      "MKD-2935",
+      "MKD-2936",
+      "MKD-2937",
+      "MKD-2938",
+      "MKD-2939",
+      "MKD-2940",
+      "MKD-2941",
+      "MKD-2942",
+      "MKD-2943",
+      "MKD-2944",
+      "MKD-2945",
+      "MKD-2946",
+      "MKD-2948",
+      "MKD-2950",
+      "MKD-2951",
+      "MKD-2952",
+      "MKD-2953",
+      "MKD-2954",
+      "MKD-2955",
+      "MKD-2956",
+      "MKD-2957",
+      "MKD-2958",
+      "MKD-2959",
+      "MKD-2960",
+      "MKD-2961",
+      "MKD-2962",
+      "MKD-2963",
+      "MKD-2994",
+      "MKD-2996",
+      "MKD-2998",
+      "MKD-3000",
+      "MKD-3003",
+      "MKD-3004",
+      "MKD-3005",
+      "MKD-3006",
+      "MKD-3007",
+      "MKD-4845",
+      "MKD-4846",
+      "MKD-5883"
+     ],
+     "owner": "Serbia",
+     "source": {
+      "title": "Kingdom of Serbia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Serbia"
+     }
+    },
+    {
+     "pieces": [
+      "MKD-2896",
+      "MKD-2947"
+     ],
+     "owner": "Serbia",
+     "source": {
+      "title": "Kingdom of Serbia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Serbia"
+     }
+    },
+    {
+     "pieces": [
+      "MNE-1516",
+      "MNE-1510",
+      "MNE-1509",
+      "MNE-1501",
+      "MNE-1503"
+     ],
+     "owner": "Montenegro",
+     "source": {
+      "title": "Kingdom of Montenegro (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Montenegro"
+     }
+    },
+    {
+     "pieces": [
+      "MNE-1496",
+      "MNE-1497",
+      "MNE-1508",
+      "MNE-1512",
+      "MNE-1513",
+      "MNE-1514",
+      "MNE-1515",
+      "MNE-1517",
+      "MNE-1519",
+      "MNE-1520"
+     ],
+     "owner": "Montenegro",
+     "source": {
+      "title": "Kingdom of Montenegro (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Montenegro"
+     }
+    },
+    {
+     "pieces": [
+      "BIH-2224",
+      "BIH-2225",
+      "BIH-2226",
+      "BIH-2227",
+      "BIH-2228",
+      "BIH-2887",
+      "BIH-2889",
+      "BIH-2890",
+      "BIH-2891",
+      "BIH-3153",
+      "BIH-4801",
+      "BIH-4802",
+      "BIH-4803",
+      "BIH-4804",
+      "BIH-4805",
+      "BIH-4806",
+      "BIH-4807",
+      "BIH-4808"
+     ],
+     "owner": "Austria-Hungary",
+     "source": {
+      "title": "Bosnia and Herzegovina in Austria-Hungary (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bosnia_and_Herzegovina_in_Austria-Hungary"
+     }
+    }
+   ]
+  },
+  {
    "date": "1918-11-28",
    "what": "Romanian troops return to Dobruja after the defeat of the Central Powers",
    "source": {
@@ -3543,6 +4076,204 @@
    ]
   },
   {
+   "date": "1918-11-04",
+   "what": "The Austro-Hungarian army leaves Montenegro",
+   "source": {
+    "title": "Montenegrin campaign of World War I (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Montenegrin_campaign_of_World_War_I"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "MNE-1516",
+      "MNE-1510",
+      "MNE-1509",
+      "MNE-1501",
+      "MNE-1503"
+     ],
+     "owner": "Montenegro",
+     "source": {
+      "title": "Military Governorate of Montenegro (1916–1918) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Military_Governorate_of_Montenegro_(1916–1918)"
+     },
+     "hatch": {
+      "by": "Austria-Hungary",
+      "since": "1916-01-25",
+      "note": "Under the Austro-Hungarian military government of Montenegro in the First World War, until 1918",
+      "source": {
+       "title": "Military Governorate of Montenegro (1916–1918) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Military_Governorate_of_Montenegro_(1916–1918)"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "MNE-1496",
+      "MNE-1497",
+      "MNE-1508",
+      "MNE-1512",
+      "MNE-1513",
+      "MNE-1514",
+      "MNE-1515",
+      "MNE-1517",
+      "MNE-1519",
+      "MNE-1520"
+     ],
+     "owner": "Montenegro",
+     "source": {
+      "title": "Military Governorate of Montenegro (1916–1918) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Military_Governorate_of_Montenegro_(1916–1918)"
+     },
+     "hatch": {
+      "by": "Austria-Hungary",
+      "since": "1916-01-25",
+      "note": "Under the Austro-Hungarian military government of Montenegro in the First World War, until 1918",
+      "source": {
+       "title": "Military Governorate of Montenegro (1916–1918) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Military_Governorate_of_Montenegro_(1916–1918)"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-11-01",
+   "what": "The Serbian army retakes Belgrade",
+   "source": {
+    "title": "Vardar offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Vardar_offensive"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SRB-1505",
+      "SRB-279",
+      "SRB-829",
+      "SRB-831",
+      "SRB-832",
+      "SRB-833",
+      "SRB-834",
+      "SRB-836",
+      "SRB-837",
+      "SRB-838",
+      "SRB-839"
+     ],
+     "owner": "Serbia",
+     "source": {
+      "title": "Military Governorate of Serbia (1916–1918) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Military_Governorate_of_Serbia_(1916–1918)"
+     },
+     "hatch": {
+      "by": "Austria-Hungary",
+      "since": "1915-10-09",
+      "note": "Under the Austro-Hungarian military government of Serbia in the First World War, until 1918",
+      "source": {
+       "title": "Military Governorate of Serbia (1916–1918) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Military_Governorate_of_Serbia_(1916–1918)"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "sandzak-raska",
+      "sandzak-zlatibor"
+     ],
+     "owner": "Serbia",
+     "source": {
+      "title": "Military Governorate of Serbia (1916–1918) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Military_Governorate_of_Serbia_(1916–1918)"
+     },
+     "hatch": {
+      "by": "Austria-Hungary",
+      "since": "1915-11-23",
+      "note": "Under the Austro-Hungarian military government of Serbia in the First World War, until 1918",
+      "source": {
+       "title": "Military Governorate of Serbia (1916–1918) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Military_Governorate_of_Serbia_(1916–1918)"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-10-31",
+   "what": "The Austro-Hungarian army leaves northern Albania",
+   "source": {
+    "title": "Albania during World War I (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Albania_during_World_War_I"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ALB-1498"
+     ],
+     "owner": "Albania",
+     "source": {
+      "title": "Albania during World War I (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Albania_during_World_War_I"
+     },
+     "hatch": {
+      "by": "Austria-Hungary",
+      "since": "1916-01-23",
+      "note": "Occupied by Austria-Hungary in the First World War, until October 1918",
+      "source": {
+       "title": "Albania during World War I (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Albania_during_World_War_I"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "ALB-1528"
+     ],
+     "owner": "Albania",
+     "source": {
+      "title": "Albania during World War I (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Albania_during_World_War_I"
+     },
+     "hatch": {
+      "by": "Austria-Hungary",
+      "since": "1916-01-23",
+      "note": "Occupied by Austria-Hungary in the First World War, until October 1918",
+      "source": {
+       "title": "Albania during World War I (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Albania_during_World_War_I"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "ALB-1502",
+      "ALB-1526"
+     ],
+     "owner": "Albania",
+     "source": {
+      "title": "Albania during World War I (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Albania_during_World_War_I"
+     },
+     "hatch": {
+      "by": "Austria-Hungary",
+      "since": "1916-02-27",
+      "note": "Occupied by Austria-Hungary in the First World War, until October 1918",
+      "source": {
+       "title": "Albania during World War I (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Albania_during_World_War_I"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
    "date": "1918-10-30",
    "what": "By the Armistice of Mudros the Ottoman Empire gives up its last provinces in Arabia: Abha to the Al Aidh, the Tihama to the Idrisi",
    "source": {
@@ -3583,6 +4314,195 @@
    ]
   },
   {
+   "date": "1918-10-15",
+   "what": "The Serbian and Montenegrin forces take back Kosovo",
+   "source": {
+    "title": "Vardar offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Vardar_offensive"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "KOS-5893",
+      "KOS-5892",
+      "KOS-5897",
+      "KOS-5894",
+      "KOS-5895",
+      "KOS-5901"
+     ],
+     "owner": "Serbia",
+     "source": {
+      "title": "Military Governorate of Serbia (1916–1918) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Military_Governorate_of_Serbia_(1916–1918)"
+     },
+     "hatch": {
+      "by": "Austria-Hungary",
+      "since": "1915-11-23",
+      "note": "Under the Austro-Hungarian military government of Serbia in the First World War, until 1918",
+      "source": {
+       "title": "Military Governorate of Serbia (1916–1918) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Military_Governorate_of_Serbia_(1916–1918)"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "KOS-5891",
+      "KOS-5896",
+      "KOS-5898",
+      "KOS-5899",
+      "KOS-5900",
+      "KOS-5902",
+      "KOS-5903",
+      "KOS-5904",
+      "KOS-5905",
+      "KOS-5906",
+      "KOS-5907",
+      "KOS-5908",
+      "KOS-5909",
+      "KOS-5910",
+      "KOS-5911",
+      "KOS-5912",
+      "KOS-5913",
+      "KOS-5914",
+      "KOS-5915"
+     ],
+     "owner": "Serbia",
+     "source": {
+      "title": "Bulgarian occupation of Serbia (World War I) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bulgarian_occupation_of_Serbia_(World_War_I)"
+     },
+     "hatch": {
+      "by": "Bulgaria",
+      "since": "1915-11-23",
+      "note": "Occupied and run by Bulgaria in the First World War, until 1918",
+      "source": {
+       "title": "Bulgarian occupation of Serbia (World War I) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Bulgarian_occupation_of_Serbia_(World_War_I)"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "KOS-5886",
+      "KOS-5887",
+      "KOS-5888",
+      "KOS-5889",
+      "KOS-5890"
+     ],
+     "owner": "Montenegro",
+     "source": {
+      "title": "Military Governorate of Montenegro (1916–1918) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Military_Governorate_of_Montenegro_(1916–1918)"
+     },
+     "hatch": {
+      "by": "Austria-Hungary",
+      "since": "1916-01-25",
+      "note": "Under the Austro-Hungarian military government of Montenegro in the First World War, until 1918",
+      "source": {
+       "title": "Military Governorate of Montenegro (1916–1918) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Military_Governorate_of_Montenegro_(1916–1918)"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-10-14",
+   "what": "Italian troops take Durrës as the Austro-Hungarians withdraw",
+   "source": {
+    "title": "Albania during World War I (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Albania_during_World_War_I"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "ALB-1494",
+      "ALB-1529",
+      "ALB-1524"
+     ],
+     "owner": "Albania",
+     "source": {
+      "title": "Albania during World War I (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Albania_during_World_War_I"
+     },
+     "hatch": {
+      "by": "Austria-Hungary",
+      "since": "1916-02-27",
+      "note": "Occupied by Austria-Hungary in the First World War, until October 1918",
+      "source": {
+       "title": "Albania during World War I (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Albania_during_World_War_I"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "ALB-1495",
+      "ALB-1523"
+     ],
+     "owner": "Albania",
+     "source": {
+      "title": "Albania during World War I (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Albania_during_World_War_I"
+     },
+     "hatch": {
+      "by": "Austria-Hungary",
+      "since": "1916-02-27",
+      "note": "Occupied by Austria-Hungary in the First World War, until October 1918",
+      "source": {
+       "title": "Albania during World War I (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Albania_during_World_War_I"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-10-12",
+   "what": "The Serbian army retakes Niš",
+   "source": {
+    "title": "Vardar offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Vardar_offensive"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "SRB-844",
+      "SRB-125",
+      "SRB-830",
+      "SRB-121",
+      "SRB-841",
+      "SRB-843",
+      "SRB-835"
+     ],
+     "owner": "Serbia",
+     "source": {
+      "title": "Bulgarian occupation of Serbia (World War I) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bulgarian_occupation_of_Serbia_(World_War_I)"
+     },
+     "hatch": {
+      "by": "Bulgaria",
+      "since": "1915-11-05",
+      "note": "Occupied and run by Bulgaria in the First World War, until 1918",
+      "source": {
+       "title": "Bulgarian occupation of Serbia (World War I) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Bulgarian_occupation_of_Serbia_(World_War_I)"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
    "date": "1918-09-30",
    "what": "Bulgaria signs the Armistice of Salonica and leaves eastern Macedonia",
    "source": {
@@ -3607,6 +4527,114 @@
       "source": {
        "title": "Macedonian front (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Macedonian_front"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-09-29",
+   "what": "Bulgaria signs the Armistice of Salonica; Allied troops retake Skopje",
+   "source": {
+    "title": "Vardar offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Vardar_offensive"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MKD-2894",
+      "MKD-2895",
+      "MKD-2897",
+      "MKD-2898",
+      "MKD-2899",
+      "MKD-2901",
+      "MKD-2902",
+      "MKD-2903",
+      "MKD-2904",
+      "MKD-2905",
+      "MKD-2906",
+      "MKD-2907",
+      "MKD-2908",
+      "MKD-2909",
+      "MKD-2910",
+      "MKD-2911",
+      "MKD-2912",
+      "MKD-2913",
+      "MKD-2914",
+      "MKD-2915",
+      "MKD-2916",
+      "MKD-2917",
+      "MKD-2918",
+      "MKD-2919",
+      "MKD-2920",
+      "MKD-2921",
+      "MKD-2922",
+      "MKD-2923",
+      "MKD-2924",
+      "MKD-2925",
+      "MKD-2926",
+      "MKD-2927",
+      "MKD-2928",
+      "MKD-2929",
+      "MKD-2930",
+      "MKD-2931",
+      "MKD-2932",
+      "MKD-2933",
+      "MKD-2934",
+      "MKD-2935",
+      "MKD-2936",
+      "MKD-2937",
+      "MKD-2938",
+      "MKD-2939",
+      "MKD-2940",
+      "MKD-2941",
+      "MKD-2942",
+      "MKD-2943",
+      "MKD-2944",
+      "MKD-2945",
+      "MKD-2946",
+      "MKD-2948",
+      "MKD-2950",
+      "MKD-2951",
+      "MKD-2952",
+      "MKD-2953",
+      "MKD-2954",
+      "MKD-2955",
+      "MKD-2956",
+      "MKD-2957",
+      "MKD-2958",
+      "MKD-2959",
+      "MKD-2960",
+      "MKD-2961",
+      "MKD-2962",
+      "MKD-2963",
+      "MKD-2994",
+      "MKD-2996",
+      "MKD-2998",
+      "MKD-3000",
+      "MKD-3003",
+      "MKD-3004",
+      "MKD-3005",
+      "MKD-3006",
+      "MKD-3007",
+      "MKD-4845",
+      "MKD-4846",
+      "MKD-5883"
+     ],
+     "owner": "Serbia",
+     "source": {
+      "title": "Bulgarian occupation of Serbia (World War I) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bulgarian_occupation_of_Serbia_(World_War_I)"
+     },
+     "hatch": {
+      "by": "Bulgaria",
+      "since": "1915-10-22",
+      "note": "Occupied and run by Bulgaria in the First World War, until 1918",
+      "source": {
+       "title": "Bulgarian occupation of Serbia (World War I) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Bulgarian_occupation_of_Serbia_(World_War_I)"
       },
       "occupied": true
      }
@@ -3798,6 +4826,37 @@
    ]
   },
   {
+   "date": "1916-11-29",
+   "what": "French troops take Korçë",
+   "source": {
+    "title": "Autonomous Albanian Republic of Korçë (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Autonomous_Albanian_Republic_of_Korçë"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ALB-1521"
+     ],
+     "owner": "Albania",
+     "source": {
+      "title": "Northern Epirus (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Northern_Epirus"
+     },
+     "hatch": {
+      "by": "Greece",
+      "since": "1913-05-30",
+      "note": "Held by the Greek army from the Balkan Wars until 1916, except for part of 1914",
+      "source": {
+       "title": "Northern Epirus (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Northern_Epirus"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
    "date": "1916-11-21",
    "what": "The Central Powers break through to Craiova and take Oltenia",
    "source": {
@@ -3818,6 +4877,38 @@
      "source": {
       "title": "Romanian campaign (1916) (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Romanian_campaign_(1916)"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1916-11-19",
+   "what": "Serbian and French troops retake Bitola",
+   "source": {
+    "title": "Monastir offensive (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Monastir_offensive"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "MKD-2896",
+      "MKD-2947"
+     ],
+     "owner": "Serbia",
+     "source": {
+      "title": "Bulgarian occupation of Serbia (World War I) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bulgarian_occupation_of_Serbia_(World_War_I)"
+     },
+     "hatch": {
+      "by": "Bulgaria",
+      "since": "1915-10-22",
+      "note": "Occupied and run by Bulgaria in the First World War, until 1918",
+      "source": {
+       "title": "Bulgarian occupation of Serbia (World War I) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Bulgarian_occupation_of_Serbia_(World_War_I)"
+      },
+      "occupied": true
      }
     }
    ]
@@ -3861,6 +4952,37 @@
      "source": {
       "title": "Southern Dobruja (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Southern_Dobruja"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1916-09-01",
+   "what": "Italian troops take Gjirokastër from the Greek army",
+   "source": {
+    "title": "Albania during World War I (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Albania_during_World_War_I"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ALB-1525"
+     ],
+     "owner": "Albania",
+     "source": {
+      "title": "Northern Epirus (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Northern_Epirus"
+     },
+     "hatch": {
+      "by": "Greece",
+      "since": "1913-05-30",
+      "note": "Held by the Greek army from the Balkan Wars until 1916, except for part of 1914",
+      "source": {
+       "title": "Northern Epirus (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Northern_Epirus"
+      },
+      "occupied": true
      }
     }
    ]
@@ -3954,6 +5076,51 @@
    ]
   },
   {
+   "date": "1916-02-27",
+   "what": "Austria-Hungary takes Durrës and central Albania",
+   "source": {
+    "title": "Albania during World War I (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Albania_during_World_War_I"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "ALB-1502",
+      "ALB-1526"
+     ],
+     "owner": "Albania",
+     "source": {
+      "title": "Albania (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Albania"
+     }
+    },
+    {
+     "pieces": [
+      "ALB-1494",
+      "ALB-1529",
+      "ALB-1524"
+     ],
+     "owner": "Albania",
+     "source": {
+      "title": "Albania (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Albania"
+     }
+    },
+    {
+     "pieces": [
+      "ALB-1495",
+      "ALB-1523"
+     ],
+     "owner": "Albania",
+     "source": {
+      "title": "Albania (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Albania"
+     }
+    }
+   ]
+  },
+  {
    "date": "1916-02-16",
    "what": "The Russian army takes Erzurum, then Muş and Bitlis",
    "source": {
@@ -3977,6 +5144,358 @@
    ]
   },
   {
+   "date": "1916-01-25",
+   "what": "Montenegro surrenders to Austria-Hungary",
+   "source": {
+    "title": "Montenegrin campaign of World War I (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Montenegrin_campaign_of_World_War_I"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "KOS-5886",
+      "KOS-5887",
+      "KOS-5888",
+      "KOS-5889",
+      "KOS-5890"
+     ],
+     "owner": "Montenegro",
+     "source": {
+      "title": "Kingdom of Montenegro (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Montenegro"
+     }
+    },
+    {
+     "pieces": [
+      "MNE-1516",
+      "MNE-1510",
+      "MNE-1509",
+      "MNE-1501",
+      "MNE-1503"
+     ],
+     "owner": "Montenegro",
+     "source": {
+      "title": "Kingdom of Montenegro (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Montenegro"
+     }
+    },
+    {
+     "pieces": [
+      "MNE-1496",
+      "MNE-1497",
+      "MNE-1508",
+      "MNE-1512",
+      "MNE-1513",
+      "MNE-1514",
+      "MNE-1515",
+      "MNE-1517",
+      "MNE-1519",
+      "MNE-1520"
+     ],
+     "owner": "Montenegro",
+     "source": {
+      "title": "Kingdom of Montenegro (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Montenegro"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1916-01-23",
+   "what": "Austria-Hungary takes Shkodër and northern Albania",
+   "source": {
+    "title": "Albania during World War I (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Albania_during_World_War_I"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "ALB-1498"
+     ],
+     "owner": "Albania",
+     "source": {
+      "title": "Albania during World War I (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Albania_during_World_War_I"
+     },
+     "hatch": {
+      "by": "Montenegro",
+      "since": "1915-06-27",
+      "note": "Held by Montenegro in the First World War, until the Austro-Hungarian advance of January 1916",
+      "source": {
+       "title": "Albania during World War I (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Albania_during_World_War_I"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "ALB-1528"
+     ],
+     "owner": "Albania",
+     "source": {
+      "title": "Albania (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Albania"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1915-11-23",
+   "what": "Kosovo and the Sandžak fall as the Serbian army retreats into Albania",
+   "source": {
+    "title": "Serbian Army's retreat through Albania (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Serbian_Army's_retreat_through_Albania"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "sandzak-raska",
+      "sandzak-zlatibor"
+     ],
+     "owner": "Serbia",
+     "source": {
+      "title": "Kingdom of Serbia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Serbia"
+     }
+    },
+    {
+     "pieces": [
+      "KOS-5893",
+      "KOS-5892",
+      "KOS-5897",
+      "KOS-5894",
+      "KOS-5895",
+      "KOS-5901"
+     ],
+     "owner": "Serbia",
+     "source": {
+      "title": "Kingdom of Serbia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Serbia"
+     }
+    },
+    {
+     "pieces": [
+      "KOS-5891",
+      "KOS-5896",
+      "KOS-5898",
+      "KOS-5899",
+      "KOS-5900",
+      "KOS-5902",
+      "KOS-5903",
+      "KOS-5904",
+      "KOS-5905",
+      "KOS-5906",
+      "KOS-5907",
+      "KOS-5908",
+      "KOS-5909",
+      "KOS-5910",
+      "KOS-5911",
+      "KOS-5912",
+      "KOS-5913",
+      "KOS-5914",
+      "KOS-5915"
+     ],
+     "owner": "Serbia",
+     "source": {
+      "title": "Kingdom of Serbia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Serbia"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1915-11-05",
+   "what": "The Bulgarian army takes Niš",
+   "source": {
+    "title": "Serbian campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Serbian_campaign"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SRB-844",
+      "SRB-125",
+      "SRB-830",
+      "SRB-121",
+      "SRB-841",
+      "SRB-843",
+      "SRB-835"
+     ],
+     "owner": "Serbia",
+     "source": {
+      "title": "Kingdom of Serbia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Serbia"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1915-10-22",
+   "what": "The Bulgarian army takes Skopje and Macedonia",
+   "source": {
+    "title": "Serbian campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Serbian_campaign"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "MKD-2894",
+      "MKD-2895",
+      "MKD-2897",
+      "MKD-2898",
+      "MKD-2899",
+      "MKD-2901",
+      "MKD-2902",
+      "MKD-2903",
+      "MKD-2904",
+      "MKD-2905",
+      "MKD-2906",
+      "MKD-2907",
+      "MKD-2908",
+      "MKD-2909",
+      "MKD-2910",
+      "MKD-2911",
+      "MKD-2912",
+      "MKD-2913",
+      "MKD-2914",
+      "MKD-2915",
+      "MKD-2916",
+      "MKD-2917",
+      "MKD-2918",
+      "MKD-2919",
+      "MKD-2920",
+      "MKD-2921",
+      "MKD-2922",
+      "MKD-2923",
+      "MKD-2924",
+      "MKD-2925",
+      "MKD-2926",
+      "MKD-2927",
+      "MKD-2928",
+      "MKD-2929",
+      "MKD-2930",
+      "MKD-2931",
+      "MKD-2932",
+      "MKD-2933",
+      "MKD-2934",
+      "MKD-2935",
+      "MKD-2936",
+      "MKD-2937",
+      "MKD-2938",
+      "MKD-2939",
+      "MKD-2940",
+      "MKD-2941",
+      "MKD-2942",
+      "MKD-2943",
+      "MKD-2944",
+      "MKD-2945",
+      "MKD-2946",
+      "MKD-2948",
+      "MKD-2950",
+      "MKD-2951",
+      "MKD-2952",
+      "MKD-2953",
+      "MKD-2954",
+      "MKD-2955",
+      "MKD-2956",
+      "MKD-2957",
+      "MKD-2958",
+      "MKD-2959",
+      "MKD-2960",
+      "MKD-2961",
+      "MKD-2962",
+      "MKD-2963",
+      "MKD-2994",
+      "MKD-2996",
+      "MKD-2998",
+      "MKD-3000",
+      "MKD-3003",
+      "MKD-3004",
+      "MKD-3005",
+      "MKD-3006",
+      "MKD-3007",
+      "MKD-4845",
+      "MKD-4846",
+      "MKD-5883"
+     ],
+     "owner": "Serbia",
+     "source": {
+      "title": "Kingdom of Serbia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Serbia"
+     }
+    },
+    {
+     "pieces": [
+      "MKD-2896",
+      "MKD-2947"
+     ],
+     "owner": "Serbia",
+     "source": {
+      "title": "Kingdom of Serbia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Serbia"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1915-10-09",
+   "what": "The Central Powers take Belgrade and overrun Serbia",
+   "source": {
+    "title": "Serbian campaign (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Serbian_campaign"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "SRB-1505",
+      "SRB-279",
+      "SRB-829",
+      "SRB-831",
+      "SRB-832",
+      "SRB-833",
+      "SRB-834",
+      "SRB-836",
+      "SRB-837",
+      "SRB-838",
+      "SRB-839"
+     ],
+     "owner": "Serbia",
+     "source": {
+      "title": "Kingdom of Serbia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Serbia"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1915-06-27",
+   "what": "Montenegro takes Shkodër",
+   "source": {
+    "title": "Albania during World War I (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Albania_during_World_War_I"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "ALB-1498"
+     ],
+     "owner": "Albania",
+     "source": {
+      "title": "Albania (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Albania"
+     }
+    }
+   ]
+  },
+  {
    "date": "1915-05-19",
    "what": "The Russian army relieves Van, held by its Armenian defenders",
    "source": {
@@ -3993,6 +5512,27 @@
      "source": {
       "title": "Ottoman Empire (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1914-12-25",
+   "what": "Italian troops land at Vlorë",
+   "source": {
+    "title": "Albania during World War I (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Albania_during_World_War_I"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "ALB-1504"
+     ],
+     "owner": "Albania",
+     "source": {
+      "title": "Albania (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Albania"
      }
     }
    ]
@@ -4066,6 +5606,80 @@
      "source": {
       "title": "Cretan State (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Cretan_State"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1913-10-26",
+   "what": "The Serbian army leaves Albania after an Austro-Hungarian ultimatum",
+   "source": {
+    "title": "Serbian occupation of Albania (1912–1913) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Serbian_occupation_of_Albania_(1912–1913)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ALB-1528"
+     ],
+     "owner": "Albania",
+     "source": {
+      "title": "Serbian occupation of Albania (1912–1913) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Serbian_occupation_of_Albania_(1912–1913)"
+     },
+     "hatch": {
+      "by": "Serbia",
+      "since": "1913-05-30",
+      "note": "Held by the Serbian army from the First Balkan War until October 1913",
+      "source": {
+       "title": "Serbian occupation of Albania (1912–1913) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Serbian_occupation_of_Albania_(1912–1913)"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "ALB-1502",
+      "ALB-1526"
+     ],
+     "owner": "Albania",
+     "source": {
+      "title": "Serbian occupation of Albania (1912–1913) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Serbian_occupation_of_Albania_(1912–1913)"
+     },
+     "hatch": {
+      "by": "Serbia",
+      "since": "1913-05-30",
+      "note": "Held by the Serbian army from the First Balkan War until October 1913",
+      "source": {
+       "title": "Serbian occupation of Albania (1912–1913) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Serbian_occupation_of_Albania_(1912–1913)"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "ALB-1494",
+      "ALB-1529",
+      "ALB-1524"
+     ],
+     "owner": "Albania",
+     "source": {
+      "title": "Serbian occupation of Albania (1912–1913) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Serbian_occupation_of_Albania_(1912–1913)"
+     },
+     "hatch": {
+      "by": "Serbia",
+      "since": "1913-05-30",
+      "note": "Held by the Serbian army from the First Balkan War until October 1913",
+      "source": {
+       "title": "Serbian occupation of Albania (1912–1913) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Serbian_occupation_of_Albania_(1912–1913)"
+      },
+      "occupied": true
      }
     }
    ]
@@ -4230,6 +5844,473 @@
    ]
   },
   {
+   "date": "1913-05-30",
+   "what": "Treaty of London: the Ottoman Empire gives up its land west of the Enos–Midia line, which is shared among the Balkan allies and Albania",
+   "source": {
+    "title": "Treaty of London (1913) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_London_(1913)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "sandzak-raska",
+      "sandzak-zlatibor"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "First Balkan War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/First_Balkan_War"
+     },
+     "hatch": {
+      "by": "Serbia",
+      "since": "1912-10-23",
+      "note": "Taken by the Serbian army in the First Balkan War; Ottoman until the Treaty of London (May 1913)",
+      "source": {
+       "title": "First Balkan War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/First_Balkan_War"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "KOS-5893",
+      "KOS-5892",
+      "KOS-5897",
+      "KOS-5894",
+      "KOS-5895",
+      "KOS-5901"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "First Balkan War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/First_Balkan_War"
+     },
+     "hatch": {
+      "by": "Serbia",
+      "since": "1912-10-22",
+      "note": "Taken by the Serbian army in the First Balkan War; Ottoman until the Treaty of London (May 1913)",
+      "source": {
+       "title": "First Balkan War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/First_Balkan_War"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "KOS-5891",
+      "KOS-5896",
+      "KOS-5898",
+      "KOS-5899",
+      "KOS-5900",
+      "KOS-5902",
+      "KOS-5903",
+      "KOS-5904",
+      "KOS-5905",
+      "KOS-5906",
+      "KOS-5907",
+      "KOS-5908",
+      "KOS-5909",
+      "KOS-5910",
+      "KOS-5911",
+      "KOS-5912",
+      "KOS-5913",
+      "KOS-5914",
+      "KOS-5915"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "First Balkan War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/First_Balkan_War"
+     },
+     "hatch": {
+      "by": "Serbia",
+      "since": "1912-10-22",
+      "note": "Taken by the Serbian army in the First Balkan War; Ottoman until the Treaty of London (May 1913)",
+      "source": {
+       "title": "First Balkan War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/First_Balkan_War"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "KOS-5886",
+      "KOS-5887",
+      "KOS-5888",
+      "KOS-5889",
+      "KOS-5890"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "First Balkan War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/First_Balkan_War"
+     },
+     "hatch": {
+      "by": "Montenegro",
+      "since": "1912-10-30",
+      "note": "Taken by the Montenegrin army in the First Balkan War; Ottoman until the Treaty of London (May 1913)",
+      "source": {
+       "title": "First Balkan War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/First_Balkan_War"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "MKD-2894",
+      "MKD-2895",
+      "MKD-2897",
+      "MKD-2898",
+      "MKD-2899",
+      "MKD-2901",
+      "MKD-2902",
+      "MKD-2903",
+      "MKD-2904",
+      "MKD-2905",
+      "MKD-2906",
+      "MKD-2907",
+      "MKD-2908",
+      "MKD-2909",
+      "MKD-2910",
+      "MKD-2911",
+      "MKD-2912",
+      "MKD-2913",
+      "MKD-2914",
+      "MKD-2915",
+      "MKD-2916",
+      "MKD-2917",
+      "MKD-2918",
+      "MKD-2919",
+      "MKD-2920",
+      "MKD-2921",
+      "MKD-2922",
+      "MKD-2923",
+      "MKD-2924",
+      "MKD-2925",
+      "MKD-2926",
+      "MKD-2927",
+      "MKD-2928",
+      "MKD-2929",
+      "MKD-2930",
+      "MKD-2931",
+      "MKD-2932",
+      "MKD-2933",
+      "MKD-2934",
+      "MKD-2935",
+      "MKD-2936",
+      "MKD-2937",
+      "MKD-2938",
+      "MKD-2939",
+      "MKD-2940",
+      "MKD-2941",
+      "MKD-2942",
+      "MKD-2943",
+      "MKD-2944",
+      "MKD-2945",
+      "MKD-2946",
+      "MKD-2948",
+      "MKD-2950",
+      "MKD-2951",
+      "MKD-2952",
+      "MKD-2953",
+      "MKD-2954",
+      "MKD-2955",
+      "MKD-2956",
+      "MKD-2957",
+      "MKD-2958",
+      "MKD-2959",
+      "MKD-2960",
+      "MKD-2961",
+      "MKD-2962",
+      "MKD-2963",
+      "MKD-2994",
+      "MKD-2996",
+      "MKD-2998",
+      "MKD-3000",
+      "MKD-3003",
+      "MKD-3004",
+      "MKD-3005",
+      "MKD-3006",
+      "MKD-3007",
+      "MKD-4845",
+      "MKD-4846",
+      "MKD-5883"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "First Balkan War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/First_Balkan_War"
+     },
+     "hatch": {
+      "by": "Serbia",
+      "since": "1912-10-26",
+      "note": "Taken by the Serbian army in the First Balkan War; Ottoman until the Treaty of London (May 1913)",
+      "source": {
+       "title": "First Balkan War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/First_Balkan_War"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "MKD-2896",
+      "MKD-2947"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "First Balkan War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/First_Balkan_War"
+     },
+     "hatch": {
+      "by": "Serbia",
+      "since": "1912-10-26",
+      "note": "Taken by the Serbian army in the First Balkan War; Ottoman until the Treaty of London (May 1913)",
+      "source": {
+       "title": "First Balkan War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/First_Balkan_War"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "MKD-2993",
+      "MKD-2997",
+      "MKD-2999",
+      "MKD-2995"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "First Balkan War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/First_Balkan_War"
+     },
+     "hatch": {
+      "by": "Bulgaria",
+      "since": "1912-10-26",
+      "note": "Taken by the Bulgarian army in the First Balkan War",
+      "source": {
+       "title": "First Balkan War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/First_Balkan_War"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "MNE-1516",
+      "MNE-1510",
+      "MNE-1509",
+      "MNE-1501",
+      "MNE-1503"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "First Balkan War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/First_Balkan_War"
+     },
+     "hatch": {
+      "by": "Montenegro",
+      "since": "1912-10-28",
+      "note": "Taken by the Montenegrin army in the First Balkan War; Ottoman until the Treaty of London (May 1913)",
+      "source": {
+       "title": "First Balkan War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/First_Balkan_War"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "ALB-1498"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    },
+    {
+     "pieces": [
+      "ALB-1528"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Serbian occupation of Albania (1912–1913) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Serbian_occupation_of_Albania_(1912–1913)"
+     },
+     "hatch": {
+      "by": "Serbia",
+      "since": "1912-11-29",
+      "note": "Held by the Serbian army from the First Balkan War until October 1913",
+      "source": {
+       "title": "Serbian occupation of Albania (1912–1913) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Serbian_occupation_of_Albania_(1912–1913)"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "ALB-1502",
+      "ALB-1526"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Serbian occupation of Albania (1912–1913) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Serbian_occupation_of_Albania_(1912–1913)"
+     },
+     "hatch": {
+      "by": "Serbia",
+      "since": "1912-11-29",
+      "note": "Held by the Serbian army from the First Balkan War until October 1913",
+      "source": {
+       "title": "Serbian occupation of Albania (1912–1913) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Serbian_occupation_of_Albania_(1912–1913)"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "ALB-1494",
+      "ALB-1529",
+      "ALB-1524"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Serbian occupation of Albania (1912–1913) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Serbian_occupation_of_Albania_(1912–1913)"
+     },
+     "hatch": {
+      "by": "Serbia",
+      "since": "1912-11-29",
+      "note": "Held by the Serbian army from the First Balkan War until October 1913",
+      "source": {
+       "title": "Serbian occupation of Albania (1912–1913) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Serbian_occupation_of_Albania_(1912–1913)"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "ALB-1495",
+      "ALB-1523"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Albanian Declaration of Independence (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Albanian_Declaration_of_Independence"
+     },
+     "hatch": {
+      "by": "Albania",
+      "since": "1912-11-28",
+      "note": "Held by the provisional government of Ismail Qemali, which declared Albania independent at Vlorë on 28 November 1912",
+      "source": {
+       "title": "Albanian Declaration of Independence (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Albanian_Declaration_of_Independence"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ALB-1504"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Albanian Declaration of Independence (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Albanian_Declaration_of_Independence"
+     },
+     "hatch": {
+      "by": "Albania",
+      "since": "1912-11-28",
+      "note": "Held by the provisional government of Ismail Qemali, which declared Albania independent at Vlorë on 28 November 1912",
+      "source": {
+       "title": "Albanian Declaration of Independence (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Albanian_Declaration_of_Independence"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "ALB-1521"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Northern Epirus (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Northern_Epirus"
+     },
+     "hatch": {
+      "by": "Greece",
+      "since": "1912-12-20",
+      "note": "Held by the Greek army from the Balkan Wars until 1916, except for part of 1914",
+      "source": {
+       "title": "Northern Epirus (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Northern_Epirus"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "ALB-1525"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Northern Epirus (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Northern_Epirus"
+     },
+     "hatch": {
+      "by": "Greece",
+      "since": "1913-03-03",
+      "note": "Held by the Greek army from the Balkan Wars until 1916, except for part of 1914",
+      "source": {
+       "title": "Northern Epirus (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Northern_Epirus"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1913-05-14",
+   "what": "Montenegro hands Shkodër to an international force of the Great Powers",
+   "source": {
+    "title": "Siege of Scutari (1912–1913) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Scutari_(1912–1913)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "ALB-1498"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Siege of Scutari (1912–1913) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Scutari_(1912–1913)"
+     },
+     "hatch": {
+      "by": "Montenegro",
+      "since": "1913-04-23",
+      "note": "Taken by Montenegro after the siege of Scutari, until an international force took over in May 1913",
+      "source": {
+       "title": "Siege of Scutari (1912–1913) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Siege_of_Scutari_(1912–1913)"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
    "date": "1913-05-05",
    "what": "Ibn Saud takes Hofuf and drives the Ottoman garrison out of al-Hasa",
    "source": {
@@ -4251,6 +6332,27 @@
    ]
   },
   {
+   "date": "1913-04-23",
+   "what": "Shkodër surrenders to Montenegro after a six-month siege",
+   "source": {
+    "title": "Siege of Scutari (1912–1913) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Scutari_(1912–1913)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ALB-1498"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    }
+   ]
+  },
+  {
    "date": "1913-03-06",
    "what": "The Greek army takes Ioannina",
    "source": {
@@ -4267,6 +6369,124 @@
      "source": {
       "title": "Ottoman Greece (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Ottoman_Greece"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1913-03-03",
+   "what": "The Greek army takes Gjirokastër",
+   "source": {
+    "title": "First Balkan War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/First_Balkan_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ALB-1525"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1912-12-20",
+   "what": "The Greek army takes Korçë",
+   "source": {
+    "title": "First Balkan War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/First_Balkan_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "ALB-1521"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1912-11-29",
+   "what": "The Serbian army reaches the Adriatic at Durrës",
+   "source": {
+    "title": "Serbian occupation of Albania (1912–1913) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Serbian_occupation_of_Albania_(1912–1913)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "ALB-1528"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    },
+    {
+     "pieces": [
+      "ALB-1502",
+      "ALB-1526"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    },
+    {
+     "pieces": [
+      "ALB-1494",
+      "ALB-1529",
+      "ALB-1524"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1912-11-28",
+   "what": "Albania declares its independence at Vlorë",
+   "source": {
+    "title": "Albanian Declaration of Independence (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Albanian_Declaration_of_Independence"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ALB-1495",
+      "ALB-1523"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    },
+    {
+     "pieces": [
+      "ALB-1504"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
      }
     }
    ]
@@ -4315,6 +6535,56 @@
    ]
   },
   {
+   "date": "1912-10-30",
+   "what": "The Montenegrin army takes Peć and Đakovica",
+   "source": {
+    "title": "First Balkan War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/First_Balkan_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "KOS-5886",
+      "KOS-5887",
+      "KOS-5888",
+      "KOS-5889",
+      "KOS-5890"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1912-10-28",
+   "what": "The Montenegrin army takes Pljevlja and the eastern Sandžak",
+   "source": {
+    "title": "First Balkan War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/First_Balkan_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "MNE-1516",
+      "MNE-1510",
+      "MNE-1509",
+      "MNE-1501",
+      "MNE-1503"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    }
+   ]
+  },
+  {
    "date": "1912-10-26",
    "what": "The Greek army enters Thessaloniki",
    "source": {
@@ -4333,6 +6603,204 @@
      "source": {
       "title": "Ottoman Greece (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Ottoman_Greece"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1912-10-26",
+   "what": "The Serbian army enters Skopje; Bulgarian troops take Strumica",
+   "source": {
+    "title": "Battle of Kumanovo (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Kumanovo"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "MKD-2894",
+      "MKD-2895",
+      "MKD-2897",
+      "MKD-2898",
+      "MKD-2899",
+      "MKD-2901",
+      "MKD-2902",
+      "MKD-2903",
+      "MKD-2904",
+      "MKD-2905",
+      "MKD-2906",
+      "MKD-2907",
+      "MKD-2908",
+      "MKD-2909",
+      "MKD-2910",
+      "MKD-2911",
+      "MKD-2912",
+      "MKD-2913",
+      "MKD-2914",
+      "MKD-2915",
+      "MKD-2916",
+      "MKD-2917",
+      "MKD-2918",
+      "MKD-2919",
+      "MKD-2920",
+      "MKD-2921",
+      "MKD-2922",
+      "MKD-2923",
+      "MKD-2924",
+      "MKD-2925",
+      "MKD-2926",
+      "MKD-2927",
+      "MKD-2928",
+      "MKD-2929",
+      "MKD-2930",
+      "MKD-2931",
+      "MKD-2932",
+      "MKD-2933",
+      "MKD-2934",
+      "MKD-2935",
+      "MKD-2936",
+      "MKD-2937",
+      "MKD-2938",
+      "MKD-2939",
+      "MKD-2940",
+      "MKD-2941",
+      "MKD-2942",
+      "MKD-2943",
+      "MKD-2944",
+      "MKD-2945",
+      "MKD-2946",
+      "MKD-2948",
+      "MKD-2950",
+      "MKD-2951",
+      "MKD-2952",
+      "MKD-2953",
+      "MKD-2954",
+      "MKD-2955",
+      "MKD-2956",
+      "MKD-2957",
+      "MKD-2958",
+      "MKD-2959",
+      "MKD-2960",
+      "MKD-2961",
+      "MKD-2962",
+      "MKD-2963",
+      "MKD-2994",
+      "MKD-2996",
+      "MKD-2998",
+      "MKD-3000",
+      "MKD-3003",
+      "MKD-3004",
+      "MKD-3005",
+      "MKD-3006",
+      "MKD-3007",
+      "MKD-4845",
+      "MKD-4846",
+      "MKD-5883"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    },
+    {
+     "pieces": [
+      "MKD-2896",
+      "MKD-2947"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    },
+    {
+     "pieces": [
+      "MKD-2993",
+      "MKD-2997",
+      "MKD-2999",
+      "MKD-2995"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1912-10-23",
+   "what": "The Serbian army takes Novi Pazar and the Sandžak",
+   "source": {
+    "title": "First Balkan War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/First_Balkan_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "sandzak-raska",
+      "sandzak-zlatibor"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1912-10-22",
+   "what": "The Serbian army takes Pristina and Kosovo in the First Balkan War",
+   "source": {
+    "title": "First Balkan War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/First_Balkan_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "KOS-5893",
+      "KOS-5892",
+      "KOS-5897",
+      "KOS-5894",
+      "KOS-5895",
+      "KOS-5901"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    },
+    {
+     "pieces": [
+      "KOS-5891",
+      "KOS-5896",
+      "KOS-5898",
+      "KOS-5899",
+      "KOS-5900",
+      "KOS-5902",
+      "KOS-5903",
+      "KOS-5904",
+      "KOS-5905",
+      "KOS-5906",
+      "KOS-5907",
+      "KOS-5908",
+      "KOS-5909",
+      "KOS-5910",
+      "KOS-5911",
+      "KOS-5912",
+      "KOS-5913",
+      "KOS-5914",
+      "KOS-5915"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
      }
     }
    ]
