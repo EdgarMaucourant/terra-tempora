@@ -16777,6 +16777,267 @@
    ],
    "realm": "Regency of Algiers",
    "why": "Beylik of the east of the Regency of Algiers"
+  },
+  {
+   "place": "Mecca (Egyptian-run)",
+   "lonLat": [
+    39.83,
+    21.42
+   ],
+   "years": [
+    1815,
+    1839
+   ],
+   "realm": "Turkey",
+   "heldBy": [
+    {
+     "years": [
+      1815,
+      1839
+     ],
+     "by": "Egypt"
+    }
+   ],
+   "why": "Run by Muhammad Ali's Egypt until 1840"
+  },
+  {
+   "place": "Mecca (Ottoman)",
+   "lonLat": [
+    39.83,
+    21.42
+   ],
+   "years": [
+    1841,
+    1915
+   ],
+   "realm": "Turkey",
+   "why": "Hejaz Vilayet"
+  },
+  {
+   "place": "Mecca (Kingdom of Hejaz)",
+   "lonLat": [
+    39.83,
+    21.42
+   ],
+   "years": [
+    1916,
+    1923
+   ],
+   "realm": "Kingdom of Hejaz",
+   "why": "Kingdom of Hejaz from the Arab Revolt"
+  },
+  {
+   "place": "Mecca (1924)",
+   "lonLat": [
+    39.83,
+    21.42
+   ],
+   "years": [
+    1924,
+    1924
+   ],
+   "realm": "Kingdom of Hejaz",
+   "heldBy": [
+    {
+     "years": [
+      1924,
+      1924
+     ],
+     "by": "Saudi Arabia"
+    }
+   ],
+   "why": "Taken by Ibn Saud in October 1924, Jeddah held out"
+  },
+  {
+   "place": "Mecca (Saudi)",
+   "lonLat": [
+    39.83,
+    21.42
+   ],
+   "years": [
+    1925,
+    2026
+   ],
+   "realm": "Saudi Arabia",
+   "why": "Saudi since December 1925"
+  },
+  {
+   "place": "Medina (siege)",
+   "lonLat": [
+    39.61,
+    24.47
+   ],
+   "years": [
+    1916,
+    1918
+   ],
+   "realm": "Turkey",
+   "why": "Held by Fakhri Pasha until January 1919"
+  },
+  {
+   "place": "Medina (Kingdom of Hejaz)",
+   "lonLat": [
+    39.61,
+    24.47
+   ],
+   "years": [
+    1919,
+    1924
+   ],
+   "realm": "Kingdom of Hejaz",
+   "why": "Kingdom of Hejaz until December 1925"
+  },
+  {
+   "place": "Tabuk (Ottoman)",
+   "lonLat": [
+    36.57,
+    28.38
+   ],
+   "years": [
+    1841,
+    1918
+   ],
+   "realm": "Turkey",
+   "why": "Ottoman Hejaz"
+  },
+  {
+   "place": "Hofuf (Bani Khalid)",
+   "lonLat": [
+    49.59,
+    25.38
+   ],
+   "years": [
+    1819,
+    1829
+   ],
+   "realm": "Bani Khalid Emirate",
+   "why": "Bani Khalid between the Egyptian withdrawal and 1830"
+  },
+  {
+   "place": "Hofuf (Egyptian)",
+   "lonLat": [
+    49.59,
+    25.38
+   ],
+   "years": [
+    1838,
+    1839
+   ],
+   "realm": "Khedivate of Egypt",
+   "why": "Khurshid Pasha's occupation"
+  },
+  {
+   "place": "Hofuf (Saudi, second state)",
+   "lonLat": [
+    49.59,
+    25.38
+   ],
+   "years": [
+    1840,
+    1870
+   ],
+   "realm": "Saudi Arabia",
+   "why": "Emirate of Nejd"
+  },
+  {
+   "place": "Hofuf (Ottoman)",
+   "lonLat": [
+    49.59,
+    25.38
+   ],
+   "years": [
+    1871,
+    1912
+   ],
+   "realm": "Turkey",
+   "why": "Ottoman sanjak 1871-1913"
+  },
+  {
+   "place": "Hofuf (Saudi)",
+   "lonLat": [
+    49.59,
+    25.38
+   ],
+   "years": [
+    1913,
+    2026
+   ],
+   "realm": "Saudi Arabia",
+   "why": "Saudi since May 1913"
+  },
+  {
+   "place": "Abha (Al Aidh)",
+   "lonLat": [
+    42.5,
+    18.22
+   ],
+   "years": [
+    1815,
+    1870
+   ],
+   "realm": null,
+   "why": "Asir highlands outside Ottoman rule before 1871"
+  },
+  {
+   "place": "Abha (Ottoman)",
+   "lonLat": [
+    42.5,
+    18.22
+   ],
+   "years": [
+    1871,
+    1917
+   ],
+   "realm": "Turkey",
+   "why": "Asir sanjak"
+  },
+  {
+   "place": "Abha (Saudi)",
+   "lonLat": [
+    42.5,
+    18.22
+   ],
+   "years": [
+    1920,
+    2026
+   ],
+   "realm": "Saudi Arabia",
+   "why": "Saudi since July 1920"
+  },
+  {
+   "place": "Jizan (Idrisi)",
+   "lonLat": [
+    42.55,
+    16.89
+   ],
+   "years": [
+    1918,
+    1925
+   ],
+   "realm": "Emirate of Asir",
+   "why": "Idrisi Emirate of Asir"
+  },
+  {
+   "place": "Jizan (Saudi protectorate)",
+   "lonLat": [
+    42.55,
+    16.89
+   ],
+   "years": [
+    1926,
+    1929
+   ],
+   "realm": "Emirate of Asir",
+   "heldBy": [
+    {
+     "years": [
+      1926,
+      1929
+     ],
+     "by": "Saudi Arabia"
+    }
+   ],
+   "why": "Saudi protectorate 1926-30"
   }
  ]
 }

@@ -2819,7 +2819,83 @@
   "wikipedia": "Saudi Arabia",
   "wikidata": "Q851",
   "fr": "Arabie saoudite",
-  "es": "Arabia Saudita"
+  "es": "Arabia Saudita",
+  "periods": [
+   {
+    "from": "1727-01-01",
+    "name": "Emirate of Diriyah",
+    "wikipedia": "Emirate of Diriyah",
+    "fr": "Émirat de Diriyah",
+    "es": "Emirato de Diriyah",
+    "label": "Emirate of Diriyah",
+    "labelFr": "Émirat de Diriyah",
+    "labelEs": "Emirato de Diriyah",
+    "note": "The first Saudi state, until Diriyah fell to Ibrahim Pasha in 1818"
+   },
+   {
+    "from": "1824-01-01",
+    "name": "Emirate of Nejd",
+    "wikipedia": "Emirate of Nejd",
+    "fr": "Émirat du Nejd",
+    "es": "Emirato de Néyed",
+    "label": "Emirate of Nejd",
+    "labelFr": "Émirat du Nejd",
+    "labelEs": "Emirato de Néyed",
+    "note": "The second Saudi state, from Riyadh, until the Rashidis took it in 1891"
+   },
+   {
+    "from": "1902-01-15",
+    "name": "Emirate of Riyadh",
+    "wikipedia": "Emirate of Riyadh",
+    "fr": "Émirat de Riyad",
+    "es": "Emirato de Riad",
+    "label": "Emirate of Riyadh",
+    "labelFr": "Émirat de Riyad",
+    "labelEs": "Emirato de Riad",
+    "note": "Ibn Saud took Riyadh back on 15 January 1902"
+   },
+   {
+    "from": "1913-05-05",
+    "name": "Emirate of Nejd and Hasa",
+    "wikipedia": "Emirate of Nejd and Hasa",
+    "fr": "Émirat du Nejd et du Hasa",
+    "es": "Emirato de Néyed y Hasa",
+    "label": "Emirate of Nejd and Hasa",
+    "labelFr": "Émirat du Nejd et du Hasa",
+    "labelEs": "Emirato de Néyed y Hasa",
+    "note": "Ibn Saud's emirate after he took al-Hasa from the Ottomans"
+   },
+   {
+    "from": "1921-08-22",
+    "name": "Sultanate of Nejd",
+    "wikipedia": "Sultanate of Nejd",
+    "fr": "Sultanat du Nejd",
+    "es": "Sultanato de Néyed",
+    "label": "Sultanate of Nejd",
+    "labelFr": "Sultanat du Nejd",
+    "labelEs": "Sultanato de Néyed",
+    "note": "Ibn Saud took the title of Sultan of Nejd in 1921"
+   },
+   {
+    "from": "1926-01-08",
+    "name": "Kingdom of Hejaz and Nejd",
+    "wikipedia": "Kingdom of Hejaz and Nejd",
+    "fr": "Royaume du Hedjaz et du Nejd",
+    "es": "Reino de Hiyaz y Néyed",
+    "label": "Kingdom of Hejaz and Nejd",
+    "labelFr": "Royaume du Hedjaz et du Nejd",
+    "labelEs": "Reino de Hiyaz y Néyed",
+    "note": "Ibn Saud was proclaimed King of the Hejaz on 8 January 1926"
+   },
+   {
+    "from": "1932-09-23",
+    "name": "Saudi Arabia",
+    "wikipedia": "Saudi Arabia",
+    "fr": "Arabie saoudite",
+    "es": "Arabia Saudita",
+    "note": "The kingdom took the name Saudi Arabia on 23 September 1932"
+   }
+  ]
  },
  "Scattered Islands in the Indian Ocean": {
   "wikipedia": "Scattered Islands in the Indian Ocean",
@@ -5006,5 +5082,11 @@
   "fr": "Cyrénaïque italienne",
   "es": "Cirenaica italiana",
   "withOwner": false
+ },
+ "Bani Khalid Emirate": {
+  "wikipedia": "Bani Khalid Emirate",
+  "fr": "Émirat des Bani Khalid",
+  "es": "Emirato de los Banu Jalid",
+  "note": "Ruled al-Hasa again after the fall of the first Saudi state, until 1830"
  }
 }
