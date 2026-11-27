@@ -3503,5 +3503,65 @@
   "title": "Guerre civile et intervention américaine à Saint-Domingue, 1965 – 1966",
   "place": "Saint-Domingue",
   "summary": "En avril 1965, des officiers fidèles au président déchu Juan Bosch se soulèvent à Saint-Domingue. Craignant « un second Cuba », le président Johnson envoie 42 000 soldats américains, rejoints ensuite par une force interaméricaine ; ils tiennent la capitale jusqu’à une trêve et des élections, gagnées par Joaquín Balaguer, et partent en septembre 1966."
+ },
+ "liberal-triennium-1820": {
+  "title": "La révolte de Riego et le Triennat libéral, 1820",
+  "place": "Cadix",
+  "summary": "Le 1er janvier 1820, le colonel Rafael del Riego soulève près de Cadix des troupes qui attendaient de partir pour l’Amérique, au nom de la constitution de 1812. Le mouvement s’étend et, le 10 mars, le roi Ferdinand VII jure la constitution. Les libéraux gouvernent l’Espagne pendant trois ans."
+ },
+ "independence-of-spanish-haiti-1821": {
+  "title": "Saint-Domingue rompt avec l’Espagne, décembre 1821",
+  "place": "Saint-Domingue",
+  "summary": "Le 1er décembre 1821, l’avocat José Núñez de Cáceres renverse le gouverneur espagnol et proclame l’État indépendant d’Haïti espagnol, espérant rejoindre la Grande Colombie de Simón Bolívar. Bolívar ne répond jamais, et cette « indépendance éphémère » dure à peine dix semaines."
+ },
+ "haitian-unification-1822": {
+  "title": "Haïti prend toute l’île, février 1822",
+  "place": "Saint-Domingue",
+  "summary": "Appelé par les villes frontalières, le président haïtien Jean-Pierre Boyer entre à Saint-Domingue avec quelque 10 000 soldats le 9 février 1822. Il abolit l’esclavage dans l’est et gouverne toute l’île d’Hispaniola comme une seule république haïtienne pendant 22 ans."
+ },
+ "french-invasion-of-spain-1823": {
+  "title": "Les Français rendent son pouvoir absolu à Ferdinand VII, 1823",
+  "place": "Madrid",
+  "summary": "Envoyée par la Sainte-Alliance, une armée française d’environ 95 000 hommes, les « Cent Mille Fils de Saint Louis », franchit les Pyrénées en avril 1823 sans grande résistance. Après la prise du Trocadéro à Cadix, Ferdinand VII est libéré le 1er octobre, abolit la constitution et fait pendre Riego."
+ },
+ "isabella-ii-accession-1833": {
+  "title": "Isabelle II reine à trois ans, septembre 1833",
+  "place": "Madrid",
+  "summary": "Ferdinand VII meurt le 29 septembre 1833 et laisse le trône à sa fille Isabelle, âgée de trois ans, sous la régence de sa mère Marie-Christine. Son frère Charles refuse une femme sur le trône, et les libéraux se rangent derrière la jeune reine."
+ },
+ "first-carlist-war-1833": {
+  "title": "La première guerre carliste, 1833 – 1840",
+  "place": "Navarre",
+  "summary": "Les partisans de Charles, frère de Ferdinand VII, se soulèvent contre Isabelle II. Menés par Zumalacárregui, ils tiennent à partir de 1834 les campagnes de Navarre et du Pays basque, mais échouent devant Bilbao. La convention de Vergara (1839) met fin à la guerre dans le nord, et les derniers carlistes de Cabrera dans le Maestrazgo cèdent en 1840."
+ },
+ "espartero-regency-1840": {
+  "title": "Le général Espartero prend la régence, 1840 – 1843",
+  "place": "Madrid",
+  "summary": "Chassée par une révolte progressiste, la régente Marie-Christine part pour la France en octobre 1840, et les Cortes font régent le général Espartero, vainqueur de la guerre carliste. Son gouvernement autoritaire, dont le bombardement de Barcelone en 1842, dresse tout le monde contre lui ; il tombe en 1843 et Isabelle II est déclarée majeure à treize ans."
+ },
+ "spain-takes-fernando-po-1843": {
+  "title": "L’Espagne prend possession de Fernando Po, 1843",
+  "place": "Santa Isabel (Malabo)",
+  "summary": "L’Espagne possédait Fernando Po sur le papier depuis 1778, mais l’avait laissé à une base navale britannique contre la traite à partir de 1827. En mars 1843, Juan José Lerena hisse le drapeau espagnol à Port Clarence, rebaptisé Santa Isabel, et revendique Annobón et Corisco : c’est le début de la Guinée espagnole."
+ },
+ "dominican-independence-1844": {
+  "title": "Naissance de la République dominicaine, 27 février 1844",
+  "place": "Saint-Domingue",
+  "summary": "Dans la nuit du 27 février 1844, les membres de la société secrète La Trinitaria, fondée par Juan Pablo Duarte, s’emparent de la Puerta del Conde à Saint-Domingue et proclament la République dominicaine. Le nouvel État repousse les invasions haïtiennes jusqu’en 1856."
+ },
+ "spain-founds-davao-1848": {
+  "title": "L’Espagne prend le golfe de Davao, 1848",
+  "place": "Davao",
+  "summary": "En 1848, une expédition de colons menée par José Cruz de Oyanguren, un Basque de Vergara, débarque sur la rivière Davao et chasse le datu Bago après des mois de combats. La ville de Nueva Vergara, future Davao, donne à l’Espagne sa première prise sur le sud-est de Mindanao."
+ },
+ "spain-fortifies-basilan-1848": {
+  "title": "L’Espagne prend Basilan à Sulu, 1848",
+  "place": "Isabela, Basilan",
+  "summary": "Après la tentative d’une escadre française de s’emparer de Basilan, île du sultanat de Sulu, en 1844-45 pour en faire une base de commerce avec la Chine, l’Espagne prend les devants, annexe l’île et y bâtit en 1848 le fort Isabelle II, son premier bastion en mer de Sulu."
+ },
+ "vicalvarada-1854": {
+  "title": "La révolution de 1854 et le Biennat progressiste",
+  "place": "Vicálvaro",
+  "summary": "En juin 1854, le général O’Donnell se soulève à Vicálvaro et, avec le manifeste de Manzanares et des soulèvements dans les villes, la révolte renverse le gouvernement modéré. Espartero revient au pouvoir pour le « Biennat progressiste », jusqu’à ce qu’O’Donnell le remplace en 1856 et fonde l’Union libérale."
  }
 }

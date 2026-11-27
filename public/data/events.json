@@ -13210,6 +13210,222 @@
    "summary": "In April 1965 officers loyal to the ousted president Juan Bosch rise in Santo Domingo. Fearing \"a second Cuba\", President Johnson sends 42,000 US troops, later joined by an inter-American force; they hold the capital until a truce and elections, won by Joaquín Balaguer, and leave in September 1966.",
    "wikipedia": "Dominican_Civil_War",
    "search": "Dominican Civil War April 1965 Constitutionalists Caamaño US intervention Operation Power Pack Inter-American Peace Force 1966 Balaguer"
+  },
+  {
+   "id": "liberal-triennium-1820",
+   "kind": "revolution",
+   "year": 1820,
+   "title": "Riego's revolt and the Liberal Triennium, 1820",
+   "place": "Cádiz",
+   "lonLat": [
+    -6.29,
+    36.53
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "On 1 January 1820 Colonel Rafael del Riego leads troops waiting near Cádiz to sail for America in a revolt for the constitution of 1812. The rising spreads, and on 10 March King Ferdinand VII swears the constitution. Liberals govern Spain for three years.",
+   "wikipedia": "Trienio_Liberal",
+   "search": "Riego revolt Cabezas de San Juan January 1820 Cádiz Ferdinand VII swears Constitution of 1812 10 March 1820 Liberal Triennium"
+  },
+  {
+   "id": "independence-of-spanish-haiti-1821",
+   "kind": "revolution",
+   "year": 1821,
+   "title": "Santo Domingo breaks from Spain, December 1821",
+   "place": "Santo Domingo",
+   "lonLat": [
+    -69.89,
+    18.47
+   ],
+   "civs": [
+    "santo-domingo",
+    "spain",
+    "haiti"
+   ],
+   "summary": "On 1 December 1821 the lawyer José Núñez de Cáceres overthrows the Spanish governor and proclaims the Independent State of Spanish Haiti, hoping to join Simón Bolívar's Gran Colombia. Bolívar never answers, and the \"ephemeral independence\" lasts barely ten weeks.",
+   "wikipedia": "Republic_of_Spanish_Haiti",
+   "search": "Ephemeral Independence 1 December 1821 José Núñez de Cáceres Republic of Spanish Haiti Gran Colombia Santo Domingo"
+  },
+  {
+   "id": "haitian-unification-1822",
+   "kind": "empire",
+   "year": 1822,
+   "title": "Haiti takes the whole island, February 1822",
+   "place": "Santo Domingo",
+   "lonLat": [
+    -69.9,
+    18.49
+   ],
+   "civs": [
+    "haiti",
+    "santo-domingo",
+    "dominican-republic"
+   ],
+   "summary": "Invited by the border towns, Haiti's president Jean-Pierre Boyer marches into Santo Domingo with some 10,000 soldiers on 9 February 1822. He abolishes slavery in the east and rules the whole of Hispaniola as one Haitian republic for 22 years.",
+   "wikipedia": "Haitian_occupation_of_Santo_Domingo",
+   "search": "Haitian occupation of Santo Domingo 9 February 1822 Jean-Pierre Boyer unification of Hispaniola abolition of slavery 1844"
+  },
+  {
+   "id": "french-invasion-of-spain-1823",
+   "kind": "war",
+   "year": 1823,
+   "title": "The French restore Ferdinand VII's absolute rule, 1823",
+   "place": "Madrid",
+   "lonLat": [
+    -3.7,
+    40.42
+   ],
+   "civs": [
+    "spain",
+    "france"
+   ],
+   "summary": "Sent by the Holy Alliance, a French army of about 95,000 men, the \"Hundred Thousand Sons of Saint Louis\", crosses the Pyrenees in April 1823 and meets little resistance. After the fall of the Trocadero at Cádiz, Ferdinand VII is freed on 1 October, abolishes the constitution and has Riego hanged.",
+   "wikipedia": "Hundred_Thousand_Sons_of_Saint_Louis",
+   "search": "Hundred Thousand Sons of Saint Louis 1823 French invasion Duke of Angoulême Trocadero Cádiz Ferdinand VII absolutism restored 1 October 1823 Riego executed"
+  },
+  {
+   "id": "isabella-ii-accession-1833",
+   "kind": "crown",
+   "year": 1833,
+   "title": "Isabella II becomes queen at three, September 1833",
+   "place": "Madrid",
+   "lonLat": [
+    -3.71,
+    40.42
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "Ferdinand VII dies on 29 September 1833, leaving the throne to his three-year-old daughter Isabella under the regency of her mother Maria Christina. His brother Carlos refuses to accept a woman on the throne, and the liberals rally to the young queen.",
+   "wikipedia": "Isabella_II",
+   "search": "Death of Ferdinand VII 29 September 1833 Isabella II queen aged three regency Maria Christina Pragmatic Sanction Carlos claimant"
+  },
+  {
+   "id": "first-carlist-war-1833",
+   "kind": "war",
+   "year": 1833,
+   "to": 1840,
+   "title": "The First Carlist War, 1833 – 1840",
+   "place": "Navarre",
+   "lonLat": [
+    -1.98,
+    43.0
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "Supporters of Ferdinand's brother Carlos rise against Isabella II. Led by Zumalacárregui, they hold the countryside of Navarre and the Basque provinces from 1834 but fail before Bilbao. The Convention of Vergara (1839) ends the war in the north, and Cabrera's last Carlists in the Maestrazgo give up in 1840.",
+   "wikipedia": "First_Carlist_War",
+   "search": "First Carlist War 1833 1840 Don Carlos Zumalacárregui siege of Bilbao Convention of Vergara Espartero Maroto Cabrera Maestrazgo"
+  },
+  {
+   "id": "espartero-regency-1840",
+   "kind": "revolution",
+   "year": 1840,
+   "to": 1843,
+   "title": "General Espartero takes the regency, 1840 – 1843",
+   "place": "Madrid",
+   "lonLat": [
+    -3.69,
+    40.41
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "Forced out by a Progressive revolt, the regent Maria Christina leaves for France in October 1840, and the Cortes make General Espartero, the victor of the Carlist War, regent. His harsh rule, including the shelling of Barcelona in 1842, turns everyone against him; he falls in 1843 and Isabella II is declared of age at thirteen.",
+   "wikipedia": "Baldomero_Espartero",
+   "search": "Espartero regency October 1840 Maria Christina exile Progressives fall 1843 Narváez Isabella II declared of age"
+  },
+  {
+   "id": "spain-takes-fernando-po-1843",
+   "kind": "empire",
+   "year": 1843,
+   "title": "Spain takes possession of Fernando Po, 1843",
+   "place": "Santa Isabel (Malabo)",
+   "lonLat": [
+    8.78,
+    3.75
+   ],
+   "civs": [
+    "spain",
+    "spanish-guinea"
+   ],
+   "summary": "Spain had owned Fernando Po on paper since 1778 but left it to a British anti-slavery naval base from 1827. In March 1843 Juan José Lerena raises the Spanish flag at Port Clarence, renamed Santa Isabel, and claims Annobón and Corisco: the start of Spanish Guinea.",
+   "wikipedia": "Bioko",
+   "search": "Juan José Lerena expedition March 1843 Fernando Po Port Clarence renamed Santa Isabel Annobón Corisco British Preventive Squadron"
+  },
+  {
+   "id": "dominican-independence-1844",
+   "kind": "revolution",
+   "year": 1844,
+   "title": "The Dominican Republic is born, 27 February 1844",
+   "place": "Santo Domingo",
+   "lonLat": [
+    -69.89,
+    18.47
+   ],
+   "civs": [
+    "dominican-republic",
+    "haiti"
+   ],
+   "summary": "On the night of 27 February 1844 the members of the secret society La Trinitaria, founded by Juan Pablo Duarte, seize the Puerta del Conde in Santo Domingo and proclaim the Dominican Republic. The new state beats back Haitian invasions until 1856.",
+   "wikipedia": "Dominican_War_of_Independence",
+   "search": "Dominican independence 27 February 1844 Puerta del Conde Duarte Sánchez Mella La Trinitaria war of independence Haiti"
+  },
+  {
+   "id": "spain-founds-davao-1848",
+   "kind": "empire",
+   "year": 1848,
+   "title": "Spain takes the Davao Gulf, 1848",
+   "place": "Davao",
+   "lonLat": [
+    125.61,
+    7.07
+   ],
+   "civs": [
+    "spain",
+    "spanish-east-indies"
+   ],
+   "summary": "In 1848 an expedition of settlers under José Cruz de Oyanguren, a Basque from Vergara, lands on the Davao River and drives out Datu Bago after months of fighting. The town of Nueva Vergara, later Davao, gives Spain its first hold on southeastern Mindanao.",
+   "wikipedia": "Davao_City",
+   "search": "José Cruz de Oyanguren 1848 Davao Gulf conquest Datu Bago Nueva Vergara Spanish colonisation Mindanao"
+  },
+  {
+   "id": "spain-fortifies-basilan-1848",
+   "kind": "empire",
+   "year": 1848,
+   "title": "Spain takes Basilan from Sulu, 1848",
+   "place": "Isabela, Basilan",
+   "lonLat": [
+    121.97,
+    6.7
+   ],
+   "civs": [
+    "spain",
+    "sultanate-of-sulu",
+    "spanish-east-indies"
+   ],
+   "summary": "After a French squadron tried to seize Basilan from the Sultanate of Sulu in 1844-45 as a base for trade with China, Spain moves first, annexes the island and builds Fort Isabela II in 1848, its first stronghold in the Sulu sea.",
+   "wikipedia": "Basilan",
+   "search": "Basilan France 1844 1845 Lagrené attempt purchase Spain annexation Fort Isabella Segunda 1848 Sultanate of Sulu"
+  },
+  {
+   "id": "vicalvarada-1854",
+   "kind": "revolution",
+   "year": 1854,
+   "title": "The revolution of 1854 and the Progressive Biennium",
+   "place": "Vicálvaro",
+   "lonLat": [
+    -3.6,
+    40.4
+   ],
+   "civs": [
+    "spain"
+   ],
+   "summary": "In June 1854 General O'Donnell rises at Vicálvaro, and with the Manifesto of Manzanares and uprisings in the cities the revolt topples the Moderate government. Espartero returns to power for the \"Progressive Biennium\" until O'Donnell replaces him in 1856 and founds the Liberal Union.",
+   "wikipedia": "Spanish_Revolution_of_1854",
+   "search": "Vicalvarada June 1854 O'Donnell Manifesto of Manzanares Progressive Biennium Espartero 1856 Liberal Union"
   }
  ]
 }
