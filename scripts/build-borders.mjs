@@ -293,6 +293,12 @@ function countryName(name, year) {
   };
 }
 
+/** A holder's plain name for a year, when a period labels it otherwise: "held by the Ottoman Empire". */
+function heldName(name, year) {
+  const label = periodOf(name, year)?.label;
+  return label && label !== name ? label : undefined;
+}
+
 /** The period of a realm a year falls in, if it has periods. */
 function periodOf(name, year) {
   const periods = (realms[name]?.periods ?? []).filter((p) => Number(p.from.slice(0, 4)) <= year);
@@ -378,6 +384,10 @@ for (let year = TODAY; year >= firstReviewed; year--) {
           // even where its label point falls in a lagoon (Chagos Archipelago).
           ...(s.territory && { land: s.territory }),
           by: h.by,
+          // The holder's name that year when a period names it otherwise
+          // (the First Hellenic Republic, the Ottoman Empire).
+          ...(heldName(h.by, year) && { byName: heldName(h.by, year) }),
+          ...(h.with && heldName(h.with, year) && { withName: heldName(h.with, year) }),
           since: h.since,
           note: h.note,
           ...(h.with && { with: h.with }),
@@ -573,7 +583,9 @@ for (const [key, list] of runs) {
       ...(m.kind && { kind: m.kind }),
       ...(m.land && { land: m.land }),
       ...(m.by && { by: m.by, since: m.since, note: m.note }),
+      ...(m.byName && { byName: m.byName }),
       ...(m.with && { with: m.with }),
+      ...(m.withName && { withName: m.withName }),
       ...(m.trust && { trust: true }),
       ...(m.occupied && { occupied: true }),
       ...(m.confirmed && { confirmed: m.confirmed }),
