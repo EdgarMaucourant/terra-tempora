@@ -2434,12 +2434,6 @@
   "fr": "Oman",
   "es": "Omán"
  },
- "Ottoman Empire": {
-  "wikipedia": "Ottoman Empire",
-  "wikidata": "Q12560",
-  "fr": "Empire ottoman",
-  "es": "Imperio otomano"
- },
  "Pakistan": {
   "wikipedia": "Pakistan",
   "wikidata": "Q843",
@@ -3427,7 +3421,28 @@
   "wikipedia": "Turkey",
   "wikidata": "Q43",
   "fr": "Turquie",
-  "es": "Turquía"
+  "es": "Turquía",
+  "periods": [
+   {
+    "from": "1299-07-27",
+    "name": "Ottoman Empire",
+    "wikipedia": "Ottoman Empire",
+    "fr": "Empire ottoman",
+    "es": "Imperio otomano",
+    "label": "Ottoman Empire",
+    "labelFr": "Empire ottoman",
+    "labelEs": "Imperio otomano",
+    "note": "Ruled by the Ottoman sultans from Constantinople; the Grand National Assembly in Ankara governed most of Anatolia from April 1920"
+   },
+   {
+    "from": "1922-11-01",
+    "name": "Turkey",
+    "wikipedia": "Turkey",
+    "fr": "Turquie",
+    "es": "Turquía",
+    "note": "Governed by the Grand National Assembly after the sultanate was abolished (1 November 1922); a republic from 29 October 1923"
+   }
+  ]
  },
  "Turkmenistan": {
   "wikipedia": "Turkmenistan",
