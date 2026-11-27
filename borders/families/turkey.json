@@ -380,7 +380,7 @@
     "outlands-bosilegrad",
     "outlands-caribrod"
    ],
-   "from": 1912,
+   "from": 1815,
    "why": "Serbia (not Vojvodina), Kosovo, Bosnia, North Macedonia and Montenegro (not Old Montenegro or the Bay of Kotor): Ottoman land in 1815"
   },
   {
@@ -398,8 +398,15 @@
     "ALB-1528",
     "ALB-1529"
    ],
-   "from": 1912,
+   "from": 1815,
    "why": "Albania, Ottoman until 1912"
+  },
+  {
+   "pieces": [
+    "belgrade-north"
+   ],
+   "from": 1912,
+   "why": "Zemun and the north bank of Belgrade: never Ottoman in the period, earlier years left to the Hungary/Vojvodina rebuild"
   }
  ],
  "changes": [
@@ -845,7 +852,8 @@
       "sandzak-raska",
       "sandzak-zlatibor",
       "outlands-bosilegrad",
-      "outlands-caribrod"
+      "outlands-caribrod",
+      "belgrade-north"
      ],
      "owner": "Yugoslavia",
      "source": {
@@ -1374,7 +1382,8 @@
       "SRB-843",
       "SRB-844",
       "sandzak-raska",
-      "sandzak-zlatibor"
+      "sandzak-zlatibor",
+      "belgrade-north"
      ],
      "owner": "Yugoslavia",
      "source": {
@@ -2053,7 +2062,8 @@
       "sandzak-raska",
       "sandzak-zlatibor",
       "outlands-bosilegrad",
-      "outlands-caribrod"
+      "outlands-caribrod",
+      "belgrade-north"
      ],
      "owner": "Yugoslavia",
      "source": {
@@ -3850,6 +3860,16 @@
      "source": {
       "title": "Bosnia and Herzegovina in Austria-Hungary (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Bosnia_and_Herzegovina_in_Austria-Hungary"
+     }
+    },
+    {
+     "pieces": [
+      "belgrade-north"
+     ],
+     "owner": "Austria-Hungary",
+     "source": {
+      "title": "Zemun (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Zemun"
      }
     }
    ]
@@ -7150,6 +7170,54 @@
    ]
   },
   {
+   "date": "1908-10-06",
+   "what": "Austria-Hungary annexes Bosnia and Herzegovina",
+   "source": {
+    "title": "Bosnian Crisis (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Bosnian_Crisis"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "BIH-2224",
+      "BIH-2225",
+      "BIH-2226",
+      "BIH-2227",
+      "BIH-2228",
+      "BIH-2887",
+      "BIH-2889",
+      "BIH-2890",
+      "BIH-2891",
+      "BIH-3153",
+      "BIH-4801",
+      "BIH-4802",
+      "BIH-4803",
+      "BIH-4804",
+      "BIH-4805",
+      "BIH-4806",
+      "BIH-4807",
+      "BIH-4808"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Austro-Hungarian occupation of Bosnia and Herzegovina (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Austro-Hungarian_occupation_of_Bosnia_and_Herzegovina"
+     },
+     "hatch": {
+      "by": "Austria-Hungary",
+      "since": "1878-07-29",
+      "note": "Occupied and run by Austria-Hungary under the Treaty of Berlin, while still formally Ottoman, until the annexation of 1908",
+      "source": {
+       "title": "Austro-Hungarian occupation of Bosnia and Herzegovina (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Austro-Hungarian_occupation_of_Bosnia_and_Herzegovina"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
    "date": "1898-12-09",
    "what": "The last Ottoman troops have left Crete, which becomes an autonomous Cretan State under Prince George of Greece",
    "source": {
@@ -7271,6 +7339,27 @@
    ]
   },
   {
+   "date": "1880-11-22",
+   "what": "Ulcinj is handed to Montenegro in place of Plav and Gusinje",
+   "source": {
+    "title": "Ulcinj (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Ulcinj"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "MNE-1497"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    }
+   ]
+  },
+  {
    "date": "1879-06-26",
    "what": "Prince Alexander of Battenberg takes office; the Russian administration ends",
    "source": {
@@ -7345,6 +7434,38 @@
    ]
   },
   {
+   "date": "1879-06-26",
+   "what": "Prince Alexander of Battenberg takes office; the Russian administration ends",
+   "source": {
+    "title": "Principality of Bulgaria (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Principality_of_Bulgaria"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "outlands-bosilegrad",
+      "outlands-caribrod"
+     ],
+     "owner": "Bulgaria",
+     "source": {
+      "title": "Principality of Bulgaria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Principality_of_Bulgaria"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1878-07-13",
+      "note": "Run by the Russian provisional administration until Prince Alexander took office in 1879",
+      "source": {
+       "title": "Principality of Bulgaria (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Principality_of_Bulgaria"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
    "date": "1879-03-01",
    "what": "The last Russian troops leave Adrianople and Eastern Thrace",
    "source": {
@@ -7406,6 +7527,44 @@
        "url": "https://en.wikipedia.org/wiki/Northern_Dobruja"
       },
       "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1878-07-29",
+   "what": "Austro-Hungarian troops cross into Bosnia and Herzegovina",
+   "source": {
+    "title": "Austro-Hungarian occupation of Bosnia and Herzegovina (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Austro-Hungarian_occupation_of_Bosnia_and_Herzegovina"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "BIH-2224",
+      "BIH-2225",
+      "BIH-2226",
+      "BIH-2227",
+      "BIH-2228",
+      "BIH-2887",
+      "BIH-2889",
+      "BIH-2890",
+      "BIH-2891",
+      "BIH-3153",
+      "BIH-4801",
+      "BIH-4802",
+      "BIH-4803",
+      "BIH-4804",
+      "BIH-4805",
+      "BIH-4806",
+      "BIH-4807",
+      "BIH-4808"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
      }
     }
    ]
@@ -7576,6 +7735,137 @@
    ]
   },
   {
+   "date": "1878-07-13",
+   "what": "Treaty of Berlin: Serbia and Montenegro become independent and gain land; Bulgaria becomes a principality; Austria-Hungary may occupy Bosnia",
+   "source": {
+    "title": "Treaty of Berlin (1878) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Berlin_(1878)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SRB-121",
+      "SRB-835",
+      "SRB-843"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Serbian–Ottoman War (1876–1878) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Serbian–Ottoman_War_(1876–1878)"
+     },
+     "hatch": {
+      "by": "Serbia",
+      "since": "1877-12-28",
+      "note": "Taken by the Serbian army in the war of 1877-78; Ottoman until the Treaty of Berlin",
+      "source": {
+       "title": "Serbian–Ottoman War (1876–1878) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Serbian–Ottoman_War_(1876–1878)"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "SRB-830",
+      "SRB-841"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Serbian–Ottoman War (1876–1878) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Serbian–Ottoman_War_(1876–1878)"
+     },
+     "hatch": {
+      "by": "Serbia",
+      "since": "1878-01-10",
+      "note": "Taken by the Serbian army in the war of 1877-78; Ottoman until the Treaty of Berlin",
+      "source": {
+       "title": "Serbian–Ottoman War (1876–1878) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Serbian–Ottoman_War_(1876–1878)"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "outlands-bosilegrad",
+      "outlands-caribrod"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Russo-Turkish War (1877–1878) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Russo-Turkish_War_(1877–1878)"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1878-01-04",
+      "note": "Taken by the Russian army in the Russo-Turkish War",
+      "source": {
+       "title": "Russo-Turkish War (1877–1878) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Russo-Turkish_War_(1877–1878)"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "MNE-1514"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Montenegrin–Ottoman War (1876–1878) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Montenegrin–Ottoman_War_(1876–1878)"
+     },
+     "hatch": {
+      "by": "Montenegro",
+      "since": "1877-09-08",
+      "note": "Taken by the Montenegrin army in the war of 1876-78; Ottoman until the Treaty of Berlin",
+      "source": {
+       "title": "Montenegrin–Ottoman War (1876–1878) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Montenegrin–Ottoman_War_(1876–1878)"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "MNE-1496"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Montenegrin–Ottoman War (1876–1878) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Montenegrin–Ottoman_War_(1876–1878)"
+     },
+     "hatch": {
+      "by": "Montenegro",
+      "since": "1878-01-10",
+      "note": "Taken by the Montenegrin army in the war of 1876-78; Ottoman until the Treaty of Berlin",
+      "source": {
+       "title": "Montenegrin–Ottoman War (1876–1878) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Montenegrin–Ottoman_War_(1876–1878)"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "MNE-1508",
+      "MNE-1512",
+      "MNE-1513",
+      "MNE-1515",
+      "MNE-1517",
+      "MNE-1519",
+      "MNE-1520"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    }
+   ]
+  },
+  {
    "date": "1878-01-31",
    "what": "The armistice of Adrianople: the Ottomans hand over their Danube fortresses",
    "source": {
@@ -7656,6 +7946,38 @@
    ]
   },
   {
+   "date": "1878-01-10",
+   "what": "The Serbian army takes Niš, and the Montenegrins take Bar",
+   "source": {
+    "title": "Serbian–Ottoman War (1876–1878) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Serbian–Ottoman_War_(1876–1878)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "SRB-830",
+      "SRB-841"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    },
+    {
+     "pieces": [
+      "MNE-1496"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    }
+   ]
+  },
+  {
    "date": "1878-01-04",
    "what": "The Russian army enters Sofia",
    "source": {
@@ -7675,6 +7997,72 @@
      "source": {
       "title": "Ottoman Bulgaria (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Ottoman_Bulgaria"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1878-01-04",
+   "what": "The Russian army takes Sofia and the country to its west",
+   "source": {
+    "title": "Russo-Turkish War (1877–1878) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Russo-Turkish_War_(1877–1878)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "outlands-bosilegrad",
+      "outlands-caribrod"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1877-12-28",
+   "what": "The Serbian army takes Pirot, Prokuplje and Leskovac",
+   "source": {
+    "title": "Serbian–Ottoman War (1876–1878) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Serbian–Ottoman_War_(1876–1878)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "SRB-121",
+      "SRB-835",
+      "SRB-843"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1877-09-08",
+   "what": "The Montenegrin army takes Nikšić",
+   "source": {
+    "title": "Montenegrin–Ottoman War (1876–1878) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Montenegrin–Ottoman_War_(1876–1878)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "MNE-1514"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
      }
     }
    ]
@@ -8473,6 +8861,29 @@
        "url": "https://en.wikipedia.org/wiki/Regulamentul_Organic"
       },
       "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1833-08-01",
+   "what": "The sultan hands six more districts to the Principality of Serbia",
+   "source": {
+    "title": "Principality of Serbia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Principality_of_Serbia"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "SRB-125",
+      "SRB-844",
+      "SRB-833"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
      }
     }
    ]

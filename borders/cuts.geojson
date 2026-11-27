@@ -25149,6 +25149,81 @@
      ]
     ]
    }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "belgrade-north",
+    "from": "SRB-836",
+    "note": "Zemun, New Belgrade and the north bank of the Sava and Danube, Austrian until 1918",
+    "source": {
+     "title": "Zemun (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Zemun"
+    }
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       19.85,
+       44.745
+      ],
+      [
+       20.1,
+       44.68
+      ],
+      [
+       20.2,
+       44.665
+      ],
+      [
+       20.3,
+       44.71
+      ],
+      [
+       20.38,
+       44.775
+      ],
+      [
+       20.447,
+       44.823
+      ],
+      [
+       20.55,
+       44.835
+      ],
+      [
+       20.65,
+       44.845
+      ],
+      [
+       20.71,
+       44.76
+      ],
+      [
+       20.82,
+       44.68
+      ],
+      [
+       21.0,
+       44.68
+      ],
+      [
+       21.0,
+       45.2
+      ],
+      [
+       19.85,
+       45.2
+      ],
+      [
+       19.85,
+       44.745
+      ]
+     ]
+    ]
+   }
   }
  ]
 }

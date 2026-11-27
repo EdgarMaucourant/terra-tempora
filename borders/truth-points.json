@@ -18449,6 +18449,262 @@
    ],
    "realm": "Yugoslavia",
    "why": "Yugoslav"
+  },
+  {
+   "place": "Belgrade (Principality)",
+   "lonLat": [
+    20.47,
+    44.79
+   ],
+   "years": [
+    1815,
+    1881
+   ],
+   "realm": "Serbia",
+   "why": "Principality of Serbia"
+  },
+  {
+   "place": "Zemun (Austria-Hungary)",
+   "lonLat": [
+    20.4,
+    44.86
+   ],
+   "years": [
+    1912,
+    1917
+   ],
+   "realm": "Austria-Hungary",
+   "why": "Austro-Hungarian until 1918"
+  },
+  {
+   "place": "Negotin (Ottoman)",
+   "lonLat": [
+    22.53,
+    44.23
+   ],
+   "years": [
+    1815,
+    1832
+   ],
+   "realm": "Turkey",
+   "why": "Ottoman until 1833"
+  },
+  {
+   "place": "Negotin (Serbia)",
+   "lonLat": [
+    22.53,
+    44.23
+   ],
+   "years": [
+    1834,
+    1912
+   ],
+   "realm": "Serbia",
+   "why": "Serbian from 1833"
+  },
+  {
+   "place": "Niš (Ottoman)",
+   "lonLat": [
+    21.9,
+    43.32
+   ],
+   "years": [
+    1815,
+    1876
+   ],
+   "realm": "Turkey",
+   "why": "Ottoman until 1878"
+  },
+  {
+   "place": "Niš (Serbia)",
+   "lonLat": [
+    21.9,
+    43.32
+   ],
+   "years": [
+    1878,
+    1912
+   ],
+   "realm": "Serbia",
+   "why": "Serbian from 1878"
+  },
+  {
+   "place": "Dimitrovgrad (Ottoman)",
+   "lonLat": [
+    22.78,
+    43.02
+   ],
+   "years": [
+    1815,
+    1876
+   ],
+   "realm": "Turkey",
+   "why": "Ottoman until 1878"
+  },
+  {
+   "place": "Dimitrovgrad (Bulgaria, 1880)",
+   "lonLat": [
+    22.78,
+    43.02
+   ],
+   "years": [
+    1879,
+    1911
+   ],
+   "realm": "Bulgaria",
+   "why": "Bulgarian 1878-1920"
+  },
+  {
+   "place": "Sarajevo (Ottoman)",
+   "lonLat": [
+    18.41,
+    43.85
+   ],
+   "years": [
+    1815,
+    1877
+   ],
+   "realm": "Turkey",
+   "why": "Ottoman Bosnia"
+  },
+  {
+   "place": "Sarajevo (1880)",
+   "lonLat": [
+    18.41,
+    43.85
+   ],
+   "years": [
+    1878,
+    1907
+   ],
+   "realm": "Turkey",
+   "why": "Austro-Hungarian occupation",
+   "heldBy": [
+    {
+     "years": [
+      1878,
+      1907
+     ],
+     "by": "Austria-Hungary"
+    }
+   ]
+  },
+  {
+   "place": "Sarajevo (annexed)",
+   "lonLat": [
+    18.41,
+    43.85
+   ],
+   "years": [
+    1908,
+    1911
+   ],
+   "realm": "Austria-Hungary",
+   "why": "Annexed 1908"
+  },
+  {
+   "place": "Nikšić (Ottoman)",
+   "lonLat": [
+    18.95,
+    42.77
+   ],
+   "years": [
+    1815,
+    1876
+   ],
+   "realm": "Turkey",
+   "why": "Ottoman until 1877"
+  },
+  {
+   "place": "Nikšić (Montenegro)",
+   "lonLat": [
+    18.95,
+    42.77
+   ],
+   "years": [
+    1878,
+    1912
+   ],
+   "realm": "Montenegro",
+   "why": "Montenegrin from 1878"
+  },
+  {
+   "place": "Ulcinj (Ottoman)",
+   "lonLat": [
+    19.28,
+    41.97
+   ],
+   "years": [
+    1815,
+    1879
+   ],
+   "realm": "Turkey",
+   "why": "Ottoman until 1880"
+  },
+  {
+   "place": "Ulcinj (Montenegro)",
+   "lonLat": [
+    19.28,
+    41.97
+   ],
+   "years": [
+    1880,
+    1912
+   ],
+   "realm": "Montenegro",
+   "why": "Montenegrin from 1880"
+  },
+  {
+   "place": "Pristina (Ottoman)",
+   "lonLat": [
+    21.16,
+    42.66
+   ],
+   "years": [
+    1815,
+    1911
+   ],
+   "realm": "Turkey",
+   "why": "Ottoman until 1912"
+  },
+  {
+   "place": "Skopje (Ottoman)",
+   "lonLat": [
+    21.43,
+    42.0
+   ],
+   "years": [
+    1815,
+    1911
+   ],
+   "realm": "Turkey",
+   "why": "Ottoman until 1912"
+  },
+  {
+   "place": "Tirana (Ottoman)",
+   "lonLat": [
+    19.82,
+    41.33
+   ],
+   "years": [
+    1815,
+    1911
+   ],
+   "realm": "Turkey",
+   "why": "Ottoman until 1912"
+  },
+  {
+   "place": "Novi Pazar (Ottoman)",
+   "lonLat": [
+    20.51,
+    43.14
+   ],
+   "years": [
+    1815,
+    1911
+   ],
+   "realm": "Turkey",
+   "why": "Ottoman until 1912"
   }
  ]
 }
