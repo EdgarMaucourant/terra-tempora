@@ -17317,6 +17317,254 @@
    ],
    "realm": "Turkey",
    "why": "Ottoman until May 1912"
+  },
+  {
+   "place": "Sofia (Ottoman)",
+   "lonLat": [
+    23.32,
+    42.7
+   ],
+   "years": [
+    1815,
+    1876
+   ],
+   "realm": "Turkey",
+   "why": "Ottoman until January 1878"
+  },
+  {
+   "place": "Sofia (Bulgaria)",
+   "lonLat": [
+    23.32,
+    42.7
+   ],
+   "years": [
+    1880,
+    1940
+   ],
+   "realm": "Bulgaria",
+   "why": "Capital of Bulgaria from 1879"
+  },
+  {
+   "place": "Plovdiv (Eastern Rumelia)",
+   "lonLat": [
+    24.75,
+    42.15
+   ],
+   "years": [
+    1879,
+    1884
+   ],
+   "realm": "Eastern Rumelia",
+   "why": "Eastern Rumelia 1878-85"
+  },
+  {
+   "place": "Ruse (1877)",
+   "lonLat": [
+    25.97,
+    43.85
+   ],
+   "years": [
+    1877,
+    1877
+   ],
+   "realm": "Turkey",
+   "why": "Ottoman fortress until the armistice of 1878"
+  },
+  {
+   "place": "Bucharest (Wallachia)",
+   "lonLat": [
+    26.1,
+    44.43
+   ],
+   "years": [
+    1815,
+    1827
+   ],
+   "realm": "Wallachia",
+   "why": "Capital of Wallachia"
+  },
+  {
+   "place": "Bucharest (1830)",
+   "lonLat": [
+    26.1,
+    44.43
+   ],
+   "years": [
+    1830,
+    1830
+   ],
+   "realm": "Wallachia",
+   "heldBy": [
+    {
+     "years": [
+      1830,
+      1830
+     ],
+     "by": "Russia"
+    }
+   ],
+   "why": "Russian occupation 1828-34"
+  },
+  {
+   "place": "Bucharest (1855)",
+   "lonLat": [
+    26.1,
+    44.43
+   ],
+   "years": [
+    1855,
+    1855
+   ],
+   "realm": "Wallachia",
+   "heldBy": [
+    {
+     "years": [
+      1855,
+      1855
+     ],
+     "by": "Austria"
+    }
+   ],
+   "why": "Austrian occupation 1854-57"
+  },
+  {
+   "place": "Bucharest (1917)",
+   "lonLat": [
+    26.1,
+    44.43
+   ],
+   "years": [
+    1917,
+    1917
+   ],
+   "realm": "Romania",
+   "heldBy": [
+    {
+     "years": [
+      1917,
+      1917
+     ],
+     "by": "Germany"
+    }
+   ],
+   "why": "Central Powers occupation"
+  },
+  {
+   "place": "Iasi (Moldavia)",
+   "lonLat": [
+    27.6,
+    47.16
+   ],
+   "years": [
+    1815,
+    1827
+   ],
+   "realm": "Moldavia",
+   "why": "Capital of Moldavia"
+  },
+  {
+   "place": "Iasi (Romania)",
+   "lonLat": [
+    27.6,
+    47.16
+   ],
+   "years": [
+    1860,
+    2026
+   ],
+   "realm": "Romania",
+   "why": "Romania from 1859"
+  },
+  {
+   "place": "Brăila (Ottoman)",
+   "lonLat": [
+    27.9,
+    45.27
+   ],
+   "years": [
+    1815,
+    1827
+   ],
+   "realm": "Turkey",
+   "why": "Ottoman raya until 1829"
+  },
+  {
+   "place": "Danube delta (Russian)",
+   "lonLat": [
+    29.3,
+    45.1
+   ],
+   "years": [
+    1830,
+    1855
+   ],
+   "realm": "Russia",
+   "why": "Russian 1829-56"
+  },
+  {
+   "place": "Constanța (Ottoman)",
+   "lonLat": [
+    28.5,
+    44.2
+   ],
+   "years": [
+    1815,
+    1876
+   ],
+   "realm": "Turkey",
+   "why": "Ottoman Dobruja"
+  },
+  {
+   "place": "Constanța (Romania)",
+   "lonLat": [
+    28.5,
+    44.2
+   ],
+   "years": [
+    1879,
+    1915
+   ],
+   "realm": "Romania",
+   "why": "Romanian from 1878"
+  },
+  {
+   "place": "Dobrich (Romania)",
+   "lonLat": [
+    27.83,
+    43.57
+   ],
+   "years": [
+    1913,
+    1915
+   ],
+   "realm": "Romania",
+   "why": "Southern Dobruja Romanian 1913-40"
+  },
+  {
+   "place": "Dobrich (Bulgaria)",
+   "lonLat": [
+    27.83,
+    43.57
+   ],
+   "years": [
+    1941,
+    2026
+   ],
+   "realm": "Bulgaria",
+   "why": "Bulgarian again from 1940"
+  },
+  {
+   "place": "Smolyan (Ottoman)",
+   "lonLat": [
+    24.7,
+    41.58
+   ],
+   "years": [
+    1815,
+    1911
+   ],
+   "realm": "Turkey",
+   "why": "Ottoman Rhodopes until 1912"
   }
  ]
 }

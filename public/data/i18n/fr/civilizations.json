@@ -668,11 +668,11 @@
  "trans-juba": {
   "name": "Oltre Giuba"
  },
- "honduras": {
-  "name": "Honduras"
- },
  "bulgaria": {
   "name": "Bulgarie"
+ },
+ "honduras": {
+  "name": "Honduras"
  },
  "cuba": {
   "name": "Cuba"
@@ -745,6 +745,9 @@
  },
  "panama": {
   "name": "Panama"
+ },
+ "wallachia": {
+  "name": "Principauté de Valachie"
  },
  "north-borneo": {
   "name": "Bornéo du Nord"
@@ -842,6 +845,9 @@
  "estonia": {
   "name": "Estonie"
  },
+ "moldavia": {
+  "name": "Principauté de Moldavie"
+ },
  "armenia": {
   "name": "Arménie"
  },
@@ -880,6 +886,9 @@
  },
  "cape-juby": {
   "name": "Cap Juby"
+ },
+ "eastern-rumelia": {
+  "name": "Roumélie orientale"
  },
  "moldova": {
   "name": "Moldavie"
@@ -1036,9 +1045,6 @@
  },
  "gambia-colony-and-protectorate": {
   "name": "Colonie et protectorat de Gambie"
- },
- "moldavia": {
-  "name": "Principauté de Moldavie"
  },
  "lebanon": {
   "name": "Liban"

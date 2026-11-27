@@ -147,6 +147,66 @@
    ],
    "from": 1815,
    "why": "Greece without the Ionian Islands and Kythira (United Kingdom family): Ottoman land, Greek from 1830 to 1947"
+  },
+  {
+   "pieces": [
+    "ROU-124",
+    "ROU-123",
+    "ROU-122",
+    "ROU-304",
+    "ROU-126",
+    "ROU-302",
+    "ROU-127",
+    "ROU-130",
+    "ROU-310",
+    "ROU-131",
+    "ROU-4844",
+    "ROU-128",
+    "ROU-132",
+    "ROU-129",
+    "ROU-314",
+    "ROU-313",
+    "ROU-287",
+    "ROU-308",
+    "ROU-309",
+    "ROU-312",
+    "ROU-316",
+    "ROU-315",
+    "ROU-317",
+    "ROU-133",
+    "ROU-4847",
+    "danube-delta",
+    "BGR-2249",
+    "BGR-2246",
+    "BGR-2247",
+    "BGR-2248",
+    "BGR-2244",
+    "BGR-2243",
+    "BGR-2245",
+    "BGR-2252",
+    "BGR-2253",
+    "BGR-2250",
+    "BGR-2251",
+    "BGR-2262",
+    "BGR-2256",
+    "BGR-2257",
+    "BGR-2258",
+    "BGR-2260",
+    "BGR-2259",
+    "BGR-2261",
+    "BGR-2235",
+    "BGR-2234",
+    "BGR-2233",
+    "BGR-2232",
+    "BGR-2231",
+    "BGR-2255",
+    "BGR-2254",
+    "BGR-2236",
+    "BGR-2237",
+    "BGR-3002"
+   ],
+   "from": 1815,
+   "why": "Bulgaria, Dobruja, Wallachia and Moldavia west of the Prut (not Bukovina or Transylvania)"
   }
  ],
  "changes": [
@@ -458,6 +518,28 @@
      "source": {
       "title": "Axis occupation of Greece (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Axis_occupation_of_Greece"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1940-09-07",
+   "what": "By the Treaty of Craiova Romania gives Southern Dobruja back to Bulgaria",
+   "source": {
+    "title": "Treaty of Craiova (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Craiova"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "BGR-2259",
+      "BGR-2261"
+     ],
+     "owner": "Romania",
+     "source": {
+      "title": "Southern Dobruja (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Southern_Dobruja"
      }
     }
    ]
@@ -1621,6 +1703,79 @@
    ]
   },
   {
+   "date": "1918-11-28",
+   "what": "Romanian troops return to Dobruja after the defeat of the Central Powers",
+   "source": {
+    "title": "Southern Dobruja (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Southern_Dobruja"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "BGR-2259",
+      "BGR-2261"
+     ],
+     "owner": "Romania",
+     "source": {
+      "title": "Southern Dobruja (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Southern_Dobruja"
+     },
+     "hatch": {
+      "by": "Bulgaria",
+      "since": "1916-09-06",
+      "note": "Retaken by Bulgaria from the battle of Turtucaia (September 1916) until November 1918",
+      "source": {
+       "title": "Battle of Turtucaia (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Battle_of_Turtucaia"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "ROU-133"
+     ],
+     "owner": "Romania",
+     "source": {
+      "title": "Northern Dobruja (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Northern_Dobruja"
+     },
+     "hatch": {
+      "by": "Bulgaria",
+      "since": "1916-10-22",
+      "note": "Occupied by Bulgarian and German troops in the First World War, until November 1918",
+      "source": {
+       "title": "Romanian campaign (1916) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Romanian_campaign_(1916)"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "ROU-4847",
+      "danube-delta"
+     ],
+     "owner": "Romania",
+     "source": {
+      "title": "Northern Dobruja (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Northern_Dobruja"
+     },
+     "hatch": {
+      "by": "Bulgaria",
+      "since": "1917-01-07",
+      "note": "Occupied by Bulgarian and German troops in the First World War, until November 1918",
+      "source": {
+       "title": "Romanian campaign (1916) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Romanian_campaign_(1916)"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
    "date": "1918-11-16",
    "what": "Tripolitanian leaders proclaim the Tripolitanian Republic in the inland they have held since 1915",
    "source": {
@@ -1677,6 +1832,93 @@
      "source": {
       "title": "Ottoman Empire (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-11-12",
+   "what": "German troops leave Wallachia after the armistice",
+   "source": {
+    "title": "Romanian campaign (1916) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Romanian_campaign_(1916)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ROU-124",
+      "ROU-123",
+      "ROU-122",
+      "ROU-304",
+      "ROU-126"
+     ],
+     "owner": "Romania",
+     "source": {
+      "title": "Romanian campaign (1916) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Romanian_campaign_(1916)"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1916-11-21",
+      "note": "Occupied by the Central Powers in the First World War, under a German military government, until November 1918",
+      "source": {
+       "title": "Romanian campaign (1916) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Romanian_campaign_(1916)"
+      },
+      "occupied": true,
+      "with": "Austria-Hungary"
+     }
+    },
+    {
+     "pieces": [
+      "ROU-302",
+      "ROU-127",
+      "ROU-130",
+      "ROU-310",
+      "ROU-131",
+      "ROU-4844",
+      "ROU-128",
+      "ROU-132",
+      "ROU-129",
+      "ROU-314"
+     ],
+     "owner": "Romania",
+     "source": {
+      "title": "Romanian campaign (1916) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Romanian_campaign_(1916)"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1916-12-06",
+      "note": "Occupied by the Central Powers in the First World War, under a German military government, until November 1918",
+      "source": {
+       "title": "Romanian campaign (1916) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Romanian_campaign_(1916)"
+      },
+      "occupied": true,
+      "with": "Austria-Hungary"
+     }
+    },
+    {
+     "pieces": [
+      "ROU-313"
+     ],
+     "owner": "Romania",
+     "source": {
+      "title": "Romanian campaign (1916) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Romanian_campaign_(1916)"
+     },
+     "hatch": {
+      "by": "Germany",
+      "since": "1917-01-05",
+      "note": "Occupied by the Central Powers in the First World War, under a German military government, until November 1918",
+      "source": {
+       "title": "Romanian campaign (1916) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Romanian_campaign_(1916)"
+      },
+      "occupied": true,
+      "with": "Austria-Hungary"
      }
     }
    ]
@@ -1859,6 +2101,147 @@
        "title": "Battle of Erzincan (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Battle_of_Erzincan"
       }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1917-01-07",
+   "what": "The Central Powers take Tulcea and the north of Dobruja",
+   "source": {
+    "title": "Romanian campaign (1916) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Romanian_campaign_(1916)"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ROU-4847",
+      "danube-delta"
+     ],
+     "owner": "Romania",
+     "source": {
+      "title": "Northern Dobruja (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Northern_Dobruja"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1917-01-05",
+   "what": "The Central Powers take Brăila",
+   "source": {
+    "title": "Romanian campaign (1916) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Romanian_campaign_(1916)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "ROU-313"
+     ],
+     "owner": "Romania",
+     "source": {
+      "title": "Romanian campaign (1916) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Romanian_campaign_(1916)"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1916-12-06",
+   "what": "German troops enter Bucharest",
+   "source": {
+    "title": "Romanian campaign (1916) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Romanian_campaign_(1916)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ROU-302",
+      "ROU-127",
+      "ROU-130",
+      "ROU-310",
+      "ROU-131",
+      "ROU-4844",
+      "ROU-128",
+      "ROU-132",
+      "ROU-129",
+      "ROU-314"
+     ],
+     "owner": "Romania",
+     "source": {
+      "title": "Romanian campaign (1916) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Romanian_campaign_(1916)"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1916-11-21",
+   "what": "The Central Powers break through to Craiova and take Oltenia",
+   "source": {
+    "title": "Romanian campaign (1916) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Romanian_campaign_(1916)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "ROU-124",
+      "ROU-123",
+      "ROU-122",
+      "ROU-304",
+      "ROU-126"
+     ],
+     "owner": "Romania",
+     "source": {
+      "title": "Romanian campaign (1916) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Romanian_campaign_(1916)"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1916-10-22",
+   "what": "Bulgarian and German troops take Constanța",
+   "source": {
+    "title": "Romanian campaign (1916) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Romanian_campaign_(1916)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ROU-133"
+     ],
+     "owner": "Romania",
+     "source": {
+      "title": "Northern Dobruja (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Northern_Dobruja"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1916-09-06",
+   "what": "Bulgaria takes Turtucaia and retakes Southern Dobruja",
+   "source": {
+    "title": "Battle of Turtucaia (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Battle_of_Turtucaia"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "BGR-2259",
+      "BGR-2261"
+     ],
+     "owner": "Romania",
+     "source": {
+      "title": "Southern Dobruja (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Southern_Dobruja"
      }
     }
    ]
@@ -2100,6 +2483,28 @@
    ]
   },
   {
+   "date": "1913-08-10",
+   "what": "By the Treaty of Bucharest Bulgaria gives Southern Dobruja to Romania",
+   "source": {
+    "title": "Treaty of Bucharest (1913) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Bucharest_(1913)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "BGR-2259",
+      "BGR-2261"
+     ],
+     "owner": "Bulgaria",
+     "source": {
+      "title": "Southern Dobruja (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Southern_Dobruja"
+     }
+    }
+   ]
+  },
+  {
    "date": "1913-05-30",
    "what": "By the Treaty of London the Ottoman Empire gives up its land west of the Enos-Midia line",
    "source": {
@@ -2162,6 +2567,39 @@
      "hatch": {
       "by": "Bulgaria",
       "since": "1912-11-06",
+      "note": "Taken by the Bulgarian army in the First Balkan War",
+      "source": {
+       "title": "First Balkan War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/First_Balkan_War"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1913-05-30",
+   "what": "By the Treaty of London the Ottoman Empire gives up the Rhodopes and Pirin Macedonia",
+   "source": {
+    "title": "Treaty of London (1913) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_London_(1913)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "BGR-2236",
+      "BGR-2237",
+      "BGR-3002"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Bulgaria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Bulgaria"
+     },
+     "hatch": {
+      "by": "Bulgaria",
+      "since": "1912-10-21",
       "note": "Taken by the Bulgarian army in the First Balkan War",
       "source": {
        "title": "First Balkan War (Wikipedia)",
@@ -2297,6 +2735,29 @@
      "source": {
       "title": "Ottoman Greece (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Ottoman_Greece"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1912-10-21",
+   "what": "The Bulgarian army takes the Rhodopes and the Struma valley",
+   "source": {
+    "title": "First Balkan War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/First_Balkan_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "BGR-2236",
+      "BGR-2237",
+      "BGR-3002"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Bulgaria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Bulgaria"
      }
     }
    ]
@@ -2675,6 +3136,33 @@
    ]
   },
   {
+   "date": "1885-09-18",
+   "what": "Eastern Rumelia unites with Bulgaria after a bloodless coup in Plovdiv",
+   "source": {
+    "title": "Bulgarian unification (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Bulgarian_unification"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "BGR-2235",
+      "BGR-2234",
+      "BGR-2233",
+      "BGR-2232",
+      "BGR-2231",
+      "BGR-2255",
+      "BGR-2254"
+     ],
+     "owner": "Eastern Rumelia",
+     "source": {
+      "title": "Eastern Rumelia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Eastern_Rumelia"
+     }
+    }
+   ]
+  },
+  {
    "date": "1881-07-02",
    "what": "By the Convention of Constantinople the Ottoman Empire gives Thessaly and Arta to Greece",
    "source": {
@@ -2691,6 +3179,80 @@
      "source": {
       "title": "Ottoman Greece (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Ottoman_Greece"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1879-06-26",
+   "what": "Prince Alexander of Battenberg takes office; the Russian administration ends",
+   "source": {
+    "title": "Principality of Bulgaria (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Principality_of_Bulgaria"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "BGR-2249",
+      "BGR-2246",
+      "BGR-2247",
+      "BGR-2248",
+      "BGR-2244",
+      "BGR-2243",
+      "BGR-2245",
+      "BGR-2252",
+      "BGR-2253",
+      "BGR-2250",
+      "BGR-2251",
+      "BGR-2262",
+      "BGR-2256",
+      "BGR-2257",
+      "BGR-2258",
+      "BGR-2260",
+      "BGR-2259",
+      "BGR-2261"
+     ],
+     "owner": "Bulgaria",
+     "source": {
+      "title": "Principality of Bulgaria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Principality_of_Bulgaria"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1878-07-13",
+      "note": "Run by the Russian provisional administration until Prince Alexander took office in 1879",
+      "source": {
+       "title": "Principality of Bulgaria (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Principality_of_Bulgaria"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "BGR-2235",
+      "BGR-2234",
+      "BGR-2233",
+      "BGR-2232",
+      "BGR-2231",
+      "BGR-2255",
+      "BGR-2254"
+     ],
+     "owner": "Eastern Rumelia",
+     "source": {
+      "title": "Eastern Rumelia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Eastern_Rumelia"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1878-07-13",
+      "note": "Run by the Russian army until the governor Aleko Pasha took office in 1879",
+      "source": {
+       "title": "Eastern Rumelia (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Eastern_Rumelia"
+      },
+      "occupied": true
      }
     }
    ]
@@ -2729,6 +3291,39 @@
    ]
   },
   {
+   "date": "1878-11-26",
+   "what": "Romanian troops take over Northern Dobruja from the Russians",
+   "source": {
+    "title": "Northern Dobruja (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Northern_Dobruja"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "ROU-133",
+      "ROU-4847",
+      "danube-delta"
+     ],
+     "owner": "Romania",
+     "source": {
+      "title": "Northern Dobruja (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Northern_Dobruja"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1878-07-13",
+      "note": "Run by the Russian army until handed to Romania in November 1878",
+      "source": {
+       "title": "Northern Dobruja (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Northern_Dobruja"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
    "date": "1878-07-13",
    "what": "The Congress of Berlin gives Bayazid back to the Ottoman Empire",
    "source": {
@@ -2760,6 +3355,170 @@
    ]
   },
   {
+   "date": "1878-07-13",
+   "what": "Treaty of Berlin: Bulgaria becomes a principality, Eastern Rumelia an autonomous Ottoman province, and Northern Dobruja goes to Romania",
+   "source": {
+    "title": "Treaty of Berlin (1878) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Berlin_(1878)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "BGR-2249",
+      "BGR-2246",
+      "BGR-2247",
+      "BGR-2248"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Bulgaria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Bulgaria"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1877-06-27",
+      "note": "Northern Bulgaria, taken by the Russian army in the Russo-Turkish War",
+      "source": {
+       "title": "Russo-Turkish War (1877–1878) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Russo-Turkish_War_(1877–1878)"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "BGR-2244",
+      "BGR-2243",
+      "BGR-2245",
+      "BGR-2252"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Bulgaria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Bulgaria"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1878-01-04",
+      "note": "Sofia, taken by the Russian army in the Russo-Turkish War",
+      "source": {
+       "title": "Russo-Turkish War (1877–1878) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Russo-Turkish_War_(1877–1878)"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "BGR-2235",
+      "BGR-2234",
+      "BGR-2233",
+      "BGR-2232",
+      "BGR-2231",
+      "BGR-2255",
+      "BGR-2254"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Bulgaria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Bulgaria"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1878-01-16",
+      "note": "Plovdiv, taken by the Russian army in the Russo-Turkish War",
+      "source": {
+       "title": "Russo-Turkish War (1877–1878) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Russo-Turkish_War_(1877–1878)"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "BGR-2253",
+      "BGR-2250",
+      "BGR-2251",
+      "BGR-2262",
+      "BGR-2256",
+      "BGR-2257",
+      "BGR-2258",
+      "BGR-2260",
+      "BGR-2259",
+      "BGR-2261"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Bulgaria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Bulgaria"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1878-01-31",
+      "note": "The Danube fortresses, handed over after the armistice, taken by the Russian army in the Russo-Turkish War",
+      "source": {
+       "title": "Russo-Turkish War (1877–1878) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Russo-Turkish_War_(1877–1878)"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "ROU-133",
+      "ROU-4847",
+      "danube-delta"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Bulgaria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Bulgaria"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1877-06-22",
+      "note": "Taken by the Russian army in the Russo-Turkish War, handed to Romania in November 1878",
+      "source": {
+       "title": "Russo-Turkish War (1877–1878) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Russo-Turkish_War_(1877–1878)"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1878-01-31",
+   "what": "The armistice of Adrianople: the Ottomans hand over their Danube fortresses",
+   "source": {
+    "title": "Russo-Turkish War (1877–1878) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Russo-Turkish_War_(1877–1878)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "BGR-2253",
+      "BGR-2250",
+      "BGR-2251",
+      "BGR-2262",
+      "BGR-2256",
+      "BGR-2257",
+      "BGR-2258",
+      "BGR-2260",
+      "BGR-2259",
+      "BGR-2261"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Bulgaria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Bulgaria"
+     }
+    }
+   ]
+  },
+  {
    "date": "1878-01-20",
    "what": "The Russian army enters Adrianople",
    "source": {
@@ -2778,6 +3537,104 @@
      "source": {
       "title": "Ottoman Empire (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1878-01-16",
+   "what": "The Russian army takes Plovdiv",
+   "source": {
+    "title": "Russo-Turkish War (1877–1878) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Russo-Turkish_War_(1877–1878)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "BGR-2235",
+      "BGR-2234",
+      "BGR-2233",
+      "BGR-2232",
+      "BGR-2231",
+      "BGR-2255",
+      "BGR-2254"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Bulgaria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Bulgaria"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1878-01-04",
+   "what": "The Russian army enters Sofia",
+   "source": {
+    "title": "Russo-Turkish War (1877–1878) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Russo-Turkish_War_(1877–1878)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "BGR-2244",
+      "BGR-2243",
+      "BGR-2245",
+      "BGR-2252"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Bulgaria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Bulgaria"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1877-06-27",
+   "what": "The Russian army crosses the Danube at Svishtov",
+   "source": {
+    "title": "Russo-Turkish War (1877–1878) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Russo-Turkish_War_(1877–1878)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "BGR-2249",
+      "BGR-2246",
+      "BGR-2247",
+      "BGR-2248"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Bulgaria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Bulgaria"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1877-06-22",
+   "what": "The Russian army crosses into Dobruja",
+   "source": {
+    "title": "Russo-Turkish War (1877–1878) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Russo-Turkish_War_(1877–1878)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "ROU-133",
+      "ROU-4847",
+      "danube-delta"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Ottoman Bulgaria (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Bulgaria"
      }
     }
    ]
@@ -2862,6 +3719,401 @@
      "source": {
       "title": "Emirate of Nejd (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Emirate_of_Nejd"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1859-02-05",
+   "what": "Alexandru Ioan Cuza, already prince of Moldavia, is elected prince of Wallachia: the United Principalities",
+   "source": {
+    "title": "United Principalities (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/United_Principalities"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ROU-124",
+      "ROU-123",
+      "ROU-122",
+      "ROU-304",
+      "ROU-126",
+      "ROU-302",
+      "ROU-127",
+      "ROU-130",
+      "ROU-310",
+      "ROU-131",
+      "ROU-4844",
+      "ROU-128",
+      "ROU-132",
+      "ROU-129",
+      "ROU-314",
+      "ROU-313"
+     ],
+     "owner": "Wallachia",
+     "source": {
+      "title": "Wallachia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Wallachia"
+     }
+    },
+    {
+     "pieces": [
+      "ROU-287",
+      "ROU-308",
+      "ROU-309",
+      "ROU-312",
+      "ROU-316",
+      "ROU-315",
+      "ROU-317"
+     ],
+     "owner": "Moldavia",
+     "source": {
+      "title": "Moldavia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Moldavia"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1857-03-01",
+   "what": "The last Austrian troops leave the principalities",
+   "source": {
+    "title": "Crimean War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Crimean_War"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ROU-124",
+      "ROU-123",
+      "ROU-122",
+      "ROU-304",
+      "ROU-126",
+      "ROU-302",
+      "ROU-127",
+      "ROU-130",
+      "ROU-310",
+      "ROU-131",
+      "ROU-4844",
+      "ROU-128",
+      "ROU-132",
+      "ROU-129",
+      "ROU-314",
+      "ROU-313"
+     ],
+     "owner": "Wallachia",
+     "source": {
+      "title": "Wallachia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Wallachia"
+     },
+     "hatch": {
+      "by": "Austria",
+      "since": "1854-08-20",
+      "note": "Occupied by Austrian troops after the Russians left, until 1857",
+      "source": {
+       "title": "Crimean War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Crimean_War"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "ROU-287",
+      "ROU-308",
+      "ROU-309",
+      "ROU-312",
+      "ROU-316",
+      "ROU-315",
+      "ROU-317"
+     ],
+     "owner": "Moldavia",
+     "source": {
+      "title": "Moldavia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Moldavia"
+     },
+     "hatch": {
+      "by": "Austria",
+      "since": "1854-08-20",
+      "note": "Occupied by Austrian troops after the Russians left, until 1857",
+      "source": {
+       "title": "Crimean War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Crimean_War"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1856-03-30",
+   "what": "By the Treaty of Paris Russia gives the Danube delta back to the Ottoman Empire",
+   "source": {
+    "title": "Treaty of Paris (1856) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Paris_(1856)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "danube-delta"
+     ],
+     "owner": "Russia",
+     "source": {
+      "title": "Treaty of Adrianople (1829) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Adrianople_(1829)"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1854-08-20",
+   "what": "The Russian army leaves the principalities, and Austrian troops move in",
+   "source": {
+    "title": "Crimean War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Crimean_War"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "ROU-124",
+      "ROU-123",
+      "ROU-122",
+      "ROU-304",
+      "ROU-126",
+      "ROU-302",
+      "ROU-127",
+      "ROU-130",
+      "ROU-310",
+      "ROU-131",
+      "ROU-4844",
+      "ROU-128",
+      "ROU-132",
+      "ROU-129",
+      "ROU-314",
+      "ROU-313"
+     ],
+     "owner": "Wallachia",
+     "source": {
+      "title": "Wallachia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Wallachia"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1853-07-03",
+      "note": "Occupied by the Russian army at the start of the Crimean War, until August 1854",
+      "source": {
+       "title": "Crimean War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Crimean_War"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "ROU-287",
+      "ROU-308",
+      "ROU-309",
+      "ROU-312",
+      "ROU-316",
+      "ROU-315",
+      "ROU-317"
+     ],
+     "owner": "Moldavia",
+     "source": {
+      "title": "Moldavia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Moldavia"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1853-07-03",
+      "note": "Occupied by the Russian army at the start of the Crimean War, until August 1854",
+      "source": {
+       "title": "Crimean War (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Crimean_War"
+      },
+      "occupied": true
+     }
+    }
+   ]
+  },
+  {
+   "date": "1853-07-03",
+   "what": "The Russian army crosses the Prut and occupies the principalities",
+   "source": {
+    "title": "Crimean War (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Crimean_War"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ROU-124",
+      "ROU-123",
+      "ROU-122",
+      "ROU-304",
+      "ROU-126",
+      "ROU-302",
+      "ROU-127",
+      "ROU-130",
+      "ROU-310",
+      "ROU-131",
+      "ROU-4844",
+      "ROU-128",
+      "ROU-132",
+      "ROU-129",
+      "ROU-314",
+      "ROU-313"
+     ],
+     "owner": "Wallachia",
+     "source": {
+      "title": "Wallachia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Wallachia"
+     }
+    },
+    {
+     "pieces": [
+      "ROU-287",
+      "ROU-308",
+      "ROU-309",
+      "ROU-312",
+      "ROU-316",
+      "ROU-315",
+      "ROU-317"
+     ],
+     "owner": "Moldavia",
+     "source": {
+      "title": "Moldavia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Moldavia"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1851-05-01",
+   "what": "Russian and Ottoman troops leave the principalities",
+   "source": {
+    "title": "Convention of Balta Liman (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Convention_of_Balta_Liman"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ROU-124",
+      "ROU-123",
+      "ROU-122",
+      "ROU-304",
+      "ROU-126",
+      "ROU-302",
+      "ROU-127",
+      "ROU-130",
+      "ROU-310",
+      "ROU-131",
+      "ROU-4844",
+      "ROU-128",
+      "ROU-132",
+      "ROU-129",
+      "ROU-314",
+      "ROU-313"
+     ],
+     "owner": "Wallachia",
+     "source": {
+      "title": "Wallachia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Wallachia"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1848-09-25",
+      "note": "Occupied by Russian and Ottoman troops after the revolution of 1848, until 1851",
+      "source": {
+       "title": "Convention of Balta Liman (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Convention_of_Balta_Liman"
+      },
+      "occupied": true,
+      "with": "Turkey"
+     }
+    },
+    {
+     "pieces": [
+      "ROU-287",
+      "ROU-308",
+      "ROU-309",
+      "ROU-312",
+      "ROU-316",
+      "ROU-315",
+      "ROU-317"
+     ],
+     "owner": "Moldavia",
+     "source": {
+      "title": "Moldavia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Moldavia"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1848-09-25",
+      "note": "Occupied by Russian and Ottoman troops after the revolution of 1848, until 1851",
+      "source": {
+       "title": "Convention of Balta Liman (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Convention_of_Balta_Liman"
+      },
+      "occupied": true,
+      "with": "Turkey"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1848-09-25",
+   "what": "Russian and Ottoman troops put down the Wallachian revolution",
+   "source": {
+    "title": "Wallachian Revolution of 1848 (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Wallachian_Revolution_of_1848"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "ROU-124",
+      "ROU-123",
+      "ROU-122",
+      "ROU-304",
+      "ROU-126",
+      "ROU-302",
+      "ROU-127",
+      "ROU-130",
+      "ROU-310",
+      "ROU-131",
+      "ROU-4844",
+      "ROU-128",
+      "ROU-132",
+      "ROU-129",
+      "ROU-314",
+      "ROU-313"
+     ],
+     "owner": "Wallachia",
+     "source": {
+      "title": "Wallachia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Wallachia"
+     }
+    },
+    {
+     "pieces": [
+      "ROU-287",
+      "ROU-308",
+      "ROU-309",
+      "ROU-312",
+      "ROU-316",
+      "ROU-315",
+      "ROU-317"
+     ],
+     "owner": "Moldavia",
+     "source": {
+      "title": "Moldavia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Moldavia"
      }
     }
    ]
@@ -3062,6 +4314,78 @@
      "source": {
       "title": "Karamanli dynasty (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Karamanli_dynasty"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1834-04-01",
+   "what": "The Russian army leaves the principalities, which keep their new Organic Statutes",
+   "source": {
+    "title": "Regulamentul Organic (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Regulamentul_Organic"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "ROU-124",
+      "ROU-123",
+      "ROU-122",
+      "ROU-304",
+      "ROU-126",
+      "ROU-302",
+      "ROU-127",
+      "ROU-130",
+      "ROU-310",
+      "ROU-131",
+      "ROU-4844",
+      "ROU-128",
+      "ROU-132",
+      "ROU-129",
+      "ROU-314",
+      "ROU-313"
+     ],
+     "owner": "Wallachia",
+     "source": {
+      "title": "Wallachia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Wallachia"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1828-05-07",
+      "note": "Occupied by the Russian army in the war of 1828-29 and run by Russian governors (Pavel Kiselyov) until 1834",
+      "source": {
+       "title": "Regulamentul Organic (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Regulamentul_Organic"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "ROU-287",
+      "ROU-308",
+      "ROU-309",
+      "ROU-312",
+      "ROU-316",
+      "ROU-315",
+      "ROU-317"
+     ],
+     "owner": "Moldavia",
+     "source": {
+      "title": "Moldavia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Moldavia"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1828-05-07",
+      "note": "Occupied by the Russian army in the war of 1828-29 and run by Russian governors (Pavel Kiselyov) until 1834",
+      "source": {
+       "title": "Regulamentul Organic (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Regulamentul_Organic"
+      },
+      "occupied": true
      }
     }
    ]
@@ -3313,6 +4637,47 @@
    ]
   },
   {
+   "date": "1829-09-14",
+   "what": "Treaty of Adrianople: the Ottomans give Brăila back to Wallachia and the Danube delta to Russia",
+   "source": {
+    "title": "Treaty of Adrianople (1829) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Treaty_of_Adrianople_(1829)"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "ROU-313"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Brăila (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Brăila"
+     },
+     "hatch": {
+      "by": "Russia",
+      "since": "1828-06-18",
+      "note": "Taken by the Russian army in the war of 1828-29",
+      "source": {
+       "title": "Russo-Turkish War (1828–1829) (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Russo-Turkish_War_(1828–1829)"
+      },
+      "occupied": true
+     }
+    },
+    {
+     "pieces": [
+      "danube-delta"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Treaty of Adrianople (1829) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Adrianople_(1829)"
+     }
+    }
+   ]
+  },
+  {
    "date": "1829-09-12",
    "what": "The battle of Petra, the last of the war, leaves eastern mainland Greece to the Greeks",
    "source": {
@@ -3361,6 +4726,78 @@
        "title": "Egyptian intervention in the Greek War of Independence (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Egyptian_intervention_in_the_Greek_War_of_Independence"
       }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1828-06-18",
+   "what": "The Russian army takes the fortress of Brăila",
+   "source": {
+    "title": "Russo-Turkish War (1828–1829) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Russo-Turkish_War_(1828–1829)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "ROU-313"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Brăila (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Brăila"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1828-05-07",
+   "what": "The Russian army crosses the Prut and occupies Moldavia and Wallachia",
+   "source": {
+    "title": "Russo-Turkish War (1828–1829) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Russo-Turkish_War_(1828–1829)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "ROU-124",
+      "ROU-123",
+      "ROU-122",
+      "ROU-304",
+      "ROU-126",
+      "ROU-302",
+      "ROU-127",
+      "ROU-130",
+      "ROU-310",
+      "ROU-131",
+      "ROU-4844",
+      "ROU-128",
+      "ROU-132",
+      "ROU-129",
+      "ROU-314"
+     ],
+     "owner": "Wallachia",
+     "source": {
+      "title": "Wallachia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Wallachia"
+     }
+    },
+    {
+     "pieces": [
+      "ROU-287",
+      "ROU-308",
+      "ROU-309",
+      "ROU-312",
+      "ROU-316",
+      "ROU-315",
+      "ROU-317"
+     ],
+     "owner": "Moldavia",
+     "source": {
+      "title": "Moldavia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Moldavia"
      }
     }
    ]

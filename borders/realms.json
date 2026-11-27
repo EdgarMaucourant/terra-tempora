@@ -394,7 +394,50 @@
   "wikipedia": "Bulgaria",
   "wikidata": "Q219",
   "fr": "Bulgarie",
-  "es": "Bulgaria"
+  "es": "Bulgaria",
+  "periods": [
+   {
+    "from": "1878-07-13",
+    "name": "Principality of Bulgaria",
+    "wikipedia": "Principality of Bulgaria",
+    "fr": "Principauté de Bulgarie",
+    "es": "Principado de Bulgaria",
+    "label": "Principality of Bulgaria",
+    "labelFr": "Principauté de Bulgarie",
+    "labelEs": "Principado de Bulgaria",
+    "note": "Autonomous under Ottoman suzerainty from the Treaty of Berlin"
+   },
+   {
+    "from": "1908-10-05",
+    "name": "Kingdom of Bulgaria",
+    "wikipedia": "Kingdom of Bulgaria",
+    "fr": "Royaume de Bulgarie",
+    "es": "Reino de Bulgaria",
+    "label": "Kingdom of Bulgaria",
+    "labelFr": "Royaume de Bulgarie",
+    "labelEs": "Reino de Bulgaria",
+    "note": "Independent tsardom from 5 October 1908"
+   },
+   {
+    "from": "1946-09-15",
+    "name": "People's Republic of Bulgaria",
+    "wikipedia": "People's Republic of Bulgaria",
+    "fr": "République populaire de Bulgarie",
+    "es": "República Popular de Bulgaria",
+    "label": "People's Republic of Bulgaria",
+    "labelFr": "République populaire de Bulgarie",
+    "labelEs": "República Popular de Bulgaria",
+    "note": "Communist republic until 1990"
+   },
+   {
+    "from": "1990-11-15",
+    "name": "Bulgaria",
+    "wikipedia": "Bulgaria",
+    "fr": "Bulgarie",
+    "es": "Bulgaria",
+    "note": "Republic of Bulgaria since 15 November 1990"
+   }
+  ]
  },
  "Burkina Faso": {
   "wikipedia": "Burkina Faso",
@@ -5168,5 +5211,17 @@
   "fr": "Thrace interalliée",
   "es": "Tracia interaliada",
   "note": "Run by the Allies under a French general between Bulgaria and Greece"
+ },
+ "Wallachia": {
+  "wikipedia": "Wallachia",
+  "fr": "Principauté de Valachie",
+  "es": "Principado de Valaquia",
+  "note": "A principality under Ottoman suzerainty; united with Moldavia in 1859"
+ },
+ "Eastern Rumelia": {
+  "wikipedia": "Eastern Rumelia",
+  "fr": "Roumélie orientale",
+  "es": "Rumelia Oriental",
+  "note": "An autonomous Ottoman province with a Christian governor, united with Bulgaria in 1885"
  }
 }

@@ -14248,7 +14248,8 @@
    ],
    "civs": [
     "greece",
-    "bulgaria"
+    "bulgaria",
+    "romania"
    ],
    "summary": "Bulgaria, unhappy with its share, attacks its former allies in June 1913 and loses the Second Balkan War. By the Treaty of Bucharest of 10 August 1913 Greece gets southern Macedonia as far as Kavala and Drama, while Bulgaria keeps Western Thrace.",
    "wikipedia": "Treaty_of_Bucharest_(1913)",
@@ -14383,6 +14384,217 @@
    "summary": "On 21 April 1967 a group of colonels led by Georgios Papadopoulos seizes power. King Constantine II fails to overthrow them and goes into exile; the junta abolishes the monarchy on 1 June 1973. It falls in July 1974 after the Turkish invasion of Cyprus, and a referendum in December confirms the republic.",
    "wikipedia": "Greek_junta",
    "search": "Greek junta coup 21 April 1967 colonels Papadopoulos regime monarchy abolished 1 June 1973 Polytechnic uprising fall July 1974 Karamanlis referendum December 1974"
+  },
+  {
+   "id": "treaty-of-adrianople-principalities-1829",
+   "kind": "treaty",
+   "year": 1829,
+   "title": "The Treaty of Adrianople and the Russian protectorate over the principalities, 1829",
+   "place": "Brăila",
+   "lonLat": [
+    27.9,
+    45.27
+   ],
+   "civs": [
+    "wallachia",
+    "moldavia",
+    "russia",
+    "turkey"
+   ],
+   "summary": "Russian troops had occupied Moldavia and Wallachia since 1828. By the Treaty of Adrianople of 14 September 1829 the Ottomans give the Danube delta to Russia and hand the fortresses of Brăila, Giurgiu and Turnu back to Wallachia. The principalities stay under the sultan but become a Russian protectorate, run by the Russian general Pavel Kiselyov until 1834.",
+   "wikipedia": "Treaty_of_Adrianople_(1829)",
+   "search": "Treaty of Adrianople 14 September 1829 Wallachia Moldavia Russian protectorate Braila Giurgiu Turnu returned Danube delta to Russia Kiselyov Organic Statute"
+  },
+  {
+   "id": "wallachian-revolution-1848",
+   "kind": "revolution",
+   "year": 1848,
+   "title": "The Wallachian revolution and its suppression, 1848",
+   "place": "Bucharest",
+   "lonLat": [
+    26.1,
+    44.43
+   ],
+   "civs": [
+    "wallachia",
+    "moldavia",
+    "russia",
+    "turkey"
+   ],
+   "summary": "In June 1848 liberal revolutionaries take power in Bucharest and drive out the prince. In September Ottoman and Russian troops enter Wallachia and put down the revolution; by the Convention of Balta Liman both powers keep troops in the two principalities until 1851.",
+   "wikipedia": "Wallachian_Revolution_of_1848",
+   "search": "Wallachian Revolution 1848 Islaz proclamation provisional government Bucharest Russian and Ottoman intervention September 1848 Balta Liman 1849 occupation until 1851"
+  },
+  {
+   "id": "union-of-the-principalities-1859",
+   "kind": "empire",
+   "year": 1859,
+   "title": "Moldavia and Wallachia unite under Alexandru Ioan Cuza, 1859",
+   "place": "Iași",
+   "lonLat": [
+    27.6,
+    47.16
+   ],
+   "civs": [
+    "romania",
+    "wallachia",
+    "moldavia"
+   ],
+   "summary": "The Great Powers had allowed each principality its own prince. Moldavia elects Alexandru Ioan Cuza in January 1859, and on 5 February Wallachia elects him too, uniting the two under one ruler. The United Principalities take the name Romania in 1862, with Bucharest as capital, still under Ottoman suzerainty.",
+   "wikipedia": "United_Principalities",
+   "search": "Union of the Principalities 1859 Alexandru Ioan Cuza elected Moldavia 17 January Wallachia 5 February United Principalities Romania 1862 Bucharest capital"
+  },
+  {
+   "id": "russo-turkish-war-1877",
+   "kind": "war",
+   "year": 1877,
+   "to": 1878,
+   "title": "The Russo-Turkish War in Bulgaria, 1877 – 1878",
+   "place": "Pleven",
+   "lonLat": [
+    24.62,
+    43.42
+   ],
+   "civs": [
+    "russia",
+    "turkey",
+    "romania",
+    "bulgaria"
+   ],
+   "summary": "After the Ottomans crush the April Uprising in Bulgaria, Russia declares war in April 1877 and crosses the Danube in June. Held up for months at Plevna, which falls to Russian and Romanian troops in December, the Russians then cross the Balkans in winter, take Sofia and Plovdiv, and reach the gates of Constantinople. The Treaty of San Stefano in March 1878 creates a large Bulgaria.",
+   "wikipedia": "Russo-Turkish_War_(1877–1878)",
+   "search": "Russo-Turkish War 1877 1878 Russian army crosses Danube Svishtov siege of Plevna Shipka Pass Romanian army Sofia Plovdiv Adrianople armistice San Stefano March 1878"
+  },
+  {
+   "id": "treaty-of-berlin-bulgaria-1878",
+   "kind": "treaty",
+   "year": 1878,
+   "title": "The Treaty of Berlin divides Bulgaria, July 1878",
+   "place": "Bulgaria",
+   "lonLat": [
+    24.0,
+    42.9
+   ],
+   "civs": [
+    "bulgaria",
+    "eastern-rumelia",
+    "romania",
+    "turkey",
+    "russia"
+   ],
+   "summary": "The Great Powers cut down the large Bulgaria of San Stefano. North of the Balkan range the Principality of Bulgaria is created under Ottoman suzerainty; south of it, Eastern Rumelia becomes an autonomous Ottoman province, and Macedonia goes back to the sultan. Romania becomes independent and receives Northern Dobruja and the Danube delta.",
+   "wikipedia": "Treaty_of_Berlin_(1878)",
+   "search": "Treaty of Berlin 13 July 1878 Principality of Bulgaria Eastern Rumelia autonomous Macedonia returned Romania independence Northern Dobruja San Stefano revised"
+  },
+  {
+   "id": "kingdom-of-romania-1881",
+   "kind": "empire",
+   "year": 1881,
+   "title": "Romania becomes a kingdom, 1881",
+   "place": "Bucharest",
+   "lonLat": [
+    26.1,
+    44.43
+   ],
+   "civs": [
+    "romania"
+   ],
+   "summary": "Romania had declared its independence in May 1877 and fought alongside Russia, and the Treaty of Berlin recognised it. On 26 March 1881 Parliament proclaims the Kingdom of Romania, and Prince Carol of Hohenzollern is crowned King Carol I in May.",
+   "wikipedia": "Kingdom_of_Romania",
+   "search": "Kingdom of Romania proclaimed 26 March 1881 Carol I crowned May 1881 independence 1877 Treaty of Berlin"
+  },
+  {
+   "id": "bulgarian-unification-1885",
+   "kind": "empire",
+   "year": 1885,
+   "title": "Eastern Rumelia unites with Bulgaria, 1885",
+   "place": "Plovdiv",
+   "lonLat": [
+    24.75,
+    42.15
+   ],
+   "civs": [
+    "bulgaria",
+    "eastern-rumelia",
+    "turkey"
+   ],
+   "summary": "On 18 September 1885 Bulgarian nationalists take power in Plovdiv without a shot and proclaim the union of Eastern Rumelia with Bulgaria. Prince Alexander accepts it, beats off a Serbian attack at Slivnitsa in November, and the sultan names him governor of Eastern Rumelia by the Tophane Agreement of 1886.",
+   "wikipedia": "Bulgarian_unification",
+   "search": "Bulgarian unification 18 September 1885 Plovdiv coup Eastern Rumelia Prince Alexander Serbo-Bulgarian War Slivnitsa Tophane Agreement 1886"
+  },
+  {
+   "id": "bulgarian-independence-1908",
+   "kind": "empire",
+   "year": 1908,
+   "title": "Bulgaria declares its independence, October 1908",
+   "place": "Veliko Tarnovo",
+   "lonLat": [
+    25.62,
+    43.08
+   ],
+   "civs": [
+    "bulgaria",
+    "turkey"
+   ],
+   "summary": "Taking advantage of the Young Turk revolution, Prince Ferdinand proclaims Bulgaria fully independent of the Ottoman Empire in the old capital Veliko Tarnovo on 5 October 1908, and takes the title of tsar.",
+   "wikipedia": "Bulgarian_Declaration_of_Independence",
+   "search": "Bulgarian Declaration of Independence 5 October 1908 Veliko Tarnovo Ferdinand tsar Kingdom of Bulgaria Ottoman suzerainty ended Bosnian crisis"
+  },
+  {
+   "id": "romanian-campaign-1916",
+   "kind": "war",
+   "year": 1916,
+   "to": 1918,
+   "title": "The Central Powers overrun Wallachia and Dobruja, 1916",
+   "place": "Wallachia",
+   "lonLat": [
+    25.6,
+    44.6
+   ],
+   "civs": [
+    "romania",
+    "germany",
+    "austria-hungary",
+    "bulgaria"
+   ],
+   "summary": "Romania joins the Allies in August 1916 and invades Transylvania, but the Central Powers strike back. Bulgarian and German troops take Turtucaia and Constanța, and German armies cross the Carpathians and enter Bucharest on 6 December. Romania holds on in Moldavia, while Wallachia and Dobruja stay occupied until November 1918.",
+   "wikipedia": "Romanian_campaign_(1916)",
+   "search": "Romanian campaign 1916 Romania enters war August 1916 Transylvania Turtucaia Mackensen Dobruja Constanta Falkenhayn Bucharest falls 6 December 1916 occupation Treaty of Bucharest 1918"
+  },
+  {
+   "id": "treaty-of-craiova-1940",
+   "kind": "treaty",
+   "year": 1940,
+   "title": "Southern Dobruja goes back to Bulgaria, September 1940",
+   "place": "Dobrich",
+   "lonLat": [
+    27.83,
+    43.57
+   ],
+   "civs": [
+    "bulgaria",
+    "romania"
+   ],
+   "summary": "Romania had held Southern Dobruja since 1913. Under German pressure, and after losing Bessarabia and northern Transylvania that summer, it gives the region back to Bulgaria by the Treaty of Craiova of 7 September 1940, with an exchange of populations.",
+   "wikipedia": "Treaty_of_Craiova",
+   "search": "Treaty of Craiova 7 September 1940 Southern Dobruja returned to Bulgaria Romania Quadrilateral population exchange Dobrich Silistra"
+  },
+  {
+   "id": "peoples-republic-of-bulgaria-1946",
+   "kind": "revolution",
+   "year": 1946,
+   "title": "Bulgaria becomes a people's republic, 1946",
+   "place": "Sofia",
+   "lonLat": [
+    23.32,
+    42.7
+   ],
+   "civs": [
+    "bulgaria"
+   ],
+   "summary": "Under Soviet occupation since 1944, Bulgaria votes to abolish the monarchy in a referendum on 8 September 1946. The nine-year-old Tsar Simeon II goes into exile, and the communist Georgi Dimitrov leads the new People's Republic, which lasts until 1990.",
+   "wikipedia": "People's_Republic_of_Bulgaria",
+   "search": "People's Republic of Bulgaria referendum 8 September 1946 monarchy abolished Simeon II exile 15 September Georgi Dimitrov communist 1990 Republic of Bulgaria"
   }
  ]
 }
