@@ -25341,6 +25341,242 @@
      ]
     ]
    }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "shaan-gan-ning",
+    "from": "CHN-1804",
+    "note": "The Shaan-Gan-Ning Border Region in northern Shaanxi around Yan'an, the Communist base from 1935-37 to 1949 (its parts in Gansu and Ningxia left out), traced roughly",
+    "source": {
+     "title": "Shaan-Gan-Ning Border Region (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Shaan-Gan-Ning_Border_Region"
+    }
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       107.2,
+       37.9
+      ],
+      [
+       108.3,
+       37.9
+      ],
+      [
+       109.6,
+       37.4
+      ],
+      [
+       110.2,
+       38.1
+      ],
+      [
+       110.9,
+       38.1
+      ],
+      [
+       110.9,
+       35.8
+      ],
+      [
+       109.0,
+       35.5
+      ],
+      [
+       107.6,
+       35.5
+      ],
+      [
+       107.2,
+       36.5
+      ],
+      [
+       107.2,
+       37.9
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "east-inner-mongolia",
+    "from": "CHN-1838",
+    "note": "Eastern Inner Mongolia: Hulunbuir, Hinggan and Tongliao (Jirim), part of Manchukuo from 1932 and seat of the Inner Mongolian Autonomous Government in 1947, traced roughly",
+    "source": {
+     "title": "Inner Mongolia (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Inner_Mongolia"
+    }
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       115.0,
+       46.8
+      ],
+      [
+       119.3,
+       46.7
+      ],
+      [
+       119.6,
+       45.3
+      ],
+      [
+       119.0,
+       44.7
+      ],
+      [
+       119.5,
+       43.5
+      ],
+      [
+       120.5,
+       42.3
+      ],
+      [
+       121.5,
+       41.5
+      ],
+      [
+       128.0,
+       41.5
+      ],
+      [
+       128.0,
+       54.0
+      ],
+      [
+       115.0,
+       54.0
+      ],
+      [
+       115.0,
+       46.8
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "three-districts",
+    "from": "CHN-1756",
+    "note": "The Three Districts of northern Xinjiang (Ili, Tarbagatai and Altay), held by the Second East Turkestan Republic from 1944 to 1949, traced roughly along the Manas river front",
+    "source": {
+     "title": "Second East Turkestan Republic (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Second_East_Turkestan_Republic"
+    }
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       70.0,
+       50.0
+      ],
+      [
+       92.0,
+       50.0
+      ],
+      [
+       91.2,
+       45.4
+      ],
+      [
+       88.5,
+       45.6
+      ],
+      [
+       86.3,
+       45.3
+      ],
+      [
+       86.2,
+       44.3
+      ],
+      [
+       85.5,
+       43.6
+      ],
+      [
+       84.8,
+       43.2
+      ],
+      [
+       84.0,
+       42.5
+      ],
+      [
+       80.2,
+       42.0
+      ],
+      [
+       70.0,
+       42.0
+      ],
+      [
+       70.0,
+       50.0
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "chamdo",
+    "from": "CHN-1662",
+    "note": "Chamdo (Qamdo), eastern Tibet between the Upper Yangtze and the Salween, taken by the Chinese army in October 1950, traced roughly",
+    "source": {
+     "title": "Battle of Chamdo (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Chamdo"
+    }
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       93.0,
+       33.5
+      ],
+      [
+       100.0,
+       33.5
+      ],
+      [
+       100.0,
+       28.0
+      ],
+      [
+       96.5,
+       28.3
+      ],
+      [
+       94.5,
+       29.5
+      ],
+      [
+       93.0,
+       30.8
+      ],
+      [
+       93.0,
+       33.5
+      ]
+     ]
+    ]
+   }
   }
  ]
 }

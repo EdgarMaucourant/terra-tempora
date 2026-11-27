@@ -170,6 +170,9 @@
  "colombia": {
   "name": "Colombia"
  },
+ "tibet": {
+  "name": "Tíbet"
+ },
  "bolivia": {
   "name": "Bolivia"
  },
@@ -1168,9 +1171,6 @@
  },
  "reunion": {
   "name": "Reunión"
- },
- "tibet": {
-  "name": "Tíbet"
  },
  "italian-islands-of-the-aegean": {
   "name": "Islas italianas del Egeo"
