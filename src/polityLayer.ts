@@ -503,7 +503,8 @@ export class PolityLayer {
       // member is a country (the Ukrainian SSR in the Soviet Union).
       const land = h.kind === "hatch" ? (h.land ?? h.name) : undefined;
       if (h.kind !== "hatch" || !h.by || y < h.from || y > h.to || !land || !names.has(land)) continue;
-      const seen = held.get(h.by) ?? held.set(h.by, { lands: new Set() }).get(h.by)!;
+      const by = h.byName ?? h.by;
+      const seen = held.get(by) ?? held.set(by, { lands: new Set() }).get(by)!;
       seen.lands.add(land);
       if (h.since && (!seen.since || h.since < seen.since)) seen.since = h.since;
     }

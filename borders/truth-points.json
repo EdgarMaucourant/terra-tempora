@@ -17038,6 +17038,285 @@
     }
    ],
    "why": "Saudi protectorate 1926-30"
+  },
+  {
+   "place": "Athens (Ottoman)",
+   "lonLat": [
+    23.73,
+    37.98
+   ],
+   "years": [
+    1815,
+    1820
+   ],
+   "realm": "Turkey",
+   "why": "Ottoman before the War of Independence"
+  },
+  {
+   "place": "Athens (Kingdom of Greece)",
+   "lonLat": [
+    23.73,
+    37.98
+   ],
+   "years": [
+    1835,
+    1940
+   ],
+   "realm": "Greece",
+   "why": "Capital of Greece from 1834"
+  },
+  {
+   "place": "Tripoli, Peloponnese (Ibrahim Pasha)",
+   "lonLat": [
+    22.37,
+    37.51
+   ],
+   "years": [
+    1825,
+    1827
+   ],
+   "realm": "Turkey",
+   "heldBy": [
+    {
+     "years": [
+      1825,
+      1827
+     ],
+     "by": "Egypt"
+    }
+   ],
+   "why": "Egyptian army 1825-28"
+  },
+  {
+   "place": "Larissa (Ottoman)",
+   "lonLat": [
+    22.42,
+    39.64
+   ],
+   "years": [
+    1815,
+    1880
+   ],
+   "realm": "Turkey",
+   "why": "Thessaly Ottoman until 1881"
+  },
+  {
+   "place": "Larissa (1897)",
+   "lonLat": [
+    22.42,
+    39.64
+   ],
+   "years": [
+    1897,
+    1897
+   ],
+   "realm": "Greece",
+   "heldBy": [
+    {
+     "years": [
+      1897,
+      1897
+     ],
+     "by": "Turkey"
+    }
+   ],
+   "why": "Ottoman-occupied 1897-98"
+  },
+  {
+   "place": "Thessaloniki (Ottoman)",
+   "lonLat": [
+    22.94,
+    40.64
+   ],
+   "years": [
+    1815,
+    1911
+   ],
+   "realm": "Turkey",
+   "why": "Ottoman until October 1912"
+  },
+  {
+   "place": "Thessaloniki (Greek)",
+   "lonLat": [
+    22.94,
+    40.64
+   ],
+   "years": [
+    1913,
+    1940
+   ],
+   "realm": "Greece",
+   "why": "Greek from 1912-13"
+  },
+  {
+   "place": "Thessaloniki (German-occupied)",
+   "lonLat": [
+    22.94,
+    40.64
+   ],
+   "years": [
+    1941,
+    1943
+   ],
+   "realm": "Greece",
+   "heldBy": [
+    {
+     "years": [
+      1941,
+      1943
+     ],
+     "by": "Germany"
+    }
+   ],
+   "why": "German zone 1941-44"
+  },
+  {
+   "place": "Ioannina (Ottoman)",
+   "lonLat": [
+    20.85,
+    39.66
+   ],
+   "years": [
+    1815,
+    1912
+   ],
+   "realm": "Turkey",
+   "why": "Ottoman until March 1913"
+  },
+  {
+   "place": "Kavala (1917)",
+   "lonLat": [
+    24.41,
+    40.94
+   ],
+   "years": [
+    1916,
+    1917
+   ],
+   "realm": "Greece",
+   "heldBy": [
+    {
+     "years": [
+      1916,
+      1917
+     ],
+     "by": "Bulgaria"
+    }
+   ],
+   "why": "Bulgarian-occupied 1916-18"
+  },
+  {
+   "place": "Komotini (Bulgarian)",
+   "lonLat": [
+    25.4,
+    41.12
+   ],
+   "years": [
+    1913,
+    1918
+   ],
+   "realm": "Bulgaria",
+   "why": "Western Thrace Bulgarian 1913-19"
+  },
+  {
+   "place": "Komotini (Greek)",
+   "lonLat": [
+    25.4,
+    41.12
+   ],
+   "years": [
+    1920,
+    1940
+   ],
+   "realm": "Greece",
+   "why": "Greek from 1920"
+  },
+  {
+   "place": "Heraklion (Cretan State)",
+   "lonLat": [
+    25.13,
+    35.34
+   ],
+   "years": [
+    1899,
+    1912
+   ],
+   "realm": "Cretan State",
+   "why": "Cretan State 1898-1913"
+  },
+  {
+   "place": "Heraklion (Egyptian-run)",
+   "lonLat": [
+    25.13,
+    35.34
+   ],
+   "years": [
+    1831,
+    1839
+   ],
+   "realm": "Turkey",
+   "heldBy": [
+    {
+     "years": [
+      1831,
+      1839
+     ],
+     "by": "Egypt"
+    }
+   ],
+   "why": "Muhammad Ali 1830-40"
+  },
+  {
+   "place": "Vathy, Samos (Principality)",
+   "lonLat": [
+    26.97,
+    37.75
+   ],
+   "years": [
+    1835,
+    1911
+   ],
+   "realm": "Principality of Samos",
+   "why": "Principality of Samos"
+  },
+  {
+   "place": "Mytilene (Ottoman)",
+   "lonLat": [
+    26.55,
+    39.1
+   ],
+   "years": [
+    1815,
+    1911
+   ],
+   "realm": "Turkey",
+   "why": "Ottoman until November 1912"
+  },
+  {
+   "place": "Rhodes (Italian)",
+   "lonLat": [
+    28.0,
+    36.2
+   ],
+   "years": [
+    1925,
+    1942
+   ],
+   "realm": "Italian Islands of the Aegean",
+   "why": "Italian Islands of the Aegean"
+  },
+  {
+   "place": "Rhodes (Ottoman)",
+   "lonLat": [
+    28.0,
+    36.2
+   ],
+   "years": [
+    1815,
+    1911
+   ],
+   "realm": "Turkey",
+   "why": "Ottoman until May 1912"
   }
  ]
 }

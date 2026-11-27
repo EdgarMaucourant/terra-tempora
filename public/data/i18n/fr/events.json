@@ -3743,5 +3743,85 @@
   "title": "Proclamation du royaume d’Arabie saoudite, septembre 1932",
   "place": "Riyad",
   "summary": "Depuis 1926, Ibn Saoud régnait sur le Hedjaz et le Nejd comme deux royaumes sous une même couronne. Par un décret royal du 23 septembre 1932, il les unit en un royaume d’Arabie saoudite, du nom de sa dynastie ; ce jour est aujourd’hui la fête nationale."
+ },
+ "greek-war-of-independence-1821": {
+  "title": "La guerre d’indépendance grecque, 1821 – 1829",
+  "place": "Péloponnèse",
+  "summary": "En mars 1821, les Grecs du Péloponnèse se soulèvent contre la domination ottomane, préparés par la société secrète Philiki Etairia. Ils prennent Tripolitsa en octobre et la révolte gagne le continent et les îles, où un gouvernement provisoire se forme en 1822. La guerre dure huit ans et n’est gagnée qu’avec l’intervention de la Grande-Bretagne, de la France et de la Russie."
+ },
+ "ibrahim-pasha-in-the-morea-1825": {
+  "title": "L’armée égyptienne d’Ibrahim Pacha dans le Péloponnèse, 1825 – 1828",
+  "place": "Navarin",
+  "summary": "Appelé par le sultan, Méhémet Ali d’Égypte envoie son fils Ibrahim Pacha, qui débarque à Méthoni en février 1825 et reprend la plus grande partie du Péloponnèse. Les flottes alliées détruisent sa marine à Navarin en octobre 1827, et une armée française débarque en 1828 pour obtenir le départ de ses troupes."
+ },
+ "london-protocol-1830": {
+  "title": "La Grèce devient un État indépendant, 1830",
+  "place": "Grèce",
+  "summary": "Par le protocole de Londres du 3 février 1830, la Grande-Bretagne, la France et la Russie font de la Grèce un État pleinement indépendant. Sa frontière nord est repoussée jusqu’à la ligne d’Arta à Volos en 1832, quand le sultan l’accepte par le traité de Constantinople."
+ },
+ "otto-king-of-greece-1832": {
+  "title": "La Grèce devient un royaume sous Othon de Bavière, 1832",
+  "place": "Nauplie",
+  "summary": "Après l’assassinat de son gouverneur Ioannis Kapodistrias en 1831, les grandes puissances font de la Grèce un royaume et choisissent pour roi le prince Othon de Bavière, âgé de dix-sept ans. Il débarque à Nauplie en janvier 1833 et transfère la capitale à Athènes en 1834."
+ },
+ "thessaly-to-greece-1881": {
+  "title": "Les Ottomans cèdent la Thessalie à la Grèce, 1881",
+  "place": "Larissa",
+  "summary": "Le congrès de Berlin avait invité les Ottomans à donner davantage de terres à la Grèce. Par la convention de Constantinople du 2 juillet 1881, ils lui cèdent la Thessalie et le district d’Arta, où les troupes grecques entrent pendant l’été."
+ },
+ "greco-turkish-war-1897": {
+  "title": "La guerre gréco-turque de 1897",
+  "place": "Thessalie",
+  "summary": "La Grèce entre en guerre en avril 1897 pour soutenir une révolte en Crète, mais l’armée ottomane prend Larissa en quelques jours et l’emporte à Domokos. Les Ottomans occupent la Thessalie jusqu’à la paix de décembre 1897 et l’évacuation de 1898 ; la Grèce paie une indemnité et perd quelques postes frontaliers."
+ },
+ "cretan-state-1898": {
+  "title": "La Crète devient un État autonome, 1898",
+  "place": "La Canée",
+  "summary": "Après des années de révoltes et la guerre de 1897, les grandes puissances obtiennent le départ des troupes ottomanes de Crète en novembre 1898. L’île devient l’État crétois, toujours sous la suzeraineté du sultan, avec le prince Georges de Grèce comme haut-commissaire à partir de décembre 1898."
+ },
+ "first-balkan-war-1912": {
+  "title": "La première guerre balkanique, 1912 – 1913",
+  "place": "Thessalonique",
+  "summary": "La Grèce, la Bulgarie, la Serbie et le Monténégro attaquent l’Empire ottoman en octobre 1912. L’armée grecque entre à Thessalonique le 26 octobre, sa flotte prend les îles du nord de l’Égée et Ioannina tombe en mars 1913. Par le traité de Londres du 30 mai 1913, les Ottomans cèdent presque toutes leurs terres d’Europe."
+ },
+ "treaty-of-bucharest-1913": {
+  "title": "Le traité de Bucarest partage la Macédoine, août 1913",
+  "place": "Kavala",
+  "summary": "Mécontente de sa part, la Bulgarie attaque ses anciens alliés en juin 1913 et perd la deuxième guerre balkanique. Par le traité de Bucarest du 10 août 1913, la Grèce obtient la Macédoine du Sud jusqu’à Kavala et Drama, tandis que la Bulgarie garde la Thrace occidentale."
+ },
+ "union-of-crete-1913": {
+  "title": "La Crète est rattachée à la Grèce, décembre 1913",
+  "place": "Crète",
+  "summary": "Les Crétois avaient proclamé leur union avec la Grèce dès 1908, mais la Grèce n’accueille l’île qu’après la première guerre balkanique, quand les Ottomans renoncent à leurs droits par le traité de Londres. L’union est officiellement proclamée le 1er décembre 1913."
+ },
+ "western-thrace-to-greece-1920": {
+  "title": "La Thrace occidentale passe à la Grèce, 1920",
+  "place": "Komotini",
+  "summary": "Par le traité de Neuilly de novembre 1919, la Bulgarie cède la Thrace occidentale aux Alliés, qui l’administrent quelques mois sous un général français. Les troupes grecques y entrent le 14 mai 1920, et la Bulgarie perd son accès à l’Égée."
+ },
+ "second-hellenic-republic-1924": {
+  "title": "La Grèce devient une république, mars 1924",
+  "place": "Athènes",
+  "summary": "Après la défaite d’Asie Mineure et la révolte des officiers de 1922, le roi Georges II est envoyé en exil. Le 25 mars 1924, le Parlement proclame la Deuxième République hellénique, confirmée par un référendum en avril."
+ },
+ "greek-monarchy-restored-1935": {
+  "title": "La monarchie grecque est rétablie, 1935",
+  "place": "Athènes",
+  "summary": "En octobre 1935, le général Georgios Kondylis prend le pouvoir et abolit la république. Un référendum truqué, le 3 novembre, ramène le roi Georges II, qui laisse Ioannis Metaxas gouverner en dictateur à partir d’août 1936."
+ },
+ "axis-occupation-of-greece-1941": {
+  "title": "La Grèce sous l’occupation de l’Axe, 1941 – 1944",
+  "place": "Grèce",
+  "summary": "L’Allemagne envahit la Grèce en avril 1941 pour secourir les Italiens, tenus en échec par les Grecs depuis octobre 1940, et prend la Crète en mai. Le pays est partagé : l’Allemagne garde Athènes, Thessalonique, la Crète et les îles face à la Turquie, l’Italie l’essentiel du reste, la Bulgarie la Macédoine orientale et la Thrace. Famine et résistance suivent jusqu’au départ des Allemands en octobre 1944."
+ },
+ "dodecanese-to-greece-1947": {
+  "title": "Le Dodécanèse passe à la Grèce, 1947",
+  "place": "Rhodes",
+  "summary": "Italien depuis 1912 et tenu par les Britanniques après la reddition allemande de mai 1945, le Dodécanèse est attribué à la Grèce par le traité de paix de Paris avec l’Italie de février 1947. Les Britanniques le remettent le 31 mars 1947, et il est officiellement rattaché à la Grèce en mars 1948."
+ },
+ "greek-junta-1967": {
+  "title": "La dictature des colonels en Grèce, 1967 – 1974",
+  "place": "Athènes",
+  "summary": "Le 21 avril 1967, un groupe de colonels mené par Georgios Papadopoulos prend le pouvoir. Le roi Constantin II échoue à les renverser et s’exile ; la junte abolit la monarchie le 1er juin 1973. Elle tombe en juillet 1974 après l’invasion turque de Chypre, et un référendum confirme la république en décembre."
  }
 }

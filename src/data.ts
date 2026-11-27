@@ -37,12 +37,15 @@ export interface Polity {
   kind?: "hatch" | "unreviewed" | "group" | "blank";
   /** For "hatch": the state that holds the land, since when, and why it is not its owner. */
   by?: string;
+  /** The holder's name that year, when a period of its realm names it otherwise. */
+  byName?: string;
   /** On a hatching: the territory under it, when the land is one. */
   land?: string;
   /** On a hatching: an active war whose front line is drawn roughly (Ukraine). */
   rough?: boolean;
   /** For "hatch": the state that rules the land jointly with `by` (a condominium, the New Hebrides). */
   with?: string;
+  withName?: string;
   /** For "hatch" with `with`: two states holding the land as occupiers, not a condominium (Iraq, 2003-04). */
   occupied?: boolean;
   /** For a League of Nations mandate's hatch: when the League confirmed it (Tanganyika, July 1922). */

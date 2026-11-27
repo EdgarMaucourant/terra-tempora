@@ -24761,6 +24761,135 @@
      ]
     ]
    }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "dodecanese",
+    "from": "GRC-3013",
+    "note": "The Dodecanese, from Patmos and Astypalaia to Rhodes and Kastellorizo",
+    "source": {
+     "title": "Dodecanese (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Dodecanese"
+    }
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       26.15,
+       37.65
+      ],
+      [
+       29.8,
+       37.65
+      ],
+      [
+       29.8,
+       35.2
+      ],
+      [
+       26.15,
+       35.2
+      ],
+      [
+       26.15,
+       37.65
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "samos",
+    "from": "GRC-2988",
+    "note": "The island of Samos",
+    "source": {
+     "title": "Principality of Samos (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Principality_of_Samos"
+    }
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       26.53,
+       37.9
+      ],
+      [
+       27.12,
+       37.9
+      ],
+      [
+       27.12,
+       37.62
+      ],
+      [
+       26.53,
+       37.62
+      ],
+      [
+       26.53,
+       37.9
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "western-thrace",
+    "from": "GRC-3001",
+    "note": "Western Thrace: Xanthi, Rhodope and Evros, east of the Nestos (without Samothrace)",
+    "source": {
+     "title": "Western Thrace (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Western_Thrace"
+    }
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       24.55,
+       41.8
+      ],
+      [
+       26.8,
+       41.8
+      ],
+      [
+       26.8,
+       40.6
+      ],
+      [
+       24.78,
+       40.6
+      ],
+      [
+       24.78,
+       40.85
+      ],
+      [
+       24.72,
+       41.2
+      ],
+      [
+       24.55,
+       41.4
+      ],
+      [
+       24.55,
+       41.8
+      ]
+     ]
+    ]
+   }
   }
  ]
 }
