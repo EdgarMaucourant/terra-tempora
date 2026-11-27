@@ -112,6 +112,19 @@
    ],
    "from": 1815,
    "why": "Libya (Kufra blank before 1931, United Kingdom family): Ottoman Tripolitania, the Karamanli regency before 1835, Italian from 1912"
+  },
+  {
+   "pieces": [
+    "SAU-888",
+    "SAU-885",
+    "SAU-845",
+    "SAU-848",
+    "SAU-1098",
+    "SAU-886",
+    "SAU-887"
+   ],
+   "from": 1815,
+   "why": "Ottoman Arabia: Hejaz, al-Hasa, Asir and Jizan (Najd and Najran left to the Saudi rebuild)"
   }
  ],
  "changes": [
@@ -165,6 +178,141 @@
       "url": "https://en.wikipedia.org/wiki/Italian_Cyrenaica"
      },
      "territory": "Italian Cyrenaica"
+    }
+   ]
+  },
+  {
+   "date": "1930-11-20",
+   "what": "Ibn Saud takes over the government of the Idrisi Emirate of Asir",
+   "source": {
+    "title": "Idrisid Emirate of Asir (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Idrisid_Emirate_of_Asir"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "SAU-887"
+     ],
+     "owner": "Emirate of Asir",
+     "source": {
+      "title": "Idrisid Emirate of Asir (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Idrisid_Emirate_of_Asir"
+     },
+     "hatch": {
+      "by": "Saudi Arabia",
+      "since": "1926-10-21",
+      "note": "Protectorate of Ibn Saud: by the Treaty of Mecca the Idrisi emir gave him his foreign affairs",
+      "source": {
+       "title": "Idrisid Emirate of Asir (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Idrisid_Emirate_of_Asir"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1926-10-21",
+   "what": "By the Treaty of Mecca the Idrisi emir places Asir under the protection of Ibn Saud",
+   "source": {
+    "title": "Idrisid Emirate of Asir (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Idrisid_Emirate_of_Asir"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "SAU-887"
+     ],
+     "owner": "Emirate of Asir",
+     "source": {
+      "title": "Idrisid Emirate of Asir (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Idrisid_Emirate_of_Asir"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1925-12-17",
+   "what": "Jeddah surrenders to Ibn Saud: the Kingdom of Hejaz comes to an end",
+   "source": {
+    "title": "Saudi conquest of Hejaz (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Saudi_conquest_of_Hejaz"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SAU-888",
+      "SAU-885"
+     ],
+     "owner": "Kingdom of Hejaz",
+     "source": {
+      "title": "Kingdom of Hejaz (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Hejaz"
+     },
+     "hatch": {
+      "by": "Saudi Arabia",
+      "since": "1924-10-13",
+      "note": "Mecca and Taif, taken by the Ikhwan of Ibn Saud, Sultan of Nejd; King Ali held out in Jeddah until December 1925",
+      "source": {
+       "title": "Saudi conquest of Hejaz (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Saudi_conquest_of_Hejaz"
+      }
+     }
+    },
+    {
+     "pieces": [
+      "SAU-848"
+     ],
+     "owner": "Kingdom of Hejaz",
+     "source": {
+      "title": "Kingdom of Hejaz (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Hejaz"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1925-12-05",
+   "what": "Medina surrenders to the forces of Ibn Saud",
+   "source": {
+    "title": "Saudi conquest of Hejaz (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Saudi_conquest_of_Hejaz"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SAU-845"
+     ],
+     "owner": "Kingdom of Hejaz",
+     "source": {
+      "title": "Kingdom of Hejaz (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Hejaz"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1924-10-13",
+   "what": "The Ikhwan of Ibn Saud enter Mecca, after taking Taif; King Hussein has abdicated",
+   "source": {
+    "title": "Saudi conquest of Hejaz (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Saudi_conquest_of_Hejaz"
+   },
+   "confidence": "exact",
+   "before": [
+    {
+     "pieces": [
+      "SAU-888",
+      "SAU-885"
+     ],
+     "owner": "Kingdom of Hejaz",
+     "source": {
+      "title": "Kingdom of Hejaz (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Hejaz"
+     }
     }
    ]
   },
@@ -654,6 +802,27 @@
    ]
   },
   {
+   "date": "1920-07-21",
+   "what": "Ibn Saud's forces enter Abha and drive out the Al Aidh emir: the Asir highlands pass to Nejd",
+   "source": {
+    "title": "Sheikdom of Upper Asir (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Sheikdom_of_Upper_Asir"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "SAU-886"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Sheikdom of Upper Asir (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sheikdom_of_Upper_Asir"
+     }
+    }
+   ]
+  },
+  {
    "date": "1920-07-07",
    "what": "Greek troops take over Izmit and the Yalova coast",
    "source": {
@@ -957,6 +1126,28 @@
    ]
   },
   {
+   "date": "1919-01-10",
+   "what": "Fakhri Pasha surrenders Medina, the last Ottoman stronghold in the Hejaz",
+   "source": {
+    "title": "Siege of Medina (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Siege_of_Medina"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "SAU-845",
+      "SAU-848"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Hejaz Vilayet (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hejaz_Vilayet"
+     }
+    }
+   ]
+  },
+  {
    "date": "1918-12-17",
    "what": "French troops land at Mersin and occupy Cilicia; British troops occupy Antep",
    "source": {
@@ -1047,6 +1238,46 @@
      "source": {
       "title": "Ottoman Empire (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1918-10-30",
+   "what": "By the Armistice of Mudros the Ottoman Empire gives up its last provinces in Arabia: Abha to the Al Aidh, the Tihama to the Idrisi",
+   "source": {
+    "title": "Armistice of Mudros (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Armistice_of_Mudros"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "SAU-886"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Asir Sanjak (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Asir_Sanjak"
+     }
+    },
+    {
+     "pieces": [
+      "SAU-887"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Idrisid Emirate of Asir (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Idrisid_Emirate_of_Asir"
+     },
+     "hatch": {
+      "by": "Emirate of Asir",
+      "since": "1910-01-01",
+      "note": "The Tihama of Asir, held by Muhammad al-Idrisi, who rose against the Ottomans at Sabya in 1910 and was allied with Britain from 1915",
+      "source": {
+       "title": "Idrisid Emirate of Asir (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Idrisid_Emirate_of_Asir"
+      }
      }
     }
    ]
@@ -1186,6 +1417,28 @@
    ]
   },
   {
+   "date": "1916-06-10",
+   "what": "Sharif Hussein of Mecca launches the Arab Revolt and is soon proclaimed King of the Hejaz",
+   "source": {
+    "title": "Arab Revolt (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Arab_Revolt"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "SAU-888",
+      "SAU-885"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Hejaz Vilayet (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hejaz_Vilayet"
+     }
+    }
+   ]
+  },
+  {
    "date": "1916-04-18",
    "what": "The Russian army takes Trabzon",
    "source": {
@@ -1268,6 +1521,27 @@
      "source": {
       "title": "Ottoman Empire (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Ottoman_Empire"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1913-05-05",
+   "what": "Ibn Saud takes Hofuf and drives the Ottoman garrison out of al-Hasa",
+   "source": {
+    "title": "Conquest of al-Hasa (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Conquest_of_al-Hasa"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "SAU-1098"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Najd Sanjak (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Najd_Sanjak"
      }
     }
    ]
@@ -1531,6 +1805,27 @@
    ]
   },
   {
+   "date": "1910-01-01",
+   "what": "Muhammad al-Idrisi rises against the Ottomans at Sabya",
+   "source": {
+    "title": "Idrisid Emirate of Asir (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Idrisid_Emirate_of_Asir"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "SAU-887"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Asir Sanjak (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Asir_Sanjak"
+     }
+    }
+   ]
+  },
+  {
    "date": "1879-03-01",
    "what": "The last Russian troops leave Adrianople and Eastern Thrace",
    "source": {
@@ -1660,6 +1955,48 @@
    ]
   },
   {
+   "date": "1871-09-15",
+   "what": "Ottoman troops subdue Asir and take Abha from the Al Aidh emir",
+   "source": {
+    "title": "Al Aidh Emirate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Al_Aidh_Emirate"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "SAU-886"
+     ],
+     "owner": null,
+     "source": {
+      "title": "Al Aidh Emirate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Al_Aidh_Emirate"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1871-06-03",
+   "what": "Midhat Pasha's expedition takes Qatif and Hofuf: al-Hasa becomes an Ottoman sanjak",
+   "source": {
+    "title": "Al-Hasa Expedition (1871) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Al-Hasa_Expedition_(1871)"
+   },
+   "confidence": "close",
+   "before": [
+    {
+     "pieces": [
+      "SAU-1098"
+     ],
+     "owner": "Saudi Arabia",
+     "source": {
+      "title": "Emirate of Nejd (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Emirate_of_Nejd"
+     }
+    }
+   ]
+  },
+  {
    "date": "1842-01-01",
    "what": "The Ottomans take Murzuq and the Fezzan after Abd al-Jalil, of the Awlad Sulayman, is killed",
    "source": {
@@ -1713,6 +2050,82 @@
        "title": "Egyptian–Ottoman War (1831–1833) (Wikipedia)",
        "url": "https://en.wikipedia.org/wiki/Egyptian–Ottoman_War_(1831–1833)"
       }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1840-12-29",
+   "what": "Egyptian troops leave the Hejaz after the Convention of London: the holy cities are governed from Constantinople again",
+   "source": {
+    "title": "Hejaz Vilayet (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Hejaz_Vilayet"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "SAU-888",
+      "SAU-885",
+      "SAU-845",
+      "SAU-848",
+      "SAU-887"
+     ],
+     "owner": "Turkey",
+     "source": {
+      "title": "Hejaz Vilayet (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hejaz_Vilayet"
+     },
+     "hatch": {
+      "by": "Egypt",
+      "since": "1813-01-20",
+      "note": "Run for the sultan by Muhammad Ali, governor of Egypt, whose troops had taken the holy cities back from the Saudis; given back to Ottoman officials after the 1840 crisis",
+      "source": {
+       "title": "Ottoman–Wahhabi war (Wikipedia)",
+       "url": "https://en.wikipedia.org/wiki/Ottoman–Wahhabi_war"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "date": "1840-06-01",
+   "what": "Egyptian troops are called back from eastern Arabia; al-Hasa returns to the Saudi emirs",
+   "source": {
+    "title": "Emirate of Nejd (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Emirate_of_Nejd"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "SAU-1098"
+     ],
+     "owner": "Khedivate of Egypt",
+     "source": {
+      "title": "Emirate of Nejd (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Emirate_of_Nejd"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1838-12-01",
+   "what": "Egyptian troops under Khurshid Pasha take al-Hasa",
+   "source": {
+    "title": "Emirate of Nejd (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Emirate_of_Nejd"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "SAU-1098"
+     ],
+     "owner": "Saudi Arabia",
+     "source": {
+      "title": "Emirate of Nejd (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Emirate_of_Nejd"
      }
     }
    ]
@@ -1853,6 +2266,69 @@
      "source": {
       "title": "Karamanli dynasty (Wikipedia)",
       "url": "https://en.wikipedia.org/wiki/Karamanli_dynasty"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1830-01-01",
+   "what": "The Saudi emir Turki defeats the Bani Khalid and takes al-Hasa",
+   "source": {
+    "title": "Bani Khalid Emirate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Bani_Khalid_Emirate"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "SAU-1098"
+     ],
+     "owner": "Bani Khalid Emirate",
+     "source": {
+      "title": "Bani Khalid Emirate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bani_Khalid_Emirate"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1819-07-01",
+   "what": "Egyptian troops leave al-Hasa to the chiefs of the Bani Khalid",
+   "source": {
+    "title": "Bani Khalid Emirate (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Bani_Khalid_Emirate"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "SAU-1098"
+     ],
+     "owner": "Khedivate of Egypt",
+     "source": {
+      "title": "Ottoman–Wahhabi war (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman–Wahhabi_war"
+     }
+    }
+   ]
+  },
+  {
+   "date": "1818-09-11",
+   "what": "Diriyah surrenders to Ibrahim Pasha: the first Saudi state falls and Egyptian troops occupy al-Hasa",
+   "source": {
+    "title": "Ottoman–Wahhabi war (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Ottoman–Wahhabi_war"
+   },
+   "confidence": "rough",
+   "before": [
+    {
+     "pieces": [
+      "SAU-1098"
+     ],
+     "owner": "Saudi Arabia",
+     "source": {
+      "title": "Emirate of Diriyah (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Emirate_of_Diriyah"
      }
     }
    ]

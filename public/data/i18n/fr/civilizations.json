@@ -32,6 +32,9 @@
  "french-west-africa": {
   "name": "Afrique-Occidentale française"
  },
+ "turkey": {
+  "name": "Turquie"
+ },
  "company-rule-in-india": {
   "name": "Inde de la Compagnie"
  },
@@ -46,9 +49,6 @@
  },
  "upper-senegal-and-niger": {
   "name": "Haut-Sénégal et Niger"
- },
- "turkey": {
-  "name": "Turquie"
  },
  "argentina": {
   "name": "Argentine"
@@ -302,6 +302,9 @@
  "bechuanaland-protectorate": {
   "name": "Protectorat du Bechuanaland"
  },
+ "bani-khalid-emirate": {
+  "name": "Émirat des Bani Khalid"
+ },
  "fezzan": {
   "name": "Fezzan"
  },
@@ -358,6 +361,9 @@
  },
  "uganda-protectorate": {
   "name": "Protectorat de l'Ouganda"
+ },
+ "kingdom-of-hejaz": {
+  "name": "Royaume du Hedjaz"
  },
  "french-cameroon": {
   "name": "Cameroun français"
@@ -860,9 +866,6 @@
  "portuguese-guinea": {
   "name": "Guinée portugaise"
  },
- "kingdom-of-hejaz": {
-  "name": "Royaume du Hedjaz"
- },
  "netherlands": {
   "name": "Pays-Bas"
  },
@@ -889,6 +892,9 @@
  },
  "basutoland": {
   "name": "Basutoland"
+ },
+ "emirate-of-asir": {
+  "name": "Émirat d’Asir"
  },
  "albania": {
   "name": "Albanie"
@@ -988,9 +994,6 @@
  },
  "portuguese-timor": {
   "name": "Timor portugais"
- },
- "emirate-of-asir": {
-  "name": "Émirat d’Asir"
  },
  "alsace-lorraine": {
   "name": "Alsace-Lorraine"
