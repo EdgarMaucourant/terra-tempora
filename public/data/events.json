@@ -14082,6 +14082,307 @@
    "summary": "Since 1926 Ibn Saud had ruled the Hejaz and Nejd as two kingdoms under one crown. By a royal decree of 23 September 1932 he unites them as the Kingdom of Saudi Arabia, named after his dynasty; the day is now the country's national day.",
    "wikipedia": "Unification_of_Saudi_Arabia",
    "search": "Proclamation of the Kingdom of Saudi Arabia 23 September 1932 Ibn Saud Abdulaziz Kingdom of Hejaz and Nejd unified National Day"
+  },
+  {
+   "id": "greek-war-of-independence-1821",
+   "kind": "revolution",
+   "year": 1821,
+   "to": 1829,
+   "title": "The Greek War of Independence, 1821 – 1829",
+   "place": "Peloponnese",
+   "lonLat": [
+    22.37,
+    37.51
+   ],
+   "civs": [
+    "greece",
+    "turkey"
+   ],
+   "summary": "In March 1821 the Greeks of the Peloponnese rise against Ottoman rule, prepared by the secret Filiki Eteria. They take Tripolitsa in October and the revolt spreads to the mainland and the islands, where a provisional government is formed in 1822. The war drags on for eight years and is won only when Britain, France and Russia step in.",
+   "wikipedia": "Greek_War_of_Independence",
+   "search": "Greek War of Independence 25 March 1821 Peloponnese Kalavryta Tripolitsa Missolonghi Kolokotronis Ypsilantis Filiki Eteria Navarino 1827 independence"
+  },
+  {
+   "id": "ibrahim-pasha-in-the-morea-1825",
+   "kind": "war",
+   "year": 1825,
+   "to": 1828,
+   "title": "Ibrahim Pasha's Egyptian army in the Peloponnese, 1825 – 1828",
+   "place": "Navarino",
+   "lonLat": [
+    21.7,
+    36.92
+   ],
+   "civs": [
+    "khedivate-of-egypt",
+    "turkey",
+    "greece"
+   ],
+   "summary": "Called in by the sultan, Muhammad Ali of Egypt sends his son Ibrahim Pasha, who lands at Methoni in February 1825 and retakes most of the Peloponnese. The allied fleets destroy his navy at Navarino in October 1827, and a French army lands in 1828 to see his troops leave.",
+   "wikipedia": "Ibrahim_Pasha_of_Egypt",
+   "search": "Ibrahim Pasha lands at Methoni February 1825 Egyptian army reconquers Peloponnese Navarino Missolonghi 1826 battle of Navarino 1827 Morea expedition 1828"
+  },
+  {
+   "id": "london-protocol-1830",
+   "kind": "treaty",
+   "year": 1830,
+   "title": "Greece becomes an independent state, 1830",
+   "place": "Greece",
+   "lonLat": [
+    23.73,
+    37.98
+   ],
+   "civs": [
+    "greece",
+    "turkey",
+    "united-kingdom",
+    "france",
+    "russia"
+   ],
+   "summary": "By the London Protocol of 3 February 1830, Britain, France and Russia declare Greece a fully independent state. Its northern border is pushed out to the line from Arta to Volos in 1832, when the sultan accepts it by the Treaty of Constantinople.",
+   "wikipedia": "London_Protocol_(1830)",
+   "search": "London Protocol 3 February 1830 Greece independent state Britain France Russia Treaty of Constantinople 1832 Arta Volos border"
+  },
+  {
+   "id": "otto-king-of-greece-1832",
+   "kind": "empire",
+   "year": 1832,
+   "title": "Greece becomes a kingdom under Otto of Bavaria, 1832",
+   "place": "Nafplio",
+   "lonLat": [
+    22.8,
+    37.57
+   ],
+   "civs": [
+    "greece"
+   ],
+   "summary": "After the murder of its governor Ioannis Kapodistrias in 1831, the Great Powers make Greece a kingdom and choose the seventeen-year-old Prince Otto of Bavaria as its king. He lands at Nafplio in January 1833 and moves the capital to Athens in 1834.",
+   "wikipedia": "Otto_of_Greece",
+   "search": "Otto of Bavaria King of Greece 7 May 1832 London Conference Kingdom of Greece Nafplio 1833 Athens capital 1834 Kapodistrias assassinated"
+  },
+  {
+   "id": "thessaly-to-greece-1881",
+   "kind": "treaty",
+   "year": 1881,
+   "title": "The Ottomans give Thessaly to Greece, 1881",
+   "place": "Larissa",
+   "lonLat": [
+    22.42,
+    39.64
+   ],
+   "civs": [
+    "greece",
+    "turkey"
+   ],
+   "summary": "The Congress of Berlin had told the Ottomans to give Greece more land. By the Convention of Constantinople of 2 July 1881 they hand over Thessaly and the district of Arta, and Greek troops move in over the summer.",
+   "wikipedia": "Convention_of_Constantinople_(1881)",
+   "search": "Convention of Constantinople 2 July 1881 Thessaly Arta ceded to Greece Congress of Berlin Ottoman Empire Larissa Volos"
+  },
+  {
+   "id": "greco-turkish-war-1897",
+   "kind": "war",
+   "year": 1897,
+   "to": 1898,
+   "title": "The Greco-Turkish War of 1897",
+   "place": "Thessaly",
+   "lonLat": [
+    22.2,
+    39.5
+   ],
+   "civs": [
+    "greece",
+    "turkey"
+   ],
+   "summary": "Greece goes to war in April 1897 to help a revolt in Crete, but the Ottoman army takes Larissa within days and wins at Domokos. The Ottomans occupy Thessaly until the peace of December 1897 and the evacuation of 1898; Greece pays an indemnity and loses a few border posts.",
+   "wikipedia": "Greco-Turkish_War_(1897)",
+   "search": "Greco-Turkish War 1897 Thirty Days War Crete revolt Larissa Domokos Ottoman occupation of Thessaly Treaty of Constantinople December 1897 evacuation 1898"
+  },
+  {
+   "id": "cretan-state-1898",
+   "kind": "empire",
+   "year": 1898,
+   "title": "Crete becomes an autonomous state, 1898",
+   "place": "Chania",
+   "lonLat": [
+    24.02,
+    35.51
+   ],
+   "civs": [
+    "cretan-state",
+    "turkey",
+    "greece"
+   ],
+   "summary": "After years of revolts and the war of 1897, the Great Powers make the Ottoman troops leave Crete in November 1898. The island becomes the Cretan State, still under the sultan's suzerainty, with Prince George of Greece as high commissioner from December 1898.",
+   "wikipedia": "Cretan_State",
+   "search": "Cretan State 1898 autonomy Prince George of Greece high commissioner Great Powers Ottoman troops leave Crete Chania Venizelos Therisos revolt 1905"
+  },
+  {
+   "id": "first-balkan-war-1912",
+   "kind": "war",
+   "year": 1912,
+   "to": 1913,
+   "title": "The First Balkan War, 1912 – 1913",
+   "place": "Thessaloniki",
+   "lonLat": [
+    22.94,
+    40.64
+   ],
+   "civs": [
+    "greece",
+    "turkey",
+    "bulgaria"
+   ],
+   "summary": "Greece, Bulgaria, Serbia and Montenegro attack the Ottoman Empire in October 1912. The Greek army enters Thessaloniki on 26 October, its navy takes the northern Aegean islands, and Ioannina falls in March 1913. By the Treaty of London of 30 May 1913 the Ottomans give up almost all their land in Europe.",
+   "wikipedia": "First_Balkan_War",
+   "search": "First Balkan War October 1912 Balkan League Greece Bulgaria Serbia Montenegro Thessaloniki 26 October 1912 Ioannina Bizani Lesbos Chios Treaty of London 30 May 1913"
+  },
+  {
+   "id": "treaty-of-bucharest-1913",
+   "kind": "treaty",
+   "year": 1913,
+   "title": "The Treaty of Bucharest shares out Macedonia, August 1913",
+   "place": "Kavala",
+   "lonLat": [
+    24.41,
+    40.94
+   ],
+   "civs": [
+    "greece",
+    "bulgaria"
+   ],
+   "summary": "Bulgaria, unhappy with its share, attacks its former allies in June 1913 and loses the Second Balkan War. By the Treaty of Bucharest of 10 August 1913 Greece gets southern Macedonia as far as Kavala and Drama, while Bulgaria keeps Western Thrace.",
+   "wikipedia": "Treaty_of_Bucharest_(1913)",
+   "search": "Treaty of Bucharest 10 August 1913 Second Balkan War Greece Bulgaria Serbia Romania Kavala Drama Macedonia partition"
+  },
+  {
+   "id": "union-of-crete-1913",
+   "kind": "empire",
+   "year": 1913,
+   "title": "Crete is united with Greece, December 1913",
+   "place": "Crete",
+   "lonLat": [
+    25.13,
+    35.34
+   ],
+   "civs": [
+    "greece",
+    "cretan-state"
+   ],
+   "summary": "The Cretans had declared their union with Greece in 1908, but Greece only took the island in after the First Balkan War, when the Ottomans gave up their rights by the Treaty of London. The union is formally proclaimed on 1 December 1913.",
+   "wikipedia": "Cretan_State",
+   "search": "Union of Crete with Greece 1 December 1913 enosis Venizelos Cretan State Treaty of London 1913 Firkas flag raised"
+  },
+  {
+   "id": "western-thrace-to-greece-1920",
+   "kind": "treaty",
+   "year": 1920,
+   "title": "Western Thrace passes to Greece, 1920",
+   "place": "Komotini",
+   "lonLat": [
+    25.4,
+    41.12
+   ],
+   "civs": [
+    "greece",
+    "bulgaria",
+    "inter-allied-thrace"
+   ],
+   "summary": "By the Treaty of Neuilly of November 1919 Bulgaria gives up Western Thrace to the Allies, who run it for a few months under a French general. Greek troops move in on 14 May 1920, and Bulgaria loses its outlet on the Aegean.",
+   "wikipedia": "Western_Thrace",
+   "search": "Western Thrace to Greece 1920 Treaty of Neuilly Bulgaria Inter-Allied Thrace Charpy Greek army enters 14 May 1920 San Remo Komotini Xanthi"
+  },
+  {
+   "id": "second-hellenic-republic-1924",
+   "kind": "revolution",
+   "year": 1924,
+   "title": "Greece becomes a republic, March 1924",
+   "place": "Athens",
+   "lonLat": [
+    23.73,
+    37.98
+   ],
+   "civs": [
+    "greece"
+   ],
+   "summary": "After the defeat in Asia Minor and the officers' revolt of 1922, King George II is sent into exile. On 25 March 1924 Parliament proclaims the Second Hellenic Republic, confirmed by a referendum in April.",
+   "wikipedia": "Second_Hellenic_Republic",
+   "search": "Second Hellenic Republic proclaimed 25 March 1924 George II deposed referendum April 1924 Papanastasiou Asia Minor disaster"
+  },
+  {
+   "id": "greek-monarchy-restored-1935",
+   "kind": "revolution",
+   "year": 1935,
+   "title": "The Greek monarchy is restored, 1935",
+   "place": "Athens",
+   "lonLat": [
+    23.73,
+    37.98
+   ],
+   "civs": [
+    "greece"
+   ],
+   "summary": "In October 1935 General Georgios Kondylis seizes power and abolishes the republic. A rigged referendum on 3 November brings back King George II, who in August 1936 lets Ioannis Metaxas rule as dictator.",
+   "wikipedia": "1935_Greek_monarchy_referendum",
+   "search": "Restoration of the Greek monarchy 1935 Kondylis coup 10 October referendum 3 November 1935 George II returns Metaxas 4th of August regime 1936"
+  },
+  {
+   "id": "axis-occupation-of-greece-1941",
+   "kind": "war",
+   "year": 1941,
+   "to": 1944,
+   "title": "Greece under Axis occupation, 1941 – 1944",
+   "place": "Greece",
+   "lonLat": [
+    22.5,
+    39.0
+   ],
+   "civs": [
+    "greece",
+    "germany",
+    "italy",
+    "bulgaria"
+   ],
+   "summary": "Germany invades in April 1941 to rescue the Italians, held back by the Greeks since October 1940, and takes Crete in May. Greece is shared out: Germany keeps Athens, Thessaloniki, Crete and the islands facing Turkey, Italy most of the rest, Bulgaria eastern Macedonia and Thrace. Famine and resistance follow until the Germans leave in October 1944.",
+   "wikipedia": "Axis_occupation_of_Greece",
+   "search": "Axis occupation of Greece April 1941 German invasion Battle of Greece Crete German Italian Bulgarian zones famine resistance ELAS liberation October 1944"
+  },
+  {
+   "id": "dodecanese-to-greece-1947",
+   "kind": "treaty",
+   "year": 1947,
+   "title": "The Dodecanese pass to Greece, 1947",
+   "place": "Rhodes",
+   "lonLat": [
+    28.0,
+    36.2
+   ],
+   "civs": [
+    "greece",
+    "italian-islands-of-the-aegean",
+    "italy",
+    "united-kingdom"
+   ],
+   "summary": "Italian since 1912 and held by the British after the German surrender of May 1945, the Dodecanese are given to Greece by the Paris peace treaty with Italy of February 1947. The British hand them over on 31 March 1947, and they are formally joined to Greece in March 1948.",
+   "wikipedia": "Dodecanese",
+   "search": "Dodecanese to Greece 31 March 1947 British military administration Paris Peace Treaty Italy 10 February 1947 Rhodes union 7 March 1948"
+  },
+  {
+   "id": "greek-junta-1967",
+   "kind": "revolution",
+   "year": 1967,
+   "to": 1974,
+   "title": "The colonels' junta rules Greece, 1967 – 1974",
+   "place": "Athens",
+   "lonLat": [
+    23.73,
+    37.98
+   ],
+   "civs": [
+    "greece"
+   ],
+   "summary": "On 21 April 1967 a group of colonels led by Georgios Papadopoulos seizes power. King Constantine II fails to overthrow them and goes into exile; the junta abolishes the monarchy on 1 June 1973. It falls in July 1974 after the Turkish invasion of Cyprus, and a referendum in December confirms the republic.",
+   "wikipedia": "Greek_junta",
+   "search": "Greek junta coup 21 April 1967 colonels Papadopoulos regime monarchy abolished 1 June 1973 Polytechnic uprising fall July 1974 Karamanlis referendum December 1974"
   }
  ]
 }
