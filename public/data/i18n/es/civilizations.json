@@ -806,11 +806,17 @@
  "west-ukrainian-people-s-republic": {
   "name": "República Popular de Ucrania Occidental"
  },
+ "haiti": {
+  "name": "Haití"
+ },
  "dominican-republic": {
   "name": "República Dominicana"
  },
  "santo-domingo": {
   "name": "Santo Domingo"
+ },
+ "republic-of-spanish-haiti": {
+  "name": "Estado Independiente del Haití Español"
  },
  "slovakia": {
   "name": "Eslovaquia"
@@ -883,9 +889,6 @@
  },
  "burundi": {
   "name": "Burundi"
- },
- "haiti": {
-  "name": "Haití"
  },
  "equatorial-guinea": {
   "name": "Guinea Ecuatorial"
@@ -1115,6 +1118,9 @@
  "straits-settlements": {
   "name": "Establecimientos de los Estrechos"
  },
+ "sultanate-of-sulu": {
+  "name": "Sultanato de Joló"
+ },
  "samoa": {
   "name": "Samoa"
  },
@@ -1156,9 +1162,6 @@
  },
  "british-windward-islands": {
   "name": "Islas de Barlovento Británicas"
- },
- "sultanate-of-sulu": {
-  "name": "Sultanato de Joló"
  },
  "principality-of-guria": {
   "name": "Principado de Guria"
