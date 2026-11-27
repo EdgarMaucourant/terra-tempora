@@ -83,6 +83,8 @@ const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as 
 
 // A page left open across a release reloads when its files are gone.
 reloadOnMissingChunks();
+// When the globe last lost its graphics memory (read by public/unsupported.js).
+const GRAPHICS_LOST = "terra-tempora:graphics-lost";
 
 // The borders are asked for first, before the globe is set up: the index, and
 // the window of the year the page opens on when the link alone tells it.
@@ -135,6 +137,8 @@ try {
   window.terraTemporaUnsupported?.("webgl");
   throw error;
 }
+// The globe started, so an earlier loss of graphics memory is over.
+store(GRAPHICS_LOST, null);
 const scene = widget.scene;
 // Phones can take the WebGL context away (the tab goes to the background, the
 // browser runs short of graphics memory). Its drawing buffer is then 0 pixels
@@ -143,10 +147,13 @@ const scene = widget.scene;
 // browser gives the context back (or when the page is shown again). A canvas
 // laid out 0 pixels wide for a moment just draws again once it has a size; an
 // error that keeps coming back still shows Cesium's error box.
+// The time of the loss is noted: Chrome may then block WebGL for the site for
+// a while, and the page that can't start explains it (public/unsupported.js).
 let contextLost = false;
 scene.canvas.addEventListener("webglcontextlost", (event) => {
   event.preventDefault(); // lets the browser restore the context
   contextLost = true;
+  store(GRAPHICS_LOST, String(Date.now()));
 });
 scene.canvas.addEventListener("webglcontextrestored", () => location.reload());
 document.addEventListener("visibilitychange", () => {
@@ -155,6 +162,7 @@ document.addEventListener("visibilitychange", () => {
 let renderRetries = 0;
 scene.renderError.addEventListener((_scene: unknown, error: unknown) => {
   if (contextLost || scene.drawingBufferWidth === 0) {
+    if (!contextLost) store(GRAPHICS_LOST, String(Date.now()));
     contextLost = true;
     if (document.visibilityState === "visible") setTimeout(() => location.reload(), 1500);
     return;
@@ -265,6 +273,17 @@ void placeAsked?.then(([lon, lat]) => {
 });
 
 const layer = new PolityLayer(scene);
+// Phones and tablets have little graphics memory: stepping quickly through
+// the years there kept hundreds of realms built at once until the browser took
+// the globe away. They keep only the shapes near the current year, and build
+// less far ahead while playing. Desktops keep the larger budget.
+function setShapeBudget() {
+  const small = compactQuery.matches;
+  layer.maxBuilt = small ? 300 : 1500;
+  layer.keepYears = small ? 3 : 30;
+}
+setShapeBudget();
+compactQuery.addEventListener("change", setShapeBudget);
 // The globe's realms as a list in the side panel, for keyboards and screen readers.
 const realmList = new RealmList({
   root: document.getElementById("realms-now") as HTMLDetailsElement,
@@ -555,7 +574,7 @@ function render() {
 /** Builds shapes about ¾ of a second of playback ahead, so they are ready in time. */
 function updateLookahead() {
   const speed = travel?.active ? travel.speed : playing ? Number(speedSelect.value) : 0;
-  layer.lookahead = Math.min(60, Math.max(3, speed * 0.75));
+  layer.lookahead = Math.min(compactQuery.matches ? 20 : 60, Math.max(3, speed * 0.75));
 }
 
 // The place panel's "what is drawn this year" block (showPlaceNow).

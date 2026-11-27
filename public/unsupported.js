@@ -18,6 +18,10 @@
         "Terra Tempora needs JavaScript, WebGL and a browser from 2023 or later.",
       reload: "Reload",
       check: "Check WebGL in this browser",
+      lostTitle: "Terra Tempora can't show the globe right now",
+      lost: "This device ran short of graphics memory and the browser stopped the globe. For a few minutes it may keep 3D graphics blocked for this site.",
+      lostHelp:
+        "Close some tabs, wait a few minutes or close and reopen the browser, then reload the page.",
     },
     fr: {
       title: "Terra Tempora ne peut pas afficher le globe dans ce navigateur",
@@ -32,6 +36,10 @@
         "Terra Tempora a besoin de JavaScript, de WebGL et d'un navigateur de 2023 ou plus récent.",
       reload: "Recharger",
       check: "Tester WebGL dans ce navigateur",
+      lostTitle: "Terra Tempora ne peut pas afficher le globe pour le moment",
+      lost: "L'appareil a manqué de mémoire graphique et le navigateur a arrêté le globe. Il peut bloquer la 3D pour ce site pendant quelques minutes.",
+      lostHelp:
+        "Fermez quelques onglets, patientez quelques minutes ou fermez puis rouvrez le navigateur, puis rechargez la page.",
     },
     es: {
       title: "Terra Tempora no puede mostrar el globo en este navegador",
@@ -46,6 +54,10 @@
         "Terra Tempora necesita JavaScript, WebGL y un navegador de 2023 o más reciente.",
       reload: "Recargar",
       check: "Probar WebGL en este navegador",
+      lostTitle: "Terra Tempora no puede mostrar el globo ahora mismo",
+      lost: "El dispositivo se quedó sin memoria gráfica y el navegador detuvo el globo. Puede bloquear el 3D para este sitio durante unos minutos.",
+      lostHelp:
+        "Cierra algunas pestañas, espera unos minutos o cierra y vuelve a abrir el navegador, y luego recarga la página.",
     },
   };
 
@@ -66,10 +78,22 @@
     return "en";
   }
 
+  // The globe lost its graphics memory less than half an hour ago (the app
+  // notes the time): the browser may be blocking WebGL for the site because
+  // of it, which is not something to fix in the settings.
+  function lostGraphicsMemory() {
+    var when = 0;
+    try {
+      when = Number(localStorage.getItem("terra-tempora:graphics-lost")) || 0;
+    } catch (e) {}
+    return when > 0 && Date.now() - when < 30 * 60 * 1000;
+  }
+
   var shown = false;
   function show(reason) {
     if (shown || !document.body) return;
     shown = true;
+    if (reason === "webgl" && lostGraphicsMemory()) reason = "lost";
     var code = language();
     var text = TEXT[code];
     var app = document.getElementById("app");
@@ -91,10 +115,10 @@
       inner.appendChild(node);
       return node;
     }
-    add("h1", text.title, "font-size:1.5rem;line-height:1.25;margin:0 0 1rem");
-    add("p", reason === "webgl" ? text.webgl : text.old);
-    add("p", reason === "webgl" ? text.webglHelp : text.oldHelp);
-    add("p", text.needs, "color:#b9b4a8");
+    add("h1", reason === "lost" ? text.lostTitle : text.title, "font-size:1.5rem;line-height:1.25;margin:0 0 1rem");
+    add("p", text[reason]);
+    add("p", text[reason + "Help"]);
+    if (reason !== "lost") add("p", text.needs, "color:#b9b4a8");
     var actions = document.createElement("p");
     actions.setAttribute("style", "margin-top:1.5rem");
     var button = document.createElement("button");
